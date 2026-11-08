@@ -1,7 +1,7 @@
 import tempfile
 import unittest
 from pathlib import Path
-from njd.http import Client, FetchError
+from njd.http import Client, FetchError, Page
 
 class FakeNetwork:
     def __init__(self, routes): self.routes=routes; self.calls=[]
@@ -53,3 +53,11 @@ class FetchTest(unittest.TestCase):
             c._body_path('https://example.invalid/page').write_bytes(b'changed')
             c.offline=True
             with self.assertRaises(FetchError): c.fetch('https://example.invalid/page')
+
+    def test_online_refreshes_expired_robots_before_cached_content(self):
+        with tempfile.TemporaryDirectory() as td:
+            c,n=self.client(td,{'https://example.invalid/robots.txt':(200,{},b'User-agent: *\nDisallow: /')})
+            c._save(Page('https://example.invalid/robots.txt',404,{},b'','2020-01-01T00:00:00+00:00'))
+            c._save(Page('https://example.invalid/page',200,{},b'old page','2020-01-01T00:00:00+00:00'))
+            with self.assertRaises(FetchError): c.fetch('https://example.invalid/page')
+            self.assertEqual(n.calls,['https://example.invalid/robots.txt'])

@@ -123,6 +123,11 @@ class Client:
         raise FetchError('retry exhausted')
     def _policy(self,url,refresh=False):
         origin=self._origin(url); robot_url=origin+'/robots.txt'
+        cached=self._load(robot_url)
+        if cached and not self.offline:
+            try: age=time.time()-datetime.fromisoformat(cached.fetched_at).timestamp()
+            except (ValueError,TypeError): raise FetchError('invalid robots cache timestamp')
+            refresh=refresh or age>=86400
         robot=self._raw(robot_url,refresh=refresh)
         for _ in range(5):
             if robot.status not in (301,302,303,307,308): break
