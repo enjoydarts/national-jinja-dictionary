@@ -56,6 +56,10 @@ class ValidationTest(unittest.TestCase):
         for field,value in [('status','pending'),('surface','別名'),('reading','し けん'),('reading_url',''),('reading','べつのよみ')]:
             d=dataset(); d['entries'][0][field]=value
             self.assertEqual(len(eligible(d)),1)
+    def test_missing_top_level_fields_are_invalid(self):
+        self.assertTrue(validate({}))
+        d=dataset();d['schema_version']=999
+        self.assertTrue(validate(d))
     def test_wrong_field_types_are_reported_not_crashed(self):
         for field in ['reading','source_hash','surface']:
             d=dataset();d['entries'][0][field]=[]

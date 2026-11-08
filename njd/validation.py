@@ -16,6 +16,8 @@ def validate(data: dict) -> list[dict]:
     problems=[]
     def add(kind,rid,reason): problems.append(dict(kind=kind,id=rid,reason=reason))
     if not isinstance(data,dict): return [dict(kind='global',id=None,reason='dataset must be an object')]
+    if data.get('schema_version')!=1 or not all(k in data for k in ['facilities','entries','collection']) or not isinstance(data.get('collection'),dict):
+        return [dict(kind='global',id=None,reason='missing required dataset fields or unsupported schema version')]
     fs=data.get('facilities',[]); es=data.get('entries',[])
     for kind,records,fields in [
         ('facility',fs,['id','status','listed_name','name_raw','prefecture','prefecture_code','municipality','address','agency','source_locator','source_hash','page_hash','listing_url','fetched_at','checked_at','reason']),
