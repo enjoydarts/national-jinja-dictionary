@@ -36,6 +36,14 @@ class ParseTest(unittest.TestCase):
         self.assertEqual([x['id'] for x in d['facilities']], [x['id'] for x in dataset()['facilities']])
     def test_changed_structure_fails_closed(self):
         with self.assertRaises(ValueError): parse('<table><tr><th>試験</th><td>かな</td></tr></table>', '2026-11-08', 'a'*64)
+    def test_branch_information_row_is_not_a_facility(self):
+        html=HTML.replace('</tbody>', '<tr><th>架空支部</th><td></td><td></td><td>支部リンク</td></tr></tbody>')
+        d=parse(html,'2026-11-08','a'*64)
+        self.assertEqual(len(d['facilities']),3)
+        self.assertEqual(len(d['collection']['non_facility_rows']),1)
+    def test_unrelated_tables_not_ingested(self):
+        html=HTML+'<table><tr><th>観光情報</th><td>かな</td><td>架空市甲1</td></tr></table>'
+        self.assertEqual(len(parse(html,'2026-11-08','a'*64)['facilities']),3)
     def test_scope_limit(self):
         self.assertEqual(len(parse(HTML, '2026-11-08', 'a'*64, limit=1)['facilities']), 1)
 
