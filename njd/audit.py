@@ -10,7 +10,7 @@ def audit_gunma(data,html,page_hash):
     for row in re.findall(r'<tr\b[^>]*>(.*?)</tr\s*>',html,re.I|re.S):
         cells=re.findall(r'<(th|td)\b[^>]*>(.*?)</\1\s*>',row,re.I|re.S)
         if len(cells)<3 or [t.lower() for t,_ in cells[:3]]!=['th','td','td']: continue
-        values=tuple(unescape(re.sub(r'<[^>]+>','',content)).strip() for _,content in cells[:3])
+        values=tuple(unescape(re.sub(r'<[^>]+>','',re.sub(r'<br\s*/?>','\n',content,flags=re.I))).strip() for _,content in cells[:3])
         triples.add(values)
     facilities={f['id']:f for f in data['facilities']}
     mismatches=[]

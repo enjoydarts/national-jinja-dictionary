@@ -56,6 +56,11 @@ class ValidationTest(unittest.TestCase):
         for field,value in [('status','pending'),('surface','別名'),('reading','し けん'),('reading_url',''),('reading','べつのよみ')]:
             d=dataset(); d['entries'][0][field]=value
             self.assertEqual(len(eligible(d)),1)
+    def test_wrong_field_types_are_reported_not_crashed(self):
+        for field in ['reading','source_hash','surface']:
+            d=dataset();d['entries'][0][field]=[]
+            self.assertTrue(validate(d))
+            self.assertEqual(eligible(d),[])
     def test_duplicate_id_is_invalid(self):
         d=dataset(); d['facilities'][1]['id']=d['facilities'][0]['id']
         self.assertTrue(any('duplicate' in x['reason'] for x in validate(d)))
@@ -85,3 +90,36 @@ class StorageTest(unittest.TestCase):
         self.assertEqual(apply_decisions(d,decisions)['entries'][0]['status'],'pending')
 
 if __name__=='__main__': unittest.main()
+
+class ReviewRegressionTest(unittest.TestCase):
+    def test_decisions_cannot_rewrite_acquired_raw_reading(self):
+        d=dataset(); e=d['entries'][0]
+        decision={e['id']:{'expected_source_hash':e['source_hash'],'status':'verified','reason':'test','reading':'べつよみ','reading_raw':'ベツヨミ'}}
+        with self.assertRaises(ValueError): apply_decisions(d,decision)
+    def test_tampered_original_fingerprint_invalid(self):
+        d=dataset();d['entries'][0]['reading']=d['entries'][0]['reading_raw']='べつよみ'
+        self.assertEqual(len(eligible(d)),1)
+    def test_missing_reading_can_use_separate_official_supplement(self):
+        d=dataset();e=d['entries'][2];f=d['facilities'][2]
+        self.assertEqual(f['status'],'verified')
+        self.assertIsNone(f['official_site_url'])
+        decision={e['id']:{'expected_source_hash':e['source_hash'],'status':'verified','reason':'official supplement reviewed','reading':'みかくにんしゃ','reading_url':'https://shrine.example.invalid/about', 'reading_source_kind':'shrine_official','supplemental_reading_raw':'ミカクニンシャ','supplemental_official_verification':{'url':'https://shrine.example.invalid/','evidence_url':'https://shrine.example.invalid/about','name_raw':f['listed_name'],'address_raw':f['address'],'evidence':'official identity and address shown','checked_at':'2026-11-08T00:00:00+00:00','status':'verified'},'supplemental_name':f['listed_name'],'supplemental_address':f['address'],'evidence':'linked official site displays exact listed name and address','checked_at':'2026-11-08T00:00:00+00:00'}}
+        corrected=apply_decisions(d,decision)
+        self.assertEqual(corrected['entries'][2]['reading_raw'],'')
+        self.assertEqual(len(eligible(corrected)),3)
+    def test_multiline_address_is_pending_not_merged(self):
+        d=parse(HTML.replace('架空市甲町1','架空市甲町1<br>別市乙町2'),'2026-11-08','a'*64)
+        self.assertEqual(d['entries'][0]['status'],'pending')
+        self.assertIn('multiple address',d['entries'][0]['reason'])
+    def test_name_or_address_changes_quarantine_and_manual_identity_link(self):
+        from njd.storage import reconcile_identity
+        old=dataset()
+        changed=parse(HTML.replace('架空市甲町1','架空市甲町一番地'),'2026-11-08','a'*64)
+        new_id=changed['facilities'][0]['id'];old_id=old['facilities'][0]['id']
+        pending=reconcile_identity(old,changed,{})
+        self.assertEqual(pending['entries'][0]['status'],'pending')
+        repeat=reconcile_identity(pending,changed,{})
+        self.assertEqual(repeat['entries'][0]['status'],'pending')
+        linked=reconcile_identity(pending,changed,{new_id:{'facility_id':old_id,'expected_source_hash':changed['entries'][0]['source_hash'],'reason':'identity reviewed'}})
+        self.assertEqual(linked['facilities'][0]['id'],old_id)
+        self.assertEqual(linked['entries'][0]['id'],old['entries'][0]['id'])

@@ -39,6 +39,8 @@ class Output:
 def render(data: dict, name: str) -> Output:
     profile=FORMATS[name]
     if profile['status']=='blocked': return Output(None,status='blocked',reason=profile['reason'])
+    if any(p['kind']=='global' for p in validate(data)):
+        return Output(None,status='blocked',reason='invalid canonical data structure',validation=validate(data))
     if name=='json': return Output(json_bytes(data),rows=len(data['entries']))
     if name=='csv':
         fmap={f['id']:f for f in data['facilities']}; records=[]

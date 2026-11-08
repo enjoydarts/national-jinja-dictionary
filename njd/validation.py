@@ -1,5 +1,6 @@
 """Offline structural and evidence consistency checks; not URL authentication."""
 from collections import Counter
+import hashlib
 from datetime import datetime
 import re
 from urllib.parse import urlsplit
@@ -14,7 +15,17 @@ def _url(v):
 def validate(data: dict) -> list[dict]:
     problems=[]
     def add(kind,rid,reason): problems.append(dict(kind=kind,id=rid,reason=reason))
+    if not isinstance(data,dict): return [dict(kind='global',id=None,reason='dataset must be an object')]
     fs=data.get('facilities',[]); es=data.get('entries',[])
+    for kind,records,fields in [
+        ('facility',fs,['id','status','listed_name','name_raw','prefecture','prefecture_code','municipality','address','agency','source_locator','source_hash','page_hash','listing_url','fetched_at','checked_at','reason']),
+        ('entry',es,['id','facility_id','status','surface','reading','name_raw','reading_raw','source_hash','page_hash','listing_url','reading_url','evidence','semantic_type','reading_source_kind','fetched_at','checked_at','reason'])]:
+        if not isinstance(records,list) or any(not isinstance(r,dict) for r in records):
+            return [dict(kind='global',id=None,reason='invalid '+kind+' collection')]
+        for r in records:
+            for field in fields:
+                if field in r and not isinstance(r[field],str):
+                    return [dict(kind='global',id=r.get('id'),reason='invalid field type: '+field)]
     for kind,records in [('facility',fs),('entry',es)]:
         counts=Counter(r.get('id') for r in records)
         for rid,n in counts.items():
@@ -48,6 +59,9 @@ def validate(data: dict) -> list[dict]:
         if e.get('source_hash')!=f.get('source_hash') or e.get('page_hash')!=f.get('page_hash'):
             add('entry',eid,'source fingerprint differs from facility')
         if e.get('semantic_type')!='proper_noun': add('entry',eid,'unsupported semantic type')
+        row_material='\0'.join((f.get('name_raw',''),e.get('reading_raw',''),f.get('address','')))
+        if hashlib.sha256(row_material.encode()).hexdigest()!=e.get('source_hash'):
+            add('entry',eid,'acquired original differs from source-row fingerprint')
         if e.get('status')=='verified':
             if not _url(e.get('reading_url')): add('entry',eid,'missing/invalid reading URL')
             if not e.get('evidence'): add('entry',eid,'missing evidence')
@@ -56,8 +70,25 @@ def validate(data: dict) -> list[dict]:
                 add('entry',eid,'agency reading URL differs from listing')
             try:
                 if normalize_reading(e.get('reading',''))!=e.get('reading'): raise ValueError()
-                if normalize_reading(e.get('reading_raw',''))!=e.get('reading'): raise ValueError()
-            except ValueError: add('entry',eid,'invalid or ungrounded reading')
+                if e.get('reading_source_kind')=='agency':
+                    raw=e.get('reading_raw','')
+                else:
+                    raw=e.get('supplemental_reading_raw','')
+                    if e.get('reading_raw'): raise ValueError('agency reading already present')
+                    official_host=urlsplit(f.get('official_site_url') or '').hostname
+                    proof=e.get('supplemental_official_verification')
+                    if proof is not None:
+                        if not isinstance(proof,dict): raise ValueError('invalid official identity evidence')
+                        if proof.get('status')!='verified' or not proof.get('evidence'): raise ValueError('official identity unverified')
+                        if proof.get('name_raw')!=f.get('listed_name') or proof.get('address_raw')!=f.get('address'): raise ValueError('official identity mismatch')
+                        if not _url(proof.get('url')) or not _url(proof.get('evidence_url')): raise ValueError('official identity URL missing')
+                        datetime.fromisoformat(proof.get('checked_at',''))
+                        official_host=urlsplit(proof['url']).hostname
+                        if urlsplit(proof['evidence_url']).hostname!=official_host: raise ValueError('official evidence outside official host')
+                    if not official_host or urlsplit(e.get('reading_url','')).hostname!=official_host: raise ValueError('official identity not established')
+                    if e.get('supplemental_name')!=f.get('listed_name') or e.get('supplemental_address')!=f.get('address'): raise ValueError('name/address mismatch')
+                if normalize_reading(raw)!=e.get('reading'): raise ValueError()
+            except (ValueError,TypeError): add('entry',eid,'invalid or ungrounded reading')
         key=(e.get('facility_id'),e.get('reading'),e.get('surface'))
         if key in seen: add('entry',eid,'duplicate facility entry')
         seen.add(key)

@@ -11,7 +11,7 @@ from njd.audit import audit_gunma
 from njd.exporters import render, FORMATS
 from njd.http import Client, FetchError
 from njd.report import report, samples, subset
-from njd.storage import apply_decisions, load_dataset, save_dataset, write_json
+from njd.storage import apply_decisions, load_dataset, save_dataset, write_json, reconcile_identity
 from njd.validation import validate
 
 REPOSITORY=Path(__file__).resolve().parents[1]
@@ -102,7 +102,11 @@ def main(argv=None):
         client=Client(work/'cache',offline=args.offline)
         page=client.fetch(gunma.URL,refresh=args.refresh)
         data=gunma.parse(page.text,page.fetched_at,page.sha256,limit=args.limit or None)
+        prior=load_dataset(work/'common.json') if (work/'common.json').exists() else None
+        links=load_dataset(work/'identities.json') if (work/'identities.json').exists() else {}
+        data=reconcile_identity(prior,data,links)
         delta=save_dataset(work/'common.json',data)
+        if not (work/'identities.json').exists(): write_json(work/'identities.json',{})
         if not (work/'decisions.json').exists(): write_json(work/'decisions.json',{})
         _review_lists(_effective(work),work)
         print(json.dumps(dict(facilities=len(data['facilities']),observed_rows=data['collection']['source_rows_observed'],changes={k:len(v) for k,v in delta.items()}),ensure_ascii=False))

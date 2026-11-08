@@ -61,8 +61,12 @@ def parse(html: str, fetched_at: str, source_hash: str, limit: int | None=None) 
             reading=''; status='pending'; reason=str(exc)
         city_match=re.match(r'(.+?郡.+?[町村]|.+?[市町村])',address)
         municipality=city_match.group(1) if city_match else ''
+        facility_status='verified'; facility_reason=''
         if not name or not address or not municipality:
-            status='pending'; reason='missing name, address or municipality'
+            facility_status='pending'; facility_reason='missing name, address or municipality'
+        if '\n' in address or '\r' in address:
+            facility_status='pending'; facility_reason='multiple address lines; facility identity requires review'
+        if facility_status=='pending': status='pending'; reason=facility_reason
         locator=f'section#{section} table tr (document row {row_number})'
         # Row digest lets unrelated changes elsewhere on the page leave a human
         # decision applicable; whole-page digest is also retained for auditing.
@@ -70,7 +74,7 @@ def parse(html: str, fetched_at: str, source_hash: str, limit: int | None=None) 
         facility=dict(id=fid,agency=AGENCY,prefecture_code='10',prefecture='群馬県',
             listed_name=name,name_raw=name,municipality=municipality,address=address,
             listing_url=URL,source_locator=locator,source_hash=row_hash,page_hash=source_hash,
-            fetched_at=fetched_at,checked_at=fetched_at,status=status,reason=reason,
+            fetched_at=fetched_at,checked_at=fetched_at,status=facility_status,reason=facility_reason,
             official_site_url=(cells[0]['links'] or [None])[0])
         entry=dict(id=eid,facility_id=fid,surface=name,reading=reading,
             semantic_type='proper_noun',name_raw=name,reading_raw=raw,
