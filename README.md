@@ -1,122 +1,121 @@
 # 全国神社辞書
 
-National Jinja Dictionary — 調査した各都道府県神社庁の公式掲載情報に基づく辞書を、出典付き共通データから生成するPythonプロジェクトです。
+National Jinja Dictionary — 調査した各都道府県神社庁の公式掲載情報に基づく辞書を、出典付きの正本データから生成するPythonプロジェクトです。旅行先の神社名や難読名の入力を助けるため、件数より名称・読みの正確さを優先します。
 
-旅行先の神社名や難読名の入力を助けるため、名称・読みの正確さと変換候補の使いやすさを優先します。
+## 正本と配布物
+
+**辞書の正本はこのリポジトリの [`data/sources/`](data/sources/) に保存します。** 名称・読みの原文、所在地、出典、取得日、検証状態を持つ施設・登録レコードです。クローリングのたびにしか辞書を作れない構成ではありません。
+
+```text
+収集・資料照合 → data/の正本を更新・レビュー・コミット
+                              ↓
+              リリース対象のコミットをチェックアウト
+                              ↓
+             正本を検証 → オフラインで各辞書を新規生成
+                              ↓
+                GitHub ReleaseへZIP・SHA-256・出典情報を添付
+```
+
+生成辞書はReleaseの配布物とし、古い生成ファイルをリポジトリへ常備して配布する方法は使いません。リリース中に再クロールして未確認データへ置き換える処理もありません。最新の掲載情報を反映するときは、先に正本を更新してコミットします。
+
+Obsidianに残すのは作業記録・判断経緯などのノートだけです。取得HTML・画像・HTTPキャッシュはGit対象外のキャッシュ領域に置き、正本と分離します。
 
 ## 対応範囲
 
-初版の実装対象は群馬県神社庁の[県内神社紹介](https://www.gunma-jinjacho.jp/jinja/)です。同じ表行の名称・カナ・所在地を根拠にします。47都道府県の初回情報源調査は実施しましたが、他46都道府県の収集アダプターは未実装です。県ごとの公式性・掲載範囲・利用条件等の調査台帳はObsidianで管理しています。
+47都道府県を対象に収集を進めています。地域ごとの取得状態・掲載範囲・件数・停止理由は [`data/manifest.json`](data/manifest.json)、施設の出典と検証状態は各正本を参照してください。全国版というファイル名は全国の全神社を網羅したことを意味しません。
 
-| 出力 | 実装状態 | 実際のIMEへの取り込み |
+| 出力 | 状態 | 実機への取り込み |
 | --- | --- | --- |
 | Mozc | 固定コミットの公式実装に基づくTSV生成・自動検証 | 未実施 |
-| JSON・CSV | 出典・所在地・原文・検証状態を含む管理データ | IME取り込み用ではない |
-| ATOK | 保留：現行版、符号化・BOM等の確認不足 | 未実施 |
-| Google日本語入力 | 保留：製品側のインポート仕様・対象版未確定 | 未実施 |
-| Microsoft IME | 保留：公式の一括取り込み仕様・対象版未確定 | 未実施 |
-| macOS追加辞書 | 保留：CSV仕様の一部を確認、符号化等未確定 | 未実施 |
+| JSON・CSV | 出典・所在地・原文・検証状態を含む管理データ | IME用ではない |
+| ATOK | 現行版・符号化・BOM等の確認不足で保留 | 未実施 |
+| Google日本語入力 | 製品側の一括形式・対象版未確定で保留 | 未実施 |
+| Microsoft IME | 公式一括形式・対象ビルド未確定で保留 | 未実施 |
+| macOS追加辞書 | 固定版・符号化等未確定で保留 | 未実施 |
 
-保留形式のファイルは生成しません。Google日本語入力とMozcの完全互換は確認できておらず、共通形式と決めつけません。macOSの追加辞書はユーザ辞書・テキスト置換とは別です。iPhoneへの直接取り込みやAppleデバイス間同期は対象外です。
+保留形式のファイルは推測で生成しません。Google日本語入力とMozcの完全互換は未確認です。macOS追加辞書はユーザ辞書・テキスト置換とは区別し、iPhone直接取り込みやデバイス間同期は対象外です。[出力仕様と品詞対応](docs/FORMATS.md)に根拠と不足情報を記載しています。
 
-収集データ・生成辞書の再配布条件は未確認のため、このリポジトリではコードと利用者向け文書を公開しています。ローカルの共通データと生成物はリポジトリ外に保存してください。全国版ファイルも**収集した地域のデータだけ**を含み、全国網羅を意味しません。
+## セットアップ
 
-## 環境と実行
-
-[Python公式](https://www.python.org/downloads/)で確認した最新安定版、Python **3.15.2以上**を使います。`.python-version`は3.15.2です。実行時の外部依存ライブラリはありません。HTTP収集のプロセス間ロックはmacOS/LinuxのPOSIX環境を対象とします。
+Python **3.15.2以上**を使います。`.python-version`は3.15.2、実行時の外部依存はありません。HTTP収集のプロセス間ロックはmacOS/Linuxを対象とします。
 
 ```sh
 git clone https://github.com/enjoydarts/national-jinja-dictionary.git
 cd national-jinja-dictionary
 python3 --version
-python3 -m njd --help
 python3 -m unittest discover -s tests -v
+python3 -m njd --help
 ```
 
-パッケージとして利用する場合は `python3 -m pip install -e .` で `national-jinja-dictionary` コマンドを追加できます。ビルドにはsetuptoolsを使用します。
+パッケージとして利用する場合は `python3 -m pip install -e .` でコマンドを追加できます。
 
-## 収集・再生成
+## 正本からのオフライン生成
 
-`NJD_WORKSPACE`は利用者自身のObsidianフォルダーなど、**このリポジトリの外**を指定します。以下の保存先は例です。
+クローンしたリポジトリの正本だけで生成できます。`validate`と`build`はネット接続しません。
 
 ```sh
-NJD_WORKSPACE="$HOME/Documents/Obsidian/全国神社辞書/artifacts"
-
-# まず100施設まで試作
-python3 -m njd --workspace "$NJD_WORKSPACE" collect gunma --limit 100
-python3 -m njd --workspace "$NJD_WORKSPACE" validate
-python3 -m njd --workspace "$NJD_WORKSPACE" audit
-
-# 確認できた形式を一括生成
-python3 -m njd --workspace "$NJD_WORKSPACE" build --formats mozc,json,csv \
-  --sample-name 倭文神社 --sample-name 大國神社
-
-# 指定形式・指定県のみ
-python3 -m njd --workspace "$NJD_WORKSPACE" build --formats mozc --prefecture 10
-
-# キャッシュから再開。0は観測できた全施設行を選択する指定
-python3 -m njd --workspace "$NJD_WORKSPACE" collect gunma --limit 0 --offline
-python3 -m njd --workspace "$NJD_WORKSPACE" validate
-python3 -m njd --workspace "$NJD_WORKSPACE" audit
-python3 -m njd --workspace "$NJD_WORKSPACE" build --formats mozc,json,csv
-python3 -m njd --workspace "$NJD_WORKSPACE" report
+python3 -m njd validate
+python3 -m njd build --formats mozc,json,csv
+python3 -m njd build --formats mozc --prefecture 10
 ```
 
-`--refresh`はページとrobots.txtを再確認します。通常はキャッシュを使い、同じページを不要に取得しません。オンライン時のrobotsキャッシュは24時間で再確認します。ネットワークなしでの再取得再開には `--offline` を使います。キャッシュ破損、robotsの拒否や判定不能、アクセス拒否は停止理由として返します。404のrobots.txtをデータ再利用の許諾とは扱いません。
+既定の出力先は `dist/dictionaries/` です。全国版は `national/`、県別は `prefectures/NN/`、取り込み確認用サンプルは `samples/` に生成します。指定形式だけの生成にも対応します。`build`は出力先を今回指定した形式・地域だけへ置き換えるため、保管する配布物はReleaseを利用してください。
 
-`build --formats all`（既定値）は全形式を評価し、確認済み形式だけを書き出します。保留形式と不足情報は `generated/report.json` に記録し、終了コード **2** を返します。正常生成は0、検証・取得などのエラーは1です。
+`--data-dir`で正本の場所、`--output-dir`で出力先を指定できます。旧`--workspace`は移行用の互換オプションです。
 
-`build`のたびに `generated/` はその実行で指定した形式・地域だけへ置き換わります。残したい出力は別の外部フォルダーへ保管してください。共通データ・判断ファイル・キャッシュは保持します。
+`build --formats all`は保留形式も評価し、実装済み形式だけを書き出します。保留内容を`report.json`へ残して終了コード2を返します。通常成功は0、データ検証・取得エラー等は1です。保留と不正データを区別します。
 
-## 保存物
+## 正本の最新化
 
-すべて `NJD_WORKSPACE` 配下へ保存します。取得本文、作業ログ、台帳、個人の環境情報を公開リポジトリへコミットしないでください。
+```sh
+# まず少量で抽出を確認
+python3 -m njd collect gunma --limit 100
 
-| パス | 内容 |
-| --- | --- |
-| `common.json` | IMEに依存しない正本。施設と登録を分離 |
-| `decisions.json` | 人手の修正・除外判断。再取得時に上書きしない |
-| `identities.json` | 改称・住所変更時の人手によるID対応 |
-| `snapshots/`、`changes.json` | 前回データと追加・削除・変更の差分 |
-| `cache/` | URL・取得日時・hash付き取得キャッシュ |
-| `pending.json`、`excluded.json` | 要確認・除外の登録リスト |
-| `validation.json` | データ検証結果 |
-| `source-audit.json` | 取得資料との全件照合結果 |
-| `generated/national/` | 収集済み範囲の全国版 |
-| `generated/prefectures/10/` | 群馬県版 |
-| `generated/samples/` | 取り込み確認用の小規模データと施設・出典manifest |
-| `generated/report.json` | 47県の収集状態、件数、形式別出力と除外理由 |
-| `generated/checksums.json` | 再生成した各ファイルのSHA-256 |
+# 指定神社庁の全掲載範囲を収集（0は上限なし）
+python3 -m njd collect gunma --limit 0
 
-施設レコード数、辞書へ出せる確認済み施設数、重複除去した辞書行数、形式ごとの出力行数を分けて報告します。JSON・CSVの件数は要確認・除外も含む**管理レコード数**です。一覧から観測した行数は、神社庁の掲載総数や地域の全神社数とは限りません。
+# 実装済みの全神社庁。失敗した地域の前回正本は消さない
+python3 -m njd collect all --limit 0
 
-## データと確認
+# 必要なときだけページを更新。通常はキャッシュを再利用
+python3 -m njd collect gunma --limit 0 --refresh
+python3 -m njd collect gunma --limit 0 --offline
 
-- 収録対象は神社庁が掲載した神社。表記は掲載名そのままとし、通称・略称・祭神名などは追加しません。
-- 読みのNFKC・カタカナからひらがなへの変換だけを行います。異体字・旧字体を含む名称にはNFKCを適用しません。
-- 読みの原文、名称原文、所在地、出典URL、短い確認根拠、取得・確認日時、ページ・行のhashを保存します。
-- `verified`は資料の明示項目との一致を意味します。人が全施設の発音を独立に調べたという意味ではありません。詳細は[データ仕様](docs/DATA.md)を参照してください。
-- 読みの不正文字、複数の住所を含む曖昧な行、出典の不備、未確認情報は出力しません。解釈や推定で修復しません。
-- 神社庁掲載の読みが空の場合だけ、公式性と掲載名・所在地を照合した神社公式サイトの読みを、別フィールドで補完できます。
-- 同名施設は別レコードのまま保持し、読み・表記・出力先品詞が同じ行だけを出力時に重複除去します。
+python3 -m njd validate
+git diff -- data/
+```
 
-テストの神社名・住所は架空データで、実在施設の出典としては使用していません。
+取得先の規約・robots・制限を確認してから実行してください。`--cache-dir`の既定値はリポジトリ外の `~/.cache/national-jinja-dictionary/http` です。同一ホストの間隔は最低2秒とし、異なるホストは独立して取得できます。キャッシュ、タイムアウト、再試行、途中再開、24時間ごとのオンラインrobots再確認を備えます。アクセス拒否や規則の判定不能を回避しません。
 
-## Mozc取り込み確認
+取得結果だけで名称・読みを確定できない登録は`pending`に残し、辞書には出しません。読みの推定、通称・略称追加、異体字の置換はしません。人手判断は`data/decisions.json`、ID対応は`data/identities.json`で保持します。[データ仕様](docs/DATA.md)を参照してください。
 
-1. `generated/samples/national/mozc.txt` を取り込み確認に使います。難読名を選ぶには `--sample-name` を指定します。
-2. Mozcの辞書ツールで試験用の新しいユーザー辞書を作成し、テキストファイルからのインポートで選択します。UI文言は使用ビルドによって異なります。
-3. 同フォルダーの `manifest.json` と読み・表記・異体字を照合し、実際に変換して確認します。同名施設が同じ候補になる場合も、manifestには各施設が残ります。
-4. 問題がなければ必要な全国版または県別ファイルを取り込みます。
+## リリース時の最新生成
 
-この手順の**実機検証は未実施**です。自動形式チェックや原文照合の成功を、IMEでの動作確認済みとは表示しません。ほかの形式の取り込み手順は、仕様とサンプルを確認してから追加します。
+正本とコードをコミットした後、リリース対象コミットの`v*`タグをpushすると[Release workflow](.github/workflows/release.yml)が実行されます。手動実行では既存タグを指定します。
 
-## 構成と拡張
+1. タグの正本とコードをチェックアウト。
+2. 自動テストと正本検証を実行。
+3. 正本から新しく辞書・サンプル・件数レポートを生成。
+4. ZIP、`SHA256SUMS`、`SOURCE.json`をGitHub Releaseへ添付。
 
-取得クライアント `njd/http.py`、県別アダプター `njd/adapters/`、正規化 `njd/normalize.py`、検証 `njd/validation.py`、保存 `njd/storage.py`、出力 `njd/exporters.py`、集計 `njd/report.py`、原文照合 `njd/audit.py` を分離しています。
+`SOURCE.json`に正本コミット、各入力ファイルのSHA-256、検証済みデータのhashを含めます。ZIP内のファイル順・時刻を固定し、同じ実行環境・正本・版から同じ内容を再生成できます。
 
-新しい県は公式性・一覧・項目・条件を調査したうえで専用アダプターを追加します。新しい形式は[出力仕様と品詞対応](docs/FORMATS.md)に根拠と対象版を記録し、出力プロファイル・直接出力処理・制限テストを追加します。ATOKなどを他形式の中間データとして使いません。
+ローカルでの同じ生成処理：
+
+```sh
+python3 -m njd.release --version v0.2.0
+```
+
+これはローカル生成だけで、Releaseの作成やタグのpushは行いません。GitHub側のworkflow実行と実際のIME取り込みは、ローカルの生成テストとは別に確認します。
+
+## 件数と取り込み確認
+
+レポートは施設レコード数、確認済み施設数、重複除去後辞書行数、形式ごとの行数を分けます。JSON・CSVの件数は未確認・除外を含む管理レコード数で、IME用語数とは異なります。取得数、神社庁の掲載総数、地域の全神社数を同一視しません。
+
+Mozcでは先に `samples/national/mozc.txt` を試験用ユーザー辞書へインポートし、同フォルダーのmanifestと読み・表記・異体字を照合してください。同名施設が同じ候補になる場合も、manifestには各施設が残ります。難読名を含めるには `build --sample-name 倭文神社` のように実在する収録名を指定できます。
+
+全形式の実機取り込みは未確認です。自動形式チェック・資料照合の成功を動作確認済みとは表示しません。テスト内の神社・住所は架空で、実施設の出典には使用しません。
 
 ## ライセンス
 
-ソースコードと本プロジェクトの文書は[MIT License](LICENSE)です。収集元の資料・データに関する権利・利用条件は別途管理し、MITライセンスで上書きしません。有料APIの契約・課金やアクセス制限の回避は行いません。
+ソースコード・プロジェクト文書は[MIT License](LICENSE)です。収集元の資料・データの利用条件は出典別に管理し、コードのMIT表示で上書きしません。利用条件未確認のものを許諾済みとは表示しません。取得ページ本文や画像は配布しません。有料APIの契約・課金は行いません。
