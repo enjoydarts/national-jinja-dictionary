@@ -61,3 +61,27 @@ class FetchTest(unittest.TestCase):
             c._save(Page('https://example.invalid/page',200,{},b'old page','2020-01-01T00:00:00+00:00'))
             with self.assertRaises(FetchError): c.fetch('https://example.invalid/page')
             self.assertEqual(n.calls,['https://example.invalid/robots.txt'])
+
+    def test_html_declared_charset_is_used_when_http_has_none(self):
+        page=Page('https://example.invalid/',200,{'content-type':'text/html'},'<meta charset="shift_jis"><p>神社</p>'.encode('shift_jis'),'2026-11-08T00:00:00+00:00')
+        self.assertIn('神社',page.text)
+
+    def test_independent_hosts_do_not_share_network_lock(self):
+        from concurrent.futures import ThreadPoolExecutor
+        from threading import Event
+        entered_a=Event(); entered_b=Event(); release_a=Event()
+        def transport(url,timeout,user_agent):
+            if 'first.invalid' in url:
+                entered_a.set();release_a.wait(3)
+            else: entered_b.set()
+            return 200,{},b'ok'
+        with tempfile.TemporaryDirectory() as td:
+            c=Client(Path(td),interval=0,transport=transport)
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                first=pool.submit(c._network,'https://first.invalid/page')
+                self.assertTrue(entered_a.wait(1))
+                second=pool.submit(c._network,'https://second.invalid/page')
+                try: independent=entered_b.wait(1)
+                finally: release_a.set()
+                first.result();second.result()
+            self.assertTrue(independent,'one host must not hold the lock of another host')

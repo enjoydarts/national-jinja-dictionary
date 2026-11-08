@@ -6,13 +6,15 @@ from pathlib import Path
 import shutil
 import sys
 from njd import __version__
+from njd.catalog import registry
+from njd.nationwide import merge_collections, run_collections
 from njd.adapters import gunma
 from njd.audit import audit_gunma
 from njd.exporters import render, FORMATS
 from njd.http import Client, FetchError
 from njd.report import report, samples, subset
 from njd.storage import apply_decisions, load_dataset, save_dataset, write_json, reconcile_identity
-from njd.validation import validate
+from njd.validation import validate, blocking_problems
 
 REPOSITORY=Path(__file__).resolve().parents[1]
 
@@ -25,10 +27,13 @@ def external_workspace(value):
 def parser():
     p=argparse.ArgumentParser(description='全国神社辞書: source-grounded data and IME generation')
     p.add_argument('--version',action='version',version=__version__)
-    p.add_argument('--workspace',required=True,help='external directory for canonical data, caches and reports')
+    p.add_argument('--workspace',help='legacy external combined workspace (prefer separate data/cache/output directories)')
+    p.add_argument('--data-dir',default=str(REPOSITORY/'data'),help='version-controlled canonical source data')
+    p.add_argument('--cache-dir',default=str(Path.home()/'.cache'/'national-jinja-dictionary'/'http'),help='private HTTP cache, outside the repository')
+    p.add_argument('--output-dir',default=str(REPOSITORY/'dist'/'dictionaries'),help='fresh generated release files')
     sub=p.add_subparsers(dest='command',required=True)
-    collect=sub.add_parser('collect'); collect.add_argument('source',choices=['gunma'])
-    collect.add_argument('--limit',type=int,default=100,help='maximum source rows; 0 selects all observed rows')
+    collect=sub.add_parser('collect'); collect.add_argument('source',help='registered source key or all')
+    collect.add_argument('--limit',type=int,default=0,help='maximum source rows; 0 selects all observed rows')
     collect.add_argument('--offline',action='store_true'); collect.add_argument('--refresh',action='store_true')
     sub.add_parser('validate'); sub.add_parser('audit'); sub.add_parser('report')
     build=sub.add_parser('build'); build.add_argument('--formats',default='all',help='all or comma-separated mozc,json,csv,atok,google,msime,macos')
@@ -37,7 +42,7 @@ def parser():
     return p
 
 def _effective(work):
-    data=load_dataset(work/'common.json')
+    data=merge_collections(work)
     decisions=work/'decisions.json'
     return apply_decisions(data,load_dataset(decisions)) if decisions.exists() else data
 
@@ -45,12 +50,13 @@ def _review_lists(data,work):
     for status in ['pending','excluded']:
         write_json(work/(status+'.json'),[e for e in data['entries'] if e['status']==status])
 
-def build_outputs(data,work,formats,requested_prefecture=None,sample_names=()):
+def build_outputs(data,work,formats,requested_prefecture=None,sample_names=(),output_dir=None):
     unknown=set(formats)-FORMATS.keys()
     if unknown: raise ValueError('unknown formats: '+','.join(sorted(unknown)))
-    destination=work/'generated'; staging=work/'generated.tmp'
+    destination=Path(output_dir) if output_dir is not None else work/'generated'
+    staging=destination.with_name(destination.name+'.tmp')
     if staging.exists(): shutil.rmtree(staging)
-    staging.mkdir()
+    staging.mkdir(parents=True)
     scopes={'national':data}
     codes=sorted({f['prefecture_code'] for f in data['facilities']})
     for code in codes:
@@ -82,7 +88,7 @@ def build_outputs(data,work,formats,requested_prefecture=None,sample_names=()):
     write_json(staging/'checksums.json',checksums)
     # Replace only our generated directory, so unrequested stale files cannot
     # masquerade as outputs of this run. Preserve the prior generation on errors.
-    backup=work/'generated.previous'
+    backup=destination.with_name(destination.name+'.previous')
     if backup.exists(): shutil.rmtree(backup)
     if destination.exists(): destination.rename(backup)
     try: staging.rename(destination)
@@ -94,41 +100,43 @@ def build_outputs(data,work,formats,requested_prefecture=None,sample_names=()):
 
 def main(argv=None):
     args=parser().parse_args(argv)
-    work=external_workspace(args.workspace)
-    work.mkdir(parents=True,exist_ok=True)
+    if args.workspace:
+        work=external_workspace(args.workspace); cache=work/'cache'; output=work/'generated'
+    else:
+        work=Path(args.data_dir).expanduser().resolve()
+        cache=external_workspace(args.cache_dir)
+        output=Path(args.output_dir).expanduser().resolve()
+    if args.command=='collect': work.mkdir(parents=True,exist_ok=True)
     if args.command=='collect':
         if args.limit<0: raise ValueError('limit must be nonnegative')
         if args.offline and args.refresh: raise ValueError('offline and refresh cannot be combined')
-        client=Client(work/'cache',offline=args.offline)
-        page=client.fetch(gunma.URL,refresh=args.refresh)
-        data=gunma.parse(page.text,page.fetched_at,page.sha256,limit=args.limit or None)
-        prior=load_dataset(work/'common.json') if (work/'common.json').exists() else None
-        links=load_dataset(work/'identities.json') if (work/'identities.json').exists() else {}
-        data=reconcile_identity(prior,data,links)
-        delta=save_dataset(work/'common.json',data)
+        available=registry()
+        keys=sorted(available,key=lambda k:available[k]['code']) if args.source=='all' else [args.source]
+        if any(k not in available for k in keys): raise ValueError('unknown or unsupported source key')
+        states=run_collections(work,available,keys,offline=args.offline,refresh=args.refresh,
+            limit=args.limit or None,cache_dir=cache)
         if not (work/'identities.json').exists(): write_json(work/'identities.json',{})
         if not (work/'decisions.json').exists(): write_json(work/'decisions.json',{})
-        _review_lists(_effective(work),work)
-        print(json.dumps(dict(facilities=len(data['facilities']),observed_rows=data['collection']['source_rows_observed'],changes={k:len(v) for k,v in delta.items()}),ensure_ascii=False))
-        return 0
+        print(json.dumps({k:v for k,v in states.items() if v['source_key'] in keys},ensure_ascii=False))
+        return 1 if any(states[available[k]['code']]['status'].startswith('failed') for k in keys) else 0
     data=_effective(work)
     if args.command=='validate':
-        issues=validate(data); write_json(work/'validation.json',issues); _review_lists(data,work)
-        print(json.dumps(dict(problems=len(issues),facilities=len(data['facilities'])),ensure_ascii=False))
-        return 1 if issues else 0
+        issues=validate(data); write_json((work if args.workspace else output)/'validation.json',issues); _review_lists(data,work if args.workspace else output)
+        print(json.dumps(dict(errors=len(blocking_problems(data)),reviews=sum(p.get('severity')=='review' for p in issues),facilities=len(data['facilities'])),ensure_ascii=False))
+        return 1 if blocking_problems(data) else 0
     if args.command=='audit':
         # Audit pristine acquired records; human decisions remain separate.
         raw=load_dataset(work/'common.json')
-        page=Client(work/'cache',offline=True).fetch(gunma.URL)
+        page=Client(cache,offline=True).fetch(gunma.URL)
         result=audit_gunma(raw,page.text,page.sha256); write_json(work/'source-audit.json',result)
         print(json.dumps(result,ensure_ascii=False)); return 1 if result['mismatches'] else 0
     if args.command=='report':
-        result=report(data); write_json(work/'report.json',result)
+        result=report(data); write_json((work if args.workspace else output)/'report.json',result)
         print(json.dumps(result['totals'],ensure_ascii=False)); return 0
     if args.command=='build':
         formats=list(FORMATS) if args.formats=='all' else args.formats.split(',')
-        result,blocked=build_outputs(data,work,formats,args.prefecture,args.sample_name)
-        _review_lists(data,work)
+        result,blocked=build_outputs(data,work,formats,args.prefecture,args.sample_name,output_dir=output)
+        _review_lists(data,work if args.workspace else output)
         print(json.dumps(result['totals'],ensure_ascii=False))
         if blocked: print('Some requested formats are blocked; see generated/report.json',file=sys.stderr)
         return 2 if blocked else 0

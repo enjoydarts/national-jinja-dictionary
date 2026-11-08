@@ -14,7 +14,7 @@ def _url(v):
 
 def validate(data: dict) -> list[dict]:
     problems=[]
-    def add(kind,rid,reason): problems.append(dict(kind=kind,id=rid,reason=reason))
+    def add(kind,rid,reason,severity='error'): problems.append(dict(kind=kind,id=rid,reason=reason,severity=severity))
     if not isinstance(data,dict): return [dict(kind='global',id=None,reason='dataset must be an object')]
     if data.get('schema_version')!=1 or not all(k in data for k in ['facilities','entries','collection']) or not isinstance(data.get('collection'),dict):
         return [dict(kind='global',id=None,reason='missing required dataset fields or unsupported schema version')]
@@ -47,7 +47,7 @@ def validate(data: dict) -> list[dict]:
     fmap={f.get('id'):f for f in fs}
     for f in fs:
         for field in ['listed_name','name_raw','prefecture','municipality','address','agency','source_locator']:
-            if not f.get(field): add('facility',f.get('id'),'missing '+field)
+            if not f.get(field): add('facility',f.get('id'),'missing '+field,severity='review' if f.get('status')!='verified' and field in ('municipality','address') else 'error')
         code=f.get('prefecture_code','')
         if code not in {f'{i:02}' for i in range(1,48)}: add('facility',f.get('id'),'invalid prefecture code')
         if f.get('listed_name')!=f.get('name_raw'): add('facility',f.get('id'),'name differs from source')
@@ -95,7 +95,7 @@ def validate(data: dict) -> list[dict]:
         if key in seen: add('entry',eid,'duplicate facility entry')
         seen.add(key)
         for field in ['surface','reading']:
-            if any(ord(c)<32 or ord(c)==127 for c in e.get(field,'')): add('entry',eid,'control character in '+field)
+            if any(ord(c)<32 or ord(c)==127 for c in e.get(field,'')): add('entry',eid,'control character in '+field,severity='review' if e.get('status')!='verified' else 'error')
     return problems
 
 def eligible(data: dict) -> list[dict]:
@@ -106,3 +106,7 @@ def eligible(data: dict) -> list[dict]:
     fmap={f['id']:f for f in data['facilities']}
     return [e for e in data['entries'] if e['status']=='verified' and e['id'] not in bad_e
         and e['facility_id'] not in bad_f and fmap.get(e['facility_id'],{}).get('status')=='verified']
+
+
+def blocking_problems(data):
+    return [p for p in validate(data) if p.get('severity','error')=='error']

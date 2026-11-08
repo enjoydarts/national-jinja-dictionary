@@ -58,3 +58,11 @@ class ExportTest(unittest.TestCase):
         self.assertTrue(s['entries'])
         self.assertTrue({e['id'] for e in s['entries']} <= {e['id'] for e in d['entries']})
         self.assertEqual(len({e['surface'] for e in s['entries']}),1)
+
+    def test_prefecture_scope_does_not_repeat_unrelated_source_metadata(self):
+        from njd.report import subset
+        d=dataset();d['collection']['sources']={'gunma':{'prefecture_code':'10','source_rows_observed':3},'other':{'prefecture_code':'11','source_rows_observed':999}}
+        s=subset(d,'10')
+        self.assertEqual(set(s['collection']['sources']),{'gunma'})
+        self.assertEqual(s['collection']['source_rows_observed'],3)
+        self.assertEqual(len(d['collection']['sources']),2)

@@ -27,7 +27,16 @@ class Page:
     @property
     def text(self):
         match=re.search(r'charset=([^;\s]+)',self.headers.get('content-type',''),re.I)
-        encoding=match.group(1).strip('"\'') if match else 'utf-8'
+        if match:
+            encoding=match.group(1).strip('"\'')
+        elif self.body.startswith(b'\xef\xbb\xbf'):
+            encoding='utf-8-sig'
+        elif self.body.startswith((b'\xff\xfe',b'\xfe\xff')):
+            encoding='utf-16'
+        else:
+            # Use explicit HTML declarations, never a guessed Japanese codec.
+            meta=re.search(br'<meta\b[^>]*\bcharset\s*=\s*[\x22\x27]?\s*([a-zA-Z0-9_.-]+)',self.body[:8192],re.I)
+            encoding=meta.group(1).decode('ascii') if meta else 'utf-8'
         return self.body.decode(encoding,errors='strict')
 
 class NoRedirect(HTTPRedirectHandler):
@@ -70,12 +79,16 @@ class Client:
     def _network(self,url):
         # A cross-process lock plus persisted last-request time respects spacing
         # across restarts and parallel collectors, including failed responses.
-        lock=self.cache/'request.lock'
+        origin=self._origin(url)
+        host_key=self._key(origin)
+        lock=self.cache/('host-'+host_key+'.lock')
         with lock.open('a+b') as stream:
             self._lock(stream)
-            state_path=self.cache/'last_requests.json'
-            state=json.loads(state_path.read_text()) if state_path.exists() else {}
-            origin=self._origin(url)
+            state_path=self.cache/'hosts'/(host_key+'.json')
+            if state_path.exists(): state=json.loads(state_path.read_text())
+            else:
+                legacy=self.cache/'last_requests.json'
+                state=json.loads(legacy.read_text()) if legacy.exists() else {}
             gap=max(self.interval,self.delays.get(origin,0))
             wait=state.get(origin,0)+gap-time.time()
             if wait>60: raise FetchError('required host interval exceeds this run; resume later')
