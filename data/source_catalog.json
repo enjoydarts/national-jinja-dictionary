@@ -2902,6 +2902,21 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://www.mie-jinjachou.page/",
       "collection": {
+        "canonical_data": {
+          "entries": 822,
+          "entry_status_counts": {
+            "pending": 289,
+            "verified": 533
+          },
+          "facilities": 822,
+          "facility_status_counts": {
+            "pending": 1,
+            "verified": 821
+          },
+          "path": "data/sources/mie.json",
+          "verified_entries": 533,
+          "verified_facilities": 821
+        },
         "checked_at": "2026-11-09T06:22:39.247791+00:00",
         "facilities_collected": 822,
         "failed_pages": [],
@@ -3138,53 +3153,195 @@
       "candidate_url": "http://www.kyoto-jinjacho.or.jp/",
       "collection": {
         "canonical_data": {
-          "entries": 39,
+          "entries": 1581,
           "entry_status_counts": {
-            "pending": 39
+            "pending": 1581
           },
-          "facilities": 39,
+          "facilities": 1581,
           "facility_status_counts": {
-            "verified": 39
+            "pending": 2,
+            "verified": 1579
           },
           "path": "data/sources/kyoto.json",
           "verified_entries": 0,
-          "verified_facilities": 39
+          "verified_facilities": 1579
         },
-        "checked_at": "2026-11-09T07:55:14.823326+00:00",
-        "facilities_collected": 39,
+        "checked_at": "2026-11-09T08:52:02.394232+00:00",
+        "facilities_collected": 1581,
         "fields_observed": {
-          "address": 39,
-          "name": 39,
+          "address": 1581,
+          "name": 1581,
           "reading_raw": 0
         },
         "inspection_evidence": [
           {
-            "error": "'utf-8' codec can't decode byte 0x8b in position 315: invalid start byte",
-            "url": "http://www.kyoto-jinjacho.or.jp/"
-          },
-          {
-            "error": "'utf-8' codec can't decode byte 0x8b in position 97: invalid start byte",
-            "url": "http://www.kyoto-jinjacho.or.jp/shrine.html"
-          },
-          {
             "fetched_at": "2026-11-08T14:25:06.988761+00:00",
             "sha256": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
             "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:02.511462+00:00",
+            "sha256": "fe4c693e40430f6b730cee87d474ce7f70a79f561e9ef5da5e53cd317b7c073e",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/02.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:04.560902+00:00",
+            "sha256": "49310fdda3218b0f71c37161e84760bc5a21bc0cabd28fb2c72e814e137fae50",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/03.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:06.615363+00:00",
+            "sha256": "36615418e75a87537dc09e3622f56c79cbf4dad76618cce1c50948450f59ea04",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/04.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:08.665046+00:00",
+            "sha256": "53fcc9790131bec1e049a5483b8be18e51a8d13109a1540fbcc5823d97539a42",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/05.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:10.710632+00:00",
+            "sha256": "e7689c7aeafab17f758d748da075bf45ffeaed914b1c86839e0a60ea90bd1f6d",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/06.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:12.742609+00:00",
+            "sha256": "c1a485b5a2c465e484c3963ec301558aa1cf48cf787c775dda6df46f13d4d747",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/07.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:14.788689+00:00",
+            "sha256": "ff8578778630fe1df91ac8779e25bbba9131e5f91977f31cfd285f57c0e811a0",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/08.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:16.840297+00:00",
+            "sha256": "71579a9e10fc54f270c9bb8b7037fff9e70f36340116ad3e0e5281d045cfd976",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/09.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:18.886806+00:00",
+            "sha256": "487a119fd7971ccf2976d8a3f74cb70c1e76d8258e5dced981ecbacdb38c4595",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/10.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:20.928111+00:00",
+            "sha256": "7dd399ff191bdb1645564584e06ec23506ee7798ce57c8b3b9ecad8f11ea9dfb",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/11.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:22.982199+00:00",
+            "sha256": "dccb7e249f77ae9ff4320190bfb774671a1623602e76101a96745534afbdb9ff",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:25.033535+00:00",
+            "sha256": "46ba55ac3ab93cc2ce7d35764a563bf28680e51adfc35aaa01b41c763a62e483",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/13.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:27.170331+00:00",
+            "sha256": "3bc2b67d84727cc3039b50aec229859ecabcaa8cb7b6203935a38f86f3b33c54",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:29.237272+00:00",
+            "sha256": "d347049fc751993ff86daffa48ea9b666731f3e385465994dda37e77afc28587",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:31.290319+00:00",
+            "sha256": "95578c4a175ebc5a0364ac13f5fec6ec339867d06f4a91538e3c5789804fde9c",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:33.364187+00:00",
+            "sha256": "3a0d63803a412906fd43e1fd349c70cb2410528ef020e998a457ccd04ed602b7",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/16.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:35.413310+00:00",
+            "sha256": "813b93bfc3177f3e648ce53458907e3c9e382873136a5a97f1e94a79e028fdd3",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/17.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:37.456564+00:00",
+            "sha256": "0265445371806d03a8a9f83cd397db5a1f94b485d1540cec24d1b08b23e200dd",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/18.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:39.521765+00:00",
+            "sha256": "46367767603154c527ea58ee3d3a91c73e41463398b9e7cfa88e6ddabe8429b4",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/34.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:41.593602+00:00",
+            "sha256": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:43.658004+00:00",
+            "sha256": "166a62b7cfbac80a54c0f4e356b7d55181143a9cbf99be0adf58d233b616cada",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/21.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:45.726386+00:00",
+            "sha256": "c2646e766be6ec51a930d75a262229d8e184e893bd17809ac9431d9f9e530e8b",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:47.761984+00:00",
+            "sha256": "a1cefcbac41760ef604d37a4a0f01db504f7f8b0e40c9352c836c1bed027bca9",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/22.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:49.804990+00:00",
+            "sha256": "2ce7131d92d4d7694a4b41dade87e2dc7f5fd3cfe5243943bb8551b3a053deda",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/23.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:51.852196+00:00",
+            "sha256": "ae611d3be23a28871108b67744af593b1973f59f752dc229b64c74221554d7cd",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/25.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:53.895957+00:00",
+            "sha256": "d4cb8304acdac6f845bd0ca3efffb5f6a80849f4f563ca6a4ab2727661fd7657",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/28.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:55.965158+00:00",
+            "sha256": "b3f3134c121cc5dc442f3542a27cd6a993123655062462f83fb8c3336b020019",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:51:58.009709+00:00",
+            "sha256": "750b1ada15d32935f516e3b182eff258b92a5ba2ed2aa871d3a4dbae47bb155f",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/30.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:52:00.328312+00:00",
+            "sha256": "8422b2e4b3fcb5146795a3aeb533c6ae715e2e83f3449f039395d4af65121a23",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:52:02.394232+00:00",
+            "sha256": "6614f2a040c168b4d965659f13950224566423f33842a5da56be1aa9cdd06cdc",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/32.html"
           }
         ],
         "inspection_evidence_reference": "data/sources/kyoto.json#collection.pages",
         "listing_authority_status": "agency_site",
-        "pages_fetched": 4,
-        "reason": "公式右京区一覧の39施設名・所在地・実リンクを保存。掲載読みは未確認。愛宕・住吉大伴の2施設は同一名称/所在地のWikipediaで全文読み補完、37登録保留。",
+        "pages_fetched": 31,
+        "reason": "公式入口から実リンク31地域一覧の1581施設を原文照合。全文読み欄なし。国税庁165件とWikipedia59件は重複11件で一致し、新規213施設を補完。既存2件と合わせ215施設の読みを確認。外字2件と未確認の読みは出力保留。舞鶴/宮津の入口表示入替わりを記録し、所在地は原文から採用。",
         "remaining_scope": [
-          "other 30 actually linked area lists not collected",
-          "all full-name readings require confirmation",
-          "agency-linked 山國神社 detail uses 山国神社 and gives no explicit full kana",
+          "remaining full-name readings and glyph/annotation review",
+          "agency 山國/山国表記差の確認",
           "data redistribution permission unconfirmed"
         ],
-        "source_rows_observed": 39,
-        "status": "partial",
-        "supplemental_reading_facilities": 2
+        "source_rows_observed": 1581,
+        "status": "collected",
+        "supplemental_reading_facilities": 215
       },
       "conditions": {
         "data_use_conditions": "フッターに No reproduction or republication without written permission. および「記事・写真の無断転載を禁じます」。記事本文・写真は含めず、掲載名・所在地・実リンク等の事実項目だけを個別確認。事実項目の利用範囲と再配布許諾は未確認。",
@@ -3207,7 +3364,37 @@
       },
       "listing_urls": [
         "http://www.kyoto-jinjacho.or.jp/shrine.html",
-        "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+        "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/02.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/03.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/04.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/05.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/06.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/07.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/08.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/09.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/10.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/11.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/13.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/16.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/17.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/18.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/34.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/21.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/22.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/23.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/25.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/28.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/30.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/32.html"
       ],
       "official_url": "http://www.kyoto-jinjacho.or.jp/",
       "official_verification": {
@@ -3377,38 +3564,28 @@
       "candidate_url": "https://www.hyogo-jinjacho.com/",
       "collection": {
         "canonical_data": {
-          "entries": 13,
+          "entries": 29,
           "entry_status_counts": {
             "pending": 1,
-            "verified": 12
+            "verified": 28
           },
-          "facilities": 13,
+          "facilities": 29,
           "facility_status_counts": {
             "pending": 1,
-            "verified": 12
+            "verified": 28
           },
           "path": "data/sources/hyogo.json",
-          "verified_entries": 12,
-          "verified_facilities": 12
+          "verified_entries": 28,
+          "verified_facilities": 28
         },
-        "checked_at": "2026-11-09T07:28:42.253425+00:00",
-        "facilities_collected": 13,
+        "checked_at": "2026-11-09T09:05:17.312691+00:00",
+        "facilities_collected": 29,
         "fields_observed": {
-          "address": 13,
-          "name": 13,
-          "reading_raw": 13
+          "address": 29,
+          "name": 29,
+          "reading_raw": 29
         },
         "inspection_evidence": [
-          {
-            "fetched_at": "2026-11-08T14:25:02.986700+00:00",
-            "sha256": "eb2bcbc7cc372ec12d5f807cfec5f7f7373124b00e168e363c3519cd1e4f8c5c",
-            "url": "https://www.hyogo-jinjacho.com/"
-          },
-          {
-            "fetched_at": "2026-11-08T14:25:05.078616+00:00",
-            "sha256": "a47d389a22bfca024cbb244758ffb42f78b0557ee8af5d8634fa98ef3fd596f2",
-            "url": "https://www.hyogo-jinjacho.com/search.html"
-          },
           {
             "fetched_at": "2026-11-09T07:27:52.605983+00:00",
             "sha256": "1a04dc4914ef66d9e0d228e053d65df231802dba84888cdbe69dc1a9ee651763",
@@ -3473,18 +3650,104 @@
             "fetched_at": "2026-11-09T07:28:42.253425+00:00",
             "sha256": "a9f3843081d53db4337885a313af1cf1858c4aed5000f1f0b0a6c9bb158e56b5",
             "url": "https://www.hyogo-jinjacho.com/data/6301041.html"
+          },
+          {
+            "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+            "sha256": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+            "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+          },
+          {
+            "fetched_at": "2026-11-09T09:03:38.060646+00:00",
+            "sha256": "85cd396ac57e067da79d34723f4b3c6a9870bba9adfb7d1b70b47268d3745847",
+            "url": "https://www.hyogo-jinjacho.com/data/6301046.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:04:47.939561+00:00",
+            "sha256": "3073917706c4352fe0f7d415539a7439eedfcdd8f0c07fed218f08b6be457030",
+            "url": "https://www.hyogo-jinjacho.com/data/6301048.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:04:50.017896+00:00",
+            "sha256": "8f086fb9f28d7b67055b418e253b95ecbd85860b909a22efd839ae2c387e2345",
+            "url": "https://www.hyogo-jinjacho.com/data/6301049.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:04:52.091135+00:00",
+            "sha256": "1d57d559e26439c9ca881ec8ae78d92624cfe87b30ce0aae26348c068f778d8d",
+            "url": "https://www.hyogo-jinjacho.com/data/6301051.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:04:54.173357+00:00",
+            "sha256": "9c8252f0665a0634ebe6dfc1bb363e627c08b319330377331cc43e453b9d0a26",
+            "url": "https://www.hyogo-jinjacho.com/data/6301052.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:04:56.247082+00:00",
+            "sha256": "177a89d59ab3cbd5ad5d3f550d950257f8297e0665900be106bd14aa5e78f9c0",
+            "url": "https://www.hyogo-jinjacho.com/data/6301053.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:04:58.333076+00:00",
+            "sha256": "36c23768d1eab3b3fbb3bc62c6dcee8d978f684164bcdc6548f6f621ed0b5ec9",
+            "url": "https://www.hyogo-jinjacho.com/data/6301056.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:00.680026+00:00",
+            "sha256": "35c9c1aa48f9b5eb2d1a64c46952d7da5a7dadf3ef32a80867f5cd87390353da",
+            "url": "https://www.hyogo-jinjacho.com/data/6301057.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:02.758464+00:00",
+            "sha256": "815d9a2b60067dc84ffe35be8928688b4c14179d867589231330e48f38029420",
+            "url": "https://www.hyogo-jinjacho.com/data/6301060.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:04.836368+00:00",
+            "sha256": "9d93fc435051d6981d5972898c6b0bde8b36f663e6a03d7b7de6ded3eecccf57",
+            "url": "https://www.hyogo-jinjacho.com/data/6301069.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:06.916048+00:00",
+            "sha256": "819cde39ae5466df9f79daee1c9d7228fd0b5f25b4e66aa11bddc3600adbffaa",
+            "url": "https://www.hyogo-jinjacho.com/data/6301070.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:08.997324+00:00",
+            "sha256": "f2d5d98bac64c5604e47e12865f82896ca4459238d1d927359c2baa7c00e3a63",
+            "url": "https://www.hyogo-jinjacho.com/data/6301072.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:11.081131+00:00",
+            "sha256": "739d85cf57f9dd514f0ad2ff5b89af46a8846bc78bbf7f31199410e86b8410a7",
+            "url": "https://www.hyogo-jinjacho.com/data/6301075.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:13.159567+00:00",
+            "sha256": "41cd31f5392c0824581223cf4816a92fdd56b67bd22a2395e8e25d38dbc9900f",
+            "url": "https://www.hyogo-jinjacho.com/data/6301079.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:15.242266+00:00",
+            "sha256": "f99b0e505943fe51ad8425aeea1609012a77f61e35173f2d8543db562566dc27",
+            "url": "https://www.hyogo-jinjacho.com/data/6301080.html"
+          },
+          {
+            "fetched_at": "2026-11-09T09:05:17.312691+00:00",
+            "sha256": "e301b32960bfbe31282375cc26d4e9e07b0e507e808be0dec6df585fde6c2a42",
+            "url": "https://www.hyogo-jinjacho.com/data/6301306.html"
           }
         ],
         "listing_authority_status": "agency_site",
-        "pages_fetched": 13,
-        "reason": "13件の公式個別掲載ページを実閲覧。地図の全件一覧取得は未実施。記事・写真禁止と事実項目を区別し、名称・カナ・所在地のみ保存。",
+        "pages_fetched": 30,
+        "reason": "旧13施設と公式検索の選択した小矩形から返った16施設、計29施設を個別ページ照合。28施設の全文カナを確認、1施設は掲載名との対応を保留。別の広矩形検索は3834コードを返したが、その詳細・全件性は未確認。",
         "remaining_scope": [
-          "official map search inventory remains unenumerated",
-          "one listed-name/reading correspondence requires review",
-          "redistribution permission unconfirmed"
+          "map viewports outside the selected small rectangle and broad-query profiles not yet inspected",
+          "one original listed-name/reading correspondence remains held in corrections",
+          "data redistribution permission unconfirmed"
         ],
-        "source_rows_observed": 13,
-        "status": "partial"
+        "source_rows_observed": 29,
+        "status": "partial",
+        "supplemental_reading_facilities": 0
       },
       "conditions": {
         "data_use_conditions": "フッターに「記事・写真の無断転載を禁じます」。記事本文・写真は収録しない。名称・全文カナ・所在地等の事実項目のみ記録。事実項目の取得を明示的に禁じる文言は確認できていないが、再配布許諾は未確認。",
@@ -5515,14 +5778,14 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 41593,
+    "canonical_facilities": 48936,
     "collection_status_counts": {
-      "blocked": 9,
-      "collected": 33,
-      "partial": 2,
+      "blocked": 3,
+      "collected": 37,
+      "partial": 4,
       "unresolved": 3
     },
-    "prefectures_with_canonical_facilities": 35,
+    "prefectures_with_canonical_facilities": 41,
     "target_prefectures": 47
   }
 }

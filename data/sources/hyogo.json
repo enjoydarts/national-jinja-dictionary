@@ -1,10 +1,10 @@
 {
   "collection": {
-    "acquisition_method": "individually opened actual agency detail URLs discovered through search; no map/XML traversal",
+    "acquisition_method": "actual public JS rectangle search and observed native-code profile URLs, alongside previously inspected profiles",
     "agency": "兵庫県神社庁",
     "authority_status": "confirmed",
     "collection_complete": false,
-    "coverage": "13 individually inspected official detail pages only; not the map search inventory or all prefecture shrines",
+    "coverage": "13 individually inspected detail pages plus 16 profiles returned by one selected small rectangle; no all-prefecture/site claim",
     "data_use_conditions": "フッターに「記事・写真の無断転載を禁じます」。記事本文・写真は収録しない。名称・全文カナ・所在地等の事実項目のみ記録。事実項目の取得を明示的に禁じる文言は確認できていないが、再配布許諾は未確認。",
     "identity_history": {
       "0237332c-5670-5541-930c-47c3ec3118a1": {
@@ -19,11 +19,29 @@
         "listing_url": "https://www.hyogo-jinjacho.com/data/6316194.html",
         "source_hash": "0472b2005ce512bc93799fc63738eabed28bb800068e273a4762696510bdd5aa"
       },
+      "0fd9bea9-4401-5b46-8008-a3fb9a85c7dd": {
+        "address": "神戸市中央区中山手通7-28-30",
+        "listed_name": "熊野神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301056.html",
+        "source_hash": "3e21aa3bea10efad46b2fe5134972ed134072f789c8454533deab36b9789ec74"
+      },
       "17ee9ef2-3a46-59f8-8181-03f39051f565": {
         "address": "神戸市北区淡河町行原31",
         "listed_name": "山平神社",
         "listing_url": "https://www.hyogo-jinjacho.com/data/6301146.html",
         "source_hash": "ac69e5a791892b9fa921b6c79d30fa7d15b26c6115f9919f263070942fa514e0"
+      },
+      "19d0ffb6-8977-560d-8547-8dc27950b558": {
+        "address": "神戸市兵庫区東出町3-21-3",
+        "listed_name": "松尾稲荷神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301079.html",
+        "source_hash": "c3bdbbbf6919c3a3c2fcd09137bd4e912cb72ae3bb2d6d2b4f70f9135f13db75"
+      },
+      "26bad24c-12b7-5f9e-bee5-bb5d49fe838b": {
+        "address": "神戸市兵庫区荒田町3-99",
+        "listed_name": "荒田八幡神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301060.html",
+        "source_hash": "a4090cb84f6b898e943a375548d72627796162c3baeabf76aee37eb537b07505"
       },
       "357a7114-9abc-5d67-9457-af7c85934b7e": {
         "address": "姫路市四郷町山脇878",
@@ -31,11 +49,47 @@
         "listing_url": "https://www.hyogo-jinjacho.com/data/6316192.html",
         "source_hash": "6645313f65dd316b166a0dcc2a25f11496f5e4aa77ba387d8cd7304e814bfb0e"
       },
+      "39349369-d591-55b9-8e0f-a30f3f3338d0": {
+        "address": "神戸市兵庫区西出町13",
+        "listed_name": "鎮守稲荷神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301070.html",
+        "source_hash": "fa0c20936139868edcd29d436d38c32f94355350f9888d136beb32b57dce92dc"
+      },
       "4556aec1-1edd-5725-be02-2c33e44b1ed3": {
         "address": "姫路市四郷町見野124",
         "listed_name": "大将軍社",
         "listing_url": "https://www.hyogo-jinjacho.com/data/6316183.html",
         "source_hash": "4e32f3abf320a274df4d449d2b9998f27c9ee53b9c7f07aba91efa9e8f2f0ceb"
+      },
+      "4d8d2b06-dbdf-5486-8fa2-776656b1bc9c": {
+        "address": "神戸市兵庫区永沢町4-4-21",
+        "listed_name": "厳島神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301072.html",
+        "source_hash": "97d988f53b83084859a7580377c47e7ac2d672876c151f8cbd8fbffc4dc6c35b"
+      },
+      "51fba87d-ebb6-5af3-94c0-5b7c13cd8b4b": {
+        "address": "神戸市兵庫区七宮町2-3-4",
+        "listed_name": "兵庫大神宮",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301080.html",
+        "source_hash": "2ef39d5b61337930b76f3ad002645a48561219bf9fe44848e35af4073e67f129"
+      },
+      "5269746b-ea4a-5612-9e92-02a4d15ac1a6": {
+        "address": "神戸市兵庫区七宮町2-3-21",
+        "listed_name": "七宮神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301057.html",
+        "source_hash": "defe63c66f95c21a10dcb9818936ab9f098d6768b77775f99adea063ef325674"
+      },
+      "55b57716-3c18-5737-9abc-a05971585f11": {
+        "address": "神戸市中央区東川崎町7-4-12",
+        "listed_name": "東川崎蛭子神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301051.html",
+        "source_hash": "d711c2f3876ec6fc9bcaa8e8e83a7855c2ca55957dd10422e18be36ce4e06bee"
+      },
+      "5728b518-ae86-520e-8e8b-5e01575a0899": {
+        "address": "神戸市兵庫区七宮町1-3-18",
+        "listed_name": "竹尾稲荷神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301306.html",
+        "source_hash": "4e0df6671afb059aac981b92ca8bb1a1009e88ed6af7006d0b9cdef98b3ea495"
       },
       "6ccaf3ca-28ad-5a18-aa0c-f64a15232978": {
         "address": "姫路市四郷町明田706",
@@ -55,6 +109,24 @@
         "listing_url": "https://www.hyogo-jinjacho.com/data/6316184.html",
         "source_hash": "95ed41a514dd5acae2c3fcbcb453e57026d7d4ca3033a2f32b6fe8da1c7ae05c"
       },
+      "8cce99ea-8c79-5b34-979e-b295ac01d1fb": {
+        "address": "神戸市兵庫区兵庫町1-4-37",
+        "listed_name": "湊八幡神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301075.html",
+        "source_hash": "b06fc2c91d1dc3d7c262fe3e702521e5b5653b3ffff5b7a158043efb5d9924f6"
+      },
+      "8e8181d6-3c92-5f68-82e1-0abfcddf7c66": {
+        "address": "神戸市中央区花隈町6-5",
+        "listed_name": "厳島神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301049.html",
+        "source_hash": "dd835a085b14d38e5a0bbe737587496dfc1b5eefe1a68edbff2a7db2d015c139"
+      },
+      "9cb79e17-6a0a-58f2-bba0-5a3c509c74c1": {
+        "address": "神戸市中央区中山手通5-2-13",
+        "listed_name": "四宮神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301048.html",
+        "source_hash": "cfb8e996947b8a8242a57b84c59c6e4a082d63c3ca44b676623e219f3a03166c"
+      },
       "a87a227f-c5c4-5a0f-bc4b-dda943f9483d": {
         "address": "姫路市四郷町坂元346",
         "listed_name": "八幡神社",
@@ -66,6 +138,18 @@
         "listed_name": "八幡神社",
         "listing_url": "https://www.hyogo-jinjacho.com/data/6316187.html",
         "source_hash": "20dd355f7e818d6e5886f869254a6da73a248b0bc79c13086c3942cc9e1fdcb8"
+      },
+      "b5d260a6-257c-5e15-9069-180565d5c518": {
+        "address": "神戸市中央区楠町3-4-13",
+        "listed_name": "八宮神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301052.html",
+        "source_hash": "fe3bf5bc18403e96f9cb1f427600a7303fce7d04eecef807f94d04a2e7945cdf"
+      },
+      "ba51106c-b3af-5b56-8e75-9223dcf5613b": {
+        "address": "神戸市中央区元町通5-6-1",
+        "listed_name": "走水神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301053.html",
+        "source_hash": "c6a72970b348d6b5d6fd57bbe23a344098ad01b794c998caa211d494c88c6a37"
       },
       "d672dc14-f7fe-5ce4-b0c0-ba4812a6c2cb": {
         "address": "神戸市中央区中尾町10-20",
@@ -84,102 +168,202 @@
         "listed_name": "大将軍社",
         "listing_url": "https://www.hyogo-jinjacho.com/data/6316151.html",
         "source_hash": "fec89d49ceac690988345fdf1637c05ef391c2f0871e71a69a32541f1a401750"
+      },
+      "f8275105-dbbc-5cd9-94d0-485a87e5551d": {
+        "address": "神戸市兵庫区佐比江町30",
+        "listed_name": "猿田彦神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301069.html",
+        "source_hash": "762d1a7ff9b748d87078c0257f9fa78724d989e3bfe3e45b9216a805cc8eb765"
+      },
+      "ff917cef-7a72-56e2-90e6-24ff8284f7c0": {
+        "address": "神戸市中央区多聞通3-1-1",
+        "listed_name": "湊川神社",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6301046.html",
+        "source_hash": "b4f67296d480203bf3eb45e70066ad450fe22a906b35975c7da8f45bc8057a5a"
       }
     },
     "listing_urls": [
       "https://www.hyogo-jinjacho.com/search.html"
     ],
+    "observed_xml_queries": [
+      {
+        "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+        "query_provenance": "selected search rectangle, not an observed UI viewport or exact prefecture boundary",
+        "rows_returned": 16,
+        "selected_bounds": {
+          "ne_lat": "34.691492",
+          "ne_lng": "135.186149",
+          "sw_lat": "34.671492",
+          "sw_lng": "135.166149"
+        },
+        "sha256": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+        "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+      }
+    ],
     "official_url": "https://www.hyogo-jinjacho.com/",
     "pages": [
       {
         "fetched_at": "2026-11-09T07:27:52.605983+00:00",
-        "page_hash": "1a04dc4914ef66d9e0d228e053d65df231802dba84888cdbe69dc1a9ee651763",
-        "status": 200,
+        "sha256": "1a04dc4914ef66d9e0d228e053d65df231802dba84888cdbe69dc1a9ee651763",
         "url": "https://www.hyogo-jinjacho.com/data/6301146.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:19.473193+00:00",
-        "page_hash": "234b39acd0885e542a5880b7e88732eda960879b3ac9b2d987fa3eb50356dcb3",
-        "status": 200,
+        "sha256": "234b39acd0885e542a5880b7e88732eda960879b3ac9b2d987fa3eb50356dcb3",
         "url": "https://www.hyogo-jinjacho.com/data/6316187.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:21.546214+00:00",
-        "page_hash": "c67f02f1d5f203f6f62519d125703a9d6c8bf159deb65ff901f66936c215468d",
-        "status": 200,
+        "sha256": "c67f02f1d5f203f6f62519d125703a9d6c8bf159deb65ff901f66936c215468d",
         "url": "https://www.hyogo-jinjacho.com/data/6304010.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:23.619249+00:00",
-        "page_hash": "f7291a033d14a0341c495fb96e94c2d61faf3b380811f8e480059c705cf383a9",
-        "status": 200,
+        "sha256": "f7291a033d14a0341c495fb96e94c2d61faf3b380811f8e480059c705cf383a9",
         "url": "https://www.hyogo-jinjacho.com/data/6316194.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:25.686560+00:00",
-        "page_hash": "1578134a8ec37ded8f807b053dd92751bf8f3272c119d7bbd8c5478d606ed6a6",
-        "status": 200,
+        "sha256": "1578134a8ec37ded8f807b053dd92751bf8f3272c119d7bbd8c5478d606ed6a6",
         "url": "https://www.hyogo-jinjacho.com/data/6316183.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:27.756564+00:00",
-        "page_hash": "b96216bc8c7cdf043376696cc400b32a6c6838617420cb8fc4619e67f2ec1b7d",
-        "status": 200,
+        "sha256": "b96216bc8c7cdf043376696cc400b32a6c6838617420cb8fc4619e67f2ec1b7d",
         "url": "https://www.hyogo-jinjacho.com/data/6316151.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:29.834585+00:00",
-        "page_hash": "04a2faf786af3fd90a0ca52ebd1c392cfec7fe8c6d72256c8b50687b22c3ac89",
-        "status": 200,
+        "sha256": "04a2faf786af3fd90a0ca52ebd1c392cfec7fe8c6d72256c8b50687b22c3ac89",
         "url": "https://www.hyogo-jinjacho.com/data/6316188.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:31.904893+00:00",
-        "page_hash": "2071eceae1329db03a6750070e94ba94262cab1600125d79c9fbcf3647fca727",
-        "status": 200,
+        "sha256": "2071eceae1329db03a6750070e94ba94262cab1600125d79c9fbcf3647fca727",
         "url": "https://www.hyogo-jinjacho.com/data/6316192.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:33.976527+00:00",
-        "page_hash": "f3f0cccb1d2ad276740ce16ec144bad3522910b7f456310e2f90986173c39e65",
-        "status": 200,
+        "sha256": "f3f0cccb1d2ad276740ce16ec144bad3522910b7f456310e2f90986173c39e65",
         "url": "https://www.hyogo-jinjacho.com/data/6316190.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:36.044686+00:00",
-        "page_hash": "e1e3c1e1848a2cd5bff37b261de4605a4dea674a046ab2f584083e1cdd450024",
-        "status": 200,
+        "sha256": "e1e3c1e1848a2cd5bff37b261de4605a4dea674a046ab2f584083e1cdd450024",
         "url": "https://www.hyogo-jinjacho.com/data/6316189.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:38.110598+00:00",
-        "page_hash": "79f582a803594f23ad76e980d73393c1d4a47b3e08b4c1d2420037f85923497c",
-        "status": 200,
+        "sha256": "79f582a803594f23ad76e980d73393c1d4a47b3e08b4c1d2420037f85923497c",
         "url": "https://www.hyogo-jinjacho.com/data/6316179.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:40.185644+00:00",
-        "page_hash": "2affd38fc30e6e6726aeab9319fc5fdc018e308bd471046ab38da6495d585656",
-        "status": 200,
+        "sha256": "2affd38fc30e6e6726aeab9319fc5fdc018e308bd471046ab38da6495d585656",
         "url": "https://www.hyogo-jinjacho.com/data/6316184.html"
       },
       {
         "fetched_at": "2026-11-09T07:28:42.253425+00:00",
-        "page_hash": "a9f3843081d53db4337885a313af1cf1858c4aed5000f1f0b0a6c9bb158e56b5",
-        "status": 200,
+        "sha256": "a9f3843081d53db4337885a313af1cf1858c4aed5000f1f0b0a6c9bb158e56b5",
         "url": "https://www.hyogo-jinjacho.com/data/6301041.html"
+      },
+      {
+        "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+        "sha256": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+        "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+      },
+      {
+        "fetched_at": "2026-11-09T09:03:38.060646+00:00",
+        "sha256": "85cd396ac57e067da79d34723f4b3c6a9870bba9adfb7d1b70b47268d3745847",
+        "url": "https://www.hyogo-jinjacho.com/data/6301046.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:04:47.939561+00:00",
+        "sha256": "3073917706c4352fe0f7d415539a7439eedfcdd8f0c07fed218f08b6be457030",
+        "url": "https://www.hyogo-jinjacho.com/data/6301048.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:04:50.017896+00:00",
+        "sha256": "8f086fb9f28d7b67055b418e253b95ecbd85860b909a22efd839ae2c387e2345",
+        "url": "https://www.hyogo-jinjacho.com/data/6301049.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:04:52.091135+00:00",
+        "sha256": "1d57d559e26439c9ca881ec8ae78d92624cfe87b30ce0aae26348c068f778d8d",
+        "url": "https://www.hyogo-jinjacho.com/data/6301051.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:04:54.173357+00:00",
+        "sha256": "9c8252f0665a0634ebe6dfc1bb363e627c08b319330377331cc43e453b9d0a26",
+        "url": "https://www.hyogo-jinjacho.com/data/6301052.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:04:56.247082+00:00",
+        "sha256": "177a89d59ab3cbd5ad5d3f550d950257f8297e0665900be106bd14aa5e78f9c0",
+        "url": "https://www.hyogo-jinjacho.com/data/6301053.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:04:58.333076+00:00",
+        "sha256": "36c23768d1eab3b3fbb3bc62c6dcee8d978f684164bcdc6548f6f621ed0b5ec9",
+        "url": "https://www.hyogo-jinjacho.com/data/6301056.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:00.680026+00:00",
+        "sha256": "35c9c1aa48f9b5eb2d1a64c46952d7da5a7dadf3ef32a80867f5cd87390353da",
+        "url": "https://www.hyogo-jinjacho.com/data/6301057.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:02.758464+00:00",
+        "sha256": "815d9a2b60067dc84ffe35be8928688b4c14179d867589231330e48f38029420",
+        "url": "https://www.hyogo-jinjacho.com/data/6301060.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:04.836368+00:00",
+        "sha256": "9d93fc435051d6981d5972898c6b0bde8b36f663e6a03d7b7de6ded3eecccf57",
+        "url": "https://www.hyogo-jinjacho.com/data/6301069.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:06.916048+00:00",
+        "sha256": "819cde39ae5466df9f79daee1c9d7228fd0b5f25b4e66aa11bddc3600adbffaa",
+        "url": "https://www.hyogo-jinjacho.com/data/6301070.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:08.997324+00:00",
+        "sha256": "f2d5d98bac64c5604e47e12865f82896ca4459238d1d927359c2baa7c00e3a63",
+        "url": "https://www.hyogo-jinjacho.com/data/6301072.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:11.081131+00:00",
+        "sha256": "739d85cf57f9dd514f0ad2ff5b89af46a8846bc78bbf7f31199410e86b8410a7",
+        "url": "https://www.hyogo-jinjacho.com/data/6301075.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:13.159567+00:00",
+        "sha256": "41cd31f5392c0824581223cf4816a92fdd56b67bd22a2395e8e25d38dbc9900f",
+        "url": "https://www.hyogo-jinjacho.com/data/6301079.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:15.242266+00:00",
+        "sha256": "f99b0e505943fe51ad8425aeea1609012a77f61e35173f2d8543db562566dc27",
+        "url": "https://www.hyogo-jinjacho.com/data/6301080.html"
+      },
+      {
+        "fetched_at": "2026-11-09T09:05:17.312691+00:00",
+        "sha256": "e301b32960bfbe31282375cc26d4e9e07b0e507e808be0dec6df585fde6c2a42",
+        "url": "https://www.hyogo-jinjacho.com/data/6301306.html"
       }
     ],
+    "pages_fetched": 30,
     "prefecture_code": "28",
     "redistribution_status": "unconfirmed",
     "remaining_scope": [
-      "official map search inventory remains unenumerated",
-      "one listed-name/reading correspondence requires review",
-      "redistribution permission unconfirmed"
+      "map viewports outside the selected small rectangle and broad-query profiles not yet inspected",
+      "one original listed-name/reading correspondence remains held in corrections",
+      "data redistribution permission unconfirmed"
     ],
-    "selected_rows": 13,
+    "selected_rows": 29,
     "source_key": "hyogo",
-    "source_rows_observed": 13,
+    "source_rows_observed": 29,
     "traversal_complete": false
   },
   "entries": [
@@ -481,6 +665,390 @@
       "source_hash": "0b5f8de75fdf2ce0f6127039ce8cced0a23e41a5011544be13af8b7599d4221a",
       "status": "pending",
       "surface": "大神宮神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:03:38.060646+00:00",
+      "evidence": "神社名=湊川神社; かな=ミナトガワジンジャ; 神社コード6301046/本務; 所在地=〒650-0015\n神戸市中央区多聞通3-1-1",
+      "facility_id": "ff917cef-7a72-56e2-90e6-24ff8284f7c0",
+      "fetched_at": "2026-11-09T09:03:38.060646+00:00",
+      "id": "94d97454-2073-509a-9c7f-fbda78e3d677",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301046.html",
+      "name_raw": "湊川神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "85cd396ac57e067da79d34723f4b3c6a9870bba9adfb7d1b70b47268d3745847",
+      "reading": "みなとがわじんじゃ",
+      "reading_display_raw": "ミナトガワジンジャ",
+      "reading_raw": "ミナトガワジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301046.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "b4f67296d480203bf3eb45e70066ad450fe22a906b35975c7da8f45bc8057a5a",
+      "status": "verified",
+      "surface": "湊川神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:04:47.939561+00:00",
+      "evidence": "神社名=四宮神社; かな=ヨノミヤジンジャ; 神社コード6301048/本務; 所在地=〒650-0004\n神戸市中央区中山手通5-2-13",
+      "facility_id": "9cb79e17-6a0a-58f2-bba0-5a3c509c74c1",
+      "fetched_at": "2026-11-09T09:04:47.939561+00:00",
+      "id": "03e37339-231d-519d-8eb5-bb5f9812a1f7",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301048.html",
+      "name_raw": "四宮神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "3073917706c4352fe0f7d415539a7439eedfcdd8f0c07fed218f08b6be457030",
+      "reading": "よのみやじんじゃ",
+      "reading_display_raw": "ヨノミヤジンジャ",
+      "reading_raw": "ヨノミヤジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301048.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "cfb8e996947b8a8242a57b84c59c6e4a082d63c3ca44b676623e219f3a03166c",
+      "status": "verified",
+      "surface": "四宮神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:04:50.017896+00:00",
+      "evidence": "神社名=厳島神社; かな=イツクシマジンジャ; 神社コード6301049/兼務; 所在地=〒650-0013\n神戸市中央区花隈町6-5",
+      "facility_id": "8e8181d6-3c92-5f68-82e1-0abfcddf7c66",
+      "fetched_at": "2026-11-09T09:04:50.017896+00:00",
+      "id": "eabbb764-eb28-554f-8aab-cf1b7753c7be",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301049.html",
+      "name_raw": "厳島神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "8f086fb9f28d7b67055b418e253b95ecbd85860b909a22efd839ae2c387e2345",
+      "reading": "いつくしまじんじゃ",
+      "reading_display_raw": "イツクシマジンジャ",
+      "reading_raw": "イツクシマジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301049.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "dd835a085b14d38e5a0bbe737587496dfc1b5eefe1a68edbff2a7db2d015c139",
+      "status": "verified",
+      "surface": "厳島神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:04:52.091135+00:00",
+      "evidence": "神社名=東川崎蛭子神社; かな=ヒガシカワサキヒルコジンジャ; 神社コード6301051/兼務; 所在地=〒650-0044\n神戸市中央区東川崎町7-4-12",
+      "facility_id": "55b57716-3c18-5737-9abc-a05971585f11",
+      "fetched_at": "2026-11-09T09:04:52.091135+00:00",
+      "id": "569ab060-923b-5e03-be42-22f6d92ffe65",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301051.html",
+      "name_raw": "東川崎蛭子神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "1d57d559e26439c9ca881ec8ae78d92624cfe87b30ce0aae26348c068f778d8d",
+      "reading": "ひがしかわさきひるこじんじゃ",
+      "reading_display_raw": "ヒガシカワサキヒルコジンジャ",
+      "reading_raw": "ヒガシカワサキヒルコジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301051.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "d711c2f3876ec6fc9bcaa8e8e83a7855c2ca55957dd10422e18be36ce4e06bee",
+      "status": "verified",
+      "surface": "東川崎蛭子神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:04:54.173357+00:00",
+      "evidence": "神社名=八宮神社; かな=ハチノミヤジンジャ; 神社コード6301052/本務; 所在地=〒650-0017\n神戸市中央区楠町3-4-13",
+      "facility_id": "b5d260a6-257c-5e15-9069-180565d5c518",
+      "fetched_at": "2026-11-09T09:04:54.173357+00:00",
+      "id": "d6a9b264-14d3-5203-a91f-4af03efb7f85",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301052.html",
+      "name_raw": "八宮神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "9c8252f0665a0634ebe6dfc1bb363e627c08b319330377331cc43e453b9d0a26",
+      "reading": "はちのみやじんじゃ",
+      "reading_display_raw": "ハチノミヤジンジャ",
+      "reading_raw": "ハチノミヤジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301052.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "fe3bf5bc18403e96f9cb1f427600a7303fce7d04eecef807f94d04a2e7945cdf",
+      "status": "verified",
+      "surface": "八宮神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:04:56.247082+00:00",
+      "evidence": "神社名=走水神社; かな=ハシウドジンジャ; 神社コード6301053/兼務; 所在地=〒650-0022\n神戸市中央区元町通5-6-1",
+      "facility_id": "ba51106c-b3af-5b56-8e75-9223dcf5613b",
+      "fetched_at": "2026-11-09T09:04:56.247082+00:00",
+      "id": "5792305b-e2ee-5bc1-a7f4-87b3c4a3a00b",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301053.html",
+      "name_raw": "走水神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "177a89d59ab3cbd5ad5d3f550d950257f8297e0665900be106bd14aa5e78f9c0",
+      "reading": "はしうどじんじゃ",
+      "reading_display_raw": "ハシウドジンジャ",
+      "reading_raw": "ハシウドジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301053.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "c6a72970b348d6b5d6fd57bbe23a344098ad01b794c998caa211d494c88c6a37",
+      "status": "verified",
+      "surface": "走水神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:04:58.333076+00:00",
+      "evidence": "神社名=熊野神社; かな=クマノジンジャ; 神社コード6301056/兼務; 所在地=〒650-0004\n神戸市中央区中山手通7-28-30",
+      "facility_id": "0fd9bea9-4401-5b46-8008-a3fb9a85c7dd",
+      "fetched_at": "2026-11-09T09:04:58.333076+00:00",
+      "id": "a979142a-6e35-5551-af20-fb23adfc5c69",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301056.html",
+      "name_raw": "熊野神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "36c23768d1eab3b3fbb3bc62c6dcee8d978f684164bcdc6548f6f621ed0b5ec9",
+      "reading": "くまのじんじゃ",
+      "reading_display_raw": "クマノジンジャ",
+      "reading_raw": "クマノジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301056.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "3e21aa3bea10efad46b2fe5134972ed134072f789c8454533deab36b9789ec74",
+      "status": "verified",
+      "surface": "熊野神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:00.680026+00:00",
+      "evidence": "神社名=七宮神社; かな=シチノミヤジンジャ; 神社コード6301057/本務; 所在地=〒652-0831\n神戸市兵庫区七宮町2-3-21",
+      "facility_id": "5269746b-ea4a-5612-9e92-02a4d15ac1a6",
+      "fetched_at": "2026-11-09T09:05:00.680026+00:00",
+      "id": "fd6666dd-c8b7-55a6-9249-6c0a75029735",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301057.html",
+      "name_raw": "七宮神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "35c9c1aa48f9b5eb2d1a64c46952d7da5a7dadf3ef32a80867f5cd87390353da",
+      "reading": "しちのみやじんじゃ",
+      "reading_display_raw": "シチノミヤジンジャ",
+      "reading_raw": "シチノミヤジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301057.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "defe63c66f95c21a10dcb9818936ab9f098d6768b77775f99adea063ef325674",
+      "status": "verified",
+      "surface": "七宮神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:02.758464+00:00",
+      "evidence": "神社名=荒田八幡神社; かな=アラタハチマンジンジャ; 神社コード6301060/兼務; 所在地=〒652-0032\n神戸市兵庫区荒田町3-99",
+      "facility_id": "26bad24c-12b7-5f9e-bee5-bb5d49fe838b",
+      "fetched_at": "2026-11-09T09:05:02.758464+00:00",
+      "id": "ca3f3f38-bb55-5398-afd4-b2f7d7409cd1",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301060.html",
+      "name_raw": "荒田八幡神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "815d9a2b60067dc84ffe35be8928688b4c14179d867589231330e48f38029420",
+      "reading": "あらたはちまんじんじゃ",
+      "reading_display_raw": "アラタハチマンジンジャ",
+      "reading_raw": "アラタハチマンジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301060.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "a4090cb84f6b898e943a375548d72627796162c3baeabf76aee37eb537b07505",
+      "status": "verified",
+      "surface": "荒田八幡神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:04.836368+00:00",
+      "evidence": "神社名=猿田彦神社; かな=サルタヒコジンジャ; 神社コード6301069/兼務; 所在地=〒652-0821\n神戸市兵庫区佐比江町30",
+      "facility_id": "f8275105-dbbc-5cd9-94d0-485a87e5551d",
+      "fetched_at": "2026-11-09T09:05:04.836368+00:00",
+      "id": "d4f35893-7533-5066-b57f-5e5e054500ee",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301069.html",
+      "name_raw": "猿田彦神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "9d93fc435051d6981d5972898c6b0bde8b36f663e6a03d7b7de6ded3eecccf57",
+      "reading": "さるたひこじんじゃ",
+      "reading_display_raw": "サルタヒコジンジャ",
+      "reading_raw": "サルタヒコジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301069.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "762d1a7ff9b748d87078c0257f9fa78724d989e3bfe3e45b9216a805cc8eb765",
+      "status": "verified",
+      "surface": "猿田彦神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:06.916048+00:00",
+      "evidence": "神社名=鎮守稲荷神社; かな=チンジュイナリジンジャ; 神社コード6301070/兼務; 所在地=〒652-0822\n神戸市兵庫区西出町13",
+      "facility_id": "39349369-d591-55b9-8e0f-a30f3f3338d0",
+      "fetched_at": "2026-11-09T09:05:06.916048+00:00",
+      "id": "a4ab2f97-6905-5003-bce7-7d7d358ca4c8",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301070.html",
+      "name_raw": "鎮守稲荷神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "819cde39ae5466df9f79daee1c9d7228fd0b5f25b4e66aa11bddc3600adbffaa",
+      "reading": "ちんじゅいなりじんじゃ",
+      "reading_display_raw": "チンジュイナリジンジャ",
+      "reading_raw": "チンジュイナリジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301070.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "fa0c20936139868edcd29d436d38c32f94355350f9888d136beb32b57dce92dc",
+      "status": "verified",
+      "surface": "鎮守稲荷神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:08.997324+00:00",
+      "evidence": "神社名=厳島神社; かな=イツクシマジンジャ; 神社コード6301072/本務; 所在地=〒652-0816\n神戸市兵庫区永沢町4-4-21",
+      "facility_id": "4d8d2b06-dbdf-5486-8fa2-776656b1bc9c",
+      "fetched_at": "2026-11-09T09:05:08.997324+00:00",
+      "id": "b4614682-a600-5db4-aa22-728fd5fdcf6f",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301072.html",
+      "name_raw": "厳島神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "f2d5d98bac64c5604e47e12865f82896ca4459238d1d927359c2baa7c00e3a63",
+      "reading": "いつくしまじんじゃ",
+      "reading_display_raw": "イツクシマジンジャ",
+      "reading_raw": "イツクシマジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301072.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "97d988f53b83084859a7580377c47e7ac2d672876c151f8cbd8fbffc4dc6c35b",
+      "status": "verified",
+      "surface": "厳島神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:11.081131+00:00",
+      "evidence": "神社名=湊八幡神社; かな=ミナトハチマンジンジャ; 神社コード6301075/本務; 所在地=〒652-0813\n神戸市兵庫区兵庫町1-4-37",
+      "facility_id": "8cce99ea-8c79-5b34-979e-b295ac01d1fb",
+      "fetched_at": "2026-11-09T09:05:11.081131+00:00",
+      "id": "bc3038ec-bcfb-5ee8-8c9d-bbd92ec544b2",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301075.html",
+      "name_raw": "湊八幡神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "739d85cf57f9dd514f0ad2ff5b89af46a8846bc78bbf7f31199410e86b8410a7",
+      "reading": "みなとはちまんじんじゃ",
+      "reading_display_raw": "ミナトハチマンジンジャ",
+      "reading_raw": "ミナトハチマンジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301075.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "b06fc2c91d1dc3d7c262fe3e702521e5b5653b3ffff5b7a158043efb5d9924f6",
+      "status": "verified",
+      "surface": "湊八幡神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:13.159567+00:00",
+      "evidence": "神社名=松尾稲荷神社; かな=マツオイナリジンジャ; 神社コード6301079/本務; 所在地=〒652-0823\n神戸市兵庫区東出町3-21-3",
+      "facility_id": "19d0ffb6-8977-560d-8547-8dc27950b558",
+      "fetched_at": "2026-11-09T09:05:13.159567+00:00",
+      "id": "5c27bf3c-faec-5112-b280-9b545e5509fb",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301079.html",
+      "name_raw": "松尾稲荷神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "41cd31f5392c0824581223cf4816a92fdd56b67bd22a2395e8e25d38dbc9900f",
+      "reading": "まつおいなりじんじゃ",
+      "reading_display_raw": "マツオイナリジンジャ",
+      "reading_raw": "マツオイナリジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301079.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "c3bdbbbf6919c3a3c2fcd09137bd4e912cb72ae3bb2d6d2b4f70f9135f13db75",
+      "status": "verified",
+      "surface": "松尾稲荷神社"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:15.242266+00:00",
+      "evidence": "神社名=兵庫大神宮; かな=ヒョウゴダイジングウ; 神社コード6301080/兼務; 所在地=〒652-0831\n神戸市兵庫区七宮町2-3-4",
+      "facility_id": "51fba87d-ebb6-5af3-94c0-5b7c13cd8b4b",
+      "fetched_at": "2026-11-09T09:05:15.242266+00:00",
+      "id": "23eefcc5-bc3d-59c8-a203-d6af58782f76",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301080.html",
+      "name_raw": "兵庫大神宮",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "f99b0e505943fe51ad8425aeea1609012a77f61e35173f2d8543db562566dc27",
+      "reading": "ひょうごだいじんぐう",
+      "reading_display_raw": "ヒョウゴダイジングウ",
+      "reading_raw": "ヒョウゴダイジングウ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301080.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "2ef39d5b61337930b76f3ad002645a48561219bf9fe44848e35af4073e67f129",
+      "status": "verified",
+      "surface": "兵庫大神宮"
+    },
+    {
+      "checked_at": "2026-11-09T09:05:17.312691+00:00",
+      "evidence": "神社名=竹尾稲荷神社; かな=タケオイナリジンジャ; 神社コード6301306/兼務; 所在地=〒652-0831\n神戸市兵庫区七宮町1-3-18",
+      "facility_id": "5728b518-ae86-520e-8e8b-5e01575a0899",
+      "fetched_at": "2026-11-09T09:05:17.312691+00:00",
+      "id": "9b413d18-70f1-53cb-b05c-da338eb64371",
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301306.html",
+      "name_raw": "竹尾稲荷神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "e301b32960bfbe31282375cc26d4e9e07b0e507e808be0dec6df585fde6c2a42",
+      "reading": "たけおいなりじんじゃ",
+      "reading_display_raw": "タケオイナリジンジャ",
+      "reading_raw": "タケオイナリジンジャ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.hyogo-jinjacho.com/data/6301306.html",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "4e0df6671afb059aac981b92ca8bb1a1009e88ed6af7006d0b9cdef98b3ea495",
+      "status": "verified",
+      "surface": "竹尾稲荷神社"
     }
   ],
   "facilities": [
@@ -874,6 +1442,694 @@
       "source_key": "hyogo",
       "source_locator": "header.hero .hero-head h1; .kana; .code strong; .summary dt=所在地 + dd",
       "status": "pending"
+    },
+    {
+      "address": "神戸市中央区多聞通3-1-1",
+      "address_raw": "〒650-0015\n神戸市中央区多聞通3-1-1",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:03:38.060646+00:00",
+      "fetched_at": "2026-11-09T09:03:38.060646+00:00",
+      "id": "ff917cef-7a72-56e2-90e6-24ff8284f7c0",
+      "listed_name": "湊川神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:03:38.060646+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "85cd396ac57e067da79d34723f4b3c6a9870bba9adfb7d1b70b47268d3745847",
+          "url": "https://www.hyogo-jinjacho.com/data/6301046.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301046.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市中央区多聞通3-1-1",
+          "code_raw": "6301046",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301046\"]",
+          "name_raw": "湊川神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市中央区",
+      "name_raw": "湊川神社",
+      "native_source_id": "6301046",
+      "official_site_url": null,
+      "page_hash": "85cd396ac57e067da79d34723f4b3c6a9870bba9adfb7d1b70b47268d3745847",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "b4f67296d480203bf3eb45e70066ad450fe22a906b35975c7da8f45bc8057a5a",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市中央区中山手通5-2-13",
+      "address_raw": "〒650-0004\n神戸市中央区中山手通5-2-13",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:04:47.939561+00:00",
+      "fetched_at": "2026-11-09T09:04:47.939561+00:00",
+      "id": "9cb79e17-6a0a-58f2-bba0-5a3c509c74c1",
+      "listed_name": "四宮神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:04:47.939561+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "3073917706c4352fe0f7d415539a7439eedfcdd8f0c07fed218f08b6be457030",
+          "url": "https://www.hyogo-jinjacho.com/data/6301048.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301048.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市中央区中山手通5-2-13",
+          "code_raw": "6301048",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301048\"]",
+          "name_raw": "四宮神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市中央区",
+      "name_raw": "四宮神社",
+      "native_source_id": "6301048",
+      "official_site_url": null,
+      "page_hash": "3073917706c4352fe0f7d415539a7439eedfcdd8f0c07fed218f08b6be457030",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "cfb8e996947b8a8242a57b84c59c6e4a082d63c3ca44b676623e219f3a03166c",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市中央区花隈町6-5",
+      "address_raw": "〒650-0013\n神戸市中央区花隈町6-5",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:04:50.017896+00:00",
+      "fetched_at": "2026-11-09T09:04:50.017896+00:00",
+      "id": "8e8181d6-3c92-5f68-82e1-0abfcddf7c66",
+      "listed_name": "厳島神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:04:50.017896+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "8f086fb9f28d7b67055b418e253b95ecbd85860b909a22efd839ae2c387e2345",
+          "url": "https://www.hyogo-jinjacho.com/data/6301049.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301049.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市中央区花隈町6-5",
+          "code_raw": "6301049",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301049\"]",
+          "name_raw": "厳島神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市中央区",
+      "name_raw": "厳島神社",
+      "native_source_id": "6301049",
+      "official_site_url": null,
+      "page_hash": "8f086fb9f28d7b67055b418e253b95ecbd85860b909a22efd839ae2c387e2345",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "dd835a085b14d38e5a0bbe737587496dfc1b5eefe1a68edbff2a7db2d015c139",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市中央区東川崎町7-4-12",
+      "address_raw": "〒650-0044\n神戸市中央区東川崎町7-4-12",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:04:52.091135+00:00",
+      "fetched_at": "2026-11-09T09:04:52.091135+00:00",
+      "id": "55b57716-3c18-5737-9abc-a05971585f11",
+      "listed_name": "東川崎蛭子神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:04:52.091135+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "1d57d559e26439c9ca881ec8ae78d92624cfe87b30ce0aae26348c068f778d8d",
+          "url": "https://www.hyogo-jinjacho.com/data/6301051.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301051.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市中央区東川崎町7-4-12",
+          "code_raw": "6301051",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301051\"]",
+          "name_raw": "東川崎蛭子神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市中央区",
+      "name_raw": "東川崎蛭子神社",
+      "native_source_id": "6301051",
+      "official_site_url": null,
+      "page_hash": "1d57d559e26439c9ca881ec8ae78d92624cfe87b30ce0aae26348c068f778d8d",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "d711c2f3876ec6fc9bcaa8e8e83a7855c2ca55957dd10422e18be36ce4e06bee",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市中央区楠町3-4-13",
+      "address_raw": "〒650-0017\n神戸市中央区楠町3-4-13",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:04:54.173357+00:00",
+      "fetched_at": "2026-11-09T09:04:54.173357+00:00",
+      "id": "b5d260a6-257c-5e15-9069-180565d5c518",
+      "listed_name": "八宮神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:04:54.173357+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "9c8252f0665a0634ebe6dfc1bb363e627c08b319330377331cc43e453b9d0a26",
+          "url": "https://www.hyogo-jinjacho.com/data/6301052.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301052.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市中央区楠町3-4-13",
+          "code_raw": "6301052",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301052\"]",
+          "name_raw": "八宮神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市中央区",
+      "name_raw": "八宮神社",
+      "native_source_id": "6301052",
+      "official_site_url": null,
+      "page_hash": "9c8252f0665a0634ebe6dfc1bb363e627c08b319330377331cc43e453b9d0a26",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "fe3bf5bc18403e96f9cb1f427600a7303fce7d04eecef807f94d04a2e7945cdf",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市中央区元町通5-6-1",
+      "address_raw": "〒650-0022\n神戸市中央区元町通5-6-1",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:04:56.247082+00:00",
+      "fetched_at": "2026-11-09T09:04:56.247082+00:00",
+      "id": "ba51106c-b3af-5b56-8e75-9223dcf5613b",
+      "listed_name": "走水神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:04:56.247082+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "177a89d59ab3cbd5ad5d3f550d950257f8297e0665900be106bd14aa5e78f9c0",
+          "url": "https://www.hyogo-jinjacho.com/data/6301053.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301053.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市中央区元町通5-6-1",
+          "code_raw": "6301053",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301053\"]",
+          "name_raw": "走水神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市中央区",
+      "name_raw": "走水神社",
+      "native_source_id": "6301053",
+      "official_site_url": null,
+      "page_hash": "177a89d59ab3cbd5ad5d3f550d950257f8297e0665900be106bd14aa5e78f9c0",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "c6a72970b348d6b5d6fd57bbe23a344098ad01b794c998caa211d494c88c6a37",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市中央区中山手通7-28-30",
+      "address_raw": "〒650-0004\n神戸市中央区中山手通7-28-30",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:04:58.333076+00:00",
+      "fetched_at": "2026-11-09T09:04:58.333076+00:00",
+      "id": "0fd9bea9-4401-5b46-8008-a3fb9a85c7dd",
+      "listed_name": "熊野神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:04:58.333076+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "36c23768d1eab3b3fbb3bc62c6dcee8d978f684164bcdc6548f6f621ed0b5ec9",
+          "url": "https://www.hyogo-jinjacho.com/data/6301056.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301056.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市中央区中山手通7-28-30",
+          "code_raw": "6301056",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301056\"]",
+          "name_raw": "熊野神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市中央区",
+      "name_raw": "熊野神社",
+      "native_source_id": "6301056",
+      "official_site_url": null,
+      "page_hash": "36c23768d1eab3b3fbb3bc62c6dcee8d978f684164bcdc6548f6f621ed0b5ec9",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "3e21aa3bea10efad46b2fe5134972ed134072f789c8454533deab36b9789ec74",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区七宮町2-3-21",
+      "address_raw": "〒652-0831\n神戸市兵庫区七宮町2-3-21",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:00.680026+00:00",
+      "fetched_at": "2026-11-09T09:05:00.680026+00:00",
+      "id": "5269746b-ea4a-5612-9e92-02a4d15ac1a6",
+      "listed_name": "七宮神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:00.680026+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "35c9c1aa48f9b5eb2d1a64c46952d7da5a7dadf3ef32a80867f5cd87390353da",
+          "url": "https://www.hyogo-jinjacho.com/data/6301057.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301057.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区七宮町2-3-21",
+          "code_raw": "6301057",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301057\"]",
+          "name_raw": "七宮神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "七宮神社",
+      "native_source_id": "6301057",
+      "official_site_url": null,
+      "page_hash": "35c9c1aa48f9b5eb2d1a64c46952d7da5a7dadf3ef32a80867f5cd87390353da",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "defe63c66f95c21a10dcb9818936ab9f098d6768b77775f99adea063ef325674",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区荒田町3-99",
+      "address_raw": "〒652-0032\n神戸市兵庫区荒田町3-99",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:02.758464+00:00",
+      "fetched_at": "2026-11-09T09:05:02.758464+00:00",
+      "id": "26bad24c-12b7-5f9e-bee5-bb5d49fe838b",
+      "listed_name": "荒田八幡神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:02.758464+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "815d9a2b60067dc84ffe35be8928688b4c14179d867589231330e48f38029420",
+          "url": "https://www.hyogo-jinjacho.com/data/6301060.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301060.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区荒田町3-99",
+          "code_raw": "6301060",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301060\"]",
+          "name_raw": "荒田八幡神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "荒田八幡神社",
+      "native_source_id": "6301060",
+      "official_site_url": null,
+      "page_hash": "815d9a2b60067dc84ffe35be8928688b4c14179d867589231330e48f38029420",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "a4090cb84f6b898e943a375548d72627796162c3baeabf76aee37eb537b07505",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区佐比江町30",
+      "address_raw": "〒652-0821\n神戸市兵庫区佐比江町30",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:04.836368+00:00",
+      "fetched_at": "2026-11-09T09:05:04.836368+00:00",
+      "id": "f8275105-dbbc-5cd9-94d0-485a87e5551d",
+      "listed_name": "猿田彦神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:04.836368+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "9d93fc435051d6981d5972898c6b0bde8b36f663e6a03d7b7de6ded3eecccf57",
+          "url": "https://www.hyogo-jinjacho.com/data/6301069.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301069.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区佐比江町30",
+          "code_raw": "6301069",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301069\"]",
+          "name_raw": "猿田彦神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "猿田彦神社",
+      "native_source_id": "6301069",
+      "official_site_url": null,
+      "page_hash": "9d93fc435051d6981d5972898c6b0bde8b36f663e6a03d7b7de6ded3eecccf57",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "762d1a7ff9b748d87078c0257f9fa78724d989e3bfe3e45b9216a805cc8eb765",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区西出町13",
+      "address_raw": "〒652-0822\n神戸市兵庫区西出町13",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:06.916048+00:00",
+      "fetched_at": "2026-11-09T09:05:06.916048+00:00",
+      "id": "39349369-d591-55b9-8e0f-a30f3f3338d0",
+      "listed_name": "鎮守稲荷神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:06.916048+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "819cde39ae5466df9f79daee1c9d7228fd0b5f25b4e66aa11bddc3600adbffaa",
+          "url": "https://www.hyogo-jinjacho.com/data/6301070.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301070.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区西出町13",
+          "code_raw": "6301070",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301070\"]",
+          "name_raw": "鎮守稲荷神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "鎮守稲荷神社",
+      "native_source_id": "6301070",
+      "official_site_url": null,
+      "page_hash": "819cde39ae5466df9f79daee1c9d7228fd0b5f25b4e66aa11bddc3600adbffaa",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "fa0c20936139868edcd29d436d38c32f94355350f9888d136beb32b57dce92dc",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区永沢町4-4-21",
+      "address_raw": "〒652-0816\n神戸市兵庫区永沢町4-4-21",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:08.997324+00:00",
+      "fetched_at": "2026-11-09T09:05:08.997324+00:00",
+      "id": "4d8d2b06-dbdf-5486-8fa2-776656b1bc9c",
+      "listed_name": "厳島神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:08.997324+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "f2d5d98bac64c5604e47e12865f82896ca4459238d1d927359c2baa7c00e3a63",
+          "url": "https://www.hyogo-jinjacho.com/data/6301072.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301072.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区永沢町4-4-21",
+          "code_raw": "6301072",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301072\"]",
+          "name_raw": "厳島神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "厳島神社",
+      "native_source_id": "6301072",
+      "official_site_url": null,
+      "page_hash": "f2d5d98bac64c5604e47e12865f82896ca4459238d1d927359c2baa7c00e3a63",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "97d988f53b83084859a7580377c47e7ac2d672876c151f8cbd8fbffc4dc6c35b",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区兵庫町1-4-37",
+      "address_raw": "〒652-0813\n神戸市兵庫区兵庫町1-4-37",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:11.081131+00:00",
+      "fetched_at": "2026-11-09T09:05:11.081131+00:00",
+      "id": "8cce99ea-8c79-5b34-979e-b295ac01d1fb",
+      "listed_name": "湊八幡神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:11.081131+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "739d85cf57f9dd514f0ad2ff5b89af46a8846bc78bbf7f31199410e86b8410a7",
+          "url": "https://www.hyogo-jinjacho.com/data/6301075.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301075.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区兵庫町1-4-37",
+          "code_raw": "6301075",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301075\"]",
+          "name_raw": "湊八幡神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "湊八幡神社",
+      "native_source_id": "6301075",
+      "official_site_url": null,
+      "page_hash": "739d85cf57f9dd514f0ad2ff5b89af46a8846bc78bbf7f31199410e86b8410a7",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "b06fc2c91d1dc3d7c262fe3e702521e5b5653b3ffff5b7a158043efb5d9924f6",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区東出町3-21-3",
+      "address_raw": "〒652-0823\n神戸市兵庫区東出町3-21-3",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:13.159567+00:00",
+      "fetched_at": "2026-11-09T09:05:13.159567+00:00",
+      "id": "19d0ffb6-8977-560d-8547-8dc27950b558",
+      "listed_name": "松尾稲荷神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:13.159567+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "41cd31f5392c0824581223cf4816a92fdd56b67bd22a2395e8e25d38dbc9900f",
+          "url": "https://www.hyogo-jinjacho.com/data/6301079.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301079.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区東出町3-21-3",
+          "code_raw": "6301079",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301079\"]",
+          "name_raw": "松尾稲荷神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "松尾稲荷神社",
+      "native_source_id": "6301079",
+      "official_site_url": null,
+      "page_hash": "41cd31f5392c0824581223cf4816a92fdd56b67bd22a2395e8e25d38dbc9900f",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "c3bdbbbf6919c3a3c2fcd09137bd4e912cb72ae3bb2d6d2b4f70f9135f13db75",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区七宮町2-3-4",
+      "address_raw": "〒652-0831\n神戸市兵庫区七宮町2-3-4",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:15.242266+00:00",
+      "fetched_at": "2026-11-09T09:05:15.242266+00:00",
+      "id": "51fba87d-ebb6-5af3-94c0-5b7c13cd8b4b",
+      "listed_name": "兵庫大神宮",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:15.242266+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "f99b0e505943fe51ad8425aeea1609012a77f61e35173f2d8543db562566dc27",
+          "url": "https://www.hyogo-jinjacho.com/data/6301080.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301080.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区七宮町2-3-4",
+          "code_raw": "6301080",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301080\"]",
+          "name_raw": "兵庫大神宮",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "兵庫大神宮",
+      "native_source_id": "6301080",
+      "official_site_url": null,
+      "page_hash": "f99b0e505943fe51ad8425aeea1609012a77f61e35173f2d8543db562566dc27",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "2ef39d5b61337930b76f3ad002645a48561219bf9fe44848e35af4073e67f129",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
+    },
+    {
+      "address": "神戸市兵庫区七宮町1-3-18",
+      "address_raw": "〒652-0831\n神戸市兵庫区七宮町1-3-18",
+      "agency": "兵庫県神社庁",
+      "checked_at": "2026-11-09T09:05:17.312691+00:00",
+      "fetched_at": "2026-11-09T09:05:17.312691+00:00",
+      "id": "5728b518-ae86-520e-8e8b-5e01575a0899",
+      "listed_name": "竹尾稲荷神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T09:05:17.312691+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "e301b32960bfbe31282375cc26d4e9e07b0e507e808be0dec6df585fde6c2a42",
+          "url": "https://www.hyogo-jinjacho.com/data/6301306.html"
+        }
+      ],
+      "listing_url": "https://www.hyogo-jinjacho.com/data/6301306.html",
+      "map_occurrences": [
+        {
+          "address_raw": "神戸市兵庫区七宮町1-3-18",
+          "code_raw": "6301306",
+          "fetched_at": "2026-11-09T08:59:36.644832+00:00",
+          "href_derivation": "Official js/formsearch.js: data/ + observed LocateCode + .html",
+          "locator": "Locations/Locate[code=\"6301306\"]",
+          "name_raw": "竹尾稲荷神社",
+          "page_hash": "29d26c80dafe905f2758a33480a88d6244acdba7a7a5a4b740f2fd08ebf4a7bc",
+          "script_page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149"
+        }
+      ],
+      "municipality": "神戸市兵庫区",
+      "name_raw": "竹尾稲荷神社",
+      "native_source_id": "6301306",
+      "official_site_url": null,
+      "page_hash": "e301b32960bfbe31282375cc26d4e9e07b0e507e808be0dec6df585fde6c2a42",
+      "prefecture": "兵庫県",
+      "prefecture_code": "28",
+      "reason": "",
+      "source_hash": "4e0df6671afb059aac981b92ca8bb1a1009e88ed6af7006d0b9cdef98b3ea495",
+      "source_key": "hyogo",
+      "source_locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+      "status": "verified"
     }
   ],
   "schema_version": 1
