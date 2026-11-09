@@ -1240,18 +1240,52 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "http://www.jinjacho.or.jp/",
       "collection": {
+        "authority_evidence": [
+          {
+            "excerpt": "千葉県の神社",
+            "fetched_at": "2026-11-08T14:40:20.830834+00:00",
+            "kind": "agency_service_designation",
+            "link_url": "http://www.jinja.ne.jp/exploration/index.html",
+            "locator": "navigation link 千葉県の神社",
+            "sha256": "fc93f20f334c61252ee7bd1c4cc62fc905117f2f76bc4f4b783211b534c409cb",
+            "url": "https://www.jinjacho.or.jp/"
+          },
+          {
+            "document_date": "2024.11",
+            "excerpt": "千葉県神社庁監修のホームページから情報を検索できる。",
+            "fetched_at": "2026-11-09T01:49:08.527067+00:00",
+            "kind": "public_library_service_identification",
+            "link_url": "https://hiroba.jinja.ne.jp/exploration/index.html",
+            "locator": "C1 思想・宗教 / 千葉県神社名鑑",
+            "page_number": 13,
+            "publisher": "千葉県立中央図書館",
+            "sha256": "743230864a41ca7013ea4801ab899b8e0164dbed03442149fd401ce49e015792",
+            "title": "ビギナーのための地域行政資料入門",
+            "url": "https://www.library.pref.chiba.lg.jp/chibabeginner202411.pdf"
+          },
+          {
+            "excerpt": "監修 千葉県神社庁",
+            "fetched_at": "2026-11-09T01:48:29.934782+00:00",
+            "kind": "current_search_supervision_statement",
+            "locator": "footer supervision statement",
+            "sha256": "6c62f6b5ebd3cb6f98ccf7cfb01ff1c4ec8026f8674b1991c91cf1380ee6e516",
+            "url": "https://hiroba.jinja.ne.jp/exploration/index.html"
+          }
+        ],
+        "authority_scope": "officially designated and supervised external search; ownership or delegation contract is not established",
         "canonical_data": {
           "entries": 3145,
           "entry_status_counts": {
-            "pending": 3145
+            "pending": 5,
+            "verified": 3140
           },
           "facilities": 3145,
           "facility_status_counts": {
-            "pending": 3145
+            "verified": 3145
           },
           "path": "data/sources/chiba.json",
-          "verified_entries": 0,
-          "verified_facilities": 0
+          "verified_entries": 3140,
+          "verified_facilities": 3145
         },
         "checked_at": "2026-11-08T15:49:59.219032+00:00",
         "dictionary_eligibility": "excluded_until_agency_listing_relationship_verified",
@@ -1263,14 +1297,14 @@
           "reading_raw": 3142
         },
         "inspection_evidence": [],
-        "listing_authority_status": "pending",
+        "listing_authority_status": "officially_designated_supervised_search",
         "pages_fetched": 107,
-        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "reason": "神社庁が指定する外部検索。県立中央図書館の現行URL案内と検索入口の監修表示を照合し、神社庁監修の掲載範囲として確認。所有・委託契約の確認とは区別。",
         "record_fetched_at_range": [
           "2026-11-08T14:48:37.486292+00:00",
           "2026-11-08T14:56:16.520890+00:00"
         ],
-        "remaining_scope": "current external service authority confirmation; dictionary output held pending",
+        "remaining_scope": "掲載読み未確認・異常5件、再配布条件の確認",
         "saved_listing_page_count": 105,
         "saved_listing_page_examples": [
           {
@@ -1290,9 +1324,9 @@
           }
         ],
         "source_rows_observed": 3145,
-        "status": "authority_pending",
+        "status": "collected",
         "stored_coverage": "all public Chiba prefecture search results, including honmu and kenmu; not shrine count of entire prefecture",
-        "stored_pages_fetched": 107
+        "stored_pages_fetched": 108
       },
       "conditions": {
         "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
@@ -1314,7 +1348,7 @@
         "published_fields": "外部一覧本文を確認できず項目未確認。"
       },
       "listing_urls": [
-        "https://hiroba.jinja.ne.jp/index.html"
+        "https://hiroba.jinja.ne.jp/exploration/index.html"
       ],
       "official_url": "https://www.jinjacho.or.jp/",
       "official_verification": {
@@ -3768,6 +3802,16 @@
       "prefecture_code": "35"
     },
     {
+      "additional_source_evidence": [
+        {
+          "body_opened": true,
+          "http_status": null,
+          "method": "web_open",
+          "observed_at": "2026-11-09T01:50:24.916553+00:00",
+          "short_evidence": "徳島県神社庁の案内に http://awa-jinjacho.jp/ 、徳島市新浜本町2丁目3−61、088-663-5102。フッターは徳島県・一般財団法人徳島県観光協会。",
+          "url": "https://www.awanavi.jp/travel-tips/reference/temples-shrines"
+        }
+      ],
       "agency_name": "徳島県神社庁",
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "http://awa-jinjacho.jp/",
@@ -4587,6 +4631,16 @@
       "prefecture_code": "43"
     },
     {
+      "additional_source_evidence": [
+        {
+          "body_opened": true,
+          "http_status": null,
+          "method": "web_open",
+          "observed_at": "2026-11-09T01:50:24.916553+00:00",
+          "short_evidence": "都道府県神社庁欄に大分県神社庁の名称があるがURLは表示されない。ページ更新表示は令和8年11月02日。他県にも空欄や旧URLがあるため非存在証明ではない。",
+          "url": "https://www.jinja.co.jp/link.html"
+        }
+      ],
       "agency_name": "大分県神社庁",
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": null,
@@ -4633,9 +4687,31 @@
       "prefecture_code": "44"
     },
     {
+      "additional_source_evidence": [
+        {
+          "body_opened": true,
+          "http_status": 200,
+          "method": "web_open_and_Client_GET",
+          "observed_at": "2026-11-09T01:50:24.916553+00:00",
+          "short_evidence": "宮崎県神道青年会への再編と神道青年全国協議会への加盟の経緯を説明。神社庁への委託・公式掲載位置づけは閲覧本文に見つからず。",
+          "url": "https://www.m-shinsei.jp/aboutus/"
+        },
+        {
+          "body_opened": true,
+          "candidate_discovery_only": true,
+          "document_date": "2022-02",
+          "document_title": "十五夜を通してみるヒト／身体影響との関わり",
+          "http_status": null,
+          "method": "web_open",
+          "observed_at": "2026-11-09T01:50:24.916553+00:00",
+          "short_evidence": "論文PDFを開いた。URL発見は検索索引の注5〜10に示された2021年閲覧記録に由来。PDFの文字単位改行により当該URLの本文位置は照合できず、公式性の根拠には採用しない。",
+          "url": "https://www.jstage.jst.go.jp/article/nihonminzokugaku/309/0/309_144/_pdf/-char/en"
+        }
+      ],
       "agency_name": "宮崎県神社庁",
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
-      "candidate_url": null,
+      "candidate_url": "https://www.miyazakijinjacho.or.jp/",
+      "candidate_verification_status": "DNS failure; actual agency page not opened; not verified",
       "collection": {
         "checked_at": null,
         "facilities_collected": 0,
@@ -4898,9 +4974,8 @@
     "agency_official_sites_verified_opened": 44,
     "canonical_facilities": 37403,
     "collection_status_counts": {
-      "authority_pending": 1,
       "blocked": 9,
-      "collected": 32,
+      "collected": 33,
       "partial": 2,
       "unresolved": 3
     },

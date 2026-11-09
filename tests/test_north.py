@@ -147,13 +147,17 @@ class PaginationNorthTests(unittest.TestCase):
 class StableChibaTests(unittest.TestCase):
     def test_chiba_sorts_by_unique_native_id_for_stable_pagination(self):
         from tempfile import TemporaryDirectory
+        from unittest.mock import patch
+        from hashlib import sha256
+        library=b'<html>Fictional library reference</html>'
         from njd.http import Client
         from urllib.parse import urlsplit,parse_qs
         def row(sid):
             return f'<table><tr><td rowspan="3">兼務</td><td rowspan="3">カクウジンジャ<br><a href="javascript:openNewWindow(\'/detail?search:word={sid}\')"><b>架空神社</b></a></td><td></td><td>千葉県 仮市{sid}番</td><td></td></tr></table>'
         def transport(url,timeout,agent):
             if url.endswith('/robots.txt'):return 404,{'content-type':'text/plain'},b''
-            if url=='https://www.jinjacho.or.jp/':html='<a href="https://hiroba.jinja.ne.jp/">検索</a>'
+            if url==north.CHIBA_LIBRARY_URL:return 200,{'content-type':'application/pdf'},library
+            if url=='https://www.jinjacho.or.jp/':html='<a href="https://www.jinja.ne.jp/exploration/index.html">千葉県の神社</a>'
             elif url.endswith('/exploration/index.html'):html='監修 千葉県神社庁 /ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html'
             else:
                 q=parse_qs(urlsplit(url).query); stable=q.get('view:sort')==['jinja_id']; second=q.get('view:page')==['2']
@@ -161,10 +165,10 @@ class StableChibaTests(unittest.TestCase):
                 html=row(sid)+'<form name="viewPages"><input type="hidden" name="view:sort" value="'+q.get('view:sort',[''])[0]+'"></form>'
                 if not second:html+='<a href="javascript:viewPage( 2 );">次の30件</a>'
             return 200,{'content-type':'text/html; charset=utf-8'},html.encode()
-        with TemporaryDirectory() as cache:data=north.collect_chiba(Client(cache,interval=0,transport=transport))
+        with TemporaryDirectory() as cache,patch.object(north,'CHIBA_LIBRARY_SHA256',sha256(library).hexdigest()):data=north.collect_chiba(Client(cache,interval=0,transport=transport))
         self.assertEqual([f['native_source_id'] for f in data['facilities']],['1','2'])
-        self.assertEqual(data['collection']['authority_status'],'pending')
-        self.assertEqual([e['status'] for e in data['entries']],['pending','pending'])
+        self.assertEqual(data['collection']['authority_status'],'officially_designated_supervised_search')
+        self.assertEqual([e['status'] for e in data['entries']],['verified','verified'])
 
 class ToyamaIdentityTests(unittest.TestCase):
     def test_missing_locations_do_not_merge_same_named_parish_records(self):
@@ -291,3 +295,34 @@ class ToyamaMunicipalityLocationTests(unittest.TestCase):
     def test_city_only_or_unknown_municipality_is_not_a_concrete_location(self):
         for address in ('富山市内','富山市','架空市一番','鎮座地不明','富山市不明'):
             with self.subTest(address=address):self.assertFalse(north.toyama_specific_location(address))
+
+class ChibaConfirmedAuthorityTests(unittest.TestCase):
+    def test_confirmed_supervision_keeps_valid_and_invalid_reading_states(self):
+        from tempfile import TemporaryDirectory
+        from unittest.mock import patch
+        from hashlib import sha256
+        from njd.http import Client
+        library=b'<html>Fictional public library reference</html>'
+        def transport(url,timeout,agent):
+            if url.endswith('/robots.txt'):return 404,{'content-type':'text/plain'},b''
+            if url==north.CHIBA_LIBRARY_URL:return 200,{'content-type':'application/pdf'},library
+            if url=='https://www.jinjacho.or.jp/':html='<a href="http://www.jinja.ne.jp/exploration/index.html">千葉県の神社</a>'
+            elif url.endswith('/exploration/index.html'):html='監修 千葉県神社庁 /ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html'
+            else:
+                html=''.join(f'<tr><td rowspan="3">兼務</td><td rowspan="3">{raw}<br><a href="javascript:openNewWindow(\'/detail?search:word={sid}\')">{name}</a></td><td></td><td>千葉県 仮市{sid}番</td><td></td></tr>' for sid,raw,name in [('1','カクウジンジャ','架空神社'),('2','','架空神社'),('3','カクウジンジャ','架空\n神社')])
+                html='<table>'+html+'</table><form name="viewPages"></form>'
+            return 200,{'content-type':'text/html; charset=utf-8'},html.encode()
+        with TemporaryDirectory() as cache,patch.object(north,'CHIBA_LIBRARY_SHA256',sha256(library).hexdigest()):data=north.collect_chiba(Client(cache,interval=0,transport=transport))
+        self.assertEqual(data['collection']['authority_status'],'officially_designated_supervised_search')
+        self.assertEqual([e['status'] for e in data['entries']],['verified','pending','pending'])
+        self.assertEqual(data['entries'][0]['reading'],'かくうじんじゃ')
+        self.assertEqual(data['entries'][1]['reason'],'missing agency reading')
+        self.assertIn('control or layout characters',data['entries'][2]['reason'])
+        self.assertEqual(data['facilities'][2]['name_raw'],'架空\n神社')
+        self.assertEqual(len(data['collection']['authority_evidence']),3)
+        self.assertEqual(data['collection']['redistribution_status'],'unconfirmed')
+
+    def test_library_document_change_requires_review(self):
+        from njd.http import Page
+        p=Page('https://www.library.pref.chiba.lg.jp/chibabeginner202411.pdf',200,{'content-type':'application/pdf'},b'changed document','2026-11-09T00:00:00+00:00')
+        with self.assertRaises(ValueError):north.chiba_library_evidence(p)

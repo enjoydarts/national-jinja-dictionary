@@ -535,6 +535,20 @@ REGISTRY['iwate']=dict(code='03',prefecture='岩手県',agency='岩手県神社�
 
 
 CHIBA_LIST='https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html'
+CHIBA_LIBRARY_URL='https://www.library.pref.chiba.lg.jp/chibabeginner202411.pdf'
+# This exact public document was read at physical page 13. A replacement
+# requires source review instead of inheriting the previous determination.
+CHIBA_LIBRARY_SHA256='743230864a41ca7013ea4801ab899b8e0164dbed03442149fd401ce49e015792'
+
+
+def chiba_library_evidence(page):
+    if page.url!=CHIBA_LIBRARY_URL or page.sha256!=CHIBA_LIBRARY_SHA256:
+        raise ValueError('Chiba public library authority reference changed; source review required')
+    return dict(kind='public_library_service_identification',url=page.url,sha256=page.sha256,fetched_at=page.fetched_at,
+        publisher='千葉県立中央図書館',title='ビギナーのための地域行政資料入門',document_date='2024.11',page_number=13,
+        locator='C1 思想・宗教 / 千葉県神社名鑑',excerpt='千葉県神社庁監修のホームページから情報を検索できる。',
+        link_url='https://hiroba.jinja.ne.jp/exploration/index.html')
+
 
 
 def parse_chiba(page):
@@ -557,11 +571,23 @@ def parse_chiba(page):
 def collect_chiba(client,limit=None):
     from urllib.parse import urlencode
     agency=client.fetch('https://www.jinjacho.or.jp/')
-    if 'jinja.ne.jp' not in decode(agency):raise ValueError('Chiba agency external search link not found')
+    agency_root=Document(decode(agency)).root
+    designated=[urljoin(agency.url,a.attrs.get('href','')) for a in agency_root.all('a') if a.text()=='千葉県の神社']
+    designated=[u for u in designated if urlsplit(u).scheme in ('http','https') and urlsplit(u).hostname=='www.jinja.ne.jp' and urlsplit(u).path=='/exploration/index.html']
+    if len(designated)!=1:raise ValueError('Chiba agency designated service link changed')
+    # The legacy destination is evidence of designation only. It is never
+    # followed: its earlier robots policy was not usable.
     start=client.fetch('https://hiroba.jinja.ne.jp/exploration/index.html')
-    if '監修' not in decode(start) or '千葉県神社庁' not in decode(start) or '/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html' not in decode(start):
-        raise ValueError('Chiba official supervised search relationship changed')
-    pages=[agency,start];records=[];number=None;seen=set()
+    start_text=Document(decode(start)).root.text()
+    if not re.search(r'監修\s*千葉県神社庁',start_text) or '/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html' not in decode(start):
+        raise ValueError('Chiba supervised search statement changed')
+    library=client.fetch(CHIBA_LIBRARY_URL)
+    evidence=[dict(kind='agency_service_designation',url=agency.url,sha256=agency.sha256,fetched_at=agency.fetched_at,
+        locator='navigation link 千葉県の神社',excerpt='千葉県の神社',link_url=designated[0]),
+        chiba_library_evidence(library),
+        dict(kind='current_search_supervision_statement',url=start.url,sha256=start.sha256,fetched_at=start.fetched_at,
+        locator='footer supervision statement',excerpt='監修 千葉県神社庁')]
+    pages=[agency,start,library];records=[];number=None;seen=set()
     params={'mode:search':'1','search:method':'group','view:sort':'jinja_id','s:j_ADDR_PREF:fb:1:ADDR:and':'千葉県','s:j_ADDR_1:like:1:ADDR:and':''}
     while True:
         query=dict(params)
@@ -580,11 +606,10 @@ def collect_chiba(client,limit=None):
         if match is None:raise ValueError('Chiba pagination link changed')
         number=int(match.group(1))
     data=_dataset('chiba',records,pages,limit,'all public Chiba prefecture search results, including honmu and kenmu; not shrine count of entire prefecture')
-    data['collection']['authority_status']='pending'
-    data['collection']['authority_reason']='agency links legacy www.jinja.ne.jp; current hiroba service supervision is stated but the current official listing relationship remains unconfirmed'
-    for row in data['facilities']+data['entries']:
-        row['status']='pending'
-        row['reason']='current external listing authority requires review'
+    data['collection'].update(authority_status='officially_designated_supervised_search',authority_evidence=evidence,
+        authority_reason='agency designates the legacy service; the prefectural central library identifies the current search URL as supervised by the agency; the current search states the same supervision',
+        authority_scope='officially designated and supervised external search; ownership or delegation contract is not established',
+        redistribution_status='unconfirmed')
     return data
 
 
