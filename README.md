@@ -93,6 +93,38 @@ git diff -- data/
 
 取得結果だけで名称・読みを確定できない登録は`pending`に残し、辞書には出しません。読みの推定や通称・略称追加はしません。壊れた読み・名称欄や外字は、行政資料・Wikipedia等で所在地と全文表記・読みを照合できた場合に限り、`data/corrections.json`へ根拠付きの補正を保存します。原文と旧字体・異体字は保持し、資料の矛盾が解決しない候補は出力しません。人手判断は`data/decisions.json`、ID対応は`data/identities.json`で保持します。[データ仕様](docs/DATA.md)を参照してください。
 
+## 独立資料による読みの補完
+
+神社庁に読みがない施設は、施設公式サイトやWikipedia等の実資料と名称・所在地・全文読みを照合します。調査入口のjinja-net.jpを辞書の出典として使いません。
+
+```sh
+# 保存先はリポジトリ外。カテゴリ一覧を取得してから記事を調査
+python3 -m njd.wikipedia --prefecture all --state-dir /tmp/njd-reference-research --inventory-only
+python3 -m njd.wikipedia --prefecture all --state-dir /tmp/njd-reference-research --limit 100
+
+# 神社庁の一覧が直接リンクする詳細ページの読みを優先して収集
+python3 -m njd.agency_details --source shimane --state-dir /tmp/njd-shimane-details --limit 100
+python3 -m njd.agency_details --source nagano --state-dir /tmp/njd-nagano-details --limit 100
+
+# 国税庁の無償公開データ。既存の神社庁掲載名・所在地との一致だけを候補化
+python3 -m njd.corporate --prefecture all --state-dir /tmp/njd-corporate-research --limit 3
+
+# キャッシュを使った抽出の再確認
+python3 -m njd.wikipedia --prefecture 32 --state-dir /tmp/njd-reference-research --offline --recheck
+
+# 案の全件検証と差分確認後、正本へ適用（既存判断を上書きしない）
+python3 -m njd.proposals --input /tmp/njd-reference-research/proposals.json
+python3 -m njd.proposals --input /tmp/njd-reference-research/proposals.json --apply
+# 神社庁の詳細で新しく確認した読みを二次資料より優先（従来の根拠は保持）
+python3 -m njd.proposals --input /tmp/njd-shimane-details/proposals.json --prefer-agency --apply
+python3 -m njd validate
+git diff -- data/corrections.json
+```
+
+国税庁のフリガナは未掲載・大書きカナ・閉鎖法人などを含むため、そのまま全件を採用しません。読みを推定せず、存続する一意な法人の正式名称・所在地・明示カナを照合します。出典・加工表示・公共データ利用規約は補完レコードへ保存し、コードのMITと区別します。
+
+調査状態の`complete`は指定カテゴリの候補調査の完了で、読みの全国網羅を意味しません。未発見・取得失敗・所在地不一致・読みの衝突は外部の`state/progress.json`に残ります。仕様と確認範囲は[データ仕様](docs/DATA.md)を参照してください。
+
 ## リリース時の最新生成
 
 正本とコードをコミットした後、リリース対象コミットの`v*`タグをpushすると[Release workflow](.github/workflows/release.yml)が実行されます。手動実行では既存タグを指定します。

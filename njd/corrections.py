@@ -36,8 +36,11 @@ def _reference_matches(ref,facility,entry,changes):
         # Some agency lists omit 郡. Only remove a leading county after the
         # matching prefecture; never discard an unmatched prefecture prefix.
         value=re.sub(r'^[^都道府県]+?郡','',value)
-        value=re.sub(r'(?<=\d)番地の(?=\d)','-',value)
-        return value.replace('大字','').removesuffix('番地')
+        value=re.sub(r'(?<=\d)[−‐‑‒–—―](?=\d)','-',value)
+        value=re.sub(r'(?<=\d)丁目(?=\d)','-',value)
+        value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
+        value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
+        return value.replace('大字','')
     actual=address(ref.get('address_raw'))
     sources=[facility.get('address')]
     detail=facility.get('address_source',{})

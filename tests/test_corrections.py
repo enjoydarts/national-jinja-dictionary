@@ -17,6 +17,20 @@ def correction(d,changes):
             reading_raw=reading,address_raw=f['address'],excerpt=surface+'（'+reading+'） '+f['address'],checked_at='2026-11-09T00:00:00+09:00')])}}
 
 class CorrectionTest(unittest.TestCase):
+    def test_numeric_address_notation_preserves_all_parcel_components(self):
+        for acquired,reference in [
+            ('架空市甲町1丁目27番10号','埼玉県架空市甲町1−27−10'),
+            ('架空市甲町3丁目19番地の3','埼玉県架空市甲町3丁目19-3'),
+            ('架空市甲町4丁目1－43','埼玉県架空市甲町4-1-43')]:
+            d=build([row(address=acquired,reading_raw='')]);c=correction(d,{'reading':'かくうじんじゃ'})
+            ref=c['entries'][d['entries'][0]['id']]['references'][0]
+            ref.update(address_raw=reference,excerpt='架空神社 かくうじんじゃ '+reference)
+            out=apply_corrections(d,c)
+            self.assertEqual(len(eligible(out)),1)
+            self.assertEqual(out['facilities'][0]['address'],acquired)
+            ref.update(address_raw=reference+'0',excerpt='架空神社 かくうじんじゃ '+reference+'0')
+            self.assertEqual(eligible(apply_corrections(d,c)),[])
+
     def test_discovery_directory_is_not_accepted_as_dictionary_evidence(self):
         for host in ('jinja-net.jp','www.jinja-net.jp','jinja-net.jp.','www.jinja-net.jp.'):
             d=build([row(reading_raw='')]);c=correction(d,{'reading':'かくうじんじゃ'})
