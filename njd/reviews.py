@@ -18,7 +18,7 @@ def _plain(value):
 def review_problems(review, facility, entry, source=None):
     problems=[]
     if not isinstance(review,dict):return ['invalid human review']
-    if review.get('confirmation')!='user_confirmation' or not review.get('case_id') or not review.get('reason'):
+    if review.get('confirmation') not in ('user_confirmation','source_review') or not review.get('case_id') or not review.get('reason'):
         problems.append('missing explicit human confirmation')
     try:datetime.fromisoformat(review.get('recorded_at',''))
     except (ValueError,TypeError):problems.append('missing human confirmation date')
@@ -52,6 +52,16 @@ def review_problems(review, facility, entry, source=None):
             problems.append('incomplete inspected reference')
         try:datetime.fromisoformat(ref.get('checked_at',''))
         except (ValueError,TypeError):problems.append('missing reference inspection date')
+    if review.get('confirmation')=='source_review':
+        if not review.get('split') or any(o.get('basis')!='agency_component' for o in outputs):
+            problems.append('source review only supports explicit agency component registrations')
+        if review.get('excluded_name_prefix') or review.get('excluded_reading_prefix') or review.get('accepted_identity_differences'):
+            problems.append('source component review cannot approve omissions or identity discrepancies')
+        if not any(r.get('source_kind')=='agency' and r.get('url')==facility['listing_url']
+            and r.get('name_raw')==facility['name_raw'] and r.get('reading_raw')==entry['reading_raw']
+            and r.get('address_raw')==facility['address']
+            and all(value and re.sub(r'\s+','',value) in re.sub(r'\s+','',r.get('excerpt','')) for value in (facility['name_raw'],entry['reading_raw'],facility['address'])) for r in refs):
+            problems.append('source review lacks exact inspected agency caption, reading and location')
     def bound(ref,output):
         if _reference_matches(ref,facility,entry,dict(surface=output['surface'])):return True
         # An explicit judgment accepts only this exact observed discrepancy.
@@ -65,9 +75,19 @@ def review_problems(review, facility, entry, source=None):
             if not isinstance(prefix,str) or not value.startswith(prefix):problems.append('split alias prefix differs from source')
         name=name.removeprefix(review.get('excluded_name_prefix','')).strip()
         raw=raw.removeprefix(review.get('excluded_reading_prefix','')).strip()
+        name_separator=review.get('name_separator')
+        reading_separator=review.get('reading_separator')
+        if any(s is not None and s not in ('／','・','、') for s in (name_separator,reading_separator)):
+            return problems+['unsupported explicit source separator']
+        if review.get('confirmation')=='source_review':
+            names=name.split(name_separator) if name_separator else name.split()
+            if [n.strip() for n in names]!=[o.get('surface') for o in outputs]:
+                problems.append('source name boundaries differ from approved components')
+        if name_separator:name=name.replace(name_separator,'')
         if re.sub(r'\s+','',name)!=''.join(o.get('surface','') for o in outputs):problems.append('approved split does not account for source names')
         try:
-            if [normalize_reading(r) for r in raw.split()]!=[o.get('reading') for o in outputs]:raise ValueError()
+            tokens=raw.split(reading_separator) if reading_separator else raw.split()
+            if [normalize_reading(r.strip()) for r in tokens]!=[o.get('reading') for o in outputs]:raise ValueError()
         except ValueError:problems.append('split readings do not match whole source tokens')
     for output in outputs:
         surface=output.get('surface');reading=output.get('reading');basis=output.get('basis');url=output.get('reading_url')

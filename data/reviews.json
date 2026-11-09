@@ -1,5 +1,53 @@
 {
   "entries": {
+    "060d2e80-b242-51ad-80c5-ab127e4a21f2": {
+      "case_id": "SPLIT-a8fbc463-464a-55b4-9ea8-c1e744eb672c",
+      "confirmation": "source_review",
+      "expected_source_hash": "8fd38db22000de17e90decc735574bd52e34b662a87cbb326083acd2aa0dea71",
+      "facility_id": "a8fbc463-464a-55b4-9ea8-c1e744eb672c",
+      "name_separator": "・",
+      "original": {
+        "address": "静岡市葵区黒俣1098-1",
+        "listing_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=22&p=2",
+        "name_raw": "大渡神社・佐久地神社",
+        "reading_raw": "おおわたりじんじゃ・さくちじんじゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "おおわたりじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=22&p=2",
+          "surface": "大渡神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "さくちじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=22&p=2",
+          "surface": "佐久地神社"
+        }
+      ],
+      "reading_separator": "・",
+      "reason": "神社庁の実ページで併記された各正式名と各全文読みを照合。複数の正式名を個別登録する方針に従い、接尾辞や読みを補わず原文の区切り単位で登録する。施設・取得原文は分割・改変しない。",
+      "recorded_at": "2026-11-09T12:41:57.729179+09:00",
+      "references": [
+        {
+          "address_raw": "静岡市葵区黒俣1098-1",
+          "checked_at": "2026-11-09T12:41:57.729179+09:00",
+          "display_name_raw": "大渡神社・佐久地神社",
+          "display_reading_raw": "おおわたりじんじゃ・さくちじんじゃ",
+          "excerpt": "大渡神社・佐久地神社 / おおわたりじんじゃ・さくちじんじゃ / 静岡市葵区黒俣1098-1",
+          "fetched_at": "2026-11-09T03:40:09.330038+00:00",
+          "locator": "table tr[3]",
+          "name_raw": "大渡神社・佐久地神社",
+          "page_hash": "4be097a3e7abbdd6aa1d97e83207d838904d91415be2ee7351dcd2036d325729",
+          "reading_raw": "おおわたりじんじゃ・さくちじんじゃ",
+          "source_kind": "agency",
+          "title": "静岡県神社庁 大渡神社・佐久地神社",
+          "url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=22&p=2"
+        }
+      ],
+      "split": true
+    },
     "21751045-e62b-5ba3-b0fb-4ceebd9c63d4": {
       "case_id": "R005",
       "confirmation": "user_confirmation",
@@ -52,6 +100,54 @@
         }
       ]
     },
+    "234e4a53-9970-53d2-963d-bad5fbfe2a24": {
+      "case_id": "SPLIT-05bf0e30-11f4-5742-a0c2-9b846ea061c1",
+      "confirmation": "source_review",
+      "expected_source_hash": "bdcb83931252cf68973113eb042f7d6967f0d2e0f8aafbc621e96e8281ecec79",
+      "facility_id": "05bf0e30-11f4-5742-a0c2-9b846ea061c1",
+      "name_separator": "・",
+      "original": {
+        "address": "掛川市杉谷2-10-4",
+        "listing_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=31&p=4",
+        "name_raw": "両谷神社・神明宮",
+        "reading_raw": "りょうやじんじゃ・しんめいぐう"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "りょうやじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=31&p=4",
+          "surface": "両谷神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "しんめいぐう",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=31&p=4",
+          "surface": "神明宮"
+        }
+      ],
+      "reading_separator": "・",
+      "reason": "神社庁の実ページで併記された各正式名と各全文読みを照合。複数の正式名を個別登録する方針に従い、接尾辞や読みを補わず原文の区切り単位で登録する。施設・取得原文は分割・改変しない。",
+      "recorded_at": "2026-11-09T12:41:57.729179+09:00",
+      "references": [
+        {
+          "address_raw": "掛川市杉谷2-10-4",
+          "checked_at": "2026-11-09T12:41:57.729179+09:00",
+          "display_name_raw": "両谷神社・神明宮",
+          "display_reading_raw": "りょうやじんじゃ・しんめいぐう",
+          "excerpt": "両谷神社・神明宮 / りょうやじんじゃ・しんめいぐう / 掛川市杉谷2-10-4",
+          "fetched_at": "2026-11-09T03:40:00.726100+00:00",
+          "locator": "table tr[4]",
+          "name_raw": "両谷神社・神明宮",
+          "page_hash": "2abe2e4408e6a9770c6e2ca038fe02c6af04e8717005fd122a4d25111f3a7c37",
+          "reading_raw": "りょうやじんじゃ・しんめいぐう",
+          "source_kind": "agency",
+          "title": "静岡県神社庁 両谷神社・神明宮",
+          "url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=31&p=4"
+        }
+      ],
+      "split": true
+    },
     "32f909c1-a909-5216-848b-e86be603cb87": {
       "case_id": "R005",
       "confirmation": "user_confirmation",
@@ -103,6 +199,102 @@
           "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=7270005002339"
         }
       ]
+    },
+    "37221845-dbb3-565b-a3e7-61ead265fe0c": {
+      "case_id": "SPLIT-5754c3e4-d190-5c84-bdb0-048d6196cd49",
+      "confirmation": "source_review",
+      "expected_source_hash": "649c5ff843ce7af4b2b47da998e30d02c94ebf9f110f0389a6f00d0e25db799b",
+      "facility_id": "5754c3e4-d190-5c84-bdb0-048d6196cd49",
+      "name_separator": "・",
+      "original": {
+        "address": "三島市山中40-1",
+        "listing_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=14",
+        "name_raw": "諏訪神社・駒形神社",
+        "reading_raw": "すわじんじゃ・こまがたじんじゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "すわじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=14",
+          "surface": "諏訪神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "こまがたじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=14",
+          "surface": "駒形神社"
+        }
+      ],
+      "reading_separator": "・",
+      "reason": "神社庁の実ページで併記された各正式名と各全文読みを照合。複数の正式名を個別登録する方針に従い、接尾辞や読みを補わず原文の区切り単位で登録する。施設・取得原文は分割・改変しない。",
+      "recorded_at": "2026-11-09T12:41:57.729179+09:00",
+      "references": [
+        {
+          "address_raw": "三島市山中40-1",
+          "checked_at": "2026-11-09T12:41:57.729179+09:00",
+          "display_name_raw": "諏訪神社・駒形神社",
+          "display_reading_raw": "すわじんじゃ・こまがたじんじゃ",
+          "excerpt": "諏訪神社・駒形神社 / すわじんじゃ・こまがたじんじゃ / 三島市山中40-1",
+          "fetched_at": "2026-11-09T03:40:05.005826+00:00",
+          "locator": "table tr[23]",
+          "name_raw": "諏訪神社・駒形神社",
+          "page_hash": "3affe770e1ab95d9054622d4ed2e23bde128b4bbf8b1dfff77cd1c6c81d39e18",
+          "reading_raw": "すわじんじゃ・こまがたじんじゃ",
+          "source_kind": "agency",
+          "title": "静岡県神社庁 諏訪神社・駒形神社",
+          "url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=14"
+        }
+      ],
+      "split": true
+    },
+    "3d8b8acc-3005-5936-adca-936a45eb193c": {
+      "case_id": "SPLIT-518c354b-a2aa-5fb5-bc4a-96d8ead12548",
+      "confirmation": "source_review",
+      "expected_source_hash": "3a3a7097dae3a0f250accea0ab228662436a8137f0945cecc7687bcfe6b36158",
+      "facility_id": "518c354b-a2aa-5fb5-bc4a-96d8ead12548",
+      "name_separator": null,
+      "original": {
+        "address": "藤枝市高洲9-1",
+        "listing_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=24",
+        "name_raw": "月夜見神社 八幡神社",
+        "reading_raw": "つきよみじんじゃ はちまんじんじゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "つきよみじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=24",
+          "surface": "月夜見神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "はちまんじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=24",
+          "surface": "八幡神社"
+        }
+      ],
+      "reading_separator": null,
+      "reason": "神社庁の実ページで併記された各正式名と各全文読みを照合。複数の正式名を個別登録する方針に従い、接尾辞や読みを補わず原文の区切り単位で登録する。施設・取得原文は分割・改変しない。",
+      "recorded_at": "2026-11-09T12:41:57.729179+09:00",
+      "references": [
+        {
+          "address_raw": "藤枝市高洲9-1",
+          "checked_at": "2026-11-09T12:41:57.729179+09:00",
+          "display_name_raw": "月夜見神社　八幡神社",
+          "display_reading_raw": "つきよみじんじゃ　はちまんじんじゃ",
+          "excerpt": "月夜見神社　八幡神社 / つきよみじんじゃ　はちまんじんじゃ / 藤枝市高洲9-1",
+          "fetched_at": "2026-11-09T03:40:02.879899+00:00",
+          "locator": "table tr[50]",
+          "name_raw": "月夜見神社 八幡神社",
+          "page_hash": "cbee852c16bb89fe0abb20d8bbc7196213550f1f29a47b45311ab6d99687b41a",
+          "reading_raw": "つきよみじんじゃ はちまんじんじゃ",
+          "source_kind": "agency",
+          "title": "静岡県神社庁 月夜見神社 八幡神社",
+          "url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=24"
+        }
+      ],
+      "split": true
     },
     "4b086467-915d-5878-85ed-49a344871f58": {
       "case_id": "R002",
@@ -342,6 +534,68 @@
         }
       ]
     },
+    "784c46e5-7a18-5fff-b3c4-14d2765570c9": {
+      "case_id": "SPLIT-ab0ffe6b-aa99-5c19-9d3e-695d8b639261",
+      "confirmation": "source_review",
+      "expected_source_hash": "6e5bbc78071f1f24f28f5913ac2b36d11d0147c333ae5d42b45cd1be09c33877",
+      "facility_id": "ab0ffe6b-aa99-5c19-9d3e-695d8b639261",
+      "name_separator": null,
+      "original": {
+        "address": "東京都清瀬市中清戸2-616",
+        "listing_url": "http://www.tokyo-jinjacho.or.jp/kitatama/kiyose/5473",
+        "name_raw": "日枝神社  水天宮",
+        "reading_raw": "ひえじんじゃ　すいてんぐう"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "ひえじんじゃ",
+          "reading_url": "http://www.tokyo-jinjacho.or.jp/kitatama/kiyose/5473",
+          "surface": "日枝神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "すいてんぐう",
+          "reading_url": "http://www.tokyo-jinjacho.or.jp/kitatama/kiyose/5473",
+          "surface": "水天宮"
+        }
+      ],
+      "reading_separator": null,
+      "reason": "神社庁の実ページで併記された各正式名と各全文読みを照合。複数の正式名を個別登録する方針に従い、接尾辞や読みを補わず原文の区切り単位で登録する。施設・取得原文は分割・改変しない。",
+      "recorded_at": "2026-11-09T12:41:57.729179+09:00",
+      "references": [
+        {
+          "address_raw": "東京都清瀬市中清戸2-616",
+          "checked_at": "2026-11-09T12:41:57.729179+09:00",
+          "display_name_raw": "日枝神社  水天宮",
+          "display_reading_raw": "ひえじんじゃ　すいてんぐう",
+          "excerpt": "日枝神社  水天宮 / ひえじんじゃ　すいてんぐう / 〒204-0012　東京都清瀬市中清戸2-616",
+          "fetched_at": "2026-11-09T03:40:12.351924+00:00",
+          "locator": ".s_in_tl01 + .s_in_rubi; .s_ad_box 所在地",
+          "name_raw": "日枝神社  水天宮",
+          "page_hash": "56d6b0871af729603621d27736040e0d8f18a62e662b91d3c3e1659d11fd7d45",
+          "reading_raw": "ひえじんじゃ　すいてんぐう",
+          "source_kind": "agency",
+          "title": "東京都神社庁 日枝神社  水天宮",
+          "url": "http://www.tokyo-jinjacho.or.jp/kitatama/kiyose/5473"
+        },
+        {
+          "address_raw": "東京都清瀬市中清戸2-616",
+          "checked_at": "2026-11-09T12:42:49.956385+09:00",
+          "excerpt": "日枝神社（ひえじんじゃ） / 所在地 東京都清瀬市中清戸2-616 / 「水天宮」は本社に匹敵する規模であり、入口も別に作られている。",
+          "license": "CC BY-SA; see article history and Wikimedia terms; no article body redistribution",
+          "locator": "導入文・所在地欄・歴史",
+          "name_raw": "日枝神社",
+          "permanent_url": "https://ja.wikipedia.org/w/index.php?title=日枝神社_(清瀬市)&oldid=108309045",
+          "reading_raw": "ひえじんじゃ",
+          "revision_id": "108309045",
+          "source_kind": "wikipedia",
+          "title": "Wikipedia 日枝神社 (清瀬市)",
+          "url": "https://ja.wikipedia.org/wiki/日枝神社_(清瀬市)"
+        }
+      ],
+      "split": true
+    },
     "8244f205-1867-5949-a06c-8af69e787de1": {
       "case_id": "R006",
       "confirmation": "user_confirmation",
@@ -401,6 +655,54 @@
           "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=4270005002317"
         }
       ]
+    },
+    "93b3afd4-48ec-5b54-836b-467d70946e20": {
+      "case_id": "SPLIT-404603cc-51d2-5b57-870b-cc5d5fefc10a",
+      "confirmation": "source_review",
+      "expected_source_hash": "e38e58661682f169b4d8e060aa442d1f54db663e200221d9df1bfe80f2335f43",
+      "facility_id": "404603cc-51d2-5b57-870b-cc5d5fefc10a",
+      "name_separator": "、",
+      "original": {
+        "address": "宮城県仙台市青葉区堤通雨宮町1-1",
+        "listing_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=10",
+        "name_raw": "磐上神社、雨宮神社",
+        "reading_raw": "いわがみじんじゃ、あまみやじんじゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "いわがみじんじゃ",
+          "reading_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=10",
+          "surface": "磐上神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "あまみやじんじゃ",
+          "reading_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=10",
+          "surface": "雨宮神社"
+        }
+      ],
+      "reading_separator": "、",
+      "reason": "神社庁の実ページで併記された各正式名と各全文読みを照合。複数の正式名を個別登録する方針に従い、接尾辞や読みを補わず原文の区切り単位で登録する。施設・取得原文は分割・改変しない。",
+      "recorded_at": "2026-11-09T12:41:57.729179+09:00",
+      "references": [
+        {
+          "address_raw": "宮城県仙台市青葉区堤通雨宮町1-1",
+          "checked_at": "2026-11-09T12:41:57.729179+09:00",
+          "display_name_raw": "磐上神社、雨宮神社",
+          "display_reading_raw": "いわがみじんじゃ、あまみやじんじゃ",
+          "excerpt": "磐上神社、雨宮神社（いわがみじんじゃ、あまみやじんじゃ） / 宮城県仙台市青葉区堤通雨宮町1-1",
+          "fetched_at": "2026-11-09T03:36:58.645203+00:00",
+          "locator": ".simple-list-item[3]",
+          "name_raw": "磐上神社、雨宮神社",
+          "page_hash": "171cfb81cb8e01066ae34498e906ddf25f83bd7f659bcda5ed2608c91f9820a8",
+          "reading_raw": "いわがみじんじゃ、あまみやじんじゃ",
+          "source_kind": "agency",
+          "title": "宮城県神社庁 磐上神社、雨宮神社",
+          "url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=10"
+        }
+      ],
+      "split": true
     },
     "96d3bbe4-4cbe-5a01-9b59-f197e9b78545": {
       "case_id": "R003",
@@ -512,6 +814,116 @@
           "url": "https://hotokami.jp/area/tottori/Hrktr/Hrktrty/Dapgg/83351/"
         }
       ]
+    },
+    "a6ed7d25-ad10-5fd0-9f43-b1329795fd14": {
+      "case_id": "SPLIT-586d0881-cc6b-5b94-b890-714f54822f7e",
+      "confirmation": "source_review",
+      "expected_source_hash": "185002090870f880a522669a24bea027e490c7888ad4ff402122058b5b54edde",
+      "facility_id": "586d0881-cc6b-5b94-b890-714f54822f7e",
+      "name_separator": "・",
+      "original": {
+        "address": "静岡市葵区上土1-17-71",
+        "listing_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=22&p=4",
+        "name_raw": "神明神社・諏訪神社",
+        "reading_raw": "しんめいじんじゃ・すわじんじゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "しんめいじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=22&p=4",
+          "surface": "神明神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "すわじんじゃ",
+          "reading_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=22&p=4",
+          "surface": "諏訪神社"
+        }
+      ],
+      "reading_separator": "・",
+      "reason": "神社庁の実ページで併記された各正式名と各全文読みを照合。複数の正式名を個別登録する方針に従い、接尾辞や読みを補わず原文の区切り単位で登録する。施設・取得原文は分割・改変しない。",
+      "recorded_at": "2026-11-09T12:41:57.729179+09:00",
+      "references": [
+        {
+          "address_raw": "静岡市葵区上土1-17-71",
+          "checked_at": "2026-11-09T12:41:57.729179+09:00",
+          "display_name_raw": "神明神社・諏訪神社",
+          "display_reading_raw": "しんめいじんじゃ・すわじんじゃ",
+          "excerpt": "神明神社・諏訪神社 / しんめいじんじゃ・すわじんじゃ / 静岡市葵区上土1-17-71",
+          "fetched_at": "2026-11-09T03:40:07.168354+00:00",
+          "locator": "table tr[39]",
+          "name_raw": "神明神社・諏訪神社",
+          "page_hash": "e8149997d43baf3ed55046b676fee45d8f900bd8878abc88b999e9036341a340",
+          "reading_raw": "しんめいじんじゃ・すわじんじゃ",
+          "source_kind": "agency",
+          "title": "静岡県神社庁 神明神社・諏訪神社",
+          "url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=22&p=4"
+        }
+      ],
+      "split": true
+    },
+    "b0233f31-5a24-5d26-8b3f-070fc31bd221": {
+      "case_id": "SPLIT-f2acab33-17d9-5db2-b413-6580bccfc08a",
+      "confirmation": "source_review",
+      "expected_source_hash": "ea604a23c07076c3c28d61e10df52b088ba5fe6d381218f1d473f96f5897a4bb",
+      "facility_id": "f2acab33-17d9-5db2-b413-6580bccfc08a",
+      "name_separator": "／",
+      "original": {
+        "address": "愛知県海部郡蟹江町大字須成字門屋敷上1363番地",
+        "listing_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
+        "name_raw": "冨吉建速神社／八劔社",
+        "reading_raw": "とみよしたけはやじんじゃ／はちけんしゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "とみよしたけはやじんじゃ",
+          "reading_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
+          "surface": "冨吉建速神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "はちけんしゃ",
+          "reading_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
+          "surface": "八劔社"
+        }
+      ],
+      "reading_separator": "／",
+      "reason": "神社庁の実ページで併記された各正式名と各全文読みを照合。複数の正式名を個別登録する方針に従い、接尾辞や読みを補わず原文の区切り単位で登録する。施設・取得原文は分割・改変しない。",
+      "recorded_at": "2026-11-09T12:41:57.729179+09:00",
+      "references": [
+        {
+          "address_raw": "愛知県海部郡蟹江町大字須成字門屋敷上1363番地",
+          "checked_at": "2026-11-09T12:41:57.729179+09:00",
+          "display_name_raw": "冨吉建速神社／八劔社",
+          "display_reading_raw": "とみよしたけはやじんじゃ／はちけんしゃ",
+          "excerpt": "冨吉建速神社／八劔社 / とみよしたけはやじんじゃ／はちけんしゃ / 愛知県海部郡蟹江町大字須成字門屋敷上1363番地",
+          "fetched_at": "2026-11-09T03:40:46.633550+00:00",
+          "locator": "POST JSON all 69 official area choices, limit=-1 $.list[1144] id=55624aa8-0175-4199-bc07-4f008b4d0e77",
+          "name_raw": "冨吉建速神社／八劔社",
+          "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
+          "reading_raw": "とみよしたけはやじんじゃ／はちけんしゃ",
+          "source_kind": "agency",
+          "title": "愛知県神社庁 冨吉建速神社／八劔社",
+          "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+        },
+        {
+          "address_raw": "愛知県海部郡蟹江町大字須成字門屋敷上1363番地",
+          "checked_at": "2026-11-09T12:42:49.956385+09:00",
+          "excerpt": "冨吉建速神社・八劔社（とみよしたけはやじんじゃ・はちけんしゃ） / 大字須成にある2つの神社 / 愛知県海部郡蟹江町大字須成字門屋敷上1363番地",
+          "license": "CC BY-SA; see article history and Wikimedia terms; no article body redistribution",
+          "locator": "導入文と所在地欄",
+          "name_raw": "冨吉建速神社・八劔社",
+          "permanent_url": "https://ja.wikipedia.org/w/index.php?title=冨吉建速神社・八剱社&oldid=107573605",
+          "reading_raw": "とみよしたけはやじんじゃ・はちけんしゃ",
+          "revision_id": "107573605",
+          "source_kind": "wikipedia",
+          "title": "Wikipedia 冨吉建速神社・八剱社",
+          "url": "https://ja.wikipedia.org/wiki/冨吉建速神社・八剱社"
+        }
+      ],
+      "split": true
     },
     "b7529df6-645f-5f8c-b660-4749ed22e28e": {
       "case_id": "R005",

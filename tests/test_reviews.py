@@ -16,6 +16,20 @@ def decision(data, outputs, **extra):
 
 
 class ReviewsTest(unittest.TestCase):
+    def test_source_review_requires_exact_agency_evidence_for_each_split(self):
+        d=build([row(name='架空神社／別神社',reading_raw='かくうじんじゃ／べつじんじゃ')]);f=d['facilities'][0];e=d['entries'][0]
+        outputs=[dict(surface=s,reading=r,basis='agency_component',reading_url=f['listing_url']) for s,r in [('架空神社','かくうじんじゃ'),('別神社','べつじんじゃ')]]
+        doc=decision(d,outputs,split=True,name_separator='／',reading_separator='／')
+        item=doc['entries'][e['id']];item['confirmation']='source_review'
+        ref=dict(url=f['listing_url'],title='Synthetic agency',source_kind='agency',name_raw=f['name_raw'],reading_raw=e['reading_raw'],address_raw=f['address'],excerpt=f['name_raw']+' '+e['reading_raw']+' '+f['address'],checked_at=item['recorded_at'])
+        item['references']=[ref]
+        self.assertEqual(len(eligible(reviews.apply_reviews(d,doc))),2)
+        outputs[0]['surface']='架空神';outputs[1]['surface']='社別神社'
+        self.assertEqual(eligible(reviews.apply_reviews(d,doc)),[])
+        outputs[0]['surface']='架空神社';outputs[1]['surface']='別神社'
+        ref['address_raw']='架空市別町9'
+        self.assertEqual(eligible(reviews.apply_reviews(d,doc)),[])
+
     def test_user_reading_has_no_fabricated_page_and_preserves_raw(self):
         d=build([row(reading_raw='')]);before=copy.deepcopy(d)
         doc=decision(d,[dict(surface='架空神社',reading='かくうじんじゃ',basis='user_confirmation',reading_url='')])
