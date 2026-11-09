@@ -25,6 +25,17 @@ class Client:
         return page(url,self.pages[url])
 
 class NiigataTests(unittest.TestCase):
+    def test_single_page_native_total_needs_no_pagination_widget(self):
+        for rows in ([],[row()]):
+            body=result(rows,len(rows)).replace('<div class="navcnt"></div>','')
+            actual,more,total=n.parse_results(page(A,body))
+            self.assertEqual((len(actual),more,total),(len(rows),None,len(rows)))
+        body=result([row()],2).replace('<div class="navcnt"></div>','')
+        with self.assertRaises(ValueError):n.parse_results(page(A,body))
+        body=result([row()]).replace('<div class="navcnt"></div>','')
+        with self.assertRaises(ValueError):n.parse_results(page(NEXT,body))
+        with self.assertRaises(ValueError):n.parse_results(page(A,body.replace('</section>',f'<a class="next" href="{NEXT}">次へ</a></section>')))
+
     def test_literal_fields_and_map_ui_removed_without_changing_address(self):
         rows,more,total=n.parse_results(page(A,result([row()])))
         self.assertEqual((rows[0]['name'],rows[0]['reading_raw'],rows[0]['address']),('石動神社','いするぎじんじゃ','新潟市北区白新町1丁目1番11号'))

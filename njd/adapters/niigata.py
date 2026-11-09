@@ -129,8 +129,13 @@ def parse_results(page):
         rows.append(row)
     if (total and not rows) or total<len(rows):raise ValueError('Niigata result rows inconsistent with total')
     navs=region.find('div','navcnt')
+    current=dict(parse_qsl(urlsplit(page.url).query,keep_blank_values=True))
+    # Actual one-page/zero-result responses omit navigation entirely. Accept
+    # only a first page whose explicit native total is fully accounted for.
+    if not navs and current.get('page','1')=='1' and total==len(rows) and not region.find('a','next'):
+        return rows,None,total
     if len(navs)!=1:raise ValueError('Niigata pagination region absent or ambiguous')
-    next_links=[];current=dict(parse_qsl(urlsplit(page.url).query,keep_blank_values=True))
+    next_links=[]
     for a in navs[0].find('a'):
         if 'next' not in a.attrs.get('class','').split():continue
         href=_url(a.attrs.get('href',''),page.url);fields=dict(parse_qsl(urlsplit(href).query,keep_blank_values=True))
