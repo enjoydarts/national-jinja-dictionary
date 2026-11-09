@@ -20,6 +20,25 @@ PROTOCOL_URL=ORIGIN+'/js/formsearch.js'
 OBSERVED_QUERIES={tuple(sorted(parse_qsl(urlsplit(u).query))) for u in (INDEX,SMALL)}
 
 
+CITY_NAME_CHANGE=dict(
+    rule='sasayama_to_tambasasayama_2019_05_01',old_prefix='篠山市',new_prefix='丹波篠山市',effective_date='2019-05-01',
+    ordinance_reference=dict(url='https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00001635.html',
+        page_hash='0a2df8df9c6102f1ef5f1fddbd8e5b723835417ad56e379250736ae3776080be',
+        fetched_at='2026-11-09T10:51:37.548039+00:00',checked_at='2026-11-09T10:51:39.781146+00:00',
+        locator='市の名称を変更する条例（平成30年条例第35号）本則・附則',
+        excerpt='篠山市の名称を丹波篠山市に変更する。 この条例は、平成31年5月1日から施行する。'))
+
+
+def _city_name_comparison(xml_address,profile_address):
+    """Documented prefix-only comparison; never normalize acquired fields."""
+    old=CITY_NAME_CHANGE['old_prefix'];new=CITY_NAME_CHANGE['new_prefix']
+    if not xml_address.startswith(old):return None
+    suffix=xml_address[len(old):]
+    if not suffix.strip() or profile_address!=new+suffix:return None
+    return dict(copy.deepcopy(CITY_NAME_CHANGE),xml_address_raw=xml_address,
+        profile_address_compared=profile_address,unchanged_suffix_raw=suffix)
+
+
 class _NameDocument(Document):
     def handle_starttag(self,tag,attrs):
         original=self.get_starttag_text()
@@ -133,16 +152,22 @@ def parse_detail(page,expected):
     pattern=re.escape(name)
     for img in heads[0].find('img'):
         pattern=pattern.replace(re.escape(img.original_start_tag),'.')
-    if not name or not re.fullmatch(pattern,expected['name']):review.append('Hyogo map and profile official names differ or are missing')
+    name_matches=bool(name and re.fullmatch(pattern,expected['name']))
+    code_matches=printed is not None and printed[1]==code
+    comparison=_city_name_comparison(expected['address'],address) if name_matches and name==expected['name'] and code_matches else None
+    if not name_matches:review.append('Hyogo map and profile official names differ or are missing')
     if not address:review.append('Hyogo profile address is missing')
-    elif expected['address'] and address!=expected['address']:review.append('Hyogo map and profile addresses differ')
-    if printed is None or printed[1]!=code:review.append('Hyogo printed profile code differs from map code')
+    elif expected['address'] and address!=expected['address'] and comparison is None:review.append('Hyogo map and profile addresses differ')
+    if not code_matches:review.append('Hyogo printed profile code differs from map code')
     if any(c in display_name for c in '()（）'):review.append('annotated official name requires review')
     row=dict(name=name,reading_raw=raw,reading_display_raw=raw,address=address,address_raw=address_raw,source_id=code,
         map_address_raw=expected['address'],address_role='agency profile shrine location',
         url=url,page_hash=page.sha256,fetched_at=page.fetched_at,locator='header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd',
         evidence=f'神社名={name}; かな={raw}; 神社コード={code_raw}; 所在地={address_raw}',
         reading_review_reason=_reading_reason(display_name,raw),printed_code_raw=code_raw,xml_source=copy.deepcopy(expected['xml_source']))
+    if comparison:
+        comparison['profile_address_raw']=address_raw
+        row['address_comparison']=comparison
     if heads[0].find('img'):row['name_rendering_status']='external_glyph'
     if review:row['review_reason']='; '.join(review)
     return row
@@ -186,6 +211,8 @@ def collect_hyogo(client,limit=None):
         entry['reading_display_raw']=row['reading_display_raw'];entry['printed_code_raw']=row['printed_code_raw']
         f['xml_occurrences']=[copy.deepcopy(r['xml_source']) for r in rows]
         f['map_address_raw']=row['map_address_raw'];f['address_role']=row['address_role']
+        comparisons=[copy.deepcopy(r['address_comparison']) for r in rows if r.get('address_comparison')]
+        if comparisons:f['address_comparisons']=comparisons
         if f.get('name_rendering_status')=='external_glyph':entry.update(status='pending',reading='',reason=f['reason'])
         if row['reading_review_reason']:entry.update(status='pending',reading='',reason=row['reading_review_reason'])
         review=sorted({r['review_reason'] for r in rows if r.get('review_reason')})

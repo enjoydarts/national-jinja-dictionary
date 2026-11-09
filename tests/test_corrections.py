@@ -17,6 +17,67 @@ def correction(d,changes):
             reading_raw=reading,address_raw=f['address'],excerpt=surface+'（'+reading+'） '+f['address'],checked_at='2026-11-09T00:00:00+09:00')])}}
 
 class CorrectionTest(unittest.TestCase):
+    def test_exact_annotation_only_hold_accepts_bound_name_and_reading_correction(self):
+        for raw,changes in [('カクウジンジャ',{'surface':'架空神社'}),('',{'surface':'架空神社','reading':'かくうじんじゃ'})]:
+            with self.subTest(raw=raw):
+                d=build([row(name='架空神社(原文注記)',reading_raw=raw,review_reason='annotated official name requires review')]);before=copy.deepcopy(d)
+                out=apply_corrections(d,correction(d,changes))
+                self.assertEqual(len(eligible(out)),1)
+                self.assertEqual(validate(out),[])
+                self.assertEqual(out['facilities'][0]['status'],'verified')
+                self.assertEqual(out['entries'][0]['surface'],'架空神社')
+                self.assertEqual(out['entries'][0]['reading'],'かくうじんじゃ')
+                self.assertEqual(out['facilities'][0]['name_raw'],'架空神社(原文注記)')
+                self.assertEqual(out['entries'][0]['reading_raw'],raw)
+                self.assertEqual(out['facilities'][0]['source_hash'],before['facilities'][0]['source_hash'])
+                self.assertEqual(d,before)
+    def test_annotation_surface_only_never_supplies_unknown_reading(self):
+        for raw in ['', '不明']:
+            d=build([row(name='架空神社(原文注記)',reading_raw=raw,review_reason='annotated official name requires review')])
+            out=apply_corrections(d,correction(d,{'surface':'架空神社'}))
+            self.assertEqual(out['facilities'][0]['status'],'verified')
+            self.assertEqual(out['entries'][0]['status'],'pending')
+            self.assertEqual(out['entries'][0]['reading'],'')
+            self.assertEqual(eligible(out),[])
+    def test_mixed_annotation_and_identity_reasons_are_not_name_only(self):
+        annotation='annotated official name requires review'
+        for reason,review in [(annotation,annotation+'; printed profile code differs'),(annotation+'; map/profile addresses differ',annotation),('printed profile code differs',annotation),(annotation,'map/profile addresses differ')]:
+            with self.subTest(reason=reason,review=review):
+                d=build([row(name='架空神社(原文注記)',review_reason=review)])
+                d['facilities'][0]['reason']=reason
+                out=apply_corrections(d,correction(d,{'surface':'架空神社','reading':'かくうじんじゃ'}))
+                self.assertEqual(out['facilities'][0]['status'],'pending')
+                self.assertEqual(eligible(out),[])
+    def test_annotation_reference_cannot_clear_source_conflict_or_identity_review(self):
+        for kind in ['source_conflicts','identity_review_required']:
+            d=build([row(name='架空神社(原文注記)',review_reason='annotated official name requires review')])
+            if kind=='source_conflicts':d['facilities'][0][kind]=[{'name_raw':'別神社'}]
+            else:d['entries'][0][kind]=True
+            out=apply_corrections(d,correction(d,{'surface':'架空神社','reading':'かくうじんじゃ'}))
+            self.assertEqual(out['facilities'][0]['status'],'pending')
+            self.assertEqual(eligible(out),[])
+    def test_annotation_name_reference_still_requires_same_nonblank_address(self):
+        for address in ['', '架空市乙町1']:
+            d=build([row(name='架空神社(原文注記)',address=address,review_reason='annotated official name requires review')])
+            c=correction(d,{'surface':'架空神社','reading':'かくうじんじゃ'})
+            ref=c['entries'][d['entries'][0]['id']]['references'][0]
+            ref.update(address_raw='架空市乙町99',excerpt='架空神社（かくうじんじゃ） 架空市乙町99')
+            self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_annotation_surface_only_does_not_fill_suppressed_reading(self):
+        d=build([row(name='架空神社(原文注記)',review_reason='annotated official name requires review')])
+        d['entries'][0]['reading']=''
+        name_only=apply_corrections(d,correction(d,{'surface':'架空神社'}))
+        self.assertEqual(name_only['entries'][0]['status'],'pending')
+        self.assertEqual(name_only['entries'][0]['reading'],'')
+        full=apply_corrections(d,correction(d,{'surface':'架空神社','reading':'かくうじんじゃ'}))
+        self.assertEqual(len(eligible(full)),1)
+    def test_existing_regional_name_only_correction_still_resolves(self):
+        d=build([row(name='旧架空神社',review_reason='regional agency name differs from linked detail name')])
+        out=apply_corrections(d,correction(d,{'surface':'架空神社','reading':'かくうじんじゃ'}))
+        self.assertEqual(len(eligible(out)),1)
+        self.assertEqual(out['facilities'][0]['name_raw'],'旧架空神社')
+
     def test_numeric_address_notation_preserves_all_parcel_components(self):
         for acquired,reference in [
             ('架空市甲町1丁目27番10号','埼玉県架空市甲町1−27−10'),

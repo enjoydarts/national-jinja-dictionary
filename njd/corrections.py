@@ -141,9 +141,11 @@ def apply_corrections(data,document):
             name_reasons={'control or layout characters in source name; explicit review required',
                           'source name uses an external glyph; Unicode correction requires references',
                           'missing name, address or municipality',
-                          'regional agency name differs from linked detail name'}
+                          'regional agency name differs from linked detail name',
+                          'annotated official name requires review'}
             name_only=facility['status']=='verified' or facility.get('reason') in name_reasons
-            review_is_name_only=not facility.get('review_reason') or facility['review_reason']=='regional agency name differs from linked detail name'
+            review_is_name_only=not facility.get('review_reason') or facility['review_reason'] in {
+                'regional agency name differs from linked detail name','annotated official name requires review'}
             address_valid=facility['address'] and not any(ord(c)<32 or ord(c)==127 for c in facility['address'])
             if name_can_be_resolved and name_only and review_is_name_only and address_valid and facility['municipality'] and not facility.get('source_conflicts'):
                 facility['status']='verified';facility['reason']=''

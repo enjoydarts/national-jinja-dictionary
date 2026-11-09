@@ -53,6 +53,70 @@ class HyogoTests(unittest.TestCase):
         for kw in [dict(name='別神社'),dict(address=ADDR+'9'),dict(code='6301048')]:
             with self.subTest(kw=kw):
                 d=self.collect(**kw);self.assertEqual(d['facilities'][0]['status'],'pending');self.assertEqual(d['entries'][0]['status'],'pending')
+    def test_documented_city_rename_compares_only_without_changing_raw_fields(self):
+        old='篠山市今田町本荘1-2';new='丹波篠山市今田町本荘1-2'
+        refs=h.parse_xml(page(QUERY,xml([(CODE,'湊川神社',old)])));before=copy.deepcopy(refs[0])
+        row=h.parse_detail(page(URL,detail(address=new)),refs[0])
+        self.assertFalse(row.get('review_reason'))
+        self.assertEqual(refs[0],before)
+        d=h.collect_hyogo(Client({QUERY:xml([(CODE,'湊川神社',old)]),URL:detail(address=new)}))
+        f=d['facilities'][0];e=d['entries'][0]
+        self.assertEqual((f['status'],e['status'],e['reading']),('verified','verified','みなとがわじんじゃ'))
+        self.assertEqual(f['address'],new);self.assertEqual(f['map_address_raw'],old)
+        self.assertEqual(f['xml_occurrences'][0]['address_raw'],old)
+        self.assertEqual(f['address_raw'],'〒650-0015\n'+new)
+        comparison=f['address_comparisons'][0]
+        self.assertEqual((comparison['old_prefix'],comparison['new_prefix'],comparison['effective_date']),('篠山市','丹波篠山市','2019-05-01'))
+        self.assertEqual((comparison['xml_address_raw'],comparison['profile_address_compared'],comparison['unchanged_suffix_raw']),(old,new,'今田町本荘1-2'))
+        self.assertEqual(comparison['profile_address_raw'],'〒650-0015\n'+new)
+        ref=comparison['ordinance_reference']
+        self.assertEqual(ref['url'],'https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00001635.html')
+        self.assertEqual(ref['page_hash'],'0a2df8df9c6102f1ef5f1fddbd8e5b723835417ad56e379250736ae3776080be')
+        self.assertEqual(ref['checked_at'][:10],'2026-11-09')
+        self.assertIn('篠山市の名称を丹波篠山市に変更する。',ref['excerpt'])
+        ordinary=h.collect_hyogo(Client({QUERY:xml([(CODE,'湊川神社',new)]),URL:detail(address=new)}))
+        self.assertEqual(f['source_hash'],ordinary['facilities'][0]['source_hash'])
+        self.assertNotIn('address_comparisons',ordinary['facilities'][0])
+        from njd.validation import validate
+        self.assertFalse([p for p in validate(d) if p.get('severity')=='error'])
+
+    def test_city_rename_requires_literal_name_even_when_glyph_pattern_matches(self):
+        old='篠山市今田町本荘1-2';new='丹波篠山市今田町本荘1-2'
+        d=h.collect_hyogo(Client({QUERY:xml([(CODE,'湊川神社',old)]),
+            URL:detail(name='湊<img src="glyph.gif" alt="" />神社',address=new)}))
+        f=d['facilities'][0]
+        self.assertEqual(f['status'],'pending');self.assertEqual(d['entries'][0]['status'],'pending')
+        self.assertEqual(f['name_rendering_status'],'external_glyph')
+        self.assertNotIn('address_comparisons',f)
+        self.assertEqual(f['map_address_raw'],old);self.assertEqual(f['address'],new)
+        self.assertIn('addresses differ',f['review_reason'])
+
+    def test_city_rename_never_uses_two_empty_names_as_confirmation(self):
+        old='篠山市今田町本荘1-2';new='丹波篠山市今田町本荘1-2'
+        d=h.collect_hyogo(Client({QUERY:xml([(CODE,'',old)]),URL:detail(name='',address=new)}))
+        self.assertEqual(d['facilities'][0]['status'],'pending')
+        self.assertNotIn('address_comparisons',d['facilities'][0])
+
+    def test_city_rename_does_not_clear_other_identity_or_address_differences(self):
+        suffix='今田町本荘1-2'
+        cases=[('篠山市'+suffix,'丹波市'+suffix,{}),
+               ('篠山市'+suffix,'丹波丹波篠山市'+suffix,{}),
+               ('篠山市'+suffix,'丹波篠山市今田町本荘1-3',{}),
+               ('篠山市'+suffix,'丹波篠山市今田町別町1-2',{}),
+               ('篠山市','丹波篠山市',{}),
+               ('篠山市  ','丹波篠山市  ',{}),
+               ('丹波篠山市'+suffix,'篠山市'+suffix,{}),
+               ('兵庫県篠山市'+suffix,'兵庫県丹波篠山市'+suffix,{}),
+               ('篠山市'+suffix,'丹波篠山市'+suffix,{'name':'別神社'}),
+               ('篠山市'+suffix,'丹波篠山市'+suffix,{'code':'6301048'})]
+        for old,new,kwargs in cases:
+            with self.subTest(old=old,new=new,kwargs=kwargs):
+                d=h.collect_hyogo(Client({QUERY:xml([(CODE,'湊川神社',old)]),URL:detail(address=new,**kwargs)}))
+                self.assertEqual(d['facilities'][0]['status'],'pending')
+                self.assertEqual(d['entries'][0]['status'],'pending')
+                self.assertNotIn('address_comparisons',d['facilities'][0])
+                self.assertEqual(d['facilities'][0]['map_address_raw'],old)
+
     def test_glyph_raw_tag_position_whitespace_and_source_hash(self):
         tag="<IMG  SRC='glyph/a.gif'\n ALT='two  words' />";hashes=[]
         for actual in [tag,tag.replace('a.gif','b.gif'),tag.replace('two  words','two words')]:
