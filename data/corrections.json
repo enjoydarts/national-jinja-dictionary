@@ -59,6 +59,36 @@
       ],
       "status": "verified"
     },
+    "05837a37-7abc-5c62-b118-c2fd4066dd34": {
+      "changes": {
+        "reading": "まつおながおじんじゃ"
+      },
+      "expected_source_hash": "b8578c4be95f33c10d336d4d1454cc6001d574748eaf264a8b57bdb0dedaf0c5",
+      "facility_id": "a3d3d7ba-6e33-574a-8ce4-0e241c4f8dac",
+      "identity_match": "松尾・長尾神社の名称が中点を含め完全一致。庁の若桜町大字赤松１２２２と政府の鳥取県八頭郡若桜町大字赤松１２２２番地は市町・大字・番地一致。原文には県郡がないだけで所在地を推定補完していない。",
+      "original": {
+        "address": "若桜町大字赤松１２２２",
+        "listing_url": "https://tottori-jinjacho.jp/pages/610/",
+        "name_raw": "松尾・長尾神社",
+        "reading_raw": "まつお・ながおじんじゃ"
+      },
+      "reason": "神社庁の中点付き読みを単純削除した推測ではなく、同名同番地の政府法人情報で連続する完全なフリガナ「マツオナガオジンジャ」を確認。",
+      "references": [
+        {
+          "address_raw": "鳥取県八頭郡若桜町大字赤松１２２２番地",
+          "checked_at": "2026-11-09T00:53:04.392770+00:00",
+          "excerpt": "松尾・長尾神社 マツオナガオジンジャ 本店所在地 鳥取県八頭郡若桜町大字赤松１２２２番地",
+          "fetched_at": "2026-11-09T00:52:25.300579+00:00",
+          "name_raw": "松尾・長尾神社",
+          "page_hash": "46b8a5f6844714a04a11f5de0bbbd1f6d4126afdb4de8b017dccc8f1315a1381",
+          "reading_raw": "マツオナガオジンジャ",
+          "source_kind": "government_corporate_register",
+          "title": "経済産業省 gBizINFO 松尾・長尾神社 法人番号8270005002370",
+          "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=8270005002370"
+        }
+      ],
+      "status": "verified"
+    },
     "066ab3a6-66bb-5f12-8ee1-3f26e4d7383e": {
       "changes": {
         "reading": "あきたすわぐう"
@@ -2254,6 +2284,37 @@
           "source_kind": "agency",
           "title": "https://akita-jinjacho.sakura.ne.jp/cat_shrine/%e3%81%9f/",
           "url": "https://akita-jinjacho.sakura.ne.jp/cat_shrine/%e3%81%9f/"
+        }
+      ],
+      "status": "verified"
+    },
+    "56e7d524-632c-5cd0-91be-38bd065b6601": {
+      "changes": {
+        "reading": "うえのじんじゃみしまじんじゃ"
+      },
+      "expected_source_hash": "a345ee425de2f8c9435f050f1af65636e73a1745556277e03216d5605b314683",
+      "facility_id": "e153dfb2-c9a7-5d7c-bb57-2570a9993ed7",
+      "identity_match": "神社名は中点を含め完全一致。庁の伯耆町大殿1465と参考の鳥取県西伯郡伯耆町大殿1465は市町・大殿・番地1465が一致。県郡の省略だけを照合し、別所在地との統合はしない。",
+      "original": {
+        "address": "伯耆町大殿1465",
+        "listing_url": "https://tottori-jinjacho.jp/pages/639/",
+        "name_raw": "上野神社・三島神社",
+        "reading_raw": "うえのじんじゃ みしまじんじゃ"
+      },
+      "reason": "空白付き庁読みを推測で連結するのではなく、同名同番地の第三者個別施設ページの読み方欄に掲載された連続する完全読みを採る。利用者許可の参考資料補正として、元の庁原文は変更しない。",
+      "references": [
+        {
+          "address_raw": "鳥取県西伯郡伯耆町大殿1465",
+          "caution": "共同編集型の第三者サイトで精度保証なしの表示あり。神社公式運営を確認したという意味ではない。",
+          "checked_at": "2026-11-09T00:57:06.315181+00:00",
+          "excerpt": "名称 上野神社・三島神社 読み方 うえのじんじゃみしまじんじゃ 住所 鳥取県西伯郡伯耆町大殿1465",
+          "fetched_at": "2026-11-09T00:56:27.879206+00:00",
+          "name_raw": "上野神社・三島神社",
+          "page_hash": "e82d0f09604f0b260a373b236863212477070f3fd82dac7f1542fdd096a5dfea",
+          "reading_raw": "うえのじんじゃみしまじんじゃ",
+          "source_kind": "third_party_collaborative_listing",
+          "title": "ホトカミ 上野神社・三島神社（鳥取県岸本駅）",
+          "url": "https://hotokami.jp/area/tottori/Hrktr/Hrktrtr/Drtys/88246/"
         }
       ],
       "status": "verified"

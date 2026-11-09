@@ -27,7 +27,7 @@
 | 東京都 | [東京都神社庁](http://www.tokyo-jinjacho.or.jp/) | 公開掲載範囲を収集 | 418 | リンクされた紹介一覧の公開掲載範囲。 再配布条件は未確認。 |
 | 神奈川県 | [神奈川県神社庁](https://www.kanagawa-jinja.or.jp/) | 公開掲載範囲を収集 | 1122 | 公開神社検索の掲載範囲。 再配布条件は未確認。 |
 | 新潟県 | [新潟県神社庁](https://niigata-jinjacho.jp/) | 取得停止 | 0 | robots.txt returned HTML rather than a usable policy; njd.http.Client refused access. No robots bypass performed. |
-| 富山県 | [富山県神社庁](https://toyama-jinjacho.sakura.ne.jp/) | 部分収集 | 55 | 取得した氏神検索ページの部分収集。氏子住所と神社鎮座地を区別。 再配布条件は未確認。 |
+| 富山県 | [富山県神社庁](https://toyama-jinjacho.sakura.ne.jp/) | 部分収集 | 97 | 取得した氏神検索ページの部分収集。氏子住所と神社鎮座地を区別。 再配布条件は未確認。 |
 | 石川県 | [石川県神社庁](https://www.ishikawa-jinjacho.or.jp/) | 公開掲載範囲を収集 | 1859 | 開いた公式掲載ページから名称・住所を抽出。確認済み読みは1857件。再配布許諾は未確認（汎用copyright表示とデータ利用禁止を区別）。 |
 | 福井県 | [福井県神社庁](https://www.jinja-fukui.jp/) | 公開掲載範囲を収集 | 1696 | 開いた公式掲載ページから名称・住所を抽出。確認済み読みは1696件。再配布許諾は未確認（汎用copyright表示とデータ利用禁止を区別）。 |
 | 山梨県 | [山梨県神社庁](https://www.yamanashi-jinjacho.or.jp/) | 公開掲載範囲を収集 | 1257 | 開いた公式掲載ページから名称・住所を抽出。確認済み読みは0件。再配布許諾は未確認（汎用copyright表示とデータ利用禁止を区別）。掲載一覧に読みがないため全登録読みはpending。 |

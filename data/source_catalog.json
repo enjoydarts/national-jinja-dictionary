@@ -1157,7 +1157,7 @@
           "2026-11-08T14:30:33.275457+00:00",
           "2026-11-08T17:14:06.248699+00:00"
         ],
-        "remaining_scope": "読み未掲載・異常値の補完確認、再配布条件の確認",
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
         "saved_listing_page_count": 1890,
         "saved_listing_page_examples": [
           {
@@ -1630,37 +1630,37 @@
       "candidate_url": "https://toyama-jinjacho.sakura.ne.jp/",
       "collection": {
         "canonical_data": {
-          "entries": 55,
+          "entries": 97,
           "entry_status_counts": {
             "pending": 1,
-            "verified": 54
+            "verified": 96
           },
-          "facilities": 55,
+          "facilities": 97,
           "facility_status_counts": {
             "pending": 1,
-            "verified": 54
+            "verified": 96
           },
           "path": "data/sources/toyama.json",
-          "verified_entries": 54,
-          "verified_facilities": 54
+          "verified_entries": 96,
+          "verified_facilities": 96
         },
         "checked_at": "2026-11-08T15:49:59.287399+00:00",
-        "facilities_collected": 55,
+        "facilities_collected": 97,
         "fields_observed": {
-          "address": 55,
+          "address": 97,
           "facility_official_url": 0,
-          "name": 55,
-          "reading_raw": 55
+          "name": 97,
+          "reading_raw": 97
         },
         "inspection_evidence": [],
         "listing_authority_status": "agency_site",
         "pages_fetched": 1514,
-        "reason": "氏子住所ページと実施設を分離。具体的な鎮座地のある55施設のみ保存。全公開ページ索引の収集は継続中。",
+        "reason": "神社庁が公開した氏子住所ページの明示的な神社名・鎮座地から施設を区別。住所未掲載資料は施設数へ加算しない。",
         "record_fetched_at_range": [
           "2026-11-08T14:40:59.015131+00:00",
-          "2026-11-08T15:47:09.248908+00:00"
+          "2026-11-09T00:49:06.468551+00:00"
         ],
-        "remaining_scope": "公開索引の未取得ページ、具体的鎮座地がない資料、1施設の読み衝突",
+        "remaining_scope": "full source traversal still running; cache is resume checkpoint",
         "saved_listing_page_count": 143,
         "saved_listing_page_examples": [
           {
@@ -1679,10 +1679,10 @@
             "url": "https://toyama-jinjacho.sakura.ne.jp/ujigami/1379-%e5%af%8c%e5%b1%b1%e5%b8%82%e9%87%91%e5%b1%b1%e6%96%b0%e4%b8%ad-%e7%a5%9e%e6%98%8e%e5%ae%ae-%e5%b5%af%e5%b3%a8%e3%80%80%e8%8a%b3%e6%a8%b9-%ef%bc%88%e6%9c%ac%e5%8b%99%e7%a4%be%e3%83%9b/"
           }
         ],
-        "source_rows_observed": 2462,
+        "source_rows_observed": 2668,
         "status": "partial",
-        "stored_coverage": "partial cached parish records; full published public page index traversal running",
-        "stored_pages_fetched": 2541
+        "stored_coverage": "cached parish records plus ongoing full published index traversal; acquisition checkpoint only",
+        "stored_pages_fetched": 2751
       },
       "conditions": {
         "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
@@ -4889,7 +4889,7 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 37352,
+    "canonical_facilities": 37394,
     "collection_status_counts": {
       "authority_pending": 1,
       "blocked": 9,
