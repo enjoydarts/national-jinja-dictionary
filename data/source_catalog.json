@@ -2664,8 +2664,9 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://www.mie-jinjachou.page/",
       "collection": {
-        "checked_at": "2026-11-09T05:40:44.109488+00:00",
-        "facilities_collected": 50,
+        "checked_at": "2026-11-09T06:22:39.247791+00:00",
+        "facilities_collected": 822,
+        "failed_pages": [],
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-08T14:24:58.422903+00:00",
@@ -2679,16 +2680,19 @@
           }
         ],
         "listing_authority_status": "agency_department_site",
-        "pages_fetched": 60,
+        "observed_index_pages": 165,
+        "pages_fetched": 987,
         "previous_blocked_route": {
           "reason": "公式桑名市・桑名郡HTMLで104社の見出しとTable Master埋込を実確認。viewer-modelが示すwidgetUrlはwix-visual-data.appspot.com/index。同hostのrobots.txtはHTTP401で方針不明となり既存Clientが取得停止。画像を取得せず、施設名・読みを推定しない。",
           "status": "blocked",
           "url": "https://wix-visual-data.appspot.com/robots.txt"
         },
-        "reason": "県神社庁が明示リンクする公式教化委員会の独立HTMLを50施設上限で試作取得。全文読みと住所を同一記事で照合。うち26登録が出力可能、括弧注記付き掲載名24登録は全文の対応未確定で保留。",
-        "remaining_scope": "実際の古い記事リンクで示された11ページ目以降が未取得。カテゴリ表示合計822と地図815は参考値であり取得目標・収集済み件数には使わない。",
-        "source_rows_observed": 50,
-        "status": "partial"
+        "reason": "神社庁が明示リンクする公式教化委員会HTMLの実ページ送り165ページと詳細822記事を取得。nativeコード別822施設、全文読みまで確認533登録、289登録は保留。",
+        "remaining_scope": "取得した記事一覧のページ送りは末尾まで確認し、未取得・取得失敗なし。県内全神社の網羅とは区別。括弧注記付き名称等の289登録の判断、地図の815という表示との時点・対象範囲差は未解決。",
+        "source_rows_observed": 822,
+        "status": "collected",
+        "traversal_complete": true,
+        "verified_reading_entries": 533
       },
       "conditions": {
         "additional_robots_inspection": {
@@ -4573,9 +4577,21 @@
           "reading_raw": 0
         },
         "inspection_evidence": [],
+        "linked_site_research": {
+          "checked_at": "2026-11-09T06:17:48.732980+00:00",
+          "evidence_data": "data/locations.json",
+          "failed_official_hrefs": 2,
+          "listed_records_in_scope": 25,
+          "ordinary_sites_opened": 15,
+          "remaining_scope": "所在地未確定14施設、読み未確認23施設。国/國・浜/濱・読/讀などの表記差、住所候補の衝突、SNS停止・404を区別。",
+          "scope": "Named inspected pages only. No whole-site absence or whole-prefecture completeness claim.",
+          "stopped_social_links": 8,
+          "verified_full_readings": 2,
+          "verified_location_supplements": 11
+        },
         "listing_authority_status": "agency_site",
         "pages_fetched": 1,
-        "reason": "Saved explicit official listing records; acquisition is ongoing.",
+        "reason": "神社庁の公式リンク集25掲載だけを正本へ保存。全県神社一覧ではない。リンク先は通常公式サイト15件を実閲覧、SNS8件は取得停止、実href2件はHTTP404。別管理の資料から所在地11施設・全文読み2施設を補完。表記差・住所衝突等は要確認に保持。",
         "record_fetched_at_range": [
           "2026-11-08T14:28:34.370788+00:00",
           "2026-11-08T14:28:34.370788+00:00"
