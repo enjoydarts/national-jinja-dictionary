@@ -6,6 +6,18 @@ from njd.report import PREFECTURES
 from njd.storage import load_dataset, write_json, reconcile_identity
 from njd.validation import validate, eligible, blocking_problems
 
+
+class PartialSnapshotError(ValueError):
+    def __init__(self,omitted_count):
+        self.omitted_count=omitted_count
+        super().__init__(f'partial acquisition omits {omitted_count} saved facility records; previous canonical snapshot preserved')
+
+
+def _partial_scope(source):
+    if source.get('limit') or any(source.get(k) is False for k in ('traversal_complete','acquisition_complete','collection_complete')):return True
+    remaining=source.get('remaining_scope')
+    return bool((isinstance(remaining,list) and remaining) or (isinstance(remaining,dict) and remaining.get('unvisited')))
+
 SOURCE_KEYS='hokkaido aomori iwate miyagi akita yamagata fukushima ibaraki tochigi gunma saitama chiba tokyo kanagawa niigata toyama ishikawa fukui yamanashi nagano gifu shizuoka aichi mie shiga kyoto osaka hyogo nara wakayama tottori shimane okayama hiroshima yamaguchi tokushima kagawa ehime kochi fukuoka saga nagasaki kumamoto oita miyazaki kagoshima okinawa'.split()
 
 
@@ -49,6 +61,9 @@ def save_collection(data_dir,key,data):
     links=all_links.get(key,{})
     result=reconcile_identity(old,data,links)
     if blocking_problems(result): raise ValueError('identity reconciliation produced invalid records')
+    if old and _partial_scope(result['collection']):
+        omitted={f['id'] for f in old['facilities']}-{f['id'] for f in result['facilities']}
+        if omitted:raise PartialSnapshotError(len(omitted))
     write_json(path,result)
     return result
 
@@ -89,6 +104,7 @@ def merge_collections(data_dir,*,states=None):
 def public_failure(exc):
     """Controlled public reason: never publish exception messages or paths."""
     from njd.http import FetchError
+    if isinstance(exc,PartialSnapshotError):return f'partial_acquisition_omits_saved_records ({exc.omitted_count}); previous snapshot preserved'
     if isinstance(exc,OSError):return f'local_io_error ({type(exc).__name__}, errno={exc.errno})'
     if isinstance(exc,UnicodeError):return 'declared_encoding_decode_error'
     if isinstance(exc,FetchError):
@@ -133,8 +149,5 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
 def collection_status(data):
     source=data['collection']
     if source.get('authority_status') in ('pending','unconfirmed'):return 'authority_pending'
-    if source.get('limit') or source.get('traversal_complete') is False or source.get('acquisition_complete') is False:return 'partial'
-    remaining=source.get('remaining_scope')
-    if isinstance(remaining,list) and remaining:return 'partial'
-    if isinstance(remaining,dict) and remaining.get('unvisited'):return 'partial'
+    if _partial_scope(source):return 'partial'
     return 'collected'

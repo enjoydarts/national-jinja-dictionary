@@ -55,3 +55,34 @@ class NationwideTest(unittest.TestCase):
             d=build([row()]);d['collection']['operator_note']="Permission error: '/Users/private-person/cache/file'"
             with self.assertRaises(ValueError):save_collection(Path(td),'example',d)
             self.assertFalse((Path(td)/'sources/example.json').exists())
+
+    def test_partial_attempt_cannot_remove_previously_saved_facilities(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as td:
+            base=Path(td);work=base/'data'
+            save_collection(work,'example',build([row(),row(source_id='2',address='架空市乙町2')]))
+            path=work/'sources/example.json';before=path.read_bytes()
+            partial=build([row()]);partial['collection']['traversal_complete']=False
+            registry={'example':dict(code='11',collect=lambda client,limit=None:partial)}
+            states=run_collections(work,registry,['example'],cache_dir=base/'cache')
+            self.assertEqual(path.read_bytes(),before)
+            self.assertEqual(states['11']['status'],'failed_using_previous')
+            self.assertIn('partial',states['11']['reason'])
+
+    def test_partial_extension_and_explicit_complete_removal_are_saved(self):
+        with tempfile.TemporaryDirectory() as td:
+            work=Path(td);save_collection(work,'example',build([row()]))
+            expanded=build([row(),row(source_id='2',address='架空市乙町2')]);expanded['collection']['traversal_complete']=False
+            self.assertEqual(len(save_collection(work,'example',expanded)['facilities']),2)
+            complete=build([row()]);complete['collection']['traversal_complete']=True
+            self.assertEqual(len(save_collection(work,'example',complete)['facilities']),1)
+
+    def test_partial_identity_guard_honors_approved_identity_links(self):
+        from njd.storage import write_json
+        with tempfile.TemporaryDirectory() as td:
+            work=Path(td);old=build([row()]);save_collection(work,'example',old)
+            changed=build([row(source_id='new-source-id')]);changed['collection']['traversal_complete']=False
+            old_id=old['facilities'][0]['id'];new_id=changed['facilities'][0]['id']
+            write_json(work/'identities.json',{'example':{new_id:dict(facility_id=old_id,expected_source_hash=changed['entries'][0]['source_hash'],reason='explicit source identity transition reviewed')}})
+            saved=save_collection(work,'example',changed)
+            self.assertEqual([f['id'] for f in saved['facilities']],[old_id])
