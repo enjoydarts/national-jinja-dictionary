@@ -170,6 +170,75 @@ class GifuTests(unittest.TestCase):
         self.assertEqual(d['entries'][0]['status'],'pending')
         other=self.collect(name=name.replace('two  words','two words'))
         self.assertNotEqual(d['facilities'][0]['source_hash'],other['facilities'][0]['source_hash'])
+    def stop_scope_fixture(self):
+        second=BASE+'syosai.php?shrno=753&shrname='+quote('■秋葉神社■')
+        other=BASE+'search.php?jinjya='+quote('別神社')
+        index_next=BASE+'jnjyalist.php?page=2&tcnt=3&keysel='
+        search_next=SEARCH+'&page=2&tcnt=3'
+        listing=idx(readings=('あきばじんじゃ',),total=3,next_url=index_next).replace('<td>7</td>','<td>2</td>').replace('</table>',f'<tr><td><a href="{other}">別神社</a></td><td>べつじんじゃ</td><td>1</td></tr></table>')
+        pages={INDEX:listing,SEARCH:search([(DETAIL,'秋葉神社',ADDRESS),(second,'秋葉神社',ADDRESS)],total=3,next_url=search_next),DETAIL:detail(),second:detail(),other:search([],0),index_next:idx(readings=(),total=3),search_next:search([],0)}
+        return pages,second,other,index_next,search_next
+    def test_first_detail_fetch_failure_stops_all_host_traversal(self):
+        for failure in [FetchError('ConnectionRefused'),OSError('connection refused')]:
+            pages,second,other,index_next,search_next=self.stop_scope_fixture()
+            class Broken(Client):
+                def fetch(self,url):
+                    if url==DETAIL:self.calls.append(url);raise failure
+                    return super().fetch(url)
+            c=Broken(pages);d=g.collect_gifu(c)
+            self.assertEqual(c.calls,[INDEX,SEARCH,DETAIL])
+            self.assertEqual(len(d['collection']['failed_pages']),1)
+            self.assertFalse(d['collection']['traversal_complete'])
+            for url in [DETAIL,second,other,index_next,search_next]:self.assertIn(url,d['collection']['remaining_scope'])
+    def test_search_fetch_failure_stops_before_next_group_and_index(self):
+        pages,second,other,index_next,search_next=self.stop_scope_fixture();del pages[SEARCH]
+        c=Client(pages);d=g.collect_gifu(c)
+        self.assertEqual(c.calls,[INDEX,SEARCH])
+        for url in [SEARCH,other,index_next]:self.assertIn(url,d['collection']['remaining_scope'])
+    def test_search_next_page_fetch_failure_preserves_records_and_stops(self):
+        pages,second,other,index_next,search_next=self.stop_scope_fixture();del pages[search_next]
+        c=Client(pages);d=g.collect_gifu(c)
+        self.assertEqual(c.calls,[INDEX,SEARCH,DETAIL,second,search_next])
+        self.assertEqual(len(d['facilities']),2)
+        for url in [search_next,other,index_next]:self.assertIn(url,d['collection']['remaining_scope'])
+    def test_detail_auth_or_redirect_rejection_stops_host_traversal(self):
+        for response in [page(DETAIL,'<input type="password">'),page(DETAIL,'',302,{'location':BASE+'syosai.php?shrno=999'})]:
+            pages,second,other,index_next,search_next=self.stop_scope_fixture();pages[DETAIL]=response
+            c=Client(pages);d=g.collect_gifu(c)
+            self.assertEqual(c.calls,[INDEX,SEARCH,DETAIL])
+            self.assertIn(second,d['collection']['remaining_scope'])
+    def test_unknown_detail_html_is_isolated_without_inventing_a_row(self):
+        pages,second,other,index_next,search_next=self.stop_scope_fixture()
+        pages[DETAIL]='<p>unknown detail structure</p>'
+        c=Client(pages);d=g.collect_gifu(c)
+        self.assertIn(second,c.calls)
+        self.assertFalse(any(f['native_source_id']=='752' for f in d['facilities']))
+        self.assertFalse(d['collection']['traversal_complete'])
+    def test_later_detail_failure_keeps_previously_confirmed_record(self):
+        pages,second,other,index_next,search_next=self.stop_scope_fixture();del pages[second]
+        c=Client(pages);d=g.collect_gifu(c)
+        self.assertEqual(c.calls,[INDEX,SEARCH,DETAIL,second])
+        self.assertEqual(len(d['facilities']),1)
+        self.assertEqual(d['facilities'][0]['source_hash'],self.collect()['facilities'][0]['source_hash'])
+        self.assertEqual(d['entries'][0]['reading'],'あきばじんじゃ')
+        for url in [second,other,index_next,search_next]:self.assertIn(url,d['collection']['remaining_scope'])
+    def test_next_index_fetch_failure_preserves_records_and_stops(self):
+        index_next=BASE+'jnjyalist.php?page=2&tcnt=2&keysel='
+        listing=idx(readings=('あきばじんじゃ',),total=2,next_url=index_next).replace('<td>7</td>','<td>1</td>')
+        c=Client({INDEX:listing,SEARCH:search(),DETAIL:detail()});d=g.collect_gifu(c)
+        self.assertEqual(c.calls,[INDEX,SEARCH,DETAIL,index_next])
+        self.assertEqual(len(d['facilities']),1)
+        self.assertEqual(d['collection']['remaining_scope'],[index_next])
+        self.assertEqual(len(d['collection']['failed_pages']),1)
+    def test_cf_mitigated_header_stops_before_decode_and_all_further_requests(self):
+        for headers in [{'cf-mitigated':'challenge'},{'CF-Mitigated':'ChAlLeNgE'}]:
+            pages,second,other,index_next,search_next=self.stop_scope_fixture()
+            pages[DETAIL]=Page(DETAIL,200,dict(headers,**{'content-type':'text/html; charset=utf-8'}),b'Just a moment\xff','2026-11-09T00:00:00+00:00')
+            c=Client(pages);d=g.collect_gifu(c)
+            self.assertEqual(c.calls,[INDEX,SEARCH,DETAIL])
+            self.assertEqual(len(d['collection']['failed_pages']),1)
+            self.assertIn('challenge',d['collection']['failed_pages'][0]['reason'].lower())
+            for url in [DETAIL,second,other,index_next,search_next]:self.assertIn(url,d['collection']['remaining_scope'])
     def test_registry(self):
         from njd.catalog import registry
         self.assertEqual(registry()['gifu']['code'],'21')

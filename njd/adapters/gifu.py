@@ -66,6 +66,11 @@ def _fetch(client,url):
             if _identity(target)!=original:raise ValueError('Gifu redirect changes endpoint/name/shrine identity')
             url=target;continue
         if page.status!=200:raise FetchError('Gifu HTTP '+str(page.status))
+        # https://developers.cloudflare.com/cloudflare-challenges/challenge-types/challenge-pages/detect-response/
+        if any(k.lower()=='cf-mitigated' and v.lower().strip()=='challenge' for k,v in page.headers.items()):
+            raise FetchError('Gifu access/authentication challenge')
+        if re.search(rb'<input\b[^>]*\btype\s*=\s*["\']?password\b|captcha|access denied|cloudflare[^\n]{0,120}challenge',page.body,re.I):
+            raise FetchError('Gifu access/authentication challenge')
         return page
     raise FetchError('too many Gifu redirects')
 
@@ -191,7 +196,10 @@ def collect_gifu(client,limit=None):
     if limit is not None and (type(limit) is not int or limit<=0):raise ValueError('Gifu limit must be positive integer or None')
     records=[];pages=[];failed=[];remaining=[];groups=[];indexes=[];searches=[];totals=[];details={};codes=set();seen_index=set();seen_search=set();halt=False
     def acquire(url):
-        page=_fetch(client,url);pages.append(dict(url=page.url,sha256=page.sha256,fetched_at=page.fetched_at));return page
+        # _fetch ValueErrors are scope/redirect refusals, not HTML parse errors.
+        try:page=_fetch(client,url)
+        except ValueError as exc:raise FetchError(str(exc)) from exc
+        pages.append(dict(url=page.url,sha256=page.sha256,fetched_at=page.fetched_at));return page
     def fail(url,exc):failed.append(dict(url=url,reason=str(exc)));remaining.append(url)
     index_url=INDEX;index_total=None;query_totals={}
     while index_url and not halt:
@@ -218,7 +226,9 @@ def collect_gifu(client,limit=None):
                     if search_total is not None and result['total']!=search_total:raise ValueError('Gifu search total changed during traversal')
                     search_total=result['total'];query_totals[_identity(group['url'])]=search_total;search_rows+=len(result['rows'])
                     totals.append(dict(url=sp.url,total=search_total,rows_observed=len(result['rows'])))
-                except (ValueError,FetchError,UnicodeError,OSError) as exc:fail(search_url,exc);break
+                except (FetchError,OSError) as exc:
+                    fail(search_url,exc);halt=True;break
+                except (ValueError,UnicodeError) as exc:fail(search_url,exc);break
                 for pos,ref in enumerate(result['rows']):
                     code=ref['source_id'];url=ref['url']
                     if code not in details and limit is not None and len(codes)>=limit:
@@ -232,7 +242,9 @@ def collect_gifu(client,limit=None):
                         if reasons:row['review_reason']='; '.join(reasons)
                         row['index_source']=dict(url=sp.url,name_raw=ref['name'],address_raw=ref['address_raw'],href_raw=ref['href_raw'],locator=ref['locator'],page_hash=sp.sha256,fetched_at=sp.fetched_at)
                         records.append(row)
-                    except (ValueError,FetchError,UnicodeError,OSError) as exc:fail(url,exc)
+                    except (FetchError,OSError) as exc:
+                        fail(url,exc);remaining.extend(r['url'] for r in result['rows'][pos+1:]);halt=True;break
+                    except (ValueError,UnicodeError) as exc:fail(url,exc)
                 if halt:
                     if result['next_url']:remaining.append(result['next_url'])
                     break
