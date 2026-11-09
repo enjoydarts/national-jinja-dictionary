@@ -2421,6 +2421,22 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://www.gifu-jinjacho.jp/",
       "collection": {
+        "acquisition_constraints": {
+          "index_rows_inspected": 40,
+          "index_total_displayed": 828,
+          "index_total_interpretation": "registered name/reading-group rows; not unique names or facilities",
+          "reading_policy": "index readings are not copied to individual facilities; actual detail caption and address required",
+          "shared_name_example": {
+            "facility_details_inspected": 0,
+            "index_readings": [
+              "あきはじんじゃ",
+              "あきばじんじゃ",
+              "あきわじんじゃ"
+            ],
+            "name": "秋葉神社",
+            "shared_search_result_total": 79
+          }
+        },
         "canonical_data": {
           "entries": 8,
           "entry_status_counts": {
@@ -2442,6 +2458,7 @@
           "name": 8,
           "reading_raw": 8
         },
+        "index_displayed_name_registration_rows": 828,
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-08T14:24:58.139177+00:00",
@@ -2452,19 +2469,28 @@
             "fetched_at": "2026-11-08T14:25:00.290008+00:00",
             "sha256": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
             "url": "https://www.gifu-jinjacho.jp/jnjyalist.php"
+          },
+          {
+            "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+            "sha256": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+            "url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel="
+          },
+          {
+            "fetched_at": "2026-11-09T07:49:41.257281+00:00",
+            "sha256": "2497e6bc54ec1c5a2ab4a6c44ef3a69e39c6ca4c613d7067f5355369bee9183c",
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
           }
         ],
         "inspection_evidence_reference": "data/sources/gifu.json#collection.pages",
         "listing_authority_status": "agency_site",
         "pages_fetched": 10,
-        "reason": "公式の「縣神社」名称検索8施設を全件個別閲覧。全文読み・異なる所在地・実詳細IDを照合し8施設を保存。828表示は名称種であり施設数ではない。",
+        "reason": "公式の「縣神社」名称検索8施設を全件個別閲覧。全文読み・異なる所在地・実詳細IDを照合し8施設を保存。828表示は一覧の名称・読みの登録行で、同じ名称が異なる読みで複数行になる。名称の異なり数・施設数とは区別。",
         "remaining_scope": [
-          "other registered shrine-name kinds and their facility results unvisited",
+          "other name/reading-group index registrations and distinct facility search results remain uncollected",
           "data redistribution and link-notification scope unconfirmed"
         ],
         "selected_name_result_complete": true,
         "selected_name_result_total": 8,
-        "source_name_kinds_displayed": 828,
         "source_rows_observed": 8,
         "status": "partial"
       },
