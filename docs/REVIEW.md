@@ -33,6 +33,71 @@ R004の正式名は、物部天神社・国渭地祇神社・天満天神社、�
 
 同名の別施設の読みで補わず、「じんじゃ／じんしゃ」のどちらかを一般的な読みから選ぶこともしません。
 
+## 全文読みの追加監査による保留
+
+公式の読み欄の原文に、途中読みや誤記等の疑いがある54登録を出力から一時退避しました。誤りと断定した一覧ではなく、原文のまま全文読みとして採用できるかを独立した資料で確認する対象です。原文に接尾語を付け足したり、小書きへ変更したりしていません。既存のR001–R009の回答とは重複しません。
+
+名称の語尾だけで一律に変更せず、「山神社／やまがみしゃ」などは今回の退避対象に含めていません。「八幡神社／はちまんぐう」「白髭大明神社／しらひげだいみょうじん」も語尾だけで誤りと断定せず、元の掲載読みを維持しています。
+
+| 都道府県・掲載名 | 掲載読み原文 | 所在地 | 要確認の理由 |
+| --- | --- | --- | --- |
+| 千葉県 [八幡神社](https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=33&search%3Areverse=&search%3Aterm=30&sys%3Apid=2734&sys%3Arandom=1794149488-2734&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=34) | ハチマンジジャ | 千葉県 船橋市 前貝塚町534番地 | 語末の表記に疑義 |
+| 千葉県 [大宮八幡神社](https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=16&search%3Areverse=&search%3Aterm=30&sys%3Apid=2311&sys%3Arandom=1794149420-2311&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=17) | オオミヤハチマンジンジヤ | 千葉県 南房総市富浦町 豊岡1-1 | 大書きカナの確認が必要 |
+| 千葉県 [日枝神社](https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=13&search%3Areverse=&search%3Aterm=30&sys%3Apid=2268&sys%3Arandom=1794149408-2268&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=14) | ヒエジンッジャ | 千葉県 鴨川市 江見西真門57番地 | 重複・挿入文字に疑義 |
+| 千葉県 [熊野神社](https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&search%3Amethod=group&view%3Asort=jinja_id&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=) | クマノジジャ | 千葉県 勝浦市 赤羽根143 | 語末の表記に疑義 |
+| 千葉県 [熊野神社](https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=25&search%3Areverse=&search%3Aterm=30&sys%3Apid=2524&sys%3Arandom=1794149456-2524&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=26) | クマノジンマンチ | 千葉県 市原市 西野238番地 | 語末の表記に疑義 |
+| 千葉県 [白山神社](https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=27&search%3Areverse=&search%3Aterm=30&sys%3Apid=2532&sys%3Arandom=1794149464-2532&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=28) | ハクサンジジャ | 千葉県 市原市 上高根989番地 | 語末の表記に疑義 |
+| 千葉県 [鳥見神社](https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=52&search%3Areverse=&search%3Aterm=30&sys%3Apid=2904&sys%3Arandom=1794149563-2904&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=53) | トミジジャ | 千葉県 印西市 大森1943番地 | 語末の表記に疑義 |
+| 埼玉県 [久伊豆神社](https://www.saitama-jinjacho.or.jp/shrine/11678/) | ひさいずじじゃ | 蓮田市藤ノ木4-223 | 語末の表記に疑義 |
+| 埼玉県 [横見神社](https://www.saitama-jinjacho.or.jp/shrine/11481/) | よこみじじゃ | 吉見町久保田117 | 語末の表記に疑義 |
+| 埼玉県 [白山太神社](https://www.saitama-jinjacho.or.jp/shrine/11520/) | はくさんだいじじゃ | 川島町出丸中郷331 | 語末の表記に疑義 |
+| 埼玉県 [白髭神社](https://www.saitama-jinjacho.or.jp/shrine/10084/) | しらひげじじゃ | 深谷市上原214 | 語末の表記に疑義 |
+| 埼玉県 [香取神社](https://www.saitama-jinjacho.or.jp/shrine/11841/) | かとりじじゃ | 吉川市会野谷2-18 | 語末の表記に疑義 |
+| 埼玉県 [香取神社](https://www.saitama-jinjacho.or.jp/shrine/11854/) | かとりじじゃ | 松伏町築比地2254 | 語末の表記に疑義 |
+| 大阪府 [稲荷神社](https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html) | いなりじんや | 高槻市奈佐原元町 | 語末の表記に疑義 |
+| 宮城県 [羽黒神社](https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=41) | はぐろじじゃ | 宮城県栗原市一迫柳の目字曽根除下50 | 語末の表記に疑義 |
+| 岡山県 [素盞嗚神社](https://www.okayama-jinjacho.or.jp/search/list/page/20/) | スサノヲンジャ | 岡山市南区灘崎町片岡1677･1678 | 語末の表記に疑義 |
+| 愛媛県 [萩岡神社](https://ehime-jinjacho.jp/jinja/?p=474) | はぎおかじんじや | 新居浜市萩生1163 | 大書きカナの確認が必要 |
+| 愛知県 [久多神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | くだ | 愛知県稲沢市東畑６丁目１０番 | 全文読み未確認（短い名称部分） |
+| 愛知県 [伊久波神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | いくは | 愛知県稲沢市平和町下三宅郷内四一九番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [八幡神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | はちまんんじゃ | 愛知県豊田市伊保町宮本２０番地 | 重複・挿入文字に疑義 |
+| 愛知県 [八柱神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | やはしらじんんじゃ | 愛知県豊田市八草町森下９９番地 | 重複・挿入文字に疑義 |
+| 愛知県 [八柱神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | やはしらじんんじゃ | 愛知県豊田市寺下町宮前２０番地 | 重複・挿入文字に疑義 |
+| 愛知県 [八柱神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | やはしらじんんじゃ | 愛知県豊田市成合町下成合１８１番地 | 重複・挿入文字に疑義 |
+| 愛知県 [内荒神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | ないこう | 愛知県稲沢市平和町法立国道東一三七番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [千代神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | ちしろ | 愛知県稲沢市千代町御堂先14番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [古天神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | こてん | 愛知県稲沢市井堀中郷町113番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [嚴島神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | いつくしま | 愛知県稲沢市祖父江町大字四貫字弁才天1287番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [尾張大國靈神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | おわりおおくにたま | 愛知県稲沢市国府宮1丁目1番1号 | 全文読み未確認（短い名称部分） |
+| 愛知県 [川曲神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | こうわ | 愛知県稲沢市子生和町北屋敷1406番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [布智神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | ふち | 愛知県稲沢市祖父江町本甲宮東4番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [正明神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | しょうみょう | 愛知県稲沢市正明寺一丁目四番一六号 | 全文読み未確認（短い名称部分） |
+| 愛知県 [清水神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | しみず | 愛知県稲沢市清水町鎮守871番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [白髭神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | しらひげ | 愛知県稲沢市祖父江町大字四貫字宮屋敷一八七番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [皇大明神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | こうたいみょう | 愛知県稲沢市祖父江町大字中牧字宮原464番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [神明神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | しんめいじんんじゃ | 愛知県豊田市小呂町森下112番地 | 重複・挿入文字に疑義 |
+| 愛知県 [稻葉神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | いなば | 愛知県稲沢市稲沢町北山2丁目53番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [裳咋神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | もくい | 愛知県稲沢市目比町字天神東1244番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [西山神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | にしやまじんんじゃ | 愛知県豊田市若草町２丁目２６番地３ | 重複・挿入文字に疑義 |
+| 愛知県 [豊藤稲荷神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | とよふじいなり | 愛知県名古屋市緑区作の山町180番地 | 全文読み未確認（短い名称部分） |
+| 愛知県 [金神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | こがね | 愛知県稲沢市西町一丁目一四番二〇二号 | 全文読み未確認（短い名称部分） |
+| 愛知県 [鹽江神社](https://aichi-jinjacho.or.jp/index.php/search/shrine) | しおえ | 愛知県稲沢市中野宮町85番地 | 全文読み未確認（短い名称部分） |
+| 石川県 [白山神社](https://www.ishikawa-jinjacho.or.jp/page/52/?s) | はくさんじじゃ | 鳳珠郡穴水町東中谷ヘ1 | 語末の表記に疑義 |
+| 福井県 [国中神社](https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01) | くになかちょう | 福井県越前市国中町５８－２７ | 地名など別項目の疑い |
+| 福井県 [坂門一言神社](https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01) | さかとひとことじじゃ | 福井県大野市牛ヶ原７５－５６ | 語末の表記に疑義 |
+| 福井県 [岡太神社](https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01) | おかもとちょう | 福井県越前市岡本町２１－１８ | 地名など別項目の疑い |
+| 福井県 [神明神社](https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01) | ひがしやま | 福井県あわら市東山３９－４ | 地名など別項目の疑い |
+| 静岡県 [和光明神社](http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=19&p=4) | わこう | 富士市久沢1262-2 | 全文読み未確認（短い名称部分） |
+| 静岡県 [熊野八坂神社](http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=4) | くまのやさか | 伊豆の国市南江間186 | 全文読み未確認（短い名称部分） |
+| 鳥取県 [大野見宿禰命神社](https://tottori-jinjacho.jp/pages/185/) | おおのみのすくねのみことじんじや | 鳥取市徳尾80 | 大書きカナの確認が必要 |
+| 鳥取県 [寳宮神社](https://tottori-jinjacho.jp/pages/539/) | ほうきゅうじんじや | 大山町倉谷1110－1 | 大書きカナの確認が必要 |
+| 鳥取県 [武郷神社](https://tottori-jinjacho.jp/pages/540/) | たけさとじんじや | 大山町小竹1048 | 大書きカナの確認が必要 |
+| 鳥取県 [葭津神社](https://tottori-jinjacho.jp/pages/339/) | よしづじんじや | 米子市葭津1736 | 大書きカナの確認が必要 |
+| 鳥取県 [逢坂八幡神社](https://tottori-jinjacho.jp/pages/541/) | おおさかはちまんじんじや | 大山町松河原233 | 大書きカナの確認が必要 |
+| 鹿児島県 [二本神社](https://www.kagojinjacho.or.jp/category/shrine-search/area-oosumi/page/14/) | ニホンジジャ | 肝属郡錦江町田代川原919 | 語末の表記に疑義 |
+
+同名・同所在地に照合する施設レコードが複数ある22件は、Wikipediaの全文読みを保存したうえで、施設の対応が一意に確認できるまで別途保留しています。名称だけで施設を統合していません。
+
 ## 全保留データ
 
 上記は全保留データの一覧ではありません。神社庁に読みがないもの、所在地不足、読み欄の別称・注記混入、複数社併記、一覧と詳細の不一致などが別に残ります。未調査のものを「Wikipediaでも見つからなかった」とは扱いません。参考資料で解決できるものを照合し、それでも不明なものを個別判断の対象とします。
