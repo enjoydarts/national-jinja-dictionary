@@ -2421,8 +2421,27 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://www.gifu-jinjacho.jp/",
       "collection": {
-        "checked_at": null,
-        "facilities_collected": 0,
+        "canonical_data": {
+          "entries": 8,
+          "entry_status_counts": {
+            "verified": 8
+          },
+          "facilities": 8,
+          "facility_status_counts": {
+            "verified": 8
+          },
+          "path": "data/sources/gifu.json",
+          "verified_entries": 8,
+          "verified_facilities": 8
+        },
+        "checked_at": "2026-11-09T07:46:16.870188+00:00",
+        "facilities_collected": 8,
+        "facility_pages_fetched": 8,
+        "fields_observed": {
+          "address": 8,
+          "name": 8,
+          "reading_raw": 8
+        },
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-08T14:24:58.139177+00:00",
@@ -2435,15 +2454,24 @@
             "url": "https://www.gifu-jinjacho.jp/jnjyalist.php"
           }
         ],
+        "inspection_evidence_reference": "data/sources/gifu.json#collection.pages",
         "listing_authority_status": "agency_site",
-        "pages_fetched": 0,
-        "reason": "公式トップに「文章および写真の無断転用はお断りします」。転載・転用条件未解決のため施設レコードの一括収集停止。トップ・名称一覧入口を実閲覧した範囲のみ記録。",
-        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
-        "source_rows_observed": 0,
-        "status": "blocked"
+        "pages_fetched": 10,
+        "reason": "公式の「縣神社」名称検索8施設を全件個別閲覧。全文読み・異なる所在地・実詳細IDを照合し8施設を保存。828表示は名称種であり施設数ではない。",
+        "remaining_scope": [
+          "other registered shrine-name kinds and their facility results unvisited",
+          "data redistribution and link-notification scope unconfirmed"
+        ],
+        "selected_name_result_complete": true,
+        "selected_name_result_total": 8,
+        "source_name_kinds_displayed": 828,
+        "source_rows_observed": 8,
+        "status": "partial"
       },
       "conditions": {
-        "data_use_conditions": "トップに文章・写真の無断転用不可、リンクする場合は神社庁への申出を求める表示。公開辞書データへの利用可否は要照会。",
+        "data_use_conditions": "トップに「文章および写真の無断転用はお断りします」「リンクされる方は岐阜県神社庁までお申し出ください」。記事・写真は収録しない。事実項目と記事を区別して確認するが、再配布許諾とリンク申出の適用範囲は未確認。第三者連絡は行っていない。",
+        "link_notification_requested": true,
+        "link_notification_sent": false,
         "redistribution_permission": "unconfirmed",
         "robots_initial_inspection": {
           "checked_at": "2026-11-08T13:14:18.758531+00:00",
