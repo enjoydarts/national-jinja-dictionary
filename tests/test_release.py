@@ -42,3 +42,16 @@ class ReleaseTest(unittest.TestCase):
     def test_version_cannot_escape_release_directory(self):
         with tempfile.TemporaryDirectory() as td:
             with self.assertRaises(ValueError):create_release(Path(td),Path(td)/'out','../bad','a'*40)
+
+    def test_tag_verification_rejects_same_named_branch_with_other_commit(self):
+        import subprocess
+        from njd.release import require_matching_tag
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            def git(*args):
+                return subprocess.run(['git','-c','user.name=Fixture','-c','user.email=fixture@example.invalid','-c','commit.gpgsign=false',*args],cwd=root,check=True,capture_output=True,text=True).stdout.strip()
+            git('init','-b','main');git('commit','--allow-empty','-m','A');git('tag','v0.2.0')
+            git('commit','--allow-empty','-m','B');git('branch','v0.2.0')
+            with self.assertRaises(ValueError):require_matching_tag(root,'v0.2.0')
+            git('checkout','--detach','refs/tags/v0.2.0')
+            self.assertEqual(require_matching_tag(root,'v0.2.0'),git('rev-parse','HEAD'))

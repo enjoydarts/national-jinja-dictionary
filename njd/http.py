@@ -22,6 +22,11 @@ class Page:
     headers: dict
     body: bytes
     fetched_at: str
+    request_method: str='GET'
+    request_body_hash: str | None=None
+    @property
+    def cache_identity(self):
+        return self.url if self.request_method=='GET' else self.request_method+'\n'+self.url+'\n'+(self.request_body_hash or '')
     @property
     def sha256(self): return hashlib.sha256(self.body).hexdigest()
     @property
@@ -37,15 +42,22 @@ class Page:
             # Use explicit HTML declarations, never a guessed Japanese codec.
             meta=re.search(br'<meta\b[^>]*\bcharset\s*=\s*[\x22\x27]?\s*([a-zA-Z0-9_.-]+)',self.body[:8192],re.I)
             encoding=meta.group(1).decode('ascii') if meta else 'utf-8'
+        # WHATWG Encoding names/labels use the Windows-compatible Shift_JIS
+        # repertoire on the web; preserve extension bytes instead of replacing.
+        # https://encoding.spec.whatwg.org/#names-and-labels
+        if encoding.strip().lower().replace('_','-') in ('shift-jis','windows-31j','ms932','x-sjis','csshiftjis','sjis','ms-kanji'):
+            encoding='cp932'
         return self.body.decode(encoding,errors='strict')
 
 class NoRedirect(HTTPRedirectHandler):
     def redirect_request(self,req,fp,code,msg,headers,newurl): return None
 
-def request(url,timeout,user_agent):
+def request(url,timeout,user_agent,*,method='GET',data=None,content_type=None):
     opener=build_opener(NoRedirect())
     try:
-        response=opener.open(Request(url,headers={'User-Agent':user_agent}),timeout=timeout)
+        headers={'User-Agent':user_agent}
+        if content_type:headers['Content-Type']=content_type
+        response=opener.open(Request(url,headers=headers,data=data,method=method),timeout=timeout)
     except HTTPError as exc: response=exc
     with response:
         body=response.read(8*1024*1024+1)
@@ -60,23 +72,23 @@ class Client:
         self.user_agent='NationalJinjaDictionary/0.1 (+https://github.com/enjoydarts/national-jinja-dictionary)'
         self.delays={}
     def _key(self,url): return hashlib.sha256(url.encode()).hexdigest()
-    def _body_path(self,url): return self.cache/(self._key(url)+'.body')
-    def _meta_path(self,url): return self.cache/(self._key(url)+'.json')
-    def _load(self,url):
-        meta=self._meta_path(url)
+    def _body_path(self,url,cache_identity=None): return self.cache/(self._key(cache_identity or url)+'.body')
+    def _meta_path(self,url,cache_identity=None): return self.cache/(self._key(cache_identity or url)+'.json')
+    def _load(self,url,cache_identity=None):
+        meta=self._meta_path(url,cache_identity)
         if not meta.exists(): return None
         try:
-            d=json.loads(meta.read_text()); body=self._body_path(url).read_bytes()
+            d=json.loads(meta.read_text()); body=self._body_path(url,cache_identity).read_bytes()
             if hashlib.sha256(body).hexdigest()!=d['sha256'] or d['url']!=url:
                 raise FetchError('cache integrity mismatch: '+url)
-            return Page(url,d['status'],d['headers'],body,d['fetched_at'])
+            return Page(url,d['status'],d['headers'],body,d['fetched_at'],d.get('request_method','GET'),d.get('request_body_hash'))
         except (OSError,ValueError,KeyError) as exc: raise FetchError('invalid cache: '+url) from exc
     def _save(self,page):
-        body=self._body_path(page.url); tmp=body.with_suffix('.body.tmp')
+        body=self._body_path(page.url,page.cache_identity); tmp=body.with_suffix('.body.tmp')
         tmp.write_bytes(page.body); tmp.replace(body)
-        write_json(self._meta_path(page.url),dict(url=page.url,status=page.status,
-            headers=page.headers,sha256=page.sha256,fetched_at=page.fetched_at))
-    def _network(self,url):
+        write_json(self._meta_path(page.url,page.cache_identity),dict(url=page.url,status=page.status,
+            headers=page.headers,sha256=page.sha256,fetched_at=page.fetched_at,request_method=page.request_method,request_body_hash=page.request_body_hash))
+    def _network(self,url,*,method='GET',data=None,content_type=None):
         # A cross-process lock plus persisted last-request time respects spacing
         # across restarts and parallel collectors, including failed responses.
         origin=self._origin(url)
@@ -93,7 +105,9 @@ class Client:
             wait=state.get(origin,0)+gap-time.time()
             if wait>60: raise FetchError('required host interval exceeds this run; resume later')
             if wait>0: time.sleep(wait)
-            try: return self.transport(url,self.timeout,self.user_agent)
+            try:
+                if method=='GET':return self.transport(url,self.timeout,self.user_agent)
+                return self.transport(url,self.timeout,self.user_agent,method=method,data=data,content_type=content_type)
             finally:
                 state[origin]=time.time(); write_json(state_path,state)
     @staticmethod
@@ -109,12 +123,16 @@ class Client:
         if parsed.scheme not in ('http','https') or not parsed.hostname or parsed.username or parsed.password:
             raise FetchError('invalid public HTTP URL')
         return parsed.scheme+'://'+parsed.netloc
-    def _raw(self,url,*,refresh=False):
-        cached=self._load(url)
+    def _raw(self,url,*,refresh=False,method='GET',request_data=None,content_type=None):
+        body_hash=hashlib.sha256(request_data or b'').hexdigest() if method!='GET' else None
+        cache_identity=url if method=='GET' else method+'\n'+url+'\n'+body_hash
+        cached=self._load(url,cache_identity)
         if cached and not refresh: return cached
         if self.offline: raise FetchError('offline cache miss: '+url)
         for attempt in range(self.retries+1):
-            try: status,headers,body=self._network(url)
+            try:
+                if method=='GET':status,headers,body=self._network(url)
+                else:status,headers,body=self._network(url,method=method,data=request_data,content_type=content_type)
             except (URLError,TimeoutError,ConnectionError) as exc:
                 if attempt==self.retries: raise FetchError(str(exc)) from exc
                 time.sleep(2**attempt); continue
@@ -129,7 +147,7 @@ class Client:
                 else: delay=2**attempt
                 if delay>60: raise FetchError('Retry-After requires later resume')
                 time.sleep(max(0,delay)); continue
-            page=Page(url,status,headers,body,datetime.now(timezone.utc).isoformat())
+            page=Page(url,status,headers,body,datetime.now(timezone.utc).isoformat(),method,body_hash)
             # Do not cache denied/error responses as successful content.
             if status in (200,301,302,303,307,308,404,410): self._save(page)
             return page
@@ -168,3 +186,16 @@ class Client:
             if page.status!=200: raise FetchError(f'HTTP {page.status}: {url}')
             return page
         raise FetchError('too many redirects')
+
+    def post_json(self,url,payload,*,refresh=False):
+        """Only for documented read-only JSON search endpoints used by the UI.
+
+        Responses are keyed by URL, method and body hash. Source URLs remain
+        real URLs; no synthetic query strings are invented for cache keys.
+        Redirects are not followed with a POST body.
+        """
+        self._origin(url);self._policy(url,refresh=refresh)
+        body=json.dumps(payload,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode('utf-8')
+        page=self._raw(url,refresh=refresh,method='POST',request_data=body,content_type='application/json')
+        if page.status!=200:raise FetchError(f'HTTP {page.status}: {url}; JSON search POST not redirected')
+        return page

@@ -25,8 +25,20 @@ def load_states(data_dir):
     return states
 
 
+def ensure_public_metadata(value):
+    """Reject work-environment paths instead of silently editing evidence."""
+    if isinstance(value,dict):
+        for child in value.values():ensure_public_metadata(child)
+    elif isinstance(value,list):
+        for child in value:ensure_public_metadata(child)
+    elif isinstance(value,str) and not value.startswith(('https://','http://')):
+        pattern=r'(?:^|\s|["\'(=:])(?:/Users/|/home/|/private/tmp/|/private/var/|/var/folders/|[A-Za-z]:[\\/]Users[\\/])'
+        if re.search(pattern,value):raise ValueError('local filesystem information cannot enter public canonical metadata')
+
+
 def save_collection(data_dir,key,data):
     """Save authoritative source facts; caches and work history live elsewhere."""
+    ensure_public_metadata(data)
     if data.get('collection',{}).get('source_key')!=key: raise ValueError('source key differs from dataset')
     issues=blocking_problems(data)
     if issues: raise ValueError('source dataset validation failed: '+str(issues[:5]))
@@ -45,7 +57,7 @@ def merge_collections(data_dir,*,states=None):
     """Merge repository canonical source files entirely offline, in memory."""
     data_dir=Path(data_dir); facilities=[]; entries=[]; sources={}
     for path in sorted((data_dir/'sources').glob('*.json')):
-        data=load_dataset(path); key=path.stem
+        data=load_dataset(path);ensure_public_metadata(data); key=path.stem
         if data.get('collection',{}).get('source_key')!=key: raise ValueError('source file/key mismatch: '+key)
         issues=blocking_problems(data)
         if issues: raise ValueError('invalid canonical source '+key+': '+str(issues[:3]))
@@ -56,6 +68,7 @@ def merge_collections(data_dir,*,states=None):
         if legacy.exists(): return load_dataset(legacy)
         raise ValueError('no canonical source files; acquire or import data first')
     states=states or load_states(data_dir)
+    ensure_public_metadata(states)
     for key,source in sources.items():
         code=source['prefecture_code']
         if states[code]['status']=='not_collected':
@@ -73,26 +86,55 @@ def merge_collections(data_dir,*,states=None):
     return result
 
 
+def public_failure(exc):
+    """Controlled public reason: never publish exception messages or paths."""
+    from njd.http import FetchError
+    if isinstance(exc,OSError):return f'local_io_error ({type(exc).__name__}, errno={exc.errno})'
+    if isinstance(exc,UnicodeError):return 'declared_encoding_decode_error'
+    if isinstance(exc,FetchError):
+        status=re.search(r'HTTP ([1-5][0-9]{2})',str(exc))
+        if status:return 'source_http_error ('+status.group(1)+')'
+        if 'robots' in str(exc).lower():return 'source_robots_policy_unavailable_or_disallowed'
+        return 'source_fetch_failed; inspect private diagnostics'
+    if isinstance(exc,ValueError):return 'source_structure_or_canonical_validation_failed'
+    return 'unexpected_collection_failure; inspect private diagnostics'
+
+
 def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=None,cache_dir=None):
     data_dir=Path(data_dir);states=load_states(data_dir)
-    if cache_dir is None: cache_dir=data_dir.parent/'acquisition-cache'
+    cache_dir=Path(cache_dir) if cache_dir is not None else Path.home()/'.cache'/'national-jinja-dictionary'/'http'
+    repository=Path(__file__).resolve().parents[1]
+    resolved=cache_dir.expanduser().resolve()
+    if resolved==repository or repository in resolved.parents:
+        raise ValueError('HTTP caches must stay outside the public repository')
     for key in keys:
         spec=registry[key];code=spec['code'];path=source_path(data_dir,key)
-        client=Client(Path(cache_dir),offline=offline)
-        if refresh:
-            # Refresh requests are explicitly propagated without changing the
-            # adapter contract or performing surprise online work at release.
-            original=client.fetch
-            client.fetch=lambda url,**kwargs: original(url,refresh=True,**{k:v for k,v in kwargs.items() if k!='refresh'})
         try:
+            client=Client(resolved,offline=offline)
+            if refresh:
+                original=client.fetch
+                client.fetch=lambda url,**kwargs: original(url,refresh=True,**{k:v for k,v in kwargs.items() if k!='refresh'})
+                original_post=client.post_json
+                client.post_json=lambda url,payload,**kwargs: original_post(url,payload,refresh=True,**{k:v for k,v in kwargs.items() if k!='refresh'})
             data=spec['collect'](client,limit=limit)
             saved=save_collection(data_dir,key,data)
-            states[code]=dict(states[code],source_key=key,status='collected',reason='saved explicit source fields',
+            states[code]=dict(states[code],source_key=key,status=collection_status(saved),reason='saved explicit source fields; see source authority and coverage',
                 facilities=len(saved['facilities']),verified_facilities=len({e['facility_id'] for e in eligible(saved)}))
         except Exception as exc:
-            # One source failure never erases its previous canonical data or
-            # prevents independently available prefectures from continuing.
-            states[code]=dict(states[code],source_key=key,status='failed_using_previous' if path.exists() else 'failed',
-                reason=f'{type(exc).__name__}: {exc}')
+            states[code]=dict(states[code],source_key=key,status='failed_using_previous' if path.exists() else 'failed',reason=public_failure(exc))
+            try:
+                write_json(resolved/'diagnostics'/(key+'.json'),dict(source_key=key,exception_type=type(exc).__name__,message=str(exc)))
+            except OSError:
+                pass  # Cache permission failures must not abort independent sources.
         write_json(data_dir/'manifest.json',dict(schema_version=1,prefectures=states))
     return states
+
+
+def collection_status(data):
+    source=data['collection']
+    if source.get('authority_status') in ('pending','unconfirmed'):return 'authority_pending'
+    if source.get('limit') or source.get('traversal_complete') is False or source.get('acquisition_complete') is False:return 'partial'
+    remaining=source.get('remaining_scope')
+    if isinstance(remaining,list) and remaining:return 'partial'
+    if isinstance(remaining,dict) and remaining.get('unvisited'):return 'partial'
+    return 'collected'

@@ -7,7 +7,8 @@ import subprocess
 import zipfile
 from njd.__main__ import build_outputs
 from njd.exporters import FORMATS
-from njd.nationwide import merge_collections
+from njd.corrections import apply_corrections
+from njd.nationwide import merge_collections, ensure_public_metadata
 from njd.storage import apply_decisions, json_bytes, load_dataset, write_json
 from njd.validation import blocking_problems
 
@@ -17,14 +18,17 @@ def create_release(data_dir,output_dir,version,source_commit):
     if not re.fullmatch(r'[0-9a-f]{40,64}|unknown',source_commit): raise ValueError('invalid source commit')
     data_dir=Path(data_dir);output_dir=Path(output_dir)
     data=merge_collections(data_dir)
+    corrections=data_dir/'corrections.json'
+    if corrections.exists():data=apply_corrections(data,load_dataset(corrections))
     decisions=data_dir/'decisions.json'
-    if decisions.exists():data=apply_decisions(data,load_dataset(decisions))
+    if decisions.exists() and load_dataset(decisions):data=apply_decisions(data,load_dataset(decisions))
+    ensure_public_metadata(data)
     problems=blocking_problems(data)
     if problems:raise ValueError('canonical data cannot be released: '+str(problems[:5]))
     destination=output_dir/'dictionaries'
     report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社'),output_dir=destination)
     input_files=sorted((data_dir/'sources').glob('*.json'))
-    input_files += [data_dir/name for name in ('manifest.json','decisions.json','identities.json') if (data_dir/name).exists()]
+    input_files += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','corrections.json') if (data_dir/name).exists()]
     source=dict(version=version,source_commit=source_commit,
         canonical_location='repository data/sources/*.json',
         effective_data_sha256=hashlib.sha256(json_bytes(data)).hexdigest(),
@@ -67,6 +71,17 @@ def create_release(data_dir,output_dir,version,source_commit):
         totals=totals,blocked_formats=source['blocked_formats'])
 
 
+def require_matching_tag(repository,tag):
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,80}',tag):raise ValueError('unsafe release tag')
+    def rev(ref):
+        result=subprocess.run(['git','rev-parse','--verify',ref],cwd=repository,capture_output=True,text=True)
+        if result.returncode:raise ValueError('release tag or checkout commit not found')
+        return result.stdout.strip()
+    head=rev('HEAD');expected=rev('refs/tags/'+tag+'^{commit}')
+    if head!=expected:raise ValueError('checkout does not match the fully qualified release tag')
+    return head
+
+
 def main(argv=None):
     root=Path(__file__).resolve().parents[1]
     p=argparse.ArgumentParser(description='Generate fresh release assets from repository canonical data, offline')
@@ -74,8 +89,13 @@ def main(argv=None):
     p.add_argument('--output-dir',type=Path,default=root/'dist')
     p.add_argument('--version',required=True)
     p.add_argument('--source-commit')
+    p.add_argument('--expected-tag',help='require checkout HEAD to equal refs/tags/TAG before publishing')
     args=p.parse_args(argv)
     commit=args.source_commit
+    if args.expected_tag:
+        actual=require_matching_tag(root,args.expected_tag)
+        if commit is not None and commit!=actual:raise ValueError('source commit differs from the release tag')
+        commit=actual
     if commit is None:
         result=subprocess.run(['git','rev-parse','HEAD'],cwd=root,capture_output=True,text=True)
         commit=result.stdout.strip() if result.returncode==0 else 'unknown'

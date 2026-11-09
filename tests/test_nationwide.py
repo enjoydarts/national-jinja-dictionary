@@ -38,3 +38,20 @@ class NationwideTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             with self.assertRaises(ValueError): save_collection(Path(td),'../unsafe',build([row()]))
             with self.assertRaises(ValueError): save_collection(Path(td),'different',build([row()]))
+
+    def test_private_exception_details_never_enter_public_manifest(self):
+        with tempfile.TemporaryDirectory() as td:
+            base=Path(td);work=base/'data';cache=base/'private-cache'
+            secret_path='/Users/private-person/private-vault/cache/request.lock'
+            def fail(client,limit=None):raise PermissionError(13,'Permission denied',secret_path)
+            registry={'example':dict(code='11',prefecture='埼玉県',agency='架空',collect=fail)}
+            state=run_collections(work,registry,['example'],cache_dir=cache)
+            self.assertNotIn(secret_path,(work/'manifest.json').read_text())
+            self.assertIn('local_io_error',state['11']['reason'])
+            self.assertIn(secret_path,(cache/'diagnostics/example.json').read_text())
+
+    def test_local_work_paths_cannot_be_saved_as_canonical_metadata(self):
+        with tempfile.TemporaryDirectory() as td:
+            d=build([row()]);d['collection']['operator_note']="Permission error: '/Users/private-person/cache/file'"
+            with self.assertRaises(ValueError):save_collection(Path(td),'example',d)
+            self.assertFalse((Path(td)/'sources/example.json').exists())

@@ -6,6 +6,7 @@ from pathlib import Path
 import shutil
 import sys
 from njd import __version__
+from njd.corrections import apply_corrections
 from njd.catalog import registry
 from njd.nationwide import merge_collections, run_collections
 from njd.adapters import gunma
@@ -43,8 +44,10 @@ def parser():
 
 def _effective(work):
     data=merge_collections(work)
+    corrections=work/'corrections.json'
+    if corrections.exists():data=apply_corrections(data,load_dataset(corrections))
     decisions=work/'decisions.json'
-    return apply_decisions(data,load_dataset(decisions)) if decisions.exists() else data
+    return apply_decisions(data,load_dataset(decisions)) if decisions.exists() and load_dataset(decisions) else data
 
 def _review_lists(data,work):
     for status in ['pending','excluded']:

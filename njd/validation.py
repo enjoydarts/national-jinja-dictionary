@@ -5,6 +5,7 @@ from datetime import datetime
 import re
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading
+from njd.corrections import correction_problems
 
 STATUSES={'verified','pending','excluded'}
 
@@ -45,9 +46,36 @@ def validate(data: dict) -> list[dict]:
             for field in ['listing_url']:
                 if not _url(r.get(field)): add(kind,rid,'missing/invalid '+field)
     fmap={f.get('id'):f for f in fs}
+    corrected_names=set()
+    for e in es:
+        f=fmap.get(e.get('facility_id'))
+        if not f:continue
+        source=data['collection'].get('sources',{}).get(f.get('source_key'),data['collection'])
+        correction=e.get('correction')
+        if isinstance(correction,dict) and correction.get('changes',{}).get('surface')==e.get('surface') and not correction_problems(correction,f,e,source):
+            corrected_names.add(f['id'])
     for f in fs:
+        source=data['collection'].get('sources',{}).get(f.get('source_key'),data['collection'])
+        if source.get('authority_status') in ('pending','unconfirmed'):
+            add('facility',f.get('id'),'official source authority not established',severity='review' if f.get('status')!='verified' else 'error')
         for field in ['listed_name','name_raw','prefecture','municipality','address','agency','source_locator']:
-            if not f.get(field): add('facility',f.get('id'),'missing '+field,severity='review' if f.get('status')!='verified' and field in ('municipality','address') else 'error')
+            if not f.get(field):
+                if field in ('listed_name','name_raw') and f['id'] in corrected_names:continue
+                add('facility',f.get('id'),'missing '+field,severity='review' if f.get('status')!='verified' and field in ('municipality','address','listed_name','name_raw') else 'error')
+        if 'address_source' in f:
+            evidence=f['address_source'];severity='review' if f.get('status')!='verified' else 'error'
+            if not isinstance(evidence,dict):
+                add('facility',f.get('id'),'invalid address source',severity=severity)
+            else:
+                try:
+                    if not _url(evidence.get('url')) or not re.fullmatch('[0-9a-f]{64}',evidence.get('page_hash','')):raise ValueError()
+                    datetime.fromisoformat(evidence.get('fetched_at',''))
+                    applied=evidence.get('applied',evidence.get('address_raw')==f.get('address'))
+                    if applied and (evidence.get('name_raw')!=f.get('name_raw') or evidence.get('address_raw')!=f.get('address')):raise ValueError()
+                    if urlsplit(evidence['url']).hostname!=urlsplit(f['listing_url']).hostname:raise ValueError()
+                    native=f.get('native_source_id')
+                    if _url(native) and (evidence.get('link_url') or evidence['url'])!=native:raise ValueError()
+                except (ValueError,TypeError):add('facility',f.get('id'),'address detail does not match the listed facility/source',severity=severity)
         code=f.get('prefecture_code','')
         if code not in {f'{i:02}' for i in range(1,48)}: add('facility',f.get('id'),'invalid prefecture code')
         if f.get('listed_name')!=f.get('name_raw'): add('facility',f.get('id'),'name differs from source')
@@ -55,8 +83,14 @@ def validate(data: dict) -> list[dict]:
     for e in es:
         eid=e.get('id'); f=fmap.get(e.get('facility_id'))
         if not f: add('entry',eid,'orphan facility reference'); continue
-        for field in ['surface','name_raw']:
-            if e.get(field)!=f.get('listed_name'): add('entry',eid,'surface must equal agency listed name')
+        source=data['collection'].get('sources',{}).get(f.get('source_key'),data['collection'])
+        correction=e.get('correction')
+        correction_valid=isinstance(correction,dict) and not correction_problems(correction,f,e,source)
+        if e.get('name_raw')!=f.get('listed_name'):add('entry',eid,'name raw must equal acquired agency name')
+        if e.get('surface')!=f.get('listed_name') and not (correction_valid and correction.get('changes',{}).get('surface')==e.get('surface')):
+            add('entry',eid,'surface differs without verified correction evidence')
+        if f.get('name_rendering_status') in ('external_glyph','unrenderable') and e.get('status')=='verified' and not correction_valid:
+            add('entry',eid,'external glyph has no verified Unicode correction')
         if e.get('listing_url')!=f.get('listing_url'): add('entry',eid,'listing URL differs from facility')
         if e.get('source_hash')!=f.get('source_hash') or e.get('page_hash')!=f.get('page_hash'):
             add('entry',eid,'source fingerprint differs from facility')
@@ -67,13 +101,22 @@ def validate(data: dict) -> list[dict]:
         if e.get('status')=='verified':
             if not _url(e.get('reading_url')): add('entry',eid,'missing/invalid reading URL')
             if not e.get('evidence'): add('entry',eid,'missing evidence')
-            if not e.get('reading_source_kind') in ('agency','shrine_official'): add('entry',eid,'invalid reading source kind')
+            if not e.get('reading_source_kind') in ('agency','shrine_official','reference'): add('entry',eid,'invalid reading source kind')
             if e.get('reading_source_kind')=='agency' and e.get('reading_url')!=f.get('listing_url'):
                 add('entry',eid,'agency reading URL differs from listing')
             try:
                 if normalize_reading(e.get('reading',''))!=e.get('reading'): raise ValueError()
                 if e.get('reading_source_kind')=='agency':
                     raw=e.get('reading_raw','')
+                elif e.get('reading_source_kind')=='reference':
+                    if not correction_valid or correction.get('changes',{}).get('reading')!=e.get('reading'):raise ValueError('reference correction not verified')
+                    matches=[]
+                    for ref in correction['references']:
+                        try:
+                            if ref['url']==e['reading_url'] and normalize_reading(ref.get('reading_raw',''))==e['reading'] and ref.get('reading_raw','') in ref.get('excerpt',''):matches.append(ref['reading_raw'])
+                        except (TypeError,ValueError):pass
+                    if not matches:raise ValueError('reference reading source mismatch')
+                    raw=matches[0]
                 else:
                     raw=e.get('supplemental_reading_raw','')
                     if e.get('reading_raw'): raise ValueError('agency reading already present')

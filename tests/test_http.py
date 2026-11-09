@@ -85,3 +85,31 @@ class FetchTest(unittest.TestCase):
                 finally: release_a.set()
                 first.result();second.result()
             self.assertTrue(independent,'one host must not hold the lock of another host')
+
+    def test_readonly_json_post_has_body_specific_cache_and_obeys_robots(self):
+        calls=[]
+        def transport(url,timeout,user_agent,**kwargs):
+            calls.append((url,kwargs))
+            if url.endswith('/robots.txt'):return 404,{},b''
+            return 200,{'content-type':'application/json'},kwargs['data']
+        with tempfile.TemporaryDirectory() as td:
+            c=Client(Path(td),interval=0,transport=transport)
+            a=c.post_json('https://example.invalid/search',{'limit':-1})
+            again=c.post_json('https://example.invalid/search',{'limit':-1})
+            b=c.post_json('https://example.invalid/search',{'limit':10})
+            self.assertEqual(a,again);self.assertNotEqual(a.body,b.body)
+            self.assertEqual(a.url,'https://example.invalid/search')
+            self.assertEqual(len(calls),3)
+            c.offline=True
+            self.assertEqual(c.post_json('https://example.invalid/search',{'limit':-1}),a)
+            with self.assertRaises(FetchError):c.post_json('https://example.invalid/search',{'limit':1})
+        with tempfile.TemporaryDirectory() as td:
+            c,n=self.client(td,{'https://example.invalid/robots.txt':(200,{},b'User-agent: *\nDisallow: /search')})
+            with self.assertRaises(FetchError):c.post_json('https://example.invalid/search',{})
+            self.assertEqual(len(n.calls),1)
+
+    def test_declared_web_shift_jis_preserves_cp932_extension_bytes(self):
+        body='<meta charset="Shift_JIS"><p>神社まで1㎞</p>'.encode('cp932')
+        page=Page('https://example.invalid/',200,{'content-type':'text/html'},body,'2026-11-09T00:00:00+09:00')
+        self.assertIn('1㎞',page.text)
+        self.assertEqual(page.body,body)

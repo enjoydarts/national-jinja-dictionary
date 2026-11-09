@@ -53,3 +53,23 @@ class RecordTest(unittest.TestCase):
         self.assertEqual(d['entries'][0]['status'],'pending')
         self.assertEqual(eligible(d),[])
         self.assertTrue(all(p.get('severity')=='review' for p in validate(d)))
+
+    def test_unconfirmed_source_authority_never_becomes_eligible(self):
+        d=build_dataset('example','11','埼玉県','架空県神社庁',[row()],metadata={'authority_status':'pending','authority_reason':'current official linkage not established'})
+        self.assertEqual(d['facilities'][0]['status'],'pending')
+        self.assertEqual(d['entries'][0]['status'],'pending')
+        self.assertEqual(eligible(d),[])
+
+    def test_explicit_secondary_address_source_and_review_reason_preserved(self):
+        d=build([row(address='架空市乙町1',address_source={'url':'https://agency.example.invalid/detail/1','page_hash':'b'*64,'fetched_at':'2026-11-08T00:00:00+00:00','name_raw':'架空神社','address_raw':'架空市乙町1'},review_reason='source name conflict requires review')])
+        self.assertIn('address_source',d['facilities'][0])
+        self.assertEqual(d['entries'][0]['status'],'pending')
+    def test_external_glyph_name_cannot_be_exported_as_html(self):
+        d=build([row(name='架空<svg></svg>神社',name_rendering_status='external_glyph')])
+        self.assertEqual(d['entries'][0]['status'],'pending')
+        self.assertEqual(eligible(d),[])
+
+    def test_native_facility_with_unpublished_name_is_retained_for_review(self):
+        d=build([row(name='')])
+        self.assertEqual(eligible(d),[])
+        self.assertTrue(all(p.get('severity')=='review' for p in validate(d)))

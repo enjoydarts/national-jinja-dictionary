@@ -28,7 +28,8 @@ def report(data,outputs=None):
     totals=_counts(data)
     totals['output_rows']={k:v.rows for k,v in (outputs or {}).items() if v.content is not None}
     return dict(totals=totals,prefectures=[dict(prefecture_code=f'{i:02}',prefecture=pref,
-        collection_status='partial' if any(f['prefecture_code']==f'{i:02}' for f in data['facilities']) else 'not_collected',
+        collection_status=data['collection'].get('prefecture_states',{}).get(f'{i:02}',{}).get('status', 'partial' if any(f['prefecture_code']==f'{i:02}' for f in data['facilities']) else 'not_collected'),
+        reason=data['collection'].get('prefecture_states',{}).get(f'{i:02}',{}).get('reason',''),
         **_counts(subset(data,f'{i:02}'))) for i,pref in enumerate(PREFECTURES,1)],
         collection=collection_summary(data['collection']),validation_problems=validate(data),
         format_outputs={k:v.summary() for k,v in (outputs or {}).items()},

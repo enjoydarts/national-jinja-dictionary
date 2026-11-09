@@ -51,6 +51,12 @@ def build_dataset(source_key, code, prefecture, agency, records, pages=None, met
             reading=normalize_reading(raw); status='verified'; reason=''
         except ValueError as exc:
             reading=''; status='pending'; reason='missing agency reading' if not raw else str(exc)
+        if row.get('name_rendering_status') in ('external_glyph','unrenderable'):
+            fstatus='pending';freason='source name uses an external glyph; Unicode correction requires references'
+        if row.get('review_reason'):
+            fstatus='pending';freason=row['review_reason']
+        if (metadata or {}).get('authority_status') in ('pending','unconfirmed'):
+            fstatus='pending';freason=(metadata or {}).get('authority_reason','official source authority not established')
         if fstatus!='verified': status='pending';reason=freason
         f=dict(id=fid,agency=agency,prefecture_code=code,prefecture=prefecture,
             listed_name=name,name_raw=name,municipality=municipality,address=address,
@@ -58,8 +64,11 @@ def build_dataset(source_key, code, prefecture, agency, records, pages=None, met
             page_hash=row['page_hash'],fetched_at=row['fetched_at'],checked_at=row['fetched_at'],
             status=fstatus,reason=freason,official_site_url=row.get('official_url'),
             source_key=source_key,native_source_id=source_id,listing_occurrences=[occurrence])
-        for field in ('address_raw','address_context'):
+        for field in ('address_raw','address_context','address_source','name_rendering_status','review_reason'):
             if field in row: f[field]=row[field]
+        if 'address_source' in f:
+            f['address_source']=dict(f['address_source'])
+            f['address_source'].setdefault('applied',f['address_source'].get('name_raw')==name and f['address_source'].get('address_raw')==address and bool(address))
         e=dict(id=eid,facility_id=fid,surface=name,reading=reading,semantic_type='proper_noun',
             name_raw=name,reading_raw=raw,listing_url=row['url'],reading_url=row['url'],
             evidence=row['evidence'],normalization=['NFKC reading only','katakana to hiragana'],
