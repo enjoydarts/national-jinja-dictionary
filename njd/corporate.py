@@ -16,6 +16,7 @@ import zipfile
 from njd.corrections import correction_problems, _reference_matches
 from njd.http import Client, FetchError, NoRedirect
 from njd.normalize import normalize_reading
+from njd.locations import raw_address
 from njd.report import PREFECTURES
 from njd.storage import load_dataset, write_json
 from njd.wikipedia import Document, external_directory, pending_targets
@@ -166,9 +167,9 @@ def _proposal(target,row,member,index,meta):
         processed_notice='国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。',
         verification_method='exact registered name and bound full numeric address; literal registered kana; no inferred small kana')
     proposal=dict(status='verified',facility_id=f['id'],expected_source_hash=e.get('source_hash'),
-        original=dict(name_raw=f.get('name_raw'),reading_raw=e.get('reading_raw'),address=f.get('address'),listing_url=f.get('listing_url')),
+        original=dict(name_raw=f.get('name_raw'),reading_raw=e.get('reading_raw'),address=raw_address(f),listing_url=f.get('listing_url')),
         changes=dict(reading=reading),references=[ref],reason='Registered full-name furigana from inspected NTA prefecture archive; exact legal name and full address bound.',
-        identity_match=dict(agency_name=f['listed_name'],reference_name=row['name'],agency_address=f['address'],reference_address=address))
+        identity_match=dict(agency_name=f['listed_name'],reference_name=row['name'],agency_address=raw_address(f),effective_address=f['address'],reference_address=address))
     problems=correction_problems(proposal,f,e,target['source'])
     if problems:raise ValueError('; '.join(problems))
     return proposal

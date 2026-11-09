@@ -7,6 +7,7 @@ import shutil
 import sys
 from njd import __version__
 from njd.corrections import apply_corrections
+from njd.locations import apply_locations
 from njd.reviews import apply_reviews
 from njd.catalog import registry
 from njd.nationwide import merge_collections, run_collections
@@ -47,6 +48,8 @@ def parser():
 
 def _effective(work):
     data=merge_collections(work)
+    locations=work/'locations.json'
+    if locations.exists():data=apply_locations(data,load_dataset(locations))
     corrections=work/'corrections.json'
     if corrections.exists():data=apply_corrections(data,load_dataset(corrections))
     reviews=work/'reviews.json'

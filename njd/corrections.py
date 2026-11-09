@@ -5,6 +5,7 @@ import unicodedata
 from datetime import datetime
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading
+from njd.locations import raw_address
 
 
 def _url(value):
@@ -67,7 +68,7 @@ def correction_problems(correction,facility,entry,source=None):
     if correction.get('facility_id')!=facility['id']:problems.append('facility identity differs from correction target')
     if correction.get('expected_source_hash')!=entry.get('source_hash'):problems.append('correction is stale; acquired source changed')
     original=correction.get('original',{})
-    expected=dict(name_raw=facility.get('name_raw'),reading_raw=entry.get('reading_raw'),address=facility.get('address'),listing_url=facility.get('listing_url'))
+    expected=dict(name_raw=facility.get('name_raw'),reading_raw=entry.get('reading_raw'),address=raw_address(facility),listing_url=facility.get('listing_url'))
     snapshot_matches=original==expected
     if isinstance(original,dict) and set(original)==set(expected) and facility.get('native_source_id') and _url(original.get('listing_url')) and _url(expected['listing_url']):
         # Native facility identity and raw tuple/hash stay fixed even when a

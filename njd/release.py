@@ -8,6 +8,7 @@ import zipfile
 from njd.__main__ import build_outputs, _review_lists
 from njd.exporters import FORMATS
 from njd.corrections import apply_corrections
+from njd.locations import apply_locations
 from njd.reviews import apply_reviews
 from njd.nationwide import merge_collections, ensure_public_metadata
 from njd.storage import apply_decisions, json_bytes, load_dataset, write_json
@@ -16,7 +17,7 @@ from njd.validation import blocking_problems
 
 def _input_hashes(data_dir):
     paths=sorted((data_dir/'sources').glob('*.json'))
-    paths += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','corrections.json','reviews.json','source_catalog.json') if (data_dir/name).exists()]
+    paths += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','locations.json','corrections.json','reviews.json','source_catalog.json') if (data_dir/name).exists()]
     return {str(p.relative_to(data_dir)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
@@ -26,6 +27,8 @@ def create_release(data_dir,output_dir,version,source_commit):
     data_dir=Path(data_dir);output_dir=Path(output_dir)
     initial_inputs=_input_hashes(data_dir)
     data=merge_collections(data_dir)
+    locations=data_dir/'locations.json'
+    if locations.exists():data=apply_locations(data,load_dataset(locations))
     corrections=data_dir/'corrections.json'
     if corrections.exists():data=apply_corrections(data,load_dataset(corrections))
     reviews=data_dir/'reviews.json'
@@ -38,7 +41,7 @@ def create_release(data_dir,output_dir,version,source_commit):
     destination=output_dir/'dictionaries'
     report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社'),output_dir=destination)
     _review_lists(data,destination)
-    for name in ('manifest.json','corrections.json','reviews.json','source_catalog.json'):
+    for name in ('manifest.json','locations.json','corrections.json','reviews.json','source_catalog.json'):
         path=data_dir/name
         if path.exists():
             value=load_dataset(path);ensure_public_metadata(value)

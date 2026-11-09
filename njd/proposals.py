@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 from njd.corrections import apply_corrections, correction_problems, _reference_matches
+from njd.locations import apply_locations
 from njd.nationwide import ensure_public_metadata, merge_collections
 from njd.reviews import apply_reviews
 from njd.normalize import normalize_reading
@@ -16,7 +17,7 @@ from njd.validation import blocking_problems, eligible
 
 def _inputs(root):
     paths=list((root/'sources').glob('*.json'))
-    paths += [root/name for name in ('corrections.json','reviews.json','decisions.json','manifest.json','identities.json') if (root/name).exists()]
+    paths += [root/name for name in ('locations.json','corrections.json','reviews.json','decisions.json','manifest.json','identities.json') if (root/name).exists()]
     return {str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
@@ -42,6 +43,7 @@ def import_proposals(data_dir,document,*,apply=False,prefer_agency=False):
         raise ValueError('unsupported reading proposal document')
     ensure_public_metadata(document)
     root=Path(data_dir);initial=_inputs(root);raw=merge_collections(root)
+    if (root/'locations.json').exists():raw=apply_locations(raw,load_dataset(root/'locations.json'))
     facilities={f['id']:f for f in raw['facilities']};entries={e['id']:e for e in raw['entries']}
     destination=root/'corrections.json'
     corrections=load_dataset(destination) if destination.exists() else dict(schema_version=1,entries={})

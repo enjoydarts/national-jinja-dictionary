@@ -7,6 +7,7 @@ from urllib.parse import urlsplit
 from njd.normalize import normalize_reading
 from njd.corrections import correction_problems, discovery_only
 from njd.reviews import reviewed_output
+from njd.locations import location_problems, raw_address
 
 STATUSES={'verified','pending','excluded'}
 
@@ -59,6 +60,17 @@ def validate(data: dict) -> list[dict]:
         if reviewed_output(e.get('human_review'),f,e,source):corrected_names.add(f['id'])
     for f in fs:
         source=data['collection'].get('sources',{}).get(f.get('source_key'),data['collection'])
+        location=f.get('location_supplement')
+        if location is not None:
+            if not isinstance(location,dict):
+                add('facility',f.get('id'),'invalid location supplement')
+            elif location.get('applied'):
+                issues=location_problems(location,f,source)
+                if (issues or f.get('address')!=location.get('changes',{}).get('address')
+                    or f.get('municipality')!=location.get('changes',{}).get('municipality')):
+                    add('facility',f.get('id'),'invalid applied location supplement',severity='error' if f.get('status')=='verified' else 'review')
+            elif f.get('status')=='verified':
+                add('facility',f.get('id'),'unapplied location supplement cannot verify a facility')
         if source.get('authority_status') in ('pending','unconfirmed'):
             add('facility',f.get('id'),'official source authority not established',severity='review' if f.get('status')!='verified' else 'error')
         for field in ['listed_name','name_raw','prefecture','municipality','address','agency','source_locator']:
@@ -100,7 +112,7 @@ def validate(data: dict) -> list[dict]:
         if e.get('source_hash')!=f.get('source_hash') or e.get('page_hash')!=f.get('page_hash'):
             add('entry',eid,'source fingerprint differs from facility')
         if e.get('semantic_type')!='proper_noun': add('entry',eid,'unsupported semantic type')
-        row_material='\0'.join((f.get('name_raw',''),e.get('reading_raw',''),f.get('address','')))
+        row_material='\0'.join((f.get('name_raw',''),e.get('reading_raw',''),raw_address(f)))
         if hashlib.sha256(row_material.encode()).hexdigest()!=e.get('source_hash'):
             add('entry',eid,'acquired original differs from source-row fingerprint')
         if e.get('status')=='verified':

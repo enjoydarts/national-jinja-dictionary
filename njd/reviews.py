@@ -9,6 +9,7 @@ import re
 from uuid import NAMESPACE_URL, uuid5
 from njd.corrections import _url, _reference_matches, discovery_only
 from njd.normalize import normalize_reading
+from njd.locations import raw_address
 
 
 def _plain(value):
@@ -22,7 +23,7 @@ def review_problems(review, facility, entry, source=None):
         problems.append('missing explicit human confirmation')
     try:datetime.fromisoformat(review.get('recorded_at',''))
     except (ValueError,TypeError):problems.append('missing human confirmation date')
-    expected=dict(name_raw=facility.get('name_raw'),reading_raw=entry.get('reading_raw'),address=facility.get('address'),listing_url=facility.get('listing_url'))
+    expected=dict(name_raw=facility.get('name_raw'),reading_raw=entry.get('reading_raw'),address=raw_address(facility),listing_url=facility.get('listing_url'))
     if review.get('facility_id')!=facility['id'] or review.get('expected_source_hash')!=entry.get('source_hash') or review.get('original')!=expected:
         problems.append('human review is stale or targets another source snapshot')
     if (source or {}).get('authority_status') in ('pending','unconfirmed'):

@@ -1,5 +1,6 @@
 """Conservative secondary reading research; proposals never alter canonical data."""
 import argparse
+import hashlib
 from dataclasses import dataclass, field
 from html.parser import HTMLParser
 from pathlib import Path
@@ -7,10 +8,11 @@ import re
 from urllib.parse import parse_qs, quote, unquote, urljoin, urlsplit, urlencode
 
 from njd.corrections import correction_problems
+from njd.locations import apply_locations, raw_address
 from njd.http import Client, FetchError
 from njd.normalize import normalize_reading
 from njd.report import PREFECTURES
-from njd.storage import load_dataset, write_json
+from njd.storage import load_dataset, write_json, json_bytes
 
 BASE='https://ja.wikipedia.org'
 LICENSE='https://creativecommons.org/licenses/by-sa/4.0/deed.ja'
@@ -136,13 +138,17 @@ def external_directory(path):
 
 def pending_targets(data_dir,codes):
     data_dir=Path(data_dir);excluded=set()
+    path=data_dir/'locations.json'
+    locations=load_dataset(path) if path.exists() else None
     for filename in ('corrections.json','reviews.json','decisions.json'):
         path=data_dir/filename
         if path.exists():
             d=load_dataset(path);excluded.update(d.get('entries',d))
     targets=[]
     for path in sorted((data_dir/'sources').glob('*.json')):
-        data=load_dataset(path);source=data['collection']
+        data=load_dataset(path)
+        if locations is not None:data=apply_locations(data,locations)
+        source=data['collection']
         if source.get('prefecture_code') not in codes:continue
         fs={f['id']:f for f in data['facilities']}
         for entry in data['entries']:
@@ -157,13 +163,19 @@ def pending_targets(data_dir,codes):
 def _proposal(target,ref):
     f=target['facility'];e=target['entry']
     correction=dict(status='verified',facility_id=f['id'],expected_source_hash=e.get('source_hash'),
-        original=dict(name_raw=f.get('name_raw'),reading_raw=e.get('reading_raw'),address=f.get('address'),listing_url=f.get('listing_url')),
+        original=dict(name_raw=f.get('name_raw'),reading_raw=e.get('reading_raw'),address=raw_address(f),listing_url=f.get('listing_url')),
         changes=dict(reading=normalize_reading(ref['reading_raw'])),references=[ref],
         reason='Explicit full reading in independently inspected Wikipedia lead; exact name and rendered address checked mechanically.',
-        identity_match=dict(agency_name=f.get('listed_name'),reference_name=ref['name_raw'],agency_address=f.get('address'),reference_address=ref['address_raw']))
+        identity_match=dict(agency_name=f.get('listed_name'),reference_name=ref['name_raw'],agency_address=raw_address(f),effective_address=f.get('address'),reference_address=ref['address_raw']))
     problems=correction_problems(correction,f,e,target['source'])
     if problems:raise ValueError('; '.join(problems))
     return correction
+
+
+def _target_fingerprint(target):
+    f=target['facility'];raw=target['entry'].get('source_hash')
+    if not f.get('location_supplement',{}).get('applied'):return raw
+    return hashlib.sha256(json_bytes([raw,f.get('address'),f.get('municipality')])).hexdigest()
 
 
 def research(data_dir,state_dir,codes,client,*,limit=0,inventory_only=False,refresh=False,recheck=False):
@@ -203,7 +215,7 @@ def research(data_dir,state_dir,codes,client,*,limit=0,inventory_only=False,refr
                 for url in by_name.get(f.get('listed_name'),[]):matching.setdefault(url,[]).append(target)
         observations={};reinspected=set()
         for url,items in sorted(matching.items()):
-            fingerprints={t['entry']['id']:t['entry'].get('source_hash') for t in items}
+            fingerprints={t['entry']['id']:_target_fingerprint(t) for t in items}
             saved=scope['articles'].get(url,{})
             reusable=saved.get('fingerprints')==fingerprints and saved.get('status')=='inspected' and not refresh and not recheck
             if not reusable and not inventory_only and (not limit or attempted<limit):
@@ -221,7 +233,7 @@ def research(data_dir,state_dir,codes,client,*,limit=0,inventory_only=False,refr
                 for target in items:
                     eid=target['entry']['id'];proposal=saved.get('proposals',{}).get(eid)
                     if proposal and not correction_problems(proposal,target['facility'],target['entry'],target['source']):observations.setdefault(eid,[]).append(proposal)
-        scope['remaining_articles']=sorted(url for url,items in matching.items() if scope['articles'].get(url,{}).get('status')!='inspected' or scope['articles'][url].get('fingerprints')!={t['entry']['id']:t['entry'].get('source_hash') for t in items} or (recheck and url not in reinspected))
+        scope['remaining_articles']=sorted(url for url,items in matching.items() if scope['articles'].get(url,{}).get('status')!='inspected' or scope['articles'][url].get('fingerprints')!={t['entry']['id']:_target_fingerprint(t) for t in items} or (recheck and url not in reinspected))
         scope['conflicting_reading_entry_ids']=sorted(eid for eid,values in observations.items() if len({v['changes']['reading'] for v in values})>1)
         waiting_ids={t['entry']['id'] for url in scope['remaining_articles'] for t in matching[url]}
         for eid,values in sorted(observations.items()):
