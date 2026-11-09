@@ -1,0 +1,4903 @@
+{
+  "count_definitions": {
+    "checked_at": "nullは当該収集結果で個別の確認日時が記録されていないことを表す。snapshot_dateは一覧の版の日付。",
+    "fields_observed": "正本の非空欄数。読みは登録単位、他は施設単位。項目の存在と正確性の検証を区別する。",
+    "pages_fetched": "直近収集結果が記録した値。公式性確認ページ数とは異なり、地域間で取得単位も異なる。",
+    "verified_entries": "正本のentry.statusがverifiedの登録数。別保存の人手判断適用前の数。",
+    "verified_facilities": "正本のfacility.statusがverifiedの施設数。読み確認済み・辞書出力可能とは限らない。"
+  },
+  "prefectures": [
+    {
+      "agency_name": "北海道神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://hokkaidojinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 599,
+          "entry_status_counts": {
+            "pending": 599
+          },
+          "facilities": 599,
+          "facility_status_counts": {
+            "verified": 599
+          },
+          "path": "data/sources/hokkaido.json",
+          "verified_entries": 0,
+          "verified_facilities": 599
+        },
+        "checked_at": "2026-11-08T15:49:59.041116+00:00",
+        "facilities_collected": 599,
+        "fields_observed": {
+          "address": 599,
+          "facility_official_url": 0,
+          "name": 599,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 43,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:26:09.501580+00:00",
+          "2026-11-08T14:34:45.164364+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 42,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:26:09.501580+00:00",
+            "page_hash": "5bb133e22bcae502f43088b2cafaa6f5934adee4443cdfe84774d8ced71ea506",
+            "url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:52.254666+00:00",
+            "page_hash": "96a32c1d1ac59d07ff956c6a55b83bce325281e86a21dc2f6ba038250cac00d5",
+            "url": "https://hokkaidojinjacho.jp/jinja-area/dounan/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:54.535339+00:00",
+            "page_hash": "ced43f4b80a01db5fc2aa8e16865db2ebcd8d48c2549856694e56c21ce146422",
+            "url": "https://hokkaidojinjacho.jp/jinja-area/hiyama/"
+          }
+        ],
+        "source_rows_observed": 599,
+        "status": "collected",
+        "stored_coverage": "all linked branch list pages; readings absent from lists",
+        "stored_pages_fetched": 43
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:15.781899+00:00",
+          "effective_url": "https://hokkaidojinjacho.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://hokkaidojinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "札幌支部一覧は5ページ。支部別HTML→ページ送り→個別施設。",
+        "checked_at": "2026-11-08T13:14:15.781899+00:00",
+        "coverage_explanation": "所属神社のデータベースと説明。15支部へのリンク。",
+        "published_fields": "札幌支部1ページ目で名称・住所・電話を確認。施設ふりがな・施設公式URLは未確認。"
+      },
+      "listing_urls": [
+        "https://hokkaidojinjacho.jp/jinja/"
+      ],
+      "official_url": "https://hokkaidojinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:15.781899+00:00",
+        "evidence": "公式ホームページの明記、札幌市中央区宮ヶ丘474-35の庁所在地と電話を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:15.781899+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://hokkaidojinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:58.983846+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://hokkaidojinjacho.jp/jinja/"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:05.154481+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "北海道",
+      "prefecture_code": "01"
+    },
+    {
+      "agency_name": "青森県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://www.aomori-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 730,
+          "entry_status_counts": {
+            "pending": 730
+          },
+          "facilities": 730,
+          "facility_status_counts": {
+            "pending": 1,
+            "verified": 729
+          },
+          "path": "data/sources/aomori.json",
+          "verified_entries": 0,
+          "verified_facilities": 729
+        },
+        "checked_at": "2026-11-08T15:49:59.048788+00:00",
+        "facilities_collected": 730,
+        "fields_observed": {
+          "address": 730,
+          "facility_official_url": 0,
+          "name": 730,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 9,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:42.467459+00:00",
+          "2026-11-08T14:33:07.453063+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 8,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:28:42.467459+00:00",
+            "page_hash": "75ef5958a64a80dfe8b863c1a28d8d4d58099cad997880ee95691422831c707c",
+            "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1a.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:52.329095+00:00",
+            "page_hash": "e9e96245ebde44382fe6082b3e78743eb40f3811d21f4701bcaf789aeee49e1e",
+            "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1b.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:54.585140+00:00",
+            "page_hash": "14295eab7ce11888784a0e3051d22fc31d8134dbeaffb508def206f241db2812",
+            "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1c.html"
+          }
+        ],
+        "source_rows_observed": 732,
+        "status": "collected",
+        "stored_coverage": "all eight linked region lists; readings absent from lists",
+        "stored_pages_fetched": 9
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:15.649507+00:00",
+          "effective_url": "http://www.aomori-jinjacho.or.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP Error 404: Not Found",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://www.aomori-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地域別の静的HTMLリンク。",
+        "checked_at": "2026-11-08T13:14:15.649507+00:00",
+        "coverage_explanation": "県内全域を8地域に分けた入口。網羅性は未確認。",
+        "published_fields": "青森市・東津軽郡一覧に施設名称・町字程度の所在地。ふりがなは当該一覧では未確認。"
+      },
+      "listing_urls": [
+        "http://www.aomori-jinjacho.or.jp/sub_1.html"
+      ],
+      "official_url": "http://www.aomori-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:15.649507+00:00",
+        "evidence": "庁名、青森市浪館前田1丁目2-1の所在地と連絡先を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:15.649507+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "http://www.aomori-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:58.622145+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "http://www.aomori-jinjacho.or.jp/sub_1.html"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:04.528700+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1a.html"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "青森県",
+      "prefecture_code": "02"
+    },
+    {
+      "agency_name": "岩手県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.jinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 3,
+          "entry_status_counts": {
+            "pending": 3
+          },
+          "facilities": 3,
+          "facility_status_counts": {
+            "verified": 3
+          },
+          "path": "data/sources/iwate.json",
+          "verified_entries": 0,
+          "verified_facilities": 3
+        },
+        "checked_at": "2026-11-08T15:49:59.049533+00:00",
+        "facilities_collected": 3,
+        "fields_observed": {
+          "address": 3,
+          "facility_official_url": 3,
+          "name": 3,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 1,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:24:45.350703+00:00",
+          "2026-11-08T14:24:45.350703+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 1,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:24:45.350703+00:00",
+            "page_hash": "7925ad880424956f2365fc1fe1e2b46d0317ccf4649c298c6c3ce3a520495da0",
+            "url": "https://www.jinjacho.jp/pages/62/"
+          }
+        ],
+        "source_rows_observed": 3,
+        "status": "collected",
+        "stored_coverage": "all three prefectural shrine links on agency link page; readings not present; not prefectural completeness",
+        "stored_pages_fetched": 1
+      },
+      "conditions": {
+        "data_use_conditions": "サイトポリシー本文確認。法定の私的使用・引用等は出所明示が必要、個別禁止注記が優先。無断改変禁止。辞書データの公開許諾は未確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:16.118421+00:00",
+          "effective_url": "https://www.jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP Error 404: Not Found",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.jinjacho.jp/robots.txt"
+        },
+        "terms_pages": [
+          {
+            "inspection_status": "opened",
+            "url": "https://www.jinjacho.jp/pages/7/"
+          }
+        ]
+      },
+      "initial_survey": {
+        "acquisition_method": "静的リンク集。",
+        "checked_at": "2026-11-08T13:14:16.118421+00:00",
+        "coverage_explanation": "県内神社等のHPリンク集に3施設。県全体の網羅一覧ではない。",
+        "published_fields": "掲載名・概略鎮座地・施設サイトリンクあり。ふりがな未確認。"
+      },
+      "listing_urls": [
+        "https://www.jinjacho.jp/pages/62/"
+      ],
+      "official_url": "https://www.jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:16.118421+00:00",
+        "evidence": "公式ホームページの表題、庁の沿革説明、盛岡市八幡町13番2号の所在地を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:16.118421+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:59.708719+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.jinjacho.jp/pages/62/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:00.976348+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.jinjacho.jp/pages/7/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "岩手県",
+      "prefecture_code": "03"
+    },
+    {
+      "agency_name": "宮城県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://miyagi-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 928,
+          "entry_status_counts": {
+            "pending": 13,
+            "verified": 915
+          },
+          "facilities": 928,
+          "facility_status_counts": {
+            "pending": 1,
+            "verified": 927
+          },
+          "path": "data/sources/miyagi.json",
+          "verified_entries": 915,
+          "verified_facilities": 927
+        },
+        "checked_at": "2026-11-08T15:49:59.059267+00:00",
+        "facilities_collected": 928,
+        "fields_observed": {
+          "address": 928,
+          "facility_official_url": 0,
+          "name": 928,
+          "reading_raw": 928
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 62,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:26:09.641788+00:00",
+          "2026-11-08T14:30:48.053395+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 62,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:26:09.641788+00:00",
+            "page_hash": "af6f68c974ca0e71e23575ac82827670df192a988900f22e088da4bfb68a28f7",
+            "url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?chinzachi=&jinja_name=&jinja_kana="
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:13.474963+00:00",
+            "page_hash": "c14ff0840ce8c1dc1e66ab9c828111a76d7a122f48823d5222bd415180c8ce0f",
+            "url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=1"
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:15.609874+00:00",
+            "page_hash": "7708ee72335fe58658c7a7896864348f95e4b6f4e07c2c5eb702ef3f82e0727e",
+            "url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=2"
+          }
+        ],
+        "source_rows_observed": 928,
+        "status": "collected",
+        "stored_coverage": "all result pages by next link",
+        "stored_pages_fetched": 62
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:15.690364+00:00",
+          "effective_url": "https://miyagi-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://miyagi-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "神社名漢字・よみ・市町村の検索フォームと地図。送信先仕様未確認。",
+        "checked_at": "2026-11-08T13:14:15.690364+00:00",
+        "coverage_explanation": "検索ページ表題931社と、あゆみ本文928社に差がある。いずれも今回の取得件数ではない。",
+        "published_fields": "よみ検索欄あり。個別施設のふりがな・所在地・URLの出力項目は未確認。"
+      },
+      "listing_urls": [
+        "https://miyagi-jinjacho.or.jp/jinja-search/top.php"
+      ],
+      "official_url": "https://miyagi-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:15.690364+00:00",
+        "evidence": "あゆみページで神社本庁地方機関であることと管内19支部の説明を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:15.690364+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://miyagi-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:58.802466+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://miyagi-jinjacho.or.jp/jinja-search/top.php"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:59.925741+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://miyagi-jinjacho.or.jp/ayumi.html"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "宮城県",
+      "prefecture_code": "04"
+    },
+    {
+      "agency_name": "秋田県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://akita-jinjacho.sakura.ne.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1104,
+          "entry_status_counts": {
+            "pending": 166,
+            "verified": 938
+          },
+          "facilities": 1104,
+          "facility_status_counts": {
+            "verified": 1104
+          },
+          "path": "data/sources/akita.json",
+          "verified_entries": 938,
+          "verified_facilities": 1104
+        },
+        "checked_at": "2026-11-08T15:49:59.070966+00:00",
+        "facilities_collected": 1104,
+        "fields_observed": {
+          "address": 1104,
+          "facility_official_url": 0,
+          "name": 1104,
+          "reading_raw": 1104
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 45,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:25:31.027237+00:00",
+          "2026-11-08T14:31:08.737967+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 38,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:25:31.027237+00:00",
+            "page_hash": "1097a0ed760218b606292127ddd6576ceafb288b44c80b6f48064bae96237d7d",
+            "url": "https://akita-jinjacho.sakura.ne.jp/cat_shrine/%e3%81%82/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:15.210965+00:00",
+            "page_hash": "0b9aeaadc1334451c33fa279cdfc5229337c04c340814bceff48fceea14ace27",
+            "url": "https://akita-jinjacho.sakura.ne.jp/cat_shrine/%e3%81%84/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:17.577063+00:00",
+            "page_hash": "fd2b1366ce014e2cad85fab5868a74f11231ad0be5b2a0288ab52bd649410d59",
+            "url": "https://akita-jinjacho.sakura.ne.jp/cat_shrine/%e3%81%86/"
+          }
+        ],
+        "source_rows_observed": 1116,
+        "status": "collected",
+        "stored_coverage": "all linked kana categories and pagination",
+        "stored_pages_fetched": 45
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:15.666511+00:00",
+          "effective_url": "https://akita-jinjacho.sakura.ne.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://akita-jinjacho.sakura.ne.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "五十音/地域別カテゴリHTML。名称・かな・所在地を同一行で参照可能。",
+        "checked_at": "2026-11-08T13:14:15.666511+00:00",
+        "coverage_explanation": "秋田県全域の神社名一覧を表示する旨を確認。",
+        "published_fields": "五十音「あ」一覧に名称(漢字)・名称(かな)・市町村・郵便番号付き鎮座地。かな欄に通称が混在する例があり分離が必要。"
+      },
+      "listing_urls": [
+        "https://akita-jinjacho.sakura.ne.jp/shrine_search/"
+      ],
+      "official_url": "https://akita-jinjacho.sakura.ne.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:15.666511+00:00",
+        "evidence": "庁名、秋田市仁井田新田2丁目15-26の庁所在地・電話を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:15.666511+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://akita-jinjacho.sakura.ne.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:59.518123+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://akita-jinjacho.sakura.ne.jp/shrine_search/"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:05.136958+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "https://akita-jinjacho.sakura.ne.jp/cat_shrine/%e3%81%82/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "秋田県",
+      "prefecture_code": "05"
+    },
+    {
+      "agency_name": "山形県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://yamagata-jinjyacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1729,
+          "entry_status_counts": {
+            "verified": 1729
+          },
+          "facilities": 1729,
+          "facility_status_counts": {
+            "verified": 1729
+          },
+          "path": "data/sources/yamagata.json",
+          "verified_entries": 1729,
+          "verified_facilities": 1729
+        },
+        "checked_at": "2026-11-08T15:49:59.124900+00:00",
+        "facilities_collected": 1729,
+        "fields_observed": {
+          "address": 1729,
+          "facility_official_url": 0,
+          "name": 1729,
+          "reading_raw": 1729
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 1874,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:30:34.605115+00:00",
+          "2026-11-08T15:47:19.904685+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 1729,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:32:50.530763+00:00",
+            "page_hash": "20150a26961e5b08c08b51d3fcbc7321f7660bb6c1aedba11c2e9e4868bcefbc",
+            "url": "https://yamagata-jinjyacho.or.jp/shrine_detail/11038"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:53.457421+00:00",
+            "page_hash": "130d9b72a2228b2dab2cbda9e8fea2352ddd2977bb3e15cccb8bb63902a53dbb",
+            "url": "https://yamagata-jinjyacho.or.jp/shrine_detail/06003"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:56.003147+00:00",
+            "page_hash": "35c2a5e694ee50bba59294d19e7831f3a9581bd2959eca5d3e36eaf5dfc9c31c",
+            "url": "https://yamagata-jinjyacho.or.jp/shrine_detail/11027"
+          }
+        ],
+        "source_rows_observed": 1729,
+        "status": "collected",
+        "stored_coverage": "all linked search pages and detail records",
+        "stored_pages_fetched": 1874
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:15.679574+00:00",
+          "effective_url": "https://yamagata-jinjyacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://yamagata-jinjyacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "検索フォーム・HTML一覧・pageパラメータ。random_keyがあるため再取得時の順序注意。",
+        "checked_at": "2026-11-08T13:14:15.679574+00:00",
+        "coverage_explanation": "検索結果と145ページへの最終ページリンクを確認。施設総数未確定。 aboutの約1700社という組織規模と検索件数は別。",
+        "published_fields": "結果カードに掲載名と所在地。読み・施設URLは個別画面未確認。"
+      },
+      "listing_urls": [
+        "https://yamagata-jinjyacho.or.jp/shrine_search"
+      ],
+      "official_url": "https://yamagata-jinjyacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:15.679574+00:00",
+        "evidence": "about本文で神社本庁地方機関・山形県内11支部・約1700社を所管と説明。同庁の著作権表示を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:15.679574+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://yamagata-jinjyacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:59.676096+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://yamagata-jinjyacho.or.jp/shrine_search"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:04.679828+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "https://yamagata-jinjyacho.or.jp/about"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "山形県",
+      "prefecture_code": "06"
+    },
+    {
+      "agency_name": "福島県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://fukushima-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 313,
+          "entry_status_counts": {
+            "verified": 313
+          },
+          "facilities": 313,
+          "facility_status_counts": {
+            "verified": 313
+          },
+          "path": "data/sources/fukushima.json",
+          "verified_entries": 313,
+          "verified_facilities": 313
+        },
+        "checked_at": "2026-11-08T15:49:59.129224+00:00",
+        "facilities_collected": 313,
+        "fields_observed": {
+          "address": 313,
+          "facility_official_url": 29,
+          "name": 313,
+          "reading_raw": 313
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 2,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:42.922799+00:00",
+          "2026-11-08T14:28:42.922799+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 1,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:28:42.922799+00:00",
+            "page_hash": "054760e68bafe041406cc45d1bc7f55a6fb2c57d44b28cf84dbbc907543c637f",
+            "url": "https://fukushima-jinjacho.or.jp/cms/wp-content/themes/style-jinjatyou/search/search_locate.php?q="
+          }
+        ],
+        "source_rows_observed": 316,
+        "status": "collected",
+        "stored_coverage": "all records returned by the official empty-keyword public map search; not prefectural completeness",
+        "stored_pages_fetched": 2
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:15.690497+00:00",
+          "effective_url": "https://fukushima-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://fukushima-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地図・キーワード・絞込検索。JavaScript依存部分の取得仕様未確認。",
+        "checked_at": "2026-11-08T13:14:15.690497+00:00",
+        "coverage_explanation": "県内約3000余りのうち、本務神社を検索する旨を明記。",
+        "published_fields": "名称住所で検索可との説明。個別詳細項目は未確認。"
+      },
+      "listing_urls": [
+        "https://fukushima-jinjacho.or.jp/search/"
+      ],
+      "official_url": "https://fukushima-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:15.690497+00:00",
+        "evidence": "福島県神社庁公式の明記、郡山市島一丁目10-20の庁所在地・電話を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:15.690497+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://fukushima-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:59.167149+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://fukushima-jinjacho.or.jp/search/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "福島県",
+      "prefecture_code": "07"
+    },
+    {
+      "agency_name": "茨城県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.ibarakiken-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 85,
+          "entry_status_counts": {
+            "pending": 5,
+            "verified": 80
+          },
+          "facilities": 85,
+          "facility_status_counts": {
+            "pending": 5,
+            "verified": 80
+          },
+          "path": "data/sources/ibaraki.json",
+          "verified_entries": 80,
+          "verified_facilities": 80
+        },
+        "checked_at": "2026-11-08T15:49:59.131090+00:00",
+        "facilities_collected": 85,
+        "fields_observed": {
+          "address": 85,
+          "facility_official_url": 0,
+          "name": 85,
+          "reading_raw": 85
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 91,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:33:22.130645+00:00",
+          "2026-11-08T14:37:55.483162+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 5,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:37:33.826222+00:00",
+            "page_hash": "0ae18f09cab3f0ac67dab8f4f4a6257c03b50048ffb349399d2a84a7b219df7b",
+            "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kenhoku/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:37:40.780349+00:00",
+            "page_hash": "d025a98283b5c43c218fd3afa5d555cc152dd4c15ec2e965f6ad0259dd3014a5",
+            "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kenou/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:33:22.130645+00:00",
+            "page_hash": "7186fac767963de4d3700d45b35d625e84b0487ae74a8203c05405fa50c4b539",
+            "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kensei/"
+          }
+        ],
+        "source_rows_observed": 85,
+        "status": "collected",
+        "stored_coverage": "all five regional introduction lists and linked agency details; detailed address used only when published names exactly match",
+        "stored_pages_fetched": 91
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:15.717861+00:00",
+          "effective_url": "https://www.ibarakiken-jinjacho.or.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP Error 404: Not Found",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.ibarakiken-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "画像中心のナビゲーションから地域リンクへ。",
+        "checked_at": "2026-11-08T13:14:15.717861+00:00",
+        "coverage_explanation": "県内神社紹介の入口。包括2464社と掲載件数は別。",
+        "published_fields": "県西地域ページに名称・ひらがな・市名、個別紹介へのリンク。詳細所在地は未確認。"
+      },
+      "listing_urls": [
+        "https://www.ibarakiken-jinjacho.or.jp/ibaraki/"
+      ],
+      "official_url": "https://www.ibarakiken-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:15.717861+00:00",
+        "evidence": "沿革・概要で神社本庁地方事務所、茨城県内2464社を包括と説明。水戸市三湯の庁所在地も確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:15.717861+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.ibarakiken-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:58.884690+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:00.258795+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.ibarakiken-jinjacho.or.jp/enkaku/"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:04.618438+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kensei/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "茨城県",
+      "prefecture_code": "08"
+    },
+    {
+      "agency_name": "栃木県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://www.tochigi-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 188,
+          "entry_status_counts": {
+            "pending": 3,
+            "verified": 185
+          },
+          "facilities": 188,
+          "facility_status_counts": {
+            "pending": 3,
+            "verified": 185
+          },
+          "path": "data/sources/tochigi.json",
+          "verified_entries": 185,
+          "verified_facilities": 185
+        },
+        "checked_at": "2026-11-08T15:49:59.133236+00:00",
+        "facilities_collected": 188,
+        "fields_observed": {
+          "address": 188,
+          "facility_official_url": 0,
+          "name": 188,
+          "reading_raw": 185
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 26,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:26:08.099032+00:00",
+          "2026-11-08T14:29:13.219949+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 25,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:26:08.099032+00:00",
+            "page_hash": "ad441140ef48d304144671446df378a30dd2ff1c9791cce975ac7a8a33364360",
+            "url": "http://www.tochigi-jinjacho.or.jp/?p=63"
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:14.043551+00:00",
+            "page_hash": "e12ab663a5e803a8850f7b9d281da1128ac7d64c120740182fcd4c4f5ccfa428",
+            "url": "http://www.tochigi-jinjacho.or.jp/?p=114"
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:16.375930+00:00",
+            "page_hash": "63db8531fd176ce4f6afd83bc46572edfd0b53daae28f2c4e66efeed6f3afbd5",
+            "url": "http://www.tochigi-jinjacho.or.jp/?p=90"
+          }
+        ],
+        "source_rows_observed": 188,
+        "status": "collected",
+        "stored_coverage": "all linked municipality honmu tables",
+        "stored_pages_fetched": 26
+      },
+      "conditions": {
+        "data_use_conditions": "プライバシーポリシー本文は個人情報の扱い。神社データの再利用許諾は未確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:16.749668+00:00",
+          "effective_url": "http://www.tochigi-jinjacho.or.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP Error 404: Not Found",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://www.tochigi-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": [
+          {
+            "inspection_status": "opened",
+            "url": "http://www.tochigi-jinjacho.or.jp/?p=28"
+          }
+        ]
+      },
+      "initial_survey": {
+        "acquisition_method": "WordPressの市町村リンク（?p=番号）から施設へ。",
+        "checked_at": "2026-11-08T13:14:16.749668+00:00",
+        "coverage_explanation": "県包括下1911社という組織説明あり。市町村別紹介の網羅性は未確認。",
+        "published_fields": "足利市一覧に本務神社名と括弧内ひらがな読み・宮司名・町程度の住所・電話。施設URL未確認。"
+      },
+      "listing_urls": [
+        "http://www.tochigi-jinjacho.or.jp/?p=59"
+      ],
+      "official_url": "http://www.tochigi-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:16.749668+00:00",
+        "evidence": "庁についてで神社本庁地方機関・宗教法人としての活動を説明。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:16.749668+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "http://www.tochigi-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:14:59.980790+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "http://www.tochigi-jinjacho.or.jp/?p=59"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:01.284455+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "http://www.tochigi-jinjacho.or.jp/?p=14"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:02.589393+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "http://www.tochigi-jinjacho.or.jp/?p=28"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:04.794949+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "http://www.tochigi-jinjacho.or.jp/?p=63"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "栃木県",
+      "prefecture_code": "09"
+    },
+    {
+      "agency_name": "群馬県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://www.gunma-jinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1184,
+          "entry_status_counts": {
+            "pending": 2,
+            "verified": 1182
+          },
+          "facilities": 1184,
+          "facility_status_counts": {
+            "pending": 1,
+            "verified": 1183
+          },
+          "path": "data/sources/gunma.json",
+          "verified_entries": 1182,
+          "verified_facilities": 1183
+        },
+        "facilities_collected": 1184,
+        "fields_observed": {
+          "address": 1184,
+          "facility_official_url": 31,
+          "name": 1184,
+          "reading_raw": 1184
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "reason": "official name/kana/address table; 1184 records, two registrations pending",
+        "record_fetched_at_range": [
+          "2026-11-08T13:17:33.943373+00:00",
+          "2026-11-08T13:17:33.943373+00:00"
+        ],
+        "remaining_scope": "公開掲載範囲の網羅性と再配布条件は未確認。",
+        "saved_listing_page_count": 1,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T13:17:33.943373+00:00",
+            "page_hash": "cdcd332eab718ccd035d6760e70bcb76e149ea184b4eafd5c9f7d77e12a0d495",
+            "url": "https://www.gunma-jinjacho.jp/jinja/"
+          }
+        ],
+        "source_rows_observed": 1185,
+        "status": "collected",
+        "stored_coverage": "selected rows only; not a claim of prefectural completeness",
+        "stored_pages_fetched": null
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:16.972375+00:00",
+          "effective_url": "http://www.gunma-jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP Error 404: Not Found",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://www.gunma-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "div#list > section（支部id） > div.scroll > table > tbody > tr。先頭thが名称、先頭2tdがカナ・所在地。電話/URL列はrowspanがある。表14個、tr1199個は施設件数ではない。",
+        "checked_at": "2026-11-08T13:14:16.972375+00:00",
+        "coverage_explanation": "県内神社紹介は支部別。全掲載範囲の説明は未確認。",
+        "published_fields": "神社名、カナ、所在地、連絡先、ホームページ。後2列はrowspanがあるため自動継承せず扱う。"
+      },
+      "listing_urls": [
+        "https://www.gunma-jinjacho.jp/jinja/"
+      ],
+      "official_url": "https://www.gunma-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:16.972375+00:00",
+        "evidence": "トップ本文で宗教法人群馬県神社庁の成立・活動を説明。高崎市八千代町の庁所在地を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:16.972375+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.gunma-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:00.223302+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.gunma-jinjacho.jp/jinja/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "群馬県",
+      "prefecture_code": "10"
+    },
+    {
+      "agency_name": "埼玉県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://www.saitama-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1980,
+          "entry_status_counts": {
+            "pending": 36,
+            "verified": 1944
+          },
+          "facilities": 1980,
+          "facility_status_counts": {
+            "verified": 1980
+          },
+          "path": "data/sources/saitama.json",
+          "verified_entries": 1944,
+          "verified_facilities": 1980
+        },
+        "checked_at": "2026-11-08T15:49:59.164970+00:00",
+        "facilities_collected": 1980,
+        "fields_observed": {
+          "address": 1980,
+          "facility_official_url": 0,
+          "name": 1980,
+          "reading_raw": 1948
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 2054,
+        "reason": "公式検索から公開されている1980施設の詳細を取得。県内の全神社数を示すものではない。",
+        "record_fetched_at_range": [
+          "2026-11-08T14:30:33.275457+00:00",
+          "2026-11-08T17:14:06.248699+00:00"
+        ],
+        "remaining_scope": "読み未掲載・異常値の補完確認、再配布条件の確認",
+        "saved_listing_page_count": 1890,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:30:33.275457+00:00",
+            "page_hash": "80d7a2a2731e6591494e03de04af264904a41f8ddbc6d417bcf9f754dfa4e525",
+            "url": "https://www.saitama-jinjacho.or.jp/shrine/8953/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:53.220731+00:00",
+            "page_hash": "3f1f3f20b9b8418613c64dce5a27104b1fcc96b23d1a35a952c3ad11215ee516",
+            "url": "https://www.saitama-jinjacho.or.jp/shrine/11404/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:55.754940+00:00",
+            "page_hash": "90aa0d3cd40b94186ef7fa0cdb9e43d86458ab3776b1b9c520dca0c1d1016762",
+            "url": "https://www.saitama-jinjacho.or.jp/shrine/11408/"
+          }
+        ],
+        "source_rows_observed": 1980,
+        "status": "collected",
+        "stored_coverage": "all municipality search pages and details",
+        "stored_pages_fetched": 2054
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:17.213008+00:00",
+          "effective_url": "http://www.saitama-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://www.saitama-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "検索条件から施設ページ（/shrine/番号/）へ。代表詳細を1件閲覧。",
+        "checked_at": "2026-11-08T13:14:17.213008+00:00",
+        "coverage_explanation": "トップで県内およそ2000社を紹介すると説明。取得総数ではない。",
+        "published_fields": "寳登山神社の個別ページで掲載名・ひらがな読み・鎮座地・電話・施設公式ホームページリンクを確認。"
+      },
+      "listing_urls": [
+        "http://www.saitama-jinjacho.or.jp/search/"
+      ],
+      "official_url": "http://www.saitama-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:17.213008+00:00",
+        "evidence": "フッターに埼玉県神社庁と著作権表示、神社庁報・問合せの導線を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:17.213008+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "http://www.saitama-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:01.255248+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "http://www.saitama-jinjacho.or.jp/search/"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:05.570618+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "http://www.saitama-jinjacho.or.jp/shrine/8997/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "埼玉県",
+      "prefecture_code": "11"
+    },
+    {
+      "agency_name": "千葉県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://www.jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 3145,
+          "entry_status_counts": {
+            "pending": 3145
+          },
+          "facilities": 3145,
+          "facility_status_counts": {
+            "pending": 3145
+          },
+          "path": "data/sources/chiba.json",
+          "verified_entries": 0,
+          "verified_facilities": 0
+        },
+        "checked_at": "2026-11-08T15:49:59.219032+00:00",
+        "dictionary_eligibility": "excluded_until_agency_listing_relationship_verified",
+        "facilities_collected": 3145,
+        "fields_observed": {
+          "address": 3145,
+          "facility_official_url": 0,
+          "name": 3145,
+          "reading_raw": 3142
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "pending",
+        "pages_fetched": 107,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:48:37.486292+00:00",
+          "2026-11-08T14:56:16.520890+00:00"
+        ],
+        "remaining_scope": "current external service authority confirmation; dictionary output held pending",
+        "saved_listing_page_count": 105,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:48:37.486292+00:00",
+            "page_hash": "b595e32cc4db624db11e3f3a1b795fbbff00fdf4e14fb06fde7358b8296a61a5",
+            "url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&search%3Amethod=group&view%3Asort=jinja_id&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand="
+          },
+          {
+            "fetched_at": "2026-11-08T14:48:41.423491+00:00",
+            "page_hash": "a67b82730fc8bad81011aaca6db4033a68af9837b296113329eeb0de7bb167fc",
+            "url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=1&search%3Areverse=&search%3Aterm=30&sys%3Apid=1978&sys%3Arandom=1794149315-1978&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=2"
+          },
+          {
+            "fetched_at": "2026-11-08T14:49:31.094995+00:00",
+            "page_hash": "92bbc82ffd31f70069d607246bea612f0013230de6219c55b16bc9e308f213f9",
+            "url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=2&search%3Areverse=&search%3Aterm=30&sys%3Apid=1986&sys%3Arandom=1794149319-1986&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=3"
+          }
+        ],
+        "source_rows_observed": 3145,
+        "status": "authority_pending",
+        "stored_coverage": "all public Chiba prefecture search results, including honmu and kenmu; not shrine count of entire prefecture",
+        "stored_pages_fetched": 107
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:17.051368+00:00",
+          "effective_url": "https://www.jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://www.jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "外部の千葉県神社庁監修サービスへのリンク。現行一覧経路は要調査。",
+        "checked_at": "2026-11-08T13:14:17.051368+00:00",
+        "coverage_explanation": "千葉県の神社リンクは外部サイト。リンク先は神社のひろばトップへ転送され神社一覧にならなかった。",
+        "published_fields": "外部一覧本文を確認できず項目未確認。"
+      },
+      "listing_urls": [
+        "https://hiroba.jinja.ne.jp/index.html"
+      ],
+      "official_url": "https://www.jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:17.051368+00:00",
+        "evidence": "庁名、千葉市中央区都町4-3-1の庁所在地・電話と著作権表示を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:17.051368+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:01.247066+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://hiroba.jinja.ne.jp/index.html"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "千葉県",
+      "prefecture_code": "12"
+    },
+    {
+      "agency_name": "東京都神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://www.tokyo-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 418,
+          "entry_status_counts": {
+            "pending": 3,
+            "verified": 415
+          },
+          "facilities": 418,
+          "facility_status_counts": {
+            "verified": 418
+          },
+          "path": "data/sources/tokyo.json",
+          "verified_entries": 415,
+          "verified_facilities": 418
+        },
+        "checked_at": "2026-11-08T15:49:59.230589+00:00",
+        "facilities_collected": 418,
+        "fields_observed": {
+          "address": 418,
+          "facility_official_url": 0,
+          "name": 418,
+          "reading_raw": 418
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 476,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:26:08.645547+00:00",
+          "2026-11-08T14:55:40.114385+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 418,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:26:08.645547+00:00",
+            "page_hash": "a887380c04faead63be059e5be42ab1d932eec077e8d488bb5bdbbd085d7bdb2",
+            "url": "http://www.tokyo-jinjacho.or.jp/chiyoda/5550"
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:14.611903+00:00",
+            "page_hash": "222592393df65a2ae47b4951be288088f1c8e4d9afd2e430a215b1cdf4a23745",
+            "url": "http://www.tokyo-jinjacho.or.jp/chiyoda/5540"
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:17.155929+00:00",
+            "page_hash": "303b470fea7ce49425d871cdd2f68a17d15f5b9886bee904f021570817ed513c",
+            "url": "http://www.tokyo-jinjacho.or.jp/chiyoda/200044"
+          }
+        ],
+        "source_rows_observed": 418,
+        "status": "collected",
+        "stored_coverage": "all linked area cards and details",
+        "stored_pages_fetched": 476
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:17.487111+00:00",
+          "effective_url": "http://www.tokyo-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://www.tokyo-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地図・キーワード検索と地域リンク。",
+        "checked_at": "2026-11-08T13:14:17.487111+00:00",
+        "coverage_explanation": "都内の区・三多摩・島嶼別入口。網羅性未確認。",
+        "published_fields": "検索入口を確認。個別読み・住所・URLは未確認。"
+      },
+      "listing_urls": [
+        "http://www.tokyo-jinjacho.or.jp/jinja/"
+      ],
+      "official_url": "http://www.tokyo-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:17.487111+00:00",
+        "evidence": "フッターの宗教法人東京都神社庁と同庁著作権表示を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:17.487111+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "http://www.tokyo-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:00.742918+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "http://www.tokyo-jinjacho.or.jp/jinja/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "東京都",
+      "prefecture_code": "13"
+    },
+    {
+      "agency_name": "神奈川県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.kanagawa-jinja.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1122,
+          "entry_status_counts": {
+            "pending": 2,
+            "verified": 1120
+          },
+          "facilities": 1122,
+          "facility_status_counts": {
+            "pending": 1,
+            "verified": 1121
+          },
+          "path": "data/sources/kanagawa.json",
+          "verified_entries": 1120,
+          "verified_facilities": 1121
+        },
+        "checked_at": "2026-11-08T15:49:59.264721+00:00",
+        "facilities_collected": 1122,
+        "fields_observed": {
+          "address": 1122,
+          "facility_official_url": 0,
+          "name": 1121,
+          "reading_raw": 1121
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 1160,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:30:33.806082+00:00",
+          "2026-11-08T15:28:46.436749+00:00"
+        ],
+        "remaining_scope": "reading supplementation/review and redistribution conditions",
+        "saved_listing_page_count": 1122,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:32:51.186911+00:00",
+            "page_hash": "29de5d53d40b75a9cd213b2a32e98a214ecedd19c13373d1d67e23f4dab1a910",
+            "url": "https://www.kanagawa-jinja.or.jp/shrine/1201001-000/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:53.940061+00:00",
+            "page_hash": "e77e9c8153b57ea1c495336c2a20a9f172332142e1a4d433bf1e3287b3ed082b",
+            "url": "https://www.kanagawa-jinja.or.jp/shrine/1201002-000/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:32:56.428942+00:00",
+            "page_hash": "bcb73bc85b1fec899f0aa7e1b10ee0f774bf2935e2de49c5b8f63b94d5803e4f",
+            "url": "https://www.kanagawa-jinja.or.jp/shrine/1201003-000/"
+          }
+        ],
+        "source_rows_observed": 1122,
+        "status": "collected",
+        "stored_coverage": "all linked search pages and detail records",
+        "stored_pages_fetched": 1160
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:17.398611+00:00",
+          "effective_url": "https://www.kanagawa-jinja.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.kanagawa-jinja.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "検索フォームの入口。詳細動作未確認。",
+        "checked_at": "2026-11-08T13:14:17.398611+00:00",
+        "coverage_explanation": "神社検索入口。掲載数・網羅性は未確認。",
+        "published_fields": "個別施設項目未確認。"
+      },
+      "listing_urls": [
+        "https://www.kanagawa-jinja.or.jp/search/"
+      ],
+      "official_url": "https://www.kanagawa-jinja.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:17.398611+00:00",
+        "evidence": "神奈川県神社庁の表題・著作権表示と横浜市磯子区磯子台20番1号の所在地を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:17.398611+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.kanagawa-jinja.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:01.594282+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.kanagawa-jinja.or.jp/search/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "神奈川県",
+      "prefecture_code": "14"
+    },
+    {
+      "agency_name": "新潟県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://niigata-jinjacho.jp/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "robots.txt returned HTML rather than a usable policy; njd.http.Client refused access. No robots bypass performed.",
+        "remaining_scope": "clarify valid robots policy with source owner; listing not collected in this run",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "latest_robots_outcome": "HTMLが返り有効なrobots方針として解釈できず収集停止。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:17.454512+00:00",
+          "effective_url": "https://niigata-jinjacho.jp/",
+          "http_status": 200,
+          "outcome": "HTTP 200だがHTMLを返した",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://niigata-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "search.php?area=15101の北区結果は9ページ。HTML検索結果とページ送り。",
+        "checked_at": "2026-11-08T13:14:17.454512+00:00",
+        "coverage_explanation": "県内神社一覧。掲載総数・網羅性は未確認。",
+        "published_fields": "北区結果に神社名・ふりがな・鎮座地のラベルと値を確認。施設公式URLは未確認。"
+      },
+      "listing_urls": [
+        "https://niigata-jinjacho.jp/shrine_niigata/"
+      ],
+      "official_url": "https://niigata-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:17.454512+00:00",
+        "evidence": "庁名、三条市下坂井14-21の庁所在地・電話と著作権表示を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:17.454512+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://niigata-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:01.318977+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://niigata-jinjacho.jp/shrine_niigata/"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:04.693154+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15101"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "新潟県",
+      "prefecture_code": "15"
+    },
+    {
+      "agency_name": "富山県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://toyama-jinjacho.sakura.ne.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 55,
+          "entry_status_counts": {
+            "pending": 1,
+            "verified": 54
+          },
+          "facilities": 55,
+          "facility_status_counts": {
+            "pending": 1,
+            "verified": 54
+          },
+          "path": "data/sources/toyama.json",
+          "verified_entries": 54,
+          "verified_facilities": 54
+        },
+        "checked_at": "2026-11-08T15:49:59.287399+00:00",
+        "facilities_collected": 55,
+        "fields_observed": {
+          "address": 55,
+          "facility_official_url": 0,
+          "name": 55,
+          "reading_raw": 55
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 1514,
+        "reason": "氏子住所ページと実施設を分離。具体的な鎮座地のある55施設のみ保存。全公開ページ索引の収集は継続中。",
+        "record_fetched_at_range": [
+          "2026-11-08T14:40:59.015131+00:00",
+          "2026-11-08T15:47:09.248908+00:00"
+        ],
+        "remaining_scope": "公開索引の未取得ページ、具体的鎮座地がない資料、1施設の読み衝突",
+        "saved_listing_page_count": 143,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:50:03.911576+00:00",
+            "page_hash": "68f4561519b06497b3e1ca6feaadbd17f84fcee2a70996d1a02485dc6497f01a",
+            "url": "https://toyama-jinjacho.sakura.ne.jp/ujigami/1396-%e5%af%8c%e5%b1%b1%e5%b8%82%e6%96%b0%e5%8d%83%e5%8e%9f%e5%b4%8e-%e7%a5%9e%e6%98%8e%e5%ae%ae-%e5%b5%af%e5%b3%a8%e3%80%80%e8%8a%b3%e6%a8%b9-%ef%bc%88%e6%9c%ac%e5%8b%99%e7%a4%be%e3%83%9b/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:50:41.684983+00:00",
+            "page_hash": "14cb9546e21373f0791a608d3a4375b54de9bc957ea55fb61cbaaa4ab4892b78",
+            "url": "https://toyama-jinjacho.sakura.ne.jp/ujigami/1378-%e5%af%8c%e5%b1%b1%e5%b8%82%e9%87%91%e5%b1%b1%e6%96%b0%e6%a1%9c%e3%82%b1%e4%b8%98-%e7%a5%9e%e6%98%8e%e5%ae%ae-%e5%b5%af%e5%b3%a8%e3%80%80%e8%8a%b3%e6%a8%b9-%ef%bc%88%e6%9c%ac%e5%8b%99/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:50:46.076140+00:00",
+            "page_hash": "d0d2e87ea581ff4ac361f67b5221cf3e18f31eebc5423b21919559d95cf28456",
+            "url": "https://toyama-jinjacho.sakura.ne.jp/ujigami/1379-%e5%af%8c%e5%b1%b1%e5%b8%82%e9%87%91%e5%b1%b1%e6%96%b0%e4%b8%ad-%e7%a5%9e%e6%98%8e%e5%ae%ae-%e5%b5%af%e5%b3%a8%e3%80%80%e8%8a%b3%e6%a8%b9-%ef%bc%88%e6%9c%ac%e5%8b%99%e7%a4%be%e3%83%9b/"
+          }
+        ],
+        "source_rows_observed": 2462,
+        "status": "partial",
+        "stored_coverage": "partial cached parish records; full published public page index traversal running",
+        "stored_pages_fetched": 2541
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:18.213438+00:00",
+          "effective_url": "https://toyama-jinjacho.sakura.ne.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://toyama-jinjacho.sakura.ne.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "WordPressページの検索入口。埋込先・検索送信先は要調査。",
+        "checked_at": "2026-11-08T13:14:18.213438+00:00",
+        "coverage_explanation": "氏神神社検索ページ。掲載総数未確認。",
+        "published_fields": "個別施設項目未確認。"
+      },
+      "listing_urls": [
+        "https://toyama-jinjacho.sakura.ne.jp/%E5%AF%8C%E5%B1%B1%E7%9C%8C%E6%B0%8F%E7%A5%9E%E7%A5%9E%E7%A4%BE%E6%A4%9C%E7%B4%A2"
+      ],
+      "official_url": "https://toyama-jinjacho.sakura.ne.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:18.213438+00:00",
+        "evidence": "トップ本文の神社庁の目的に神社本庁事務・県内神社の興隆を明記、同庁著作権表示を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:18.213438+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://toyama-jinjacho.sakura.ne.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:01.349719+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://toyama-jinjacho.sakura.ne.jp/%E5%AF%8C%E5%B1%B1%E7%9C%8C%E6%B0%8F%E7%A5%9E%E7%A5%9E%E7%A4%BE%E6%A4%9C%E7%B4%A2"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "富山県",
+      "prefecture_code": "16"
+    },
+    {
+      "agency_name": "石川県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.ishikawa-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1859,
+          "entry_status_counts": {
+            "pending": 2,
+            "verified": 1857
+          },
+          "facilities": 1859,
+          "facility_status_counts": {
+            "verified": 1859
+          },
+          "path": "data/sources/ishikawa.json",
+          "verified_entries": 1857,
+          "verified_facilities": 1859
+        },
+        "checked_at": null,
+        "facilities_collected": 1859,
+        "fields_observed": {
+          "address": 1859,
+          "facility_official_url": 0,
+          "name": 1859,
+          "reading_raw": 1857
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:24:56.771040+00:00",
+            "sha256": "0cf1ecc59aed51f20e36a1beae3b8755acd9609503b3c399ebb9f4d7acbca42d",
+            "url": "https://www.ishikawa-jinjacho.or.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:24:59.093821+00:00",
+            "sha256": "e4dc7bf9355762c5b570de9cc6594e985c0958a5941e3989ff815a5033a1a73b",
+            "url": "https://www.ishikawa-jinjacho.or.jp/shrine/"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 201,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:36:11.916018+00:00",
+          "2026-11-08T14:52:24.320075+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 195,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:42:02.574647+00:00",
+            "page_hash": "84b7e9827d375c4ea04612d7753cc818334d9145676f6009200d2cdaf9fd430c",
+            "url": "https://www.ishikawa-jinjacho.or.jp/?s="
+          },
+          {
+            "fetched_at": "2026-11-08T14:43:28.631658+00:00",
+            "page_hash": "8ca77bf4aa59e7f0b59579953f1394cc3fc9fa53f99e9b4c1b766800dbbfbd19",
+            "url": "https://www.ishikawa-jinjacho.or.jp/page/2/?s"
+          },
+          {
+            "fetched_at": "2026-11-08T14:43:31.087582+00:00",
+            "page_hash": "d13f8e23cd7b502f4099a2e2f8d55168482288a3f68c1f2053b8b5572a7bc50c",
+            "url": "https://www.ishikawa-jinjacho.or.jp/page/3/?s"
+          }
+        ],
+        "source_rows_observed": 1872,
+        "status": "collected",
+        "stored_coverage": "all 193 pages of official empty-keyword search plus 8 additional detail URLs discovered in opened regional-index pages; regional-index tree not fully traversed; not a claim of prefectural completeness",
+        "stored_pages_fetched": 201
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:18.239879+00:00",
+          "effective_url": "https://www.ishikawa-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.ishikawa-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "市町別taxonomyクエリと検索フォーム。",
+        "checked_at": "2026-11-08T13:14:18.239879+00:00",
+        "coverage_explanation": "地図・市町村・氏子区域・キーワードで検索。網羅性未確認。",
+        "published_fields": "ひらがなによる神社名検索が可能との説明。個別項目未確認。"
+      },
+      "listing_urls": [
+        "https://www.ishikawa-jinjacho.or.jp/shrine/"
+      ],
+      "official_url": "https://www.ishikawa-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:18.239879+00:00",
+        "evidence": "庁名、金沢市小坂町西44番地の庁所在地・電話と著作権表示を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:18.239879+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.ishikawa-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:02.123413+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.ishikawa-jinjacho.or.jp/shrine/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "石川県",
+      "prefecture_code": "17"
+    },
+    {
+      "agency_name": "福井県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.jinja-fukui.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1696,
+          "entry_status_counts": {
+            "verified": 1696
+          },
+          "facilities": 1696,
+          "facility_status_counts": {
+            "verified": 1696
+          },
+          "path": "data/sources/fukui.json",
+          "verified_entries": 1696,
+          "verified_facilities": 1696
+        },
+        "checked_at": null,
+        "facilities_collected": 1696,
+        "fields_observed": {
+          "address": 1696,
+          "facility_official_url": 0,
+          "name": 1696,
+          "reading_raw": 1696
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:24:57.726067+00:00",
+            "sha256": "0e02b0e949b433d291864d3854c07c1f1a01694b82525ea00cfa655bcdfcdb7c",
+            "url": "https://www.jinja-fukui.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:24:59.900835+00:00",
+            "sha256": "f208a67d9cbd08f98f683770156922592bafb10a7dcc184babd6c72bd1b26453",
+            "url": "https://www.jinja-fukui.jp/search/index.php"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 1,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:32:07.375935+00:00",
+          "2026-11-08T14:32:07.375935+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 1,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:32:07.375935+00:00",
+            "page_hash": "a7f7dc05b4c159eb7288c1c913c4c06bbc8f1878b090cd1e6f540dcb529c4446",
+            "url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01"
+          }
+        ],
+        "source_rows_observed": 1696,
+        "status": "collected",
+        "stored_coverage": "public linked listing pages only; not all prefectural shrines",
+        "stored_pages_fetched": 1
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:18.299569+00:00",
+          "effective_url": "https://www.jinja-fukui.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.jinja-fukui.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地図アイコン・市町村のJavaScript検索。送信仕様未確認。",
+        "checked_at": "2026-11-08T13:14:18.299569+00:00",
+        "coverage_explanation": "県内にある神社をまとめた旨を掲載。包括約1700社と掲載件数は別。",
+        "published_fields": "検索入口と地域名の読み。施設名の読みは未確認。"
+      },
+      "listing_urls": [
+        "https://www.jinja-fukui.jp/search/index.php"
+      ],
+      "official_url": "https://www.jinja-fukui.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:18.299569+00:00",
+        "evidence": "トップ本文で県内10支部・包括約1700社の組織説明。福井市花堂中1-3-28の所在地を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:18.299569+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.jinja-fukui.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:02.142850+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.jinja-fukui.jp/search/index.php"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "福井県",
+      "prefecture_code": "18"
+    },
+    {
+      "agency_name": "山梨県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.yamanashi-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1257,
+          "entry_status_counts": {
+            "pending": 1257
+          },
+          "facilities": 1257,
+          "facility_status_counts": {
+            "verified": 1257
+          },
+          "path": "data/sources/yamanashi.json",
+          "verified_entries": 0,
+          "verified_facilities": 1257
+        },
+        "checked_at": null,
+        "facilities_collected": 1257,
+        "fields_observed": {
+          "address": 1257,
+          "facility_official_url": 0,
+          "name": 1257,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:24:57.568229+00:00",
+            "sha256": "b3d7b45c4d63ea1e9c2cd86617cd98c5adb638eabd67272e502d1a3bb950690e",
+            "url": "https://www.yamanashi-jinjacho.or.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:24:59.649937+00:00",
+            "sha256": "b9798ea24d6d237cb613760ccc0ab43da2c84f5665abd3b3cf8fd5a54fa74937",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 62,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:25:40.726279+00:00",
+          "2026-11-08T14:29:40.615478+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 61,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:25:40.726279+00:00",
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:42.887006+00:00",
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1/1"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:27.326426+00:00",
+            "page_hash": "0d647ec35dfb65488ad47a26fcf4e19b52ac1a9d5b2191c2e0250d9c59657b92",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/2"
+          }
+        ],
+        "source_rows_observed": 1457,
+        "status": "collected",
+        "stored_coverage": "public linked listing pages only; not all prefectural shrines",
+        "stored_pages_fetched": 62
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:18.738245+00:00",
+          "effective_url": "https://www.yamanashi-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.yamanashi-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地域別HTML一覧はページ送りあり。甲府は4ページ表示。",
+        "checked_at": "2026-11-08T13:14:18.738245+00:00",
+        "coverage_explanation": "神社庁が包括する山梨県内神社を検索可能と明記。",
+        "published_fields": "甲府地域一覧に神社番号・名称・住所・電話・支部・詳細リンク。読みは一覧で未確認。"
+      },
+      "listing_urls": [
+        "https://www.yamanashi-jinjacho.or.jp/intro/"
+      ],
+      "official_url": "https://www.yamanashi-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:18.738245+00:00",
+        "evidence": "県内神社を包括する組織とのサイト説明と甲府市岩窪町572の庁所在地を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:18.738245+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.yamanashi-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:02.348623+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:04.853165+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "山梨県",
+      "prefecture_code": "19"
+    },
+    {
+      "agency_name": "長野県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.nagano-jinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 2240,
+          "entry_status_counts": {
+            "pending": 2240
+          },
+          "facilities": 2240,
+          "facility_status_counts": {
+            "verified": 2240
+          },
+          "path": "data/sources/nagano.json",
+          "verified_entries": 0,
+          "verified_facilities": 2240
+        },
+        "checked_at": null,
+        "facilities_collected": 2240,
+        "fields_observed": {
+          "address": 2240,
+          "facility_official_url": 0,
+          "name": 2240,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:24:57.653054+00:00",
+            "sha256": "08fdc2c087ec40608cf1bebd128e2fa1c23e6bec92be26a5e505c01e15cdb926",
+            "url": "https://www.nagano-jinjacho.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:24:59.720311+00:00",
+            "sha256": "40ae8b0a95e66ea4eedaf1b81dfb36cbaa506df69a9cf861dbe778a364b31b10",
+            "url": "https://www.nagano-jinjacho.jp/j-syoukai.html"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 16,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:00.853703+00:00",
+          "2026-11-08T14:31:22.207638+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 15,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:30:45.814544+00:00",
+            "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+            "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+          },
+          {
+            "fetched_at": "2026-11-08T14:28:00.853703+00:00",
+            "page_hash": "2d4bf853e3992073208852c1ac16fb46b920053d311f515fc53a427fdfd2319a",
+            "url": "https://www.nagano-jinjacho.jp/shibu/hansui.htm"
+          },
+          {
+            "fetched_at": "2026-11-08T14:30:48.314838+00:00",
+            "page_hash": "95cbf939ab755781458e43242e180fb664b676f180e70e47693e1479d4682c24",
+            "url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm"
+          }
+        ],
+        "source_rows_observed": 2240,
+        "status": "collected",
+        "stored_coverage": "public linked listing pages only; not all prefectural shrines",
+        "stored_pages_fetched": 16
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:18.738106+00:00",
+          "effective_url": "https://www.nagano-jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP Error 404: Not Found",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.nagano-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "神社紹介ページの支部リンク。施設一覧の経路は追加確認が必要。",
+        "checked_at": "2026-11-08T13:14:18.738106+00:00",
+        "coverage_explanation": "北信・中信・東信・南信の支部と社数を掲載。2026-03-31時点との明記。",
+        "published_fields": "支部別情報。個別施設名・読み・住所・施設URLは未確認。"
+      },
+      "listing_urls": [
+        "https://www.nagano-jinjacho.jp/j-syoukai.html"
+      ],
+      "official_url": "https://www.nagano-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:18.738106+00:00",
+        "evidence": "長野県神社庁の表題・同庁著作権表示と県神社庁/支部の活動説明を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:18.738106+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.nagano-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:02.351720+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.nagano-jinjacho.jp/j-syoukai.html"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "長野県",
+      "prefecture_code": "20"
+    },
+    {
+      "agency_name": "岐阜県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.gifu-jinjacho.jp/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:24:58.139177+00:00",
+            "sha256": "2b834b6665452df33dd524ebd003a29fcf733acd6dcfe1808ddc3523d26bc3fd",
+            "url": "https://www.gifu-jinjacho.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+            "sha256": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+            "url": "https://www.gifu-jinjacho.jp/jnjyalist.php"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "公式トップに「文章および写真の無断転用はお断りします」。転載・転用条件未解決のため施設レコードの一括収集停止。トップ・名称一覧入口を実閲覧した範囲のみ記録。",
+        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "data_use_conditions": "トップに文章・写真の無断転用不可、リンクする場合は神社庁への申出を求める表示。公開辞書データへの利用可否は要照会。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:18.758531+00:00",
+          "effective_url": "https://www.gifu-jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP Error 404: Not Found",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.gifu-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "神社名一覧20行/頁→同名神社検索結果→個別施設。",
+        "checked_at": "2026-11-08T13:14:18.758531+00:00",
+        "coverage_explanation": "神社本庁包括の県内神社紹介。828件は神社名の種類であり施設総数ではない。",
+        "published_fields": "名称一覧はひらがな読み・同名件数。青木神社の検索結果には複数施設の所在地・支部・詳細リンク。"
+      },
+      "listing_urls": [
+        "https://www.gifu-jinjacho.jp/jnjyalist.php"
+      ],
+      "official_url": "https://www.gifu-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:18.758531+00:00",
+        "evidence": "公式ホームページの明記と岐阜市薮田南3-8-24の庁所在地を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:18.758531+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.gifu-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:02.513534+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.gifu-jinjacho.jp/jnjyalist.php"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:04.825044+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "岐阜県",
+      "prefecture_code": "21"
+    },
+    {
+      "agency_name": "静岡県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://www.shizuoka-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 2823,
+          "entry_status_counts": {
+            "pending": 11,
+            "verified": 2812
+          },
+          "facilities": 2823,
+          "facility_status_counts": {
+            "verified": 2823
+          },
+          "path": "data/sources/shizuoka.json",
+          "verified_entries": 2812,
+          "verified_facilities": 2823
+        },
+        "checked_at": null,
+        "facilities_collected": 2823,
+        "fields_observed": {
+          "address": 2823,
+          "facility_official_url": 0,
+          "name": 2823,
+          "reading_raw": 2823
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:24:58.475569+00:00",
+            "sha256": "e3fbcc0bf963ff7a1bb6a6ef7c3f24730d9932f6980f81ba849294d80fe02f4e",
+            "url": "http://www.shizuoka-jinjacho.or.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:00.636893+00:00",
+            "sha256": "aa60eaab723b01fedb45451a813379df1c4cbaf324e76a733ccc0404e06be17c",
+            "url": "http://www.shizuoka-jinjacho.or.jp/shokai/"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 98,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:27:58.763304+00:00",
+          "2026-11-08T14:35:33.118796+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 91,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:30:59.555603+00:00",
+            "page_hash": "38dbc2c8cf3693182b225fcf96b19ad949e296171f7329738d8c136b0776fa9e",
+            "url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=1"
+          },
+          {
+            "fetched_at": "2026-11-08T14:31:03.161894+00:00",
+            "page_hash": "53dddfd62063306dbce86419ebc1ec593d869eeb9687a5c0359bb30eeaf1ff06",
+            "url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=10"
+          },
+          {
+            "fetched_at": "2026-11-08T14:31:05.779249+00:00",
+            "page_hash": "909dfbe59fa3a8cb686d12fe9c6f8df9dc16e2e6c9b0b9b7b536362252d8c941",
+            "url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=11"
+          }
+        ],
+        "source_rows_observed": 3673,
+        "status": "collected",
+        "stored_coverage": "public linked listing pages only; not all prefectural shrines",
+        "stored_pages_fetched": 98
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:19.055234+00:00",
+          "effective_url": "http://www.shizuoka-jinjacho.or.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP Error 404: Not Found",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://www.shizuoka-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地域別area.php?area=番号と検索。",
+        "checked_at": "2026-11-08T13:14:19.055234+00:00",
+        "coverage_explanation": "静岡県の神社を6地域に分け紹介。包括数と掲載数は別。",
+        "published_fields": "検索入口のみ。個別項目未確認。"
+      },
+      "listing_urls": [
+        "http://www.shizuoka-jinjacho.or.jp/shokai/"
+      ],
+      "official_url": "http://www.shizuoka-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:19.055234+00:00",
+        "evidence": "トップ本文で神社本庁地方事務所・県内2800余社包括と説明。静岡市葵区柚木の所在地を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:19.055234+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "http://www.shizuoka-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:02.436881+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "http://www.shizuoka-jinjacho.or.jp/shokai/"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "静岡県",
+      "prefecture_code": "22"
+    },
+    {
+      "agency_name": "愛知県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://aichi-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 3176,
+          "entry_status_counts": {
+            "pending": 4,
+            "verified": 3172
+          },
+          "facilities": 3176,
+          "facility_status_counts": {
+            "pending": 3,
+            "verified": 3173
+          },
+          "path": "data/sources/aichi.json",
+          "verified_entries": 3172,
+          "verified_facilities": 3173
+        },
+        "checked_at": null,
+        "facilities_collected": 3176,
+        "fields_observed": {
+          "address": 3175,
+          "facility_official_url": 150,
+          "name": 3176,
+          "reading_raw": 3176
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:24:58.212691+00:00",
+            "sha256": "0a2913470a2d750aebfccb4842352aa26055060561c2ab26c16ec9374313b178",
+            "url": "https://aichi-jinjacho.or.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:00.385709+00:00",
+            "sha256": "3bd22df68f1b706c954fe183f194dc6dabbfa9c827fb73922910a1014a4551f9",
+            "url": "https://aichi-jinjacho.or.jp/search_map.html"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "method": "公式公開検索画面の69地域選択肢を使うPOST API。全3176行を取得。",
+        "pages_fetched": 4,
+        "public_api": {
+          "area_choices_observed": 69,
+          "method": "POST",
+          "official_script_url": "https://aichi-jinjacho.or.jp/assets/js/search.js?mode=query",
+          "official_template_url": "https://aichi-jinjacho.or.jp/search_result.html",
+          "total_rows": 3176,
+          "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+        },
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T15:00:27.789308+00:00",
+          "2026-11-08T15:00:27.789308+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 1,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T15:00:27.789308+00:00",
+            "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
+            "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+          }
+        ],
+        "source_rows_observed": 3176,
+        "status": "collected",
+        "stored_coverage": "all area choices shown by official public search UI; complete API response, not all prefectural shrines",
+        "stored_pages_fetched": 4
+      },
+      "conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:19.468535+00:00",
+          "effective_url": "https://aichi-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://aichi-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地図・条件検索・漢字入力検索。JavaScriptと送信仕様未確認。",
+        "checked_at": "2026-11-08T13:14:19.468535+00:00",
+        "coverage_explanation": "神社の意向により掲載しない地域があると明記。住所合併で検索に出ない場合もある。",
+        "published_fields": "検索入口のみ。個別施設項目未確認。"
+      },
+      "listing_urls": [
+        "https://aichi-jinjacho.or.jp/search_map.html"
+      ],
+      "official_url": "https://aichi-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-09",
+        "evidence": "神社新報社の実閲覧リンク集で愛知県神社庁名とaichi-jinjacho.or.jpへのリンクを確認。同ドメインの実閲覧トップで愛知県神社庁の表題と同庁の著作権表示、既閲覧の公式検索入口で県内神社調査・参詣者への周知という目的説明を確認。外部リンクとサイト自身の運営主体・公開目的を組み合わせ、公式な位置づけを確認した。運営者の住所は未確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:19.468535+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://aichi-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:02.814301+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://aichi-jinjacho.or.jp/search_map.html"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:03.901738+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://aichi-jinjacho.or.jp/ujigami.html"
+          },
+          {
+            "checked_on": "2026-11-09",
+            "evidence": "愛知県神社庁の名称とhttp://aichi-jinjacho.or.jp/へのリンクを確認。",
+            "inspection_status": "opened",
+            "timezone": "Asia/Tokyo",
+            "url": "https://www.jinja.co.jp/link.html"
+          },
+          {
+            "checked_on": "2026-11-09",
+            "evidence": "表題「愛知県神社庁」、フッター「(C)AICHIKENJINJACHO,All Rights Reserved.」を確認。",
+            "inspection_status": "opened",
+            "timezone": "Asia/Tokyo",
+            "url": "https://aichi-jinjacho.or.jp/"
+          }
+        ],
+        "initial_evidence": "愛知県神社庁の表題と同庁著作権表示を確認。運営者所在地の本文は追加確認が必要。",
+        "initial_status": "要追加確認",
+        "operator_address_verified": false,
+        "status": "verified_opened",
+        "verification_method": "外部の名称付きリンクだけで確定せず、実際に開いたリンク先自身の庁名・著作権表示・神社検索の公開目的と突合した判断。"
+      },
+      "prefecture": "愛知県",
+      "prefecture_code": "23"
+    },
+    {
+      "agency_name": "三重県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.mie-jinjachou.page/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:24:58.422903+00:00",
+            "sha256": "e8a2b779fd71db51d2453561f6dcbb8338f7fe4d29647bc6301d534e4b1b887c",
+            "url": "https://www.mie-jinjachou.page/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:00.584962+00:00",
+            "sha256": "9eb10effc7a98598bcac0a9a6ef8b036b76acb55068e8047396f21b5966bc5d7",
+            "url": "https://www.mie-jinjachou.page/%E4%B8%89%E9%87%8D%E7%9C%8C%E3%81%AE%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "公式桑名市・桑名郡HTMLで104社の見出しとTable Master埋込を実確認。viewer-modelが示すwidgetUrlはwix-visual-data.appspot.com/index。同hostのrobots.txtはHTTP401で方針不明となり既存Clientが取得停止。画像を取得せず、施設名・読みを推定しない。",
+        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "additional_robots_inspection": {
+          "http_status": 401,
+          "outcome": "埋込Table Master配信元の方針を取得できず収集停止。確認日時の詳細は未記録。",
+          "url": "https://wix-visual-data.appspot.com/robots.txt"
+        },
+        "data_use_conditions": "フッターにダウンロード可能なPDF以外の画像保存不可の表示。画像は保存していない。辞書用テキストの再利用許諾は未確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:19.524701+00:00",
+          "effective_url": "https://www.mie-jinjachou.page/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.mie-jinjachou.page/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "Wixの市町別静的ページ。別途教化委員会サイトへ公式リンクあり。",
+        "checked_at": "2026-11-08T13:14:19.524701+00:00",
+        "coverage_explanation": "県内各市町別鎮座地一覧への入口。815は組織数で今回の収集数ではない。 桑名市・桑名郡104社という地域ページの見出しは確認、全施設本文は未確認。",
+        "published_fields": "桑名市・桑名郡ページの104社という見出しを確認。施設一覧本文は取得テキストに現れず、埋込/画像等の確認が必要。"
+      },
+      "listing_urls": [
+        "https://www.mie-jinjachou.page/%E4%B8%89%E9%87%8D%E7%9C%8C%E3%81%AE%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
+      ],
+      "official_url": "https://www.mie-jinjachou.page/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:19.524701+00:00",
+        "evidence": "公式サイトの表題、神社本庁地方機関で三重県内815神社で組織との本文、津市鳥居町の所在地を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:19.524701+00:00",
+            "http_status": 200,
+            "purpose": "公式候補トップ本文",
+            "url": "https://www.mie-jinjachou.page/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:03.426897+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "検索/一覧/組織/規約の本文",
+            "url": "https://www.mie-jinjachou.page/%E4%B8%89%E9%87%8D%E7%9C%8C%E3%81%AE%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
+          },
+          {
+            "checked_at": "2026-11-08T13:17:05.052009+00:00",
+            "error": null,
+            "http_status": 200,
+            "purpose": "追加の地域一覧/施設詳細/組織説明",
+            "url": "https://www.mie-jinjachou.page/%E6%A1%91%E5%90%8D%E5%B8%82-%E6%A1%91%E5%90%8D%E9%83%A1"
+          }
+        ],
+        "initial_status": "確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "三重県",
+      "prefecture_code": "24"
+    },
+    {
+      "agency_name": "滋賀県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.shiga-jinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1434,
+          "entry_status_counts": {
+            "pending": 1434
+          },
+          "facilities": 1434,
+          "facility_status_counts": {
+            "verified": 1434
+          },
+          "path": "data/sources/shiga.json",
+          "verified_entries": 0,
+          "verified_facilities": 1434
+        },
+        "checked_at": null,
+        "facilities_collected": 1434,
+        "fields_observed": {
+          "address": 1434,
+          "facility_official_url": 0,
+          "name": 1434,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [
+          {
+            "error": "'utf-8' codec can't decode byte 0x8e in position 281: invalid start byte",
+            "url": "https://www.shiga-jinjacho.jp/"
+          },
+          {
+            "error": "'utf-8' codec can't decode byte 0x8e in position 358: invalid start byte",
+            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?view:term=10"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 15,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:05.535228+00:00",
+          "2026-11-08T14:31:25.262663+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 15,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:28:05.535228+00:00",
+            "page_hash": "8fd9aee63b3bdc65452bd1dfcebd583cb96b98a73bc42872a8da9c36488c4279",
+            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100"
+          },
+          {
+            "fetched_at": "2026-11-08T14:30:49.105955+00:00",
+            "page_hash": "721a94dc54ff7c794f68db4a92215d011f40aa198b4de9264c4baf72e9c5b17a",
+            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=2"
+          },
+          {
+            "fetched_at": "2026-11-08T14:30:51.555619+00:00",
+            "page_hash": "f39521c8b0b953bb3788301c98f5b4ac2a5aaf836a6ddddead40ab440a30a35c",
+            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=3"
+          }
+        ],
+        "source_rows_observed": 1434,
+        "status": "collected",
+        "stored_coverage": "public linked listing pages only; not all prefectural shrines",
+        "stored_pages_fetched": 15
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:34.653481+00:00",
+          "effective_url": "https://www.shiga-jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.shiga-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "検索画面は祭神・郵便番号・祭礼日、50音/市区町村等ソート、10〜100件表示のフォーム。個別施設未閲覧。",
+        "checked_at": "2026-11-08T13:14:34.653481+00:00",
+        "coverage_explanation": "掲載総数・現在の網羅性は未確認。",
+        "published_fields": "神社検索フォームを閲覧。名称・読み・住所・施設公式URLの実レコード掲載は未確認。"
+      },
+      "listing_urls": [
+        "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?view:term=10"
+      ],
+      "official_url": "https://www.shiga-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:34.653481+00:00",
+        "evidence": "沿革ページで滋賀県神社庁の設立経緯、庁規認可と開庁を説明。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:34.653481+00:00",
+            "requested_url": "https://www.shiga-jinjacho.jp/",
+            "status": 200,
+            "url": "https://www.shiga-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:23.582030+00:00",
+            "requested_url": "https://www.shiga-jinjacho.jp/about.html",
+            "status": 200,
+            "url": "https://www.shiga-jinjacho.jp/about.html"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:24.810000+00:00",
+            "requested_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?view:term=10",
+            "status": 200,
+            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?view:term=10"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "滋賀県",
+      "prefecture_code": "25"
+    },
+    {
+      "agency_name": "京都府神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://www.kyoto-jinjacho.or.jp/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [
+          {
+            "error": "'utf-8' codec can't decode byte 0x8b in position 315: invalid start byte",
+            "url": "http://www.kyoto-jinjacho.or.jp/"
+          },
+          {
+            "error": "'utf-8' codec can't decode byte 0x8b in position 97: invalid start byte",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:06.988761+00:00",
+            "sha256": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "公式に「No reproduction or republication without written permission」「記事・写真の無断転載を禁じます」。再配布条件未解決のため施設一括収集を停止。公式入口と右京区一覧を実閲覧。",
+        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "data_use_conditions": "記事・写真は書面許可なしの転載再出版を禁止。辞書事実データ利用の条件は要確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:34.653823+00:00",
+          "effective_url": "http://www.kyoto-jinjacho.or.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://www.kyoto-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地域別HTML一覧へのリンクを開く方法。",
+        "checked_at": "2026-11-08T13:14:34.653823+00:00",
+        "coverage_explanation": "神社庁包括神社、21支部・約1570社との説明。実掲載数とは区別。",
+        "published_fields": "右京区一覧で神社名・郵便番号・所在地・一部電話を確認。名称読みは一部括弧注記以外に専用欄なし。"
+      },
+      "listing_urls": [
+        "http://www.kyoto-jinjacho.or.jp/shrine.html",
+        "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+      ],
+      "official_url": "http://www.kyoto-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:34.653823+00:00",
+        "evidence": "トップに京都府神社庁の著作権表示、所在地・電話、庁所属神社紹介の説明。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:34.653823+00:00",
+            "requested_url": "http://www.kyoto-jinjacho.or.jp/",
+            "status": 200,
+            "url": "http://www.kyoto-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:23.582476+00:00",
+            "requested_url": "http://www.kyoto-jinjacho.or.jp/shrine.html",
+            "status": 200,
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine.html"
+          },
+          {
+            "checked_at": "2026-11-08T13:16:05.385087+00:00",
+            "requested_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
+            "status": 200,
+            "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "京都府",
+      "prefecture_code": "26"
+    },
+    {
+      "agency_name": "大阪府神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.osaka-jinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 573,
+          "entry_status_counts": {
+            "verified": 573
+          },
+          "facilities": 573,
+          "facility_status_counts": {
+            "verified": 573
+          },
+          "path": "data/sources/osaka.json",
+          "verified_entries": 573,
+          "verified_facilities": 573
+        },
+        "checked_at": null,
+        "facilities_collected": 573,
+        "fields_observed": {
+          "address": 573,
+          "facility_official_url": 0,
+          "name": 573,
+          "reading_raw": 573
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:25:02.912950+00:00",
+            "sha256": "d0018feb7ac317e97e523ac255e5e16b0a42b39f710ff587563936eb71c4ce11",
+            "url": "https://www.osaka-jinjacho.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:05.014609+00:00",
+            "sha256": "3cc9a80f67e9bd6f0e002d114509c526e2073c90310d35b1cc3c33115d5f8661",
+            "url": "https://www.osaka-jinjacho.jp/funai_jinja/index.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:07.087508+00:00",
+            "sha256": "ce97cbb460b102a9d9076fe3e6c00559404485829529c1c6e99cef6661a64417",
+            "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/toyonaka.html"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 67,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:25:07.087508+00:00",
+          "2026-11-08T14:29:49.988055+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 52,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:27:27.073169+00:00",
+            "page_hash": "0ee65e90471a97901fbad0261d20f6346bcdfe82ecb8dcb01edd5d17a8449f78",
+            "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumi-city/izumi.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:29.145512+00:00",
+            "page_hash": "a7d7c47393e93fd7ba22063290a589b13777c5435ff8a0c5364100e0e5b345e1",
+            "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/izumiotsu-city/izumiotsu.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:31.208544+00:00",
+            "page_hash": "1a75dd2ab51bd0e60b146f3ec0c9dacf33754c370fe84948d60e479c073c63fe",
+            "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai10shibu/sakai-city/sakai.html"
+          }
+        ],
+        "source_rows_observed": 573,
+        "status": "collected",
+        "stored_coverage": "public linked listing pages only; not all prefectural shrines",
+        "stored_pages_fetched": 67
+      },
+      "conditions": {
+        "data_use_conditions": "画像の複製・コピーを禁止。事実データ利用と再配布許諾は未確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:34.653906+00:00",
+          "effective_url": "https://www.osaka-jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.osaka-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "支部/行政区別の静的HTML一覧と個別ページリンク。",
+        "checked_at": "2026-11-08T13:14:34.653906+00:00",
+        "coverage_explanation": "宗教法人登録している神社のみ、行政区ごと掲載と明記。",
+        "published_fields": "豊中市の神社名・括弧付きひらがな読み・通称名・町名までの鎮座地を確認。加盟/非加盟を区分。"
+      },
+      "listing_urls": [
+        "https://www.osaka-jinjacho.jp/funai_jinja/index.html",
+        "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/toyonaka.html"
+      ],
+      "official_url": "https://www.osaka-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:34.653906+00:00",
+        "evidence": "トップに大阪府神社庁の所在地・電話・著作権表示。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:34.653906+00:00",
+            "requested_url": "https://www.osaka-jinjacho.jp/",
+            "status": 200,
+            "url": "https://www.osaka-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:23.582545+00:00",
+            "requested_url": "https://www.osaka-jinjacho.jp/funai_jinja/index.html",
+            "status": 200,
+            "url": "https://www.osaka-jinjacho.jp/funai_jinja/index.html"
+          },
+          {
+            "checked_at": "2026-11-08T13:16:05.385476+00:00",
+            "requested_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/toyonaka.html",
+            "status": 200,
+            "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai1shibu/toyonaka-city/toyonaka.html"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "大阪府",
+      "prefecture_code": "27"
+    },
+    {
+      "agency_name": "兵庫県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.hyogo-jinjacho.com/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:25:02.986700+00:00",
+            "sha256": "eb2bcbc7cc372ec12d5f807cfec5f7f7373124b00e168e363c3519cd1e4f8c5c",
+            "url": "https://www.hyogo-jinjacho.com/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:05.078616+00:00",
+            "sha256": "a47d389a22bfca024cbb244758ffb42f78b0557ee8af5d8634fa98ef3fd596f2",
+            "url": "https://www.hyogo-jinjacho.com/search.html"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "公式に記事・写真の無断転載禁止。公式検索JSの地図範囲XMLと施設HTMLの構造は確認したが、条件未解決のため施設一括収集しない。",
+        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "data_use_conditions": "記事・写真の無断転載を禁止。辞書利用の範囲は要確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:34.655099+00:00",
+          "effective_url": "https://www.hyogo-jinjacho.com/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.hyogo-jinjacho.com/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "住所入力、地図のマーカー/右側神社名、詳細を開く検索。検索実行・API未確認。",
+        "checked_at": "2026-11-08T13:14:34.655099+00:00",
+        "coverage_explanation": "県内3800余社を包括との組織説明。検索掲載総数の説明は未確認。",
+        "published_fields": "検索説明に神社名・詳細・連絡先がある。読み等の実レコードは未確認。"
+      },
+      "listing_urls": [
+        "https://www.hyogo-jinjacho.com/search.html"
+      ],
+      "official_url": "https://www.hyogo-jinjacho.com/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:34.655099+00:00",
+        "evidence": "トップで県内3800余社を包括する神社本庁の地方機関と明記。所在地・電話も掲載。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:34.655099+00:00",
+            "requested_url": "https://www.hyogo-jinjacho.com/",
+            "status": 200,
+            "url": "https://www.hyogo-jinjacho.com/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:23.582593+00:00",
+            "requested_url": "https://www.hyogo-jinjacho.com/search.html",
+            "status": 200,
+            "url": "https://www.hyogo-jinjacho.com/search.html"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "兵庫県",
+      "prefecture_code": "28"
+    },
+    {
+      "agency_name": "奈良県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.naraken-jinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1303,
+          "entry_status_counts": {
+            "verified": 1303
+          },
+          "facilities": 1303,
+          "facility_status_counts": {
+            "verified": 1303
+          },
+          "path": "data/sources/nara.json",
+          "verified_entries": 1303,
+          "verified_facilities": 1303
+        },
+        "checked_at": null,
+        "facilities_collected": 1303,
+        "fields_observed": {
+          "address": 1303,
+          "facility_official_url": 16,
+          "name": 1303,
+          "reading_raw": 1303
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:25:03.092000+00:00",
+            "sha256": "23871adfe4262ae8accc04fb3c087689004c159eaf87a968d0a668843f7e731e",
+            "url": "https://www.naraken-jinjacho.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:05.170857+00:00",
+            "sha256": "ea2a771108e5078dcdba6451a4751dbe61ef48319f9b9fa56fc00623c6f6e332",
+            "url": "https://www.naraken-jinjacho.jp/jinja.html"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 13,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:25:05.170857+00:00",
+          "2026-11-08T14:27:50.360497+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 13,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:25:05.170857+00:00",
+            "page_hash": "ea2a771108e5078dcdba6451a4751dbe61ef48319f9b9fa56fc00623c6f6e332",
+            "url": "https://www.naraken-jinjacho.jp/jinja.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:27.141262+00:00",
+            "page_hash": "cfdb6badd4298dcb15ac897aec6d511344ebdbafe687912e26811ab1b54988d6",
+            "url": "https://www.naraken-jinjacho.jp/jinja02.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:29.213718+00:00",
+            "page_hash": "7b3886bdf48f5dfdc200539b51e5aefc528e7a1a143c05a8bd8f6120cfbac5f1",
+            "url": "https://www.naraken-jinjacho.jp/jinja03.html"
+          }
+        ],
+        "source_rows_observed": 1304,
+        "status": "collected",
+        "stored_coverage": "public linked listing pages only; not all prefectural shrines",
+        "stored_pages_fetched": 13
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:34.655159+00:00",
+          "effective_url": "https://www.naraken-jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.naraken-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "地域別の静的HTML表。奈良市の一覧本文を確認。",
+        "checked_at": "2026-11-08T13:14:34.655159+00:00",
+        "coverage_explanation": "地域を選ぶ一覧。全地域ページ/網羅性は未確認。",
+        "published_fields": "神社名・ひらがな読み・郵便番号・住所・一部公式サイトリンクを奈良市表で確認。"
+      },
+      "listing_urls": [
+        "https://www.naraken-jinjacho.jp/jinja.html"
+      ],
+      "official_url": "https://www.naraken-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:34.655159+00:00",
+        "evidence": "トップに奈良県神社庁の住所、電話、著作権表示、庁紹介リンク。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:34.655159+00:00",
+            "requested_url": "https://www.naraken-jinjacho.jp/",
+            "status": 200,
+            "url": "https://www.naraken-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:23.584008+00:00",
+            "requested_url": "https://www.naraken-jinjacho.jp/jinja.html",
+            "status": 200,
+            "url": "https://www.naraken-jinjacho.jp/jinja.html"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "奈良県",
+      "prefecture_code": "29"
+    },
+    {
+      "agency_name": "和歌山県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://wakayama-jinjacho.or.jp/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:25:03.175260+00:00",
+            "sha256": "d2d59a635bdecc063276df867f672ea1a6938fb2b1074985633a610e2f1e6de3",
+            "url": "https://wakayama-jinjacho.or.jp/"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "公式本文にリニューアル作業に伴い一時的にサイト内全ページへのアクセス停止と明記。トップ本文を実確認。",
+        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:36.041107+00:00",
+          "effective_url": "https://wakayama-jinjacho.or.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://wakayama-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "現在の直接GETは改修で全ページ停止の案内。検索ツールの古い表示と差があるため停止を優先。",
+        "checked_at": "2026-11-08T13:14:36.041107+00:00",
+        "coverage_explanation": "全ページ停止と明記。旧検索の掲載範囲は現在未確認。",
+        "published_fields": "現在の直接GETには施設項目なし。"
+      },
+      "listing_urls": [],
+      "official_url": "https://wakayama-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:36.041107+00:00",
+        "evidence": "現在のトップに和歌山県神社庁の名称、和歌浦南の住所・電話を掲載。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:36.041107+00:00",
+            "requested_url": "https://wakayama-jinjacho.or.jp/",
+            "status": 200,
+            "url": "https://wakayama-jinjacho.or.jp/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "和歌山県",
+      "prefecture_code": "30"
+    },
+    {
+      "agency_name": "鳥取県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://tottori-jinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 819,
+          "entry_status_counts": {
+            "pending": 23,
+            "verified": 796
+          },
+          "facilities": 819,
+          "facility_status_counts": {
+            "verified": 819
+          },
+          "path": "data/sources/tottori.json",
+          "verified_entries": 796,
+          "verified_facilities": 819
+        },
+        "checked_at": null,
+        "facilities_collected": 819,
+        "fields_observed": {
+          "address": 819,
+          "facility_official_url": 0,
+          "name": 819,
+          "reading_raw": 811
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:25:03.324892+00:00",
+            "sha256": "ed20fca8bc9e06a0a260343635a4a597095acec174ffd8128181757ac046de77",
+            "url": "https://tottori-jinjacho.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:05.442323+00:00",
+            "sha256": "8d4093331764f63ad87c4e668fa446fb1c1e1f7849bf9063791b55f20e563eb7",
+            "url": "https://tottori-jinjacho.jp/pages/961/"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 835,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:08.292802+00:00",
+          "2026-11-08T15:16:35.749939+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 814,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:37:09.755170+00:00",
+            "page_hash": "fbf3c43cab0466652c230fe26a5418adc46e308318f0dea993167c883b71d82c",
+            "url": "https://tottori-jinjacho.jp/pages/57/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:37:23.567477+00:00",
+            "page_hash": "c0960c5757b8b8102627c1ae2a434a0ffc1bed84a317ccde388e0c3a01804092",
+            "url": "https://tottori-jinjacho.jp/pages/62/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:37:45.384173+00:00",
+            "page_hash": "04e3750ca2b4b7e3a2907497a7f96c339651ef3516d80c0b634e900f5d337cdb",
+            "url": "https://tottori-jinjacho.jp/pages/70/"
+          }
+        ],
+        "source_rows_observed": 819,
+        "status": "collected",
+        "stored_coverage": "all linked public listing pages visited; not all prefectural shrines",
+        "stored_pages_fetched": 835
+      },
+      "conditions": {
+        "data_use_conditions": "サイトポリシーは個々の情報と全体の著作権、私的使用・引用等法上認められる行為と出所明示、無断改変不可を説明。公開辞書の再配布許諾は未確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:36.095117+00:00",
+          "effective_url": "https://tottori-jinjacho.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://tottori-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": [
+          {
+            "inspection_status": "opened",
+            "url": "https://tottori-jinjacho.jp/pages/7/"
+          }
+        ]
+      },
+      "initial_survey": {
+        "acquisition_method": "市町村別静的ページ。鳥取地域の番号・名称・鎮座地表を閲覧。",
+        "checked_at": "2026-11-08T13:14:36.095117+00:00",
+        "coverage_explanation": "県内すべての神社を包括するとの組織説明。市町村別一覧の実総数未確認。",
+        "published_fields": "神社名・鎮座地を確認。閲覧表に読みなし。施設公式URLの網羅性未確認。"
+      },
+      "listing_urls": [
+        "https://tottori-jinjacho.jp/pages/961/"
+      ],
+      "official_url": "https://tottori-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:36.095117+00:00",
+        "evidence": "トップが鳥取縣神社廳公式ホームページを名乗り、神社本庁地方事務所の組織説明、住所・電話と法人著作権表示。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:36.095117+00:00",
+            "requested_url": "https://tottori-jinjacho.jp/",
+            "status": 200,
+            "url": "https://tottori-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:24.791515+00:00",
+            "requested_url": "https://tottori-jinjacho.jp/pages/961/",
+            "status": 200,
+            "url": "https://tottori-jinjacho.jp/pages/961/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:26.866423+00:00",
+            "requested_url": "https://tottori-jinjacho.jp/pages/7/",
+            "status": 200,
+            "url": "https://tottori-jinjacho.jp/pages/7/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "鳥取県",
+      "prefecture_code": "31"
+    },
+    {
+      "agency_name": "島根県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.shimane-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1123,
+          "entry_status_counts": {
+            "pending": 1123
+          },
+          "facilities": 1123,
+          "facility_status_counts": {
+            "verified": 1123
+          },
+          "path": "data/sources/shimane.json",
+          "verified_entries": 0,
+          "verified_facilities": 1123
+        },
+        "checked_at": null,
+        "facilities_collected": 1123,
+        "fields_observed": {
+          "address": 1123,
+          "facility_official_url": 0,
+          "name": 1123,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-08T14:25:03.387746+00:00",
+            "sha256": "2a8ec4182115fe86d0aca3f875ccf203744a9c3aa0ead75074dcb3eff3574230",
+            "url": "https://www.shimane-jinjacho.or.jp/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:05.626211+00:00",
+            "sha256": "4d3606feed65bc81b4e67d14e587545f64794f22276b6c62787d2419e6a48a00",
+            "url": "https://www.shimane-jinjacho.or.jp/search/index.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:25:07.706952+00:00",
+            "sha256": "20e66778928120a2f7fb6b75a32a4585c7bbc716fb52814f6513add2fddb7f86",
+            "url": "https://www.shimane-jinjacho.or.jp/matsue/index.html"
+          }
+        ],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 20,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:25:07.706952+00:00",
+          "2026-11-08T14:28:02.895690+00:00"
+        ],
+        "remaining_scope": {
+          "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
+          "errors": [],
+          "reading_completion": "要確認の読みは推定せず未確定を保持",
+          "unvisited": []
+        },
+        "saved_listing_page_count": 19,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:27:27.006358+00:00",
+            "page_hash": "a6ca6d699835c4a9d095b4ef0f9aa2d43838cf083e8532fba07f082766ccd47a",
+            "url": "https://www.shimane-jinjacho.or.jp/ama/index.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:29.072383+00:00",
+            "page_hash": "0001f3ca04879dbd08db2a84e13a75561feaa233381223d1300e9196f8105114",
+            "url": "https://www.shimane-jinjacho.or.jp/chibumura/index.html"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:31.135741+00:00",
+            "page_hash": "e0a7a96359614a5fa57b23df5e5c8528f1461e42d6a09ad1d66e4eac4fa3b462",
+            "url": "https://www.shimane-jinjacho.or.jp/gotsu/index.html"
+          }
+        ],
+        "source_rows_observed": 1123,
+        "status": "collected",
+        "stored_coverage": "public linked listing pages only; not all prefectural shrines",
+        "stored_pages_fetched": 20
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:36.102835+00:00",
+          "effective_url": "https://www.shimane-jinjacho.or.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.shimane-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "市町村リンクをたどるHTML一覧。",
+        "checked_at": "2026-11-08T13:14:36.102835+00:00",
+        "coverage_explanation": "管内1158社との組織説明。掲載数と一致するか未検証。",
+        "published_fields": "松江市の表は神社名正称・主祭神・鎮座地・御神徳。閲覧範囲で名称読みなし。"
+      },
+      "listing_urls": [
+        "https://www.shimane-jinjacho.or.jp/search/index.html",
+        "https://www.shimane-jinjacho.or.jp/matsue/index.html"
+      ],
+      "official_url": "https://www.shimane-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:36.102835+00:00",
+        "evidence": "概要で神社本庁の地方機関、管内1158社・19支部と明記。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:36.102835+00:00",
+            "requested_url": "https://www.shimane-jinjacho.or.jp/",
+            "status": 200,
+            "url": "https://www.shimane-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:24.809567+00:00",
+            "requested_url": "https://www.shimane-jinjacho.or.jp/profile/index.html",
+            "status": 200,
+            "url": "https://www.shimane-jinjacho.or.jp/profile/index.html"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:25.866853+00:00",
+            "requested_url": "https://www.shimane-jinjacho.or.jp/search/index.html",
+            "status": 200,
+            "url": "https://www.shimane-jinjacho.or.jp/search/index.html"
+          },
+          {
+            "checked_at": "2026-11-08T13:16:05.385571+00:00",
+            "requested_url": "https://www.shimane-jinjacho.or.jp/matsue/index.html",
+            "status": 200,
+            "url": "https://www.shimane-jinjacho.or.jp/matsue/index.html"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "島根県",
+      "prefecture_code": "32"
+    },
+    {
+      "agency_name": "岡山県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.okayama-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1609,
+          "entry_status_counts": {
+            "pending": 2,
+            "verified": 1607
+          },
+          "facilities": 1609,
+          "facility_status_counts": {
+            "verified": 1609
+          },
+          "path": "data/sources/okayama.json",
+          "verified_entries": 1607,
+          "verified_facilities": 1609
+        },
+        "checked_at": null,
+        "facilities_collected": 1609,
+        "fields_observed": {
+          "address": 1609,
+          "facility_official_url": 0,
+          "name": 1609,
+          "reading_raw": 1609
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 81,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:25:24.191824+00:00",
+          "2026-11-08T14:30:28.358768+00:00"
+        ],
+        "remaining_scope": "pending2件の公式照合、再配布条件確認。",
+        "saved_listing_page_count": 81,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:25:24.191824+00:00",
+            "page_hash": "4170b8cd4305075d9f8397a562e34ab990987d73dcc6f939a17e2a94236c8c86",
+            "url": "https://www.okayama-jinjacho.or.jp/search/list/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:22.706820+00:00",
+            "page_hash": "f25bc8bcb6b03e86b9a102f221aa4c891811677d651c3dc1f7d17404f070b092",
+            "url": "https://www.okayama-jinjacho.or.jp/search/list/page/2/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:25.020935+00:00",
+            "page_hash": "8e1e8059fc13845f0ebb3d140634b94ac8a4f5db14b1495fc76cb85f68531420",
+            "url": "https://www.okayama-jinjacho.or.jp/search/list/page/81/"
+          }
+        ],
+        "source_rows_observed": 1609,
+        "status": "collected",
+        "stored_coverage": "observed official listings only; not all shrines in the prefecture",
+        "stored_pages_fetched": 81
+      },
+      "conditions": {
+        "data_use_conditions": "プライバシーポリシーは個人情報取扱いの説明。データ抽出/公開辞書への再配布許諾は見つからず未確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:36.192243+00:00",
+          "effective_url": "https://www.okayama-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.okayama-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": [
+          {
+            "inspection_status": "opened",
+            "url": "https://www.okayama-jinjacho.or.jp/privacy"
+          }
+        ]
+      },
+      "initial_survey": {
+        "acquisition_method": "全件一覧は20件/ページで1〜81・次へリンク。神社名から詳細へ進む。",
+        "checked_at": "2026-11-08T13:14:36.192243+00:00",
+        "coverage_explanation": "全件一覧に1609件が該当と表示。1ページ目のみ実閲覧、収集総数ではない。",
+        "published_fields": "神社コード・神社名・神社名カナ・通称名・郵便番号付き鎮座地・電話等。施設公式URLは詳細未閲覧のため未確認。"
+      },
+      "listing_urls": [
+        "https://www.okayama-jinjacho.or.jp/search/list/"
+      ],
+      "official_url": "https://www.okayama-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:36.192243+00:00",
+        "evidence": "組織概要で組織名岡山県神社庁、住所、電話、同一ドメイン連絡先を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:36.192243+00:00",
+            "requested_url": "https://www.okayama-jinjacho.or.jp/",
+            "status": 200,
+            "url": "https://www.okayama-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:24.825985+00:00",
+            "requested_url": "https://www.okayama-jinjacho.or.jp/search/list/",
+            "status": 200,
+            "url": "https://www.okayama-jinjacho.or.jp/search/list/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:26.134396+00:00",
+            "requested_url": "https://www.okayama-jinjacho.or.jp/privacy",
+            "status": 200,
+            "url": "https://www.okayama-jinjacho.or.jp/privacy/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:27.632989+00:00",
+            "requested_url": "https://www.okayama-jinjacho.or.jp/about/profile",
+            "status": 200,
+            "url": "https://www.okayama-jinjacho.or.jp/about/profile/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "岡山県",
+      "prefecture_code": "33"
+    },
+    {
+      "agency_name": "広島県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.hiroshima-jinjacho.jp/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "公式トップと神社一覧で「本サイト内における情報・画像の無断使用を禁止します」を今回再確認。一括抽出停止。",
+        "remaining_scope": "利用許諾確認が必要。",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "data_use_conditions": "情報・画像の無断使用を禁止と明記。許可なしの一括抽出/再配布は保留。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:36.417727+00:00",
+          "effective_url": "https://www.hiroshima-jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.hiroshima-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "市町地図から一覧表示。初期表示は広島市東区。",
+        "checked_at": "2026-11-08T13:14:36.417727+00:00",
+        "coverage_explanation": "24支部・2400社余りとの組織説明。検索の掲載総数未検証。",
+        "published_fields": "神社名・通称名・所在地・電話、地図でURL等。閲覧表に名称読み欄なし。"
+      },
+      "listing_urls": [
+        "https://www.hiroshima-jinjacho.jp/hirosima_jinja/"
+      ],
+      "official_url": "https://www.hiroshima-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:36.417727+00:00",
+        "evidence": "トップで神社本庁の地方機関、24支部・2400社余りの取りまとめと明記。住所・電話あり。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:36.417727+00:00",
+            "requested_url": "https://www.hiroshima-jinjacho.jp/",
+            "status": 200,
+            "url": "https://www.hiroshima-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:25.910998+00:00",
+            "requested_url": "https://www.hiroshima-jinjacho.jp/hirosima_jinja/",
+            "status": 200,
+            "url": "https://www.hiroshima-jinjacho.jp/hirosima_jinja/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "広島県",
+      "prefecture_code": "34"
+    },
+    {
+      "agency_name": "山口県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.yamaguchi-jinjacho.or.jp/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "公式policyで「許可なく複製、転用、販売などに利用することは固く禁じます」を今回再確認。一括抽出停止。",
+        "remaining_scope": "利用許諾確認が必要。",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "data_use_conditions": "情報・資料・画像等について許可なしの複製、転用、販売を禁止。許可なしの一括抽出/再配布は保留。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:37.193571+00:00",
+          "effective_url": "https://www.yamaguchi-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.yamaguchi-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": [
+          {
+            "inspection_status": "opened",
+            "url": "https://www.yamaguchi-jinjacho.or.jp/policy/"
+          }
+        ]
+      },
+      "initial_survey": {
+        "acquisition_method": "市町別の静的表と神社マップ。下関市一覧本文を閲覧。",
+        "checked_at": "2026-11-08T13:14:37.193571+00:00",
+        "coverage_explanation": "トップ見出し750社、本文743社という差がある。掲載総数として採用しない。",
+        "published_fields": "神社名・ひらがなよみがな・住所・電話番号を確認。公式URLの有無は追調査。"
+      },
+      "listing_urls": [
+        "https://www.yamaguchi-jinjacho.or.jp/shimonoseki/"
+      ],
+      "official_url": "https://www.yamaguchi-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:37.193571+00:00",
+        "evidence": "トップで神社本庁の地方事務所、管内743社・10支部と説明。ポリシーで庁と代理人が運営と明記。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:37.193571+00:00",
+            "requested_url": "https://www.yamaguchi-jinjacho.or.jp/",
+            "status": 200,
+            "url": "https://www.yamaguchi-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:25.951152+00:00",
+            "requested_url": "https://www.yamaguchi-jinjacho.or.jp/shimonoseki/",
+            "status": 200,
+            "url": "https://www.yamaguchi-jinjacho.or.jp/shimonoseki/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:27.704214+00:00",
+            "requested_url": "https://www.yamaguchi-jinjacho.or.jp/policy/",
+            "status": 200,
+            "url": "https://www.yamaguchi-jinjacho.or.jp/policy/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "山口県",
+      "prefecture_code": "35"
+    },
+    {
+      "agency_name": "徳島県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://awa-jinjacho.jp/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [],
+        "listing_authority_status": "unconfirmed",
+        "pages_fetched": 0,
+        "reason": "候補 http://awa-jinjacho.jp/ と https://awa-jinjacho.jp/ 双方をClientで再確認。robots取得時にDNS名前解決失敗。公式本文未確認。",
+        "remaining_scope": "接続復旧後robotsと公式本文を実確認。",
+        "source_rows_observed": 0,
+        "status": "unresolved"
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:37.260146+00:00",
+          "effective_url": "http://awa-jinjacho.jp/robots.txt",
+          "http_status": null,
+          "outcome": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "http://awa-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "候補トップとrobots.txtはDNS解決失敗。アクセス制限の回避は未実施。",
+        "checked_at": "2026-11-08T13:14:37.260146+00:00",
+        "coverage_explanation": "未確認。",
+        "published_fields": "本文未閲覧。"
+      },
+      "listing_urls": [],
+      "official_url": null,
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:37.260146+00:00",
+        "evidence": null,
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:37.260146+00:00",
+            "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+            "requested_url": "http://awa-jinjacho.jp/"
+          }
+        ],
+        "initial_status": "未確認",
+        "status": "unconfirmed"
+      },
+      "prefecture": "徳島県",
+      "prefecture_code": "36"
+    },
+    {
+      "agency_name": "香川県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://kagawakenjinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 770,
+          "entry_status_counts": {
+            "pending": 770
+          },
+          "facilities": 770,
+          "facility_status_counts": {
+            "verified": 770
+          },
+          "path": "data/sources/kagawa.json",
+          "verified_entries": 0,
+          "verified_facilities": 770
+        },
+        "checked_at": null,
+        "facilities_collected": 770,
+        "fields_observed": {
+          "address": 770,
+          "facility_official_url": 0,
+          "name": 770,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 39,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:02.362041+00:00",
+          "2026-11-08T14:33:10.330088+00:00"
+        ],
+        "remaining_scope": "読み公式補完、再配布条件確認。",
+        "saved_listing_page_count": 39,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:28:02.362041+00:00",
+            "page_hash": "542fb2cd65a12bd32ee6173ccaf9035f757992cd3f8ce605878a1eb699cef316",
+            "url": "https://kagawakenjinjacho.or.jp/shrine/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:31:33.544063+00:00",
+            "page_hash": "2fe302aa2eeba99c5a40e61319f905ba34c5d499c7990bc762e27275058ac421",
+            "url": "https://kagawakenjinjacho.or.jp/shrine/page/2/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:31:36.565358+00:00",
+            "page_hash": "068d78e7b83a4a635f2a4fe8abd284e863b6acfd692e5aa52567479acce89f09",
+            "url": "https://kagawakenjinjacho.or.jp/shrine/page/39/"
+          }
+        ],
+        "source_rows_observed": 770,
+        "status": "collected",
+        "stored_coverage": "all discoverable listing pages",
+        "stored_pages_fetched": 39
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:37.666650+00:00",
+          "effective_url": "https://kagawakenjinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://kagawakenjinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "キーワード・市町村別検索、一覧は1〜39のページ送り。",
+        "checked_at": "2026-11-08T13:14:37.666650+00:00",
+        "coverage_explanation": "神社一覧の全ページ・掲載総数は未確認。",
+        "published_fields": "十二神社詳細に神社コード・名称・鎮座地・電話/FAX/祭神/URL欄。URL欄等は空で名称読み欄なし。"
+      },
+      "listing_urls": [
+        "https://kagawakenjinjacho.or.jp/shrine/",
+        "https://kagawakenjinjacho.or.jp/shrine/%e8%97%b7_%e7%a4%be/"
+      ],
+      "official_url": "https://kagawakenjinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:37.666650+00:00",
+        "evidence": "トップ本文が神社庁を神社本庁の地方事務所と説明し、香川県神社庁の著作権表示。 個別詳細で宗教法人香川県神社庁の高松市住所・電話を確認。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:37.666650+00:00",
+            "requested_url": "https://kagawakenjinjacho.or.jp/",
+            "status": 200,
+            "url": "https://kagawakenjinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:27.017039+00:00",
+            "requested_url": "https://kagawakenjinjacho.or.jp/shrine/",
+            "status": 200,
+            "url": "https://kagawakenjinjacho.or.jp/shrine/"
+          },
+          {
+            "checked_at": "2026-11-08T13:16:05.385639+00:00",
+            "requested_url": "https://kagawakenjinjacho.or.jp/shrine/%e8%97%b7_%e7%a4%be/",
+            "status": 200,
+            "url": "https://kagawakenjinjacho.or.jp/shrine/%e8%97%b7_%e7%a4%be/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "香川県",
+      "prefecture_code": "37"
+    },
+    {
+      "agency_name": "愛媛県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "http://ehime-jinjacho.jp/",
+      "collection": {
+        "api_coverage": {
+          "api_html_id_set_match": true,
+          "api_published_total": 1234,
+          "evidence": [
+            {
+              "fetched_at": "2026-11-08T14:43:40.438616+00:00",
+              "sha256": "22414c20cb290558acb3e9c49f0ab8a610343a369c245239cc8f6ba632a73e3c",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=1"
+            },
+            {
+              "fetched_at": "2026-11-08T14:43:43.517223+00:00",
+              "sha256": "5ed066dd9950a7629e27338f734b43216f5ac80bfdb8acb330a9b7af196f78be",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=2"
+            },
+            {
+              "fetched_at": "2026-11-08T14:43:46.828904+00:00",
+              "sha256": "285d779de75720042a1721c827ccf035d8a1f0ddda7e5c363897eb4003b0e62f",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=3"
+            },
+            {
+              "fetched_at": "2026-11-08T14:43:49.865919+00:00",
+              "sha256": "aff71fcbcbad7cd985df581696f61ad5d99046d22face8cd1b81535fc98c587a",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=4"
+            },
+            {
+              "fetched_at": "2026-11-08T14:43:52.719545+00:00",
+              "sha256": "19f4515aa9489649968afb6596351572bf14ba14fc136e4c012584e58d07b1f1",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=5"
+            },
+            {
+              "fetched_at": "2026-11-08T14:43:55.570546+00:00",
+              "sha256": "2de640b41f3b490fb5163129dbda63bf5235abd5c9844d77485049faabfef5e1",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=6"
+            },
+            {
+              "fetched_at": "2026-11-08T14:43:58.380512+00:00",
+              "sha256": "d6a5f45ce4036ad9c7c155760cf5a15101dc1c43db3ea50b92b28a99bb120d42",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=7"
+            },
+            {
+              "fetched_at": "2026-11-08T14:44:01.231147+00:00",
+              "sha256": "8e908d8a33f4870316202aad9578be0e4309d7a3f158081772404f645d4d7d5e",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=8"
+            },
+            {
+              "fetched_at": "2026-11-08T14:44:04.079677+00:00",
+              "sha256": "01a1c8824dbeec3c7f4e4c3ee04bcbc78ae04a42ab11a9ec19981636c6bc5306",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=9"
+            },
+            {
+              "fetched_at": "2026-11-08T14:44:06.991005+00:00",
+              "sha256": "4d3283d1dd8fc94c2152806aa19b4b9c58f824c23bef5abb25809ff95de0ec86",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=10"
+            },
+            {
+              "fetched_at": "2026-11-08T14:44:10.307057+00:00",
+              "sha256": "2ca0a3de7052abfb54029e4d2ccedf4eddb7386f71dd45f13a3556125ca70bd9",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=11"
+            },
+            {
+              "fetched_at": "2026-11-08T14:44:13.079424+00:00",
+              "sha256": "5adfaf77d25cc4a62cc196e9ad755ea19fe0e44cfe3e78ecc69eac937d59ced6",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=12"
+            },
+            {
+              "fetched_at": "2026-11-08T14:44:15.493914+00:00",
+              "sha256": "6ac0a8c3ae026ce1ace60f387e3a41937e78e6d2ab4d1526796e1a03ab2c4c92",
+              "url": "https://ehime-jinjacho.jp/jinja/index.php?rest_route=/wp/v2/posts&per_page=100&page=13"
+            }
+          ],
+          "expected_listing_count": 1234,
+          "remaining_count": 0,
+          "traversal_complete": true
+        },
+        "canonical_data": {
+          "entries": 1234,
+          "entry_status_counts": {
+            "pending": 2,
+            "verified": 1232
+          },
+          "facilities": 1234,
+          "facility_status_counts": {
+            "verified": 1234
+          },
+          "path": "data/sources/ehime.json",
+          "verified_entries": 1232,
+          "verified_facilities": 1234
+        },
+        "checked_at": null,
+        "facilities_collected": 1234,
+        "fields_observed": {
+          "address": 1234,
+          "facility_official_url": 0,
+          "name": 1234,
+          "reading_raw": 1234
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "method": "公式HTMLの施設リンクと公開APIの全IDを照合後、個別詳細HTMLを取得。",
+        "pages_fetched": 1234,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:27:56.980583+00:00",
+          "2026-11-08T15:17:53.267390+00:00"
+        ],
+        "remaining_scope": "掲載読み要確認: 保内八幡神社, 厳島神社。再配布条件確認。",
+        "saved_listing_page_count": 1234,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:29:32.645974+00:00",
+            "page_hash": "1173f220e5b938056fd05f46f0fa6a4bd31a713e669b3254e0144d71f4036772",
+            "url": "https://ehime-jinjacho.jp/jinja/?p=12145"
+          },
+          {
+            "fetched_at": "2026-11-08T14:29:34.883526+00:00",
+            "page_hash": "cc5dac6dd549fd983cd2713075e64cb3ab8fd3397879c08e0faaca5abdf6a5d4",
+            "url": "https://ehime-jinjacho.jp/jinja/?p=12134"
+          },
+          {
+            "fetched_at": "2026-11-08T14:29:37.284081+00:00",
+            "page_hash": "6afe122bfdd1612d3805eb23622449b8f692f3baa9de30e5698f7ccb98652fb2",
+            "url": "https://ehime-jinjacho.jp/jinja/?p=10993"
+          }
+        ],
+        "source_rows_observed": 1234,
+        "status": "collected",
+        "stored_coverage": "all 1234 published shrine details",
+        "stored_pages_fetched": 1234
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:37.811870+00:00",
+          "effective_url": "https://ehime-jinjacho.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://ehime-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "キーワード、氏神、市町村、マップ、神社コード検索。フォーム実行・API未確認。",
+        "checked_at": "2026-11-08T13:14:37.811870+00:00",
+        "coverage_explanation": "市町ごとの表示件数はあるが重複や全県網羅性未検証。",
+        "published_fields": "検索画面に市町村/地域の件数。個別施設の項目は未確認。"
+      },
+      "listing_urls": [
+        "https://ehime-jinjacho.jp/jinja/"
+      ],
+      "official_url": "https://ehime-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:37.811870+00:00",
+        "evidence": "トップに愛媛県神社庁の住所・電話・受付時間・著作権表示。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:37.811870+00:00",
+            "requested_url": "http://ehime-jinjacho.jp/",
+            "status": 200,
+            "url": "https://ehime-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:27.071368+00:00",
+            "requested_url": "https://ehime-jinjacho.jp/jinja/",
+            "status": 200,
+            "url": "https://ehime-jinjacho.jp/jinja/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "愛媛県",
+      "prefecture_code": "38"
+    },
+    {
+      "agency_name": "高知県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.kochi-jinjyacho.com/",
+      "collection": {
+        "canonical_data": {
+          "entries": 12,
+          "entry_status_counts": {
+            "pending": 12
+          },
+          "facilities": 12,
+          "facility_status_counts": {
+            "verified": 12
+          },
+          "path": "data/sources/kochi.json",
+          "verified_entries": 0,
+          "verified_facilities": 12
+        },
+        "checked_at": null,
+        "facilities_collected": 12,
+        "fields_observed": {
+          "address": 12,
+          "facility_official_url": 0,
+          "name": 12,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 1,
+        "reason": "Saved explicit official listing records; acquisition is ongoing.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:10.967930+00:00",
+          "2026-11-08T14:28:10.967930+00:00"
+        ],
+        "remaining_scope": "次一覧の公開操作を調査し全件数・動的取得範囲を解決。",
+        "saved_listing_page_count": 1,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:28:10.967930+00:00",
+            "page_hash": "abc3033740f239d778000a47f524f2fb7fbe76e0e6c59016600d23a031a00117",
+            "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
+          }
+        ],
+        "source_rows_observed": 12,
+        "status": "partial",
+        "stored_coverage": "initial server-rendered rows only; next-list button is dynamic with no linked URL",
+        "stored_pages_fetched": 1
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:38.299836+00:00",
+          "effective_url": "https://www.kochi-jinjyacho.com/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.kochi-jinjyacho.com/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "Wixの一覧、地域選択と前/次の一覧。動的部分の取得/ページ送り未検証。",
+        "checked_at": "2026-11-08T13:14:38.299836+00:00",
+        "coverage_explanation": "主な神社紹介と地域別一覧が併存。全体数・網羅性未確認。",
+        "published_fields": "神社名・所在地・一部電話を一覧本文で確認。読み欄は閲覧範囲で未確認。"
+      },
+      "listing_urls": [
+        "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
+      ],
+      "official_url": "https://www.kochi-jinjyacho.com/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:38.299836+00:00",
+        "evidence": "トップに高知県神社庁の名称、神社庁についての案内、連絡先。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:38.299836+00:00",
+            "requested_url": "https://www.kochi-jinjyacho.com/",
+            "status": 200,
+            "url": "https://www.kochi-jinjyacho.com/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:28.544232+00:00",
+            "requested_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7",
+            "status": 200,
+            "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "高知県",
+      "prefecture_code": "39"
+    },
+    {
+      "agency_name": "福岡県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://fukuoka-jinjacho.or.jp/",
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 0,
+        "reason": "公式トップ・福岡地域一覧フッターで無断転載禁止を今回再確認。一括抽出停止。",
+        "remaining_scope": "利用許諾確認が必要。",
+        "source_rows_observed": 0,
+        "status": "blocked"
+      },
+      "conditions": {
+        "data_use_conditions": "無断転載禁止をフッターに明記。辞書事実利用の条件は要確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:38.310051+00:00",
+          "effective_url": "https://fukuoka-jinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://fukuoka-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "4エリア別HTML一覧とGoogleMAP。福岡エリアを閲覧。",
+        "checked_at": "2026-11-08T13:14:38.310051+00:00",
+        "coverage_explanation": "加盟神社3300社以上（令和3年10月）との組織説明。非加盟/任意団体は把握しないと明記。実一覧数未検証。",
+        "published_fields": "一覧に神社名・所在地・一部電話。読み欄は確認できず。施設公式URLは要確認。"
+      },
+      "listing_urls": [
+        "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+      ],
+      "official_url": "https://fukuoka-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:38.310051+00:00",
+        "evidence": "トップで神社本庁包括下の宗教団体と説明し、住所・電話・沿革を掲載。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:38.310051+00:00",
+            "requested_url": "https://fukuoka-jinjacho.or.jp/",
+            "status": 200,
+            "url": "https://fukuoka-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:28.704277+00:00",
+            "requested_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
+            "status": 200,
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "福岡県",
+      "prefecture_code": "40"
+    },
+    {
+      "agency_name": "佐賀県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://saga-jinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 131,
+          "entry_status_counts": {
+            "pending": 131
+          },
+          "facilities": 131,
+          "facility_status_counts": {
+            "verified": 131
+          },
+          "path": "data/sources/saga.json",
+          "verified_entries": 0,
+          "verified_facilities": 131
+        },
+        "checked_at": null,
+        "facilities_collected": 131,
+        "fields_observed": {
+          "address": 131,
+          "facility_official_url": 0,
+          "name": 131,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 131,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:28.742577+00:00",
+          "2026-11-08T14:38:48.606850+00:00"
+        ],
+        "remaining_scope": "読み公式補完、公開リンク掲載範囲の追加調査、再配布条件確認。",
+        "saved_listing_page_count": 131,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:28:28.742577+00:00",
+            "page_hash": "69757952d1108785fcd38dfa27b20a0a9483bf6f5f9a2c754bd13e9765aa7451",
+            "url": "https://saga-jinjacho.jp/%e4%bc%8a%e5%8b%a2%e7%a5%9e%e7%a4%be/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:33:28.010049+00:00",
+            "page_hash": "db11770c18f31c2ec459c53bdee00940200f2f9284afab5116e1a331cead93d1",
+            "url": "https://saga-jinjacho.jp/%e6%b5%b7%e7%ab%a5%e7%a5%9e%e7%a4%be/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:33:30.391963+00:00",
+            "page_hash": "cc8a57c322b0d3f9c99e7dcc4fd71c93a8d9a21b4c5169b06a9c6ba726df9d59",
+            "url": "https://saga-jinjacho.jp/%e5%bf%97%e8%b3%80%e7%a5%9e%e7%a4%be/"
+          }
+        ],
+        "source_rows_observed": 131,
+        "status": "collected",
+        "stored_coverage": "all discoverable listing pages",
+        "stored_pages_fetched": 131
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:39.048693+00:00",
+          "effective_url": "https://saga-jinjacho.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://saga-jinjacho.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "庁サイトの地図・キーワード検索・地域別神社一覧。神社名リンクで詳細。",
+        "checked_at": "2026-11-08T13:14:39.048693+00:00",
+        "coverage_explanation": "包括下1095社との組織説明。公開一覧の収録総数とは未照合。",
+        "published_fields": "伊勢神社詳細に名称・鎮座地・祭神・祭礼等。閲覧範囲で名称読みなし。"
+      },
+      "listing_urls": [
+        "https://saga-jinjacho.jp/jinja-map/",
+        "https://saga-jinjacho.jp/%e4%bc%8a%e5%8b%a2%e7%a5%9e%e7%a4%be/"
+      ],
+      "official_url": "https://saga-jinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:39.048693+00:00",
+        "evidence": "トップで神社本庁地方機関、佐賀県神社庁の住所・電話を掲載。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:39.048693+00:00",
+            "requested_url": "https://saga-jinjacho.jp/",
+            "status": 200,
+            "url": "https://saga-jinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:29.052543+00:00",
+            "requested_url": "https://saga-jinjacho.jp/jinja-map/",
+            "status": 200,
+            "url": "https://saga-jinjacho.jp/jinja-map/"
+          },
+          {
+            "checked_at": "2026-11-08T13:16:05.589679+00:00",
+            "requested_url": "https://saga-jinjacho.jp/%e4%bc%8a%e5%8b%a2%e7%a5%9e%e7%a4%be/",
+            "status": 200,
+            "url": "https://saga-jinjacho.jp/%e4%bc%8a%e5%8b%a2%e7%a5%9e%e7%a4%be/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "佐賀県",
+      "prefecture_code": "41"
+    },
+    {
+      "agency_name": "長崎県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://nagasaki-jinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 25,
+          "entry_status_counts": {
+            "pending": 25
+          },
+          "facilities": 25,
+          "facility_status_counts": {
+            "pending": 25
+          },
+          "path": "data/sources/nagasaki.json",
+          "verified_entries": 0,
+          "verified_facilities": 0
+        },
+        "checked_at": null,
+        "facilities_collected": 25,
+        "fields_observed": {
+          "address": 0,
+          "facility_official_url": 25,
+          "name": 25,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 1,
+        "reason": "Saved explicit official listing records; acquisition is ongoing.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:34.370788+00:00",
+          "2026-11-08T14:28:34.370788+00:00"
+        ],
+        "remaining_scope": "住所と読みの公式補完、公開施設一覧の追加調査。",
+        "saved_listing_page_count": 1,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:28:34.370788+00:00",
+            "page_hash": "307091be9b409e579a3163b03f301e3972c3ceabf9fd1ea5dfd375fcfad11b04",
+            "url": "https://nagasaki-jinjacho.or.jp/link.html"
+          }
+        ],
+        "source_rows_observed": 25,
+        "status": "partial",
+        "stored_coverage": "all discoverable listing pages",
+        "stored_pages_fetched": 1
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:39.094197+00:00",
+          "effective_url": "https://nagasaki-jinjacho.or.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://nagasaki-jinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "リンク集内の県内神社リンクは支部別。包括神社の全件一覧は未発見。",
+        "checked_at": "2026-11-08T13:14:39.094197+00:00",
+        "coverage_explanation": "12支部1260社との組織説明。リンク集は一部神社で網羅性なし。",
+        "published_fields": "県内神社リンク集で名称・一部公式サイトURL。読みと鎮座地は当該一覧で未確認。"
+      },
+      "listing_urls": [
+        "https://nagasaki-jinjacho.or.jp/link.html"
+      ],
+      "official_url": "https://nagasaki-jinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:39.094197+00:00",
+        "evidence": "トップで宗教法人長崎県神社庁の設立、12支部・1260社、庁舎住所と電話を説明。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:39.094197+00:00",
+            "requested_url": "https://nagasaki-jinjacho.or.jp/",
+            "status": 200,
+            "url": "https://nagasaki-jinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:29.307568+00:00",
+            "requested_url": "https://nagasaki-jinjacho.or.jp/link.html",
+            "status": 200,
+            "url": "https://nagasaki-jinjacho.or.jp/link.html"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "長崎県",
+      "prefecture_code": "42"
+    },
+    {
+      "agency_name": "熊本県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://kumamotokenjinjacho.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 571,
+          "entry_status_counts": {
+            "pending": 571
+          },
+          "facilities": 571,
+          "facility_status_counts": {
+            "pending": 114,
+            "verified": 457
+          },
+          "path": "data/sources/kumamoto.json",
+          "verified_entries": 0,
+          "verified_facilities": 457
+        },
+        "checked_at": null,
+        "facilities_collected": 571,
+        "fields_observed": {
+          "address": 571,
+          "facility_official_url": 0,
+          "name": 571,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 44,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:28:41.210590+00:00",
+          "2026-11-08T14:35:38.422860+00:00"
+        ],
+        "remaining_scope": "読み公式補完、114施設の町村を公式根拠で確認、再配布条件確認。",
+        "saved_listing_page_count": 44,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:28:41.210590+00:00",
+            "page_hash": "2ea558ed86ee02c4405effb203b53ae5b7e2eb7952023c0bc0e0e3101e418dec",
+            "url": "https://kumamotokenjinjacho.jp/patron-god/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:33:10.774362+00:00",
+            "page_hash": "7b2a8d7e31cd3984dac3bd774d4b5d9f70ecaa1fb7024fcc17ed097f1809dd97",
+            "url": "https://kumamotokenjinjacho.jp/patron-god/page/2/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:33:13.123609+00:00",
+            "page_hash": "317b005717add6d3c52b51fab9721a56b684de6cc1ed47f3ff929fcc603a042c",
+            "url": "https://kumamotokenjinjacho.jp/patron-god/page/3/"
+          }
+        ],
+        "source_rows_observed": 571,
+        "status": "collected",
+        "stored_coverage": "all discoverable listing pages",
+        "stored_pages_fetched": 44
+      },
+      "conditions": {
+        "data_use_conditions": "個人情報保護方針を閲覧。データ抽出/再配布の許諾は未確認。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:39.710351+00:00",
+          "effective_url": "https://kumamotokenjinjacho.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://kumamotokenjinjacho.jp/robots.txt"
+        },
+        "terms_pages": [
+          {
+            "inspection_status": "opened",
+            "url": "https://kumamotokenjinjacho.jp/privacy/"
+          }
+        ]
+      },
+      "initial_survey": {
+        "acquisition_method": "市区郡・町村選択の氏神検索。PHP警告が出る。検索条件送信は未実施。",
+        "checked_at": "2026-11-08T13:14:39.710351+00:00",
+        "coverage_explanation": "人吉・球磨地方のみ試験運用中、順次更新と明記。選択肢には他地域もあり説明との差は未検証。",
+        "published_fields": "画面に地域選択。施設実レコードの名称読み等未確認。"
+      },
+      "listing_urls": [
+        "https://kumamotokenjinjacho.jp/patron-god/"
+      ],
+      "official_url": "https://kumamotokenjinjacho.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:39.710351+00:00",
+        "evidence": "トップで神社本庁の地方機関と説明。熊本県神社庁の住所と著作権表示。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:39.710351+00:00",
+            "requested_url": "https://kumamotokenjinjacho.jp/",
+            "status": 200,
+            "url": "https://kumamotokenjinjacho.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:29.736172+00:00",
+            "requested_url": "https://kumamotokenjinjacho.jp/patron-god/",
+            "status": 200,
+            "url": "https://kumamotokenjinjacho.jp/patron-god/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:30.900208+00:00",
+            "requested_url": "https://kumamotokenjinjacho.jp/privacy/",
+            "status": 200,
+            "url": "https://kumamotokenjinjacho.jp/privacy/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "熊本県",
+      "prefecture_code": "43"
+    },
+    {
+      "agency_name": "大分県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": null,
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [],
+        "listing_authority_status": "unconfirmed",
+        "pages_fetched": 0,
+        "reason": "追加検索「大分県神社庁 公式 ホームページ」でも神社庁公式URL特定できず。外部一覧で代替しない。神社本庁一覧もrobots503により閲覧停止。",
+        "remaining_scope": "公式URL、神社庁掲載施設一覧の特定。",
+        "source_rows_observed": 0,
+        "status": "unresolved"
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:17:50.400702+00:00",
+          "effective_url": null,
+          "http_status": null,
+          "outcome": "未取得：神社庁公式URL未特定",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": null
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "大分県神社庁の公式URLを検索したが未発見。候補URLなし。",
+        "checked_at": "2026-11-08T13:17:50.400702+00:00",
+        "coverage_explanation": "未確認。",
+        "published_fields": "神社庁本文未閲覧。"
+      },
+      "listing_urls": [],
+      "official_url": null,
+      "official_verification": {
+        "checked_at": "2026-11-08T13:17:50.400702+00:00",
+        "evidence": null,
+        "evidence_pages": [],
+        "initial_status": "未確認",
+        "status": "unconfirmed"
+      },
+      "prefecture": "大分県",
+      "prefecture_code": "44"
+    },
+    {
+      "agency_name": "宮崎県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": null,
+      "collection": {
+        "checked_at": null,
+        "facilities_collected": 0,
+        "inspection_evidence": [],
+        "listing_authority_status": "unconfirmed",
+        "pages_fetched": 0,
+        "reason": "追加検索「宮崎県神社庁 公式 ホームページ」でも神社庁公式URL特定できず。宮巡は宮崎県神道青年会運営で神社庁掲載/委託確認未了のため代替しない。",
+        "remaining_scope": "神社庁公式URL、青年会への正式委託/掲載位置づけ確認。",
+        "source_rows_observed": 0,
+        "status": "unresolved"
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:15:29.825052+00:00",
+          "effective_url": "https://www.m-shinsei.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "青年会サイト（神社庁ではない）のHTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.m-shinsei.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "神社庁公式URL未発見。青年会サイトを開いたが神社庁からの委託・掲載位置づけ未確認。",
+        "checked_at": "2026-11-08T13:15:29.825052+00:00",
+        "coverage_explanation": "青年会は649社検索可能と説明。神社庁掲載数としては採用しない。",
+        "published_fields": "青年会トップに御祭神・鎮座地・由緒・写真の閲覧説明。神社庁掲載条件を満たすものとは未確認。"
+      },
+      "listing_urls": [],
+      "official_url": null,
+      "official_verification": {
+        "checked_at": "2026-11-08T13:15:29.825052+00:00",
+        "evidence": null,
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:15:29.825052+00:00",
+            "requested_url": "https://www.m-shinsei.jp/",
+            "status": 200,
+            "url": "https://www.m-shinsei.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:31.375930+00:00",
+            "requested_url": "https://www.m-shinsei.jp/robots.txt",
+            "status": 200,
+            "url": "https://www.m-shinsei.jp/robots.txt"
+          }
+        ],
+        "initial_status": "未確認",
+        "status": "unconfirmed"
+      },
+      "prefecture": "宮崎県",
+      "prefecture_code": "45"
+    },
+    {
+      "agency_name": "鹿児島県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://www.kagojinjacho.or.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 1104,
+          "entry_status_counts": {
+            "verified": 1104
+          },
+          "facilities": 1104,
+          "facility_status_counts": {
+            "verified": 1104
+          },
+          "path": "data/sources/kagoshima.json",
+          "verified_entries": 1104,
+          "verified_facilities": 1104
+        },
+        "checked_at": null,
+        "facilities_collected": 1104,
+        "fields_observed": {
+          "address": 1104,
+          "facility_official_url": 0,
+          "name": 1104,
+          "reading_raw": 1104
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 113,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:25:41.381485+00:00",
+          "2026-11-08T14:31:54.961167+00:00"
+        ],
+        "remaining_scope": "再配布条件確認。",
+        "saved_listing_page_count": 113,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:25:41.381485+00:00",
+            "page_hash": "809a18958be55d0ce8f7170c3c3aa5558f573b6fadb11f4c1250de83c0eac479",
+            "url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-kagoshima/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:34.909120+00:00",
+            "page_hash": "8667fd7fe82a8abe7b49aac50717c1abd313237207ef8116125ba845e533b213",
+            "url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-nansatsu/"
+          },
+          {
+            "fetched_at": "2026-11-08T14:27:37.145051+00:00",
+            "page_hash": "b1484ee0471ddf8ed4cdc8fcc0ceb2f7820473248ac08c9ba262c5e5e42643d6",
+            "url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-hokusatsu/"
+          }
+        ],
+        "source_rows_observed": 1104,
+        "status": "collected",
+        "stored_coverage": "observed official listings only; not all shrines in the prefecture",
+        "stored_pages_fetched": 113
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:39.939050+00:00",
+          "effective_url": "https://www.kagojinjacho.or.jp/robots.txt",
+          "http_status": 200,
+          "outcome": "HTTP 200",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://www.kagojinjacho.or.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "キーワード、市町村、7地区のカテゴリ一覧。",
+        "checked_at": "2026-11-08T13:14:39.939050+00:00",
+        "coverage_explanation": "カテゴリ件数を掲載。ただし実総数・重複・全県網羅性未検証。",
+        "published_fields": "鹿児島地区一覧に神社名・神社名カナ・鎮座地・例祭・通称・詳細リンク。10件/ページ、20ページと表示。"
+      },
+      "listing_urls": [
+        "https://www.kagojinjacho.or.jp/search-page/",
+        "https://www.kagojinjacho.or.jp/category/shrine-search/area-kagoshima/"
+      ],
+      "official_url": "https://www.kagojinjacho.or.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:39.939050+00:00",
+        "evidence": "トップに鹿児島県神社庁の名称、住所・電話・著作権表示。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:39.939050+00:00",
+            "requested_url": "https://www.kagojinjacho.or.jp/",
+            "status": 200,
+            "url": "https://www.kagojinjacho.or.jp/"
+          },
+          {
+            "checked_at": "2026-11-08T13:15:29.902017+00:00",
+            "requested_url": "https://www.kagojinjacho.or.jp/search-page/",
+            "status": 200,
+            "url": "https://www.kagojinjacho.or.jp/search-page/"
+          },
+          {
+            "checked_at": "2026-11-08T13:16:05.606076+00:00",
+            "requested_url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-kagoshima/",
+            "status": 200,
+            "url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-kagoshima/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "鹿児島県",
+      "prefecture_code": "46"
+    },
+    {
+      "agency_name": "沖縄県神社庁",
+      "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_url": "https://jinjacho.naminouegu.jp/",
+      "collection": {
+        "canonical_data": {
+          "entries": 10,
+          "entry_status_counts": {
+            "pending": 10
+          },
+          "facilities": 10,
+          "facility_status_counts": {
+            "verified": 10
+          },
+          "path": "data/sources/okinawa.json",
+          "verified_entries": 0,
+          "verified_facilities": 10
+        },
+        "checked_at": null,
+        "facilities_collected": 10,
+        "fields_observed": {
+          "address": 10,
+          "facility_official_url": 6,
+          "name": 10,
+          "reading_raw": 0
+        },
+        "inspection_evidence": [],
+        "listing_authority_status": "agency_site",
+        "pages_fetched": 1,
+        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "record_fetched_at_range": [
+          "2026-11-08T14:25:43.505616+00:00",
+          "2026-11-08T14:25:43.505616+00:00"
+        ],
+        "remaining_scope": "読み公式補完、再配布条件確認。",
+        "saved_listing_page_count": 1,
+        "saved_listing_page_examples": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "source_rows_observed": 10,
+        "status": "collected",
+        "stored_coverage": "all discoverable listing pages",
+        "stored_pages_fetched": 1
+      },
+      "conditions": {
+        "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+        "redistribution_permission": "unconfirmed",
+        "robots_initial_inspection": {
+          "checked_at": "2026-11-08T13:14:40.039358+00:00",
+          "effective_url": "https://jinjacho.naminouegu.jp/robots.txt",
+          "http_status": 404,
+          "outcome": "HTTP 404",
+          "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+          "url": "https://jinjacho.naminouegu.jp/robots.txt"
+        },
+        "terms_pages": []
+      },
+      "initial_survey": {
+        "acquisition_method": "トップ同一ページの10社一覧、アンカーと一部詳細/施設公式リンク。",
+        "checked_at": "2026-11-08T13:14:40.039358+00:00",
+        "coverage_explanation": "神社本庁包括下の県内10社と明記し一覧を掲載。",
+        "published_fields": "神社名・所在地・電話・一部公式サイトURL。読みは一覧閲覧範囲でなし。"
+      },
+      "listing_urls": [
+        "https://jinjacho.naminouegu.jp/"
+      ],
+      "official_url": "https://jinjacho.naminouegu.jp/",
+      "official_verification": {
+        "checked_at": "2026-11-08T13:14:40.039358+00:00",
+        "evidence": "トップで神社本庁の地方機関として昭和47年5月15日設立と明記、波上宮内の住所・電話を掲載。",
+        "evidence_pages": [
+          {
+            "checked_at": "2026-11-08T13:14:40.039358+00:00",
+            "requested_url": "https://jinjacho.naminouegu.jp/",
+            "status": 200,
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "initial_status": "本文確認済み",
+        "status": "verified_opened"
+      },
+      "prefecture": "沖縄県",
+      "prefecture_code": "47"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "全国47都道府県の公開情報源・取得範囲・条件・検証状態の製品メタデータ。地域内全神社の網羅性を保証しない。",
+  "snapshot_date": "2026-11-09",
+  "summary": {
+    "agency_official_sites_verified_opened": 44,
+    "canonical_facilities": 37352,
+    "collection_status_counts": {
+      "authority_pending": 1,
+      "blocked": 9,
+      "collected": 31,
+      "partial": 3,
+      "unresolved": 3
+    },
+    "prefectures_with_canonical_facilities": 35,
+    "target_prefectures": 47
+  }
+}

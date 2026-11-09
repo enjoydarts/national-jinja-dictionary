@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 import subprocess
 import zipfile
-from njd.__main__ import build_outputs
+from njd.__main__ import build_outputs, _review_lists
 from njd.exporters import FORMATS
 from njd.corrections import apply_corrections
 from njd.nationwide import merge_collections, ensure_public_metadata
@@ -27,8 +27,14 @@ def create_release(data_dir,output_dir,version,source_commit):
     if problems:raise ValueError('canonical data cannot be released: '+str(problems[:5]))
     destination=output_dir/'dictionaries'
     report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社'),output_dir=destination)
+    _review_lists(data,destination)
     input_files=sorted((data_dir/'sources').glob('*.json'))
-    input_files += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','corrections.json') if (data_dir/name).exists()]
+    input_files += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','corrections.json','source_catalog.json') if (data_dir/name).exists()]
+    for name in ('manifest.json','corrections.json','source_catalog.json'):
+        path=data_dir/name
+        if path.exists():
+            value=load_dataset(path);ensure_public_metadata(value)
+            write_json(destination/name,value)
     source=dict(version=version,source_commit=source_commit,
         canonical_location='repository data/sources/*.json',
         effective_data_sha256=hashlib.sha256(json_bytes(data)).hexdigest(),

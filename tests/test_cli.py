@@ -42,3 +42,15 @@ class CliTest(unittest.TestCase):
         self.assertEqual(audit_gunma(d,HTML,'a'*64)['mismatches'],[])
         d['entries'][0]['reading_raw']='ﾍﾞﾂﾖﾐ'
         self.assertTrue(audit_gunma(d,HTML,'a'*64)['mismatches'])
+
+    def test_audit_uses_repository_source_file_without_common_json(self):
+        from unittest.mock import patch
+        from types import SimpleNamespace
+        with tempfile.TemporaryDirectory() as td:
+            base=Path(td);data=base/'data';out=base/'out'
+            write_json(data/'sources/gunma.json',dataset())
+            with patch('njd.__main__.Client') as client:
+                client.return_value.fetch.return_value=SimpleNamespace(text=HTML,sha256='a'*64)
+                self.assertEqual(self.run_cli('--data-dir',str(data),'--output-dir',str(out),'audit','--source','gunma'),0)
+                self.assertTrue(client.call_args.kwargs['offline'])
+            self.assertTrue((out/'source-audit.json').exists())

@@ -55,3 +55,21 @@ class ReleaseTest(unittest.TestCase):
             with self.assertRaises(ValueError):require_matching_tag(root,'v0.2.0')
             git('checkout','--detach','refs/tags/v0.2.0')
             self.assertEqual(require_matching_tag(root,'v0.2.0'),git('rev-parse','HEAD'))
+
+    def test_release_includes_actionable_review_lists_and_input_evidence(self):
+        from njd.storage import write_json
+        with tempfile.TemporaryDirectory() as td:
+            base=Path(td);data=base/'data'
+            save_collection(data,'example',build([row(reading_raw='')]))
+            catalog={'schema_version':1,'prefectures':[]}
+            corrections={'schema_version':1,'entries':{}}
+            write_json(data/'source_catalog.json',catalog);write_json(data/'corrections.json',corrections)
+            result=create_release(data,base/'out','v0.2.0','a'*40)
+            with zipfile.ZipFile(result['archive']) as z:
+                pending=json.loads(z.read('pending.json'))
+                self.assertEqual(pending[0]['facility']['address'],'架空市乙町1')
+                self.assertEqual(pending[0]['entry']['reading_raw'],'')
+                self.assertTrue(pending[0]['entry']['listing_url'])
+                self.assertEqual(json.loads(z.read('source_catalog.json')),catalog)
+                self.assertEqual(json.loads(z.read('corrections.json')),corrections)
+                self.assertIn('source_catalog.json',json.loads(z.read('SOURCE.json'))['data_files'])

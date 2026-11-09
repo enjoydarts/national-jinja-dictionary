@@ -22,7 +22,7 @@ REPOSITORY=Path(__file__).resolve().parents[1]
 def external_workspace(value):
     path=Path(value).expanduser().resolve()
     if path==REPOSITORY or REPOSITORY in path.parents:
-        raise ValueError('local records must be stored outside the public repository (for example, in Obsidian)')
+        raise ValueError('HTTP cache and legacy workspaces must be outside the public repository; canonical data belongs in data/')
     return path
 
 def parser():
@@ -36,7 +36,9 @@ def parser():
     collect=sub.add_parser('collect'); collect.add_argument('source',help='registered source key or all')
     collect.add_argument('--limit',type=int,default=0,help='maximum source rows; 0 selects all observed rows')
     collect.add_argument('--offline',action='store_true'); collect.add_argument('--refresh',action='store_true')
-    sub.add_parser('validate'); sub.add_parser('audit'); sub.add_parser('report')
+    sub.add_parser('validate'); sub.add_parser('report')
+    audit=sub.add_parser('audit',help='independent source audit (currently Gunma only)')
+    audit.add_argument('--source',choices=['gunma'],default='gunma')
     build=sub.add_parser('build'); build.add_argument('--formats',default='all',help='all or comma-separated mozc,json,csv,atok,google,msime,macos')
     build.add_argument('--prefecture',choices=[f'{i:02}' for i in range(1,48)])
     build.add_argument('--sample-name',action='append',default=[])
@@ -50,8 +52,9 @@ def _effective(work):
     return apply_decisions(data,load_dataset(decisions)) if decisions.exists() and load_dataset(decisions) else data
 
 def _review_lists(data,work):
+    facilities={f['id']:f for f in data['facilities']}
     for status in ['pending','excluded']:
-        write_json(work/(status+'.json'),[e for e in data['entries'] if e['status']==status])
+        write_json(work/(status+'.json'),[dict(entry=e,facility=facilities[e['facility_id']]) for e in data['entries'] if e['status']==status])
 
 def build_outputs(data,work,formats,requested_prefecture=None,sample_names=(),output_dir=None):
     unknown=set(formats)-FORMATS.keys()
@@ -122,16 +125,16 @@ def main(argv=None):
         if not (work/'decisions.json').exists(): write_json(work/'decisions.json',{})
         print(json.dumps({k:v for k,v in states.items() if v['source_key'] in keys},ensure_ascii=False))
         return 1 if any(states[available[k]['code']]['status'].startswith('failed') for k in keys) else 0
-    data=_effective(work)
+    if args.command!='audit':data=_effective(work)
     if args.command=='validate':
         issues=validate(data); write_json((work if args.workspace else output)/'validation.json',issues); _review_lists(data,work if args.workspace else output)
         print(json.dumps(dict(errors=len(blocking_problems(data)),reviews=sum(p.get('severity')=='review' for p in issues),facilities=len(data['facilities'])),ensure_ascii=False))
         return 1 if blocking_problems(data) else 0
     if args.command=='audit':
         # Audit pristine acquired records; human decisions remain separate.
-        raw=load_dataset(work/'common.json')
+        raw=load_dataset(work/'sources'/(args.source+'.json')) if (work/'sources').exists() else load_dataset(work/'common.json')
         page=Client(cache,offline=True).fetch(gunma.URL)
-        result=audit_gunma(raw,page.text,page.sha256); write_json(work/'source-audit.json',result)
+        result=audit_gunma(raw,page.text,page.sha256); write_json((work if args.workspace else output)/'source-audit.json',result)
         print(json.dumps(result,ensure_ascii=False)); return 1 if result['mismatches'] else 0
     if args.command=='report':
         result=report(data); write_json((work if args.workspace else output)/'report.json',result)
