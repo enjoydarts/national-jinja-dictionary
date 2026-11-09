@@ -13,10 +13,17 @@ from njd.storage import apply_decisions, json_bytes, load_dataset, write_json
 from njd.validation import blocking_problems
 
 
+def _input_hashes(data_dir):
+    paths=sorted((data_dir/'sources').glob('*.json'))
+    paths += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','corrections.json','source_catalog.json') if (data_dir/name).exists()]
+    return {str(p.relative_to(data_dir)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
+
+
 def create_release(data_dir,output_dir,version,source_commit):
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,80}',version): raise ValueError('unsafe release version')
     if not re.fullmatch(r'[0-9a-f]{40,64}|unknown',source_commit): raise ValueError('invalid source commit')
     data_dir=Path(data_dir);output_dir=Path(output_dir)
+    initial_inputs=_input_hashes(data_dir)
     data=merge_collections(data_dir)
     corrections=data_dir/'corrections.json'
     if corrections.exists():data=apply_corrections(data,load_dataset(corrections))
@@ -28,8 +35,6 @@ def create_release(data_dir,output_dir,version,source_commit):
     destination=output_dir/'dictionaries'
     report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社'),output_dir=destination)
     _review_lists(data,destination)
-    input_files=sorted((data_dir/'sources').glob('*.json'))
-    input_files += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','corrections.json','source_catalog.json') if (data_dir/name).exists()]
     for name in ('manifest.json','corrections.json','source_catalog.json'):
         path=data_dir/name
         if path.exists():
@@ -38,7 +43,7 @@ def create_release(data_dir,output_dir,version,source_commit):
     source=dict(version=version,source_commit=source_commit,
         canonical_location='repository data/sources/*.json',
         effective_data_sha256=hashlib.sha256(json_bytes(data)).hexdigest(),
-        data_files={str(p.relative_to(data_dir)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(input_files)},
+        data_files=initial_inputs,
         generation='offline from committed canonical data; no crawling during release',
         blocked_formats=[name for name,profile in FORMATS.items() if profile['status']=='blocked'])
     write_json(destination/'SOURCE.json',source)
@@ -63,6 +68,8 @@ def create_release(data_dir,output_dir,version,source_commit):
     checks={str(p.relative_to(destination)):hashlib.sha256(p.read_bytes()).hexdigest()
         for p in sorted(destination.rglob('*')) if p.is_file() and p.name!='checksums.json'}
     write_json(destination/'checksums.json',checks)
+    if _input_hashes(data_dir)!=initial_inputs:
+        raise ValueError('canonical inputs changed during generation; retry from a fixed commit')
     archive=output_dir/f'national-jinja-dictionary-{version}.zip'
     with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for path in sorted(destination.rglob('*')):

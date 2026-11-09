@@ -73,3 +73,17 @@ class ReleaseTest(unittest.TestCase):
                 self.assertEqual(json.loads(z.read('source_catalog.json')),catalog)
                 self.assertEqual(json.loads(z.read('corrections.json')),corrections)
                 self.assertIn('source_catalog.json',json.loads(z.read('SOURCE.json'))['data_files'])
+
+    def test_release_rejects_input_change_during_generation(self):
+        from njd.__main__ import build_outputs
+        with tempfile.TemporaryDirectory() as td:
+            base=Path(td);data=base/'data';out=base/'out'
+            save_collection(data,'example',build([row()]))
+            def mutate(*args,**kwargs):
+                result=build_outputs(*args,**kwargs)
+                path=data/'sources/example.json';path.write_bytes(path.read_bytes()+b'\n')
+                return result
+            with patch('njd.release.build_outputs',side_effect=mutate):
+                with self.assertRaisesRegex(ValueError,'changed during generation'):
+                    create_release(data,out,'v0.2.0','a'*40)
+            self.assertFalse((out/'national-jinja-dictionary-v0.2.0.zip').exists())

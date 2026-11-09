@@ -80,3 +80,20 @@ class CorrectionTest(unittest.TestCase):
     def test_name_correction_keeps_carriage_return_address_quarantine(self):
         d=build([row(address='架空市乙町1\r架空市乙町2')])
         self.assertEqual(eligible(apply_corrections(d,correction(d,{'surface':'架空神社'}))),[])
+
+    def test_location_comparison_accepts_explicit_county_but_not_other_prefecture(self):
+        d=build([row(address='架空町乙1',municipality='架空町',reading_raw='不明')])
+        d['facilities'][0]['prefecture']='架空県'
+        c=correction(d,{'reading':'かくうじんじゃ'});ref=c['entries'][d['entries'][0]['id']]['references'][0]
+        ref['address_raw']='〒123-4567 架空県架空郡架空町乙１番地';ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
+        self.assertEqual(len(eligible(apply_corrections(d,c))),1)
+        ref['address_raw']='他県架空郡架空町乙１番地';ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_explicit_parcel_separator_comparison_keeps_branch_number(self):
+        d=build([row(address='架空市乙町88-1',reading_raw='不明')]);c=correction(d,{'reading':'かくうじんじゃ'})
+        ref=c['entries'][d['entries'][0]['id']]['references'][0]
+        ref['address_raw']='架空市乙町８８番地の１';ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
+        self.assertEqual(len(eligible(apply_corrections(d,c))),1)
+        ref['address_raw']='架空市乙町８８番地の２';ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
