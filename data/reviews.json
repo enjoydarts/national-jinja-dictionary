@@ -1318,6 +1318,53 @@
           "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=1270005004299"
         }
       ]
+    },
+    "fbe42f81-6afd-5ab4-969d-89f89f06a2e5": {
+      "case_id": "SPLIT-e9835b83-f346-52e9-a69b-08137d8cbc9a",
+      "confirmation": "source_review",
+      "expected_source_hash": "607fcb1c41342d20c87dc574e9d4d0096065b1301aa4cbf34f8b3bc714f29152",
+      "facility_id": "e9835b83-f346-52e9-a69b-08137d8cbc9a",
+      "name_separator": "・",
+      "original": {
+        "address": "南魚沼市姥沢新田358番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15226&keyword=&page=10&num=10",
+        "name_raw": "十二神社・巻機神社",
+        "reading_raw": "じゅうにじんじゃ・まきはたじんじゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_component",
+          "reading": "じゅうにじんじゃ",
+          "reading_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15226&keyword=&page=10&num=10",
+          "surface": "十二神社"
+        },
+        {
+          "basis": "agency_component",
+          "reading": "まきはたじんじゃ",
+          "reading_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15226&keyword=&page=10&num=10",
+          "surface": "巻機神社"
+        }
+      ],
+      "reading_separator": "・",
+      "reason": "神社庁の同一所在地行で「十二神社・巻機神社」と各全文読みが中点で対応。既存方針に従い個別正式名を登録し、読みを補完・推定しない。施設IDと取得原文は分割しない。",
+      "recorded_at": "2026-11-09T07:46:36.819124+00:00",
+      "references": [
+        {
+          "address_raw": "南魚沼市姥沢新田358番地",
+          "checked_at": "2026-11-09T07:46:36.819124+00:00",
+          "excerpt": "十二神社・巻機神社 / じゅうにじんじゃ・まきはたじんじゃ / 南魚沼市姥沢新田358番地",
+          "fetched_at": "2026-11-09T07:27:54.205270+00:00",
+          "locator": "section#search_result div.shrine occurrence=9; dl dd.name/dd.furigana/dd.place",
+          "name_raw": "十二神社・巻機神社",
+          "page_hash": "92844f213d6e39a6058d9cb2f74cfce20d065d1614b5c02bde13736f5086f32a",
+          "reading_raw": "じゅうにじんじゃ・まきはたじんじゃ",
+          "source_kind": "agency",
+          "title": "新潟県神社庁 県内神社一覧 十二神社・巻機神社",
+          "url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15226&keyword=&page=10&num=10",
+          "verification_method": "individual exact name/full furigana/address DOM row comparison; acquired text unchanged"
+        }
+      ],
+      "split": true
     }
   },
   "schema_version": 1
