@@ -1593,20 +1593,91 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://niigata-jinjacho.jp/",
       "collection": {
-        "checked_at": null,
-        "facilities_collected": 0,
-        "inspection_evidence": [],
+        "checked_at": "2026-11-09T07:03:51.751588+00:00",
+        "facilities_collected": 50,
+        "inspection_evidence": [
+          {
+            "fetched_at": "2026-11-09T06:42:17.921001+00:00",
+            "sha256": "7b272aeff8a40223dbd7943d1b9bed63b8984d090b54291bc639d2997e4d484c",
+            "url": "https://niigata-jinjacho.jp/shrine_niigata/"
+          },
+          {
+            "fetched_at": "2026-11-09T06:42:30.766903+00:00",
+            "sha256": "3542da04ce49cffdfdae693482c3504e4088e501ff839bbf9eba30b235113103",
+            "url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15101"
+          },
+          {
+            "fetched_at": "2026-11-09T06:54:38.833693+00:00",
+            "sha256": "c4637f64288a4286a8b216670e064bbc82b2b19ee97ce87df95d63dff5b574d2",
+            "url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15101&keyword=&page=2&num=10"
+          },
+          {
+            "fetched_at": "2026-11-09T06:54:40.912971+00:00",
+            "sha256": "65c80878777f542fa1e8b195f7a6c161aa7691cc7d7edfbee30cde0b65ab4dd7",
+            "url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15101&keyword=&page=3&num=10"
+          },
+          {
+            "fetched_at": "2026-11-09T06:54:42.985965+00:00",
+            "sha256": "11b4397ed59a756d4e6ec6b72651d40db1f7cb1a535f5a74542eca12a81436ec",
+            "url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15101&keyword=&page=4&num=10"
+          },
+          {
+            "fetched_at": "2026-11-09T06:54:45.213511+00:00",
+            "sha256": "e2b686ff4134886ceecff2f2c82bb1be92de8be36b03ad1eb82f996c8039bb88",
+            "url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15101&keyword=&page=5&num=10"
+          }
+        ],
         "listing_authority_status": "agency_site",
-        "pages_fetched": 0,
-        "reason": "robots.txt returned HTML rather than a usable policy; njd.http.Client refused access. No robots bypass performed.",
-        "remaining_scope": "clarify valid robots policy with source owner; listing not collected in this run",
-        "source_rows_observed": 0,
-        "status": "blocked"
+        "pages_fetched": 6,
+        "previous_blocked_route": {
+          "reason": "robots.txt returned HTML rather than a usable policy; njd.http.Client refused access. No robots bypass performed.",
+          "status": "blocked"
+        },
+        "reason": "公式HTML検索の実37地域リンクを確認し、北区15101の1〜5ページ・50施設を試作取得。全文読み50登録を原文から確認。代表6件を独立照合。",
+        "remaining_scope": "北区表示81件中の残り31件と、他36地域が未取得。地域IDやページIDは施設IDへ流用しない。",
+        "source_rows_observed": 50,
+        "status": "partial"
       },
       "conditions": {
         "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
-        "latest_robots_outcome": "HTMLが返り有効なrobots方針として解釈できず収集停止。",
+        "latest_robots_outcome": "robots.txtは302で公式トップのHTML200へ転送し、観測した本文にparseable directivesなし。確認済みoriginに限定して有効行を既存parserへ渡す。Disallow・解釈不能指示・HTTP認証失敗等は停止を維持。再配布許諾とは区別。",
         "redistribution_permission": "unconfirmed",
+        "robot_processing_profile": {
+          "actual_response": [
+            {
+              "bytes": 212,
+              "content_type": "text/html; charset=iso-8859-1",
+              "fetched_at": "2026-11-09T06:26:26.178777+00:00",
+              "location": "https://niigata-jinjacho.jp/",
+              "page_hash": "042b8ae9deb6794f27026637bfea80b4927631af24504d76b4e4ecbe171e7f91",
+              "status": 302,
+              "url": "https://niigata-jinjacho.jp/robots.txt"
+            },
+            {
+              "bytes": 12723,
+              "content_type": "text/html; charset=UTF-8",
+              "fetched_at": "2026-11-09T06:26:28.360053+00:00",
+              "location": null,
+              "page_hash": "46513842c787a290f0a3b6892ee167e0d78929b567ed53c31e0c5cd6e74ed21a",
+              "status": 200,
+              "url": "https://niigata-jinjacho.jp/"
+            }
+          ],
+          "name": "reviewed successful HTML line parsing",
+          "reviewed_origins": [
+            "https://niigata-jinjacho.jp"
+          ],
+          "standards": [
+            {
+              "finding": "UTF-8 text/plain is required from publishers. Crawlers must try each line and follow parseable rules, including following redirects under the original authority. No applicable group means no REP rules. Server/network failure requires complete disallow. HTML is not explicitly discussed: treating successful HTML line-by-line is an inference here, independently explicit in Google documentation. REP is not access authorization.",
+              "url": "https://www.rfc-editor.org/rfc/rfc9309.html"
+            },
+            {
+              "finding": "Google processes successful responses, explicitly tries to extract robots rules from downloaded HTML, ignores invalid lines and retains valid rules. This is Google interpretation, not a separate IETF MUST. Its permissive 401/403 and special server-error policies are not proposed for this project.",
+              "url": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec"
+            }
+          ]
+        },
         "robots_initial_inspection": {
           "checked_at": "2026-11-08T13:14:17.454512+00:00",
           "effective_url": "https://niigata-jinjacho.jp/",
@@ -1615,7 +1686,13 @@
           "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
           "url": "https://niigata-jinjacho.jp/robots.txt"
         },
-        "terms_pages": []
+        "terms_pages": [
+          {
+            "inspection_status": "opened",
+            "note": "個人情報保護方針を実閲覧。自動取得禁止は確認せず、データ再配布許諾も確認できていない。",
+            "url": "https://niigata-jinjacho.jp/privacy_policy/"
+          }
+        ]
       },
       "initial_survey": {
         "acquisition_method": "search.php?area=15101の北区結果は9ページ。HTML検索結果とページ送り。",
