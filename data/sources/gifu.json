@@ -1,19 +1,223 @@
 {
   "collection": {
-    "acquisition_method": "individual inspection of actual detail links from one official exact-name search; no name-index traversal",
+    "access_observation": {
+      "observed_at": "2026-11-09T08:18:42.026851+00:00",
+      "reason": "online Client retrieval returned network Errno 61; no HTTP page obtained; offline replay preserves fetched subset",
+      "status": "connection_refused",
+      "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8C%9C%E9%83%A8%E7%A5%9E%E7%A4%BE"
+    },
+    "acquisition_method": "observed official index/search/detail href traversal; detail-specific full readings; cache-backed incomplete 100-facility pilot",
     "agency": "岐阜県神社庁",
     "authority_status": "confirmed",
-    "collection_complete": false,
-    "coverage": "all 8 facilities in the observed 縣神社 result only; not all 828 name/reading-group index registrations or all prefecture facilities",
+    "coverage": "actual index name-reading groups and search/detail hrefs only; index total is not facility count",
     "data_use_conditions": "トップに「文章および写真の無断転用はお断りします」「リンクされる方は岐阜県神社庁までお申し出ください」。記事・写真は収録しない。事実項目と記事を区別して確認するが、再配布許諾とリンク申出の適用範囲は未確認。第三者連絡は行っていない。",
-    "facility_pages_fetched": 8,
-    "failed_pages": [],
+    "facility_pages_fetched": 12,
+    "failed_pages": [
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8C%9C%E9%83%A8%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8C%9C%E9%83%A8%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%B3%80%E5%A4%9A%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%B3%80%E5%A4%9A%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E4%B8%BB%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E4%B8%BB%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E6%B4%A5%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=1015&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1015&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=3247&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3247&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=2004&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2004&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=929&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=929&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=2225&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2225&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=1115&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1115&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=2554&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2554&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=1730&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1730&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/syosai.php?shrno=1728&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1728&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%98%8E%E7%99%BD%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%98%8E%E7%99%BD%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E6%B2%B3%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E6%B2%B3%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E3%82%B1%E5%B2%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E3%82%B1%E5%B2%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E5%A4%A7%E7%A5%9E%E5%AE%AE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E5%A4%A7%E7%A5%9E%E5%AE%AE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%98%86%E5%8E%9F%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%98%86%E5%8E%9F%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%A3%9B%E9%B3%A5%E7%94%B0%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%A3%9B%E9%B3%A5%E7%94%B0%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%98%87%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%98%87%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BA%BB%E7%94%9F%E9%87%8E%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BA%BB%E7%94%9F%E9%87%8E%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%B5%A6%E5%85%AB%E5%B9%A1%E5%AE%AE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%B5%A6%E5%85%AB%E5%B9%A1%E5%AE%AE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E5%B9%B8%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E5%B9%B8%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%9A%E7%94%B1%E5%A4%AA%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%9A%E7%94%B1%E5%A4%AA%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E7%AB%8B%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E7%AB%8B%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E9%81%85%E5%8A%A0%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E9%81%85%E5%8A%A0%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%86%B1%E7%94%B0%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%86%B1%E7%94%B0%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B7%A1%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B7%A1%E6%B4%A5%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E5%BC%98%E8%A6%8B%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E5%BC%98%E8%A6%8B%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%AB%E5%BF%97%E5%A5%88%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%AB%E5%BF%97%E5%A5%88%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E9%B7%B9%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E9%B7%B9%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E6%B4%A5%E6%97%A5%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E6%B4%A5%E6%97%A5%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E5%A3%B7%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E5%A3%B7%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E9%9C%9C%E7%A5%9E%E7%A4%BE",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E9%9C%9C%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "reason": "offline cache miss: https://www.gifu-jinjacho.jp/jnjyalist.php?page=3&tcnt=828&keysel=",
+        "url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=3&tcnt=828&keysel="
+      }
+    ],
     "identity_history": {
+      "0db84b7d-aafc-58bc-8cda-e2dd8f55a263": {
+        "address": "岐阜県各務原市鵜沼東町2丁目31番地",
+        "listed_name": "赤坂神社",
+        "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=830&shrname=%E2%96%A0%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "source_hash": "c17a14df219f2272856a8f441d60abf1945c303a293e4dc77bb3cddceed540e8"
+      },
       "238b9d24-529f-5c91-93b6-fd115a147f30": {
         "address": "岐阜県各務原市那加新田町2丁目30番地",
         "listed_name": "縣神社",
         "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=765&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
         "source_hash": "e846167ef73d99857c5550000767c74ff8c544dfd16b193b9c8d827378c4a84b"
+      },
+      "2cffa178-3539-537a-bc92-cbb671cb4e61": {
+        "address": "岐阜県海津市海津町高須町874番地",
+        "listed_name": "秋葉神社",
+        "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=752&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "source_hash": "f243bdd4fd78dd56a8c49f012c0ec6fe8323ab5bf8fddedfe45278708f711569"
+      },
+      "5596dbf0-88a7-5e87-8cc6-c9dd5a98e8e5": {
+        "address": "岐阜県可児市川合北2-149",
+        "listed_name": "青木神社",
+        "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=587&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "source_hash": "e3444783f934d6725744aa7f86fcd1f79503cf21e982e4d3bf3b73cb93aefb07"
       },
       "59475cfe-432d-5518-8156-d6e4ed58500e": {
         "address": "岐阜県岐阜市県町1丁目4番地",
@@ -39,6 +243,12 @@
         "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=397&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
         "source_hash": "bba50cf890a54ddca33b2475dbb43edacbc3c923ee453e89bdefbf5af374e895"
       },
+      "87b24f58-3f3e-5907-9711-bd16473c1720": {
+        "address": "岐阜県揖斐郡大野町領家438番地",
+        "listed_name": "青木神社",
+        "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2936&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+        "source_hash": "9e480d1145276066db6b164e06f609977a04e8a9376e165b9a9ddf53e1918cc6"
+      },
       "afb0e2e8-e2af-5ef2-a241-f81919b58c5a": {
         "address": "岐阜県加茂郡川辺町下麻生1938番地",
         "listed_name": "縣神社",
@@ -58,11 +268,501 @@
         "source_hash": "4a4b5cebc202862d28f6cdf28d33c39d426019e2ea998d1e1995fdbbc674e6e2"
       }
     },
-    "index_displayed_name_registration_rows": 828,
+    "index_group_total": 828,
+    "index_groups": [
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 2,
+        "group_reading_raw": "あおきじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[2]",
+        "name_raw": "青木神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あかさかじんじゃ",
+        "href_raw": "search.php?jinjya=%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[3]",
+        "name_raw": "赤坂神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あかなべじんじゃ",
+        "href_raw": "search.php?jinjya=%E8%8C%9C%E9%83%A8%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[4]",
+        "name_raw": "茜部神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8C%9C%E9%83%A8%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 2,
+        "group_reading_raw": "あがたじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%98%BF%E8%B3%80%E5%A4%9A%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[5]",
+        "name_raw": "阿賀多神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%B3%80%E5%A4%9A%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 8,
+        "group_reading_raw": "あがたじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[6]",
+        "name_raw": "縣神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 3,
+        "group_reading_raw": "あがたじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%9C%8C%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[7]",
+        "name_raw": "県神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あがたぬしじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%9C%8C%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[8]",
+        "name_raw": "県主神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E4%B8%BB%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 2,
+        "group_reading_raw": "あがたぬしじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%B8%A3%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[9]",
+        "name_raw": "縣主神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E4%B8%BB%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あきつじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%A7%8B%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[10]",
+        "name_raw": "秋津神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E6%B4%A5%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 7,
+        "group_reading_raw": "あきはじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[11]",
+        "name_raw": "秋葉神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 70,
+        "group_reading_raw": "あきばじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[12]",
+        "name_raw": "秋葉神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 2,
+        "group_reading_raw": "あきわじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[13]",
+        "name_raw": "秋葉神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あけしろじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%98%8E%E7%99%BD%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[14]",
+        "name_raw": "明白神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%98%8E%E7%99%BD%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あこうじんじゃ",
+        "href_raw": "search.php?jinjya=%E8%B5%A4%E6%B2%B3%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[15]",
+        "name_raw": "赤河神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E6%B2%B3%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あさひいなりじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%97%AD%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[16]",
+        "name_raw": "旭稲荷神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あさひがおかはちまんじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%97%AD%E3%82%B1%E5%B2%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[17]",
+        "name_raw": "旭ケ岡八幡神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E3%82%B1%E5%B2%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 2,
+        "group_reading_raw": "あさひじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[18]",
+        "name_raw": "朝日神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あさひじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%97%AD%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[19]",
+        "name_raw": "旭神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あさひだいじんぐう",
+        "href_raw": "search.php?jinjya=%E6%9C%9D%E6%97%A5%E5%A4%A7%E7%A5%9E%E5%AE%AE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[20]",
+        "name_raw": "朝日大神宮",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E5%A4%A7%E7%A5%9E%E5%AE%AE"
+      },
+      {
+        "fetched_at": "2026-11-08T14:25:00.290008+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あさひはくさんじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php",
+        "locator": "table.jnm_list tr[21]",
+        "name_raw": "朝日白山神社",
+        "page_hash": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 2,
+        "group_reading_raw": "あさまじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[2]",
+        "name_raw": "浅間神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あしはらじんじゃ",
+        "href_raw": "search.php?jinjya=%E8%98%86%E5%8E%9F%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[3]",
+        "name_raw": "蘆原神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%98%86%E5%8E%9F%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あすかたじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%A3%9B%E9%B3%A5%E7%94%B0%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[4]",
+        "name_raw": "飛鳥田神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%A3%9B%E9%B3%A5%E7%94%B0%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あそじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%98%BF%E8%98%87%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[5]",
+        "name_raw": "阿蘇神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%98%87%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あそやじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%BA%BB%E7%94%9F%E9%87%8E%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[6]",
+        "name_raw": "麻生野神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BA%BB%E7%94%9F%E9%87%8E%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あそらはちまんぐう",
+        "href_raw": "search.php?jinjya=%E6%9C%9D%E6%B5%A6%E5%85%AB%E5%B9%A1%E5%AE%AE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[7]",
+        "name_raw": "朝浦八幡宮",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%B5%A6%E5%85%AB%E5%B9%A1%E5%AE%AE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あたごしんこうじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E5%B9%B8%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[8]",
+        "name_raw": "愛宕神幸神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E5%B9%B8%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 31,
+        "group_reading_raw": "あたごじんじゃ",
+        "href_raw": "search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[9]",
+        "name_raw": "愛宕神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あたゆたじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%98%BF%E5%A4%9A%E7%94%B1%E5%A4%AA%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[10]",
+        "name_raw": "阿多由太神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%9A%E7%94%B1%E5%A4%AA%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あだちじんじゃ",
+        "href_raw": "search.php?jinjya=%E5%AE%89%E7%AB%8B%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[11]",
+        "name_raw": "安立神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E7%AB%8B%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あぢかじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%98%BF%E9%81%85%E5%8A%A0%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[12]",
+        "name_raw": "阿遅加神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E9%81%85%E5%8A%A0%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 3,
+        "group_reading_raw": "あつたじんじゃ",
+        "href_raw": "search.php?jinjya=%E7%86%B1%E7%94%B0%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[13]",
+        "name_raw": "熱田神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%86%B1%E7%94%B0%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あとつじんじゃ",
+        "href_raw": "search.php?jinjya=%E8%B7%A1%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[14]",
+        "name_raw": "跡津神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B7%A1%E6%B4%A5%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あびろみじんじゃ",
+        "href_raw": "search.php?jinjya=%E5%AE%89%E5%BC%98%E8%A6%8B%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[15]",
+        "name_raw": "安弘見神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E5%BC%98%E8%A6%8B%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あぶしなじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%98%BF%E5%A4%AB%E5%BF%97%E5%A5%88%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[16]",
+        "name_raw": "阿夫志奈神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%AB%E5%BF%97%E5%A5%88%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あますわじんじゃ",
+        "href_raw": "search.php?jinjya=%E5%A4%A9%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[17]",
+        "name_raw": "天諏訪神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あまたかじんじゃ",
+        "href_raw": "search.php?jinjya=%E5%A4%A9%E9%B7%B9%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[18]",
+        "name_raw": "天鷹神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E9%B7%B9%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あまつひじんじゃ",
+        "href_raw": "search.php?jinjya=%E5%A4%A9%E6%B4%A5%E6%97%A5%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[19]",
+        "name_raw": "天津日神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E6%B4%A5%E6%97%A5%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あまつぼじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%9B%A8%E5%A3%B7%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[20]",
+        "name_raw": "雨壷神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E5%A3%B7%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "group_count": 1,
+        "group_reading_raw": "あめしもじんじゃ",
+        "href_raw": "search.php?jinjya=%E9%9B%A8%E9%9C%9C%E7%A5%9E%E7%A4%BE",
+        "index_url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+        "locator": "table.jnm_list tr[21]",
+        "name_raw": "雨霜神社",
+        "page_hash": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E9%9C%9C%E7%A5%9E%E7%A4%BE"
+      }
+    ],
+    "index_groups_observed": 40,
+    "limit": 100,
     "link_notification_requested": true,
     "link_notification_sent": false,
     "listing_urls": [
       "https://www.gifu-jinjacho.jp/jnjyalist.php"
+    ],
+    "observed_index_urls": [
+      "https://www.gifu-jinjacho.jp/jnjyalist.php",
+      "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel=",
+      "https://www.gifu-jinjacho.jp/jnjyalist.php?page=3&tcnt=828&keysel="
+    ],
+    "observed_search_urls": [
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8C%9C%E9%83%A8%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%B3%80%E5%A4%9A%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%98%8E%E7%99%BD%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E6%B2%B3%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E3%82%B1%E5%B2%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E5%A4%A7%E7%A5%9E%E5%AE%AE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%98%86%E5%8E%9F%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%A3%9B%E9%B3%A5%E7%94%B0%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%98%87%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BA%BB%E7%94%9F%E9%87%8E%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%B5%A6%E5%85%AB%E5%B9%A1%E5%AE%AE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E5%B9%B8%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%9A%E7%94%B1%E5%A4%AA%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E7%AB%8B%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E9%81%85%E5%8A%A0%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%86%B1%E7%94%B0%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B7%A1%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E5%BC%98%E8%A6%8B%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%AB%E5%BF%97%E5%A5%88%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E9%B7%B9%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E6%B4%A5%E6%97%A5%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E5%A3%B7%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E9%9C%9C%E7%A5%9E%E7%A4%BE"
     ],
     "official_url": "https://www.gifu-jinjacho.jp/",
     "pages": [
@@ -70,6 +770,31 @@
         "fetched_at": "2026-11-08T14:25:00.290008+00:00",
         "sha256": "ee3adfea830575b1412df1de3bd81f262612fb73cd935c583477d3d26c40a1e1",
         "url": "https://www.gifu-jinjacho.jp/jnjyalist.php"
+      },
+      {
+        "fetched_at": "2026-11-09T08:07:47.034795+00:00",
+        "sha256": "f30ea4128ca3b77ccaf179578d92f199cdbc21e2a275c9e9aab020eab6bca4f4",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T08:07:49.216645+00:00",
+        "sha256": "55a9b4d5e58901778bab2a3361731ed08ece90f8fea9dfde93eab49a78fb5a9a",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=587&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "fetched_at": "2026-11-09T08:07:51.379577+00:00",
+        "sha256": "7d4cab9719ee79033433f6fe09bfb676c91e0d0e4c0cccd4f1ba31454c5dfb01",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2936&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "fetched_at": "2026-11-09T08:07:53.547845+00:00",
+        "sha256": "be57ec91d12854582eebbe06af6b86af209954fcdc5df08eef78938bf9bf18b1",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T08:07:55.734082+00:00",
+        "sha256": "c8eaa48cd8acb5bdd06ca6e35e89bd95f7f21904af360a9abecc082bb316cfc1",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=830&shrname=%E2%96%A0%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE%E2%96%A0"
       },
       {
         "fetched_at": "2026-11-09T07:42:13.759993+00:00",
@@ -115,27 +840,176 @@
         "fetched_at": "2026-11-09T07:46:16.870188+00:00",
         "sha256": "2c90e101799709be070f38b2cd9dadb14ce90da7732cf7e7c3d82436d4fa7342",
         "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=765&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:41.257281+00:00",
+        "sha256": "2497e6bc54ec1c5a2ab4a6c44ef3a69e39c6ca4c613d7067f5355369bee9183c",
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "fetched_at": "2026-11-09T07:56:25.829903+00:00",
+        "sha256": "f9aa7c6de59bd982b244fe6ec8e85b0ebe47985084884a5f1166ae0f71b7e733",
+        "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=752&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+      },
+      {
+        "fetched_at": "2026-11-09T07:49:39.073970+00:00",
+        "sha256": "17ad53435481a6597c013d988a91ab0dabdab320836a7fac8816f4b41eaa1bf3",
+        "url": "https://www.gifu-jinjacho.jp/jnjyalist.php?page=2&tcnt=828&keysel="
       }
     ],
-    "pages_fetched": 10,
+    "pages_fetched": 18,
     "prefecture_code": "21",
     "redistribution_status": "unconfirmed",
     "remaining_scope": [
-      "other name/reading-group index registrations and distinct facility search results remain uncollected",
-      "data redistribution and link-notification scope unconfirmed"
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8C%9C%E9%83%A8%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%B3%80%E5%A4%9A%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=1015&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=3247&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=2004&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=929&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=2225&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=1115&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=2554&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=1730&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/syosai.php?shrno=1728&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%98%8E%E7%99%BD%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E6%B2%B3%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E3%82%B1%E5%B2%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E5%A4%A7%E7%A5%9E%E5%AE%AE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%98%86%E5%8E%9F%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%A3%9B%E9%B3%A5%E7%94%B0%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%98%87%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BA%BB%E7%94%9F%E9%87%8E%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%B5%A6%E5%85%AB%E5%B9%A1%E5%AE%AE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E5%B9%B8%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%9A%E7%94%B1%E5%A4%AA%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E7%AB%8B%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E9%81%85%E5%8A%A0%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%86%B1%E7%94%B0%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B7%A1%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E5%BC%98%E8%A6%8B%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%AB%E5%BF%97%E5%A5%88%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E9%B7%B9%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E6%B4%A5%E6%97%A5%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E5%A3%B7%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E9%9C%9C%E7%A5%9E%E7%A4%BE",
+      "https://www.gifu-jinjacho.jp/jnjyalist.php?page=3&tcnt=828&keysel="
     ],
-    "selected_name_result_complete": true,
-    "selected_name_result_total": 8,
-    "selected_rows": 8,
+    "search_result_totals": [
+      {
+        "rows_observed": 2,
+        "total": 2,
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "rows_observed": 1,
+        "total": 1,
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "rows_observed": 8,
+        "total": 8,
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+      },
+      {
+        "rows_observed": 10,
+        "total": 79,
+        "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+      }
+    ],
+    "selected_rows": 12,
     "source_key": "gifu",
-    "source_rows_observed": 8,
-    "traversal_complete": false,
-    "unvisited_name_reading_group_rows": 827
+    "source_rows_observed": 12,
+    "traversal_complete": false
   },
   "entries": [
     {
+      "checked_at": "2026-11-09T08:07:49.216645+00:00",
+      "evidence": "掲載名=青木神社; 掲載読み=(あおきじんじゃ); 住所=〒509-0201 岐阜県可児市川合北2-149",
+      "facility_id": "5596dbf0-88a7-5e87-8cc6-c9dd5a98e8e5",
+      "fetched_at": "2026-11-09T08:07:49.216645+00:00",
+      "id": "b2b8d00e-a540-5a72-8fe7-fd8e8459aacd",
+      "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=587&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "name_raw": "青木神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "55a9b4d5e58901778bab2a3361731ed08ece90f8fea9dfde93eab49a78fb5a9a",
+      "reading": "あおきじんじゃ",
+      "reading_display_raw": "(あおきじんじゃ)",
+      "reading_raw": "あおきじんじゃ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=587&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "e3444783f934d6725744aa7f86fcd1f79503cf21e982e4d3bf3b73cb93aefb07",
+      "status": "verified",
+      "surface": "青木神社"
+    },
+    {
+      "checked_at": "2026-11-09T08:07:51.379577+00:00",
+      "evidence": "掲載名=青木神社; 掲載読み=(あおきじんじゃ); 住所=〒501-0556 岐阜県揖斐郡大野町領家438番地",
+      "facility_id": "87b24f58-3f3e-5907-9711-bd16473c1720",
+      "fetched_at": "2026-11-09T08:07:51.379577+00:00",
+      "id": "c714c75f-b6b3-575d-b950-ae537dbbc071",
+      "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2936&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "name_raw": "青木神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "7d4cab9719ee79033433f6fe09bfb676c91e0d0e4c0cccd4f1ba31454c5dfb01",
+      "reading": "あおきじんじゃ",
+      "reading_display_raw": "(あおきじんじゃ)",
+      "reading_raw": "あおきじんじゃ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2936&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "9e480d1145276066db6b164e06f609977a04e8a9376e165b9a9ddf53e1918cc6",
+      "status": "verified",
+      "surface": "青木神社"
+    },
+    {
+      "checked_at": "2026-11-09T08:07:55.734082+00:00",
+      "evidence": "掲載名=赤坂神社; 掲載読み=(あかさかじんじゃ); 住所=〒509-0126 岐阜県各務原市鵜沼東町2丁目31番地",
+      "facility_id": "0db84b7d-aafc-58bc-8cda-e2dd8f55a263",
+      "fetched_at": "2026-11-09T08:07:55.734082+00:00",
+      "id": "26074d35-e8b8-528c-88b6-e77180600e3d",
+      "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=830&shrname=%E2%96%A0%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "name_raw": "赤坂神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "c8eaa48cd8acb5bdd06ca6e35e89bd95f7f21904af360a9abecc082bb316cfc1",
+      "reading": "あかさかじんじゃ",
+      "reading_display_raw": "(あかさかじんじゃ)",
+      "reading_raw": "あかさかじんじゃ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=830&shrname=%E2%96%A0%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "c17a14df219f2272856a8f441d60abf1945c303a293e4dc77bb3cddceed540e8",
+      "status": "verified",
+      "surface": "赤坂神社"
+    },
+    {
       "checked_at": "2026-11-09T07:42:46.526474+00:00",
-      "evidence": "神社庁個別掲載の正式名「縣神社」、同じ見出しの全文読み原文「(あがたじんじゃ)」、所在地「〒501-1101 岐阜県岐阜市佐野728番地の1」を照合。読みの括弧と所在地の郵便番号を機械的に別扱いし、文字は推定せず保存。",
+      "evidence": "掲載名=縣神社; 掲載読み=(あがたじんじゃ); 住所=〒501-1101 岐阜県岐阜市佐野728番地の1",
       "facility_id": "608de6dc-a81f-5d5c-8bfe-f87ddd033ffd",
       "fetched_at": "2026-11-09T07:42:46.526474+00:00",
       "id": "f1fd54c0-004e-58ad-9a06-d03cce9e1b10",
@@ -143,8 +1017,7 @@
       "name_raw": "縣神社",
       "normalization": [
         "NFKC reading only",
-        "katakana to hiragana",
-        "extract explicit kana within source parentheses; preserve reading_display_raw"
+        "katakana to hiragana"
       ],
       "page_hash": "bea5e279b8dd76540e40efe47ae2316f4d6bb9e1bf41abe75537244ced881c33",
       "reading": "あがたじんじゃ",
@@ -160,7 +1033,7 @@
     },
     {
       "checked_at": "2026-11-09T07:43:27.020015+00:00",
-      "evidence": "神社庁個別掲載の正式名「縣神社」、同じ見出しの全文読み原文「(あがたじんじゃ)」、所在地「〒500-8176 岐阜県岐阜市県町1丁目4番地」を照合。読みの括弧と所在地の郵便番号を機械的に別扱いし、文字は推定せず保存。",
+      "evidence": "掲載名=縣神社; 掲載読み=(あがたじんじゃ); 住所=〒500-8176 岐阜県岐阜市県町1丁目4番地",
       "facility_id": "59475cfe-432d-5518-8156-d6e4ed58500e",
       "fetched_at": "2026-11-09T07:43:27.020015+00:00",
       "id": "ac8cab56-d112-522c-9eff-cb5e7294cb7f",
@@ -168,8 +1041,7 @@
       "name_raw": "縣神社",
       "normalization": [
         "NFKC reading only",
-        "katakana to hiragana",
-        "extract explicit kana within source parentheses; preserve reading_display_raw"
+        "katakana to hiragana"
       ],
       "page_hash": "7f7a884d150d397718618252d4c1e7c1cd4fd1f90cce7d59d17c534bffa8d9b5",
       "reading": "あがたじんじゃ",
@@ -185,7 +1057,7 @@
     },
     {
       "checked_at": "2026-11-09T07:43:29.172096+00:00",
-      "evidence": "神社庁個別掲載の正式名「縣神社」、同じ見出しの全文読み原文「(あがたじんじゃ)」、所在地「〒501-3714 岐阜県美濃市曽代287番地の1」を照合。読みの括弧と所在地の郵便番号を機械的に別扱いし、文字は推定せず保存。",
+      "evidence": "掲載名=縣神社; 掲載読み=(あがたじんじゃ); 住所=〒501-3714 岐阜県美濃市曽代287番地の1",
       "facility_id": "5fff2c4e-2202-5e65-94ad-58ba60130eb4",
       "fetched_at": "2026-11-09T07:43:29.172096+00:00",
       "id": "cd65e4c4-efe7-5131-8423-5aa5b1c00166",
@@ -193,8 +1065,7 @@
       "name_raw": "縣神社",
       "normalization": [
         "NFKC reading only",
-        "katakana to hiragana",
-        "extract explicit kana within source parentheses; preserve reading_display_raw"
+        "katakana to hiragana"
       ],
       "page_hash": "c6198bb93908bca3678f71a7f39eac252a6bf8fd7ed1480397a3d179131ade77",
       "reading": "あがたじんじゃ",
@@ -210,7 +1081,7 @@
     },
     {
       "checked_at": "2026-11-09T07:43:31.317556+00:00",
-      "evidence": "神社庁個別掲載の正式名「縣神社」、同じ見出しの全文読み原文「(あがたじんじゃ)」、所在地「〒500-8363 岐阜県岐阜市爪78番地」を照合。読みの括弧と所在地の郵便番号を機械的に別扱いし、文字は推定せず保存。",
+      "evidence": "掲載名=縣神社; 掲載読み=(あがたじんじゃ); 住所=〒500-8363 岐阜県岐阜市爪78番地",
       "facility_id": "fe58443b-917f-54a7-813e-a8cd4f922d8c",
       "fetched_at": "2026-11-09T07:43:31.317556+00:00",
       "id": "53a39c99-7c3e-562c-a2f4-bcc92ce5a7af",
@@ -218,8 +1089,7 @@
       "name_raw": "縣神社",
       "normalization": [
         "NFKC reading only",
-        "katakana to hiragana",
-        "extract explicit kana within source parentheses; preserve reading_display_raw"
+        "katakana to hiragana"
       ],
       "page_hash": "4bf569971c1a65c2d89330a2128181cd9185c1d60eb8f3107640be67b7e55c0f",
       "reading": "あがたじんじゃ",
@@ -235,7 +1105,7 @@
     },
     {
       "checked_at": "2026-11-09T07:43:33.471118+00:00",
-      "evidence": "神社庁個別掲載の正式名「縣神社」、同じ見出しの全文読み原文「(あがたじんじゃ)」、所在地「〒500-8283 岐阜県岐阜市茜部野瀬3丁目249番地」を照合。読みの括弧と所在地の郵便番号を機械的に別扱いし、文字は推定せず保存。",
+      "evidence": "掲載名=縣神社; 掲載読み=(あがたじんじゃ); 住所=〒500-8283 岐阜県岐阜市茜部野瀬3丁目249番地",
       "facility_id": "bc3aa95a-9dbe-5e48-b760-ac5a83bb62bb",
       "fetched_at": "2026-11-09T07:43:33.471118+00:00",
       "id": "b273f374-53ea-5667-b47e-437deace6a33",
@@ -243,8 +1113,7 @@
       "name_raw": "縣神社",
       "normalization": [
         "NFKC reading only",
-        "katakana to hiragana",
-        "extract explicit kana within source parentheses; preserve reading_display_raw"
+        "katakana to hiragana"
       ],
       "page_hash": "ba7d77e8c75fbc514578acfa7d2a8fd1037bf8018901b0aec26386c561ed3a5e",
       "reading": "あがたじんじゃ",
@@ -260,7 +1129,7 @@
     },
     {
       "checked_at": "2026-11-09T07:46:12.523331+00:00",
-      "evidence": "神社庁個別掲載の正式名「縣神社」、同じ見出しの全文読み原文「(あがたじんじゃ)」、所在地「〒509-0301 岐阜県加茂郡川辺町下麻生1938番地」を照合。読みの括弧と所在地の郵便番号を機械的に別扱いし、文字は推定せず保存。",
+      "evidence": "掲載名=縣神社; 掲載読み=(あがたじんじゃ); 住所=〒509-0301 岐阜県加茂郡川辺町下麻生1938番地",
       "facility_id": "afb0e2e8-e2af-5ef2-a241-f81919b58c5a",
       "fetched_at": "2026-11-09T07:46:12.523331+00:00",
       "id": "a2d4ce53-7a7d-50f8-bff7-6a90a1550a07",
@@ -268,8 +1137,7 @@
       "name_raw": "縣神社",
       "normalization": [
         "NFKC reading only",
-        "katakana to hiragana",
-        "extract explicit kana within source parentheses; preserve reading_display_raw"
+        "katakana to hiragana"
       ],
       "page_hash": "dad1617ca700d1c5026864c863c8ef55be152a2b843524eaa1e345dea60a6956",
       "reading": "あがたじんじゃ",
@@ -285,7 +1153,7 @@
     },
     {
       "checked_at": "2026-11-09T07:46:14.693343+00:00",
-      "evidence": "神社庁個別掲載の正式名「縣神社」、同じ見出しの全文読み原文「(あがたじんじゃ)」、所在地「〒505-0306 岐阜県加茂郡八百津町上飯田625番地」を照合。読みの括弧と所在地の郵便番号を機械的に別扱いし、文字は推定せず保存。",
+      "evidence": "掲載名=縣神社; 掲載読み=(あがたじんじゃ); 住所=〒505-0306 岐阜県加茂郡八百津町上飯田625番地",
       "facility_id": "60f48a44-aef4-5c06-a0f7-36e551c9078b",
       "fetched_at": "2026-11-09T07:46:14.693343+00:00",
       "id": "ce68513d-f68a-5ef1-afd6-5c23de69fc43",
@@ -293,8 +1161,7 @@
       "name_raw": "縣神社",
       "normalization": [
         "NFKC reading only",
-        "katakana to hiragana",
-        "extract explicit kana within source parentheses; preserve reading_display_raw"
+        "katakana to hiragana"
       ],
       "page_hash": "16ce170e1d611007de8f27bf8c7ceada2fe59d2bfd09204f853685019bbdb803",
       "reading": "あがたじんじゃ",
@@ -310,7 +1177,7 @@
     },
     {
       "checked_at": "2026-11-09T07:46:16.870188+00:00",
-      "evidence": "神社庁個別掲載の正式名「縣神社」、同じ見出しの全文読み原文「(あがたじんじゃ)」、所在地「〒504-0045 岐阜県各務原市那加新田町2丁目30番地」を照合。読みの括弧と所在地の郵便番号を機械的に別扱いし、文字は推定せず保存。",
+      "evidence": "掲載名=縣神社; 掲載読み=(あがたじんじゃ); 住所=〒504-0045 岐阜県各務原市那加新田町2丁目30番地",
       "facility_id": "238b9d24-529f-5c91-93b6-fd115a147f30",
       "fetched_at": "2026-11-09T07:46:16.870188+00:00",
       "id": "04cc28e8-6e1e-5dbb-8ec1-7f776bc7b077",
@@ -318,8 +1185,7 @@
       "name_raw": "縣神社",
       "normalization": [
         "NFKC reading only",
-        "katakana to hiragana",
-        "extract explicit kana within source parentheses; preserve reading_display_raw"
+        "katakana to hiragana"
       ],
       "page_hash": "2c90e101799709be070f38b2cd9dadb14ce90da7732cf7e7c3d82436d4fa7342",
       "reading": "あがたじんじゃ",
@@ -332,9 +1198,156 @@
       "source_hash": "e846167ef73d99857c5550000767c74ff8c544dfd16b193b9c8d827378c4a84b",
       "status": "verified",
       "surface": "縣神社"
+    },
+    {
+      "checked_at": "2026-11-09T07:56:25.829903+00:00",
+      "evidence": "掲載名=秋葉神社; 掲載読み=(あきばじんじゃ); 住所=〒503-0653 岐阜県海津市海津町高須町874番地",
+      "facility_id": "2cffa178-3539-537a-bc92-cbb671cb4e61",
+      "fetched_at": "2026-11-09T07:56:25.829903+00:00",
+      "id": "542b46af-d07a-5b26-b3b6-cd4903601b8a",
+      "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=752&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "name_raw": "秋葉神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "f9aa7c6de59bd982b244fe6ec8e85b0ebe47985084884a5f1166ae0f71b7e733",
+      "reading": "あきばじんじゃ",
+      "reading_display_raw": "(あきばじんじゃ)",
+      "reading_raw": "あきばじんじゃ",
+      "reading_source_kind": "agency",
+      "reading_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=752&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "f243bdd4fd78dd56a8c49f012c0ec6fe8323ab5bf8fddedfe45278708f711569",
+      "status": "verified",
+      "surface": "秋葉神社"
     }
   ],
   "facilities": [
+    {
+      "address": "岐阜県可児市川合北2-149",
+      "address_raw": "〒509-0201 岐阜県可児市川合北2-149",
+      "agency": "岐阜県神社庁",
+      "checked_at": "2026-11-09T08:07:49.216645+00:00",
+      "fetched_at": "2026-11-09T08:07:49.216645+00:00",
+      "id": "5596dbf0-88a7-5e87-8cc6-c9dd5a98e8e5",
+      "index_occurrences": [
+        {
+          "address_raw": "509-0201 岐阜県可児市川合北2-149",
+          "fetched_at": "2026-11-09T08:07:47.034795+00:00",
+          "href_raw": "syosai.php?shrno=587&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[2] a",
+          "name_raw": "青木神社",
+          "page_hash": "f30ea4128ca3b77ccaf179578d92f199cdbc21e2a275c9e9aab020eab6bca4f4",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE"
+        }
+      ],
+      "listed_name": "青木神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T08:07:49.216645+00:00",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
+          "page_hash": "55a9b4d5e58901778bab2a3361731ed08ece90f8fea9dfde93eab49a78fb5a9a",
+          "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=587&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0"
+        }
+      ],
+      "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=587&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "municipality": "可児市",
+      "name_raw": "青木神社",
+      "native_source_id": "587",
+      "official_site_url": null,
+      "page_hash": "55a9b4d5e58901778bab2a3361731ed08ece90f8fea9dfde93eab49a78fb5a9a",
+      "prefecture": "岐阜県",
+      "prefecture_code": "21",
+      "reason": "",
+      "source_hash": "e3444783f934d6725744aa7f86fcd1f79503cf21e982e4d3bf3b73cb93aefb07",
+      "source_key": "gifu",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
+      "status": "verified"
+    },
+    {
+      "address": "岐阜県揖斐郡大野町領家438番地",
+      "address_raw": "〒501-0556 岐阜県揖斐郡大野町領家438番地",
+      "agency": "岐阜県神社庁",
+      "checked_at": "2026-11-09T08:07:51.379577+00:00",
+      "fetched_at": "2026-11-09T08:07:51.379577+00:00",
+      "id": "87b24f58-3f3e-5907-9711-bd16473c1720",
+      "index_occurrences": [
+        {
+          "address_raw": "501-0556 岐阜県揖斐郡大野町領家438番地",
+          "fetched_at": "2026-11-09T08:07:47.034795+00:00",
+          "href_raw": "syosai.php?shrno=2936&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[10] a",
+          "name_raw": "青木神社",
+          "page_hash": "f30ea4128ca3b77ccaf179578d92f199cdbc21e2a275c9e9aab020eab6bca4f4",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE"
+        }
+      ],
+      "listed_name": "青木神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T08:07:51.379577+00:00",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
+          "page_hash": "7d4cab9719ee79033433f6fe09bfb676c91e0d0e4c0cccd4f1ba31454c5dfb01",
+          "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2936&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0"
+        }
+      ],
+      "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2936&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "municipality": "揖斐郡大野町",
+      "name_raw": "青木神社",
+      "native_source_id": "2936",
+      "official_site_url": null,
+      "page_hash": "7d4cab9719ee79033433f6fe09bfb676c91e0d0e4c0cccd4f1ba31454c5dfb01",
+      "prefecture": "岐阜県",
+      "prefecture_code": "21",
+      "reason": "",
+      "source_hash": "9e480d1145276066db6b164e06f609977a04e8a9376e165b9a9ddf53e1918cc6",
+      "source_key": "gifu",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
+      "status": "verified"
+    },
+    {
+      "address": "岐阜県各務原市鵜沼東町2丁目31番地",
+      "address_raw": "〒509-0126 岐阜県各務原市鵜沼東町2丁目31番地",
+      "agency": "岐阜県神社庁",
+      "checked_at": "2026-11-09T08:07:55.734082+00:00",
+      "fetched_at": "2026-11-09T08:07:55.734082+00:00",
+      "id": "0db84b7d-aafc-58bc-8cda-e2dd8f55a263",
+      "index_occurrences": [
+        {
+          "address_raw": "509-0126 岐阜県各務原市鵜沼東町2丁目31番地",
+          "fetched_at": "2026-11-09T08:07:53.547845+00:00",
+          "href_raw": "syosai.php?shrno=830&shrname=%E2%96%A0%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[2] a",
+          "name_raw": "赤坂神社",
+          "page_hash": "be57ec91d12854582eebbe06af6b86af209954fcdc5df08eef78938bf9bf18b1",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE"
+        }
+      ],
+      "listed_name": "赤坂神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T08:07:55.734082+00:00",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
+          "page_hash": "c8eaa48cd8acb5bdd06ca6e35e89bd95f7f21904af360a9abecc082bb316cfc1",
+          "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=830&shrname=%E2%96%A0%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE%E2%96%A0"
+        }
+      ],
+      "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=830&shrname=%E2%96%A0%E8%B5%A4%E5%9D%82%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "municipality": "各務原市",
+      "name_raw": "赤坂神社",
+      "native_source_id": "830",
+      "official_site_url": null,
+      "page_hash": "c8eaa48cd8acb5bdd06ca6e35e89bd95f7f21904af360a9abecc082bb316cfc1",
+      "prefecture": "岐阜県",
+      "prefecture_code": "21",
+      "reason": "",
+      "source_hash": "c17a14df219f2272856a8f441d60abf1945c303a293e4dc77bb3cddceed540e8",
+      "source_key": "gifu",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
+      "status": "verified"
+    },
     {
       "address": "岐阜県岐阜市佐野728番地の1",
       "address_raw": "〒501-1101 岐阜県岐阜市佐野728番地の1",
@@ -342,11 +1355,22 @@
       "checked_at": "2026-11-09T07:42:46.526474+00:00",
       "fetched_at": "2026-11-09T07:42:46.526474+00:00",
       "id": "608de6dc-a81f-5d5c-8bfe-f87ddd033ffd",
+      "index_occurrences": [
+        {
+          "address_raw": "501-1101 岐阜県岐阜市佐野728番地の1",
+          "fetched_at": "2026-11-09T07:42:13.759993+00:00",
+          "href_raw": "syosai.php?shrno=1057&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[2] a",
+          "name_raw": "縣神社",
+          "page_hash": "2e2e019a26d9608e655de558423013b39dde0239112c4155c92062b976bf7136",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+        }
+      ],
       "listed_name": "縣神社",
       "listing_occurrences": [
         {
           "fetched_at": "2026-11-09T07:42:46.526474+00:00",
-          "locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
           "page_hash": "bea5e279b8dd76540e40efe47ae2316f4d6bb9e1bf41abe75537244ced881c33",
           "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1057&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
         }
@@ -362,7 +1386,7 @@
       "reason": "",
       "source_hash": "712bf2592628be0017f68e6d2bf787902dc1041c862c667acd27b4c3eb0246f6",
       "source_key": "gifu",
-      "source_locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
       "status": "verified"
     },
     {
@@ -372,11 +1396,22 @@
       "checked_at": "2026-11-09T07:43:27.020015+00:00",
       "fetched_at": "2026-11-09T07:43:27.020015+00:00",
       "id": "59475cfe-432d-5518-8156-d6e4ed58500e",
+      "index_occurrences": [
+        {
+          "address_raw": "500-8176 岐阜県岐阜市県町1丁目4番地",
+          "fetched_at": "2026-11-09T07:42:13.759993+00:00",
+          "href_raw": "syosai.php?shrno=936&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[10] a",
+          "name_raw": "縣神社",
+          "page_hash": "2e2e019a26d9608e655de558423013b39dde0239112c4155c92062b976bf7136",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+        }
+      ],
       "listed_name": "縣神社",
       "listing_occurrences": [
         {
           "fetched_at": "2026-11-09T07:43:27.020015+00:00",
-          "locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
           "page_hash": "7f7a884d150d397718618252d4c1e7c1cd4fd1f90cce7d59d17c534bffa8d9b5",
           "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=936&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
         }
@@ -392,7 +1427,7 @@
       "reason": "",
       "source_hash": "27fbac2ec3f9765db855d3198c2924c5a55682ec3a3e1f3c0cc887807c78adf9",
       "source_key": "gifu",
-      "source_locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
       "status": "verified"
     },
     {
@@ -402,11 +1437,22 @@
       "checked_at": "2026-11-09T07:43:29.172096+00:00",
       "fetched_at": "2026-11-09T07:43:29.172096+00:00",
       "id": "5fff2c4e-2202-5e65-94ad-58ba60130eb4",
+      "index_occurrences": [
+        {
+          "address_raw": "501-3714 岐阜県美濃市曽代287番地の1",
+          "fetched_at": "2026-11-09T07:42:13.759993+00:00",
+          "href_raw": "syosai.php?shrno=2463&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[18] a",
+          "name_raw": "縣神社",
+          "page_hash": "2e2e019a26d9608e655de558423013b39dde0239112c4155c92062b976bf7136",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+        }
+      ],
       "listed_name": "縣神社",
       "listing_occurrences": [
         {
           "fetched_at": "2026-11-09T07:43:29.172096+00:00",
-          "locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
           "page_hash": "c6198bb93908bca3678f71a7f39eac252a6bf8fd7ed1480397a3d179131ade77",
           "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2463&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
         }
@@ -422,7 +1468,7 @@
       "reason": "",
       "source_hash": "e93036275d082a63168f67d1eca235bd65ef24a27cfb9a2098e3a83865e6bbd2",
       "source_key": "gifu",
-      "source_locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
       "status": "verified"
     },
     {
@@ -432,11 +1478,22 @@
       "checked_at": "2026-11-09T07:43:31.317556+00:00",
       "fetched_at": "2026-11-09T07:43:31.317556+00:00",
       "id": "fe58443b-917f-54a7-813e-a8cd4f922d8c",
+      "index_occurrences": [
+        {
+          "address_raw": "500-8363 岐阜県岐阜市爪78番地",
+          "fetched_at": "2026-11-09T07:42:13.759993+00:00",
+          "href_raw": "syosai.php?shrno=1000&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[26] a",
+          "name_raw": "縣神社",
+          "page_hash": "2e2e019a26d9608e655de558423013b39dde0239112c4155c92062b976bf7136",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+        }
+      ],
       "listed_name": "縣神社",
       "listing_occurrences": [
         {
           "fetched_at": "2026-11-09T07:43:31.317556+00:00",
-          "locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
           "page_hash": "4bf569971c1a65c2d89330a2128181cd9185c1d60eb8f3107640be67b7e55c0f",
           "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1000&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
         }
@@ -452,7 +1509,7 @@
       "reason": "",
       "source_hash": "4a4b5cebc202862d28f6cdf28d33c39d426019e2ea998d1e1995fdbbc674e6e2",
       "source_key": "gifu",
-      "source_locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
       "status": "verified"
     },
     {
@@ -462,11 +1519,22 @@
       "checked_at": "2026-11-09T07:43:33.471118+00:00",
       "fetched_at": "2026-11-09T07:43:33.471118+00:00",
       "id": "bc3aa95a-9dbe-5e48-b760-ac5a83bb62bb",
+      "index_occurrences": [
+        {
+          "address_raw": "500-8283 岐阜県岐阜市茜部野瀬3丁目249番地",
+          "fetched_at": "2026-11-09T07:42:13.759993+00:00",
+          "href_raw": "syosai.php?shrno=985&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[34] a",
+          "name_raw": "縣神社",
+          "page_hash": "2e2e019a26d9608e655de558423013b39dde0239112c4155c92062b976bf7136",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+        }
+      ],
       "listed_name": "縣神社",
       "listing_occurrences": [
         {
           "fetched_at": "2026-11-09T07:43:33.471118+00:00",
-          "locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
           "page_hash": "ba7d77e8c75fbc514578acfa7d2a8fd1037bf8018901b0aec26386c561ed3a5e",
           "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=985&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
         }
@@ -482,7 +1550,7 @@
       "reason": "",
       "source_hash": "e49e0c5c58cf9047f88ab1f9421e18d23992e0f0787b170e684b69945fa8be7c",
       "source_key": "gifu",
-      "source_locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
       "status": "verified"
     },
     {
@@ -492,11 +1560,22 @@
       "checked_at": "2026-11-09T07:46:12.523331+00:00",
       "fetched_at": "2026-11-09T07:46:12.523331+00:00",
       "id": "afb0e2e8-e2af-5ef2-a241-f81919b58c5a",
+      "index_occurrences": [
+        {
+          "address_raw": "509-0301 岐阜県加茂郡川辺町下麻生1938番地",
+          "fetched_at": "2026-11-09T07:42:13.759993+00:00",
+          "href_raw": "syosai.php?shrno=421&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[42] a",
+          "name_raw": "縣神社",
+          "page_hash": "2e2e019a26d9608e655de558423013b39dde0239112c4155c92062b976bf7136",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+        }
+      ],
       "listed_name": "縣神社",
       "listing_occurrences": [
         {
           "fetched_at": "2026-11-09T07:46:12.523331+00:00",
-          "locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
           "page_hash": "dad1617ca700d1c5026864c863c8ef55be152a2b843524eaa1e345dea60a6956",
           "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=421&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
         }
@@ -512,7 +1591,7 @@
       "reason": "",
       "source_hash": "e29c91a33c0a98c6b81c02439dee09a22df692d6daae858c41890032aea1644d",
       "source_key": "gifu",
-      "source_locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
       "status": "verified"
     },
     {
@@ -522,11 +1601,22 @@
       "checked_at": "2026-11-09T07:46:14.693343+00:00",
       "fetched_at": "2026-11-09T07:46:14.693343+00:00",
       "id": "60f48a44-aef4-5c06-a0f7-36e551c9078b",
+      "index_occurrences": [
+        {
+          "address_raw": "505-0306 岐阜県加茂郡八百津町上飯田625番地",
+          "fetched_at": "2026-11-09T07:42:13.759993+00:00",
+          "href_raw": "syosai.php?shrno=397&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[50] a",
+          "name_raw": "縣神社",
+          "page_hash": "2e2e019a26d9608e655de558423013b39dde0239112c4155c92062b976bf7136",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+        }
+      ],
       "listed_name": "縣神社",
       "listing_occurrences": [
         {
           "fetched_at": "2026-11-09T07:46:14.693343+00:00",
-          "locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
           "page_hash": "16ce170e1d611007de8f27bf8c7ceada2fe59d2bfd09204f853685019bbdb803",
           "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=397&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
         }
@@ -542,7 +1632,7 @@
       "reason": "",
       "source_hash": "bba50cf890a54ddca33b2475dbb43edacbc3c923ee453e89bdefbf5af374e895",
       "source_key": "gifu",
-      "source_locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
       "status": "verified"
     },
     {
@@ -552,11 +1642,22 @@
       "checked_at": "2026-11-09T07:46:16.870188+00:00",
       "fetched_at": "2026-11-09T07:46:16.870188+00:00",
       "id": "238b9d24-529f-5c91-93b6-fd115a147f30",
+      "index_occurrences": [
+        {
+          "address_raw": "504-0045 岐阜県各務原市那加新田町2丁目30番地",
+          "fetched_at": "2026-11-09T07:42:13.759993+00:00",
+          "href_raw": "syosai.php?shrno=765&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[58] a",
+          "name_raw": "縣神社",
+          "page_hash": "2e2e019a26d9608e655de558423013b39dde0239112c4155c92062b976bf7136",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E7%A5%9E%E7%A4%BE"
+        }
+      ],
       "listed_name": "縣神社",
       "listing_occurrences": [
         {
           "fetched_at": "2026-11-09T07:46:16.870188+00:00",
-          "locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
           "page_hash": "2c90e101799709be070f38b2cd9dadb14ce90da7732cf7e7c3d82436d4fa7342",
           "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=765&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
         }
@@ -572,7 +1673,48 @@
       "reason": "",
       "source_hash": "e846167ef73d99857c5550000767c74ff8c544dfd16b193b9c8d827378c4a84b",
       "source_key": "gifu",
-      "source_locator": "td[height=\"80\"] font.hyodai and sibling font; td.moji3 with postal address",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
+      "status": "verified"
+    },
+    {
+      "address": "岐阜県海津市海津町高須町874番地",
+      "address_raw": "〒503-0653 岐阜県海津市海津町高須町874番地",
+      "agency": "岐阜県神社庁",
+      "checked_at": "2026-11-09T07:56:25.829903+00:00",
+      "fetched_at": "2026-11-09T07:56:25.829903+00:00",
+      "id": "2cffa178-3539-537a-bc92-cbb671cb4e61",
+      "index_occurrences": [
+        {
+          "address_raw": "503-0653 岐阜県海津市海津町高須町874番地",
+          "fetched_at": "2026-11-09T07:49:41.257281+00:00",
+          "href_raw": "syosai.php?shrno=752&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "locator": "table.sc_tbl td[2] a",
+          "name_raw": "秋葉神社",
+          "page_hash": "2497e6bc54ec1c5a2ab4a6c44ef3a69e39c6ca4c613d7067f5355369bee9183c",
+          "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+        }
+      ],
+      "listed_name": "秋葉神社",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-09T07:56:25.829903+00:00",
+          "locator": "td[height=80] font.hyodai + font; td.moji3",
+          "page_hash": "f9aa7c6de59bd982b244fe6ec8e85b0ebe47985084884a5f1166ae0f71b7e733",
+          "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=752&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+        }
+      ],
+      "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=752&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+      "municipality": "海津市",
+      "name_raw": "秋葉神社",
+      "native_source_id": "752",
+      "official_site_url": null,
+      "page_hash": "f9aa7c6de59bd982b244fe6ec8e85b0ebe47985084884a5f1166ae0f71b7e733",
+      "prefecture": "岐阜県",
+      "prefecture_code": "21",
+      "reason": "",
+      "source_hash": "f243bdd4fd78dd56a8c49f012c0ec6fe8323ab5bf8fddedfe45278708f711569",
+      "source_key": "gifu",
+      "source_locator": "td[height=80] font.hyodai + font; td.moji3",
       "status": "verified"
     }
   ],

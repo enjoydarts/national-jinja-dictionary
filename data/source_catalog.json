@@ -2438,27 +2438,28 @@
           }
         },
         "canonical_data": {
-          "entries": 8,
+          "entries": 12,
           "entry_status_counts": {
-            "verified": 8
+            "verified": 12
           },
-          "facilities": 8,
+          "facilities": 12,
           "facility_status_counts": {
-            "verified": 8
+            "verified": 12
           },
           "path": "data/sources/gifu.json",
-          "verified_entries": 8,
-          "verified_facilities": 8
+          "verified_entries": 12,
+          "verified_facilities": 12
         },
-        "checked_at": "2026-11-09T07:46:16.870188+00:00",
-        "facilities_collected": 8,
+        "checked_at": "2026-11-09T08:07:55.734082+00:00",
+        "facilities_collected": 12,
         "facility_pages_fetched": 8,
         "fields_observed": {
-          "address": 8,
-          "name": 8,
-          "reading_raw": 8
+          "address": 12,
+          "name": 12,
+          "reading_raw": 12
         },
         "index_displayed_name_registration_rows": 828,
+        "index_groups_observed": 40,
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-08T14:24:58.139177+00:00",
@@ -2483,16 +2484,60 @@
         ],
         "inspection_evidence_reference": "data/sources/gifu.json#collection.pages",
         "listing_authority_status": "agency_site",
-        "pages_fetched": 10,
-        "reason": "公式の「縣神社」名称検索8施設を全件個別閲覧。全文読み・異なる所在地・実詳細IDを照合し8施設を保存。828表示は一覧の名称・読みの登録行で、同じ名称が異なる読みで複数行になる。名称の異なり数・施設数とは区別。",
+        "pages_fetched": 18,
+        "reason": "100施設上限の試作で12施設を取得し全件原ページ照合。途中からサーバー接続拒否。修正版でキャッシュ再解析し、未取得45件を残す。828名称・読み群のうち40行を観測。",
         "remaining_scope": [
-          "other name/reading-group index registrations and distinct facility search results remain uncollected",
-          "data redistribution and link-notification scope unconfirmed"
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8C%9C%E9%83%A8%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%B3%80%E5%A4%9A%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9C%8C%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B8%A3%E4%B8%BB%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A7%8B%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=1015&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=3247&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=2004&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=929&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=2225&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=1115&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=2554&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=1730&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=1728&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%98%8E%E7%99%BD%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B5%A4%E6%B2%B3%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E3%82%B1%E5%B2%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%97%AD%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E5%A4%A7%E7%A5%9E%E5%AE%AE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%97%A5%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%98%86%E5%8E%9F%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%A3%9B%E9%B3%A5%E7%94%B0%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E8%98%87%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BA%BB%E7%94%9F%E9%87%8E%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%9D%E6%B5%A6%E5%85%AB%E5%B9%A1%E5%AE%AE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E5%B9%B8%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%9A%E7%94%B1%E5%A4%AA%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E7%AB%8B%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E9%81%85%E5%8A%A0%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%86%B1%E7%94%B0%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B7%A1%E6%B4%A5%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AE%89%E5%BC%98%E8%A6%8B%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%98%BF%E5%A4%AB%E5%BF%97%E5%A5%88%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E9%B7%B9%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A4%A9%E6%B4%A5%E6%97%A5%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E5%A3%B7%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9B%A8%E9%9C%9C%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/jnjyalist.php?page=3&tcnt=828&keysel="
         ],
         "selected_name_result_complete": true,
         "selected_name_result_total": 8,
-        "source_rows_observed": 8,
-        "status": "partial"
+        "source_rows_observed": 12,
+        "status": "partial",
+        "traversal_complete": false
       },
       "conditions": {
         "data_use_conditions": "トップに「文章および写真の無断転用はお断りします」「リンクされる方は岐阜県神社庁までお申し出ください」。記事・写真は収録しない。事実項目と記事を区別して確認するが、再配布許諾とリンク申出の適用範囲は未確認。第三者連絡は行っていない。",
@@ -3092,8 +3137,26 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "http://www.kyoto-jinjacho.or.jp/",
       "collection": {
-        "checked_at": null,
-        "facilities_collected": 0,
+        "canonical_data": {
+          "entries": 39,
+          "entry_status_counts": {
+            "pending": 39
+          },
+          "facilities": 39,
+          "facility_status_counts": {
+            "verified": 39
+          },
+          "path": "data/sources/kyoto.json",
+          "verified_entries": 0,
+          "verified_facilities": 39
+        },
+        "checked_at": "2026-11-09T07:55:14.823326+00:00",
+        "facilities_collected": 39,
+        "fields_observed": {
+          "address": 39,
+          "name": 39,
+          "reading_raw": 0
+        },
         "inspection_evidence": [
           {
             "error": "'utf-8' codec can't decode byte 0x8b in position 315: invalid start byte",
@@ -3109,15 +3172,22 @@
             "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
           }
         ],
+        "inspection_evidence_reference": "data/sources/kyoto.json#collection.pages",
         "listing_authority_status": "agency_site",
-        "pages_fetched": 0,
-        "reason": "公式に「No reproduction or republication without written permission」「記事・写真の無断転載を禁じます」。再配布条件未解決のため施設一括収集を停止。公式入口と右京区一覧を実閲覧。",
-        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
-        "source_rows_observed": 0,
-        "status": "blocked"
+        "pages_fetched": 4,
+        "reason": "公式右京区一覧の39施設名・所在地・実リンクを保存。掲載読みは未確認。愛宕・住吉大伴の2施設は同一名称/所在地のWikipediaで全文読み補完、37登録保留。",
+        "remaining_scope": [
+          "other 30 actually linked area lists not collected",
+          "all full-name readings require confirmation",
+          "agency-linked 山國神社 detail uses 山国神社 and gives no explicit full kana",
+          "data redistribution permission unconfirmed"
+        ],
+        "source_rows_observed": 39,
+        "status": "partial",
+        "supplemental_reading_facilities": 2
       },
       "conditions": {
-        "data_use_conditions": "記事・写真は書面許可なしの転載再出版を禁止。辞書事実データ利用の条件は要確認。",
+        "data_use_conditions": "フッターに No reproduction or republication without written permission. および「記事・写真の無断転載を禁じます」。記事本文・写真は含めず、掲載名・所在地・実リンク等の事実項目だけを個別確認。事実項目の利用範囲と再配布許諾は未確認。",
         "redistribution_permission": "unconfirmed",
         "robots_initial_inspection": {
           "checked_at": "2026-11-08T13:14:34.653823+00:00",
@@ -4665,18 +4735,42 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://fukuoka-jinjacho.or.jp/",
       "collection": {
-        "checked_at": null,
-        "facilities_collected": 0,
+        "canonical_data": {
+          "entries": 3,
+          "entry_status_counts": {
+            "pending": 3
+          },
+          "facilities": 3,
+          "facility_status_counts": {
+            "verified": 3
+          },
+          "path": "data/sources/fukuoka.json",
+          "verified_entries": 0,
+          "verified_facilities": 3
+        },
+        "checked_at": "2026-11-09T08:05:43.664924+00:00",
+        "facilities_collected": 3,
+        "fields_observed": {
+          "address": 3,
+          "name": 3,
+          "reading_raw": 0
+        },
         "inspection_evidence": [],
+        "inspection_evidence_reference": "data/sources/fukuoka.json#collection.pages",
         "listing_authority_status": "agency_site",
-        "pages_fetched": 0,
-        "reason": "公式トップ・福岡地域一覧フッターで無断転載禁止を今回再確認。一括抽出停止。",
-        "remaining_scope": "利用許諾確認が必要。",
-        "source_rows_observed": 0,
-        "status": "blocked"
+        "pages_fetched": 7,
+        "reason": "公式福岡地域一覧の3施設を個別保存し、リンクされた公式ページを実閲覧。香椎宮は公式HTML図説明、筥崎宮・太宰府天満宮は同一名/所在地のWikipediaで全文読みを補完。地域全体の収集ではない。",
+        "remaining_scope": [
+          "other facilities in four regional lists not collected",
+          "full readings require bound source supplementation",
+          "data redistribution permission unconfirmed"
+        ],
+        "source_rows_observed": 3,
+        "status": "partial",
+        "supplemental_reading_facilities": 3
       },
       "conditions": {
-        "data_use_conditions": "無断転載禁止をフッターに明記。辞書事実利用の条件は要確認。",
+        "data_use_conditions": "神社庁フッターの無断転載禁止を記録。名称・所在地・実リンクの事実項目を少数個別確認し、記事・写真は正本に含めない。事実項目利用の適用範囲と再配布許諾は未確認。",
         "redistribution_permission": "unconfirmed",
         "robots_initial_inspection": {
           "checked_at": "2026-11-08T13:14:38.310051+00:00",
