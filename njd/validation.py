@@ -6,6 +6,7 @@ import re
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading
 from njd.corrections import correction_problems
+from njd.reviews import reviewed_output
 
 STATUSES={'verified','pending','excluded'}
 
@@ -54,6 +55,7 @@ def validate(data: dict) -> list[dict]:
         correction=e.get('correction')
         if isinstance(correction,dict) and correction.get('changes',{}).get('surface')==e.get('surface') and not correction_problems(correction,f,e,source):
             corrected_names.add(f['id'])
+        if reviewed_output(e.get('human_review'),f,e,source):corrected_names.add(f['id'])
     for f in fs:
         source=data['collection'].get('sources',{}).get(f.get('source_key'),data['collection'])
         if source.get('authority_status') in ('pending','unconfirmed'):
@@ -86,10 +88,11 @@ def validate(data: dict) -> list[dict]:
         source=data['collection'].get('sources',{}).get(f.get('source_key'),data['collection'])
         correction=e.get('correction')
         correction_valid=isinstance(correction,dict) and not correction_problems(correction,f,e,source)
+        review_valid=reviewed_output(e.get('human_review'),f,e,source)
         if e.get('name_raw')!=f.get('listed_name'):add('entry',eid,'name raw must equal acquired agency name')
-        if e.get('surface')!=f.get('listed_name') and not (correction_valid and correction.get('changes',{}).get('surface')==e.get('surface')):
+        if e.get('surface')!=f.get('listed_name') and not review_valid and not (correction_valid and correction.get('changes',{}).get('surface')==e.get('surface')):
             add('entry',eid,'surface differs without verified correction evidence')
-        if f.get('name_rendering_status') in ('external_glyph','unrenderable') and e.get('status')=='verified' and not correction_valid:
+        if f.get('name_rendering_status') in ('external_glyph','unrenderable') and e.get('status')=='verified' and not (correction_valid or review_valid):
             add('entry',eid,'external glyph has no verified Unicode correction')
         if e.get('listing_url')!=f.get('listing_url'): add('entry',eid,'listing URL differs from facility')
         if e.get('source_hash')!=f.get('source_hash') or e.get('page_hash')!=f.get('page_hash'):
@@ -99,14 +102,18 @@ def validate(data: dict) -> list[dict]:
         if hashlib.sha256(row_material.encode()).hexdigest()!=e.get('source_hash'):
             add('entry',eid,'acquired original differs from source-row fingerprint')
         if e.get('status')=='verified':
-            if not _url(e.get('reading_url')): add('entry',eid,'missing/invalid reading URL')
+            human_only=review_valid and any(o.get('basis')=='user_confirmation' and o.get('reading')==e.get('reading') and o.get('surface')==e.get('surface') for o in e['human_review']['outputs'])
+            if not _url(e.get('reading_url')) and not human_only: add('entry',eid,'missing/invalid reading URL')
             if not e.get('evidence'): add('entry',eid,'missing evidence')
-            if not e.get('reading_source_kind') in ('agency','shrine_official','reference'): add('entry',eid,'invalid reading source kind')
+            if not e.get('reading_source_kind') in ('agency','shrine_official','reference','user_review'): add('entry',eid,'invalid reading source kind')
             if e.get('reading_source_kind')=='agency' and e.get('reading_url')!=f.get('listing_url'):
                 add('entry',eid,'agency reading URL differs from listing')
             try:
                 if normalize_reading(e.get('reading',''))!=e.get('reading'): raise ValueError()
-                if e.get('reading_source_kind')=='agency':
+                if e.get('reading_source_kind')=='user_review':
+                    if not review_valid:raise ValueError('human review no longer matches')
+                    raw=e['reading']
+                elif e.get('reading_source_kind')=='agency':
                     raw=e.get('reading_raw','')
                 elif e.get('reading_source_kind')=='reference':
                     if not correction_valid or correction.get('changes',{}).get('reading')!=e.get('reading'):raise ValueError('reference correction not verified')

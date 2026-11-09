@@ -7,6 +7,7 @@ import shutil
 import sys
 from njd import __version__
 from njd.corrections import apply_corrections
+from njd.reviews import apply_reviews
 from njd.catalog import registry
 from njd.nationwide import merge_collections, run_collections
 from njd.adapters import gunma
@@ -48,6 +49,8 @@ def _effective(work):
     data=merge_collections(work)
     corrections=work/'corrections.json'
     if corrections.exists():data=apply_corrections(data,load_dataset(corrections))
+    reviews=work/'reviews.json'
+    if reviews.exists():data=apply_reviews(data,load_dataset(reviews))
     decisions=work/'decisions.json'
     return apply_decisions(data,load_dataset(decisions)) if decisions.exists() and load_dataset(decisions) else data
 
