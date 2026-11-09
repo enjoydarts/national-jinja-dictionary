@@ -814,7 +814,7 @@
     },
     "39": {
       "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
-      "facilities": 4202,
+      "facilities": 4214,
       "listing_urls": [
         "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
       ],
@@ -822,18 +822,22 @@
         118
       ],
       "official_url": "https://www.kochi-jinjyacho.com/",
-      "pending_entries": 4202,
+      "pending_entries": 4214,
       "prefecture": "高知県",
       "prefecture_code": "39",
       "published_cms_total": 4215,
-      "reason": "公開CMS表示4215行のうち4203行を実観測。識別施設4202件と未解決空行1件を分離。351ページを取得、118ページはHTTP200の空応答で欠落。掲載読みなし。",
-      "remaining_scope": "118ページの掲載情報未取得、全施設の読み確認、再配布条件確認。4215はCMS表示行数で地域の全神社数とは異なる。",
+      "reason": "公式CMS公開352ページの4215表示行を全件照合。識別施設4214件と名称/住所のない空行1件を分離し、重複・欠落・取得失敗0。以前空応答だった118ページも通常再取得で12行を確認。公式一覧には全文読みなし。補足読みの適格施設数と辞書行数はeffective report参照。",
+      "remaining_scope": [
+        "one blank CMS record is not an identified facility",
+        "remaining full-name reading supplementation and unresolved evidence review",
+        "redistribution permission unconfirmed"
+      ],
       "source_key": "kochi",
-      "source_rows_observed": 4203,
-      "status": "partial",
+      "source_rows_observed": 4215,
+      "status": "collected",
       "terms_urls": [],
       "unresolved_source_records": 1,
-      "verified_facilities": 0
+      "verified_facilities": 4212
     },
     "40": {
       "data_use_conditions": "神社庁フッターの無断転載禁止を記録。名称・所在地・実リンクの事実項目を少数個別確認し、記事・写真は正本に含めない。事実項目利用の適用範囲と再配布許諾は未確認。",
