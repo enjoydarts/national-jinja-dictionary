@@ -70,8 +70,8 @@ python3 -m njd build --formats mozc --prefecture 10
 ## 正本の最新化
 
 ```sh
-# まず少量で抽出を確認
-python3 -m njd collect gunma --limit 100
+# 正本を置き換えず、別ディレクトリーで少量の抽出を確認
+python3 -m njd --data-dir /tmp/njd-pilot collect gunma --limit 100
 
 # 指定神社庁の全掲載範囲を収集（0は上限なし）
 python3 -m njd collect gunma --limit 0
