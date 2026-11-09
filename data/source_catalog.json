@@ -24583,7 +24583,7 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://www.kochi-jinjyacho.com/",
       "collection": {
-        "acquisition_method": "公式HTMLのrel=nextと同ページCMS原文。118の既知空応答だけSHA固定の確認済119ページへ再開。API・別UA・認証ヘッダー不使用。",
+        "acquisition_method": "公式HTMLのrel=nextと同ページCMS原文。公開352ページを実取得・照合し、以前空応答だった118ページも通常取得で確認。",
         "canonical_data": {
           "entries": 4214,
           "entry_status_counts": {
@@ -26368,34 +26368,43 @@
           }
         ],
         "listing_authority_status": "agency_site",
-        "missing_listing_pages": [
-          118
-        ],
+        "missing_listing_pages": [],
         "pages_fetched": 352,
         "published_cms_total": 4215,
         "published_total": 4215,
         "reason": "公式CMS公開352ページの4215表示行を全件照合。識別施設4214件と名称/住所のない空行1件を分離し、重複・欠落・取得失敗0。以前空応答だった118ページも通常再取得で12行を確認。公式一覧には全文読みなし。補足読みの適格施設数と辞書行数はeffective report参照。",
         "record_fetched_at_range": [
           "2026-11-08T14:28:10.967930+00:00",
-          "2026-11-09T02:26:24.206744+00:00"
+          "2026-11-09T10:04:17.973965+00:00"
         ],
         "remaining_scope": [
           "one blank CMS record is not an identified facility",
           "remaining full-name reading supplementation and unresolved evidence review",
           "redistribution permission unconfirmed"
         ],
-        "saved_listing_page_count": 1,
+        "saved_listing_page_count": 352,
         "saved_listing_page_examples": [
           {
             "fetched_at": "2026-11-08T14:28:10.967930+00:00",
-            "page_hash": "abc3033740f239d778000a47f524f2fb7fbe76e0e6c59016600d23a031a00117",
+            "sha256": "abc3033740f239d778000a47f524f2fb7fbe76e0e6c59016600d23a031a00117",
             "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
+          },
+          {
+            "fetched_at": "2026-11-09T10:04:17.973965+00:00",
+            "sha256": "678245a5505b89af472ea5964f17ca44275aaf33aef2b29c8921c96a80571366",
+            "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=118"
+          },
+          {
+            "fetched_at": "2026-11-09T02:26:24.206744+00:00",
+            "sha256": "c8f213bf9ceeca149632c6042cef1433bcaf5f87588c6507b46c967aeb7597f7",
+            "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=352"
           }
         ],
         "source_rows_observed": 4215,
         "status": "collected",
         "stored_coverage": "official rel=next server-rendered listing pages",
-        "stored_pages_fetched": 351,
+        "stored_pages_fetched": 352,
+        "supplemental_reading_facilities": 656,
         "unresolved_blank_rows": 1,
         "unresolved_source_records": 1
       },
