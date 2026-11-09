@@ -70,7 +70,9 @@ python3 tools/check_macos_parser.py --input dist/dictionaries/national/macos.txt
 | Google日本語入力 | [公式辞書ヘルプ](https://support.google.com/ime/japanese/answer/166765?hl=ja)、[Mozcのブランド説明](https://github.com/google/mozc/blob/d918f30063999d4ca250f76ced8b92169a0e0b25/docs/about_branding.md) | 固有名詞を検討。製品の品詞表と照合待ち | 製品版の一括形式・対象バージョン・インポートサンプル |
 | Microsoft IME | [公式サポート](https://support.microsoft.com/ja-jp/windows/hardware/input-devices/microsoft-japanese-ime)（Windows 10/11） | 地名・固有名詞等の正式な対応名を確認して決定 | 一括形式、品詞、文字コード、BOM、改行、制限、対象ビルド |
 
-ATOK現行資料はヘッダー `!!ATOK_TANGO_TEXT_HEADER_1`、TAB区切り、読み32・単語100文字を明記します。旧版の単語64文字制限を現行版へ流用しません。付属ヘルプでShift JISの読書き設定も確認しましたが、Unicode対応・BOM・改行バイト列や厳密な文字計数は製品からの書き出しサンプルが必要です。
+ATOK現行資料はヘッダー `!!ATOK_TANGO_TEXT_HEADER_1`、TAB区切り、読み32・単語100文字を明記します。旧版の単語64文字制限を現行版へ流用しません。[公式の単語出力手順](https://www.atok.com/other/support/howtouse/mac/mn/pgs/mn_tool_ut_out_word_out_d.htm)と指定版の付属ヘルプで、「Unicodeで出力する」の選択と、選択しない場合のShift JIS出力を確認しました。Unicode出力への対応自体は確認済みです。具体的なUTF形式・バイト順・BOM・改行バイト列・厳密な文字計数は未確認であり、実際の書き出しサンプルが必要です。
+
+付属ヘルプは「日本語（Mac OS）」と「日本語（Shift JIS）」で一部の文字対応が異なることも説明しています。「Shift JIS」という名称だけでPythonの`cp932`と同一とは決めません。また、一括処理画面のUnicode指定は未登録語ファイルの出力用であり、入力形式の指定だと読み替えません。
 
 Microsoftの[IFEDictionary](https://learn.microsoft.com/en-us/windows/win32/api/msime/nn-msime-ifedictionary)は単語登録のCOM APIであり、辞書ツールのテキスト形式を定義していません。[スペルチェック辞書登録API](https://learn.microsoft.com/en-us/windows/win32/api/spellcheck/nf-spellcheck-iuserdictionariesregistrar-registeruserdictionary)のUTF-16LE仕様もMSIMEの一括登録仕様として流用しません。
 
