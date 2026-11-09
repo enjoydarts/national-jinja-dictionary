@@ -17,6 +17,14 @@ def correction(d,changes):
             reading_raw=reading,address_raw=f['address'],excerpt=surface+'（'+reading+'） '+f['address'],checked_at='2026-11-09T00:00:00+09:00')])}}
 
 class CorrectionTest(unittest.TestCase):
+    def test_discovery_directory_is_not_accepted_as_dictionary_evidence(self):
+        for host in ('jinja-net.jp','www.jinja-net.jp','jinja-net.jp.','www.jinja-net.jp.'):
+            d=build([row(reading_raw='')]);c=correction(d,{'reading':'かくうじんじゃ'})
+            c['entries'][d['entries'][0]['id']]['references'][0]['url']='https://'+host+'/jinja-all/example'
+            self.assertEqual(eligible(apply_corrections(d,c)),[])
+        d=build([row(url='https://jinja-net.jp/jinja-all/example')])
+        self.assertEqual(eligible(d),[])
+
     def test_name_correction_keeps_original_and_restores_valid_candidate(self):
         d=build([row(name='架空\n神社')]);before=copy.deepcopy(d)
         result=apply_corrections(d,correction(d,{'surface':'架空神社'}))

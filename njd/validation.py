@@ -5,7 +5,7 @@ from datetime import datetime
 import re
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading
-from njd.corrections import correction_problems
+from njd.corrections import correction_problems, discovery_only
 from njd.reviews import reviewed_output
 
 STATUSES={'verified','pending','excluded'}
@@ -46,6 +46,7 @@ def validate(data: dict) -> list[dict]:
                 if not re.fullmatch('[0-9a-f]{64}',r.get(field,'')): add(kind,rid,'missing/invalid '+field)
             for field in ['listing_url']:
                 if not _url(r.get(field)): add(kind,rid,'missing/invalid '+field)
+                if discovery_only(r.get(field)):add(kind,rid,'discovery-only directory cannot serve as listing evidence')
     fmap={f.get('id'):f for f in fs}
     corrected_names=set()
     for e in es:
@@ -84,6 +85,7 @@ def validate(data: dict) -> list[dict]:
     seen=set()
     for e in es:
         eid=e.get('id'); f=fmap.get(e.get('facility_id'))
+        if discovery_only(e.get('reading_url')):add('entry',eid,'discovery-only directory cannot serve as reading evidence')
         if not f: add('entry',eid,'orphan facility reference'); continue
         source=data['collection'].get('sources',{}).get(f.get('source_key'),data['collection'])
         correction=e.get('correction')

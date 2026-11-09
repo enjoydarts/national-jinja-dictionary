@@ -13,6 +13,14 @@ def _url(value):
     except (TypeError,ValueError):return False
 
 
+def discovery_only(value):
+    """The user designated this directory for finding candidates, not evidence."""
+    if not isinstance(value,str):return False
+    try:host=(urlsplit(value).hostname or '').lower().rstrip('.')
+    except ValueError:return False
+    return host=='jinja-net.jp' or host.endswith('.jinja-net.jp')
+
+
 def _comparison(value):
     """Matching only. Never writes normalized text to acquired/output fields."""
     return re.sub(r'\s+','',unicodedata.normalize('NFKC',value or ''))
@@ -78,6 +86,7 @@ def correction_problems(correction,facility,entry,source=None):
     name_supported='surface' not in changes;reading_supported='reading' not in changes;identity_supported=False
     for ref in refs:
         if not isinstance(ref,dict):problems.append('invalid reference object');continue
+        if discovery_only(ref.get('url')):problems.append('discovery-only directory cannot serve as dictionary evidence')
         if not _url(ref.get('url')) or not ref.get('title') or not ref.get('source_kind'):
             problems.append('reference URL, title or source type missing')
         try:datetime.fromisoformat(ref.get('checked_at',''))

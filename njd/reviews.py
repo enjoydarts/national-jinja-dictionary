@@ -7,7 +7,7 @@ import copy
 from datetime import datetime
 import re
 from uuid import NAMESPACE_URL, uuid5
-from njd.corrections import _url, _reference_matches
+from njd.corrections import _url, _reference_matches, discovery_only
 from njd.normalize import normalize_reading
 
 
@@ -48,6 +48,7 @@ def review_problems(review, facility, entry, source=None):
     refs=review.get('references',[])
     if not isinstance(refs,list) or any(not isinstance(r,dict) for r in refs):return problems+['invalid human review references']
     for ref in refs:
+        if discovery_only(ref.get('url')):problems.append('discovery-only directory cannot serve as dictionary evidence')
         if not all(ref.get(k) for k in ('title','source_kind','name_raw','excerpt')) or not _url(ref.get('url')):
             problems.append('incomplete inspected reference')
         try:datetime.fromisoformat(ref.get('checked_at',''))
