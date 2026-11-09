@@ -95,6 +95,24 @@ def require_matching_tag(repository,tag):
     return head
 
 
+def require_committed_inputs(repository,data_dir):
+    repository=Path(repository).resolve();data_dir=Path(data_dir).resolve()
+    try:relative=data_dir.relative_to(repository)
+    except ValueError:raise ValueError('release canonical data must be in the source repository') from None
+    def git(*args):
+        result=subprocess.run(['git',*args],cwd=repository,capture_output=True,text=True)
+        if result.returncode:raise ValueError('cannot verify release repository inputs')
+        return result.stdout
+    changed=git('status','--porcelain=v1','--untracked-files=all','--',str(relative),'njd','pyproject.toml')
+    if changed:raise ValueError('uncommitted release inputs; commit canonical data and code before packaging')
+    tracked=set(git('ls-files','-z','--',str(relative),'njd').split('\0'))
+    inputs=[data_dir/name for name in _input_hashes(data_dir)]
+    inputs+=list((repository/'njd').rglob('*.py'))
+    if any(str(path.relative_to(repository)) not in tracked for path in inputs):
+        raise ValueError('untracked or ignored release inputs cannot be attributed to a source commit')
+    return git('rev-parse','--verify','HEAD').strip()
+
+
 def main(argv=None):
     root=Path(__file__).resolve().parents[1]
     p=argparse.ArgumentParser(description='Generate fresh release assets from repository canonical data, offline')
@@ -104,14 +122,13 @@ def main(argv=None):
     p.add_argument('--source-commit')
     p.add_argument('--expected-tag',help='require checkout HEAD to equal refs/tags/TAG before publishing')
     args=p.parse_args(argv)
-    commit=args.source_commit
+    actual=require_committed_inputs(root,args.data_dir)
+    commit=args.source_commit or actual
+    if commit!=actual:raise ValueError('source commit differs from the repository checkout')
     if args.expected_tag:
         actual=require_matching_tag(root,args.expected_tag)
         if commit is not None and commit!=actual:raise ValueError('source commit differs from the release tag')
         commit=actual
-    if commit is None:
-        result=subprocess.run(['git','rev-parse','HEAD'],cwd=root,capture_output=True,text=True)
-        commit=result.stdout.strip() if result.returncode==0 else 'unknown'
     result=create_release(args.data_dir,args.output_dir,args.version,commit)
     print(result['archive'])
     return 0

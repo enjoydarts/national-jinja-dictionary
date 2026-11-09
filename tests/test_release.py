@@ -87,3 +87,20 @@ class ReleaseTest(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'changed during generation'):
                     create_release(data,out,'v0.2.0','a'*40)
             self.assertFalse((out/'national-jinja-dictionary-v0.2.0.zip').exists())
+
+    def test_release_provenance_requires_tracked_unchanged_repository_inputs(self):
+        import subprocess
+        from njd.release import require_committed_inputs
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td);data=root/'data';(data/'sources').mkdir(parents=True);(root/'njd').mkdir()
+            (root/'njd/__init__.py').write_text('');source=data/'sources/example.json';source.write_text('{}')
+            def git(*args):
+                return subprocess.run(['git','-c','user.name=Fixture','-c','user.email=fixture@example.invalid','-c','commit.gpgsign=false',*args],cwd=root,check=True,capture_output=True,text=True).stdout.strip()
+            git('init','-b','main');git('add','.');git('commit','-m','fixture')
+            self.assertEqual(require_committed_inputs(root,data),git('rev-parse','HEAD'))
+            source.write_text('{"changed":true}')
+            with self.assertRaisesRegex(ValueError,'uncommitted'):require_committed_inputs(root,data)
+            source.write_text('{}')
+            (data/'sources/new.json').write_text('{}')
+            with self.assertRaises(ValueError):require_committed_inputs(root,data)
+            with self.assertRaisesRegex(ValueError,'repository'):require_committed_inputs(root,root.parent/'outside')
