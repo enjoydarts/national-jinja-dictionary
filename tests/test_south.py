@@ -59,6 +59,98 @@ class SouthTests(unittest.TestCase):
         html='<div class="wixui-repeater__item" id="comp-ljqf2796__native-id"><div id="comp-ljqf2799__native-id" class="wixui-rich-text">試験神社</div><div id="comp-ljqf279d__native-id" class="wixui-rich-text">甲1番地</div><div id="comp-ljqlom9b__native-id" class="wixui-rich-text">高知県試験市</div></div>'
         r=south.parse_kochi(self.page(html))[0]
         self.assertEqual((r['name'],r['reading_raw'],r['address'],r['source_id']),('試験神社','','高知県試験市甲1番地','native-id'))
+    def test_kochi_follows_published_next_link_and_checks_native_total(self):
+        import json
+        def page(native,next_link='',blank=False,total=2):
+            html=f'<div class="wixui-repeater__item" id="comp-ljqf2796__{native}"><div id="comp-ljqf2799__{native}" class="wixui-rich-text">試験神社</div><div id="comp-ljqf279d__{native}" class="wixui-rich-text">甲1</div><div id="comp-ljqlom9b__{native}" class="wixui-rich-text">高知県試験市</div></div>'
+            warm={'appsWarmupData':{'dataBinding':{'dataStore':{'recordInfosByDatasetId':{'comp-ljqfjyd6':{'datasetSize':{'total':total}}}}}}}
+            warm['appsWarmupData']['dataBinding']['dataStore']['recordsByCollectionId']={'4gq343hu3awdp28flsx':{native:{'_id':native,'text':'試験神社','text1':'甲1','newField':'高知県試験市'}}}
+            if blank:warm['appsWarmupData']['dataBinding']['dataStore']['recordsByCollectionId']['4gq343hu3awdp28flsx'][native]={'_id':native}
+            return self.page(html+f'<link rel="next" href="{next_link}">'*(bool(next_link))+'<script id="wix-warmup-data">'+json.dumps(warm)+'</script>')
+        pages=[page('one','?comp-ljqfjyd6_page=2'),page('two')]
+        class Client:
+            def __init__(self):self.urls=[]
+            def fetch(self,url):
+                from dataclasses import replace
+                self.urls.append(url);return replace(pages[len(self.urls)-1],url=url)
+        client=Client();data=south.collect_kochi(client)
+        self.assertEqual(len(data['facilities']),2)
+        self.assertTrue(data['collection']['traversal_complete'])
+        self.assertEqual(data['collection']['source_rows_observed'],2)
+        self.assertIn('comp-ljqfjyd6_page=2',client.urls[1])
+        # Repeated native rows must not silently count as complete coverage.
+        pages[1]=page('one')
+        partial=south.collect_kochi(Client())
+        self.assertFalse(partial['collection']['traversal_complete'])
+        self.assertIn('duplicate native',partial['collection']['failed_pages'][0]['reason'])
+        pages[1]=self.page('<script id="wix-warmup-data">{}</script>')
+        partial=south.collect_kochi(Client())
+        self.assertEqual(len(partial['facilities']),1)
+        self.assertFalse(partial['collection']['traversal_complete'])
+        self.assertEqual(partial['collection']['published_page_bound'],2)
+        pages[1]=page('two',blank=True)
+        with_blank=south.collect_kochi(Client())
+        self.assertEqual(len(with_blank['facilities']),1)
+        self.assertEqual(with_blank['collection']['source_rows_observed'],2)
+        self.assertEqual(len(with_blank['collection']['unresolved_source_records']),1)
+        self.assertTrue(with_blank['collection']['traversal_complete'])
+        # A reviewed empty-body exception is specific to both URL and hash.
+        from unittest.mock import patch
+        from dataclasses import replace
+        base=client.urls[0];second=base+'?comp-ljqfjyd6_page=2';third=base+'?comp-ljqfjyd6_page=3'
+        pages[:]=[page('one','?comp-ljqfjyd6_page=2',total=3),self.page('<script id="wix-warmup-data">{}</script>'),page('three',total=3)]
+        review={second:dict(sha256=pages[1].sha256,next_url=third,discovery='reviewed public pagination recovery')}
+        with patch.object(south,'KOCHI_REVIEWED_PAGINATION_RECOVERY',review):
+            recovered=south.collect_kochi(Client())
+            self.assertEqual(len(recovered['facilities']),2)
+            self.assertFalse(recovered['collection']['traversal_complete'])
+            self.assertEqual(recovered['collection']['failed_pages'][0]['url'],second)
+            pages[1]=replace(pages[1],status=403)
+            denied=south.collect_kochi(Client())
+            self.assertEqual(len(denied['facilities']),1)
+            pages[1]=self.page('<script id="wix-warmup-data">{"changed":true}</script>')
+            changed=south.collect_kochi(Client())
+            self.assertEqual(len(changed['facilities']),1)
+    def test_kochi_uses_explicit_cms_original_over_corrupted_rendered_text(self):
+        import json
+        html='<div class="wixui-repeater__item" id="comp-ljqf2796__native"><div id="comp-ljqf2799__native" class="wixui-rich-text">試験神社</div><div id="comp-ljqf279d__native" class="wixui-rich-text">甲1</div><div id="comp-ljqlom9b__native" class="wixui-rich-text">高知\x00県試験市</div></div>'
+        store={'recordsByCollectionId':{'4gq343hu3awdp28flsx':{'native':{'_id':'native','text':'試験神社','text1':'甲1','newField':'高知県試験市'}}}}
+        html+='<script id="wix-warmup-data">'+json.dumps({'appsWarmupData':{'dataBinding':{'dataStore':store}}})+'</script>'
+        row=south.parse_kochi(self.page(html))[0]
+        self.assertEqual(row['address'],'高知県試験市甲1')
+        self.assertIn('wix-warmup-data',row['locator'])
+        store['recordsByCollectionId']['4gq343hu3awdp28flsx']['native'].pop('newField')
+        store['recordsByCollectionId']['4gq343hu3awdp28flsx']['native']['text1']='試験郡試験町甲1'
+        html=html[:html.index('<script')]+'<script id="wix-warmup-data">'+json.dumps({'appsWarmupData':{'dataBinding':{'dataStore':store}}})+'</script>'
+        row=south.parse_kochi(self.page(html))[0]
+        self.assertEqual(row['address'],'試験郡試験町甲1')
+        self.assertEqual(row['address_context'],'')
+        store['recordsByCollectionId']['4gq343hu3awdp28flsx']['native']={'_id':'native'}
+        html=html[:html.index('<script')]+'<script id="wix-warmup-data">'+json.dumps({'appsWarmupData':{'dataBinding':{'dataStore':store}}})+'</script>'
+        row=south.parse_kochi(self.page(html))[0]
+        self.assertEqual((row['name'],row['address']),('',''))
+    def test_kochi_first_page_failure_raises_and_preserves_previous_source(self):
+        from njd.http import FetchError
+        from njd.nationwide import run_collections,save_collection,source_path
+        from njd.records import build_dataset
+        from unittest.mock import patch
+        from tempfile import TemporaryDirectory
+        from pathlib import Path
+        class DeniedClient:
+            def __init__(self,*args,**kwargs):pass
+            def fetch(self,url):raise FetchError('HTTP 403: '+url)
+        with self.assertRaises(FetchError):south.collect_kochi(DeniedClient())
+        malformed=self.page('<script id="wix-warmup-data">{}</script>')
+        class ChangedClient:
+            def fetch(self,url):return malformed
+        with self.assertRaises((KeyError,ValueError)):south.collect_kochi(ChangedClient())
+        with TemporaryDirectory() as tmp:
+            root=Path(tmp);data=root/'data'
+            previous=build_dataset('kochi','39','高知県','高知県神社庁',[south.record(self.page('original'),'試験神社','しけんじんじゃ','高知県試験市甲1','original',source_id='prior')])
+            save_collection(data,'kochi',previous);path=source_path(data,'kochi');before=path.read_bytes()
+            with patch('njd.nationwide.Client',DeniedClient):
+                run_collections(data,{'kochi':south.REGISTRY['kochi']},['kochi'],cache_dir=root/'cache')
+            self.assertEqual(path.read_bytes(),before)
     def test_collection_keeps_conflicting_native_identity_for_builder_review(self):
         pages={'https://example.test/1':self.page('<a href="/2">next</a>'),'https://example.test/2':self.page('<p>second</p>')}
         class Client:

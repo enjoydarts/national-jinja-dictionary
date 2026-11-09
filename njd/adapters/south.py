@@ -245,27 +245,116 @@ REGISTRY.update({
 })
 
 def parse_kochi(page):
-    out=[]
-    for item in Tree(page.text).root.find('div','wixui-repeater__item'):
+    import json
+    out=[];tree=Tree(page.text);cms=None;seen=set()
+    warm=[n for n in tree.root.find('script') if n.attrs.get('id')=='wix-warmup-data']
+    if warm:
+        if len(warm)!=1:raise ValueError('Kochi multiple warmup records')
+        cms=json.loads(warm[0].text)['appsWarmupData']['dataBinding']['dataStore']['recordsByCollectionId']['4gq343hu3awdp28flsx']
+    for item in tree.root.find('div','wixui-repeater__item'):
         iid=item.attrs.get('id','')
         if not iid.startswith('comp-ljqf2796__'):continue
         fields={n.attrs.get('id','').split('__')[0]:n.text for n in item.find('div','wixui-rich-text')}
         required=['comp-ljqf2799','comp-ljqf279d','comp-ljqlom9b']
         if any(k not in fields for k in required):raise ValueError('Kochi rendered row structure changed')
         name,street,municipality=[fields[k] for k in required]
-        out.append(record(page,name,'',municipality+street,'div#'+iid,source_id=iid.split('__',1)[1],
+        native=iid.split('__',1)[1];locator='div#'+iid
+        if cms is not None:
+            # The public CMS original can be intact where SSR text contains
+            # literal NULs. Select the explicit original; do not guess repairs.
+            row=cms[native]
+            if row['_id']!=native or any(not isinstance(row.get(k,''),str) for k in ('text','text1','newField')):
+                raise ValueError('Kochi CMS original structure changed')
+            name,street,municipality=(row.get(k,'').strip() for k in ('text','text1','newField'))
+            locator='script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/'+native
+        if native in seen:raise ValueError('Kochi duplicate rendered identity')
+        seen.add(native)
+        out.append(record(page,name,'',municipality+street,locator,source_id=native,
             address_raw=street,address_context=municipality))
+    if cms is not None and seen!=set(cms):raise ValueError('Kochi CMS/rendered identity set differs')
     if not out:raise ValueError('Kochi rendered initial listing not recognized')
     return out
 
+# This exact public page returned an empty Wix shell on the initial request
+# and one normal refresh. Page119 was separately opened and its CMS rows and
+# next link verified. A changed body or any denial never uses this exception.
+KOCHI_REVIEWED_PAGINATION_RECOVERY={
+    'https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=118':dict(
+        sha256='a77b280ff90089c278c8eb4cad029fcdd8e32e7a833c2e778f2ef4c582108a2d',
+        next_url='https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=119',
+        discovery='reviewed public pagination recovery',
+        reason='page118 HTTP200 empty Wix shell repeated on normal refresh; public page119 separately verified',
+        verified_next_page_hash='c3f8eb30f8aa2345c4127ed76787f7b675cfe5b785d83d02882d102341f34088',
+        checked_at='2026-11-09T02:09:27.506017+00:00'),
+}
+
 def collect_kochi(client,limit=None):
+    import json
+    from urllib.parse import parse_qs, quote, unquote, urlunsplit
+    from njd.http import FetchError
     from njd.records import build_dataset
-    url='https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7'
-    p=client.fetch(url);rows=parse_kochi(p)
-    return build_dataset('kochi','39','高知県','高知県神社庁',rows[:limit],
-        pages=[dict(url=p.url,sha256=p.sha256,fetched_at=p.fetched_at)],metadata=dict(
-            source_rows_observed=len(rows),traversal_complete=False,
-            coverage='initial server-rendered rows only; next-list button is dynamic with no linked URL',
-            remaining_scope='dynamic next-list navigation unresolved; do not interpret initial rows as complete'))
+    start_url='https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7'
+    url=start_url;start=urlsplit(url);seen=set();native_ids=set()
+    rows=[];pages=[];unresolved=[];failed=[];total=None;page_bound=None;observed=0;page_index=1
+    while url:
+        p=None
+        try:
+            if url in seen:raise ValueError('Kochi next link cycle')
+            seen.add(url);p=client.fetch(url);tree=Tree(p.text)
+            if p.status!=200:raise ValueError('Kochi non-success response: '+str(p.status))
+            warm=[n for n in tree.root.find('script') if n.attrs.get('id')=='wix-warmup-data']
+            if len(warm)!=1:raise ValueError('Kochi published total missing')
+            count=json.loads(warm[0].text)['appsWarmupData']['dataBinding']['dataStore']['recordInfosByDatasetId']['comp-ljqfjyd6']['datasetSize']['total']
+            if not isinstance(count,int) or count<1 or total is not None and count!=total:
+                raise ValueError('Kochi published total changed')
+            current=parse_kochi(p)
+            if any(row['source_id'] in native_ids for row in current):
+                raise ValueError('Kochi duplicate native identity across pages')
+            bound=page_bound or (count+len(current)-1)//len(current)
+            links=[n.attrs.get('href','') for n in tree.root.find('link') if 'next' in n.attrs.get('rel','').split()]
+            if len(links)>1:raise ValueError('Kochi multiple next links')
+            next_url=None
+            if links:
+                nxt=urlsplit(urljoin(p.url,links[0]));query=parse_qs(nxt.query)
+                if (nxt.scheme,nxt.netloc,unquote(nxt.path))!=(start.scheme,start.netloc,unquote(start.path)) or set(query)!={'comp-ljqfjyd6_page'} or len(query['comp-ljqfjyd6_page'])!=1 or not query['comp-ljqfjyd6_page'][0].isdigit():
+                    raise ValueError('Kochi unexpected next link')
+                next_index=int(query['comp-ljqfjyd6_page'][0])
+                if next_index!=page_index+1 or next_index>bound:
+                    raise ValueError('Kochi next page outside published pagination bounds')
+                next_url=urlunsplit((nxt.scheme,nxt.netloc,quote(unquote(nxt.path)),nxt.query,''))
+        except (FetchError,ValueError,KeyError,TypeError) as exc:
+            if not pages:raise
+            failure=dict(url=url,reason=f'{type(exc).__name__}: {exc}')
+            if p is not None:failure.update(status=p.status,sha256=p.sha256,fetched_at=p.fetched_at)
+            review=KOCHI_REVIEWED_PAGINATION_RECOVERY.get(url)
+            if review and p is not None and p.status==200 and p.sha256==review['sha256'] and total is not None:
+                failure['reviewed_recovery']=dict(review)
+                failed.append(failure)
+                url=review['next_url'];page_index+=1
+                continue
+            failed.append(failure)
+            break
+        total=count;page_bound=bound;observed+=len(current)
+        native_ids.update(row['source_id'] for row in current)
+        pages.append(dict(url=p.url,sha256=p.sha256,fetched_at=p.fetched_at))
+        for row in current:
+            if not row['name'] and not row['address']:
+                unresolved.append(dict(row,reason='CMS row has no name or address; identifiable shrine not established'))
+            elif limit is None or len(rows)<limit:rows.append(row)
+        url=next_url;page_index+=1
+        if limit is not None and len(rows)>=limit:break
+    complete=not failed and not url and limit is None and len(native_ids)==total
+    if complete:remaining=''
+    elif failed:remaining='missing published pages recorded in failed_pages; only exact reviewed HTTP200 empty-body recovery permitted'
+    elif limit is not None:remaining='remaining published next-link pages after local limit'
+    else:remaining='published total differs from observed native identities'
+    return build_dataset('kochi','39','高知県','高知県神社庁',rows,
+        pages=pages,metadata=dict(limit=limit,source_rows_observed=observed,pages_fetched=len(pages),
+            published_total=total,published_page_bound=page_bound,traversal_complete=complete,
+            pagination_parameter='comp-ljqfjyd6_page',pagination_evidence='literal official HTML rel=next links',
+            missing_listing_pages=[int(parse_qs(urlsplit(f['url']).query).get('comp-ljqfjyd6_page',['1'])[0]) for f in failed],
+            unresolved_source_records=unresolved,failed_pages=failed,
+            redistribution_status='unconfirmed',coverage='official rel=next server-rendered listing pages',
+            remaining_scope=remaining))
 
 REGISTRY['kochi']=dict(code='39',prefecture='高知県',agency='高知県神社庁',collect=collect_kochi)

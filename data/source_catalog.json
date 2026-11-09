@@ -4159,36 +4159,42 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://www.kochi-jinjyacho.com/",
       "collection": {
+        "acquisition_method": "公式HTMLのrel=nextと同ページCMS原文。118の既知空応答だけSHA固定の確認済119ページへ再開。API・別UA・認証ヘッダー不使用。",
         "canonical_data": {
-          "entries": 12,
+          "entries": 4202,
           "entry_status_counts": {
-            "pending": 12
+            "pending": 4202
           },
-          "facilities": 12,
+          "facilities": 4202,
           "facility_status_counts": {
-            "verified": 12
+            "pending": 2,
+            "verified": 4200
           },
           "path": "data/sources/kochi.json",
           "verified_entries": 0,
-          "verified_facilities": 12
+          "verified_facilities": 4200
         },
         "checked_at": null,
-        "facilities_collected": 12,
+        "facilities_collected": 4202,
         "fields_observed": {
-          "address": 12,
+          "address": 4202,
           "facility_official_url": 0,
-          "name": 12,
+          "name": 4202,
           "reading_raw": 0
         },
         "inspection_evidence": [],
         "listing_authority_status": "agency_site",
-        "pages_fetched": 1,
-        "reason": "Saved explicit official listing records; acquisition is ongoing.",
+        "missing_listing_pages": [
+          118
+        ],
+        "pages_fetched": 351,
+        "published_cms_total": 4215,
+        "reason": "公開CMS表示4215行のうち4203行を実観測。識別施設4202件と未解決空行1件を分離。351ページを取得、118ページはHTTP200の空応答で欠落。掲載読みなし。",
         "record_fetched_at_range": [
           "2026-11-08T14:28:10.967930+00:00",
-          "2026-11-08T14:28:10.967930+00:00"
+          "2026-11-09T02:26:24.206744+00:00"
         ],
-        "remaining_scope": "次一覧の公開操作を調査し全件数・動的取得範囲を解決。",
+        "remaining_scope": "118ページの掲載情報未取得、全施設の読み確認、再配布条件確認。4215はCMS表示行数で地域の全神社数とは異なる。",
         "saved_listing_page_count": 1,
         "saved_listing_page_examples": [
           {
@@ -4197,10 +4203,11 @@
             "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
           }
         ],
-        "source_rows_observed": 12,
+        "source_rows_observed": 4203,
         "status": "partial",
-        "stored_coverage": "initial server-rendered rows only; next-list button is dynamic with no linked URL",
-        "stored_pages_fetched": 1
+        "stored_coverage": "official rel=next server-rendered listing pages",
+        "stored_pages_fetched": 351,
+        "unresolved_source_records": 1
       },
       "conditions": {
         "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
@@ -4972,7 +4979,7 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 37403,
+    "canonical_facilities": 41593,
     "collection_status_counts": {
       "blocked": 9,
       "collected": 33,
