@@ -126,7 +126,7 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
     for key in keys:
         spec=registry[key];code=spec['code'];path=source_path(data_dir,key)
         try:
-            client=Client(resolved,offline=offline)
+            client=Client(resolved,offline=offline,reviewed_html_robots=spec.get('reviewed_html_robots',()))
             # Guarded adapters check every redirect before requesting its target.
             client.refresh_requested=refresh
             if refresh:

@@ -12,6 +12,58 @@ class FakeNetwork:
         return result
 
 class FetchTest(unittest.TestCase):
+    def test_reviewed_html_does_not_accept_explicit_login_or_challenge(self):
+        origin='https://example.invalid'
+        for headers,body in [({'content-type':'text/html'},b'<html><input type="password"></html>'),
+                             ({'content-type':'text/html','cf-mitigated':'challenge'},b'<html>Checking browser</html>')]:
+            with self.subTest(headers=headers),tempfile.TemporaryDirectory() as td:
+                net=FakeNetwork({origin+'/robots.txt':(200,headers,body),origin+'/page':(200,{},b'facts')})
+                c=Client(Path(td),interval=0,transport=net,reviewed_html_robots=[origin])
+                with self.assertRaises(FetchError):c.fetch(origin+'/page')
+                self.assertEqual(net.calls,[origin+'/robots.txt'])
+    def test_reviewed_origin_parses_successful_html_robots_line_by_line(self):
+        origin='https://example.invalid'
+        with tempfile.TemporaryDirectory() as td:
+            net=FakeNetwork({origin+'/robots.txt':(302,{'location':origin+'/'},b''),
+                             origin+'/':(200,{'content-type':'text/html'},b'<html>Public home</html>'),
+                             origin+'/page':(200,{},b'facts')})
+            c=Client(Path(td),interval=0,transport=net,reviewed_html_robots=[origin])
+            self.assertEqual(c.fetch(origin+'/page').body,b'facts')
+            c.offline=True
+            self.assertEqual(c.fetch(origin+'/page').body,b'facts')
+            self.assertEqual(net.calls.count(origin+'/page'),1)
+
+    def test_reviewed_html_preserves_disallow_and_stops_unparsed_directives(self):
+        origin='https://example.invalid'
+        for body in (b'<html>\nUser-agent: *\nDisallow: /private\n</html>',
+                     b'<html>\nUser-agent: *<br>\nDisallow: /private<br>\n</html>',
+                     b'<html><p>User-agent: *</p><p>Disallow: /private</p></html>'):
+            with self.subTest(body=body),tempfile.TemporaryDirectory() as td:
+                net=FakeNetwork({origin+'/robots.txt':(200,{'content-type':'text/html'},body),origin+'/private':(200,{},b'facts')})
+                c=Client(Path(td),interval=0,transport=net,reviewed_html_robots=[origin])
+                with self.assertRaises(FetchError):c.fetch(origin+'/private')
+                self.assertEqual(net.calls,[origin+'/robots.txt'])
+
+    def test_html_review_is_origin_scoped_and_does_not_allow_failed_policies(self):
+        origin='https://example.invalid'
+        for status in (401,403,429,503):
+            with self.subTest(status=status),tempfile.TemporaryDirectory() as td:
+                net=FakeNetwork({origin+'/robots.txt':(status,{},b'')})
+                c=Client(Path(td),interval=0,retries=0,transport=net,reviewed_html_robots=[origin])
+                with self.assertRaises(FetchError):c.fetch(origin+'/page')
+                self.assertEqual(net.calls,[origin+'/robots.txt'])
+        with tempfile.TemporaryDirectory() as td:
+            net=FakeNetwork({origin+'/robots.txt':(302,{'location':'https://other.invalid/'},b''),
+                             'https://other.invalid/':(200,{'content-type':'text/html'},b'<html>Other site</html>')})
+            c=Client(Path(td),interval=0,transport=net,reviewed_html_robots=[origin])
+            with self.assertRaises(FetchError):c.fetch(origin+'/page')
+            self.assertNotIn(origin+'/page',net.calls)
+
+    def test_html_review_configuration_requires_bare_origins(self):
+        with tempfile.TemporaryDirectory() as td:
+            for value in ('https://example.invalid/path','https://example.invalid/','https://user:secret@example.invalid'):
+                with self.subTest(value=value),self.assertRaises(ValueError):
+                    Client(Path(td),reviewed_html_robots=[value])
     def client(self,td,routes):
         net=FakeNetwork(routes)
         return Client(Path(td),interval=0,retries=1,transport=net),net

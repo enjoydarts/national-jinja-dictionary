@@ -91,6 +91,8 @@ git diff -- data/
 
 取得先の規約・robots・制限を確認してから実行してください。`--cache-dir`の既定値はリポジトリ外の `~/.cache/national-jinja-dictionary/http` です。同一ホストの間隔は最低2秒とし、異なるホストは独立して取得できます。キャッシュ、タイムアウト、再試行、途中再開、24時間ごとのオンラインrobots再確認を備えます。アクセス拒否や規則の判定不能を回避しません。
 
+新潟のrobotsは公式トップへの転送後にHTMLを返します。[RFC 9309の解析方針](https://www.rfc-editor.org/rfc/rfc9309.html#section-2.3.1.5)と[GoogleのHTML応答の説明](https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec)を確認し、レジストリの`reviewed_html_robots`へ記録した接続元だけで有効な指示を行単位で解析します。禁止指示、解釈できない指示、認証・challenge・HTTP失敗では停止します。取得条件と再配布条件は情報源一覧に別々に記録します。
+
 限定・途中取得で前回の施設が含まれなくなった場合は、前回の正本を保持して状態と理由を記録します。保存済みの範囲を含む部分収集の拡張は保存できます。
 
 取得結果だけで名称・読みを確定できない登録は`pending`に残し、辞書には出しません。読みの推定や通称・略称追加はしません。壊れた読み・名称欄や外字は、行政資料・Wikipedia等で所在地と全文表記・読みを照合できた場合に限り、`data/corrections.json`へ根拠付きの補正を保存します。原文と旧字体・異体字は保持し、資料の矛盾が解決しない候補は出力しません。人手判断は`data/decisions.json`、ID対応は`data/identities.json`で保持します。[データ仕様](docs/DATA.md)を参照してください。

@@ -6,6 +6,15 @@ from njd.nationwide import save_collection, merge_collections, run_collections
 from njd.storage import load_dataset
 
 class NationwideTest(unittest.TestCase):
+    def test_reviewed_html_policy_is_selected_by_source_registry(self):
+        with tempfile.TemporaryDirectory() as td:
+            base=Path(td);seen=[]
+            def collect(client,limit=None):
+                seen.append(client.reviewed_html_robots)
+                return build([row()])
+            sources={'example':dict(code='11',collect=collect,reviewed_html_robots=('https://agency.example.invalid',))}
+            run_collections(base/'data',sources,['example'],cache_dir=base/'cache')
+            self.assertEqual(seen,[frozenset({'https://agency.example.invalid'})])
     def test_successful_partial_collection_replaces_an_old_blocker_scope(self):
         from njd.storage import write_json
         with tempfile.TemporaryDirectory() as td:

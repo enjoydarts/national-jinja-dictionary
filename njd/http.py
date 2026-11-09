@@ -65,12 +65,19 @@ def request(url,timeout,user_agent,*,method='GET',data=None,content_type=None):
         return response.status,{k.lower():v for k,v in response.headers.items()},body
 
 class Client:
-    def __init__(self,cache_dir,*,interval=2.0,timeout=30,retries=2,offline=False,transport=None):
+    def __init__(self,cache_dir,*,interval=2.0,timeout=30,retries=2,offline=False,transport=None,reviewed_html_robots=()):
         self.cache=Path(cache_dir); self.cache.mkdir(parents=True,exist_ok=True)
         self.interval=max(0,interval); self.timeout=timeout; self.retries=retries
         self.offline=offline; self.transport=transport or request
         self.user_agent='NationalJinjaDictionary/0.1 (+https://github.com/enjoydarts/national-jinja-dictionary)'
         self.delays={}
+        origins=set()
+        for origin in reviewed_html_robots:
+            try:valid=isinstance(origin,str) and self._origin(origin)==origin
+            except FetchError:valid=False
+            if not valid:raise ValueError('reviewed HTML robots configuration requires bare origins')
+            origins.add(origin)
+        self.reviewed_html_robots=frozenset(origins)
     def _key(self,url): return hashlib.sha256(url.encode()).hexdigest()
     def _body_path(self,url,cache_identity=None): return self.cache/(self._key(cache_identity or url)+'.body')
     def _meta_path(self,url,cache_identity=None): return self.cache/(self._key(cache_identity or url)+'.json')
@@ -167,9 +174,21 @@ class Client:
             robot=self._raw(target,refresh=refresh)
         if robot.status in (404,410): return
         if robot.status!=200: raise FetchError(f'robots status unknown: {robot.status}')
-        if 'text/html' in robot.headers.get('content-type','').lower() or robot.text.lstrip().startswith('<'):
-            raise FetchError('robots returned HTML; policy unknown')
-        policy=RobotFileParser(); policy.parse(robot.text.splitlines())
+        text=robot.text
+        if robot.headers.get('cf-mitigated','').lower()=='challenge':
+            raise FetchError('robots response requires a browser challenge')
+        if 'text/html' in robot.headers.get('content-type','').lower() or text.lstrip().startswith('<'):
+            if origin not in self.reviewed_html_robots or self._origin(robot.url) not in self.reviewed_html_robots:
+                raise FetchError('robots returned HTML; policy unknown')
+            if re.search(r'<input\b[^>]*\btype\s*=\s*[\"\']?password\b',text,re.I):
+                raise FetchError('robots response contains an authentication form')
+            directive=r'(?:user-agent|allow|disallow|crawl-delay|request-rate)\s*:'
+            for line in text.splitlines():
+                candidate=line.split('#',1)[0]
+                if re.search(r'\b'+directive,candidate,re.I):
+                    if not re.match(r'^\s*'+directive,candidate,re.I) or '<' in candidate or '>' in candidate:
+                        raise FetchError('HTML robots directives are not line-parseable')
+        policy=RobotFileParser(); policy.parse(text.splitlines())
         if not policy.can_fetch(self.user_agent,url): raise FetchError('robots disallows: '+url)
         crawl=policy.crawl_delay(self.user_agent)
         rate=policy.request_rate(self.user_agent)
