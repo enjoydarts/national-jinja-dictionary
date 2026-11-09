@@ -5657,6 +5657,18 @@
           "name": 1434,
           "reading_raw": 0
         },
+        "full_address_reference_pilot": {
+          "archive_file_id": "28432",
+          "archive_snapshot": "20261030",
+          "checked_at": "2026-11-09T14:25:12.202247+00:00",
+          "detail_profiles_inspected": 100,
+          "reading_policy": "Actual agency detail native ID/name/full numeric address bound to unique active NTA identity; literal full kana only; no suffix inferred from agency stems. Conflicts withheld.",
+          "registered_reading_candidates": 344,
+          "remaining_uninspected_candidate_details": 244,
+          "unresolved_identity_or_address": 18,
+          "unresolved_reading_conflicts": 6,
+          "verified_reading_supplements": 76
+        },
         "inspection_evidence": [
           {
             "error": "'utf-8' codec can't decode byte 0x8e in position 281: invalid start byte",
@@ -5669,7 +5681,7 @@
         ],
         "listing_authority_status": "agency_site",
         "pages_fetched": 15,
-        "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+        "reason": "公式一覧1434施設を保存。全文読みは一覧に未掲載。既存90施設に加え、実リンクから100詳細を調査し、名称・番地までの住所・国税庁の明示全文フリガナを照合できた76施設を補完。24施設は不一致を保持して要確認。補正適用後166適格施設、1268保留登録。県内全神社の網羅とは区別。",
         "record_fetched_at_range": [
           "2026-11-08T14:28:05.535228+00:00",
           "2026-11-08T14:31:25.262663+00:00"
@@ -5701,7 +5713,8 @@
         "source_rows_observed": 1434,
         "status": "collected",
         "stored_coverage": "public linked listing pages only; not all prefectural shrines",
-        "stored_pages_fetched": 15
+        "stored_pages_fetched": 15,
+        "supplemental_reading_facilities": 166
       },
       "conditions": {
         "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
