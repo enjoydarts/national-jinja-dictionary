@@ -27,6 +27,55 @@ def _comparison(value):
     return re.sub(r'\s+','',unicodedata.normalize('NFKC',value or ''))
 
 
+def _subject_profile_link(ref,facility,proof):
+    """Require recorded observations, not a guessed URL or a nearby-site link."""
+    link=proof.get('subject_link')
+    if not isinstance(link,dict):return False
+    locator=link.get('locator')
+    if (link.get('relation')!='subject_agency_profile' or
+        not isinstance(locator,str) or not locator.strip() or
+        link.get('reference_url')!=ref.get('url') or
+        link.get('reference_page_hash')!=ref.get('page_hash')):return False
+    def digest(value):return isinstance(value,str) and bool(re.fullmatch(r'[0-9a-f]{64}',value))
+    if not digest(ref.get('page_hash')) or not digest(facility.get('page_hash')):return False
+    href=link.get('href');target=facility.get('listing_url')
+    if not _url(href) or not _url(target):return False
+    before=urlsplit(href);after=urlsplit(target)
+    # The only permitted redirect is the observed HTTP -> HTTPS upgrade of
+    # the very same profile. No host/path/query substitution or credentials.
+    if (before.username or before.password or after.username or after.password or
+        before.fragment or after.fragment or
+        (before.netloc,before.path,before.query)!=(after.netloc,after.path,after.query)):
+        return False
+    chain=link.get('responses')
+    if not isinstance(chain,list) or len(chain) not in (1,2):return False
+    if any(not isinstance(r,dict) for r in chain):return False
+    if chain[0].get('url')!=href:return False
+    for r in chain:
+        if not digest(r.get('page_hash')):return False
+        try:observed=datetime.fromisoformat(r.get('fetched_at',''))
+        except (TypeError,ValueError):return False
+        if observed.tzinfo is None:return False
+    if len(chain)==2:
+        if (before.scheme!='http' or after.scheme!='https' or
+            chain[0].get('status') not in (301,302,307,308) or
+            chain[0].get('location')!=target):return False
+    elif href!=target:return False
+    last=chain[-1]
+    return (last.get('url')==target and last.get('status')==200 and
+            last.get('page_hash')==facility['page_hash'])
+
+
+def _additional_aza_matches(actual,expected,ref,facility):
+    proof=ref.get('address_identity_proof')
+    if not isinstance(proof,dict) or proof.get('kind')!='additional_aza_with_subject_link':return False
+    extra=proof.get('added_aza_raw')
+    if not isinstance(extra,str) or not re.fullmatch(r'(?:小字|字)[\u3400-\u9fff々〆ヶぁ-ゖァ-ヺー]+',extra):return False
+    parcel=re.fullmatch(r'(.+?)([0-9]+(?:-[0-9]+)*)',expected)
+    if not parcel or actual!=parcel[1]+extra+parcel[2]:return False
+    return _subject_profile_link(ref,facility,proof)
+
+
 def _reference_matches(ref,facility,entry,changes):
     names={_comparison(facility.get('listed_name')),_comparison(entry.get('surface')),
            _comparison(changes.get('surface'))}-{''}
@@ -53,6 +102,7 @@ def _reference_matches(ref,facility,entry,changes):
         expected=address(raw)
         if not expected or not actual:continue
         if actual==expected:return True
+        if _additional_aza_matches(actual,expected,ref,facility):return True
         suffix=actual[len(expected):] if actual.startswith(expected) else ''
         if not re.search(r'\d',expected) and suffix and suffix[0].isdigit():return True
     return False

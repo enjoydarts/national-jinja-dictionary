@@ -16,6 +16,99 @@ def correction(d,changes):
         references=[dict(url='https://reference.example.invalid/shrine',title='Synthetic reference',source_kind='reference',name_raw=surface,
             reading_raw=reading,address_raw=f['address'],excerpt=surface+'（'+reading+'） '+f['address'],checked_at='2026-11-09T00:00:00+09:00')])}}
 
+
+def aza_reference():
+    d=build([row(name='●神社(外字注記)',address='架空市甲町1738-2',
+                 review_reason='annotated official name requires review')])
+    c=correction(d,{'surface':'架空神社','reading':'かくうじんじゃ'})
+    f=d['facilities'][0];ref=c['entries'][d['entries'][0]['id']]['references'][0]
+    href=f['listing_url'].replace('https://','http://',1)
+    ref.update(page_hash='b'*64,address_raw='埼玉県架空市甲町字岩内1738-2',
+               excerpt='架空神社（かくうじんじゃ） 埼玉県架空市甲町字岩内1738-2')
+    ref['address_identity_proof']=dict(kind='additional_aza_with_subject_link',added_aza_raw='字岩内',
+        subject_link=dict(reference_url=ref['url'],reference_page_hash=ref['page_hash'],
+            relation='subject_agency_profile',href=href,locator='External links: subject agency profile',
+            responses=[dict(url=href,status=302,location=f['listing_url'],page_hash='c'*64,
+                            fetched_at='2026-11-09T00:00:00+09:00'),
+                       dict(url=f['listing_url'],status=200,page_hash=f['page_hash'],
+                            fetched_at='2026-11-09T00:00:01+09:00')]))
+    return d,c,ref
+
+
+class AzaReferenceTest(unittest.TestCase):
+    def test_additional_aza_with_observed_subject_link_resolves_name_only_hold(self):
+        d,c,ref=aza_reference();before=copy.deepcopy(d)
+        out=apply_corrections(d,c)
+        self.assertEqual(len(eligible(out)),1)
+        self.assertEqual(out['entries'][0]['surface'],'架空神社')
+        self.assertEqual(out['entries'][0]['reading'],'かくうじんじゃ')
+        self.assertEqual(out['facilities'][0]['address'],'架空市甲町1738-2')
+        self.assertEqual(out['facilities'][0]['name_raw'],'●神社(外字注記)')
+        self.assertEqual(out['entries'][0]['correction']['references'][0]['address_raw'],
+                         '埼玉県架空市甲町字岩内1738-2')
+        self.assertEqual(d,before)
+
+    def test_direct_subject_link_also_accepts_explicit_koaza(self):
+        d,c,ref=aza_reference();proof=ref['address_identity_proof'];link=proof['subject_link']
+        link['href']=d['facilities'][0]['listing_url'];link['responses']=link['responses'][1:]
+        proof['added_aza_raw']='小字岩内'
+        ref['address_raw']='埼玉県架空市甲町小字岩内1738-2'
+        ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
+        self.assertEqual(len(eligible(apply_corrections(d,c))),1)
+
+    def test_same_aza_difference_without_complete_bound_link_stays_pending(self):
+        mutations=[
+            lambda r:r.pop('address_identity_proof'),
+            lambda r:r['address_identity_proof']['subject_link'].pop('locator'),
+            lambda r:r['address_identity_proof']['subject_link'].update(locator=42),
+            lambda r:r['address_identity_proof']['subject_link'].update(locator='   '),
+            lambda r:r['address_identity_proof']['subject_link'].update(reference_page_hash='d'*64),
+            lambda r:r['address_identity_proof']['subject_link'].update(reference_url='https://other.example.invalid/'),
+            lambda r:r['address_identity_proof']['subject_link'].update(relation='nearby_shrine'),
+            lambda r:r['address_identity_proof']['subject_link']['responses'][-1].update(page_hash='d'*64),
+            lambda r:r['address_identity_proof']['subject_link']['responses'][0].update(location='https://other.example.invalid/'),
+            lambda r:r['address_identity_proof']['subject_link']['responses'][0].pop('fetched_at'),
+            lambda r:r['address_identity_proof']['subject_link']['responses'][-1].update(status=403),
+            lambda r:r['address_identity_proof']['subject_link']['responses'][-1].update(url='https://agency.example.invalid/shrines/2'),
+            lambda r:r['address_identity_proof'].update(added_aza_raw='字別所'),
+            lambda r:r['address_identity_proof']['subject_link'].update(href='http://agency.example.invalid/shrines/2'),
+            lambda r:r['address_identity_proof']['subject_link'].update(href='http://agency.example.invalid/shrines/1?facility=2'),
+            lambda r:r['address_identity_proof']['subject_link'].update(href='http://user@agency.example.invalid/shrines/1'),
+            lambda r:r['address_identity_proof']['subject_link']['responses'][0].update(page_hash='not-a-digest'),
+            lambda r:r['address_identity_proof']['subject_link']['responses'][0].update(fetched_at='2026-11-09'),
+            lambda r:r.update(page_hash='d'*64),
+        ]
+        for i,mutate in enumerate(mutations):
+            with self.subTest(case=i):
+                d,c,ref=aza_reference();mutate(ref)
+                self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_subject_link_does_not_normalize_variant_address_characters(self):
+        d,c,ref=aza_reference();f=d['facilities'][0]
+        f['address']='架空市甲町沢1738-2'
+        c['entries'][d['entries'][0]['id']]['original']['address']=f['address']
+        ref['address_raw']='架空市甲町澤字岩内1738-2'
+        ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_subject_link_does_not_authorize_other_address_changes(self):
+        for address in ['架空市甲町字岩内1738-20','架空市甲町字岩内1738',
+                        '架空市乙町字岩内1738-2','別市甲町字岩内1738-2',
+                        '架空市甲字岩内1738-2','別県架空市甲町字岩内1738-2','']:
+            with self.subTest(address=address):
+                d,c,ref=aza_reference();ref['address_raw']=address
+                ref['excerpt']='架空神社 かくうじんじゃ '+address
+                self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_subject_link_does_not_clear_identity_or_source_conflicts(self):
+        for hold in ['source_conflicts','identity_review_required','mixed_reason']:
+            with self.subTest(hold=hold):
+                d,c,ref=aza_reference()
+                if hold=='source_conflicts':d['facilities'][0][hold]=[{'name_raw':'別神社'}]
+                elif hold=='identity_review_required':d['entries'][0][hold]=True
+                else:d['facilities'][0]['review_reason']='annotated official name requires review; wrong printed code'
+                self.assertEqual(eligible(apply_corrections(d,c)),[])
+
 class CorrectionTest(unittest.TestCase):
     def test_exact_annotation_only_hold_accepts_bound_name_and_reading_correction(self):
         for raw,changes in [('カクウジンジャ',{'surface':'架空神社'}),('',{'surface':'架空神社','reading':'かくうじんじゃ'})]:

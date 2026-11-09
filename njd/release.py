@@ -39,7 +39,7 @@ def create_release(data_dir,output_dir,version,source_commit):
     problems=blocking_problems(data)
     if problems:raise ValueError('canonical data cannot be released: '+str(problems[:5]))
     destination=output_dir/'dictionaries'
-    report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社','𡶌部神社'),output_dir=destination)
+    report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社','𡶌部神社','㯮椒神社'),output_dir=destination)
     _review_lists(data,destination)
     for name in ('manifest.json','locations.json','corrections.json','reviews.json','source_catalog.json'):
         path=data_dir/name
