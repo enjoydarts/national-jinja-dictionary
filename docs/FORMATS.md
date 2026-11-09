@@ -30,18 +30,49 @@
 
 BOMなし・LF・コメント省略は、確認した入力実装が受け付ける選択肢から採用しました。公式インポーターのコンパイル実行や、インストール済みIMEでの取り込みは未実施です。
 
+## macOS標準日本語入力の追加辞書
+
+対象は **macOS 27.0.1（26A434）、日本語入力設定1.1（261）** です。版を固定した[追加辞書ガイド](https://support.apple.com/ja-jp/guide/japanese-input-method/jpim10226/6.3/mac/27)と[品詞表](https://support.apple.com/ja-jp/guide/japanese-input-method/jpim10211/6.3/mac/27)を確認しました。
+
+| 項目 | 採用した出力 |
+| --- | --- |
+| 列・区切り | 読み・単語・品詞の3列、ASCIIカンマ |
+| ヘッダー・メモ | どちらも省略 |
+| 品詞 | その他の固有名詞 |
+| 文字コード・BOM・改行 | UTF-8、BOMなし、LF（最終行にもLF） |
+| エスケープ | 全フィールドをASCII二重引用符で囲み、内部の二重引用符を二重化。制御文字を拒否 |
+| 公式文書の長さ | 読み32文字、単語64文字、行127文字以下 |
+| プロジェクトの制限 | 保守的にUTF-16コード単位で計数。行は引用符・カンマ・末尾LFも含め127単位以内 |
+| 全体の語数上限 | 公式ガイドに記載なし。無制限と断定しない |
+
+施設の固有名を表す品詞として、公式品詞表に実例がある `その他の固有名詞` を採ります。共通データの中立な `proper_noun` から出力時に対応づけます。
+
+文字数の内部計数方法は断定しません。UTF-16コード単位はUnicodeコードポイントや通常の表示文字数以上になるため、上の制限は公式の文字数上限を超えないよう狭めるプロジェクトの判断です。特に補助平面の文字を含む長い名称は、IME自体が受理する可能性があっても、この保守的な境界で理由付き除外になる場合があります。原文は保持し、切り詰めや文字置換はしません。
+
+文字コード・引用・改行は、指定版の公式プログラムに含まれる `TextFile` 解析クラスへ一時ファイルを渡して実測しました。UTF-8、空白、カンマ、引用符、補助平面文字「𠮷」、異体字「神」、32文字の読み・64文字の単語が、そのまま解析結果に残ることを確認しています。Appleのプログラムや本文はリポジトリへ複製していません。[確認情報](MACOS_FORMAT_EVIDENCE.json)に版・実体hash・人工入力のhashと確認範囲を保存しています。
+
+この試験は**公式解析処理の入力照合**です。追加辞書としてのインストール、実際の変換候補、個人のユーザ辞書、テキスト置換、iPhoneや同期の確認はしていません。
+
+指定版macOS上で再実行する任意の開発用チェック（Command Line Toolsが必要）：
+
+```sh
+python3 tools/check_macos_parser.py
+python3 tools/check_macos_parser.py --input dist/dictionaries/national/macos.txt --report dist/macos-parser-check.json
+```
+
+チェックは入力の一時コピーだけを開き、全フィールドと行数を比較します。辞書のインストールや設定変更は行いません。通常のPython生成・検証はこのmacOS専用チェックに依存しません。
+
 ## 保留しているIME形式
 
 | 形式 | 確認した資料・対象 | 品詞の候補と理由 | 出力を保留する不足情報 |
 | --- | --- | --- | --- |
-| ATOK | [テキスト形式FAQ 025489](https://support.justsystems.com/faq/1032/app/servlet/qadoc?QID=025489)（ATOK 2005/18）、[品詞FAQ 040814](https://support.justsystems.com/faq/1032/app/servlet/qadoc?QID=040814)（ATOK 2008） | 固有地名：場所としての特定施設名。現行版では未確定 | 現行対象版、Unicodeの符号化・BOM、改行・エスケープ等 |
+| ATOK | [現行公式単語ファイル仕様](https://www.atok.com/other/support/howtouse/mac/dc/pgs/dc_word_file.htm)とATOK for Mac 36.0.2（245128.3.0）の付属ヘルプ | 固有地名（5）：場所としての特定施設名 | 実際の書き出しバイト列、BOM・改行、厳密な文字計数 |
 | Google日本語入力 | [公式辞書ヘルプ](https://support.google.com/ime/japanese/answer/166765?hl=ja)、[Mozcのブランド説明](https://github.com/google/mozc/blob/d918f30063999d4ca250f76ced8b92169a0e0b25/docs/about_branding.md) | 固有名詞を検討。製品の品詞表と照合待ち | 製品版の一括形式・対象バージョン・インポートサンプル |
 | Microsoft IME | [公式サポート](https://support.microsoft.com/ja-jp/windows/hardware/input-devices/microsoft-japanese-ime)（Windows 10/11） | 地名・固有名詞等の正式な対応名を確認して決定 | 一括形式、品詞、文字コード、BOM、改行、制限、対象ビルド |
-| macOS追加辞書 | [日本語入力の追加辞書ガイド](https://support.apple.com/ja-jp/guide/japanese-input-method/-jpim10226/mac) | 地名：施設の場所の名称としての設計候補 | 固定したmacOS版、文字コード・BOM・改行バイト列・文字数の厳密な計数 |
 
-ATOKの上記旧版資料には `!!ATOK_TANGO_TEXT_HEADER_1`、TAB区切りの読み・単語・品詞、読み32・単語64の制約があります。濁点・半濁点の計数にも注意が必要であり、これをそのまま現行版プロファイルとしては採用していません。
+ATOK現行資料はヘッダー `!!ATOK_TANGO_TEXT_HEADER_1`、TAB区切り、読み32・単語100文字を明記します。旧版の単語64文字制限を現行版へ流用しません。付属ヘルプでShift JISの読書き設定も確認しましたが、Unicode対応・BOM・改行バイト列や厳密な文字計数は製品からの書き出しサンプルが必要です。
 
-Appleガイドには読み・単語・品詞のCSV、読み32文字・単語64文字・1行127文字の制限などがあります。追加辞書をテキスト置換のplist等と混同しません。詳細が不明な符号化・文字計数を推測で補って出力することはしません。
+Microsoftの[IFEDictionary](https://learn.microsoft.com/en-us/windows/win32/api/msime/nn-msime-ifedictionary)は単語登録のCOM APIであり、辞書ツールのテキスト形式を定義していません。[スペルチェック辞書登録API](https://learn.microsoft.com/en-us/windows/win32/api/spellcheck/nf-spellcheck-iuserdictionariesregistrar-registeruserdictionary)のUTF-16LE仕様もMSIMEの一括登録仕様として流用しません。
 
 Google製品とMozcは由来が共通ですが、それだけでは現在の製品版のインポーターが同一とは確認できません。製品仕様または実際の書き出しサンプルで確認後、互換性が確認できた処理だけを共通化します。
 

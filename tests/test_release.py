@@ -17,6 +17,8 @@ class ReleaseTest(unittest.TestCase):
                 result=create_release(data,out,'v0.2.0','a'*40)
             with zipfile.ZipFile(result['archive']) as z:
                 self.assertIn('national/mozc.txt',z.namelist())
+                self.assertIn('national/macos.txt',z.namelist())
+                self.assertIn('samples/national/macos.txt',z.namelist())
                 self.assertEqual(len(z.read('national/mozc.txt').splitlines()),1)
                 source=json.loads(z.read('SOURCE.json'))
                 self.assertEqual(source['source_commit'],'a'*40)
