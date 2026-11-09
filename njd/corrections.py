@@ -8,6 +8,7 @@ from njd.normalize import normalize_reading
 
 
 def _url(value):
+    if not isinstance(value,str):return False
     try:return urlsplit(value).scheme in ('http','https') and bool(urlsplit(value).hostname)
     except (TypeError,ValueError):return False
 
@@ -56,7 +57,15 @@ def correction_problems(correction,facility,entry,source=None):
     if correction.get('expected_source_hash')!=entry.get('source_hash'):problems.append('correction is stale; acquired source changed')
     original=correction.get('original',{})
     expected=dict(name_raw=facility.get('name_raw'),reading_raw=entry.get('reading_raw'),address=facility.get('address'),listing_url=facility.get('listing_url'))
-    if original!=expected:problems.append('original source snapshot differs')
+    snapshot_matches=original==expected
+    if isinstance(original,dict) and set(original)==set(expected) and facility.get('native_source_id') and _url(original.get('listing_url')) and _url(expected['listing_url']):
+        # Native facility identity and raw tuple/hash stay fixed even when a
+        # CGI page adds pagination/session parameters. Keep the actual old
+        # evidence URL; never rewrite it to a fabricated canonical URL.
+        before=urlsplit(original.get('listing_url',''));after=urlsplit(expected['listing_url'])
+        same_endpoint=bool(before.hostname) and (before.scheme,before.netloc,before.path,before.fragment)==(after.scheme,after.netloc,after.path,after.fragment)
+        snapshot_matches=snapshot_matches or (same_endpoint and all(original[k]==expected[k] for k in ('name_raw','reading_raw','address')))
+    if not snapshot_matches:problems.append('original source snapshot differs')
     if not correction.get('reason') or not correction.get('identity_match'):problems.append('missing correction reason or facility comparison')
     changes=correction.get('changes')
     if not isinstance(changes,dict) or not changes or set(changes)-{'surface','reading'}:

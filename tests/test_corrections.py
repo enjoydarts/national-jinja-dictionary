@@ -103,3 +103,23 @@ class CorrectionTest(unittest.TestCase):
         ref=c['entries'][d['entries'][0]['id']]['references'][0]
         ref['address_raw']='架空町福岡原123';ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
         self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_session_query_change_keeps_correction_for_same_native_facility(self):
+        d=build([row(reading_raw='不明')]);c=correction(d,{'reading':'かくうじんじゃ'})
+        updated=copy.deepcopy(d)
+        for r in updated['facilities']+updated['entries']:r['listing_url']+='?page=2&session=new'
+        out=apply_corrections(updated,c)
+        self.assertEqual(len(eligible(out)),1)
+        self.assertEqual(out['entries'][0]['correction']['original']['listing_url'],d['facilities'][0]['listing_url'])
+        changed=copy.deepcopy(updated)
+        for r in changed['facilities']+changed['entries']:r['listing_url']='https://other.example.invalid/shrines/1'
+        self.assertEqual(eligible(apply_corrections(changed,c)),[])
+
+    def test_changed_endpoint_or_invalid_snapshot_url_is_not_accepted(self):
+        d=build([row(reading_raw='不明')]);c=correction(d,{'reading':'かくうじんじゃ'})
+        c['entries'][d['entries'][0]['id']]['original']['listing_url']=123
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
+        c=correction(d,{'reading':'かくうじんじゃ'});updated=copy.deepcopy(d)
+        updated['facilities'][0]['native_source_id']=None
+        for r in updated['facilities']+updated['entries']:r['listing_url']+='?session=new'
+        self.assertEqual(eligible(apply_corrections(updated,c)),[])

@@ -6904,6 +6904,42 @@
       ],
       "status": "verified"
     },
+    "e5ef002a-8f00-5e8f-8336-f943bed6cbb7": {
+      "changes": {
+        "reading": "てんまんてんじんじゃいなりだいじんじゃ"
+      },
+      "expected_source_hash": "e7eb19294bada675dd749def3d003a3aa4f442237a99986969a75a34af335bf5",
+      "facility_id": "8caea3ee-15b4-557d-b8d1-f615c765a6aa",
+      "identity_match": {
+        "agency_address": "千葉県 旭市 萬歳2764番地",
+        "comparison": "掲載名が完全一致。県・市・萬歳・2764番地が一致し、全角数字と空白だけが表記差。",
+        "corporate_number": "8040005012277",
+        "reference_address": "千葉県旭市萬歳２７６４番地"
+      },
+      "original": {
+        "address": "千葉県 旭市 萬歳2764番地",
+        "listing_url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=85&search%3Areverse=&search%3Aterm=30&sys%3Apid=3213&sys%3Arandom=1794149697-3213&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=86",
+        "name_raw": "天満天神社稲生大神社",
+        "reading_raw": "テンマンテンジンジャ,イナリダイジンジャ"
+      },
+      "reason": "政府Gビズインフォの同名・同番地法人に、連続した完全フリガナが明示される。神社庁のカンマを機械的に削除・読みを推定連結せず、独立した政府原文の全文読みを別補正として採用する。",
+      "references": [
+        {
+          "address_raw": "千葉県旭市萬歳２７６４番地",
+          "checked_at": "2026-11-09T02:16:46.680758+00:00",
+          "excerpt": "天満天神社稲生大神社 / テンマンテンジンジャイナリダイジンジャ / 千葉県旭市萬歳２７６４番地 / 法人番号8040005012277",
+          "fetched_at": "2026-11-09T02:07:38.259558+00:00",
+          "locator": "法人名見出し直下のフリガナ・基本情報の法人番号/本店所在地",
+          "name_raw": "天満天神社稲生大神社",
+          "page_hash": "156d99d1a6a7c6a61cc4401b044ab310c785889ea7b614628302b844e681ac92",
+          "reading_raw": "テンマンテンジンジャイナリダイジンジャ",
+          "source_kind": "government_corporate_registry",
+          "title": "Gビズインフォ 天満天神社稲生大神社 法人番号8040005012277",
+          "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=8040005012277"
+        }
+      ],
+      "status": "verified"
+    },
     "e6a8ae6f-7bb5-547b-aebf-34de89d52be0": {
       "changes": {
         "reading": "かみだいのじんじゃ"
@@ -7077,6 +7113,40 @@
           "source_kind": "secondary",
           "title": "熊野神社 埼玉県比企郡小川町 - 八百万の神",
           "url": "https://yaokami.jp/1111701/"
+        }
+      ],
+      "status": "verified"
+    },
+    "f21966d5-edf0-52ee-8fa4-3257da486815": {
+      "changes": {
+        "reading": "たまたじんじゃ"
+      },
+      "expected_source_hash": "1cc10c18f63d572ef06cba89fbbb97bbc61f4c144461fa9efd49e267ced980f5",
+      "facility_id": "95e0efe9-ec47-53e5-aea0-dc1d96f177d7",
+      "identity_match": {
+        "comparison": "同一掲載行・同一native ID・原名一致・原鎮座地一致",
+        "native_source_id": "7072"
+      },
+      "original": {
+        "address": "千葉県 香取市 大倉丁子360番地",
+        "listing_url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=77&search%3Areverse=&search%3Aterm=30&sys%3Apid=3133&sys%3Arandom=1794149665-3133&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=78",
+        "name_raw": "玉田神社",
+        "reading_raw": "玉田神社（タマタジンジャ）"
+      },
+      "reason": "監修検索の同一行で、掲載名「玉田神社」に対応する完全なカナ「タマタジンジャ」が括弧内に明示される。読みの推定・略称採用ではなく、原取得を保持した別補正として名称を重複して含む欄から全文読みを分離する。",
+      "references": [
+        {
+          "address_raw": "千葉県 香取市\n大倉丁子360番地",
+          "checked_at": "2026-11-09T02:16:46.680758+00:00",
+          "excerpt": "玉田神社 / 玉田神社（タマタジンジャ） / 千葉県 香取市\n大倉丁子360番地",
+          "fetched_at": "2026-11-08T14:54:31.534632+00:00",
+          "locator": "tr[116] rowspan shrine cell",
+          "name_raw": "玉田神社",
+          "page_hash": "adf555fe5f57ae657a96d16d2c001f2458e7e8d9b8549bee0fc1ff51a9297fa7",
+          "reading_raw": "タマタジンジャ",
+          "source_kind": "agency_supervised_search",
+          "title": "千葉県神社庁監修 神社のひろば 検索結果（玉田神社）",
+          "url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=77&search%3Areverse=&search%3Aterm=30&sys%3Apid=3133&sys%3Arandom=1794149665-3133&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=78"
         }
       ],
       "status": "verified"
