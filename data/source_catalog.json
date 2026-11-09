@@ -230,7 +230,34 @@
         "status": "verified_opened"
       },
       "prefecture": "青森県",
-      "prefecture_code": "02"
+      "prefecture_code": "02",
+      "supplemental_reading_source_survey": [
+        {
+          "adopted_readings": 0,
+          "authority_page_url": "https://www.pref.aomori.lg.jp/soshiki/kotsu/seikatsu/shukyohojin_top.html",
+          "body_opened": true,
+          "checked_at": "2026-11-09T14:12:05.594878+00:00",
+          "conditions": "利用条件は追加調査。全Excelや他法人の行は再配布しない。読み欄がなく読み補完には不採用。",
+          "fetched_at": "2026-11-09T14:07:31.387596+00:00",
+          "fields_observed": [
+            "連番",
+            "包括団体・系統",
+            "法人名",
+            "郵便番号",
+            "市町村",
+            "所在地"
+          ],
+          "format": "xlsx",
+          "page_hash": "abaa1b82f5102e39f33109dd328f2c6d3e00f7bbab68b2c367ccdd4f67c2253f",
+          "published_as_of": "2023-04-01",
+          "publisher": "青森県",
+          "reading_field_observed": false,
+          "source_kind": "prefectural_corporate_register",
+          "status": "inspected_no_dedicated_reading_field",
+          "title": "青森県所轄宗教法人名簿（令和5年4月1日現在）",
+          "url": "https://www.pref.aomori.lg.jp/soshiki/kotsu/seikatsu/files/shukyohojinmeiboR5.4.1.xlsx"
+        }
+      ]
     },
     {
       "agency_name": "岩手県神社庁",
@@ -2414,7 +2441,33 @@
         "status": "verified_opened"
       },
       "prefecture": "長野県",
-      "prefecture_code": "20"
+      "prefecture_code": "20",
+      "supplemental_reading_source_survey": [
+        {
+          "adopted_readings": 0,
+          "authority_page_url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/ichiran.html",
+          "body_opened": true,
+          "checked_at": "2026-11-09T14:12:05.594878+00:00",
+          "conditions": "利用条件は追加調査。専用読み欄は確認できず、名称や並び順から読みを推定しない。",
+          "fields_observed": [
+            "市町村名",
+            "事務所所在地",
+            "包括団体",
+            "宗教法人名",
+            "代表役員名",
+            "設立登記"
+          ],
+          "format": "pdf",
+          "inspection_method": "opened official PDF text and inspected table headings; no unobserved download hash asserted",
+          "published_as_of": "2025-12-31",
+          "publisher": "長野県",
+          "reading_field_observed": false,
+          "source_kind": "prefectural_corporate_register",
+          "status": "inspected_no_dedicated_reading_field",
+          "title": "長野県所轄宗教法人名簿（R7ver.）",
+          "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+        }
+      ]
     },
     {
       "agency_name": "岐阜県神社庁",
@@ -2438,26 +2491,26 @@
           }
         },
         "canonical_data": {
-          "entries": 250,
+          "entries": 303,
           "entry_status_counts": {
-            "verified": 250
+            "verified": 303
           },
-          "facilities": 250,
+          "facilities": 303,
           "facility_status_counts": {
-            "verified": 250
+            "verified": 303
           },
           "path": "data/sources/gifu.json",
-          "verified_entries": 250,
-          "verified_facilities": 250
+          "verified_entries": 303,
+          "verified_facilities": 303
         },
-        "checked_at": "2026-11-09T13:56:12.041958+00:00",
+        "checked_at": "2026-11-09T14:06:21.480085+00:00",
         "collection_complete": false,
-        "facilities_collected": 250,
-        "facility_pages_fetched": 250,
+        "facilities_collected": 303,
+        "facility_pages_fetched": 303,
         "fields_observed": {
-          "address": 250,
-          "name": 250,
-          "reading_raw": 250
+          "address": 303,
+          "name": 303,
+          "reading_raw": 303
         },
         "index_displayed_name_registration_rows": 828,
         "index_groups_observed": 100,
@@ -2958,6 +3011,11 @@
             "url": "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
           },
           {
+            "fetched_at": "2026-11-09T13:56:45.274269+00:00",
+            "sha256": "44487f42c3291cd7b38ff41838e6b0d2c41d8dc61b81df7ecdde458e8b6335e1",
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
             "fetched_at": "2026-11-09T13:27:57.912364+00:00",
             "sha256": "727fce5bc8276f4b22caa6ea560b23340de50d1de5fed88d69fffa442beae151",
             "url": "https://www.gifu-jinjacho.jp/search.php?page=4&tcnt=31&jinjya=%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE"
@@ -2968,9 +3026,19 @@
             "url": "https://www.gifu-jinjacho.jp/search.php?page=4&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
           },
           {
+            "fetched_at": "2026-11-09T13:58:38.879470+00:00",
+            "sha256": "c7c9a241738e753f4e4a9e9c733f24cb2a24d15b195541e4a064ba0820c0a167",
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=4&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
             "fetched_at": "2026-11-09T13:09:00.506352+00:00",
             "sha256": "20db5677b8a1c0f09f2354536bb91d7d8bcbf7b59c36aa0412fd96b3bee84c1e",
             "url": "https://www.gifu-jinjacho.jp/search.php?page=5&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "fetched_at": "2026-11-09T14:00:30.788087+00:00",
+            "sha256": "d86f0f90b87bbd637f43d206c2d762c5aae5fc1c368949a544146d1ed787db68",
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=5&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
           },
           {
             "fetched_at": "2026-11-09T13:10:52.204306+00:00",
@@ -2978,14 +3046,29 @@
             "url": "https://www.gifu-jinjacho.jp/search.php?page=6&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
           },
           {
+            "fetched_at": "2026-11-09T14:02:23.485499+00:00",
+            "sha256": "0770bef649c437dbe5a99b1789d56f2687a1986ecfc9380c70d9e622cf20d135",
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=6&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
             "fetched_at": "2026-11-09T13:12:43.909408+00:00",
             "sha256": "547feaeb41752e46f2ea6726c9080b7105eca5639d7f7321760777587ee36586",
             "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
           },
           {
+            "fetched_at": "2026-11-09T14:04:17.574624+00:00",
+            "sha256": "62941294c23421ea193a59acf2a6295b9a336cd0a1c2d41846eb3c1bc5a12dda",
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
             "fetched_at": "2026-11-09T13:14:35.704168+00:00",
             "sha256": "7f84fb0627fdbcc9cfe61c92bd27039a9945a4ce9d467e2768311eefb77ecaf8",
             "url": "https://www.gifu-jinjacho.jp/search.php?page=8&tcnt=79&jinjya=%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "fetched_at": "2026-11-09T14:06:11.313531+00:00",
+            "sha256": "2dcff6eeba90156576d2af9354007eee54068dd498992ba13f499656083b6545",
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=8&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
           },
           {
             "fetched_at": "2026-11-09T07:43:31.317556+00:00",
@@ -3018,6 +3101,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1017&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:01:21.687437+00:00",
+            "sha256": "f1633b8168c05a6aa76d43e749004f000eb5177911b7037dfcabc20890ec54a5",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1051&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T07:42:46.526474+00:00",
             "sha256": "bea5e279b8dd76540e40efe47ae2316f4d6bb9e1bf41abe75537244ced881c33",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1057&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3026,6 +3114,11 @@
             "fetched_at": "2026-11-09T13:55:29.683326+00:00",
             "sha256": "eb47244b66b4d413f9fcfac4ba84ee794525f0ceb52e7c966a7600a0637febd6",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1078&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:03:05.513965+00:00",
+            "sha256": "d3d279c886fd44124fa58790b266754deeb2ada8232070256a9b609ab11e954c",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1101&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:10:31.905113+00:00",
@@ -3041,6 +3134,11 @@
             "fetched_at": "2026-11-09T13:33:02.822618+00:00",
             "sha256": "014224792dc0b5c00a9eee471ddc1478e1f7a5ab78470fd7a45d4326b6f44bd1",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1128&shrname=%E2%96%A0%E7%B6%BE%E7%BE%BD%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:02:45.129517+00:00",
+            "sha256": "36b013f5a3fb6deb3c3a6931610ef18e03770b607957ab6ec248413cead729c7",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1141&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:09:10.651035+00:00",
@@ -3061,6 +3159,11 @@
             "fetched_at": "2026-11-09T13:37:16.686637+00:00",
             "sha256": "61d0d30775bbdadba4c1586ce847beb22c69186836afc014b6ddaa33e919e06c",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=124&shrname=%E2%96%A0%E7%94%9F%E5%B6%8B%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:00:10.227358+00:00",
+            "sha256": "41ad3399cdba43ae84bd1ae6a71538071b6a5573a310289a54317256cc13add1",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1240&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:44:43.195326+00:00",
@@ -3133,9 +3236,34 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1389&shrname=%E2%96%A0%E7%86%B1%E7%94%B0%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:05:40.681339+00:00",
+            "sha256": "221a18c4033e460de64d52d7756e8aaedcf76be7ebfaa3bcdd385754e976e160",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1403&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:58:49.033379+00:00",
+            "sha256": "62da275cd190747cbebea293e2b2782e99213b61a4ccab1ce1ecf4d287e15f9c",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1408&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:25:05.264522+00:00",
             "sha256": "188d127ef750162a23906aba29245ca39f62ec466cbca8b5c978c477f1a99e12",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1409&shrname=%E2%96%A0%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:57:05.560210+00:00",
+            "sha256": "f9756fa79c25cec1d10c82cac2cade5dc9c757a0c6e1edb1bddd7dbd05a908da",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1410&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:00:00.062126+00:00",
+            "sha256": "af157b4dee4c07c7345665f2409a26112681017d19539d8a231b719f38065b37",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1460&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:05:30.523739+00:00",
+            "sha256": "10ef0d4391ca9b91a1fc8e1546b405a0a1d46f9618da1534823f8b6de3b39849",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1462&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:35:14.903017+00:00",
@@ -3146,6 +3274,11 @@
             "fetched_at": "2026-11-09T13:41:30.360233+00:00",
             "sha256": "84d3ba863fd08e859ad838fe20c03093aeb74b44e0e064e99ba2ca9740780793",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1473&shrname=%E2%96%A0%E7%9F%B3%E5%89%B1%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:01:42.289413+00:00",
+            "sha256": "f0c690d605fac5f594dde246ba7604a7c384e169c5f82c3ba70b575342bf2437",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1482&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:53:24.112107+00:00",
@@ -3263,6 +3396,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1773&shrname=%E2%96%A0%E7%9C%8C%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:05:09.436362+00:00",
+            "sha256": "8895113758d611839f47987a7976a9cd0ed87422e7d185b6fd162777410ae6ec",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1777&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:13:34.750968+00:00",
             "sha256": "c7c005bc25ca6cdc840744febaef292e5c5e1849bc227046b7ddc73019046313",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1778&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3276,6 +3414,11 @@
             "fetched_at": "2026-11-09T10:13:51.502347+00:00",
             "sha256": "6751ae8cb1075a6cd834a5679b4117f445d565056068c6403e498e1b17e2142f",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1809&shrname=%E2%96%A0%E9%98%BF%E8%B3%80%E5%A4%9A%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:02:33.965509+00:00",
+            "sha256": "036c50488635c02e2a0d29068966e8662eb1fc776d68ae31d649ed9b42c1befb",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1813&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:31:31.345594+00:00",
@@ -3308,6 +3451,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1887&shrname=%E2%96%A0%E6%B5%85%E9%96%93%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T13:57:17.712729+00:00",
+            "sha256": "50e642828244c70a3d9192ef8179d6b1e79ec683f494c951d6381a0befcdd1cb",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1911&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T10:13:42.760952+00:00",
             "sha256": "562d07cac77c8725ea1877d93ed1288a407c0d135d96ae811ead4506d60f5671",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1918&shrname=%E2%96%A0%E7%9C%8C%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3316,6 +3464,11 @@
             "fetched_at": "2026-11-09T13:04:05.819355+00:00",
             "sha256": "40dcb1a804d12aa78ffed296e850f3a89b4f889338574dcbbb938d08ea3fec04",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1939&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:04:38.966498+00:00",
+            "sha256": "669c1cb8ff1ec591f34494d2b4b5bf93d6aed444dfd06d51a09ff08f2932fae0",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1952&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:35:35.217001+00:00",
@@ -3343,6 +3496,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2013&shrname=%E2%96%A0%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T13:56:24.893201+00:00",
+            "sha256": "36f64f065d56733f5e7afcb0dc78a8bb94b2dc138fa3b66b7f6baea202b011e7",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2014&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:54:06.359764+00:00",
             "sha256": "f271a38219f58ee3c39c8380d78d6f508efbd57e5bad08996906f3cfdb022177",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2015&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3356,6 +3514,11 @@
             "fetched_at": "2026-11-09T13:09:30.945692+00:00",
             "sha256": "e451d69fdc0d6263c2a03bec3ee29a031987edd313a8d096ccd56310e5c8a49e",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=203&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:04:59.267165+00:00",
+            "sha256": "041217d495613cfb40048133e22a8538f3650ca3fd773bc5d3d8a3b0293e93d5",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2055&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:04:26.116658+00:00",
@@ -3478,6 +3641,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2299&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T13:58:08.455280+00:00",
+            "sha256": "00d31601f42512c12c28787f9dd033acae6e51b645cc4e7644a4f311ccf92ed3",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2302&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:54:59.207776+00:00",
             "sha256": "93520d09cdcb608c7bc0a9706e108c27ee0dc537ec6f6776f1aada0fa921f8b6",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2309&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3506,6 +3674,11 @@
             "fetched_at": "2026-11-09T13:15:46.783460+00:00",
             "sha256": "6dc0021e62cfc591ad8941553cf1a277322dd82ebbc172f9391b78f6bb2f3f8c",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2330&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:00:20.621594+00:00",
+            "sha256": "6f97507f568e768445f0240dcc98ae271351898ea329e4b2ea17646795e94a71",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2334&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:24:55.109602+00:00",
@@ -3543,6 +3716,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2383&shrname=%E2%96%A0%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:05:50.903191+00:00",
+            "sha256": "1e99091ae0e5e51f3fd7dc3d0aa3c2e8d78c0e4774dfea502c64cda8c1e14bf0",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2387&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:26:46.774707+00:00",
             "sha256": "45311d088cf51f908e004de5e8d8e1bfc574ac8dc6a1ac70b7a94bde877e5deb",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2388&shrname=%E2%96%A0%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3573,6 +3751,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2459&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:03:36.424374+00:00",
+            "sha256": "61486d4726674030142084b0fa98b810cd6f550184a45c8d7c226a8360743b09",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=246&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T07:43:29.172096+00:00",
             "sha256": "c6198bb93908bca3678f71a7f39eac252a6bf8fd7ed1480397a3d179131ade77",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2463&shrname=%E2%96%A0%E7%B8%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3591,6 +3774,16 @@
             "fetched_at": "2026-11-09T13:45:03.487249+00:00",
             "sha256": "556355f022ed301701073688b3d5784e719d4cb7a331e67a9a553d69a6b60206",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2485&shrname=%E2%96%A0%E6%9D%BF%E5%B1%B1%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:01:31.873684+00:00",
+            "sha256": "cfc41fef29455215931d1e3f7b8e8314c853d2867aa07aa65d2bfb29df32aa3d",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2491&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:03:15.677707+00:00",
+            "sha256": "d1df9b5e6aba69f2b38f3f3f6fa5edddb177e016482dd289556534c29328f7d0",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2499&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:03:55.665712+00:00",
@@ -3636,6 +3829,11 @@
             "fetched_at": "2026-11-09T13:27:47.686248+00:00",
             "sha256": "788f884b7c287af77cfe0d9ccdf9dfe256d01d8781794847ee67fb7e1df57821",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2536&shrname=%E2%96%A0%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:56:55.417715+00:00",
+            "sha256": "7473dc66aced0c0c87ff84ce1d109aaf68c6b20775663555e85680ba8a96d68c",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2539&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:53:03.840925+00:00",
@@ -3693,9 +3891,39 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2681&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T13:59:09.298650+00:00",
+            "sha256": "1c00ec7c475774cda707ea30f444c2ffa2eaa61c90d9f928853fe202af3fd15b",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2685&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:04:28.783243+00:00",
+            "sha256": "fe2863d4a34f5f4e86ffc3398aa66adeb33332701e9f8421a69b2d427f40cc79",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2725&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:57:38.010000+00:00",
+            "sha256": "0ccc588f980cb32bf2d5d52ce2a8bdc678c509f045b78a3ca85286827fb1276a",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=273&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:46:04.440750+00:00",
             "sha256": "5a321fe6d7e3e9d892adf8aefabb1ad062c00ad5fde5024a129bd505516e276b",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=274&shrname=%E2%96%A0%E6%AB%9F%E6%B1%9F%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:01:01.312047+00:00",
+            "sha256": "1153fffdea167c1eb562ddd4d9d881b9680e787a1d9e648bdfd79b4c98af28e1",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=275&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:58:28.719530+00:00",
+            "sha256": "e31a347b2aec3fa3cb8d6e183b40b65b3b6eeb3964fc3247e707ba33dcff513f",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2758&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:06:01.050308+00:00",
+            "sha256": "cacdc5f16b49dc41dbefb69b3405f0b0b19a3d9762770792ab73493443d16773",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=277&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:13:44.932255+00:00",
@@ -3711,6 +3939,26 @@
             "fetched_at": "2026-11-09T13:17:58.837822+00:00",
             "sha256": "c6fd962bcbaada870aa0d95856fe7b8026eb002a605fb420c9fda0e59aa6bc91",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2776&shrname=%E2%96%A0%E6%9C%9D%E6%97%A5%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:02:55.319220+00:00",
+            "sha256": "61a206a5ea68979c4f8f4f99e0c6e55779576e6f251a900cbf6205c717aede50",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2794&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:02:02.619692+00:00",
+            "sha256": "d7da880a15b0c8325490872e6494eeb637225cd2ccb963632648db0bf9b0c175",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=280&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:04:07.134914+00:00",
+            "sha256": "7aaac65f12bcae46f3a22c784028abfb117dcf9836f52c124e69b726f147bc63",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2804&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:00:40.955729+00:00",
+            "sha256": "61004e2fc21fed25a665852ec033848b20377751107665dcd4aa98385551adab",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2806&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:36:15.798411+00:00",
@@ -3748,9 +3996,29 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2936&shrname=%E2%96%A0%E9%9D%92%E6%9C%A8%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:06:21.480085+00:00",
+            "sha256": "1db58ab50501e631773cd5c0a2a5f0e1b894bd12da98a95cf1db8d15b49af33e",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2967&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:51:01.806669+00:00",
             "sha256": "fa77dfa8cd5397711b999e553abc3a989acd17813f91778b608535c8a4d1eca5",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2978&shrname=%E2%96%A0%E5%B7%8C%E5%B3%B6%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:02:13.048686+00:00",
+            "sha256": "843fcf2d3bd15dde01b0edb08689956e83b24f8a9559016d79ceb63720c90f78",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2981&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:57:48.165560+00:00",
+            "sha256": "ea9009f504140582720cc376c406de65a1888a093a79ed4388692fd49fafc115",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3019&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:00:51.144860+00:00",
+            "sha256": "72c193cf913a199643c76674b7bbabd4706e70fce70663253ae45a06a6102b2a",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3025&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:38:17.550538+00:00",
@@ -3763,6 +4031,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3070&shrname=%E2%96%A0%E6%B1%A0%E9%87%8E%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:01:11.492408+00:00",
+            "sha256": "cefa7d3621d3ab54a1d94c760d8745459b25952a4f86f1d183e75a2736cb0a92",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3077&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:30:09.866852+00:00",
             "sha256": "cad1809b03e1ba3f8f122381d9c1222147e94ff05bad44c82e9c9863ad2faf91",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=311&shrname=%E2%96%A0%E8%B7%A1%E6%B4%A5%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3771,6 +4044,11 @@
             "fetched_at": "2026-11-09T13:11:22.654560+00:00",
             "sha256": "03b7d695fb0d3d0fabdec6e7ec1a8fee1cd12b893b1c004c4705c04e983f8c12",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3128&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:56:35.113882+00:00",
+            "sha256": "683a5b28055886c9bea9f54b72bb2bcc380224d188c12a162b26426ff6775dbe",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3131&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:50:41.442881+00:00",
@@ -3858,9 +4136,19 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3232&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:03:25.928941+00:00",
+            "sha256": "388a376216765c0770977002ef9ad15c78b0ae19479380c74c297d553ea516d3",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3244&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:02:04.043759+00:00",
             "sha256": "60a7b57d9449873e6b4980a732680e828dc4eb40274a304c93b8e602b684abb2",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=3247&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:04:49.116900+00:00",
+            "sha256": "51dbbfc1139e460cf5d4e60a416abb02c16c1af02f892e7f990f707d41cb079d",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=326&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:34:03.829540+00:00",
@@ -3876,6 +4164,11 @@
             "fetched_at": "2026-11-09T13:04:36.261377+00:00",
             "sha256": "89876abb69895da8d81b0dac55c9323327b07a49c069bd3f8fba4318459706fe",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=332&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:01:52.469716+00:00",
+            "sha256": "33b9a78df83f358d5b9a947191a73735a974554b641f8b66ecbb928573347cff",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=355&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T07:46:14.693343+00:00",
@@ -3948,6 +4241,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=451&shrname=%E2%96%A0%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T13:59:19.456141+00:00",
+            "sha256": "8ac66e031430c46cd207be2fe2a69913085d952a6ccff0ce84c27b69549bf445",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=477&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:51:42.677060+00:00",
             "sha256": "83ea9cb5e5ddc30f76b365a28d68e8f0b67a718bc94fd8866869b9d5c0a97ea6",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=49&shrname=%E2%96%A0%E4%BC%8A%E5%AF%8C%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3956,6 +4254,11 @@
             "fetched_at": "2026-11-09T13:42:41.408212+00:00",
             "sha256": "a921bf3e52a32af2f5fd3b511f3d6b82865f6ce23c5feac27da7d8961c71e00c",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=501&shrname=%E2%96%A0%E5%92%8C%E6%B3%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:59:29.601568+00:00",
+            "sha256": "50bf226ce911498e714afb9c9ac7c6df1d40b68605705cd5974a8c8cbec2aef7",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=51&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:16:47.744667+00:00",
@@ -3968,6 +4271,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=516&shrname=%E2%96%A0%E6%9C%89%E6%9C%AC%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T13:57:27.864955+00:00",
+            "sha256": "c8f1979f97da98a4a65eb7b4f12b68dbc766f20bba0a6c9b79ab424d760a84a9",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=548&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:23:03.428148+00:00",
             "sha256": "fde89458650d649a37b832748e3c7fa479864bd81747848827391c04979cec09",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=553&shrname=%E2%96%A0%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -3976,6 +4284,16 @@
             "fetched_at": "2026-11-09T13:08:19.883714+00:00",
             "sha256": "d3d09bded5002a653254f18a5ef063fd77b514b5baa994ccd88cae628b336ba5",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=556&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:58:59.169444+00:00",
+            "sha256": "174d64bc54362ee17587beccfd753f53ad3e2edf290bc40a4414bd03743e93ef",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=574&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:03:56.992004+00:00",
+            "sha256": "750f0cc3c0414e3606542d2759e03a9e0c8d77a9502a45436d8e60372bf024b8",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=582&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T08:07:49.216645+00:00",
@@ -4013,6 +4331,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=670&shrname=%E2%96%A0%E5%B8%82%E7%A5%9E%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T13:59:39.745568+00:00",
+            "sha256": "8411314e0235b41dbd94888bc6d704112600dd6829e4a5d59b132bc02535d553",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=7&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:55:09.376414+00:00",
             "sha256": "efdb615f0768de8c72194b83e9dcb7a5c7de409331ed41be62b0df8d885e438f",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=71&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -4046,6 +4369,11 @@
             "fetched_at": "2026-11-09T13:18:19.135396+00:00",
             "sha256": "32e6976bbf4bf15e576422e29cb8e0cfcf3b4324318065687d3df9917c2e5e86",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=774&shrname=%E2%96%A0%E6%97%AD%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:59:49.889756+00:00",
+            "sha256": "07f72bdbea19d6d4361c11e5d107a5afa8330f535a96d6fd44b312737bcda423",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=776&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:55:39.837097+00:00",
@@ -4138,6 +4466,16 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=877&shrname=%E2%96%A0%E6%84%9B%E5%AE%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T14:03:46.814149+00:00",
+            "sha256": "299f392e74da1dcb58fa9533867c699f31ece2600dd70a2e6fa736cdaa9c1878",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=878&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T13:58:18.595534+00:00",
+            "sha256": "3491af55742107af97f0f3ae76e668a147d2fbbc2d6125ceb53924d758cf3b9c",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=887&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:36:36.076877+00:00",
             "sha256": "73872c80b76495305de9bb446b7178a0864129c877a526747dcc513a7db9e2d3",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=888&shrname=%E2%96%A0%E4%BC%8A%E5%B2%90%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -4158,6 +4496,11 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=9&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
+            "fetched_at": "2026-11-09T13:57:58.309505+00:00",
+            "sha256": "b1ff6599106f49ee83ddfa8415bbb87ea82784b144d3acbea32bb105f3ce1f2b",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=914&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
             "fetched_at": "2026-11-09T13:13:14.428826+00:00",
             "sha256": "cdc9951ea2759a17fa57e90c27b21a8b962dd99cf4a226fb2afa858674073ff5",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=922&shrname=%E2%96%A0%E7%A7%8B%E8%91%89%E7%A5%9E%E7%A4%BE%E2%96%A0"
@@ -4171,6 +4514,11 @@
             "fetched_at": "2026-11-09T13:52:43.526010+00:00",
             "sha256": "e8daec0bcca6f3bf9a4893e8c87ad7fe5f1aab13caeea5765723c5f265d71810",
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=927&shrname=%E2%96%A0%E4%BC%8A%E5%A5%88%E6%B3%A2%E7%A5%9E%E7%A4%BE%E2%96%A0"
+          },
+          {
+            "fetched_at": "2026-11-09T14:05:20.348346+00:00",
+            "sha256": "246a9ab6ebf9806e4cf09a2387064eb55fcf2020c97c917e4f274eb54dcf3c20",
+            "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=928&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0"
           },
           {
             "fetched_at": "2026-11-09T13:02:24.316770+00:00",
@@ -4240,12 +4588,19 @@
         ],
         "inspection_evidence_reference": "data/sources/gifu.json#collection.pages",
         "listing_authority_status": "agency_site",
-        "pages_fetched": 355,
-        "reason": "保存済みの実一覧・検索・詳細から250施設の掲載名・全文読み・所在地・shrno・hash・日時を照合。旧100施設のID/原文を保持。同名施設は所在地と施設番号で区別し、個別詳細の全文カナを採用。取得失敗0の部分スナップショット。828表示は名称/読みgroup登録行数で、施設総数ではない。全範囲は未完了。",
+        "pages_fetched": 414,
+        "reason": "保存済みの実一覧・検索・詳細から303施設の掲載名・全文読み・所在地・shrno・hash・日時を照合。旧250施設のID/原文を保持。同名施設は所在地と施設番号で区別し、個別詳細の全文カナを採用。取得失敗0の部分スナップショット。828表示は名称/読みgroup登録行数で、施設総数ではない。全範囲は未完了。",
         "remaining_scope": [
-          "https://www.gifu-jinjacho.jp/syosai.php?shrno=2014&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
-          "https://www.gifu-jinjacho.jp/syosai.php?shrno=3131&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
-          "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=245&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=325&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=1424&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=2049&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=855&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=29&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=2538&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=3166&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/syosai.php?shrno=608&shrname=%E2%96%A0%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE%E2%96%A0",
+          "https://www.gifu-jinjacho.jp/search.php?page=9&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
           "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BC%8A%E5%A5%B4%E7%9F%A5%E7%A5%9E%E7%A4%BE",
           "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BA%95%E4%B8%8A%E7%A5%9E%E7%A4%BE",
           "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BA%95%E3%83%8E%E7%A5%9E%E7%A4%BE",
@@ -4756,9 +5111,39 @@
             "rows_observed": 10,
             "total": 94,
             "url": "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 94,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 94,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=4&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 94,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=5&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 94,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=6&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 94,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 94,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=8&tcnt=94&jinjya=%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
           }
         ],
-        "source_rows_observed": 250,
+        "source_rows_observed": 303,
         "status": "partial",
         "traversal_complete": false
       },
@@ -28050,7 +28435,20 @@
         "status": "verified_opened"
       },
       "prefecture": "高知県",
-      "prefecture_code": "39"
+      "prefecture_code": "39",
+      "supplemental_reading_source_survey": [
+        {
+          "adopted_readings": 0,
+          "body_opened": true,
+          "checked_at": "2026-11-09T14:12:05.594878+00:00",
+          "conditions": "開いた案内ページは認証手続・様式・件数等を掲載。読み付き名簿へのリンクは確認できず。この1ページの確認を県サイト全体で資料が存在しない根拠にはしない。",
+          "publisher": "高知県",
+          "source_kind": "prefectural_religious_corporation_guidance",
+          "status": "inspected_no_reading_register_link_observed_on_page",
+          "title": "宗教法人について",
+          "url": "https://www.pref.kochi.lg.jp/doc/shukyohoujin/"
+        }
+      ]
     },
     {
       "agency_name": "福岡県神社庁",
@@ -28493,7 +28891,38 @@
         "status": "verified_opened"
       },
       "prefecture": "熊本県",
-      "prefecture_code": "43"
+      "prefecture_code": "43",
+      "supplemental_reading_source_survey": [
+        {
+          "adopted_readings": 0,
+          "authority_page_url": "https://data.bodik.jp/dataset/430005_00107",
+          "body_opened": true,
+          "checked_at": "2026-11-09T14:12:05.594878+00:00",
+          "conditions": "カタログのライセンス表示はCC BY4.0。読み欄がなく読み補完には不採用。全Excelや無関係な法人行は正本に収録しない。",
+          "fetched_at": "2026-11-09T14:08:13.809708+00:00",
+          "fields_observed": [
+            "番号",
+            "包括",
+            "法人名称",
+            "郵便番号",
+            "市町村",
+            "事務所所在地",
+            "職",
+            "姓"
+          ],
+          "format": "xlsx",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+          "published_as_of": "2025-08-01",
+          "publisher": "熊本県（オープンデータカタログの提供者表示）",
+          "reading_field_observed": false,
+          "resource_page_url": "https://data.bodik.jp/dataset/430005_00107/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716",
+          "source_kind": "prefectural_open_data_corporate_register",
+          "status": "inspected_no_dedicated_reading_field",
+          "title": "宗教法人名簿（R7.8.1現在）",
+          "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+        }
+      ]
     },
     {
       "additional_source_evidence": [
@@ -28581,6 +29010,15 @@
         "coverage_explanation": "未確認。",
         "published_fields": "神社庁本文未閲覧。"
       },
+      "latest_parent_directory_attempt": {
+        "body_opened": false,
+        "checked_on": "2026-11-09",
+        "official_status_unchanged": true,
+        "outcome": "normal policy check failed; stopped without alternative route",
+        "robots_http_status": 503,
+        "robots_url": "https://www.jinjahoncho.or.jp/robots.txt",
+        "url": "https://www.jinjahoncho.or.jp/jinjahoncho/jinjacho/"
+      },
       "listing_urls": [],
       "official_url": null,
       "official_verification": {
@@ -28648,6 +29086,15 @@
         "checked_at": "2026-11-08T13:15:29.825052+00:00",
         "coverage_explanation": "青年会は649社検索可能と説明。神社庁掲載数としては採用しない。",
         "published_fields": "青年会トップに御祭神・鎮座地・由緒・写真の閲覧説明。神社庁掲載条件を満たすものとは未確認。"
+      },
+      "latest_parent_directory_attempt": {
+        "body_opened": false,
+        "checked_on": "2026-11-09",
+        "official_status_unchanged": true,
+        "outcome": "normal policy check failed; stopped without alternative route",
+        "robots_http_status": 503,
+        "robots_url": "https://www.jinjahoncho.or.jp/robots.txt",
+        "url": "https://www.jinjahoncho.or.jp/jinjahoncho/jinjacho/"
       },
       "latest_source_recheck": {
         "agency_body_opened": false,
@@ -28895,7 +29342,7 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 52991,
+    "canonical_facilities": 53044,
     "collection_status_counts": {
       "blocked": 3,
       "collected": 38,
