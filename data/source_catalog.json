@@ -2626,12 +2626,46 @@
       "prefecture_code": "23"
     },
     {
+      "additional_source_evidence": [
+        {
+          "body_opened": true,
+          "http_status": 200,
+          "observed_at": "2026-11-08T14:24:58.422903+00:00",
+          "page_hash": "e8a2b779fd71db51d2453561f6dcbb8338f7fe4d29647bc6301d534e4b1b887c",
+          "short_evidence": "三重県神社庁教化委員会・三重県の神社情報としてhttp://kyoka.mie-jinjacho.or.jp/shrine/へ明示リンク。",
+          "url": "https://www.mie-jinjachou.page/"
+        },
+        {
+          "body_opened": true,
+          "http_status": 200,
+          "observed_at": "2026-11-09T05:21:56.465166+00:00",
+          "page_hash": "9a1a51c20e13ea6ff322464f57c47203f2f68fc1f5736bdfe190394202541674",
+          "short_evidence": "三重県神社庁教化委員会の自己表記、津市鳥居町210-2、電話059-226-8042を庁所在地と照合。神社記事h2実リンク・古い記事の実ページ送りを確認。",
+          "url": "http://kyoka.mie-jinjacho.or.jp/shrine/"
+        },
+        {
+          "body_opened": true,
+          "http_status": 200,
+          "observed_at": "2026-11-09T05:22:33.889399+00:00",
+          "page_hash": "db2bbb6ead78d89d35f25641c1c6b08c7702b44fe6369c6f0c5bcbf20ae5b2ac",
+          "short_evidence": "一宮神社 – いっきゅうじんじゃ – / 神社コード4220032 / 鎮座地 名張市夏見字坊垣3375-1",
+          "url": "https://kyoka.mie-jinjacho.or.jp/shrine/%e4%b8%80%e5%ae%ae%e7%a5%9e%e7%a4%be/"
+        },
+        {
+          "body_opened": true,
+          "http_status": 200,
+          "observed_at": "2026-11-09T05:22:36.258560+00:00",
+          "page_hash": "2461599ddc3bb1d567a1ff23aac843f3cf096c8a6e02ddaf951a0d69e3309707",
+          "short_evidence": "相楽神社 – さがらじんじゃ – / 神社コード4220031 / 鎮座地 名張市赤目町相楽361-1",
+          "url": "https://kyoka.mie-jinjacho.or.jp/shrine/%e7%9b%b8%e6%a5%bd%e7%a5%9e%e7%a4%be/"
+        }
+      ],
       "agency_name": "三重県神社庁",
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://www.mie-jinjachou.page/",
       "collection": {
-        "checked_at": null,
-        "facilities_collected": 0,
+        "checked_at": "2026-11-09T05:40:44.109488+00:00",
+        "facilities_collected": 50,
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-08T14:24:58.422903+00:00",
@@ -2644,12 +2678,17 @@
             "url": "https://www.mie-jinjachou.page/%E4%B8%89%E9%87%8D%E7%9C%8C%E3%81%AE%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
           }
         ],
-        "listing_authority_status": "agency_site",
-        "pages_fetched": 0,
-        "reason": "公式桑名市・桑名郡HTMLで104社の見出しとTable Master埋込を実確認。viewer-modelが示すwidgetUrlはwix-visual-data.appspot.com/index。同hostのrobots.txtはHTTP401で方針不明となり既存Clientが取得停止。画像を取得せず、施設名・読みを推定しない。",
-        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
-        "source_rows_observed": 0,
-        "status": "blocked"
+        "listing_authority_status": "agency_department_site",
+        "pages_fetched": 60,
+        "previous_blocked_route": {
+          "reason": "公式桑名市・桑名郡HTMLで104社の見出しとTable Master埋込を実確認。viewer-modelが示すwidgetUrlはwix-visual-data.appspot.com/index。同hostのrobots.txtはHTTP401で方針不明となり既存Clientが取得停止。画像を取得せず、施設名・読みを推定しない。",
+          "status": "blocked",
+          "url": "https://wix-visual-data.appspot.com/robots.txt"
+        },
+        "reason": "県神社庁が明示リンクする公式教化委員会の独立HTMLを50施設上限で試作取得。全文読みと住所を同一記事で照合。うち26登録が出力可能、括弧注記付き掲載名24登録は全文の対応未確定で保留。",
+        "remaining_scope": "実際の古い記事リンクで示された11ページ目以降が未取得。カテゴリ表示合計822と地図815は参考値であり取得目標・収集済み件数には使わない。",
+        "source_rows_observed": 50,
+        "status": "partial"
       },
       "conditions": {
         "additional_robots_inspection": {
@@ -2657,7 +2696,23 @@
           "outcome": "埋込Table Master配信元の方針を取得できず収集停止。確認日時の詳細は未記録。",
           "url": "https://wix-visual-data.appspot.com/robots.txt"
         },
-        "data_use_conditions": "フッターにダウンロード可能なPDF以外の画像保存不可の表示。画像は保存していない。辞書用テキストの再利用許諾は未確認。",
+        "data_use_conditions": "フッターにダウンロード可能なPDF以外の画像保存不可の表示。画像は保存していない。辞書用テキストの再利用許諾は未確認。 公式教化委員会の独立HTMLに汎用copyright表示を確認。開いた記事に明示的な一括抽出禁止は見つからず、再配布許諾は未確認として名称・所在地等の事実と短い根拠だけを保存。本文・画像・PDFは再配布しない。",
+        "independent_committee_robots_inspections": [
+          {
+            "checked_at": "2026-11-09T05:21:54.119815+00:00",
+            "outcome": "existing Client policy accepted before actual page/PDF retrieval",
+            "page_hash": "f577b68a8d3c1c2655bbd7b7f1cbb17e73f31a776bcd9eeb689f1be9db128cd0",
+            "status": 200,
+            "url": "http://kyoka.mie-jinjacho.or.jp/robots.txt"
+          },
+          {
+            "checked_at": "2026-11-09T05:22:31.301651+00:00",
+            "outcome": "existing Client policy accepted before actual page/PDF retrieval",
+            "page_hash": "f577b68a8d3c1c2655bbd7b7f1cbb17e73f31a776bcd9eeb689f1be9db128cd0",
+            "status": 200,
+            "url": "https://kyoka.mie-jinjacho.or.jp/robots.txt"
+          }
+        ],
         "redistribution_permission": "unconfirmed",
         "robots_initial_inspection": {
           "checked_at": "2026-11-08T13:14:19.524701+00:00",
@@ -2676,7 +2731,8 @@
         "published_fields": "桑名市・桑名郡ページの104社という見出しを確認。施設一覧本文は取得テキストに現れず、埋込/画像等の確認が必要。"
       },
       "listing_urls": [
-        "https://www.mie-jinjachou.page/%E4%B8%89%E9%87%8D%E7%9C%8C%E3%81%AE%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7"
+        "https://www.mie-jinjachou.page/%E4%B8%89%E9%87%8D%E7%9C%8C%E3%81%AE%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7",
+        "http://kyoka.mie-jinjacho.or.jp/shrine/"
       ],
       "official_url": "https://www.mie-jinjachou.page/",
       "official_verification": {
