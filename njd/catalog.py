@@ -11,7 +11,7 @@ def collect_gunma(client,limit=None):
 
 def registry():
     result={'gunma':dict(code='10',prefecture='群馬県',agency='群馬県神社庁',collect=collect_gunma)}
-    for name in ('north','central','south','mie','niigata','gifu'):
+    for name in ('north','central','south','mie','niigata','gifu','hyogo'):
         try: module=importlib.import_module('njd.adapters.'+name)
         except ModuleNotFoundError as exc:
             if exc.name=='njd.adapters.'+name: continue
