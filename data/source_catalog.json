@@ -1630,37 +1630,42 @@
       "candidate_url": "https://toyama-jinjacho.sakura.ne.jp/",
       "collection": {
         "canonical_data": {
-          "entries": 97,
+          "entries": 106,
           "entry_status_counts": {
             "pending": 1,
-            "verified": 96
+            "verified": 105
           },
-          "facilities": 97,
+          "facilities": 106,
           "facility_status_counts": {
             "pending": 1,
-            "verified": 96
+            "verified": 105
           },
           "path": "data/sources/toyama.json",
-          "verified_entries": 96,
-          "verified_facilities": 96
+          "verified_entries": 105,
+          "verified_facilities": 105
         },
         "checked_at": "2026-11-08T15:49:59.287399+00:00",
-        "facilities_collected": 97,
+        "facilities_collected": 106,
         "fields_observed": {
-          "address": 97,
+          "address": 106,
           "facility_official_url": 0,
-          "name": 97,
-          "reading_raw": 97
+          "name": 106,
+          "reading_raw": 106
         },
+        "index_pages_total": 37,
         "inspection_evidence": [],
         "listing_authority_status": "agency_site",
+        "named_parish_source_records": 3589,
         "pages_fetched": 1514,
+        "published_pages_observed": 3685,
+        "published_pages_total": 3685,
         "reason": "神社庁が公開した氏子住所ページの明示的な神社名・鎮座地から施設を区別。住所未掲載資料は施設数へ加算しない。",
         "record_fetched_at_range": [
-          "2026-11-08T14:40:59.015131+00:00",
-          "2026-11-09T00:49:06.468551+00:00"
+          "2026-11-08T14:34:02.987857+00:00",
+          "2026-11-09T01:21:14.935953+00:00"
         ],
-        "remaining_scope": "full source traversal still running; cache is resume checkpoint",
+        "remaining_scope": "3389 named parish source records need a concrete shrine location; 96 service or unnamed pages do not identify facilities; conflicting readings and source redistribution conditions remain for review",
+        "resolved_facility_source_rows": 200,
         "saved_listing_page_count": 143,
         "saved_listing_page_examples": [
           {
@@ -1679,10 +1684,12 @@
             "url": "https://toyama-jinjacho.sakura.ne.jp/ujigami/1379-%e5%af%8c%e5%b1%b1%e5%b8%82%e9%87%91%e5%b1%b1%e6%96%b0%e4%b8%ad-%e7%a5%9e%e6%98%8e%e5%ae%ae-%e5%b5%af%e5%b3%a8%e3%80%80%e8%8a%b3%e6%a8%b9-%ef%bc%88%e6%9c%ac%e5%8b%99%e7%a4%be%e3%83%9b/"
           }
         ],
-        "source_rows_observed": 2668,
-        "status": "partial",
-        "stored_coverage": "cached parish records plus ongoing full published index traversal; acquisition checkpoint only",
-        "stored_pages_fetched": 2751
+        "source_rows_observed": 3589,
+        "status": "collected",
+        "stored_coverage": "published parish pages; only exact published name + a concrete single municipality-specific shrine location identify a facility; parish area and priest-location advice are never substituted",
+        "stored_pages_fetched": 3724,
+        "unresolved_parish_record_count": 3389,
+        "unusable_published_page_count": 96
       },
       "conditions": {
         "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
@@ -4889,12 +4896,12 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 37394,
+    "canonical_facilities": 37403,
     "collection_status_counts": {
       "authority_pending": 1,
       "blocked": 9,
-      "collected": 31,
-      "partial": 3,
+      "collected": 32,
+      "partial": 2,
       "unresolved": 3
     },
     "prefectures_with_canonical_facilities": 35,
