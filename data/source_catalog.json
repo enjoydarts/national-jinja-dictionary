@@ -23108,6 +23108,20 @@
         "coverage_explanation": "全ページ停止と明記。旧検索の掲載範囲は現在未確認。",
         "published_fields": "現在の直接GETには施設項目なし。"
       },
+      "latest_source_recheck": {
+        "agency_body_opened": true,
+        "checked_at": "2026-11-09T12:46:12.802753+00:00",
+        "evidence": [
+          {
+            "checked_at": "2026-11-09T12:46:12.802753+00:00",
+            "fetched_at": "2026-11-09T12:43:22.426445+00:00",
+            "page_hash": "d2d59a635bdecc063276df867f672ea1a6938fb2b1074985633a610e2f1e6de3",
+            "status": 200,
+            "url": "https://wakayama-jinjacho.or.jp/"
+          }
+        ],
+        "finding": "トップは前回と同じ一時メンテナンス告知。移転リンクはなく、恒久閉鎖と判断しない。"
+      },
       "listing_urls": [],
       "official_url": "https://wakayama-jinjacho.or.jp/",
       "official_verification": {
@@ -23735,6 +23749,20 @@
         "checked_at": "2026-11-08T13:14:37.260146+00:00",
         "coverage_explanation": "未確認。",
         "published_fields": "本文未閲覧。"
+      },
+      "latest_source_recheck": {
+        "agency_body_opened": false,
+        "checked_at": "2026-11-09T12:46:12.802753+00:00",
+        "evidence": [
+          {
+            "checked_at": "2026-11-09T12:46:12.802753+00:00",
+            "fetched_at": "2026-11-09T12:43:19.355077+00:00",
+            "page_hash": "e1eaa022171fec4b266b8d2e2a4b1b7c9e3a95f74daad2ca2c5751beb9719584",
+            "status": 200,
+            "url": "https://www.awanavi.jp/travel-tips/reference/temples-shrines"
+          }
+        ],
+        "finding": "県・観光協会ページは旧候補 http://awa-jinjacho.jp/ を引き続きリンク。今回の神社庁本文閲覧や旧ホスト再試行は行っておらず、新しい公式URLは未確認。"
       },
       "listing_urls": [],
       "official_url": null,
@@ -26368,6 +26396,48 @@
       ],
       "agency_name": "大分県神社庁",
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+      "candidate_sites": [
+        {
+          "authority_status": "pending_review",
+          "claimed_operator": "大分県神社庁南海部支部",
+          "claimed_total_is_collection_count": false,
+          "evidence": [
+            {
+              "body_opened": true,
+              "checked_at": "2026-11-09T12:44:34.959293+00:00",
+              "fetched_at": "2026-11-09T12:42:35.950823+00:00",
+              "http_status": 200,
+              "locator": "h1; p.font_7.wixui-rich-text__text",
+              "page_hash": "3503f49a2fee9103f3b5f855d3bfcf1d1ba341c3f23d6c030f875f2dfdbf4b3c",
+              "url": "https://oitajinjasaiki.wixsite.com/minami-amabe"
+            },
+            {
+              "body_opened": true,
+              "checked_at": "2026-11-09T12:44:34.959293+00:00",
+              "fetched_at": "2026-11-09T12:42:39.470164+00:00",
+              "http_status": 200,
+              "locator": "p.font_8.wixui-rich-text__text; paired name and 【鎮座地】 paragraphs",
+              "page_hash": "eb819feeaa49fdd9de20bc3e7ac6b8e52679e832d07a4e6744b5dbc9dcd8a0b3",
+              "url": "https://oitajinjasaiki.wixsite.com/minami-amabe/jinja-syoukai"
+            },
+            {
+              "body_opened": true,
+              "checked_at": "2026-11-09T12:44:34.959293+00:00",
+              "fetched_at": "2026-11-09T12:42:43.790777+00:00",
+              "http_status": 200,
+              "page_hash": "4c8bd0f70c3d2a58fd696c4227833cb7308e0c1ae499dad4cec18e4d1547e84a",
+              "url": "https://oitajinjasaiki.wixsite.com/minami-amabe/link"
+            }
+          ],
+          "independent_full_reading_field_observed": false,
+          "listing_url": "https://oitajinjasaiki.wixsite.com/minami-amabe/jinja-syoukai",
+          "observed_introduction_blocks": 13,
+          "organization_claimed_shrines": 216,
+          "reason": "トップの支部名・組織説明を実確認。信頼できる公式主体からのリンクまたは運営主体の独立確認が未了。13紹介ブロックを正本施設へ未採用。",
+          "scope": "佐伯市・旧南海部郡の支部候補。県神社庁全域の掲載先ではない。",
+          "url": "https://oitajinjasaiki.wixsite.com/minami-amabe"
+        }
+      ],
       "candidate_url": null,
       "collection": {
         "checked_at": null,
@@ -26375,8 +26445,8 @@
         "inspection_evidence": [],
         "listing_authority_status": "unconfirmed",
         "pages_fetched": 0,
-        "reason": "追加検索「大分県神社庁 公式 ホームページ」でも神社庁公式URL特定できず。外部一覧で代替しない。神社本庁一覧もrobots503により閲覧停止。",
-        "remaining_scope": "公式URL、神社庁掲載施設一覧の特定。",
+        "reason": "県神社庁の公式URLは未特定。大分県神社庁南海部支部を名乗る候補のトップ・紹介・リンクを実閲覧し、13名称/所在地ブロックを確認。運営主体と公式な位置づけの独立確認未了のため施設未採用。",
+        "remaining_scope": "県神社庁公式URLと、南海部支部候補の公式性・掲載位置づけを確認。支部の216社という組織説明は取得件数にしない。",
         "source_rows_observed": 0,
         "status": "unresolved"
       },
@@ -26466,6 +26536,22 @@
         "checked_at": "2026-11-08T13:15:29.825052+00:00",
         "coverage_explanation": "青年会は649社検索可能と説明。神社庁掲載数としては採用しない。",
         "published_fields": "青年会トップに御祭神・鎮座地・由緒・写真の閲覧説明。神社庁掲載条件を満たすものとは未確認。"
+      },
+      "latest_source_recheck": {
+        "agency_body_opened": false,
+        "checked_at": "2026-11-09T12:44:34.959293+00:00",
+        "evidence": [
+          {
+            "body_opened": true,
+            "checked_at": "2026-11-09T12:44:34.959293+00:00",
+            "fetched_at": "2026-11-09T12:42:46.781706+00:00",
+            "http_status": 200,
+            "locator": "h2 宮巡隊（ぐうぐるたい） + following p",
+            "page_hash": "9335ae00e26c62cb1194e2bdcfda7bbf371b77aa6a22060f473f6f1af315f247",
+            "url": "https://www.m-shinsei.jp/history_9/"
+          }
+        ],
+        "finding": "宮巡隊の説明で宮巡が青年会自身のサイトであることを確認。県神社庁からの委託・監修・公式掲載の証拠は確認できず。650社は掲載目標で取得件数ではない。"
       },
       "listing_urls": [],
       "official_url": null,
