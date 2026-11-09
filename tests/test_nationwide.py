@@ -6,6 +6,31 @@ from njd.nationwide import save_collection, merge_collections, run_collections
 from njd.storage import load_dataset
 
 class NationwideTest(unittest.TestCase):
+    def test_successful_partial_collection_replaces_an_old_blocker_scope(self):
+        from njd.storage import write_json
+        with tempfile.TemporaryDirectory() as td:
+            base = Path(td)
+            work = base/'data'
+            write_json(work/'manifest.json', {'prefectures': {'11': {'remaining_scope': 'old blocked route'}}})
+            def collect(client, limit=None):
+                data = build([row()])
+                data['collection'].update(traversal_complete=False, remaining_scope=['https://agency.test/page/2/'])
+                return data
+            sources = {'example': dict(code='11', collect=collect)}
+            state = run_collections(work, sources, ['example'], cache_dir=base/'cache')
+            self.assertEqual(state['11']['remaining_scope'], ['https://agency.test/page/2/'])
+            self.assertEqual(state['11']['status'], 'partial')
+    def test_refresh_intent_reaches_collectors_with_guarded_redirect_fetches(self):
+        for refresh in (False, True):
+            with self.subTest(refresh=refresh), tempfile.TemporaryDirectory() as td:
+                base = Path(td)
+                seen = []
+                def collect(client, limit=None):
+                    seen.append(getattr(client, 'refresh_requested', None))
+                    return build([row()])
+                sources = {'example': dict(code='11', collect=collect)}
+                run_collections(base/'data', sources, ['example'], refresh=refresh, cache_dir=base/'cache')
+                self.assertEqual(seen, [refresh])
     def test_merging_preserves_other_prefectures_and_source_records(self):
         from njd.records import build_dataset
         with tempfile.TemporaryDirectory() as td:

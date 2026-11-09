@@ -127,6 +127,8 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
         spec=registry[key];code=spec['code'];path=source_path(data_dir,key)
         try:
             client=Client(resolved,offline=offline)
+            # Guarded adapters check every redirect before requesting its target.
+            client.refresh_requested=refresh
             if refresh:
                 original=client.fetch
                 client.fetch=lambda url,**kwargs: original(url,refresh=True,**{k:v for k,v in kwargs.items() if k!='refresh'})
@@ -135,7 +137,8 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
             data=spec['collect'](client,limit=limit)
             saved=save_collection(data_dir,key,data)
             states[code]=dict(states[code],source_key=key,status=collection_status(saved),reason='saved explicit source fields; see source authority and coverage',
-                facilities=len(saved['facilities']),verified_facilities=len({e['facility_id'] for e in eligible(saved)}))
+                facilities=len(saved['facilities']),verified_facilities=len({e['facility_id'] for e in eligible(saved)}),
+                remaining_scope=saved['collection'].get('remaining_scope',[]))
         except Exception as exc:
             states[code]=dict(states[code],source_key=key,status='failed_using_previous' if path.exists() else 'failed',reason=public_failure(exc))
             try:
