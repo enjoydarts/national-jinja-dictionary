@@ -1593,8 +1593,28 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://niigata-jinjacho.jp/",
       "collection": {
-        "checked_at": "2026-11-09T07:03:51.751588+00:00",
-        "facilities_collected": 50,
+        "canonical_data": {
+          "entries": 4619,
+          "entry_status_counts": {
+            "pending": 48,
+            "verified": 4571
+          },
+          "facilities": 4619,
+          "facility_status_counts": {
+            "verified": 4619
+          },
+          "path": "data/sources/niigata.json",
+          "verified_entries": 4571,
+          "verified_facilities": 4571
+        },
+        "checked_at": "2026-11-09T07:29:48.546680+00:00",
+        "facilities_collected": 4619,
+        "failed_pages": [],
+        "fields_observed": {
+          "address": 4619,
+          "name": 4619,
+          "reading_raw": 4619
+        },
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-09T06:42:17.921001+00:00",
@@ -1627,16 +1647,58 @@
             "url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15101&keyword=&page=5&num=10"
           }
         ],
+        "inspection_evidence_reference": "data/sources/niigata.json#collection.pages",
         "listing_authority_status": "agency_site",
-        "pages_fetched": 6,
+        "native_totals": {
+          "15101": 81,
+          "15102": 31,
+          "15103": 54,
+          "15104": 70,
+          "15105": 74,
+          "15106": 88,
+          "15107": 72,
+          "15108": 158,
+          "15202": 523,
+          "15204": 166,
+          "15205": 205,
+          "15206": 206,
+          "15208": 88,
+          "15209": 44,
+          "15210": 248,
+          "15211": 62,
+          "15212": 200,
+          "15213": 107,
+          "15216": 152,
+          "15217": 88,
+          "15218": 106,
+          "15222": 652,
+          "15223": 166,
+          "15224": 242,
+          "15225": 135,
+          "15226": 167,
+          "15227": 93,
+          "15307": 25,
+          "15342": 20,
+          "15361": 18,
+          "15385": 88,
+          "15405": 49,
+          "15461": 6,
+          "15482": 69,
+          "15504": 20,
+          "15581": 46,
+          "15586": 0
+        },
+        "pages_fetched": 479,
         "previous_blocked_route": {
           "reason": "robots.txt returned HTML rather than a usable policy; njd.http.Client refused access. No robots bypass performed.",
           "status": "blocked"
         },
-        "reason": "公式HTML検索の実37地域リンクを確認し、北区15101の1〜5ページ・50施設を試作取得。全文読み50登録を原文から確認。代表6件を独立照合。",
-        "remaining_scope": "北区表示81件中の残り31件と、他36地域が未取得。地域IDやページIDは施設IDへ流用しない。",
-        "source_rows_observed": 50,
-        "status": "partial"
+        "reason": "公式37地域の実リンクと次ページリンクを全巡回。479ページ、4619観測行・4619施設、地域別表示総数合計4619と一致。4571登録の全文読み確認、48登録保留。",
+        "remaining_scope": "公開検索の巡回は完了。読み48登録の確認・補完と再配布条件は未解決。県内全神社の網羅とは区別。",
+        "source_rows_observed": 4619,
+        "status": "collected",
+        "traversal_complete": true,
+        "unvisited_urls": []
       },
       "conditions": {
         "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
@@ -3190,8 +3252,28 @@
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://www.hyogo-jinjacho.com/",
       "collection": {
-        "checked_at": null,
-        "facilities_collected": 0,
+        "canonical_data": {
+          "entries": 13,
+          "entry_status_counts": {
+            "pending": 1,
+            "verified": 12
+          },
+          "facilities": 13,
+          "facility_status_counts": {
+            "pending": 1,
+            "verified": 12
+          },
+          "path": "data/sources/hyogo.json",
+          "verified_entries": 12,
+          "verified_facilities": 12
+        },
+        "checked_at": "2026-11-09T07:28:42.253425+00:00",
+        "facilities_collected": 13,
+        "fields_observed": {
+          "address": 13,
+          "name": 13,
+          "reading_raw": 13
+        },
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-08T14:25:02.986700+00:00",
@@ -3202,17 +3284,86 @@
             "fetched_at": "2026-11-08T14:25:05.078616+00:00",
             "sha256": "a47d389a22bfca024cbb244758ffb42f78b0557ee8af5d8634fa98ef3fd596f2",
             "url": "https://www.hyogo-jinjacho.com/search.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:27:52.605983+00:00",
+            "sha256": "1a04dc4914ef66d9e0d228e053d65df231802dba84888cdbe69dc1a9ee651763",
+            "url": "https://www.hyogo-jinjacho.com/data/6301146.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:19.473193+00:00",
+            "sha256": "234b39acd0885e542a5880b7e88732eda960879b3ac9b2d987fa3eb50356dcb3",
+            "url": "https://www.hyogo-jinjacho.com/data/6316187.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:21.546214+00:00",
+            "sha256": "c67f02f1d5f203f6f62519d125703a9d6c8bf159deb65ff901f66936c215468d",
+            "url": "https://www.hyogo-jinjacho.com/data/6304010.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:23.619249+00:00",
+            "sha256": "f7291a033d14a0341c495fb96e94c2d61faf3b380811f8e480059c705cf383a9",
+            "url": "https://www.hyogo-jinjacho.com/data/6316194.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:25.686560+00:00",
+            "sha256": "1578134a8ec37ded8f807b053dd92751bf8f3272c119d7bbd8c5478d606ed6a6",
+            "url": "https://www.hyogo-jinjacho.com/data/6316183.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:27.756564+00:00",
+            "sha256": "b96216bc8c7cdf043376696cc400b32a6c6838617420cb8fc4619e67f2ec1b7d",
+            "url": "https://www.hyogo-jinjacho.com/data/6316151.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:29.834585+00:00",
+            "sha256": "04a2faf786af3fd90a0ca52ebd1c392cfec7fe8c6d72256c8b50687b22c3ac89",
+            "url": "https://www.hyogo-jinjacho.com/data/6316188.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:31.904893+00:00",
+            "sha256": "2071eceae1329db03a6750070e94ba94262cab1600125d79c9fbcf3647fca727",
+            "url": "https://www.hyogo-jinjacho.com/data/6316192.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:33.976527+00:00",
+            "sha256": "f3f0cccb1d2ad276740ce16ec144bad3522910b7f456310e2f90986173c39e65",
+            "url": "https://www.hyogo-jinjacho.com/data/6316190.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:36.044686+00:00",
+            "sha256": "e1e3c1e1848a2cd5bff37b261de4605a4dea674a046ab2f584083e1cdd450024",
+            "url": "https://www.hyogo-jinjacho.com/data/6316189.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:38.110598+00:00",
+            "sha256": "79f582a803594f23ad76e980d73393c1d4a47b3e08b4c1d2420037f85923497c",
+            "url": "https://www.hyogo-jinjacho.com/data/6316179.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:40.185644+00:00",
+            "sha256": "2affd38fc30e6e6726aeab9319fc5fdc018e308bd471046ab38da6495d585656",
+            "url": "https://www.hyogo-jinjacho.com/data/6316184.html"
+          },
+          {
+            "fetched_at": "2026-11-09T07:28:42.253425+00:00",
+            "sha256": "a9f3843081d53db4337885a313af1cf1858c4aed5000f1f0b0a6c9bb158e56b5",
+            "url": "https://www.hyogo-jinjacho.com/data/6301041.html"
           }
         ],
         "listing_authority_status": "agency_site",
-        "pages_fetched": 0,
-        "reason": "公式に記事・写真の無断転載禁止。公式検索JSの地図範囲XMLと施設HTMLの構造は確認したが、条件未解決のため施設一括収集しない。",
-        "remaining_scope": "上記理由の解決後、公式掲載範囲の収集を再開。公式入口の実閲覧数はinspection JSONを別参照。",
-        "source_rows_observed": 0,
-        "status": "blocked"
+        "pages_fetched": 13,
+        "reason": "13件の公式個別掲載ページを実閲覧。地図の全件一覧取得は未実施。記事・写真禁止と事実項目を区別し、名称・カナ・所在地のみ保存。",
+        "remaining_scope": [
+          "official map search inventory remains unenumerated",
+          "one listed-name/reading correspondence requires review",
+          "redistribution permission unconfirmed"
+        ],
+        "source_rows_observed": 13,
+        "status": "partial"
       },
       "conditions": {
-        "data_use_conditions": "記事・写真の無断転載を禁止。辞書利用の範囲は要確認。",
+        "data_use_conditions": "フッターに「記事・写真の無断転載を禁じます」。記事本文・写真は収録しない。名称・全文カナ・所在地等の事実項目のみ記録。事実項目の取得を明示的に禁じる文言は確認できていないが、再配布許諾は未確認。",
         "redistribution_permission": "unconfirmed",
         "robots_initial_inspection": {
           "checked_at": "2026-11-08T13:14:34.655099+00:00",
