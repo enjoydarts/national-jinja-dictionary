@@ -60,7 +60,12 @@ def category_links(page):
     """Accept only links in generated category regions, never navigation links."""
     if not (_title(page.url) or '').startswith('Category:'):raise ValueError('not a Japanese Wikipedia category')
     root=Document(page.text).root;regions={n.attrs.get('id'):n for n in root.all() if n.attrs.get('id') in ('mw-pages','mw-subcategories')}
-    if not regions:raise ValueError('generated category regions absent')
+    if not regions:
+        empty=[n for n in root.all('div') if n.has_class('mw-category-generated')
+            and n.text().strip()=='現在このカテゴリには、ページまたはメディアがありません。'
+            and not list(n.all('a'))]
+        if len(empty)==1:return dict(categories=[],articles=[])
+        raise ValueError('generated category regions absent')
     categories=set();articles=set()
     for region,node in regions.items():
         for a in node.all('a'):

@@ -29,6 +29,11 @@ class FixtureClient:
         return page(url,self.pages[url])
 
 class WikipediaTests(unittest.TestCase):
+    def test_explicit_generated_empty_category_is_a_complete_empty_inventory(self):
+        html = '<div class="mw-category-generated"><p><em>現在このカテゴリには、ページまたはメディアがありません。</em></p></div><nav><a href="/wiki/別の神社">別の神社</a></nav>'
+        self.assertEqual(w.category_links(page(ROOT, html)), {'categories': [], 'articles': []})
+        with self.assertRaises(ValueError):
+            w.category_links(page(ROOT, '<p>現在このカテゴリには、ページまたはメディアがありません。</p>'))
     def test_full_rendered_article_preserves_reading_address_and_revision(self):
         ref=w.article_reference(page(ARTICLE,article()),'宇受賀命神社')
         self.assertEqual(ref['reading_raw'],'うづかみことじんじゃ')
