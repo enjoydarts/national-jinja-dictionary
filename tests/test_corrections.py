@@ -97,3 +97,9 @@ class CorrectionTest(unittest.TestCase):
         self.assertEqual(len(eligible(apply_corrections(d,c))),1)
         ref['address_raw']='架空市乙町８８番地の２';ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
         self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_locality_prefix_does_not_establish_different_place_name(self):
+        d=build([row(address='架空町福岡',reading_raw='不明')]);c=correction(d,{'reading':'かくうじんじゃ'})
+        ref=c['entries'][d['entries'][0]['id']]['references'][0]
+        ref['address_raw']='架空町福岡原123';ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
+        self.assertEqual(eligible(apply_corrections(d,c)),[])

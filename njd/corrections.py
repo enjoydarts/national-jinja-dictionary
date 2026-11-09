@@ -40,7 +40,8 @@ def _reference_matches(ref,facility,entry,changes):
         expected=address(raw)
         if not expected or not actual:continue
         if actual==expected:return True
-        if not re.search(r'\d',expected) and actual.startswith(expected):return True
+        suffix=actual[len(expected):] if actual.startswith(expected) else ''
+        if not re.search(r'\d',expected) and suffix and suffix[0].isdigit():return True
     return False
 
 
