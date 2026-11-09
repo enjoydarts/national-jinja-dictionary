@@ -4736,38 +4736,60 @@
       "candidate_url": "https://fukuoka-jinjacho.or.jp/",
       "collection": {
         "canonical_data": {
-          "entries": 3,
+          "entries": 280,
           "entry_status_counts": {
-            "pending": 3
+            "pending": 280
           },
-          "facilities": 3,
+          "facilities": 280,
           "facility_status_counts": {
-            "verified": 3
+            "verified": 280
           },
           "path": "data/sources/fukuoka.json",
           "verified_entries": 0,
-          "verified_facilities": 3
+          "verified_facilities": 280
         },
-        "checked_at": "2026-11-09T08:05:43.664924+00:00",
-        "facilities_collected": 3,
+        "checked_at": "2026-11-09T08:24:38.140513+00:00",
+        "facilities_collected": 280,
         "fields_observed": {
-          "address": 3,
-          "name": 3,
+          "address": 280,
+          "facility_official_url": 72,
+          "name": 280,
           "reading_raw": 0
         },
         "inspection_evidence": [],
         "inspection_evidence_reference": "data/sources/fukuoka.json#collection.pages",
         "listing_authority_status": "agency_site",
-        "pages_fetched": 7,
-        "reason": "公式福岡地域一覧の3施設を個別保存し、リンクされた公式ページを実閲覧。香椎宮は公式HTML図説明、筥崎宮・太宰府天満宮は同一名/所在地のWikipediaで全文読みを補完。地域全体の収集ではない。",
-        "remaining_scope": [
-          "other facilities in four regional lists not collected",
-          "full readings require bound source supplementation",
-          "data redistribution permission unconfirmed"
+        "pages_fetched": 4,
+        "reading_supplement_scope": "公式HTML・国税庁登録フリガナ・Wikipediaの実資料を名称/所在地で照合し77施設に全文読み。重複資料は同じ施設へ束縛し、現人神社の相違は神社自身の明示全文で解決。",
+        "reason": "公開4地域一覧の280掲載枠を全件確認。名称・所在地・リンクを保存、一覧読みは未掲載。組織包括約3300社とは別範囲。全文読み補完は別層。",
+        "regional_counts": [
+          {
+            "label": "福岡エリア",
+            "rows": 68,
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          },
+          {
+            "label": "北九州エリア",
+            "rows": 75,
+            "url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/"
+          },
+          {
+            "label": "筑豊エリア",
+            "rows": 53,
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikuho/"
+          },
+          {
+            "label": "筑後エリア",
+            "rows": 84,
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          }
         ],
-        "source_rows_observed": 3,
-        "status": "partial",
-        "supplemental_reading_facilities": 3
+        "remaining_scope": [],
+        "remaining_unverified_reading_facilities": 203,
+        "source_rows_observed": 280,
+        "status": "collected",
+        "supplemental_reading_facilities": 77,
+        "traversal_complete": true
       },
       "conditions": {
         "data_use_conditions": "神社庁フッターの無断転載禁止を記録。名称・所在地・実リンクの事実項目を少数個別確認し、記事・写真は正本に含めない。事実項目利用の適用範囲と再配布許諾は未確認。",
@@ -4789,7 +4811,10 @@
         "published_fields": "一覧に神社名・所在地・一部電話。読み欄は確認できず。施設公式URLは要確認。"
       },
       "listing_urls": [
-        "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+        "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
+        "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
+        "https://fukuoka-jinjacho.or.jp/area/chikuho/",
+        "https://fukuoka-jinjacho.or.jp/area/chikugo/"
       ],
       "official_url": "https://fukuoka-jinjacho.or.jp/",
       "official_verification": {
