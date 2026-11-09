@@ -4,6 +4,7 @@ Only explicit same-row readings are accepted. Missing readings remain empty.
 Raw HTML and working datasets belong in a private cache, never this package.
 """
 from html.parser import HTMLParser
+import json
 import re
 from urllib.parse import urljoin, urlsplit
 
@@ -165,8 +166,6 @@ def parse_ishikawa(html):
                 evidence=clean(ruby.text())+' / [鎮座地] '+addresses[0]))
         return records
     title=[n for n in root.find('h1') if n.find('ruby')]
-    # Fixtures may use a div title; production pages use h1.title.
-    if not title:title=[n for n in root.find('div') if n.attrs.get('class')=='jinja_title']
     if len(title)!=1:return []
     ruby=title[0].find('ruby')[0]; rt=ruby.find('rt')
     name=''.join(n if isinstance(n,str) else n.text() for n in ruby.children if not isinstance(n,Node) or n.tag not in ('rt','rp'))
@@ -298,3 +297,95 @@ def _collector(key):
     return lambda client,limit=None:collect_source(key,client,limit)
 
 REGISTRY={k:dict(code=v[0],prefecture=v[1],agency=v[2],collect=_collector(k)) for k,v in CONFIG.items()}
+
+
+AICHI_API='https://aichi-jinjacho.or.jp/index.php/search/shrine'
+
+
+def aichi_unrenderable_names(data):
+    excluded=[]
+    for item in data.get('list',[]):
+        if not isinstance(item,dict) or not isinstance(item.get('name'),str):continue
+        dom=Document(item['name']).root
+        if dom.find('svg') or dom.find('img'):
+            excluded.append(dict(source_id=str(item.get('id')),name_html_raw=item['name'],
+                reading_raw=item.get('kana'),address_fields={k:item.get(k) for k in ('pref','city','addr','house_num')},
+                reason='source name contains image/SVG gaiji; no Unicode character inferred and no truncated name accepted'))
+    return excluded
+
+
+def parse_aichi(data):
+    """Fields rendered by the official search_result.html article template."""
+    if not isinstance(data,dict) or not isinstance(data.get('list'),list):
+        raise ValueError('Aichi JSON list structure not recognized')
+    total=data.get('total_rows')
+    if isinstance(total,str) and total.isdigit():total=int(total)
+    if not isinstance(total,int) or isinstance(total,bool) or total!=len(data['list']):
+        raise ValueError('Aichi complete-result count mismatch')
+    records=[]
+    for i,item in enumerate(data['list']):
+        if not isinstance(item,dict):raise ValueError('Aichi article is not an object')
+        if not isinstance(item.get('name'),str) or item.get('id') is None:
+            raise ValueError('Aichi article missing explicit name or native ID')
+        if item.get('pref')!='愛知県':raise ValueError('Aichi article prefecture is not explicitly 愛知県')
+        dom=Document(item['name']).root
+        external_glyph=bool(dom.find('svg') or dom.find('img'))
+        reading=item.get('kana') or ''
+        if not isinstance(reading,str):raise ValueError('Aichi reading is not source text')
+        for key in ('pref','city','addr','house_num'):
+            if item.get(key) is not None and not isinstance(item[key],(str,int)):
+                raise ValueError('Aichi address field has unexpected type')
+        name=item['name'] if external_glyph else clean(dom.text())
+        address=''.join('' if item.get(k) is None else str(item[k]) for k in ('pref','city','addr','house_num'))
+        if not name:raise ValueError('Aichi article lacks explicit facility name')
+        evidence={k:item.get(k) for k in ('id','name','kana','pref','city','addr','house_num')}
+        record=dict(name=name,reading_raw=reading,address=address,
+            municipality=str(item.get('city') or ''),source_id=str(item['id']),
+            locator=f'POST JSON {{"limit":-1}} $.list[{i}] id={item["id"]}',
+            evidence=json.dumps(evidence,ensure_ascii=False,sort_keys=True))
+        if external_glyph:
+            record.update(name_rendering_status='external_glyph',name_html_raw=item['name'])
+        if not item.get('city') or not item.get('addr'):
+            record.update(address='',address_raw=address,
+                address_context='source city or street field missing; partial source address retained without inference')
+        hp=item.get('hp_addr')
+        if isinstance(hp,str) and hp==hp.strip() and not re.search(r'\s',hp) and urlsplit(hp).scheme in ('http','https') and urlsplit(hp).netloc:
+            record['official_url']=hp
+        records.append(record)
+    return records
+
+
+def collect_aichi(client,limit=None):
+    from njd.records import build_dataset
+    catalog=client.fetch('https://aichi-jinjacho.or.jp/search_list.html')
+    inputs=Document(decode_html(catalog)).root.find('input')
+    areas=[n.attrs['value'] for n in inputs if n.attrs.get('name')=='area[]' and n.attrs.get('value')]
+    if not areas or len(set(areas))!=len(areas):raise ValueError('Aichi official area choices not recognized')
+    payload={'limit':-1,'area':areas}
+    orders=[n.attrs.get('value') for n in inputs if n.attrs.get('name')=='orders']
+    if len(orders)==1 and orders[0]:payload['orders']=orders[0]
+    script=client.fetch('https://aichi-jinjacho.or.jp/assets/js/search.js?mode=query')
+    template=client.fetch('https://aichi-jinjacho.or.jp/search_result.html')
+    page=client.post_json(AICHI_API,payload)
+    data=json.loads(page.text);records=parse_aichi(data);observed=len(data['list'])
+    if limit is not None:records=records[:limit]
+    for r in records:
+        r.update(url=page.url,fetched_at=page.fetched_at,page_hash=page.sha256)
+        r['locator']=r['locator'].replace('POST JSON {"limit":-1}',f'POST JSON all {len(areas)} official area choices, limit=-1')
+    pages=[dict(url=p.url,sha256=p.sha256,fetched_at=p.fetched_at) for p in (catalog,script,template)]
+    pages.append(dict(url=page.url,sha256=page.sha256,fetched_at=page.fetched_at,
+        request_method='POST',request_body=payload))
+    return build_dataset('aichi','23','愛知県','愛知県神社庁',records,
+        pages=pages,
+        metadata=dict(source_rows_observed=observed,pages_fetched=len(pages),limit=limit,
+            api_total_rows=data['total_rows'],request_method='POST',request_body=payload,
+            official_area_choices_observed=len(areas),
+            unrenderable_name_records=aichi_unrenderable_names(data),
+            unrenderable_name_handling='retained as pending external_glyph records; use separately reviewed corrections for Unicode output',
+            official_script_url='https://aichi-jinjacho.or.jp/assets/js/search.js?mode=query',
+            official_template_url='https://aichi-jinjacho.or.jp/search_result.html',
+            coverage='all area choices shown by official public search UI; complete API response, not all prefectural shrines',
+            errors=[],remaining_scope=[],redistribution_status='unconfirmed'))
+
+
+REGISTRY['aichi']=dict(code='23',prefecture='愛知県',agency='愛知県神社庁',collect=collect_aichi)

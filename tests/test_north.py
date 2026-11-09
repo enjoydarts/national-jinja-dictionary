@@ -163,12 +163,131 @@ class StableChibaTests(unittest.TestCase):
             return 200,{'content-type':'text/html; charset=utf-8'},html.encode()
         with TemporaryDirectory() as cache:data=north.collect_chiba(Client(cache,interval=0,transport=transport))
         self.assertEqual([f['native_source_id'] for f in data['facilities']],['1','2'])
+        self.assertEqual(data['collection']['authority_status'],'pending')
+        self.assertEqual([e['status'] for e in data['entries']],['pending','pending'])
 
 class ToyamaIdentityTests(unittest.TestCase):
     def test_missing_locations_do_not_merge_same_named_parish_records(self):
         from njd.records import build_dataset
         html='<table><tr><th>神社名</th><td>架空神社</td></tr><tr><th>社名カナ</th><td>カクウジンジャ</td></tr><tr><th>鎮座地</th><td></td></tr></table>'
         one=page(html);two=Page('https://example.org/other/',one.status,one.headers,one.body,one.fetched_at)
-        data=build_dataset('toyama','16','富山県','架空神社庁',north.parse_toyama(one)+north.parse_toyama(two))
-        self.assertEqual(len(data['facilities']),2)
-        self.assertEqual([f['status'] for f in data['facilities']],['pending','pending'])
+        data=north.toyama_dataset(north.parse_toyama(one)+north.parse_toyama(two),[one,two])
+        self.assertEqual(data['facilities'],[])
+        self.assertEqual(len(data['collection']['unresolved_parish_records']),2)
+        self.assertEqual([r['source_record_id'] for r in data['collection']['unresolved_parish_records']],['https://example.org/list/','https://example.org/other/'])
+
+class WebShiftJISTests(unittest.TestCase):
+    def test_html_shift_jis_accepts_web_windows31j_extension_without_replacement(self):
+        p=Page('https://example.org/',200,{'content-type':'text/html'},b'<meta charset="Shift_JIS">'+b'\x87\x71','2026-11-08T00:00:00+00:00')
+        self.assertEqual(north.decode(p),'<meta charset="Shift_JIS">㎞')
+
+class IbarakiAddressTests(unittest.TestCase):
+    def test_exact_linked_name_adds_address_without_changing_reading_source(self):
+        index=page('<table><tr><td></td><td><a href="jinja/123.html">架空神社</a></td><td>かくうじんじゃ</td><td>仮市</td></tr></table>')
+        row=north.parse_ibaraki(index)[0]
+        detail=Page(row['source_id'],200,index.headers,'<table><tr><td>神社名</td><td>：架空神社</td></tr><tr><td>鎮座地</td><td>：〒000-0000 仮市一番</td></tr></table>'.encode(),index.fetched_at)
+        out=north.enrich_ibaraki(row,detail)
+        self.assertEqual(out['address'],'仮市一番')
+        self.assertEqual(out['url'],'https://example.org/list/')
+        self.assertEqual(out['page_hash'],index.sha256)
+        self.assertEqual(out['reading_raw'],'かくうじんじゃ')
+        self.assertEqual(out['address_source']['page_hash'],detail.sha256)
+        self.assertEqual(out['address_source']['link_url'],row['source_id'])
+
+    def test_different_detail_name_keeps_region_name_and_requires_review(self):
+        index=page('<table><tr><td></td><td><a href="jinja/123.html">架空神社</a></td><td>かくうじんじゃ</td><td>仮市</td></tr></table>')
+        row=north.parse_ibaraki(index)[0]
+        detail=Page(row['source_id'],200,index.headers,'<table><tr><td>神社名</td><td>：別表記神社</td></tr><tr><td>鎮座地</td><td>：仮市一番</td></tr></table>'.encode(),index.fetched_at)
+        out=north.enrich_ibaraki(row,detail)
+        self.assertEqual((out['name'],out['address']),('架空神社','仮市'))
+        self.assertTrue(out['review_reason'])
+        self.assertEqual(out['address_source']['name_raw'],'別表記神社')
+
+
+class IbarakiPostalLayoutTests(unittest.TestCase):
+    def test_postal_code_line_is_separated_and_original_layout_is_retained(self):
+        index=page('<table><tr><td></td><td><a href="jinja/123.html">架空神社</a></td><td>かくうじんじゃ</td><td>仮市</td></tr></table>')
+        row=north.parse_ibaraki(index)[0]
+        detail=Page(row['source_id'],200,index.headers,'<table><tr><td>神社名</td><td>：架空神社</td></tr><tr><td>鎮座地</td><td>：〒000-0000<br>仮市一番</td></tr></table>'.encode(),index.fetched_at)
+        out=north.enrich_ibaraki(row,detail)
+        self.assertEqual(out['address'],'仮市一番')
+        self.assertEqual(out['address_raw'],'〒000-0000\n仮市一番')
+        self.assertEqual(out['address_source']['postal_code_raw'],'〒000-0000')
+        self.assertEqual(out['address_source']['published_value_raw'],'〒000-0000\n仮市一番')
+        self.assertEqual(out['address_source']['address_raw'],'仮市一番')
+
+class IbarakiWidePostalTests(unittest.TestCase):
+    def test_explicit_full_width_postal_hyphen_is_preserved_separately(self):
+        index=page('<table><tr><td></td><td><a href="jinja/123.html">架空神社</a></td><td>かくうじんじゃ</td><td>仮市</td></tr></table>')
+        row=north.parse_ibaraki(index)[0]
+        detail=Page(row['source_id'],200,index.headers,'<table><tr><td>神社名</td><td>：架空神社</td></tr><tr><td>鎮座地</td><td>：〒000－0000<br>仮市一番</td></tr></table>'.encode(),index.fetched_at)
+        out=north.enrich_ibaraki(row,detail)
+        self.assertEqual(out['address'],'仮市一番')
+        self.assertEqual(out['address_source']['postal_code_raw'],'〒000－0000')
+
+
+class ToyamaResolvedIdentityTests(unittest.TestCase):
+    def test_only_exact_nonempty_name_and_shrine_location_merge_parish_pages(self):
+        html='<table><tr><th>神社名</th><td>架空神社</td></tr><tr><th>社名カナ</th><td>カクウジンジャ</td></tr><tr><th>住所</th><td>富山市別の氏子区域</td></tr><tr><th>鎮座地</th><td>富山市一番</td></tr></table>'
+        one=page(html);two=Page('https://example.org/other/',one.status,one.headers,one.body,one.fetched_at)
+        records=north.parse_toyama(one)+north.parse_toyama(two)
+        self.assertNotIn('source_id',records[0])
+        data=north.toyama_dataset(records,[one,two])
+        self.assertEqual(len(data['facilities']),1)
+        self.assertEqual(data['facilities'][0]['address'],'富山市一番')
+        self.assertEqual(len(data['facilities'][0]['listing_occurrences']),2)
+        self.assertEqual(data['collection']['named_parish_source_records'],2)
+        self.assertEqual(data['collection']['unresolved_parish_records'],[])
+
+class IbarakiLabelLayoutTests(unittest.TestCase):
+    def test_label_layout_whitespace_does_not_hide_published_name_and_location(self):
+        index=page('<table><tr><td></td><td><a href="jinja/123.html">架空神社</a></td><td>かくうじんじゃ</td><td>仮市</td></tr></table>')
+        row=north.parse_ibaraki(index)[0]
+        detail=Page(row['source_id'],200,index.headers,'<table><tr><td>神\n社名</td><td>：架空神社</td></tr><tr><td>鎮\n 座地</td><td>：〒000-0000 仮市一番</td></tr></table>'.encode(),index.fetched_at)
+        out=north.enrich_ibaraki(row,detail)
+        self.assertEqual(out['address'],'仮市一番')
+        self.assertNotIn('review_reason',out)
+
+class ToyamaSpecificLocationTests(unittest.TestCase):
+    def test_advisory_and_ambiguous_locations_remain_source_records(self):
+        p=page('')
+        rows=[north.record(p,'架空神社','カクウジンジャ',address,'test') for address in ('宮司所在地は架空神社','同上','上善名、下善名','富山市上善名・下善名')]
+        data=north.toyama_dataset(rows,[p])
+        self.assertEqual(data['facilities'],[])
+        self.assertEqual(data['collection']['unresolved_parish_record_count'],4)
+
+    def test_public_index_rejects_outside_service_links(self):
+        with self.assertRaises(ValueError):
+            north.toyama_index_links([{'id':1,'link':'https://other.example/0001/'}], 'https://example.org/ujigami/')
+
+class ToyamaPublicIndexTraversalTests(unittest.TestCase):
+    def test_public_collection_pagination_keeps_parish_ids_out_of_facility_identity(self):
+        import json
+        from tempfile import TemporaryDirectory
+        from urllib.parse import urlsplit,parse_qs
+        from njd.http import Client
+        origin='https://toyama-jinjacho.sakura.ne.jp'
+        base=origin+'/ujigami/'
+        def transport(url,timeout,user_agent):
+            headers={'content-type':'text/html; charset=utf-8'}
+            if url.endswith('/robots.txt'):return 200,{'content-type':'text/plain'},b'User-agent: *\nAllow: /'
+            if '/wp-json/' in url:
+                headers={'content-type':'application/json','x-wp-total':'2','x-wp-totalpages':'2'}
+                if url.endswith('/4329'):body={'_links':{'collection':[{'href':base+'wp-json/wp/v2/pages'}]}}
+                else:
+                    number=int(parse_qs(urlsplit(url).query).get('page',['1'])[0]);body=[{'id':number,'link':base+str(number)+'/'}]
+                return 200,headers,json.dumps(body).encode()
+            if url==base:html='<link rel="alternate" type="application/json" href="'+base+'wp-json/wp/v2/pages/4329">'
+            elif url in (base+'1/',base+'2/'):html='<table><tr><th>神社名</th><td>架空神社</td></tr><tr><th>社名カナ</th><td>カクウジンジャ</td></tr><tr><th>鎮座地</th><td>富山市架空一番</td></tr></table>'
+            else:html='<iframe src="'+base+'"></iframe>'
+            return 200,headers,html.encode()
+        with TemporaryDirectory() as cache:data=north.collect_toyama(Client(cache,interval=0,transport=transport))
+        self.assertEqual(len(data['facilities']),1)
+        self.assertIsNone(data['facilities'][0]['native_source_id'])
+        self.assertEqual(data['collection']['published_pages_observed'],2)
+        self.assertEqual(len(data['facilities'][0]['listing_occurrences']),2)
+
+class ToyamaMunicipalityLocationTests(unittest.TestCase):
+    def test_city_only_or_unknown_municipality_is_not_a_concrete_location(self):
+        for address in ('富山市内','富山市','架空市一番','鎮座地不明','富山市不明'):
+            with self.subTest(address=address):self.assertFalse(north.toyama_specific_location(address))

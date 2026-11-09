@@ -32,7 +32,7 @@ class MoreCentralTest(unittest.TestCase):
         self.assertEqual(parse_nagano(h)[0]['address'],'飯山市例町１')
     def test_ishikawa_primary_ruby(self):
         from njd.adapters.central import parse_ishikawa
-        h='<div class="jinja_title"><ruby>例神社<rp>（</rp><rt>れいじんじゃ</rt><rp>）</rp></ruby></div><dl><dt>鎮座地</dt><dd><p>金沢市例町１</p></dd></dl>'
+        h='<h1 class="title"><ruby>例神社<rp>（</rp><rt>れいじんじゃ</rt><rp>）</rp></ruby></h1><dl><dt>鎮座地</dt><dd><p>金沢市例町１</p></dd></dl>'
         self.assertEqual(parse_ishikawa(h)[0]['name'],'例神社')
     def test_tottori_labeled_details_only(self):
         from njd.adapters.central import parse_tottori
@@ -91,3 +91,38 @@ class IshikawaContactTest(unittest.TestCase):
         rows=parse_ishikawa(h)
         self.assertEqual(len(rows),1)
         self.assertEqual(rows[0]['source_id'],'https://example.test/shrine/j1/')
+
+class AichiTest(unittest.TestCase):
+    def test_explicit_api_fields_and_no_nickname_as_surface(self):
+        from njd.adapters.central import parse_aichi
+        data={'total_rows':2,'list':[{'id':7,'name':'例神社','kana':'レイジンジャ','nickname':'例の宮','pref':'愛知県','city':'名古屋市中区','addr':'例町','house_num':'１－２'}, {'id':8,'name':'同名神社','kana':None,'pref':'愛知県','city':'岡崎市','addr':'別町','house_num':None}]}
+        rows=parse_aichi(data)
+        self.assertEqual([(r['name'],r['reading_raw'],r['address']) for r in rows],[('例神社','レイジンジャ','愛知県名古屋市中区例町１－２'),('同名神社','','愛知県岡崎市別町')])
+        self.assertEqual(rows[0]['municipality'],'名古屋市中区')
+        self.assertEqual(rows[0]['source_id'],'7')
+    def test_all_results_count_mismatch_fails_closed(self):
+        from njd.adapters.central import parse_aichi
+        with self.assertRaises(ValueError):parse_aichi({'total_rows':3,'list':[]})
+
+class AichiIncompleteAddressTest(unittest.TestCase):
+    def test_missing_street_is_not_filled_from_postcode_or_parishioner_area(self):
+        from njd.adapters.central import parse_aichi
+        rows=parse_aichi({'total_rows':1,'list':[{'id':'x','name':'例神社','kana':'れいじんじゃ','pref':'愛知県','city':'丹羽郡大口町','addr':'','house_num':'2丁目305番地','parishioner_area_summary':'推測に使わない'}]})
+        self.assertEqual(rows[0]['address'],'')
+        self.assertEqual(rows[0]['address_raw'],'愛知県丹羽郡大口町2丁目305番地')
+
+class AichiGaijiTest(unittest.TestCase):
+    def test_svg_gaiji_name_is_not_truncated_to_a_verified_word(self):
+        from njd.adapters.central import parse_aichi,aichi_unrenderable_names
+        raw='鳴海<svg><use href="gaiji.svg#x"></use></svg>神社'
+        data={'total_rows':1,'list':[{'id':'svg','name':raw,'kana':'なるみじんじゃ','pref':'愛知県','city':'名古屋市','addr':'例町','house_num':'1'}]}
+        rows=parse_aichi(data)
+        self.assertEqual(rows[0]['name'],raw)
+        self.assertEqual(rows[0]['name_rendering_status'],'external_glyph')
+        self.assertEqual(aichi_unrenderable_names(data)[0]['name_html_raw'],raw)
+
+class AichiPrefectureTest(unittest.TestCase):
+    def test_explicit_other_prefecture_does_not_become_aichi(self):
+        from njd.adapters.central import parse_aichi
+        with self.assertRaises(ValueError):
+            parse_aichi({'total_rows':1,'list':[{'id':'x','name':'例神社','kana':'れいじんじゃ','pref':'岐阜県','city':'岐阜市','addr':'例町','house_num':'1'}]})

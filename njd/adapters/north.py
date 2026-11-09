@@ -44,6 +44,9 @@ def decode(page):
     if not match: match=re.search(rb'charset=["\']?([\w-]+)',page.body[:4096],re.I)
     charset=match.group(1) if match else 'utf-8'
     if isinstance(charset,bytes): charset=charset.decode('ascii')
+    # HTML Shift_JIS labels include Windows-31J extensions in the Web
+    # Encoding Standard: https://encoding.spec.whatwg.org/#names-and-labels
+    if charset.lower() in ('shift_jis','shift-jis','sjis','ms_kanji','csshiftjis','ms932','windows-31j','x-sjis'):charset='cp932'
     return page.body.decode(charset,errors='strict')
 
 
@@ -400,7 +403,7 @@ def parse_toyama(page):
     for tr in root.all('tr'):
         th=[n for n in tr.children if isinstance(n,Node) and n.tag=='th']
         td=[n for n in tr.children if isinstance(n,Node) and n.tag=='td']
-        if len(th)==1 and len(td)==1 and th[0].text() in ('神社名','社名カナ','鎮座地'):
+        if len(th)==1 and len(td)==1 and th[0].text() in ('神社名','社名カナ','鎮座地','住所'):
             label=th[0].text()
             if label in values:raise ValueError('Toyama repeated shrine field')
             values[label]=td[0].text()
@@ -409,9 +412,9 @@ def parse_toyama(page):
     if not values['神社名']:return []
     # The post title and the field 住所 describe a parish area. Neither is the
     # shrine location. The homepage is labelled 宮司所在神社, not this facility.
-    identity={} if values['鎮座地'] else dict(source_id=page.url)
     return [record(page,values['神社名'],values.get('社名カナ',''),values['鎮座地'],
-        'table 神社名 / 社名カナ / 鎮座地',address_context='氏神検索: parish post title and 住所 not used as shrine location',**identity)]
+        'table 神社名 / 社名カナ / 鎮座地',source_record_id=page.url,parish_address_raw=values.get('住所',''),
+        address_context='氏神検索: parish post title and 住所 not used as shrine location')]
 
 
 def parse_ibaraki(page):
@@ -435,38 +438,70 @@ def collect_ibaraki(client,limit=None):
     urls=list(dict.fromkeys(urljoin(start.url,a.attrs['href']) for a in root.all('area') if re.fullmatch(r'(?:kenhoku|kenou|kensei|rokko|kennan)/index\.html',a.attrs.get('href',''))))
     if len(urls)!=5:raise ValueError('Ibaraki five regional map links missing')
     for url in urls:
-        page=client.fetch(url);pages.append(page);records.extend(parse_ibaraki(page))
-        if limit is not None and len(records)>=limit:records=records[:limit];break
-    return _dataset('ibaraki',records,pages,limit,'all five regional introduction lists; municipality-only addresses retained verbatim')
+        page=client.fetch(url);pages.append(page)
+        for row in parse_ibaraki(page):
+            detail=client.fetch(row['source_id']);pages.append(detail);records.append(enrich_ibaraki(row,detail))
+            if limit is not None and len(records)>=limit:break
+        if limit is not None and len(records)>=limit:break
+    return _dataset('ibaraki',records,pages,limit,'all five regional introduction lists and linked agency details; detailed address used only when published names exactly match')
+
+
+def toyama_index_links(rows,base):
+    if not isinstance(rows,list):raise ValueError('Toyama public page index is not a list')
+    out=[];ids=set()
+    for row in rows:
+        url=row.get('link','');native=row.get('id')
+        if not isinstance(native,int) or native in ids or not url.startswith(base):raise ValueError('Toyama public page index identity changed')
+        ids.add(native);out.append(url)
+    return out
+
+
+def toyama_specific_location(address):
+    # Only an explicit municipality and a single location identify a shrine.
+    # Priest/contact advice and parish coverage descriptions are source facts,
+    # but cannot establish the shrine's physical identity.
+    match=re.match(r'^(?:富山県)?(富山市|高岡市|魚津市|氷見市|滑川市|黒部市|砺波市|小矢部市|南砺市|射水市|中新川郡(?:舟橋村|上市町|立山町)|下新川郡(?:入善町|朝日町))(.+)$',address)
+    return bool(match) and match.group(2) not in ('内','不明','未定','全域') and not any(t in address for t in ('宮司','所在地は','同上','以下','、','・','/','／','\n'))
 
 
 def collect_toyama(client,limit=None):
+    import json
     from urllib.parse import urlencode
+    base='https://toyama-jinjacho.sakura.ne.jp/ujigami/'
     start=client.fetch('https://toyama-jinjacho.sakura.ne.jp/%E5%AF%8C%E5%B1%B1%E7%9C%8C%E6%B0%8F%E7%A5%9E%E7%A5%9E%E7%A4%BE%E6%A4%9C%E7%B4%A2')
-    if 'https://toyama-jinjacho.sakura.ne.jp/ujigami/' not in decode(start):raise ValueError('Toyama official embedded search reference missing')
-    pages=[start];records=[];seen=set();visited=set();unusable=[]
-    # Search terms select explicit municipal-address titles, never infer names
-    # or readings. The resulting scope is stated rather than called complete.
-    for term in ('市','町','村'):
-        queue=['https://toyama-jinjacho.sakura.ne.jp/ujigami/?'+urlencode({'s':term})]
-        while queue:
-            url=queue.pop(0)
-            if url in visited:continue
-            visited.add(url);page=client.fetch(url);pages.append(page);root=Document(decode(page)).root
-            detail_urls=[]
-            for h in root.all(cls='entry-title'):detail_urls.extend(links(h,page.url,lambda a:True))
-            if not detail_urls:raise ValueError('Toyama municipal search results missing')
-            for url in detail_urls:
-                if url in seen:continue
-                seen.add(url);detail=client.fetch(url);pages.append(detail);parsed=parse_toyama(detail);records.extend(parsed)
-                if not parsed:unusable.append(dict(url=detail.url,reason='published shrine name is empty; parish address or kana alone cannot establish a named facility'))
-                if limit is not None and len(records)>=limit:break
-            if limit is not None and len(records)>=limit:break
-            queue.extend(toyama_next(root,page.url))
-        if limit is not None and len(records)>=limit:break
-    data=_dataset('toyama',records[:limit] if limit is not None else records,pages,limit,
-        'municipal-title search scopes 市 / 町 / 村, all linked pages; same name+shrine-location parish records reconciled by canonical builder; not a completeness claim')
-    data['collection']['unusable_parish_records']=unusable
+    if base not in decode(start):raise ValueError('Toyama official embedded search reference missing')
+    home=client.fetch(base);pages=[start,home]
+    alternatives=[n.attrs.get('href','') for n in Document(decode(home)).root.all('link') if n.attrs.get('type')=='application/json' and n.attrs.get('rel')=='alternate']
+    if len(alternatives)!=1 or not alternatives[0].startswith(base+'wp-json/'):raise ValueError('Toyama published JSON alternate missing')
+    alternate=client.fetch(alternatives[0]);pages.append(alternate)
+    collection=json.loads(alternate.text)['_links']['collection'][0]['href']
+    if collection!=base+'wp-json/wp/v2/pages':raise ValueError('Toyama public collection relation changed')
+    records=[];unusable=[];seen=set();known_identity=set();index_number=1;total_pages=None;total_records=None;observed=0
+    while total_pages is None or index_number<=total_pages:
+        params={'per_page':100,'orderby':'id','order':'asc','_fields':'id,link,title'}
+        if index_number>1:params['page']=index_number
+        index=client.fetch(collection+'?'+urlencode(params));pages.append(index)
+        current_total=int(index.headers['x-wp-total']);current_pages=int(index.headers['x-wp-totalpages'])
+        if total_records is not None and (current_total!=total_records or current_pages!=total_pages):raise ValueError('Toyama published collection changed during traversal')
+        total_records=current_total;total_pages=current_pages
+        for url in toyama_index_links(json.loads(index.text),base):
+            if url in seen:raise ValueError('Toyama duplicate public page index link')
+            seen.add(url);observed+=1
+            if url==base:
+                unusable.append(dict(url=url,reason='service landing page, not a parish record'));continue
+            detail=client.fetch(url);pages.append(detail)
+            root=Document(decode(detail)).root
+            if not any(n.text()=='神社名' for n in root.all('th')):
+                unusable.append(dict(url=url,reason='published page has no shrine field table'));continue
+            parsed=parse_toyama(detail);records.extend(parsed)
+            known_identity.update((r['name'],r['address']) for r in parsed if toyama_specific_location(r['address']))
+            if not parsed:unusable.append(dict(url=detail.url,reason='published shrine name is empty; parish address or kana alone cannot establish a named facility'))
+            if limit is not None and len(known_identity)>=limit:break
+        if limit is not None and len(known_identity)>=limit:break
+        index_number+=1
+    if limit is None and observed!=total_records:raise ValueError('Toyama published page coverage mismatch')
+    data=toyama_dataset(records,pages,limit)
+    data['collection'].update(unusable_parish_records=unusable,published_pages_observed=observed,published_pages_total=total_records,index_pages_total=total_pages,index_method='linked public WordPress pages collection, published view, ID ascending',collection_complete=limit is None)
     return data
 
 
@@ -544,7 +579,13 @@ def collect_chiba(client,limit=None):
         match=re.fullmatch(r'javascript:viewPage\(\s*(\d+)\s*\);',next_links[0].attrs.get('href',''))
         if match is None:raise ValueError('Chiba pagination link changed')
         number=int(match.group(1))
-    return _dataset('chiba',records,pages,limit,'all public Chiba prefecture search results, including honmu and kenmu; not shrine count of entire prefecture')
+    data=_dataset('chiba',records,pages,limit,'all public Chiba prefecture search results, including honmu and kenmu; not shrine count of entire prefecture')
+    data['collection']['authority_status']='pending'
+    data['collection']['authority_reason']='agency links legacy www.jinja.ne.jp; current hiroba service supervision is stated but the current official listing relationship remains unconfirmed'
+    for row in data['facilities']+data['entries']:
+        row['status']='pending'
+        row['reason']='current external listing authority requires review'
+    return data
 
 
 REGISTRY['chiba']=dict(code='12',prefecture='千葉県',agency='千葉県神社庁（神社のひろば監修）',collect=collect_chiba)
@@ -556,3 +597,48 @@ def toyama_next(root,base):
 
 def tokyo_subareas(root,base):
     return links(root,base,lambda a:bool(re.search(r'[市町村]$',a.text())) and urljoin(base,a.attrs['href']).startswith(base) and urljoin(base,a.attrs['href'])!=base)
+
+
+def enrich_ibaraki(row,detail):
+    fields={}
+    for tr in Document(decode(detail)).root.all('tr'):
+        cells=[n for n in tr.children if isinstance(n,Node) and n.tag=='td']
+        label=''.join(cells[0].text().split()) if len(cells)==2 else ''
+        if label in ('神社名','鎮座地'):
+            if label in fields:raise ValueError('Ibaraki detail identity label repeated')
+            fields[label]=cells[1].text().lstrip('：:').strip()
+    name=fields.get('神社名','');published=fields.get('鎮座地','')
+    postal=re.match(r'^(〒\d{3}[-－]\d{4})\s*',published)
+    address=published[postal.end():] if postal else published
+    out=dict(row)
+    out['address_source']=dict(url=detail.url,page_hash=detail.sha256,fetched_at=detail.fetched_at,
+        name_raw=name,address_raw=address,published_value_raw=published,link_url=row['source_id'],locator='table tr 神社名 / 鎮座地; address after explicit postal-code prefix')
+    if postal:out['address_source']['postal_code_raw']=postal.group(1)
+    reasons=[]
+    if not name:reasons.append('linked agency detail lacks a recognized shrine name')
+    elif name!=row['name']:reasons.append('regional agency name differs from linked detail name')
+    if not address:reasons.append('linked agency detail lacks a recognized shrine address')
+    if reasons:
+        out['review_reason']='; '.join(reasons)
+    else:
+        out['address']=address;out['address_raw']=published
+        out['address_context']='address from linked agency detail after explicit postal-code prefix; original postal code and layout retained; regional reading and listing source remain primary'
+    out['evidence']+=f'; linked detail {detail.url}: name={name}; address={address}; sha256={detail.sha256}'
+    return out
+
+
+def toyama_dataset(records,pages,limit=None):
+    # A parish post ID identifies the source document, not a shrine. Records
+    # without an explicit shrine location cannot be counted as distinct shrines.
+    known=[];unresolved=[]
+    for row in records:
+        row=dict(row);row.pop('source_id',None)
+        if toyama_specific_location(row['address']):known.append(row)
+        else:unresolved.append(row)
+    data=_dataset('toyama',known,pages,limit,
+        'published parish pages; only exact published name + a concrete single municipality-specific shrine location identify a facility; parish area and priest-location advice are never substituted')
+    data['collection'].update(source_rows_observed=len(records),entity_model='explicit_shrine_name_and_chinza_v1',source_unit='named parish-area reference page',
+        named_parish_source_records=len(records),resolved_facility_source_rows=len(known),
+        unresolved_parish_record_count=len(unresolved),unresolved_parish_records=unresolved,
+        identity_policy='source_record_id identifies a parish document only; facility identity uses exact published name plus concrete single municipality-specific shrine location')
+    return data
