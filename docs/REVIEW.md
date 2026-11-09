@@ -230,3 +230,7 @@ python3 -m njd build --formats mozc,macos,json,csv
 | [6328113](https://www.hyogo-jinjacho.com/data/6328113.html) | 貴船神社 | 詳細・XMLに所在地がない |
 | [6328128](https://www.hyogo-jinjacho.com/data/6328128.html) | 西濱神社 | XML名「住吉神社」と詳細名が相違 |
 | [6328164](https://www.hyogo-jinjacho.com/data/6328164.html) | 鳥飼八幡宮 | 詳細・XMLに所在地がない |
+
+## 滋賀の全文読み補完
+
+地主神社（神社庁掲載所在地：大津市葛川坊村町）は、[大津の観光協会ページ](https://otsu.or.jp/thingstodo/spot199/)の見出し・専用ふりがな欄「じしゅじんじゃ」・住所欄「日本、〒520-0475 滋賀県大津市葛川坊村町116」を実HTMLで照合しました。[大津市歴史博物館](https://www.rekihaku.otsu.shiga.jp/db/jiten/data/006.html)の同名・同町の記事にも全文読みがあります。神社庁の原文は変更せず、読みを出典・ページhash付きの補正として保存しています。同名の他施設には適用していません。
