@@ -121,7 +121,7 @@ def _reference_problems(ref,code):
     from njd.normalize import normalize_reading
     try:
         reading=normalize_reading(raw)
-        for suffix,endings in [('神社',('じんじゃ','じんしゃ','しんじゃ','しんしゃ')),('神宮',('じんぐう',)),('大社',('たいしゃ','だいしゃ','おおやしろ')),('宮',('ぐう','みや','きゅう')),('社',('しゃ','やしろ','じんじゃ'))]:
+        for suffix,endings in [('神社',('じんじゃ','じんしゃ','しんじゃ','しんしゃ','しゃ','やしろ')),('神宮',('じんぐう','ぐう')),('大社',('たいしゃ','だいしゃ','おおやしろ')),('宮',('ぐう','みや','きゅう')),('社',('しゃ','やしろ','じんじゃ'))]:
             if name.endswith(suffix):
                 if not reading.endswith(endings):raise ValueError()
                 break

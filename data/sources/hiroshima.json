@@ -150,13 +150,6 @@
         "url": "https://ja.wikipedia.org/wiki/%E6%A3%9A%E5%AE%88%E6%88%BF%E9%A1%95"
       },
       {
-        "fetched_at": "2026-11-10T04:45:53.987733+00:00",
-        "page_hash": "c321b6ca8118222fcb0c39dd93a10a40f8c38b186eb65a995f2e2c4a84147176",
-        "reason": "reading omits shrine name ending or requires review",
-        "status": "needs_review",
-        "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E7%A5%9E%E7%A4%BE"
-      },
-      {
         "fetched_at": "2026-11-10T04:46:02.702331+00:00",
         "page_hash": "1fe13756b8d0fcf78262d3eef0cd2f96c937539983fe82a1b9ac22178d8899bb",
         "reason": "one shrine infobox required",
@@ -186,8 +179,8 @@
       }
     ],
     "articles_inspected": 81,
-    "articles_needing_review": 26,
-    "articles_with_full_reference": 55,
+    "articles_needing_review": 25,
+    "articles_with_full_reference": 56,
     "authority_status": "reference_source",
     "coverage": "Inspected Wikipedia shrine articles only; not agency listings or all prefectural shrines.",
     "identity_history": {
@@ -340,6 +333,12 @@
         "listed_name": "早稲田神社",
         "listing_url": "https://ja.wikipedia.org/wiki/%E6%97%A9%E7%A8%B2%E7%94%B0%E7%A5%9E%E7%A4%BE_(%E5%BA%83%E5%B3%B6%E5%B8%82)",
         "source_hash": "14e1bdff7e7130a14b9393b8f4161a7245aa79e4a0034a185ea9676f832b324e"
+      },
+      "7b65f83e-c442-55ec-a0ad-3c933dac8298": {
+        "address": "広島県広島市中区中町7番24号",
+        "listed_name": "白神社",
+        "listing_url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E7%A5%9E%E7%A4%BE",
+        "source_hash": "8d68db8cbb1382b9e9c1c8256f6a20c2b74aa49e867f1dfa1f52f4c41f14744b"
       },
       "8e3c7f23-aef8-56d1-92d2-308320c6d308": {
         "address": "広島県安芸高田市吉田町相合261",
@@ -968,10 +967,10 @@
     "redistribution_status": "Wikipedia source attribution and CC BY-SA 4.0 retained; not relicensed as MIT.",
     "remaining_scope": [],
     "scope_note": "Only the recorded Wikipedia prefectural shrine category tree was inspected; article counts include lists/non-shrine pages and are distinct from facility counts.",
-    "selected_rows": 55,
+    "selected_rows": 56,
     "source_key": "hiroshima",
     "source_publisher": "日本語版Wikipedia",
-    "source_rows_observed": 55,
+    "source_rows_observed": 56,
     "terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja"
   },
   "entries": [
@@ -2294,6 +2293,30 @@
       "source_hash": "4b1bd368aaec557436e253ed4216b58a085efa7ee28e2477bb02b3934e1b3084",
       "status": "verified",
       "surface": "若宮八幡神社"
+    },
+    {
+      "checked_at": "2026-11-10T04:45:53.987733+00:00",
+      "evidence": "白神社（しらかみしゃ） / 広島県広島市中区中町7番24号",
+      "facility_id": "7b65f83e-c442-55ec-a0ad-3c933dac8298",
+      "fetched_at": "2026-11-10T04:45:53.987733+00:00",
+      "id": "453fdbc1-59b0-5768-b331-3e1bb9424b74",
+      "listing_basis": "wikipedia_reference",
+      "listing_url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E7%A5%9E%E7%A4%BE",
+      "name_raw": "白神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "c321b6ca8118222fcb0c39dd93a10a40f8c38b186eb65a995f2e2c4a84147176",
+      "reading": "しらかみしゃ",
+      "reading_raw": "しらかみしゃ",
+      "reading_source_kind": "encyclopedia",
+      "reading_url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E7%A5%9E%E7%A4%BE",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "8d68db8cbb1382b9e9c1c8256f6a20c2b74aa49e867f1dfa1f52f4c41f14744b",
+      "status": "verified",
+      "surface": "白神社"
     }
   ],
   "facilities": [
@@ -4957,6 +4980,54 @@
         "source_kind": "encyclopedia",
         "title": "若宮八幡神社 (三次市十日市)",
         "url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE_(%E4%B8%89%E6%AC%A1%E5%B8%82%E5%8D%81%E6%97%A5%E5%B8%82)",
+        "verification_method": "Exact shrine infobox name/location; explicit deity-label or shrine-template metadata; literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted."
+      },
+      "status": "verified"
+    },
+    {
+      "address": "広島県広島市中区中町7番24号",
+      "checked_at": "2026-11-10T04:45:53.987733+00:00",
+      "fetched_at": "2026-11-10T04:45:53.987733+00:00",
+      "id": "7b65f83e-c442-55ec-a0ad-3c933dac8298",
+      "listed_name": "白神社",
+      "listing_basis": "wikipedia_reference",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-10T04:45:53.987733+00:00",
+          "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+          "page_hash": "c321b6ca8118222fcb0c39dd93a10a40f8c38b186eb65a995f2e2c4a84147176",
+          "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E7%A5%9E%E7%A4%BE"
+        }
+      ],
+      "listing_url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E7%A5%9E%E7%A4%BE",
+      "municipality": "広島市中区",
+      "name_raw": "白神社",
+      "native_source_id": "wikipedia:pageid:1812399",
+      "official_site_url": null,
+      "page_hash": "c321b6ca8118222fcb0c39dd93a10a40f8c38b186eb65a995f2e2c4a84147176",
+      "prefecture": "広島県",
+      "prefecture_code": "34",
+      "reason": "",
+      "source_hash": "8d68db8cbb1382b9e9c1c8256f6a20c2b74aa49e867f1dfa1f52f4c41f14744b",
+      "source_key": "hiroshima",
+      "source_locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+      "source_publisher": "日本語版Wikipedia",
+      "source_reference": {
+        "address_raw": "広島県広島市中区中町7番24号",
+        "article_id": 1812399,
+        "checked_at": "2026-11-10T04:45:53.987733+00:00",
+        "excerpt": "白神社（しらかみしゃ） / 広島県広島市中区中町7番24号",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+        "name_raw": "白神社",
+        "page_hash": "c321b6ca8118222fcb0c39dd93a10a40f8c38b186eb65a995f2e2c4a84147176",
+        "permalink": "https://ja.wikipedia.org/w/index.php?title=%E7%99%BD%E7%A5%9E%E7%A4%BE&oldid=108694959",
+        "reading_raw": "しらかみしゃ",
+        "revision_id": 108694959,
+        "shrine_type_label_raw": "主祭神",
+        "source_kind": "encyclopedia",
+        "title": "白神社",
+        "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E7%A5%9E%E7%A4%BE",
         "verification_method": "Exact shrine infobox name/location; explicit deity-label or shrine-template metadata; literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted."
       },
       "status": "verified"

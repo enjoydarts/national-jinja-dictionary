@@ -5,7 +5,7 @@ import unicodedata
 from datetime import datetime
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading
-from njd.locations import raw_address
+from njd.locations import raw_address, _redirect_authority, _reference_in_scope, _hash, _date, _plain
 
 
 def _url(value):
@@ -108,6 +108,40 @@ def _reference_matches(ref,facility,entry,changes):
     return False
 
 
+def _official_reading_authority(correction,facility):
+    proof=correction.get('official_site_binding')
+    if proof is None:return None,[]
+    if not isinstance(proof,dict):return None,['invalid official site binding']
+    link=proof.get('agency_link');native=facility.get('official_site_url')
+    if (not isinstance(link,dict) or not _url(native)
+        or link.get('url')!=facility.get('listing_url') or link.get('name_raw')!=facility.get('name_raw')
+        or link.get('address_raw')!=raw_address(facility) or link.get('href_raw')!=native
+        or not _plain(link.get('locator')) or link['locator']!=facility.get('source_locator')
+        or not _hash(link.get('page_hash')) or link['page_hash']!=facility.get('page_hash')
+        or not _date(link.get('fetched_at'))):
+        return None,['official site binding differs from the acquired agency name/address/link observation']
+    return _redirect_authority(proof,native)
+
+
+def _official_reading_reference(ref,authority,facility):
+    return (isinstance(ref,dict) and ref.get('source_kind')=='official_shrine'
+        and ref.get('name_raw')==facility.get('listed_name')
+        and _reference_in_scope(authority,ref.get('url'))
+        and urlsplit(ref['url']).query==urlsplit(authority).query
+        and _hash(ref.get('page_hash')) and _date(ref.get('checked_at')) and _plain(ref.get('locator')))
+
+
+def _joined_official_reading(ref,correction,facility,entry):
+    authority,problems=_official_reading_authority(correction,facility)
+    changes=correction.get('changes',{})
+    if (problems or not authority or set(changes)!={'reading'} or ref.get('address_raw')
+        or not _official_reading_reference(ref,authority,facility)):return False
+    return any(_official_reading_reference(r,authority,facility)
+        and _reference_matches(r,facility,entry,changes) and isinstance(r.get('excerpt'),str)
+        and r['name_raw'] in r['excerpt'] and r.get('address_raw') and r['address_raw'] in r['excerpt']
+        for r in correction.get('references',[]))
+
+
 def _agency_reading_compatible(name,raw,scope,full):
     """Compare literal evidence, never construct a reading from a stem.
 
@@ -153,6 +187,7 @@ def correction_problems(correction,facility,entry,source=None):
     if '<' in changes.get('surface','') or '>' in changes.get('surface',''):problems.append('corrected surface is not plain text')
     refs=correction.get('references')
     if not isinstance(refs,list) or not refs:return problems+['missing inspected references']
+    authority,official_problems=_official_reading_authority(correction,facility);problems.extend(official_problems)
     registry_present=any(isinstance(r,dict) and r.get('source_kind')=='government_corporate_register' for r in refs)
     name_supported='surface' not in changes;reading_supported='reading' not in changes;identity_supported=False
     for ref in refs:
@@ -165,6 +200,7 @@ def correction_problems(correction,facility,entry,source=None):
         if not ref.get('name_raw') or not ref.get('excerpt'):
             problems.append('reference name or actual excerpt missing')
         bound=_reference_matches(ref,facility,entry,changes)
+        joined=_joined_official_reading(ref,correction,facility,entry)
         if (registry_present and bound and 'reading' in changes and ref.get('reading_raw')
             and ref.get('source_kind') in ('agency','official_agency')
             and ref.get('reading_scope') in ('full_name','partial_or_absent')
@@ -179,7 +215,7 @@ def correction_problems(correction,facility,entry,source=None):
         if 'reading' in changes:
             raw=ref.get('reading_raw','')
             try:
-                if bound and normalize_reading(raw)==changes['reading'] and raw in ref.get('excerpt',''):
+                if (bound or joined) and normalize_reading(raw)==changes['reading'] and raw in ref.get('excerpt',''):
                     reading_supported=True
             except (TypeError,ValueError):pass
     if not identity_supported:problems.append('no inspected reference explicitly identifies name and location')
@@ -229,7 +265,7 @@ def apply_corrections(data,document):
             for ref in correction['references']:
                 try:matched=normalize_reading(ref.get('reading_raw',''))==entry['reading'] and ref.get('reading_raw','') in ref.get('excerpt','')
                 except (TypeError,ValueError):matched=False
-                if matched and _reference_matches(ref,facility,entry,changes):entry['reading_url']=ref['url'];entry['checked_at']=ref['checked_at'];break
+                if matched and (_reference_matches(ref,facility,entry,changes) or _joined_official_reading(ref,correction,facility,entry)):entry['reading_url']=ref['url'];entry['checked_at']=ref['checked_at'];break
         reading_resolved='reading' in changes
         if not reading_resolved:
             try:reading_resolved=normalize_reading(entry['reading_raw'])==entry['reading']

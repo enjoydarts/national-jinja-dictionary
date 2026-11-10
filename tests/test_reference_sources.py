@@ -102,6 +102,14 @@ class ReferenceSourceTests(unittest.TestCase):
         for wrong in ['〒730-0000 山口県例市例町1','〒730-000 広島県例市例町1']:
             with self.subTest(address=wrong),self.assertRaises(ValueError):r.dataset_from_references('34',[reference(address=wrong)])
 
+    def test_source_explicit_sha_and_guu_endings_are_not_replaced_by_standard_suffix_guesses(self):
+        for name,reading in [('例大神社','れいおおみわしゃ'),('例神宮','れいぜんぐう')]:
+            d=r.dataset_from_references('34',[reference(name=name,reading=reading)])
+            self.assertEqual(d['entries'][0]['reading'],reading)
+            self.assertEqual(len(eligible(d)),1)
+        for name,reading in [('例大神社','れいおおみわ'),('例神宮','れいぜん')]:
+            with self.assertRaises(ValueError):r.dataset_from_references('34',[reference(name=name,reading=reading)])
+
     def test_same_name_different_article_and_address_retains_two_facilities(self):
         d=r.dataset_from_references('34',[reference(),reference(address='広島県例市別町2',article_id=11)])
         self.assertEqual(len(d['facilities']),2)

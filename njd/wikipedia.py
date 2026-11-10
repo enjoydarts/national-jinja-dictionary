@@ -105,6 +105,23 @@ def _address_text(node):
     return ''.join(_address_text(c) if isinstance(c,Node) else c for c in node.children)
 
 
+def _address_cell(cell):
+    breaks=list(cell.all('br'))
+    if list(cell.all('table')):raise ValueError('multiple address lines')
+    if not breaks:return _address_text(cell).strip(),{}
+    if len(breaks)!=1 or not any(c is breaks[0] for c in cell.children):raise ValueError('multiple address lines')
+    i=next(i for i,c in enumerate(cell.children) if c is breaks[0])
+    parts=[_address_text(Node('div',children=items)).strip() for items in (cell.children[:i],cell.children[i+1:])]
+    before,after=parts;pref='(?:'+'|'.join(map(re.escape,PREFECTURES))+')'
+    postal=bool(re.fullmatch(r'〒[0-9]{3}-[0-9]{4}',before) and re.match(pref,after))
+    county=bool(re.fullmatch(pref+r'[\u3400-\u9fff々]+郡',before) and re.match(r'[^0-9\s都道府県郡区]+?[町村]',after))
+    if (not (postal or county) or any(t in after for t in ('社務所','元宮','現社地','前宮','奥宮','〒'))
+        or sum(after.count(p) for p in PREFECTURES)>int(postal)):
+        raise ValueError('multiple address lines')
+    value=(' ' if postal else '').join(parts)
+    return value,dict(address_lines_raw=parts,address_layout_normalization='single postal/address or prefecture/county/municipality line wrap; whitespace only')
+
+
 def article_reference(page,name):
     """Bind one exact bold lead name and kana to one rendered shrine infobox."""
     title=_title(page.url)
@@ -117,12 +134,12 @@ def article_reference(page,name):
     if len(boxes)!=1:raise ValueError('single infobox required')
     box=boxes[0];headers=list(box.all('th'))
     if not headers or headers[0].text().strip()!=name:raise ValueError('infobox name differs')
-    addresses=[];address_cells=[]
+    addresses=[];address_cells=[];address_layouts=[]
     for row in box.all('tr'):
         cells=[c for c in row.children if isinstance(c,Node) and c.tag in ('th','td')]
         if len(cells)==2 and cells[0].tag=='th' and cells[0].text().strip()=='所在地':
-            if list(cells[1].all('br')) or list(cells[1].all('table')):raise ValueError('multiple address lines')
-            addresses.append(_address_text(cells[1]).strip());address_cells.append(cells[1].text().strip())
+            address,layout=_address_cell(cells[1])
+            addresses.append(address);address_cells.append(cells[1].text().strip());address_layouts.append(layout)
     if len(addresses)!=1 or not addresses[0]:raise ValueError('single rendered address required')
     leads=[n for n in content.all('section') if n.attrs.get('data-mw-section-id')=='0']
     if len(leads)!=1:raise ValueError('explicit lead section absent')
@@ -141,7 +158,7 @@ def article_reference(page,name):
             if not word or before.endswith(name) or (word.group(1) or word.group(2))==name:
                 raise ValueError('multiple readings of the primary name or unbound lead kana')
         raw=match[1];reading=normalize_reading(raw)
-        endings={'神社':('じんじゃ','じんしゃ','しんじゃ','しんしゃ'),'神宮':('じんぐう',),'大社':('たいしゃ','だいしゃ','おおやしろ'),'宮':('ぐう','みや','きゅう')}
+        endings={'神社':('じんじゃ','じんしゃ','しんじゃ','しんしゃ','しゃ','やしろ'),'神宮':('じんぐう','ぐう'),'大社':('たいしゃ','だいしゃ','おおやしろ'),'宮':('ぐう','みや','きゅう')}
         for suffix,allowed in endings.items():
             if name.endswith(suffix):
                 if not reading.endswith(allowed):raise ValueError('reading omits shrine name ending or requires review')
@@ -156,7 +173,9 @@ def article_reference(page,name):
         permalink=BASE+'/w/index.php?'+urlencode(dict(title=title,oldid=revision[0])),license_url=LICENSE,
         locator=f'.mw-parser-output section[data-mw-section-id="0"] p[{index}] b; table.infobox tr[th="所在地"] td; mw.config.wgRevisionId',
         verification_method='mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding')
-    if addresses[0]!=address_cells[0]:result.update(address_cell_raw=address_cells[0],address_extraction='literal address text; coordinate-link subtree excluded')
+    result.update(address_layouts[0])
+    if addresses[0]!=address_cells[0]:
+        result.update(address_cell_raw=address_cells[0],address_extraction='literal address text; coordinate-link subtree excluded' if not address_layouts[0] else 'literal address text; single line wrap normalized; original line parts retained')
     return result
 
 

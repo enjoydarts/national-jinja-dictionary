@@ -96,6 +96,29 @@ class WikipediaTests(unittest.TestCase):
             with self.subTest(suffix=suffix),self.assertRaises(ValueError):
                 w.article_reference(page(ARTICLE,article().replace('うづかみことじんじゃ）','うづかみことじんじゃ'+suffix+'）')),'宇受賀命神社')
 
+    def test_one_address_line_wrap_is_distinct_from_multiple_locations(self):
+        base=article()
+        for raw,expected in [('〒684-0403<br>島根県隠岐郡海士町宇受賀747','〒684-0403 島根県隠岐郡海士町宇受賀747'),
+                             ('島根県隠岐郡<br>海士町宇受賀747','島根県隠岐郡海士町宇受賀747')]:
+            body=base.replace('<a>島根県</a>隠岐郡海士町宇受賀747',raw)
+            with self.subTest(raw=raw):
+                ref=w.article_reference(page(ARTICLE,body),'宇受賀命神社')
+                self.assertEqual(ref['address_raw'],expected)
+                self.assertEqual(ref['address_lines_raw'],raw.split('<br>'))
+                self.assertIn('line wrap',ref['address_layout_normalization'])
+        for raw in ['島根県例市1<br>島根県別市2','島根県隠岐郡<br>別県海士町1',
+                    '〒684-0403<br>島根県隠岐郡<br>海士町1','【現社地】島根県例市1<br>【元宮】島根県例市2']:
+            body=base.replace('<a>島根県</a>隠岐郡海士町宇受賀747',raw)
+            with self.subTest(raw=raw),self.assertRaises(ValueError):w.article_reference(page(ARTICLE,body),'宇受賀命神社')
+
+    def test_literal_reading_may_cross_the_written_shrine_suffix_boundary(self):
+        for name,reading in [('例大神社','れいおおみわしゃ'),('例神宮','れいぜんぐう')]:
+            with self.subTest(name=name):
+                ref=w.article_reference(page(ARTICLE,article(name=name,reading=reading)),name)
+                self.assertEqual(ref['reading_raw'],reading)
+        for name,reading in [('例大神社','れいおおみわ'),('例神宮','れいぜん')]:
+            with self.subTest(name=name),self.assertRaises(ValueError):w.article_reference(page(ARTICLE,article(name=name,reading=reading)),name)
+
     def test_category_reads_only_content_regions_and_actual_pagination(self):
         body='<a href="/wiki/Outside">outside</a><div id="mw-subcategories"><a href="/wiki/Category:島根県の旧郷社">sub</a></div><div id="mw-pages"><a href="/wiki/宇受賀命神社">宇受賀命神社</a><a href="https://evil.test/wiki/Other">bad</a><a href="/wiki/特別:検索">special</a><a href="/w/index.php?title=Category:島根県の神社&amp;pagefrom=宇">next</a></div>'
         result=w.category_links(page(ROOT,body))
