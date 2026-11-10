@@ -4,7 +4,7 @@ import re
 import unicodedata
 from datetime import datetime
 from urllib.parse import urlsplit
-from njd.normalize import normalize_reading
+from njd.normalize import normalize_reading, compare_address_units
 from njd.locations import raw_address, _redirect_authority, _reference_in_scope, _hash, _date, _plain
 
 
@@ -81,7 +81,7 @@ def _reference_matches(ref,facility,entry,changes):
            _comparison(changes.get('surface'))}-{''}
     if _comparison(ref.get('name_raw')) not in names:return False
     def address(value):
-        value=re.sub(r'^〒\d{3}-\d{4}','',_comparison(value))
+        value=compare_address_units(re.sub(r'^〒\d{3}-\d{4}','',_comparison(value)))
         value=value.removeprefix(facility.get('prefecture',''))
         # Some agency lists omit 郡. Only remove a leading county after the
         # matching prefecture; never discard an unmatched prefecture prefix.
@@ -104,7 +104,13 @@ def _reference_matches(ref,facility,entry,changes):
         if actual==expected:return True
         if _additional_aza_matches(actual,expected,ref,facility):return True
         suffix=actual[len(expected):] if actual.startswith(expected) else ''
-        if not re.search(r'\d',expected) and suffix and suffix[0].isdigit():return True
+        # Unit comparison can turn a locality word (五番領, 後三条町) into
+        # digits. Keep the acquired locality's scope; the comparison must not
+        # invent a parcel that was never printed in that agency row. A newly
+        # converted terminal parcel number still cannot prefix another lot.
+        original_locality=re.sub(r'^〒\d{3}-\d{4}','',_comparison(raw))
+        if (not re.search(r'\d',original_locality) and not re.search(r'\d$',expected)
+            and suffix and suffix[0].isdigit()):return True
     return False
 
 
