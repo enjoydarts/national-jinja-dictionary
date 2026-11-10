@@ -16,17 +16,18 @@
       "changes": {
         "reading": "はちまんぐう"
       },
-      "checked_at": "2026-11-10T00:38:43.458307+00:00",
+      "checked_at": "2026-11-10T00:59:00.487004+00:00",
       "expected_source_hash": "db240d7e97de268388cca126798f2c9eeefe9722db3390acb0c389f6f6a5c38f",
       "facility_id": "eda7425c-7e2e-5348-a3e4-cd028a8f126c",
       "identity_match": {
         "agency_address": "東近江市中岸本町",
+        "agency_detail_address_raw": "滋賀県東近江市中岸本町434",
+        "agency_detail_name_raw": "八幡宮",
+        "agency_detail_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=871",
         "agency_name": "八幡宮",
-        "comparison": "Listing locality alone is insufficient; observed agency detail name/full address does not all match the registered candidate. No identity confirmation.",
-        "effective_address": "東近江市中岸本町",
-        "reference_address": "滋賀県東近江市中岸本町４４番地",
-        "reference_name": "八幡宮",
-        "status": "needs_review"
+        "agency_native_code": "871",
+        "comparison": "Agency index and directly linked detail identify the same facility; non-agency registry candidate is not used to confirm this reading.",
+        "status": "verified"
       },
       "original": {
         "address": "東近江市中岸本町",
@@ -34,12 +35,25 @@
         "name_raw": "八幡宮",
         "reading_raw": ""
       },
-      "reason": "神社庁一覧・詳細・国税庁の名称または番地を含む住所の厳密な照合が通らない。原文を変更せず、当該施設の全文読みとしては未採用。",
+      "previous_candidate_issue": {
+        "identity_match": {
+          "agency_address": "東近江市中岸本町",
+          "agency_name": "八幡宮",
+          "comparison": "Listing locality alone is insufficient; observed agency detail name/full address does not all match the registered candidate. No identity confirmation.",
+          "effective_address": "東近江市中岸本町",
+          "reference_address": "滋賀県東近江市中岸本町４４番地",
+          "reference_name": "八幡宮",
+          "status": "needs_review"
+        },
+        "kind": "name_address_or_structure",
+        "reason": "神社庁一覧・詳細・国税庁の名称または番地を含む住所の厳密な照合が通らない。原文を変更せず、当該施設の全文読みとしては未採用。"
+      },
+      "reason": "神社庁の同一施設詳細に名称全体のカナが明記されているため、その原文を機械的にひらがなへ変換。国税庁候補との相違は未採用の参考原文として保持し、名称・住所を変えて一致させない。",
       "references": [
         {
           "address_raw": "滋賀県東近江市中岸本町434",
           "alias_display_raw": "",
-          "checked_at": "2026-11-10T00:38:43.458307+00:00",
+          "checked_at": "2026-11-10T00:59:00.487004+00:00",
           "excerpt": "八幡宮 （ハチマングウ） / 滋賀県東近江市中岸本町434",
           "fetched_at": "2026-11-09T15:23:28.154775+00:00",
           "listing_link": {
@@ -59,9 +73,11 @@
           ],
           "page_hash": "ac4f0c1315648c667dd9ec3b570c4996860f92f184044a4e2af0b4bf55a82103",
           "reading_raw": "ハチマングウ",
+          "reading_scope": "full_name",
           "source_kind": "agency",
           "title": "八幡宮",
-          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=871"
+          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=871",
+          "verification_method": "Literal complete kana displayed with the exact agency-listed name; agency listing href/native facility ID and location match. Primary agency full reading takes precedence over registry candidate; no kana suffix inferred."
         },
         {
           "address_raw": "滋賀県東近江市中岸本町４４番地",
@@ -119,8 +135,14 @@
           "zip_member": "25_shiga_all_20261030.csv"
         }
       ],
-      "status": "needs_review",
-      "unresolved_kind": "name_address_or_structure"
+      "status": "verified",
+      "unadopted_reference_readings": [
+        {
+          "reading_raw": "ハチマングウ",
+          "reason": "not adopted; full reading is explicitly published by prefectural agency",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ]
     },
     "00187c1b-4e8b-5a41-8da1-ed057e43e0f2": {
       "candidate_comparison": {
@@ -65371,7 +65393,7 @@
       "changes": {
         "reading": "いぶきじんじゃ"
       },
-      "checked_at": "2026-11-10T00:38:43.468560+00:00",
+      "checked_at": "2026-11-10T01:00:35.743017+00:00",
       "expected_source_hash": "a24591beb97b44f82129bc532351c60e6bb701b607b34cbeb85651dcd1b675b2",
       "facility_id": "d54c4e3a-e3a9-57c1-b5f1-4f92f3cf7aa6",
       "identity_match": {
@@ -65387,7 +65409,7 @@
         "name_raw": "伊夫岐神社",
         "reading_raw": ""
       },
-      "reason": "神社庁の掲載カナ「イフキ」と国税庁の全文フリガナ「イブキジンジャ」が対応しない。語幹から語尾を推定せず、追加資料または利用者判断待ち。",
+      "reason": "神社庁の掲載カナ「イフキ」と国税庁の全文フリガナ「イブキジンジャ」が対応しない。語幹から語尾を推定せず、追加資料または利用者判断待ち。 県観光情報には「いぶきじんじゃ」とあるが、神社庁カナとの相違が解消せず、所在地も町名までのため保留を継続。",
       "references": [
         {
           "address_raw": "滋賀県米原市伊吹603",
@@ -65470,6 +65492,22 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "25_shiga_all_20261030.csv"
+        },
+        {
+          "address_raw": "米原市伊吹",
+          "adoption_status": "not_adopted_conflicting_reading_and_incomplete_address",
+          "checked_at": "2026-11-10T01:00:35.743017+00:00",
+          "excerpt": "伊夫岐神社 / いぶきじんじゃ / 米原市伊吹",
+          "fetched_at": "2026-11-10T00:57:56.575894+00:00",
+          "locator": "h1 and following reading paragraph; table tr[所在地]",
+          "name_raw": "伊夫岐神社",
+          "page_hash": "07cd559dc6c3a88fbb4c51023cdc761e90da4745fcaaeeade714779cb43c4ef8",
+          "reading_raw": "いぶきじんじゃ",
+          "redistribution_status": "unconfirmed",
+          "source_kind": "local_tourism_association",
+          "title": "伊夫岐神社 | 滋賀県観光情報",
+          "url": "https://www.biwako-visitors.jp/spot/detail/349/",
+          "verification_method": "Literal full reading differs from the agency kana stem イフキ; published locality has no parcel number. No resolution inferred."
         }
       ],
       "status": "needs_review",
@@ -75921,7 +75959,7 @@
       "changes": {
         "reading": "いしべじんじゃ"
       },
-      "checked_at": "2026-11-10T00:38:43.460177+00:00",
+      "checked_at": "2026-11-10T01:00:35.743017+00:00",
       "expected_source_hash": "2ab7314b948cd8dfdd9b6027f529b56a32f8c616acee1af7d9a80b37fbc2a18d",
       "facility_id": "0a7f8998-27d5-5ed3-97ff-e33b7c88bcf2",
       "identity_match": {
@@ -75937,7 +75975,7 @@
         "name_raw": "石部神社",
         "reading_raw": ""
       },
-      "reason": "神社庁の掲載カナ「イソベ」と国税庁の全文フリガナ「イシベジンジャ」が対応しない。語幹から語尾を推定せず、追加資料または利用者判断待ち。",
+      "reason": "神社庁の掲載カナ「イソベ」と国税庁の全文フリガナ「イシベジンジャ」が対応しない。語幹から語尾を推定せず、追加資料または利用者判断待ち。 愛荘町公式掲載画像は全文「いしべじんじゃ」と沓掛147を明記するが、神社庁の「イソベ」と相違するため保留を継続。",
       "references": [
         {
           "address_raw": "滋賀県愛知郡愛荘町沓掛147",
@@ -76020,6 +76058,29 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "25_shiga_all_20261030.csv"
+        },
+        {
+          "address_raw": "滋賀県愛知郡愛荘町沓掛147",
+          "adoption_status": "not_adopted_conflicting_reading",
+          "checked_at": "2026-11-10T01:00:35.743017+00:00",
+          "excerpt": "石部神社 / いしべじんじゃ / 滋賀県愛知郡愛荘町沓掛147",
+          "fetched_at": "2026-11-10T00:57:55.995701+00:00",
+          "locator": "image top title and individual ruby; bottom 行ってみよう address",
+          "name_raw": "石部神社",
+          "page_hash": "89b550087afba139292a2718a414052cf7a22106418c38622deb8f22a06b72a6",
+          "parent_page": {
+            "fetched_at": "2026-11-10T00:57:53.703404+00:00",
+            "href_raw": "//www.town.aisho.shiga.jp/material/files/group/5/K-05.jpg",
+            "label_raw": "石部神社 【沓掛】 (JPEG: 1.8MB)",
+            "page_hash": "585f6de1d15e56f6c2141873c11abc30e13023276a0e30d0819c78493cc09e76",
+            "url": "https://www.town.aisho.shiga.jp/iju/iro/iro/7731.html"
+          },
+          "reading_raw": "いしべじんじゃ",
+          "redistribution_status": "unconfirmed",
+          "source_kind": "municipal_publication",
+          "title": "愛荘いろはカルテ 石部神社",
+          "url": "https://www.town.aisho.shiga.jp/material/files/group/5/K-05.jpg",
+          "verification_method": "Visual transcription of explicitly printed title ruby and address; image is kept privately, not redistributed."
         }
       ],
       "status": "needs_review",
@@ -160451,19 +160512,20 @@
         "registered_reading_raw": "タイショウグンジンジャ"
       },
       "changes": {
-        "reading": "たいしょうぐんじんじゃ"
+        "reading": "たいしょうぐんじんしゃ"
       },
-      "checked_at": "2026-11-10T00:38:43.493094+00:00",
+      "checked_at": "2026-11-10T00:59:00.489488+00:00",
       "expected_source_hash": "864fd809609476b189c640e1e2ffac65bdcb412c46991f833d6d778ad52346e6",
       "facility_id": "45e6d2f9-c24e-538c-94fb-ce258ecc8796",
       "identity_match": {
         "agency_address": "高島市新旭町安井川",
+        "agency_detail_address_raw": "滋賀県高島市新旭町安井川314",
+        "agency_detail_name_raw": "大将軍神社",
+        "agency_detail_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1425",
         "agency_name": "大将軍神社",
-        "comparison": "Listing locality alone is insufficient; observed agency detail name/full address does not all match the registered candidate. No identity confirmation.",
-        "effective_address": "高島市新旭町安井川",
-        "reference_address": "滋賀県高島市新旭町安井川３４１番地",
-        "reference_name": "大将軍神社",
-        "status": "needs_review"
+        "agency_native_code": "1425",
+        "comparison": "Agency index and directly linked detail identify the same facility; non-agency registry candidate is not used to confirm this reading.",
+        "status": "verified"
       },
       "original": {
         "address": "高島市新旭町安井川",
@@ -160471,12 +160533,25 @@
         "name_raw": "大将軍神社",
         "reading_raw": ""
       },
-      "reason": "神社庁一覧・詳細・国税庁の名称または番地を含む住所の厳密な照合が通らない。原文を変更せず、当該施設の全文読みとしては未採用。",
+      "previous_candidate_issue": {
+        "identity_match": {
+          "agency_address": "高島市新旭町安井川",
+          "agency_name": "大将軍神社",
+          "comparison": "Listing locality alone is insufficient; observed agency detail name/full address does not all match the registered candidate. No identity confirmation.",
+          "effective_address": "高島市新旭町安井川",
+          "reference_address": "滋賀県高島市新旭町安井川３４１番地",
+          "reference_name": "大将軍神社",
+          "status": "needs_review"
+        },
+        "kind": "name_address_or_structure",
+        "reason": "神社庁一覧・詳細・国税庁の名称または番地を含む住所の厳密な照合が通らない。原文を変更せず、当該施設の全文読みとしては未採用。"
+      },
+      "reason": "神社庁の同一施設詳細に名称全体のカナが明記されているため、その原文を機械的にひらがなへ変換。国税庁候補との相違は未採用の参考原文として保持し、名称・住所を変えて一致させない。",
       "references": [
         {
           "address_raw": "滋賀県高島市新旭町安井川314",
           "alias_display_raw": "",
-          "checked_at": "2026-11-10T00:38:43.493094+00:00",
+          "checked_at": "2026-11-10T00:59:00.489488+00:00",
           "excerpt": "大将軍神社 （タイショウグンジンシャ） / 滋賀県高島市新旭町安井川314",
           "fetched_at": "2026-11-09T15:28:22.086865+00:00",
           "listing_link": {
@@ -160496,9 +160571,11 @@
           ],
           "page_hash": "441bbf7942ebd6b5712b7d6fc342706b69253d9e2146f09ed80a51b9f634950a",
           "reading_raw": "タイショウグンジンシャ",
+          "reading_scope": "full_name",
           "source_kind": "agency",
           "title": "大将軍神社",
-          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1425"
+          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1425",
+          "verification_method": "Literal complete kana displayed with the exact agency-listed name; agency listing href/native facility ID and location match. Primary agency full reading takes precedence over registry candidate; no kana suffix inferred."
         },
         {
           "address_raw": "滋賀県高島市新旭町安井川３４１番地",
@@ -160556,8 +160633,14 @@
           "zip_member": "25_shiga_all_20261030.csv"
         }
       ],
-      "status": "needs_review",
-      "unresolved_kind": "name_address_or_structure"
+      "status": "verified",
+      "unadopted_reference_readings": [
+        {
+          "reading_raw": "タイショウグンジンジャ",
+          "reason": "not adopted; full reading is explicitly published by prefectural agency",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ]
     },
     "b1ea35f9-0b3c-5205-ac36-fcba3e50623d": {
       "changes": {
@@ -170160,17 +170243,18 @@
       "changes": {
         "reading": "てんまんぐう"
       },
-      "checked_at": "2026-11-10T00:38:43.486767+00:00",
+      "checked_at": "2026-11-10T00:59:00.490965+00:00",
       "expected_source_hash": "f66ad28d4a5ec5dc43bf2aad947465e297d33b98fd81d06f960745b02f9ddd55",
       "facility_id": "7b711d96-46b9-5de0-a975-66a4f6cd1cc5",
       "identity_match": {
         "agency_address": "高島市安曇川町五番領",
+        "agency_detail_address_raw": "滋賀県高島市安曇川町五番領233",
+        "agency_detail_name_raw": "天満宮",
+        "agency_detail_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1386",
         "agency_name": "天満宮",
-        "comparison": "Listing locality alone is insufficient; observed agency detail name/full address does not all match the registered candidate. No identity confirmation.",
-        "effective_address": "高島市安曇川町五番領",
-        "reference_address": "滋賀県高島市安曇川町五番領２３２番地",
-        "reference_name": "天満宮",
-        "status": "needs_review"
+        "agency_native_code": "1386",
+        "comparison": "Agency index and directly linked detail identify the same facility; non-agency registry candidate is not used to confirm this reading.",
+        "status": "verified"
       },
       "original": {
         "address": "高島市安曇川町五番領",
@@ -170178,12 +170262,25 @@
         "name_raw": "天満宮",
         "reading_raw": ""
       },
-      "reason": "神社庁一覧・詳細・国税庁の名称または番地を含む住所の厳密な照合が通らない。原文を変更せず、当該施設の全文読みとしては未採用。",
+      "previous_candidate_issue": {
+        "identity_match": {
+          "agency_address": "高島市安曇川町五番領",
+          "agency_name": "天満宮",
+          "comparison": "Listing locality alone is insufficient; observed agency detail name/full address does not all match the registered candidate. No identity confirmation.",
+          "effective_address": "高島市安曇川町五番領",
+          "reference_address": "滋賀県高島市安曇川町五番領２３２番地",
+          "reference_name": "天満宮",
+          "status": "needs_review"
+        },
+        "kind": "name_address_or_structure",
+        "reason": "神社庁一覧・詳細・国税庁の名称または番地を含む住所の厳密な照合が通らない。原文を変更せず、当該施設の全文読みとしては未採用。"
+      },
+      "reason": "神社庁の同一施設詳細に名称全体のカナが明記されているため、その原文を機械的にひらがなへ変換。国税庁候補との相違は未採用の参考原文として保持し、名称・住所を変えて一致させない。",
       "references": [
         {
           "address_raw": "滋賀県高島市安曇川町五番領233",
           "alias_display_raw": "",
-          "checked_at": "2026-11-10T00:38:43.486767+00:00",
+          "checked_at": "2026-11-10T00:59:00.490965+00:00",
           "excerpt": "天満宮 （テンマングウ） / 滋賀県高島市安曇川町五番領233",
           "fetched_at": "2026-11-09T15:27:52.611731+00:00",
           "listing_link": {
@@ -170203,9 +170300,11 @@
           ],
           "page_hash": "bbeef8ef965375b7ef7e9fdd9ed0db228c2a5cd47af688b6f8620fe602b7ab1b",
           "reading_raw": "テンマングウ",
+          "reading_scope": "full_name",
           "source_kind": "agency",
           "title": "天満宮",
-          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1386"
+          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1386",
+          "verification_method": "Literal complete kana displayed with the exact agency-listed name; agency listing href/native facility ID and location match. Primary agency full reading takes precedence over registry candidate; no kana suffix inferred."
         },
         {
           "address_raw": "滋賀県高島市安曇川町五番領２３２番地",
@@ -170263,8 +170362,14 @@
           "zip_member": "25_shiga_all_20261030.csv"
         }
       ],
-      "status": "needs_review",
-      "unresolved_kind": "name_address_or_structure"
+      "status": "verified",
+      "unadopted_reference_readings": [
+        {
+          "reading_raw": "テンマングウ",
+          "reason": "not adopted; full reading is explicitly published by prefectural agency",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ]
     },
     "bc799c3b-cab0-5b44-9480-58df5c36f9ca": {
       "changes": {
@@ -180532,17 +180637,20 @@
         "registered_reading_raw": "サカキノミヤシャ"
       },
       "changes": {
-        "reading": "さかきのみやしゃ"
+        "reading": "さかきのみやしろ"
       },
-      "checked_at": "2026-11-10T00:38:43.613512+00:00",
+      "checked_at": "2026-11-10T00:59:00.492418+00:00",
       "expected_source_hash": "686ff1be9203f4078ee2e400c2ca2ed928cbbac8a331e58c8f361578e2d00ab7",
       "facility_id": "27111663-a3f7-55e3-863d-7dcf4275c095",
       "identity_match": {
         "agency_address": "大津市坂本",
+        "agency_detail_address_raw": "滋賀県大津市坂本4-9-57",
+        "agency_detail_name_raw": "榊宮社",
+        "agency_detail_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=28",
         "agency_name": "榊宮社",
-        "effective_address": "大津市坂本",
-        "reference_address": "滋賀県大津市坂本４丁目９番５７号",
-        "reference_name": "榊宮社"
+        "agency_native_code": "28",
+        "comparison": "Agency index and directly linked detail identify the same facility; non-agency registry candidate is not used to confirm this reading.",
+        "status": "verified"
       },
       "original": {
         "address": "大津市坂本",
@@ -180550,12 +180658,23 @@
         "name_raw": "榊宮社",
         "reading_raw": ""
       },
-      "reason": "神社庁の掲載カナ「サカキノミヤシロ」と国税庁の全文フリガナ「サカキノミヤシャ」が対応しない。語幹から語尾を推定せず、追加資料または利用者判断待ち。",
+      "previous_candidate_issue": {
+        "identity_match": {
+          "agency_address": "大津市坂本",
+          "agency_name": "榊宮社",
+          "effective_address": "大津市坂本",
+          "reference_address": "滋賀県大津市坂本４丁目９番５７号",
+          "reference_name": "榊宮社"
+        },
+        "kind": "reading_conflict",
+        "reason": "神社庁の掲載カナ「サカキノミヤシロ」と国税庁の全文フリガナ「サカキノミヤシャ」が対応しない。語幹から語尾を推定せず、追加資料または利用者判断待ち。"
+      },
+      "reason": "神社庁の同一施設詳細に名称全体のカナが明記されているため、その原文を機械的にひらがなへ変換。国税庁候補との相違は未採用の参考原文として保持し、名称・住所を変えて一致させない。",
       "references": [
         {
           "address_raw": "滋賀県大津市坂本4-9-57",
           "alias_display_raw": "",
-          "checked_at": "2026-11-10T00:38:43.613512+00:00",
+          "checked_at": "2026-11-10T00:59:00.492418+00:00",
           "excerpt": "榊宮社 （サカキノミヤシロ） / 滋賀県大津市坂本4-9-57",
           "fetched_at": "2026-11-09T14:21:49.592180+00:00",
           "listing_link": {
@@ -180575,9 +180694,11 @@
           ],
           "page_hash": "65c8cdaf447df2d299c2cd1d7439d0abf29cbefa1253a0ea546b152fb547e3ed",
           "reading_raw": "サカキノミヤシロ",
+          "reading_scope": "full_name",
           "source_kind": "agency",
           "title": "榊宮社",
-          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=28"
+          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=28",
+          "verification_method": "Literal complete kana displayed with the exact agency-listed name; agency listing href/native facility ID and location match. Primary agency full reading takes precedence over registry candidate; no kana suffix inferred."
         },
         {
           "address_raw": "滋賀県大津市坂本４丁目９番５７号",
@@ -180635,8 +180756,14 @@
           "zip_member": "25_shiga_all_20261030.csv"
         }
       ],
-      "status": "needs_review",
-      "unresolved_kind": "reading_conflict"
+      "status": "verified",
+      "unadopted_reference_readings": [
+        {
+          "reading_raw": "サカキノミヤシャ",
+          "reason": "not adopted; full reading is explicitly published by prefectural agency",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ]
     },
     "c7d34448-0bce-5a40-a5c9-699d69c26d9a": {
       "changes": {
