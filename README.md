@@ -113,6 +113,8 @@ python3 -m njd.wikipedia --prefecture all --state-dir /tmp/njd-reference-researc
 # 神社庁の一覧が直接リンクする詳細ページの読みを優先して収集
 python3 -m njd.agency_details --source shimane --state-dir /tmp/njd-shimane-details --limit 100
 python3 -m njd.agency_details --source nagano --state-dir /tmp/njd-nagano-details --limit 100
+# 滋賀：保存した一覧の実リンクから県単位で調査。上限0で全対象、同じstateで再開
+python3 -m njd.agency_details --source shiga --state-dir /tmp/njd-shiga-details --limit 0
 
 # 国税庁の無償公開データ。既存の神社庁掲載名・所在地との一致だけを候補化
 python3 -m njd.corporate --prefecture all --state-dir /tmp/njd-corporate-research --limit 3
@@ -132,6 +134,8 @@ git diff -- data/corrections.json
 国税庁のフリガナは未掲載・大書きカナ・閉鎖法人などを含むため、そのまま全件を採用しません。読みを推定せず、存続する一意な法人の正式名称・所在地・明示カナを照合します。出典・加工表示・公共データ利用規約は補完レコードへ保存し、コードのMITと区別します。
 
 調査状態の`complete`は指定カテゴリの候補調査の完了で、読みの全国網羅を意味しません。未発見・取得失敗・所在地不一致・読みの衝突は外部の`state/progress.json`に残ります。仕様と確認範囲は[データ仕様](docs/DATA.md)を参照してください。
+
+滋賀の詳細調査は、一覧の同じ掲載行から取得したhref・施設番号・名称・所在地を照合します。詳細の別称をカナと分離し、全文カナだけを採用候補にします。語幹だけのカナは補完せず、外部の調査状態に原文と保留理由を残します。取得に失敗した場合は県の処理を止め、確認前に正本や既存判断を書き換えません。候補には既存補正と重なるものもあるため、差分を確認して採用対象を選びます。
 
 ## リリース時の最新生成
 

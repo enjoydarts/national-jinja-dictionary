@@ -89,6 +89,72 @@ class AgencyDetailsTests(unittest.TestCase):
                     return super().fetch(url,**kwargs)
             self.assertEqual(a.research(root/'data',root/'state',ObservingClient({URL:html(),second:html()}))['proposals'],2)
 
+SINDEX='https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100'
+SDETAIL='https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=7'
+def shiga_index(href='ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&amp;view:oid=7'):
+    return '<base href="https://www.shiga-jinjacho.jp/"><a class="news_title" href="'+href+'">〔大津〕 例神社</a><br><span>〒5200000 大津市例町</span>'
+def shiga_detail(reading='レイジンジャ'):
+    return '<div class="j_title">例神社 （'+reading+'） ～（例の宮）</div><table><tr><td>鎮座地</td><td>滋賀県大津市例町１</td></tr></table>'
+
+class ShigaAgencyTests(unittest.TestCase):
+    def setup_data(self,root):
+        f=dict(id='f0',listed_name='例神社',name_raw='例神社',address='大津市例町',prefecture='滋賀県',prefecture_code='25',status='verified',listing_url=SINDEX,native_source_id='7')
+        e=dict(id='e0',facility_id='f0',reading_raw='',source_hash='hash0',status='pending',surface='例神社')
+        write_json(root/'sources/shiga.json',dict(collection=dict(source_key='shiga',authority_status='confirmed'),facilities=[f],entries=[e]))
+
+    def test_actual_base_href_native_and_literal_full_reading(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);self.setup_data(root/'data');before=(root/'data/sources/shiga.json').read_bytes()
+            result=a.research(root/'data',root/'state',FixtureClient({SINDEX:shiga_index(),SDETAIL:shiga_detail()}),source='shiga')
+            self.assertEqual(result['proposals'],1)
+            c=load_dataset(root/'state/proposals.json')['entries']['e0'];ref=c['references'][0]
+            self.assertEqual(c['changes'],{'reading':'れいじんじゃ'})
+            self.assertEqual((ref['name_raw'],ref['reading_raw'],ref['alias_display_raw']),('例神社','レイジンジャ','例の宮'))
+            self.assertEqual(ref['index_proof']['source_id'],'7')
+            self.assertEqual((root/'data/sources/shiga.json').read_bytes(),before)
+
+    def test_stem_is_preserved_as_reference_but_never_completed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);self.setup_data(root/'data');client=FixtureClient({SINDEX:shiga_index(),SDETAIL:shiga_detail('レイ')})
+            result=a.research(root/'data',root/'state',client,source='shiga')
+            self.assertEqual((result['proposals'],result['pending']),(0,1))
+            saved=load_dataset(root/'state/state/progress.json')['entries']['e0']
+            self.assertEqual(saved['reference']['reading_raw'],'レイ')
+            client.calls.clear();a.research(root/'data',root/'state',client,source='shiga');self.assertEqual(client.calls,[])
+
+    def test_unknown_link_host_native_and_index_address_cannot_bind(self):
+        for index in [shiga_index(SDETAIL.replace('www.shiga-jinjacho.jp','example.test')),
+                      shiga_index(SDETAIL.replace('oid=7','oid=8')),
+                      shiga_index().replace('大津市例町','大津市別町')]:
+            with self.subTest(index=index),tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp);self.setup_data(root/'data');client=FixtureClient({SINDEX:index,SDETAIL:shiga_detail()})
+                result=a.research(root/'data',root/'state',client,source='shiga')
+                self.assertEqual(result['proposals'],0);self.assertEqual(client.calls,[SINDEX])
+
+    def test_fetch_failure_stops_the_prefecture_and_retains_unvisited(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);self.setup_data(root/'data');d=load_dataset(root/'data/sources/shiga.json')
+            f=copy.deepcopy(d['facilities'][0]);f.update(id='f1',native_source_id='8');d['facilities'].append(f)
+            e=copy.deepcopy(d['entries'][0]);e.update(id='e1',facility_id='f1');d['entries'].append(e);write_json(root/'data/sources/shiga.json',d)
+            client=FixtureClient({});result=a.research(root/'data',root/'state',client,source='shiga')
+            self.assertEqual((result['errors'],result['unvisited']),(1,1));self.assertEqual(client.calls,[SINDEX])
+
+    def test_ambiguous_base_duplicate_native_links_and_untrusted_queries_fail_closed(self):
+        with self.assertRaises(ValueError):a.shiga_links(page(shiga_index()+'<base href="https://example.test/">',SINDEX))
+        self.assertEqual(a.shiga_links(page(shiga_index()+shiga_index().split('>',1)[1],SINDEX)),[])
+        for url in [SDETAIL+'&view:oid=8',SDETAIL.replace('mode:view=1','mode:view=2'),SDETAIL+'&admin=1']:
+            self.assertFalse(a.detail_url(url,source='shiga'))
+
+    def test_detached_trusted_anchor_cannot_supply_another_rows_href(self):
+        hostile=shiga_index(SDETAIL.replace('www.shiga-jinjacho.jp','example.test'))
+        detached='<a href="'+SDETAIL+'">例神社</a>'
+        self.assertEqual(a.shiga_links(page(hostile+detached,SINDEX)),[])
+
+    def test_full_row_href_is_checked_without_truncating_trailing_parameters(self):
+        for suffix in ['&amp;admin=1','&amp;view:oid=8','#another-facility']:
+            with self.subTest(suffix=suffix):
+                self.assertEqual(a.shiga_links(page(shiga_index(SDETAIL+suffix),SINDEX)),[])
+
 NINDEX='https://www.nagano-jinjacho.jp/shibu/hani.htm'
 NDETAIL='https://www.nagano-jinjacho.jp/shibu/04nansin/03hani/6088.htm'
 def nagano_index(href=NDETAIL,address='下伊那郡阿智村伍和5664番地1イ号'):

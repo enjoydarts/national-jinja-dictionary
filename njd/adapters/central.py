@@ -199,12 +199,12 @@ def parse_tottori(html):
 def parse_shiga(html):
     records=[]
     # Pair each title with its immediately following postal-address span.
-    pattern=r'<a\b[^>]*href=["\']([^"\']*view:oid=(\d+))[^>]*>(.*?)</a>\s*<br\s*/?>\s*(?:&nbsp;|\s)*<span[^>]*>(〒.*?)</span>'
+    pattern=r'<a\b[^>]*href=["\']([^"\']*view:oid=(\d+)[^"\']*)["\'][^>]*>(.*?)</a>\s*<br\s*/?>\s*(?:&nbsp;|\s)*<span[^>]*>(〒.*?)</span>'
     for i,m in enumerate(re.finditer(pattern,html,re.S|re.I),1):
         name=re.sub(r'^〔[^〕]*〕\s*','',clean(Document(m[3]).root.text()))
         address=re.sub(r'^〒\d{7}\s*','',clean(Document(m[4]).root.text()))
         if not name or not re.search('[市町村]',address):continue
-        records.append(dict(name=name,reading_raw='',address=address,source_id=m[2],
+        records.append(dict(name=name,reading_raw='',address=address,source_id=m[2],href_raw=m[1],
             locator=f'a.news_title[{i}] + postal address span',evidence=clean(Document(m[0]).root.text())))
     return records
 

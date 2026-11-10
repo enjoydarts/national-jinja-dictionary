@@ -1,10 +1,11 @@
 """Inspect recorded official detail links; emit independent primary-reading proposals."""
 import argparse
 import hashlib
+from html import unescape
 from pathlib import Path
 import re
-from urllib.parse import urlsplit, urljoin
-from njd.adapters.central import Document as CentralDocument, cells as central_cells, clean
+from urllib.parse import urlsplit, urljoin, parse_qs
+from njd.adapters.central import Document as CentralDocument, cells as central_cells, clean, decode_html, parse_shiga, parse_shiga_detail
 from njd.corrections import correction_problems
 from njd.http import Client, FetchError
 from njd.normalize import normalize_reading
@@ -13,13 +14,20 @@ from njd.wikipedia import Document, Node, external_directory
 
 HOST='www.shimane-jinjacho.or.jp'
 SOURCES=dict(shimane=dict(host=HOST,detail=r'/[a-z]+/[0-9a-f]{40}\.html'),
-    nagano=dict(host='www.nagano-jinjacho.jp',detail=r'/shibu/(?:[a-zA-Z0-9_-]+/)+[a-zA-Z0-9_-]+\.html?'))
+    nagano=dict(host='www.nagano-jinjacho.jp',detail=r'/shibu/(?:[a-zA-Z0-9_-]+/)+[a-zA-Z0-9_-]+\.html?'),
+    shiga=dict(host='www.shiga-jinjacho.jp',detail=r'/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail\.html'))
 
 
 def detail_url(url,listing_url=None,source='shimane'):
     """Only previously recorded public detail links on the known agency host."""
     try:
         p=urlsplit(url or '');listing=urlsplit(listing_url or '');spec=SOURCES[source]
+        if source=='shiga':
+            q=parse_qs(p.query,keep_blank_values=True)
+            return (p.scheme=='https' and p.netloc==spec['host'] and not p.fragment
+                and bool(re.fullmatch(spec['detail'],p.path)) and set(q)=={'mode:view','view:oid'}
+                and q['mode:view']==['1'] and len(q['view:oid'])==1 and bool(re.fullmatch(r'[0-9]+',q['view:oid'][0]))
+                and (listing_url is None or _shiga_index_url(listing_url)))
         return (p.scheme=='https' and p.netloc==spec['host'] and not p.query and not p.fragment
             and bool(re.fullmatch(spec['detail'],p.path))
             and (listing_url is None or listing.scheme in ('http','https') and listing.netloc==spec['host']))
@@ -29,6 +37,15 @@ def detail_url(url,listing_url=None,source='shimane'):
 def parse_detail(page,name,source='shimane'):
     if not detail_url(page.url,source=source):raise ValueError('untrusted official detail URL')
     if source=='nagano':return parse_nagano_detail(page,name)
+    if source=='shiga':
+        observed=parse_shiga_detail(decode_html(page))
+        if not observed or observed['name_raw']!=name:raise ValueError('one exact agency-listed title, literal kana and location required')
+        return dict(observed,url=page.url,title=name+' | 滋賀県神社庁',source_kind='agency',
+            checked_at=page.fetched_at,fetched_at=page.fetched_at,page_hash=page.sha256,
+            agency_code=parse_qs(urlsplit(page.url).query)['view:oid'][0],
+            excerpt=observed['name_display_raw']+' / '+observed['address_raw'],
+            locator='div.j_title first literal kana; separate alias; unique table row 鎮座地',
+            verification_method='Exact agency-linked name/native ID and literal kana; full-name and location validation performed before proposal. Alias not registered.')
     boxes=[n for n in Document(page.text).root.all('table') if n.has_class('address-detail')]
     if len(boxes)!=1:raise ValueError('one address-detail table required')
     rows=[]
@@ -74,6 +91,40 @@ def nagano_links(page):
             result.append(dict(name_raw=values[0],address_raw=values[2],url=url,index_url=page.url,index_page_hash=page.sha256,
                 index_checked_at=page.fetched_at,index_locator=f'table tr[{i}] exact 神社名/〒/住所 row; first cell a[href]',
                 index_excerpt=values[0]+' / '+values[2]))
+    return result
+
+
+def _shiga_index_url(url):
+    try:
+        p=urlsplit(url or '');q=parse_qs(p.query,keep_blank_values=True)
+        return (p.scheme=='https' and p.netloc==SOURCES['shiga']['host'] and not p.fragment
+            and p.path=='/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html'
+            and set(q)<={'mode:search','view:term','view:page'} and bool(q)
+            and all(len(v)==1 for v in q.values())
+            and q.get('mode:search',['1'])==['1']
+            and all(re.fullmatch(r'[0-9]+',v[0]) for k,v in q.items() if k!='mode:search'))
+    except ValueError:return False
+
+
+def shiga_links(page):
+    if not _shiga_index_url(page.url):raise ValueError('untrusted Shiga index URL')
+    html=decode_html(page);root=CentralDocument(html).root
+    bases=[b.attrs['href'] for b in root.find('base') if b.attrs.get('href')]
+    if len(bases)>1:raise ValueError('ambiguous Shiga index base')
+    base=urljoin(page.url,bases[0]) if bases else page.url
+    rows=parse_shiga(html);counts={}
+    for row in rows:counts[row['source_id']]=counts.get(row['source_id'],0)+1
+    result=[]
+    for row in rows:
+        if counts[row['source_id']]!=1:continue
+        # The URL must come from this exact anchor/postal-span pair, never
+        # from another anchor elsewhere on the index with a matching name.
+        href=row['href_raw'];url=urljoin(base,unescape(href))
+        if not detail_url(url,page.url,'shiga'):continue
+        if parse_qs(urlsplit(url).query)['view:oid']!=[row['source_id']]:continue
+        result.append(dict(name_raw=row['name'],address_raw=row['address'],source_id=row['source_id'],url=url,
+            index_url=page.url,index_page_hash=page.sha256,index_checked_at=page.fetched_at,
+            index_locator=row['locator'],index_excerpt=row['evidence'],href_raw=href,base_href=bases[0] if bases else None))
     return result
 
 
@@ -191,17 +242,20 @@ def research(data_dir,state_dir,client,*,source='shimane',limit=0,refresh=False,
         saved=dict(fingerprint=fingerprint(target),expected_source_hash=target['entry'].get('source_hash'),url=url,status='inspected')
         try:
             proof={}
-            if source=='nagano':
+            if source in ('nagano','shiga'):
                 index=f.get('listing_url')
-                if not _index_url(index):raise ValueError('unknown or cross-host Nagano listing URL')
+                index_valid=_index_url if source=='nagano' else _shiga_index_url
+                link_parser=nagano_links if source=='nagano' else shiga_links
+                if not index_valid(index):raise ValueError('unknown or cross-host agency listing URL')
                 if index not in index_cache:
                     try:
                         index_page=client.fetch(index,refresh=refresh)
                         if index_page.url!=index:raise ValueError('index redirected away from recorded listing URL')
-                        index_cache[index]=nagano_links(index_page)
+                        index_cache[index]=link_parser(index_page)
                     except (FetchError,OSError,UnicodeError,ValueError) as exc:index_cache[index]=exc
                 if isinstance(index_cache[index],Exception):raise index_cache[index]
                 matches=[row for row in index_cache[index] if (row['name_raw'],row['address_raw'])==(f.get('listed_name'),f.get('address'))]
+                if source=='shiga':matches=[row for row in matches if row['source_id']==f.get('native_source_id')]
                 if len(matches)!=1:raise ValueError('no unique exact acquired name/address index row with official detail link')
                 proof=matches[0];url=proof['url'];saved.update(url=url,index_proof=proof)
             if not detail_url(url,f.get('listing_url'),source):raise ValueError('native detail URL missing, unknown or outside the recorded official host')
@@ -210,10 +264,16 @@ def research(data_dir,state_dir,client,*,source='shimane',limit=0,refresh=False,
             if page.url!=url:raise ValueError('detail redirected away from recorded native URL; requires review')
             ref=parse_detail(page,f.get('listed_name',''),source)
             ref.update({k:v for k,v in proof.items() if k.startswith('index_')})
+            if source=='shiga':
+                if ref['agency_code']!=f.get('native_source_id'):raise ValueError('agency detail native ID differs')
+                ref['index_proof']=proof;ref['reading_scope']='partial_or_absent';saved['reference']=ref
+                _full_reading(ref['name_raw'],ref['reading_raw'])
+                ref['reading_scope']='full_name'
             saved['reference']=ref;saved['proposal']=proposal(target,ref)
         except ValueError as exc:saved['pending_reason']=str(exc)
         except (FetchError,OSError,UnicodeError) as exc:saved.update(status='failed',error=str(exc))
         records[eid]=saved;checkpoint()
+        if source=='shiga' and saved.get('status')=='failed':break
     return checkpoint()
 
 
