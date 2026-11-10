@@ -31,6 +31,23 @@ class AgencyDetailsTests(unittest.TestCase):
         self.assertEqual(ref['reading_raw'],'かがじんじゃ');self.assertEqual(ref['agency_code'],'02029')
         self.assertEqual(ref['address_raw'],'松江市島根町加賀1490番地');self.assertEqual(ref['source_kind'],'agency')
         self.assertIn('正称',ref['locator']);self.assertIn('かがじんじゃ',ref['excerpt'])
+    def test_literal_jinja_reading_of_sha_name_survives_fresh_and_resumed_research(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);data=self.setup_data(root/'data')
+            name='例神々社'
+            data['facilities'][0].update(listed_name=name,name_raw=name)
+            data['entries'][0]['surface']=name
+            write_json(root/'data/sources/shimane.json',data)
+            client=FixtureClient({URL:html(name=name,reading='れいじんじゃ')})
+            first=a.research(root/'data',root/'state',client)
+            self.assertEqual((first['proposals'],first['pending']),(1,0))
+            client.calls.clear()
+            self.assertEqual(a.research(root/'data',root/'state',client)['proposals'],1)
+            self.assertEqual(client.calls,[])
+            saved=load_dataset(root/'state/proposals.json')['entries']['e0']
+            self.assertEqual(saved['references'][0]['reading_raw'],'れいじんじゃ')
+            self.assertEqual(saved['changes']['reading'],'れいじんじゃ')
+
     def test_malformed_duplicate_and_alias_deity_readings_cannot_substitute(self):
         bodies=[html(reading=''),html(reading='かが'),html(name='別神社'),html(reading='かがじんじゃ、かかじんじゃ'),html().replace('<td>ふりがな</td><td>かがじんじゃ</td>','<td>主祭神</td><td>かがじんじゃ</td>'),html()+html(),html().replace('<td>02029</td>','<td></td>'),html().replace('<td>鎮座地</td>','<td>所在地</td>')]
         for body in bodies:
@@ -137,6 +154,29 @@ class ShigaAgencyTests(unittest.TestCase):
             saved=load_dataset(root/'state/state/progress.json')['entries']['e0']
             self.assertEqual(saved['reference']['reading_raw'],'レイテンワカミヤ')
             self.assertEqual(saved['reference']['reading_scope'],'partial_or_absent')
+
+    def test_resume_revalidates_legacy_proposal_without_refetching(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);self.setup_data(root/'data')
+            data=load_dataset(root/'data/sources/shiga.json');name='例天神社・若宮八幡宮'
+            data['facilities'][0].update(listed_name=name,name_raw=name)
+            data['entries'][0]['surface']=name
+            write_json(root/'data/sources/shiga.json',data)
+            client=FixtureClient({SINDEX:shiga_index().replace('例神社',name),
+                                  SDETAIL:shiga_detail('レイテンワカミヤ').replace('例神社',name)})
+            # Simulate a saved proposal produced before compound-name validation.
+            with patch.object(a,'_full_reading',return_value='れいてんわかみや'):
+                self.assertEqual(a.research(root/'data',root/'state',client,source='shiga')['proposals'],1)
+            client.calls.clear()
+            result=a.research(root/'data',root/'state',client,source='shiga')
+            self.assertEqual((result['proposals'],result['pending']),(0,1))
+            self.assertEqual(client.calls,[])
+            saved=load_dataset(root/'state/state/progress.json')['entries']['e0']
+            self.assertNotIn('proposal',saved)
+            self.assertEqual(saved['reference']['reading_raw'],'レイテンワカミヤ')
+            self.assertEqual(saved['reference']['reading_scope'],'partial_or_absent')
+            self.assertIn('combined',saved['pending_reason'])
 
     def test_unknown_link_host_native_and_index_address_cannot_bind(self):
         for index in [shiga_index(SDETAIL.replace('www.shiga-jinjacho.jp','example.test')),

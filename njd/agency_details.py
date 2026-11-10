@@ -141,7 +141,7 @@ def _full_reading(name,raw):
     if re.search(r'[・･、,，/／＆&＋+]',name):
         raise ValueError('combined shrine names require individual full-reading review')
     reading=normalize_reading(raw)
-    suffixes={'神社':('じんじゃ','じんしゃ','しんじゃ','しんしゃ'),'神宮':('じんぐう',),'大社':('たいしゃ','だいしゃ','おおやしろ'),'宮':('ぐう','みや','きゅう'),'社':('しゃ','やしろ')}
+    suffixes={'神社':('じんじゃ','じんしゃ','しんじゃ','しんしゃ'),'神宮':('じんぐう',),'大社':('たいしゃ','だいしゃ','おおやしろ'),'宮':('ぐう','みや','きゅう'),'社':('しゃ','やしろ','じんじゃ')}
     for suffix,endings in suffixes.items():
         if name.endswith(suffix):
             if not reading.endswith(endings):raise ValueError('explicit reading lacks full shrine-name ending; requires review')
@@ -229,7 +229,15 @@ def research(data_dir,state_dir,client,*,source='shimane',limit=0,refresh=False,
             if saved.get('status')=='failed':errors+=1;continue
             if saved.get('status')!='inspected':unvisited+=1;continue
             value=saved.get('proposal')
-            if value and not correction_problems(value,target['facility'],target['entry'],target['source']):proposals[eid]=value
+            if value and not correction_problems(value,target['facility'],target['entry'],target['source']):
+                # Old checkpoints may predate stricter full-name validation.
+                # Re-evaluate saved evidence without another network request.
+                try:_full_reading(target['facility'].get('listed_name',''),value['changes'].get('reading',''))
+                except ValueError as exc:
+                    saved['pending_reason']=str(exc);saved.pop('proposal',None)
+                    if saved.get('reference'):saved['reference']['reading_scope']='partial_or_absent'
+                    pending+=1
+                else:proposals[eid]=value
             else:pending+=1
         summary=dict(source=source,targets=len(selected),proposals=len(proposals),pending=pending,errors=errors,unvisited=unvisited,
             complete=not errors and not unvisited,inspection_scope='recorded eligible agency detail links only; inspection completion is not nationwide coverage',
