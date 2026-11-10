@@ -108,6 +108,22 @@ def _reference_matches(ref,facility,entry,changes):
     return False
 
 
+def _agency_reading_compatible(name,raw,scope,full):
+    """Compare literal evidence, never construct a reading from a stem.
+
+    An already supplied full reading may have only the stated shrine-name
+    ending after the agency's stem. Prefix agreement cannot hide extra sounds.
+    """
+    try:stem=normalize_reading(raw)
+    except (TypeError,ValueError):return False
+    if stem==full:return True
+    if scope=='full_name' or not full.startswith(stem):return False
+    suffixes=[('神社',('じんじゃ','じんしゃ','しんじゃ','しんしゃ')),('神宮',('じんぐう',)),
+        ('大社',('たいしゃ','だいしゃ','おおやしろ')),('宮',('ぐう','みや','きゅう')),('社',('しゃ','やしろ'))]
+    endings=next((endings for suffix,endings in suffixes if name.endswith(suffix)),())
+    return full[len(stem):] in endings
+
+
 def correction_problems(correction,facility,entry,source=None):
     problems=[]
     if not isinstance(correction,dict):return ['invalid correction object']
@@ -137,6 +153,7 @@ def correction_problems(correction,facility,entry,source=None):
     if '<' in changes.get('surface','') or '>' in changes.get('surface',''):problems.append('corrected surface is not plain text')
     refs=correction.get('references')
     if not isinstance(refs,list) or not refs:return problems+['missing inspected references']
+    registry_present=any(isinstance(r,dict) and r.get('source_kind')=='government_corporate_register' for r in refs)
     name_supported='surface' not in changes;reading_supported='reading' not in changes;identity_supported=False
     for ref in refs:
         if not isinstance(ref,dict):problems.append('invalid reference object');continue
@@ -148,6 +165,13 @@ def correction_problems(correction,facility,entry,source=None):
         if not ref.get('name_raw') or not ref.get('excerpt'):
             problems.append('reference name or actual excerpt missing')
         bound=_reference_matches(ref,facility,entry,changes)
+        if (registry_present and bound and 'reading' in changes and ref.get('reading_raw')
+            and ref.get('source_kind') in ('agency','official_agency')
+            and ref.get('reading_scope') in ('full_name','partial_or_absent')
+            and _url(ref.get('url')) and _url(facility.get('listing_url'))
+            and urlsplit(ref.get('url','')).hostname==urlsplit(facility.get('listing_url','')).hostname
+            and not _agency_reading_compatible(ref['name_raw'],ref['reading_raw'],ref['reading_scope'],changes['reading'])):
+            problems.append('proposed registry reading conflicts with literal agency kana; prefix agreement alone is insufficient')
         if bound and ref.get('name_raw') and ref.get('name_raw') in ref.get('excerpt','') and ref.get('address_raw') and ref.get('address_raw') in ref.get('excerpt',''):
             identity_supported=True
         if bound and 'surface' in changes and ref.get('name_raw')==changes['surface'] and changes['surface'] in ref.get('excerpt',''):

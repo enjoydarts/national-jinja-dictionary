@@ -35,6 +35,32 @@ def aza_reference():
     return d,c,ref
 
 
+class AgencyRegistryReadingTest(unittest.TestCase):
+    def candidate(self,raw,full,scope='partial_or_absent'):
+        d=build([row(name='架空神社',reading_raw='')]);c=correction(d,{'reading':full})
+        value=c['entries'][d['entries'][0]['id']];ref=value['references'][0]
+        ref['source_kind']='government_corporate_register'
+        primary=copy.deepcopy(ref);primary.update(url=d['facilities'][0]['listing_url'],source_kind='agency',
+            reading_raw=raw,reading_scope=scope,excerpt='架空神社 '+raw+' '+ref['address_raw'])
+        value['references'].insert(0,primary)
+        return d,c
+
+    def test_prefix_only_agreement_cannot_hide_an_extra_sound(self):
+        for raw,full in [('カクウ','かくうだじんじゃ'),('カク','かくうじんじゃ')]:
+            with self.subTest(raw=raw,full=full):
+                d,c=self.candidate(raw,full)
+                self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_exact_stem_and_full_readings_do_not_generate_any_suffix(self):
+        for raw,scope in [('カクウ','partial_or_absent'),('カクウジンジャ','full_name')]:
+            d,c=self.candidate(raw,'かくうじんじゃ',scope);before=copy.deepcopy(c)
+            out=apply_corrections(d,c);self.assertEqual(len(eligible(out)),1)
+            self.assertEqual(out['entries'][0]['reading'],'かくうじんじゃ');self.assertEqual(c,before)
+
+    def test_explicit_full_agency_reading_must_agree_with_proposed_reading(self):
+        d,c=self.candidate('カクウジンジャ','かくうだじんじゃ','full_name')
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
+
 class AzaReferenceTest(unittest.TestCase):
     def test_additional_aza_with_observed_subject_link_resolves_name_only_hold(self):
         d,c,ref=aza_reference();before=copy.deepcopy(d)
