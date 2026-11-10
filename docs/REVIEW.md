@@ -352,3 +352,13 @@ python3 -m njd build --formats mozc,macos,json,csv
 | [賢木神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=149) | 賢木神社 / サカキ | 滋賀県彦根市安清町149 | 賢木神社 / 滋賀県彦根市安清町１番１号 / カタキジンジャ |
 | [里宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=642) | 里宮神社 / サトミヤ | 滋賀県甲賀市信楽町多羅尾2017 | 里宮神社 / 滋賀県甲賀市信楽町多羅尾２１１６番地 / サトミヤジンジャ |
 | [高宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=643) | 高宮神社 / タカミヤ | 滋賀県甲賀市信楽町多羅尾646 | 高宮神社 / 滋賀県甲賀市信楽町多羅尾６５６番地 / タカミヤジンジャ |
+
+## 滋賀の掲載1434施設の詳細確認
+
+一覧の同一行にある実リンク・施設番号・掲載名・所在地を、1434施設すべての詳細と照合しました。1432施設には名称・カナ・番地を含む鎮座地の原文参照を `data/sources/shiga.json` の `agency_detail_reading_research` に保存し、残る2施設の抽出不足も理由と出典を保持しています。短縮カナに語尾を追加していません。
+
+独立照合した新規30施設の補正を追加しました。22施設は神社庁詳細が明記する全文カナ、8施設は同じ詳細の全住所と国税庁の一意な存続法人の名称・全文カナを照合しています。国税庁8件は保存した2026年10月30日版の実CSVから再抽出して確認しました。同名・同町でも施設番号と番地が異なる八幡神社・八坂神社・若宮神社は別施設として保持しています。既存の補正・除外・人手判断を変更していません。既存380施設と合わせ410施設が適格、1024施設の読みは未確定です。
+
+[平野天神社・若宮八幡宮（施設番号406）](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=406)は東近江市土器町1051、カナ原文は「ヒラノテンワカミヤ」です。最後が「みや」で終わるだけでは連記された名称全体の読みの根拠にならないため保留しました。各名称の全文読みの個別根拠が必要です。複数名称の区切りを持つ掲載名は自動で確認済みにせず、原文を残して個別確認へ回します。
+
+1434詳細の確認完了と、全文読みの確認・県内全神社の網羅を区別します。実際のIME取り込みは未確認です。

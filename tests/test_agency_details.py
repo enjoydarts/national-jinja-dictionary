@@ -122,6 +122,22 @@ class ShigaAgencyTests(unittest.TestCase):
             self.assertEqual(saved['reference']['reading_raw'],'レイ')
             client.calls.clear();a.research(root/'data',root/'state',client,source='shiga');self.assertEqual(client.calls,[])
 
+    def test_combined_names_cannot_be_verified_by_the_final_suffix_alone(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);self.setup_data(root/'data')
+            data=load_dataset(root/'data/sources/shiga.json')
+            name='例天神社・若宮八幡宮'
+            data['facilities'][0].update(listed_name=name,name_raw=name)
+            data['entries'][0]['surface']=name
+            write_json(root/'data/sources/shiga.json',data)
+            client=FixtureClient({SINDEX:shiga_index().replace('例神社',name),
+                                  SDETAIL:shiga_detail('レイテンワカミヤ').replace('例神社',name)})
+            result=a.research(root/'data',root/'state',client,source='shiga')
+            self.assertEqual((result['proposals'],result['pending']),(0,1))
+            saved=load_dataset(root/'state/state/progress.json')['entries']['e0']
+            self.assertEqual(saved['reference']['reading_raw'],'レイテンワカミヤ')
+            self.assertEqual(saved['reference']['reading_scope'],'partial_or_absent')
+
     def test_unknown_link_host_native_and_index_address_cannot_bind(self):
         for index in [shiga_index(SDETAIL.replace('www.shiga-jinjacho.jp','example.test')),
                       shiga_index(SDETAIL.replace('oid=7','oid=8')),

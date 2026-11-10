@@ -136,6 +136,10 @@ def _index_url(url):
 
 
 def _full_reading(name,raw):
+    # A final 宮/社 sound cannot establish readings for multiple listed names.
+    # Keep the literal evidence pending for individual name/reading review.
+    if re.search(r'[・･、,，/／＆&＋+]',name):
+        raise ValueError('combined shrine names require individual full-reading review')
     reading=normalize_reading(raw)
     suffixes={'神社':('じんじゃ','じんしゃ','しんじゃ','しんしゃ'),'神宮':('じんぐう',),'大社':('たいしゃ','だいしゃ','おおやしろ'),'宮':('ぐう','みや','きゅう'),'社':('しゃ','やしろ')}
     for suffix,endings in suffixes.items():
