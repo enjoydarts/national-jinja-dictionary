@@ -8065,6 +8065,20 @@
           }
         ],
         "inspection_evidence_reference": "data/sources/gifu.json#collection.pages",
+        "latest_acquisition_followup": {
+          "canonical_facilities_added": 0,
+          "failed_pages": [
+            {
+              "reason": "<urlopen error [Errno 61] Connection refused>",
+              "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=74&jinjya=%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
+            }
+          ],
+          "finished_at": "2026-11-10T04:03:15.363270+00:00",
+          "network_retries": 0,
+          "request_interval_seconds": 10,
+          "scope": "Single ordinary retry after a cooldown using successful response cache; stopped at connection refusal. Cause not established; remaining scope retained.",
+          "started_at": "2026-11-10T04:03:13.556094+00:00"
+        },
         "listing_authority_status": "agency_site",
         "pages_fetched": 1108,
         "previous_acquisition_failures": [
@@ -40953,6 +40967,22 @@
           "source_kind": "youth_association_scope_statement",
           "status": 200,
           "url": "https://www.m-shinsei.jp/history_9/"
+        },
+        {
+          "additional_opened_urls": [
+            "https://miyazaki-shrine.jp/how-to-use"
+          ],
+          "authority_status": "prefectural_agency_publication_or_delegation_unconfirmed",
+          "body_opened": true,
+          "checked_on": "2026-11-10",
+          "contact_page_result": "https://miyazaki-shrine.jp/contact was not retrieved (cache miss)",
+          "facility_records_adopted": 0,
+          "finding": "Opened home and usage text did not establish prefectural agency operation or delegation. Not substituted for agency inventory.",
+          "inspection_method": "Opened public pages through browser search tool; raw bytes and page hash not recorded.",
+          "observed_scope_claim": "県内101社の神社情報を紹介するデジタルスタンプアプリ",
+          "scope_claim_not_verified_as_inventory": true,
+          "source_kind": "discovery_candidate_only",
+          "url": "https://miyazaki-shrine.jp/"
         }
       ],
       "agency_name": "宮崎県神社庁",
