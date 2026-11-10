@@ -119,9 +119,9 @@ def merge_collections(data_dir,*,states=None):
     for key,source in sources.items():
         code=source['prefecture_code']
         if states[code]['status']=='not_collected':
-            reference_only=source.get('listing_basis')=='wikipedia_reference'
+            reference_only=source.get('listing_basis') in ('wikipedia_reference','association_reference')
             states[code]=dict(states[code],status='collected_reference' if reference_only else 'collected',
-                reason=('saved reference-only Wikipedia records; agency publication not asserted' if reference_only
+                reason=('saved reference-only records; agency publication not asserted' if reference_only
                     else 'saved official listing records; coverage stated per source'),source_key=key)
     facilities.sort(key=lambda f:(f['prefecture_code'],f['id']))
     entries.sort(key=lambda e:(e['facility_id'],e['id']))
@@ -130,7 +130,7 @@ def merge_collections(data_dir,*,states=None):
         source_rows_observed=sum(s.get('source_rows_observed',0) for s in sources.values()),
         selected_rows=len(facilities),
         coverage=('observed agency listings and user-authorized reference-only records; see source basis and prefecture scope'
-            if any(s.get('listing_basis')=='wikipedia_reference' for s in sources.values())
+            if any(s.get('listing_basis') in ('wikipedia_reference','association_reference') for s in sources.values())
             else 'observed official listings only; see each prefecture state and source coverage'),
         redistribution_status='see source-specific conditions'))
     issues=blocking_problems(result)

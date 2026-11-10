@@ -197,3 +197,13 @@ Wikipediaの施設情報表は主名称を説明する冒頭節のものだけ�
 原資料が複数施設を同じ名称・全文読みの対象として説明している場合も、各施設とその説明・個別所在地を残します。識別用の見出し表示は `name_display_raw` に保持し、語としては本文で明示された主名称を使います。共有する境内・所在地と、2つの神社の名称・読みが明示される場合は、その対応の原文と順序を保存します。別称や略称の追加とは区別します。
 
 個別参照の施設には `curated_source_record=true` を付け、取得案が施設を欠落させる場合は保存を拒否します。取得済みと表示された完全snapshotにも適用します。参照が変わる場合は個別照合後の `reviewed_curated=True` を要求し、旧参照を `curated_reference_history` に保持します。保護フラグと旧参照履歴は再取得案から消えても復元します。これは資料の保存保護であり、状態を根拠なく確認済みにする指定ではありません。
+
+### 神道青年会の独自紹介資料
+
+`data/sources/miyazaki_youth.json`は宮崎県神道青年会の独自発行資料で、`listing_basis=association_reference`、`reading_source_kind=association`、`official_agency_listing_verified=false`を持ちます。発行者の実ページ・hash・確認日は`authority_reference`に、一覧の実掲載枠は施設の`source_reference`と`source_observations`に保存します。詳細URLは実hrefを内部source IDとして使い、改称等による変更は従来の施設ID照合を通します。神社庁・Wikipediaへ再分類しません。
+
+原見出し`header_raw`から名称と全文カナを分離します。後置された地域名は、同枠の住所に実在する文字列で、神社名の接尾辞でない場合のみ`header_location_suffix_raw`へ分離します。住所中の「大字」「字」の除去はこの照合だけに使用し、原住所・出力名は書き換えません。別称・複数名称・語幹カナ・項目のずれは保留します。郵便番号は元の空欄・記号を保持し、県・施設同一性や読みの推定に使いません。
+
+既存の別情報源と名称が一致する場合、または数値間の番地表記・県名・大字の比較処理後に住所が一致する場合は`collection.identity_reviews`に原観測と候補IDを保存します。同名別施設の可能性もあるため、この検出だけで統合しません。抽出前の保留は`observation_reviews`に置き、未確定な施設数を作りません。正本の各施設と、未採用の掲載枠を混同しないでください。`profile_audit`は一覧と同じ発行者の別詳細ページの対照であり、独立した第三者確認やIME取り込みの成功ではありません。
+
+団体資料の再利用条件は未確認です。WikipediaのCC BY-SAやコードのMITを適用しません。リリースの`ATTRIBUTION.json`では`association`と`wikipedia`を分けます。生成物の`source-reviews.json`は未確定な資料・同一性候補の参照用で、施設の`pending.json`とは別に扱います。

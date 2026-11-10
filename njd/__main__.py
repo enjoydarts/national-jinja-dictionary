@@ -61,6 +61,13 @@ def _review_lists(data,work):
     facilities={f['id']:f for f in data['facilities']}
     for status in ['pending','excluded']:
         write_json(work/(status+'.json'),[dict(entry=e,facility=facilities[e['facility_id']]) for e in data['entries'] if e['status']==status])
+    sources=data['collection'].get('sources',{data['collection'].get('source_key','unknown'):data['collection']})
+    pending=[]
+    for key,source in sorted(sources.items()):
+        fields={field:source[field] for field in ('article_reviews','observation_reviews','identity_reviews') if source.get(field)}
+        if fields:pending.append(dict(source_key=key,prefecture_code=source.get('prefecture_code'),listing_basis=source.get('listing_basis','agency'),**fields))
+    write_json(work/'source-reviews.json',dict(schema_version=1,sources=pending,
+        counting_notice='Unadopted source observations/articles are not facility counts; identity candidates may already be represented in canonical data.'))
 
 def build_outputs(data,work,formats,requested_prefecture=None,sample_names=(),output_dir=None):
     unknown=set(formats)-FORMATS.keys()

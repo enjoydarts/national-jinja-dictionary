@@ -62,11 +62,18 @@ def create_release(data_dir,output_dir,version,source_commit):
         item={key:ref[key] for key in ('url','title','revision_id','permalink','license_url') if key in ref}
         item['processing_notice']='日本語版Wikipediaから名称・読み・所在地の事実項目を抽出。読みのカタカナはひらがなに機械変換。'
         credits[(ref.get('url',''),str(ref.get('revision_id','')))]=item
-    write_json(destination/'ATTRIBUTION.json',dict(wikipedia=[credits[key] for key in sorted(credits)]))
+    association=[dict(publisher=s['source_publisher'],source_key=k,listing_basis=s['listing_basis'],
+        authority_reference=s.get('authority_reference'),redistribution_status=s.get('redistribution_status'),
+        data_use_conditions=s.get('data_use_conditions','unconfirmed'),
+        processing_notice='神道青年会の独自神社紹介から名称・読み・所在地の事実項目を抽出。神社庁掲載とは区別。本文・画像は配布しない。')
+        for k,s in sorted(data['collection'].get('sources',{}).items()) if s.get('listing_basis')=='association_reference']
+    write_json(destination/'ATTRIBUTION.json',dict(wikipedia=[credits[key] for key in sorted(credits)],association=association))
     totals=report['totals']
     reference_count=totals.get('source_basis_counts',{}).get('wikipedia_reference',{}).get('facilities',0)
     description=('神社庁の公式掲載情報と、利用できない掲載情報を補うWikipediaの参考資料に基づく辞書です。出典区分と収集済み範囲はreport.jsonで確認してください。'
         if reference_count else '調査した都道府県神社庁の公式掲載情報に基づく辞書です。収集済み範囲はreport.jsonで確認してください。')
+    if association:
+        description='神社庁の公式掲載情報と、別区分の参考資料（Wikipedia・宮崎県神道青年会）に基づく辞書です。実際に含む出典区分と収集済み範囲はreport.jsonで確認してください。'
     lines=[f'# 全国神社辞書 {version}','',
         description,'',
         f'- 正本コミット: `{source_commit}`',
@@ -81,6 +88,7 @@ def create_release(data_dir,output_dir,version,source_commit):
         '保留形式は仕様確認不足のためファイルを生成していません。全国の全神社を網羅したとは主張しません。',
         '出典と検証状態は管理用JSON/CSV・サンプルmanifestに含まれます。',
         'Wikipedia由来の出典・版・ライセンスはATTRIBUTION.jsonに記載しています。参考資料単独の収録を神社庁掲載確認済み件数に加えていません。',
+        *(['宮崎県神道青年会の資料の再利用条件は未確認です。MIT・WikipediaのCC BY-SAを適用しません。出典と状態はATTRIBUTION.jsonを参照してください。'] if association else []),
         'ソースコードはMIT。収集元データの利用条件は正本の出典別メタデータを参照してください。','']
     notes='\n'.join(lines)
     (destination/'README.md').write_text(notes,encoding='utf-8')

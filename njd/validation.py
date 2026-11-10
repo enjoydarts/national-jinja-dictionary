@@ -17,6 +17,7 @@ def _url(v):
 
 def validate(data: dict) -> list[dict]:
     from njd.reference_sources import BASIS as REFERENCE_BASIS,reference_problems
+    from njd.association_sources import BASIS as ASSOCIATION_BASIS,reference_problems as association_problems,BASE as ASSOCIATION_BASE,PUBLISHER as ASSOCIATION_PUBLISHER
     problems=[]
     def add(kind,rid,reason,severity='error'): problems.append(dict(kind=kind,id=rid,reason=reason,severity=severity))
     if not isinstance(data,dict): return [dict(kind='global',id=None,reason='dataset must be an object')]
@@ -50,8 +51,14 @@ def validate(data: dict) -> list[dict]:
                 if not _url(r.get(field)): add(kind,rid,'missing/invalid '+field)
                 if discovery_only(r.get(field)):add(kind,rid,'discovery-only directory cannot serve as listing evidence')
     article_facilities={}
+    association_facilities={}
     for f in fs:
         ref=f.get('source_reference')
+        if isinstance(ref,dict) and ref.get('source_kind')=='shinto_association' and isinstance(ref.get('profile_url'),str):
+            key=ref['profile_url']
+            if key in association_facilities and association_facilities[key]!=f.get('id'):
+                add('global',None,'duplicate association profile facility; identity reconciliation required')
+            else:association_facilities[key]=f.get('id')
         if (not isinstance(ref,dict) or ref.get('source_kind')!='encyclopedia'
             or type(ref.get('article_id')) is not int or ref['article_id']<=0
             or any(not isinstance(ref.get(k),str) or not ref[k] for k in ('name_raw','address_raw'))):continue
@@ -84,10 +91,10 @@ def validate(data: dict) -> list[dict]:
                 add('facility',f.get('id'),'unapplied location supplement cannot verify a facility')
         if source.get('authority_status') in ('pending','unconfirmed'):
             add('facility',f.get('id'),'official source authority not established',severity='review' if f.get('status')!='verified' else 'error')
-        if f.get('listing_basis','agency') not in ('agency',REFERENCE_BASIS):
+        if f.get('listing_basis','agency') not in ('agency',REFERENCE_BASIS,ASSOCIATION_BASIS):
             add('facility',f.get('id'),'unsupported listing basis')
         for field in ['listed_name','name_raw','prefecture','municipality','address','agency','source_locator']:
-            if field=='agency' and f.get('listing_basis')==REFERENCE_BASIS:continue
+            if field=='agency' and f.get('listing_basis') in (REFERENCE_BASIS,ASSOCIATION_BASIS):continue
             if not f.get(field):
                 if field in ('listed_name','name_raw') and f['id'] in corrected_names:continue
                 add('facility',f.get('id'),'missing '+field,severity='review' if f.get('status')!='verified' and field in ('municipality','address','listed_name','name_raw') else 'error')
@@ -123,6 +130,11 @@ def validate(data: dict) -> list[dict]:
         if source.get('listing_basis')==REFERENCE_BASIS or f.get('listing_basis')==REFERENCE_BASIS or e.get('reading_source_kind')=='encyclopedia' or wiki_provenance:
             for reason in reference_problems(f,e,source):add('facility',f.get('id'),reason)
             if e.get('reading_source_kind')=='agency':add('entry',eid,'reference-only reading mislabelled as agency')
+        association_provenance=(isinstance(reference,dict) and reference.get('source_kind')=='shinto_association'
+            or f.get('source_publisher')==ASSOCIATION_PUBLISHER or source.get('source_publisher')==ASSOCIATION_PUBLISHER
+            or f.get('listing_url','').startswith(ASSOCIATION_BASE+'/'))
+        if source.get('listing_basis')==ASSOCIATION_BASIS or f.get('listing_basis')==ASSOCIATION_BASIS or e.get('reading_source_kind')=='association' or association_provenance:
+            for reason in association_problems(f,e,source):add('facility',f.get('id'),reason)
         correction_valid=isinstance(correction,dict) and not correction_problems(correction,f,e,source)
         review_valid=reviewed_output(e.get('human_review'),f,e,source)
         if e.get('name_raw')!=f.get('listed_name'):add('entry',eid,'name raw must equal acquired agency name')
@@ -141,7 +153,7 @@ def validate(data: dict) -> list[dict]:
             human_only=review_valid and any(o.get('basis')=='user_confirmation' and o.get('reading')==e.get('reading') and o.get('surface')==e.get('surface') for o in e['human_review']['outputs'])
             if not _url(e.get('reading_url')) and not human_only: add('entry',eid,'missing/invalid reading URL')
             if not e.get('evidence'): add('entry',eid,'missing evidence')
-            if not e.get('reading_source_kind') in ('agency','shrine_official','reference','user_review','encyclopedia'): add('entry',eid,'invalid reading source kind')
+            if not e.get('reading_source_kind') in ('agency','shrine_official','reference','user_review','encyclopedia','association'): add('entry',eid,'invalid reading source kind')
             if e.get('reading_source_kind')=='agency' and e.get('reading_url')!=f.get('listing_url'):
                 add('entry',eid,'agency reading URL differs from listing')
             try:
@@ -149,7 +161,7 @@ def validate(data: dict) -> list[dict]:
                 if e.get('reading_source_kind')=='user_review':
                     if not review_valid:raise ValueError('human review no longer matches')
                     raw=e['reading']
-                elif e.get('reading_source_kind') in ('agency','encyclopedia'):
+                elif e.get('reading_source_kind') in ('agency','encyclopedia','association'):
                     raw=e.get('reading_raw','')
                 elif e.get('reading_source_kind')=='reference':
                     if not correction_valid or correction.get('changes',{}).get('reading')!=e.get('reading'):raise ValueError('reference correction not verified')
