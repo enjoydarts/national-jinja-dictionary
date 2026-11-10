@@ -209,6 +209,28 @@ def parse_shiga(html):
     return records
 
 
+def parse_shiga_detail(html):
+    """Extract literal detail fields; an observed alias is never a reading.
+
+    A kana stem remains a stem: this parser neither completes it nor verifies
+    correspondence to a registry record. Unsupported layouts fail closed.
+    """
+    root=Document(html).root
+    titles=[n for n in root.find('div') if 'j_title' in n.attrs.get('class','').split()]
+    if len(titles)!=1 or titles[0].find('img'):return None
+    display=clean(titles[0].text())
+    match=re.fullmatch(r'([^()（）]+?)\s*[（(]([ぁ-ゖァ-ヺーｦ-ﾟ]+)[)）]'
+                       r'(?:\s*～\s*[（(]([^()（）]*)[)）])?',display)
+    if not match:return None
+    addresses=[]
+    for row in root.find('tr'):
+        cs=cells(row)
+        if len(cs)==2 and clean(cs[0].text())=='鎮座地':addresses.append(clean(cs[1].text()))
+    if len(addresses)!=1 or not addresses[0]:return None
+    return dict(name_raw=match[1].strip(),name_display_raw=display,
+                reading_raw=match[2],alias_display_raw=match[3] or '',address_raw=addresses[0])
+
+
 def table_html(node):
     return ''.join('<a href="'+n.attrs['href']+'"></a>' for n in node.find('a') if n.attrs.get('href'))
 

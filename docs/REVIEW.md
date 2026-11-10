@@ -259,44 +259,82 @@ python3 -m njd build --formats mozc,macos,json,csv
 
 元の読み空欄と住所表記を保持し、国税庁の原文・CSV行・ZIP内メンバー名・hash・出典加工表示を補正に保存しています。旧652施設と合わせ、読み適格は656施設です。公開一覧352ページの走査完了と、全文読みの補完範囲は別々に数えています。
 
-## 滋賀の100詳細試作と追加76施設の全文読み
+## 滋賀の344詳細と全文読みの照合
 
-一覧1434施設のうち、保存済み国税庁資料に一意の名称・所在地・全文フリガナ候補がある344施設を抽出し、その先頭100施設について神社庁一覧の実リンクと施設ID、詳細の掲載名・番地までの鎮座地を照合しました。76件が一致し、既存90施設と合わせて166施設の読みが適格になりました。資料の実行時期・条件・hash・フリガナ原文とリンクの根拠は補正に保持しています。
+一覧1434施設のうち、保存済み国税庁資料に一意の名称・所在地・全文フリガナ候補がある344施設の詳細を調査しました。一覧の実リンク・施設ID・名称と、詳細の番地までの鎮座地を照合し、288施設の全文読みを補完しています。既存90施設と合わせ378施設が読み適格です。国税庁資料は2026-10-30現在、滋賀県file ID 28432、ZIP内メンバー25_shiga_all_20261030.csvです。
 
-18件は名称・全住所等の照合が通らず、6件は神社庁カナと国税庁読みが対応しないため保留しました。6件の語幹に「じんじゃ」等を推定追加していません。残る244候補の詳細は未調査です。国税庁は2026-10-30現在、滋賀県file ID 28432、ZIP内メンバー25_shiga_all_20261030.csvです。これは既存神社庁掲載施設の補完調査で、他の一覧から施設を追加したものではありません。
+詳細タイトルの最初のカナと末尾の別称を分離する解析へ修正し、344施設を保存済みHTMLで再照合しました。別称をカナとして表示していた保留記録を訂正しています。修正前に別称を辞書へ出力したものはありません。新たに条件を満たした10施設は実HTMLと国税庁原文から独立照合し、別称を登録せず掲載名の全文読みだけを採用しました。
 
-### 読みが食い違う6件（未登録）
+都久夫須麻神社は神社庁詳細の「ツクブスマ」と、[滋賀県観光情報の明示された全文読み・所在地](https://www.biwako-visitors.jp/spot/detail/1312/)を照合し「つくぶすまじんじゃ」を採用しました。国税庁の「ツクフスマジンジャ」は未採用の参考原文として保持しています。観光情報に併記された別称の登録は追加していません。
 
-| 神社庁詳細 | 詳細の所在地 | 神社庁カナ原文 | 国税庁の全文フリガナ原文 | 不足情報 |
-| --- | --- | --- | --- | --- |
-| [三所神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=399) | 滋賀県東近江市市辺町1081 | サンショ | ミショジンジャ | 追加の全文読み資料または利用者判断 |
-| [冠者殿神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=33) | 滋賀県大津市坂本5-24-46 | カンジャデン | カジャドノジンジャ | 追加の全文読み資料または利用者判断 |
-| [大将軍神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=32) | 滋賀県大津市坂本6-1-19 | タイショウグン | ダイショウグンジンジャ | 追加の全文読み資料または利用者判断 |
-| [忍海神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=207) | 滋賀県長浜市寺田町318 | オシウミ | ニンカイジンジャ | 追加の全文読み資料または利用者判断 |
-| [百枝天満神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=39) | 滋賀県大津市坂本6-2-28 | モモエテンマングウ | モモエテンマンジンジャ | 追加の全文読み資料または利用者判断 |
-| [菅原神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=77) | 滋賀県大津市膳所平尾町987 | スガハラ | スガワラジンジャ | 追加の全文読み資料または利用者判断 |
+残る56候補は以下の相違を保持し、辞書に出力しません。神社庁の語幹に語尾を推定追加せず、名称・字・番地を削除して一致させることもしません。原文、実リンク、hash、取得日・確認日、採用・保留理由は data/corrections.json に保存しています。元の一覧の所在地や読み空欄は変更していません。
 
-### 名称・所在地の照合が通らない18件（未登録）
+### 読みが食い違う20候補（未登録）
 
-下表の国税庁所在地は同名法人の候補です。当該神社と同一であると確定していません。字・番地・名称を削除したり置換したりして採用していません。
+国税庁欄は参考候補の原文です。名称・所在地等の照合が通らない候補については、当該施設との同一性も未確定です。
 
-| 神社庁詳細 | 詳細の名称 | 詳細の所在地原文 | 国税庁候補の所在地原文 |
+| 神社庁詳細（掲載名） | 詳細の名称・カナ原文 | 詳細の所在地原文 | 国税庁候補の名称・所在地・カナ原文 |
 | --- | --- | --- | --- |
-| [五社神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=287) | 五社神社 （ゴシャ） ～ | 滋賀県近江八幡市牧町786 | 滋賀県近江八幡市牧町７８６番地 |
-| [今宮天満宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=299) | 今宮天満宮神社 | 滋賀県近江八幡市浅小井町531 | 滋賀県近江八幡市浅小井町５３０番地 |
-| [住吉神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=202) | 住吉神社 | 滋賀県長浜市地福寺町996 | 滋賀県長浜市地福寺町８番１９号 |
-| [八幡神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=10) | 八幡神社 | 滋賀県大津市真野谷口町309 | 滋賀県大津市真野谷口町１７番３号 |
-| [八幡神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=397) | 八幡神社 | 滋賀県東近江市中羽田町169 | 滋賀県東近江市中羽田町１６８番地３５ |
-| [北野神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=144) | 北野神社 （キタノ） ～ | 滋賀県彦根市馬場1-3-10 | 滋賀県彦根市馬場１丁目３番１０号 |
-| [宇和宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=384) | 宇和宮神社 | 滋賀県栗東市蜂屋231 | 滋賀県栗東市蜂屋２３１番地１ |
-| [小槻大社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=368) | 小槻大社 （オツキ） ～ | 滋賀県栗東市下戸山1200 | 滋賀県栗東市下戸山１２００番地 |
-| [山神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=100) | 山神社 （ヤマ） ～ | 滋賀県大津市太子1-2-1 | 滋賀県大津市太子１丁目２番１１号 |
-| [市神神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=388) | 市神神社 （イチガミ） ～ | 滋賀県東近江市八日市本町15-4 | 滋賀県東近江市八日市本町１５番４号 |
-| [榊宮社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=28) | 榊宮社 | 滋賀県大津市坂本4-9-57 | 滋賀県大津市坂本４丁目９番５７号 |
-| [樹下神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=8) | 樹下神社 | 滋賀県大津市真野佐川町515 | 滋賀県大津市真野佐川町６番１７号 |
-| [河内神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=9) | 河内神社 | 滋賀県大津市真野大野549 | 滋賀県大津市真野大野１丁目１０番５号 |
-| [神明神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=204) | 神明神社 | 滋賀県長浜市勝町212 | 滋賀県長浜市勝町５２６番地 |
-| [萱野神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=115) | 萱野神社 （カヤノ） ～ | 滋賀県大津市大萱2-21-1 | 滋賀県大津市大萱２丁目２１番１号 |
-| [藤尾神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=57) | 藤尾神社 | 滋賀県大津市藤尾奥町1-1 | 滋賀県大津市藤尾奥町１０５番地 |
-| [賀茂神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=284) | 賀茂神社 （カモ） ～ | 滋賀県近江八幡市加茂町1691 | 滋賀県近江八幡市加茂町１６９１番地 |
-| [賢木神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=149) | 賢木神社 （サカキ） ～ | 滋賀県彦根市安清町149 | 滋賀県彦根市安清町１番１号 |
+| [三十八社神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=577) | 三十八社神社 / サンジュウハッシャ | 滋賀県甲賀市水口町伴中山2645 | 三十八社神社 / 滋賀県甲賀市水口町伴中山２６４５番地 / サンジュウハチシャジンジャ |
+| [三所神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=399) | 三所神社 / サンショ | 滋賀県東近江市市辺町1081 | 三所神社 / 滋賀県東近江市市辺町１０８１番地 / ミショジンジャ |
+| [二童子神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=636) | 二童子神社 / ニドウジ | 滋賀県甲賀市信楽町中野140 | 二童子神社 / 滋賀県甲賀市信楽町中野１４０番地 / ニドウシジンジャ |
+| [伊夫岐神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1000) | 伊夫岐神社 / イフキ | 滋賀県米原市伊吹603 | 伊夫岐神社 / 滋賀県米原市伊吹６０３番地 / イブキジンジャ |
+| [八宮赤山神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=836) | 八宮赤山神社 / ハチノミヤアカヤマ | 滋賀県東近江市小川町1410 | 八宮赤山神社 / 滋賀県東近江市小川町１４１０番地 / ハチミヤアカヤマジンジャ |
+| [冠者殿神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=33) | 冠者殿神社 / カンジャデン | 滋賀県大津市坂本5-24-46 | 冠者殿神社 / 滋賀県大津市坂本５丁目２４番４６号 / カジャドノジンジャ |
+| [勝手神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=668) | 勝手神社 / カツテ | 滋賀県蒲生郡竜王町岡屋1347 | 勝手神社 / 滋賀県蒲生郡竜王町大字岡屋１３４７番地 / カッテジンジャ |
+| [大将軍神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=32) | 大将軍神社 / タイショウグン | 滋賀県大津市坂本6-1-19 | 大将軍神社 / 滋賀県大津市坂本６丁目１番１９号 / ダイショウグンジンジャ |
+| [大川神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1293) | 大川神社 / オカワ | 滋賀県長浜市西浅井町余1146 | 大川神社 / 滋賀県長浜市西浅井町余１１４６番地 / オオカワジンジャ |
+| [天川命神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1209) | 天川命神社 / アマガワノミコト | 滋賀県長浜市高月町雨森1185 | 天川命神社 / 滋賀県長浜市高月町雨森１１８５番地 / アマカワノミコトジンジャ |
+| [小川原神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=934) | 小川原神社 / コガハラ | 滋賀県犬上郡甲良町小川原499 | 小川原神社 / 滋賀県犬上郡甲良町大字小川原４９９番地 / コガワラジンジャ |
+| [屋棟神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=502) | 屋棟神社 / ヤムネ | 滋賀県野洲市永原546 | 屋棟神社 / 滋賀県野洲市永原５４６番地 / ヤナムネジンジャ |
+| [忍海神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=207) | 忍海神社 / オシウミ | 滋賀県長浜市寺田町318 | 忍海神社 / 滋賀県長浜市寺田町３１８番地 / ニンカイジンジャ |
+| [意冨布良神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1250) | 意冨布良神社 / オオフラ | 滋賀県長浜市木之本町木之本488 | 意冨布良神社 / 滋賀県長浜市木之本町木之本４８８番地 / オオホラジンジャ |
+| [望湖古宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=829) | 望湖古宮神社 / ボウコフルミヤ | 滋賀県東近江市伊庭町779 | 望湖古宮神社 / 滋賀県東近江市伊庭町７７９番地 / ボウココミヤジンジャ |
+| [榊宮社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=28) | 榊宮社 / サカキノミヤシロ | 滋賀県大津市坂本4-9-57 | 榊宮社 / 滋賀県大津市坂本４丁目９番５７号 / サカキノミヤシャ |
+| [百枝天満神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=39) | 百枝天満神社 / モモエテンマングウ | 滋賀県大津市坂本6-2-28 | 百枝天満神社 / 滋賀県大津市坂本６丁目２番２８号 / モモエテンマンジンジャ |
+| [石部神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=898) | 石部神社 / イソベ | 滋賀県愛知郡愛荘町沓掛147 | 石部神社 / 滋賀県愛知郡愛荘町沓掛１４７番地 / イシベジンジャ |
+| [菅原神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=77) | 菅原神社 / スガハラ | 滋賀県大津市膳所平尾町987 | 菅原神社 / 滋賀県大津市膳所平尾町９８７番地 / スガワラジンジャ |
+| [谷王神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=999) | 谷王神社 / ヤオ | 滋賀県米原市小泉406 | 谷王神社 / 滋賀県米原市小泉４０６番地 / タニオウジンジャ |
+
+### 名称・所在地等の照合が通らない36候補（未登録）
+
+国税庁欄は参考候補の原文です。名称・所在地等の照合が通らない候補については、当該施設との同一性も未確定です。
+
+| 神社庁詳細（掲載名） | 詳細の名称・カナ原文 | 詳細の所在地原文 | 国税庁候補の名称・所在地・カナ原文 |
+| --- | --- | --- | --- |
+| [今宮天満宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=299) | 今宮天満宮神社 / イマミヤテンマング | 滋賀県近江八幡市浅小井町531 | 今宮天満宮神社 / 滋賀県近江八幡市浅小井町５３０番地 / イマミヤテンマングウジンジャ |
+| [住吉神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=202) | 住吉神社 / スミヨシ | 滋賀県長浜市地福寺町996 | 住吉神社 / 滋賀県長浜市地福寺町８番１９号 / スミヨシジンジャ |
+| [八幡宮](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=871) | 八幡宮 / ハチマングウ | 滋賀県東近江市中岸本町434 | 八幡宮 / 滋賀県東近江市中岸本町４４番地 / ハチマングウ |
+| [八幡神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=10) | 八幡神社 / ハチマン | 滋賀県大津市真野谷口町309 | 八幡神社 / 滋賀県大津市真野谷口町１７番３号 / ハチマンジンジャ |
+| [八幡神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=397) | 八幡神社 / ハチマン | 滋賀県東近江市中羽田町169 | 八幡神社 / 滋賀県東近江市中羽田町１６８番地３５ / ハチマンジンジャ |
+| [八幡神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1031) | 八幡神社 / ハチマン | 滋賀県米原市枝折566 | 八幡神社 / 滋賀県米原市枝折５６６番地５６７番地 / ハチマンジンジャ |
+| [八田神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=576) | 八田神社 / ハツタ | 滋賀県甲賀市水口町八田187 | 八田神社 / 滋賀県甲賀市水口町八田１８７番地・１８８番地 / ハッタジンジャ |
+| [八阪神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=635) | 八阪神社 / ヤサカ | 滋賀県甲賀市信楽町柞原332 | 八阪神社 / 滋賀県甲賀市信楽町柞原３２１番地 / ヤサカジンジャ |
+| [加茂神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1423) | 加茂神社 / カモ | 滋賀県高島市新旭町新庄488 | 加茂神社 / 滋賀県高島市新旭町新庄４４８番地の１ / カモジンジャ |
+| [古矢真神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1139) | 古矢真神社 / コヤマ | 滋賀県長浜市湖北町伊部44 | 古矢真神社 / 滋賀県長浜市湖北町伊部４５番地 / コヤマジンジャ |
+| [大将軍神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1425) | 大将軍神社 / タイショウグンジンシャ | 滋賀県高島市新旭町安井川314 | 大将軍神社 / 滋賀県高島市新旭町安井川３４１番地 / タイショウグンジンジャ |
+| [天満宮](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1386) | 天満宮 / テンマングウ | 滋賀県高島市安曇川町五番領233 | 天満宮 / 滋賀県高島市安曇川町五番領２３２番地 / テンマングウ |
+| [天神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=817) | 天神社 / テン | 滋賀県東近江市佐野町799 | 天神社 / 滋賀県東近江市佐野町７４５番地 / テンジンジャ |
+| [宇和宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=384) | 宇和宮神社 / ウワミヤ | 滋賀県栗東市蜂屋231 | 宇和宮神社 / 滋賀県栗東市蜂屋２３１番地１ / ウワミヤジンジャ |
+| [山神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=100) | 山神社 / ヤマ | 滋賀県大津市太子1-2-1 | 山神社 / 滋賀県大津市太子１丁目２番１１号 / ヤマジンジャ |
+| [川桁神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=907) | 川桁神社 / カワケタ | 滋賀県彦根市出路町640 | 川桁神社 / 滋賀県彦根市出路町４３７番地 / カワケタジンジャ |
+| [愛知神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=926) | 愛知神社 / エチ | 滋賀県犬上郡豊郷町吉田1177 | 愛知神社 / 滋賀県犬上郡豊郷町大字吉田１１７７番地の１ / エチジンジャ |
+| [日吉神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=860) | 日吉神社 / ヒヨシ | 滋賀県東近江市青山町66 | 日吉神社 / 滋賀県東近江市青山町６１６番地 / ヒヨシジンジャ |
+| [日吉神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1410) | 日吉神社 / ヒヨシ | 滋賀県高島市鴨2395 | 日吉神社 / 滋賀県高島市鴨２２９５番地 / ヒヨシジンジャ |
+| [日吉神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1389) | 日吉神社 / ヒヨシ | 滋賀県高島市安曇川町西万木783 | 日吉神社 / 滋賀県高島市安曇川町西万木７８３番地の１ / ヒヨシジンジャ |
+| [日置神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1338) | 日置神社 / ヒオキ | 滋賀県高島市今津町酒波855 | 日置神社 / 滋賀県高島市今津町酒波８５５番地８５９番地 / ヒオキジンジャ |
+| [日高神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1086) | 日高神社 / ヒダカ | 滋賀県長浜市当目町551 | 日高神社 / 滋賀県長浜市当目町３７３番地 / ヒダカジンジャ |
+| [春日神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=575) | 春日神社 / カスガ | 滋賀県甲賀市水口町春日1803-2 | 春日神社 / 滋賀県甲賀市水口町春日１８０３番地の２、１８０４番地 / カスガジンジャ |
+| [杉尾神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=637) | 杉尾神社 / スギオ | 滋賀県甲賀市信楽町杉山73 | 杉尾神社 / 滋賀県甲賀市信楽町杉山７３、７４番地 / スギオジンジャ |
+| [杉崎稲荷神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=727) | 杉崎稲荷神社 / スギサキイナリ | 滋賀県蒲生郡日野町松尾1179 | 杉崎稲荷神社 / 滋賀県蒲生郡日野町松尾５丁目８４ / スギサキイナリジンジャ |
+| [樹下神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=8) | 樹下神社 / コノモト | 滋賀県大津市真野佐川町515 | 樹下神社 / 滋賀県大津市真野佐川町６番１７号 / ジュゲジンジャ |
+| [河内神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=9) | 河内神社 / カワチ | 滋賀県大津市真野大野549 | 河内神社 / 滋賀県大津市真野大野１丁目１０番５号 / カワチジンジャ |
+| [津野神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1352) | 津野神社 / ツノウ | 滋賀県高島市今津町角川95 | 津野神社 / 滋賀県高島市今津町角川７８番地 / ツノジンジャ |
+| [白鳥神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=769) | 白鳥神社 / シラトリ | 滋賀県東近江市市原野町2128 | 白鳥神社 / 滋賀県東近江市市原野町２１２８番地１ / シラトリジンジャ |
+| [神山神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=629) | 神山神社 / コウヤマ | 滋賀県甲賀市信楽町神山1994 | 神山神社 / 滋賀県甲賀市信楽町神山１９９２番地 / コウヤマジンジャ |
+| [神明神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=204) | 神明神社 / シンメイ | 滋賀県長浜市勝町212 | 神明神社 / 滋賀県長浜市勝町５２６番地 / ジンメイジンジャ |
+| [能登川神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=822) | 能登川神社 / ノトガワ | 滋賀県東近江市垣見町798 | 能登川神社 / 滋賀県東近江市垣見町７８８番地 / ノトガワジンジャ |
+| [藤尾神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=57) | 藤尾神社 / フジオ | 滋賀県大津市藤尾奥町1-1 | 藤尾神社 / 滋賀県大津市藤尾奥町１０５番地 / フジオジンジャ |
+| [賢木神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=149) | 賢木神社 / サカキ | 滋賀県彦根市安清町149 | 賢木神社 / 滋賀県彦根市安清町１番１号 / カタキジンジャ |
+| [里宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=642) | 里宮神社 / サトミヤ | 滋賀県甲賀市信楽町多羅尾2017 | 里宮神社 / 滋賀県甲賀市信楽町多羅尾２１１６番地 / サトミヤジンジャ |
+| [高宮神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=643) | 高宮神社 / タカミヤ | 滋賀県甲賀市信楽町多羅尾646 | 高宮神社 / 滋賀県甲賀市信楽町多羅尾６５６番地 / タカミヤジンジャ |

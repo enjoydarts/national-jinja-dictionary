@@ -7720,6 +7720,7 @@
           "verified_facilities": 1434
         },
         "checked_at": null,
+        "effective_pending_entries": 1056,
         "facilities_collected": 1434,
         "fields_observed": {
           "address": 1434,
@@ -7728,16 +7729,18 @@
           "reading_raw": 0
         },
         "full_address_reference_pilot": {
+          "alias_handling": "First literal kana and parenthesized alias parsed separately; aliases are not dictionary entries.",
           "archive_file_id": "28432",
           "archive_snapshot": "20261030",
-          "checked_at": "2026-11-09T14:25:12.202247+00:00",
-          "detail_profiles_inspected": 100,
+          "checked_at": "2026-11-10T00:38:43.635450+00:00",
+          "detail_profiles_inspected": 344,
           "reading_policy": "Actual agency detail native ID/name/full numeric address bound to unique active NTA identity; literal full kana only; no suffix inferred from agency stems. Conflicts withheld.",
           "registered_reading_candidates": 344,
-          "remaining_uninspected_candidate_details": 244,
-          "unresolved_identity_or_address": 18,
-          "unresolved_reading_conflicts": 6,
-          "verified_reading_supplements": 76
+          "remaining_uninspected_candidate_details": 0,
+          "secondary_reading_conflict_resolutions": 1,
+          "unresolved_identity_or_address": 36,
+          "unresolved_reading_conflicts": 20,
+          "verified_reading_supplements": 288
         },
         "inspection_evidence": [
           {
@@ -7751,7 +7754,7 @@
         ],
         "listing_authority_status": "agency_site",
         "pages_fetched": 15,
-        "reason": "公式一覧1434施設を保存。全文読みは一覧に未掲載。既存90施設に加え、実リンクから100詳細を調査し、名称・番地までの住所・国税庁の明示全文フリガナを照合できた76施設を補完。24施設は不一致を保持して要確認。補正適用後166適格施設、1268保留登録。県内全神社の網羅とは区別。",
+        "reason": "公式一覧1434施設を保存。全文読みは一覧に未掲載。実リンクの344詳細について施設ID・掲載名・番地までの住所・明示された全文読みを照合し288施設を補完、既存90施設と合わせ378適格施設。56候補は名称/住所等または読み相違を保留。詳細の別称とカナを分離して再照合済み。通称を追加せず、原文を保持。県内全神社の網羅とは区別。",
         "record_fetched_at_range": [
           "2026-11-08T14:28:05.535228+00:00",
           "2026-11-08T14:31:25.262663+00:00"
@@ -7784,7 +7787,7 @@
         "status": "collected",
         "stored_coverage": "public linked listing pages only; not all prefectural shrines",
         "stored_pages_fetched": 15,
-        "supplemental_reading_facilities": 166
+        "supplemental_reading_facilities": 378
       },
       "conditions": {
         "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
@@ -31016,6 +31019,19 @@
           "observed_at": "2026-11-09T01:50:24.916553+00:00",
           "short_evidence": "都道府県神社庁欄に大分県神社庁の名称があるがURLは表示されない。ページ更新表示は令和8年11月02日。他県にも空欄や旧URLがあるため非存在証明ではない。",
           "url": "https://www.jinja.co.jp/link.html"
+        },
+        {
+          "fetched_at": "2026-11-09T15:24:52.605602+00:00",
+          "link": {
+            "href": "https://www.facebook.com/oitashinsei/",
+            "label": "大分県神道青年会"
+          },
+          "page_hash": "307091be9b409e579a3163b03f301e3972c3ceabf9fd1ea5dfd375fcfad11b04",
+          "scope": "relationship link to a youth association; does not establish prefectural agency publication or delegated shrine inventory",
+          "source_kind": "agency_relationship_link",
+          "status": 200,
+          "target_body_verified": false,
+          "url": "https://nagasaki-jinjacho.or.jp/link.html"
         }
       ],
       "agency_name": "大分県神社庁",
@@ -31134,6 +31150,19 @@
           "observed_at": "2026-11-09T01:50:24.916553+00:00",
           "short_evidence": "論文PDFを開いた。URL発見は検索索引の注5〜10に示された2021年閲覧記録に由来。PDFの文字単位改行により当該URLの本文位置は照合できず、公式性の根拠には採用しない。",
           "url": "https://www.jstage.jst.go.jp/article/nihonminzokugaku/309/0/309_144/_pdf/-char/en"
+        },
+        {
+          "fetched_at": "2026-11-09T15:24:52.605602+00:00",
+          "link": {
+            "href": "https://www.m-shinsei.jp/",
+            "label": "宮崎県神道青年会"
+          },
+          "page_hash": "307091be9b409e579a3163b03f301e3972c3ceabf9fd1ea5dfd375fcfad11b04",
+          "scope": "relationship link to a youth association; does not establish prefectural agency publication or delegated shrine inventory",
+          "source_kind": "agency_relationship_link",
+          "status": 200,
+          "target_body_verified": false,
+          "url": "https://nagasaki-jinjacho.or.jp/link.html"
         }
       ],
       "agency_name": "宮崎県神社庁",

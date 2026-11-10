@@ -43,6 +43,33 @@ class MoreCentralTest(unittest.TestCase):
         h='<a href="ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=7" class="news_title"><font>〔大津〕</font> 例神社</a><br><span>〒5200000 大津市例町</span><br>'
         self.assertEqual(parse_shiga(h)[0]['name'],'例神社')
 
+class ShigaDetailTest(unittest.TestCase):
+    def parse(self, title, extra=''):
+        from njd.adapters import central
+        self.assertTrue(hasattr(central, 'parse_shiga_detail'), 'Shiga detail parser is required')
+        return central.parse_shiga_detail('<div class="j_title">'+title+'</div>'
+            '<table><tr><td>鎮座地</td><td>大津市例町１</td></tr></table>'+extra)
+
+    def test_alias_parentheses_are_separate_from_literal_kana(self):
+        row=self.parse('例神社 （レイ） ～（別の宮）')
+        self.assertEqual((row['name_raw'],row['reading_raw'],row['alias_display_raw']),
+                         ('例神社','レイ','別の宮'))
+        self.assertEqual(row['name_display_raw'],'例神社 （レイ） ～（別の宮）')
+        self.assertEqual(row['address_raw'],'大津市例町１')
+
+    def test_full_kana_and_variant_name_are_preserved(self):
+        row=self.parse('例神社 （レイジンジャ）')
+        self.assertEqual((row['name_raw'],row['reading_raw'],row['alias_display_raw']),
+                         ('例神社','レイジンジャ',''))
+
+    def test_ambiguous_title_or_duplicate_fields_are_rejected(self):
+        for title,extra in [('例神社 （別の宮）',''),
+                            ('例神社 （レイ） 未知の追記',''),
+                            ('例神社 （レイ）','<div class="j_title">別神社（ベツ）</div>'),
+                            ('例神社 （レイ）','<table><tr><td>鎮座地</td><td>大津市別町２</td></tr></table>')]:
+            with self.subTest(title=title,extra=extra):
+                self.assertIsNone(self.parse(title,extra))
+
 class FukuiTest(unittest.TestCase):
     def test_precinct_shrines_not_collected_as_main_shrine(self):
         from njd.adapters.central import parse_fukui
