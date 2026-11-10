@@ -49,6 +49,16 @@ def validate(data: dict) -> list[dict]:
             for field in ['listing_url']:
                 if not _url(r.get(field)): add(kind,rid,'missing/invalid '+field)
                 if discovery_only(r.get(field)):add(kind,rid,'discovery-only directory cannot serve as listing evidence')
+    article_facilities={}
+    for f in fs:
+        ref=f.get('source_reference')
+        if (not isinstance(ref,dict) or ref.get('source_kind')!='encyclopedia'
+            or type(ref.get('article_id')) is not int or ref['article_id']<=0
+            or any(not isinstance(ref.get(k),str) or not ref[k] for k in ('name_raw','address_raw'))):continue
+        key=(ref['article_id'],ref['name_raw'],ref['address_raw'])
+        if key in article_facilities and article_facilities[key]!=f.get('id'):
+            add('global',None,'duplicate Wikipedia article facility across source scopes; identity reconciliation required')
+        else:article_facilities[key]=f.get('id')
     fmap={f.get('id'):f for f in fs}
     corrected_names=set()
     for e in es:

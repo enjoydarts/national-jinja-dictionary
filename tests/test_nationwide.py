@@ -90,6 +90,28 @@ class NationwideTest(unittest.TestCase):
             with self.assertRaises(ValueError):save_collection(Path(td),'example',d)
             self.assertFalse((Path(td)/'sources/example.json').exists())
 
+    def test_complete_snapshot_cannot_drop_an_individually_curated_facility(self):
+        with tempfile.TemporaryDirectory() as td:
+            work=Path(td);old=build([row(),row(source_id='2',address='架空市乙町2')])
+            old['facilities'][0]['curated_source_record']=True
+            save_collection(work,'example',old);path=work/'sources/example.json';before=path.read_bytes()
+            new=build([row(source_id='2',address='架空市乙町2')]);new['collection']['collection_complete']=True
+            with self.assertRaises(ValueError):save_collection(work,'example',new)
+            self.assertEqual(path.read_bytes(),before)
+
+    def test_curated_source_update_requires_review_and_retains_original_reference_history(self):
+        with tempfile.TemporaryDirectory() as td:
+            work=Path(td);old=build([row()]);old['facilities'][0]['curated_source_record']=True
+            save_collection(work,'example',old);path=work/'sources/example.json';before=path.read_bytes()
+            new=build([row(page_hash='b'*64)])
+            with self.assertRaises(ValueError):save_collection(work,'example',new)
+            self.assertEqual(path.read_bytes(),before)
+            updated=save_collection(work,'example',new,reviewed_curated=True)
+            f=updated['facilities'][0];self.assertTrue(f['curated_source_record'])
+            self.assertEqual(f['curated_reference_history'][0]['page_hash'],'a'*64)
+            again=save_collection(work,'example',updated)
+            self.assertEqual(again['facilities'][0]['curated_reference_history'],f['curated_reference_history'])
+
     def test_partial_attempt_cannot_remove_previously_saved_facilities(self):
         from unittest.mock import patch
         with tempfile.TemporaryDirectory() as td:

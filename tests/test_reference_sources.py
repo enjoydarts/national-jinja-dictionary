@@ -110,6 +110,54 @@ class ReferenceSourceTests(unittest.TestCase):
         for name,reading in [('例大神社','れいおおみわ'),('例神宮','れいぜん')]:
             with self.assertRaises(ValueError):r.dataset_from_references('34',[reference(name=name,reading=reading)])
 
+    def test_individually_reviewed_facilities_in_one_article_are_not_merged(self):
+        a=reference();b=reference(address='広島県例市別町2')
+        for v in [a,b]:v.update(acquisition_method='individual_source_review',facility_scope='individual_facility',section_locator='individual shrine section and its own infobox')
+        d=r.dataset_from_references('34',[a,b]);self.assertEqual(len(d['facilities']),2)
+        self.assertEqual(len({f['native_source_id'] for f in d['facilities']}),2)
+        self.assertTrue(all(f['curated_source_record'] for f in d['facilities']))
+        corrupted=copy.deepcopy(d);corrupted['facilities'][0]['curated_source_record']=False
+        self.assertTrue(blocking_problems(corrupted))
+        self.assertEqual(render(d,'mozc').rows,1)
+        old=r.dataset_from_references('34',[reference()])
+        self.assertEqual(old['facilities'][0]['native_source_id'],'wikipedia:pageid:10')
+        for key in ['acquisition_method','section_locator']:
+            v=copy.deepcopy(a);v.pop(key)
+            with self.assertRaises(ValueError):r.dataset_from_references('34',[v])
+
+    def test_individual_scope_cannot_duplicate_an_article_wide_record_or_crash_on_missing_raw_fields(self):
+        a=reference();a.update(acquisition_method='individual_source_review',facility_scope='individual_facility',section_locator='own source infobox')
+        with self.assertRaises(ValueError):r.dataset_from_references('34',[a,reference()])
+        d=r.dataset_from_references('34',[a]);d['facilities'][0]['source_reference'].pop('name_raw')
+        self.assertTrue(blocking_problems(d))
+
+    def test_assembled_candidates_cannot_save_the_same_article_facility_under_two_scopes(self):
+        import tempfile
+        from pathlib import Path
+        from njd.nationwide import save_collection
+        a=r.dataset_from_references('34',[reference()])
+        ref=reference();ref.update(acquisition_method='individual_source_review',facility_scope='individual_facility',section_locator='own source infobox')
+        b=r.dataset_from_references('34',[ref]);mixed=copy.deepcopy(a)
+        mixed['facilities']+=b['facilities'];mixed['entries']+=b['entries']
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td);save_collection(root,'hiroshima',a);path=root/'sources/hiroshima.json';before=path.read_bytes()
+            with self.assertRaises(ValueError):save_collection(root,'hiroshima',mixed)
+            self.assertEqual(path.read_bytes(),before)
+        self.assertTrue(blocking_problems(mixed))
+        self.assertIsNone(render(mixed,'mozc').content)
+
+    def test_individual_body_review_requires_the_exact_affirmative_shrine_location_statement(self):
+        v=reference();v.pop('shrine_type_label_raw');v['acquisition_method']='individual_source_review'
+        statement='例神社（れいじんじゃ）は、広島県例市例町にある神社。'
+        v.update(shrine_type_statement_raw=statement,excerpt=v['excerpt']+' / '+statement)
+        d=r.dataset_from_references('34',[v]);self.assertEqual(len(eligible(d)),1)
+        for text in ['例神社（れいじんじゃ）は、広島県別市にある神社。',
+                     '例神社（れいじんじゃ）は、広島県例市にある神社の鳥居。',
+                     '例神社（れいじんじゃ）は、広島県例市にあった神社。',
+                     '例神社（れいじんじゃ）は、広島県例市にあるのではなく山口県別市にある神社。']:
+            bad=copy.deepcopy(v);bad.update(shrine_type_statement_raw=text,excerpt=v['excerpt']+' / '+text)
+            with self.subTest(text=text),self.assertRaises(ValueError):r.dataset_from_references('34',[bad])
+
     def test_same_name_different_article_and_address_retains_two_facilities(self):
         d=r.dataset_from_references('34',[reference(),reference(address='広島県例市別町2',article_id=11)])
         self.assertEqual(len(d['facilities']),2)

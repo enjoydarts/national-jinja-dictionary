@@ -1,5 +1,6 @@
 """Versioned per-source canonical data, checkpointed acquisition and offline merge."""
 import re
+import copy
 from pathlib import Path
 from njd.http import Client
 from njd.report import PREFECTURES
@@ -11,6 +12,35 @@ class PartialSnapshotError(ValueError):
     def __init__(self,omitted_count):
         self.omitted_count=omitted_count
         super().__init__(f'partial acquisition omits {omitted_count} saved facility records; previous canonical snapshot preserved')
+
+
+class CuratedSourceReviewError(ValueError):
+    def __init__(self,count,kind):
+        self.count=count;self.kind=kind
+        super().__init__(f'{count} individually curated source records {kind}; previous canonical snapshot preserved')
+
+
+def _curated_material(facility):
+    return {k:copy.deepcopy(facility.get(k)) for k in ('listed_name','address','source_hash','page_hash','listing_url','source_locator','source_reference','additional_source_references')}
+
+
+def _preserve_curated_sources(old,result,reviewed):
+    if type(reviewed) is not bool:raise ValueError('reviewed_curated must be an explicit boolean')
+    if not old:return
+    before={f['id']:f for f in old['facilities'] if f.get('curated_source_record') is True or isinstance(f.get('source_reference'),dict) and f['source_reference'].get('acquisition_method')=='individual_source_review'}
+    after={f['id']:f for f in result['facilities']}
+    missing=set(before)-set(after)
+    if missing:raise CuratedSourceReviewError(len(missing),'omitted from new acquisition')
+    changed={fid for fid,f in before.items() if _curated_material(f)!=_curated_material(after[fid])}
+    if changed and not reviewed:raise CuratedSourceReviewError(len(changed),'changed and require individual source review')
+    for fid,previous in before.items():
+        current=after[fid];current['curated_source_record']=True
+        history=copy.deepcopy(previous.get('curated_reference_history',[]))
+        if not isinstance(history,list) or any(not isinstance(v,dict) for v in history):raise ValueError('invalid curated reference history')
+        material=_curated_material(previous)
+        if fid in changed and material not in history:history.append(material)
+        if history or 'curated_reference_history' in previous:current['curated_reference_history']=history
+        else:current.pop('curated_reference_history',None)
 
 
 def _partial_scope(source):
@@ -48,7 +78,7 @@ def ensure_public_metadata(value):
         if re.search(pattern,value):raise ValueError('local filesystem information cannot enter public canonical metadata')
 
 
-def save_collection(data_dir,key,data):
+def save_collection(data_dir,key,data,*,reviewed_curated=False):
     """Save authoritative source facts; caches and work history live elsewhere."""
     ensure_public_metadata(data)
     if data.get('collection',{}).get('source_key')!=key: raise ValueError('source key differs from dataset')
@@ -60,10 +90,12 @@ def save_collection(data_dir,key,data):
     all_links=load_dataset(links_path) if links_path.exists() else {}
     links=all_links.get(key,{})
     result=reconcile_identity(old,data,links)
+    _preserve_curated_sources(old,result,reviewed_curated)
     if blocking_problems(result): raise ValueError('identity reconciliation produced invalid records')
     if old and _partial_scope(result['collection']):
         omitted={f['id'] for f in old['facilities']}-{f['id'] for f in result['facilities']}
         if omitted:raise PartialSnapshotError(len(omitted))
+    ensure_public_metadata(result)
     write_json(path,result)
     return result
 
@@ -109,6 +141,7 @@ def merge_collections(data_dir,*,states=None):
 def public_failure(exc):
     """Controlled public reason: never publish exception messages or paths."""
     from njd.http import FetchError
+    if isinstance(exc,CuratedSourceReviewError):return f'curated_source_review_required ({exc.count}; {exc.kind}); previous snapshot preserved'
     if isinstance(exc,PartialSnapshotError):return f'partial_acquisition_omits_saved_records ({exc.omitted_count}); previous snapshot preserved'
     if isinstance(exc,OSError):return f'local_io_error ({type(exc).__name__}, errno={exc.errno})'
     if isinstance(exc,UnicodeError):return 'declared_encoding_decode_error'

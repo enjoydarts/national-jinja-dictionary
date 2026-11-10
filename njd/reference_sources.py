@@ -1,5 +1,6 @@
 """Explicit reference-only eligibility for prefectures authorized by the user."""
 import copy
+import hashlib
 import json
 from datetime import datetime
 import re
@@ -20,7 +21,7 @@ def _postal_address_body(address):
 def _location_context_matches(address,prefecture,context):
     municipality=municipality_from_address(address,prefecture)
     if not municipality or not address.startswith(municipality) or not isinstance(context,str):return False
-    match=re.fullmatch(re.escape(prefecture+municipality)+r'(?P<tail>[^。]*?)に(?:ある|鎮座する|所在する)(?:神社|神宮|天満宮|八幡宮|東照宮|大社|社)(?:である)?。',context)
+    match=re.fullmatch(re.escape(prefecture+municipality)+r'(?P<tail>[^。]*?)に(?:ある|鎮座する|所在する|存在する|位置する)(?:八幡神社|神社|神宮|天満宮|八幡宮|東照宮|大社|社)(?:である)?。',context)
     if not match:return False
     tail=match['tail'];remaining=address[len(municipality):]
     if any(term in tail for term in ('ではなく','でなく','ではない','じゃなく','じゃない','では無く','では無い')):return False
@@ -30,6 +31,27 @@ def _location_context_matches(address,prefecture,context):
     if not remaining.startswith(comparison_tail):return False
     if comparison_tail and comparison_tail[-1].isdigit() and len(remaining)>len(comparison_tail) and remaining[len(comparison_tail)].isdigit():return False
     return True
+
+
+def _reference_native_id(ref):
+    base='wikipedia:pageid:'+str(ref.get('article_id'))
+    if ref.get('facility_scope')=='individual_facility':
+        if any(not isinstance(ref.get(k),str) or not ref[k] for k in ('name_raw','address_raw')):return base+':invalid-facility'
+        raw=json.dumps([ref['name_raw'],ref['address_raw']],ensure_ascii=False,separators=(',',':')).encode()
+        return base+':facility:'+hashlib.sha256(raw).hexdigest()
+    return base
+
+
+def _statement_shrine_type(ref,code):
+    statement=ref.get('shrine_type_statement_raw')
+    if (code not in AUTHORIZED_CODES or ref.get('acquisition_method')!='individual_source_review'
+        or not isinstance(statement,str) or statement not in ref.get('excerpt','')):return False
+    prefix=re.escape(ref['name_raw'])+r'[（(]'+re.escape(ref['reading_raw'])+r'[）)]は[、\s]*'
+    match=re.fullmatch(prefix+r'(?P<location>.+に(?:ある|鎮座する|所在する|存在する|位置する)(?:八幡神社|神社|神宮|天満宮|八幡宮|東照宮|大社|社)(?:である)?。)',statement)
+    if not match:return False
+    prefecture=PREFECTURES[int(code)-1]
+    address=_postal_address_body(ref['address_raw']).removeprefix(prefecture)
+    return _location_context_matches(address,prefecture,match['location'])
 
 
 def _explicit_shrine_template(box):
@@ -91,6 +113,10 @@ def _reference_problems(ref,code):
     if invalid:return ['missing or invalid reference field: '+key for key in invalid]
     problems=[]
     if code not in AUTHORIZED_CODES:problems.append('reference-only prefecture is not authorized')
+    if ref.get('acquisition_method') not in (None,'individual_source_review'):problems.append('unknown reference acquisition method')
+    if ref.get('facility_scope') not in (None,'individual_facility'):problems.append('unknown reference facility scope')
+    if ref.get('facility_scope')=='individual_facility' and (ref.get('acquisition_method')!='individual_source_review' or not isinstance(ref.get('section_locator'),str) or not ref['section_locator'].strip()):
+        problems.append('individual article facility requires recorded source-section review')
     if ref.get('source_kind')!='encyclopedia':problems.append('reference is not an encyclopedia article')
     try:
         title=_title(ref['url']);p=urlsplit(ref['permalink']);q=parse_qs(p.query)
@@ -106,7 +132,7 @@ def _reference_problems(ref,code):
     try:
         if datetime.fromisoformat(ref.get('checked_at','')).tzinfo is None:raise ValueError()
     except (TypeError,ValueError):problems.append('missing timezone-aware inspection date')
-    if ref.get('shrine_type_label_raw') not in ('主祭神','祭神') and ref.get('shrine_type_template_raw')!='神社':problems.append('explicit shrine type evidence missing')
+    if ref.get('shrine_type_label_raw') not in ('主祭神','祭神') and ref.get('shrine_type_template_raw')!='神社' and not _statement_shrine_type(ref,code):problems.append('explicit shrine type evidence missing')
     name=ref.get('name_raw','');raw=ref.get('reading_raw','');address=ref.get('address_raw','');excerpt=ref.get('excerpt','')
     if not all(isinstance(v,str) and v and v in excerpt for v in (name,raw,address)):problems.append('name/full reading/address not recorded in inspected excerpt')
     if re.search(r'[・･、,，/／＆&＋+]',name):problems.append('combined names require individual full-reading review')
@@ -140,7 +166,8 @@ def reference_problems(facility,entry,source):
         problems.append('reference fields differ from acquired facility/entry')
     if entry.get('reading_source_kind')=='encyclopedia' and entry.get('reading_url') not in (ref.get('url'),ref.get('permalink')):
         problems.append('encyclopedia reading URL differs from inspected article/version')
-    if facility.get('native_source_id')!='wikipedia:pageid:'+str(ref.get('article_id')):problems.append('stable article identity differs')
+    if facility.get('native_source_id')!=_reference_native_id(ref):problems.append('stable article identity differs')
+    if ref.get('acquisition_method')=='individual_source_review' and facility.get('curated_source_record') is not True:problems.append('individual source review protection marker missing')
     extras=facility.get('additional_source_references',[])
     if not isinstance(extras,list):problems.append('invalid additional source references')
     else:
@@ -162,12 +189,15 @@ def reference_problems(facility,entry,source):
 
 def dataset_from_references(code,references,*,metadata=None):
     if code not in AUTHORIZED_CODES:raise ValueError('reference-only prefecture is not authorized')
-    rows=[]
+    rows=[];identity_scopes={}
     for ref in references:
         problems=_reference_problems(ref,code)
         if problems:raise ValueError('; '.join(problems))
+        key=(ref['article_id'],ref['name_raw'],ref['address_raw']);native=_reference_native_id(ref)
+        if key in identity_scopes and identity_scopes[key]!=native:raise ValueError('mixed article-wide and individual facility identity requires reconciliation')
+        identity_scopes[key]=native
         rows.append(dict(name=ref['name_raw'],reading_raw=ref['reading_raw'],address=ref['address_raw'],url=ref['url'],
-            source_id='wikipedia:pageid:'+str(ref['article_id']),municipality=municipality_from_address(_postal_address_body(ref['address_raw']),PREFECTURES[int(code)-1]),fetched_at=ref['checked_at'],page_hash=ref['page_hash'],locator=ref['locator'],evidence=ref['excerpt']))
+            source_id=_reference_native_id(ref),municipality=municipality_from_address(_postal_address_body(ref['address_raw']),PREFECTURES[int(code)-1]),fetched_at=ref['checked_at'],page_hash=ref['page_hash'],locator=ref['locator'],evidence=ref['excerpt']))
     source=dict(metadata or {})
     source.update(listing_basis=BASIS,source_publisher='日本語版Wikipedia',official_agency_listing_verified=False,
         authority_status='reference_source',coverage='Inspected Wikipedia shrine articles only; not agency listings or all prefectural shrines.',
@@ -182,6 +212,7 @@ def dataset_from_references(code,references,*,metadata=None):
         else:by_id[row['source_id']]=ref
     for f in data['facilities']:
         f.pop('agency',None);f.update(listing_basis=BASIS,source_publisher='日本語版Wikipedia',source_reference=copy.deepcopy(by_id[f['native_source_id']]))
+        if f['source_reference'].get('acquisition_method')=='individual_source_review':f['curated_source_record']=True
         if f['native_source_id'] in extra:f['additional_source_references']=copy.deepcopy(extra[f['native_source_id']])
     for entry in data['entries']:entry.update(reading_source_kind='encyclopedia',listing_basis=BASIS)
     from njd.validation import blocking_problems
