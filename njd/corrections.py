@@ -131,6 +131,41 @@ def _official_reading_reference(ref,authority,facility):
         and _hash(ref.get('page_hash')) and _date(ref.get('checked_at')) and _plain(ref.get('locator')))
 
 
+def _linked_locality_reference(ref,correction,facility):
+    """An observed agency link identifies its own site's more precise address.
+
+    This is restricted to a locality with no parcel, followed by a literal
+    aza and parcel. It cannot replace an existing street number or authorize
+    another site's same-name facility.
+    """
+    authority,problems=_official_reading_authority(correction,facility)
+    if (problems or not authority or set(correction.get('changes',{}))!={'reading'}
+        or not _official_reading_reference(ref,authority,facility)):return False
+    proof=ref.get('address_identity_proof');raw=raw_address(facility)
+    if (not isinstance(proof,dict) or proof.get('kind')!='agency_linked_locality_with_aza'
+        or proof.get('listing_address_raw')!=raw
+        or proof.get('official_address_raw')!=ref.get('address_raw')):return False
+    expected=_comparison(raw).removeprefix(facility.get('prefecture',''))
+    actual=_comparison(ref.get('address_raw')).removeprefix(facility.get('prefecture',''))
+    if not expected or re.search(r'\d',expected) or not actual.startswith(expected):return False
+    suffix=actual[len(expected):]
+    return (bool(re.fullmatch(r'(?:小字|字)[\u3400-\u9fff々〆ヶぁ-ゖァ-ヺー]+[0-9]+(?:-[0-9]+)*(?:番地|番|号)?',suffix))
+        and ref.get('name_raw') in ref.get('excerpt','')
+        and bool(ref.get('address_raw')) and ref['address_raw'] in ref.get('excerpt',''))
+
+
+def _normalized_reference_reading(ref):
+    """Only a declared mechanical removal of printed intra-reading spaces."""
+    raw=ref.get('reading_raw','');steps=ref.get('reading_normalization')
+    if steps is not None:
+        if (steps!=['remove printed reading spaces'] or ref.get('source_kind')!='official_shrine'
+            or ref.get('reading_scope')!='full_name' or not isinstance(raw,str)
+            or not re.fullmatch(r'[ぁ-ゖァ-ヶゝゞー]+(?:[ \u3000]+[ぁ-ゖァ-ヶゝゞー]+)+',raw)):
+            raise ValueError('unsupported or nonmechanical reference reading normalization')
+        raw=raw.replace(' ','').replace('\u3000','')
+    return normalize_reading(raw)
+
+
 def _joined_official_reading(ref,correction,facility,entry):
     authority,problems=_official_reading_authority(correction,facility)
     changes=correction.get('changes',{})
@@ -202,7 +237,8 @@ def correction_problems(correction,facility,entry,source=None):
         except (TypeError,ValueError):problems.append('reference inspection date missing')
         if not ref.get('name_raw') or not ref.get('excerpt'):
             problems.append('reference name or actual excerpt missing')
-        bound=_reference_matches(ref,facility,entry,changes)
+        bound=(_reference_matches(ref,facility,entry,changes)
+            or _linked_locality_reference(ref,correction,facility))
         joined=_joined_official_reading(ref,correction,facility,entry)
         if (registry_present and bound and 'reading' in changes and ref.get('reading_raw')
             and ref.get('source_kind') in ('agency','official_agency')
@@ -218,7 +254,7 @@ def correction_problems(correction,facility,entry,source=None):
         if 'reading' in changes:
             raw=ref.get('reading_raw','')
             try:
-                if (bound or joined) and normalize_reading(raw)==changes['reading'] and raw in ref.get('excerpt',''):
+                if (bound or joined) and _normalized_reference_reading(ref)==changes['reading'] and raw in ref.get('excerpt',''):
                     reading_supported=True
             except (TypeError,ValueError):pass
     if not identity_supported:problems.append('no inspected reference explicitly identifies name and location')
@@ -266,9 +302,9 @@ def apply_corrections(data,document):
         if 'reading' in changes:
             entry['reading']=changes['reading'];entry['reading_source_kind']='reference'
             for ref in correction['references']:
-                try:matched=normalize_reading(ref.get('reading_raw',''))==entry['reading'] and ref.get('reading_raw','') in ref.get('excerpt','')
+                try:matched=_normalized_reference_reading(ref)==entry['reading'] and ref.get('reading_raw','') in ref.get('excerpt','')
                 except (TypeError,ValueError):matched=False
-                if matched and (_reference_matches(ref,facility,entry,changes) or _joined_official_reading(ref,correction,facility,entry)):entry['reading_url']=ref['url'];entry['checked_at']=ref['checked_at'];break
+                if matched and (_reference_matches(ref,facility,entry,changes) or _linked_locality_reference(ref,correction,facility) or _joined_official_reading(ref,correction,facility,entry)):entry['reading_url']=ref['url'];entry['checked_at']=ref['checked_at'];break
         reading_resolved='reading' in changes
         if not reading_resolved:
             try:reading_resolved=normalize_reading(entry['reading_raw'])==entry['reading']

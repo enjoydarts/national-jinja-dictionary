@@ -5,7 +5,7 @@ from datetime import datetime
 import re
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading
-from njd.corrections import correction_problems, discovery_only
+from njd.corrections import correction_problems, discovery_only, _normalized_reference_reading
 from njd.reviews import reviewed_output
 from njd.locations import location_problems, raw_address
 
@@ -170,7 +170,7 @@ def validate(data: dict) -> list[dict]:
                     matches=[]
                     for ref in correction['references']:
                         try:
-                            if ref['url']==e['reading_url'] and normalize_reading(ref.get('reading_raw',''))==e['reading'] and ref.get('reading_raw','') in ref.get('excerpt',''):matches.append(ref['reading_raw'])
+                            if ref['url']==e['reading_url'] and _normalized_reference_reading(ref)==e['reading'] and ref.get('reading_raw','') in ref.get('excerpt',''):matches.append(_normalized_reference_reading(ref))
                         except (TypeError,ValueError):pass
                     if not matches:raise ValueError('reference reading source mismatch')
                     raw=matches[0]
