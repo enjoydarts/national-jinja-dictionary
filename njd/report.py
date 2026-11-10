@@ -15,18 +15,24 @@ def subset(data,code):
     result['facilities']=[f for f in data['facilities'] if f['prefecture_code']==code]
     ids={f['id'] for f in result['facilities']}
     result['entries']=[e for e in data['entries'] if e['facility_id'] in ids]
+    if 'source_alias_summary' in result['collection']:
+        summary=copy.deepcopy(result['collection']['source_alias_summary'])
+        summary['resolved_records']=sum(bool(f.get('source_alias_of')) for f in result['facilities'])
+        summary['review_groups']=[g for g in summary.get('review_groups',[]) if ids&set(g.get('facility_ids',[]))]
+        result['collection']['source_alias_summary']=summary
     result['collection']['output_scope']=code
     return result
 
 def _counts(data):
     accepted=eligible(data);groups={}
-    for f in data['facilities']:groups.setdefault(f.get('listing_basis','agency'),set()).add(f['id'])
+    physical=[f for f in data['facilities'] if not f.get('source_alias_of')]
+    for f in physical:groups.setdefault(f.get('listing_basis','agency'),set()).add(f['id'])
     basis_counts={}
     for basis,ids in sorted(groups.items()):
         entries=[e for e in accepted if e['facility_id'] in ids]
         basis_counts[basis]=dict(facilities=len(ids),verified_facilities=len({e['facility_id'] for e in entries}),
             dictionary_rows=len({(e['reading'],e['surface'],e['semantic_type']) for e in entries}))
-    return dict(facilities=len(data['facilities']),verified_facilities=len({e['facility_id'] for e in accepted}),
+    return dict(facilities=len(physical),facility_records=len(data['facilities']),source_alias_records=len(data['facilities'])-len(physical),verified_facilities=len({e['facility_id'] for e in accepted}),
         dictionary_rows=len({(e['reading'],e['surface'],e['semantic_type']) for e in accepted}),
         entry_status_counts=dict(sorted(Counter(e['status'] for e in data['entries']).items())),source_basis_counts=basis_counts)
 
@@ -40,6 +46,7 @@ def report(data,outputs=None):
         collection=collection_summary(data['collection']),validation_problems=validate(data),
         format_outputs={k:v.summary() for k,v in (outputs or {}).items()},
         counting_notes=['dictionary_rows uses neutral semantic_type; format POS deduplication is counted separately',
+            'facilities excludes resolved source-alias observations; facility_records retains all original management records',
             'JSON/CSV rows count management entry records, including pending/excluded; not IME candidates',
             'observed source rows are not claimed prefectural shrine totals',
             'source_basis_counts separates agency listings and reference-only records; per-basis dictionary row counts are not additive',
@@ -61,8 +68,13 @@ def samples(data,maximum=12,names=()):
             select(e,'variant glyph preserved')
     for e in sorted(valid,key=lambda e:(-len(e['surface']),e['surface'],e['id'])): select(e,'long name or additional source entry')
     result=dict(data);result['collection']=collection_summary(data['collection']); ids={e['facility_id'] for e in chosen}
-    result['facilities']=[f for f in data['facilities'] if f['id'] in ids]
-    result['entries']=chosen; result['collection']['sample_selection']=categories
+    alias_ids={alias for f in data['facilities'] if f['id'] in ids for alias in f.get('source_alias_ids',[])}
+    result['facilities']=[f for f in data['facilities'] if f['id'] in ids|alias_ids]
+    result['entries']=chosen+[e for e in data['entries'] if e['facility_id'] in alias_ids]
+    result['collection']['sample_source_alias_observations']=len(alias_ids)
+    if 'source_alias_summary' in result['collection']:
+        result['collection']['source_alias_summary']=dict(result['collection']['source_alias_summary'],resolved_records=len(alias_ids),review_groups=[])
+    result['collection']['sample_selection']=categories
     result['collection']['sample_missing_requested_names']=sorted(set(names)-{e['surface'] for e in chosen})
     result['collection']['output_scope']='import sample; actual IME import not tested'
     return result

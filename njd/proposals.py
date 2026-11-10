@@ -13,11 +13,12 @@ from njd.reviews import apply_reviews
 from njd.normalize import normalize_reading
 from njd.storage import apply_decisions, load_dataset, write_json
 from njd.validation import blocking_problems, eligible
+from njd.source_aliases import apply_saved_source_aliases
 
 
 def _inputs(root):
     paths=list((root/'sources').glob('*.json'))
-    paths += [root/name for name in ('locations.json','corrections.json','reviews.json','decisions.json','manifest.json','identities.json') if (root/name).exists()]
+    paths += [root/name for name in ('locations.json','corrections.json','reviews.json','decisions.json','manifest.json','identities.json','source_aliases.json') if (root/name).exists()]
     return {str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
@@ -81,6 +82,7 @@ def import_proposals(data_dir,document,*,apply=False,prefer_agency=False):
             corrections['entries'][eid]=proposal;added.append(eid)
     effective=apply_reviews(apply_corrections(raw,corrections),reviews)
     if decisions:effective=apply_decisions(effective,decisions)
+    effective=apply_saved_source_aliases(effective,root)
     problems=blocking_problems(effective)
     if problems:raise ValueError('proposed overlays fail canonical validation: '+str(problems[:5]))
     accepted={e['id'] for e in eligible(effective)}

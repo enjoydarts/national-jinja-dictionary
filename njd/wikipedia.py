@@ -197,6 +197,9 @@ def pending_targets(data_dir,codes):
     for path in sorted((data_dir/'sources').glob('*.json')):
         data=load_dataset(path)
         if locations is not None:data=apply_locations(data,locations)
+        if data['collection'].get('source_key')=='kochi':
+            from njd.source_aliases import apply_saved_source_aliases
+            data=apply_saved_source_aliases(data,data_dir)
         source=data['collection']
         if source.get('prefecture_code') not in codes:continue
         fs={f['id']:f for f in data['facilities']}

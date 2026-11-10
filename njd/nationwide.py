@@ -174,8 +174,11 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
                 client.post_json=lambda url,payload,**kwargs: original_post(url,payload,refresh=True,**{k:v for k,v in kwargs.items() if k!='refresh'})
             data=spec['collect'](client,limit=limit)
             saved=save_collection(data_dir,key,data)
+            from njd.source_aliases import apply_saved_source_aliases
+            from njd.report import _counts
+            counts=_counts(apply_saved_source_aliases(saved,data_dir))
             states[code]=dict(states[code],source_key=key,status=collection_status(saved),reason='saved explicit source fields; see source authority and coverage',
-                facilities=len(saved['facilities']),verified_facilities=len({e['facility_id'] for e in eligible(saved)}),
+                facilities=counts['facilities'],facility_records=counts['facility_records'],source_alias_records=counts['source_alias_records'],verified_facilities=counts['verified_facilities'],
                 remaining_scope=saved['collection'].get('remaining_scope',[]))
         except Exception as exc:
             states[code]=dict(states[code],source_key=key,status='failed_using_previous' if path.exists() else 'failed',reason=public_failure(exc))

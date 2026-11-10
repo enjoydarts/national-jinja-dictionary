@@ -13,11 +13,12 @@ from njd.reviews import apply_reviews
 from njd.nationwide import merge_collections, ensure_public_metadata
 from njd.storage import apply_decisions, json_bytes, load_dataset, write_json
 from njd.validation import blocking_problems
+from njd.source_aliases import apply_saved_source_aliases
 
 
 def _input_hashes(data_dir):
     paths=sorted((data_dir/'sources').glob('*.json'))
-    paths += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','locations.json','corrections.json','reviews.json','source_catalog.json') if (data_dir/name).exists()]
+    paths += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','locations.json','corrections.json','reviews.json','source_aliases.json','source_catalog.json') if (data_dir/name).exists()]
     return {str(p.relative_to(data_dir)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
@@ -35,13 +36,14 @@ def create_release(data_dir,output_dir,version,source_commit):
     if reviews.exists():data=apply_reviews(data,load_dataset(reviews))
     decisions=data_dir/'decisions.json'
     if decisions.exists() and load_dataset(decisions):data=apply_decisions(data,load_dataset(decisions))
+    data=apply_saved_source_aliases(data,data_dir)
     ensure_public_metadata(data)
     problems=blocking_problems(data)
     if problems:raise ValueError('canonical data cannot be released: '+str(problems[:5]))
     destination=output_dir/'dictionaries'
     report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社','𡶌部神社','㯮椒神社'),output_dir=destination)
     _review_lists(data,destination)
-    for name in ('manifest.json','locations.json','corrections.json','reviews.json','source_catalog.json'):
+    for name in ('manifest.json','locations.json','corrections.json','reviews.json','source_aliases.json','source_catalog.json'):
         path=data_dir/name
         if path.exists():
             value=load_dataset(path);ensure_public_metadata(value)
@@ -78,6 +80,7 @@ def create_release(data_dir,output_dir,version,source_commit):
         description,'',
         f'- 正本コミット: `{source_commit}`',
         f"- 施設レコード: {totals['facilities']}",
+        *([f"- 原掲載の管理レコード: {totals['facility_records']}（同一施設の重複掲載観測 {totals['source_alias_records']} 件を含む）"] if totals.get('source_alias_records') else []),
         f"- 確認済み施設: {totals['verified_facilities']}",
         f"- 重複除去後辞書行: {totals['dictionary_rows']}",
         '- 全形式の実際のIME取り込みは未確認です。','',

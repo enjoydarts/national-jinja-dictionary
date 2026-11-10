@@ -18,6 +18,7 @@ from njd.http import Client, FetchError
 from njd.report import report, samples, subset
 from njd.storage import apply_decisions, load_dataset, save_dataset, write_json, reconcile_identity
 from njd.validation import validate, blocking_problems
+from njd.source_aliases import apply_saved_source_aliases
 
 REPOSITORY=Path(__file__).resolve().parents[1]
 
@@ -55,7 +56,8 @@ def _effective(work):
     reviews=work/'reviews.json'
     if reviews.exists():data=apply_reviews(data,load_dataset(reviews))
     decisions=work/'decisions.json'
-    return apply_decisions(data,load_dataset(decisions)) if decisions.exists() and load_dataset(decisions) else data
+    if decisions.exists() and load_dataset(decisions):data=apply_decisions(data,load_dataset(decisions))
+    return apply_saved_source_aliases(data,work)
 
 def _review_lists(data,work):
     facilities={f['id']:f for f in data['facilities']}
@@ -141,7 +143,8 @@ def main(argv=None):
     if args.command!='audit':data=_effective(work)
     if args.command=='validate':
         issues=validate(data); write_json((work if args.workspace else output)/'validation.json',issues); _review_lists(data,work if args.workspace else output)
-        print(json.dumps(dict(errors=len(blocking_problems(data)),reviews=sum(p.get('severity')=='review' for p in issues),facilities=len(data['facilities'])),ensure_ascii=False))
+        aliases=sum(bool(f.get('source_alias_of')) for f in data['facilities'])
+        print(json.dumps(dict(errors=len(blocking_problems(data)),reviews=sum(p.get('severity')=='review' for p in issues),facilities=len(data['facilities'])-aliases,facility_records=len(data['facilities']),source_alias_records=aliases),ensure_ascii=False))
         return 1 if blocking_problems(data) else 0
     if args.command=='audit':
         # Audit pristine acquired records; human decisions remain separate.
