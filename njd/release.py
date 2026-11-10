@@ -55,6 +55,7 @@ def create_release(data_dir,output_dir,version,source_commit):
     write_json(destination/'SOURCE.json',source)
     credits={}
     refs=[f.get('source_reference') for f in data['facilities']]
+    refs += [ref for f in data['facilities'] for ref in f.get('additional_source_references',[])]
     refs += [ref for e in data['entries'] for ref in e.get('correction',{}).get('references',[])]
     for ref in refs:
         if not isinstance(ref,dict) or ref.get('source_kind')!='encyclopedia' or not ref.get('license_url'):continue

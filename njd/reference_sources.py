@@ -3,18 +3,34 @@ import copy
 from datetime import datetime
 import re
 from urllib.parse import parse_qs,urlsplit
-from njd.records import build_dataset
+from njd.records import build_dataset,municipality_from_address
 from njd.nationwide import SOURCE_KEYS
 from njd.report import PREFECTURES
 from njd.wikipedia import BASE,LICENSE,Document,article_reference,_title
 
 BASIS='wikipedia_reference'
-AUTHORIZED_CODES={'34','35'}
+AUTHORIZED_CODES={'30','34','35','36','44','45'}
+
+
+def _location_context_matches(address,prefecture,context):
+    municipality=municipality_from_address(address,prefecture)
+    if not municipality or not address.startswith(municipality) or not isinstance(context,str):return False
+    match=re.fullmatch(re.escape(prefecture+municipality)+r'(?P<tail>[^。]*?)に(?:ある|鎮座する|所在する)(?:神社|神宮|天満宮|八幡宮|東照宮|大社|社)(?:である)?。',context)
+    if not match:return False
+    tail=match['tail'];remaining=address[len(municipality):]
+    if any(term in tail for term in ('ではなく','でなく','ではない','じゃなく','じゃない','では無く','では無い')):return False
+    comparison_tail=re.sub(r'[（(][ぁ-ゖァ-ヶーゝゞヽヾ]+[）)]','',tail)
+    # Only the actual infobox address may intervene before the locative verb.
+    # Negations, other regions and arbitrary descriptive clauses are not proof.
+    if not remaining.startswith(comparison_tail):return False
+    if comparison_tail and comparison_tail[-1].isdigit() and len(remaining)>len(comparison_tail) and remaining[len(comparison_tail)].isdigit():return False
+    return True
 
 
 def inspect_article(page,code):
     if code not in AUTHORIZED_CODES:raise ValueError('reference-only prefecture is not authorized')
-    boxes=[n for n in Document(page.text).root.all('table') if n.has_class('infobox')]
+    root=Document(page.text).root
+    boxes=[n for n in root.all('table') if n.has_class('infobox')]
     if len(boxes)!=1:raise ValueError('one shrine infobox required')
     headers=[h.text().strip() for h in boxes[0].all('th')]
     labels=[v for v in headers if v in ('主祭神','祭神')]
@@ -24,6 +40,25 @@ def inspect_article(page,code):
     if len(ids)!=1:raise ValueError('one stable article ID required')
     ref.update(article_id=int(next(iter(ids))),shrine_type_label_raw=labels[0],
         verification_method='Exact shrine infobox name/deity-label/location and literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted.')
+    prefecture=PREFECTURES[int(code)-1]
+    if not ref['address_raw'].startswith(prefecture):
+        municipality=municipality_from_address(ref['address_raw'],prefecture)
+        contexts=[]
+        for section in root.all('section'):
+            if section.attrs.get('data-mw-section-id')!='0':continue
+            for paragraph in section.all('p'):
+                text=paragraph.text().strip()
+                pattern=(re.escape(ref['name_raw'])+r'[（(]'+re.escape(ref['reading_raw'])+r'[）)]は[、,\s]*'
+                    +r'(?P<place>'+re.escape(prefecture+municipality)+r')(?P<tail>[^。]*?)に(?P<verb>ある|鎮座する|所在する)'
+                    +r'(?P<end>(?:神社|神宮|天満宮|八幡宮|東照宮|大社|社)(?:である)?。)')
+                match=re.match(pattern,text) if municipality else None
+                if match:
+                    context=match['place']+match['tail']+'に'+match['verb']+match['end']
+                    if _location_context_matches(ref['address_raw'],prefecture,context):contexts.append(context)
+        if len(contexts)==1:
+            ref.update(prefecture_context_raw=prefecture,municipality_context_raw=municipality,
+                location_context_excerpt=contexts[0],location_context_locator='same primary-name lead paragraph, complete affirmative shrine-location sentence')
+            ref['excerpt']+=' / '+contexts[0]
     problems=_reference_problems(ref,code)
     if problems:raise ValueError('; '.join(problems))
     return ref
@@ -55,7 +90,14 @@ def _reference_problems(ref,code):
     name=ref.get('name_raw','');raw=ref.get('reading_raw','');address=ref.get('address_raw','');excerpt=ref.get('excerpt','')
     if not all(isinstance(v,str) and v and v in excerpt for v in (name,raw,address)):problems.append('name/full reading/address not recorded in inspected excerpt')
     if re.search(r'[・･、,，/／＆&＋+]',name):problems.append('combined names require individual full-reading review')
-    if code in AUTHORIZED_CODES and not address.startswith(PREFECTURES[int(code)-1]):problems.append('source address is outside the requested prefecture')
+    if code in AUTHORIZED_CODES:
+        prefecture=PREFECTURES[int(code)-1]
+        if not address.startswith(prefecture):
+            municipality=municipality_from_address(address,prefecture)
+            if (not municipality or ref.get('prefecture_context_raw')!=prefecture or ref.get('municipality_context_raw')!=municipality
+                or not _location_context_matches(address,prefecture,ref.get('location_context_excerpt'))
+                or ref.get('location_context_excerpt','') not in excerpt):
+                problems.append('source address lacks matching explicit prefecture/municipality context')
     from njd.normalize import normalize_reading
     try:
         reading=normalize_reading(raw)
@@ -79,6 +121,22 @@ def reference_problems(facility,entry,source):
     if entry.get('reading_source_kind')=='encyclopedia' and entry.get('reading_url') not in (ref.get('url'),ref.get('permalink')):
         problems.append('encyclopedia reading URL differs from inspected article/version')
     if facility.get('native_source_id')!='wikipedia:pageid:'+str(ref.get('article_id')):problems.append('stable article identity differs')
+    extras=facility.get('additional_source_references',[])
+    if not isinstance(extras,list):problems.append('invalid additional source references')
+    else:
+        occurrences=set();observed=facility.get('listing_occurrences',[])
+        if not isinstance(observed,list):problems.append('invalid source occurrences');observed=[]
+        for value in observed:
+            if not isinstance(value,dict) or any(not isinstance(value.get(key),str) for key in ('url','page_hash','fetched_at')):
+                problems.append('invalid source occurrence fields');continue
+            occurrences.add((value['url'],value['page_hash'],value['fetched_at']))
+        for extra in extras:
+            issues=_reference_problems(extra,facility.get('prefecture_code'));problems.extend(issues)
+            if issues:continue
+            if any(extra.get(key)!=ref.get(key) for key in ('article_id','name_raw','reading_raw','address_raw')):
+                problems.append('additional source observation conflicts with facility identity/raw fields')
+            if (extra.get('url'),extra.get('page_hash'),extra.get('checked_at')) not in occurrences:
+                problems.append('additional reference has no observed source occurrence')
     return problems
 
 
@@ -97,9 +155,14 @@ def dataset_from_references(code,references,*,metadata=None):
         redistribution_status='Wikipedia source attribution and CC BY-SA 4.0 retained; not relicensed as MIT.')
     data=build_dataset(SOURCE_KEYS[int(code)-1],code,PREFECTURES[int(code)-1],'',rows,metadata=source)
     data['collection'].pop('agency',None)
-    by_id={r['source_id']:ref for r,ref in zip(rows,references)}
+    by_id={};extra={}
+    for row,ref in zip(rows,references):
+        if row['source_id'] in by_id:
+            if ref!=by_id[row['source_id']]:extra.setdefault(row['source_id'],[]).append(ref)
+        else:by_id[row['source_id']]=ref
     for f in data['facilities']:
         f.pop('agency',None);f.update(listing_basis=BASIS,source_publisher='日本語版Wikipedia',source_reference=copy.deepcopy(by_id[f['native_source_id']]))
+        if f['native_source_id'] in extra:f['additional_source_references']=copy.deepcopy(extra[f['native_source_id']])
     for entry in data['entries']:entry.update(reading_source_kind='encyclopedia',listing_basis=BASIS)
     from njd.validation import blocking_problems
     problems=blocking_problems(data)

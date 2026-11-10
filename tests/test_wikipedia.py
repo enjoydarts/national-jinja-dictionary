@@ -49,6 +49,16 @@ class WikipediaTests(unittest.TestCase):
                      article().replace('"wgRevisionId":12345','"wgRevisionId":0')]:
             with self.subTest(body=body),self.assertRaises(ValueError):w.article_reference(page(ARTICLE,body),'宇受賀命神社')
 
+    def test_non_target_place_and_old_name_readings_do_not_invalidate_primary_name(self):
+        base=article(name='例神社',reading='れいじんじゃ')
+        for extra in ['所在地の秘密尾（ひみつお）にある。','旧称は別神社（べつじんじゃ）。','通称「別宮」（べつみや）とも呼ばれる。']:
+            with self.subTest(extra=extra):
+                ref=w.article_reference(page(ARTICLE,base.replace('は神社。','は神社。'+extra)),'例神社')
+                self.assertEqual(ref['reading_raw'],'れいじんじゃ')
+        for extra in ['（べつじんじゃ）','別の例神社（べつじんじゃ）とも記載。']:
+            with self.subTest(extra=extra),self.assertRaises(ValueError):
+                w.article_reference(page(ARTICLE,base.replace('は神社。','は神社。'+extra)),'例神社')
+
     def test_category_reads_only_content_regions_and_actual_pagination(self):
         body='<a href="/wiki/Outside">outside</a><div id="mw-subcategories"><a href="/wiki/Category:島根県の旧郷社">sub</a></div><div id="mw-pages"><a href="/wiki/宇受賀命神社">宇受賀命神社</a><a href="https://evil.test/wiki/Other">bad</a><a href="/wiki/特別:検索">special</a><a href="/w/index.php?title=Category:島根県の神社&amp;pagefrom=宇">next</a></div>'
         result=w.category_links(page(ROOT,body))

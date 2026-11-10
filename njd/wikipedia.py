@@ -111,7 +111,14 @@ def article_reference(page,name):
         if not bold or bold[0].text()!=name:continue
         match=re.match(re.escape(name)+r'[（(]([ぁ-ゖァ-ヶーゝゞヽヾ]+)[）)]',text)
         if not match:continue
-        if len(re.findall(r'[（(][ぁ-ゖァ-ヶーゝゞヽヾ]+[）)]',text))!=1:raise ValueError('multiple lead readings')
+        for other in re.finditer(r'[（(][ぁ-ゖァ-ヶーゝゞヽヾ]+[）)]',text[match.end():]):
+            before=text[:match.end()+other.start()].rstrip()
+            # A different place or explicitly named old/alias shrine may have
+            # its own kana. Bare extra kana or another reading of this name
+            # remains ambiguous and is never used to complete the main reading.
+            word=re.search(r'(?:「([^「」]+)」|([\u3400-\u9fff々〆ヵヶァ-ヶー]+))$',before)
+            if not word or before.endswith(name) or (word.group(1) or word.group(2))==name:
+                raise ValueError('multiple readings of the primary name or unbound lead kana')
         raw=match[1];reading=normalize_reading(raw)
         endings={'神社':('じんじゃ','じんしゃ','しんじゃ','しんしゃ'),'神宮':('じんぐう',),'大社':('たいしゃ','だいしゃ','おおやしろ'),'宮':('ぐう','みや','きゅう')}
         for suffix,allowed in endings.items():

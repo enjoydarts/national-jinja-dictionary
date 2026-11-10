@@ -174,7 +174,7 @@ macOS 27では `samples/national/macos.txt` を先に試してください。日
 
 ## 神社庁資料を利用できない地域の参考資料枠
 
-広島・山口は、神社庁サイトの利用条件による収集停止を維持し、Wikipediaの記事を直接確認した施設を別の根拠区分で収録しています。施設の `listing_basis=wikipedia_reference`、`source_publisher`、`source_reference` に名称・全文カナ・所在地・記事ID・版ID・出典・CC BY-SA 4.0を保存します。旧字体や異体字は記事の掲載名を保持し、略称や別名は追加しません。神社以外の記事や全文読みを確定できない記事は収録せず、`collection.article_reviews` にURLと理由を残します。
+神社庁資料を利用できない6県（和歌山・広島・山口・徳島・大分・宮崎）では、Wikipediaの記事を直接確認した施設を別の根拠区分で収録します。広島・山口の神社庁資料の収集停止は維持します。施設の `listing_basis=wikipedia_reference`、`source_publisher`、`source_reference` に名称・全文カナ・所在地・記事ID・版ID・出典・CC BY-SA 4.0を保存します。旧字体や異体字は記事の掲載名を保持し、略称や別名は追加しません。神社以外の記事や全文読みを確定できない記事は収録せず、`collection.article_reviews` にURLと理由を残します。
 
 ```sh
 # 参考資料の取得と照合候補の作成。正本を直接上書きしません。

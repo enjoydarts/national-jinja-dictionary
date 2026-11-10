@@ -38,13 +38,68 @@ class ReferenceSourceTests(unittest.TestCase):
             v=reference();v.update(changes);variants.append(v)
         for v in variants:
             with self.subTest(value=v),self.assertRaises(ValueError):r.dataset_from_references('34',[v])
-        with self.assertRaises(ValueError):r.dataset_from_references('44',[reference()])
+        with self.assertRaises(ValueError):r.dataset_from_references('01',[reference()])
+
+    def test_reference_fallback_supports_the_remaining_four_unavailable_agency_regions(self):
+        for code,prefecture in [('30','和歌山県'),('36','徳島県'),('44','大分県'),('45','宮崎県')]:
+            with self.subTest(code=code):
+                d=r.dataset_from_references(code,[reference(address=prefecture+'例市例町1')])
+                self.assertEqual(len(eligible(d)),1)
+                self.assertEqual(d['facilities'][0]['prefecture_code'],code)
+                self.assertFalse(d['collection']['official_agency_listing_verified'])
+
+    def test_missing_prefecture_in_infobox_requires_matching_primary_lead_location(self):
+        from njd.http import Page
+        def page(prefecture='広島県',city='例市',clause='にある神社'):
+            body=('<script>{"wgRevisionId":1234,"wgArticleId":10}</script>'
+                  '<div class="mw-parser-output"><section data-mw-section-id="0">'
+                  '<table class="infobox"><tr><th>例神社</th></tr><tr><th>主祭神</th><td>例</td></tr>'
+                  '<tr><th>所在地</th><td>例市例町1</td></tr></table>'
+                  '<p><b>例神社</b>（れいじんじゃ）は、'+prefecture+city+clause+'。</p></section></div>')
+            return Page(reference()['url'],200,{'content-type':'text/html'},body.encode(),'2026-11-10T00:00:00+00:00')
+        ref=r.inspect_article(page(),'34');d=r.dataset_from_references('34',[ref])
+        self.assertEqual(d['facilities'][0]['address'],'例市例町1')
+        self.assertEqual(ref['address_raw'],'例市例町1')
+        self.assertEqual(ref['prefecture_context_raw'],'広島県')
+        self.assertEqual(ref['municipality_context_raw'],'例市')
+        self.assertEqual(len(eligible(d)),1)
+        ruby=r.inspect_article(page(city='例市例町（れいまち）'),'34')
+        self.assertIn('例町（れいまち）',ruby['location_context_excerpt'])
+        for wrong in [page('山口県'),page(city='別市'),
+                      page(clause='ではなく山口県別市にある神社'),page(clause='ではなく同県別市にある神社'),
+                      page(clause='から離れた別市にある神社'),page(clause='（ではなく）にある神社'),
+                      page(clause='にあるのではなく山口県別市にある神社'),
+                      page(clause='にある神社ではなく山口県別市にある神社')]:
+            with self.assertRaises(ValueError):r.inspect_article(wrong,'34')
+        bad=copy.deepcopy(d);bad['facilities'][0]['source_reference'].pop('prefecture_context_raw')
+        self.assertTrue(blocking_problems(bad))
 
     def test_same_name_different_article_and_address_retains_two_facilities(self):
         d=r.dataset_from_references('34',[reference(),reference(address='広島県例市別町2',article_id=11)])
         self.assertEqual(len(d['facilities']),2)
         self.assertEqual(len({f['id'] for f in d['facilities']}),2)
         out=render(d,'mozc');self.assertEqual(out.rows,1);self.assertEqual(out.deduplicated,1)
+
+    def test_redirect_aliases_of_the_same_article_keep_one_facility_and_both_sources(self):
+        a=reference();b=reference();b.update(url='https://ja.wikipedia.org/wiki/別題',title='別題',
+            permalink='https://ja.wikipedia.org/w/index.php?title='+quote('別題')+'&oldid=1234',page_hash='b'*64)
+        d=r.dataset_from_references('34',[a,b])
+        self.assertEqual(len(d['facilities']),1);self.assertEqual(len(d['entries']),1)
+        f=d['facilities'][0];self.assertEqual(f['source_reference'],a)
+        self.assertEqual(f['additional_source_references'],[b])
+        self.assertEqual(len(f['listing_occurrences']),2)
+        self.assertEqual(render(d,'mozc').rows,1);self.assertFalse(blocking_problems(d))
+        f['additional_source_references'][0]['address_raw']='広島県別市1'
+        self.assertTrue(blocking_problems(d))
+
+    def test_corrupt_redirect_observation_metadata_is_rejected_without_type_errors(self):
+        a=reference();b=reference();b.update(url='https://ja.wikipedia.org/wiki/別題',title='別題',
+            permalink='https://ja.wikipedia.org/w/index.php?title='+quote('別題')+'&oldid=1234',page_hash='b'*64)
+        for field,value in [('page_hash',[]),('checked_at',{}),('url',[])]:
+            d=r.dataset_from_references('34',[a,b]);d['facilities'][0]['additional_source_references'][0][field]=value
+            with self.subTest(field=field):self.assertTrue(blocking_problems(d))
+        d=r.dataset_from_references('34',[a,b]);d['facilities'][0]['listing_occurrences'][0]['page_hash']=[]
+        self.assertTrue(blocking_problems(d))
 
     def test_id_survives_revision_changes_and_raw_reading_is_mechanically_normalized(self):
         v=reference(reading='レイジンジャ');d=r.dataset_from_references('34',[v])

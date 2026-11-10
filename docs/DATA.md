@@ -157,7 +157,7 @@
 
 ## Wikipedia参考資料単独の収録
 
-広島・山口の参考資料単独枠は `listing_basis=wikipedia_reference` を施設と取得範囲に持ち、`source_publisher=日本語版Wikipedia` を記録します。神社庁の `agency` は付けず、`official_agency_listing_verified=false` とします。既存神社庁資料の区分は `agency` が既定です。`listed_name` と `reading_raw` は、それぞれ実記事の主名称と明示全文カナです。
+和歌山・広島・山口・徳島・大分・宮崎の参考資料単独枠は `listing_basis=wikipedia_reference` を施設と取得範囲に持ち、`source_publisher=日本語版Wikipedia` を記録します。神社庁の `agency` は付けず、`official_agency_listing_verified=false` とします。既存神社庁資料の区分は `agency` が既定です。`listed_name` と `reading_raw` は、それぞれ実記事の主名称と明示全文カナです。
 
 施設の `source_reference` に記事URL、版固定URL、`article_id`、`revision_id`、名称・カナ・所在地の原文、page hash、確認日、ライセンスを保存します。施設IDは版IDではなく記事IDを種にし、版更新で別施設を増やしません。同名でも記事ID・所在地の異なる施設を統合しません。本文の主名称と神社infobox名の一致、祭神欄、県名付きの一意な所在地、全文カナを検査し、寺院・一覧・番組記事を施設とみなしません。
 
@@ -166,3 +166,8 @@
 記事の未抽出・非施設候補は `collection.article_reviews` に保存し、氏名や所在地を推定した施設レコードは作りません。記事の試行件数、本文確認件数、施設数、県内の全神社数を区別します。`report.json` の `source_basis_counts` は神社庁資料と参考資料枠を分けて数えます。区分別の辞書行数は全国の重複除去前の部分集計のため、合計が全国辞書行数になるとは限りません。
 
 リリースはWikipedia由来の出典と版・利用条件を `ATTRIBUTION.json` に同梱します。ソースコードのMITは収集元データの再許諾ではありません。記事本文全体・画像・取得キャッシュは公開しません。
+
+
+参考資料の所在地欄で県名が省略される場合も、原文住所に県名を付け足しません。同じ主名称・全文読みを示す冒頭文が、県名と一致する市区町村を所在地として明記するときだけ、`prefecture_context_raw`・`municipality_context_raw`・`location_context_excerpt` に短い原文を保持して県を照合します。別市町や別県の記述、他地域からの分祀を所在地の根拠にしません。
+
+冒頭段落に地名や旧称のふりがながあることと、主名称に複数の読みがあることは区別します。主名称の直後の全文読みだけを採用し、別の明示語句に属する地名・旧称の読みを辞書へ追加しません。裸の追加カナや同じ主名称に再び別読みが付く場合は保留します。
