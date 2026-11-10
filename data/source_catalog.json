@@ -2554,35 +2554,37 @@
           "stop_reason": "connection_refused"
         },
         "canonical_data": {
-          "entries": 776,
+          "entries": 1326,
           "entry_status_counts": {
-            "verified": 776
+            "pending": 2,
+            "verified": 1324
           },
-          "facilities": 776,
+          "facilities": 1326,
           "facility_status_counts": {
-            "verified": 776
+            "verified": 1326
           },
           "path": "data/sources/gifu.json",
-          "verified_entries": 776,
-          "verified_facilities": 776
+          "verified_entries": 1324,
+          "verified_facilities": 1326
         },
-        "checked_at": "2026-11-10T03:46:11.059255+00:00",
+        "checked_at": "2026-11-10T11:25:59.021701+00:00",
         "collection_complete": false,
-        "facilities_collected": 776,
-        "facility_pages_fetched": 776,
+        "facilities_collected": 1326,
+        "facility_pages_fetched": 1326,
         "failed_pages": [
           {
-            "reason": "<urlopen error [Errno 61] Connection refused>",
-            "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=74&jinjya=%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
+            "reason": "offline cache miss: https://www.gifu-jinjacho.jp/search.php?page=24&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE",
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=24&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
           }
         ],
         "fields_observed": {
-          "address": 776,
-          "name": 776,
-          "reading_raw": 776
+          "address": 1326,
+          "facility_official_url": 0,
+          "name": 1326,
+          "reading_raw": 1326
         },
         "index_displayed_name_registration_rows": 828,
-        "index_groups_observed": 300,
+        "index_groups_observed": 440,
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-09T12:57:15.387601+00:00",
@@ -8127,21 +8129,28 @@
         ],
         "inspection_evidence_reference": "data/sources/gifu.json#collection.pages",
         "latest_acquisition_followup": {
-          "canonical_facilities_added": 0,
-          "failed_pages": [
-            {
-              "reason": "<urlopen error [Errno 61] Connection refused>",
-              "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=74&jinjya=%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
-            }
-          ],
-          "finished_at": "2026-11-10T04:03:15.363270+00:00",
-          "network_retries": 0,
-          "request_interval_seconds": 10,
-          "scope": "Single ordinary retry after a cooldown using successful response cache; stopped at connection refusal. Cause not established; remaining scope retained.",
-          "started_at": "2026-11-10T04:03:13.556094+00:00"
+          "acquisition_mode": "offline snapshot of ordinarily acquired official pages while the same source traversal continues",
+          "network_requests_in_checkpoint": 0,
+          "observed_complete": false,
+          "prior_followup": {
+            "canonical_facilities_added": 0,
+            "failed_pages": [
+              {
+                "reason": "<urlopen error [Errno 61] Connection refused>",
+                "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=74&jinjya=%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
+              }
+            ],
+            "finished_at": "2026-11-10T04:03:15.363270+00:00",
+            "network_retries": 0,
+            "request_interval_seconds": 10,
+            "scope": "Single ordinary retry after a cooldown using successful response cache; stopped at connection refusal. Cause not established; remaining scope retained.",
+            "started_at": "2026-11-10T04:03:13.556094+00:00"
+          },
+          "remaining_scope_basis": "first not-yet-cached observed href and its queued groups; not an HTTP denial",
+          "source": "data/sources/gifu.json"
         },
         "listing_authority_status": "agency_site",
-        "pages_fetched": 1108,
+        "pages_fetched": 1826,
         "previous_acquisition_failures": [
           {
             "reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
@@ -8151,21 +8160,20 @@
             "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2024&shrname=%E2%96%A0%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE%E2%96%A0"
           }
         ],
-        "reason": "保存済みの実一覧・検索・詳細から776施設の掲載名・全文読み・所在地・shrno・hash・日時を照合。旧550施設のID/原文を保持。同名施設は所在地と施設番号で区別し、個別詳細の全文カナを採用。施設数上限なしで取得し、検索1URLの接続拒否で停止した部分範囲。未取得13URLと後続索引を保持。5秒再開との因果やサイト全体の障害とは断定しない。828表示は名称/読みgroup登録行数で、施設総数ではない。全範囲は未完了。",
+        "reason": "途中キャッシュをオフライン再解析し、庁の実一覧・検索・詳細を照合。元776施設の全原文・IDを保持して1326施設へ拡張。通常の10秒間隔・再試行0回の取得は継続中。",
         "remaining_scope": [
-          "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=74&jinjya=%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%86%8A%E9%87%8E%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BD%8D%E5%B1%B1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9E%8D%E6%8E%9B%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9E%8D%E7%9F%A5%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%80%89%E9%87%8E%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%80%89%E5%B1%8B%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%A0%97%E5%8E%9F%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BB%92%E5%B2%A9%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BB%92%E6%9C%A8%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BB%92%E8%B0%B7%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%8D%AC%E6%8E%9B%E7%A5%9E%E7%A4%BE",
-          "https://www.gifu-jinjacho.jp/jnjyalist.php?page=16&tcnt=828&keysel="
+          "https://www.gifu-jinjacho.jp/search.php?page=24&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A5%9E%E6%98%8E%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%96%B0%E7%BE%85%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%8D%81%E4%BA%94%E7%A4%BE%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%8D%81%E4%BA%8C%E7%A4%BE%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%8D%81%E4%BA%8C%E7%9B%B8%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%8D%81%E5%85%AB%E7%A4%BE%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%99%A3%E5%B1%8B%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B0%B4%E7%A5%9E%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B0%B4%E5%A4%A9%E5%AE%AE",
+          "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B0%B4%E7%84%A1%E7%A5%9E%E7%A4%BE",
+          "https://www.gifu-jinjacho.jp/jnjyalist.php?page=23&tcnt=828&keysel="
         ],
         "search_result_totals": [
           {
@@ -9752,9 +9760,814 @@
             "rows_observed": 10,
             "total": 74,
             "url": "https://www.gifu-jinjacho.jp/search.php?page=6&tcnt=74&jinjya=%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 74,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=74&jinjya=%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 4,
+            "total": 74,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=8&tcnt=74&jinjya=%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%86%8A%E9%87%8E%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BD%8D%E5%B1%B1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 2,
+            "total": 2,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9E%8D%E6%8E%9B%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%9E%8D%E7%9F%A5%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%80%89%E9%87%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%80%89%E5%B1%8B%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 2,
+            "total": 2,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%A0%97%E5%8E%9F%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BB%92%E5%B2%A9%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BB%92%E6%9C%A8%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%BB%92%E8%B0%B7%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%8D%AC%E6%8E%9B%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%8D%AC%E5%B1%B1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B0%97%E5%A4%9A%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B0%97%E6%AF%94%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%89%B1%E5%AE%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%85%83%E7%94%B0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%8F%E6%B3%89%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%AB%98%E8%B3%80%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%BA%90%E7%BA%88%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%AB%98%E5%9D%82%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%AB%98%E7%A6%85%E5%AF%BA%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9A%87%E5%A4%A7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%9A%87%E5%A4%AA%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 3,
+            "total": 3,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%AB%98%E7%94%B0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A5%9E%E7%8E%8B%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%87%91%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%85%90%E7%A5%9E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%9C%8B%E9%80%A0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%88%B8%E4%BD%90%E3%80%85%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%8F%E5%B3%B6%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 3,
+            "total": 3,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%8F%E9%B7%B9%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%8F%E8%B0%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%B6%8A%E4%BD%90%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%90%B4%E5%B9%B3%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 38,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%87%91%E5%88%80%E6%AF%94%E7%BE%85%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 38,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=38&jinjya=%E9%87%91%E5%88%80%E6%AF%94%E7%BE%85%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 38,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=38&jinjya=%E9%87%91%E5%88%80%E6%AF%94%E7%BE%85%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 8,
+            "total": 38,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=4&tcnt=38&jinjya=%E9%87%91%E5%88%80%E6%AF%94%E7%BE%85%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%9C%A8%E8%91%89%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%8F%E6%AF%94%E5%8F%A1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%8F%A4%E4%BA%95%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%A7%92%EF%BD%B9%E6%B1%9F%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%A7%92%E5%A1%9A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AD%90%E8%AD%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 5,
+            "total": 5,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AD%90%E5%AE%88%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%8F%E5%AE%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AD%90%E5%AE%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%B1%A0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%8F%E6%A3%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 6,
+            "total": 6,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%AD%90%E5%AE%89%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%8F%E6%9F%B3%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%87%91%E5%89%A3%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BA%94%E4%BD%8D%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BA%94%E5%8A%A0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 8,
+            "total": 8,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BA%94%E7%A4%BE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BA%94%E9%87%8C%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 4,
+            "total": 4,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%BE%A1%E9%9C%8A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 4,
+            "total": 4,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%BE%A1%E9%9D%88%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BA%94%E9%9C%8A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BA%94%E5%92%8C%E9%87%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%B8%89%E6%9E%9D%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%A5%BF%E9%83%A1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A1%9E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A1%9E%E7%A5%9E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%A0%84%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%A6%8A%E5%B1%B1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%9D%82%E4%B8%8B%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%85%92%E6%B3%A2%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%9D%82%E7%A5%9D%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BD%90%E4%B9%85%E5%A4%AA%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BD%90%E4%B9%85%E7%94%B0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%AB%BB%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%AB%BB%EF%BD%B9%E5%B2%A1%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%A1%9C%E5%AD%90%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BD%90%E4%B9%85%E8%89%AF%E5%A4%AA%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%A1%9C%E5%AE%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%AB%BB%E5%B1%B1%E5%85%AB%E5%B9%A1%E5%AE%AE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%AF%A0%EF%BD%B9%E8%B0%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%AD%B1%E5%A2%B3%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%AC%B9%E5%B1%B1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%96%A9%E6%91%A9%E5%A0%B0%E6%B2%BB%E6%B0%B4%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BD%90%E9%95%B7%E7%94%B0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 3,
+            "total": 3,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%8C%BF%E6%8A%95%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BD%90%E5%8E%9F%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%BD%90%E7%BE%85%E6%97%A9%E6%9D%BE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 2,
+            "total": 2,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%8C%BF%E7%94%B0%E5%BD%A6%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%B8%89%E7%8B%90%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%B8%89%E7%A4%BE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 25,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B1%B1%E7%A5%9E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 25,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=25&jinjya=%E5%B1%B1%E7%A5%9E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 5,
+            "total": 25,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=25&jinjya=%E5%B1%B1%E7%A5%9E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%B8%89%E4%B9%8B%E5%80%89%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%94%A3%E9%9C%8A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%94%B5%E7%8E%8B%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A1%A9%E7%AB%83%E9%87%91%E6%B8%85%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A1%A9%E7%AB%83%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%BD%AE%E5%8D%97%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%A1%A9%E8%A6%8B%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E9%87%8D%E7%AB%B9%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 2,
+            "total": 2,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%9B%9B%E7%A4%BE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 6,
+            "total": 6,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%B8%83%E7%A4%BE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%9B%9B%E5%A4%A9%E7%8E%8B%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%AF%A0%E5%BA%A7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%AF%A0%E5%A1%9A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8A%9D%E5%8E%9F%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%9B%9B%E6%96%B9%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%B8%85%E6%B0%B4%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%B8%8B%E5%B7%9D%E4%B8%A6%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%B8%8B%E9%83%B7%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E4%B8%8B%E8%AB%8F%E8%A8%AA%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E5%B0%BA%E5%AE%AE%E7%A5%A0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 3,
+            "total": 3,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A4%BE%E5%AE%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A4%BE%E5%AE%AE%E5%9C%B0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E8%8D%98%E5%B7%9D%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%AD%A3%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E6%A8%AB%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E5%B7%9D%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 2,
+            "total": 2,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E5%80%89%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E6%B4%B2%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E7%94%B0%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E7%8E%89%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 14,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E9%B3%A5%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 4,
+            "total": 14,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=14&jinjya=%E7%99%BD%E9%B3%A5%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E5%B9%A1%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 27,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E9%AB%AD%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 27,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=27&jinjya=%E7%99%BD%E9%AB%AD%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 7,
+            "total": 27,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=27&jinjya=%E7%99%BD%E9%AB%AD%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 37,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E9%AC%9A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 37,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=37&jinjya=%E7%99%BD%E9%AC%9A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 37,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=37&jinjya=%E7%99%BD%E9%AC%9A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 7,
+            "total": 37,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=4&tcnt=37&jinjya=%E7%99%BD%E9%AC%9A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E5%B3%AF%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%99%BD%E5%B1%B1%E6%AF%94%EF%BE%9B%E7%BE%8A%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 4,
+            "total": 4,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E6%96%B0%E5%AE%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 3,
+            "total": 3,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A5%9E%E5%AE%AE%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 1,
+            "total": 1,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A5%9E%E6%98%8E%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=2&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=3&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=4&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=5&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=6&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=7&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=8&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=9&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=10&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=11&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=12&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=13&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=14&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=15&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=16&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=17&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=18&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=19&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=20&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=21&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=22&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
+          },
+          {
+            "rows_observed": 10,
+            "total": 451,
+            "url": "https://www.gifu-jinjacho.jp/search.php?page=23&tcnt=451&jinjya=%E7%A5%9E%E6%98%8E%E7%A5%9E%E7%A4%BE"
           }
         ],
-        "source_rows_observed": 776,
+        "source_rows_observed": 1326,
         "status": "partial",
         "traversal_complete": false
       },
@@ -41724,17 +42537,17 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 52378,
-    "canonical_facility_records": 54483,
+    "canonical_facilities": 52928,
+    "canonical_facility_records": 55033,
     "canonical_source_alias_records": 2105,
     "canonical_source_basis_counts": {
-      "agency": 51412,
+      "agency": 51962,
       "association_reference": 590,
       "wikipedia_reference": 376
     },
     "canonical_source_files": 48,
     "canonical_source_record_basis_counts": {
-      "agency": 53517,
+      "agency": 54067,
       "association_reference": 590,
       "wikipedia_reference": 376
     },
@@ -41745,8 +42558,8 @@
       "partial": 3,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13244,
-    "effective_verified_facilities": 42164,
+    "effective_dictionary_rows": 13326,
+    "effective_verified_facilities": 42712,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
