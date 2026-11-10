@@ -69,6 +69,33 @@ class WikipediaTests(unittest.TestCase):
         self.assertEqual(ref['address_extraction'],'literal address text; coordinate-link subtree excluded')
         self.assertIn(address,ref['excerpt'])
 
+    def test_explicit_coordinate_index_is_not_a_second_facility_infobox(self):
+        mapbox='<table id="GeoGroup" class="mw-collapsible noprint infobox"><tr><th>全ての座標を示した地図 - OSM</th><td>表示</td></tr></table>'
+        body=article().replace('</section>',mapbox+'</section>')
+        self.assertEqual(w.article_reference(page(ARTICLE,body),'宇受賀命神社')['reading_raw'],'うづかみことじんじゃ')
+        for fake in [mapbox.replace('GeoGroup','Other'),mapbox.replace('全ての座標を示した地図 - OSM','別施設'),mapbox.replace('noprint','unknown')]:
+            with self.subTest(fake=fake),self.assertRaises(ValueError):
+                w.article_reference(page(ARTICLE,article().replace('</section>',fake+'</section>')),'宇受賀命神社')
+
+    def test_primary_infobox_does_not_absorb_a_museum_or_festival_in_a_later_section(self):
+        other='<section data-mw-section-id="1"><table class="infobox"><tr><th>資料館</th></tr><tr><th>所在地</th><td>別住所</td></tr></table></section>'
+        body=article().replace('</div>',other+'</div>')
+        ref=w.article_reference(page(ARTICLE,body),'宇受賀命神社')
+        self.assertEqual(ref['address_raw'],'島根県隠岐郡海士町宇受賀747')
+        ambiguous=article().replace('</section>',other+'</section>')
+        with self.assertRaises(ValueError):w.article_reference(page(ARTICLE,ambiguous),'宇受賀命神社')
+
+    def test_primary_reading_followed_by_explicit_kanji_notation_preserves_primary_only(self):
+        for suffix in ['、別神社','、旧字表記：別神社','、正式名称：別神社','、別神社とも']:
+            body=article().replace('うづかみことじんじゃ）','うづかみことじんじゃ'+suffix+'）')
+            with self.subTest(suffix=suffix):
+                ref=w.article_reference(page(ARTICLE,body),'宇受賀命神社')
+                self.assertEqual(ref['reading_raw'],'うづかみことじんじゃ')
+                self.assertEqual(ref['name_raw'],'宇受賀命神社')
+        for suffix in ['、べつじんじゃ','、別神社（べつじんじゃ）','、別神社、べつじんじゃ']:
+            with self.subTest(suffix=suffix),self.assertRaises(ValueError):
+                w.article_reference(page(ARTICLE,article().replace('うづかみことじんじゃ）','うづかみことじんじゃ'+suffix+'）')),'宇受賀命神社')
+
     def test_category_reads_only_content_regions_and_actual_pagination(self):
         body='<a href="/wiki/Outside">outside</a><div id="mw-subcategories"><a href="/wiki/Category:島根県の旧郷社">sub</a></div><div id="mw-pages"><a href="/wiki/宇受賀命神社">宇受賀命神社</a><a href="https://evil.test/wiki/Other">bad</a><a href="/wiki/特別:検索">special</a><a href="/w/index.php?title=Category:島根県の神社&amp;pagefrom=宇">next</a></div>'
         result=w.category_links(page(ROOT,body))

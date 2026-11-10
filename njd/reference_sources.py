@@ -1,15 +1,20 @@
 """Explicit reference-only eligibility for prefectures authorized by the user."""
 import copy
+import json
 from datetime import datetime
 import re
 from urllib.parse import parse_qs,urlsplit
 from njd.records import build_dataset,municipality_from_address
 from njd.nationwide import SOURCE_KEYS
 from njd.report import PREFECTURES
-from njd.wikipedia import BASE,LICENSE,Document,article_reference,_title
+from njd.wikipedia import BASE,LICENSE,Document,article_reference,article_infoboxes,_title
 
 BASIS='wikipedia_reference'
 AUTHORIZED_CODES={'30','34','35','36','44','45'}
+
+
+def _postal_address_body(address):
+    return re.sub(r'^〒[0-9]{3}-[0-9]{4}\s+','',address)
 
 
 def _location_context_matches(address,prefecture,context):
@@ -27,28 +32,43 @@ def _location_context_matches(address,prefecture,context):
     return True
 
 
+def _explicit_shrine_template(box):
+    try:
+        metadata=json.loads(box.attrs.get('data-mw',''))
+        parts=metadata.get('parts',[]) if isinstance(metadata,dict) else []
+        if not isinstance(parts,list):return None
+        targets=[v.get('template',{}).get('target',{}) for v in parts if isinstance(v,dict) and isinstance(v.get('template'),dict)]
+        targets=[t for t in targets if isinstance(t,dict) and isinstance(t.get('wt'),str)]
+        if len(targets)==1 and targets[0]['wt'].strip()=='神社' and targets[0].get('href')=='./Template:神社':return targets[0]['wt'].strip()
+    except (ValueError,TypeError):pass
+    return None
+
+
 def inspect_article(page,code):
     if code not in AUTHORIZED_CODES:raise ValueError('reference-only prefecture is not authorized')
     root=Document(page.text).root
-    boxes=[n for n in root.all('table') if n.has_class('infobox')]
+    boxes=article_infoboxes(root)
     if len(boxes)!=1:raise ValueError('one shrine infobox required')
     headers=[h.text().strip() for h in boxes[0].all('th')]
     labels=[v for v in headers if v in ('主祭神','祭神')]
-    if not headers or not labels:raise ValueError('explicit shrine infobox type required; temples and lists are not facilities')
+    template=_explicit_shrine_template(boxes[0])
+    if not headers or not (labels or template):raise ValueError('explicit shrine infobox type required; temples and lists are not facilities')
     ref=article_reference(page,headers[0])
     ids=set(re.findall(r'"wgArticleId"\s*:\s*(\d+)',page.text))
     if len(ids)!=1:raise ValueError('one stable article ID required')
-    ref.update(article_id=int(next(iter(ids))),shrine_type_label_raw=labels[0],
-        verification_method='Exact shrine infobox name/deity-label/location and literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted.')
+    if labels:ref['shrine_type_label_raw']=labels[0]
+    else:ref['shrine_type_template_raw']=template
+    ref.update(article_id=int(next(iter(ids))),
+        verification_method='Exact shrine infobox name/location; explicit deity-label or shrine-template metadata; literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted.')
     prefecture=PREFECTURES[int(code)-1]
-    if not ref['address_raw'].startswith(prefecture):
+    if not _postal_address_body(ref['address_raw']).startswith(prefecture):
         municipality=municipality_from_address(ref['address_raw'],prefecture)
         contexts=[]
         for section in root.all('section'):
             if section.attrs.get('data-mw-section-id')!='0':continue
             for paragraph in section.all('p'):
                 text=paragraph.text().strip()
-                pattern=(re.escape(ref['name_raw'])+r'[（(]'+re.escape(ref['reading_raw'])+r'[）)]は[、,\s]*'
+                pattern=(re.escape(ref['name_raw'])+r'[（(]'+re.escape(ref['reading_raw'])+r'(?:[、,](?:(?:旧字表記|正式名称)[：:])?[\u3400-\u9fff\uf900-\ufaff々]+(?:とも)?)?[）)]は[、,\s]*'
                     +r'(?P<place>'+re.escape(prefecture+municipality)+r')(?P<tail>[^。]*?)に(?P<verb>ある|鎮座する|所在する)'
                     +r'(?P<end>(?:神社|神宮|天満宮|八幡宮|東照宮|大社|社)(?:である)?。)')
                 match=re.match(pattern,text) if municipality else None
@@ -66,7 +86,7 @@ def inspect_article(page,code):
 
 def _reference_problems(ref,code):
     if not isinstance(ref,dict):return ['missing Wikipedia article evidence']
-    fields=('url','title','name_raw','reading_raw','address_raw','excerpt','permalink','page_hash','checked_at','license_url','locator','shrine_type_label_raw')
+    fields=('url','title','name_raw','reading_raw','address_raw','excerpt','permalink','page_hash','checked_at','license_url','locator')
     invalid=[key for key in fields if not isinstance(ref.get(key),str) or not ref[key]]
     if invalid:return ['missing or invalid reference field: '+key for key in invalid]
     problems=[]
@@ -86,13 +106,13 @@ def _reference_problems(ref,code):
     try:
         if datetime.fromisoformat(ref.get('checked_at','')).tzinfo is None:raise ValueError()
     except (TypeError,ValueError):problems.append('missing timezone-aware inspection date')
-    if ref.get('shrine_type_label_raw') not in ('主祭神','祭神'):problems.append('explicit shrine type evidence missing')
+    if ref.get('shrine_type_label_raw') not in ('主祭神','祭神') and ref.get('shrine_type_template_raw')!='神社':problems.append('explicit shrine type evidence missing')
     name=ref.get('name_raw','');raw=ref.get('reading_raw','');address=ref.get('address_raw','');excerpt=ref.get('excerpt','')
     if not all(isinstance(v,str) and v and v in excerpt for v in (name,raw,address)):problems.append('name/full reading/address not recorded in inspected excerpt')
     if re.search(r'[・･、,，/／＆&＋+]',name):problems.append('combined names require individual full-reading review')
     if code in AUTHORIZED_CODES:
         prefecture=PREFECTURES[int(code)-1]
-        if not address.startswith(prefecture):
+        if not _postal_address_body(address).startswith(prefecture):
             municipality=municipality_from_address(address,prefecture)
             if (not municipality or ref.get('prefecture_context_raw')!=prefecture or ref.get('municipality_context_raw')!=municipality
                 or not _location_context_matches(address,prefecture,ref.get('location_context_excerpt'))
@@ -147,7 +167,7 @@ def dataset_from_references(code,references,*,metadata=None):
         problems=_reference_problems(ref,code)
         if problems:raise ValueError('; '.join(problems))
         rows.append(dict(name=ref['name_raw'],reading_raw=ref['reading_raw'],address=ref['address_raw'],url=ref['url'],
-            source_id='wikipedia:pageid:'+str(ref['article_id']),fetched_at=ref['checked_at'],page_hash=ref['page_hash'],locator=ref['locator'],evidence=ref['excerpt']))
+            source_id='wikipedia:pageid:'+str(ref['article_id']),municipality=municipality_from_address(_postal_address_body(ref['address_raw']),PREFECTURES[int(code)-1]),fetched_at=ref['checked_at'],page_hash=ref['page_hash'],locator=ref['locator'],evidence=ref['excerpt']))
     source=dict(metadata or {})
     source.update(listing_basis=BASIS,source_publisher='日本語版Wikipedia',official_agency_listing_verified=False,
         authority_status='reference_source',coverage='Inspected Wikipedia shrine articles only; not agency listings or all prefectural shrines.',

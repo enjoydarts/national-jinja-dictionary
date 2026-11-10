@@ -63,6 +63,8 @@ class ReferenceSourceTests(unittest.TestCase):
         self.assertEqual(ref['prefecture_context_raw'],'広島県')
         self.assertEqual(ref['municipality_context_raw'],'例市')
         self.assertEqual(len(eligible(d)),1)
+        original=page();annotated=Page(original.url,200,original.headers,original.text.replace('（れいじんじゃ）','（れいじんじゃ、別神社）').encode(),original.fetched_at)
+        self.assertEqual(r.inspect_article(annotated,'34')['reading_raw'],'れいじんじゃ')
         ruby=r.inspect_article(page(city='例市例町（れいまち）'),'34')
         self.assertIn('例町（れいまち）',ruby['location_context_excerpt'])
         for wrong in [page('山口県'),page(city='別市'),
@@ -73,6 +75,32 @@ class ReferenceSourceTests(unittest.TestCase):
             with self.assertRaises(ValueError):r.inspect_article(wrong,'34')
         bad=copy.deepcopy(d);bad['facilities'][0]['source_reference'].pop('prefecture_context_raw')
         self.assertTrue(blocking_problems(bad))
+
+    def test_explicit_shrine_template_can_establish_type_without_a_deity_row(self):
+        import json
+        from html import escape
+        from njd.http import Page
+        for template,expected in [('神社',True),('寺院',False),('公園',False),('神社の一覧',False)]:
+            metadata=json.dumps({'parts':[{'template':{'target':{'wt':template+'\n','href':'./Template:'+template},'params':{}}}]},ensure_ascii=False)
+            html=('<script>{"wgRevisionId":1234,"wgArticleId":10}</script><div class="mw-parser-output"><section data-mw-section-id="0">'
+                  '<table class="infobox" data-mw="'+escape(metadata,quote=True)+'"><tr><th>例神社</th></tr>'
+                  '<tr><th>所在地</th><td>広島県例市例町1</td></tr></table><p><b>例神社</b>（れいじんじゃ）は広島県例市にある神社。</p></section></div>')
+            page=Page(reference()['url'],200,{'content-type':'text/html'},html.encode(),'2026-11-10T00:00:00+00:00')
+            if expected:
+                ref=r.inspect_article(page,'34');self.assertEqual(ref['shrine_type_template_raw'],'神社')
+                self.assertNotIn('shrine_type_label_raw',ref)
+                self.assertEqual(len(eligible(r.dataset_from_references('34',[ref]))),1)
+            else:
+                with self.assertRaises(ValueError):r.inspect_article(page,'34')
+
+    def test_postal_prefix_preserves_address_and_parses_municipality(self):
+        v=reference(address='〒730-0000 広島県例市例町1')
+        d=r.dataset_from_references('34',[v])
+        self.assertEqual(d['facilities'][0]['address'],v['address_raw'])
+        self.assertEqual(d['facilities'][0]['municipality'],'例市')
+        self.assertEqual(len(eligible(d)),1)
+        for wrong in ['〒730-0000 山口県例市例町1','〒730-000 広島県例市例町1']:
+            with self.subTest(address=wrong),self.assertRaises(ValueError):r.dataset_from_references('34',[reference(address=wrong)])
 
     def test_same_name_different_article_and_address_retains_two_facilities(self):
         d=r.dataset_from_references('34',[reference(),reference(address='広島県例市別町2',article_id=11)])

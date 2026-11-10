@@ -84,6 +84,18 @@ def category_links(page):
     return dict(categories=sorted(categories),articles=sorted(articles))
 
 
+def article_infoboxes(root):
+    leads=[n for n in root.all('section') if n.attrs.get('data-mw-section-id')=='0']
+    container=leads[0] if len(leads)==1 else root
+    boxes=[]
+    for box in container.all('table'):
+        if not box.has_class('infobox'):continue
+        is_map=(box.attrs.get('id')=='GeoGroup' and box.has_class('mw-collapsible') and box.has_class('noprint')
+            and re.sub(r'\s+','',box.text())=='全ての座標を示した地図-OSM表示')
+        if not is_map:boxes.append(box)
+    return boxes
+
+
 def _address_text(node):
     if node.tag in ('script','style','sup'):return ''
     if node.tag=='a':
@@ -101,7 +113,7 @@ def article_reference(page,name):
     outputs=[n for n in root.all() if n.has_class('mw-parser-output')]
     if len(outputs)!=1:raise ValueError('article content region ambiguous')
     content=outputs[0]
-    boxes=[n for n in content.all('table') if n.has_class('infobox')]
+    boxes=article_infoboxes(content)
     if len(boxes)!=1:raise ValueError('single infobox required')
     box=boxes[0];headers=list(box.all('th'))
     if not headers or headers[0].text().strip()!=name:raise ValueError('infobox name differs')
@@ -118,7 +130,7 @@ def article_reference(page,name):
     for index,p in enumerate(paragraphs,1):
         text=p.text().strip();bold=list(p.all('b'))
         if not bold or bold[0].text()!=name:continue
-        match=re.match(re.escape(name)+r'[（(]([ぁ-ゖァ-ヶーゝゞヽヾ]+)[）)]',text)
+        match=re.match(re.escape(name)+r'[（(]([ぁ-ゖァ-ヶーゝゞヽヾ]+)(?:[、,](?:(?:旧字表記|正式名称)[：:])?[\u3400-\u9fff\uf900-\ufaff々]+(?:とも)?)?[）)]',text)
         if not match:continue
         for other in re.finditer(r'[（(][ぁ-ゖァ-ヶーゝゞヽヾ]+[）)]',text[match.end():]):
             before=text[:match.end()+other.start()].rstrip()
