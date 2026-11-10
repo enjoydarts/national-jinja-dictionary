@@ -1,5 +1,6 @@
 """Research NTA registered-name readings; external proposals never edit canonical data."""
 import argparse
+import copy
 import csv
 from datetime import datetime, timezone
 import hashlib
@@ -154,9 +155,49 @@ def _bound(row,target):
     return _reference_matches(dict(name_raw=row['name'],address_raw=address),f,e,{})
 
 
-def _proposal(target,row,member,index,meta):
+def image_review_problems(ref):
+    """Bind an individual visual inspection to the exact Unicode CSV row.
+
+    Images never supply or repair a pronunciation. The literal kana remains
+    in the registered CSV field, and ordinary automatic extraction still holds
+    image-backed rows unless an explicit inspection packet is supplied.
+    """
+    fields=ref.get('source_fields',{})
+    if not isinstance(fields,dict):return ['invalid registered source fields'] if ref.get('image_reviews') else []
+    needed={key:fields.get(key) for key in ('nameImageId','addressImageId') if fields.get(key)}
+    packet=ref.get('image_reviews')
+    if not needed:return ['image review without a registered image ID'] if packet else []
+    if not isinstance(packet,dict) or set(packet)!=set(needed):return ['registered image IDs require individually inspected image references']
+    if any(not isinstance(fields.get(k),str) for k in ('name','furigana','corporateNumber','prefectureName','cityName','streetNumber')):return ['invalid image-backed CSV identity field types']
+    problems=[];address=''.join(fields[k] for k in ('prefectureName','cityName','streetNumber'))
+    if ref.get('url')!=BASE+'/download/zenken/index.html':problems.append('image-backed CSV reference is not the inspected official archive endpoint')
+    if not re.fullmatch('[0-9]{13}',fields['corporateNumber']):problems.append('image-backed corporate number invalid')
+    if fields.get('latest')!='1' or fields.get('process')=='99' or fields.get('closeDate') or fields.get('hihyoji')!='0':problems.append('image-backed registry identity is historical, closed or hidden')
+    raw_pairs={'name_raw':fields['name'],'reading_raw':fields['furigana'],'address_raw':address,'corporate_number':fields['corporateNumber']}
+    if any(ref.get(key)!=value for key,value in raw_pairs.items()):problems.append('image-backed reference differs from literal CSV identity or kana')
+    if not isinstance(ref.get('page_hash'),str) or not re.fullmatch('[0-9a-f]{64}',ref['page_hash']):problems.append('image-backed archive hash absent')
+    if not isinstance(ref.get('snapshot'),str) or not re.fullmatch('[0-9]{8}',ref['snapshot']):problems.append('image-backed archive snapshot absent')
+    for field,image_id in needed.items():
+        review=packet[field]
+        if not isinstance(review,dict):problems.append('invalid registered image inspection');continue
+        expected=dict(image_id=image_id,url=BASE+'/image?imageid='+str(image_id),corporate_number=fields.get('corporateNumber'),
+            archive_page_hash=ref.get('page_hash'),snapshot=ref.get('snapshot'),csv_row=ref.get('csv_row'),
+            source_name_raw=fields.get('name'),source_address_raw=address)
+        if any(review.get(k)!=v for k,v in expected.items()):problems.append('registered image reference differs from its exact CSV record')
+        if not isinstance(image_id,str) or not re.fullmatch('[0-9]{8}',image_id):problems.append('unrecognized registered image ID')
+        if type(review.get('csv_row')) is not int or review['csv_row']<1:problems.append('registered image CSV row absent')
+        if review.get('method')!='visual_inspection_of_official_image' or not isinstance(review.get('note'),str) or not review['note']:problems.append('individual image inspection method/note absent')
+        if not isinstance(review.get('page_hash'),str) or not re.fullmatch('[0-9a-f]{64}',review['page_hash']):problems.append('inspected image hash absent')
+        for key in ('fetched_at','checked_at'):
+            try:
+                if datetime.fromisoformat(review.get(key,'')).tzinfo is None:raise ValueError()
+            except (TypeError,ValueError):problems.append('registered image '+key+' absent')
+    return problems
+
+
+def _proposal(target,row,member,index,meta,*,image_reviews=None):
     f=target['facility'];e=target['entry'];raw=row['furigana'];reading=_reading(row['name'],raw)
-    if row['nameImageId'] or row['addressImageId']:raise ValueError('image-backed source characters require review')
+    if (row['nameImageId'] or row['addressImageId']) and not image_reviews:raise ValueError('image-backed source characters require review')
     address=row['prefectureName']+row['cityName']+row['streetNumber']
     excerpt=row['name']+' / '+raw+' / '+address
     ref=dict(url=meta['url'],title='国税庁法人番号公表サイト 全件データ',source_kind='government_corporate_register',
@@ -166,6 +207,7 @@ def _proposal(target,row,member,index,meta):
         license_url=PDL,terms_url=TERMS,attribution='出典：国税庁法人番号公表サイト（国税庁）（'+meta['url']+'）',
         processed_notice='国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。',
         verification_method='exact registered name and bound full numeric address; literal registered kana; no inferred small kana')
+    if image_reviews is not None:ref['image_reviews']=copy.deepcopy(image_reviews)
     proposal=dict(status='verified',facility_id=f['id'],expected_source_hash=e.get('source_hash'),
         original=dict(name_raw=f.get('name_raw'),reading_raw=e.get('reading_raw'),address=raw_address(f),listing_url=f.get('listing_url')),
         changes=dict(reading=reading),references=[ref],reason='Registered full-name furigana from inspected NTA prefecture archive; exact legal name and full address bound.',

@@ -192,6 +192,9 @@ def correction_problems(correction,facility,entry,source=None):
     name_supported='surface' not in changes;reading_supported='reading' not in changes;identity_supported=False
     for ref in refs:
         if not isinstance(ref,dict):problems.append('invalid reference object');continue
+        if ref.get('source_kind')=='government_corporate_register':
+            from njd.corporate import image_review_problems
+            problems.extend(image_review_problems(ref))
         if discovery_only(ref.get('url')):problems.append('discovery-only directory cannot serve as dictionary evidence')
         if not _url(ref.get('url')) or not ref.get('title') or not ref.get('source_kind'):
             problems.append('reference URL, title or source type missing')
