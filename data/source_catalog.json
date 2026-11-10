@@ -1,5 +1,6 @@
 {
   "count_definitions": {
+    "canonical_facilities": "同一施設の重複掲載を出典・原文・全地番で確認したsource_aliasesの解決を適用した施設レコード数。raw management recordsと区別し、未解決の同一性まで確定したとは主張しない。",
     "checked_at": "nullは当該収集結果で個別の確認日時が記録されていないことを表す。snapshot_dateは一覧の版の日付。",
     "fields_observed": "正本の非空欄数。読みは登録単位、他は施設単位。項目の存在と正確性の検証を区別する。",
     "pages_fetched": "直近収集結果が記録した値。公式性確認ページ数とは異なり、地域間で取得単位も異なる。",
@@ -40432,6 +40433,21 @@
       },
       "prefecture": "高知県",
       "prefecture_code": "39",
+      "source_alias_resolution": {
+        "basis": "exact same explicit name/full numeric address; prefecture prefix only; one structured and one full-address CMS observation per pair",
+        "document": "data/source_aliases.json",
+        "held_review_groups": 9,
+        "prior_corrections_and_judgments_unchanged": true,
+        "raw_source_unchanged": true,
+        "reading_conflicts": 0,
+        "represented_facility_records": 2118,
+        "resolution_records": 2105,
+        "resolved_alias_observations": 2096,
+        "source_conditions": "unchanged; reuse permission unconfirmed",
+        "source_pages_checked": 352,
+        "source_records": 4214,
+        "unmatched_observations": 4
+      },
       "supplemental_reading_source_survey": [
         {
           "adopted_readings": 0,
@@ -41535,13 +41551,20 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 54483,
+    "canonical_facilities": 52387,
+    "canonical_facility_records": 54483,
+    "canonical_source_alias_records": 2096,
     "canonical_source_basis_counts": {
-      "agency": 53517,
+      "agency": 51421,
       "association_reference": 590,
       "wikipedia_reference": 376
     },
     "canonical_source_files": 48,
+    "canonical_source_record_basis_counts": {
+      "agency": 53517,
+      "association_reference": 590,
+      "wikipedia_reference": 376
+    },
     "collection_status_count_scope": "agency collection survey only; reference_collection is reported separately",
     "collection_status_counts": {
       "blocked": 3,
