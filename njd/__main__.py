@@ -48,16 +48,8 @@ def parser():
     return p
 
 def _effective(work):
-    data=merge_collections(work)
-    locations=work/'locations.json'
-    if locations.exists():data=apply_locations(data,load_dataset(locations))
-    corrections=work/'corrections.json'
-    if corrections.exists():data=apply_corrections(data,load_dataset(corrections))
-    reviews=work/'reviews.json'
-    if reviews.exists():data=apply_reviews(data,load_dataset(reviews))
-    decisions=work/'decisions.json'
-    if decisions.exists() and load_dataset(decisions):data=apply_decisions(data,load_dataset(decisions))
-    return apply_saved_source_aliases(data,work)
+    from njd.overlays import apply_saved_overlays
+    return apply_saved_overlays(merge_collections(work),work)
 
 def _review_lists(data,work):
     facilities={f['id']:f for f in data['facilities']}

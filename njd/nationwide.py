@@ -78,8 +78,8 @@ def ensure_public_metadata(value):
         if re.search(pattern,value):raise ValueError('local filesystem information cannot enter public canonical metadata')
 
 
-def save_collection(data_dir,key,data,*,reviewed_curated=False):
-    """Save authoritative source facts; caches and work history live elsewhere."""
+def prepare_collection(data_dir,key,data,*,reviewed_curated=False):
+    """Validate and reconcile an incoming snapshot without replacing its source."""
     ensure_public_metadata(data)
     if data.get('collection',{}).get('source_key')!=key: raise ValueError('source key differs from dataset')
     issues=blocking_problems(data)
@@ -96,7 +96,13 @@ def save_collection(data_dir,key,data,*,reviewed_curated=False):
         omitted={f['id'] for f in old['facilities']}-{f['id'] for f in result['facilities']}
         if omitted:raise PartialSnapshotError(len(omitted))
     ensure_public_metadata(result)
-    write_json(path,result)
+    return result
+
+
+def save_collection(data_dir,key,data,*,reviewed_curated=False):
+    """Save authoritative source facts; caches and work history live elsewhere."""
+    result=prepare_collection(data_dir,key,data,reviewed_curated=reviewed_curated)
+    write_json(source_path(data_dir,key),result)
     return result
 
 
@@ -156,6 +162,8 @@ def public_failure(exc):
 
 def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=None,cache_dir=None):
     data_dir=Path(data_dir);states=load_states(data_dir)
+    manifest_path=data_dir/'manifest.json'
+    manifest=load_dataset(manifest_path) if manifest_path.exists() else {}
     cache_dir=Path(cache_dir) if cache_dir is not None else Path.home()/'.cache'/'national-jinja-dictionary'/'http'
     repository=Path(__file__).resolve().parents[1]
     resolved=cache_dir.expanduser().resolve()
@@ -173,12 +181,17 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
                 original_post=client.post_json
                 client.post_json=lambda url,payload,**kwargs: original_post(url,payload,refresh=True,**{k:v for k,v in kwargs.items() if k!='refresh'})
             data=spec['collect'](client,limit=limit)
-            saved=save_collection(data_dir,key,data)
-            from njd.source_aliases import apply_saved_source_aliases
+            saved=prepare_collection(data_dir,key,data)
+            from njd.overlays import apply_saved_overlays
             from njd.report import _counts
-            counts=_counts(apply_saved_source_aliases(saved,data_dir))
+            counts=_counts(apply_saved_overlays(saved,data_dir))
+            # Malformed/stale overlay evidence must not leave a new snapshot
+            # behind while the manifest claims the previous one was retained.
+            write_json(path,saved)
             states[code]=dict(states[code],source_key=key,status=collection_status(saved),reason='saved explicit source fields; see source authority and coverage',
                 facilities=counts['facilities'],facility_records=counts['facility_records'],source_alias_records=counts['source_alias_records'],verified_facilities=counts['verified_facilities'],
+                dictionary_rows=counts['dictionary_rows'],pending_entries=counts['entry_status_counts'].get('pending',0),
+                source_rows_observed=saved['collection'].get('source_rows_observed',0),
                 remaining_scope=saved['collection'].get('remaining_scope',[]))
         except Exception as exc:
             states[code]=dict(states[code],source_key=key,status='failed_using_previous' if path.exists() else 'failed',reason=public_failure(exc))
@@ -186,7 +199,7 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
                 write_json(resolved/'diagnostics'/(key+'.json'),dict(source_key=key,exception_type=type(exc).__name__,message=str(exc)))
             except OSError:
                 pass  # Cache permission failures must not abort independent sources.
-        write_json(data_dir/'manifest.json',dict(schema_version=1,prefectures=states))
+        write_json(manifest_path,dict(manifest,schema_version=1,prefectures=states))
     return states
 
 
