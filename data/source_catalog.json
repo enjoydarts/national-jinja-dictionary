@@ -38204,6 +38204,91 @@
       "listing_urls": [
         "https://www.hyogo-jinjacho.com/search.html"
       ],
+      "map_partition_audit": {
+        "actual_ui_viewport_observed": false,
+        "api_cap_confirmed": false,
+        "baseline": {
+          "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+          "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+          "unique_codes": 3834,
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+        },
+        "changed_codes": [],
+        "conflicting_identity_codes": [],
+        "consistent_comparison": true,
+        "missing_codes": [],
+        "new_codes": [],
+        "overlap_observations": 219,
+        "partition_union_codes_sha256": "6ca90bf97f9eb378d21cb8dc89d7fff79dda05c19a9b79d3b14cf958e0953b89",
+        "partition_union_unique_codes": 3834,
+        "partitions": [
+          {
+            "bounds": {
+              "ne_lat": "35.01",
+              "ne_lng": "135.01",
+              "sw_lat": "34",
+              "sw_lng": "134"
+            },
+            "fetched_at": "2026-11-10T11:52:51.925707+00:00",
+            "out_of_bounds_codes": [],
+            "page_hash": "5a046792864c737b5a9139356aed65f5f4184836ec5cd5e2fbebbea6d5e1d6ed",
+            "rows": 1797,
+            "unique_codes": 1797,
+            "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=35.01&sw_lat=34&ne_lng=135.01&sw_lng=134"
+          },
+          {
+            "bounds": {
+              "ne_lat": "35.01",
+              "ne_lng": "136",
+              "sw_lat": "34",
+              "sw_lng": "134.99"
+            },
+            "fetched_at": "2026-11-10T11:52:54.042176+00:00",
+            "out_of_bounds_codes": [],
+            "page_hash": "03acddbb7a5b5b4dfb44571bb4ffcd79c8330a1734470fb39c0e6d7de92a8f18",
+            "rows": 698,
+            "unique_codes": 698,
+            "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=35.01&sw_lat=34&ne_lng=136&sw_lng=134.99"
+          },
+          {
+            "bounds": {
+              "ne_lat": "36",
+              "ne_lng": "135.01",
+              "sw_lat": "34.99",
+              "sw_lng": "134"
+            },
+            "fetched_at": "2026-11-10T11:52:56.186970+00:00",
+            "out_of_bounds_codes": [],
+            "page_hash": "c98f7aecc6bd20cfa7a5c6db399560186608f6db2f19f89334ee539db2c51287",
+            "rows": 1130,
+            "unique_codes": 1130,
+            "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34.99&ne_lng=135.01&sw_lng=134"
+          },
+          {
+            "bounds": {
+              "ne_lat": "36",
+              "ne_lng": "136",
+              "sw_lat": "34.99",
+              "sw_lng": "134.99"
+            },
+            "fetched_at": "2026-11-10T11:52:58.304299+00:00",
+            "out_of_bounds_codes": [],
+            "page_hash": "cf3866fea85d1e105976e75767e31a3a68775a998bcf005b7b70f07feb0a9e1b",
+            "rows": 428,
+            "unique_codes": 428,
+            "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34.99&ne_lng=136&sw_lng=134.99"
+          }
+        ],
+        "prefectural_boundary_confirmed": false,
+        "protocol": {
+          "fetched_at": "2026-11-08T14:32:11.015826+00:00",
+          "page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "url": "https://www.hyogo-jinjacho.com/js/formsearch.js"
+        },
+        "schema_version": 1,
+        "scope": "one selected rectangle and four overlapping rectangles derived from the published map protocol; no all-site or prefectural census guarantee",
+        "whole_site_inventory_confirmed": false
+      },
       "official_url": "https://www.hyogo-jinjacho.com/",
       "official_verification": {
         "checked_at": "2026-11-08T13:14:34.655099+00:00",
