@@ -5,6 +5,8 @@ verified prefectural boundary. Neither an API cap nor site-wide completeness
 has been established. No article prose, aliases or photographs are extracted.
 """
 import copy
+import hashlib
+from decimal import Decimal
 import re
 from urllib.parse import parse_qsl, unquote, urljoin, urlsplit
 from xml.etree import ElementTree as ET
@@ -17,7 +19,12 @@ ORIGIN='https://www.hyogo-jinjacho.com'
 INDEX=ORIGIN+'/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134'
 SMALL=ORIGIN+'/data/xml.php?ne_lat=34.691492&sw_lat=34.671492&ne_lng=135.186149&sw_lng=135.166149'
 PROTOCOL_URL=ORIGIN+'/js/formsearch.js'
-OBSERVED_QUERIES={tuple(sorted(parse_qsl(urlsplit(u).query))) for u in (INDEX,SMALL)}
+# Explicit research inputs derived from the published getBounds protocol.
+# Their values are selected rectangles, not observed browser viewports.
+PARTITION_QUERIES=tuple(ORIGIN+'/data/xml.php?ne_lat='+north+'&sw_lat='+south+'&ne_lng='+east+'&sw_lng='+west
+    for south,north in [('34','35.01'),('34.99','36')]
+    for west,east in [('134','135.01'),('134.99','136')])
+SUPPORTED_QUERIES={tuple(sorted(parse_qsl(urlsplit(u).query))) for u in (INDEX,SMALL,*PARTITION_QUERIES)}
 
 
 CITY_NAME_CHANGE=dict(
@@ -58,7 +65,8 @@ def _url(value,base=INDEX):
     if p.scheme!='https' or p.netloc!='www.hyogo-jinjacho.com' or p.fragment:raise ValueError('Hyogo URL outside official origin')
     if p.path=='/data/xml.php':
         pairs=parse_qsl(p.query,keep_blank_values=True)
-        if len(dict(pairs))!=len(pairs) or tuple(sorted(pairs)) not in OBSERVED_QUERIES:raise ValueError('unobserved Hyogo map query')
+        if len(dict(pairs))!=len(pairs) or tuple(sorted(pairs)) not in SUPPORTED_QUERIES:raise ValueError('unsupported Hyogo map query')
+    elif url==PROTOCOL_URL:pass
     elif not re.fullmatch(r'/data/[0-9]{7}\.html',p.path) or p.query:raise ValueError('unexpected Hyogo profile path/query')
     return url
 
@@ -115,6 +123,49 @@ def parse_xml(page):
             code_raw=code,name_raw=fields['name'],address_raw=fields['place'],protocol_url=PROTOCOL_URL,href_derivation='data/ + actual Locate code + .html')
         rows.append(dict(source_id=code,name=fields['name'],address=fields['place'],url=ORIGIN+'/data/'+code+'.html',xml_source=binding))
     return rows
+
+
+def audit_map_partitions(client):
+    """Compare five map responses; retain uncertainty about caps and inventory."""
+    protocol=_fetch(client,PROTOCOL_URL)
+    if not all(marker in decode_html(protocol) for marker in ('getBounds()', 'data/xml.php?ne_lat=')):
+        raise ValueError('Hyogo published map protocol changed; inspection required')
+    baseline=_fetch(client,INDEX);base_rows=parse_xml(baseline)
+    def facts(rows):
+        result={}
+        for row in rows:
+            value={k:row[k] for k in ('source_id','name','address','url')}
+            if row['source_id'] in result and result[row['source_id']]!=value:
+                raise ValueError('conflicting native identities within one map response')
+            result[row['source_id']]=value
+        return result
+    before=facts(base_rows);union={};conflicts=set();observations=[]
+    for url in PARTITION_QUERIES:
+        response=_fetch(client,url);rows=parse_xml(response);current=facts(rows)
+        bounds=dict(parse_qsl(urlsplit(url).query));outside=[]
+        for item in ET.fromstring(decode_html(response)):
+            lat=Decimal(item.findtext('lat'));lng=Decimal(item.findtext('lng'))
+            if not (Decimal(bounds['sw_lat'])<=lat<=Decimal(bounds['ne_lat'])
+                and Decimal(bounds['sw_lng'])<=lng<=Decimal(bounds['ne_lng'])):
+                outside.append(item.findtext('code'))
+        for code,value in current.items():
+            if code in union and union[code]!=value:conflicts.add(code)
+            else:union[code]=value
+        observations.append(dict(url=response.url,page_hash=response.sha256,fetched_at=response.fetched_at,
+            bounds=bounds,rows=len(rows),unique_codes=len(current),out_of_bounds_codes=sorted(set(outside))))
+    added=sorted(set(union)-set(before));missing=sorted(set(before)-set(union))
+    changed=sorted(code for code in set(before)&set(union) if before[code]!=union[code])
+    return dict(schema_version=1,
+        protocol=dict(url=protocol.url,page_hash=protocol.sha256,fetched_at=protocol.fetched_at),
+        baseline=dict(url=baseline.url,page_hash=baseline.sha256,fetched_at=baseline.fetched_at,unique_codes=len(before)),
+        partitions=observations,partition_union_unique_codes=len(union),
+        partition_union_codes_sha256=hashlib.sha256('\n'.join(sorted(union)).encode()).hexdigest(),
+        overlap_observations=sum(v['rows'] for v in observations)-len(union),
+        new_codes=added,missing_codes=missing,changed_codes=changed,conflicting_identity_codes=sorted(conflicts),
+        consistent_comparison=not (added or missing or changed or conflicts or any(v['out_of_bounds_codes'] for v in observations)),
+        api_cap_confirmed=False,whole_site_inventory_confirmed=False,prefectural_boundary_confirmed=False,
+        actual_ui_viewport_observed=False,
+        scope='one selected rectangle and four overlapping rectangles derived from the published map protocol; no all-site or prefectural census guarantee')
 
 
 def _reading_reason(name,raw):
@@ -223,4 +274,30 @@ def collect_hyogo(client,limit=None):
     return data
 
 
+def main(argv=None):
+    """Optional source audit; never saves facilities or generates dictionaries."""
+    import argparse
+    import json
+    from pathlib import Path
+    from njd.http import Client
+    from njd.storage import write_json
+    parser=argparse.ArgumentParser(description='Compare the selected Hyogo map rectangle with four overlapping searches.')
+    parser.add_argument('--cache-dir',type=Path,default=Path.home()/'.cache/national-jinja-dictionary/http')
+    parser.add_argument('--offline',action='store_true')
+    parser.add_argument('--refresh',action='store_true')
+    parser.add_argument('--report',type=Path)
+    args=parser.parse_args(argv)
+    if args.offline and args.refresh:parser.error('--offline and --refresh cannot be combined')
+    client=Client(args.cache_dir,interval=2,timeout=30,retries=0,offline=args.offline)
+    client.refresh_requested=args.refresh
+    try:result=audit_map_partitions(client)
+    except (FetchError,ValueError,OSError,UnicodeError) as exc:parser.exit(1,str(exc)+'\n')
+    if args.report:write_json(args.report,result)
+    else:print(json.dumps(result,ensure_ascii=False,sort_keys=True,indent=2))
+    return 0
+
+
 REGISTRY={'hyogo':dict(code='28',prefecture='兵庫県',agency='兵庫県神社庁',collect=collect_hyogo)}
+
+
+if __name__=='__main__':raise SystemExit(main())
