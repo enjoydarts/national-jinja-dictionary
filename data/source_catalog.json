@@ -41817,31 +41817,35 @@
       "candidate_url": "https://nagasaki-jinjacho.or.jp/",
       "collection": {
         "canonical_data": {
-          "entries": 25,
+          "entries": 1254,
           "entry_status_counts": {
-            "pending": 25
+            "pending": 1254
           },
-          "facilities": 25,
+          "facilities": 1254,
           "facility_status_counts": {
-            "pending": 25
+            "pending": 12,
+            "verified": 1242
           },
           "path": "data/sources/nagasaki.json",
           "verified_entries": 0,
-          "verified_facilities": 0
+          "verified_facilities": 1242
         },
-        "checked_at": null,
-        "facilities_collected": 25,
+        "checked_at": "2026-11-10T13:04:09.287384+00:00",
+        "collection_complete": true,
+        "facilities_collected": 1254,
         "fields_observed": {
-          "address": 0,
-          "facility_official_url": 25,
-          "name": 25,
+          "address": 1245,
+          "facility_official_url": 37,
+          "name": 1254,
           "reading_raw": 0
         },
         "inspection_evidence": [],
+        "legacy_link_rows_observed": 25,
         "linked_site_research": {
           "checked_at": "2026-11-09T06:17:48.732980+00:00",
           "evidence_data": "data/locations.json",
           "failed_official_hrefs": 2,
+          "historical_scope_note": "旧リンク集25施設についての先行調査。新名簿を優先した住所補完8件は全根拠とともにlocations.jsonのsuperseded_facilitiesへ保存。以前の全文読み2件は新旧名称・番地差のため保留し、現在の適格件数には加算しない。",
           "listed_records_in_scope": 25,
           "ordinary_sites_opened": 15,
           "remaining_scope": "所在地未確定14施設、読み未確認23施設。国/國・浜/濱・読/讀などの表記差、住所候補の衝突、SNS停止・404を区別。",
@@ -41851,25 +41855,58 @@
           "verified_location_supplements": 11
         },
         "listing_authority_status": "agency_site",
-        "pages_fetched": 1,
-        "reason": "神社庁の公式リンク集25掲載だけを正本へ保存。全県神社一覧ではない。リンク先は通常公式サイト15件を実閲覧、SNS8件は取得停止、実href2件はHTTP404。別管理の資料から所在地11施設・全文読み2施設を補完。表記差・住所衝突等は要確認に保持。",
+        "matched_legacy_links": 16,
+        "pages_fetched": 15,
+        "reason": "実検索索引から辿った12支部の7列表1245行と旧リンク集25件を照合。16件は一意の同一リンク先を根拠に旧IDを保持。未解決の重複・外字・旧リンクは別に保持。国税庁の全文名称・全住所・全文カナ一致171施設を補完。全県神社の網羅と再配布許諾は未確認。",
         "record_fetched_at_range": [
-          "2026-11-08T14:28:34.370788+00:00",
-          "2026-11-08T14:28:34.370788+00:00"
+          "2026-11-09T15:24:52.605602+00:00",
+          "2026-11-10T12:26:38.747733+00:00"
         ],
-        "remaining_scope": "住所と読みの公式補完、公開施設一覧の追加調査。",
-        "saved_listing_page_count": 1,
+        "regional_pages": 12,
+        "regional_rows_observed": 1245,
+        "registered_full_reading_supplements": {
+          "evidence_data": "data/corrections.json",
+          "identity_match": "exact full name and complete numeric address; unique active corporate identity; literal complete kana",
+          "source": "国税庁法人番号公表サイト Unicode CSV 20261030 / file28487",
+          "verified_facilities": 171
+        },
+        "remaining_scope": "全文読み未確認1083登録。旧リンクと新名簿の未解決同一性、總社神社の同名同所在地2掲載、外字注記1件、久山年神社/年神社の名称・番地差と飯盛神社の番地差は要確認。",
+        "saved_listing_page_count": 15,
         "saved_listing_page_examples": [
           {
-            "fetched_at": "2026-11-08T14:28:34.370788+00:00",
-            "page_hash": "307091be9b409e579a3163b03f301e3972c3ceabf9fd1ea5dfd375fcfad11b04",
+            "fetched_at": "2026-11-08T14:28:31.924674+00:00",
+            "sha256": "75404cd92706fa8514448e357610323e9b276dd2346a2362166e55b4de8ed3c1",
+            "url": "https://nagasaki-jinjacho.or.jp/"
+          },
+          {
+            "fetched_at": "2026-11-10T12:26:12.310666+00:00",
+            "sha256": "45a979c31546d7d39db4791a9e8bf1c08ad2721d7df99e2ca3d4ff041ab74302",
+            "url": "https://nagasaki-jinjacho.or.jp/search.html"
+          },
+          {
+            "fetched_at": "2026-11-09T15:24:52.605602+00:00",
+            "sha256": "307091be9b409e579a3163b03f301e3972c3ceabf9fd1ea5dfd375fcfad11b04",
             "url": "https://nagasaki-jinjacho.or.jp/link.html"
+          },
+          {
+            "fetched_at": "2026-11-10T12:26:14.469992+00:00",
+            "sha256": "47023424ff0a14790e62f692e5efa0670e264432a4bc72381883293c81c21379",
+            "url": "https://nagasaki-jinjacho.or.jp/tsushima.html"
           }
         ],
-        "source_rows_observed": 25,
-        "status": "partial",
-        "stored_coverage": "all discoverable listing pages",
-        "stored_pages_fetched": 1
+        "source_audit": {
+          "actual_ime_import_performed": false,
+          "checked_at": "2026-11-10T13:04:09.287384+00:00",
+          "issues": 0,
+          "method": "Individually compared every parsed regional name/address/printed number/postal code to the saved table locator and page hash; compared all accepted registered kana and identity fields to exact Unicode CSV rows.",
+          "regional_rows_compared": 1245,
+          "registered_reading_rows_compared": 171
+        },
+        "source_rows_observed": 1270,
+        "status": "collected",
+        "stored_coverage": "observed regional table and outbound-link graph only; not a prefectural shrine census",
+        "stored_pages_fetched": 15,
+        "traversal_complete": true
       },
       "conditions": {
         "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
@@ -41891,6 +41928,7 @@
         "published_fields": "県内神社リンク集で名称・一部公式サイトURL。読みと鎮座地は当該一覧で未確認。"
       },
       "listing_urls": [
+        "https://nagasaki-jinjacho.or.jp/search.html",
         "https://nagasaki-jinjacho.or.jp/link.html"
       ],
       "official_url": "https://nagasaki-jinjacho.or.jp/",
@@ -42679,29 +42717,29 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 52928,
-    "canonical_facility_records": 55033,
+    "canonical_facilities": 54157,
+    "canonical_facility_records": 56262,
     "canonical_source_alias_records": 2105,
     "canonical_source_basis_counts": {
-      "agency": 51962,
+      "agency": 53191,
       "association_reference": 590,
       "wikipedia_reference": 376
     },
     "canonical_source_files": 48,
     "canonical_source_record_basis_counts": {
-      "agency": 54067,
+      "agency": 55296,
       "association_reference": 590,
       "wikipedia_reference": 376
     },
     "collection_status_count_scope": "agency collection survey only; reference_collection is reported separately",
     "collection_status_counts": {
       "blocked": 3,
-      "collected": 38,
-      "partial": 3,
+      "collected": 39,
+      "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13331,
-    "effective_verified_facilities": 42724,
+    "effective_dictionary_rows": 13368,
+    "effective_verified_facilities": 42893,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
