@@ -28,7 +28,7 @@ def licensed_reference_credits(refs):
 
 def _input_hashes(data_dir):
     paths=sorted((data_dir/'sources').glob('*.json'))
-    paths += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','locations.json','corrections.json','reviews.json','source_aliases.json','source_catalog.json') if (data_dir/name).exists()]
+    paths += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','locations.json','corrections.json','reviews.json','source_aliases.json','source_catalog.json','reading_research.json') if (data_dir/name).exists()]
     return {str(p.relative_to(data_dir)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
@@ -53,7 +53,7 @@ def create_release(data_dir,output_dir,version,source_commit):
     destination=output_dir/'dictionaries'
     report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社','𡶌部神社','㯮椒神社'),output_dir=destination)
     _review_lists(data,destination)
-    for name in ('manifest.json','locations.json','corrections.json','reviews.json','source_aliases.json','source_catalog.json'):
+    for name in ('manifest.json','locations.json','corrections.json','reviews.json','source_aliases.json','source_catalog.json','reading_research.json'):
         path=data_dir/name
         if path.exists():
             value=load_dataset(path);ensure_public_metadata(value)
