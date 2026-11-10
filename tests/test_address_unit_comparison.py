@@ -33,3 +33,9 @@ class AddressUnitComparisonTests(unittest.TestCase):
             with self.subTest(town=town):
                 self.assertTrue(self.matches('架空市'+town,'架空市'+town+'17'))
         self.assertFalse(self.matches('架空市甲町一番地','架空市甲町一番地1'))
+
+    def test_literal_numeric_no_separator_is_comparison_only(self):
+        self.assertTrue(self.matches('架空市甲町1の2','架空市甲町1番地の2'))
+        self.assertTrue(self.matches('架空市甲町5-104','架空市甲町５の１０４番地'))
+        self.assertFalse(self.matches('架空市甲町1の2','架空市甲町1-20'))
+        self.assertFalse(self.matches('架空市一の宮17','架空市一-宮17'))

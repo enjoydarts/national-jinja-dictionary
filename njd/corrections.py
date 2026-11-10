@@ -90,6 +90,7 @@ def _reference_matches(ref,facility,entry,changes):
         value=re.sub(r'(?<=\d)丁目(?=\d)','-',value)
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
         value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
+        value=re.sub(r'(?<=\d)の(?=\d)','-',value)
         return value.replace('大字','')
     actual=address(ref.get('address_raw'))
     sources=[facility.get('address')]
@@ -140,24 +141,30 @@ def _official_reading_reference(ref,authority,facility):
 def _linked_locality_reference(ref,correction,facility):
     """An observed agency link identifies its own site's more precise address.
 
-    This is restricted to a locality with no parcel, followed by a literal
-    aza and parcel. It cannot replace an existing street number or authorize
-    another site's same-name facility.
+    Permit a locality followed by a literal aza/parcel, or a single explicit
+    aza marker with an otherwise identical full address. Neither case replaces
+    an existing street number or authorizes another site's same-name facility.
     """
     authority,problems=_official_reading_authority(correction,facility)
     if (problems or not authority or set(correction.get('changes',{}))!={'reading'}
         or not _official_reading_reference(ref,authority,facility)):return False
     proof=ref.get('address_identity_proof');raw=raw_address(facility)
-    if (not isinstance(proof,dict) or proof.get('kind')!='agency_linked_locality_with_aza'
+    if (not isinstance(proof,dict) or proof.get('kind') not in ('agency_linked_locality_with_aza','agency_linked_aza_marker')
         or proof.get('listing_address_raw')!=raw
         or proof.get('official_address_raw')!=ref.get('address_raw')):return False
     expected=_comparison(raw).removeprefix(facility.get('prefecture',''))
     actual=_comparison(ref.get('address_raw')).removeprefix(facility.get('prefecture',''))
+    literal=(ref.get('name_raw') in ref.get('excerpt','')
+        and bool(ref.get('address_raw')) and ref['address_raw'] in ref.get('excerpt',''))
+    if proof['kind']=='agency_linked_aza_marker':
+        # Only an explicit marker, not an added aza name or another parcel.
+        marker=re.fullmatch(r'(.+[市区町村郡])字([^0-9]+)([0-9]+(?:-[0-9]+)*(?:番地|番|号)?)',actual)
+        return (proof.get('added_marker_raw')=='字' and bool(marker)
+            and ''.join(marker.groups())==expected and literal)
     if not expected or re.search(r'\d',expected) or not actual.startswith(expected):return False
     suffix=actual[len(expected):]
     return (bool(re.fullmatch(r'(?:小字|字)[\u3400-\u9fff々〆ヶぁ-ゖァ-ヺー]+[0-9]+(?:-[0-9]+)*(?:番地|番|号)?',suffix))
-        and ref.get('name_raw') in ref.get('excerpt','')
-        and bool(ref.get('address_raw')) and ref['address_raw'] in ref.get('excerpt',''))
+        and literal)
 
 
 def _normalized_reference_reading(ref):

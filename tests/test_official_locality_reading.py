@@ -7,8 +7,8 @@ from njd.corrections import apply_corrections
 from njd.validation import eligible
 
 
-def candidate(spaced=False):
-    d=build([row(name='架空神社',address='架空市甲町',reading_raw='')])
+def candidate(spaced=False,address='架空市甲町'):
+    d=build([row(name='架空神社',address=address,reading_raw='')])
     f=d['facilities'][0];f['official_site_url']='https://shrine.example.invalid/one/'
     c=correction(d,{'reading':'かくうじんじゃ'});v=next(iter(c['entries'].values()))
     r=v['references'][0];r.update(url=f['official_site_url']+'access',source_kind='official_shrine',
@@ -26,6 +26,23 @@ def candidate(spaced=False):
 
 
 class OfficialLocalityReadingTests(unittest.TestCase):
+    def test_linked_official_aza_marker_preserves_the_exact_parcel(self):
+        d,c,r=candidate(address='架空市甲町17');r['address_raw']='埼玉県架空市字甲町17'
+        r['excerpt']=r['name_raw']+'（'+r['reading_raw']+'） '+r['address_raw']
+        r['address_identity_proof'].update(kind='agency_linked_aza_marker',added_marker_raw='字',official_address_raw=r['address_raw'])
+        self.assertEqual(len(eligible(apply_corrections(d,c))),1)
+        for mutate in [lambda q:q['address_identity_proof'].pop('added_marker_raw'),
+                lambda q:q['address_identity_proof'].update(added_marker_raw='大字'),
+                lambda q:q.update(address_raw='埼玉県別市字甲町17'),
+                lambda q:q.update(address_raw='埼玉県架空市字甲町170'),
+                lambda q:q.update(address_raw='埼玉県架空市字別町17')]:
+            with self.subTest(mutation=mutate):
+                altered=copy.deepcopy(c);ref=next(iter(altered['entries'].values()))['references'][0];mutate(ref)
+                if ref['address_raw']!=r['address_raw']:
+                    ref['address_identity_proof']['official_address_raw']=ref['address_raw']
+                    ref['excerpt']=ref['name_raw']+'（'+ref['reading_raw']+'） '+ref['address_raw']
+                self.assertFalse(eligible(apply_corrections(d,altered)))
+
     def test_bound_full_address_extends_locality_without_rewriting_either_original(self):
         d,c,r=candidate();before=copy.deepcopy((d,c))
         out=apply_corrections(d,c)
