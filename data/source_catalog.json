@@ -40654,6 +40654,53 @@
       "prefecture_code": "42"
     },
     {
+      "additional_source_evidence": [
+        {
+          "automation_reference": "https://support.microsoft.com/ja-jp/excel/use-furigana-phonetic-guides-with-japanese-text",
+          "automation_reference_opened_on": "2026-11-10",
+          "dictionary_confirmations_from_embedded_phonetics": 0,
+          "fetched_at": "2026-11-09T14:08:13.809708+00:00",
+          "full_address_compatible": 76,
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "locality_with_numeric_parcel_compatible": 75,
+          "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+          "published_fields": [
+            "法人名称",
+            "事務所所在地",
+            "法人名称セル内のrPh（入力用ふりがな）"
+          ],
+          "raw_workbook_redistributed": false,
+          "reading_scope": "151 agency-listed targets have one full-name rPh run and compatible name/address. Embedded input readings remain unverified; not a dedicated confirmed-reading field.",
+          "source_kind": "government_register_embedded_input_phonetic",
+          "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+        },
+        {
+          "address_limitation": "市資料の地名は松島町合津まで。番地3820は別の参考プロフィール・県事務所所在地に明記。",
+          "confirmed_reading": "あいつじんじゃ",
+          "conflicting_embedded_input_phonetic_raw": "アイヅジンジャ",
+          "dictionary_facilities_added": 1,
+          "embedded_input_phonetic_adopted": false,
+          "fetched_at": "2026-11-10T04:10:53.812475+00:00",
+          "locator": "PDF page index31 / printed29; printed ruby over shrine name, visual check",
+          "name_raw": "合津神社",
+          "page_hash": "5cfde11149c343e3933e0b7cce61fa163fb744dd6721245a2fae3250a4afad96",
+          "secondary_address_reference": "https://omairi.club/spots/126178",
+          "source_kind": "municipal_printed_ruby_with_separate_full_address_reference",
+          "url": "https://www.city.kamiamakusa.kumamoto.jp/dl?q=57970_filelib_7f29d5ed8d4e2896985a1dc27d6fb405.pdf"
+        },
+        {
+          "additional_attempted_url": "https://amakusa-jinja.webnet.jp/jinja/%E5%90%88%E6%B4%A5%E7%A5%9E%E7%A4%BE/",
+          "body_opened": false,
+          "checked_on": "2026-11-10",
+          "facility_records_adopted": 0,
+          "inspection_method": "Browser actual open",
+          "official_body_verified": false,
+          "scope": "Search snippets not used as evidence; no restriction bypass.",
+          "source_kind": "branch_discovery_candidate_only",
+          "status": 403,
+          "url": "https://amakusa-jinja.webnet.jp/"
+        }
+      ],
       "agency_name": "熊本県神社庁",
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://kumamotokenjinjacho.jp/",
@@ -40673,6 +40720,8 @@
           "verified_facilities": 457
         },
         "checked_at": null,
+        "effective_pending_entries": 564,
+        "embedded_input_phonetic_candidates": 151,
         "facilities_collected": 571,
         "fields_observed": {
           "address": 571,
@@ -40710,7 +40759,8 @@
         "source_rows_observed": 571,
         "status": "collected",
         "stored_coverage": "all discoverable listing pages",
-        "stored_pages_fetched": 44
+        "stored_pages_fetched": 44,
+        "supplemental_reading_facilities": 7
       },
       "conditions": {
         "data_use_conditions": "個人情報保護方針を閲覧。データ抽出/再配布の許諾は未確認。",
