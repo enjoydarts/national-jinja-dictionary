@@ -19,10 +19,16 @@ def subset(data,code):
     return result
 
 def _counts(data):
-    accepted=eligible(data)
+    accepted=eligible(data);groups={}
+    for f in data['facilities']:groups.setdefault(f.get('listing_basis','agency'),set()).add(f['id'])
+    basis_counts={}
+    for basis,ids in sorted(groups.items()):
+        entries=[e for e in accepted if e['facility_id'] in ids]
+        basis_counts[basis]=dict(facilities=len(ids),verified_facilities=len({e['facility_id'] for e in entries}),
+            dictionary_rows=len({(e['reading'],e['surface'],e['semantic_type']) for e in entries}))
     return dict(facilities=len(data['facilities']),verified_facilities=len({e['facility_id'] for e in accepted}),
         dictionary_rows=len({(e['reading'],e['surface'],e['semantic_type']) for e in accepted}),
-        entry_status_counts=dict(sorted(Counter(e['status'] for e in data['entries']).items())))
+        entry_status_counts=dict(sorted(Counter(e['status'] for e in data['entries']).items())),source_basis_counts=basis_counts)
 
 def report(data,outputs=None):
     totals=_counts(data)
@@ -36,6 +42,7 @@ def report(data,outputs=None):
         counting_notes=['dictionary_rows uses neutral semantic_type; format POS deduplication is counted separately',
             'JSON/CSV rows count management entry records, including pending/excluded; not IME candidates',
             'observed source rows are not claimed prefectural shrine totals',
+            'source_basis_counts separates agency listings and reference-only records; per-basis dictionary row counts are not additive',
             'actual IME import not performed for any format'])
 
 def samples(data,maximum=12,names=()):

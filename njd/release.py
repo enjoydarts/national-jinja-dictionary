@@ -53,9 +53,21 @@ def create_release(data_dir,output_dir,version,source_commit):
         generation='offline from committed canonical data; no crawling during release',
         blocked_formats=[name for name,profile in FORMATS.items() if profile['status']=='blocked'])
     write_json(destination/'SOURCE.json',source)
+    credits={}
+    refs=[f.get('source_reference') for f in data['facilities']]
+    refs += [ref for e in data['entries'] for ref in e.get('correction',{}).get('references',[])]
+    for ref in refs:
+        if not isinstance(ref,dict) or ref.get('source_kind')!='encyclopedia' or not ref.get('license_url'):continue
+        item={key:ref[key] for key in ('url','title','revision_id','permalink','license_url') if key in ref}
+        item['processing_notice']='日本語版Wikipediaから名称・読み・所在地の事実項目を抽出。読みのカタカナはひらがなに機械変換。'
+        credits[(ref.get('url',''),str(ref.get('revision_id','')))]=item
+    write_json(destination/'ATTRIBUTION.json',dict(wikipedia=[credits[key] for key in sorted(credits)]))
     totals=report['totals']
+    reference_count=totals.get('source_basis_counts',{}).get('wikipedia_reference',{}).get('facilities',0)
+    description=('神社庁の公式掲載情報と、利用できない掲載情報を補うWikipediaの参考資料に基づく辞書です。出典区分と収集済み範囲はreport.jsonで確認してください。'
+        if reference_count else '調査した都道府県神社庁の公式掲載情報に基づく辞書です。収集済み範囲はreport.jsonで確認してください。')
     lines=[f'# 全国神社辞書 {version}','',
-        '調査した都道府県神社庁の公式掲載情報に基づく辞書です。収集済み範囲はreport.jsonで確認してください。','',
+        description,'',
         f'- 正本コミット: `{source_commit}`',
         f"- 施設レコード: {totals['facilities']}",
         f"- 確認済み施設: {totals['verified_facilities']}",
@@ -67,6 +79,7 @@ def create_release(data_dir,output_dir,version,source_commit):
     lines += ['', 'JSON・CSVは未確認を含む管理用データです。IME用の登録行とは件数が異なります。',
         '保留形式は仕様確認不足のためファイルを生成していません。全国の全神社を網羅したとは主張しません。',
         '出典と検証状態は管理用JSON/CSV・サンプルmanifestに含まれます。',
+        'Wikipedia由来の出典・版・ライセンスはATTRIBUTION.jsonに記載しています。参考資料単独の収録を神社庁掲載確認済み件数に加えていません。',
         'ソースコードはMIT。収集元データの利用条件は正本の出典別メタデータを参照してください。','']
     notes='\n'.join(lines)
     (destination/'README.md').write_text(notes,encoding='utf-8')

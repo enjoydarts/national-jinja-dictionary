@@ -37951,7 +37951,27 @@
         "status": "verified_opened"
       },
       "prefecture": "広島県",
-      "prefecture_code": "34"
+      "prefecture_code": "34",
+      "reference_collection": {
+        "article_inventory_count": 81,
+        "articles_inspected": 81,
+        "articles_needing_review": 39,
+        "attribution": "Per-facility source_reference records contain the article URL, revision permalink and license; no article body or image redistribution.",
+        "canonical_path": "data/sources/hiroshima.json",
+        "facilities": 42,
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "official_agency_listing_verified": false,
+        "pages_fetched": 87,
+        "publisher": "日本語版Wikipedia",
+        "reason": "神社庁資料は利用条件により未収集。Wikipedia記事の名称・全文読み・県内所在地・記事ID・版IDを実ページから照合した42施設を参考資料単独枠で保存。神社庁掲載確認済みとは扱わず、県内全神社の網羅とも区別。",
+        "scope": "Inspected Wikipedia shrine articles only; not agency listings or all prefectural shrines.",
+        "source_basis": "wikipedia_reference",
+        "source_key": "hiroshima",
+        "source_rows_observed": 42,
+        "status": "collected_reference",
+        "terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "verified_facilities": 42
+      }
     },
     {
       "agency_name": "山口県神社庁",
@@ -38023,7 +38043,27 @@
         "status": "verified_opened"
       },
       "prefecture": "山口県",
-      "prefecture_code": "35"
+      "prefecture_code": "35",
+      "reference_collection": {
+        "article_inventory_count": 44,
+        "articles_inspected": 44,
+        "articles_needing_review": 13,
+        "attribution": "Per-facility source_reference records contain the article URL, revision permalink and license; no article body or image redistribution.",
+        "canonical_path": "data/sources/yamaguchi.json",
+        "facilities": 31,
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "official_agency_listing_verified": false,
+        "pages_fetched": 48,
+        "publisher": "日本語版Wikipedia",
+        "reason": "神社庁資料は利用条件により未収集。Wikipedia記事の名称・全文読み・県内所在地・記事ID・版IDを実ページから照合した31施設を参考資料単独枠で保存。神社庁掲載確認済みとは扱わず、県内全神社の網羅とも区別。",
+        "scope": "Inspected Wikipedia shrine articles only; not agency listings or all prefectural shrines.",
+        "source_basis": "wikipedia_reference",
+        "source_key": "yamaguchi",
+        "source_rows_observed": 31,
+        "status": "collected_reference",
+        "terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja",
+        "verified_facilities": 31
+      }
     },
     {
       "additional_source_evidence": [
@@ -41324,14 +41364,20 @@
   "snapshot_date": "2026-11-09",
   "summary": {
     "agency_official_sites_verified_opened": 44,
-    "canonical_facilities": 53517,
+    "canonical_facilities": 53590,
+    "canonical_source_basis_counts": {
+      "agency": 53517,
+      "wikipedia_reference": 73
+    },
+    "collection_status_count_scope": "agency collection survey only; reference_collection is reported separately",
     "collection_status_counts": {
       "blocked": 3,
       "collected": 38,
       "partial": 3,
       "unresolved": 3
     },
-    "prefectures_with_canonical_facilities": 41,
+    "prefectures_with_canonical_facilities": 43,
+    "reference_only_prefectures": 2,
     "target_prefectures": 47
   }
 }
