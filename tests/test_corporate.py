@@ -40,7 +40,7 @@ class CorporateTests(unittest.TestCase):
         self.assertNotIn('SECRET',json.dumps(p))
 
     def test_unsafe_records_do_not_become_proposals(self):
-        for change in [dict(furigana=''),dict(closeDate='2026-01-01'),dict(latest='0'),dict(process='99'),dict(hihyoji='1'),dict(name='宗教法人前田神社'),dict(streetNumber='大覚寺７６０番地'),dict(furigana='マエダ'),dict(furigana='マエダジンジヤ')]:
+        for change in [dict(furigana=''),dict(closeDate='2026-01-01'),dict(latest='0'),dict(process='99'),dict(hihyoji='1'),dict(name='宗教法人宗教法人前田神社'),dict(streetNumber='大覚寺７６０番地'),dict(furigana='マエダ'),dict(furigana='マエダジンジヤ')]:
             with self.subTest(change=change):
                 proposals,pending=c.proposals_for_archive(archive([row(**change)]),[target()],META)
                 self.assertEqual(proposals,{});self.assertIn('e',pending)

@@ -30,6 +30,54 @@ TOKEN='jp.go.nta.houjin_bangou.framework.web.common.CNSFWTokenProcessor.request.
 FIELDS='sequenceNumber corporateNumber process correct updateDate changeDate name nameImageId kind prefectureName cityName streetNumber addressImageId prefectureCode cityCode postCode addressOutside addressOutsideImageId closeDate closeCause successorCorporateNumber changeCause assignmentDate latest enName enPrefectureName enCityName enAddressOutside furigana hihyoji'.split()
 MAX_ZIP=64*1024*1024
 MAX_UNCOMPRESSED=512*1024*1024
+MATCHING_PROFILE='full-name-address-literal-kana-v2-religious-prefix'
+
+# The opened three-agency notice explicitly excludes the legal-form portion
+# from registered furigana. This is a name-comparison rule, not kana inference.
+LEGAL_PREFIX_RULE=dict(
+    url=BASE+'/oshirase/h30/images/furigana_kouhyou.pdf',
+    page_hash='edcab3f227f44e66a3b2974fa38d70f11959f4d9cf2979e3606e6a6497232c8f',
+    fetched_at='2026-11-10T13:25:31.137436+00:00',
+    locator='p.1 section 2 フリガナの記載について, second bullet',
+    excerpt='フリガナは、法人の種類を表す部分',
+    publisher='内閣官房・法務省・国税庁',effective_date='2018-03-12')
+
+
+def legal_prefix_shrine_name(fields):
+    """One literal 宗教法人 prefix, active registered法人399; no other edits."""
+    required=('name','furigana','kind','latest','process','closeDate','hihyoji',
+              'prefectureName','cityName','streetNumber','corporateNumber')
+    if not isinstance(fields,dict) or any(not isinstance(fields.get(k),str) for k in required):return None
+    if (fields['kind']!='399' or fields['latest']!='1' or fields['process']=='99'
+        or fields['closeDate'] or fields['hihyoji']!='0'
+        or not re.fullmatch('[0-9]{13}',fields['corporateNumber'])):return None
+    prefix='宗教法人';name=fields['name']
+    if not name.startswith(prefix):return None
+    core=name[len(prefix):]
+    # Identity matching must include competitors with missing/unusable kana.
+    # Reading adoption is decided only after all active matches are counted.
+    if not core or core.startswith(prefix) or re.search(r'\s',core):return None
+    return core
+
+
+def registered_name_identity(fields):
+    core=legal_prefix_shrine_name(fields)
+    if core is None:return None
+    return dict(rule='literal_religious_corporation_prefix',removed_prefix='宗教法人',
+        registered_name_raw=fields['name'],shrine_name_raw=core,
+        rule_reference=copy.deepcopy(LEGAL_PREFIX_RULE))
+
+
+def bound_registered_shrine_name(ref):
+    """Validate the complete comparison witness without changing source text."""
+    if not isinstance(ref,dict) or ref.get('source_kind')!='government_corporate_register' or ref.get('url')!=BASE+'/download/zenken/index.html':return None
+    fields=ref.get('source_fields');proof=registered_name_identity(fields)
+    if proof is None or ref.get('registered_name_identity')!=proof:return None
+    if not fields['furigana'] or fields['furigana'].startswith('シュウキョウホウジン'):return None
+    if any(ref.get(k)!=v for k,v in dict(name_raw=fields['name'],reading_raw=fields['furigana'],
+        address_raw=fields['prefectureName']+fields['cityName']+fields['streetNumber'],
+        corporate_number=fields['corporateNumber']).items()):return None
+    return proof['shrine_name_raw']
 
 
 def discover(html,codes):
@@ -150,9 +198,12 @@ def _reading(name,raw):
 def _bound(row,target):
     f=target['facility'];e=target['entry'];address=row['prefectureName']+row['cityName']+row['streetNumber']
     # Unlike the general overlay matcher, a locality prefix is never enough here.
-    if row['name']!=f['listed_name'] or not re.search(r'[0-9０-９]',f.get('address','')):return False
+    if row['name']!=f['listed_name'] and legal_prefix_shrine_name(row)!=f['listed_name']:return False
+    if not re.search(r'[0-9０-９]',f.get('address','')):return False
     if row['prefectureCode']!=f['prefecture_code'] or row['prefectureName']!=f['prefecture']:return False
-    return _reference_matches(dict(name_raw=row['name'],address_raw=address),f,e,{})
+    # The extracted name is used only for this full-address comparison. Raw
+    # legal names and the exact rule packet are preserved in the proposal.
+    return _reference_matches(dict(name_raw=f['listed_name'],address_raw=address),f,e,{})
 
 
 def image_review_problems(ref):
@@ -197,6 +248,8 @@ def image_review_problems(ref):
 
 def _proposal(target,row,member,index,meta,*,image_reviews=None):
     f=target['facility'];e=target['entry'];raw=row['furigana'];reading=_reading(row['name'],raw)
+    if row['name']!=f['listed_name'] and raw.startswith('シュウキョウホウジン'):
+        raise ValueError('registered kana includes legal-form prefix; no automatic kana removal')
     if (row['nameImageId'] or row['addressImageId']) and not image_reviews:raise ValueError('image-backed source characters require review')
     address=row['prefectureName']+row['cityName']+row['streetNumber']
     excerpt=row['name']+' / '+raw+' / '+address
@@ -208,6 +261,9 @@ def _proposal(target,row,member,index,meta,*,image_reviews=None):
         processed_notice='国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。',
         verification_method='exact registered name and bound full numeric address; literal registered kana; no inferred small kana')
     if image_reviews is not None:ref['image_reviews']=copy.deepcopy(image_reviews)
+    if row['name']!=f['listed_name']:
+        proof=registered_name_identity(row)
+        if proof is not None:ref['registered_name_identity']=proof
     proposal=dict(status='verified',facility_id=f['id'],expected_source_hash=e.get('source_hash'),
         original=dict(name_raw=f.get('name_raw'),reading_raw=e.get('reading_raw'),address=raw_address(f),listing_url=f.get('listing_url')),
         changes=dict(reading=reading),references=[ref],reason='Registered full-name furigana from inspected NTA prefecture archive; exact legal name and full address bound.',
@@ -234,8 +290,11 @@ def proposals_for_archives(parts,targets,*,max_uncompressed=MAX_UNCOMPRESSED):
             number=row['corporateNumber']
             if number in seen:duplicates.add(number)
             seen.add(number)
-            for target in by_name.get(row['name'],[]):
-                if _bound(row,target):found[target['entry']['id']].append((row,member,index,meta))
+            names={row['name']};core=legal_prefix_shrine_name(row)
+            if core is not None:names.add(core)
+            for name in sorted(names):
+                for target in by_name.get(name,[]):
+                    if _bound(row,target):found[target['entry']['id']].append((row,member,index,meta))
     proposals={};pending={}
     for target in targets:
         eid=target['entry']['id'];matches=found[eid]
@@ -266,7 +325,7 @@ def research(data_dir,state_dir,codes,client,*,limit=0,refresh=False):
         saved=state['prefectures'].get(code,{})
         identity=lambda part:tuple(part.get(k) for k in ('url','file_id','snapshot'))
         current_parts=inventory.get(code,{}).get('files',[])
-        reusable=(not refresh and saved.get('status')=='inspected' and saved.get('fingerprints')==fingerprints
+        reusable=(not refresh and saved.get('status')=='inspected' and saved.get('matching_profile')==MATCHING_PROFILE and saved.get('fingerprints')==fingerprints
             and current_parts and [identity(p) for p in saved.get('files',[])]==[identity(p) for p in current_parts]
             and saved.get('proposals')==sum(t['entry']['id'] in proposals for t in items))
         if reusable:
@@ -283,7 +342,7 @@ def research(data_dir,state_dir,codes,client,*,limit=0,refresh=False):
                     meta.update(checked_at=page.fetched_at,page_hash=page.sha256);observed.append(meta)
                     yield page.body,meta
             accepted,pending=proposals_for_archives(parts(),items)
-            proposals.update(accepted);state['prefectures'][code]=dict(status='inspected',files=observed,fingerprints=fingerprints,proposals=len(accepted),pending=pending)
+            proposals.update(accepted);state['prefectures'][code]=dict(status='inspected',matching_profile=MATCHING_PROFILE,files=observed,fingerprints=fingerprints,proposals=len(accepted),pending=pending)
             completed.add(code)
         except (FetchError,ValueError,OSError,UnicodeError,zipfile.BadZipFile,csv.Error) as exc:
             # Exception messages never contain the token-bearing request body.

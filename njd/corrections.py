@@ -79,7 +79,12 @@ def _additional_aza_matches(actual,expected,ref,facility):
 def _reference_matches(ref,facility,entry,changes):
     names={_comparison(facility.get('listed_name')),_comparison(entry.get('surface')),
            _comparison(changes.get('surface'))}-{''}
-    if _comparison(ref.get('name_raw')) not in names:return False
+    strict_registered_address=False
+    if _comparison(ref.get('name_raw')) not in names:
+        from njd.corporate import bound_registered_shrine_name
+        if _comparison(bound_registered_shrine_name(ref)) not in names:return False
+        strict_registered_address=True
+        if not re.search('[0-9０-９]',facility.get('address','')) or not re.search('[0-9０-９]',ref.get('address_raw','')):return False
     def address(value):
         value=compare_address_units(re.sub(r'^〒\d{3}-\d{4}','',_comparison(value)))
         value=value.removeprefix(facility.get('prefecture',''))
@@ -103,6 +108,7 @@ def _reference_matches(ref,facility,entry,changes):
         expected=address(raw)
         if not expected or not actual:continue
         if actual==expected:return True
+        if strict_registered_address:continue
         if _additional_aza_matches(actual,expected,ref,facility):return True
         suffix=actual[len(expected):] if actual.startswith(expected) else ''
         # Unit comparison can turn a locality word (五番領, 後三条町) into

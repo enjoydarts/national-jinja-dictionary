@@ -16,6 +16,16 @@ from njd.validation import blocking_problems
 from njd.source_aliases import apply_saved_source_aliases
 
 
+def licensed_reference_credits(refs):
+    """Keep prescribed non-Wikipedia source credits in standalone release assets."""
+    credits={}
+    for ref in refs:
+        if not isinstance(ref,dict) or ref.get('source_kind')=='encyclopedia' or not ref.get('license_url'):continue
+        item={key:ref[key] for key in ('source_kind','url','title','license_url','attribution','processed_notice','source_publisher','doi') if key in ref}
+        credits[json_bytes(item)]=item
+    return [credits[key] for key in sorted(credits)]
+
+
 def _input_hashes(data_dir):
     paths=sorted((data_dir/'sources').glob('*.json'))
     paths += [data_dir/name for name in ('manifest.json','decisions.json','identities.json','locations.json','corrections.json','reviews.json','source_aliases.json','source_catalog.json') if (data_dir/name).exists()]
@@ -69,7 +79,8 @@ def create_release(data_dir,output_dir,version,source_commit):
         data_use_conditions=s.get('data_use_conditions','unconfirmed'),
         processing_notice='神道青年会の独自神社紹介から名称・読み・所在地の事実項目を抽出。神社庁掲載とは区別。本文・画像は配布しない。')
         for k,s in sorted(data['collection'].get('sources',{}).items()) if s.get('listing_basis')=='association_reference']
-    write_json(destination/'ATTRIBUTION.json',dict(wikipedia=[credits[key] for key in sorted(credits)],association=association))
+    licensed=licensed_reference_credits(refs)
+    write_json(destination/'ATTRIBUTION.json',dict(wikipedia=[credits[key] for key in sorted(credits)],association=association,licensed_references=licensed))
     totals=report['totals']
     reference_count=totals.get('source_basis_counts',{}).get('wikipedia_reference',{}).get('facilities',0)
     description=('神社庁の公式掲載情報と、利用できない掲載情報を補うWikipediaの参考資料に基づく辞書です。出典区分と収集済み範囲はreport.jsonで確認してください。'
@@ -91,6 +102,7 @@ def create_release(data_dir,output_dir,version,source_commit):
         '保留形式は仕様確認不足のためファイルを生成していません。全国の全神社を網羅したとは主張しません。',
         '出典と検証状態は管理用JSON/CSV・サンプルmanifestに含まれます。',
         'Wikipedia由来の出典・版・ライセンスはATTRIBUTION.jsonに記載しています。参考資料単独の収録を神社庁掲載確認済み件数に加えていません。',
+        *(['国税庁等のライセンス付き補完資料の指定クレジット・利用条件・加工説明はATTRIBUTION.jsonのlicensed_referencesに保存しています。ソースコードのMITをこれらの資料へ適用しません。'] if licensed else []),
         *(['宮崎県神道青年会の資料の再利用条件は未確認です。MIT・WikipediaのCC BY-SAを適用しません。出典と状態はATTRIBUTION.jsonを参照してください。'] if association else []),
         'ソースコードはMIT。収集元データの利用条件は正本の出典別メタデータを参照してください。','']
     notes='\n'.join(lines)
