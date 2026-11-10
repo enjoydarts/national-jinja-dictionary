@@ -27644,6 +27644,18 @@
       "prefecture_code": "29"
     },
     {
+      "additional_source_evidence": [
+        {
+          "checked_at": "2026-11-10T01:07:17.558632+00:00",
+          "excerpt": "Webサイトのリニューアル作業 / 一時的にサイト内の全ページへのアクセスを停止",
+          "fetched_at": "2026-11-10T01:05:04.100119+00:00",
+          "interpretation": "Official site still requests suspension during renewal; no collection resumed.",
+          "page_hash": "d2d59a635bdecc063276df867f672ea1a6938fb2b1074985633a610e2f1e6de3",
+          "source_kind": "availability_recheck",
+          "status": 200,
+          "url": "https://wakayama-jinjacho.or.jp/"
+        }
+      ],
       "agency_name": "和歌山県神社庁",
       "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
       "candidate_url": "https://wakayama-jinjacho.or.jp/",
@@ -28290,6 +28302,34 @@
           "observed_at": "2026-11-09T05:13:08.973091+00:00",
           "short_evidence": "実リンクを開いたがhttps://awa-jinjacho.jp/はtoolからアクセス不可という結果。神社庁の本文を確認できず未確認状態を維持。",
           "url": "http://awa-jinjacho.jp/"
+        },
+        {
+          "checked_at": "2026-11-10T01:07:17.558632+00:00",
+          "phase": "robots policy acquisition",
+          "result": "name_resolution_failed",
+          "source_kind": "availability_recheck",
+          "target_body_verified": false,
+          "url": "https://awa-jinjacho.jp/"
+        },
+        {
+          "checked_at": "2026-11-10T01:07:17.558632+00:00",
+          "phase": "robots policy acquisition",
+          "result": "name_resolution_failed",
+          "source_kind": "availability_recheck",
+          "target_body_verified": false,
+          "url": "http://awa-jinjacho.jp/"
+        },
+        {
+          "checked_at": "2026-11-10T01:07:17.558632+00:00",
+          "excerpt": "徳島県神社庁 / http://awa-jinjacho.jp/",
+          "fetched_at": "2026-11-10T01:05:39.082633+00:00",
+          "interpretation": "Municipal library lists this URL; agency target body is still not obtained. Not an agency shrine inventory.",
+          "locator": "PDF page 4, 徳島県神社庁 URL block",
+          "observed_link": "http://awa-jinjacho.jp/",
+          "page_hash": "1315af686700c27d56ebfb22e304ae7f28103a2ca00fb874d0cc14cd050c6995",
+          "source_kind": "municipal_library_guide",
+          "status": 200,
+          "url": "https://www.city.tokushima.tokushima.jp/toshokan/recommend/passfinder/index.files/pathfinder-jinja.pdf"
         }
       ],
       "agency_name": "徳島県神社庁",
@@ -31164,6 +31204,20 @@
           "status": 200,
           "target_body_verified": false,
           "url": "https://nagasaki-jinjacho.or.jp/link.html"
+        },
+        {
+          "authority_status": "prefectural_agency_publication_or_delegation_unconfirmed",
+          "checked_at": "2026-11-10T01:07:17.558632+00:00",
+          "collection_count": null,
+          "excerpt": "宮巡隊（ぐうぐるたい） / 当会ホームページ「宮巡」には県内の神社紹介サイトがあります。",
+          "fetched_at": "2026-11-10T01:05:36.721112+00:00",
+          "interpretation": "Youth association describes its own investigation and a publication goal; not proof of prefectural agency delegation, not acquired count.",
+          "page_hash": "9335ae00e26c62cb1194e2bdcfda7bbf371b77aa6a22060f473f6f1af315f247",
+          "published_target_count": 650,
+          "published_target_count_raw": "県内６５０社すべての神社を掲載すべく",
+          "source_kind": "youth_association_scope_statement",
+          "status": 200,
+          "url": "https://www.m-shinsei.jp/history_9/"
         }
       ],
       "agency_name": "宮崎県神社庁",
