@@ -236,8 +236,8 @@ def parse_nagasaki(page):
     return out
 
 def collect_nagasaki(client,limit=None):
-    return _collect(client,'nagasaki','42','長崎県','長崎県神社庁',
-        ['https://nagasaki-jinjacho.or.jp/link.html'],parse_nagasaki,r'(?!)',limit)
+    from njd.adapters.nagasaki import collect_nagasaki as collect_regions
+    return collect_regions(client,limit=limit)
 
 REGISTRY.update({
     'saga':dict(code='41',prefecture='佐賀県',agency='佐賀県神社庁',collect=collect_saga),
