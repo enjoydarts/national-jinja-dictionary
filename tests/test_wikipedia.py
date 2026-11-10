@@ -59,6 +59,16 @@ class WikipediaTests(unittest.TestCase):
             with self.subTest(extra=extra),self.assertRaises(ValueError):
                 w.article_reference(page(ARTICLE,base.replace('は神社。','は神社。'+extra)),'例神社')
 
+    def test_address_separates_coordinate_markup_and_preserves_cell_observation(self):
+        address='島根県隠岐郡海士町宇受賀747'
+        coordinates='<span class="plainlinks nourlexpansion"><a href="https://geohack.toolforge.org/geohack.php?params=34_N_135_E"><span class="geo-dms">北緯34度 東経135度</span><span class="geo">34;135</span></a></span>'
+        body=article().replace(address.removeprefix('島根県')+'</td>',address.removeprefix('島根県')+coordinates+'</td>')
+        ref=w.article_reference(page(ARTICLE,body),'宇受賀命神社')
+        self.assertEqual(ref['address_raw'],address)
+        self.assertIn('北緯34度',ref['address_cell_raw'])
+        self.assertEqual(ref['address_extraction'],'literal address text; coordinate-link subtree excluded')
+        self.assertIn(address,ref['excerpt'])
+
     def test_category_reads_only_content_regions_and_actual_pagination(self):
         body='<a href="/wiki/Outside">outside</a><div id="mw-subcategories"><a href="/wiki/Category:島根県の旧郷社">sub</a></div><div id="mw-pages"><a href="/wiki/宇受賀命神社">宇受賀命神社</a><a href="https://evil.test/wiki/Other">bad</a><a href="/wiki/特別:検索">special</a><a href="/w/index.php?title=Category:島根県の神社&amp;pagefrom=宇">next</a></div>'
         result=w.category_links(page(ROOT,body))

@@ -84,6 +84,15 @@ def category_links(page):
     return dict(categories=sorted(categories),articles=sorted(articles))
 
 
+def _address_text(node):
+    if node.tag in ('script','style','sup'):return ''
+    if node.tag=='a':
+        target=urlsplit(node.attrs.get('href',''))
+        if target.netloc=='geohack.toolforge.org' and target.path=='/geohack.php' and any(
+            n.has_class('geo') or n.has_class('geo-dms') or n.has_class('geo-dec') for n in node.all()):return ''
+    return ''.join(_address_text(c) if isinstance(c,Node) else c for c in node.children)
+
+
 def article_reference(page,name):
     """Bind one exact bold lead name and kana to one rendered shrine infobox."""
     title=_title(page.url)
@@ -96,12 +105,12 @@ def article_reference(page,name):
     if len(boxes)!=1:raise ValueError('single infobox required')
     box=boxes[0];headers=list(box.all('th'))
     if not headers or headers[0].text().strip()!=name:raise ValueError('infobox name differs')
-    addresses=[]
+    addresses=[];address_cells=[]
     for row in box.all('tr'):
         cells=[c for c in row.children if isinstance(c,Node) and c.tag in ('th','td')]
         if len(cells)==2 and cells[0].tag=='th' and cells[0].text().strip()=='所在地':
             if list(cells[1].all('br')) or list(cells[1].all('table')):raise ValueError('multiple address lines')
-            addresses.append(cells[1].text().strip())
+            addresses.append(_address_text(cells[1]).strip());address_cells.append(cells[1].text().strip())
     if len(addresses)!=1 or not addresses[0]:raise ValueError('single rendered address required')
     leads=[n for n in content.all('section') if n.attrs.get('data-mw-section-id')=='0']
     if len(leads)!=1:raise ValueError('explicit lead section absent')
@@ -130,11 +139,13 @@ def article_reference(page,name):
     revision=re.findall(r'"wgRevisionId"\s*:\s*(\d+)',page.text)
     if len(set(revision))!=1 or int(revision[0])<=0:raise ValueError('actual revision absent or ambiguous')
     index,excerpt,raw=matches[0]
-    return dict(url=page.url,title=title,source_kind='encyclopedia',name_raw=name,reading_raw=raw,address_raw=addresses[0],
+    result=dict(url=page.url,title=title,source_kind='encyclopedia',name_raw=name,reading_raw=raw,address_raw=addresses[0],
         excerpt=excerpt+' / '+addresses[0],checked_at=page.fetched_at,page_hash=page.sha256,revision_id=int(revision[0]),
         permalink=BASE+'/w/index.php?'+urlencode(dict(title=title,oldid=revision[0])),license_url=LICENSE,
         locator=f'.mw-parser-output section[data-mw-section-id="0"] p[{index}] b; table.infobox tr[th="所在地"] td; mw.config.wgRevisionId',
         verification_method='mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding')
+    if addresses[0]!=address_cells[0]:result.update(address_cell_raw=address_cells[0],address_extraction='literal address text; coordinate-link subtree excluded')
+    return result
 
 
 def external_directory(path):
