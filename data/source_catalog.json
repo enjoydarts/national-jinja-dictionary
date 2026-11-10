@@ -2071,6 +2071,14 @@
       "listing_urls": [
         "https://www.ishikawa-jinjacho.or.jp/shrine/"
       ],
+      "literal_address_notation_reading_supplements": {
+        "basis": "numeric の separators compared mechanically for unique active literal government names/full addresses; one linked official shrine address differs only by an explicitly inspected 字 marker; all originals retained",
+        "correction_entry_ids": [
+          "522bbb14-7cfe-5841-b531-b327b9ccc3d3"
+        ],
+        "document": "data/corrections.json",
+        "facilities": 1
+      },
       "official_url": "https://www.ishikawa-jinjacho.or.jp/",
       "official_verification": {
         "checked_at": "2026-11-08T13:14:18.239879+00:00",
@@ -2303,6 +2311,14 @@
       "listing_urls": [
         "https://www.yamanashi-jinjacho.or.jp/intro/"
       ],
+      "literal_address_notation_reading_supplements": {
+        "basis": "numeric の separators compared mechanically for unique active literal government names/full addresses; one linked official shrine address differs only by an explicitly inspected 字 marker; all originals retained",
+        "correction_entry_ids": [
+          "62346fb7-b742-5e8b-81df-a07bb872618c"
+        ],
+        "document": "data/corrections.json",
+        "facilities": 1
+      },
       "official_url": "https://www.yamanashi-jinjacho.or.jp/",
       "official_verification": {
         "checked_at": "2026-11-08T13:14:18.738245+00:00",
@@ -10625,7 +10641,17 @@
         "status": "verified_opened"
       },
       "prefecture": "岐阜県",
-      "prefecture_code": "21"
+      "prefecture_code": "21",
+      "unresolved_reading_comparisons": {
+        "document": "docs/REVIEW.md",
+        "not_exported": true,
+        "review_ids": [
+          "R013",
+          "R014"
+        ],
+        "source_document": "data/corrections.json",
+        "status": "needs_review"
+      }
     },
     {
       "agency_name": "静岡県神社庁",
@@ -18746,6 +18772,15 @@
         "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
         "http://www.kyoto-jinjacho.or.jp/shrine/32.html"
       ],
+      "literal_address_notation_reading_supplements": {
+        "basis": "numeric の separators compared mechanically for unique active literal government names/full addresses; one linked official shrine address differs only by an explicitly inspected 字 marker; all originals retained",
+        "correction_entry_ids": [
+          "5d21616e-3988-56d7-883d-40c1c7988175",
+          "d6bce82b-43b0-52aa-b2c5-fa76f6672225"
+        ],
+        "document": "data/corrections.json",
+        "facilities": 2
+      },
       "official_url": "http://www.kyoto-jinjacho.or.jp/",
       "official_verification": {
         "checked_at": "2026-11-08T13:14:34.653823+00:00",
@@ -38365,6 +38400,13 @@
         "coverage_explanation": "全ページ停止と明記。旧検索の掲載範囲は現在未確認。",
         "published_fields": "現在の直接GETには施設項目なし。"
       },
+      "latest_availability_followup": {
+        "checked_at": "2026-11-10T11:30:29.358839+00:00",
+        "http_status": 200,
+        "outcome": "公式トップは200だが、リニューアルに伴うサイト内全ページへのアクセス停止を引き続き表示。リンクなし。内部URLを探索せず取得停止を継続。",
+        "page_hash": "d2d59a635bdecc063276df867f672ea1a6938fb2b1074985633a610e2f1e6de3",
+        "url": "https://wakayama-jinjacho.or.jp/"
+      },
       "latest_source_recheck": {
         "agency_body_opened": true,
         "checked_at": "2026-11-09T12:46:12.802753+00:00",
@@ -41510,6 +41552,21 @@
         "https://fukuoka-jinjacho.or.jp/area/chikuho/",
         "https://fukuoka-jinjacho.or.jp/area/chikugo/"
       ],
+      "literal_address_notation_reading_supplements": {
+        "basis": "numeric の separators compared mechanically for unique active literal government names/full addresses; one linked official shrine address differs only by an explicitly inspected 字 marker; all originals retained",
+        "correction_entry_ids": [
+          "2ad98ffa-85e5-5f65-9c82-c0bd50f73395",
+          "2f44f62e-ccca-59f2-a120-a10b754e9ee6",
+          "8ee81585-b430-502c-99bb-ad479115af07",
+          "cfca3782-3b2a-5fee-925b-bf413f49de82",
+          "d96bae69-50a1-58c2-bfd9-f2aad3f08467",
+          "e289a5ea-e7f5-5616-8953-496ce5afe25c",
+          "eec7608c-c2fa-58ea-aa4a-32e8fbfff264",
+          "fe13f076-c8e7-533e-a660-cf39116e27a8"
+        ],
+        "document": "data/corrections.json",
+        "facilities": 8
+      },
       "official_url": "https://fukuoka-jinjacho.or.jp/",
       "official_verification": {
         "checked_at": "2026-11-08T13:14:38.310051+00:00",
@@ -42558,8 +42615,8 @@
       "partial": 3,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13326,
-    "effective_verified_facilities": 42712,
+    "effective_dictionary_rows": 13331,
+    "effective_verified_facilities": 42724,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
