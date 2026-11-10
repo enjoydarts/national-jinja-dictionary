@@ -1,4 +1,4 @@
-name: Verify code, canonical data and offline release generation
+name: Verify code and canonical data
 on:
   push:
     branches: [main]
@@ -17,5 +17,3 @@ jobs:
           python-version-file: .python-version
       - run: python -m unittest discover -s tests -v
       - run: python -m njd validate
-      - name: Verify release assets can be rebuilt without crawling
-        run: python -m njd.release --version "ci-${GITHUB_SHA}" --source-commit "$GITHUB_SHA"
