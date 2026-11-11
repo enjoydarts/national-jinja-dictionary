@@ -42,7 +42,7 @@ def parser():
     sub.add_parser('validate'); sub.add_parser('report')
     audit=sub.add_parser('audit',help='independent source audit (currently Gunma only)')
     audit.add_argument('--source',choices=['gunma'],default='gunma')
-    build=sub.add_parser('build'); build.add_argument('--formats',default='all',help='all or comma-separated mozc,json,csv,atok,google,msime,macos')
+    build=sub.add_parser('build'); build.add_argument('--formats',default='all',help='all or comma-separated '+','.join(FORMATS))
     build.add_argument('--prefecture',choices=[f'{i:02}' for i in range(1,48)])
     build.add_argument('--sample-name',action='append',default=[])
     build.add_argument('--samples-only',action='store_true',help='generate only small import samples, never the full dictionaries')

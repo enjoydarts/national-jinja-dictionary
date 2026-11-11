@@ -1,0 +1,36 @@
+{
+  "actual_ime_import": "not_tested",
+  "architecture": "arm64",
+  "checked_at": "2026-11-11",
+  "component": "DictionaryTool",
+  "executable_sha256": "e460cc3c28b67aa571ee6cf24d5fbab7391bfb3b7303eef38e975d0568e552c5",
+  "executed_product_parser": false,
+  "findings": {
+    "export": "UTF-8 TAB-separated fields, no BOM/header, LF records",
+    "input": "UTF-8 TAB-separated reading/surface/POS, optional fourth comment field",
+    "max_dictionary_rows": 1000000,
+    "max_field_utf8_bytes": 300,
+    "pos": {
+      "enum_value": 4,
+      "label": "固有名詞"
+    },
+    "shared_output_subset": "three fields, comment omitted, LF, no BOM"
+  },
+  "method": "manual static inspection of the pinned official implementation, with read-only identity and structural-marker recheck",
+  "official_sources": [
+    "https://www.google.co.jp/ime/",
+    "https://support.google.com/ime/japanese/answer/166765?hl=ja"
+  ],
+  "product": "Google Japanese Input for macOS 3.34.6260.1",
+  "product_files_redistributed": false,
+  "reviewed_methods": [
+    "TextInputIterator::Next",
+    "MultiByteTextLineIterator::Next",
+    "ValidateEntry",
+    "UserDictionaryStorage::ExportDictionary",
+    "UserDictionaryStorage::IsDictionaryFull",
+    "UserPos::GetStringPosType"
+  ],
+  "schema_version": 1,
+  "validation_scope": "identity/structure guards only; not an automated proof of program semantics"
+}

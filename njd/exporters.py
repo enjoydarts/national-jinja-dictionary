@@ -6,20 +6,28 @@ import json
 from njd.storage import json_bytes
 from njd.validation import eligible, validate
 from njd.macos import PROFILE as MACOS_PROFILE, encode_row as encode_macos_row, row_problem as macos_row_problem, check_macos
-from njd.atok import PROFILE as ATOK_PROFILE, encode_rows as encode_atok_rows, row_problem as atok_row_problem, check_atok
+from njd.atok import PROFILE as ATOK_PROFILE, UNICODE_PROFILE as ATOK_UNICODE_PROFILE, encode_rows as encode_atok_rows, row_problem as atok_row_problem, check_atok
 
 MOZC_COMMIT='d918f30063999d4ca250f76ced8b92169a0e0b25'
-FORMATS={
-    'mozc':dict(status='enabled',extension='txt',encoding='utf-8',bom=False,
+MOZC_PROFILE=dict(status='enabled',extension='txt',encoding='utf-8',bom=False,
         newline='\n',delimiter='\t',header=None,pos='固有名詞',
         columns=['reading','surface','pos'],escape='reject TAB CR LF',
         max_reading_bytes=300,max_surface_bytes=300,max_rows=1_000_000,
-        reference=f'https://github.com/google/mozc/tree/{MOZC_COMMIT}'),
+        reference=f'https://github.com/google/mozc/tree/{MOZC_COMMIT}')
+FORMATS={
+    'mozc':MOZC_PROFILE,
     'json':dict(status='enabled',extension='json',encoding='utf-8',bom=False,newline='\n'),
     'csv':dict(status='enabled',extension='csv',encoding='utf-8',bom=False,newline='\n',
         delimiter=',',escape='RFC4180 double quotes via csv.writer; LF records'),
     'atok':ATOK_PROFILE,
-    'google':dict(status='blocked',reason='released Google Japanese Input import profile not confirmed; Mozc compatibility not assumed'),
+    'atok_unicode':ATOK_UNICODE_PROFILE,
+    'google':{**MOZC_PROFILE,
+        'target':'Google Japanese Input for macOS 3.34.6260.1, DictionaryTool arm64',
+        'reference':'https://www.google.co.jp/ime/',
+        'implementation_evidence':'docs/GOOGLE_FORMAT_EVIDENCE.json',
+        'executable_sha256':'e460cc3c28b67aa571ee6cf24d5fbab7391bfb3b7303eef38e975d0568e552c5',
+        'compatibility_scope':'confirmed shared UTF-8 three-column TSV/POS/300-byte bounds in pinned product implementation; not full product equivalence',
+        'actual_ime_import':'not_tested'},
     'msime':dict(status='blocked',reason='official bulk import syntax, encoding and target version not confirmed'),
     'macos':MACOS_PROFILE,
 }
@@ -55,7 +63,7 @@ def render(data: dict, name: str) -> Output:
         writer.writeheader()
         writer.writerows({k:json.dumps(v,ensure_ascii=False,sort_keys=True) if isinstance(v,(dict,list)) else v for k,v in r.items()} for r in records)
         return Output(stream.getvalue().encode('utf-8'),rows=len(records))
-    if name not in ('mozc','macos','atok'): raise ValueError('exporter unavailable')
+    if name not in ('mozc','google','macos','atok','atok_unicode'): raise ValueError('exporter unavailable')
     accepted=eligible(data); accepted_ids={e['id'] for e in accepted}
     problems=validate(data); reasons={}
     for p in problems: reasons.setdefault(p['id'],[]).append(p['reason'])
@@ -67,7 +75,7 @@ def render(data: dict, name: str) -> Output:
         reading,surface=e['reading'],e['surface']
         line=(reading,surface,profile['pos'])
         if name=='macos':problem=macos_row_problem(line)
-        elif name=='atok':problem=atok_row_problem(line)
+        elif name in ('atok','atok_unicode'):problem=atok_row_problem(line,unicode=name=='atok_unicode')
         else:problem='reading or surface exceeds 300 UTF-8 bytes' if max(len(reading.encode('utf-8')),len(surface.encode('utf-8')))>300 else None
         if problem:
             rejected.append(dict(entry_id=e['id'],facility_id=e['facility_id'],reason=problem));continue
@@ -75,8 +83,8 @@ def render(data: dict, name: str) -> Output:
         else: lines.add(line)
     if profile.get('max_rows') is not None and len(lines)>profile['max_rows']:
         return Output(None,status='blocked',reason='dictionary exceeds 1000000 rows; split required',exclusions=rejected)
-    if name=='atok':
-        content=encode_atok_rows(sorted(lines));checks=check_atok(content)
+    if name in ('atok','atok_unicode'):
+        content=encode_atok_rows(sorted(lines),unicode=name=='atok_unicode');checks=check_atok(content,unicode=name=='atok_unicode')
     else:
         content=''.join(encode_macos_row(line) if name=='macos' else '\t'.join(line)+'\n' for line in sorted(lines)).encode('utf-8')
         checks=check_macos(content) if name=='macos' else check_mozc(content)

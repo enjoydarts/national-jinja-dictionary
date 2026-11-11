@@ -1,0 +1,33 @@
+{
+  "actual_ime_import": "not_tested",
+  "architecture": "arm64",
+  "checked_at": "2026-11-11",
+  "component": "DicUtility 36.0.0 (245010.75.0)",
+  "executable_sha256": "325d04b0d757a8a1a66cbe4c5f156fe7032d698296e91e914290154de7376bb0",
+  "executed_product_parser": false,
+  "findings": {
+    "input_bom_recognition": [
+      "feff",
+      "fffe"
+    ],
+    "newline": "CRLF",
+    "unicode_export_bom_hex": "feff",
+    "unicode_export_encoding": "UTF-16BE",
+    "unicode_string_source": "NSString UTF-16 code units"
+  },
+  "method": "manual static inspection of the pinned official implementation, with read-only identity and structural-marker recheck",
+  "official_sources": [
+    "https://www.atok.com/other/support/howtouse/mac/dc/pgs/dc_word_file.htm",
+    "https://www.atok.com/other/support/howtouse/mac/mn/pgs/mn_tool_ut_out_word_out_d.htm"
+  ],
+  "product": "ATOK for Mac 36.0.2 (245128.3.0)",
+  "product_files_redistributed": false,
+  "reviewed_methods": [
+    "CUTTangoFile addUnicodeHeader",
+    "CUTTangoFile writeString:",
+    "CUTTangoFile isUnicodeText",
+    "CUTTangoFile readString:maxLen:"
+  ],
+  "schema_version": 1,
+  "validation_scope": "identity/structure guards only; not an automated proof of program semantics"
+}
