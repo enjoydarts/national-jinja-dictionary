@@ -164,7 +164,7 @@ git diff -- data/corrections.json
 リリースの入口は[Release workflow](.github/workflows/release.yml)の**手動実行**です。タグを手で作る必要はありません。
 
 1. GitHubの **Actions → Generate dictionaries and publish release → Run workflow** を開く。
-2. 対象ブランチ（通常`main`）と版番号（例`v0.2.0`）を指定して実行する。
+2. 対象ブランチ（通常`main`）と版番号（例`0.2.0`または`v0.2.0`）を指定して実行する。先頭の`v`は省略でき、タグ名・生成物内の版番号は`v0.2.0`に統一する。
 3. 実行時のコミットを固定し、自動テスト・正本検証・CHANGELOG生成・全形式の辞書生成を行う。
 4. 成功後、そのコミットへ版番号のタグを作り、ドラフトReleaseへZIP・`SHA256SUMS`・`SOURCE.json`・`CHANGELOG.md`を添付する。
 5. 全添付のSHA-256を照合し、添付が揃ったReleaseを公開する。

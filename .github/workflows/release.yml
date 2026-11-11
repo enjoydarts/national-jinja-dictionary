@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Release version to create (for example v0.2.0)
+        description: Release version (0.2.0 or v0.2.0; tag will be v0.2.0)
         required: true
         type: string
       dry_run:

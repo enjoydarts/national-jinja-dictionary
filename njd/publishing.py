@@ -108,6 +108,7 @@ def _metadata(release,version,commit):
 
 
 def run_release(repository,repo,version,api,output_dir,*,dry_run=False,generator=create_release):
+    if isinstance(version,str) and not version.startswith('v'):version='v'+version
     validate_version(version)
     root=Path(repository);out=Path(output_dir)
     commit=require_committed_inputs(root,root/'data')

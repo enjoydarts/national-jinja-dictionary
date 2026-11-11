@@ -102,3 +102,15 @@ class PublishingTest(GitFixture):
         for line in sums:
             digest,name=line.split('  ',1)
             self.assertEqual(hashlib.sha256((self.output/name).read_bytes()).hexdigest(),digest)
+
+    def test_version_without_v_uses_canonical_tag_and_can_resume(self):
+        result=run_release(self.root,'owner/repo','0.1.0',self.api,self.output)
+        self.assertEqual(result['status'],'published')
+        self.assertEqual(self.api.release['html_url'],'https://github.com/owner/repo/releases/tag/v0.1.0')
+        source=json.loads((self.output/'SOURCE.json').read_text())
+        self.assertEqual(source['version'],'v0.1.0')
+        self.assertIn('CHANGELOG — v0.1.0',(self.output/'CHANGELOG.md').read_text())
+        before=list(self.api.mutations)
+        result=run_release(self.root,'owner/repo','v0.1.0',self.api,self.output)
+        self.assertEqual(result['status'],'already_published')
+        self.assertEqual(self.api.mutations,before)
