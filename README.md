@@ -161,16 +161,29 @@ git diff -- data/corrections.json
 
 通常のpush・PRのCIは自動テストと正本検証を行います。全国版・県別版の一括生成はリリース処理で行い、通常CIでは全国版ZIPを毎回生成しません。出力形式とリリース処理の回帰確認は、小さな人工データの自動テストで継続します。
 
-正本とコードをコミットした後、リリース対象コミットの`v*`タグをpushすると[Release workflow](.github/workflows/release.yml)が実行されます。手動実行では既存タグを指定します。
+リリースの入口は[Release workflow](.github/workflows/release.yml)の**手動実行**です。タグを手で作る必要はありません。
 
-1. タグの正本とコードをチェックアウト。
-2. 自動テストと正本検証を実行。
-3. 正本から新しく辞書・サンプル・件数レポートを生成。
-4. ZIP、`SHA256SUMS`、`SOURCE.json`をGitHub Releaseへ添付。
+1. GitHubの **Actions → Generate dictionaries and publish release → Run workflow** を開く。
+2. 対象ブランチ（通常`main`）と版番号（例`v0.2.0`）を指定して実行する。
+3. 実行時のコミットを固定し、自動テスト・正本検証・CHANGELOG生成・全形式の辞書生成を行う。
+4. 成功後、そのコミットへ版番号のタグを作り、ドラフトReleaseへZIP・`SHA256SUMS`・`SOURCE.json`・`CHANGELOG.md`を添付する。
+5. 全添付のSHA-256を照合し、添付が揃ったReleaseを公開する。
+
+`dry_run`をオンにすると、生成・検証だけを行い、タグとReleaseを作りません。生成物はそのWorkflow実行のArtifactsから14日間ダウンロードできます。通常実行でも同じArtifactsを保存します。CLIでの実行例：
+
+```sh
+gh workflow run release.yml --ref main -f version=v0.2.0
+# タグ・Releaseを作らない事前確認
+gh workflow run release.yml --ref main -f version=v0.2.0 -F dry_run=true
+```
+
+タグpushによる起動は行いません。別コミットを指す同名タグがあれば停止し、タグは移動しません。中断後は元のWorkflow実行の **Re-run jobs** で同じコミットから再開できます。照合できた添付は再利用し、不足分だけアップロードします。公開済みReleaseは全添付が同一なら完了扱いとし、不一致なら上書きせず停止します。異なるコミットを新しく公開する場合は新しい版番号を使ってください。
+
+CHANGELOGは、対象コミットから到達できる公開済みリリースタグのうち最も近いものとの差分を、Gitのコミット件名から自動生成します。初回はそのコミットまでの全履歴です。明示されたマージ・squashのPR番号はリンク化し、変更内容を推測で補いません。全文はZIP内とRelease添付の`CHANGELOG.md`へ保存し、Release本文にも載せます。GitHub本文の長さを抑える必要がある場合は全文添付へのリンクを載せます。辞書の件数・検証状態は別のレポートとして併記します。生成のための自動コミットやリポジトリ内のCHANGELOG書き換えは行いません。
 
 `SOURCE.json`に正本コミット、各入力ファイルのSHA-256、検証済みデータのhashを含めます。情報源一覧・補正ファイルも同梱します。ZIP内のファイル順・時刻を固定し、同じ実行環境・正本・版から同じ内容を再生成できます。
 
-ローカルでの同じ生成処理：
+辞書だけをローカルで生成する処理（CHANGELOG・タグ・Releaseの作成は含みません）：
 
 ```sh
 python3 -m njd.release --version v0.2.0

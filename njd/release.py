@@ -32,8 +32,8 @@ def _input_hashes(data_dir):
     return {str(p.relative_to(data_dir)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
-def create_release(data_dir,output_dir,version,source_commit):
-    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,80}',version): raise ValueError('unsafe release version')
+def create_release(data_dir,output_dir,version,source_commit,changelog=None,previous_release_tag=None):
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._+-]{0,80}',version): raise ValueError('unsafe release version')
     if not re.fullmatch(r'[0-9a-f]{40,64}|unknown',source_commit): raise ValueError('invalid source commit')
     data_dir=Path(data_dir);output_dir=Path(output_dir)
     initial_inputs=_input_hashes(data_dir)
@@ -64,7 +64,14 @@ def create_release(data_dir,output_dir,version,source_commit):
         data_files=initial_inputs,
         generation='offline from committed canonical data; no crawling during release',
         blocked_formats=[name for name,profile in FORMATS.items() if profile['status']=='blocked'])
+    if changelog is not None:
+        source['changelog_sha256']=hashlib.sha256(changelog.encode('utf-8')).hexdigest()
+        source['previous_release_tag']=previous_release_tag
     write_json(destination/'SOURCE.json',source)
+    write_json(output_dir/'SOURCE.json',source)
+    if changelog is not None:
+        (destination/'CHANGELOG.md').write_text(changelog,encoding='utf-8')
+        (output_dir/'CHANGELOG.md').write_text(changelog,encoding='utf-8')
     credits={}
     refs=[f.get('source_reference') for f in data['facilities']]
     refs += [ref for f in data['facilities'] for ref in f.get('additional_source_references',[])]
@@ -99,7 +106,7 @@ def create_release(data_dir,output_dir,version,source_commit):
     for name,item in report['format_outputs'].items():
         lines.append(f"| {name} | {item['status']} | {item['rows']} |")
     lines += ['', 'JSON・CSVは未確認を含む管理用データです。IME用の登録行とは件数が異なります。',
-        '保留形式は仕様確認不足のためファイルを生成していません。全国の全神社を網羅したとは主張しません。',
+        ('保留形式は仕様確認不足のためファイルを生成していません。' if has_blocked else '初版対象の全IME形式を生成しています。')+'全国の全神社を網羅したとは主張しません。',
         '出典と検証状態は管理用JSON/CSV・サンプルmanifestに含まれます。',
         'Wikipedia由来の出典・版・ライセンスはATTRIBUTION.jsonに記載しています。参考資料単独の収録を神社庁掲載確認済み件数に加えていません。',
         *(['国税庁等のライセンス付き補完資料の指定クレジット・利用条件・加工説明はATTRIBUTION.jsonのlicensed_referencesに保存しています。ソースコードのMITをこれらの資料へ適用しません。'] if licensed else []),
@@ -122,13 +129,15 @@ def create_release(data_dir,output_dir,version,source_commit):
             z.writestr(info,path.read_bytes(),compresslevel=9)
     checksum=hashlib.sha256(archive.read_bytes()).hexdigest()
     checksum_file=output_dir/'SHA256SUMS'
-    checksum_file.write_text(f'{checksum}  {archive.name}\n',encoding='utf-8')
+    sums=[f'{checksum}  {archive.name}',hashlib.sha256((output_dir/'SOURCE.json').read_bytes()).hexdigest()+'  SOURCE.json']
+    if changelog is not None:sums.append(hashlib.sha256((output_dir/'CHANGELOG.md').read_bytes()).hexdigest()+'  CHANGELOG.md')
+    checksum_file.write_text('\n'.join(sums)+'\n',encoding='utf-8')
     return dict(archive=str(archive),checksum_file=str(checksum_file),source_commit=source_commit,
         totals=totals,blocked_formats=source['blocked_formats'])
 
 
 def require_matching_tag(repository,tag):
-    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,80}',tag):raise ValueError('unsafe release tag')
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._+-]{0,80}',tag):raise ValueError('unsafe release tag')
     def rev(ref):
         result=subprocess.run(['git','rev-parse','--verify',ref],cwd=repository,capture_output=True,text=True)
         if result.returncode:raise ValueError('release tag or checkout commit not found')
