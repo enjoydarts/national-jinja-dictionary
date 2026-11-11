@@ -32,14 +32,14 @@ Obsidianに残すのは作業記録・判断経緯などのノートだけです
 | JSON・CSV | 出典・所在地・原文・検証状態を含む管理データ | IME用ではない |
 | ATOK for Mac | 標準Shift JIS・BOM付きUTF-16BEの一括登録テキストを直接出力・形式検査 | 未実施 |
 | Google日本語入力 for macOS | 製品版3.34.6260.1の実装と照合したUTF-8・TAB形式を直接出力・形式検査 | 未実施 |
-| Microsoft IME | 公式一括形式・対象ビルド未確定で保留 | 未実施 |
+| Microsoft IME | IMJPDCT.EXE 10.0.26100.9818（x64）の実装と照合したUTF-16LE・WORDLIST形式を直接出力・形式検査 | 未実施 |
 | macOS追加辞書 | macOS 27の公式仕様・指定版の公式解析処理に基づくCSV生成 | インストール・変換確認は未実施 |
 
 macOSは公式解析処理との全フィールド照合を行っています。ATOK Unicode版とGoogleは、版・実体SHA-256を固定した公式製品の入出力実装を静的に照合しました。これらは追加辞書のインストール・実際の取り込み・変換確認とは区別します。GoogleとMozcは確認できた3列TSVの範囲を共通化し、製品全体の完全互換を主張しません。macOS追加辞書はユーザ辞書・テキスト置換とは区別し、iPhone直接取り込みやデバイス間同期は対象外です。[出力仕様と品詞対応](docs/FORMATS.md)に根拠と不足情報を記載しています。
 
 ATOKはfor Mac 36.0.2を対象に、`atok_unicode.txt`で原文のUnicodeを保持するBOM付きUTF-16BEを出力します。`atok.txt`は「日本語（Shift JIS）」入力設定用で、標準Shift JISで保てる行だけを出力します。各形式の長さ等の制限で出せない行は置換せず理由付きで除外します。Windows版や実機の取り込み・変換まで確認済みという意味ではありません。
 
-判断が必要な外字・読みの食い違いは **[判断待ち一覧](docs/REVIEW.md)** に原文・候補・根拠・選択肢をまとめています。保留中のIME形式に必要な実製品資料は **[形式確認の依頼一覧](docs/FORMAT_REVIEW.md)** に分けています。
+判断が必要な外字・読みの食い違いは **[判断待ち一覧](docs/REVIEW.md)** に原文・候補・根拠・選択肢をまとめています。各形式の実機取り込み確認の手順は **[取り込み確認の案内](docs/FORMAT_REVIEW.md)** に分けています。
 
 ## セットアップ
 
@@ -69,14 +69,14 @@ python3 -m njd build --formats mozc --prefecture 10
 
 `--data-dir`で正本の場所、`--output-dir`で出力先を指定できます。旧`--workspace`は移行用の互換オプションです。
 
-`build --formats all`は保留形式も評価し、実装済み形式だけを書き出します。保留内容を`report.json`へ残して終了コード2を返します。通常成功は0、データ検証・取得エラー等は1です。保留と不正データを区別します。
+`build --formats all`は初版対象の全IME形式と管理用JSON・CSVを評価し、生成します。成功は0、データ検証・取得エラー等は1です。今後未確認形式を追加して保留した場合は、保留理由を`report.json`へ残して終了コード2を返します。形式対応と実機での取り込み・変換確認は別です。
 
 全国版を生成せず、正本から少量の取り込み確認用ファイルだけを作る場合：
 
 ```sh
 python3 -m njd --output-dir dist/ime-samples build --samples-only --formats all --sample-name 倭文神社 --sample-name 大國神社
 # 県を指定し、対応済み形式だけを試す例
-python3 -m njd --output-dir dist/ime-samples-10 build --samples-only --prefecture 10 --formats atok_unicode,google,mozc,macos
+python3 -m njd --output-dir dist/ime-samples-10 build --samples-only --prefecture 10 --formats atok_unicode,google,mozc,msime,macos
 ```
 
 `samples/national/`または`samples/prefectures/NN/`にファイル・出典付き`manifest.json`・形式別`report.json`を保存します。各サンプルは原則12登録までで、同名施設や旧字体などを優先します。読みの難しさを自動判定するものではなく、`--sample-name`で確認対象を指定できます。`report.json`には出力行数・重複除去数・符号化できない行の理由・保留形式を記録します。サンプルの件数は全国版の語数ではありません。生成と実機取り込みは区別し、手順は[形式確認の案内](docs/FORMAT_REVIEW.md)を参照してください。

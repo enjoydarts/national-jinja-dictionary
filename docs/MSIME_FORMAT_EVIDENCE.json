@@ -1,0 +1,63 @@
+{
+  "acquisition_terms": "https://learn.microsoft.com/en-us/legal/windows-sdk/microsoft-symbol-server-license-terms",
+  "actual_ime_import": "not_tested",
+  "architecture": "x64",
+  "authenticode_validation": "not_performed",
+  "checked_at": "2026-11-11",
+  "component": "IMJPDCT.EXE",
+  "component_version": "10.0.26100.9818",
+  "executable_sha256": "56f33d04670ddc5e59a70c7f46c9222937a1d12f01bfefdc0ee2e7d5c9923333",
+  "executable_url": "https://msdl.microsoft.com/download/symbols/imjpdct.exe/F5BF7367ae000/imjpdct.exe",
+  "executed_product_parser": false,
+  "findings": {
+    "bom_hex": "fffe",
+    "columns": [
+      "reading",
+      "surface",
+      "pos"
+    ],
+    "encoding": "UTF-16LE",
+    "header_scope": "selected minimal parser-compatible first three native header lines; personal metadata omitted",
+    "max_reading_utf16_units": 60,
+    "max_surface_utf16_units": 60,
+    "native_header_items": 7,
+    "newline": "CRLF",
+    "optional_comment": true,
+    "pos": {
+      "id": 118,
+      "label": "固有名詞"
+    },
+    "selected_header": [
+      "!Microsoft IME Dictionary Tool",
+      "!Version:",
+      "!Format:WORDLIST"
+    ],
+    "total_capacity": "not_established"
+  },
+  "method": "manual static inspection of the pinned official EXE/PDB, with read-only identity, structural-marker and literal-table recheck",
+  "official_sources": [
+    "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/microsoft-public-symbols",
+    "https://support.microsoft.com/ja-jp/windows/hardware/input-devices/microsoft-japanese-ime"
+  ],
+  "os_build": "not_measured",
+  "pdb_dbi_age": 1,
+  "pdb_guid": "ff86e931-172e-0163-5358-3ce5126e5d7c",
+  "pdb_info_age": 3,
+  "pdb_sha256": "9de229514368f4451377d4f4e03c5bd0fa3c6d6a648413c59d722c52f4c7aa35",
+  "pdb_url": "https://msdl.microsoft.com/download/symbols/imjpdct.pdb/FF86E931172E016353583CE5126E5D7C1/imjpdct.pdb",
+  "product": "Microsoft IME User Dictionary Tool",
+  "product_files_redistributed": false,
+  "reviewed_methods": [
+    "CText::IsUnicodeText",
+    "CVdrMS::WriteHeader",
+    "CVdrMS::GetFormatW",
+    "CVdrMS::SetDataW",
+    "CVdrMS::SetWordW",
+    "CVdrMS::GetLineDataW",
+    "CVender::FGetsW",
+    "PosStr2PosW",
+    "CVdrMS::WriteLineWord"
+  ],
+  "schema_version": 1,
+  "validation_scope": "identity/structure guards only; not an automated proof of semantics or registration-engine acceptance"
+}

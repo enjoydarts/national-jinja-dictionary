@@ -7,6 +7,7 @@ from njd.storage import json_bytes
 from njd.validation import eligible, validate
 from njd.macos import PROFILE as MACOS_PROFILE, encode_row as encode_macos_row, row_problem as macos_row_problem, check_macos
 from njd.atok import PROFILE as ATOK_PROFILE, UNICODE_PROFILE as ATOK_UNICODE_PROFILE, encode_rows as encode_atok_rows, row_problem as atok_row_problem, check_atok
+from njd.msime import PROFILE as MSIME_PROFILE, encode_rows as encode_msime_rows, row_problem as msime_row_problem, check_msime
 
 MOZC_COMMIT='d918f30063999d4ca250f76ced8b92169a0e0b25'
 MOZC_PROFILE=dict(status='enabled',extension='txt',encoding='utf-8',bom=False,
@@ -28,7 +29,7 @@ FORMATS={
         'executable_sha256':'e460cc3c28b67aa571ee6cf24d5fbab7391bfb3b7303eef38e975d0568e552c5',
         'compatibility_scope':'confirmed shared UTF-8 three-column TSV/POS/300-byte bounds in pinned product implementation; not full product equivalence',
         'actual_ime_import':'not_tested'},
-    'msime':dict(status='blocked',reason='official bulk import syntax, encoding and target version not confirmed'),
+    'msime':MSIME_PROFILE,
     'macos':MACOS_PROFILE,
 }
 
@@ -63,7 +64,7 @@ def render(data: dict, name: str) -> Output:
         writer.writeheader()
         writer.writerows({k:json.dumps(v,ensure_ascii=False,sort_keys=True) if isinstance(v,(dict,list)) else v for k,v in r.items()} for r in records)
         return Output(stream.getvalue().encode('utf-8'),rows=len(records))
-    if name not in ('mozc','google','macos','atok','atok_unicode'): raise ValueError('exporter unavailable')
+    if name not in ('mozc','google','macos','atok','atok_unicode','msime'): raise ValueError('exporter unavailable')
     accepted=eligible(data); accepted_ids={e['id'] for e in accepted}
     problems=validate(data); reasons={}
     for p in problems: reasons.setdefault(p['id'],[]).append(p['reason'])
@@ -76,6 +77,7 @@ def render(data: dict, name: str) -> Output:
         line=(reading,surface,profile['pos'])
         if name=='macos':problem=macos_row_problem(line)
         elif name in ('atok','atok_unicode'):problem=atok_row_problem(line,unicode=name=='atok_unicode')
+        elif name=='msime':problem=msime_row_problem(line)
         else:problem='reading or surface exceeds 300 UTF-8 bytes' if max(len(reading.encode('utf-8')),len(surface.encode('utf-8')))>300 else None
         if problem:
             rejected.append(dict(entry_id=e['id'],facility_id=e['facility_id'],reason=problem));continue
@@ -83,7 +85,9 @@ def render(data: dict, name: str) -> Output:
         else: lines.add(line)
     if profile.get('max_rows') is not None and len(lines)>profile['max_rows']:
         return Output(None,status='blocked',reason='dictionary exceeds 1000000 rows; split required',exclusions=rejected)
-    if name in ('atok','atok_unicode'):
+    if name=='msime':
+        content=encode_msime_rows(sorted(lines));checks=check_msime(content)
+    elif name in ('atok','atok_unicode'):
         content=encode_atok_rows(sorted(lines),unicode=name=='atok_unicode');checks=check_atok(content,unicode=name=='atok_unicode')
     else:
         content=''.join(encode_macos_row(line) if name=='macos' else '\t'.join(line)+'\n' for line in sorted(lines)).encode('utf-8')

@@ -14,21 +14,21 @@ class CliTest(unittest.TestCase):
         with contextlib.redirect_stdout(io.StringIO()),contextlib.redirect_stderr(io.StringIO()): return main(list(args))
     def test_reject_repository_workspace(self):
         with self.assertRaises(ValueError): self.run_cli('--workspace',str(Path(__file__).resolve().parents[1]),'report')
-    def test_build_all_reports_blocked_and_only_requested_files(self):
+    def test_build_all_generates_profiles_and_removes_unrequested_stale_files(self):
         with tempfile.TemporaryDirectory() as td:
             write_json(Path(td)/'common.json',dataset())
-            self.assertEqual(self.run_cli('--workspace',td,'build','--formats','all'),2)
+            self.assertEqual(self.run_cli('--workspace',td,'build','--formats','all'),0)
             out=Path(td)/'generated'
             self.assertTrue((out/'national/mozc.txt').exists())
             self.assertTrue((out/'prefectures/10/mozc.txt').exists())
             self.assertTrue((out/'national/atok.txt').exists())
             self.assertTrue((out/'national/google.txt').exists())
             self.assertTrue((out/'national/atok_unicode.txt').exists())
-            self.assertFalse((out/'national/msime.txt').exists())
+            self.assertTrue((out/'national/msime.txt').exists())
             r=json.loads((out/'report.json').read_text())
             self.assertEqual(r['format_outputs']['atok']['status'],'generated')
             self.assertEqual(r['format_outputs']['google']['status'],'generated')
-            self.assertEqual(r['format_outputs']['msime']['status'],'blocked')
+            self.assertEqual(r['format_outputs']['msime']['status'],'generated')
             # Reusing an output location must not leave stale files looking current.
             self.assertEqual(self.run_cli('--workspace',td,'build','--formats','json'),0)
             self.assertFalse((out/'national/mozc.txt').exists())
@@ -36,21 +36,33 @@ class CliTest(unittest.TestCase):
     def test_samples_only_does_not_generate_full_dictionaries_and_reports_exclusions(self):
         with tempfile.TemporaryDirectory() as td:
             write_json(Path(td)/'common.json',dataset())
-            self.assertEqual(self.run_cli('--workspace',td,'build','--samples-only','--formats','all'),2)
+            self.assertEqual(self.run_cli('--workspace',td,'build','--samples-only','--formats','all'),0)
             out=Path(td)/'generated'
             self.assertFalse((out/'national').exists())
             self.assertFalse((out/'prefectures').exists())
             self.assertTrue((out/'samples/national/atok.txt').exists())
             self.assertTrue((out/'samples/national/google.txt').exists())
             self.assertTrue((out/'samples/national/atok_unicode.txt').exists())
-            self.assertFalse((out/'samples/national/msime.txt').exists())
+            self.assertTrue((out/'samples/national/msime.txt').exists())
             self.assertFalse((out/'pending.json').exists())
             r=json.loads((out/'samples/national/report.json').read_text())
             self.assertEqual(r['output_scope'],'import_sample_only')
             self.assertEqual(r['format_outputs']['atok']['rows'],1)
             self.assertEqual(r['format_outputs']['google']['status'],'generated')
-            self.assertEqual(r['format_outputs']['msime']['status'],'blocked')
+            self.assertEqual(r['format_outputs']['msime']['status'],'generated')
             self.assertEqual(r['format_outputs']['atok']['actual_ime_import'],'not_tested')
+
+    def test_unconfirmed_future_profile_still_returns_blocked_without_a_file(self):
+        from unittest.mock import patch
+        from njd.exporters import FORMATS
+        with tempfile.TemporaryDirectory() as td:
+            write_json(Path(td)/'common.json',dataset())
+            with patch.dict(FORMATS,{'unconfirmed':dict(status='blocked',reason='missing product evidence')}):
+                self.assertEqual(self.run_cli('--workspace',td,'build','--formats','all'),2)
+            out=Path(td)/'generated'
+            self.assertFalse((out/'national/unconfirmed.txt').exists())
+            r=json.loads((out/'report.json').read_text())
+            self.assertEqual(r['format_outputs']['unconfirmed']['reason'],'missing product evidence')
 
     def test_samples_only_retains_per_format_unrepresentable_word_reasons(self):
         from njd.adapters.gunma import parse

@@ -41,7 +41,7 @@
 | JSON・CSV | 出典・所在地・検証状態を含む直接出力 | 管理用 |
 | ATOK for Mac | 標準Shift JIS・BOM付きUTF-16BEの直接出力・形式検査。Unicodeの符号化は公式製品の静的実装と照合 | 未実施 |
 | Google日本語入力 for macOS | 3.34.6260.1の公式製品実装と3列TSV・品詞・上限を照合し、直接出力・形式検査 | 未実施 |
-| Microsoft IME | 公式の一括取り込み構文・対象版等の確認不足、保留 | 未実施 |
+| Microsoft IME | IMJPDCT.EXE 10.0.26100.9818（x64）の公式配布実装と照合したWORDLIST・UTF-16LEの直接出力・形式検査 | 未実施 |
 
 品詞・文字コード・制限と不足情報は [FORMATS.md](FORMATS.md) に記載しています。Google日本語入力とMozcの互換性は無条件に仮定しません。macOSは追加辞書の対象で、テキスト置換・iPhoneへの直接取り込み・他デバイス同期の確認ではありません。
 

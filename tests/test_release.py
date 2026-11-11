@@ -31,9 +31,11 @@ class ReleaseTest(unittest.TestCase):
                 self.assertIn('national/google.txt',z.namelist())
                 self.assertIn('national/atok_unicode.txt',z.namelist())
                 self.assertIn('samples/national/atok_unicode.txt',z.namelist())
-                self.assertNotIn('national/msime.txt',z.namelist())
+                self.assertIn('national/msime.txt',z.namelist())
+                self.assertIn('samples/national/msime.txt',z.namelist())
                 self.assertEqual(report['format_outputs']['google']['status'],'generated')
-                self.assertEqual(report['format_outputs']['msime']['status'],'blocked')
+                self.assertEqual(report['format_outputs']['msime']['status'],'generated')
+                self.assertEqual(source['blocked_formats'],[])
                 self.assertEqual(json.loads(z.read('national/json.json'))['entries'][0]['reading'],'かくうじんじゃ')
     def test_release_is_byte_reproducible_and_uses_updated_canonical(self):
         with tempfile.TemporaryDirectory() as td:

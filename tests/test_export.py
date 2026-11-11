@@ -27,8 +27,9 @@ class ExportTest(unittest.TestCase):
         self.assertEqual(out.rows,1)
         self.assertTrue(any('300' in x['reason'] for x in out.exclusions))
     def test_blocked_formats_never_emit_speculative_files(self):
-        for name in ['msime']:
-            out=render(dataset(),name)
+        from unittest.mock import patch
+        with patch.dict(FORMATS,{'unconfirmed':dict(status='blocked',reason='missing product evidence')}):
+            out=render(dataset(),'unconfirmed')
             self.assertIsNone(out.content)
             self.assertEqual(out.status,'blocked')
             self.assertTrue(out.reason)

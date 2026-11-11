@@ -120,17 +120,48 @@ python3 tools/check_ime_implementations.py --google-binary "/path/to/DictionaryT
 
 このチェックは製品を起動せず、辞書・設定を開きません。SHA-256とレビュー済みの関数・定数等の構造、Googleの品詞表を再照合します。違う実体なら停止します。任意の新バージョンのプログラムを自動的に正しいと判定する機能ではなく、プログラムの意味の自動証明でもありません。通常の辞書生成はこの環境や製品のインストールに依存せず、Pythonだけでオフライン実行できます。製品本体や逆アセンブル本文を公開リポジトリに含めません。
 
-## 保留しているIME形式
+## Microsoft IME
 
-| 形式 | 確認した資料・対象 | 品詞の候補と理由 | 出力を保留する不足情報 |
-| --- | --- | --- | --- |
-| Microsoft IME | [公式サポート](https://support.microsoft.com/ja-jp/windows/hardware/input-devices/microsoft-japanese-ime)（Windows 10/11） | 地名・固有名詞等の正式な対応名を確認して決定 | 一括形式、品詞、文字コード、BOM、改行、制限、対象ビルド |
+対象は **Microsoft IMEユーザー辞書ツール IMJPDCT.EXE 10.0.26100.9818（x64）** の一括登録テキストです。これはコンポーネント自身のファイルバージョンで、起動したWindowsのOSビルド番号ではありません。実機のOSビルドや新旧IMEモードは未確認です。
+
+[Microsoft公式の公開シンボルサーバー](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/microsoft-public-symbols)から、指定版EXEと対応する公開PDBを取得し、GUID・DBI age・SHA-256を照合しました。[確認情報](MSIME_FORMAT_EVIDENCE.json)に、Microsoftの直接取得URL・製品版・実体hash・確認した処理を保存しています。配布先を発見するために用いた第三者索引を、形式仕様の根拠にはしません。
+
+| 項目 | 採用した出力 |
+| --- | --- |
+| 文字コード・BOM | UTF-16LE、先頭に`FF FE`を1回 |
+| 改行 | CRLF。UTF-16LEでは`0D 00 0A 00` |
+| ヘッダー | 下記の3行。`!Version:`の値は空 |
+| 列・区切り | 読み・単語・品詞の3列、TAB。任意コメントは省略 |
+| 品詞 | 固有名詞。入力可能な公式品詞表のID `0x76` |
+| 長さ | 読み・単語それぞれ60 UTF-16コード単位以下 |
+| エスケープ | 引用形式なし。制御文字・不可視書式文字・行／段落区切り文字を拒否 |
+| 総容量 | 確認範囲では未確定。既存ユーザー辞書の空き容量も測定していないため、無制限とは主張しない |
+
+```text
+!Microsoft IME Dictionary Tool
+!Version:
+!Format:WORDLIST
+```
+
+`CVdrMS::WriteHeader`のヘッダー表にある先頭3項目を採用します。製品のネイティブ出力は、辞書名・出力ファイル名・日時等を含む計7項目で、上の3行は`GetFormatW`が受け付ける最小構成です。ネイティブ出力全体とのバイト一致を主張しません。`!Version:`は製品内でも値のないリテラルであり、`!Version:1`やOSビルド等を推測で付けません。
+
+`CText::IsUnicodeText`のBOM判別、`CVdrMS::WriteHeader`のUnicode出力、`WriteLineWord`のTAB3列と任意コメント、`SetDataW`の3／4項目の入力を確認しました。`SetWordW`は読みと単語のUTF-16単位数をそれぞれ60と比較して検査します。神社という特定施設名を、入力が有効な「固有名詞」へ対応づけます。補助平面文字は2単位として計数し、切り詰めず理由付きで除外します。
+
+これは公式実装の**静的なファイル形式照合**です。Windows上での製品パーサー実行、ユーザー辞書への登録成功、登録エンジンがすべてのUnicode文字や読みを受理すること、変換候補への反映を確認したものではありません。[取り込み確認手順](FORMAT_REVIEW.md)に従い、生成レポートと実機の受理・拒否件数を照合してください。
+
+LLVM objdumpがある環境で、同じEXE/PDBを読み取り専用で再照合できます。スクリプト自身はダウンロードせず、製品も起動しません。違う実体は停止し、新しい版を自動的に認定しません。
+
+```sh
+python3 tools/check_msime_implementation.py --exe "/path/to/imjpdct.exe" --pdb "/path/to/imjpdct.pdb"
+```
+
+[Microsoftの利用条件](https://learn.microsoft.com/en-us/legal/windows-sdk/microsoft-symbol-server-license-terms)に従い、自作の辞書出力とMicrosoft IMEの互換性検証のために確認しました。製品・PDB・逆アセンブル本文は配布しません。通常の辞書生成にWindowsやEXE/PDB、objdumpは不要です。
 
 ATOKの一括処理画面のUnicode指定は未登録語ファイルの出力用であり、入力形式の指定だと読み替えません。旧版の単語64文字制限も現行版へ流用しません。
 
 Microsoftの[IFEDictionary](https://learn.microsoft.com/en-us/windows/win32/api/msime/nn-msime-ifedictionary)は単語登録のCOM APIであり、辞書ツールのテキスト形式を定義していません。[スペルチェック辞書登録API](https://learn.microsoft.com/en-us/windows/win32/api/spellcheck/nf-spellcheck-iuserdictionariesregistrar-registeruserdictionary)のUTF-16LE仕様もMSIMEの一括登録仕様として流用しません。
 
-Microsoft IMEの保留解消には、対象版の公式仕様・実装または実製品から書き出した小規模サンプルとの比較が必要です。保留中のファイルや取り込み用サンプルは作りません。
+初版対象の全IME形式に生成処理があります。各形式の自動検査・実装照合と、実際のIMEへの取り込み確認は引き続き区別します。
 
 ## 管理用JSON・CSV
 
