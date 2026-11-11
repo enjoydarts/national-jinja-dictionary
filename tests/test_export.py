@@ -27,7 +27,7 @@ class ExportTest(unittest.TestCase):
         self.assertEqual(out.rows,1)
         self.assertTrue(any('300' in x['reason'] for x in out.exclusions))
     def test_blocked_formats_never_emit_speculative_files(self):
-        for name in ['atok','google','msime']:
+        for name in ['google','msime']:
             out=render(dataset(),name)
             self.assertIsNone(out.content)
             self.assertEqual(out.status,'blocked')

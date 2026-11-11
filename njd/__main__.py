@@ -45,6 +45,7 @@ def parser():
     build=sub.add_parser('build'); build.add_argument('--formats',default='all',help='all or comma-separated mozc,json,csv,atok,google,msime,macos')
     build.add_argument('--prefecture',choices=[f'{i:02}' for i in range(1,48)])
     build.add_argument('--sample-name',action='append',default=[])
+    build.add_argument('--samples-only',action='store_true',help='generate only small import samples, never the full dictionaries')
     return p
 
 def _effective(work):
@@ -63,7 +64,7 @@ def _review_lists(data,work):
     write_json(work/'source-reviews.json',dict(schema_version=1,sources=pending,
         counting_notice='Unadopted source observations/articles are not facility counts; identity candidates may already be represented in canonical data.'))
 
-def build_outputs(data,work,formats,requested_prefecture=None,sample_names=(),output_dir=None):
+def build_outputs(data,work,formats,requested_prefecture=None,sample_names=(),output_dir=None,samples_only=False):
     unknown=set(formats)-FORMATS.keys()
     if unknown: raise ValueError('unknown formats: '+','.join(sorted(unknown)))
     destination=Path(output_dir) if output_dir is not None else work/'generated'
@@ -72,29 +73,36 @@ def build_outputs(data,work,formats,requested_prefecture=None,sample_names=(),ou
     staging.mkdir(parents=True)
     scopes={'national':data}
     codes=sorted({f['prefecture_code'] for f in data['facilities']})
-    for code in codes:
+    for code in ([] if samples_only else codes):
         if requested_prefecture is None or code==requested_prefecture:
             scopes['prefectures/'+code]=subset(data,code)
     if requested_prefecture:
         scopes={'prefectures/'+requested_prefecture:subset(data,requested_prefecture)}
-    summaries={}; national_outputs={}; blocked=False
+    summaries={}; sample_summaries={}; national_outputs={}; blocked=False
     for scope,scope_data in scopes.items():
-        outputs={name:render(scope_data,name) for name in formats}
+        sample=samples(scope_data,names=sample_names)
+        outputs={name:render(sample if samples_only else scope_data,name) for name in formats}
         summaries[scope]={name:out.summary() for name,out in outputs.items()}
-        if scope=='national' or requested_prefecture: national_outputs=outputs
+        if scope=='national' or requested_prefecture:
+            national_outputs=outputs;report_input=sample if samples_only else scope_data
         for name,out in outputs.items():
-            if out.content is not None:
+            if out.content is not None and not samples_only:
                 target=staging/scope/(name+'.'+FORMATS[name]['extension']); target.parent.mkdir(parents=True,exist_ok=True)
                 target.write_bytes(out.content)
-            else: blocked=True
-        sample=samples(scope_data,names=sample_names)
+            elif out.content is None: blocked=True
         write_json(staging/'samples'/scope/'manifest.json',sample)
-        for name in formats:
-            out=render(sample,name)
+        sample_outputs=outputs if samples_only else {name:render(sample,name) for name in formats}
+        sample_summaries[scope]={name:out.summary() for name,out in sample_outputs.items()}
+        sample_report=report(sample,sample_outputs)
+        sample_report['output_scope']='import_sample_only'
+        write_json(staging/'samples'/scope/'report.json',sample_report)
+        for name,out in sample_outputs.items():
             if out.content is not None:
                 (staging/'samples'/scope/(name+'.'+FORMATS[name]['extension'])).write_bytes(out.content)
-    report_data=report(subset(data,requested_prefecture) if requested_prefecture else data,national_outputs)
+    report_data=report(report_input,national_outputs)
+    report_data['output_scope']='import_sample_only' if samples_only else 'full_dictionaries'
     report_data['scopes']=summaries
+    report_data['sample_outputs']=sample_summaries
     write_json(staging/'report.json',report_data)
     write_json(staging/'formats.json',FORMATS)
     checksums={str(p.relative_to(staging)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(staging.rglob('*')) if p.is_file()}
@@ -149,8 +157,8 @@ def main(argv=None):
         print(json.dumps(result['totals'],ensure_ascii=False)); return 0
     if args.command=='build':
         formats=list(FORMATS) if args.formats=='all' else args.formats.split(',')
-        result,blocked=build_outputs(data,work,formats,args.prefecture,args.sample_name,output_dir=output)
-        _review_lists(data,work if args.workspace else output)
+        result,blocked=build_outputs(data,work,formats,args.prefecture,args.sample_name,output_dir=output,samples_only=args.samples_only)
+        if not args.samples_only:_review_lists(data,work if args.workspace else output)
         print(json.dumps(result['totals'],ensure_ascii=False))
         if blocked: print('Some requested formats are blocked; see generated/report.json',file=sys.stderr)
         return 2 if blocked else 0

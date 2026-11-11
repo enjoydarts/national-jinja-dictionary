@@ -62,21 +62,42 @@ python3 tools/check_macos_parser.py --input dist/dictionaries/national/macos.txt
 
 チェックは入力の一時コピーだけを開き、全フィールドと行数を比較します。辞書のインストールや設定変更は行いません。通常のPython生成・検証はこのmacOS専用チェックに依存しません。
 
-## 保留しているIME形式
+## ATOK：標準Shift JISの一括登録テキスト
+
+対象は **ATOK for Mac 36.0.2（245128.3.0）**、辞書ユーティリティのShift JIS読み書き設定が **日本語（Shift JIS）** の場合です。[公式単語ファイル仕様](https://www.atok.com/other/support/howtouse/mac/dc/pgs/dc_word_file.htm)、[読み書きの設定](https://www.atok.com/other/support/howtouse/mac/mn/pgs/mn_tool_d_com_encoding.htm)、[品詞表](https://www.atok.com/other/support/howtouse/mac/shrd/shrd_hinsi_meisi.htm)と同版付属ヘルプを確認しました。
+
+| 項目 | 採用した出力 |
+| --- | --- |
+| ヘッダー | `!!ATOK_TANGO_TEXT_HEADER_1` を先頭1行に出力 |
+| 列・区切り | 読み・単語・品詞の3列、TAB。コメント等は省略 |
+| 品詞 | 固有地名（品詞番号5）。場所としての特定施設名に対応 |
+| 文字コード | Pythonの`shift_jis`で厳密に表現でき、復号後のUnicodeが一致する標準Shift JISの部分集合 |
+| BOM・改行 | BOMなし、CRLF、最終行にもCRLF。プロジェクトが選んだ標準テキストの出力方針 |
+| 長さ | 公式は読み32・単語100文字。実装は保守的にUTF-16コード単位で計数 |
+| エスケープ | 引用形式なし。制御文字・不可視書式文字・行／段落区切り文字を拒否 |
+| 行数上限 | 確認した資料に記載なし。無制限とは断定しない |
+
+公式の[単語出力手順](https://www.atok.com/other/support/howtouse/mac/mn/pgs/mn_tool_ut_out_word_out_d.htm)は、Shift JISのテキストを単語一括処理に再利用できると説明しています。Unicode出力の厳密なバイト形式を推定せず、まずこの明記された入力経路に対応します。BOMなし・CRLFは実製品が書き出したファイルとの一致を確認した値ではありません。自動検査はこのプロジェクトの出力方針への適合を検査し、製品の受理を証明するものではありません。
+
+`cp932`の拡張文字を無条件にShift JISとして出力しません。同じバイト列を`shift_jis`と`cp932`で復号しても原文のUnicodeに一致する行だけを採用し、符号化できない文字やマッピング差がある文字は理由付きで除外します。「𠮷」「髙」「神」等を「吉」「高」「神」へ置換しません。例えば「國」「驗」のようにこの部分集合で保持できる旧字体は、そのまま出力できます。正本は変更せず、ほかの形式へは各形式の条件で直接出力します。
+
+実際のATOKへの取り込み・変換は**未実施**です。Windows版やUnicode一括登録ファイルへの対応確認も含みません。Unicode版の具体的な符号化・バイト順・BOMは実製品のサンプルが得られるまで保留します。[確認用手順](FORMAT_REVIEW.md)と、生成したサンプルの`report.json`で行数・除外理由を照合してください。
+
+## 保留しているIME形式・追加プロファイル
 
 | 形式 | 確認した資料・対象 | 品詞の候補と理由 | 出力を保留する不足情報 |
 | --- | --- | --- | --- |
-| ATOK | [現行公式単語ファイル仕様](https://www.atok.com/other/support/howtouse/mac/dc/pgs/dc_word_file.htm)とATOK for Mac 36.0.2（245128.3.0）の付属ヘルプ | 固有地名（5）：場所としての特定施設名 | 実際の書き出しバイト列、BOM・改行、厳密な文字計数 |
-| Google日本語入力 | [公式辞書ヘルプ](https://support.google.com/ime/japanese/answer/166765?hl=ja)、[Mozcのブランド説明](https://github.com/google/mozc/blob/d918f30063999d4ca250f76ced8b92169a0e0b25/docs/about_branding.md) | 固有名詞を検討。製品の品詞表と照合待ち | 製品版の一括形式・対象バージョン・インポートサンプル |
+| ATOK Unicode版 | 上記公式資料・ATOK for Mac 36.0.2の付属ヘルプ | 固有地名（5） | 実際のUnicode書き出しバイト列・BOM等。標準Shift JIS版は上記の範囲で出力可能 |
+| Google日本語入力 | [公式辞書ヘルプ](https://support.google.com/ime/japanese/answer/166765?hl=ja)、[公式配布ページ](https://www.google.co.jp/ime/)、[Mozcのブランド説明](https://github.com/google/mozc/blob/d918f30063999d4ca250f76ced8b92169a0e0b25/docs/about_branding.md)。macOS公式パッケージの製品版3.34.6260.1を確認 | 固有名詞を検討。製品の品詞表と照合待ち | 対象製品版の一括形式とインポート／書き出しサンプル |
 | Microsoft IME | [公式サポート](https://support.microsoft.com/ja-jp/windows/hardware/input-devices/microsoft-japanese-ime)（Windows 10/11） | 地名・固有名詞等の正式な対応名を確認して決定 | 一括形式、品詞、文字コード、BOM、改行、制限、対象ビルド |
 
-ATOK現行資料はヘッダー `!!ATOK_TANGO_TEXT_HEADER_1`、TAB区切り、読み32・単語100文字を明記します。旧版の単語64文字制限を現行版へ流用しません。[公式の単語出力手順](https://www.atok.com/other/support/howtouse/mac/mn/pgs/mn_tool_ut_out_word_out_d.htm)と指定版の付属ヘルプで、「Unicodeで出力する」の選択と、選択しない場合のShift JIS出力を確認しました。Unicode出力への対応自体は確認済みです。具体的なUTF形式・バイト順・BOM・改行バイト列・厳密な文字計数は未確認であり、実際の書き出しサンプルが必要です。
-
-付属ヘルプは「日本語（Mac OS）」と「日本語（Shift JIS）」で一部の文字対応が異なることも説明しています。「Shift JIS」という名称だけでPythonの`cp932`と同一とは決めません。また、一括処理画面のUnicode指定は未登録語ファイルの出力用であり、入力形式の指定だと読み替えません。
+ATOKの一括処理画面のUnicode指定は未登録語ファイルの出力用であり、入力形式の指定だと読み替えません。旧版の単語64文字制限も現行版へ流用しません。
 
 Microsoftの[IFEDictionary](https://learn.microsoft.com/en-us/windows/win32/api/msime/nn-msime-ifedictionary)は単語登録のCOM APIであり、辞書ツールのテキスト形式を定義していません。[スペルチェック辞書登録API](https://learn.microsoft.com/en-us/windows/win32/api/spellcheck/nf-spellcheck-iuserdictionariesregistrar-registeruserdictionary)のUTF-16LE仕様もMSIMEの一括登録仕様として流用しません。
 
 Google製品とMozcは由来が共通ですが、それだけでは現在の製品版のインポーターが同一とは確認できません。製品仕様または実際の書き出しサンプルで確認後、互換性が確認できた処理だけを共通化します。
+
+Googleの[製品識別情報](GOOGLE_PRODUCT_EVIDENCE.json)には、公式配布パッケージの版・ダウンロード先・SHA-256と確認範囲を記録しています。パッケージはインストールせずに展開して識別したもので、辞書形式や取り込みの確認根拠にはしません。
 
 保留解消には、対象版の公式仕様または利用者自身のIMEから書き出した小規模サンプルとの比較が必要です。保留中のファイルや取り込み用サンプルは作りません。
 

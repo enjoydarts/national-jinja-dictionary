@@ -30,12 +30,14 @@ Obsidianに残すのは作業記録・判断経緯などのノートだけです
 | --- | --- | --- |
 | Mozc | 固定コミットの公式実装に基づくTSV生成・自動検証 | 未実施 |
 | JSON・CSV | 出典・所在地・原文・検証状態を含む管理データ | IME用ではない |
-| ATOK | 現行版・符号化・BOM等の確認不足で保留 | 未実施 |
+| ATOK for Mac | 標準Shift JISの一括登録テキストを直接出力・形式検査。Unicode版は保留 | 未実施 |
 | Google日本語入力 | 製品側の一括形式・対象版未確定で保留 | 未実施 |
 | Microsoft IME | 公式一括形式・対象ビルド未確定で保留 | 未実施 |
 | macOS追加辞書 | macOS 27の公式仕様・指定版の公式解析処理に基づくCSV生成 | インストール・変換確認は未実施 |
 
 macOSは公式解析処理との全フィールド照合を行っています。追加辞書のインストール・変換確認とは区別します。保留形式のファイルは推測で生成しません。Google日本語入力とMozcの完全互換は未確認です。macOS追加辞書はユーザ辞書・テキスト置換とは区別し、iPhone直接取り込みやデバイス間同期は対象外です。[出力仕様と品詞対応](docs/FORMATS.md)に根拠と不足情報を記載しています。
+
+ATOKはfor Mac 36.0.2の公式単語ファイル仕様と「日本語（Shift JIS）」入力設定を対象にします。厳密な標準Shift JISで原文を保てる行だけを出力し、表せない異体字は置換せず理由付きで除外します。Unicode版やWindows版、実機の取り込み・変換まで確認済みという意味ではありません。
 
 判断が必要な外字・読みの食い違いは **[判断待ち一覧](docs/REVIEW.md)** に原文・候補・根拠・選択肢をまとめています。保留中のIME形式に必要な実製品資料は **[形式確認の依頼一覧](docs/FORMAT_REVIEW.md)** に分けています。
 
@@ -68,6 +70,16 @@ python3 -m njd build --formats mozc --prefecture 10
 `--data-dir`で正本の場所、`--output-dir`で出力先を指定できます。旧`--workspace`は移行用の互換オプションです。
 
 `build --formats all`は保留形式も評価し、実装済み形式だけを書き出します。保留内容を`report.json`へ残して終了コード2を返します。通常成功は0、データ検証・取得エラー等は1です。保留と不正データを区別します。
+
+全国版を生成せず、正本から少量の取り込み確認用ファイルだけを作る場合：
+
+```sh
+python3 -m njd --output-dir dist/ime-samples build --samples-only --formats all --sample-name 倭文神社 --sample-name 大國神社
+# 県を指定し、対応済み形式だけを試す例
+python3 -m njd --output-dir dist/ime-samples-10 build --samples-only --prefecture 10 --formats atok,mozc,macos
+```
+
+`samples/national/`または`samples/prefectures/NN/`にファイル・出典付き`manifest.json`・形式別`report.json`を保存します。各サンプルは原則12登録までで、同名施設や旧字体などを優先します。読みの難しさを自動判定するものではなく、`--sample-name`で確認対象を指定できます。`report.json`には出力行数・重複除去数・符号化できない行の理由・保留形式を記録します。サンプルの件数は全国版の語数ではありません。生成と実機取り込みは区別し、手順は[形式確認の案内](docs/FORMAT_REVIEW.md)を参照してください。
 
 ## 正本の最新化
 

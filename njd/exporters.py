@@ -6,6 +6,7 @@ import json
 from njd.storage import json_bytes
 from njd.validation import eligible, validate
 from njd.macos import PROFILE as MACOS_PROFILE, encode_row as encode_macos_row, row_problem as macos_row_problem, check_macos
+from njd.atok import PROFILE as ATOK_PROFILE, encode_rows as encode_atok_rows, row_problem as atok_row_problem, check_atok
 
 MOZC_COMMIT='d918f30063999d4ca250f76ced8b92169a0e0b25'
 FORMATS={
@@ -17,7 +18,7 @@ FORMATS={
     'json':dict(status='enabled',extension='json',encoding='utf-8',bom=False,newline='\n'),
     'csv':dict(status='enabled',extension='csv',encoding='utf-8',bom=False,newline='\n',
         delimiter=',',escape='RFC4180 double quotes via csv.writer; LF records'),
-    'atok':dict(status='blocked',reason='ATOK for Mac 36.0.2 header/POS/limits confirmed; exact export byte encoding/BOM/EOL and character counting still need a product sample'),
+    'atok':ATOK_PROFILE,
     'google':dict(status='blocked',reason='released Google Japanese Input import profile not confirmed; Mozc compatibility not assumed'),
     'msime':dict(status='blocked',reason='official bulk import syntax, encoding and target version not confirmed'),
     'macos':MACOS_PROFILE,
@@ -54,7 +55,7 @@ def render(data: dict, name: str) -> Output:
         writer.writeheader()
         writer.writerows({k:json.dumps(v,ensure_ascii=False,sort_keys=True) if isinstance(v,(dict,list)) else v for k,v in r.items()} for r in records)
         return Output(stream.getvalue().encode('utf-8'),rows=len(records))
-    if name not in ('mozc','macos'): raise ValueError('exporter unavailable')
+    if name not in ('mozc','macos','atok'): raise ValueError('exporter unavailable')
     accepted=eligible(data); accepted_ids={e['id'] for e in accepted}
     problems=validate(data); reasons={}
     for p in problems: reasons.setdefault(p['id'],[]).append(p['reason'])
@@ -65,15 +66,20 @@ def render(data: dict, name: str) -> Output:
             rejected.append(dict(entry_id=e['id'],facility_id=e['facility_id'],reason=why)); continue
         reading,surface=e['reading'],e['surface']
         line=(reading,surface,profile['pos'])
-        problem=macos_row_problem(line) if name=='macos' else ('reading or surface exceeds 300 UTF-8 bytes' if max(len(reading.encode('utf-8')),len(surface.encode('utf-8')))>300 else None)
+        if name=='macos':problem=macos_row_problem(line)
+        elif name=='atok':problem=atok_row_problem(line)
+        else:problem='reading or surface exceeds 300 UTF-8 bytes' if max(len(reading.encode('utf-8')),len(surface.encode('utf-8')))>300 else None
         if problem:
             rejected.append(dict(entry_id=e['id'],facility_id=e['facility_id'],reason=problem));continue
         if line in lines: duplicate_count+=1
         else: lines.add(line)
     if profile.get('max_rows') is not None and len(lines)>profile['max_rows']:
         return Output(None,status='blocked',reason='dictionary exceeds 1000000 rows; split required',exclusions=rejected)
-    content=''.join(encode_macos_row(line) if name=='macos' else '\t'.join(line)+'\n' for line in sorted(lines)).encode('utf-8')
-    checks=check_macos(content) if name=='macos' else check_mozc(content)
+    if name=='atok':
+        content=encode_atok_rows(sorted(lines));checks=check_atok(content)
+    else:
+        content=''.join(encode_macos_row(line) if name=='macos' else '\t'.join(line)+'\n' for line in sorted(lines)).encode('utf-8')
+        checks=check_macos(content) if name=='macos' else check_mozc(content)
     if checks: raise ValueError('generated '+name+' failed format checks: '+str(checks))
     return Output(content,rows=len(lines),exclusions=rejected,deduplicated=duplicate_count,validation=checks)
 

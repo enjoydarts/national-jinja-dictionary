@@ -24,7 +24,12 @@ class ReleaseTest(unittest.TestCase):
                 self.assertEqual(source['source_commit'],'a'*40)
                 self.assertIn('sources/example.json',source['data_files'])
                 report=json.loads(z.read('report.json'))
-                self.assertEqual(report['format_outputs']['atok']['status'],'blocked')
+                self.assertEqual(report['format_outputs']['atok']['status'],'generated')
+                self.assertIn('national/atok.txt',z.namelist())
+                self.assertIn('samples/national/atok.txt',z.namelist())
+                self.assertIn('samples/national/report.json',z.namelist())
+                self.assertNotIn('national/google.txt',z.namelist())
+                self.assertEqual(report['format_outputs']['google']['status'],'blocked')
                 self.assertEqual(json.loads(z.read('national/json.json'))['entries'][0]['reading'],'かくうじんじゃ')
     def test_release_is_byte_reproducible_and_uses_updated_canonical(self):
         with tempfile.TemporaryDirectory() as td:
