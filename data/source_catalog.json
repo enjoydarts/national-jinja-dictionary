@@ -42810,14 +42810,17 @@
       "candidate_url": "https://fukuoka-jinjacho.or.jp/",
       "collection": {
         "additional_full_reading_supplements": {
-          "checked_at": "2026-11-11T05:35:45.017351+00:00",
+          "checked_at": "2026-11-11T13:55:15.317229+00:00",
           "entry_ids": [
-            "c10f2acb-9487-5554-8f00-57d4212e298a"
+            "4f2b34c4-2185-5a9e-98ba-827acd01cfd1",
+            "c10f2acb-9487-5554-8f00-57d4212e298a",
+            "c7a423be-734f-5bb8-ba47-f65ee6ec0f92",
+            "f1eee01a-534e-569b-bfd3-07504e93bbce"
           ],
           "evidence_data": "data/corrections.json",
           "redistribution_status": "unconfirmed",
           "scope": "Exact agency-listed names and full parcel addresses compared with shrine-published or official tourism full kana. No acquired agency fields changed.",
-          "verified_entries": 1
+          "verified_entries": 4
         },
         "canonical_data": {
           "entries": 280,
@@ -42844,7 +42847,7 @@
         "inspection_evidence_reference": "data/sources/fukuoka.json#collection.pages",
         "listing_authority_status": "agency_site",
         "pages_fetched": 4,
-        "reading_supplement_scope": "神社庁一覧に全文読みは未掲載。施設公式・国税庁・Wikipedia・公式観光資料を名称/所在地で照合し、98施設の全文読みを補完。出典ごとの原文・確認日・補正根拠をdata/corrections.jsonに保持。",
+        "reading_supplement_scope": "神社庁一覧に全文読みは未掲載。施設公式・国税庁・Wikipedia・公式観光資料を名称/所在地で照合し、101施設の全文読みを補完。出典ごとの原文・確認日・補正根拠をdata/corrections.jsonに保持。",
         "reason": "公開4地域一覧の280掲載枠を全件確認。名称・所在地・リンクを保存、一覧読みは未掲載。組織包括約3300社とは別範囲。全文読み補完は別層。",
         "regional_counts": [
           {
@@ -42869,20 +42872,37 @@
           }
         ],
         "remaining_scope": [],
-        "remaining_unverified_reading_facilities": 182,
+        "remaining_unverified_reading_facilities": 179,
         "source_rows_observed": 280,
         "status": "collected",
-        "supplemental_reading_facilities": 98,
+        "supplemental_reading_facilities": 101,
+        "supplemental_tourism_authority": {
+          "authority_reference": {
+            "checked_at": "2026-11-11T13:54:22.254310+00:00",
+            "excerpt": "運営組織 名称：公益社団法人 福岡県観光連盟",
+            "fetched_at": "2026-11-11T13:53:37.042446+00:00",
+            "locator": "運営組織; 著作権について",
+            "page_hash": "a4d74571f473f3e3ac2252f580aa5c430bc52493a203054deabc5cf34fabfd6c",
+            "title": "当サイトについて",
+            "url": "https://www.crossroadfukuoka.jp/organization/site"
+          },
+          "checked_at": "2026-11-11T13:55:15.317229+00:00",
+          "name": "公益社団法人福岡県観光連盟",
+          "redistribution_status": "unconfirmed",
+          "scope": "公式本文の運営組織名と取得した個別3施設の名称・全文かな・全地番を確認。神社庁資料の原文は変更せず、説明文・画像を収録しない。コンテンツ利用条件と辞書再配布の明示的許諾は区別する。",
+          "terms_url": "https://www.crossroadfukuoka.jp/organization/site",
+          "url": "https://www.crossroadfukuoka.jp/"
+        },
         "traversal_complete": true,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 182,
+            "insufficient_evidence_in_inspected_sources": 179,
             "investigation_incomplete": 0,
             "judgment_required": 0
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 183,
-          "unfinished_entries": 182
+          "unfinished_entries": 179
         }
       },
       "conditions": {
@@ -44144,8 +44164,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13559,
-    "effective_verified_facilities": 44064,
+    "effective_dictionary_rows": 13560,
+    "effective_verified_facilities": 44067,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
