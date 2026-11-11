@@ -56,6 +56,14 @@ jobs:
           if-no-files-found: error
           retention-days: 14
           path: |
+            dist/release-assets/*.zip
+      - name: Save generation audit files
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: release-audit-${{ inputs.version }}
+          if-no-files-found: error
+          retention-days: 14
+          path: |
             dist/*.zip
             dist/SHA256SUMS
             dist/SOURCE.json

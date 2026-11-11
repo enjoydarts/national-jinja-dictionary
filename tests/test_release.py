@@ -9,6 +9,31 @@ from njd.nationwide import save_collection
 from njd.release import create_release
 
 class ReleaseTest(unittest.TestCase):
+    def test_public_archive_contains_only_ime_dictionaries(self):
+        with tempfile.TemporaryDirectory() as td:
+            base=Path(td);data=base/'data';out=base/'out'
+            save_collection(data,'example',build([row()]))
+            result=create_release(data,out,'v0.2.0','a'*40,changelog='# Changes\n')
+            path=Path(result['dictionary_archive'])
+            with zipfile.ZipFile(path) as z:
+                names=z.namelist()
+                expected={f'{scope}/{name}.txt' for scope in ['national','prefectures/11','samples/national','samples/prefectures/11']
+                    for name in ['atok','atok_unicode','google','mozc','msime','macos']}
+                self.assertEqual(set(names),expected)
+                with zipfile.ZipFile(result['archive']) as audit:
+                    for name in names:self.assertEqual(z.read(name),audit.read(name))
+            first=path.read_bytes()
+            again=create_release(data,out,'v0.2.0','a'*40,changelog='# Changes\n')
+            self.assertEqual(first,Path(again['dictionary_archive']).read_bytes())
+            # Extra text and a known filename in an unrelated scope must stay out.
+            destination=out/'dictionaries'
+            (destination/'national/README.txt').write_text('not a dictionary')
+            (destination/'unrelated').mkdir()
+            (destination/'unrelated/mozc.txt').write_text('not a generated dictionary')
+            from njd.release import write_dictionary_archive
+            filtered=write_dictionary_archive(destination,out/'filtered.zip')
+            self.assertEqual(first,filtered.read_bytes())
+
     def test_release_builds_from_versioned_data_without_network(self):
         with tempfile.TemporaryDirectory() as td:
             base=Path(td); data=base/'data';out=base/'dist'

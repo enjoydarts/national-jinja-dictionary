@@ -15,5 +15,6 @@
 - Pythonの対象版は`.python-version`・`pyproject.toml`・CIで揃える。
 - コードとプロジェクト文書はMIT。収集元データには出典ごとの利用条件を適用する。
 - 変更に応じた検証を行い、機能単位でコミットする。
+- コミットメッセージは日本語で記述する。
 
 開発手順は[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)、データ仕様は[docs/DATA.md](docs/DATA.md)を参照する。

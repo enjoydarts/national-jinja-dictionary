@@ -11,18 +11,13 @@
 
 Workflowは実行時のコミットを固定し、テスト・正本検証・全形式の辞書生成・CHANGELOG生成を行います。その後タグを作成し、ドラフトReleaseへ添付をアップロードします。SHA-256の照合がすべて成功すると公開します。
 
-| 添付 | 内容 |
-| --- | --- |
-| `national-jinja-dictionary-vX.Y.Z.zip` | 全国版・県別版・サンプル・出典・検証レポート |
-| `SHA256SUMS` | 添付ファイルのSHA-256 |
-| `SOURCE.json` | 正本コミット・入力ファイルのhash・生成情報 |
-| `CHANGELOG.md` | コミット履歴から生成した変更履歴 |
+添付は`national-jinja-dictionary-vX.Y.Z.zip`だけです。ZIPには全国版・県別版・確認用サンプルのIME辞書を収録し、管理用JSON・CSVやレポートは含めません。出力行数・ZIPのSHA-256・対象コミットの正本と利用条件へのリンクはRelease本文に掲載します。
 
 収集・正本更新とリリースは別工程です。リリース中に再クロールせず、そのコミットの正本からオフラインで生成します。同じ環境・正本・版番号から同じ内容を再生成できます。
 
 ## 公開せずに確認する
 
-`dry_run`をオンにすると、タグやReleaseを作らず生成・検証します。成果物はWorkflowのArtifactsから14日間取得できます。通常実行でもArtifactsを保存します。
+`dry_run`をオンにすると、タグやReleaseを作らず生成・検証します。辞書ZIPはWorkflowの`release-…` Artifactsから14日間取得できます。正本hash・検証レポート・出典一覧・CHANGELOGなどは別の`release-audit-…` Artifactsに保存します。通常実行でも同じ構成で保存します。
 
 GitHub CLIからの実行例：
 
@@ -41,7 +36,7 @@ gh workflow run release.yml --ref main -f version=0.1.0
 
 対象コミットから到達できる公開済みリリースタグのうち、最も近いものとの差分をコミット件名から生成します。初回は対象コミットまでの全履歴です。件名に明示されたPR番号をリンク化します。
 
-全文をZIP内とRelease添付へ保存します。Release本文にも掲載し、長い場合は添付へのリンクに切り替えます。リポジトリへのCHANGELOG自動コミットは行いません。
+CHANGELOGはRelease本文に掲載します。本文の上限を超える場合は一部を掲載し、GitHubの全変更履歴へのリンクを付けます。全文はWorkflowの検証用Artifactsに保存し、Releaseには添付しません。リポジトリへのCHANGELOG自動コミットは行いません。
 
 ## 辞書だけを生成する
 
@@ -49,4 +44,4 @@ gh workflow run release.yml --ref main -f version=0.1.0
 python3 -m njd.release --version v0.1.0
 ```
 
-このコマンドは`dist/`へ辞書ZIPを生成します。CHANGELOG・タグ・GitHub Releaseは作成しません。
+このコマンドは`dist/release-assets/`へ配布用の辞書ZIPを生成し、`dist/`へ検証用の管理データ・ZIPも保存します。CHANGELOG・タグ・GitHub Releaseは作成しません。

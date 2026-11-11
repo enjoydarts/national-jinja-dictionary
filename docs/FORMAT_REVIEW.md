@@ -10,7 +10,7 @@ ReleaseのZIPに含まれる`samples/`を使うか、正本から生成します
 python3 -m njd --output-dir dist/ime-samples build --samples-only --formats all --sample-name 倭文神社 --sample-name 大國神社
 ```
 
-全国版は`samples/national/`、県指定時は`samples/prefectures/NN/`へ出力します。`manifest.json`に選択した登録と出典、`report.json`に形式別の行数・除外理由を保存します。同じ読み・表記・品詞は1行になるため、施設数と取り込み行数は一致しない場合があります。
+全国版は`samples/national/`、県指定時は`samples/prefectures/NN/`へ出力します。正本から生成した場合は、`manifest.json`に選択した登録と出典、`report.json`に形式別の行数・除外理由を保存します。Releaseの辞書ZIPにはこれらの管理ファイルは含みません。同じ読み・表記・品詞は1行になるため、施設数と取り込み行数は一致しない場合があります。
 
 ## 取り込む
 
@@ -25,8 +25,8 @@ python3 -m njd --output-dir dist/ime-samples build --samples-only --formats all 
 
 ## 結果を確認する
 
-1. 受理・拒否件数を`report.json`の出力行数と照合する。
-2. `manifest.json`の読みを入力し、表記・旧字体・異体字が候補に残るか確認する。
+1. 受理・拒否件数を確認する。正本から生成した場合は`report.json`の出力行数と照合する。
+2. 辞書に登録された読みを入力し、表記・旧字体・異体字が候補に残るか確認する。
 3. 難読名、同名施設、長い名称、補助平面の文字を含む登録を確認する。
 4. 書き戻しが可能な製品では元ファイルと読み・表記・品詞を比較する。
 

@@ -51,9 +51,11 @@ class PublishingTest(GitFixture):
         self.assertEqual(result['status'],'published')
         self.assertEqual(self.api.mutations[:2],['tag','draft'])
         self.assertEqual(self.api.mutations[-1],'publish')
-        self.assertEqual(set(self.api.items),{'national-jinja-dictionary-v0.2.0.zip','SHA256SUMS','SOURCE.json','CHANGELOG.md'})
-        with zipfile.ZipFile(result['archive']) as archive:
-            self.assertEqual(archive.read('CHANGELOG.md'),(self.output/'CHANGELOG.md').read_bytes())
+        self.assertEqual(set(self.api.items),{'national-jinja-dictionary-v0.2.0.zip'})
+        with zipfile.ZipFile(result['dictionary_archive']) as archive:
+            self.assertTrue(all(name.endswith('.txt') for name in archive.namelist()))
+        self.assertIn('# CHANGELOG',self.api.release['body'])
+        self.assertIn(self.commit+'/data/',self.api.release['body'])
 
     def test_generation_failure_and_dry_run_do_not_create_tag_or_release(self):
         def fail(*args,**kwargs):raise ValueError('canonical data failed')
@@ -70,23 +72,28 @@ class PublishingTest(GitFixture):
         self.assertEqual(self.api.mutations,[])
 
     def test_partial_upload_can_resume_without_replacing_assets(self):
-        self.api.fail_upload='SOURCE.json'
+        self.api.fail_upload='national-jinja-dictionary-v0.2.0.zip'
         with self.assertRaises(RuntimeError):self.run_release()
         self.assertTrue(self.api.release['draft'])
         self.api.fail_upload=None;before=list(self.api.mutations)
         self.run_release()
         self.assertFalse(self.api.release['draft'])
         self.assertEqual(self.api.mutations.count('tag'),1)
-        self.assertEqual(self.api.mutations.count('upload:SHA256SUMS'),1)
+        self.assertEqual(self.api.mutations.count('upload:national-jinja-dictionary-v0.2.0.zip'),1)
         self.assertTrue(before)
 
     def test_published_identical_retry_is_noop_and_mismatch_never_clobbers(self):
         self.run_release();before=list(self.api.mutations)
         self.assertEqual(self.run_release()['status'],'already_published')
         self.assertEqual(self.api.mutations,before)
-        self.api.items['SOURCE.json']['digest']='sha256:'+'0'*64
+        self.api.items['national-jinja-dictionary-v0.2.0.zip']['digest']='sha256:'+'0'*64
         with self.assertRaisesRegex(ValueError,'asset'):self.run_release()
         self.assertEqual(self.api.mutations,before)
+
+    def test_unexpected_assets_block_publication(self):
+        self.api.items['SOURCE.json']=dict(name='SOURCE.json',state='uploaded',digest='sha256:unused')
+        with self.assertRaisesRegex(ValueError,'unexpected release asset'):self.run_release()
+        self.assertNotIn('publish',self.api.mutations)
 
     def test_retry_reuses_saved_baseline_after_new_release_history_appears(self):
         self.run_release();before=list(self.api.mutations)

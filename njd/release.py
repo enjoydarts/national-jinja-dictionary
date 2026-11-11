@@ -32,6 +32,28 @@ def _input_hashes(data_dir):
     return {str(p.relative_to(data_dir)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
 
 
+def write_dictionary_archive(directory,archive):
+    """Package only known IME outputs from national, prefecture and sample scopes."""
+    directory=Path(directory);archive=Path(archive)
+    names={name+'.'+profile['extension'] for name,profile in FORMATS.items() if name not in ('json','csv')}
+    selected=[]
+    for path in sorted(directory.rglob('*')):
+        if not path.is_file() or path.name not in names:continue
+        relative=path.relative_to(directory)
+        scope=relative.parts[:-1]
+        if scope and scope[0]=='samples':scope=scope[1:]
+        if scope==('national',) or (len(scope)==2 and scope[0]=='prefectures' and scope[1] in {f'{n:02}' for n in range(1,48)}):
+            selected.append((relative,path))
+    if not selected:raise ValueError('no IME dictionary files to package')
+    archive.parent.mkdir(parents=True,exist_ok=True)
+    with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+        for relative,path in selected:
+            info=zipfile.ZipInfo(str(relative),date_time=(1980,1,1,0,0,0))
+            info.create_system=3;info.external_attr=0o100644<<16;info.compress_type=zipfile.ZIP_DEFLATED
+            z.writestr(info,path.read_bytes(),compresslevel=9)
+    return archive
+
+
 def create_release(data_dir,output_dir,version,source_commit,changelog=None,previous_release_tag=None):
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._+-]{0,80}',version): raise ValueError('unsafe release version')
     if not re.fullmatch(r'[0-9a-f]{40,64}|unknown',source_commit): raise ValueError('invalid source commit')
@@ -132,8 +154,9 @@ def create_release(data_dir,output_dir,version,source_commit,changelog=None,prev
     sums=[f'{checksum}  {archive.name}',hashlib.sha256((output_dir/'SOURCE.json').read_bytes()).hexdigest()+'  SOURCE.json']
     if changelog is not None:sums.append(hashlib.sha256((output_dir/'CHANGELOG.md').read_bytes()).hexdigest()+'  CHANGELOG.md')
     checksum_file.write_text('\n'.join(sums)+'\n',encoding='utf-8')
+    dictionary_archive=write_dictionary_archive(destination,output_dir/'release-assets'/archive.name)
     return dict(archive=str(archive),checksum_file=str(checksum_file),source_commit=source_commit,
-        totals=totals,blocked_formats=source['blocked_formats'])
+        dictionary_archive=str(dictionary_archive),totals=totals,blocked_formats=source['blocked_formats'])
 
 
 def require_matching_tag(repository,tag):

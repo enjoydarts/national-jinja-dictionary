@@ -86,6 +86,8 @@ def _digest(path):return 'sha256:'+hashlib.sha256(path.read_bytes()).hexdigest()
 
 def _verify_assets(api,rid,paths,*,require_all):
     existing={asset['name']:asset for asset in api.assets(rid)}
+    unexpected=set(existing)-{path.name for path in paths}
+    if unexpected:raise ValueError('unexpected release asset: '+sorted(unexpected)[0])
     missing=[]
     for path in paths:
         item=existing.get(path.name)
@@ -122,14 +124,33 @@ def run_release(repository,repo,version,api,output_dir,*,dry_run=False,generator
     LOG.info('Generating %s offline from %s (previous release: %s)',version,commit,previous or 'initial release')
     result=generator(root/'data',out,version,commit,changelog=changelog,previous_release_tag=previous)
     LOG.info('Generated release: %s',result['archive'])
-    paths=[Path(result['archive']),out/'SHA256SUMS',out/'SOURCE.json',out/'CHANGELOG.md']
+    paths=[Path(result['dictionary_archive'])]
     source=json.loads((out/'SOURCE.json').read_text())
     if source.get('source_commit')!=commit or source.get('version')!=version or source.get('blocked_formats'):
         raise ValueError('generated release provenance or format completion is invalid')
-    notes=(out/'RELEASE_NOTES.md').read_text()
+    base=f'https://github.com/{repo}/tree/{commit}'
+    totals=result['totals'];report=json.loads((out/'dictionaries/report.json').read_text())
+    lines=[f'# 全国神社辞書 {version}','',
+        '添付ZIPには全国版・都道府県別・確認用サンプルのIME辞書だけを収録しています。',
+        '全神社を網羅したものではありません。実際のIMEへの取り込み・変換は未確認です。','',
+        f'- 正本コミット: `{commit}`',f"- 施設数: {totals['facilities']}",
+        f"- 出力条件を満たす施設: {totals['verified_facilities']}",
+        f"- 重複除去後の辞書行数: {totals['dictionary_rows']}",'',
+        '| 形式 | 全国版の出力行数 |','| --- | ---: |']
+    lines.extend(f"| {name} | {item['rows']} |" for name,item in report['format_outputs'].items() if name not in ('json','csv'))
+    notes='\n'.join(lines)+'\n\n## 出典・利用条件\n\n'
+    notes+=f'名称・読み・所在地の原文、出典URL・版・利用条件: [正本データ]({base}/data/)、[補正根拠]({base}/data/corrections.json)、[情報源一覧]({base}/docs/SOURCES.md)。\n'
+    notes+='Wikipedia由来項目はCC BY-SA 4.0に従い、カタカナ読みをひらがなへ機械変換しています。各記事・版・ライセンスは上記正本に保存しています。コードのMITは収集元データへ適用しません。\n'
+    attribution=json.loads((out/'dictionaries/ATTRIBUTION.json').read_text())
+    for credit in attribution.get('licensed_references',[]):
+        notes+='\n'+credit.get('attribution',credit.get('title','参考資料'))
+        notes+=' '+credit.get('url','')+' '+credit.get('license_url','')+' '+credit.get('processed_notice','')+'\n'
+    notes+='\n辞書ZIP SHA-256: `'+_digest(paths[0]).removeprefix('sha256:')+'`\n'
+    if len(notes)>55000:raise ValueError('release attribution exceeds body limit')
     body=notes+'\n'+changelog
-    if len(body)>100000:
-        body=notes+f'\n変更履歴の全文: [CHANGELOG.md](https://github.com/{repo}/releases/download/{version}/CHANGELOG.md)\n'
+    if len(body)>60000:
+        comparison=f'https://github.com/{repo}/compare/{previous}...{version}' if previous else f'https://github.com/{repo}/commits/{commit}'
+        body=notes+'\n'+changelog[:max(0,56000-len(notes))].rsplit('\n',1)[0]+f'\n\n[変更履歴の全件]({comparison})。CHANGELOG全文はWorkflowの検証用Artifactsに保存しています。\n'
     metadata=dict(version=version,commit=commit,previous_release_tag=previous)
     body+='\n<!-- njd-release '+json.dumps(metadata,sort_keys=True)+' -->\n'
     result.update(previous_release_tag=previous)
