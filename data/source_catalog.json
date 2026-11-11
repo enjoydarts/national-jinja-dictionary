@@ -29,7 +29,7 @@
       "candidate_url": "https://hokkaidojinjacho.jp/",
       "collection": {
         "additional_full_reading_supplements": {
-          "checked_at": "2026-11-11T05:35:45.017351+00:00",
+          "checked_at": "2026-11-11T06:18:21.405576+00:00",
           "entry_ids": [
             "22e345ca-71b8-586d-8738-40f23b5b45d9",
             "2d41a354-5f3e-5cf7-bd69-551628cbe9c9",
@@ -37,12 +37,18 @@
             "59541b05-d6a6-5049-854e-436cdb3efff9",
             "745060c0-174f-5613-abcc-fce4d43aef5d",
             "7bd1db11-5229-559b-8874-96bed1a03ebe",
-            "c36399c4-9072-5ea0-a313-155c94371fc6"
+            "a6583f15-ed58-52ef-99a1-a171646e142b",
+            "c36399c4-9072-5ea0-a313-155c94371fc6",
+            "c572bc68-7b0f-5503-acdb-8845b44adce7",
+            "d75cb591-6041-564b-864c-4ac4214da753",
+            "f25385c6-415e-5d33-8840-0ab9a5d599fa",
+            "f93e2cb8-ca78-5f1f-b840-ea6ab38f6b60",
+            "fe41b6c6-1991-570b-870e-bb05637b2a7b"
           ],
           "evidence_data": "data/corrections.json",
           "redistribution_status": "unconfirmed",
-          "scope": "Exact agency-listed names and full parcel addresses compared with shrine-published or official tourism full kana. No acquired agency fields changed.",
-          "verified_entries": 7
+          "scope": "Existing agency-listed names and full parcel addresses compared with shrine publications, shrine official pages or official tourism full kana. No acquired agency fields changed.",
+          "verified_entries": 13
         },
         "canonical_data": {
           "entries": 599,
@@ -96,13 +102,44 @@
         "status": "collected",
         "stored_coverage": "all linked branch list pages; readings absent from lists",
         "stored_pages_fetched": 43,
+        "supplemental_branch_authority": {
+          "agency_link": {
+            "fetched_at": "2026-11-11T06:13:15.288777+00:00",
+            "href_raw": "http://jinjasapporo.net/",
+            "locator": "神社・関係諸団体",
+            "page_hash": "dac752516834ca9110d0f72748bbeec671af9d95f058bf060f14e536e46c6ebe",
+            "text_raw": "北海道神社庁札幌支部",
+            "url": "https://hokkaidojinjacho.jp/link/"
+          },
+          "checked_at": "2026-11-11T06:18:21.405576+00:00",
+          "fetched_at": "2026-11-11T06:13:19.750316+00:00",
+          "name": "北海道神社庁札幌支部",
+          "page_hash": "1e53176be4ebd78802419b6f9c73213521c7328efc447c274c2a10d556877751",
+          "scope": "Agency link and actual branch-site body inspected; branch profiles establish official shrine website links. They do not publish full name kana in the inspected profiles, and their names or addresses do not replace the agency source records.",
+          "url": "https://jinjasapporo.net/"
+        },
+        "supplemental_tourism_authority": {
+          "authority_reference": {
+            "excerpt": "詳細は、小樽観光協会のホームページをご覧ください。",
+            "linked_site_host": "otaru.gr.jp",
+            "locator": "応募方法、お問合せ",
+            "observation": "小樽市の本文から観光協会公式サイトへの実リンクを開き、リンク先の発行者名を照合。",
+            "title": "2026小樽コンシェルジュ募集（2月27日（金）正午まで） | 小樽市",
+            "url": "https://www.city.otaru.lg.jp/docs/2022122200029/"
+          },
+          "checked_at": "2026-11-11T06:19:53.627892+00:00",
+          "name": "一般社団法人小樽観光協会",
+          "redistribution_status": "unconfirmed",
+          "role": "小樽観光協会の公式観光情報。神社庁発行・委託掲載ではなく、既存の神社庁掲載施設の全文読みを補完する資料。",
+          "url": "https://otaru.gr.jp/citizen/2026-shrine-festival"
+        },
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 462
+            "insufficient_evidence_in_inspected_sources": 456
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 469,
-          "unfinished_entries": 462
+          "unfinished_entries": 456
         }
       },
       "conditions": {
@@ -43925,8 +43962,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13519,
-    "effective_verified_facilities": 43771,
+    "effective_dictionary_rows": 13523,
+    "effective_verified_facilities": 43777,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
