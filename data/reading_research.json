@@ -12,7 +12,49 @@
     "investigation_incomplete": "未調査・補完調査未了",
     "judgment_required": "資料・原文・施設同定等の判断待ち"
   },
-  "computed_at": "2026-11-12T01:08:19.761982+00:00",
+  "completion_tracking": {
+    "baseline_commit": "d60abf1",
+    "baseline_entry_ids_serialization": "UTF-8 JSON array of lexicographically sorted entry IDs, compact separators",
+    "baseline_entry_ids_sha256": "f1b347ff116ad3d6a47ed40879b429ad10b4e76e648fbb7764dd79ae7b518926",
+    "baseline_unfinished_entries": 10868,
+    "completion_criterion": "全対象登録について実資料の名称・全文読み・同一性を解決し、必要な根拠を検証済み正本へ反映する。資料不足・衝突・取得停止を理由に未確認のままverified又はexcludedへ変更せず、保留が残る間は全件解決済みとしない。",
+    "latest_followup": {
+      "checked_at": "2026-11-12T01:50:31.487260+00:00",
+      "entry_ids": [
+        "00c05b82-5ae8-52d1-9fdb-c2f06b75c964",
+        "0fa69e95-0cf4-5f5a-b5c2-e711839bbff5",
+        "4340c91d-6de4-5c17-8995-74e9e5e241c6",
+        "74778d31-11e5-5afb-a5bd-0ef97558193e",
+        "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
+        "bd9d9932-4585-57de-8ecb-6c76b53d3a69",
+        "c5d5f9ee-2182-5450-a1ab-bc28963ab67f",
+        "eeff6f48-3d48-592c-9f40-624d8aaca440",
+        "fa68cee1-96d8-5013-a813-74e01f9eb859"
+      ],
+      "inspected_targets": 9,
+      "new_verified_entries": 0,
+      "retained_pending_entries": 9,
+      "scope": "岩手1・島根5・沖縄3の記録した個別資料。全国全件の追加調査完了を意味しない。"
+    },
+    "remaining_unfinished_entries": 10868,
+    "started_at": "2026-11-12T01:50:31.487260+00:00",
+    "status": "in_progress"
+  },
+  "computed_at": "2026-11-12T01:50:31.487260+00:00",
+  "external_source_attempts": [
+    {
+      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+      "checked_at": "2026-11-12T01:50:31.487260+00:00",
+      "dataset_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20250515.csv",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "observation": "公式概要本文でオープンデータの版・ライセンス・指定クレジットを確認。実配布URLは403のため取得停止し、制限を回避せず、このデータセットによる全国照合は未実施。",
+      "retrieved_dataset_records": 0,
+      "source_publisher": "ROIS-DS人文学オープンデータ共同利用センター",
+      "status": "fetch_stopped",
+      "stop_reason": "web tool returned HTTP 403 Forbidden for the linked dataset file and resource index",
+      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/"
+    }
+  ],
   "per_prefecture": {
     "01": {
       "categories": {
@@ -32,9 +74,9 @@
     },
     "03": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 1,
+        "insufficient_evidence_in_inspected_sources": 0,
         "investigation_incomplete": 0,
-        "judgment_required": 0
+        "judgment_required": 1
       },
       "unfinished_entries": 1
     },
@@ -264,9 +306,9 @@
     },
     "32": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 5,
+        "insufficient_evidence_in_inspected_sources": 4,
         "investigation_incomplete": 0,
-        "judgment_required": 0
+        "judgment_required": 1
       },
       "unfinished_entries": 5
     },
@@ -384,9 +426,9 @@
     },
     "47": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 3,
+        "insufficient_evidence_in_inspected_sources": 1,
         "investigation_incomplete": 0,
-        "judgment_required": 0
+        "judgment_required": 2
       },
       "unfinished_entries": 3
     }
@@ -25004,9 +25046,50 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "盛岡市本宮字大宮51",
+          "checked_at": "2026-11-12T01:50:31.487260+00:00",
+          "expected_source_hash": "8e8ac1a17b5eb61e5a4e6a7e5fcbfb2e465642293d514ab7ee6b6c5d4aef3020",
+          "fetched_at": "2026-11-12T01:46:00.937436+00:00",
+          "locator": "h3 大宮神社(おおみやじんじゃ)のモミ と直後の所在地・所有者欄",
+          "name_raw": "大宮神社",
+          "observation": "市文化財の見出しで対象名称の全文読みを確認し、モミの所在地を盛岡市本宮字大宮51、所有者・管理者名を大宮神社と確認。神社庁原文は盛岡市本宮までの掲載で、字名・地番の対応を自動確定しない。",
+          "page_hash": "26e750506e8d5fda16834feff3d6d5431fd8203fff7f5be50e6bcc320252c6b9",
+          "reading_raw": "おおみやじんじゃ",
+          "remaining_requirement": "神社庁実リンク先と市資料の同一施設対応を示す検証可能な根拠。原文住所を切り縮めたり字名を無断補完しない。",
+          "scope": "市文化財ページの該当3掲載枠のみ。公開本文の明示全文読みと所在地を照合したが、採用はしていない。",
+          "source_kind": "government",
+          "source_publisher": "盛岡市",
+          "status": "inspected_identity_binding_required",
+          "title": "盛岡市指定文化財一覧",
+          "url": "https://www.city.morioka.iwate.jp/kanko_sports_bunka/rkeishi_bunkazai/bunkazai/1009358/1009359.html"
+        },
+        {
+          "checked_at": "2026-11-12T01:50:31.487260+00:00",
+          "expected_source_hash": "8e8ac1a17b5eb61e5a4e6a7e5fcbfb2e465642293d514ab7ee6b6c5d4aef3020",
+          "observation": "神社庁の実hrefへの通常アクセスで証明書検証に失敗。検証無効化や代替経路による回避は行わない。",
+          "remaining_requirement": "サイト側の有効なTLS証明書での通常アクセス回復後に公式本文を確認する。",
+          "source_kind": "agency_link_target",
+          "status": "fetch_stopped",
+          "stop_reason": "TLS certificate verify failed: certificate has expired",
+          "url": "https://oomiyajinjya.jp/"
+        },
+        {
+          "checked_at": "2026-11-12T01:50:31.487260+00:00",
+          "expected_source_hash": "8e8ac1a17b5eb61e5a4e6a7e5fcbfb2e465642293d514ab7ee6b6c5d4aef3020",
+          "observation": "検索で見つかった旧市資料URLを実際に開いたが404。検索結果だけを取得本文又は確認済み根拠として扱わない。",
+          "remaining_requirement": "現在公開されている資料又は正規の資料提供先で原本を確認する。",
+          "source_kind": "government",
+          "status": "fetch_stopped",
+          "stop_reason": "HTTP 404",
+          "url": "https://www.city.morioka.iwate.jp/_res/projects/default_project/_page_/001/011/431/motomiya.pdf"
+        }
+      ],
       "address": "盛岡市本宮",
       "agency_listing_url": "https://www.jinjacho.jp/pages/62/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "市資料で全文読みは確認したが、神社庁の町域だけの原住所と字名・地番付き住所の対応確認が必要。実リンク先は証明書期限切れで取得停止。",
       "entry_id": "4340c91d-6de4-5c17-8995-74e9e5e241c6",
       "expected_source_hash": "8e8ac1a17b5eb61e5a4e6a7e5fcbfb2e465642293d514ab7ee6b6c5d4aef3020",
       "facility_id": "a0a9ce46-b8d3-51f6-9bbd-2ba3e2c7c2d6",
@@ -143382,6 +143465,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "松江市八束町入江655番地",
+          "authority_evidence": "本文に島根県神社庁の神社検索・著作権表示があり、神社庁トップページの同じサイト構造と照合。",
+          "checked_at": "2026-11-12T01:46:50.191021+00:00",
+          "expected_source_hash": "68732eb1ed42fe8141b463ef3746b16bf7659ff64e5d3cc8d2fcf669a7859823",
+          "locator": "table.address-detail; 神社名（正称) and immediate ふりがな row; unique 鎮座地 row",
+          "name_raw": "三所神社",
+          "next_links": [
+            "https://www.shimane-jinjacho.or.jp/matsue/5da5eb577ee68108f2d56f69b8f7fc91ba6480bc.html",
+            "https://www.city.matsue.lg.jp/material/files/group/34/itiran.pdf",
+            "https://www.city.matsue.lg.jp/material/files/group/34/sousakuin.pdf"
+          ],
+          "observation": "神社庁詳細の正称・別称ふりがな欄とも空欄。主祭神のふりがなは社名読みとして扱わない。",
+          "observed_alias_name_raw": "",
+          "observed_alias_reading_raw": "",
+          "observed_formal_reading_raw": "",
+          "page_hash": "f4fed9783387567006d35889295e19ba200fae4fe39da4b60452a7a6793c973a",
+          "remaining_requirement": "同じ名称・全所在地の施設について、正称に結び付く全文読みを明示した神社庁・施設公式・行政等の実資料が必要。",
+          "scope": "この神社庁詳細の正称・別称・全文読み欄と全所在地に限定した点検。祭神の読みは名称の読みへ流用しない。",
+          "source_kind": "agency",
+          "status": "inspected_no_adopted_reading",
+          "title": "三所神社 | 島根県神社庁",
+          "url": "https://www.shimane-jinjacho.or.jp/matsue/5da5eb577ee68108f2d56f69b8f7fc91ba6480bc.html"
+        }
+      ],
       "address": "松江市八束町入江655番地",
       "agency_listing_url": "https://www.shimane-jinjacho.or.jp/matsue/index.html",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -143400,9 +143509,61 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "雲南市木次町西日登1524番地1",
+          "authority_evidence": "本文に島根県神社庁の神社検索・著作権表示があり、神社庁トップページの同じサイト構造と照合。",
+          "checked_at": "2026-11-12T01:46:52.242052+00:00",
+          "expected_source_hash": "e12038e9bbf7aec96fed3eb54d6e9b9d1e24d07f3e0e0334e2ff6161243afd9b",
+          "locator": "table.address-detail; 神社名（正称) and immediate ふりがな row; unique 鎮座地 row",
+          "name_raw": "八口神社",
+          "next_links": [
+            "https://www.shimane-jinjacho.or.jp/unnan/6ed78feeffc23de11e10404a92a11bba01c45799.html",
+            "https://www.city.unnan.shimane.jp/unnan/kankou/spot/eigaunnan/local07.html"
+          ],
+          "observation": "正称ふりがなは空欄。空の別称名に続くふりがな欄にやぐちじんじゃ。正称への移動は自明と扱わない。いずもる本文は西日登・印瀬の壺神と全文読みを併記するが全地番なし、運営公式性も行政とは未確認。",
+          "observed_alias_name_raw": "",
+          "observed_alias_reading_raw": "やぐちじんじゃ",
+          "observed_formal_reading_raw": "",
+          "page_hash": "c9ea466cc708cd4eb34d1f75a4dc96cef3d18e1d14c3f509a65658573fa36a7a",
+          "remaining_requirement": "正称に対する独立した一次資料の全文読みと全所在地・神社庁詳細への同定根拠。現在の別称欄読みを正称へ転記しない。",
+          "scope": "この神社庁詳細の正称・別称・全文読み欄と全所在地に限定した点検。祭神の読みは名称の読みへ流用しない。",
+          "source_kind": "agency",
+          "status": "inspected_no_adopted_reading",
+          "title": "八口神社 | 島根県神社庁",
+          "url": "https://www.shimane-jinjacho.or.jp/unnan/6ed78feeffc23de11e10404a92a11bba01c45799.html"
+        },
+        {
+          "checked_at": "2026-11-12T01:48:25.985752+00:00",
+          "excerpt": "それは西日登にある八口神社境内にある印瀬の壺神（いんぜのつぼがみ）である。 / 八口神社(やぐちじんじゃ)",
+          "expected_source_hash": "e12038e9bbf7aec96fed3eb54d6e9b9d1e24d07f3e0e0334e2ff6161243afd9b",
+          "inspection_method": "web open actual body",
+          "limitation": "番地不掲載。運営説明はミュージアムいちばた。njd.http取得時robotsがHTMLでpolicy unknownとなり取得停止。page_hashなし。",
+          "remaining_requirement": "正称に対する独立した一次資料の全文読みと全所在地・神社庁詳細への同定根拠。現在の別称欄読みを正称へ転記しない。",
+          "scope": "webツールで実閲覧した本文のみ。自動取得はrobotsの解釈不能で停止。行政公式資料とは分類しない。",
+          "source_kind": "secondary_reference",
+          "status": "secondary_reference_not_adopted",
+          "title": "ヤマタノオロチ伝承（その３） | いずもる",
+          "url": "https://www.izm.gr.jp/izumoru/readmore.php?gid=251&tno=-1"
+        },
+        {
+          "checked_at": "2026-11-12T01:48:25.985752+00:00",
+          "excerpt": "「いずもる」ミュージアムいちばた",
+          "expected_source_hash": "e12038e9bbf7aec96fed3eb54d6e9b9d1e24d07f3e0e0334e2ff6161243afd9b",
+          "inspection_method": "web open actual body",
+          "limitation": "行政発行とは確認できない。",
+          "remaining_requirement": "正称に対する独立した一次資料の全文読みと全所在地・神社庁詳細への同定根拠。現在の別称欄読みを正称へ転記しない。",
+          "scope": "webツールで実閲覧した本文のみ。自動取得はrobotsの解釈不能で停止。行政公式資料とは分類しない。",
+          "source_kind": "secondary_reference",
+          "status": "secondary_reference_not_adopted",
+          "title": "いずもるとは?",
+          "url": "https://www.izm.gr.jp/izumoru/about.html"
+        }
+      ],
       "address": "雲南市木次町西日登1524番地1",
       "agency_listing_url": "https://www.shimane-jinjacho.or.jp/unnan/index.html",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "正称ふりがなは空欄で、名前空欄の別称ふりがなにだけ候補がある。正称への読みの対応を追加資料で確認する必要がある。",
       "entry_id": "74778d31-11e5-5afb-a5bd-0ef97558193e",
       "expected_source_hash": "e12038e9bbf7aec96fed3eb54d6e9b9d1e24d07f3e0e0334e2ff6161243afd9b",
       "facility_id": "0caddb5f-73d8-5852-87d8-d8284936c388",
@@ -143418,6 +143579,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "松江市東出雲町下意東2852番地",
+          "authority_evidence": "本文に島根県神社庁の神社検索・著作権表示があり、神社庁トップページの同じサイト構造と照合。",
+          "checked_at": "2026-11-12T01:46:54.289638+00:00",
+          "expected_source_hash": "809abbdb3dcc5d0a20a49fc5eabc2441c69c251139c9866f030306eedd4a2b6b",
+          "locator": "table.address-detail; 神社名（正称) and immediate ふりがな row; unique 鎮座地 row",
+          "name_raw": "客神社",
+          "next_links": [
+            "https://www.shimane-jinjacho.or.jp/matsue/8a150dbd5a21bd96262a63eef899e5f85d6eb62e.html",
+            "https://www.city.matsue.lg.jp/material/files/group/34/itiran.pdf",
+            "https://www.city.matsue.lg.jp/material/files/group/34/sousakuin.pdf"
+          ],
+          "observation": "神社庁詳細の正称・別称ふりがな欄とも空欄。主祭神のふりがなは社名読みとして扱わない。",
+          "observed_alias_name_raw": "",
+          "observed_alias_reading_raw": "",
+          "observed_formal_reading_raw": "",
+          "page_hash": "0dcf5563daa0827e973dccf99e1d4d134b469b7a94d7c7cd7fd557fe2ca4b4d1",
+          "remaining_requirement": "同じ名称・全所在地の施設について、正称に結び付く全文読みを明示した神社庁・施設公式・行政等の実資料が必要。",
+          "scope": "この神社庁詳細の正称・別称・全文読み欄と全所在地に限定した点検。祭神の読みは名称の読みへ流用しない。",
+          "source_kind": "agency",
+          "status": "inspected_no_adopted_reading",
+          "title": "客神社 | 島根県神社庁",
+          "url": "https://www.shimane-jinjacho.or.jp/matsue/8a150dbd5a21bd96262a63eef899e5f85d6eb62e.html"
+        }
+      ],
       "address": "松江市東出雲町下意東2852番地",
       "agency_listing_url": "https://www.shimane-jinjacho.or.jp/matsue/index.html",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -143436,6 +143623,31 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "益田市水分町1番地6",
+          "authority_evidence": "本文に島根県神社庁の神社検索・著作権表示があり、神社庁トップページの同じサイト構造と照合。",
+          "checked_at": "2026-11-12T01:46:56.352361+00:00",
+          "expected_source_hash": "e2cb1199c6dab71d5648cda73d1572eafe511843cdf6a352405d8e63c8fbac12",
+          "locator": "table.address-detail; 神社名（正称) and immediate ふりがな row; unique 鎮座地 row",
+          "name_raw": "水分神社",
+          "next_links": [
+            "https://www.shimane-jinjacho.or.jp/masuda/9a454a3f6648074fa7a610a2ee56774204cadd68.html",
+            "https://masudashi.com/wp-content/uploads/2025/09/4a4577f1f87324791b5a4acc0fce8773.pdf"
+          ],
+          "observation": "神社庁詳細の正称・別称ふりがな欄とも空欄。主祭神のふりがなは社名読みとして扱わない。",
+          "observed_alias_name_raw": "",
+          "observed_alias_reading_raw": "",
+          "observed_formal_reading_raw": "",
+          "page_hash": "40f46cb543f48178d0ba16332ba1cd2afccd620dda8776f2b897f28ceec9a71a",
+          "remaining_requirement": "同じ名称・全所在地の施設について、正称に結び付く全文読みを明示した神社庁・施設公式・行政等の実資料が必要。",
+          "scope": "この神社庁詳細の正称・別称・全文読み欄と全所在地に限定した点検。祭神の読みは名称の読みへ流用しない。",
+          "source_kind": "agency",
+          "status": "inspected_no_adopted_reading",
+          "title": "水分神社 | 島根県神社庁",
+          "url": "https://www.shimane-jinjacho.or.jp/masuda/9a454a3f6648074fa7a610a2ee56774204cadd68.html"
+        }
+      ],
       "address": "益田市水分町1番地6",
       "agency_listing_url": "https://www.shimane-jinjacho.or.jp/masuda/index.html",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -143454,6 +143666,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "松江市東出雲町下意東2818番地",
+          "authority_evidence": "本文に島根県神社庁の神社検索・著作権表示があり、神社庁トップページの同じサイト構造と照合。",
+          "checked_at": "2026-11-12T01:46:58.423562+00:00",
+          "expected_source_hash": "d4a3f258b66742e7a6c6c24d90300ccaba2f26ea92ec22093bb5e9afbd168c85",
+          "locator": "table.address-detail; 神社名（正称) and immediate ふりがな row; unique 鎮座地 row",
+          "name_raw": "素鵞神社",
+          "next_links": [
+            "https://www.shimane-jinjacho.or.jp/matsue/83d34fbe192c934fe89c977797c36cba09567314.html",
+            "https://www.city.matsue.lg.jp/material/files/group/34/itiran.pdf",
+            "https://www.city.matsue.lg.jp/material/files/group/34/sousakuin.pdf"
+          ],
+          "observation": "神社庁詳細の正称・別称ふりがな欄とも空欄。主祭神のふりがなは社名読みとして扱わない。",
+          "observed_alias_name_raw": "",
+          "observed_alias_reading_raw": "",
+          "observed_formal_reading_raw": "",
+          "page_hash": "1bf44e5b193417e523f5ef6e464c2b1e14d321e31f4685afefc4c5f30c86919a",
+          "remaining_requirement": "同じ名称・全所在地の施設について、正称に結び付く全文読みを明示した神社庁・施設公式・行政等の実資料が必要。",
+          "scope": "この神社庁詳細の正称・別称・全文読み欄と全所在地に限定した点検。祭神の読みは名称の読みへ流用しない。",
+          "source_kind": "agency",
+          "status": "inspected_no_adopted_reading",
+          "title": "素鵞神社 | 島根県神社庁",
+          "url": "https://www.shimane-jinjacho.or.jp/matsue/83d34fbe192c934fe89c977797c36cba09567314.html"
+        }
+      ],
       "address": "松江市東出雲町下意東2818番地",
       "agency_listing_url": "https://www.shimane-jinjacho.or.jp/matsue/index.html",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -230441,6 +230679,69 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "checked_at": "2026-11-12T01:48:32.958002+00:00",
+          "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+          "fetched_at": "2026-11-12T01:46:47.485847+00:00",
+          "next_links": [
+            "https://name.sijisuru.com/helps/regulation",
+            "https://name.sijisuru.com/helps/menseki",
+            "https://name.sijisuru.com/inquiry/owner"
+          ],
+          "observation": "神社庁掲載の実href。公式本文で名称・同住所を確認したが全文かな読みはない。",
+          "page_hash": "7cf5bb1759e4ddfba0a5496cb0223df6b1b8e3b614e4a79c14a699116c231f40",
+          "remaining_requirement": "名称・全文読み・全所在地と読みの一次出典又は検証可能な編纂根拠を確認する。",
+          "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+          "source_kind": "official_shrine",
+          "status": "inspected_no_adopted_reading",
+          "title": "安里八幡宮公式サイト",
+          "url": "http://asatohachimangu.net"
+        },
+        {
+          "checked_at": "2026-11-12T01:48:32.958002+00:00",
+          "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+          "fetched_at": "2026-11-12T01:46:35.045787+00:00",
+          "next_links": [
+            "https://name.sijisuru.com/helps/regulation",
+            "https://name.sijisuru.com/helps/menseki",
+            "https://name.sijisuru.com/inquiry/owner"
+          ],
+          "observation": "神社庁本文に実リンク・名称対応・全住所あり。本文に全文かな読みなし。",
+          "page_hash": "14feb093ed0837aeaa4068dea2364db59c2f88c28af3fef66a89d2dd829f9442",
+          "remaining_requirement": "名称・全文読み・全所在地と読みの一次出典又は検証可能な編纂根拠を確認する。",
+          "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+          "source_kind": "official_agency",
+          "status": "inspected_no_adopted_reading",
+          "title": "沖縄県神社庁 八幡宮",
+          "url": "https://www.jinjacho.naminouegu.jp/asato.html"
+        },
+        {
+          "address_raw": "沖縄県那覇市安里三丁目19番14号",
+          "authority_status": "non_official_secondary_directory",
+          "candidate_status": "needs_review",
+          "checked_at": "2026-11-12T01:48:32.958002+00:00",
+          "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+          "fetched_at": "2026-11-12T01:47:21.470904+00:00",
+          "locator": "沖縄県 神社一覧 > 八幡宮の見出しおよび直下住所",
+          "name_raw": "八幡宮",
+          "next_links": [
+            "https://name.sijisuru.com/helps/regulation",
+            "https://name.sijisuru.com/helps/menseki",
+            "https://name.sijisuru.com/inquiry/owner"
+          ],
+          "observation": "名称と全文読みの組合せを採用根拠として確定していない。",
+          "page_hash": "c91c814954f12df4dc6dfd74c5d502989ed48384b93bf353c93ca867ae415140",
+          "provenance_limitation": "掲載本文は全文読み・同住所を明示するが、読みの一次資料・編纂方法は確認できない。公式資料とは分類しない。",
+          "reading_raw": "はちまんぐう",
+          "remaining_requirement": "名称・全文読み・全所在地と読みの一次出典又は検証可能な編纂根拠を確認する。",
+          "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+          "source_kind": "article",
+          "status": "secondary_reading_candidate_not_adopted",
+          "title": "沖縄県 神社一覧 | なまえさあち",
+          "url": "https://name.sijisuru.com/jinja/lists?pref=%E6%B2%96%E7%B8%84%E7%9C%8C"
+        }
+      ],
       "address": "沖縄県那覇市安里3-19-14",
       "agency_listing_url": "https://jinjacho.naminouegu.jp/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -230459,9 +230760,85 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "checked_at": "2026-11-12T01:48:32.958002+00:00",
+          "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+          "fetched_at": "2026-11-12T01:46:49.668372+00:00",
+          "next_links": [
+            "http://miyako-jinja.com/about.html",
+            "http://miyako-jinja.com/map.html",
+            "https://www.jinjahoncho.or.jp/sys/10609",
+            "https://www.jinjahoncho.or.jp/sys/11161"
+          ],
+          "observation": "神社庁掲載の実href。公式本文を確認。本文には全文かな読みなし。",
+          "page_hash": "79d2059d6ba2334745554b9117afd67712336f3ad45deb3131b0c2a4997e8f52",
+          "remaining_requirement": "公式資料の全文読みをアクセス方針確認後に取得・検証; 神社庁原文の平良市西里と公式の平良字西里の相違を、根拠ある補正手順で解決。原文は保持。",
+          "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+          "source_kind": "official_shrine",
+          "status": "inspected_no_adopted_reading",
+          "title": "宮古神社 公式ホームページ",
+          "url": "http://miyako-jinja.com"
+        },
+        {
+          "checked_at": "2026-11-12T01:48:32.958002+00:00",
+          "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+          "fetched_at": "2026-11-12T01:47:27.704192+00:00",
+          "next_links": [
+            "http://miyako-jinja.com/about.html",
+            "http://miyako-jinja.com/map.html",
+            "https://www.jinjahoncho.or.jp/sys/10609",
+            "https://www.jinjahoncho.or.jp/sys/11161"
+          ],
+          "observation": "神社庁原文 宮古島市平良市西里5-1 とは平良市/平良字が相違。電話・FAXは一覧と同一。誤記の可能性のみ、勝手に住所同一化しない。",
+          "page_hash": "0ed4c04e7a90f74b4c10dcb5eb56f1b8d9365ca69ac684ef58f57373f65f89e8",
+          "remaining_requirement": "公式資料の全文読みをアクセス方針確認後に取得・検証; 神社庁原文の平良市西里と公式の平良字西里の相違を、根拠ある補正手順で解決。原文は保持。",
+          "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+          "source_kind": "official_shrine",
+          "status": "inspected_no_adopted_reading",
+          "title": "宮古神社 地図・連絡先",
+          "url": "http://miyako-jinja.com/map.html"
+        },
+        {
+          "checked_at": "2026-11-12T01:48:32.958002+00:00",
+          "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+          "fetched_at": "2026-11-12T01:47:21.538828+00:00",
+          "next_links": [
+            "http://miyako-jinja.com/about.html",
+            "http://miyako-jinja.com/map.html",
+            "https://www.jinjahoncho.or.jp/sys/10609",
+            "https://www.jinjahoncho.or.jp/sys/11161"
+          ],
+          "observation": "取得本文を確認したが宮古神社の全文かな読みなし。",
+          "page_hash": "f3214b3dcbf9551b905a41335fa0fa0bf302e3250a5d5e0f5ac8a9bc5dec476c",
+          "remaining_requirement": "公式資料の全文読みをアクセス方針確認後に取得・検証; 神社庁原文の平良市西里と公式の平良字西里の相違を、根拠ある補正手順で解決。原文は保持。",
+          "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+          "source_kind": "official_shrine",
+          "status": "inspected_no_adopted_reading",
+          "title": "宮古神社について",
+          "url": "http://miyako-jinja.com/about.html"
+        },
+        {
+          "checked_at": "2026-11-12T01:48:32.958002+00:00",
+          "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+          "next_links": [
+            "http://miyako-jinja.com/about.html",
+            "http://miyako-jinja.com/map.html",
+            "https://www.jinjahoncho.or.jp/sys/10609",
+            "https://www.jinjahoncho.or.jp/sys/11161"
+          ],
+          "observation": "Client robots HTTP503により取得停止。検索及びweb表示では宮古神社（みやこじんじゃ）と沖縄県宮古島市平良字西里5-1が示されたが、採用資料としない。",
+          "remaining_requirement": "公式資料の全文読みをアクセス方針確認後に取得・検証; 神社庁原文の平良市西里と公式の平良字西里の相違を、根拠ある補正手順で解決。原文は保持。",
+          "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+          "status": "fetch_stopped",
+          "stop_reason": "HTTP 503: https://www.jinjahoncho.or.jp/robots.txt",
+          "url": "https://www.jinjahoncho.or.jp/sys/10609"
+        }
+      ],
       "address": "宮古島市平良市西里5-1",
       "agency_listing_url": "https://jinjacho.naminouegu.jp/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "神社庁一覧の所在地と、実リンク先の施設公式・神社庁詳細の所在地が相違する。同一性の根拠と全文読みを確認するまで保留。",
       "entry_id": "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
       "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
       "facility_id": "46c2150a-4722-56d4-a339-4492745087a6",
@@ -230486,9 +230863,30 @@
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
+      "additional_source_reviews": [
+        {
+          "checked_at": "2026-11-12T01:48:32.958002+00:00",
+          "expected_source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+          "fetched_at": "2026-11-12T01:46:47.553357+00:00",
+          "next_links": [
+            "https://jinjacho.naminouegu.jp/okinawajinja.html",
+            "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/014/071/r70331shukyouhoujin.pdf",
+            "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E7%A5%9E%E7%A4%BE"
+          ],
+          "observation": "神社庁一覧の沖縄神社実リンク。住所は一覧の若狭1-25-11と相違。波上宮社務所の連絡先は示されるが若狭住所への施設同一化を確定しない。全文かな読みなし。",
+          "page_hash": "38fc3d483c3fa6d7d734849343e6ec85d5966083af23dfd4e8d11487f6e1577b",
+          "remaining_requirement": "一覧若狭1-25-11が連絡先住所であることと個別神社鳥堀町5との同一性を記録可能な直接根拠; 同定した施設に対する全文かな読みの実資料",
+          "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+          "source_kind": "official_agency",
+          "status": "inspected_no_adopted_reading",
+          "title": "沖縄県神社庁 沖縄神社",
+          "url": "https://jinjacho.naminouegu.jp/okinawajinja.html"
+        }
+      ],
       "address": "沖縄県那覇市若狭1-25-11",
       "agency_listing_url": "https://jinjacho.naminouegu.jp/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "神社庁一覧の所在地と、実リンク先の施設公式・神社庁詳細の所在地が相違する。同一性の根拠と全文読みを確認するまで保留。",
       "entry_id": "bd9d9932-4585-57de-8ecb-6c76b53d3a69",
       "expected_source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
       "facility_id": "6f014bd6-dc0a-5975-a5c3-696ee935e13c",
@@ -233633,9 +234031,9 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10652,
+      "insufficient_evidence_in_inspected_sources": 10648,
       "investigation_incomplete": 0,
-      "judgment_required": 216
+      "judgment_required": 220
     },
     "distinct_surfaces": 4399,
     "unfinished_entries": 10868
