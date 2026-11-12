@@ -9090,26 +9090,41 @@
         "raw_csv_records": 500,
         "retained_pending_entries": 199,
         "scope": "北杜市72施設行・121現保留と、大津市344施設行（CSV428レコード中空84）・78現保留の限定照合。正式名一致0。県内全施設・全国全保留の解決完了を意味しない。"
+      },
+      {
+        "checked_at": "2026-11-12T10:22:32.079302+00:00",
+        "entry_ids": [
+          "0678dd58-874d-5b34-953d-cd3edd08d000",
+          "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf",
+          "6256b948-3134-5dbc-8446-710932fd8d9a",
+          "7727dbe3-5594-51ea-ae9e-eeab0126e428",
+          "841c0080-633c-5ac1-8bb1-1b12e21514a2",
+          "91bbc6a5-1bfe-5641-8e19-72cee9641b57",
+          "d75f237b-fadb-56b2-a6ad-78475c0762e1",
+          "f3a83df3-7cd0-5589-b132-9f4783ede941"
+        ],
+        "inspected_targets": 7,
+        "named_facility_rows": 19,
+        "new_verified_entries": 0,
+        "retained_pending_entries": 8,
+        "scope": "北斗・恵庭の観光施設19名称行と7登録を照合し、別に北海道神宮の候補サイト1件はTLSホスト名検証失敗で未取得停止。全国調査を継続。",
+        "unfetched_target_entries": 1
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-12T10:22:32.079302+00:00",
+      "checked_at": "2026-11-12T10:30:20.528024+00:00",
+      "data_rows": 103,
       "entry_ids": [
         "0678dd58-874d-5b34-953d-cd3edd08d000",
-        "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf",
-        "6256b948-3134-5dbc-8446-710932fd8d9a",
-        "7727dbe3-5594-51ea-ae9e-eeab0126e428",
-        "841c0080-633c-5ac1-8bb1-1b12e21514a2",
-        "91bbc6a5-1bfe-5641-8e19-72cee9641b57",
-        "d75f237b-fadb-56b2-a6ad-78475c0762e1",
-        "f3a83df3-7cd0-5589-b132-9f4783ede941"
+        "0b33f3fd-38f2-5fd6-b4e0-b64f3aa34f0b",
+        "580ce71a-5e3f-5267-abfe-7216148350bf",
+        "6a409d4c-d40e-5787-8225-d22deb2eb275",
+        "cff45b90-22b0-5d6f-a1a9-c4e05c7e0ce0"
       ],
-      "inspected_targets": 7,
-      "named_facility_rows": 19,
+      "inspected_targets": 5,
       "new_verified_entries": 0,
-      "retained_pending_entries": 8,
-      "scope": "北斗・恵庭の観光施設19名称行と7登録を照合し、別に北海道神宮の候補サイト1件はTLSホスト名検証失敗で未取得停止。全国調査を継続。",
-      "unfetched_target_entries": 1
+      "retained_pending_entries": 5,
+      "scope": "都心部観光スポットCSV103行と、原住所が札幌市で始まる現保留5登録だけ。札幌護國神社は全文かながあるが全住所差が残り、残4登録は名称欄一致なし。神宮頓宮・本陣狸大明神社の行を北海道神宮・他の保留神社へ流用しない。"
     },
     "remaining_unfinished_entries": 10600,
     "resolved_entry_ids": [
@@ -9385,7 +9400,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-12T10:22:32.079302+00:00",
+  "computed_at": "2026-11-12T10:30:20.528024+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -52804,6 +52819,77 @@
       "source_publisher": "北海道神宮の候補サイト（本文未取得）",
       "status": "stopped_tls_hostname_mismatch",
       "url": "https://www.hokkaidojingu.or.jp/kids/kids_2.html"
+    },
+    {
+      "attempt_id": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+      "authority_reference": {
+        "fetched_at": "2026-11-12T10:29:06.577717+00:00",
+        "observation": "市の観光ページ本文から、当該観光スポット一覧データセットへの実リンクと札幌市ICT活用プラットフォームの表示を確認。",
+        "official_dataset_href": "https://ckan.pf-sapporo.jp/dataset/sapporo_kankou_spot",
+        "page_hash": "abe84514d61d989cdb699d4fcdd76365cc40d5da8ca6cead4b40d0ab334cc933",
+        "source_publisher": "札幌市",
+        "url": "https://www.city.sapporo.jp/keizai/kanko/tourist/buraritetyo.html"
+      },
+      "checked_at": "2026-11-12T10:30:20.528024+00:00",
+      "csv_reference": {
+        "csv_records": 103,
+        "encoding": "utf-8-sig",
+        "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+        "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+        "source_kind": "municipal_open_data",
+        "source_publisher": "札幌市",
+        "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+      },
+      "data_rows": 103,
+      "dataset_reference": {
+        "fetched_at": "2026-11-12T10:24:47.024506+00:00",
+        "page_hash": "87d9d45d2b7baaab77ab4019bc36ab6e1a33ec658cce2ede1afc3f81a700a53a",
+        "url": "https://ckan.pf-sapporo.jp/dataset/sapporo_kankou_spot"
+      },
+      "exact_name_rows": 1,
+      "native_agency_profile_reference": {
+        "address_raw": "札幌市中央区南15条西5丁目1番地",
+        "comparison_scope": "原一覧の記録済み施設実URLと名称・所在地を個別ページへ照合。旧一覧/旧詳細の本文全体差分を確認したという意味ではない。",
+        "fetched_at": "2026-11-12T10:27:04.831412+00:00",
+        "locator": "主対象h3「札幌護國神社」、dl.type-01内のp.address。神社庁事務所のfooter住所を除外。",
+        "name_raw": "札幌護國神社",
+        "native_source_id": "https://hokkaidojinjacho.jp/%e6%9c%ad%e5%b9%8c%e8%ad%b7%e5%9c%8b%e7%a5%9e%e7%a4%be/",
+        "original_index_locator": ".lineup .block[9]",
+        "original_index_page_hash": "5bb133e22bcae502f43088b2cafaa6f5934adee4443cdfe84774d8ced71ea506",
+        "original_index_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/",
+        "page_hash": "6990b2bf5cf7e1dbd8ef1d26c66ad4f28d4fc71f90de2ed9208f3cde2dfea3c5",
+        "url": "https://hokkaidojinjacho.jp/%e6%9c%ad%e5%b9%8c%e8%ad%b7%e5%9c%8b%e7%a5%9e%e7%a4%be/"
+      },
+      "new_verified_entries": 0,
+      "observation": "市公式観光ページの実リンクと個別CC BY4.0表示を確認してCSVのみ取得。画像は取得しない。HTB/JTB関連2資料は個別ライセンス未提示でファイル未取得。取得本文・CSV全体・無関係な連絡先・個人情報・キャッシュは保存せず、原文・施設ID・補正・判断を保持。",
+      "retained_pending_entries": 5,
+      "scope": "都心部観光スポットCSV103行と、原住所が札幌市で始まる現保留5登録だけ。札幌護國神社は全文かながあるが全住所差が残り、残4登録は名称欄一致なし。神宮頓宮・本陣狸大明神社の行を北海道神宮・他の保留神社へ流用しない。",
+      "source_kind": "municipal_open_data",
+      "source_publisher": "札幌市",
+      "status": "licensed_city_csv_inspected_parcel_difference_held",
+      "target_entries": 5,
+      "unacquired_third_party_datasets": [
+        {
+          "data_files_acquired": 0,
+          "dataset_creator_raw": "北海道テレビ放送株式会社",
+          "fetched_at": "2026-11-12T10:24:57.347032+00:00",
+          "observation": "本文の個別ライセンス欄が未提示のためCSV・画像を取得せず、施設名・読み・所在地を辞書の根拠に転記しない。プラットフォーム掲載組織の札幌市と作成者の第三者団体を区別。",
+          "page_hash": "e8f2735dbff2fd631ea087dc4be9faa5c9e341477a53169ee861e84db2d8aa7e",
+          "status": "metadata_inspected_license_unstated_resource_not_acquired",
+          "url": "https://ckan.pf-sapporo.jp/dataset/htb"
+        },
+        {
+          "data_files_acquired": 0,
+          "dataset_creator_raw": "一般社団法人さっぽろイノベーションラボ",
+          "fetched_at": "2026-11-12T10:25:07.680706+00:00",
+          "observation": "本文の個別ライセンス欄が未提示のためCSV・画像を取得せず、施設名・読み・所在地を辞書の根拠に転記しない。プラットフォーム掲載組織の札幌市と作成者の第三者団体を区別。",
+          "page_hash": "d6c766978fe1f1456d887e3beba08a1bccacdd9ce630152762c9464a0cd60ad8",
+          "status": "metadata_inspected_license_unstated_resource_not_acquired",
+          "url": "https://ckan.pf-sapporo.jp/dataset/r2-navi-jtb"
+        }
+      ]
     }
   ],
   "per_prefecture": {
@@ -53672,6 +53758,28 @@
           "source_kind": "candidate_shrine_self_site",
           "status": "stopped_tls_hostname_mismatch",
           "url": "https://www.hokkaidojingu.or.jp/kids/kids_2.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T10:30:20.528024+00:00",
+          "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+          "exact_name_rows": [],
+          "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+          "observation": "この都心部観光スポットCSVの名称欄に原神社名の一致行がないため、当該登録の全文読み・全所在地の根拠には採用しない。市の全観光資料・全神社又は全国全保留の調査完了を意味しない。",
+          "reference": {
+            "csv_records": 103,
+            "encoding": "utf-8-sig",
+            "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+            "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+            "source_kind": "municipal_open_data",
+            "source_publisher": "札幌市",
+            "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+          },
+          "source_kind": "municipal_open_data",
+          "source_publisher": "札幌市",
+          "status": "bounded_tourism_csv_not_adopted"
         }
       ],
       "address": "札幌市中央区宮ケ丘474番地",
@@ -53902,6 +54010,60 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T10:30:20.528024+00:00",
+          "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+          "exact_name_rows": [
+            {
+              "address_raw": "北海道札幌市中央区南15条西5丁目1−3",
+              "csv_row": 19,
+              "name_raw": "札幌護國神社",
+              "reading_raw": "サッポロゴコクジンジャ"
+            }
+          ],
+          "expected_source_hash": "2fa460decca55b1389dca46ba33f8653feef6c73815d590d19110a3a97aa857f",
+          "observation": "CSVに同正式名と独立全文かなはあるが、原所在地は南15条西5丁目1番地、CSVは南15条西5丁目1−3。後続番号3の差を推定削除せず保留。同じ地域・同名だけで全地番の対応を確定しない。",
+          "reference": {
+            "csv_records": 103,
+            "encoding": "utf-8-sig",
+            "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+            "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+            "source_kind": "municipal_open_data",
+            "source_publisher": "札幌市",
+            "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+          },
+          "source_kind": "municipal_open_data",
+          "source_publisher": "札幌市",
+          "status": "bounded_tourism_csv_not_adopted"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T10:30:20.528024+00:00",
+          "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+          "expected_source_hash": "2fa460decca55b1389dca46ba33f8653feef6c73815d590d19110a3a97aa857f",
+          "observation": "原一覧からの実リンク先の主対象名・所在地を確認したが、所在地は原と同じ1番地であり、市CSVの1−3との対応を説明する資料ではない。原全住所・施設IDを保持し、後続番号を補完又は削除しない。",
+          "reference": {
+            "address_raw": "札幌市中央区南15条西5丁目1番地",
+            "comparison_scope": "原一覧の記録済み施設実URLと名称・所在地を個別ページへ照合。旧一覧/旧詳細の本文全体差分を確認したという意味ではない。",
+            "fetched_at": "2026-11-12T10:27:04.831412+00:00",
+            "locator": "主対象h3「札幌護國神社」、dl.type-01内のp.address。神社庁事務所のfooter住所を除外。",
+            "name_raw": "札幌護國神社",
+            "native_source_id": "https://hokkaidojinjacho.jp/%e6%9c%ad%e5%b9%8c%e8%ad%b7%e5%9c%8b%e7%a5%9e%e7%a4%be/",
+            "original_index_locator": ".lineup .block[9]",
+            "original_index_page_hash": "5bb133e22bcae502f43088b2cafaa6f5934adee4443cdfe84774d8ced71ea506",
+            "original_index_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/",
+            "page_hash": "6990b2bf5cf7e1dbd8ef1d26c66ad4f28d4fc71f90de2ed9208f3cde2dfea3c5",
+            "url": "https://hokkaidojinjacho.jp/%e6%9c%ad%e5%b9%8c%e8%ad%b7%e5%9c%8b%e7%a5%9e%e7%a4%be/"
+          },
+          "source_kind": "agency",
+          "source_publisher": "北海道神社庁",
+          "status": "native_profile_confirms_original_address_not_csv_branch"
+        }
+      ],
       "address": "札幌市中央区南15条西5丁目1番地",
       "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -57217,6 +57379,28 @@
           "source_kind": "article",
           "source_publisher": "神社と古事記（非公式二次資料）",
           "status": "inspected_independent_article_not_adopted"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T10:30:20.528024+00:00",
+          "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+          "exact_name_rows": [],
+          "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
+          "observation": "この都心部観光スポットCSVの名称欄に原神社名の一致行がないため、当該登録の全文読み・全所在地の根拠には採用しない。市の全観光資料・全神社又は全国全保留の調査完了を意味しない。",
+          "reference": {
+            "csv_records": 103,
+            "encoding": "utf-8-sig",
+            "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+            "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+            "source_kind": "municipal_open_data",
+            "source_publisher": "札幌市",
+            "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+          },
+          "source_kind": "municipal_open_data",
+          "source_publisher": "札幌市",
+          "status": "bounded_tourism_csv_not_adopted"
         }
       ],
       "address": "札幌市中央区南9条西4丁目6番20号",
@@ -57998,6 +58182,28 @@
           "source_publisher": "サポサツ（個人運営）",
           "status": "inspected_not_adopted",
           "url": "https://kokorosearch.net/chie/life/sapporodondoyaki.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T10:30:20.528024+00:00",
+          "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+          "exact_name_rows": [],
+          "expected_source_hash": "2619057a661f8ec773e95734a4e47e3ce52489182208d3287d7ca393b4394ee4",
+          "observation": "この都心部観光スポットCSVの名称欄に原神社名の一致行がないため、当該登録の全文読み・全所在地の根拠には採用しない。市の全観光資料・全神社又は全国全保留の調査完了を意味しない。",
+          "reference": {
+            "csv_records": 103,
+            "encoding": "utf-8-sig",
+            "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+            "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+            "source_kind": "municipal_open_data",
+            "source_publisher": "札幌市",
+            "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+          },
+          "source_kind": "municipal_open_data",
+          "source_publisher": "札幌市",
+          "status": "bounded_tourism_csv_not_adopted"
         }
       ],
       "address": "札幌市南区石山2条3丁目254番地",
@@ -63209,6 +63415,30 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T10:30:20.528024+00:00",
+          "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+          "exact_name_rows": [],
+          "expected_source_hash": "9cd5e42cd7f99176d0ecfb36db0ffcf5052a7aff16eb1a2abe5b52d3a6d0f897",
+          "observation": "この都心部観光スポットCSVの名称欄に原神社名の一致行がないため、当該登録の全文読み・全所在地の根拠には採用しない。市の全観光資料・全神社又は全国全保留の調査完了を意味しない。",
+          "reference": {
+            "csv_records": 103,
+            "encoding": "utf-8-sig",
+            "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+            "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+            "source_kind": "municipal_open_data",
+            "source_publisher": "札幌市",
+            "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+          },
+          "source_kind": "municipal_open_data",
+          "source_publisher": "札幌市",
+          "status": "bounded_tourism_csv_not_adopted"
+        }
+      ],
       "address": "札幌市南区定山渓温泉3丁目218番地",
       "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
       "category": "insufficient_evidence_in_inspected_sources",
