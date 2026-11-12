@@ -210956,13 +210956,16 @@
     },
     "c82acb82-b985-58f4-b642-62db72dd5944": {
       "changes": {
-        "reading": "おおさかはちまんじんじや"
+        "reading": "おうさかはちまんじんじゃ"
       },
       "expected_source_hash": "164bbc55f46fa6b960474e0c75e9aa52de326cc1c2b7602758d5b703c0af269f",
       "facility_id": "23cc5f40-2e5d-5a92-b232-3893baefb53b",
       "identity_match": {
         "agency_address": "大山町松河原233",
-        "agency_name": "逢坂八幡神社"
+        "agency_name": "逢坂八幡神社",
+        "effective_address": "大山町松河原233",
+        "reference_address": "鳥取県西伯郡大山町松河原２３３番地",
+        "reference_name": "逢坂八幡神社"
       },
       "original": {
         "address": "大山町松河原233",
@@ -210970,23 +210973,197 @@
         "name_raw": "逢坂八幡神社",
         "reading_raw": "おおさかはちまんじんじや"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: large_ya_orthography_requires_explicit_evidence",
+      "reason": "既存の要確認判断を、独立する国税庁の登録全文フリガナ「オウサカハチマンジンジャ」と同一登録行の公式画像「逢坂八幡神社」の個別目視に基づいて解決する手動候補。原「おおさかはちまんじんじや」はoriginalと旧correction全dictのreview_history末尾に原形保存し、旧理由・原参照を消さない。おお/おう及びじや/じゃの相違を推測で直すのではなく、登録全文カナをひらがなへ機械変換する。画像から読みを作らず、旧agencyの疑義かなをactive referencesへ混ぜずhistoryで保持。",
       "references": [
         {
-          "address_raw": "大山町松河原233",
-          "checked_at": "2026-11-08T14:57:21.952710+00:00",
-          "excerpt": "神社名=逢坂八幡神社 / よみ=おおさかはちまんじんじや / 住所=大山町松河原233",
-          "locator": "table labeled rows 神社名/よみ/住所",
+          "address_raw": "鳥取県西伯郡大山町松河原２３３番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:54:52.574373+00:00",
+          "corporate_number": "3270005003530",
+          "csv_row": 6587,
+          "excerpt": "逢坂八幡神社 / オウサカハチマンジンジャ / 鳥取県西伯郡大山町松河原２３３番地",
+          "fetched_at": "2026-11-12T04:41:26.358529+00:00",
+          "file_id": "28453",
+          "image_reviews": {
+            "nameImageId": {
+              "archive_page_hash": "7a97dc4b2b16b8b23ba79d5a972eedb6b6819e5b50336ce0d35e54f3d8546072",
+              "checked_at": "2026-11-12T04:54:52.574373+00:00",
+              "corporate_number": "3270005003530",
+              "csv_row": 6587,
+              "fetched_at": "2026-11-12T04:53:39.358132+00:00",
+              "image_id": "00004552",
+              "method": "visual_inspection_of_official_image",
+              "note": "取得済み公式nameImageId画像を独立目視。画像全体に逢・坂・八・幡・神・社の6字が連続表示され、原神社庁の正式名「逢坂八幡神社」と全文の字形が対応する。画像から読みを取得・推定していない。読みは同一CSV行の登録全文フリガナ「オウサカハチマンジンジャ」に限定。",
+              "page_hash": "f12caf065611da761b09d3c003c51c2472cdc67c25126f7f322fd04395f92538",
+              "snapshot": "20261030",
+              "source_address_raw": "鳥取県西伯郡大山町松河原２３３番地",
+              "source_name_raw": "逢坂八幡神社",
+              "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00004552"
+            }
+          },
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV file ID 28453; 31_tottori_all_20261030.csv; row 6587; corporateNumber=3270005003530",
           "name_raw": "逢坂八幡神社",
-          "page_hash": "15747983e8bbb451daaee45033260593184617401554a6ada04d96df42620530",
-          "reading_raw": "おおさかはちまんじんじや",
-          "source_kind": "agency",
-          "title": "鳥取縣神社廳 掲載読み原文（全文読みの確認未了）",
-          "url": "https://tottori-jinjacho.jp/pages/541/"
+          "page_hash": "7a97dc4b2b16b8b23ba79d5a972eedb6b6819e5b50336ce0d35e54f3d8546072",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+          "reading_raw": "オウサカハチマンジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "3270005003530"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_all_seven_national_daily_deltas",
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:41:26.358529+00:00",
+                "file_id": "28453",
+                "page_hash": "7a97dc4b2b16b8b23ba79d5a972eedb6b6819e5b50336ce0d35e54f3d8546072",
+                "row_count": 20295,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で月次全partと全7日次を日付順に適用。unique latest1だけ置換し、99/最新無し/複数は旧状態退役。閉鎖/非表示/後継なしを確認。画像IDは同一CSV行に厳密結合した公式画像を独立目視。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "386",
+            "cityName": "西伯郡大山町",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "3270005003530",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "オウサカハチマンジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "逢坂八幡神社",
+            "nameImageId": "00004552",
+            "postCode": "6893132",
+            "prefectureCode": "31",
+            "prefectureName": "鳥取県",
+            "process": "01",
+            "sequenceNumber": "6587",
+            "streetNumber": "松河原２３３番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2024-02-06"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
+          "zip_member": "31_tottori_all_20261030.csv"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "おおさかはちまんじんじや"
+          },
+          "expected_source_hash": "164bbc55f46fa6b960474e0c75e9aa52de326cc1c2b7602758d5b703c0af269f",
+          "facility_id": "23cc5f40-2e5d-5a92-b232-3893baefb53b",
+          "identity_match": {
+            "agency_address": "大山町松河原233",
+            "agency_name": "逢坂八幡神社"
+          },
+          "original": {
+            "address": "大山町松河原233",
+            "listing_url": "https://tottori-jinjacho.jp/pages/541/",
+            "name_raw": "逢坂八幡神社",
+            "reading_raw": "おおさかはちまんじんじや"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: large_ya_orthography_requires_explicit_evidence",
+          "references": [
+            {
+              "address_raw": "大山町松河原233",
+              "checked_at": "2026-11-08T14:57:21.952710+00:00",
+              "excerpt": "神社名=逢坂八幡神社 / よみ=おおさかはちまんじんじや / 住所=大山町松河原233",
+              "locator": "table labeled rows 神社名/よみ/住所",
+              "name_raw": "逢坂八幡神社",
+              "page_hash": "15747983e8bbb451daaee45033260593184617401554a6ada04d96df42620530",
+              "reading_raw": "おおさかはちまんじんじや",
+              "source_kind": "agency",
+              "title": "鳥取縣神社廳 掲載読み原文（全文読みの確認未了）",
+              "url": "https://tottori-jinjacho.jp/pages/541/"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "c8437bd8-dc56-5a4d-94ec-1f441f7fa6bb": {
       "changes": {
