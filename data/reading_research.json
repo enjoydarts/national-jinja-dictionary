@@ -956,17 +956,39 @@
         "new_verified_entries": 19,
         "retained_pending_entries": 197,
         "scope": "要確認216登録を28県月次全分割と全国7日次の実CSVで再照合。実登録全文カナと一意の名称・全住所で19件を手動解決し、残197件は追加観測と旧判断を保持。全国保留の解決を継続。"
+      },
+      {
+        "checked_at": "2026-11-12T04:56:15.709083+00:00",
+        "entry_ids": [
+          "c82acb82-b985-58f4-b642-62db72dd5944"
+        ],
+        "inspected_targets": 1,
+        "new_verified_entries": 1,
+        "retained_pending_entries": 0,
+        "scope": "公式登記画像を独立目視し、逢坂八幡神社1件を一意の全名全地番及び実CSV全文かなにより解決。全国保留の解決を継続。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-12T04:56:15.709083+00:00",
+      "checked_at": "2026-11-12T04:58:32.327609+00:00",
       "entry_ids": [
-        "c82acb82-b985-58f4-b642-62db72dd5944"
+        "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",
+        "0dfae9f5-6a4a-58e9-8fdf-bf1f39d27865",
+        "0f8892da-4876-5d74-a410-e60a9054f08a",
+        "10f78ddb-f8f7-59d1-80e8-56f2c47438f5",
+        "3e876de1-588c-5883-9cd9-fdd50610600a",
+        "612c8478-306d-5327-87c8-39442e3ea2fd",
+        "792b0e1b-9a46-5a7b-bed4-980112c4be50",
+        "b6c3e58f-a98a-542d-b184-72e80b5d0363",
+        "cb59d30f-f3f9-5ef3-b38f-1acfcfdf56e7",
+        "ce356496-5ed6-5b2a-9f6e-c3c4360608e6",
+        "d4443398-5a2c-551f-9c01-88ef8150c426",
+        "d9aff84b-bae1-5ac5-abb3-2dd4a4f1d5d7",
+        "ed19c5d9-672a-5431-9074-1f7cf3a11e09"
       ],
-      "inspected_targets": 1,
-      "new_verified_entries": 1,
-      "retained_pending_entries": 0,
-      "scope": "公式登記画像を独立目視し、逢坂八幡神社1件を一意の全名全地番及び実CSV全文かなにより解決。全国保留の解決を継続。"
+      "inspected_targets": 13,
+      "new_verified_entries": 0,
+      "retained_pending_entries": 13,
+      "scope": "兵庫の保護13登録の地図・詳細・登記の相違を分類して根拠を追記。別途、神社人の入口・条件・主体4ページを確認し、無断転載等の制限と旧サイト非継承により記事追加取得を停止。全国保留10783登録を維持。"
     },
     "remaining_unfinished_entries": 10783,
     "resolved_entry_ids": [
@@ -1059,7 +1081,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-12T04:56:15.709083+00:00",
+  "computed_at": "2026-11-12T04:58:32.327609+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -4433,6 +4455,148 @@
       "source_kind": "government_corporate_register",
       "source_publisher": "国税庁",
       "status": "inspected_official_registered_name_image_manual_resolution"
+    },
+    {
+      "attempt_id": "hyogo_protected_identity_crosscheck_20261112",
+      "checked_at": "2026-11-12T04:58:32.327609+00:00",
+      "counts": {
+        "classification": {
+          "agency_map_profile_address_conflict": 4,
+          "agency_map_profile_name_conflict": 8,
+          "unresolved_annotated_character": 1
+        },
+        "location_only_matching_targets": 9,
+        "proposals": 0,
+        "strict_fullname_fulladdress_targets": 5,
+        "strict_matches_with_full_furigana": 2,
+        "targets": 13
+      },
+      "daily_references": [
+        {
+          "date": "20261102",
+          "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+          "file_id": "28508",
+          "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+          "row_count": 2346,
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+        },
+        {
+          "date": "20261104",
+          "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+          "file_id": "28511",
+          "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+          "row_count": 2156,
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+        },
+        {
+          "date": "20261105",
+          "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+          "file_id": "28514",
+          "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+          "row_count": 2183,
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+        },
+        {
+          "date": "20261106",
+          "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+          "file_id": "28517",
+          "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+          "row_count": 2617,
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+        },
+        {
+          "date": "20261109",
+          "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+          "file_id": "28520",
+          "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+          "row_count": 2362,
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+        },
+        {
+          "date": "20261110",
+          "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+          "file_id": "28523",
+          "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+          "row_count": 2642,
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+        },
+        {
+          "date": "20261111",
+          "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+          "file_id": "28526",
+          "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+          "row_count": 2692,
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+        }
+      ],
+      "entry_ids": [
+        "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",
+        "0dfae9f5-6a4a-58e9-8fdf-bf1f39d27865",
+        "0f8892da-4876-5d74-a410-e60a9054f08a",
+        "10f78ddb-f8f7-59d1-80e8-56f2c47438f5",
+        "3e876de1-588c-5883-9cd9-fdd50610600a",
+        "612c8478-306d-5327-87c8-39442e3ea2fd",
+        "792b0e1b-9a46-5a7b-bed4-980112c4be50",
+        "b6c3e58f-a98a-542d-b184-72e80b5d0363",
+        "cb59d30f-f3f9-5ef3-b38f-1acfcfdf56e7",
+        "ce356496-5ed6-5b2a-9f6e-c3c4360608e6",
+        "d4443398-5a2c-551f-9c01-88ef8150c426",
+        "d9aff84b-bae1-5ac5-abb3-2dd4a4f1d5d7",
+        "ed19c5d9-672a-5431-9074-1f7cf3a11e09"
+      ],
+      "monthly_reference": {
+        "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+        "file_id": "28443",
+        "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+        "row_count": 206383,
+        "snapshot": "20261030",
+        "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+      },
+      "new_verified_entries": 0,
+      "observation": "既取得の原XML地図・実IDの詳細・国税庁月次と全国7日次を再照合。名称不一致8、住所不一致4、注記文字未解決1。登記の名称全住所一致5件のうち全文かなのある2件も、施設同定保留の解決を別途要する。名称・住所の一方だけの候補や登記画像未確認を採用しない。原字・別字名・施設同定の問題と補正形式検査を区別する。",
+      "scope": "group-b保護13件のみ。既取得兵庫月次206383行＋全国7日次をofflineで再構成。正本・コード変更/ネット取得なし。",
+      "source_publisher": "兵庫県神社庁・国税庁",
+      "status": "inspected_identity_conflicts_no_adoption"
+    },
+    {
+      "checked_at": "2026-11-12T04:55:11.639062+00:00",
+      "new_verified_entries": 0,
+      "observations": [
+        "現運営情報は2026年4月開始で、過去の同一ドメインのサイト・旧運営者とは無関係、コンテンツや活動を継承していないと明記。旧情報源の主体・収録範囲を現サイトへ引き継がない。",
+        "利用条件は文章・画像等の著作権帰属と無断転載・複製・改変禁止を明記。引用時の出典リンク条件を辞書全体の再利用許可へ拡張せず、個別神社記事の追加取得・採用を停止。"
+      ],
+      "references": [
+        {
+          "fetched_at": "2026-11-12T04:54:50.448844+00:00",
+          "page_hash": "e6189b92d2ecc96198f8727986c46a591911bd12ec41535ed15a627691ca51c9",
+          "status": 200,
+          "url": "https://jinjajin.jp/"
+        },
+        {
+          "fetched_at": "2026-11-12T04:55:07.162021+00:00",
+          "page_hash": "4d68a1adf8d7d4ed5fc6f02863daeee3718d8e160630140d88ed126a0a9f1169",
+          "status": 200,
+          "url": "https://jinjajin.jp/editorial-policy/"
+        },
+        {
+          "fetched_at": "2026-11-12T04:55:09.436386+00:00",
+          "page_hash": "27878cbc67a8f1d28a8cff68bac014e7c555678d553bc4b0d4e43d3840b97ae8",
+          "status": 200,
+          "url": "https://jinjajin.jp/privacypolicy/"
+        },
+        {
+          "fetched_at": "2026-11-12T04:55:11.639062+00:00",
+          "page_hash": "518083402275922d2179fb958ba0ab4094be7ccd8144fe62dd557b948552c952",
+          "status": 200,
+          "url": "https://jinjajin.jp/about/"
+        }
+      ],
+      "remaining_scope": "現サイトの神社記事は未取得。過去サイトの資料とみなさず、他の独立資料を調査する。",
+      "scope": "入口と実リンク先の編集方針・利用条件・運営情報の4ページのみ。旧神社データベースの継承性及び追加記事取得可否を確認。個別神社記事0件、採用0件。",
+      "source_kind": "independent_private_web_media",
+      "source_publisher": "神社人（現運営者の法的主体名は未確認）",
+      "status": "terms_restricted_not_adopted",
+      "stop_reason": "explicit_content_reuse_restriction_and_no_legacy_dataset_continuity"
     }
   ],
   "per_prefecture": {
@@ -160328,6 +160492,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_name_conflict",
+          "entry_id": "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "4db594c884114515226c28d09bab0bc6597aa1d46f9fd69a00b7df90884886c2",
+          "facility_id": "67f84024-8c77-5fec-927d-595985f283fd",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "三田市東山449",
+          "map_observations": [
+            {
+              "address_raw": "三田市東山449",
+              "code_raw": "6306053",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[562]",
+              "name_raw": "東山八幡宮",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6306053",
+          "original": {
+            "address": "三田市東山449",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6306053.html",
+            "name_raw": "東山八幡神社",
+            "reading_raw": "ヒガシヤマハチマンジンジャ"
+          },
+          "profile_address_raw": "〒669-1353\n三田市東山449",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile official names differ or are missing",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile official names differ or are missing",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "同コード6306053のXMLとprofileで宮/神社が異なる理由を確認できる神社自身・神社庁の公称/別称説明が必要。原agencyの全文かなは既にあるため同定整理が先。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:15:56.214357+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "bcf107fcf0bfa97bdf1936d2007837c86001090edd44d360df8927fbdcbd5496",
+            "url": "https://www.hyogo-jinjacho.com/data/6306053.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県三田市東山４４９番地",
+              "closeDate": "",
+              "corporate_number": "1140005015549",
+              "csv_row": 21658,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "東山八幡神社",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "01",
+              "reading_raw": "",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "unresolved_identity_detail": "XML東山八幡宮 / profile東山八幡神社。NTAはprofile名+449一致、登録かな空。"
         }
       ],
       "address": "三田市東山449",
@@ -160404,6 +160643,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_name_conflict",
+          "entry_id": "0dfae9f5-6a4a-58e9-8fdf-bf1f39d27865",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "7dd6a15f40860ca6fef4fab2a834b56383538a97fe02f173a6e25b593225d21a",
+          "facility_id": "49d64a05-89ba-51ef-a5ba-b37cfa501818",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県三田市上本庄１２２１番地",
+              "closeDate": "",
+              "corporate_number": "9140005015467",
+              "csv_row": 205063,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "駒宇佐八幡神社",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "01",
+              "reading_raw": "",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "map_address_raw": "三田市上本庄1221",
+          "map_observations": [
+            {
+              "address_raw": "三田市上本庄1221",
+              "code_raw": "6306046",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[555]",
+              "name_raw": "駒宇佐八幡神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6306046",
+          "original": {
+            "address": "三田市上本庄1221",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6306046.html",
+            "name_raw": "駒宇佐八幡宮",
+            "reading_raw": "コマウサハチマングウ"
+          },
+          "profile_address_raw": "〒669-1351\n三田市上本庄1221",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile official names differ or are missing",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile official names differ or are missing",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "同コード6306046の神社/宮の公称関係を明示する実資料が必要。NTAの神社名から宮という語尾の読みや表記を変換しない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:15:41.661682+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "ad0295fd5b4e8aab24f5087dc6b96b6fcce5861327b391fd7a0559cdbcfed43d",
+            "url": "https://www.hyogo-jinjacho.com/data/6306046.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [],
+          "unresolved_identity_detail": "XML・NTAは駒宇佐八幡神社、profileは駒宇佐八幡宮。所在地1221一致、NTAかな空。"
         }
       ],
       "address": "三田市上本庄1221",
@@ -160480,6 +160794,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_address_conflict",
+          "entry_id": "0f8892da-4876-5d74-a410-e60a9054f08a",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "7537f9a753d92d7850b95598e33666bf163269c064b5f6e8c338ecdcf5afdf5b",
+          "facility_id": "ddc13de1-723b-5efd-bdb8-59ca48967032",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県三木市吉川町前田字下馬場９９８番地",
+              "closeDate": "",
+              "corporate_number": "9140005006235",
+              "csv_row": 204174,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "天津神社",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "01",
+              "reading_raw": "",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "map_address_raw": "三木市吉川町前田字下馬場998",
+          "map_observations": [
+            {
+              "address_raw": "三木市吉川町前田字下馬場998",
+              "code_raw": "6310104",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[1135]",
+              "name_raw": "天津神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6310104",
+          "original": {
+            "address": "三木市吉川町前田998",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6310104.html",
+            "name_raw": "天津神社",
+            "reading_raw": "アマツジンジャ"
+          },
+          "profile_address_raw": "〒673-1103\n三木市吉川町前田998",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile addresses differ",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile addresses differ",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "profile6310104の正式所在地とXMLの字下馬場を同一施設へ結び付ける実本文又は修正履歴が必要。字下馬場を削って一致扱いにしない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:50:00.300615+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "6ff64939cfa0161ef3f246c38768debf2d50f6590dd2e3bcc49e357ca6fe1c0b",
+            "url": "https://www.hyogo-jinjacho.com/data/6310104.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [],
+          "unresolved_identity_detail": "XML/NTAは前田字下馬場998、profileは前田998。字名を省略した同定は不可。"
         }
       ],
       "address": "三木市吉川町前田998",
@@ -160558,6 +160947,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_address_conflict",
+          "entry_id": "10f78ddb-f8f7-59d1-80e8-56f2c47438f5",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "4460c3ef944fb85cc5a8630cf09b8ab6184a40210b57729aa02c2db9805f4e1e",
+          "facility_id": "41704943-d4c9-5295-b0d6-05530c146da8",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "篠山市畑宮376",
+          "map_observations": [
+            {
+              "address_raw": "篠山市畑宮376",
+              "code_raw": "6307008",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[570]",
+              "name_raw": "佐佐婆神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6307008",
+          "original": {
+            "address": "丹波篠山市畑宮377",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6307008.html",
+            "name_raw": "佐佐婆神社",
+            "reading_raw": "ササバジンジャ"
+          },
+          "profile_address_raw": "〒669-2305\n丹波篠山市畑宮377",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile addresses differ",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile addresses differ",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "376と377のどちらが社殿所在地/旧掲載なのか、同コード6307008に結び付く神社自身又は自治体の全所在地資料が必要。市名改称だけでは地番差を解決しない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:16:12.841472+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "edcbb09336399e7e20d565a419759fe39f6e460fb796aab58a9b3807e1be1c7e",
+            "url": "https://www.hyogo-jinjacho.com/data/6307008.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県丹波篠山市畑宮３７７番地",
+              "closeDate": "",
+              "corporate_number": "4140005008896",
+              "csv_row": 89787,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "佐佐婆神社",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "12",
+              "reading_raw": "ササバジンジャ",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "unresolved_identity_detail": "XML畑宮376 / profile畑宮377。NTAは丹波篠山市畑宮377・全文ササバジンジャ。"
         }
       ],
       "address": "丹波篠山市畑宮377",
@@ -160712,6 +161176,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_name_conflict",
+          "entry_id": "3e876de1-588c-5883-9cd9-fdd50610600a",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "0a5a8b20d73146bed60280adbcd388b2de2b81231a35cbb0434a472dd7742001",
+          "facility_id": "db6c3d02-45bd-5883-9d74-5d7c7baaaf09",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "三田市末1205",
+          "map_observations": [
+            {
+              "address_raw": "三田市末1205",
+              "code_raw": "6306023",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[532]",
+              "name_raw": "末西天満宮",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6306023",
+          "original": {
+            "address": "三田市末1205",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6306023.html",
+            "name_raw": "天満神社",
+            "reading_raw": "テンマンジンジャ"
+          },
+          "profile_address_raw": "〒669-1303\n三田市末1205",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile official names differ or are missing",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile official names differ or are missing",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "同コード6306023の末西天満宮と天満神社の公称・通称関係を明示する神社自身/神社庁資料が必要。冠称を機械的に除去して同定しない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:14:53.893552+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "288f7f91f2c7c020cd9c6ada779cace2327cfb7aa47a951a8dea6ee889de86ae",
+            "url": "https://www.hyogo-jinjacho.com/data/6306023.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県三田市末１２０５番地",
+              "closeDate": "",
+              "corporate_number": "9140005015525",
+              "csv_row": 205070,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "天満神社",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "01",
+              "reading_raw": "",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "unresolved_identity_detail": "XML末西天満宮 / profile・NTA天満神社。所在地1205一致、NTAかな空。"
         }
       ],
       "address": "三田市末1205",
@@ -161020,6 +161559,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_address_conflict",
+          "entry_id": "612c8478-306d-5327-87c8-39442e3ea2fd",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "b71bc5a83fad9dccb0a97c9af75b1aad154975a7ea2f32cf3d62825ae334ded9",
+          "facility_id": "b8161bc4-6938-5b20-90b2-5d43655a8cc8",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県三木市吉川町上荒川字峠６９８番地",
+              "closeDate": "",
+              "corporate_number": "2140005006274",
+              "csv_row": 43689,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "八幡神社",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "01",
+              "reading_raw": "",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "map_address_raw": "三木市吉川町上荒川字峠698",
+          "map_observations": [
+            {
+              "address_raw": "三木市吉川町上荒川字峠698",
+              "code_raw": "6310112",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[1143]",
+              "name_raw": "八幡神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6310112",
+          "original": {
+            "address": "三木市吉川町上荒川698",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6310112.html",
+            "name_raw": "八幡神社",
+            "reading_raw": "ハチマンジンシャ"
+          },
+          "profile_address_raw": "〒673-1111\n三木市吉川町上荒川698",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile addresses differ",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile addresses differ",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "profile6310112の所在地とXML字峠を同一施設へ束縛する実資料が必要。字峠を省略した一致にしない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:50:16.837399+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "1853a6903cf9a0f3d2d7df2b367ed9ecfacdac694c986f9804db6e5320c24668",
+            "url": "https://www.hyogo-jinjacho.com/data/6310112.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [],
+          "unresolved_identity_detail": "XML・NTA上荒川字峠698 / profile上荒川698。"
         }
       ],
       "address": "三木市吉川町上荒川698",
@@ -161248,6 +161862,60 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_name_conflict",
+          "entry_id": "792b0e1b-9a46-5a7b-bed4-980112c4be50",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "6753483ae0ecbfa4146ed8df0747cda6a71cc9f1b118237f86fdcdf37298b276",
+          "facility_id": "4686c18f-68ea-5389-bf43-37aa8c89e9b3",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "宍粟市山崎町須賀沢72",
+          "map_observations": [
+            {
+              "address_raw": "宍粟市山崎町須賀沢72",
+              "code_raw": "6320027",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[2485]",
+              "name_raw": "篥神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6320027",
+          "original": {
+            "address": "宍粟市山崎町須賀沢72",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6320027.html",
+            "name_raw": "庥篥神社",
+            "reading_raw": "ヒチリキジンジャ"
+          },
+          "profile_address_raw": "〒671-2533\n宍粟市山崎町須賀沢72",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile official names differ or are missing",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile official names differ or are missing",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "profile6320027の実字形とNTA公式名称画像00048798を個別に確認し、Unicode表記及び須賀沢/須賀澤の全所在地対応を別々に証拠化する必要。画像未取得・未視認で字を確定しない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T11:36:39.525650+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "fef112c94ce1e14ef20db61dc7353b7e0c3ce6288577a06a22c35118cf3b1372",
+            "url": "https://www.hyogo-jinjacho.com/data/6320027.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [],
+          "unresolved_identity_detail": "XML篥神社 / profile庥篥神社。地域発見用NTAは觱篥神社・須賀澤72・ヒチリキジンジャ、nameImageId00048798。沢/澤と社名が異なり、同一施設確定ではない。"
         }
       ],
       "address": "宍粟市山崎町須賀沢72",
@@ -161498,6 +162166,60 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_address_conflict",
+          "entry_id": "b6c3e58f-a98a-542d-b184-72e80b5d0363",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "6ce6af867a4f8fcf85a1259eddb9325d3372a49f9605745ee7eaabe6863551b6",
+          "facility_id": "08a3ddd0-5fc5-55c1-9723-c6ec90b29823",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "篠山市波々伯部5",
+          "map_observations": [
+            {
+              "address_raw": "篠山市波々伯部5",
+              "code_raw": "6307024",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[586]",
+              "name_raw": "波々伯部神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6307024",
+          "original": {
+            "address": "丹波丹波篠山市波々伯部5",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6307024.html",
+            "name_raw": "波々伯部神社",
+            "reading_raw": "ホウカベジンジャ"
+          },
+          "profile_address_raw": "〒669-2300\n丹波丹波篠山市波々伯部5",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile addresses differ",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile addresses differ",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "profile6307024の所在地原文を再確認し、丹波の重複が実表示か抽出由来かを確認する必要。XMLの旧市名との対応も実資料で確認し、重複を推測削除しない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:16:46.109119+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "b959e2646e46c892b73a97131c855d6fed9ddf4f3911a41cf6bd689e5e77fad7",
+            "url": "https://www.hyogo-jinjacho.com/data/6307024.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [],
+          "unresolved_identity_detail": "XML篠山市波々伯部5 / profile丹波丹波篠山市波々伯部5。地域発見用NTAは丹波篠山市波々伯部5、かな空。"
         }
       ],
       "address": "丹波丹波篠山市波々伯部5",
@@ -161634,6 +162356,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_name_conflict",
+          "entry_id": "cb59d30f-f3f9-5ef3-b38f-1acfcfdf56e7",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "93f4a0a1f80ec0519176b1bbae863cef20695316eb107a0ed2537b6d6d18b6db",
+          "facility_id": "22a18ec0-d6b4-598b-9e83-34e4e4403e4e",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "丹波市柏原町柏原字八幡山1-1",
+          "map_observations": [
+            {
+              "address_raw": "丹波市柏原町柏原字八幡山1-1",
+              "code_raw": "6308001",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[737]",
+              "name_raw": "柏原八幡神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6308001",
+          "original": {
+            "address": "丹波市柏原町柏原字八幡山1-1",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6308001.html",
+            "name_raw": "柏原八幡宮",
+            "reading_raw": "カイバラハチマングウ"
+          },
+          "profile_address_raw": "〒669-3309\n丹波市柏原町柏原字八幡山1-1",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile official names differ or are missing",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile official names differ or are missing",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "同コード6308001の宮/神社という名称差の公称関係を明示する資料が必要。NTAはprofile名を支持するがXML側の相違を未解決のまま解除しない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:22:00.494636+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "0f2ab2eea93cc9814ed0efcf0a7b716f1148d7c9984a17a7d329db23848da5e8",
+            "url": "https://www.hyogo-jinjacho.com/data/6308001.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県丹波市柏原町柏原字八幡山１番地の１",
+              "closeDate": "",
+              "corporate_number": "6140005008399",
+              "csv_row": 135471,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "柏原八幡宮",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "11",
+              "reading_raw": "カイバラハチマングウ",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "unresolved_identity_detail": "XML柏原八幡神社 / profile・NTA柏原八幡宮。八幡山1-1一致、NTA全文カイバラハチマングウ。"
         }
       ],
       "address": "丹波市柏原町柏原字八幡山1-1",
@@ -161710,6 +162507,60 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_name_conflict",
+          "entry_id": "ce356496-5ed6-5b2a-9f6e-c3c4360608e6",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "5995d23e8907db90993a96fd53b92bb221dd014de04961c71cfcfb9d73eda70b",
+          "facility_id": "3c7f6cf7-a7e5-512f-b69f-5a8b200719d8",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "加古郡播磨町二子立辻1",
+          "map_observations": [
+            {
+              "address_raw": "加古郡播磨町二子立辻1",
+              "code_raw": "6314166",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[1736]",
+              "name_raw": "阿閇神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6314166",
+          "original": {
+            "address": "加古郡播磨町二子立辻1",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6314166.html",
+            "name_raw": "二子住吉神社",
+            "reading_raw": "フタゴスミヨシジンジャ"
+          },
+          "profile_address_raw": "〒675-0162\n加古郡播磨町二子立辻1",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile official names differ or are missing",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile official names differ or are missing",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "profile6314166とXML阿閇神社が同一対象かを裏付ける公式な名称/所属関係が必要。NTA住所画像00042224を視認し、字名と冠称二子の範囲も確認する。住所だけで別名を承認しない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T11:10:52.681869+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "0a5401c066a2014c794dfd8e37aa09b10d66a460c4c8590a270759058e5a2c1d",
+            "url": "https://www.hyogo-jinjacho.com/data/6314166.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [],
+          "unresolved_identity_detail": "XML阿閇神社 / profile二子住吉神社。地域発見用NTA住吉神社は二子字立辻1、addressImageId00042224、かな空。"
         }
       ],
       "address": "加古郡播磨町二子立辻1",
@@ -161786,6 +162637,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_name_conflict",
+          "entry_id": "d4443398-5a2c-551f-9c01-88ef8150c426",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "3e4743cd986817e112eb740bdf48cad89d624840ed906d40e8d94b291d9ed391",
+          "facility_id": "22d46276-a113-5af7-ad18-63bbf0e524ec",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県淡路市明神５９４番地",
+              "closeDate": "",
+              "corporate_number": "9140005019600",
+              "csv_row": 205440,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "00125147",
+              "name_raw": "西濵神社",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "11",
+              "reading_raw": "",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "map_address_raw": "淡路市明神594",
+          "map_observations": [
+            {
+              "address_raw": "淡路市明神594",
+              "code_raw": "6328128",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[3648]",
+              "name_raw": "住吉神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6328128",
+          "original": {
+            "address": "淡路市明神594",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6328128.html",
+            "name_raw": "西濱神社",
+            "reading_raw": "ニシハマジンジャ"
+          },
+          "profile_address_raw": "〒656-1557\n淡路市明神594",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile official names differ or are missing",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile official names differ or are missing",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "profile6328128とXML住吉神社の公称関係及びNTA画像00125147と原字濱/濵の対応を実資料で確認する必要。異体字をNFKC等で置換して同定しない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T12:54:11.932153+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "f2dde77642a851b9d677b38ffd3b4ae6057ff9cd42ff053d51c12855ce6dc652",
+            "url": "https://www.hyogo-jinjacho.com/data/6328128.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [],
+          "unresolved_identity_detail": "XML住吉神社 / profile西濱神社。同住所NTA西濵神社はnameImageId00125147、かな空。"
         }
       ],
       "address": "淡路市明神594",
@@ -161862,6 +162788,60 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "unresolved_annotated_character",
+          "entry_id": "d9aff84b-bae1-5ac5-abb3-2dd4a4f1d5d7",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "940839dca7ba8353a70bb915297b10b0fcfbed72ce607682763009410ec34340",
+          "facility_id": "b1ab79bd-8522-5f05-b93c-c1d97af418e6",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "豊岡市森津629-2",
+          "map_observations": [
+            {
+              "address_raw": "豊岡市森津629-2",
+              "code_raw": "6322026",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[2755]",
+              "name_raw": "●神社(舟偏に益)",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6322026",
+          "original": {
+            "address": "豊岡市森津629-2",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6322026.html",
+            "name_raw": "●神社(舟偏に益)",
+            "reading_raw": "ヘサキジンジャ"
+          },
+          "profile_address_raw": "〒668-0006\n豊岡市森津629-2",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "annotated official name requires review",
+            "entry_status": "pending",
+            "facility_review_reason": "annotated official name requires review",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "profile6322026の実字形・公式名称を視認できる実資料とNTA名称画像00042294、奥中口を含む全所在地対応が必要。舟偏に益という説明だけからUnicode字を推定しない。現name-only補正経路はあるが、現資料の画像未検証・字名差・登録かな空を満たせない。",
+          "schema_name_only_path_available": true,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T11:46:08.058070+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "a92eb6f55f3cd87b1214fce76dc8464d34ebceece5d5270231e311712e98a7b1",
+            "url": "https://www.hyogo-jinjacho.com/data/6322026.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [],
+          "unresolved_identity_detail": "原XML/profileは●神社(舟偏に益)、豊岡市森津629-2。地域発見用NTAは艗神社・森津字奥中口629-2、nameImageId00042294、かな空。同一施設や原字は未確定。"
         }
       ],
       "address": "豊岡市森津629-2",
@@ -161998,6 +162978,81 @@
           "source_kind": "government_corporate_register",
           "source_publisher": "国税庁",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T04:58:32.327609+00:00",
+          "classification": "agency_map_profile_name_conflict",
+          "entry_id": "ed19c5d9-672a-5431-9074-1f7cf3a11e09",
+          "evidence_attempt": "hyogo_protected_identity_crosscheck_20261112",
+          "expected_source_hash": "8861ae0fd5671c6d6ccd48a8774aa0ae4ec40cf609bed4819047645bc2aaac25",
+          "facility_id": "b9e5abe1-1238-538b-bee0-b8ad5e8ebe1d",
+          "identity_notice": "住所だけ又は文字説明による候補発見を同一施設承認と扱わない。保留・既判断を維持。",
+          "location_only_registry_observations": [],
+          "map_address_raw": "川西市火打2-18-7",
+          "map_observations": [
+            {
+              "address_raw": "川西市火打2-18-7",
+              "code_raw": "6305032",
+              "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+              "href_derivation": "data/ + actual Locate code + .html",
+              "locator": "Locations/Locate[468]",
+              "name_raw": "八坂神社",
+              "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+              "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+              "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+            }
+          ],
+          "native_source_id": "6305032",
+          "original": {
+            "address": "川西市火打2-18-7",
+            "listing_url": "https://www.hyogo-jinjacho.com/data/6305032.html",
+            "name_raw": "八阪神社",
+            "reading_raw": "ヤサカジンジャ"
+          },
+          "profile_address_raw": "〒666-0017\n川西市火打2-18-7",
+          "reading_only_trial": {
+            "correction_problems": [],
+            "entry_reason": "Hyogo map and profile official names differ or are missing",
+            "entry_status": "pending",
+            "facility_review_reason": "Hyogo map and profile official names differ or are missing",
+            "facility_status": "pending",
+            "identity_resolved": false
+          },
+          "required_material_and_next_action": "同コード6305032の坂/阪の公称表記の相違を明示する神社自身・神社庁資料が必要。二字を機械的な同一字扱いにしない。",
+          "schema_name_only_path_available": false,
+          "source_kind": "agency_and_government_register_crosscheck",
+          "source_profile_reference": {
+            "fetched_at": "2026-11-09T10:12:39.401666+00:00",
+            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+            "page_hash": "6bb2707a8c444a30d4c6e6e6ceec061595797140c44da5bf914c446b11d87e47",
+            "url": "https://www.hyogo-jinjacho.com/data/6305032.html"
+          },
+          "source_publisher": "兵庫県神社庁・国税庁",
+          "status": "inspected_identity_conflict_retained",
+          "strict_registered_matches": [
+            {
+              "address_image_id": "",
+              "address_raw": "兵庫県川西市火打２丁目１８番７号",
+              "closeDate": "",
+              "corporate_number": "4140005018342",
+              "csv_row": 90678,
+              "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+              "file_id": "28443",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "八阪神社",
+              "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "process": "01",
+              "reading_raw": "",
+              "snapshot": "20261030",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "28_hyogo_all_20261030.csv"
+            }
+          ],
+          "unresolved_identity_detail": "XML八坂神社 / profile・NTA八阪神社。火打2-18-7一致、NTAかな空。"
         }
       ],
       "address": "川西市火打2-18-7",
