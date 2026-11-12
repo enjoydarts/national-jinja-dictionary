@@ -2632,6 +2632,11 @@
           "verified_facilities": 1257
         },
         "checked_at": null,
+        "effective_entry_status_counts": {
+          "pending": 1103,
+          "verified": 154
+        },
+        "effective_pending_entries": 1103,
         "facilities_collected": 1257,
         "fields_observed": {
           "address": 1257,
@@ -2652,11 +2657,14 @@
           }
         ],
         "latest_additional_reading_followup": {
-          "checked_at": "2026-11-12T08:06:12.889473+00:00",
-          "entry_ids": [],
+          "checked_at": "2026-11-12T09:21:17.906403+00:00",
+          "entry_ids": [
+            "4ebe42c0-acba-589e-837b-88e1c2d8985c",
+            "daaadf9b-26fd-533c-a232-84e0fa0d6312"
+          ],
           "evidence_data": "data/corrections.json; data/reading_research.json",
-          "scope": "既報固定除外後の包含索引名98記事限定調査。現正式名への独立全文かなと全住所を必須とし、長名からの切出し・別施設流用をしない。県内全保留の完了ではない。",
-          "verified_entries": 0
+          "scope": "主名称全文かなと別称の適用範囲を個別検証し、原全地番が一致する山中湖村諏訪神社・忍野村内野浅間神社だけを補完。県内全保留の調査完了ではない。",
+          "verified_entries": 2
         },
         "listing_authority_status": "agency_site",
         "pages_fetched": 62,
@@ -2695,13 +2703,13 @@
         "stored_pages_fetched": 62,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 1105,
+            "insufficient_evidence_in_inspected_sources": 1103,
             "investigation_incomplete": 0,
             "judgment_required": 0
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 1151,
-          "unfinished_entries": 1105
+          "unfinished_entries": 1103
         }
       },
       "conditions": {
@@ -44641,7 +44649,7 @@
       "unresolved": 3
     },
     "effective_dictionary_rows": 13691,
-    "effective_verified_facilities": 44328,
+    "effective_verified_facilities": 44330,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
