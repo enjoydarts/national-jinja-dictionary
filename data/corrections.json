@@ -42791,6 +42791,88 @@
       ],
       "status": "verified"
     },
+    "26cc9cbf-2be5-523f-92c0-be98351c3ba3": {
+      "changes": {
+        "reading": "おいがみじんじゃ"
+      },
+      "expected_source_hash": "725cba67ef339a9f9d0d6c9ce8ec02281b42ae0a88e0ba8ab316860ba5fed9a6",
+      "facility_id": "60c12424-5b17-5d3f-b7f6-94bcdf86d221",
+      "identity_match": {
+        "agency_address": "人吉市老神町",
+        "agency_name": "老神神社",
+        "kind": "inspected_whole_locality_and_unique_official_full_address",
+        "official_full_address_raw": "人吉市老神町22",
+        "original_address_preserved": true,
+        "reference_address": "熊本県人吉市老神町22",
+        "reference_name": "老神神社",
+        "same_name_same_original_locality_facility_ids": [
+          "60c12424-5b17-5d3f-b7f6-94bcdf86d221"
+        ],
+        "source_numeric_addition_raw": "22"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T06:49:48.740259+00:00",
+        "independent_review": "独立担当と反映担当が記事本文・取得hash・公式名簿の実セルを照合。同正式名の名簿行1、正本全出典の同名10施設を区別、原町域に競合なし。",
+        "method": "inspected_name_and_whole_locality_with_explicit_reference_parcel",
+        "remaining_limitation": "原地域欄を鎮座地に再定義せず保持。記事全所在地と名簿の事務所所在地は参照ごとに保存。記事の再配布許諾は未確認。",
+        "scope": "人吉市老神町の当該施設だけ。別町域の同名登録を統合しない。",
+        "source_address_label_raw": "お住まいの地域"
+      },
+      "original": {
+        "address": "人吉市老神町",
+        "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/40/",
+        "name_raw": "老神神社",
+        "reading_raw": ""
+      },
+      "reason": "原掲載の正式名と町域に対し、非公式記事の主対象に明示された連続全文かなと全所在地を照合。独立した熊本県宗教法人名簿の同正式名一意行と記事全地番も一致。読みのみ補完し、原地域欄の意味・町域・施設IDを保持。",
+      "references": [
+        {
+          "address_raw": "熊本県人吉市老神町22",
+          "attribution": "出典：神社と古事記「老神神社」（https://www.buccyake-kojiki.com/archives/1056005989.html、2026年11月12日確認）",
+          "authority_evidence": "実免責事項と運営記述を確認した非公式二次資料。神社自身・神社庁公式と分類しない。",
+          "checked_at": "2026-11-12T06:20:30.190836+00:00",
+          "excerpt": "老神神社（おいがみじんじゃ）は / 熊本県人吉市老神町22",
+          "fetched_at": "2026-11-12T06:20:30.175493+00:00",
+          "license_status": "unconfirmed",
+          "locator": "article-titleの正式名と article-body-inner 主対象導入文（正式名（全文かな）は）/［住所］欄",
+          "name_raw": "老神神社",
+          "page_hash": "7c1502aca2b078bfd97464ad8d72c428ba0aabe97560f808eb662bc70b6a7d9c",
+          "processed_notice": "正式名・全文かな・全所在地の最小事実だけを個別照合。原町域を保持し記事の番地を原住所へ書き込まない。",
+          "reading_context_raw": "老神神社（おいがみじんじゃ）は",
+          "reading_raw": "おいがみじんじゃ",
+          "reading_scope": "full_name",
+          "reading_variants_raw": [
+            "おいがみじんじゃ"
+          ],
+          "redistribution_status": "unconfirmed",
+          "source_kind": "article",
+          "source_publisher": "神社と古事記（非公式二次資料）",
+          "terms_url": "https://www.buccyake-kojiki.com/archives/1000485485.html",
+          "title": "老神神社　熊本県人吉市老神町 - 神社と古事記",
+          "url": "https://www.buccyake-kojiki.com/archives/1056005989.html"
+        },
+        {
+          "address_raw": "人吉市老神町22",
+          "attribution": "出典：熊本県「宗教法人名簿」（https://data.bodik.jp/dataset/430005_00107/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716）",
+          "checked_at": "2026-11-12T06:49:48.740259+00:00",
+          "excerpt": "老神神社 / 人吉市老神町22",
+          "fetched_at": "2026-11-12T05:05:40.758915+00:00",
+          "identity_only": true,
+          "license": "CC BY4.0国際",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "宗教法人名簿 シート 行1328 C1328法人名称/E1328市町村/F1328事務所所在地",
+          "name_raw": "老神神社",
+          "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+          "processed_notice": "熊本県「宗教法人名簿」を加工して法人名称と同一行の事務所所在地だけを照合。役員情報・連絡先・Excel内部rPhは出力せず、名簿を神社全文かなの根拠としない。",
+          "reading_raw": "",
+          "source_kind": "government_publication",
+          "source_publisher": "熊本県総務部私学振興課",
+          "title": "熊本県 宗教法人名簿（令和7年8月1日現在）",
+          "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download/123_r7.8.1.xlsx"
+        }
+      ],
+      "status": "verified"
+    },
     "27361f13-ffb6-56f3-abc9-ebf96241f99e": {
       "changes": {
         "reading": "みしまじんじゃ"
