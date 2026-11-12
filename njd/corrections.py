@@ -27,6 +27,20 @@ def _comparison(value):
     return re.sub(r'\s+','',unicodedata.normalize('NFKC',value or ''))
 
 
+def _literal_reference_address(ref):
+    """Retain separately printed CSV columns, without inventing a quotation."""
+    parts=ref.get('address_components');excerpt=ref.get('excerpt','')
+    if parts is None:
+        return bool(ref.get('address_raw')) and ref['address_raw'] in excerpt
+    columns=('都道府県名','市区町村名','住所')
+    if (ref.get('source_kind')!='municipal_open_data' or not isinstance(parts,dict)
+        or set(parts)!=set(columns) or type(ref.get('csv_row')) is not int
+        or ref['csv_row']<2 or not _hash(ref.get('page_hash'))
+        or not _plain(ref.get('locator'))):return False
+    if any(not _plain(parts[k]) or k+'='+parts[k] not in excerpt for k in columns):return False
+    return ref.get('address_raw')==''.join(parts[k] for k in columns)
+
+
 def _subject_profile_link(ref,facility,proof):
     """Require recorded observations, not a guessed URL or a nearby-site link."""
     link=proof.get('subject_link')
@@ -88,6 +102,11 @@ def _reference_matches(ref,facility,entry,changes):
     def address(value):
         value=compare_address_units(re.sub(r'^〒\d{3}-\d{4}','',_comparison(value)))
         value=value.removeprefix(facility.get('prefecture',''))
+        # The town's own ordinances use both spellings (docs/DATA.md).
+        # Compare only this Kochi municipality, with a literal parcel present.
+        # Never rewrite stored text, shrine names, or a locality elsewhere.
+        if facility.get('prefecture_code')=='39' and facility.get('prefecture')=='高知県':
+            value=re.sub(r'^(高岡郡)?檮原町(?=.*[0-9])',r'\1梼原町',value)
         value=re.sub(r'(?<=\d)[−‐‑‒–—―](?=\d)','-',value)
         value=re.sub(r'(?<=\d)丁目(?=\d)','-',value)
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
@@ -275,7 +294,7 @@ def correction_problems(correction,facility,entry,source=None):
             and urlsplit(ref.get('url','')).hostname==urlsplit(facility.get('listing_url','')).hostname
             and not _agency_reading_compatible(ref['name_raw'],ref['reading_raw'],ref['reading_scope'],changes['reading'])):
             problems.append('proposed registry reading conflicts with literal agency kana; prefix agreement alone is insufficient')
-        if bound and ref.get('name_raw') and ref.get('name_raw') in ref.get('excerpt','') and ref.get('address_raw') and ref.get('address_raw') in ref.get('excerpt',''):
+        if bound and ref.get('name_raw') and ref.get('name_raw') in ref.get('excerpt','') and _literal_reference_address(ref):
             identity_supported=True
         if bound and 'surface' in changes and ref.get('name_raw')==changes['surface'] and changes['surface'] in ref.get('excerpt',''):
             name_supported=True
