@@ -6400,17 +6400,27 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 3,
         "scope": "既取得記事の正式名段落2候補を再点検。民間ポータル2件は実本文の転載制限と規約403を記録し停止。読みの流用・通り表記削除・アクセス制限回避をせず保留を維持。"
+      },
+      {
+        "checked_at": "2026-11-12T08:29:38.346801+00:00",
+        "entry_ids": [
+          "826b41da-d0a5-5768-841b-fc69d06c70d0"
+        ],
+        "inspected_targets": 1,
+        "new_verified_entries": 1,
+        "retained_pending_entries": 0,
+        "scope": "相良神社の主対象全文かなと、独立した熊本県名簿一意行の全住所を照合して読みのみ補完。原地域欄・施設IDを保持。全国の保留解決を継続。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-12T08:29:38.346801+00:00",
-      "entry_ids": [
-        "826b41da-d0a5-5768-841b-fc69d06c70d0"
-      ],
-      "inspected_targets": 1,
-      "new_verified_entries": 1,
+      "additional_source_conditions_checked": 3,
+      "checked_at": "2026-11-12T08:37:25.293143+00:00",
+      "entry_ids": [],
+      "inspected_targets": 0,
+      "new_verified_entries": 0,
+      "remaining_unfinished_entries": 10617,
       "retained_pending_entries": 0,
-      "scope": "相良神社の主対象全文かなと、独立した熊本県名簿一意行の全住所を照合して読みのみ補完。原地域欄・施設IDを保持。全国の保留解決を継続。"
+      "scope": "追加候補3情報源の利用・アクセス条件を確認。Wikidata検索APIはrobots禁止によりクエリ送信0、民間口コミサイトと観光協会データベースは転載等の制限で施設詳細取得0。登録単位の追加本文比較や保留解除は行っていない。全国調査の完了ではない。"
     },
     "remaining_unfinished_entries": 10617,
     "resolved_entry_ids": [
@@ -6669,7 +6679,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-12T08:29:38.346801+00:00",
+  "computed_at": "2026-11-12T08:37:25.293143+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -43577,6 +43587,100 @@
       "scope": "原掲載の人吉市麓町に対し、県名簿の一意法人名称と全住所が記事主対象の全住所に一致する当該登録のみ。一般の町域照合ルールや施設所在地は変更しない。Excel内部rPhは読み根拠としない。",
       "source_kind": "article_and_government_register",
       "status": "independent_identity_verified_reading_only_supplement"
+    },
+    {
+      "attempt_id": "wikidata_structured_data_query_robots_stop_20261112",
+      "authority_observation": "Wikidataの公式ライセンス・データアクセス・プロパティ本文を取得して確認。神社・神社庁・行政の公式施設資料とは分類しない。",
+      "checked_at": "2026-11-12T08:37:25.293143+00:00",
+      "endpoint": "https://query.wikidata.org/sparql",
+      "license": "CC0-1.0 for structured data",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "new_verified_entries": 0,
+      "observation": "主・Property等の構造化データがCC0であることと、検索エンドポイントの機械取得可否を区別。robotsが当該エンドポイントを禁止したためクエリを送信せず停止。別ツール・UA・別エンドポイントへ同じ取得を移して回避しない。個別施設の名称・かな・全住所照合は未実施。",
+      "planned_query_row_limit": 2000,
+      "planned_query_scope": "日本語ラベル・P1814（名称のかな）・日本語P6375（所在地）が同一項目にあるデータ、上限2000行。神社の件数や全国保留の網羅範囲ではない。",
+      "policy_references": [
+        {
+          "fetched_at": "2026-11-12T08:34:46.383935+00:00",
+          "page_hash": "5f55af94bac8de4727c05ab3d07c90c9d90884ccfb33dfd085b6feb3244abe8c",
+          "status": 200,
+          "url": "https://www.wikidata.org/wiki/Wikidata:Licensing"
+        },
+        {
+          "fetched_at": "2026-11-12T08:34:48.821674+00:00",
+          "page_hash": "cefffbebf5b2668c1a4f6a496983328a66dd17b8e3a0c3083a57d3385d807edd",
+          "status": 200,
+          "url": "https://www.wikidata.org/wiki/Wikidata:Data_access"
+        },
+        {
+          "fetched_at": "2026-11-12T08:34:52.396009+00:00",
+          "page_hash": "b82632451e381cbc6ee430a04edb761c2ce3be2324deee1eea81db35dee88aee",
+          "status": 200,
+          "url": "https://www.wikidata.org/wiki/Property:P1814"
+        },
+        {
+          "fetched_at": "2026-11-12T08:34:55.999119+00:00",
+          "page_hash": "a8c4f7f539091faa16acfef9c97cb279a1d14721724f027d92e0311e49d8a7ed",
+          "status": 200,
+          "url": "https://www.wikidata.org/wiki/Property:P6375"
+        }
+      ],
+      "query_requests_sent": 0,
+      "retrieved_entity_rows": 0,
+      "robots_references": [
+        {
+          "fetched_at": "2026-11-12T08:34:56.394999+00:00",
+          "page_hash": "212a112f9e27af6072758663789987cf84bfde70bd9b87f97ef76f91fd089b0c",
+          "status": 200,
+          "url": "https://query.wikidata.org/robots.txt"
+        },
+        {
+          "fetched_at": "2026-11-12T08:34:43.580033+00:00",
+          "page_hash": "31077e60ea72809fd71fdb414951397be2f141e1e23ea2408e69d77aefa62593",
+          "status": 200,
+          "url": "https://www.wikidata.org/robots.txt"
+        }
+      ],
+      "robots_rule_observed": "User-agent: * / Disallow: /sparql / Disallow: /bigdata",
+      "source_kind": "collaborative_structured_data",
+      "source_publisher": "Wikidata（共同編集の非公式二次資料）",
+      "status": "stopped_before_query_request_robots_disallow",
+      "target_comparisons": 0
+    },
+    {
+      "attempt_id": "jinjafan_portal_reuse_stop_20261112",
+      "authority_locator": "トップ本文の投稿による口コミ総合サイトの説明",
+      "checked_at": "2026-11-12T08:37:25.293143+00:00",
+      "individual_shrine_pages_acquired": 0,
+      "new_verified_entries": 0,
+      "page_hash_status": "not_collected_by_web_tool",
+      "restriction_locator": "トップ末尾Copyright直下の文章・画像等の無断転載及び複製を控える表示",
+      "restriction_observation": "本文が投稿型の口コミサイトと説明し、末尾で文章・画像等の無断転載・複製等を控えるよう求める。神社・神社庁公式と扱わず、神社詳細ページの追加取得・候補保存を停止。",
+      "scope": "運営種別と取得・利用条件のみ。検索結果の名称・かな・所在地を根拠として転記しない。",
+      "source_kind": "private_portal",
+      "source_publisher": "神社ファン（民間口コミサイト）",
+      "status": "stopped_explicit_republication_and_copying_restriction",
+      "target_comparisons": 0,
+      "url": "https://jinjafan.jp/",
+      "verification_method": "public_web_tool_body_inspection"
+    },
+    {
+      "attempt_id": "japan47go_database_reuse_stop_20261112",
+      "authority_locator": "JAPAN 47 GOについて／サイトとは・免責事項",
+      "authority_observation": "実本文が日本観光振興協会の提供と自治体・観光協会との共同運営を明示。協会資料として区別し、各神社公式と分類しない。",
+      "checked_at": "2026-11-12T08:37:25.293143+00:00",
+      "individual_shrine_pages_acquired": 0,
+      "new_verified_entries": 0,
+      "page_hash_status": "not_collected_by_web_tool",
+      "restriction_locator": "雑誌等への掲載／著作権・商標権について",
+      "restriction_observation": "実本文がコンテンツの無断転用・転載を断り、記憶媒体等への転載は事前連絡を求める。辞書用再利用許可は未確認のため、施設詳細取得・候補保存へ進まない。連絡・契約・申込みは行わない。",
+      "scope": "提供主体と利用条件のみ。観光情報データベースの施設本文・読み・全住所の照合は未実施。",
+      "source_kind": "association_publication",
+      "source_publisher": "公益社団法人日本観光振興協会",
+      "status": "stopped_explicit_reuse_and_republication_restriction",
+      "target_comparisons": 0,
+      "url": "https://www.japan47go.travel/ja/about",
+      "verification_method": "public_web_tool_body_inspection"
     }
   ],
   "per_prefecture": {
