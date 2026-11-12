@@ -45381,6 +45381,104 @@
       ],
       "status": "verified"
     },
+    "288dc398-78bc-5bb9-af9e-62baa910f11a": {
+      "changes": {
+        "reading": "ことひらじんじゃ"
+      },
+      "expected_source_hash": "15d709fdfbf43dd367d8b40801e8b352488810bc168816046a2de75bd90c56c6",
+      "facility_id": "d6f18f62-d87f-5e8f-af3c-962f09c0db98",
+      "identity_match": {
+        "agency_address": "高知県南国市里改田2607番地",
+        "agency_name": "琴平神社",
+        "effective_address": "高知県南国市里改田2607番地",
+        "reference_address": "高知県南国市里改田２６０７",
+        "reference_name": "琴平神社"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T10:49:14.497135+00:00",
+        "independent_review": "独立担当が同hashのCSV行・原施設・実href・市の公開範囲と利用規約を照合して承認。",
+        "method": "exact_municipal_csv_full_name_kana_complete_parcel",
+        "observation": "神社単独の独立名称と全文かな・全所在地が同じ行に対応する。数字の全半角と番地表記の差だけで、里改田2607の地番は一致。市全神社や県全保留の調査完了とは区別。",
+        "peer_reviewed_at": "2026-11-12T10:51:53.883230+00:00"
+      },
+      "original": {
+        "address": "高知県南国市里改田2607番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=159",
+        "name_raw": "琴平神社",
+        "reading_raw": ""
+      },
+      "reason": "南国市公開の指定緊急避難場所CSVで、琴平神社の独立した名称・全文かな・全所在地が同じ行にあることを確認。原所在地里改田2607番地と全角数字２６０７は同じ全地番であり、読みだけ補完して原表記・施設IDを保持。",
+      "references": [
+        {
+          "address_raw": "高知県南国市里改田２６０７",
+          "attribution": "「指定緊急避難場所一覧」（南国市、https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=6794、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T10:49:14.497135+00:00",
+          "columns": [
+            "NO",
+            "名称",
+            "名称_カナ",
+            "住所",
+            "方書",
+            "緯度",
+            "経度",
+            "標高",
+            "電話番号",
+            "内線番号",
+            "市区町村コード",
+            "都道府県名",
+            "市区町村名",
+            "災害種別_洪水",
+            "災害種別_崖崩れ、土石流及び地滑り",
+            "災害種別_高潮",
+            "災害種別_地震",
+            "災害種別_津波",
+            "災害種別_大規模な火事",
+            "災害種別_内水氾濫",
+            "災害種別_火山現象",
+            "指定避難所との重複",
+            "想定収容人数",
+            "対象となる町会・自治会",
+            "URL",
+            "備考"
+          ],
+          "csv_row": 40,
+          "data_records": 99,
+          "encoding": "cp932",
+          "excerpt": "琴平神社 / コトヒラジンジャ / 高知県南国市里改田２６０７",
+          "fetched_at": "2026-11-12T10:48:25.282261+00:00",
+          "kind": "evacuation",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T10:47:57.383187+00:00",
+              "kind": "catalog",
+              "page_hash": "5253a0c2d8a9a843d1f0f3e6a1229988cd5aabbdb03ad8b44361e1ecae55b4b4",
+              "url": "https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=6794"
+            },
+            {
+              "fetched_at": "2026-11-12T10:48:23.165725+00:00",
+              "kind": "terms",
+              "page_hash": "6264bef844061cc96c0365998ae9515619164fc02838f1782742e3147e485422",
+              "url": "https://www.city.nankoku.lg.jp/download/?t=LD&id=6794&fid=69873"
+            }
+          ],
+          "license_observation": "公開一覧本文が市所管の避難場所表として実リンクし、規約PDF第1・第7(3)で出典・加工表示とCC BY4.0互換を明記。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 40（ヘッダを1行目として数える）: 名称・名称_カナ・住所",
+          "name_raw": "琴平神社",
+          "page_hash": "ca0796efeb1c563020664bdfb40554bd8f25980898db6bf8fda0bea9c83bc4d0",
+          "processed_notice": "名称・全文読み・全所在地を個別照合して読みのみ補完。原資料の表記・全住所・施設IDを保持。",
+          "reading_raw": "コトヒラジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "南国市",
+          "title": "南国市 指定緊急避難場所一覧",
+          "url": "https://www.city.nankoku.lg.jp/file/opendata/2021_hinansho.csv",
+          "verification_method": "individual_source_review: exact independent full shrine name kana and complete original parcel in municipal evacuation CSV"
+        }
+      ],
+      "status": "verified"
+    },
     "2899a4d5-3b5e-5915-8a3c-353b361b1a12": {
       "changes": {
         "reading": "ふじせんげんじんじゃ"

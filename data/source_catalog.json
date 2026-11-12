@@ -41228,6 +41228,12 @@
           "verified_facilities": 4212
         },
         "checked_at": "2026-11-09T10:04:17.973965+00:00",
+        "effective_entry_status_counts": {
+          "excluded": 2105,
+          "pending": 1742,
+          "verified": 367
+        },
+        "effective_pending_entries": 1742,
         "facilities_collected": 4214,
         "fields_observed": {
           "address": 4214,
@@ -43028,6 +43034,18 @@
         },
         "listing_authority_status": "agency_site",
         "missing_listing_pages": [],
+        "nankoku_evacuation_reading_and_tosa_stop_followup": {
+          "checked_at": "2026-11-12T10:52:01.549684+00:00",
+          "data_rows": 99,
+          "entry_ids": [
+            "288dc398-78bc-5bb9-af9e-62baa910f11a"
+          ],
+          "evidence_data": "data/corrections.json; data/reading_research.json",
+          "inspected_targets": 75,
+          "license": "CC-BY-4.0",
+          "scope": "原住所が高知県南国市で始まる現保留75登録を指定緊急避難場所CSV99行と照合し、琴平神社1登録のみ採用。土佐市63登録はCSV未取得のため照合件数に含めない。",
+          "verified_entries": 1
+        },
         "pages_fetched": 352,
         "published_cms_total": 4215,
         "published_total": 4215,
@@ -43083,13 +43101,13 @@
         "supplemental_reading_facilities": 656,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 1741,
+            "insufficient_evidence_in_inspected_sources": 1740,
             "investigation_incomplete": 0,
             "judgment_required": 2
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 1748,
-          "unfinished_entries": 1743
+          "unfinished_entries": 1742
         },
         "unresolved_blank_rows": 1,
         "unresolved_source_records": 1
@@ -44825,7 +44843,7 @@
       "unresolved": 3
     },
     "effective_dictionary_rows": 13699,
-    "effective_verified_facilities": 44343,
+    "effective_verified_facilities": 44344,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
