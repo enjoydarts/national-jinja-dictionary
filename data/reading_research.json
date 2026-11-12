@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "99a34f0b2ba85b76ee3222e5364091d5adec9b38c9445bba420bd5df68d88830",
+    "corrections.json": "2134dae066a690af4b2e930454bf8d99f9ea6dd9eb49cf381e996b0c48860c54",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "a013294ba32fdf4cd13cb0b4476f2bed40bee8d2898700ced078d3363f4da07f",
@@ -14997,24 +14997,40 @@
         "registered_reading_candidates": 1,
         "retained_pending_entries": 105,
         "scope": "佐賀の現保留105登録の神社庁本文所定欄、県住所表示資料の当該2ページと案内本文、旧住所5登録の国税庁限定照合。海童神社1候補は個別審査未了で未採用。"
+      },
+      {
+        "checked_at": "2026-11-12T23:29:26.933042+00:00",
+        "entry_ids": [
+          "e299d2bd-9623-5b78-90ea-a29cd4cd9dc3"
+        ],
+        "inspected_candidates": 1,
+        "new_verified_entries": 1,
+        "retained_pending_entries": 0,
+        "scope": "海童神社の旧佐賀郡川副町大字犬井道624と現在の佐賀市川副町大字犬井道624番地を、県の住所表示資料に束縛して個別照合した1登録。全国・県内全保留の解決を意味しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-12T23:29:26.933042+00:00",
+      "checked_at": "2026-11-12T23:39:37.887146+00:00",
       "entry_ids": [
-        "e299d2bd-9623-5b78-90ea-a29cd4cd9dc3"
+        "0332b44f-59ae-5e33-97e8-2d0c2a7515b8",
+        "a29d9384-3aff-55c8-8073-54f587ea7578",
+        "a820340f-fcda-560e-8cb8-eca4044fc82b",
+        "cc35e457-6e64-56ea-aaa7-b25ef0ebc6e8"
       ],
       "inspected_candidates": 1,
+      "inspected_targets": 4,
+      "new_judgment_required_entries": 2,
       "new_verified_entries": 1,
-      "retained_pending_entries": 0,
-      "scope": "海童神社の旧佐賀郡川副町大字犬井道624と現在の佐賀市川副町大字犬井道624番地を、県の住所表示資料に束縛して個別照合した1登録。全国・県内全保留の解決を意味しない。"
+      "retained_pending_entries": 3,
+      "scope": "県の佐賀市合併表示例を用いて旧住所4登録を個別再点検。新北神社1件は全1073所在地とWikipedia本文の独立全文かなを確認。香椎・志賀の相違2件を要判断へ、大堂の空フリガナは保留。全国・県内全保留の解決ではない。"
     },
-    "remaining_unfinished_entries": 10587,
+    "remaining_unfinished_entries": 10586,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
       "018463aa-3caf-5db7-8074-26b05d6226ce",
       "025c0c48-49d2-54bb-8b36-4822d2f18c64",
+      "0332b44f-59ae-5e33-97e8-2d0c2a7515b8",
       "03bcdfcb-ff36-5110-b9a1-c4acfac8f309",
       "03f133ee-aa74-5db1-a07d-937cb0bc52a6",
       "046a46a0-c627-550d-a865-9069fe1b90ba",
@@ -15296,7 +15312,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-12T23:29:26.933042+00:00",
+  "computed_at": "2026-11-12T23:39:37.887146+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -109570,6 +109586,565 @@
       "source_publisher": "国税庁・佐賀県",
       "status": "one_registered_full_reading_adopted_with_documented_municipality_prefix_proof",
       "target_entries": 1
+    },
+    {
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:46:11.067129+00:00",
+              "evidence_attempt": "kojiki_northern_kyushu_articles_20261112_fukuoka-saga",
+              "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
+              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、別途同定調査を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "佐賀県佐賀市諸富町大字為重1073",
+                "checked_at": "2026-11-12T06:21:41.604141+00:00",
+                "fetched_at": "2026-11-12T06:21:41.596677+00:00",
+                "name_raw": "新北神社",
+                "page_hash": "1cb8aaf3a6c285927138c0ad7eda28dc52094265bd1de14c948897f66e135e3c",
+                "reading_context_raw": "新北神社（にきたじんじゃ）は",
+                "reading_raw": "にきたじんじゃ",
+                "subject_title_raw": "新北神社　佐賀県佐賀市諸富町為重",
+                "url": "https://www.buccyake-kojiki.com/archives/1060242985.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:42:13.953769+00:00",
+              "evidence_attempt": "saga_preserved_tree_list_unavailable_20261112",
+              "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
+              "observation": "資料探索の対象集合のみ。旧保存樹PDFは404で本文・画像未取得、現行の実索引範囲にPDF実hrefなし。検索抜粋の名前・読み・所在地を採用せず、樹の所在地を神社全所在地へ流用しない。",
+              "result": "old_pdf_404_no_current_actual_pdf_link",
+              "source_kind": "municipal_source_availability",
+              "source_publisher": "佐賀市",
+              "status": "source_availability_checked_pdf_unavailable"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T09:25:16.800929+00:00",
+              "evidence_attempt": "wikipedia_cached_literal_full_kana_scope_recheck_20261112",
+              "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
+              "observation": "取得済み同hash本文の主名称かな段落と単一infoboxの名称・全所在地を再点検。原掲載の正式名・全所在地と独立全文かなの対応が解決せず保留を維持。別市町村・別地番・字名相違・冠称や長名・空白を削って一致させず、部分読みへの語尾追加や同名別施設の読み流用をしない。限定点検であり記事全体の情報不存在や全国完了を意味しない。",
+              "observed_infobox_facts": [
+                {
+                  "addresses": [
+                    {
+                      "address_raw": "佐賀県佐賀市諸富町大字為重1073番地",
+                      "layout": {}
+                    }
+                  ],
+                  "header_raw": "新北神社",
+                  "table_index": 1
+                }
+              ],
+              "reference": {
+                "fetched_at": "2026-11-09T05:24:00.108684+00:00",
+                "page_hash": "e3f2dd030f3e21a129921ca43fc9a94124790bea5efacebf96159c9cd08b9eec",
+                "revision_ids": [
+                  "111682417"
+                ],
+                "url": "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%8C%97%E7%A5%9E%E7%A4%BE"
+              },
+              "source_kind": "encyclopedia",
+              "source_publisher": "Wikipedia共同編集者",
+              "status": "cached_literal_full_kana_scope_rechecked_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T23:17:59.895926+00:00",
+              "evidence_attempt": "saga_105_native_profile_full_reading_fields_recheck_20261113",
+              "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
+              "observation": "原名・原所在地に対応する神社庁本文を再点検したが、所定の独立全文かな欄・社名直結括弧かな・rubyは確認できず保留。祭神や地名の読みを社名へ合成せず、同名別施設から流用しない。",
+              "reference": {
+                "address_raw": "佐賀郡諸富町為重１０７３",
+                "canonical_reference": {
+                  "fetched_at": "2026-11-08T14:34:38.026484+00:00",
+                  "locator": "h1#pageTit; div.entry-content p=【鎮座地】",
+                  "page_hash": "646e9e9f721511d3f6a61ac1d0b14cd8a5aa128bfd1b1644c1ea9f73c7e987b5",
+                  "url": "https://saga-jinjacho.jp/%e6%96%b0%e5%8c%97%e7%a5%9e%e7%a4%be/"
+                },
+                "external_content_links": [],
+                "fetched_at": "2026-11-12T23:11:31.769367+00:00",
+                "formal_name_literal_kana_pairs": [],
+                "locator": "h1#pageTit と div.entry-content の【鎮座地】欄、同領域の独立読み欄・社名直結括弧かな・ruby・外部HTML実リンク。庁連絡先のサイドバーは分離。",
+                "name_raw": "新北神社",
+                "original_full_body_hash_matches": true,
+                "page_hash": "646e9e9f721511d3f6a61ac1d0b14cd8a5aa128bfd1b1644c1ea9f73c7e987b5",
+                "ruby_reading_observed": false,
+                "scope": "保存済み原掲載ページの所定欄を追加点検。本文全体hash差を原名・住所の差と同一視せず、原正本は更新しない。",
+                "source_kind": "agency",
+                "source_labels": [
+                  "【鎮座地】",
+                  "【祭神】",
+                  "【祭礼】",
+                  "【由緒】"
+                ],
+                "source_publisher": "佐賀県神社庁",
+                "typed_reading_fields": [],
+                "url": "https://saga-jinjacho.jp/%e6%96%b0%e5%8c%97%e7%a5%9e%e7%a4%be/"
+              },
+              "source_kind": "agency",
+              "source_publisher": "佐賀県神社庁",
+              "status": "native_name_address_match_no_full_reading_in_inspected_fields"
+            },
+            {
+              "address_change_reference": {
+                "document_pages": 10,
+                "fetched_at": "2026-11-12T23:13:19.181467+00:00",
+                "inspected_pdf_pages": [
+                  1,
+                  2
+                ],
+                "inspection_method": "PDFKitによる抽出と当該2ページの描画画像の目視確認",
+                "literal_examples": [
+                  {
+                    "current_raw": "佐賀市諸富町大字諸富津○○番地",
+                    "former_raw": "佐賀郡諸富町大字諸富津○○番地",
+                    "pdf_page": 1
+                  },
+                  {
+                    "current_raw": "佐賀市川副町大字鹿江○○番地",
+                    "former_raw": "佐賀郡川副町大字鹿江○○番地",
+                    "pdf_page": 2
+                  },
+                  {
+                    "current_raw": "佐賀市久保田町大字新田○○番地",
+                    "former_raw": "佐賀郡久保田町大字新田○○番地",
+                    "pdf_page": 2
+                  }
+                ],
+                "locator": "1ページ(5)佐賀市 H17.10.1合併と2ページ(11)佐賀市 H19.10.1合併の住所表示例。残8ページの有田町字名・番地対照は今回の対応判断へ使用しない。",
+                "page_hash": "19ef4a4d2ff1ece43a6e2bb8ef9822b1766f77367cf9528c5cfc47dcac100308",
+                "scope": "住所変更の表示例であり神社の個別所在地・全文読みを掲載した資料ではない。例示地名を犬井道など当該神社の住所へ書き換えた引用は作らない。",
+                "source_publisher": "佐賀県",
+                "title": "合併市町村の住所表記の取扱いについて",
+                "url": "https://www.pref.saga.lg.jp/kiji00329259/3_29259_6_chouazamei.pdf"
+              },
+              "adopted": false,
+              "catalog_reference": {
+                "actual_pdf_href": "3_29259_6_chouazamei.pdf",
+                "authority_observation": "佐賀県ホームページ本文が旧合併特例法下の再編と平成19年10月1日の川副町・東与賀町・久保田町の合併を説明し、当該住所表記PDFを添付リンクとして直接案内。庁footer自己表示を確認。",
+                "fetched_at": "2026-11-12T23:15:38.759607+00:00",
+                "page_hash": "9f4f4e2c1214a5f837e90f6305f919f079ceacaaaf17982e52ab3cfd42d5579f",
+                "source_publisher": "佐賀県",
+                "title": "佐賀県内における市町村合併の状況",
+                "url": "https://www.pref.saga.lg.jp/kiji00329259/index.html"
+              },
+              "checked_at": "2026-11-12T23:17:59.895926+00:00",
+              "diagnostic": {
+                "active_name_full_mapped_address_matches": 0,
+                "candidates": [],
+                "diagnostic_comparison_address": "佐賀市諸富町為重１０７３",
+                "entry_id": "0332b44f-59ae-5e33-97e8-2d0c2a7515b8",
+                "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
+                "facility_id": "95b64301-eecd-55f3-a6ff-944299f3d56e",
+                "mapping": {
+                  "current_prefix": "佐賀市諸富町",
+                  "former_prefix": "佐賀郡諸富町",
+                  "pdf_page": 1
+                },
+                "name_raw": "新北神社",
+                "original_address": "佐賀郡諸富町為重１０７３",
+                "original_address_preserved": true,
+                "status": "address_change_diagnostic_only_not_applied"
+              },
+              "evidence_attempt": "saga_prefectural_former_current_address_examples_and_five_registered_candidates_20261113",
+              "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
+              "observation": "県の住所表示例を受け、比較用の旧自治体接頭辞だけを置いた限定診断。原住所・正式名・読み・補正は変更しない。国税庁の旧名原住所での不一致記録も保持し、合併前後の対応根拠の個別検証前に採用しない。",
+              "source_kind": "government_municipal_address_change",
+              "source_publisher": "佐賀県・国税庁",
+              "status": "former_current_address_screen_no_unique_registered_match"
+            }
+          ],
+          "address": "佐賀郡諸富町為重１０７３",
+          "agency_listing_url": "https://saga-jinjacho.jp/%e6%96%b0%e5%8c%97%e7%a5%9e%e7%a4%be/",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "0332b44f-59ae-5e33-97e8-2d0c2a7515b8",
+          "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
+          "facility_id": "95b64301-eecd-55f3-a6ff-944299f3d56e",
+          "listed_name": "新北神社",
+          "nta_result": "no unique active exact name/full-address corporate identity",
+          "prefecture": "佐賀県",
+          "prefecture_code": "41",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "新北神社",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T05:24:00.108684+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "e3f2dd030f3e21a129921ca43fc9a94124790bea5efacebf96159c9cd08b9eec",
+              "result": "one exact full-name lead reading required",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%8C%97%E7%A5%9E%E7%A4%BE"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        }
+      ],
+      "attempt_id": "saga_nikita_literal_wikipedia_full_reading_and_three_former_address_holds_20261113",
+      "checked_at": "2026-11-12T23:39:37.887146+00:00",
+      "independent_review": {
+        "checked_at": "2026-11-12T23:39:03.496360+00:00",
+        "data_status": "verified",
+        "proposal_sha256": "388fd4d6b7d1eae90244378dea017c60234952760b3ae9807c85caa9e4b3934f",
+        "reviewed_entry_ids": [
+          "0332b44f-59ae-5e33-97e8-2d0c2a7515b8"
+        ],
+        "scope": "県の住所表記資料1ページと原掲載の旧全住所、Wikipedia固定版の主名称・全文かな・全1073所在地を独立点検。同名登録法人1080の読みは使わない。"
+      },
+      "manual_resolved_entry_ids": [
+        "0332b44f-59ae-5e33-97e8-2d0c2a7515b8"
+      ],
+      "new_judgment_required_entries": 2,
+      "new_verified_entries": 1,
+      "observation": "主名称と括弧の間に半角空白がある実本文を個別確認し、にきたじんじゃを採用。原名・旧全住所・原文hashを保持する。同名国税庁法人の1080は読み根拠にしない。国税庁照合は取得済み20261111までの状態であり現在最新ではない。本文全体・画像・CSV/ZIP・キャッシュ・個人情報は保存しない。",
+      "registered_address_observations": [
+        {
+          "entry_id": "0332b44f-59ae-5e33-97e8-2d0c2a7515b8",
+          "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
+          "facility_id": "95b64301-eecd-55f3-a6ff-944299f3d56e",
+          "name_raw": "新北神社",
+          "observation": "同名法人の所在地は為重1080番地で、原神社庁・Wikipediaの1073番地とは異なる。当該法人のニキタジンジャを1073の施設へ流用せず、法人と当該施設の同一性を主張しない。今回の読み根拠は全1073の所在地に対応するWikipediaの主名称かなである。",
+          "original_address": "佐賀郡諸富町為重１０７３",
+          "registered_name_rows": [
+            {
+              "address_image_id": "",
+              "address_raw": "佐賀県佐賀市諸富町大字為重１０８０番地",
+              "city_name_raw": "佐賀市",
+              "close_date": "",
+              "corporate_number": "3300005000994",
+              "csv_row": 7919,
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "新北神社",
+              "process": "12",
+              "reading_raw": "ニキタジンジャ",
+              "reference": {
+                "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                "file_id": "28484",
+                "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              },
+              "street_number_raw": "諸富町大字為重１０８０番地",
+              "zip_member": "41_saga_all_20261030.csv"
+            }
+          ],
+          "status": "independent_wikipedia_1073_reading_adopted_registry_1080_excluded"
+        },
+        {
+          "entry_id": "a29d9384-3aff-55c8-8073-54f587ea7578",
+          "expected_source_hash": "20752a91bfdf913a647bd35ba46a73f654d127e8a6dcf3932e58615e1a6ce312",
+          "facility_id": "27fa8870-b44f-51be-96b0-09f3cb581141",
+          "name_raw": "香椎神社",
+          "observation": "原地域の徳萬1550と佐賀市の登録法人の徳万1556は、字形と地番が異なる。誤植・移転と推測せず要判断へ。佐賀市の該当行はフリガナ空欄で、鳥栖市牛原町936の別法人カシイジンジャは流用しない。",
+          "original_address": "佐賀郡久保田町大字徳萬１５５０",
+          "registered_name_rows": [
+            {
+              "address_image_id": "",
+              "address_raw": "佐賀県神埼市千代田町餘江５５９番地",
+              "city_name_raw": "神埼市",
+              "close_date": "",
+              "corporate_number": "2300005002083",
+              "csv_row": 5131,
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "香椎神社",
+              "process": "01",
+              "reading_raw": "",
+              "reference": {
+                "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                "file_id": "28484",
+                "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              },
+              "street_number_raw": "千代田町餘江５５９番地",
+              "zip_member": "41_saga_all_20261030.csv"
+            },
+            {
+              "address_image_id": "",
+              "address_raw": "佐賀県佐賀市久保田町大字徳万１５５６番地",
+              "city_name_raw": "佐賀市",
+              "close_date": "",
+              "corporate_number": "4300005000911",
+              "csv_row": 10705,
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "香椎神社",
+              "process": "01",
+              "reading_raw": "",
+              "reference": {
+                "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                "file_id": "28484",
+                "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              },
+              "street_number_raw": "久保田町大字徳万１５５６番地",
+              "zip_member": "41_saga_all_20261030.csv"
+            },
+            {
+              "address_image_id": "",
+              "address_raw": "佐賀県鳥栖市牛原町９３６番地",
+              "city_name_raw": "鳥栖市",
+              "close_date": "",
+              "corporate_number": "7300005004620",
+              "csv_row": 19409,
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "香椎神社",
+              "process": "01",
+              "reading_raw": "カシイジンジャ",
+              "reference": {
+                "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                "file_id": "28484",
+                "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              },
+              "street_number_raw": "牛原町９３６番地",
+              "zip_member": "41_saga_all_20261030.csv"
+            }
+          ],
+          "status": "former_address_conflict_requires_judgment"
+        },
+        {
+          "entry_id": "a820340f-fcda-560e-8cb8-eca4044fc82b",
+          "expected_source_hash": "80592562946571fc9f1d13653da91791d06741d27c680696481e06805fd98bb2",
+          "facility_id": "01b68c46-3649-55aa-9fb1-87140c31c480",
+          "name_raw": "志賀神社",
+          "observation": "原地域早津江400に対しWikipediaと登録法人は早津江津400。県の自治体名の対応は津の追加を証明しない。津を削除せず要判断へ。既報記事の399-3も異なる地番として保持する。",
+          "original_address": "佐賀郡川副町早津江400",
+          "registered_name_rows": [
+            {
+              "address_image_id": "",
+              "address_raw": "佐賀県伊万里市瀬戸町４４４番地",
+              "city_name_raw": "伊万里市",
+              "close_date": "",
+              "corporate_number": "3300005004277",
+              "csv_row": 8145,
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "志賀神社",
+              "process": "01",
+              "reading_raw": "",
+              "reference": {
+                "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                "file_id": "28484",
+                "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              },
+              "street_number_raw": "瀬戸町４４４番地",
+              "zip_member": "41_saga_all_20261030.csv"
+            },
+            {
+              "address_image_id": "",
+              "address_raw": "佐賀県佐賀市川副町大字早津江津４００番地",
+              "city_name_raw": "佐賀市",
+              "close_date": "",
+              "corporate_number": "6300005000967",
+              "csv_row": 16356,
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "志賀神社",
+              "process": "01",
+              "reading_raw": "",
+              "reference": {
+                "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                "file_id": "28484",
+                "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              },
+              "street_number_raw": "川副町大字早津江津４００番地",
+              "zip_member": "41_saga_all_20261030.csv"
+            },
+            {
+              "address_image_id": "",
+              "address_raw": "佐賀県伊万里市東山代町里３４８番地",
+              "city_name_raw": "伊万里市",
+              "close_date": "",
+              "corporate_number": "8300005004215",
+              "csv_row": 22156,
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "志賀神社",
+              "process": "01",
+              "reading_raw": "",
+              "reference": {
+                "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                "file_id": "28484",
+                "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              },
+              "street_number_raw": "東山代町里３４８番地",
+              "zip_member": "41_saga_all_20261030.csv"
+            }
+          ],
+          "status": "former_address_conflict_requires_judgment",
+          "wikipedia_followup": {
+            "documented_prefix_probe": {
+              "change_reference": {
+                "checked_at": "2026-11-12T23:35:01.914419+00:00",
+                "current_example_raw": "佐賀市川副町大字鹿江○○番地",
+                "effective_date": "2007-10-01",
+                "fetched_at": "2026-11-12T23:13:19.181467+00:00",
+                "former_example_raw": "佐賀郡川副町大字鹿江○○番地",
+                "locator": "2ページ(11)佐賀市 H19.10.1合併の旧川副町の住所表示例。",
+                "page_hash": "19ef4a4d2ff1ece43a6e2bb8ef9822b1766f77367cf9528c5cfc47dcac100308",
+                "pdf_page": 2,
+                "source_publisher": "佐賀県",
+                "url": "https://www.pref.saga.lg.jp/kiji00329259/3_29259_6_chouazamei.pdf"
+              },
+              "entry_id": "a820340f-fcda-560e-8cb8-eca4044fc82b",
+              "expected_source_hash": "80592562946571fc9f1d13653da91791d06741d27c680696481e06805fd98bb2",
+              "facility_id": "01b68c46-3649-55aa-9fb1-87140c31c480",
+              "kind": "documented_municipality_prefix_change",
+              "listing_address_raw": "佐賀郡川副町早津江400",
+              "reference_address_raw": "佐賀県佐賀市川副町大字早津江津400",
+              "reference_page_hash": "dd364a58e9b98bf15863b90f375b1c21e55d69f8da36a0422eab2826e028338a",
+              "reference_url": "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E7%A5%9E%E7%A4%BE"
+            },
+            "full_address_matches_after_documented_prefix_change": false,
+            "observation": "元早津江400と資料早津江津400の町域差は県の自治体接頭辞変更では解消しない。津を削除せず保留。",
+            "reference": {
+              "acquisition_method": "individual_source_review",
+              "address_raw": "佐賀県佐賀市川副町大字早津江津400",
+              "checked_at": "2026-11-12T23:38:39.389132+00:00",
+              "excerpt": "志賀神社（しがじんじゃ） / 佐賀県佐賀市川副町大字早津江津400",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+              "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+              "name_raw": "志賀神社",
+              "page_hash": "dd364a58e9b98bf15863b90f375b1c21e55d69f8da36a0422eab2826e028338a",
+              "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%BF%97%E8%B3%80%E7%A5%9E%E7%A4%BE&oldid=101834689",
+              "reading_raw": "しがじんじゃ",
+              "revision_id": 101834689,
+              "source_kind": "encyclopedia",
+              "source_publisher": "Wikipedia共同編集者",
+              "title": "志賀神社",
+              "url": "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E7%A5%9E%E7%A4%BE",
+              "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
+            }
+          }
+        },
+        {
+          "entry_id": "cc35e457-6e64-56ea-aaa7-b25ef0ebc6e8",
+          "expected_source_hash": "1991df87f002245eda915058e237727145c40837ad17a51aafb2e140dbe31519",
+          "facility_id": "da5e6f9d-d27d-5543-94b9-5b1327041959",
+          "name_raw": "大堂神社",
+          "observation": "原所在地の全漢数字六九五と登録住所の695を原値で記録。原住所にアラビア数字の地番がないため今回の自治体接頭辞証拠の自動対象とは扱わず、フリガナ空欄の登録行からも読みを生成しない。新たな読みの資料が必要。",
+          "original_address": "佐賀郡諸富町大堂六九五",
+          "registered_name_rows": [
+            {
+              "address_image_id": "",
+              "address_raw": "佐賀県佐賀市諸富町大字大堂６９５番地",
+              "city_name_raw": "佐賀市",
+              "close_date": "",
+              "corporate_number": "8300005000957",
+              "csv_row": 21933,
+              "kind": "399",
+              "latest": "1",
+              "name_image_id": "",
+              "name_raw": "大堂神社",
+              "process": "01",
+              "reading_raw": "",
+              "reference": {
+                "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                "file_id": "28484",
+                "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              },
+              "street_number_raw": "諸富町大字大堂６９５番地",
+              "zip_member": "41_saga_all_20261030.csv"
+            }
+          ],
+          "status": "registered_furigana_absent_kanji_parcel_not_automatically_bound"
+        }
+      ],
+      "registry_daily_evidence": [
+        {
+          "date": "20261102",
+          "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+          "file_id": "28508",
+          "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+          "rows": 2346
+        },
+        {
+          "date": "20261104",
+          "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+          "file_id": "28511",
+          "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+          "rows": 2156
+        },
+        {
+          "date": "20261105",
+          "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+          "file_id": "28514",
+          "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+          "rows": 2183
+        },
+        {
+          "date": "20261106",
+          "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+          "file_id": "28517",
+          "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+          "rows": 2617
+        },
+        {
+          "date": "20261109",
+          "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+          "file_id": "28520",
+          "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+          "rows": 2362
+        },
+        {
+          "date": "20261110",
+          "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+          "file_id": "28523",
+          "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+          "rows": 2642
+        },
+        {
+          "date": "20261111",
+          "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+          "file_id": "28526",
+          "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+          "rows": 2692
+        }
+      ],
+      "registry_snapshot_evidence": [
+        {
+          "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+          "file_id": "28484",
+          "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+          "rows": 25310,
+          "snapshot": "20261030"
+        }
+      ],
+      "retained_candidate_entries": 3,
+      "scope": "県の佐賀市合併表示例を用いて旧住所4登録を個別再点検。新北神社1件は全1073所在地とWikipedia本文の独立全文かなを確認。香椎・志賀の相違2件を要判断へ、大堂の空フリガナは保留。全国・県内全保留の解決ではない。",
+      "source_kind": "encyclopedia",
+      "source_publisher": "Wikipedia共同編集者・佐賀県・国税庁",
+      "status": "nikita_wikipedia_full_reading_adopted_three_holds_preserved",
+      "target_entries": 4
     }
   ],
   "per_prefecture": {
@@ -109895,11 +110470,11 @@
     },
     "41": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 104,
+        "insufficient_evidence_in_inspected_sources": 101,
         "investigation_incomplete": 0,
-        "judgment_required": 0
+        "judgment_required": 2
       },
-      "unfinished_entries": 104
+      "unfinished_entries": 103
     },
     "42": {
       "categories": {
@@ -621962,204 +622537,6 @@
       "additional_source_reviews": [
         {
           "adopted": false,
-          "checked_at": "2026-11-12T06:46:11.067129+00:00",
-          "evidence_attempt": "kojiki_northern_kyushu_articles_20261112_fukuoka-saga",
-          "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
-          "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、別途同定調査を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "佐賀県佐賀市諸富町大字為重1073",
-            "checked_at": "2026-11-12T06:21:41.604141+00:00",
-            "fetched_at": "2026-11-12T06:21:41.596677+00:00",
-            "name_raw": "新北神社",
-            "page_hash": "1cb8aaf3a6c285927138c0ad7eda28dc52094265bd1de14c948897f66e135e3c",
-            "reading_context_raw": "新北神社（にきたじんじゃ）は",
-            "reading_raw": "にきたじんじゃ",
-            "subject_title_raw": "新北神社　佐賀県佐賀市諸富町為重",
-            "url": "https://www.buccyake-kojiki.com/archives/1060242985.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:42:13.953769+00:00",
-          "evidence_attempt": "saga_preserved_tree_list_unavailable_20261112",
-          "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
-          "observation": "資料探索の対象集合のみ。旧保存樹PDFは404で本文・画像未取得、現行の実索引範囲にPDF実hrefなし。検索抜粋の名前・読み・所在地を採用せず、樹の所在地を神社全所在地へ流用しない。",
-          "result": "old_pdf_404_no_current_actual_pdf_link",
-          "source_kind": "municipal_source_availability",
-          "source_publisher": "佐賀市",
-          "status": "source_availability_checked_pdf_unavailable"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T09:25:16.800929+00:00",
-          "evidence_attempt": "wikipedia_cached_literal_full_kana_scope_recheck_20261112",
-          "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
-          "observation": "取得済み同hash本文の主名称かな段落と単一infoboxの名称・全所在地を再点検。原掲載の正式名・全所在地と独立全文かなの対応が解決せず保留を維持。別市町村・別地番・字名相違・冠称や長名・空白を削って一致させず、部分読みへの語尾追加や同名別施設の読み流用をしない。限定点検であり記事全体の情報不存在や全国完了を意味しない。",
-          "observed_infobox_facts": [
-            {
-              "addresses": [
-                {
-                  "address_raw": "佐賀県佐賀市諸富町大字為重1073番地",
-                  "layout": {}
-                }
-              ],
-              "header_raw": "新北神社",
-              "table_index": 1
-            }
-          ],
-          "reference": {
-            "fetched_at": "2026-11-09T05:24:00.108684+00:00",
-            "page_hash": "e3f2dd030f3e21a129921ca43fc9a94124790bea5efacebf96159c9cd08b9eec",
-            "revision_ids": [
-              "111682417"
-            ],
-            "url": "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%8C%97%E7%A5%9E%E7%A4%BE"
-          },
-          "source_kind": "encyclopedia",
-          "source_publisher": "Wikipedia共同編集者",
-          "status": "cached_literal_full_kana_scope_rechecked_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T23:17:59.895926+00:00",
-          "evidence_attempt": "saga_105_native_profile_full_reading_fields_recheck_20261113",
-          "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
-          "observation": "原名・原所在地に対応する神社庁本文を再点検したが、所定の独立全文かな欄・社名直結括弧かな・rubyは確認できず保留。祭神や地名の読みを社名へ合成せず、同名別施設から流用しない。",
-          "reference": {
-            "address_raw": "佐賀郡諸富町為重１０７３",
-            "canonical_reference": {
-              "fetched_at": "2026-11-08T14:34:38.026484+00:00",
-              "locator": "h1#pageTit; div.entry-content p=【鎮座地】",
-              "page_hash": "646e9e9f721511d3f6a61ac1d0b14cd8a5aa128bfd1b1644c1ea9f73c7e987b5",
-              "url": "https://saga-jinjacho.jp/%e6%96%b0%e5%8c%97%e7%a5%9e%e7%a4%be/"
-            },
-            "external_content_links": [],
-            "fetched_at": "2026-11-12T23:11:31.769367+00:00",
-            "formal_name_literal_kana_pairs": [],
-            "locator": "h1#pageTit と div.entry-content の【鎮座地】欄、同領域の独立読み欄・社名直結括弧かな・ruby・外部HTML実リンク。庁連絡先のサイドバーは分離。",
-            "name_raw": "新北神社",
-            "original_full_body_hash_matches": true,
-            "page_hash": "646e9e9f721511d3f6a61ac1d0b14cd8a5aa128bfd1b1644c1ea9f73c7e987b5",
-            "ruby_reading_observed": false,
-            "scope": "保存済み原掲載ページの所定欄を追加点検。本文全体hash差を原名・住所の差と同一視せず、原正本は更新しない。",
-            "source_kind": "agency",
-            "source_labels": [
-              "【鎮座地】",
-              "【祭神】",
-              "【祭礼】",
-              "【由緒】"
-            ],
-            "source_publisher": "佐賀県神社庁",
-            "typed_reading_fields": [],
-            "url": "https://saga-jinjacho.jp/%e6%96%b0%e5%8c%97%e7%a5%9e%e7%a4%be/"
-          },
-          "source_kind": "agency",
-          "source_publisher": "佐賀県神社庁",
-          "status": "native_name_address_match_no_full_reading_in_inspected_fields"
-        },
-        {
-          "address_change_reference": {
-            "document_pages": 10,
-            "fetched_at": "2026-11-12T23:13:19.181467+00:00",
-            "inspected_pdf_pages": [
-              1,
-              2
-            ],
-            "inspection_method": "PDFKitによる抽出と当該2ページの描画画像の目視確認",
-            "literal_examples": [
-              {
-                "current_raw": "佐賀市諸富町大字諸富津○○番地",
-                "former_raw": "佐賀郡諸富町大字諸富津○○番地",
-                "pdf_page": 1
-              },
-              {
-                "current_raw": "佐賀市川副町大字鹿江○○番地",
-                "former_raw": "佐賀郡川副町大字鹿江○○番地",
-                "pdf_page": 2
-              },
-              {
-                "current_raw": "佐賀市久保田町大字新田○○番地",
-                "former_raw": "佐賀郡久保田町大字新田○○番地",
-                "pdf_page": 2
-              }
-            ],
-            "locator": "1ページ(5)佐賀市 H17.10.1合併と2ページ(11)佐賀市 H19.10.1合併の住所表示例。残8ページの有田町字名・番地対照は今回の対応判断へ使用しない。",
-            "page_hash": "19ef4a4d2ff1ece43a6e2bb8ef9822b1766f77367cf9528c5cfc47dcac100308",
-            "scope": "住所変更の表示例であり神社の個別所在地・全文読みを掲載した資料ではない。例示地名を犬井道など当該神社の住所へ書き換えた引用は作らない。",
-            "source_publisher": "佐賀県",
-            "title": "合併市町村の住所表記の取扱いについて",
-            "url": "https://www.pref.saga.lg.jp/kiji00329259/3_29259_6_chouazamei.pdf"
-          },
-          "adopted": false,
-          "catalog_reference": {
-            "actual_pdf_href": "3_29259_6_chouazamei.pdf",
-            "authority_observation": "佐賀県ホームページ本文が旧合併特例法下の再編と平成19年10月1日の川副町・東与賀町・久保田町の合併を説明し、当該住所表記PDFを添付リンクとして直接案内。庁footer自己表示を確認。",
-            "fetched_at": "2026-11-12T23:15:38.759607+00:00",
-            "page_hash": "9f4f4e2c1214a5f837e90f6305f919f079ceacaaaf17982e52ab3cfd42d5579f",
-            "source_publisher": "佐賀県",
-            "title": "佐賀県内における市町村合併の状況",
-            "url": "https://www.pref.saga.lg.jp/kiji00329259/index.html"
-          },
-          "checked_at": "2026-11-12T23:17:59.895926+00:00",
-          "diagnostic": {
-            "active_name_full_mapped_address_matches": 0,
-            "candidates": [],
-            "diagnostic_comparison_address": "佐賀市諸富町為重１０７３",
-            "entry_id": "0332b44f-59ae-5e33-97e8-2d0c2a7515b8",
-            "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
-            "facility_id": "95b64301-eecd-55f3-a6ff-944299f3d56e",
-            "mapping": {
-              "current_prefix": "佐賀市諸富町",
-              "former_prefix": "佐賀郡諸富町",
-              "pdf_page": 1
-            },
-            "name_raw": "新北神社",
-            "original_address": "佐賀郡諸富町為重１０７３",
-            "original_address_preserved": true,
-            "status": "address_change_diagnostic_only_not_applied"
-          },
-          "evidence_attempt": "saga_prefectural_former_current_address_examples_and_five_registered_candidates_20261113",
-          "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
-          "observation": "県の住所表示例を受け、比較用の旧自治体接頭辞だけを置いた限定診断。原住所・正式名・読み・補正は変更しない。国税庁の旧名原住所での不一致記録も保持し、合併前後の対応根拠の個別検証前に採用しない。",
-          "source_kind": "government_municipal_address_change",
-          "source_publisher": "佐賀県・国税庁",
-          "status": "former_current_address_screen_no_unique_registered_match"
-        }
-      ],
-      "address": "佐賀郡諸富町為重１０７３",
-      "agency_listing_url": "https://saga-jinjacho.jp/%e6%96%b0%e5%8c%97%e7%a5%9e%e7%a4%be/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "0332b44f-59ae-5e33-97e8-2d0c2a7515b8",
-      "expected_source_hash": "e167de1a1775ee0c959a91c1fbcf2a34668656f313728c46c9491a0d886cd082",
-      "facility_id": "95b64301-eecd-55f3-a6ff-944299f3d56e",
-      "listed_name": "新北神社",
-      "nta_result": "no unique active exact name/full-address corporate identity",
-      "prefecture": "佐賀県",
-      "prefecture_code": "41",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "新北神社",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T05:24:00.108684+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "e3f2dd030f3e21a129921ca43fc9a94124790bea5efacebf96159c9cd08b9eec",
-          "result": "one exact full-name lead reading required",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%96%B0%E5%8C%97%E7%A5%9E%E7%A4%BE"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
           "checked_at": "2026-11-12T07:42:13.953769+00:00",
           "evidence_attempt": "saga_preserved_tree_list_unavailable_20261112",
           "expected_source_hash": "42d631a4ea621d0974f02336911fcebc59de9e05e4fde6c3f676f05088328800",
@@ -626671,11 +627048,101 @@
           "source_kind": "government_municipal_address_change",
           "source_publisher": "佐賀県・国税庁",
           "status": "former_current_address_screen_no_unique_registered_match"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T23:39:37.887146+00:00",
+          "evidence_attempt": "saga_nikita_literal_wikipedia_full_reading_and_three_former_address_holds_20261113",
+          "expected_source_hash": "20752a91bfdf913a647bd35ba46a73f654d127e8a6dcf3932e58615e1a6ce312",
+          "observation": "原地域の徳萬1550と佐賀市の登録法人の徳万1556は、字形と地番が異なる。誤植・移転と推測せず要判断へ。佐賀市の該当行はフリガナ空欄で、鳥栖市牛原町936の別法人カシイジンジャは流用しない。",
+          "registered_observation": {
+            "entry_id": "a29d9384-3aff-55c8-8073-54f587ea7578",
+            "expected_source_hash": "20752a91bfdf913a647bd35ba46a73f654d127e8a6dcf3932e58615e1a6ce312",
+            "facility_id": "27fa8870-b44f-51be-96b0-09f3cb581141",
+            "name_raw": "香椎神社",
+            "observation": "原地域の徳萬1550と佐賀市の登録法人の徳万1556は、字形と地番が異なる。誤植・移転と推測せず要判断へ。佐賀市の該当行はフリガナ空欄で、鳥栖市牛原町936の別法人カシイジンジャは流用しない。",
+            "original_address": "佐賀郡久保田町大字徳萬１５５０",
+            "registered_name_rows": [
+              {
+                "address_image_id": "",
+                "address_raw": "佐賀県神埼市千代田町餘江５５９番地",
+                "city_name_raw": "神埼市",
+                "close_date": "",
+                "corporate_number": "2300005002083",
+                "csv_row": 5131,
+                "kind": "399",
+                "latest": "1",
+                "name_image_id": "",
+                "name_raw": "香椎神社",
+                "process": "01",
+                "reading_raw": "",
+                "reference": {
+                  "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                  "file_id": "28484",
+                  "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                  "snapshot": "20261030",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "street_number_raw": "千代田町餘江５５９番地",
+                "zip_member": "41_saga_all_20261030.csv"
+              },
+              {
+                "address_image_id": "",
+                "address_raw": "佐賀県佐賀市久保田町大字徳万１５５６番地",
+                "city_name_raw": "佐賀市",
+                "close_date": "",
+                "corporate_number": "4300005000911",
+                "csv_row": 10705,
+                "kind": "399",
+                "latest": "1",
+                "name_image_id": "",
+                "name_raw": "香椎神社",
+                "process": "01",
+                "reading_raw": "",
+                "reference": {
+                  "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                  "file_id": "28484",
+                  "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                  "snapshot": "20261030",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "street_number_raw": "久保田町大字徳万１５５６番地",
+                "zip_member": "41_saga_all_20261030.csv"
+              },
+              {
+                "address_image_id": "",
+                "address_raw": "佐賀県鳥栖市牛原町９３６番地",
+                "city_name_raw": "鳥栖市",
+                "close_date": "",
+                "corporate_number": "7300005004620",
+                "csv_row": 19409,
+                "kind": "399",
+                "latest": "1",
+                "name_image_id": "",
+                "name_raw": "香椎神社",
+                "process": "01",
+                "reading_raw": "カシイジンジャ",
+                "reference": {
+                  "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                  "file_id": "28484",
+                  "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                  "snapshot": "20261030",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "street_number_raw": "牛原町９３６番地",
+                "zip_member": "41_saga_all_20261030.csv"
+              }
+            ],
+            "status": "former_address_conflict_requires_judgment"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "status": "former_address_conflict_requires_judgment"
         }
       ],
       "address": "佐賀郡久保田町大字徳萬１５５０",
       "agency_listing_url": "https://saga-jinjacho.jp/%e9%a6%99%e6%a4%8e%e7%a5%9e%e7%a4%be/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
       "entry_id": "a29d9384-3aff-55c8-8073-54f587ea7578",
       "expected_source_hash": "20752a91bfdf913a647bd35ba46a73f654d127e8a6dcf3932e58615e1a6ce312",
       "facility_id": "27fa8870-b44f-51be-96b0-09f3cb581141",
@@ -627072,11 +627539,145 @@
           "source_kind": "government_municipal_address_change",
           "source_publisher": "佐賀県・国税庁",
           "status": "former_current_address_screen_no_unique_registered_match"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T23:39:37.887146+00:00",
+          "evidence_attempt": "saga_nikita_literal_wikipedia_full_reading_and_three_former_address_holds_20261113",
+          "expected_source_hash": "80592562946571fc9f1d13653da91791d06741d27c680696481e06805fd98bb2",
+          "observation": "原地域早津江400に対しWikipediaと登録法人は早津江津400。県の自治体名の対応は津の追加を証明しない。津を削除せず要判断へ。既報記事の399-3も異なる地番として保持する。",
+          "registered_observation": {
+            "entry_id": "a820340f-fcda-560e-8cb8-eca4044fc82b",
+            "expected_source_hash": "80592562946571fc9f1d13653da91791d06741d27c680696481e06805fd98bb2",
+            "facility_id": "01b68c46-3649-55aa-9fb1-87140c31c480",
+            "name_raw": "志賀神社",
+            "observation": "原地域早津江400に対しWikipediaと登録法人は早津江津400。県の自治体名の対応は津の追加を証明しない。津を削除せず要判断へ。既報記事の399-3も異なる地番として保持する。",
+            "original_address": "佐賀郡川副町早津江400",
+            "registered_name_rows": [
+              {
+                "address_image_id": "",
+                "address_raw": "佐賀県伊万里市瀬戸町４４４番地",
+                "city_name_raw": "伊万里市",
+                "close_date": "",
+                "corporate_number": "3300005004277",
+                "csv_row": 8145,
+                "kind": "399",
+                "latest": "1",
+                "name_image_id": "",
+                "name_raw": "志賀神社",
+                "process": "01",
+                "reading_raw": "",
+                "reference": {
+                  "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                  "file_id": "28484",
+                  "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                  "snapshot": "20261030",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "street_number_raw": "瀬戸町４４４番地",
+                "zip_member": "41_saga_all_20261030.csv"
+              },
+              {
+                "address_image_id": "",
+                "address_raw": "佐賀県佐賀市川副町大字早津江津４００番地",
+                "city_name_raw": "佐賀市",
+                "close_date": "",
+                "corporate_number": "6300005000967",
+                "csv_row": 16356,
+                "kind": "399",
+                "latest": "1",
+                "name_image_id": "",
+                "name_raw": "志賀神社",
+                "process": "01",
+                "reading_raw": "",
+                "reference": {
+                  "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                  "file_id": "28484",
+                  "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                  "snapshot": "20261030",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "street_number_raw": "川副町大字早津江津４００番地",
+                "zip_member": "41_saga_all_20261030.csv"
+              },
+              {
+                "address_image_id": "",
+                "address_raw": "佐賀県伊万里市東山代町里３４８番地",
+                "city_name_raw": "伊万里市",
+                "close_date": "",
+                "corporate_number": "8300005004215",
+                "csv_row": 22156,
+                "kind": "399",
+                "latest": "1",
+                "name_image_id": "",
+                "name_raw": "志賀神社",
+                "process": "01",
+                "reading_raw": "",
+                "reference": {
+                  "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                  "file_id": "28484",
+                  "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                  "snapshot": "20261030",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "street_number_raw": "東山代町里３４８番地",
+                "zip_member": "41_saga_all_20261030.csv"
+              }
+            ],
+            "status": "former_address_conflict_requires_judgment",
+            "wikipedia_followup": {
+              "documented_prefix_probe": {
+                "change_reference": {
+                  "checked_at": "2026-11-12T23:35:01.914419+00:00",
+                  "current_example_raw": "佐賀市川副町大字鹿江○○番地",
+                  "effective_date": "2007-10-01",
+                  "fetched_at": "2026-11-12T23:13:19.181467+00:00",
+                  "former_example_raw": "佐賀郡川副町大字鹿江○○番地",
+                  "locator": "2ページ(11)佐賀市 H19.10.1合併の旧川副町の住所表示例。",
+                  "page_hash": "19ef4a4d2ff1ece43a6e2bb8ef9822b1766f77367cf9528c5cfc47dcac100308",
+                  "pdf_page": 2,
+                  "source_publisher": "佐賀県",
+                  "url": "https://www.pref.saga.lg.jp/kiji00329259/3_29259_6_chouazamei.pdf"
+                },
+                "entry_id": "a820340f-fcda-560e-8cb8-eca4044fc82b",
+                "expected_source_hash": "80592562946571fc9f1d13653da91791d06741d27c680696481e06805fd98bb2",
+                "facility_id": "01b68c46-3649-55aa-9fb1-87140c31c480",
+                "kind": "documented_municipality_prefix_change",
+                "listing_address_raw": "佐賀郡川副町早津江400",
+                "reference_address_raw": "佐賀県佐賀市川副町大字早津江津400",
+                "reference_page_hash": "dd364a58e9b98bf15863b90f375b1c21e55d69f8da36a0422eab2826e028338a",
+                "reference_url": "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E7%A5%9E%E7%A4%BE"
+              },
+              "full_address_matches_after_documented_prefix_change": false,
+              "observation": "元早津江400と資料早津江津400の町域差は県の自治体接頭辞変更では解消しない。津を削除せず保留。",
+              "reference": {
+                "acquisition_method": "individual_source_review",
+                "address_raw": "佐賀県佐賀市川副町大字早津江津400",
+                "checked_at": "2026-11-12T23:38:39.389132+00:00",
+                "excerpt": "志賀神社（しがじんじゃ） / 佐賀県佐賀市川副町大字早津江津400",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+                "name_raw": "志賀神社",
+                "page_hash": "dd364a58e9b98bf15863b90f375b1c21e55d69f8da36a0422eab2826e028338a",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%BF%97%E8%B3%80%E7%A5%9E%E7%A4%BE&oldid=101834689",
+                "reading_raw": "しがじんじゃ",
+                "revision_id": 101834689,
+                "source_kind": "encyclopedia",
+                "source_publisher": "Wikipedia共同編集者",
+                "title": "志賀神社",
+                "url": "https://ja.wikipedia.org/wiki/%E5%BF%97%E8%B3%80%E7%A5%9E%E7%A4%BE",
+                "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
+              }
+            }
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "status": "former_address_conflict_requires_judgment"
         }
       ],
       "address": "佐賀郡川副町早津江400",
       "agency_listing_url": "https://saga-jinjacho.jp/%e5%bf%97%e8%b3%80%e7%a5%9e%e7%a4%be/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
       "entry_id": "a820340f-fcda-560e-8cb8-eca4044fc82b",
       "expected_source_hash": "80592562946571fc9f1d13653da91791d06741d27c680696481e06805fd98bb2",
       "facility_id": "01b68c46-3649-55aa-9fb1-87140c31c480",
@@ -628478,6 +629079,50 @@
           "source_kind": "government_municipal_address_change",
           "source_publisher": "佐賀県・国税庁",
           "status": "former_current_address_screen_no_unique_registered_match"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T23:39:37.887146+00:00",
+          "evidence_attempt": "saga_nikita_literal_wikipedia_full_reading_and_three_former_address_holds_20261113",
+          "expected_source_hash": "1991df87f002245eda915058e237727145c40837ad17a51aafb2e140dbe31519",
+          "observation": "原所在地の全漢数字六九五と登録住所の695を原値で記録。原住所にアラビア数字の地番がないため今回の自治体接頭辞証拠の自動対象とは扱わず、フリガナ空欄の登録行からも読みを生成しない。新たな読みの資料が必要。",
+          "registered_observation": {
+            "entry_id": "cc35e457-6e64-56ea-aaa7-b25ef0ebc6e8",
+            "expected_source_hash": "1991df87f002245eda915058e237727145c40837ad17a51aafb2e140dbe31519",
+            "facility_id": "da5e6f9d-d27d-5543-94b9-5b1327041959",
+            "name_raw": "大堂神社",
+            "observation": "原所在地の全漢数字六九五と登録住所の695を原値で記録。原住所にアラビア数字の地番がないため今回の自治体接頭辞証拠の自動対象とは扱わず、フリガナ空欄の登録行からも読みを生成しない。新たな読みの資料が必要。",
+            "original_address": "佐賀郡諸富町大堂六九五",
+            "registered_name_rows": [
+              {
+                "address_image_id": "",
+                "address_raw": "佐賀県佐賀市諸富町大字大堂６９５番地",
+                "city_name_raw": "佐賀市",
+                "close_date": "",
+                "corporate_number": "8300005000957",
+                "csv_row": 21933,
+                "kind": "399",
+                "latest": "1",
+                "name_image_id": "",
+                "name_raw": "大堂神社",
+                "process": "01",
+                "reading_raw": "",
+                "reference": {
+                  "fetched_at": "2026-11-12T12:58:29.590967+00:00",
+                  "file_id": "28484",
+                  "page_hash": "ee75e4b467689b7499fd6670431a5a49d5299224ab391889351fcf05d66003fc",
+                  "snapshot": "20261030",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "street_number_raw": "諸富町大字大堂６９５番地",
+                "zip_member": "41_saga_all_20261030.csv"
+              }
+            ],
+            "status": "registered_furigana_absent_kanji_parcel_not_automatically_bound"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "status": "registered_furigana_absent_kanji_parcel_not_automatically_bound"
         }
       ],
       "address": "佐賀郡諸富町大堂六九五",
@@ -751388,7 +752033,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10587,
+    "retained_unresolved_entries": 10586,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -754490,11 +755135,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10383,
+      "insufficient_evidence_in_inspected_sources": 10380,
       "investigation_incomplete": 0,
-      "judgment_required": 204
+      "judgment_required": 206
     },
-    "distinct_surfaces": 4250,
-    "unfinished_entries": 10587
+    "distinct_surfaces": 4249,
+    "unfinished_entries": 10586
   }
 }
