@@ -5,6 +5,7 @@ import unicodedata
 from datetime import datetime
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading, compare_address_units
+from njd.municipalities import municipal_comparison_address
 from njd.locations import raw_address, _redirect_authority, _reference_in_scope, _hash, _date, _plain
 
 
@@ -120,6 +121,9 @@ def _reference_matches(ref,facility,entry,changes):
         match=re.match(r'((?:高市|余市|[^都道府県市区]+?)郡)(.+)',value)
         return match.groups() if match else ('',value)
     reference_address=address(ref.get('address_raw'))
+    if set(changes)=={'reading'}:
+        mapped=municipal_comparison_address(ref,facility,entry)
+        if mapped is not None and address(mapped)==reference_address:return True
     sources=[facility.get('address')]
     detail=facility.get('address_source',{})
     if detail.get('url')==facility.get('native_source_id'):
