@@ -4,6 +4,7 @@ import tempfile
 import unittest
 import zipfile
 from pathlib import Path
+from unittest.mock import patch
 from njd.publishing import run_release
 from njd.release import create_release
 from njd.nationwide import save_collection
@@ -70,6 +71,37 @@ class PublishingTest(GitFixture):
         self.api.tag='b'*40
         with self.assertRaisesRegex(ValueError,'tag'):self.run_release()
         self.assertEqual(self.api.mutations,[])
+
+    def test_created_tag_can_be_temporarily_invisible_before_publication(self):
+        reads=[]
+        def delayed_reference(tag):
+            if self.api.tag is None:return None
+            reads.append(tag)
+            if len(reads)<=2:
+                self.assertEqual(self.api.mutations,['tag'])
+                return None
+            return self.api.tag
+        self.api.resolve_tag=delayed_reference
+        with patch('time.sleep'):
+            result=self.run_release()
+        self.assertEqual(result['status'],'published')
+        self.assertEqual(self.api.mutations.count('tag'),1)
+        self.assertEqual(self.api.mutations[-1],'publish')
+
+    def test_created_tag_remaining_invisible_stops_before_draft_or_upload(self):
+        self.api.resolve_tag=lambda tag:None
+        with patch('time.sleep'):
+            with self.assertRaisesRegex(ValueError,'tag.*not visible'):
+                self.run_release()
+        self.assertEqual(self.api.mutations,['tag'])
+
+    def test_changed_tag_is_rejected_without_waiting(self):
+        self.api.resolve_tag=lambda tag:None if self.api.tag is None else 'b'*40
+        with patch('time.sleep') as sleep:
+            with self.assertRaisesRegex(ValueError,'tag changed'):
+                self.run_release()
+        self.assertEqual(self.api.mutations,['tag'])
+        sleep.assert_not_called()
 
     def test_partial_upload_can_resume_without_replacing_assets(self):
         self.api.fail_upload='national-jinja-dictionary-v0.2.0.zip'

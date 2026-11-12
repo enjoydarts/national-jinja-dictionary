@@ -5,6 +5,7 @@ import json
 import logging
 import os
 import re
+import time
 from pathlib import Path
 from urllib import request,error,parse
 from njd.changelog import validate_version,previous_release_tag,generate_changelog
@@ -109,6 +110,20 @@ def _metadata(release,version,commit):
     return dict(version=version,commit=commit,previous_release_tag=previous)
 
 
+def _require_tag(api,version,commit,stage):
+    # A newly created ref can briefly return 404. Never retry a ref that
+    # actually points elsewhere, and never recreate or overwrite the tag.
+    for delay in (0,2,4,8,16,30):
+        if delay:
+            LOG.warning('Release tag %s is not visible; rechecking in %s seconds',version,delay)
+            time.sleep(delay)
+        observed=api.resolve_tag(version)
+        if observed==commit:return
+        if observed is not None:
+            raise ValueError(f'release tag changed {stage}: expected {commit}, found {observed}')
+    raise ValueError(f'release tag is not visible after bounded retries {stage}: {version}')
+
+
 def run_release(repository,repo,version,api,output_dir,*,dry_run=False,generator=create_release):
     if isinstance(version,str) and not version.startswith('v'):version='v'+version
     validate_version(version)
@@ -158,7 +173,7 @@ def run_release(repository,repo,version,api,output_dir,*,dry_run=False,generator
         LOG.info('Dry run complete; no tag or release created')
         return dict(result,status='dry_run')
     if target is None:api.create_tag(version,commit)
-    if api.resolve_tag(version)!=commit:raise ValueError('release tag changed before publication')
+    _require_tag(api,version,commit,'before publication')
     release=api.find_release(version)
     if release is not None and _metadata(release,version,commit)!=metadata:
         raise ValueError('release provenance changed during generation')
@@ -169,7 +184,7 @@ def run_release(repository,repo,version,api,output_dir,*,dry_run=False,generator
     for path in _verify_assets(api,release['id'],paths,require_all=False):
         LOG.info('Uploading %s',path.name);api.upload(release['id'],path)
     _verify_assets(api,release['id'],paths,require_all=True)
-    if api.resolve_tag(version)!=commit:raise ValueError('release tag changed during upload')
+    _require_tag(api,version,commit,'during upload')
     api.publish(release['id'],body)
     return dict(result,status='published',url=release['html_url'])
 
