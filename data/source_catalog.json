@@ -114,6 +114,13 @@
           "scope": "北斗市・恵庭市の現行観光施設2CSVだけ。青森市・苫小牧市・富良野市の既点検データは再照合対象から除外。北海道全保留・全自治体資料の調査完了とは区別。"
         },
         "listing_authority_status": "agency_site",
+        "nta_county_glyph_difference_followup": {
+          "checked_at": "2026-11-12T13:08:08.088105+00:00",
+          "evidence_data": "data/reading_research.json",
+          "inspected_targets": 23,
+          "new_verified_entries": 0,
+          "scope": "北海道23登録の旧nta_resultと現在の照合結果の差を、同hash月次原行の郡名字形差と空フリガナへ個別照合。新たな全文読みを得たという意味ではない。"
+        },
         "pages_fetched": 43,
         "reason": "Saved official listed scope; no claim of all shrines in this prefecture. 非公式独立記事の同一神社節に名称・全文かな・全所在地を照合した27登録を読みだけ補完。原名・全地番の差は保留。",
         "record_fetched_at_range": [
@@ -1930,6 +1937,10 @@
           "verified_facilities": 1121
         },
         "checked_at": "2026-11-08T15:49:59.264721+00:00",
+        "effective_entry_status_counts": {
+          "verified": 1122
+        },
+        "effective_pending_entries": 0,
         "facilities_collected": 1122,
         "fields_observed": {
           "address": 1122,
@@ -1946,6 +1957,16 @@
           "verified_entries": 0
         },
         "listing_authority_status": "agency_site",
+        "nta_width_only_name_full_reading_adoption": {
+          "checked_at": "2026-11-12T13:08:08.088105+00:00",
+          "entry_ids": [
+            "907e05b9-ba92-574b-acc5-1f7035fa58d2"
+          ],
+          "evidence_data": "data/corrections.json; data/reading_research.json",
+          "inspected_candidates": 1,
+          "scope": "子ﾉ神社（逗子市桜山7-8-27）の原名ﾉと登録名ノを幅比較し全所在地・独立全文フリガナを照合。20261030神奈川月次377463行に全国公開日次7群を適用し20261111時点の対応存続法人が1法人と確認。北海道23登録は原郡名字形差と空かなのまま保留。",
+          "verified_entries": 1
+        },
         "pages_fetched": 1160,
         "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
         "record_fetched_at_range": [
@@ -1977,13 +1998,13 @@
         "stored_pages_fetched": 1160,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 1,
+            "insufficient_evidence_in_inspected_sources": 0,
             "investigation_incomplete": 0,
             "judgment_required": 0
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 1,
-          "unfinished_entries": 1
+          "unfinished_entries": 0
         }
       },
       "conditions": {
@@ -44967,8 +44988,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13704,
-    "effective_verified_facilities": 44354,
+    "effective_dictionary_rows": 13705,
+    "effective_verified_facilities": 44355,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
