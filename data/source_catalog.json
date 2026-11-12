@@ -42810,17 +42810,21 @@
       "candidate_url": "https://fukuoka-jinjacho.or.jp/",
       "collection": {
         "additional_full_reading_supplements": {
-          "checked_at": "2026-11-11T13:55:15.317229+00:00",
+          "checked_at": "2026-11-12T00:35:50.587969+00:00",
           "entry_ids": [
             "4f2b34c4-2185-5a9e-98ba-827acd01cfd1",
             "c10f2acb-9487-5554-8f00-57d4212e298a",
             "c7a423be-734f-5bb8-ba47-f65ee6ec0f92",
-            "f1eee01a-534e-569b-bfd3-07504e93bbce"
+            "d1fd7629-88c8-5a39-9ffe-4b3836073706",
+            "e4318c17-d0cb-5219-9cc6-c91b5c639692",
+            "eac84e56-fa36-5310-bbaa-0b6973468ce6",
+            "f1eee01a-534e-569b-bfd3-07504e93bbce",
+            "f80e9b3a-09ab-53ac-b49b-613a0818b5fb"
           ],
           "evidence_data": "data/corrections.json",
           "redistribution_status": "unconfirmed",
           "scope": "Exact agency-listed names and full parcel addresses compared with shrine-published or official tourism full kana. No acquired agency fields changed.",
-          "verified_entries": 4
+          "verified_entries": 8
         },
         "canonical_data": {
           "entries": 280,
@@ -42847,7 +42851,7 @@
         "inspection_evidence_reference": "data/sources/fukuoka.json#collection.pages",
         "listing_authority_status": "agency_site",
         "pages_fetched": 4,
-        "reading_supplement_scope": "神社庁一覧に全文読みは未掲載。施設公式・国税庁・Wikipedia・公式観光資料を名称/所在地で照合し、101施設の全文読みを補完。出典ごとの原文・確認日・補正根拠をdata/corrections.jsonに保持。",
+        "reading_supplement_scope": "神社庁一覧に全文読みは未掲載。施設公式・国税庁・Wikipedia・公式観光資料を名称/所在地で照合し、105施設の全文読みを補完。出典ごとの原文・確認日・補正根拠をdata/corrections.jsonに保持。",
         "reason": "公開4地域一覧の280掲載枠を全件確認。名称・所在地・リンクを保存、一覧読みは未掲載。組織包括約3300社とは別範囲。全文読み補完は別層。",
         "regional_counts": [
           {
@@ -42872,10 +42876,10 @@
           }
         ],
         "remaining_scope": [],
-        "remaining_unverified_reading_facilities": 179,
+        "remaining_unverified_reading_facilities": 175,
         "source_rows_observed": 280,
         "status": "collected",
-        "supplemental_reading_facilities": 101,
+        "supplemental_reading_facilities": 105,
         "supplemental_tourism_authority": {
           "authority_reference": {
             "checked_at": "2026-11-11T13:54:22.254310+00:00",
@@ -42886,23 +42890,23 @@
             "title": "当サイトについて",
             "url": "https://www.crossroadfukuoka.jp/organization/site"
           },
-          "checked_at": "2026-11-11T13:55:15.317229+00:00",
+          "checked_at": "2026-11-12T00:35:50.587969+00:00",
           "name": "公益社団法人福岡県観光連盟",
           "redistribution_status": "unconfirmed",
-          "scope": "公式本文の運営組織名と取得した個別3施設の名称・全文かな・全地番を確認。神社庁資料の原文は変更せず、説明文・画像を収録しない。コンテンツ利用条件と辞書再配布の明示的許諾は区別する。",
+          "scope": "公式本文の運営組織名と個別施設の名称・全文かな・全地番を確認。採用した登録IDはadditional_full_reading_supplementsとcorrections.jsonに保存。神社庁資料の原文は変更せず、説明文・画像を収録しない。コンテンツ利用条件と辞書再配布の明示的許諾は区別する。",
           "terms_url": "https://www.crossroadfukuoka.jp/organization/site",
           "url": "https://www.crossroadfukuoka.jp/"
         },
         "traversal_complete": true,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 179,
+            "insufficient_evidence_in_inspected_sources": 175,
             "investigation_incomplete": 0,
             "judgment_required": 0
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 183,
-          "unfinished_entries": 179
+          "unfinished_entries": 175
         }
       },
       "conditions": {
@@ -44140,7 +44144,7 @@
   ],
   "schema_version": 1,
   "scope": "全国47都道府県の公開情報源・取得範囲・条件・検証状態の製品メタデータ。地域内全神社の網羅性を保証しない。",
-  "snapshot_date": "2026-11-09",
+  "snapshot_date": "2026-11-12",
   "summary": {
     "agency_official_sites_verified_opened": 44,
     "canonical_facilities": 54946,
@@ -44164,8 +44168,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13560,
-    "effective_verified_facilities": 44067,
+    "effective_dictionary_rows": 13563,
+    "effective_verified_facilities": 44071,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47

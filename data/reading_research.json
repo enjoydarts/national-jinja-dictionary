@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "e910adae7a2099e75714fc0f65d7679436b7804bdc7018ddd09fe0dfce630e8e",
+    "corrections.json": "65fc452aa320089425115aef2d8a0b325c4d44d30c9800d86724e36b63f830fd",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "a013294ba32fdf4cd13cb0b4476f2bed40bee8d2898700ced078d3363f4da07f",
@@ -12,7 +12,7 @@
     "investigation_incomplete": "未調査・補完調査未了",
     "judgment_required": "資料・原文・施設同定等の判断待ち"
   },
-  "computed_at": "2026-11-11T13:55:15.317229+00:00",
+  "computed_at": "2026-11-12T00:35:50.587969+00:00",
   "per_prefecture": {
     "01": {
       "categories": {
@@ -328,11 +328,11 @@
     },
     "40": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 179,
+        "insufficient_evidence_in_inspected_sources": 175,
         "investigation_incomplete": 0,
         "judgment_required": 0
       },
-      "unfinished_entries": 179
+      "unfinished_entries": 175
     },
     "41": {
       "categories": {
@@ -188562,6 +188562,24 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福岡県筑紫野市二日市中央三丁目6-35",
+          "checked_at": "2026-11-12T00:35:50.587969+00:00",
+          "expected_source_hash": "6b7b056d92c76791042ddac567531672a93102c70bba948936340e6df1e14b19",
+          "fetched_at": "2026-11-12T00:34:14.151784+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "二日市八幡宮",
+          "observation": "名称と全地番は一致するが、このページに名称の全文かな欄・全文読みは確認できない。所在地の漢数字は比較用の表記差として扱い、読みは補わない。",
+          "page_hash": "eb5a97b56e4cf124bb26422c98d9427015746c79550813d6453dfdaff422f582",
+          "remaining_requirement": "同じ施設の名称・所在地と明示された全文読みを含む追加資料。",
+          "scope": "指定した個別ページの本文に限定。サイト全体やウェブ全体の資料不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_no_adopted_reading",
+          "url": "https://www.crossroadfukuoka.jp/spot/14775"
+        }
+      ],
       "address": "筑紫野市二日市中央3-6-35",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -190026,24 +190044,6 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
-      "address": "京都郡苅田町馬場410",
-      "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "d1fd7629-88c8-5a39-9ffe-4b3836073706",
-      "expected_source_hash": "fadd05c15971c72f5d51518cc78da69baebd8bd9ccaf1b11dbc6eaa981206cf8",
-      "facility_id": "5892beeb-d1f7-58a2-8925-345368d2fb4c",
-      "listed_name": "宇原神社",
-      "nta_result": "no unique active exact name/full-address corporate identity",
-      "prefecture": "福岡県",
-      "prefecture_code": "40",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "宇原神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
       "address": "鞍手郡鞍手町室木1207",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -190377,41 +190377,6 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
-      "address": "築上郡築上町高塚794の2",
-      "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "e4318c17-d0cb-5219-9cc6-c91b5c639692",
-      "expected_source_hash": "a25470375dab0825ff8cbcf298aad309def477e101406716690d180fdddaa7b9",
-      "facility_id": "41b177ba-5620-510a-832d-6f7147587c77",
-      "listed_name": "綱敷天満宮",
-      "nta_result": "registered furigana absent",
-      "prefecture": "福岡県",
-      "prefecture_code": "40",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "綱敷天満宮",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T08:31:24.844748+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "c4055e69c8997ad7232bb498109f9f3fe18a8287bc990c60d21d4f327ff5bc37",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E7%B6%B1%E6%95%B7%E5%A4%A9%E6%BA%80%E5%AE%AE_(%E7%A6%8F%E5%B2%A1%E5%B8%82)"
-        },
-        {
-          "checked_at": "2026-11-09T08:31:28.030020+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "4880bf6659b7d8b509fefc325ecb4888e6ca29c55f719fbd2751c0d979abb74a",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E7%B6%B1%E6%95%B7%E5%A4%A9%E6%BA%80%E5%AE%AE_(%E7%AF%89%E4%B8%8A%E7%94%BA)"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
-    },
-    {
       "address": "糸島市志摩久家2813",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -190464,33 +190429,6 @@
       "surface": "若八幡神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "address": "田川郡添田町英彦山27",
-      "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "eac84e56-fa36-5310-bbaa-0b6973468ce6",
-      "expected_source_hash": "4e1f0fd31bb4c7e136f54ae8101c677090a6e35a55620c974281444544a441d9",
-      "facility_id": "63da10c4-7f48-593d-9164-59bde215a9af",
-      "listed_name": "高住神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "福岡県",
-      "prefecture_code": "40",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "高住神社",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T08:32:38.350046+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "53295146c3cedd3b44ed0bf11aa7c604d26df138d2ecbfd023d96bc040acff2b",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E9%AB%98%E4%BD%8F%E7%A5%9E%E7%A4%BE"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
       "address": "京都郡みやこ町犀川花熊1343",
@@ -190723,24 +190661,6 @@
       "reason": "missing agency reading",
       "status": "unfinished",
       "surface": "大祖神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "address": "朝倉市山田166",
-      "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "f80e9b3a-09ab-53ac-b49b-613a0818b5fb",
-      "expected_source_hash": "4d00754ff6bb4616eb23a103c112b38e6585b194571d95528860f4d9f5dbb063",
-      "facility_id": "7c499afd-5c26-5339-acdf-7b264c38cbb7",
-      "listed_name": "恵蘇八幡宮",
-      "nta_result": "registered furigana absent",
-      "prefecture": "福岡県",
-      "prefecture_code": "40",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "恵蘇八幡宮",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
@@ -229473,7 +229393,7 @@
   ],
   "schema_version": 1,
   "scope": "Unfinished entries in the committed canonical snapshot. Categories refer only to recorded inspected materials. source_assessment records a bounded source review and unresolved evidence or editorial requirements; it does not verify a pronunciation or assert exhaustive internet research. Earlier Wikipedia and corporate lookups retain their original separate scope and dates. Resolved entries remain in corrections.json or reviews.json.",
-  "snapshot_date": "2026-11-11",
+  "snapshot_date": "2026-11-12",
   "source_assessment_summary": {
     "assessed_previous_investigation_incomplete": 493,
     "canonical_sources_unchanged": true,
@@ -229489,7 +229409,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10876,
+    "retained_unresolved_entries": 10872,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -232591,11 +232511,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10675,
+      "insufficient_evidence_in_inspected_sources": 10671,
       "investigation_incomplete": 0,
       "judgment_required": 201
     },
-    "distinct_surfaces": 4406,
-    "unfinished_entries": 10876
+    "distinct_surfaces": 4402,
+    "unfinished_entries": 10872
   }
 }
