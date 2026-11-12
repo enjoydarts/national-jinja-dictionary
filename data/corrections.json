@@ -1801,13 +1801,16 @@
     },
     "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4": {
       "changes": {
-        "reading": "かとりじじゃ"
+        "reading": "かとりじんじゃ"
       },
       "expected_source_hash": "93bbbde06305e433b8e1bf36dca782d9e31c437e4352bf0a761f89020cbfb9fe",
       "facility_id": "c7fea2db-8725-5f20-a157-117542b0c9e4",
       "identity_match": {
         "agency_address": "吉川市会野谷2-18",
-        "agency_name": "香取神社"
+        "agency_name": "香取神社",
+        "effective_address": "吉川市会野谷2-18",
+        "reference_address": "埼玉県吉川市会野谷２丁目１８番地",
+        "reference_name": "香取神社"
       },
       "original": {
         "address": "吉川市会野谷2-18",
@@ -1815,23 +1818,180 @@
         "name_raw": "香取神社",
         "reading_raw": "かとりじじゃ"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+      "reason": "国税庁の実登録全文フリガナを原名と全所在地で一意照合し、月次と11月11日までの公開7差分を法人番号で結合して手動精査。接尾語・小書きを推測せずカタカナをひらがなに機械変換。元資料の疑義を自動修正したものではない。 過去の要確認補正全体と当時の参照・原文はreview_historyへ原形保存し、採用根拠は新しく検証した登録全文かなの参照とする。",
       "references": [
         {
-          "address_raw": "吉川市会野谷2-18",
-          "checked_at": "2026-11-08T15:54:35.851380+00:00",
-          "excerpt": "香取神社 | かとりじじゃ | 吉川市会野谷2-18",
-          "locator": "caption#shrine_name; span.name_kana if published; span#shrine_address",
+          "address_raw": "埼玉県吉川市会野谷２丁目１８番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:40:34.789091+00:00",
+          "corporate_number": "1030005010412",
+          "csv_row": 28534,
+          "excerpt": "香取神社 / カトリジンジャ / 埼玉県吉川市会野谷２丁目１８番地",
+          "fetched_at": "2026-11-12T04:21:46.417704+00:00",
+          "file_id": "28375",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV file ID 28375; 11_saitama_all_20261030.csv; row 28534; corporateNumber=1030005010412",
           "name_raw": "香取神社",
-          "page_hash": "61cf1e1016ba47f1e1a1cf2a00348638facf418d260ec88b3384493e8b704d85",
-          "reading_raw": "かとりじじゃ",
-          "source_kind": "agency",
-          "title": "埼玉県神社庁 掲載読み原文（全文読みの確認未了）",
-          "url": "https://www.saitama-jinjacho.or.jp/shrine/11841/"
+          "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+          "reading_raw": "カトリジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "1030005010412"
+            ],
+            "matched_corporate_number_duplicated_in_base": false,
+            "method": "all_prefecture_monthly_parts_and_all_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:21:46.417704+00:00",
+                "file_id": "28375",
+                "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
+                "row_count": 269599,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "Apply dates ascending by corporation; only a unique latest=1 row replaces state, process99 removes it; never revive closed/hidden/history rows; count competitors even without usable kana; compare exact name and whole numeric address."
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "243",
+            "cityName": "吉川市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "1030005010412",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "カトリジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "香取神社",
+            "nameImageId": "",
+            "postCode": "3420016",
+            "prefectureCode": "11",
+            "prefectureName": "埼玉県",
+            "process": "01",
+            "sequenceNumber": "28534",
+            "streetNumber": "会野谷２丁目１８番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2018-05-28"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
+          "zip_member": "11_saitama_all_20261030.csv"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "かとりじじゃ"
+          },
+          "expected_source_hash": "93bbbde06305e433b8e1bf36dca782d9e31c437e4352bf0a761f89020cbfb9fe",
+          "facility_id": "c7fea2db-8725-5f20-a157-117542b0c9e4",
+          "identity_match": {
+            "agency_address": "吉川市会野谷2-18",
+            "agency_name": "香取神社"
+          },
+          "original": {
+            "address": "吉川市会野谷2-18",
+            "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/11841/",
+            "name_raw": "香取神社",
+            "reading_raw": "かとりじじゃ"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "references": [
+            {
+              "address_raw": "吉川市会野谷2-18",
+              "checked_at": "2026-11-08T15:54:35.851380+00:00",
+              "excerpt": "香取神社 | かとりじじゃ | 吉川市会野谷2-18",
+              "locator": "caption#shrine_name; span.name_kana if published; span#shrine_address",
+              "name_raw": "香取神社",
+              "page_hash": "61cf1e1016ba47f1e1a1cf2a00348638facf418d260ec88b3384493e8b704d85",
+              "reading_raw": "かとりじじゃ",
+              "source_kind": "agency",
+              "title": "埼玉県神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://www.saitama-jinjacho.or.jp/shrine/11841/"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "0124d86c-3103-596d-92a8-f50b55a264de": {
       "changes": {
@@ -21574,6 +21734,7 @@
       "identity_match": {
         "agency_address": "甲州市塩山上於曽1054",
         "agency_name": "菅田天神社",
+        "effective_address": "甲州市塩山上於曽1054",
         "reference_address": "山梨県甲州市塩山上於曽１０５４番地",
         "reference_name": "菅田天神社"
       },
@@ -21583,15 +21744,16 @@
         "name_raw": "菅田天神社",
         "reading_raw": ""
       },
-      "reason": "全文読みの資料衝突。所在地・名称は一致するが、国税庁 かんだてんじんじゃ とWikipedia かんだてんじんしゃ が異なる。推測で選ばず追加の一次資料またはユーザー判断まで出力を保留。各原文・確認日時・出典を保持。",
+      "reason": "国税庁の実登録全文フリガナを原名と全所在地で一意照合し、月次と11月11日までの公開7差分を法人番号で結合して手動精査。接尾語・小書きを推測せずカタカナをひらがなに機械変換。元資料の疑義を自動修正したものではない。 過去の要確認補正全体と当時の参照・原文はreview_historyへ原形保存し、採用根拠は新しく検証した登録全文かなの参照とする。",
       "references": [
         {
           "address_raw": "山梨県甲州市塩山上於曽１０５４番地",
           "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
-          "checked_at": "2026-11-09T04:35:36.895330+00:00",
+          "checked_at": "2026-11-12T04:40:52.957995+00:00",
           "corporate_number": "9090005003832",
           "csv_row": 35704,
           "excerpt": "菅田天神社 / カンダテンジンジャ / 山梨県甲州市塩山上於曽１０５４番地",
+          "fetched_at": "2026-11-12T04:40:52.770373+00:00",
           "file_id": "28413",
           "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
           "locator": "Unicode CSV file ID 28413; 19_yamanashi_all_20261030.csv; row 35704; corporateNumber=9090005003832",
@@ -21599,6 +21761,84 @@
           "page_hash": "06f357672fd7ea5aa55021afe4f7a5a51c327cad16617bf38abb40c859fc205a",
           "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
           "reading_raw": "カンダテンジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "9090005003832"
+            ],
+            "matched_corporate_number_duplicated_in_base": false,
+            "method": "all_prefecture_monthly_parts_and_all_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:40:52.770373+00:00",
+                "file_id": "28413",
+                "page_hash": "06f357672fd7ea5aa55021afe4f7a5a51c327cad16617bf38abb40c859fc205a",
+                "row_count": 36100,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "Apply dates ascending by corporation; only a unique latest=1 row replaces state, process99 removes it; never revive closed/hidden/history rows; count competitors even without usable kana; compare exact name and whole numeric address."
+          },
           "snapshot": "20261030",
           "source_fields": {
             "addressImageId": "",
@@ -21633,60 +21873,140 @@
             "updateDate": "2023-11-14"
           },
           "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
           "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
           "title": "国税庁法人番号公表サイト 全件データ",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "19_yamanashi_all_20261030.csv"
-        },
-        {
-          "address_raw": "山梨県甲州市塩山上於曽1054",
-          "checked_at": "2026-11-09T04:56:00.409942+00:00",
-          "excerpt": "菅田天神社（かんだてんじんしゃ） / 山梨県甲州市塩山上於曽1054",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-          "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[2] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
-          "name_raw": "菅田天神社",
-          "page_hash": "8e20936f46ec95502cc7116d7310da5bdf18672fa5b28b9fcfbabf398280fb7d",
-          "permalink": "https://ja.wikipedia.org/w/index.php?title=%E8%8F%85%E7%94%B0%E5%A4%A9%E7%A5%9E%E7%A4%BE&oldid=103658801",
-          "reading_raw": "かんだてんじんしゃ",
-          "revision_id": 103658801,
-          "source_kind": "encyclopedia",
-          "title": "菅田天神社",
-          "url": "https://ja.wikipedia.org/wiki/%E8%8F%85%E7%94%B0%E5%A4%A9%E7%A5%9E%E7%A4%BE",
-          "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
-        },
-        {
-          "address_raw": "〒404-0042　甲州市塩山上於曽1054",
-          "authority": "甲州市観光協会・甲州市観光商工課内; shrine-owner publication not established",
-          "checked_at": "2026-11-09T05:09:34.081728+00:00",
-          "excerpt": "菅田天神社（かんだてんじんじゃ） / 〒404-0042　甲州市塩山上於曽1054",
-          "locator": "h1; 施設名/ふりがな/所在地",
-          "name_raw": "菅田天神社",
-          "page_hash": "dbf3e22b6ee418538164c2b9174a594c6a7833df6336734cf342a7cc88fed1c5",
-          "reading_raw": "かんだてんじんじゃ",
-          "redistribution_permission": "unconfirmed; short fact excerpt only; acquired page not redistributed",
-          "source_kind": "official_tourism",
-          "title": "菅田天神社｜公式観光情報",
-          "url": "https://www.koshu-kankou.jp/map/m5097.html",
-          "verification_method": "Actually inspected explicit facility name/full kana/address on official tourism page; not shrine-owner publication"
-        },
-        {
-          "address_raw": "甲州市塩山上於曾1054",
-          "authority": "山梨県公式観光情報・やまなし観光推進機構; raw曾vs曽 difference retained",
-          "checked_at": "2026-11-09T05:09:36.283599+00:00",
-          "excerpt": "菅田天神社（かんだてんじんじゃ） / 甲州市塩山上於曾1054",
-          "locator": "h1 / 基本情報住所",
-          "name_raw": "菅田天神社",
-          "page_hash": "edefc926d8bac72dfbd41d161ce977d473116db4c4444b81d6a095138f912e36",
-          "reading_raw": "かんだてんじんじゃ",
-          "redistribution_permission": "unconfirmed; short fact excerpt only; acquired page not redistributed",
-          "source_kind": "official_tourism",
-          "title": "菅田天神社｜公式観光情報",
-          "url": "https://www.yamanashi-kankou.jp/kankou/spot/p1_4477.html",
-          "verification_method": "Actually inspected explicit facility name/full kana/address on official tourism page; not shrine-owner publication"
         }
       ],
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "かんだてんじんじゃ"
+          },
+          "expected_source_hash": "37fde6de698d4f6c9413b448381e726df18700574fe656ca17c112d63f8c9755",
+          "facility_id": "29ba0216-b33c-5bc0-8b93-6b21139f3167",
+          "identity_match": {
+            "agency_address": "甲州市塩山上於曽1054",
+            "agency_name": "菅田天神社",
+            "reference_address": "山梨県甲州市塩山上於曽１０５４番地",
+            "reference_name": "菅田天神社"
+          },
+          "original": {
+            "address": "甲州市塩山上於曽1054",
+            "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/2",
+            "name_raw": "菅田天神社",
+            "reading_raw": ""
+          },
+          "reason": "全文読みの資料衝突。所在地・名称は一致するが、国税庁 かんだてんじんじゃ とWikipedia かんだてんじんしゃ が異なる。推測で選ばず追加の一次資料またはユーザー判断まで出力を保留。各原文・確認日時・出典を保持。",
+          "references": [
+            {
+              "address_raw": "山梨県甲州市塩山上於曽１０５４番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T04:35:36.895330+00:00",
+              "corporate_number": "9090005003832",
+              "csv_row": 35704,
+              "excerpt": "菅田天神社 / カンダテンジンジャ / 山梨県甲州市塩山上於曽１０５４番地",
+              "file_id": "28413",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28413; 19_yamanashi_all_20261030.csv; row 35704; corporateNumber=9090005003832",
+              "name_raw": "菅田天神社",
+              "page_hash": "06f357672fd7ea5aa55021afe4f7a5a51c327cad16617bf38abb40c859fc205a",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "カンダテンジンジャ",
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "213",
+                "cityName": "甲州市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "9090005003832",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "カンダテンジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "菅田天神社",
+                "nameImageId": "",
+                "postCode": "4040042",
+                "prefectureCode": "19",
+                "prefectureName": "山梨県",
+                "process": "01",
+                "sequenceNumber": "35704",
+                "streetNumber": "塩山上於曽１０５４番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2023-11-14"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
+              "zip_member": "19_yamanashi_all_20261030.csv"
+            },
+            {
+              "address_raw": "山梨県甲州市塩山上於曽1054",
+              "checked_at": "2026-11-09T04:56:00.409942+00:00",
+              "excerpt": "菅田天神社（かんだてんじんしゃ） / 山梨県甲州市塩山上於曽1054",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+              "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[2] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+              "name_raw": "菅田天神社",
+              "page_hash": "8e20936f46ec95502cc7116d7310da5bdf18672fa5b28b9fcfbabf398280fb7d",
+              "permalink": "https://ja.wikipedia.org/w/index.php?title=%E8%8F%85%E7%94%B0%E5%A4%A9%E7%A5%9E%E7%A4%BE&oldid=103658801",
+              "reading_raw": "かんだてんじんしゃ",
+              "revision_id": 103658801,
+              "source_kind": "encyclopedia",
+              "title": "菅田天神社",
+              "url": "https://ja.wikipedia.org/wiki/%E8%8F%85%E7%94%B0%E5%A4%A9%E7%A5%9E%E7%A4%BE",
+              "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
+            },
+            {
+              "address_raw": "〒404-0042　甲州市塩山上於曽1054",
+              "authority": "甲州市観光協会・甲州市観光商工課内; shrine-owner publication not established",
+              "checked_at": "2026-11-09T05:09:34.081728+00:00",
+              "excerpt": "菅田天神社（かんだてんじんじゃ） / 〒404-0042　甲州市塩山上於曽1054",
+              "locator": "h1; 施設名/ふりがな/所在地",
+              "name_raw": "菅田天神社",
+              "page_hash": "dbf3e22b6ee418538164c2b9174a594c6a7833df6336734cf342a7cc88fed1c5",
+              "reading_raw": "かんだてんじんじゃ",
+              "redistribution_permission": "unconfirmed; short fact excerpt only; acquired page not redistributed",
+              "source_kind": "official_tourism",
+              "title": "菅田天神社｜公式観光情報",
+              "url": "https://www.koshu-kankou.jp/map/m5097.html",
+              "verification_method": "Actually inspected explicit facility name/full kana/address on official tourism page; not shrine-owner publication"
+            },
+            {
+              "address_raw": "甲州市塩山上於曾1054",
+              "authority": "山梨県公式観光情報・やまなし観光推進機構; raw曾vs曽 difference retained",
+              "checked_at": "2026-11-09T05:09:36.283599+00:00",
+              "excerpt": "菅田天神社（かんだてんじんじゃ） / 甲州市塩山上於曾1054",
+              "locator": "h1 / 基本情報住所",
+              "name_raw": "菅田天神社",
+              "page_hash": "edefc926d8bac72dfbd41d161ce977d473116db4c4444b81d6a095138f912e36",
+              "reading_raw": "かんだてんじんじゃ",
+              "redistribution_permission": "unconfirmed; short fact excerpt only; acquired page not redistributed",
+              "source_kind": "official_tourism",
+              "title": "菅田天神社｜公式観光情報",
+              "url": "https://www.yamanashi-kankou.jp/kankou/spot/p1_4477.html",
+              "verification_method": "Actually inspected explicit facility name/full kana/address on official tourism page; not shrine-owner publication"
+            }
+          ],
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "143dde44-f8b6-51a7-80f1-cb3a92c1c7d2": {
       "changes": {
@@ -23439,13 +23759,16 @@
     },
     "15d75fd2-7aa2-5e9a-bfe2-c88eee5d7ea4": {
       "changes": {
-        "reading": "とよふじいなり"
+        "reading": "とよふじいなりじんじゃ"
       },
       "expected_source_hash": "2103ddbe4fa638b3259357cc9404670d8c7746d113fa31789755cecd8213d048",
       "facility_id": "ebb37377-6ba2-54a8-857e-e02ddfd81585",
       "identity_match": {
         "agency_address": "愛知県名古屋市緑区作の山町180番地",
-        "agency_name": "豊藤稲荷神社"
+        "agency_name": "豊藤稲荷神社",
+        "comparison": "元資料の全字段・原字・地番を維持して一意な最新法人を照合。別地域同名や原名冠称/字名/地番差を推測で解消しない。",
+        "reference_address": "愛知県名古屋市緑区作の山町１８０番地",
+        "reference_name": "豊藤稲荷神社"
       },
       "original": {
         "address": "愛知県名古屋市緑区作の山町180番地",
@@ -23453,23 +23776,227 @@
         "name_raw": "豊藤稲荷神社",
         "reading_raw": "とよふじいなり"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_stem_only_or_short_label",
+      "reason": "登録法人の資料に明示された正式名全体のフリガナを採用する手動レビュー用候補。社名語尾や小書き音を推測修正したものではない。原庁読みと既存要確認理由・旧根拠を旧correction全体のreview_historyへ原形保持し、新しい全文読みを確認したNTA参照だけをactive referencesとする。全月次分割＋全7日次の法人番号状態を復元し、一意の最新・非閉鎖・非非表示の同名全所在地を照合。",
       "references": [
         {
-          "address_raw": "愛知県名古屋市緑区作の山町180番地",
-          "checked_at": "2026-11-08T15:00:27.789308+00:00",
-          "excerpt": "{\"addr\": \"作の山町\", \"city\": \"名古屋市緑区\", \"house_num\": \"180番地\", \"id\": \"3fddfb57-56c9-4812-843a-42cbbc55d678\", \"kana\": \"とよふじいなり\", \"name\": \"豊藤稲荷神社\", \"pref\": \"愛知県\"}",
-          "locator": "POST JSON all 69 official area choices, limit=-1 $.list[474] id=3fddfb57-56c9-4812-843a-42cbbc55d678",
+          "address_raw": "愛知県名古屋市緑区作の山町１８０番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:38:30.262221+00:00",
+          "corporate_number": "8180005001828",
+          "csv_row": 248051,
+          "excerpt": "豊藤稲荷神社 / トヨフジイナリジンジャ / 愛知県名古屋市緑区作の山町１８０番地",
+          "fetched_at": "2026-11-12T04:36:29.886924+00:00",
+          "file_id": "28425",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV file ID 28425; 23_aichi_all_20261030.csv; row 248051; corporateNumber=8180005001828",
           "name_raw": "豊藤稲荷神社",
-          "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
-          "reading_raw": "とよふじいなり",
-          "source_kind": "agency",
-          "title": "愛知県神社庁 掲載読み原文（全文読みの確認未了）",
-          "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+          "page_hash": "20ffef2a2e2babf484de306ec3b4e89236ba0be5bb3f0297f0ff6deeb261cdda",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。全県内月次分割＋公開最新までの7日次を法人番号単位で結合し、全名称・全所在地・全文登録ふりがなを照合。カタカナをひらがなへ機械変換。",
+          "reading_raw": "トヨフジイナリジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "baseline_witness": {
+              "csv_row": 248051,
+              "fetched_at": "2026-11-12T04:36:29.886924+00:00",
+              "file_id": "28425",
+              "page_hash": "20ffef2a2e2babf484de306ec3b4e89236ba0be5bb3f0297f0ff6deeb261cdda",
+              "snapshot": "20261030",
+              "source": "monthly_base",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "114",
+                "cityName": "名古屋市緑区",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "8180005001828",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "トヨフジイナリジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "豊藤稲荷神社",
+                "nameImageId": "",
+                "postCode": "4580038",
+                "prefectureCode": "23",
+                "prefectureName": "愛知県",
+                "process": "01",
+                "sequenceNumber": "248051",
+                "streetNumber": "作の山町１８０番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2024-08-01"
+              },
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "23_aichi_all_20261030.csv"
+            },
+            "daily_files": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261102.csv"
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261104.csv"
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261105.csv"
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261106.csv"
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261109.csv"
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261110.csv"
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261111.csv"
+              }
+            ],
+            "matched_corporate_number": "8180005001828",
+            "merge_rule": "date ascending; replace corporation with unique latest1 in daily group; process99 tombstone; no latest or ambiguous latest retires old state; count active competitors including those with missing kana; do not merge same names at other addresses",
+            "method": "all_selected_prefecture_monthly_parts_then_all_national_daily_corporation_groups",
+            "monthly_files": [
+              {
+                "compressed_bytes": 13907630,
+                "fetched_at": "2026-11-12T04:36:29.886924+00:00",
+                "file_id": "28425",
+                "page_hash": "20ffef2a2e2babf484de306ec3b4e89236ba0be5bb3f0297f0ff6deeb261cdda",
+                "prefecture_code": "23",
+                "row_count": 289488,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ]
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "114",
+            "cityName": "名古屋市緑区",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "8180005001828",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "トヨフジイナリジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "豊藤稲荷神社",
+            "nameImageId": "",
+            "postCode": "4580038",
+            "prefectureCode": "23",
+            "prefectureName": "愛知県",
+            "process": "01",
+            "sequenceNumber": "248051",
+            "streetNumber": "作の山町１８０番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2024-08-01"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "23_aichi_all_20261030.csv"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "とよふじいなり"
+          },
+          "expected_source_hash": "2103ddbe4fa638b3259357cc9404670d8c7746d113fa31789755cecd8213d048",
+          "facility_id": "ebb37377-6ba2-54a8-857e-e02ddfd81585",
+          "identity_match": {
+            "agency_address": "愛知県名古屋市緑区作の山町180番地",
+            "agency_name": "豊藤稲荷神社"
+          },
+          "original": {
+            "address": "愛知県名古屋市緑区作の山町180番地",
+            "listing_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
+            "name_raw": "豊藤稲荷神社",
+            "reading_raw": "とよふじいなり"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_stem_only_or_short_label",
+          "references": [
+            {
+              "address_raw": "愛知県名古屋市緑区作の山町180番地",
+              "checked_at": "2026-11-08T15:00:27.789308+00:00",
+              "excerpt": "{\"addr\": \"作の山町\", \"city\": \"名古屋市緑区\", \"house_num\": \"180番地\", \"id\": \"3fddfb57-56c9-4812-843a-42cbbc55d678\", \"kana\": \"とよふじいなり\", \"name\": \"豊藤稲荷神社\", \"pref\": \"愛知県\"}",
+              "locator": "POST JSON all 69 official area choices, limit=-1 $.list[474] id=3fddfb57-56c9-4812-843a-42cbbc55d678",
+              "name_raw": "豊藤稲荷神社",
+              "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
+              "reading_raw": "とよふじいなり",
+              "source_kind": "agency",
+              "title": "愛知県神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "15e49829-0039-5692-8227-d60ab20160cf": {
       "changes": {
@@ -25359,6 +25886,7 @@
       "identity_match": {
         "agency_address": "所沢市坂之下64",
         "agency_name": "天神社",
+        "effective_address": "所沢市坂之下64",
         "reference_address": "埼玉県所沢市大字坂之下６４番地",
         "reference_name": "天神社"
       },
@@ -25368,15 +25896,16 @@
         "name_raw": "天神社",
         "reading_raw": ""
       },
-      "reason": "全文読みの資料衝突。所在地・名称は一致するが、国税庁 てんじんじゃ とWikipedia てんじんしゃ が異なる。推測で選ばず追加の一次資料またはユーザー判断まで出力を保留。各原文・確認日時・出典を保持。",
+      "reason": "国税庁の実登録全文フリガナを原名と全所在地で一意照合し、月次と11月11日までの公開7差分を法人番号で結合して手動精査。接尾語・小書きを推測せずカタカナをひらがなに機械変換。元資料の疑義を自動修正したものではない。 過去の要確認補正全体と当時の参照・原文はreview_historyへ原形保存し、採用根拠は新しく検証した登録全文かなの参照とする。",
       "references": [
         {
           "address_raw": "埼玉県所沢市大字坂之下６４番地",
           "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
-          "checked_at": "2026-11-09T04:35:09.921294+00:00",
+          "checked_at": "2026-11-12T04:40:34.791837+00:00",
           "corporate_number": "6030005003411",
           "csv_row": 177538,
           "excerpt": "天神社 / テンジンジャ / 埼玉県所沢市大字坂之下６４番地",
+          "fetched_at": "2026-11-12T04:21:46.417704+00:00",
           "file_id": "28375",
           "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
           "locator": "Unicode CSV file ID 28375; 11_saitama_all_20261030.csv; row 177538; corporateNumber=6030005003411",
@@ -25384,6 +25913,84 @@
           "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
           "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
           "reading_raw": "テンジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "6030005003411"
+            ],
+            "matched_corporate_number_duplicated_in_base": false,
+            "method": "all_prefecture_monthly_parts_and_all_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:21:46.417704+00:00",
+                "file_id": "28375",
+                "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
+                "row_count": 269599,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "Apply dates ascending by corporation; only a unique latest=1 row replaces state, process99 removes it; never revive closed/hidden/history rows; count competitors even without usable kana; compare exact name and whole numeric address."
+          },
           "snapshot": "20261030",
           "source_fields": {
             "addressImageId": "",
@@ -25418,30 +26025,110 @@
             "updateDate": "2023-02-22"
           },
           "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
           "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
           "title": "国税庁法人番号公表サイト 全件データ",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "11_saitama_all_20261030.csv"
-        },
-        {
-          "address_raw": "埼玉県所沢市坂之下64",
-          "checked_at": "2026-11-09T04:40:51.665110+00:00",
-          "excerpt": "天神社（てんじんしゃ） / 埼玉県所沢市坂之下64",
-          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
-          "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
-          "name_raw": "天神社",
-          "page_hash": "212a897c87238f782120d0a8b881c731e7309b8c7101ba4bf0b989ba1fd0879a",
-          "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%A4%A9%E7%A5%9E%E7%A4%BE+%28%E6%89%80%E6%B2%A2%E5%B8%82%29&oldid=108317039",
-          "reading_raw": "てんじんしゃ",
-          "revision_id": 108317039,
-          "source_kind": "encyclopedia",
-          "title": "天神社 (所沢市)",
-          "url": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%A5%9E%E7%A4%BE_(%E6%89%80%E6%B2%A2%E5%B8%82)",
-          "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
         }
       ],
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "てんじんじゃ"
+          },
+          "expected_source_hash": "863f785a36c75847ee030e0653c397244eba5a75557385fa853b13f0806e9bbe",
+          "facility_id": "e27ac60c-7bd5-5dae-9f54-166504982131",
+          "identity_match": {
+            "agency_address": "所沢市坂之下64",
+            "agency_name": "天神社",
+            "reference_address": "埼玉県所沢市大字坂之下６４番地",
+            "reference_name": "天神社"
+          },
+          "original": {
+            "address": "所沢市坂之下64",
+            "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8909/",
+            "name_raw": "天神社",
+            "reading_raw": ""
+          },
+          "reason": "全文読みの資料衝突。所在地・名称は一致するが、国税庁 てんじんじゃ とWikipedia てんじんしゃ が異なる。推測で選ばず追加の一次資料またはユーザー判断まで出力を保留。各原文・確認日時・出典を保持。",
+          "references": [
+            {
+              "address_raw": "埼玉県所沢市大字坂之下６４番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T04:35:09.921294+00:00",
+              "corporate_number": "6030005003411",
+              "csv_row": 177538,
+              "excerpt": "天神社 / テンジンジャ / 埼玉県所沢市大字坂之下６４番地",
+              "file_id": "28375",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28375; 11_saitama_all_20261030.csv; row 177538; corporateNumber=6030005003411",
+              "name_raw": "天神社",
+              "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "テンジンジャ",
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "208",
+                "cityName": "所沢市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "6030005003411",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "テンジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "天神社",
+                "nameImageId": "",
+                "postCode": "3590012",
+                "prefectureCode": "11",
+                "prefectureName": "埼玉県",
+                "process": "01",
+                "sequenceNumber": "177538",
+                "streetNumber": "大字坂之下６４番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2023-02-22"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
+              "zip_member": "11_saitama_all_20261030.csv"
+            },
+            {
+              "address_raw": "埼玉県所沢市坂之下64",
+              "checked_at": "2026-11-09T04:40:51.665110+00:00",
+              "excerpt": "天神社（てんじんしゃ） / 埼玉県所沢市坂之下64",
+              "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+              "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+              "name_raw": "天神社",
+              "page_hash": "212a897c87238f782120d0a8b881c731e7309b8c7101ba4bf0b989ba1fd0879a",
+              "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%A4%A9%E7%A5%9E%E7%A4%BE+%28%E6%89%80%E6%B2%A2%E5%B8%82%29&oldid=108317039",
+              "reading_raw": "てんじんしゃ",
+              "revision_id": 108317039,
+              "source_kind": "encyclopedia",
+              "title": "天神社 (所沢市)",
+              "url": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E7%A5%9E%E7%A4%BE_(%E6%89%80%E6%B2%A2%E5%B8%82)",
+              "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
+            }
+          ],
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "17655eb0-baa6-5077-bab7-44a90f3fcdfd": {
       "changes": {
@@ -32525,13 +33212,16 @@
     },
     "1ef03135-6298-5bb6-bf5a-17635042d7fc": {
       "changes": {
-        "reading": "とみじじゃ"
+        "reading": "とみじんじゃ"
       },
       "expected_source_hash": "c00eac2afdabaa55cf0f385285e0adcb705021ea397a5a7324c6e3d7fc5683c8",
       "facility_id": "f807dcb2-967e-5511-9b80-852ea5211b38",
       "identity_match": {
         "agency_address": "千葉県 印西市 大森1943番地",
-        "agency_name": "鳥見神社"
+        "agency_name": "鳥見神社",
+        "comparison": "元資料の全字段・原字・地番を維持して一意な最新法人を照合。別地域同名や原名冠称/字名/地番差を推測で解消しない。",
+        "reference_address": "千葉県印西市大森１９４３番地",
+        "reference_name": "鳥見神社"
       },
       "original": {
         "address": "千葉県 印西市 大森1943番地",
@@ -32539,23 +33229,227 @@
         "name_raw": "鳥見神社",
         "reading_raw": "トミジジャ"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+      "reason": "登録法人の資料に明示された正式名全体のフリガナを採用する手動レビュー用候補。社名語尾や小書き音を推測修正したものではない。原庁読みと既存要確認理由・旧根拠を旧correction全体のreview_historyへ原形保持し、新しい全文読みを確認したNTA参照だけをactive referencesとする。全月次分割＋全7日次の法人番号状態を復元し、一意の最新・非閉鎖・非非表示の同名全所在地を照合。",
       "references": [
         {
-          "address_raw": "千葉県 印西市 大森1943番地",
-          "checked_at": "2026-11-08T14:52:49.626591+00:00",
-          "excerpt": "鳥見神社 | トミジジャ | 千葉県 印西市 大森1943番地",
-          "locator": "tr[61] rowspan shrine cell",
+          "address_raw": "千葉県印西市大森１９４３番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:38:30.262221+00:00",
+          "corporate_number": "7040005006635",
+          "csv_row": 181280,
+          "excerpt": "鳥見神社 / トミジンジャ / 千葉県印西市大森１９４３番地",
+          "fetched_at": "2026-11-12T04:36:22.888964+00:00",
+          "file_id": "28379",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV file ID 28379; 12_chiba_all_20261030.csv; row 181280; corporateNumber=7040005006635",
           "name_raw": "鳥見神社",
-          "page_hash": "ce3c395386d276c4590051c6bc7ee0581fc831dcecca360ce56dded39f196b34",
-          "reading_raw": "トミジジャ",
-          "source_kind": "agency",
-          "title": "千葉県神社庁（神社のひろば監修） 掲載読み原文（全文読みの確認未了）",
-          "url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=52&search%3Areverse=&search%3Aterm=30&sys%3Apid=2904&sys%3Arandom=1794149563-2904&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=53"
+          "page_hash": "492e95a25824e9fa84458689136a667199b0e5e8325a98d19e7e3e8034350541",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。全県内月次分割＋公開最新までの7日次を法人番号単位で結合し、全名称・全所在地・全文登録ふりがなを照合。カタカナをひらがなへ機械変換。",
+          "reading_raw": "トミジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "baseline_witness": {
+              "csv_row": 181280,
+              "fetched_at": "2026-11-12T04:36:22.888964+00:00",
+              "file_id": "28379",
+              "page_hash": "492e95a25824e9fa84458689136a667199b0e5e8325a98d19e7e3e8034350541",
+              "snapshot": "20261030",
+              "source": "monthly_base",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "231",
+                "cityName": "印西市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "7040005006635",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "トミジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "鳥見神社",
+                "nameImageId": "",
+                "postCode": "2701327",
+                "prefectureCode": "12",
+                "prefectureName": "千葉県",
+                "process": "01",
+                "sequenceNumber": "181280",
+                "streetNumber": "大森１９４３番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2021-06-09"
+              },
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "12_chiba_all_20261030.csv"
+            },
+            "daily_files": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261102.csv"
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261104.csv"
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261105.csv"
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261106.csv"
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261109.csv"
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261110.csv"
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261111.csv"
+              }
+            ],
+            "matched_corporate_number": "7040005006635",
+            "merge_rule": "date ascending; replace corporation with unique latest1 in daily group; process99 tombstone; no latest or ambiguous latest retires old state; count active competitors including those with missing kana; do not merge same names at other addresses",
+            "method": "all_selected_prefecture_monthly_parts_then_all_national_daily_corporation_groups",
+            "monthly_files": [
+              {
+                "compressed_bytes": 10598584,
+                "fetched_at": "2026-11-12T04:36:22.888964+00:00",
+                "file_id": "28379",
+                "page_hash": "492e95a25824e9fa84458689136a667199b0e5e8325a98d19e7e3e8034350541",
+                "prefecture_code": "12",
+                "row_count": 235484,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ]
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "231",
+            "cityName": "印西市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "7040005006635",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "トミジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "鳥見神社",
+            "nameImageId": "",
+            "postCode": "2701327",
+            "prefectureCode": "12",
+            "prefectureName": "千葉県",
+            "process": "01",
+            "sequenceNumber": "181280",
+            "streetNumber": "大森１９４３番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2021-06-09"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "12_chiba_all_20261030.csv"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "とみじじゃ"
+          },
+          "expected_source_hash": "c00eac2afdabaa55cf0f385285e0adcb705021ea397a5a7324c6e3d7fc5683c8",
+          "facility_id": "f807dcb2-967e-5511-9b80-852ea5211b38",
+          "identity_match": {
+            "agency_address": "千葉県 印西市 大森1943番地",
+            "agency_name": "鳥見神社"
+          },
+          "original": {
+            "address": "千葉県 印西市 大森1943番地",
+            "listing_url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=52&search%3Areverse=&search%3Aterm=30&sys%3Apid=2904&sys%3Arandom=1794149563-2904&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=53",
+            "name_raw": "鳥見神社",
+            "reading_raw": "トミジジャ"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "references": [
+            {
+              "address_raw": "千葉県 印西市 大森1943番地",
+              "checked_at": "2026-11-08T14:52:49.626591+00:00",
+              "excerpt": "鳥見神社 | トミジジャ | 千葉県 印西市 大森1943番地",
+              "locator": "tr[61] rowspan shrine cell",
+              "name_raw": "鳥見神社",
+              "page_hash": "ce3c395386d276c4590051c6bc7ee0581fc831dcecca360ce56dded39f196b34",
+              "reading_raw": "トミジジャ",
+              "source_kind": "agency",
+              "title": "千葉県神社庁（神社のひろば監修） 掲載読み原文（全文読みの確認未了）",
+              "url": "https://hiroba.jinja.ne.jp/ycDB/Board.cgi/001/db/ycDB-pc-jinja_list.html?mode%3Asearch=1&s%3Aj_ADDR_1%3Alike%3A1%3AADDR%3Aand=&s%3Aj_ADDR_PREF%3Afb%3A1%3AADDR%3Aand=%90%E7%97t%8C%A7&search%3Ahits=3145&search%3Amethod=group&search%3Apage=52&search%3Areverse=&search%3Aterm=30&sys%3Apid=2904&sys%3Arandom=1794149563-2904&view%3Areload=&view%3Asort=jinja_id&view%3Aterm=30&view%3Atotal=3177&view%3Apage=53"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "1ef32ae4-f600-59c9-9689-48f525a8b652": {
       "changes": {
@@ -36454,13 +37348,16 @@
     },
     "2299b4dc-bf0d-5b17-8422-189cc68fcbb3": {
       "changes": {
-        "reading": "にほんじじゃ"
+        "reading": "にほんじんじゃ"
       },
       "expected_source_hash": "03ed616cf3697bdcb4994288e927451a3d3fdb5b79daeb1a1346ef112631a5bc",
       "facility_id": "a9ecc13e-3c8d-5db8-aab2-7a87b14e41dd",
       "identity_match": {
         "agency_address": "肝属郡錦江町田代川原919",
-        "agency_name": "二本神社"
+        "agency_name": "二本神社",
+        "effective_address": "肝属郡錦江町田代川原919",
+        "reference_address": "鹿児島県肝属郡錦江町田代川原９１９番地",
+        "reference_name": "二本神社"
       },
       "original": {
         "address": "肝属郡錦江町田代川原919",
@@ -36468,23 +37365,180 @@
         "name_raw": "二本神社",
         "reading_raw": "ニホンジジャ"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+      "reason": "国税庁の実登録全文フリガナを原名と全所在地で一意照合し、月次と11月11日までの公開7差分を法人番号で結合して手動精査。接尾語・小書きを推測せずカタカナをひらがなに機械変換。元資料の疑義を自動修正したものではない。 過去の要確認補正全体と当時の参照・原文はreview_historyへ原形保存し、採用根拠は新しく検証した登録全文かなの参照とする。",
       "references": [
         {
-          "address_raw": "肝属郡錦江町田代川原919",
-          "checked_at": "2026-11-08T14:31:39.768535+00:00",
-          "excerpt": "div.shrine_detail a[href=\"https://www.kagojinjacho.or.jp/shrine-search/area-oosumi/%e9%8c%a6%e6%b1%9f%e7%94%ba/995/\"]: 名称=二本神社; 掲載読み=ニホンジジャ; 所在地=肝属郡錦江町田代川原919",
-          "locator": "div.shrine_detail a[href=\"https://www.kagojinjacho.or.jp/shrine-search/area-oosumi/%e9%8c%a6%e6%b1%9f%e7%94%ba/995/\"]",
+          "address_raw": "鹿児島県肝属郡錦江町田代川原９１９番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:42:05.519459+00:00",
+          "corporate_number": "3340005006963",
+          "csv_row": 19653,
+          "excerpt": "二本神社 / ニホンジンジャ / 鹿児島県肝属郡錦江町田代川原９１９番地",
+          "fetched_at": "2026-11-12T04:42:05.243267+00:00",
+          "file_id": "28499",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV file ID 28499; 46_kagoshima_all_20261030.csv; row 19653; corporateNumber=3340005006963",
           "name_raw": "二本神社",
-          "page_hash": "56f7300be12bd711e36652a4fb02a9f8f91be38af89c2a71f338205100e2ea07",
-          "reading_raw": "ニホンジジャ",
-          "source_kind": "agency",
-          "title": "鹿児島県神社庁 掲載読み原文（全文読みの確認未了）",
-          "url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-oosumi/page/14/"
+          "page_hash": "720d9d3267898bd96d8a428ff51f01619d827adda1951fa7c8def1dc6c8c952c",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+          "reading_raw": "ニホンジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "3340005006963"
+            ],
+            "matched_corporate_number_duplicated_in_base": false,
+            "method": "all_prefecture_monthly_parts_and_all_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:42:05.243267+00:00",
+                "file_id": "28499",
+                "page_hash": "720d9d3267898bd96d8a428ff51f01619d827adda1951fa7c8def1dc6c8c952c",
+                "row_count": 59907,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "Apply dates ascending by corporation; only a unique latest=1 row replaces state, process99 removes it; never revive closed/hidden/history rows; count competitors even without usable kana; compare exact name and whole numeric address."
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "490",
+            "cityName": "肝属郡錦江町",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "3340005006963",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "ニホンジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "二本神社",
+            "nameImageId": "",
+            "postCode": "8932402",
+            "prefectureCode": "46",
+            "prefectureName": "鹿児島県",
+            "process": "01",
+            "sequenceNumber": "19653",
+            "streetNumber": "田代川原９１９番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2024-07-18"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
+          "zip_member": "46_kagoshima_all_20261030.csv"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "にほんじじゃ"
+          },
+          "expected_source_hash": "03ed616cf3697bdcb4994288e927451a3d3fdb5b79daeb1a1346ef112631a5bc",
+          "facility_id": "a9ecc13e-3c8d-5db8-aab2-7a87b14e41dd",
+          "identity_match": {
+            "agency_address": "肝属郡錦江町田代川原919",
+            "agency_name": "二本神社"
+          },
+          "original": {
+            "address": "肝属郡錦江町田代川原919",
+            "listing_url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-oosumi/page/14/",
+            "name_raw": "二本神社",
+            "reading_raw": "ニホンジジャ"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "references": [
+            {
+              "address_raw": "肝属郡錦江町田代川原919",
+              "checked_at": "2026-11-08T14:31:39.768535+00:00",
+              "excerpt": "div.shrine_detail a[href=\"https://www.kagojinjacho.or.jp/shrine-search/area-oosumi/%e9%8c%a6%e6%b1%9f%e7%94%ba/995/\"]: 名称=二本神社; 掲載読み=ニホンジジャ; 所在地=肝属郡錦江町田代川原919",
+              "locator": "div.shrine_detail a[href=\"https://www.kagojinjacho.or.jp/shrine-search/area-oosumi/%e9%8c%a6%e6%b1%9f%e7%94%ba/995/\"]",
+              "name_raw": "二本神社",
+              "page_hash": "56f7300be12bd711e36652a4fb02a9f8f91be38af89c2a71f338205100e2ea07",
+              "reading_raw": "ニホンジジャ",
+              "source_kind": "agency",
+              "title": "鹿児島県神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-oosumi/page/14/"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "22a4471a-b93f-51b2-9f7c-cb484694421e": {
       "changes": {
@@ -36556,6 +37610,172 @@
           "title": "八幡宮 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/yasugi/4866a5b4edf42c2bbb988feefa9b8dbdab0827a7.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "22b2ec6b-c3f8-56d6-8fa1-0d2cc699d901": {
+      "changes": {
+        "reading": "すわじんじゃ"
+      },
+      "expected_source_hash": "7b5d08559a7f8aa80b29642dbae79e3742d40bbc378efe49057a05a4abe1f787",
+      "facility_id": "76463f18-8125-512a-a0ae-3b861c1e0495",
+      "identity_match": {
+        "agency_address": "上越市清里区東戸野746番地",
+        "agency_name": "諏訪神社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県上越市清里区東戸野７４６番地",
+        "reference_name": "諏訪神社"
+      },
+      "original": {
+        "address": "上越市清里区東戸野746番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15222&keyword=&page=33&num=10",
+        "name_raw": "諏訪神社",
+        "reading_raw": "すわじじゃ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県上越市清里区東戸野７４６番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "9110005008622",
+          "csv_row": 76173,
+          "excerpt": "諏訪神社 / スワジンジャ / 新潟県上越市清里区東戸野７４６番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 76173; corporateNumber=9110005008622",
+          "name_raw": "諏訪神社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "スワジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "9110005008622"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "222",
+            "cityName": "上越市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "9110005008622",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "スワジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "諏訪神社",
+            "nameImageId": "",
+            "postCode": "9430522",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "76173",
+            "streetNumber": "清里区東戸野７４６番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2019-12-26"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
         }
       ],
       "status": "verified"
@@ -42976,6 +44196,172 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "32_shimane_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "2978642a-1f0e-541a-a96d-d8640c435a80": {
+      "changes": {
+        "reading": "すわじんじゃ"
+      },
+      "expected_source_hash": "868719adb06f4e679a8dd7a5885d8b6fce63404f57ed27409ed8e1ec0005a45f",
+      "facility_id": "5084636d-068f-5784-bc73-91e72b68156e",
+      "identity_match": {
+        "agency_address": "五泉市下条字末廣110番地",
+        "agency_name": "諏訪神社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県五泉市下条字末廣１１０番地",
+        "reference_name": "諏訪神社"
+      },
+      "original": {
+        "address": "五泉市下条字末廣110番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15218&keyword=&page=6&num=10",
+        "name_raw": "諏訪神社",
+        "reading_raw": "すわじじゃ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県五泉市下条字末廣１１０番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "5110005004063",
+          "csv_row": 41516,
+          "excerpt": "諏訪神社 / スワジンジャ / 新潟県五泉市下条字末廣１１０番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 41516; corporateNumber=5110005004063",
+          "name_raw": "諏訪神社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "スワジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "5110005004063"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "218",
+            "cityName": "五泉市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "5110005004063",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "スワジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "諏訪神社",
+            "nameImageId": "",
+            "postCode": "9591803",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "41516",
+            "streetNumber": "下条字末廣１１０番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2025-05-16"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
         }
       ],
       "status": "verified"
@@ -60098,13 +61484,16 @@
     },
     "3afdc53c-af7f-5cba-968e-a8da7481daa8": {
       "changes": {
-        "reading": "はちまんんじゃ"
+        "reading": "はちまんじんじゃ"
       },
       "expected_source_hash": "45ba758153cdb165b451382da5809b69f6910fcf58727d7df0e9e87ac9ea9613",
       "facility_id": "84c3669f-ffcc-5d07-a11b-35977575f109",
       "identity_match": {
         "agency_address": "愛知県豊田市伊保町宮本２０番地",
-        "agency_name": "八幡神社"
+        "agency_name": "八幡神社",
+        "comparison": "元資料の全字段・原字・地番を維持して一意な最新法人を照合。別地域同名や原名冠称/字名/地番差を推測で解消しない。",
+        "reference_address": "愛知県豊田市伊保町宮本２０番地",
+        "reference_name": "八幡神社"
       },
       "original": {
         "address": "愛知県豊田市伊保町宮本２０番地",
@@ -60112,23 +61501,227 @@
         "name_raw": "八幡神社",
         "reading_raw": "はちまんんじゃ"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_duplicated_or_inserted_kana",
+      "reason": "登録法人の資料に明示された正式名全体のフリガナを採用する手動レビュー用候補。社名語尾や小書き音を推測修正したものではない。原庁読みと既存要確認理由・旧根拠を旧correction全体のreview_historyへ原形保持し、新しい全文読みを確認したNTA参照だけをactive referencesとする。全月次分割＋全7日次の法人番号状態を復元し、一意の最新・非閉鎖・非非表示の同名全所在地を照合。",
       "references": [
         {
           "address_raw": "愛知県豊田市伊保町宮本２０番地",
-          "checked_at": "2026-11-08T15:00:27.789308+00:00",
-          "excerpt": "{\"addr\": \"伊保町宮本\", \"city\": \"豊田市\", \"house_num\": \"２０番地\", \"id\": \"f354de52-177d-4f13-a7eb-9573f9ddf3b9\", \"kana\": \"はちまんんじゃ\", \"name\": \"八幡神社\", \"pref\": \"愛知県\"}",
-          "locator": "POST JSON all 69 official area choices, limit=-1 $.list[439] id=f354de52-177d-4f13-a7eb-9573f9ddf3b9",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:38:30.262221+00:00",
+          "corporate_number": "3180305005871",
+          "csv_row": 95722,
+          "excerpt": "八幡神社 / ハチマンジンジャ / 愛知県豊田市伊保町宮本２０番地",
+          "fetched_at": "2026-11-12T04:36:29.886924+00:00",
+          "file_id": "28425",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV file ID 28425; 23_aichi_all_20261030.csv; row 95722; corporateNumber=3180305005871",
           "name_raw": "八幡神社",
-          "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
-          "reading_raw": "はちまんんじゃ",
-          "source_kind": "agency",
-          "title": "愛知県神社庁 掲載読み原文（全文読みの確認未了）",
-          "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+          "page_hash": "20ffef2a2e2babf484de306ec3b4e89236ba0be5bb3f0297f0ff6deeb261cdda",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。全県内月次分割＋公開最新までの7日次を法人番号単位で結合し、全名称・全所在地・全文登録ふりがなを照合。カタカナをひらがなへ機械変換。",
+          "reading_raw": "ハチマンジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "baseline_witness": {
+              "csv_row": 95722,
+              "fetched_at": "2026-11-12T04:36:29.886924+00:00",
+              "file_id": "28425",
+              "page_hash": "20ffef2a2e2babf484de306ec3b4e89236ba0be5bb3f0297f0ff6deeb261cdda",
+              "snapshot": "20261030",
+              "source": "monthly_base",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "211",
+                "cityName": "豊田市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "3180305005871",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ハチマンジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "八幡神社",
+                "nameImageId": "",
+                "postCode": "4700374",
+                "prefectureCode": "23",
+                "prefectureName": "愛知県",
+                "process": "01",
+                "sequenceNumber": "95722",
+                "streetNumber": "伊保町宮本２０番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2021-07-30"
+              },
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "23_aichi_all_20261030.csv"
+            },
+            "daily_files": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261102.csv"
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261104.csv"
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261105.csv"
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261106.csv"
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261109.csv"
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261110.csv"
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                "zip_member": "diff_20261111.csv"
+              }
+            ],
+            "matched_corporate_number": "3180305005871",
+            "merge_rule": "date ascending; replace corporation with unique latest1 in daily group; process99 tombstone; no latest or ambiguous latest retires old state; count active competitors including those with missing kana; do not merge same names at other addresses",
+            "method": "all_selected_prefecture_monthly_parts_then_all_national_daily_corporation_groups",
+            "monthly_files": [
+              {
+                "compressed_bytes": 13907630,
+                "fetched_at": "2026-11-12T04:36:29.886924+00:00",
+                "file_id": "28425",
+                "page_hash": "20ffef2a2e2babf484de306ec3b4e89236ba0be5bb3f0297f0ff6deeb261cdda",
+                "prefecture_code": "23",
+                "row_count": 289488,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ]
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "211",
+            "cityName": "豊田市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "3180305005871",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "ハチマンジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "八幡神社",
+            "nameImageId": "",
+            "postCode": "4700374",
+            "prefectureCode": "23",
+            "prefectureName": "愛知県",
+            "process": "01",
+            "sequenceNumber": "95722",
+            "streetNumber": "伊保町宮本２０番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2021-07-30"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "23_aichi_all_20261030.csv"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "はちまんんじゃ"
+          },
+          "expected_source_hash": "45ba758153cdb165b451382da5809b69f6910fcf58727d7df0e9e87ac9ea9613",
+          "facility_id": "84c3669f-ffcc-5d07-a11b-35977575f109",
+          "identity_match": {
+            "agency_address": "愛知県豊田市伊保町宮本２０番地",
+            "agency_name": "八幡神社"
+          },
+          "original": {
+            "address": "愛知県豊田市伊保町宮本２０番地",
+            "listing_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
+            "name_raw": "八幡神社",
+            "reading_raw": "はちまんんじゃ"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_duplicated_or_inserted_kana",
+          "references": [
+            {
+              "address_raw": "愛知県豊田市伊保町宮本２０番地",
+              "checked_at": "2026-11-08T15:00:27.789308+00:00",
+              "excerpt": "{\"addr\": \"伊保町宮本\", \"city\": \"豊田市\", \"house_num\": \"２０番地\", \"id\": \"f354de52-177d-4f13-a7eb-9573f9ddf3b9\", \"kana\": \"はちまんんじゃ\", \"name\": \"八幡神社\", \"pref\": \"愛知県\"}",
+              "locator": "POST JSON all 69 official area choices, limit=-1 $.list[439] id=f354de52-177d-4f13-a7eb-9573f9ddf3b9",
+              "name_raw": "八幡神社",
+              "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
+              "reading_raw": "はちまんんじゃ",
+              "source_kind": "agency",
+              "title": "愛知県神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "3b1aa3cd-33ce-51c4-a6aa-ca6dcd9cbef3": {
       "changes": {
@@ -100164,6 +101757,172 @@
       ],
       "status": "verified"
     },
+    "61c27c58-625f-5697-974e-67a986bb753d": {
+      "changes": {
+        "reading": "しらひげしゃ"
+      },
+      "expected_source_hash": "3ff3b23fc59de16755b95071335b18310da639e1c5fea8c31e90dee3ac8e55b6",
+      "facility_id": "fe563471-666c-5c70-aeab-f2e1f1de05bd",
+      "identity_match": {
+        "agency_address": "長岡市中之島中条甲874番地",
+        "agency_name": "白髭社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県長岡市中之島中条甲８７４番地",
+        "reference_name": "白髭社"
+      },
+      "original": {
+        "address": "長岡市中之島中条甲874番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15202&keyword=&page=12&num=10",
+        "name_raw": "白髭社",
+        "reading_raw": "しらひげじんじゃ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県長岡市中之島中条甲８７４番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "3110005012200",
+          "csv_row": 25209,
+          "excerpt": "白髭社 / シラヒゲシャ / 新潟県長岡市中之島中条甲８７４番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 25209; corporateNumber=3110005012200",
+          "name_raw": "白髭社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "シラヒゲシャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "3110005012200"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "202",
+            "cityName": "長岡市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "3110005012200",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "シラヒゲシャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "白髭社",
+            "nameImageId": "",
+            "postCode": "9540216",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "25209",
+            "streetNumber": "中之島中条甲８７４番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2022-10-12"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
     "61d1a69d-1db1-5e3f-8fcf-2c4a0888c9ad": {
       "changes": {
         "reading": "とっとりじんじゃ"
@@ -117847,6 +119606,172 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "39_kochi_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "7213e3fd-2758-5ec3-9185-47d040ba20bd": {
+      "changes": {
+        "reading": "しんめいぐう"
+      },
+      "expected_source_hash": "25b329fce7c8b042f5ef78843da823a9401700279202a026565d9a1ad0486476",
+      "facility_id": "eef51503-d635-570e-b62d-c8ce2dc9eb4a",
+      "identity_match": {
+        "agency_address": "阿賀野市発久1064番地",
+        "agency_name": "神明宮",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県阿賀野市発久１０６４番地",
+        "reference_name": "神明宮"
+      },
+      "original": {
+        "address": "阿賀野市発久1064番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15223&keyword=&page=3&num=10",
+        "name_raw": "神明宮",
+        "reading_raw": "しんめいぐ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県阿賀野市発久１０６４番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "4110005003875",
+          "csv_row": 32937,
+          "excerpt": "神明宮 / シンメイグウ / 新潟県阿賀野市発久１０６４番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 32937; corporateNumber=4110005003875",
+          "name_raw": "神明宮",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "シンメイグウ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "4110005003875"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "新潟県阿賀野市笹岡６１４番地若宮社（7110005003864）を合併",
+            "changeDate": "2018-09-11",
+            "cityCode": "223",
+            "cityName": "阿賀野市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "4110005003875",
+            "correct": "0",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "シンメイグウ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "神明宮",
+            "nameImageId": "",
+            "postCode": "9591953",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "71",
+            "sequenceNumber": "32937",
+            "streetNumber": "発久１０６４番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2018-09-26"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
         }
       ],
       "status": "verified"
@@ -136863,6 +138788,172 @@
           "title": "八幡宮 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/hamada/357015d33e44707057553d6764aadef3500ad2a2.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "83d06fb2-8c14-5fea-b93d-421a5e40fe6d": {
+      "changes": {
+        "reading": "じゅうにじんじゃ"
+      },
+      "expected_source_hash": "c91532c53db1dc6ff7b0ae4b5219c0e5f12987a5d7bd6158e97bd5a1d1e312e4",
+      "facility_id": "bb155d96-65d1-5c1c-90d3-eef71c1bed4a",
+      "identity_match": {
+        "agency_address": "上越市浦川原区大栃山99番地",
+        "agency_name": "十二神社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県上越市浦川原区大栃山９９番地",
+        "reference_name": "十二神社"
+      },
+      "original": {
+        "address": "上越市浦川原区大栃山99番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15222&keyword=&page=22&num=10",
+        "name_raw": "十二神社",
+        "reading_raw": "じゅうにじじゃ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県上越市浦川原区大栃山９９番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "8110005009290",
+          "csv_row": 67649,
+          "excerpt": "十二神社 / ジュウニジンジャ / 新潟県上越市浦川原区大栃山９９番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 67649; corporateNumber=8110005009290",
+          "name_raw": "十二神社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "ジュウニジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "8110005009290"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "222",
+            "cityName": "上越市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "8110005009290",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "ジュウニジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "十二神社",
+            "nameImageId": "",
+            "postCode": "9420312",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "67649",
+            "streetNumber": "浦川原区大栃山９９番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2026-07-13"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
         }
       ],
       "status": "verified"
@@ -170886,6 +172977,172 @@
       ],
       "status": "verified"
     },
+    "a56ba044-3dbb-5c03-92b7-861c0d800e8c": {
+      "changes": {
+        "reading": "じゅうにしゃ"
+      },
+      "expected_source_hash": "17b5603fbd566398617f43d47da1567ce3dfb1492fa050f23519ea8ed1c39ce7",
+      "facility_id": "9fcddc0d-9cd2-5313-a577-e582562c932a",
+      "identity_match": {
+        "agency_address": "十日町市中条丁3838番地",
+        "agency_name": "十二社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県十日町市中条丁３８３８番地",
+        "reference_name": "十二社"
+      },
+      "original": {
+        "address": "十日町市中条丁3838番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15210&keyword=&page=14&num=10",
+        "name_raw": "十二社",
+        "reading_raw": "じゅうにじんじゃ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県十日町市中条丁３８３８番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "4110005010327",
+          "csv_row": 33550,
+          "excerpt": "十二社 / ジュウニシャ / 新潟県十日町市中条丁３８３８番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 33550; corporateNumber=4110005010327",
+          "name_raw": "十二社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "ジュウニシャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "4110005010327"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "210",
+            "cityName": "十日町市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "4110005010327",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "ジュウニシャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "十二社",
+            "nameImageId": "",
+            "postCode": "9498611",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "33550",
+            "streetNumber": "中条丁３８３８番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2025-03-12"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
     "a56beaa1-3258-5a59-8cd8-4481232ce87c": {
       "changes": {
         "reading": "みしまじんじゃ"
@@ -179159,6 +181416,172 @@
           "source_kind": "agency",
           "title": "https://akita-jinjacho.sakura.ne.jp/cat_shrine/mi/",
           "url": "https://akita-jinjacho.sakura.ne.jp/cat_shrine/mi/"
+        }
+      ],
+      "status": "verified"
+    },
+    "ad7a3a49-3c4d-5e6a-980f-13771aa56684": {
+      "changes": {
+        "reading": "けんにちじんじゃ"
+      },
+      "expected_source_hash": "d8342e02e6cb0032ffca7ea586552f49bd7ab41e52c27f78663abfc8357483b9",
+      "facility_id": "97809ba5-bb30-569e-8a36-647b83562cb2",
+      "identity_match": {
+        "agency_address": "刈羽郡刈羽村大字刈羽384番地",
+        "agency_name": "見日神社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県刈羽郡刈羽村大字刈羽３８４番地",
+        "reference_name": "見日神社"
+      },
+      "original": {
+        "address": "刈羽郡刈羽村大字刈羽384番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15504",
+        "name_raw": "見日神社",
+        "reading_raw": "けんにちじんじや"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県刈羽郡刈羽村大字刈羽３８４番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "2110005006896",
+          "csv_row": 16157,
+          "excerpt": "見日神社 / ケンニチジンジャ / 新潟県刈羽郡刈羽村大字刈羽３８４番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 16157; corporateNumber=2110005006896",
+          "name_raw": "見日神社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "ケンニチジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "2110005006896"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "504",
+            "cityName": "刈羽郡刈羽村",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "2110005006896",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "ケンニチジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "見日神社",
+            "nameImageId": "",
+            "postCode": "9450307",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "16157",
+            "streetNumber": "大字刈羽３８４番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2018-05-08"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
         }
       ],
       "status": "verified"
@@ -197942,13 +200365,16 @@
     },
     "be7ec38c-49a8-5145-b78d-98a5d8c77739": {
       "changes": {
-        "reading": "しらひげじじゃ"
+        "reading": "しらひげじんじゃ"
       },
       "expected_source_hash": "45a779adb9e5b0d2c1a022402213c7b7113f9e9258bdcec8ea7f29d8e6a7a85f",
       "facility_id": "71e6796b-db2f-5f86-bedd-5dd2d75f5ade",
       "identity_match": {
         "agency_address": "深谷市上原214",
-        "agency_name": "白髭神社"
+        "agency_name": "白髭神社",
+        "effective_address": "深谷市上原214",
+        "reference_address": "埼玉県深谷市上原２１４番地",
+        "reference_name": "白髭神社"
       },
       "original": {
         "address": "深谷市上原214",
@@ -197956,23 +200382,180 @@
         "name_raw": "白髭神社",
         "reading_raw": "しらひげじじゃ"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+      "reason": "国税庁の実登録全文フリガナを原名と全所在地で一意照合し、月次と11月11日までの公開7差分を法人番号で結合して手動精査。接尾語・小書きを推測せずカタカナをひらがなに機械変換。元資料の疑義を自動修正したものではない。 過去の要確認補正全体と当時の参照・原文はreview_historyへ原形保存し、採用根拠は新しく検証した登録全文かなの参照とする。",
       "references": [
         {
-          "address_raw": "深谷市上原214",
-          "checked_at": "2026-11-08T14:48:08.250628+00:00",
-          "excerpt": "白髭神社 | しらひげじじゃ | 深谷市上原214",
-          "locator": "caption#shrine_name; span.name_kana if published; span#shrine_address",
+          "address_raw": "埼玉県深谷市上原２１４番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:40:34.792939+00:00",
+          "corporate_number": "7030005013632",
+          "csv_row": 208468,
+          "excerpt": "白髭神社 / シラヒゲジンジャ / 埼玉県深谷市上原２１４番地",
+          "fetched_at": "2026-11-12T04:21:46.417704+00:00",
+          "file_id": "28375",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV file ID 28375; 11_saitama_all_20261030.csv; row 208468; corporateNumber=7030005013632",
           "name_raw": "白髭神社",
-          "page_hash": "864e6a17d578a3a651482fb507d6c18acf8594d6537c2e73458728577be09ca0",
-          "reading_raw": "しらひげじじゃ",
-          "source_kind": "agency",
-          "title": "埼玉県神社庁 掲載読み原文（全文読みの確認未了）",
-          "url": "https://www.saitama-jinjacho.or.jp/shrine/10084/"
+          "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+          "reading_raw": "シラヒゲジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "7030005013632"
+            ],
+            "matched_corporate_number_duplicated_in_base": false,
+            "method": "all_prefecture_monthly_parts_and_all_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:21:46.417704+00:00",
+                "file_id": "28375",
+                "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
+                "row_count": 269599,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "Apply dates ascending by corporation; only a unique latest=1 row replaces state, process99 removes it; never revive closed/hidden/history rows; count competitors even without usable kana; compare exact name and whole numeric address."
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "218",
+            "cityName": "深谷市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "7030005013632",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "シラヒゲジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "白髭神社",
+            "nameImageId": "",
+            "postCode": "3691109",
+            "prefectureCode": "11",
+            "prefectureName": "埼玉県",
+            "process": "01",
+            "sequenceNumber": "208468",
+            "streetNumber": "上原２１４番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2019-10-29"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
+          "zip_member": "11_saitama_all_20261030.csv"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "しらひげじじゃ"
+          },
+          "expected_source_hash": "45a779adb9e5b0d2c1a022402213c7b7113f9e9258bdcec8ea7f29d8e6a7a85f",
+          "facility_id": "71e6796b-db2f-5f86-bedd-5dd2d75f5ade",
+          "identity_match": {
+            "agency_address": "深谷市上原214",
+            "agency_name": "白髭神社"
+          },
+          "original": {
+            "address": "深谷市上原214",
+            "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/10084/",
+            "name_raw": "白髭神社",
+            "reading_raw": "しらひげじじゃ"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "references": [
+            {
+              "address_raw": "深谷市上原214",
+              "checked_at": "2026-11-08T14:48:08.250628+00:00",
+              "excerpt": "白髭神社 | しらひげじじゃ | 深谷市上原214",
+              "locator": "caption#shrine_name; span.name_kana if published; span#shrine_address",
+              "name_raw": "白髭神社",
+              "page_hash": "864e6a17d578a3a651482fb507d6c18acf8594d6537c2e73458728577be09ca0",
+              "reading_raw": "しらひげじじゃ",
+              "source_kind": "agency",
+              "title": "埼玉県神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://www.saitama-jinjacho.or.jp/shrine/10084/"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "be9d89f8-f001-51af-a38e-1657bee25a0a": {
       "changes": {
@@ -208087,6 +210670,172 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "39_kochi_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "c7dba9d6-9db7-5719-8aae-bbcd4a9062b1": {
+      "changes": {
+        "reading": "ひのじんじゃ"
+      },
+      "expected_source_hash": "767eec279d2aae67ee29b4f576c0127f7aead8123a2fa828cf5dea3d6b5157f6",
+      "facility_id": "e2d41d50-a4ca-5ded-a686-02693b6b5bba",
+      "identity_match": {
+        "agency_address": "長岡市寺泊志戸橋617番地",
+        "agency_name": "日野神社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県長岡市寺泊志戸橋６１７番地",
+        "reference_name": "日野神社"
+      },
+      "original": {
+        "address": "長岡市寺泊志戸橋617番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15202&keyword=&page=47&num=10",
+        "name_raw": "日野神社",
+        "reading_raw": "ひのじじゃ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県長岡市寺泊志戸橋６１７番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "8110005012377",
+          "csv_row": 67956,
+          "excerpt": "日野神社 / ヒノジンジャ / 新潟県長岡市寺泊志戸橋６１７番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 67956; corporateNumber=8110005012377",
+          "name_raw": "日野神社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "ヒノジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "8110005012377"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "202",
+            "cityName": "長岡市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "8110005012377",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "ヒノジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "日野神社",
+            "nameImageId": "",
+            "postCode": "9402527",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "67956",
+            "streetNumber": "寺泊志戸橋６１７番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2019-03-14"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
         }
       ],
       "status": "verified"
@@ -221211,6 +223960,172 @@
           "title": "本村神明社諏訪社合殿 | 長野県神社庁",
           "url": "https://www.nagano-jinjacho.jp/shibu/02cyusin/03syouenchiku/8214.html",
           "verification_method": "exact acquired index name/address row and actual name-cell detail link; leading full-name literal kana; typed shrine location; correction_problems identity binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "d52cb1fe-a8c4-5dd8-bd71-3f63b4061308": {
+      "changes": {
+        "reading": "すわじんじゃ"
+      },
+      "expected_source_hash": "5138508f45546a20f07450dd8e229569e7aa45c01a2ae4880c2b28481eff6c9a",
+      "facility_id": "80b62407-df59-59e5-bf00-519615afa39a",
+      "identity_match": {
+        "agency_address": "糸魚川市大字土塩1921番地",
+        "agency_name": "諏訪神社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県糸魚川市大字土塩１９２１番地",
+        "reference_name": "諏訪神社"
+      },
+      "original": {
+        "address": "糸魚川市大字土塩1921番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15216&keyword=&page=9&num=10",
+        "name_raw": "諏訪神社",
+        "reading_raw": "すわじじゃ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県糸魚川市大字土塩１９２１番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "7110005010869",
+          "csv_row": 59262,
+          "excerpt": "諏訪神社 / スワジンジャ / 新潟県糸魚川市大字土塩１９２１番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 59262; corporateNumber=7110005010869",
+          "name_raw": "諏訪神社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "スワジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "7110005010869"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "216",
+            "cityName": "糸魚川市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "7110005010869",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "スワジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "諏訪神社",
+            "nameImageId": "",
+            "postCode": "9491205",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "59262",
+            "streetNumber": "大字土塩１９２１番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2024-05-01"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
         }
       ],
       "status": "verified"
@@ -246787,47 +249702,116 @@
       "changes": {
         "reading": "さなげじんじゃ"
       },
-      "checked_at": "2026-11-10T11:28:32.502832+00:00",
       "expected_source_hash": "4b134159fb58342abcb81f3ba5f7c54ed106055fdfc4224f876d2a94e9918c91",
       "facility_id": "2a068e75-5d05-5b8b-a79a-4feb489b4edf",
-      "identity_match": "庁掲載の名称・市町村・番地と法人原文を比較。相違点は理由と両参照に保持し、採用判断は未確定。",
+      "identity_match": {
+        "agency_address": "岐阜県恵那市明智町大田1138番地",
+        "agency_name": "猿投神社",
+        "effective_address": "岐阜県恵那市明智町大田1138番地",
+        "reference_address": "岐阜県恵那市明智町大田１１３８番地",
+        "reference_name": "猿投神社"
+      },
       "original": {
         "address": "岐阜県恵那市明智町大田1138番地",
         "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1642&shrname=%E2%96%A0%E7%8C%BF%E6%8A%95%E7%A5%9E%E7%A4%BE%E2%96%A0",
         "name_raw": "猿投神社",
         "reading_raw": "さなげじんじゃい"
       },
-      "reason": "神社庁の掲載読みと存続法人の登録全文カナが相違するため保留。所在地の全地番は一致。末尾いを推定削除しない。",
+      "reason": "国税庁の実登録全文フリガナを原名と全所在地で一意照合し、月次と11月11日までの公開7差分を法人番号で結合して手動精査。接尾語・小書きを推測せずカタカナをひらがなに機械変換。元資料の疑義を自動修正したものではない。 過去の要確認補正全体と当時の参照・原文はreview_historyへ原形保存し、採用根拠は新しく検証した登録全文かなの参照とする。",
       "references": [
-        {
-          "address_raw": "岐阜県恵那市明智町大田1138番地",
-          "checked_at": "2026-11-10T10:06:40.778318+00:00",
-          "excerpt": "猿投神社 / さなげじんじゃい / 岐阜県恵那市明智町大田1138番地",
-          "fetched_at": "2026-11-10T10:06:40.778318+00:00",
-          "locator": "td[height=80] font.hyodai + font; td.moji3",
-          "name_raw": "猿投神社",
-          "page_hash": "bcdd7734da3c67444cac3a86b0ddff5827bb62e0a5763f45c3dbfa7f8833e182",
-          "reading_raw": "さなげじんじゃい",
-          "reading_scope": "full_name",
-          "source_kind": "agency",
-          "title": "岐阜県神社庁 猿投神社",
-          "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1642&shrname=%E2%96%A0%E7%8C%BF%E6%8A%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
-        },
         {
           "address_raw": "岐阜県恵那市明智町大田１１３８番地",
           "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
-          "checked_at": "2026-11-10T11:28:32.502832+00:00",
+          "checked_at": "2026-11-12T04:40:59.678584+00:00",
           "corporate_number": "6200005009399",
           "csv_row": 49452,
           "excerpt": "猿投神社 / サナゲジンジャ / 岐阜県恵那市明智町大田１１３８番地",
-          "fetched_at": "2026-11-10T11:28:32.502832+00:00",
+          "fetched_at": "2026-11-12T04:40:59.350781+00:00",
           "file_id": "28419",
           "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
           "locator": "Unicode CSV file ID 28419; 21_gifu_all_20261030.csv; row 49452; corporateNumber=6200005009399",
           "name_raw": "猿投神社",
           "page_hash": "a7aa8182feea8cdc3977d499b5096330f0bee20fca62e740baf525563b05ff51",
-          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。候補読みは明示カタカナからひらがなへ機械変換。未採用。",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
           "reading_raw": "サナゲジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "6200005009399"
+            ],
+            "matched_corporate_number_duplicated_in_base": false,
+            "method": "all_prefecture_monthly_parts_and_all_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:40:59.350781+00:00",
+                "file_id": "28419",
+                "page_hash": "a7aa8182feea8cdc3977d499b5096330f0bee20fca62e740baf525563b05ff51",
+                "row_count": 74816,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "Apply dates ascending by corporation; only a unique latest=1 row replaces state, process99 removes it; never revive closed/hidden/history rows; count competitors even without usable kana; compare exact name and whole numeric address."
+          },
           "snapshot": "20261030",
           "source_fields": {
             "addressImageId": "",
@@ -246862,14 +249846,105 @@
             "updateDate": "2024-04-24"
           },
           "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
           "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
           "title": "国税庁法人番号公表サイト 全件データ",
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "21_gifu_all_20261030.csv"
         }
       ],
-      "review_id": "R013",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "さなげじんじゃ"
+          },
+          "checked_at": "2026-11-10T11:28:32.502832+00:00",
+          "expected_source_hash": "4b134159fb58342abcb81f3ba5f7c54ed106055fdfc4224f876d2a94e9918c91",
+          "facility_id": "2a068e75-5d05-5b8b-a79a-4feb489b4edf",
+          "identity_match": "庁掲載の名称・市町村・番地と法人原文を比較。相違点は理由と両参照に保持し、採用判断は未確定。",
+          "original": {
+            "address": "岐阜県恵那市明智町大田1138番地",
+            "listing_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1642&shrname=%E2%96%A0%E7%8C%BF%E6%8A%95%E7%A5%9E%E7%A4%BE%E2%96%A0",
+            "name_raw": "猿投神社",
+            "reading_raw": "さなげじんじゃい"
+          },
+          "reason": "神社庁の掲載読みと存続法人の登録全文カナが相違するため保留。所在地の全地番は一致。末尾いを推定削除しない。",
+          "references": [
+            {
+              "address_raw": "岐阜県恵那市明智町大田1138番地",
+              "checked_at": "2026-11-10T10:06:40.778318+00:00",
+              "excerpt": "猿投神社 / さなげじんじゃい / 岐阜県恵那市明智町大田1138番地",
+              "fetched_at": "2026-11-10T10:06:40.778318+00:00",
+              "locator": "td[height=80] font.hyodai + font; td.moji3",
+              "name_raw": "猿投神社",
+              "page_hash": "bcdd7734da3c67444cac3a86b0ddff5827bb62e0a5763f45c3dbfa7f8833e182",
+              "reading_raw": "さなげじんじゃい",
+              "reading_scope": "full_name",
+              "source_kind": "agency",
+              "title": "岐阜県神社庁 猿投神社",
+              "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1642&shrname=%E2%96%A0%E7%8C%BF%E6%8A%95%E7%A5%9E%E7%A4%BE%E2%96%A0"
+            },
+            {
+              "address_raw": "岐阜県恵那市明智町大田１１３８番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-10T11:28:32.502832+00:00",
+              "corporate_number": "6200005009399",
+              "csv_row": 49452,
+              "excerpt": "猿投神社 / サナゲジンジャ / 岐阜県恵那市明智町大田１１３８番地",
+              "fetched_at": "2026-11-10T11:28:32.502832+00:00",
+              "file_id": "28419",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28419; 21_gifu_all_20261030.csv; row 49452; corporateNumber=6200005009399",
+              "name_raw": "猿投神社",
+              "page_hash": "a7aa8182feea8cdc3977d499b5096330f0bee20fca62e740baf525563b05ff51",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。候補読みは明示カタカナからひらがなへ機械変換。未採用。",
+              "reading_raw": "サナゲジンジャ",
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "210",
+                "cityName": "恵那市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "6200005009399",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "サナゲジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "猿投神社",
+                "nameImageId": "",
+                "postCode": "5097723",
+                "prefectureCode": "21",
+                "prefectureName": "岐阜県",
+                "process": "01",
+                "sequenceNumber": "49452",
+                "streetNumber": "明智町大田１１３８番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2024-04-24"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "zip_member": "21_gifu_all_20261030.csv"
+            }
+          ],
+          "review_id": "R013",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "ee1d8b25-0bdc-5ecd-8a0b-37d8c3e70836": {
       "changes": {
@@ -250401,6 +253476,172 @@
           "title": "天神社 | 長野県神社庁",
           "url": "https://www.nagano-jinjacho.jp/shibu/01hokusin/05kamiminochi/15135.htm",
           "verification_method": "exact acquired index name/address row and actual name-cell detail link; leading full-name literal kana; typed shrine location; correction_problems identity binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "f199cbca-d455-592b-b97b-23af4b2084f2": {
+      "changes": {
+        "reading": "すわじんじゃ"
+      },
+      "expected_source_hash": "de39e1e1594b2ed4636b2105f3bbd4cddf7146c746ff2b8bff6ecda10aa4112b",
+      "facility_id": "16c1a5e8-8adb-5e44-bffd-d7c611761eef",
+      "identity_match": {
+        "agency_address": "新潟市南区和泉605番地",
+        "agency_name": "諏訪神社",
+        "comparison": "全地番を含む原所在地と登録所在地を厳密照合。町域prefixだけの同一性認定をしない。",
+        "reference_address": "新潟県新潟市南区和泉６０５番地",
+        "reference_name": "諏訪神社"
+      },
+      "original": {
+        "address": "新潟市南区和泉605番地",
+        "listing_url": "https://niigata-jinjacho.jp/shrine_niigata/search.php?area=15106&keyword=&page=4&num=10",
+        "name_raw": "諏訪神社",
+        "reading_raw": "すわじじゃ"
+      },
+      "reason": "月次全分割と全7日次を結合した最新の一意同名全所在地登録の全文フリガナに基づく手動補正候補。原名・原読み・原所在地・ID・hashをoriginalのまま保持。語尾・小書き・音を推測で修正せず、新資料の全文登録カナだけを根拠とする。既存correctionは無く、旧判断を上書きしない。",
+      "references": [
+        {
+          "address_raw": "新潟県新潟市南区和泉６０５番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-12T04:39:34.366858+00:00",
+          "corporate_number": "7110005002197",
+          "csv_row": 58464,
+          "excerpt": "諏訪神社 / スワジンジャ / 新潟県新潟市南区和泉６０５番地",
+          "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+          "file_id": "28401",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "実Unicodeフォームfile ID 28401; 15_niigata_all_20261030.csv; row 58464; corporateNumber=7110005002197",
+          "name_raw": "諏訪神社",
+          "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと全7日次差分を法人番号で結合し名称・全所在地・全文かなを照合。登録カタカナをひらがなに機械変換。",
+          "reading_raw": "スワジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "row_count": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "row_count": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "row_count": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "row_count": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "row_count": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "row_count": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "row_count": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "matched_active_corporate_numbers": [
+              "7110005002197"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_seven_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 4MB",
+                "fetched_at": "2026-11-12T04:35:02.975494+00:00",
+                "file_id": "28401",
+                "page_hash": "b9a53407dd953714c2b6950313df342e3284adceb95b7dee410bf7747bd48038",
+                "prefecture_code": "15",
+                "row_count": 77061,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "policy": "法人番号単位で日付昇順。unique latest1のみ置換、削除99/最新無し/複数は旧状態を退役し過去行を復活させない。閉鎖・非表示・後継あり・画像未検証は採用しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "106",
+            "cityName": "新潟市南区",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "7110005002197",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "スワジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "諏訪神社",
+            "nameImageId": "",
+            "postCode": "9501471",
+            "prefectureCode": "15",
+            "prefectureName": "新潟県",
+            "process": "01",
+            "sequenceNumber": "58464",
+            "streetNumber": "和泉６０５番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2023-07-07"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ（20261030・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "15_niigata_all_20261030.csv"
         }
       ],
       "status": "verified"
