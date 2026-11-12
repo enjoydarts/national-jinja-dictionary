@@ -109248,13 +109248,16 @@
     },
     "6a00b974-6410-5ae8-beda-9498456bb678": {
       "changes": {
-        "reading": "よこみじじゃ"
+        "reading": "よこみじんじゃ"
       },
       "expected_source_hash": "330e8f08c1a959bee62a1f83e27914bdfb418148e54fe9799ef58c56e398970f",
       "facility_id": "3d48404d-f662-58c7-9433-8edb81fe4203",
       "identity_match": {
         "agency_address": "吉見町久保田117",
-        "agency_name": "横見神社"
+        "agency_name": "横見神社",
+        "comparison": "同名他所在地は統合せず、全地番117を照合。登録名の法形式prefix除去や画像文字の推定無し。",
+        "reference_address": "埼玉県比企郡吉見町大字久保田１１７番地",
+        "reference_name": "横見神社"
       },
       "original": {
         "address": "吉見町久保田117",
@@ -109262,23 +109265,222 @@
         "name_raw": "横見神社",
         "reading_raw": "よこみじじゃ"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+      "reason": "既存の要確認判断を、新しく公開された国税庁登録の全文フリガナ「ヨコミジンジャ」に基づいて解決する手動レビュー用候補。原神社庁の「よこみじじゃ」はoriginalと旧correction全体のreview_historyへ原形保持し、旧理由・根拠・review_kindを消さない。新資料に社名全体のかなが明記されているため採用を提案するもので、社名語尾の自動修正や音の推測ではない。旧agency読みは現採用根拠とする全文読みではないためactive referencesへ混ぜず、historyへ保持。埼玉20261030全件base＋20261102～20261111の全7公開日次差分を法人番号単位で結合し、一意の最新・非閉鎖・非非表示・全名全地番一致を検証。日次をzenkenと偽らない。",
       "references": [
         {
-          "address_raw": "吉見町久保田117",
-          "checked_at": "2026-11-08T15:45:43.892268+00:00",
-          "excerpt": "横見神社 | よこみじじゃ | 吉見町久保田117",
-          "locator": "caption#shrine_name; span.name_kana if published; span#shrine_address",
+          "address_raw": "埼玉県比企郡吉見町大字久保田１１７番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/sabun/index.html）",
+          "checked_at": "2026-11-12T04:24:11.698642+00:00",
+          "corporate_number": "1030005011518",
+          "csv_row": 134,
+          "excerpt": "横見神社 / ヨコミジンジャ / 埼玉県比企郡吉見町大字久保田１１７番地",
+          "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+          "file_id": "28523",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "日次Unicode実フォームfile ID 28523; diff_20261110.csv; row 134; corporateNumber=1030005011518",
           "name_raw": "横見神社",
-          "page_hash": "e45f2c9978dd4dc487b48d91afafe4790af46c285fe7ca7c38cb9e90e3d28171",
-          "reading_raw": "よこみじじゃ",
-          "source_kind": "agency",
-          "title": "埼玉県神社庁 掲載読み原文（全文読みの確認未了）",
-          "url": "https://www.saitama-jinjacho.or.jp/shrine/11481/"
+          "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。月次baseと日次更新を法人番号単位で結合し、全所在地及び全文フリガナを照合。カタカナをひらがなへ機械変換。",
+          "reading_raw": "ヨコミジンジャ",
+          "registry_state_proof": {
+            "active_exact_name_full_address_matches": 1,
+            "as_of": "20261111",
+            "base_duplicate_corporate_numbers": [],
+            "daily_deltas": [
+              {
+                "csv_member": "diff_20261102.csv",
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485"
+              },
+              {
+                "csv_member": "diff_20261104.csv",
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d"
+              },
+              {
+                "csv_member": "diff_20261105.csv",
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74"
+              },
+              {
+                "csv_member": "diff_20261106.csv",
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9"
+              },
+              {
+                "csv_member": "diff_20261109.csv",
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b"
+              },
+              {
+                "csv_member": "diff_20261110.csv",
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64"
+              },
+              {
+                "csv_member": "diff_20261111.csv",
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd"
+              }
+            ],
+            "existing_overlays": [
+              "corrections"
+            ],
+            "matched_active_corporate_numbers": [
+              "1030005011518"
+            ],
+            "method": "monthly_prefecture_all_parts_plus_all_national_daily_groups",
+            "monthly_base": [
+              {
+                "display_size": "zip 12MB",
+                "fetched_at": "2026-11-12T04:21:46.417704+00:00",
+                "file_id": "28375",
+                "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
+                "prefecture_code": "11",
+                "row_count": 269599,
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "monthly_corporate_witness": [
+              {
+                "csv_row": 28637,
+                "file_id": "28375",
+                "reference": {
+                  "fetched_at": "2026-11-12T04:21:46.417704+00:00",
+                  "page_hash": "f35eb6565776c2ad971a4f4e95b1de759253007eb9f41cc949c93610f39d4915",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "snapshot": "20261030",
+                "source_fields": {
+                  "addressImageId": "",
+                  "addressOutside": "",
+                  "addressOutsideImageId": "",
+                  "assignmentDate": "2015-10-05",
+                  "changeCause": "",
+                  "changeDate": "2015-10-05",
+                  "cityCode": "347",
+                  "cityName": "比企郡吉見町",
+                  "closeCause": "",
+                  "closeDate": "",
+                  "corporateNumber": "1030005011518",
+                  "correct": "0",
+                  "enAddressOutside": "",
+                  "enCityName": "",
+                  "enName": "",
+                  "enPrefectureName": "",
+                  "furigana": "",
+                  "hihyoji": "0",
+                  "kind": "399",
+                  "latest": "1",
+                  "name": "横見神社",
+                  "nameImageId": "",
+                  "postCode": "3550137",
+                  "prefectureCode": "11",
+                  "prefectureName": "埼玉県",
+                  "process": "01",
+                  "sequenceNumber": "28637",
+                  "streetNumber": "大字久保田１１７番地",
+                  "successorCorporateNumber": "",
+                  "updateDate": "2015-11-06"
+                },
+                "zip_member": "11_saitama_all_20261030.csv"
+              }
+            ],
+            "policy": "Apply dates ascending, replace each changed corporation by its unique latest=1 record; process99 removes corporation; no latest/ambiguous latest retires old row for safety; count competitors even when furigana absent and do not merge same names with different addresses."
+          },
+          "snapshot": "20261110",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "347",
+            "cityName": "比企郡吉見町",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "1030005011518",
+            "correct": "1",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "ヨコミジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "横見神社",
+            "nameImageId": "",
+            "postCode": "3550137",
+            "prefectureCode": "11",
+            "prefectureName": "埼玉県",
+            "process": "01",
+            "sequenceNumber": "134",
+            "streetNumber": "大字久保田１１７番地",
+            "successorCorporateNumber": "",
+            "updateDate": "2026-11-10"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 差分データ（2026年11月10日・CSV Unicode）",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+          "zip_member": "diff_20261110.csv"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_history": [
+        {
+          "changes": {
+            "reading": "よこみじじゃ"
+          },
+          "expected_source_hash": "330e8f08c1a959bee62a1f83e27914bdfb418148e54fe9799ef58c56e398970f",
+          "facility_id": "3d48404d-f662-58c7-9433-8edb81fe4203",
+          "identity_match": {
+            "agency_address": "吉見町久保田117",
+            "agency_name": "横見神社"
+          },
+          "original": {
+            "address": "吉見町久保田117",
+            "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/11481/",
+            "name_raw": "横見神社",
+            "reading_raw": "よこみじじゃ"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "references": [
+            {
+              "address_raw": "吉見町久保田117",
+              "checked_at": "2026-11-08T15:45:43.892268+00:00",
+              "excerpt": "横見神社 | よこみじじゃ | 吉見町久保田117",
+              "locator": "caption#shrine_name; span.name_kana if published; span#shrine_address",
+              "name_raw": "横見神社",
+              "page_hash": "e45f2c9978dd4dc487b48d91afafe4790af46c285fe7ca7c38cb9e90e3d28171",
+              "reading_raw": "よこみじじゃ",
+              "source_kind": "agency",
+              "title": "埼玉県神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://www.saitama-jinjacho.or.jp/shrine/11481/"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      ],
+      "status": "verified"
     },
     "6a1af072-3f1a-5d4c-b875-0ada9661a841": {
       "candidate_comparison": {
