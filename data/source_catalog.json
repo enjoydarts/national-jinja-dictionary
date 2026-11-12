@@ -50,6 +50,15 @@
           "scope": "Existing agency-listed names and full parcel addresses compared with shrine publications, shrine official pages or official tourism full kana. No acquired agency fields changed.",
           "verified_entries": 13
         },
+        "candidate_self_site_fetch_stops": {
+          "www.hokkaidojingu.or.jp": {
+            "body_acquired": false,
+            "checked_at": "2026-11-12T10:22:32.079302+00:00",
+            "evidence_data": "data/reading_research.json",
+            "status": "stopped_tls_hostname_mismatch",
+            "url": "https://www.hokkaidojingu.or.jp/kids/kids_2.html"
+          }
+        },
         "canonical_data": {
           "entries": 599,
           "entry_status_counts": {
@@ -85,6 +94,15 @@
           "evidence_data": "data/corrections.json; data/reading_research.json",
           "scope": "主名称に明示された独立全文かなの適用範囲と原全地番を個別検証した対象だけを補完。県内全保留の調査完了ではない。",
           "verified_entries": 1
+        },
+        "latest_hokuto_eniwa_tourism_followup": {
+          "checked_at": "2026-11-12T10:22:32.079302+00:00",
+          "checked_pending_entries": 7,
+          "evidence_data": "data/reading_research.json",
+          "named_facility_rows": 19,
+          "new_verified_entries": 0,
+          "raw_csv_records": 31,
+          "scope": "北斗市・恵庭市の現行観光施設2CSVだけ。青森市・苫小牧市・富良野市の既点検データは再照合対象から除外。北海道全保留・全自治体資料の調査完了とは区別。"
         },
         "listing_authority_status": "agency_site",
         "pages_fetched": 43,
