@@ -201378,6 +201378,73 @@
       ],
       "status": "verified"
     },
+    "b7d3c4ed-d3c4-584c-b1fd-801e07aa92d2": {
+      "changes": {
+        "reading": "たておおおかじんじゃ"
+      },
+      "expected_source_hash": "91ac73b8c6f9ab82ca4a2ad3bb9bc40f22f25c33bf130f92d2b07a53505dc212",
+      "facility_id": "a1639e29-2977-50e8-bb04-e50fdaaa0549",
+      "identity_match": {
+        "agency_address": "長野市大岡甲4731",
+        "agency_name": "健大岡神社",
+        "effective_address": "長野市大岡甲4731",
+        "reference_address": "長野県長野市大岡甲4731",
+        "reference_name": "健大岡神社"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T10:04:11.273694+00:00",
+        "independent_review": "独立担当が同hash実CSVの同一行の名称・全文かな・全住所と原登録、公開本文の実href・CC BY4.0条件・加工表示を照合して承認。",
+        "method": "exact_municipal_csv_full_name_kana_complete_parcel",
+        "observation": "神社名に付随する集会所名や公園名から切り出すのではなく、健大岡神社そのものが独立した名称欄と全文かなを持つ行だけを採用。市の避難場所指定の網羅範囲と神社庁の掲載範囲は区別。",
+        "peer_reviewed_at": "2026-11-12T10:05:09.949799+00:00"
+      },
+      "original": {
+        "address": "長野市大岡甲4731",
+        "listing_url": "https://www.nagano-jinjacho.jp/shibu/sarashina.htm",
+        "name_raw": "健大岡神社",
+        "reading_raw": ""
+      },
+      "reason": "長野市のCC BY4.0公開CSVの名称・名称かな・所在地が同じ行に対応し、原正式名と全地番4731まで一致することを個別確認して読みだけ補完。全文かなの連続した「おおお」を省略・補正せず、そのまま採用。原表記・全住所・施設IDと既存判断を保持し、同名他施設や建物の読みを流用しない。",
+      "references": [
+        {
+          "address_raw": "長野県長野市大岡甲4731",
+          "attribution": "出典：長野市「避難場所一覧」（CC BY4.0、https://www.city.nagano.nagano.jp/n023500/contents/p004876.html 、2026年11月12日取得）を編集・加工して作成。名称・全文読み・所在地の最小事実を照合し、辞書の読み補完に利用。",
+          "checked_at": "2026-11-12T10:04:11.273694+00:00",
+          "csv_row": 248,
+          "excerpt": "健大岡神社 / たておおおかじんじゃ / 長野県長野市大岡甲4731",
+          "fetched_at": "2026-11-12T10:02:53.419703+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T10:02:49.186014+00:00",
+              "kind": "municipal_open_data_catalogue",
+              "page_hash": "674d159b587c6d1655f99afd62b454d52bd5821b91bc2a2e68adc01a9035b2df",
+              "url": "https://www.city.nagano.nagano.jp/n023500/contents/p004876.html"
+            },
+            {
+              "fetched_at": "2026-11-12T10:02:51.281582+00:00",
+              "kind": "open_data_terms",
+              "page_hash": "8801bbd15420e3f2323857cb9f5b600844e7e83c0702a84fae884b1d9f5c3d8e",
+              "url": "https://www.city.nagano.nagano.jp/n023500/contents/p004878.html"
+            }
+          ],
+          "license_observation": "市の実カタログ本文は公開データをCC BY4.0で提供し、利用規約本文は出典・加工表示を要求。個別CSVは同じ本文表の避難場所一覧の実href。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "UTF-8 CSV row 248: 名称・名称かな・所在地（ヘッダを1行目として数える）",
+          "name_raw": "健大岡神社",
+          "page_hash": "98f971fc72e879167ead16b3a6031fdb028a795f4aea8cafd730957673d6cec8",
+          "processed_notice": "名称・全文読み・全所在地を個別照合して読みのみを補完。原資料の所在地と施設IDは保持。",
+          "reading_raw": "たておおおかじんじゃ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "長野市",
+          "title": "長野市 避難場所一覧",
+          "url": "https://www.city.nagano.nagano.jp/documents/1948/202011_evacuation_space.csv",
+          "verification_method": "individual_source_review: exact independent full shrine name kana and complete original parcel in municipal evacuation CSV"
+        }
+      ],
+      "status": "verified"
+    },
     "b7d896ae-6456-54a7-8cef-0947f5c5cb95": {
       "changes": {
         "reading": "はちまんじんじゃ"

@@ -2824,10 +2824,10 @@
         },
         "checked_at": null,
         "effective_entry_status_counts": {
-          "pending": 1772,
-          "verified": 468
+          "pending": 1771,
+          "verified": 469
         },
-        "effective_pending_entries": 1772,
+        "effective_pending_entries": 1771,
         "facilities_collected": 2240,
         "fields_observed": {
           "address": 2240,
@@ -2854,6 +2854,18 @@
           ],
           "evidence_data": "data/corrections.json; data/reading_research.json",
           "scope": "主名称に明示された独立全文かなの適用範囲と原全地番を個別検証した対象だけを補完。県内全保留の調査完了ではない。",
+          "verified_entries": 1
+        },
+        "latest_municipal_evacuation_reading_followup": {
+          "checked_at": "2026-11-12T10:05:50.658290+00:00",
+          "data_rows": 304,
+          "entry_ids": [
+            "b7d3c4ed-d3c4-584c-b1fd-801e07aa92d2"
+          ],
+          "evidence_data": "data/corrections.json; data/reading_research.json",
+          "inspected_targets": 321,
+          "license": "CC-BY-4.0",
+          "scope": "原住所が長野市で始まる現保留321登録と市公開の避難場所CSV304行。健大岡神社の名称・全文かな・全地番を同一行で照合し1登録のみ採用。市全神社又は県全保留の調査完了とは区別。",
           "verified_entries": 1
         },
         "legal_form_reading_supplements": {
@@ -2917,13 +2929,13 @@
         "stored_pages_fetched": 16,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 1772,
+            "insufficient_evidence_in_inspected_sources": 1771,
             "investigation_incomplete": 0,
             "judgment_required": 0
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 1786,
-          "unfinished_entries": 1772
+          "unfinished_entries": 1771
         }
       },
       "conditions": {
@@ -44727,8 +44739,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13698,
-    "effective_verified_facilities": 44342,
+    "effective_dictionary_rows": 13699,
+    "effective_verified_facilities": 44343,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
