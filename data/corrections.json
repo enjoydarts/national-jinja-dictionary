@@ -11227,6 +11227,56 @@
       "status": "needs_review",
       "unresolved_kind": "name_address_or_structure"
     },
+    "090da2ed-f0f5-5b52-a0e1-d8c7036c284d": {
+      "changes": {
+        "reading": "よしだじんじゃ"
+      },
+      "expected_source_hash": "c00b1c268c705255c306c369f310d01aff18005470d603a30b4206696c8fd11f",
+      "facility_id": "83a46921-24f8-5ba5-84f8-33cd8e4c5995",
+      "identity_match": {
+        "address_comparison": "府名除去のみで全所在地・全番地一致。",
+        "agency_address": "京都市左京区吉田神楽岡町30",
+        "agency_name": "吉田神社",
+        "match_kind": "exact_full_address",
+        "reference_address": "京都府京都市左京区吉田神楽岡町30",
+        "reference_name": "吉田神社"
+      },
+      "original": {
+        "address": "京都市左京区吉田神楽岡町30",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/04.html",
+        "name_raw": "吉田神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府京都市左京区吉田神楽岡町30",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 1024,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "吉田神社 / ヨシダジンジャ / 京都府京都市左京区吉田神楽岡町30",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 1024 (header=1); NO=0000000185; columns 名称, 名称_カナ, 住所",
+          "name_raw": "吉田神社",
+          "native_record_id": "0000000185",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "ヨシダジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "a41d252cb8269601a42a67cd391c0d99aa8fc6a12543d6bce5d48596e75575b7",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
+        }
+      ],
+      "status": "verified"
+    },
     "0942c5f9-f071-5a84-bdce-faf66d2cd9b5": {
       "changes": {
         "reading": "うみじんじゃ"
@@ -19153,6 +19203,56 @@
       ],
       "review_kind": "whole_reading_audit",
       "status": "needs_review"
+    },
+    "11a9370b-6018-5e67-8ede-416fcc31e2c7": {
+      "changes": {
+        "reading": "はくさんじんじゃ"
+      },
+      "expected_source_hash": "db0376795091594498f896408eed43189d1061a7dbc5eade9b4f845309c86099",
+      "facility_id": "d29bb173-78c4-5df5-ae84-4f56cf002d04",
+      "identity_match": {
+        "address_comparison": "正本住所は数字のない同一町域まで。資料の同町域末尾に明示番地が追加されており_reference_matchesで許される範囲。追加字名なし。正本・資料住所rawを別保持。",
+        "agency_address": "京田辺市宮津白山",
+        "agency_name": "白山神社",
+        "match_kind": "same_acquired_locality_with_explicit_parcel_extension",
+        "reference_address": "京都府京田辺市宮津白山41",
+        "reference_name": "白山神社"
+      },
+      "original": {
+        "address": "京田辺市宮津白山",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
+        "name_raw": "白山神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府京田辺市宮津白山41",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 708,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "白山神社 / ハクサンジンジャ / 京都府京田辺市宮津白山41",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 708 (header=1); NO=0000009563; columns 名称, 名称_カナ, 住所",
+          "name_raw": "白山神社",
+          "native_record_id": "0000009563",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "ハクサンジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "847a249aa98fc0147d5ac13268a074b1836f32d3dd79cdb2bbda3787bb44c9a4",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
+        }
+      ],
+      "status": "verified"
     },
     "11b9c328-f5b6-5b5e-961d-c52c12afd9f0": {
       "changes": {
@@ -29540,6 +29640,53 @@
       ],
       "status": "verified"
     },
+    "1be37b79-9067-522b-bf51-4a649d363bea": {
+      "changes": {
+        "reading": "みかみじんじゃ"
+      },
+      "expected_source_hash": "5fa06c9c8a2629b3015fa7e5b96bb8c5917653a8bb5a62ae81d011e34ce3b35e",
+      "facility_id": "fed075b2-24e8-549a-92ab-adfc2b52d7fd",
+      "identity_match": {
+        "agency_address": "壱岐市郷ノ浦町若松触451番地",
+        "agency_name": "見上神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県壱岐市郷ノ浦町若松触451",
+        "reference_name": "見上神社"
+      },
+      "original": {
+        "address": "壱岐市郷ノ浦町若松触451番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/iki.html",
+        "name_raw": "見上神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県壱岐市郷ノ浦町若松触451",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 899,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "見上神社 / みかみじんじゃ / 長崎県壱岐市郷ノ浦町若松触451",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 899 (header=1); NO=100339; columns 名称, 名称_カナ, 住所",
+          "name_raw": "見上神社",
+          "native_record_id": "100339",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "みかみじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+        }
+      ],
+      "status": "verified"
+    },
     "1be42aeb-5552-574d-9108-272891626560": {
       "changes": {
         "reading": "はちまんぐう"
@@ -30140,6 +30287,53 @@
           "title": "八幡宮 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/yasugi/0af4dfed86e3c009ac8a7177b08444fea2c2b153.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "1cd88f07-5629-568a-a11d-0d607492fa93": {
+      "changes": {
+        "reading": "いわどじんじゃ"
+      },
+      "expected_source_hash": "547871bdab11de0bb30f6d22326e2b70e172dde9c266ebba92e171e6f33c787c",
+      "facility_id": "a61551df-bc78-5188-98fe-da9252c65099",
+      "identity_match": {
+        "agency_address": "雲仙市瑞穂町西郷丁2322番地",
+        "agency_name": "岩戸神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県雲仙市瑞穂町西郷丁2322番地",
+        "reference_name": "岩戸神社"
+      },
+      "original": {
+        "address": "雲仙市瑞穂町西郷丁2322番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+        "name_raw": "岩戸神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県雲仙市瑞穂町西郷丁2322番地",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 529,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "岩戸神社 / イワドジンジャ / 長崎県雲仙市瑞穂町西郷丁2322番地",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 529 (header=1); NO=51685; columns 名称, 名称_カナ, 住所",
+          "name_raw": "岩戸神社",
+          "native_record_id": "51685",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "イワドジンジャ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -38666,6 +38860,53 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "39_kochi_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "2553ba9d-65c4-573d-8140-a55c4a5b83bb": {
+      "changes": {
+        "reading": "こんぴらじんじゃ"
+      },
+      "expected_source_hash": "dc02c79fab9953b3e7f81112cdefa67b4583caa50c469455aa98cc1f4cc97f54",
+      "facility_id": "ea83fe48-eabb-5370-86d8-33d47db319d7",
+      "identity_match": {
+        "agency_address": "南松浦郡新上五島町若松郷831番地",
+        "agency_name": "金刀比羅神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県南松浦郡新上五島町若松郷831",
+        "reference_name": "金刀比羅神社"
+      },
+      "original": {
+        "address": "南松浦郡新上五島町若松郷831番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html",
+        "name_raw": "金刀比羅神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県南松浦郡新上五島町若松郷831",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 978,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "金刀比羅神社 / こんぴらじんじゃ / 長崎県南松浦郡新上五島町若松郷831",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 978 (header=1); NO=100434; columns 名称, 名称_カナ, 住所",
+          "name_raw": "金刀比羅神社",
+          "native_record_id": "100434",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "こんぴらじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -56589,6 +56830,56 @@
       ],
       "status": "verified"
     },
+    "3883cb49-d967-5b5d-924f-f64f25e3b346": {
+      "changes": {
+        "reading": "てんじんじゃ"
+      },
+      "expected_source_hash": "8aef453e25a46cadccb33f626db77159e7e443481dcd4a2949ec0fe55dceaf36",
+      "facility_id": "cf416073-4523-5f05-9a93-a05a810ce626",
+      "identity_match": {
+        "address_comparison": "府名除去のみで全所在地・全番地一致。",
+        "agency_address": "京田辺市松井向山1",
+        "agency_name": "天神社",
+        "match_kind": "exact_full_address",
+        "reference_address": "京都府京田辺市松井向山1",
+        "reference_name": "天神社"
+      },
+      "original": {
+        "address": "京田辺市松井向山1",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
+        "name_raw": "天神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府京田辺市松井向山1",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 719,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "天神社 / テンジンジャ / 京都府京田辺市松井向山1",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 719 (header=1); NO=0000009557; columns 名称, 名称_カナ, 住所",
+          "name_raw": "天神社",
+          "native_record_id": "0000009557",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "テンジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "383882f93f496db6568907d774b294d52b149be2bc3fa39a72d40dd21481b7ad",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
+        }
+      ],
+      "status": "verified"
+    },
     "388f2c1a-7b45-521c-8611-c1b576929633": {
       "changes": {
         "reading": "さんぶはちまんぐう"
@@ -59368,6 +59659,53 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "39_kochi_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "3a954f95-5d76-5a2c-b4d3-7cf54599c0bc": {
+      "changes": {
+        "reading": "はくさはちまんじんじゃ"
+      },
+      "expected_source_hash": "de3e1423d30d4a2fc2c8bc46dec09692d4fef287e8ebec62582755f98a06006c",
+      "facility_id": "5e8013b3-1274-53e4-851d-5550bca5caf3",
+      "identity_match": {
+        "agency_address": "壱岐市石田町筒城仲触1012番地",
+        "agency_name": "白沙八幡神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県壱岐市石田町筒城仲触1012",
+        "reference_name": "白沙八幡神社"
+      },
+      "original": {
+        "address": "壱岐市石田町筒城仲触1012番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/iki.html",
+        "name_raw": "白沙八幡神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県壱岐市石田町筒城仲触1012",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 862,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "白沙八幡神社 / はくさはちまんじんじゃ / 長崎県壱岐市石田町筒城仲触1012",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 862 (header=1); NO=100301; columns 名称, 名称_カナ, 住所",
+          "name_raw": "白沙八幡神社",
+          "native_record_id": "100301",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "はくさはちまんじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -75470,6 +75808,53 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "20_nagano_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "4be88d02-15ec-57f4-9da0-3d08b2d30178": {
+      "changes": {
+        "reading": "らいめいじんじゃ"
+      },
+      "expected_source_hash": "da5db569c1410eb533ec27a064a3cbb46c95ab027f7e8a604ceec5f699cbfdea",
+      "facility_id": "6e256a32-dd2e-53f9-b2aa-d38a61e0cf8b",
+      "identity_match": {
+        "agency_address": "対馬市厳原町大字阿連215番地",
+        "agency_name": "雷命神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県対馬市厳原町阿連215",
+        "reference_name": "雷命神社"
+      },
+      "original": {
+        "address": "対馬市厳原町大字阿連215番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/tsushima.html",
+        "name_raw": "雷命神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県対馬市厳原町阿連215",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 523,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "雷命神社 / ライメイジンジャ / 長崎県対馬市厳原町阿連215",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 523 (header=1); NO=51630; columns 名称, 名称_カナ, 住所",
+          "name_raw": "雷命神社",
+          "native_record_id": "51630",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "ライメイジンジャ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -104050,6 +104435,56 @@
       ],
       "status": "verified"
     },
+    "65439849-0a88-5642-9feb-ae05b8bda202": {
+      "changes": {
+        "reading": "うじかみじんじゃ"
+      },
+      "expected_source_hash": "34cd280e669d8cb40802cf10a602a27f163095f15e461e213bfbdbbe18dca332",
+      "facility_id": "4d231c3b-7dc5-5ae5-a054-cd94d78c24cc",
+      "identity_match": {
+        "address_comparison": "府名除去のみで全所在地・全番地一致。",
+        "agency_address": "宇治市宇治山田59",
+        "agency_name": "宇治上神社",
+        "match_kind": "exact_full_address",
+        "reference_address": "京都府宇治市宇治山田59",
+        "reference_name": "宇治上神社"
+      },
+      "original": {
+        "address": "宇治市宇治山田59",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/13.html",
+        "name_raw": "宇治上神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府宇治市宇治山田59",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 645,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "宇治上神社 / ウジカミジンジャ / 京都府宇治市宇治山田59",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 645 (header=1); NO=0000003471; columns 名称, 名称_カナ, 住所",
+          "name_raw": "宇治上神社",
+          "native_record_id": "0000003471",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "ウジカミジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "625dbcfe5847c4ff3fe75ad87bb4dde32c98dcd84a66533f598eab634ffb24a7",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
+        }
+      ],
+      "status": "verified"
+    },
     "657475fc-ca07-5f3f-981c-e758edc4fc81": {
       "changes": {
         "reading": "ひよしじんじゃ"
@@ -111060,6 +111495,53 @@
       ],
       "status": "verified"
     },
+    "6c7c61f2-cc2c-5a3a-945d-7b7c5758b2ee": {
+      "changes": {
+        "reading": "かわらじんじゃ"
+      },
+      "expected_source_hash": "e5457ba1e09295a4ad0eacd6a3cbdd392275e9b6259e814dd8d2a9a1f7d11690",
+      "facility_id": "2aad3eec-39b7-528a-84f5-d87fd64e1975",
+      "identity_match": {
+        "agency_address": "壱岐市郷ノ浦町半城本村触116番地",
+        "agency_name": "河原神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県壱岐市郷ノ浦町半城本村触116",
+        "reference_name": "河原神社"
+      },
+      "original": {
+        "address": "壱岐市郷ノ浦町半城本村触116番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/iki.html",
+        "name_raw": "河原神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県壱岐市郷ノ浦町半城本村触116",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 894,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "河原神社 / かわらじんじゃ / 長崎県壱岐市郷ノ浦町半城本村触116",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 894 (header=1); NO=100334; columns 名称, 名称_カナ, 住所",
+          "name_raw": "河原神社",
+          "native_record_id": "100334",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "かわらじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+        }
+      ],
+      "status": "verified"
+    },
     "6c7fecf5-eb9a-5232-82f9-7370d30577ff": {
       "changes": {
         "reading": "はちまんぐう"
@@ -113777,6 +114259,53 @@
       ],
       "status": "verified"
     },
+    "6f46b5a2-b475-572b-af0c-40b729834ce2": {
+      "changes": {
+        "reading": "しちろうじんじゃ"
+      },
+      "expected_source_hash": "a4d24b3a6a11d89094c8a627c3c79bcb6ddbf5476f8592f3e9513e4ec62601f8",
+      "facility_id": "8429b3bf-69e1-5e83-a4a8-e9feeeed7336",
+      "identity_match": {
+        "agency_address": "壱岐市石田町池田西触1094番地2",
+        "agency_name": "七郎神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県壱岐市石田町池田西触1094-2",
+        "reference_name": "七郎神社"
+      },
+      "original": {
+        "address": "壱岐市石田町池田西触1094番地2",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/iki.html",
+        "name_raw": "七郎神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県壱岐市石田町池田西触1094-2",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 879,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "七郎神社 / しちろうじんじゃ / 長崎県壱岐市石田町池田西触1094-2",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 879 (header=1); NO=100319; columns 名称, 名称_カナ, 住所",
+          "name_raw": "七郎神社",
+          "native_record_id": "100319",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "しちろうじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+        }
+      ],
+      "status": "verified"
+    },
     "6f4ae453-c179-51f4-95c5-697ef39180d4": {
       "changes": {
         "reading": "はちまんぐう"
@@ -114935,6 +115464,53 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "32_shimane_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "70bfbd34-439a-5d38-bb45-5befbdf44ed3": {
+      "changes": {
+        "reading": "えびすじんじゃ"
+      },
+      "expected_source_hash": "e5a2542642a16dbc1a21dbdd87b4942aa79623f03f89077a9521d15a84bc8942",
+      "facility_id": "83a2d42e-b78c-587e-8faa-bf82f240bae6",
+      "identity_match": {
+        "agency_address": "五島市伊福貴町347番地",
+        "agency_name": "蛭子神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県五島市伊福貴町347",
+        "reference_name": "蛭子神社"
+      },
+      "original": {
+        "address": "五島市伊福貴町347番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/shimogotou.html",
+        "name_raw": "蛭子神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県五島市伊福貴町347",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 751,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "蛭子神社 / エビスジンジャ / 長崎県五島市伊福貴町347",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 751 (header=1); NO=62651; columns 名称, 名称_カナ, 住所",
+          "name_raw": "蛭子神社",
+          "native_record_id": "62651",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "エビスジンジャ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -140493,6 +141069,53 @@
       ],
       "status": "verified"
     },
+    "89921824-c148-579a-96b3-a713ea634a43": {
+      "changes": {
+        "reading": "かいじんじんじゃ"
+      },
+      "expected_source_hash": "651e57130c15ab0e0b67b35749293e066a1024b53707dd35645a56e607725afa",
+      "facility_id": "421169f0-286c-56cf-a7ae-11b9b999d031",
+      "identity_match": {
+        "agency_address": "対馬市峰町木坂247番地",
+        "agency_name": "海神神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県対馬市峰町木坂247",
+        "reference_name": "海神神社"
+      },
+      "original": {
+        "address": "対馬市峰町木坂247番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/tsushima.html",
+        "name_raw": "海神神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県対馬市峰町木坂247",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 488,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "海神神社 / カイジンジンジャ / 長崎県対馬市峰町木坂247",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 488 (header=1); NO=1042; columns 名称, 名称_カナ, 住所",
+          "name_raw": "海神神社",
+          "native_record_id": "1042",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "カイジンジンジャ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+        }
+      ],
+      "status": "verified"
+    },
     "89a08dc9-062a-5c2d-b403-bd58a3199896": {
       "changes": {
         "reading": "おうじゅじんじゃ"
@@ -143083,6 +143706,56 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "39_kochi_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "8cd3f32c-e7dc-508c-bc70-5a6b29521736": {
+      "changes": {
+        "reading": "くせじんじゃ"
+      },
+      "expected_source_hash": "5cd33c8107be2074e09b0aba0ee38f6f2e470bee3a774dd2212e598b1aefb8cd",
+      "facility_id": "5a2279b1-cc79-52a4-aadc-2a728f60e097",
+      "identity_match": {
+        "address_comparison": "府名除去のみで全所在地・全番地一致。",
+        "agency_address": "城陽市久世芝ヶ原142",
+        "agency_name": "久世神社",
+        "match_kind": "exact_full_address",
+        "reference_address": "京都府城陽市久世芝ヶ原142",
+        "reference_name": "久世神社"
+      },
+      "original": {
+        "address": "城陽市久世芝ヶ原142",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/17.html",
+        "name_raw": "久世神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府城陽市久世芝ヶ原142",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 667,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "久世神社 / クセジンジャ / 京都府城陽市久世芝ヶ原142",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 667 (header=1); NO=0000000377; columns 名称, 名称_カナ, 住所",
+          "name_raw": "久世神社",
+          "native_record_id": "0000000377",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "クセジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "d036b6eaa8e421ffb9d33f0dea0eaf0b7b4711c6a9815ee0b66dee03370cbafd",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
         }
       ],
       "status": "verified"
@@ -157178,6 +157851,56 @@
           "title": "大元神社 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/masuda/db995d4091cf57ea130af510237df1f35de35fbd.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "99d0ba41-4153-5817-849c-a4741c9f96f4": {
+      "changes": {
+        "reading": "あらみじんじゃ"
+      },
+      "expected_source_hash": "79ac5c924a17efef02e202b0adb9fd2f9d225fa03243855beddbf79d083f9c74",
+      "facility_id": "d5f726b1-4d5d-5b5b-bce8-a3e167f88e2f",
+      "identity_match": {
+        "address_comparison": "府名除去のみで全所在地・全番地一致。",
+        "agency_address": "城陽市富野荒見田165",
+        "agency_name": "荒見神社",
+        "match_kind": "exact_full_address",
+        "reference_address": "京都府城陽市富野荒見田165",
+        "reference_name": "荒見神社"
+      },
+      "original": {
+        "address": "城陽市富野荒見田165",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/17.html",
+        "name_raw": "荒見神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府城陽市富野荒見田165",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 659,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "荒見神社 / アラミジンジャ / 京都府城陽市富野荒見田165",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 659 (header=1); NO=0000000374; columns 名称, 名称_カナ, 住所",
+          "name_raw": "荒見神社",
+          "native_record_id": "0000000374",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "アラミジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "fa161a8af28fa6d1fa67070ced073173153821b0fe4474fc087ce31fd972864e",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
         }
       ],
       "status": "verified"
@@ -181018,6 +181741,53 @@
       ],
       "status": "verified"
     },
+    "b0df25b9-f92b-5e3a-ab9f-e7e33f866fbc": {
+      "changes": {
+        "reading": "ふかえじんじゃ"
+      },
+      "expected_source_hash": "371e91070c95b070d4c10909a70bbf5f58eb103e23436d639a0aee615fe134fe",
+      "facility_id": "029cf41f-7f46-5048-af1e-6925d6586514",
+      "identity_match": {
+        "agency_address": "壱岐市芦辺町深江栄触682番地",
+        "agency_name": "深江神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県壱岐市芦辺町深江栄触682",
+        "reference_name": "深江神社"
+      },
+      "original": {
+        "address": "壱岐市芦辺町深江栄触682番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/iki.html",
+        "name_raw": "深江神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県壱岐市芦辺町深江栄触682",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 881,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "深江神社 / ふかえじんじゃ / 長崎県壱岐市芦辺町深江栄触682",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 881 (header=1); NO=100321; columns 名称, 名称_カナ, 住所",
+          "name_raw": "深江神社",
+          "native_record_id": "100321",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "ふかえじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+        }
+      ],
+      "status": "verified"
+    },
     "b0e5b1eb-f04d-553d-8a9e-8196f74b4815": {
       "changes": {
         "reading": "つたいなりじんじゃ"
@@ -197820,6 +198590,56 @@
       ],
       "status": "verified"
     },
+    "c10d416b-ad56-557d-8faf-290963864890": {
+      "changes": {
+        "reading": "すがじんじゃ"
+      },
+      "expected_source_hash": "e0734a6f48b50071833ad9b3dcf1d518e5713be1fcefed45ea26a1251cfb5922",
+      "facility_id": "4e7c4a56-1b79-5932-ac13-e734c2c0d6af",
+      "identity_match": {
+        "address_comparison": "正本住所は数字のない同一町域まで。資料の同町域末尾に明示番地が追加されており_reference_matchesで許される範囲。追加字名なし。正本・資料住所rawを別保持。",
+        "agency_address": "京田辺市打田宮本",
+        "agency_name": "須賀神社",
+        "match_kind": "same_acquired_locality_with_explicit_parcel_extension",
+        "reference_address": "京都府京田辺市打田宮本1",
+        "reference_name": "須賀神社"
+      },
+      "original": {
+        "address": "京田辺市打田宮本",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
+        "name_raw": "須賀神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府京田辺市打田宮本1",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 721,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "須賀神社 / スガジンジャ / 京都府京田辺市打田宮本1",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 721 (header=1); NO=0000009565; columns 名称, 名称_カナ, 住所",
+          "name_raw": "須賀神社",
+          "native_record_id": "0000009565",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "スガジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "3f146350265e04687b8239d7b957cf06ce13fa9536bce1a797900757d41f5419",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
+        }
+      ],
+      "status": "verified"
+    },
     "c10f2acb-9487-5554-8f00-57d4212e298a": {
       "changes": {
         "reading": "おおなむちじんじゃ"
@@ -200720,6 +201540,53 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "26_kyoto_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "c384a27d-27c6-5d42-af12-88add815692b": {
+      "changes": {
+        "reading": "しらとりじんじゃ"
+      },
+      "expected_source_hash": "4aa5445a78189f7218a6eda7962c039385853e5ec35ac6c539e0fd5fdafde3c0",
+      "facility_id": "02883452-692c-59c0-8cac-54d3ce5c6652",
+      "identity_match": {
+        "agency_address": "五島市玉之浦町玉之浦1629番地",
+        "agency_name": "白鳥神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県五島市玉之浦町玉之浦1629",
+        "reference_name": "白鳥神社"
+      },
+      "original": {
+        "address": "五島市玉之浦町玉之浦1629番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/shimogotou.html",
+        "name_raw": "白鳥神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県五島市玉之浦町玉之浦1629",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 334,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "白鳥神社 / しらとりじんじゃ / 長崎県五島市玉之浦町玉之浦1629",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 334 (header=1); NO=673; columns 名称, 名称_カナ, 住所",
+          "name_raw": "白鳥神社",
+          "native_record_id": "673",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "しらとりじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -207828,6 +208695,56 @@
       ],
       "status": "verified"
     },
+    "ca1b6dd7-b2f1-5045-ba93-2e5e31422e84": {
+      "changes": {
+        "reading": "いたなみはちまんじんじゃ"
+      },
+      "expected_source_hash": "3dbfbe3969e12c6b705473ee1819056a29d51986f1f6d4cf51884e4f5c6635b9",
+      "facility_id": "c479a548-9192-58f3-b1d1-9ab201eab97a",
+      "identity_match": {
+        "address_comparison": "府名除去のみで全所在地・全番地一致。",
+        "agency_address": "与謝郡与謝野町男山178",
+        "agency_name": "板列八幡神社",
+        "match_kind": "exact_full_address",
+        "reference_address": "京都府与謝郡与謝野町男山178",
+        "reference_name": "板列八幡神社"
+      },
+      "original": {
+        "address": "与謝郡与謝野町男山178",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/32.html",
+        "name_raw": "板列八幡神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府与謝郡与謝野町男山178",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 182,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "板列八幡神社 / イタナミハチマンジンジャ / 京都府与謝郡与謝野町男山178",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 182 (header=1); NO=0000000616; columns 名称, 名称_カナ, 住所",
+          "name_raw": "板列八幡神社",
+          "native_record_id": "0000000616",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "イタナミハチマンジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "3d0926a459301665cce72ea7a312fb893ff1131aa1c964eff2708823d951e42f",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
+        }
+      ],
+      "status": "verified"
+    },
     "ca33c2bd-13ca-592e-9559-b9ed6522abe3": {
       "changes": {
         "reading": "しんらじんじゃ"
@@ -208975,6 +209892,53 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "25_shiga_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "cba8921b-4b13-580d-8dcb-3fec79241fee": {
+      "changes": {
+        "reading": "こんぴらじんじゃ"
+      },
+      "expected_source_hash": "ef5cdfcba7afb654f982f5075d08c373512af09d1cb8f32003713bdc4915956b",
+      "facility_id": "d9afb30c-ea7d-508c-bd05-1096877005b9",
+      "identity_match": {
+        "agency_address": "南松浦郡新上五島町桐古里郷67番地1",
+        "agency_name": "金刀比羅神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県南松浦郡新上五島町桐古里郷67-1",
+        "reference_name": "金刀比羅神社"
+      },
+      "original": {
+        "address": "南松浦郡新上五島町桐古里郷67番地1",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html",
+        "name_raw": "金刀比羅神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県南松浦郡新上五島町桐古里郷67-1",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 984,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "金刀比羅神社 / こんぴらじんじゃ / 長崎県南松浦郡新上五島町桐古里郷67-1",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 984 (header=1); NO=100440; columns 名称, 名称_カナ, 住所",
+          "name_raw": "金刀比羅神社",
+          "native_record_id": "100440",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "こんぴらじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -212618,6 +213582,53 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "25_shiga_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "cf37f34c-1417-5c54-b4fb-cb234e86a82b": {
+      "changes": {
+        "reading": "あまのたながおじんじゃ"
+      },
+      "expected_source_hash": "2a41d1e9696987fda81c5fb5c799c5d24730cba9da24780e6445dc1cb3316df1",
+      "facility_id": "d875cab6-b77e-581b-835f-a5aa51e00d81",
+      "identity_match": {
+        "agency_address": "壱岐市郷ノ浦町田中触730番地",
+        "agency_name": "天手長男神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県壱岐市郷ノ浦町田中触730",
+        "reference_name": "天手長男神社"
+      },
+      "original": {
+        "address": "壱岐市郷ノ浦町田中触730番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/iki.html",
+        "name_raw": "天手長男神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県壱岐市郷ノ浦町田中触730",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 865,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "天手長男神社 / あまのたながおじんじゃ / 長崎県壱岐市郷ノ浦町田中触730",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 865 (header=1); NO=100304; columns 名称, 名称_カナ, 住所",
+          "name_raw": "天手長男神社",
+          "native_record_id": "100304",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "あまのたながおじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -217743,6 +218754,56 @@
       ],
       "status": "verified"
     },
+    "d3ed1f86-58aa-5bbe-8199-5c73ee5bc2e8": {
+      "changes": {
+        "reading": "さがじんじゃ"
+      },
+      "expected_source_hash": "4e8eda8047527ad90186408e497ff7640476a4f5e27b27ff43ec437c20079e68",
+      "facility_id": "2502105e-df03-5e0d-89cf-8eaac645e1da",
+      "identity_match": {
+        "address_comparison": "府名除去のみで全所在地・全番地一致。",
+        "agency_address": "京田辺市宮津佐牙垣内164",
+        "agency_name": "佐牙神社",
+        "match_kind": "exact_full_address",
+        "reference_address": "京都府京田辺市宮津佐牙垣内164",
+        "reference_name": "佐牙神社"
+      },
+      "original": {
+        "address": "京田辺市宮津佐牙垣内164",
+        "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
+        "name_raw": "佐牙神社",
+        "reading_raw": ""
+      },
+      "reason": "京都府公式オープンデータの同名・同所在地行に名称全文カナを確認。",
+      "references": [
+        {
+          "address_raw": "京都府京田辺市宮津佐牙垣内164",
+          "attribution": "出典：京都府観光連盟「観光施設一覧」（京都府オープンデータ・カタログサイト、2021年9月2日現在） https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "authority_evidence": "公式データセット本文は組織 京都府・作成者 京都府観光連盟・京都府観光連盟公式サイト掲載観光スポット一覧と明記。本文およびCSVリソースにCC BY4表示。",
+          "checked_at": "2026-11-12T02:10:07.448361+00:00",
+          "csv_record": 715,
+          "dataset_url": "https://data.bodik.jp/dataset/260002_kankou_shisetsu",
+          "excerpt": "佐牙神社 / サガジンジャ / 京都府京田辺市宮津佐牙垣内164",
+          "fetched_at": "2026-11-12T02:10:07.448361+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 715 (header=1); NO=0000000407; columns 名称, 名称_カナ, 住所",
+          "name_raw": "佐牙神社",
+          "native_record_id": "0000000407",
+          "page_hash": "0ae73f18de16bdebd0b62134cb42a28f1eab51b400c218710352c3e9dfc9d7ed",
+          "processed_notice": "京都府観光連盟「観光施設一覧」を加工して作成。名称・所在地・全文カナを神社庁掲載と照合し、カタカナをひらがなに機械変換。",
+          "reading_raw": "サガジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "government_open_data",
+          "source_publisher": "京都府観光連盟（京都府オープンデータ・カタログサイト掲載）",
+          "source_record_hash": "384edd20e35df959644eb5f97ebc0cbf77d689d3097ee58939bb0fa313b86f71",
+          "terms_url": "https://odcs.bodik.jp/260002/tos/",
+          "title": "【京都府】観光施設一覧CSV（2021年9月2日現在）",
+          "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv",
+          "verification_method": "原CSVの名称・名称_カナ・住所を実読。名称は完全一致、所在地比較は現行correction_problems。読みは明示カナの機械変換のみ。"
+        }
+      ],
+      "status": "verified"
+    },
     "d40f4d94-20a1-56ef-b71d-d8e0813d5464": {
       "changes": {
         "reading": "たかやじんじゃ"
@@ -218198,6 +219259,53 @@
           "title": "奈賀江神社 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/yasugi/3788205c4cffea0a8618018ecc8f7458a0ca5127.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "d4cfe00d-745c-5997-9920-8d9a4ac0c43b": {
+      "changes": {
+        "reading": "くにかたぬしじんじゃ"
+      },
+      "expected_source_hash": "bd0d83deeb4d01023d2d7478fbc54f61c86bb474f8d045c936cbc7701b07eeab",
+      "facility_id": "782ac20c-5a69-5b3e-8559-7ba4ff58e1ee",
+      "identity_match": {
+        "agency_address": "壱岐市芦辺町国分東触766番地",
+        "agency_name": "國片主神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県壱岐市芦辺町国分東触766番地",
+        "reference_name": "國片主神社"
+      },
+      "original": {
+        "address": "壱岐市芦辺町国分東触766番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/iki.html",
+        "name_raw": "國片主神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県壱岐市芦辺町国分東触766番地",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 860,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "國片主神社 / くにかたぬしじんじゃ / 長崎県壱岐市芦辺町国分東触766番地",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 860 (header=1); NO=100299; columns 名称, 名称_カナ, 住所",
+          "name_raw": "國片主神社",
+          "native_record_id": "100299",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "くにかたぬしじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
@@ -238219,6 +239327,53 @@
       ],
       "status": "verified"
     },
+    "e756c439-0815-5780-89ac-83f760bdd7ef": {
+      "changes": {
+        "reading": "おくうらじんじゃ"
+      },
+      "expected_source_hash": "360e59f3e67306114a2961915ede995979f9b44c33e1a75bf45bbb523ea7100c",
+      "facility_id": "ef7ee180-f193-54bf-ab4a-05382d53ba54",
+      "identity_match": {
+        "agency_address": "南松浦郡新上五島町阿瀬津郷560番地",
+        "agency_name": "奥浦神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県南松浦郡新上五島町阿瀬津郷560",
+        "reference_name": "奥浦神社"
+      },
+      "original": {
+        "address": "南松浦郡新上五島町阿瀬津郷560番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html",
+        "name_raw": "奥浦神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県南松浦郡新上五島町阿瀬津郷560",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 928,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "奥浦神社 / おくうらじんじゃ / 長崎県南松浦郡新上五島町阿瀬津郷560",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 928 (header=1); NO=100383; columns 名称, 名称_カナ, 住所",
+          "name_raw": "奥浦神社",
+          "native_record_id": "100383",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "おくうらじんじゃ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+        }
+      ],
+      "status": "verified"
+    },
     "e763db31-d52c-5f69-bcde-2cedac917f17": {
       "changes": {
         "reading": "すさのおじんじゃ"
@@ -246285,6 +247440,53 @@
           "title": "長澤神社 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/hamada/522f58123a9b162ccfecccd34c984baf0b9abc49.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "f08d816f-84dd-50c4-94f2-a7be7488075a": {
+      "changes": {
+        "reading": "わたつみじんじゃ"
+      },
+      "expected_source_hash": "5a465f58ec16fa946dba4672e64af1040939f57f4940d2ccb1be471d70161702",
+      "facility_id": "cfbf470a-f172-5164-b07f-90119b8b5d97",
+      "identity_match": {
+        "agency_address": "対馬市豊玉町仁位字和宮55番地",
+        "agency_name": "和多都美神社",
+        "comparison": "県名・番地表記・数字区切りの既存機械比較で全所在地一致。字名の除去や全番地の省略は行わない。",
+        "reference_address": "長崎県対馬市豊玉町仁位字和宮55",
+        "reference_name": "和多都美神社"
+      },
+      "original": {
+        "address": "対馬市豊玉町仁位字和宮55番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/tsushima.html",
+        "name_raw": "和多都美神社",
+        "reading_raw": ""
+      },
+      "reason": "長崎県の公開観光CSVの同一行に全文かな・名称・全所在地を確認。明示カナの機械変換だけを採用。",
+      "references": [
+        {
+          "address_raw": "長崎県対馬市豊玉町仁位字和宮55",
+          "attribution": "出典：長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」（長崎県オープンデータカタログサイト、令和5年3月20日時点） https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "authority_evidence": "データセット本文の組織は長崎県、作成者は長崎県観光連盟。データセット本文とCSVリソース本文にクリエイティブ・コモンズ表示4.0国際の明示あり。",
+          "checked_at": "2026-11-12T02:14:50.633032+00:00",
+          "csv_record": 391,
+          "dataset_url": "https://data.bodik.jp/dataset/420000_nagasakitabinet",
+          "excerpt": "和多都美神社 / ワタツミジンジャ / 長崎県対馬市豊玉町仁位字和宮55",
+          "fetched_at": "2026-11-12T02:12:50.085580+00:00",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CSV record 391 (header=1); NO=839; columns 名称, 名称_カナ, 住所",
+          "name_raw": "和多都美神社",
+          "native_record_id": "839",
+          "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+          "processed_notice": "長崎県観光連盟「ながさき旅ネット 観光スポット情報一覧」を加工して作成。名称・全所在地・明示全文かなを神社庁掲載と照合し、カタカナのみひらがなへ機械変換。説明文・画像は収録しない。",
+          "reading_raw": "ワタツミジンジャ",
+          "reading_scope": "full_name",
+          "snapshot_date": "2023-03-20",
+          "source_kind": "government_open_data",
+          "source_publisher": "長崎県観光連盟（長崎県オープンデータカタログサイト掲載）",
+          "title": "ながさき旅ネット 観光スポット情報一覧（推奨データセット準拠）CSV",
+          "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
         }
       ],
       "status": "verified"
