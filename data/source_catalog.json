@@ -12314,11 +12314,11 @@
         },
         "checked_at": null,
         "effective_entry_status_counts": {
-          "pending": 1024,
-          "verified": 410
+          "pending": 1000,
+          "verified": 434
         },
-        "effective_pending_entries": 1024,
-        "effective_reading_eligible_facilities": 410,
+        "effective_pending_entries": 1000,
+        "effective_reading_eligible_facilities": 434,
         "facilities_collected": 1434,
         "fields_observed": {
           "address": 1434,
@@ -19589,12 +19589,14 @@
           }
         ],
         "latest_additional_reading_followup": {
-          "checked_at": "2026-11-12T08:08:30.695140+00:00",
-          "diagnostic_targets": 2,
-          "entry_ids": [],
-          "evidence_data": "data/reading_research.json",
-          "scope": "神田神社（真野）・市杵島神社（朽木）の既取得国税資料で同正式名・全地番を診断、全文カナ欄が空。原住所や既判断・採用条件は変更せず保留。県内全件の診断ではない。",
-          "verified_entries": 0
+          "checked_at": "2026-11-12T09:11:37.813206+00:00",
+          "entry_ids": [
+            "24bd6886-8210-5913-a3fb-a8eec36e002e",
+            "b4482c57-3db2-5bb7-b889-15d5081e70fb"
+          ],
+          "evidence_data": "data/corrections.json; data/reading_research.json",
+          "scope": "複数社記事の明示定義又は該当節の公称全文かなを、原実IDと独立全住所で限定照合。國狭槌下小川と飯道甲賀のみ。原住所・施設IDを保持。",
+          "verified_entries": 2
         },
         "listing_authority_status": "agency_site",
         "pages_fetched": 1449,
@@ -19641,16 +19643,16 @@
         "status": "collected",
         "stored_coverage": "public linked listing pages only; not all prefectural shrines",
         "stored_pages_fetched": 1449,
-        "supplemental_reading_facilities": 410,
+        "supplemental_reading_facilities": 430,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 944,
+            "insufficient_evidence_in_inspected_sources": 942,
             "investigation_incomplete": 0,
             "judgment_required": 58
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 962,
-          "unfinished_entries": 1002
+          "unfinished_entries": 1000
         }
       },
       "conditions": {
@@ -44638,8 +44640,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13689,
-    "effective_verified_facilities": 44326,
+    "effective_dictionary_rows": 13691,
+    "effective_verified_facilities": 44328,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
