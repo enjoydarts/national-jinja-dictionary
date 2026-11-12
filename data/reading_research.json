@@ -9109,22 +9109,33 @@
         "retained_pending_entries": 8,
         "scope": "北斗・恵庭の観光施設19名称行と7登録を照合し、別に北海道神宮の候補サイト1件はTLSホスト名検証失敗で未取得停止。全国調査を継続。",
         "unfetched_target_entries": 1
+      },
+      {
+        "checked_at": "2026-11-12T10:30:20.528024+00:00",
+        "data_rows": 103,
+        "entry_ids": [
+          "0678dd58-874d-5b34-953d-cd3edd08d000",
+          "0b33f3fd-38f2-5fd6-b4e0-b64f3aa34f0b",
+          "580ce71a-5e3f-5267-abfe-7216148350bf",
+          "6a409d4c-d40e-5787-8225-d22deb2eb275",
+          "cff45b90-22b0-5d6f-a1a9-c4e05c7e0ce0"
+        ],
+        "inspected_targets": 5,
+        "new_verified_entries": 0,
+        "retained_pending_entries": 5,
+        "scope": "都心部観光スポットCSV103行と、原住所が札幌市で始まる現保留5登録だけ。札幌護國神社は全文かながあるが全住所差が残り、残4登録は名称欄一致なし。神宮頓宮・本陣狸大明神社の行を北海道神宮・他の保留神社へ流用しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-12T10:30:20.528024+00:00",
-      "data_rows": 103,
+      "checked_at": "2026-11-12T10:36:14.427895+00:00",
       "entry_ids": [
-        "0678dd58-874d-5b34-953d-cd3edd08d000",
-        "0b33f3fd-38f2-5fd6-b4e0-b64f3aa34f0b",
-        "580ce71a-5e3f-5267-abfe-7216148350bf",
-        "6a409d4c-d40e-5787-8225-d22deb2eb275",
-        "cff45b90-22b0-5d6f-a1a9-c4e05c7e0ce0"
+        "0b33f3fd-38f2-5fd6-b4e0-b64f3aa34f0b"
       ],
-      "inspected_targets": 5,
+      "inspected_targets": 1,
       "new_verified_entries": 0,
-      "retained_pending_entries": 5,
-      "scope": "都心部観光スポットCSV103行と、原住所が札幌市で始まる現保留5登録だけ。札幌護國神社は全文かながあるが全住所差が残り、残4登録は名称欄一致なし。神宮頓宮・本陣狸大明神社の行を北海道神宮・他の保留神社へ流用しない。"
+      "reclassified_to_judgment_required": 1,
+      "retained_pending_entries": 1,
+      "scope": "札幌護國神社1登録の原実URL・市CSV公式URL・新サイトトップだけ。かなの画像OCRや神社サイト全体の調査は行わず、住所差を推定解消しない。"
     },
     "remaining_unfinished_entries": 10600,
     "resolved_entry_ids": [
@@ -9400,7 +9411,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-12T10:30:20.528024+00:00",
+  "computed_at": "2026-11-12T10:36:14.427895+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -52890,14 +52901,86 @@
           "url": "https://ckan.pf-sapporo.jp/dataset/r2-navi-jtb"
         }
       ]
+    },
+    {
+      "attempt_id": "sapporo_gokoku_native_and_city_website_address_review_20261112",
+      "checked_at": "2026-11-12T10:36:14.427895+00:00",
+      "entry_ids": [
+        "0b33f3fd-38f2-5fd6-b4e0-b64f3aa34f0b"
+      ],
+      "new_verified_entries": 0,
+      "observation": "既存の保留を解除せず、資料の対応判断待ちへ調査分類を整理。原正本・表記・全住所・原施設ID・補正・除外・掲載同一性の判断は変更しない。取得本文・画像・認証情報・個人情報・キャッシュは収録しない。",
+      "old_site_fetch_stop": {
+        "body_acquired": false,
+        "observation": "原神社庁の実リンク先について通常のDNS名前解決が失敗。本文未取得で停止し、別プロトコルや別ホストへ置換して移転を推定しない。",
+        "request_stage": "robots_or_page_body_not_completed",
+        "status": "stopped_dns_resolution_failure",
+        "url": "http://s-gokoku-jinja.sakura.ne.jp/"
+      },
+      "previous_research_classification": {
+        "category": "insufficient_evidence_in_inspected_sources",
+        "reason": "missing agency reading"
+      },
+      "references": [
+        {
+          "address_raw": "札幌市中央区南15条西5丁目1番地",
+          "checked_at": "2026-11-12T10:36:14.427895+00:00",
+          "fetched_at": "2026-11-12T10:27:04.831412+00:00",
+          "name_raw": "札幌護國神社",
+          "page_hash": "6990b2bf5cf7e1dbd8ef1d26c66ad4f28d4fc71f90de2ed9208f3cde2dfea3c5",
+          "source_kind": "agency",
+          "source_publisher": "北海道神社庁",
+          "url": "https://hokkaidojinjacho.jp/%e6%9c%ad%e5%b9%8c%e8%ad%b7%e5%9c%8b%e7%a5%9e%e7%a4%be/",
+          "website_href_raw": "http://s-gokoku-jinja.sakura.ne.jp/"
+        },
+        {
+          "address_raw": "北海道札幌市中央区南15条西5丁目1−3",
+          "attribution": "出典：札幌市「観光スポット一覧（都心部）」 https://ckan.pf-sapporo.jp/dataset/sapporo_kankou_spot （2026年11月12日取得、CC BY4.0）を編集・加工して名称・読み・住所・公式URL欄の対応を照合。",
+          "checked_at": "2026-11-12T10:36:14.427895+00:00",
+          "csv_records": 103,
+          "csv_row": 19,
+          "encoding": "utf-8-sig",
+          "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "name_raw": "札幌護國神社",
+          "official_website_field_raw": "\nhttps://sapporo-gokoku.jp",
+          "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+          "reading_raw": "サッポロゴコクジンジャ",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "札幌市",
+          "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+        },
+        {
+          "address_raw": "北海道札幌市中央区南15条西5丁目1−1",
+          "authority_observation": "札幌市の公開CSV「観光スポット一覧（都心部）」19行目の公式URL欄に実記載された新サイトを直接取得。市CSVのrawリンクの周囲空白だけを除去し、本文の主神社名を照合。神社庁の旧サイトからの転送・移転を確認したとは扱わない。",
+          "checked_at": "2026-11-12T10:36:14.427895+00:00",
+          "fetched_at": "2026-11-12T10:33:23.506797+00:00",
+          "image_reading_review": "not_performed",
+          "locator": "トップページの「交通」付近にある主神社名・郵便番号・住所のp。画像からかなを推定しない。",
+          "name_raw": "札幌護國神社",
+          "page_hash": "b6d40c5a513c6a4f9d97379815a50cb98d3778364b32951ec8b8a0fab95501ec",
+          "published_name_address_line_raw": "札幌護國神社〒064-0915 北海道札幌市中央区南15条西5丁目1−1",
+          "redistribution_permission": "unconfirmed",
+          "source_kind": "shrine_self_published_site",
+          "source_publisher": "札幌護國神社（市CSVの公式URL欄から照合）",
+          "title_raw": "札幌護国神社",
+          "url": "https://sapporo-gokoku.jp"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "札幌護國神社1登録の原実URL・市CSV公式URL・新サイトトップだけ。かなの画像OCRや神社サイト全体の調査は行わず、住所差を推定解消しない。",
+      "source_kind": "cross_source_identity_review",
+      "source_publisher": "北海道神社庁・札幌市・市CSVで公式URLとされた神社サイト",
+      "status": "address_variants_preserved_reclassified_for_judgment"
     }
   ],
   "per_prefecture": {
     "01": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 421,
+        "insufficient_evidence_in_inspected_sources": 420,
         "investigation_incomplete": 0,
-        "judgment_required": 0
+        "judgment_required": 1
       },
       "unfinished_entries": 421
     },
@@ -54062,11 +54145,71 @@
           "source_kind": "agency",
           "source_publisher": "北海道神社庁",
           "status": "native_profile_confirms_original_address_not_csv_branch"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T10:36:14.427895+00:00",
+          "evidence_attempt": "sapporo_gokoku_native_and_city_website_address_review_20261112",
+          "expected_source_hash": "2fa460decca55b1389dca46ba33f8653feef6c73815d590d19110a3a97aa857f",
+          "observation": "神社庁の原実URLは1番地、市CSVは1−3、市CSVの公式URL欄から取得したサイトは1−1。神社庁の旧サイトと市CSVの新サイトは異なるURLであり、旧サイトはDNS名前解決できず移転・転送や旧新住所の対応を確認できない。個別の住所表示を推定統合せず、全文かながある市CSVも当該原全住所へ未結束のため保留。",
+          "previous_research_classification": {
+            "category": "insufficient_evidence_in_inspected_sources",
+            "reason": "missing agency reading"
+          },
+          "references": [
+            {
+              "address_raw": "札幌市中央区南15条西5丁目1番地",
+              "checked_at": "2026-11-12T10:36:14.427895+00:00",
+              "fetched_at": "2026-11-12T10:27:04.831412+00:00",
+              "name_raw": "札幌護國神社",
+              "page_hash": "6990b2bf5cf7e1dbd8ef1d26c66ad4f28d4fc71f90de2ed9208f3cde2dfea3c5",
+              "source_kind": "agency",
+              "source_publisher": "北海道神社庁",
+              "url": "https://hokkaidojinjacho.jp/%e6%9c%ad%e5%b9%8c%e8%ad%b7%e5%9c%8b%e7%a5%9e%e7%a4%be/",
+              "website_href_raw": "http://s-gokoku-jinja.sakura.ne.jp/"
+            },
+            {
+              "address_raw": "北海道札幌市中央区南15条西5丁目1−3",
+              "attribution": "出典：札幌市「観光スポット一覧（都心部）」 https://ckan.pf-sapporo.jp/dataset/sapporo_kankou_spot （2026年11月12日取得、CC BY4.0）を編集・加工して名称・読み・住所・公式URL欄の対応を照合。",
+              "checked_at": "2026-11-12T10:36:14.427895+00:00",
+              "csv_records": 103,
+              "csv_row": 19,
+              "encoding": "utf-8-sig",
+              "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+              "license": "CC-BY-4.0",
+              "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+              "name_raw": "札幌護國神社",
+              "official_website_field_raw": "\nhttps://sapporo-gokoku.jp",
+              "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+              "reading_raw": "サッポロゴコクジンジャ",
+              "source_kind": "municipal_open_data",
+              "source_publisher": "札幌市",
+              "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+            },
+            {
+              "address_raw": "北海道札幌市中央区南15条西5丁目1−1",
+              "authority_observation": "札幌市の公開CSV「観光スポット一覧（都心部）」19行目の公式URL欄に実記載された新サイトを直接取得。市CSVのrawリンクの周囲空白だけを除去し、本文の主神社名を照合。神社庁の旧サイトからの転送・移転を確認したとは扱わない。",
+              "checked_at": "2026-11-12T10:36:14.427895+00:00",
+              "fetched_at": "2026-11-12T10:33:23.506797+00:00",
+              "image_reading_review": "not_performed",
+              "locator": "トップページの「交通」付近にある主神社名・郵便番号・住所のp。画像からかなを推定しない。",
+              "name_raw": "札幌護國神社",
+              "page_hash": "b6d40c5a513c6a4f9d97379815a50cb98d3778364b32951ec8b8a0fab95501ec",
+              "published_name_address_line_raw": "札幌護國神社〒064-0915 北海道札幌市中央区南15条西5丁目1−1",
+              "redistribution_permission": "unconfirmed",
+              "source_kind": "shrine_self_published_site",
+              "source_publisher": "札幌護國神社（市CSVの公式URL欄から照合）",
+              "title_raw": "札幌護国神社",
+              "url": "https://sapporo-gokoku.jp"
+            }
+          ],
+          "source_kind": "cross_source_identity_review",
+          "status": "official_address_correspondence_requires_judgment"
         }
       ],
       "address": "札幌市中央区南15条西5丁目1番地",
       "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
       "entry_id": "0b33f3fd-38f2-5fd6-b4e0-b64f3aa34f0b",
       "expected_source_hash": "2fa460decca55b1389dca46ba33f8653feef6c73815d590d19110a3a97aa857f",
       "facility_id": "4a8755f5-dfb0-5256-a78f-8904828ffd33",
@@ -54075,7 +54218,7 @@
       "prefecture": "北海道",
       "prefecture_code": "01",
       "reading_raw": "",
-      "reason": "missing agency reading",
+      "reason": "missing agency reading; agency, municipal and shrine-site address correspondence unresolved",
       "status": "unfinished",
       "surface": "札幌護國神社",
       "wikipedia_article_refs": [],
@@ -537001,9 +537144,9 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10405,
+      "insufficient_evidence_in_inspected_sources": 10404,
       "investigation_incomplete": 0,
-      "judgment_required": 195
+      "judgment_required": 196
     },
     "distinct_surfaces": 4256,
     "unfinished_entries": 10600

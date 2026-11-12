@@ -51,6 +51,15 @@
           "verified_entries": 13
         },
         "candidate_self_site_fetch_stops": {
+          "s-gokoku-jinja.sakura.ne.jp": {
+            "body_acquired": false,
+            "checked_at": "2026-11-12T10:36:14.427895+00:00",
+            "evidence_data": "data/reading_research.json",
+            "observation": "原神社庁の実リンク先について通常のDNS名前解決が失敗。本文未取得で停止し、別プロトコルや別ホストへ置換して移転を推定しない。",
+            "request_stage": "robots_or_page_body_not_completed",
+            "status": "stopped_dns_resolution_failure",
+            "url": "http://s-gokoku-jinja.sakura.ne.jp/"
+          },
           "www.hokkaidojingu.or.jp": {
             "body_acquired": false,
             "checked_at": "2026-11-12T10:22:32.079302+00:00",
@@ -121,6 +130,16 @@
           "new_verified_entries": 0,
           "scope": "都心部観光スポットCSV103行と、原住所が札幌市で始まる現保留5登録だけ。札幌護國神社は全文かながあるが全住所差が残り、残4登録は名称欄一致なし。神宮頓宮・本陣狸大明神社の行を北海道神宮・他の保留神社へ流用しない。"
         },
+        "sapporo_gokoku_address_identity_followup": {
+          "checked_at": "2026-11-12T10:36:14.427895+00:00",
+          "classification": "judgment_required",
+          "entry_ids": [
+            "0b33f3fd-38f2-5fd6-b4e0-b64f3aa34f0b"
+          ],
+          "evidence_data": "data/reading_research.json",
+          "new_verified_entries": 0,
+          "scope": "札幌護國神社1登録の原実URL・市CSV公式URL・新サイトトップだけ。かなの画像OCRや神社サイト全体の調査は行わず、住所差を推定解消しない。"
+        },
         "saved_listing_page_count": 42,
         "saved_listing_page_examples": [
           {
@@ -176,9 +195,9 @@
         },
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 421,
+            "insufficient_evidence_in_inspected_sources": 420,
             "investigation_incomplete": 0,
-            "judgment_required": 0
+            "judgment_required": 1
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 469,
