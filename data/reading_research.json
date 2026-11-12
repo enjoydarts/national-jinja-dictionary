@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "65fc452aa320089425115aef2d8a0b325c4d44d30c9800d86724e36b63f830fd",
+    "corrections.json": "715560e115aae626e288970f6ed87ece08b7a352fdafe0f20218821a98723476",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "a013294ba32fdf4cd13cb0b4476f2bed40bee8d2898700ced078d3363f4da07f",
@@ -12,7 +12,7 @@
     "investigation_incomplete": "未調査・補完調査未了",
     "judgment_required": "資料・原文・施設同定等の判断待ち"
   },
-  "computed_at": "2026-11-12T00:35:50.587969+00:00",
+  "computed_at": "2026-11-12T01:08:19.761982+00:00",
   "per_prefecture": {
     "01": {
       "categories": {
@@ -328,11 +328,11 @@
     },
     "40": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 175,
+        "insufficient_evidence_in_inspected_sources": 156,
         "investigation_incomplete": 0,
-        "judgment_required": 0
+        "judgment_required": 15
       },
-      "unfinished_entries": 175
+      "unfinished_entries": 171
     },
     "41": {
       "categories": {
@@ -187212,9 +187212,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福岡県宮若市磯光266",
+          "agency_address_raw": "宮若市磯光267",
+          "agency_name_raw": "天照神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "天照神社（宮若市）",
+          "expected_source_hash": "3c506f38332c0b6362b1d98763960838beb6b8cfcbe8eb548ae29d611724de41",
+          "fetched_at": "2026-11-12T01:00:18.361827+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "天照神社（宮若市）",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "7717ca78ccfe2b0011fc8adfa17b39d70a1b1ca65aca3ddda04e60ecf010fdf6",
+          "reading_raw": "",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/14769"
+        }
+      ],
       "address": "宮若市磯光267",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "024afe47-31d1-53bd-a306-fd7d0f52e95d",
       "expected_source_hash": "3c506f38332c0b6362b1d98763960838beb6b8cfcbe8eb548ae29d611724de41",
       "facility_id": "8a3cd8af-ff94-5241-b852-4729d50ad7dc",
@@ -187244,24 +187267,6 @@
       "reason": "missing agency reading",
       "status": "unfinished",
       "surface": "地主神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "address": "飯塚市綱分866-1",
-      "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "033178d5-3505-5e47-8de7-64afc43e3301",
-      "expected_source_hash": "929c4c5928329378bc7a9846c8619dfd7e210e1535f620220da7ead564ef43ac",
-      "facility_id": "afd564eb-f762-54bd-8c62-c21ae5cb8946",
-      "listed_name": "綱分八幡宮",
-      "nta_result": "registered furigana absent",
-      "prefecture": "福岡県",
-      "prefecture_code": "40",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "綱分八幡宮",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
@@ -187311,6 +187316,63 @@
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "北九州市小倉北区上到津1-8",
+          "agency_link": {
+            "address_raw": "北九州市小倉北区上到津1-8",
+            "href_raw": "http://itouzuhachiman.com/",
+            "locator": "div.p-area-list__cont occurrence=34; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "到津八幡神社",
+            "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
+            "url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/"
+          },
+          "agency_name_raw": "到津八幡神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "d73a1cc42d17f9f7feef6cc43aa258fb26083a38fc84328ce8c4f8708f05cc96",
+          "fetched_at": "2026-11-12T01:06:01.172176+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "アクセス",
+              "url": "https://itouzuhachiman.com/access/"
+            },
+            {
+              "label": "神様のこと・御利益についてご紹介しています。 詳しくはこちら",
+              "url": "https://itouzuhachiman.com/about/"
+            },
+            {
+              "label": "年間の様々な祭典・行事をご紹介しています。 詳しくはこちら",
+              "url": "https://itouzuhachiman.com/events/"
+            },
+            {
+              "label": "神社での御祈願・地鎮祭などの出張祭典についてご紹介しています。 詳しくはこちら",
+              "url": "https://itouzuhachiman.com/gokigan/"
+            },
+            {
+              "label": "まずはここをチェック！神社にまつわる豆知識やお得な情報、境内などを紹介しています。 詳しくはこちら",
+              "url": "https://itouzuhachiman.com/info/"
+            },
+            {
+              "label": "神社の四季や万灯会コンクール、絵手紙燈籠などの写真を紹介しています。ぜひご覧下さい。 詳しくはこちら",
+              "url": "https://itouzuhachiman.com/gallery/"
+            },
+            {
+              "label": "馬島の紹介",
+              "url": "https://itouzuhachiman.com/events/umashima/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "75c079e5fe3037cb8944c63c09a1e6029e2091984f37de2172cf00db230ab9a1",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://itouzuhachiman.com/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "到津八幡神社",
+          "url": "http://itouzuhachiman.com/"
+        }
+      ],
       "address": "北九州市小倉北区上到津1-8",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -187338,9 +187400,32 @@
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福岡県飯塚市内野2876",
+          "agency_address_raw": "飯塚市内野2876",
+          "agency_name_raw": "老松神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "内野老松神社（うちのおいまつじんじゃ）",
+          "expected_source_hash": "bc7c9d4da17f24c70d3a537e2ea9aeb4d4885b106f630441ab12429c6f6c8a7d",
+          "fetched_at": "2026-11-12T01:00:32.767974+00:00",
+          "locator": "table tr[名称] の名称と括弧内全文かな; tr[住所]",
+          "name_raw": "内野老松神社",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "12d1d928eaa47b9230882861d497980fe5944b34ff3cbc830d04c52b10089d02",
+          "reading_raw": "うちのおいまつじんじゃ",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "一般社団法人飯塚観光協会",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://kankou-iizuka.jp/topic_187/"
+        }
+      ],
       "address": "飯塚市内野2876",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "06acc145-d02b-5911-ac9c-b752d5a7f84c",
       "expected_source_hash": "bc7c9d4da17f24c70d3a537e2ea9aeb4d4885b106f630441ab12429c6f6c8a7d",
       "facility_id": "211a1ebb-daee-550c-9248-53ca7063d1eb",
@@ -187401,6 +187486,39 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "久留米市瀬下町265ノ1",
+          "agency_link": {
+            "address_raw": "久留米市瀬下町265ノ1",
+            "href_raw": "http://suitengu.net/",
+            "locator": "div.p-area-list__cont occurrence=15; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "水天宮",
+            "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          },
+          "agency_name_raw": "水天宮",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "5f53ce5c32e44cf4432b50aa627850909f4df7774da1030d623fd47aa2fa5bb2",
+          "fetched_at": "2026-11-12T01:06:23.443725+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "アクセス",
+              "url": "http://suitengu.net/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "101279e4ea1217bebc121410b1e4195450742a393c689a04adb8bfdc82d4dff1",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "http://suitengu.net/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "全国総本宮 水天宮",
+          "url": "http://suitengu.net/"
+        }
+      ],
       "address": "久留米市瀬下町265ノ1",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -187527,6 +187645,34 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "久留米市大善寺町宮本1463ノ1",
+          "agency_link": {
+            "address_raw": "久留米市大善寺町宮本1463ノ1",
+            "href_raw": "https://tamataregu.or.jp/",
+            "locator": "div.p-area-list__cont occurrence=24; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "玉垂宮",
+            "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          },
+          "agency_name_raw": "玉垂宮",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "d830028644fa5783160a3549bed71badb43287a22aad43d0ed6f817321419f66",
+          "fetched_at": "2026-11-12T01:06:31.044163+00:00",
+          "linked_followup_urls": [],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "8c82d40b955bd3c1f1b24f22a38b4b2df4d04427cbef0140db246cfba7d2a47d",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://tamataregu.or.jp/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "大善寺玉垂宮",
+          "url": "https://tamataregu.or.jp/"
+        }
+      ],
       "address": "久留米市大善寺町宮本1463ノ1",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -187626,9 +187772,63 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "〒839-0851　福岡県久留米市御井町1",
+          "agency_address_raw": "久留米市御井町11",
+          "agency_name_raw": "高良大社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "高良大社・奥の院",
+          "expected_source_hash": "9dffff2ba9d02be5609886d58434c533fdb68f411dc7bd19ee02fe39651793be",
+          "fetched_at": "2026-11-11T13:53:46.133562+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "高良大社・奥の院",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "3aa7360ecc30bc6dd8a4b66ef5a63b1d13c2246912b410a6c8db709d7f8a2e0d",
+          "reading_raw": "こうらたいしゃ・おくのいん",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/13622"
+        },
+        {
+          "agency_address_raw": "久留米市御井町11",
+          "agency_link": {
+            "address_raw": "久留米市御井町11",
+            "href_raw": "http://www.kourataisya.or.jp/",
+            "locator": "div.p-area-list__cont occurrence=17; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "高良大社",
+            "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          },
+          "agency_name_raw": "高良大社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "9dffff2ba9d02be5609886d58434c533fdb68f411dc7bd19ee02fe39651793be",
+          "fetched_at": "2026-11-12T01:06:28.646073+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "ご由緒",
+              "url": "http://www.kourataisya.or.jp/kourataisya/yuisyo"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "52931e69127c40d312ed3337f8ccad8c9b5ca1f35f762d909215b77e75e217c7",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "http://www.kourataisya.or.jp/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "福岡県久留米市の「高良の神様」は、厄除け・延命長寿・交通安全・福徳円満をはじめ、生活全般をお守りくださる神様として篤く信仰されてきました。",
+          "url": "http://www.kourataisya.or.jp/"
+        }
+      ],
       "address": "久留米市御井町11",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "13f66172-234e-539c-9c89-9ce499df1a9e",
       "expected_source_hash": "9dffff2ba9d02be5609886d58434c533fdb68f411dc7bd19ee02fe39651793be",
       "facility_id": "29cc4394-36b7-5793-8131-4adff0403570",
@@ -188013,24 +188213,51 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
-      "address": "飯塚市内野2507-3",
-      "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "294dde21-7ace-51cc-a0f2-41eb9559ce9d",
-      "expected_source_hash": "2fe328d39ece66ec7ad78c99d5a75a84b788edadf0c917245eb897aaa360d780",
-      "facility_id": "3cd27c82-00dc-52ba-aa14-e459f37e1b1a",
-      "listed_name": "大根地神社",
-      "nta_result": "no unique active exact name/full-address corporate identity",
-      "prefecture": "福岡県",
-      "prefecture_code": "40",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "大根地神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "糸島市志摩小金丸282",
+          "agency_link": {
+            "address_raw": "糸島市志摩小金丸282",
+            "href_raw": "https://kaya-kumano.net/",
+            "locator": "div.p-area-list__cont occurrence=24; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "熊野神社",
+            "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          },
+          "agency_name_raw": "熊野神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "283e46d9ed03aa8b81b003a5fada573bb8d760530b974a9c0abf62c3e137808c",
+          "fetched_at": "2026-11-12T01:05:33.144818+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "御由緒",
+              "url": "https://kaya-kumano.net/pedigree/"
+            },
+            {
+              "label": "末社紹介",
+              "url": "https://kaya-kumano.net/concept/feature1/"
+            },
+            {
+              "label": "アクセス",
+              "url": "https://kaya-kumano.net/access/"
+            },
+            {
+              "label": "可也神社由緒",
+              "url": "https://kaya-kumano.net/faq/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "6cac9e3e64264ce46bc7982ed8024cdd9d3ced63635ed2b4f0a6bfd80307651f",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://kaya-kumano.net/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "福岡県の神社で御祈祷や御祈願をお考えならぜひ熊野神社にお越しください",
+          "url": "https://kaya-kumano.net/"
+        }
+      ],
       "address": "糸島市志摩小金丸282",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -188148,9 +188375,67 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "〒810-0044　福岡県福岡市中央区六本松1-1-1",
+          "agency_address_raw": "福岡市中央区六本松1-1-1",
+          "agency_name_raw": "福岡県護国神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "福岡縣護国神社",
+          "expected_source_hash": "9258f27ffe60fe6f19990371cb10586db0f70ffd29cf2e1631c62709fee01ffe",
+          "fetched_at": "2026-11-12T01:00:13.567504+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "福岡縣護国神社",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "42cfdaa2a3b3cbbdfa209b1a68708bfb491d52560a219f040b9a5e4e442e65e1",
+          "reading_raw": "ふくおかけんごこくじんじゃ",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/12534"
+        },
+        {
+          "agency_address_raw": "福岡市中央区六本松1-1-1",
+          "agency_link": {
+            "address_raw": "福岡市中央区六本松1-1-1",
+            "href_raw": "http://fukuoka-gokoku.jp/",
+            "locator": "div.p-area-list__cont occurrence=51; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "福岡県護国神社",
+            "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          },
+          "agency_name_raw": "福岡県護国神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "9258f27ffe60fe6f19990371cb10586db0f70ffd29cf2e1631c62709fee01ffe",
+          "fetched_at": "2026-11-12T01:05:49.866445+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "護国神社について",
+              "url": "https://fukuoka-gokoku.jp/about/"
+            },
+            {
+              "label": "交通アクセス",
+              "url": "https://fukuoka-gokoku.jp/access/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "5f7f06782074e730d8c84966ca359e49a5e637789052acf1a1b90f4e521638d3",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://fukuoka-gokoku.jp/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "福岡縣護国神社",
+          "url": "http://fukuoka-gokoku.jp/"
+        }
+      ],
       "address": "福岡市中央区六本松1-1-1",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "3b3f7627-7af8-56f9-bbfc-b7d84004a229",
       "expected_source_hash": "9258f27ffe60fe6f19990371cb10586db0f70ffd29cf2e1631c62709fee01ffe",
       "facility_id": "7d0bdc31-53bf-58ad-a8c8-4bb61ca51125",
@@ -188274,6 +188559,47 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "大牟田市本町1-2の22",
+          "agency_link": {
+            "address_raw": "大牟田市本町1-2の22",
+            "href_raw": "https://www.omuta-jinja.or.jp/",
+            "locator": "div.p-area-list__cont occurrence=78; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "大牟田神社",
+            "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          },
+          "agency_name_raw": "大牟田神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "6b3056a6a47ddf115828d9a004dd2c1713b530954cb3787f111d4abee5ab8a1f",
+          "fetched_at": "2026-11-12T01:06:46.386225+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "御由緒",
+              "url": "https://omuta-jinja.or.jp/goyuisho"
+            },
+            {
+              "label": "アクセス",
+              "url": "https://omuta-jinja.or.jp/access"
+            },
+            {
+              "label": "御朱印・御神札・御守りのご紹介",
+              "url": "https://omuta-jinja.or.jp/goshuin"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "07fbbb595a3ac3a0f9d8f0afa7fec145dc6de0ccd9dddca35e85938fbdee5cda",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://omuta-jinja.or.jp/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "大牟田神社 - 大蛇山祇園祭",
+          "url": "https://www.omuta-jinja.or.jp/"
+        }
+      ],
       "address": "大牟田市本町1-2の22",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -188292,9 +188618,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福岡県遠賀郡水巻町立屋敷三丁目13番30号",
+          "agency_address_raw": "遠賀郡水巻町立屋敷3-13-30",
+          "agency_name_raw": "八剣神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "八劔神社",
+          "expected_source_hash": "99c25bdacfca4e803afa8fc4664f27d1344af9d41a83cf13fcd2086fdd4dc2cf",
+          "fetched_at": "2026-11-12T01:00:08.741237+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "八劔神社",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "939b9a97c2834a3941161c74816c7711fc7ed58a9b5acc084b252983a970c5a0",
+          "reading_raw": "",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/14881"
+        }
+      ],
       "address": "遠賀郡水巻町立屋敷3-13-30",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "4a009ce2-452e-5b82-86ff-a0d9ed5f1905",
       "expected_source_hash": "99c25bdacfca4e803afa8fc4664f27d1344af9d41a83cf13fcd2086fdd4dc2cf",
       "facility_id": "f4af617f-473d-5ccb-9cf0-2d48ca3f074f",
@@ -188409,6 +188758,39 @@
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "久留米市日吉町106の7",
+          "agency_link": {
+            "address_raw": "久留米市日吉町106の7",
+            "href_raw": "http://kurumesousya.main.jp/hiyoshi/",
+            "locator": "div.p-area-list__cont occurrence=16; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "日吉神社",
+            "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          },
+          "agency_name_raw": "日吉神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "6a825fed181e4197d3f5e1bc86cb1c7052efb8216c4d19e17717b4e1f7d5046d",
+          "fetched_at": "2026-11-12T01:06:26.078559+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "お問合せ・アクセス",
+              "url": "http://kurumesousya.main.jp/hiyoshi/?page_id=107"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "184fcc2862117d2e7c05c1fd0e6d063c0d02c4a2c4778423aea3f6d479d521ea",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "http://kurumesousya.main.jp/hiyoshi/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "久留米宗社 日吉神社 | 久留米宗社日吉神社(くるめそうしゃひよしじんじゃ)は福岡県久留米市日吉町の神社。久留米の宗廟の神社として宗社とたたえられています。古くは厄除け・酒の神とも伝えられる。境内には、縁結び・子授け・安産・女性の病気平癒の産霊宮（うみのみや）と夫婦銀杏、若返り信仰の月読宮、筑後稲荷十社の大乗院稲荷神社がお祀りされています。",
+          "url": "http://kurumesousya.main.jp/hiyoshi/"
+        }
+      ],
       "address": "久留米市日吉町106の7",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -188578,6 +188960,24 @@
           "source_publisher": "公益社団法人福岡県観光連盟",
           "status": "inspected_no_adopted_reading",
           "url": "https://www.crossroadfukuoka.jp/spot/14775"
+        },
+        {
+          "agency_address_raw": "筑紫野市二日市中央3-6-35",
+          "agency_name_raw": "二日市八幡宮",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "expected_source_hash": "6b7b056d92c76791042ddac567531672a93102c70bba948936340e6df1e14b19",
+          "fetched_at": "2026-11-12T01:01:47.679023+00:00",
+          "locator": "対象施設の本文・フッターの住所と名称; 兼務神社ページは地区と神社名の同一行",
+          "name_raw": "二日市八幡宮",
+          "observation": "対象施設の名称と所在地の掲載は確認できるが、このページには対象名称の明示全文かなを確認できない。",
+          "page_hash": "8bed83da02a552b646f11e0bc32df9b058ada9f478dbd6bf9e24e6a54415b559",
+          "remaining_requirement": "対象施設自身に明示された全文読みの追加資料。",
+          "scope": "指定した個別ページの対象施設についての点検。兼務する同名別施設とは分離。",
+          "source_kind": "official_shrine",
+          "source_publisher": "二日市八幡宮",
+          "status": "inspected_no_adopted_reading",
+          "title": "トップページ ｜ 二日市八幡宮",
+          "url": "http://80000gu.or.jp/"
         }
       ],
       "address": "筑紫野市二日市中央3-6-35",
@@ -188670,9 +189070,30 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "acquisition_method": "individual_source_review_via_web_tool",
+          "address_raw": "〒829-0311 福岡県築上郡築上町大字湊392-2",
+          "agency_address_raw": "築上郡築上町湊3922",
+          "agency_name_raw": "金富神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "expected_source_hash": "b66d011d5d22f5ab9faabc2609cf978ca5a1bdeac484c366de8dfef919229244",
+          "locator": "正規名称; 見出し直前の全文カナ; 基本情報 所在地",
+          "name_raw": "金富神社",
+          "observation": "神社庁原文は湊3922、点検した観光資料は湊392-2であり異なる地番。数字間に区切りを推定追加せず保留。",
+          "reading_raw": "キントミジンジャ",
+          "remaining_requirement": "3922と392-2の地番の対応を示す一次資料。",
+          "scope": "指定した公開個別ページをwebツールで実閲覧。HTTP本文hashは取得していない。辞書の読み根拠として採用しない。",
+          "source_kind": "tourism_reference",
+          "source_publisher": "日本観光振興協会",
+          "status": "inspected_address_difference",
+          "url": "https://www.japan47go.travel/ja/detail/d42b3262-ff46-47b0-8bf7-5ca3de83b606"
+        }
+      ],
       "address": "築上郡築上町湊3922",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "629f2aa5-1311-5b3c-baa1-6bb0dcf27163",
       "expected_source_hash": "b66d011d5d22f5ab9faabc2609cf978ca5a1bdeac484c366de8dfef919229244",
       "facility_id": "9e5ac586-b6a8-5f09-bd55-be7f55b389f4",
@@ -188831,9 +189252,32 @@
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "朝倉市荷原2417-1",
+          "agency_address_raw": "朝倉市荷原2421",
+          "agency_name_raw": "美奈宜神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "expected_source_hash": "41de4f063dee5cbb00efe288545940101f679783fed2442f46724f3b5c302ca5",
+          "fetched_at": "2026-11-12T01:02:45.969393+00:00",
+          "locator": "名称の全文かな表示と同ページの所在地欄",
+          "name_raw": "美奈宜神社（みなぎじんじゃ）",
+          "observation": "神社庁原文の全地番と掲載住所が異なるため、名称の一致だけで読みを適用しない。",
+          "page_hash": "55e89eb40708e11931a00b906bf1687505252711cceff02138a0b1c8ebc4011c",
+          "reading_raw": "みなぎじんじゃ",
+          "remaining_requirement": "神社庁の実リンクや所在地変更資料等による異なる地番の同一施設対応。",
+          "scope": "この個別ページの名称・全文かな・所在地に限定した照合。",
+          "source_kind": "government",
+          "source_publisher": "朝倉市 商工観光課",
+          "status": "inspected_address_difference",
+          "title": "美奈宜神社（荷原） - 観光情報 - 朝倉市（商工観光課）",
+          "url": "https://www.city.asakura.lg.jp/site/kanko/3008.html"
+        }
+      ],
       "address": "朝倉市荷原2421",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "6db9b372-de01-55f3-bad2-cfa8b8b4c607",
       "expected_source_hash": "41de4f063dee5cbb00efe288545940101f679783fed2442f46724f3b5c302ca5",
       "facility_id": "aee98a82-8cb1-510c-9785-c44f6ee6ff33",
@@ -188912,6 +189356,34 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "糸島市志摩桜井4227",
+          "agency_link": {
+            "address_raw": "糸島市志摩桜井4227",
+            "href_raw": "http://sakuraijinja.com/",
+            "locator": "div.p-area-list__cont occurrence=25; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "櫻井神社",
+            "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          },
+          "agency_name_raw": "櫻井神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "82c5741fca44f011a240056278cfe9666b092f1a52e861297c55271e9120df28",
+          "fetched_at": "2026-11-12T01:05:35.770882+00:00",
+          "linked_followup_urls": [],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "83ce54d4a9bedce29220ab698a6ebc6a29719a6995b4d3a348e03f1e99980ec1",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://sakuraijinja.com/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "櫻井神社 -",
+          "url": "http://sakuraijinja.com/"
+        }
+      ],
       "address": "糸島市志摩桜井4227",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -188930,6 +189402,43 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "田川市宮尾町6-13",
+          "agency_link": {
+            "address_raw": "田川市宮尾町6-13",
+            "href_raw": "https://kasuga-jinja.com/",
+            "locator": "div.p-area-list__cont occurrence=34; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "春日神社",
+            "page_hash": "4626f14e339e56294c59107166ffa79b660784843dd2a0a82af9e75cf7f15f27",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikuho/"
+          },
+          "agency_name_raw": "春日神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "b3abbeac7779c21d250e2aa2a8baae2a78c744ab07cfe8c9c8b516245a8cd1ca",
+          "fetched_at": "2026-11-12T01:06:20.212732+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "由緒",
+              "url": "https://kasuga-jinja.com/about-kasuga-shrine/"
+            },
+            {
+              "label": "アクセスマップ",
+              "url": "https://kasuga-jinja.com/access/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "eb595a16373af0f8c845e487fd3837f418e35d6ce022270592a280421f04f49d",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://kasuga-jinja.com/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "春日神社",
+          "url": "https://kasuga-jinja.com/"
+        }
+      ],
       "address": "田川市宮尾町6-13",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -188992,6 +189501,43 @@
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "久留米市城島町上青木950",
+          "agency_link": {
+            "address_raw": "久留米市城島町上青木950",
+            "href_raw": "http://aokitenmangu.jp/",
+            "locator": "div.p-area-list__cont occurrence=56; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "青木天満宮",
+            "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          },
+          "agency_name_raw": "青木天満宮",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "c2584737eab7fe1b9ebcc4ee0b6e7d43aa85f0edc6c8647d1380c4eccc241486",
+          "fetched_at": "2026-11-12T01:06:33.251874+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "神社の紹介",
+              "url": "http://aokitenmangu.jp/modules/shoukai/"
+            },
+            {
+              "label": "交通アクセス",
+              "url": "http://aokitenmangu.jp/modules/access/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "57e9da3505a507f6215d90e64424fab9eda1bc15a8cb1276f6601fe27addffd4",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "http://aokitenmangu.jp/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "青木天満宮 公式ウェブサイト - 福岡県久留米市城島町 青木之荘総鎮守",
+          "url": "http://aokitenmangu.jp/"
+        }
+      ],
       "address": "久留米市城島町上青木950",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -189069,24 +189615,6 @@
       "reason": "missing agency reading",
       "status": "unfinished",
       "surface": "阿蘇神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "address": "大牟田市鳥塚町87",
-      "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "76124726-d5ba-523f-b97a-60b7b638f46a",
-      "expected_source_hash": "9f54e3d2d89200073e1c9a6539992c9513ee8c11979408053bfdf0eda9c2ae05",
-      "facility_id": "fd5e4c87-eda7-593a-bd27-dafefb587640",
-      "listed_name": "熊野神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "福岡県",
-      "prefecture_code": "40",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "熊野神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
@@ -189235,6 +189763,34 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "太宰府市内山883",
+          "agency_link": {
+            "address_raw": "太宰府市内山883",
+            "href_raw": "https://kamadojinja.or.jp/",
+            "locator": "div.p-area-list__cont occurrence=6; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "竈門神社",
+            "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          },
+          "agency_name_raw": "竈門神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "28a6f339cc4a6d3217631cf454723c82d0cbdbdbeeb0a600ed965d3c8e867bae",
+          "fetched_at": "2026-11-12T01:05:30.909803+00:00",
+          "linked_followup_urls": [],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "f339eac83399f9c5b1e34ce717e0ef1a3850d9ea4cdd46a58cff4fa7c0152440",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://kamadojinja.or.jp/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "宝満宮竈門神社",
+          "url": "https://kamadojinja.or.jp/"
+        }
+      ],
       "address": "太宰府市内山883",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -189379,6 +189935,39 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "みやま市瀬高町下庄1397",
+          "agency_link": {
+            "address_raw": "みやま市瀬高町下庄1397",
+            "href_raw": "https://www.shimohachijinjya.com/",
+            "locator": "div.p-area-list__cont occurrence=71; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "下庄八幡神社",
+            "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          },
+          "agency_name_raw": "下庄八幡神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "d46309c2f85cec6f6807180cfdcfb2e71c1ad1c63f75082801dccb454b077f5f",
+          "fetched_at": "2026-11-12T01:06:39.227952+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "由緒・年間行事",
+              "url": "https://www.shimohachijinjya.com/下庄八幡神社について/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "ba89e49c9e69c0d848d7bc4dff0b21ef7fab6496bea9e32206ffaba1de3b325d",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://www.shimohachijinjya.com/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "令和13年鎮座900年 - 下庄八幡神社公式ページ",
+          "url": "https://www.shimohachijinjya.com/"
+        }
+      ],
       "address": "みやま市瀬高町下庄1397",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -189478,6 +190067,43 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "福岡市南区高宮4-9-34",
+          "agency_link": {
+            "address_raw": "福岡市南区高宮4-9-34",
+            "href_raw": "http://www.takamiyahachimangu.com/",
+            "locator": "div.p-area-list__cont occurrence=50; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "高宮八幡宮",
+            "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          },
+          "agency_name_raw": "高宮八幡宮",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "0a57984735c65b625170c4fe5be8668e4a3e8c69674c93200db9459fd15bc069",
+          "fetched_at": "2026-11-12T01:05:45.325931+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "由緒・由来",
+              "url": "https://takamiyahachimangu.com/history/"
+            },
+            {
+              "label": "アクセス・境内案内",
+              "url": "https://takamiyahachimangu.com/access/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "1179116e40b771e33f793a4e4e5bba58d8dfaa00e417419827e80aa4879c9ac4",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://takamiyahachimangu.com/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "高宮八幡宮",
+          "url": "http://www.takamiyahachimangu.com/"
+        }
+      ],
       "address": "福岡市南区高宮4-9-34",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -189514,9 +190140,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福岡県福岡市東区奈多2丁目29番地",
+          "agency_address_raw": "福岡市東区奈多1236",
+          "agency_name_raw": "志式神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "志式神社",
+          "expected_source_hash": "6d0384a075e2609de7c3335a0ec8fa6a13812b289aa64f76ef126f777f35b65e",
+          "fetched_at": "2026-11-12T01:00:20.882029+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "志式神社",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "e6312376ad2fea5fbf5e2ec8b9b312bcbe0b0fa02a4e95ee819a5b5466a03e75",
+          "reading_raw": "ししきじんじゃ",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/14901"
+        }
+      ],
       "address": "福岡市東区奈多1236",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "9f789a00-6665-59a1-aa10-400a40b5eda6",
       "expected_source_hash": "6d0384a075e2609de7c3335a0ec8fa6a13812b289aa64f76ef126f777f35b65e",
       "facility_id": "e53625a5-6685-52e7-b444-41a6fe3f257b",
@@ -189550,9 +190199,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福岡県飯塚市中1368-2",
+          "agency_address_raw": "飯塚市中1370",
+          "agency_name_raw": "撃鼓神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "撃皷神社（げきこじんじゃ）",
+          "expected_source_hash": "cf0d6ba7ea8cc281a2be412b2da7d2009d24c9098e78007396dc89b0994d2fd7",
+          "fetched_at": "2026-11-12T01:00:34.920662+00:00",
+          "locator": "table tr[名称] の名称と括弧内全文かな; tr[住所]",
+          "name_raw": "撃皷神社",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "ddf9ceb0292f2a38a68c0b7f1980e9bf1baa03ed2babe71047682f810b6aa27c",
+          "reading_raw": "げきこじんじゃ",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "一般社団法人飯塚観光協会",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://kankou-iizuka.jp/topic_46/"
+        }
+      ],
       "address": "飯塚市中1370",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "a439336a-c386-5350-a6ba-5ffc32524525",
       "expected_source_hash": "cf0d6ba7ea8cc281a2be412b2da7d2009d24c9098e78007396dc89b0994d2fd7",
       "facility_id": "2053e12b-ed85-559c-a549-e6f1cca4aa00",
@@ -189586,9 +190258,75 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "〒819-1601　福岡県糸島市二丈深江2143-1 （社務所）",
+          "agency_address_raw": "糸島市二丈深江2310の2",
+          "agency_name_raw": "鎭懐石八幡宮",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "鎮懐石八幡宮",
+          "expected_source_hash": "f05ecd53cf257a68567b9add10b425045c1dc81fb6b6a1c6ab40d99225840c25",
+          "fetched_at": "2026-11-12T01:00:11.156052+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "鎮懐石八幡宮",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "e2c1671e4e4459edd0688ab1e72e00a8702f4892ba301052c831e25134734493",
+          "reading_raw": "ちんかいせきはちまんぐう",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/12544"
+        },
+        {
+          "agency_address_raw": "糸島市二丈深江2310の2",
+          "agency_link": {
+            "address_raw": "糸島市二丈深江2310の2",
+            "href_raw": "https://www.chinkaiseki.com/",
+            "locator": "div.p-area-list__cont occurrence=30; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "鎭懐石八幡宮",
+            "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          },
+          "agency_name_raw": "鎭懐石八幡宮",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "f05ecd53cf257a68567b9add10b425045c1dc81fb6b6a1c6ab40d99225840c25",
+          "fetched_at": "2026-11-12T01:05:41.837030+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "由緒",
+              "url": "https://www.chinkaiseki.com/history/"
+            },
+            {
+              "label": "交通アクセス",
+              "url": "https://www.chinkaiseki.com/access/"
+            },
+            {
+              "label": "メディア紹介",
+              "url": "https://www.chinkaiseki.com/#media"
+            },
+            {
+              "label": "「由緒/歴史」",
+              "url": "https://www.chinkaiseki.com/app/s4aee32482c9a74a9/p2f51b429c1b814b2/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "75d43301863fc12961b811a331f581abf4974115b762ae658e0feb4efe5bb7db",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://www.chinkaiseki.com/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "【鎮懐石八幡宮】糸島・子授け安産の子宝神社（九州最古の万葉歌碑） - 鎮懐石八幡宮",
+          "url": "https://www.chinkaiseki.com/"
+        }
+      ],
       "address": "糸島市二丈深江2310の2",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "ac8f667d-19bc-5ff3-8571-5b521d686242",
       "expected_source_hash": "f05ecd53cf257a68567b9add10b425045c1dc81fb6b6a1c6ab40d99225840c25",
       "facility_id": "2e0a9f19-da28-58fe-9d29-2b63bde3af22",
@@ -189703,6 +190441,29 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "北九州市八幡東区春ノ町4-4-1",
+          "agency_link": {
+            "address_raw": "北九州市八幡東区春ノ町4-4-1",
+            "href_raw": "http://toyoyama.chu.jp/",
+            "locator": "div.p-area-list__cont occurrence=9; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "豊山八幡神社",
+            "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
+            "url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/"
+          },
+          "agency_name_raw": "豊山八幡神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "971c917c3b3a0d053ad31835ca866ef0ac047652cf9c04de8e39dad312520177",
+          "observation": "本文は取得せず、この試行のアクセス停止理由だけを記録。",
+          "remaining_requirement": "通常のアクセス条件が解決してから再確認。robots・アクセス制限を回避しない。",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "fetch_stopped",
+          "stop_reason": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+          "url": "http://toyoyama.chu.jp/"
+        }
+      ],
       "address": "北九州市八幡東区春ノ町4-4-1",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -189784,6 +190545,39 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "福岡市西区姪の浜3-5-5",
+          "agency_link": {
+            "address_raw": "福岡市西区姪の浜3-5-5",
+            "href_raw": "http://sumiyoshi-jinja.jp",
+            "locator": "div.p-area-list__cont occurrence=66; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "住吉神社",
+            "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
+            "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+          },
+          "agency_name_raw": "住吉神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "1694c6d07aa155b5743d62f0400198437e01974af39b3b254f1ef1639c795e9c",
+          "fetched_at": "2026-11-12T01:05:51.999400+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "アクセスマップ",
+              "url": "http://sumiyoshi-jinja.jp/history/#map"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "31a52cb15cbf460b98071f49ad64c326753102fb1285013a38178e0cdf2fe822",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "http://sumiyoshi-jinja.jp",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "姪浜住吉神社｜福岡市西区姪浜｜初詣三社参り・初宮参り・七五三・厄祓い・交通安全祈願",
+          "url": "http://sumiyoshi-jinja.jp"
+        }
+      ],
       "address": "福岡市西区姪の浜3-5-5",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -189829,9 +190623,67 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "〒807-0876　福岡県北九州市八幡西区浅川日の峯1丁目8番8号",
+          "agency_address_raw": "北九州市八幡西区浅川日の峰1-8-8",
+          "agency_name_raw": "日峯神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "日峯神社（北九州市）",
+          "expected_source_hash": "ee8d8f6621b2f1090b9c3edbe7e6ac7137f048b255f15823db1ea968441e3df5",
+          "fetched_at": "2026-11-12T01:00:03.977059+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "日峯神社（北九州市）",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "36f159f9fcb254f3220a103b152edb16c1bf674d4f6658785f3187a2c648bc0f",
+          "reading_raw": "ひのみねじんじゃ（きたきゅうしゅうし）",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/15660"
+        },
+        {
+          "agency_address_raw": "北九州市八幡西区浅川日の峰1-8-8",
+          "agency_link": {
+            "address_raw": "北九州市八幡西区浅川日の峰1-8-8",
+            "href_raw": "https://hinominejinja.com/",
+            "locator": "div.p-area-list__cont occurrence=18; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "日峯神社",
+            "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
+            "url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/"
+          },
+          "agency_name_raw": "日峯神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "ee8d8f6621b2f1090b9c3edbe7e6ac7137f048b255f15823db1ea968441e3df5",
+          "fetched_at": "2026-11-12T01:05:54.772699+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "御由緒・縁起",
+              "url": "https://hinominejinja.com/about/#goyuisho"
+            },
+            {
+              "label": "アクセス",
+              "url": "https://hinominejinja.com/#access"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "aa04b38a4bfd09fb6d7420d1e06dc4549d26707b43b301be6a6450081ff75d46",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://hinominejinja.com/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "日峯神社 - 北九州市八幡西区｜この地の暮らしを見守る氏神",
+          "url": "https://hinominejinja.com/"
+        }
+      ],
       "address": "北九州市八幡西区浅川日の峰1-8-8",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "c55eed68-48be-5200-9e64-75bd329301ab",
       "expected_source_hash": "ee8d8f6621b2f1090b9c3edbe7e6ac7137f048b255f15823db1ea968441e3df5",
       "facility_id": "4af83ea5-5b90-55eb-8fb9-1d06b8fbfb9f",
@@ -189847,6 +190699,39 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "大牟田市上内1631",
+          "agency_link": {
+            "address_raw": "大牟田市上内1631",
+            "href_raw": "https://894ke.com/wp/",
+            "locator": "div.p-area-list__cont occurrence=73; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "八幡神社",
+            "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+          },
+          "agency_name_raw": "八幡神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "46e572df85b1b29a377e78b5ef59d33c36a96e47664c74609741382f54a4520e",
+          "fetched_at": "2026-11-12T01:06:42.143500+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "御由緒",
+              "url": "https://894ke.com/wp/?page_id=7"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "4d81e5bc9975590371df854ffa3b4da36aefe91db0ccb2558d3d55c9e4aef59d",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://894ke.com/wp/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "上内八幡宮 開運厄除け･厄祓い･方災除け･地鎮祭･七五三･安産祈願･初宮詣 | 大牟田市の神社です。三月金神･三月荒神･地鎮祭･車購入時のお祓い承ります。",
+          "url": "https://894ke.com/wp/"
+        }
+      ],
       "address": "大牟田市上内1631",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -189973,9 +190858,32 @@
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "〒819-1641　福岡県糸島市二丈吉井904",
+          "agency_address_raw": "糸島市二丈吉井904･903",
+          "agency_name_raw": "浮嶽神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "浮嶽神社（糸島市）",
+          "expected_source_hash": "8295bc587aaed1f10567760c638c3ca9aa7c29ebe44e3ca88ce10bf97a2cf031",
+          "fetched_at": "2026-11-12T01:00:06.392904+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "浮嶽神社（糸島市）",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "8528f9c0af41a17a4e454ec9654871b06d67a34e95d2aba4ab602a7ce70aaf2f",
+          "reading_raw": "うきだけじんじゃ（いとしまし）",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/10250"
+        }
+      ],
       "address": "糸島市二丈吉井904･903",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "cb7bd459-cac1-5b8f-a4a5-8d75f1b57440",
       "expected_source_hash": "8295bc587aaed1f10567760c638c3ca9aa7c29ebe44e3ca88ce10bf97a2cf031",
       "facility_id": "f21756de-1464-577e-9ac3-fc73abbc430f",
@@ -190107,9 +191015,32 @@
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福岡市西区宮浦1157",
+          "agency_address_raw": "福岡市西区宮浦11571",
+          "agency_name_raw": "三所神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "expected_source_hash": "7e1bb5d1470ae41f1a93d19eed5bde2e52e4e9020f6dce434f457f3a7ba78c81",
+          "fetched_at": "2026-11-12T01:02:43.611297+00:00",
+          "locator": "名称の全文かな表示と同ページの所在地欄",
+          "name_raw": "三所神社（さんしょじんじゃ）",
+          "observation": "神社庁原文の全地番と掲載住所が異なるため、名称の一致だけで読みを適用しない。",
+          "page_hash": "344c947f7fed8ac5fa9e24b78403313d63bfab75fb350736cf21fad1d9e8b61d",
+          "reading_raw": "さんしょじんじゃ",
+          "remaining_requirement": "神社庁の実リンクや所在地変更資料等による異なる地番の同一施設対応。",
+          "scope": "この個別ページの名称・全文かな・所在地に限定した照合。",
+          "source_kind": "official_tourism",
+          "source_publisher": "福岡市観光情報サイト よかなび",
+          "status": "inspected_address_difference",
+          "title": "三所神社（さんしょじんじゃ） | 観光スポット一覧 | 【公式】福岡市観光情報サイト よかなび",
+          "url": "https://yokanavi.com/spots/26910?q%5Bareas_id_in%5D%5B%5D=7"
+        }
+      ],
       "address": "福岡市西区宮浦11571",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "d5b9ae42-9dda-5cd6-8ae0-68c1aa8215f0",
       "expected_source_hash": "7e1bb5d1470ae41f1a93d19eed5bde2e52e4e9020f6dce434f457f3a7ba78c81",
       "facility_id": "d2441739-58dd-548c-be7f-a2677b8197f8",
@@ -190143,9 +191074,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "〒811-3512　福岡県宗像市鐘崎岬224",
+          "agency_address_raw": "宗像市鐘崎224",
+          "agency_name_raw": "織幡神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "織幡神社",
+          "expected_source_hash": "00bf90f6767fceed18bb214e035f00042abb64aa6923eabfe51e5e9770353e71",
+          "fetched_at": "2026-11-12T01:00:23.468533+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "織幡神社",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "863b0d52dd6c6dc89d2b4c1fb9b7fe99350fe956cb39796bfcfb966838b5f3a6",
+          "reading_raw": "おりはたじんじゃ",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/12513"
+        }
+      ],
       "address": "宗像市鐘崎224",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "d72b5675-3639-5d5d-a387-6ccadcb2589a",
       "expected_source_hash": "00bf90f6767fceed18bb214e035f00042abb64aa6923eabfe51e5e9770353e71",
       "facility_id": "afa3f3bb-0889-56c2-813d-d84ce69196f9",
@@ -190296,6 +191250,39 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "嘉麻市山野1620",
+          "agency_link": {
+            "address_raw": "嘉麻市山野1620",
+            "href_raw": "http://yamano-gaku.com/",
+            "locator": "div.p-area-list__cont occurrence=21; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "若八幡神社",
+            "page_hash": "4626f14e339e56294c59107166ffa79b660784843dd2a0a82af9e75cf7f15f27",
+            "url": "https://fukuoka-jinjacho.or.jp/area/chikuho/"
+          },
+          "agency_name_raw": "若八幡神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "aeda4cc48f0659501cea66e5d0b705845459644fcb3ef01ea54648e5eb0de977",
+          "fetched_at": "2026-11-12T01:06:17.707623+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "アクセス情報",
+              "url": "https://yamano-gaku.com/access/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "b435d159fdf9e39d84395bf5c91fe03ce5a3d2405d6404bfa8e0ee1393de8b7a",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://yamano-gaku.com/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "山野の楽 公式｜山野ん楽 無形民俗文化財 パワースポットの秋祭り",
+          "url": "http://yamano-gaku.com/"
+        }
+      ],
       "address": "嘉麻市山野1620",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -190314,6 +191301,62 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "北九州市若松区蜑住974",
+          "agency_name_raw": "戸明神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "expected_source_hash": "cd2317098074ead20d3404257ec90a24baa7f70e72b73f16f219ecfb63f01ded",
+          "fetched_at": "2026-11-12T01:01:42.304316+00:00",
+          "locator": "対象施設の本文・フッターの住所と名称; 兼務神社ページは地区と神社名の同一行",
+          "name_raw": "戸明神社",
+          "observation": "対象施設の名称と所在地の掲載は確認できるが、このページには対象名称の明示全文かなを確認できない。",
+          "page_hash": "0916a6f8115feb0614dc7595f5f31177401bc7caddce5f6706d77417f49bc1ae",
+          "remaining_requirement": "対象施設自身に明示された全文読みの追加資料。",
+          "scope": "指定した個別ページの対象施設についての点検。兼務する同名別施設とは分離。",
+          "source_kind": "official_shrine",
+          "source_publisher": "戸明神社",
+          "status": "inspected_no_adopted_reading",
+          "title": "- 天岩戸 戸明神社 公式ホームページ",
+          "url": "https://toake-jinja.jp/"
+        },
+        {
+          "agency_address_raw": "北九州市若松区蜑住974",
+          "agency_name_raw": "戸明神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "expected_source_hash": "cd2317098074ead20d3404257ec90a24baa7f70e72b73f16f219ecfb63f01ded",
+          "fetched_at": "2026-11-12T01:02:05.924513+00:00",
+          "locator": "対象施設の本文・フッターの住所と名称; 兼務神社ページは地区と神社名の同一行",
+          "name_raw": "戸明神社",
+          "observation": "対象施設の名称と所在地の掲載は確認できるが、このページには対象名称の明示全文かなを確認できない。",
+          "page_hash": "7b8ba23783f1f8bc99cea4a0b771f36dfaf287a20e2336c4907b5a09bf74df92",
+          "remaining_requirement": "対象施設自身に明示された全文読みの追加資料。",
+          "scope": "指定した個別ページの対象施設についての点検。兼務する同名別施設とは分離。",
+          "source_kind": "official_shrine",
+          "source_publisher": "戸明神社",
+          "status": "inspected_no_adopted_reading",
+          "title": "戸明神社について - 天岩戸 戸明神社 公式ホームページ",
+          "url": "https://toake-jinja.jp/about/"
+        },
+        {
+          "agency_address_raw": "北九州市若松区蜑住974",
+          "agency_name_raw": "戸明神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "expected_source_hash": "cd2317098074ead20d3404257ec90a24baa7f70e72b73f16f219ecfb63f01ded",
+          "fetched_at": "2026-11-12T01:01:45.519929+00:00",
+          "locator": "対象施設の本文・フッターの住所と名称; 兼務神社ページは地区と神社名の同一行",
+          "name_raw": "戸明神社",
+          "observation": "有毛・安屋の兼務社に「戸明神社（とあけじんじゃ）」と明記されるが、対象は蜑住974の施設であり別施設の読みを流用しない。",
+          "page_hash": "45485e815269fa947bdd79eb413ffc4bc980733d5995b5fca1733695d6a14ce5",
+          "remaining_requirement": "対象施設自身に明示された全文読みの追加資料。",
+          "scope": "指定した個別ページの対象施設についての点検。兼務する同名別施設とは分離。",
+          "source_kind": "official_shrine",
+          "source_publisher": "戸明神社",
+          "status": "inspected_no_adopted_reading",
+          "title": "兼務神社 - 天岩戸 戸明神社 公式ホームページ",
+          "url": "https://toake-jinja.jp/about/relatedshrines/"
+        }
+      ],
       "address": "北九州市若松区蜑住974",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -190395,24 +191438,6 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
-      "address": "久留米市草野町草野443-2",
-      "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "e763db31-d52c-5f69-bcde-2cedac917f17",
-      "expected_source_hash": "baedaed0a88512039d70c9c35dbb9b05ca240a966f0028b017a1bc1c2fce9a72",
-      "facility_id": "da5e8213-3b4d-5fd5-a7ab-c471ed25f40f",
-      "listed_name": "須佐能袁神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "福岡県",
-      "prefecture_code": "40",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "須佐能袁神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
       "address": "田川市夏吉16361",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -190431,6 +191456,43 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "京都郡みやこ町犀川花熊1343",
+          "agency_link": {
+            "address_raw": "京都郡みやこ町犀川花熊1343",
+            "href_raw": "https://futago-jinja.jp/",
+            "locator": "div.p-area-list__cont occurrence=62; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "二兒神社",
+            "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
+            "url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/"
+          },
+          "agency_name_raw": "二兒神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "8fa0aa41e9664e23ed5c214476e32632b56d85e7f7191acf437b0a4634ab3488",
+          "fetched_at": "2026-11-12T01:06:06.457832+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "由緒",
+              "url": "https://futago-jinja.jp/pages/23/"
+            },
+            {
+              "label": "交通アクセス",
+              "url": "https://futago-jinja.jp/pages/4/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "460fdb8e7b60866f6709b0bb9df11c2d9a3d4261ec352278b58a7356c25570f7",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://futago-jinja.jp/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "二兒神社（公式ホームページ）｜安産の神様",
+          "url": "https://futago-jinja.jp/"
+        }
+      ],
       "address": "京都郡みやこ町犀川花熊1343",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -190467,6 +191529,43 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "agency_address_raw": "豊前市山内144",
+          "agency_link": {
+            "address_raw": "豊前市山内144",
+            "href_raw": "https://usobuki.org/",
+            "locator": "div.p-area-list__cont occurrence=65; p.p-area-list__text/p.p-area-list__add",
+            "name_raw": "嘯吹八幡神社",
+            "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
+            "url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/"
+          },
+          "agency_name_raw": "嘯吹八幡神社",
+          "checked_at": "2026-11-12T01:08:19.761982+00:00",
+          "expected_source_hash": "98b55650415ef217db0c417683702448056f4c196ad23a8f1c553851d2613ea6",
+          "fetched_at": "2026-11-12T01:06:09.194792+00:00",
+          "linked_followup_urls": [
+            {
+              "label": "嘯吹八幡神社について",
+              "url": "https://usobuki.org/%e5%98%af%e5%90%b9%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/"
+            },
+            {
+              "label": "アクセス",
+              "url": "https://usobuki.org/access/"
+            }
+          ],
+          "locator": "トップ本文・head title/meta・ruby・所在地表示",
+          "observation": "この点検範囲では、神社庁の掲載名に対応する独立した全文かなと全地番の組合せを採用根拠として確定しなかった。別の長い掲載名・称号付きの読みを切り縮めず、未閲覧の下層ページも確認済みとしない。",
+          "page_hash": "904dbe767baac72f0c2c6e4e7cf2f4f79183940616c7b3841654c3d16181e61a",
+          "remaining_requirement": "記録した実リンク先の由緒・アクセス等を個別に確認し、対象の名称・全文読み・全地番を照合する。",
+          "response_url": "https://usobuki.org/",
+          "scope": "神社庁に実在したリンク先のトップ本文、title/metaの明示かな、ruby、所在地の限定点検。実リンクがあることと移転先・リンク先の公式性を確認したことは区別する。画像文字、未閲覧の下層ページ、サイト全体は未確認。",
+          "source_kind": "agency_link_target",
+          "status": "bounded_page_inspection_no_adopted_reading",
+          "title": "嘯吹八幡神社 – 感謝と、祈り",
+          "url": "https://usobuki.org/"
+        }
+      ],
       "address": "豊前市山内144",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -190485,9 +191584,32 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "〒819-1571　福岡県糸島市高祖1240",
+          "agency_address_raw": "糸島市高祖1240",
+          "agency_name_raw": "高祖神社",
+          "checked_at": "2026-11-12T01:04:23.682635+00:00",
+          "display_name_raw": "髙祖神社（糸島市）",
+          "expected_source_hash": "010ee07c37156cc75d7b57295fdaa5607769185bf6fbf121c84bb66ff09ee346",
+          "fetched_at": "2026-11-12T01:00:16.048204+00:00",
+          "locator": "h1.o-heading-low-type4; p.o-heading-ruby の有無; 基本情報 table tr[th=住所] td",
+          "name_raw": "髙祖神社（糸島市）",
+          "observation": "原資料の名称または所在地、名称と全文かなの対応が神社庁掲載の原文と一致しない。掲載語幹から全文読みを補わず、名称・番地を自動変換して同一性を確定しない。",
+          "page_hash": "f694ace86b0f8703b52a7f3dcdd92ef4abfa37bdc2fd6526fc90882c804ab52b",
+          "reading_raw": "たかすじんじゃ（いとしまし）",
+          "remaining_requirement": "掲載名の範囲・字形差・全地番の対応を実資料で解決し、対象の名称に明示された全文読みを確認する。",
+          "scope": "この個別ページに実際に表示された項目だけを点検。サイト全体やウェブ全体の不存在を意味しない。",
+          "source_kind": "official_tourism",
+          "source_publisher": "公益社団法人福岡県観光連盟",
+          "status": "inspected_identity_or_designation_difference",
+          "url": "https://www.crossroadfukuoka.jp/spot/12547"
+        }
+      ],
       "address": "糸島市高祖1240",
       "agency_listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
+      "category_basis": "追加の個別資料で掲載名の範囲・字形・全地番の相違を確認。対象原文と資料の対応解決が必要。取得時のreasonと各資料の原文は保持。",
       "entry_id": "f026b279-3ec7-5066-9055-ba2400dea143",
       "expected_source_hash": "010ee07c37156cc75d7b57295fdaa5607769185bf6fbf121c84bb66ff09ee346",
       "facility_id": "34a0877b-5af4-51c4-8eea-706b0a0888dc",
@@ -229409,7 +230531,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10872,
+    "retained_unresolved_entries": 10868,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -232511,11 +233633,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10671,
+      "insufficient_evidence_in_inspected_sources": 10652,
       "investigation_incomplete": 0,
-      "judgment_required": 201
+      "judgment_required": 216
     },
-    "distinct_surfaces": 4402,
-    "unfinished_entries": 10872
+    "distinct_surfaces": 4399,
+    "unfinished_entries": 10868
   }
 }
