@@ -142046,6 +142046,88 @@
       ],
       "status": "verified"
     },
+    "826b41da-d0a5-5768-841b-fc69d06c70d0": {
+      "changes": {
+        "reading": "さがらじんじゃ"
+      },
+      "expected_source_hash": "fe8929e56570913a8e8aab5cffa8f06a82c50e796cf63fbfb5bffac3fbae12f1",
+      "facility_id": "275efaf1-6f6f-5291-8ce3-ccbfbeb4fed9",
+      "identity_match": {
+        "agency_address": "人吉市麓町",
+        "agency_name": "相良神社",
+        "kind": "inspected_whole_locality_and_unique_official_full_address",
+        "official_full_address_raw": "人吉市麓町35-1",
+        "original_address_preserved": true,
+        "reference_address": "熊本県人吉市麓町35-1",
+        "reference_name": "相良神社",
+        "same_name_same_original_locality_facility_ids": [
+          "275efaf1-6f6f-5291-8ce3-ccbfbeb4fed9"
+        ],
+        "source_numeric_addition_raw": "35-1"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T08:25:58.623946+00:00",
+        "independent_review": "独立担当と反映担当が取得記事本文・hash・熊本県名簿の実セルを照合。同正式名の名簿行1、正本の同名施設1、原町域内競合なし。既存の補正・review・decisionに保護対象なし。",
+        "method": "inspected_name_and_whole_locality_with_explicit_reference_parcel",
+        "remaining_limitation": "原地域欄を鎮座地に再定義せず保持。記事全所在地と名簿の事務所所在地は参照ごとに保存。記事の再配布許諾は未確認。",
+        "scope": "人吉市麓町の当該施設だけ。別地域の同名登録へ読みを流用しない。",
+        "source_address_label_raw": "お住まいの地域"
+      },
+      "original": {
+        "address": "人吉市麓町",
+        "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/40/",
+        "name_raw": "相良神社",
+        "reading_raw": ""
+      },
+      "reason": "原掲載の正式名と町域に対し、非公式記事の主対象に明示された連続全文かなと全所在地を照合。独立した熊本県宗教法人名簿の同正式名一意行と記事全地番も一致。読みのみ補完し、原地域欄の意味・町域・施設IDを保持。",
+      "references": [
+        {
+          "address_raw": "熊本県人吉市麓町35-1",
+          "attribution": "出典：神社と古事記「相良神社」（https://www.buccyake-kojiki.com/archives/1056269989.html、2026年11月12日確認）",
+          "authority_evidence": "実免責事項と運営記述を確認した非公式二次資料。神社自身・神社庁公式と分類しない。",
+          "checked_at": "2026-11-12T08:25:58.623946+00:00",
+          "excerpt": "相良神社（さがらじんじゃ）は / 熊本県人吉市麓町35-1",
+          "fetched_at": "2026-11-12T07:56:02.718893+00:00",
+          "license_status": "unconfirmed",
+          "locator": "article-titleの正式名と article-body-inner 主対象導入文（正式名（全文かな）は）/［住所］欄",
+          "name_raw": "相良神社",
+          "page_hash": "fa29a247721f60c12cd16a4c965c56cace166ac61a73fb0486fe54d5176eb3fc",
+          "processed_notice": "正式名・全文かな・全所在地の最小事実だけを個別照合。原町域を保持し記事の番地を原住所へ書き込まない。",
+          "reading_context_raw": "相良神社（さがらじんじゃ）は",
+          "reading_raw": "さがらじんじゃ",
+          "reading_scope": "full_name",
+          "reading_variants_raw": [
+            "さがらじんじゃ"
+          ],
+          "redistribution_status": "unconfirmed",
+          "source_kind": "article",
+          "source_publisher": "神社と古事記（非公式二次資料）",
+          "terms_url": "https://www.buccyake-kojiki.com/archives/1000485485.html",
+          "title": "相良神社　熊本県人吉市麓町 - 神社と古事記",
+          "url": "https://www.buccyake-kojiki.com/archives/1056269989.html"
+        },
+        {
+          "address_raw": "人吉市麓町35-1",
+          "attribution": "出典：熊本県「宗教法人名簿」（https://data.bodik.jp/dataset/430005_00107/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716）",
+          "checked_at": "2026-11-12T08:25:58.623946+00:00",
+          "excerpt": "相良神社 / 人吉市麓町35-1",
+          "fetched_at": "2026-11-12T05:05:40.758915+00:00",
+          "identity_only": true,
+          "license": "CC BY4.0国際",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "宗教法人名簿 シート 行493 C493法人名称/E493市町村/F493事務所所在地",
+          "name_raw": "相良神社",
+          "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+          "processed_notice": "熊本県「宗教法人名簿」を加工して法人名称と同一行の事務所所在地だけを照合。役員情報・連絡先・Excel内部rPhは出力せず、名簿を神社全文かなの根拠としない。",
+          "reading_raw": "",
+          "source_kind": "government_publication",
+          "source_publisher": "熊本県総務部私学振興課",
+          "title": "熊本県 宗教法人名簿（令和7年8月1日現在）",
+          "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download/123_r7.8.1.xlsx"
+        }
+      ],
+      "status": "verified"
+    },
     "8270010e-8632-505b-86e7-23c1834705b8": {
       "changes": {
         "reading": "こおりずじんじゃ"
