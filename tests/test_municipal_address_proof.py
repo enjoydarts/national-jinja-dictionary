@@ -103,6 +103,18 @@ class MunicipalAddressProofTest(unittest.TestCase):
         ref['address_identity_proof']['reference_address_raw']=ref['address_raw']
         self.assertEqual(eligible(apply_corrections(d,c)),[])
 
+    def test_numbers_only_in_chome_or_district_names_do_not_prove_a_parcel(self):
+        for suffix in ['大字架空１丁目','第1区','大字架空1番町']:
+            with self.subTest(suffix=suffix):
+                d,c,ref=fixture(suffix=suffix)
+                self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_chome_followed_by_a_complete_house_number_keeps_all_units(self):
+        d,c,ref=fixture(suffix='大字架空１丁目２番３号')
+        self.assertEqual(len(eligible(apply_corrections(d,c))),1)
+        self.assertEqual(apply_corrections(d,c)['facilities'][0]['address'],
+                         '佐賀郡川副町大字架空１丁目２番３号')
+
     def test_other_prefecture_or_unknown_former_prefix_remains_pending(self):
         for code,prefix in [('40','佐賀郡川副町'),('41','佐賀郡架空町')]:
             with self.subTest(code=code,prefix=prefix):

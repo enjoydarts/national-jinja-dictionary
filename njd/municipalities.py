@@ -45,8 +45,9 @@ def municipal_comparison_address(ref,facility,entry):
         comparison(ref['name_raw'])!=comparison(facility['listed_name']) or
         not _plain(facility.get('address')) or not _plain(ref.get('address_raw'))):return None
     raw=comparison(facility['address']).removeprefix('佐賀県')
-    # A locality with no literal number cannot establish a newly supplied lot.
-    if not re.search('[0-9]',raw):return None
+    # A number in a locality such as 1丁目/第1区 is not a parcel. Require a
+    # literal terminal lot/house number, retaining all original branch units.
+    if not re.search(r'[0-9](?:番地|番|号)?$',raw):return None
     evidence=proof.get('change_reference')
     if (not isinstance(evidence,dict) or evidence.get('url')!=_SAGA_PDF or
         evidence.get('page_hash')!=_SAGA_PDF_HASH or evidence.get('source_publisher')!='佐賀県' or
