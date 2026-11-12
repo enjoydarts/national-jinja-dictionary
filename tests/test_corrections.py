@@ -306,6 +306,60 @@ class CorrectionTest(unittest.TestCase):
         ref['address_raw']='架空町福岡原123';ref['excerpt']='架空神社 かくうじんじゃ '+ref['address_raw']
         self.assertEqual(eligible(apply_corrections(d,c)),[])
 
+    def test_county_elision_cannot_hide_added_town_inside_a_city(self):
+        d=build([row(address='架空市郡浜',reading_raw='不明')])
+        c=correction(d,{'reading':'かくうじんじゃ'})
+        ref=c['entries'][d['entries'][0]['id']]['references'][0]
+        ref.update(address_raw='架空市海辺町郡浜2666',
+                   excerpt='架空神社 かくうじんじゃ 架空市海辺町郡浜2666')
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_county_character_in_place_name_cannot_hide_a_different_city(self):
+        for municipality in (None,'甲市'):
+            with self.subTest(municipality=municipality):
+                fields={} if municipality is None else {'municipality':municipality}
+                d=build([row(address='甲市郡浜町1',reading_raw='不明',**fields)])
+                c=correction(d,{'reading':'かくうじんじゃ'})
+                ref=c['entries'][d['entries'][0]['id']]['references'][0]
+                ref.update(address_raw='乙市郡浜町1',
+                           excerpt='架空神社 かくうじんじゃ 乙市郡浜町1')
+                self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_explicit_different_counties_are_not_interchangeable(self):
+        d=build([row(address='架空郡架空町乙1',reading_raw='不明')])
+        c=correction(d,{'reading':'かくうじんじゃ'})
+        ref=c['entries'][d['entries'][0]['id']]['references'][0]
+        ref.update(address_raw='別郡架空町乙1',
+                   excerpt='架空神社 かくうじんじゃ 別郡架空町乙1')
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_county_character_in_place_name_cannot_hide_missing_city(self):
+        d=build([row(address='甲市郡浜町1',reading_raw='不明')])
+        c=correction(d,{'reading':'かくうじんじゃ'})
+        ref=c['entries'][d['entries'][0]['id']]['references'][0]
+        ref.update(address_raw='浜町1',excerpt='架空神社 かくうじんじゃ 浜町1')
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_county_omission_keeps_county_names_containing_city_character(self):
+        for bare,full in [('高取町乙1','高市郡高取町乙1'),
+                          ('仁木町乙1','余市郡仁木町乙1')]:
+            for original,reference in [(bare,full),(full,bare)]:
+                with self.subTest(original=original,reference=reference):
+                    d=build([row(address=original,reading_raw='不明')])
+                    c=correction(d,{'reading':'かくうじんじゃ'})
+                    ref=c['entries'][d['entries'][0]['id']]['references'][0]
+                    ref.update(address_raw=reference,
+                               excerpt='架空神社 かくうじんじゃ '+reference)
+                    self.assertEqual(len(eligible(apply_corrections(d,c))),1)
+
+    def test_explicit_parcel_addition_within_same_whole_locality_is_preserved(self):
+        d=build([row(address='架空市乙町',reading_raw='不明')])
+        c=correction(d,{'reading':'かくうじんじゃ'})
+        ref=c['entries'][d['entries'][0]['id']]['references'][0]
+        ref.update(address_raw='架空市乙町123',
+                   excerpt='架空神社 かくうじんじゃ 架空市乙町123')
+        self.assertEqual(len(eligible(apply_corrections(d,c))),1)
+
     def test_session_query_change_keeps_correction_for_same_native_facility(self):
         d=build([row(reading_raw='不明')]);c=correction(d,{'reading':'かくうじんじゃ'})
         updated=copy.deepcopy(d)

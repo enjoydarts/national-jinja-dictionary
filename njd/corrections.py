@@ -88,16 +88,19 @@ def _reference_matches(ref,facility,entry,changes):
     def address(value):
         value=compare_address_units(re.sub(r'^〒\d{3}-\d{4}','',_comparison(value)))
         value=value.removeprefix(facility.get('prefecture',''))
-        # Some agency lists omit 郡. Only remove a leading county after the
-        # matching prefecture; never discard an unmatched prefecture prefix.
-        value=re.sub(r'^[^都道府県]+?郡','',value)
         value=re.sub(r'(?<=\d)[−‐‑‒–—―](?=\d)','-',value)
         value=re.sub(r'(?<=\d)丁目(?=\d)','-',value)
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
         value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
         value=re.sub(r'(?<=\d)の(?=\d)','-',value)
         return value.replace('大字','')
-    actual=address(ref.get('address_raw'))
+    def county(value):
+        # A 市/区 before 郡 belongs to the municipality/locality, not an
+        # omitted county. 高市郡 and 余市郡 are actual county names containing
+        # 市 (official prefectural references are recorded in docs/DATA.md).
+        match=re.match(r'((?:高市|余市|[^都道府県市区]+?)郡)(.+)',value)
+        return match.groups() if match else ('',value)
+    reference_address=address(ref.get('address_raw'))
     sources=[facility.get('address')]
     detail=facility.get('address_source',{})
     if detail.get('url')==facility.get('native_source_id'):
@@ -106,7 +109,13 @@ def _reference_matches(ref,facility,entry,changes):
     # present, must match; do not accept lot 1 as a prefix of lot 10.
     for raw in sources:
         expected=address(raw)
+        actual=reference_address
         if not expected or not actual:continue
+        actual_county,actual_locality=county(actual)
+        expected_county,expected_locality=county(expected)
+        # Omission is permitted; explicitly different counties are not.
+        if actual_county and expected_county and actual_county!=expected_county:continue
+        actual,expected=actual_locality,expected_locality
         if actual==expected:return True
         if strict_registered_address:continue
         if _additional_aza_matches(actual,expected,ref,facility):return True
