@@ -2823,6 +2823,11 @@
           "verified_facilities": 2240
         },
         "checked_at": null,
+        "effective_entry_status_counts": {
+          "pending": 1773,
+          "verified": 467
+        },
+        "effective_pending_entries": 1773,
         "facilities_collected": 2240,
         "fields_observed": {
           "address": 2240,
@@ -2843,13 +2848,14 @@
           }
         ],
         "latest_additional_reading_followup": {
-          "checked_at": "2026-11-12T08:06:12.889473+00:00",
+          "checked_at": "2026-11-12T09:29:04.630773+00:00",
           "entry_ids": [
-            "a1d848da-cfc5-5c15-abad-1c1181bf751b"
+            "1f6c206a-8ddd-5dc6-bf45-3dc3eebe5310",
+            "47200211-6577-536a-8dad-5641a160453c"
           ],
           "evidence_data": "data/corrections.json; data/reading_research.json",
-          "scope": "既報固定除外後の包含索引名98記事限定調査。現正式名への独立全文かなと全住所を必須とし、長名からの切出し・別施設流用をしない。県内全保留の完了ではない。",
-          "verified_entries": 1
+          "scope": "主名称に明示された独立全文かなの適用範囲と原全地番を個別検証した対象だけを補完。県内全保留の調査完了ではない。",
+          "verified_entries": 2
         },
         "legal_form_reading_supplements": {
           "added_facilities": 9,
@@ -2912,13 +2918,13 @@
         "stored_pages_fetched": 16,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 1775,
+            "insufficient_evidence_in_inspected_sources": 1773,
             "investigation_incomplete": 0,
             "judgment_required": 0
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 1786,
-          "unfinished_entries": 1775
+          "unfinished_entries": 1773
         }
       },
       "conditions": {
@@ -44662,8 +44668,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13694,
-    "effective_verified_facilities": 44334,
+    "effective_dictionary_rows": 13696,
+    "effective_verified_facilities": 44336,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
