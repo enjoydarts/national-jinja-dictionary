@@ -113147,6 +113147,98 @@
       ],
       "status": "verified"
     },
+    "67a14676-4cbe-5a67-9585-5931c3be6225": {
+      "changes": {
+        "reading": "かわうちじんじゃ"
+      },
+      "expected_source_hash": "77605f6f299f546294e2203f6577e5c22b94a4e8b650bdaf830f4de0073df2bd",
+      "facility_id": "7b79584c-55ba-5ca8-87e4-f055fb1c2f75",
+      "identity_match": {
+        "agency_address": "高知県高岡郡檮原町太田戸1131番地",
+        "agency_name": "河内神社",
+        "reference_address": "高知県梼原町太田戸1131番地",
+        "reference_address_components": {
+          "住所": "太田戸1131番地",
+          "市区町村名": "梼原町",
+          "都道府県名": "高知県"
+        },
+        "reference_name": "河内神社"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T11:31:04.541378+00:00",
+        "independent_review": "独立担当が同hash実CSVの全文名・全文かな・全町域地番、町の条例2本文、個別CC BY4.0実hrefと機械連結の妥当性を照合して承認。",
+        "method": "literal_municipal_csv_columns_and_official_town_spelling",
+        "observation": "町の条例本文における檮原町・梼原町の同一自治体の表記を確認。神社の全文名・町域・全地番は個別行を照合し、別町域の同名社、異なる地番、神社名表記差、棟札や門杉の複合名称からの読み流用は採用しない。",
+        "peer_reviewed_at": "2026-11-12T11:33:28.277099+00:00"
+      },
+      "original": {
+        "address": "高知県高岡郡檮原町太田戸1131番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=66",
+        "name_raw": "河内神社",
+        "reading_raw": ""
+      },
+      "reason": "梼原町のCC BY4.0文化財CSVの同じ行に原神社名そのものと独立した全文かな、明示された町域・全地番が対応。町名の二表記は町の公式条例本文で確認し、分割された住所欄は原値を保存して機械連結する。原表記・全所在地・施設IDと既存判断を保持して読みだけを補完。",
+      "references": [
+        {
+          "address_components": {
+            "住所": "太田戸1131番地",
+            "市区町村名": "梼原町",
+            "都道府県名": "高知県"
+          },
+          "address_composition_notice": "原列3個を順に機械連結した比較用住所。連続して印字された住所として引用しない。原欄値と原登録の全住所を保持。",
+          "address_raw": "高知県梼原町太田戸1131番地",
+          "attribution": "「文化財一覧」（梼原町、https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T11:31:04.541378+00:00",
+          "csv_row": 40,
+          "cultural_property_class_raw": "町保護民俗文化財",
+          "encoding": "cp932",
+          "excerpt": "名称=河内神社 / 名称_カナ=ｶﾜｳﾁｼﾞﾝｼﾞｬ / 都道府県名=高知県 / 市区町村名=梼原町 / 住所=太田戸1131番地",
+          "fetched_at": "2026-11-12T11:20:28.321397+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:19:52.574155+00:00",
+              "page_hash": "89a131d3b14e458ca6aab670c3f7177aa2d2d20988cce65576dc95aa3871267c",
+              "url": "https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564"
+            }
+          ],
+          "license_observation": "町公式記事の文化財一覧の実CSV行にCC BY4.0の実リンクを確認。条例は町名の対応だけに使い、神社の読みはCSVの独立全文かなに限定。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 40（ヘッダを1行目とする）: 名称・名称_カナ・都道府県名・市区町村名・住所",
+          "municipality_identity_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:28:22.575039+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "504fa11fd0581108f829db4dbc60fa155d8f2f1e31bcb7401945ab602c284eb2",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町農村景観活用交流促進施設等の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000279.html"
+            },
+            {
+              "fetched_at": "2026-11-12T11:28:24.730086+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "719f5b0699b53f58e2b631ef83947554cd786f0934a147cab86766fea0122fcc",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町移住定住雇用促進住宅の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000464.html"
+            }
+          ],
+          "name_raw": "河内神社",
+          "page_hash": "32e2cefe8d6f72c4fad98af3ed7947bb1095787cac5e7b26aedbacc14ee1cdba",
+          "processed_notice": "全文かなをNFKC・ひらがな化して読みだけを補完。原神社名・全住所・施設ID・旧判断を保持。",
+          "reading_raw": "ｶﾜｳﾁｼﾞﾝｼﾞｬ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "梼原町",
+          "title": "梼原町 文化財一覧",
+          "url": "https://www.town.yusuhara.lg.jp/file/opendata/394050_cultural_property.csv",
+          "verification_method": "individual_source_review: exact printed full shrine name, full kana and complete locality/parcel in literal municipal CSV columns"
+        }
+      ],
+      "status": "verified"
+    },
     "67a643e3-1dce-59ef-ad05-bb98cbc04450": {
       "changes": {
         "reading": "おとこやまはちまんぐう"
@@ -126114,6 +126206,155 @@
       ],
       "status": "needs_review",
       "unresolved_kind": "name_address_or_structure"
+    },
+    "73b3072e-1df3-5529-add6-a74069a76641": {
+      "changes": {
+        "reading": "みしまごしゃじんじゃ"
+      },
+      "expected_source_hash": "0aad8ec1d6b6b2d049836caa876e70e8930f64f8ffdb427556b6cc9fd45ea0d8",
+      "facility_id": "7bb935d4-0c63-5909-9f6f-e1477a84a0bb",
+      "identity_match": {
+        "agency_address": "高知県高岡郡檮原町田野々1295番地",
+        "agency_name": "三嶋五社神社",
+        "reference_address": "高知県梼原町田野々1295番地",
+        "reference_address_components": {
+          "住所": "田野々1295番地",
+          "市区町村名": "梼原町",
+          "都道府県名": "高知県"
+        },
+        "reference_name": "三嶋五社神社"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T11:31:04.541378+00:00",
+        "independent_review": "独立担当が同hash実CSVの全文名・全文かな・全町域地番、町の条例2本文、個別CC BY4.0実hrefと機械連結の妥当性を照合して承認。",
+        "method": "literal_municipal_csv_columns_and_official_town_spelling",
+        "observation": "町の条例本文における檮原町・梼原町の同一自治体の表記を確認。神社の全文名・町域・全地番は個別行を照合し、別町域の同名社、異なる地番、神社名表記差、棟札や門杉の複合名称からの読み流用は採用しない。",
+        "peer_reviewed_at": "2026-11-12T11:33:28.277099+00:00"
+      },
+      "original": {
+        "address": "高知県高岡郡檮原町田野々1295番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=66",
+        "name_raw": "三嶋五社神社",
+        "reading_raw": ""
+      },
+      "reason": "梼原町のCC BY4.0文化財CSVの同じ行に原神社名そのものと独立した全文かな、明示された町域・全地番が対応。町名の二表記は町の公式条例本文で確認し、分割された住所欄は原値を保存して機械連結する。原表記・全所在地・施設IDと既存判断を保持して読みだけを補完。",
+      "references": [
+        {
+          "address_components": {
+            "住所": "田野々1295番地",
+            "市区町村名": "梼原町",
+            "都道府県名": "高知県"
+          },
+          "address_composition_notice": "原列3個を順に機械連結した比較用住所。連続して印字された住所として引用しない。原欄値と原登録の全住所を保持。",
+          "address_raw": "高知県梼原町田野々1295番地",
+          "attribution": "「文化財一覧」（梼原町、https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T11:31:04.541378+00:00",
+          "csv_row": 30,
+          "cultural_property_class_raw": "町保護民俗文化財",
+          "encoding": "cp932",
+          "excerpt": "名称=三嶋五社神社 / 名称_カナ=ﾐｼﾏｺﾞｼｬｼﾞﾝｼﾞｬ / 都道府県名=高知県 / 市区町村名=梼原町 / 住所=田野々1295番地",
+          "fetched_at": "2026-11-12T11:20:28.321397+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:19:52.574155+00:00",
+              "page_hash": "89a131d3b14e458ca6aab670c3f7177aa2d2d20988cce65576dc95aa3871267c",
+              "url": "https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564"
+            }
+          ],
+          "license_observation": "町公式記事の文化財一覧の実CSV行にCC BY4.0の実リンクを確認。条例は町名の対応だけに使い、神社の読みはCSVの独立全文かなに限定。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 30（ヘッダを1行目とする）: 名称・名称_カナ・都道府県名・市区町村名・住所",
+          "municipality_identity_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:28:22.575039+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "504fa11fd0581108f829db4dbc60fa155d8f2f1e31bcb7401945ab602c284eb2",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町農村景観活用交流促進施設等の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000279.html"
+            },
+            {
+              "fetched_at": "2026-11-12T11:28:24.730086+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "719f5b0699b53f58e2b631ef83947554cd786f0934a147cab86766fea0122fcc",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町移住定住雇用促進住宅の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000464.html"
+            }
+          ],
+          "name_raw": "三嶋五社神社",
+          "page_hash": "32e2cefe8d6f72c4fad98af3ed7947bb1095787cac5e7b26aedbacc14ee1cdba",
+          "processed_notice": "全文かなをNFKC・ひらがな化して読みだけを補完。原神社名・全住所・施設ID・旧判断を保持。",
+          "reading_raw": "ﾐｼﾏｺﾞｼｬｼﾞﾝｼﾞｬ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "梼原町",
+          "title": "梼原町 文化財一覧",
+          "url": "https://www.town.yusuhara.lg.jp/file/opendata/394050_cultural_property.csv",
+          "verification_method": "individual_source_review: exact printed full shrine name, full kana and complete locality/parcel in literal municipal CSV columns"
+        },
+        {
+          "address_components": {
+            "住所": "田野々1295番地",
+            "市区町村名": "梼原町",
+            "都道府県名": "高知県"
+          },
+          "address_composition_notice": "原列3個を順に機械連結した比較用住所。連続して印字された住所として引用しない。原欄値と原登録の全住所を保持。",
+          "address_raw": "高知県梼原町田野々1295番地",
+          "attribution": "「文化財一覧」（梼原町、https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T11:31:04.541378+00:00",
+          "csv_row": 80,
+          "cultural_property_class_raw": "県保護民俗文化財",
+          "encoding": "cp932",
+          "excerpt": "名称=三嶋五社神社 / 名称_カナ=ﾐｼﾏｺﾞｼｬｼﾞﾝｼﾞｬ / 都道府県名=高知県 / 市区町村名=梼原町 / 住所=田野々1295番地",
+          "fetched_at": "2026-11-12T11:20:28.321397+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:19:52.574155+00:00",
+              "page_hash": "89a131d3b14e458ca6aab670c3f7177aa2d2d20988cce65576dc95aa3871267c",
+              "url": "https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564"
+            }
+          ],
+          "license_observation": "町公式記事の文化財一覧の実CSV行にCC BY4.0の実リンクを確認。条例は町名の対応だけに使い、神社の読みはCSVの独立全文かなに限定。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 80（ヘッダを1行目とする）: 名称・名称_カナ・都道府県名・市区町村名・住所",
+          "municipality_identity_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:28:22.575039+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "504fa11fd0581108f829db4dbc60fa155d8f2f1e31bcb7401945ab602c284eb2",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町農村景観活用交流促進施設等の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000279.html"
+            },
+            {
+              "fetched_at": "2026-11-12T11:28:24.730086+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "719f5b0699b53f58e2b631ef83947554cd786f0934a147cab86766fea0122fcc",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町移住定住雇用促進住宅の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000464.html"
+            }
+          ],
+          "name_raw": "三嶋五社神社",
+          "page_hash": "32e2cefe8d6f72c4fad98af3ed7947bb1095787cac5e7b26aedbacc14ee1cdba",
+          "processed_notice": "全文かなをNFKC・ひらがな化して読みだけを補完。原神社名・全住所・施設ID・旧判断を保持。",
+          "reading_raw": "ﾐｼﾏｺﾞｼｬｼﾞﾝｼﾞｬ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "梼原町",
+          "title": "梼原町 文化財一覧",
+          "url": "https://www.town.yusuhara.lg.jp/file/opendata/394050_cultural_property.csv",
+          "verification_method": "individual_source_review: exact printed full shrine name, full kana and complete locality/parcel in literal municipal CSV columns"
+        }
+      ],
+      "status": "verified"
     },
     "73d40d22-aa21-5eb5-a203-3de03d46e77d": {
       "changes": {
@@ -150501,6 +150742,98 @@
       ],
       "status": "verified"
     },
+    "8a624a48-e293-5a26-af89-a741841d72bc": {
+      "changes": {
+        "reading": "わだつみじんじゃ"
+      },
+      "expected_source_hash": "22d627866214c9d5d0e39d6de2c1c2c1aa3725b1953ba5111da5079a0bac7117",
+      "facility_id": "57077936-7987-5f2a-9440-c1aa872e7bcf",
+      "identity_match": {
+        "agency_address": "高知県高岡郡檮原町中の川638番地",
+        "agency_name": "海津見神社",
+        "reference_address": "高知県梼原町中の川638番地",
+        "reference_address_components": {
+          "住所": "中の川638番地",
+          "市区町村名": "梼原町",
+          "都道府県名": "高知県"
+        },
+        "reference_name": "海津見神社"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T11:31:04.541378+00:00",
+        "independent_review": "独立担当が同hash実CSVの全文名・全文かな・全町域地番、町の条例2本文、個別CC BY4.0実hrefと機械連結の妥当性を照合して承認。",
+        "method": "literal_municipal_csv_columns_and_official_town_spelling",
+        "observation": "町の条例本文における檮原町・梼原町の同一自治体の表記を確認。神社の全文名・町域・全地番は個別行を照合し、別町域の同名社、異なる地番、神社名表記差、棟札や門杉の複合名称からの読み流用は採用しない。",
+        "peer_reviewed_at": "2026-11-12T11:33:28.277099+00:00"
+      },
+      "original": {
+        "address": "高知県高岡郡檮原町中の川638番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=66",
+        "name_raw": "海津見神社",
+        "reading_raw": ""
+      },
+      "reason": "梼原町のCC BY4.0文化財CSVの同じ行に原神社名そのものと独立した全文かな、明示された町域・全地番が対応。町名の二表記は町の公式条例本文で確認し、分割された住所欄は原値を保存して機械連結する。原表記・全所在地・施設IDと既存判断を保持して読みだけを補完。",
+      "references": [
+        {
+          "address_components": {
+            "住所": "中の川638番地",
+            "市区町村名": "梼原町",
+            "都道府県名": "高知県"
+          },
+          "address_composition_notice": "原列3個を順に機械連結した比較用住所。連続して印字された住所として引用しない。原欄値と原登録の全住所を保持。",
+          "address_raw": "高知県梼原町中の川638番地",
+          "attribution": "「文化財一覧」（梼原町、https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T11:31:04.541378+00:00",
+          "csv_row": 38,
+          "cultural_property_class_raw": "町保護民俗文化財",
+          "encoding": "cp932",
+          "excerpt": "名称=海津見神社 / 名称_カナ=ﾜﾀﾞﾂﾐｼﾞﾝｼﾞｬ / 都道府県名=高知県 / 市区町村名=梼原町 / 住所=中の川638番地",
+          "fetched_at": "2026-11-12T11:20:28.321397+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:19:52.574155+00:00",
+              "page_hash": "89a131d3b14e458ca6aab670c3f7177aa2d2d20988cce65576dc95aa3871267c",
+              "url": "https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564"
+            }
+          ],
+          "license_observation": "町公式記事の文化財一覧の実CSV行にCC BY4.0の実リンクを確認。条例は町名の対応だけに使い、神社の読みはCSVの独立全文かなに限定。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 38（ヘッダを1行目とする）: 名称・名称_カナ・都道府県名・市区町村名・住所",
+          "municipality_identity_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:28:22.575039+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "504fa11fd0581108f829db4dbc60fa155d8f2f1e31bcb7401945ab602c284eb2",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町農村景観活用交流促進施設等の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000279.html"
+            },
+            {
+              "fetched_at": "2026-11-12T11:28:24.730086+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "719f5b0699b53f58e2b631ef83947554cd786f0934a147cab86766fea0122fcc",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町移住定住雇用促進住宅の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000464.html"
+            }
+          ],
+          "name_raw": "海津見神社",
+          "page_hash": "32e2cefe8d6f72c4fad98af3ed7947bb1095787cac5e7b26aedbacc14ee1cdba",
+          "processed_notice": "全文かなをNFKC・ひらがな化して読みだけを補完。原神社名・全住所・施設ID・旧判断を保持。",
+          "reading_raw": "ﾜﾀﾞﾂﾐｼﾞﾝｼﾞｬ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "梼原町",
+          "title": "梼原町 文化財一覧",
+          "url": "https://www.town.yusuhara.lg.jp/file/opendata/394050_cultural_property.csv",
+          "verification_method": "individual_source_review: exact printed full shrine name, full kana and complete locality/parcel in literal municipal CSV columns"
+        }
+      ],
+      "status": "verified"
+    },
     "8a734600-5635-5f0b-b186-c142dba723f2": {
       "changes": {
         "reading": "いわくらじんじゃ"
@@ -150703,6 +151036,98 @@
           "title": "田立建狸根命神社 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/misato/f5aa01b45f1cb6b7247f83fc05aeb259fd83c3a5.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "8ae1dfb0-c29c-5c05-b9d7-aea85f807eb4": {
+      "changes": {
+        "reading": "てんじんぐう"
+      },
+      "expected_source_hash": "28e2ae50ae6eca2b96aeb4b487991bf8307f27af897e4587c39f55707ca9227d",
+      "facility_id": "0e91bf71-01f8-559d-8bf1-e6c41f2bd3ba",
+      "identity_match": {
+        "agency_address": "高知県高岡郡檮原町松原384番地",
+        "agency_name": "天神宮",
+        "reference_address": "高知県梼原町松原384番地",
+        "reference_address_components": {
+          "住所": "松原384番地",
+          "市区町村名": "梼原町",
+          "都道府県名": "高知県"
+        },
+        "reference_name": "天神宮"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T11:31:04.541378+00:00",
+        "independent_review": "独立担当が同hash実CSVの全文名・全文かな・全町域地番、町の条例2本文、個別CC BY4.0実hrefと機械連結の妥当性を照合して承認。",
+        "method": "literal_municipal_csv_columns_and_official_town_spelling",
+        "observation": "町の条例本文における檮原町・梼原町の同一自治体の表記を確認。神社の全文名・町域・全地番は個別行を照合し、別町域の同名社、異なる地番、神社名表記差、棟札や門杉の複合名称からの読み流用は採用しない。",
+        "peer_reviewed_at": "2026-11-12T11:33:28.277099+00:00"
+      },
+      "original": {
+        "address": "高知県高岡郡檮原町松原384番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=66",
+        "name_raw": "天神宮",
+        "reading_raw": ""
+      },
+      "reason": "梼原町のCC BY4.0文化財CSVの同じ行に原神社名そのものと独立した全文かな、明示された町域・全地番が対応。町名の二表記は町の公式条例本文で確認し、分割された住所欄は原値を保存して機械連結する。原表記・全所在地・施設IDと既存判断を保持して読みだけを補完。",
+      "references": [
+        {
+          "address_components": {
+            "住所": "松原384番地",
+            "市区町村名": "梼原町",
+            "都道府県名": "高知県"
+          },
+          "address_composition_notice": "原列3個を順に機械連結した比較用住所。連続して印字された住所として引用しない。原欄値と原登録の全住所を保持。",
+          "address_raw": "高知県梼原町松原384番地",
+          "attribution": "「文化財一覧」（梼原町、https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T11:31:04.541378+00:00",
+          "csv_row": 35,
+          "cultural_property_class_raw": "町保護民俗文化財",
+          "encoding": "cp932",
+          "excerpt": "名称=天神宮 / 名称_カナ=ﾃﾝｼﾞﾝｸﾞｳ / 都道府県名=高知県 / 市区町村名=梼原町 / 住所=松原384番地",
+          "fetched_at": "2026-11-12T11:20:28.321397+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:19:52.574155+00:00",
+              "page_hash": "89a131d3b14e458ca6aab670c3f7177aa2d2d20988cce65576dc95aa3871267c",
+              "url": "https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564"
+            }
+          ],
+          "license_observation": "町公式記事の文化財一覧の実CSV行にCC BY4.0の実リンクを確認。条例は町名の対応だけに使い、神社の読みはCSVの独立全文かなに限定。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 35（ヘッダを1行目とする）: 名称・名称_カナ・都道府県名・市区町村名・住所",
+          "municipality_identity_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:28:22.575039+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "504fa11fd0581108f829db4dbc60fa155d8f2f1e31bcb7401945ab602c284eb2",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町農村景観活用交流促進施設等の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000279.html"
+            },
+            {
+              "fetched_at": "2026-11-12T11:28:24.730086+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "719f5b0699b53f58e2b631ef83947554cd786f0934a147cab86766fea0122fcc",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町移住定住雇用促進住宅の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000464.html"
+            }
+          ],
+          "name_raw": "天神宮",
+          "page_hash": "32e2cefe8d6f72c4fad98af3ed7947bb1095787cac5e7b26aedbacc14ee1cdba",
+          "processed_notice": "全文かなをNFKC・ひらがな化して読みだけを補完。原神社名・全住所・施設ID・旧判断を保持。",
+          "reading_raw": "ﾃﾝｼﾞﾝｸﾞｳ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "梼原町",
+          "title": "梼原町 文化財一覧",
+          "url": "https://www.town.yusuhara.lg.jp/file/opendata/394050_cultural_property.csv",
+          "verification_method": "individual_source_review: exact printed full shrine name, full kana and complete locality/parcel in literal municipal CSV columns"
         }
       ],
       "status": "verified"
@@ -157716,6 +158141,98 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "39_kochi_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "91198dfc-640e-5b5a-808e-95f3b26aa9d8": {
+      "changes": {
+        "reading": "かわうちしらおうじんじゃ"
+      },
+      "expected_source_hash": "22bccbe8d8d9fa4fa77999e7b42d9ca3aca97fa17911d6c48b6643c1727fe8fe",
+      "facility_id": "67ed17f4-95c8-508f-ae99-d5baefba0c7f",
+      "identity_match": {
+        "agency_address": "高知県高岡郡檮原町永野589番地",
+        "agency_name": "河内白王神社",
+        "reference_address": "高知県梼原町永野589番地",
+        "reference_address_components": {
+          "住所": "永野589番地",
+          "市区町村名": "梼原町",
+          "都道府県名": "高知県"
+        },
+        "reference_name": "河内白王神社"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T11:31:04.541378+00:00",
+        "independent_review": "独立担当が同hash実CSVの全文名・全文かな・全町域地番、町の条例2本文、個別CC BY4.0実hrefと機械連結の妥当性を照合して承認。",
+        "method": "literal_municipal_csv_columns_and_official_town_spelling",
+        "observation": "町の条例本文における檮原町・梼原町の同一自治体の表記を確認。神社の全文名・町域・全地番は個別行を照合し、別町域の同名社、異なる地番、神社名表記差、棟札や門杉の複合名称からの読み流用は採用しない。",
+        "peer_reviewed_at": "2026-11-12T11:33:28.277099+00:00"
+      },
+      "original": {
+        "address": "高知県高岡郡檮原町永野589番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=65",
+        "name_raw": "河内白王神社",
+        "reading_raw": ""
+      },
+      "reason": "梼原町のCC BY4.0文化財CSVの同じ行に原神社名そのものと独立した全文かな、明示された町域・全地番が対応。町名の二表記は町の公式条例本文で確認し、分割された住所欄は原値を保存して機械連結する。原表記・全所在地・施設IDと既存判断を保持して読みだけを補完。",
+      "references": [
+        {
+          "address_components": {
+            "住所": "永野589番地",
+            "市区町村名": "梼原町",
+            "都道府県名": "高知県"
+          },
+          "address_composition_notice": "原列3個を順に機械連結した比較用住所。連続して印字された住所として引用しない。原欄値と原登録の全住所を保持。",
+          "address_raw": "高知県梼原町永野589番地",
+          "attribution": "「文化財一覧」（梼原町、https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T11:31:04.541378+00:00",
+          "csv_row": 39,
+          "cultural_property_class_raw": "町保護民俗文化財",
+          "encoding": "cp932",
+          "excerpt": "名称=河内白王神社 / 名称_カナ=ｶﾜｳﾁｼﾗｵｳｼﾞﾝｼﾞｬ / 都道府県名=高知県 / 市区町村名=梼原町 / 住所=永野589番地",
+          "fetched_at": "2026-11-12T11:20:28.321397+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:19:52.574155+00:00",
+              "page_hash": "89a131d3b14e458ca6aab670c3f7177aa2d2d20988cce65576dc95aa3871267c",
+              "url": "https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564"
+            }
+          ],
+          "license_observation": "町公式記事の文化財一覧の実CSV行にCC BY4.0の実リンクを確認。条例は町名の対応だけに使い、神社の読みはCSVの独立全文かなに限定。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 39（ヘッダを1行目とする）: 名称・名称_カナ・都道府県名・市区町村名・住所",
+          "municipality_identity_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:28:22.575039+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "504fa11fd0581108f829db4dbc60fa155d8f2f1e31bcb7401945ab602c284eb2",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町農村景観活用交流促進施設等の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000279.html"
+            },
+            {
+              "fetched_at": "2026-11-12T11:28:24.730086+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "719f5b0699b53f58e2b631ef83947554cd786f0934a147cab86766fea0122fcc",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町移住定住雇用促進住宅の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000464.html"
+            }
+          ],
+          "name_raw": "河内白王神社",
+          "page_hash": "32e2cefe8d6f72c4fad98af3ed7947bb1095787cac5e7b26aedbacc14ee1cdba",
+          "processed_notice": "全文かなをNFKC・ひらがな化して読みだけを補完。原神社名・全住所・施設ID・旧判断を保持。",
+          "reading_raw": "ｶﾜｳﾁｼﾗｵｳｼﾞﾝｼﾞｬ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "梼原町",
+          "title": "梼原町 文化財一覧",
+          "url": "https://www.town.yusuhara.lg.jp/file/opendata/394050_cultural_property.csv",
+          "verification_method": "individual_source_review: exact printed full shrine name, full kana and complete locality/parcel in literal municipal CSV columns"
         }
       ],
       "status": "verified"
@@ -189691,6 +190208,98 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "25_shiga_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "aea764bc-c522-5d9b-b4d8-01312e4732ea": {
+      "changes": {
+        "reading": "みしまじんじゃ"
+      },
+      "expected_source_hash": "67f86a870625ab3714a4dadd9938a4686510760ef2e09cd4dada8ff455ed68fe",
+      "facility_id": "c8aa6a2a-8e36-535d-a0ca-aed476104f4c",
+      "identity_match": {
+        "agency_address": "高知県高岡郡檮原町川西路2196",
+        "agency_name": "三嶋神社",
+        "reference_address": "高知県梼原町川西路2196番地",
+        "reference_address_components": {
+          "住所": "川西路2196番地",
+          "市区町村名": "梼原町",
+          "都道府県名": "高知県"
+        },
+        "reference_name": "三嶋神社"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T11:31:04.541378+00:00",
+        "independent_review": "独立担当が同hash実CSVの全文名・全文かな・全町域地番、町の条例2本文、個別CC BY4.0実hrefと機械連結の妥当性を照合して承認。",
+        "method": "literal_municipal_csv_columns_and_official_town_spelling",
+        "observation": "町の条例本文における檮原町・梼原町の同一自治体の表記を確認。神社の全文名・町域・全地番は個別行を照合し、別町域の同名社、異なる地番、神社名表記差、棟札や門杉の複合名称からの読み流用は採用しない。",
+        "peer_reviewed_at": "2026-11-12T11:33:28.277099+00:00"
+      },
+      "original": {
+        "address": "高知県高岡郡檮原町川西路2196",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=66",
+        "name_raw": "三嶋神社",
+        "reading_raw": ""
+      },
+      "reason": "梼原町のCC BY4.0文化財CSVの同じ行に原神社名そのものと独立した全文かな、明示された町域・全地番が対応。町名の二表記は町の公式条例本文で確認し、分割された住所欄は原値を保存して機械連結する。原表記・全所在地・施設IDと既存判断を保持して読みだけを補完。",
+      "references": [
+        {
+          "address_components": {
+            "住所": "川西路2196番地",
+            "市区町村名": "梼原町",
+            "都道府県名": "高知県"
+          },
+          "address_composition_notice": "原列3個を順に機械連結した比較用住所。連続して印字された住所として引用しない。原欄値と原登録の全住所を保持。",
+          "address_raw": "高知県梼原町川西路2196番地",
+          "attribution": "「文化財一覧」（梼原町、https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T11:31:04.541378+00:00",
+          "csv_row": 36,
+          "cultural_property_class_raw": "町保護民俗文化財",
+          "encoding": "cp932",
+          "excerpt": "名称=三嶋神社 / 名称_カナ=ﾐｼﾏｼﾞﾝｼﾞｬ / 都道府県名=高知県 / 市区町村名=梼原町 / 住所=川西路2196番地",
+          "fetched_at": "2026-11-12T11:20:28.321397+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:19:52.574155+00:00",
+              "page_hash": "89a131d3b14e458ca6aab670c3f7177aa2d2d20988cce65576dc95aa3871267c",
+              "url": "https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564"
+            }
+          ],
+          "license_observation": "町公式記事の文化財一覧の実CSV行にCC BY4.0の実リンクを確認。条例は町名の対応だけに使い、神社の読みはCSVの独立全文かなに限定。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 36（ヘッダを1行目とする）: 名称・名称_カナ・都道府県名・市区町村名・住所",
+          "municipality_identity_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:28:22.575039+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "504fa11fd0581108f829db4dbc60fa155d8f2f1e31bcb7401945ab602c284eb2",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町農村景観活用交流促進施設等の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000279.html"
+            },
+            {
+              "fetched_at": "2026-11-12T11:28:24.730086+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "719f5b0699b53f58e2b631ef83947554cd786f0934a147cab86766fea0122fcc",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町移住定住雇用促進住宅の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000464.html"
+            }
+          ],
+          "name_raw": "三嶋神社",
+          "page_hash": "32e2cefe8d6f72c4fad98af3ed7947bb1095787cac5e7b26aedbacc14ee1cdba",
+          "processed_notice": "全文かなをNFKC・ひらがな化して読みだけを補完。原神社名・全住所・施設ID・旧判断を保持。",
+          "reading_raw": "ﾐｼﾏｼﾞﾝｼﾞｬ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "梼原町",
+          "title": "梼原町 文化財一覧",
+          "url": "https://www.town.yusuhara.lg.jp/file/opendata/394050_cultural_property.csv",
+          "verification_method": "individual_source_review: exact printed full shrine name, full kana and complete locality/parcel in literal municipal CSV columns"
         }
       ],
       "status": "verified"
@@ -260571,6 +261180,98 @@
           "title": "今宮神社 (京都市)",
           "url": "https://ja.wikipedia.org/wiki/%E4%BB%8A%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E9%83%BD%E5%B8%82)",
           "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "ef8d17ca-9430-526d-87a0-318bc106a560": {
+      "changes": {
+        "reading": "みしまじんじゃ"
+      },
+      "expected_source_hash": "9b070b1872d96fa44e92a8309a3829ae43720fb692a24f8e4a103b4657d6e083",
+      "facility_id": "237a811f-6f8b-5928-926f-667b6ccfa590",
+      "identity_match": {
+        "agency_address": "高知県高岡郡檮原町下組325番地",
+        "agency_name": "三嶋神社",
+        "reference_address": "高知県梼原町下組325番地",
+        "reference_address_components": {
+          "住所": "下組325番地",
+          "市区町村名": "梼原町",
+          "都道府県名": "高知県"
+        },
+        "reference_name": "三嶋神社"
+      },
+      "identity_review": {
+        "checked_at": "2026-11-12T11:31:04.541378+00:00",
+        "independent_review": "独立担当が同hash実CSVの全文名・全文かな・全町域地番、町の条例2本文、個別CC BY4.0実hrefと機械連結の妥当性を照合して承認。",
+        "method": "literal_municipal_csv_columns_and_official_town_spelling",
+        "observation": "町の条例本文における檮原町・梼原町の同一自治体の表記を確認。神社の全文名・町域・全地番は個別行を照合し、別町域の同名社、異なる地番、神社名表記差、棟札や門杉の複合名称からの読み流用は採用しない。",
+        "peer_reviewed_at": "2026-11-12T11:33:28.277099+00:00"
+      },
+      "original": {
+        "address": "高知県高岡郡檮原町下組325番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=65",
+        "name_raw": "三嶋神社",
+        "reading_raw": ""
+      },
+      "reason": "梼原町のCC BY4.0文化財CSVの同じ行に原神社名そのものと独立した全文かな、明示された町域・全地番が対応。町名の二表記は町の公式条例本文で確認し、分割された住所欄は原値を保存して機械連結する。原表記・全所在地・施設IDと既存判断を保持して読みだけを補完。",
+      "references": [
+        {
+          "address_components": {
+            "住所": "下組325番地",
+            "市区町村名": "梼原町",
+            "都道府県名": "高知県"
+          },
+          "address_composition_notice": "原列3個を順に機械連結した比較用住所。連続して印字された住所として引用しない。原欄値と原登録の全住所を保持。",
+          "address_raw": "高知県梼原町下組325番地",
+          "attribution": "「文化財一覧」（梼原町、https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564、2026年11月12日利用、CC BY4.0）を編集・加工して作成。",
+          "checked_at": "2026-11-12T11:31:04.541378+00:00",
+          "csv_row": 31,
+          "cultural_property_class_raw": "町保護民俗文化財",
+          "encoding": "cp932",
+          "excerpt": "名称=三嶋神社 / 名称_カナ=ﾐｼﾏｼﾞﾝｼﾞｬ / 都道府県名=高知県 / 市区町村名=梼原町 / 住所=下組325番地",
+          "fetched_at": "2026-11-12T11:20:28.321397+00:00",
+          "license": "CC-BY-4.0",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:19:52.574155+00:00",
+              "page_hash": "89a131d3b14e458ca6aab670c3f7177aa2d2d20988cce65576dc95aa3871267c",
+              "url": "https://www.town.yusuhara.lg.jp/life/detail.php?hdnKey=564"
+            }
+          ],
+          "license_observation": "町公式記事の文化財一覧の実CSV行にCC BY4.0の実リンクを確認。条例は町名の対応だけに使い、神社の読みはCSVの独立全文かなに限定。",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+          "locator": "CP932 CSV row 31（ヘッダを1行目とする）: 名称・名称_カナ・都道府県名・市区町村名・住所",
+          "municipality_identity_evidence": [
+            {
+              "fetched_at": "2026-11-12T11:28:22.575039+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "504fa11fd0581108f829db4dbc60fa155d8f2f1e31bcb7401945ab602c284eb2",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町農村景観活用交流促進施設等の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000279.html"
+            },
+            {
+              "fetched_at": "2026-11-12T11:28:24.730086+00:00",
+              "observation": "同じ町の条例本文に檮原町と梼原町を使用。町名対応を比較に限って確認する文脈であり、神社の読みや地番を条例から補わない。",
+              "page_hash": "719f5b0699b53f58e2b631ef83947554cd786f0934a147cab86766fea0122fcc",
+              "source_kind": "municipal_ordinance",
+              "source_publisher": "梼原町",
+              "title": "檮原町移住定住雇用促進住宅の設置及び管理に関する条例",
+              "url": "https://www.town.yusuhara.lg.jp/reiki_int/reiki_honbun/o342RG00000464.html"
+            }
+          ],
+          "name_raw": "三嶋神社",
+          "page_hash": "32e2cefe8d6f72c4fad98af3ed7947bb1095787cac5e7b26aedbacc14ee1cdba",
+          "processed_notice": "全文かなをNFKC・ひらがな化して読みだけを補完。原神社名・全住所・施設ID・旧判断を保持。",
+          "reading_raw": "ﾐｼﾏｼﾞﾝｼﾞｬ",
+          "reading_scope": "full_name",
+          "source_kind": "municipal_open_data",
+          "source_publisher": "梼原町",
+          "title": "梼原町 文化財一覧",
+          "url": "https://www.town.yusuhara.lg.jp/file/opendata/394050_cultural_property.csv",
+          "verification_method": "individual_source_review: exact printed full shrine name, full kana and complete locality/parcel in literal municipal CSV columns"
         }
       ],
       "status": "verified"
