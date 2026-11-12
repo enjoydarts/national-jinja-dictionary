@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "715560e115aae626e288970f6ed87ece08b7a352fdafe0f20218821a98723476",
+    "corrections.json": "e6b9a79a9d5ef11b3ed59de000246b8f2969a4e317fccef0e45209e0b45d3e8d",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "a013294ba32fdf4cd13cb0b4476f2bed40bee8d2898700ced078d3363f4da07f",
@@ -18,29 +18,51 @@
     "baseline_entry_ids_sha256": "f1b347ff116ad3d6a47ed40879b429ad10b4e76e648fbb7764dd79ae7b518926",
     "baseline_unfinished_entries": 10868,
     "completion_criterion": "全対象登録について実資料の名称・全文読み・同一性を解決し、必要な根拠を検証済み正本へ反映する。資料不足・衝突・取得停止を理由に未確認のままverified又はexcludedへ変更せず、保留が残る間は全件解決済みとしない。",
+    "followup_history": [
+      {
+        "checked_at": "2026-11-12T01:50:31.487260+00:00",
+        "entry_ids": [
+          "00c05b82-5ae8-52d1-9fdb-c2f06b75c964",
+          "0fa69e95-0cf4-5f5a-b5c2-e711839bbff5",
+          "4340c91d-6de4-5c17-8995-74e9e5e241c6",
+          "74778d31-11e5-5afb-a5bd-0ef97558193e",
+          "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
+          "bd9d9932-4585-57de-8ecb-6c76b53d3a69",
+          "c5d5f9ee-2182-5450-a1ab-bc28963ab67f",
+          "eeff6f48-3d48-592c-9f40-624d8aaca440",
+          "fa68cee1-96d8-5013-a813-74e01f9eb859"
+        ],
+        "inspected_targets": 9,
+        "new_verified_entries": 0,
+        "retained_pending_entries": 9,
+        "scope": "岩手1・島根5・沖縄3の記録した個別資料。全国全件の追加調査完了を意味しない。"
+      }
+    ],
     "latest_followup": {
-      "checked_at": "2026-11-12T01:50:31.487260+00:00",
+      "checked_at": "2026-11-12T02:01:40.273476+00:00",
       "entry_ids": [
-        "00c05b82-5ae8-52d1-9fdb-c2f06b75c964",
-        "0fa69e95-0cf4-5f5a-b5c2-e711839bbff5",
-        "4340c91d-6de4-5c17-8995-74e9e5e241c6",
-        "74778d31-11e5-5afb-a5bd-0ef97558193e",
-        "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
-        "bd9d9932-4585-57de-8ecb-6c76b53d3a69",
-        "c5d5f9ee-2182-5450-a1ab-bc28963ab67f",
-        "eeff6f48-3d48-592c-9f40-624d8aaca440",
-        "fa68cee1-96d8-5013-a813-74e01f9eb859"
+        "2299b4dc-bf0d-5b17-8422-189cc68fcbb3",
+        "4bd90464-05aa-5140-8e6c-3549125ee7a6",
+        "5f4a1ab8-2188-5097-8318-61089ad7497f",
+        "75b8500b-f47d-5b8a-9a93-0dd3e9cc4b08",
+        "ac90678f-a6af-5964-a3d8-9ababc848e35",
+        "c629b496-6a54-5719-87ed-93e3134481ea",
+        "fad4694d-eed9-5c6d-81c5-08cd5ab703e1",
+        "fe21906f-1e8a-5475-99f6-394f132e5dd8"
       ],
-      "inspected_targets": 9,
-      "new_verified_entries": 0,
-      "retained_pending_entries": 9,
-      "scope": "岩手1・島根5・沖縄3の記録した個別資料。全国全件の追加調査完了を意味しない。"
+      "inspected_targets": 8,
+      "new_verified_entries": 1,
+      "retained_pending_entries": 7,
+      "scope": "東京1・福井4・三重1・愛媛1・鹿児島1の個別資料を追加照合。全国の保留解消は未完了。"
     },
-    "remaining_unfinished_entries": 10868,
+    "remaining_unfinished_entries": 10867,
+    "resolved_entry_ids": [
+      "fad4694d-eed9-5c6d-81c5-08cd5ab703e1"
+    ],
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-12T01:50:31.487260+00:00",
+  "computed_at": "2026-11-12T02:01:40.273476+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -156,9 +178,9 @@
       "categories": {
         "insufficient_evidence_in_inspected_sources": 0,
         "investigation_incomplete": 0,
-        "judgment_required": 1
+        "judgment_required": 0
       },
-      "unfinished_entries": 1
+      "unfinished_entries": 0
     },
     "14": {
       "categories": {
@@ -27599,53 +27621,6 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
-      "address": "東京都台東区寿4-9-1",
-      "agency_listing_url": "http://www.tokyo-jinjacho.or.jp/taito/3132",
-      "category": "judgment_required",
-      "entry_id": "fad4694d-eed9-5c6d-81c5-08cd5ab703e1",
-      "expected_source_hash": "8107d087d93c016551f1a23711626a8a2b4d854199af2cc679c913a20f81a959",
-      "facility_id": "e0efafb2-b069-5033-b7a2-5c10475f8022",
-      "listed_name": "本社 三島神社",
-      "nta_result": "not checked for current source snapshot",
-      "prefecture": "東京都",
-      "prefecture_code": "13",
-      "reading_raw": "ほんしゃ　みしまじんじゃ",
-      "reason": "reading must contain full-width hiragana only; no inferred repairs",
-      "source_assessment": {
-        "assessment_group": "name_reading_spaces_punctuation_or_annotation",
-        "checked_at": "2026-11-11T10:14:44.472519+00:00",
-        "disposition": "judgment_required",
-        "new_wikipedia_or_corporate_lookup": false,
-        "observations": [
-          "神社庁の掲載名称・かな・所在地を再点検。",
-          "読み欄の空白・中黒、又は名称の括弧注記の扱いが未解決。接尾辞を補って個別名を作らない。"
-        ],
-        "observed_fields": {
-          "address_raw": "東京都台東区寿4-9-1",
-          "name_raw": "本社 三島神社",
-          "reading_raw": "ほんしゃ　みしまじんじゃ"
-        },
-        "references": [
-          {
-            "checked_at": "2026-11-11T10:14:44.472519+00:00",
-            "fetched_at": "2026-11-08T14:30:09.061213+00:00",
-            "locator": ".s_in_tl01 + .s_in_rubi; .s_ad_box 所在地",
-            "page_hash": "62488c7264fbc6cdd96af41941a55fcf414239be257d5f009e08f298e31d0c20",
-            "request_method": "GET",
-            "source_kind": "agency",
-            "url": "http://www.tokyo-jinjacho.or.jp/taito/3132"
-          }
-        ],
-        "remaining_requirement": "掲載文字の区切りを読みへどう反映するかの根拠付き編集判断。",
-        "scope": "Named agency snapshot and explicitly recorded linked materials only. Earlier Wikipedia/corporate search outcomes remain separately dated. No exhaustive internet or current site-wide absence claim.",
-        "status": "bounded_source_review_completed"
-      },
-      "status": "unfinished",
-      "surface": "本社 三島神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
       "address": "逗子市  桜山7-8-27",
       "agency_listing_url": "https://www.kanagawa-jinja.or.jp/shrine/1205127-000/",
       "category": "insufficient_evidence_in_inspected_sources",
@@ -29674,6 +29649,25 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福井県越前市国中町５８－２７",
+          "authority_evidence": "本文COPYRIGHT FUKUI-SHRINE AGENCY。神社庁トップ本文に県内10支部・包括約1700社の説明。",
+          "checked_at": "2026-11-12T01:53:30.141661+00:00",
+          "expected_source_hash": "eafd7fd5845deaa9be173e72ac1a8a0038d085a1514502280bd5e97abd3b7ef8",
+          "locator": "神社名・鎮座地の表",
+          "name_raw": "国中神社",
+          "observation": "名称・全所在地一致、読み記載なし。",
+          "page_hash": "cdcea2827dda387937b87e5886b0031dd32bfb9776650f3cdd03afe019f3d76b",
+          "reading_raw": "",
+          "remaining_requirement": "同じ名称・全所在地の神社について一次資料に明示された全文読みが必要。",
+          "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
+          "source_kind": "agency",
+          "status": "inspected_not_adopted",
+          "title": "国中神社 | 福井県神社庁",
+          "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20160815_164650"
+        }
+      ],
       "address": "福井県越前市国中町５８－２７",
       "agency_listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
       "category": "judgment_required",
@@ -29692,6 +29686,25 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福井県大野市牛ヶ原７５－５６",
+          "authority_evidence": "本文COPYRIGHT FUKUI-SHRINE AGENCY。神社庁トップ本文に県内10支部・包括約1700社の説明。",
+          "checked_at": "2026-11-12T01:53:32.250590+00:00",
+          "expected_source_hash": "ae0d7f9a0434e31c6e7057edd0d9d8a73b4e8a8931a559b069e924be16d80d9e",
+          "locator": "神社名・鎮座地の表",
+          "name_raw": "坂門一言神社",
+          "observation": "名称・全所在地一致、読み記載なし。",
+          "page_hash": "f3aac2b39ebcfeef7ed2e62b05dd432c141444266d0904bdaf7fc2d4f1b0b9fe",
+          "reading_raw": "",
+          "remaining_requirement": "同じ名称・全所在地の神社について一次資料に明示された全文読みが必要。",
+          "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
+          "source_kind": "agency",
+          "status": "inspected_not_adopted",
+          "title": "坂門一言神社 | 福井県神社庁",
+          "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20161003_164519"
+        }
+      ],
       "address": "福井県大野市牛ヶ原７５－５６",
       "agency_listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
       "category": "judgment_required",
@@ -29710,6 +29723,25 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福井県越前市岡本町２１－１８",
+          "authority_evidence": "本文COPYRIGHT FUKUI-SHRINE AGENCY。神社庁トップ本文に県内10支部・包括約1700社の説明。",
+          "checked_at": "2026-11-12T01:53:34.366371+00:00",
+          "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
+          "locator": "神社名・鎮座地の表",
+          "name_raw": "岡太神社",
+          "observation": "名称・全所在地一致、読み記載なし。",
+          "page_hash": "617aafab6dd4390a49868ef1155a8d17583eb6d4053a17bd6483bf43fd02669c",
+          "reading_raw": "",
+          "remaining_requirement": "同じ名称・全所在地の神社について一次資料に明示された全文読みが必要。",
+          "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
+          "source_kind": "agency",
+          "status": "inspected_not_adopted",
+          "title": "岡太神社 | 福井県神社庁",
+          "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20160805_132958"
+        }
+      ],
       "address": "福井県越前市岡本町２１－１８",
       "agency_listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
       "category": "judgment_required",
@@ -29728,6 +29760,75 @@
       "wikipedia_result": "not_checked_for_current_record"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "福井県あわら市東山３９－４",
+          "authority_evidence": "本文COPYRIGHT FUKUI-SHRINE AGENCY。神社庁トップ本文に県内10支部・包括約1700社の説明。",
+          "checked_at": "2026-11-12T01:53:36.463836+00:00",
+          "expected_source_hash": "e05cda1d2bca8874a6a5ef4532d931f41d922fec8f50d6727a7eaf51a52ff569",
+          "locator": "神社名・鎮座地の表",
+          "name_raw": "神明神社",
+          "observation": "名称・全所在地一致、読み記載なし。",
+          "page_hash": "afd1338f323a10ec126ec3b1d243efa317c9e0898fe9ae4cdd0881b0b9ba18e9",
+          "reading_raw": "",
+          "remaining_requirement": "資料間の同定は東山区・神明神社・境内阿弥陀堂（市資料では白山神社併記）・全地番39−4で一致。現行correction_problemsにはgovernment別資料の読みと全住所を結合する仕様がないため、採用にはこの証拠構造を明示的に検証する必要がある。",
+          "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
+          "source_kind": "agency",
+          "status": "inspected_not_adopted",
+          "title": "神明神社 | 福井県神社庁",
+          "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20161212_144243"
+        },
+        {
+          "address_raw": "あわら市東山",
+          "authority_evidence": "冊子16頁下部に発行 あわら市議会、編集 あわら市議会広報編集特別委員会と明記。",
+          "checked_at": "2026-11-12T01:54:23.497630+00:00",
+          "expected_source_hash": "e05cda1d2bca8874a6a5ef4532d931f41d922fec8f50d6727a7eaf51a52ff569",
+          "locator": "PDF物理1頁右側＝冊子16頁「ふるさと探訪 東山の阿弥陀如来坐像」第1行、神明神社拝殿のルビ",
+          "name_raw": "神明神社",
+          "observation": "awara55-first.pngで神明神社に対応するルビしんめいじんじゃ、および拝殿に対応するはいでんを確認。印刷されたルビの単語区切りで、接尾語推定ではない。",
+          "page_hash": "7a6dabe00f53b3527e2c77727153e7f65e5b7903e11b0c1fcdbbe7b7139c079f",
+          "reading_raw": "しんめいじんじゃ",
+          "remaining_requirement": "資料間の同定は東山区・神明神社・境内阿弥陀堂（市資料では白山神社併記）・全地番39−4で一致。現行correction_problemsにはgovernment別資料の読みと全住所を結合する仕様がないため、採用にはこの証拠構造を明示的に検証する必要がある。",
+          "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
+          "source_kind": "government",
+          "status": "inspected_not_adopted",
+          "title": "あわら市議会だより 第55号（平成30年1月15日発行）16頁",
+          "url": "https://www.city.awara.lg.jp/gikai/gikaidayori/gikaidayori55_d/fil/001.pdf",
+          "visual_inspection": "市議会だより55号物理1頁右側の冊子16頁で、神明神社拝殿の直上に印刷されたルビと本文の東山を確認。参照間の住所結合は未採用。"
+        },
+        {
+          "address_raw": "東山39－4",
+          "authority_evidence": "あわら市公式文化財保護委員会資料。",
+          "checked_at": "2026-11-12T01:55:19.963155+00:00",
+          "expected_source_hash": "e05cda1d2bca8874a6a5ef4532d931f41d922fec8f50d6727a7eaf51a52ff569",
+          "locator": "PDF4頁 表62行",
+          "name_raw": "神明神社",
+          "observation": "awara-identity-fourth.pngで表62行の名称・境内社・全番地を確認。",
+          "page_hash": "01d5f0cb2cf3f3964f4b5d1a01de7c9f074b82c49c95db2f2bfedaac9b522083",
+          "remaining_requirement": "資料間の同定は東山区・神明神社・境内阿弥陀堂（市資料では白山神社併記）・全地番39−4で一致。現行correction_problemsにはgovernment別資料の読みと全住所を結合する仕様がないため、採用にはこの証拠構造を明示的に検証する必要がある。",
+          "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
+          "source_kind": "government",
+          "status": "inspected_not_adopted",
+          "title": "平成26年度第3回あわら市文化財保護委員会資料",
+          "url": "https://www.city.awara.lg.jp/mokuteki/cityinfo/gyouseiiinkai/p001234_d/fil/012.pdf",
+          "visual_inspection": "市議会だより55号物理1頁右側の冊子16頁で、神明神社拝殿の直上に印刷されたルビと本文の東山を確認。参照間の住所結合は未採用。"
+        },
+        {
+          "address_raw": "福井県あわら市東山39字4番",
+          "candidate_reading": "しんめいじんじゃ",
+          "candidate_status": "needs_review",
+          "checked_at": "2026-11-12T01:57:02.414310+00:00",
+          "expected_source_hash": "e05cda1d2bca8874a6a5ef4532d931f41d922fec8f50d6727a7eaf51a52ff569",
+          "name_raw": "神明神社",
+          "observation": "全文ルビなし。PDFの読みと住所を同一参照に捏造して結合しない。",
+          "remaining_requirement": "資料間の同定は東山区・神明神社・境内阿弥陀堂（市資料では白山神社併記）・全地番39−4で一致。現行correction_problemsにはgovernment別資料の読みと全住所を結合する仕様がないため、採用にはこの証拠構造を明示的に検証する必要がある。",
+          "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
+          "source_kind": "government",
+          "status": "inspected_not_adopted",
+          "title": "阿弥陀如来坐像 | あわら市郷土歴史資料館",
+          "url": "https://www.city.awara.lg.jp/mokuteki/education/kyoudo/kyoudorekishishiryo/awarashinobunkazai/sisitei/tyoukoku/p006136.html"
+        }
+      ],
       "address": "福井県あわら市東山３９－４",
       "agency_listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
       "category": "judgment_required",
@@ -92136,6 +92237,63 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "桑名市大字堤原 72",
+          "authority_evidence": "本文タイトルとCopyrightが三重県神社庁教化委員会、神社コード4201056を掲載。",
+          "checked_at": "2026-11-12T01:55:00.919974+00:00",
+          "expected_source_hash": "c0cd3fe6edcacb63025f35e8ecc9ff7c0563e747a48f912e0ca6b86ee963803f",
+          "fetched_at": "2026-11-12T01:53:16.176654+00:00",
+          "locator": "div.shrine_detail h2; span.furigana; 由緒; table.table_03",
+          "name_raw": "北桑名総社北桑名神社",
+          "observation": "由緒が単一の改称名を明示している。二つの独立した正式名へ分割する根拠ではない。読みは中黒付き。",
+          "page_hash": "b3e432bbe707e3200f2b43c21c3158e73a57ae20ac82b53889c8d816c772efbc",
+          "reading_raw": "きたくわなそうしゃ・きたくわなじんじゃ",
+          "remaining_requirement": "取得表記を保持した無区切りの全文読みを実資料で確認する。; 中黒は空白正規化と異なるため削除しない。; 公式由緒と県の法人名欄は単一の複合名を示すため、独立名二件への分割や片方だけの採用は行わない。",
+          "result": "由緒が単一の改称名を明示している。二つの独立した正式名へ分割する根拠ではない。読みは中黒付き。",
+          "scope": "この資料の原文と同一掲載名・所在地に限定。名称の分割や中黒の削除はまだ適用しない。",
+          "source_kind": "official_agency",
+          "status": "inspected_composite_name_reading_pending",
+          "title": "北桑名総社北桑名神社 | 三重県神社庁教化委員会",
+          "url": "https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8c%97%e6%a1%91%e5%90%8d%e7%b7%8f%e7%a4%be%e5%8c%97%e6%a1%91%e5%90%8d%e7%a5%9e%e7%a4%be/"
+        },
+        {
+          "address_raw": "桑名市堤原72番地",
+          "authority_evidence": "表紙「三重県環境生活部 文化振興課」、凡例「この名簿は、三重県下の宗教法人を令和8年5月1日現在で収録した。」",
+          "checked_at": "2026-11-12T01:55:00.919974+00:00",
+          "expected_source_hash": "c0cd3fe6edcacb63025f35e8ecc9ff7c0563e747a48f912e0ca6b86ee963803f",
+          "fetched_at": "2026-11-12T01:53:38.843302+00:00",
+          "locator": "PDF 56ページ（印刷53ページ）桑名市92番。代表役員列は抜粋対象外。",
+          "name_raw": "北桑名総社 北桑名神社",
+          "observation": "実PDF本文に一つの法人名欄として複合名を掲載。全文かな読みはない。",
+          "page_hash": "3807c96fd1480bc36e508b1e5102d9c6cfa1749c34ba7321cdeb155747e71830",
+          "remaining_requirement": "取得表記を保持した無区切りの全文読みを実資料で確認する。; 中黒は空白正規化と異なるため削除しない。; 公式由緒と県の法人名欄は単一の複合名を示すため、独立名二件への分割や片方だけの採用は行わない。",
+          "result": "実PDF本文に一つの法人名欄として複合名を掲載。全文かな読みはない。",
+          "scope": "この資料の原文と同一掲載名・所在地に限定。名称の分割や中黒の削除はまだ適用しない。",
+          "source_kind": "government_publication",
+          "status": "inspected_composite_name_reading_pending",
+          "title": "三重県宗教法人名簿（令和8年5月1日現在）",
+          "url": "https://www.pref.mie.lg.jp/common/content/001217775.pdf"
+        },
+        {
+          "address_raw": "三重県桑名市堤原72",
+          "checked_at": "2026-11-12T01:55:00.919974+00:00",
+          "expected_source_hash": "c0cd3fe6edcacb63025f35e8ecc9ff7c0563e747a48f912e0ca6b86ee963803f",
+          "fetched_at": "2026-11-12T01:53:41.049388+00:00",
+          "locator": "h1 ruby.mtitle-sou-jinja rb/rt; ruby.mtitle-name rb/rt; 鎮座地",
+          "name_raw": "北桑名總社北桑名神社",
+          "observation": "非公式資料。稱号と名称が別ruby。總社のソジャは神社庁そうしゃと異なる。rubyをつないで神社庁の読みを上書きしない。",
+          "page_hash": "31f957f5d06c21f2b140742b4b6fc64a7a56eed3c9a4008ff54945e94263ff67",
+          "reading_raw": "キタクワナソジャ / キタクワナジンジャ",
+          "remaining_requirement": "取得表記を保持した無区切りの全文読みを実資料で確認する。; 中黒は空白正規化と異なるため削除しない。; 公式由緒と県の法人名欄は単一の複合名を示すため、独立名二件への分割や片方だけの採用は行わない。",
+          "result": "非公式資料。稱号と名称が別ruby。總社のソジャは神社庁そうしゃと異なる。rubyをつないで神社庁の読みを上書きしない。",
+          "scope": "この資料の原文と同一掲載名・所在地に限定。名称の分割や中黒の削除はまだ適用しない。",
+          "source_kind": "article",
+          "status": "inspected_composite_name_reading_pending",
+          "title": "北桑名總社北桑名神社 | 八百万の神",
+          "url": "https://yaokami.jp/1240335/"
+        }
+      ],
       "address": "桑名市大字堤原 72",
       "agency_listing_url": "https://kyoka.mie-jinjacho.or.jp/shrine/%e5%8c%97%e6%a1%91%e5%90%8d%e7%b7%8f%e7%a4%be%e5%8c%97%e6%a1%91%e5%90%8d%e7%a5%9e%e7%a4%be/",
       "category": "judgment_required",
@@ -154933,6 +155091,22 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "access_observation": "通常のnjd.http.Clientのrobots確認を伴う取得は200。webツールではJavaScript認証画面を表示。認証の解除やUser-Agent偽装は行わない。",
+          "checked_at": "2026-11-12T02:01:40.273476+00:00",
+          "expected_source_hash": "b7cb5f88e594fd22838e83e0e3165b15a5ad24d34505083e015601150066bb41",
+          "fetched_at": "2026-11-12T01:53:38.783379+00:00",
+          "observation": "公開ページを確認したが、利用規約に投稿および神社・寺院情報の転載禁止が明記されているため、読み補正の出典に採用しない。投稿本文・新しい読み・住所の抜粋は正本に保存しない。",
+          "page_hash": "0eb3f99d38977654bccdb7be393888c0c14dc714a32c5d23932dd42167c776a6",
+          "remaining_requirement": "再利用条件を満たす神社庁・施設公式・行政等の別資料で全文読みを確認する。",
+          "source_kind": "restricted_reference",
+          "status": "terms_restricted_not_adopted",
+          "terms_locator": "10.6; 13.2",
+          "terms_url": "https://policies.hotokami.jp/rules",
+          "url": "https://hotokami.jp/area/ehime/Hrztm/Hrztmtr/Datas/132333/"
+        }
+      ],
       "address": "新居浜市萩生1163",
       "agency_listing_url": "https://ehime-jinjacho.jp/jinja/?p=474",
       "category": "judgment_required",
@@ -230661,6 +230835,24 @@
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
+      "additional_source_reviews": [
+        {
+          "address_raw": "肝属郡錦江町田代川原919",
+          "checked_at": "2026-11-12T02:01:40.273476+00:00",
+          "expected_source_hash": "03ed616cf3697bdcb4994288e927451a3d3fdb5b79daeb1a1346ef112631a5bc",
+          "fetched_at": "2026-11-12T01:59:12.978064+00:00",
+          "locator": "神社名; 神社名カナ; 鎮座地",
+          "name_raw": "二本神社",
+          "observation": "詳細ページの明示カナも一覧と同じニホンジジャ。名称・全所在地は一致するが、既存の誤記疑義を解決する独立した追加根拠にはならない。ンや語尾を推測で追加しない。",
+          "page_hash": "21d7fa3fc1af4c1ed409ac9ac37ccf81ae35e8c8b520e4eb1aebf20bacd0fa96",
+          "reading_raw": "ニホンジジャ",
+          "remaining_requirement": "対象施設の独立した実資料の全文読み、又はこの明示読みの位置づけを確定できる根拠。",
+          "source_kind": "official_agency",
+          "status": "inspected_unresolved_literal_designation",
+          "title": "二本神社 | 鹿児島県神社庁",
+          "url": "https://www.kagojinjacho.or.jp/shrine-search/area-oosumi/%e9%8c%a6%e6%b1%9f%e7%94%ba/995/"
+        }
+      ],
       "address": "肝属郡錦江町田代川原919",
       "agency_listing_url": "https://www.kagojinjacho.or.jp/category/shrine-search/area-oosumi/page/14/",
       "category": "judgment_required",
@@ -230929,7 +231121,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10868,
+    "retained_unresolved_entries": 10867,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -234033,9 +234225,9 @@
     "categories": {
       "insufficient_evidence_in_inspected_sources": 10648,
       "investigation_incomplete": 0,
-      "judgment_required": 220
+      "judgment_required": 219
     },
-    "distinct_surfaces": 4399,
-    "unfinished_entries": 10868
+    "distinct_surfaces": 4398,
+    "unfinished_entries": 10867
   }
 }
