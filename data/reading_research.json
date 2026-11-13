@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "49dcaf4b3abb2addfd00eb2971d32a234fa73f63579b90b8cd47b2582591a5c1",
+    "corrections.json": "f781a8781c517645e5be34777babbd97cb99f69593a8ff7f97d56b2c7c45cd18",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -26498,15 +26498,26 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 110,
         "scope": "四十二社巡り4経路の42詳細と現在の壱岐市110保留登録の限定比較。42社を市内全神社とはしない。"
+      },
+      {
+        "checked_at": "2026-11-13T14:16:00.044618+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10317,
+        "scope": "青森の神社庁支部冊子リードの入口HTTP503を記録。発行主体/利用条件/冊子本文未確認のまま検索結果の読みを採用せず、全資料の調査完了とはしない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:16:00.044618+00:00",
-      "new_verified_entries": 0,
-      "retained_pending_entries": 10317,
-      "scope": "青森の神社庁支部冊子リードの入口HTTP503を記録。発行主体/利用条件/冊子本文未確認のまま検索結果の読みを採用せず、全資料の調査完了とはしない。"
+      "checked_at": "2026-11-13T14:23:26.604183+00:00",
+      "entry_ids": [
+        "a7f620e4-5192-51d7-86de-b260d7d0da54"
+      ],
+      "evidence_attempt": "goto_tsumoriko_tourism_profile_full_reading_original_address_20261113",
+      "inspected_targets": 1,
+      "new_verified_entries": 1,
+      "retained_pending_entries": 10316,
+      "scope": "頭子神社の県観光連盟1詳細から全文かなと原全所在地を個別確認。地域全件の解決ではない。"
     },
-    "remaining_unfinished_entries": 10317,
+    "remaining_unfinished_entries": 10316,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -26892,6 +26903,7 @@
       "a6816b04-7881-58ee-8344-addfcd374043",
       "a7281537-315b-5f92-9884-9c599fb814a4",
       "a782c513-3793-5412-9ae5-7eb03f491cc5",
+      "a7f620e4-5192-51d7-86de-b260d7d0da54",
       "a7f7ce17-0a81-5dc6-acd9-5f1a2b3d74f4",
       "a829d29c-4b0a-56ca-87ba-66ba1f0e5952",
       "a83a8cf4-1e52-50f2-bc5c-25830c7ea124",
@@ -27063,7 +27075,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:16:00.044618+00:00",
+  "computed_at": "2026-11-13T14:23:26.604183+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -403682,6 +403694,182 @@
         "page_hash": "de684f534f4121a6b26fda09f446213b6e3df5feef22aee1004978a5faac3705",
         "url": "https://www.ikikankou.com/site"
       }
+    },
+    {
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T08:52:07.538142+00:00",
+              "evidence_attempt": "nagasaki_all_pending_monthly_and_seven_deltas_20261112",
+              "expected_source_hash": "9ffb8389267fdd6d6d405763488281475251b405ebf2c642e5e2620a39428c1f",
+              "matched_active_corporate_numbers": [
+                "5310005003739"
+              ],
+              "observation": "県内月次全42833行と11月11日までの7営業日差分を法人番号で照合。名称・原全数字住所の同定と全文フリガナの有無を別々に判定し、空欄・途中読み・画像未確認から読みを推定しない。原所在地・原表記・施設IDと既存判断を保持。",
+              "observed_registered_fields": {
+                "addressImageId": "",
+                "cityName": "南松浦郡新上五島町",
+                "closeDate": "",
+                "corporateNumber": "5310005003739",
+                "furigana": "",
+                "hihyoji": "0",
+                "latest": "1",
+                "name": "頭子神社",
+                "nameImageId": "",
+                "prefectureName": "長崎県",
+                "process": "01",
+                "streetNumber": "有福郷１番地"
+              },
+              "previous_nta_summary": "registered furigana absent",
+              "reference": {
+                "csv_row": 23302,
+                "fetched_at": "2026-11-12T04:41:58.710068+00:00",
+                "file_id": "28487",
+                "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                "zip_member": "42_nagasaki_all_20261030.csv"
+              },
+              "source_kind": "government_corporate_register",
+              "source_publisher": "国税庁",
+              "status": "registered_full_furigana_absent"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:24:57.719339+00:00",
+              "evidence_attempt": "nagasaki_twentyone_municipality_inventory_fourteen_bounded_open_tables_20261113",
+              "expected_source_hash": "9ffb8389267fdd6d6d405763488281475251b405ebf2c642e5e2620a39428c1f",
+              "observation": "選定した公開表の名称・専用読み欄・所在地を限定照合。同名別施設、建造物・社叢・祭礼・交通施設の名称やかなを神社名へ切り出さず、未記載の字名・地番・語尾を補作しない。市町内全神社・全公開資料の調査完了ではない。",
+              "observations": [],
+              "original_fields": {
+                "address_raw": "南松浦郡新上五島町有福郷1番地",
+                "name_raw": "頭子神社",
+                "reading_raw": "",
+                "surface": "頭子神社"
+              },
+              "reference_urls": [
+                "https://data.bodik.jp/dataset/d1ceba0d-3e5f-4eea-85c6-0f5dcd28a4f4/resource/f3b7b28e-caca-4744-897d-c6a822838216/download/aed_kamigoto.csv",
+                "https://data.bodik.jp/dataset/40a77298-0cc3-4c7b-9223-c50bc7d20ea7/resource/5ecb6ef9-a5cb-4380-a542-301f0334e1f8/download/424111_evacuation_space.csv",
+                "https://data.bodik.jp/dataset/910f459d-ade4-406d-a02c-dabda634cced/resource/ce856f46-1b1e-4f19-b288-6045e1a5056d/download/424111_public_facility.csv",
+                "https://data.bodik.jp/dataset/da31edb4-2b76-4cca-b78c-a99b6f2c308f/resource/d67323a3-18dd-4480-a600-ceb08c2c0b6f/download/kankoushisetsu.csv",
+                "https://data.bodik.jp/dataset/eae21b5a-331e-45e8-9c60-daa396c310c9/resource/48591205-791b-4df8-a29d-b9bf546d60aa/download/hinanzyo.csv",
+                "https://data.bodik.jp/dataset/b88266dd-45ed-4f19-b77d-9457683fcb1c/resource/7a74faf8-5457-4a0f-99c4-455f850f8658/download"
+              ],
+              "source_kind": "municipal_open_data",
+              "source_publisher": "長崎県内21市町の公式案内・BODIK専用サイト",
+              "status": "bounded_public_tables_inspected_no_adoption"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T14:23:26.604183+00:00",
+              "evidence_attempt": "goto_tsumoriko_tourism_profile_full_reading_original_address_20261113",
+              "expected_source_hash": "9ffb8389267fdd6d6d405763488281475251b405ebf2c642e5e2620a39428c1f",
+              "observation": "原名・原空かな・原全住所・ID/hash・旧判断を保持し、全文読みだけ補完。",
+              "reference": {
+                "address_field_raw": "〒853-2313　長崎県南松浦郡新上五島町有福郷1",
+                "address_raw": "長崎県南松浦郡新上五島町有福郷1",
+                "bytes": 206319,
+                "checked_at": "2026-11-13T14:23:26.604183+00:00",
+                "excerpt": "頭子神社【有福島】（つもりこじんじゃ） / 〒853-2313　長崎県南松浦郡新上五島町有福郷1",
+                "fetched_at": "2026-11-13T14:21:22.645281+00:00",
+                "identity_observation": "h1の【有福島】は地域識別表示として原文保持。社名と独立した全文かなを照合し、同じ詳細の有福郷1が原全所在地に対応。由緒本文にも頭子神社という社名が明記される。",
+                "locator": "h1.o-heading-low-type4と子span.u-font-size17 / 基本情報の住所行",
+                "name_raw": "頭子神社",
+                "operator_reference": {
+                  "bytes": 146406,
+                  "fetched_at": "2026-11-13T14:21:27.011428+00:00",
+                  "page_hash": "f393c1879354ffb0542a480ad8c5e71518b563f1b7edd335757f1e8bba527eea",
+                  "url": "https://www.nagasaki-tabinet.com/feature/organization_nagasaki"
+                },
+                "page_hash": "6638dae33a161e6223ff6442ea2048c9a04555d41e095a1c7bbe0230fe1bf882",
+                "reading_raw": "つもりこじんじゃ",
+                "reading_scope": "full_name",
+                "rights_scope": "法令上認められる場合を除く無許可転載等の制限を確認。包括再利用許諾とは扱わず、名称・全文かな・所在地・出典位置の最小事実のみ記録。沿革全文・HTML・画像・地図・連絡先・個人情報は収録しない。",
+                "source_heading_raw": "頭子神社【有福島】",
+                "source_kind": "tourism_association",
+                "source_publisher": "長崎県観光振興課・一般社団法人長崎県観光連盟",
+                "source_reading_field_raw": "（つもりこじんじゃ）",
+                "terms_reference": {
+                  "bytes": 133042,
+                  "fetched_at": "2026-11-13T14:21:24.826766+00:00",
+                  "page_hash": "9a21c4ae628c1c9c970331f7e10a40b96ce73edcfe03d6d66e4d9d0f8ba4f295",
+                  "url": "https://www.nagasaki-tabinet.com/site"
+                },
+                "title": "頭子神社【有福島】 | ながさき旅ネット",
+                "url": "https://www.nagasaki-tabinet.com/guide/100452"
+              },
+              "status": "individual_full_name_kana_original_full_address_adopted"
+            }
+          ],
+          "address": "南松浦郡新上五島町有福郷1番地",
+          "agency_listing_url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "a7f620e4-5192-51d7-86de-b260d7d0da54",
+          "expected_source_hash": "9ffb8389267fdd6d6d405763488281475251b405ebf2c642e5e2620a39428c1f",
+          "facility_id": "51e9ba14-a92c-511d-adcc-d1ab4c8c5505",
+          "listed_name": "頭子神社",
+          "nta_result": "registered_full_furigana_absent",
+          "prefecture": "長崎県",
+          "prefecture_code": "42",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "頭子神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "goto_tsumoriko_tourism_profile_full_reading_original_address_20261113",
+      "bounded_discovery": {
+        "index_reference": {
+          "fetched_at": "2026-11-13T14:19:39.082839+00:00",
+          "page_hash": "c04259402c87da3261303a3812d8efac48442fab42631a443ec3c50a9c33e63a",
+          "url": "https://shinkamigoto.nagasaki-tabinet.com/spot"
+        },
+        "index_url": "https://shinkamigoto.nagasaki-tabinet.com/spot",
+        "observation": "実フォームの神社仏閣カテゴリ検索がrobots拒否のため停止。ページ送り・別経路による同一覧の代替取得はしない。県サイトの個別紹介は別途検索で発見した元URLで、拒否一覧の代替再現を行わない。",
+        "retrieved_filtered_index_records": 0,
+        "stop_reason": "robots disallows",
+        "stopped_url": "https://shinkamigoto.nagasaki-tabinet.com/spot?rtc%5B%5D=10"
+      },
+      "checked_at": "2026-11-13T14:23:26.604183+00:00",
+      "inspected_targets": 1,
+      "manual_resolved_entry_ids": [
+        "a7f620e4-5192-51d7-86de-b260d7d0da54"
+      ],
+      "new_verified_entries": 1,
+      "preservation": "原正本/原名/原空かな/全所在地/全ID/hash・旧補正/調査履歴を保存。取得本文/画像/キャッシュ/個人情報はリポジトリ外。",
+      "reading_observation": "独立全文かなはつもりこじんじゃ、所在地は南松浦郡新上五島町有福郷1。原登録の同郷1番地と対応。地域修飾【有福島】を保持し、他集落の旧七頭子社へ読みを移さない。",
+      "resources": {
+        "prefecture-organization": {
+          "bytes": 146406,
+          "fetched_at": "2026-11-13T14:21:27.011428+00:00",
+          "page_hash": "f393c1879354ffb0542a480ad8c5e71518b563f1b7edd335757f1e8bba527eea",
+          "url": "https://www.nagasaki-tabinet.com/feature/organization_nagasaki"
+        },
+        "prefecture-terms": {
+          "bytes": 133042,
+          "fetched_at": "2026-11-13T14:21:24.826766+00:00",
+          "page_hash": "9a21c4ae628c1c9c970331f7e10a40b96ce73edcfe03d6d66e4d9d0f8ba4f295",
+          "url": "https://www.nagasaki-tabinet.com/site"
+        },
+        "tsumoriko": {
+          "bytes": 206319,
+          "fetched_at": "2026-11-13T14:21:22.645281+00:00",
+          "page_hash": "6638dae33a161e6223ff6442ea2048c9a04555d41e095a1c7bbe0230fe1bf882",
+          "url": "https://www.nagasaki-tabinet.com/guide/100452"
+        }
+      },
+      "scope": "県観光連盟の頭子神社【有福島】1詳細だけを原登録へ個別照合。五島地域94保留登録や新上五島町57社全件の読み確認ではない。"
     }
   ],
   "per_prefecture": {
@@ -404015,11 +404203,11 @@
     },
     "42": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 945,
+        "insufficient_evidence_in_inspected_sources": 944,
         "investigation_incomplete": 0,
         "judgment_required": 8
       },
-      "unfinished_entries": 953
+      "unfinished_entries": 952
     },
     "43": {
       "categories": {
@@ -1274987,95 +1275175,6 @@
           "adopted": false,
           "checked_at": "2026-11-12T08:52:07.538142+00:00",
           "evidence_attempt": "nagasaki_all_pending_monthly_and_seven_deltas_20261112",
-          "expected_source_hash": "9ffb8389267fdd6d6d405763488281475251b405ebf2c642e5e2620a39428c1f",
-          "matched_active_corporate_numbers": [
-            "5310005003739"
-          ],
-          "observation": "県内月次全42833行と11月11日までの7営業日差分を法人番号で照合。名称・原全数字住所の同定と全文フリガナの有無を別々に判定し、空欄・途中読み・画像未確認から読みを推定しない。原所在地・原表記・施設IDと既存判断を保持。",
-          "observed_registered_fields": {
-            "addressImageId": "",
-            "cityName": "南松浦郡新上五島町",
-            "closeDate": "",
-            "corporateNumber": "5310005003739",
-            "furigana": "",
-            "hihyoji": "0",
-            "latest": "1",
-            "name": "頭子神社",
-            "nameImageId": "",
-            "prefectureName": "長崎県",
-            "process": "01",
-            "streetNumber": "有福郷１番地"
-          },
-          "previous_nta_summary": "registered furigana absent",
-          "reference": {
-            "csv_row": 23302,
-            "fetched_at": "2026-11-12T04:41:58.710068+00:00",
-            "file_id": "28487",
-            "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
-            "snapshot": "20261030",
-            "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
-            "zip_member": "42_nagasaki_all_20261030.csv"
-          },
-          "source_kind": "government_corporate_register",
-          "source_publisher": "国税庁",
-          "status": "registered_full_furigana_absent"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:24:57.719339+00:00",
-          "evidence_attempt": "nagasaki_twentyone_municipality_inventory_fourteen_bounded_open_tables_20261113",
-          "expected_source_hash": "9ffb8389267fdd6d6d405763488281475251b405ebf2c642e5e2620a39428c1f",
-          "observation": "選定した公開表の名称・専用読み欄・所在地を限定照合。同名別施設、建造物・社叢・祭礼・交通施設の名称やかなを神社名へ切り出さず、未記載の字名・地番・語尾を補作しない。市町内全神社・全公開資料の調査完了ではない。",
-          "observations": [],
-          "original_fields": {
-            "address_raw": "南松浦郡新上五島町有福郷1番地",
-            "name_raw": "頭子神社",
-            "reading_raw": "",
-            "surface": "頭子神社"
-          },
-          "reference_urls": [
-            "https://data.bodik.jp/dataset/d1ceba0d-3e5f-4eea-85c6-0f5dcd28a4f4/resource/f3b7b28e-caca-4744-897d-c6a822838216/download/aed_kamigoto.csv",
-            "https://data.bodik.jp/dataset/40a77298-0cc3-4c7b-9223-c50bc7d20ea7/resource/5ecb6ef9-a5cb-4380-a542-301f0334e1f8/download/424111_evacuation_space.csv",
-            "https://data.bodik.jp/dataset/910f459d-ade4-406d-a02c-dabda634cced/resource/ce856f46-1b1e-4f19-b288-6045e1a5056d/download/424111_public_facility.csv",
-            "https://data.bodik.jp/dataset/da31edb4-2b76-4cca-b78c-a99b6f2c308f/resource/d67323a3-18dd-4480-a600-ceb08c2c0b6f/download/kankoushisetsu.csv",
-            "https://data.bodik.jp/dataset/eae21b5a-331e-45e8-9c60-daa396c310c9/resource/48591205-791b-4df8-a29d-b9bf546d60aa/download/hinanzyo.csv",
-            "https://data.bodik.jp/dataset/b88266dd-45ed-4f19-b77d-9457683fcb1c/resource/7a74faf8-5457-4a0f-99c4-455f850f8658/download"
-          ],
-          "source_kind": "municipal_open_data",
-          "source_publisher": "長崎県内21市町の公式案内・BODIK専用サイト",
-          "status": "bounded_public_tables_inspected_no_adoption"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "南松浦郡新上五島町有福郷1番地",
-      "agency_listing_url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "a7f620e4-5192-51d7-86de-b260d7d0da54",
-      "expected_source_hash": "9ffb8389267fdd6d6d405763488281475251b405ebf2c642e5e2620a39428c1f",
-      "facility_id": "51e9ba14-a92c-511d-adcc-d1ab4c8c5505",
-      "listed_name": "頭子神社",
-      "nta_result": "registered_full_furigana_absent",
-      "prefecture": "長崎県",
-      "prefecture_code": "42",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "頭子神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T08:52:07.538142+00:00",
-          "evidence_attempt": "nagasaki_all_pending_monthly_and_seven_deltas_20261112",
           "expected_source_hash": "b7307ae90e1c0fbdd5c3ec9ab93b07040ce992d942a600ff13859eeb9f6ac9ca",
           "matched_active_corporate_numbers": [
             "9310005006639"
@@ -1369255,7 +1369354,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10317,
+    "retained_unresolved_entries": 10316,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1372357,11 +1372456,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10121,
+      "insufficient_evidence_in_inspected_sources": 10120,
       "investigation_incomplete": 0,
       "judgment_required": 196
     },
-    "distinct_surfaces": 4144,
-    "unfinished_entries": 10317
+    "distinct_surfaces": 4143,
+    "unfinished_entries": 10316
   }
 }
