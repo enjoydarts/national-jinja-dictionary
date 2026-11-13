@@ -26546,15 +26546,21 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10311,
         "scope": "蚊里田八幡宮は自己紹介の全文かなを確認したが原町域差と規約本文robots拒否により保留。雁田水穂神社の建築紹介候補は使用条件で停止。"
+      },
+      {
+        "checked_at": "2026-11-13T14:51:39.257772+00:00",
+        "evidence_attempt": "hokkaido_style_operator_copyright_policy_article_acquisition_stop_20261113",
+        "inspected_targets": 0,
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10311,
+        "scope": "北海道Styleの入口・利用条件・運営者説明3HTMLだけの資料評価。北海道413保留の各施設の読み本文確認やサイト全記事の調査ではない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:51:39.257772+00:00",
-      "evidence_attempt": "hokkaido_style_operator_copyright_policy_article_acquisition_stop_20261113",
-      "inspected_targets": 0,
+      "checked_at": "2026-11-13T14:52:53.155242+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10311,
-      "scope": "北海道Styleの入口・利用条件・運営者説明3HTMLだけの資料評価。北海道413保留の各施設の読み本文確認やサイト全記事の調査ではない。"
+      "scope": "荒穂神社の町祭礼紹介は社名全文かな/原全所在地なし。妻山神社の関連リンク先は初期HTMLに表題のみ、JS実行や全サイトの点検はしていない。両件保留。"
     },
     "remaining_unfinished_entries": 10311,
     "resolved_entry_ids": [
@@ -27119,7 +27125,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:51:39.257772+00:00",
+  "computed_at": "2026-11-13T14:52:53.155242+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -405017,6 +405023,86 @@
       "scope": "長野県保留2施設の追加資料候補だけを点検。蚊里田八幡宮は全文かながあっても原町域と不一致、プライバシー本文はrobots拒否。おみやさんcomは利用条件で停止し個別記事未取得。2施設とも採用0。",
       "screened_pending_entries": 2,
       "status": "own_site_locality_mismatch_and_policy_robots_stop_independent_source_terms_stop"
+    },
+    {
+      "acquisition": "Client interval=2、timeout=20、retries=0、robots適用。町入口・privacy・実祭礼URLと妻山の実リンク先初期HTMLだけを取得。JS実行や追加API/画像取得はしない。",
+      "attempt_id": "saga_kiyama_festival_and_tsumayama_linked_home_no_independent_reading_20261113",
+      "candidates": [
+        {
+          "entry_id": "4aab6520-b007-50e4-add8-ffe6ac81efd6",
+          "observation": "町公式の御神幸祭（みゆきまつり）本文を取得。荒穂神社という会場/伝統芸能の主催地を明示するが、社名の独立全文かな、原全所在地の宮浦2050の対応はない。みゆきまつりは祭礼の読みであり神社の読みへ流用しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:51:21.930491+00:00",
+            "page_hash": "26734282e69bdea7ccd6eb22cce494477adf7790a976f4ec39d8dbe4ad31143c",
+            "title": [
+              "御神幸祭（みゆきまつり） / 観光・物産情報TOP / 基山町"
+            ],
+            "url": "https://www.town.kiyama.lg.jp/kankou/kiji003655/"
+          },
+          "status": "municipal_festival_body_no_independent_shrine_full_reading"
+        },
+        {
+          "discovery_reference": {
+            "body_check_method": "web.open",
+            "locator": "関連リンク 妻山神社 の実href",
+            "url": "https://www.omiyakids.com/jinja-ph/2023/2023-02.html"
+          },
+          "entry_id": "19e6e64e-9f7f-51ea-a169-51d464299a3a",
+          "observation": "お宮キッズの関連実リンク先の通常取得HTMLはtitleの妻山神社のみが抽出され、制作サービスへのバナーリンクのみ。初期HTMLに読み・所在地・規約本文がなく採用0。公開スクリプト要素を確認したがJavaScript実行・追加アセット/API取得・画像文字確認はしていない。施設の公式性/全サイトの情報不存在/利用条件確認済みとは認定しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:50:52.277983+00:00",
+            "page_hash": "d124f9def7280f9842650f9b3cef519f7ab17b92d511b7cf23f6784aea47b2f9",
+            "title": [
+              "妻山神社"
+            ],
+            "url": "https://tsumayamajinja.studio.site/"
+          },
+          "status": "linked_own_site_candidate_initial_html_title_only"
+        }
+      ],
+      "checked_at": "2026-11-13T14:52:53.155242+00:00",
+      "inspected_initial_own_site_candidate_html": 1,
+      "inspected_municipal_festival_profiles": 1,
+      "municipal_authority_and_rights": "町公式入口の基山町/役場表示、実リンク先privacy本文を確認。点検した本文に最小事実の記録を明示禁止する条項は見当たらないが、包括転載許諾又はオープンライセンスとは扱わない。別枠のオープンデータ条件をこの祭礼紹介へ流用しない。",
+      "new_verified_entries": 0,
+      "privacy_and_storage": "本文・画像・スクリプト・キャッシュ・連絡先・個人情報は収録せず、最小の公開URL/hash/日時・表題・不足理由を保存。",
+      "references": {
+        "araho": {
+          "fetched_at": "2026-11-13T14:51:21.930491+00:00",
+          "page_hash": "26734282e69bdea7ccd6eb22cce494477adf7790a976f4ec39d8dbe4ad31143c",
+          "title": [
+            "御神幸祭（みゆきまつり） / 観光・物産情報TOP / 基山町"
+          ],
+          "url": "https://www.town.kiyama.lg.jp/kankou/kiji003655/"
+        },
+        "town-home": {
+          "fetched_at": "2026-11-13T14:50:49.841756+00:00",
+          "page_hash": "d6f3114a74c435b97dbb3650cdbff71b0286ba952fe90f6454e7ad68e1d864df",
+          "title": [
+            "基山町"
+          ],
+          "url": "https://www.town.kiyama.lg.jp/"
+        },
+        "town-privacy": {
+          "fetched_at": "2026-11-13T14:51:19.763026+00:00",
+          "page_hash": "127b856799a33455c6899ecd02f70874f584906d775e6bf76f6282124736ced0",
+          "title": [
+            "プライバシーポリシー / 基山町"
+          ],
+          "url": "https://www.town.kiyama.lg.jp/kiji0036181/index.html"
+        },
+        "tsumayama-home": {
+          "fetched_at": "2026-11-13T14:50:52.277983+00:00",
+          "page_hash": "d124f9def7280f9842650f9b3cef519f7ab17b92d511b7cf23f6784aea47b2f9",
+          "title": [
+            "妻山神社"
+          ],
+          "url": "https://tsumayamajinja.studio.site/"
+        }
+      },
+      "scope": "佐賀保留2登録の追加資料候補のみ。正式名/独立全文かな/原全所在地の同時対応0、採用0。検索抜粋のかな、観光記事の別地番、祭礼名を推定補作して採用しない。県内全件又は各サイト全体の点検完了ではない。",
+      "screened_pending_entries": 2,
+      "status": "two_bounded_reference_bodies_no_formal_name_reading_address_pair"
     },
     {
       "acquisition": "実トップからプライバシーポリシー・運営者情報の実リンク2件だけを既存Clientでrobotsと最低2秒間隔を守って取得。権利判断後に記事一覧・追加詳細・画像・地図・キャッシュ代替へ進まない。",
@@ -1199851,6 +1199937,27 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:52:53.155242+00:00",
+          "discovery_reference": {
+            "body_check_method": "web.open",
+            "locator": "関連リンク 妻山神社 の実href",
+            "url": "https://www.omiyakids.com/jinja-ph/2023/2023-02.html"
+          },
+          "evidence_attempt": "saga_kiyama_festival_and_tsumayama_linked_home_no_independent_reading_20261113",
+          "expected_source_hash": "79b72c34fadf8ec6f1f87f3d1c3f1dc24ba8e62440a753cc618533e5857676e4",
+          "observation": "お宮キッズの関連実リンク先の通常取得HTMLはtitleの妻山神社のみが抽出され、制作サービスへのバナーリンクのみ。初期HTMLに読み・所在地・規約本文がなく採用0。公開スクリプト要素を確認したがJavaScript実行・追加アセット/API取得・画像文字確認はしていない。施設の公式性/全サイトの情報不存在/利用条件確認済みとは認定しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:50:52.277983+00:00",
+            "page_hash": "d124f9def7280f9842650f9b3cef519f7ab17b92d511b7cf23f6784aea47b2f9",
+            "title": [
+              "妻山神社"
+            ],
+            "url": "https://tsumayamajinja.studio.site/"
+          },
+          "status": "linked_own_site_candidate_initial_html_title_only"
         }
       ],
       "address": "杵島郡白石町大字馬洗２４０９",
@@ -1201498,6 +1201605,22 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:52:53.155242+00:00",
+          "evidence_attempt": "saga_kiyama_festival_and_tsumayama_linked_home_no_independent_reading_20261113",
+          "expected_source_hash": "18c7d7cdaefdd4d31a3cb51f71a4a51c4960b9565758e8d5ac8ec08e91fa0f3a",
+          "observation": "町公式の御神幸祭（みゆきまつり）本文を取得。荒穂神社という会場/伝統芸能の主催地を明示するが、社名の独立全文かな、原全所在地の宮浦2050の対応はない。みゆきまつりは祭礼の読みであり神社の読みへ流用しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:51:21.930491+00:00",
+            "page_hash": "26734282e69bdea7ccd6eb22cce494477adf7790a976f4ec39d8dbe4ad31143c",
+            "title": [
+              "御神幸祭（みゆきまつり） / 観光・物産情報TOP / 基山町"
+            ],
+            "url": "https://www.town.kiyama.lg.jp/kankou/kiji003655/"
+          },
+          "status": "municipal_festival_body_no_independent_shrine_full_reading"
         }
       ],
       "address": "三養基郡基山町大字宮浦2050",
