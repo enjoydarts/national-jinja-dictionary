@@ -16944,6 +16944,47 @@
       }
     },
     "limit": null,
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "三島市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "8042e559aaa98e9ffdcc7ad550ec6956537e5bcc60f7e4d4c707f9ab618ffcfe",
+        "facility_id": "863e7db3-aebf-5f32-84c9-fc434b5d5055",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "三島市市ノ山172",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "三島市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "伊豆市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "c28dc6c023b39a723e4d48c102acd5c968c3382737688d9314e126724cb79996",
+        "facility_id": "ebbb13b6-bd27-5c59-8bbc-5b1068bfa411",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "伊豆市市山701",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "伊豆市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "沼津市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "547868e624ea00fff2ea2ebccb344abebfdee6327b7d7ad6c9a10e12544b0e46",
+        "facility_id": "9ea634b7-1f1b-599f-b827-788835de4263",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "沼津市市場町3-11",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "沼津市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "pages": [
       {
         "fetched_at": "2026-11-08T14:25:00.636893+00:00",
@@ -86352,7 +86393,7 @@
         }
       ],
       "listing_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=14",
-      "municipality": "三島市市",
+      "municipality": "三島市",
       "name_raw": "山神社",
       "native_source_id": "4402030",
       "official_site_url": null,
@@ -91578,7 +91619,7 @@
         }
       ],
       "listing_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&city=5",
-      "municipality": "伊豆市市",
+      "municipality": "伊豆市",
       "name_raw": "市山神社",
       "native_source_id": "4402180",
       "official_site_url": null,
@@ -128446,7 +128487,7 @@
         }
       ],
       "listing_url": "http://www.shizuoka-jinjacho.or.jp/shokai/search.php?mode=city&search=&city=15&p=3",
-      "municipality": "沼津市市",
+      "municipality": "沼津市",
       "name_raw": "八幡神社",
       "native_source_id": "4403251",
       "official_site_url": null,

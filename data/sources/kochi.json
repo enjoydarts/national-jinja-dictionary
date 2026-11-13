@@ -25292,6 +25292,34 @@
     },
     "limit": null,
     "missing_listing_pages": [],
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "土佐市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "36f8fda96bd78d6037742c13bc68a144d13ef306c7aee23136b9c077c8dae811",
+        "facility_id": "07fe5778-6eb2-5bf7-9502-f362d1caaae3",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "高知県土佐市市野々1627番地",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "土佐市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "土佐市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "72c10f2852b5ea13ea3e21487e35dbac7ca0682c5611a297abc8206fbc42871e",
+        "facility_id": "5c65390c-0b2e-5c2b-97e1-ac0ca8b1b2ba",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "土佐市市野々1627番地",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "土佐市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "pages": [
       {
         "fetched_at": "2026-11-08T14:28:10.967930+00:00",
@@ -145949,7 +145977,7 @@
         }
       ],
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=59",
-      "municipality": "土佐市市",
+      "municipality": "土佐市",
       "name_raw": "天満宮",
       "native_source_id": "150d6bb3-2479-48d3-8627-707f016c6d40",
       "official_site_url": null,
@@ -197533,7 +197561,7 @@
         }
       ],
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=198",
-      "municipality": "土佐市市",
+      "municipality": "土佐市",
       "name_raw": "天満宮",
       "native_source_id": "850824db-b84b-4d36-989c-4eb6a4fc58be",
       "official_site_url": null,

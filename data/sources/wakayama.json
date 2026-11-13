@@ -924,6 +924,34 @@
     "inspection_complete": true,
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
     "listing_basis": "wikipedia_reference",
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "和歌山市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "9714fcb407d9663a5f49df29da1dc4d4db955c62abe5df2fc4b2b1bc323bd220",
+        "facility_id": "1d6df4b7-a619-57b0-b0d7-a7e2be09eeb4",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "和歌山県和歌山市市小路字木ノ下330",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "和歌山市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "橋本市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "586ca10b723e87bfd76f7402bb5def80687dff196cc6e3132208579a5bff8c82",
+        "facility_id": "93154520-0335-5234-a2f6-c24aca0441f4",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "和歌山県橋本市市脇2丁目7番8号",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "橋本市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "official_agency_listing_verified": false,
     "pages": [
       {
@@ -4178,7 +4206,7 @@
         }
       ],
       "listing_url": "https://ja.wikipedia.org/wiki/%E4%BC%8A%E4%B9%85%E6%AF%94%E5%A3%B2%E7%A5%9E%E7%A4%BE",
-      "municipality": "和歌山市市",
+      "municipality": "和歌山市",
       "name_raw": "伊久比売神社",
       "native_source_id": "wikipedia:pageid:1947069",
       "official_site_url": null,
@@ -6436,7 +6464,7 @@
         }
       ],
       "listing_url": "https://ja.wikipedia.org/wiki/%E7%9B%B8%E8%B3%80%E5%A4%A7%E7%A5%9E%E7%A4%BE",
-      "municipality": "橋本市市",
+      "municipality": "橋本市",
       "name_raw": "相賀大神社",
       "native_source_id": "wikipedia:pageid:2537112",
       "official_site_url": null,

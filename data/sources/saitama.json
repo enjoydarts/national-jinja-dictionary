@@ -11886,6 +11886,21 @@
       }
     },
     "limit": null,
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "東松山市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "c0ed972174fe149a90d5e56a70a1e9ec10a6fb9dffd3893b1db1e39f3c811ec7",
+        "facility_id": "501cfdac-22b4-5b52-a041-8e446c19e09b",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "東松山市市ノ川1087",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "東松山市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "pages": [
       {
         "fetched_at": "2026-11-08T14:32:50.311696+00:00",
@@ -85651,7 +85666,7 @@
         }
       ],
       "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/11449/",
-      "municipality": "東松山市市",
+      "municipality": "東松山市",
       "name_raw": "氷川神社",
       "native_source_id": "11449",
       "official_site_url": null,

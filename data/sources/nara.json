@@ -7824,6 +7824,21 @@
       }
     },
     "limit": null,
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "大和高田市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "540c91017cf5ac94f3773249800c0929cd56eb3d066be2750d8c63b31dbfbc85",
+        "facility_id": "6c6347dd-d55c-540e-b854-b33b096e6862",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "大和高田市市場308",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "大和高田市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "pages": [
       {
         "fetched_at": "2026-11-08T14:25:05.170857+00:00",
@@ -64457,7 +64472,7 @@
         }
       ],
       "listing_url": "https://www.naraken-jinjacho.jp/jinja10.html",
-      "municipality": "大和高田市市",
+      "municipality": "大和高田市",
       "name_raw": "春日神社",
       "native_source_id": null,
       "official_site_url": null,

@@ -16433,10 +16433,39 @@
         "new_verified_entries": 2,
         "retained_pending_entries": 0,
         "scope": "全国保留調査の旧住所候補2件を個別審査し、高志神社のたかしじんじゃ・牛尾神社のうしのおじんじゃを登録全文カナから補完。県の自治体接頭辞変更と既存の大字・数字幅・番地単位比較に限定し、下板1229・池上4793の全地番を保持。全国全件・佐賀県全保留の解決や実IME取り込み確認とは扱わない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:22:32.810370+00:00",
+        "entry_ids": [
+          "1e1067d1-d1d4-5aaa-b7d0-4e545f2ff026",
+          "28004be7-bd4d-50c9-afb0-b81c89dcee79",
+          "691e4b18-20fd-5b66-a7d9-2b0fcd800c30",
+          "692825fc-4026-59c6-8d54-5f8163631646",
+          "7fdf1563-d9f1-57b8-98b4-0dcf1ccb21e6",
+          "93c5f5ef-cb5b-5ff9-9951-7b301c7a166f",
+          "99a8f989-fb08-5bd9-bdc6-571707c96aa5",
+          "9a1d5837-3e8d-574b-8c2b-e38e1fb2cf19",
+          "9c2f267c-a1c6-5a7b-a587-0f677dce6027",
+          "ae0dd5d7-d82b-54db-a727-66a34524d994",
+          "bb87d58f-925e-583c-bb33-f5156b83592a",
+          "bd02b187-eda4-52e6-89e8-a0f2ca18d756",
+          "c1dbd213-25cb-5b3f-96f2-1a9d4fd10c91",
+          "c86264bc-9a0e-526d-965d-056833c430c4",
+          "e45c9df3-225a-570b-83bd-ad5d5e05edc3",
+          "ea1e4f64-af1f-5311-8adc-ee45069b5098",
+          "f7e58849-641a-5541-b35a-7b312b69c13d"
+        ],
+        "inspected_targets": 1,
+        "new_judgment_required_entries": 1,
+        "new_verified_entries": 0,
+        "parser_diagnostic_pending_entries": 17,
+        "retained_pending_entries": 17,
+        "scope": "福知山市市寺1573の熊野神社の原掲載1行・同hashを再確認し、取得済み府観光CSVの福知山市53行を限定照合。同時に全国の正本municipalityを文字列診断して17保留登録を追跡。全国47都道府県を調査対象とすることと、実資料を個別確認した範囲を区別する。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T01:22:32.810370+00:00",
+      "checked_at": "2026-11-13T01:35:22.818315+00:00",
+      "corrected_derived_municipalities": 115,
       "entry_ids": [
         "1e1067d1-d1d4-5aaa-b7d0-4e545f2ff026",
         "28004be7-bd4d-50c9-afb0-b81c89dcee79",
@@ -16456,12 +16485,10 @@
         "ea1e4f64-af1f-5311-8adc-ee45069b5098",
         "f7e58849-641a-5541-b35a-7b312b69c13d"
       ],
-      "inspected_targets": 1,
-      "new_judgment_required_entries": 1,
+      "inspected_targets": 17,
       "new_verified_entries": 0,
-      "parser_diagnostic_pending_entries": 17,
       "retained_pending_entries": 17,
-      "scope": "福知山市市寺1573の熊野神社の原掲載1行・同hashを再確認し、取得済み府観光CSVの福知山市53行を限定照合。同時に全国の正本municipalityを文字列診断して17保留登録を追跡。全国47都道府県を調査対象とすることと、実資料を個別確認した範囲を区別する。"
+      "scope": "全国正本を走査し、旧抽出と保存値が同じ115施設の導出municipalityのみ補正。17保留登録の読みは未解決のまま。市市を含む現旧5市名と明示欄10施設を保持し、熊野神社の字名・郵便番号差など別問題を解決済みにしない。現旧全自治体の完全な住所判定や全国全保留の解決ではない。"
     },
     "remaining_unfinished_entries": 10573,
     "resolved_entry_ids": [
@@ -16764,7 +16791,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T01:22:32.810370+00:00",
+  "computed_at": "2026-11-13T01:35:22.818315+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -169241,6 +169268,1812 @@
         "source_publisher": "京都府",
         "target_name_or_locality_hits": 0,
         "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv"
+      }
+    },
+    {
+      "attempt_id": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+      "changed_source_files": [
+        {
+          "corrected_facilities": 14,
+          "corrected_sha256": "452ee67ebd746739de29c1bf9ea0880c6481f51cb6a5fa7a0638077d0fef3444",
+          "path": "sources/shiga.json",
+          "previous_sha256": "59c1e2a86e8ea733cdc80238cd4ac02a397e4c6a015c63808b078012db44c774"
+        },
+        {
+          "corrected_facilities": 3,
+          "corrected_sha256": "3bdcef81d61dec6b2a72b12c64d642046104a0058573f41146b93a168d2aef1b",
+          "path": "sources/shizuoka.json",
+          "previous_sha256": "4b0b734dc0979a1ab02d01306a748d64e6a741b3da9971f6ca79f2cdc09bd19f"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "6eadc36fdcc4465dc62acdf89d701b17e9fc896130bfe210bd045fa4a33c4503",
+          "path": "sources/yamanashi.json",
+          "previous_sha256": "32b76cc3702a0a5936739d0a172a9a43bda3a29a0fb3c63e96cecf7ff4695fcb"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "07fbad326bdb0fb38f7f7b205c31ae9222a24334bd2e8a114a9b95f5b6169539",
+          "path": "sources/gifu.json",
+          "previous_sha256": "bea0de9c835a429ad05832e5fc3eb88651105595246da8d932405409d3c6479e"
+        },
+        {
+          "corrected_facilities": 6,
+          "corrected_sha256": "a84e02f74f91b2c3784173083c7cfcf000992ec3608ff84e1e84aafc7023a5b7",
+          "path": "sources/fukui.json",
+          "previous_sha256": "3b4f990f49d8731270781df9a7547c0ea6dc19d22f666b4c1f38cb5a62043333"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "28e0c837f20f5e7eaebd66599ab4cfba1ff30dce3f47890b11b99b204fb7e20e",
+          "path": "sources/mie.json",
+          "previous_sha256": "35e97f4944abcf52807faea14597cc5eefbac2808a503bd12d503b09ae90db7e"
+        },
+        {
+          "corrected_facilities": 3,
+          "corrected_sha256": "af50c988bef085281f041b3583af98608480f1f2dd9b5c54f6bf173718150b85",
+          "path": "sources/yamagata.json",
+          "previous_sha256": "de014c22c60229e044fc427d928fe95d93d597b89784410dde57678f48f35275"
+        },
+        {
+          "corrected_facilities": 3,
+          "corrected_sha256": "6413b685b2889f7919c7bce38812a153a701b5895fdc959f8f561758fb46c0e2",
+          "path": "sources/ishikawa.json",
+          "previous_sha256": "18cdb672e4599a735cc45de24fa91c3e9a659f7f87a0e8d407497e6d3c1f304f"
+        },
+        {
+          "corrected_facilities": 3,
+          "corrected_sha256": "791aed1404bc6785c71653d098ae5df73a93cbf8c4708b347c088da2bcb85106",
+          "path": "sources/tokushima.json",
+          "previous_sha256": "4eea47e878242aecfe8d6bbb38ef720091c4217fb1a775d071adc293e511855e"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "b11129b5c0b5e83ffcfb80ca5e852a4d4693431a167cb683a4f08ed47f1f45ae",
+          "path": "sources/saitama.json",
+          "previous_sha256": "e441b59917f48f0241df2765080fabd7743587c7c8a2a505893fe0d2eff5dff2"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "0498910a038519c7ca4ff81490c352747daee22f982f5bf7c130143d60d83408",
+          "path": "sources/miyagi.json",
+          "previous_sha256": "7d12bb067f89f2c6244c16132a96be2cb2b562e677af3ee8e5fd975acb342b69"
+        },
+        {
+          "corrected_facilities": 2,
+          "corrected_sha256": "15a782440e9eee8e7afbdb774f93a5e37e91f1daaaf1672e537e2b7480531be9",
+          "path": "sources/wakayama.json",
+          "previous_sha256": "be88e5b12786852d1ebd86b7dc5b631a5d97dde4109921179d16cdd4050e4530"
+        },
+        {
+          "corrected_facilities": 3,
+          "corrected_sha256": "4ee7b33b7508b40400fd4fe64caf46e08ad0f38496d8842aac53ab589a9166c6",
+          "path": "sources/kagoshima.json",
+          "previous_sha256": "125ae08404bd018fe85a2d6d676b66b2aeef62d2e77ad31ee0fc6ff446a05626"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "14b8f1ff0419ba3ab55841f6b20e7d5cdc4a64d4fc9372675eb8823736c69dd4",
+          "path": "sources/osaka.json",
+          "previous_sha256": "6e4a4e7a88e20d301a3dde26add21ef12c6cd38f39164c2f709127696aea16fb"
+        },
+        {
+          "corrected_facilities": 2,
+          "corrected_sha256": "2eb988374ecd76ff6d1189a206375c43a9d57e594f20a8e48faa005d40a54d84",
+          "path": "sources/kochi.json",
+          "previous_sha256": "49e5618c34c13eb940b6a2cc9bfbbe012fde7049f4eb5dd699bc74f84bfdb4a3"
+        },
+        {
+          "corrected_facilities": 48,
+          "corrected_sha256": "7b50b439cb8aacc9d4fcc66302ce5103aeba4a86dd884daff7bf6c326631fa99",
+          "path": "sources/hyogo.json",
+          "previous_sha256": "b97a5a1ee047ccac191c1e583f380e2dcd47911a6a9725ce2524e851549a6af3"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "d728211309dd14a4207bc95f65d3c3c7526a7feea45708927b8e5fd70f9a0504",
+          "path": "sources/nagano.json",
+          "previous_sha256": "ab58fa8d51a02a5c17d60965cefcde616ba6cb55de5f2244aba8f6208948d147"
+        },
+        {
+          "corrected_facilities": 6,
+          "corrected_sha256": "d9367d84bd521234a8f3e13940767599e75e4e44411a0feca34d728061a11463",
+          "path": "sources/niigata.json",
+          "previous_sha256": "5f0b7dce955999e1d91030e287b17e4961e8a5333c61e604206c73cfcc4812ea"
+        },
+        {
+          "corrected_facilities": 9,
+          "corrected_sha256": "8da8b0945a86408034716393bd98ec8715c54c76535b8b92cca1b34877b68f1b",
+          "path": "sources/kyoto.json",
+          "previous_sha256": "2addaecbe1241423804da649d55bca45959b7cb653be577e77b5fb9502a33112"
+        },
+        {
+          "corrected_facilities": 4,
+          "corrected_sha256": "f55b458d43a369dc4d1b7005ee80b7b23358c65adee384902c9d701553c91009",
+          "path": "sources/ehime.json",
+          "previous_sha256": "5b511c8bfba570014034d6866db6cbee32bf6408a2870713aeb507ca9bf021e5"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "0d178e782ac675eaa45f92462df68e7645381363c2697a24f4a891b9bdada765",
+          "path": "sources/nara.json",
+          "previous_sha256": "e80c7d154028e554a3fccfa81f88c2cd84ff75b78f4d249eba09875f6bd77237"
+        },
+        {
+          "corrected_facilities": 1,
+          "corrected_sha256": "042f355ccacf0330980bd1267acb7d1edaee0e954099e47c58271841b1a8cc9b",
+          "path": "sources/shimane.json",
+          "previous_sha256": "d8a39b4c547b65d721caf85a3d980309e578963db669eb39369ed057b6ba8cc4"
+        }
+      ],
+      "checked_at": "2026-11-13T01:35:22.818315+00:00",
+      "city_name_evidence_usage": {
+        "attribution": "出典：国税庁法人番号公表サイト（国税庁）。取得済み差分CSVの市名フィールドを参照。",
+        "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+        "processed_notice": "国税庁法人番号公表サイト（国税庁）の市名フィールドを照合に用いて作成。神社の読みは追加又は変更していない。",
+        "source_publisher": "国税庁",
+        "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+      },
+      "corrected_facilities": 115,
+      "current_city_name_evidence": {
+        "四日市市": {
+          "csv_row": 980,
+          "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+          "file_id": "28508",
+          "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+          "scope": "市町村名フィールドの原表記の確認に限り使用。神社の読み根拠・所在地変更・現在最新の自治体一覧としては使わない。",
+          "snapshot": "20261102",
+          "source_fields": {
+            "cityCode": "202",
+            "cityName": "四日市市",
+            "corporateNumber": "4190003004414",
+            "latest": "1",
+            "prefectureCode": "24",
+            "prefectureName": "三重県"
+          },
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+          "zip_member": "diff_20261102.csv"
+        },
+        "廿日市市": {
+          "csv_row": 1543,
+          "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+          "file_id": "28520",
+          "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+          "scope": "市町村名フィールドの原表記の確認に限り使用。神社の読み根拠・所在地変更・現在最新の自治体一覧としては使わない。",
+          "snapshot": "20261109",
+          "source_fields": {
+            "cityCode": "213",
+            "cityName": "廿日市市",
+            "corporateNumber": "6240001067273",
+            "latest": "1",
+            "prefectureCode": "34",
+            "prefectureName": "広島県"
+          },
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+          "zip_member": "diff_20261109.csv"
+        },
+        "野々市市": {
+          "csv_row": 1501,
+          "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+          "file_id": "28508",
+          "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+          "scope": "市町村名フィールドの原表記の確認に限り使用。神社の読み根拠・所在地変更・現在最新の自治体一覧としては使わない。",
+          "snapshot": "20261102",
+          "source_fields": {
+            "cityCode": "212",
+            "cityName": "野々市市",
+            "corporateNumber": "6220001027667",
+            "latest": "1",
+            "prefectureCode": "17",
+            "prefectureName": "石川県"
+          },
+          "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+          "zip_member": "diff_20261102.csv"
+        }
+      },
+      "derived_municipality_observations": [
+        {
+          "address_raw": "近江八幡市市井町",
+          "corrected_derived_municipality": "近江八幡市",
+          "expected_source_hash": "bda829c1d6f4c0b04f2e04c91e94a31e88dd2ca46070c37a7e63a2b535009a7f",
+          "facility_id": "1ec23376-6aaa-508f-9f84-c11f79b8d7b5",
+          "name_raw": "天津神社",
+          "pending_entry_id": "99a8f989-fb08-5bd9-bdc6-571707c96aa5",
+          "prefecture_code": "25",
+          "previous_derived_municipality": "近江八幡市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "近江八幡市市"
+        },
+        {
+          "address_raw": "東近江市市辺町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "d28bb3ebc337b6aaac9dba38a9266d8f1a7dc27b8bec3e9203be9d730be9af0d",
+          "facility_id": "62640402-2cca-5e8f-8eab-d5b9d41806bd",
+          "name_raw": "三所神社",
+          "pending_entry_id": "28004be7-bd4d-50c9-afb0-b81c89dcee79",
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "東近江市市辺町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "61a420af281bfbe62bf1095a35f8126a9cbe3aa81c244600aadc4a7065e53505",
+          "facility_id": "5593c1f9-f530-5a61-afc5-769ee67c0631",
+          "name_raw": "若宮神社",
+          "pending_entry_id": null,
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "野洲市市三宅",
+          "corrected_derived_municipality": "野洲市",
+          "expected_source_hash": "ec953ccfb74a8d4589c7d555663a599b35f4176c21ff951ef752cb59ef54fe56",
+          "facility_id": "6e0cdf8b-bb5a-571f-9f50-3cc4dd01fea6",
+          "name_raw": "屯倉神社",
+          "pending_entry_id": "1e1067d1-d1d4-5aaa-b7d0-4e545f2ff026",
+          "prefecture_code": "25",
+          "previous_derived_municipality": "野洲市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "野洲市市"
+        },
+        {
+          "address_raw": "東近江市市子殿町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "834f9a8eb88a0abb4b88289c02a53e0a1562478c7cca23364321104372a07a35",
+          "facility_id": "36a3f3a8-ac62-5328-9216-ab238129b272",
+          "name_raw": "雨宮神社",
+          "pending_entry_id": "ea1e4f64-af1f-5311-8adc-ee45069b5098",
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "東近江市市子殿町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "f1a9ea58424f2ed2c933693adf3e378613f1c74b1aa581a773120634b1057633",
+          "facility_id": "3b319049-1c98-5ff0-af72-e4adc22663ad",
+          "name_raw": "猿田彦神社",
+          "pending_entry_id": null,
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "東近江市市子殿町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "080f3f7b94c7e46e2ea491593ac67a8a28a26f44942f4b318e6cf55a326541fb",
+          "facility_id": "00e337a8-1bc5-5b69-a541-093358062bd9",
+          "name_raw": "雨神社",
+          "pending_entry_id": null,
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "東近江市市子沖町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "7e5b743362a4a9200cfead45f29f7773fbb3828003c31d9df480cece372787b9",
+          "facility_id": "7b538420-02b1-5879-85eb-496546e3d037",
+          "name_raw": "春日神社",
+          "pending_entry_id": null,
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "東近江市市子松井町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "038a9d74feb116edb8470643eddff7f73c4237e108259791e4b0df640eb38113",
+          "facility_id": "3332d9b0-cc3d-5b7b-be18-0f5dbd0a21d9",
+          "name_raw": "松井神社",
+          "pending_entry_id": null,
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "東近江市市子川原町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "eba36682129e2e5fada43c0a149145d8c6bbacb35ca6e1b8f0efec1f0f6f1001",
+          "facility_id": "a000f50b-7be4-5f09-a491-3ff4237be946",
+          "name_raw": "天満神社",
+          "pending_entry_id": null,
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "東近江市市原野町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "e7eec76ad250a676f485199c5d9284afc9916348f3a71a4a76af2536a2076c7a",
+          "facility_id": "26369973-09e3-588c-b444-5596e850c6f8",
+          "name_raw": "白鳥神社",
+          "pending_entry_id": "93c5f5ef-cb5b-5ff9-9951-7b301c7a166f",
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "東近江市市ケ原町",
+          "corrected_derived_municipality": "東近江市",
+          "expected_source_hash": "bb40bf5209e9b6b59ad4bb46c47ca41e6e653e15c3df026596ee7b8436f6298a",
+          "facility_id": "bd816165-6cb9-5ba7-a3c6-d3bb5e601132",
+          "name_raw": "松號神社",
+          "pending_entry_id": "692825fc-4026-59c6-8d54-5f8163631646",
+          "prefecture_code": "25",
+          "previous_derived_municipality": "東近江市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "東近江市市"
+        },
+        {
+          "address_raw": "米原市市場",
+          "corrected_derived_municipality": "米原市",
+          "expected_source_hash": "1d76e730c99c3b7dcb343e17ad95918c13d011f70ccfc591f0e92779be05034f",
+          "facility_id": "fb8daebd-4564-57b4-b3b1-be9359a19aa7",
+          "name_raw": "若宮八幡神社",
+          "pending_entry_id": "bd02b187-eda4-52e6-89e8-a0f2ca18d756",
+          "prefecture_code": "25",
+          "previous_derived_municipality": "米原市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "米原市市"
+        },
+        {
+          "address_raw": "米原市市場",
+          "corrected_derived_municipality": "米原市",
+          "expected_source_hash": "a61045500f4ba01adfc6e3b69e5feba7fbb6d419354420d880f42e0eed26106f",
+          "facility_id": "3d5fcaf0-9483-5e77-9e6a-7710cff73582",
+          "name_raw": "愛宕神社",
+          "pending_entry_id": "9c2f267c-a1c6-5a7b-a587-0f677dce6027",
+          "prefecture_code": "25",
+          "previous_derived_municipality": "米原市市",
+          "source_file": "sources/shiga.json",
+          "stored_municipality": "米原市市"
+        },
+        {
+          "address_raw": "三島市市ノ山172",
+          "corrected_derived_municipality": "三島市",
+          "expected_source_hash": "8042e559aaa98e9ffdcc7ad550ec6956537e5bcc60f7e4d4c707f9ab618ffcfe",
+          "facility_id": "863e7db3-aebf-5f32-84c9-fc434b5d5055",
+          "name_raw": "山神社",
+          "pending_entry_id": null,
+          "prefecture_code": "22",
+          "previous_derived_municipality": "三島市市",
+          "source_file": "sources/shizuoka.json",
+          "stored_municipality": "三島市市"
+        },
+        {
+          "address_raw": "伊豆市市山701",
+          "corrected_derived_municipality": "伊豆市",
+          "expected_source_hash": "c28dc6c023b39a723e4d48c102acd5c968c3382737688d9314e126724cb79996",
+          "facility_id": "ebbb13b6-bd27-5c59-8bbc-5b1068bfa411",
+          "name_raw": "市山神社",
+          "pending_entry_id": null,
+          "prefecture_code": "22",
+          "previous_derived_municipality": "伊豆市市",
+          "source_file": "sources/shizuoka.json",
+          "stored_municipality": "伊豆市市"
+        },
+        {
+          "address_raw": "沼津市市場町3-11",
+          "corrected_derived_municipality": "沼津市",
+          "expected_source_hash": "547868e624ea00fff2ea2ebccb344abebfdee6327b7d7ad6c9a10e12544b0e46",
+          "facility_id": "9ea634b7-1f1b-599f-b827-788835de4263",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "22",
+          "previous_derived_municipality": "沼津市市",
+          "source_file": "sources/shizuoka.json",
+          "stored_municipality": "沼津市市"
+        },
+        {
+          "address_raw": "山梨市市川689",
+          "corrected_derived_municipality": "山梨市",
+          "expected_source_hash": "7091b46bcc1474cd6f82b6462739aabdad15db64ca5bb89ddd2b371b4f3838b4",
+          "facility_id": "0d8fe39a-baa3-5e8e-9860-5c4d91834295",
+          "name_raw": "霞森神社",
+          "pending_entry_id": "c1dbd213-25cb-5b3f-96f2-1a9d4fd10c91",
+          "prefecture_code": "19",
+          "previous_derived_municipality": "山梨市市",
+          "source_file": "sources/yamanashi.json",
+          "stored_municipality": "山梨市市"
+        },
+        {
+          "address_raw": "岐阜県多治見市市之倉町地蔵峰5615番地",
+          "corrected_derived_municipality": "多治見市",
+          "expected_source_hash": "ebc2b4490c16ec88553f57c67a8288a181e43e4625fe0bdd18b0e1ad5c9e6fe5",
+          "facility_id": "bebc453d-b64c-5c7d-8d89-50b2fb787796",
+          "name_raw": "熊野神社",
+          "pending_entry_id": null,
+          "prefecture_code": "21",
+          "previous_derived_municipality": "多治見市市",
+          "source_file": "sources/gifu.json",
+          "stored_municipality": "多治見市市"
+        },
+        {
+          "address_raw": "福井県あわら市市姫４－１６－２",
+          "corrected_derived_municipality": "あわら市",
+          "expected_source_hash": "2789fdd2a0987701392010e18183dbbc1cea99f721abc063d2fff62c02138bb6",
+          "facility_id": "570fd54b-f953-506f-bf27-bdde96056652",
+          "name_raw": "稲荷神社",
+          "pending_entry_id": null,
+          "prefecture_code": "18",
+          "previous_derived_municipality": "あわら市市",
+          "source_file": "sources/fukui.json",
+          "stored_municipality": "あわら市市"
+        },
+        {
+          "address_raw": "福井県福井市市ノ瀬町１６－１－３",
+          "corrected_derived_municipality": "福井市",
+          "expected_source_hash": "8d1a346bea9c7961b5c6d9e85ee6e570473e863518b7a7fb126e3170fda3745c",
+          "facility_id": "00fb7409-5d2e-5a19-bc34-da72189deb77",
+          "name_raw": "熊野神社",
+          "pending_entry_id": null,
+          "prefecture_code": "18",
+          "previous_derived_municipality": "福井市市",
+          "source_file": "sources/fukui.json",
+          "stored_municipality": "福井市市"
+        },
+        {
+          "address_raw": "福井県越前市市野々町４－１９",
+          "corrected_derived_municipality": "越前市",
+          "expected_source_hash": "37d46cc7a60cfd792a11eb16453969a2fe2be6fd3282cb416e596cba708eecd9",
+          "facility_id": "e454d3de-061e-58b6-a8d7-d521c821e782",
+          "name_raw": "金刀比羅神社",
+          "pending_entry_id": null,
+          "prefecture_code": "18",
+          "previous_derived_municipality": "越前市市",
+          "source_file": "sources/fukui.json",
+          "stored_municipality": "越前市市"
+        },
+        {
+          "address_raw": "福井県福井市市波町２０－８",
+          "corrected_derived_municipality": "福井市",
+          "expected_source_hash": "0b729df1e4f8e2e6cd3fa9669af08bb77667f7ef2d020682fa4915aebca739c6",
+          "facility_id": "419b1e12-3681-5c6c-9622-49107f6962dd",
+          "name_raw": "二宮神社",
+          "pending_entry_id": null,
+          "prefecture_code": "18",
+          "previous_derived_municipality": "福井市市",
+          "source_file": "sources/fukui.json",
+          "stored_municipality": "福井市市"
+        },
+        {
+          "address_raw": "福井県敦賀市市野々２１－８",
+          "corrected_derived_municipality": "敦賀市",
+          "expected_source_hash": "c394254139771ac060e4f68ea84a5b49bd00e8e5f9f78bde90b406cfd3085a2f",
+          "facility_id": "0055922b-2bcd-5bbc-8e75-0896c4fc97ae",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "18",
+          "previous_derived_municipality": "敦賀市市",
+          "source_file": "sources/fukui.json",
+          "stored_municipality": "敦賀市市"
+        },
+        {
+          "address_raw": "福井県敦賀市市橋１４",
+          "corrected_derived_municipality": "敦賀市",
+          "expected_source_hash": "51fe3e994ffaa4fe5e2f27196d5b67b7fadd3b27bec49bd0a040fda114a91263",
+          "facility_id": "ba4e9120-b81f-516d-9968-d84b3aa05586",
+          "name_raw": "日吉神社",
+          "pending_entry_id": null,
+          "prefecture_code": "18",
+          "previous_derived_municipality": "敦賀市市",
+          "source_file": "sources/fukui.json",
+          "stored_municipality": "敦賀市市"
+        },
+        {
+          "address_raw": "松阪市市場庄町 667",
+          "corrected_derived_municipality": "松阪市",
+          "expected_source_hash": "55b62384c430b71735419d71e8378443f69c46f7b176334c06548547d4e0c02f",
+          "facility_id": "82b6b8bf-d102-5ca8-aa0a-a2475d749095",
+          "name_raw": "米ノ庄神社",
+          "pending_entry_id": null,
+          "prefecture_code": "24",
+          "previous_derived_municipality": "松阪市市",
+          "source_file": "sources/mie.json",
+          "stored_municipality": "松阪市市"
+        },
+        {
+          "address_raw": "酒田市市条字水上壱番ノ内1",
+          "corrected_derived_municipality": "酒田市",
+          "expected_source_hash": "e49cf6f71784d710201b4535264aae495f378530552ab6ea4ef4432cb99df122",
+          "facility_id": "f503c8f8-3334-5823-9d6c-d27595c3121f",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "06",
+          "previous_derived_municipality": "酒田市市",
+          "source_file": "sources/yamagata.json",
+          "stored_municipality": "酒田市市"
+        },
+        {
+          "address_raw": "尾花沢市市野々才ノ神538-13",
+          "corrected_derived_municipality": "尾花沢市",
+          "expected_source_hash": "72855251dff3dccac0125ee637bf06f0428ca4b0f8b429e52578b0d08c826d53",
+          "facility_id": "1f3a6ed3-c5fb-5692-b209-b0d5195db764",
+          "name_raw": "稲荷神社",
+          "pending_entry_id": null,
+          "prefecture_code": "06",
+          "previous_derived_municipality": "尾花沢市市",
+          "source_file": "sources/yamagata.json",
+          "stored_municipality": "尾花沢市市"
+        },
+        {
+          "address_raw": "酒田市市条字八森13",
+          "corrected_derived_municipality": "酒田市",
+          "expected_source_hash": "d32954b349a60e34e229ea8b304b03b13864d86ca72e11d2e22076de71ccc078",
+          "facility_id": "71082e38-9900-500b-9144-832b4c7a23ac",
+          "name_raw": "六所神社",
+          "pending_entry_id": null,
+          "prefecture_code": "06",
+          "previous_derived_municipality": "酒田市市",
+          "source_file": "sources/yamagata.json",
+          "stored_municipality": "酒田市市"
+        },
+        {
+          "address_raw": "白山市市原ル22",
+          "corrected_derived_municipality": "白山市",
+          "expected_source_hash": "3daea4a08241871b1da9caa3bba3b84248a421df5b1c891083c2bdaf88d33366",
+          "facility_id": "1099b2de-2aaf-5b2d-abb2-bec418b59cfa",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "17",
+          "previous_derived_municipality": "白山市市",
+          "source_file": "sources/ishikawa.json",
+          "stored_municipality": "白山市市"
+        },
+        {
+          "address_raw": "輪島市市ノ瀬町ハ149",
+          "corrected_derived_municipality": "輪島市",
+          "expected_source_hash": "76b967941c543bb5e79d26c8030396af279a11b25611651d79de120de99b2d66",
+          "facility_id": "17591c76-71e1-5ea4-b7b4-896fca2fb2b4",
+          "name_raw": "日吉神社",
+          "pending_entry_id": null,
+          "prefecture_code": "17",
+          "previous_derived_municipality": "輪島市市",
+          "source_file": "sources/ishikawa.json",
+          "stored_municipality": "輪島市市"
+        },
+        {
+          "address_raw": "金沢市市瀬町ハ22番地",
+          "corrected_derived_municipality": "金沢市",
+          "expected_source_hash": "b9a5fff024a17eaf0a0a7bf0f15b6028ec7c11f810cc36edffd51182800ffba0",
+          "facility_id": "8ce9fd6d-6134-53a2-ac68-8219cbcbb1bf",
+          "name_raw": "市瀬神社",
+          "pending_entry_id": null,
+          "prefecture_code": "17",
+          "previous_derived_municipality": "金沢市市",
+          "source_file": "sources/ishikawa.json",
+          "stored_municipality": "金沢市市"
+        },
+        {
+          "address_raw": "徳島県阿波市市場町伊月字宮ノ本100-1",
+          "corrected_derived_municipality": "阿波市",
+          "expected_source_hash": "ed06844e2fe614ea4288eaf3b73e2e7bed93f11927c48497bfb55eb2548223f9",
+          "facility_id": "709a20cf-f4ef-5969-a844-3506f4021437",
+          "name_raw": "事代主神社",
+          "pending_entry_id": null,
+          "prefecture_code": "36",
+          "previous_derived_municipality": "阿波市市",
+          "source_file": "sources/tokushima.json",
+          "stored_municipality": "阿波市市"
+        },
+        {
+          "address_raw": "徳島県阿波市市場町犬墓字白水伊笠山上194",
+          "corrected_derived_municipality": "阿波市",
+          "expected_source_hash": "2041f50a5b38e02ca8482b1d2ecdcfbd57bd61bee46c41880524d1c2c0aaa784",
+          "facility_id": "0168bcb4-a97c-521d-a88b-d819fbd5fe2f",
+          "name_raw": "伊笠神社",
+          "pending_entry_id": null,
+          "prefecture_code": "36",
+          "previous_derived_municipality": "阿波市市",
+          "source_file": "sources/tokushima.json",
+          "stored_municipality": "阿波市市"
+        },
+        {
+          "address_raw": "徳島県阿波市市場町香美字郷社本18",
+          "corrected_derived_municipality": "阿波市",
+          "expected_source_hash": "d1755c78f3a5c13b22f3c70b0c40fc5979a40f23fd2b70b3606a01730a1e34a5",
+          "facility_id": "63ae4d9f-187d-5730-862c-c0491fac4a70",
+          "name_raw": "建布都神社",
+          "pending_entry_id": null,
+          "prefecture_code": "36",
+          "previous_derived_municipality": "阿波市市",
+          "source_file": "sources/tokushima.json",
+          "stored_municipality": "阿波市市"
+        },
+        {
+          "address_raw": "東松山市市ノ川1087",
+          "corrected_derived_municipality": "東松山市",
+          "expected_source_hash": "c0ed972174fe149a90d5e56a70a1e9ec10a6fb9dffd3893b1db1e39f3c811ec7",
+          "facility_id": "501cfdac-22b4-5b52-a041-8e446c19e09b",
+          "name_raw": "氷川神社",
+          "pending_entry_id": null,
+          "prefecture_code": "11",
+          "previous_derived_municipality": "東松山市市",
+          "source_file": "sources/saitama.json",
+          "stored_municipality": "東松山市市"
+        },
+        {
+          "address_raw": "宮城県多賀城市市川字奏社1",
+          "corrected_derived_municipality": "多賀城市",
+          "expected_source_hash": "9e1bea40397ed9b911bd3ae2ddea740e6cb68a2eb9f91347d23a50e73cb8bc9c",
+          "facility_id": "3e4dd752-9351-526f-8a5c-e598000fdd7c",
+          "name_raw": "陸奥総社宮",
+          "pending_entry_id": null,
+          "prefecture_code": "04",
+          "previous_derived_municipality": "多賀城市市",
+          "source_file": "sources/miyagi.json",
+          "stored_municipality": "多賀城市市"
+        },
+        {
+          "address_raw": "和歌山県和歌山市市小路字木ノ下330",
+          "corrected_derived_municipality": "和歌山市",
+          "expected_source_hash": "9714fcb407d9663a5f49df29da1dc4d4db955c62abe5df2fc4b2b1bc323bd220",
+          "facility_id": "1d6df4b7-a619-57b0-b0d7-a7e2be09eeb4",
+          "name_raw": "伊久比売神社",
+          "pending_entry_id": null,
+          "prefecture_code": "30",
+          "previous_derived_municipality": "和歌山市市",
+          "source_file": "sources/wakayama.json",
+          "stored_municipality": "和歌山市市"
+        },
+        {
+          "address_raw": "和歌山県橋本市市脇2丁目7番8号",
+          "corrected_derived_municipality": "橋本市",
+          "expected_source_hash": "586ca10b723e87bfd76f7402bb5def80687dff196cc6e3132208579a5bff8c82",
+          "facility_id": "93154520-0335-5234-a2f6-c24aca0441f4",
+          "name_raw": "相賀大神社",
+          "pending_entry_id": null,
+          "prefecture_code": "30",
+          "previous_derived_municipality": "橋本市市",
+          "source_file": "sources/wakayama.json",
+          "stored_municipality": "橋本市市"
+        },
+        {
+          "address_raw": "垂水市市木3525",
+          "corrected_derived_municipality": "垂水市",
+          "expected_source_hash": "e0ed558a27b34f680b21025666932fc9828149f2be4118a7eb5b66060fc42202",
+          "facility_id": "bc6d9200-3647-53bc-a8e5-7209dd2be256",
+          "name_raw": "新田神社",
+          "pending_entry_id": null,
+          "prefecture_code": "46",
+          "previous_derived_municipality": "垂水市市",
+          "source_file": "sources/kagoshima.json",
+          "stored_municipality": "垂水市市"
+        },
+        {
+          "address_raw": "垂水市市木1818",
+          "corrected_derived_municipality": "垂水市",
+          "expected_source_hash": "34b09ba9a13337571ec802b480375de0315dcd5a969beb82fa4ed5cc4bdffeab",
+          "facility_id": "d64cf884-7e88-51ae-bba5-e47bf398c599",
+          "name_raw": "鎮守神社",
+          "pending_entry_id": null,
+          "prefecture_code": "46",
+          "previous_derived_municipality": "垂水市市",
+          "source_file": "sources/kagoshima.json",
+          "stored_municipality": "垂水市市"
+        },
+        {
+          "address_raw": "垂水市市木2212",
+          "corrected_derived_municipality": "垂水市",
+          "expected_source_hash": "e889ceafbfc5337897d027e2e1c2b1e9636dd34e7eaa6fd2efdffb0a0b6593da",
+          "facility_id": "798bb093-caa4-5f88-88b2-74566c2787c1",
+          "name_raw": "年貫神社",
+          "pending_entry_id": null,
+          "prefecture_code": "46",
+          "previous_derived_municipality": "垂水市市",
+          "source_file": "sources/kagoshima.json",
+          "stored_municipality": "垂水市市"
+        },
+        {
+          "address_raw": "河内長野市市町",
+          "corrected_derived_municipality": "河内長野市",
+          "expected_source_hash": "cf0aeb37585e711d1ff013e3da9d64940de67a2dc728a08947ba022dc837b4b5",
+          "facility_id": "44a99669-bbf0-5997-8e5f-7ed8f5c5182d",
+          "name_raw": "菅原神社",
+          "pending_entry_id": null,
+          "prefecture_code": "27",
+          "previous_derived_municipality": "河内長野市市",
+          "source_file": "sources/osaka.json",
+          "stored_municipality": "河内長野市市"
+        },
+        {
+          "address_raw": "高知県土佐市市野々1627番地",
+          "corrected_derived_municipality": "土佐市",
+          "expected_source_hash": "36f8fda96bd78d6037742c13bc68a144d13ef306c7aee23136b9c077c8dae811",
+          "facility_id": "07fe5778-6eb2-5bf7-9502-f362d1caaae3",
+          "name_raw": "天満宮",
+          "pending_entry_id": "691e4b18-20fd-5b66-a7d9-2b0fcd800c30",
+          "prefecture_code": "39",
+          "previous_derived_municipality": "土佐市市",
+          "source_file": "sources/kochi.json",
+          "stored_municipality": "土佐市市"
+        },
+        {
+          "address_raw": "土佐市市野々1627番地",
+          "corrected_derived_municipality": "土佐市",
+          "expected_source_hash": "72c10f2852b5ea13ea3e21487e35dbac7ca0682c5611a297abc8206fbc42871e",
+          "facility_id": "5c65390c-0b2e-5c2b-97e1-ac0ca8b1b2ba",
+          "name_raw": "天満宮",
+          "pending_entry_id": null,
+          "prefecture_code": "39",
+          "previous_derived_municipality": "土佐市市",
+          "source_file": "sources/kochi.json",
+          "stored_municipality": "土佐市市"
+        },
+        {
+          "address_raw": "丹波市市島町上田7-1",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "917b2f46cadd7abe1b3c853a1e6f278138a978309247523cdda912cafec18644",
+          "facility_id": "0a2a76e9-0f26-5493-92bd-368efd46ef62",
+          "name_raw": "天満神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町多利2609-4",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "bd07b830d3b8c4fe4a560aa4dd98707cec16c11d33e5bb261aec0eccbc19fc7a",
+          "facility_id": "11d55cc4-e0c4-50b0-9a57-11856ec968f4",
+          "name_raw": "辨天神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市円行寺247",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "de8dbb662ac4f4a0d4c03ad586c09244179f26989aaf8ff40b8df30bcbf4722f",
+          "facility_id": "19caf669-2f6d-5a69-bc96-c44012f4c7c5",
+          "name_raw": "十一神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "丹波市市島町下竹田2598",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "ec96152dae92ebcc19be95af3c669c18b163562048b9ef452bab66be22376279",
+          "facility_id": "1cad2ce7-d9cc-5b18-98a6-ad5dd9e014bc",
+          "name_raw": "二宮神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町白毫寺67",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "e7a5963e1020876f1cf606554c7d3a9c75f2b9d773a92efb75dfe0e1bfef0b33",
+          "facility_id": "224da921-391c-594f-a25f-f9dbd67ca564",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市新340",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "33f76ca1199aa9571bbd41bb0d323e67e3890f36152f94377f26f8c17b30f344",
+          "facility_id": "2ee5e2b1-53fa-59f1-977c-dab5d7b17404",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "丹波市市島町東勅使82-2",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "efa00bbf1eab2b3946d321903dcfa207c73e58dc50a53f0dccab25a636652e07",
+          "facility_id": "33814561-ee4d-5862-87ab-bb778e880736",
+          "name_raw": "愛宕神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市十一ケ所437",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "843b9485419684c86b1bcb6db463eb3d5e6824cacaa993c022e5c4abc752c247",
+          "facility_id": "3e28e778-1e2a-57d1-a622-7a98b19bbfb1",
+          "name_raw": "十一明神神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "丹波市市島町上垣288-1",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "7ff0f6cc1ed3422feb92edac73cd8de0297dfa8a2b393b8ecbf1a295cc53ce27",
+          "facility_id": "401db716-60d4-5027-99b7-f0e414dda51d",
+          "name_raw": "愛宕神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町北奥56",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "7dd4459ad8148fcddaa2742ef95b38bfafa2464a4d8416f3ee3fdf13cb3dc017",
+          "facility_id": "4fb8d7b2-d14b-57d6-b79d-1f0f2c7b846c",
+          "name_raw": "熊野神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町中竹田116",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "169959e730d85a21589845db0fadd84c29a34ad5e48d87cbbd1c0c05379a544d",
+          "facility_id": "56a026e6-cb38-5212-9302-ce94aa9ba1bc",
+          "name_raw": "加茂神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "小野市市場町671",
+          "corrected_derived_municipality": "小野市",
+          "expected_source_hash": "5e3c4bc3b78582ea26e5cc81065afe3c10c8b4a29da7ddf07bd2407c0db96467",
+          "facility_id": "58669370-ffeb-5d66-99c1-41961620cc89",
+          "name_raw": "大歳神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "小野市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "小野市市"
+        },
+        {
+          "address_raw": "丹波市市島町南592",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "b599de23052bab97c4fb9cce846dea196f3f5f368092a9bd98c241e55f190c04",
+          "facility_id": "5dbbc529-7753-5f5e-b456-378f2e46c2c1",
+          "name_raw": "知乃神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市市37",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "187bc3852ce8a9af15367e0a00d12f670682de152d86a4497b06e4acddfbf4e2",
+          "facility_id": "63fea595-cca6-5104-b72f-a85257548a4c",
+          "name_raw": "事代主神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "南あわじ市市青木198-3",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "a98c52d02f558f8f4386206a65f65121a23a30f42756b239aa148b82827ed83c",
+          "facility_id": "6a60df53-b0fb-5be1-8f88-078b453b92dc",
+          "name_raw": "厳島神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "丹波市市島町下竹田687",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "ed25b19cff73d4a338d4884956521891556605b8c97e8750fc20ddef5f7afff1",
+          "facility_id": "78a8bf97-93e9-573e-b357-e96252660595",
+          "name_raw": "愛宕神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町徳尾518",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "f27cca90905387492149be34fffa8d67e93dc04ad6867c25e79525cfe98604d6",
+          "facility_id": "7e0248a4-ffbd-5dba-a69c-e28b40e8bd43",
+          "name_raw": "折杉神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町喜多1785-2",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "e58e79e3ba1b70ae94d43b46416279a2a46b4a274c7fb27251161cce3a2f3a06",
+          "facility_id": "7f8434a4-b3e0-5c19-bd9f-6f147c0cdc6f",
+          "name_raw": "二森神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町北奥522-2",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "c9a0fdbcc19bdaecafcce1d92459f8db1ea4285234073a6b6421d58c793c79a4",
+          "facility_id": "83815782-5b4f-59af-ad9b-89e7c35b7d91",
+          "name_raw": "厳島神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市小井395",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "52a7dfecd65454338bc6b4b2fcf7561a0bb9c7393642d2204aaeb861cfc4c86d",
+          "facility_id": "84ebc2b9-c669-5436-a540-195e3d889aa5",
+          "name_raw": "春日神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "丹波市市島町喜多239",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "e0e7fe74947d3373a28d7a4e13b3edf66063ba90812878b60ae3873ac8baf073",
+          "facility_id": "86434171-361e-57f2-8dd0-3d0babceda29",
+          "name_raw": "春日神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町下竹田306-2",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "ae4d7e9e63baf1bde315e87d4c407a6a848fb7d5c152bb0343a0b1e449036119",
+          "facility_id": "8717b28e-49ab-5ad4-8cc6-c51a3155862a",
+          "name_raw": "三宮神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市善光寺274",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "67f166b2d93520281972c16d69dd08c04d7196aa3323af49c156781e921859f9",
+          "facility_id": "87c1fa99-948d-5e46-8151-3df1cf321a11",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "加西市市村町406",
+          "corrected_derived_municipality": "加西市",
+          "expected_source_hash": "9f14913d9372fbf00affedce8de06e006be6e3d5aea6d7df12729d0fe65d7a99",
+          "facility_id": "8874322e-1318-5c6f-9903-773f1318b5b0",
+          "name_raw": "大歳神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "加西市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "加西市市"
+        },
+        {
+          "address_raw": "丹波市市島町与戸1409",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "5fd4fd27e65eb87ca60f7101821b30725df5b104576c8bce3263defcfcded3de",
+          "facility_id": "887a7a5a-a2f7-5a5d-93a6-9534327f2f06",
+          "name_raw": "三輪神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町乙河内25",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "3ce68b4c00ae70be69924a3d1ace3bb020386139d5050f956ee0c4d911593811",
+          "facility_id": "8a505eda-616c-5f24-ab2b-fe5a91e6b335",
+          "name_raw": "天満熊野神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町上牧1065",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "e652bcd4f293a40c943335bfd10d720a99700d61b885e5454b80c2da83969ac1",
+          "facility_id": "8a67d70b-d803-508a-a594-83b8b61e35c6",
+          "name_raw": "厳島神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町酒梨48",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "2e263e7c51e356cf6a5f0b0455c830e629e49dfa6ff9c0701dd2f9e550885b5d",
+          "facility_id": "9cdcb039-77df-5cff-b1fb-6f7537ea3116",
+          "name_raw": "愛宕神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町勅使593",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "a46bab4b2eb6c5838ab2be1af7b1d9462caf1e406997a5a794b8afe4592d7ca6",
+          "facility_id": "9ea947cf-625a-56a6-8aa1-9b07dd6bfe59",
+          "name_raw": "愛宕社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "三田市市之瀬280",
+          "corrected_derived_municipality": "三田市",
+          "expected_source_hash": "746455b30ba03f8559b88c458c8288d894b44e4fea7521dfaaac1cc6250c58a2",
+          "facility_id": "9f72a9b7-3efa-5db5-b14a-dbcf8e690454",
+          "name_raw": "磐神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "三田市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "三田市市"
+        },
+        {
+          "address_raw": "南あわじ市市三條759",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "473ab0d4e82847daa72988ead0e634b9ac9c88b0eb990846de0b8185d538fcd9",
+          "facility_id": "acb353eb-1198-53ae-95a8-205ed12847b5",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "丹波市市島町戸坂304",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "b07fdb30ef714ebabd3e4cedf262562104c2d0a8cb46de57b221d264e7022e96",
+          "facility_id": "b18e61b1-e155-581b-8aa6-edd6a1ea2cfb",
+          "name_raw": "風森一ノ宮神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町岩戸527",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "61391f58433a433863a6e0eb9d8d9cb3cae1e15658a9968de742fbfd0b812ea5",
+          "facility_id": "b4e5ff6d-b9cc-5cad-9718-1c4908d514eb",
+          "name_raw": "熊野神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町中竹田1659-1",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "82b085b59e7233e910086ad2dcedcaec75df15229d90434a96cbb89d9bc66836",
+          "facility_id": "bc94d946-6f92-57a0-ab5d-a7088add1a11",
+          "name_raw": "伊都伎神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町中竹田1197-1",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "73de50c834400e9b57978ca0fb3f2e32d4d92c4a66b803d4299e70773478b2b7",
+          "facility_id": "beb2b531-0e1a-57ea-8ad8-70ae08379141",
+          "name_raw": "一宮神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "西脇市市原町346",
+          "corrected_derived_municipality": "西脇市",
+          "expected_source_hash": "d9ff0a475e0218dc98128930fe89ea4c1fb1c2a0fab13468d91de8d33dcffc48",
+          "facility_id": "c561afac-5e53-589c-8d22-bc1efa7002aa",
+          "name_raw": "大歳神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "西脇市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "西脇市市"
+        },
+        {
+          "address_raw": "豊岡市市場85",
+          "corrected_derived_municipality": "豊岡市",
+          "expected_source_hash": "b618562fad907a9fd7b551d55a348fd7b18d02327910d4cbc79a5ee73b7f0d8e",
+          "facility_id": "c7cbf1b0-63ba-561f-acc6-9d958cae7df4",
+          "name_raw": "有庫神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "豊岡市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "豊岡市市"
+        },
+        {
+          "address_raw": "丹波市市島町上竹田2015",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "a9a2c05741f6a9a63be61e2d5ebca821c361d9cf31210ed3f8b255f47e547e09",
+          "facility_id": "d251d0f5-7413-5a7d-868d-edb88d7d5dff",
+          "name_raw": "加茂神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "小野市市場町605",
+          "corrected_derived_municipality": "小野市",
+          "expected_source_hash": "8c3f0cfe110a9835ab24ad8fd6183f3d372491f9ad38d5f3fe95b1b572d01634",
+          "facility_id": "d53c2eae-acc1-5508-8ac8-1548513bb264",
+          "name_raw": "猿田彦神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "小野市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "小野市市"
+        },
+        {
+          "address_raw": "丹波市市島町戸平516",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "2ea38e87260e3de093063cdc620236936d8d3f8f034acd21db339ef0b83437c8",
+          "facility_id": "da4e4dd4-d20d-54bb-86b9-fc6d894af561",
+          "name_raw": "厳島神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町上牧1118",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "5456953f3dc84541736ff03438af19a2d2a0419d9b61be149104847297dff3d3",
+          "facility_id": "e2f6fc17-a77e-5c4a-ae28-30c975d17168",
+          "name_raw": "稲荷神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "丹波市市島町徳尾1661",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "6c5417dc79c4e776fb9e291b38c86acc3815a9408c601baec1386db4721710df",
+          "facility_id": "e60904f0-b6f2-52e2-a741-e57a7743838f",
+          "name_raw": "大原神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市徳長187",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "25c2204a8b2df5b8d7adbaa6ff5bfe614acbfa3da96267f7a697bd4e4987bcac",
+          "facility_id": "e66533a4-c476-579f-85ac-9a5b1dad1842",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "丹波市市島町中竹田2926",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "8ff2b302dca24082e8c6ffacde34590884328701418b19622e1932588d0b12d7",
+          "facility_id": "e90a2338-b8df-5632-8eb1-0913175d4a00",
+          "name_raw": "熊野神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市十一ケ所398",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "8ef8f26cb102ed1a0c27f1e556e6dc86579212fef8379cb6125c1fcb0f90c498",
+          "facility_id": "ec4cbdb7-ce24-581a-aed9-5686e9bc48cc",
+          "name_raw": "天皇神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "丹波篠山市市野々767",
+          "corrected_derived_municipality": "丹波篠山市",
+          "expected_source_hash": "64875b5d0495d1ef9d07bedefe0af489efd94bd21eb8de1df08bcae6e1cb4747",
+          "facility_id": "eca8f90c-668d-5fe2-8762-ac6c92525d6d",
+          "name_raw": "八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波篠山市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波篠山市市"
+        },
+        {
+          "address_raw": "丹波市市島町梶原533-1",
+          "corrected_derived_municipality": "丹波市",
+          "expected_source_hash": "efc13a2997eb34c8e16f06185dd4463db23eefbb5e6f29c4e5019e1caa72e80e",
+          "facility_id": "ef65d1b6-9fa8-5611-b47f-a445854e31a0",
+          "name_raw": "鴨神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "丹波市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "丹波市市"
+        },
+        {
+          "address_raw": "南あわじ市市市547",
+          "corrected_derived_municipality": "南あわじ市",
+          "expected_source_hash": "654e504ac0d19526fa6d50e997637b051d10a350ec48f8f1e93b175b1c77d678",
+          "facility_id": "ef6b573d-06bc-5071-b33c-bb6b82dd47a3",
+          "name_raw": "若宮神社",
+          "pending_entry_id": null,
+          "prefecture_code": "28",
+          "previous_derived_municipality": "南あわじ市市",
+          "source_file": "sources/hyogo.json",
+          "stored_municipality": "南あわじ市市"
+        },
+        {
+          "address_raw": "小諸市市町字横山丙1106-1",
+          "corrected_derived_municipality": "小諸市",
+          "expected_source_hash": "dad352cbc6110f72ddafe8472cb0c2f364ba89ae9027f0872d7072c11b75f944",
+          "facility_id": "9dc522dd-8988-5585-8bf2-1532faf3ec56",
+          "name_raw": "諏訪神社",
+          "pending_entry_id": "7fdf1563-d9f1-57b8-98b4-0dcf1ccb21e6",
+          "prefecture_code": "20",
+          "previous_derived_municipality": "小諸市市",
+          "source_file": "sources/nagano.json",
+          "stored_municipality": "小諸市市"
+        },
+        {
+          "address_raw": "十日町市市之越卯102番地",
+          "corrected_derived_municipality": "十日町市",
+          "expected_source_hash": "981db379634784e1a08169ae9e6f2de1fd1fa5af0871119de7cfed423b5e4f2d",
+          "facility_id": "995e2404-9b2e-598b-8645-124c79654526",
+          "name_raw": "十二社",
+          "pending_entry_id": null,
+          "prefecture_code": "15",
+          "previous_derived_municipality": "十日町市市",
+          "source_file": "sources/niigata.json",
+          "stored_municipality": "十日町市市"
+        },
+        {
+          "address_raw": "見附市市野坪町56番地",
+          "corrected_derived_municipality": "見附市",
+          "expected_source_hash": "156caddfeae6e61d5d3894b9d4371bc0fc86529228654a7165099bf13a946863",
+          "facility_id": "0a7766f8-c82d-5795-bb6d-e027254636d6",
+          "name_raw": "出雲神社",
+          "pending_entry_id": null,
+          "prefecture_code": "15",
+          "previous_derived_municipality": "見附市市",
+          "source_file": "sources/niigata.json",
+          "stored_municipality": "見附市市"
+        },
+        {
+          "address_raw": "阿賀野市市野山77番地",
+          "corrected_derived_municipality": "阿賀野市",
+          "expected_source_hash": "590aa4a9cad0cce9ae6ffa632e97ba440853979e9523fe9c74be5c2fb7255d8b",
+          "facility_id": "9b062c88-253c-5f9d-b58a-2cf1d2e662b0",
+          "name_raw": "諏訪神社",
+          "pending_entry_id": null,
+          "prefecture_code": "15",
+          "previous_derived_municipality": "阿賀野市市",
+          "source_file": "sources/niigata.json",
+          "stored_municipality": "阿賀野市市"
+        },
+        {
+          "address_raw": "南魚沼市市野江乙1323番地",
+          "corrected_derived_municipality": "南魚沼市",
+          "expected_source_hash": "2356f5e0110602adc6cd2817e87c672451cabdea641837acb1cd455d0772e41c",
+          "facility_id": "c29bea80-f1fb-55e4-a694-25381c09a788",
+          "name_raw": "後山神社",
+          "pending_entry_id": null,
+          "prefecture_code": "15",
+          "previous_derived_municipality": "南魚沼市市",
+          "source_file": "sources/niigata.json",
+          "stored_municipality": "南魚沼市市"
+        },
+        {
+          "address_raw": "南魚沼市市野江甲297番地甲",
+          "corrected_derived_municipality": "南魚沼市",
+          "expected_source_hash": "129b87dbcb097754d2cf59675593866ed826dc6779b051c56111ea51cbf674b3",
+          "facility_id": "312b0ad6-0421-54e2-bfc1-0da8c615c162",
+          "name_raw": "神明社",
+          "pending_entry_id": null,
+          "prefecture_code": "15",
+          "previous_derived_municipality": "南魚沼市市",
+          "source_file": "sources/niigata.json",
+          "stored_municipality": "南魚沼市市"
+        },
+        {
+          "address_raw": "南魚沼市市野江丙472番地",
+          "corrected_derived_municipality": "南魚沼市",
+          "expected_source_hash": "fd63235315923838bb4ebf7a0e9041778318079773348655da0c22ed29609907",
+          "facility_id": "3d138bb6-378e-5a85-9041-3bae8277befa",
+          "name_raw": "辻又神社",
+          "pending_entry_id": null,
+          "prefecture_code": "15",
+          "previous_derived_municipality": "南魚沼市市",
+          "source_file": "sources/niigata.json",
+          "stored_municipality": "南魚沼市市"
+        },
+        {
+          "address_raw": "京都市左京区静市市原町1415",
+          "corrected_derived_municipality": "京都市左京区",
+          "expected_source_hash": "f290ce68c5370b7ddcbade477e119eba250a41047cd35a14b1512597f9585171",
+          "facility_id": "b1956000-3d1a-55c5-ba75-f0f01212b656",
+          "name_raw": "嚴島神社",
+          "pending_entry_id": null,
+          "prefecture_code": "26",
+          "previous_derived_municipality": "京都市左京区静市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "京都市左京区静市市"
+        },
+        {
+          "address_raw": "京都市左京区静市市原町1416.1417",
+          "corrected_derived_municipality": "京都市左京区",
+          "expected_source_hash": "8be521c6cc31459808615783da5af49f836b8f4e6a0b117eb178eaf3407d638b",
+          "facility_id": "84fc9aef-a9c2-5de7-8713-7936f1449286",
+          "name_raw": "大神宮社",
+          "pending_entry_id": "9a1d5837-3e8d-574b-8c2b-e38e1fb2cf19",
+          "prefecture_code": "26",
+          "previous_derived_municipality": "京都市左京区静市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "京都市左京区静市市"
+        },
+        {
+          "address_raw": "木津川市市坂西山",
+          "corrected_derived_municipality": "木津川市",
+          "expected_source_hash": "cfb3b33686f0ad5e4fe575d175c704522ba2fa3ca600d0ad18dc319f4896d0db",
+          "facility_id": "5ed90671-28b9-5de5-b822-18e5aadf43db",
+          "name_raw": "宇賀魂神社",
+          "pending_entry_id": "f7e58849-641a-5541-b35a-7b312b69c13d",
+          "prefecture_code": "26",
+          "previous_derived_municipality": "木津川市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "木津川市市"
+        },
+        {
+          "address_raw": "木津川市市坂幣羅坂100",
+          "corrected_derived_municipality": "木津川市",
+          "expected_source_hash": "67b5f9c75611c20dcfaabdcca7459e712bb991d1aef7e36aaea5b32b81e24062",
+          "facility_id": "5603a0d5-f83b-5cf4-bd7f-6e50db457aa5",
+          "name_raw": "幣羅坂神社",
+          "pending_entry_id": null,
+          "prefecture_code": "26",
+          "previous_derived_municipality": "木津川市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "木津川市市"
+        },
+        {
+          "address_raw": "木津川市市坂幣羅坂",
+          "corrected_derived_municipality": "木津川市",
+          "expected_source_hash": "3aa85533a739799e50188fde812868ca78e9c7fbfab15ed0ef1e25d8b420b550",
+          "facility_id": "7b65de4a-7c13-55ab-83e2-67797a0f184e",
+          "name_raw": "白山神社",
+          "pending_entry_id": "bb87d58f-925e-583c-bb33-f5156b83592a",
+          "prefecture_code": "26",
+          "previous_derived_municipality": "木津川市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "木津川市市"
+        },
+        {
+          "address_raw": "城陽市市辺大谷68",
+          "corrected_derived_municipality": "城陽市",
+          "expected_source_hash": "f131b376adfbf770dce8f05e8ed22ee6489ca86771c2a55ab5b4434e5a90d2b9",
+          "facility_id": "3f967886-c3c9-5955-b7ce-b666b947e6e3",
+          "name_raw": "粟神社",
+          "pending_entry_id": null,
+          "prefecture_code": "26",
+          "previous_derived_municipality": "城陽市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "城陽市市"
+        },
+        {
+          "address_raw": "城陽市市辺城下88",
+          "corrected_derived_municipality": "城陽市",
+          "expected_source_hash": "382bf82a5856457333346c02c497d6c7e8ae8f5e512a4a81fcb882baecbe268b",
+          "facility_id": "44fec61c-6e00-57dc-9428-e39ae2151048",
+          "name_raw": "天満神社",
+          "pending_entry_id": "c86264bc-9a0e-526d-965d-056833c430c4",
+          "prefecture_code": "26",
+          "previous_derived_municipality": "城陽市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "城陽市市"
+        },
+        {
+          "address_raw": "福知山市市寺1573",
+          "corrected_derived_municipality": "福知山市",
+          "expected_source_hash": "48ca8f559ef4e40d2bfca99d3c5cf41b5c12480e96c7cbae3cdf6ee79732e055",
+          "facility_id": "75b996ed-1d14-5ae5-99f6-8131ff741913",
+          "name_raw": "熊野神社",
+          "pending_entry_id": "e45c9df3-225a-570b-83bd-ad5d5e05edc3",
+          "prefecture_code": "26",
+          "previous_derived_municipality": "福知山市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "福知山市市"
+        },
+        {
+          "address_raw": "舞鶴市市場市場126-4",
+          "corrected_derived_municipality": "舞鶴市",
+          "expected_source_hash": "34fa7b5f7c9b784327db3bf22f363cecddff5ed453d460e7c77796f5b9aa82ee",
+          "facility_id": "a7d72c3e-e4cd-5a9b-a7c3-9822b40ed6d0",
+          "name_raw": "八幡神社",
+          "pending_entry_id": "ae0dd5d7-d82b-54db-a727-66a34524d994",
+          "prefecture_code": "26",
+          "previous_derived_municipality": "舞鶴市市",
+          "source_file": "sources/kyoto.json",
+          "stored_municipality": "舞鶴市市"
+        },
+        {
+          "address_raw": "西条市市之川6681",
+          "corrected_derived_municipality": "西条市",
+          "expected_source_hash": "4b5aecd504cf2a8b12689d1141611008cdb074198e1c1b64716869d748201aff",
+          "facility_id": "fb927eb7-f1bc-5241-a78c-25521f9d8380",
+          "name_raw": "白目山神社",
+          "pending_entry_id": null,
+          "prefecture_code": "38",
+          "previous_derived_municipality": "西条市市",
+          "source_file": "sources/ehime.json",
+          "stored_municipality": "西条市市"
+        },
+        {
+          "address_raw": "西条市市之川6654-2",
+          "corrected_derived_municipality": "西条市",
+          "expected_source_hash": "71f7298a36c66b1208a6690fe970b466287d15d9f4943d13fc41a1335802c038",
+          "facility_id": "1ce17381-39d2-5768-ada7-fd2bb2998277",
+          "name_raw": "三太神社",
+          "pending_entry_id": null,
+          "prefecture_code": "38",
+          "previous_derived_municipality": "西条市市",
+          "source_file": "sources/ehime.json",
+          "stored_municipality": "西条市市"
+        },
+        {
+          "address_raw": "伊予市市場甲957",
+          "corrected_derived_municipality": "伊予市",
+          "expected_source_hash": "6b2de8dcf3aa15f3002065448cb51339f05cc5d470ea543f2c1f2e559c808803",
+          "facility_id": "50c340c5-a310-5d10-af95-74fd2e98af15",
+          "name_raw": "宮領八幡神社",
+          "pending_entry_id": null,
+          "prefecture_code": "38",
+          "previous_derived_municipality": "伊予市市",
+          "source_file": "sources/ehime.json",
+          "stored_municipality": "伊予市市"
+        },
+        {
+          "address_raw": "大洲市市木１０４３",
+          "corrected_derived_municipality": "大洲市",
+          "expected_source_hash": "48d68ff8ca59cbead1c162d1ac30aa3c3acef36513dd24d2f332c90dea6b304c",
+          "facility_id": "ee46a2dc-8cf3-5238-93df-20ccbbf5b4be",
+          "name_raw": "一宮神社（市木）",
+          "pending_entry_id": null,
+          "prefecture_code": "38",
+          "previous_derived_municipality": "大洲市市",
+          "source_file": "sources/ehime.json",
+          "stored_municipality": "大洲市市"
+        },
+        {
+          "address_raw": "大和高田市市場308",
+          "corrected_derived_municipality": "大和高田市",
+          "expected_source_hash": "540c91017cf5ac94f3773249800c0929cd56eb3d066be2750d8c63b31dbfbc85",
+          "facility_id": "6c6347dd-d55c-540e-b854-b33b096e6862",
+          "name_raw": "春日神社",
+          "pending_entry_id": null,
+          "prefecture_code": "29",
+          "previous_derived_municipality": "大和高田市市",
+          "source_file": "sources/nara.json",
+          "stored_municipality": "大和高田市市"
+        },
+        {
+          "address_raw": "益田市市原町イ642番地",
+          "corrected_derived_municipality": "益田市",
+          "expected_source_hash": "12ff6828a08a189a8a442c94c785a9165d36e0240f0a9123e498f2814260de9a",
+          "facility_id": "2741959d-4c8b-5cbd-829c-6c591a3411d6",
+          "name_raw": "八幡宮",
+          "pending_entry_id": null,
+          "prefecture_code": "32",
+          "previous_derived_municipality": "益田市市",
+          "source_file": "sources/shimane.json",
+          "stored_municipality": "益田市市"
+        }
+      ],
+      "entry_ids": [
+        "1e1067d1-d1d4-5aaa-b7d0-4e545f2ff026",
+        "28004be7-bd4d-50c9-afb0-b81c89dcee79",
+        "691e4b18-20fd-5b66-a7d9-2b0fcd800c30",
+        "692825fc-4026-59c6-8d54-5f8163631646",
+        "7fdf1563-d9f1-57b8-98b4-0dcf1ccb21e6",
+        "93c5f5ef-cb5b-5ff9-9951-7b301c7a166f",
+        "99a8f989-fb08-5bd9-bdc6-571707c96aa5",
+        "9a1d5837-3e8d-574b-8c2b-e38e1fb2cf19",
+        "9c2f267c-a1c6-5a7b-a587-0f677dce6027",
+        "ae0dd5d7-d82b-54db-a727-66a34524d994",
+        "bb87d58f-925e-583c-bb33-f5156b83592a",
+        "bd02b187-eda4-52e6-89e8-a0f2ca18d756",
+        "c1dbd213-25cb-5b3f-96f2-1a9d4fd10c91",
+        "c86264bc-9a0e-526d-965d-056833c430c4",
+        "e45c9df3-225a-570b-83bd-ad5d5e05edc3",
+        "ea1e4f64-af1f-5311-8adc-ee45069b5098",
+        "f7e58849-641a-5541-b35a-7b312b69c13d"
+      ],
+      "explicit_municipality_fields_preserved": [
+        {
+          "address_raw": "伊勢崎市市場町1丁目1593番地",
+          "corrected_derived_municipality": "伊勢崎市",
+          "expected_source_hash": "70e08a7b6dfdd9ca9bcddb61c5cc37fa970def7abeff1a5b6e0f651856b074d5",
+          "facility_id": "7501ae8b-5676-5d44-a91c-884f95fb007a",
+          "name_raw": "八坂神社",
+          "pending_entry_id": null,
+          "prefecture_code": "10",
+          "previous_derived_municipality": "伊勢崎市市",
+          "source_file": "sources/gunma.json",
+          "stored_municipality": "伊勢崎市"
+        },
+        {
+          "address_raw": "太田市市場町738番地",
+          "corrected_derived_municipality": "太田市",
+          "expected_source_hash": "0cca236fce9db81a567a75c07045ea358cbcf00e900b4f26a9d10191e40dc8f5",
+          "facility_id": "8c4b81cf-5d51-5795-8ac5-f388a88e0fbd",
+          "name_raw": "八幡宮",
+          "pending_entry_id": null,
+          "prefecture_code": "10",
+          "previous_derived_municipality": "太田市市",
+          "source_file": "sources/gunma.json",
+          "stored_municipality": "太田市"
+        },
+        {
+          "address_raw": "前橋市市之関町665番地",
+          "corrected_derived_municipality": "前橋市",
+          "expected_source_hash": "f520dffd6bdb0ee703aec9c7104db9c9b0c24c30a1d965e25b18ed32e874d56b",
+          "facility_id": "d416498a-51ee-53eb-bc43-0085d02acdb8",
+          "name_raw": "住吉神社",
+          "pending_entry_id": null,
+          "prefecture_code": "10",
+          "previous_derived_municipality": "前橋市市",
+          "source_file": "sources/gunma.json",
+          "stored_municipality": "前橋市"
+        },
+        {
+          "address_raw": "愛知県岡崎市市場町字町裏52番地",
+          "corrected_derived_municipality": "岡崎市",
+          "expected_source_hash": "b52da51635b451d6c731b569f4753e79dbb40a3e0d5527b3e4254a4eb616ad89",
+          "facility_id": "52afbeec-85ed-58c5-9645-b9f337fab49e",
+          "name_raw": "津島社",
+          "pending_entry_id": null,
+          "prefecture_code": "23",
+          "previous_derived_municipality": "岡崎市市",
+          "source_file": "sources/aichi.json",
+          "stored_municipality": "岡崎市"
+        },
+        {
+          "address_raw": "愛知県豊田市市場町市場前331",
+          "corrected_derived_municipality": "豊田市",
+          "expected_source_hash": "0eac74e6eaa4a011ed85e8b87b8d4dd606b038fc93e6785bc2815afa1edc1f08",
+          "facility_id": "e7cd2b7a-a8d1-50a0-8d59-b2e9e5594c6a",
+          "name_raw": "熊野神社",
+          "pending_entry_id": null,
+          "prefecture_code": "23",
+          "previous_derived_municipality": "豊田市市",
+          "source_file": "sources/aichi.json",
+          "stored_municipality": "豊田市"
+        },
+        {
+          "address_raw": "愛知県西尾市市子町大宮西71番地",
+          "corrected_derived_municipality": "西尾市",
+          "expected_source_hash": "e2749c23a9b5492ba10751cdf9a378385d0bbfcc614734b264b4dadb79244841",
+          "facility_id": "9abab643-329c-51d0-a754-e9cd541ff6ba",
+          "name_raw": "神明社",
+          "pending_entry_id": null,
+          "prefecture_code": "23",
+          "previous_derived_municipality": "西尾市市",
+          "source_file": "sources/aichi.json",
+          "stored_municipality": "西尾市"
+        },
+        {
+          "address_raw": "愛知県新城市市川字宮ノ上２８番地",
+          "corrected_derived_municipality": "新城市",
+          "expected_source_hash": "f6315a6acc13e3d419b15c1cbc3792318828036c19ac045f29f48eca33eb0c7b",
+          "facility_id": "2d50046f-c710-543a-9196-f2df0509b372",
+          "name_raw": "白鳥神社",
+          "pending_entry_id": null,
+          "prefecture_code": "23",
+          "previous_derived_municipality": "新城市市",
+          "source_file": "sources/aichi.json",
+          "stored_municipality": "新城市"
+        },
+        {
+          "address_raw": "愛知県豊田市市平町西8番地",
+          "corrected_derived_municipality": "豊田市",
+          "expected_source_hash": "4e6ed5ae440685547ebc194df3f49414ce1e9343a2b277152307d5a34f1044ff",
+          "facility_id": "26c04a39-24bf-57cb-be2e-3ce8c1795f7b",
+          "name_raw": "津嶋神社",
+          "pending_entry_id": null,
+          "prefecture_code": "23",
+          "previous_derived_municipality": "豊田市市",
+          "source_file": "sources/aichi.json",
+          "stored_municipality": "豊田市"
+        },
+        {
+          "address_raw": "愛知県豊田市市木町谷耳太10番地",
+          "corrected_derived_municipality": "豊田市",
+          "expected_source_hash": "3040d9ca0aff8cdb257f169f8ffa98f8670facae816954ef0b4102313f3ba075",
+          "facility_id": "bc301db3-df1e-5be5-888f-2fcc98dead66",
+          "name_raw": "八柱神社",
+          "pending_entry_id": null,
+          "prefecture_code": "23",
+          "previous_derived_municipality": "豊田市市",
+          "source_file": "sources/aichi.json",
+          "stored_municipality": "豊田市"
+        },
+        {
+          "address_raw": "愛知県豊川市市田町宮田9",
+          "corrected_derived_municipality": "豊川市",
+          "expected_source_hash": "b7c54048a8d516ea394aa0a6750a597d6e6176830c6f3e7001873fb50c08c8c3",
+          "facility_id": "606fa531-c215-5c56-9ad6-04f4c757e62a",
+          "name_raw": "伊知多神社",
+          "pending_entry_id": null,
+          "prefecture_code": "23",
+          "previous_derived_municipality": "豊川市市",
+          "source_file": "sources/aichi.json",
+          "stored_municipality": "豊川市"
+        }
+      ],
+      "historical_city_name_evidence": [
+        {
+          "city_name_raw": "八日市市",
+          "excerpt": "高島町、新旭町、H17年1月1日 東近江市 旧八日市市、永源寺町、五個荘町、愛東町、湖東町、H17年2月11日 東近江市、旧蒲生町、能登川町、H18年1月1日 米原市 旧山東町、伊吹町、米原町、H17年2月14",
+          "fetched_at": "2026-11-13T01:25:48.961927+00:00",
+          "locator": "滋賀県の市町村合併の東近江市の合併状況欄。HTML表以外の本文にも対応して確認。",
+          "observation": "最初の表tr限定抽出では候補0となったがHTTP取得は成功。取得停止ではなく本文の抽出位置を点検し直した。",
+          "page_hash": "275c8082196b434f586f991111405861e93fcc65a1deab041afe3d8f4f22b46d",
+          "status": "body_inspected",
+          "title": [
+            "滋賀県の市町村合併｜滋賀県"
+          ],
+          "url": "https://www.pref.shiga.lg.jp/bh00/7752.html"
+        },
+        {
+          "city_name_raw": "今市市",
+          "fetched_at": "2026-11-13T01:25:51.169207+00:00",
+          "page_hash": "1f88c0773efea96a615967d5e8679e049f393e6a96c9c084a8aaade3e4b1dc3b",
+          "rows": [
+            "日光市 平成18年3月20日 日光市、今市市、\r\n\t\t\t足尾町、栗山村、\r\n\t\t\t藤原町 新設 90,066人 リンク（外部サイト）"
+          ],
+          "status": "body_inspected",
+          "title": [
+            "栃木県／市町村合併について"
+          ],
+          "url": "https://www.pref.tochigi.lg.jp/a02/pref/shichouson/gappei/1174633899527.html"
+        }
+      ],
+      "independent_review": {
+        "approved_facilities": 115,
+        "checked_at": "2026-11-13T01:31:30.213186+00:00",
+        "held_facilities": 0,
+        "history_code_checked_at": "2026-11-13T01:33:39.289141+00:00",
+        "proposal_sha256": "2c3ebc1981177a642947761889c73d2c60388075cc6fdc246ccdc3c83713a7ca",
+        "scope": "全115境界と原名・原住所・原文hashを独立点検。明示市町村欄の10施設は変更しない。実資料で現旧5市名を確認し、再取得時の履歴保持も別途コード審査。"
+      },
+      "new_verified_entries": 0,
+      "observation": "原住所・原名・全施設/登録ID・原文hash・全読み・既存補正と判断を保持。22正本ファイルの変更hashだけを調査管理に同期する。収集時は履歴を重複なく保持するが古い原文hashの補正値を新住所へ再適用しない。J-LISはrobots400で停止し、別経路で取得していない。",
+      "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+      "parser_review_pending_entries": 17,
+      "retained_pending_entries": 17,
+      "scope": "全国正本を走査し、旧抽出と保存値が同じ115施設の導出municipalityのみ補正。17保留登録の読みは未解決のまま。市市を含む現旧5市名と明示欄10施設を保持し、熊野神社の字名・郵便番号差など別問題を解決済みにしない。現旧全自治体の完全な住所判定や全国全保留の解決ではない。",
+      "source_kind": "canonical_derivation_review",
+      "source_publisher": "正本の原住所と国税庁・滋賀県・栃木県の市名資料",
+      "status": "115_derived_municipalities_corrected_no_readings_adopted",
+      "unavailable_reference": {
+        "error": "robots status unknown: 400",
+        "status": "acquisition_stopped",
+        "url": "https://www.j-lis.go.jp/spd/code-address/kinki/cms_14514183.html"
+      },
+      "verification": {
+        "actual_ime_import": "not_tested",
+        "eligible_entry_ids_unchanged": true,
+        "ime_formats_byte_identical": {
+          "atok": {
+            "rows": 13563,
+            "sha256": "1f78415296e6f9c3c803ad24797222cffddbeb24a89c658210f0b44a24f2e7d4"
+          },
+          "atok_unicode": {
+            "rows": 13714,
+            "sha256": "1008faa5fb272f6244e119dd9182cef953e01a77c3e58be1b3a45285bad21cb6"
+          },
+          "google": {
+            "rows": 13714,
+            "sha256": "77e6df512929ceb105ab993353c54b7199e418f4a58b394854bf5628e8d17b2f"
+          },
+          "macos": {
+            "rows": 13714,
+            "sha256": "586bae7fcd1f444e312b6b4b669c573f211523e88bd5363570deea109f394765"
+          },
+          "mozc": {
+            "rows": 13714,
+            "sha256": "77e6df512929ceb105ab993353c54b7199e418f4a58b394854bf5628e8d17b2f"
+          },
+          "msime": {
+            "rows": 13714,
+            "sha256": "f4c56ce494d78a5e356d420015bbbd2dc5f3d1f40909b4bf8f12b91db4ddee48"
+          }
+        },
+        "raw_entries_and_source_fields_except_derived_municipality_unchanged": true
       }
     }
   ],
@@ -348839,6 +350672,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "山梨市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "山梨市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "7091b46bcc1474cd6f82b6462739aabdad15db64ca5bb89ddd2b371b4f3838b4",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "山梨市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "山梨市市川689",
@@ -401780,6 +403624,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "小諸市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "小諸市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "dad352cbc6110f72ddafe8472cb0c2f364ba89ae9027f0872d7072c11b75f944",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "小諸市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "小諸市市町字横山丙1106-1",
@@ -448830,6 +450685,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "野洲市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "野洲市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "ec953ccfb74a8d4589c7d555663a599b35f4176c21ff951ef752cb59ef54fe56",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "野洲市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "野洲市市三宅",
@@ -451560,6 +453426,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "東近江市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "東近江市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "d28bb3ebc337b6aaac9dba38a9266d8f1a7dc27b8bec3e9203be9d730be9af0d",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "東近江市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "東近江市市辺町",
@@ -477529,6 +479406,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "東近江市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "東近江市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "bb40bf5209e9b6b59ad4bb46c47ca41e6e653e15c3df026596ee7b8436f6298a",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "東近江市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "東近江市市ケ原町",
@@ -494242,6 +496130,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "東近江市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "東近江市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "e7eec76ad250a676f485199c5d9284afc9916348f3a71a4a76af2536a2076c7a",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "東近江市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "東近江市市原野町",
@@ -496055,6 +497954,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "近江八幡市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "近江八幡市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "bda829c1d6f4c0b04f2e04c91e94a31e88dd2ca46070c37a7e63a2b535009a7f",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "近江八幡市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "近江八幡市市井町",
@@ -497210,6 +499120,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "米原市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "米原市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "a61045500f4ba01adfc6e3b69e5feba7fbb6d419354420d880f42e0eed26106f",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "米原市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "米原市市場",
@@ -510486,6 +512407,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "米原市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "米原市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "1d76e730c99c3b7dcb343e17ad95918c13d011f70ccfc591f0e92779be05034f",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "米原市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "米原市市場",
@@ -525460,6 +527392,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "東近江市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "東近江市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "834f9a8eb88a0abb4b88289c02a53e0a1562478c7cca23364321104372a07a35",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "東近江市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "東近江市市子殿町",
@@ -564425,6 +566368,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "京都市左京区静市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "京都市左京区",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "8be521c6cc31459808615783da5af49f836b8f4e6a0b117eb178eaf3407d638b",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "京都市左京区静市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "京都市左京区静市市原町1416.1417",
@@ -568161,6 +570115,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "舞鶴市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "舞鶴市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "34fa7b5f7c9b784327db3bf22f363cecddff5ed453d460e7c77796f5b9aa82ee",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "舞鶴市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "舞鶴市市場市場126-4",
@@ -571433,6 +573398,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "木津川市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "木津川市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "3aa85533a739799e50188fde812868ca78e9c7fbfab15ed0ef1e25d8b420b550",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "木津川市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "木津川市市坂幣羅坂",
@@ -574554,6 +576530,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "城陽市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "城陽市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "382bf82a5856457333346c02c497d6c7e8ae8f5e512a4a81fcb882baecbe268b",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "城陽市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "城陽市市辺城下88",
@@ -580724,6 +582711,17 @@
             "target_name_or_locality_hits": 0,
             "url": "https://data.bodik.jp/dataset/6ad07527-e6ad-4528-b1ad-00e8b5bd1b38/resource/7f63e283-49c4-4737-a838-ccea5cdbc205/download/260002kankoushisetsu.csv"
           }
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "福知山市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "48ca8f559ef4e40d2bfca99d3c5cf41b5c12480e96c7cbae3cdf6ee79732e055",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "福知山市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "福知山市市寺1573",
@@ -584866,6 +586864,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "木津川市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "木津川市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "cfb3b33686f0ad5e4fe575d175c704522ba2fa3ca600d0ad18dc319f4896d0db",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "木津川市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "木津川市市坂西山",
@@ -679894,6 +681903,17 @@
           "source_kind": "canonical_parser_diagnostic",
           "status": "municipality_boundary_requires_review_reading_not_adopted",
           "stored_municipality": "土佐市市"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T01:35:22.818315+00:00",
+          "corrected_derived_municipality": "土佐市",
+          "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+          "expected_source_hash": "36f8fda96bd78d6037742c13bc68a144d13ef306c7aee23136b9c077c8dae811",
+          "observation": "原住所から導出した市町村境界のみを補正し旧値を履歴保存。字名・地番・名称・原文hash・読みを変更しない。この補正によって読みや同一施設の問題を解決したとは扱わない。",
+          "previous_derived_municipality": "土佐市市",
+          "source_kind": "canonical_derivation_review",
+          "status": "derived_municipality_boundary_corrected_reading_still_pending"
         }
       ],
       "address": "高知県土佐市市野々1627番地",
@@ -871096,50 +873116,50 @@
     "sources/akita.json": "bf8175b9dd2154d91679e92a9e4d5f9f6d981e0c533a1e7972d4dbab73c73cb7",
     "sources/aomori.json": "fd6b32256d3add789294ab094d016f6a8542e93fa104d29c06fdd6d83b0ce872",
     "sources/chiba.json": "266b6f5afaa6152f08a714cf5e04b73fbaacb8e6716a58d8c55bda71830d60b8",
-    "sources/ehime.json": "5b511c8bfba570014034d6866db6cbee32bf6408a2870713aeb507ca9bf021e5",
-    "sources/fukui.json": "3b4f990f49d8731270781df9a7547c0ea6dc19d22f666b4c1f38cb5a62043333",
+    "sources/ehime.json": "f55b458d43a369dc4d1b7005ee80b7b23358c65adee384902c9d701553c91009",
+    "sources/fukui.json": "a84e02f74f91b2c3784173083c7cfcf000992ec3608ff84e1e84aafc7023a5b7",
     "sources/fukuoka.json": "78b980371f6af369887b694ab553fb101342184e6d70df3ebf0af93ab71c27f7",
     "sources/fukushima.json": "66bd00edf2c3e807afa675b42227a360f7ab3339d34ad8a3ff13b094a6b8ec77",
-    "sources/gifu.json": "bea0de9c835a429ad05832e5fc3eb88651105595246da8d932405409d3c6479e",
+    "sources/gifu.json": "07fbad326bdb0fb38f7f7b205c31ae9222a24334bd2e8a114a9b95f5b6169539",
     "sources/gunma.json": "109659453066af53aec78f744d0255dbbd03730ae463c91b42140e3a5971b86b",
     "sources/hiroshima.json": "ff987edb3ab05278a50fe159c2feb58e8ac963a46ed14a71e8601656ae4e58cb",
     "sources/hokkaido.json": "db8ac59cb2c3b9ac4212abb9b50b441e49ef63d0c50dd754738308ef8b1f30cf",
-    "sources/hyogo.json": "b97a5a1ee047ccac191c1e583f380e2dcd47911a6a9725ce2524e851549a6af3",
+    "sources/hyogo.json": "7b50b439cb8aacc9d4fcc66302ce5103aeba4a86dd884daff7bf6c326631fa99",
     "sources/ibaraki.json": "618d4e3d770cc424da8d3fb71b3397d4ec4f4ddc950f5430dac418dc3232ab41",
-    "sources/ishikawa.json": "18cdb672e4599a735cc45de24fa91c3e9a659f7f87a0e8d407497e6d3c1f304f",
+    "sources/ishikawa.json": "6413b685b2889f7919c7bce38812a153a701b5895fdc959f8f561758fb46c0e2",
     "sources/iwate.json": "c74b74c586a74ccaf9416bee34f079b05ac627619025ca3147f150e6a4e12c15",
     "sources/kagawa.json": "ccedbe0d766cd5f3e76e82c906c5c8d9a3aa09f2a6183807a227491728e33435",
-    "sources/kagoshima.json": "125ae08404bd018fe85a2d6d676b66b2aeef62d2e77ad31ee0fc6ff446a05626",
+    "sources/kagoshima.json": "4ee7b33b7508b40400fd4fe64caf46e08ad0f38496d8842aac53ab589a9166c6",
     "sources/kanagawa.json": "b839af6c64a32ceed7652addce89dda37ed7a1896275a6b740f3d73cc144a024",
-    "sources/kochi.json": "49e5618c34c13eb940b6a2cc9bfbbe012fde7049f4eb5dd699bc74f84bfdb4a3",
+    "sources/kochi.json": "2eb988374ecd76ff6d1189a206375c43a9d57e594f20a8e48faa005d40a54d84",
     "sources/kumamoto.json": "09b21bf62c7b526d8b6cb7cf37186e3ce3658557af9e252913499b76299d2893",
-    "sources/kyoto.json": "2addaecbe1241423804da649d55bca45959b7cb653be577e77b5fb9502a33112",
-    "sources/mie.json": "35e97f4944abcf52807faea14597cc5eefbac2808a503bd12d503b09ae90db7e",
-    "sources/miyagi.json": "7d12bb067f89f2c6244c16132a96be2cb2b562e677af3ee8e5fd975acb342b69",
+    "sources/kyoto.json": "8da8b0945a86408034716393bd98ec8715c54c76535b8b92cca1b34877b68f1b",
+    "sources/mie.json": "28e0c837f20f5e7eaebd66599ab4cfba1ff30dce3f47890b11b99b204fb7e20e",
+    "sources/miyagi.json": "0498910a038519c7ca4ff81490c352747daee22f982f5bf7c130143d60d83408",
     "sources/miyazaki.json": "e19a1e30b0e10cfa7801147d080531d6b5be4c840df3685699f2b8354a1b3673",
     "sources/miyazaki_youth.json": "4ce7239fdba6658903d13d2c814520fdc0bcbe52a5adefc5b1b0e7d8eb912b9d",
-    "sources/nagano.json": "ab58fa8d51a02a5c17d60965cefcde616ba6cb55de5f2244aba8f6208948d147",
+    "sources/nagano.json": "d728211309dd14a4207bc95f65d3c3c7526a7feea45708927b8e5fd70f9a0504",
     "sources/nagasaki.json": "cc50f896d008bca9b1821481986f29910dcc8af8a19a0e1dcf6e3b298fa99b9b",
-    "sources/nara.json": "e80c7d154028e554a3fccfa81f88c2cd84ff75b78f4d249eba09875f6bd77237",
-    "sources/niigata.json": "5f0b7dce955999e1d91030e287b17e4961e8a5333c61e604206c73cfcc4812ea",
+    "sources/nara.json": "0d178e782ac675eaa45f92462df68e7645381363c2697a24f4a891b9bdada765",
+    "sources/niigata.json": "d9367d84bd521234a8f3e13940767599e75e4e44411a0feca34d728061a11463",
     "sources/oita.json": "0097f1bafffd4046325cfa20a43d307e493ee961da08af089a00f00d5effbe86",
     "sources/okayama.json": "0eb9a58590b8b909b387e48c5556b9c050d6221259feae0829f1439ff1d36c60",
     "sources/okinawa.json": "d4385bce3d07b642bcaba057bf59d723b3875dd54341bd10aa83a8d6d5956857",
-    "sources/osaka.json": "6e4a4e7a88e20d301a3dde26add21ef12c6cd38f39164c2f709127696aea16fb",
+    "sources/osaka.json": "14b8f1ff0419ba3ab55841f6b20e7d5cdc4a64d4fc9372675eb8823736c69dd4",
     "sources/saga.json": "a09a290410dbeb7595d38392994f2767d4c3ab812466e2d7dc0be8b26567f469",
-    "sources/saitama.json": "e441b59917f48f0241df2765080fabd7743587c7c8a2a505893fe0d2eff5dff2",
-    "sources/shiga.json": "59c1e2a86e8ea733cdc80238cd4ac02a397e4c6a015c63808b078012db44c774",
-    "sources/shimane.json": "d8a39b4c547b65d721caf85a3d980309e578963db669eb39369ed057b6ba8cc4",
-    "sources/shizuoka.json": "4b0b734dc0979a1ab02d01306a748d64e6a741b3da9971f6ca79f2cdc09bd19f",
+    "sources/saitama.json": "b11129b5c0b5e83ffcfb80ca5e852a4d4693431a167cb683a4f08ed47f1f45ae",
+    "sources/shiga.json": "452ee67ebd746739de29c1bf9ea0880c6481f51cb6a5fa7a0638077d0fef3444",
+    "sources/shimane.json": "042f355ccacf0330980bd1267acb7d1edaee0e954099e47c58271841b1a8cc9b",
+    "sources/shizuoka.json": "3bdcef81d61dec6b2a72b12c64d642046104a0058573f41146b93a168d2aef1b",
     "sources/tochigi.json": "61dfca686c544a8dabbc3eeda97a5cf77aeef72ba4dd107ce30c143bdd1bb267",
-    "sources/tokushima.json": "4eea47e878242aecfe8d6bbb38ef720091c4217fb1a775d071adc293e511855e",
+    "sources/tokushima.json": "791aed1404bc6785c71653d098ae5df73a93cbf8c4708b347c088da2bcb85106",
     "sources/tokyo.json": "440f0e60fb6a9de2ea66f79842c8df754feffa2055cf040b7f328483476986de",
     "sources/tottori.json": "4f10d91541e0f299ae54d15aa56aa7c27ede1b7f9342bc75b94ae4b7d1e7c164",
     "sources/toyama.json": "3cc9340da5403d65794c078c6d88d3ad697a52c3c538e549a552090a6b5b7263",
-    "sources/wakayama.json": "be88e5b12786852d1ebd86b7dc5b631a5d97dde4109921179d16cdd4050e4530",
-    "sources/yamagata.json": "de014c22c60229e044fc427d928fe95d93d597b89784410dde57678f48f35275",
+    "sources/wakayama.json": "15a782440e9eee8e7afbdb774f93a5e37e91f1daaaf1672e537e2b7480531be9",
+    "sources/yamagata.json": "af50c988bef085281f041b3583af98608480f1f2dd9b5c54f6bf173718150b85",
     "sources/yamaguchi.json": "6f1c995373266aa782bc16cabe69b665a35008bdef2f557466d07519d2e15357",
-    "sources/yamanashi.json": "32b76cc3702a0a5936739d0a172a9a43bda3a29a0fb3c63e96cecf7ff4695fcb"
+    "sources/yamanashi.json": "6eadc36fdcc4465dc62acdf89d701b17e9fc896130bfe210bd045fa4a33c4503"
   },
   "source_scope": {
     "nta": {

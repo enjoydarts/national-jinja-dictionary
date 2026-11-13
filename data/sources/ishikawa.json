@@ -11159,6 +11159,47 @@
         "source_hash": "e11a7a6ef142afe8e7ea5ed493902e4c31be10c20d7dbf0046a3bfdb7aace22b"
       }
     },
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "白山市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "3daea4a08241871b1da9caa3bba3b84248a421df5b1c891083c2bdaf88d33366",
+        "facility_id": "1099b2de-2aaf-5b2d-abb2-bec418b59cfa",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "白山市市原ル22",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "白山市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "輪島市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "76b967941c543bb5e79d26c8030396af279a11b25611651d79de120de99b2d66",
+        "facility_id": "17591c76-71e1-5ea4-b7b4-896fca2fb2b4",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "輪島市市ノ瀬町ハ149",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "輪島市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "金沢市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "b9a5fff024a17eaf0a0a7bf0f15b6028ec7c11f810cc36edffd51182800ffba0",
+        "facility_id": "8ce9fd6d-6134-53a2-ac68-8219cbcbb1bf",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "金沢市市瀬町ハ22番地",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "金沢市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "pages": [
       {
         "fetched_at": "2026-11-08T14:42:02.574647+00:00",
@@ -67573,7 +67614,7 @@
         }
       ],
       "listing_url": "https://www.ishikawa-jinjacho.or.jp/page/45/?s",
-      "municipality": "白山市市",
+      "municipality": "白山市",
       "name_raw": "八幡神社",
       "native_source_id": "https://www.ishikawa-jinjacho.or.jp/shrine/j0911/",
       "official_site_url": null,
@@ -91116,7 +91157,7 @@
         }
       ],
       "listing_url": "https://www.ishikawa-jinjacho.or.jp/page/126/?s",
-      "municipality": "輪島市市",
+      "municipality": "輪島市",
       "name_raw": "日吉神社",
       "native_source_id": "https://www.ishikawa-jinjacho.or.jp/shrine/j1627/",
       "official_site_url": null,
@@ -105529,7 +105570,7 @@
         }
       ],
       "listing_url": "https://www.ishikawa-jinjacho.or.jp/page/176/?s",
-      "municipality": "金沢市市",
+      "municipality": "金沢市",
       "name_raw": "市瀬神社",
       "native_source_id": "https://www.ishikawa-jinjacho.or.jp/shrine/j0120/",
       "official_site_url": null,

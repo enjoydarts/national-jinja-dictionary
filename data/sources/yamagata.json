@@ -10380,6 +10380,47 @@
       }
     },
     "limit": null,
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "酒田市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "e49cf6f71784d710201b4535264aae495f378530552ab6ea4ef4432cb99df122",
+        "facility_id": "f503c8f8-3334-5823-9d6c-d27595c3121f",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "酒田市市条字水上壱番ノ内1",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "酒田市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "尾花沢市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "72855251dff3dccac0125ee637bf06f0428ca4b0f8b429e52578b0d08c826d53",
+        "facility_id": "1f3a6ed3-c5fb-5692-b209-b0d5195db764",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "尾花沢市市野々才ノ神538-13",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "尾花沢市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "酒田市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "d32954b349a60e34e229ea8b304b03b13864d86ca72e11d2e22076de71ccc078",
+        "facility_id": "71082e38-9900-500b-9144-832b4c7a23ac",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "酒田市市条字八森13",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "酒田市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "pages": [
       {
         "fetched_at": "2026-11-08T14:24:48.589352+00:00",
@@ -89739,7 +89780,7 @@
         }
       ],
       "listing_url": "https://yamagata-jinjyacho.or.jp/shrine_detail/11241",
-      "municipality": "酒田市市",
+      "municipality": "酒田市",
       "name_raw": "八幡神社",
       "native_source_id": "11241",
       "official_site_url": null,
@@ -91247,7 +91288,7 @@
         }
       ],
       "listing_url": "https://yamagata-jinjyacho.or.jp/shrine_detail/04027",
-      "municipality": "尾花沢市市",
+      "municipality": "尾花沢市",
       "name_raw": "稲荷神社",
       "native_source_id": "04027",
       "official_site_url": null,
@@ -109343,7 +109384,7 @@
         }
       ],
       "listing_url": "https://yamagata-jinjyacho.or.jp/shrine_detail/11327",
-      "municipality": "酒田市市",
+      "municipality": "酒田市",
       "name_raw": "六所神社",
       "native_source_id": "11327",
       "official_site_url": null,

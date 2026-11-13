@@ -4940,6 +4940,21 @@
     },
     "limit": null,
     "listing_authority": "agency education committee explicitly linked by prefectural agency",
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "松阪市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "55b62384c430b71735419d71e8378443f69c46f7b176334c06548547d4e0c02f",
+        "facility_id": "82b6b8bf-d102-5ca8-aa0a-a2475d749095",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "松阪市市場庄町 667",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "松阪市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "observed_index_urls": [
       "http://kyoka.mie-jinjacho.or.jp/shrine/",
       "https://kyoka.mie-jinjacho.or.jp/shrine/page/2/",
@@ -37344,7 +37359,7 @@
         }
       ],
       "listing_url": "https://kyoka.mie-jinjacho.or.jp/shrine/%e7%b1%b3%e3%83%8e%e5%ba%84%e7%a5%9e%e7%a4%be/",
-      "municipality": "松阪市市",
+      "municipality": "松阪市",
       "name_raw": "米ノ庄神社",
       "native_source_id": "4205006",
       "official_site_url": null,

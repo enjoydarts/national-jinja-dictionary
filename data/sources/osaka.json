@@ -3444,6 +3444,21 @@
       }
     },
     "limit": null,
+    "municipality_derivation_review": [
+      {
+        "checked_at": "2026-11-13T01:35:22.818315+00:00",
+        "corrected_derived_municipality": "河内長野市",
+        "evidence_attempt": "municipality_city_boundary_115_derived_values_corrected_17_readings_still_pending_20261113",
+        "evidence_data": "data/reading_research.json",
+        "expected_source_hash": "cf0aeb37585e711d1ff013e3da9d64940de67a2dc728a08947ba022dc837b4b5",
+        "facility_id": "44a99669-bbf0-5997-8e5f-7ed8f5c5182d",
+        "kind": "municipality_derivation_boundary_correction",
+        "original_address_raw": "河内長野市市町",
+        "parser_commit": "cf44544e294b563cf24828a01366e57e011870dc",
+        "previous_derived_municipality": "河内長野市市",
+        "reason": "原住所からの市町村境界抽出を修正。原住所・名称・ID・原文hash・読みは変更しない。原文hashが変わった後に古い値を再適用する指示ではない。"
+      }
+    ],
     "pages": [
       {
         "fetched_at": "2026-11-08T14:25:05.014609+00:00",
@@ -19342,7 +19357,7 @@
         }
       ],
       "listing_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai11shibu/kawachinagano-city/kawachinagano.html",
-      "municipality": "河内長野市市",
+      "municipality": "河内長野市",
       "name_raw": "菅原神社",
       "native_source_id": null,
       "official_site_url": null,
