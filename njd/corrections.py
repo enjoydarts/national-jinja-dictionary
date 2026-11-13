@@ -247,6 +247,9 @@ def _agency_reading_compatible(name,raw,scope,full):
 def correction_problems(correction,facility,entry,source=None):
     problems=[]
     if not isinstance(correction,dict):return ['invalid correction object']
+    if correction.get('correction_kind')=='registered_name_image_full_reading':
+        from njd.registered_name_image import image_correction_problems
+        return image_correction_problems(correction,facility,entry,source)
     if correction.get('status')!='verified':return ['correction is not verified']
     if (source or {}).get('authority_status') in ('pending','unconfirmed'):
         problems.append('official agency listing authority remains unconfirmed')
@@ -328,7 +331,8 @@ def apply_corrections(data,document):
         problems=correction_problems(correction,facility,entry,source)
         entry['correction']=copy.deepcopy(correction)
         if problems:
-            entry['status']='pending';entry['reason']='; '.join(problems+[correction.get('reason','')])
+            note=correction.get('reason','')
+            entry['status']='pending';entry['reason']='; '.join(problems+[note if isinstance(note,str) else ''])
             entry['correction']['status']='needs_review';entry['correction']['validation_problems']=problems
             pending.append(entry['id']);continue
         changes=correction['changes']
@@ -352,7 +356,10 @@ def apply_corrections(data,document):
                 facility['resolved_name_unicode']=changes['surface']
         if 'reading' in changes:
             entry['reading']=changes['reading'];entry['reading_source_kind']='reference'
-            for ref in correction['references']:
+            if correction.get('correction_kind')=='registered_name_image_full_reading':
+                ref=correction['references'][1];entry['reading_url']=ref['url'];entry['checked_at']=ref['checked_at']
+            reading_refs=[] if correction.get('correction_kind')=='registered_name_image_full_reading' else correction['references']
+            for ref in reading_refs:
                 try:matched=_normalized_reference_reading(ref)==entry['reading'] and ref.get('reading_raw','') in ref.get('excerpt','')
                 except (TypeError,ValueError):matched=False
                 if matched and (_reference_matches(ref,facility,entry,changes) or _linked_locality_reference(ref,correction,facility) or _joined_official_reading(ref,correction,facility,entry)):entry['reading_url']=ref['url'];entry['checked_at']=ref['checked_at'];break
