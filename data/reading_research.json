@@ -26241,13 +26241,19 @@
         "integration_main_commit": "6846321d4015f4ddf342cf363a11b73bb2f68b13",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬13件補完と70件の保留根拠を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T13:37:29.760806+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10320,
+        "scope": "石狩市の公開2カテゴリ・4地図設定と利用規約を追加確認。参照先3表はrobots確認HTTP403で未取得。8保留の個別行照合を済ませたとは扱わない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T13:37:29.760806+00:00",
+      "checked_at": "2026-11-13T13:46:39.416467+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10320,
-      "scope": "石狩市の公開2カテゴリ・4地図設定と利用規約を追加確認。参照先3表はrobots確認HTTP403で未取得。8保留の個別行照合を済ませたとは扱わない。"
+      "scope": "増毛町・安平町の8保留を2CSV77実データ行に限定照合し対象名の対応行0。深川市4保留は公開案内のみで表本文未照合。全資料・全保留の完了とは区別。"
     },
     "remaining_unfinished_entries": 10320,
     "resolved_entry_ids": [
@@ -26803,7 +26809,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T13:37:29.760806+00:00",
+  "computed_at": "2026-11-13T13:46:39.416467+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -401246,6 +401252,222 @@
           "url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/%E7%9F%B3%E7%8B%A9%E5%B8%82%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E4%B8%80%E8%A6%A7/FeatureServer/0?f=json"
         }
       ]
+    },
+    {
+      "acquisition_note": "Client interval=60、timeout=20、retries=0で公開ポータル・資料を逐次取得。最初のinterval=2案は自動承認審査がHARP60秒条件への明示保証不足として実行前に拒否し、明示60秒へ修正した案で承認・取得。拒否案によるネットワーク取得はなし。HODA robotsの/api/禁止を守りAPIを使わず、目録内の実ダウンロードリンクを使用。HTMLの前回hashと今回hashを混同せず保存。",
+      "attempt_id": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+      "attribution": "出典：増毛町指定緊急避難所一覧、増毛町役場総務課情報管理係、CC BY2.1日本。胆振総合振興局管内の避難場所、避難所【北海道】の安平町資源、北海道総合政策部次世代社会戦略局DX推進課、CC BY4.0。national-jinja-dictionaryが必要列を原登録と比較し結果を要約して作成。",
+      "blank_data_rows": 6,
+      "checked_at": "2026-11-13T13:46:39.416467+00:00",
+      "data_resources": 2,
+      "data_rows": 77,
+      "dataset_references": [
+        {
+          "fetched_at": "2026-11-13T13:41:57.316094+00:00",
+          "page_hash": "abca2ff28975c133eefd5f9a429c62571438f0988ad1d9abf0d618eb8e5332c7",
+          "url": "https://ckan.hoda.jp/dataset/mashike_evacuation_space"
+        },
+        {
+          "fetched_at": "2026-11-13T13:43:58.911396+00:00",
+          "page_hash": "0e4bcaba8ba37096a5f88cf00196165ec370648df285579476c95455da91112e",
+          "url": "https://www.harp.lg.jp/opendata/dataset/1884.html"
+        }
+      ],
+      "entry_only_entries": 4,
+      "entry_only_entry_ids": [
+        "0ae4d024-b543-57e4-8d83-225c4e1801a2",
+        "0d2e7f16-edf9-55cb-9774-91dbdb649b05",
+        "86b6bbcb-212a-5f15-89ea-07f3056109d4",
+        "e10a96bc-0cf7-59cb-910a-c09b26b3d094"
+      ],
+      "named_rows": 77,
+      "new_verified_entries": 0,
+      "official_entry_references": [
+        {
+          "city": "深川市",
+          "fetched_at": "2026-11-13T13:38:45.443722+00:00",
+          "page_hash": "eb9227c6bbe18fe80ef931b7e9a52b90d3cf1a39413985e687df2d155310619b",
+          "publisher_observation": "本文の市町名・担当部署・公開データ案内を確認。リンク先全データの取得済みを意味しない。",
+          "url": "https://www.city.fukagawa.lg.jp/cms/section/soumu/gm9h2g0000001lhh.html"
+        },
+        {
+          "city": "安平町",
+          "fetched_at": "2026-11-13T13:38:48.542849+00:00",
+          "page_hash": "7cc5c613b70ed42a16f09b3e36bb4d24be6bfc1a66f9be19330f8811f11415fb",
+          "publisher_observation": "本文の市町名・担当部署・公開データ案内を確認。リンク先全データの取得済みを意味しない。",
+          "url": "https://www.town.abira.lg.jp/gyosei/opendata"
+        },
+        {
+          "city": "増毛町",
+          "fetched_at": "2026-11-13T13:38:51.097682+00:00",
+          "page_hash": "bf7ad03d16bf3c6ceef85fca93ff79f38b1b91f2eb5c601fa6b0dbccafba2fcc",
+          "publisher_observation": "本文の市町名・担当部署・公開データ案内を確認。リンク先全データの取得済みを意味しない。",
+          "url": "https://www.town.mashike.hokkaido.jp/division/opendata/index.html"
+        }
+      ],
+      "physical_rows": 85,
+      "portal_references": [
+        {
+          "city": "増毛町",
+          "fetched_at": "2026-11-13T13:40:56.529491+00:00",
+          "page_hash": "83ca89a369aeaa3ad47098216cfbbf3ec26c26cf373b97f26746c89669751de4",
+          "url": "https://ckan.hoda.jp/organization/mashike"
+        },
+        {
+          "city": "増毛町利用規約",
+          "fetched_at": "2026-11-13T13:41:57.174507+00:00",
+          "page_hash": "9c816e468f5263226573e25f1af8ff3ef38f9233dbe85fef4e92cbc0c24ae718",
+          "url": "https://pf.hoda.jp/terms/"
+        },
+        {
+          "city": "安平町",
+          "fetched_at": "2026-11-13T13:42:58.523302+00:00",
+          "page_hash": "16e203be6c068d2f2c58115fb1191266b2f28928605bd691c7bb54a527524bc4",
+          "url": "https://www.harp.lg.jp/opendata/dataset/search/?s%5Barea_id%5D=120"
+        }
+      ],
+      "prefecture_code": "01",
+      "privacy_and_storage": "CSV/HTML/規約本文・画像・キャッシュ・個人名・連絡先は収録しない。作成組織・資料標題・URL/hash・原登録IDと限定比較結果のみを正本へ保存。",
+      "resources": [
+        {
+          "blank_data_rows": 6,
+          "credit": "出典：増毛町の当該公開避難場所資料（本欄URL参照）、CC-BY-2.1-JP。national-jinja-dictionaryが名称・全文かな・所在地列を原登録と比較し、その結果を要約して作成。",
+          "data_rows": 13,
+          "encoding": "cp932",
+          "entry_ids": [
+            "420f27a6-aee4-520d-b0ca-ef7ba486c755",
+            "bb381aca-d655-5fa4-a350-3db19b9694f1",
+            "de6db175-3602-53d2-a834-7bfcfbd1aadb",
+            "fd8c91b9-b3b5-5afa-931d-8f8c5bbd8b70"
+          ],
+          "fetched_at": "2026-11-13T13:42:57.615846+00:00",
+          "fields_inspected": [
+            "名称",
+            "名称_カナ",
+            "住所"
+          ],
+          "license": "CC-BY-2.1-JP",
+          "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+          "license_verification": "個別目録のCreative Commons Attribution表示と共有規約第2条(2)のCC BY2.1日本を本文確認。規約第7条(2)の提供方法を尊重し実ダウンロードリンクだけを使用。",
+          "matching_name_rows": [],
+          "municipality_scope": "増毛町",
+          "named_rows": 13,
+          "other_shrine_name_rows": [],
+          "page_hash": "910dbf1658d988db0090a1133837f25ea55219579692a1001a569bf1efaad6c8",
+          "physical_rows": 20,
+          "source_publisher": "増毛町役場総務課情報管理係",
+          "target_entries": 4,
+          "title": "増毛町指定緊急避難所一覧 / 014818_evacuation_space.csv",
+          "url": "https://ckan.hoda.jp/dataset/0dc4c655-20df-450e-a6e3-d41843d6aedd/resource/267e6979-8617-4d30-86e6-c41fb8b57346/download/014818_evacuation_space.csv"
+        },
+        {
+          "blank_data_rows": 0,
+          "credit": "出典：安平町の当該公開避難場所資料（本欄URL参照）、CC-BY-4.0。national-jinja-dictionaryが名称・全文かな・所在地列を原登録と比較し、その結果を要約して作成。",
+          "data_rows": 64,
+          "encoding": "cp932",
+          "entry_ids": [
+            "0326117f-6886-5fd9-b87c-6b104b690afb",
+            "82a5f873-74d5-50a5-852f-c356894990da",
+            "953f7436-e753-5a50-ba54-84dad647abd1",
+            "a25f1f25-a94b-5597-bfce-e14ef18148f9"
+          ],
+          "fetched_at": "2026-11-13T13:44:59.347168+00:00",
+          "fields_inspected": [
+            "名称",
+            "名称_カナ",
+            "住所"
+          ],
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "license_verification": "個別目録本文で北海道の作成者・資源名を確認。保存済み共有規約本文hashを再確認し、第1条のCC BY4.0、個別条件優先、第2条第三者権利、第6条出所表示を点検。",
+          "matching_name_rows": [],
+          "municipality_scope": "安平町",
+          "named_rows": 64,
+          "other_shrine_name_rows": [],
+          "page_hash": "6fb8906dae663fe9daa7e1a6a18b58d159fd81178457ef3aa78b192564916aa8",
+          "physical_rows": 65,
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "target_entries": 4,
+          "title": "胆振総合振興局管内の避難場所、避難所【北海道】 / 安平町CSV",
+          "url": "https://www.harp.lg.jp/opendata/dataset/1884/resource/5093/015857_%E5%AE%89%E5%B9%B3%E7%94%BA_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+        }
+      ],
+      "scope": "3市町の現在保留12登録を固定し公式入口を追加点検。増毛町4登録を13行、安平町4登録を64行の選定避難場所CSVへ照合。深川市4登録はHARP公開案内のみで表本文未照合。胆振目録の残る10資源、深川市公開表、全市町資料・北海道全保留は未完了。",
+      "source_kind": "municipal_and_prefecture_open_data",
+      "source_publisher": "増毛町・北海道及び安平町・深川市の公式案内",
+      "status": "two_selected_csv_bodies_compared_no_matching_names_one_city_entry_only",
+      "table_reviewed_entries": 8,
+      "target_bindings": [
+        {
+          "entry_id": "0326117f-6886-5fd9-b87c-6b104b690afb",
+          "expected_source_hash": "b8be98251ce0709526ab66e9037ee3e7d15c3504996de84f17aa226e32c3b6c8"
+        },
+        {
+          "entry_id": "0ae4d024-b543-57e4-8d83-225c4e1801a2",
+          "expected_source_hash": "94bb3d0b6d5427040b6dc5ba674c25266c4ee0c4e549df871cfc11529fd78723"
+        },
+        {
+          "entry_id": "0d2e7f16-edf9-55cb-9774-91dbdb649b05",
+          "expected_source_hash": "5caeacfefab31b313f09c94fb75e6e24406cc4e4fd6f660b3ec938f8a18027d6"
+        },
+        {
+          "entry_id": "420f27a6-aee4-520d-b0ca-ef7ba486c755",
+          "expected_source_hash": "091c6ea61f6c5bc7b1828bd78990029a6e0fc54b1ae64f431773dc124188f3e4"
+        },
+        {
+          "entry_id": "82a5f873-74d5-50a5-852f-c356894990da",
+          "expected_source_hash": "6b71d9c6815f2a473e0918f116a500b384e58adc6c3600acd87c8bd62355843a"
+        },
+        {
+          "entry_id": "86b6bbcb-212a-5f15-89ea-07f3056109d4",
+          "expected_source_hash": "9390c335e9a2ff8e5349b73fcd60d9f4d7b1fe3540404a5a8bd49938b38ef57f"
+        },
+        {
+          "entry_id": "953f7436-e753-5a50-ba54-84dad647abd1",
+          "expected_source_hash": "4f796448e9bd190be67793391f1b282a69aa3968f8431d11273a733a37e0dff8"
+        },
+        {
+          "entry_id": "a25f1f25-a94b-5597-bfce-e14ef18148f9",
+          "expected_source_hash": "b50a6c881c9e972143abd8c5889bc0c040840c05460a73180c34910532d337e8"
+        },
+        {
+          "entry_id": "bb381aca-d655-5fa4-a350-3db19b9694f1",
+          "expected_source_hash": "e9cdb0bc97ad18b980aae1f052cf2c91d089f991096a1e8e28129e1dcaf4b84f"
+        },
+        {
+          "entry_id": "de6db175-3602-53d2-a834-7bfcfbd1aadb",
+          "expected_source_hash": "c4accfac2a076d8ad3817c1edc8b3907cac280dc1a5791e81fca43641c562e04"
+        },
+        {
+          "entry_id": "e10a96bc-0cf7-59cb-910a-c09b26b3d094",
+          "expected_source_hash": "6b2629548c07b84ecaf1f2e192e3f1272a2ccad27a838262f5d1f28eaf466d4e"
+        },
+        {
+          "entry_id": "fd8c91b9-b3b5-5afa-931d-8f8c5bbd8b70",
+          "expected_source_hash": "337c4b2d28113522f1559ceb4b3353f6d6b32a1213dd2b863b7c1f5756c3b381"
+        }
+      ],
+      "target_snapshot_entries": 12,
+      "terms_references": [
+        {
+          "fetched_at": "2026-11-13T13:41:57.174507+00:00",
+          "license": "CC-BY-2.1-JP",
+          "locator": "第2条(2)、第7条(2)",
+          "page_hash": "9c816e468f5263226573e25f1af8ff3ef38f9233dbe85fef4e92cbc0c24ae718",
+          "url": "https://pf.hoda.jp/terms/",
+          "verification": "本文を取得して確認。個別注記優先、出典及び加工表示、提供機能による利用を確認。"
+        },
+        {
+          "fetched_at": "2026-11-12T02:37:23.258567+00:00",
+          "license": "CC-BY-4.0",
+          "locator": "第1条、第6条",
+          "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+          "robots_interval_seconds": 60,
+          "terms_summary": "サービス提供団体のデータはCC BY4.0、個別条件優先、第三者権利別。出所に作成者組織・リソース名・URLを表示。",
+          "url": "https://www.harp.lg.jp/opendata/terms.html",
+          "verification": "既記録hashと/tmpの保存済み本文SHA-256を一致確認し、第1条、第2条、第6条を再点検。今回は規約をネットワーク再取得していない。"
+        }
+      ]
     }
   ],
   "per_prefecture": {
@@ -402877,6 +403099,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:46:39.416467+00:00",
+          "evidence_attempt": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+          "expected_source_hash": "b8be98251ce0709526ab66e9037ee3e7d15c3504996de84f17aa226e32c3b6c8",
+          "observation": "当該CSVの名称列を原登録名の完全一致及びNFKC後の包含で探索したが対応行なし。神社・八幡・稲荷・境内の名称行も当該表にはない。地名や別施設のかなを流用せず、読み・原名称・所在地・施設同一性を変更しない。市町の全資料に対象神社や読みがないという判定ではない。",
+          "reference": {
+            "data_rows": 64,
+            "fetched_at": "2026-11-13T13:44:59.347168+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "page_hash": "6fb8906dae663fe9daa7e1a6a18b58d159fd81178457ef3aa78b192564916aa8",
+            "title": "胆振総合振興局管内の避難場所、避難所【北海道】 / 安平町CSV",
+            "url": "https://www.harp.lg.jp/opendata/dataset/1884/resource/5093/015857_%E5%AE%89%E5%B9%B3%E7%94%BA_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+          },
+          "source_kind": "municipal_or_prefecture_open_data",
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "勇払郡安平町追分柏ヶ丘47番地",
@@ -412373,6 +412619,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:46:39.416467+00:00",
+          "evidence_attempt": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+          "expected_source_hash": "091c6ea61f6c5bc7b1828bd78990029a6e0fc54b1ae64f431773dc124188f3e4",
+          "observation": "当該CSVの名称列を原登録名の完全一致及びNFKC後の包含で探索したが対応行なし。神社・八幡・稲荷・境内の名称行も当該表にはない。地名や別施設のかなを流用せず、読み・原名称・所在地・施設同一性を変更しない。市町の全資料に対象神社や読みがないという判定ではない。",
+          "reference": {
+            "data_rows": 13,
+            "fetched_at": "2026-11-13T13:42:57.615846+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-2.1-JP",
+            "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+            "page_hash": "910dbf1658d988db0090a1133837f25ea55219579692a1001a569bf1efaad6c8",
+            "title": "増毛町指定緊急避難所一覧 / 014818_evacuation_space.csv",
+            "url": "https://ckan.hoda.jp/dataset/0dc4c655-20df-450e-a6e3-d41843d6aedd/resource/267e6979-8617-4d30-86e6-c41fb8b57346/download/014818_evacuation_space.csv"
+          },
+          "source_kind": "municipal_or_prefecture_open_data",
+          "source_publisher": "増毛町役場総務課情報管理係",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "増毛郡増毛町大字阿分村字タントシナイ252番地",
@@ -421030,6 +421300,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:46:39.416467+00:00",
+          "evidence_attempt": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+          "expected_source_hash": "6b71d9c6815f2a473e0918f116a500b384e58adc6c3600acd87c8bd62355843a",
+          "observation": "当該CSVの名称列を原登録名の完全一致及びNFKC後の包含で探索したが対応行なし。神社・八幡・稲荷・境内の名称行も当該表にはない。地名や別施設のかなを流用せず、読み・原名称・所在地・施設同一性を変更しない。市町の全資料に対象神社や読みがないという判定ではない。",
+          "reference": {
+            "data_rows": 64,
+            "fetched_at": "2026-11-13T13:44:59.347168+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "page_hash": "6fb8906dae663fe9daa7e1a6a18b58d159fd81178457ef3aa78b192564916aa8",
+            "title": "胆振総合振興局管内の避難場所、避難所【北海道】 / 安平町CSV",
+            "url": "https://www.harp.lg.jp/opendata/dataset/1884/resource/5093/015857_%E5%AE%89%E5%B9%B3%E7%94%BA_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+          },
+          "source_kind": "municipal_or_prefecture_open_data",
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "勇払郡安平町早来遠浅693番地",
@@ -423670,6 +423964,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:46:39.416467+00:00",
+          "evidence_attempt": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+          "expected_source_hash": "4f796448e9bd190be67793391f1b282a69aa3968f8431d11273a733a37e0dff8",
+          "observation": "当該CSVの名称列を原登録名の完全一致及びNFKC後の包含で探索したが対応行なし。神社・八幡・稲荷・境内の名称行も当該表にはない。地名や別施設のかなを流用せず、読み・原名称・所在地・施設同一性を変更しない。市町の全資料に対象神社や読みがないという判定ではない。",
+          "reference": {
+            "data_rows": 64,
+            "fetched_at": "2026-11-13T13:44:59.347168+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "page_hash": "6fb8906dae663fe9daa7e1a6a18b58d159fd81178457ef3aa78b192564916aa8",
+            "title": "胆振総合振興局管内の避難場所、避難所【北海道】 / 安平町CSV",
+            "url": "https://www.harp.lg.jp/opendata/dataset/1884/resource/5093/015857_%E5%AE%89%E5%B9%B3%E7%94%BA_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+          },
+          "source_kind": "municipal_or_prefecture_open_data",
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "勇払郡安平町早来瑞穂1210番地",
@@ -425545,6 +425863,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:46:39.416467+00:00",
+          "evidence_attempt": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+          "expected_source_hash": "b50a6c881c9e972143abd8c5889bc0c040840c05460a73180c34910532d337e8",
+          "observation": "当該CSVの名称列を原登録名の完全一致及びNFKC後の包含で探索したが対応行なし。神社・八幡・稲荷・境内の名称行も当該表にはない。地名や別施設のかなを流用せず、読み・原名称・所在地・施設同一性を変更しない。市町の全資料に対象神社や読みがないという判定ではない。",
+          "reference": {
+            "data_rows": 64,
+            "fetched_at": "2026-11-13T13:44:59.347168+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "page_hash": "6fb8906dae663fe9daa7e1a6a18b58d159fd81178457ef3aa78b192564916aa8",
+            "title": "胆振総合振興局管内の避難場所、避難所【北海道】 / 安平町CSV",
+            "url": "https://www.harp.lg.jp/opendata/dataset/1884/resource/5093/015857_%E5%AE%89%E5%B9%B3%E7%94%BA_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+          },
+          "source_kind": "municipal_or_prefecture_open_data",
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "勇払郡安平町早来大町173番地",
@@ -428843,6 +429185,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:46:39.416467+00:00",
+          "evidence_attempt": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+          "expected_source_hash": "e9cdb0bc97ad18b980aae1f052cf2c91d089f991096a1e8e28129e1dcaf4b84f",
+          "observation": "当該CSVの名称列を原登録名の完全一致及びNFKC後の包含で探索したが対応行なし。神社・八幡・稲荷・境内の名称行も当該表にはない。地名や別施設のかなを流用せず、読み・原名称・所在地・施設同一性を変更しない。市町の全資料に対象神社や読みがないという判定ではない。",
+          "reference": {
+            "data_rows": 13,
+            "fetched_at": "2026-11-13T13:42:57.615846+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-2.1-JP",
+            "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+            "page_hash": "910dbf1658d988db0090a1133837f25ea55219579692a1001a569bf1efaad6c8",
+            "title": "増毛町指定緊急避難所一覧 / 014818_evacuation_space.csv",
+            "url": "https://ckan.hoda.jp/dataset/0dc4c655-20df-450e-a6e3-d41843d6aedd/resource/267e6979-8617-4d30-86e6-c41fb8b57346/download/014818_evacuation_space.csv"
+          },
+          "source_kind": "municipal_or_prefecture_open_data",
+          "source_publisher": "増毛町役場総務課情報管理係",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "増毛郡増毛町大字別苅村字萌",
@@ -437054,6 +437420,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:46:39.416467+00:00",
+          "evidence_attempt": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+          "expected_source_hash": "c4accfac2a076d8ad3817c1edc8b3907cac280dc1a5791e81fca43641c562e04",
+          "observation": "当該CSVの名称列を原登録名の完全一致及びNFKC後の包含で探索したが対応行なし。神社・八幡・稲荷・境内の名称行も当該表にはない。地名や別施設のかなを流用せず、読み・原名称・所在地・施設同一性を変更しない。市町の全資料に対象神社や読みがないという判定ではない。",
+          "reference": {
+            "data_rows": 13,
+            "fetched_at": "2026-11-13T13:42:57.615846+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-2.1-JP",
+            "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+            "page_hash": "910dbf1658d988db0090a1133837f25ea55219579692a1001a569bf1efaad6c8",
+            "title": "増毛町指定緊急避難所一覧 / 014818_evacuation_space.csv",
+            "url": "https://ckan.hoda.jp/dataset/0dc4c655-20df-450e-a6e3-d41843d6aedd/resource/267e6979-8617-4d30-86e6-c41fb8b57346/download/014818_evacuation_space.csv"
+          },
+          "source_kind": "municipal_or_prefecture_open_data",
+          "source_publisher": "増毛町役場総務課情報管理係",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "増毛郡増毛町大字稲葉町3丁目38番地",
@@ -442824,6 +443214,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:46:39.416467+00:00",
+          "evidence_attempt": "mashike_abira_two_evacuation_csv_77_rows_eight_targets_fukagawa_entry_only_20261113",
+          "expected_source_hash": "337c4b2d28113522f1559ceb4b3353f6d6b32a1213dd2b863b7c1f5756c3b381",
+          "observation": "当該CSVの名称列を原登録名の完全一致及びNFKC後の包含で探索したが対応行なし。神社・八幡・稲荷・境内の名称行も当該表にはない。地名や別施設のかなを流用せず、読み・原名称・所在地・施設同一性を変更しない。市町の全資料に対象神社や読みがないという判定ではない。",
+          "reference": {
+            "data_rows": 13,
+            "fetched_at": "2026-11-13T13:42:57.615846+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-2.1-JP",
+            "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+            "page_hash": "910dbf1658d988db0090a1133837f25ea55219579692a1001a569bf1efaad6c8",
+            "title": "増毛町指定緊急避難所一覧 / 014818_evacuation_space.csv",
+            "url": "https://ckan.hoda.jp/dataset/0dc4c655-20df-450e-a6e3-d41843d6aedd/resource/267e6979-8617-4d30-86e6-c41fb8b57346/download/014818_evacuation_space.csv"
+          },
+          "source_kind": "municipal_or_prefecture_open_data",
+          "source_publisher": "増毛町役場総務課情報管理係",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "増毛郡増毛町大字舎熊村字舎熊244番地",
