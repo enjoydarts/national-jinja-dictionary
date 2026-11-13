@@ -320932,6 +320932,38 @@
       "verified_eligible_delta": [
         "ac90678f-a6af-5964-a3d8-9ababc848e35"
       ]
+    },
+    {
+      "acquisition": "新規HTTP取得なし。既取得本文をoffline=Trueで再読し、記録済みhashと主記事正式名・全文かな・全所在地を確認。検索結果だけで判定しない。",
+      "attempt_id": "protected_whole_reading_candidates_inventory_and_onomisukune_no_variation_hold_20261113",
+      "checked_at": "2026-11-13T10:18:05.457488+00:00",
+      "input_judgment_required_entries": 200,
+      "input_pending_entries": 10525,
+      "matched_entry_ids": [
+        "54499d19-3b9f-5796-9d8a-ce2746437d43"
+      ],
+      "matched_reference_records": 1,
+      "new_verified_entries": 0,
+      "observation": "原地番と正式名の一致だけで読みの差を自動解除しない。前回解消した岡太神社と異なり、この候補には途中ののの有無が残る。候補保護を理由に放置せず、実質的な相違をcategory_basisと個別根拠に記録した。原文・旧補正・県CSVの文化財複合名観察を保持し、制限済み他サイトの検索抜粋・コピーから補わない。",
+      "reference_observation": {
+        "address_raw": "鳥取県鳥取市徳尾80",
+        "authority_observation": "非公式二次資料の明示全文かな。神社自身・神社庁・行政の公式発音確認とはしない。",
+        "checked_at": "2026-11-13T10:18:05.457488+00:00",
+        "excerpt": "大野見宿禰命神社（おおのみすくねのみことじんじゃ）は、鳥取県鳥取市徳尾にある神社。\n［住所］鳥取県鳥取市徳尾80",
+        "fetched_at": "2026-11-12T06:57:00.468279+00:00",
+        "locator": "同一主記事の名称直後の全文かなと住所欄",
+        "name_raw": "大野見宿禰命神社",
+        "page_hash": "ea232072cc8360094e2fb9278a10e7bb6afe3390f343d3f8ac223b500749814c",
+        "reading_raw": "おおのみすくねのみことじんじゃ",
+        "source_kind": "article",
+        "source_publisher": "神社と古事記（非公式二次資料）",
+        "title": "大野見宿禰命神社 鳥取県鳥取市徳尾 | 神社と古事記",
+        "url": "https://www.buccyake-kojiki.com/archives/1060906274.html"
+      },
+      "retained_pending_entries": 1,
+      "scope": "現保留のうちjudgment_requiredかつ既補正review_kind=whole_reading_auditの登録から、既調査にprotected_existing_judgment_reading_or_identityと独立全文かなrefが記録されている候補だけを抽出。全保留の根拠十分性や全資料の点検完了を意味しない。",
+      "status": "bounded_existing_protected_candidate_inventory_one_substantive_reading_hold",
+      "whole_reading_audit_targets": 44
     }
   ],
   "per_prefecture": {
@@ -881595,11 +881627,36 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T10:18:05.457488+00:00",
+          "evidence_attempt": "protected_whole_reading_candidates_inventory_and_onomisukune_no_variation_hold_20261113",
+          "expected_source_hash": "0b13e79bab126b122587975b4d47279a51ba5a2764486d6f4ff7a16cf581718a",
+          "observation": "正式名と全地番80は対応するが、原おおのみのすくねのみことじんじやと記事おおのみすくねのみことじんじゃは大野見の後ののの有無も異なる。単純な大小かな補正とはしない。県の文化財複合名かなは以前の観測を保持し、社叢の語尾を切り落として新しい神社全文読みにはしない。",
+          "reference": {
+            "address_raw": "鳥取県鳥取市徳尾80",
+            "authority_observation": "非公式二次資料の明示全文かな。神社自身・神社庁・行政の公式発音確認とはしない。",
+            "checked_at": "2026-11-13T10:18:05.457488+00:00",
+            "excerpt": "大野見宿禰命神社（おおのみすくねのみことじんじゃ）は、鳥取県鳥取市徳尾にある神社。\n［住所］鳥取県鳥取市徳尾80",
+            "fetched_at": "2026-11-12T06:57:00.468279+00:00",
+            "locator": "同一主記事の名称直後の全文かなと住所欄",
+            "name_raw": "大野見宿禰命神社",
+            "page_hash": "ea232072cc8360094e2fb9278a10e7bb6afe3390f343d3f8ac223b500749814c",
+            "reading_raw": "おおのみすくねのみことじんじゃ",
+            "source_kind": "article",
+            "source_publisher": "神社と古事記（非公式二次資料）",
+            "title": "大野見宿禰命神社 鳥取県鳥取市徳尾 | 神社と古事記",
+            "url": "https://www.buccyake-kojiki.com/archives/1060906274.html"
+          },
+          "remaining_requirement": "のの有無を含む当該社名の全文読みの扱いを、同一施設に対応した根拠で解決する。原読みの途中の「の」を削除したり小書き変更だけを機械適用したりしない。",
+          "status": "protected_candidate_manually_rechecked_reading_difference_beyond_small_kana"
         }
       ],
       "address": "鳥取市徳尾80",
       "agency_listing_url": "https://tottori-jinjacho.jp/pages/185/",
       "category": "judgment_required",
+      "category_basis": "全文かなを明示した同地番の記事はあるが、原読みと小書きゃ以外に「大野見」後の「の」の有無も異なる。既存保留の単なる自動上書き保護に加え、読みの相違自体を個別に解決する必要がある。",
       "entry_id": "54499d19-3b9f-5796-9d8a-ce2746437d43",
       "expected_source_hash": "0b13e79bab126b122587975b4d47279a51ba5a2764486d6f4ff7a16cf581718a",
       "facility_id": "4c178fba-0240-5437-a67f-a398121c4793",
