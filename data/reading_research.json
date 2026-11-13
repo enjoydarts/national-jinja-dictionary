@@ -22904,14 +22904,23 @@
         "inspected_targets": 1,
         "new_verified_entries": 1,
         "scope": "波々伯部神社の原詳細住所相違を同コード旧地図・条例・独立登記で個別解消。原全文ホウカベジンジャのみを採用し原住所は保持。333解消/10535保留。"
+      },
+      {
+        "checked_at": "2026-11-13T08:21:15.864598+00:00",
+        "integrated_entry_ids": [
+          "b6c3e58f-a98a-542d-b184-72e80b5d0363"
+        ],
+        "integration_main_commit": "79c8602f7b1f32851967e873fa9c6d1bba5c78b5",
+        "new_verified_entries": 0,
+        "scope": "最新mainの別地域調査・分類変更を保持して、波々伯部神社1登録の補正と原研究行の履歴を統合。採用を重複計上しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T08:21:15.864598+00:00",
+      "checked_at": "2026-11-13T08:23:46.899074+00:00",
       "integrated_entry_ids": [
         "b6c3e58f-a98a-542d-b184-72e80b5d0363"
       ],
-      "integration_main_commit": "79c8602f7b1f32851967e873fa9c6d1bba5c78b5",
+      "integration_main_commit": "39c122d5169d5b8aa0c440a30ad671419586644f",
       "new_verified_entries": 0,
       "scope": "最新mainの別地域調査・分類変更を保持して、波々伯部神社1登録の補正と原研究行の履歴を統合。採用を重複計上しない。"
     },
@@ -23259,7 +23268,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T08:21:15.864598+00:00",
+  "computed_at": "2026-11-13T08:23:46.899074+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -317485,6 +317494,55 @@
       ]
     },
     {
+      "attempt_id": "tomiura_omiya_hachiman_local_history_library_reuse_permission_stop_20261113",
+      "checked_at": "2026-11-13T08:21:43.322561+00:00",
+      "global_pending_entries_at_record": 10531,
+      "inspected_target_entries": 1,
+      "library_operator_reference": {
+        "authority_observation": "本文が日本財団による運営を明示。",
+        "checked_at": "2026-11-13T08:21:43.322561+00:00",
+        "inspection_method": "web toolで実トップ本文を閲覧",
+        "requested_url": "https://nippon.zaidan.info/index.html",
+        "title": "日本財団図書館",
+        "url": "https://nippon.zaidan.info/nf_lib_top.html"
+      },
+      "new_verified_entries": 0,
+      "policy_reference": {
+        "checked_at": "2026-11-13T08:21:43.322561+00:00",
+        "inspection_method": "web toolで実PDF本文を閲覧。PDF全3ページの利用条件本文を確認。",
+        "locator": "PDF 0-based page0の(2)及びpage1、英語版page2のUtilization of Content。",
+        "observation": "成果物の著作権は事業実施団体に帰属し、公開許諾と第三者への利用許諾を区別。無断転載を禁止し、情報の利用は作成団体と財団への連絡を求める。英語版はデータの複製・言い換え・加工及び電子媒体を含む出版利用に事前の明示許諾を求める。",
+        "permission_obtained": false,
+        "source_kind": "library_copyright_policy",
+        "source_publisher": "日本財団図書館",
+        "third_party_contact_made": false,
+        "title": "複製権、放送権、公衆送信権に関して",
+        "url": "https://nippon.zaidan.info/Copyright.pdf"
+      },
+      "reference": {
+        "authority_scope": "地域刊行物であり、神社自身又は神社庁の公式発音資料とは扱わない。図書館トップ本文が日本財団の運営を明示。",
+        "checked_at": "2026-11-13T08:21:43.322561+00:00",
+        "inspection_method": "web toolで実HTML本文を閲覧。検索抜粋だけの確認ではない。取得バイト列のhashは取得しておらず捏造しない。",
+        "locator": "「豊岡の祭り屋台」及び「大宮八幡神社の来歴」の節。辞書補正への本文・かなの転記なし。",
+        "source_kind": "local_history_publication_hosted_by_foundation_library",
+        "source_publisher": "日本財団図書館（地域刊行物の公開元）",
+        "title": "日本財団図書館（電子図書館） 富浦の昔ばなし 第二集",
+        "url": "https://nippon.zaidan.info/seikabutsu/2005/00354/contents/0001.htm"
+      },
+      "retained_pending_entries": 1,
+      "rights_scope": "禁止条件の確認後に図書館の追加成果物取得・本文/読みの辞書転記を行わない。取得バイト列やhashのないweb閲覧を通常HTTPクライアントでの検証済み取得と混同しない。本文・画像・PDF全体・連絡先を収録せず、URL・確認日時・停止判断のみを残す。",
+      "scope": "大宮八幡神社の原末尾ジンジヤという個別判断1登録について、図書館公開の1HTMLの該当2節と利用条件PDFだけを点検。他の大書きヤ案件、全刊行物、全宗教法人名簿、千葉全県・全国の解決ではない。",
+      "search_only_sources_not_adopted": [
+        "ホトカミの当該施設情報",
+        "県宗教法人名簿の検索抜粋"
+      ],
+      "snapshot_base_commit": "79c8602f7b1f32851967e873fa9c6d1bba5c78b5",
+      "status": "independent_local_history_found_dictionary_reuse_stopped_permission_required",
+      "target_entry_ids": [
+        "821ac41f-72d6-5913-ac28-ece6512e31cc"
+      ]
+    },
+    {
       "adopted_reading_research_history": [
         {
           "additional_source_reviews": [
@@ -463657,6 +463715,39 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:21:43.322561+00:00",
+          "evidence_attempt": "tomiura_omiya_hachiman_local_history_library_reuse_permission_stop_20261113",
+          "expected_source_hash": "7607fc242c00010e65110ce0dba8c45fd5342919b6b89c6ef26467ffe396fa1c",
+          "observation": "原全文カナ末尾の大書きヤを自動的に小書きへ修正しない。地域刊行物の該当節を発見したが、公開と辞書への加工再利用を区別し、利用条件により新しい読み・地名・解説の転記を見送る。原住所に対応する国税庁の現存法人は既知だがフリガナ空欄である既判断も維持。",
+          "policy_reference": {
+            "checked_at": "2026-11-13T08:21:43.322561+00:00",
+            "inspection_method": "web toolで実PDF本文を閲覧。PDF全3ページの利用条件本文を確認。",
+            "locator": "PDF 0-based page0の(2)及びpage1、英語版page2のUtilization of Content。",
+            "observation": "成果物の著作権は事業実施団体に帰属し、公開許諾と第三者への利用許諾を区別。無断転載を禁止し、情報の利用は作成団体と財団への連絡を求める。英語版はデータの複製・言い換え・加工及び電子媒体を含む出版利用に事前の明示許諾を求める。",
+            "permission_obtained": false,
+            "source_kind": "library_copyright_policy",
+            "source_publisher": "日本財団図書館",
+            "third_party_contact_made": false,
+            "title": "複製権、放送権、公衆送信権に関して",
+            "url": "https://nippon.zaidan.info/Copyright.pdf"
+          },
+          "reference": {
+            "authority_scope": "地域刊行物であり、神社自身又は神社庁の公式発音資料とは扱わない。図書館トップ本文が日本財団の運営を明示。",
+            "checked_at": "2026-11-13T08:21:43.322561+00:00",
+            "inspection_method": "web toolで実HTML本文を閲覧。検索抜粋だけの確認ではない。取得バイト列のhashは取得しておらず捏造しない。",
+            "locator": "「豊岡の祭り屋台」及び「大宮八幡神社の来歴」の節。辞書補正への本文・かなの転記なし。",
+            "source_kind": "local_history_publication_hosted_by_foundation_library",
+            "source_publisher": "日本財団図書館（地域刊行物の公開元）",
+            "title": "日本財団図書館（電子図書館） 富浦の昔ばなし 第二集",
+            "url": "https://nippon.zaidan.info/seikabutsu/2005/00354/contents/0001.htm"
+          },
+          "remaining_requirement": "当該原施設に束縛でき、利用条件が許す独立全文読み資料の確認。許諾が必要な場合は取得後に適用範囲を検証する。図書館への連絡・許諾申請は行っていない。",
+          "source_kind": "local_history_publication_hosted_by_foundation_library",
+          "source_publisher": "日本財団図書館（地域刊行物の公開元）",
+          "status": "independent_local_history_found_dictionary_reuse_stopped_permission_required"
         }
       ],
       "address": "千葉県 南房総市富浦町 豊岡1-1",
