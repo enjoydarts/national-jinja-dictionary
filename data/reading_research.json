@@ -350815,6 +350815,72 @@
       "scope": "山梨保留1101件と地域別6編計59頁の抽出文字列を住所で照合。住所前方一致候補30件に対応する原画像を個別確認し21件採用/9件保留。名前だけ一致する全候補や全ページ画像の調査完了ではない。別途御室社1件を追加調査して保留。",
       "source_kind": "tourism_organization_booklet_and_shrine_site_candidate",
       "source_publisher": "公益社団法人やまなし観光推進機構 / 御室社自己表示サイト候補"
+    },
+    {
+      "acquisition": "博物館の公開トップ・新宮神社本文・ごあいさつ・リンク方針をrobots準拠・同一ホスト2秒以上・timeout20秒・再試行0で通常取得。館画像・外部リンク資料は取得しない。停止済み口丹波の社・他の禁止資料へ再アクセスしない。",
+      "attempt_id": "nested_reference_inventory_and_otsu_museum_ishiyamadera_shingu_full_kana_locality_context_hold_20261113",
+      "authority_and_policy_references": [
+        {
+          "fetched_at": "2026-11-13T11:15:46.122295+00:00",
+          "page_hash": "1faee72ce9e71e535157ab7f0e27de030c2e30db6b0933ec4f76ddc3717acf29",
+          "url": "https://www.rekihaku.otsu.shiga.jp/"
+        },
+        {
+          "fetched_at": "2026-11-13T11:16:59.195397+00:00",
+          "key": "greeting",
+          "page_hash": "41cbd4389aa1a94b69c5e80b7eaa1451b189b48966921bb4c7ab35e26ded30ec",
+          "url": "https://www.rekihaku.otsu.shiga.jp/museum/aisatsu.html"
+        },
+        {
+          "fetched_at": "2026-11-13T11:17:01.299228+00:00",
+          "key": "link-policy",
+          "page_hash": "64156c91ea642946ae5b51c801a4e7ad89c9351bbe9f86212d3402a4b5a10304",
+          "url": "https://www.rekihaku.otsu.shiga.jp/sitelink.html"
+        }
+      ],
+      "checked_at": "2026-11-13T11:18:36.012851+00:00",
+      "discovery_scope": "新宮神社の新免・石山寺・立田町について名称と町域を限定した検索を実施。今回本文取得・発行主体確認は石山寺の市立博物館項目のみ。検索結果にないことを資料全体の不在としない。他所在地の同名新宮神社や文化財複合名の読みに流用しない。",
+      "entry_ids": [
+        "2cff0ca9-2c91-59c7-ac65-f866d9c87b65"
+      ],
+      "nested_inventory": {
+        "distinct_matching_entries": 909,
+        "input_unfinished_entries": 10434,
+        "matching_name_address_pairs": 910,
+        "scope": "現在の資料不足登録のうち既補正なし・原読み空欄のみ、入れ子になったname_raw/reading_raw/address_raw/urlを持つ辞書を走査。文字種検査と既存住所比較を通ることは全文読みの確認ではない。19件への語尾抽出は候補絞り込みにすぎず、残る891組を一律に途中読みと確定したものではない。滋賀の短い原かなや既存記事の誤植疑義・権利未確認等を解除しない。 他作業の21登録統合後の現行正本でも同じ910組・909登録であることを再走査して確認。",
+        "suffix_heuristic_candidates": 19,
+        "suffix_heuristic_host_counts": {
+          "kokorosearch.net": 3,
+          "name.sijisuru.com": 1,
+          "www.buccyake-kojiki.com": 3,
+          "www.shiga-jinjacho.jp": 12
+        }
+      },
+      "new_verified_entries": 0,
+      "privacy_and_storage": "館長個人名・電話等は保存しない。取得全本文・画像・キャッシュを収録せず、最小の名称・全文かな・印刷所在地・出典・hashと判断のみ保存。",
+      "references": [
+        {
+          "address_raw": "石山寺二丁目",
+          "authority_observation": "トップの大津市歴史博物館表示、ごあいさつの市の歴史文化と館の活動説明、リンク方針本文の「当館（大津市）」を照合して市立博物館の発行資料と確認。神社自身の公式読み認定とは別。",
+          "checked_at": "2026-11-13T11:18:36.012851+00:00",
+          "excerpt": "大津の歴史事典 分野：神社 地区：石山 新宮神社 しんぐうじんじゃ 石山寺二丁目にある。",
+          "fetched_at": "2026-11-13T11:16:19.115917+00:00",
+          "locator": "歴史事典の主題見出し・独立全文かな・本文第1文の所在地。博物館事務所住所は施設所在地に流用しない。",
+          "name_raw": "新宮神社",
+          "page_hash": "982804895b9ced169166f864993421cd9a24dc15d1f8ff45343ed9d406abe910",
+          "printed_geographic_context": "大津の歴史事典／地区：石山",
+          "reading_raw": "しんぐうじんじゃ",
+          "reading_scope": "full_name",
+          "rights_observation": "トップに画像・文章の著作権が同館に帰属すると表示。リンク方針は自由なリンクとトップへのリンクを依頼し、画像コピーは別途申請を求める。画像は取得せず、最小の名称・全文かな・印刷所在地と出典・判断のみ保存。包括転載許諾とは扱わない。",
+          "source_kind": "government",
+          "source_publisher": "大津市歴史博物館",
+          "title": "新宮神社｜歴史事典｜大津市歴史博物館",
+          "url": "https://www.rekihaku.otsu.shiga.jp/db/jiten/data/141.html"
+        }
+      ],
+      "retained_pending_targets": 1,
+      "scope": "一つの新しい市立博物館資料で正式名全文かなを確認したが、印刷所在地と資料全体の市名scopeの検証表現は保留。新規採用0。全保留・全19候補・全資料の本文精査完了ではない。",
+      "status": "mechanical_nested_reference_inventory_and_one_official_museum_full_kana_context_hold"
     }
   ],
   "per_prefecture": {
@@ -712551,6 +712617,33 @@
           "evidence_attempt": "shiga_2022_official_cultural_building_map_owner_full_name_readings_986_screen_20261113",
           "printed_owner_name_rows": 2,
           "status": "bounded_owner_name_and_locality_screen_not_adopted"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T11:18:36.012851+00:00",
+          "evidence_attempt": "nested_reference_inventory_and_otsu_museum_ishiyamadera_shingu_full_kana_locality_context_hold_20261113",
+          "expected_source_hash": "bd3e0f23c856afe7de304f4b453dd0aa11cbc51f8b1a7c75bf0c398491d8b89d",
+          "observation": "正式名の独立全文かなは明示されている。一方、印刷所在地は石山寺二丁目で市名なし。大津の歴史事典という地理的scopeを原文と区別して忠実に表す検証は今回実施せず、大津市を加えた住所を実引用のように捏造しない。",
+          "reference": {
+            "address_raw": "石山寺二丁目",
+            "authority_observation": "トップの大津市歴史博物館表示、ごあいさつの市の歴史文化と館の活動説明、リンク方針本文の「当館（大津市）」を照合して市立博物館の発行資料と確認。神社自身の公式読み認定とは別。",
+            "checked_at": "2026-11-13T11:18:36.012851+00:00",
+            "excerpt": "大津の歴史事典 分野：神社 地区：石山 新宮神社 しんぐうじんじゃ 石山寺二丁目にある。",
+            "fetched_at": "2026-11-13T11:16:19.115917+00:00",
+            "locator": "歴史事典の主題見出し・独立全文かな・本文第1文の所在地。博物館事務所住所は施設所在地に流用しない。",
+            "name_raw": "新宮神社",
+            "page_hash": "982804895b9ced169166f864993421cd9a24dc15d1f8ff45343ed9d406abe910",
+            "printed_geographic_context": "大津の歴史事典／地区：石山",
+            "reading_raw": "しんぐうじんじゃ",
+            "reading_scope": "full_name",
+            "rights_observation": "トップに画像・文章の著作権が同館に帰属すると表示。リンク方針は自由なリンクとトップへのリンクを依頼し、画像コピーは別途申請を求める。画像は取得せず、最小の名称・全文かな・印刷所在地と出典・判断のみ保存。包括転載許諾とは扱わない。",
+            "source_kind": "government",
+            "source_publisher": "大津市歴史博物館",
+            "title": "新宮神社｜歴史事典｜大津市歴史博物館",
+            "url": "https://www.rekihaku.otsu.shiga.jp/db/jiten/data/141.html"
+          },
+          "remaining_requirement": "同一資料の明示地理的scopeと印刷所在地を分離保存して検証できる表現の審査、又は別の実資料で全文かな・全所在地を確認する。一般の所在地照合を緩和せず、博物館の事務所住所を神社所在地へ使わない。",
+          "status": "municipal_museum_full_name_kana_observed_printed_locality_without_city_prefix_hold"
         }
       ],
       "address": "大津市石山寺",
