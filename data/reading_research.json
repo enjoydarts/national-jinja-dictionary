@@ -318977,6 +318977,69 @@
       "source_section_rows": 10,
       "source_trailing_empty_rows": 1,
       "status": "bounded_reference_table_screen_two_readings_verified_other_names_not_repaired"
+    },
+    {
+      "attempt_id": "private_shikinaisya_download_database_no_redistribution_entry_stop_20261113",
+      "checked_at": "2026-11-13T08:34:09.380748+00:00",
+      "database_rows_acquired": 0,
+      "downloaded_database_files": 0,
+      "entry_reference": {
+        "actual_download_information_link": {
+          "label": "式内社データベースダウンロード",
+          "url": "https://shikinaisya.net/?p=213"
+        },
+        "authority_observation": "個人による式内社訪問サイト。本文の配布案内は管理人が個人的に編集するデータと明示し、神社・神社庁・行政の公式台帳ではない。",
+        "checked_at": "2026-11-13T08:34:09.380748+00:00",
+        "inspection_method": "web toolによる実HTML本文閲覧。取得バイト列のhashは未取得。",
+        "title": "神社好き式内社を訪ねる",
+        "url": "https://shikinaisya.net/"
+      },
+      "global_pending_entries_at_record": 10528,
+      "individual_shrine_articles_acquired": 0,
+      "new_verified_entries": 0,
+      "other_source_availability": [
+        {
+          "checked_at": "2026-11-13T08:34:09.380748+00:00",
+          "inspection_method": "web tool",
+          "observation": "別の個人資料の入口は要求後のHTTPSで502と表示され本文未取得。恒久閉鎖や転載条件を確認済みとはせず、別プロトコル・別経路の取得で回避せず候補を保存しない。",
+          "status": "http_502_observed_body_not_obtained",
+          "url": "http://engishiki.org/"
+        },
+        {
+          "checked_at": "2026-11-13T08:34:09.380748+00:00",
+          "inspection_method": "web tool",
+          "observation": "実プライバシーポリシーリンクはツールのcache missで本文未確認。サイト側403又はrobots拒否とは扱わない。取得できた配布案内本文の明示再配布禁止だけでデータ取得を見送る。",
+          "status": "tool_cache_miss_body_not_obtained",
+          "url": "https://shikinaisya.net/?page_id=3"
+        }
+      ],
+      "permission_obtained": false,
+      "policy_reference": {
+        "checked_at": "2026-11-13T08:34:09.380748+00:00",
+        "corporate_or_commercial_use_allowed": false,
+        "inspection_method": "web toolでトップの実リンク先本文を閲覧。検索結果のみの判断ではない。",
+        "locator": "「ご注意」節の対象データ3種及び個人利用・再配布・法人/商業利用の条件。",
+        "observation": "個人利用自由と再配布禁止・法人/商業利用禁止を区別する。公開辞書への再利用許諾を得たとは扱わず、CSV・地図・HTML表を取得又は照合しない。",
+        "observed_database_version_raw": "20250601版",
+        "personal_use_allowed": true,
+        "redistribution_allowed": false,
+        "restricted_resources": [
+          "式内社データベース（CSV形式）",
+          "式内社地図データ（CSV形式）",
+          "式内社一覧表（HTML形式）"
+        ],
+        "source_scope_note": "表示3394件は複数の比定社を含む資料側の件数で、原正本の施設数・登録数・今回の照合件数ではない。神名帳にある名称・よみと現在の比定社を区別する。",
+        "title": "式内社データベースダウンロード",
+        "url": "https://shikinaisya.net/?p=213"
+      },
+      "rights_scope": "利用条件と出典位置の最小限の記録のみ。神社データ・画像・全本文・CSV・地図・個人連絡先を収録せず、既存の神社ファン/玄松子/お詣りポータル等の利用制限も維持する。",
+      "scope": "新情報源のトップとその実配布案内本文だけ。データ3394件や個別記事を取得・照合済みとはせず、全国保留全件の調査完了又は根拠不足の解消とは扱わない。",
+      "snapshot_base_commit": "c9f4c233e28c9d32a914517472090ee3591cf71e",
+      "source_kind": "private_historical_shrine_database",
+      "source_publisher": "神社好き式内社を訪ねる（個人編集）",
+      "status": "stopped_explicit_no_redistribution_or_corporate_commercial_use",
+      "target_comparisons": 0,
+      "third_party_contact_made": false
     }
   ],
   "per_prefecture": {
