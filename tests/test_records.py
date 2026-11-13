@@ -1,5 +1,5 @@
 import unittest
-from njd.records import build_dataset
+from njd.records import build_dataset,municipality_from_address
 from njd.validation import validate, eligible
 
 
@@ -40,6 +40,35 @@ class RecordTest(unittest.TestCase):
     def test_municipality_derived_from_explicit_address(self):
         d=build([row(address='埼玉県さいたま市大宮区高鼻町1')])
         self.assertEqual(d['facilities'][0]['municipality'],'さいたま市大宮区')
+
+    def test_locality_city_character_does_not_extend_municipality(self):
+        for address,prefecture,want in [
+            ('福知山市市寺123-4','京都府','福知山市'),
+            ('京都府京都市左京区静市市原町123-4','京都府','京都市左京区'),
+            ('滋賀県東近江市市子殿町123-4','滋賀県','東近江市'),
+            ('兵庫県丹波市市島町架空123-4','兵庫県','丹波市'),
+            ('架空市市場123-4','架空県','架空市'),
+        ]:
+            with self.subTest(address=address):
+                self.assertEqual(municipality_from_address(address,prefecture),want)
+
+    def test_literal_double_city_names_keep_both_characters(self):
+        for city,prefecture in [('四日市市','三重県'),('廿日市市','広島県'),
+                                ('野々市市','石川県'),('今市市','栃木県'),('八日市市','滋賀県')]:
+            with self.subTest(city=city):
+                self.assertEqual(municipality_from_address(prefecture+city+'市場町123-4',prefecture),city)
+
+    def test_city_boundary_repair_keeps_source_address_hash_and_identity(self):
+        address='京都府福知山市市寺123-4'
+        d=build_dataset('fixture','26','京都府','架空県神社庁',[row(address=address)])
+        self.assertEqual(d['facilities'][0]['municipality'],'福知山市')
+        self.assertEqual(d['facilities'][0]['address'],address)
+        self.assertEqual(d['entries'][0]['reading_raw'],'カクウジンジャ')
+        # Changing a derived municipality never participates in source identity.
+        other=build_dataset('fixture','26','京都府','架空県神社庁',[row(address=address,municipality='明示市')])
+        for key in ['id','address','source_hash']:
+            self.assertEqual(d['facilities'][0][key],other['facilities'][0][key])
+        self.assertEqual(other['facilities'][0]['municipality'],'明示市')
 
     def test_missing_address_is_explicit_review_record_not_exportable(self):
         d=build([row(address='')])

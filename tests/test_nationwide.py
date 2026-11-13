@@ -112,6 +112,36 @@ class NationwideTest(unittest.TestCase):
             again=save_collection(work,'example',updated)
             self.assertEqual(again['facilities'][0]['curated_reference_history'],f['curated_reference_history'])
 
+    def test_reacquisition_keeps_municipality_review_without_reapplying_old_value(self):
+        import copy
+        for address in ['架空市市場1','架空市別町2']:
+            with self.subTest(address=address), tempfile.TemporaryDirectory() as td:
+                work=Path(td);old=build([row(address='架空市市場1')])
+                review=dict(facility_id=old['facilities'][0]['id'],
+                    expected_source_hash=old['facilities'][0]['source_hash'],
+                    previous_derived_municipality='架空市市',corrected_derived_municipality='架空市')
+                old['collection']['municipality_derivation_review']=[review]
+                save_collection(work,'example',old)
+                new=build([row(address=address)]);before=copy.deepcopy(new)
+                saved=save_collection(work,'example',new)
+                self.assertEqual(saved['collection'].get('municipality_derivation_review',[]),[review])
+                self.assertEqual(saved['facilities'][0]['address'],address)
+                self.assertEqual(saved['facilities'][0]['municipality'],'架空市')
+                self.assertEqual(saved['facilities'][0]['source_hash'],new['facilities'][0]['source_hash'])
+                self.assertEqual(new,before)
+                again=save_collection(work,'example',saved)
+                self.assertEqual(again['collection']['municipality_derivation_review'],[review])
+
+    def test_malformed_municipality_review_cannot_replace_saved_history(self):
+        with tempfile.TemporaryDirectory() as td:
+            work=Path(td);old=build([row()]);old['collection']['municipality_derivation_review']=[dict(note='old reviewed derivation')]
+            save_collection(work,'example',old);path=work/'sources/example.json';before=path.read_bytes()
+            for value in [None,{},['invalid']]:
+                with self.subTest(value=value):
+                    new=build([row()]);new['collection']['municipality_derivation_review']=value
+                    with self.assertRaises(ValueError):save_collection(work,'example',new)
+                    self.assertEqual(path.read_bytes(),before)
+
     def test_partial_attempt_cannot_remove_previously_saved_facilities(self):
         from unittest.mock import patch
         with tempfile.TemporaryDirectory() as td:

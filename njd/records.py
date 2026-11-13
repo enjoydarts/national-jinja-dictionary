@@ -8,7 +8,9 @@ from njd.normalize import normalize_reading
 def municipality_from_address(address, prefecture):
     value=address.removeprefix(prefecture).strip()
     county=re.match(r'(.+?郡[^市区]+?[町村])',value)
-    city=re.match(r'(.+?市市|.+?市)([^市町村区0-9\s]+?区)?',value)
+    # Prefer the documented literal names, not any later 市市 in a locality.
+    # Current/historical name evidence and the bounded scope are in DATA.md.
+    city=re.match(r'(四日市市|廿日市市|野々市市|今市市|八日市市|.+?市)([^市町村区0-9\s]+?区)?',value)
     if county: return county.group(0)
     if city: return city.group(0)
     ward=re.match(r'(.+?区)',value)

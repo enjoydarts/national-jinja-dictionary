@@ -48,6 +48,20 @@ def _partial_scope(source):
     remaining=source.get('remaining_scope')
     return bool((isinstance(remaining,list) and remaining) or (isinstance(remaining,dict) and remaining.get('unvisited')))
 
+
+def _preserve_municipality_reviews(old,result):
+    # Historical, source-hash-bound decisions: retain them without applying
+    # their former values to a newly acquired address or municipality field.
+    field='municipality_derivation_review';history=[]
+    for source in (old,result):
+        if source is None:continue
+        reviews=source.get('collection',{}).get(field,[])
+        if not isinstance(reviews,list) or any(not isinstance(v,dict) for v in reviews):
+            raise ValueError('invalid municipality derivation review history')
+        for review in reviews:
+            if review not in history:history.append(copy.deepcopy(review))
+    if history or field in result['collection']:result['collection'][field]=history
+
 SOURCE_KEYS='hokkaido aomori iwate miyagi akita yamagata fukushima ibaraki tochigi gunma saitama chiba tokyo kanagawa niigata toyama ishikawa fukui yamanashi nagano gifu shizuoka aichi mie shiga kyoto osaka hyogo nara wakayama tottori shimane okayama hiroshima yamaguchi tokushima kagawa ehime kochi fukuoka saga nagasaki kumamoto oita miyazaki kagoshima okinawa'.split()
 
 
@@ -91,6 +105,7 @@ def prepare_collection(data_dir,key,data,*,reviewed_curated=False):
     links=all_links.get(key,{})
     result=reconcile_identity(old,data,links)
     _preserve_curated_sources(old,result,reviewed_curated)
+    _preserve_municipality_reviews(old,result)
     if blocking_problems(result): raise ValueError('identity reconciliation produced invalid records')
     if old and _partial_scope(result['collection']):
         omitted={f['id'] for f in old['facilities']}-{f['id'] for f in result['facilities']}
