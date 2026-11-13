@@ -1138,3 +1138,10 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 [唐津市デジタル市役所](https://www.city.karatsu.lg.jp/site/digital-karatsu/)の本文と実hrefを確認しました。案内先`https://www.sonicweb-asp.jp/karatsu/`は公式リンクからweb.openで要求するとHTTP404で、地図本文・施設表・全レイヤは未取得です。同一URL再取得・推測した個別URL・別ツール/形式・別ホスト/アーカイブへの切替えは行いません。地図側のrobots/利用条件は確認済みとはしていません。
 
 [市の著作権・免責事項](https://www.city.karatsu.lg.jp/site/userguide/21330.html)本文に記載内容の無断転載・引用禁止及び転用希望時の相談条件があるため、市の個別文化財ページ・PDFから辞書用の読み等を転記せず、追加取得を止めました。オープンデータ公開計画という検索リードは実表取得や利用許諾とはしません。個別施設の名称/全文かな/全所在地の新規照合0、採用0。市内保留数は探索対象集合であり個別精査済み件数ではありません。入口/方針の公開URL/hash・日時、実hrefと停止理由だけを保存し、本文・画像・PDF・表・キャッシュ・人物情報は収録していません。
+
+
+### 独立文化財資料集による北海道・佐賀の候補探索（2026年11月14日・日本時間）
+
+[jp-municipal-heritage](https://github.com/kazuki-netizen/jp-municipal-heritage/tree/2303e533b4bf96d6e26d0fed7d68849e12c4be7d)の固定commitからREADME・SCHEMA・LICENSE・docs/sources.mdと北海道/佐賀JSONLをGitHub connectorで取得し、内容bytesを各Git blob SHA1で検証しました。資料集の表示はdata/docs/notes等がCC BY4.0、siteコードが別MITですが、元自治体資料の条件とは分けます。READMEの全国47県という対象表示を当方の取得/検証範囲にせず、今回は北海道464行・佐賀455行だけです。実データには独立した読み欄がなく、保留原社名と文化財名の完全一致は0。名称包含と同一自治体文字列は発見用に限り、所蔵品・本殿・鳥居・祭礼の読みから社名かなを作りません。docs/sources.mdは岩手v1の歴史的一覧と明記され、現行全国一覧として扱わず各行source_urlを候補探索に使いました。取得したGit treeは途中省略があり、必要6ファイルのblob確認のみです。
+
+候補の[玄海町入口](https://www.town.genkai.lg.jp/)から利用方針本文を確認すると、法定利用以外の無断使用・複製・転載等が禁止されていたため、該当する文化財本文は取得していません。既存の唐津市の禁止記録も保持し、二次資料経由の採用に切り替えません。新規補完0、元施設本文の取得0。固定commit/公開URL/hash/blobID・行数/欄の有無・結果と利用条件の必要な要約のみを保存し、repo本文・JSONL全行・画像・人物情報・無関係な住所・キャッシュは収録していません。

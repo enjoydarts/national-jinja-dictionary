@@ -26566,13 +26566,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10311,
         "scope": "佐賀市カタログ58見出しと4表460行を点検。市内保留19登録に対応する名称欄の一致なし、採用0。"
+      },
+      {
+        "checked_at": "2026-11-13T15:01:44.059461+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10311,
+        "scope": "唐津市の追加候補の入口/方針確認。市本文の無断転載・引用禁止と、公式実リンク先の地図入口404を確認し追加取得停止。個別施設照合0。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T15:01:44.059461+00:00",
+      "checked_at": "2026-11-13T15:06:45.992151+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10311,
-      "scope": "唐津市の追加候補の入口/方針確認。市本文の無断転載・引用禁止と、公式実リンク先の地図入口404を確認し追加取得停止。個別施設照合0。"
+      "scope": "独立文化財資料集の固定commitから北海道/佐賀計919行を候補探索。社名完全一致/独立読み欄なし、玄海町元資料は利用条件で停止し採用0。"
     },
     "remaining_unfinished_entries": 10311,
     "resolved_entry_ids": [
@@ -27137,7 +27143,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T15:01:44.059461+00:00",
+  "computed_at": "2026-11-13T15:06:45.992151+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -405477,6 +405483,127 @@
       "source_kind": "municipal_reference_availability",
       "source_publisher": "唐津市",
       "status": "municipal_source_policy_stop_actual_gis_entrance_http404"
+    },
+    {
+      "attempt_id": "municipal_heritage_pinned_two_prefectures_919_rows_discovery_genkai_policy_stop_20261114",
+      "checked_at": "2026-11-13T15:06:45.992151+00:00",
+      "comparisons": [
+        {
+          "data_rows": 455,
+          "dedicated_reading_fields": [],
+          "distinct_source_urls": 92,
+          "exact_property_name_matches": 0,
+          "literal_name_containment_discovery_pairs": 21,
+          "pending_records_used": 101,
+          "prefecture": "佐賀県",
+          "same_municipality_literal_discovery_pairs": 15,
+          "source_url_role": "資料集各行の出典URL。参照先本文の取得・公式性・条件確認済みとはしない。"
+        },
+        {
+          "data_rows": 464,
+          "dedicated_reading_fields": [],
+          "distinct_source_urls": 37,
+          "exact_property_name_matches": 0,
+          "literal_name_containment_discovery_pairs": 442,
+          "pending_records_used": 413,
+          "prefecture": "北海道",
+          "same_municipality_literal_discovery_pairs": 29,
+          "source_url_role": "資料集各行の出典URL。参照先本文の取得・公式性・条件確認済みとはしない。"
+        }
+      ],
+      "inspected_data_rows": 919,
+      "inspected_prefecture_files": 2,
+      "municipal_policy_references": [
+        {
+          "fetched_at": "2026-11-13T15:05:30.639379+00:00",
+          "page_hash": "cf59d68ec7ce88e9d2eeb76187abbc75372f29c34534af3a892b41cd7e1ee5ac",
+          "title": [
+            "玄海町ホームページ トップページ"
+          ],
+          "url": "https://www.town.genkai.lg.jp/"
+        },
+        {
+          "fetched_at": "2026-11-13T15:05:32.748407+00:00",
+          "page_hash": "7a891e74a723405494771103c0f25a40a141f694ce58ca16f08998a2b058f64d",
+          "title": [
+            "リンク・著作権・免責事項 - 玄海町ホームページ"
+          ],
+          "url": "https://www.town.genkai.lg.jp/site/userguide/2547.html"
+        }
+      ],
+      "new_verified_entries": 0,
+      "original_facility_profiles_acquired": 0,
+      "privacy_and_storage": "repo本文・JSONL全行・説明長文・画像・キャッシュ・無関係な住所/人物は収録せず、固定commit/公開URL/内容hash/blobID・行数/欄の有無・照合結果と玄海町の条件要約のみ保存。",
+      "repository_commit": "2303e533b4bf96d6e26d0fed7d68849e12c4be7d",
+      "resources": [
+        {
+          "bytes": 19514,
+          "checked_at": "2026-11-13T15:06:45.992151+00:00",
+          "commit": "2303e533b4bf96d6e26d0fed7d68849e12c4be7d",
+          "content_sha256": "0b040a2a30fa7ebc3a26f0657f73d4639daf946a7086b61aa03e41376932a192",
+          "git_blob_sha1": "48905f0dc9d22714f9c417408d931e1802a6808a",
+          "path": "LICENSE",
+          "retrieval_method": "GitHub connector fetch; returned UTF-8 content verified against selected Git tree blob SHA1",
+          "url": "https://github.com/kazuki-netizen/jp-municipal-heritage/blob/2303e533b4bf96d6e26d0fed7d68849e12c4be7d/LICENSE"
+        },
+        {
+          "bytes": 26833,
+          "checked_at": "2026-11-13T15:06:45.992151+00:00",
+          "commit": "2303e533b4bf96d6e26d0fed7d68849e12c4be7d",
+          "content_sha256": "b1715f0eeff8e121d1c3435252cbddaa45566aa7a3413920bb78914181a8f1b4",
+          "git_blob_sha1": "d8669ac36df3e98316d39de8fd2d9c13e58c7dc2",
+          "path": "README.md",
+          "retrieval_method": "GitHub connector fetch; returned UTF-8 content verified against selected Git tree blob SHA1",
+          "url": "https://github.com/kazuki-netizen/jp-municipal-heritage/blob/2303e533b4bf96d6e26d0fed7d68849e12c4be7d/README.md"
+        },
+        {
+          "bytes": 7081,
+          "checked_at": "2026-11-13T15:06:45.992151+00:00",
+          "commit": "2303e533b4bf96d6e26d0fed7d68849e12c4be7d",
+          "content_sha256": "61b1fac97be1f74c4988e76b48355244bd69f13b9e6da93e61b61324fddc47c3",
+          "git_blob_sha1": "13b42ca977c137ba663e93218f5834b9e255aa8a",
+          "path": "SCHEMA.md",
+          "retrieval_method": "GitHub connector fetch; returned UTF-8 content verified against selected Git tree blob SHA1",
+          "url": "https://github.com/kazuki-netizen/jp-municipal-heritage/blob/2303e533b4bf96d6e26d0fed7d68849e12c4be7d/SCHEMA.md"
+        },
+        {
+          "bytes": 236241,
+          "checked_at": "2026-11-13T15:06:45.992151+00:00",
+          "commit": "2303e533b4bf96d6e26d0fed7d68849e12c4be7d",
+          "content_sha256": "a096943145ca8a545f3df2bd81791a89177129d44f868e282d6a4bde90a4ac03",
+          "git_blob_sha1": "7ed8579a9cad74aff635c212b87ff46e02313582",
+          "path": "data/hokkaido.jsonl",
+          "retrieval_method": "GitHub connector fetch; returned UTF-8 content verified against selected Git tree blob SHA1",
+          "url": "https://github.com/kazuki-netizen/jp-municipal-heritage/blob/2303e533b4bf96d6e26d0fed7d68849e12c4be7d/data/hokkaido.jsonl"
+        },
+        {
+          "bytes": 296961,
+          "checked_at": "2026-11-13T15:06:45.992151+00:00",
+          "commit": "2303e533b4bf96d6e26d0fed7d68849e12c4be7d",
+          "content_sha256": "0b719b9df38522571144e82d2113ded9775f615bfaddec19e68abb660d541078",
+          "git_blob_sha1": "fba10a73bf5179a8c3de2817c800fb99b923550b",
+          "path": "data/saga.jsonl",
+          "retrieval_method": "GitHub connector fetch; returned UTF-8 content verified against selected Git tree blob SHA1",
+          "url": "https://github.com/kazuki-netizen/jp-municipal-heritage/blob/2303e533b4bf96d6e26d0fed7d68849e12c4be7d/data/saga.jsonl"
+        },
+        {
+          "bytes": 5567,
+          "checked_at": "2026-11-13T15:06:45.992151+00:00",
+          "commit": "2303e533b4bf96d6e26d0fed7d68849e12c4be7d",
+          "content_sha256": "d5edc1096fe6ebc7b95afc1259fc50c8794113b35736a3d575c992a5cdcc352f",
+          "git_blob_sha1": "1c4b9dc5f9aefa813cfee5b5f2e7a62db6c80d47",
+          "path": "docs/sources.md",
+          "retrieval_method": "GitHub connector fetch; returned UTF-8 content verified against selected Git tree blob SHA1",
+          "url": "https://github.com/kazuki-netizen/jp-municipal-heritage/blob/2303e533b4bf96d6e26d0fed7d68849e12c4be7d/docs/sources.md"
+        }
+      ],
+      "retrieval": "GitHub connectorで公開固定commitの6ファイルを取得し、返却内容のUTF-8 bytesをGit blob SHA1で検証。recursive tree応答はtruncated=trueであり、必要6ファイルのblobだけを使用し全repo索引取得済みとはしない。元自治体は通常Client interval=2、timeout=20、retries=0、robots適用で玄海町入口/方針のみ取得。登録・認証キー発行・API加入・元本文の別経路取得はしない。",
+      "rights_observation": "資料集LICENSEはdata/docs/notes等をCC BY4.0、siteコードを別MITと表示し、元資料は各自治体の責任と明記。資料集独自の利用条件と元資料の条件を分離する。玄海町は入口/方針本文に法定利用以外の無断使用等の禁止があるため文化財本文未取得。既存の唐津市の禁止記録も保持し、その紹介を資料集経由で採用しない。",
+      "schema_and_provenance": "実データ13欄に独立した読み欄はない。property名/所在地への社名の包含は候補発見に限定し、別施設や所蔵品・本殿・祭礼から社名の読みを作らない。docs/sources.mdは岩手v1の歴史的資料と本文に明記されているため現行全国出典一覧にしない。今回2県の各行source_urlを発見用に用いた。",
+      "scope": "北海道464行と佐賀455行のみ。READMEが掲げる47都道府県全データは取得/検証していない。現保留の原名とproperty名の完全一致0。名称包含と同一自治体文字列の診断だけでは施設同一性/所在地一致/読みを確認できず採用0。",
+      "source_kind": "independent_municipal_cultural_property_dataset_discovery",
+      "source_publisher": "kazuki-netizen / jp-municipal-heritage（独立資料集、自治体公式ではない）",
+      "status": "secondary_two_prefecture_dataset_discovery_no_direct_shrine_reading_primary_policy_stop"
     }
   ],
   "per_prefecture": {
@@ -1200526,6 +1200653,25 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T15:06:45.992151+00:00",
+          "evidence_attempt": "municipal_heritage_pinned_two_prefectures_919_rows_discovery_genkai_policy_stop_20261114",
+          "expected_source_hash": "413535d0edfffbcf9d1b1af08e73d82393f47ab1c4f5a0ed57c715a33c3adb37",
+          "observation": "資料集の文化財名包含から値賀神社の追加候補を発見。町入口/実方針の本文で法定利用以外の無断使用・複製・転載・販売・改変・印刷配布の禁止を確認し、文化財本文は取得しない。資料集のCC BY表示を元資料の条件の代用にしない。所蔵品名から社名かなを切り出さず採用0。",
+          "reference": {
+            "fetched_at": "2026-11-13T15:05:32.748407+00:00",
+            "page_hash": "7a891e74a723405494771103c0f25a40a141f694ce58ca16f08998a2b058f64d",
+            "title": [
+              "リンク・著作権・免責事項 - 玄海町ホームページ"
+            ],
+            "url": "https://www.town.genkai.lg.jp/site/userguide/2547.html"
+          },
+          "requested_profile_url": "https://www.town.genkai.lg.jp/site/kankou/87758.html",
+          "source_kind": "government_source_policy_review",
+          "source_publisher": "玄海町",
+          "status": "secondary_cultural_property_lead_primary_reuse_policy_stop"
         }
       ],
       "address": "東松浦郡玄海町普恩寺３７５",
