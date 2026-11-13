@@ -42,4 +42,4 @@
 
 ## 最終統合
 
-- [ ] Fresh whole-branch review後、指摘を修正又は根拠付き判断。最新mainを保持して統合しmain再検証、専用worktree片付け。
+- [x] Fresh whole-branch review後、指摘を修正又は根拠付き判断。最新mainを保持して統合しmain再検証、専用worktree片付け。
