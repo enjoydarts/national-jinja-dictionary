@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "c9897da7156093e59d3cc3c4b61a3ff685ddc1d07d486a2b6e7ad5f4edfeca5f",
+    "corrections.json": "9a805025c4a9ce27db94cc9410f272468767cac5cd8da9d23ab2c92f96e2fe91",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -26578,21 +26578,31 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10311,
         "scope": "独立文化財資料集の固定commitから北海道/佐賀計919行を候補探索。社名完全一致/独立読み欄なし、玄海町元資料は利用条件で停止し採用0。"
+      },
+      {
+        "checked_at": "2026-11-13T15:10:27.344736+00:00",
+        "entry_ids": [
+          "b6b9ac34-35c3-5f93-9256-da951c10aa43"
+        ],
+        "evidence_attempt": "shikabe_postal_town_3971_confirmed_gnome_no_printed_postal_code_hold_20261114",
+        "inspected_targets": 1,
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10311,
+        "retained_pending_targets": 1,
+        "scope": "北海道鹿部稲荷神社1登録の字省略に対する郵便番号町域の追加調査。日本郵便北海道CSV8201行の取得は神社8201件の読み調査ではなく、神社全文かなはGnome既取得本文の範囲のみ。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T15:10:27.344736+00:00",
+      "checked_at": "2026-11-13T15:18:05.635058+00:00",
       "entry_ids": [
-        "b6b9ac34-35c3-5f93-9256-da951c10aa43"
+        "42867e84-035e-5410-b927-2733648f8ed6",
+        "65f01620-1aa9-5207-a1db-e1ad4f1bf614"
       ],
-      "evidence_attempt": "shikabe_postal_town_3971_confirmed_gnome_no_printed_postal_code_hold_20261114",
-      "inspected_targets": 1,
-      "new_verified_entries": 0,
-      "retained_pending_entries": 10311,
+      "new_verified_entries": 1,
       "retained_pending_targets": 1,
-      "scope": "北海道鹿部稲荷神社1登録の字省略に対する郵便番号町域の追加調査。日本郵便北海道CSV8201行の取得は神社8201件の読み調査ではなく、神社全文かなはGnome既取得本文の範囲のみ。"
+      "scope": "冨士山稲荷神社の同一紹介の正式名/全文かな/全地番を確認し採用。公式冊子を目視併用し、梅戸神社は住所原数字を保持して保留。"
     },
-    "remaining_unfinished_entries": 10311,
+    "remaining_unfinished_entries": 10310,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -26755,6 +26765,7 @@
       "413c5ed0-8ae4-5d6e-af12-9ffda5003fe4",
       "41baf306-6021-5f36-9c03-5f87c032a781",
       "4272e42e-c63d-5be5-89ff-87d1ff005f92",
+      "42867e84-035e-5410-b927-2733648f8ed6",
       "4342991f-c53b-5769-87fe-4938523a84a4",
       "4428e293-d275-50c7-b53c-e5eb05ced0c5",
       "44cdaff8-e564-54a3-af13-fd6a462162cb",
@@ -27155,7 +27166,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T15:10:27.344736+00:00",
+  "computed_at": "2026-11-13T15:18:05.635058+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -405695,6 +405706,485 @@
       "retained_pending_targets": 1,
       "scope": "北海道鹿部稲荷神社1登録の字省略に対する郵便番号町域の追加調査。日本郵便北海道CSV8201行の取得は神社8201件の読み調査ではなく、神社全文かなはGnome既取得本文の範囲のみ。",
       "source_kind": "postal_town_evidence_and_secondary_reference_review"
+    },
+    {
+      "acquisition": "通常Client interval=2、timeout=20、retries=0、robots適用。全て公式/企画入口の実リンクのみ。PDFKit抽出と対象2頁の画像点検を区別。",
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T01:10:29.140372+00:00",
+              "evidence_attempt": "iida_three_open_tables_bounded_review_20261113",
+              "expected_source_hash": "18f9fc0e2878193fc39d2e5eed1f2ba304452a241c08d4c9f0a6a05da8793fbd",
+              "observation": "今回の公共施設・文化財・指定緊急避難場所3表の名称欄に原社名一致なし。別施設や建物の読みを流用せず保留。追加探索は行わず、この限定範囲の照合のみ記録。",
+              "reference": {
+                "fetched_at": "2026-11-13T01:08:18.376242+00:00",
+                "page_hash": "d02c14d1e653258f21dd1508ba8f126103416594d3f2b52246a447dd0f25e8c4",
+                "url": "https://www.city.iida.lg.jp/soshiki/168/opendata.html"
+              },
+              "source_kind": "municipal_open_data",
+              "source_publisher": "飯田市",
+              "status": "no_exact_primary_name_in_three_public_tables"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T12:38:15.415639+00:00",
+              "entry_id": "42867e84-035e-5410-b927-2733648f8ed6",
+              "evidence_attempt": "nagano_two_cached_indexes_second_twenty_official_profiles_two_full_readings_20261113",
+              "expected_source_hash": "18f9fc0e2878193fc39d2e5eed1f2ba304452a241c08d4c9f0a6a05da8793fbd",
+              "observation": "公式実リンク先の固有神社名・鎮座地欄を確認。原住所を削除・補作せず、読み欠落・原名称や所在地との差を保留。",
+              "original_address": "飯田市浜井町3363",
+              "original_name": "冨士山稲荷神社",
+              "prefecture_code": "20",
+              "reference": {
+                "address_raw": "飯田市浜井町3363",
+                "authority_observation": "取得済み長野県神社庁の一覧の社名セルにある実リンク先。同庁の固有神社名・鎮座地欄を確認。",
+                "checked_at": "2026-11-13T12:36:39.665737+00:00",
+                "excerpt": "神社名 冨士山稲荷神社\n鎮座地 飯田市浜井町3363",
+                "fetched_at": "2026-11-13T12:36:01.268190+00:00",
+                "index_proof": {
+                  "address_raw": "飯田市浜井町3363",
+                  "index_checked_at": "2026-11-09T04:37:50.970096+00:00",
+                  "index_excerpt": "冨士山稲荷神社 / 飯田市浜井町3363",
+                  "index_locator": "table tr[262] exact 神社名/〒/住所 row; first cell a[href]",
+                  "index_page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                  "index_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                  "name_raw": "冨士山稲荷神社",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/04nansin/03hani/6102.html"
+                },
+                "locator": "神社名を載せた固有表の同一行と直後の鎮座地行。宮司名・祭神のかな・連絡先とは区別。",
+                "name_field_raw": "冨士山稲荷神社",
+                "name_raw": "冨士山稲荷神社",
+                "page_hash": "cca0e982f6026019708e8b6022d983ad73e1ab31a7cdef23be15de32dbc12f41",
+                "reading_raw": "",
+                "reading_scope": "absent",
+                "rights_note": "既記録の神社庁公開掲載条件の範囲。Copyright表示は包括再配布許諾とはせず、正式名・明示全文かな・原所在地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・画像・キャッシュは収録しない。",
+                "source_kind": "agency",
+                "source_publisher": "長野県神社庁",
+                "title": "冨士山稲荷神社 | 長野県神社庁",
+                "url": "https://www.nagano-jinjacho.jp/shibu/04nansin/03hani/6102.html"
+              },
+              "scope": "保存済み長野県神社庁2支部索引で当初保留に対応した71実リンクのうち、前回未取得の次の20主詳細だけを取得して神社名欄の全文かなと原全所在地を照合。",
+              "status": "official_detail_name_reading_or_address_differs"
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T15:18:05.635058+00:00",
+              "corroborating_reference": {
+                "address_raw": "飯田市浜井町三三六三",
+                "bytes": 639438,
+                "checked_at": "2026-11-13T15:18:05.635058+00:00",
+                "excerpt": "冨士山稲荷神社（ふじやまいなりじんじゃ） / 飯田市浜井町三三六三",
+                "excerpt_processing": "原画像の全文ルビを配列順で転記。住所の漢数字を保持し、算用数字に書き換えない。所在地の採用照合は共同企画の同一紹介本文で別途確認。",
+                "fetched_at": "2026-11-13T15:12:35.998575+00:00",
+                "label": "18minamisinsyu",
+                "locator": "南信州神社まいり②の右下紹介欄、見出し全ルビと▼鎮座欄",
+                "name_raw": "冨士山稲荷神社",
+                "page_hash": "f295b380a253407b5187fd6f7e36840dc80d5711ff52ab54d43794a968a48aab",
+                "pdf_pages": 2,
+                "printed_page": "⑲",
+                "publication_reference": {
+                  "bytes": 326154,
+                  "fetched_at": "2026-11-13T15:11:42.506598+00:00",
+                  "label": "01hyosi",
+                  "page_hash": "34198ea2dd64a6d99f1617c89be110e9049d6a09655979ba00bbe495301ad9c8",
+                  "requested_url": "https://www.nagano-jinjacho.jp/_userdata/01hyosi.pdf",
+                  "status": "acquired",
+                  "url": "https://www.nagano-jinjacho.jp/_userdata/01hyosi.pdf"
+                },
+                "publisher_reference": {
+                  "fetched_at": "2026-11-13T15:11:15.413855+00:00",
+                  "label": "goshuin",
+                  "page_hash": "45f8da19c4d5186fa112ddc8ddcd07b514327c0d7854b763431f604a4df827e9",
+                  "title": [
+                    "御朱印めぐり of 長野県神社庁"
+                  ],
+                  "url": "https://www.nagano-jinjacho.jp/gosyuin.html"
+                },
+                "reading_raw": "ふじやまいなりじんじゃ",
+                "reading_scope": "full_name",
+                "requested_url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf",
+                "rights_scope": "公開入口/組織説明/表紙/序文/目次の点検範囲で最小事実記録を明示禁止する条項なし。冊子の印刷案内をデータ再配布への包括許諾とせず、最小の名称/ルビ/原住所/出典位置のみ記録。",
+                "source_kind": "official_agency_booklet_corroboration",
+                "source_page_index": 1,
+                "source_publisher": "長野県神社庁 教化部調査委員会",
+                "status": "acquired",
+                "title": "長野県神社参拝 御朱印めぐり（平成30年10月初版）南信州神社まいり②",
+                "url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf",
+                "visual_review": {
+                  "image_sha256": "c151245a00424e9b5b994b7546800f411012fbcb5c33fd12b538d88c8ab79185",
+                  "method": "取得同hash PDFの該当頁をPDFKitで描画して目視"
+                }
+              },
+              "evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "expected_source_hash": "18f9fc0e2878193fc39d2e5eed1f2ba304452a241c08d4c9f0a6a05da8793fbd",
+              "reference": {
+                "address_raw": "飯田市浜井町3363",
+                "checked_at": "2026-11-13T15:18:05.635058+00:00",
+                "excerpt": "冨士山稲荷神社（南信） / 神社名：ふじやまいなりじんじゃ（通称：ふじやまさま） / 住　所：飯田市浜井町3363",
+                "excerpt_processing": "同じ施設紹介の見出し・独立かな欄・所在地だけを区切って転記。祭礼名/愛称から構成せず、原字形を保持。",
+                "fetched_at": "2026-11-13T15:15:24.361689+00:00",
+                "label": "joint-profiles",
+                "license_status": "unconfirmed",
+                "locator": "h2「冨士山稲荷神社（南信）」下のp「神社名」・同施設のp「住所」",
+                "name_raw": "冨士山稲荷神社",
+                "page_hash": "ff115a363d811765b24757ec7faba78da0ff4d8547a594562a4902f1e21a1a25",
+                "publisher_reference": {
+                  "fetched_at": "2026-11-13T15:15:22.159748+00:00",
+                  "label": "joint-about",
+                  "page_hash": "ced4d3ef82e5f86fb16ae7273bb6bb9c3a15338cd6fe0c7a37eac2442e555e6a",
+                  "title": [
+                    "ご神縁めぐりについて | ご神縁めぐり　長野県内神社9社"
+                  ],
+                  "url": "https://goshinenmeguri.localinfo.jp/pages/5847940/profile"
+                },
+                "reading_raw": "ふじやまいなりじんじゃ",
+                "reading_scope": "full_name",
+                "rights_scope": "入口・企画説明・当該紹介の本文とCopyright表示を点検。点検範囲に最小事実の記録を明示禁止する条項は見当たらないが、包括転載許諾・オープンライセンスとは認定しない。参拝企画の自己表示と神社庁公式/行政認定を区別し、氏名・連絡先・紹介長文・画像を収録しない。",
+                "source_kind": "joint_shrine_pilgrimage_profile",
+                "source_publisher": "ご神縁めぐりの会（共同巡拝企画の自己表示）",
+                "title": "ご縁つなぐ神社一覧 | ご神縁めぐり 長野県内神社9社",
+                "url": "https://goshinenmeguri.localinfo.jp/pages/5847941/page_201603151456"
+              },
+              "status": "joint_profile_exact_full_name_kana_parcel_adopted_official_booklet_corroborated"
+            }
+          ],
+          "address": "飯田市浜井町3363",
+          "agency_listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "42867e84-035e-5410-b927-2733648f8ed6",
+          "expected_source_hash": "18f9fc0e2878193fc39d2e5eed1f2ba304452a241c08d4c9f0a6a05da8793fbd",
+          "facility_id": "31612263-afaf-5da5-839c-84c0b7f39e2a",
+          "listed_name": "冨士山稲荷神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "長野県",
+          "prefecture_code": "20",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "冨士山稲荷神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+      "booklet_scope": "実リンク19 PDFの計25頁（表紙/序文/目次3頁、地域別22頁）を取得しテキスト抽出。原画像を目視したのは南信州2頁の対象欄。残地域の全カードの原名/全所在地/全文かなの厳密目視照合は未完。原文字列は重複/欠字を含み得るため抽出だけで補完しない。",
+      "checked_at": "2026-11-13T15:18:05.635058+00:00",
+      "entry_ids": [
+        "42867e84-035e-5410-b927-2733648f8ed6",
+        "65f01620-1aa9-5207-a1db-e1ad4f1bf614"
+      ],
+      "joint_scope": "入口・企画説明と実リンク先参加神社紹介のうち冨士山稲荷神社を厳密照合。サイト表題の9社を検証済み社数とせず、神社庁公式や行政認定とは扱わない。",
+      "manual_resolved_entry_ids": [
+        "42867e84-035e-5410-b927-2733648f8ed6"
+      ],
+      "new_verified_entries": 1,
+      "newsletter_scope": "神州137-142号の6 PDF各24頁、計144頁をテキスト抽出し社名全文かな候補を限定探索。本文全画像/全ルビの目視精査ではない。143号は8 MiB内部上限で未取得、再取得/上限変更/別ツールへの切替えなし。個人名・人事・寄付者名は収録しない。",
+      "preservation": "原正本・住所原字・既存補正・旧履歴を保持。冊子の漢数字を算用数字に書き換えず、主採用根拠は独立かな/原全所在地が同一紹介に明示された共同企画本文。本文/PDF/画像/キャッシュ/個人情報は収録しない。",
+      "resources": [
+        {
+          "fetched_at": "2026-11-13T15:08:55.050829+00:00",
+          "label": "catalogue",
+          "page_hash": "4a3ce75884da4c416a320995131df94a1738029efd220ccf8cfc1ecf14d8c5c7",
+          "title": [
+            "神州 of 長野県神社庁"
+          ],
+          "url": "https://www.nagano-jinjacho.jp/shinshu.html"
+        },
+        {
+          "fetched_at": "2026-11-13T15:11:15.413855+00:00",
+          "label": "goshuin",
+          "page_hash": "45f8da19c4d5186fa112ddc8ddcd07b514327c0d7854b763431f604a4df827e9",
+          "title": [
+            "御朱印めぐり of 長野県神社庁"
+          ],
+          "url": "https://www.nagano-jinjacho.jp/gosyuin.html"
+        },
+        {
+          "fetched_at": "2026-11-13T15:14:55.211063+00:00",
+          "label": "joint-home",
+          "page_hash": "7de2e5465360bc66909cf1df9a45bca7ed7208d260cb6febb86759fe81d09d1c",
+          "title": [
+            "ご神縁めぐり　長野県内神社9社"
+          ],
+          "url": "https://goshinenmeguri.localinfo.jp/"
+        },
+        {
+          "fetched_at": "2026-11-13T15:15:22.159748+00:00",
+          "label": "joint-about",
+          "page_hash": "ced4d3ef82e5f86fb16ae7273bb6bb9c3a15338cd6fe0c7a37eac2442e555e6a",
+          "title": [
+            "ご神縁めぐりについて | ご神縁めぐり　長野県内神社9社"
+          ],
+          "url": "https://goshinenmeguri.localinfo.jp/pages/5847940/profile"
+        },
+        {
+          "fetched_at": "2026-11-13T15:15:24.361689+00:00",
+          "label": "joint-profiles",
+          "page_hash": "ff115a363d811765b24757ec7faba78da0ff4d8547a594562a4902f1e21a1a25",
+          "title": [
+            "ご縁つなぐ神社一覧 | ご神縁めぐり　長野県内神社9社"
+          ],
+          "url": "https://goshinenmeguri.localinfo.jp/pages/5847941/page_201603151456"
+        },
+        {
+          "bytes": 22128,
+          "fetched_at": "2026-11-13T15:09:23.644715+00:00",
+          "label": "about",
+          "page_hash": "00b6b8cb27c252db576e900d03e1ecd178970d76806f4ae0a2c7b395cf07ab4d",
+          "requested_url": "https://www.nagano-jinjacho.jp/j-tuite.html",
+          "rights_hits": [
+            "Copyright"
+          ],
+          "status": "acquired",
+          "title": [
+            "長野県神社庁について of 長野県神社庁"
+          ],
+          "url": "https://www.nagano-jinjacho.jp/j-tuite.html"
+        },
+        {
+          "checked_at": "2026-11-13T15:09:29.410927+00:00",
+          "error": "page exceeds 8 MiB limit",
+          "label": "shinsyu143",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu143.pdf",
+          "status": "unacquired"
+        },
+        {
+          "bytes": 4156344,
+          "fetched_at": "2026-11-13T15:09:32.452699+00:00",
+          "label": "shinsyu142",
+          "page_hash": "4585a6e8b01e902a6cf45938a8cf3d6267ed87a7096bf50b91d2a5c08d081828",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu142.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu142.pdf"
+        },
+        {
+          "bytes": 4048758,
+          "fetched_at": "2026-11-13T15:09:35.274931+00:00",
+          "label": "shinsyu141",
+          "page_hash": "d7b9be9295545833a9ff8fa364c00d040639321dbe4f529da72162f8e4c2ef01",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu141.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu141.pdf"
+        },
+        {
+          "bytes": 4565394,
+          "fetched_at": "2026-11-13T15:09:38.138110+00:00",
+          "label": "shinsyu140",
+          "page_hash": "82a1f3812df2d8db9df86190d848b4e05b0b14cbd3729acab739ee94ffa8c9c7",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu140.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu140.pdf"
+        },
+        {
+          "bytes": 4452828,
+          "fetched_at": "2026-11-13T15:09:41.201424+00:00",
+          "label": "shinsyu139",
+          "page_hash": "37750c0a0283161e6bfe205e6abb6201dce187a1775d13c8bced467569b38483",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu139.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu139.pdf"
+        },
+        {
+          "bytes": 3732375,
+          "fetched_at": "2026-11-13T15:09:43.740515+00:00",
+          "label": "shinsyu138",
+          "page_hash": "f0f464974fec8261e04b5c5cba17a40fc3012258b3b502c07ab26664561fcd6b",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu138.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu138.pdf"
+        },
+        {
+          "bytes": 3809105,
+          "fetched_at": "2026-11-13T15:09:46.361618+00:00",
+          "label": "shinsyu137",
+          "page_hash": "9185935eb3b849f02c7175511ee47efa786a0c2d275189d46a8152af3440e031",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu137.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/shinsyu137.pdf"
+        },
+        {
+          "bytes": 326154,
+          "fetched_at": "2026-11-13T15:11:42.506598+00:00",
+          "label": "01hyosi",
+          "page_hash": "34198ea2dd64a6d99f1617c89be110e9049d6a09655979ba00bbe495301ad9c8",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/01hyosi.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/01hyosi.pdf"
+        },
+        {
+          "bytes": 214691,
+          "fetched_at": "2026-11-13T15:11:44.621595+00:00",
+          "label": "02aisatu",
+          "page_hash": "185814d932f56d424970e248104092a83f7f6c7bc77f0f53c84b234fb78df75b",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/02aisatu.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/02aisatu.pdf"
+        },
+        {
+          "bytes": 141158,
+          "fetched_at": "2026-11-13T15:11:46.708215+00:00",
+          "label": "03mokuji",
+          "page_hash": "c1f41575d7fdf7b61269f2d49a43a8609308e79d84ea1c7f1bcb7953042dcc7f",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/03mokuji.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/03mokuji.pdf"
+        },
+        {
+          "bytes": 450517,
+          "fetched_at": "2026-11-13T15:12:05.823113+00:00",
+          "label": "04okusinano",
+          "page_hash": "73a301db352dac889076ec0f7cc00bfcdb258ea91efdb9770e7a2a81ee32b4e5",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/04okusinano.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/04okusinano.pdf"
+        },
+        {
+          "bytes": 391904,
+          "fetched_at": "2026-11-13T15:12:07.949553+00:00",
+          "label": "05kamimizunouti",
+          "page_hash": "e61a1cbd9546e7c83194da2d815acc5de65898b877b92c3fc50e19788e686611",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/05kamimizunouti.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/05kamimizunouti.pdf"
+        },
+        {
+          "bytes": 429263,
+          "fetched_at": "2026-11-13T15:12:10.145220+00:00",
+          "label": "06togakusi",
+          "page_hash": "82d10a53d9a56b18397d1c6338c7c7b1e26f991bab654adb7f3459eac7f3a824",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/06togakusi.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/06togakusi.pdf"
+        },
+        {
+          "bytes": 672053,
+          "fetched_at": "2026-11-13T15:12:12.303520+00:00",
+          "label": "07nagano",
+          "page_hash": "5f364cd1dcbd047504a79846a8a9e4bcfe9845c0b377d2526ad73f5db8eb2402",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/07nagano.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/07nagano.pdf"
+        },
+        {
+          "bytes": 483494,
+          "fetched_at": "2026-11-13T15:12:14.437678+00:00",
+          "label": "08sarasina",
+          "page_hash": "b8d68951bd291ecc93123bf44db8f52f2370aa9c56a61d1b93e9f5dd7c1232f8",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/08sarasina.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/08sarasina.pdf"
+        },
+        {
+          "bytes": 1327211,
+          "fetched_at": "2026-11-13T15:12:16.662271+00:00",
+          "label": "09ueda",
+          "page_hash": "9d5698c35918147f99abbec7865c91768e6240219309c1f1c28bab3721453946",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/09ueda.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/09ueda.pdf"
+        },
+        {
+          "bytes": 612518,
+          "fetched_at": "2026-11-13T15:12:18.797738+00:00",
+          "label": "10saku",
+          "page_hash": "9bbb601bcba5b6b974b62a1597ede21ef8bf0daa334a086417fb00ef1d11c55f",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/10saku.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/10saku.pdf"
+        },
+        {
+          "bytes": 278123,
+          "fetched_at": "2026-11-13T15:12:20.917266+00:00",
+          "label": "11daohoku",
+          "page_hash": "e9fcbe893a471f1110b4c4e47f2489bd348e488f584a94faac387d5951f5366b",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/11daohoku.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/11daohoku.pdf"
+        },
+        {
+          "bytes": 410891,
+          "fetched_at": "2026-11-13T15:12:23.069314+00:00",
+          "label": "12azumino",
+          "page_hash": "65f94877c418858d3b8295c5f96e5d47e69ef34adfad1c406dfa5755c6626643",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/12azumino.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/12azumino.pdf"
+        },
+        {
+          "bytes": 653124,
+          "fetched_at": "2026-11-13T15:12:25.225662+00:00",
+          "label": "13higasitikuma",
+          "page_hash": "48043e0299a89f4808b0aaf657b081e1dc07a25b043d6d44109cf1f153e1b455",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/13higasitikuma.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/13higasitikuma.pdf"
+        },
+        {
+          "bytes": 855745,
+          "fetched_at": "2026-11-13T15:12:27.380587+00:00",
+          "label": "14matumoto",
+          "page_hash": "c2b887b7fbe94bb11f00e3d8ff0e15cb3ac89cbdf0cc8a9170c3bbb6d5f91e45",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/14matumoto.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/14matumoto.pdf"
+        },
+        {
+          "bytes": 935878,
+          "fetched_at": "2026-11-13T15:12:29.543716+00:00",
+          "label": "15kiso-2",
+          "page_hash": "074ebf027c664619b244b4f91a2689122ff501b47e1b675a4bf234acca72f156",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/15kiso-2.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/15kiso-2.pdf"
+        },
+        {
+          "bytes": 514754,
+          "fetched_at": "2026-11-13T15:12:31.691397+00:00",
+          "label": "16suwataisya",
+          "page_hash": "5281c5f792e21ed46fe23084da1b0e1dc15c3422c9e5ca0c860509e1370cbe47",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/16suwataisya.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/16suwataisya.pdf"
+        },
+        {
+          "bytes": 355423,
+          "fetched_at": "2026-11-13T15:12:33.812413+00:00",
+          "label": "17suwako",
+          "page_hash": "6c384fb1c1a625f0b9ad333e214ab43b3a8ab2ccab5be148dd76acef1261a2f4",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/17suwako.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/17suwako.pdf"
+        },
+        {
+          "bytes": 639438,
+          "fetched_at": "2026-11-13T15:12:35.998575+00:00",
+          "label": "18minamisinsyu",
+          "page_hash": "f295b380a253407b5187fd6f7e36840dc80d5711ff52ab54d43794a968a48aab",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf"
+        },
+        {
+          "bytes": 1362969,
+          "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+          "label": "19kamiina",
+          "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+          "requested_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+          "status": "acquired",
+          "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+        }
+      ],
+      "source_kind": "official_agency_booklet_and_joint_pilgrimage_profile",
+      "status": "one_joint_profile_reading_adopted_official_booklet_visual_corroborated"
     }
   ],
   "per_prefecture": {
@@ -405852,11 +406342,11 @@
     },
     "20": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 1763,
+        "insufficient_evidence_in_inspected_sources": 1762,
         "investigation_incomplete": 0,
         "judgment_required": 0
       },
-      "unfinished_entries": 1763
+      "unfinished_entries": 1762
     },
     "21": {
       "categories": {
@@ -676850,89 +677340,6 @@
       "additional_source_reviews": [
         {
           "adopted": false,
-          "checked_at": "2026-11-13T01:10:29.140372+00:00",
-          "evidence_attempt": "iida_three_open_tables_bounded_review_20261113",
-          "expected_source_hash": "18f9fc0e2878193fc39d2e5eed1f2ba304452a241c08d4c9f0a6a05da8793fbd",
-          "observation": "今回の公共施設・文化財・指定緊急避難場所3表の名称欄に原社名一致なし。別施設や建物の読みを流用せず保留。追加探索は行わず、この限定範囲の照合のみ記録。",
-          "reference": {
-            "fetched_at": "2026-11-13T01:08:18.376242+00:00",
-            "page_hash": "d02c14d1e653258f21dd1508ba8f126103416594d3f2b52246a447dd0f25e8c4",
-            "url": "https://www.city.iida.lg.jp/soshiki/168/opendata.html"
-          },
-          "source_kind": "municipal_open_data",
-          "source_publisher": "飯田市",
-          "status": "no_exact_primary_name_in_three_public_tables"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T12:38:15.415639+00:00",
-          "entry_id": "42867e84-035e-5410-b927-2733648f8ed6",
-          "evidence_attempt": "nagano_two_cached_indexes_second_twenty_official_profiles_two_full_readings_20261113",
-          "expected_source_hash": "18f9fc0e2878193fc39d2e5eed1f2ba304452a241c08d4c9f0a6a05da8793fbd",
-          "observation": "公式実リンク先の固有神社名・鎮座地欄を確認。原住所を削除・補作せず、読み欠落・原名称や所在地との差を保留。",
-          "original_address": "飯田市浜井町3363",
-          "original_name": "冨士山稲荷神社",
-          "prefecture_code": "20",
-          "reference": {
-            "address_raw": "飯田市浜井町3363",
-            "authority_observation": "取得済み長野県神社庁の一覧の社名セルにある実リンク先。同庁の固有神社名・鎮座地欄を確認。",
-            "checked_at": "2026-11-13T12:36:39.665737+00:00",
-            "excerpt": "神社名 冨士山稲荷神社\n鎮座地 飯田市浜井町3363",
-            "fetched_at": "2026-11-13T12:36:01.268190+00:00",
-            "index_proof": {
-              "address_raw": "飯田市浜井町3363",
-              "index_checked_at": "2026-11-09T04:37:50.970096+00:00",
-              "index_excerpt": "冨士山稲荷神社 / 飯田市浜井町3363",
-              "index_locator": "table tr[262] exact 神社名/〒/住所 row; first cell a[href]",
-              "index_page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-              "index_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-              "name_raw": "冨士山稲荷神社",
-              "url": "https://www.nagano-jinjacho.jp/shibu/04nansin/03hani/6102.html"
-            },
-            "locator": "神社名を載せた固有表の同一行と直後の鎮座地行。宮司名・祭神のかな・連絡先とは区別。",
-            "name_field_raw": "冨士山稲荷神社",
-            "name_raw": "冨士山稲荷神社",
-            "page_hash": "cca0e982f6026019708e8b6022d983ad73e1ab31a7cdef23be15de32dbc12f41",
-            "reading_raw": "",
-            "reading_scope": "absent",
-            "rights_note": "既記録の神社庁公開掲載条件の範囲。Copyright表示は包括再配布許諾とはせず、正式名・明示全文かな・原所在地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・画像・キャッシュは収録しない。",
-            "source_kind": "agency",
-            "source_publisher": "長野県神社庁",
-            "title": "冨士山稲荷神社 | 長野県神社庁",
-            "url": "https://www.nagano-jinjacho.jp/shibu/04nansin/03hani/6102.html"
-          },
-          "scope": "保存済み長野県神社庁2支部索引で当初保留に対応した71実リンクのうち、前回未取得の次の20主詳細だけを取得して神社名欄の全文かなと原全所在地を照合。",
-          "status": "official_detail_name_reading_or_address_differs"
-        }
-      ],
-      "address": "飯田市浜井町3363",
-      "agency_listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "42867e84-035e-5410-b927-2733648f8ed6",
-      "expected_source_hash": "18f9fc0e2878193fc39d2e5eed1f2ba304452a241c08d4c9f0a6a05da8793fbd",
-      "facility_id": "31612263-afaf-5da5-839c-84c0b7f39e2a",
-      "listed_name": "冨士山稲荷神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "長野県",
-      "prefecture_code": "20",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "冨士山稲荷神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
           "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
@@ -693807,6 +694214,40 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T15:18:05.635058+00:00",
+          "evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+          "expected_source_hash": "f48839270d6abf4922c784f6434056d050de938802c58d846104bf041f819a80",
+          "observation": "公式冊子の独立全文ルビは目視確認。冊子の原住所は漢数字の二四三四で、原正本の算用数字2434へ転記して照合を通す処理は行わない。原表記を保持したまま保留し、この資料からの読み補完を適用していない。",
+          "reference": {
+            "address_raw": "上伊那郡飯島町飯島二四三四",
+            "bytes": 639438,
+            "checked_at": "2026-11-13T15:18:05.635058+00:00",
+            "excerpt": "梅戸神社（うめとじんじゃ） / 上伊那郡飯島町飯島二四三四",
+            "fetched_at": "2026-11-13T15:12:35.998575+00:00",
+            "label": "18minamisinsyu",
+            "locator": "左下の梅戸神社紹介欄、全文ルビと▼鎮座",
+            "name_raw": "梅戸神社",
+            "page_hash": "f295b380a253407b5187fd6f7e36840dc80d5711ff52ab54d43794a968a48aab",
+            "pdf_pages": 2,
+            "printed_page": "⑱",
+            "reading_raw": "うめとじんじゃ",
+            "reading_scope": "full_name",
+            "requested_url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf",
+            "source_kind": "official_agency_booklet",
+            "source_page_index": 0,
+            "source_publisher": "長野県神社庁 教化部調査委員会",
+            "status": "acquired",
+            "title": "長野県神社参拝 御朱印めぐり 南信州神社まいり①",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf",
+            "visual_review": {
+              "image_sha256": "d2a76489cba539a9e339d9e87d418e4931555f4d4f1e61a543221427d108d302",
+              "method": "取得同hash PDFの該当頁をPDFKitで描画して目視"
+            }
+          },
+          "status": "explicit_booklet_reading_retained_pending_literal_kanji_numeral_address"
         }
       ],
       "address": "上伊那郡飯島町大字飯島2434",
@@ -1371484,7 +1371925,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10311,
+    "retained_unresolved_entries": 10310,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1374586,11 +1375027,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10115,
+      "insufficient_evidence_in_inspected_sources": 10114,
       "investigation_incomplete": 0,
       "judgment_required": 196
     },
-    "distinct_surfaces": 4139,
-    "unfinished_entries": 10311
+    "distinct_surfaces": 4138,
+    "unfinished_entries": 10310
   }
 }
