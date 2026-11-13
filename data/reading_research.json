@@ -319352,6 +319352,99 @@
           }
         }
       ]
+    },
+    {
+      "acquisition": "個人サイト3入口は通常クライアント、robots遵守、同一ホスト2秒以上・timeout20秒・再試行0。図書館はweb toolによる本文確認でraw hashを捏造しない。",
+      "attempt_id": "kasukabe_library_uchimaki_history_text_and_shrineheritager_policy_stop_20261113",
+      "checked_at": "2026-11-13T08:47:29.823224+00:00",
+      "global_pending_entries_at_record": 10528,
+      "inspected_target_entries": 1,
+      "library_observation": {
+        "adopted": false,
+        "checked_at": "2026-11-13T08:47:29.823224+00:00",
+        "evidence_attempt": "kasukabe_library_uchimaki_history_text_and_shrineheritager_policy_stop_20261113",
+        "expected_source_hash": "2d9f0443f9600fc5545a1425528175ce4ed369f90212475ca651096e9e71492a",
+        "reference": {
+          "authority_reference": {
+            "checked_at": "2026-11-13T08:47:29.823224+00:00",
+            "inspection_method": "web toolで実HTML本文閲覧",
+            "observation": "トップの図書館自己表示と春日部市/教育委員会への実リンクを確認。",
+            "title": "春日部市立図書館",
+            "url": "https://www.lib.kasukabe.saitama.jp/"
+          },
+          "checked_at": "2026-11-13T08:47:29.823224+00:00",
+          "inspected_pdf_page_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "inspection_method": "web toolで実PDFの抽出本文を閲覧。通常HTTPクライアントでの取得バイト列/hashは未取得。原画像・図版全体を目視確認済みとはしない。",
+          "locality_raw": "内牧",
+          "locator": "冒頭「内牧地区 鷲香取神社〈内牧〉」と由緒・沿革・神社行事の本文。神社章の文字層に限定。",
+          "name_raw": "鷲香取神社",
+          "observation": "見出し・沿革・行事は確認できるが、点検した章の文字層に独立した社名全文かなと全地番2286は見当たらない。祭神のルビを社名に転用せず、同じPDFの別神社章から読み又は住所を流用しない。",
+          "pdf_pages": 10,
+          "policy_reference": {
+            "checked_at": "2026-11-13T08:47:29.823224+00:00",
+            "inspection_method": "web toolで実HTML本文閲覧",
+            "locator": "著作権について",
+            "observation": "市帰属が原則、一部画像等は原著作者に帰属。私的複製・引用等の法で認める範囲を越えた無断複製・転用は禁止。一般の転載許諾とはせず、今回の記録は資料位置・不足事項だけで沿革本文・画像を収録しない。",
+            "title": "このサイトについて",
+            "url": "https://www.lib.kasukabe.saitama.jp/about/"
+          },
+          "reading_scope": "full_shrine_reading_not_observed_in_inspected_text",
+          "source_kind": "municipal_library_hosted_shrine_history_extract",
+          "source_publisher": "春日部市立図書館（公開元。原資料の著者・刊行年は今回未確定）",
+          "title": "内牧地区の神社資料（冒頭：鷲香取神社〈内牧〉）",
+          "url": "https://www.lib.kasukabe.saitama.jp/lib/files/uchimaki.pdf"
+        },
+        "remaining_requirement": "原正式名の独立全文かなと原全所在地の対応を確認できる利用可能な実資料。図書館収録を神社公式の発音確認と同一視しない。",
+        "status": "library_history_text_no_explicit_full_reading_or_full_parcel_in_inspected_chapter"
+      },
+      "new_verified_entries": 0,
+      "private_source_candidates_saved": 0,
+      "private_source_entry_references": [
+        {
+          "fetched_at": "2026-11-13T08:45:47.645797+00:00",
+          "page_hash": "9cc53f92bed476a18e041e3f7670606cfcca98b611242c0aa63a6c43bfea7b30",
+          "title": [
+            "Shrine-heritager｜延喜式内社と全国の神社を古文献と参拝写真で紹介"
+          ],
+          "url": "https://shrineheritager.com/"
+        },
+        {
+          "fetched_at": "2026-11-13T08:45:50.733644+00:00",
+          "page_hash": "272c10d02b1f6f5cce119fa9ce57fa0722effdcd8e299660cc0ef2f0eadf4304",
+          "title": [
+            "Shrine Heritagerとは - Shrine-heritager"
+          ],
+          "url": "https://shrineheritager.com/shrine-heritager/"
+        }
+      ],
+      "private_source_policy_reference": {
+        "checked_at": "2026-11-13T08:47:29.823224+00:00",
+        "fetched_at": "2026-11-13T08:45:53.664172+00:00",
+        "locator": "冒頭「サイトポリシー・著作権について」と後段「著作権について」",
+        "observation": "冒頭に無許可の転用・転載・改変禁止を明示。後段には出典明示により無償引用できる場合があるとも記載されるが、すべてのデータを辞書へ加工再利用できる一般許諾とは確認できない。全文転載・RSS盗用も禁止。条件未確定のまま個別神社記事を取得・転記しない。",
+        "page_hash": "da8c5f1ed9d5446f87d3cd1b16b2718dcba5a197d734561a8d60504afa6a074c",
+        "source_kind": "private_site_policy",
+        "source_publisher": "Shrine-heritager",
+        "title": [
+          "プライバシーポリシー - Shrine-heritager"
+        ],
+        "url": "https://shrineheritager.com/page-15/"
+      },
+      "private_source_shrine_article_requests": 0,
+      "retained_pending_entries": 1,
+      "rights_scope": "図書館の沿革本文・画像、個人サイトの神社データ・引用本文は転記せず、最小限の出典位置・観察・停止判断だけを保存。個人連絡先・HTML・PDF・cacheは含めない。",
+      "scope": "図書館の実PDF1冊10頁のうち鷲香取神社章4頁の文字層と、別個人サイトのトップ・紹介・利用条件の3本文だけ。図書館全資料、PDF図版全体、個人サイト全記事又は全国全保留の調査完了ではない。",
+      "snapshot_base_commit": "902e7724117aa54a73399d53159f902553186d36",
+      "status": "one_library_history_chapter_checked_and_private_source_reuse_stopped",
+      "target_entry_ids": [
+        "51d43f8d-b934-52bc-92d7-aa0bba536ad1"
+      ],
+      "third_party_contact_made": false
     }
   ],
   "per_prefecture": {
@@ -462410,6 +462503,49 @@
             "url": "https://tesshow.jp/saitama/kasukabe/shrine_uchimaki_katori.html"
           },
           "status": "literal_name_full_address_match_no_explicit_full_name_reading_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:47:29.823224+00:00",
+          "evidence_attempt": "kasukabe_library_uchimaki_history_text_and_shrineheritager_policy_stop_20261113",
+          "expected_source_hash": "2d9f0443f9600fc5545a1425528175ce4ed369f90212475ca651096e9e71492a",
+          "reference": {
+            "authority_reference": {
+              "checked_at": "2026-11-13T08:47:29.823224+00:00",
+              "inspection_method": "web toolで実HTML本文閲覧",
+              "observation": "トップの図書館自己表示と春日部市/教育委員会への実リンクを確認。",
+              "title": "春日部市立図書館",
+              "url": "https://www.lib.kasukabe.saitama.jp/"
+            },
+            "checked_at": "2026-11-13T08:47:29.823224+00:00",
+            "inspected_pdf_page_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "inspection_method": "web toolで実PDFの抽出本文を閲覧。通常HTTPクライアントでの取得バイト列/hashは未取得。原画像・図版全体を目視確認済みとはしない。",
+            "locality_raw": "内牧",
+            "locator": "冒頭「内牧地区 鷲香取神社〈内牧〉」と由緒・沿革・神社行事の本文。神社章の文字層に限定。",
+            "name_raw": "鷲香取神社",
+            "observation": "見出し・沿革・行事は確認できるが、点検した章の文字層に独立した社名全文かなと全地番2286は見当たらない。祭神のルビを社名に転用せず、同じPDFの別神社章から読み又は住所を流用しない。",
+            "pdf_pages": 10,
+            "policy_reference": {
+              "checked_at": "2026-11-13T08:47:29.823224+00:00",
+              "inspection_method": "web toolで実HTML本文閲覧",
+              "locator": "著作権について",
+              "observation": "市帰属が原則、一部画像等は原著作者に帰属。私的複製・引用等の法で認める範囲を越えた無断複製・転用は禁止。一般の転載許諾とはせず、今回の記録は資料位置・不足事項だけで沿革本文・画像を収録しない。",
+              "title": "このサイトについて",
+              "url": "https://www.lib.kasukabe.saitama.jp/about/"
+            },
+            "reading_scope": "full_shrine_reading_not_observed_in_inspected_text",
+            "source_kind": "municipal_library_hosted_shrine_history_extract",
+            "source_publisher": "春日部市立図書館（公開元。原資料の著者・刊行年は今回未確定）",
+            "title": "内牧地区の神社資料（冒頭：鷲香取神社〈内牧〉）",
+            "url": "https://www.lib.kasukabe.saitama.jp/lib/files/uchimaki.pdf"
+          },
+          "remaining_requirement": "原正式名の独立全文かなと原全所在地の対応を確認できる利用可能な実資料。図書館収録を神社公式の発音確認と同一視しない。",
+          "status": "library_history_text_no_explicit_full_reading_or_full_parcel_in_inspected_chapter"
         }
       ],
       "address": "春日部市内牧2286",
