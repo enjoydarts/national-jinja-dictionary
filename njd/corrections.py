@@ -120,7 +120,12 @@ def _reference_matches(ref,facility,entry,changes):
         # 市 (official prefectural references are recorded in docs/DATA.md).
         match=re.match(r'((?:高市|余市|[^都道府県市区]+?)郡)(.+)',value)
         return match.groups() if match else ('',value)
-    if 'booklet_address_context' in ref:
+    if 'article_address_context' in ref:
+        from njd.article_context import article_context_address
+        contextual=article_context_address(ref,facility)
+        if set(changes)!={'reading'} or entry.get('status')=='excluded' or contextual is None:return False
+        reference_address=address(contextual)
+    elif 'booklet_address_context' in ref:
         from njd.booklet_context import booklet_context_address
         contextual=booklet_context_address(ref,facility)
         if set(changes)!={'reading'} or entry.get('status')=='excluded' or contextual is None:return False
@@ -294,6 +299,9 @@ def correction_problems(correction,facility,entry,source=None):
     refs=correction.get('references')
     if not isinstance(refs,list) or not refs:return problems+['missing inspected references']
     authority,official_problems=_official_reading_authority(correction,facility);problems.extend(official_problems)
+    article_context_present=any(isinstance(r,dict) and 'article_address_context' in r for r in refs)
+    if article_context_present and (set(changes)!={'reading'} or entry.get('status')=='excluded'):
+        problems.append('Article address context only supports reading corrections of non-excluded entries')
     booklet_context_present=any(isinstance(r,dict) and 'booklet_address_context' in r for r in refs)
     if booklet_context_present and (set(changes)!={'reading'} or entry.get('status')=='excluded'):
         problems.append('Numbered booklet context only supports reading corrections of non-excluded entries')
@@ -304,6 +312,9 @@ def correction_problems(correction,facility,entry,source=None):
     name_supported='surface' not in changes;reading_supported='reading' not in changes;identity_supported=False
     for ref in refs:
         if not isinstance(ref,dict):problems.append('invalid reference object');continue
+        if 'article_address_context' in ref:
+            from njd.article_context import article_context_address
+            if article_context_address(ref,facility) is None:problems.append('invalid explicit article address context')
         if 'booklet_address_context' in ref:
             from njd.booklet_context import booklet_context_address
             if booklet_context_address(ref,facility) is None:problems.append('invalid numbered booklet address context')
@@ -363,7 +374,7 @@ def apply_corrections(data,document):
             note=correction.get('reason','')
             references=correction.get('references')
             context_excluded=(entry.get('status')=='excluded' and isinstance(references,list)
-                and any(isinstance(r,dict) and any(k in r for k in ('document_address_context','csv_address_context','booklet_address_context')) for r in references))
+                and any(isinstance(r,dict) and any(k in r for k in ('document_address_context','csv_address_context','booklet_address_context','article_address_context')) for r in references))
             # A rejected contextual correction must not erase a durable
             # exclusion: otherwise a second application could approve it.
             if not context_excluded:

@@ -23,9 +23,9 @@
 
 **Files:** 新 `njd/article_context.py`, 新 `tests/test_article_context.py`, `njd/corrections.py`, `docs/DATA.md`
 **Interfaces:** `article_context_address(ref, facility) -> str | None`。
-- [ ] 人工資料の受理/非破壊/反復、明記省略と注記区間、間違い/異型/欠損/混合参照/既存保留/除外/出力破損のテストを先に作る。
-- [ ] `python3 -m unittest discover -s tests -p test_article_context.py -v` の未実装失敗を観測。
-- [ ] 検証関数と全context早期拒否/読み限定/除外保持を実装し、対象及び全テスト成功を確認してコミット。
+- [x] 人工資料の受理/非破壊/反復、明記省略と注記区間、間違い/異型/欠損/混合参照/既存保留/除外/出力破損のテストを先に作る。
+- [x] `python3 -m unittest discover -s tests -p test_article_context.py -v` の未実装失敗を観測。
+- [x] 検証関数と全context早期拒否/読み限定/除外保持を実装し、対象及び全テスト成功を確認してコミット。
 
 ### Task 2: 39記事の採否と履歴統合
 
@@ -38,3 +38,5 @@
 ## 実行台帳
 
 私有資料 `/tmp/njd-tsushima-blog-followup/`。39記事取得/エラー0、転載禁止マーカー0。同名出現25記事、TOCを含む機械的なfullname-kana候補70組は施設同定・採用件数ではない。
+
+Task1: RED 9tests/5failures → GREEN 9/9、全714tests成功。実文字列の地図UI矢印をHTMLタグと混同せず固定形式で検証。省略段落indexは参照とcontextの双方へ束縛する。
