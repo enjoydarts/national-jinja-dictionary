@@ -67,7 +67,7 @@ def validate(data: dict) -> list[dict]:
         if key in article_facilities and article_facilities[key]!=f.get('id'):
             add('global',None,'duplicate Wikipedia article facility across source scopes; identity reconciliation required')
         else:article_facilities[key]=f.get('id')
-    for eid,reason in variant_graph_problems(es):add('entry',eid,reason)
+    for eid,reason in variant_graph_problems(data):add('entry',eid,reason)
     fmap={f.get('id'):f for f in fs}
     from njd.source_aliases import metadata_problems
     problems.extend(metadata_problems(data))

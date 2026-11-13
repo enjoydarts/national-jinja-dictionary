@@ -153,3 +153,21 @@ class ReadingVariantsTest(unittest.TestCase):
                 elif case=='parent_status':out['entries'][0].update(status='pending',reason='different issue')
                 elif case=='parent_review':out['entries'][0]['human_review']['case_id']='different review'
                 self.assertTrue(blocking_problems(out));self.assertEqual(eligible(out),[])
+
+    def test_changed_parent_or_sibling_evidence_blocks_both_outputs(self):
+        for who in [0,1]:
+            for field,value in [('identity_review_required',True),('printed_code_raw','6300002/兼務'),('reading_display_raw','ベツジンジャ'),('reading_raw','ベツジンジャ'),('page_hash','f'*64),('name_raw','別神社'),('surface','別神社'),('listing_url','https://example.invalid/'),('reading_url','https://example.invalid/'),('semantic_type','other'),('reading_source_kind','reference'),('reading','べつじんじゃ')]:
+                with self.subTest(who=who,field=field):
+                    d,doc,v=fixture();out=apply_reviews(d,doc);out['entries'][who][field]=value
+                    self.assertTrue(blocking_problems(out));self.assertEqual(eligible(out),[])
+
+    def test_sample_retains_parent_and_selects_the_two_readings_atomically(self):
+        from njd.report import samples
+        d,doc,v=fixture();out=apply_reviews(d,doc)
+        sample=samples(out,maximum=2,names=('架空神社',))
+        self.assertFalse(blocking_problems(sample));self.assertEqual(len(eligible(sample)),2)
+        self.assertEqual(len(sample['entries']),3)
+        too_small=samples(out,maximum=1,names=('架空神社',))
+        self.assertEqual(too_small['entries'],[])
+        ordinary=samples(out,maximum=2)
+        self.assertNotIn('same-name distinct facility',ordinary['collection']['sample_selection'].values())

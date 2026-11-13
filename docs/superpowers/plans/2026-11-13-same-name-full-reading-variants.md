@@ -21,7 +21,7 @@
 
 ### Task 1: 専用validationと2派生の適用
 
-**Files:** Create njd/reading_variants.py, tests/test_reading_variants.py; Modify njd/reviews.py, njd/validation.py, docs/DATA.md.
+**Files:** Create njd/reading_variants.py, tests/test_reading_variants.py; Modify njd/reviews.py, njd/validation.py, njd/report.py, docs/DATA.md.
 **Interfaces:** Consumes immutable Hyogo profile/map/city comparison; Produces variant_problems(review,facility,entry,source=None)->list[str], variant_id(parent,surface,reading)->str.
 
 - [x] Step 1: 人工資料の2全文読みでeligible2・原登録保持・安定した異なるchild ID・再適用同一のテストを書く。区間/出典/住所/除外/親ID等を独立改変する拒否テストを付ける。

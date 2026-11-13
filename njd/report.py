@@ -53,11 +53,17 @@ def report(data,outputs=None):
             'actual IME import not performed for any format'])
 
 def samples(data,maximum=12,names=()):
-    valid=eligible(data); counts=Counter(e['surface'] for e in valid)
+    from njd.reading_variants import KIND as VARIANT_KIND
+    valid=eligible(data); counts=Counter(surface for surface,_ in {(e['surface'],e['facility_id']) for e in valid})
+    variant_groups={}
+    for entry in valid:
+        if entry.get('derivation_kind')==VARIANT_KIND:variant_groups.setdefault(entry['parent_entry_id'],[]).append(entry)
     chosen=[]; categories={}
     def select(entry,category):
-        if len(chosen)<maximum and entry['id'] not in {e['id'] for e in chosen}:
-            chosen.append(entry); categories[entry['id']]=category
+        candidates=variant_groups[entry['parent_entry_id']] if entry.get('derivation_kind')==VARIANT_KIND else [entry]
+        selected={e['id'] for e in chosen};fresh=[e for e in candidates if e['id'] not in selected]
+        if len(chosen)+len(fresh)<=maximum:
+            for item in fresh:chosen.append(item);categories[item['id']]=category
     for e in valid:
         if e['surface'] in names: select(e,'explicitly selected source name')
     for e in valid:
@@ -70,7 +76,8 @@ def samples(data,maximum=12,names=()):
     result=dict(data);result['collection']=collection_summary(data['collection']); ids={e['facility_id'] for e in chosen}
     alias_ids={alias for f in data['facilities'] if f['id'] in ids for alias in f.get('source_alias_ids',[])}
     result['facilities']=[f for f in data['facilities'] if f['id'] in ids|alias_ids]
-    result['entries']=chosen+[e for e in data['entries'] if e['facility_id'] in alias_ids]
+    parents={e['parent_entry_id'] for e in chosen if e.get('derivation_kind')==VARIANT_KIND}
+    result['entries']=chosen+[e for e in data['entries'] if e['id'] in parents or e['facility_id'] in alias_ids]
     result['collection']['sample_source_alias_observations']=len(alias_ids)
     if 'source_alias_summary' in result['collection']:
         result['collection']['source_alias_summary']=dict(result['collection']['source_alias_summary'],resolved_records=len(alias_ids),review_groups=[])

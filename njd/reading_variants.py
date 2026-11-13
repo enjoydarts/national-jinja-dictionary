@@ -45,6 +45,10 @@ def variant_problems(review,facility,entry,source=None):
         or not isinstance(code,str) or not re.fullmatch('[0-9]{7}',code)
         or facility.get('listing_url')!='https://www.hyogo-jinjacho.com/data/'+code+'.html'):
         return ['full-reading variants cannot override identity, location, exclusion or authority conditions']
+    if (entry.get('facility_id')!=facility.get('id') or entry.get('name_raw')!=name or entry.get('surface')!=name
+        or entry.get('page_hash')!=facility.get('page_hash') or entry.get('listing_url')!=facility['listing_url']
+        or entry.get('reading_url')!=facility['listing_url'] or entry.get('semantic_type')!='proper_noun'):
+        return ['variant original/child source fields differ from the acquired facility']
     outputs=review.get('outputs')
     if (not isinstance(raw,str) or entry.get('reading_display_raw')!=raw or not _hash(entry.get('source_hash'))
         or entry.get('source_hash')!=facility.get('source_hash')
@@ -71,6 +75,7 @@ def variant_problems(review,facility,entry,source=None):
             return ['variant outputs are not the unchanged whole source tokens']
     if outputs[0]['reading']==outputs[1]['reading']:return ['duplicate literal full-reading variants']
     if entry.get('id')==parent and not entry.get('parent_entry_id'):
+        if entry.get('reading')!='' or entry.get('reading_source_kind')!='agency':return ['original variant parent reading/provenance was changed']
         prior=entry.get('human_review')
         own_excluded=(entry.get('status')=='excluded' and entry.get('reason')==SUPERSEDED
             and entry.get('superseded_by_review')==review['case_id'] and isinstance(prior,dict) and prior.get('review_kind')==KIND)
@@ -134,10 +139,11 @@ def variant_problems(review,facility,entry,source=None):
     return []
 
 
-def variant_graph_problems(entries):
+def variant_graph_problems(data):
     """An applied group keeps its original parent and both approved siblings."""
     indexed={};groups={};issues=[]
-    for entry in entries:
+    facilities={f.get('id'):f for f in data['facilities'] if isinstance(f.get('id'),str)};collection=data['collection']
+    for entry in data['entries']:
         eid=entry.get('id')
         if isinstance(eid,str):indexed.setdefault(eid,[]).append(entry)
         if entry.get('derivation_kind')==KIND:
@@ -158,6 +164,11 @@ def variant_graph_problems(entries):
             expected={variant_id(root,o['surface'],o['reading']) for o in outputs}
         valid=valid and len(expected)==2 and len(children)==2 and {c.get('id') for c in children}==expected
         valid=valid and all(c.get('human_review')==review and c.get('facility_id')==parent.get('facility_id') and c.get('source_hash')==parent.get('source_hash') for c in children)
+        if valid:
+            facility=facilities.get(parent.get('facility_id'))
+            source=collection.get('sources',{}).get(facility.get('source_key'),collection) if facility else None
+            valid=bool(facility) and not variant_problems(review,facility,parent,source)
+            valid=valid and all(not variant_problems(c.get('human_review',{}),facility,c,source) for c in children)
         if not valid:
             for member in parents+children:issues.append((member.get('id'),'incomplete or inconsistent full-reading variant parent/sibling group'))
     return issues
