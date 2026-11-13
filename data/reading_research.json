@@ -26522,31 +26522,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10317,
         "scope": "個人調査サイト神奈備の入口と神社名鑑への実hrefを確認。移転先はDNS失敗し索引/個別記事未取得、特定施設の新規照合/採用0。"
+      },
+      {
+        "checked_at": "2026-11-13T14:42:55.238476+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10316,
+        "scope": "山梨県の美和神社・蚕影神社の追加資料候補を確認。観光ナビの個別記事は規約で停止、市の散策PDFは内部サイズ上限超過で本文未確認。採用0。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:42:31.482624+00:00",
-      "entry_ids": [
-        "6ea10753-3d92-57f2-9545-5f836833d5e0",
-        "b6b9ac34-35c3-5f93-9256-da951c10aa43",
-        "cff45b90-22b0-5d6f-a1a9-c4e05c7e0ce0",
-        "580ce71a-5e3f-5267-abfe-7216148350bf",
-        "ab702a62-e153-5833-909a-5bee8cc4bdff",
-        "68728bab-a3fc-55cf-b369-37f8d50ab3b0",
-        "875fec96-b796-5463-be09-86071ad303d9",
-        "bef9a4ca-9799-55e0-9848-ff3f91006423",
-        "1f40cacb-ffcb-57bd-8f7f-d38b157293a2",
-        "a0c2ba11-0f1c-5582-a7a0-34587e5a3f83",
-        "f662c115-69bd-5c36-a137-c98172580d63",
-        "7a262d99-57c9-5fb6-849d-df99ac827d5a",
-        "7c99369d-5684-5095-b4b1-3db5de1862fa"
-      ],
-      "evidence_attempt": "gnome_61_index_thirteen_same_name_profiles_five_full_readings_20261113",
-      "inspected_targets": 13,
-      "new_verified_entries": 5,
-      "retained_pending_entries": 10311,
-      "retained_pending_targets": 8,
-      "scope": "民間旅行情報の4神社索引61リンクから原正式名一致13詳細を個別照合し5登録を補完。他8登録保留。北海道全件の読み確認ではない。"
+      "checked_at": "2026-11-13T14:42:55.238476+00:00",
+      "new_verified_entries": 0,
+      "retained_pending_entries": 10316,
+      "scope": "山梨県の美和神社・蚕影神社の追加資料候補を確認。観光ナビの個別記事は規約で停止、市の散策PDFは内部サイズ上限超過で本文未確認。採用0。"
     },
     "remaining_unfinished_entries": 10311,
     "resolved_entry_ids": [
@@ -27111,7 +27099,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:42:31.482624+00:00",
+  "computed_at": "2026-11-13T14:42:55.238476+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -403998,8 +403986,343 @@
       "scope": "県観光連盟の頭子神社【有福島】1詳細だけを原登録へ個別照合。五島地域94保留登録や新上五島町57社全件の読み確認ではない。"
     },
     {
+      "acquisition": "Client interval=2、timeout=20、retries=0、robots適用。市の入口・規約は取得。実PDFへの要求は8 MiB内部上限超過で停止。アクセス拒否やrobots禁止という意味ではない。上限変更・別形式・別ツールでの本文取得は行わない。観光ナビ個別記事は規約確認後要求しない。",
+      "attempt_id": "fuefuki_tourism_policy_and_public_guide_size_limit_two_pending_20261113",
+      "candidates": [
+        {
+          "entry_id": "0156ec5c-ec40-5f8f-823a-f2e4a95c695a",
+          "observation": "新井原の現地散策ガイド候補。検索結果は発見用に限る。通常Clientがpage exceeds 8 MiB limitで停止し、PDF本文・頁数・全文読み・所在地を検証していない。PDF本文hashも未取得。",
+          "requested_url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5b1f12e0a5507.pdf",
+          "status": "municipal_pdf_body_unacquired_size_limit"
+        },
+        {
+          "entry_id": "05aa7296-7c0d-5143-a0bc-cf0d9d19b4c5",
+          "observation": "入口と実リンク先の規約本文で無断の転載・複写・蓄積・転送及び商用利用の禁止を確認し、個別紹介は取得しない。検索結果の読みや住所は採用根拠にしない。既存の原住所1450と別資料1450-1の差も未解決。",
+          "requested_url": "https://www.fuefuki-kanko.jp/detail/242/index.html",
+          "status": "tourism_profile_not_acquired_due_to_terms"
+        }
+      ],
+      "checked_at": "2026-11-13T14:42:55.238476+00:00",
+      "inspected_facility_profiles": 0,
+      "municipal_rights_observation": "市公式サイトは本文の市役所表示と総合トップ表題で確認。規約は写真・図面・動画等の表現物の転載について法定利用以外は引用転載許可申請書を要求する。包括転載許諾又はオープンライセンスとは認定せず、名称・読み・所在地の事実確認だけを予定したがPDF本文未取得。既に別枠で確認した市のオープンデータ条件を一般PDFへ拡張しない。",
+      "new_verified_entries": 0,
+      "privacy_and_storage": "本文・PDF・画像・キャッシュは収録せず、公開URL/hash・取得日時・条件要約・未取得理由と個別保留の対応だけを保存。",
+      "references": {
+        "municipal_home": {
+          "fetched_at": "2026-11-13T14:41:57.134707+00:00",
+          "page_hash": "4576e4224430b0c35414f623b8260bfb66a581c6cbec1f0f03340919eb4bdb03",
+          "title": [
+            "笛吹市／総合トップ"
+          ],
+          "url": "https://www.city.fuefuki.yamanashi.jp/"
+        },
+        "municipal_policy": {
+          "fetched_at": "2026-11-13T14:41:59.293173+00:00",
+          "page_hash": "43460093675f2f486c48aaf02ec40079bb74468beb8f8905a026423aa4d1791e",
+          "title": [
+            "笛吹市／このサイトについて"
+          ],
+          "url": "https://www.city.fuefuki.yamanashi.jp/kikaku/site.html"
+        },
+        "tourism_home": {
+          "fetched_at": "2026-11-13T14:36:19.571258+00:00",
+          "page_hash": "4a167b48902f22d8048a09205afbb6f6541c9864da62f44f9dc1cea6e76c8257",
+          "title": [
+            "「日本一桃源郷」笛吹市公式の情報ポータルサイト | ふえふき観光ナビ"
+          ],
+          "url": "https://www.fuefuki-kanko.jp/"
+        },
+        "tourism_policy": {
+          "fetched_at": "2026-11-13T14:36:46.326217+00:00",
+          "page_hash": "23fe227905bbbd5149f0253978e4da31fc67dc474b784ba58bb7a26459e84456",
+          "url": "https://www.fuefuki-kanko.jp/footer/2/"
+        }
+      },
+      "scope": "保留2施設の追加資料候補のみ。施設本文の新規照合0、採用0。読みを検索抜粋から流用せず、地番差も解消しない。全国又は県全件の調査完了ではない。",
+      "screened_pending_entries": 2,
+      "status": "tourism_terms_stop_and_municipal_pdf_size_limit_no_adoption",
+      "tourism_rights_observation": "公式と称する入口の表題は記録するが、市が直接運営することや辞書への利用許諾を意味しない。実リンク先規約本文に無断転載・複写・蓄積・転送及び商用利用の禁止があり、個別記事を取得しない。"
+    },
+    {
       "acquisition": "実リンクだけを既存Clientでrobots遵守・同一ホスト最低2秒・timeout20秒・再試行0で取得。画像/地図iframe/位置情報機能/認証を使用せず、原HTML・キャッシュはリポジトリ外。",
       "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:46:11.067129+00:00",
+              "evidence_attempt": "kojiki_northern_kyushu_articles_20261112_hokkaido",
+              "expected_source_hash": "139aceed2ba85e014d8a4f264e01b63163cc0f1f1eebf00eaf71f6ecda0f0678",
+              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、別途同定調査を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "北海道夕張郡栗山町桜丘2-320",
+                "checked_at": "2026-11-12T06:18:48.318127+00:00",
+                "fetched_at": "2026-11-12T06:18:09.807087+00:00",
+                "name_raw": "栗山天満宮",
+                "page_hash": "78b40219cb683d3de6ebefd440116be6e871642ad4a8e520fc6f3120dfd7fbeb",
+                "reading_context_raw": "栗山天満宮（くりやまてんまんぐう）は",
+                "reading_raw": "くりやまてんまんぐう",
+                "subject_title_raw": "栗山天満宮　北海道夕張郡栗山町桜丘",
+                "url": "https://www.buccyake-kojiki.com/archives/1054507641.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T14:03:04.523914+00:00",
+              "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
+              "expected_source_hash": "139aceed2ba85e014d8a4f264e01b63163cc0f1f1eebf00eaf71f6ecda0f0678",
+              "observation": "社名見出しと全所在地は対応するが、独立した社名かな欄・社名直後の全文かな括弧・ルビは点検範囲にない。祭神等のかなから読みを補作せず保留。氏名・個人連絡先は記録しない。",
+              "reference": {
+                "address_raw": "夕張郡栗山町桜丘2丁目32番地",
+                "canonical_index_observation": {
+                  "fetched_at": "2026-11-08T14:34:13.562142+00:00",
+                  "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sorachi/page/3/",
+                  "native_href": "https://hokkaidojinjacho.jp/%e6%a0%97%e5%b1%b1%e5%a4%a9%e6%ba%80%e5%ae%ae/",
+                  "page_hash": "f245d4e1efb552a913eb03cd932a6f1bb976ad348f86c62af4747148ccd84eac",
+                  "source_locator": ".lineup .block[5]"
+                },
+                "fetched_at": "2026-11-12T13:50:35.386974+00:00",
+                "locator": "div.jinja-area-main の社名h3と dl の所在地dd内 p.address。郵便番号・電話・FAX・フッターの庁事務所住所は含めない。",
+                "name_raw": "栗山天満宮",
+                "observed_formal_name_kana_pairs": [],
+                "page_hash": "f55458ea0dcf4d4f4a64c5611f0c6cf0a45e4ff48726230b086c47758aa0eb51",
+                "ruby_reading_observed": false,
+                "scope": "記録済み一覧実リンクの詳細点検。元一覧全本文の再取得差分を確認した意味ではない。",
+                "source_kind": "agency",
+                "source_publisher": "北海道神社庁",
+                "typed_reading_labels": [],
+                "url": "https://hokkaidojinjacho.jp/%e6%a0%97%e5%b1%b1%e5%a4%a9%e6%ba%80%e5%ae%ae/",
+                "website_links": []
+              },
+              "source_kind": "agency",
+              "source_publisher": "北海道神社庁",
+              "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "canonical_address": "夕張郡栗山町桜丘2丁目32番地",
+              "checked_at": "2026-11-13T14:42:31.482624+00:00",
+              "evidence_attempt": "gnome_61_index_thirteen_same_name_profiles_five_full_readings_20261113",
+              "expected_source_hash": "139aceed2ba85e014d8a4f264e01b63163cc0f1f1eebf00eaf71f6ecda0f0678",
+              "observation": "独立した正式名全文かなと原全所在地の対応を確認し読みだけ採用。原名/空かな/全地番/ID/hash/旧判断を保持。",
+              "reference": {
+                "address_field_raw": "〒069-1501 北海道夕張郡栗山町桜丘２丁目３２",
+                "address_raw": "北海道夕張郡栗山町桜丘２丁目３２",
+                "bytes": 41035,
+                "checked_at": "2026-11-13T14:42:31.482624+00:00",
+                "company_reference": {
+                  "fetched_at": "2026-11-13T14:40:04.930445+00:00",
+                  "page_hash": "e4327a755b66da88a3ac09312656216dc8e8ae023b6aefe002cd7af3b7735050",
+                  "url": "https://www.ccc.ne.jp/company/"
+                },
+                "excerpt": "栗山天満宮 / くりやまてんまんぐう / 〒069-1501 北海道夕張郡栗山町桜丘２丁目３２",
+                "fetched_at": "2026-11-13T14:40:29.089941+00:00",
+                "locator": "div.xix-title-wrapper直下h1とp / div.xix-info-content内img[alt=住所]に対応する.right",
+                "name_raw": "栗山天満宮",
+                "operator_reference": {
+                  "fetched_at": "2026-11-13T14:39:39.271275+00:00",
+                  "page_hash": "985a6ca0a1b188a9c3b8be43e797a4672b56dcd2c41ab04d88cfeb9c4806f831",
+                  "url": "https://www.ccc.ne.jp/"
+                },
+                "page_hash": "43e801fda2ed88366d3af60393149adeaea34b2fa7432615a72545ea459c0511",
+                "reading_raw": "くりやまてんまんぐう",
+                "reading_scope": "full_name",
+                "rights_scope": "Gnome本文の標準Copyrightと実リンク先の会社概要・利用案内を確認。点検範囲に個別事実記録を禁止する条項は確認しないが包括再配布許諾ではない。必要な名称/全文かな/全所在地/出典だけ保存し、説明本文/写真/地図/HTML/連絡先/個人情報は収録しない。",
+                "source_kind": "independent_secondary_reference",
+                "source_publisher": "シーダースコミュニケーションズ株式会社（デジタルマップGnome）",
+                "title": "栗山天満宮 | デジタルマップGnome",
+                "url": "https://map.uu-hokkaido.jp/j/kuriyama-tenmangu-shrine/",
+                "usage_guide_reference": {
+                  "fetched_at": "2026-11-13T14:39:16.573424+00:00",
+                  "page_hash": "fdaeccbc46a2a304f2ec1cdc5b4bc080fde5d46c0375e50286b2b85c60540ae6",
+                  "url": "https://map.uu-hokkaido.jp/j/howtouse/"
+                }
+              },
+              "status": "individual_full_name_kana_original_address_adopted"
+            }
+          ],
+          "address": "夕張郡栗山町桜丘2丁目32番地",
+          "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sorachi/page/3/",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "1f40cacb-ffcb-57bd-8f7f-d38b157293a2",
+          "expected_source_hash": "139aceed2ba85e014d8a4f264e01b63163cc0f1f1eebf00eaf71f6ecda0f0678",
+          "facility_id": "8347ed80-d738-5f1a-8e42-c009f5d1b764",
+          "listed_name": "栗山天満宮",
+          "nta_result": "registered furigana absent",
+          "prefecture": "北海道",
+          "prefecture_code": "01",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "栗山天満宮",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        },
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:46:11.067129+00:00",
+              "evidence_attempt": "kojiki_northern_kyushu_articles_20261112_hokkaido",
+              "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
+              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、別途同定調査を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "北海道小樽市相生町3-1",
+                "checked_at": "2026-11-12T06:18:48.326665+00:00",
+                "fetched_at": "2026-11-12T06:18:14.736820+00:00",
+                "name_raw": "水天宮",
+                "page_hash": "f39b988ed0bcf3f42c914dd7321255d98f3d5c0816f8c604d5cadfe972bebd5e",
+                "reading_context_raw": "水天宮（すいてんぐう）は",
+                "reading_raw": "すいてんぐう",
+                "subject_title_raw": "水天宮　北海道小樽市相生町",
+                "url": "https://www.buccyake-kojiki.com/archives/1058991808.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T10:30:20.528024+00:00",
+              "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+              "exact_name_rows": [],
+              "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
+              "observation": "この都心部観光スポットCSVの名称欄に原神社名の一致行がないため、当該登録の全文読み・全所在地の根拠には採用しない。市の全観光資料・全神社又は全国全保留の調査完了を意味しない。",
+              "reference": {
+                "csv_records": 103,
+                "encoding": "utf-8-sig",
+                "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+                "license": "CC-BY-4.0",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+                "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+                "source_kind": "municipal_open_data",
+                "source_publisher": "札幌市",
+                "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+              },
+              "source_kind": "municipal_open_data",
+              "source_publisher": "札幌市",
+              "status": "bounded_tourism_csv_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T14:03:04.523914+00:00",
+              "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
+              "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
+              "observation": "社名見出しと全所在地は対応するが、独立した社名かな欄・社名直後の全文かな括弧・ルビは点検範囲にない。祭神等のかなから読みを補作せず保留。氏名・個人連絡先は記録しない。",
+              "reference": {
+                "address_raw": "札幌市中央区南9条西4丁目6番20号",
+                "canonical_index_observation": {
+                  "fetched_at": "2026-11-08T14:33:33.765819+00:00",
+                  "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
+                  "native_href": "https://hokkaidojinjacho.jp/%e6%b0%b4%e5%a4%a9%e5%ae%ae/",
+                  "page_hash": "cf525674dc64c7a4cda6f0baa10a8b5da9abe038b153e01513f6e268fcae7cdd",
+                  "source_locator": ".lineup .block[17]"
+                },
+                "fetched_at": "2026-11-12T13:51:53.378252+00:00",
+                "locator": "div.jinja-area-main の社名h3と dl の所在地dd内 p.address。郵便番号・電話・FAX・フッターの庁事務所住所は含めない。",
+                "name_raw": "水天宮",
+                "observed_formal_name_kana_pairs": [],
+                "page_hash": "9c5173aae289182bf43b7966ec64f3f47f6625a3036253ce795a77ef005a250e",
+                "ruby_reading_observed": false,
+                "scope": "記録済み一覧実リンクの詳細点検。元一覧全本文の再取得差分を確認した意味ではない。",
+                "source_kind": "agency",
+                "source_publisher": "北海道神社庁",
+                "typed_reading_labels": [],
+                "url": "https://hokkaidojinjacho.jp/%e6%b0%b4%e5%a4%a9%e5%ae%ae/",
+                "website_links": []
+              },
+              "source_kind": "agency",
+              "source_publisher": "北海道神社庁",
+              "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "canonical_address": "札幌市中央区南9条西4丁目6番20号",
+              "checked_at": "2026-11-13T14:42:31.482624+00:00",
+              "evidence_attempt": "gnome_61_index_thirteen_same_name_profiles_five_full_readings_20261113",
+              "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
+              "observation": "独立した正式名全文かなと原全所在地の対応を確認し読みだけ採用。原名/空かな/全地番/ID/hash/旧判断を保持。",
+              "reference": {
+                "address_field_raw": "札幌市中央区南9条西4丁目6番20号",
+                "address_raw": "札幌市中央区南9条西4丁目6番20号",
+                "bytes": 39480,
+                "checked_at": "2026-11-13T14:42:31.482624+00:00",
+                "company_reference": {
+                  "fetched_at": "2026-11-13T14:40:04.930445+00:00",
+                  "page_hash": "e4327a755b66da88a3ac09312656216dc8e8ae023b6aefe002cd7af3b7735050",
+                  "url": "https://www.ccc.ne.jp/company/"
+                },
+                "excerpt": "水天宮 / すいてんぐう / 札幌市中央区南9条西4丁目6番20号",
+                "fetched_at": "2026-11-13T14:40:14.630943+00:00",
+                "locator": "div.xix-title-wrapper直下h1とp / div.xix-info-content内img[alt=住所]に対応する.right",
+                "name_raw": "水天宮",
+                "operator_reference": {
+                  "fetched_at": "2026-11-13T14:39:39.271275+00:00",
+                  "page_hash": "985a6ca0a1b188a9c3b8be43e797a4672b56dcd2c41ab04d88cfeb9c4806f831",
+                  "url": "https://www.ccc.ne.jp/"
+                },
+                "page_hash": "d8f255d2bc32b86f53d430ea2b721f48040c790777657024213ae80170971b8d",
+                "reading_raw": "すいてんぐう",
+                "reading_scope": "full_name",
+                "rights_scope": "Gnome本文の標準Copyrightと実リンク先の会社概要・利用案内を確認。点検範囲に個別事実記録を禁止する条項は確認しないが包括再配布許諾ではない。必要な名称/全文かな/全所在地/出典だけ保存し、説明本文/写真/地図/HTML/連絡先/個人情報は収録しない。",
+                "source_kind": "independent_secondary_reference",
+                "source_publisher": "シーダースコミュニケーションズ株式会社（デジタルマップGnome）",
+                "title": "水天宮 | デジタルマップGnome",
+                "url": "https://map.uu-hokkaido.jp/j/sapporo-suitengu/",
+                "usage_guide_reference": {
+                  "fetched_at": "2026-11-13T14:39:16.573424+00:00",
+                  "page_hash": "fdaeccbc46a2a304f2ec1cdc5b4bc080fde5d46c0375e50286b2b85c60540ae6",
+                  "url": "https://map.uu-hokkaido.jp/j/howtouse/"
+                }
+              },
+              "status": "individual_full_name_kana_original_address_adopted"
+            }
+          ],
+          "address": "札幌市中央区南9条西4丁目6番20号",
+          "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "580ce71a-5e3f-5267-abfe-7216148350bf",
+          "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
+          "facility_id": "aae7ce87-4edd-5cee-a4d0-fcc21547f2ba",
+          "listed_name": "水天宮",
+          "nta_result": "registered furigana absent",
+          "prefecture": "北海道",
+          "prefecture_code": "01",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "水天宮",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T04:30:49.078574+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "6ae3d8a374ebb6c6fbfd680bc38843cebf74d30d96fde4966e62b25641980339",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%A4%A9%E5%AE%AE_(%E5%B0%8F%E6%A8%BD%E5%B8%82)"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        },
         {
           "additional_source_reviews": [
             {
@@ -404171,160 +404494,6 @@
           "additional_source_reviews": [
             {
               "adopted": false,
-              "checked_at": "2026-11-12T06:46:11.067129+00:00",
-              "evidence_attempt": "kojiki_northern_kyushu_articles_20261112_hokkaido",
-              "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
-              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、別途同定調査を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-              "reference": {
-                "address_raw": "北海道小樽市相生町3-1",
-                "checked_at": "2026-11-12T06:18:48.326665+00:00",
-                "fetched_at": "2026-11-12T06:18:14.736820+00:00",
-                "name_raw": "水天宮",
-                "page_hash": "f39b988ed0bcf3f42c914dd7321255d98f3d5c0816f8c604d5cadfe972bebd5e",
-                "reading_context_raw": "水天宮（すいてんぐう）は",
-                "reading_raw": "すいてんぐう",
-                "subject_title_raw": "水天宮　北海道小樽市相生町",
-                "url": "https://www.buccyake-kojiki.com/archives/1058991808.html"
-              },
-              "result": "full_name_or_address_not_bound",
-              "source_kind": "article",
-              "source_publisher": "神社と古事記（非公式二次資料）",
-              "status": "inspected_independent_article_not_adopted"
-            },
-            {
-              "adopted": false,
-              "checked_at": "2026-11-12T10:30:20.528024+00:00",
-              "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
-              "exact_name_rows": [],
-              "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
-              "observation": "この都心部観光スポットCSVの名称欄に原神社名の一致行がないため、当該登録の全文読み・全所在地の根拠には採用しない。市の全観光資料・全神社又は全国全保留の調査完了を意味しない。",
-              "reference": {
-                "csv_records": 103,
-                "encoding": "utf-8-sig",
-                "fetched_at": "2026-11-12T10:25:45.657263+00:00",
-                "license": "CC-BY-4.0",
-                "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
-                "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
-                "source_kind": "municipal_open_data",
-                "source_publisher": "札幌市",
-                "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
-              },
-              "source_kind": "municipal_open_data",
-              "source_publisher": "札幌市",
-              "status": "bounded_tourism_csv_not_adopted"
-            },
-            {
-              "adopted": false,
-              "checked_at": "2026-11-12T14:03:04.523914+00:00",
-              "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
-              "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
-              "observation": "社名見出しと全所在地は対応するが、独立した社名かな欄・社名直後の全文かな括弧・ルビは点検範囲にない。祭神等のかなから読みを補作せず保留。氏名・個人連絡先は記録しない。",
-              "reference": {
-                "address_raw": "札幌市中央区南9条西4丁目6番20号",
-                "canonical_index_observation": {
-                  "fetched_at": "2026-11-08T14:33:33.765819+00:00",
-                  "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
-                  "native_href": "https://hokkaidojinjacho.jp/%e6%b0%b4%e5%a4%a9%e5%ae%ae/",
-                  "page_hash": "cf525674dc64c7a4cda6f0baa10a8b5da9abe038b153e01513f6e268fcae7cdd",
-                  "source_locator": ".lineup .block[17]"
-                },
-                "fetched_at": "2026-11-12T13:51:53.378252+00:00",
-                "locator": "div.jinja-area-main の社名h3と dl の所在地dd内 p.address。郵便番号・電話・FAX・フッターの庁事務所住所は含めない。",
-                "name_raw": "水天宮",
-                "observed_formal_name_kana_pairs": [],
-                "page_hash": "9c5173aae289182bf43b7966ec64f3f47f6625a3036253ce795a77ef005a250e",
-                "ruby_reading_observed": false,
-                "scope": "記録済み一覧実リンクの詳細点検。元一覧全本文の再取得差分を確認した意味ではない。",
-                "source_kind": "agency",
-                "source_publisher": "北海道神社庁",
-                "typed_reading_labels": [],
-                "url": "https://hokkaidojinjacho.jp/%e6%b0%b4%e5%a4%a9%e5%ae%ae/",
-                "website_links": []
-              },
-              "source_kind": "agency",
-              "source_publisher": "北海道神社庁",
-              "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
-            },
-            {
-              "adopted": false,
-              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-              "literal_printed_locality_pairs": 0,
-              "name_comparison_pairs": 0,
-              "new_name_comparison_pairs": 0
-            },
-            {
-              "adopted": true,
-              "canonical_address": "札幌市中央区南9条西4丁目6番20号",
-              "checked_at": "2026-11-13T14:42:31.482624+00:00",
-              "evidence_attempt": "gnome_61_index_thirteen_same_name_profiles_five_full_readings_20261113",
-              "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
-              "observation": "独立した正式名全文かなと原全所在地の対応を確認し読みだけ採用。原名/空かな/全地番/ID/hash/旧判断を保持。",
-              "reference": {
-                "address_field_raw": "札幌市中央区南9条西4丁目6番20号",
-                "address_raw": "札幌市中央区南9条西4丁目6番20号",
-                "bytes": 39480,
-                "checked_at": "2026-11-13T14:42:31.482624+00:00",
-                "company_reference": {
-                  "fetched_at": "2026-11-13T14:40:04.930445+00:00",
-                  "page_hash": "e4327a755b66da88a3ac09312656216dc8e8ae023b6aefe002cd7af3b7735050",
-                  "url": "https://www.ccc.ne.jp/company/"
-                },
-                "excerpt": "水天宮 / すいてんぐう / 札幌市中央区南9条西4丁目6番20号",
-                "fetched_at": "2026-11-13T14:40:14.630943+00:00",
-                "locator": "div.xix-title-wrapper直下h1とp / div.xix-info-content内img[alt=住所]に対応する.right",
-                "name_raw": "水天宮",
-                "operator_reference": {
-                  "fetched_at": "2026-11-13T14:39:39.271275+00:00",
-                  "page_hash": "985a6ca0a1b188a9c3b8be43e797a4672b56dcd2c41ab04d88cfeb9c4806f831",
-                  "url": "https://www.ccc.ne.jp/"
-                },
-                "page_hash": "d8f255d2bc32b86f53d430ea2b721f48040c790777657024213ae80170971b8d",
-                "reading_raw": "すいてんぐう",
-                "reading_scope": "full_name",
-                "rights_scope": "Gnome本文の標準Copyrightと実リンク先の会社概要・利用案内を確認。点検範囲に個別事実記録を禁止する条項は確認しないが包括再配布許諾ではない。必要な名称/全文かな/全所在地/出典だけ保存し、説明本文/写真/地図/HTML/連絡先/個人情報は収録しない。",
-                "source_kind": "independent_secondary_reference",
-                "source_publisher": "シーダースコミュニケーションズ株式会社（デジタルマップGnome）",
-                "title": "水天宮 | デジタルマップGnome",
-                "url": "https://map.uu-hokkaido.jp/j/sapporo-suitengu/",
-                "usage_guide_reference": {
-                  "fetched_at": "2026-11-13T14:39:16.573424+00:00",
-                  "page_hash": "fdaeccbc46a2a304f2ec1cdc5b4bc080fde5d46c0375e50286b2b85c60540ae6",
-                  "url": "https://map.uu-hokkaido.jp/j/howtouse/"
-                }
-              },
-              "status": "individual_full_name_kana_original_address_adopted"
-            }
-          ],
-          "address": "札幌市中央区南9条西4丁目6番20号",
-          "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
-          "category": "insufficient_evidence_in_inspected_sources",
-          "entry_id": "580ce71a-5e3f-5267-abfe-7216148350bf",
-          "expected_source_hash": "5c069fbb09d3dd085596096938ccf1869418662817120a777455564004ba7c26",
-          "facility_id": "aae7ce87-4edd-5cee-a4d0-fcc21547f2ba",
-          "listed_name": "水天宮",
-          "nta_result": "registered furigana absent",
-          "prefecture": "北海道",
-          "prefecture_code": "01",
-          "reading_raw": "",
-          "reason": "missing agency reading",
-          "status": "unfinished",
-          "surface": "水天宮",
-          "wikipedia_article_refs": [
-            {
-              "checked_at": "2026-11-09T04:30:49.078574+00:00",
-              "matched_current_snapshot": true,
-              "page_hash": "6ae3d8a374ebb6c6fbfd680bc38843cebf74d30d96fde4966e62b25641980339",
-              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-              "status": "inspected",
-              "url": "https://ja.wikipedia.org/wiki/%E6%B0%B4%E5%A4%A9%E5%AE%AE_(%E5%B0%8F%E6%A8%BD%E5%B8%82)"
-            }
-          ],
-          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
-        },
-        {
-          "additional_source_reviews": [
-            {
-              "adopted": false,
               "checked_at": "2026-11-12T14:03:04.523914+00:00",
               "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
               "expected_source_hash": "42d3a985b98fbdfaaeda0fa1034ea22f4303f54b9aae186a1836422954045205",
@@ -404472,129 +404641,6 @@
           "reason": "missing agency reading",
           "status": "unfinished",
           "surface": "松前神社",
-          "wikipedia_article_refs": [],
-          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-        },
-        {
-          "additional_source_reviews": [
-            {
-              "adopted": false,
-              "checked_at": "2026-11-12T06:46:11.067129+00:00",
-              "evidence_attempt": "kojiki_northern_kyushu_articles_20261112_hokkaido",
-              "expected_source_hash": "139aceed2ba85e014d8a4f264e01b63163cc0f1f1eebf00eaf71f6ecda0f0678",
-              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、別途同定調査を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-              "reference": {
-                "address_raw": "北海道夕張郡栗山町桜丘2-320",
-                "checked_at": "2026-11-12T06:18:48.318127+00:00",
-                "fetched_at": "2026-11-12T06:18:09.807087+00:00",
-                "name_raw": "栗山天満宮",
-                "page_hash": "78b40219cb683d3de6ebefd440116be6e871642ad4a8e520fc6f3120dfd7fbeb",
-                "reading_context_raw": "栗山天満宮（くりやまてんまんぐう）は",
-                "reading_raw": "くりやまてんまんぐう",
-                "subject_title_raw": "栗山天満宮　北海道夕張郡栗山町桜丘",
-                "url": "https://www.buccyake-kojiki.com/archives/1054507641.html"
-              },
-              "result": "full_name_or_address_not_bound",
-              "source_kind": "article",
-              "source_publisher": "神社と古事記（非公式二次資料）",
-              "status": "inspected_independent_article_not_adopted"
-            },
-            {
-              "adopted": false,
-              "checked_at": "2026-11-12T14:03:04.523914+00:00",
-              "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
-              "expected_source_hash": "139aceed2ba85e014d8a4f264e01b63163cc0f1f1eebf00eaf71f6ecda0f0678",
-              "observation": "社名見出しと全所在地は対応するが、独立した社名かな欄・社名直後の全文かな括弧・ルビは点検範囲にない。祭神等のかなから読みを補作せず保留。氏名・個人連絡先は記録しない。",
-              "reference": {
-                "address_raw": "夕張郡栗山町桜丘2丁目32番地",
-                "canonical_index_observation": {
-                  "fetched_at": "2026-11-08T14:34:13.562142+00:00",
-                  "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sorachi/page/3/",
-                  "native_href": "https://hokkaidojinjacho.jp/%e6%a0%97%e5%b1%b1%e5%a4%a9%e6%ba%80%e5%ae%ae/",
-                  "page_hash": "f245d4e1efb552a913eb03cd932a6f1bb976ad348f86c62af4747148ccd84eac",
-                  "source_locator": ".lineup .block[5]"
-                },
-                "fetched_at": "2026-11-12T13:50:35.386974+00:00",
-                "locator": "div.jinja-area-main の社名h3と dl の所在地dd内 p.address。郵便番号・電話・FAX・フッターの庁事務所住所は含めない。",
-                "name_raw": "栗山天満宮",
-                "observed_formal_name_kana_pairs": [],
-                "page_hash": "f55458ea0dcf4d4f4a64c5611f0c6cf0a45e4ff48726230b086c47758aa0eb51",
-                "ruby_reading_observed": false,
-                "scope": "記録済み一覧実リンクの詳細点検。元一覧全本文の再取得差分を確認した意味ではない。",
-                "source_kind": "agency",
-                "source_publisher": "北海道神社庁",
-                "typed_reading_labels": [],
-                "url": "https://hokkaidojinjacho.jp/%e6%a0%97%e5%b1%b1%e5%a4%a9%e6%ba%80%e5%ae%ae/",
-                "website_links": []
-              },
-              "source_kind": "agency",
-              "source_publisher": "北海道神社庁",
-              "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
-            },
-            {
-              "adopted": false,
-              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-              "literal_printed_locality_pairs": 0,
-              "name_comparison_pairs": 0,
-              "new_name_comparison_pairs": 0
-            },
-            {
-              "adopted": true,
-              "canonical_address": "夕張郡栗山町桜丘2丁目32番地",
-              "checked_at": "2026-11-13T14:42:31.482624+00:00",
-              "evidence_attempt": "gnome_61_index_thirteen_same_name_profiles_five_full_readings_20261113",
-              "expected_source_hash": "139aceed2ba85e014d8a4f264e01b63163cc0f1f1eebf00eaf71f6ecda0f0678",
-              "observation": "独立した正式名全文かなと原全所在地の対応を確認し読みだけ採用。原名/空かな/全地番/ID/hash/旧判断を保持。",
-              "reference": {
-                "address_field_raw": "〒069-1501 北海道夕張郡栗山町桜丘２丁目３２",
-                "address_raw": "北海道夕張郡栗山町桜丘２丁目３２",
-                "bytes": 41035,
-                "checked_at": "2026-11-13T14:42:31.482624+00:00",
-                "company_reference": {
-                  "fetched_at": "2026-11-13T14:40:04.930445+00:00",
-                  "page_hash": "e4327a755b66da88a3ac09312656216dc8e8ae023b6aefe002cd7af3b7735050",
-                  "url": "https://www.ccc.ne.jp/company/"
-                },
-                "excerpt": "栗山天満宮 / くりやまてんまんぐう / 〒069-1501 北海道夕張郡栗山町桜丘２丁目３２",
-                "fetched_at": "2026-11-13T14:40:29.089941+00:00",
-                "locator": "div.xix-title-wrapper直下h1とp / div.xix-info-content内img[alt=住所]に対応する.right",
-                "name_raw": "栗山天満宮",
-                "operator_reference": {
-                  "fetched_at": "2026-11-13T14:39:39.271275+00:00",
-                  "page_hash": "985a6ca0a1b188a9c3b8be43e797a4672b56dcd2c41ab04d88cfeb9c4806f831",
-                  "url": "https://www.ccc.ne.jp/"
-                },
-                "page_hash": "43e801fda2ed88366d3af60393149adeaea34b2fa7432615a72545ea459c0511",
-                "reading_raw": "くりやまてんまんぐう",
-                "reading_scope": "full_name",
-                "rights_scope": "Gnome本文の標準Copyrightと実リンク先の会社概要・利用案内を確認。点検範囲に個別事実記録を禁止する条項は確認しないが包括再配布許諾ではない。必要な名称/全文かな/全所在地/出典だけ保存し、説明本文/写真/地図/HTML/連絡先/個人情報は収録しない。",
-                "source_kind": "independent_secondary_reference",
-                "source_publisher": "シーダースコミュニケーションズ株式会社（デジタルマップGnome）",
-                "title": "栗山天満宮 | デジタルマップGnome",
-                "url": "https://map.uu-hokkaido.jp/j/kuriyama-tenmangu-shrine/",
-                "usage_guide_reference": {
-                  "fetched_at": "2026-11-13T14:39:16.573424+00:00",
-                  "page_hash": "fdaeccbc46a2a304f2ec1cdc5b4bc080fde5d46c0375e50286b2b85c60540ae6",
-                  "url": "https://map.uu-hokkaido.jp/j/howtouse/"
-                }
-              },
-              "status": "individual_full_name_kana_original_address_adopted"
-            }
-          ],
-          "address": "夕張郡栗山町桜丘2丁目32番地",
-          "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sorachi/page/3/",
-          "category": "insufficient_evidence_in_inspected_sources",
-          "entry_id": "1f40cacb-ffcb-57bd-8f7f-d38b157293a2",
-          "expected_source_hash": "139aceed2ba85e014d8a4f264e01b63163cc0f1f1eebf00eaf71f6ecda0f0678",
-          "facility_id": "8347ed80-d738-5f1a-8e42-c009f5d1b764",
-          "listed_name": "栗山天満宮",
-          "nta_result": "registered furigana absent",
-          "prefecture": "北海道",
-          "prefecture_code": "01",
-          "reading_raw": "",
-          "reason": "missing agency reading",
-          "status": "unfinished",
-          "surface": "栗山天満宮",
           "wikipedia_article_refs": [],
           "wikipedia_result": "no_exact_title_in_inspected_category_tree"
         },
@@ -556415,6 +556461,16 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:42:55.238476+00:00",
+          "evidence_attempt": "fuefuki_tourism_policy_and_public_guide_size_limit_two_pending_20261113",
+          "expected_source_hash": "6d53d74e00541eafb1a7ff080e57886c9f5465bfe4ff6560d7780edbe06a790d",
+          "observation": "新井原の現地散策ガイド候補。検索結果は発見用に限る。通常Clientがpage exceeds 8 MiB limitで停止し、PDF本文・頁数・全文読み・所在地を検証していない。PDF本文hashも未取得。",
+          "requested_url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5b1f12e0a5507.pdf",
+          "source_kind": "municipal_or_tourism_reference_lead",
+          "status": "municipal_pdf_body_unacquired_size_limit"
         }
       ],
       "address": "笛吹市芦川町新井原",
@@ -557893,6 +557949,16 @@
             }
           },
           "status": "address_discovery_candidate_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:42:55.238476+00:00",
+          "evidence_attempt": "fuefuki_tourism_policy_and_public_guide_size_limit_two_pending_20261113",
+          "expected_source_hash": "4e6091a518dfcdf39cf845c715874b501a5b0caa31e64debef947a968ea3efe5",
+          "observation": "入口と実リンク先の規約本文で無断の転載・複写・蓄積・転送及び商用利用の禁止を確認し、個別紹介は取得しない。検索結果の読みや住所は採用根拠にしない。既存の原住所1450と別資料1450-1の差も未解決。",
+          "requested_url": "https://www.fuefuki-kanko.jp/detail/242/index.html",
+          "source_kind": "municipal_or_tourism_reference_lead",
+          "status": "tourism_profile_not_acquired_due_to_terms"
         }
       ],
       "address": "笛吹市御坂町二之宮1450",
