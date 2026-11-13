@@ -320174,6 +320174,78 @@
       "visually_checked_pages_1based": [
         3
       ]
+    },
+    {
+      "attempt_id": "iiyama_cultural_plan_draft_kahodo_tree_row_no_full_reading_20261113",
+      "authority_reference": {
+        "checked_at": "2026-11-13T09:04:02.613038+00:00",
+        "inspection_method": "web toolで実本文閲覧。raw hash未取得。",
+        "observation": "本文の長野県飯山市の自己表示と市庁所在地を確認。計画案の表紙の市・教育委員会表示と区別して記録し、検索結果だけで確定版としない。",
+        "url": "https://www.city.iiyama.nagano.jp/"
+      },
+      "checked_at": "2026-11-13T09:04:02.613038+00:00",
+      "document_reference": {
+        "bytes": 3914280,
+        "fetched_at": "2026-11-13T09:02:45.190835+00:00",
+        "page_hash": "4a33e86d534ca2cee2e1d2d55d3addaa56e63a1233ac8476b378c76d60ee8f69",
+        "pages": 100,
+        "status": "acquired",
+        "url": "https://www.city.iiyama.nagano.jp/assets/files/gakusyushien/bunkazai/2026tiikikeikaku.pdf"
+      },
+      "inspected_targets": 1,
+      "new_verified_entries": 0,
+      "observation": "神社の樹木を主題とする行には地区のみで社名全文ルビ・全地番はない。原名称・読み・住所・既存補正・分類・件数は保持。PDF・抽出全文・画像・キャッシュ・個人情報はコミットしない。",
+      "prior_restriction_preserved": {
+        "attempt_id": "prefecture_register_probe_20261112_20",
+        "new_roster_files_acquired": 0,
+        "observation": "県宗教法人名簿の取得停止を先に確認したため、検索に現れたR5/R6/R7名簿PDFは取得・採用しない。名簿に現れる表記や地番を検索抜粋から補正根拠にしない。"
+      },
+      "references": [
+        {
+          "address_scope": "地区のみ。大字寿字道下938の全所在地は該当行にない。",
+          "checked_at": "2026-11-13T09:04:02.613038+00:00",
+          "date_observation": "調査日2026年11月13日より後の年月を表紙に記載し、表紙デザインは仮と表示。実刊行・策定・文化庁認定の完了日を意味すると断定しない。",
+          "district_raw": "外様",
+          "document_status": "draft_not_final_plan",
+          "fetched_at": "2026-11-13T09:02:45.190835+00:00",
+          "inspection_method": "全100ページのPDFKit文字層から3名称を検索し、該当ページと表紙を画像化して目視。全ページ画像の精査とは区別する。",
+          "locator": "PDF index40（紙面38頁）の未指定文化財一覧、記念物・植物欄",
+          "page_hash": "4a33e86d534ca2cee2e1d2d55d3addaa56e63a1233ac8476b378c76d60ee8f69",
+          "printed_date_raw": "令和８（2026）年１２月",
+          "reading_scope": "該当行に独立した神社全文かな又はルビなし",
+          "redistribution_status": "辞書への再利用許諾は今回未確認。公開PDFの全文・表全体・画像は保存せず資料位置と不足事項のみ記録。",
+          "render_sha256": "1a4513a7078ae533af85bd16b80e8366cc8d735c3eb34dc4f2dbfc634eed2e91",
+          "source_kind": "municipal_cultural_preservation_plan_draft",
+          "source_publisher": "飯山市・飯山市教育委員会（表紙表示）",
+          "subject_name_raw": "加保戸神社のケヤキ",
+          "title": "飯山市文化財保存活用地域計画（案）",
+          "url": "https://www.city.iiyama.nagano.jp/assets/files/gakusyushien/bunkazai/2026tiikikeikaku.pdf"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "長野県保留からの探索9検索で発見した飯山市文化財地域計画案1冊のみ。名称3件の文字層検索と加保戸神社関連1行・表紙の目視点検。探索に含めた他5登録の個別本文審査を完了済みとしない。",
+      "status": "one_related_tree_row_inspected_no_adoption",
+      "target_entry_ids": [
+        "0c7741e0-a5df-599c-b6e6-0e29a76331d1"
+      ],
+      "text_screen": {
+        "method": "PDFKit page.string、100ページを改行含む原文字列の部分文字列で検索。表記差や画像内の語の不存在は証明しない。",
+        "not_matched_in_text_only": [
+          "那珂",
+          "戸隠三社"
+        ],
+        "observed_matches": [
+          {
+            "page_index": 40,
+            "query": "加保戸"
+          }
+        ],
+        "queries": [
+          "加保戸",
+          "那珂",
+          "戸隠三社"
+        ]
+      }
     }
   ],
   "per_prefecture": {
@@ -567963,6 +568035,34 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T09:04:02.613038+00:00",
+          "evidence_attempt": "iiyama_cultural_plan_draft_kahodo_tree_row_no_full_reading_20261113",
+          "expected_source_hash": "aed62b126888dc127c97adfb1f4f5668eb6a696315d78128addd1049d8e39ac1",
+          "observation": "文化財としての樹木の記載を神社の全文読み確認や施設同一性確認に読み替えない。地区名の読みから社名を推定しない。",
+          "reference": {
+            "address_scope": "地区のみ。大字寿字道下938の全所在地は該当行にない。",
+            "checked_at": "2026-11-13T09:04:02.613038+00:00",
+            "date_observation": "調査日2026年11月13日より後の年月を表紙に記載し、表紙デザインは仮と表示。実刊行・策定・文化庁認定の完了日を意味すると断定しない。",
+            "district_raw": "外様",
+            "document_status": "draft_not_final_plan",
+            "fetched_at": "2026-11-13T09:02:45.190835+00:00",
+            "inspection_method": "全100ページのPDFKit文字層から3名称を検索し、該当ページと表紙を画像化して目視。全ページ画像の精査とは区別する。",
+            "locator": "PDF index40（紙面38頁）の未指定文化財一覧、記念物・植物欄",
+            "page_hash": "4a33e86d534ca2cee2e1d2d55d3addaa56e63a1233ac8476b378c76d60ee8f69",
+            "printed_date_raw": "令和８（2026）年１２月",
+            "reading_scope": "該当行に独立した神社全文かな又はルビなし",
+            "redistribution_status": "辞書への再利用許諾は今回未確認。公開PDFの全文・表全体・画像は保存せず資料位置と不足事項のみ記録。",
+            "render_sha256": "1a4513a7078ae533af85bd16b80e8366cc8d735c3eb34dc4f2dbfc634eed2e91",
+            "source_kind": "municipal_cultural_preservation_plan_draft",
+            "source_publisher": "飯山市・飯山市教育委員会（表紙表示）",
+            "subject_name_raw": "加保戸神社のケヤキ",
+            "title": "飯山市文化財保存活用地域計画（案）",
+            "url": "https://www.city.iiyama.nagano.jp/assets/files/gakusyushien/bunkazai/2026tiikikeikaku.pdf"
+          },
+          "status": "tree_subject_and_district_observed_full_reading_and_parcel_absent"
         }
       ],
       "address": "飯山市大字寿字道下938",
