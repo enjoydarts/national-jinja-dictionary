@@ -21012,10 +21012,10 @@
         "checked_at": "2026-11-09T13:00:51.300920+00:00",
         "collection_complete": false,
         "effective_entry_status_counts": {
-          "pending": 17,
-          "verified": 3817
+          "pending": 15,
+          "verified": 3819
         },
-        "effective_pending_entries": 17,
+        "effective_pending_entries": 15,
         "facilities_collected": 3834,
         "fields_observed": {
           "address": 3831,
@@ -40260,6 +40260,18 @@
         },
         "reason": "選択矩形のXMLが返した3834コードすべてのプロフィールを掲載名・全文カナ・所在地・印字コード・hash・日時で照合。旧2008施設の原文・IDと人手補正を保持。読み適格3810施設、未解決24登録を保留。取得失敗0・応答内走査完了。県全体・サイト全件性と検索上限、再配布許諾は未確認。 㯮椒神社の外字は実参考記事と同一施設への実リンク・全地番一致に基づき補正し、住所の小字差を原文のまま保持。",
         "referenced_unicode_name_corrections": 2,
+        "registered_municipality_only_supplements": [
+          {
+            "checked_at": "2026-11-13T04:43:49.022674+00:00",
+            "entry_ids": [
+              "b28fd13d-845a-5ce8-b511-eaa9e1f25b8e",
+              "c4a6422a-c4b3-5624-9222-866f9c8e36bd"
+            ],
+            "evidence_data": "data/locations.json; data/reading_research.json",
+            "scope": "神河町の大歳神社6317006・薬王子神社6317009について、原詳細/単一原XMLの全原住所・名称・実codeと全文かなを保持し、独立存続登記の同名/全町域/全地番枝番/郵便番号と自治体の実行政名を照合。locationsの派生municipalityのみ神崎郡神河町へ補完。原住所に町を挿入せず、誤記の原因は認定しない。",
+            "verified_entries": 2
+          }
+        ],
         "remaining_scope": [
           "24 unresolved name/address/full-reading correspondence registrations withheld",
           "whole-site/prefecture completeness, API cap and redistribution permission unconfirmed"
@@ -40269,12 +40281,12 @@
         "traversal_complete": true,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 5,
+            "insufficient_evidence_in_inspected_sources": 3,
             "investigation_incomplete": 0,
             "judgment_required": 12
           },
           "evidence_data": "data/reading_research.json",
-          "unfinished_entries": 17
+          "unfinished_entries": 15
         }
       },
       "conditions": {
@@ -46031,8 +46043,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13719,
-    "effective_verified_facilities": 44383,
+    "effective_dictionary_rows": 13720,
+    "effective_verified_facilities": 44385,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
