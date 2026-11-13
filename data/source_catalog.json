@@ -21549,12 +21549,21 @@
             "scope": "親名称の同都道府県内文字列一致だけの限定照合。CSVには読み欄がなく、個別詳細以外を採用しない。"
           }
         ],
+        "documented_map_location_followups": [
+          {
+            "checked_at": "2026-11-13T08:09:36.746218+00:00",
+            "entry_id": "b6c3e58f-a98a-542d-b184-72e80b5d0363",
+            "evidence_data": "data/locations.json;data/reading_research.json",
+            "new_verified_entries": 1,
+            "scope": "原詳細名・全文ホウカベジンジャ・原実コード6307024を選択。同じ原実コード/同名の地図住所篠山市波々伯部5は実条例の旧市名変更だけを比較し、一意な独立登記の丹波篠山市波々伯部５番地/同名/同郵便番号と全地番一致することを確認。登記の独立列から実効住所を構成し、原詳細の丹波丹波篠山市を削除正規化せず原欄とoriginalに保持。原名・原かな・全hash・旧判断を保存。かな空欄登記や別観光所在地・他機関の読みを流用せず、住所相違の原因を誤字と認定しない。"
+          }
+        ],
         "effective_entry_status_counts": {
           "excluded": 1,
-          "pending": 12,
-          "verified": 3823
+          "pending": 11,
+          "verified": 3824
         },
-        "effective_pending_entries": 12,
+        "effective_pending_entries": 11,
         "facilities_collected": 3834,
         "fields_observed": {
           "address": 3831,
@@ -40881,10 +40890,10 @@
           "categories": {
             "insufficient_evidence_in_inspected_sources": 2,
             "investigation_incomplete": 0,
-            "judgment_required": 10
+            "judgment_required": 9
           },
           "evidence_data": "data/reading_research.json",
-          "unfinished_entries": 12
+          "unfinished_entries": 11
         }
       },
       "conditions": {
@@ -46894,8 +46903,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13730,
-    "effective_verified_facilities": 44407,
+    "effective_dictionary_rows": 13731,
+    "effective_verified_facilities": 44408,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
