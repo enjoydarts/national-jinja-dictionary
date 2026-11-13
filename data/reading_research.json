@@ -320588,6 +320588,91 @@
       "source_kind": "agency",
       "source_publisher": "岡山県神社庁",
       "status": "same_agency_html_and_print_pdf_confirmed_hold_retained"
+    },
+    {
+      "acquisition": "通常CorporateClient・robots遵守・同一ホスト2秒以上・timeout20秒・再試行0。案内・利用規約・2CSVの4本文を取得。位置・郵便番号・施設住所を推測の読みや字名補正へ用いない。",
+      "attempt_id": "niihama_two_2015_open_evacuation_tables_152_rows_no_hagioka_name_20261113",
+      "attribution": "出典：新居浜市オープンデータライブラリ「避難所情報」（https://www.city.niihama.lg.jp/site/opendata/hinanjo.html、2026年11月13日利用）、CC BY2.1日本。この調査記録は同データをnational-jinja-dictionaryが照合・集計して作成。",
+      "authority_observation": "公開本文が新居浜市オープンデータライブラリ・担当課・市の発行者表示を明記。実a[href]から2CSVへ到達し、UTF-8 BOMと5列ヘッダーを確認。検索抜粋だけで取得済み・公式性確認済みとしない。",
+      "checked_at": "2026-11-13T09:19:57.499619+00:00",
+      "data_rows": 152,
+      "entry_ids": [
+        "fe21906f-1e8a-5475-99f6-394f132e5dd8"
+      ],
+      "inspected_targets": 1,
+      "license": "CC-BY-2.1-JP",
+      "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+      "new_verified_entries": 0,
+      "observation": "対象名を含む施設行がなく全文かな列もないため採用0。取得CSV全体・位置座標・本文・画像・連絡先・キャッシュは収録せず、件数・列名・資料URL/hash・不足事項のみを記録。既存の神社庁原読みとホトカミ/八百万の神の停止判断は解除しない。",
+      "published_update_date_raw": "2015年4月1日",
+      "references": [
+        {
+          "download_links": [
+            {
+              "href_raw": "/img/opendata/hinanjo/hinanjo.csv",
+              "label": "避難所位置データ[csvファイル／6KB]"
+            },
+            {
+              "href_raw": "/img/opendata/hinanjo/kinkyu-hinanbasho.csv",
+              "label": "緊急避難場所位置データ[csvファイル／7KB]"
+            }
+          ],
+          "fetched_at": "2026-11-13T09:19:10.710837+00:00",
+          "key": "catalogue",
+          "page_hash": "5db9438d60f2c77a964753f0c63e4e1a31f615d7b0e3575c736345c7245b7e65",
+          "status": "acquired",
+          "url": "https://www.city.niihama.lg.jp/site/opendata/hinanjo.html"
+        },
+        {
+          "fetched_at": "2026-11-13T09:19:12.897573+00:00",
+          "key": "terms",
+          "page_hash": "657785f123073b0dfbbaff01be96a075a458a45decab124671ed63db4b219a7f",
+          "status": "acquired",
+          "url": "https://www.city.niihama.lg.jp/site/opendata/opendata-kiyaku.html"
+        },
+        {
+          "columns": [
+            "避難所名",
+            "施設郵便番号",
+            "施設住所",
+            "緯度",
+            "経度"
+          ],
+          "data_rows": 65,
+          "exact_name_rows": [],
+          "fetched_at": "2026-11-13T09:19:14.986853+00:00",
+          "key": "csv0",
+          "page_hash": "0797c7d5b74182786d8b46d876f6623032772ca8d4f28aa471a2a7929a2514d7",
+          "related_name_rows": [],
+          "status": "acquired",
+          "url": "https://www.city.niihama.lg.jp/img/opendata/hinanjo/hinanjo.csv"
+        },
+        {
+          "columns": [
+            "緊急避難所名",
+            "施設郵便番号",
+            "施設住所",
+            "緯度",
+            "経度"
+          ],
+          "data_rows": 87,
+          "exact_name_rows": [],
+          "fetched_at": "2026-11-13T09:19:17.062425+00:00",
+          "key": "csv1",
+          "page_hash": "c4f358bb750c33771cace26f99494d66d633ba74f311da439e35c48f7a5775ac",
+          "related_name_rows": [],
+          "status": "acquired",
+          "url": "https://www.city.niihama.lg.jp/img/opendata/hinanjo/kinkyu-hinanbasho.csv"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "愛媛の保留1登録について新居浜市の実リンク2CSV計152行の名称列を照合した範囲。市内全神社の網羅・全資料の読み調査完了ではない。",
+      "source_kind": "municipal_open_data",
+      "source_publisher": "新居浜市",
+      "status": "two_bounded_municipal_open_tables_reviewed_no_adoption",
+      "terms_observation": "案内本文と専用利用規約2でCC表示2.1日本・出典クレジット・加工表示を確認。個別ページのデータのみへの適用であり、一般市ページ・第三者サイト・既存の取得停止資料に流用しない。",
+      "title": "避難所情報（避難所位置データ・緊急避難場所位置データ）",
+      "version_observation": "更新情報は平成27年4月1日。現在の全指定状況を再構築した表、又は2026年版の名簿とは扱わない。"
     }
   ],
   "per_prefecture": {
@@ -950855,6 +950940,20 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T09:19:57.499619+00:00",
+          "evidence_attempt": "niihama_two_2015_open_evacuation_tables_152_rows_no_hagioka_name_20261113",
+          "expected_source_hash": "b7cb5f88e594fd22838e83e0e3165b15a5ad24d34505083e015601150066bb41",
+          "observation": "避難所65行と緊急避難場所87行の名称列に萩岡を含む施設は0行。各表は名称・施設郵便番号・施設住所・緯度・経度の5列で独立した全文かな列なし。掲載されないことは神社の不存在・廃止・市内全資料の読み不存在を意味しない。大書きやの原読み・既存判断を保持。",
+          "reference_urls": [
+            "https://www.city.niihama.lg.jp/img/opendata/hinanjo/hinanjo.csv",
+            "https://www.city.niihama.lg.jp/img/opendata/hinanjo/kinkyu-hinanbasho.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "新居浜市",
+          "status": "two_bounded_open_tables_inspected_target_absent_no_reading_column"
         }
       ],
       "address": "新居浜市萩生1163",
