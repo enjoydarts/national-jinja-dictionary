@@ -42,4 +42,4 @@
 
 ## 最終統合
 
-- [ ] Fresh whole-branch reviewで根拠/ID/拒否条件を確認し指摘を処理。最新main保持で統合しmain再検証、専用worktreeを片付ける。
+- [x] Fresh whole-branch reviewで根拠/ID/拒否条件を確認し指摘を処理。最新main保持で統合しmain再検証、専用worktreeを片付ける。
