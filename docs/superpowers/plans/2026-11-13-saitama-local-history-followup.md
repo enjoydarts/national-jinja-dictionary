@@ -25,7 +25,7 @@
 
 **Interfaces:** 既存correction_problems/apply_corrections/eligible。日枝神社8b1a75d6-2a82-5ca5-a99f-ef37d97fccbd、第六天神社0d43be06-a707-5774-aa6b-22c79afb3fbd、春日神社8d230762-1c07-54d1-ae08-64370bace74a。
 
-- [ ] 団体トップ/実更新情報リンク/第523回PDF表紙・16頁・末頁、自治体本文・マップ原画像を照合。Expected: 日枝は全文かなと全地番一致、他2件は読み未確認。
-- [ ] 日枝のreadingのみ補正し旧判断を追記保存。Expected: +1/-0、他実効登録/全施設不変、全旧履歴と10868 ID/hash保持。
-- [ ] 全テスト/validate/6形式、データコミット。Expected: errors0、各形式対象1行、実IME未実施。
+- [x] 団体トップ/実更新情報リンク/第523回PDF表紙・16頁・末頁、自治体本文・マップ原画像を照合。Expected: 日枝は全文かなと全地番一致、他2件は読み未確認。
+- [x] 日枝のreadingのみ補正し旧判断を追記保存。Expected: +1/-0、他実効登録/全施設不変、全旧履歴と10868 ID/hash保持。
+- [x] 全テスト/validate/6形式、データコミット。Expected: errors0、各形式対象1行、実IME未実施。
 - [ ] 独立審査1回、C/Iは1修正パス、最新main保持で統合/検証、資料と台帳を保存して専用ツリー整理。

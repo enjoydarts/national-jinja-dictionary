@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "0f7d54d78f5a7c6925a648429c4448ca0c592aca39d75582d1dd8293e8f836ca",
+    "corrections.json": "162744ba2b752b8a8f1f9b105317bdfdfb9e1fbb80dd64181934e2a8274c5e42",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -23045,19 +23045,31 @@
         "integration_main_commit": "98cc02690e6756707f44ee83d4c216acafc81b2e",
         "new_verified_entries": 0,
         "scope": "実効データに影響しないreading_research.jsonのみの最新追記を保持して統合。直前の各補完の全件比較と684テスト検証に基づき、採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T10:27:55.255921+00:00",
+        "entry_ids": [
+          "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
+          "dd22e08c-9fb5-594b-912c-3dc4099418d7"
+        ],
+        "new_verified_entries": 2,
+        "retained_pending_entries": 10519,
+        "scope": "走田神社（長岡京市）・咋岡神社（京田辺市飯岡）2登録の実本文の連続かな列と全所在地を個別確認。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T10:27:55.255921+00:00",
+      "checked_at": "2026-11-13T10:40:41.160859+00:00",
       "entry_ids": [
-        "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
-        "dd22e08c-9fb5-594b-912c-3dc4099418d7"
+        "8b1a75d6-2a82-5ca5-a99f-ef37d97fccbd",
+        "0d43be06-a707-5774-aa6b-22c79afb3fbd",
+        "8d230762-1c07-54d1-ae08-64370bace74a"
       ],
-      "new_verified_entries": 2,
-      "retained_pending_entries": 10519,
-      "scope": "走田神社（長岡京市）・咋岡神社（京田辺市飯岡）2登録の実本文の連続かな列と全所在地を個別確認。"
+      "inspected_targets": 3,
+      "new_verified_entries": 1,
+      "retained_pending_targets": 2,
+      "scope": "郷土研究会資料の日枝神社全文かな/全地番を個別採用。第六天神社/春日神社は実資料の点検範囲を追記し保留を維持。"
     },
-    "remaining_unfinished_entries": 10519,
+    "remaining_unfinished_entries": 10518,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -23264,6 +23276,7 @@
       "89e032fe-1ca1-57ee-9b44-c1b89522d494",
       "8a624a48-e293-5a26-af89-a741841d72bc",
       "8ae1dfb0-c29c-5c05-b9d7-aea85f807eb4",
+      "8b1a75d6-2a82-5ca5-a99f-ef37d97fccbd",
       "8b86b87b-cc99-5f18-960b-9a4988ed8074",
       "8cd3f32c-e7dc-508c-bc70-5a6b29521736",
       "8dc4205f-b825-5e6b-bd9d-38a3618a8894",
@@ -23412,7 +23425,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T10:27:55.255921+00:00",
+  "computed_at": "2026-11-13T10:40:41.160859+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -322845,6 +322858,369 @@
         "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
         "dd22e08c-9fb5-594b-912c-3dc4099418d7"
       ]
+    },
+    {
+      "acquisition_notice": "WebツールのPDF25731992bytesサイズ上限とHTTPアクセス拒否を区別。同じHTTPS公開URLをrobots準拠の通常クライアントで取得。別ホスト/プロトコル/アクセス制限回避は行わない。",
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-central",
+              "expected_source_hash": "839473b1f91b6aa7407ac985c7baaea22237d2f71cdd47980301e1ce8a2c6a20",
+              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、同定資料との個別照合を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "埼玉県川越市小仙波町1-4-1",
+                "checked_at": "2026-11-12T07:00:22.919720+00:00",
+                "fetched_at": "2026-11-12T06:53:45.681925+00:00",
+                "name_raw": "日枝神社",
+                "page_hash": "c3358bbe6705a7a388a63977019d1efa5807ace5ad6d657df3290d895f39a038",
+                "reading_context_raw": "日枝神社（ひえじんじゃ）は",
+                "reading_raw": "ひえじんじゃ",
+                "subject_title_raw": "日枝神社　埼玉県川越市小仙波町",
+                "url": "https://www.buccyake-kojiki.com/archives/1055302574.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T09:21:17.906403+00:00",
+              "evidence_attempt": "wikipedia_cached_primary_name_alias_scope_recheck_20261112",
+              "expected_source_hash": "839473b1f91b6aa7407ac985c7baaea22237d2f71cdd47980301e1ce8a2c6a20",
+              "observation": "取得済み同hash記事の主名称かな・別称かなの適用範囲とinfobox名称・所在地を再点検。対象の所在地との一致は確認できず、同名の別地域・別施設の読みを流用しない。この記事単独の限定点検であり、全国の調査完了や資料全体の情報不存在を意味しない。",
+              "observed_infobox_facts": [
+                {
+                  "addresses": [
+                    {
+                      "address_raw": "埼玉県川越市小仙波町1-4-1",
+                      "layout": {}
+                    }
+                  ],
+                  "header_raw": "日枝神社",
+                  "table_index": 1
+                }
+              ],
+              "reference": {
+                "fetched_at": "2026-11-09T04:41:19.736558+00:00",
+                "page_hash": "654caa4378b0c8b25a636d4303c217d2e1e68bc24032955ba63ea971c0626a14",
+                "revision_ids": [
+                  "107571731"
+                ],
+                "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82)"
+              },
+              "source_kind": "encyclopedia",
+              "source_publisher": "Wikipedia共同編集者",
+              "status": "cached_primary_name_alias_scope_rechecked_not_adopted"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "additional_unadopted_observation": {
+                "reference": {
+                  "bytes": 43043,
+                  "fetched_at": "2026-11-13T10:33:09.649251+00:00",
+                  "label": "koshigaya-shrines",
+                  "page_hash": "386fb649d7a2fa70c36a8a6e8329fab9259762283c8ca05a195aebdb5da3eb2f",
+                  "url": "https://www.city.koshigaya.saitama.jp/citypromotion/rekisibunka/jiin_jinja/jinja.html"
+                },
+                "scope": "市の「その他の神社」の日枝神社欄を取得したが、本文に当該社名の独立全文かなと全地番はない。地図の提供先を取得して原施設の対応を認定したものではなく、この市本文からは読みを補完しない。"
+              },
+              "adopted": true,
+              "checked_at": "2026-11-13T10:40:41.160859+00:00",
+              "evidence_attempt": "saitama_koshigaya_history523_hie_full_reading_one_adopted_two_municipal_holds_20261113",
+              "reference": {
+                "address_raw": "埼玉県越谷市相模町 6-481",
+                "bytes": 25731992,
+                "checked_at": "2026-11-13T10:40:41.160859+00:00",
+                "excerpt": "日枝神社（ひえじんじゃ） / 住所は埼玉県越谷市相模町 6-481。",
+                "excerpt_processing": "同頁の明示全文かなと住所の最小事実を区切って記録し、元の長文の連続引用とは扱わない。",
+                "fetched_at": "2026-11-13T10:33:00.166192+00:00",
+                "label": "history523",
+                "locator": "PDF index15、印刷16頁。上部の全住所と「歴史（境内の案内板より引用）」中の独立全文かな2箇所。",
+                "name_raw": "日枝神社",
+                "page_hash": "3da9b7caa3c59a69c1934ea761a64a213b38f1146ebfe58f70fb10575c1345c8",
+                "pdf_pages": 28,
+                "printed_page": "16",
+                "publication_reference": {
+                  "anchor_text_raw": "6月25日(日)第523回史跡めぐりレジュメ\n                              古の「奥州古道」と令和の「緑道」を歩く",
+                  "bytes": 95726,
+                  "fetched_at": "2026-11-13T10:37:25.271924+00:00",
+                  "href_raw": "230625_523th_s_m.pdf",
+                  "label": "history-updates",
+                  "locator": "更新情報、2023年6月25日の第523回史跡めぐりレジュメへの実リンク。",
+                  "page_hash": "856644151c9160e73e7e6f0af7313e9a39a2f96acfe6793683a0f073598c800c",
+                  "url": "https://koshigayahistory.org/a_02.htm"
+                },
+                "publisher_reference": {
+                  "bytes": 44761,
+                  "fetched_at": "2026-11-13T10:32:50.758564+00:00",
+                  "label": "history-home",
+                  "page_hash": "52992e378db61018d5736631444daedc1baf3e0e7351473d7e31ca3c91497bc0",
+                  "url": "https://koshigayahistory.org/"
+                },
+                "reading_observation": "団体が転載した境内案内板の引用文に正式名の独立全文かながある。原案内板そのものを新たに取得したとは扱わず、神社/神社庁/行政が公認した資料とはしない。",
+                "reading_raw": "ひえじんじゃ",
+                "reading_scope": "full_name",
+                "rights_scope": "団体トップ/アーカイブ/更新情報と対象PDFのテキスト・表紙/対象頁/末頁の点検範囲で、この最小事実欄の記録を明示禁止する表示は見当たらない。包括的再配布許諾とはせず、名称/明示全文かな/全所在地/出典位置のみ保存。長い沿革引用・地図/写真・全記事/全PDF・個人名を収録しない。",
+                "source_kind": "local_history_association_walk_report",
+                "source_page_index": 15,
+                "source_publisher": "NPO法人越谷市郷土研究会",
+                "title": "第523回 越谷市郷土研究会 史跡めぐり（2023年6月25日）",
+                "url": "https://koshigayahistory.org/230625_523th_s_m.pdf",
+                "visual_review": {
+                  "method": "保存同hash PDFをPDFKitで描画し原画像をview_imageで目視。全28頁テキスト抽出とこの3頁の目視を区別。",
+                  "rendered_page_sha256": {
+                    "0": "b52581d4fd9ef2dcf2a1139f3f98e3305b32b31b6b361860b777c436844d38fc",
+                    "15": "a715389c0460914ef5078dbec99238949a14025f96e1f34436d6f9689d8df776",
+                    "27": "ae719435ee57ca174853434a53b3708549bb2c73ff83872689d1d33a59e9b4d4"
+                  },
+                  "reviewed_page_indices": [
+                    0,
+                    15,
+                    27
+                  ]
+                }
+              },
+              "status": "same_page_literal_full_name_kana_and_exact_parcel_adopted"
+            }
+          ],
+          "address": "越谷市相模町6-481",
+          "agency_listing_url": "https://www.saitama-jinjacho.or.jp/shrine/9073/",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "8b1a75d6-2a82-5ca5-a99f-ef37d97fccbd",
+          "expected_source_hash": "839473b1f91b6aa7407ac985c7baaea22237d2f71cdd47980301e1ce8a2c6a20",
+          "facility_id": "553f854b-c97f-5eee-9765-f8e5d0aa0a2a",
+          "listed_name": "日枝神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "埼玉県",
+          "prefecture_code": "11",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "日枝神社",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T04:41:03.473842+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "ac9fcd864e6cb5fddfbf4cdcd173eb956f8832e6b7c6accdcde04edebc7d7705",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E4%B9%85%E5%96%9C%E5%B8%82%E5%8E%9F)"
+            },
+            {
+              "checked_at": "2026-11-09T04:41:06.951095+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "6e33a4e497a864b57de6425a3495980050b864455172f7a30d97e49a1b610afc",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%8A%A0%E9%A0%88%E5%B8%82)"
+            },
+            {
+              "checked_at": "2026-11-09T04:41:10.343698+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "8ab454230149940314bd7c146d471419bb876d7e53f17e25b34829d9d11a33c7",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82%E4%B8%8A%E6%88%B8)"
+            },
+            {
+              "checked_at": "2026-11-09T04:41:13.455588+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "65edb2bbdb2e7e69aa967f17db6d681a2ae2925b67965e9503f6e47c45291916",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82%E4%B8%8B%E6%96%B0%E6%B2%B3%E5%B2%B8)"
+            },
+            {
+              "checked_at": "2026-11-09T04:41:16.457645+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "2ca994defd804ac163f8bdd667c34e0556a942f2c378fa932c46cecac88376a6",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82%E5%AF%BA%E5%B0%BE)"
+            },
+            {
+              "checked_at": "2026-11-09T04:41:19.736558+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "654caa4378b0c8b25a636d4303c217d2e1e68bc24032955ba63ea971c0626a14",
+              "result": "multiple readings of the primary name or unbound lead kana",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82)"
+            },
+            {
+              "checked_at": "2026-11-09T04:41:22.537873+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "ce8f03f1fe54dff219e876ed48155a64fab9eba16978b9ff557676f7108ec824",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E8%B6%8A%E8%B0%B7%E5%B8%82%E6%9D%B1%E7%94%BA)"
+            },
+            {
+              "checked_at": "2026-11-09T04:41:25.526926+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "a672e1ae40c5c153945c755297c8f86df69e6d3524dad0d26651b23ab457e465",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E9%B4%BB%E5%B7%A3%E5%B8%82%E5%B0%8F%E8%B0%B7)"
+            },
+            {
+              "checked_at": "2026-11-09T04:41:28.510113+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "27bcd083e32beafab098f18da08efd96fc97f9587d01790ccde0d8d046d741fb",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E9%B6%B4%E3%83%B6%E5%B3%B6%E5%B8%82%E9%AB%98%E5%80%89)"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        }
+      ],
+      "adopted_references": [
+        {
+          "address_raw": "埼玉県越谷市相模町 6-481",
+          "bytes": 25731992,
+          "checked_at": "2026-11-13T10:40:41.160859+00:00",
+          "excerpt": "日枝神社（ひえじんじゃ） / 住所は埼玉県越谷市相模町 6-481。",
+          "excerpt_processing": "同頁の明示全文かなと住所の最小事実を区切って記録し、元の長文の連続引用とは扱わない。",
+          "fetched_at": "2026-11-13T10:33:00.166192+00:00",
+          "label": "history523",
+          "locator": "PDF index15、印刷16頁。上部の全住所と「歴史（境内の案内板より引用）」中の独立全文かな2箇所。",
+          "name_raw": "日枝神社",
+          "page_hash": "3da9b7caa3c59a69c1934ea761a64a213b38f1146ebfe58f70fb10575c1345c8",
+          "pdf_pages": 28,
+          "printed_page": "16",
+          "publication_reference": {
+            "anchor_text_raw": "6月25日(日)第523回史跡めぐりレジュメ\n                              古の「奥州古道」と令和の「緑道」を歩く",
+            "bytes": 95726,
+            "fetched_at": "2026-11-13T10:37:25.271924+00:00",
+            "href_raw": "230625_523th_s_m.pdf",
+            "label": "history-updates",
+            "locator": "更新情報、2023年6月25日の第523回史跡めぐりレジュメへの実リンク。",
+            "page_hash": "856644151c9160e73e7e6f0af7313e9a39a2f96acfe6793683a0f073598c800c",
+            "url": "https://koshigayahistory.org/a_02.htm"
+          },
+          "publisher_reference": {
+            "bytes": 44761,
+            "fetched_at": "2026-11-13T10:32:50.758564+00:00",
+            "label": "history-home",
+            "page_hash": "52992e378db61018d5736631444daedc1baf3e0e7351473d7e31ca3c91497bc0",
+            "url": "https://koshigayahistory.org/"
+          },
+          "reading_observation": "団体が転載した境内案内板の引用文に正式名の独立全文かながある。原案内板そのものを新たに取得したとは扱わず、神社/神社庁/行政が公認した資料とはしない。",
+          "reading_raw": "ひえじんじゃ",
+          "reading_scope": "full_name",
+          "rights_scope": "団体トップ/アーカイブ/更新情報と対象PDFのテキスト・表紙/対象頁/末頁の点検範囲で、この最小事実欄の記録を明示禁止する表示は見当たらない。包括的再配布許諾とはせず、名称/明示全文かな/全所在地/出典位置のみ保存。長い沿革引用・地図/写真・全記事/全PDF・個人名を収録しない。",
+          "source_kind": "local_history_association_walk_report",
+          "source_page_index": 15,
+          "source_publisher": "NPO法人越谷市郷土研究会",
+          "title": "第523回 越谷市郷土研究会 史跡めぐり（2023年6月25日）",
+          "url": "https://koshigayahistory.org/230625_523th_s_m.pdf",
+          "visual_review": {
+            "method": "保存同hash PDFをPDFKitで描画し原画像をview_imageで目視。全28頁テキスト抽出とこの3頁の目視を区別。",
+            "rendered_page_sha256": {
+              "0": "b52581d4fd9ef2dcf2a1139f3f98e3305b32b31b6b361860b777c436844d38fc",
+              "15": "a715389c0460914ef5078dbec99238949a14025f96e1f34436d6f9689d8df776",
+              "27": "ae719435ee57ca174853434a53b3708549bb2c73ff83872689d1d33a59e9b4d4"
+            },
+            "reviewed_page_indices": [
+              0,
+              15,
+              27
+            ]
+          }
+        }
+      ],
+      "attempt_id": "saitama_koshigaya_history523_hie_full_reading_one_adopted_two_municipal_holds_20261113",
+      "checked_at": "2026-11-13T10:40:41.160859+00:00",
+      "entry_ids": [
+        "8b1a75d6-2a82-5ca5-a99f-ef37d97fccbd",
+        "0d43be06-a707-5774-aa6b-22c79afb3fbd",
+        "8d230762-1c07-54d1-ae08-64370bace74a"
+      ],
+      "inspected_targets": 3,
+      "manual_resolved_entry_ids": [
+        "8b1a75d6-2a82-5ca5-a99f-ef37d97fccbd"
+      ],
+      "new_verified_entries": 1,
+      "preservation": "全原正本・原空かな・正式名・全所在地・全旧判断/補正/試行・ID/hashを保持。本文/全PDF/画像/地図/個人名はコミットせず最小事実と出典位置だけを記録。",
+      "resources": [
+        {
+          "bytes": 44761,
+          "fetched_at": "2026-11-13T10:32:50.758564+00:00",
+          "label": "history-home",
+          "page_hash": "52992e378db61018d5736631444daedc1baf3e0e7351473d7e31ca3c91497bc0",
+          "url": "https://koshigayahistory.org/"
+        },
+        {
+          "bytes": 25731992,
+          "fetched_at": "2026-11-13T10:33:00.166192+00:00",
+          "label": "history523",
+          "page_hash": "3da9b7caa3c59a69c1934ea761a64a213b38f1146ebfe58f70fb10575c1345c8",
+          "url": "https://koshigayahistory.org/230625_523th_s_m.pdf"
+        },
+        {
+          "bytes": 45655,
+          "fetched_at": "2026-11-13T10:33:02.440735+00:00",
+          "label": "ogose-kasuga",
+          "page_hash": "98684de13ea0f58c94eb3dd1c3e3e03f57280efeea6ee550dd03a9a5f1604af2",
+          "url": "https://www.town.ogose.saitama.jp/kamei/shogaigakushu/bunkazai/100point/100pt/27.html"
+        },
+        {
+          "bytes": 47962,
+          "fetched_at": "2026-11-13T10:33:04.873760+00:00",
+          "label": "saitama-map-listing",
+          "page_hash": "da4a07519201bea5ccd92771da902c363f32046f94f06368d0a43a20e66c2041",
+          "url": "https://www.city.saitama.lg.jp/iwatsuki/001/001/014/p020714.html"
+        },
+        {
+          "bytes": 1010453,
+          "fetched_at": "2026-11-13T10:33:07.491951+00:00",
+          "label": "saitama-map8",
+          "page_hash": "77bdb04751884e4170a9a65c5a56e7add0ae109a045404f16dc26ec294c78899",
+          "url": "https://www.city.saitama.lg.jp/iwatsuki/001/001/014/p020714_d/fil/iwatsuki_sansaku8.pdf"
+        },
+        {
+          "bytes": 43043,
+          "fetched_at": "2026-11-13T10:33:09.649251+00:00",
+          "label": "koshigaya-shrines",
+          "page_hash": "386fb649d7a2fa70c36a8a6e8329fab9259762283c8ca05a195aebdb5da3eb2f",
+          "url": "https://www.city.koshigaya.saitama.jp/citypromotion/rekisibunka/jiin_jinja/jinja.html"
+        },
+        {
+          "bytes": 14676,
+          "fetched_at": "2026-11-13T10:35:43.638970+00:00",
+          "label": "history-archive",
+          "page_hash": "6cd85e7257e2af5069734be9e4ff671e865dc1b9168d4e1c2a0fb5578e9ad96b",
+          "url": "https://koshigayahistory.org/archive.htm"
+        },
+        {
+          "bytes": 5407,
+          "fetched_at": "2026-11-13T10:36:25.383838+00:00",
+          "label": "history-walk-index",
+          "page_hash": "39b36d7a3b391f37cadb5bea68cee2a35354341d7fc9c03789bf0742d93db998",
+          "url": "https://koshigayahistory.org/ar_shiseki.htm"
+        },
+        {
+          "bytes": 95726,
+          "fetched_at": "2026-11-13T10:37:25.271924+00:00",
+          "label": "history-updates",
+          "page_hash": "856644151c9160e73e7e6f0af7313e9a39a2f96acfe6793683a0f073598c800c",
+          "url": "https://koshigayahistory.org/a_02.htm"
+        }
+      ],
+      "retained_pending_targets": 2,
+      "scope": "日枝神社のNPO資料16頁と、さいたま市第六天神社マップ/越生町春日神社本文の3登録を限定照合。埼玉17保留全件や全28頁の個別採否・全国調査完了ではない。",
+      "source_kind": "local_history_association_walk_report",
+      "source_publisher": "NPO法人越谷市郷土研究会"
     }
   ],
   "per_prefecture": {
@@ -322930,11 +323306,11 @@
     },
     "11": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 14,
+        "insufficient_evidence_in_inspected_sources": 13,
         "investigation_incomplete": 0,
         "judgment_required": 3
       },
-      "unfinished_entries": 17
+      "unfinished_entries": 16
     },
     "12": {
       "categories": {
@@ -465115,6 +465491,40 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T10:40:41.160859+00:00",
+          "evidence_attempt": "saitama_koshigaya_history523_hie_full_reading_one_adopted_two_municipal_holds_20261113",
+          "expected_source_hash": "369cc50f99bbf9a5ccbc51e102bed38ec3375dcd2285f7062816761aa1ea81c1",
+          "observation": "さいたま市の実掲載リンクから岩槻散策マップ8を取得し、全2頁のテキストと両頁の原画像を確認。「大戸の第六天神社」の表示はあるが、社名の独立全文かなを確認できない。祭神面足尊/惶根尊や一般語のルビを社名へ合成せず、問い合わせ先の区役所住所を神社所在地へ使わない。",
+          "references": [
+            {
+              "bytes": 47962,
+              "fetched_at": "2026-11-13T10:33:04.873760+00:00",
+              "label": "saitama-map-listing",
+              "page_hash": "da4a07519201bea5ccd92771da902c363f32046f94f06368d0a43a20e66c2041",
+              "url": "https://www.city.saitama.lg.jp/iwatsuki/001/001/014/p020714.html"
+            },
+            {
+              "bytes": 1010453,
+              "fetched_at": "2026-11-13T10:33:07.491951+00:00",
+              "label": "saitama-map8",
+              "page_hash": "77bdb04751884e4170a9a65c5a56e7add0ae109a045404f16dc26ec294c78899",
+              "url": "https://www.city.saitama.lg.jp/iwatsuki/001/001/014/p020714_d/fil/iwatsuki_sansaku8.pdf"
+            }
+          ],
+          "status": "municipal_subject_text_checked_no_explicit_full_name_reading_in_inspected_scope",
+          "visual_review": {
+            "rendered_page_sha256": {
+              "0": "8bc4f985a9c38583c51d6dc369608e9c17ebb8a18c8f618672db65570c40966a",
+              "1": "ef62c4e43df02630603252bc3b7b8a4886825de3b48b61c538e269caae7c26c3"
+            },
+            "reviewed_page_indices": [
+              0,
+              1
+            ]
+          }
         }
       ],
       "address": "さいたま市岩槻区大戸1752",
@@ -466533,158 +466943,6 @@
           "adopted": false,
           "checked_at": "2026-11-12T07:05:17.639317+00:00",
           "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-central",
-          "expected_source_hash": "839473b1f91b6aa7407ac985c7baaea22237d2f71cdd47980301e1ce8a2c6a20",
-          "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、同定資料との個別照合を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "埼玉県川越市小仙波町1-4-1",
-            "checked_at": "2026-11-12T07:00:22.919720+00:00",
-            "fetched_at": "2026-11-12T06:53:45.681925+00:00",
-            "name_raw": "日枝神社",
-            "page_hash": "c3358bbe6705a7a388a63977019d1efa5807ace5ad6d657df3290d895f39a038",
-            "reading_context_raw": "日枝神社（ひえじんじゃ）は",
-            "reading_raw": "ひえじんじゃ",
-            "subject_title_raw": "日枝神社　埼玉県川越市小仙波町",
-            "url": "https://www.buccyake-kojiki.com/archives/1055302574.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T09:21:17.906403+00:00",
-          "evidence_attempt": "wikipedia_cached_primary_name_alias_scope_recheck_20261112",
-          "expected_source_hash": "839473b1f91b6aa7407ac985c7baaea22237d2f71cdd47980301e1ce8a2c6a20",
-          "observation": "取得済み同hash記事の主名称かな・別称かなの適用範囲とinfobox名称・所在地を再点検。対象の所在地との一致は確認できず、同名の別地域・別施設の読みを流用しない。この記事単独の限定点検であり、全国の調査完了や資料全体の情報不存在を意味しない。",
-          "observed_infobox_facts": [
-            {
-              "addresses": [
-                {
-                  "address_raw": "埼玉県川越市小仙波町1-4-1",
-                  "layout": {}
-                }
-              ],
-              "header_raw": "日枝神社",
-              "table_index": 1
-            }
-          ],
-          "reference": {
-            "fetched_at": "2026-11-09T04:41:19.736558+00:00",
-            "page_hash": "654caa4378b0c8b25a636d4303c217d2e1e68bc24032955ba63ea971c0626a14",
-            "revision_ids": [
-              "107571731"
-            ],
-            "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82)"
-          },
-          "source_kind": "encyclopedia",
-          "source_publisher": "Wikipedia共同編集者",
-          "status": "cached_primary_name_alias_scope_rechecked_not_adopted"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "越谷市相模町6-481",
-      "agency_listing_url": "https://www.saitama-jinjacho.or.jp/shrine/9073/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "8b1a75d6-2a82-5ca5-a99f-ef37d97fccbd",
-      "expected_source_hash": "839473b1f91b6aa7407ac985c7baaea22237d2f71cdd47980301e1ce8a2c6a20",
-      "facility_id": "553f854b-c97f-5eee-9765-f8e5d0aa0a2a",
-      "listed_name": "日枝神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "埼玉県",
-      "prefecture_code": "11",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "日枝神社",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T04:41:03.473842+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "ac9fcd864e6cb5fddfbf4cdcd173eb956f8832e6b7c6accdcde04edebc7d7705",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E4%B9%85%E5%96%9C%E5%B8%82%E5%8E%9F)"
-        },
-        {
-          "checked_at": "2026-11-09T04:41:06.951095+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "6e33a4e497a864b57de6425a3495980050b864455172f7a30d97e49a1b610afc",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%8A%A0%E9%A0%88%E5%B8%82)"
-        },
-        {
-          "checked_at": "2026-11-09T04:41:10.343698+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "8ab454230149940314bd7c146d471419bb876d7e53f17e25b34829d9d11a33c7",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82%E4%B8%8A%E6%88%B8)"
-        },
-        {
-          "checked_at": "2026-11-09T04:41:13.455588+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "65edb2bbdb2e7e69aa967f17db6d681a2ae2925b67965e9503f6e47c45291916",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82%E4%B8%8B%E6%96%B0%E6%B2%B3%E5%B2%B8)"
-        },
-        {
-          "checked_at": "2026-11-09T04:41:16.457645+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "2ca994defd804ac163f8bdd667c34e0556a942f2c378fa932c46cecac88376a6",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82%E5%AF%BA%E5%B0%BE)"
-        },
-        {
-          "checked_at": "2026-11-09T04:41:19.736558+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "654caa4378b0c8b25a636d4303c217d2e1e68bc24032955ba63ea971c0626a14",
-          "result": "multiple readings of the primary name or unbound lead kana",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E5%B7%9D%E8%B6%8A%E5%B8%82)"
-        },
-        {
-          "checked_at": "2026-11-09T04:41:22.537873+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "ce8f03f1fe54dff219e876ed48155a64fab9eba16978b9ff557676f7108ec824",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E8%B6%8A%E8%B0%B7%E5%B8%82%E6%9D%B1%E7%94%BA)"
-        },
-        {
-          "checked_at": "2026-11-09T04:41:25.526926+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "a672e1ae40c5c153945c755297c8f86df69e6d3524dad0d26651b23ab457e465",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E9%B4%BB%E5%B7%A3%E5%B8%82%E5%B0%8F%E8%B0%B7)"
-        },
-        {
-          "checked_at": "2026-11-09T04:41:28.510113+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "27bcd083e32beafab098f18da08efd96fc97f9587d01790ccde0d8d046d741fb",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9E%9D%E7%A5%9E%E7%A4%BE_(%E9%B6%B4%E3%83%B6%E5%B3%B6%E5%B8%82%E9%AB%98%E5%80%89)"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-central",
           "expected_source_hash": "ba2f9a09f280f54b55093c48fac8bdecaf29e041b0eab663d73bc6e0411416b4",
           "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
           "related_actual_hrefs": [],
@@ -466699,6 +466957,23 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T10:40:41.160859+00:00",
+          "evidence_attempt": "saitama_koshigaya_history523_hie_full_reading_one_adopted_two_municipal_holds_20261113",
+          "expected_source_hash": "ba2f9a09f280f54b55093c48fac8bdecaf29e041b0eab663d73bc6e0411416b4",
+          "observation": "越生町の「027 春日神社」本文で社名と西和田317を確認し、見出し/本文/HTML ruby欄を点検。独立全文かなは確認できず、流鏑馬の読みや「春日様」を正式名の全文読みに合成しない。写真にある文字や町全資料を精査済みとは扱わない。",
+          "references": [
+            {
+              "bytes": 45655,
+              "fetched_at": "2026-11-13T10:33:02.440735+00:00",
+              "label": "ogose-kasuga",
+              "page_hash": "98684de13ea0f58c94eb3dd1c3e3e03f57280efeea6ee550dd03a9a5f1604af2",
+              "url": "https://www.town.ogose.saitama.jp/kamei/shogaigakushu/bunkazai/100point/100pt/27.html"
+            }
+          ],
+          "status": "municipal_subject_text_checked_no_explicit_full_name_reading_in_inspected_scope"
         }
       ],
       "address": "越生町西和田317",
@@ -1238894,7 +1239169,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10519,
+    "retained_unresolved_entries": 10518,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1241996,11 +1242271,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10322,
+      "insufficient_evidence_in_inspected_sources": 10321,
       "investigation_incomplete": 0,
       "judgment_required": 197
     },
     "distinct_surfaces": 4219,
-    "unfinished_entries": 10519
+    "unfinished_entries": 10518
   }
 }
