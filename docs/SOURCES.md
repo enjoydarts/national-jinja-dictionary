@@ -558,3 +558,21 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 [口丹波の社の岩戸落葉神社本文](https://kuchitanshrine.my.coocan.jp/iwatoochibajinja.html)は名称・所在地表に「岩戸落葉神社（いわとおちばじんじゃ）」「京都市北区小野下ノ町１７０」を明記しており、全所在地を照合して1登録を補完しました。[サイト説明](https://kuchitanshrine.my.coocan.jp/profile.html)は個人の神社訪問記録と明記しており、神社自身や神社庁の発音確認とは区別します。トップの画像複写・転載禁止と画像利用条件を確認し、画像は取得・転載せず、文字記事全体も転載していません。社名・明示全文かな・全所在地と出典・採字判断の限定事実だけを保存しています。
 
 別の候補だった[京都うらみちあんないの作者方針](https://kyoto.travel.coocan.jp/1/index1.html)は、写真・文章の転載に事前連絡と出典表示を求めています。方針確認後に個別記事の追加取得・辞書根拠への採用を停止し、検索抜粋の読みは採用していません。
+
+
+### 口丹波の社の地域別索引から選定した15本文の照合（2026年11月13日）
+
+[亀岡市](https://kuchitanshrine.my.coocan.jp/kameoka.html)・[南丹市](https://kuchitanshrine.my.coocan.jp/nantan.html)・[京丹波町](https://kuchitanshrine.my.coocan.jp/kyotanba.html)の実索引3頁にある名称候補381組・128URLから15本文を選定し、冒頭の神社名・全文かな・所在地表を原全所在地と照合しました。画像リンクのalt/titleはHTML属性だけを確認し、画像は取得していません。
+
+| 採用した掲載名 | 明示全文読み | 原所在地 |
+| --- | --- | --- |
+| [宮垣神社](https://kuchitanshrine.my.coocan.jp/miyagakijinja.html) | みやがきじんじゃ | 亀岡市千代川町川関宮ノ前20 |
+| [多吉神社](https://kuchitanshrine.my.coocan.jp/taki.html) | たきじんじゃ | 亀岡市西別院町柚原北谷1 |
+| [玉依神社](https://kuchitanshrine.my.coocan.jp/tamayori.html) | たまよりじんじゃ | 亀岡市東別院町湯谷岳山78 |
+| [天照皇大神社](https://kuchitanshrine.my.coocan.jp/tensyoukoudai.html) | てんしょうこうだいじんじゃ | 亀岡市旭町経塚1 |
+| [岩山神社](https://kuchitanshrine.my.coocan.jp/iwayama.html) | いわやまじんじゃ | 船井郡京丹波町塩田谷岩山1 |
+| [何鹿神社](https://kuchitanshrine.my.coocan.jp/itsushika.html) | いつしかじんじゃ | 船井郡京丹波町曽根竿代29 |
+| [九手神社](https://kuchitanshrine.my.coocan.jp/kute.html) | くてじんじゃ | 船井郡京丹波町豊田九手125 |
+| [唐鞍神社](https://kuchitanshrine.my.coocan.jp/karakura.html) | からくらじんじゃ | 船井郡京丹波町上大久保宮ノ馬場22 |
+
+岩城神社の鳴滝42／穴虫42、城崎神社の木崎町／上木崎町、一原神社の33-1／33、志波加神社の地番欠落、天稚神社の天若森形23／殿田向山、岡安神社の際田12／馬場、葛城神社の13／57は対応未解決として保持しました。字名・枝番の補完や置換はしていません。採用元は個人参拝記録の二次資料であり、神社自身・神社庁・行政の発音認定とは区別します。トップ・サイト説明の画像複写転載禁止と画像利用条件を確認した範囲で、名称・明示全文かな・全所在地と出典・判断の限定事実だけを保存し、本文全体・画像・新聞抜粋・個人連絡先・キャッシュを収録していません。
