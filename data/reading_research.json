@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "9b08de232df768c23c406c83a1ee61908d59b6ebaeb44532b487fcb78d9d1b36",
+    "corrections.json": "b86f27c4b87780bce0cbc1fb4755b60f1d7c5e2d3651445d94d080735c3f2044",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -22973,20 +22973,40 @@
         "integration_main_commit": "b2d0a17221164c95fd48c9fd8a0b5e83025f8010",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域の調査・分類変更・補完を保持して貴船神社の所在地補完1登録と二子/西濱の保留根拠を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T09:09:19.750914+00:00",
+        "entry_ids": [
+          "403b290c-e9e9-5446-b021-bc5a574949f3"
+        ],
+        "new_verified_entries": 1,
+        "retained_pending_entries": 10526,
+        "scope": "高槻市稲荷神社1登録の神社庁実リンク詳細による全文読み補正。"
+      },
+      {
+        "checked_at": "2026-11-13T09:11:44.179439+00:00",
+        "entry_ids": [
+          "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
+          "36597137-a149-5295-a0f8-90a498d6a0f0",
+          "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1"
+        ],
+        "inspected_targets": 3,
+        "new_verified_entries": 3,
+        "scope": "東松山市公開の市民大学資料3カードの独立全文かなを、同一資料の明示市名と印刷町域/全地番へ別欄で束縛して採用。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T09:11:44.179439+00:00",
-      "entry_ids": [
+      "checked_at": "2026-11-13T10:13:32.123501+00:00",
+      "integrated_entry_ids": [
         "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
         "36597137-a149-5295-a0f8-90a498d6a0f0",
         "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1"
       ],
-      "inspected_targets": 3,
-      "new_verified_entries": 3,
-      "scope": "東松山市公開の市民大学資料3カードの独立全文かなを、同一資料の明示市名と印刷町域/全地番へ別欄で束縛して採用。"
+      "integration_main_commit": "66e045d9f6e97d522201c0147d83fcc174a7b267",
+      "new_verified_entries": 0,
+      "scope": "最新mainの他地域調査/採用と旧判断を保持し、東松山市の市名コンテキストによる全文読み3登録補完を統合。採用を重複計上しない。"
     },
-    "remaining_unfinished_entries": 10524,
+    "remaining_unfinished_entries": 10523,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -23088,6 +23108,7 @@
       "3e32a957-8939-5b38-8bea-8b5e2cada536",
       "3e876de1-588c-5883-9cd9-fdd50610600a",
       "40269885-37a5-53d8-9de4-996b1b4dd76d",
+      "403b290c-e9e9-5446-b021-bc5a574949f3",
       "409f307f-4474-515a-974d-61ecf611ac85",
       "41baf306-6021-5f36-9c03-5f87c032a781",
       "4597a712-1b8c-576e-9555-cd4c66c8abf6",
@@ -23336,7 +23357,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T09:11:44.179439+00:00",
+  "computed_at": "2026-11-13T10:13:32.123501+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -320190,6 +320211,495 @@
       ]
     },
     {
+      "attempt_id": "iiyama_cultural_plan_draft_kahodo_tree_row_no_full_reading_20261113",
+      "authority_reference": {
+        "checked_at": "2026-11-13T09:04:02.613038+00:00",
+        "inspection_method": "web toolで実本文閲覧。raw hash未取得。",
+        "observation": "本文の長野県飯山市の自己表示と市庁所在地を確認。計画案の表紙の市・教育委員会表示と区別して記録し、検索結果だけで確定版としない。",
+        "url": "https://www.city.iiyama.nagano.jp/"
+      },
+      "checked_at": "2026-11-13T09:04:02.613038+00:00",
+      "document_reference": {
+        "bytes": 3914280,
+        "fetched_at": "2026-11-13T09:02:45.190835+00:00",
+        "page_hash": "4a33e86d534ca2cee2e1d2d55d3addaa56e63a1233ac8476b378c76d60ee8f69",
+        "pages": 100,
+        "status": "acquired",
+        "url": "https://www.city.iiyama.nagano.jp/assets/files/gakusyushien/bunkazai/2026tiikikeikaku.pdf"
+      },
+      "inspected_targets": 1,
+      "new_verified_entries": 0,
+      "observation": "神社の樹木を主題とする行には地区のみで社名全文ルビ・全地番はない。原名称・読み・住所・既存補正・分類・件数は保持。PDF・抽出全文・画像・キャッシュ・個人情報はコミットしない。",
+      "prior_restriction_preserved": {
+        "attempt_id": "prefecture_register_probe_20261112_20",
+        "new_roster_files_acquired": 0,
+        "observation": "県宗教法人名簿の取得停止を先に確認したため、検索に現れたR5/R6/R7名簿PDFは取得・採用しない。名簿に現れる表記や地番を検索抜粋から補正根拠にしない。"
+      },
+      "references": [
+        {
+          "address_scope": "地区のみ。大字寿字道下938の全所在地は該当行にない。",
+          "checked_at": "2026-11-13T09:04:02.613038+00:00",
+          "date_observation": "調査日2026年11月13日より後の年月を表紙に記載し、表紙デザインは仮と表示。実刊行・策定・文化庁認定の完了日を意味すると断定しない。",
+          "district_raw": "外様",
+          "document_status": "draft_not_final_plan",
+          "fetched_at": "2026-11-13T09:02:45.190835+00:00",
+          "inspection_method": "全100ページのPDFKit文字層から3名称を検索し、該当ページと表紙を画像化して目視。全ページ画像の精査とは区別する。",
+          "locator": "PDF index40（紙面38頁）の未指定文化財一覧、記念物・植物欄",
+          "page_hash": "4a33e86d534ca2cee2e1d2d55d3addaa56e63a1233ac8476b378c76d60ee8f69",
+          "printed_date_raw": "令和８（2026）年１２月",
+          "reading_scope": "該当行に独立した神社全文かな又はルビなし",
+          "redistribution_status": "辞書への再利用許諾は今回未確認。公開PDFの全文・表全体・画像は保存せず資料位置と不足事項のみ記録。",
+          "render_sha256": "1a4513a7078ae533af85bd16b80e8366cc8d735c3eb34dc4f2dbfc634eed2e91",
+          "source_kind": "municipal_cultural_preservation_plan_draft",
+          "source_publisher": "飯山市・飯山市教育委員会（表紙表示）",
+          "subject_name_raw": "加保戸神社のケヤキ",
+          "title": "飯山市文化財保存活用地域計画（案）",
+          "url": "https://www.city.iiyama.nagano.jp/assets/files/gakusyushien/bunkazai/2026tiikikeikaku.pdf"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "長野県保留からの探索9検索で発見した飯山市文化財地域計画案1冊のみ。名称3件の文字層検索と加保戸神社関連1行・表紙の目視点検。探索に含めた他5登録の個別本文審査を完了済みとしない。",
+      "status": "one_related_tree_row_inspected_no_adoption",
+      "target_entry_ids": [
+        "0c7741e0-a5df-599c-b6e6-0e29a76331d1"
+      ],
+      "text_screen": {
+        "method": "PDFKit page.string、100ページを改行含む原文字列の部分文字列で検索。表記差や画像内の語の不存在は証明しない。",
+        "not_matched_in_text_only": [
+          "那珂",
+          "戸隠三社"
+        ],
+        "observed_matches": [
+          {
+            "page_index": 40,
+            "query": "加保戸"
+          }
+        ],
+        "queries": [
+          "加保戸",
+          "那珂",
+          "戸隠三社"
+        ]
+      }
+    },
+    {
+      "additional_unacquired_reference": {
+        "checked_at": "2026-11-13T09:09:19.750914+00:00",
+        "observation": "別の岩手保留案件で探索した市文化紹介の実URLはweb toolで404。本文未確認で検索抜粋から採用せず、既存TLS期限切れサイトへのアクセス回避も行わない。",
+        "status": "web_tool_reported_http_404",
+        "url": "https://www.city.morioka.iwate.jp/kankou/kankou/1037106/rekishi/1009476/1009482/1009487.html"
+      },
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T04:51:17.196108+00:00",
+              "daily_as_of": "20261111",
+              "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+              "evidence_attempt": "nta_manual_judgment_review_20261112",
+              "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+              "matched_active_corporate_numbers": [],
+              "monthly_snapshot": "20261030",
+              "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
+              "result": "no_unique_active_exact_name_full_address_identity",
+              "source_kind": "government_corporate_register",
+              "source_publisher": "国税庁",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-remainder",
+              "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+              "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
+              "related_actual_hrefs": [
+                "https://www.buccyake-kojiki.com/archives/1051162243.html"
+              ],
+              "result": "selected_articles_without_bound_main_subject_comparison",
+              "source_kind": "article_index",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "bounded_article_index_scope_recorded"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T09:09:19.750914+00:00",
+              "evidence_attempt": "osaka_nasahara_index_actual_detail_link_full_reading_resolution_20261113",
+              "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+              "observation": "一覧の疑義ある原文をそのまま保持し、同じ神社庁の実リンク先の明示全文読みを採用。原名称・町域・別名・番号17の掲載行を照合。",
+              "reference": {
+                "address_raw": "高槻市奈佐原元町17-15",
+                "agency_detail_link": {
+                  "href_raw": "t27.html",
+                  "index_fetched_at": "2026-11-13T09:07:07.924483+00:00",
+                  "index_page_hash": "76958819faceba587325c04b79ed0c047195ced2c51cf9cafa37dfb512f70e42",
+                  "index_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
+                  "locator": "高槻市一覧の番号17・奈佐原元町・殿岡神社の行",
+                  "resolved_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/t27.html"
+                },
+                "checked_at": "2026-11-13T09:08:11.845534+00:00",
+                "excerpt": "稲荷神社（いなりじんじゃ）別名（殿岡神社） 鎮座地 〒569-1043 高槻市奈佐原元町17-15",
+                "fetched_at": "2026-11-13T09:07:09.994926+00:00",
+                "locator": "唯一h3の正式名と括弧内全文かな、鎮座地欄",
+                "name_raw": "稲荷神社",
+                "page_hash": "073fceff7875010e0d6dd022dab4182e448729da1c3ab7ab3f346ae8770e793d",
+                "reading_raw": "いなりじんじゃ",
+                "reading_scope": "full_name",
+                "rights_note": "末尾の画像複製禁止表示を確認。社名・明示全文かな・所在地の限定事実と出典のみ保存し、画像や全ページ本文は保存しない。一般のデータ再配布許諾が明示されたとはしない。",
+                "source_kind": "agency",
+                "source_publisher": "大阪府神社庁",
+                "source_scope_note": "神社庁掲載の神社本庁非加盟神社（単立）の紹介。加盟神社へ分類変更せず、施設公式サイトでもない。",
+                "title": "稲荷神社（別名 殿岡神社） | 大阪府神社庁",
+                "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/t27.html"
+              },
+              "status": "same_agency_index_actual_detail_link_full_reading_verified"
+            }
+          ],
+          "address": "高槻市奈佐原元町",
+          "agency_listing_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
+          "category": "judgment_required",
+          "entry_id": "403b290c-e9e9-5446-b021-bc5a574949f3",
+          "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+          "facility_id": "1946b500-863e-5f50-8858-27ec929106c5",
+          "listed_name": "稲荷神社",
+          "nta_result": "not checked for current source snapshot",
+          "prefecture": "大阪府",
+          "prefecture_code": "27",
+          "reading_raw": "いなりじんや",
+          "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "status": "unfinished",
+          "surface": "稲荷神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "osaka_nasahara_index_actual_detail_link_full_reading_resolution_20261113",
+      "checked_at": "2026-11-13T09:09:19.750914+00:00",
+      "correction_validation_problems": [],
+      "inspected_targets": 1,
+      "manual_resolved_entry_ids": [
+        "403b290c-e9e9-5446-b021-bc5a574949f3"
+      ],
+      "new_verified_entries": 1,
+      "observation": "一覧いなりじんやと詳細いなりじんじゃの差を確認し、同一の正式名・別名・町域と一覧実hrefで詳細を同定。神社本庁非加盟（単立）の記載を保持し、神社庁加盟へ変更しない。画像複製禁止を守り、写真・本文全体・キャッシュは収録しない。",
+      "references": [
+        {
+          "fetched_at": "2026-11-13T09:07:07.924483+00:00",
+          "key": "index",
+          "page_hash": "76958819faceba587325c04b79ed0c047195ced2c51cf9cafa37dfb512f70e42",
+          "status": "acquired",
+          "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html"
+        },
+        {
+          "fetched_at": "2026-11-13T09:07:09.994926+00:00",
+          "key": "detail",
+          "page_hash": "073fceff7875010e0d6dd022dab4182e448729da1c3ab7ab3f346ae8770e793d",
+          "status": "acquired",
+          "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/t27.html"
+        }
+      ],
+      "scope": "高槻市一覧の番号17と実リンク先詳細の1施設のみ。大阪府全神社又は全国全件の調査完了とはしない。",
+      "source_kind": "agency",
+      "source_publisher": "大阪府神社庁",
+      "status": "one_existing_malformed_reading_resolved_from_actual_agency_detail",
+      "superseded_correction_history": {
+        "403b290c-e9e9-5446-b021-bc5a574949f3": {
+          "changes": {
+            "reading": "いなりじんや"
+          },
+          "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+          "facility_id": "1946b500-863e-5f50-8858-27ec929106c5",
+          "identity_match": {
+            "agency_address": "高槻市奈佐原元町",
+            "agency_name": "稲荷神社"
+          },
+          "original": {
+            "address": "高槻市奈佐原元町",
+            "listing_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
+            "name_raw": "稲荷神社",
+            "reading_raw": "いなりじんや"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "references": [
+            {
+              "address_raw": "高槻市奈佐原元町",
+              "checked_at": "2026-11-08T14:28:30.202995+00:00",
+              "excerpt": "17 稲荷神社 （いなりじんや） 殿岡神社 高槻市奈佐原元町",
+              "locator": "table tr[20]",
+              "name_raw": "稲荷神社",
+              "page_hash": "76958819faceba587325c04b79ed0c047195ced2c51cf9cafa37dfb512f70e42",
+              "reading_raw": "いなりじんや",
+              "source_kind": "agency",
+              "title": "大阪府神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      },
+      "verified_eligible_delta": [
+        "403b290c-e9e9-5446-b021-bc5a574949f3"
+      ]
+    },
+    {
+      "acquisition": "通常CorporateClient・robots遵守・同一ホスト2秒以上・timeout20秒・再試行0。ローカル解析時のNode API誤用を修正し、一覧は取得済みキャッシュを再利用。HTTP拒否やrobots制限の回避ではない。web toolで一覧へアクセスできないという結果はサーバ403又は閉鎖の証拠と扱わない。",
+      "attempt_id": "miyagi_haguro_actual_index_link_detail_retains_suspected_reading_20261113",
+      "checked_at": "2026-11-13T09:13:22.942709+00:00",
+      "entry_ids": [
+        "096f8a0c-ab83-57d6-bd3a-f1b561ec9e31"
+      ],
+      "inspected_targets": 1,
+      "new_verified_entries": 0,
+      "observation": "正式名・原住所・実リンクは同定できたが、詳細もはぐろじじゃを表示。実資料の字形・語尾を勝手に補作せず、原読み・補正・要判断分類を保持。取得本文・画像・電話番号・キャッシュは収録しない。",
+      "reference_observation": {
+        "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+        "agency_link_observation": {
+          "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+          "fetched_at": "2026-11-13T09:11:58.502973+00:00",
+          "href_raw": "detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15",
+          "index_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=41",
+          "page_hash": "abe43235e52b067654010be06b59b05ffa40e1dfa686877e8de5e85db45f926d",
+          "subject_text_raw": "\n      羽黒神社（はぐろじじゃ）\n    "
+        },
+        "authority_observation": "実詳細本文に宮城県神社庁の運営表記があり、原一覧の一迫柳の目字曽根除下50の同名行から実リンクする詳細として確認。非公式投稿の転載を独立証拠にしない。",
+        "checked_at": "2026-11-13T09:13:22.942709+00:00",
+        "excerpt": "羽黒神社（はぐろじじゃ） 鎮座地: 宮城県栗原市一迫柳の目字曽根除下50",
+        "fetched_at": "2026-11-13T09:12:38.480571+00:00",
+        "locator": "神社詳細の名称括弧内かなと鎮座地欄",
+        "name_raw": "羽黒神社",
+        "page_hash": "06d759147df49f054c1dd4b1df5070eb9c2bb10e6a80c96bb36b57feb6e57677",
+        "reading_raw": "はぐろじじゃ",
+        "source_kind": "agency",
+        "source_publisher": "宮城県神社庁",
+        "title": "羽黒神社 | 宮城県神社庁",
+        "url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15"
+      },
+      "references": [
+        {
+          "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+          "fetched_at": "2026-11-13T09:11:58.502973+00:00",
+          "href_raw": "detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15",
+          "key": "index",
+          "page_hash": "abe43235e52b067654010be06b59b05ffa40e1dfa686877e8de5e85db45f926d",
+          "status": "acquired",
+          "subject_text_raw": "\n      羽黒神社（はぐろじじゃ）\n    ",
+          "url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=41"
+        },
+        {
+          "fetched_at": "2026-11-13T09:12:38.480571+00:00",
+          "key": "detail",
+          "page_hash": "06d759147df49f054c1dd4b1df5070eb9c2bb10e6a80c96bb36b57feb6e57677",
+          "status": "acquired",
+          "url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "原一覧page41の住所一致1行と、その実hrefが指す詳細の2本文だけ。栗原市の同名別所在地（栗駒片子沢田高田82）のかなを一迫柳の目の登録へ適用しない。宮城県全体を再取得した調査ではない。",
+      "source_kind": "agency",
+      "source_publisher": "宮城県神社庁",
+      "status": "actual_agency_detail_repeats_original_kana_hold_retained",
+      "unacquired_other_candidate": {
+        "discovery_only_url": "https://hotokami.jp/area/ehime/Hrztm/Hrztmtr/Datas/132333/",
+        "entry_id": "fe21906f-1e8a-5475-99f6-394f132e5dd8",
+        "facility_pages_acquired": 0,
+        "observation": "愛媛の別保留案件の探索で当該URLが現れたが、既存の投稿情報利用条件の未確認による取得停止を先に照合し、本文・投稿・画像を取得せず検索抜粋を根拠に採用しない。公式ラベルだけで掲載かなの発行主体を確定しない。",
+        "prior_stop_attempt_id": "hotokami_posted_information_reuse_terms_unconfirmed_20261112"
+      }
+    },
+    {
+      "acquisition_observation": "通常CorporateClientでrobots・2秒以上の間隔を遵守、timeout30秒・再試行0で3本文取得。ローカルHTML構造解析とPDFをHTML扱いした解析を修正した後はoffline=Trueで取得済みキャッシュだけを再読。web toolのPDF cache missをHTTP拒否又は閉鎖と解釈せず、別資料・別版のURLを推定しない。",
+      "attempt_id": "okayama_04058_actual_link_html_and_print_pdf_original_kana_hold_20261113",
+      "checked_at": "2026-11-13T09:17:04.667112+00:00",
+      "entry_ids": [
+        "1d7f5f82-a569-5c08-b1ec-2d6205d6f668"
+      ],
+      "inspected_targets": 1,
+      "new_verified_entries": 0,
+      "observation": "現物の文字層と表示確認により印刷出力にも疑義のある原かながあると確認。検索抜粋由来の異なる文字列・旧字体置換・中黒除去を根拠化しない。PDF・写真・地図・沿革全文・連絡先・キャッシュは収録しない。",
+      "print_pdf_reference": {
+        "address_text_layer_raw": "岡山市南区灘崎町片岡1677･1678",
+        "checked_at": "2026-11-13T09:17:04.667112+00:00",
+        "fetched_at": "2026-11-13T09:15:34.136535+00:00",
+        "independence_observation": "同じ神社庁詳細の印刷出力であり、独立した別発行者による発音確認とは数えない。",
+        "inspection_method": "サーバ応答バイト列を変更せずPDFKitで表示し、2頁を画像で目視。読みは1頁の神社名括弧内で確認。検索の抜粋文字は原文として採用しない。",
+        "locator": "1頁目の基本情報・神社名欄、コード04058と鎮座地欄",
+        "name_text_layer_raw": "素盞嗚神社",
+        "page_hash": "d9839e27091be17d3dd8473d94496699b5df7a5ba08eb134b2f52e8c01dc38d5",
+        "pages": 2,
+        "pdf_page_index": 0,
+        "reading_raw": "スサノヲンジャ",
+        "render_sha256": "6a8443858790bead3a59e6aebf8fb132c438848a0aa0bcead0d53ae6710f5ee0",
+        "title": "素盞嗚神社 岡山県神社庁 神社検索システム（実リンクのプリント用PDF）",
+        "transport_observation": "取得応答はint(17600)というデバッグ文字列の後に%PDF-1.4が続く。保存hashはこの先頭も含む全応答のhash。バイト列の修復や文字コード置換は行わず、PDFKitがそのまま読めた表示を確認。",
+        "url": "https://www.okayama-jinjacho.or.jp/search/17188/?print=pdf"
+      },
+      "reference_observation": {
+        "address_raw": "岡山市南区灘崎町片岡1677･1678",
+        "agency_code": "04058",
+        "authority_observation": "実本文に岡山県神社庁の案内・発行者表記があり、原一覧の同コード・正式名・全所在地の行が当詳細をリンクしている。検索結果だけで同定しない。",
+        "checked_at": "2026-11-13T09:17:04.667112+00:00",
+        "excerpt": "神社コード 04058 神社名 素盞嗚神社（スサノヲンジャ） 鎮座地 〒709-1215 岡山市南区灘崎町片岡1677･1678",
+        "fetched_at": "2026-11-13T09:15:31.047776+00:00",
+        "index_link": {
+          "fetched_at": "2026-11-13T09:14:51.758110+00:00",
+          "href_raw": "https://www.okayama-jinjacho.or.jp/search/17188",
+          "locator": "a.shrineList__rowのコード04058・片岡1677･1678の行",
+          "page_hash": "370ed201ce240aa00bf1fd24235f561df8d3d08532e3401c21b3a9a0dec66177",
+          "url": "https://www.okayama-jinjacho.or.jp/search/list/page/20/"
+        },
+        "locator": "h2直後のかな、基本情報の神社コード・神社名・鎮座地欄",
+        "name_raw": "素盞嗚神社",
+        "page_hash": "6cb7bfe64aec9da6e397b7a28140fe21b26f0afee2b1fbc373c9f4689952f549",
+        "reading_raw": "スサノヲンジャ",
+        "source_kind": "agency",
+        "source_publisher": "岡山県神社庁",
+        "title": "素盞嗚神社 | 岡山県神社庁",
+        "url": "https://www.okayama-jinjacho.or.jp/search/17188/"
+      },
+      "references": [
+        {
+          "bytes": 42428,
+          "fetched_at": "2026-11-13T09:14:51.758110+00:00",
+          "key": "index",
+          "links": [
+            {
+              "href_raw": "https://www.okayama-jinjacho.or.jp/search/17188",
+              "label": "素盞嗚神社"
+            }
+          ],
+          "page_hash": "370ed201ce240aa00bf1fd24235f561df8d3d08532e3401c21b3a9a0dec66177",
+          "status": "acquired",
+          "subject_row": [
+            "04058",
+            "素盞嗚神社",
+            "スサノヲンジャ",
+            "",
+            "709-1215\n岡山市南区灘崎町片岡1677･1678"
+          ],
+          "url": "https://www.okayama-jinjacho.or.jp/search/list/page/20/"
+        },
+        {
+          "bytes": 36466,
+          "fetched_at": "2026-11-13T09:15:31.047776+00:00",
+          "headings": [
+            "素盞嗚神社",
+            ""
+          ],
+          "key": "detail",
+          "page_hash": "6cb7bfe64aec9da6e397b7a28140fe21b26f0afee2b1fbc373c9f4689952f549",
+          "print_href_raw": "?print=pdf",
+          "status": "acquired",
+          "url": "https://www.okayama-jinjacho.or.jp/search/17188/"
+        },
+        {
+          "bytes": 66884,
+          "fetched_at": "2026-11-13T09:15:34.136535+00:00",
+          "key": "print",
+          "page_hash": "d9839e27091be17d3dd8473d94496699b5df7a5ba08eb134b2f52e8c01dc38d5",
+          "status": "acquired",
+          "url": "https://www.okayama-jinjacho.or.jp/search/17188/?print=pdf"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "一覧page20の神社コード04058の1行、当該実リンク先詳細、詳細がリンクする印刷PDF2頁のみ。岡山県内全施設の再取得や未採用1件の解消を意味しない。",
+      "source_kind": "agency",
+      "source_publisher": "岡山県神社庁",
+      "status": "same_agency_html_and_print_pdf_confirmed_hold_retained"
+    },
+    {
+      "acquisition": "通常CorporateClient・robots遵守・同一ホスト2秒以上・timeout20秒・再試行0。案内・利用規約・2CSVの4本文を取得。位置・郵便番号・施設住所を推測の読みや字名補正へ用いない。",
+      "attempt_id": "niihama_two_2015_open_evacuation_tables_152_rows_no_hagioka_name_20261113",
+      "attribution": "出典：新居浜市オープンデータライブラリ「避難所情報」（https://www.city.niihama.lg.jp/site/opendata/hinanjo.html、2026年11月13日利用）、CC BY2.1日本。この調査記録は同データをnational-jinja-dictionaryが照合・集計して作成。",
+      "authority_observation": "公開本文が新居浜市オープンデータライブラリ・担当課・市の発行者表示を明記。実a[href]から2CSVへ到達し、UTF-8 BOMと5列ヘッダーを確認。検索抜粋だけで取得済み・公式性確認済みとしない。",
+      "checked_at": "2026-11-13T09:19:57.499619+00:00",
+      "data_rows": 152,
+      "entry_ids": [
+        "fe21906f-1e8a-5475-99f6-394f132e5dd8"
+      ],
+      "inspected_targets": 1,
+      "license": "CC-BY-2.1-JP",
+      "license_url": "https://creativecommons.org/licenses/by/2.1/jp/",
+      "new_verified_entries": 0,
+      "observation": "対象名を含む施設行がなく全文かな列もないため採用0。取得CSV全体・位置座標・本文・画像・連絡先・キャッシュは収録せず、件数・列名・資料URL/hash・不足事項のみを記録。既存の神社庁原読みとホトカミ/八百万の神の停止判断は解除しない。",
+      "published_update_date_raw": "2015年4月1日",
+      "references": [
+        {
+          "download_links": [
+            {
+              "href_raw": "/img/opendata/hinanjo/hinanjo.csv",
+              "label": "避難所位置データ[csvファイル／6KB]"
+            },
+            {
+              "href_raw": "/img/opendata/hinanjo/kinkyu-hinanbasho.csv",
+              "label": "緊急避難場所位置データ[csvファイル／7KB]"
+            }
+          ],
+          "fetched_at": "2026-11-13T09:19:10.710837+00:00",
+          "key": "catalogue",
+          "page_hash": "5db9438d60f2c77a964753f0c63e4e1a31f615d7b0e3575c736345c7245b7e65",
+          "status": "acquired",
+          "url": "https://www.city.niihama.lg.jp/site/opendata/hinanjo.html"
+        },
+        {
+          "fetched_at": "2026-11-13T09:19:12.897573+00:00",
+          "key": "terms",
+          "page_hash": "657785f123073b0dfbbaff01be96a075a458a45decab124671ed63db4b219a7f",
+          "status": "acquired",
+          "url": "https://www.city.niihama.lg.jp/site/opendata/opendata-kiyaku.html"
+        },
+        {
+          "columns": [
+            "避難所名",
+            "施設郵便番号",
+            "施設住所",
+            "緯度",
+            "経度"
+          ],
+          "data_rows": 65,
+          "exact_name_rows": [],
+          "fetched_at": "2026-11-13T09:19:14.986853+00:00",
+          "key": "csv0",
+          "page_hash": "0797c7d5b74182786d8b46d876f6623032772ca8d4f28aa471a2a7929a2514d7",
+          "related_name_rows": [],
+          "status": "acquired",
+          "url": "https://www.city.niihama.lg.jp/img/opendata/hinanjo/hinanjo.csv"
+        },
+        {
+          "columns": [
+            "緊急避難所名",
+            "施設郵便番号",
+            "施設住所",
+            "緯度",
+            "経度"
+          ],
+          "data_rows": 87,
+          "exact_name_rows": [],
+          "fetched_at": "2026-11-13T09:19:17.062425+00:00",
+          "key": "csv1",
+          "page_hash": "c4f358bb750c33771cace26f99494d66d633ba74f311da439e35c48f7a5775ac",
+          "related_name_rows": [],
+          "status": "acquired",
+          "url": "https://www.city.niihama.lg.jp/img/opendata/hinanjo/kinkyu-hinanbasho.csv"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "愛媛の保留1登録について新居浜市の実リンク2CSV計152行の名称列を照合した範囲。市内全神社の網羅・全資料の読み調査完了ではない。",
+      "source_kind": "municipal_open_data",
+      "source_publisher": "新居浜市",
+      "status": "two_bounded_municipal_open_tables_reviewed_no_adoption",
+      "terms_observation": "案内本文と専用利用規約2でCC表示2.1日本・出典クレジット・加工表示を確認。個別ページのデータのみへの適用であり、一般市ページ・第三者サイト・既存の取得停止資料に流用しない。",
+      "title": "避難所情報（避難所位置データ・緊急避難場所位置データ）",
+      "version_observation": "更新情報は平成27年4月1日。現在の全指定状況を再構築した表、又は2026年版の名簿とは扱わない。"
+    },
+    {
       "adopted_reading_research_history": [
         {
           "additional_source_reviews": [
@@ -321433,9 +321943,9 @@
       "categories": {
         "insufficient_evidence_in_inspected_sources": 0,
         "investigation_incomplete": 0,
-        "judgment_required": 1
+        "judgment_required": 0
       },
-      "unfinished_entries": 1
+      "unfinished_entries": 0
     },
     "28": {
       "categories": {
@@ -462915,6 +463425,38 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T09:13:22.942709+00:00",
+          "evidence_attempt": "miyagi_haguro_actual_index_link_detail_retains_suspected_reading_20261113",
+          "expected_source_hash": "f843d061945973add5a8c2c9451df43fe3eb9621088003f8119556ecfd75d24a",
+          "observation": "同一の名前・所在地の実詳細でも原かなはぐろじじゃを反復しており、一覧だけの抽出誤りとは確認できない。途中にんを推定追加せず、既存要確認補正と原文を保持。",
+          "reference": {
+            "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+            "agency_link_observation": {
+              "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+              "fetched_at": "2026-11-13T09:11:58.502973+00:00",
+              "href_raw": "detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15",
+              "index_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=41",
+              "page_hash": "abe43235e52b067654010be06b59b05ffa40e1dfa686877e8de5e85db45f926d",
+              "subject_text_raw": "\n      羽黒神社（はぐろじじゃ）\n    "
+            },
+            "authority_observation": "実詳細本文に宮城県神社庁の運営表記があり、原一覧の一迫柳の目字曽根除下50の同名行から実リンクする詳細として確認。非公式投稿の転載を独立証拠にしない。",
+            "checked_at": "2026-11-13T09:13:22.942709+00:00",
+            "excerpt": "羽黒神社（はぐろじじゃ） 鎮座地: 宮城県栗原市一迫柳の目字曽根除下50",
+            "fetched_at": "2026-11-13T09:12:38.480571+00:00",
+            "locator": "神社詳細の名称括弧内かなと鎮座地欄",
+            "name_raw": "羽黒神社",
+            "page_hash": "06d759147df49f054c1dd4b1df5070eb9c2bb10e6a80c96bb36b57feb6e57677",
+            "reading_raw": "はぐろじじゃ",
+            "source_kind": "agency",
+            "source_publisher": "宮城県神社庁",
+            "title": "羽黒神社 | 宮城県神社庁",
+            "url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15"
+          },
+          "remaining_requirement": "当該施設の社名全文の読みを独立に明示し、同じ所在地への対応を確認できる資料。",
+          "status": "same_facility_agency_detail_repeats_suspected_full_reading"
         }
       ],
       "address": "宮城県栗原市一迫柳の目字曽根除下50",
@@ -568396,6 +568938,34 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T09:04:02.613038+00:00",
+          "evidence_attempt": "iiyama_cultural_plan_draft_kahodo_tree_row_no_full_reading_20261113",
+          "expected_source_hash": "aed62b126888dc127c97adfb1f4f5668eb6a696315d78128addd1049d8e39ac1",
+          "observation": "文化財としての樹木の記載を神社の全文読み確認や施設同一性確認に読み替えない。地区名の読みから社名を推定しない。",
+          "reference": {
+            "address_scope": "地区のみ。大字寿字道下938の全所在地は該当行にない。",
+            "checked_at": "2026-11-13T09:04:02.613038+00:00",
+            "date_observation": "調査日2026年11月13日より後の年月を表紙に記載し、表紙デザインは仮と表示。実刊行・策定・文化庁認定の完了日を意味すると断定しない。",
+            "district_raw": "外様",
+            "document_status": "draft_not_final_plan",
+            "fetched_at": "2026-11-13T09:02:45.190835+00:00",
+            "inspection_method": "全100ページのPDFKit文字層から3名称を検索し、該当ページと表紙を画像化して目視。全ページ画像の精査とは区別する。",
+            "locator": "PDF index40（紙面38頁）の未指定文化財一覧、記念物・植物欄",
+            "page_hash": "4a33e86d534ca2cee2e1d2d55d3addaa56e63a1233ac8476b378c76d60ee8f69",
+            "printed_date_raw": "令和８（2026）年１２月",
+            "reading_scope": "該当行に独立した神社全文かな又はルビなし",
+            "redistribution_status": "辞書への再利用許諾は今回未確認。公開PDFの全文・表全体・画像は保存せず資料位置と不足事項のみ記録。",
+            "render_sha256": "1a4513a7078ae533af85bd16b80e8366cc8d735c3eb34dc4f2dbfc634eed2e91",
+            "source_kind": "municipal_cultural_preservation_plan_draft",
+            "source_publisher": "飯山市・飯山市教育委員会（表紙表示）",
+            "subject_name_raw": "加保戸神社のケヤキ",
+            "title": "飯山市文化財保存活用地域計画（案）",
+            "url": "https://www.city.iiyama.nagano.jp/assets/files/gakusyushien/bunkazai/2026tiikikeikaku.pdf"
+          },
+          "status": "tree_subject_and_district_observed_full_reading_and_parcel_absent"
         }
       ],
       "address": "飯山市大字寿字道下938",
@@ -879594,62 +880164,6 @@
     {
       "additional_source_reviews": [
         {
-          "adopted": false,
-          "checked_at": "2026-11-12T04:51:17.196108+00:00",
-          "daily_as_of": "20261111",
-          "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
-          "evidence_attempt": "nta_manual_judgment_review_20261112",
-          "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
-          "matched_active_corporate_numbers": [],
-          "monthly_snapshot": "20261030",
-          "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
-          "result": "no_unique_active_exact_name_full_address_identity",
-          "source_kind": "government_corporate_register",
-          "source_publisher": "国税庁",
-          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-remainder",
-          "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
-          "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
-          "related_actual_hrefs": [
-            "https://www.buccyake-kojiki.com/archives/1051162243.html"
-          ],
-          "result": "selected_articles_without_bound_main_subject_comparison",
-          "source_kind": "article_index",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "bounded_article_index_scope_recorded"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "高槻市奈佐原元町",
-      "agency_listing_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
-      "category": "judgment_required",
-      "entry_id": "403b290c-e9e9-5446-b021-bc5a574949f3",
-      "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
-      "facility_id": "1946b500-863e-5f50-8858-27ec929106c5",
-      "listed_name": "稲荷神社",
-      "nta_result": "not checked for current source snapshot",
-      "prefecture": "大阪府",
-      "prefecture_code": "27",
-      "reading_raw": "いなりじんや",
-      "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
-      "status": "unfinished",
-      "surface": "稲荷神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
           "active_exact_name_full_address_matches": 0,
           "adopted": false,
           "checked_at": "2026-11-12T04:51:17.196108+00:00",
@@ -882069,6 +882583,54 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T09:17:04.667112+00:00",
+          "evidence_attempt": "okayama_04058_actual_link_html_and_print_pdf_original_kana_hold_20261113",
+          "expected_source_hash": "395a265e7a60d5e375cd8d99df00374d5c1162e959f86d13097f860b8d93a5ce",
+          "observation": "一覧・同コード詳細・印刷PDFの実表示ともスサノヲンジャ。独立した全文かな根拠が得られず、ジの推定追加や御祭神名・他の素盞嗚神社からの読み流用はしない。原文・既存補正・要判断を保持する。",
+          "print_pdf_reference": {
+            "address_text_layer_raw": "岡山市南区灘崎町片岡1677･1678",
+            "checked_at": "2026-11-13T09:17:04.667112+00:00",
+            "fetched_at": "2026-11-13T09:15:34.136535+00:00",
+            "independence_observation": "同じ神社庁詳細の印刷出力であり、独立した別発行者による発音確認とは数えない。",
+            "inspection_method": "サーバ応答バイト列を変更せずPDFKitで表示し、2頁を画像で目視。読みは1頁の神社名括弧内で確認。検索の抜粋文字は原文として採用しない。",
+            "locator": "1頁目の基本情報・神社名欄、コード04058と鎮座地欄",
+            "name_text_layer_raw": "素盞嗚神社",
+            "page_hash": "d9839e27091be17d3dd8473d94496699b5df7a5ba08eb134b2f52e8c01dc38d5",
+            "pages": 2,
+            "pdf_page_index": 0,
+            "reading_raw": "スサノヲンジャ",
+            "render_sha256": "6a8443858790bead3a59e6aebf8fb132c438848a0aa0bcead0d53ae6710f5ee0",
+            "title": "素盞嗚神社 岡山県神社庁 神社検索システム（実リンクのプリント用PDF）",
+            "transport_observation": "取得応答はint(17600)というデバッグ文字列の後に%PDF-1.4が続く。保存hashはこの先頭も含む全応答のhash。バイト列の修復や文字コード置換は行わず、PDFKitがそのまま読めた表示を確認。",
+            "url": "https://www.okayama-jinjacho.or.jp/search/17188/?print=pdf"
+          },
+          "reference": {
+            "address_raw": "岡山市南区灘崎町片岡1677･1678",
+            "agency_code": "04058",
+            "authority_observation": "実本文に岡山県神社庁の案内・発行者表記があり、原一覧の同コード・正式名・全所在地の行が当詳細をリンクしている。検索結果だけで同定しない。",
+            "checked_at": "2026-11-13T09:17:04.667112+00:00",
+            "excerpt": "神社コード 04058 神社名 素盞嗚神社（スサノヲンジャ） 鎮座地 〒709-1215 岡山市南区灘崎町片岡1677･1678",
+            "fetched_at": "2026-11-13T09:15:31.047776+00:00",
+            "index_link": {
+              "fetched_at": "2026-11-13T09:14:51.758110+00:00",
+              "href_raw": "https://www.okayama-jinjacho.or.jp/search/17188",
+              "locator": "a.shrineList__rowのコード04058・片岡1677･1678の行",
+              "page_hash": "370ed201ce240aa00bf1fd24235f561df8d3d08532e3401c21b3a9a0dec66177",
+              "url": "https://www.okayama-jinjacho.or.jp/search/list/page/20/"
+            },
+            "locator": "h2直後のかな、基本情報の神社コード・神社名・鎮座地欄",
+            "name_raw": "素盞嗚神社",
+            "page_hash": "6cb7bfe64aec9da6e397b7a28140fe21b26f0afee2b1fbc373c9f4689952f549",
+            "reading_raw": "スサノヲンジャ",
+            "source_kind": "agency",
+            "source_publisher": "岡山県神社庁",
+            "title": "素盞嗚神社 | 岡山県神社庁",
+            "url": "https://www.okayama-jinjacho.or.jp/search/17188/"
+          },
+          "status": "html_and_rendered_print_retain_original_suspected_reading"
         }
       ],
       "address": "岡山市南区灘崎町片岡1677･1678",
@@ -950822,6 +951384,20 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T09:19:57.499619+00:00",
+          "evidence_attempt": "niihama_two_2015_open_evacuation_tables_152_rows_no_hagioka_name_20261113",
+          "expected_source_hash": "b7cb5f88e594fd22838e83e0e3165b15a5ad24d34505083e015601150066bb41",
+          "observation": "避難所65行と緊急避難場所87行の名称列に萩岡を含む施設は0行。各表は名称・施設郵便番号・施設住所・緯度・経度の5列で独立した全文かな列なし。掲載されないことは神社の不存在・廃止・市内全資料の読み不存在を意味しない。大書きやの原読み・既存判断を保持。",
+          "reference_urls": [
+            "https://www.city.niihama.lg.jp/img/opendata/hinanjo/hinanjo.csv",
+            "https://www.city.niihama.lg.jp/img/opendata/hinanjo/kinkyu-hinanbasho.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "新居浜市",
+          "status": "two_bounded_open_tables_inspected_target_absent_no_reading_column"
         }
       ],
       "address": "新居浜市萩生1163",
@@ -1237679,7 +1238255,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10524,
+    "retained_unresolved_entries": 10523,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1240783,9 +1241359,9 @@
     "categories": {
       "insufficient_evidence_in_inspected_sources": 10325,
       "investigation_incomplete": 0,
-      "judgment_required": 199
+      "judgment_required": 198
     },
     "distinct_surfaces": 4221,
-    "unfinished_entries": 10524
+    "unfinished_entries": 10523
   }
 }

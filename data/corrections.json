@@ -71190,13 +71190,17 @@
     },
     "403b290c-e9e9-5446-b021-bc5a574949f3": {
       "changes": {
-        "reading": "いなりじんや"
+        "reading": "いなりじんじゃ"
       },
       "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
       "facility_id": "1946b500-863e-5f50-8858-27ec929106c5",
       "identity_match": {
         "agency_address": "高槻市奈佐原元町",
-        "agency_name": "稲荷神社"
+        "agency_index_detail_href_raw": "t27.html",
+        "agency_name": "稲荷神社",
+        "comparison": "同じ一覧の番号17・町域・別名が一致する実a[href]がこの詳細を直接指す。詳細住所は原町域に数字地番が続き、異なる字名や所在地を追加・置換しない。",
+        "reference_address": "高槻市奈佐原元町17-15",
+        "reference_name": "稲荷神社"
       },
       "original": {
         "address": "高槻市奈佐原元町",
@@ -71204,8 +71208,33 @@
         "name_raw": "稲荷神社",
         "reading_raw": "いなりじんや"
       },
-      "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+      "reason": "同じ神社庁の高槻市一覧番号17から実リンクするt27.htmlの正式名・別名・全所在地を照合し、個別詳細が明示する全文いなりじんじゃを採用する。一覧原文いなりじんやは改変せず、旧要確認補正と判定理由を調査履歴に保存。語尾や小書きを推定した補正ではない。",
       "references": [
+        {
+          "address_raw": "高槻市奈佐原元町17-15",
+          "agency_detail_link": {
+            "href_raw": "t27.html",
+            "index_fetched_at": "2026-11-13T09:07:07.924483+00:00",
+            "index_page_hash": "76958819faceba587325c04b79ed0c047195ced2c51cf9cafa37dfb512f70e42",
+            "index_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
+            "locator": "高槻市一覧の番号17・奈佐原元町・殿岡神社の行",
+            "resolved_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/t27.html"
+          },
+          "checked_at": "2026-11-13T09:08:11.845534+00:00",
+          "excerpt": "稲荷神社（いなりじんじゃ）別名（殿岡神社） 鎮座地 〒569-1043 高槻市奈佐原元町17-15",
+          "fetched_at": "2026-11-13T09:07:09.994926+00:00",
+          "locator": "唯一h3の正式名と括弧内全文かな、鎮座地欄",
+          "name_raw": "稲荷神社",
+          "page_hash": "073fceff7875010e0d6dd022dab4182e448729da1c3ab7ab3f346ae8770e793d",
+          "reading_raw": "いなりじんじゃ",
+          "reading_scope": "full_name",
+          "rights_note": "末尾の画像複製禁止表示を確認。社名・明示全文かな・所在地の限定事実と出典のみ保存し、画像や全ページ本文は保存しない。一般のデータ再配布許諾が明示されたとはしない。",
+          "source_kind": "agency",
+          "source_publisher": "大阪府神社庁",
+          "source_scope_note": "神社庁掲載の神社本庁非加盟神社（単立）の紹介。加盟神社へ分類変更せず、施設公式サイトでもない。",
+          "title": "稲荷神社（別名 殿岡神社） | 大阪府神社庁",
+          "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/t27.html"
+        },
         {
           "address_raw": "高槻市奈佐原元町",
           "checked_at": "2026-11-08T14:28:30.202995+00:00",
@@ -71219,8 +71248,8 @@
           "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html"
         }
       ],
-      "review_kind": "whole_reading_audit",
-      "status": "needs_review"
+      "review_kind": "agency_linked_detail_full_reading",
+      "status": "verified"
     },
     "405facff-42fb-5493-9cd4-88361f002c34": {
       "changes": {
