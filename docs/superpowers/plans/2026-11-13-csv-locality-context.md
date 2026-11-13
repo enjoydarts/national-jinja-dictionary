@@ -33,5 +33,5 @@ Consumes: `ref`, `facility` の辞書。Produces: `csv_context_address(ref, faci
 Modify `data/corrections.json`, `data/reading_research.json`, `data/manifest.json`, `data/source_catalog.json`, `docs/DATA.md`, `docs/SOURCES.md`, `docs/REVIEW.md`.
 - [x] 取得済み20候補を原全住所と同一CSV行の原列値で再点検し、対応行のみ採用する。
 - [x] 全旧履歴/ID/hash/原正本、対象+N/-0、対象外実効不変、6形式、CLI validate、全テストを検証してコミットする。
-- [ ] 全範囲を独立レビュアー1名で審査し、C/Iは1回修正する。再審査はしない。
+- [x] 全範囲を独立レビュアー1名で審査し、C/Iは1回修正する。再審査はしない。
 - [ ] 最新mainの採用・履歴を保持して再検証し、クリーンな時点でff-only統合する。保留がある間は全件完了としない。
