@@ -9477,6 +9477,155 @@
         }
       ]
     },
+    "66293dd5-818a-54d3-ac8d-915510de1611": {
+      "case_id": "AGENCY-FULL-READING-VARIANTS-be2c1b04-4fab-55b2-83db-efc77f525f21",
+      "confirmation": "source_review",
+      "expected_source_hash": "a084bc41852e80632d2958951d3a49df476e6448a51c016d776b1727600f24c1",
+      "facility_id": "be2c1b04-4fab-55b2-83db-efc77f525f21",
+      "original": {
+        "address": "丹波篠山市大山上140",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6307065.html",
+        "name_raw": "味淵神社",
+        "reading_raw": "ミジブチジンジャ（アジブチジンジャ）"
+      },
+      "outputs": [
+        {
+          "basis": "agency_full_reading_variant",
+          "reading": "みじぶちじんじゃ",
+          "reading_url": "https://www.hyogo-jinjacho.com/data/6307065.html",
+          "source_interval": {
+            "end": 8,
+            "start": 0
+          },
+          "source_reading_raw": "ミジブチジンジャ",
+          "surface": "味淵神社"
+        },
+        {
+          "basis": "agency_full_reading_variant",
+          "reading": "あじぶちじんじゃ",
+          "reading_url": "https://www.hyogo-jinjacho.com/data/6307065.html",
+          "source_interval": {
+            "end": 17,
+            "start": 9
+          },
+          "source_reading_raw": "アジブチジンジャ",
+          "surface": "味淵神社"
+        }
+      ],
+      "proof": {
+        "city_name_change_recheck": {
+          "checked_at": "2026-11-13T04:57:56.241704+00:00",
+          "excerpt": "篠山市の名称を丹波篠山市に変更する。 この条例は、平成31年5月1日から施行する。",
+          "fetched_at": "2026-11-13T04:08:42.780154+00:00",
+          "locator": "市の名称を変更する条例（平成30年条例第35号）本則・附則",
+          "page_hash": "fecc833286e7d501564ebb4feb947870756107bbd1b2e408804018afd8bbc093",
+          "scope": "旧既存条例hashとは異なる新取得本文だが、再確認した本則・附則の文言を追加記録。旧参照・原住所・原hashを置換しない。",
+          "status": 200,
+          "url": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00001635.html"
+        },
+        "delimiters": [
+          {
+            "end": 9,
+            "raw": "（",
+            "start": 8
+          },
+          {
+            "end": 18,
+            "raw": "）",
+            "start": 17
+          }
+        ],
+        "entry_id": "66293dd5-818a-54d3-ac8d-915510de1611",
+        "existing_city_name_change": [
+          {
+            "effective_date": "2019-05-01",
+            "new_prefix": "丹波篠山市",
+            "old_prefix": "篠山市",
+            "ordinance_reference": {
+              "checked_at": "2026-11-09T10:51:39.781146+00:00",
+              "excerpt": "篠山市の名称を丹波篠山市に変更する。 この条例は、平成31年5月1日から施行する。",
+              "fetched_at": "2026-11-09T10:51:37.548039+00:00",
+              "locator": "市の名称を変更する条例（平成30年条例第35号）本則・附則",
+              "page_hash": "0a2df8df9c6102f1ef5f1fddbd8e5b723835417ad56e379250736ae3776080be",
+              "url": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00001635.html"
+            },
+            "profile_address_compared": "丹波篠山市大山上140",
+            "profile_address_raw": "〒669-2803\n丹波篠山市大山上140",
+            "rule": "sasayama_to_tambasasayama_2019_05_01",
+            "unchanged_suffix_raw": "大山上140",
+            "xml_address_raw": "篠山市大山上140"
+          }
+        ],
+        "expected_source_hash": "a084bc41852e80632d2958951d3a49df476e6448a51c016d776b1727600f24c1",
+        "facility_id": "be2c1b04-4fab-55b2-83db-efc77f525f21",
+        "formal_name_raw": "味淵神社",
+        "index_unit": "Unicode code points; Python slice start inclusive, end exclusive",
+        "kind": "agency_same_name_parenthesized_full_readings",
+        "native_source_id": "6307065",
+        "profile_address": "丹波篠山市大山上140",
+        "profile_address_raw": "〒669-2803\n丹波篠山市大山上140",
+        "profile_fetched_at": "2026-11-13T04:07:08.295450+00:00",
+        "profile_page_hash": "84c76ccce39f4ea0c6cc48073af0bcf23689a75886e4c2cb278bcf4f7f8f5c6a",
+        "profile_printed_code_raw": "6307065/兼務",
+        "profile_url": "https://www.hyogo-jinjacho.com/data/6307065.html",
+        "reading_intervals": [
+          {
+            "end": 8,
+            "raw": "ミジブチジンジャ",
+            "reading": "みじぶちじんじゃ",
+            "start": 0
+          },
+          {
+            "end": 17,
+            "raw": "アジブチジンジャ",
+            "reading": "あじぶちじんじゃ",
+            "start": 9
+          }
+        ],
+        "reading_scope": "two fully printed readings in the same kana field for the single h1 subject; no old-name, alias-name or precedence is asserted",
+        "whole_reading_field": "header.hero div.kana",
+        "whole_reading_raw": "ミジブチジンジャ（アジブチジンジャ）",
+        "xml_reference": {
+          "address_raw": "篠山市大山上140",
+          "code_raw": "6307065",
+          "fetched_at": "2026-11-13T02:54:05.074105+00:00",
+          "href_derivation": "data/ + actual Locate code + .html",
+          "locator": "Locations/Locate[627]",
+          "name_raw": "味淵神社",
+          "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+          "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+        }
+      },
+      "reason": "兵庫県神社庁の同じ正式名見出し「味淵神社」に続く唯一のかな欄に二つの全文カナを括弧付きで明示。原全かな区間を2つの完成した読みと括弧へ過不足なく対応させ、同じ表記に2つの読みを個別登録する。複数正式名への分割や括弧・語尾からの発音推定は行わず、原施設・原名・原読み・原全所在地・ID/hashを保持。",
+      "recorded_at": "2026-11-13T04:57:56.241704+00:00",
+      "references": [
+        {
+          "address_raw": "丹波篠山市大山上140",
+          "checked_at": "2026-11-13T04:57:56.241704+00:00",
+          "display_address_raw": "〒669-2803\n丹波篠山市大山上140",
+          "excerpt": "神社名=味淵神社; かな=ミジブチジンジャ（アジブチジンジャ）; 神社コード=6307065/兼務; 所在地=〒669-2803\n丹波篠山市大山上140",
+          "fetched_at": "2026-11-13T04:07:08.295450+00:00",
+          "field_counts": {
+            "addresses": 1,
+            "formal_names": 1,
+            "kana_fields": 1,
+            "printed_codes": 1
+          },
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "name_raw": "味淵神社",
+          "page_hash": "84c76ccce39f4ea0c6cc48073af0bcf23689a75886e4c2cb278bcf4f7f8f5c6a",
+          "printed_code_raw": "6307065/兼務",
+          "reading_raw": "ミジブチジンジャ（アジブチジンジャ）",
+          "redistribution_status": "unconfirmed",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 味淵神社",
+          "url": "https://www.hyogo-jinjacho.com/data/6307065.html"
+        }
+      ],
+      "review_kind": "same_name_parenthesized_full_readings"
+    },
     "6821b084-8b99-544f-a8fa-84adccf433e9": {
       "annotation_review": {
         "annotation_raw": "小野江町",
