@@ -634,3 +634,21 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 | [菅原神社](https://kuchitanshrine.my.coocan.jp/shishiudosugawara.html) | すがわらじんじゃ | 南丹市園部町宍人市場113 |
 
 宮ノ本13と宮ノ前24の八幡宮は、同名・同読みでも全地番が異なる別の施設として保持しています。残る48登録は、名称や全所在地が対応しない、又は住所内読み注記等の表現審査が残るため未採用です。篠村八幡宮の全文かなから冠称を切り落として原八幡宮へ流用せず、他町域の八幡神社・春日神社・若宮神社等の読みも転用していません。資料は個人参拝記録であり、神社自身・神社庁・行政の発音認定とは区別します。既確認の画像複写・転載禁止と画像利用条件を遵守し、画像を取得せず、名称・全文かな・全所在地と出典・欄位置・判断の限定事実だけを保存しています。
+
+
+### 口丹波の社20本文と同名候補127組の照合（2026年11月13日）
+
+同じ索引の未取得20本文を39保留登録の候補127組と照合し、原全所在地・掲載名・独立全文かなが対応する次の8登録を採用しました。
+
+| 採用した掲載名 | 明示全文読み | 原所在地 |
+| --- | --- | --- |
+| [八幡宮](https://kuchitanshrine.my.coocan.jp/ikenouchihachiman.html) | はちまんぐう | 南丹市八木町池ノ内宮ノ腰70 |
+| [日吉神社](https://kuchitanshrine.my.coocan.jp/kamiyoshihiyoshi.html) | ひよしじんじゃ | 南丹市八木町神吉西河原16-4 |
+| [八幡神社](https://kuchitanshrine.my.coocan.jp/kamiyoshihachiman.html) | はちまんじんじゃ | 南丹市八木町神吉西河原23 |
+| [岡神社](https://kuchitanshrine.my.coocan.jp/okajinja.html) | おかじんじゃ | 南丹市八木町北廣瀬黒ノ内27-1 |
+| [春日神社](https://kuchitanshrine.my.coocan.jp/kiharakasuga.html) | かすがじんじゃ | 南丹市八木町木原盛蔭山24 |
+| [八幡神社](https://kuchitanshrine.my.coocan.jp/shiwagahachiman.html) | はちまんじんじゃ | 南丹市日吉町志和賀宮ノ脇30 |
+| [大山祇神社](https://kuchitanshrine.my.coocan.jp/makiyamaohyamadumi.html) | おおやまづみじんじゃ | 南丹市日吉町中世木宮ノ前12 |
+| [日吉神社](https://kuchitanshrine.my.coocan.jp/hatagouhiyoshi.html) | ひよしじんじゃ | 南丹市日吉町畑郷宮ノ段20 |
+
+31登録は保留を維持しています。宗神社の原南氷寿34と参照南永寿34、八木嶋の春日神社の原朝倉21の乙と参照朝倉20は一致していません。胡麻の資料は名称欄が「日吉神社神社」、かなは「ひよしじんじゃ」となっており、こちらで名称を削除修正して採用していません。原所在地にない美山町の付記、地番がない参照住所、別町域の同名社も同等化せず保持しています。資料は管理人個人の参拝記録であり、神社自身・神社庁・行政の発音認定とは区別します。既確認の画像複写・転載禁止と画像利用条件を遵守し、画像を取得せず、名称・全文かな・全所在地と出典・欄位置・判断の限定事実だけを保存しています。
