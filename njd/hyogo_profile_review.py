@@ -102,6 +102,19 @@ def hyogo_profile_problems(review,facility,entry):
         or proof.get('map_name_raw')!=mapped['name_raw']
         or not all(v in mapped['excerpt'] for v in (mapped['name_raw'],code,map_address))):
         return ['Hyogo map code, full address or retained name is not bound']
+    if name_basis=='map':
+        binding=proof.get('map_subject_name_observation')
+        expected=dict(profile_url=facility['listing_url'],profile_page_hash=facility.get('page_hash'),expected_source_hash=entry.get('source_hash'),profile_name_raw=name,map_name_raw=mapped['name_raw'])
+        if not isinstance(binding,dict) or any(binding.get(k)!=v for k,v in expected.items()):
+            return ['registered map identity lacks the same original profile body name observations']
+        mentions=binding.get('mentions')
+        if not isinstance(mentions,list) or len(mentions)!=2 or any(not isinstance(m,dict) for m in mentions):
+            return ['registered map identity lacks two typed subject-name observations']
+        for mention,role,label,locator in zip(mentions,['subject_festival_caption','subject_self_designation'],[mapped['name_raw'],name],['祭記事','由緒']):
+            if (mention.get('role')!=role or mention.get('name_raw')!=label or mention.get('locator')!=locator
+                or not _plain(mention.get('excerpt')) or label not in mention['excerpt']
+                or (role=='subject_self_designation' and '社名を'+name+'と号す' not in mention['excerpt'])):
+                return ['registered map identity body names are not the explicitly inspected same subject']
     supported_address=address
     if location_selected:
         if (proof.get('profile_address_raw')!=address or proof.get('map_address_raw')!=map_address or map_address==address):

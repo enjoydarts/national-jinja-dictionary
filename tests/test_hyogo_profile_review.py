@@ -302,6 +302,10 @@ def map_registered_fixture():
     d,doc,v=fixture();v['profile_selection_proof']['registered_name_basis']='map'
     name=v['references'][1]['name_raw'];reg=v['references'][2];reg['source_fields']['name']=name
     reg.update(name_raw=name,excerpt=name+' / '+reg['address_raw'])
+    f=d['facilities'][0];e=d['entries'][0]
+    v['profile_selection_proof']['map_subject_name_observation']=dict(profile_url=f['listing_url'],profile_page_hash=f['page_hash'],expected_source_hash=e['source_hash'],
+        profile_name_raw=f['name_raw'],map_name_raw=name,mentions=[dict(role='subject_festival_caption',name_raw=name,locator='祭記事',excerpt=name+' 人工祭礼'),
+        dict(role='subject_self_designation',name_raw=f['name_raw'],locator='由緒',excerpt='社名を'+f['name_raw']+'と号す')])
     return d,doc,v
 
 
@@ -341,3 +345,13 @@ class HyogoMapRegisteredNameTest(unittest.TestCase):
         d,doc,v=map_registered_fixture();out=apply_reviews(d,doc);self.assertEqual(len(eligible(out)),1)
         out['entries'][0]['human_review']['references'][2]['source_fields']['furigana']='カクウハチマンジンジャ'
         self.assertTrue(blocking_problems(out));self.assertEqual(eligible(out),[])
+
+    def test_map_basis_requires_same_subject_body_names_bound_to_original_profile(self):
+        for case in ['missing','hash','third_name','self_name']:
+            with self.subTest(case=case):
+                d,doc,v=map_registered_fixture();proof=v['profile_selection_proof'];binding=proof['map_subject_name_observation']
+                if case=='missing':proof.pop('map_subject_name_observation')
+                elif case=='hash':binding['profile_page_hash']='f'*64
+                elif case=='third_name':binding['mentions'][0]['name_raw']='別名神社'
+                elif case=='self_name':binding['mentions'][1]['excerpt']='社名を別名神社と号す'
+                self.assertEqual(eligible(apply_reviews(d,doc)),[])
