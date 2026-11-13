@@ -64,3 +64,16 @@ class HyogoMapLocationTest(unittest.TestCase):
   d,doc,s=fixture();out=apply_locations(d,doc);self.assertEqual(len(eligible(out)),1)
   loc=out['facilities'][0]['location_supplement'];loc['registry_reference']['source_fields']['postCode']='0000001';self.assertTrue(blocking_problems(out))
   doc['facilities'][s['facility_id']]=copy.deepcopy(loc);bad=apply_locations(out,doc);self.assertFalse(eligible(bad));self.assertEqual((bad['facilities'][0]['address'],bad['facilities'][0]['municipality']),('丹波丹波篠山市架空町5','丹波丹波篠山市'))
+
+ def test_applied_single_registration_contract_blocks_the_entire_facility(self):
+  from test_hyogo_building_location import fixture as building_fixture
+  # The shared location contract must keep the original candidate out of
+  # dictionaries even when the added, unreviewed candidate is rejected alone.
+  for make in (fixture,building_fixture):
+   for change in ('append','replace','remove'):
+    with self.subTest(kind=make.__module__,change=change):
+     d,doc,s=make();out=apply_locations(d,doc);self.assertEqual(len(eligible(out)),1)
+     if change=='append':out['entries'].append(dict(out['entries'][0],id='unreviewed-second-entry'))
+     elif change=='replace':out['entries'][0]['id']='unreviewed-second-entry'
+     else:out['entries']=[]
+     self.assertFalse(eligible(out));self.assertTrue(any(p['kind']=='facility' and p['id']==s['facility_id'] for p in blocking_problems(out)))

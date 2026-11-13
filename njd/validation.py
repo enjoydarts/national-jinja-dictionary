@@ -88,6 +88,10 @@ def validate(data: dict) -> list[dict]:
                 add('facility',f.get('id'),'invalid location supplement')
             elif location.get('applied'):
                 issues=location_problems(location,f,source)
+                if location.get('supplement_kind') in ('hyogo_cultural_building_location','hyogo_documented_map_location'):
+                    bound_entries=[e for e in es if e.get('facility_id')==f.get('id')]
+                    if len(bound_entries)!=1 or bound_entries[0].get('id')!=location.get('entry_id'):
+                        issues.append('typed Hyogo location requires its single original registration')
                 if (issues or f.get('address')!=location.get('changes',{}).get('address',raw_address(f))
                     or f.get('municipality')!=location.get('changes',{}).get('municipality')):
                     add('facility',f.get('id'),'invalid applied location supplement',severity='error' if f.get('status')=='verified' else 'review')
