@@ -296,3 +296,48 @@ class HyogoLocationReviewTest(unittest.TestCase):
                 elif case=='glyph':f['name_rendering_status']='external_glyph'
                 elif case=='stale':f['address']='架空市架空町123-40'
                 self.assertEqual(eligible(apply_reviews(d,doc)),[])
+
+
+def map_registered_fixture():
+    d,doc,v=fixture();v['profile_selection_proof']['registered_name_basis']='map'
+    name=v['references'][1]['name_raw'];reg=v['references'][2];reg['source_fields']['name']=name
+    reg.update(name_raw=name,excerpt=name+' / '+reg['address_raw'])
+    return d,doc,v
+
+
+class HyogoMapRegisteredNameTest(unittest.TestCase):
+    def test_registered_map_identity_selects_only_literal_profile_name_and_kana(self):
+        d,doc,v=map_registered_fixture();before=copy.deepcopy(d);f=d['facilities'][0];e=d['entries'][0]
+        self.assertEqual(review_problems(v,f,e,d['collection']),[])
+        out=apply_reviews(d,doc);self.assertEqual(len(eligible(out)),1);self.assertFalse(blocking_problems(out))
+        for key,value in f.items():
+            if key not in ['status','reason']:self.assertEqual(out['facilities'][0][key],value)
+        for key in ['id','name_raw','surface','reading_raw','source_hash','reading_url']:
+            self.assertEqual(out['entries'][0][key],e[key])
+        self.assertEqual(out['entries'][0]['surface'],'架空八幡神社');self.assertEqual(out['entries'][0]['reading'],'かくうはちまんじんじゃ')
+        self.assertEqual(out['entries'][0]['human_review']['references'][2]['name_raw'],'架空八幡宮')
+        self.assertEqual(d,before);self.assertEqual(apply_reviews(out,doc),out)
+
+    def test_other_registered_name_nonempty_kana_and_unknown_basis_are_held(self):
+        for case in ['third_name','nonempty_kana','unknown_basis','default_profile','omitted_basis']:
+            with self.subTest(case=case):
+                d,doc,v=map_registered_fixture();reg=v['references'][2]
+                if case=='third_name':reg['source_fields']['name']='別神社';reg.update(name_raw='別神社',excerpt='別神社 / '+reg['address_raw'])
+                elif case=='nonempty_kana':
+                    reg['source_fields']['furigana']='カクウハチマンジンジャ';reg.update(reading_raw='カクウハチマンジンジャ',reading_scope='full_name');reg['excerpt']+=' / カクウハチマンジンジャ'
+                elif case=='unknown_basis':v['profile_selection_proof']['registered_name_basis']='other'
+                elif case=='default_profile':v['profile_selection_proof']['registered_name_basis']='profile'
+                elif case=='omitted_basis':v['profile_selection_proof'].pop('registered_name_basis')
+                self.assertEqual(eligible(apply_reviews(d,doc)),[])
+
+    def test_map_name_basis_cannot_combine_location_selection_or_different_whole_parcel(self):
+        d,doc,v=location_fixture();v['profile_selection_proof']['registered_name_basis']='map'
+        self.assertEqual(eligible(apply_reviews(d,doc)),[])
+        d,doc,v=map_registered_fixture();reg=v['references'][2];reg['source_fields']['streetNumber']='架空町字架空１番地の１０'
+        reg['address_raw']='兵庫県架空市架空町字架空１番地の１０';reg['excerpt']='架空八幡宮 / '+reg['address_raw']
+        self.assertEqual(eligible(apply_reviews(d,doc)),[])
+
+    def test_map_basis_invalid_embedded_evidence_is_rechecked_offline(self):
+        d,doc,v=map_registered_fixture();out=apply_reviews(d,doc);self.assertEqual(len(eligible(out)),1)
+        out['entries'][0]['human_review']['references'][2]['source_fields']['furigana']='カクウハチマンジンジャ'
+        self.assertTrue(blocking_problems(out));self.assertEqual(eligible(out),[])

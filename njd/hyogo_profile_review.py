@@ -24,6 +24,9 @@ def hyogo_profile_problems(review,facility,entry):
     selected_reason=LOCATION_REASON if location_selected else REASON
     proof=review.get('profile_selection_proof')
     if not isinstance(proof,dict):return ['missing Hyogo profile selection proof']
+    name_basis=proof.get('registered_name_basis','profile')
+    if name_basis not in ('profile','map') or (location_selected and name_basis!='profile'):
+        return ['unsupported Hyogo registered name basis or combined name/location choice']
     code=facility.get('native_source_id');name=facility.get('name_raw');kana=entry.get('reading_raw')
     expected=dict(kind='hyogo_typed_profile_registered_location_selection' if location_selected else 'hyogo_typed_profile_registered_name_selection',facility_id=facility.get('id'),
         entry_id=entry.get('id'),expected_source_hash=entry.get('source_hash'),native_code=code,
@@ -134,14 +137,17 @@ def hyogo_profile_problems(review,facility,entry):
         if any(not isinstance(v,str) or not re.fullmatch('[0-9]{8}',v) for v in (reg.get('snapshot'),state.get('as_of'))):raise ValueError()
         if datetime.strptime(state['as_of'],'%Y%m%d')<datetime.strptime(reg['snapshot'],'%Y%m%d'):raise ValueError()
     except (TypeError,ValueError):return ['invalid Hyogo registry snapshot/state date']
+    registered_name=mapped['name_raw'] if name_basis=='map' else name
+    if name_basis=='map' and fields['furigana']:
+        return ['registered map-name identity cannot supply or compare another name pronunciation']
     corporate=fields['corporateNumber'];full=fields['prefectureName']+fields['cityName']+fields['streetNumber']
     if (reg.get('source_kind')!='government_corporate_register'
         or reg.get('url')!='https://www.houjin-bangou.nta.go.jp/download/zenken/index.html'
         or not re.fullmatch('[0-9]{13}',corporate) or reg.get('corporate_number')!=corporate
-        or type(reg.get('csv_row')) is not int or reg['csv_row']<1 or reg.get('name_raw')!=name or fields['name']!=name
+        or type(reg.get('csv_row')) is not int or reg['csv_row']<1 or reg.get('name_raw')!=registered_name or fields['name']!=registered_name
         or fields['prefectureCode']!='28' or fields['prefectureName']!='兵庫県' or reg.get('address_raw')!=full
         or _numeric_address(full)!=_numeric_address('兵庫県'+supported_address.removeprefix('兵庫県'))
-        or not all(v in reg['excerpt'] for v in (name,full))
+        or not all(v in reg['excerpt'] for v in (registered_name,full))
         or fields['kind']!='399' or fields['latest']!='1' or fields['process']=='99'
         or fields['closeDate'] or fields['hihyoji']!='0' or fields['nameImageId'] or fields['addressImageId']
         or type(state.get('active_shrine_corporation_count_at_full_address')) is not int or state['active_shrine_corporation_count_at_full_address']!=1
