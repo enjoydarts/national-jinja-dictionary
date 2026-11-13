@@ -1361,6 +1361,205 @@
         }
       ]
     },
+    "0f8892da-4876-5d74-a410-e60a9054f08a": {
+      "case_id": "hyogo-profile-location-6310104-20261113",
+      "confirmation": "source_review",
+      "expected_source_hash": "7537f9a753d92d7850b95598e33666bf163269c064b5f6e8c338ecdcf5afdf5b",
+      "facility_id": "ddc13de1-723b-5efd-bdb8-59ca48967032",
+      "original": {
+        "address": "三木市吉川町前田998",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6310104.html",
+        "name_raw": "天津神社",
+        "reading_raw": "アマツジンジャ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_selected",
+          "reading": "あまつじんじゃ",
+          "reading_url": "https://www.hyogo-jinjacho.com/data/6310104.html",
+          "surface": "天津神社"
+        }
+      ],
+      "profile_selection_proof": {
+        "added_aza_raw": "字下馬場",
+        "entry_id": "0f8892da-4876-5d74-a410-e60a9054f08a",
+        "expected_source_hash": "7537f9a753d92d7850b95598e33666bf163269c064b5f6e8c338ecdcf5afdf5b",
+        "facility_id": "ddc13de1-723b-5efd-bdb8-59ca48967032",
+        "kind": "hyogo_typed_profile_registered_location_selection",
+        "map_address_raw": "三木市吉川町前田字下馬場998",
+        "map_name_raw": "天津神社",
+        "native_code": "6310104",
+        "profile_address_raw": "三木市吉川町前田998",
+        "profile_name_raw": "天津神社",
+        "registered_address_basis": "linked_map_additional_aza",
+        "selection": "profile_name_and_profile_kana_with_location_evidence"
+      },
+      "reason": "原詳細の正式名・全文かなを選択し、同じ実codeで結ばれた原XMLの別所在地を保持する。元XMLで明示された字下馬場が原詳細の完全な末尾地番の直前にあることと、その元XMLの全住所・正式名に唯一の存続神社法人が対応することを確認。実公開JSでcodeから詳細URLへのリンクを確認し、字名の一般削除や原住所への補完は行わない。",
+      "recorded_at": "2026-11-13T04:12:16.462790+00:00",
+      "references": [
+        {
+          "address_raw": "〒673-1103\n三木市吉川町前田998",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "evidence_role": "agency_profile",
+          "excerpt": "天津神社 / アマツジンジャ / 6310104/兼務 / 〒673-1103\n三木市吉川町前田998",
+          "fetched_at": "2026-11-13T03:39:30.757607+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "name_raw": "天津神社",
+          "page_hash": "6ff64939cfa0161ef3f246c38768debf2d50f6590dd2e3bcc49e357ca6fe1c0b",
+          "printed_code_raw": "6310104/兼務",
+          "reading_raw": "アマツジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 天津神社",
+          "url": "https://www.hyogo-jinjacho.com/data/6310104.html"
+        },
+        {
+          "address_raw": "三木市吉川町前田字下馬場998",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "code_raw": "6310104",
+          "evidence_role": "agency_map",
+          "excerpt": "天津神社 / 6310104 / 三木市吉川町前田字下馬場998",
+          "fetched_at": "2026-11-13T02:54:05.074105+00:00",
+          "href_derivation": "data/ + actual Locate code + .html",
+          "locator": "Locations/Locate[1135]",
+          "name_raw": "天津神社",
+          "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+          "protocol_reference": {
+            "checked_at": "2026-11-13T04:12:16.462790+00:00",
+            "fetched_at": "2026-11-13T03:10:11.915045+00:00",
+            "locator": "MarkerSet LocateCode href expression",
+            "page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+            "profile_path_template": "data/{code}.html",
+            "url": "https://www.hyogo-jinjacho.com/js/formsearch.js"
+          },
+          "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 天津神社",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+        },
+        {
+          "address_raw": "兵庫県三木市吉川町前田字下馬場９９８番地",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "code": "6310104",
+          "comparison_modes": [
+            "literal_map_full_address"
+          ],
+          "corporate_number": "9140005006235",
+          "csv_row": 204174,
+          "evidence_role": "registered_profile_identity",
+          "exact_profile_name": true,
+          "excerpt": "天津神社 / 兵庫県三木市吉川町前田字下馬場９９８番地",
+          "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+          "file_id": "28443",
+          "locator": "28_hyogo_all_20261030.csv row 204174",
+          "member": "28_hyogo_all_20261030.csv",
+          "name_raw": "天津神社",
+          "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+          "registry_state_proof": {
+            "active_corporate_numbers_at_full_address": [
+              "9140005006235"
+            ],
+            "active_shrine_corporation_count_at_full_address": 1,
+            "as_of": "20261112",
+            "daily_resources": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "rows": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "rows": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "rows": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "rows": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "rows": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "rows": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "rows": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261112",
+                "fetched_at": "2026-11-13T01:55:56.841451+00:00",
+                "file_id": "28529",
+                "page_hash": "896ee14905fdfcd8098dd4bdb87fdc9bd02655facaf056c3d5358b984a60c1b9",
+                "rows": 2180,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "daily_rows": 19178,
+            "monthly_prefecture_rows": 206383,
+            "scope": "兵庫月次全206383行の選択した実全地番の神社法人は1件。全国日次8組19178行で候補法人番号と当該全地番の神社法人イベント0。原詳細/原地図の文字列差は保持し、未記載字名・地番は生成しない。",
+            "target_corporate_or_full_parcel_events": 0
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "cityName": "三木市",
+            "closeDate": "",
+            "corporateNumber": "9140005006235",
+            "furigana": "",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "天津神社",
+            "nameImageId": "",
+            "postCode": "6731103",
+            "prefectureCode": "28",
+            "prefectureName": "兵庫県",
+            "process": "01",
+            "streetNumber": "吉川町前田字下馬場９９８番地"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "title": "国税庁 法人番号公表サイト 兵庫県全件CSV",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ],
+      "review_kind": "hyogo_profile_location_selection"
+    },
     "1077800d-4c8f-55fa-9859-a32fa1f6789b": {
       "case_id": "SPLIT-08c63dac-a91d-528c-8673-8d5f7acac736",
       "confirmation": "source_review",
@@ -1490,6 +1689,206 @@
           "url": "https://kyoka.mie-jinjacho.or.jp/shrine/%e9%a3%af%e9%87%8e%e7%a5%9e%e7%a4%be%ef%bc%88%e9%95%b7%e5%a4%aa%e6%97%ad%e7%94%ba%ef%bc%89/"
         }
       ]
+    },
+    "10f78ddb-f8f7-59d1-80e8-56f2c47438f5": {
+      "case_id": "hyogo-profile-location-6307008-20261113",
+      "confirmation": "source_review",
+      "expected_source_hash": "4460c3ef944fb85cc5a8630cf09b8ab6184a40210b57729aa02c2db9805f4e1e",
+      "facility_id": "41704943-d4c9-5295-b0d6-05530c146da8",
+      "original": {
+        "address": "丹波篠山市畑宮377",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6307008.html",
+        "name_raw": "佐佐婆神社",
+        "reading_raw": "ササバジンジャ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_selected",
+          "reading": "ささばじんじゃ",
+          "reading_url": "https://www.hyogo-jinjacho.com/data/6307008.html",
+          "surface": "佐佐婆神社"
+        }
+      ],
+      "profile_selection_proof": {
+        "entry_id": "10f78ddb-f8f7-59d1-80e8-56f2c47438f5",
+        "expected_source_hash": "4460c3ef944fb85cc5a8630cf09b8ab6184a40210b57729aa02c2db9805f4e1e",
+        "facility_id": "41704943-d4c9-5295-b0d6-05530c146da8",
+        "kind": "hyogo_typed_profile_registered_location_selection",
+        "map_address_raw": "篠山市畑宮376",
+        "map_name_raw": "佐佐婆神社",
+        "native_code": "6307008",
+        "profile_address_raw": "丹波篠山市畑宮377",
+        "profile_name_raw": "佐佐婆神社",
+        "registered_address_basis": "profile",
+        "selection": "profile_name_and_profile_kana_with_location_evidence"
+      },
+      "reason": "原詳細の正式名・全文かなを選択し、同じ実codeで結ばれた原XMLの別所在地を保持する。詳細の全住所377番地と独立登記の全住所・正式名・全文カナが一致し、地図376の正誤・原因・移転は認定しない。",
+      "recorded_at": "2026-11-13T04:12:16.462790+00:00",
+      "references": [
+        {
+          "address_raw": "〒669-2305\n丹波篠山市畑宮377",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "evidence_role": "agency_profile",
+          "excerpt": "佐佐婆神社 / ササバジンジャ / 6307008/本務 / 〒669-2305\n丹波篠山市畑宮377",
+          "fetched_at": "2026-11-13T03:39:32.842374+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "name_raw": "佐佐婆神社",
+          "page_hash": "edcbb09336399e7e20d565a419759fe39f6e460fb796aab58a9b3807e1be1c7e",
+          "printed_code_raw": "6307008/本務",
+          "reading_raw": "ササバジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 佐佐婆神社",
+          "url": "https://www.hyogo-jinjacho.com/data/6307008.html"
+        },
+        {
+          "address_raw": "篠山市畑宮376",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "code_raw": "6307008",
+          "evidence_role": "agency_map",
+          "excerpt": "佐佐婆神社 / 6307008 / 篠山市畑宮376",
+          "fetched_at": "2026-11-13T02:54:05.074105+00:00",
+          "href_derivation": "data/ + actual Locate code + .html",
+          "locator": "Locations/Locate[570]",
+          "name_raw": "佐佐婆神社",
+          "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+          "protocol_reference": {
+            "checked_at": "2026-11-13T04:12:16.462790+00:00",
+            "fetched_at": "2026-11-13T03:10:11.915045+00:00",
+            "locator": "MarkerSet LocateCode href expression",
+            "page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+            "profile_path_template": "data/{code}.html",
+            "url": "https://www.hyogo-jinjacho.com/js/formsearch.js"
+          },
+          "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 佐佐婆神社",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+        },
+        {
+          "address_raw": "兵庫県丹波篠山市畑宮３７７番地",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "code": "6307008",
+          "comparison_modes": [
+            "literal_profile_full_address"
+          ],
+          "corporate_number": "4140005008896",
+          "csv_row": 89787,
+          "evidence_role": "registered_profile_identity",
+          "exact_profile_name": true,
+          "excerpt": "佐佐婆神社 / 兵庫県丹波篠山市畑宮３７７番地 / ササバジンジャ",
+          "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+          "file_id": "28443",
+          "locator": "28_hyogo_all_20261030.csv row 89787",
+          "member": "28_hyogo_all_20261030.csv",
+          "name_raw": "佐佐婆神社",
+          "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+          "reading_raw": "ササバジンジャ",
+          "reading_scope": "full_name",
+          "registry_state_proof": {
+            "active_corporate_numbers_at_full_address": [
+              "4140005008896"
+            ],
+            "active_shrine_corporation_count_at_full_address": 1,
+            "as_of": "20261112",
+            "daily_resources": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "rows": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "rows": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "rows": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "rows": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "rows": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "rows": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "rows": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261112",
+                "fetched_at": "2026-11-13T01:55:56.841451+00:00",
+                "file_id": "28529",
+                "page_hash": "896ee14905fdfcd8098dd4bdb87fdc9bd02655facaf056c3d5358b984a60c1b9",
+                "rows": 2180,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "daily_rows": 19178,
+            "monthly_prefecture_rows": 206383,
+            "scope": "兵庫月次全206383行の選択した実全地番の神社法人は1件。全国日次8組19178行で候補法人番号と当該全地番の神社法人イベント0。原詳細/原地図の文字列差は保持し、未記載字名・地番は生成しない。",
+            "target_corporate_or_full_parcel_events": 0
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "cityName": "丹波篠山市",
+            "closeDate": "",
+            "corporateNumber": "4140005008896",
+            "furigana": "ササバジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "佐佐婆神社",
+            "nameImageId": "",
+            "postCode": "6692305",
+            "prefectureCode": "28",
+            "prefectureName": "兵庫県",
+            "process": "12",
+            "streetNumber": "畑宮３７７番地"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "title": "国税庁 法人番号公表サイト 兵庫県全件CSV",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ],
+      "review_kind": "hyogo_profile_location_selection"
     },
     "110dce5a-f28e-5bc0-83d1-88e57a32a6b7": {
       "annotation_review": {
@@ -8428,6 +8827,205 @@
           "url": "https://kyoka.mie-jinjacho.or.jp/shrine/%e6%98%a5%e6%97%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e6%9d%b1%e9%87%91%e4%ba%95%ef%bc%89/"
         }
       ]
+    },
+    "612c8478-306d-5327-87c8-39442e3ea2fd": {
+      "case_id": "hyogo-profile-location-6310112-20261113",
+      "confirmation": "source_review",
+      "expected_source_hash": "b71bc5a83fad9dccb0a97c9af75b1aad154975a7ea2f32cf3d62825ae334ded9",
+      "facility_id": "b8161bc4-6938-5b20-90b2-5d43655a8cc8",
+      "original": {
+        "address": "三木市吉川町上荒川698",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6310112.html",
+        "name_raw": "八幡神社",
+        "reading_raw": "ハチマンジンシャ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_selected",
+          "reading": "はちまんじんしゃ",
+          "reading_url": "https://www.hyogo-jinjacho.com/data/6310112.html",
+          "surface": "八幡神社"
+        }
+      ],
+      "profile_selection_proof": {
+        "added_aza_raw": "字峠",
+        "entry_id": "612c8478-306d-5327-87c8-39442e3ea2fd",
+        "expected_source_hash": "b71bc5a83fad9dccb0a97c9af75b1aad154975a7ea2f32cf3d62825ae334ded9",
+        "facility_id": "b8161bc4-6938-5b20-90b2-5d43655a8cc8",
+        "kind": "hyogo_typed_profile_registered_location_selection",
+        "map_address_raw": "三木市吉川町上荒川字峠698",
+        "map_name_raw": "八幡神社",
+        "native_code": "6310112",
+        "profile_address_raw": "三木市吉川町上荒川698",
+        "profile_name_raw": "八幡神社",
+        "registered_address_basis": "linked_map_additional_aza",
+        "selection": "profile_name_and_profile_kana_with_location_evidence"
+      },
+      "reason": "原詳細の正式名・全文かなを選択し、同じ実codeで結ばれた原XMLの別所在地を保持する。元XMLで明示された字峠が原詳細の完全な末尾地番の直前にあることと、その元XMLの全住所・正式名に唯一の存続神社法人が対応することを確認。実公開JSでcodeから詳細URLへのリンクを確認し、字名の一般削除や原住所への補完は行わない。",
+      "recorded_at": "2026-11-13T04:12:16.462790+00:00",
+      "references": [
+        {
+          "address_raw": "〒673-1111\n三木市吉川町上荒川698",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "evidence_role": "agency_profile",
+          "excerpt": "八幡神社 / ハチマンジンシャ / 6310112/兼務 / 〒673-1111\n三木市吉川町上荒川698",
+          "fetched_at": "2026-11-13T03:39:34.920651+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "name_raw": "八幡神社",
+          "page_hash": "1853a6903cf9a0f3d2d7df2b367ed9ecfacdac694c986f9804db6e5320c24668",
+          "printed_code_raw": "6310112/兼務",
+          "reading_raw": "ハチマンジンシャ",
+          "reading_scope": "full_name",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 八幡神社",
+          "url": "https://www.hyogo-jinjacho.com/data/6310112.html"
+        },
+        {
+          "address_raw": "三木市吉川町上荒川字峠698",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "code_raw": "6310112",
+          "evidence_role": "agency_map",
+          "excerpt": "八幡神社 / 6310112 / 三木市吉川町上荒川字峠698",
+          "fetched_at": "2026-11-13T02:54:05.074105+00:00",
+          "href_derivation": "data/ + actual Locate code + .html",
+          "locator": "Locations/Locate[1143]",
+          "name_raw": "八幡神社",
+          "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+          "protocol_reference": {
+            "checked_at": "2026-11-13T04:12:16.462790+00:00",
+            "fetched_at": "2026-11-13T03:10:11.915045+00:00",
+            "locator": "MarkerSet LocateCode href expression",
+            "page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+            "profile_path_template": "data/{code}.html",
+            "url": "https://www.hyogo-jinjacho.com/js/formsearch.js"
+          },
+          "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 八幡神社",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+        },
+        {
+          "address_raw": "兵庫県三木市吉川町上荒川字峠６９８番地",
+          "checked_at": "2026-11-13T04:12:16.462790+00:00",
+          "code": "6310112",
+          "comparison_modes": [
+            "literal_map_full_address"
+          ],
+          "corporate_number": "2140005006274",
+          "csv_row": 43689,
+          "evidence_role": "registered_profile_identity",
+          "exact_profile_name": true,
+          "excerpt": "八幡神社 / 兵庫県三木市吉川町上荒川字峠６９８番地",
+          "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+          "file_id": "28443",
+          "locator": "28_hyogo_all_20261030.csv row 43689",
+          "member": "28_hyogo_all_20261030.csv",
+          "name_raw": "八幡神社",
+          "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+          "registry_state_proof": {
+            "active_corporate_numbers_at_full_address": [
+              "2140005006274"
+            ],
+            "active_shrine_corporation_count_at_full_address": 1,
+            "as_of": "20261112",
+            "daily_resources": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "rows": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "rows": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "rows": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "rows": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "rows": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "rows": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "rows": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261112",
+                "fetched_at": "2026-11-13T01:55:56.841451+00:00",
+                "file_id": "28529",
+                "page_hash": "896ee14905fdfcd8098dd4bdb87fdc9bd02655facaf056c3d5358b984a60c1b9",
+                "rows": 2180,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "daily_rows": 19178,
+            "monthly_prefecture_rows": 206383,
+            "scope": "兵庫月次全206383行の選択した実全地番の神社法人は1件。全国日次8組19178行で候補法人番号と当該全地番の神社法人イベント0。原詳細/原地図の文字列差は保持し、未記載字名・地番は生成しない。",
+            "target_corporate_or_full_parcel_events": 0
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "cityName": "三木市",
+            "closeDate": "",
+            "corporateNumber": "2140005006274",
+            "furigana": "",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "八幡神社",
+            "nameImageId": "",
+            "postCode": "6731111",
+            "prefectureCode": "28",
+            "prefectureName": "兵庫県",
+            "process": "01",
+            "streetNumber": "吉川町上荒川字峠６９８番地"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "title": "国税庁 法人番号公表サイト 兵庫県全件CSV",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ],
+      "review_kind": "hyogo_profile_location_selection"
     },
     "61571f57-d4af-51fe-bfcf-2a483ceb8835": {
       "annotation_review": {
