@@ -316272,6 +316272,107 @@
         "f3bb3a39-b992-54ed-bbed-de2f072383dc"
       ],
       "target_entry_ids_sha256": "b2a0412c5dc53f9c46d138bdfc01a1a953c82833779c11f1980ab9a0b67b5a48"
+    },
+    {
+      "acquisition_stops": [
+        {
+          "inspection_method": "web tool",
+          "observation": "年度別案内からの総一覧リンクは403。別URLで同じ総一覧を取り直さず、独立して閲覧できた令和2年指定ページとその実PDFだけを点検。",
+          "retry_requests": 0,
+          "status": "http_403_stopped",
+          "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/?p=88"
+        },
+        {
+          "error": "FetchError: <urlopen error [SSL: DH_KEY_TOO_SMALL] dh key too small (_ssl.c:1147)>",
+          "observation": "GISのポータル入口はDH_KEY_TOO_SMALLで停止。TLS設定を弱めず、同じ検索を別経路で取得しない。位置選択画面の存在を文化財データ取得・利用許諾確認済みとは扱わない。",
+          "security_relaxed": false,
+          "status": "tls_stopped",
+          "url": "https://g-kyoto.gis.pref.kyoto.lg.jp/Portal?mid=694"
+        },
+        {
+          "inspection_method": "web tool",
+          "observation": "トップの再確認も403。既存の取得停止記録を保持し、以後の追加取得・別経路によるデータ取得を行わず採用根拠にしない。",
+          "retrieved_dataset_records": 0,
+          "status": "http_403_observed_prior_stop_retained",
+          "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/"
+        }
+      ],
+      "attempt_id": "kyoto_prefecture_cultural_entry_and_shinden_publication_address_difference_20261113",
+      "checked_at": "2026-11-13T08:03:56.971446+00:00",
+      "entry_references": [
+        {
+          "fetched_at": "2026-11-13T07:59:44.068786+00:00",
+          "page_hash": "577a6cf97f2388c142f792b0d2495a3a001b18f326fa18b6abf9856214b94570",
+          "title": [
+            "京都府内の文化財  |  京都府教育委員会 文化財保護課"
+          ],
+          "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/?page_id=431"
+        },
+        {
+          "fetched_at": "2026-11-13T07:59:46.934329+00:00",
+          "page_hash": "3e60a0867b3b7c1bd0bd0c73b9a957e64619d32f3932f2f07742c5b81cd5351f",
+          "title": [
+            "令和２年３月27日付け指定等  |  京都府教育委員会 文化財保護課"
+          ],
+          "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/?p=203"
+        }
+      ],
+      "global_pending_entries_at_record": 10536,
+      "inspected_target_entries": 1,
+      "new_judgment_required_entries": 1,
+      "new_verified_entries": 0,
+      "preservation": "原字・原住所・原読み・ID/hash・補正・旧判断を保持。未確認施設をverified/excludedへ変更しない。",
+      "publication_reference": {
+        "address_comparison": "原住所の医王子3と、府資料の医王寺は表記が異なり原数字地番3も印刷されていない。字形の同等化・数字補作を行わない。",
+        "address_raw": "相楽郡精華町大字山田小字医王寺",
+        "attribution": "出典：京都府教育委員会「京都の文化財 第38集」印刷4頁",
+        "checked_at": "2026-11-13T08:03:56.971446+00:00",
+        "cultural_title_raw": "新殿神社 本殿、末社八王子社",
+        "fetched_at": "2026-11-13T08:01:29.560309+00:00",
+        "interpretation_limit": "社名部分のルビは目視できるが文化財表題は建造物2棟を含む。所有者の専用全文かな欄ではない。元施設の同一性を解決せず神社名の読みだけを切り出して採用しない。",
+        "observed_name_component_reading_raw": "しんでんじんじゃ",
+        "observed_name_raw": "新殿神社",
+        "owner_name_raw": "宗教法人 新殿神社",
+        "page_hash": "9aa2b2204db3627e0eedf1468c762c9750a357f2e9d9b92749a97f3f1b268335",
+        "preface_date_raw": "令和三年一月",
+        "processed_notice": "名称・ルビ観察・住所差の最小限の事実比較。PDF・地図・写真・描画画像・全本文は収録しない。",
+        "reading_scope": "cultural_title_shrine_name_component_ruby_observed_not_adopted",
+        "source_kind": "government_cultural_publication",
+        "source_link": {
+          "label": "京都の文化財　第38集",
+          "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/wp-content/uploads/2022/05/bunkazai38.pdf"
+        },
+        "source_locator": "PDF index3・印刷4頁。表題の社名部分の独立ルビと、本殿/末社八王子社のルビ、所有者・所在地欄を目視。",
+        "source_page_reference": {
+          "fetched_at": "2026-11-13T07:59:46.934329+00:00",
+          "page_hash": "3e60a0867b3b7c1bd0bd0c73b9a957e64619d32f3932f2f07742c5b81cd5351f",
+          "title": [
+            "令和２年３月27日付け指定等  |  京都府教育委員会 文化財保護課"
+          ],
+          "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/?p=203"
+        },
+        "source_publisher": "京都府教育委員会",
+        "title": "京都の文化財 第38集",
+        "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/wp-content/uploads/2022/05/bunkazai38.pdf",
+        "visual_review": {
+          "method": "取得したPDFをPDFKitでローカル描画しview_imageで原ページを目視。OCRによる補作なし。",
+          "pdf_pages": 33,
+          "printed_page": "4",
+          "rendered_page_sha256": "efe55003e2a0c2c771b2b4d8fcfdd965f6321c6113cb6df1f4f4f04de24428e2",
+          "reviewed_page_index": 3,
+          "source_pdf_sha256": "9aa2b2204db3627e0eedf1468c762c9750a357f2e9d9b92749a97f3f1b268335",
+          "web_screenshot_status": "cache_miss_local_original_pdf_render_used"
+        }
+      },
+      "retained_pending_entries": 1,
+      "rights_scope": "最小限の公表事実と調査判断に出典を明記。元PDF・図版・全本文・描画画像・個人の所有者名を正本/コミットに含めず、一般サイト表示を無制限の転載許諾と解釈しない。",
+      "scope": "府文化財案内・令和2年指定ページ・実刊行物1冊の原33頁を取得し、新殿神社の印刷4頁の見出し/所在地を限定目視。全33頁の所有者行、他年度全刊行物、GIS台帳全件、京都府全保留を照合済みとはしない。",
+      "snapshot_base_commit": "737723e7ec69deee98221b0966744619b39c0370",
+      "source_kind": "government_cultural_publication",
+      "source_publisher": "京都府教育委員会",
+      "target_entry_ids": [
+        "0ecc0950-a33c-599c-9063-d1d3a705b6d7"
+      ]
     }
   ],
   "per_prefecture": {
@@ -316477,9 +316578,9 @@
     },
     "26": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 1283,
+        "insufficient_evidence_in_inspected_sources": 1282,
         "investigation_incomplete": 0,
-        "judgment_required": 3
+        "judgment_required": 4
       },
       "unfinished_entries": 1286
     },
@@ -796899,11 +797000,66 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:03:56.971446+00:00",
+          "evidence_attempt": "kyoto_prefecture_cultural_entry_and_shinden_publication_address_difference_20261113",
+          "expected_source_hash": "13a2bfbaab7810531d6de24c0a3f8617c5f7156939221ffdefd70c008f96e582",
+          "observation": "府の公刊資料に社名部分のルビを目視できるが、原医王子3と府資料医王寺の所在地差を確認。旧字・地番を推測修正せず個別判断へ移す。",
+          "previous_category": "insufficient_evidence_in_inspected_sources",
+          "previous_reason": "missing agency reading",
+          "reference": {
+            "address_comparison": "原住所の医王子3と、府資料の医王寺は表記が異なり原数字地番3も印刷されていない。字形の同等化・数字補作を行わない。",
+            "address_raw": "相楽郡精華町大字山田小字医王寺",
+            "attribution": "出典：京都府教育委員会「京都の文化財 第38集」印刷4頁",
+            "checked_at": "2026-11-13T08:03:56.971446+00:00",
+            "cultural_title_raw": "新殿神社 本殿、末社八王子社",
+            "fetched_at": "2026-11-13T08:01:29.560309+00:00",
+            "interpretation_limit": "社名部分のルビは目視できるが文化財表題は建造物2棟を含む。所有者の専用全文かな欄ではない。元施設の同一性を解決せず神社名の読みだけを切り出して採用しない。",
+            "observed_name_component_reading_raw": "しんでんじんじゃ",
+            "observed_name_raw": "新殿神社",
+            "owner_name_raw": "宗教法人 新殿神社",
+            "page_hash": "9aa2b2204db3627e0eedf1468c762c9750a357f2e9d9b92749a97f3f1b268335",
+            "preface_date_raw": "令和三年一月",
+            "processed_notice": "名称・ルビ観察・住所差の最小限の事実比較。PDF・地図・写真・描画画像・全本文は収録しない。",
+            "reading_scope": "cultural_title_shrine_name_component_ruby_observed_not_adopted",
+            "source_kind": "government_cultural_publication",
+            "source_link": {
+              "label": "京都の文化財　第38集",
+              "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/wp-content/uploads/2022/05/bunkazai38.pdf"
+            },
+            "source_locator": "PDF index3・印刷4頁。表題の社名部分の独立ルビと、本殿/末社八王子社のルビ、所有者・所在地欄を目視。",
+            "source_page_reference": {
+              "fetched_at": "2026-11-13T07:59:46.934329+00:00",
+              "page_hash": "3e60a0867b3b7c1bd0bd0c73b9a957e64619d32f3932f2f07742c5b81cd5351f",
+              "title": [
+                "令和２年３月27日付け指定等  |  京都府教育委員会 文化財保護課"
+              ],
+              "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/?p=203"
+            },
+            "source_publisher": "京都府教育委員会",
+            "title": "京都の文化財 第38集",
+            "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/wp-content/uploads/2022/05/bunkazai38.pdf",
+            "visual_review": {
+              "method": "取得したPDFをPDFKitでローカル描画しview_imageで原ページを目視。OCRによる補作なし。",
+              "pdf_pages": 33,
+              "printed_page": "4",
+              "rendered_page_sha256": "efe55003e2a0c2c771b2b4d8fcfdd965f6321c6113cb6df1f4f4f04de24428e2",
+              "reviewed_page_index": 3,
+              "source_pdf_sha256": "9aa2b2204db3627e0eedf1468c762c9750a357f2e9d9b92749a97f3f1b268335",
+              "web_screenshot_status": "cache_miss_local_original_pdf_render_used"
+            }
+          },
+          "remaining_requirement": "原実リンクの新殿神社と府文化財の個別対応及び所在地字名/地番の関係を実資料で説明すること。神社名の独立全文読みとして採用できる範囲も併せて審査。",
+          "source_kind": "government_cultural_publication",
+          "source_publisher": "京都府教育委員会",
+          "status": "prefecture_heading_ruby_observed_original_aza_and_parcel_binding_unresolved"
         }
       ],
       "address": "相楽郡精華町大字山田小字医王子3",
       "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
       "entry_id": "0ecc0950-a33c-599c-9063-d1d3a705b6d7",
       "expected_source_hash": "13a2bfbaab7810531d6de24c0a3f8617c5f7156939221ffdefd70c008f96e582",
       "facility_id": "ae89f20b-b144-50b9-8a52-916fcd7df7a3",
@@ -796912,7 +797068,7 @@
       "prefecture": "京都府",
       "prefecture_code": "26",
       "reading_raw": "",
-      "reason": "missing agency reading",
+      "reason": "府刊行物の所在地は医王寺（番地なし）、原神社庁住所は医王子3。施設対応と読みの採用範囲の確認が必要。",
       "status": "unfinished",
       "surface": "新殿神社",
       "wikipedia_article_refs": [],
@@ -1236592,9 +1236748,9 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10337,
+      "insufficient_evidence_in_inspected_sources": 10336,
       "investigation_incomplete": 0,
-      "judgment_required": 199
+      "judgment_required": 200
     },
     "distinct_surfaces": 4225,
     "unfinished_entries": 10536
