@@ -310575,6 +310575,58 @@
       "target_entry_ids": [
         "5e17a92a-7345-5945-86c9-92e812bcd692"
       ]
+    },
+    {
+      "attempt_id": "nagasaki_two_stale_official_corrections_identity_and_rights_review_20261113",
+      "checked_at": "2026-11-13T07:15:27.683896+00:00",
+      "inspected_target_entries": 2,
+      "new_verified_entries": 0,
+      "preservation": "旧補正・旧出典・元の名称/住所/読み・ID/hashを保持。hashだけの差し替え、住所/冠称/読みの推測修復を行わない。",
+      "results": [
+        {
+          "entry_id": "626d335a-9d4c-5878-b01f-fb4d1343768e",
+          "result": "full_reading_observed_official_and_agency_parcels_differ"
+        },
+        {
+          "entry_id": "21363eeb-3cdd-5a4d-aa32-351da99d5579",
+          "result": "stale_prefixed_name_reading_not_rebound_and_rights_stopped"
+        }
+      ],
+      "retained_pending_entries": 2,
+      "rights_scope": "飯盛神社は名称・明示かな・所在地の最小限の事実を研究記録に残す。久山年神社の本文は辞書補正に使用せず、今回の規約確認と停止理由のみ追加する。本文・画像・キャッシュ・連絡先は収録しない。",
+      "scope": "旧公式補正がstaleになっている長崎2登録に限定した現行原文・公式本文・規約の再審査。県内全件の調査完了を意味しない。",
+      "snapshot_base_commit": "292ae7af3d3958c83d098be5d5d0d36a84896c17",
+      "source_references": [
+        {
+          "address_raw": "長崎県佐世保市相浦町２３４３",
+          "fetched_at": "2026-11-13T07:14:38.857271+00:00",
+          "key": "iimori",
+          "name_raw": "飯盛神社",
+          "page_hash": "66e5fccda038d19e5e0947f2527a9357d9c021a86b61a7e19291e3b2061cce44",
+          "reading_raw": "いいもりじんじゃ",
+          "source_locator": "h1; アクセス見出し直下の名称・全文かな・所在地",
+          "status": "body_inspected",
+          "title": [
+            "【公式】佐世保相浦 飯盛神社（いいもりじんじゃ）"
+          ],
+          "url": "https://iimori.net/"
+        },
+        {
+          "fetched_at": "2026-11-13T07:14:41.053884+00:00",
+          "key": "kuyama-policy",
+          "observation": "著作権・再配布販売の制限を確認し、追加のアクセス本文収集・辞書利用を停止。",
+          "page_hash": "606cfad568c3e0cdb02023e7613831d8e357284d733af0b5e62e53e174aee419",
+          "status": "body_inspected",
+          "title": [
+            "【公式】久山年神社 | 長崎県諫早市 | 紅葉が美しい自然豊かな神社 | 安産・子宝・諸願成就の神 | サイトポリシー"
+          ],
+          "url": "https://kuyama-toshi-jinja.jp/policy.html"
+        }
+      ],
+      "target_entry_ids": [
+        "626d335a-9d4c-5878-b01f-fb4d1343768e",
+        "21363eeb-3cdd-5a4d-aa32-351da99d5579"
+      ]
     }
   ],
   "per_prefecture": {
@@ -1071477,6 +1071529,37 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T07:15:27.683896+00:00",
+          "evidence_attempt": "nagasaki_two_stale_official_corrections_identity_and_rights_review_20261113",
+          "expected_source_hash": "002856f52e7719ff5ccf1e1468d67f6d59d3c7381d6e7cb378544df23641afd9",
+          "observation": "旧補正は旧リンク一覧の久山年神社・住所空欄に束縛され、旧参照所在地も現在の原番地と異なる。現在の元登録は年神社・久山町2271。久山年神社の旧全文かなを年神社へ切り出さず、冠称を元名へ追加しない。今回の実サイトポリシーでは許可なしの再配布・販売利用を控える条件を確認したため、追加のアクセス本文取得及び辞書補正への利用を停止。",
+          "original_fields": {
+            "address_raw": "諫早市久山町2271番地",
+            "name_raw": "年神社",
+            "reading_raw": ""
+          },
+          "previous_correction_expected_source_hash": "9f575ca4be4234d530338f447fe1c32f352287bbff6728c4badff1f62589aa2d",
+          "previous_correction_preserved": true,
+          "reference": {
+            "checked_at": "2026-11-13T07:15:27.683896+00:00",
+            "fetched_at": "2026-11-13T07:14:41.053884+00:00",
+            "observation": "著作権・再配布販売の制限を確認し、追加のアクセス本文収集・辞書利用を停止。",
+            "page_hash": "606cfad568c3e0cdb02023e7613831d8e357284d733af0b5e62e53e174aee419",
+            "source_kind": "official_shrine",
+            "source_publisher": "久山年神社",
+            "status": "body_inspected",
+            "title": [
+              "【公式】久山年神社 | 長崎県諫早市 | 紅葉が美しい自然豊かな神社 | 安産・子宝・諸願成就の神 | サイトポリシー"
+            ],
+            "url": "https://kuyama-toshi-jinja.jp/policy.html"
+          },
+          "remaining_requirement": "現在の原名称・全所在地に対応する全文読みと、利用条件を満たす独立資料。規約制限のある本文を別経路から取得して補正しない。",
+          "status": "stale_prefixed_name_reading_not_rebound_and_rights_stopped",
+          "terms_status": "restricted_no_adoption",
+          "terms_url": "https://kuyama-toshi-jinja.jp/policy.html"
         }
       ],
       "address": "諫早市久山町2271番地",
@@ -1098409,6 +1098492,38 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T07:15:27.683896+00:00",
+          "evidence_attempt": "nagasaki_two_stale_official_corrections_identity_and_rights_review_20261113",
+          "expected_source_hash": "ab884c91b5323bf6f3fc5a78b7bd6fa46ce8d34d2b068780d5a9774e9443f417",
+          "observation": "公式サイト本文の主名称・独立全文かなを確認したが、アクセスは相浦町2343。元一覧の2371及び法人登記2371とは番地が異なる。旧補正は住所空欄の旧リンク一覧のhashに束縛されており、現在の原hashへ単に付け替えない。公式リンク先であることと全所在地の対応は別に判定する。",
+          "original_fields": {
+            "address_raw": "佐世保市相浦町2371番地",
+            "name_raw": "飯盛神社",
+            "reading_raw": ""
+          },
+          "previous_correction_expected_source_hash": "6baa5e94b70e3e662d646e21dab65d09a70f8499b7719344eb5b0e1cf930f32f",
+          "previous_correction_preserved": true,
+          "reference": {
+            "address_raw": "長崎県佐世保市相浦町２３４３",
+            "checked_at": "2026-11-13T07:15:27.683896+00:00",
+            "fetched_at": "2026-11-13T07:14:38.857271+00:00",
+            "name_raw": "飯盛神社",
+            "page_hash": "66e5fccda038d19e5e0947f2527a9357d9c021a86b61a7e19291e3b2061cce44",
+            "reading_raw": "いいもりじんじゃ",
+            "source_kind": "official_shrine",
+            "source_locator": "h1; アクセス見出し直下の名称・全文かな・所在地",
+            "source_publisher": "飯盛神社",
+            "status": "body_inspected",
+            "title": [
+              "【公式】佐世保相浦 飯盛神社（いいもりじんじゃ）"
+            ],
+            "url": "https://iimori.net/"
+          },
+          "remaining_requirement": "元一覧2371と公式アクセス2343の同一施設・所在地の役割を説明する実資料。原住所を公式住所に上書きせず、同名だけで補正しない。",
+          "status": "full_reading_observed_official_and_agency_parcels_differ"
         }
       ],
       "address": "佐世保市相浦町2371番地",
