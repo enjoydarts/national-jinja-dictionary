@@ -26372,13 +26372,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10317,
         "scope": "坂門一言神社の新候補1記事は本文の無断転載・複製禁止で未取得。学術資源案内1件は既点検大学DBと同じURLと確認し重複取得/採用を回避。読みや所在地の解決完了ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T14:11:38.828019+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10317,
+        "scope": "高知工科大学公開目録の地域資源2表95実データ行を追加確認。市内同名10登録は読み/全所在地不足又は別町域のため保留。006実リンクは既取得kut024と同一IDで重複取得しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:11:38.828019+00:00",
+      "checked_at": "2026-11-13T14:16:00.044618+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10317,
-      "scope": "高知工科大学公開目録の地域資源2表95実データ行を追加確認。市内同名10登録は読み/全所在地不足又は別町域のため保留。006実リンクは既取得kut024と同一IDで重複取得しない。"
+      "scope": "青森の神社庁支部冊子リードの入口HTTP503を記録。発行主体/利用条件/冊子本文未確認のまま検索結果の読みを採用せず、全資料の調査完了とはしない。"
     },
     "remaining_unfinished_entries": 10317,
     "resolved_entry_ids": [
@@ -26937,7 +26943,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:11:38.828019+00:00",
+  "computed_at": "2026-11-13T14:16:00.044618+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -403179,6 +403185,44 @@
       ],
       "xlsx_auxiliary_rPh_elements": 233,
       "xlsx_visible_text_method": "可視本文のsi/t及びsi/r/tだけを使用し、補助読みrPhを名称/見出し/セル値へ連結しない。読み欄Bは可視本文の独立セルだけ。"
+    },
+    {
+      "acquisition": "通常Client interval=2、timeout=20、retries=0、robots適用。入口HTTP503で停止。PDF本文や別経路を試行せず、503をrobots拒否/認証拒否やPDFそのものの応答として記録しない。",
+      "attempt_id": "aomori_sanpachi_booklet_lead_home_http503_unacquired_20261113",
+      "checked_at": "2026-11-13T14:16:00.044618+00:00",
+      "entry_ids": [
+        "0ca7feb4-d30b-5d00-8d28-041875233911"
+      ],
+      "new_pdf_bodies_acquired": 0,
+      "new_shrine_profiles_inspected": 0,
+      "new_verified_entries": 0,
+      "preservation": "原正本・補正・除外/保留判断・過去の調査履歴を保持。検索結果のかな/住所/人物情報・記事本文・冊子・画像・キャッシュを収録せず、実URL・取得エラー・対象ID/hash・未取得範囲だけを保存。",
+      "scope": "青森の三八城神社1登録の追加冊子リードについて入口取得状態のみ確認。正式名/全文かな/全原所在地の本文照合0。青森の他保留や全資料、全国保留の解決完了ではない。",
+      "source_kind": "candidate_agency_branch_publication",
+      "source_lead": {
+        "error": "HTTP 503: https://sanpachi.aomori-jinja.jp/",
+        "home_body_hash": null,
+        "pdf_body_acquired": false,
+        "publisher_body_verified": false,
+        "requested_home_url": "https://sanpachi.aomori-jinja.jp/",
+        "resume_condition": "入口の通常公開状態と発行者/利用条件が確認できる外部状態へ変わった場合に再検討。今回同一URLの再試行・別ホスト/経路・別ツール・検索キャッシュ本文による代替取得はしない。",
+        "scope": "検索で当該PDFを発見し、通常Clientで入口を確認したがHTTP503。本文未取得のため検索表示の正式名/かな/住所を採用根拠へ転記しない。",
+        "source_kind": "candidate_agency_branch_publication",
+        "source_publisher": "神社庁三八支部の冊子という探索候補。本文の発行者・公式性は未確認。",
+        "status": "home_http_503_publisher_and_terms_not_verified_booklet_not_acquired",
+        "terms_body_verified": false,
+        "unacquired_pdf_url": "https://sanpachi.aomori-jinja.jp/download/shrine_exploration.pdf"
+      },
+      "source_prefecture_code": "02",
+      "source_publisher": "神社庁三八支部の冊子という探索候補。本文の発行者・公式性は未確認。",
+      "status": "home_http_503_publisher_and_terms_not_verified_booklet_not_acquired",
+      "target_bindings": [
+        {
+          "entry_id": "0ca7feb4-d30b-5d00-8d28-041875233911",
+          "expected_source_hash": "931efb1aa86de7424ae5a7c88ea089415550784b24f22b1e45e27ef4093811fe"
+        }
+      ],
+      "target_entries": 1
     }
   ],
   "per_prefecture": {
@@ -450358,6 +450402,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:16:00.044618+00:00",
+          "evidence_attempt": "aomori_sanpachi_booklet_lead_home_http503_unacquired_20261113",
+          "expected_source_hash": "931efb1aa86de7424ae5a7c88ea089415550784b24f22b1e45e27ef4093811fe",
+          "observation": "追加冊子候補の入口がHTTP503で、公式性・規約及び冊子本文は未確認。原社名・読み・所在地・旧判断を保持し、検索結果だけの読みを登録しない。",
+          "reference": {
+            "error": "HTTP 503: https://sanpachi.aomori-jinja.jp/",
+            "home_body_hash": null,
+            "pdf_body_acquired": false,
+            "publisher_body_verified": false,
+            "requested_home_url": "https://sanpachi.aomori-jinja.jp/",
+            "resume_condition": "入口の通常公開状態と発行者/利用条件が確認できる外部状態へ変わった場合に再検討。今回同一URLの再試行・別ホスト/経路・別ツール・検索キャッシュ本文による代替取得はしない。",
+            "scope": "検索で当該PDFを発見し、通常Clientで入口を確認したがHTTP503。本文未取得のため検索表示の正式名/かな/住所を採用根拠へ転記しない。",
+            "source_kind": "candidate_agency_branch_publication",
+            "source_publisher": "神社庁三八支部の冊子という探索候補。本文の発行者・公式性は未確認。",
+            "status": "home_http_503_publisher_and_terms_not_verified_booklet_not_acquired",
+            "terms_body_verified": false,
+            "unacquired_pdf_url": "https://sanpachi.aomori-jinja.jp/download/shrine_exploration.pdf"
+          },
+          "source_kind": "candidate_agency_branch_publication",
+          "source_publisher": "神社庁三八支部の冊子という探索候補。本文の発行者・公式性は未確認。",
+          "status": "home_http_503_publisher_and_terms_not_verified_booklet_not_acquired"
         }
       ],
       "address": "八戸市内丸一丁目",
