@@ -1213,6 +1213,11 @@
           "verified_facilities": 80
         },
         "checked_at": "2026-11-08T15:49:59.131090+00:00",
+        "effective_entry_status_counts": {
+          "pending": 2,
+          "verified": 83
+        },
+        "effective_pending_entries": 2,
         "facilities_collected": 85,
         "fields_observed": {
           "address": 85,
@@ -1254,6 +1259,16 @@
             "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kensei/"
           }
         ],
+        "single_address_linebreak_source_review": {
+          "checked_at": "2026-11-13T02:13:07.631480+00:00",
+          "entry_ids": [
+            "6a04c435-d376-5b9c-8c54-3e65f229a482",
+            "ff337960-2296-5eb9-88d8-b26ddc61a248"
+          ],
+          "evidence_data": "data/reviews.json; data/reading_research.json",
+          "scope": "神社庁の既存全文読みがある八坂神社（深谷1379-2）・香取神社（友部1041-1）の2登録を、単一鎮座地欄の町域/番地改行と独立した全住所対応で個別審査。原住所の改行・字名・地番・原名・原読み・施設/登録ID・原文hashを変更せず出力可能とした。実際の複数所在地や注記付き住所を一律解除しない。",
+          "verified_entries": 2
+        },
         "source_rows_observed": 85,
         "status": "collected",
         "stored_coverage": "all five regional introduction lists and linked agency details; detailed address used only when published names exactly match",
@@ -1262,10 +1277,10 @@
           "categories": {
             "insufficient_evidence_in_inspected_sources": 0,
             "investigation_incomplete": 0,
-            "judgment_required": 4
+            "judgment_required": 2
           },
           "evidence_data": "data/reading_research.json",
-          "unfinished_entries": 4
+          "unfinished_entries": 2
         }
       },
       "conditions": {
@@ -45889,7 +45904,7 @@
       "unresolved": 3
     },
     "effective_dictionary_rows": 13714,
-    "effective_verified_facilities": 44371,
+    "effective_verified_facilities": 44373,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47

@@ -8619,6 +8619,201 @@
         }
       ]
     },
+    "6a04c435-d376-5b9c-8c54-3e65f229a482": {
+      "address_presentation_proof": {
+        "entry_id": "6a04c435-d376-5b9c-8c54-3e65f229a482",
+        "expected_source_hash": "aeb4e8c0ea733c73642eb86aaccba489e61a1831594cb28ee8ef31265064447f",
+        "facility_id": "0f491cf3-add7-502b-b78d-a20cbebb38a0",
+        "joined_address_raw": "茨城県かすみがうら市深谷1379-2",
+        "kind": "agency_two_line_locality_parcel"
+      },
+      "case_id": "ibaraki-single-address-linebreak-6a04c435-d376-5b9c-8c54-3e65f229a482",
+      "confirmation": "source_review",
+      "expected_source_hash": "aeb4e8c0ea733c73642eb86aaccba489e61a1831594cb28ee8ef31265064447f",
+      "facility_id": "0f491cf3-add7-502b-b78d-a20cbebb38a0",
+      "independent_review": {
+        "checked_at": "2026-11-13T02:11:33.978178+00:00",
+        "scope": "独立担当が原4ページの全文かな・実href・単一鎮座地欄と原hash、取得済み月次97627行・全国日次7群16998行から同名全住所の唯一の存続法人を再構成して確認。原改行住所・ID/hash・神社庁の元読みを保持した選択を承認。"
+      },
+      "original": {
+        "address": "茨城県かすみがうら市深谷\n1379-2",
+        "listing_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
+        "name_raw": "八坂神社",
+        "reading_raw": "やさかじんじゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_selected",
+          "reading": "やさかじんじゃ",
+          "reading_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
+          "surface": "八坂神社"
+        }
+      ],
+      "reason": "神社庁一覧の明示全文かなと実詳細の同一鎮座地欄を原名・実href・hashで個別照合し、国税庁の唯一の存続法人の全住所に対応することを確認。住所の改行・原字形・全地番を変更せず、既存神社庁欄の全文読みだけを選択する審査済み。",
+      "recorded_at": "2026-11-13T02:08:50.511459+00:00",
+      "references": [
+        {
+          "address_raw": "かすみがうら市",
+          "checked_at": "2026-11-13T02:08:50.511459+00:00",
+          "evidence_role": "agency_index",
+          "excerpt": "八坂神社 | やさかじんじゃ | かすみがうら市",
+          "fetched_at": "2026-11-13T01:57:38.636720+00:00",
+          "locator": "tr[55]",
+          "name_raw": "八坂神社",
+          "native_href_raw": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10147.html",
+          "page_hash": "cf13989bab9847e1bf4d8dbdab2679da582a63d7f23182f40b98c22e0c0366e6",
+          "reading_raw": "やさかじんじゃ",
+          "reading_scope": "full_name",
+          "source_kind": "agency",
+          "source_publisher": "茨城県神社庁",
+          "title": "茨城県神社庁 地域の神社紹介",
+          "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/"
+        },
+        {
+          "address_raw": "茨城県かすみがうら市深谷\n1379-2",
+          "checked_at": "2026-11-13T02:08:50.511459+00:00",
+          "evidence_role": "agency_address",
+          "excerpt": "八坂神社 / 〒300-0134　茨城県かすみがうら市深谷\n1379-2",
+          "fetched_at": "2026-11-13T01:57:40.744245+00:00",
+          "layout_observation": "鎮座地の単一欄に町域までと数字・ハイフンの全地番の2行を表示。別施設や注記の所在地を結合せず、原住所は改行を含め保持。",
+          "locator": "table tr 神社名 / 鎮座地; address after explicit postal-code prefix",
+          "name_raw": "八坂神社",
+          "page_hash": "652f4af6f509f3917ee735623ffd21c6c635cd6bf86ad8791efaab179f478a60",
+          "postal_code_raw": "〒300-0134",
+          "published_value_raw": "〒300-0134　茨城県かすみがうら市深谷\n1379-2",
+          "source_kind": "agency",
+          "source_publisher": "茨城県神社庁",
+          "title": "茨城県神社庁 八坂神社詳細",
+          "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10147.html"
+        },
+        {
+          "address_raw": "茨城県かすみがうら市深谷１３７９番地の２",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-13T02:08:50.511459+00:00",
+          "corporate_number": "7050005003235",
+          "csv_row": 74858,
+          "evidence_role": "registered_address_identity",
+          "excerpt": "八坂神社 / 茨城県かすみがうら市深谷１３７９番地の２",
+          "fetched_at": "2026-11-12T04:40:26.918094+00:00",
+          "file_id": "28366",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV 08_ibaraki_all_20261030.csv row 74858; corporateNumber=7050005003235",
+          "name_raw": "八坂神社",
+          "page_hash": "6c5156a9a5fc9a30eb637ce80ce40b088f6f72fc55159b84e13e3a2de2757eaa",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して名称・全住所を照合。登録フリガナは空欄で読みの根拠に使わない。",
+          "reading_raw": "",
+          "registry_state_proof": {
+            "active_matching_corporate_numbers": [
+              "7050005003235"
+            ],
+            "active_matching_full_address_count": 1,
+            "as_of": "20261111",
+            "daily_deltas": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "rows": 2346
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "rows": 2156
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "rows": 2183
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "rows": 2617
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "rows": 2362
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "rows": 2642
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "rows": 2692
+              }
+            ],
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:40:26.918094+00:00",
+                "file_id": "28366",
+                "page_hash": "6c5156a9a5fc9a30eb637ce80ce40b088f6f72fc55159b84e13e3a2de2757eaa",
+                "prefecture_code": "08",
+                "rows": 97627,
+                "snapshot": "20261030"
+              }
+            ],
+            "scope": "取得済み茨城全97627行と全国差分7群16998行から、読み空欄・全種別・法人格prefixを含めて同名全住所の存続候補を数える。現在最新の状態とは主張しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "230",
+            "cityName": "かすみがうら市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "7050005003235",
+            "correct": "0",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "八坂神社",
+            "nameImageId": "",
+            "postCode": "3000134",
+            "prefectureCode": "08",
+            "prefectureName": "茨城県",
+            "process": "01",
+            "sequenceNumber": "74858",
+            "streetNumber": "深谷１３７９番地の２",
+            "successorCorporateNumber": "",
+            "updateDate": "2015-10-30"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 茨城県全件データ",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "08_ibaraki_all_20261030.csv"
+        }
+      ],
+      "review_kind": "single_address_linebreak"
+    },
     "6a053d4b-30b6-5771-aac3-7e240be87f5a": {
       "annotation_review": {
         "annotation_raw": "羽津戊",
@@ -22451,6 +22646,201 @@
           "url": "https://kyoka.mie-jinjacho.or.jp/shrine/%e5%9c%8b%e6%b4%a5%e7%a5%9e%e7%a4%be%ef%bc%88%e5%a5%88%e5%9e%a3%ef%bc%89/"
         }
       ]
+    },
+    "ff337960-2296-5eb9-88d8-b26ddc61a248": {
+      "address_presentation_proof": {
+        "entry_id": "ff337960-2296-5eb9-88d8-b26ddc61a248",
+        "expected_source_hash": "3ddb89ae391d8193f371b3844694657d494c5ccdac7ad4831b8b5243c9ccc504",
+        "facility_id": "36adb7f7-e30d-591a-b765-67c412201598",
+        "joined_address_raw": "茨城県桜川市友部1041-1",
+        "kind": "agency_two_line_locality_parcel"
+      },
+      "case_id": "ibaraki-single-address-linebreak-ff337960-2296-5eb9-88d8-b26ddc61a248",
+      "confirmation": "source_review",
+      "expected_source_hash": "3ddb89ae391d8193f371b3844694657d494c5ccdac7ad4831b8b5243c9ccc504",
+      "facility_id": "36adb7f7-e30d-591a-b765-67c412201598",
+      "independent_review": {
+        "checked_at": "2026-11-13T02:11:33.978178+00:00",
+        "scope": "独立担当が原4ページの全文かな・実href・単一鎮座地欄と原hash、取得済み月次97627行・全国日次7群16998行から同名全住所の唯一の存続法人を再構成して確認。原改行住所・ID/hash・神社庁の元読みを保持した選択を承認。"
+      },
+      "original": {
+        "address": "茨城県桜川市友部\n1041-1",
+        "listing_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kensei/",
+        "name_raw": "香取神社",
+        "reading_raw": "かとりじんじゃ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_selected",
+          "reading": "かとりじんじゃ",
+          "reading_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kensei/",
+          "surface": "香取神社"
+        }
+      ],
+      "reason": "神社庁一覧の明示全文かなと実詳細の同一鎮座地欄を原名・実href・hashで個別照合し、国税庁の唯一の存続法人の全住所に対応することを確認。住所の改行・原字形・全地番を変更せず、既存神社庁欄の全文読みだけを選択する審査済み。",
+      "recorded_at": "2026-11-13T02:08:50.511459+00:00",
+      "references": [
+        {
+          "address_raw": "桜川市",
+          "checked_at": "2026-11-13T02:08:50.511459+00:00",
+          "evidence_role": "agency_index",
+          "excerpt": "香取神社 | かとりじんじゃ | 桜川市",
+          "fetched_at": "2026-11-13T01:57:42.876277+00:00",
+          "locator": "tr[49]",
+          "name_raw": "香取神社",
+          "native_href_raw": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kensei/jinja/03063.html",
+          "page_hash": "7186fac767963de4d3700d45b35d625e84b0487ae74a8203c05405fa50c4b539",
+          "reading_raw": "かとりじんじゃ",
+          "reading_scope": "full_name",
+          "source_kind": "agency",
+          "source_publisher": "茨城県神社庁",
+          "title": "茨城県神社庁 地域の神社紹介",
+          "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kensei/"
+        },
+        {
+          "address_raw": "茨城県桜川市友部\n1041-1",
+          "checked_at": "2026-11-13T02:08:50.511459+00:00",
+          "evidence_role": "agency_address",
+          "excerpt": "香取神社 / 〒309-1453　茨城県桜川市友部\n1041-1",
+          "fetched_at": "2026-11-13T01:57:44.982820+00:00",
+          "layout_observation": "鎮座地の単一欄に町域までと数字・ハイフンの全地番の2行を表示。別施設や注記の所在地を結合せず、原住所は改行を含め保持。",
+          "locator": "table tr 神社名 / 鎮座地; address after explicit postal-code prefix",
+          "name_raw": "香取神社",
+          "page_hash": "a604a7aebab9e07a0b75b4183a8cdfd9adef5a1196cb69b277e0d2f9a4b6d95b",
+          "postal_code_raw": "〒309-1453",
+          "published_value_raw": "〒309-1453　茨城県桜川市友部\n1041-1",
+          "source_kind": "agency",
+          "source_publisher": "茨城県神社庁",
+          "title": "茨城県神社庁 香取神社詳細",
+          "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kensei/jinja/03063.html"
+        },
+        {
+          "address_raw": "茨城県桜川市友部１０４１番地１",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-13T02:08:50.511459+00:00",
+          "corporate_number": "7050005010223",
+          "csv_row": 75475,
+          "evidence_role": "registered_address_identity",
+          "excerpt": "香取神社 / 茨城県桜川市友部１０４１番地１",
+          "fetched_at": "2026-11-12T04:40:26.918094+00:00",
+          "file_id": "28366",
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV 08_ibaraki_all_20261030.csv row 75475; corporateNumber=7050005010223",
+          "name_raw": "香取神社",
+          "page_hash": "6c5156a9a5fc9a30eb637ce80ce40b088f6f72fc55159b84e13e3a2de2757eaa",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して名称・全住所を照合。登録フリガナは空欄で読みの根拠に使わない。",
+          "reading_raw": "",
+          "registry_state_proof": {
+            "active_matching_corporate_numbers": [
+              "7050005010223"
+            ],
+            "active_matching_full_address_count": 1,
+            "as_of": "20261111",
+            "daily_deltas": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "rows": 2346
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "rows": 2156
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "rows": 2183
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "rows": 2617
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "rows": 2362
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "rows": 2642
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "rows": 2692
+              }
+            ],
+            "monthly_base": [
+              {
+                "fetched_at": "2026-11-12T04:40:26.918094+00:00",
+                "file_id": "28366",
+                "page_hash": "6c5156a9a5fc9a30eb637ce80ce40b088f6f72fc55159b84e13e3a2de2757eaa",
+                "prefecture_code": "08",
+                "rows": 97627,
+                "snapshot": "20261030"
+              }
+            ],
+            "scope": "取得済み茨城全97627行と全国差分7群16998行から、読み空欄・全種別・法人格prefixを含めて同名全住所の存続候補を数える。現在最新の状態とは主張しない。"
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "addressOutside": "",
+            "addressOutsideImageId": "",
+            "assignmentDate": "2015-10-05",
+            "changeCause": "",
+            "changeDate": "2015-10-05",
+            "cityCode": "231",
+            "cityName": "桜川市",
+            "closeCause": "",
+            "closeDate": "",
+            "corporateNumber": "7050005010223",
+            "correct": "0",
+            "enAddressOutside": "",
+            "enCityName": "",
+            "enName": "",
+            "enPrefectureName": "",
+            "furigana": "",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "香取神社",
+            "nameImageId": "",
+            "postCode": "3091453",
+            "prefectureCode": "08",
+            "prefectureName": "茨城県",
+            "process": "01",
+            "sequenceNumber": "75475",
+            "streetNumber": "友部１０４１番地１",
+            "successorCorporateNumber": "",
+            "updateDate": "2015-10-30"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 茨城県全件データ",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "zip_member": "08_ibaraki_all_20261030.csv"
+        }
+      ],
+      "review_kind": "single_address_linebreak"
     },
     "ff74d782-e2fc-5a81-a121-ef49b7f23755": {
       "annotation_review": {
