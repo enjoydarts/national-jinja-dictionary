@@ -26072,23 +26072,35 @@
         "integration_main_commit": "612efff33372e7665adf17f5a57a91c90679376b",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬8件補完と4件の保留根拠を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T13:11:34.968797+00:00",
+        "integrated_entry_ids": [
+          "055fe278-89b1-5e8b-a2af-f720e373171e",
+          "2b497e9c-dc09-5273-98cf-f562dbb97bd0",
+          "70e9e551-ff91-5910-93da-007136486157",
+          "72a8f2aa-2a75-57f4-a9b6-691a73ab0d12",
+          "8403fa17-13de-5e29-9942-5558dff57783",
+          "b54ca387-3c5d-5b61-b826-4ffea6d86fea",
+          "dc5a9ccf-13ee-53e4-a616-456c5a2c9251",
+          "f93d9351-a8e3-5ea1-9216-9b59e5f0dccd"
+        ],
+        "integration_main_commit": "762461539ea06e4b85d76c25a0acea90b65e2648",
+        "new_verified_entries": 0,
+        "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬8件補完と4件の保留根拠を統合。採用を重複計上しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T13:11:34.968797+00:00",
-      "integrated_entry_ids": [
-        "055fe278-89b1-5e8b-a2af-f720e373171e",
-        "2b497e9c-dc09-5273-98cf-f562dbb97bd0",
-        "70e9e551-ff91-5910-93da-007136486157",
-        "72a8f2aa-2a75-57f4-a9b6-691a73ab0d12",
-        "8403fa17-13de-5e29-9942-5558dff57783",
-        "b54ca387-3c5d-5b61-b826-4ffea6d86fea",
-        "dc5a9ccf-13ee-53e4-a616-456c5a2c9251",
-        "f93d9351-a8e3-5ea1-9216-9b59e5f0dccd"
+      "checked_at": "2026-11-13T13:19:41.167582+00:00",
+      "entry_ids": [
+        "07159695-ea56-572c-9167-a731a4b74b99",
+        "1f11a3d7-1238-580d-955b-bb12ee7b9928",
+        "7a40e0b5-eb42-5592-a18b-0fb57ba4e2d9",
+        "98894a79-bb3e-5cc3-9b96-e9656f4a9297"
       ],
-      "integration_main_commit": "762461539ea06e4b85d76c25a0acea90b65e2648",
       "new_verified_entries": 0,
-      "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬8件補完と4件の保留根拠を統合。採用を重複計上しない。"
+      "retained_pending_entries": 10333,
+      "scope": "長崎の原記録4施設サイトの9本文を限定確認。正称全文かな不足、御館山の冠称/鎮座地表示、諌早/諫早の字形、阿蘇神社の861/862の表示差を保持して4保留。"
     },
     "remaining_unfinished_entries": 10333,
     "resolved_entry_ids": [
@@ -26631,7 +26643,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T13:11:34.968797+00:00",
+  "computed_at": "2026-11-13T13:19:41.167582+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -396566,6 +396578,215 @@
       "source_kind": "tourism_organization_booklet",
       "source_limits": "2017年3月の団体二次資料で、全施設現地確認や現況全件保証ではない。個人サイト配布と協会発行を区別。取得全本文/画像/連絡先をコミットせず、原正本全hash/ID/旧判断/調査履歴を保存。",
       "source_publisher": "一般社団法人 対馬観光物産協会"
+    },
+    {
+      "acquired_actual_navigation_pages": 5,
+      "acquired_home_pages": 4,
+      "acquisition": "原記録の4サイトURLを通常取得し、実ナビの5本文だけをrobots・同一ホスト2秒以上・timeout20秒・再試行0で確認。日本語URLの2件は手元の送信前処理エラーを再現確認し同パスの標準符号化で取得。未記録パス・ブログ・SNS・画像を取得しない。",
+      "attempt_id": "nagasaki_four_recorded_sites_nine_pages_literal_name_reading_address_holds_20261113",
+      "authority_limits": "原神社庁の記録リンクと本文の主名称・祭祀案内・表示所在地で、各サイトの実表示名の発信元を確認する。原名との字形・冠称差や表示番地差の施設同一性は自動承認せず、鎮座地と社務所を混同しない。",
+      "checked_at": "2026-11-13T13:19:41.167582+00:00",
+      "entry_ids": [
+        "07159695-ea56-572c-9167-a731a4b74b99",
+        "1f11a3d7-1238-580d-955b-bb12ee7b9928",
+        "7a40e0b5-eb42-5592-a18b-0fb57ba4e2d9",
+        "98894a79-bb3e-5cc3-9b96-e9656f4a9297"
+      ],
+      "local_transport_diagnostic": {
+        "error": "UnicodeEncodeError: ascii request-line encoding of literal Japanese path",
+        "initial_failures": 2,
+        "network_access_denial_observed": false,
+        "product_code_changed": false,
+        "resolution": "元hrefの日本語pathを標準UTF-8パーセント符号化。unquoteによるpath完全往復一致と同一hostを確認し、ソケット送信前の生path失敗/符号化path成功を一回実験した後、両方の実ページを通常取得。"
+      },
+      "new_verified_entries": 0,
+      "privacy_and_storage": "名称・表示住所・出典と採字判断の限定事実だけを保存。人物名・連絡先・SNS本文・由緒全文・写真・取得全本文・キャッシュは収録しない。",
+      "recorded_site_targets": 4,
+      "retained_pending_targets": 4,
+      "rights_scope": "確認したトップと実ナビ本文の範囲で無断転載・転用禁止は確認されず。Copyright表示を包括再配布許諾とせず、個人の連絡先や長い投稿は採用しない。",
+      "scope": "小濱神社・稲荷神社・諌早神社・阿蘇神社の4原登録だけ。9本文の限定範囲に原正称/実表示名の連続全文かなを確認できず保留4。停止済み白山比賣神社・年神社や既点検の淀姫等を再取得していない。長崎全保留・全公式リンク・全国全件の精査完了ではない。",
+      "selected_observations": [
+        {
+          "adopted": false,
+          "entry_id": "07159695-ea56-572c-9167-a731a4b74b99",
+          "expected_source_hash": "5e0f24ebebe60f4f78ae2994014d67c11e36d64ef1382f55d71e7e04e4397e52",
+          "linked_page_references": [],
+          "observation": "本文の表示名と所在地は原登録へ対応するが、今回のトップ本文・名称属性の範囲で正称の連続全文かなを確認できない。ローマ字サイト名や温泉名から読みを作らない。",
+          "original_address": "雲仙市小浜町北本町862番地",
+          "original_name": "小濱神社",
+          "prefecture_code": "42",
+          "reference": {
+            "address_raw": "長崎県雲仙市小浜町北本町862番地",
+            "address_scope": "printed_site_address_relation_to_original_not_automatically_resolved",
+            "authority_observation": "原神社庁に記録された施設サイトのリンク先。本文の主名称・祭祀案内・所在地表示から当該表示名の発信元として確認するが、原社名や全地番の同一性を自動承認しない。",
+            "checked_at": "2026-11-13T13:17:57.615918+00:00",
+            "excerpt": "サイト表示名=小濱神社\n表示住所=長崎県雲仙市小浜町北本町862番地",
+            "fetched_at": "2026-11-13T13:12:12.438284+00:00",
+            "locator": "トップの固有表示名・所在地表示。鎮座地と社務所の別表示、字形や冠称は原値で区別する。",
+            "name_raw": "小濱神社",
+            "page_hash": "e2bf477b46d5762c6711f2c891e7d82c6de7f674fcfb495701fb5c158b09de03",
+            "reading_raw": "",
+            "reading_scope": "no_literal_formal_full_kana_observed_in_inspected_scope",
+            "requested_url": "https://www.obamajinja-nagasaki.com/",
+            "rights_note": "確認したトップと実ナビ本文の範囲に無断転載・転用禁止は見当たらない。Copyright表示を包括再配布許諾とは扱わず、名称・表示住所・出典と判断の限定事実だけを保存。人物名・連絡先・SNS投稿・由緒全文・画像・キャッシュは収録しない。",
+            "source_kind": "official_linked_shrine_site",
+            "source_publisher": "小濱神社",
+            "url": "https://www.obamajinja-nagasaki.com/"
+          },
+          "status": "formal_full_name_kana_not_observed"
+        },
+        {
+          "adopted": false,
+          "entry_id": "1f11a3d7-1238-580d-955b-bb12ee7b9928",
+          "expected_source_hash": "70ce2f604f818f098923d29ef5dd363013162140df6bfaefcd55b3ae43dafbf5",
+          "linked_page_references": [
+            {
+              "fetched_at": "2026-11-13T13:14:41.512295+00:00",
+              "href_raw": "https://mitachiyama.jp/yuisyo/",
+              "label_raw": "ご由緒",
+              "page_hash": "69cae1067d8ee97699d7e994f711a21ea51ad858dbd6e45817a35ff4c3c5b37c",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:15.792548+00:00",
+                "page_hash": "dd2c1dd7fd51cd626333126ba55d3d8cd68a72aa677ce6bab1588356edf76aaf",
+                "url": "https://mitachiyama.jp/"
+              },
+              "url": "https://mitachiyama.jp/yuisyo/"
+            },
+            {
+              "fetched_at": "2026-11-13T13:14:43.684287+00:00",
+              "href_raw": "https://mitachiyama.jp/access/",
+              "label_raw": "交通アクセス",
+              "page_hash": "f26f749d8983c36bff2a78bec7a4f3b8a50501d09f96e20f9dc1edd7fd84ec88",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:15.792548+00:00",
+                "page_hash": "dd2c1dd7fd51cd626333126ba55d3d8cd68a72aa677ce6bab1588356edf76aaf",
+                "url": "https://mitachiyama.jp/"
+              },
+              "url": "https://mitachiyama.jp/access/"
+            }
+          ],
+          "observation": "原登録は稲荷神社で、サイトの主名称は御館山稲荷神社。鎮座地と社務所を別住所で明示し、鎮座地は61-1・61-3。冠称の切落し・社務所住所の流用・地番範囲の削除をせず、正称の全文かな不足を保持。",
+          "original_address": "諫早市宇都町61番地3",
+          "original_name": "稲荷神社",
+          "prefecture_code": "42",
+          "reference": {
+            "address_raw": "長崎県諫早市宇都町61-1・61-3",
+            "address_scope": "printed_site_address_relation_to_original_not_automatically_resolved",
+            "authority_observation": "原神社庁に記録された施設サイトのリンク先。本文の主名称・祭祀案内・所在地表示から当該表示名の発信元として確認するが、原社名や全地番の同一性を自動承認しない。",
+            "checked_at": "2026-11-13T13:17:57.615918+00:00",
+            "excerpt": "サイト表示名=御館山稲荷神社\n表示住所=長崎県諫早市宇都町61-1・61-3",
+            "fetched_at": "2026-11-13T13:12:15.792548+00:00",
+            "locator": "トップの固有表示名・所在地表示。鎮座地と社務所の別表示、字形や冠称は原値で区別する。",
+            "name_raw": "御館山稲荷神社",
+            "page_hash": "dd2c1dd7fd51cd626333126ba55d3d8cd68a72aa677ce6bab1588356edf76aaf",
+            "reading_raw": "",
+            "reading_scope": "no_literal_formal_full_kana_observed_in_inspected_scope",
+            "requested_url": "http://mitachiyama.jp/",
+            "rights_note": "確認したトップと実ナビ本文の範囲に無断転載・転用禁止は見当たらない。Copyright表示を包括再配布許諾とは扱わず、名称・表示住所・出典と判断の限定事実だけを保存。人物名・連絡先・SNS投稿・由緒全文・画像・キャッシュは収録しない。",
+            "source_kind": "official_linked_shrine_site",
+            "source_publisher": "御館山稲荷神社",
+            "url": "https://mitachiyama.jp/"
+          },
+          "status": "prefixed_site_name_and_multi_parcel_location_no_registered_full_kana"
+        },
+        {
+          "adopted": false,
+          "entry_id": "7a40e0b5-eb42-5592-a18b-0fb57ba4e2d9",
+          "expected_source_hash": "b9de7adb592f4b2e9339fff43b2438d37adde1e24ecd833ca060ce26678ecd17",
+          "linked_page_references": [
+            {
+              "fetched_at": "2026-11-13T13:16:16.695500+00:00",
+              "href_raw": "https://isahaya-jinja.jp/ご祈祷（お祓い）/歴史・ご祭神/",
+              "label_raw": "歴史・ご祭神",
+              "page_hash": "8aedebef39d22ce500565f6acbccf1fe0727694d9b9e80ae35af06decc22ab37",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:18.302118+00:00",
+                "page_hash": "5c017dc32d23579228334a3155453da6d8ca038c97402df5b6b122d667ebb357",
+                "url": "https://isahaya-jinja.jp/"
+              },
+              "url": "https://isahaya-jinja.jp/%E3%81%94%E7%A5%88%E7%A5%B7%EF%BC%88%E3%81%8A%E7%A5%93%E3%81%84%EF%BC%89/%E6%AD%B4%E5%8F%B2%E3%83%BB%E3%81%94%E7%A5%AD%E7%A5%9E/"
+            },
+            {
+              "fetched_at": "2026-11-13T13:16:18.896765+00:00",
+              "href_raw": "https://isahaya-jinja.jp/交通アクセス/アクセス・お問合せ/",
+              "label_raw": "アクセスマップ",
+              "page_hash": "4b580b7190e7399998c20be6cafc1ea2b29af10461716bb7d4de078e8b05bbde",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:18.302118+00:00",
+                "page_hash": "5c017dc32d23579228334a3155453da6d8ca038c97402df5b6b122d667ebb357",
+                "url": "https://isahaya-jinja.jp/"
+              },
+              "url": "https://isahaya-jinja.jp/%E4%BA%A4%E9%80%9A%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%83%BB%E3%81%8A%E5%95%8F%E5%90%88%E3%81%9B/"
+            }
+          ],
+          "observation": "原表記は諌早、サイトの主名称は諫早。両字形を保持し、今回のトップ・歴史祭神・アクセスの範囲では原正称の全文かなを確認できない。一般的な読みによる補完はしない。",
+          "original_address": "諫早市宇都町1番12号",
+          "original_name": "諌早神社",
+          "prefecture_code": "42",
+          "reference": {
+            "address_raw": "長崎県諫早市宇都町1-12",
+            "address_scope": "printed_site_address_relation_to_original_not_automatically_resolved",
+            "authority_observation": "原神社庁に記録された施設サイトのリンク先。本文の主名称・祭祀案内・所在地表示から当該表示名の発信元として確認するが、原社名や全地番の同一性を自動承認しない。",
+            "checked_at": "2026-11-13T13:17:57.615918+00:00",
+            "excerpt": "サイト表示名=諫早神社\n表示住所=長崎県諫早市宇都町1-12",
+            "fetched_at": "2026-11-13T13:12:18.302118+00:00",
+            "locator": "トップの固有表示名・所在地表示。鎮座地と社務所の別表示、字形や冠称は原値で区別する。",
+            "name_raw": "諫早神社",
+            "page_hash": "5c017dc32d23579228334a3155453da6d8ca038c97402df5b6b122d667ebb357",
+            "reading_raw": "",
+            "reading_scope": "no_literal_formal_full_kana_observed_in_inspected_scope",
+            "requested_url": "https://isahaya-jinja.jp/",
+            "rights_note": "確認したトップと実ナビ本文の範囲に無断転載・転用禁止は見当たらない。Copyright表示を包括再配布許諾とは扱わず、名称・表示住所・出典と判断の限定事実だけを保存。人物名・連絡先・SNS投稿・由緒全文・画像・キャッシュは収録しない。",
+            "source_kind": "official_linked_shrine_site",
+            "source_publisher": "諫早神社",
+            "url": "https://isahaya-jinja.jp/"
+          },
+          "status": "literal_name_variant_and_full_kana_not_observed"
+        },
+        {
+          "adopted": false,
+          "entry_id": "98894a79-bb3e-5cc3-9b96-e9656f4a9297",
+          "expected_source_hash": "b691f7fc1c86c040b3b846cebb162988302f378250a1feb4684d84d827e84f09",
+          "linked_page_references": [
+            {
+              "fetched_at": "2026-11-13T13:14:45.777672+00:00",
+              "href_raw": "./page2.html",
+              "label_raw": "→ 文化財",
+              "page_hash": "97769d67cca9ac4de68c555c9364e0a99606e2474fe6e2a72710b61ee2ddb109",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:20.481806+00:00",
+                "page_hash": "714031427b51824de9d56c9c80a997971546925c212ab35e1e386a9ed2778eb7",
+                "url": "http://asojinja.jp/"
+              },
+              "url": "http://asojinja.jp/page2.html"
+            }
+          ],
+          "observation": "原一覧は化屋861、サイトの表示住所は化屋862。今回のトップ・同一本文の由緒/地図・実リンク文化財の範囲では全文かなを確認できず、番地差や鎮座地/社務所の関係を未確定のまま保持。",
+          "original_address": "諫早市多良見町化屋861番地",
+          "original_name": "阿蘇神社",
+          "prefecture_code": "42",
+          "reference": {
+            "address_raw": "長崎県諫早市多良見町化屋862",
+            "address_scope": "printed_site_address_relation_to_original_not_automatically_resolved",
+            "authority_observation": "原神社庁に記録された施設サイトのリンク先。本文の主名称・祭祀案内・所在地表示から当該表示名の発信元として確認するが、原社名や全地番の同一性を自動承認しない。",
+            "checked_at": "2026-11-13T13:17:57.615918+00:00",
+            "excerpt": "サイト表示名=阿蘇神社\n表示住所=長崎県諫早市多良見町化屋862",
+            "fetched_at": "2026-11-13T13:12:20.481806+00:00",
+            "locator": "トップの固有表示名・所在地表示。鎮座地と社務所の別表示、字形や冠称は原値で区別する。",
+            "name_raw": "阿蘇神社",
+            "page_hash": "714031427b51824de9d56c9c80a997971546925c212ab35e1e386a9ed2778eb7",
+            "reading_raw": "",
+            "reading_scope": "no_literal_formal_full_kana_observed_in_inspected_scope",
+            "requested_url": "http://asojinja.jp/",
+            "rights_note": "確認したトップと実ナビ本文の範囲に無断転載・転用禁止は見当たらない。Copyright表示を包括再配布許諾とは扱わず、名称・表示住所・出典と判断の限定事実だけを保存。人物名・連絡先・SNS投稿・由緒全文・画像・キャッシュは収録しない。",
+            "source_kind": "official_linked_shrine_site",
+            "source_publisher": "阿蘇神社",
+            "url": "http://asojinja.jp/"
+          },
+          "status": "site_displayed_address_differs_full_kana_not_observed"
+        }
+      ],
+      "status": "four_official_linked_sites_nine_pages_inspected_no_registered_full_reading_adopted"
     }
   ],
   "per_prefecture": {
@@ -1200674,6 +1200895,38 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:19:41.167582+00:00",
+          "entry_id": "07159695-ea56-572c-9167-a731a4b74b99",
+          "evidence_attempt": "nagasaki_four_recorded_sites_nine_pages_literal_name_reading_address_holds_20261113",
+          "expected_source_hash": "5e0f24ebebe60f4f78ae2994014d67c11e36d64ef1382f55d71e7e04e4397e52",
+          "linked_page_references": [],
+          "observation": "本文の表示名と所在地は原登録へ対応するが、今回のトップ本文・名称属性の範囲で正称の連続全文かなを確認できない。ローマ字サイト名や温泉名から読みを作らない。",
+          "original_address": "雲仙市小浜町北本町862番地",
+          "original_name": "小濱神社",
+          "prefecture_code": "42",
+          "reference": {
+            "address_raw": "長崎県雲仙市小浜町北本町862番地",
+            "address_scope": "printed_site_address_relation_to_original_not_automatically_resolved",
+            "authority_observation": "原神社庁に記録された施設サイトのリンク先。本文の主名称・祭祀案内・所在地表示から当該表示名の発信元として確認するが、原社名や全地番の同一性を自動承認しない。",
+            "checked_at": "2026-11-13T13:17:57.615918+00:00",
+            "excerpt": "サイト表示名=小濱神社\n表示住所=長崎県雲仙市小浜町北本町862番地",
+            "fetched_at": "2026-11-13T13:12:12.438284+00:00",
+            "locator": "トップの固有表示名・所在地表示。鎮座地と社務所の別表示、字形や冠称は原値で区別する。",
+            "name_raw": "小濱神社",
+            "page_hash": "e2bf477b46d5762c6711f2c891e7d82c6de7f674fcfb495701fb5c158b09de03",
+            "reading_raw": "",
+            "reading_scope": "no_literal_formal_full_kana_observed_in_inspected_scope",
+            "requested_url": "https://www.obamajinja-nagasaki.com/",
+            "rights_note": "確認したトップと実ナビ本文の範囲に無断転載・転用禁止は見当たらない。Copyright表示を包括再配布許諾とは扱わず、名称・表示住所・出典と判断の限定事実だけを保存。人物名・連絡先・SNS投稿・由緒全文・画像・キャッシュは収録しない。",
+            "source_kind": "official_linked_shrine_site",
+            "source_publisher": "小濱神社",
+            "url": "https://www.obamajinja-nagasaki.com/"
+          },
+          "scope": "原神社庁に記録された4施設サイトのトップと実ナビの由緒・歴史祭神・アクセス・文化財計5本文だけ。正称・実表示名の連続全文かなと所在地表示を限定照合し、全ページ・ブログ・SNS・画像の調査完了とはしない。",
+          "status": "formal_full_name_kana_not_observed"
         }
       ],
       "address": "雲仙市小浜町北本町862番地",
@@ -1208387,6 +1208640,63 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:19:41.167582+00:00",
+          "entry_id": "1f11a3d7-1238-580d-955b-bb12ee7b9928",
+          "evidence_attempt": "nagasaki_four_recorded_sites_nine_pages_literal_name_reading_address_holds_20261113",
+          "expected_source_hash": "70ce2f604f818f098923d29ef5dd363013162140df6bfaefcd55b3ae43dafbf5",
+          "linked_page_references": [
+            {
+              "fetched_at": "2026-11-13T13:14:41.512295+00:00",
+              "href_raw": "https://mitachiyama.jp/yuisyo/",
+              "label_raw": "ご由緒",
+              "page_hash": "69cae1067d8ee97699d7e994f711a21ea51ad858dbd6e45817a35ff4c3c5b37c",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:15.792548+00:00",
+                "page_hash": "dd2c1dd7fd51cd626333126ba55d3d8cd68a72aa677ce6bab1588356edf76aaf",
+                "url": "https://mitachiyama.jp/"
+              },
+              "url": "https://mitachiyama.jp/yuisyo/"
+            },
+            {
+              "fetched_at": "2026-11-13T13:14:43.684287+00:00",
+              "href_raw": "https://mitachiyama.jp/access/",
+              "label_raw": "交通アクセス",
+              "page_hash": "f26f749d8983c36bff2a78bec7a4f3b8a50501d09f96e20f9dc1edd7fd84ec88",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:15.792548+00:00",
+                "page_hash": "dd2c1dd7fd51cd626333126ba55d3d8cd68a72aa677ce6bab1588356edf76aaf",
+                "url": "https://mitachiyama.jp/"
+              },
+              "url": "https://mitachiyama.jp/access/"
+            }
+          ],
+          "observation": "原登録は稲荷神社で、サイトの主名称は御館山稲荷神社。鎮座地と社務所を別住所で明示し、鎮座地は61-1・61-3。冠称の切落し・社務所住所の流用・地番範囲の削除をせず、正称の全文かな不足を保持。",
+          "original_address": "諫早市宇都町61番地3",
+          "original_name": "稲荷神社",
+          "prefecture_code": "42",
+          "reference": {
+            "address_raw": "長崎県諫早市宇都町61-1・61-3",
+            "address_scope": "printed_site_address_relation_to_original_not_automatically_resolved",
+            "authority_observation": "原神社庁に記録された施設サイトのリンク先。本文の主名称・祭祀案内・所在地表示から当該表示名の発信元として確認するが、原社名や全地番の同一性を自動承認しない。",
+            "checked_at": "2026-11-13T13:17:57.615918+00:00",
+            "excerpt": "サイト表示名=御館山稲荷神社\n表示住所=長崎県諫早市宇都町61-1・61-3",
+            "fetched_at": "2026-11-13T13:12:15.792548+00:00",
+            "locator": "トップの固有表示名・所在地表示。鎮座地と社務所の別表示、字形や冠称は原値で区別する。",
+            "name_raw": "御館山稲荷神社",
+            "page_hash": "dd2c1dd7fd51cd626333126ba55d3d8cd68a72aa677ce6bab1588356edf76aaf",
+            "reading_raw": "",
+            "reading_scope": "no_literal_formal_full_kana_observed_in_inspected_scope",
+            "requested_url": "http://mitachiyama.jp/",
+            "rights_note": "確認したトップと実ナビ本文の範囲に無断転載・転用禁止は見当たらない。Copyright表示を包括再配布許諾とは扱わず、名称・表示住所・出典と判断の限定事実だけを保存。人物名・連絡先・SNS投稿・由緒全文・画像・キャッシュは収録しない。",
+            "source_kind": "official_linked_shrine_site",
+            "source_publisher": "御館山稲荷神社",
+            "url": "https://mitachiyama.jp/"
+          },
+          "scope": "原神社庁に記録された4施設サイトのトップと実ナビの由緒・歴史祭神・アクセス・文化財計5本文だけ。正称・実表示名の連続全文かなと所在地表示を限定照合し、全ページ・ブログ・SNS・画像の調査完了とはしない。",
+          "status": "prefixed_site_name_and_multi_parcel_location_no_registered_full_kana"
         }
       ],
       "address": "諫早市宇都町61番地3",
@@ -1246799,6 +1247109,63 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:19:41.167582+00:00",
+          "entry_id": "7a40e0b5-eb42-5592-a18b-0fb57ba4e2d9",
+          "evidence_attempt": "nagasaki_four_recorded_sites_nine_pages_literal_name_reading_address_holds_20261113",
+          "expected_source_hash": "b9de7adb592f4b2e9339fff43b2438d37adde1e24ecd833ca060ce26678ecd17",
+          "linked_page_references": [
+            {
+              "fetched_at": "2026-11-13T13:16:16.695500+00:00",
+              "href_raw": "https://isahaya-jinja.jp/ご祈祷（お祓い）/歴史・ご祭神/",
+              "label_raw": "歴史・ご祭神",
+              "page_hash": "8aedebef39d22ce500565f6acbccf1fe0727694d9b9e80ae35af06decc22ab37",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:18.302118+00:00",
+                "page_hash": "5c017dc32d23579228334a3155453da6d8ca038c97402df5b6b122d667ebb357",
+                "url": "https://isahaya-jinja.jp/"
+              },
+              "url": "https://isahaya-jinja.jp/%E3%81%94%E7%A5%88%E7%A5%B7%EF%BC%88%E3%81%8A%E7%A5%93%E3%81%84%EF%BC%89/%E6%AD%B4%E5%8F%B2%E3%83%BB%E3%81%94%E7%A5%AD%E7%A5%9E/"
+            },
+            {
+              "fetched_at": "2026-11-13T13:16:18.896765+00:00",
+              "href_raw": "https://isahaya-jinja.jp/交通アクセス/アクセス・お問合せ/",
+              "label_raw": "アクセスマップ",
+              "page_hash": "4b580b7190e7399998c20be6cafc1ea2b29af10461716bb7d4de078e8b05bbde",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:18.302118+00:00",
+                "page_hash": "5c017dc32d23579228334a3155453da6d8ca038c97402df5b6b122d667ebb357",
+                "url": "https://isahaya-jinja.jp/"
+              },
+              "url": "https://isahaya-jinja.jp/%E4%BA%A4%E9%80%9A%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%83%BB%E3%81%8A%E5%95%8F%E5%90%88%E3%81%9B/"
+            }
+          ],
+          "observation": "原表記は諌早、サイトの主名称は諫早。両字形を保持し、今回のトップ・歴史祭神・アクセスの範囲では原正称の全文かなを確認できない。一般的な読みによる補完はしない。",
+          "original_address": "諫早市宇都町1番12号",
+          "original_name": "諌早神社",
+          "prefecture_code": "42",
+          "reference": {
+            "address_raw": "長崎県諫早市宇都町1-12",
+            "address_scope": "printed_site_address_relation_to_original_not_automatically_resolved",
+            "authority_observation": "原神社庁に記録された施設サイトのリンク先。本文の主名称・祭祀案内・所在地表示から当該表示名の発信元として確認するが、原社名や全地番の同一性を自動承認しない。",
+            "checked_at": "2026-11-13T13:17:57.615918+00:00",
+            "excerpt": "サイト表示名=諫早神社\n表示住所=長崎県諫早市宇都町1-12",
+            "fetched_at": "2026-11-13T13:12:18.302118+00:00",
+            "locator": "トップの固有表示名・所在地表示。鎮座地と社務所の別表示、字形や冠称は原値で区別する。",
+            "name_raw": "諫早神社",
+            "page_hash": "5c017dc32d23579228334a3155453da6d8ca038c97402df5b6b122d667ebb357",
+            "reading_raw": "",
+            "reading_scope": "no_literal_formal_full_kana_observed_in_inspected_scope",
+            "requested_url": "https://isahaya-jinja.jp/",
+            "rights_note": "確認したトップと実ナビ本文の範囲に無断転載・転用禁止は見当たらない。Copyright表示を包括再配布許諾とは扱わず、名称・表示住所・出典と判断の限定事実だけを保存。人物名・連絡先・SNS投稿・由緒全文・画像・キャッシュは収録しない。",
+            "source_kind": "official_linked_shrine_site",
+            "source_publisher": "諫早神社",
+            "url": "https://isahaya-jinja.jp/"
+          },
+          "scope": "原神社庁に記録された4施設サイトのトップと実ナビの由緒・歴史祭神・アクセス・文化財計5本文だけ。正称・実表示名の連続全文かなと所在地表示を限定照合し、全ページ・ブログ・SNS・画像の調査完了とはしない。",
+          "status": "literal_name_variant_and_full_kana_not_observed"
         }
       ],
       "address": "諫早市宇都町1番12号",
@@ -1257177,6 +1257544,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:19:41.167582+00:00",
+          "entry_id": "98894a79-bb3e-5cc3-9b96-e9656f4a9297",
+          "evidence_attempt": "nagasaki_four_recorded_sites_nine_pages_literal_name_reading_address_holds_20261113",
+          "expected_source_hash": "b691f7fc1c86c040b3b846cebb162988302f378250a1feb4684d84d827e84f09",
+          "linked_page_references": [
+            {
+              "fetched_at": "2026-11-13T13:14:45.777672+00:00",
+              "href_raw": "./page2.html",
+              "label_raw": "→ 文化財",
+              "page_hash": "97769d67cca9ac4de68c555c9364e0a99606e2474fe6e2a72710b61ee2ddb109",
+              "parent_reference": {
+                "fetched_at": "2026-11-13T13:12:20.481806+00:00",
+                "page_hash": "714031427b51824de9d56c9c80a997971546925c212ab35e1e386a9ed2778eb7",
+                "url": "http://asojinja.jp/"
+              },
+              "url": "http://asojinja.jp/page2.html"
+            }
+          ],
+          "observation": "原一覧は化屋861、サイトの表示住所は化屋862。今回のトップ・同一本文の由緒/地図・実リンク文化財の範囲では全文かなを確認できず、番地差や鎮座地/社務所の関係を未確定のまま保持。",
+          "original_address": "諫早市多良見町化屋861番地",
+          "original_name": "阿蘇神社",
+          "prefecture_code": "42",
+          "reference": {
+            "address_raw": "長崎県諫早市多良見町化屋862",
+            "address_scope": "printed_site_address_relation_to_original_not_automatically_resolved",
+            "authority_observation": "原神社庁に記録された施設サイトのリンク先。本文の主名称・祭祀案内・所在地表示から当該表示名の発信元として確認するが、原社名や全地番の同一性を自動承認しない。",
+            "checked_at": "2026-11-13T13:17:57.615918+00:00",
+            "excerpt": "サイト表示名=阿蘇神社\n表示住所=長崎県諫早市多良見町化屋862",
+            "fetched_at": "2026-11-13T13:12:20.481806+00:00",
+            "locator": "トップの固有表示名・所在地表示。鎮座地と社務所の別表示、字形や冠称は原値で区別する。",
+            "name_raw": "阿蘇神社",
+            "page_hash": "714031427b51824de9d56c9c80a997971546925c212ab35e1e386a9ed2778eb7",
+            "reading_raw": "",
+            "reading_scope": "no_literal_formal_full_kana_observed_in_inspected_scope",
+            "requested_url": "http://asojinja.jp/",
+            "rights_note": "確認したトップと実ナビ本文の範囲に無断転載・転用禁止は見当たらない。Copyright表示を包括再配布許諾とは扱わず、名称・表示住所・出典と判断の限定事実だけを保存。人物名・連絡先・SNS投稿・由緒全文・画像・キャッシュは収録しない。",
+            "source_kind": "official_linked_shrine_site",
+            "source_publisher": "阿蘇神社",
+            "url": "http://asojinja.jp/"
+          },
+          "scope": "原神社庁に記録された4施設サイトのトップと実ナビの由緒・歴史祭神・アクセス・文化財計5本文だけ。正称・実表示名の連続全文かなと所在地表示を限定照合し、全ページ・ブログ・SNS・画像の調査完了とはしない。",
+          "status": "site_displayed_address_differs_full_kana_not_observed"
         }
       ],
       "address": "諫早市多良見町化屋861番地",
