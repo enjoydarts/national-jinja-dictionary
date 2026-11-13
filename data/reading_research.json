@@ -26622,14 +26622,26 @@
         "new_verified_entries": 1,
         "retained_pending_entries": 10309,
         "scope": "最新mainの冨士山稲荷神社補完を保持し、七重浜海津見神社の同一イベント本文/同名開催場所の根拠1登録を統合。元10868対象IDと全既存補正・他調査を保持。"
+      },
+      {
+        "checked_at": "2026-11-13T15:24:49.579613+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10309,
+        "scope": "上伊那特別編3頁54紹介から保留16登録を詳細照合し、原全文かな/原住所/地区注記を保存。数値表記候補5件と所在地差11件を分け、採用0。",
+        "selected_pending_entries": 16
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T15:24:49.579613+00:00",
+      "checked_at": "2026-11-13T15:30:06.503122+00:00",
+      "entry_ids": [
+        "baed41c5-f7b5-5f74-8dce-35c25f885265"
+      ],
+      "evidence_attempt": "gnome_eight_qualified_titles_no_canonical_full_name_reading_nogi_address_hold_20261114",
+      "inspected_targets": 1,
       "new_verified_entries": 0,
       "retained_pending_entries": 10309,
-      "scope": "上伊那特別編3頁54紹介から保留16登録を詳細照合し、原全文かな/原住所/地区注記を保存。数値表記候補5件と所在地差11件を分け、採用0。",
-      "selected_pending_entries": 16
+      "retained_pending_targets": 1,
+      "scope": "神社索引61実リンクのうち前回の正式名一致13詳細とは別の、原名を部分文字列として含む修飾見出し8詳細を追加点検。近似名/住所の機械的比較を全対象の個別読み確認とはしない。残40詳細の本文や北海道全資料は今回未点検。"
     },
     "remaining_unfinished_entries": 10309,
     "resolved_entry_ids": [
@@ -27196,7 +27208,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T15:24:49.579613+00:00",
+  "computed_at": "2026-11-13T15:30:06.503122+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -406544,6 +406556,126 @@
         1,
         2
       ]
+    },
+    {
+      "acquisition": "前回取得の4索引の実hrefから8詳細のみを既存Clientでrobotsと最低2秒間隔・timeout20秒・再試行0で通常取得。画像・地図・共有リンクや認証機能を使用しない。",
+      "attempt_id": "gnome_eight_qualified_titles_no_canonical_full_name_reading_nogi_address_hold_20261114",
+      "authority_and_rights": "前回の運営・利用案内と会社概要のhash付き根拠を継承。今回8HTMLにも標準Copyrightがあり、点検範囲に個別事実記録の明示禁止はないが包括再配布許諾ではない。最小の見出し・かな・所在地欄と出典だけ保存。民間旅行情報を神社公式資料とは扱わない。",
+      "checked_at": "2026-11-13T15:30:06.503122+00:00",
+      "comparison_method": "原名の部分文字列は候補探索のみ。全所在地の比較結果を得る段階でも、資料に原名が独立全文として掲載されたとは扱わない。乃木1件の住所対応を確認したが、かなを切り詰めないため採用0。他7詳細も原名の独立全文かなと全所在地の結び付きを確定せず保留。",
+      "distinct_near_name_discovery_targets": 66,
+      "entry_ids": [
+        "baed41c5-f7b5-5f74-8dce-35c25f885265"
+      ],
+      "individually_reassessed_targets": 1,
+      "near_name_discovery_pairs": 184,
+      "new_verified_entries": 0,
+      "original_full_address_discovery_pairs": 1,
+      "prior_authority_and_usage_review": "gnome_61_index_thirteen_same_name_profiles_five_full_readings_20261113",
+      "privacy_and_storage": "HTML全文/画像/キャッシュ/電話番号/個人情報を保存せず、公開URL/hashと名称・かな・住所原欄及び限定判断を収録。住所欄に混在した交通案内は原欄として区別し、施設住所へ連結しない。",
+      "qualified_title_articles": 8,
+      "resources": [
+        {
+          "bytes": 41627,
+          "fetched_at": "2026-11-13T15:26:10.301324+00:00",
+          "index_label": "index1",
+          "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+          "page_hash": "d2bdccd9e2c8f3a1410ec46baf7a6a9f94d8654399cec4509be7380ebe471724",
+          "source_address_field_raw": "森町字御幸町191",
+          "source_address_line_raw": "森町字御幸町191",
+          "source_heading_raw": "森町稲荷神社",
+          "source_reading_field_raw": "もりまちいなりじんじゃ",
+          "url": "https://map.uu-hokkaido.jp/j/mori-inari-shrine/"
+        },
+        {
+          "bytes": 41787,
+          "fetched_at": "2026-11-13T15:26:12.987044+00:00",
+          "index_label": "index2",
+          "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+          "page_hash": "bb53056cc04179dfa48dee4428ceedead16735ac709bad855c32de59f6854aea",
+          "source_address_field_raw": "〒065-0012 北海道札幌市東区北１２条東１丁目１−１０\n地下鉄東豊線 北13条東駅2番出口から徒歩3分",
+          "source_address_line_raw": "〒065-0012 北海道札幌市東区北１２条東１丁目１−１０",
+          "source_heading_raw": "札幌諏訪神社",
+          "source_reading_field_raw": "さっぽろすわじんじゃ",
+          "url": "https://map.uu-hokkaido.jp/j/sapporo-suwa-shrine/"
+        },
+        {
+          "bytes": 41703,
+          "fetched_at": "2026-11-13T15:26:15.652951+00:00",
+          "index_label": "index2",
+          "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+          "page_hash": "14ac84e1badcf9ba2973365aab0c076ac158fcb8c1a25a8a150b7ba7f45ed38b",
+          "source_address_field_raw": "札幌市中央区伏見2丁目2番17号",
+          "source_address_line_raw": "札幌市中央区伏見2丁目2番17号",
+          "source_heading_raw": "札幌伏見稲荷神社",
+          "source_reading_field_raw": "さっぽろふしみいなりじんじゃ",
+          "url": "https://map.uu-hokkaido.jp/j/sapporo-fushimiinari-shrine/"
+        },
+        {
+          "bytes": 42470,
+          "fetched_at": "2026-11-13T15:26:18.895503+00:00",
+          "index_label": "index2",
+          "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+          "page_hash": "4ff9f369e9cd2075bdc661aa85d15dee3d8784dfa0e13ac5534c4b32a717b7d4",
+          "source_address_field_raw": "北海道根室市琴平町１丁目４",
+          "source_address_line_raw": "北海道根室市琴平町１丁目４",
+          "source_heading_raw": "根室金刀比羅神社",
+          "source_reading_field_raw": "ねむろことひらじんじゃ",
+          "url": "https://map.uu-hokkaido.jp/j/nemuro-kotohira-shrine/"
+        },
+        {
+          "bytes": 42128,
+          "fetched_at": "2026-11-13T15:26:21.687119+00:00",
+          "index_label": "index2",
+          "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+          "page_hash": "b8c1d7e3b87dff819a0e9be7040173f84ab19884e47f658dcf3585b8ff2417b3",
+          "source_address_field_raw": "北海道檜山郡上ノ国町上ノ国238番地",
+          "source_address_line_raw": "北海道檜山郡上ノ国町上ノ国238番地",
+          "source_heading_raw": "上ノ國八幡宮本殿",
+          "source_reading_field_raw": "かみのくにはちまんぐうほんでん",
+          "url": "https://map.uu-hokkaido.jp/j/kamimokuni-hachiman-shrine/"
+        },
+        {
+          "bytes": 39384,
+          "fetched_at": "2026-11-13T15:26:24.544923+00:00",
+          "index_label": "index3",
+          "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+          "page_hash": "533f8113c55bdea74ee791c42d0f11c2b6b399ffd3daa85b2600c5e02b72e8d3",
+          "source_address_field_raw": "函館市乃木町5番25号",
+          "source_address_line_raw": "函館市乃木町5番25号",
+          "source_heading_raw": "乃木神社函館分社",
+          "source_reading_field_raw": "はこだてのぎじんじゃ",
+          "url": "https://map.uu-hokkaido.jp/j/hakodate-nogi-shrine/"
+        },
+        {
+          "bytes": 41037,
+          "fetched_at": "2026-11-13T15:26:27.321842+00:00",
+          "index_label": "index3",
+          "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+          "page_hash": "86e0d06cc8df558e2960d62a706c76957250d2701893eee723283f8063c07d1a",
+          "source_address_field_raw": "函館市豊川町13",
+          "source_address_line_raw": "函館市豊川町13",
+          "source_heading_raw": "函館豊川稲荷神社",
+          "source_reading_field_raw": "はこだてとよかわいなりじんじゃ",
+          "url": "https://map.uu-hokkaido.jp/j/hakodate-toyokawainari-shrine/"
+        },
+        {
+          "bytes": 43466,
+          "fetched_at": "2026-11-13T15:26:30.003955+00:00",
+          "index_label": "index3",
+          "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+          "page_hash": "3eb195bfb19aa52d73b5ea223417f5821f69e49a16f88c980ff77ec7d9c8192f",
+          "source_address_field_raw": "北海道小樽市住ノ江2丁目5番1号",
+          "source_address_line_raw": "北海道小樽市住ノ江2丁目5番1号",
+          "source_heading_raw": "小樽住吉神社",
+          "source_reading_field_raw": "おたるすみよしじんじゃ",
+          "url": "https://map.uu-hokkaido.jp/j/otaru-sumiyoshi-shrine/"
+        }
+      ],
+      "retained_pending_targets": 1,
+      "scope": "神社索引61実リンクのうち前回の正式名一致13詳細とは別の、原名を部分文字列として含む修飾見出し8詳細を追加点検。近似名/住所の機械的比較を全対象の個別読み確認とはしない。残40詳細の本文や北海道全資料は今回未点検。",
+      "source_kind": "commercial_travel_information",
+      "source_publisher": "シーダースコミュニケーションズ株式会社（デジタルマップGnome）"
     }
   ],
   "per_prefecture": {
@@ -433848,6 +433980,28 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T15:30:06.503122+00:00",
+          "evidence_attempt": "gnome_eight_qualified_titles_no_canonical_full_name_reading_nogi_address_hold_20261114",
+          "expected_source_hash": "e4c433d9bf0d5d92b5fa0503937329d5ae9b31b4dece5f04b60085e740f0f371",
+          "observation": "全所在地は原登録と一致するが、原名は乃木神社、資料見出しは乃木神社函館分社、かな原欄ははこだてのぎじんじゃ。接頭はこだてを削ってのぎじんじゃを補作したり、別の乃木神社から読みを流用したりせず保留。見出しとかな欄の関係を推定訂正せず、そのまま保存。",
+          "reference": {
+            "bytes": 39384,
+            "fetched_at": "2026-11-13T15:26:24.544923+00:00",
+            "index_label": "index3",
+            "observation": "地域名等を含む見出しのかな原欄を保存。原登録の正式名の独立全文かなへ接頭・接尾語を切り出さず、地番不足・異なる町域・字名・別施設も推定連結しない。",
+            "page_hash": "533f8113c55bdea74ee791c42d0f11c2b6b399ffd3daa85b2600c5e02b72e8d3",
+            "source_address_field_raw": "函館市乃木町5番25号",
+            "source_address_line_raw": "函館市乃木町5番25号",
+            "source_heading_raw": "乃木神社函館分社",
+            "source_reading_field_raw": "はこだてのぎじんじゃ",
+            "url": "https://map.uu-hokkaido.jp/j/hakodate-nogi-shrine/"
+          },
+          "source_kind": "commercial_travel_information",
+          "source_publisher": "シーダースコミュニケーションズ株式会社（デジタルマップGnome）",
+          "status": "same_full_address_qualified_name_reading_scope_not_canonical_full_name"
         }
       ],
       "address": "函館市乃木町5番25号",
