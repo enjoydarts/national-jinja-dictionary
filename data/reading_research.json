@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "4642ae06c3d39eae8434d9eaa1e306e90567cb19f23a83b0d5144ab3461d094c",
+    "corrections.json": "0f7d54d78f5a7c6925a648429c4448ca0c592aca39d75582d1dd8293e8f836ca",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -23033,21 +23033,31 @@
         "inspected_targets": 1,
         "new_verified_entries": 1,
         "scope": "羽尾神社の原空かなを保持し、町議会資料の同頁全文ルビ/全住所から補完。"
+      },
+      {
+        "checked_at": "2026-11-13T10:26:24.791606+00:00",
+        "integrated_entry_ids": [
+          "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
+          "36597137-a149-5295-a0f8-90a498d6a0f0",
+          "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1",
+          "c82e8762-8514-52c3-afba-a93e36909918"
+        ],
+        "integration_main_commit": "98cc02690e6756707f44ee83d4c216acafc81b2e",
+        "new_verified_entries": 0,
+        "scope": "実効データに影響しないreading_research.jsonのみの最新追記を保持して統合。直前の各補完の全件比較と684テスト検証に基づき、採用を重複計上しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T10:26:24.791606+00:00",
-      "integrated_entry_ids": [
-        "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
-        "36597137-a149-5295-a0f8-90a498d6a0f0",
-        "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1",
-        "c82e8762-8514-52c3-afba-a93e36909918"
+      "checked_at": "2026-11-13T10:27:55.255921+00:00",
+      "entry_ids": [
+        "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
+        "dd22e08c-9fb5-594b-912c-3dc4099418d7"
       ],
-      "integration_main_commit": "98cc02690e6756707f44ee83d4c216acafc81b2e",
-      "new_verified_entries": 0,
-      "scope": "実効データに影響しないreading_research.jsonのみの最新追記を保持して統合。直前の各補完の全件比較と684テスト検証に基づき、採用を重複計上しない。"
+      "new_verified_entries": 2,
+      "retained_pending_entries": 10519,
+      "scope": "走田神社（長岡京市）・咋岡神社（京田辺市飯岡）2登録の実本文の連続かな列と全所在地を個別確認。"
     },
-    "remaining_unfinished_entries": 10521,
+    "remaining_unfinished_entries": 10519,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -23068,6 +23078,7 @@
       "0a70bd2e-2cec-50b4-97a5-0df783072657",
       "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",
       "0b0bcadd-3a3e-511f-a7be-8a16f4de4cb9",
+      "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
       "0d529d1e-75b3-5f9f-a7ab-0565c405e11a",
       "0dfae9f5-6a4a-58e9-8fdf-bf1f39d27865",
       "0e9412f5-1e1d-5895-91b4-be6f088f82ff",
@@ -23357,6 +23368,7 @@
       "daaadf9b-26fd-533c-a232-84e0fa0d6312",
       "db3d9400-59db-54f9-968f-0a3ccd03e08e",
       "dca63f79-b608-50aa-b4cc-3155a4bc387e",
+      "dd22e08c-9fb5-594b-912c-3dc4099418d7",
       "ddcb81e4-3598-5a84-a7e2-05474ffa5a3e",
       "de3f38b2-77fa-56de-87f6-d4588dbbef20",
       "e00640f1-46f2-5431-ba3f-77cea551ad06",
@@ -23400,7 +23412,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T10:26:24.791606+00:00",
+  "computed_at": "2026-11-13T10:27:55.255921+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -322310,6 +322322,529 @@
       "scope": "通常クライアントで同じ公開HTTPS資料と町の実利用条件を取得。全18頁のテキスト抽出と最終頁原画像の個別確認を区別し、他の神社・全地域の読み調査完了ではない。",
       "source_kind": "municipal_council_newsletter",
       "source_publisher": "滑川町議会"
+    },
+    {
+      "acquisition": "新規HTTP取得なし。既取得本文をoffline=Trueで再読し、記録済み本文hashを照合。免責事項・プライバシー本文も再確認。",
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
+              "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "京都府長岡京市奥海印寺走田3",
+                "checked_at": "2026-11-12T05:44:49.733363+00:00",
+                "fetched_at": "2026-11-12T05:36:51.413641+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "走田神社",
+                "page_hash": "cd7eb7fd46382c1b244a43935de0e03c55065262074c3958c7114157083f44f0",
+                "reading_context_raw": "走田神社（はしりたじんじゃ ）は",
+                "reading_raw": "はしりたじんじゃ ",
+                "reading_scope": "full_name",
+                "reading_variants_raw": [
+                  "はしりたじんじゃ "
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "走田神社　京都府長岡京市奥海印寺走田 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1062314706.html"
+              },
+              "result": "literal_reading_not_accepted_by_existing_schema",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
+              "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "京都府亀岡市余部町走田2",
+                "checked_at": "2026-11-12T05:44:49.948647+00:00",
+                "fetched_at": "2026-11-12T05:39:12.133351+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "走田神社",
+                "page_hash": "1cf4eacb9e9984e2f434f3505c43b6ca842aed337bb8230cd4d6532777d5e516",
+                "reading_context_raw": "走田神社（はせだじんじゃ）は",
+                "reading_raw": "はせだじんじゃ",
+                "reading_scope": "full_name",
+                "reading_variants_raw": [
+                  "はせだじんじゃ"
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "走田神社　京都府亀岡市余部町走田 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1062314339.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:14:34.767979+00:00",
+              "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
+              "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
+              "municipal_entry_status": "municipal_direct_dataset_links",
+              "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
+              "reference": {
+                "fetched_at": "2026-11-13T02:00:34.843054+00:00",
+                "page_hash": "9a16c25c2278b060cfa33669584c6c8f118dada1451bab6e9ac4c4a91f35b778",
+                "url": "https://www.city.nagaokakyo.lg.jp/0000006819.html"
+              },
+              "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
+              "source_kind": "municipal_open_data",
+              "source_observations": [
+                {
+                  "address_raw": "奥海印寺走田地内",
+                  "adopted": false,
+                  "entry_id": "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
+                  "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
+                  "facility_id": "c914a2b1-d558-5da1-bb57-c6390923f0d4",
+                  "locator": {
+                    "header_row": 5,
+                    "logical_row": 17,
+                    "sheet_member": null
+                  },
+                  "name_exact": false,
+                  "name_raw": "走田神社のヤマモモ",
+                  "original_address": "長岡京市奥海印寺走田3",
+                  "original_name": "走田神社",
+                  "reading_raw": null,
+                  "source_fetched_at": "2026-11-13T02:12:53.443836+00:00",
+                  "source_page_hash": "88e3b2bfb1a2a739218f8340f44e4311489879721ef25f9b021fcfca8fcdc5e4",
+                  "source_url": "https://data.bodik.jp/dataset/920079f6-dcb7-4944-ad36-04dc727b3849/resource/cb6c48f1-fc73-44d2-a2b5-78d37070cdbf/download/8hogojyurinn2017053112235770.csv",
+                  "status": "composite_or_different_name_no_reading_cut"
+                }
+              ],
+              "source_publisher": "記録した実資料の発行者",
+              "status": "observation_requires_review"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T04:18:47.409607+00:00",
+              "evidence_attempt": "codh_32038_public_poi_literal_full_reading_strict_original_parcels_20261113",
+              "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
+              "observation": "原読みの大書きや/ゆ/よ・歴史的表記又は全文社号末尾の不足を推定補正せず保留。資料の原かなを保存し、現代表記へ機械的に綴り直さない。",
+              "reference": {
+                "catalog_reference": {
+                  "fetched_at": "2026-11-13T04:06:57.208308+00:00",
+                  "page_hash": "730c0d7f4aa422c71936ff9d93b3329463dbbd55ae53195ab9093eefdeb394b7",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/"
+                },
+                "columns": [
+                  "id",
+                  "都道府県コード",
+                  "名称",
+                  "読み",
+                  "検索文字列",
+                  "住所",
+                  "緯度",
+                  "経度",
+                  "分類1",
+                  "分類2",
+                  "分類3"
+                ],
+                "data_rows": 32038,
+                "encoding": "utf-8-sig",
+                "fetched_at": "2026-11-13T04:07:50.744955+00:00",
+                "license": "CC-BY-4.0",
+                "page_hash": "d4cd6bebb27378a57545829a30249439a7d2a30c68f280e669faef1f32a3d9c6",
+                "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20250515.csv"
+              },
+              "source_kind": "gazetteer_reference",
+              "source_publisher": "ROIS-DS Center for Open Data in the Humanities (CODH)",
+              "source_rows": [
+                {
+                  "csv_record_number": 16985,
+                  "full_modern_designation_check": false,
+                  "full_reading_problem": "explicit reading lacks full shrine-name ending; requires review",
+                  "source_fields": {
+                    "id": "260000084200",
+                    "住所": "京都府 長岡京市 奥海印寺走田3番地",
+                    "分類1": "施設",
+                    "分類2": "埋葬・信仰・宗教施設",
+                    "分類3": "神社",
+                    "名称": "走田神社",
+                    "読み": "はしりたじんじや",
+                    "都道府県コード": "26"
+                  }
+                }
+              ],
+              "status": "exact_name_address_historical_or_incomplete_kana_retained"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T10:27:55.255921+00:00",
+              "evidence_attempt": "kyoto_two_trailing_parenthesis_whitespace_literal_kana_token_review_20261113",
+              "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
+              "observation": "前の抽出は閉じ括弧直前の末尾空白をかな文字列に含めていたため形式不合格だった。実本文の連続かな列を個別採字し、括弧内全原表記と旧判断を保持。内部空白や中黒を除去する一般規則にはしない。",
+              "reference": {
+                "address_raw": "京都府長岡京市奥海印寺走田3",
+                "authority_observation": "非公式二次資料の明示全文かな。神社自身・神社庁の発音確認とは区別する。",
+                "checked_at": "2026-11-13T10:26:57.744581+00:00",
+                "excerpt": "走田神社（はしりたじんじゃ ）は、\n［住所］京都府長岡京市奥海印寺走田3",
+                "fetched_at": "2026-11-12T05:36:51.413641+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "走田神社",
+                "page_hash": "cd7eb7fd46382c1b244a43935de0e03c55065262074c3958c7114157083f44f0",
+                "printed_parenthetical_raw": "はしりたじんじゃ ",
+                "reading_context_raw": "走田神社（はしりたじんじゃ ）は",
+                "reading_raw": "はしりたじんじゃ",
+                "reading_scope": "full_name",
+                "reading_token_locator": "名称直後の括弧内で、連続したかな列の末尾から閉じ括弧までの空白を区切りとして採字。音の追加・置換・内部空白の削除はない。",
+                "reading_variants_raw": [
+                  "はしりたじんじゃ "
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "走田神社　京都府長岡京市奥海印寺走田 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1062314706.html"
+              },
+              "status": "literal_contiguous_kana_token_with_trailing_layout_space_retained"
+            }
+          ],
+          "address": "長岡京市奥海印寺走田3",
+          "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/18.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
+          "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
+          "facility_id": "c914a2b1-d558-5da1-bb57-c6390923f0d4",
+          "listed_name": "走田神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "京都府",
+          "prefecture_code": "26",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "走田神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        },
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
+              "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "京都府京田辺市飯岡東原62",
+                "checked_at": "2026-11-12T05:44:49.843207+00:00",
+                "fetched_at": "2026-11-12T05:38:04.097864+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "咋岡神社",
+                "page_hash": "29c9b86607b0a54948f427937b6bf08f87b69aeed21ee1b120331afab8efd543",
+                "reading_context_raw": "咋岡神社（くいおかじんじゃ　）は",
+                "reading_raw": "くいおかじんじゃ　",
+                "reading_scope": "full_name",
+                "reading_variants_raw": [
+                  "くいおかじんじゃ　"
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "咋岡神社　京都府京田辺市飯岡東原 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1070520232.html"
+              },
+              "result": "literal_reading_not_accepted_by_existing_schema",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
+              "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "京都府京田辺市草内宮ノ後5",
+                "checked_at": "2026-11-12T05:44:49.851620+00:00",
+                "fetched_at": "2026-11-12T05:38:08.989965+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "咋岡神社",
+                "page_hash": "25df5c02286ef1cd93b3fe1c30bad2e1f7a16dccf3f8749e8f32e0c234d8a557",
+                "reading_context_raw": "咋岡神社（くいおかじんじゃ）は",
+                "reading_raw": "くいおかじんじゃ",
+                "reading_scope": "full_name",
+                "reading_variants_raw": [
+                  "くいおかじんじゃ"
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "咋岡神社　京都府京田辺市草内宮ノ後 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1070520534.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
+              "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "京都府京丹後市峰山町赤坂529",
+                "checked_at": "2026-11-12T05:44:50.395373+00:00",
+                "fetched_at": "2026-11-12T05:43:14.770580+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "咋岡神社",
+                "page_hash": "5937e014d925849c8a9ae811e4198e6329beb515682fa93786269dfa54d8ac78",
+                "reading_context_raw": "咋岡神社（くいおかじんじゃ）は",
+                "reading_raw": "くいおかじんじゃ",
+                "reading_scope": "full_name",
+                "reading_variants_raw": [
+                  "くいおかじんじゃ"
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "咋岡神社　京都府京丹後市峰山町赤坂 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1070520909.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:14:34.767979+00:00",
+              "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
+              "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
+              "municipal_entry_status": "organization_first_page_inspected",
+              "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
+              "reference": {
+                "fetched_at": "2026-11-13T02:00:12.024555+00:00",
+                "page_hash": "e63ee6e2b453c0eff83e3950e0382f97be4fef72b9102701e10ec33bf8769319",
+                "url": "https://www.city.kyotanabe.lg.jp/0000016694.html"
+              },
+              "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
+              "source_kind": "municipal_open_data",
+              "source_observations": [],
+              "source_publisher": "記録した実資料の発行者",
+              "status": "no_name_correspondence_in_selected_tables"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T04:18:47.409607+00:00",
+              "evidence_attempt": "codh_32038_public_poi_literal_full_reading_strict_original_parcels_20261113",
+              "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
+              "observation": "原読みの大書きや/ゆ/よ・歴史的表記又は全文社号末尾の不足を推定補正せず保留。資料の原かなを保存し、現代表記へ機械的に綴り直さない。",
+              "reference": {
+                "catalog_reference": {
+                  "fetched_at": "2026-11-13T04:06:57.208308+00:00",
+                  "page_hash": "730c0d7f4aa422c71936ff9d93b3329463dbbd55ae53195ab9093eefdeb394b7",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/"
+                },
+                "columns": [
+                  "id",
+                  "都道府県コード",
+                  "名称",
+                  "読み",
+                  "検索文字列",
+                  "住所",
+                  "緯度",
+                  "経度",
+                  "分類1",
+                  "分類2",
+                  "分類3"
+                ],
+                "data_rows": 32038,
+                "encoding": "utf-8-sig",
+                "fetched_at": "2026-11-13T04:07:50.744955+00:00",
+                "license": "CC-BY-4.0",
+                "page_hash": "d4cd6bebb27378a57545829a30249439a7d2a30c68f280e669faef1f32a3d9c6",
+                "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20250515.csv"
+              },
+              "source_kind": "gazetteer_reference",
+              "source_publisher": "ROIS-DS Center for Open Data in the Humanities (CODH)",
+              "source_rows": [
+                {
+                  "csv_record_number": 16874,
+                  "full_modern_designation_check": false,
+                  "full_reading_problem": "explicit reading lacks full shrine-name ending; requires review",
+                  "source_fields": {
+                    "id": "260000043000",
+                    "住所": "京都府 京田辺市 飯岡東原62番地",
+                    "分類1": "施設",
+                    "分類2": "埋葬・信仰・宗教施設",
+                    "分類3": "神社",
+                    "名称": "咋岡神社",
+                    "読み": "くいおかじんじや",
+                    "都道府県コード": "26"
+                  }
+                }
+              ],
+              "status": "exact_name_address_historical_or_incomplete_kana_retained"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T10:27:55.255921+00:00",
+              "evidence_attempt": "kyoto_two_trailing_parenthesis_whitespace_literal_kana_token_review_20261113",
+              "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
+              "observation": "前の抽出は閉じ括弧直前の末尾空白をかな文字列に含めていたため形式不合格だった。実本文の連続かな列を個別採字し、括弧内全原表記と旧判断を保持。内部空白や中黒を除去する一般規則にはしない。",
+              "reference": {
+                "address_raw": "京都府京田辺市飯岡東原62",
+                "authority_observation": "非公式二次資料の明示全文かな。神社自身・神社庁の発音確認とは区別する。",
+                "checked_at": "2026-11-13T10:26:57.744581+00:00",
+                "excerpt": "咋岡神社（くいおかじんじゃ　）は、\n［住所］京都府京田辺市飯岡東原62",
+                "fetched_at": "2026-11-12T05:38:04.097864+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "咋岡神社",
+                "page_hash": "29c9b86607b0a54948f427937b6bf08f87b69aeed21ee1b120331afab8efd543",
+                "printed_parenthetical_raw": "くいおかじんじゃ　",
+                "reading_context_raw": "咋岡神社（くいおかじんじゃ　）は",
+                "reading_raw": "くいおかじんじゃ",
+                "reading_scope": "full_name",
+                "reading_token_locator": "名称直後の括弧内で、連続したかな列の末尾から閉じ括弧までの空白を区切りとして採字。音の追加・置換・内部空白の削除はない。",
+                "reading_variants_raw": [
+                  "くいおかじんじゃ　"
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "咋岡神社　京都府京田辺市飯岡東原 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1070520232.html"
+              },
+              "status": "literal_contiguous_kana_token_with_trailing_layout_space_retained"
+            }
+          ],
+          "address": "京田辺市飯岡東原62",
+          "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "dd22e08c-9fb5-594b-912c-3dc4099418d7",
+          "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
+          "facility_id": "4fc94b32-d17c-55ee-b52e-3dd8420480db",
+          "listed_name": "咋岡神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "京都府",
+          "prefecture_code": "26",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "咋岡神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "kyoto_two_trailing_parenthesis_whitespace_literal_kana_token_review_20261113",
+      "authority_limits": "非公式二次資料、査読なし・正確性保証なし。神社自身や神社庁の公式発音認定ではない。",
+      "checked_at": "2026-11-13T10:27:55.255921+00:00",
+      "correction_validation_problems": [],
+      "inspected_targets": 2,
+      "manual_resolved_entry_ids": [
+        "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
+        "dd22e08c-9fb5-594b-912c-3dc4099418d7"
+      ],
+      "new_verified_entries": 2,
+      "policy_references": [
+        {
+          "checked_at": "2026-11-13T09:22:21.107633+00:00",
+          "fetched_at": "2026-11-12T05:07:35.698332+00:00",
+          "page_hash": "b53eece0ea23186991902227c2f52299b4e69c539327c3b66df2fc9f6fa80354",
+          "url": "https://www.buccyake-kojiki.com/archives/1000485485.html"
+        },
+        {
+          "checked_at": "2026-11-13T09:22:21.107633+00:00",
+          "fetched_at": "2026-11-12T05:07:53.372830+00:00",
+          "page_hash": "e6f5efff7bbe3f0a2f2e314b40e3bb820670c0e1f15fb4fb79e09d6c3853233f",
+          "url": "https://www.buccyake-kojiki.com/archives/1082202686.html"
+        }
+      ],
+      "references": [
+        {
+          "address_raw": "京都府長岡京市奥海印寺走田3",
+          "authority_observation": "非公式二次資料の明示全文かな。神社自身・神社庁の発音確認とは区別する。",
+          "checked_at": "2026-11-13T10:26:57.744581+00:00",
+          "excerpt": "走田神社（はしりたじんじゃ ）は、\n［住所］京都府長岡京市奥海印寺走田3",
+          "fetched_at": "2026-11-12T05:36:51.413641+00:00",
+          "license_status": "unconfirmed",
+          "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+          "name_raw": "走田神社",
+          "page_hash": "cd7eb7fd46382c1b244a43935de0e03c55065262074c3958c7114157083f44f0",
+          "printed_parenthetical_raw": "はしりたじんじゃ ",
+          "reading_context_raw": "走田神社（はしりたじんじゃ ）は",
+          "reading_raw": "はしりたじんじゃ",
+          "reading_scope": "full_name",
+          "reading_token_locator": "名称直後の括弧内で、連続したかな列の末尾から閉じ括弧までの空白を区切りとして採字。音の追加・置換・内部空白の削除はない。",
+          "reading_variants_raw": [
+            "はしりたじんじゃ "
+          ],
+          "redistribution_status": "unconfirmed",
+          "source_kind": "article",
+          "source_publisher": "神社と古事記（非公式二次資料）",
+          "title": "走田神社　京都府長岡京市奥海印寺走田 - 神社と古事記",
+          "url": "https://www.buccyake-kojiki.com/archives/1062314706.html"
+        },
+        {
+          "address_raw": "京都府京田辺市飯岡東原62",
+          "authority_observation": "非公式二次資料の明示全文かな。神社自身・神社庁の発音確認とは区別する。",
+          "checked_at": "2026-11-13T10:26:57.744581+00:00",
+          "excerpt": "咋岡神社（くいおかじんじゃ　）は、\n［住所］京都府京田辺市飯岡東原62",
+          "fetched_at": "2026-11-12T05:38:04.097864+00:00",
+          "license_status": "unconfirmed",
+          "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+          "name_raw": "咋岡神社",
+          "page_hash": "29c9b86607b0a54948f427937b6bf08f87b69aeed21ee1b120331afab8efd543",
+          "printed_parenthetical_raw": "くいおかじんじゃ　",
+          "reading_context_raw": "咋岡神社（くいおかじんじゃ　）は",
+          "reading_raw": "くいおかじんじゃ",
+          "reading_scope": "full_name",
+          "reading_token_locator": "名称直後の括弧内で、連続したかな列の末尾から閉じ括弧までの空白を区切りとして採字。音の追加・置換・内部空白の削除はない。",
+          "reading_variants_raw": [
+            "くいおかじんじゃ　"
+          ],
+          "redistribution_status": "unconfirmed",
+          "source_kind": "article",
+          "source_publisher": "神社と古事記（非公式二次資料）",
+          "title": "咋岡神社　京都府京田辺市飯岡東原 - 神社と古事記",
+          "url": "https://www.buccyake-kojiki.com/archives/1070520232.html"
+        }
+      ],
+      "rights_scope": "免責・プライバシー本文と対象記事の点検範囲に個別の明示的転用禁止を確認しなかった。包括転載許諾とはせず、正式名・明示全文かな・全所在地と採字判断の最小限の事実のみ保存。取得全本文・画像・キャッシュは収録しない。",
+      "scope": "前の形式不合格4候補のうち、末尾空白のみの2候補を個別審査。途中空白を含む岩戸落葉神社・菱妻神社の2候補は今回採用しない。名称・全所在地の対応と明示かな列を個別確認し、全保留の精査完了とはしない。",
+      "status": "two_literal_full_reading_tokens_individually_confirmed",
+      "verified_eligible_delta": [
+        "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
+        "dd22e08c-9fb5-594b-912c-3dc4099418d7"
+      ]
     }
   ],
   "per_prefecture": {
@@ -322515,11 +323050,11 @@
     },
     "26": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 1277,
+        "insufficient_evidence_in_inspected_sources": 1275,
         "investigation_incomplete": 0,
         "judgment_required": 4
       },
-      "unfinished_entries": 1281
+      "unfinished_entries": 1279
     },
     "27": {
       "categories": {
@@ -801915,188 +802450,6 @@
     {
       "additional_source_reviews": [
         {
-          "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
-          "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "京都府長岡京市奥海印寺走田3",
-            "checked_at": "2026-11-12T05:44:49.733363+00:00",
-            "fetched_at": "2026-11-12T05:36:51.413641+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "走田神社",
-            "page_hash": "cd7eb7fd46382c1b244a43935de0e03c55065262074c3958c7114157083f44f0",
-            "reading_context_raw": "走田神社（はしりたじんじゃ ）は",
-            "reading_raw": "はしりたじんじゃ ",
-            "reading_scope": "full_name",
-            "reading_variants_raw": [
-              "はしりたじんじゃ "
-            ],
-            "redistribution_status": "unconfirmed",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "走田神社　京都府長岡京市奥海印寺走田 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1062314706.html"
-          },
-          "result": "literal_reading_not_accepted_by_existing_schema",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
-          "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "京都府亀岡市余部町走田2",
-            "checked_at": "2026-11-12T05:44:49.948647+00:00",
-            "fetched_at": "2026-11-12T05:39:12.133351+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "走田神社",
-            "page_hash": "1cf4eacb9e9984e2f434f3505c43b6ca842aed337bb8230cd4d6532777d5e516",
-            "reading_context_raw": "走田神社（はせだじんじゃ）は",
-            "reading_raw": "はせだじんじゃ",
-            "reading_scope": "full_name",
-            "reading_variants_raw": [
-              "はせだじんじゃ"
-            ],
-            "redistribution_status": "unconfirmed",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "走田神社　京都府亀岡市余部町走田 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1062314339.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:14:34.767979+00:00",
-          "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
-          "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
-          "municipal_entry_status": "municipal_direct_dataset_links",
-          "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
-          "reference": {
-            "fetched_at": "2026-11-13T02:00:34.843054+00:00",
-            "page_hash": "9a16c25c2278b060cfa33669584c6c8f118dada1451bab6e9ac4c4a91f35b778",
-            "url": "https://www.city.nagaokakyo.lg.jp/0000006819.html"
-          },
-          "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
-          "source_kind": "municipal_open_data",
-          "source_observations": [
-            {
-              "address_raw": "奥海印寺走田地内",
-              "adopted": false,
-              "entry_id": "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
-              "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
-              "facility_id": "c914a2b1-d558-5da1-bb57-c6390923f0d4",
-              "locator": {
-                "header_row": 5,
-                "logical_row": 17,
-                "sheet_member": null
-              },
-              "name_exact": false,
-              "name_raw": "走田神社のヤマモモ",
-              "original_address": "長岡京市奥海印寺走田3",
-              "original_name": "走田神社",
-              "reading_raw": null,
-              "source_fetched_at": "2026-11-13T02:12:53.443836+00:00",
-              "source_page_hash": "88e3b2bfb1a2a739218f8340f44e4311489879721ef25f9b021fcfca8fcdc5e4",
-              "source_url": "https://data.bodik.jp/dataset/920079f6-dcb7-4944-ad36-04dc727b3849/resource/cb6c48f1-fc73-44d2-a2b5-78d37070cdbf/download/8hogojyurinn2017053112235770.csv",
-              "status": "composite_or_different_name_no_reading_cut"
-            }
-          ],
-          "source_publisher": "記録した実資料の発行者",
-          "status": "observation_requires_review"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T04:18:47.409607+00:00",
-          "evidence_attempt": "codh_32038_public_poi_literal_full_reading_strict_original_parcels_20261113",
-          "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
-          "observation": "原読みの大書きや/ゆ/よ・歴史的表記又は全文社号末尾の不足を推定補正せず保留。資料の原かなを保存し、現代表記へ機械的に綴り直さない。",
-          "reference": {
-            "catalog_reference": {
-              "fetched_at": "2026-11-13T04:06:57.208308+00:00",
-              "page_hash": "730c0d7f4aa422c71936ff9d93b3329463dbbd55ae53195ab9093eefdeb394b7",
-              "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/"
-            },
-            "columns": [
-              "id",
-              "都道府県コード",
-              "名称",
-              "読み",
-              "検索文字列",
-              "住所",
-              "緯度",
-              "経度",
-              "分類1",
-              "分類2",
-              "分類3"
-            ],
-            "data_rows": 32038,
-            "encoding": "utf-8-sig",
-            "fetched_at": "2026-11-13T04:07:50.744955+00:00",
-            "license": "CC-BY-4.0",
-            "page_hash": "d4cd6bebb27378a57545829a30249439a7d2a30c68f280e669faef1f32a3d9c6",
-            "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20250515.csv"
-          },
-          "source_kind": "gazetteer_reference",
-          "source_publisher": "ROIS-DS Center for Open Data in the Humanities (CODH)",
-          "source_rows": [
-            {
-              "csv_record_number": 16985,
-              "full_modern_designation_check": false,
-              "full_reading_problem": "explicit reading lacks full shrine-name ending; requires review",
-              "source_fields": {
-                "id": "260000084200",
-                "住所": "京都府 長岡京市 奥海印寺走田3番地",
-                "分類1": "施設",
-                "分類2": "埋葬・信仰・宗教施設",
-                "分類3": "神社",
-                "名称": "走田神社",
-                "読み": "はしりたじんじや",
-                "都道府県コード": "26"
-              }
-            }
-          ],
-          "status": "exact_name_address_historical_or_incomplete_kana_retained"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "長岡京市奥海印寺走田3",
-      "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/18.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "0d4ed7a2-a0c9-5af1-99d8-f0b6463698f0",
-      "expected_source_hash": "7795f854af294ca678710f580c99f460716b156b3f265f7f2327641acbb0050f",
-      "facility_id": "c914a2b1-d558-5da1-bb57-c6390923f0d4",
-      "listed_name": "走田神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "京都府",
-      "prefecture_code": "26",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "走田神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
           "address_raw": "京都府京田辺市松井向山1",
           "checked_at": "2026-11-12T02:17:02.544393+00:00",
           "expected_source_hash": "30a7e200061546410e0a1d7770f482bd18d704b329d3fa9e3f7cb97319cb1713",
@@ -869302,197 +869655,6 @@
       "reason": "missing agency reading",
       "status": "unfinished",
       "surface": "宇麻谷神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
-          "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "京都府京田辺市飯岡東原62",
-            "checked_at": "2026-11-12T05:44:49.843207+00:00",
-            "fetched_at": "2026-11-12T05:38:04.097864+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "咋岡神社",
-            "page_hash": "29c9b86607b0a54948f427937b6bf08f87b69aeed21ee1b120331afab8efd543",
-            "reading_context_raw": "咋岡神社（くいおかじんじゃ　）は",
-            "reading_raw": "くいおかじんじゃ　",
-            "reading_scope": "full_name",
-            "reading_variants_raw": [
-              "くいおかじんじゃ　"
-            ],
-            "redistribution_status": "unconfirmed",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "咋岡神社　京都府京田辺市飯岡東原 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1070520232.html"
-          },
-          "result": "literal_reading_not_accepted_by_existing_schema",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
-          "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "京都府京田辺市草内宮ノ後5",
-            "checked_at": "2026-11-12T05:44:49.851620+00:00",
-            "fetched_at": "2026-11-12T05:38:08.989965+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "咋岡神社",
-            "page_hash": "25df5c02286ef1cd93b3fe1c30bad2e1f7a16dccf3f8749e8f32e0c234d8a557",
-            "reading_context_raw": "咋岡神社（くいおかじんじゃ）は",
-            "reading_raw": "くいおかじんじゃ",
-            "reading_scope": "full_name",
-            "reading_variants_raw": [
-              "くいおかじんじゃ"
-            ],
-            "redistribution_status": "unconfirmed",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "咋岡神社　京都府京田辺市草内宮ノ後 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1070520534.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
-          "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "京都府京丹後市峰山町赤坂529",
-            "checked_at": "2026-11-12T05:44:50.395373+00:00",
-            "fetched_at": "2026-11-12T05:43:14.770580+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "咋岡神社",
-            "page_hash": "5937e014d925849c8a9ae811e4198e6329beb515682fa93786269dfa54d8ac78",
-            "reading_context_raw": "咋岡神社（くいおかじんじゃ）は",
-            "reading_raw": "くいおかじんじゃ",
-            "reading_scope": "full_name",
-            "reading_variants_raw": [
-              "くいおかじんじゃ"
-            ],
-            "redistribution_status": "unconfirmed",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "咋岡神社　京都府京丹後市峰山町赤坂 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1070520909.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:14:34.767979+00:00",
-          "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
-          "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
-          "municipal_entry_status": "organization_first_page_inspected",
-          "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
-          "reference": {
-            "fetched_at": "2026-11-13T02:00:12.024555+00:00",
-            "page_hash": "e63ee6e2b453c0eff83e3950e0382f97be4fef72b9102701e10ec33bf8769319",
-            "url": "https://www.city.kyotanabe.lg.jp/0000016694.html"
-          },
-          "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
-          "source_kind": "municipal_open_data",
-          "source_observations": [],
-          "source_publisher": "記録した実資料の発行者",
-          "status": "no_name_correspondence_in_selected_tables"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T04:18:47.409607+00:00",
-          "evidence_attempt": "codh_32038_public_poi_literal_full_reading_strict_original_parcels_20261113",
-          "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
-          "observation": "原読みの大書きや/ゆ/よ・歴史的表記又は全文社号末尾の不足を推定補正せず保留。資料の原かなを保存し、現代表記へ機械的に綴り直さない。",
-          "reference": {
-            "catalog_reference": {
-              "fetched_at": "2026-11-13T04:06:57.208308+00:00",
-              "page_hash": "730c0d7f4aa422c71936ff9d93b3329463dbbd55ae53195ab9093eefdeb394b7",
-              "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/"
-            },
-            "columns": [
-              "id",
-              "都道府県コード",
-              "名称",
-              "読み",
-              "検索文字列",
-              "住所",
-              "緯度",
-              "経度",
-              "分類1",
-              "分類2",
-              "分類3"
-            ],
-            "data_rows": 32038,
-            "encoding": "utf-8-sig",
-            "fetched_at": "2026-11-13T04:07:50.744955+00:00",
-            "license": "CC-BY-4.0",
-            "page_hash": "d4cd6bebb27378a57545829a30249439a7d2a30c68f280e669faef1f32a3d9c6",
-            "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20250515.csv"
-          },
-          "source_kind": "gazetteer_reference",
-          "source_publisher": "ROIS-DS Center for Open Data in the Humanities (CODH)",
-          "source_rows": [
-            {
-              "csv_record_number": 16874,
-              "full_modern_designation_check": false,
-              "full_reading_problem": "explicit reading lacks full shrine-name ending; requires review",
-              "source_fields": {
-                "id": "260000043000",
-                "住所": "京都府 京田辺市 飯岡東原62番地",
-                "分類1": "施設",
-                "分類2": "埋葬・信仰・宗教施設",
-                "分類3": "神社",
-                "名称": "咋岡神社",
-                "読み": "くいおかじんじや",
-                "都道府県コード": "26"
-              }
-            }
-          ],
-          "status": "exact_name_address_historical_or_incomplete_kana_retained"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "京田辺市飯岡東原62",
-      "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "dd22e08c-9fb5-594b-912c-3dc4099418d7",
-      "expected_source_hash": "0abc185a0f11e2461ad9dc0d344c9c31896cd177e69c772e82d2667c0ff49330",
-      "facility_id": "4fc94b32-d17c-55ee-b52e-3dd8420480db",
-      "listed_name": "咋岡神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "京都府",
-      "prefecture_code": "26",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "咋岡神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
@@ -1238732,7 +1238894,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10521,
+    "retained_unresolved_entries": 10519,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1241834,11 +1241996,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10324,
+      "insufficient_evidence_in_inspected_sources": 10322,
       "investigation_incomplete": 0,
       "judgment_required": 197
     },
     "distinct_surfaces": 4219,
-    "unfinished_entries": 10521
+    "unfinished_entries": 10519
   }
 }
