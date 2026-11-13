@@ -157,6 +157,9 @@ def location_problems(supplement, facility, source=None):
     if supplement.get('supplement_kind') == 'hyogo_documented_map_location':
         from njd.hyogo_map_location import map_location_problems
         return map_location_problems(supplement, facility, source)
+    if supplement.get('supplement_kind') == 'hyogo_municipal_asset_location':
+        from njd.hyogo_asset_location import asset_location_problems
+        return asset_location_problems(supplement, facility, source)
     problems = []
     if supplement.get('status') != 'verified':
         problems.append('location supplement is not verified')
@@ -275,11 +278,14 @@ def apply_locations(data, document):
         problems = location_problems(supplement, facility, source)
         building = isinstance(supplement, dict) and supplement.get('supplement_kind') == 'hyogo_cultural_building_location'
         documented_map = isinstance(supplement, dict) and supplement.get('supplement_kind') == 'hyogo_documented_map_location'
-        if building or documented_map:
+        asset = isinstance(supplement, dict) and supplement.get('supplement_kind') == 'hyogo_municipal_asset_location'
+        if building or documented_map or asset:
             if building:
                 from njd.hyogo_building_location import building_entry_problems as entry_checker
-            else:
+            elif documented_map:
                 from njd.hyogo_map_location import map_entry_problems as entry_checker
+            else:
+                from njd.hyogo_asset_location import asset_entry_problems as entry_checker
             if len(entries) != 1:
                 problems.append('typed Hyogo location requires a single original registration')
             for entry in entries:
@@ -305,7 +311,7 @@ def apply_locations(data, document):
         facility.update(supplement['changes'])
         facility.update(status='verified', reason='', checked_at=supplement['reference']['fetched_at'])
         for entry in entries:
-            if building or documented_map:
+            if building or documented_map or asset:
                 entry.update(reading=normalize_reading(entry['reading_raw']), status='verified', reason='')
                 continue
             if (entry.get('status') not in ('pending', 'verified') or entry.get('identity_review_required')

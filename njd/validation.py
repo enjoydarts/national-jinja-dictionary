@@ -88,7 +88,7 @@ def validate(data: dict) -> list[dict]:
                 add('facility',f.get('id'),'invalid location supplement')
             elif location.get('applied'):
                 issues=location_problems(location,f,source)
-                if location.get('supplement_kind') in ('hyogo_cultural_building_location','hyogo_documented_map_location'):
+                if location.get('supplement_kind') in ('hyogo_cultural_building_location','hyogo_documented_map_location','hyogo_municipal_asset_location'):
                     bound_entries=[e for e in es if e.get('facility_id')==f.get('id')]
                     if len(bound_entries)!=1 or bound_entries[0].get('id')!=location.get('entry_id'):
                         issues.append('typed Hyogo location requires its single original registration')
@@ -150,6 +150,9 @@ def validate(data: dict) -> list[dict]:
         if isinstance(location,dict) and location.get('applied') and location.get('supplement_kind')=='hyogo_documented_map_location':
             from njd.hyogo_map_location import map_entry_problems
             for issue in map_entry_problems(location,f,e):add('entry',eid,issue)
+        if isinstance(location,dict) and location.get('applied') and location.get('supplement_kind')=='hyogo_municipal_asset_location':
+            from njd.hyogo_asset_location import asset_entry_problems
+            for issue in asset_entry_problems(location,f,e):add('entry',eid,issue)
         correction_valid=isinstance(correction,dict) and not correction_problems(correction,f,e,source)
         review_valid=reviewed_output(e.get('human_review'),f,e,source)
         if e.get('name_raw')!=f.get('listed_name'):add('entry',eid,'name raw must equal acquired agency name')
