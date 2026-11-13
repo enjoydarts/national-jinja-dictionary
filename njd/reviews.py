@@ -10,6 +10,7 @@ from uuid import NAMESPACE_URL, uuid5
 from njd.corrections import _url, _reference_matches, discovery_only
 from njd.normalize import normalize_reading
 from njd.locations import raw_address
+from njd.current_address_note import current_address_note_problems
 from njd.address_layout import address_layout_problems,REASON as ADDRESS_LAYOUT_REASON
 
 
@@ -20,8 +21,9 @@ def _plain(value):
 def review_problems(review, facility, entry, source=None):
     problems=[]
     if not isinstance(review,dict):return ['invalid human review']
-    layout_requested=review.get('review_kind')=='single_address_linebreak'
-    layout_issues=address_layout_problems(review,facility,entry) if layout_requested else []
+    layout_requested=review.get('review_kind') in ('single_address_linebreak','single_address_current_note')
+    layout_checker=current_address_note_problems if review.get('review_kind')=='single_address_current_note' else address_layout_problems
+    layout_issues=layout_checker(review,facility,entry) if layout_requested else []
     problems.extend(layout_issues)
     layout_valid=layout_requested and not layout_issues
     if review.get('confirmation') not in ('user_confirmation','source_review') or not review.get('case_id') or not review.get('reason'):

@@ -1,0 +1,11 @@
+# 現在住所の表記変更注記の個別審査
+
+熱田神社の原鎮座地は、完全な現在住所とCRLF後の「※東日本大震災復興事業区画整理に伴い、令和3年11月27日に当住所へ表記変更となりました。」である。実索引と実リンク先詳細は同じ全文かな・住所・注記を掲載する。国税庁20261030宮城月次の同名法人1370305000244は現在住所と全文かなを持ち、20261112までの記録した日次に対象イベントなし。実根拠はreading_research.jsonのmiyagi_atsuta_native_detail_and_nta_annotation_review_20261113。
+
+原住所・注記・名称・読み・ID・source_hashを変更しないsource_reviewを追加する。新review_kindはsingle_address_current_note。既存の数字地番改行専用規則を緩和しない。承認は元のagency_selected全文読み1個に限る。注記の除去・旧住所推定・別住所との結合はしない。
+
+proofはagency_current_address_notation_noteで施設ID・登録ID・原文hash・現在住所第1行・注記・詳細url/hash/locatorに拘束する。注記は上の実資料の一文のみ。元住所の改行はLF又はCRLF1個だけ。第1行は県と自治体から始まり、具体的な数字地番で終わる。
+
+3参照を必須とする。agency_indexは元url/hash/locator・全文かな・全原住所・実href。agency_detailは実hrefの同一ホスト/detail.php、code=元native_source_id、同名全文かな・現在住所・注記を型付き欄とexcerptで確認。registered_address_identityは国税庁原CSVの同名・全数字地番・県・全文かなと一致し、存続・非秘匿・外字なし・最新、日次適用後の一意法人番号を証明。住所比較は幅・明示数字単位のみ。字名・郡・地名を除去しない。元施設を書き換えた仮入力で既存同定関数を呼ばない。
+
+他の保留理由・除外・同一性衝突・資料不一致を解除しない。無効な型、欠落、重複参照、変化した原文は保留。適用後もoffline検証が再審査する。Python対象版は既存設定を維持し、依存追加なし。取得本文・画像・個人情報を保存しない。
