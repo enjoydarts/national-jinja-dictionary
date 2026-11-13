@@ -1,0 +1,13 @@
+# 兵庫の派生市町村欄だけを補う審査
+
+継続指示に基づく実装範囲。判断: 原住所への町の挿入ではなく、既存locations overlayでmunicipalityだけを補完する。空住所用の既存型の適用範囲は変えない。
+
+対象は原神社庁の住所とXML住所が同一で、市町村欄だけ空の兵庫の登録。原名、全文かな、実7桁code、〒郵便番号、全地番、原文hashを保持する。国税庁の同名・存続kind399一意法人のcityNameを使い、原住所はcityName末尾の町1文字を欠くprefixと原streetNumberの全体にのみ対応させる。数字・地番単位以外の字形は正規化しない。取得の誤りの原因は推定しない。
+
+新しいsupplement_kindはhyogo_registered_municipality。changesはmunicipalityだけ。元snapshot、facility ID、source hash、詳細page hash/locator、実code/印字code、全文かなと郵便番号付き原住所、単一XML観測を束縛する。全文かなを含むsource hashを再計算して照合する。参考資料の複合名称のかなは使わない。
+
+referenceはagency profile、map_referenceは同code同名同原住所の実観測。registry_referenceは既存hyogo_registry_windowの20261030全表206383行と20261112までの8日次19178行、対象イベント0に固定する。全住所一意の存続宗教法人、非非表示・非画像、全町域/全地番/郵便番号を照合する。登記カナがあれば全文の一致も必要。municipality_referenceは実自治体本文の発行者と完全な郡町名の根拠のみとし、神社の所在地や読みの証明には使わない。参考資料のURL/hash/locator/取得・点検時刻と承認前後関係を保持する。
+
+他のidentity/glyph/name/address conflict、除外、別県・別source、元住所・hash変更、別地番・枝番欠落、複数法人、後続イベントは拒否する。失敗時は元municipalityと原住所へ復元し、読みの既存除外を保持する。既存空住所型・既存採用の適格集合は変えない。再適用とオフラインvalidateでも根拠を検証する。
+
+採用候補は神河町の大歳神社6317006と薬王子神社6317009の2件。実本文と月次/日次を再照合し、適格+2/-0と全10868 ID・全旧研究の保存を確認してから反映する。全国の残保留は未解決のまま記録する。

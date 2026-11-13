@@ -167,6 +167,9 @@ def location_problems(supplement, facility, source=None):
     allowed = allowed or (reapplied and facility.get('status') == 'verified' and not facility.get('reason'))
     if not allowed:
         problems.append('facility has a condition other than missing location')
+    if supplement.get('supplement_kind') == 'hyogo_registered_municipality':
+        from njd.hyogo_municipality import municipality_problems
+        return problems + municipality_problems(supplement, facility)
     if raw_address(facility) != '' or _raw_field(facility, 'municipality') != '':
         problems.append('only an empty acquired address and municipality can be supplemented')
     if supplement.get('facility_id') != facility.get('id'):

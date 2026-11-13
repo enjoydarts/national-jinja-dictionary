@@ -86,7 +86,7 @@ def validate(data: dict) -> list[dict]:
                 add('facility',f.get('id'),'invalid location supplement')
             elif location.get('applied'):
                 issues=location_problems(location,f,source)
-                if (issues or f.get('address')!=location.get('changes',{}).get('address')
+                if (issues or f.get('address')!=location.get('changes',{}).get('address',raw_address(f))
                     or f.get('municipality')!=location.get('changes',{}).get('municipality')):
                     add('facility',f.get('id'),'invalid applied location supplement',severity='error' if f.get('status')=='verified' else 'review')
             elif f.get('status')=='verified':
