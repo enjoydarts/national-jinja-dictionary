@@ -320488,6 +320488,106 @@
         "observation": "愛媛の別保留案件の探索で当該URLが現れたが、既存の投稿情報利用条件の未確認による取得停止を先に照合し、本文・投稿・画像を取得せず検索抜粋を根拠に採用しない。公式ラベルだけで掲載かなの発行主体を確定しない。",
         "prior_stop_attempt_id": "hotokami_posted_information_reuse_terms_unconfirmed_20261112"
       }
+    },
+    {
+      "acquisition_observation": "通常CorporateClientでrobots・2秒以上の間隔を遵守、timeout30秒・再試行0で3本文取得。ローカルHTML構造解析とPDFをHTML扱いした解析を修正した後はoffline=Trueで取得済みキャッシュだけを再読。web toolのPDF cache missをHTTP拒否又は閉鎖と解釈せず、別資料・別版のURLを推定しない。",
+      "attempt_id": "okayama_04058_actual_link_html_and_print_pdf_original_kana_hold_20261113",
+      "checked_at": "2026-11-13T09:17:04.667112+00:00",
+      "entry_ids": [
+        "1d7f5f82-a569-5c08-b1ec-2d6205d6f668"
+      ],
+      "inspected_targets": 1,
+      "new_verified_entries": 0,
+      "observation": "現物の文字層と表示確認により印刷出力にも疑義のある原かながあると確認。検索抜粋由来の異なる文字列・旧字体置換・中黒除去を根拠化しない。PDF・写真・地図・沿革全文・連絡先・キャッシュは収録しない。",
+      "print_pdf_reference": {
+        "address_text_layer_raw": "岡山市南区灘崎町片岡1677･1678",
+        "checked_at": "2026-11-13T09:17:04.667112+00:00",
+        "fetched_at": "2026-11-13T09:15:34.136535+00:00",
+        "independence_observation": "同じ神社庁詳細の印刷出力であり、独立した別発行者による発音確認とは数えない。",
+        "inspection_method": "サーバ応答バイト列を変更せずPDFKitで表示し、2頁を画像で目視。読みは1頁の神社名括弧内で確認。検索の抜粋文字は原文として採用しない。",
+        "locator": "1頁目の基本情報・神社名欄、コード04058と鎮座地欄",
+        "name_text_layer_raw": "素盞嗚神社",
+        "page_hash": "d9839e27091be17d3dd8473d94496699b5df7a5ba08eb134b2f52e8c01dc38d5",
+        "pages": 2,
+        "pdf_page_index": 0,
+        "reading_raw": "スサノヲンジャ",
+        "render_sha256": "6a8443858790bead3a59e6aebf8fb132c438848a0aa0bcead0d53ae6710f5ee0",
+        "title": "素盞嗚神社 岡山県神社庁 神社検索システム（実リンクのプリント用PDF）",
+        "transport_observation": "取得応答はint(17600)というデバッグ文字列の後に%PDF-1.4が続く。保存hashはこの先頭も含む全応答のhash。バイト列の修復や文字コード置換は行わず、PDFKitがそのまま読めた表示を確認。",
+        "url": "https://www.okayama-jinjacho.or.jp/search/17188/?print=pdf"
+      },
+      "reference_observation": {
+        "address_raw": "岡山市南区灘崎町片岡1677･1678",
+        "agency_code": "04058",
+        "authority_observation": "実本文に岡山県神社庁の案内・発行者表記があり、原一覧の同コード・正式名・全所在地の行が当詳細をリンクしている。検索結果だけで同定しない。",
+        "checked_at": "2026-11-13T09:17:04.667112+00:00",
+        "excerpt": "神社コード 04058 神社名 素盞嗚神社（スサノヲンジャ） 鎮座地 〒709-1215 岡山市南区灘崎町片岡1677･1678",
+        "fetched_at": "2026-11-13T09:15:31.047776+00:00",
+        "index_link": {
+          "fetched_at": "2026-11-13T09:14:51.758110+00:00",
+          "href_raw": "https://www.okayama-jinjacho.or.jp/search/17188",
+          "locator": "a.shrineList__rowのコード04058・片岡1677･1678の行",
+          "page_hash": "370ed201ce240aa00bf1fd24235f561df8d3d08532e3401c21b3a9a0dec66177",
+          "url": "https://www.okayama-jinjacho.or.jp/search/list/page/20/"
+        },
+        "locator": "h2直後のかな、基本情報の神社コード・神社名・鎮座地欄",
+        "name_raw": "素盞嗚神社",
+        "page_hash": "6cb7bfe64aec9da6e397b7a28140fe21b26f0afee2b1fbc373c9f4689952f549",
+        "reading_raw": "スサノヲンジャ",
+        "source_kind": "agency",
+        "source_publisher": "岡山県神社庁",
+        "title": "素盞嗚神社 | 岡山県神社庁",
+        "url": "https://www.okayama-jinjacho.or.jp/search/17188/"
+      },
+      "references": [
+        {
+          "bytes": 42428,
+          "fetched_at": "2026-11-13T09:14:51.758110+00:00",
+          "key": "index",
+          "links": [
+            {
+              "href_raw": "https://www.okayama-jinjacho.or.jp/search/17188",
+              "label": "素盞嗚神社"
+            }
+          ],
+          "page_hash": "370ed201ce240aa00bf1fd24235f561df8d3d08532e3401c21b3a9a0dec66177",
+          "status": "acquired",
+          "subject_row": [
+            "04058",
+            "素盞嗚神社",
+            "スサノヲンジャ",
+            "",
+            "709-1215\n岡山市南区灘崎町片岡1677･1678"
+          ],
+          "url": "https://www.okayama-jinjacho.or.jp/search/list/page/20/"
+        },
+        {
+          "bytes": 36466,
+          "fetched_at": "2026-11-13T09:15:31.047776+00:00",
+          "headings": [
+            "素盞嗚神社",
+            ""
+          ],
+          "key": "detail",
+          "page_hash": "6cb7bfe64aec9da6e397b7a28140fe21b26f0afee2b1fbc373c9f4689952f549",
+          "print_href_raw": "?print=pdf",
+          "status": "acquired",
+          "url": "https://www.okayama-jinjacho.or.jp/search/17188/"
+        },
+        {
+          "bytes": 66884,
+          "fetched_at": "2026-11-13T09:15:34.136535+00:00",
+          "key": "print",
+          "page_hash": "d9839e27091be17d3dd8473d94496699b5df7a5ba08eb134b2f52e8c01dc38d5",
+          "status": "acquired",
+          "url": "https://www.okayama-jinjacho.or.jp/search/17188/?print=pdf"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "一覧page20の神社コード04058の1行、当該実リンク先詳細、詳細がリンクする印刷PDF2頁のみ。岡山県内全施設の再取得や未採用1件の解消を意味しない。",
+      "source_kind": "agency",
+      "source_publisher": "岡山県神社庁",
+      "status": "same_agency_html_and_print_pdf_confirmed_hold_retained"
     }
   ],
   "per_prefecture": {
@@ -881954,6 +882054,54 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T09:17:04.667112+00:00",
+          "evidence_attempt": "okayama_04058_actual_link_html_and_print_pdf_original_kana_hold_20261113",
+          "expected_source_hash": "395a265e7a60d5e375cd8d99df00374d5c1162e959f86d13097f860b8d93a5ce",
+          "observation": "一覧・同コード詳細・印刷PDFの実表示ともスサノヲンジャ。独立した全文かな根拠が得られず、ジの推定追加や御祭神名・他の素盞嗚神社からの読み流用はしない。原文・既存補正・要判断を保持する。",
+          "print_pdf_reference": {
+            "address_text_layer_raw": "岡山市南区灘崎町片岡1677･1678",
+            "checked_at": "2026-11-13T09:17:04.667112+00:00",
+            "fetched_at": "2026-11-13T09:15:34.136535+00:00",
+            "independence_observation": "同じ神社庁詳細の印刷出力であり、独立した別発行者による発音確認とは数えない。",
+            "inspection_method": "サーバ応答バイト列を変更せずPDFKitで表示し、2頁を画像で目視。読みは1頁の神社名括弧内で確認。検索の抜粋文字は原文として採用しない。",
+            "locator": "1頁目の基本情報・神社名欄、コード04058と鎮座地欄",
+            "name_text_layer_raw": "素盞嗚神社",
+            "page_hash": "d9839e27091be17d3dd8473d94496699b5df7a5ba08eb134b2f52e8c01dc38d5",
+            "pages": 2,
+            "pdf_page_index": 0,
+            "reading_raw": "スサノヲンジャ",
+            "render_sha256": "6a8443858790bead3a59e6aebf8fb132c438848a0aa0bcead0d53ae6710f5ee0",
+            "title": "素盞嗚神社 岡山県神社庁 神社検索システム（実リンクのプリント用PDF）",
+            "transport_observation": "取得応答はint(17600)というデバッグ文字列の後に%PDF-1.4が続く。保存hashはこの先頭も含む全応答のhash。バイト列の修復や文字コード置換は行わず、PDFKitがそのまま読めた表示を確認。",
+            "url": "https://www.okayama-jinjacho.or.jp/search/17188/?print=pdf"
+          },
+          "reference": {
+            "address_raw": "岡山市南区灘崎町片岡1677･1678",
+            "agency_code": "04058",
+            "authority_observation": "実本文に岡山県神社庁の案内・発行者表記があり、原一覧の同コード・正式名・全所在地の行が当詳細をリンクしている。検索結果だけで同定しない。",
+            "checked_at": "2026-11-13T09:17:04.667112+00:00",
+            "excerpt": "神社コード 04058 神社名 素盞嗚神社（スサノヲンジャ） 鎮座地 〒709-1215 岡山市南区灘崎町片岡1677･1678",
+            "fetched_at": "2026-11-13T09:15:31.047776+00:00",
+            "index_link": {
+              "fetched_at": "2026-11-13T09:14:51.758110+00:00",
+              "href_raw": "https://www.okayama-jinjacho.or.jp/search/17188",
+              "locator": "a.shrineList__rowのコード04058・片岡1677･1678の行",
+              "page_hash": "370ed201ce240aa00bf1fd24235f561df8d3d08532e3401c21b3a9a0dec66177",
+              "url": "https://www.okayama-jinjacho.or.jp/search/list/page/20/"
+            },
+            "locator": "h2直後のかな、基本情報の神社コード・神社名・鎮座地欄",
+            "name_raw": "素盞嗚神社",
+            "page_hash": "6cb7bfe64aec9da6e397b7a28140fe21b26f0afee2b1fbc373c9f4689952f549",
+            "reading_raw": "スサノヲンジャ",
+            "source_kind": "agency",
+            "source_publisher": "岡山県神社庁",
+            "title": "素盞嗚神社 | 岡山県神社庁",
+            "url": "https://www.okayama-jinjacho.or.jp/search/17188/"
+          },
+          "status": "html_and_rendered_print_retain_original_suspected_reading"
         }
       ],
       "address": "岡山市南区灘崎町片岡1677･1678",
