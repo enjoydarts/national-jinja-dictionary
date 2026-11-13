@@ -35,10 +35,10 @@
 **Files:** Modify data/locations.json, data/reading_research.json, data/manifest.json, data/source_catalog.json, docs/REVIEW.md, docs/SOURCES.md.
 **Interfaces:** Consumes Task1 checker; Produces evidence-bound supplements2 and retained prior research history.
 
-- [ ] Step 1: 保存済み実HTML・XMLと全月次/8日次の候補を再点検し、原名/全文かな/全住所/郵便番号/実codeを照合する。Expected: 独立登記一意2、後続イベント0。
-- [ ] Step 2: supplements2を追加し研究記録2を採用履歴へ保存、件数/hashを更新。Expected: 適格+2/-0、全国310解消/10558保留、10868 ID全集合と全原正本不変。
-- [ ] Step 3: 全unittest/njd validate/diff check。Expected: 全成功。
-- [ ] Step 4: 採用2件を日本語コミット。
+- [x] Step 1: 保存済み実HTML・XMLと全月次/8日次の候補を再点検し、原名/全文かな/全住所/郵便番号/実codeを照合する。Expected: 独立登記一意2、後続イベント0。
+- [x] Step 2: supplements2を追加し研究記録2を採用履歴へ保存、件数/hashを更新。Expected: 適格+2/-0、全国310解消/10558保留、10868 ID全集合と全原正本不変。
+- [x] Step 3: 全unittest/njd validate/diff check。Expected: 全成功。
+- [x] Step 4: 採用2件を日本語コミット。
 
 ## 最終統合
 
