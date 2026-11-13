@@ -143,6 +143,9 @@ def validate(data: dict) -> list[dict]:
         if isinstance(location,dict) and location.get('applied') and location.get('supplement_kind')=='hyogo_cultural_building_location':
             from njd.hyogo_building_location import building_entry_problems
             for issue in building_entry_problems(location,f,e):add('entry',eid,issue)
+        if isinstance(location,dict) and location.get('applied') and location.get('supplement_kind')=='hyogo_documented_map_location':
+            from njd.hyogo_map_location import map_entry_problems
+            for issue in map_entry_problems(location,f,e):add('entry',eid,issue)
         correction_valid=isinstance(correction,dict) and not correction_problems(correction,f,e,source)
         review_valid=reviewed_output(e.get('human_review'),f,e,source)
         if e.get('name_raw')!=f.get('listed_name'):add('entry',eid,'name raw must equal acquired agency name')
