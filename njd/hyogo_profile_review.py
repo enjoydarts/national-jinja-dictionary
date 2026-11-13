@@ -1,4 +1,4 @@
-"""Explicit profile-name selection, preserving the conflicting map label."""
+"""Evidence-bound profile selection, preserving original map discrepancies."""
 from datetime import datetime
 import re
 from njd.hyogo_registry_window import registry_window_problems,observed_between
@@ -7,6 +7,7 @@ from njd.normalize import normalize_reading,compare_address_units
 from njd.adapters.hyogo import _reading_reason,_url as _agency_url,PROTOCOL_URL
 
 REASON='Hyogo map and profile official names differ or are missing'
+LOCATION_REASON='Hyogo map and profile addresses differ'
 
 
 def _numeric_address(value):
@@ -17,27 +18,31 @@ def _numeric_address(value):
 
 
 def hyogo_profile_problems(review,facility,entry):
+    if review.get('review_kind') not in ('hyogo_profile_name_selection','hyogo_profile_location_selection'):
+        return ['unsupported Hyogo profile selection kind']
+    location_selected=review['review_kind']=='hyogo_profile_location_selection'
+    selected_reason=LOCATION_REASON if location_selected else REASON
     proof=review.get('profile_selection_proof')
     if not isinstance(proof,dict):return ['missing Hyogo profile selection proof']
     code=facility.get('native_source_id');name=facility.get('name_raw');kana=entry.get('reading_raw')
-    expected=dict(kind='hyogo_typed_profile_registered_name_selection',facility_id=facility.get('id'),
+    expected=dict(kind='hyogo_typed_profile_registered_location_selection' if location_selected else 'hyogo_typed_profile_registered_name_selection',facility_id=facility.get('id'),
         entry_id=entry.get('id'),expected_source_hash=entry.get('source_hash'),native_code=code,
-        profile_name_raw=name,selection='profile_name_and_profile_kana')
+        profile_name_raw=name,selection='profile_name_and_profile_kana_with_location_evidence' if location_selected else 'profile_name_and_profile_kana')
     if (any(proof.get(k)!=v for k,v in expected.items()) or not _hash(entry.get('source_hash'))
         or facility.get('source_hash')!=entry.get('source_hash') or review.get('confirmation')!='source_review'):
         return ['Hyogo profile proof differs from acquired identity']
     if (facility.get('source_key')!='hyogo' or facility.get('prefecture_code')!='28' or facility.get('prefecture')!='兵庫県'
         or not isinstance(code,str) or not re.fullmatch('[0-9]{7}',code)
         or facility.get('listing_url')!='https://www.hyogo-jinjacho.com/data/'+code+'.html'
-        or facility.get('review_reason')!=REASON or facility.get('source_conflicts')
+        or facility.get('review_reason')!=selected_reason or facility.get('source_conflicts')
         or facility.get('identity_review_required') or facility.get('name_rendering_status') in ('external_glyph','unrenderable')
-        or any(r.get('status') not in ('pending','verified') or r.get('reason') not in ('',REASON) for r in (facility,entry))):
+        or any(r.get('status') not in ('pending','verified') or r.get('reason') not in ('',selected_reason) for r in (facility,entry))):
         return ['Hyogo profile selection cannot override another condition']
     address=facility.get('address');raw=facility.get('address_raw');municipality=facility.get('municipality')
     if (not all(_plain(v) for v in (name,address,municipality)) or facility.get('listed_name')!=name
         or not address.startswith(municipality) or not re.search('[0-9０-９]+(?:-[0-9０-９]+)*$',address)
         or not isinstance(raw,str) or not re.fullmatch(r'〒[0-9]{3}-[0-9]{4}\r?\n'+re.escape(address),raw)
-        or facility.get('map_address_raw')!=address):
+        or (not location_selected and facility.get('map_address_raw')!=address)):
         return ['Hyogo profile selection requires one unchanged complete address']
     try:
         reading=normalize_reading(kana)
@@ -86,11 +91,31 @@ def hyogo_profile_problems(review,facility,entry):
     try:
         if _agency_url(mapped['url'])!=mapped['url'] or '/data/xml.php?' not in mapped['url']:raise ValueError()
     except (TypeError,ValueError):return ['invalid original Hyogo map endpoint']
-    if (mapped.get('source_kind')!='agency' or mapped.get('code_raw')!=code or mapped.get('address_raw')!=address
+    map_address=facility.get('map_address_raw')
+    if (mapped.get('source_kind')!='agency' or mapped.get('code_raw')!=code or mapped.get('address_raw')!=map_address
+        or not _plain(map_address) or not re.search('[0-9０-９]+(?:-[0-9０-９]+)*$',map_address)
         or mapped.get('protocol_url')!=PROTOCOL_URL or mapped.get('href_derivation')!='data/ + actual Locate code + .html'
-        or not _plain(mapped.get('name_raw')) or mapped['name_raw']==name or proof.get('map_name_raw')!=mapped['name_raw']
-        or not all(v in mapped['excerpt'] for v in (mapped['name_raw'],code,address))):
+        or not _plain(mapped.get('name_raw')) or (mapped['name_raw']!=name if location_selected else mapped['name_raw']==name)
+        or proof.get('map_name_raw')!=mapped['name_raw']
+        or not all(v in mapped['excerpt'] for v in (mapped['name_raw'],code,map_address))):
         return ['Hyogo map code, full address or retained name is not bound']
+    supported_address=address
+    if location_selected:
+        if (proof.get('profile_address_raw')!=address or proof.get('map_address_raw')!=map_address or map_address==address):
+            return ['Hyogo location proof differs from the two original address fields']
+        basis=proof.get('registered_address_basis')
+        if basis=='profile':
+            if proof.get('added_aza_raw'):return ['profile address selection cannot claim added aza']
+        elif basis=='linked_map_additional_aza':
+            extra=proof.get('added_aza_raw')
+            parcel=re.fullmatch(r'(.+?[^0-9-])([0-9]+(?:-[0-9]+)*)',_numeric_address(address))
+            if (not isinstance(extra,str) or not re.fullmatch(r'(?:小字|字)[\u3400-\u9fff々〆ヶぁ-ゖァ-ヺー]+',extra)
+                or not parcel or _numeric_address(map_address)!=parcel[1]+extra+parcel[2]):
+                return ['Hyogo linked map is not one explicit aza before the whole original parcel']
+            supported_address=map_address
+        else:return ['unsupported Hyogo registered address basis']
+    elif proof.get('registered_address_basis') not in (None,'profile'):
+        return ['name selection requires the unchanged profile address']
     protocol=mapped.get('protocol_reference')
     if (not isinstance(protocol,dict) or protocol.get('url')!=PROTOCOL_URL
         or protocol.get('page_hash')!='e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9'
@@ -115,7 +140,7 @@ def hyogo_profile_problems(review,facility,entry):
         or not re.fullmatch('[0-9]{13}',corporate) or reg.get('corporate_number')!=corporate
         or type(reg.get('csv_row')) is not int or reg['csv_row']<1 or reg.get('name_raw')!=name or fields['name']!=name
         or fields['prefectureCode']!='28' or fields['prefectureName']!='兵庫県' or reg.get('address_raw')!=full
-        or _numeric_address(full)!=_numeric_address('兵庫県'+address.removeprefix('兵庫県'))
+        or _numeric_address(full)!=_numeric_address('兵庫県'+supported_address.removeprefix('兵庫県'))
         or not all(v in reg['excerpt'] for v in (name,full))
         or fields['kind']!='399' or fields['latest']!='1' or fields['process']=='99'
         or fields['closeDate'] or fields['hihyoji']!='0' or fields['nameImageId'] or fields['addressImageId']

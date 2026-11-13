@@ -49,9 +49,9 @@ DAILY_FIXTURE=[{'date': '20261102',
   'url': 'https://www.houjin-bangou.nta.go.jp/download/sabun/index.html'}]
 
 
-def fixture(locality='架空町字架空',registered_locality=None):
+def fixture(locality='架空町字架空',registered_locality=None,parcel='1-1'):
     when='2026-11-13T01:00:00+00:00';code='6300001';url='https://www.hyogo-jinjacho.com/data/'+code+'.html'
-    address='架空市'+locality+'1-1';raw='〒000-0000\n'+address;name='架空八幡神社';kana='カクウハチマンジンジャ'
+    address='架空市'+locality+parcel;raw='〒000-0000\n'+address;name='架空八幡神社';kana='カクウハチマンジンジャ'
     data=build_dataset('hyogo','28','兵庫県','人工神社庁',[dict(name=name,reading_raw=kana,address=address,
         address_raw=raw,url=url,page_hash='a'*64,fetched_at=when,locator='header.hero fields',evidence='人工資料',
         source_id=code,review_reason=REASON)],metadata=dict(authority_status='confirmed'))
@@ -67,7 +67,7 @@ def fixture(locality='架空町字架空',registered_locality=None):
         excerpt=name+' / '+kana+' / '+e['printed_code_raw']+' / '+raw),
         dict(common,**{k:v for k,v in m.items() if k!='fetched_at'},evidence_role='agency_map',excerpt='架空八幡宮 / '+code+' / '+address)]
     fields=dict(corporateNumber='1234567890123',name=name,prefectureCode='28',prefectureName='兵庫県',
-        cityName='架空市',streetNumber=(registered_locality or locality)+'１番地の１',kind='399',latest='1',process='01',
+        cityName='架空市',streetNumber=(registered_locality or locality)+'番地の'.join(parcel.split('-')).translate(str.maketrans('0123456789','０１２３４５６７８９')),kind='399',latest='1',process='01',
         closeDate='',hihyoji='0',nameImageId='',addressImageId='',furigana='')
     addr=fields['prefectureName']+fields['cityName']+fields['streetNumber']
     refs.append(dict(title='人工登録',checked_at=when,fetched_at=when,evidence_role='registered_profile_identity',
@@ -210,4 +210,89 @@ class HyogoProfileReviewTest(unittest.TestCase):
                 elif case=='authority':d['collection']['authority_status']='unconfirmed'
                 elif case=='source':f['source_key']='other'
                 elif case=='prefecture':f['prefecture_code']='27'
+                self.assertEqual(eligible(apply_reviews(d,doc)),[])
+
+
+LOCATION_REASON='Hyogo map and profile addresses differ'
+
+
+def location_fixture(basis='profile',parcel='123-4'):
+    d,doc,v=fixture('架空町',parcel=parcel);f=d['facilities'][0];e=d['entries'][0]
+    f.update(reason=LOCATION_REASON,review_reason=LOCATION_REASON);e['reason']=LOCATION_REASON
+    mapped_address='旧架空市別町9-9' if basis=='profile' else '架空市架空町字谷'+parcel
+    f['map_address_raw']=mapped_address;m=f['xml_occurrences'][0];m.update(name_raw=f['name_raw'],address_raw=mapped_address)
+    ref=v['references'][1];ref.update(name_raw=f['name_raw'],address_raw=mapped_address,
+        excerpt=f['name_raw']+' / '+f['native_source_id']+' / '+mapped_address)
+    v.update(review_kind='hyogo_profile_location_selection')
+    proof=v['profile_selection_proof'];proof.update(kind='hyogo_typed_profile_registered_location_selection',
+        selection='profile_name_and_profile_kana_with_location_evidence',map_name_raw=f['name_raw'],
+        profile_address_raw=f['address'],map_address_raw=mapped_address,registered_address_basis=basis)
+    if basis=='linked_map_additional_aza':
+        proof['added_aza_raw']='字谷';reg=v['references'][2];reg['source_fields']['streetNumber']='架空町字谷'+'番地の'.join(parcel.split('-')).translate(str.maketrans('0123456789','０１２３４５６７８９'))
+        reg['address_raw']='兵庫県架空市'+reg['source_fields']['streetNumber'];reg['excerpt']=f['name_raw']+' / '+reg['address_raw']
+    return d,doc,v
+
+
+class HyogoLocationReviewTest(unittest.TestCase):
+    def test_both_location_bases_keep_every_original_field_and_revalidate(self):
+        for basis in ['profile','linked_map_additional_aza']:
+            with self.subTest(basis=basis):
+                d,doc,v=location_fixture(basis);before=copy.deepcopy(d)
+                self.assertEqual(review_problems(v,d['facilities'][0],d['entries'][0],d['collection']),[])
+                out=apply_reviews(d,doc);self.assertEqual(len(eligible(out)),1);self.assertFalse(blocking_problems(out))
+                for k,value in before['facilities'][0].items():
+                    if k not in ['status','reason']:self.assertEqual(out['facilities'][0][k],value)
+                for k in ['id','name_raw','surface','reading_raw','reading_url','source_hash']:
+                    self.assertEqual(out['entries'][0][k],before['entries'][0][k])
+                self.assertEqual(d,before);self.assertEqual(len(eligible(apply_reviews(out,doc))),1)
+                out['entries'][0]['human_review']['references'][2]['registry_state_proof']['daily_resources'].pop()
+                self.assertTrue(blocking_problems(out))
+
+    def test_wrong_basis_or_bound_address_and_combined_name_conflict_stays_pending(self):
+        mutations=[lambda v:v['profile_selection_proof'].update(registered_address_basis='other'),
+            lambda v:v['profile_selection_proof'].update(profile_address_raw='別住所1-1'),
+            lambda v:v['profile_selection_proof'].update(map_address_raw='別住所1-1'),
+            lambda v:v['references'][0].update(printed_code_raw='6300002/兼務'),
+            lambda v:v['references'][1].update(code_raw='6300002'),
+            lambda v:v['references'][1].update(name_raw='別名神社'),
+            lambda v:v['profile_selection_proof'].update(added_aza_raw=[]),
+            lambda v:v['profile_selection_proof'].update(added_aza_raw='字谷1'),
+            lambda v:v['profile_selection_proof'].update(added_aza_raw='字別'),
+            lambda v:v['references'][2]['source_fields'].update(streetNumber='架空町字谷１２３番地の４０'),
+            lambda v:v.update(split=True,excluded_name_prefix=[])]
+        for i,mutate in enumerate(mutations):
+            with self.subTest(case=i):
+                d,doc,v=location_fixture('linked_map_additional_aza');mutate(v)
+                self.assertEqual(eligible(apply_reviews(d,doc)),[])
+        d,doc,v=location_fixture();f=d['facilities'][0];f['xml_occurrences'][0]['name_raw']='別名神社'
+        v['references'][1]['name_raw']='別名神社';v['references'][1]['excerpt']='別名神社 / 6300001 / '+f['map_address_raw']
+        v['profile_selection_proof']['map_name_raw']='別名神社'
+        self.assertEqual(eligible(apply_reviews(d,doc)),[])
+
+    def test_aza_cannot_split_the_complete_numeric_parcel(self):
+        d,doc,v=location_fixture('linked_map_additional_aza');f=d['facilities'][0]
+        wrong='架空市架空町1字谷23-4';f['map_address_raw']=wrong;f['xml_occurrences'][0]['address_raw']=wrong
+        v['references'][1].update(address_raw=wrong,excerpt=f['name_raw']+' / 6300001 / '+wrong)
+        v['profile_selection_proof']['map_address_raw']=wrong
+        reg=v['references'][2];reg['source_fields']['streetNumber']='架空町1字谷２３番地の４';reg['address_raw']='兵庫県架空市'+reg['source_fields']['streetNumber']
+        reg['excerpt']=f['name_raw']+' / '+reg['address_raw']
+        self.assertEqual(eligible(apply_reviews(d,doc)),[])
+
+    def test_registered_full_map_parcel_and_aza_are_compared_literally(self):
+        for street in ['架空町字谷１２３番地の４０','架空町字別１２３番地の４','架空町字谷１２３番地']:
+            with self.subTest(street=street):
+                d,doc,v=location_fixture('linked_map_additional_aza');reg=v['references'][2]
+                reg['source_fields']['streetNumber']=street;reg['address_raw']='兵庫県架空市'+street
+                reg['excerpt']=d['facilities'][0]['name_raw']+' / '+reg['address_raw']
+                self.assertEqual(eligible(apply_reviews(d,doc)),[])
+
+    def test_location_selection_cannot_override_protected_conditions(self):
+        for case in ['reason','excluded','identity','glyph','stale']:
+            with self.subTest(case=case):
+                d,doc,v=location_fixture();f=d['facilities'][0];e=d['entries'][0]
+                if case=='reason':e['reason']='another issue'
+                elif case=='excluded':e.update(status='excluded',reason='excluded')
+                elif case=='identity':e['identity_review_required']=True
+                elif case=='glyph':f['name_rendering_status']='external_glyph'
+                elif case=='stale':f['address']='架空市架空町123-40'
                 self.assertEqual(eligible(apply_reviews(d,doc)),[])

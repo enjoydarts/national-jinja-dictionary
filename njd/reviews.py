@@ -10,7 +10,7 @@ from uuid import NAMESPACE_URL, uuid5
 from njd.corrections import _url, _reference_matches, discovery_only
 from njd.normalize import normalize_reading
 from njd.locations import raw_address
-from njd.hyogo_profile_review import hyogo_profile_problems,REASON as HYOGO_PROFILE_REASON
+from njd.hyogo_profile_review import hyogo_profile_problems
 from njd.current_address_note import current_address_note_problems
 from njd.address_layout import address_layout_problems,REASON as ADDRESS_LAYOUT_REASON
 
@@ -27,7 +27,7 @@ def review_problems(review, facility, entry, source=None):
     layout_issues=layout_checker(review,facility,entry) if layout_requested else []
     problems.extend(layout_issues)
     layout_valid=layout_requested and not layout_issues
-    profile_requested=review.get('review_kind')=='hyogo_profile_name_selection'
+    profile_requested=review.get('review_kind') in ('hyogo_profile_name_selection','hyogo_profile_location_selection')
     profile_issues=hyogo_profile_problems(review,facility,entry) if profile_requested else []
     if profile_issues:return profile_issues
     profile_valid=profile_requested
@@ -52,7 +52,7 @@ def review_problems(review, facility, entry, source=None):
         'control or layout characters in source name; explicit review required',
         'conflicting source rows for the same source identity'}
     if layout_valid:allowed_reasons.add(ADDRESS_LAYOUT_REASON)
-    if profile_valid:allowed_reasons.add(HYOGO_PROFILE_REASON)
+    if profile_valid:allowed_reasons.add(facility['review_reason'])
     if facility.get('status')!='verified' and facility.get('reason') not in allowed_reasons:
         problems.append('unresolved facility condition')
     outputs=review.get('outputs')
