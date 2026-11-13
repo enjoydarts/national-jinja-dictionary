@@ -1131,3 +1131,10 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 [市公式の案内本文](https://www.city.saga.lg.jp/sangyo-machizukuri/toshi-kotsu/2/1/4/2193.html)から実カタログを確認し、[佐賀市組織](https://data.bodik.jp/organization/412015)の全3頁で58データセット見出しを点検しました。[市オープンデータ規約](https://odcs.bodik.jp/412015/tos/)はCC BY4.0を既定とし、resource個別ライセンスを優先します。各選定説明は「クリエイティブ・コモンズ 表示」（版未明示）という表示であり、全市HTMLへの包括許諾には拡張していません。
 
 [指定緊急避難場所](https://data.bodik.jp/dataset/412015_evacuation_location)の令和8年度CSV113行、[AED設置施設](https://data.bodik.jp/dataset/412015_aed_facilities)の令和7年度CSV155行、[公共施設](https://data.bodik.jp/dataset/412015_koukyoushisetsu)CSV87行、[教育・文化・生涯学習](https://data.bodik.jp/dataset/412015_education_culture_lifelong_learning)の世界測地系CSV105行を取得し、名称・名称_通称を市内保留19登録と照合しました。対応する神社名はなく採用0です。計460行のうち名称あり455行、公共施設の名称空欄5行で、重複排除した施設数や神社数ではありません。避難場所はUTF-8 BOM、残3表はCP932 strictで日本語見出しを確認しました。旧年度・日本測地系別版・広報テキスト・アプリ投稿地図・他データ本体は未取得で、58データセット全resourceの取得や市全資料の情報不存在を意味しません。表本文・連絡先・無関係な住所行・画像・キャッシュは収録せず、必要な公開URL/hash/日時・行数・列名・不一致結果のみを保存しています。
+
+
+### 唐津市の追加資料候補の入口と利用条件（2026年11月14日・日本時間）
+
+[唐津市デジタル市役所](https://www.city.karatsu.lg.jp/site/digital-karatsu/)の本文と実hrefを確認しました。案内先`https://www.sonicweb-asp.jp/karatsu/`は公式リンクからweb.openで要求するとHTTP404で、地図本文・施設表・全レイヤは未取得です。同一URL再取得・推測した個別URL・別ツール/形式・別ホスト/アーカイブへの切替えは行いません。地図側のrobots/利用条件は確認済みとはしていません。
+
+[市の著作権・免責事項](https://www.city.karatsu.lg.jp/site/userguide/21330.html)本文に記載内容の無断転載・引用禁止及び転用希望時の相談条件があるため、市の個別文化財ページ・PDFから辞書用の読み等を転記せず、追加取得を止めました。オープンデータ公開計画という検索リードは実表取得や利用許諾とはしません。個別施設の名称/全文かな/全所在地の新規照合0、採用0。市内保留数は探索対象集合であり個別精査済み件数ではありません。入口/方針の公開URL/hash・日時、実hrefと停止理由だけを保存し、本文・画像・PDF・表・キャッシュ・人物情報は収録していません。

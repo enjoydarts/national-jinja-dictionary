@@ -26560,13 +26560,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10311,
         "scope": "荒穂神社の町祭礼紹介は社名全文かな/原全所在地なし。妻山神社の関連リンク先は初期HTMLに表題のみ、JS実行や全サイトの点検はしていない。両件保留。"
+      },
+      {
+        "checked_at": "2026-11-13T14:58:13.271059+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10311,
+        "scope": "佐賀市カタログ58見出しと4表460行を点検。市内保留19登録に対応する名称欄の一致なし、採用0。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:58:13.271059+00:00",
+      "checked_at": "2026-11-13T15:01:44.059461+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10311,
-      "scope": "佐賀市カタログ58見出しと4表460行を点検。市内保留19登録に対応する名称欄の一致なし、採用0。"
+      "scope": "唐津市の追加候補の入口/方針確認。市本文の無断転載・引用禁止と、公式実リンク先の地図入口404を確認し追加取得停止。個別施設照合0。"
     },
     "remaining_unfinished_entries": 10311,
     "resolved_entry_ids": [
@@ -27131,7 +27137,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:58:13.271059+00:00",
+  "computed_at": "2026-11-13T15:01:44.059461+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -405426,6 +405432,51 @@
           "url": "https://data.bodik.jp/dataset/2f22035d-4c12-49b3-891b-94837b9e4e03/resource/c1cc67ac-2399-49f2-baab-d1b6f06ec718/download"
         }
       ]
+    },
+    {
+      "acquired_gis_tables": 0,
+      "acquisition": "通常Client interval=2、timeout=20、retries=0、robots適用で市の入口/方針のみ取得。地図入口は市実リンクをweb.openで要求し404を確認した後、同一URL再取得・推測個別リンク・別ツール/形式・別ホスト/アーカイブ取得をしない。地図/文化財本文のrobots・利用条件は未確認。",
+      "actual_map_href": {
+        "label": "唐津デジタルマップ",
+        "url": "https://www.sonicweb-asp.jp/karatsu/"
+      },
+      "attempt_id": "karatsu_official_map_actual_link_404_and_city_reuse_policy_stop_20261114",
+      "checked_at": "2026-11-13T15:01:44.059461+00:00",
+      "individually_screened_pending_entries": 0,
+      "inspected_facility_profiles": 0,
+      "map_observation": {
+        "check_method": "web.open via official municipal link",
+        "http_status": 404,
+        "page_hash": null,
+        "requested_url": "https://www.sonicweb-asp.jp/karatsu/",
+        "status": "map_home_unacquired"
+      },
+      "new_verified_entries": 0,
+      "pending_entries_in_target_city": 19,
+      "privacy_and_storage": "公開URL/hash/日時・実href・未取得理由と条件要約のみ保存。市本文全体・画像・PDF・施設表・キャッシュ・個人名/連絡先は収録しない。",
+      "references": {
+        "entry": {
+          "fetched_at": "2026-11-13T15:00:52.812718+00:00",
+          "page_hash": "6f6ac5de1e5a8b1c516b9fb8afc1d8338c4897b2ae0d9fe969bd0766dd4fe9d2",
+          "title": [
+            "唐津市デジタル市役所 - 唐津市ホームページ"
+          ],
+          "url": "https://www.city.karatsu.lg.jp/site/digital-karatsu/"
+        },
+        "policy": {
+          "fetched_at": "2026-11-13T15:00:54.892702+00:00",
+          "page_hash": "98f64f297e47188f794eb85ffa8a652683e3bd7fe270d0ce7db1b1c0568605c8",
+          "title": [
+            "著作権・免責事項について - このホームページの使い方 - 唐津市ホームページ（広聴広報課）"
+          ],
+          "url": "https://www.city.karatsu.lg.jp/site/userguide/21330.html"
+        }
+      },
+      "rights_observation": "市の著作権・免責事項本文で記載内容の無断転載・引用の禁止、転用希望時の相談条件を確認。個別文化財ページ・PDF・地図の施設情報を辞書の読み根拠へ転記せず、追加取得を止める。オープンデータ公開計画という検索リードは実際のデータ本文取得・利用許諾とは扱わない。",
+      "scope": "唐津の追加資料候補の入口と利用条件だけ。市内保留数は探索対象集合であり、個々の施設や地図全レイヤの精査済み件数ではない。GIS表/個別施設本文の新規取得・名称/全文かな/全所在地の照合0、採用0。",
+      "source_kind": "municipal_reference_availability",
+      "source_publisher": "唐津市",
+      "status": "municipal_source_policy_stop_actual_gis_entrance_http404"
     }
   ],
   "per_prefecture": {
