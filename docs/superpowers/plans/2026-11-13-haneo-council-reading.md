@@ -25,7 +25,7 @@
 
 **Interfaces:** 既存correction_problems/apply_corrections/eligible。対象c82e8762-8514-52c3-afba-a93e36909918。
 
-- [ ] 町議会第161号18頁（index17）の全文ルビ・全所在地、原施設を照合。Expected: 羽尾神社/はねおじんじゃ/滑川町羽尾4806が一致。
-- [ ] 全旧判断を保持してreadingのみ補正し、実効差分+1/-0、全履歴/ID/hash検証。Expected: 他実効登録と全施設が不変。
-- [ ] 全テスト/validate/6形式を確認してデータコミット。Expected: errors0、各形式1行、実IME未実施。
+- [x] 町議会第161号18頁（index17）の全文ルビ・全所在地、原施設を照合。Expected: 羽尾神社/はねおじんじゃ/滑川町羽尾4806が一致。
+- [x] 全旧判断を保持してreadingのみ補正し、実効差分+1/-0、全履歴/ID/hash検証。Expected: 他実効登録と全施設が不変。
+- [x] 全テスト/validate/6形式を確認してデータコミット。Expected: errors0、各形式1行、実IME未実施。
 - [ ] 一度の独立審査、指摘C/Iは1修正パス、最新mainと未反映3登録を保持して統合/検証、台帳と私有証拠を保存。

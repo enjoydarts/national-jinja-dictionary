@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "01cfc8b5847779ad9ff08f1e998397b64e77409f2506614cf4844c1b3b35b3e8",
+    "corrections.json": "4642ae06c3d39eae8434d9eaa1e306e90567cb19f23a83b0d5144ab3461d094c",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -23013,20 +23013,29 @@
         "integration_main_commit": "66e045d9f6e97d522201c0147d83fcc174a7b267",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域調査/採用と旧判断を保持し、東松山市の市名コンテキストによる全文読み3登録補完を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T10:16:40.824088+00:00",
+        "integrated_entry_ids": [
+          "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
+          "36597137-a149-5295-a0f8-90a498d6a0f0",
+          "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1"
+        ],
+        "integration_main_commit": "6068f7553d491d36c8ce1d5203d9ebbc2afe4c7f",
+        "new_verified_entries": 0,
+        "scope": "最新mainの他地域調査/採用と旧判断を保持し、東松山市の市名コンテキストによる全文読み3登録補完を統合。採用を重複計上しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T10:16:40.824088+00:00",
-      "integrated_entry_ids": [
-        "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
-        "36597137-a149-5295-a0f8-90a498d6a0f0",
-        "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1"
+      "checked_at": "2026-11-13T10:21:13.399284+00:00",
+      "entry_ids": [
+        "c82e8762-8514-52c3-afba-a93e36909918"
       ],
-      "integration_main_commit": "6068f7553d491d36c8ce1d5203d9ebbc2afe4c7f",
-      "new_verified_entries": 0,
-      "scope": "最新mainの他地域調査/採用と旧判断を保持し、東松山市の市名コンテキストによる全文読み3登録補完を統合。採用を重複計上しない。"
+      "inspected_targets": 1,
+      "new_verified_entries": 1,
+      "scope": "羽尾神社の原空かなを保持し、町議会資料の同頁全文ルビ/全住所から補完。"
     },
-    "remaining_unfinished_entries": 10522,
+    "remaining_unfinished_entries": 10521,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -23306,6 +23315,7 @@
       "c7af408b-4009-575d-a0dc-6114cb3b3a2b",
       "c7dba9d6-9db7-5719-8aae-bbcd4a9062b1",
       "c82acb82-b985-58f4-b642-62db72dd5944",
+      "c82e8762-8514-52c3-afba-a93e36909918",
       "c9c81001-9572-5ed4-a7a0-f472200f67d1",
       "ca1b6dd7-b2f1-5045-ba93-2e5e31422e84",
       "ca6b0509-a9e5-5469-b24c-453e74ff0a07",
@@ -23378,7 +23388,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T10:16:40.824088+00:00",
+  "computed_at": "2026-11-13T10:21:13.399284+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -321998,6 +322008,233 @@
       "scope": "10頁中index1/2の共通市内調査scopeとindex3/4のカード18/28/40のみを採否審査。同表の他38カードや県内全体を採用/解決済みとは扱わない。",
       "source_kind": "municipality_hosted_citizen_university_report",
       "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）"
+    },
+    {
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-central",
+              "expected_source_hash": "4833332c0d30a08fd6fb5a0d399cfffbb2c454a04b45f8aa2c99924afe039756",
+              "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
+              "related_actual_hrefs": [],
+              "result": "no_related_label_in_inspected_indexes",
+              "source_kind": "article_index",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "bounded_article_index_scope_recorded"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T04:18:47.409607+00:00",
+              "evidence_attempt": "codh_32038_public_poi_literal_full_reading_strict_original_parcels_20261113",
+              "expected_source_hash": "4833332c0d30a08fd6fb5a0d399cfffbb2c454a04b45f8aa2c99924afe039756",
+              "observation": "原読みの大書きや/ゆ/よ・歴史的表記又は全文社号末尾の不足を推定補正せず保留。資料の原かなを保存し、現代表記へ機械的に綴り直さない。",
+              "reference": {
+                "catalog_reference": {
+                  "fetched_at": "2026-11-13T04:06:57.208308+00:00",
+                  "page_hash": "730c0d7f4aa422c71936ff9d93b3329463dbbd55ae53195ab9093eefdeb394b7",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/"
+                },
+                "columns": [
+                  "id",
+                  "都道府県コード",
+                  "名称",
+                  "読み",
+                  "検索文字列",
+                  "住所",
+                  "緯度",
+                  "経度",
+                  "分類1",
+                  "分類2",
+                  "分類3"
+                ],
+                "data_rows": 32038,
+                "encoding": "utf-8-sig",
+                "fetched_at": "2026-11-13T04:07:50.744955+00:00",
+                "license": "CC-BY-4.0",
+                "page_hash": "d4cd6bebb27378a57545829a30249439a7d2a30c68f280e669faef1f32a3d9c6",
+                "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20250515.csv"
+              },
+              "source_kind": "gazetteer_reference",
+              "source_publisher": "ROIS-DS Center for Open Data in the Humanities (CODH)",
+              "source_rows": [
+                {
+                  "csv_record_number": 6425,
+                  "full_modern_designation_check": false,
+                  "full_reading_problem": "explicit reading lacks full shrine-name ending; requires review",
+                  "source_fields": {
+                    "id": "110000169600",
+                    "住所": "埼玉県 比企郡滑川町 大字羽尾4806番地",
+                    "分類1": "施設",
+                    "分類2": "埋葬・信仰・宗教施設",
+                    "分類3": "神社",
+                    "名称": "羽尾神社",
+                    "読み": "はねおじんじや",
+                    "都道府県コード": "11"
+                  }
+                }
+              ],
+              "status": "exact_name_address_historical_or_incomplete_kana_retained"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T10:21:13.399284+00:00",
+              "evidence_attempt": "saitama_haneo_council161_same_page_full_ruby_and_parcel_adopted_20261113",
+              "observation": "町議会第161号18頁の表題羽尾神社に付く全ルビと、同頁社殿写真の同名/全所在地を実画像で照合。各漢字のルビを順番通りに一つの正式名へ転写し、接尾語や小書きかなを推測補完しない。",
+              "reference": {
+                "address_raw": "滑川町羽尾4806",
+                "bytes": 2635678,
+                "checked_at": "2026-11-13T10:21:13.399284+00:00",
+                "excerpt": "羽尾神社 / はねおじんじゃ / 滑川町羽尾4806",
+                "excerpt_processing": "実表題の文字別ルビを一つの正式名の読みとして転写し、同頁の名称/所在地の最小事実を区切って表示。推定接尾語や仮名修正なし。",
+                "fetched_at": "2026-11-13T09:21:01.371901+00:00",
+                "label": "namegawa-council161",
+                "literal_ruby_pairs": [
+                  [
+                    "羽",
+                    "はね"
+                  ],
+                  [
+                    "尾",
+                    "お"
+                  ],
+                  [
+                    "神",
+                    "じん"
+                  ],
+                  [
+                    "社",
+                    "じゃ"
+                  ]
+                ],
+                "locator": "最終頁「表紙の写真」表題の羽尾神社に付いた全文ルビと、社殿写真下の所在地欄。",
+                "name_raw": "羽尾神社",
+                "page_hash": "d621bb31c1b8ff08b948aec21e2d1cb32983f433e38beab4b7314ca1933e7411",
+                "printed_address_context": "羽尾神社 所在地（滑川町羽尾4806）",
+                "printed_page": "18",
+                "reading_raw": "はねおじんじゃ",
+                "reading_scope": "full_name",
+                "rights_reference": {
+                  "bytes": 39083,
+                  "fetched_at": "2026-11-13T09:20:57.653238+00:00",
+                  "label": "namegawa-policy",
+                  "page_hash": "0c7f7d5662237b478ade46c54ab1daee806f232d9cd7d6e38ca90b26d6d60121",
+                  "url": "https://www.town.namegawa.saitama.jp/1357.html"
+                },
+                "rights_scope": "町の一般著作権条件の法定例外と一般転載許諾を区別。最小の名称/明示全文かな/全所在地と出典位置のみ候補化し、記事本文/画像/写真/個人名/全号は収録しない。 深いページへのリンクはトップページを求める案内を保持し、人向け出典案内は町トップを示す。正確な資料URLは正本の出典メタデータへ保持。",
+                "source_kind": "municipal_council_newsletter",
+                "source_page_index": 17,
+                "source_publisher": "滑川町議会",
+                "title": "なめがわ議会だより 第161号（令和8年5月1日）",
+                "url": "https://www.town.namegawa.saitama.jp/material/files/group/12/namegawagikaidayori_vol161.pdf",
+                "visual_review": {
+                  "method": "PDFKit描画をview_imageで目視、表題の全文ルビと写真下の全所在地を同頁照合。",
+                  "page_index": 17,
+                  "rendered_page_sha256": "26221dd8ac952b3d8b1b7b7c3015040be7353215499ef28f4547a18e782fbfb7"
+                }
+              },
+              "status": "municipal_council_same_page_explicit_full_ruby_and_full_parcel_adopted"
+            }
+          ],
+          "address": "滑川町羽尾4806",
+          "agency_listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8972/",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "c82e8762-8514-52c3-afba-a93e36909918",
+          "expected_source_hash": "4833332c0d30a08fd6fb5a0d399cfffbb2c454a04b45f8aa2c99924afe039756",
+          "facility_id": "1a8b5d82-bab0-5e88-97a7-da19a82c080d",
+          "listed_name": "羽尾神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "埼玉県",
+          "prefecture_code": "11",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "羽尾神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "adopted_references": [
+        {
+          "address_raw": "滑川町羽尾4806",
+          "bytes": 2635678,
+          "checked_at": "2026-11-13T10:21:13.399284+00:00",
+          "excerpt": "羽尾神社 / はねおじんじゃ / 滑川町羽尾4806",
+          "excerpt_processing": "実表題の文字別ルビを一つの正式名の読みとして転写し、同頁の名称/所在地の最小事実を区切って表示。推定接尾語や仮名修正なし。",
+          "fetched_at": "2026-11-13T09:21:01.371901+00:00",
+          "label": "namegawa-council161",
+          "literal_ruby_pairs": [
+            [
+              "羽",
+              "はね"
+            ],
+            [
+              "尾",
+              "お"
+            ],
+            [
+              "神",
+              "じん"
+            ],
+            [
+              "社",
+              "じゃ"
+            ]
+          ],
+          "locator": "最終頁「表紙の写真」表題の羽尾神社に付いた全文ルビと、社殿写真下の所在地欄。",
+          "name_raw": "羽尾神社",
+          "page_hash": "d621bb31c1b8ff08b948aec21e2d1cb32983f433e38beab4b7314ca1933e7411",
+          "printed_address_context": "羽尾神社 所在地（滑川町羽尾4806）",
+          "printed_page": "18",
+          "reading_raw": "はねおじんじゃ",
+          "reading_scope": "full_name",
+          "rights_reference": {
+            "bytes": 39083,
+            "fetched_at": "2026-11-13T09:20:57.653238+00:00",
+            "label": "namegawa-policy",
+            "page_hash": "0c7f7d5662237b478ade46c54ab1daee806f232d9cd7d6e38ca90b26d6d60121",
+            "url": "https://www.town.namegawa.saitama.jp/1357.html"
+          },
+          "rights_scope": "町の一般著作権条件の法定例外と一般転載許諾を区別。最小の名称/明示全文かな/全所在地と出典位置のみ候補化し、記事本文/画像/写真/個人名/全号は収録しない。 深いページへのリンクはトップページを求める案内を保持し、人向け出典案内は町トップを示す。正確な資料URLは正本の出典メタデータへ保持。",
+          "source_kind": "municipal_council_newsletter",
+          "source_page_index": 17,
+          "source_publisher": "滑川町議会",
+          "title": "なめがわ議会だより 第161号（令和8年5月1日）",
+          "url": "https://www.town.namegawa.saitama.jp/material/files/group/12/namegawagikaidayori_vol161.pdf",
+          "visual_review": {
+            "method": "PDFKit描画をview_imageで目視、表題の全文ルビと写真下の全所在地を同頁照合。",
+            "page_index": 17,
+            "rendered_page_sha256": "26221dd8ac952b3d8b1b7b7c3015040be7353215499ef28f4547a18e782fbfb7"
+          }
+        }
+      ],
+      "attempt_id": "saitama_haneo_council161_same_page_full_ruby_and_parcel_adopted_20261113",
+      "checked_at": "2026-11-13T10:21:13.399284+00:00",
+      "inspected_targets": 1,
+      "manual_resolved_entry_ids": [
+        "c82e8762-8514-52c3-afba-a93e36909918"
+      ],
+      "new_verified_entries": 1,
+      "policy_reference": {
+        "bytes": 39083,
+        "fetched_at": "2026-11-13T09:20:57.653238+00:00",
+        "label": "namegawa-policy",
+        "page_hash": "0c7f7d5662237b478ade46c54ab1daee806f232d9cd7d6e38ca90b26d6d60121",
+        "url": "https://www.town.namegawa.saitama.jp/1357.html"
+      },
+      "preservation": "原空かな・正式名・全住所・全旧調査/補正/ID/hashを保持。写真/記事全体/全号/個人名は収録しない。町の一般著作権条件を全体の再配布許諾としない。",
+      "scope": "通常クライアントで同じ公開HTTPS資料と町の実利用条件を取得。全18頁のテキスト抽出と最終頁原画像の個別確認を区別し、他の神社・全地域の読み調査完了ではない。",
+      "source_kind": "municipal_council_newsletter",
+      "source_publisher": "滑川町議会"
     }
   ],
   "per_prefecture": {
@@ -322083,11 +322320,11 @@
     },
     "11": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 15,
+        "insufficient_evidence_in_inspected_sources": 14,
         "investigation_incomplete": 0,
         "judgment_required": 3
       },
-      "unfinished_entries": 18
+      "unfinished_entries": 17
     },
     "12": {
       "categories": {
@@ -466139,98 +466376,6 @@
         }
       ],
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-central",
-          "expected_source_hash": "4833332c0d30a08fd6fb5a0d399cfffbb2c454a04b45f8aa2c99924afe039756",
-          "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
-          "related_actual_hrefs": [],
-          "result": "no_related_label_in_inspected_indexes",
-          "source_kind": "article_index",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "bounded_article_index_scope_recorded"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T04:18:47.409607+00:00",
-          "evidence_attempt": "codh_32038_public_poi_literal_full_reading_strict_original_parcels_20261113",
-          "expected_source_hash": "4833332c0d30a08fd6fb5a0d399cfffbb2c454a04b45f8aa2c99924afe039756",
-          "observation": "原読みの大書きや/ゆ/よ・歴史的表記又は全文社号末尾の不足を推定補正せず保留。資料の原かなを保存し、現代表記へ機械的に綴り直さない。",
-          "reference": {
-            "catalog_reference": {
-              "fetched_at": "2026-11-13T04:06:57.208308+00:00",
-              "page_hash": "730c0d7f4aa422c71936ff9d93b3329463dbbd55ae53195ab9093eefdeb394b7",
-              "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/"
-            },
-            "columns": [
-              "id",
-              "都道府県コード",
-              "名称",
-              "読み",
-              "検索文字列",
-              "住所",
-              "緯度",
-              "経度",
-              "分類1",
-              "分類2",
-              "分類3"
-            ],
-            "data_rows": 32038,
-            "encoding": "utf-8-sig",
-            "fetched_at": "2026-11-13T04:07:50.744955+00:00",
-            "license": "CC-BY-4.0",
-            "page_hash": "d4cd6bebb27378a57545829a30249439a7d2a30c68f280e669faef1f32a3d9c6",
-            "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20250515.csv"
-          },
-          "source_kind": "gazetteer_reference",
-          "source_publisher": "ROIS-DS Center for Open Data in the Humanities (CODH)",
-          "source_rows": [
-            {
-              "csv_record_number": 6425,
-              "full_modern_designation_check": false,
-              "full_reading_problem": "explicit reading lacks full shrine-name ending; requires review",
-              "source_fields": {
-                "id": "110000169600",
-                "住所": "埼玉県 比企郡滑川町 大字羽尾4806番地",
-                "分類1": "施設",
-                "分類2": "埋葬・信仰・宗教施設",
-                "分類3": "神社",
-                "名称": "羽尾神社",
-                "読み": "はねおじんじや",
-                "都道府県コード": "11"
-              }
-            }
-          ],
-          "status": "exact_name_address_historical_or_incomplete_kana_retained"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "滑川町羽尾4806",
-      "agency_listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8972/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "c82e8762-8514-52c3-afba-a93e36909918",
-      "expected_source_hash": "4833332c0d30a08fd6fb5a0d399cfffbb2c454a04b45f8aa2c99924afe039756",
-      "facility_id": "1a8b5d82-bab0-5e88-97a7-da19a82c080d",
-      "listed_name": "羽尾神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "埼玉県",
-      "prefecture_code": "11",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "羽尾神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
     {
       "additional_source_reviews": [
@@ -1238419,7 +1238564,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10522,
+    "retained_unresolved_entries": 10521,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1241521,11 +1241666,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10325,
+      "insufficient_evidence_in_inspected_sources": 10324,
       "investigation_incomplete": 0,
       "judgment_required": 197
     },
-    "distinct_surfaces": 4220,
-    "unfinished_entries": 10522
+    "distinct_surfaces": 4219,
+    "unfinished_entries": 10521
   }
 }
