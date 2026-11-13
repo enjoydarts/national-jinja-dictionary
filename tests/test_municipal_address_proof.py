@@ -15,13 +15,15 @@ EXAMPLES=[
  ('佐賀郡川副町','佐賀市川副町',2,'2007-10-01','大字鹿江'),
  ('佐賀郡東与賀町','佐賀市東与賀町',2,'2007-10-01','大字下古賀'),
  ('佐賀郡久保田町','佐賀市久保田町',2,'2007-10-01','大字新田'),
+ ('小城郡小城町','小城市小城町',1,'2005-03-01','大字畑田'),
+ ('神埼郡千代田町','神埼市千代田町',2,'2006-03-20','大字直鳥'),
 ]
 
 
 def fixture(rule=EXAMPLES[4],suffix='大字架空123-4'):
  old,new,page,date,example=rule
  old_example=old+example+'○○番地'
- new_example=new+example.removeprefix('大字')+'○○番地' if old=='神埼郡三瀬村' else new+example+'○○番地'
+ new_example=new+example.removeprefix('大字')+'○○番地' if old in ('神埼郡三瀬村','小城郡小城町','神埼郡千代田町') else new+example+'○○番地'
  d=build_dataset('saga_fixture','41','佐賀県','架空県神社庁',
      [row(name='架空神社',reading_raw='',address=old+suffix)])
  c=correction(d,{'reading':'かくうじんじゃ'});f=d['facilities'][0];e=d['entries'][0]
@@ -36,7 +38,7 @@ def fixture(rule=EXAMPLES[4],suffix='大字架空123-4'):
          page_hash='19ef4a4d2ff1ece43a6e2bb8ef9822b1766f77367cf9528c5cfc47dcac100308',
          source_publisher='佐賀県',pdf_page=page,effective_date=date,
          former_example_raw=old_example,current_example_raw=new_example,
-         locator=f'{page}ページ 佐賀市の合併後住所表示例',
+         locator=f'{page}ページ 合併後住所表示例',
          fetched_at='2026-11-13T00:00:00+09:00',checked_at='2026-11-13T00:01:00+09:00'))
  return d,c,ref
 
@@ -51,10 +53,41 @@ class MunicipalAddressProofTest(unittest.TestCase):
         self.assertEqual(out['facilities'][0]['id'],before['facilities'][0]['id'])
         self.assertEqual(d,before)
 
-    def test_all_seven_documented_prefixes_accept_only_the_matching_page_example(self):
+    def test_documented_prefixes_accept_only_the_matching_page_example(self):
         for rule in EXAMPLES:
             with self.subTest(prefix=rule[0]):
                 d,c,ref=fixture(rule);self.assertEqual(len(eligible(apply_corrections(d,c))),1)
+
+    def test_ogi_chiyoda_preserve_original_and_reject_wrong_evidence_or_parcel(self):
+        for rule in EXAMPLES[-2:]:
+            with self.subTest(prefix=rule[0]):
+                d,c,ref=fixture(rule);before=copy.deepcopy(d)
+                out=apply_corrections(d,c)
+                self.assertEqual(len(eligible(out)),1)
+                self.assertEqual(out['facilities'],before['facilities'])
+                self.assertEqual(out['entries'][0]['reading_raw'],'')
+                self.assertEqual(out['entries'][0]['reading'],'かくうじんじゃ')
+            for mutation in ['missing','page','date','example','parcel','locality','glyph']:
+                with self.subTest(prefix=rule[0],mutation=mutation):
+                    d,c,ref=fixture(rule)
+                    proof=ref['address_identity_proof'];change=proof['change_reference']
+                    if mutation=='missing':ref.pop('address_identity_proof')
+                    elif mutation=='page':change['pdf_page']=3-rule[2]
+                    elif mutation=='date':change['effective_date']='2005-10-01'
+                    elif mutation=='example':change['current_example_raw']='小城市小城町池上○○番地'
+                    else:
+                        suffix={'parcel':'大字架空123-40','locality':'大字別所123-4','glyph':'大字架空字別所123-4'}[mutation]
+                        ref['address_raw']='佐賀県'+rule[1]+suffix
+                        proof['reference_address_raw']=ref['address_raw']
+                        ref['excerpt']='架空神社（かくうじんじゃ） '+ref['address_raw']
+                    self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+    def test_ogi_prefix_does_not_authorize_old_locality_glyph_changes(self):
+        d,c,ref=fixture(EXAMPLES[-2],suffix='大字晴氣123-4')
+        ref['address_raw']='佐賀県小城市小城町晴気123-4'
+        ref['excerpt']='架空神社（かくうじんじゃ） '+ref['address_raw']
+        ref['address_identity_proof']['reference_address_raw']=ref['address_raw']
+        self.assertEqual(eligible(apply_corrections(d,c)),[])
 
     def test_missing_or_unbound_evidence_leaves_entry_pending(self):
         mutations=[
