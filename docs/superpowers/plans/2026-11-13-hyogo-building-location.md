@@ -33,4 +33,6 @@
 
 ## 最終統合
 
-- [ ] Fresh whole-branch review、Critical/Importantは一度の修正。最新main保持で統合し検証、専用worktree片付け。
+- [x] Fresh whole-branch review、Critical/Importantは一度の修正。最新main保持で統合し検証、専用worktree片付け。
+
+完了記録: 独立審査は実資料の個別同定と+1/-0・全10868 ID/旧履歴保持を支持。Important1件（不正な原詳細根拠での例外停止）を初回/検証/再適用12ケースのRED→GREENで修正し、Critical0/Minor0。mainへ1827832を統合、661テスト成功、正本検証errors0/reviews135。全国315解消/10,553保留、兵庫残12。6形式の自動検査と実IME未実施、20261112までの登記窓、事実項目だけの採用と全文再配布許諾の未取得を区別。実行記録をリポジトリ外へ退避し専用作業ツリーを削除。
