@@ -12,6 +12,7 @@ from njd.normalize import normalize_reading
 from njd.locations import raw_address
 from njd.hyogo_profile_review import hyogo_profile_problems
 from njd.current_address_note import current_address_note_problems
+from njd.reading_variants import variant_problems,variant_id,KIND as VARIANT_KIND,SUPERSEDED as VARIANT_SUPERSEDED
 from njd.address_layout import address_layout_problems,REASON as ADDRESS_LAYOUT_REASON
 
 
@@ -22,6 +23,7 @@ def _plain(value):
 def review_problems(review, facility, entry, source=None):
     problems=[]
     if not isinstance(review,dict):return ['invalid human review']
+    if review.get('review_kind')==VARIANT_KIND:return variant_problems(review,facility,entry,source)
     layout_requested=review.get('review_kind') in ('single_address_linebreak','single_address_current_note')
     layout_checker=current_address_note_problems if review.get('review_kind')=='single_address_current_note' else address_layout_problems
     layout_issues=layout_checker(review,facility,entry) if layout_requested else []
@@ -158,17 +160,32 @@ def reviewed_output(review,facility,entry,source=None):
 def apply_reviews(data,document):
     if document.get('schema_version')!=1 or not isinstance(document.get('entries'),dict):raise ValueError('unsupported human review document')
     result=copy.deepcopy(data);fs={f['id']:f for f in result['facilities']};applied=[];pending=[];seen=set();children=[]
+    variant_roots={eid for eid,review in document['entries'].items() if isinstance(review,dict) and review.get('review_kind')==VARIANT_KIND}
+    result['entries']=[e for e in result['entries'] if not (e.get('derivation_kind')==VARIANT_KIND and isinstance(e.get('parent_entry_id'),str) and e['parent_entry_id'] in variant_roots)]
     for entry in result['entries']:
         review=document['entries'].get(entry['id'])
         if review is None:continue
         seen.add(entry['id']);f=fs[entry['facility_id']]
         source=result['collection'].get('sources',{}).get(f.get('source_key'),result['collection'])
         problems=review_problems(review,f,entry,source)
+        if isinstance(review,dict) and review.get('review_kind')==VARIANT_KIND and entry.get('parent_entry_id'):
+            problems.append('derived entry cannot be a full-reading variant review root')
         if problems:
             entry['status']='pending';entry['reason']='; '.join(problems);entry['human_review']=copy.deepcopy(review)
             pending.append(entry['id']);continue
         f['status']='verified';f['reason']=''
         original=copy.deepcopy(entry)
+        if review.get('review_kind')==VARIANT_KIND:
+            for output in review['outputs']:
+                target=copy.deepcopy(original)
+                target.pop('superseded_by_review',None)
+                target.update(id=variant_id(original['id'],output['surface'],output['reading']),parent_entry_id=original['id'],derivation_kind=VARIANT_KIND,
+                    surface=output['surface'],reading=output['reading'],reading_url=output['reading_url'],reading_source_kind='user_review',status='verified',reason='',
+                    checked_at=review['recorded_at'],evidence=review['reason'],human_review=copy.deepcopy(review))
+                children.append(target)
+            entry.update(status='excluded',reason=VARIANT_SUPERSEDED,superseded_by_review=review['case_id'],human_review=copy.deepcopy(review))
+            applied.append(original['id'])
+            continue
         for output in review['outputs']:
             target=copy.deepcopy(original) if review.get('split') else entry
             target.pop('correction',None)
