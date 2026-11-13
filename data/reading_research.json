@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "a0fbb3cfc79639a2a8c74338ddb516f786cf937ae950269965d0aebb30bcdd69",
+    "corrections.json": "41144a38357b6dffd5564f615069d8ee785bc639edcd11504219634aa36a28d5",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -22973,18 +22973,27 @@
         "integration_main_commit": "b2d0a17221164c95fd48c9fd8a0b5e83025f8010",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域の調査・分類変更・補完を保持して貴船神社の所在地補完1登録と二子/西濱の保留根拠を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T09:09:19.750914+00:00",
+        "entry_ids": [
+          "403b290c-e9e9-5446-b021-bc5a574949f3"
+        ],
+        "new_verified_entries": 1,
+        "retained_pending_entries": 10526,
+        "scope": "高槻市稲荷神社1登録の神社庁実リンク詳細による全文読み補正。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T09:09:19.750914+00:00",
+      "checked_at": "2026-11-13T10:14:16.935667+00:00",
       "entry_ids": [
-        "403b290c-e9e9-5446-b021-bc5a574949f3"
+        "ac90678f-a6af-5964-a3d8-9ababc848e35"
       ],
       "new_verified_entries": 1,
-      "retained_pending_entries": 10526,
-      "scope": "高槻市稲荷神社1登録の神社庁実リンク詳細による全文読み補正。"
+      "retained_pending_entries": 10525,
+      "scope": "越前市岡本町の岡太神社1登録を実資料の全文かなと全所在地により個別解消。"
     },
-    "remaining_unfinished_entries": 10526,
+    "remaining_unfinished_entries": 10525,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -23228,6 +23237,7 @@
       "a960b280-1406-550c-bb2d-b697e40ee6eb",
       "a9a1a0b4-c86f-5a11-8540-c143de3c8560",
       "a9c4131f-183a-5ae8-b534-a45aeba70594",
+      "ac90678f-a6af-5964-a3d8-9ababc848e35",
       "ad7a3a49-3c4d-5e6a-980f-13771aa56684",
       "aea764bc-c522-5d9b-b4d8-01312e4732ea",
       "aedb021b-c5a1-5a60-904c-696b64a2156f",
@@ -23332,7 +23342,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T09:09:19.750914+00:00",
+  "computed_at": "2026-11-13T10:14:16.935667+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -320673,6 +320683,255 @@
       "terms_observation": "案内本文と専用利用規約2でCC表示2.1日本・出典クレジット・加工表示を確認。個別ページのデータのみへの適用であり、一般市ページ・第三者サイト・既存の取得停止資料に流用しない。",
       "title": "避難所情報（避難所位置データ・緊急避難場所位置データ）",
       "version_observation": "更新情報は平成27年4月1日。現在の全指定状況を再構築した表、又は2026年版の名簿とは扱わない。"
+    },
+    {
+      "acquisition": "新規HTTP取得なし。既取得キャッシュをClient offline=Trueで再読し、過去に記録した本文hashの同一性と主記事の実文を確認。",
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "address_raw": "福井県越前市岡本町２１－１８",
+              "authority_evidence": "本文COPYRIGHT FUKUI-SHRINE AGENCY。神社庁トップ本文に県内10支部・包括約1700社の説明。",
+              "checked_at": "2026-11-12T01:53:34.366371+00:00",
+              "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
+              "locator": "神社名・鎮座地の表",
+              "name_raw": "岡太神社",
+              "observation": "名称・全所在地一致、読み記載なし。",
+              "page_hash": "617aafab6dd4390a49868ef1155a8d17583eb6d4053a17bd6483bf43fd02669c",
+              "reading_raw": "",
+              "remaining_requirement": "同じ名称・全所在地の神社について一次資料に明示された全文読みが必要。",
+              "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
+              "source_kind": "agency",
+              "status": "inspected_not_adopted",
+              "title": "岡太神社 | 福井県神社庁",
+              "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20160805_132958"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T04:51:17.196108+00:00",
+              "daily_as_of": "20261111",
+              "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+              "evidence_attempt": "nta_manual_judgment_review_20261112",
+              "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
+              "matched_active_corporate_numbers": [],
+              "monthly_snapshot": "20261030",
+              "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
+              "result": "no_unique_active_exact_name_full_address_identity",
+              "source_kind": "government_corporate_register",
+              "source_publisher": "国税庁",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-coast",
+              "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
+              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、同定資料との個別照合を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "福井県越前市粟田部町19-3",
+                "checked_at": "2026-11-12T06:57:58.234840+00:00",
+                "fetched_at": "2026-11-12T06:57:58.217829+00:00",
+                "name_raw": "岡太神社",
+                "page_hash": "2addc29cd0210c05014c96f220cc0709566edb17240c5767f172f30933d9b766",
+                "reading_context_raw": "岡太神社（おかふとじんじゃ）は",
+                "reading_raw": "おかふとじんじゃ",
+                "subject_title_raw": "岡太神社　福井県越前市粟田部町",
+                "url": "https://www.buccyake-kojiki.com/archives/1072288619.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-coast",
+              "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
+              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、同定資料との個別照合を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "protected_overlays": [
+                "corrections"
+              ],
+              "reference": {
+                "address_raw": "福井県越前市岡本町21-18",
+                "checked_at": "2026-11-12T06:58:05.353369+00:00",
+                "fetched_at": "2026-11-12T06:58:05.340120+00:00",
+                "name_raw": "岡太神社",
+                "page_hash": "4421afb8227f2c1facd0533a1db7cc3b8b11002610efbac9621a3d1e112f7b76",
+                "reading_context_raw": "岡太神社（おかふとじんじゃ）は",
+                "reading_raw": "おかふとじんじゃ",
+                "subject_title_raw": "岡太神社　福井県越前市岡本町",
+                "url": "https://www.buccyake-kojiki.com/archives/1072347400.html"
+              },
+              "result": "protected_existing_judgment_reading_or_identity",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T10:14:16.935667+00:00",
+              "evidence_attempt": "fukui_okamoto_okafuto_protected_candidate_individual_reference_review_20261113",
+              "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
+              "observation": "原読みの町名らしい文字列を推定修正せず、岡本町主記事に明示された全文かなと原全所在地の一致を個別審査。粟田部町・大滝町の同名施設は別として保持。",
+              "reference": {
+                "address_raw": "福井県越前市岡本町21-18",
+                "authority_observation": "非公式二次資料の主記事として確認。神社自身・神社庁・行政の発音確認ではない。",
+                "checked_at": "2026-11-13T09:22:21.107633+00:00",
+                "excerpt": "岡太神社（おかふとじんじゃ）は、福井県越前市岡本町にある神社。北陸本線の武生駅の西約2.5キロ。御朱印の有無は不明。\n［住所］福井県越前市岡本町21-18",
+                "fetched_at": "2026-11-12T06:58:05.340120+00:00",
+                "locator": "主記事の正式名と直後括弧の独立全文かな、同じ主対象の住所欄",
+                "name_raw": "岡太神社",
+                "page_hash": "4421afb8227f2c1facd0533a1db7cc3b8b11002610efbac9621a3d1e112f7b76",
+                "policy_references": [
+                  {
+                    "checked_at": "2026-11-13T09:22:21.107633+00:00",
+                    "fetched_at": "2026-11-12T05:07:35.698332+00:00",
+                    "page_hash": "b53eece0ea23186991902227c2f52299b4e69c539327c3b66df2fc9f6fa80354",
+                    "url": "https://www.buccyake-kojiki.com/archives/1000485485.html"
+                  },
+                  {
+                    "checked_at": "2026-11-13T09:22:21.107633+00:00",
+                    "fetched_at": "2026-11-12T05:07:53.372830+00:00",
+                    "page_hash": "e6f5efff7bbe3f0a2f2e314b40e3bb820670c0e1f15fb4fb79e09d6c3853233f",
+                    "url": "https://www.buccyake-kojiki.com/archives/1082202686.html"
+                  }
+                ],
+                "reading_raw": "おかふとじんじゃ",
+                "reading_scope": "full_name",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "岡太神社　福井県越前市岡本町 | 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1072347400.html"
+              },
+              "status": "previously_protected_candidate_individually_rechecked_full_literal_reading"
+            }
+          ],
+          "address": "福井県越前市岡本町２１－１８",
+          "agency_listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
+          "category": "judgment_required",
+          "entry_id": "ac90678f-a6af-5964-a3d8-9ababc848e35",
+          "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
+          "facility_id": "db5316d1-3660-5c84-9c50-19a3e42c910f",
+          "listed_name": "岡太神社",
+          "nta_result": "not checked for current source snapshot",
+          "prefecture": "福井県",
+          "prefecture_code": "18",
+          "reading_raw": "おかもとちょう",
+          "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_locality_or_other_label_in_reading",
+          "status": "unfinished",
+          "surface": "岡太神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "not_checked_for_current_record"
+        }
+      ],
+      "attempt_id": "fukui_okamoto_okafuto_protected_candidate_individual_reference_review_20261113",
+      "authority_limits": "当該記事と免責事項は非公式・査読なし・正確性保証なしと表示。社名全文の実資料上の明示として限定採用し、神社自身又は神社庁の公式な発音認定とはしない。",
+      "checked_at": "2026-11-13T10:14:16.935667+00:00",
+      "correction_validation_problems": [],
+      "inspected_targets": 1,
+      "manual_resolved_entry_ids": [
+        "ac90678f-a6af-5964-a3d8-9ababc848e35"
+      ],
+      "new_verified_entries": 1,
+      "observation": "旧自動処理のprotected_existing_judgmentは既補正の上書きをしないための保護結果であり、この記事の全文かな又は全地番が欠けるという意味ではなかった。旧判断を履歴に残し、同じIDの原文を変更せず明示された新根拠で読みだけを補正。",
+      "policy_references": [
+        {
+          "checked_at": "2026-11-13T09:22:21.107633+00:00",
+          "fetched_at": "2026-11-12T05:07:35.698332+00:00",
+          "page_hash": "b53eece0ea23186991902227c2f52299b4e69c539327c3b66df2fc9f6fa80354",
+          "url": "https://www.buccyake-kojiki.com/archives/1000485485.html"
+        },
+        {
+          "checked_at": "2026-11-13T09:22:21.107633+00:00",
+          "fetched_at": "2026-11-12T05:07:53.372830+00:00",
+          "page_hash": "e6f5efff7bbe3f0a2f2e314b40e3bb820670c0e1f15fb4fb79e09d6c3853233f",
+          "url": "https://www.buccyake-kojiki.com/archives/1082202686.html"
+        }
+      ],
+      "references": [
+        {
+          "address_raw": "福井県越前市岡本町21-18",
+          "authority_observation": "非公式二次資料の主記事として確認。神社自身・神社庁・行政の発音確認ではない。",
+          "checked_at": "2026-11-13T09:22:21.107633+00:00",
+          "excerpt": "岡太神社（おかふとじんじゃ）は、福井県越前市岡本町にある神社。北陸本線の武生駅の西約2.5キロ。御朱印の有無は不明。\n［住所］福井県越前市岡本町21-18",
+          "fetched_at": "2026-11-12T06:58:05.340120+00:00",
+          "locator": "主記事の正式名と直後括弧の独立全文かな、同じ主対象の住所欄",
+          "name_raw": "岡太神社",
+          "page_hash": "4421afb8227f2c1facd0533a1db7cc3b8b11002610efbac9621a3d1e112f7b76",
+          "policy_references": [
+            {
+              "checked_at": "2026-11-13T09:22:21.107633+00:00",
+              "fetched_at": "2026-11-12T05:07:35.698332+00:00",
+              "page_hash": "b53eece0ea23186991902227c2f52299b4e69c539327c3b66df2fc9f6fa80354",
+              "url": "https://www.buccyake-kojiki.com/archives/1000485485.html"
+            },
+            {
+              "checked_at": "2026-11-13T09:22:21.107633+00:00",
+              "fetched_at": "2026-11-12T05:07:53.372830+00:00",
+              "page_hash": "e6f5efff7bbe3f0a2f2e314b40e3bb820670c0e1f15fb4fb79e09d6c3853233f",
+              "url": "https://www.buccyake-kojiki.com/archives/1082202686.html"
+            }
+          ],
+          "reading_raw": "おかふとじんじゃ",
+          "reading_scope": "full_name",
+          "source_kind": "article",
+          "source_publisher": "神社と古事記（非公式二次資料）",
+          "title": "岡太神社　福井県越前市岡本町 | 神社と古事記",
+          "url": "https://www.buccyake-kojiki.com/archives/1072347400.html"
+        }
+      ],
+      "rights_scope": "免責・プライバシー・対象記事の点検範囲に個別の明示的な転用禁止は見当たらない。包括転載許諾と解釈せず、正式名・明示全文かな・所在地の限定事実と出典だけを保存。記事全文・写真・連絡先・キャッシュは収録しない。",
+      "scope": "既に点検済みで自動工程が補正を保護した岡本町の1登録を個別再審査。福井県全保留・全資料の解決ではない。",
+      "source_kind": "article",
+      "source_publisher": "神社と古事記（非公式二次資料）",
+      "status": "one_protected_correction_resolved_by_individual_literal_source_review",
+      "superseded_correction_history": {
+        "ac90678f-a6af-5964-a3d8-9ababc848e35": {
+          "changes": {
+            "reading": "おかもとちょう"
+          },
+          "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
+          "facility_id": "db5316d1-3660-5c84-9c50-19a3e42c910f",
+          "identity_match": {
+            "agency_address": "福井県越前市岡本町２１－１８",
+            "agency_name": "岡太神社"
+          },
+          "original": {
+            "address": "福井県越前市岡本町２１－１８",
+            "listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
+            "name_raw": "岡太神社",
+            "reading_raw": "おかもとちょう"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_locality_or_other_label_in_reading",
+          "references": [
+            {
+              "address_raw": "福井県越前市岡本町２１－１８",
+              "checked_at": "2026-11-08T14:32:07.375935+00:00",
+              "excerpt": "おかもとちょう 岡太神社 福井県越前市岡本町２１－１８",
+              "locator": "table tr[657]",
+              "name_raw": "岡太神社",
+              "page_hash": "a7f7dc05b4c159eb7288c1c913c4c06bbc8f1878b090cd1e6f540dcb529c4446",
+              "reading_raw": "おかもとちょう",
+              "source_kind": "agency",
+              "title": "福井県神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      },
+      "verified_eligible_delta": [
+        "ac90678f-a6af-5964-a3d8-9ababc848e35"
+      ]
     }
   ],
   "per_prefecture": {
@@ -320816,9 +321075,9 @@
       "categories": {
         "insufficient_evidence_in_inspected_sources": 0,
         "investigation_incomplete": 0,
-        "judgment_required": 4
+        "judgment_required": 3
       },
-      "unfinished_entries": 4
+      "unfinished_entries": 3
     },
     "19": {
       "categories": {
@@ -471083,112 +471342,6 @@
       "surface": "坂門一言神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "address_raw": "福井県越前市岡本町２１－１８",
-          "authority_evidence": "本文COPYRIGHT FUKUI-SHRINE AGENCY。神社庁トップ本文に県内10支部・包括約1700社の説明。",
-          "checked_at": "2026-11-12T01:53:34.366371+00:00",
-          "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
-          "locator": "神社名・鎮座地の表",
-          "name_raw": "岡太神社",
-          "observation": "名称・全所在地一致、読み記載なし。",
-          "page_hash": "617aafab6dd4390a49868ef1155a8d17583eb6d4053a17bd6483bf43fd02669c",
-          "reading_raw": "",
-          "remaining_requirement": "同じ名称・全所在地の神社について一次資料に明示された全文読みが必要。",
-          "scope": "対象の個別本文と印刷資料に限定。読み資料と所在地資料を同一参照であるかのように合成しない。",
-          "source_kind": "agency",
-          "status": "inspected_not_adopted",
-          "title": "岡太神社 | 福井県神社庁",
-          "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20160805_132958"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T04:51:17.196108+00:00",
-          "daily_as_of": "20261111",
-          "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
-          "evidence_attempt": "nta_manual_judgment_review_20261112",
-          "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
-          "matched_active_corporate_numbers": [],
-          "monthly_snapshot": "20261030",
-          "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
-          "result": "no_unique_active_exact_name_full_address_identity",
-          "source_kind": "government_corporate_register",
-          "source_publisher": "国税庁",
-          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-coast",
-          "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
-          "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、同定資料との個別照合を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "福井県越前市粟田部町19-3",
-            "checked_at": "2026-11-12T06:57:58.234840+00:00",
-            "fetched_at": "2026-11-12T06:57:58.217829+00:00",
-            "name_raw": "岡太神社",
-            "page_hash": "2addc29cd0210c05014c96f220cc0709566edb17240c5767f172f30933d9b766",
-            "reading_context_raw": "岡太神社（おかふとじんじゃ）は",
-            "reading_raw": "おかふとじんじゃ",
-            "subject_title_raw": "岡太神社　福井県越前市粟田部町",
-            "url": "https://www.buccyake-kojiki.com/archives/1072288619.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-coast",
-          "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
-          "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、同定資料との個別照合を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "protected_overlays": [
-            "corrections"
-          ],
-          "reference": {
-            "address_raw": "福井県越前市岡本町21-18",
-            "checked_at": "2026-11-12T06:58:05.353369+00:00",
-            "fetched_at": "2026-11-12T06:58:05.340120+00:00",
-            "name_raw": "岡太神社",
-            "page_hash": "4421afb8227f2c1facd0533a1db7cc3b8b11002610efbac9621a3d1e112f7b76",
-            "reading_context_raw": "岡太神社（おかふとじんじゃ）は",
-            "reading_raw": "おかふとじんじゃ",
-            "subject_title_raw": "岡太神社　福井県越前市岡本町",
-            "url": "https://www.buccyake-kojiki.com/archives/1072347400.html"
-          },
-          "result": "protected_existing_judgment_reading_or_identity",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "福井県越前市岡本町２１－１８",
-      "agency_listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
-      "category": "judgment_required",
-      "entry_id": "ac90678f-a6af-5964-a3d8-9ababc848e35",
-      "expected_source_hash": "f1170bc2740298218aa806d77672f92516c76121867f35c614757bf20abfbb6d",
-      "facility_id": "db5316d1-3660-5c84-9c50-19a3e42c910f",
-      "listed_name": "岡太神社",
-      "nta_result": "not checked for current source snapshot",
-      "prefecture": "福井県",
-      "prefecture_code": "18",
-      "reading_raw": "おかもとちょう",
-      "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_locality_or_other_label_in_reading",
-      "status": "unfinished",
-      "surface": "岡太神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "not_checked_for_current_record"
     },
     {
       "additional_source_reviews": [
@@ -1237811,7 +1237964,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10526,
+    "retained_unresolved_entries": 10525,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1240915,9 +1241068,9 @@
     "categories": {
       "insufficient_evidence_in_inspected_sources": 10325,
       "investigation_incomplete": 0,
-      "judgment_required": 201
+      "judgment_required": 200
     },
-    "distinct_surfaces": 4222,
-    "unfinished_entries": 10526
+    "distinct_surfaces": 4221,
+    "unfinished_entries": 10525
   }
 }
