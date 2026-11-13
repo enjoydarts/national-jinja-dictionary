@@ -4,7 +4,7 @@
 東松山市公開の市民大学課題研究に全文ルビ・町域/地番がある3登録を、印刷所在地へ市名を捏造せず正本補正へ結ぶ。PDF同hashの活動記録index2にテーマ「東松山市の神社」、index1に市内41神社の調査方針、index3/4に一覧表の個別カードを実画像で確認した。市の公的認定読み一覧とは扱わない。
 
 ## 方式
-実装者判断で、既存のreading-only補正の参照へ`address_context`を追加する。原文と派生比較値の分離ができる方式を採る。個別address_rawを書き換える案は原文保持に反する。資料ごとに専用の補正種別を増やす案は同じ契約を重複させる。明示した市名と表の町域/地番を同一URL/hash・原ページ位置・表見出し・カード番号へ束縛する小さい共通検証関数にする。
+実装者判断で、既存のreading-only補正の参照へ`document_address_context`を追加する。原文と派生比較値の分離ができる方式を採る。個別address_rawを書き換える案は原文保持に反する。資料ごとに専用の補正種別を増やす案は同じ契約を重複させる。明示した市名と表の町域/地番を同一URL/hash・原ページ位置・表見出し・カード番号へ束縛する小さい共通検証関数にする。
 
 ## 契約
 `document_context_address(ref,facility)->str|None`は、`kind=same_document_explicit_municipality`、参照のsource_kindがmunicipality_hosted_citizen_university_report、同一HTTPS PDF URL/hash、timezone付き確認日、PDF総頁数、前置コンテキスト頁と表頁の範囲、同一表見出しとカード番号を要求する。市名は原施設municipalityと完全一致、scope_rawはその市名+「の神社」で実抜粋に含む。参照名は原施設listed_nameと完全一致、reading_scopeはfull_name、原名・全文かな・印刷町域/全地番を表抜粋に含む。表記の空白以外の文字差・枝番差・旧字体を埋めない。派生比較は市名+印刷住所で、既存住所比較に渡すだけ。原名/かな/住所/ID/hashは不変。
@@ -14,4 +14,4 @@
 ## 検証
 人工データの実適用/eligible/validate、元データ不変・再適用・破損後出力停止、異型・頁範囲/表番号/地番/市名/かなの負例をRED/GREENで確認。実3登録は同hashの原画像を再目視、原施設と全地番照合、他の実効データ完全一致・全旧履歴/10868 ID/hash保持。6形式検査と実IME未確認を区別。取得本文/PDF/画像・個人の氏名はコミットしない。
 
-実原画像で判明した続き表の契約: index4に見出しは再印刷されない。address_contextへtable_heading_page_index/locator/excerptを独立保存し、前置scope頁<見出し頁<=対象行頁の範囲を検査する。個別行excerptはその行の事実のみで、見出しも市名も書き足さない。
+実原画像で判明した続き表の契約: index4に見出しは再印刷されない。document_address_contextへtable_heading_page_index/locator/excerptを独立保存し、前置scope頁<見出し頁<=対象行頁の範囲を検査する。個別行excerptはその行の事実のみで、見出しも市名も書き足さない。

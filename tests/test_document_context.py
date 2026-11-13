@@ -18,7 +18,7 @@ def fixture():
                table_heading_raw='架空の神社一覧表（50音順）',
                locator='PDF index3, card18',
                excerpt='架空神社 / かくうじんじゃ / 乙町 1061')
-    ref['address_context'] = dict(kind='same_document_explicit_municipality',
+    ref['document_address_context'] = dict(kind='same_document_explicit_municipality',
         url=ref['url'], page_hash=ref['page_hash'], checked_at=ref['checked_at'],
         municipality_raw='架空市', scope_raw='架空市の神社',
         excerpt='テーマ「架空市の神社」を確認', locator='PDF index2, activity3',
@@ -29,10 +29,23 @@ def fixture():
 
 
 class DocumentContextTest(unittest.TestCase):
+    def test_legacy_descriptive_address_context_keeps_ordinary_reference_behavior(self):
+        data = build([row(reading_raw='')])
+        doc = correction(data, {'reading': 'かくうじんじゃ'})
+        ref = next(iter(doc['entries'].values()))['references'][0]
+        ref['address_context'] = 'Existing descriptive note; not a structured document proof.'
+        self.assertEqual(len(eligible(apply_corrections(data, doc))), 1)
+
+    def test_literal_locality_with_digit_width_and_explicit_units(self):
+        data, doc, ref = fixture()
+        ref['address_raw'] = '乙町 １０６１番地'
+        ref['excerpt'] = '架空神社 / かくうじんじゃ / 乙町 １０６１番地'
+        self.assertEqual(len(eligible(apply_corrections(data, doc))), 1)
+
     def test_continuation_page_binds_earlier_heading_without_inventing_a_quote(self):
         data, doc, ref = fixture()
         ref.update(source_page_index=4, excerpt='架空神社 / かくうじんじゃ / 乙町 1061')
-        ref['address_context'].update(table_heading_page_index=3,
+        ref['document_address_context'].update(table_heading_page_index=3,
             table_heading_locator='PDF index3, table heading',
             table_heading_excerpt='架空の神社一覧表（50音順）')
         out = apply_corrections(data, doc)
@@ -54,7 +67,7 @@ class DocumentContextTest(unittest.TestCase):
 
     def test_document_and_table_binding_is_required(self):
         edits = [
-            lambda r: r.pop('address_context'),
+            lambda r: r.pop('document_address_context'),
             lambda r: r.update(source_kind='official_agency'),
             lambda r: r.update(reading_scope='partial_or_absent'),
             lambda r: r.update(page_hash='c'*64),
@@ -62,21 +75,21 @@ class DocumentContextTest(unittest.TestCase):
             lambda r: r.update(source_page_index=True),
             lambda r: r.update(source_card_number=19),
             lambda r: r.pop('locator'),
-            lambda r: r['address_context'].update(table_heading_excerpt='別の表'),
-            lambda r: r['address_context'].update(table_heading_page_index=4),
-            lambda r: r['address_context'].pop('table_heading_locator'),
-            lambda r: r['address_context'].update(kind='municipality_guess'),
-            lambda r: r['address_context'].update(url='https://other.example.invalid/report.pdf'),
-            lambda r: r['address_context'].update(page_hash='c'*64),
-            lambda r: r['address_context'].update(checked_at='2026-11-09'),
-            lambda r: r['address_context'].update(municipality_raw='別市'),
-            lambda r: r['address_context'].update(scope_raw='周辺の神社'),
-            lambda r: r['address_context'].update(excerpt='市内の神社'),
-            lambda r: r['address_context'].update(locator=''),
-            lambda r: r['address_context'].update(source_page_index=4),
-            lambda r: r['address_context'].update(source_page_index=-1),
-            lambda r: r['address_context'].update(table_heading_raw='別の一覧表'),
-            lambda r: r['address_context'].update(record_number=17),
+            lambda r: r['document_address_context'].update(table_heading_excerpt='別の表'),
+            lambda r: r['document_address_context'].update(table_heading_page_index=4),
+            lambda r: r['document_address_context'].pop('table_heading_locator'),
+            lambda r: r['document_address_context'].update(kind='municipality_guess'),
+            lambda r: r['document_address_context'].update(url='https://other.example.invalid/report.pdf'),
+            lambda r: r['document_address_context'].update(page_hash='c'*64),
+            lambda r: r['document_address_context'].update(checked_at='2026-11-09'),
+            lambda r: r['document_address_context'].update(municipality_raw='別市'),
+            lambda r: r['document_address_context'].update(scope_raw='周辺の神社'),
+            lambda r: r['document_address_context'].update(excerpt='市内の神社'),
+            lambda r: r['document_address_context'].update(locator=''),
+            lambda r: r['document_address_context'].update(source_page_index=4),
+            lambda r: r['document_address_context'].update(source_page_index=-1),
+            lambda r: r['document_address_context'].update(table_heading_raw='別の一覧表'),
+            lambda r: r['document_address_context'].update(record_number=17),
         ]
         for i, edit in enumerate(edits):
             with self.subTest(case=i):
@@ -94,7 +107,7 @@ class DocumentContextTest(unittest.TestCase):
     def test_invalid_context_cannot_fall_back_to_a_complete_address(self):
         data, doc, ref = fixture()
         ref['address_raw'] = '架空市乙町1061'; ref['excerpt'] += ' / 架空市乙町1061'
-        ref['address_context']['page_hash'] = 'c'*64
+        ref['document_address_context']['page_hash'] = 'c'*64
         self.assertEqual(eligible(apply_corrections(data, doc)), [])
 
     def test_context_cannot_resolve_other_holds_or_change_name(self):
@@ -111,17 +124,17 @@ class DocumentContextTest(unittest.TestCase):
     def test_malformed_context_is_held_and_applied_corruption_stops_output(self):
         bad = [None, [], 7, '', True]
         for value in bad:
-            data, doc, ref = fixture(); ref['address_context'] = value
+            data, doc, ref = fixture(); ref['document_address_context'] = value
             self.assertEqual(eligible(apply_corrections(data, doc)), [])
         data, doc, ref = fixture()
-        for field in ref['address_context']:
+        for field in ref['document_address_context']:
             for value in bad:
                 with self.subTest(field=field, value=value):
-                    data, doc, ref = fixture(); ref['address_context'][field] = value
+                    data, doc, ref = fixture(); ref['document_address_context'][field] = value
                     self.assertEqual(eligible(apply_corrections(data, doc)), [])
         data, doc, ref = fixture(); out = apply_corrections(data, doc)
         self.assertEqual(len(eligible(out)), 1)
-        out['entries'][0]['correction']['references'][0]['address_context']['page_hash'] = 'c'*64
+        out['entries'][0]['correction']['references'][0]['document_address_context']['page_hash'] = 'c'*64
         self.assertTrue(validate(out)); self.assertEqual(eligible(out), [])
-        ref['address_context']['page_hash'] = 'c'*64
+        ref['document_address_context']['page_hash'] = 'c'*64
         self.assertEqual(eligible(apply_corrections(out, doc)), [])

@@ -3,7 +3,6 @@ import re
 from datetime import datetime
 from urllib.parse import urlsplit
 from njd.locations import _hash, _plain
-from njd.normalize import compare_address_units
 
 
 def _dated(value):
@@ -21,12 +20,17 @@ def _parcel(value):
     match = re.fullmatch(r'([^0-9０-９]+)([0-9０-９][0-9０-９番地号の丁目\-]*)', value)
     if not match:
         return None
-    return match[1], compare_address_units(match[2])
+    number = match[2].translate(str.maketrans('０１２３４５６７８９', '0123456789'))
+    number = re.sub(r'(?<=\d)(?:丁目|番(?:地)?(?:の)?|の)(?=\d)', '-', number)
+    number = re.sub(r'(?<=\d)(?:番地|番|号)$', '', number)
+    if not re.fullmatch(r'[0-9]+(?:-[0-9]+)*', number):
+        return None
+    return match[1], number
 
 
 def document_context_address(ref, facility):
     """Return a comparison address; raw evidence is never rewritten."""
-    context = ref.get('address_context')
+    context = ref.get('document_address_context')
     if not isinstance(context, dict) or context.get('kind') != 'same_document_explicit_municipality':
         return None
     if (ref.get('source_kind') != 'municipality_hosted_citizen_university_report'
