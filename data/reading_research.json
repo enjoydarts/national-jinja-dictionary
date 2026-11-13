@@ -26516,13 +26516,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10317,
         "scope": "個人調査サイト神奈備の入口と神社名鑑への実hrefを確認。移転先はDNS失敗し索引/個別記事未取得、特定施設の新規照合/採用0。"
+      },
+      {
+        "checked_at": "2026-11-13T14:34:16.975335+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10317,
+        "scope": "個人調査サイト神奈備の入口と神社名鑑への実hrefを確認。移転先はDNS失敗し索引/個別記事未取得、特定施設の新規照合/採用0。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:34:16.975335+00:00",
+      "checked_at": "2026-11-13T14:42:55.238476+00:00",
       "new_verified_entries": 0,
-      "retained_pending_entries": 10317,
-      "scope": "個人調査サイト神奈備の入口と神社名鑑への実hrefを確認。移転先はDNS失敗し索引/個別記事未取得、特定施設の新規照合/採用0。"
+      "retained_pending_entries": 10316,
+      "scope": "山梨県の美和神社・蚕影神社の追加資料候補を確認。観光ナビの個別記事は規約で停止、市の散策PDFは内部サイズ上限超過で本文未確認。採用0。"
     },
     "remaining_unfinished_entries": 10316,
     "resolved_entry_ids": [
@@ -27082,7 +27088,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:34:16.975335+00:00",
+  "computed_at": "2026-11-13T14:42:55.238476+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -403967,6 +403973,64 @@
         }
       },
       "scope": "県観光連盟の頭子神社【有福島】1詳細だけを原登録へ個別照合。五島地域94保留登録や新上五島町57社全件の読み確認ではない。"
+    },
+    {
+      "acquisition": "Client interval=2、timeout=20、retries=0、robots適用。市の入口・規約は取得。実PDFへの要求は8 MiB内部上限超過で停止。アクセス拒否やrobots禁止という意味ではない。上限変更・別形式・別ツールでの本文取得は行わない。観光ナビ個別記事は規約確認後要求しない。",
+      "attempt_id": "fuefuki_tourism_policy_and_public_guide_size_limit_two_pending_20261113",
+      "candidates": [
+        {
+          "entry_id": "0156ec5c-ec40-5f8f-823a-f2e4a95c695a",
+          "observation": "新井原の現地散策ガイド候補。検索結果は発見用に限る。通常Clientがpage exceeds 8 MiB limitで停止し、PDF本文・頁数・全文読み・所在地を検証していない。PDF本文hashも未取得。",
+          "requested_url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5b1f12e0a5507.pdf",
+          "status": "municipal_pdf_body_unacquired_size_limit"
+        },
+        {
+          "entry_id": "05aa7296-7c0d-5143-a0bc-cf0d9d19b4c5",
+          "observation": "入口と実リンク先の規約本文で無断の転載・複写・蓄積・転送及び商用利用の禁止を確認し、個別紹介は取得しない。検索結果の読みや住所は採用根拠にしない。既存の原住所1450と別資料1450-1の差も未解決。",
+          "requested_url": "https://www.fuefuki-kanko.jp/detail/242/index.html",
+          "status": "tourism_profile_not_acquired_due_to_terms"
+        }
+      ],
+      "checked_at": "2026-11-13T14:42:55.238476+00:00",
+      "inspected_facility_profiles": 0,
+      "municipal_rights_observation": "市公式サイトは本文の市役所表示と総合トップ表題で確認。規約は写真・図面・動画等の表現物の転載について法定利用以外は引用転載許可申請書を要求する。包括転載許諾又はオープンライセンスとは認定せず、名称・読み・所在地の事実確認だけを予定したがPDF本文未取得。既に別枠で確認した市のオープンデータ条件を一般PDFへ拡張しない。",
+      "new_verified_entries": 0,
+      "privacy_and_storage": "本文・PDF・画像・キャッシュは収録せず、公開URL/hash・取得日時・条件要約・未取得理由と個別保留の対応だけを保存。",
+      "references": {
+        "municipal_home": {
+          "fetched_at": "2026-11-13T14:41:57.134707+00:00",
+          "page_hash": "4576e4224430b0c35414f623b8260bfb66a581c6cbec1f0f03340919eb4bdb03",
+          "title": [
+            "笛吹市／総合トップ"
+          ],
+          "url": "https://www.city.fuefuki.yamanashi.jp/"
+        },
+        "municipal_policy": {
+          "fetched_at": "2026-11-13T14:41:59.293173+00:00",
+          "page_hash": "43460093675f2f486c48aaf02ec40079bb74468beb8f8905a026423aa4d1791e",
+          "title": [
+            "笛吹市／このサイトについて"
+          ],
+          "url": "https://www.city.fuefuki.yamanashi.jp/kikaku/site.html"
+        },
+        "tourism_home": {
+          "fetched_at": "2026-11-13T14:36:19.571258+00:00",
+          "page_hash": "4a167b48902f22d8048a09205afbb6f6541c9864da62f44f9dc1cea6e76c8257",
+          "title": [
+            "「日本一桃源郷」笛吹市公式の情報ポータルサイト | ふえふき観光ナビ"
+          ],
+          "url": "https://www.fuefuki-kanko.jp/"
+        },
+        "tourism_policy": {
+          "fetched_at": "2026-11-13T14:36:46.326217+00:00",
+          "page_hash": "23fe227905bbbd5149f0253978e4da31fc67dc474b784ba58bb7a26459e84456",
+          "url": "https://www.fuefuki-kanko.jp/footer/2/"
+        }
+      },
+      "scope": "保留2施設の追加資料候補のみ。施設本文の新規照合0、採用0。読みを検索抜粋から流用せず、地番差も解消しない。全国又は県全件の調査完了ではない。",
+      "screened_pending_entries": 2,
+      "status": "tourism_terms_stop_and_municipal_pdf_size_limit_no_adoption",
+      "tourism_rights_observation": "公式と称する入口の表題は記録するが、市が直接運営することや辞書への利用許諾を意味しない。実リンク先規約本文に無断転載・複写・蓄積・転送及び商用利用の禁止があり、個別記事を取得しない。"
     }
   ],
   "per_prefecture": {
@@ -555758,6 +555822,16 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:42:55.238476+00:00",
+          "evidence_attempt": "fuefuki_tourism_policy_and_public_guide_size_limit_two_pending_20261113",
+          "expected_source_hash": "6d53d74e00541eafb1a7ff080e57886c9f5465bfe4ff6560d7780edbe06a790d",
+          "observation": "新井原の現地散策ガイド候補。検索結果は発見用に限る。通常Clientがpage exceeds 8 MiB limitで停止し、PDF本文・頁数・全文読み・所在地を検証していない。PDF本文hashも未取得。",
+          "requested_url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5b1f12e0a5507.pdf",
+          "source_kind": "municipal_or_tourism_reference_lead",
+          "status": "municipal_pdf_body_unacquired_size_limit"
         }
       ],
       "address": "笛吹市芦川町新井原",
@@ -557236,6 +557310,16 @@
             }
           },
           "status": "address_discovery_candidate_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:42:55.238476+00:00",
+          "evidence_attempt": "fuefuki_tourism_policy_and_public_guide_size_limit_two_pending_20261113",
+          "expected_source_hash": "4e6091a518dfcdf39cf845c715874b501a5b0caa31e64debef947a968ea3efe5",
+          "observation": "入口と実リンク先の規約本文で無断の転載・複写・蓄積・転送及び商用利用の禁止を確認し、個別紹介は取得しない。検索結果の読みや住所は採用根拠にしない。既存の原住所1450と別資料1450-1の差も未解決。",
+          "requested_url": "https://www.fuefuki-kanko.jp/detail/242/index.html",
+          "source_kind": "municipal_or_tourism_reference_lead",
+          "status": "tourism_profile_not_acquired_due_to_terms"
         }
       ],
       "address": "笛吹市御坂町二之宮1450",
