@@ -132,3 +132,32 @@ def variant_problems(review,facility,entry,source=None):
     elif facility.get('address_comparisons') or proof.get('existing_city_name_change') or proof.get('city_name_change_recheck'):
         return ['variant review claims an unnecessary city-name substitution']
     return []
+
+
+def variant_graph_problems(entries):
+    """An applied group keeps its original parent and both approved siblings."""
+    indexed={};groups={};issues=[]
+    for entry in entries:
+        eid=entry.get('id')
+        if isinstance(eid,str):indexed.setdefault(eid,[]).append(entry)
+        if entry.get('derivation_kind')==KIND:
+            parent=entry.get('parent_entry_id')
+            if not isinstance(parent,str):issues.append((eid,'invalid full-reading variant parent type'))
+            else:groups.setdefault(parent,[]).append(entry)
+        review=entry.get('human_review')
+        if (isinstance(eid,str) and isinstance(review,dict) and review.get('review_kind')==KIND
+            and entry.get('status')=='excluded' and entry.get('reason')==SUPERSEDED):groups.setdefault(eid,[])
+    for root,children in groups.items():
+        parents=indexed.get(root,[]);parent=parents[0] if len(parents)==1 else None
+        review=parent.get('human_review') if parent else None
+        valid=bool(parent and parent.get('status')=='excluded' and parent.get('reason')==SUPERSEDED
+            and isinstance(review,dict) and review.get('review_kind')==KIND and parent.get('superseded_by_review')==review.get('case_id'))
+        outputs=review.get('outputs') if isinstance(review,dict) else None
+        expected=set()
+        if isinstance(outputs,list) and len(outputs)==2 and all(isinstance(o,dict) and all(isinstance(o.get(k),str) for k in ('surface','reading')) for o in outputs):
+            expected={variant_id(root,o['surface'],o['reading']) for o in outputs}
+        valid=valid and len(expected)==2 and len(children)==2 and {c.get('id') for c in children}==expected
+        valid=valid and all(c.get('human_review')==review and c.get('facility_id')==parent.get('facility_id') and c.get('source_hash')==parent.get('source_hash') for c in children)
+        if not valid:
+            for member in parents+children:issues.append((member.get('id'),'incomplete or inconsistent full-reading variant parent/sibling group'))
+    return issues

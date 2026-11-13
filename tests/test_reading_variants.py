@@ -143,3 +143,13 @@ class ReadingVariantsTest(unittest.TestCase):
                 out['entries'][1]['parent_entry_id']=parent
                 again=apply_reviews(out,doc)
                 self.assertTrue(blocking_problems(again))
+
+    def test_parent_and_both_siblings_must_exist_as_one_approved_group(self):
+        for case in ['missing_parent','missing_sibling','parent_status','parent_review']:
+            with self.subTest(case=case):
+                d,doc,v=fixture();out=apply_reviews(d,doc)
+                if case=='missing_parent':out['entries'].pop(0)
+                elif case=='missing_sibling':out['entries'].pop()
+                elif case=='parent_status':out['entries'][0].update(status='pending',reason='different issue')
+                elif case=='parent_review':out['entries'][0]['human_review']['case_id']='different review'
+                self.assertTrue(blocking_problems(out));self.assertEqual(eligible(out),[])

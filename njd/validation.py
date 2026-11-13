@@ -7,6 +7,7 @@ from urllib.parse import urlsplit
 from njd.normalize import normalize_reading
 from njd.corrections import correction_problems, discovery_only, _normalized_reference_reading
 from njd.reviews import reviewed_output
+from njd.reading_variants import variant_graph_problems
 from njd.locations import location_problems, raw_address
 
 STATUSES={'verified','pending','excluded'}
@@ -66,6 +67,7 @@ def validate(data: dict) -> list[dict]:
         if key in article_facilities and article_facilities[key]!=f.get('id'):
             add('global',None,'duplicate Wikipedia article facility across source scopes; identity reconciliation required')
         else:article_facilities[key]=f.get('id')
+    for eid,reason in variant_graph_problems(es):add('entry',eid,reason)
     fmap={f.get('id'):f for f in fs}
     from njd.source_aliases import metadata_problems
     problems.extend(metadata_problems(data))
