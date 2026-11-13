@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "6284fee5fab40adf70a9b26ba3d444ae3b97c2f7bf8d045a007aaf25f8823c0c",
+    "corrections.json": "0eef09a8e96d0a777a56213fc6ab272adc2730d256a00b12adc6ae977741677e",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "e6b1491415bf66c194354607a84e2723aa99cc11bbd487e9cb07089b4ea4bdb7",
@@ -22702,20 +22702,30 @@
         "new_verified_output_entries": 0,
         "retained_pending_entries": 0,
         "scope": "最新mainの北海道・全国施設資料の追加調査3コミットと味淵神社の元1登録/派生2出力を全旧記録保持で統合確認。採用は既存の個別試行で計数し、ここでは重複計数しない。全国の残保留は未解決。"
+      },
+      {
+        "checked_at": "2026-11-13T05:15:00.000008+00:00",
+        "entry_and_policy_urls": 5,
+        "entry_ids": [],
+        "inspected_targets": 0,
+        "new_verified_entries": 0,
+        "normal_search_attempts": 1,
+        "retained_pending_entries": 10557,
+        "scope": "全国データベースの入口2URLと規約3URLだけの確認及び通常公開検索1回。全国の文化財行・全国保留は未照合であり、読みや全所在地を確認済みとは扱わない。",
+        "search_result_pages_acquired": 0
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T05:15:00.000008+00:00",
-      "entry_and_policy_urls": 5,
-      "entry_ids": [],
-      "inspected_targets": 0,
-      "new_verified_entries": 0,
-      "normal_search_attempts": 1,
-      "retained_pending_entries": 10557,
-      "scope": "全国データベースの入口2URLと規約3URLだけの確認及び通常公開検索1回。全国の文化財行・全国保留は未照合であり、読みや全所在地を確認済みとは扱わない。",
-      "search_result_pages_acquired": 0
+      "checked_at": "2026-11-13T05:34:27.020689+00:00",
+      "entry_ids": [
+        "c10254b0-c119-52be-bb0e-0f506409cff7"
+      ],
+      "inspected_targets": 1,
+      "new_verified_entries": 1,
+      "retained_pending_entries": 0,
+      "scope": "滋賀県神社庁の素盞烏命神社・原実ID1069/実href/詳細全地番190を保存し、法人7160005003851の原CSV素＿烏命神社と公式nameImageId00044945の画像全文を代理文字1位置だけで個別対応。同法人行の明示全文スサノオノミコトジンジャを採用。原名・原町域住所・原空かな・全ID/hashとCSV名を不変とする。"
     },
-    "remaining_unfinished_entries": 10557,
+    "remaining_unfinished_entries": 10556,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -22955,6 +22965,7 @@
       "be39dca9-36b6-5b8d-9591-20b28b62c93a",
       "be7ec38c-49a8-5145-b78d-98a5d8c77739",
       "bf499a82-8c59-575f-acb8-bd0d0ac88188",
+      "c10254b0-c119-52be-bb0e-0f506409cff7",
       "c10d416b-ad56-557d-8faf-290963864890",
       "c11f4255-9ec1-5189-a3f3-ab8e7bc3f384",
       "c384a27d-27c6-5d42-af12-88add815692b",
@@ -23032,7 +23043,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T05:15:00.000008+00:00",
+  "computed_at": "2026-11-13T05:34:27.020689+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -261789,6 +261800,353 @@
       "status": "entry_and_terms_reviewed_public_search_timed_out_no_dataset_rows",
       "terms_observation": "個別規約は文字情報を出典記載の上で自由利用と明記し、画像は第三者権利により個別許諾が必要と区別。文部科学省規約は出典・加工表示・第三者権利等を定め、PDL1.0準拠・CC BY4.0互換を明記。別紙は当該DB等を第三者権利の事前確認対象に列挙していることも保持。今回は個別データ・画像を取得していないため、個別データの権利確認が済んだとは扱わない。",
       "unique_entry_and_policy_urls": 5
+    },
+    {
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_shiga",
+              "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
+              "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
+              "related_actual_hrefs": [],
+              "result": "no_related_label_in_inspected_indexes",
+              "source_kind": "article_index",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "bounded_article_index_scope_recorded"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T00:10:57.309374+00:00",
+              "evidence_attempt": "shiga_all_998_stored_native_full_address_registry_screen_ten_adopted_20261113",
+              "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
+              "observation": {
+                "active_registered_full_native_address_matches": 0,
+                "entry_id": "c10254b0-c119-52be-bb0e-0f506409cff7",
+                "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
+                "facility_id": "be6c1d9f-6dd4-55ed-aceb-23462fb05006",
+                "name_raw": "素盞烏命神社",
+                "original_address_raw": "長浜市上野町",
+                "protected_prior_judgment": false,
+                "registered_matches": [],
+                "result": "no_unique_active_native_full_address_match",
+                "screening_reason": null,
+                "screening_status": "no_unique_active_native_full_address_match",
+                "stored_native_address_comparison_only": true,
+                "stored_native_reference": {
+                  "address_raw": "滋賀県長浜市上野町190",
+                  "agency_code": "1069",
+                  "fetched_at": "2026-11-10T03:46:27.589082+00:00",
+                  "name_raw": "素盞烏命神社",
+                  "page_hash": "a14c45e6520e5d6fef8ae1d3610ea180f734d25eeff88c179e647d1d90a5cebf",
+                  "reading_raw": "スサノオノミコト",
+                  "reading_scope": "partial_or_absent",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1069"
+                }
+              },
+              "scope": "保存済み詳細参照の全所在地と取得済み登記行の限定診断。現施設住所を置換せず、本文再取得を確認したのは別記12候補だけ。画像の未確定字形・不明な全文かなを推定しない。",
+              "source_kind": "government_corporate_register",
+              "source_publisher": "国税庁・滋賀県神社庁",
+              "status": "no_unique_active_native_full_address_match"
+            },
+            {
+              "active_religious_rows_at_same_comparison_address": 1,
+              "address_first_result": "new_address_first_different_name_lead",
+              "adopted": false,
+              "checked_at": "2026-11-13T04:13:56.302777+00:00",
+              "evidence_attempt": "shiga_988_cached_address_first_all_registered_names_one_name_image_candidate_and_five_open_tables_20261113",
+              "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
+              "image_reference": {
+                "fetched_at": "2026-11-13T04:07:33.147835+00:00",
+                "image_id": "00044945",
+                "page_hash": "1eac040de1b849b80316209af67f3df620d7e2a353b0b950a9aecb0e1c249764",
+                "size": 1816,
+                "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00044945"
+              },
+              "municipal_table_rows": [],
+              "new_registered_different_name_observations": [
+                {
+                  "address_raw": "滋賀県長浜市上野町１９０番地",
+                  "comparison": "address_only_discovery_not_identity_proof",
+                  "csv_member": "25_shiga_all_20261030.csv",
+                  "csv_row": 33666,
+                  "normalized_reading": "すさのおのみことじんじゃ",
+                  "reading_raw": "スサノオノミコトジンジャ",
+                  "reading_shape": "full_shrine_ending_present",
+                  "reference": {
+                    "fetched_at": "2026-11-12T04:35:09.426764+00:00",
+                    "file_id": "28432",
+                    "page_hash": "87869a2c6b84617c97c9aa95138a34ef17899540cee159a81ac3529b3ea3d510",
+                    "snapshot": "20261030",
+                    "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                  },
+                  "registered_name_raw": "素＿烏命神社",
+                  "source_fields": {
+                    "addressImageId": "",
+                    "cityName": "長浜市",
+                    "closeDate": "",
+                    "corporateNumber": "7160005003851",
+                    "furigana": "スサノオノミコトジンジャ",
+                    "hihyoji": "0",
+                    "kind": "399",
+                    "latest": "1",
+                    "name": "素＿烏命神社",
+                    "nameImageId": "00044945",
+                    "prefectureName": "滋賀県",
+                    "process": "01",
+                    "streetNumber": "上野町１９０番地"
+                  }
+                }
+              ],
+              "observation": "CSV fullname placeholder素＿烏命神社を公式画像の素盞烏命神社へ個別目視同定。原実ID1069・全地番190と全文カナが対応。既存validatorに画像転写名の束縛規則がなく未適用。",
+              "proposal_file": "proposals.json",
+              "source_kind": "agency_and_corporate_register_followup",
+              "source_publisher": "滋賀県神社庁・国税庁・記録した市町村",
+              "status": "image_bound_full_kana_candidate_requires_validator_support",
+              "stored_native_reference": {
+                "address_raw": "滋賀県長浜市上野町190",
+                "agency_code": "1069",
+                "fetched_at": "2026-11-10T03:46:27.589082+00:00",
+                "name_raw": "素盞烏命神社",
+                "page_hash": "a14c45e6520e5d6fef8ae1d3610ea180f734d25eeff88c179e647d1d90a5cebf",
+                "reading_raw": "スサノオノミコト",
+                "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1069"
+              }
+            }
+          ],
+          "address": "長浜市上野町",
+          "agency_listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "c10254b0-c119-52be-bb0e-0f506409cff7",
+          "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
+          "facility_id": "be6c1d9f-6dd4-55ed-aceb-23462fb05006",
+          "listed_name": "素盞烏命神社",
+          "nta_result": "no unique active exact name/full-address corporate identity",
+          "prefecture": "滋賀県",
+          "prefecture_code": "25",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "素盞烏命神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "shiga_1069_registered_name_image_one_placeholder_same_row_full_kana_adopted_20261113",
+      "checked_at": "2026-11-13T05:34:27.020689+00:00",
+      "entry_ids": [
+        "c10254b0-c119-52be-bb0e-0f506409cff7"
+      ],
+      "inspected_targets": 1,
+      "manual_resolved_entry_ids": [
+        "c10254b0-c119-52be-bb0e-0f506409cff7"
+      ],
+      "new_verified_entries": 1,
+      "observation": "公式PNG原hash/全文字形を目視し、原CSVの代理文字＿の1位置が盞に対応することだけを根拠にする。残りの文字・順序・文字数は完全一致。名称画像から読みを推定せず、部分かなスサノオノミコトへ語尾を補作しない。滋賀月次44347行・20261112までの全国8日次19178行の実再走査で全地番の存続kind399は一意1、対象法人/全地番の後続イベント0。過去の原名フィルタ不一致等の判断は成功へ書き換えず履歴保存。全国全件・実IME取り込み・後続未取得期間の状態確認は未完了。",
+      "resources": [
+        {
+          "address_raw": "滋賀県長浜市上野町190",
+          "agency_code": "1069",
+          "alias_display_raw": "",
+          "checked_at": "2026-11-13T05:28:15.251701+00:00",
+          "excerpt": "素盞烏命神社 （スサノオノミコト） / 滋賀県長浜市上野町190",
+          "fetched_at": "2026-11-13T04:07:33.034349+00:00",
+          "identity_only": true,
+          "index_proof": {
+            "address_raw": "長浜市上野町",
+            "base_href": "https://www.shiga-jinjacho.jp/",
+            "href_raw": "ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1069",
+            "index_checked_at": "2026-11-13T05:28:15.251701+00:00",
+            "index_excerpt": "〔東浅井〕 素盞烏命神社 〒5260264 長浜市上野町",
+            "index_locator": "a.news_title[67] + postal address span",
+            "index_page_hash": "0fd4000c17cb684c8228373b0003446d6df9a57c692958143766fc9e68216b7a",
+            "index_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
+            "name_raw": "素盞烏命神社",
+            "source_id": "1069",
+            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1069"
+          },
+          "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+          "name_display_raw": "素盞烏命神社 （スサノオノミコト）",
+          "name_raw": "素盞烏命神社",
+          "page_hash": "1f7fc60e38634e3915e08143bd4ec03faa94f4907dd72115b042429ff631bf25",
+          "reading_raw": "スサノオノミコト",
+          "reading_scope": "partial_or_absent",
+          "source_kind": "agency",
+          "title": "素盞烏命神社 | 滋賀県神社庁",
+          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1069",
+          "verification_method": "Exact agency-linked name/native ID and literal kana; full-name and location validation performed before proposal. Alias not registered."
+        },
+        {
+          "address_raw": "滋賀県長浜市上野町１９０番地",
+          "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+          "checked_at": "2026-11-13T05:28:15.251701+00:00",
+          "corporate_number": "7160005003851",
+          "csv_row": 33666,
+          "excerpt": "素＿烏命神社 / スサノオノミコトジンジャ / 滋賀県長浜市上野町１９０番地",
+          "fetched_at": "2026-11-12T04:35:09.426764+00:00",
+          "file_id": "28432",
+          "image_reviews": {
+            "nameImageId": {
+              "archive_page_hash": "87869a2c6b84617c97c9aa95138a34ef17899540cee159a81ac3529b3ea3d510",
+              "checked_at": "2026-11-13T05:28:15.251701+00:00",
+              "corporate_number": "7160005003851",
+              "csv_row": 33666,
+              "fetched_at": "2026-11-13T04:07:33.147835+00:00",
+              "image_id": "00044945",
+              "method": "visual_inspection_of_official_image",
+              "note": "公式名称画像の全文「素盞烏命神社」を再目視。原CSV素＿烏命神社の全角代理文字1位置だけが盞に対応し、残りの字・順序・文字数は同じ。盞の字形を確認し、画像から発音を作らず同法人行の明示全文フリガナを別に使用する。",
+              "page_hash": "1eac040de1b849b80316209af67f3df620d7e2a353b0b950a9aecb0e1c249764",
+              "placeholder_character": "＿",
+              "placeholder_character_index_zero_based": 1,
+              "placeholder_field_name_raw": "素＿烏命神社",
+              "snapshot": "20261030",
+              "source_address_raw": "滋賀県長浜市上野町１９０番地",
+              "source_name_raw": "素＿烏命神社",
+              "transcribed_full_name_raw": "素盞烏命神社",
+              "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00044945"
+            }
+          },
+          "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+          "locator": "Unicode CSV file ID 28432; 25_shiga_all_20261030.csv; row 33666; corporateNumber=7160005003851",
+          "name_raw": "素＿烏命神社",
+          "page_hash": "87869a2c6b84617c97c9aa95138a34ef17899540cee159a81ac3529b3ea3d510",
+          "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなへ機械変換。画像は取得元の原字形の個別照合に限り、画像全体を再配布しない。",
+          "reading_raw": "スサノオノミコトジンジャ",
+          "reading_scope": "full_name",
+          "registered_name_image_identity": {
+            "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
+            "image_field": "nameImageId",
+            "image_id": "00044945",
+            "image_page_hash": "1eac040de1b849b80316209af67f3df620d7e2a353b0b950a9aecb0e1c249764",
+            "placeholder_character": "＿",
+            "placeholder_indices_zero_based": [
+              1
+            ],
+            "registered_name_raw": "素＿烏命神社",
+            "rule": "literal_registered_name_placeholder_with_individual_image_review",
+            "target_entry_id": "c10254b0-c119-52be-bb0e-0f506409cff7",
+            "transcribed_character": "盞",
+            "transcribed_full_name_raw": "素盞烏命神社"
+          },
+          "registry_state_proof": {
+            "active_corporate_numbers_at_native_full_address": [
+              "7160005003851"
+            ],
+            "active_religious_corporations_at_native_full_address": 1,
+            "as_of": "20261112",
+            "daily_deltas": [
+              {
+                "data_rows": 2346,
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "data_rows": 2156,
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "data_rows": 2183,
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "data_rows": 2617,
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "data_rows": 2362,
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "data_rows": 2642,
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "data_rows": 2692,
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "data_rows": 2180,
+                "date": "20261112",
+                "fetched_at": "2026-11-13T01:55:56.841451+00:00",
+                "file_id": "28529",
+                "page_hash": "896ee14905fdfcd8098dd4bdb87fdc9bd02655facaf056c3d5358b984a60c1b9",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "daily_rows": 19178,
+            "monthly_base": [
+              {
+                "data_rows": 44347,
+                "fetched_at": "2026-11-12T04:35:09.426764+00:00",
+                "file_id": "28432",
+                "page_hash": "87869a2c6b84617c97c9aa95138a34ef17899540cee159a81ac3529b3ea3d510",
+                "snapshot": "20261030",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+              }
+            ],
+            "scope": "滋賀全44347行と全国8日次19178行を再走査。神社庁の原町域部分は文字列完全一致とし、後続全地番は数字/明示単位だけを比較。対象法人番号又は同全地番kind399の後続イベント0。現在未取得の期間を最新状態と主張しない。",
+            "target_corporate_or_full_parcel_events": 0
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "cityName": "長浜市",
+            "closeDate": "",
+            "corporateNumber": "7160005003851",
+            "furigana": "スサノオノミコトジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "素＿烏命神社",
+            "nameImageId": "00044945",
+            "postCode": "5260264",
+            "prefectureCode": "25",
+            "prefectureName": "滋賀県",
+            "process": "01",
+            "streetNumber": "上野町１９０番地"
+          },
+          "source_kind": "government_corporate_register",
+          "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+          "title": "国税庁法人番号公表サイト 全件データ",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "verification_method": "Official CSV row with literal full kana and independently inspected original name image bound to its exact corporate number/image ID/archive hash/CSV row; raw placeholder preserved.",
+          "zip_member": "25_shiga_all_20261030.csv"
+        }
+      ],
+      "retained_pending_entries": 0,
+      "scope": "滋賀県神社庁の素盞烏命神社・原実ID1069/実href/詳細全地番190を保存し、法人7160005003851の原CSV素＿烏命神社と公式nameImageId00044945の画像全文を代理文字1位置だけで個別対応。同法人行の明示全文スサノオノミコトジンジャを採用。原名・原町域住所・原空かな・全ID/hashとCSV名を不変とする。",
+      "source_kind": "source_bound_registered_name_image_full_reading",
+      "source_publisher": "滋賀県神社庁・国税庁",
+      "status": "one_individually_image_bound_full_kana_adopted"
     }
   ],
   "per_prefecture": {
@@ -261986,11 +262344,11 @@
     },
     "25": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 930,
+        "insufficient_evidence_in_inspected_sources": 929,
         "investigation_incomplete": 0,
         "judgment_required": 58
       },
-      "unfinished_entries": 988
+      "unfinished_entries": 987
     },
     "26": {
       "categories": {
@@ -670168,136 +670526,6 @@
       "reason": "missing agency reading",
       "status": "unfinished",
       "surface": "八幡神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_shiga",
-          "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
-          "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
-          "related_actual_hrefs": [],
-          "result": "no_related_label_in_inspected_indexes",
-          "source_kind": "article_index",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "bounded_article_index_scope_recorded"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T00:10:57.309374+00:00",
-          "evidence_attempt": "shiga_all_998_stored_native_full_address_registry_screen_ten_adopted_20261113",
-          "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
-          "observation": {
-            "active_registered_full_native_address_matches": 0,
-            "entry_id": "c10254b0-c119-52be-bb0e-0f506409cff7",
-            "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
-            "facility_id": "be6c1d9f-6dd4-55ed-aceb-23462fb05006",
-            "name_raw": "素盞烏命神社",
-            "original_address_raw": "長浜市上野町",
-            "protected_prior_judgment": false,
-            "registered_matches": [],
-            "result": "no_unique_active_native_full_address_match",
-            "screening_reason": null,
-            "screening_status": "no_unique_active_native_full_address_match",
-            "stored_native_address_comparison_only": true,
-            "stored_native_reference": {
-              "address_raw": "滋賀県長浜市上野町190",
-              "agency_code": "1069",
-              "fetched_at": "2026-11-10T03:46:27.589082+00:00",
-              "name_raw": "素盞烏命神社",
-              "page_hash": "a14c45e6520e5d6fef8ae1d3610ea180f734d25eeff88c179e647d1d90a5cebf",
-              "reading_raw": "スサノオノミコト",
-              "reading_scope": "partial_or_absent",
-              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1069"
-            }
-          },
-          "scope": "保存済み詳細参照の全所在地と取得済み登記行の限定診断。現施設住所を置換せず、本文再取得を確認したのは別記12候補だけ。画像の未確定字形・不明な全文かなを推定しない。",
-          "source_kind": "government_corporate_register",
-          "source_publisher": "国税庁・滋賀県神社庁",
-          "status": "no_unique_active_native_full_address_match"
-        },
-        {
-          "active_religious_rows_at_same_comparison_address": 1,
-          "address_first_result": "new_address_first_different_name_lead",
-          "adopted": false,
-          "checked_at": "2026-11-13T04:13:56.302777+00:00",
-          "evidence_attempt": "shiga_988_cached_address_first_all_registered_names_one_name_image_candidate_and_five_open_tables_20261113",
-          "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
-          "image_reference": {
-            "fetched_at": "2026-11-13T04:07:33.147835+00:00",
-            "image_id": "00044945",
-            "page_hash": "1eac040de1b849b80316209af67f3df620d7e2a353b0b950a9aecb0e1c249764",
-            "size": 1816,
-            "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00044945"
-          },
-          "municipal_table_rows": [],
-          "new_registered_different_name_observations": [
-            {
-              "address_raw": "滋賀県長浜市上野町１９０番地",
-              "comparison": "address_only_discovery_not_identity_proof",
-              "csv_member": "25_shiga_all_20261030.csv",
-              "csv_row": 33666,
-              "normalized_reading": "すさのおのみことじんじゃ",
-              "reading_raw": "スサノオノミコトジンジャ",
-              "reading_shape": "full_shrine_ending_present",
-              "reference": {
-                "fetched_at": "2026-11-12T04:35:09.426764+00:00",
-                "file_id": "28432",
-                "page_hash": "87869a2c6b84617c97c9aa95138a34ef17899540cee159a81ac3529b3ea3d510",
-                "snapshot": "20261030",
-                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
-              },
-              "registered_name_raw": "素＿烏命神社",
-              "source_fields": {
-                "addressImageId": "",
-                "cityName": "長浜市",
-                "closeDate": "",
-                "corporateNumber": "7160005003851",
-                "furigana": "スサノオノミコトジンジャ",
-                "hihyoji": "0",
-                "kind": "399",
-                "latest": "1",
-                "name": "素＿烏命神社",
-                "nameImageId": "00044945",
-                "prefectureName": "滋賀県",
-                "process": "01",
-                "streetNumber": "上野町１９０番地"
-              }
-            }
-          ],
-          "observation": "CSV fullname placeholder素＿烏命神社を公式画像の素盞烏命神社へ個別目視同定。原実ID1069・全地番190と全文カナが対応。既存validatorに画像転写名の束縛規則がなく未適用。",
-          "proposal_file": "proposals.json",
-          "source_kind": "agency_and_corporate_register_followup",
-          "source_publisher": "滋賀県神社庁・国税庁・記録した市町村",
-          "status": "image_bound_full_kana_candidate_requires_validator_support",
-          "stored_native_reference": {
-            "address_raw": "滋賀県長浜市上野町190",
-            "agency_code": "1069",
-            "fetched_at": "2026-11-10T03:46:27.589082+00:00",
-            "name_raw": "素盞烏命神社",
-            "page_hash": "a14c45e6520e5d6fef8ae1d3610ea180f734d25eeff88c179e647d1d90a5cebf",
-            "reading_raw": "スサノオノミコト",
-            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1069"
-          }
-        }
-      ],
-      "address": "長浜市上野町",
-      "agency_listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "c10254b0-c119-52be-bb0e-0f506409cff7",
-      "expected_source_hash": "507e758b04f237042d4fb0cf32c95667350788927a3ba040e75da2e70bf65d5e",
-      "facility_id": "be6c1d9f-6dd4-55ed-aceb-23462fb05006",
-      "listed_name": "素盞烏命神社",
-      "nta_result": "no unique active exact name/full-address corporate identity",
-      "prefecture": "滋賀県",
-      "prefecture_code": "25",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "素盞烏命神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
@@ -1095924,7 +1096152,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10557,
+    "retained_unresolved_entries": 10556,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1099026,11 +1099254,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10361,
+      "insufficient_evidence_in_inspected_sources": 10360,
       "investigation_incomplete": 0,
       "judgment_required": 196
     },
-    "distinct_surfaces": 4234,
-    "unfinished_entries": 10557
+    "distinct_surfaces": 4233,
+    "unfinished_entries": 10556
   }
 }
