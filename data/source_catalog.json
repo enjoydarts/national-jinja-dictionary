@@ -102,11 +102,21 @@
           "verified_facilities": 599
         },
         "checked_at": "2026-11-08T15:49:59.041116+00:00",
-        "effective_entry_status_counts": {
-          "pending": 421,
-          "verified": 178
+        "codh_literal_full_reading_two_original_parcel_followup": {
+          "checked_at": "2026-11-13T04:18:47.409607+00:00",
+          "entry_ids": [
+            "57aeca77-4738-5f02-bf05-90a8674c214b",
+            "7727dbe3-5594-51ea-ae9e-eeab0126e428"
+          ],
+          "evidence_data": "data/corrections.json; data/reading_research.json",
+          "scope": "当時の全国保留10565登録とCODH公開32038行を名称・都道府県・住所で候補抽出し、原数字地番と明示全文読みが対応する北海道2登録だけを採用。202候補のうち町域のみ28登録、歴史的かな等又は既存判断172登録は保留。全国全保留の解決や全資料の精査完了ではない。",
+          "verified_entries": 2
         },
-        "effective_pending_entries": 421,
+        "effective_entry_status_counts": {
+          "pending": 419,
+          "verified": 180
+        },
+        "effective_pending_entries": 419,
         "facilities_collected": 599,
         "fields_observed": {
           "address": 599,
@@ -249,13 +259,13 @@
         },
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 420,
+            "insufficient_evidence_in_inspected_sources": 418,
             "investigation_incomplete": 0,
             "judgment_required": 1
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 469,
-          "unfinished_entries": 421
+          "unfinished_entries": 419
         }
       },
       "conditions": {
@@ -20231,6 +20241,15 @@
           "2026-11-08T14:28:05.535228+00:00",
           "2026-11-08T14:31:25.262663+00:00"
         ],
+        "registered_name_image_and_five_open_tables_followup_20261113": {
+          "checked_at": "2026-11-13T04:20:29.998075+00:00",
+          "evidence_data": "data/reading_research.json",
+          "municipal_table_compared_targets": 75,
+          "new_reading_candidates": 1,
+          "new_verified_entries": 0,
+          "registry_diagnostic_targets": 988,
+          "scope": "滋賀988現保留を原名フィルタなしの既取得国税庁月次全宗教法人・8日次で住所先行診断。24別登記名リードのうち1画像を個別目視。近江八幡・野洲75保留を独立OD5資源の限定欄と照合。県内全神社・全外部資料・全全文読みの精査完了ではない。"
+        },
         "remaining_scope": {
           "coverage": "公開リンクされた掲載範囲。県内全神社数との同一視不可",
           "errors": [],
@@ -46001,8 +46020,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13717,
-    "effective_verified_facilities": 44381,
+    "effective_dictionary_rows": 13719,
+    "effective_verified_facilities": 44383,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
