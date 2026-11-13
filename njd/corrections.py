@@ -339,7 +339,13 @@ def apply_corrections(data,document):
         entry['correction']=copy.deepcopy(correction)
         if problems:
             note=correction.get('reason','')
-            entry['status']='pending';entry['reason']='; '.join(problems+[note if isinstance(note,str) else ''])
+            references=correction.get('references')
+            context_excluded=(entry.get('status')=='excluded' and isinstance(references,list)
+                and any(isinstance(r,dict) and 'document_address_context' in r for r in references))
+            # A rejected contextual correction must not erase a durable
+            # exclusion: otherwise a second application could approve it.
+            if not context_excluded:
+                entry['status']='pending';entry['reason']='; '.join(problems+[note if isinstance(note,str) else ''])
             entry['correction']['status']='needs_review';entry['correction']['validation_problems']=problems
             pending.append(entry['id']);continue
         changes=correction['changes']

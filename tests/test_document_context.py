@@ -29,6 +29,21 @@ def fixture():
 
 
 class DocumentContextTest(unittest.TestCase):
+    def test_repeated_context_correction_keeps_exclusion_and_its_reason(self):
+        for corrupt in (False, True):
+            with self.subTest(corrupt=corrupt):
+                data, doc, ref = fixture()
+                data['entries'][0].update(status='excluded', reason='Explicit existing exclusion')
+                before = copy.deepcopy(data)
+                if corrupt: ref['document_address_context']['page_hash'] = 'c'*64
+                out = data
+                for _ in range(3):
+                    out = apply_corrections(out, doc)
+                    self.assertEqual(out['entries'][0]['status'], 'excluded')
+                    self.assertEqual(out['entries'][0]['reason'], 'Explicit existing exclusion')
+                    self.assertEqual(eligible(out), [])
+                self.assertEqual(data, before)
+
     def test_legacy_descriptive_address_context_keeps_ordinary_reference_behavior(self):
         data = build([row(reading_raw='')])
         doc = correction(data, {'reading': 'かくうじんじゃ'})
