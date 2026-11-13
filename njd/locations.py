@@ -151,6 +151,9 @@ def location_problems(supplement, facility, source=None):
     """Validate evidence without changing or guessing any acquired field."""
     if not isinstance(supplement, dict):
         return ['invalid location supplement']
+    if supplement.get('supplement_kind') == 'hyogo_cultural_building_location':
+        from njd.hyogo_building_location import building_location_problems
+        return building_location_problems(supplement, facility, source)
     problems = []
     if supplement.get('status') != 'verified':
         problems.append('location supplement is not verified')
@@ -267,6 +270,13 @@ def apply_locations(data, document):
         entries = [e for e in result['entries'] if e.get('facility_id') == fid]
         source = result['collection'].get('sources', {}).get(facility.get('source_key'), result['collection'])
         problems = location_problems(supplement, facility, source)
+        building = isinstance(supplement, dict) and supplement.get('supplement_kind') == 'hyogo_cultural_building_location'
+        if building:
+            from njd.hyogo_building_location import building_entry_problems
+            if len(entries) != 1:
+                problems.append('building location requires a single original registration')
+            for entry in entries:
+                problems.extend(building_entry_problems(supplement, facility, entry))
         if any(e.get('identity_review_required') for e in entries):
             problems.append('entry facility identity still requires review')
         address, municipality = raw_address(facility), _raw_field(facility, 'municipality')
@@ -288,6 +298,9 @@ def apply_locations(data, document):
         facility.update(supplement['changes'])
         facility.update(status='verified', reason='', checked_at=supplement['reference']['fetched_at'])
         for entry in entries:
+            if building:
+                entry.update(reading=normalize_reading(entry['reading_raw']), status='verified', reason='')
+                continue
             if (entry.get('status') not in ('pending', 'verified') or entry.get('identity_review_required')
                     or entry.get('reason') not in ('', _MISSING_LOCATION, 'missing agency reading')):
                 continue

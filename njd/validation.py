@@ -139,6 +139,10 @@ def validate(data: dict) -> list[dict]:
             or f.get('listing_url','').startswith(ASSOCIATION_BASE+'/'))
         if source.get('listing_basis')==ASSOCIATION_BASIS or f.get('listing_basis')==ASSOCIATION_BASIS or e.get('reading_source_kind')=='association' or association_provenance:
             for reason in association_problems(f,e,source):add('facility',f.get('id'),reason)
+        location=f.get('location_supplement')
+        if isinstance(location,dict) and location.get('applied') and location.get('supplement_kind')=='hyogo_cultural_building_location':
+            from njd.hyogo_building_location import building_entry_problems
+            for issue in building_entry_problems(location,f,e):add('entry',eid,issue)
         correction_valid=isinstance(correction,dict) and not correction_problems(correction,f,e,source)
         review_valid=reviewed_output(e.get('human_review'),f,e,source)
         if e.get('name_raw')!=f.get('listed_name'):add('entry',eid,'name raw must equal acquired agency name')
