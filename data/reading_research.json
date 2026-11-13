@@ -26220,28 +26220,34 @@
         "integration_main_commit": "af372f67039a76384894499aca712248be1fe6c5",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬13件補完と70件の保留根拠を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T13:31:13.787022+00:00",
+        "integrated_entry_ids": [
+          "354e2c88-64c5-5e7b-9fe2-5a78a5782bc6",
+          "3da515d8-2773-52cb-a58b-374d10e3a1c5",
+          "54f98cfd-9b39-5322-9b58-719b1313114f",
+          "84a908b9-9bdd-5062-93af-4c5ceacf683c",
+          "8b7fdec7-a3ac-5bbd-8ef2-4718a4cbbfc9",
+          "9c323f39-ecf7-5e89-92c4-4ea7cf123720",
+          "b1ef6fec-6dfe-588f-a96c-b7a7cd037048",
+          "bd378c8b-9734-5f45-a0bc-f1cbc6b3d388",
+          "d285899d-ac2b-59a0-911b-277444e7f3ad",
+          "dcebc756-31bc-5aeb-8a30-0965af58f553",
+          "e7f89c6c-972b-5edb-b994-0a6210a79a75",
+          "f29d3f60-7e76-5aa4-8baa-1891e040eddb",
+          "f5907824-eb41-5b7a-b288-71f482b8882c"
+        ],
+        "integration_main_commit": "6846321d4015f4ddf342cf363a11b73bb2f68b13",
+        "new_verified_entries": 0,
+        "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬13件補完と70件の保留根拠を統合。採用を重複計上しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T13:31:13.787022+00:00",
-      "integrated_entry_ids": [
-        "354e2c88-64c5-5e7b-9fe2-5a78a5782bc6",
-        "3da515d8-2773-52cb-a58b-374d10e3a1c5",
-        "54f98cfd-9b39-5322-9b58-719b1313114f",
-        "84a908b9-9bdd-5062-93af-4c5ceacf683c",
-        "8b7fdec7-a3ac-5bbd-8ef2-4718a4cbbfc9",
-        "9c323f39-ecf7-5e89-92c4-4ea7cf123720",
-        "b1ef6fec-6dfe-588f-a96c-b7a7cd037048",
-        "bd378c8b-9734-5f45-a0bc-f1cbc6b3d388",
-        "d285899d-ac2b-59a0-911b-277444e7f3ad",
-        "dcebc756-31bc-5aeb-8a30-0965af58f553",
-        "e7f89c6c-972b-5edb-b994-0a6210a79a75",
-        "f29d3f60-7e76-5aa4-8baa-1891e040eddb",
-        "f5907824-eb41-5b7a-b288-71f482b8882c"
-      ],
-      "integration_main_commit": "6846321d4015f4ddf342cf363a11b73bb2f68b13",
+      "checked_at": "2026-11-13T13:37:29.760806+00:00",
       "new_verified_entries": 0,
-      "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬13件補完と70件の保留根拠を統合。採用を重複計上しない。"
+      "retained_pending_entries": 10320,
+      "scope": "石狩市の公開2カテゴリ・4地図設定と利用規約を追加確認。参照先3表はrobots確認HTTP403で未取得。8保留の個別行照合を済ませたとは扱わない。"
     },
     "remaining_unfinished_entries": 10320,
     "resolved_entry_ids": [
@@ -26797,7 +26803,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T13:31:13.787022+00:00",
+  "computed_at": "2026-11-13T13:37:29.760806+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -400927,6 +400933,319 @@
       "source_kind": "independent_secondary_reference",
       "source_publisher": "エヌの世界（個人調査サイト）",
       "terms_review": "取得3HTMLに標準Copyrightがある。点検範囲に個別事実の記録を明示禁止する条項は確認しないが包括再配布許諾とは扱わない。本文/写真/地図/沿革/個人情報を保存せず最小事実と出典のみ記録。"
+    },
+    {
+      "acquisition_note": "通常Client、interval=2、timeout=20、retries=0。最初のsandbox内DNS失敗は資料側拒否とせず、許可されたネットワーク環境で同じ入口を取得。ポータルHTMLに明示された実group IDと公開目録の実item IDだけを使用。レイヤー配信ホストservices7.arcgis.comはrobots取得HTTP403でClientが取得前に停止。3URLは同一robots結果による未取得であり、表本文3件にHTTP403を受けたという意味ではない。同ホストの別URL・形式・ツールによる取得は行わない。",
+      "api_documentation_reference": "https://developers.arcgis.com/rest/users-groups-and-items/group-content-search/",
+      "attempt_id": "ishikari_two_public_categories_four_maps_layer_robots_stop_20261113",
+      "attribution": "出典：石狩市「環境情報等オープンデータポータルサイト」、自然景観・体験及び暮らしの公開目録、いしかり探訪/いしかり自然探検/集会所一覧/コミュニティセンター一覧の公開地図設定。CC BY 4.0。national-jinja-dictionaryが資料参照・列参照・取得停止範囲のみを抜粋し要約。",
+      "checked_at": "2026-11-13T13:37:29.760806+00:00",
+      "configured_layer_references": [
+        {
+          "configured_popup_fields": [
+            {
+              "field_name": "objectid",
+              "label": "ObjectID"
+            },
+            {
+              "field_name": "name",
+              "label": "Name"
+            },
+            {
+              "field_name": "description",
+              "label": "Description"
+            },
+            {
+              "field_name": "icon_color",
+              "label": "Icon color"
+            },
+            {
+              "field_name": "pic_url",
+              "label": "Picture URL"
+            },
+            {
+              "field_name": "thumb_url",
+              "label": "Thumbnail URL"
+            }
+          ],
+          "item_id": "f4285801a15c45e3a1886e7dd32bee95",
+          "layer_url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/いしかり自然探検/FeatureServer/0",
+          "scope": "公開地図設定に書かれた列参照のみ。配信表のスキーマ本文・行本文を取得した確認ではない。",
+          "title": "Map Tour layer"
+        },
+        {
+          "configured_popup_fields": [
+            {
+              "field_name": "集会所",
+              "label": "集会所"
+            },
+            {
+              "field_name": "住所",
+              "label": "住所"
+            },
+            {
+              "field_name": "ObjectId",
+              "label": "ObjectId"
+            }
+          ],
+          "item_id": "2ae53ce8aff446be81ff2fb59362a167",
+          "layer_url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/石狩市集会所一覧/FeatureServer/0",
+          "scope": "公開地図設定に書かれた列参照のみ。配信表のスキーマ本文・行本文を取得した確認ではない。",
+          "title": "石狩市集会所一覧"
+        },
+        {
+          "configured_popup_fields": [
+            {
+              "field_name": "名称",
+              "label": "名称"
+            },
+            {
+              "field_name": "住所",
+              "label": "住所"
+            },
+            {
+              "field_name": "電話番号",
+              "label": "電話番号"
+            },
+            {
+              "field_name": "ObjectId",
+              "label": "ObjectId"
+            }
+          ],
+          "item_id": "529c932f394c4a7e8fb794fb61133ee3",
+          "layer_url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/石狩市コミュニティセンター一覧/FeatureServer/0",
+          "scope": "公開地図設定に書かれた列参照のみ。配信表のスキーマ本文・行本文を取得した確認ではない。",
+          "title": "石狩市コミュニティセンター一覧"
+        }
+      ],
+      "data_resources_acquired": 0,
+      "data_rows_inspected": 0,
+      "entry_ids": [
+        "1d64c30c-d04b-54e9-b509-6a7b4523306e",
+        "21fcadc3-fc3e-5b05-9321-22a42e02b357",
+        "2d89477c-b9a4-5f53-8b8a-3e51437c12c2",
+        "3b513784-1026-57cc-95da-6606de6ee91c",
+        "6ffce2cc-bd7a-5b2e-88bd-9e7f750199ee",
+        "a3c61a2b-36e6-5665-b35e-feaa5e7c5839",
+        "d593ec08-493c-5545-b3be-3e1ec154795b",
+        "f6a0329e-6d3b-5a3d-838d-5e249d276545"
+      ],
+      "individual_identity_matching_performed": false,
+      "map_setting_references": [
+        {
+          "error": null,
+          "fetched_at": "2026-11-13T13:35:56.159866+00:00",
+          "item_id": "3897235cf4f24481b22974aac81d9687",
+          "page_hash": "39699310d21ce7bbd576be8c7417333ba75fab46729dd856e29ff34389c8722f",
+          "url": "https://ishikari.maps.arcgis.com/sharing/rest/content/items/3897235cf4f24481b22974aac81d9687/data?f=json"
+        },
+        {
+          "error": null,
+          "fetched_at": "2026-11-13T13:35:58.811717+00:00",
+          "item_id": "f4285801a15c45e3a1886e7dd32bee95",
+          "page_hash": "fa7f43e85b8ca64f9653b1a971fcb2af87daf9726a94f325414627e10a3292ea",
+          "url": "https://ishikari.maps.arcgis.com/sharing/rest/content/items/f4285801a15c45e3a1886e7dd32bee95/data?f=json"
+        },
+        {
+          "error": null,
+          "fetched_at": "2026-11-13T13:36:01.505032+00:00",
+          "item_id": "2ae53ce8aff446be81ff2fb59362a167",
+          "page_hash": "1f3e4d6101d62413be6320d5bfb85707c22a7d4711eb64a1e3e315edd02ed08b",
+          "url": "https://ishikari.maps.arcgis.com/sharing/rest/content/items/2ae53ce8aff446be81ff2fb59362a167/data?f=json"
+        },
+        {
+          "error": null,
+          "fetched_at": "2026-11-13T13:36:04.190983+00:00",
+          "item_id": "529c932f394c4a7e8fb794fb61133ee3",
+          "page_hash": "747b9b395d26b3375922386178a14cd2517dd57666ea7214fc0aef3fef93d003",
+          "url": "https://ishikari.maps.arcgis.com/sharing/rest/content/items/529c932f394c4a7e8fb794fb61133ee3/data?f=json"
+        }
+      ],
+      "new_verified_entries": 0,
+      "prefecture_code": "01",
+      "privacy_and_storage": "取得HTML・PDF・設定JSON・表全体・画像・キャッシュ・人物/連絡先は収録しない。正本は最小の資料標題・URL/hash・ID・取得/停止範囲・判断のみ。",
+      "public_category_catalogues": [
+        {
+          "category": "自然景観・体験",
+          "fetched_at": "2026-11-13T13:35:35.770308+00:00",
+          "group_id": "af861337616c4aa19f7e13055b17ffda",
+          "items": [
+            {
+              "access": "public",
+              "id": "3897235cf4f24481b22974aac81d9687",
+              "title": "いしかり探訪　－自然と食と絶景とー",
+              "type": "Web Mapping Application",
+              "url": "https://ishikari.maps.arcgis.com/apps/MapTour/index.html?appid=3897235cf4f24481b22974aac81d9687"
+            },
+            {
+              "access": "public",
+              "id": "f4285801a15c45e3a1886e7dd32bee95",
+              "title": "いしかり自然探検",
+              "type": "Web Map",
+              "url": null
+            }
+          ],
+          "nextStart": -1,
+          "page_hash": "6c204d257f66d3cf93bb35db1690392b6ccaf24c7582a141facb09e9607b67b6",
+          "total": 2,
+          "url": "https://ishikari.maps.arcgis.com/sharing/rest/content/groups/af861337616c4aa19f7e13055b17ffda/search?f=json&num=100&start=1"
+        },
+        {
+          "category": "暮らし",
+          "fetched_at": "2026-11-13T13:35:38.543005+00:00",
+          "group_id": "f3d438af99374e77acbf3ef283416f77",
+          "items": [
+            {
+              "access": "public",
+              "id": "3f286f25dfb64c96b1ce6466f66da4d8",
+              "title": "石狩市令和２年交通事故情報",
+              "type": "Web Map",
+              "url": null
+            },
+            {
+              "access": "public",
+              "id": "2ae53ce8aff446be81ff2fb59362a167",
+              "title": "石狩市集会所一覧",
+              "type": "Web Map",
+              "url": null
+            },
+            {
+              "access": "public",
+              "id": "a52fe476e5164fb68c51686ab03da610",
+              "title": "石狩市令和２年度不審者情報",
+              "type": "Web Map",
+              "url": null
+            },
+            {
+              "access": "public",
+              "id": "529c932f394c4a7e8fb794fb61133ee3",
+              "title": "石狩市コミュニティセンター一覧",
+              "type": "Web Map",
+              "url": null
+            },
+            {
+              "access": "public",
+              "id": "bd220ae95b084d209c18d740fb7cfb68",
+              "title": "令和2年4月1日付　指定ごみ袋等取扱店",
+              "type": "Web Mapping Application",
+              "url": "https://ishikari.maps.arcgis.com/apps/webappviewer/index.html?id=bd220ae95b084d209c18d740fb7cfb68"
+            },
+            {
+              "access": "public",
+              "id": "613de6218aff4c8c86630873a7a59bfe",
+              "title": "石狩市内の地区ごとの人口数のデータ（R3.3末現在）",
+              "type": "Web Map",
+              "url": null
+            },
+            {
+              "access": "public",
+              "id": "7224e5f086294332a37a95df206a45b2",
+              "title": "令和元年度 石狩市内不審者情報",
+              "type": "Feature Service",
+              "url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/令和元年度不審者情報（ArcGIS用）/FeatureServer"
+            },
+            {
+              "access": "public",
+              "id": "df3b9ae8cf3c494384972c09f0e95878",
+              "title": "石狩市内不審者情報",
+              "type": "Web Map",
+              "url": null
+            },
+            {
+              "access": "public",
+              "id": "db96c91f2c274852840e7c4c9bade0a9",
+              "title": "令和2年4月1日付　指定ごみ袋等取扱店",
+              "type": "Code Attachment",
+              "url": "//ishikari.maps.arcgis.com/sharing/rest/content/items/bd220ae95b084d209c18d740fb7cfb68/package"
+            }
+          ],
+          "nextStart": -1,
+          "page_hash": "af40bdc775e9bae38b9048ff39d11d79a46315fab74c3c0c98d16ed2e8d69725",
+          "total": 9,
+          "url": "https://ishikari.maps.arcgis.com/sharing/rest/content/groups/f3d438af99374e77acbf3ef283416f77/search?f=json&num=100&start=1"
+        }
+      ],
+      "references": [
+        {
+          "fetched_at": "2026-11-13T13:33:32.058475+00:00",
+          "page_hash": "8d8d2876fac5e99b6ef39b8db29ce132b3f76850826dc9c95437b6885c1b403d",
+          "title": [
+            "環境情報等オープンデータポータルサイト｜北海道石狩市公式ホームページ"
+          ],
+          "url": "https://www.city.ishikari.hokkaido.jp/kurashi/kankyo/1001829/1002441.html"
+        },
+        {
+          "fetched_at": "2026-11-13T13:34:33.744078+00:00",
+          "page_hash": "7887788c6bd170d776af2e10b53c31311471189d074368e2ff4402b57ba16091",
+          "title": [
+            "石狩市環境情報等オープンデータポータルサイト"
+          ],
+          "url": "https://environment-ishikari.hub.arcgis.com/"
+        }
+      ],
+      "scope": "石狩市の現保留8登録に対する追加資料探索。市公式案内・ポータル・利用規約2ページ、公開2カテゴリの11目録項目、うち自然観光/公共施設4項目の設定を確認。原名・全文かな・原全所在地の行照合は未実施。自然景観/暮らし以外のカテゴリ、市全資料、北海道全保留の完了ではない。",
+      "source_kind": "municipal_open_data_catalogue",
+      "source_publisher": "石狩市",
+      "status": "public_catalogues_and_map_settings_verified_layer_bodies_not_acquired_robots_403",
+      "target_bindings": [
+        {
+          "entry_id": "1d64c30c-d04b-54e9-b509-6a7b4523306e",
+          "expected_source_hash": "58e9dfb217eca504a5e4a0165fb68f9c413a3db04347b986f1ad7f4b73ebc17b"
+        },
+        {
+          "entry_id": "21fcadc3-fc3e-5b05-9321-22a42e02b357",
+          "expected_source_hash": "ad37b066a054394deda9899cf90e0c9b43332d5bfa4a9475d43458b44c258d34"
+        },
+        {
+          "entry_id": "2d89477c-b9a4-5f53-8b8a-3e51437c12c2",
+          "expected_source_hash": "361c509127e1c7a914b3c2052fc1e21bd215d89e8d68ff06c76c73ad0316e294"
+        },
+        {
+          "entry_id": "3b513784-1026-57cc-95da-6606de6ee91c",
+          "expected_source_hash": "f883a2cb72d10a5b448a356f0068956408ebc9244943b96c3ca79422962928b7"
+        },
+        {
+          "entry_id": "6ffce2cc-bd7a-5b2e-88bd-9e7f750199ee",
+          "expected_source_hash": "5c4203dc9235cf3398755c79466fac11b886a754222ffd9edc89b5cc20ba714d"
+        },
+        {
+          "entry_id": "a3c61a2b-36e6-5665-b35e-feaa5e7c5839",
+          "expected_source_hash": "798db5dedd8616a93680c00dcc60420cad14b39f9702064e0353ad80d6e3e18b"
+        },
+        {
+          "entry_id": "d593ec08-493c-5545-b3be-3e1ec154795b",
+          "expected_source_hash": "9291b741569979926b15a94e5f721acb0952ab225d8c275f862b9e9b3f79e497"
+        },
+        {
+          "entry_id": "f6a0329e-6d3b-5a3d-838d-5e249d276545",
+          "expected_source_hash": "6a809e0234b146a19c99b2607a7ad51dc9e1fd724eb17b133e8084c9b7ef29a3"
+        }
+      ],
+      "target_entries": 8,
+      "terms_reference": {
+        "fetched_at": "2026-11-13T13:34:13.762438+00:00",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "locator": "第1項(1)〜(3)、第2項、第4項",
+        "observation": "本サイトの市保有公開データはCC BY4.0、第三者権利は別途確認、加工時は出典と加工表示。別サイト表示との相違では本規約優先。写真・ロゴ等は取得/転載しない。",
+        "page_hash": "f8f5c16d1cac7814ab44332f0d0a74fb1a00d6b9c7c66c3dfe1e0a46ce071cb2",
+        "pages": 2,
+        "url": "https://www.city.ishikari.hokkaido.jp/_res/projects/default_project/_page_/001/002/441/1002441_002.pdf"
+      },
+      "unacquired_layer_preflights": [
+        {
+          "error": "robots status unknown: 403",
+          "url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/%E3%81%84%E3%81%97%E3%81%8B%E3%82%8A%E8%87%AA%E7%84%B6%E6%8E%A2%E6%A4%9C/FeatureServer/0?f=json"
+        },
+        {
+          "error": "robots status unknown: 403",
+          "url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/%E7%9F%B3%E7%8B%A9%E5%B8%82%E9%9B%86%E4%BC%9A%E6%89%80%E4%B8%80%E8%A6%A7/FeatureServer/0?f=json"
+        },
+        {
+          "error": "robots status unknown: 403",
+          "url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/%E7%9F%B3%E7%8B%A9%E5%B8%82%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E4%B8%80%E8%A6%A7/FeatureServer/0?f=json"
+        }
+      ]
     }
   ],
   "per_prefecture": {
