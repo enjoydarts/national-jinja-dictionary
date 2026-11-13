@@ -22652,16 +22652,35 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10558,
         "scope": "前回未取得だった十勝の実目録にある18CSVと対応する17市町村54保留の限定調査。同一本文hashの音更町2資源は別URLを保持し、照合行数へ二重算入しない。現行正本の読み・判断を変更せず、北海道全資料又は全国保留全件の調査完了とはしない。"
+      },
+      {
+        "checked_at": "2026-11-13T04:56:40.995512+00:00",
+        "entry_ids": [],
+        "inspected_targets": 0,
+        "metadata_pages_inspected": 2,
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10558,
+        "scope": "全国を対象とする国土数値情報の避難施設P20・観光資源P12-v2_2の仕様2頁だけを確認。全文かなの明示欄がなく、データ本体・全国施設行・全国保留は照合していない。GeoLOD等の派生データの読み生成方法も未確認。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T04:56:40.995512+00:00",
-      "entry_ids": [],
-      "inspected_targets": 0,
-      "metadata_pages_inspected": 2,
+      "checked_at": "2026-11-13T05:07:05.079974+00:00",
+      "entry_ids": [
+        "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf",
+        "6256b948-3134-5dbc-8446-710932fd8d9a",
+        "841c0080-633c-5ac1-8bb1-1b12e21514a2",
+        "8cc2c4f0-5cbd-55b0-b4a9-6385441b13a6",
+        "f64c5979-a1db-5d10-861b-157ccec0b53c",
+        "aeb6008e-f301-5e29-9613-79b48de1bd76",
+        "f00aa891-0d3e-5a78-848a-9b2ec7e3b465"
+      ],
+      "inspected_catalogues": 6,
+      "inspected_named_data_rows": 322,
+      "inspected_resource_urls": 8,
+      "inspected_targets": 7,
       "new_verified_entries": 0,
       "retained_pending_entries": 10558,
-      "scope": "全国を対象とする国土数値情報の避難施設P20・観光資源P12-v2_2の仕様2頁だけを確認。全文かなの明示欄がなく、データ本体・全国施設行・全国保留は照合していない。GeoLOD等の派生データの読み生成方法も未確認。"
+      "scope": "北海道3市村の選定6目録と実CSVだけ。別工程で解決済みの矢不来天満宮を対象へ戻さず、原スナップショット8登録と現保留対象を区別する。北斗の異なる公共施設2形式を別資源として原行番号を保持し、行数を施設数と同一視しない。全自治体資料・北海道全保留・全国47県の全件完了ではない。"
     },
     "remaining_unfinished_entries": 10558,
     "resolved_entry_ids": [
@@ -22979,7 +22998,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T04:56:40.995512+00:00",
+  "computed_at": "2026-11-13T05:07:05.079974+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -260506,6 +260525,798 @@
       "source_kind": "government_dataset_schema_only",
       "source_publisher": "国土交通省",
       "status": "official_dataset_metadata_inspected_not_downloaded_for_reading"
+    },
+    {
+      "acquired_resource_urls": 8,
+      "adopted_entries": 0,
+      "attempt_id": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+      "checked_at": "2026-11-13T05:06:20.088457+00:00",
+      "collection_process_completion": "session_id=48877の実照会でFINISHED 6 catalogues、exit_code=0を確認。",
+      "current_target_entries": 7,
+      "distinct_resource_bodies": 8,
+      "entry_ids": [
+        "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf",
+        "6256b948-3134-5dbc-8446-710932fd8d9a",
+        "841c0080-633c-5ac1-8bb1-1b12e21514a2",
+        "8cc2c4f0-5cbd-55b0-b4a9-6385441b13a6",
+        "f64c5979-a1db-5d10-861b-157ccec0b53c",
+        "aeb6008e-f301-5e29-9613-79b48de1bd76",
+        "f00aa891-0d3e-5a78-848a-9b2ec7e3b465"
+      ],
+      "excluded_already_inspected_catalogue": {
+        "prior_attempt": "hokuto_eniwa_tourism_current_csv_20261112",
+        "reason": "既点検の北斗市観光施設表は再取得・新規件数に加えない。",
+        "url": "https://www.harp.lg.jp/opendata/dataset/1657.html"
+      },
+      "fixed_original_target_entries": 8,
+      "individual_review_candidates": [],
+      "inspected_catalogues": 6,
+      "inspected_named_data_rows": 322,
+      "new_verified_entries": 0,
+      "non_target_shrine_observations": [
+        {
+          "decision": "掲載された別名称の神社の行。現在の保留原名と対応せず、新規施設登録・別施設への読み流用・名称変更をしない。",
+          "reference_page_hash": "f9c89354e64a733e19b20dc01d34a45c1e30e5c5461feae1e9315284adba1243",
+          "reference_url": "https://www.harp.lg.jp/opendata/dataset/2018/resource/6669/014851_cultural_property_new.csv",
+          "row": 2,
+          "source_fields": {
+            "名称": "金比羅神社",
+            "名称_カナ": "コンピラジンジャ",
+            "所在地_連結表記": "北海道苫前郡初山別村字豊岬"
+          }
+        },
+        {
+          "decision": "掲載された別名称の神社の行。現在の保留原名と対応せず、新規施設登録・別施設への読み流用・名称変更をしない。",
+          "reference_page_hash": "986232b1974f7bb5f2a2fcf06cf0562d68d06d403a622df0272ae70dae5f2c30",
+          "reference_url": "https://www.harp.lg.jp/opendata/dataset/2027/resource/6685/014851_tourism_new.csv",
+          "row": 9,
+          "source_fields": {
+            "名称": "金比羅神社",
+            "名称_カナ": "コンピラジンジャ",
+            "所在地_連結表記": "北海道苫前郡初山別村字豊岬"
+          }
+        }
+      ],
+      "nonempty_physical_data_rows": 323,
+      "raw_physical_csv_rows_including_headers_and_blanks": 365,
+      "resources": [
+        {
+          "address_columns": [
+            "所在地_連結表記"
+          ],
+          "catalog_reference": {
+            "creator_raw": "北斗市",
+            "fetched_at": "2026-11-13T04:52:49.897354+00:00",
+            "page_hash": "f008b6c649a041199e18e44cf0a8560930474ece82c969cb5e960383545f39a7",
+            "title": [
+              "公共施設一覧【北斗市】 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/dataset/1655.html"
+          },
+          "columns": [
+            "全国地方公共団体コード",
+            "ID",
+            "地方公共団体名",
+            "名称",
+            "名称_カナ",
+            "名称_英字",
+            "名称_通称",
+            "POIコード",
+            "外部識別子",
+            "外部識別子の値",
+            "所在地_全国地方公共団体コード",
+            "町字ID",
+            "所在地_連結表記",
+            "所在地_都道府県",
+            "所在地_市区町村",
+            "所在地_町字",
+            "所在地_番地以下",
+            "建物名等（方書）",
+            "緯度",
+            "経度",
+            "高度の種別",
+            "高度の値",
+            "電話番号",
+            "内線番号",
+            "連絡先メールアドレス",
+            "連絡先FormURL",
+            "連絡先備考（その他、SNSなど）",
+            "郵便番号",
+            "法人番号",
+            "団体名",
+            "利用可能曜日",
+            "開始時間",
+            "終了時間",
+            "利用可能時間特記事項",
+            "説明",
+            "車椅子可",
+            "車椅子貸出",
+            "ツエ貸出",
+            "多目的トイレ",
+            "スロープ、エレベータ、エスカレータ",
+            "点字ブロック等の移動支援",
+            "点字や読上による支援",
+            "盲導犬・介助犬・聴導犬同伴",
+            "字幕",
+            "筆談対応",
+            "優先駐車場",
+            "オストメイト対応トイレ",
+            "授乳室",
+            "おむつ替えコーナー",
+            "飲食可否",
+            "ベビーカー貸出",
+            "ベビーカー利用",
+            "URL",
+            "画像",
+            "画像ライセンス",
+            "備考"
+          ],
+          "credit": "出典：北斗市「公共施設一覧」（北海道オープンデータポータル掲載）、CC BY4.0。national-jinja-dictionaryが必要原欄を照合・要約。",
+          "encoding": "cp932",
+          "fetched_at": "2026-11-13T04:53:50.219718+00:00",
+          "href_raw": "/opendata/dataset/1655/resource/9138/012360_public_facility_20260826.csv",
+          "license": "CC-BY-4.0",
+          "name_columns": [
+            "名称"
+          ],
+          "named_data_rows": 118,
+          "nameless_nonrecord_row_numbers": [
+            146
+          ],
+          "nonempty_physical_data_rows": 119,
+          "page_hash": "9e4b962fa4899b718f7e118367444f8d8396fa0e07f62b1c2a44bde20465c31f",
+          "reading_columns": [
+            "名称_カナ"
+          ],
+          "source_publisher": "北斗市",
+          "terms_reference": {
+            "fetched_at": "2026-11-13T04:35:42.771692+00:00",
+            "license_links": [],
+            "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+            "title": [
+              "利用規約 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/terms.html"
+          },
+          "title": "公共施設一覧",
+          "url": "https://www.harp.lg.jp/opendata/dataset/1655/resource/9138/012360_public_facility_20260826.csv"
+        },
+        {
+          "address_columns": [
+            "住所"
+          ],
+          "catalog_reference": {
+            "creator_raw": "北斗市",
+            "fetched_at": "2026-11-13T04:52:49.897354+00:00",
+            "page_hash": "f008b6c649a041199e18e44cf0a8560930474ece82c969cb5e960383545f39a7",
+            "title": [
+              "公共施設一覧【北斗市】 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/dataset/1655.html"
+          },
+          "columns": [
+            "都道府県コード又は市区町村コード",
+            "NO",
+            "都道府県名",
+            "市区町村名",
+            "名称",
+            "名称_カナ",
+            "名称_通称",
+            "POIコード",
+            "住所",
+            "方書",
+            "緯度",
+            "経度",
+            "電話番号",
+            "内線番号",
+            "法人番号",
+            "団体名",
+            "利用可能曜日",
+            "開始時間",
+            "終了時間",
+            "利用可能時間特記事項",
+            "説明",
+            "バリアフリー情報",
+            "URL",
+            "備考"
+          ],
+          "credit": "出典：北斗市「公共施設一覧」（北海道オープンデータポータル掲載）、CC BY4.0。national-jinja-dictionaryが必要原欄を照合・要約。",
+          "encoding": "cp932",
+          "fetched_at": "2026-11-13T04:54:50.436351+00:00",
+          "href_raw": "/opendata/dataset/1655/resource/3697/012360_public_facility.csv",
+          "license": "CC-BY-4.0",
+          "name_columns": [
+            "名称"
+          ],
+          "named_data_rows": 120,
+          "nameless_nonrecord_row_numbers": [],
+          "nonempty_physical_data_rows": 120,
+          "page_hash": "0578b4c3b5096411b50b68ea3dd16b00f232150dae0345015e57c6fc4ee793ad",
+          "reading_columns": [
+            "名称_カナ"
+          ],
+          "source_publisher": "北斗市",
+          "terms_reference": {
+            "fetched_at": "2026-11-13T04:35:42.771692+00:00",
+            "license_links": [],
+            "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+            "title": [
+              "利用規約 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/terms.html"
+          },
+          "title": "公共施設一覧",
+          "url": "https://www.harp.lg.jp/opendata/dataset/1655/resource/3697/012360_public_facility.csv"
+        },
+        {
+          "address_columns": [
+            "所在地_連結表記"
+          ],
+          "catalog_reference": {
+            "creator_raw": "初山別村",
+            "fetched_at": "2026-11-13T04:55:50.570343+00:00",
+            "page_hash": "6152c11c9cc7d34cee47a4f8f0c2965133a07206e1a0efed00db2f6d43b4da96",
+            "title": [
+              "公共施設一覧【初山別村】 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/dataset/2017.html"
+          },
+          "columns": [
+            "全国地方公共団体コード",
+            "ID",
+            "地方公共団体名",
+            "名称",
+            "名称_カナ",
+            "名称_英字",
+            "名称_通称",
+            "POIコード",
+            "外部識別子",
+            "外部識別子の値",
+            "所在地_全国地方公共団体コード",
+            "町字ID",
+            "所在地_連結表記",
+            "所在地_都道府県",
+            "所在地_市区町村",
+            "所在地_町字",
+            "所在地_番地以下",
+            "建物名等(方書)",
+            "緯度",
+            "経度",
+            "高度の種別",
+            "高度の値",
+            "電話番号",
+            "内線番号",
+            "連絡先メールアドレス",
+            "連絡先FormURL",
+            "連絡先備考（その他、SNSなど）",
+            "郵便番号",
+            "法人番号",
+            "団体名",
+            "利用可能曜日",
+            "開始時間",
+            "終了時間",
+            "利用可能時間特記事項",
+            "説明",
+            "車椅子可",
+            "車椅子貸出",
+            "ツエ貸出",
+            "バリアフリートイレ",
+            "スロープ、エレベータ、エスカレータ",
+            "点字ブロック等の移動支援",
+            "点字や読上による支援",
+            "盲導犬・介助犬、聴導犬同伴",
+            "字幕",
+            "筆談対応",
+            "優先駐車場",
+            "オストメイト対応トイレ",
+            "授乳室",
+            "おむつ替えコーナー",
+            "飲食可否",
+            "ベビーカー貸出",
+            "ベビーカー利用",
+            "URL",
+            "画像",
+            "画像_ライセンス",
+            "備考"
+          ],
+          "credit": "出典：初山別村「公共施設一覧【初山別村】」（北海道オープンデータポータル掲載）、CC BY4.0。national-jinja-dictionaryが必要原欄を照合・要約。",
+          "encoding": "utf-8-sig",
+          "fetched_at": "2026-11-13T04:56:50.873954+00:00",
+          "href_raw": "/opendata/dataset/2017/resource/6667/014851_public_facility_new.csv",
+          "license": "CC-BY-4.0",
+          "name_columns": [
+            "名称"
+          ],
+          "named_data_rows": 46,
+          "nameless_nonrecord_row_numbers": [],
+          "nonempty_physical_data_rows": 46,
+          "page_hash": "27678321a8e4890ca7f6066ba8e158130b41e4b35510e3a15437702aee31590f",
+          "reading_columns": [
+            "名称_カナ"
+          ],
+          "source_publisher": "初山別村",
+          "terms_reference": {
+            "fetched_at": "2026-11-13T04:35:42.771692+00:00",
+            "license_links": [],
+            "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+            "title": [
+              "利用規約 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/terms.html"
+          },
+          "title": "公共施設一覧【初山別村】",
+          "url": "https://www.harp.lg.jp/opendata/dataset/2017/resource/6667/014851_public_facility_new.csv"
+        },
+        {
+          "address_columns": [
+            "所在地_連結表記"
+          ],
+          "catalog_reference": {
+            "creator_raw": "初山別村",
+            "fetched_at": "2026-11-13T04:57:51.010682+00:00",
+            "page_hash": "7e8d49c7d91d077efeacb362b4a4f3104bdb61d54cfb22fb3b8286251ba29e27",
+            "title": [
+              "文化財一覧【初山別村】 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/dataset/2018.html"
+          },
+          "columns": [
+            "全国地方公共団体コード",
+            "ID",
+            "地方公共団体名",
+            "名称",
+            "名称_カナ",
+            "名称_通称",
+            "名称_英語",
+            "文化財分類",
+            "種類",
+            "場所名称",
+            "所在地_全国地方公共団体コード",
+            "町字ID",
+            "所在地_連結表記",
+            "所在地_都道府県",
+            "所在地_市区町村",
+            "所在地_町字",
+            "所在地_番地以下",
+            "建物名等(方書)",
+            "緯度",
+            "経度",
+            "高度の種別",
+            "高度の値",
+            "電話番号",
+            "内線番号",
+            "連絡先メールアドレス",
+            "連絡先FormURL",
+            "連絡先備考（その他、SNSなど）",
+            "郵便番号",
+            "員数（数）",
+            "員数（単位）",
+            "法人番号",
+            "所有者等",
+            "文化財指定日",
+            "利用可能曜日",
+            "開始時間",
+            "終了時間",
+            "利用可能日時特記事項",
+            "画像",
+            "画像_ライセンス",
+            "概要",
+            "概要_英語",
+            "説明",
+            "説明_英語",
+            "URL",
+            "備考"
+          ],
+          "credit": "出典：初山別村「文化財一覧【初山別村】」（北海道オープンデータポータル掲載）、CC BY4.0。national-jinja-dictionaryが必要原欄を照合・要約。",
+          "encoding": "utf-8-sig",
+          "fetched_at": "2026-11-13T04:58:51.178213+00:00",
+          "href_raw": "/opendata/dataset/2018/resource/6669/014851_cultural_property_new.csv",
+          "license": "CC-BY-4.0",
+          "name_columns": [
+            "名称"
+          ],
+          "named_data_rows": 1,
+          "nameless_nonrecord_row_numbers": [],
+          "nonempty_physical_data_rows": 1,
+          "page_hash": "f9c89354e64a733e19b20dc01d34a45c1e30e5c5461feae1e9315284adba1243",
+          "reading_columns": [
+            "名称_カナ"
+          ],
+          "source_publisher": "初山別村",
+          "terms_reference": {
+            "fetched_at": "2026-11-13T04:35:42.771692+00:00",
+            "license_links": [],
+            "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+            "title": [
+              "利用規約 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/terms.html"
+          },
+          "title": "文化財一覧【初山別村】",
+          "url": "https://www.harp.lg.jp/opendata/dataset/2018/resource/6669/014851_cultural_property_new.csv"
+        },
+        {
+          "address_columns": [
+            "所在地_連結表記"
+          ],
+          "catalog_reference": {
+            "creator_raw": "初山別村",
+            "fetched_at": "2026-11-13T04:59:51.440327+00:00",
+            "page_hash": "a27f9fd63341badc5185d90ac7695b1e3cc6c46369d0f881612ec38179371727",
+            "title": [
+              "観光施設一覧【初山別村】 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/dataset/2027.html"
+          },
+          "columns": [
+            "全国地方公共団体コード",
+            "法人番号",
+            "ID",
+            "地方公共団体名",
+            "名称",
+            "名称_カナ",
+            "名称_英語",
+            "POIコード",
+            "所在地_全国地方公共団体コード",
+            "町字ID",
+            "所在地_連結表記",
+            "所在地_都道府県",
+            "所在地_市区町村",
+            "所在地_町字",
+            "所在地_番地以下",
+            "建物名等(方書)",
+            "緯度",
+            "経度",
+            "高度の種別",
+            "高度の値",
+            "利用可能曜日",
+            "開始時間",
+            "終了時間",
+            "利用可能日時特記事項",
+            "料金(基本)",
+            "料金(詳細)",
+            "説明",
+            "説明_英語",
+            "アクセス方法",
+            "駐車場情報",
+            "車椅子可",
+            "車椅子貸出",
+            "ツエ貸出",
+            "バリアフリートイレ",
+            "スロープ、エレベータ、エスカレータ",
+            "点字ブロック等の移動支援",
+            "点字や読上による支援",
+            "盲導犬・介助犬、聴導犬同伴",
+            "字幕",
+            "筆談対応",
+            "優先駐車場",
+            "オストメイト対応トイレ",
+            "授乳室",
+            "おむつ替えコーナー",
+            "飲食可否",
+            "ベビーカー貸出",
+            "ベビーカー利用",
+            "連絡先名称",
+            "連絡先電話番号",
+            "連絡先内線番号",
+            "連絡先メールアドレス",
+            "連絡先FormURL",
+            "連絡先備考（その他、SNSなど）",
+            "郵便番号",
+            "画像",
+            "画像_ライセンス",
+            "URL",
+            "備考"
+          ],
+          "credit": "出典：初山別村「観光施設一覧【初山別村】」（北海道オープンデータポータル掲載）、CC BY4.0。national-jinja-dictionaryが必要原欄を照合・要約。",
+          "encoding": "utf-8-sig",
+          "fetched_at": "2026-11-13T05:00:51.684545+00:00",
+          "href_raw": "/opendata/dataset/2027/resource/6685/014851_tourism_new.csv",
+          "license": "CC-BY-4.0",
+          "name_columns": [
+            "名称"
+          ],
+          "named_data_rows": 11,
+          "nameless_nonrecord_row_numbers": [],
+          "nonempty_physical_data_rows": 11,
+          "page_hash": "986232b1974f7bb5f2a2fcf06cf0562d68d06d403a622df0272ae70dae5f2c30",
+          "reading_columns": [
+            "名称_カナ"
+          ],
+          "source_publisher": "初山別村",
+          "terms_reference": {
+            "fetched_at": "2026-11-13T04:35:42.771692+00:00",
+            "license_links": [],
+            "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+            "title": [
+              "利用規約 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/terms.html"
+          },
+          "title": "観光施設一覧【初山別村】",
+          "url": "https://www.harp.lg.jp/opendata/dataset/2027/resource/6685/014851_tourism_new.csv"
+        },
+        {
+          "address_columns": [
+            "住所"
+          ],
+          "catalog_reference": {
+            "creator_raw": "新篠津村",
+            "fetched_at": "2026-11-13T05:01:51.880742+00:00",
+            "page_hash": "d62fbe07964f57af2fce6e56f0a39ea6e8532cbc7f2e646483b49d28835461f6",
+            "title": [
+              "公共施設一覧【北海道新篠津村】 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/dataset/542.html"
+          },
+          "columns": [
+            "都道府県コード又は市区町村コード",
+            "NO",
+            "都道府県名",
+            "市区町村名",
+            "名称",
+            "名称_カナ",
+            "名称_通称",
+            "POIコード",
+            "住所",
+            "方書",
+            "緯度",
+            "経度",
+            "電話番号",
+            "内線番号",
+            "法人番号",
+            "団体名",
+            "利用可能曜日",
+            "開始時間",
+            "終了時間",
+            "利用可能時間特記事項",
+            "説明",
+            "バリアフリー情報",
+            "URL",
+            "備考"
+          ],
+          "credit": "出典：新篠津村「公共施設一覧」（北海道オープンデータポータル掲載）、CC BY4.0。national-jinja-dictionaryが必要原欄を照合・要約。",
+          "encoding": "cp932",
+          "fetched_at": "2026-11-13T05:02:52.076427+00:00",
+          "href_raw": "/opendata/dataset/542/resource/711/013048_public_facility.csv",
+          "license": "CC-BY-4.0",
+          "name_columns": [
+            "名称"
+          ],
+          "named_data_rows": 23,
+          "nameless_nonrecord_row_numbers": [],
+          "nonempty_physical_data_rows": 23,
+          "page_hash": "80937b60d1356990d173eee41e623195862ce0ce939fc51c9f6e02c97ec95db8",
+          "reading_columns": [
+            "名称_カナ"
+          ],
+          "source_publisher": "新篠津村",
+          "terms_reference": {
+            "fetched_at": "2026-11-13T04:35:42.771692+00:00",
+            "license_links": [],
+            "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+            "title": [
+              "利用規約 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/terms.html"
+          },
+          "title": "公共施設一覧",
+          "url": "https://www.harp.lg.jp/opendata/dataset/542/resource/711/013048_public_facility.csv"
+        },
+        {
+          "address_columns": [
+            "住所"
+          ],
+          "catalog_reference": {
+            "creator_raw": "新篠津村",
+            "fetched_at": "2026-11-13T05:03:52.205479+00:00",
+            "page_hash": "b35726301ea7dbcfaea920fae31f5f4f833ab222763d5a90b1f1448b83d50e5e",
+            "title": [
+              "観光施設一覧【北海道新篠津村】 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/dataset/555.html"
+          },
+          "columns": [
+            "都道府県コード又は市区町村コード",
+            "NO",
+            "都道府県名",
+            "市区町村名",
+            "名称",
+            "名称_カナ",
+            "名称_英語",
+            "POIコード",
+            "住所",
+            "方書",
+            "緯度",
+            "経度",
+            "利用可能曜日",
+            "開始時間",
+            "終了時間",
+            "利用可能日時特記事項",
+            "料金（基本）",
+            "料金（詳細）",
+            "説明",
+            "説明_英語",
+            "アクセス方法",
+            "駐車場情報",
+            "バリアフリー情報",
+            "連絡先名称",
+            "連絡先電話番号",
+            "連絡先内線番号",
+            "画像",
+            "画像_ライセンス",
+            "URL",
+            "備考"
+          ],
+          "credit": "出典：新篠津村「観光施設一覧」（北海道オープンデータポータル掲載）、CC BY4.0。national-jinja-dictionaryが必要原欄を照合・要約。",
+          "encoding": "cp932",
+          "fetched_at": "2026-11-13T05:04:52.418985+00:00",
+          "href_raw": "/opendata/dataset/555/resource/724/013048_tourism.csv",
+          "license": "CC-BY-4.0",
+          "name_columns": [
+            "名称"
+          ],
+          "named_data_rows": 1,
+          "nameless_nonrecord_row_numbers": [],
+          "nonempty_physical_data_rows": 1,
+          "page_hash": "f34214ccd9486a79d3a504ae7ee025b47529f3dabde9dd8f0ec1b954454b9449",
+          "reading_columns": [
+            "名称_カナ"
+          ],
+          "source_publisher": "新篠津村",
+          "terms_reference": {
+            "fetched_at": "2026-11-13T04:35:42.771692+00:00",
+            "license_links": [],
+            "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+            "title": [
+              "利用規約 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/terms.html"
+          },
+          "title": "観光施設一覧",
+          "url": "https://www.harp.lg.jp/opendata/dataset/555/resource/724/013048_tourism.csv"
+        },
+        {
+          "address_columns": [
+            "住所"
+          ],
+          "catalog_reference": {
+            "creator_raw": "新篠津村",
+            "fetched_at": "2026-11-13T05:03:52.205479+00:00",
+            "page_hash": "b35726301ea7dbcfaea920fae31f5f4f833ab222763d5a90b1f1448b83d50e5e",
+            "title": [
+              "観光施設一覧【北海道新篠津村】 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/dataset/555.html"
+          },
+          "columns": [
+            "都道府県コード又は市区町村コード",
+            "NO",
+            "都道府県名",
+            "市区町村名",
+            "名称",
+            "名称_カナ",
+            "名称_英語",
+            "POIコード",
+            "住所",
+            "方書",
+            "緯度",
+            "経度",
+            "利用可能曜日",
+            "開始時間",
+            "終了時間",
+            "利用可能日時特記事項",
+            "料金（基本）",
+            "料金（詳細）",
+            "説明",
+            "説明_英語",
+            "アクセス方法",
+            "駐車場情報",
+            "バリアフリー情報",
+            "連絡先名称",
+            "連絡先電話番号",
+            "連絡先内線番号",
+            "画像",
+            "画像_ライセンス",
+            "URL",
+            "備考"
+          ],
+          "credit": "出典：新篠津村「観光施設一覧」（北海道オープンデータポータル掲載）、CC BY4.0。national-jinja-dictionaryが必要原欄を照合・要約。",
+          "encoding": "cp932",
+          "fetched_at": "2026-11-13T05:05:52.600167+00:00",
+          "href_raw": "/opendata/dataset/555/resource/6418/013048_tourism.csv",
+          "license": "CC-BY-4.0",
+          "name_columns": [
+            "名称"
+          ],
+          "named_data_rows": 2,
+          "nameless_nonrecord_row_numbers": [],
+          "nonempty_physical_data_rows": 2,
+          "page_hash": "f84e29d1d87cc06a31df7c8ce65223ea62f3d9ec2af342b47cd7336d1313b594",
+          "reading_columns": [
+            "名称_カナ"
+          ],
+          "source_publisher": "新篠津村",
+          "terms_reference": {
+            "fetched_at": "2026-11-13T04:35:42.771692+00:00",
+            "license_links": [],
+            "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+            "title": [
+              "利用規約 - 北海道オープンデータポータルサイト"
+            ],
+            "url": "https://www.harp.lg.jp/opendata/terms.html"
+          },
+          "title": "観光施設一覧",
+          "url": "https://www.harp.lg.jp/opendata/dataset/555/resource/6418/013048_tourism.csv"
+        }
+      ],
+      "reviewed_municipalities": [
+        "初山別村",
+        "北斗市",
+        "新篠津村"
+      ],
+      "scope": "北海道3市村の選定6目録と実CSVだけ。別工程で解決済みの矢不来天満宮を対象へ戻さず、原スナップショット8登録と現保留対象を区別する。北斗の異なる公共施設2形式を別資源として原行番号を保持し、行数を施設数と同一視しない。全自治体資料・北海道全保留・全国47県の全件完了ではない。",
+      "source_kind": "municipal_open_data",
+      "source_publisher": "北斗市・初山別村・新篠津村（北海道オープンデータポータル掲載）",
+      "status": "all_six_catalogue_attempts_finished",
+      "stopped_or_unacquired": [],
+      "table_compared_target_entries": 7,
+      "target_bindings": [
+        {
+          "address": "北斗市七重浜7丁目5番1号",
+          "entry_id": "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf",
+          "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
+          "facility_id": "8fc3fd33-0487-5ddd-ad33-0c66fe125e50",
+          "surface": "七重浜海津見神社"
+        },
+        {
+          "address": "北斗市当別2丁目1番1号",
+          "entry_id": "6256b948-3134-5dbc-8446-710932fd8d9a",
+          "expected_source_hash": "01e597dff237577bcf603d6c8a1ae418ca347ab2ce788304cb723f8d98f14247",
+          "facility_id": "dbf425c0-f58b-57ef-9df5-f3e5ea9e1dcd",
+          "surface": "丸山神社"
+        },
+        {
+          "address": "北斗市三ッ石173番地",
+          "entry_id": "841c0080-633c-5ac1-8bb1-1b12e21514a2",
+          "expected_source_hash": "040e24bbfef49553dcfcdfa1081129410830b3488c8aeb10049e864d4db70424",
+          "facility_id": "11bc4cd1-5a12-564d-9089-41ca662f2f93",
+          "surface": "瑞石神社"
+        },
+        {
+          "address": "苫前郡初山別村字豊岬219番地",
+          "entry_id": "8cc2c4f0-5cbd-55b0-b4a9-6385441b13a6",
+          "expected_source_hash": "8f6d6ca759f550d4f2050cc1137a009498d6005f3a8b2284e38b792173a4e0c0",
+          "facility_id": "07367001-90b8-5548-b04e-f504d5d8d125",
+          "surface": "豊岬稲荷神社"
+        },
+        {
+          "address": "苫前郡初山別村字初山別170番地",
+          "entry_id": "f64c5979-a1db-5d10-861b-157ccec0b53c",
+          "expected_source_hash": "208be2dabf8e4a1dd3584cf0aec34989307ff2012094a6a5cb8afe63f5a346b2",
+          "facility_id": "e1072d46-508f-56c7-af0f-b748deca2003",
+          "surface": "稲荷神社"
+        },
+        {
+          "address": "石狩郡新篠津村第47線北13番地",
+          "entry_id": "aeb6008e-f301-5e29-9613-79b48de1bd76",
+          "expected_source_hash": "18d3872cb46f66732b07b1e6c47f05cfdc345bd1aa60571c2b3c4f2f5ed1aba2",
+          "facility_id": "42c6a3b4-e0ef-547b-bdd8-c0a81aeedb85",
+          "surface": "新篠津神社"
+        },
+        {
+          "address": "石狩郡新篠津村第36線北30番地",
+          "entry_id": "f00aa891-0d3e-5a78-848a-9b2ec7e3b465",
+          "expected_source_hash": "e45b6179ecaf7d82351d1639ca76242c9f2dab7dd98575d39918fe8edbd8b127",
+          "facility_id": "60b3f1f2-2d24-5dc3-beb2-a3b4d5293c83",
+          "surface": "愛宕神社"
+        }
+      ],
+      "target_municipalities": [
+        "北斗市",
+        "初山別村",
+        "新篠津村"
+      ]
     }
   ],
   "per_prefecture": {
@@ -265320,6 +266131,21 @@
           "source_kind": "agency",
           "source_publisher": "北海道神社庁",
           "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T05:06:20.088457+00:00",
+          "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+          "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
+          "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
+          "observations": [],
+          "reference_urls": [
+            "https://www.harp.lg.jp/opendata/dataset/1655/resource/9138/012360_public_facility_20260826.csv",
+            "https://www.harp.lg.jp/opendata/dataset/1655/resource/3697/012360_public_facility.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "北斗市",
+          "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
         }
       ],
       "address": "北斗市七重浜7丁目5番1号",
@@ -273765,6 +274591,21 @@
           "source_kind": "agency",
           "source_publisher": "北海道神社庁",
           "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T05:06:20.088457+00:00",
+          "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+          "expected_source_hash": "01e597dff237577bcf603d6c8a1ae418ca347ab2ce788304cb723f8d98f14247",
+          "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
+          "observations": [],
+          "reference_urls": [
+            "https://www.harp.lg.jp/opendata/dataset/1655/resource/9138/012360_public_facility_20260826.csv",
+            "https://www.harp.lg.jp/opendata/dataset/1655/resource/3697/012360_public_facility.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "北斗市",
+          "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
         }
       ],
       "address": "北斗市当別2丁目1番1号",
@@ -279111,6 +279952,21 @@
           "source_kind": "agency",
           "source_publisher": "北海道神社庁",
           "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T05:06:20.088457+00:00",
+          "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+          "expected_source_hash": "040e24bbfef49553dcfcdfa1081129410830b3488c8aeb10049e864d4db70424",
+          "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
+          "observations": [],
+          "reference_urls": [
+            "https://www.harp.lg.jp/opendata/dataset/1655/resource/9138/012360_public_facility_20260826.csv",
+            "https://www.harp.lg.jp/opendata/dataset/1655/resource/3697/012360_public_facility.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "北斗市",
+          "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
         }
       ],
       "address": "北斗市三ッ石173番地",
@@ -280443,6 +281299,22 @@
           "source_kind": "agency",
           "source_publisher": "北海道神社庁",
           "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T05:06:20.088457+00:00",
+          "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+          "expected_source_hash": "8f6d6ca759f550d4f2050cc1137a009498d6005f3a8b2284e38b792173a4e0c0",
+          "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
+          "observations": [],
+          "reference_urls": [
+            "https://www.harp.lg.jp/opendata/dataset/2017/resource/6667/014851_public_facility_new.csv",
+            "https://www.harp.lg.jp/opendata/dataset/2018/resource/6669/014851_cultural_property_new.csv",
+            "https://www.harp.lg.jp/opendata/dataset/2027/resource/6685/014851_tourism_new.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "初山別村",
+          "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
         }
       ],
       "address": "苫前郡初山別村字豊岬219番地",
@@ -284326,6 +285198,22 @@
           "source_kind": "agency",
           "source_publisher": "北海道神社庁",
           "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T05:06:20.088457+00:00",
+          "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+          "expected_source_hash": "18d3872cb46f66732b07b1e6c47f05cfdc345bd1aa60571c2b3c4f2f5ed1aba2",
+          "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
+          "observations": [],
+          "reference_urls": [
+            "https://www.harp.lg.jp/opendata/dataset/542/resource/711/013048_public_facility.csv",
+            "https://www.harp.lg.jp/opendata/dataset/555/resource/724/013048_tourism.csv",
+            "https://www.harp.lg.jp/opendata/dataset/555/resource/6418/013048_tourism.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "新篠津村",
+          "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
         }
       ],
       "address": "石狩郡新篠津村第47線北13番地",
@@ -296854,6 +297742,22 @@
           "source_kind": "agency",
           "source_publisher": "北海道神社庁",
           "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T05:06:20.088457+00:00",
+          "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+          "expected_source_hash": "e45b6179ecaf7d82351d1639ca76242c9f2dab7dd98575d39918fe8edbd8b127",
+          "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
+          "observations": [],
+          "reference_urls": [
+            "https://www.harp.lg.jp/opendata/dataset/542/resource/711/013048_public_facility.csv",
+            "https://www.harp.lg.jp/opendata/dataset/555/resource/724/013048_tourism.csv",
+            "https://www.harp.lg.jp/opendata/dataset/555/resource/6418/013048_tourism.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "新篠津村",
+          "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
         }
       ],
       "address": "石狩郡新篠津村第36線北30番地",
@@ -297579,6 +298483,22 @@
           "source_kind": "agency",
           "source_publisher": "北海道神社庁",
           "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T05:06:20.088457+00:00",
+          "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+          "expected_source_hash": "208be2dabf8e4a1dd3584cf0aec34989307ff2012094a6a5cb8afe63f5a346b2",
+          "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
+          "observations": [],
+          "reference_urls": [
+            "https://www.harp.lg.jp/opendata/dataset/2017/resource/6667/014851_public_facility_new.csv",
+            "https://www.harp.lg.jp/opendata/dataset/2018/resource/6669/014851_cultural_property_new.csv",
+            "https://www.harp.lg.jp/opendata/dataset/2027/resource/6685/014851_tourism_new.csv"
+          ],
+          "source_kind": "municipal_open_data",
+          "source_publisher": "初山別村",
+          "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
         }
       ],
       "address": "苫前郡初山別村字初山別170番地",
