@@ -310511,6 +310511,70 @@
       "source_kind": "government_cultural_property_database",
       "source_publisher": "文化庁",
       "status": "one_parent_full_name_reading_adopted_at_original_printed_locality_scope"
+    },
+    {
+      "acquisition_stops": [
+        {
+          "error": "FetchError: robots returned HTML; policy unknown",
+          "observation": "公開リンク先のrobotsがHTMLで方針不明。対象詳細本文は取得せず、代替経路による回避もしない。Webツールのcache missとローカル制限下のDNS失敗はサイト側拒否の証拠とは扱わない。",
+          "status": "policy_unknown_stopped",
+          "url": "https://www.82bunka.or.jp/bunkazai/detail.php?no=3949&seq=0"
+        }
+      ],
+      "attempt_id": "yasuoka_suwa_municipal_cultural_property_followup_20261113",
+      "checked_at": "2026-11-13T07:12:05.440508+00:00",
+      "inspected_target_entries": 1,
+      "new_verified_entries": 0,
+      "references": [
+        {
+          "attribution": "出典：泰阜村「歴史・文化財」",
+          "checked_at": "2026-11-13T07:12:05.440508+00:00",
+          "designation_date_raw": "平成5年4月20日",
+          "fetched_at": "2026-11-13T07:10:59.973743+00:00",
+          "full_reading_explicit": false,
+          "full_target_address_explicit": false,
+          "name_raw": "金野諏訪社",
+          "officialness_basis": "村公式ドメインの本文に泰阜村の文化財と教育委員会の担当を確認。",
+          "page_hash": "0ff971f8062440e79605cc64c18a7070fdae1979132117465aa08dec3a7a5862",
+          "property_names_raw": [
+            "本殿",
+            "若宮八幡宮本殿"
+          ],
+          "reuse_scope": "施設名・建造物名・指定日という最小限の事実項目の照合。本文・画像は保存対象外。オープンデータ利用規約をこの一般ページへ適用したとは扱わない。",
+          "source_kind": "government_reference",
+          "source_locator": "国・県指定文化財 > 国指定重要文化財 > p",
+          "source_publisher": "泰阜村教育委員会",
+          "title": "歴史・文化財 - 泰阜村",
+          "url": "https://www.vill.yasuoka.nagano.jp/docs/2498.html"
+        }
+      ],
+      "result": "元IDと文化庁の対象棟を結び付ける番地資料が不足し保留継続。原名・原住所・全文かな・補正状態は変更しない。",
+      "retained_pending_entries": 1,
+      "scope": "泰阜村の対象一登録について公式文化財本文を限定照合。全保留の完了や新たな47都道府県照合ではない。",
+      "snapshot_base_commit": "1e4db8051406f119f9f09e803546f9dbbe0839ae",
+      "supplementary_web_observations": [
+        {
+          "observation": "重要文化財一覧PDFへの本文リンクを確認。原応答のhash未取得。",
+          "source_publisher": "長野県文化振興課",
+          "status": "body_inspected_via_web_tool",
+          "url": "https://www.pref.nagano.lg.jp/bunkashinko/bunkazai/bunkazai_jouhou_main.html"
+        },
+        {
+          "observation": "諏訪社・本殿／若宮八幡宮本殿・泰阜村の行から八十二文化財団3949への公開リンクを確認。PDFの所在地は村名までで566はない。原応答hashと視覚配置は未検証。辞書補正の根拠には採用しない。",
+          "source_locator": "PDF 3/13頁、項番29",
+          "status": "pdf_text_inspected_via_web_tool",
+          "url": "https://www.pref.nagano.lg.jp/bunkashinko/bunkazai/documents/02jyubun.pdf"
+        },
+        {
+          "observation": "著作権法で認められる場合を除く無断複製・転用不可を確認。県PDF本文や表全体を正本へ転記せず、公開リンクの観察記録のみ。",
+          "source_locator": "著作権について",
+          "status": "body_inspected_via_web_tool",
+          "url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/homepage/riyo.html"
+        }
+      ],
+      "target_entry_ids": [
+        "5e17a92a-7345-5945-86c9-92e812bcd692"
+      ]
     }
   ],
   "per_prefecture": {
@@ -590462,6 +590526,36 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 4,
           "new_name_comparison_pairs": 4
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T07:12:05.440508+00:00",
+          "evidence_attempt": "yasuoka_suwa_municipal_cultural_property_followup_20261113",
+          "expected_source_hash": "50d82bb0cbf224c238dd9ee07b344cb2182054544112a56df35555fc715447ae",
+          "observation": "村の文化財ページは金野諏訪社の本殿・若宮八幡宮本殿と指定日を明示し、国DB102/997・998の棟組と日付に対応する。ただし元登録は諏訪社・字家ノ上566で、村本文には566と全文読みがない。金野の冠称を元登録に付けず、文化庁の短い所在地へ566を合成しない。",
+          "reference": {
+            "attribution": "出典：泰阜村「歴史・文化財」",
+            "checked_at": "2026-11-13T07:12:05.440508+00:00",
+            "designation_date_raw": "平成5年4月20日",
+            "fetched_at": "2026-11-13T07:10:59.973743+00:00",
+            "full_reading_explicit": false,
+            "full_target_address_explicit": false,
+            "name_raw": "金野諏訪社",
+            "officialness_basis": "村公式ドメインの本文に泰阜村の文化財と教育委員会の担当を確認。",
+            "page_hash": "0ff971f8062440e79605cc64c18a7070fdae1979132117465aa08dec3a7a5862",
+            "property_names_raw": [
+              "本殿",
+              "若宮八幡宮本殿"
+            ],
+            "reuse_scope": "施設名・建造物名・指定日という最小限の事実項目の照合。本文・画像は保存対象外。オープンデータ利用規約をこの一般ページへ適用したとは扱わない。",
+            "source_kind": "government_reference",
+            "source_locator": "国・県指定文化財 > 国指定重要文化財 > p",
+            "source_publisher": "泰阜村教育委員会",
+            "title": "歴史・文化財 - 泰阜村",
+            "url": "https://www.vill.yasuoka.nagano.jp/docs/2498.html"
+          },
+          "remaining_requirement": "同じ文化財と元登録の全所在地566との個別対応を明示する利用可能な資料。全文読みは文化庁の親名欄で確認済みだが同名他社へ流用しない。",
+          "status": "municipal_designation_confirmed_original_parcel_binding_unresolved"
         }
       ],
       "address": "下伊那郡泰阜村字家ノ上566",
