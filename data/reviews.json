@@ -1136,6 +1136,218 @@
         }
       ]
     },
+    "0dfae9f5-6a4a-58e9-8fdf-bf1f39d27865": {
+      "case_id": "hyogo-map-registered-identity-profile-kana-6306046-20261113",
+      "confirmation": "source_review",
+      "expected_source_hash": "7dd6a15f40860ca6fef4fab2a834b56383538a97fe02f173a6e25b593225d21a",
+      "facility_id": "49d64a05-89ba-51ef-a5ba-b37cfa501818",
+      "original": {
+        "address": "三田市上本庄1221",
+        "listing_url": "https://www.hyogo-jinjacho.com/data/6306046.html",
+        "name_raw": "駒宇佐八幡宮",
+        "reading_raw": "コマウサハチマングウ"
+      },
+      "outputs": [
+        {
+          "basis": "agency_selected",
+          "reading": "こまうさはちまんぐう",
+          "reading_url": "https://www.hyogo-jinjacho.com/data/6306046.html",
+          "surface": "駒宇佐八幡宮"
+        }
+      ],
+      "profile_selection_proof": {
+        "entry_id": "0dfae9f5-6a4a-58e9-8fdf-bf1f39d27865",
+        "expected_source_hash": "7dd6a15f40860ca6fef4fab2a834b56383538a97fe02f173a6e25b593225d21a",
+        "facility_id": "49d64a05-89ba-51ef-a5ba-b37cfa501818",
+        "kind": "hyogo_typed_profile_registered_name_selection",
+        "map_name_raw": "駒宇佐八幡神社",
+        "map_subject_name_observation": {
+          "expected_source_hash": "7dd6a15f40860ca6fef4fab2a834b56383538a97fe02f173a6e25b593225d21a",
+          "map_name_raw": "駒宇佐八幡神社",
+          "mentions": [
+            {
+              "excerpt": "駒宇佐八幡神社　百石踊り",
+              "locator": "祭記事",
+              "name_raw": "駒宇佐八幡神社",
+              "role": "subject_festival_caption"
+            },
+            {
+              "excerpt": "社名を駒宇佐八幡宮と号す",
+              "locator": "由緒",
+              "name_raw": "駒宇佐八幡宮",
+              "role": "subject_self_designation"
+            }
+          ],
+          "profile_name_raw": "駒宇佐八幡宮",
+          "profile_page_hash": "ad0295fd5b4e8aab24f5087dc6b96b6fcce5861327b391fd7a0559cdbcfed43d",
+          "profile_url": "https://www.hyogo-jinjacho.com/data/6306046.html"
+        },
+        "native_code": "6306046",
+        "profile_name_raw": "駒宇佐八幡宮",
+        "registered_name_basis": "map",
+        "selection": "profile_name_and_profile_kana"
+      },
+      "reason": "原詳細の駒宇佐八幡宮/全文コマウサハチマングウを選択。原地図名駒宇佐八幡神社を同じ実code/印字code/公開リンク/全地番1221で詳細へ結び、同じ原地図名と全地番に一致する唯一の存続法人で施設対応を確認。本文にも同じ主対象を宮と神社の両名で記す。登記は施設同定だけに用い、空欄カナや別名称から読みを生成せず、名称差の原因や改称を認定しない。",
+      "recorded_at": "2026-11-13T06:12:47.641998+00:00",
+      "references": [
+        {
+          "address_raw": "〒669-1351\n三田市上本庄1221",
+          "checked_at": "2026-11-13T06:12:47.641998+00:00",
+          "evidence_role": "agency_profile",
+          "excerpt": "駒宇佐八幡宮 / コマウサハチマングウ / 6306046/本務 / 〒669-1351\n三田市上本庄1221",
+          "fetched_at": "2026-11-13T02:51:37.579815+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "name_raw": "駒宇佐八幡宮",
+          "page_hash": "ad0295fd5b4e8aab24f5087dc6b96b6fcce5861327b391fd7a0559cdbcfed43d",
+          "printed_code_raw": "6306046/本務",
+          "reading_raw": "コマウサハチマングウ",
+          "reading_scope": "full_name",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 駒宇佐八幡宮",
+          "url": "https://www.hyogo-jinjacho.com/data/6306046.html"
+        },
+        {
+          "address_raw": "三田市上本庄1221",
+          "checked_at": "2026-11-13T06:12:47.641998+00:00",
+          "code_raw": "6306046",
+          "evidence_role": "agency_map",
+          "excerpt": "駒宇佐八幡神社 / 6306046 / 三田市上本庄1221",
+          "fetched_at": "2026-11-13T02:54:05.074105+00:00",
+          "href_derivation": "data/ + actual Locate code + .html",
+          "locator": "Locations/Locate[555]",
+          "name_raw": "駒宇佐八幡神社",
+          "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+          "protocol_reference": {
+            "checked_at": "2026-11-13T06:12:47.641998+00:00",
+            "fetched_at": "2026-11-13T03:10:11.915045+00:00",
+            "locator": "MarkerSet LocateCode href expression",
+            "page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+            "profile_path_template": "data/{code}.html",
+            "url": "https://www.hyogo-jinjacho.com/js/formsearch.js"
+          },
+          "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 駒宇佐八幡宮",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+        },
+        {
+          "address_raw": "兵庫県三田市上本庄１２２１番地",
+          "checked_at": "2026-11-13T06:12:47.641998+00:00",
+          "corporate_number": "9140005015467",
+          "csv_row": 205063,
+          "evidence_role": "registered_profile_identity",
+          "excerpt": "駒宇佐八幡神社 / 兵庫県三田市上本庄１２２１番地",
+          "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+          "file_id": "28443",
+          "locator": "28_hyogo_all_20261030.csv row 205063",
+          "member": "28_hyogo_all_20261030.csv",
+          "name_raw": "駒宇佐八幡神社",
+          "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+          "registry_state_proof": {
+            "active_corporate_numbers_at_full_address": [
+              "9140005015467"
+            ],
+            "active_shrine_corporation_count_at_full_address": 1,
+            "as_of": "20261112",
+            "daily_resources": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "rows": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "rows": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "rows": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "rows": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "rows": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "rows": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "rows": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261112",
+                "fetched_at": "2026-11-13T01:55:56.841451+00:00",
+                "file_id": "28529",
+                "page_hash": "896ee14905fdfcd8098dd4bdb87fdc9bd02655facaf056c3d5358b984a60c1b9",
+                "rows": 2180,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "daily_rows": 19178,
+            "monthly_prefecture_rows": 206383,
+            "scope": "原地図名/同じ全地番の一意存続法人を確認する施設同定だけの根拠。登記カナ空欄を読みの証拠にせず、原詳細名の改称根拠ともしない。",
+            "target_corporate_or_full_parcel_events": 0
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "cityName": "三田市",
+            "closeDate": "",
+            "corporateNumber": "9140005015467",
+            "furigana": "",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "駒宇佐八幡神社",
+            "nameImageId": "",
+            "postCode": "6691351",
+            "prefectureCode": "28",
+            "prefectureName": "兵庫県",
+            "process": "01",
+            "streetNumber": "上本庄１２２１番地"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "title": "国税庁 法人番号公表サイト 兵庫県全件CSV",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ],
+      "review_kind": "hyogo_profile_name_selection"
+    },
     "0e97624c-52d8-59eb-aa24-dd6374828fb3": {
       "annotation_review": {
         "annotation_raw": "南出",
