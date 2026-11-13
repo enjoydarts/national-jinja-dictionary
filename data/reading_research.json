@@ -22934,19 +22934,28 @@
         "retained_pending_entries": 10528,
         "scope": "全国一宮の表示番号0〜116の117行を10530登録の保留の同都道府県・正式名文字列一致に限定比較した29組。複合かなを分割せず、異なる字形・地番・行政区分・同名別施設は補作しない。全神社・全研究資料・全国全保留の解決ではない。",
         "source_rows": 117
+      },
+      {
+        "checked_at": "2026-11-13T08:48:10.733538+00:00",
+        "entry_ids": [
+          "eb02860f-8645-57a9-b297-190d98c43e2b",
+          "ce356496-5ed6-5b2a-9f6e-c3c4360608e6",
+          "d4443398-5a2c-551f-9c01-88ef8150c426"
+        ],
+        "inspected_targets": 3,
+        "new_verified_entries": 1,
+        "retained_pending_targets": 2,
+        "scope": "貴船神社の原空欄を保持して所在地を補完。二子住吉/西濱は差を保持して保留。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T08:48:10.733538+00:00",
-      "entry_ids": [
-        "eb02860f-8645-57a9-b297-190d98c43e2b",
-        "ce356496-5ed6-5b2a-9f6e-c3c4360608e6",
-        "d4443398-5a2c-551f-9c01-88ef8150c426"
+      "checked_at": "2026-11-13T08:57:29.280721+00:00",
+      "integrated_entry_ids": [
+        "eb02860f-8645-57a9-b297-190d98c43e2b"
       ],
-      "inspected_targets": 3,
-      "new_verified_entries": 1,
-      "retained_pending_targets": 2,
-      "scope": "貴船神社の原空欄を保持して所在地を補完。二子住吉/西濱は差を保持して保留。"
+      "integration_main_commit": "6049a999849ae86b8b9ffa9f5a64e4174f5d2ff5",
+      "new_verified_entries": 0,
+      "scope": "最新mainの他地域の調査・分類変更・補完を保持して貴船神社の所在地補完1登録と二子/西濱の保留根拠を統合。採用を重複計上しない。"
     },
     "remaining_unfinished_entries": 10527,
     "resolved_entry_ids": [
@@ -23295,7 +23304,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T08:48:10.733538+00:00",
+  "computed_at": "2026-11-13T08:57:29.280721+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -319055,6 +319064,443 @@
       "third_party_contact_made": false
     },
     {
+      "acquisition": "通常クライアント、robots遵守、同一ホスト2秒以上・timeout20秒・再試行0。画像・PDF・HTMLはリポジトリ外のみ。",
+      "attempt_id": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+      "checked_at": "2026-11-13T08:41:52.252517+00:00",
+      "global_pending_entries_at_record": 10528,
+      "inspected_target_entries": 5,
+      "new_judgment_required_entry_ids": [
+        "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
+        "36597137-a149-5295-a0f8-90a498d6a0f0",
+        "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1"
+      ],
+      "new_verified_entries": 0,
+      "preservation": "原字形・原住所・原読み・ID/hash・旧判断を保持。市名解釈値を個別行の印刷住所と混同せず、補正や辞書出力に未採用のまま。",
+      "private_article_observations": [
+        {
+          "entry_id": "09d22fb2-34f8-5992-9a71-b93d866e72a6",
+          "review": {
+            "adopted": false,
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+            "expected_source_hash": "14f03e6eba9d634f8b49aa9673cd6ae97cbe85247c9598df03963b02f939a366",
+            "observation": "社号と原全所在地は対応するが、所定欄に当該正式名の独立全文かながない。祭神・旧社名・地名等の読みから社名の読みを合成せず保留。",
+            "reference": {
+              "address_raw": "寄居町鉢形２３３６",
+              "authority_observation": "運営者紹介本文が休日・夜間に資料を基に制作する個人サイトと説明。神社・神社庁公式とは扱わない。",
+              "checked_at": "2026-11-13T08:41:52.252517+00:00",
+              "excerpt": "社号：稲乃比売神社 / 住所：寄居町鉢形２３３６",
+              "fetched_at": "2026-11-13T08:36:34.025078+00:00",
+              "locator": "概要表の社号・住所、h1/h2、本文の社名直後の全文かな及びrubyを点検。引用された長い沿革本文は転記しない。",
+              "name_raw": "稲乃比売神社",
+              "observed_formal_name_kana_pairs": [],
+              "page_hash": "cf4df3f2398a2de250853b5ad982153824fde964b65d4eebe65a4c5a3ea18f37",
+              "profile_reference": {
+                "fetched_at": "2026-11-13T08:36:31.955713+00:00",
+                "page_hash": "e2752c2351ed390c8ed7cb43b425ee74e53fdbedde4b992ad4c4b512fe43d193",
+                "title": [
+                  "猫の足あとについて"
+                ],
+                "url": "https://tesshow.jp/profile.html"
+              },
+              "rights_observation": "トップと紹介ページに、この事実欄の辞書再利用を明示禁止する表示は点検範囲で見当たらない。一般的な再配布許諾と解釈せず、必要な社号・住所と出典位置のみ保存。引用沿革・写真・画像・全本文・連絡先を含めない。",
+              "ruby_count": 0,
+              "source_kind": "private_temple_shrine_reference_article",
+              "source_publisher": "猫の足あと（個人運営）",
+              "title": [
+                "稲乃比売神社。寄居町鉢形の神社"
+              ],
+              "url": "https://tesshow.jp/saitama/yorii/shrine_hachi_ina.html"
+            },
+            "status": "literal_name_full_address_match_no_explicit_full_name_reading_in_inspected_fields"
+          }
+        },
+        {
+          "entry_id": "51d43f8d-b934-52bc-92d7-aa0bba536ad1",
+          "review": {
+            "adopted": false,
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+            "expected_source_hash": "2d9f0443f9600fc5545a1425528175ce4ed369f90212475ca651096e9e71492a",
+            "observation": "社号と原全所在地は対応するが、所定欄に当該正式名の独立全文かながない。祭神・旧社名・地名等の読みから社名の読みを合成せず保留。",
+            "reference": {
+              "address_raw": "春日部市内牧2286",
+              "authority_observation": "運営者紹介本文が休日・夜間に資料を基に制作する個人サイトと説明。神社・神社庁公式とは扱わない。",
+              "checked_at": "2026-11-13T08:41:52.252517+00:00",
+              "excerpt": "社号：鷲香取神社 / 住所：春日部市内牧2286",
+              "fetched_at": "2026-11-13T08:36:36.102930+00:00",
+              "locator": "概要表の社号・住所、h1/h2、本文の社名直後の全文かな及びrubyを点検。引用された長い沿革本文は転記しない。",
+              "name_raw": "鷲香取神社",
+              "observed_formal_name_kana_pairs": [],
+              "page_hash": "32495da9cecb73cd3392b9b56ce97d0328f5629b377c2bae087de98696e2ff43",
+              "profile_reference": {
+                "fetched_at": "2026-11-13T08:36:31.955713+00:00",
+                "page_hash": "e2752c2351ed390c8ed7cb43b425ee74e53fdbedde4b992ad4c4b512fe43d193",
+                "title": [
+                  "猫の足あとについて"
+                ],
+                "url": "https://tesshow.jp/profile.html"
+              },
+              "rights_observation": "トップと紹介ページに、この事実欄の辞書再利用を明示禁止する表示は点検範囲で見当たらない。一般的な再配布許諾と解釈せず、必要な社号・住所と出典位置のみ保存。引用沿革・写真・画像・全本文・連絡先を含めない。",
+              "ruby_count": 0,
+              "source_kind": "private_temple_shrine_reference_article",
+              "source_publisher": "猫の足あと（個人運営）",
+              "title": [
+                "鷲香取神社。春日部市内牧の神社"
+              ],
+              "url": "https://tesshow.jp/saitama/kasukabe/shrine_uchimaki_katori.html"
+            },
+            "status": "literal_name_full_address_match_no_explicit_full_name_reading_in_inspected_fields"
+          }
+        },
+        {
+          "entry_id": "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1",
+          "review": {
+            "adopted": false,
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+            "expected_source_hash": "b408feedd1e8760becc9d7d27f1d9ab3cc4bd512721a8c2bb683a1ae5e56497e",
+            "observation": "社号と原全所在地は対応するが、所定欄に当該正式名の独立全文かながない。祭神・旧社名・地名等の読みから社名の読みを合成せず保留。",
+            "reference": {
+              "address_raw": "東松山市高坂1061",
+              "authority_observation": "運営者紹介本文が休日・夜間に資料を基に制作する個人サイトと説明。神社・神社庁公式とは扱わない。",
+              "checked_at": "2026-11-13T08:41:52.252517+00:00",
+              "excerpt": "社号：高坂神社 / 住所：東松山市高坂1061",
+              "fetched_at": "2026-11-13T08:36:38.172858+00:00",
+              "locator": "概要表の社号・住所、h1/h2、本文の社名直後の全文かな及びrubyを点検。引用された長い沿革本文は転記しない。",
+              "name_raw": "高坂神社",
+              "observed_formal_name_kana_pairs": [],
+              "page_hash": "82c2e06d7d28c5f63e5145de5052757cc9ac733ff0d7ab4b5f81008f818e0442",
+              "profile_reference": {
+                "fetched_at": "2026-11-13T08:36:31.955713+00:00",
+                "page_hash": "e2752c2351ed390c8ed7cb43b425ee74e53fdbedde4b992ad4c4b512fe43d193",
+                "title": [
+                  "猫の足あとについて"
+                ],
+                "url": "https://tesshow.jp/profile.html"
+              },
+              "rights_observation": "トップと紹介ページに、この事実欄の辞書再利用を明示禁止する表示は点検範囲で見当たらない。一般的な再配布許諾と解釈せず、必要な社号・住所と出典位置のみ保存。引用沿革・写真・画像・全本文・連絡先を含めない。",
+              "ruby_count": 0,
+              "source_kind": "private_temple_shrine_reference_article",
+              "source_publisher": "猫の足あと（個人運営）",
+              "title": [
+                "高坂神社。東松山市高坂の神社、高坂刑部・旗本加賀爪氏等からの崇敬"
+              ],
+              "url": "https://tesshow.jp/saitama/ematsuyama/shrine_takasaka_takasaka.html"
+            },
+            "status": "literal_name_full_address_match_no_explicit_full_name_reading_in_inspected_fields"
+          }
+        }
+      ],
+      "private_article_pages": 3,
+      "private_source_entry_and_profile_pages": 2,
+      "publication_reference": {
+        "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+        "checked_at": "2026-11-13T08:41:52.252517+00:00",
+        "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+        "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+        "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+        "pdf_pages": 10,
+        "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+        "source_kind": "municipality_hosted_citizen_university_report",
+        "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+        "title": "東松山の神社 41社を巡って",
+        "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+        "visual_review": {
+          "method": "取得した同hashのPDFをPDFKitでローカル描画し原ページ画像をview_imageで目視。OCR復元や小書きかなの推測修正なし。",
+          "rendered_page_sha256": {
+            "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+            "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+          },
+          "reviewed_page_indices": [
+            3,
+            4
+          ]
+        }
+      },
+      "scope": "埼玉の個人記事3件と、東松山市公開の課題研究PDF1冊10頁のうち表2頁の対象3カード。対象ID重複1件を除く5登録。記事全体・全引用書籍・全41カードの個別読み採否・県全体・全国全件の解決ではない。",
+      "snapshot_base_commit": "1cd06a52e95bfb16e4a3dc55629aa1d52b9650ba",
+      "status": "three_private_articles_no_full_kana_and_three_visual_citizen_report_candidates_retained_for_representation_review",
+      "target_entry_ids": [
+        "09d22fb2-34f8-5992-9a71-b93d866e72a6",
+        "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
+        "36597137-a149-5295-a0f8-90a498d6a0f0",
+        "51d43f8d-b934-52bc-92d7-aa0bba536ad1",
+        "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1"
+      ],
+      "visual_full_reading_candidates": [
+        {
+          "entry_id": "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1",
+          "review": {
+            "adopted": false,
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+            "expected_source_hash": "b408feedd1e8760becc9d7d27f1d9ab3cc4bd512721a8c2bb683a1ae5e56497e",
+            "observation": "全文かなと町域・地番は原ページで確認できる。読み未発見と扱わず、市名が共通scopeにある資料の正本根拠への表現方法を採用前の課題として個別判断へ移す。既存の厳密住所照合は個別参照に連続する市名まで要求するため、個別行にない市名を住所原文又は抜粋に書き足して通過させない。",
+            "previous_category": "insufficient_evidence_in_inspected_sources",
+            "previous_reason": "missing agency reading",
+            "reference": {
+              "address_raw": "高坂 1061",
+              "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+              "checked_at": "2026-11-13T08:41:52.252517+00:00",
+              "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+              "derived_comparison_address": "東松山市高坂1061",
+              "excerpt": "高坂神社 / たかさかじんじゃ / 高坂 1061",
+              "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+              "locator": "PDF index3、一覧カード番号18の社名・独立全文ルビ・印刷所在地。",
+              "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+              "name_raw": "高坂神社",
+              "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+              "pdf_pages": 10,
+              "reading_raw": "たかさかじんじゃ",
+              "reading_scope": "full_name",
+              "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+              "source_card_number": 18,
+              "source_kind": "municipality_hosted_citizen_university_report",
+              "source_page_index": 3,
+              "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+              "title": "東松山の神社 41社を巡って",
+              "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+              "visual_review": {
+                "method": "取得した同hashのPDFをPDFKitでローカル描画し原ページ画像をview_imageで目視。OCR復元や小書きかなの推測修正なし。",
+                "rendered_page_sha256": {
+                  "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+                  "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+                },
+                "reviewed_page_indices": [
+                  3,
+                  4
+                ]
+              }
+            },
+            "remaining_requirement": "明示された資料全体の東松山市scopeと当該カードを、印刷住所を保持したまま正本補正の根拠へ束縛できる表現・検証を審査する。新たな全文読み探索が必要な案件とは区別する。",
+            "status": "visual_full_reading_and_parcel_confirmed_contextual_municipality_representation_review_required"
+          }
+        },
+        {
+          "entry_id": "36597137-a149-5295-a0f8-90a498d6a0f0",
+          "review": {
+            "adopted": false,
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+            "expected_source_hash": "30d0f9afec5d131e7d44ac96ea81556eda684659afa62887b08709f796a60807",
+            "observation": "全文かなと町域・地番は原ページで確認できる。読み未発見と扱わず、市名が共通scopeにある資料の正本根拠への表現方法を採用前の課題として個別判断へ移す。既存の厳密住所照合は個別参照に連続する市名まで要求するため、個別行にない市名を住所原文又は抜粋に書き足して通過させない。",
+            "previous_category": "insufficient_evidence_in_inspected_sources",
+            "previous_reason": "missing agency reading",
+            "reference": {
+              "address_raw": "上野本 1812",
+              "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+              "checked_at": "2026-11-13T08:41:52.252517+00:00",
+              "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+              "derived_comparison_address": "東松山市上野本1812",
+              "excerpt": "八幡神社 / はちまんじんじゃ / 上野本 1812",
+              "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+              "locator": "PDF index4、一覧カード番号28の社名・独立全文ルビ・印刷所在地。",
+              "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+              "name_raw": "八幡神社",
+              "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+              "pdf_pages": 10,
+              "reading_raw": "はちまんじんじゃ",
+              "reading_scope": "full_name",
+              "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+              "source_card_number": 28,
+              "source_kind": "municipality_hosted_citizen_university_report",
+              "source_page_index": 4,
+              "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+              "title": "東松山の神社 41社を巡って",
+              "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+              "visual_review": {
+                "method": "取得した同hashのPDFをPDFKitでローカル描画し原ページ画像をview_imageで目視。OCR復元や小書きかなの推測修正なし。",
+                "rendered_page_sha256": {
+                  "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+                  "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+                },
+                "reviewed_page_indices": [
+                  3,
+                  4
+                ]
+              }
+            },
+            "remaining_requirement": "明示された資料全体の東松山市scopeと当該カードを、印刷住所を保持したまま正本補正の根拠へ束縛できる表現・検証を審査する。新たな全文読み探索が必要な案件とは区別する。",
+            "status": "visual_full_reading_and_parcel_confirmed_contextual_municipality_representation_review_required"
+          }
+        },
+        {
+          "entry_id": "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
+          "review": {
+            "adopted": false,
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+            "expected_source_hash": "ffef7c06a3fcb72efbb3fdfc2c61c73d574b7a0272a52b761da32720d3658d31",
+            "observation": "全文かなと町域・地番は原ページで確認できる。読み未発見と扱わず、市名が共通scopeにある資料の正本根拠への表現方法を採用前の課題として個別判断へ移す。既存の厳密住所照合は個別参照に連続する市名まで要求するため、個別行にない市名を住所原文又は抜粋に書き足して通過させない。",
+            "previous_category": "insufficient_evidence_in_inspected_sources",
+            "previous_reason": "missing agency reading",
+            "reference": {
+              "address_raw": "古凍 499",
+              "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+              "checked_at": "2026-11-13T08:41:52.252517+00:00",
+              "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+              "derived_comparison_address": "東松山市古凍499",
+              "excerpt": "鷲神社 / わしじんじゃ / 古凍 499",
+              "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+              "locator": "PDF index4、一覧カード番号40の社名・独立全文ルビ・印刷所在地。",
+              "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+              "name_raw": "鷲神社",
+              "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+              "pdf_pages": 10,
+              "reading_raw": "わしじんじゃ",
+              "reading_scope": "full_name",
+              "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+              "source_card_number": 40,
+              "source_kind": "municipality_hosted_citizen_university_report",
+              "source_page_index": 4,
+              "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+              "title": "東松山の神社 41社を巡って",
+              "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+              "visual_review": {
+                "method": "取得した同hashのPDFをPDFKitでローカル描画し原ページ画像をview_imageで目視。OCR復元や小書きかなの推測修正なし。",
+                "rendered_page_sha256": {
+                  "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+                  "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+                },
+                "reviewed_page_indices": [
+                  3,
+                  4
+                ]
+              }
+            },
+            "remaining_requirement": "明示された資料全体の東松山市scopeと当該カードを、印刷住所を保持したまま正本補正の根拠へ束縛できる表現・検証を審査する。新たな全文読み探索が必要な案件とは区別する。",
+            "status": "visual_full_reading_and_parcel_confirmed_contextual_municipality_representation_review_required"
+          }
+        }
+      ]
+    },
+    {
+      "acquisition": "個人サイト3入口は通常クライアント、robots遵守、同一ホスト2秒以上・timeout20秒・再試行0。図書館はweb toolによる本文確認でraw hashを捏造しない。",
+      "attempt_id": "kasukabe_library_uchimaki_history_text_and_shrineheritager_policy_stop_20261113",
+      "checked_at": "2026-11-13T08:47:29.823224+00:00",
+      "global_pending_entries_at_record": 10528,
+      "inspected_target_entries": 1,
+      "library_observation": {
+        "adopted": false,
+        "checked_at": "2026-11-13T08:47:29.823224+00:00",
+        "evidence_attempt": "kasukabe_library_uchimaki_history_text_and_shrineheritager_policy_stop_20261113",
+        "expected_source_hash": "2d9f0443f9600fc5545a1425528175ce4ed369f90212475ca651096e9e71492a",
+        "reference": {
+          "authority_reference": {
+            "checked_at": "2026-11-13T08:47:29.823224+00:00",
+            "inspection_method": "web toolで実HTML本文閲覧",
+            "observation": "トップの図書館自己表示と春日部市/教育委員会への実リンクを確認。",
+            "title": "春日部市立図書館",
+            "url": "https://www.lib.kasukabe.saitama.jp/"
+          },
+          "checked_at": "2026-11-13T08:47:29.823224+00:00",
+          "inspected_pdf_page_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "inspection_method": "web toolで実PDFの抽出本文を閲覧。通常HTTPクライアントでの取得バイト列/hashは未取得。原画像・図版全体を目視確認済みとはしない。",
+          "locality_raw": "内牧",
+          "locator": "冒頭「内牧地区 鷲香取神社〈内牧〉」と由緒・沿革・神社行事の本文。神社章の文字層に限定。",
+          "name_raw": "鷲香取神社",
+          "observation": "見出し・沿革・行事は確認できるが、点検した章の文字層に独立した社名全文かなと全地番2286は見当たらない。祭神のルビを社名に転用せず、同じPDFの別神社章から読み又は住所を流用しない。",
+          "pdf_pages": 10,
+          "policy_reference": {
+            "checked_at": "2026-11-13T08:47:29.823224+00:00",
+            "inspection_method": "web toolで実HTML本文閲覧",
+            "locator": "著作権について",
+            "observation": "市帰属が原則、一部画像等は原著作者に帰属。私的複製・引用等の法で認める範囲を越えた無断複製・転用は禁止。一般の転載許諾とはせず、今回の記録は資料位置・不足事項だけで沿革本文・画像を収録しない。",
+            "title": "このサイトについて",
+            "url": "https://www.lib.kasukabe.saitama.jp/about/"
+          },
+          "reading_scope": "full_shrine_reading_not_observed_in_inspected_text",
+          "source_kind": "municipal_library_hosted_shrine_history_extract",
+          "source_publisher": "春日部市立図書館（公開元。原資料の著者・刊行年は今回未確定）",
+          "title": "内牧地区の神社資料（冒頭：鷲香取神社〈内牧〉）",
+          "url": "https://www.lib.kasukabe.saitama.jp/lib/files/uchimaki.pdf"
+        },
+        "remaining_requirement": "原正式名の独立全文かなと原全所在地の対応を確認できる利用可能な実資料。図書館収録を神社公式の発音確認と同一視しない。",
+        "status": "library_history_text_no_explicit_full_reading_or_full_parcel_in_inspected_chapter"
+      },
+      "new_verified_entries": 0,
+      "private_source_candidates_saved": 0,
+      "private_source_entry_references": [
+        {
+          "fetched_at": "2026-11-13T08:45:47.645797+00:00",
+          "page_hash": "9cc53f92bed476a18e041e3f7670606cfcca98b611242c0aa63a6c43bfea7b30",
+          "title": [
+            "Shrine-heritager｜延喜式内社と全国の神社を古文献と参拝写真で紹介"
+          ],
+          "url": "https://shrineheritager.com/"
+        },
+        {
+          "fetched_at": "2026-11-13T08:45:50.733644+00:00",
+          "page_hash": "272c10d02b1f6f5cce119fa9ce57fa0722effdcd8e299660cc0ef2f0eadf4304",
+          "title": [
+            "Shrine Heritagerとは - Shrine-heritager"
+          ],
+          "url": "https://shrineheritager.com/shrine-heritager/"
+        }
+      ],
+      "private_source_policy_reference": {
+        "checked_at": "2026-11-13T08:47:29.823224+00:00",
+        "fetched_at": "2026-11-13T08:45:53.664172+00:00",
+        "locator": "冒頭「サイトポリシー・著作権について」と後段「著作権について」",
+        "observation": "冒頭に無許可の転用・転載・改変禁止を明示。後段には出典明示により無償引用できる場合があるとも記載されるが、すべてのデータを辞書へ加工再利用できる一般許諾とは確認できない。全文転載・RSS盗用も禁止。条件未確定のまま個別神社記事を取得・転記しない。",
+        "page_hash": "da8c5f1ed9d5446f87d3cd1b16b2718dcba5a197d734561a8d60504afa6a074c",
+        "source_kind": "private_site_policy",
+        "source_publisher": "Shrine-heritager",
+        "title": [
+          "プライバシーポリシー - Shrine-heritager"
+        ],
+        "url": "https://shrineheritager.com/page-15/"
+      },
+      "private_source_shrine_article_requests": 0,
+      "retained_pending_entries": 1,
+      "rights_scope": "図書館の沿革本文・画像、個人サイトの神社データ・引用本文は転記せず、最小限の出典位置・観察・停止判断だけを保存。個人連絡先・HTML・PDF・cacheは含めない。",
+      "scope": "図書館の実PDF1冊10頁のうち鷲香取神社章4頁の文字層と、別個人サイトのトップ・紹介・利用条件の3本文だけ。図書館全資料、PDF図版全体、個人サイト全記事又は全国全保留の調査完了ではない。",
+      "snapshot_base_commit": "902e7724117aa54a73399d53159f902553186d36",
+      "status": "one_library_history_chapter_checked_and_private_source_reuse_stopped",
+      "target_entry_ids": [
+        "51d43f8d-b934-52bc-92d7-aa0bba536ad1"
+      ],
+      "third_party_contact_made": false
+    },
+    {
+      "attempt_id": "nankoku_culture_81_item_index_location_insufficiency_and_html_terms_20261113",
+      "checked_at": "2026-11-13T08:53:50.163207+00:00",
+      "global_pending_entries_at_record": 10528,
+      "index_items_observed": 81,
+      "individual_facility_pages_inspected": 0,
+      "municipality_pending_entries_at_record": 74,
+      "new_verified_entries": 0,
+      "observation": "追加の施設ページ・転載許諾依頼は行わず、原文全体・画像・連絡先・検索スニペット由来の読みを保存しない。正本補正・分類・件数は変更しない。",
+      "policy_reference": {
+        "checked_at": "2026-11-13T08:53:50.163207+00:00",
+        "inspection_method": "web toolで公開HTMLの実本文を確認。通常クライアントの取得バイト列は未取得のためpage_hashは付けない。",
+        "locator": "著作権について",
+        "observation": "私的使用・非営利利用、出所明示、引用の例外、法で認める場合以外の複製転用は事前相談、二次利用を明示する数値等の別扱いを確認。通常記事に一律の再配布許諾があるとはせず、辞書への転用は見送る。",
+        "title": "利用ガイドライン",
+        "url": "https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=4314"
+      },
+      "preserved_independent_open_data_observation": "既存nankoku_evacuation_full_reading_and_tosa_robots_stop_20261112の指定避難場所CSVは別途CC-BY-4.0を確認済み。通常HTMLの利用条件を理由に既存採用を解除せず、この一覧へCSVのライセンスを流用しない。",
+      "reference": {
+        "authority_observation": "本文に南国市教育委員会刊行資料からの抜粋と担当課を表示。市発行の文化史資料として区別し、神社庁・各神社の公式発音確認とはしない。",
+        "checked_at": "2026-11-13T08:53:50.163207+00:00",
+        "inspection_method": "web toolで公開HTMLの実本文を確認。通常クライアントの取得バイト列は未取得のためpage_hashは付けない。",
+        "locator": "表番号1〜81と末尾の抜粋元・教育委員会表示",
+        "observation": "独立した神社名の読みを含むが、表は沿革や町域・目標物の説明で全地番を欠く。文化財・祭礼・奉納物を主題とする複合名称の読みを切り出して神社全文かなにしない。",
+        "title": "南国市の史跡と文化財～『南国市を歩く』より～",
+        "url": "https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=1142"
+      },
+      "scope": "南国市の文化財一覧1ページ（番号1〜81）と利用ガイドライン1ページを確認。市内保留74登録の各施設の個別本文照合、全県調査又は新規データ取得済みとはしない。",
+      "source_kind": "municipal_cultural_history_index",
+      "source_publisher": "南国市",
+      "status": "ordinary_html_reuse_not_adopted_location_insufficient"
+    },
+    {
       "acquisition_notice": {
         "alternative_host_protocol_or_format_requests": 0,
         "initial_web_tool_failures": [
@@ -319630,9 +320076,9 @@
     },
     "11": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 18,
+        "insufficient_evidence_in_inspected_sources": 15,
         "investigation_incomplete": 0,
-        "judgment_required": 3
+        "judgment_required": 6
       },
       "unfinished_entries": 21
     },
@@ -461709,6 +462155,41 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:41:52.252517+00:00",
+          "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+          "expected_source_hash": "14f03e6eba9d634f8b49aa9673cd6ae97cbe85247c9598df03963b02f939a366",
+          "observation": "社号と原全所在地は対応するが、所定欄に当該正式名の独立全文かながない。祭神・旧社名・地名等の読みから社名の読みを合成せず保留。",
+          "reference": {
+            "address_raw": "寄居町鉢形２３３６",
+            "authority_observation": "運営者紹介本文が休日・夜間に資料を基に制作する個人サイトと説明。神社・神社庁公式とは扱わない。",
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "excerpt": "社号：稲乃比売神社 / 住所：寄居町鉢形２３３６",
+            "fetched_at": "2026-11-13T08:36:34.025078+00:00",
+            "locator": "概要表の社号・住所、h1/h2、本文の社名直後の全文かな及びrubyを点検。引用された長い沿革本文は転記しない。",
+            "name_raw": "稲乃比売神社",
+            "observed_formal_name_kana_pairs": [],
+            "page_hash": "cf4df3f2398a2de250853b5ad982153824fde964b65d4eebe65a4c5a3ea18f37",
+            "profile_reference": {
+              "fetched_at": "2026-11-13T08:36:31.955713+00:00",
+              "page_hash": "e2752c2351ed390c8ed7cb43b425ee74e53fdbedde4b992ad4c4b512fe43d193",
+              "title": [
+                "猫の足あとについて"
+              ],
+              "url": "https://tesshow.jp/profile.html"
+            },
+            "rights_observation": "トップと紹介ページに、この事実欄の辞書再利用を明示禁止する表示は点検範囲で見当たらない。一般的な再配布許諾と解釈せず、必要な社号・住所と出典位置のみ保存。引用沿革・写真・画像・全本文・連絡先を含めない。",
+            "ruby_count": 0,
+            "source_kind": "private_temple_shrine_reference_article",
+            "source_publisher": "猫の足あと（個人運営）",
+            "title": [
+              "稲乃比売神社。寄居町鉢形の神社"
+            ],
+            "url": "https://tesshow.jp/saitama/yorii/shrine_hachi_ina.html"
+          },
+          "status": "literal_name_full_address_match_no_explicit_full_name_reading_in_inspected_fields"
         }
       ],
       "address": "寄居町鉢形2336",
@@ -462041,11 +462522,56 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:41:52.252517+00:00",
+          "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+          "expected_source_hash": "ffef7c06a3fcb72efbb3fdfc2c61c73d574b7a0272a52b761da32720d3658d31",
+          "observation": "全文かなと町域・地番は原ページで確認できる。読み未発見と扱わず、市名が共通scopeにある資料の正本根拠への表現方法を採用前の課題として個別判断へ移す。既存の厳密住所照合は個別参照に連続する市名まで要求するため、個別行にない市名を住所原文又は抜粋に書き足して通過させない。",
+          "previous_category": "insufficient_evidence_in_inspected_sources",
+          "previous_reason": "missing agency reading",
+          "reference": {
+            "address_raw": "古凍 499",
+            "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+            "derived_comparison_address": "東松山市古凍499",
+            "excerpt": "鷲神社 / わしじんじゃ / 古凍 499",
+            "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+            "locator": "PDF index4、一覧カード番号40の社名・独立全文ルビ・印刷所在地。",
+            "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+            "name_raw": "鷲神社",
+            "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+            "pdf_pages": 10,
+            "reading_raw": "わしじんじゃ",
+            "reading_scope": "full_name",
+            "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+            "source_card_number": 40,
+            "source_kind": "municipality_hosted_citizen_university_report",
+            "source_page_index": 4,
+            "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+            "title": "東松山の神社 41社を巡って",
+            "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+            "visual_review": {
+              "method": "取得した同hashのPDFをPDFKitでローカル描画し原ページ画像をview_imageで目視。OCR復元や小書きかなの推測修正なし。",
+              "rendered_page_sha256": {
+                "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+                "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+              },
+              "reviewed_page_indices": [
+                3,
+                4
+              ]
+            }
+          },
+          "remaining_requirement": "明示された資料全体の東松山市scopeと当該カードを、印刷住所を保持したまま正本補正の根拠へ束縛できる表現・検証を審査する。新たな全文読み探索が必要な案件とは区別する。",
+          "status": "visual_full_reading_and_parcel_confirmed_contextual_municipality_representation_review_required"
         }
       ],
       "address": "東松山市古凍499",
       "agency_listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8957/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
       "entry_id": "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
       "expected_source_hash": "ffef7c06a3fcb72efbb3fdfc2c61c73d574b7a0272a52b761da32720d3658d31",
       "facility_id": "b0008bf7-0b10-5635-89d1-505ddb1a5214",
@@ -462054,7 +462580,7 @@
       "prefecture": "埼玉県",
       "prefecture_code": "11",
       "reading_raw": "",
-      "reason": "missing agency reading",
+      "reason": "full reading and printed locality/parcel visually confirmed; contextual municipal scope needs faithful canonical reference representation before adoption",
       "status": "unfinished",
       "surface": "鷲神社",
       "wikipedia_article_refs": [
@@ -462131,11 +462657,56 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:41:52.252517+00:00",
+          "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+          "expected_source_hash": "30d0f9afec5d131e7d44ac96ea81556eda684659afa62887b08709f796a60807",
+          "observation": "全文かなと町域・地番は原ページで確認できる。読み未発見と扱わず、市名が共通scopeにある資料の正本根拠への表現方法を採用前の課題として個別判断へ移す。既存の厳密住所照合は個別参照に連続する市名まで要求するため、個別行にない市名を住所原文又は抜粋に書き足して通過させない。",
+          "previous_category": "insufficient_evidence_in_inspected_sources",
+          "previous_reason": "missing agency reading",
+          "reference": {
+            "address_raw": "上野本 1812",
+            "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+            "derived_comparison_address": "東松山市上野本1812",
+            "excerpt": "八幡神社 / はちまんじんじゃ / 上野本 1812",
+            "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+            "locator": "PDF index4、一覧カード番号28の社名・独立全文ルビ・印刷所在地。",
+            "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+            "name_raw": "八幡神社",
+            "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+            "pdf_pages": 10,
+            "reading_raw": "はちまんじんじゃ",
+            "reading_scope": "full_name",
+            "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+            "source_card_number": 28,
+            "source_kind": "municipality_hosted_citizen_university_report",
+            "source_page_index": 4,
+            "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+            "title": "東松山の神社 41社を巡って",
+            "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+            "visual_review": {
+              "method": "取得した同hashのPDFをPDFKitでローカル描画し原ページ画像をview_imageで目視。OCR復元や小書きかなの推測修正なし。",
+              "rendered_page_sha256": {
+                "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+                "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+              },
+              "reviewed_page_indices": [
+                3,
+                4
+              ]
+            }
+          },
+          "remaining_requirement": "明示された資料全体の東松山市scopeと当該カードを、印刷住所を保持したまま正本補正の根拠へ束縛できる表現・検証を審査する。新たな全文読み探索が必要な案件とは区別する。",
+          "status": "visual_full_reading_and_parcel_confirmed_contextual_municipality_representation_review_required"
         }
       ],
       "address": "東松山市上野本1812",
       "agency_listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8959/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
       "entry_id": "36597137-a149-5295-a0f8-90a498d6a0f0",
       "expected_source_hash": "30d0f9afec5d131e7d44ac96ea81556eda684659afa62887b08709f796a60807",
       "facility_id": "a608061f-5db5-56ea-ba20-318d0955f764",
@@ -462144,7 +462715,7 @@
       "prefecture": "埼玉県",
       "prefecture_code": "11",
       "reading_raw": "",
-      "reason": "missing agency reading",
+      "reason": "full reading and printed locality/parcel visually confirmed; contextual municipal scope needs faithful canonical reference representation before adoption",
       "status": "unfinished",
       "surface": "八幡神社",
       "wikipedia_article_refs": [
@@ -462443,6 +463014,84 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:41:52.252517+00:00",
+          "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+          "expected_source_hash": "2d9f0443f9600fc5545a1425528175ce4ed369f90212475ca651096e9e71492a",
+          "observation": "社号と原全所在地は対応するが、所定欄に当該正式名の独立全文かながない。祭神・旧社名・地名等の読みから社名の読みを合成せず保留。",
+          "reference": {
+            "address_raw": "春日部市内牧2286",
+            "authority_observation": "運営者紹介本文が休日・夜間に資料を基に制作する個人サイトと説明。神社・神社庁公式とは扱わない。",
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "excerpt": "社号：鷲香取神社 / 住所：春日部市内牧2286",
+            "fetched_at": "2026-11-13T08:36:36.102930+00:00",
+            "locator": "概要表の社号・住所、h1/h2、本文の社名直後の全文かな及びrubyを点検。引用された長い沿革本文は転記しない。",
+            "name_raw": "鷲香取神社",
+            "observed_formal_name_kana_pairs": [],
+            "page_hash": "32495da9cecb73cd3392b9b56ce97d0328f5629b377c2bae087de98696e2ff43",
+            "profile_reference": {
+              "fetched_at": "2026-11-13T08:36:31.955713+00:00",
+              "page_hash": "e2752c2351ed390c8ed7cb43b425ee74e53fdbedde4b992ad4c4b512fe43d193",
+              "title": [
+                "猫の足あとについて"
+              ],
+              "url": "https://tesshow.jp/profile.html"
+            },
+            "rights_observation": "トップと紹介ページに、この事実欄の辞書再利用を明示禁止する表示は点検範囲で見当たらない。一般的な再配布許諾と解釈せず、必要な社号・住所と出典位置のみ保存。引用沿革・写真・画像・全本文・連絡先を含めない。",
+            "ruby_count": 0,
+            "source_kind": "private_temple_shrine_reference_article",
+            "source_publisher": "猫の足あと（個人運営）",
+            "title": [
+              "鷲香取神社。春日部市内牧の神社"
+            ],
+            "url": "https://tesshow.jp/saitama/kasukabe/shrine_uchimaki_katori.html"
+          },
+          "status": "literal_name_full_address_match_no_explicit_full_name_reading_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:47:29.823224+00:00",
+          "evidence_attempt": "kasukabe_library_uchimaki_history_text_and_shrineheritager_policy_stop_20261113",
+          "expected_source_hash": "2d9f0443f9600fc5545a1425528175ce4ed369f90212475ca651096e9e71492a",
+          "reference": {
+            "authority_reference": {
+              "checked_at": "2026-11-13T08:47:29.823224+00:00",
+              "inspection_method": "web toolで実HTML本文閲覧",
+              "observation": "トップの図書館自己表示と春日部市/教育委員会への実リンクを確認。",
+              "title": "春日部市立図書館",
+              "url": "https://www.lib.kasukabe.saitama.jp/"
+            },
+            "checked_at": "2026-11-13T08:47:29.823224+00:00",
+            "inspected_pdf_page_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "inspection_method": "web toolで実PDFの抽出本文を閲覧。通常HTTPクライアントでの取得バイト列/hashは未取得。原画像・図版全体を目視確認済みとはしない。",
+            "locality_raw": "内牧",
+            "locator": "冒頭「内牧地区 鷲香取神社〈内牧〉」と由緒・沿革・神社行事の本文。神社章の文字層に限定。",
+            "name_raw": "鷲香取神社",
+            "observation": "見出し・沿革・行事は確認できるが、点検した章の文字層に独立した社名全文かなと全地番2286は見当たらない。祭神のルビを社名に転用せず、同じPDFの別神社章から読み又は住所を流用しない。",
+            "pdf_pages": 10,
+            "policy_reference": {
+              "checked_at": "2026-11-13T08:47:29.823224+00:00",
+              "inspection_method": "web toolで実HTML本文閲覧",
+              "locator": "著作権について",
+              "observation": "市帰属が原則、一部画像等は原著作者に帰属。私的複製・引用等の法で認める範囲を越えた無断複製・転用は禁止。一般の転載許諾とはせず、今回の記録は資料位置・不足事項だけで沿革本文・画像を収録しない。",
+              "title": "このサイトについて",
+              "url": "https://www.lib.kasukabe.saitama.jp/about/"
+            },
+            "reading_scope": "full_shrine_reading_not_observed_in_inspected_text",
+            "source_kind": "municipal_library_hosted_shrine_history_extract",
+            "source_publisher": "春日部市立図書館（公開元。原資料の著者・刊行年は今回未確定）",
+            "title": "内牧地区の神社資料（冒頭：鷲香取神社〈内牧〉）",
+            "url": "https://www.lib.kasukabe.saitama.jp/lib/files/uchimaki.pdf"
+          },
+          "remaining_requirement": "原正式名の独立全文かなと原全所在地の対応を確認できる利用可能な実資料。図書館収録を神社公式の発音確認と同一視しない。",
+          "status": "library_history_text_no_explicit_full_reading_or_full_parcel_in_inspected_chapter"
         }
       ],
       "address": "春日部市内牧2286",
@@ -463352,11 +464001,91 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:41:52.252517+00:00",
+          "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+          "expected_source_hash": "b408feedd1e8760becc9d7d27f1d9ab3cc4bd512721a8c2bb683a1ae5e56497e",
+          "observation": "社号と原全所在地は対応するが、所定欄に当該正式名の独立全文かながない。祭神・旧社名・地名等の読みから社名の読みを合成せず保留。",
+          "reference": {
+            "address_raw": "東松山市高坂1061",
+            "authority_observation": "運営者紹介本文が休日・夜間に資料を基に制作する個人サイトと説明。神社・神社庁公式とは扱わない。",
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "excerpt": "社号：高坂神社 / 住所：東松山市高坂1061",
+            "fetched_at": "2026-11-13T08:36:38.172858+00:00",
+            "locator": "概要表の社号・住所、h1/h2、本文の社名直後の全文かな及びrubyを点検。引用された長い沿革本文は転記しない。",
+            "name_raw": "高坂神社",
+            "observed_formal_name_kana_pairs": [],
+            "page_hash": "82c2e06d7d28c5f63e5145de5052757cc9ac733ff0d7ab4b5f81008f818e0442",
+            "profile_reference": {
+              "fetched_at": "2026-11-13T08:36:31.955713+00:00",
+              "page_hash": "e2752c2351ed390c8ed7cb43b425ee74e53fdbedde4b992ad4c4b512fe43d193",
+              "title": [
+                "猫の足あとについて"
+              ],
+              "url": "https://tesshow.jp/profile.html"
+            },
+            "rights_observation": "トップと紹介ページに、この事実欄の辞書再利用を明示禁止する表示は点検範囲で見当たらない。一般的な再配布許諾と解釈せず、必要な社号・住所と出典位置のみ保存。引用沿革・写真・画像・全本文・連絡先を含めない。",
+            "ruby_count": 0,
+            "source_kind": "private_temple_shrine_reference_article",
+            "source_publisher": "猫の足あと（個人運営）",
+            "title": [
+              "高坂神社。東松山市高坂の神社、高坂刑部・旗本加賀爪氏等からの崇敬"
+            ],
+            "url": "https://tesshow.jp/saitama/ematsuyama/shrine_takasaka_takasaka.html"
+          },
+          "status": "literal_name_full_address_match_no_explicit_full_name_reading_in_inspected_fields"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:41:52.252517+00:00",
+          "evidence_attempt": "tesshow_three_literal_name_address_pages_and_higashimatsuyama_three_visual_full_kana_candidates_20261113",
+          "expected_source_hash": "b408feedd1e8760becc9d7d27f1d9ab3cc4bd512721a8c2bb683a1ae5e56497e",
+          "observation": "全文かなと町域・地番は原ページで確認できる。読み未発見と扱わず、市名が共通scopeにある資料の正本根拠への表現方法を採用前の課題として個別判断へ移す。既存の厳密住所照合は個別参照に連続する市名まで要求するため、個別行にない市名を住所原文又は抜粋に書き足して通過させない。",
+          "previous_category": "insufficient_evidence_in_inspected_sources",
+          "previous_reason": "missing agency reading",
+          "reference": {
+            "address_raw": "高坂 1061",
+            "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+            "checked_at": "2026-11-13T08:41:52.252517+00:00",
+            "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+            "derived_comparison_address": "東松山市高坂1061",
+            "excerpt": "高坂神社 / たかさかじんじゃ / 高坂 1061",
+            "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+            "locator": "PDF index3、一覧カード番号18の社名・独立全文ルビ・印刷所在地。",
+            "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+            "name_raw": "高坂神社",
+            "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+            "pdf_pages": 10,
+            "reading_raw": "たかさかじんじゃ",
+            "reading_scope": "full_name",
+            "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+            "source_card_number": 18,
+            "source_kind": "municipality_hosted_citizen_university_report",
+            "source_page_index": 3,
+            "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+            "title": "東松山の神社 41社を巡って",
+            "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+            "visual_review": {
+              "method": "取得した同hashのPDFをPDFKitでローカル描画し原ページ画像をview_imageで目視。OCR復元や小書きかなの推測修正なし。",
+              "rendered_page_sha256": {
+                "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+                "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+              },
+              "reviewed_page_indices": [
+                3,
+                4
+              ]
+            }
+          },
+          "remaining_requirement": "明示された資料全体の東松山市scopeと当該カードを、印刷住所を保持したまま正本補正の根拠へ束縛できる表現・検証を審査する。新たな全文読み探索が必要な案件とは区別する。",
+          "status": "visual_full_reading_and_parcel_confirmed_contextual_municipality_representation_review_required"
         }
       ],
       "address": "東松山市高坂1061",
       "agency_listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8956/",
-      "category": "insufficient_evidence_in_inspected_sources",
+      "category": "judgment_required",
       "entry_id": "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1",
       "expected_source_hash": "b408feedd1e8760becc9d7d27f1d9ab3cc4bd512721a8c2bb683a1ae5e56497e",
       "facility_id": "eb8b3ede-4c84-5b59-9652-4e648a01f348",
@@ -463365,7 +464094,7 @@
       "prefecture": "埼玉県",
       "prefecture_code": "11",
       "reading_raw": "",
-      "reason": "missing agency reading",
+      "reason": "full reading and printed locality/parcel visually confirmed; contextual municipal scope needs faithful canonical reference representation before adoption",
       "status": "unfinished",
       "surface": "高坂神社",
       "wikipedia_article_refs": [],
@@ -1239334,9 +1240063,9 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10328,
+      "insufficient_evidence_in_inspected_sources": 10325,
       "investigation_incomplete": 0,
-      "judgment_required": 199
+      "judgment_required": 202
     },
     "distinct_surfaces": 4222,
     "unfinished_entries": 10527
