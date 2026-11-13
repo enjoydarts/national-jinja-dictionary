@@ -29,8 +29,8 @@ def review_problems(review, facility, entry, source=None):
     layout_valid=layout_requested and not layout_issues
     profile_requested=review.get('review_kind')=='hyogo_profile_name_selection'
     profile_issues=hyogo_profile_problems(review,facility,entry) if profile_requested else []
-    problems.extend(profile_issues)
-    profile_valid=profile_requested and not profile_issues
+    if profile_issues:return profile_issues
+    profile_valid=profile_requested
     if review.get('confirmation') not in ('user_confirmation','source_review') or not review.get('case_id') or not review.get('reason'):
         problems.append('missing explicit human confirmation')
     try:datetime.fromisoformat(review.get('recorded_at',''))

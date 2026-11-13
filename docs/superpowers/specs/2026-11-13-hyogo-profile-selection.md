@@ -11,3 +11,5 @@ review_kind=hyogo_profile_name_selection、confirmation=source_review。proof.ki
 profile参照は原url/hash/locator、正式名/全文かな、原〒住所欄、印字codeに一致し、excerptに全値を持つ。map参照も原code/name/addressを全文保持する。3参照は実hash・url・欄位置・時刻を持つ。登録参照はNTA実CSV同名/県/全地番に一致し、最新・存続・非秘匿・名称/住所外字なし。数字単位と幅だけ比較し、字・郡・地名を除去しない。登録カナがある時はprofile全文かなと一致させ、空欄から生成しない。月次snapshot以降の日次適用後の同住所の全神社法人数が1、唯一の法人番号を拘束する。
 
 出力はprofile原名と原かなを機械的にひらがな化した1登録、agency_selected、元reading_urlに限る。split・省略・accepted_identity_differencesを許容しない。施設のreview_reasonは原観測として保持し、専用proofが有効な時だけその名称差を審査済みと扱う。他のidentity_review_required・除外・原文変更・別理由は解除しない。オフライン検証時も再検査。全正本bytesと原名/住所/かな/ID/hash、過去判断を保持。各形式は既存共通データ経由。Python対象版維持・標準ライブラリのみ。実IME取り込みは別確認。
+
+独立レビューでの補強：初期対応は実点検済み20261030/月次file28443と20261112までの8日次ファイルの窓だけに限定し、hash・file ID・日付・各行数・取得時刻・対象イベント0を拘束する。未知の将来窓は再点検まで保留。公開protocolの実本文hashと取得/確認時刻・詳細path templateをmap参照に保存する。数字以外の幅/互換字形は同一視しない。不正な専用proofは共通split処理へ進めず問題を返す。manifestは現在の21保留と審査前の24保留を区別する。

@@ -4,7 +4,7 @@
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "a013294ba32fdf4cd13cb0b4476f2bed40bee8d2898700ced078d3363f4da07f",
-    "reviews.json": "a35dacf9efd4af8f0a50d2622a127ced742be4146aa2a51e3bbb279ad5fed028",
+    "reviews.json": "44c8093e09a4dfcf80b73982fbb5def098c9de48bfd2ecf2122fb4384685cd64",
     "source_aliases.json": "6a40c602e60500e413cf11c75a6843a97e1918f15e768d8a849911ab7bc17ffa"
   },
   "category_labels": {
@@ -21145,7 +21145,7 @@
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T03:05:28.014326+00:00",
+      "checked_at": "2026-11-13T03:15:19.020039+00:00",
       "entry_ids": [
         "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",
         "3e876de1-588c-5883-9cd9-fdd50610600a",
@@ -21464,7 +21464,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T03:05:28.014326+00:00",
+  "computed_at": "2026-11-13T03:15:19.020039+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -238455,6 +238455,16 @@
         "3e876de1-588c-5883-9cd9-fdd50610600a",
         "cb59d30f-f3f9-5ef3-b38f-1acfcfdf56e7"
       ],
+      "followup_verification": {
+        "checked_at": "2026-11-13T03:15:19.020039+00:00",
+        "protocol_reference": {
+          "fetched_at": "2026-11-13T03:10:11.915045+00:00",
+          "page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+          "profile_path_template": "data/{code}.html",
+          "url": "https://www.hyogo-jinjacho.com/js/formsearch.js"
+        },
+        "scope": "独立担当が元XML・詳細・兵庫月次206383行・全国日次8組19178行、唯一の同名全地番法人と対象イベント0件を確認。指摘の字形・日次証拠・複合不正入力を回帰試験で修正。主担当が公開JavaScriptの実codeから詳細URLへのhref生成も通常取得本文で再確認し、3参照中のmap参照へhash・日時を保存。"
+      },
       "inspected_targets": 3,
       "manual_resolved_entry_ids": [
         "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",

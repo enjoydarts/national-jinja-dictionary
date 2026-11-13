@@ -1,7 +1,7 @@
 """Explicit profile-name selection, preserving the conflicting map label."""
 from datetime import datetime
 import re
-import unicodedata
+from njd.hyogo_registry_window import registry_window_problems,observed_between
 from njd.locations import _hash,_url,_plain
 from njd.normalize import normalize_reading,compare_address_units
 from njd.adapters.hyogo import _reading_reason,_url as _agency_url,PROTOCOL_URL
@@ -10,7 +10,7 @@ REASON='Hyogo map and profile official names differ or are missing'
 
 
 def _numeric_address(value):
-    value=compare_address_units(unicodedata.normalize('NFKC',value))
+    value=compare_address_units(value.translate(str.maketrans('０１２３４５６７８９','0123456789')))
     value=re.sub(r'(?<=\d)丁目(?=\d)','-',value)
     value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
     return re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
@@ -54,6 +54,10 @@ def hyogo_profile_problems(review,facility,entry):
     if any(not isinstance(r.get('evidence_role'),str) for r in refs):return ['invalid Hyogo source roles']
     roles={r['evidence_role']:r for r in refs}
     if set(roles)!={'agency_profile','agency_map','registered_profile_identity'}:return ['missing or duplicate Hyogo source roles']
+    try:
+        approved=datetime.fromisoformat(review.get('recorded_at',''))
+        if approved.tzinfo is None:raise ValueError()
+    except (TypeError,ValueError):return ['incomplete Hyogo approval date']
     for ref in refs:
         if (not _hash(ref.get('page_hash')) or not _url(ref.get('url'))
             or any(not isinstance(ref.get(k),str) or not ref[k] for k in ('locator','title','excerpt','name_raw','source_kind'))):
@@ -62,6 +66,8 @@ def hyogo_profile_problems(review,facility,entry):
             try:
                 if datetime.fromisoformat(ref.get(k,'')).tzinfo is None:raise ValueError()
             except (TypeError,ValueError):return ['incomplete Hyogo reference date']
+        if not datetime.fromisoformat(ref['fetched_at'])<=datetime.fromisoformat(ref['checked_at'])<=approved:
+            return ['Hyogo reference acquisition/inspection follows its approval']
     profile=roles['agency_profile'];mapped=roles['agency_map'];reg=roles['registered_profile_identity']
     printed=entry.get('printed_code_raw')
     if (not isinstance(printed,str) or not re.fullmatch(code+r'/(?:本務|兼務)',printed)
@@ -85,6 +91,15 @@ def hyogo_profile_problems(review,facility,entry):
         or not _plain(mapped.get('name_raw')) or mapped['name_raw']==name or proof.get('map_name_raw')!=mapped['name_raw']
         or not all(v in mapped['excerpt'] for v in (mapped['name_raw'],code,address))):
         return ['Hyogo map code, full address or retained name is not bound']
+    protocol=mapped.get('protocol_reference')
+    if (not isinstance(protocol,dict) or protocol.get('url')!=PROTOCOL_URL
+        or protocol.get('page_hash')!='e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9'
+        or not _plain(protocol.get('locator')) or protocol.get('profile_path_template')!='data/{code}.html'
+        or not observed_between(protocol.get('fetched_at'),'20261113',protocol.get('checked_at'))
+        or datetime.fromisoformat(protocol['checked_at'])>approved):
+        return ['missing inspected Hyogo map-to-profile protocol provenance']
+    window_problems=registry_window_problems(reg)
+    if window_problems:return window_problems
     fields=reg.get('source_fields');state=reg.get('registry_state_proof')
     keys=('corporateNumber','name','prefectureCode','prefectureName','cityName','streetNumber','kind','latest',
         'process','closeDate','hihyoji','nameImageId','addressImageId','furigana')
