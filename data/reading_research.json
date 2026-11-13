@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "002a725589c07a7955e554a76c1705ef828ef4995a0f24ef9056cdd345c4e516",
+    "corrections.json": "431bba95abcac90655e08ff542ffb7432726e054dc8bf5b84f627b1dc6c78a20",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "c3901a635b8f22788588197dd741b2ef8f172d3b2c303f4b6ee9dfbd82f69deb",
@@ -22821,22 +22821,28 @@
         "new_verified_entries": 16,
         "retained_pending_entries": 970,
         "scope": "滋賀986原登録の県所有者表限定照合と20対応の個別審査。独立した全文かな16登録を採用し、残滋賀970/全国10536登録を維持。"
+      },
+      {
+        "checked_at": "2026-11-13T07:26:09.274413+00:00",
+        "entry_ids": [
+          "300bec5c-7df0-545b-8608-7783260dcdbf",
+          "5e6e749a-c1f0-5723-878b-23ad2e63d286",
+          "a9c4131f-183a-5ae8-b534-a45aeba70594",
+          "e1c09f67-0a56-53ac-b727-c08891ebf153"
+        ],
+        "inspected_targets": 4,
+        "new_verified_entries": 1,
+        "retained_pending_entries": 3,
+        "scope": "★注記付き所有者ラベルの4対応名登録を個別確認し、神田神社原ID7だけに全文かな採用。前段16と計17採用、全国333解消/10535保留。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T07:26:09.274413+00:00",
-      "entry_ids": [
-        "300bec5c-7df0-545b-8608-7783260dcdbf",
-        "5e6e749a-c1f0-5723-878b-23ad2e63d286",
-        "a9c4131f-183a-5ae8-b534-a45aeba70594",
-        "e1c09f67-0a56-53ac-b727-c08891ebf153"
-      ],
-      "inspected_targets": 4,
-      "new_verified_entries": 1,
-      "retained_pending_entries": 3,
-      "scope": "★注記付き所有者ラベルの4対応名登録を個別確認し、神田神社原ID7だけに全文かな採用。前段16と計17採用、全国333解消/10535保留。"
+      "checked_at": "2026-11-13T07:38:22.189139+00:00",
+      "new_verified_entries": 0,
+      "retained_pending_entries": 1,
+      "scope": "独立審査の指摘で白山神社を保留へ戻す。無印15と★神田1の計16登録採用、全国332解消/10536保留。"
     },
-    "remaining_unfinished_entries": 10535,
+    "remaining_unfinished_entries": 10536,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -22936,7 +22942,6 @@
       "40269885-37a5-53d8-9de4-996b1b4dd76d",
       "409f307f-4474-515a-974d-61ecf611ac85",
       "41baf306-6021-5f36-9c03-5f87c032a781",
-      "4290debb-9b59-5164-b14d-cf152d1638e7",
       "4597a712-1b8c-576e-9555-cd4c66c8abf6",
       "46fb093e-92e1-5d76-9233-a874db9853b2",
       "47200211-6577-536a-8dad-5641a160453c",
@@ -23175,7 +23180,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T07:26:09.274413+00:00",
+  "computed_at": "2026-11-13T07:38:22.189139+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -310709,7 +310714,7 @@
         },
         {
           "category": "insufficient_evidence_in_inspected_sources",
-          "decision": "reading_adopted_after_individual_review",
+          "decision": "retained_pending",
           "entry_id": "4290debb-9b59-5164-b14d-cf152d1638e7",
           "facility_id": "e89aad26-addb-5d5b-b33c-0bc34ab0ff98",
           "matching_original_facility_ids": [
@@ -310720,7 +310725,7 @@
           "original_address": "湖南市東寺",
           "original_name": "白山神社",
           "reading": "はくさんじんじゃ",
-          "reason": "独立した所有者等の全文かなと原全印刷町域に対応し、競合する原施設ID・未解決の既知同定問題なし。",
+          "reason": "神社庁の部分かなシラヤマと県所有者表の全文はくさんじんじゃの語幹が異なり、両呼称の関係を裏づける一次資料は未確認。神社庁の明示読みを優先し、いずれにも語尾補完せず保留する。",
           "reference_address": "滋賀県湖南市東寺",
           "row_index": 24,
           "source_reading_difference": {
@@ -311053,7 +311058,7 @@
         }
       ],
       "retained_pending_entries": 986,
-      "scope": "2022年3月版の県建造物MAP p.2所有者等/よみがな/所在地欄を、現在保留の滋賀986原登録へ限定照合。市町見出しを左右の表で分離し同じ行の独立全文かなだけ抽出。名称一致だけで施設を統合せず全1434神社庁原施設に対する同名同町域の競合も照合。20対応のうち別試行で16採用、八坂2・宇和宮・思子淵の4登録は既知の同定問題を維持。県内全神社の全資料・現地住所/数字地番・全期間の網羅確認ではない。",
+      "scope": "2022年3月版の県建造物MAP p.2所有者等/よみがな/所在地欄を、現在保留の滋賀986原登録へ限定照合。市町見出しを左右の表で分離し同じ行の独立全文かなだけ抽出。名称一致だけで施設を統合せず全1434神社庁原施設に対する同名同町域の競合も照合。20対応のうち別試行で15採用、八坂2・宇和宮・思子淵と白山の読み相違の5登録は既知の同定問題を維持。県内全神社の全資料・現地住所/数字地番・全期間の網羅確認ではない。",
       "source_kind": "government_cultural_property_map",
       "source_municipality_headers": 17,
       "source_publisher": "滋賀県文化財保護課",
@@ -311199,158 +311204,6 @@
           "surface": "春日神社",
           "wikipedia_article_refs": [],
           "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-        },
-        {
-          "additional_source_reviews": [
-            {
-              "adopted": false,
-              "checked_at": "2026-11-12T07:05:17.639317+00:00",
-              "evidence_attempt": "kojiki_shiga_small_articles_20261112_shiga",
-              "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
-              "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
-              "related_actual_hrefs": [],
-              "result": "no_related_label_in_inspected_indexes",
-              "source_kind": "article_index",
-              "source_publisher": "神社と古事記（非公式二次資料）",
-              "status": "bounded_article_index_scope_recorded"
-            },
-            {
-              "adopted": false,
-              "checked_at": "2026-11-12T09:25:16.800929+00:00",
-              "evidence_attempt": "wikipedia_cached_literal_full_kana_scope_recheck_20261112",
-              "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
-              "observation": "取得済み同hash本文の主名称かな段落と単一infoboxの名称・全所在地を再点検。原掲載の正式名・全所在地と独立全文かなの対応が解決せず保留を維持。別市町村・別地番・字名相違・冠称や長名・空白を削って一致させず、部分読みへの語尾追加や同名別施設の読み流用をしない。限定点検であり記事全体の情報不存在や全国完了を意味しない。",
-              "observed_infobox_facts": [
-                {
-                  "addresses": [
-                    {
-                      "address_raw": "滋賀県湖南市東寺5丁目1-11",
-                      "layout": {}
-                    }
-                  ],
-                  "header_raw": "白山神社",
-                  "table_index": 1
-                }
-              ],
-              "reference": {
-                "fetched_at": "2026-11-09T05:18:49.936589+00:00",
-                "page_hash": "b9cfb959f3a4847375a9cbd5638b0e0ab271cf5fcfa32e3ca489c908aaa19518",
-                "revision_ids": [
-                  "111639311"
-                ],
-                "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E6%B9%96%E5%8D%97%E5%B8%82)"
-              },
-              "source_kind": "encyclopedia",
-              "source_publisher": "Wikipedia共同編集者",
-              "status": "cached_literal_full_kana_scope_rechecked_not_adopted"
-            },
-            {
-              "adopted": false,
-              "checked_at": "2026-11-13T00:10:57.309374+00:00",
-              "evidence_attempt": "shiga_all_998_stored_native_full_address_registry_screen_ten_adopted_20261113",
-              "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
-              "observation": {
-                "active_registered_full_native_address_matches": 0,
-                "entry_id": "4290debb-9b59-5164-b14d-cf152d1638e7",
-                "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
-                "facility_id": "e89aad26-addb-5d5b-b33c-0bc34ab0ff98",
-                "name_raw": "白山神社",
-                "original_address_raw": "湖南市東寺",
-                "protected_prior_judgment": false,
-                "registered_matches": [],
-                "result": "no_unique_active_native_full_address_match",
-                "screening_reason": null,
-                "screening_status": "no_unique_active_native_full_address_match",
-                "stored_native_address_comparison_only": true,
-                "stored_native_reference": {
-                  "address_raw": "滋賀県湖南市東寺631",
-                  "agency_code": "519",
-                  "fetched_at": "2026-11-10T03:25:43.595847+00:00",
-                  "name_raw": "白山神社",
-                  "page_hash": "d54e6f6c4891f04e96c3d43bddf65dfbde2de9cb4175760d90bac2f4034a92eb",
-                  "reading_raw": "シラヤマ",
-                  "reading_scope": "partial_or_absent",
-                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=519"
-                }
-              },
-              "scope": "保存済み詳細参照の全所在地と取得済み登記行の限定診断。現施設住所を置換せず、本文再取得を確認したのは別記12候補だけ。画像の未確定字形・不明な全文かなを推定しない。",
-              "source_kind": "government_corporate_register",
-              "source_publisher": "国税庁・滋賀県神社庁",
-              "status": "no_unique_active_native_full_address_match"
-            },
-            {
-              "active_religious_rows_at_same_comparison_address": 0,
-              "address_first_result": "address_first_no_new_name_variant",
-              "adopted": false,
-              "checked_at": "2026-11-13T04:13:56.302777+00:00",
-              "evidence_attempt": "shiga_988_cached_address_first_all_registered_names_one_name_image_candidate_and_five_open_tables_20261113",
-              "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
-              "municipal_table_rows": [],
-              "new_registered_different_name_observations": [],
-              "observation": "旧原名フィルタを外した住所先行の限定診断。新しい別名候補なし。一般資料・全外部資料や神社庁全本文を今回再確認した意味ではない。",
-              "source_kind": "agency_and_corporate_register_followup",
-              "source_publisher": "滋賀県神社庁・国税庁・記録した市町村",
-              "status": "address_first_screen_no_new_name_variant_lead",
-              "stored_native_reference": {
-                "address_raw": "滋賀県湖南市東寺631",
-                "agency_code": "519",
-                "fetched_at": "2026-11-10T03:25:43.595847+00:00",
-                "name_raw": "白山神社",
-                "page_hash": "d54e6f6c4891f04e96c3d43bddf65dfbde2de9cb4175760d90bac2f4034a92eb",
-                "reading_raw": "シラヤマ",
-                "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=519"
-              }
-            },
-            {
-              "adopted": false,
-              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-              "literal_printed_locality_pairs": 0,
-              "name_comparison_pairs": 0,
-              "new_name_comparison_pairs": 0
-            },
-            {
-              "adopted": false,
-              "compatible_printed_locality_rows": 1,
-              "evidence_attempt": "shiga_2022_official_cultural_building_map_owner_full_name_readings_986_screen_20261113",
-              "individual_decision": "reading_adopted_after_individual_review",
-              "observation": "独立した所有者等の全文かなと原全印刷町域に対応し、競合する原施設ID・未解決の既知同定問題なし。",
-              "printed_owner_name_rows": 1,
-              "status": "bounded_owner_name_and_locality_screen_not_adopted"
-            }
-          ],
-          "address": "湖南市東寺",
-          "agency_listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
-          "category": "insufficient_evidence_in_inspected_sources",
-          "entry_id": "4290debb-9b59-5164-b14d-cf152d1638e7",
-          "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
-          "facility_id": "e89aad26-addb-5d5b-b33c-0bc34ab0ff98",
-          "listed_name": "白山神社",
-          "nta_result": "no unique active exact name/full-address corporate identity",
-          "prefecture": "滋賀県",
-          "prefecture_code": "25",
-          "reading_raw": "",
-          "reason": "missing agency reading",
-          "status": "unfinished",
-          "surface": "白山神社",
-          "wikipedia_article_refs": [
-            {
-              "checked_at": "2026-11-09T05:18:49.936589+00:00",
-              "matched_current_snapshot": true,
-              "page_hash": "b9cfb959f3a4847375a9cbd5638b0e0ab271cf5fcfa32e3ca489c908aaa19518",
-              "result": "one exact full-name lead reading required",
-              "status": "inspected",
-              "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E6%B9%96%E5%8D%97%E5%B8%82)"
-            },
-            {
-              "checked_at": "2026-11-09T05:18:52.780418+00:00",
-              "matched_current_snapshot": true,
-              "page_hash": "0a5dc276b5baa8a0b269ba565c63b79d4c522631cc504d37a6410dbc46b00290",
-              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-              "status": "inspected",
-              "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E9%AB%98%E5%B3%B6%E5%B8%82%E5%AE%AE%E9%87%8E)"
-            }
-          ],
-          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
         },
         {
           "additional_source_reviews": [
@@ -313439,7 +313292,6 @@
       "checked_at": "2026-11-13T07:20:14.034117+00:00",
       "entry_ids": [
         "2942e5db-7c91-5874-ac13-ba2d6bfbe885",
-        "4290debb-9b59-5164-b14d-cf152d1638e7",
         "4decab36-36c4-552e-8102-76050d50f668",
         "5c789e6e-3cd1-55a3-a4cd-f872529ae1ca",
         "68113556-0eef-5d42-8aff-6d9e0ea01db3",
@@ -313525,12 +313377,16 @@
           "reason": "同じ原名・原町域に複数の原実IDがあり、当該文化財の所有者を各IDへ一意に対応できない。",
           "reference_address": "滋賀県甲賀市水口町嶬峨",
           "row_index": 1
+        },
+        {
+          "decision": "retained_pending",
+          "entry_id": "4290debb-9b59-5164-b14d-cf152d1638e7",
+          "reason": "神社庁の部分かなシラヤマと県所有者表の全文はくさんじんじゃの語幹が異なり、両呼称の関係を裏づける一次資料は未確認。神社庁の明示読みを優先し、いずれにも語尾補完せず保留する。"
         }
       ],
       "inspected_targets": 20,
       "manual_resolved_entry_ids": [
         "2942e5db-7c91-5874-ac13-ba2d6bfbe885",
-        "4290debb-9b59-5164-b14d-cf152d1638e7",
         "4decab36-36c4-552e-8102-76050d50f668",
         "5c789e6e-3cd1-55a3-a4cd-f872529ae1ca",
         "68113556-0eef-5d42-8aff-6d9e0ea01db3",
@@ -313546,7 +313402,7 @@
         "e91890cc-ce4d-5346-92f8-7fa97b99759c",
         "fb869e39-c607-5bec-bd4d-0659ddafcdfd"
       ],
-      "new_verified_entries": 16,
+      "new_verified_entries": 15,
       "resources": [
         {
           "fetched_at": "2026-11-13T07:10:53.473819+00:00",
@@ -313564,11 +313420,11 @@
           "url": "https://www.pref.shiga.lg.jp/ab00/9916.html"
         }
       ],
-      "retained_pending_entries": 4,
+      "retained_pending_entries": 5,
       "scope": "県表に独立した所有者等の全文かなを同じ市町/原町域の原IDへ個別採用。本殿等のかな切り出し、カツテ等の部分かなへの接尾語補完・小書き化を行わない。勝手神社の旧保留補正は全体をsuperseded_correctionsへ保持し、県の全文かってじんじゃを直接の新根拠にする。全原地番・町域・字形・ID/hashと旧判断・研究履歴を保持。",
       "source_kind": "government_cultural_property_map",
       "source_publisher": "滋賀県文化財保護課",
-      "status": "sixteen_independently_printed_owner_full_readings_adopted_four_identity_holds_retained"
+      "status": "fifteen_independently_printed_owner_full_readings_adopted_five_holds_retained"
     },
     {
       "adopted_reading_research_history": [
@@ -313937,6 +313793,29 @@
       "source_kind": "government_cultural_property_map",
       "source_publisher": "滋賀県文化財保護課",
       "status": "four_pending_names_with_marked_labels_reviewed_one_literal_locality_full_reading_adopted"
+    },
+    {
+      "attempt_id": "shiga_owner_map_independent_review_reading_conflict_retained_20261113",
+      "checked_at": "2026-11-13T07:38:22.189139+00:00",
+      "entry_ids": [
+        "4290debb-9b59-5164-b14d-cf152d1638e7"
+      ],
+      "new_verified_entries": 0,
+      "observation": "神社庁の部分かなシラヤマと県所有者表の全文はくさんじんじゃの語幹が異なり、両呼称の関係を裏づける一次資料は未確認。神社庁の明示読みを優先し、いずれにも語尾補完せず保留する。",
+      "retained_pending_entries": 1,
+      "review": {
+        "critical": 0,
+        "fix": "白山神社をneeds_reviewへ戻し資料観測を保存。その他16採用。",
+        "important": 1,
+        "minor": 0,
+        "rulings": [
+          "実IME取り込みは未検証",
+          "未調査資料・現地実態は未検証",
+          "資料全体の再配布許諾は未取得",
+          "マージ後の別作業の保持は別途検証"
+        ]
+      },
+      "status": "independent_review_finding_fixed"
     }
   ],
   "per_prefecture": {
@@ -314136,9 +314015,9 @@
       "categories": {
         "insufficient_evidence_in_inspected_sources": 911,
         "investigation_incomplete": 0,
-        "judgment_required": 58
+        "judgment_required": 59
       },
-      "unfinished_entries": 969
+      "unfinished_entries": 970
     },
     "26": {
       "categories": {
@@ -691949,6 +691828,164 @@
           "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
           "status": "inspected",
           "url": "https://ja.wikipedia.org/wiki/%E5%BC%93%E5%89%8A%E7%A5%9E%E7%A4%BE_(%E9%AB%98%E5%B3%B6%E5%B8%82)"
+        }
+      ],
+      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+    },
+    {
+      "additional_source_reviews": [
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T07:05:17.639317+00:00",
+          "evidence_attempt": "kojiki_shiga_small_articles_20261112_shiga",
+          "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
+          "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
+          "related_actual_hrefs": [],
+          "result": "no_related_label_in_inspected_indexes",
+          "source_kind": "article_index",
+          "source_publisher": "神社と古事記（非公式二次資料）",
+          "status": "bounded_article_index_scope_recorded"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-12T09:25:16.800929+00:00",
+          "evidence_attempt": "wikipedia_cached_literal_full_kana_scope_recheck_20261112",
+          "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
+          "observation": "取得済み同hash本文の主名称かな段落と単一infoboxの名称・全所在地を再点検。原掲載の正式名・全所在地と独立全文かなの対応が解決せず保留を維持。別市町村・別地番・字名相違・冠称や長名・空白を削って一致させず、部分読みへの語尾追加や同名別施設の読み流用をしない。限定点検であり記事全体の情報不存在や全国完了を意味しない。",
+          "observed_infobox_facts": [
+            {
+              "addresses": [
+                {
+                  "address_raw": "滋賀県湖南市東寺5丁目1-11",
+                  "layout": {}
+                }
+              ],
+              "header_raw": "白山神社",
+              "table_index": 1
+            }
+          ],
+          "reference": {
+            "fetched_at": "2026-11-09T05:18:49.936589+00:00",
+            "page_hash": "b9cfb959f3a4847375a9cbd5638b0e0ab271cf5fcfa32e3ca489c908aaa19518",
+            "revision_ids": [
+              "111639311"
+            ],
+            "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E6%B9%96%E5%8D%97%E5%B8%82)"
+          },
+          "source_kind": "encyclopedia",
+          "source_publisher": "Wikipedia共同編集者",
+          "status": "cached_literal_full_kana_scope_rechecked_not_adopted"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T00:10:57.309374+00:00",
+          "evidence_attempt": "shiga_all_998_stored_native_full_address_registry_screen_ten_adopted_20261113",
+          "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
+          "observation": {
+            "active_registered_full_native_address_matches": 0,
+            "entry_id": "4290debb-9b59-5164-b14d-cf152d1638e7",
+            "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
+            "facility_id": "e89aad26-addb-5d5b-b33c-0bc34ab0ff98",
+            "name_raw": "白山神社",
+            "original_address_raw": "湖南市東寺",
+            "protected_prior_judgment": false,
+            "registered_matches": [],
+            "result": "no_unique_active_native_full_address_match",
+            "screening_reason": null,
+            "screening_status": "no_unique_active_native_full_address_match",
+            "stored_native_address_comparison_only": true,
+            "stored_native_reference": {
+              "address_raw": "滋賀県湖南市東寺631",
+              "agency_code": "519",
+              "fetched_at": "2026-11-10T03:25:43.595847+00:00",
+              "name_raw": "白山神社",
+              "page_hash": "d54e6f6c4891f04e96c3d43bddf65dfbde2de9cb4175760d90bac2f4034a92eb",
+              "reading_raw": "シラヤマ",
+              "reading_scope": "partial_or_absent",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=519"
+            }
+          },
+          "scope": "保存済み詳細参照の全所在地と取得済み登記行の限定診断。現施設住所を置換せず、本文再取得を確認したのは別記12候補だけ。画像の未確定字形・不明な全文かなを推定しない。",
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁・滋賀県神社庁",
+          "status": "no_unique_active_native_full_address_match"
+        },
+        {
+          "active_religious_rows_at_same_comparison_address": 0,
+          "address_first_result": "address_first_no_new_name_variant",
+          "adopted": false,
+          "checked_at": "2026-11-13T04:13:56.302777+00:00",
+          "evidence_attempt": "shiga_988_cached_address_first_all_registered_names_one_name_image_candidate_and_five_open_tables_20261113",
+          "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
+          "municipal_table_rows": [],
+          "new_registered_different_name_observations": [],
+          "observation": "旧原名フィルタを外した住所先行の限定診断。新しい別名候補なし。一般資料・全外部資料や神社庁全本文を今回再確認した意味ではない。",
+          "source_kind": "agency_and_corporate_register_followup",
+          "source_publisher": "滋賀県神社庁・国税庁・記録した市町村",
+          "status": "address_first_screen_no_new_name_variant_lead",
+          "stored_native_reference": {
+            "address_raw": "滋賀県湖南市東寺631",
+            "agency_code": "519",
+            "fetched_at": "2026-11-10T03:25:43.595847+00:00",
+            "name_raw": "白山神社",
+            "page_hash": "d54e6f6c4891f04e96c3d43bddf65dfbde2de9cb4175760d90bac2f4034a92eb",
+            "reading_raw": "シラヤマ",
+            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=519"
+          }
+        },
+        {
+          "adopted": false,
+          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+          "literal_printed_locality_pairs": 0,
+          "name_comparison_pairs": 0,
+          "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "compatible_printed_locality_rows": 1,
+          "evidence_attempt": "shiga_2022_official_cultural_building_map_owner_full_name_readings_986_screen_20261113",
+          "individual_decision": "retained_pending",
+          "observation": "神社庁の部分かなシラヤマと県所有者表の全文はくさんじんじゃの語幹が異なり、両呼称の関係を裏づける一次資料は未確認。神社庁の明示読みを優先し、いずれにも語尾補完せず保留する。",
+          "printed_owner_name_rows": 1,
+          "status": "bounded_owner_name_and_locality_screen_not_adopted"
+        },
+        {
+          "adopted": false,
+          "evidence_attempt": "shiga_owner_map_independent_review_reading_conflict_retained_20261113",
+          "observation": "神社庁の部分かなシラヤマと県所有者表の全文はくさんじんじゃの語幹が異なり、両呼称の関係を裏づける一次資料は未確認。神社庁の明示読みを優先し、いずれにも語尾補完せず保留する。",
+          "status": "explicit_stem_reading_conflict_retained_pending"
+        }
+      ],
+      "address": "湖南市東寺",
+      "agency_listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
+      "category": "judgment_required",
+      "entry_id": "4290debb-9b59-5164-b14d-cf152d1638e7",
+      "expected_source_hash": "b668830f0dee452428b350d93d43d653b3f38ecea472f12cde32a1d4cfc5e658",
+      "facility_id": "e89aad26-addb-5d5b-b33c-0bc34ab0ff98",
+      "listed_name": "白山神社",
+      "nta_result": "no unique active exact name/full-address corporate identity",
+      "prefecture": "滋賀県",
+      "prefecture_code": "25",
+      "reading_raw": "",
+      "reason": "神社庁の部分かなシラヤマと県所有者表の全文はくさんじんじゃの語幹が異なり、両呼称の関係を裏づける一次資料は未確認。神社庁の明示読みを優先し、いずれにも語尾補完せず保留する。",
+      "status": "unfinished",
+      "surface": "白山神社",
+      "wikipedia_article_refs": [
+        {
+          "checked_at": "2026-11-09T05:18:49.936589+00:00",
+          "matched_current_snapshot": true,
+          "page_hash": "b9cfb959f3a4847375a9cbd5638b0e0ab271cf5fcfa32e3ca489c908aaa19518",
+          "result": "one exact full-name lead reading required",
+          "status": "inspected",
+          "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E6%B9%96%E5%8D%97%E5%B8%82)"
+        },
+        {
+          "checked_at": "2026-11-09T05:18:52.780418+00:00",
+          "matched_current_snapshot": true,
+          "page_hash": "0a5dc276b5baa8a0b269ba565c63b79d4c522631cc504d37a6410dbc46b00290",
+          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+          "status": "inspected",
+          "url": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E9%AB%98%E5%B3%B6%E5%B8%82%E5%AE%AE%E9%87%8E)"
         }
       ],
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
@@ -1227926,7 +1227963,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10535,
+    "retained_unresolved_entries": 10536,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1231030,9 +1231067,9 @@
     "categories": {
       "insufficient_evidence_in_inspected_sources": 10340,
       "investigation_incomplete": 0,
-      "judgment_required": 195
+      "judgment_required": 196
     },
     "distinct_surfaces": 4225,
-    "unfinished_entries": 10535
+    "unfinished_entries": 10536
   }
 }
