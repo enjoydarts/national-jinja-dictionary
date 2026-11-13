@@ -120,7 +120,12 @@ def _reference_matches(ref,facility,entry,changes):
         # 市 (official prefectural references are recorded in docs/DATA.md).
         match=re.match(r'((?:高市|余市|[^都道府県市区]+?)郡)(.+)',value)
         return match.groups() if match else ('',value)
-    if 'document_address_context' in ref:
+    if 'csv_address_context' in ref:
+        from njd.csv_context import csv_context_address
+        contextual=csv_context_address(ref,facility)
+        if set(changes)!={'reading'} or entry.get('status')=='excluded' or contextual is None:return False
+        reference_address=address(contextual)
+    elif 'document_address_context' in ref:
         from njd.document_context import document_context_address
         contextual=document_context_address(ref,facility)
         if (set(changes)!={'reading'} or entry.get('status')=='excluded'
@@ -341,7 +346,7 @@ def apply_corrections(data,document):
             note=correction.get('reason','')
             references=correction.get('references')
             context_excluded=(entry.get('status')=='excluded' and isinstance(references,list)
-                and any(isinstance(r,dict) and 'document_address_context' in r for r in references))
+                and any(isinstance(r,dict) and ('document_address_context' in r or 'csv_address_context' in r) for r in references))
             # A rejected contextual correction must not erase a durable
             # exclusion: otherwise a second application could approve it.
             if not context_excluded:
