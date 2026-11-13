@@ -46270,6 +46270,48 @@
           "verified_location_supplements": 11
         },
         "listing_authority_status": "agency_site",
+        "location_lead_and_overpass_robots_stop_20261113": {
+          "api_stop": {
+            "acquisition": "通常Client interval=2、timeout=40、retries=0。robots本文を取得した後、APIへの実リクエスト前に停止。別のOverpassサーバー・OSM配信先・形式・ツールで同じ対象データの取得へ切り替えない。",
+            "api_body_acquired": false,
+            "elements_acquired": 0,
+            "error": "robots disallows: https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Bnwr%5B%22religion%22%3D%22shinto%22%5D%2832.5%2C128.5%2C34.8%2C130.5%29%3Bout+tags%3B",
+            "matched_facilities": 0,
+            "query_raw": "[out:json][timeout:25];nwr[\"religion\"=\"shinto\"](32.5,128.5,34.8,130.5);out tags;",
+            "query_scope": "長崎周辺を覆う矩形のみ。県境そのものではなく佐賀/福岡等を含み得る。",
+            "requested_api_url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Bnwr%5B%22religion%22%3D%22shinto%22%5D%2832.5%2C128.5%2C34.8%2C130.5%29%3Bout+tags%3B",
+            "robots_reference": {
+              "fetched_at": "2026-11-13T14:19:00.895480+00:00",
+              "http_status": 200,
+              "locator": "User-agent: * の Disallow: /api/",
+              "page_hash": "4c7aae02b09ceed9bf8bb0fa01a1b11807fdc8a0402642a42d126732e7b99d3d",
+              "url": "https://overpass-api.de/robots.txt"
+            },
+            "source_kind": "community_mapping_api",
+            "source_publisher": "OpenStreetMap / Overpass API（共同編集地図データの公開読取API）",
+            "status": "robots_disallows_api_no_elements_acquired"
+          },
+          "checked_at": "2026-11-13T14:20:33.832463+00:00",
+          "evidence_attempt": "nagasaki_location_db_prior_restriction_and_overpass_robots_stop_20261113",
+          "location_database_lead": {
+            "candidate_url": "https://jl-db.nfaj.go.jp/location/420111304/",
+            "prior_terms_review": {
+              "checked_at": "2026-11-12T02:56:18.193291+00:00",
+              "observation": "実aboutの転載・改変制限とrobots検索禁止を確認。対象神社ページは未取得、採用なし。",
+              "scope": "home・about・policy・robotsの限定確認。対象施設ページ0件。検索禁止パスへアクセスしない。",
+              "status": "terms_restricted_not_adopted",
+              "url": "https://jl-db.nfaj.go.jp/"
+            },
+            "scope": "氷川神社の新しい探索リードに、既存のabout転載/改変制限及びrobots検索禁止の判断を適用し、対象施設本文を取得しない。検索結果の読み・住所・説明文は施設根拠へ転記しない。",
+            "source_kind": "restricted_location_database_lead",
+            "source_publisher": "全国ロケーションデータベース",
+            "status": "prior_terms_restriction_retained_candidate_body_not_acquired"
+          },
+          "new_data_rows_acquired": 0,
+          "new_verified_entries": 0,
+          "scope": "大村市の氷川神社1登録に対する追加施設リードは既存利用条件停止を維持。別途長崎周辺の矩形内神道施設タグを1クエリで探索しようとしたがrobotsでデータ取得前に停止。矩形は県境ではなく近隣県を含み得る。長崎の全保留/全県域を照合済みとせず、座標や同名だけで施設を同定しない。",
+          "target_entries": 1
+        },
         "matched_legacy_links": 16,
         "national_cultural_property_shrine_query_followup_20261113": {
           "checked_at": "2026-11-13T06:06:42.442341+00:00",
