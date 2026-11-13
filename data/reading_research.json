@@ -320964,6 +320964,37 @@
       "scope": "現保留のうちjudgment_requiredかつ既補正review_kind=whole_reading_auditの登録から、既調査にprotected_existing_judgment_reading_or_identityと独立全文かなrefが記録されている候補だけを抽出。全保留の根拠十分性や全資料の点検完了を意味しない。",
       "status": "bounded_existing_protected_candidate_inventory_one_substantive_reading_hold",
       "whole_reading_audit_targets": 44
+    },
+    {
+      "acquisition": "通常公開GET・robots準拠・同一ホスト2秒以上・timeout20秒・再試行0。各一覧対象欄の実hrefを解決して取得。",
+      "attempt_id": "ishikawa_two_actual_native_detail_links_same_malformed_or_empty_reading_20261113",
+      "checked_at": "2026-11-13T10:24:51.428928+00:00",
+      "entry_ids": [
+        "04e9cdfa-c33c-528b-b7fa-53792244874e",
+        "6fb99abd-cc92-5c21-a703-fe8ff965aa1a"
+      ],
+      "inspected_detail_pages": 2,
+      "inspected_index_pages": 2,
+      "new_verified_entries": 0,
+      "observations": [
+        {
+          "entry_id": "04e9cdfa-c33c-528b-b7fa-53792244874e",
+          "page_hash": "34f12b2e42c542bc74ab9ae06f88b8bc0edc2f43c59de370978db75f9b12e766",
+          "reading_raw": "はくさんじじゃ",
+          "status": "native_detail_preserves_suspected_malformed_reading",
+          "url": "https://www.ishikawa-jinjacho.or.jp/shrine/j1666/"
+        },
+        {
+          "entry_id": "6fb99abd-cc92-5c21-a703-fe8ff965aa1a",
+          "page_hash": "4471481129a38da239b8f716d74e9db09161750ff3d5f9a7b114dbf5496399d0",
+          "reading_raw": "",
+          "status": "native_detail_formal_name_rt_empty",
+          "url": "https://www.ishikawa-jinjacho.or.jp/shrine/j0252/"
+        }
+      ],
+      "privacy_and_storage": "社名・かな・所在地と出典・hash・欄位置だけを記録。取得全本文、画像、氏名、個人連絡先、キャッシュはコミットしない。",
+      "scope": "石川県の現保留2件。以前の非公式記事の別所在地・別名候補から読みを流用せず、原文・既補正・分類と件数を維持。",
+      "status": "two_native_details_inspected_no_full_reading_resolution"
     }
   ],
   "per_prefecture": {
@@ -471172,6 +471203,40 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T10:24:51.428928+00:00",
+          "evidence_attempt": "ishikawa_two_actual_native_detail_links_same_malformed_or_empty_reading_20261113",
+          "expected_source_hash": "e73c4a4c7fc3a7c2d5bae32a5c3fea178dd7faa322b5582de67bba2bbe54faeb",
+          "observation": "実リンク先の正式名と全所在地は対応するが、主見出しのかなも原文と同じ「はくさんじじゃ」。んを推定補完しない。別掲の山中26-11・38-15-1・2-38の白山神社には別の全文かながあるが、所在地が違う兼務社であり流用しない。",
+          "reference": {
+            "address_raw": "鳳珠郡穴水町東中谷ヘ1",
+            "authority_observation": "本文の石川県神社庁表示とフッター © 2017 Ishikawa Jinjacho. を確認。掲載主体と当該施設の神社本庁包括関係は区別する。",
+            "checked_at": "2026-11-13T10:24:51.428928+00:00",
+            "excerpt": "白山神社（ はくさんじじゃ ） 鎮座地 鳳珠郡穴水町東中谷ヘ1",
+            "fetched_at": "2026-11-13T10:24:04.929376+00:00",
+            "index_href_raw": "https://www.ishikawa-jinjacho.or.jp/shrine/j1666/",
+            "index_reference": {
+              "fetched_at": "2026-11-13T10:23:20.766723+00:00",
+              "href_raw": "https://www.ishikawa-jinjacho.or.jp/shrine/j1666/",
+              "locator": "同じ全所在地を持つ ul.flex.search_ul 内の唯一 a[href]",
+              "page_hash": "fac4594b80f5877703fb7bc272cf326ee10d560e1c2f084f919c70a9b9df8a03",
+              "url": "https://www.ishikawa-jinjacho.or.jp/page/52/?s"
+            },
+            "key": "hakusan-detail",
+            "locator": "h1.title の ruby/rt と鎮座地欄",
+            "name_raw": "白山神社",
+            "page_hash": "34f12b2e42c542bc74ab9ae06f88b8bc0edc2f43c59de370978db75f9b12e766",
+            "reading_raw": "はくさんじじゃ",
+            "source_kind": "agency",
+            "source_publisher": "石川県神社庁",
+            "status": 200,
+            "title": "白山神社 | 石川県神社庁",
+            "url": "https://www.ishikawa-jinjacho.or.jp/shrine/j1666/"
+          },
+          "scope": "記録した一覧2頁の対象欄と実リンク先2施設に限定。別の神社や同一ホスト全資料の読みの有無を判断したものではない。",
+          "status": "native_detail_preserves_suspected_malformed_reading"
         }
       ],
       "address": "鳳珠郡穴水町東中谷ヘ1",
@@ -471214,6 +471279,40 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T10:24:51.428928+00:00",
+          "evidence_attempt": "ishikawa_two_actual_native_detail_links_same_malformed_or_empty_reading_20261113",
+          "expected_source_hash": "61fc08a02c4c5b884c137bd80280f9e97817955f6173f4e665116eedbc5a5580",
+          "observation": "実リンク先の正式名と全所在地は対応するが、主見出しのrtは空欄。独立した当該名の全文かなを確認できず保留。本務神社の石浦神社・兼務神社の泉野菅原神社のかなは当該名の全文読みではない。神社本庁包括外の原注記を保持し、他資料にある通称を推定分割しない。",
+          "reference": {
+            "address_raw": "金沢市石引2丁目25－13",
+            "authority_observation": "本文の石川県神社庁表示とフッター © 2017 Ishikawa Jinjacho. を確認。掲載主体と当該施設の神社本庁包括関係は区別する。",
+            "checked_at": "2026-11-13T10:24:51.428928+00:00",
+            "excerpt": "菅原神社（神社本庁包括外）（ ） 鎮座地 金沢市石引2丁目25－13",
+            "fetched_at": "2026-11-13T10:24:07.301769+00:00",
+            "index_href_raw": "https://www.ishikawa-jinjacho.or.jp/shrine/j0252/",
+            "index_reference": {
+              "fetched_at": "2026-11-13T10:23:23.122008+00:00",
+              "href_raw": "https://www.ishikawa-jinjacho.or.jp/shrine/j0252/",
+              "locator": "同じ全所在地を持つ ul.flex.search_ul 内の唯一 a[href]",
+              "page_hash": "7fcbfdee39d3824f38ea6bb15e17b9dcea7021f45a447732c9a72486f75c0ecc",
+              "url": "https://www.ishikawa-jinjacho.or.jp/page/170/?s"
+            },
+            "key": "sugawara-detail",
+            "locator": "h1.title の ruby/rt と鎮座地欄",
+            "name_raw": "菅原神社（神社本庁包括外）",
+            "page_hash": "4471481129a38da239b8f716d74e9db09161750ff3d5f9a7b114dbf5496399d0",
+            "reading_raw": "",
+            "source_kind": "agency",
+            "source_publisher": "石川県神社庁",
+            "status": 200,
+            "title": "菅原神社（神社本庁包括外） | 石川県神社庁",
+            "url": "https://www.ishikawa-jinjacho.or.jp/shrine/j0252/"
+          },
+          "scope": "記録した一覧2頁の対象欄と実リンク先2施設に限定。別の神社や同一ホスト全資料の読みの有無を判断したものではない。",
+          "status": "native_detail_formal_name_rt_empty"
         }
       ],
       "address": "金沢市石引2丁目25－13",
