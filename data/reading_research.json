@@ -26498,13 +26498,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 110,
         "scope": "四十二社巡り4経路の42詳細と現在の壱岐市110保留登録の限定比較。42社を市内全神社とはしない。"
+      },
+      {
+        "checked_at": "2026-11-13T14:16:00.044618+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10317,
+        "scope": "青森の神社庁支部冊子リードの入口HTTP503を記録。発行主体/利用条件/冊子本文未確認のまま検索結果の読みを採用せず、全資料の調査完了とはしない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:16:00.044618+00:00",
+      "checked_at": "2026-11-13T14:20:33.832463+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10317,
-      "scope": "青森の神社庁支部冊子リードの入口HTTP503を記録。発行主体/利用条件/冊子本文未確認のまま検索結果の読みを採用せず、全資料の調査完了とはしない。"
+      "scope": "長崎氷川神社のロケ地DB候補は既存利用条件停止を維持。OpenStreetMap読取APIはrobotsの/api/禁止で取得前に停止しデータ0。全県や全資料の照合完了ではない。"
     },
     "remaining_unfinished_entries": 10317,
     "resolved_entry_ids": [
@@ -27063,7 +27069,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:16:00.044618+00:00",
+  "computed_at": "2026-11-13T14:20:33.832463+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -403682,6 +403688,64 @@
         "page_hash": "de684f534f4121a6b26fda09f446213b6e3df5feef22aee1004978a5faac3705",
         "url": "https://www.ikikankou.com/site"
       }
+    },
+    {
+      "api_stop": {
+        "acquisition": "通常Client interval=2、timeout=40、retries=0。robots本文を取得した後、APIへの実リクエスト前に停止。別のOverpassサーバー・OSM配信先・形式・ツールで同じ対象データの取得へ切り替えない。",
+        "api_body_acquired": false,
+        "elements_acquired": 0,
+        "error": "robots disallows: https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Bnwr%5B%22religion%22%3D%22shinto%22%5D%2832.5%2C128.5%2C34.8%2C130.5%29%3Bout+tags%3B",
+        "matched_facilities": 0,
+        "query_raw": "[out:json][timeout:25];nwr[\"religion\"=\"shinto\"](32.5,128.5,34.8,130.5);out tags;",
+        "query_scope": "長崎周辺を覆う矩形のみ。県境そのものではなく佐賀/福岡等を含み得る。",
+        "requested_api_url": "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3Bnwr%5B%22religion%22%3D%22shinto%22%5D%2832.5%2C128.5%2C34.8%2C130.5%29%3Bout+tags%3B",
+        "robots_reference": {
+          "fetched_at": "2026-11-13T14:19:00.895480+00:00",
+          "http_status": 200,
+          "locator": "User-agent: * の Disallow: /api/",
+          "page_hash": "4c7aae02b09ceed9bf8bb0fa01a1b11807fdc8a0402642a42d126732e7b99d3d",
+          "url": "https://overpass-api.de/robots.txt"
+        },
+        "source_kind": "community_mapping_api",
+        "source_publisher": "OpenStreetMap / Overpass API（共同編集地図データの公開読取API）",
+        "status": "robots_disallows_api_no_elements_acquired"
+      },
+      "attempt_id": "nagasaki_location_db_prior_restriction_and_overpass_robots_stop_20261113",
+      "checked_at": "2026-11-13T14:20:33.832463+00:00",
+      "entry_ids": [
+        "9922e882-b184-5d5d-903b-52919d09a74b"
+      ],
+      "location_database_lead": {
+        "candidate_url": "https://jl-db.nfaj.go.jp/location/420111304/",
+        "prior_terms_review": {
+          "checked_at": "2026-11-12T02:56:18.193291+00:00",
+          "observation": "実aboutの転載・改変制限とrobots検索禁止を確認。対象神社ページは未取得、採用なし。",
+          "scope": "home・about・policy・robotsの限定確認。対象施設ページ0件。検索禁止パスへアクセスしない。",
+          "status": "terms_restricted_not_adopted",
+          "url": "https://jl-db.nfaj.go.jp/"
+        },
+        "scope": "氷川神社の新しい探索リードに、既存のabout転載/改変制限及びrobots検索禁止の判断を適用し、対象施設本文を取得しない。検索結果の読み・住所・説明文は施設根拠へ転記しない。",
+        "source_kind": "restricted_location_database_lead",
+        "source_publisher": "全国ロケーションデータベース",
+        "status": "prior_terms_restriction_retained_candidate_body_not_acquired"
+      },
+      "new_data_rows_acquired": 0,
+      "new_shrine_profiles_inspected": 0,
+      "new_verified_entries": 0,
+      "planned_prefecture_pending_entries": 953,
+      "privacy_and_storage": "APIデータ・地図・写真・HTML全文・人物・連絡先・認証情報・キャッシュは保存正本へ収録しない。実URL・robots200のhash/取得時刻・禁止パス・予定クエリ・原対象ID/hash・未取得範囲だけを記録。",
+      "scope": "大村市の氷川神社1登録に対する追加施設リードは既存利用条件停止を維持。別途長崎周辺の矩形内神道施設タグを1クエリで探索しようとしたがrobotsでデータ取得前に停止。矩形は県境ではなく近隣県を含み得る。長崎の全保留/全県域を照合済みとせず、座標や同名だけで施設を同定しない。",
+      "source_kind": "source_conditions_and_access_review",
+      "source_prefecture_code": "42",
+      "source_publisher": "全国ロケーションデータベース及びOpenStreetMap公開読取APIの入口条件",
+      "status": "existing_location_database_restriction_and_new_api_robots_stop_recorded",
+      "target_bindings": [
+        {
+          "entry_id": "9922e882-b184-5d5d-903b-52919d09a74b",
+          "expected_source_hash": "3eb2f54a1ee0c733da6cb392dfbd1bf6b7b72fdd9436a452e89f02029912672f"
+        }
+      ],
+      "target_entries": 1
     }
   ],
   "per_prefecture": {
@@ -1268301,6 +1268365,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:20:33.832463+00:00",
+          "evidence_attempt": "nagasaki_location_db_prior_restriction_and_overpass_robots_stop_20261113",
+          "expected_source_hash": "3eb2f54a1ee0c733da6cb392dfbd1bf6b7b72fdd9436a452e89f02029912672f",
+          "observation": "別データベースの探索候補が見つかったが、当該情報源の既存利用条件停止を維持。資料本文未取得で正式名/全文かな/原全所在地を確認済みとはせず、原名・読み・住所・旧根拠を保持。",
+          "reference": {
+            "candidate_url": "https://jl-db.nfaj.go.jp/location/420111304/",
+            "prior_terms_review": {
+              "checked_at": "2026-11-12T02:56:18.193291+00:00",
+              "observation": "実aboutの転載・改変制限とrobots検索禁止を確認。対象神社ページは未取得、採用なし。",
+              "scope": "home・about・policy・robotsの限定確認。対象施設ページ0件。検索禁止パスへアクセスしない。",
+              "status": "terms_restricted_not_adopted",
+              "url": "https://jl-db.nfaj.go.jp/"
+            },
+            "scope": "氷川神社の新しい探索リードに、既存のabout転載/改変制限及びrobots検索禁止の判断を適用し、対象施設本文を取得しない。検索結果の読み・住所・説明文は施設根拠へ転記しない。",
+            "source_kind": "restricted_location_database_lead",
+            "source_publisher": "全国ロケーションデータベース",
+            "status": "prior_terms_restriction_retained_candidate_body_not_acquired"
+          },
+          "source_kind": "restricted_location_database_lead",
+          "source_publisher": "全国ロケーションデータベース",
+          "status": "prior_terms_restriction_retained_candidate_body_not_acquired"
         }
       ],
       "address": "大村市田下町1554番地2",
