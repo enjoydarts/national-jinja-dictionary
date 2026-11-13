@@ -576,3 +576,23 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 | [唐鞍神社](https://kuchitanshrine.my.coocan.jp/karakura.html) | からくらじんじゃ | 船井郡京丹波町上大久保宮ノ馬場22 |
 
 岩城神社の鳴滝42／穴虫42、城崎神社の木崎町／上木崎町、一原神社の33-1／33、志波加神社の地番欠落、天稚神社の天若森形23／殿田向山、岡安神社の際田12／馬場、葛城神社の13／57は対応未解決として保持しました。字名・枝番の補完や置換はしていません。採用元は個人参拝記録の二次資料であり、神社自身・神社庁・行政の発音認定とは区別します。トップ・サイト説明の画像複写転載禁止と画像利用条件を確認した範囲で、名称・明示全文かな・全所在地と出典・判断の限定事実だけを保存し、本文全体・画像・新聞抜粋・個人連絡先・キャッシュを収録していません。
+
+
+### 口丹波の社の次の20本文の限定照合（2026年11月13日）
+
+前回取得した地域別索引3頁を再取得せず、そこにある実hrefから未取得20本文を追加確認しました。原全所在地・正式名・全文かなが対応する10登録を採用し、次の根拠を保存しています。
+
+| 採用した掲載名 | 明示全文読み | 原所在地 |
+| --- | --- | --- |
+| [大宮神社](https://kuchitanshrine.my.coocan.jp/ohmiya.html) | おおみやじんじゃ | 亀岡市西別院町万願寺前ノ垣内46 |
+| [白髭神社](https://kuchitanshrine.my.coocan.jp/shirahigejinja.html) | しらひげじんじゃ | 亀岡市西別院町神地高ノ山19-4 |
+| [鎌倉神社](https://kuchitanshrine.my.coocan.jp/kamakura.html) | かまくらじんじゃ | 亀岡市東別院町鎌倉見立11 |
+| [大内神社](https://kuchitanshrine.my.coocan.jp/oouchijinja.html) | おおうちじんじゃ | 亀岡市東本梅町大内上条18 |
+| [熊野神社](https://kuchitanshrine.my.coocan.jp/kurodakumano.html) | くまのじんじゃ | 南丹市園部町黒田岩谷24 |
+| [加茂神社](https://kuchitanshrine.my.coocan.jp/jounankamo.html) | かもじんじゃ | 南丹市園部町城南町宮ノ谷1-1 |
+| [武尾神社](https://kuchitanshrine.my.coocan.jp/takeojinja.html) | たけおじんじゃ | 南丹市園部町高屋片山1 |
+| [鹿嶋神社](https://kuchitanshrine.my.coocan.jp/kashima.html) | かしまじんじゃ | 南丹市園部町殿谷長谷11 |
+| [出雲神社](https://kuchitanshrine.my.coocan.jp/habuizumo.html) | いずもじんじゃ | 南丹市園部町埴生倉谷9 |
+| [大森神社](https://kuchitanshrine.my.coocan.jp/handaoomori.html) | おおもりじんじゃ | 南丹市園部町半田クボラ3の乙 |
+
+残る10本文に対応する8登録は保留を維持しました。走田神社の地番1／2、西山神社の千ケ畑／千ヶ畑、河阿神社のひえ田野／稗田野、御霊神社のひえ田野・斎ノ神／薭田野・斉ノ神、佐々尾神社の1.2／12、朝倉神社の干妻／千妻を推定で同等化していません。松尾神社2記事は西別院町・旭町で原千代川町とは別町域、春日神社2記事は東別院町で原ひえ田野町とは別町域でした。同名の読みを流用していません。個人参拝記録の二次資料として扱い、神社自身・神社庁の発音認定とは区別します。既確認の画像複写・転載禁止と画像利用条件を遵守し、画像は取得せず、名称・全文かな・所在地・出典と判断の限定事実のみを保存しています。
