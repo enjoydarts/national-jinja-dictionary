@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "f7f5f823ac1b4fd31f3557e5803cd0ab24e494dc40e8eeca21ca2ae39c7efd07",
+    "corrections.json": "0ccecfe2e35d9b5ca51a1d5bcfb14f8c2ee7da5b25a6da09b3a9be1455681953",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "3bd51b9f6c3064bfb48be0fc3cc749f81e1d4aefee876eac6f8a20621e8af414",
@@ -22913,18 +22913,30 @@
         "integration_main_commit": "79c8602f7b1f32851967e873fa9c6d1bba5c78b5",
         "new_verified_entries": 0,
         "scope": "最新mainの別地域調査・分類変更を保持して、波々伯部神社1登録の補正と原研究行の履歴を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T08:23:46.899074+00:00",
+        "integrated_entry_ids": [
+          "b6c3e58f-a98a-542d-b184-72e80b5d0363"
+        ],
+        "integration_main_commit": "39c122d5169d5b8aa0c440a30ad671419586644f",
+        "new_verified_entries": 0,
+        "scope": "最新mainの別地域調査・分類変更を保持して、波々伯部神社1登録の補正と原研究行の履歴を統合。採用を重複計上しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T08:23:46.899074+00:00",
-      "integrated_entry_ids": [
-        "b6c3e58f-a98a-542d-b184-72e80b5d0363"
+      "checked_at": "2026-11-13T08:28:50.604788+00:00",
+      "entry_ids": [
+        "0678dd58-874d-5b34-953d-cd3edd08d000",
+        "21aa5e11-df10-5df6-8916-c509b03cf22b"
       ],
-      "integration_main_commit": "39c122d5169d5b8aa0c440a30ad671419586644f",
-      "new_verified_entries": 0,
-      "scope": "最新mainの別地域調査・分類変更を保持して、波々伯部神社1登録の補正と原研究行の履歴を統合。採用を重複計上しない。"
+      "name_comparison_pairs": 29,
+      "new_verified_entries": 2,
+      "retained_pending_entries": 10528,
+      "scope": "全国一宮の表示番号0〜116の117行を10530登録の保留の同都道府県・正式名文字列一致に限定比較した29組。複合かなを分割せず、異なる字形・地番・行政区分・同名別施設は補作しない。全神社・全研究資料・全国全保留の解決ではない。",
+      "source_rows": 117
     },
-    "remaining_unfinished_entries": 10530,
+    "remaining_unfinished_entries": 10528,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -22937,6 +22949,7 @@
       "046cbee0-e47b-5c54-8ed5-9f4f65a608a1",
       "050e6250-8e85-57a8-bd17-362bc63faa8f",
       "0608fcd4-0cd7-5368-acc0-28986f624d3c",
+      "0678dd58-874d-5b34-953d-cd3edd08d000",
       "06ac25a4-aaa4-5649-a92b-6481c0ca3366",
       "089a2653-85cb-5dc0-bfe1-a22c1b672358",
       "090da2ed-f0f5-5b52-a0e1-d8c7036c284d",
@@ -22978,6 +22991,7 @@
       "1f6c206a-8ddd-5dc6-bf45-3dc3eebe5310",
       "20e1887e-1f27-5c1c-98ec-309347392b0b",
       "2175dcd1-1115-5040-aac5-50acfde4db50",
+      "21aa5e11-df10-5df6-8916-c509b03cf22b",
       "2299b4dc-bf0d-5b17-8422-189cc68fcbb3",
       "22b2ec6b-c3f8-56d6-8fa1-0d2cc699d901",
       "24055579-8b9e-5ae2-8ae0-96790e2f38cd",
@@ -23268,7 +23282,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T08:23:46.899074+00:00",
+  "computed_at": "2026-11-13T08:28:50.604788+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -318051,16 +318065,928 @@
       "scope": "原実コード6307024の詳細全文かな・同名地図全地番と実市名変更条例・独立登記一意性の個別審査。原詳細の市名文字列を削除正規化せず、登記の独立列から実効住所を構成し原住所を保持。別観光所在地・他機関の読みを借用しない。全国又は兵庫県の残件完了ではない。",
       "source_kind": "agency_map_and_government_registry_location_selection",
       "source_publisher": "兵庫県神社庁・国税庁・丹波篠山市"
+    },
+    {
+      "acquisition": "通常クライアント、robots遵守、同一ホスト2秒以上・timeout20秒・再試行0。大学の一覧・学部トップ・研究室・個人ページ・その他の計5本文を取得。写真・各神社訪問記は未取得。",
+      "additional_source_stops": [
+        {
+          "checked_at": "2026-11-13T08:28:50.604788+00:00",
+          "inspection_method": "web tool",
+          "observation": "検索に現れた別の大学資料は実URL404で本文未取得。読みを検索抜粋から採用せず、当該原ページの別パラメータ・別経路で再取得しない。",
+          "status": "http_404",
+          "url": "https://jmapps.ne.jp/kokugakuin/det.html?data_id=53454&data_idx=0&referer_id=33306"
+        }
+      ],
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "address_values_raw": [
+                "北海道札幌市中央区宮ケ丘474"
+              ],
+              "automatic_validation_problems": [],
+              "checked_at": "2026-11-12T03:57:16.104260+00:00",
+              "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+              "fetched_at": "2026-11-12T03:26:36.859443+00:00",
+              "name_raw": "北海道神宮",
+              "observation": "missing_or_ambiguous_full_reading_or_address",
+              "page_hash": "40f551a4306af89a346cf7b85ed411d0684dec51a49fbaa8c7fbc9dbef4d61db",
+              "reading_values_raw": [],
+              "remaining_requirement": "原社名の全文かな・全所在地が同一対象に対応し、かなの疑義・名称差・地番差を解消する追加実資料。推測修正や冠称の切出しは行わない。",
+              "source_kind": "article",
+              "source_publisher": "サポサツ（個人運営）",
+              "status": "inspected_not_adopted",
+              "url": "https://kokorosearch.net/chie/life/sapporodondoyaki.html"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:46:11.067129+00:00",
+              "evidence_attempt": "kojiki_northern_kyushu_articles_20261112_hokkaido",
+              "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+              "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、別途同定調査を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "北海道札幌市中央区宮ヶ丘474",
+                "checked_at": "2026-11-12T06:18:48.270542+00:00",
+                "fetched_at": "2026-11-12T06:17:42.220265+00:00",
+                "name_raw": "北海道神宮",
+                "page_hash": "05ac76dbb020495918ae7d9afb2b569c1d78c594ed1f399dac56d86115c38766",
+                "reading_context_raw": "北海道神宮（ほっかいどうじんぐう）は",
+                "reading_raw": "ほっかいどうじんぐう",
+                "subject_title_raw": "北海道神宮　北海道札幌市中央区宮ヶ丘",
+                "url": "https://www.buccyake-kojiki.com/archives/1021872757.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T10:22:32.079302+00:00",
+              "evidence_attempt": "hokkaido_jingu_candidate_tls_hostname_mismatch_20261112",
+              "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+              "observation": "HTTPSの通常の証明書検証で、証明書がwww.hokkaidojingu.or.jpという要求ホスト名に有効でないことを検出。本文を取得できず停止。証明書検証を無効化せず、別プロトコル・別ホスト・別ツールで取得制限を回避しない。検索結果の題名やかなから読みを確定せず保留を維持。",
+              "source_kind": "candidate_shrine_self_site",
+              "status": "stopped_tls_hostname_mismatch",
+              "url": "https://www.hokkaidojingu.or.jp/kids/kids_2.html"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T10:30:20.528024+00:00",
+              "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
+              "exact_name_rows": [],
+              "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+              "observation": "この都心部観光スポットCSVの名称欄に原神社名の一致行がないため、当該登録の全文読み・全所在地の根拠には採用しない。市の全観光資料・全神社又は全国全保留の調査完了を意味しない。",
+              "reference": {
+                "csv_records": 103,
+                "encoding": "utf-8-sig",
+                "fetched_at": "2026-11-12T10:25:45.657263+00:00",
+                "license": "CC-BY-4.0",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+                "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
+                "source_kind": "municipal_open_data",
+                "source_publisher": "札幌市",
+                "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
+              },
+              "source_kind": "municipal_open_data",
+              "source_publisher": "札幌市",
+              "status": "bounded_tourism_csv_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T14:03:04.523914+00:00",
+              "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
+              "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+              "observation": "社名見出しと全所在地は対応するが、独立した社名かな欄・社名直後の全文かな括弧・ルビは点検範囲にない。祭神等のかなから読みを補作せず保留。氏名・個人連絡先は記録しない。",
+              "reference": {
+                "address_raw": "札幌市中央区宮ケ丘474番地",
+                "canonical_index_observation": {
+                  "fetched_at": "2026-11-08T14:26:09.501580+00:00",
+                  "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/",
+                  "native_href": "https://hokkaidojinjacho.jp/%e5%8c%97%e6%b5%b7%e9%81%93%e7%a5%9e%e5%ae%ae/",
+                  "page_hash": "5bb133e22bcae502f43088b2cafaa6f5934adee4443cdfe84774d8ced71ea506",
+                  "source_locator": ".lineup .block[1]"
+                },
+                "fetched_at": "2026-11-12T13:50:06.892020+00:00",
+                "locator": "div.jinja-area-main の社名h3と dl の所在地dd内 p.address。郵便番号・電話・FAX・フッターの庁事務所住所は含めない。",
+                "name_raw": "北海道神宮",
+                "observed_formal_name_kana_pairs": [],
+                "page_hash": "055e7ea5e9c99cce44a30effc163acaef3b24dbbe14bffcadac7382318e09d2b",
+                "ruby_reading_observed": false,
+                "scope": "記録済み一覧実リンクの詳細点検。元一覧全本文の再取得差分を確認した意味ではない。",
+                "source_kind": "agency",
+                "source_publisher": "北海道神社庁",
+                "typed_reading_labels": [],
+                "url": "https://hokkaidojinjacho.jp/%e5%8c%97%e6%b5%b7%e9%81%93%e7%a5%9e%e5%ae%ae/",
+                "website_links": [
+                  {
+                    "href_raw": "http://www.hokkaidojingu.or.jp",
+                    "label": "あり",
+                    "url": "http://www.hokkaidojingu.or.jp"
+                  }
+                ]
+              },
+              "source_kind": "agency",
+              "source_publisher": "北海道神社庁",
+              "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T08:28:50.604788+00:00",
+              "evidence_attempt": "university_hosted_personal_ichinomiya_117_rows_two_full_readings_20261113",
+              "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+              "observation": "一覧の独立全文かなと原正式名・全所在地を確認し、既存の実資料中の全文かな観察とも一致。大学の公式神社台帳や神社自身の発音資料とはせず、個人公開資料として出典を明示。原名・住所・ID/hash・旧調査履歴を保持して読みのみ補完。",
+              "reference": {
+                "address_raw": "北海道札幌市中央区宮ケ丘474",
+                "attribution": "出典：神奈川大学建築学部ドメイン研究室配下「一宮一覧」表示番号107。名称・独立かな・所在地を原登録へ照合し、national-jinja-dictionaryが加工。",
+                "authority_scope": "研究室と個人ページの本文を別途確認。大学の神社調査データベース又は神社自身の公式読み資料とは扱わない。",
+                "checked_at": "2026-11-13T08:27:07.511770+00:00",
+                "excerpt": "北海道神宮 / ほっかいどうじんぐう / 北海道札幌市中央区宮ケ丘474",
+                "fetched_at": "2026-11-13T08:24:54.844877+00:00",
+                "html_tr_index": 118,
+                "locator": "表のHTML tr 118、表示番号107。5列の第2列=名称、第3列=かな、第5列=所在地。",
+                "name_raw": "北海道神宮",
+                "page_hash": "d150330353705402ed206b6b0cdd3bff1f86103cf0f246ec86c98c0e594adf53",
+                "publisher_provenance": {
+                  "actual_table_link": {
+                    "href": "Ichinomiya/Ichinomiya.html",
+                    "label": "全国一宮",
+                    "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/Ichinomiya/Ichinomiya.html"
+                  },
+                  "authority_observation": "学部トップの神奈川大学建築学部という自己表示、研究室本文の島崎・白井研、個人ページのKazushi SHIMAZAKIと島崎という自己表示、その他の全国一宮実リンクを確認。表を大学の学術審査済み成果又は神社公式資料とは扱わない。",
+                  "faculty_reference": {
+                    "fetched_at": "2026-11-13T08:25:41.498814+00:00",
+                    "page_hash": "8844ff9de460861b04520ffc412f6a51a8e015434d4d1f5e86e4623af12ce2c6",
+                    "title": [
+                      "神奈川大学建築学部"
+                    ],
+                    "url": "https://www.arch.kanagawa-u.ac.jp/"
+                  },
+                  "lab_reference": {
+                    "fetched_at": "2026-11-13T08:25:43.593380+00:00",
+                    "page_hash": "fa34df68f9467139915c29d134ebf27398eef731e88c9465e8e4d750edfaf8ab",
+                    "title": [
+                      "SHIMAZAKI Lab."
+                    ],
+                    "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/"
+                  },
+                  "personal_contents_reference": {
+                    "fetched_at": "2026-11-13T08:27:12.546450+00:00",
+                    "page_hash": "deaa79fe7ea48c7e063d718c7dae86f9b93017b78fd6b1e4be7ec53b2e8d24bf",
+                    "title": [
+                      "Kazushi SHIMAZAKI"
+                    ],
+                    "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/etc.html"
+                  },
+                  "personal_reference": {
+                    "fetched_at": "2026-11-13T08:26:02.450654+00:00",
+                    "page_hash": "d8ed6ff1c1a29d54f7f189f60ea775bef1f5459eec63c9076f1d66db7f9643e5",
+                    "title": [
+                      "Kazushi SHIMAZAKI"
+                    ],
+                    "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/shima.html"
+                  }
+                },
+                "reading_raw": "ほっかいどうじんぐう",
+                "reading_scope": "full_name",
+                "rights_observation": "取得した一覧・研究室・個人ページ本文に、この表の辞書再利用を明示的に禁止する個別条件へのリンク又は表示は見当たらない。無制限の転載許諾と扱わず、個別確認した必要な名称・かな・所在地の事実欄と出典・加工表示のみを記録。表全体・写真・訪問記は収録しない。",
+                "source_kind": "university_hosted_personal_reference_table",
+                "source_publisher": "島崎個人資料（神奈川大学建築学部ドメインの研究室配下）",
+                "source_row_number_raw": "107",
+                "source_title_absent": true,
+                "title": "一宮一覧（表示番号107・北海道神宮）",
+                "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/Ichinomiya/Ichinomiya.html"
+              },
+              "status": "explicit_full_reading_and_exact_full_address_in_independent_reference_table"
+            }
+          ],
+          "address": "札幌市中央区宮ケ丘474番地",
+          "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "0678dd58-874d-5b34-953d-cd3edd08d000",
+          "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+          "facility_id": "a3814b39-05e1-58dc-a6da-41f8fa18c7b4",
+          "listed_name": "北海道神宮",
+          "nta_result": "no unique active exact name/full-address corporate identity",
+          "prefecture": "北海道",
+          "prefecture_code": "01",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "北海道神宮",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T04:12:45.914509+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "775fe433035b7fd131640265f009f03c4609c9a322391de689314aa657bbc1bd",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%B5%B7%E9%81%93%E7%A5%9E%E5%AE%AE"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        },
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "correction_problems": [
+                "no inspected reference explicitly identifies name and location",
+                "corrected full reading is not explicit in the inspected reference"
+              ],
+              "evidence_attempt": "kojiki_additional_articles_20261112_kagawa",
+              "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
+              "formal_main_title_match": true,
+              "numeric_both_present": false,
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "香川県高松市一宮町",
+                "checked_at": "2026-11-12T05:37:28.738265+00:00",
+                "fetched_at": "2026-11-12T05:31:35.636097+00:00",
+                "license_status": "unconfirmed",
+                "locator": "h1.article-title の主対象; div.article-body-inner冒頭の「田村神社（全文かな）は」; 同主対象の［住所］原行",
+                "name_raw": "田村神社",
+                "page_hash": "6b1974fb5b03171d1451c64591fc44e00339a33cda2984bb9ab10ec9643ddba9",
+                "reading_raw": "たむらじんじゃ",
+                "reading_scope": "full_name",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記",
+                "title": "田村神社　香川県高松市一宮町 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1019084700.html"
+              },
+              "result": "canonical_or_source_full_numeric_address_missing",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T14:33:45.555649+00:00",
+              "evidence_attempt": "kagawa_recorded_native_profiles_first_hundred_formal_reading_followup_20261112",
+              "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
+              "observation": "社名・鎮座地・神社コードを確認。独立した社名かな欄・社名直後の全文かな括弧・rubyを点検した範囲では読みを確認できず保留維持。祭神・字名・別施設の読みを流用しない。",
+              "reference": {
+                "address_raw": "高松市一宮町286番地",
+                "agency_code_raw": "9010",
+                "canonical_index_reference": {
+                  "fetched_at": "2026-11-08T14:32:46.993337+00:00",
+                  "locator": "li.c-entries__item a[href=\"https://kagawakenjinjacho.or.jp/shrine/%e7%94%b0%e6%9d%91%e7%a5%9e%e7%a4%be/\"]",
+                  "native_href": "https://kagawakenjinjacho.or.jp/shrine/%e7%94%b0%e6%9d%91%e7%a5%9e%e7%a4%be/",
+                  "page_hash": "d4661cacd498ddba1e398abe39d2d7972b96930f47b4714cfcedb91dcbcdda44",
+                  "url": "https://kagawakenjinjacho.or.jp/shrine/page/16/"
+                },
+                "fetched_at": "2026-11-12T14:31:16.789958+00:00",
+                "formal_name_literal_kana_pairs": [],
+                "locator": "h1.c-entry__title、div.p-entry-content の p.shrine_name・p.location・p.shrine_code・p.url。庁所在地のサイドバーと電話/FAXを分離。",
+                "name_raw": "田村神社",
+                "page_hash": "8d3e0eec1cd24a8a0c07a2f8d0d62b60b54d0f2f2082701d669b917f101f095b",
+                "ruby_reading_observed": false,
+                "scope": "原一覧の保存済み実詳細リンクを初回点検。元一覧全本文の再取得差分を確認した意味ではない。",
+                "source_kind": "agency",
+                "source_publisher": "香川県神社庁",
+                "typed_formal_name_reading_fields": [],
+                "url": "https://kagawakenjinjacho.or.jp/shrine/%e7%94%b0%e6%9d%91%e7%a5%9e%e7%a4%be/",
+                "website_links": [
+                  {
+                    "href_raw": "https://tamurajinja.com/",
+                    "label": "https://tamurajinja.com/",
+                    "url": "https://tamurajinja.com/"
+                  }
+                ]
+              },
+              "source_kind": "agency",
+              "source_publisher": "香川県神社庁",
+              "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T14:44:47.162772+00:00",
+              "dataset_urls": [
+                "https://opendata.takamatsu-fact.com/aed_location/data.csv",
+                "https://opendata.takamatsu-fact.com/tourist_facilities/data.csv",
+                "https://opendata.takamatsu-fact.com/folklore_facility/data.csv",
+                "https://opendata.takamatsu-fact.com/evacuation_space/data.csv",
+                "https://opendata.takamatsu-fact.com/tsunami_evacuation_building/data.csv",
+                "https://opendata.takamatsu-fact.com/cultural_property/data.csv"
+              ],
+              "evidence_attempt": "takamatsu_six_city_open_csv_against_kagawa_pending_20261112",
+              "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
+              "observation": "高松市独自の公開6CSV995行のname欄を原名と幅・空白の比較で照合し一致なし。田村神社古神宝類・神社の社叢・御神木等の文化財複合名とそのfullNameInKanaから、施設名の読みを切り出さない。県の取得停止ポータルのコピーを利用せず、市公式実案内の独立公開表を使用。市全施設・全資料の調査完了ではない。",
+              "source_kind": "municipal_open_data",
+              "source_publisher": "高松市",
+              "status": "no_exact_name_in_six_inspected_city_open_tables"
+            },
+            {
+              "adopted": false,
+              "catalog_reference": {
+                "fetched_at": "2026-11-12T14:39:46.424489+00:00",
+                "page_hash": "36d8e37766dd5179fe865ca62536c3a7e3afcf4f6ea0954929bc02087bf0a050",
+                "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/opendata/takamatsu/index.html"
+              },
+              "checked_at": "2026-11-13T02:09:54.815826+00:00",
+              "current_municipal_catalogue_scope": "高松市",
+              "evidence_attempt": "kagawa_all_17_municipal_catalogues_nine_new_local_tables_602_pending_20261113",
+              "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
+              "municipality_raw": "高松市",
+              "observation": "既報の6市独自CSV995実行を現保留602と照合した記録を継承。今回再取得や新規表照合へ加算しない。",
+              "observed_rows": [],
+              "source_kind": "municipal_open_data",
+              "source_publisher": "香川県内17市町（現市町範囲）・デジタル庁",
+              "status": "previous_municipal_tables_compared"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T08:28:50.604788+00:00",
+              "evidence_attempt": "university_hosted_personal_ichinomiya_117_rows_two_full_readings_20261113",
+              "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
+              "observation": "一覧の独立全文かなと原正式名・全所在地を確認し、既存の実資料中の全文かな観察とも一致。大学の公式神社台帳や神社自身の発音資料とはせず、個人公開資料として出典を明示。原名・住所・ID/hash・旧調査履歴を保持して読みのみ補完。",
+              "reference": {
+                "address_raw": "香川県高松市一宮町286",
+                "attribution": "出典：神奈川大学建築学部ドメイン研究室配下「一宮一覧」表示番号86。名称・独立かな・所在地を原登録へ照合し、national-jinja-dictionaryが加工。",
+                "authority_scope": "研究室と個人ページの本文を別途確認。大学の神社調査データベース又は神社自身の公式読み資料とは扱わない。",
+                "checked_at": "2026-11-13T08:27:07.511770+00:00",
+                "excerpt": "田村神社 / たむらじんじゃ / 香川県高松市一宮町286",
+                "fetched_at": "2026-11-13T08:24:54.844877+00:00",
+                "html_tr_index": 95,
+                "locator": "表のHTML tr 95、表示番号86。5列の第2列=名称、第3列=かな、第5列=所在地。",
+                "name_raw": "田村神社",
+                "page_hash": "d150330353705402ed206b6b0cdd3bff1f86103cf0f246ec86c98c0e594adf53",
+                "publisher_provenance": {
+                  "actual_table_link": {
+                    "href": "Ichinomiya/Ichinomiya.html",
+                    "label": "全国一宮",
+                    "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/Ichinomiya/Ichinomiya.html"
+                  },
+                  "authority_observation": "学部トップの神奈川大学建築学部という自己表示、研究室本文の島崎・白井研、個人ページのKazushi SHIMAZAKIと島崎という自己表示、その他の全国一宮実リンクを確認。表を大学の学術審査済み成果又は神社公式資料とは扱わない。",
+                  "faculty_reference": {
+                    "fetched_at": "2026-11-13T08:25:41.498814+00:00",
+                    "page_hash": "8844ff9de460861b04520ffc412f6a51a8e015434d4d1f5e86e4623af12ce2c6",
+                    "title": [
+                      "神奈川大学建築学部"
+                    ],
+                    "url": "https://www.arch.kanagawa-u.ac.jp/"
+                  },
+                  "lab_reference": {
+                    "fetched_at": "2026-11-13T08:25:43.593380+00:00",
+                    "page_hash": "fa34df68f9467139915c29d134ebf27398eef731e88c9465e8e4d750edfaf8ab",
+                    "title": [
+                      "SHIMAZAKI Lab."
+                    ],
+                    "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/"
+                  },
+                  "personal_contents_reference": {
+                    "fetched_at": "2026-11-13T08:27:12.546450+00:00",
+                    "page_hash": "deaa79fe7ea48c7e063d718c7dae86f9b93017b78fd6b1e4be7ec53b2e8d24bf",
+                    "title": [
+                      "Kazushi SHIMAZAKI"
+                    ],
+                    "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/etc.html"
+                  },
+                  "personal_reference": {
+                    "fetched_at": "2026-11-13T08:26:02.450654+00:00",
+                    "page_hash": "d8ed6ff1c1a29d54f7f189f60ea775bef1f5459eec63c9076f1d66db7f9643e5",
+                    "title": [
+                      "Kazushi SHIMAZAKI"
+                    ],
+                    "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/shima.html"
+                  }
+                },
+                "reading_raw": "たむらじんじゃ",
+                "reading_scope": "full_name",
+                "rights_observation": "取得した一覧・研究室・個人ページ本文に、この表の辞書再利用を明示的に禁止する個別条件へのリンク又は表示は見当たらない。無制限の転載許諾と扱わず、個別確認した必要な名称・かな・所在地の事実欄と出典・加工表示のみを記録。表全体・写真・訪問記は収録しない。",
+                "source_kind": "university_hosted_personal_reference_table",
+                "source_publisher": "島崎個人資料（神奈川大学建築学部ドメインの研究室配下）",
+                "source_row_number_raw": "86",
+                "source_title_absent": true,
+                "title": "一宮一覧（表示番号86・田村神社）",
+                "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/Ichinomiya/Ichinomiya.html"
+              },
+              "status": "explicit_full_reading_and_exact_full_address_in_independent_reference_table"
+            }
+          ],
+          "address": "高松市一宮町286番地",
+          "agency_listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/16/",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "21aa5e11-df10-5df6-8916-c509b03cf22b",
+          "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
+          "facility_id": "00688bed-5c39-570d-982b-16840f98d1ad",
+          "listed_name": "田村神社",
+          "nta_result": "no unique active exact name/full-address corporate identity",
+          "prefecture": "香川県",
+          "prefecture_code": "37",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "田村神社",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T05:21:40.550343+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "78456cdcea63874f42999177f0116e4f0db249a017667d57f3bbb0d8177fd76d",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E7%94%B0%E6%9D%91%E7%A5%9E%E7%A4%BE_(%E9%AB%98%E6%9D%BE%E5%B8%82)"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        }
+      ],
+      "attempt_id": "university_hosted_personal_ichinomiya_117_rows_two_full_readings_20261113",
+      "checked_at": "2026-11-13T08:28:50.604788+00:00",
+      "fixed_target_entries": 10530,
+      "manual_resolved_entry_ids": [
+        "0678dd58-874d-5b34-953d-cd3edd08d000",
+        "21aa5e11-df10-5df6-8916-c509b03cf22b"
+      ],
+      "matching_observations": [
+        {
+          "entry_id": "ba0f3ca7-8ffc-5df1-a498-eb631ddaadbd",
+          "expected_source_hash": "ee1fccdd5109ed1c94e638e2b35f1a995d81d9fbe120c95bc36220c634a38411",
+          "html_tr_index": 5,
+          "name_raw": "賀茂御祖神社（下鴨神社）",
+          "original_address_raw": "京都市左京区下鴨泉川町59",
+          "prefecture_code": "26",
+          "problems": [
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "京都府京都市左京区下鴨泉川町59",
+          "source_row_number_raw": "2"
+        },
+        {
+          "entry_id": "0e7f32ef-88f7-5cb1-b0e9-e4ecfc5b7835",
+          "expected_source_hash": "a8a7a3e7e540d5b99673ed72b1b3bfdd7788a137afcf43c6be67bae2770377cd",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南都留郡西桂町小沼2797",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "0fe053f4-8dcb-599d-ae8a-cb97e8e50eb4",
+          "expected_source_hash": "d690ddd569b1da10f1d1f6bb312ef396544a5849547e672d7e085423382a40f0",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南巨摩郡南部町内船5197",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "1fc2d3ff-8f91-52dc-a28d-e064d5eecd45",
+          "expected_source_hash": "14c01b94d86bf77ae06c99748a31ce223159c2859b0ea2547f81f02f6c8263ae",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南都留郡山中湖村山中御所11",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "2eec2288-21cc-5775-959e-5312aa436915",
+          "expected_source_hash": "7bc906bf296ebac562fc5a954bb70f4ed0b23eeb43ba0bbb9026bcbce9054321",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南都留郡富士河口湖町河口1",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "31126639-5295-5e51-b66c-ff90b0b9d5b7",
+          "expected_source_hash": "afe78acbe92d8ecee512ac602367755dd9967de9a0dbe2f6bf6c1654ace93a87",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "西八代郡市川三郷町宮原御領土1",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "385c9e46-49c5-5105-9775-13b5b744ba9b",
+          "expected_source_hash": "56c3559ce2443feb2c606386331815e2d99288dfa187770e7d5b7dc93c7a11e4",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "甲州市勝沼町藤井950",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "3dbddc20-a585-57a7-b4d4-ada50e8f42de",
+          "expected_source_hash": "8dfa208c98ea32146fb6a56ff3d69da15365d827e437b50ddb0d851b7f4df2eb",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南巨摩郡身延町水船345",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "531418d6-ed37-5022-967d-c9df7673ee79",
+          "expected_source_hash": "b1c46d3a2925a935d37b51cd82e4db58e4bc5c36dd16b8269b7e76dec48787fe",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南アルプス市江原1302",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "5b911109-35cf-556b-8038-b150e787f6c9",
+          "expected_source_hash": "8cdedf9cdf63f567818c3b7b8cb0e965d454a630b12dfabfc721fee0334566b5",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南巨摩郡南部町万沢大字宿3517",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "724741a9-9b29-520d-9002-b3cdc7c64205",
+          "expected_source_hash": "6e2933e8a9f49f3fb592c85e1846322f493a714f6bd9e50545ca83fc817d392e",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南巨摩郡富士川町箱原字日影979",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "852d0af3-8fcc-5bdd-ba5a-89d6a8af3bac",
+          "expected_source_hash": "b3b702cd3e44f71b42228aa069da6c7df4e48731d57180d915df0ba650fc5e4e",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "甲府市青沼3-5-3",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "d240b982-edf6-5efb-8150-ee9537e20635",
+          "expected_source_hash": "3552b0dbf276961a5e67380246276e67e10c841fbe027baf2f8f8d8fcfeb453f",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "北杜市高根町五町田385",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "d5071d04-b0d7-526f-b5cb-30cfe0ca2ab5",
+          "expected_source_hash": "85729f4676ae064ec2c731626baf1baffc641a6f1b8ea36da73b00ee8bde28eb",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "都留市平栗257",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "e9fe9fc5-e489-5280-9d63-b1ed73a4c9d3",
+          "expected_source_hash": "7059a3dd23e53e62fec5f82c63e04341ffe68747547f3d854ca0f109ead3ef3e",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "上野原市秋山8672",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "ebf1e57a-df6b-59f6-8524-82f8e281767a",
+          "expected_source_hash": "d7e4ffbc9bfba3295b213769ae06946f257b4dd9c36b6dd2b7b7c4484e1206ae",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南巨摩郡身延町宮木729",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "f5b364cf-f130-55b5-97c7-b4f74f492b36",
+          "expected_source_hash": "71ee98e8ab68a5039e420023eb84757a224fea96f30db91e3e34c4222a8e319d",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "南巨摩郡身延町西島3718",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "fd14439c-4a56-53db-b409-b4d04f5bb081",
+          "expected_source_hash": "b5250084ba8e09f79256cc5d274f34742767d34148bf9b3a3b05b9e14a5de01f",
+          "html_tr_index": 25,
+          "name_raw": "浅間神社",
+          "original_address_raw": "富士吉田市上暮地544",
+          "prefecture_code": "19",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "山梨県笛吹市一宮町一の宮1684番",
+          "source_row_number_raw": "21"
+        },
+        {
+          "entry_id": "700c6241-ec1b-531a-af4a-582a85330e39",
+          "expected_source_hash": "9518c4b3d005732efcd57e722d4a0c68c42b8a71525b57b1607d95960b8bc95f",
+          "html_tr_index": 29,
+          "name_raw": "氷川神社",
+          "original_address_raw": "川島町北園部636",
+          "prefecture_code": "11",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "埼玉県さいたま市大宮区高鼻町1丁目407",
+          "source_row_number_raw": "25"
+        },
+        {
+          "entry_id": "21aa5e11-df10-5df6-8916-c509b03cf22b",
+          "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
+          "html_tr_index": 95,
+          "name_raw": "田村神社",
+          "original_address_raw": "高松市一宮町286番地",
+          "prefecture_code": "37",
+          "problems": [],
+          "reference_address_raw": "香川県高松市一宮町286",
+          "source_row_number_raw": "86"
+        },
+        {
+          "entry_id": "fd87f549-f028-5332-b6c0-7ef02ac6fa8a",
+          "expected_source_hash": "3b020aea2bb271df4322b1380ab4f0178c4fccc023875b543dee2657a8a8905c",
+          "html_tr_index": 97,
+          "name_raw": "土佐神社",
+          "original_address_raw": "高知県高岡郡一宮しなね二丁目16番1号",
+          "prefecture_code": "39",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "高知県高知市一宮しなね2丁目16−1",
+          "source_row_number_raw": "88"
+        },
+        {
+          "entry_id": "bfbc411b-65a4-5f78-b8ef-e9daae1c289a",
+          "expected_source_hash": "1694c6d07aa155b5743d62f0400198437e01974af39b3b254f1ef1639c795e9c",
+          "html_tr_index": 99,
+          "name_raw": "住吉神社",
+          "original_address_raw": "福岡市西区姪の浜3-5-5",
+          "prefecture_code": "40",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "福岡県福岡市博多区住吉3丁目1−51",
+          "source_row_number_raw": "89"
+        },
+        {
+          "entry_id": "dc773f6f-21be-5e78-ac81-92716ed7b9a9",
+          "expected_source_hash": "ae03c581de56b4fc6602f0cd10a2d6ce6392515c41ee29d5b0bdfb4c17daf4cb",
+          "html_tr_index": 99,
+          "name_raw": "住吉神社",
+          "original_address_raw": "糸島市井原1321",
+          "prefecture_code": "40",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "福岡県福岡市博多区住吉3丁目1−51",
+          "source_row_number_raw": "89"
+        },
+        {
+          "entry_id": "f4092309-7320-5d71-9747-bed8f5c869f8",
+          "expected_source_hash": "ec4efa7c88301726c6cdeda784a3d327af65e0b329ab7bdd0f6f960572d3b50c",
+          "html_tr_index": 99,
+          "name_raw": "住吉神社",
+          "original_address_raw": "福岡市南区日佐1-8-11",
+          "prefecture_code": "40",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "福岡県福岡市博多区住吉3丁目1−51",
+          "source_row_number_raw": "89"
+        },
+        {
+          "entry_id": "13f66172-234e-539c-9c89-9ce499df1a9e",
+          "expected_source_hash": "9dffff2ba9d02be5609886d58434c533fdb68f411dc7bd19ee02fe39651793be",
+          "html_tr_index": 101,
+          "name_raw": "高良大社",
+          "original_address_raw": "久留米市御井町11",
+          "prefecture_code": "40",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "福岡県久留米市御井町1番",
+          "source_row_number_raw": "91"
+        },
+        {
+          "entry_id": "b8dc2f4b-9906-5b8b-95f1-fcdc7a833fe1",
+          "expected_source_hash": "fe636e39292ba6c16abdfb38ffef45984326a4f3e37daf951ffdbcc3f61703a1",
+          "html_tr_index": 106,
+          "name_raw": "千栗八幡宮",
+          "original_address_raw": "三養基郡みやき町大字白壁２４１５",
+          "prefecture_code": "41",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "佐賀県三養基郡みやき町大字白壁千栗2403",
+          "source_row_number_raw": "96"
+        },
+        {
+          "entry_id": "85e0a465-55bd-592a-890c-8e1b1851573d",
+          "expected_source_hash": "611fbc429cf7a0d1198f11aaedf9c6ae5fcdf506e18103aa10bb8855ea5313df",
+          "html_tr_index": 107,
+          "name_raw": "阿蘇神社",
+          "original_address_raw": "阿蘇市宮地3083番地1",
+          "prefecture_code": "43",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "熊本県阿蘇市一の宮町宮地3083−1",
+          "source_row_number_raw": "97"
+        },
+        {
+          "entry_id": "0678dd58-874d-5b34-953d-cd3edd08d000",
+          "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
+          "html_tr_index": 118,
+          "name_raw": "北海道神宮",
+          "original_address_raw": "札幌市中央区宮ケ丘474番地",
+          "prefecture_code": "01",
+          "problems": [],
+          "reference_address_raw": "北海道札幌市中央区宮ケ丘474",
+          "source_row_number_raw": "107"
+        },
+        {
+          "entry_id": "f662c115-69bd-5c36-a137-c98172580d63",
+          "expected_source_hash": "80a33f8ed43d498308e4c88398c0af10f2fbdb572fc4a500965f36507e8e05d8",
+          "html_tr_index": 125,
+          "name_raw": "姥神大神宮",
+          "original_address_raw": "桧山郡江差町字姥神町99-1",
+          "prefecture_code": "01",
+          "problems": [
+            "no inspected reference explicitly identifies name and location",
+            "corrected full reading is not explicit in the inspected reference"
+          ],
+          "reference_address_raw": "北海道檜山郡江差町字姥神町99",
+          "source_row_number_raw": "114"
+        }
+      ],
+      "new_verified_entries": 2,
+      "proposal_dryrun": {
+        "added": 2,
+        "applied": false,
+        "entry_ids": [
+          "0678dd58-874d-5b34-953d-cd3edd08d000",
+          "21aa5e11-df10-5df6-8916-c509b03cf22b"
+        ],
+        "replaced": 0,
+        "unchanged": 0
+      },
+      "proposal_sha256": "0a2351b50a692fb3c5b5a5d67a0dff37708729d9689cadf75274878c68e4f257",
+      "publisher_provenance": {
+        "actual_table_link": {
+          "href": "Ichinomiya/Ichinomiya.html",
+          "label": "全国一宮",
+          "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/Ichinomiya/Ichinomiya.html"
+        },
+        "authority_observation": "学部トップの神奈川大学建築学部という自己表示、研究室本文の島崎・白井研、個人ページのKazushi SHIMAZAKIと島崎という自己表示、その他の全国一宮実リンクを確認。表を大学の学術審査済み成果又は神社公式資料とは扱わない。",
+        "faculty_reference": {
+          "fetched_at": "2026-11-13T08:25:41.498814+00:00",
+          "page_hash": "8844ff9de460861b04520ffc412f6a51a8e015434d4d1f5e86e4623af12ce2c6",
+          "title": [
+            "神奈川大学建築学部"
+          ],
+          "url": "https://www.arch.kanagawa-u.ac.jp/"
+        },
+        "lab_reference": {
+          "fetched_at": "2026-11-13T08:25:43.593380+00:00",
+          "page_hash": "fa34df68f9467139915c29d134ebf27398eef731e88c9465e8e4d750edfaf8ab",
+          "title": [
+            "SHIMAZAKI Lab."
+          ],
+          "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/"
+        },
+        "personal_contents_reference": {
+          "fetched_at": "2026-11-13T08:27:12.546450+00:00",
+          "page_hash": "deaa79fe7ea48c7e063d718c7dae86f9b93017b78fd6b1e4be7ec53b2e8d24bf",
+          "title": [
+            "Kazushi SHIMAZAKI"
+          ],
+          "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/etc.html"
+        },
+        "personal_reference": {
+          "fetched_at": "2026-11-13T08:26:02.450654+00:00",
+          "page_hash": "d8ed6ff1c1a29d54f7f189f60ea775bef1f5459eec63c9076f1d66db7f9643e5",
+          "title": [
+            "Kazushi SHIMAZAKI"
+          ],
+          "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/shima.html"
+        }
+      },
+      "quality_limits": "表には複合名・複数かな・不整合に見える別行もあるため、大学ドメイン掲載を全行正確性の保証としない。今回2行のみ原名・独立全文かな・全所在地と既存観察を個別照合し、他行のかなを修復又は無条件採用しない。",
+      "rights_scope": "一覧・研究室・個人ページに個別の明示的な再利用禁止表示へのリンクは点検範囲で見当たらず、個別照合した必要な事実欄・出典・加工判断だけを保存。無制限の転載許諾とは扱わず、表全体・写真・訪問記・連絡先は収録しない。",
+      "same_prefecture_exact_name_comparison_pairs": 29,
+      "scope": "全国一宮の表示番号0〜116の117行を10530登録の保留の同都道府県・正式名文字列一致に限定比較した29組。複合かなを分割せず、異なる字形・地番・行政区分・同名別施設は補作しない。全神社・全研究資料・全国全保留の解決ではない。",
+      "snapshot_base_commit": "3e1fdca807f28039e6e09f936765e67f3513efe2",
+      "source_kind": "university_hosted_personal_reference_table",
+      "source_publisher": "島崎個人資料（神奈川大学建築学部ドメインの研究室配下）",
+      "source_rows": 117,
+      "source_section_rows": 10,
+      "source_trailing_empty_rows": 1,
+      "status": "bounded_reference_table_screen_two_readings_verified_other_names_not_repaired"
     }
   ],
   "per_prefecture": {
     "01": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 418,
+        "insufficient_evidence_in_inspected_sources": 417,
         "investigation_incomplete": 0,
         "judgment_required": 1
       },
-      "unfinished_entries": 419
+      "unfinished_entries": 418
     },
     "02": {
       "categories": {
@@ -318344,11 +319270,11 @@
     },
     "37": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 600,
+        "insufficient_evidence_in_inspected_sources": 599,
         "investigation_incomplete": 0,
         "judgment_required": 2
       },
-      "unfinished_entries": 602
+      "unfinished_entries": 601
     },
     "38": {
       "categories": {
@@ -319832,152 +320758,6 @@
       "surface": "丸瀬布神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "address_values_raw": [
-            "北海道札幌市中央区宮ケ丘474"
-          ],
-          "automatic_validation_problems": [],
-          "checked_at": "2026-11-12T03:57:16.104260+00:00",
-          "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
-          "fetched_at": "2026-11-12T03:26:36.859443+00:00",
-          "name_raw": "北海道神宮",
-          "observation": "missing_or_ambiguous_full_reading_or_address",
-          "page_hash": "40f551a4306af89a346cf7b85ed411d0684dec51a49fbaa8c7fbc9dbef4d61db",
-          "reading_values_raw": [],
-          "remaining_requirement": "原社名の全文かな・全所在地が同一対象に対応し、かなの疑義・名称差・地番差を解消する追加実資料。推測修正や冠称の切出しは行わない。",
-          "source_kind": "article",
-          "source_publisher": "サポサツ（個人運営）",
-          "status": "inspected_not_adopted",
-          "url": "https://kokorosearch.net/chie/life/sapporodondoyaki.html"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T06:46:11.067129+00:00",
-          "evidence_attempt": "kojiki_northern_kyushu_articles_20261112_hokkaido",
-          "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
-          "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、別途同定調査を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "北海道札幌市中央区宮ヶ丘474",
-            "checked_at": "2026-11-12T06:18:48.270542+00:00",
-            "fetched_at": "2026-11-12T06:17:42.220265+00:00",
-            "name_raw": "北海道神宮",
-            "page_hash": "05ac76dbb020495918ae7d9afb2b569c1d78c594ed1f399dac56d86115c38766",
-            "reading_context_raw": "北海道神宮（ほっかいどうじんぐう）は",
-            "reading_raw": "ほっかいどうじんぐう",
-            "subject_title_raw": "北海道神宮　北海道札幌市中央区宮ヶ丘",
-            "url": "https://www.buccyake-kojiki.com/archives/1021872757.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T10:22:32.079302+00:00",
-          "evidence_attempt": "hokkaido_jingu_candidate_tls_hostname_mismatch_20261112",
-          "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
-          "observation": "HTTPSの通常の証明書検証で、証明書がwww.hokkaidojingu.or.jpという要求ホスト名に有効でないことを検出。本文を取得できず停止。証明書検証を無効化せず、別プロトコル・別ホスト・別ツールで取得制限を回避しない。検索結果の題名やかなから読みを確定せず保留を維持。",
-          "source_kind": "candidate_shrine_self_site",
-          "status": "stopped_tls_hostname_mismatch",
-          "url": "https://www.hokkaidojingu.or.jp/kids/kids_2.html"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T10:30:20.528024+00:00",
-          "evidence_attempt": "sapporo_city_central_tourism_csv_and_native_profile_20261112",
-          "exact_name_rows": [],
-          "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
-          "observation": "この都心部観光スポットCSVの名称欄に原神社名の一致行がないため、当該登録の全文読み・全所在地の根拠には採用しない。市の全観光資料・全神社又は全国全保留の調査完了を意味しない。",
-          "reference": {
-            "csv_records": 103,
-            "encoding": "utf-8-sig",
-            "fetched_at": "2026-11-12T10:25:45.657263+00:00",
-            "license": "CC-BY-4.0",
-            "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
-            "page_hash": "a8ef3ebea11c75f3bab39b9c48c12c29a1a520d28c58a22e6ee6a23177352bce",
-            "source_kind": "municipal_open_data",
-            "source_publisher": "札幌市",
-            "url": "https://ckan.pf-sapporo.jp/dataset/a467875c-db25-4477-ba1f-16964fc5a7bd/resource/4374a1aa-f96c-4b99-9521-5eea0af0d2b9/download/011002_tourism.csv"
-          },
-          "source_kind": "municipal_open_data",
-          "source_publisher": "札幌市",
-          "status": "bounded_tourism_csv_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T14:03:04.523914+00:00",
-          "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
-          "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
-          "observation": "社名見出しと全所在地は対応するが、独立した社名かな欄・社名直後の全文かな括弧・ルビは点検範囲にない。祭神等のかなから読みを補作せず保留。氏名・個人連絡先は記録しない。",
-          "reference": {
-            "address_raw": "札幌市中央区宮ケ丘474番地",
-            "canonical_index_observation": {
-              "fetched_at": "2026-11-08T14:26:09.501580+00:00",
-              "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/",
-              "native_href": "https://hokkaidojinjacho.jp/%e5%8c%97%e6%b5%b7%e9%81%93%e7%a5%9e%e5%ae%ae/",
-              "page_hash": "5bb133e22bcae502f43088b2cafaa6f5934adee4443cdfe84774d8ced71ea506",
-              "source_locator": ".lineup .block[1]"
-            },
-            "fetched_at": "2026-11-12T13:50:06.892020+00:00",
-            "locator": "div.jinja-area-main の社名h3と dl の所在地dd内 p.address。郵便番号・電話・FAX・フッターの庁事務所住所は含めない。",
-            "name_raw": "北海道神宮",
-            "observed_formal_name_kana_pairs": [],
-            "page_hash": "055e7ea5e9c99cce44a30effc163acaef3b24dbbe14bffcadac7382318e09d2b",
-            "ruby_reading_observed": false,
-            "scope": "記録済み一覧実リンクの詳細点検。元一覧全本文の再取得差分を確認した意味ではない。",
-            "source_kind": "agency",
-            "source_publisher": "北海道神社庁",
-            "typed_reading_labels": [],
-            "url": "https://hokkaidojinjacho.jp/%e5%8c%97%e6%b5%b7%e9%81%93%e7%a5%9e%e5%ae%ae/",
-            "website_links": [
-              {
-                "href_raw": "http://www.hokkaidojingu.or.jp",
-                "label": "あり",
-                "url": "http://www.hokkaidojingu.or.jp"
-              }
-            ]
-          },
-          "source_kind": "agency",
-          "source_publisher": "北海道神社庁",
-          "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "札幌市中央区宮ケ丘474番地",
-      "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "0678dd58-874d-5b34-953d-cd3edd08d000",
-      "expected_source_hash": "9211bc766fd15113b5298a5ff296d8de2fa4c28094d1c266624243b4859efcbd",
-      "facility_id": "a3814b39-05e1-58dc-a6da-41f8fa18c7b4",
-      "listed_name": "北海道神宮",
-      "nta_result": "no unique active exact name/full-address corporate identity",
-      "prefecture": "北海道",
-      "prefecture_code": "01",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "北海道神宮",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T04:12:45.914509+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "775fe433035b7fd131640265f009f03c4609c9a322391de689314aa657bbc1bd",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E5%8C%97%E6%B5%B7%E9%81%93%E7%A5%9E%E5%AE%AE"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
       "additional_source_reviews": [
@@ -887890,149 +888670,6 @@
       "additional_source_reviews": [
         {
           "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "correction_problems": [
-            "no inspected reference explicitly identifies name and location",
-            "corrected full reading is not explicit in the inspected reference"
-          ],
-          "evidence_attempt": "kojiki_additional_articles_20261112_kagawa",
-          "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
-          "formal_main_title_match": true,
-          "numeric_both_present": false,
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "香川県高松市一宮町",
-            "checked_at": "2026-11-12T05:37:28.738265+00:00",
-            "fetched_at": "2026-11-12T05:31:35.636097+00:00",
-            "license_status": "unconfirmed",
-            "locator": "h1.article-title の主対象; div.article-body-inner冒頭の「田村神社（全文かな）は」; 同主対象の［住所］原行",
-            "name_raw": "田村神社",
-            "page_hash": "6b1974fb5b03171d1451c64591fc44e00339a33cda2984bb9ab10ec9643ddba9",
-            "reading_raw": "たむらじんじゃ",
-            "reading_scope": "full_name",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記",
-            "title": "田村神社　香川県高松市一宮町 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1019084700.html"
-          },
-          "result": "canonical_or_source_full_numeric_address_missing",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T14:33:45.555649+00:00",
-          "evidence_attempt": "kagawa_recorded_native_profiles_first_hundred_formal_reading_followup_20261112",
-          "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
-          "observation": "社名・鎮座地・神社コードを確認。独立した社名かな欄・社名直後の全文かな括弧・rubyを点検した範囲では読みを確認できず保留維持。祭神・字名・別施設の読みを流用しない。",
-          "reference": {
-            "address_raw": "高松市一宮町286番地",
-            "agency_code_raw": "9010",
-            "canonical_index_reference": {
-              "fetched_at": "2026-11-08T14:32:46.993337+00:00",
-              "locator": "li.c-entries__item a[href=\"https://kagawakenjinjacho.or.jp/shrine/%e7%94%b0%e6%9d%91%e7%a5%9e%e7%a4%be/\"]",
-              "native_href": "https://kagawakenjinjacho.or.jp/shrine/%e7%94%b0%e6%9d%91%e7%a5%9e%e7%a4%be/",
-              "page_hash": "d4661cacd498ddba1e398abe39d2d7972b96930f47b4714cfcedb91dcbcdda44",
-              "url": "https://kagawakenjinjacho.or.jp/shrine/page/16/"
-            },
-            "fetched_at": "2026-11-12T14:31:16.789958+00:00",
-            "formal_name_literal_kana_pairs": [],
-            "locator": "h1.c-entry__title、div.p-entry-content の p.shrine_name・p.location・p.shrine_code・p.url。庁所在地のサイドバーと電話/FAXを分離。",
-            "name_raw": "田村神社",
-            "page_hash": "8d3e0eec1cd24a8a0c07a2f8d0d62b60b54d0f2f2082701d669b917f101f095b",
-            "ruby_reading_observed": false,
-            "scope": "原一覧の保存済み実詳細リンクを初回点検。元一覧全本文の再取得差分を確認した意味ではない。",
-            "source_kind": "agency",
-            "source_publisher": "香川県神社庁",
-            "typed_formal_name_reading_fields": [],
-            "url": "https://kagawakenjinjacho.or.jp/shrine/%e7%94%b0%e6%9d%91%e7%a5%9e%e7%a4%be/",
-            "website_links": [
-              {
-                "href_raw": "https://tamurajinja.com/",
-                "label": "https://tamurajinja.com/",
-                "url": "https://tamurajinja.com/"
-              }
-            ]
-          },
-          "source_kind": "agency",
-          "source_publisher": "香川県神社庁",
-          "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T14:44:47.162772+00:00",
-          "dataset_urls": [
-            "https://opendata.takamatsu-fact.com/aed_location/data.csv",
-            "https://opendata.takamatsu-fact.com/tourist_facilities/data.csv",
-            "https://opendata.takamatsu-fact.com/folklore_facility/data.csv",
-            "https://opendata.takamatsu-fact.com/evacuation_space/data.csv",
-            "https://opendata.takamatsu-fact.com/tsunami_evacuation_building/data.csv",
-            "https://opendata.takamatsu-fact.com/cultural_property/data.csv"
-          ],
-          "evidence_attempt": "takamatsu_six_city_open_csv_against_kagawa_pending_20261112",
-          "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
-          "observation": "高松市独自の公開6CSV995行のname欄を原名と幅・空白の比較で照合し一致なし。田村神社古神宝類・神社の社叢・御神木等の文化財複合名とそのfullNameInKanaから、施設名の読みを切り出さない。県の取得停止ポータルのコピーを利用せず、市公式実案内の独立公開表を使用。市全施設・全資料の調査完了ではない。",
-          "source_kind": "municipal_open_data",
-          "source_publisher": "高松市",
-          "status": "no_exact_name_in_six_inspected_city_open_tables"
-        },
-        {
-          "adopted": false,
-          "catalog_reference": {
-            "fetched_at": "2026-11-12T14:39:46.424489+00:00",
-            "page_hash": "36d8e37766dd5179fe865ca62536c3a7e3afcf4f6ea0954929bc02087bf0a050",
-            "url": "https://www.city.takamatsu.kagawa.jp/kurashi/shinotorikumi/opendata/takamatsu/index.html"
-          },
-          "checked_at": "2026-11-13T02:09:54.815826+00:00",
-          "current_municipal_catalogue_scope": "高松市",
-          "evidence_attempt": "kagawa_all_17_municipal_catalogues_nine_new_local_tables_602_pending_20261113",
-          "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
-          "municipality_raw": "高松市",
-          "observation": "既報の6市独自CSV995実行を現保留602と照合した記録を継承。今回再取得や新規表照合へ加算しない。",
-          "observed_rows": [],
-          "source_kind": "municipal_open_data",
-          "source_publisher": "香川県内17市町（現市町範囲）・デジタル庁",
-          "status": "previous_municipal_tables_compared"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "高松市一宮町286番地",
-      "agency_listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/16/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "21aa5e11-df10-5df6-8916-c509b03cf22b",
-      "expected_source_hash": "b3b99c36eee66cdab69046eaf9f5f70a418d0443cb2a942297e7f4e3d9ef4b53",
-      "facility_id": "00688bed-5c39-570d-982b-16840f98d1ad",
-      "listed_name": "田村神社",
-      "nta_result": "no unique active exact name/full-address corporate identity",
-      "prefecture": "香川県",
-      "prefecture_code": "37",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "田村神社",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T05:21:40.550343+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "78456cdcea63874f42999177f0116e4f0db249a017667d57f3bbb0d8177fd76d",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E7%94%B0%E6%9D%91%E7%A5%9E%E7%A4%BE_(%E9%AB%98%E6%9D%BE%E5%B8%82)"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
           "checked_at": "2026-11-12T08:06:12.889473+00:00",
           "entry_reason": "missing agency reading",
           "entry_status": "pending",
@@ -1235064,7 +1235701,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10530,
+    "retained_unresolved_entries": 10528,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1238166,11 +1238803,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10331,
+      "insufficient_evidence_in_inspected_sources": 10329,
       "investigation_incomplete": 0,
       "judgment_required": 199
     },
-    "distinct_surfaces": 4223,
-    "unfinished_entries": 10530
+    "distinct_surfaces": 4222,
+    "unfinished_entries": 10528
   }
 }
