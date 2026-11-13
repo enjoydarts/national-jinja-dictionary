@@ -4,7 +4,7 @@
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "a013294ba32fdf4cd13cb0b4476f2bed40bee8d2898700ced078d3363f4da07f",
-    "reviews.json": "28456d509d5eadaab51c997152d457ff925a43034a684dd0518ff38a5b4ff4e8",
+    "reviews.json": "8e187faf1d7badd3c651ad4ad7d5b986620043edae2f83a37e4748b011915bdb",
     "source_aliases.json": "6a40c602e60500e413cf11c75a6843a97e1918f15e768d8a849911ab7bc17ffa"
   },
   "category_labels": {
@@ -21099,19 +21099,29 @@
         "retained_pending_entries": 10570,
         "scope": "京都残19自治体465保留・香川全602保留・長崎全977保留の入口/公開表の到達範囲を記録。熊本は既報325と今回未点検234の所定欄を合わせ現保留559の実詳細リンク点検が一巡。表照合/既調査/入口のみ/停止/公式性未確認を区別し、全国全件の読み・同一性解決又は全資料精査完了とはしない。",
         "source_review_observations": 1804
+      },
+      {
+        "checked_at": "2026-11-13T02:34:16.810766+00:00",
+        "entry_ids": [
+          "56c2289a-9e27-53b2-b672-1554bd969332"
+        ],
+        "inspected_targets": 1,
+        "new_verified_entries": 0,
+        "retained_pending_entries": 1,
+        "scope": "熱田神社の原索引1欄・実リンク先の詳細1頁、宮城月次83,467行と全国日次8組19,178行。全国保留の解消完了ではない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T02:34:16.810766+00:00",
+      "checked_at": "2026-11-13T02:40:45.240795+00:00",
       "entry_ids": [
         "56c2289a-9e27-53b2-b672-1554bd969332"
       ],
       "inspected_targets": 1,
-      "new_verified_entries": 0,
-      "retained_pending_entries": 1,
-      "scope": "熱田神社の原索引1欄・実リンク先の詳細1頁、宮城月次83,467行と全国日次8組19,178行。全国保留の解消完了ではない。"
+      "new_verified_entries": 1,
+      "retained_pending_entries": 0,
+      "scope": "熱田神社の原索引・実リンク先詳細の正式名/全文かな/現在住所/表記変更注記を個別審査。国税庁宮城月次83,467行と全国日次8組19,178行の同名・全数字地番・全文かなを照合。原住所CRLF・注記・名称・読み・ID/hashを保持。"
     },
-    "remaining_unfinished_entries": 10570,
+    "remaining_unfinished_entries": 10569,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -21217,6 +21227,7 @@
       "52abce05-002f-5c95-8e50-821f5e91bc3d",
       "5587d53f-8e41-553f-8bc5-d66fa5381052",
       "56bd7d1d-7ece-5768-94db-265462a74171",
+      "56c2289a-9e27-53b2-b672-1554bd969332",
       "56da2b81-4a61-5ea4-bed3-2e675159dd8c",
       "573618fb-7166-52e0-9d78-5b4d412c319b",
       "590c2df0-b32e-5406-b8fd-85694fb122ba",
@@ -21415,7 +21426,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T02:34:16.810766+00:00",
+  "computed_at": "2026-11-13T02:40:45.240795+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -236960,6 +236971,210 @@
       "scope": "熱田神社の原索引1欄・実リンク先の詳細1頁、宮城月次83,467行と全国日次8組19,178行。全国保留の解消完了ではない。",
       "stop_scope": "実索引の掲載hrefの詳細まで。画像・地図・別経路の取得なし。取得本文・連絡先・由緒の転載なし。",
       "target_entries": 1
+    },
+    {
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T04:51:17.196108+00:00",
+              "daily_as_of": "20261111",
+              "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+              "evidence_attempt": "nta_manual_judgment_review_20261112",
+              "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
+              "matched_active_corporate_numbers": [],
+              "monthly_snapshot": "20261030",
+              "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
+              "result": "no_unique_active_exact_name_full_address_identity",
+              "source_kind": "government_corporate_register",
+              "source_publisher": "国税庁",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-remainder",
+              "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
+              "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
+              "related_actual_hrefs": [],
+              "result": "no_related_label_in_inspected_indexes",
+              "source_kind": "article_index",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "bounded_article_index_scope_recorded"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T01:48:47.239909+00:00",
+              "evidence_attempt": "miyagi_two_latest_prefecture_register_bounded_primary_review_20261113",
+              "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
+              "name_raw": "熱田神社",
+              "observation": "県名簿18頁は「石巻市湊西三丁目4-1」。原神社庁の住所第1行「湊西3-4-1」の数字地番には対応するが、原には改行後の住居表示変更注記があり、県名簿のみでは原注記の編集判断や変更前後対応を確定しない。正式名の全文かな欄・ルビなし。",
+              "observed_address_raw": "石巻市湊西三丁目4-1",
+              "original_address": "宮城県石巻市湊西3-4-1\r\n※東日本大震災復興事業区画整理に伴い、令和3年11月27日に当住所へ表記変更となりました。",
+              "pdf_page": 18,
+              "reference_url": "https://www.pref.miyagi.jp/documents/23428/r08syuukyoumeibo_0002.pdf",
+              "remaining_requirement": "同名称・所在地の全文かな及び原住所差/原注記の取り扱いに関する個別根拠。既存判断を保持。",
+              "source_kind": "government_reference",
+              "source_publisher": "記録した実資料の発行者",
+              "status": "register_inspected_name_address_or_annotation_still_requires_review"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:34:16.810766+00:00",
+              "corporate_number": "1370305000244",
+              "evidence_attempt": "miyagi_atsuta_native_detail_and_nta_annotation_review_20261113",
+              "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
+              "name_raw": "熱田神社",
+              "observation": "神社庁詳細にも全文かなと同じ現在地番・表記変更注記を確認。国税庁月次の同名1法人は同一の数字地番と全文かなを掲載し、日次の対象法人番号・NFKC名称・宗教法人接頭辞付き名称のイベントは0件。旧住所や移転は推定しない。県名簿の事務所所在地だけから鎮座地を割り当てていない。",
+              "observed_registered_address_raw": "宮城県石巻市湊西３丁目４番地１",
+              "observed_registered_reading_raw": "アツタジンジャ",
+              "original_address": "宮城県石巻市湊西3-4-1\r\n※東日本大震災復興事業区画整理に伴い、令和3年11月27日に当住所へ表記変更となりました。",
+              "page_hash": "5dcfbedf23a72ca4fdcf5a7546cc1dabf211e10fc95cd0b738eb9c2608a5f707",
+              "reading_raw": "あつたじんじゃ",
+              "reference_url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310010073&chinzachi=&jinja_name=&jinja_kana=&page=3&per_page=15",
+              "remaining_requirement": "原CRLF住所・注記・source_hashを保持し、実掲載欄と注記を結び付けた個別のsource_review検証・適用処理及び否定ケースの試験。現行の数字地番改行専用審査は注記を受理しないため保留を維持。",
+              "source_kind": "agency",
+              "source_publisher": "宮城県神社庁",
+              "status": "explicit_current_address_note_and_independent_full_kana_confirmed_pending_review_support"
+            }
+          ],
+          "address": "宮城県石巻市湊西3-4-1\r\n※東日本大震災復興事業区画整理に伴い、令和3年11月27日に当住所へ表記変更となりました。",
+          "agency_listing_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=3",
+          "category": "judgment_required",
+          "entry_id": "56c2289a-9e27-53b2-b672-1554bd969332",
+          "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
+          "facility_id": "a8be3e50-5a26-5cf3-ba3e-3acde66b49be",
+          "listed_name": "熱田神社",
+          "nta_result": "not checked for current source snapshot",
+          "prefecture": "宮城県",
+          "prefecture_code": "04",
+          "reading_raw": "あつたじんじゃ",
+          "reason": "multiple address lines; facility identity requires review",
+          "source_assessment": {
+            "assessment_group": "address_with_relocation_annotation",
+            "checked_at": "2026-11-11T10:14:44.472519+00:00",
+            "disposition": "judgment_required",
+            "new_wikipedia_or_corporate_lookup": false,
+            "observations": [
+              "鎮座地欄に宮城県石巻市湊西3-4-1と住所変更の説明を併記。",
+              "2行目は別施設の住所ではなく、令和3年11月27日の表記変更注記。掲載読みはあつたじんじゃ。"
+            ],
+            "observed_fields": {},
+            "references": [
+              {
+                "checked_at": "2026-11-11T10:14:44.472519+00:00",
+                "fetched_at": "2026-11-08T14:28:17.742676+00:00",
+                "locator": ".simple-list-item[7]",
+                "page_hash": "9f8e24b9e9304ea3c6bd73fc9f47aa3afb3fc39429c105cf6cdaa3ef78581a42",
+                "request_method": "GET",
+                "source_kind": "agency",
+                "url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=3"
+              }
+            ],
+            "remaining_requirement": "住所と変更注記を分離し、原文と変更根拠を保持するデータ処理の確認。",
+            "scope": "Named agency snapshot and explicitly recorded linked materials only. Earlier Wikipedia/corporate search outcomes remain separately dated. No exhaustive internet or current site-wide absence claim.",
+            "status": "bounded_source_review_completed"
+          },
+          "status": "unfinished",
+          "surface": "熱田神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "miyagi_atsuta_current_address_note_original_kana_adopted_20261113",
+      "checked_at": "2026-11-13T02:40:45.240795+00:00",
+      "entry_ids": [
+        "56c2289a-9e27-53b2-b672-1554bd969332"
+      ],
+      "inspected_targets": 1,
+      "manual_resolved_entry_ids": [
+        "56c2289a-9e27-53b2-b672-1554bd969332"
+      ],
+      "new_verified_entries": 1,
+      "observation": "あつたじんじゃは神社庁の既存全文読みを選択し、国税庁のアツタジンジャとも一致。旧住所・移転・推定読み・他施設からの流用なし。資料の取得済み最終日20261112と実際のIME取り込み未確認を明示。全国の保留解消は未完了。",
+      "registry_state_reconstruction": {
+        "active_matching_corporate_numbers": [
+          "1370305000244"
+        ],
+        "active_matching_full_address_count": 1,
+        "as_of": "20261112",
+        "daily_resources": [
+          {
+            "date": "20261102",
+            "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+            "file_id": "28508",
+            "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+            "rows": 2346,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261104",
+            "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+            "file_id": "28511",
+            "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+            "rows": 2156,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261105",
+            "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+            "file_id": "28514",
+            "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+            "rows": 2183,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261106",
+            "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+            "file_id": "28517",
+            "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+            "rows": 2617,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261109",
+            "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+            "file_id": "28520",
+            "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+            "rows": 2362,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261110",
+            "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+            "file_id": "28523",
+            "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+            "rows": 2642,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261111",
+            "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+            "file_id": "28526",
+            "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+            "rows": 2692,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261112",
+            "fetched_at": "2026-11-13T01:55:56.841451+00:00",
+            "file_id": "28529",
+            "page_hash": "896ee14905fdfcd8098dd4bdb87fdc9bd02655facaf056c3d5358b984a60c1b9",
+            "rows": 2180,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          }
+        ],
+        "daily_rows": 19178,
+        "matching_daily_events": 0,
+        "monthly_prefecture_rows": 83467,
+        "scope": "注記を除いた実掲載の現在住所第1行と比較。宮城月次全行の同名法人1件、全国日次8組全行に対象法人番号・名称・宗教法人接頭辞付き名称イベントなし。"
+      },
+      "retained_pending_entries": 0,
+      "scope": "熱田神社の原索引・実リンク先詳細の正式名/全文かな/現在住所/表記変更注記を個別審査。国税庁宮城月次83,467行と全国日次8組19,178行の同名・全数字地番・全文かなを照合。原住所CRLF・注記・名称・読み・ID/hashを保持。",
+      "source_kind": "source_bound_current_address_note_review",
+      "source_publisher": "宮城県神社庁・国税庁",
+      "status": "one_current_address_note_hold_resolved_original_kana_preserved"
     }
   ],
   "per_prefecture": {
@@ -236991,9 +237206,9 @@
       "categories": {
         "insufficient_evidence_in_inspected_sources": 0,
         "investigation_incomplete": 0,
-        "judgment_required": 2
+        "judgment_required": 1
       },
-      "unfinished_entries": 2
+      "unfinished_entries": 1
     },
     "05": {
       "categories": {
@@ -358981,113 +359196,6 @@
       "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
       "status": "unfinished",
       "surface": "羽黒神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T04:51:17.196108+00:00",
-          "daily_as_of": "20261111",
-          "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
-          "evidence_attempt": "nta_manual_judgment_review_20261112",
-          "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
-          "matched_active_corporate_numbers": [],
-          "monthly_snapshot": "20261030",
-          "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
-          "result": "no_unique_active_exact_name_full_address_identity",
-          "source_kind": "government_corporate_register",
-          "source_publisher": "国税庁",
-          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-remainder",
-          "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
-          "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
-          "related_actual_hrefs": [],
-          "result": "no_related_label_in_inspected_indexes",
-          "source_kind": "article_index",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "bounded_article_index_scope_recorded"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T01:48:47.239909+00:00",
-          "evidence_attempt": "miyagi_two_latest_prefecture_register_bounded_primary_review_20261113",
-          "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
-          "name_raw": "熱田神社",
-          "observation": "県名簿18頁は「石巻市湊西三丁目4-1」。原神社庁の住所第1行「湊西3-4-1」の数字地番には対応するが、原には改行後の住居表示変更注記があり、県名簿のみでは原注記の編集判断や変更前後対応を確定しない。正式名の全文かな欄・ルビなし。",
-          "observed_address_raw": "石巻市湊西三丁目4-1",
-          "original_address": "宮城県石巻市湊西3-4-1\r\n※東日本大震災復興事業区画整理に伴い、令和3年11月27日に当住所へ表記変更となりました。",
-          "pdf_page": 18,
-          "reference_url": "https://www.pref.miyagi.jp/documents/23428/r08syuukyoumeibo_0002.pdf",
-          "remaining_requirement": "同名称・所在地の全文かな及び原住所差/原注記の取り扱いに関する個別根拠。既存判断を保持。",
-          "source_kind": "government_reference",
-          "source_publisher": "記録した実資料の発行者",
-          "status": "register_inspected_name_address_or_annotation_still_requires_review"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:34:16.810766+00:00",
-          "corporate_number": "1370305000244",
-          "evidence_attempt": "miyagi_atsuta_native_detail_and_nta_annotation_review_20261113",
-          "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
-          "name_raw": "熱田神社",
-          "observation": "神社庁詳細にも全文かなと同じ現在地番・表記変更注記を確認。国税庁月次の同名1法人は同一の数字地番と全文かなを掲載し、日次の対象法人番号・NFKC名称・宗教法人接頭辞付き名称のイベントは0件。旧住所や移転は推定しない。県名簿の事務所所在地だけから鎮座地を割り当てていない。",
-          "observed_registered_address_raw": "宮城県石巻市湊西３丁目４番地１",
-          "observed_registered_reading_raw": "アツタジンジャ",
-          "original_address": "宮城県石巻市湊西3-4-1\r\n※東日本大震災復興事業区画整理に伴い、令和3年11月27日に当住所へ表記変更となりました。",
-          "page_hash": "5dcfbedf23a72ca4fdcf5a7546cc1dabf211e10fc95cd0b738eb9c2608a5f707",
-          "reading_raw": "あつたじんじゃ",
-          "reference_url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310010073&chinzachi=&jinja_name=&jinja_kana=&page=3&per_page=15",
-          "remaining_requirement": "原CRLF住所・注記・source_hashを保持し、実掲載欄と注記を結び付けた個別のsource_review検証・適用処理及び否定ケースの試験。現行の数字地番改行専用審査は注記を受理しないため保留を維持。",
-          "source_kind": "agency",
-          "source_publisher": "宮城県神社庁",
-          "status": "explicit_current_address_note_and_independent_full_kana_confirmed_pending_review_support"
-        }
-      ],
-      "address": "宮城県石巻市湊西3-4-1\r\n※東日本大震災復興事業区画整理に伴い、令和3年11月27日に当住所へ表記変更となりました。",
-      "agency_listing_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=3",
-      "category": "judgment_required",
-      "entry_id": "56c2289a-9e27-53b2-b672-1554bd969332",
-      "expected_source_hash": "209e4344b7ab979c375c1aff188dad51e85618014dbc2b0c6fc13ac657bf4626",
-      "facility_id": "a8be3e50-5a26-5cf3-ba3e-3acde66b49be",
-      "listed_name": "熱田神社",
-      "nta_result": "not checked for current source snapshot",
-      "prefecture": "宮城県",
-      "prefecture_code": "04",
-      "reading_raw": "あつたじんじゃ",
-      "reason": "multiple address lines; facility identity requires review",
-      "source_assessment": {
-        "assessment_group": "address_with_relocation_annotation",
-        "checked_at": "2026-11-11T10:14:44.472519+00:00",
-        "disposition": "judgment_required",
-        "new_wikipedia_or_corporate_lookup": false,
-        "observations": [
-          "鎮座地欄に宮城県石巻市湊西3-4-1と住所変更の説明を併記。",
-          "2行目は別施設の住所ではなく、令和3年11月27日の表記変更注記。掲載読みはあつたじんじゃ。"
-        ],
-        "observed_fields": {},
-        "references": [
-          {
-            "checked_at": "2026-11-11T10:14:44.472519+00:00",
-            "fetched_at": "2026-11-08T14:28:17.742676+00:00",
-            "locator": ".simple-list-item[7]",
-            "page_hash": "9f8e24b9e9304ea3c6bd73fc9f47aa3afb3fc39429c105cf6cdaa3ef78581a42",
-            "request_method": "GET",
-            "source_kind": "agency",
-            "url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=3"
-          }
-        ],
-        "remaining_requirement": "住所と変更注記を分離し、原文と変更根拠を保持するデータ処理の確認。",
-        "scope": "Named agency snapshot and explicitly recorded linked materials only. Earlier Wikipedia/corporate search outcomes remain separately dated. No exhaustive internet or current site-wide absence claim.",
-        "status": "bounded_source_review_completed"
-      },
-      "status": "unfinished",
-      "surface": "熱田神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
@@ -1031326,7 +1031434,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10570,
+    "retained_unresolved_entries": 10569,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1034430,9 +1034538,9 @@
     "categories": {
       "insufficient_evidence_in_inspected_sources": 10365,
       "investigation_incomplete": 0,
-      "judgment_required": 205
+      "judgment_required": 204
     },
     "distinct_surfaces": 4241,
-    "unfinished_entries": 10570
+    "unfinished_entries": 10569
   }
 }
