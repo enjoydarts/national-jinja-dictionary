@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "c9897da7156093e59d3cc3c4b61a3ff685ddc1d07d486a2b6e7ad5f4edfeca5f",
+    "corrections.json": "7c1a50280ac8ecdbeec0f09b77ef3b22a28bdf473b83d836356b4bacab5004ea",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -26578,21 +26578,32 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10311,
         "scope": "独立文化財資料集の固定commitから北海道/佐賀計919行を候補探索。社名完全一致/独立読み欄なし、玄海町元資料は利用条件で停止し採用0。"
+      },
+      {
+        "checked_at": "2026-11-13T15:10:27.344736+00:00",
+        "entry_ids": [
+          "b6b9ac34-35c3-5f93-9256-da951c10aa43"
+        ],
+        "evidence_attempt": "shikabe_postal_town_3971_confirmed_gnome_no_printed_postal_code_hold_20261114",
+        "inspected_targets": 1,
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10311,
+        "retained_pending_targets": 1,
+        "scope": "北海道鹿部稲荷神社1登録の字省略に対する郵便番号町域の追加調査。日本郵便北海道CSV8201行の取得は神社8201件の読み調査ではなく、神社全文かなはGnome既取得本文の範囲のみ。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T15:10:27.344736+00:00",
+      "checked_at": "2026-11-13T15:17:59.353407+00:00",
       "entry_ids": [
-        "b6b9ac34-35c3-5f93-9256-da951c10aa43"
+        "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf"
       ],
-      "evidence_attempt": "shikabe_postal_town_3971_confirmed_gnome_no_printed_postal_code_hold_20261114",
+      "evidence_attempt": "hakobura_2024_same_event_full_kana_nanaehama_venue_original_address_20261114",
       "inspected_targets": 1,
-      "new_verified_entries": 0,
-      "retained_pending_entries": 10311,
-      "retained_pending_targets": 1,
-      "scope": "北海道鹿部稲荷神社1登録の字省略に対する郵便番号町域の追加調査。日本郵便北海道CSV8201行の取得は神社8201件の読み調査ではなく、神社全文かなはGnome既取得本文の範囲のみ。"
+      "new_verified_entries": 1,
+      "retained_pending_entries": 10310,
+      "scope": "函館市の同一イベント本文と同名開催場所の全住所で七重浜海津見神社1読みを補完。未取得の企画チラシは採用根拠にしない。"
     },
-    "remaining_unfinished_entries": 10311,
+    "remaining_unfinished_entries": 10310,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -26659,6 +26670,7 @@
       "198c082d-be62-54bf-8630-717b0a1e7d28",
       "19e5e9f8-ab59-5c9e-b0b1-14807ea00f2a",
       "1a9b6ae4-af33-58c7-bbf0-1baf3529ebf5",
+      "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf",
       "1be37b79-9067-522b-bf51-4a649d363bea",
       "1c21f2d1-cc9a-56f6-8f82-02c731d0dec9",
       "1c9ee131-9143-5ce9-82aa-dedca638892b",
@@ -27155,7 +27167,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T15:10:27.344736+00:00",
+  "computed_at": "2026-11-13T15:17:59.353407+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -405695,16 +405707,204 @@
       "retained_pending_targets": 1,
       "scope": "北海道鹿部稲荷神社1登録の字省略に対する郵便番号町域の追加調査。日本郵便北海道CSV8201行の取得は神社8201件の読み調査ではなく、神社全文かなはGnome既取得本文の範囲のみ。",
       "source_kind": "postal_town_evidence_and_secondary_reference_review"
+    },
+    {
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T10:22:32.079302+00:00",
+              "evidence_attempt": "hokuto_eniwa_tourism_current_csv_20261112",
+              "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
+              "observation": "この自治体観光施設CSVの名称欄に原神社名の一致行がなく、神社自体の掲載行もないため読みを補完しない。市内の全神社・全公的資料の情報不存在を意味せず、原施設ID・全住所・既存判断を保持。",
+              "reference": {
+                "encoding": "cp932",
+                "fetched_at": "2026-11-12T10:18:45.982272+00:00",
+                "license": "CC-BY-4.0",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
+                "page_hash": "d2d3b76c3a3cc3bd358350600dc012ee045065c2d987eb534b5ae21923cd1f17",
+                "source_kind": "municipal_open_data",
+                "source_publisher": "北斗市",
+                "url": "https://www.harp.lg.jp/opendata/dataset/1657/resource/9136/012360_torurism_20260826.csv"
+              },
+              "source_kind": "municipal_open_data",
+              "source_publisher": "北斗市",
+              "status": "bounded_tourism_csv_no_matching_shrine"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T14:03:04.523914+00:00",
+              "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
+              "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
+              "observation": "社名見出しと全所在地は対応するが、独立した社名かな欄・社名直後の全文かな括弧・ルビは点検範囲にない。祭神等のかなから読みを補作せず保留。氏名・個人連絡先は記録しない。",
+              "reference": {
+                "address_raw": "北斗市七重浜7丁目5番1号",
+                "canonical_index_observation": {
+                  "fetched_at": "2026-11-08T14:33:46.673764+00:00",
+                  "listing_url": "https://hokkaidojinjacho.jp/jinja-area/dounan/page/4/",
+                  "native_href": "https://hokkaidojinjacho.jp/%e4%b8%83%e9%87%8d%e6%b5%9c%e6%b5%b7%e6%b4%a5%e8%a6%8b%e7%a5%9e%e7%a4%be/",
+                  "page_hash": "ce1059f20a29ca9c322d6f1a08b780b42f5fe82d3127ccae5d5c1dd67800b2b1",
+                  "source_locator": ".lineup .block[15]"
+                },
+                "fetched_at": "2026-11-12T13:50:29.787226+00:00",
+                "locator": "div.jinja-area-main の社名h3と dl の所在地dd内 p.address。郵便番号・電話・FAX・フッターの庁事務所住所は含めない。",
+                "name_raw": "七重浜海津見神社",
+                "observed_formal_name_kana_pairs": [],
+                "page_hash": "089a1cc684a7f3978eecfdd7610cc07c968261c489957abcc3b1c5c575c9f4bf",
+                "ruby_reading_observed": false,
+                "scope": "記録済み一覧実リンクの詳細点検。元一覧全本文の再取得差分を確認した意味ではない。",
+                "source_kind": "agency",
+                "source_publisher": "北海道神社庁",
+                "typed_reading_labels": [],
+                "url": "https://hokkaidojinjacho.jp/%e4%b8%83%e9%87%8d%e6%b5%9c%e6%b5%b7%e6%b4%a5%e8%a6%8b%e7%a5%9e%e7%a4%be/",
+                "website_links": []
+              },
+              "source_kind": "agency",
+              "source_publisher": "北海道神社庁",
+              "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T05:06:20.088457+00:00",
+              "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
+              "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
+              "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
+              "observations": [],
+              "reference_urls": [
+                "https://www.harp.lg.jp/opendata/dataset/1655/resource/9138/012360_public_facility_20260826.csv",
+                "https://www.harp.lg.jp/opendata/dataset/1655/resource/3697/012360_public_facility.csv"
+              ],
+              "source_kind": "municipal_open_data",
+              "source_publisher": "北斗市",
+              "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T15:17:59.353407+00:00",
+              "evidence_attempt": "hakobura_2024_same_event_full_kana_nanaehama_venue_original_address_20261114",
+              "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
+              "observation": "北斗市の明示社名全文かなと、同ページ第3開催場所の同名・全所在地を照合。別ページ・問合せ先・他開催場所から住所を移さず、原全住所/原名/空の原かな/ID/hash/旧判断を保持。",
+              "reference": {
+                "address_raw": "北斗市七重浜7丁目5-1",
+                "bytes": 89157,
+                "checked_at": "2026-11-13T15:17:59.353407+00:00",
+                "event_temporal_scope": "2024年6月30日～7月31日の終了済みイベント紹介。2026年現在の祭礼日程・御朱印提供を保証する資料として用いない。",
+                "excerpt": "七重浜海津見神社（ななえはまわたつみじんじゃ） / 開催場所=七重浜海津見神社 / 住所=北斗市七重浜7丁目5-1",
+                "excerpt_processing": "同一ページ本文の明示全文かなと、同じ固有社名の第3開催場所カードの名称・全住所だけを抜粋し区切りを付した。本文全体を連続引用したものではない。",
+                "fetched_at": "2026-11-13T15:16:03.128732+00:00",
+                "locator": ".Sec-eventsshow-contentsの独立全文かな括弧 / #tab-cmn .tab-cmn-contents 第3開催場所の開催場所・住所行",
+                "name_raw": "七重浜海津見神社",
+                "operator_reference": {
+                  "fetched_at": "2026-11-13T15:14:43.233148+00:00",
+                  "page_hash": "9f01bc6abb62c0e442d8474bc230e3d59ee7c2cfc133d54e8ae41c41cafc6f0c",
+                  "url": "https://www.hakobura.jp/about"
+                },
+                "page_hash": "dcbc94c2b4747c5cfa2f0fc103a40a85b02cd5d71a8675363a48988f4c1103d9",
+                "reading_raw": "ななえはまわたつみじんじゃ",
+                "reading_scope": "full_name",
+                "rights_scope": "法定の私的複製・引用等を除く無許可複製・転載の制限を確認。公開を包括転載許諾とはしない。最小の名称・全文かな・全所在地と根拠位置のみ保存し、説明全文・写真・日程一覧・地図・連絡先・個人情報は収録しない。",
+                "source_kind": "government",
+                "source_publisher": "函館市観光部観光推進課（函館市公式観光情報はこぶら）",
+                "source_reading_context_raw": "北斗市の七重浜海津見神社（ななえはまわたつみじんじゃ）",
+                "source_venue_address_raw": "北斗市七重浜7丁目5-1",
+                "source_venue_name_raw": "七重浜海津見神社",
+                "terms_reference": {
+                  "fetched_at": "2026-11-13T15:14:45.387159+00:00",
+                  "page_hash": "494397fc1533f302debc5278a1967a34b764526087a6907de7002c3eedf12f35",
+                  "url": "https://www.hakobura.jp/terms"
+                },
+                "title": "夏詣道南神社巡り | イベント一覧 | はこぶら（2024年紹介）",
+                "url": "https://www.hakobura.jp/events/86",
+                "venue_card_number": 3,
+                "venue_cards": 3
+              },
+              "status": "same_event_full_name_kana_and_named_venue_original_full_address_adopted"
+            }
+          ],
+          "address": "北斗市七重浜7丁目5番1号",
+          "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/dounan/page/4/",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf",
+          "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
+          "facility_id": "8fc3fd33-0487-5ddd-ad33-0c66fe125e50",
+          "listed_name": "七重浜海津見神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "北海道",
+          "prefecture_code": "01",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "七重浜海津見神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "hakobura_2024_same_event_full_kana_nanaehama_venue_original_address_20261114",
+      "authority": "運営説明本文が函館市公式観光情報サイトと市観光部観光推進課の設置・運営、民間受託者を明記。受託者所在地や問合せ先の湯倉神社を対象施設所在地へ流用しない。",
+      "checked_at": "2026-11-13T15:17:59.353407+00:00",
+      "image_acquisition_stop": {
+        "attempted_image_url": "https://static.wixstatic.com/media/40574d_0a82e6204de04725b8fb8f1d20106c7d~mv2.jpg/v1/crop/x_0,y_0,w_1000,h_1402/fill/w_1000,h_1393,al_c,q_85,enc_avif,quality_auto/%E3%83%81%E3%83%A9%E3%82%B7%E8%A1%A8%E9%9D%A2.jpg",
+        "observation": "企画公式HTMLの実srcset画像を通常取得しようとしたが、配信先のrobots確認が403で方針不明のため停止。画像自体へのHTTP403ではない。別URL/解像度/スクリーンショット/検索キャッシュ経由で再取得せず、印刷読みや所在地を推定しない。",
+        "resource_fetch_performed": false,
+        "retrieved_image_files": 0,
+        "source_image_alt": "チラシ表面.jpg",
+        "source_page": "https://dounannatsumoude.wixsite.com/r5dn",
+        "source_page_hash": "f89004dba6ab5f5a14e8941ccf4699cd524dc330f810201cb9fe087a85b24436",
+        "status": "robots_check_status_unknown_403"
+      },
+      "inspected_targets": 1,
+      "manual_resolved_entry_ids": [
+        "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf"
+      ],
+      "new_verified_entries": 1,
+      "observation": "七重浜海津見神社のななえはまわたつみじんじゃと、同じ文書の北斗市七重浜7丁目5-1が原登録と対応。終了済み2024年イベントの読み/所在地資料として保存し、2026年現行イベント情報とはしない。",
+      "privacy_and_storage": "HTML/画像/キャッシュ/個人名/連絡先・事務所住所・行事の説明全文を収録しない。公開URL/hash・施設の名称/全文かな/全住所・対象位置と判断だけを保存。",
+      "resources": {
+        "about": {
+          "fetched_at": "2026-11-13T15:14:43.233148+00:00",
+          "page_hash": "9f01bc6abb62c0e442d8474bc230e3d59ee7c2cfc133d54e8ae41c41cafc6f0c",
+          "url": "https://www.hakobura.jp/about"
+        },
+        "event2024": {
+          "fetched_at": "2026-11-13T15:16:03.128732+00:00",
+          "page_hash": "dcbc94c2b4747c5cfa2f0fc103a40a85b02cd5d71a8675363a48988f4c1103d9",
+          "url": "https://www.hakobura.jp/events/86"
+        },
+        "event2025": {
+          "fetched_at": "2026-11-13T15:14:47.841665+00:00",
+          "page_hash": "170286a568cd64bebf2102eea79fdb3e2693d9abf0cbc4e950b4d3209e1277b3",
+          "url": "https://www.hakobura.jp/events/431"
+        },
+        "project": {
+          "fetched_at": "2026-11-13T15:14:50.419461+00:00",
+          "page_hash": "f89004dba6ab5f5a14e8941ccf4699cd524dc330f810201cb9fe087a85b24436",
+          "url": "https://dounannatsumoude.wixsite.com/r5dn"
+        },
+        "terms": {
+          "fetched_at": "2026-11-13T15:14:45.387159+00:00",
+          "page_hash": "494397fc1533f302debc5278a1967a34b764526087a6907de7002c3eedf12f35",
+          "url": "https://www.hakobura.jp/terms"
+        }
+      },
+      "scope": "函館市はこぶら2024年イベント本文の1明示全文かなと第3開催場所の原全所在地を個別照合。9参加社全件・函館市/北海道全保留の読み確認ではない。"
     }
   ],
   "per_prefecture": {
     "01": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 412,
+        "insufficient_evidence_in_inspected_sources": 411,
         "investigation_incomplete": 0,
         "judgment_required": 1
       },
-      "unfinished_entries": 413
+      "unfinished_entries": 412
     },
     "02": {
       "categories": {
@@ -410725,100 +410925,6 @@
       "reason": "missing agency reading",
       "status": "unfinished",
       "surface": "美深神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T10:22:32.079302+00:00",
-          "evidence_attempt": "hokuto_eniwa_tourism_current_csv_20261112",
-          "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
-          "observation": "この自治体観光施設CSVの名称欄に原神社名の一致行がなく、神社自体の掲載行もないため読みを補完しない。市内の全神社・全公的資料の情報不存在を意味せず、原施設ID・全住所・既存判断を保持。",
-          "reference": {
-            "encoding": "cp932",
-            "fetched_at": "2026-11-12T10:18:45.982272+00:00",
-            "license": "CC-BY-4.0",
-            "license_url": "https://creativecommons.org/licenses/by/4.0/deed.ja",
-            "page_hash": "d2d3b76c3a3cc3bd358350600dc012ee045065c2d987eb534b5ae21923cd1f17",
-            "source_kind": "municipal_open_data",
-            "source_publisher": "北斗市",
-            "url": "https://www.harp.lg.jp/opendata/dataset/1657/resource/9136/012360_torurism_20260826.csv"
-          },
-          "source_kind": "municipal_open_data",
-          "source_publisher": "北斗市",
-          "status": "bounded_tourism_csv_no_matching_shrine"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T14:03:04.523914+00:00",
-          "evidence_attempt": "hokkaido_remaining_recorded_native_profiles_formal_reading_followup_20261112",
-          "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
-          "observation": "社名見出しと全所在地は対応するが、独立した社名かな欄・社名直後の全文かな括弧・ルビは点検範囲にない。祭神等のかなから読みを補作せず保留。氏名・個人連絡先は記録しない。",
-          "reference": {
-            "address_raw": "北斗市七重浜7丁目5番1号",
-            "canonical_index_observation": {
-              "fetched_at": "2026-11-08T14:33:46.673764+00:00",
-              "listing_url": "https://hokkaidojinjacho.jp/jinja-area/dounan/page/4/",
-              "native_href": "https://hokkaidojinjacho.jp/%e4%b8%83%e9%87%8d%e6%b5%9c%e6%b5%b7%e6%b4%a5%e8%a6%8b%e7%a5%9e%e7%a4%be/",
-              "page_hash": "ce1059f20a29ca9c322d6f1a08b780b42f5fe82d3127ccae5d5c1dd67800b2b1",
-              "source_locator": ".lineup .block[15]"
-            },
-            "fetched_at": "2026-11-12T13:50:29.787226+00:00",
-            "locator": "div.jinja-area-main の社名h3と dl の所在地dd内 p.address。郵便番号・電話・FAX・フッターの庁事務所住所は含めない。",
-            "name_raw": "七重浜海津見神社",
-            "observed_formal_name_kana_pairs": [],
-            "page_hash": "089a1cc684a7f3978eecfdd7610cc07c968261c489957abcc3b1c5c575c9f4bf",
-            "ruby_reading_observed": false,
-            "scope": "記録済み一覧実リンクの詳細点検。元一覧全本文の再取得差分を確認した意味ではない。",
-            "source_kind": "agency",
-            "source_publisher": "北海道神社庁",
-            "typed_reading_labels": [],
-            "url": "https://hokkaidojinjacho.jp/%e4%b8%83%e9%87%8d%e6%b5%9c%e6%b5%b7%e6%b4%a5%e8%a6%8b%e7%a5%9e%e7%a4%be/",
-            "website_links": []
-          },
-          "source_kind": "agency",
-          "source_publisher": "北海道神社庁",
-          "status": "native_profile_identity_matches_no_formal_name_kana_in_inspected_fields"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T05:06:20.088457+00:00",
-          "evidence_attempt": "hokkaido_three_municipalities_six_culture_tourism_public_catalogues_20261113",
-          "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
-          "observation": "選定公開表の名称・専用かな・所在地欄を限定照合。保留原名に対応する行はなく、別名の神社や地番のない行から読みを流用しない。市村全資料・全神社の点検完了とは扱わない。",
-          "observations": [],
-          "reference_urls": [
-            "https://www.harp.lg.jp/opendata/dataset/1655/resource/9138/012360_public_facility_20260826.csv",
-            "https://www.harp.lg.jp/opendata/dataset/1655/resource/3697/012360_public_facility.csv"
-          ],
-          "source_kind": "municipal_open_data",
-          "source_publisher": "北斗市",
-          "status": "selected_culture_tourism_public_tables_inspected_no_adoption"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "北斗市七重浜7丁目5番1号",
-      "agency_listing_url": "https://hokkaidojinjacho.jp/jinja-area/dounan/page/4/",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "1b96fb57-a7ac-5670-a6c1-1d66ff146fcf",
-      "expected_source_hash": "c4d2f8ffdbfb470a09af4caa827748ecc815890ed1c7510c39bb2ada1210cff9",
-      "facility_id": "8fc3fd33-0487-5ddd-ad33-0c66fe125e50",
-      "listed_name": "七重浜海津見神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "北海道",
-      "prefecture_code": "01",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "七重浜海津見神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
@@ -1371484,7 +1371590,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10311,
+    "retained_unresolved_entries": 10310,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1374586,11 +1374692,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10115,
+      "insufficient_evidence_in_inspected_sources": 10114,
       "investigation_incomplete": 0,
       "judgment_required": 196
     },
-    "distinct_surfaces": 4139,
-    "unfinished_entries": 10311
+    "distinct_surfaces": 4138,
+    "unfinished_entries": 10310
   }
 }
