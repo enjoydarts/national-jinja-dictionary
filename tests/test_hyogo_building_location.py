@@ -63,3 +63,21 @@ class HyogoBuildingLocationTest(unittest.TestCase):
  def test_invalid_reapplication_restores_original_empty_fields_and_blocks_validation(self):
   d,doc,s=fixture();out=apply_locations(d,doc);self.assertEqual(len(eligible(out)),1)
   f=out['facilities'][0];f['location_supplement']['building_identity_proof']['chronology'].pop();self.assertTrue(blocking_problems(out));doc['facilities'][f['id']]=copy.deepcopy(f['location_supplement']);bad=apply_locations(out,doc);self.assertEqual((bad['facilities'][0]['address'],bad['facilities'][0]['municipality']),('',''));self.assertFalse(eligible(bad))
+
+ def test_malformed_profile_reference_holds_and_validates_without_exception(self):
+  # A broken saved reference must not interrupt national overlay application.
+  for bad in (None,[],0,'bad'):
+   for phase in ('initial','validate','reapply'):
+    with self.subTest(value=bad,phase=phase):
+     d,doc,s=fixture();fid=d['facilities'][0]['id']
+     if phase=='initial':
+      s['reference']=bad;out=apply_locations(d,doc)
+     else:
+      out=apply_locations(d,doc)
+      if phase=='validate':
+       out['facilities'][0]['location_supplement']['reference']=bad
+       self.assertTrue(blocking_problems(out));continue
+      s['reference']=bad;out=apply_locations(out,doc)
+     self.assertFalse(eligible(out))
+     self.assertEqual((out['facilities'][0]['address'],out['facilities'][0]['municipality']),('',''))
+     self.assertEqual(out['facilities'][0]['address_raw'],'〒000-0000')

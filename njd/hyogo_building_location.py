@@ -126,6 +126,8 @@ def building_location_problems(s,f,source=None):
 
 def building_entry_problems(s,f,e):
     p=s.get('reference',{})
+    if not isinstance(p,dict):
+        return ['building location entry requires a structured profile reference']
     if (e.get('id')!=s.get('entry_id') or e.get('facility_id')!=f.get('id')
         or e.get('status') not in ('pending','verified') or e.get('reason') not in ('',REASON)
         or e.get('identity_review_required') or e.get('reading_source_kind')!='agency'
