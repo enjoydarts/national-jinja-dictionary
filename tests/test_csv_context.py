@@ -95,6 +95,29 @@ class CsvContextTest(unittest.TestCase):
                 self.assertEqual(out['entries'][0]['reason'],'Existing explicit exclusion')
                 self.assertEqual(eligible(out),[])
 
+    def test_mixed_references_cannot_clear_an_exclusion_or_bypass_the_context_scope(self):
+        for kind in ['excluded','surface']:
+            with self.subTest(kind=kind):
+                data,doc,ref=fixture()
+                ordinary=next(iter(correction(data,{'reading':'かくうじんじゃ'})['entries'].values()))['references'][0]
+                value=next(iter(doc['entries'].values()));value['references'].append(ordinary)
+                if kind=='excluded':data['entries'][0].update(status='excluded',reason='Existing explicit exclusion')
+                else:value['changes']['surface']='架空神社'
+                out=data
+                for _ in range(3):
+                    out=apply_corrections(out,doc)
+                    self.assertEqual(eligible(out),[])
+                    if kind=='excluded':
+                        self.assertEqual(out['entries'][0]['status'],'excluded')
+                        self.assertEqual(out['entries'][0]['reason'],'Existing explicit exclusion')
+
+    def test_mixed_references_cannot_hide_a_corrupt_csv_context(self):
+        data,doc,ref=fixture()
+        ordinary=next(iter(correction(data,{'reading':'かくうじんじゃ'})['entries'].values()))['references'][0]
+        next(iter(doc['entries'].values()))['references'].append(ordinary)
+        ref['csv_address_context']['page_hash']='c'*64
+        self.assertEqual(eligible(apply_corrections(data,doc)),[])
+
     def test_other_identity_holds_and_surface_changes_are_not_resolved(self):
         for kind in ['identity','facility','authority','surface']:
             data,doc,ref=fixture()

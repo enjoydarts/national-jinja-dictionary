@@ -289,10 +289,16 @@ def correction_problems(correction,facility,entry,source=None):
     refs=correction.get('references')
     if not isinstance(refs,list) or not refs:return problems+['missing inspected references']
     authority,official_problems=_official_reading_authority(correction,facility);problems.extend(official_problems)
+    csv_context_present=any(isinstance(r,dict) and 'csv_address_context' in r for r in refs)
+    if csv_context_present and (set(changes)!={'reading'} or entry.get('status')=='excluded'):
+        problems.append('CSV locality context only supports reading corrections of non-excluded entries')
     registry_present=any(isinstance(r,dict) and r.get('source_kind')=='government_corporate_register' for r in refs)
     name_supported='surface' not in changes;reading_supported='reading' not in changes;identity_supported=False
     for ref in refs:
         if not isinstance(ref,dict):problems.append('invalid reference object');continue
+        if 'csv_address_context' in ref:
+            from njd.csv_context import csv_context_address
+            if csv_context_address(ref,facility) is None:problems.append('invalid same-record CSV locality context')
         if ref.get('source_kind')=='government_corporate_register':
             from njd.corporate import image_review_problems
             problems.extend(image_review_problems(ref))
