@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "7751b9fd931a695b64baef4c791021d5a0a7000a1a0aee3255c3d11672333da6",
+    "corrections.json": "3cd1060ae19ef6392aaf424e2dcf0ad8857e7ab78ebb95504063fe9a1a8e26d8",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -23055,19 +23055,28 @@
         "new_verified_entries": 2,
         "retained_pending_entries": 10519,
         "scope": "走田神社（長岡京市）・咋岡神社（京田辺市飯岡）2登録の実本文の連続かな列と全所在地を個別確認。"
+      },
+      {
+        "checked_at": "2026-11-13T10:32:48.081033+00:00",
+        "entry_ids": [
+          "863294c9-56ba-5389-aa24-9f54931e67ab",
+          "773026a5-9872-5856-8ac5-aa22a66203e0"
+        ],
+        "new_verified_entries": 1,
+        "retained_pending_entries": 10518,
+        "scope": "伏見区久我石原町の菱妻神社1登録を独立参拝記録の明示全文かなと全所在地で解消。岩戸落葉神社の観光資料は規約停止。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T10:32:48.081033+00:00",
+      "checked_at": "2026-11-13T10:37:17.127329+00:00",
       "entry_ids": [
-        "863294c9-56ba-5389-aa24-9f54931e67ab",
         "773026a5-9872-5856-8ac5-aa22a66203e0"
       ],
       "new_verified_entries": 1,
-      "retained_pending_entries": 10518,
-      "scope": "伏見区久我石原町の菱妻神社1登録を独立参拝記録の明示全文かなと全所在地で解消。岩戸落葉神社の観光資料は規約停止。"
+      "retained_pending_entries": 10517,
+      "scope": "岩戸落葉神社1登録を独立参拝記録の名称・明示全文かな・全所在地で解消。別の観光資料は事前連絡を求める利用方針で停止。"
     },
-    "remaining_unfinished_entries": 10518,
+    "remaining_unfinished_entries": 10517,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -23244,6 +23253,7 @@
       "768d8ba8-1093-526a-9e89-035f033a0876",
       "769117e5-c065-5dd5-a115-0c60a3eac2a0",
       "7727dbe3-5594-51ea-ae9e-eeab0126e428",
+      "773026a5-9872-5856-8ac5-aa22a66203e0",
       "774e11d9-e331-5291-b101-5c942fdb998f",
       "78d0cbc9-2dd7-5141-a5f0-835f7b46ff62",
       "7b11ea88-0cf4-5a40-9d28-86a100726917",
@@ -23423,7 +23433,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T10:32:48.081033+00:00",
+  "computed_at": "2026-11-13T10:37:17.127329+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -323092,6 +323102,219 @@
       "verified_eligible_delta": [
         "863294c9-56ba-5389-aa24-9f54931e67ab"
       ]
+    },
+    {
+      "acquisition": "公開入口・作者の利用方針を先に確認。robots準拠・同一ホスト2秒以上・timeout20秒・再試行0。うらみち個別記事は方針確認後未取得。口丹波の社は画像を取得せず文字の名称・全文かな・所在地表を照合。",
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T05:27:31.052326+00:00",
+              "evidence_attempt": "kojiki_bounded_articles_20261112_kyoto",
+              "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
+              "observation": "同名だけで同一施設とせず、主対象正式名・全文かな・全所在地の対応又は既存判断の問題が残るため保留。原文の冠称・字名・語尾・空白を推測修正しない。",
+              "reference": {
+                "address_raw": "京都府京都市北区小野下ノ町170",
+                "checked_at": "2026-11-12T05:21:55.202779+00:00",
+                "fetched_at": "2026-11-12T05:18:35.994223+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "岩戸落葉神社",
+                "page_hash": "bd20b6521762aa11876e3d8434f474d668c72ab3c810da588381fb5c7ffe1da2",
+                "reading_raw": "いわとおちば じんじゃ",
+                "reading_scope": "full_name",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "岩戸落葉神社　京都府京都市北区小野下ノ町 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1062423262.html"
+              },
+              "result": "literal_reading_not_accepted_by_existing_schema",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:14:34.767979+00:00",
+              "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
+              "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
+              "municipal_entry_status": "no_actual_own_bodik_portal_link_in_acquired_entry",
+              "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
+              "reference": {
+                "fetched_at": "2026-11-13T01:59:50.535717+00:00",
+                "page_hash": "a356ed1170e2ef59864b269c89e8e7d9fada166bfe8115e3f5a544d74c71861a",
+                "url": "https://data.city.kyoto.lg.jp/"
+              },
+              "scope": "取得した入口本文に自治体自身のBODIK実リンクなし。京都市独自カタログ又は府全体カタログリンクを、自治体表の照合済みとは扱わない。",
+              "source_kind": "municipal_open_data",
+              "source_observations": [],
+              "source_publisher": "記録した実資料の発行者",
+              "status": "no_actual_own_bodik_portal_link_in_acquired_entry"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T10:32:48.081033+00:00",
+              "evidence_attempt": "kyoto_hishizuma_independent_article_full_kana_and_iwato_design_terms_stop_20261113",
+              "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
+              "observation": "検索で対象記事候補は見えたが、先に規約本文を確認し記事本文の追加取得と辞書根拠への採用を停止。検索抜粋からかな・住所を採用せず、同サイトのコピーや別URLへ迂回しない。",
+              "reference": {
+                "checked_at": "2026-11-13T10:32:48.081033+00:00",
+                "fetched_at": "2026-11-13T10:30:49.360707+00:00",
+                "locator": "利用規約 第7条第1項、第9条第1項(3)",
+                "observation": "許諾がある場合を除き、取得情報の私的利用範囲を超える使用を制限する規定を本文確認。",
+                "page_hash": "dffe7f1529265de4328460a5fe027e3a03b08e9363e3ff45bc010d6202e941d2",
+                "url": "https://www.kyoto-design.jp/agreement"
+              },
+              "source_kind": "tourism_site_terms",
+              "source_publisher": "KYOTOdesign運営事務局（運営者bonya、規約本文表示）",
+              "status": "private_use_only_terms_stop_before_individual_article_fetch"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T10:37:17.127329+00:00",
+              "evidence_attempt": "kyoto_iwato_ochiba_independent_kuchitan_name_full_kana_parcel_and_uramichi_terms_stop_20261113",
+              "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
+              "observation": "候補記事の追加取得・辞書根拠への採用を停止。検索抜粋からかな・住所を採用しない。",
+              "reference": {
+                "checked_at": "2026-11-13T10:37:17.127329+00:00",
+                "fetched_at": "2026-11-13T10:34:45.677269+00:00",
+                "locator": "作者のお知らせ「ブックマーク・リンク・掲載など」",
+                "observation": "写真や文章等の転載には事前連絡と出典表示を求め、無断転載を控えるよう明記。",
+                "page_hash": "152ccd4eb8fab6c319e486279917d47d5c6b34be77efd183f605a203215ff33e",
+                "url": "https://kyoto.travel.coocan.jp/1/index1.html"
+              },
+              "source_kind": "personal_travel_site_terms",
+              "source_publisher": "京都うらみちあんない（個人観光記録）",
+              "status": "prior_contact_and_attribution_required_stop_before_individual_article_fetch"
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T10:37:17.127329+00:00",
+              "evidence_attempt": "kyoto_iwato_ochiba_independent_kuchitan_name_full_kana_parcel_and_uramichi_terms_stop_20261113",
+              "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
+              "observation": "独立した個人参拝記録の名称・所在地表を照合。内部空白を含む旧二次資料の綴りを編集せず、独立した連続全文かなを採用。",
+              "reference": {
+                "address_raw": "京都市北区小野下ノ町１７０",
+                "authority_observation": "サイト説明本文は管理人個人が神社を訪ねた記録と明示。神社自身や神社庁の公式資料ではない。",
+                "checked_at": "2026-11-13T10:36:12.289574+00:00",
+                "excerpt": "神社名 岩戸落葉神社（いわとおちばじんじゃ） 所在地 京都市北区小野下ノ町１７０",
+                "fetched_at": "2026-11-13T10:35:39.927056+00:00",
+                "key": "iwato",
+                "locator": "冒頭の神社名・所在地表。由緒中の旧別社名や祭神名は採字対象としない。",
+                "name_raw": "岩戸落葉神社",
+                "page_hash": "31ea4a4b39ef67ee65d4bed840cb9dd1c1ca08ac2214ffea64a0d23d78eb2dc3",
+                "reading_raw": "いわとおちばじんじゃ",
+                "reading_scope": "full_name",
+                "rights_note": "トップ本文の画像の複写・転載禁止とサイト説明の画像利用条件を確認。画像を取得・転載せず、社名・明示全文かな・全所在地の限定事実だけを保存する。文字記事全体の転載許諾があるとは扱わない。",
+                "source_kind": "article",
+                "source_publisher": "口丹波の社（個人参拝記録）",
+                "title": "岩戸落葉神社 | 口丹波の社",
+                "url": "https://kuchitanshrine.my.coocan.jp/iwatoochibajinja.html"
+              },
+              "status": "independent_contiguous_full_kana_and_exact_original_parcel_confirmed"
+            }
+          ],
+          "address": "京都市北区小野下ノ町170",
+          "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/03.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "773026a5-9872-5856-8ac5-aa22a66203e0",
+          "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
+          "facility_id": "a4cdefbc-6707-56da-90aa-8543475fc06c",
+          "listed_name": "岩戸落葉神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "京都府",
+          "prefecture_code": "26",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "岩戸落葉神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "kyoto_iwato_ochiba_independent_kuchitan_name_full_kana_parcel_and_uramichi_terms_stop_20261113",
+      "authority_limits": "採用元は管理人個人の神社訪問記録。神社庁の掲載名・原住所と一致するが、当該読みを神社自身や神社庁が発音認定したとは扱わない。",
+      "checked_at": "2026-11-13T10:37:17.127329+00:00",
+      "correction_validation_problems": [],
+      "entry_ids": [
+        "773026a5-9872-5856-8ac5-aa22a66203e0"
+      ],
+      "entry_references": [
+        {
+          "fetched_at": "2026-11-13T10:34:26.576509+00:00",
+          "page_hash": "73c5d243eff40ad4828020b2d0151bbad4b27aaa7c4906920dfb2802b720f8d8",
+          "url": "https://kyoto.travel.coocan.jp/"
+        }
+      ],
+      "manual_resolved_entry_ids": [
+        "773026a5-9872-5856-8ac5-aa22a66203e0"
+      ],
+      "new_verified_entries": 1,
+      "policy_references": [
+        {
+          "fetched_at": "2026-11-13T10:35:07.460054+00:00",
+          "page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+          "url": "https://kuchitanshrine.my.coocan.jp/"
+        },
+        {
+          "fetched_at": "2026-11-13T10:35:22.262915+00:00",
+          "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+          "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+        }
+      ],
+      "privacy_and_storage": "トップの画像複写・転載禁止と説明ページの画像利用条件を確認。取得画像・本文全体・個人メール・連絡先・キャッシュは収録しない。限定事実・出典・欄位置・判断だけを保存。",
+      "references": [
+        {
+          "address_raw": "京都市北区小野下ノ町１７０",
+          "authority_observation": "サイト説明本文は管理人個人が神社を訪ねた記録と明示。神社自身や神社庁の公式資料ではない。",
+          "checked_at": "2026-11-13T10:36:12.289574+00:00",
+          "excerpt": "神社名 岩戸落葉神社（いわとおちばじんじゃ） 所在地 京都市北区小野下ノ町１７０",
+          "fetched_at": "2026-11-13T10:35:39.927056+00:00",
+          "key": "iwato",
+          "locator": "冒頭の神社名・所在地表。由緒中の旧別社名や祭神名は採字対象としない。",
+          "name_raw": "岩戸落葉神社",
+          "page_hash": "31ea4a4b39ef67ee65d4bed840cb9dd1c1ca08ac2214ffea64a0d23d78eb2dc3",
+          "reading_raw": "いわとおちばじんじゃ",
+          "reading_scope": "full_name",
+          "rights_note": "トップ本文の画像の複写・転載禁止とサイト説明の画像利用条件を確認。画像を取得・転載せず、社名・明示全文かな・全所在地の限定事実だけを保存する。文字記事全体の転載許諾があるとは扱わない。",
+          "source_kind": "article",
+          "source_publisher": "口丹波の社（個人参拝記録）",
+          "title": "岩戸落葉神社 | 口丹波の社",
+          "url": "https://kuchitanshrine.my.coocan.jp/iwatoochibajinja.html"
+        }
+      ],
+      "scope": "岩戸落葉神社1登録。口丹波の社のother.htmlも入口として確認したが、他登録の名称・全文かな・全所在地を照合済みとはしない。神社自身・行政の発音確認や全資料の精査完了ではない。",
+      "selected_article_and_index_references": [
+        {
+          "fetched_at": "2026-11-13T10:35:39.927056+00:00",
+          "key": "iwato",
+          "page_hash": "31ea4a4b39ef67ee65d4bed840cb9dd1c1ca08ac2214ffea64a0d23d78eb2dc3",
+          "url": "https://kuchitanshrine.my.coocan.jp/iwatoochibajinja.html"
+        },
+        {
+          "fetched_at": "2026-11-13T10:35:41.998798+00:00",
+          "key": "other-index",
+          "page_hash": "8b546aa80350f7a773e724dfb15bb5994ac7f6fdc8c4b77bbcf3c222605e1ff8",
+          "url": "https://kuchitanshrine.my.coocan.jp/other.html"
+        }
+      ],
+      "status": "one_independent_full_reading_adopted_uramichi_terms_stop",
+      "stopped_source_policy_reference": {
+        "fetched_at": "2026-11-13T10:34:45.677269+00:00",
+        "page_hash": "152ccd4eb8fab6c319e486279917d47d5c6b34be77efd183f605a203215ff33e",
+        "url": "https://kyoto.travel.coocan.jp/1/index1.html"
+      },
+      "verified_eligible_delta": [
+        "773026a5-9872-5856-8ac5-aa22a66203e0"
+      ]
     }
   ],
   "per_prefecture": {
@@ -323297,11 +323520,11 @@
     },
     "26": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 1274,
+        "insufficient_evidence_in_inspected_sources": 1273,
         "investigation_incomplete": 0,
         "judgment_required": 4
       },
-      "unfinished_entries": 1278
+      "unfinished_entries": 1277
     },
     "27": {
       "categories": {
@@ -835663,95 +835886,6 @@
       "additional_source_reviews": [
         {
           "adopted": false,
-          "checked_at": "2026-11-12T05:27:31.052326+00:00",
-          "evidence_attempt": "kojiki_bounded_articles_20261112_kyoto",
-          "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
-          "observation": "同名だけで同一施設とせず、主対象正式名・全文かな・全所在地の対応又は既存判断の問題が残るため保留。原文の冠称・字名・語尾・空白を推測修正しない。",
-          "reference": {
-            "address_raw": "京都府京都市北区小野下ノ町170",
-            "checked_at": "2026-11-12T05:21:55.202779+00:00",
-            "fetched_at": "2026-11-12T05:18:35.994223+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "岩戸落葉神社",
-            "page_hash": "bd20b6521762aa11876e3d8434f474d668c72ab3c810da588381fb5c7ffe1da2",
-            "reading_raw": "いわとおちば じんじゃ",
-            "reading_scope": "full_name",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "岩戸落葉神社　京都府京都市北区小野下ノ町 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1062423262.html"
-          },
-          "result": "literal_reading_not_accepted_by_existing_schema",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:14:34.767979+00:00",
-          "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
-          "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
-          "municipal_entry_status": "no_actual_own_bodik_portal_link_in_acquired_entry",
-          "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
-          "reference": {
-            "fetched_at": "2026-11-13T01:59:50.535717+00:00",
-            "page_hash": "a356ed1170e2ef59864b269c89e8e7d9fada166bfe8115e3f5a544d74c71861a",
-            "url": "https://data.city.kyoto.lg.jp/"
-          },
-          "scope": "取得した入口本文に自治体自身のBODIK実リンクなし。京都市独自カタログ又は府全体カタログリンクを、自治体表の照合済みとは扱わない。",
-          "source_kind": "municipal_open_data",
-          "source_observations": [],
-          "source_publisher": "記録した実資料の発行者",
-          "status": "no_actual_own_bodik_portal_link_in_acquired_entry"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T10:32:48.081033+00:00",
-          "evidence_attempt": "kyoto_hishizuma_independent_article_full_kana_and_iwato_design_terms_stop_20261113",
-          "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
-          "observation": "検索で対象記事候補は見えたが、先に規約本文を確認し記事本文の追加取得と辞書根拠への採用を停止。検索抜粋からかな・住所を採用せず、同サイトのコピーや別URLへ迂回しない。",
-          "reference": {
-            "checked_at": "2026-11-13T10:32:48.081033+00:00",
-            "fetched_at": "2026-11-13T10:30:49.360707+00:00",
-            "locator": "利用規約 第7条第1項、第9条第1項(3)",
-            "observation": "許諾がある場合を除き、取得情報の私的利用範囲を超える使用を制限する規定を本文確認。",
-            "page_hash": "dffe7f1529265de4328460a5fe027e3a03b08e9363e3ff45bc010d6202e941d2",
-            "url": "https://www.kyoto-design.jp/agreement"
-          },
-          "source_kind": "tourism_site_terms",
-          "source_publisher": "KYOTOdesign運営事務局（運営者bonya、規約本文表示）",
-          "status": "private_use_only_terms_stop_before_individual_article_fetch"
-        }
-      ],
-      "address": "京都市北区小野下ノ町170",
-      "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/03.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "773026a5-9872-5856-8ac5-aa22a66203e0",
-      "expected_source_hash": "ba20b0bd66534a9ebca4842a2064fb7819f3be04f682bcd86f008bbe70564db4",
-      "facility_id": "a4cdefbc-6707-56da-90aa-8543475fc06c",
-      "listed_name": "岩戸落葉神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "京都府",
-      "prefecture_code": "26",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "岩戸落葉神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
           "checked_at": "2026-11-13T01:52:49.128357+00:00",
           "evidence_attempt": "kyoto_six_municipalities_thirteen_open_tables_20261113",
           "expected_source_hash": "ae5d181445815e961f2347801dc25f9acc201d6664d4d138089b6143fa7bbad4",
@@ -1239013,7 +1239147,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10518,
+    "retained_unresolved_entries": 10517,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1242115,11 +1242249,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10321,
+      "insufficient_evidence_in_inspected_sources": 10320,
       "investigation_incomplete": 0,
       "judgment_required": 197
     },
-    "distinct_surfaces": 4218,
-    "unfinished_entries": 10518
+    "distinct_surfaces": 4217,
+    "unfinished_entries": 10517
   }
 }
