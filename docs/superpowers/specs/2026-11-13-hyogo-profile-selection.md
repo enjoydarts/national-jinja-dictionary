@@ -1,0 +1,13 @@
+# 兵庫・地図名称と異なる詳細名称の選択審査
+
+目的は、地図XMLと詳細で名称の異なる登録について、実コード・全地番・独立登記に拘束した編集判断で詳細ページの正式名と全文かなを出力すること。調査根拠はreading_research.jsonのhyogo_four_map_profile_names_actual_municipal_subjects_and_daily_review_20261113。東山八幡神社6306053・天満神社6306023・柏原八幡宮6308001は詳細名と登記名・全地番が一致。原文hash不変、兵庫月次206383行・全国日次8組19178行を確認し対象イベントなし。駒宇佐八幡宮6306046は登記名が神社なので対象外。
+
+検討した方法は、別称説明が見つかるまで全件保留、又は独立した登記と一致する詳細表示の個別選択。後者を採用する。同じ実コード・同じ全地番・唯一の同名存続法人・詳細の明示全文かなで選択根拠を満たす。地図名との正式な別称関係を認定したり、地図名の読みを生成したりする必要はない。原資料の相違は維持し、選択という編集判断を別保存する。
+
+review_kind=hyogo_profile_name_selection、confirmation=source_review。proof.kind=hyogo_typed_profile_registered_name_selection。施設ID/登録ID/原文hash・native code・profile名・map名・selection=profile_name_and_profile_kanaに拘束。3参照rolesはagency_profile, agency_map, registered_profile_identity。
+
+兵庫県28、source_key=hyogo、公式profile URLの実7桁コード・印字コード・XML実codeが一致すること。原XML観測は1件だけ、原href導出・protocol・locator/hashと参照が一致。map住所とprofile住所は原文字列で完全一致し、完全な数字地番を持つ。異なる字名・地番・旧市町村の同定は扱わない。通称の補完・字形の置換なし。
+
+profile参照は原url/hash/locator、正式名/全文かな、原〒住所欄、印字codeに一致し、excerptに全値を持つ。map参照も原code/name/addressを全文保持する。3参照は実hash・url・欄位置・時刻を持つ。登録参照はNTA実CSV同名/県/全地番に一致し、最新・存続・非秘匿・名称/住所外字なし。数字単位と幅だけ比較し、字・郡・地名を除去しない。登録カナがある時はprofile全文かなと一致させ、空欄から生成しない。月次snapshot以降の日次適用後の同住所の全神社法人数が1、唯一の法人番号を拘束する。
+
+出力はprofile原名と原かなを機械的にひらがな化した1登録、agency_selected、元reading_urlに限る。split・省略・accepted_identity_differencesを許容しない。施設のreview_reasonは原観測として保持し、専用proofが有効な時だけその名称差を審査済みと扱う。他のidentity_review_required・除外・原文変更・別理由は解除しない。オフライン検証時も再検査。全正本bytesと原名/住所/かな/ID/hash、過去判断を保持。各形式は既存共通データ経由。Python対象版維持・標準ライブラリのみ。実IME取り込みは別確認。
