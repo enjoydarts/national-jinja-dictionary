@@ -26534,13 +26534,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10316,
         "scope": "山梨の歴史を旅するサイトの提供者/条件本文を確認。幸燈神社・三魂交通神社・北野天神社の実URLはHTTP404で、検索側の保存本文を採用せず保留3件を維持。"
+      },
+      {
+        "checked_at": "2026-11-13T14:45:55.069416+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10316,
+        "scope": "山梨の歴史を旅するサイトの提供者/条件本文を確認。幸燈神社・三魂交通神社・北野天神社の実URLはHTTP404で、検索側の保存本文を採用せず保留3件を維持。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:45:55.069416+00:00",
+      "checked_at": "2026-11-13T14:48:42.160778+00:00",
       "new_verified_entries": 0,
-      "retained_pending_entries": 10316,
-      "scope": "山梨の歴史を旅するサイトの提供者/条件本文を確認。幸燈神社・三魂交通神社・北野天神社の実URLはHTTP404で、検索側の保存本文を採用せず保留3件を維持。"
+      "retained_pending_entries": 10311,
+      "scope": "蚊里田八幡宮は自己紹介の全文かなを確認したが原町域差と規約本文robots拒否により保留。雁田水穂神社の建築紹介候補は使用条件で停止。"
     },
     "remaining_unfinished_entries": 10311,
     "resolved_entry_ids": [
@@ -27105,7 +27111,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:45:55.069416+00:00",
+  "computed_at": "2026-11-13T14:48:42.160778+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -404918,6 +404924,91 @@
       "source_kind": "commercial_travel_information",
       "source_publisher": "シーダースコミュニケーションズ株式会社",
       "terms_review": "実トップ/利用案内/運営者/会社概要と選定13詳細を確認。標準Copyrightあり、点検範囲に個別事実記録の明示禁止なし。公開/無料を包括転載許諾にせず、最小事実と出典位置だけ保存。"
+    },
+    {
+      "acquisition": "Client interval=2、timeout=20、retries=0、robots適用。拒否URLの再取得・別ツール/形式・ミラー切替えはしない。",
+      "attempt_id": "nagano_karita_own_home_locality_difference_and_omiyasan_terms_stop_20261113",
+      "candidates": [
+        {
+          "entry_id": "05422e71-79cd-5ed5-aab5-fa4b0f10785c",
+          "observation": "トップ本文で当社として参拝・祈祷・授与所の案内と全文かなを確認。原住所の若槻東とサイトの若槻東条は異なるため条を補わず、読み採用を保留。公式HPという自己表示を独立した神社庁実リンク照合とは扱わない。実リンクのprivacyはrobots disallowsで未取得、当該規約取得を他ツール/形式で回避せず追加ページも取得しない。",
+          "reference": {
+            "address_raw": "長野県長野市若槻東条字蚊里田１３１３番地",
+            "fetched_at": "2026-11-13T14:47:44.974984+00:00",
+            "locator": "トップ冒頭の当社自己紹介と共通フッター所在地",
+            "name_raw": "蚊里田八幡宮",
+            "page_hash": "2b7401b4326595f6c4a3254eebaa4595202de175bde0dfd3418ddce71906ad89",
+            "reading_raw": "かりたはちまんぐう",
+            "reading_scope": "full_name",
+            "title": [
+              "蚊里田八幡宮 | 長野市若槻の神社・御朱印・ご祈祷・安産祈願 - 蚊里田八幡宮公式HP"
+            ],
+            "url": "https://www.karitahachiman.com/"
+          },
+          "status": "own_site_full_reading_locality_differs_policy_body_robots_blocked"
+        },
+        {
+          "entry_id": "0e6979fd-15a5-550f-9bc9-fb591b566b9a",
+          "observation": "独立建築紹介サイトの紹介・使用条件を先に確認。個人ブログ/ウェブサイトへの写真・文章掲載不可、希望時の事前相談等があるため個別紹介本文を取得せず、検索結果のかな/所在地を転記・採用しない。掲載395社という入口表示は取得件数/検証済み社数ではない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:47:51.508593+00:00",
+            "page_hash": "a92047245db10799800e407709b6c4db5895a23c55ed7e729a414701e2e41493",
+            "title": [
+              "写真・記事の引用、使用について - おみやさんcom"
+            ],
+            "url": "https://www.omiyasan.com/contents/posted.php"
+          },
+          "requested_url": "https://www.omiyasan.com/north/obuse/karitamizuhojinja.php",
+          "status": "independent_architecture_site_article_not_acquired_terms_stop"
+        }
+      ],
+      "checked_at": "2026-11-13T14:48:42.160778+00:00",
+      "inspected_facility_homepages": 1,
+      "inspected_independent_facility_profiles": 0,
+      "new_verified_entries": 0,
+      "privacy_and_storage": "必要な公開名称・全文かな・原所在地差・公開URL/hash/日時・条件要約のみ保存。全文・画像・電話・個人名・キャッシュを収録しない。",
+      "references": {
+        "karita-home": {
+          "fetched_at": "2026-11-13T14:47:44.974984+00:00",
+          "page_hash": "2b7401b4326595f6c4a3254eebaa4595202de175bde0dfd3418ddce71906ad89",
+          "title": [
+            "蚊里田八幡宮 | 長野市若槻の神社・御朱印・ご祈祷・安産祈願 - 蚊里田八幡宮公式HP"
+          ],
+          "url": "https://www.karitahachiman.com/"
+        },
+        "omiya-about": {
+          "fetched_at": "2026-11-13T14:47:49.384807+00:00",
+          "page_hash": "13d2202d8162a52d6a96141109a09991b18863fe38cf7ed8a8f00a3719be93c8",
+          "title": [
+            "おみやさんcomについて - おみやさんcom"
+          ],
+          "url": "https://www.omiyasan.com/contents/detail.php"
+        },
+        "omiya-home": {
+          "fetched_at": "2026-11-13T14:47:47.263799+00:00",
+          "page_hash": "ccf88c44e1a666f8c3f015b67e06e0edc65387e8f3485d4ddd946c323087e017",
+          "title": [
+            "神社建築情報サイト-おみやさんcom"
+          ],
+          "url": "https://www.omiyasan.com/"
+        },
+        "omiya-rights": {
+          "fetched_at": "2026-11-13T14:47:51.508593+00:00",
+          "page_hash": "a92047245db10799800e407709b6c4db5895a23c55ed7e729a414701e2e41493",
+          "title": [
+            "写真・記事の引用、使用について - おみやさんcom"
+          ],
+          "url": "https://www.omiyasan.com/contents/posted.php"
+        }
+      },
+      "rights_observation": "蚊里田サイトの実privacyリンク本文は未取得で条件確認済みとしない。おみやさんcomは独立の非商用建築紹介サイトという本文表示を確認し、神社公式/行政認定/オープンライセンスとは扱わない。",
+      "robots_stop": {
+        "error": "robots disallows: https://www.karitahachiman.com/j/privacy",
+        "requested_url": "https://www.karitahachiman.com/j/privacy"
+      },
+      "scope": "長野県保留2施設の追加資料候補だけを点検。蚊里田八幡宮は全文かながあっても原町域と不一致、プライバシー本文はrobots拒否。おみやさんcomは利用条件で停止し個別記事未取得。2施設とも採用0。",
+      "screened_pending_entries": 2,
+      "status": "own_site_locality_mismatch_and_policy_robots_stop_independent_source_terms_stop"
     }
   ],
   "per_prefecture": {
@@ -650071,6 +650162,27 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:48:42.160778+00:00",
+          "evidence_attempt": "nagano_karita_own_home_locality_difference_and_omiyasan_terms_stop_20261113",
+          "expected_source_hash": "2736bc69ee6a731c3ff2f6cf8cae88cb4a8e0222e3626c9c838350df858a86f3",
+          "observation": "トップ本文で当社として参拝・祈祷・授与所の案内と全文かなを確認。原住所の若槻東とサイトの若槻東条は異なるため条を補わず、読み採用を保留。公式HPという自己表示を独立した神社庁実リンク照合とは扱わない。実リンクのprivacyはrobots disallowsで未取得、当該規約取得を他ツール/形式で回避せず追加ページも取得しない。",
+          "reference": {
+            "address_raw": "長野県長野市若槻東条字蚊里田１３１３番地",
+            "fetched_at": "2026-11-13T14:47:44.974984+00:00",
+            "locator": "トップ冒頭の当社自己紹介と共通フッター所在地",
+            "name_raw": "蚊里田八幡宮",
+            "page_hash": "2b7401b4326595f6c4a3254eebaa4595202de175bde0dfd3418ddce71906ad89",
+            "reading_raw": "かりたはちまんぐう",
+            "reading_scope": "full_name",
+            "title": [
+              "蚊里田八幡宮 | 長野市若槻の神社・御朱印・ご祈祷・安産祈願 - 蚊里田八幡宮公式HP"
+            ],
+            "url": "https://www.karitahachiman.com/"
+          },
+          "status": "own_site_full_reading_locality_differs_policy_body_robots_blocked"
         }
       ],
       "address": "長野市大字若槻東字蚊里田1313",
@@ -654025,6 +654137,23 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:48:42.160778+00:00",
+          "evidence_attempt": "nagano_karita_own_home_locality_difference_and_omiyasan_terms_stop_20261113",
+          "expected_source_hash": "3d4d7c07da4bb9484e6f5cc19be589477ac9e322201632d6f3c05bc822423594",
+          "observation": "独立建築紹介サイトの紹介・使用条件を先に確認。個人ブログ/ウェブサイトへの写真・文章掲載不可、希望時の事前相談等があるため個別紹介本文を取得せず、検索結果のかな/所在地を転記・採用しない。掲載395社という入口表示は取得件数/検証済み社数ではない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:47:51.508593+00:00",
+            "page_hash": "a92047245db10799800e407709b6c4db5895a23c55ed7e729a414701e2e41493",
+            "title": [
+              "写真・記事の引用、使用について - おみやさんcom"
+            ],
+            "url": "https://www.omiyasan.com/contents/posted.php"
+          },
+          "requested_url": "https://www.omiyasan.com/north/obuse/karitamizuhojinja.php",
+          "status": "independent_architecture_site_article_not_acquired_terms_stop"
         }
       ],
       "address": "上高井郡小布施町大字雁田字宮下567",
