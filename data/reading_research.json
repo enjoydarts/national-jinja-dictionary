@@ -26009,6 +26009,34 @@
         "scope": "他13原索引の残131実リンクを点検し、130本文のうち5登録を明示全文かな・正式名・原全地番から補完。126登録は404の1件を含め保留。"
       },
       {
+        "checked_at": "2026-11-13T13:08:36.836341+00:00",
+        "entry_ids": [
+          "0b2faad2-8927-5ac4-8067-53e73d2fe5a3",
+          "1a268bc8-d0c6-5020-ad22-979195fd40b1",
+          "1de1aa28-c331-5f84-8ba7-eb5e05a698a9",
+          "20114034-18f2-57f3-afd1-b9c53ce5812d",
+          "239f4cc8-10ca-5abc-b903-69760fa0e2c6",
+          "2dff83b2-e2b5-5a8b-b628-a7a17bc30cea",
+          "377dfe3a-60e1-555b-997d-b2740307b119",
+          "3b4b80fa-5f88-5ffa-838e-a64310d1560a",
+          "68797125-d4c3-594b-9c19-ecc0dfff4e57",
+          "74aee138-a78e-5763-82a9-f90f05ceaae2",
+          "74c5c5fb-29ca-56a7-a021-6f8bd4c60803",
+          "852d0af3-8fcc-5bdd-ba5a-89d6a8af3bac",
+          "99ec7875-95af-5038-a977-d1fc5e3fba2d",
+          "9b6d74e7-fc28-5213-9347-6746d7e25201",
+          "9eb173b4-043a-5016-b1b4-55c86893a4c0",
+          "a106573b-e5f3-5068-ac68-245e9326e271",
+          "d31eca56-1ee8-5365-98e8-1e7d36de4a7f",
+          "d6ed0188-26d6-586e-9e3a-bbee067f6870",
+          "d9736159-7137-596b-afa3-ff624e620bf6",
+          "f1122d50-43f2-5cde-8d30-8f452bd09c84"
+        ],
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10341,
+        "scope": "山梨県神社庁の甲府支部最初の一覧にある20実コード付き詳細を点検。正称・旧社格・コード・鎮座地を確認したが独立全文かなを確認できず20保留。"
+      },
+      {
         "checked_at": "2026-11-13T13:03:01.276615+00:00",
         "entry_ids": [
           "2e89f54e-542b-5a15-aeea-f173121c3a6f",
@@ -26028,10 +26056,26 @@
         "new_verified_entries": 8,
         "retained_pending_targets": 4,
         "scope": "対馬番号付き冊子の12対応候補を原画像で審査し8読み補完、境内遷座/三社合祀4件を保留。"
+      },
+      {
+        "checked_at": "2026-11-13T13:09:50.769086+00:00",
+        "integrated_entry_ids": [
+          "055fe278-89b1-5e8b-a2af-f720e373171e",
+          "2b497e9c-dc09-5273-98cf-f562dbb97bd0",
+          "70e9e551-ff91-5910-93da-007136486157",
+          "72a8f2aa-2a75-57f4-a9b6-691a73ab0d12",
+          "8403fa17-13de-5e29-9942-5558dff57783",
+          "b54ca387-3c5d-5b61-b826-4ffea6d86fea",
+          "dc5a9ccf-13ee-53e4-a616-456c5a2c9251",
+          "f93d9351-a8e3-5ea1-9216-9b59e5f0dccd"
+        ],
+        "integration_main_commit": "612efff33372e7665adf17f5a57a91c90679376b",
+        "new_verified_entries": 0,
+        "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬8件補完と4件の保留根拠を統合。採用を重複計上しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T13:09:50.769086+00:00",
+      "checked_at": "2026-11-13T13:11:34.968797+00:00",
       "integrated_entry_ids": [
         "055fe278-89b1-5e8b-a2af-f720e373171e",
         "2b497e9c-dc09-5273-98cf-f562dbb97bd0",
@@ -26042,7 +26086,7 @@
         "dc5a9ccf-13ee-53e4-a616-456c5a2c9251",
         "f93d9351-a8e3-5ea1-9216-9b59e5f0dccd"
       ],
-      "integration_main_commit": "612efff33372e7665adf17f5a57a91c90679376b",
+      "integration_main_commit": "762461539ea06e4b85d76c25a0acea90b65e2648",
       "new_verified_entries": 0,
       "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬8件補完と4件の保留根拠を統合。採用を重複計上しない。"
     },
@@ -26587,7 +26631,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T13:09:50.769086+00:00",
+  "computed_at": "2026-11-13T13:11:34.968797+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -393991,6 +394035,918 @@
       ]
     },
     {
+      "acquisition": "原記録の紹介入口と甲府支部最初の一覧を取得。原一覧本文hashが元snapshotと一致し、実コード・社号・原全所在地が対応する20実詳細hrefを確認。先に取得した2詳細をキャッシュ利用し残18詳細をrobots・2秒以上の間隔・timeout20秒・再試行0で取得。番号からURLを推定していない。",
+      "attempt_id": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+      "authority_observation": "山梨県神社庁の紹介入口・支部一覧の実hrefから同庁の詳細へ到達し、本文の正称・コード・鎮座地が原登録へ対応することを確認。検索結果の抜粋は採字根拠にしない。",
+      "checked_at": "2026-11-13T13:08:36.836341+00:00",
+      "entry_ids": [
+        "0b2faad2-8927-5ac4-8067-53e73d2fe5a3",
+        "1a268bc8-d0c6-5020-ad22-979195fd40b1",
+        "1de1aa28-c331-5f84-8ba7-eb5e05a698a9",
+        "20114034-18f2-57f3-afd1-b9c53ce5812d",
+        "239f4cc8-10ca-5abc-b903-69760fa0e2c6",
+        "2dff83b2-e2b5-5a8b-b628-a7a17bc30cea",
+        "377dfe3a-60e1-555b-997d-b2740307b119",
+        "3b4b80fa-5f88-5ffa-838e-a64310d1560a",
+        "68797125-d4c3-594b-9c19-ecc0dfff4e57",
+        "74aee138-a78e-5763-82a9-f90f05ceaae2",
+        "74c5c5fb-29ca-56a7-a021-6f8bd4c60803",
+        "852d0af3-8fcc-5bdd-ba5a-89d6a8af3bac",
+        "99ec7875-95af-5038-a977-d1fc5e3fba2d",
+        "9b6d74e7-fc28-5213-9347-6746d7e25201",
+        "9eb173b4-043a-5016-b1b4-55c86893a4c0",
+        "a106573b-e5f3-5068-ac68-245e9326e271",
+        "d31eca56-1ee8-5365-98e8-1e7d36de4a7f",
+        "d6ed0188-26d6-586e-9e3a-bbee067f6870",
+        "d9736159-7137-596b-afa3-ff624e620bf6",
+        "f1122d50-43f2-5cde-8d30-8f452bd09c84"
+      ],
+      "entry_metadata_references": [
+        {
+          "acquired": true,
+          "fetched_at": "2026-11-13T13:03:07.148184+00:00",
+          "page_hash": "b9798ea24d6d237cb613760ccc0ab43da2c84f5665abd3b3cf8fd5a54fa74937",
+          "url": "https://www.yamanashi-jinjacho.or.jp/intro/"
+        },
+        {
+          "acquired": true,
+          "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+          "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+          "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+        }
+      ],
+      "literal_full_name_kana_pairs": 0,
+      "new_verified_entries": 0,
+      "privacy_and_storage": "Copyright表示を包括再配布許諾とせず、正式名・旧社格・コード・鎮座地・出典と判断の限定事実だけを保存。人物名・連絡先・祭神・氏子情報・由緒全文・写真・取得全本文・キャッシュは収録しない。",
+      "retained_pending_targets": 20,
+      "scope": "甲府支部の最初の一覧にある現保留20登録と対応する20実詳細だけ。本文h1の正称と旧社格の明示spanを区別し、コード・固有鎮座地を確認。正称の独立全文かな欄又は正称直後の連続括弧かなを確認できず20保留。山梨全登録・他の一覧ページ・全詳細・全国47都道府県の精査完了ではない。",
+      "selected_detail_pages": 20,
+      "selected_distinct_targets": 20,
+      "selected_observations": [
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "20114034-18f2-57f3-afd1-b9c53ce5812d",
+          "expected_source_hash": "abe88d16e5181cecce5633a0e3d6f5aea8cf27b4f9d2b2ebfc074dee106caec5",
+          "index_reference": {
+            "excerpt": "コードNo=1001 社号=南宮神社 鎮座地=甲府市北新2-12-20",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1001",
+            "locator": "table tr[2] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市北新2-12-20",
+          "original_name": "南宮神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市北新2-12-20",
+            "agency_code_raw": "1001",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=南宮神社\nコードNo=1001\n鎮座地=甲府市北新2-12-20",
+            "fetched_at": "2026-11-13T13:03:53.338391+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "南宮神社(旧村社)",
+            "name_raw": "南宮神社",
+            "page_hash": "6c072e0791915782507f4ddf156da3f88960d86d86ed2a0d9c4b513435d106ba",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1001"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "68797125-d4c3-594b-9c19-ecc0dfff4e57",
+          "expected_source_hash": "8ae7663bf00d16141c1266994d04fa67a5fb8f46287fa38b0bef79438624d363",
+          "index_reference": {
+            "excerpt": "コードNo=1002 社号=八幡神社 鎮座地=甲府市古府中町1529",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1002",
+            "locator": "table tr[3] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市古府中町1529",
+          "original_name": "八幡神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市古府中町1529",
+            "agency_code_raw": "1002",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=八幡神社\nコードNo=1002\n鎮座地=甲府市古府中町1529",
+            "fetched_at": "2026-11-13T13:03:55.442607+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "八幡神社(旧村社)",
+            "name_raw": "八幡神社",
+            "page_hash": "c17f8fbc9398ab85dd949d804fba49a7bfdf3637883059564e3ef29bf74c91e5",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1002"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "d31eca56-1ee8-5365-98e8-1e7d36de4a7f",
+          "expected_source_hash": "05027da6ed1b0a0613d35be8c15c9156ff2e5037634aeeeb6216e6dc7d9d9bbb",
+          "index_reference": {
+            "excerpt": "コードNo=1004 社号=若宮八幡神社 鎮座地=甲府市古府中町大日影3478",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1004",
+            "locator": "table tr[5] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市古府中町大日影3478",
+          "original_name": "若宮八幡神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市古府中町大日影3478",
+            "agency_code_raw": "1004",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=若宮八幡神社\nコードNo=1004\n鎮座地=甲府市古府中町大日影3478",
+            "fetched_at": "2026-11-13T13:05:58.980904+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "若宮八幡神社(旧村社)",
+            "name_raw": "若宮八幡神社",
+            "page_hash": "bdec9b53273afd5f1877d5d05b7cf945b776cd02f8f7a74a3d416dd4d65522f1",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1004"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "2dff83b2-e2b5-5a8b-b628-a7a17bc30cea",
+          "expected_source_hash": "249f0a6627934eecaa0e98fbe263ac5378d3ef809bb4720a4c121393eb33a7d6",
+          "index_reference": {
+            "excerpt": "コードNo=1005 社号=日吉神社 鎮座地=甲府市上積翠寺町630",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1005",
+            "locator": "table tr[6] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市上積翠寺町630",
+          "original_name": "日吉神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市上積翠寺町630",
+            "agency_code_raw": "1005",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=日吉神社\nコードNo=1005\n鎮座地=甲府市上積翠寺町630",
+            "fetched_at": "2026-11-13T13:06:01.068576+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "日吉神社(旧村社)",
+            "name_raw": "日吉神社",
+            "page_hash": "209a0611a785be42701621283dbe90b1047686f9c26d99b21be9d107b79bf887",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1005"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "a106573b-e5f3-5068-ac68-245e9326e271",
+          "expected_source_hash": "2b62d561fb32b5039cdcde6affea3560396e2ee2b67f5e193074c459fdd4c4b9",
+          "index_reference": {
+            "excerpt": "コードNo=1006 社号=白山神社 鎮座地=甲府市下積翠寺町1109",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1006",
+            "locator": "table tr[7] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市下積翠寺町1109",
+          "original_name": "白山神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市下積翠寺町1109",
+            "agency_code_raw": "1006",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=白山神社\nコードNo=1006\n鎮座地=甲府市下積翠寺町1109",
+            "fetched_at": "2026-11-13T13:06:03.162347+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "白山神社(旧村社)",
+            "name_raw": "白山神社",
+            "page_hash": "51e459e018baf51e25cc39ffafe60007c5af524bb80338e83b6c6f048a72f15e",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1006"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "1a268bc8-d0c6-5020-ad22-979195fd40b1",
+          "expected_source_hash": "7e7bdeca83107b02e9a14f87d2cf233026409876d6c9d21cc1807a7778f43f5e",
+          "index_reference": {
+            "excerpt": "コードNo=1007 社号=脚気石稲荷神社 鎮座地=甲府市上帯那町2314",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1007",
+            "locator": "table tr[8] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市上帯那町2314",
+          "original_name": "脚気石稲荷神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市上帯那町2314",
+            "agency_code_raw": "1007",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=脚気石稲荷神社\nコードNo=1007\n鎮座地=甲府市上帯那町2314",
+            "fetched_at": "2026-11-13T13:06:05.247503+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              ""
+            ],
+            "name_field_raw": "脚気石稲荷神社",
+            "name_raw": "脚気石稲荷神社",
+            "page_hash": "db0ac46fb6bf3434c61a820b1db14b1114d8abb359f0670b505a6187a1e6711b",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1007"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "74aee138-a78e-5763-82a9-f90f05ceaae2",
+          "expected_source_hash": "582ea2a1db44bcad96c73ab40cb903e758b9d7adb655b80e0533099dd0f74fef",
+          "index_reference": {
+            "excerpt": "コードNo=1008 社号=諏訪神社 鎮座地=甲府市上帯那町1485",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1008",
+            "locator": "table tr[9] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市上帯那町1485",
+          "original_name": "諏訪神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市上帯那町1485",
+            "agency_code_raw": "1008",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=諏訪神社\nコードNo=1008\n鎮座地=甲府市上帯那町1485",
+            "fetched_at": "2026-11-13T13:06:07.336203+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "諏訪神社(旧村社)",
+            "name_raw": "諏訪神社",
+            "page_hash": "0d2dbc9625b2834ca549b03d2a7bd4cb1a03034509f21fbc1991d81f7d50c298",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1008"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "d6ed0188-26d6-586e-9e3a-bbee067f6870",
+          "expected_source_hash": "dcd7295278a9dd64e7d56e2ca08ee366ec8e13a4431e035ede76c90232241030",
+          "index_reference": {
+            "excerpt": "コードNo=1009 社号=諏訪神社 鎮座地=甲府市下帯那町2005",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1009",
+            "locator": "table tr[10] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市下帯那町2005",
+          "original_name": "諏訪神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市下帯那町2005",
+            "agency_code_raw": "1009",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=諏訪神社\nコードNo=1009\n鎮座地=甲府市下帯那町2005",
+            "fetched_at": "2026-11-13T13:06:09.437213+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧郷社)"
+            ],
+            "name_field_raw": "諏訪神社(旧郷社)",
+            "name_raw": "諏訪神社",
+            "page_hash": "1162992eed3bc4ef40a0f9833c9670e057fdeef40ac95758a3a59ad2d86718cc",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1009"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "f1122d50-43f2-5cde-8d30-8f452bd09c84",
+          "expected_source_hash": "246bdac14dac4f32d05bee49fb9fb99f7b8a18cf0b77eea2b64a8259ab3f04af",
+          "index_reference": {
+            "excerpt": "コードNo=1010 社号=片山稲荷神社 鎮座地=甲府市平瀬町2135-1",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1010",
+            "locator": "table tr[11] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市平瀬町2135-1",
+          "original_name": "片山稲荷神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市平瀬町2135-1",
+            "agency_code_raw": "1010",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=片山稲荷神社\nコードNo=1010\n鎮座地=甲府市平瀬町2135-1",
+            "fetched_at": "2026-11-13T13:06:11.519895+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              ""
+            ],
+            "name_field_raw": "片山稲荷神社",
+            "name_raw": "片山稲荷神社",
+            "page_hash": "a55be0ba024f6b275267170892def8efa2717d11db2045ccc8023763cf78f720",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1010"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "d9736159-7137-596b-afa3-ff624e620bf6",
+          "expected_source_hash": "7c0c2b45a73af5c3b5604b6e44fac052d9d59c3291ddedc99174ffcb10d48566",
+          "index_reference": {
+            "excerpt": "コードNo=1013 社号=八坂神社 鎮座地=甲府市大里町円満寺",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1013",
+            "locator": "table tr[14] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市大里町円満寺",
+          "original_name": "八坂神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市大里町円満寺",
+            "agency_code_raw": "1013",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=八坂神社\nコードNo=1013\n鎮座地=甲府市大里町円満寺",
+            "fetched_at": "2026-11-13T13:06:13.609644+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              ""
+            ],
+            "name_field_raw": "八坂神社",
+            "name_raw": "八坂神社",
+            "page_hash": "8f1ac43aba223b66ae2591336575e46a5a0ccfc5af1a89a134222b0c745edcbc",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1013"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "377dfe3a-60e1-555b-997d-b2740307b119",
+          "expected_source_hash": "5f9a2c9399d9b0716bf3f0f294a31e2aa34b7d61ea988fdc7f353c3d8cac4e94",
+          "index_reference": {
+            "excerpt": "コードNo=1014 社号=熊野神社 鎮座地=甲府市大里町字二日市場2063",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1014",
+            "locator": "table tr[15] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市大里町字二日市場2063",
+          "original_name": "熊野神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市大里町字二日市場2063",
+            "agency_code_raw": "1014",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=熊野神社\nコードNo=1014\n鎮座地=甲府市大里町字二日市場2063",
+            "fetched_at": "2026-11-13T13:06:15.723165+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "熊野神社(旧村社)",
+            "name_raw": "熊野神社",
+            "page_hash": "c3d6eca2405d6db1f4475947604b809d0f9e59c249a659a78b3de9109cc71e4d",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1014"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "1de1aa28-c331-5f84-8ba7-eb5e05a698a9",
+          "expected_source_hash": "e420505282bbd481e733c0199be4fee9077df7cf1658697b17d074604c91b2d0",
+          "index_reference": {
+            "excerpt": "コードNo=1015 社号=王法子神社 鎮座地=甲府市大里町3712",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1015",
+            "locator": "table tr[16] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市大里町3712",
+          "original_name": "王法子神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市大里町3712",
+            "agency_code_raw": "1015",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=王法子神社\nコードNo=1015\n鎮座地=甲府市大里町3712",
+            "fetched_at": "2026-11-13T13:06:17.832759+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "王法子神社(旧村社)",
+            "name_raw": "王法子神社",
+            "page_hash": "123b613c2e01467769d7e0a811281d9eb46e56bae259ae5a432a85ce12ca0cb1",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1015"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "239f4cc8-10ca-5abc-b903-69760fa0e2c6",
+          "expected_source_hash": "8788435bb64ec0844190601c4ad1855899f187554324d579f80333e49fe39e78",
+          "index_reference": {
+            "excerpt": "コードNo=1017 社号=広瀬神社 鎮座地=甲府市大津町1316",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1017",
+            "locator": "table tr[18] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市大津町1316",
+          "original_name": "広瀬神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市大津町1316",
+            "agency_code_raw": "1017",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=広瀬神社\nコードNo=1017\n鎮座地=甲府市大津町1316",
+            "fetched_at": "2026-11-13T13:06:19.926052+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "広瀬神社(旧村社)",
+            "name_raw": "広瀬神社",
+            "page_hash": "513abd620e3db6d176e2ecbc5d89de1f9aad4ae5068ad2dab52dc48ffc325b31",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1017"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "9eb173b4-043a-5016-b1b4-55c86893a4c0",
+          "expected_source_hash": "475a2ab97bfee625f820e78cd85f5c575e4e9aaf1af0f3b2e4580cd5522a83e1",
+          "index_reference": {
+            "excerpt": "コードNo=1018 社号=八幡神社 鎮座地=甲府市西下条町694",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1018",
+            "locator": "table tr[19] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市西下条町694",
+          "original_name": "八幡神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市西下条町694",
+            "agency_code_raw": "1018",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=八幡神社\nコードNo=1018\n鎮座地=甲府市西下条町694",
+            "fetched_at": "2026-11-13T13:06:22.031271+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "八幡神社(旧村社)",
+            "name_raw": "八幡神社",
+            "page_hash": "232bfd7a14ea55a474125b974a59392d75daa079958fd1f8ddce682fd165e0ed",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1018"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "9b6d74e7-fc28-5213-9347-6746d7e25201",
+          "expected_source_hash": "52a07f56961c973e56f952fa7b0ac4ba2d8d68d9f8f1a043766acf4cff353a69",
+          "index_reference": {
+            "excerpt": "コードNo=1020 社号=大山祇神社 鎮座地=甲府市黒平町725",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1020",
+            "locator": "table tr[21] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市黒平町725",
+          "original_name": "大山祇神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市黒平町725",
+            "agency_code_raw": "1020",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=大山祇神社\nコードNo=1020\n鎮座地=甲府市黒平町725",
+            "fetched_at": "2026-11-13T13:06:24.132684+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "大山祇神社(旧村社)",
+            "name_raw": "大山祇神社",
+            "page_hash": "20ca19530219299b605e2a39fe69bfc50a794b90c609ed40f433b2502371f5e4",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1020"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "74c5c5fb-29ca-56a7-a021-6f8bd4c60803",
+          "expected_source_hash": "ce73ca24bdeecb2797478d04be8687a6c22ba41eeb076be6f03dad06d8646e13",
+          "index_reference": {
+            "excerpt": "コードNo=1021 社号=近戸神社 鎮座地=甲府市高町134",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1021",
+            "locator": "table tr[22] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市高町134",
+          "original_name": "近戸神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市高町134",
+            "agency_code_raw": "1021",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=近戸神社\nコードNo=1021\n鎮座地=甲府市高町134",
+            "fetched_at": "2026-11-13T13:06:26.244518+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "近戸神社(旧村社)",
+            "name_raw": "近戸神社",
+            "page_hash": "66d0cac353a8e71db16e50438e154ee0c7e91606d761a88f3c2fe8575d9a1073",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1021"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "99ec7875-95af-5038-a977-d1fc5e3fba2d",
+          "expected_source_hash": "cb254e0e3fb2fe730f80a958c02f40fee4d047a86591a676280149d16132a886",
+          "index_reference": {
+            "excerpt": "コードNo=1022 社号=金生神社 鎮座地=甲府市草鹿沢町402",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1022",
+            "locator": "table tr[23] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市草鹿沢町402",
+          "original_name": "金生神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市草鹿沢町402",
+            "agency_code_raw": "1022",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=金生神社\nコードNo=1022\n鎮座地=甲府市草鹿沢町402",
+            "fetched_at": "2026-11-13T13:06:28.335895+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "金生神社(旧村社)",
+            "name_raw": "金生神社",
+            "page_hash": "39f5f5acf1474147609348dfeb611c9a2ddb4365a6035df9a5be5145d8432a4c",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1022"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "3b4b80fa-5f88-5ffa-838e-a64310d1560a",
+          "expected_source_hash": "f1cb7ac2e85c0d105b6ab422c6363da58a69342ffa6bc0c1a96421c6790e95cf",
+          "index_reference": {
+            "excerpt": "コードNo=1023 社号=八雲神社 鎮座地=甲府市猪狩町1261",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1023",
+            "locator": "table tr[24] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市猪狩町1261",
+          "original_name": "八雲神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市猪狩町1261",
+            "agency_code_raw": "1023",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=八雲神社\nコードNo=1023\n鎮座地=甲府市猪狩町1261",
+            "fetched_at": "2026-11-13T13:06:30.433217+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "八雲神社(旧村社)",
+            "name_raw": "八雲神社",
+            "page_hash": "9606ce538dced4a7cfb1a27267918bda82b79ce47eb713b51fa700650959af3d",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1023"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "0b2faad2-8927-5ac4-8067-53e73d2fe5a3",
+          "expected_source_hash": "6c6c9b8869451a9e00e2683e67beae0bf8d7b5d3d4d2b5af60477eaa2412a9bd",
+          "index_reference": {
+            "excerpt": "コードNo=1024 社号=文珠神社 鎮座地=甲府市寿町5-7",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1024",
+            "locator": "table tr[25] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市寿町5-7",
+          "original_name": "文珠神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市寿町5-7",
+            "agency_code_raw": "1024",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=文珠神社\nコードNo=1024\n鎮座地=甲府市寿町5-7",
+            "fetched_at": "2026-11-13T13:06:32.527396+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              ""
+            ],
+            "name_field_raw": "文珠神社",
+            "name_raw": "文珠神社",
+            "page_hash": "63780173aea243d12b8c8eeb27a0b0a45e0562fdd8c4f73387f4e202778dadc1",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1024"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "entry_id": "852d0af3-8fcc-5bdd-ba5a-89d6a8af3bac",
+          "expected_source_hash": "b3b702cd3e44f71b42228aa069da6c7df4e48731d57180d915df0ba650fc5e4e",
+          "index_reference": {
+            "excerpt": "コードNo=1025 社号=浅間神社 鎮座地=甲府市青沼3-5-3",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1025",
+            "locator": "table tr[26] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市青沼3-5-3",
+          "original_name": "浅間神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市青沼3-5-3",
+            "agency_code_raw": "1025",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=浅間神社\nコードNo=1025\n鎮座地=甲府市青沼3-5-3",
+            "fetched_at": "2026-11-13T13:06:34.624262+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "浅間神社(旧村社)",
+            "name_raw": "浅間神社",
+            "page_hash": "8e27de7f7507ddef4e015415f2d108812a674a39dcb0c30b210a999f67515577",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1025"
+          },
+          "related_actual_external_hrefs": [],
+          "status": "agency_detail_without_literal_formal_name_full_kana"
+        }
+      ],
+      "source_conditions": {
+        "data_use_conditions": "公開データの再利用許諾は確認できていない。著作権表示を確認。本文・画像・キャッシュは公開しない。",
+        "official_url": "https://www.yamanashi-jinjacho.or.jp/",
+        "robots_url": "https://www.yamanashi-jinjacho.or.jp/robots.txt",
+        "terms_urls": []
+      },
+      "source_fields_not_used_for_reading": [
+        "祭神",
+        "宮司名",
+        "境内地",
+        "氏子戸数",
+        "電話",
+        "由緒沿革の他名"
+      ],
+      "source_profile_field_names": [
+        "正称",
+        "旧社格",
+        "コードNo",
+        "鎮座地"
+      ],
+      "status": "twenty_actual_official_profiles_inspected_no_literal_full_name_kana_held"
+    },
+    {
       "adopted_reading_research_history": [
         {
           "additional_source_reviews": [
@@ -549661,6 +550617,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "0b2faad2-8927-5ac4-8067-53e73d2fe5a3",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "6c6c9b8869451a9e00e2683e67beae0bf8d7b5d3d4d2b5af60477eaa2412a9bd",
+          "index_reference": {
+            "excerpt": "コードNo=1024 社号=文珠神社 鎮座地=甲府市寿町5-7",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1024",
+            "locator": "table tr[25] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市寿町5-7",
+          "original_name": "文珠神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市寿町5-7",
+            "agency_code_raw": "1024",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=文珠神社\nコードNo=1024\n鎮座地=甲府市寿町5-7",
+            "fetched_at": "2026-11-13T13:06:32.527396+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              ""
+            ],
+            "name_field_raw": "文珠神社",
+            "name_raw": "文珠神社",
+            "page_hash": "63780173aea243d12b8c8eeb27a0b0a45e0562fdd8c4f73387f4e202778dadc1",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1024"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市寿町5-7",
@@ -555121,6 +556122,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "1a268bc8-d0c6-5020-ad22-979195fd40b1",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "7e7bdeca83107b02e9a14f87d2cf233026409876d6c9d21cc1807a7778f43f5e",
+          "index_reference": {
+            "excerpt": "コードNo=1007 社号=脚気石稲荷神社 鎮座地=甲府市上帯那町2314",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1007",
+            "locator": "table tr[8] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市上帯那町2314",
+          "original_name": "脚気石稲荷神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市上帯那町2314",
+            "agency_code_raw": "1007",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=脚気石稲荷神社\nコードNo=1007\n鎮座地=甲府市上帯那町2314",
+            "fetched_at": "2026-11-13T13:06:05.247503+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              ""
+            ],
+            "name_field_raw": "脚気石稲荷神社",
+            "name_raw": "脚気石稲荷神社",
+            "page_hash": "db0ac46fb6bf3434c61a820b1db14b1114d8abb359f0670b505a6187a1e6711b",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1007"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市上帯那町2314",
@@ -556789,6 +557835,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "1de1aa28-c331-5f84-8ba7-eb5e05a698a9",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "e420505282bbd481e733c0199be4fee9077df7cf1658697b17d074604c91b2d0",
+          "index_reference": {
+            "excerpt": "コードNo=1015 社号=王法子神社 鎮座地=甲府市大里町3712",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1015",
+            "locator": "table tr[16] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市大里町3712",
+          "original_name": "王法子神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市大里町3712",
+            "agency_code_raw": "1015",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=王法子神社\nコードNo=1015\n鎮座地=甲府市大里町3712",
+            "fetched_at": "2026-11-13T13:06:17.832759+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "王法子神社(旧村社)",
+            "name_raw": "王法子神社",
+            "page_hash": "123b613c2e01467769d7e0a811281d9eb46e56bae259ae5a432a85ce12ca0cb1",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1015"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市大里町3712",
@@ -557524,6 +558615,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "20114034-18f2-57f3-afd1-b9c53ce5812d",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "abe88d16e5181cecce5633a0e3d6f5aea8cf27b4f9d2b2ebfc074dee106caec5",
+          "index_reference": {
+            "excerpt": "コードNo=1001 社号=南宮神社 鎮座地=甲府市北新2-12-20",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1001",
+            "locator": "table tr[2] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市北新2-12-20",
+          "original_name": "南宮神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市北新2-12-20",
+            "agency_code_raw": "1001",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=南宮神社\nコードNo=1001\n鎮座地=甲府市北新2-12-20",
+            "fetched_at": "2026-11-13T13:03:53.338391+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "南宮神社(旧村社)",
+            "name_raw": "南宮神社",
+            "page_hash": "6c072e0791915782507f4ddf156da3f88960d86d86ed2a0d9c4b513435d106ba",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1001"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市北新2-12-20",
@@ -558609,6 +559745,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "239f4cc8-10ca-5abc-b903-69760fa0e2c6",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "8788435bb64ec0844190601c4ad1855899f187554324d579f80333e49fe39e78",
+          "index_reference": {
+            "excerpt": "コードNo=1017 社号=広瀬神社 鎮座地=甲府市大津町1316",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1017",
+            "locator": "table tr[18] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市大津町1316",
+          "original_name": "広瀬神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市大津町1316",
+            "agency_code_raw": "1017",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=広瀬神社\nコードNo=1017\n鎮座地=甲府市大津町1316",
+            "fetched_at": "2026-11-13T13:06:19.926052+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "広瀬神社(旧村社)",
+            "name_raw": "広瀬神社",
+            "page_hash": "513abd620e3db6d176e2ecbc5d89de1f9aad4ae5068ad2dab52dc48ffc325b31",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1017"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市大津町1316",
@@ -561248,6 +562429,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "2dff83b2-e2b5-5a8b-b628-a7a17bc30cea",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "249f0a6627934eecaa0e98fbe263ac5378d3ef809bb4720a4c121393eb33a7d6",
+          "index_reference": {
+            "excerpt": "コードNo=1005 社号=日吉神社 鎮座地=甲府市上積翠寺町630",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1005",
+            "locator": "table tr[6] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市上積翠寺町630",
+          "original_name": "日吉神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市上積翠寺町630",
+            "agency_code_raw": "1005",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=日吉神社\nコードNo=1005\n鎮座地=甲府市上積翠寺町630",
+            "fetched_at": "2026-11-13T13:06:01.068576+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "日吉神社(旧村社)",
+            "name_raw": "日吉神社",
+            "page_hash": "209a0611a785be42701621283dbe90b1047686f9c26d99b21be9d107b79bf887",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1005"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市上積翠寺町630",
@@ -565663,6 +566889,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "377dfe3a-60e1-555b-997d-b2740307b119",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "5f9a2c9399d9b0716bf3f0f294a31e2aa34b7d61ea988fdc7f353c3d8cac4e94",
+          "index_reference": {
+            "excerpt": "コードNo=1014 社号=熊野神社 鎮座地=甲府市大里町字二日市場2063",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1014",
+            "locator": "table tr[15] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市大里町字二日市場2063",
+          "original_name": "熊野神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市大里町字二日市場2063",
+            "agency_code_raw": "1014",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=熊野神社\nコードNo=1014\n鎮座地=甲府市大里町字二日市場2063",
+            "fetched_at": "2026-11-13T13:06:15.723165+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "熊野神社(旧村社)",
+            "name_raw": "熊野神社",
+            "page_hash": "c3d6eca2405d6db1f4475947604b809d0f9e59c249a659a78b3de9109cc71e4d",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1014"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市大里町字二日市場2063",
@@ -567096,6 +568367,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "3b4b80fa-5f88-5ffa-838e-a64310d1560a",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "f1cb7ac2e85c0d105b6ab422c6363da58a69342ffa6bc0c1a96421c6790e95cf",
+          "index_reference": {
+            "excerpt": "コードNo=1023 社号=八雲神社 鎮座地=甲府市猪狩町1261",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1023",
+            "locator": "table tr[24] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市猪狩町1261",
+          "original_name": "八雲神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市猪狩町1261",
+            "agency_code_raw": "1023",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=八雲神社\nコードNo=1023\n鎮座地=甲府市猪狩町1261",
+            "fetched_at": "2026-11-13T13:06:30.433217+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "八雲神社(旧村社)",
+            "name_raw": "八雲神社",
+            "page_hash": "9606ce538dced4a7cfb1a27267918bda82b79ce47eb713b51fa700650959af3d",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1023"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市猪狩町1261",
@@ -582872,6 +584188,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "68797125-d4c3-594b-9c19-ecc0dfff4e57",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "8ae7663bf00d16141c1266994d04fa67a5fb8f46287fa38b0bef79438624d363",
+          "index_reference": {
+            "excerpt": "コードNo=1002 社号=八幡神社 鎮座地=甲府市古府中町1529",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1002",
+            "locator": "table tr[3] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市古府中町1529",
+          "original_name": "八幡神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市古府中町1529",
+            "agency_code_raw": "1002",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=八幡神社\nコードNo=1002\n鎮座地=甲府市古府中町1529",
+            "fetched_at": "2026-11-13T13:03:55.442607+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "八幡神社(旧村社)",
+            "name_raw": "八幡神社",
+            "page_hash": "c17f8fbc9398ab85dd949d804fba49a7bfdf3637883059564e3ef29bf74c91e5",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1002"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市古府中町1529",
@@ -586800,6 +588161,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "74aee138-a78e-5763-82a9-f90f05ceaae2",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "582ea2a1db44bcad96c73ab40cb903e758b9d7adb655b80e0533099dd0f74fef",
+          "index_reference": {
+            "excerpt": "コードNo=1008 社号=諏訪神社 鎮座地=甲府市上帯那町1485",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1008",
+            "locator": "table tr[9] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市上帯那町1485",
+          "original_name": "諏訪神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市上帯那町1485",
+            "agency_code_raw": "1008",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=諏訪神社\nコードNo=1008\n鎮座地=甲府市上帯那町1485",
+            "fetched_at": "2026-11-13T13:06:07.336203+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "諏訪神社(旧村社)",
+            "name_raw": "諏訪神社",
+            "page_hash": "0d2dbc9625b2834ca549b03d2a7bd4cb1a03034509f21fbc1991d81f7d50c298",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1008"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市上帯那町1485",
@@ -586962,6 +588368,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "74c5c5fb-29ca-56a7-a021-6f8bd4c60803",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "ce73ca24bdeecb2797478d04be8687a6c22ba41eeb076be6f03dad06d8646e13",
+          "index_reference": {
+            "excerpt": "コードNo=1021 社号=近戸神社 鎮座地=甲府市高町134",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1021",
+            "locator": "table tr[22] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市高町134",
+          "original_name": "近戸神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市高町134",
+            "agency_code_raw": "1021",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=近戸神社\nコードNo=1021\n鎮座地=甲府市高町134",
+            "fetched_at": "2026-11-13T13:06:26.244518+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "近戸神社(旧村社)",
+            "name_raw": "近戸神社",
+            "page_hash": "66d0cac353a8e71db16e50438e154ee0c7e91606d761a88f3c2fe8575d9a1073",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1021"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市高町134",
@@ -592437,6 +593888,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "852d0af3-8fcc-5bdd-ba5a-89d6a8af3bac",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "b3b702cd3e44f71b42228aa069da6c7df4e48731d57180d915df0ba650fc5e4e",
+          "index_reference": {
+            "excerpt": "コードNo=1025 社号=浅間神社 鎮座地=甲府市青沼3-5-3",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1025",
+            "locator": "table tr[26] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市青沼3-5-3",
+          "original_name": "浅間神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市青沼3-5-3",
+            "agency_code_raw": "1025",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=浅間神社\nコードNo=1025\n鎮座地=甲府市青沼3-5-3",
+            "fetched_at": "2026-11-13T13:06:34.624262+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "浅間神社(旧村社)",
+            "name_raw": "浅間神社",
+            "page_hash": "8e27de7f7507ddef4e015415f2d108812a674a39dcb0c30b210a999f67515577",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1025"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市青沼3-5-3",
@@ -599098,6 +600594,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "99ec7875-95af-5038-a977-d1fc5e3fba2d",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "cb254e0e3fb2fe730f80a958c02f40fee4d047a86591a676280149d16132a886",
+          "index_reference": {
+            "excerpt": "コードNo=1022 社号=金生神社 鎮座地=甲府市草鹿沢町402",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1022",
+            "locator": "table tr[23] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市草鹿沢町402",
+          "original_name": "金生神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市草鹿沢町402",
+            "agency_code_raw": "1022",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=金生神社\nコードNo=1022\n鎮座地=甲府市草鹿沢町402",
+            "fetched_at": "2026-11-13T13:06:28.335895+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "金生神社(旧村社)",
+            "name_raw": "金生神社",
+            "page_hash": "39f5f5acf1474147609348dfeb611c9a2ddb4365a6035df9a5be5145d8432a4c",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1022"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市草鹿沢町402",
@@ -599257,6 +600798,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "9b6d74e7-fc28-5213-9347-6746d7e25201",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "52a07f56961c973e56f952fa7b0ac4ba2d8d68d9f8f1a043766acf4cff353a69",
+          "index_reference": {
+            "excerpt": "コードNo=1020 社号=大山祇神社 鎮座地=甲府市黒平町725",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1020",
+            "locator": "table tr[21] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市黒平町725",
+          "original_name": "大山祇神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市黒平町725",
+            "agency_code_raw": "1020",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=大山祇神社\nコードNo=1020\n鎮座地=甲府市黒平町725",
+            "fetched_at": "2026-11-13T13:06:24.132684+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "大山祇神社(旧村社)",
+            "name_raw": "大山祇神社",
+            "page_hash": "20ca19530219299b605e2a39fe69bfc50a794b90c609ed40f433b2502371f5e4",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1020"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市黒平町725",
@@ -600875,6 +602461,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "9eb173b4-043a-5016-b1b4-55c86893a4c0",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "475a2ab97bfee625f820e78cd85f5c575e4e9aaf1af0f3b2e4580cd5522a83e1",
+          "index_reference": {
+            "excerpt": "コードNo=1018 社号=八幡神社 鎮座地=甲府市西下条町694",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1018",
+            "locator": "table tr[19] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市西下条町694",
+          "original_name": "八幡神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市西下条町694",
+            "agency_code_raw": "1018",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=八幡神社\nコードNo=1018\n鎮座地=甲府市西下条町694",
+            "fetched_at": "2026-11-13T13:06:22.031271+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "八幡神社(旧村社)",
+            "name_raw": "八幡神社",
+            "page_hash": "232bfd7a14ea55a474125b974a59392d75daa079958fd1f8ddce682fd165e0ed",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1018"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市西下条町694",
@@ -602450,6 +604081,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "a106573b-e5f3-5068-ac68-245e9326e271",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "2b62d561fb32b5039cdcde6affea3560396e2ee2b67f5e193074c459fdd4c4b9",
+          "index_reference": {
+            "excerpt": "コードNo=1006 社号=白山神社 鎮座地=甲府市下積翠寺町1109",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1006",
+            "locator": "table tr[7] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市下積翠寺町1109",
+          "original_name": "白山神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市下積翠寺町1109",
+            "agency_code_raw": "1006",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=白山神社\nコードNo=1006\n鎮座地=甲府市下積翠寺町1109",
+            "fetched_at": "2026-11-13T13:06:03.162347+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "白山神社(旧村社)",
+            "name_raw": "白山神社",
+            "page_hash": "51e459e018baf51e25cc39ffafe60007c5af524bb80338e83b6c6f048a72f15e",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1006"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市下積翠寺町1109",
@@ -620786,6 +622462,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "d31eca56-1ee8-5365-98e8-1e7d36de4a7f",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "05027da6ed1b0a0613d35be8c15c9156ff2e5037634aeeeb6216e6dc7d9d9bbb",
+          "index_reference": {
+            "excerpt": "コードNo=1004 社号=若宮八幡神社 鎮座地=甲府市古府中町大日影3478",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1004",
+            "locator": "table tr[5] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市古府中町大日影3478",
+          "original_name": "若宮八幡神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市古府中町大日影3478",
+            "agency_code_raw": "1004",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=若宮八幡神社\nコードNo=1004\n鎮座地=甲府市古府中町大日影3478",
+            "fetched_at": "2026-11-13T13:05:58.980904+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧村社)"
+            ],
+            "name_field_raw": "若宮八幡神社(旧村社)",
+            "name_raw": "若宮八幡神社",
+            "page_hash": "bdec9b53273afd5f1877d5d05b7cf945b776cd02f8f7a74a3d416dd4d65522f1",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1004"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市古府中町大日影3478",
@@ -622152,6 +623873,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "d6ed0188-26d6-586e-9e3a-bbee067f6870",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "dcd7295278a9dd64e7d56e2ca08ee366ec8e13a4431e035ede76c90232241030",
+          "index_reference": {
+            "excerpt": "コードNo=1009 社号=諏訪神社 鎮座地=甲府市下帯那町2005",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1009",
+            "locator": "table tr[10] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市下帯那町2005",
+          "original_name": "諏訪神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市下帯那町2005",
+            "agency_code_raw": "1009",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=諏訪神社\nコードNo=1009\n鎮座地=甲府市下帯那町2005",
+            "fetched_at": "2026-11-13T13:06:09.437213+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              "(旧郷社)"
+            ],
+            "name_field_raw": "諏訪神社(旧郷社)",
+            "name_raw": "諏訪神社",
+            "page_hash": "1162992eed3bc4ef40a0f9833c9670e057fdeef40ac95758a3a59ad2d86718cc",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1009"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市下帯那町2005",
@@ -624006,6 +625772,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "d9736159-7137-596b-afa3-ff624e620bf6",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "7c0c2b45a73af5c3b5604b6e44fac052d9d59c3291ddedc99174ffcb10d48566",
+          "index_reference": {
+            "excerpt": "コードNo=1013 社号=八坂神社 鎮座地=甲府市大里町円満寺",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1013",
+            "locator": "table tr[14] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市大里町円満寺",
+          "original_name": "八坂神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市大里町円満寺",
+            "agency_code_raw": "1013",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=八坂神社\nコードNo=1013\n鎮座地=甲府市大里町円満寺",
+            "fetched_at": "2026-11-13T13:06:13.609644+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              ""
+            ],
+            "name_field_raw": "八坂神社",
+            "name_raw": "八坂神社",
+            "page_hash": "8f1ac43aba223b66ae2591336575e46a5a0ccfc5af1a89a134222b0c745edcbc",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1013"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市大里町円満寺",
@@ -632865,6 +634676,51 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "body_literal_name_kana_occurrences": [],
+          "checked_at": "2026-11-13T13:08:36.836341+00:00",
+          "entry_id": "f1122d50-43f2-5cde-8d30-8f452bd09c84",
+          "evidence_attempt": "yamanashi_kofu_first_index_actual_code_links_twenty_official_details_no_full_kana_20261113",
+          "expected_source_hash": "246bdac14dac4f32d05bee49fb9fb99f7b8a18cf0b77eea2b64a8259ab3f04af",
+          "index_reference": {
+            "excerpt": "コードNo=1010 社号=片山稲荷神社 鎮座地=甲府市平瀬町2135-1",
+            "fetched_at": "2026-11-13T13:03:09.318846+00:00",
+            "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1010",
+            "locator": "table tr[11] コードNo/社号/鎮座地/詳細リンク",
+            "original_index_page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "original_index_page_hash_matches": true,
+            "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1"
+          },
+          "observation": "本文h1の正称とコード・鎮座地を個別確認。独立全文かな欄と正式名直後の連続括弧かなを確認できず、旧社格や祭神のかなから正称の読みを作らず保留。",
+          "original_address": "甲府市平瀬町2135-1",
+          "original_name": "片山稲荷神社",
+          "prefecture_code": "19",
+          "reference": {
+            "address_raw": "甲府市平瀬町2135-1",
+            "agency_code_raw": "1010",
+            "checked_at": "2026-11-13T13:07:17.161612+00:00",
+            "excerpt": "神社名=片山稲荷神社\nコードNo=1010\n鎮座地=甲府市平瀬町2135-1",
+            "fetched_at": "2026-11-13T13:06:11.519895+00:00",
+            "locator": "固有h1の社名とjname-old旧社格表示を分離して保持、コードNo、th[■鎮座地]直後のtd。タグtrの末尾に引用符を含む原HTMLも原構造のまま点検。宮司名・連絡先・祭神は抽出対象外。",
+            "name_designation_raw": [
+              ""
+            ],
+            "name_field_raw": "片山稲荷神社",
+            "name_raw": "片山稲荷神社",
+            "page_hash": "a55be0ba024f6b275267170892def8efa2717d11db2045ccc8023763cf78f720",
+            "reading_raw": "",
+            "reading_scope": "no_literal_full_name_kana_observed",
+            "rights_note": "既記録の神社庁公開掲載の利用条件の範囲。Copyright表示を包括再配布許諾とせず正式名・旧社格・コード・鎮座地と出典の限定事実だけを保存。人物名・連絡先・由緒全文・写真・キャッシュは収録しない。",
+            "source_kind": "agency",
+            "source_publisher": "山梨県神社庁",
+            "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/1010"
+          },
+          "related_actual_external_hrefs": [],
+          "scope": "甲府支部の最初の1一覧ページにある現保留20登録の実コード・社号・原全所在地と実詳細hrefを照合し、その20本文だけを点検。旧社格・祭神・宮司の文字から正称の読みを作らない。",
+          "status": "agency_detail_without_literal_formal_name_full_kana"
         }
       ],
       "address": "甲府市平瀬町2135-1",
