@@ -13343,10 +13343,10 @@
           "scope": "保存市町村名の市市を文字列診断した点検候補。各施設の自治体名・所在地又は読みを確定・変更した件数ではない。"
         },
         "effective_entry_status_counts": {
-          "pending": 986,
-          "verified": 448
+          "pending": 970,
+          "verified": 464
         },
-        "effective_pending_entries": 986,
+        "effective_pending_entries": 970,
         "effective_reading_eligible_facilities": 436,
         "facilities_collected": 1434,
         "fields_observed": {
@@ -13370,6 +13370,18 @@
           "unresolved_reading_conflicts": 21,
           "verified_reading_supplements": 290
         },
+        "government_cultural_map_owner_reading_followups": [
+          {
+            "checked_at": "2026-11-13T07:20:14.034117+00:00",
+            "compatible_original_entries": 20,
+            "evidence_data": "data/corrections.json; data/reading_research.json",
+            "fixed_target_entries": 986,
+            "new_verified_entries": 16,
+            "remaining_pending_entries": 970,
+            "retained_compatible_holds": 4,
+            "scope": "2022年3月版の県建造物MAP p.2所有者等/よみがな/所在地欄を、現在保留の滋賀986原登録へ限定照合。市町見出しを左右の表で分離し同じ行の独立全文かなだけ抽出。名称一致だけで施設を統合せず全1434神社庁原施設に対する同名同町域の競合も照合。20対応のうち別試行で16採用、八坂2・宇和宮・思子淵の4登録は既知の同定問題を維持。県内全神社の全資料・現地住所/数字地番・全期間の網羅確認ではない。"
+          }
+        ],
         "inspection_evidence": [
           {
             "fetched_at": "2026-11-09T14:21:36.442015+00:00",
@@ -20742,13 +20754,13 @@
         "supplemental_reading_facilities": 432,
         "unfinished_reading_summary": {
           "categories": {
-            "insufficient_evidence_in_inspected_sources": 927,
+            "insufficient_evidence_in_inspected_sources": 912,
             "investigation_incomplete": 0,
-            "judgment_required": 59
+            "judgment_required": 58
           },
           "evidence_data": "data/reading_research.json",
           "nta_current_targets_checked": 962,
-          "unfinished_entries": 986
+          "unfinished_entries": 970
         }
       },
       "conditions": {
@@ -46866,8 +46878,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13726,
-    "effective_verified_facilities": 44391,
+    "effective_dictionary_rows": 13730,
+    "effective_verified_facilities": 44407,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
