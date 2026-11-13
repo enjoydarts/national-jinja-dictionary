@@ -320423,6 +320423,71 @@
       "verified_eligible_delta": [
         "403b290c-e9e9-5446-b021-bc5a574949f3"
       ]
+    },
+    {
+      "acquisition": "通常CorporateClient・robots遵守・同一ホスト2秒以上・timeout20秒・再試行0。ローカル解析時のNode API誤用を修正し、一覧は取得済みキャッシュを再利用。HTTP拒否やrobots制限の回避ではない。web toolで一覧へアクセスできないという結果はサーバ403又は閉鎖の証拠と扱わない。",
+      "attempt_id": "miyagi_haguro_actual_index_link_detail_retains_suspected_reading_20261113",
+      "checked_at": "2026-11-13T09:13:22.942709+00:00",
+      "entry_ids": [
+        "096f8a0c-ab83-57d6-bd3a-f1b561ec9e31"
+      ],
+      "inspected_targets": 1,
+      "new_verified_entries": 0,
+      "observation": "正式名・原住所・実リンクは同定できたが、詳細もはぐろじじゃを表示。実資料の字形・語尾を勝手に補作せず、原読み・補正・要判断分類を保持。取得本文・画像・電話番号・キャッシュは収録しない。",
+      "reference_observation": {
+        "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+        "agency_link_observation": {
+          "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+          "fetched_at": "2026-11-13T09:11:58.502973+00:00",
+          "href_raw": "detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15",
+          "index_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=41",
+          "page_hash": "abe43235e52b067654010be06b59b05ffa40e1dfa686877e8de5e85db45f926d",
+          "subject_text_raw": "\n      羽黒神社（はぐろじじゃ）\n    "
+        },
+        "authority_observation": "実詳細本文に宮城県神社庁の運営表記があり、原一覧の一迫柳の目字曽根除下50の同名行から実リンクする詳細として確認。非公式投稿の転載を独立証拠にしない。",
+        "checked_at": "2026-11-13T09:13:22.942709+00:00",
+        "excerpt": "羽黒神社（はぐろじじゃ） 鎮座地: 宮城県栗原市一迫柳の目字曽根除下50",
+        "fetched_at": "2026-11-13T09:12:38.480571+00:00",
+        "locator": "神社詳細の名称括弧内かなと鎮座地欄",
+        "name_raw": "羽黒神社",
+        "page_hash": "06d759147df49f054c1dd4b1df5070eb9c2bb10e6a80c96bb36b57feb6e57677",
+        "reading_raw": "はぐろじじゃ",
+        "source_kind": "agency",
+        "source_publisher": "宮城県神社庁",
+        "title": "羽黒神社 | 宮城県神社庁",
+        "url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15"
+      },
+      "references": [
+        {
+          "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+          "fetched_at": "2026-11-13T09:11:58.502973+00:00",
+          "href_raw": "detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15",
+          "key": "index",
+          "page_hash": "abe43235e52b067654010be06b59b05ffa40e1dfa686877e8de5e85db45f926d",
+          "status": "acquired",
+          "subject_text_raw": "\n      羽黒神社（はぐろじじゃ）\n    ",
+          "url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=41"
+        },
+        {
+          "fetched_at": "2026-11-13T09:12:38.480571+00:00",
+          "key": "detail",
+          "page_hash": "06d759147df49f054c1dd4b1df5070eb9c2bb10e6a80c96bb36b57feb6e57677",
+          "status": "acquired",
+          "url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15"
+        }
+      ],
+      "retained_pending_entries": 1,
+      "scope": "原一覧page41の住所一致1行と、その実hrefが指す詳細の2本文だけ。栗原市の同名別所在地（栗駒片子沢田高田82）のかなを一迫柳の目の登録へ適用しない。宮城県全体を再取得した調査ではない。",
+      "source_kind": "agency",
+      "source_publisher": "宮城県神社庁",
+      "status": "actual_agency_detail_repeats_original_kana_hold_retained",
+      "unacquired_other_candidate": {
+        "discovery_only_url": "https://hotokami.jp/area/ehime/Hrztm/Hrztmtr/Datas/132333/",
+        "entry_id": "fe21906f-1e8a-5475-99f6-394f132e5dd8",
+        "facility_pages_acquired": 0,
+        "observation": "愛媛の別保留案件の探索で当該URLが現れたが、既存の投稿情報利用条件の未確認による取得停止を先に照合し、本文・投稿・画像を取得せず検索抜粋を根拠に採用しない。公式ラベルだけで掲載かなの発行主体を確定しない。",
+        "prior_stop_attempt_id": "hotokami_posted_information_reuse_terms_unconfirmed_20261112"
+      }
     }
   ],
   "per_prefecture": {
@@ -462120,6 +462185,38 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T09:13:22.942709+00:00",
+          "evidence_attempt": "miyagi_haguro_actual_index_link_detail_retains_suspected_reading_20261113",
+          "expected_source_hash": "f843d061945973add5a8c2c9451df43fe3eb9621088003f8119556ecfd75d24a",
+          "observation": "同一の名前・所在地の実詳細でも原かなはぐろじじゃを反復しており、一覧だけの抽出誤りとは確認できない。途中にんを推定追加せず、既存要確認補正と原文を保持。",
+          "reference": {
+            "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+            "agency_link_observation": {
+              "address_raw": "宮城県栗原市一迫柳の目字曽根除下50",
+              "fetched_at": "2026-11-13T09:11:58.502973+00:00",
+              "href_raw": "detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15",
+              "index_url": "https://miyagi-jinjacho.or.jp/jinja-search/list.php?per_page=15&page=41",
+              "page_hash": "abe43235e52b067654010be06b59b05ffa40e1dfa686877e8de5e85db45f926d",
+              "subject_text_raw": "\n      羽黒神社（はぐろじじゃ）\n    "
+            },
+            "authority_observation": "実詳細本文に宮城県神社庁の運営表記があり、原一覧の一迫柳の目字曽根除下50の同名行から実リンクする詳細として確認。非公式投稿の転載を独立証拠にしない。",
+            "checked_at": "2026-11-13T09:13:22.942709+00:00",
+            "excerpt": "羽黒神社（はぐろじじゃ） 鎮座地: 宮城県栗原市一迫柳の目字曽根除下50",
+            "fetched_at": "2026-11-13T09:12:38.480571+00:00",
+            "locator": "神社詳細の名称括弧内かなと鎮座地欄",
+            "name_raw": "羽黒神社",
+            "page_hash": "06d759147df49f054c1dd4b1df5070eb9c2bb10e6a80c96bb36b57feb6e57677",
+            "reading_raw": "はぐろじじゃ",
+            "source_kind": "agency",
+            "source_publisher": "宮城県神社庁",
+            "title": "羽黒神社 | 宮城県神社庁",
+            "url": "https://miyagi-jinjacho.or.jp/jinja-search/detail.php?code=310020535&chinzachi=&jinja_name=&jinja_kana=&page=41&per_page=15"
+          },
+          "remaining_requirement": "当該施設の社名全文の読みを独立に明示し、同じ所在地への対応を確認できる資料。",
+          "status": "same_facility_agency_detail_repeats_suspected_full_reading"
         }
       ],
       "address": "宮城県栗原市一迫柳の目字曽根除下50",
