@@ -26366,13 +26366,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10317,
         "scope": "泰阜村23保留を公開CSV55名称行へ照合し対応行0。御代田町13保留の2CSVは404、飯綱町の追加1記事は無断複製転用禁止で未取得。全資料の解決完了ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T14:03:30.298879+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10317,
+        "scope": "坂門一言神社の新候補1記事は本文の無断転載・複製禁止で未取得。学術資源案内1件は既点検大学DBと同じURLと確認し重複取得/採用を回避。読みや所在地の解決完了ではない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:03:30.298879+00:00",
+      "checked_at": "2026-11-13T14:11:38.828019+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10317,
-      "scope": "坂門一言神社の新候補1記事は本文の無断転載・複製禁止で未取得。学術資源案内1件は既点検大学DBと同じURLと確認し重複取得/採用を回避。読みや所在地の解決完了ではない。"
+      "scope": "高知工科大学公開目録の地域資源2表95実データ行を追加確認。市内同名10登録は読み/全所在地不足又は別町域のため保留。006実リンクは既取得kut024と同一IDで重複取得しない。"
     },
     "remaining_unfinished_entries": 10317,
     "resolved_entry_ids": [
@@ -26931,7 +26937,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:03:30.298879+00:00",
+  "computed_at": "2026-11-13T14:11:38.828019+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -402985,6 +402991,194 @@
         }
       ],
       "target_entries": 1
+    },
+    {
+      "acquisition": "新規原ファイルは実目録リンク2件のみ。MIMEをDriveメタデータで確認し、CSVと非ネイティブXLSXをfetch(download_raw_file=True, include_base64=False)で取得、返却ファイル参照から実体化。native Sheetsへの変換/編集、資料元の別経路取得なし。既存3CSV・目録・説明本文は原hashと保存済み本文だけをオフライン確認。",
+      "attempt_id": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+      "authority_and_terms_reference": {
+        "fetched_at": "2026-11-13T11:17:58.284907+00:00",
+        "page_hash": "5e9d6cdf8fe0c2aa37694dd195a44f1577e615293c8ed1a220754e5c038a5e24",
+        "url": "https://sites.google.com/view/kochi-gis/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+      },
+      "catalogue_vs_table_count_observation": "中後入の目録説明は45カ所、XLSXの元シートはヘッダー込み45行/データ44行。目録数を実データ行数にせず、差の原因や欠けた行を推定しない。",
+      "checked_at": "2026-11-13T14:11:38.828019+00:00",
+      "data_resources": 2,
+      "data_rows": 95,
+      "exact_name_comparison_pairs": 77,
+      "individually_reviewed_entry_ids": [
+        "13bbc328-b70c-50a6-b204-928497323817",
+        "352dad90-ec11-5722-93b6-e4629f0ff3f6",
+        "9c16e780-d0e4-5f97-829a-e65856d8db8b",
+        "cd5d9979-780b-520e-884e-db889707aa60",
+        "baab81d7-c4ae-57fa-8f3d-32f00b8ff5c3",
+        "26a0f050-72bb-5329-8a94-9226b0e2fae9",
+        "277c8866-93e2-538a-b1b2-6e523301cef2",
+        "a096a123-a475-5958-94d4-df0c4886217f",
+        "db474a88-32ab-51f5-8b48-6e7d1b2bf172",
+        "f6b7316f-cdf8-5354-8b8c-27626d83e1a9"
+      ],
+      "named_rows": 95,
+      "new_verified_entries": 0,
+      "old_three_table_alias_audit": {
+        "natural_catalogue_number": "006",
+        "natural_catalogue_title": "物部川流域の神社調査",
+        "observation": "自然分野の006実リンクのDrive IDは既取得kut024と同じ。109行の原バイトhashを確認し、新規取得・新規データ源・独立根拠として数えない。初期の別資料という見込みはID確認で撤回。",
+        "page_hash": "4e8f392aa85dfe2e63f12e84d4c0a46f5cfd01d5b7dfa2f7f97c93ebf91cf4c1",
+        "prior_evidence_attempt": "kochi_kut_field_database_three_csv_1732_targets_32_full_readings_20261113",
+        "same_drive_id": "1XljWg3M9DwbH44bRp2SIxrNuGkvtcplA",
+        "same_recorded_resource_label": "kut024",
+        "same_recorded_title": "香美神社調査DB.csv",
+        "table_record_counts": {
+          "kut007": 194,
+          "kut011": 107,
+          "kut024": 109
+        },
+        "total_records": 410
+      },
+      "physical_rows": 97,
+      "privacy_and_storage": "CSV/XLSX・XML全文・可読本文・写真・屋号一覧・個人名・認証情報・署名付きファイル参照/URL・キャッシュは収録しない。公開Drive ID/URL・資料標題・hash・必要施設欄・列構成・限定比較結果だけを保存。",
+      "resources": [
+        {
+          "acquisition": "Google Drive connector metadata/fetch後、返却された認証済みfile_uriから原ファイルを一時領域へ実体化。資料元の別経路・形式を用いた取得ではない。",
+          "bytes": 6745,
+          "catalogue_number": "026",
+          "catalogue_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "catalogue_title": "本村の地域資源地図",
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "credit": "出典：高知工科大学フィールドDB「本村の地域資源地図」の公開資料 佐岡地域資源DB集成表（本村）.csv（本欄URL）。national-jinja-dictionaryが必要な施設名/読み/地名列と原登録の限定比較結果を抜粋・要約して作成。",
+          "data_rows": 51,
+          "exact_name_comparison_pairs": 51,
+          "fetched_at": "2026-11-13T14:08:12.414113+00:00",
+          "fetched_at_basis": "Driveが返した原ファイル参照のローカル実体化完了時刻。",
+          "full_address_column": false,
+          "hash_scope": "コネクタの原ファイル参照から保存したCSV/XLSXバイト。可読本文の再符号化hashではない。",
+          "id": "1nXYS6NkjFk99rre8abulA4a75u2tuVt6",
+          "license_status": "reusable_data_license_unconfirmed",
+          "mime_type": "text/csv",
+          "modified_time": "2022-09-18T08:23:21.797Z",
+          "named_rows": 51,
+          "page_hash": "4da8f9a4bdfc612db21c66ecd35d5fcdfdd350244aff55f49e11c53b182e6345",
+          "physical_rows": 52,
+          "reading_column": false,
+          "rights_scope": "既記録の大学フィールドDB説明本文と標準Copyrightの範囲を確認。公開ダウンロードを包括転載許諾とせず、名称/独立読み/地名と根拠位置・照合結果だけ保存。人名・屋号・民俗記述・全データ・写真は収録しない。",
+          "same_kami_city_comparison_pairs": 4,
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "title": "佐岡地域資源DB集成表（本村）.csv",
+          "url": "https://drive.google.com/file/d/1nXYS6NkjFk99rre8abulA4a75u2tuVt6/view"
+        },
+        {
+          "acquisition": "Google Drive connector metadata/fetch後、返却された認証済みfile_uriから原ファイルを一時領域へ実体化。資料元の別経路・形式を用いた取得ではない。",
+          "bytes": 18019,
+          "catalogue_number": "027",
+          "catalogue_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "catalogue_title": "中後入の地域資源地図",
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "credit": "出典：高知工科大学フィールドDB「中後入の地域資源地図」の公開資料 中後入地域資源DB.xlsx（本欄URL）。national-jinja-dictionaryが必要な施設名/読み/地名列と原登録の限定比較結果を抜粋・要約して作成。",
+          "data_rows": 44,
+          "exact_name_comparison_pairs": 26,
+          "fetched_at": "2026-11-13T14:08:17.351689+00:00",
+          "fetched_at_basis": "Driveが返した原ファイル参照のローカル実体化完了時刻。",
+          "full_address_column": false,
+          "hash_scope": "コネクタの原ファイル参照から保存したCSV/XLSXバイト。可読本文の再符号化hashではない。",
+          "id": "1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q",
+          "license_status": "reusable_data_license_unconfirmed",
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "modified_time": "2022-09-18T08:44:57.695Z",
+          "named_rows": 44,
+          "page_hash": "1cfed87327d72972804452df9096fe330d08cfabf710a74ae57a5231f4f781bb",
+          "physical_rows": 45,
+          "reading_column": true,
+          "rights_scope": "既記録の大学フィールドDB説明本文と標準Copyrightの範囲を確認。公開ダウンロードを包括転載許諾とせず、名称/独立読み/地名と根拠位置・照合結果だけ保存。人名・屋号・民俗記述・全データ・写真は収録しない。",
+          "same_kami_city_comparison_pairs": 6,
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "title": "中後入地域資源DB.xlsx",
+          "url": "https://docs.google.com/spreadsheets/d/1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q/edit"
+        }
+      ],
+      "same_kami_city_comparison_pairs": 10,
+      "scope": "高知の現保留1696登録の原名と2表の可視名称を探索し77名称比較、うち市内同名10登録を個別保留として記録。正式名/全文読み/全原所在地の一致を認定した登録0。人物/屋号や別施設を含む地域資源95行は神社95社ではない。県全資料・全神社・全国全保留の解決完了ではない。",
+      "screened_prefecture_pending_entries": 1696,
+      "source_kind": "university_hosted_community_research_table",
+      "source_prefecture_code": "39",
+      "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+      "status": "two_new_community_tables_inspected_no_full_reading_and_original_location_pair",
+      "table_schema_observations": {
+        "nakagoiri": {
+          "A": "NAME",
+          "B": "読み",
+          "C": "緯度",
+          "D": "経度",
+          "E": "種別",
+          "F": "分類",
+          "G": "大字",
+          "H": "出典・根拠",
+          "I": "内容"
+        },
+        "saoka": [
+          "名称",
+          "緯度",
+          "経度",
+          "分類",
+          "大字",
+          "土地利用",
+          "出典",
+          "備考"
+        ]
+      },
+      "target_bindings": [
+        {
+          "entry_id": "13bbc328-b70c-50a6-b204-928497323817",
+          "expected_source_hash": "116d0c7f382a2d7b7507cd18c975c2659fe9e03369ac72cd9f88268605adac2e"
+        },
+        {
+          "entry_id": "352dad90-ec11-5722-93b6-e4629f0ff3f6",
+          "expected_source_hash": "007daa8e7c5188cc6156bbc5be04d8a79de0eeafca35698f5aa0e7633c2a9822"
+        },
+        {
+          "entry_id": "9c16e780-d0e4-5f97-829a-e65856d8db8b",
+          "expected_source_hash": "1b9550f891965e6fcabb7955dd48ace611d748affd7782add968467a3da6d3ce"
+        },
+        {
+          "entry_id": "cd5d9979-780b-520e-884e-db889707aa60",
+          "expected_source_hash": "878706a18c464a2d30c3da38f69865df6d3399a32c7c9c1d69a951a94d2a33d0"
+        },
+        {
+          "entry_id": "baab81d7-c4ae-57fa-8f3d-32f00b8ff5c3",
+          "expected_source_hash": "740a8523b20ec6dfaafcc166a821d964aefde4c78126e6a8c9ac37eb32622e98"
+        },
+        {
+          "entry_id": "26a0f050-72bb-5329-8a94-9226b0e2fae9",
+          "expected_source_hash": "8294b665a4ed4f844b7d01f8cb10312510b15e59bf64aafe204e4ca3eacc1dd9"
+        },
+        {
+          "entry_id": "277c8866-93e2-538a-b1b2-6e523301cef2",
+          "expected_source_hash": "35982c7ab53c5cab50401e61abc5f276c01c2a4b852106fba98af523b6e5be94"
+        },
+        {
+          "entry_id": "a096a123-a475-5958-94d4-df0c4886217f",
+          "expected_source_hash": "97cf1d39042793e3905f295b4745e662143acb7a18ec0638f847f6839d937022"
+        },
+        {
+          "entry_id": "db474a88-32ab-51f5-8b48-6e7d1b2bf172",
+          "expected_source_hash": "197e0dce1cbb6cd516ee117082122d3fff0dfeddee778ea758c0cde445abf37e"
+        },
+        {
+          "entry_id": "f6b7316f-cdf8-5354-8b8c-27626d83e1a9",
+          "expected_source_hash": "ca612cbb6353bcbb908137f546fde64694ab3811df8754cd8c5451ffb29a4361"
+        }
+      ],
+      "xlsx_auxiliary_rPh_elements": 233,
+      "xlsx_visible_text_method": "可視本文のsi/t及びsi/r/tだけを使用し、補助読みrPhを名称/見出し/セル値へ連結しない。読み欄Bは可視本文の独立セルだけ。"
     }
   ],
   "per_prefecture": {
@@ -1059451,6 +1059645,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "116d0c7f382a2d7b7507cd18c975c2659fe9e03369ac72cd9f88268605adac2e",
+          "observation": "本村CSVには名称・大字・座標等があるが独立読み欄・全所在地専用欄がなく、地名対応が近い候補でも原全地番と全文かなの確認にはならない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:12.414113+00:00",
+            "id": "1nXYS6NkjFk99rre8abulA4a75u2tuVt6",
+            "locality_raw": "本村",
+            "locator": "CSVヘッダーを1行とした原行番号。名称・大字欄のみ。",
+            "mime_type": "text/csv",
+            "name_raw": "星神社",
+            "page_hash": "4da8f9a4bdfc612db21c66ecd35d5fcdfdd350244aff55f49e11c53b182e6345",
+            "reading_raw": "",
+            "reading_scope": "not_present",
+            "row_number": 19,
+            "title": "佐岡地域資源DB集成表（本村）.csv",
+            "url": "https://drive.google.com/file/d/1nXYS6NkjFk99rre8abulA4a75u2tuVt6/view"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市土佐山田町宮ﾉ口大沢853番地",
@@ -1070683,6 +1070901,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "8294b665a4ed4f844b7d01f8cb10312510b15e59bf64aafe204e4ca3eacc1dd9",
+          "observation": "中後入表の独立読み欄はあるが全所在地専用欄がなく、原登録は別の町域/地番。市内同名だけで施設を統合せず、別施設のかなを流用しない。名称セルの内部補助rPhと独立Bセルの差も推定修正しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:17.351689+00:00",
+            "id": "1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q",
+            "locality_raw": "中後入",
+            "locator": "xl/worksheets/sheet1.xmlの元行番号。A名称・B独立読み・G大字。sharedStringsのrPhを可視文字へ連結しない。",
+            "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "name_raw": "須賀神社",
+            "page_hash": "1cfed87327d72972804452df9096fe330d08cfabf710a74ae57a5231f4f781bb",
+            "reading_raw": "スガジンジャ",
+            "reading_scope": "separate_visible_reading_cell",
+            "row_number": 34,
+            "title": "中後入地域資源DB.xlsx",
+            "url": "https://docs.google.com/spreadsheets/d/1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q/edit"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市物部町南池423番地イ",
@@ -1071069,6 +1071311,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "35982c7ab53c5cab50401e61abc5f276c01c2a4b852106fba98af523b6e5be94",
+          "observation": "中後入表の独立読み欄はあるが全所在地専用欄がなく、原登録は別の町域/地番。市内同名だけで施設を統合せず、別施設のかなを流用しない。名称セルの内部補助rPhと独立Bセルの差も推定修正しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:17.351689+00:00",
+            "id": "1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q",
+            "locality_raw": "中後入",
+            "locator": "xl/worksheets/sheet1.xmlの元行番号。A名称・B独立読み・G大字。sharedStringsのrPhを可視文字へ連結しない。",
+            "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "name_raw": "須賀神社",
+            "page_hash": "1cfed87327d72972804452df9096fe330d08cfabf710a74ae57a5231f4f781bb",
+            "reading_raw": "スガジンジャ",
+            "reading_scope": "separate_visible_reading_cell",
+            "row_number": 34,
+            "title": "中後入地域資源DB.xlsx",
+            "url": "https://docs.google.com/spreadsheets/d/1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q/edit"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市土佐山田町大坪字高ｶﾜﾗ766番地",
@@ -1077851,6 +1078117,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "007daa8e7c5188cc6156bbc5be04d8a79de0eeafca35698f5aa0e7633c2a9822",
+          "observation": "本村CSVには名称・大字・座標等があるが独立読み欄・全所在地専用欄がなく、地名対応が近い候補でも原全地番と全文かなの確認にはならない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:12.414113+00:00",
+            "id": "1nXYS6NkjFk99rre8abulA4a75u2tuVt6",
+            "locality_raw": "本村",
+            "locator": "CSVヘッダーを1行とした原行番号。名称・大字欄のみ。",
+            "mime_type": "text/csv",
+            "name_raw": "星神社",
+            "page_hash": "4da8f9a4bdfc612db21c66ecd35d5fcdfdd350244aff55f49e11c53b182e6345",
+            "reading_raw": "",
+            "reading_scope": "not_present",
+            "row_number": 19,
+            "title": "佐岡地域資源DB集成表（本村）.csv",
+            "url": "https://drive.google.com/file/d/1nXYS6NkjFk99rre8abulA4a75u2tuVt6/view"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市物部町神池2384番地",
@@ -1128916,6 +1129206,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "1b9550f891965e6fcabb7955dd48ace611d748affd7782add968467a3da6d3ce",
+          "observation": "本村CSVには名称・大字・座標等があるが独立読み欄・全所在地専用欄がなく、地名対応が近い候補でも原全地番と全文かなの確認にはならない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:12.414113+00:00",
+            "id": "1nXYS6NkjFk99rre8abulA4a75u2tuVt6",
+            "locality_raw": "本村",
+            "locator": "CSVヘッダーを1行とした原行番号。名称・大字欄のみ。",
+            "mime_type": "text/csv",
+            "name_raw": "星神社",
+            "page_hash": "4da8f9a4bdfc612db21c66ecd35d5fcdfdd350244aff55f49e11c53b182e6345",
+            "reading_raw": "",
+            "reading_scope": "not_present",
+            "row_number": 19,
+            "title": "佐岡地域資源DB集成表（本村）.csv",
+            "url": "https://drive.google.com/file/d/1nXYS6NkjFk99rre8abulA4a75u2tuVt6/view"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地",
@@ -1131264,6 +1131578,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "97cf1d39042793e3905f295b4745e662143acb7a18ec0638f847f6839d937022",
+          "observation": "中後入表の独立読み欄はあるが全所在地専用欄がなく、原登録は別の町域/地番。市内同名だけで施設を統合せず、別施設のかなを流用しない。名称セルの内部補助rPhと独立Bセルの差も推定修正しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:17.351689+00:00",
+            "id": "1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q",
+            "locality_raw": "中後入",
+            "locator": "xl/worksheets/sheet1.xmlの元行番号。A名称・B独立読み・G大字。sharedStringsのrPhを可視文字へ連結しない。",
+            "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "name_raw": "須賀神社",
+            "page_hash": "1cfed87327d72972804452df9096fe330d08cfabf710a74ae57a5231f4f781bb",
+            "reading_raw": "スガジンジャ",
+            "reading_scope": "separate_visible_reading_cell",
+            "row_number": 34,
+            "title": "中後入地域資源DB.xlsx",
+            "url": "https://docs.google.com/spreadsheets/d/1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q/edit"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市物部町山崎330番地ロ",
@@ -1144555,6 +1144893,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "740a8523b20ec6dfaafcc166a821d964aefde4c78126e6a8c9ac37eb32622e98",
+          "observation": "中後入表の独立読み欄はあるが全所在地専用欄がなく、原登録は別の町域/地番。市内同名だけで施設を統合せず、別施設のかなを流用しない。名称セルの内部補助rPhと独立Bセルの差も推定修正しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:17.351689+00:00",
+            "id": "1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q",
+            "locality_raw": "中後入",
+            "locator": "xl/worksheets/sheet1.xmlの元行番号。A名称・B独立読み・G大字。sharedStringsのrPhを可視文字へ連結しない。",
+            "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "name_raw": "金峯神社",
+            "page_hash": "1cfed87327d72972804452df9096fe330d08cfabf710a74ae57a5231f4f781bb",
+            "reading_raw": "カナミネジンジャ",
+            "reading_scope": "separate_visible_reading_cell",
+            "row_number": 12,
+            "title": "中後入地域資源DB.xlsx",
+            "url": "https://docs.google.com/spreadsheets/d/1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q/edit"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市香北町西峯454番地",
@@ -1155418,6 +1155780,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "878706a18c464a2d30c3da38f69865df6d3399a32c7c9c1d69a951a94d2a33d0",
+          "observation": "本村CSVには名称・大字・座標等があるが独立読み欄・全所在地専用欄がなく、地名対応が近い候補でも原全地番と全文かなの確認にはならない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:12.414113+00:00",
+            "id": "1nXYS6NkjFk99rre8abulA4a75u2tuVt6",
+            "locality_raw": "本村",
+            "locator": "CSVヘッダーを1行とした原行番号。名称・大字欄のみ。",
+            "mime_type": "text/csv",
+            "name_raw": "星神社",
+            "page_hash": "4da8f9a4bdfc612db21c66ecd35d5fcdfdd350244aff55f49e11c53b182e6345",
+            "reading_raw": "",
+            "reading_scope": "not_present",
+            "row_number": 19,
+            "title": "佐岡地域資源DB集成表（本村）.csv",
+            "url": "https://drive.google.com/file/d/1nXYS6NkjFk99rre8abulA4a75u2tuVt6/view"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市土佐山田町岩次字西大リヨウ45番地",
@@ -1160300,6 +1160686,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "197e0dce1cbb6cd516ee117082122d3fff0dfeddee778ea758c0cde445abf37e",
+          "observation": "中後入表の独立読み欄はあるが全所在地専用欄がなく、原登録は別の町域/地番。市内同名だけで施設を統合せず、別施設のかなを流用しない。名称セルの内部補助rPhと独立Bセルの差も推定修正しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:17.351689+00:00",
+            "id": "1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q",
+            "locality_raw": "中後入",
+            "locator": "xl/worksheets/sheet1.xmlの元行番号。A名称・B独立読み・G大字。sharedStringsのrPhを可視文字へ連結しない。",
+            "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "name_raw": "須賀神社",
+            "page_hash": "1cfed87327d72972804452df9096fe330d08cfabf710a74ae57a5231f4f781bb",
+            "reading_raw": "スガジンジャ",
+            "reading_scope": "separate_visible_reading_cell",
+            "row_number": 34,
+            "title": "中後入地域資源DB.xlsx",
+            "url": "https://docs.google.com/spreadsheets/d/1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q/edit"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市香北町岩改1710番地",
@@ -1175596,6 +1176006,30 @@
           "observation": "011は正式名/全文カナ/原全所在地の同時対応なし。007は読み列があるが現全地番の独立住所列がなく、024は全文かなと全地番の欄がない。原神社庁住所の字名や番号を削って合わせず、原空かなを保持して保留。",
           "scope": "取得済み011/007/024の神社名列との厳密同名照合と011所在地列の全住所比較。名前だけ・座標だけ・旧村名だけ・祭神名を施設同定や全文読みの根拠にしない。CSV以外の全資料を調査済みとは扱わない。",
           "status": "three_public_csv_bounded_screen_retained_pending"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:11:38.828019+00:00",
+          "evidence_attempt": "kochi_kut_two_community_resource_tables_95_rows_no_full_identity_reading_pair_20261113",
+          "expected_source_hash": "ca612cbb6353bcbb908137f546fde64694ab3811df8754cd8c5451ffb29a4361",
+          "observation": "中後入表の独立読み欄はあるが全所在地専用欄がなく、原登録は別の町域/地番。市内同名だけで施設を統合せず、別施設のかなを流用しない。名称セルの内部補助rPhと独立Bセルの差も推定修正しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T14:08:17.351689+00:00",
+            "id": "1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q",
+            "locality_raw": "中後入",
+            "locator": "xl/worksheets/sheet1.xmlの元行番号。A名称・B独立読み・G大字。sharedStringsのrPhを可視文字へ連結しない。",
+            "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "name_raw": "須賀神社",
+            "page_hash": "1cfed87327d72972804452df9096fe330d08cfabf710a74ae57a5231f4f781bb",
+            "reading_raw": "スガジンジャ",
+            "reading_scope": "separate_visible_reading_cell",
+            "row_number": 34,
+            "title": "中後入地域資源DB.xlsx",
+            "url": "https://docs.google.com/spreadsheets/d/1jFGhuhfqcIUon6TkyLfx3pSXqQAHh59Q/edit"
+          },
+          "source_kind": "university_hosted_community_research_table",
+          "source_publisher": "高知工科大学フィールドDB / 地域景観調査資料",
+          "status": "name_only_discovery_no_full_reading_location_identity"
         }
       ],
       "address": "高知県香美市香北町白川542番地",
