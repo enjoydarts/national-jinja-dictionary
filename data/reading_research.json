@@ -26360,13 +26360,19 @@
         "integration_main_commit": "e7611e24517ff368f0d15d01cb60291c7f9a51e2",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域の採用/調査/旧判断を保持し、対馬3件補完と67件の保留根拠を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T13:57:58.890258+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10317,
+        "scope": "泰阜村23保留を公開CSV55名称行へ照合し対応行0。御代田町13保留の2CSVは404、飯綱町の追加1記事は無断複製転用禁止で未取得。全資料の解決完了ではない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T13:57:58.890258+00:00",
+      "checked_at": "2026-11-13T14:03:30.298879+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10317,
-      "scope": "泰阜村23保留を公開CSV55名称行へ照合し対応行0。御代田町13保留の2CSVは404、飯綱町の追加1記事は無断複製転用禁止で未取得。全資料の解決完了ではない。"
+      "scope": "坂門一言神社の新候補1記事は本文の無断転載・複製禁止で未取得。学術資源案内1件は既点検大学DBと同じURLと確認し重複取得/採用を回避。読みや所在地の解決完了ではない。"
     },
     "remaining_unfinished_entries": 10317,
     "resolved_entry_ids": [
@@ -26925,7 +26931,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T13:57:58.890258+00:00",
+  "computed_at": "2026-11-13T14:03:30.298879+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -402925,6 +402931,60 @@
         }
       ],
       "unacquired_table_target_entries": 13
+    },
+    {
+      "acquisition": "通常Client interval=2、timeout=20、retries=0、robots遵守。新規取得は個人サイトの入口と説明/ポリシー、機構の資料案内の3ページのみ。対象神社記事、写真、同じ大学DBの再取得は行わない。",
+      "attempt_id": "sakatohitokoto_personal_article_policy_stop_and_nihu_directory_duplicate_20261113",
+      "checked_at": "2026-11-13T14:03:30.298879+00:00",
+      "directory_reference": {
+        "actual_access_href": "https://kojiki.kokugakuin.ac.jp/jinjya/",
+        "fetched_at": "2026-11-13T14:02:00.343168+00:00",
+        "observation": "案内先は既記録の95索引/14詳細/68対応の國學院大學古典文化学DBと同じ実URL。新しい施設データ源・独立した裏付けとは数えず、DB再取得や先の保留判断変更もしていない。残81詳細の本文不在又は調査済みを認定しない。",
+        "page_hash": "01fed0f84f5df899eeddd9e2a8546eb3c91172babe5a1c27359160957cc4fd80",
+        "prior_evidence_attempt": "kokugakuin_classical_shrines_95_index_14_details_68_same_name_holds_20261113",
+        "publisher_observation": "人間文化研究機構の研究資源案内の本文に神社データベースの作成者を國學院大学と記載し、実access hrefを確認。",
+        "same_as_recorded_index_url": "https://kojiki.kokugakuin.ac.jp/jinjya/",
+        "title": "神社データベース | Resource Guide for Japanese Studies and Humanities in Japan",
+        "url": "https://guides2.nihu.jp/ja/resources/860"
+      },
+      "entry_ids": [
+        "75b8500b-f47d-5b8a-9a93-0dd3e9cc4b08"
+      ],
+      "external_policy_stop": {
+        "entry_id": "75b8500b-f47d-5b8a-9a93-0dd3e9cc4b08",
+        "home_reference": {
+          "fetched_at": "2026-11-13T13:59:56.971920+00:00",
+          "page_hash": "11fc48517480bfbd455d703e8bc83c98f817b4001dd7919380630a481e101c9f",
+          "url": "https://momijiaoi.net/"
+        },
+        "host": "momijiaoi.net",
+        "policy_locator": "当サイトの概要及び著作権の各節",
+        "policy_observation": "本文で文章・画像等の無断転載・複製禁止と全文転載/RSS盗用の禁止を確認。出典明示による無償引用の説明はあるが、辞書データ化の包括許諾へ拡張しない。",
+        "policy_reference": {
+          "fetched_at": "2026-11-13T14:00:27.878535+00:00",
+          "page_hash": "b0c59ee94c95f1e9ebc288bf73d081938d20ad3100084305c86f9d4e503d4298",
+          "url": "https://momijiaoi.net/about/"
+        },
+        "scope": "坂門一言神社の探索候補1記事は取得しない。検索結果のかな・所在地・案内文を施設根拠へ転記せず、元の疑義読みを推定補正しない。",
+        "source_kind": "personal_visit_record",
+        "source_publisher": "たんぽぽろぐ（個人の神社参拝記録）",
+        "status": "article_not_acquired_due_to_explicit_unpermitted_republication_and_reproduction_restriction",
+        "unacquired_article_url": "https://momijiaoi.net/sakatohitokoto/"
+      },
+      "new_verified_entries": 0,
+      "privacy_and_storage": "取得HTML・記事全文・写真・画像・キャッシュ・人物名・連絡先は収録しない。組織/サイトの位置付け・出典URL/hash・最小の条件要約・重複先URL・対象ID・停止判断だけを保存。",
+      "scope": "福井の坂門一言神社1候補の利用条件確認と全国DB探索の同一案内先確認。社名/全文かな/全原住所の新たな本文照合0、採用0。福井の他2保留・全公開資料・全国の保留解消完了ではない。",
+      "source_kind": "personal_site_policy_and_academic_resource_directory",
+      "source_prefecture_code": "18",
+      "source_publisher": "たんぽぽろぐ・人間文化研究機構の資料案内",
+      "status": "one_candidate_policy_stop_and_one_existing_database_directory_deduplicated",
+      "target_bindings": [
+        {
+          "entry_id": "75b8500b-f47d-5b8a-9a93-0dd3e9cc4b08",
+          "expected_source_hash": "ae0d7f9a0434e31c6e7057edd0d9d8a73b4e8a8931a559b069e924be16d80d9e"
+        }
+      ],
+      "target_entries": 1
     }
   ],
   "per_prefecture": {
@@ -553676,6 +553736,37 @@
           "source_kind": "article_index",
           "source_publisher": "御中主・社寺探訪（個人参拝記録）",
           "status": "no_literal_name_link_in_one_prefecture_index"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:03:30.298879+00:00",
+          "evidence_attempt": "sakatohitokoto_personal_article_policy_stop_and_nihu_directory_duplicate_20261113",
+          "expected_source_hash": "ae0d7f9a0434e31c6e7057edd0d9d8a73b4e8a8931a559b069e924be16d80d9e",
+          "observation": "個人参拝記録としての位置付けと本文の無断転載・複製禁止を確認して記事取得を停止。既存の疑義読み・地番・旧根拠はそのまま保留。本文未取得のため正式名全文かなと全原所在地の照合済みとは数えない。",
+          "reference": {
+            "entry_id": "75b8500b-f47d-5b8a-9a93-0dd3e9cc4b08",
+            "home_reference": {
+              "fetched_at": "2026-11-13T13:59:56.971920+00:00",
+              "page_hash": "11fc48517480bfbd455d703e8bc83c98f817b4001dd7919380630a481e101c9f",
+              "url": "https://momijiaoi.net/"
+            },
+            "host": "momijiaoi.net",
+            "policy_locator": "当サイトの概要及び著作権の各節",
+            "policy_observation": "本文で文章・画像等の無断転載・複製禁止と全文転載/RSS盗用の禁止を確認。出典明示による無償引用の説明はあるが、辞書データ化の包括許諾へ拡張しない。",
+            "policy_reference": {
+              "fetched_at": "2026-11-13T14:00:27.878535+00:00",
+              "page_hash": "b0c59ee94c95f1e9ebc288bf73d081938d20ad3100084305c86f9d4e503d4298",
+              "url": "https://momijiaoi.net/about/"
+            },
+            "scope": "坂門一言神社の探索候補1記事は取得しない。検索結果のかな・所在地・案内文を施設根拠へ転記せず、元の疑義読みを推定補正しない。",
+            "source_kind": "personal_visit_record",
+            "source_publisher": "たんぽぽろぐ（個人の神社参拝記録）",
+            "status": "article_not_acquired_due_to_explicit_unpermitted_republication_and_reproduction_restriction",
+            "unacquired_article_url": "https://momijiaoi.net/sakatohitokoto/"
+          },
+          "source_kind": "personal_visit_record",
+          "source_publisher": "たんぽぽろぐ（個人の神社参拝記録）",
+          "status": "article_not_acquired_due_to_explicit_unpermitted_republication_and_reproduction_restriction"
         }
       ],
       "address": "福井県大野市牛ヶ原７５－５６",
