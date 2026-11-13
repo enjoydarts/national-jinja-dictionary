@@ -72896,7 +72896,7 @@
         "name_raw": "白山神社",
         "reading_raw": ""
       },
-      "reason": "県文化財表の所有者等に独立して明示された全文かなを補完。神社庁の部分かなへ語尾を足さず、県の明示全文のみを用いる。原町域・原字形・実ID/hash・原読み空欄・旧調査を保持し、同名別所在地の読みを流用しない。",
+      "reason": "県文化財表の所有者等に独立して明示された全文かなを補完。神社庁の部分かなへ語尾を足さず、県の明示全文のみを用いる。原町域・原字形・実ID/hash・原読み空欄・旧調査を保持し、同名別所在地の読みを流用しない。 白山神社は神社庁の部分シラヤマと異なる県の明示全文はくさんじんじゃを直接参照し、両原観測を保持する。",
       "references": [
         {
           "address_composition": "比較所在地は市町見出し＋同じ所有者行の所在地欄で構成。郡を補作せず、本文の連続文字列又は数字地番として扱わない。",
@@ -72983,6 +72983,12 @@
           "verification_method": "Exact agency-linked name/native ID and literal kana; full-name and location validation performed before proposal. Alias not registered."
         }
       ],
+      "source_reading_difference": {
+        "agency_caption_raw": "シラヤマ",
+        "agency_reading_scope": "partial_or_absent",
+        "prefectural_owner_full_reading_raw": "はくさんじんじゃ",
+        "selection": "県の独立全文かなを参照読みとして採用し、神社庁部分シラヤマは不変で保持。部分かなに接尾語を足さず、どちらかが誤記・唯一の呼称と認定しない。"
+      },
       "status": "verified"
     },
     "429efc13-b9db-58cf-ab0e-134a88f48051": {
@@ -189714,6 +189720,122 @@
           "title": "鞍岡神社",
           "url": "https://ja.wikipedia.org/wiki/%E9%9E%8D%E5%B2%A1%E7%A5%9E%E7%A4%BE",
           "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "a9c4131f-183a-5ae8-b534-a45aeba70594": {
+      "changes": {
+        "reading": "かんだじんじゃ"
+      },
+      "expected_source_hash": "4ec229a83fd44c768a5c7b2e5af016f6ef829696eab74abd05ab9137121909ae",
+      "facility_id": "c19c24e9-a572-58e2-9485-e01a0b4fafb9",
+      "identity_match": {
+        "agency_name": "神田神社",
+        "binding": "県の大津市所有者等欄の神社名と独立全文かな、同じ行の真野普門を原実ID7の原町域へ照合。★は修理事業注記として末尾段落に対応し、字形や名称を推測補正していない。原詳細942を県表に印刷された地番とは扱わない。",
+        "native_agency_code": "7",
+        "original_full_printed_locality": "大津市真野普門",
+        "reference_name": "神田神社"
+      },
+      "original": {
+        "address": "大津市真野普門",
+        "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100",
+        "name_raw": "神田神社",
+        "reading_raw": ""
+      },
+      "reason": "県表の独立全文かんだじんじゃを採用。修理注記★を神社名や読みへ混入させず、原詳細の部分カンダへ語尾補完しない。原町域・実ID/hash・原かな空欄を保持し、大津市真野・本堅田の同名神社へ流用しない。",
+      "references": [
+        {
+          "address_composition": "比較所在地は市町見出し＋同じ所有者行の所在地欄で構成。郡を補作せず、本文の連続文字列又は数字地番として扱わない。",
+          "address_raw": "滋賀県大津市真野普門",
+          "annotation_proof": {
+            "locator": "PDF p.2 最下部の★段落と大津市所有者行",
+            "marker_raw": "★",
+            "meaning": "令和3年度保存修理事業への注記",
+            "mentioned_building_raw": "神田神社本殿",
+            "name_characters_raw": "神田神社"
+          },
+          "attribution": "出典：滋賀県文化財保護課「滋賀の国宝・重要文化財建造物MAP」（2022年3月）p.2。市町別の所有者等・よみがな・所在地の最小事実項目を抽出しnational-jinja-dictionaryが既存神社庁登録へ照合。",
+          "checked_at": "2026-11-13T07:26:09.274413+00:00",
+          "excerpt": "市町見出し：大津市（Ac/Ad） / 所有者等：★神田神社 / よみがな：かんだじんじゃ / 所在地：真野普門 / 比較所在地：滋賀県大津市真野普門",
+          "fetched_at": "2026-11-13T07:10:53.473819+00:00",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-13T07:10:48.844475+00:00",
+              "page_hash": "cd4f6b6721886a4607ea4b0c3ce05202252e21b9401d0c6e83de2a95325aaab7",
+              "url": "https://www.pref.shiga.lg.jp/ab00/9916.html"
+            }
+          ],
+          "license_observation": "一般著作権方針は私的使用その他法律で認める範囲を区別。本文・画像・PDF全体・表の配列を転載せず、個別の名称/明示全文かな/町域という事実項目と所在を照合記録。資料全体の再配布許諾を取得したとは扱わない。",
+          "locator": "PDF p.2 国宝・重要文化財建造物一覧／大津市（Ac/Ad）／★神田神社の行、末尾★修理事業注記",
+          "name_raw": "神田神社",
+          "owner_name_bounds": [
+            108.56350000000003,
+            796.7546,
+            24,
+            7.94399999999996
+          ],
+          "owner_name_printed_raw": "★神田神社",
+          "owner_reading_role": "owner_name_full_reading_independent_from_cultural_building_name",
+          "page_1based": 2,
+          "page_hash": "0ed97c036c82c14e6f2728c73daa902c5fdfb7cb89198513dd9616b27566242a",
+          "publication_date_raw": "2022年3月",
+          "published_link_proof": {
+            "href_raw": "/documents/2546/5583591.pdf",
+            "link_label": "滋賀の国宝・重要文化財建造物MAP（PDF：2,871KB）",
+            "source_page_hash": "8039e6a26f554f134ec92778204529e229ca13b0d077456da61e2b9d59341642",
+            "source_url": "https://www.pref.shiga.lg.jp/sd00/2546.html",
+            "url": "https://www.pref.shiga.lg.jp/documents/2546/5583591.pdf"
+          },
+          "reading_raw": "かんだじんじゃ",
+          "reading_scope": "full_name",
+          "source_fields": {
+            "よみがな": "かんだじんじゃ",
+            "市町見出し": "大津市（Ac/Ad）",
+            "所在地": "真野普門",
+            "所有者等": "★神田神社"
+          },
+          "source_kind": "government_cultural_property_map",
+          "source_publisher": "滋賀県文化財保護課",
+          "table_column_0based": 0,
+          "title": "滋賀の国宝・重要文化財建造物MAP（2022年3月）",
+          "url": "https://www.pref.shiga.lg.jp/documents/2546/5583591.pdf"
+        },
+        {
+          "address_raw": "滋賀県大津市真野普門942",
+          "agency_code": "7",
+          "alias_display_raw": "",
+          "checked_at": "2026-11-10T03:42:15.759566+00:00",
+          "excerpt": "神田神社 （カンダ） / 滋賀県大津市真野普門942",
+          "fetched_at": "2026-11-10T03:42:15.759566+00:00",
+          "index_checked_at": "2026-11-08T14:28:05.535228+00:00",
+          "index_excerpt": "〔大津〕 神田神社 〒5200231 大津市真野普門",
+          "index_locator": "a.news_title[6] + postal address span",
+          "index_page_hash": "8fd9aee63b3bdc65452bd1dfcebd583cb96b98a73bc42872a8da9c36488c4279",
+          "index_proof": {
+            "address_raw": "大津市真野普門",
+            "base_href": "https://www.shiga-jinjacho.jp/",
+            "href_raw": "ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=7",
+            "index_checked_at": "2026-11-08T14:28:05.535228+00:00",
+            "index_excerpt": "〔大津〕 神田神社 〒5200231 大津市真野普門",
+            "index_locator": "a.news_title[6] + postal address span",
+            "index_page_hash": "8fd9aee63b3bdc65452bd1dfcebd583cb96b98a73bc42872a8da9c36488c4279",
+            "index_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100",
+            "name_raw": "神田神社",
+            "source_id": "7",
+            "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=7"
+          },
+          "index_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100",
+          "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+          "name_display_raw": "神田神社 （カンダ）",
+          "name_raw": "神田神社",
+          "page_hash": "e9875ec27fd41aab1add6027a7f10ba8cb6b57fbda4fa2ffbb096c3334accda0",
+          "reading_raw": "カンダ",
+          "reading_scope": "partial_or_absent",
+          "source_kind": "agency",
+          "title": "神田神社 | 滋賀県神社庁",
+          "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=7",
+          "verification_method": "Exact agency-linked name/native ID and literal kana; full-name and location validation performed before proposal. Alias not registered."
         }
       ],
       "status": "verified"
