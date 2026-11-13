@@ -26528,13 +26528,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10316,
         "scope": "山梨県の美和神社・蚕影神社の追加資料候補を確認。観光ナビの個別記事は規約で停止、市の散策PDFは内部サイズ上限超過で本文未確認。採用0。"
+      },
+      {
+        "checked_at": "2026-11-13T14:45:55.069416+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10316,
+        "scope": "山梨の歴史を旅するサイトの提供者/条件本文を確認。幸燈神社・三魂交通神社・北野天神社の実URLはHTTP404で、検索側の保存本文を採用せず保留3件を維持。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:42:55.238476+00:00",
+      "checked_at": "2026-11-13T14:45:55.069416+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10316,
-      "scope": "山梨県の美和神社・蚕影神社の追加資料候補を確認。観光ナビの個別記事は規約で停止、市の散策PDFは内部サイズ上限超過で本文未確認。採用0。"
+      "scope": "山梨の歴史を旅するサイトの提供者/条件本文を確認。幸燈神社・三魂交通神社・北野天神社の実URLはHTTP404で、検索側の保存本文を採用せず保留3件を維持。"
     },
     "remaining_unfinished_entries": 10311,
     "resolved_entry_ids": [
@@ -27099,7 +27105,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:42:55.238476+00:00",
+  "computed_at": "2026-11-13T14:45:55.069416+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -404044,6 +404050,68 @@
       "tourism_rights_observation": "公式と称する入口の表題は記録するが、市が直接運営することや辞書への利用許諾を意味しない。実リンク先規約本文に無断転載・複写・蓄積・転送及び商用利用の禁止があり、個別記事を取得しない。"
     },
     {
+      "acquisition": "通常Client interval=2、timeout=20、retries=0、robots適用。提供者/条件3頁は取得したが、候補3URLは全てHTTP404。HTTP403やrobots禁止ではない。失敗本文・PDF・画像・人物情報は保存せず、URL/hash/日時と未取得範囲のみ記録。",
+      "attempt_id": "yamanashi_history_three_actual_profile_404_search_cache_not_adopted_20261113",
+      "checked_at": "2026-11-13T14:45:55.069416+00:00",
+      "failed_profile_requests": [
+        {
+          "checked_at": "2026-11-13T14:45:55.069416+00:00",
+          "entry_id": "342d6fa3-5f17-5236-8661-ed7984dd3027",
+          "http_status": 404,
+          "requested_url": "https://www.yamanashi-kankou.jp/rekitabi/jisha/spot/331.html",
+          "status": "http404_profile_body_not_acquired"
+        },
+        {
+          "checked_at": "2026-11-13T14:45:55.069416+00:00",
+          "entry_id": "1183200e-f697-5977-ab15-41889647ee25",
+          "http_status": 404,
+          "requested_url": "https://www.yamanashi-kankou.jp/rekitabi/jisha/spot/191.html",
+          "status": "http404_profile_body_not_acquired"
+        },
+        {
+          "checked_at": "2026-11-13T14:45:55.069416+00:00",
+          "entry_id": "d95c7eb0-ea5b-574c-ab8a-335860b4794c",
+          "http_status": 404,
+          "requested_url": "https://www.yamanashi-kankou.jp/rekitabi/jisha/spot/121.html",
+          "status": "http404_profile_body_not_acquired"
+        }
+      ],
+      "inspected_facility_profiles": 0,
+      "new_verified_entries": 0,
+      "publisher_and_policy_references": [
+        {
+          "fetched_at": "2026-11-13T14:44:41.654949+00:00",
+          "page_hash": "a69cbf7cb7f2e5e24ca14ce7515d45829745a2af090ed5c6fd37baebc5e9df70",
+          "title": [
+            "このサイトについて／山梨の歴史を旅するサイト"
+          ],
+          "url": "https://www.yamanashi-kankou.jp/rekitabi/about/index.html"
+        },
+        {
+          "fetched_at": "2026-11-13T14:44:43.729827+00:00",
+          "page_hash": "27912ba556b10591dbd77de511916764998960346c0b20ae74c67c8779ebc6e9",
+          "title": [
+            "免責事項 ／富士の国やまなし観光ネット 山梨県公式観光情報"
+          ],
+          "url": "https://www.yamanashi-kankou.jp/about/term.html"
+        },
+        {
+          "fetched_at": "2026-11-13T14:44:45.798252+00:00",
+          "page_hash": "4065d880bb63e86ce779436fd6de88a3bb910cf5f4e7503551b7bd81ac36a145",
+          "title": [
+            "プライバシーポリシー／富士の国やまなし観光ネット 山梨県公式観光情報"
+          ],
+          "url": "https://www.yamanashi-kankou.jp/about/privacy.html"
+        }
+      ],
+      "publisher_observation": "このサイトについて本文で山梨県・公益社団法人やまなし観光推進機構が提供すると明示。免責・プライバシーの本文及び著作権表示を確認。点検範囲に最小事実の記録を明示禁止する条項は見当たらないが、包括転載許諾やオープンライセンスとは扱わない。",
+      "scope": "保留3登録と対応する個別URL3件。既存の2016年地域別冊子とは別のHTML紹介候補だが、現行紹介本文は0件取得。検索保存本文と実URLの状態差を記録し、採用0。県内全件の調査完了を意味しない。",
+      "screened_pending_entries": 3,
+      "source_kind": "tourism_organization_profile_leads",
+      "source_publisher": "山梨県・公益社団法人やまなし観光推進機構",
+      "status": "publisher_policy_inspected_three_current_profile_404_no_adoption"
+    },
+    {
       "acquisition": "実リンクだけを既存Clientでrobots遵守・同一ホスト最低2秒・timeout20秒・再試行0で取得。画像/地図iframe/位置情報機能/認証を使用せず、原HTML・キャッシュはリポジトリ外。",
       "adopted_reading_research_history": [
         {
@@ -561396,6 +561464,22 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:45:55.069416+00:00",
+          "evidence_attempt": "yamanashi_history_three_actual_profile_404_search_cache_not_adopted_20261113",
+          "expected_source_hash": "45d66e7e0bdc0e7ea0ec266065a3ba90b5faa2508838dbe92efe2c66c9047234",
+          "observation": "検索側に保存された紹介本文は発見用に限る。現在の実URLは通常ClientでHTTP404。個別紹介の現行本文hash・正式名全文読み・全所在地の対応は未検証で、検索側の保存本文を採用しない。404の再試行、推測URL、別形式/アーカイブ/ツールによる当該本文の取得はしない。",
+          "reference": {
+            "checked_at": "2026-11-13T14:45:55.069416+00:00",
+            "entry_id": "1183200e-f697-5977-ab15-41889647ee25",
+            "http_status": 404,
+            "requested_url": "https://www.yamanashi-kankou.jp/rekitabi/jisha/spot/191.html",
+            "status": "http404_profile_body_not_acquired"
+          },
+          "source_kind": "tourism_organization_profile_lead",
+          "source_publisher": "山梨県・公益社団法人やまなし観光推進機構"
         }
       ],
       "address": "南都留郡富士河口湖町船津1081-1",
@@ -574377,6 +574461,22 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:45:55.069416+00:00",
+          "evidence_attempt": "yamanashi_history_three_actual_profile_404_search_cache_not_adopted_20261113",
+          "expected_source_hash": "dcf2de2b039039af6c161e21a5b33a9a6bc0d892a478c168d10bd62288a69b8d",
+          "observation": "検索側に保存された紹介本文は発見用に限る。現在の実URLは通常ClientでHTTP404。個別紹介の現行本文hash・正式名全文読み・全所在地の対応は未検証で、検索側の保存本文を採用しない。404の再試行、推測URL、別形式/アーカイブ/ツールによる当該本文の取得はしない。",
+          "reference": {
+            "checked_at": "2026-11-13T14:45:55.069416+00:00",
+            "entry_id": "342d6fa3-5f17-5236-8661-ed7984dd3027",
+            "http_status": 404,
+            "requested_url": "https://www.yamanashi-kankou.jp/rekitabi/jisha/spot/331.html",
+            "status": "http404_profile_body_not_acquired"
+          },
+          "source_kind": "tourism_organization_profile_lead",
+          "source_publisher": "山梨県・公益社団法人やまなし観光推進機構"
         }
       ],
       "address": "北杜市武川町山高2529",
@@ -634223,6 +634323,22 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:45:55.069416+00:00",
+          "evidence_attempt": "yamanashi_history_three_actual_profile_404_search_cache_not_adopted_20261113",
+          "expected_source_hash": "b1340ec52333bcfd76b2f4a0fbd7dedb7fc4506fda2e89998dfde7894f61bd91",
+          "observation": "検索側に保存された紹介本文は発見用に限る。現在の実URLは通常ClientでHTTP404。個別紹介の現行本文hash・正式名全文読み・全所在地の対応は未検証で、検索側の保存本文を採用しない。404の再試行、推測URL、別形式/アーカイブ/ツールによる当該本文の取得はしない。",
+          "reference": {
+            "checked_at": "2026-11-13T14:45:55.069416+00:00",
+            "entry_id": "d95c7eb0-ea5b-574c-ab8a-335860b4794c",
+            "http_status": 404,
+            "requested_url": "https://www.yamanashi-kankou.jp/rekitabi/jisha/spot/121.html",
+            "status": "http404_profile_body_not_acquired"
+          },
+          "source_kind": "tourism_organization_profile_lead",
+          "source_publisher": "山梨県・公益社団法人やまなし観光推進機構"
         }
       ],
       "address": "北杜市小淵沢町小淵沢3349",
