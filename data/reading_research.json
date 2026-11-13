@@ -26554,13 +26554,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10311,
         "scope": "北海道Styleの入口・利用条件・運営者説明3HTMLだけの資料評価。北海道413保留の各施設の読み本文確認やサイト全記事の調査ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T14:52:53.155242+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10311,
+        "scope": "荒穂神社の町祭礼紹介は社名全文かな/原全所在地なし。妻山神社の関連リンク先は初期HTMLに表題のみ、JS実行や全サイトの点検はしていない。両件保留。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:52:53.155242+00:00",
+      "checked_at": "2026-11-13T14:58:13.271059+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10311,
-      "scope": "荒穂神社の町祭礼紹介は社名全文かな/原全所在地なし。妻山神社の関連リンク先は初期HTMLに表題のみ、JS実行や全サイトの点検はしていない。両件保留。"
+      "scope": "佐賀市カタログ58見出しと4表460行を点検。市内保留19登録に対応する名称欄の一致なし、採用0。"
     },
     "remaining_unfinished_entries": 10311,
     "resolved_entry_ids": [
@@ -27125,7 +27131,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:52:53.155242+00:00",
+  "computed_at": "2026-11-13T14:58:13.271059+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -405144,6 +405150,282 @@
       "source_kind": "commercial_travel_information",
       "source_publisher": "北海道Style（プレスマンユニオン／ニッポン旅マガジン）",
       "status": "selected_shrine_articles_not_acquired_due_to_explicit_unpermitted_republication_restriction"
+    },
+    {
+      "acquired_data_rows": 460,
+      "acquired_tables": 4,
+      "acquisition": "通常Client interval=2、timeout=20、retries=0、robots適用。全て実リンクのHTML/CSVだけを取得し、API・認証・アプリ投稿・別形式への切替えなし。避難場所CSVはUTF-8 BOM、残3表はCP932 strict復号で名称/名称_カナの見出しを確認。置換文字や推定読みは使用しない。",
+      "attempt_id": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+      "authority": "市公式本文で専用カタログ案内と実リンクを確認。リンク先の佐賀市組織表示・表のデータセット/リソース説明を本文で確認。",
+      "catalogue_dataset_headings": 58,
+      "checked_at": "2026-11-13T14:58:13.271059+00:00",
+      "inspected_dataset_metadata": 5,
+      "new_verified_entries": 0,
+      "privacy_and_storage": "表本文・電話・メール・個人名・住所の無関係行・画像・キャッシュは収録せず、最小の表題/公開URL/hash/日時・行数・列名・照合結果のみを保存。",
+      "references": {
+        "aed-dataset": {
+          "fetched_at": "2026-11-13T14:54:43.083577+00:00",
+          "page_hash": "921bd3ba6190dc1eede6468e3ceb8ea52ab8cd019dea305d96bbe1d3d1997648",
+          "title": [
+            "佐賀市AED設置施設一覧 - データセット - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_aed_facilities"
+        },
+        "aed-resource": {
+          "fetched_at": "2026-11-13T14:55:09.526144+00:00",
+          "page_hash": "e0d5c29b6b4a0410aba9203819590bed1768cd189a834369578d9b89158cefdb",
+          "title": [
+            "佐賀市AED設置施設一覧 - R7_佐賀市AED設置施設一覧.csv - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_aed_facilities/resource/bfc51bd8-517b-4570-ac7d-d66851b35d33"
+        },
+        "catalogue": {
+          "fetched_at": "2026-11-13T14:54:36.956512+00:00",
+          "page_hash": "cc41dc9ea6f0097c93e105d48a972486c54b707d72e43793181e831b5264bbdb",
+          "title": [
+            "佐賀市 - 組織 - CKAN"
+          ],
+          "url": "https://data.bodik.jp/organization/412015"
+        },
+        "catalogue-2": {
+          "fetched_at": "2026-11-13T14:55:01.812769+00:00",
+          "page_hash": "b3e72ef7cb3b976fdf7aa6bbeadfcbb0e0cacde1fb405db410523f73c1691c80",
+          "title": [
+            "佐賀市 - 組織 - CKAN"
+          ],
+          "url": "https://data.bodik.jp/organization/412015?page=2"
+        },
+        "catalogue-3": {
+          "fetched_at": "2026-11-13T14:55:04.436839+00:00",
+          "page_hash": "e11bc7447521efa66937551cb5eca88c7d6cc5abb58aa60de18123e435c1cd2e",
+          "title": [
+            "佐賀市 - 組織 - CKAN"
+          ],
+          "url": "https://data.bodik.jp/organization/412015?page=3"
+        },
+        "city-entry": {
+          "fetched_at": "2026-11-13T14:54:34.033452+00:00",
+          "page_hash": "bf18ebce4930122ae75445e04e8840d02fba5efa087ca50ea89a1445019f39c7",
+          "title": [
+            "オープンデータを掲載しています！（人流・環境データ等）／佐賀市公式ホームページ"
+          ],
+          "url": "https://www.city.saga.lg.jp/sangyo-machizukuri/toshi-kotsu/2/1/4/2193.html"
+        },
+        "education-dataset": {
+          "fetched_at": "2026-11-13T14:55:51.311149+00:00",
+          "page_hash": "9b3a393d24b6b88bf5b6adf0d44419c1c5dd77a7f13bf96b43cc35d8351db8be",
+          "title": [
+            "佐賀市の教育・文化・生涯学習施設一覧 - データセット - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_education_culture_lifelong_learning"
+        },
+        "education-resource": {
+          "fetched_at": "2026-11-13T14:56:20.847912+00:00",
+          "page_hash": "194fa9deea916fbb05cebcb36193f9774405165ab5560f945ea219d2812b53ba",
+          "title": [
+            "佐賀市の教育・文化・生涯学習施設一覧 - 教育・文化・生涯学習  (世界測地系).csv - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_education_culture_lifelong_learning/resource/c1cc67ac-2399-49f2-baab-d1b6f06ec718"
+        },
+        "evacuation-dataset": {
+          "fetched_at": "2026-11-13T14:54:40.365385+00:00",
+          "page_hash": "46724c5b00f0d5adf7479221e626a5c27e5b99e3238df05d85d2b9e81ce0602a",
+          "title": [
+            "佐賀市指定緊急避難場所 - データセット - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_evacuation_location"
+        },
+        "evacuation-resource": {
+          "fetched_at": "2026-11-13T14:55:06.840104+00:00",
+          "page_hash": "20195783bb7a55ab2b4b908115dac9b0294aee0101f8debee3282f37055d3986",
+          "title": [
+            "佐賀市指定緊急避難場所 - R8_佐賀市_指定緊急避難場所.csv - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_evacuation_location/resource/1694e15b-5479-46c9-8bd5-d9fa4ec1d625"
+        },
+        "map-dataset": {
+          "fetched_at": "2026-11-13T14:55:53.651791+00:00",
+          "page_hash": "6e8f049614ace4eac89767e254a29a23714b4a10f26a035b8f2b9f50924e38f1",
+          "title": [
+            "オープンデータマップ用データセット - データセット - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_opendatamap"
+        },
+        "public-dataset": {
+          "fetched_at": "2026-11-13T14:55:48.791003+00:00",
+          "page_hash": "fa669ae5a07ff14f9df8e591a980c2adbc88a400bc042e8b1f7e2f60b84ef10e",
+          "title": [
+            "佐賀市公共施設一覧 - データセット - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_koukyoushisetsu"
+        },
+        "public-resource": {
+          "fetched_at": "2026-11-13T14:56:15.916885+00:00",
+          "page_hash": "a6aa0e413bd80d596b000eb38a754faa4f7088b3785a0f2f3e9961876d1b1b84",
+          "title": [
+            "佐賀市公共施設一覧 - 佐賀市_公共施設.csv - CKAN"
+          ],
+          "url": "https://data.bodik.jp/dataset/412015_koukyoushisetsu/resource/7f5f14a9-ecc7-452d-9598-bea82f3d6194"
+        },
+        "terms": {
+          "fetched_at": "2026-11-13T14:54:39.626820+00:00",
+          "page_hash": "319ccac47d271d4d0caed364dff9839f6616c1efe0d5a247b42e88baab54a19f",
+          "title": [
+            "利用規約 - 佐賀市"
+          ],
+          "url": "https://odcs.bodik.jp/412015/tos/"
+        }
+      },
+      "rights_observation": "市オープンデータ規約第1条はCC BY4.0を既定とし、resource個別ライセンスを優先。各選定説明の表示はクリエイティブ・コモンズ 表示（版未明示）であり、包括的に全市HTMLへ拡張しない。出所と個別配布URL/hashを保持。採用データ0、プロジェクトのコードライセンスは変更しない。",
+      "scope": "現佐賀市の保留19登録の原名称と4表の名称/名称_通称欄を照合。一致0で採用0。460は表のデータ行数（うち公共施設5行は名称空欄）で、重複排除した施設数・神社数・県内全件検証数ではない。",
+      "screened_pending_entries": 19,
+      "selected_scope": "市が案内する実カタログ3頁のdataset-headingを58件確認。避難場所・AED・公共施設・教育文化生涯学習のCSV各1表のみ取得。地図用データは人口統計/ポリゴンの説明であり本体未取得。旧年度/日本測地系別版、広報テキスト、アプリの投稿地図及び他データ本体は未取得。58データセットの全resource本文取得とは異なる。",
+      "status": "58_dataset_catalogue_four_csv_460_rows_no_pending_name_pair",
+      "table_references": [
+        {
+          "bom_utf8": true,
+          "content_type": "text/csv",
+          "data_rows": 113,
+          "dataset_reference": {
+            "fetched_at": "2026-11-13T14:54:40.365385+00:00",
+            "page_hash": "46724c5b00f0d5adf7479221e626a5c27e5b99e3238df05d85d2b9e81ce0602a",
+            "title": [
+              "佐賀市指定緊急避難場所 - データセット - CKAN"
+            ],
+            "url": "https://data.bodik.jp/dataset/412015_evacuation_location"
+          },
+          "encoding": "utf-8-sig",
+          "exact_pending_name_matches": 0,
+          "fetched_at": "2026-11-13T14:55:43.895009+00:00",
+          "name_fields_checked": [
+            "名称",
+            "名称_通称"
+          ],
+          "named_rows": 113,
+          "page_hash": "1042022405f85b6b31f8b7d96ba87934d338ecc8dd09de9e89389c7b6f4013b6",
+          "physical_csv_records": 114,
+          "reading_field": "名称_カナ",
+          "resource_metadata_reference": {
+            "fetched_at": "2026-11-13T14:55:06.840104+00:00",
+            "page_hash": "20195783bb7a55ab2b4b908115dac9b0294aee0101f8debee3282f37055d3986",
+            "title": [
+              "佐賀市指定緊急避難場所 - R8_佐賀市_指定緊急避難場所.csv - CKAN"
+            ],
+            "url": "https://data.bodik.jp/dataset/412015_evacuation_location/resource/1694e15b-5479-46c9-8bd5-d9fa4ec1d625"
+          },
+          "resource_reference": "https://data.bodik.jp/dataset/412015_evacuation_location/resource/1694e15b-5479-46c9-8bd5-d9fa4ec1d625",
+          "shrine_name_keyword_matches": 0,
+          "unnamed_nonblank_rows": 0,
+          "url": "https://data.bodik.jp/dataset/2de90030-c3e4-49a7-a378-25e41cb969ca/resource/1694e15b-5479-46c9-8bd5-d9fa4ec1d625/download"
+        },
+        {
+          "bom_utf8": false,
+          "content_type": "text/csv",
+          "data_rows": 155,
+          "dataset_reference": {
+            "fetched_at": "2026-11-13T14:54:43.083577+00:00",
+            "page_hash": "921bd3ba6190dc1eede6468e3ceb8ea52ab8cd019dea305d96bbe1d3d1997648",
+            "title": [
+              "佐賀市AED設置施設一覧 - データセット - CKAN"
+            ],
+            "url": "https://data.bodik.jp/dataset/412015_aed_facilities"
+          },
+          "encoding": "cp932",
+          "exact_pending_name_matches": 0,
+          "fetched_at": "2026-11-13T14:55:46.385371+00:00",
+          "name_fields_checked": [
+            "名称"
+          ],
+          "named_rows": 155,
+          "page_hash": "855134b724e98d7782fcec7ca7795bf9318e56ce2b99e053ebfb04fb06beac81",
+          "physical_csv_records": 156,
+          "reading_field": "名称_カナ",
+          "resource_metadata_reference": {
+            "fetched_at": "2026-11-13T14:55:09.526144+00:00",
+            "page_hash": "e0d5c29b6b4a0410aba9203819590bed1768cd189a834369578d9b89158cefdb",
+            "title": [
+              "佐賀市AED設置施設一覧 - R7_佐賀市AED設置施設一覧.csv - CKAN"
+            ],
+            "url": "https://data.bodik.jp/dataset/412015_aed_facilities/resource/bfc51bd8-517b-4570-ac7d-d66851b35d33"
+          },
+          "resource_reference": "https://data.bodik.jp/dataset/412015_aed_facilities/resource/bfc51bd8-517b-4570-ac7d-d66851b35d33",
+          "shrine_name_keyword_matches": 0,
+          "unnamed_nonblank_rows": 0,
+          "url": "https://data.bodik.jp/dataset/c740b424-029f-4fa3-8f3c-cd1c2e0541a6/resource/bfc51bd8-517b-4570-ac7d-d66851b35d33/download"
+        },
+        {
+          "bom_utf8": false,
+          "content_type": "text/csv",
+          "data_rows": 87,
+          "dataset_reference": {
+            "fetched_at": "2026-11-13T14:55:48.791003+00:00",
+            "page_hash": "fa669ae5a07ff14f9df8e591a980c2adbc88a400bc042e8b1f7e2f60b84ef10e",
+            "title": [
+              "佐賀市公共施設一覧 - データセット - CKAN"
+            ],
+            "url": "https://data.bodik.jp/dataset/412015_koukyoushisetsu"
+          },
+          "encoding": "cp932",
+          "exact_pending_name_matches": 0,
+          "fetched_at": "2026-11-13T14:56:18.135765+00:00",
+          "name_fields_checked": [
+            "名称",
+            "名称_通称"
+          ],
+          "named_rows": 82,
+          "page_hash": "2b72ab9c8833ee0dc85f9900df0f544eedbbaa6e77765138d25ca64d94653cd9",
+          "physical_csv_records": 88,
+          "reading_field": "名称_カナ",
+          "resource_metadata_reference": {
+            "fetched_at": "2026-11-13T14:56:15.916885+00:00",
+            "page_hash": "a6aa0e413bd80d596b000eb38a754faa4f7088b3785a0f2f3e9961876d1b1b84",
+            "title": [
+              "佐賀市公共施設一覧 - 佐賀市_公共施設.csv - CKAN"
+            ],
+            "url": "https://data.bodik.jp/dataset/412015_koukyoushisetsu/resource/7f5f14a9-ecc7-452d-9598-bea82f3d6194"
+          },
+          "resource_reference": "https://data.bodik.jp/dataset/412015_koukyoushisetsu/resource/7f5f14a9-ecc7-452d-9598-bea82f3d6194",
+          "shrine_name_keyword_matches": 0,
+          "unnamed_nonblank_rows": 5,
+          "url": "https://data.bodik.jp/dataset/d3dd196e-8f49-42c2-99a1-e61266637fb1/resource/7f5f14a9-ecc7-452d-9598-bea82f3d6194/download"
+        },
+        {
+          "bom_utf8": false,
+          "content_type": "text/csv",
+          "data_rows": 105,
+          "dataset_reference": {
+            "fetched_at": "2026-11-13T14:55:51.311149+00:00",
+            "page_hash": "9b3a393d24b6b88bf5b6adf0d44419c1c5dd77a7f13bf96b43cc35d8351db8be",
+            "title": [
+              "佐賀市の教育・文化・生涯学習施設一覧 - データセット - CKAN"
+            ],
+            "url": "https://data.bodik.jp/dataset/412015_education_culture_lifelong_learning"
+          },
+          "encoding": "cp932",
+          "exact_pending_name_matches": 0,
+          "fetched_at": "2026-11-13T14:56:25.116429+00:00",
+          "name_fields_checked": [
+            "名称",
+            "名称_通称"
+          ],
+          "named_rows": 105,
+          "page_hash": "77efbafa35ae216992fd82578db2838208a94ea4efcd2225d8ec12bcc36880db",
+          "physical_csv_records": 106,
+          "reading_field": "名称_カナ",
+          "resource_metadata_reference": {
+            "fetched_at": "2026-11-13T14:56:20.847912+00:00",
+            "page_hash": "194fa9deea916fbb05cebcb36193f9774405165ab5560f945ea219d2812b53ba",
+            "title": [
+              "佐賀市の教育・文化・生涯学習施設一覧 - 教育・文化・生涯学習  (世界測地系).csv - CKAN"
+            ],
+            "url": "https://data.bodik.jp/dataset/412015_education_culture_lifelong_learning/resource/c1cc67ac-2399-49f2-baab-d1b6f06ec718"
+          },
+          "resource_reference": "https://data.bodik.jp/dataset/412015_education_culture_lifelong_learning/resource/c1cc67ac-2399-49f2-baab-d1b6f06ec718",
+          "shrine_name_keyword_matches": 0,
+          "unnamed_nonblank_rows": 0,
+          "url": "https://data.bodik.jp/dataset/2f22035d-4c12-49b3-891b-94837b9e4e03/resource/c1cc67ac-2399-49f2-baab-d1b6f06ec718/download"
+        }
+      ]
     }
   ],
   "per_prefecture": {
@@ -1199860,6 +1200142,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "0fa041b32b29eb09157384f0ac742517945a64861b4e983fa0c58f0c597799a4",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市伊勢町９－８",
@@ -1200371,6 +1200665,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "a39f6cb9770891320f00575231ef3166ba103f211bd2db9fdaf325054864666e",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市松原町２－１０－４３",
@@ -1201360,6 +1201666,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "78eb99a5d6eee60077048a8d3e8bddd385f92f9ddbe887b92cc0942f45fbd24c",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀県佐賀市金立町金立3349",
@@ -1201887,6 +1202205,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "e5d7fec13c48c255dc47f6fa3044b6171a7a2575bd8b75c6040cf41847894f43",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市東佐賀町１５－３０",
@@ -1202509,6 +1202839,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "7dcf0563101d6d71adafe72f8f16e068e4e3fe0b76ba7661cad4f437ee118300",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市金立大字金立１５４２",
@@ -1202975,6 +1203317,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "43b6a334d414201eaf8c35cb3a1846792e53aee8f38206c575ec089a4e9cf733",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市川原町８－１５",
@@ -1203142,6 +1203496,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "fa5c33081251ebc75b888a1c71347e00765982648ee53b0227d57bcbd503db93",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市木原１－８－３４",
@@ -1203531,6 +1203897,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "e796d340c5285999d9b7fb0d019f520b39442478e08e4633385fa3a9be1ceeb0",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市川副町大字福富69",
@@ -1203622,6 +1204000,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "7221088f2a65524852a7a05401e2ec63f9078e8a3964b0071c6e7bae16263252",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市本庄町大字袋184",
@@ -1203889,6 +1204279,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "d1ddfb85bf6fd1276c29d01363b0bb6b76d29a354ef72a7688ed6d149f96d63c",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市本庄町本庄１１５６",
@@ -1204362,6 +1204764,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "15e4c9cfbbd2bc01ede229f465ed82be0b7807d1f7ba1b8daae13835e888224d",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市巨勢町大字牛島41",
@@ -1205086,6 +1205500,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "8e5e2eac153ad2809ee0b594e44184d576e2f78d14e928b51292a72dee4b6666",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市金立大字金立１０５５",
@@ -1205375,6 +1205801,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "58fbbfb2bd8a0b9c2bf156f2f5a6913537b319aedf1571c8af9a43177c6f6c90",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市富士町大字上無津呂２８４４",
@@ -1206856,6 +1207294,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "0838536be6a17228f8c6e57d7a8d2f941521118b57fc08e65d4f820e8d85126a",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市八幡小路３－９",
@@ -1207102,6 +1207552,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "f29339470fa7517f70c1667fb87f16680ff161254d0f85d106f58299d8c9705a",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市金立町大字金立３４１５",
@@ -1207197,6 +1207659,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "0c28f73753a9a8540b4eba4a0742a382e14f571c3c442fc0a32425779add648a",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市神野西２－２－９",
@@ -1207565,6 +1208039,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "1aeb9b0ae8a4ab793b807f9246d6157006ff6937c0e9e5615daf1cea55d1b35c",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市北川副町新郷７８８",
@@ -1207992,6 +1208478,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "374d75430c90657b56f81c81eed287ec73ee819598bf2e76764d2fdae03a668b",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀県佐賀市北川副町光法１４２５",
@@ -1208083,6 +1208581,18 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T14:58:13.271059+00:00",
+          "evidence_attempt": "saga_city_58_dataset_catalogue_four_csv_460_rows_19_pending_20261113",
+          "exact_name_matches": 0,
+          "expected_source_hash": "52024d51319315efb4130131e8063a99c58066c43f212ba85ba850bad110d965",
+          "observation": "令和8指定緊急避難場所113行、令和7AED155行、公共施設87行、教育文化生涯学習（世界測地系）105行の名称/名称_通称欄を照合したが対応する神社名なし。表の名称_カナを別施設や神社名へ流用しない。市全資料又は市内の読み情報不存在を意味しない。",
+          "source_kind": "government_open_data",
+          "source_publisher": "佐賀市",
+          "status": "no_name_lead_in_four_saga_city_open_table_name_fields",
+          "table_data_rows": 460
         }
       ],
       "address": "佐賀市諸富町大字徳富５５３",

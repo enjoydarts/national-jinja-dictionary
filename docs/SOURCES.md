@@ -1124,3 +1124,10 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 [お宮キッズの関連リンク](https://www.omiyakids.com/jinja-ph/2023/2023-02.html)にある実hrefの[妻山神社候補](https://tsumayamajinja.studio.site/)は取得できましたが、初期HTMLから抽出される文字はtitleの社名のみ、制作サービスへのバナーリンクのみでした。JavaScript実行・追加アセット/API取得・画像文字確認はしておらず、公式性・利用条件の確認済みや全サイトの情報不存在とは扱いません。採用0で既存判断を保持し、本文・画像・スクリプト・連絡先・キャッシュは収録していません。
 
 北海道Styleは、実トップのリンク先にある運営者情報とプライバシーポリシーを確認した。民間の旅行情報サイトであり、著作権欄の文章・画像等の無断転載禁止により追加の施設記事取得・辞書採用へ進まない。松前神社のweb本文は探索段階のみで原バイトhash未確認、前回Gnomeで解決済みの同施設を新規採用へ重複計上しない。今回のnative取得は入口・運営・規約3HTMLのみで、北海道413保留の個別読み本文確認ではない。
+
+
+### 佐賀市の公開カタログと選定4表（2026年11月13日）
+
+[市公式の案内本文](https://www.city.saga.lg.jp/sangyo-machizukuri/toshi-kotsu/2/1/4/2193.html)から実カタログを確認し、[佐賀市組織](https://data.bodik.jp/organization/412015)の全3頁で58データセット見出しを点検しました。[市オープンデータ規約](https://odcs.bodik.jp/412015/tos/)はCC BY4.0を既定とし、resource個別ライセンスを優先します。各選定説明は「クリエイティブ・コモンズ 表示」（版未明示）という表示であり、全市HTMLへの包括許諾には拡張していません。
+
+[指定緊急避難場所](https://data.bodik.jp/dataset/412015_evacuation_location)の令和8年度CSV113行、[AED設置施設](https://data.bodik.jp/dataset/412015_aed_facilities)の令和7年度CSV155行、[公共施設](https://data.bodik.jp/dataset/412015_koukyoushisetsu)CSV87行、[教育・文化・生涯学習](https://data.bodik.jp/dataset/412015_education_culture_lifelong_learning)の世界測地系CSV105行を取得し、名称・名称_通称を市内保留19登録と照合しました。対応する神社名はなく採用0です。計460行のうち名称あり455行、公共施設の名称空欄5行で、重複排除した施設数や神社数ではありません。避難場所はUTF-8 BOM、残3表はCP932 strictで日本語見出しを確認しました。旧年度・日本測地系別版・広報テキスト・アプリ投稿地図・他データ本体は未取得で、58データセット全resourceの取得や市全資料の情報不存在を意味しません。表本文・連絡先・無関係な住所行・画像・キャッシュは収録せず、必要な公開URL/hash/日時・行数・列名・不一致結果のみを保存しています。
