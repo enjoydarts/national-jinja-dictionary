@@ -26510,18 +26510,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10317,
         "scope": "長崎氷川神社のロケ地DB候補は既存利用条件停止を維持。OpenStreetMap読取APIはrobotsの/api/禁止で取得前に停止しデータ0。全県や全資料の照合完了ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T14:34:16.975335+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10317,
+        "scope": "個人調査サイト神奈備の入口と神社名鑑への実hrefを確認。移転先はDNS失敗し索引/個別記事未取得、特定施設の新規照合/採用0。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T14:23:26.604183+00:00",
-      "entry_ids": [
-        "a7f620e4-5192-51d7-86de-b260d7d0da54"
-      ],
-      "evidence_attempt": "goto_tsumoriko_tourism_profile_full_reading_original_address_20261113",
-      "inspected_targets": 1,
-      "new_verified_entries": 1,
-      "retained_pending_entries": 10316,
-      "scope": "頭子神社の県観光連盟1詳細から全文かなと原全所在地を個別確認。地域全件の解決ではない。"
+      "checked_at": "2026-11-13T14:34:16.975335+00:00",
+      "new_verified_entries": 0,
+      "retained_pending_entries": 10317,
+      "scope": "個人調査サイト神奈備の入口と神社名鑑への実hrefを確認。移転先はDNS失敗し索引/個別記事未取得、特定施設の新規照合/採用0。"
     },
     "remaining_unfinished_entries": 10316,
     "resolved_entry_ids": [
@@ -27081,7 +27082,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T14:23:26.604183+00:00",
+  "computed_at": "2026-11-13T14:34:16.975335+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -403758,6 +403759,38 @@
         }
       ],
       "target_entries": 1
+    },
+    {
+      "acquisition": "通常Client interval=2、timeout=20、retries=0、robots適用。入口の実リンク先だけを要求しDNS解決失敗。HTTP403/503やrobots拒否ではない。同一URL再試行・推測パス・別プロトコル/ミラー/アーカイブ取得はしない。",
+      "actual_catalogue_href": {
+        "label": "神奈備の神社名鑑",
+        "url": "http://kamnavi.jp/index2.htm"
+      },
+      "attempt_id": "kamnavi_personal_index_actual_relocation_dns_failure_no_profiles_20261113",
+      "checked_at": "2026-11-13T14:34:16.975335+00:00",
+      "failed_catalogue_reference": {
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+        "requested_url": "http://kamnavi.jp/index2.htm",
+        "status": "dns_resolution_failed_catalogue_body_not_acquired"
+      },
+      "home_reference": {
+        "fetched_at": "2026-11-13T14:32:17.746635+00:00",
+        "page_hash": "76a240903183fe30f307529cf4475bd5e50ef5b5dc0b14a2c8c44a5210e53878",
+        "title": [
+          "神奈備にようこそ index"
+        ],
+        "url": "https://www.ne.jp/asahi/kam/navi/index.htm"
+      },
+      "inspected_facility_profiles": 0,
+      "new_verified_entries": 0,
+      "privacy_and_storage": "入口全文・画像・メール/人物名・キャッシュは収録せず、標題・公開URL/hash・必要な条件要約・実hrefとDNS失敗・未取得範囲だけを保存。",
+      "rights_observation": "入口本文の標準Copyright表示を確認。点検した本文には一律の転載禁止表記は見当たらないが、包括転載許諾・再配布可能ライセンスとは認定しない。移転先本文の条件は未確認。",
+      "scope": "青森の追加資料探索から見つかった全国神社名鑑候補の入口/実リンク確認のみ。索引・個別記事・県別リンク本文は未取得で、特定県/施設の正式名・全文読み・全所在地照合0。既存保留や全国全件の解決完了ではない。",
+      "screened_pending_entries": 0,
+      "selected_facility_profiles": 0,
+      "source_kind": "personal_research_site_discovery",
+      "source_publisher": "神奈備（個人調査サイト）",
+      "status": "personal_source_home_inspected_actual_catalogue_link_dns_failed"
     },
     {
       "adopted_reading_research_history": [
