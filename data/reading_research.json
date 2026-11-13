@@ -21142,19 +21142,30 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 4,
         "scope": "神社庁4詳細・選択矩形のXML1応答（3834行）の4コード、自治体文化財2頁、国税庁兵庫月次全206,383行・全国日次8組19,178行。県内全域の地図取得・全自治体資料の精査完了ではない。"
+      },
+      {
+        "checked_at": "2026-11-13T03:15:19.020039+00:00",
+        "entry_ids": [
+          "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",
+          "3e876de1-588c-5883-9cd9-fdd50610600a",
+          "cb59d30f-f3f9-5ef3-b38f-1acfcfdf56e7"
+        ],
+        "inspected_targets": 3,
+        "new_verified_entries": 3,
+        "retained_pending_entries": 0,
+        "scope": "東山八幡神社6306053・天満神社6306023・柏原八幡宮6308001の実コード・原全地番が一致するXML/詳細から、独立した唯一の存続神社法人の登記名と一致する詳細名と明示全文かなだけを個別選択。原地図名・詳細名・住所・かな・ID/hashと全過去調査を保持。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T03:15:19.020039+00:00",
+      "checked_at": "2026-11-13T03:23:23.760400+00:00",
       "entry_ids": [
-        "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",
-        "3e876de1-588c-5883-9cd9-fdd50610600a",
-        "cb59d30f-f3f9-5ef3-b38f-1acfcfdf56e7"
+        "792b0e1b-9a46-5a7b-bed4-980112c4be50",
+        "d9aff84b-bae1-5ac5-abb3-2dd4a4f1d5d7"
       ],
-      "inspected_targets": 3,
-      "new_verified_entries": 3,
-      "retained_pending_entries": 0,
-      "scope": "東山八幡神社6306053・天満神社6306023・柏原八幡宮6308001の実コード・原全地番が一致するXML/詳細から、独立した唯一の存続神社法人の登記名と一致する詳細名と明示全文かなだけを個別選択。原地図名・詳細名・住所・かな・ID/hashと全過去調査を保持。"
+      "inspected_targets": 2,
+      "new_verified_entries": 0,
+      "retained_pending_entries": 2,
+      "scope": "実CSVの名称画像ID00042294/00048798に対応する国税庁公式PNG2枚を実目視し、同CSV行・法人番号・月次hashに拘束。神社庁の実2詳細は原hash不変。全国日次8組19178行を対象法人番号・名称・両資料の実全地番で照合。画像確認は同一性や保留解消と別工程。"
     },
     "remaining_unfinished_entries": 10566,
     "resolved_entry_ids": [
@@ -21464,7 +21475,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T03:15:19.020039+00:00",
+  "computed_at": "2026-11-13T03:23:23.760400+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -238555,6 +238566,252 @@
       "source_kind": "source_bound_hyogo_profile_name_selection",
       "source_publisher": "兵庫県神社庁・国税庁",
       "status": "three_explicit_profile_names_and_whole_kana_selected_map_observations_retained"
+    },
+    {
+      "attempt_id": "hyogo_two_official_name_images_visually_bound_to_literal_csv_rows_20261113",
+      "attribution": "出典：国税庁法人番号公表サイト20261030兵庫県全件CSV・当該公式名称画像及び記録した日次差分、兵庫県神社庁の対象詳細。画像の字形確認記録であり、対象施設又は読みの新規承認ではない。",
+      "checked_at": "2026-11-13T03:23:23.760400+00:00",
+      "daily_confirmation": {
+        "as_of": "20261112",
+        "events": [],
+        "resources": [
+          {
+            "date": "20261102",
+            "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+            "file_id": "28508",
+            "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+            "rows": 2346,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261104",
+            "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+            "file_id": "28511",
+            "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+            "rows": 2156,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261105",
+            "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+            "file_id": "28514",
+            "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+            "rows": 2183,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261106",
+            "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+            "file_id": "28517",
+            "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+            "rows": 2617,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261109",
+            "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+            "file_id": "28520",
+            "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+            "rows": 2362,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261110",
+            "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+            "file_id": "28523",
+            "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+            "rows": 2642,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261111",
+            "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+            "file_id": "28526",
+            "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+            "rows": 2692,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          },
+          {
+            "date": "20261112",
+            "fetched_at": "2026-11-13T01:55:56.841451+00:00",
+            "file_id": "28529",
+            "page_hash": "896ee14905fdfcd8098dd4bdb87fdc9bd02655facaf056c3d5358b984a60c1b9",
+            "rows": 2180,
+            "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+          }
+        ],
+        "rows": 19178,
+        "scope": "全国日次8組の全行を候補法人番号・両資料の名称と宗教法人接頭辞付き名称・両資料に実記載された全地番で検査。字名・沢/澤を同一視しない。"
+      },
+      "entry_ids": [
+        "792b0e1b-9a46-5a7b-bed4-980112c4be50",
+        "d9aff84b-bae1-5ac5-abb3-2dd4a4f1d5d7"
+      ],
+      "new_verified_entries": 0,
+      "observations": [
+        {
+          "agency_address_raw": "宍粟市山崎町須賀沢72",
+          "agency_name_raw": "庥篥神社",
+          "agency_reading_raw": "ヒチリキジンジャ",
+          "corporate_number": "8140005007028",
+          "entry_id": "792b0e1b-9a46-5a7b-bed4-980112c4be50",
+          "expected_source_hash": "6753483ae0ecbfa4146ed8df0747cda6a71cc9f1b118237f86fdcdf37298b276",
+          "image_proof_problems": [],
+          "name_image_id": "00048798",
+          "native_code": "6320027",
+          "observation": "国税庁公式PNGの全名称を目視し、実CSVのUnicode表記「觱篥神社」との対応を確認。画像は名称だけであり、所在地・全文読み・神社庁の対象施設との同一性を確認する資料ではない。",
+          "original_full_address_binding": false,
+          "registered_address_raw": "兵庫県宍粟市山崎町須賀澤７２番地",
+          "registered_name_raw": "觱篥神社",
+          "registered_reading_raw": "ヒチリキジンジャ",
+          "remaining_requirement": "神社庁の庥篥/地図の篥と登記画像・CSVの觱篥という名称差、及び須賀沢/須賀澤72の原所在地対応を確認できる実根拠。画像確認済みだけで沢/澤の置換・名称変更を承認しない。"
+        },
+        {
+          "agency_address_raw": "豊岡市森津629-2",
+          "agency_name_raw": "●神社(舟偏に益)",
+          "agency_reading_raw": "ヘサキジンジャ",
+          "corporate_number": "2140005012248",
+          "entry_id": "d9aff84b-bae1-5ac5-abb3-2dd4a4f1d5d7",
+          "expected_source_hash": "940839dca7ba8353a70bb915297b10b0fcfbed72ce607682763009410ec34340",
+          "image_proof_problems": [],
+          "name_image_id": "00042294",
+          "native_code": "6322026",
+          "observation": "国税庁公式PNGの全名称を目視し、実CSVのUnicode表記「艗神社」との対応を確認。画像は名称だけであり、所在地・全文読み・神社庁の対象施設との同一性を確認する資料ではない。",
+          "original_full_address_binding": false,
+          "registered_address_raw": "兵庫県豊岡市森津字奥中口６２９番地の２",
+          "registered_name_raw": "艗神社",
+          "registered_reading_raw": "",
+          "remaining_requirement": "神社庁の●神社(舟偏に益)と画像/CSVの艗神社の対象対応、及び森津629-2と森津字奥中口629-2の対応を確認できる実根拠。名称画像から読みを得ず、CSVフリガナ空欄や原住所の字名を推定補完しない。"
+        }
+      ],
+      "remaining_requirement": "各登録の原名称・地名字形又は追加字名の独立した対応根拠を取得し、既存の名称/所在地の判断を解決してから採用を検討する。",
+      "resources": [
+        {
+          "code": "6320027",
+          "fetched_at": "2026-11-13T03:20:37.510186+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "fef112c94ce1e14ef20db61dc7353b7e0c3ce6288577a06a22c35118cf3b1372",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "url": "https://www.hyogo-jinjacho.com/data/6320027.html"
+        },
+        {
+          "address_raw": "兵庫県宍粟市山崎町須賀澤７２番地",
+          "checked_at": "2026-11-13T03:22:34.369438+00:00",
+          "corporate_number": "8140005007028",
+          "csv_row": 181204,
+          "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+          "file_id": "28443",
+          "image_reviews": {
+            "nameImageId": {
+              "archive_page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "checked_at": "2026-11-13T03:22:34.369438+00:00",
+              "corporate_number": "8140005007028",
+              "csv_row": 181204,
+              "fetched_at": "2026-11-13T03:20:35.348090+00:00",
+              "image_id": "00048798",
+              "method": "visual_inspection_of_official_image",
+              "note": "公式PNGの名称全体を目視し、実CSVのUnicode表記「觱篥神社」と対応する字形を確認。名称画像には所在地又は読みの表示はなく、それらの補完・変換はしない。",
+              "page_hash": "0d0318f415b22fcdd3a7dfd423e34878104fe9c3d399cd3d0a55d26dfed02188",
+              "snapshot": "20261030",
+              "source_address_raw": "兵庫県宍粟市山崎町須賀澤７２番地",
+              "source_name_raw": "觱篥神社",
+              "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00048798"
+            }
+          },
+          "locator": "28_hyogo_all_20261030.csv row 181204",
+          "member": "28_hyogo_all_20261030.csv",
+          "name_raw": "觱篥神社",
+          "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+          "reading_raw": "ヒチリキジンジャ",
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "cityName": "宍粟市",
+            "closeDate": "",
+            "corporateNumber": "8140005007028",
+            "furigana": "ヒチリキジンジャ",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "觱篥神社",
+            "nameImageId": "00048798",
+            "prefectureCode": "28",
+            "prefectureName": "兵庫県",
+            "process": "01",
+            "streetNumber": "山崎町須賀澤７２番地"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "title": "国税庁公式名称画像と兵庫県全件CSV",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        },
+        {
+          "code": "6322026",
+          "fetched_at": "2026-11-13T03:20:39.590340+00:00",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "page_hash": "a92eb6f55f3cd87b1214fce76dc8464d34ebceece5d5270231e311712e98a7b1",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "url": "https://www.hyogo-jinjacho.com/data/6322026.html"
+        },
+        {
+          "address_raw": "兵庫県豊岡市森津字奥中口６２９番地の２",
+          "checked_at": "2026-11-13T03:22:34.369438+00:00",
+          "corporate_number": "2140005012248",
+          "csv_row": 44268,
+          "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+          "file_id": "28443",
+          "image_reviews": {
+            "nameImageId": {
+              "archive_page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+              "checked_at": "2026-11-13T03:22:34.369438+00:00",
+              "corporate_number": "2140005012248",
+              "csv_row": 44268,
+              "fetched_at": "2026-11-13T03:20:33.262180+00:00",
+              "image_id": "00042294",
+              "method": "visual_inspection_of_official_image",
+              "note": "公式PNGの名称全体を目視し、実CSVのUnicode表記「艗神社」と対応する字形を確認。名称画像には所在地又は読みの表示はなく、それらの補完・変換はしない。",
+              "page_hash": "9f5c0b3093ea23dfb449cbacbbe37cfa866bc435631829ee4810407af165c518",
+              "snapshot": "20261030",
+              "source_address_raw": "兵庫県豊岡市森津字奥中口６２９番地の２",
+              "source_name_raw": "艗神社",
+              "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00042294"
+            }
+          },
+          "locator": "28_hyogo_all_20261030.csv row 44268",
+          "member": "28_hyogo_all_20261030.csv",
+          "name_raw": "艗神社",
+          "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+          "reading_raw": "",
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "cityName": "豊岡市",
+            "closeDate": "",
+            "corporateNumber": "2140005012248",
+            "furigana": "",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "艗神社",
+            "nameImageId": "00042294",
+            "prefectureCode": "28",
+            "prefectureName": "兵庫県",
+            "process": "01",
+            "streetNumber": "森津字奥中口６２９番地の２"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "title": "国税庁公式名称画像と兵庫県全件CSV",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ],
+      "retained_pending_entries": 2,
+      "scope": "実CSVの名称画像ID00042294/00048798に対応する国税庁公式PNG2枚を実目視し、同CSV行・法人番号・月次hashに拘束。神社庁の実2詳細は原hash不変。全国日次8組19178行を対象法人番号・名称・両資料の実全地番で照合。画像確認は同一性や保留解消と別工程。",
+      "status": "two_official_name_images_inspected_identity_and_address_judgments_retained",
+      "stop_scope": "正常な公式image endpointと元profile URLだけを通常取得。画像Content-Typeはapplication/octet-stream;charset=UTF-8だが実PNG signatureを確認。別形式・別host・protocolによる代替取得なし。画像body・記事本文・連絡先・個人名はコミットせず、URL/hash/日時と最小の字形確認事実のみ保存。",
+      "target_entries": 2
     }
   ],
   "per_prefecture": {
@@ -706604,6 +706861,36 @@
           "source_kind": "article_index",
           "source_publisher": "神社と古事記（非公式二次資料）",
           "status": "bounded_article_index_scope_recorded"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T03:23:23.760400+00:00",
+          "evidence_attempt": "hyogo_two_official_name_images_visually_bound_to_literal_csv_rows_20261113",
+          "expected_source_hash": "6753483ae0ecbfa4146ed8df0747cda6a71cc9f1b118237f86fdcdf37298b276",
+          "observation": "国税庁公式PNGの全名称を目視し、実CSVのUnicode表記「觱篥神社」との対応を確認。画像は名称だけであり、所在地・全文読み・神社庁の対象施設との同一性を確認する資料ではない。",
+          "observed_fields": {
+            "agency_address_raw": "宍粟市山崎町須賀沢72",
+            "agency_name_raw": "庥篥神社",
+            "agency_reading_raw": "ヒチリキジンジャ",
+            "corporate_number": "8140005007028",
+            "entry_id": "792b0e1b-9a46-5a7b-bed4-980112c4be50",
+            "expected_source_hash": "6753483ae0ecbfa4146ed8df0747cda6a71cc9f1b118237f86fdcdf37298b276",
+            "image_proof_problems": [],
+            "name_image_id": "00048798",
+            "native_code": "6320027",
+            "observation": "国税庁公式PNGの全名称を目視し、実CSVのUnicode表記「觱篥神社」との対応を確認。画像は名称だけであり、所在地・全文読み・神社庁の対象施設との同一性を確認する資料ではない。",
+            "original_full_address_binding": false,
+            "registered_address_raw": "兵庫県宍粟市山崎町須賀澤７２番地",
+            "registered_name_raw": "觱篥神社",
+            "registered_reading_raw": "ヒチリキジンジャ",
+            "remaining_requirement": "神社庁の庥篥/地図の篥と登記画像・CSVの觱篥という名称差、及び須賀沢/須賀澤72の原所在地対応を確認できる実根拠。画像確認済みだけで沢/澤の置換・名称変更を承認しない。"
+          },
+          "page_hash": "0d0318f415b22fcdd3a7dfd423e34878104fe9c3d399cd3d0a55d26dfed02188",
+          "reference_url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00048798",
+          "remaining_requirement": "神社庁の庥篥/地図の篥と登記画像・CSVの觱篥という名称差、及び須賀沢/須賀澤72の原所在地対応を確認できる実根拠。画像確認済みだけで沢/澤の置換・名称変更を承認しない。",
+          "source_kind": "official_registered_name_image_visual_review",
+          "source_publisher": "国税庁・兵庫県神社庁",
+          "status": "registered_name_image_and_csv_correspondence_confirmed_original_identity_still_pending"
         }
       ],
       "address": "宍粟市山崎町須賀沢72",
@@ -707570,6 +707857,36 @@
           "source_kind": "article_index",
           "source_publisher": "神社と古事記（非公式二次資料）",
           "status": "bounded_article_index_scope_recorded"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T03:23:23.760400+00:00",
+          "evidence_attempt": "hyogo_two_official_name_images_visually_bound_to_literal_csv_rows_20261113",
+          "expected_source_hash": "940839dca7ba8353a70bb915297b10b0fcfbed72ce607682763009410ec34340",
+          "observation": "国税庁公式PNGの全名称を目視し、実CSVのUnicode表記「艗神社」との対応を確認。画像は名称だけであり、所在地・全文読み・神社庁の対象施設との同一性を確認する資料ではない。",
+          "observed_fields": {
+            "agency_address_raw": "豊岡市森津629-2",
+            "agency_name_raw": "●神社(舟偏に益)",
+            "agency_reading_raw": "ヘサキジンジャ",
+            "corporate_number": "2140005012248",
+            "entry_id": "d9aff84b-bae1-5ac5-abb3-2dd4a4f1d5d7",
+            "expected_source_hash": "940839dca7ba8353a70bb915297b10b0fcfbed72ce607682763009410ec34340",
+            "image_proof_problems": [],
+            "name_image_id": "00042294",
+            "native_code": "6322026",
+            "observation": "国税庁公式PNGの全名称を目視し、実CSVのUnicode表記「艗神社」との対応を確認。画像は名称だけであり、所在地・全文読み・神社庁の対象施設との同一性を確認する資料ではない。",
+            "original_full_address_binding": false,
+            "registered_address_raw": "兵庫県豊岡市森津字奥中口６２９番地の２",
+            "registered_name_raw": "艗神社",
+            "registered_reading_raw": "",
+            "remaining_requirement": "神社庁の●神社(舟偏に益)と画像/CSVの艗神社の対象対応、及び森津629-2と森津字奥中口629-2の対応を確認できる実根拠。名称画像から読みを得ず、CSVフリガナ空欄や原住所の字名を推定補完しない。"
+          },
+          "page_hash": "9f5c0b3093ea23dfb449cbacbbe37cfa866bc435631829ee4810407af165c518",
+          "reference_url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00042294",
+          "remaining_requirement": "神社庁の●神社(舟偏に益)と画像/CSVの艗神社の対象対応、及び森津629-2と森津字奥中口629-2の対応を確認できる実根拠。名称画像から読みを得ず、CSVフリガナ空欄や原住所の字名を推定補完しない。",
+          "source_kind": "official_registered_name_image_visual_review",
+          "source_publisher": "国税庁・兵庫県神社庁",
+          "status": "registered_name_image_and_csv_correspondence_confirmed_original_identity_still_pending"
         }
       ],
       "address": "豊岡市森津629-2",
