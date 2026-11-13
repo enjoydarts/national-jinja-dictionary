@@ -108606,6 +108606,95 @@
       ],
       "status": "verified"
     },
+    "5e05b70b-fcf7-5414-b5fb-fadbae9d7b37": {
+      "changes": {
+        "reading": "にゃくいちおうじぐう"
+      },
+      "expected_source_hash": "f763e3c5b8b9e8d5878eb0677c4071e7f9aeb390989ca1fffeac371a7cac977b",
+      "facility_id": "34e46fd3-60e3-5c53-9a3f-8e8c79b0e38a",
+      "identity_match": "所在地列の地番前接頭辞と同じ行に明示された小字および全数値地番が原神社庁の全所在地に対応。比較上の字区切り又は区切りなしを記録し、旧村名・字名の補作や切り落としは行わない。",
+      "original": {
+        "address": "高知県香南市香我美町徳王子字澪標1791番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=119",
+        "name_raw": "若一王子宮",
+        "reading_raw": ""
+      },
+      "reason": "同一CSV行の正式名/独立全文カナ/所在地/小字の原欄を束縛し、原全住所と数値地番を照合して補完。原空かなと原小字を保持。",
+      "references": [
+        {
+          "acquisition": "Google Drive connector metadata/fetch; authenticated file_uri materialized without using source alternate routes",
+          "address_raw": "香南市香我美町徳王子1791番",
+          "bytes": 76844,
+          "checked_at": "2026-11-13T12:25:39.743714+00:00",
+          "csv_address_context": {
+            "checked_at": "2026-11-13T12:25:39.743714+00:00",
+            "comparison_separator": "字",
+            "csv_record_number": 10,
+            "excerpt": "No=9 / 神社名=若一王子宮 / カナ=ニャクイチオウジグウ / 所在地=香南市香我美町徳王子1791番 / 小字=澪標",
+            "kind": "same_csv_record_explicit_aza",
+            "locator": "CSV logical record10, No=9",
+            "page_hash": "13c681c2a19a3d55a8f20cf4d1ad042a3b022709762f7fc489885d21ad1cc216",
+            "row_id_raw": "9",
+            "source_fields": {
+              "No": "9",
+              "カナ": "ニャクイチオウジグウ",
+              "小字": "澪標",
+              "所在地": "香南市香我美町徳王子1791番",
+              "神社名": "若一王子宮"
+            },
+            "url": "https://drive.google.com/file/d/1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai/view?usp=drivesdk"
+          },
+          "csv_record_number": 10,
+          "excerpt": "No=9 / 神社名=若一王子宮 / カナ=ニャクイチオウジグウ / 所在地=香南市香我美町徳王子1791番 / 小字=澪標",
+          "excerpt_processing": "同一論理CSVレコードのNo・神社名・カナ・所在地・小字の原値を列名付きで保存。所在地原欄には小字を挿入せず、比較時だけ所在地の地番前接頭辞と明示小字/数値地番を合わせる。比較用の字区切りは編集判断で原欄の連続引用ではない。",
+          "fetched_at": "2026-11-13T11:22:08.708379+00:00",
+          "hash_scope": "Drive APIが提供したファイル参照から保存した元CSVのバイト。connector readable textの再符号化hashではない。",
+          "id": "1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai",
+          "label": "kut011",
+          "locator": "CSV logical record10, No=9",
+          "mime_type": "text/csv",
+          "modified_time": "2020-02-28T08:43:19.000Z",
+          "name_raw": "若一王子宮",
+          "page_hash": "13c681c2a19a3d55a8f20cf4d1ad042a3b022709762f7fc489885d21ad1cc216",
+          "publication_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "href_raw": "https://drive.google.com/open?id=1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai",
+            "label": "history",
+            "locator": "011 高知県の熊野神社分布と勧請、CSVダウンロード実href。",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "publisher_reference": {
+            "fetched_at": "2026-11-13T11:21:03.612448+00:00",
+            "label": "university-about",
+            "page_hash": "a3dd570539c2a3473e62022d422c4fe6a6fe58aa0e650f7daee2916237b7228a",
+            "url": "https://field-db.kochi-tech.ac.jp/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+          },
+          "reading_raw": "ニャクイチオウジグウ",
+          "reading_scope": "full_name",
+          "rights_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "label": "history",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "rights_scope": "公開説明はCSVダウンロードと調査・町歩き等の活用を案内。包括的再配布許諾とは扱わず、同一行の最小事実・照合判断・出典位置のみ保存。原明細帳の写し/画像、全CSV、長い由緒、信徒情報、人物名は収録しない。",
+          "source_classification": "大学公開DBへの市民調査団投稿による編集データ。神社庁の原読みや原明細帳の全文かなを新たに認証したものではない。",
+          "source_fields": {
+            "No": "9",
+            "カナ": "ニャクイチオウジグウ",
+            "小字": "澪標",
+            "所在地": "香南市香我美町徳王子1791番",
+            "神社名": "若一王子宮"
+          },
+          "source_kind": "university_hosted_community_research_csv",
+          "source_publisher": "高知工科大学フィールドDB / 奥四万十山の暮らし調査団",
+          "title": "高知県の熊野神社分布と勧請（KUTフィールドDB 011）",
+          "url": "https://drive.google.com/file/d/1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai/view?usp=drivesdk"
+        }
+      ],
+      "status": "verified"
+    },
     "5e0c4e8d-eed4-5ff8-9a7c-df26d9f575bb": {
       "changes": {
         "reading": "たかみじんじゃ"
@@ -152787,6 +152876,95 @@
       ],
       "status": "verified"
     },
+    "8275f27c-91d1-5085-8dd3-0e96d868dce1": {
+      "changes": {
+        "reading": "くまのじんじゃ"
+      },
+      "expected_source_hash": "6a7448f34f6249115b6fedfc281ab5ead5d2a6164294d64d15e1bd79766af377",
+      "facility_id": "b06303e2-3182-552d-8599-f579a81f808e",
+      "identity_match": "所在地列の地番前接頭辞と同じ行に明示された小字および全数値地番が原神社庁の全所在地に対応。比較上の字区切り又は区切りなしを記録し、旧村名・字名の補作や切り落としは行わない。",
+      "original": {
+        "address": "高知県香美市物部町中谷川字神主ﾔｼｷ166番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=131",
+        "name_raw": "熊野神社",
+        "reading_raw": ""
+      },
+      "reason": "同一CSV行の正式名/独立全文カナ/所在地/小字の原欄を束縛し、原全住所と数値地番を照合して補完。原空かなと原小字を保持。",
+      "references": [
+        {
+          "acquisition": "Google Drive connector metadata/fetch; authenticated file_uri materialized without using source alternate routes",
+          "address_raw": "香美市物部町中谷川166",
+          "bytes": 76844,
+          "checked_at": "2026-11-13T12:25:39.743714+00:00",
+          "csv_address_context": {
+            "checked_at": "2026-11-13T12:25:39.743714+00:00",
+            "comparison_separator": "字",
+            "csv_record_number": 23,
+            "excerpt": "No=22 / 神社名=熊野神社 / カナ=クマノジンジャ / 所在地=香美市物部町中谷川166 / 小字=神主ヤシキ",
+            "kind": "same_csv_record_explicit_aza",
+            "locator": "CSV logical record23, No=22",
+            "page_hash": "13c681c2a19a3d55a8f20cf4d1ad042a3b022709762f7fc489885d21ad1cc216",
+            "row_id_raw": "22",
+            "source_fields": {
+              "No": "22",
+              "カナ": "クマノジンジャ",
+              "小字": "神主ヤシキ",
+              "所在地": "香美市物部町中谷川166",
+              "神社名": "熊野神社"
+            },
+            "url": "https://drive.google.com/file/d/1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai/view?usp=drivesdk"
+          },
+          "csv_record_number": 23,
+          "excerpt": "No=22 / 神社名=熊野神社 / カナ=クマノジンジャ / 所在地=香美市物部町中谷川166 / 小字=神主ヤシキ",
+          "excerpt_processing": "同一論理CSVレコードのNo・神社名・カナ・所在地・小字の原値を列名付きで保存。所在地原欄には小字を挿入せず、比較時だけ所在地の地番前接頭辞と明示小字/数値地番を合わせる。比較用の字区切りは編集判断で原欄の連続引用ではない。",
+          "fetched_at": "2026-11-13T11:22:08.708379+00:00",
+          "hash_scope": "Drive APIが提供したファイル参照から保存した元CSVのバイト。connector readable textの再符号化hashではない。",
+          "id": "1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai",
+          "label": "kut011",
+          "locator": "CSV logical record23, No=22",
+          "mime_type": "text/csv",
+          "modified_time": "2020-02-28T08:43:19.000Z",
+          "name_raw": "熊野神社",
+          "page_hash": "13c681c2a19a3d55a8f20cf4d1ad042a3b022709762f7fc489885d21ad1cc216",
+          "publication_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "href_raw": "https://drive.google.com/open?id=1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai",
+            "label": "history",
+            "locator": "011 高知県の熊野神社分布と勧請、CSVダウンロード実href。",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "publisher_reference": {
+            "fetched_at": "2026-11-13T11:21:03.612448+00:00",
+            "label": "university-about",
+            "page_hash": "a3dd570539c2a3473e62022d422c4fe6a6fe58aa0e650f7daee2916237b7228a",
+            "url": "https://field-db.kochi-tech.ac.jp/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+          },
+          "reading_raw": "クマノジンジャ",
+          "reading_scope": "full_name",
+          "rights_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "label": "history",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "rights_scope": "公開説明はCSVダウンロードと調査・町歩き等の活用を案内。包括的再配布許諾とは扱わず、同一行の最小事実・照合判断・出典位置のみ保存。原明細帳の写し/画像、全CSV、長い由緒、信徒情報、人物名は収録しない。",
+          "source_classification": "大学公開DBへの市民調査団投稿による編集データ。神社庁の原読みや原明細帳の全文かなを新たに認証したものではない。",
+          "source_fields": {
+            "No": "22",
+            "カナ": "クマノジンジャ",
+            "小字": "神主ヤシキ",
+            "所在地": "香美市物部町中谷川166",
+            "神社名": "熊野神社"
+          },
+          "source_kind": "university_hosted_community_research_csv",
+          "source_publisher": "高知工科大学フィールドDB / 奥四万十山の暮らし調査団",
+          "title": "高知県の熊野神社分布と勧請（KUTフィールドDB 011）",
+          "url": "https://drive.google.com/file/d/1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai/view?usp=drivesdk"
+        }
+      ],
+      "status": "verified"
+    },
     "8278ffdf-e921-55cd-86ba-66b1050601a4": {
       "changes": {
         "reading": "あかなはちまんぐう"
@@ -193662,6 +193840,95 @@
           "title": "尓佐加志能爲神 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/matsue/6f3c96a1b69f71c578a8e58fbdb65d5a41592a5c.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "a6816b04-7881-58ee-8344-addfcd374043": {
+      "changes": {
+        "reading": "よしきりべおうじぐう"
+      },
+      "expected_source_hash": "bf795c32e6484402d4c252b200e57b5e3c2e191a46779a8f81b722b45720d4ef",
+      "facility_id": "2dd38a32-38d9-517f-a4d4-55028c2bae2b",
+      "identity_match": "所在地列の地番前接頭辞と同じ行に明示された小字および全数値地番が原神社庁の全所在地に対応。比較上の字区切り又は区切りなしを記録し、旧村名・字名の補作や切り落としは行わない。",
+      "original": {
+        "address": "高知県長岡郡大豊町中内字王子344番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=142",
+        "name_raw": "吉切部王子宮",
+        "reading_raw": ""
+      },
+      "reason": "同一CSV行の正式名/独立全文カナ/所在地/小字の原欄を束縛し、原全住所と数値地番を照合して補完。原空かなと原小字を保持。",
+      "references": [
+        {
+          "acquisition": "Google Drive connector metadata/fetch; authenticated file_uri materialized without using source alternate routes",
+          "address_raw": "大豊町中内344",
+          "bytes": 76844,
+          "checked_at": "2026-11-13T12:25:39.743714+00:00",
+          "csv_address_context": {
+            "checked_at": "2026-11-13T12:25:39.743714+00:00",
+            "comparison_separator": "字",
+            "csv_record_number": 40,
+            "excerpt": "No=39 / 神社名=吉切部王子宮 / カナ=ヨシキリベオウジグウ / 所在地=大豊町中内344 / 小字=王子",
+            "kind": "same_csv_record_explicit_aza",
+            "locator": "CSV logical record40, No=39",
+            "page_hash": "13c681c2a19a3d55a8f20cf4d1ad042a3b022709762f7fc489885d21ad1cc216",
+            "row_id_raw": "39",
+            "source_fields": {
+              "No": "39",
+              "カナ": "ヨシキリベオウジグウ",
+              "小字": "王子",
+              "所在地": "大豊町中内344",
+              "神社名": "吉切部王子宮"
+            },
+            "url": "https://drive.google.com/file/d/1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai/view?usp=drivesdk"
+          },
+          "csv_record_number": 40,
+          "excerpt": "No=39 / 神社名=吉切部王子宮 / カナ=ヨシキリベオウジグウ / 所在地=大豊町中内344 / 小字=王子",
+          "excerpt_processing": "同一論理CSVレコードのNo・神社名・カナ・所在地・小字の原値を列名付きで保存。所在地原欄には小字を挿入せず、比較時だけ所在地の地番前接頭辞と明示小字/数値地番を合わせる。比較用の字区切りは編集判断で原欄の連続引用ではない。",
+          "fetched_at": "2026-11-13T11:22:08.708379+00:00",
+          "hash_scope": "Drive APIが提供したファイル参照から保存した元CSVのバイト。connector readable textの再符号化hashではない。",
+          "id": "1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai",
+          "label": "kut011",
+          "locator": "CSV logical record40, No=39",
+          "mime_type": "text/csv",
+          "modified_time": "2020-02-28T08:43:19.000Z",
+          "name_raw": "吉切部王子宮",
+          "page_hash": "13c681c2a19a3d55a8f20cf4d1ad042a3b022709762f7fc489885d21ad1cc216",
+          "publication_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "href_raw": "https://drive.google.com/open?id=1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai",
+            "label": "history",
+            "locator": "011 高知県の熊野神社分布と勧請、CSVダウンロード実href。",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "publisher_reference": {
+            "fetched_at": "2026-11-13T11:21:03.612448+00:00",
+            "label": "university-about",
+            "page_hash": "a3dd570539c2a3473e62022d422c4fe6a6fe58aa0e650f7daee2916237b7228a",
+            "url": "https://field-db.kochi-tech.ac.jp/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+          },
+          "reading_raw": "ヨシキリベオウジグウ",
+          "reading_scope": "full_name",
+          "rights_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "label": "history",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "rights_scope": "公開説明はCSVダウンロードと調査・町歩き等の活用を案内。包括的再配布許諾とは扱わず、同一行の最小事実・照合判断・出典位置のみ保存。原明細帳の写し/画像、全CSV、長い由緒、信徒情報、人物名は収録しない。",
+          "source_classification": "大学公開DBへの市民調査団投稿による編集データ。神社庁の原読みや原明細帳の全文かなを新たに認証したものではない。",
+          "source_fields": {
+            "No": "39",
+            "カナ": "ヨシキリベオウジグウ",
+            "小字": "王子",
+            "所在地": "大豊町中内344",
+            "神社名": "吉切部王子宮"
+          },
+          "source_kind": "university_hosted_community_research_csv",
+          "source_publisher": "高知工科大学フィールドDB / 奥四万十山の暮らし調査団",
+          "title": "高知県の熊野神社分布と勧請（KUTフィールドDB 011）",
+          "url": "https://drive.google.com/file/d/1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai/view?usp=drivesdk"
         }
       ],
       "status": "verified"
@@ -264719,6 +264986,95 @@
           "title": "國府尾神社 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/okinoshima/e359189c08c17aca7409621143df48b7fefec039.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "e47c564f-4872-5669-b591-917ec55071ca": {
+      "changes": {
+        "reading": "くまのじんじゃ"
+      },
+      "expected_source_hash": "682e5d0bbb9482e4b959824d596a8684c46127061ce8db96f7d4042bd9cd78cc",
+      "facility_id": "32e7b008-95a2-5319-b18e-fdb0643a9bf8",
+      "identity_match": "所在地列の地番前接頭辞と同じ行に明示された小字および全数値地番が原神社庁の全所在地に対応。比較上の字区切り又は区切りなしを記録し、旧村名・字名の補作や切り落としは行わない。",
+      "original": {
+        "address": "高知県幡多郡黒潮町熊井法泉寺山419番地",
+        "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=3",
+        "name_raw": "熊野神社",
+        "reading_raw": ""
+      },
+      "reason": "同一CSV行の正式名/独立全文カナ/所在地/小字の原欄を束縛し、原全住所と数値地番を照合して補完。原空かなと原小字を保持。",
+      "references": [
+        {
+          "acquisition": "Google Drive connector metadata/fetch; authenticated file_uri materialized without using source alternate routes",
+          "address_raw": "黒潮町熊井419",
+          "bytes": 76844,
+          "checked_at": "2026-11-13T12:25:39.743714+00:00",
+          "csv_address_context": {
+            "checked_at": "2026-11-13T12:25:39.743714+00:00",
+            "comparison_separator": "",
+            "csv_record_number": 100,
+            "excerpt": "No=99 / 神社名=熊野神社 / カナ=クマノジンジャ / 所在地=黒潮町熊井419 / 小字=法泉寺山",
+            "kind": "same_csv_record_explicit_aza",
+            "locator": "CSV logical record100, No=99",
+            "page_hash": "13c681c2a19a3d55a8f20cf4d1ad042a3b022709762f7fc489885d21ad1cc216",
+            "row_id_raw": "99",
+            "source_fields": {
+              "No": "99",
+              "カナ": "クマノジンジャ",
+              "小字": "法泉寺山",
+              "所在地": "黒潮町熊井419",
+              "神社名": "熊野神社"
+            },
+            "url": "https://drive.google.com/file/d/1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai/view?usp=drivesdk"
+          },
+          "csv_record_number": 100,
+          "excerpt": "No=99 / 神社名=熊野神社 / カナ=クマノジンジャ / 所在地=黒潮町熊井419 / 小字=法泉寺山",
+          "excerpt_processing": "同一論理CSVレコードのNo・神社名・カナ・所在地・小字の原値を列名付きで保存。所在地原欄には小字を挿入せず、比較時だけ所在地の地番前接頭辞と明示小字/数値地番を合わせる。比較用の字区切りは編集判断で原欄の連続引用ではない。",
+          "fetched_at": "2026-11-13T11:22:08.708379+00:00",
+          "hash_scope": "Drive APIが提供したファイル参照から保存した元CSVのバイト。connector readable textの再符号化hashではない。",
+          "id": "1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai",
+          "label": "kut011",
+          "locator": "CSV logical record100, No=99",
+          "mime_type": "text/csv",
+          "modified_time": "2020-02-28T08:43:19.000Z",
+          "name_raw": "熊野神社",
+          "page_hash": "13c681c2a19a3d55a8f20cf4d1ad042a3b022709762f7fc489885d21ad1cc216",
+          "publication_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "href_raw": "https://drive.google.com/open?id=1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai",
+            "label": "history",
+            "locator": "011 高知県の熊野神社分布と勧請、CSVダウンロード実href。",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "publisher_reference": {
+            "fetched_at": "2026-11-13T11:21:03.612448+00:00",
+            "label": "university-about",
+            "page_hash": "a3dd570539c2a3473e62022d422c4fe6a6fe58aa0e650f7daee2916237b7228a",
+            "url": "https://field-db.kochi-tech.ac.jp/%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"
+          },
+          "reading_raw": "クマノジンジャ",
+          "reading_scope": "full_name",
+          "rights_reference": {
+            "fetched_at": "2026-11-13T11:18:01.723560+00:00",
+            "label": "history",
+            "page_hash": "ab6175b99457ce7a559be253ec9e3ac07ca3454d3642bc535fb61b12c4311241",
+            "url": "https://sites.google.com/view/kochi-gis/%E3%83%87%E3%83%BC%E3%82%BF%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA/%E6%AD%B4%E5%8F%B2"
+          },
+          "rights_scope": "公開説明はCSVダウンロードと調査・町歩き等の活用を案内。包括的再配布許諾とは扱わず、同一行の最小事実・照合判断・出典位置のみ保存。原明細帳の写し/画像、全CSV、長い由緒、信徒情報、人物名は収録しない。",
+          "source_classification": "大学公開DBへの市民調査団投稿による編集データ。神社庁の原読みや原明細帳の全文かなを新たに認証したものではない。",
+          "source_fields": {
+            "No": "99",
+            "カナ": "クマノジンジャ",
+            "小字": "法泉寺山",
+            "所在地": "黒潮町熊井419",
+            "神社名": "熊野神社"
+          },
+          "source_kind": "university_hosted_community_research_csv",
+          "source_publisher": "高知工科大学フィールドDB / 奥四万十山の暮らし調査団",
+          "title": "高知県の熊野神社分布と勧請（KUTフィールドDB 011）",
+          "url": "https://drive.google.com/file/d/1jEZ5UNm0Kp4LEMJ2e_5nBz82wxCkdAai/view?usp=drivesdk"
         }
       ],
       "status": "verified"
