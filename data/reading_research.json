@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "431bba95abcac90655e08ff542ffb7432726e054dc8bf5b84f627b1dc6c78a20",
+    "corrections.json": "f7f5f823ac1b4fd31f3557e5803cd0ab24e494dc40e8eeca21ca2ae39c7efd07",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "c3901a635b8f22788588197dd741b2ef8f172d3b2c303f4b6ee9dfbd82f69deb",
@@ -22871,18 +22871,33 @@
         "integration_main_commit": "cca71ad629e21803ec3556c0764adcb2ee0f07e6",
         "new_verified_entries": 0,
         "scope": "最新mainの長崎・福岡の調査と要判断の更新を保持し、滋賀県所有者表の16登録採用を統合。白山神社は独立審査の読み相違指摘により保留。採用件数を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T07:53:12.310098+00:00",
+        "fixed_target_entries": 24,
+        "inspected_targets": 13,
+        "integration_main_commit": "29cc69e822687b774491e3d58a78b02cef28eaa8",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 24,
+        "scope": "元の54住所発見リード35登録のうち、前段で解消した11登録を除く現在保留24登録40組。33詳細を予定し27本文/13登録28組を実点検、通常検索のエラー転送で1検索を停止し6詳細未取得/11登録は今回の本文未確認。県内全資料・全国全件の本文確認・神社正式名の全文読み確認とは扱わない。原正本・全補正・既存判断・ID/hashと保留件数を保持。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T07:53:12.310098+00:00",
-      "fixed_target_entries": 24,
-      "inspected_targets": 13,
-      "integration_main_commit": "29cc69e822687b774491e3d58a78b02cef28eaa8",
-      "new_verified_entries": 0,
-      "retained_pending_entries": 24,
-      "scope": "元の54住所発見リード35登録のうち、前段で解消した11登録を除く現在保留24登録40組。33詳細を予定し27本文/13登録28組を実点検、通常検索のエラー転送で1検索を停止し6詳細未取得/11登録は今回の本文未確認。県内全資料・全国全件の本文確認・神社正式名の全文読み確認とは扱わない。原正本・全補正・既存判断・ID/hashと保留件数を保持。"
+      "checked_at": "2026-11-13T08:12:47.771136+00:00",
+      "entry_ids": [
+        "0ecc0950-a33c-599c-9063-d1d3a705b6d7",
+        "4faa3639-9710-567b-9769-30a9c51b4ce0",
+        "5020344b-d230-5fcf-a0ee-ec4b2086d636",
+        "aedb021b-c5a1-5a60-904c-696b64a2156f",
+        "bd67ec9f-9b00-5ee9-beea-1c4c93eaea9f",
+        "d3bbad98-1abb-5a02-8652-b6727e6bcc5e"
+      ],
+      "inspected_targets": 6,
+      "new_verified_entries": 5,
+      "retained_pending_entries": 10531,
+      "scope": "精華町の目録から選んだ6ページ・原6登録の照合。県全体・全文化財・全神社を網羅した意味ではない。東谷神社・日出神社へ同名や地理近接だけで読みを流用しない。"
     },
-    "remaining_unfinished_entries": 10536,
+    "remaining_unfinished_entries": 10531,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -22991,6 +23006,8 @@
       "4decab36-36c4-552e-8102-76050d50f668",
       "4ebe42c0-acba-589e-837b-88e1c2d8985c",
       "4efe6e25-ac62-5123-ba05-1bfc6943a3f2",
+      "4faa3639-9710-567b-9769-30a9c51b4ce0",
+      "5020344b-d230-5fcf-a0ee-ec4b2086d636",
       "522edfbe-0987-5e2c-8382-b4dd60f6dea6",
       "525b82cc-f88d-5c42-969f-03e5814a9eeb",
       "52abce05-002f-5c95-8e50-821f5e91bc3d",
@@ -23123,6 +23140,7 @@
       "a9c4131f-183a-5ae8-b534-a45aeba70594",
       "ad7a3a49-3c4d-5e6a-980f-13771aa56684",
       "aea764bc-c522-5d9b-b4d8-01312e4732ea",
+      "aedb021b-c5a1-5a60-904c-696b64a2156f",
       "af78cb79-0f05-5ae2-8175-90afcdac0ba6",
       "b0df25b9-f92b-5e3a-ab9f-e7e33f866fbc",
       "b1337ffc-2204-54ad-a9f7-4901a8fff926",
@@ -23135,6 +23153,7 @@
       "b7d3c4ed-d3c4-584c-b1fd-801e07aa92d2",
       "ba864734-ce5b-57e7-88b1-6392a94a656b",
       "bc9f3a2a-2b9d-5b61-aeb6-808c6877ac1c",
+      "bd67ec9f-9b00-5ee9-beea-1c4c93eaea9f",
       "be39dca9-36b6-5b8d-9591-20b28b62c93a",
       "be7ec38c-49a8-5145-b78d-98a5d8c77739",
       "bf499a82-8c59-575f-acb8-bd0d0ac88188",
@@ -23164,6 +23183,7 @@
       "d0229006-ca9f-5d10-9692-3e094dd272d3",
       "d0afb67f-2651-5801-a626-d4448686c3cc",
       "d3b789c4-2860-5d30-8a63-9ab6dd00f25c",
+      "d3bbad98-1abb-5a02-8652-b6727e6bcc5e",
       "d3ed1f86-58aa-5bbe-8199-5c73ee5bc2e8",
       "d4553b6f-0a7e-551b-b73b-c6878a70a1a0",
       "d4cfe00d-745c-5997-9920-8d9a4ac0c43b",
@@ -23220,7 +23240,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T07:57:28.114058+00:00",
+  "computed_at": "2026-11-13T08:12:47.771136+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -316373,6 +316393,836 @@
       "target_entry_ids": [
         "0ecc0950-a33c-599c-9063-d1d3a705b6d7"
       ]
+    },
+    {
+      "acquisition": "通常クライアント、robots遵守、同一ホスト2秒以上・timeout20秒・再試行0。町の実目録href6件のみを取得し、h1と本文所在地を確認。",
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:14:34.767979+00:00",
+              "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
+              "expected_source_hash": "a5a89d3ab091fa95d241512dae0a75304e43cc290d0d5aaa9b06c88c719e5369",
+              "municipal_entry_status": "organization_first_page_inspected",
+              "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
+              "reference": {
+                "fetched_at": "2026-11-13T02:00:21.326597+00:00",
+                "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
+                "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
+              },
+              "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
+              "source_kind": "municipal_open_data",
+              "source_observations": [],
+              "source_publisher": "記録した実資料の発行者",
+              "status": "no_name_correspondence_in_selected_tables"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T08:12:47.771136+00:00",
+              "evidence_attempt": "seika_town_six_cultural_pages_five_full_readings_one_address_conflict_20261113",
+              "expected_source_hash": "a5a89d3ab091fa95d241512dae0a75304e43cc290d0d5aaa9b06c88c719e5369",
+              "observation": "独立h1の社名全文かなと＜所在地＞の全地番を原登録に照合。町内の同名3施設を別々の字名・地番で対応。",
+              "reference": {
+                "address_raw": "精華町大字菅井小字西ノ辻1番地",
+                "attribution": "出典：精華町「天王神社（てんのうじんじゃ）」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6568.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+                "checked_at": "2026-11-13T08:11:31.520082+00:00",
+                "excerpt": "天王神社（てんのうじんじゃ） / ＜所在地＞ 精華町大字菅井小字西ノ辻1番地",
+                "fetched_at": "2026-11-13T08:07:58.988938+00:00",
+                "heading_raw": "天王神社（てんのうじんじゃ）",
+                "index_reference": {
+                  "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+                  "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+                  "title": [
+                    "精華町の文化財／精華町"
+                  ],
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+                },
+                "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+                "name_raw": "天王神社",
+                "page_hash": "ee698fc5b734446cf02ba1e5d0edf70003c515bfb043ba1ac6e836b1757e92bd",
+                "reading_raw": "てんのうじんじゃ",
+                "reading_scope": "full_name",
+                "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+                "source_kind": "municipal_cultural_property_page",
+                "source_link": {
+                  "label": "天王神社（てんのうじんじゃ）",
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6568.html"
+                },
+                "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+                "title": "天王神社（てんのうじんじゃ）／精華町",
+                "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6568.html"
+              },
+              "status": "municipal_full_name_reading_and_full_parcel_verified"
+            }
+          ],
+          "address": "相楽郡精華町大字菅井小字西ノ辻1",
+          "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "4faa3639-9710-567b-9769-30a9c51b4ce0",
+          "expected_source_hash": "a5a89d3ab091fa95d241512dae0a75304e43cc290d0d5aaa9b06c88c719e5369",
+          "facility_id": "00b84ae4-6e09-5cb8-a57f-65bc4d490d1b",
+          "listed_name": "天王神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "京都府",
+          "prefecture_code": "26",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "天王神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        },
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
+              "expected_source_hash": "edbffa85bc8b45d112fd57b76adc933673dfb65bfe8193c9a4c364bc43368511",
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "京都府長岡京市勝竜寺19-25",
+                "checked_at": "2026-11-12T05:44:49.746993+00:00",
+                "fetched_at": "2026-11-12T05:37:01.299083+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "春日神社",
+                "page_hash": "a764a36ae5e2fa539cb10338616a5d95e3044e716f954fc79f79dbcad6d943dd",
+                "reading_context_raw": "春日神社（かすがじんじゃ）は",
+                "reading_raw": "かすがじんじゃ",
+                "reading_scope": "full_name",
+                "reading_variants_raw": [
+                  "かすがじんじゃ"
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "春日神社　京都府長岡京市勝竜寺 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1066298269.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:14:34.767979+00:00",
+              "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
+              "expected_source_hash": "edbffa85bc8b45d112fd57b76adc933673dfb65bfe8193c9a4c364bc43368511",
+              "municipal_entry_status": "organization_first_page_inspected",
+              "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
+              "reference": {
+                "fetched_at": "2026-11-13T02:00:21.326597+00:00",
+                "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
+                "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
+              },
+              "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
+              "source_kind": "municipal_open_data",
+              "source_observations": [],
+              "source_publisher": "記録した実資料の発行者",
+              "status": "no_name_correspondence_in_selected_tables"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T08:12:47.771136+00:00",
+              "evidence_attempt": "seika_town_six_cultural_pages_five_full_readings_one_address_conflict_20261113",
+              "expected_source_hash": "edbffa85bc8b45d112fd57b76adc933673dfb65bfe8193c9a4c364bc43368511",
+              "observation": "独立h1の社名全文かなと＜所在地＞の全地番を原登録に照合。町内の同名3施設を別々の字名・地番で対応。",
+              "reference": {
+                "address_raw": "精華町大字下狛小字本庄1番地",
+                "attribution": "出典：精華町「春日神社（かすがじんじゃ）［舟地区］」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6553.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+                "checked_at": "2026-11-13T08:11:31.520082+00:00",
+                "excerpt": "春日神社（かすがじんじゃ）［舟地区］ / ＜所在地＞ 精華町大字下狛小字本庄1番地",
+                "fetched_at": "2026-11-13T08:07:53.987881+00:00",
+                "heading_raw": "春日神社（かすがじんじゃ）［舟地区］",
+                "index_reference": {
+                  "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+                  "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+                  "title": [
+                    "精華町の文化財／精華町"
+                  ],
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+                },
+                "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+                "name_raw": "春日神社",
+                "page_hash": "66b4b4e0859369a1e420b4e845f76ed3df776287a2405bd27a20bffff2190b05",
+                "reading_raw": "かすがじんじゃ",
+                "reading_scope": "full_name",
+                "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+                "source_kind": "municipal_cultural_property_page",
+                "source_link": {
+                  "label": "春日神社（かすがじんじゃ）［舟地区］",
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6553.html"
+                },
+                "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+                "title": "春日神社（かすがじんじゃ）［舟地区］／精華町",
+                "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6553.html"
+              },
+              "status": "municipal_full_name_reading_and_full_parcel_verified"
+            }
+          ],
+          "address": "相楽郡精華町大字下狛小字本庄1",
+          "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "5020344b-d230-5fcf-a0ee-ec4b2086d636",
+          "expected_source_hash": "edbffa85bc8b45d112fd57b76adc933673dfb65bfe8193c9a4c364bc43368511",
+          "facility_id": "8c402633-1839-5c37-8f88-bed99d4028a9",
+          "listed_name": "春日神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "京都府",
+          "prefecture_code": "26",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "春日神社",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T08:07:10.885630+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "971e44edf61407e4ca4e708b0fb677847ac0f5f91de47dba630b2f66e24477c6",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E4%B8%B9%E5%BE%8C%E5%B8%82%E5%BC%A5%E6%A0%84%E7%94%BA)"
+            },
+            {
+              "checked_at": "2026-11-09T08:07:14.334715+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "d86fe98768ee8dd5629d838a56efa25be9169b63402271b98fd066389fb20ec6",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E5%8D%97%E5%B1%B1%E5%9F%8E%E6%9D%91)"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        },
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
+              "expected_source_hash": "8427ca00e188a1b9b780c7af3a178d14ef20b8f3c051b7c81075ed20e920ff31",
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "京都府長岡京市勝竜寺19-25",
+                "checked_at": "2026-11-12T05:44:49.746993+00:00",
+                "fetched_at": "2026-11-12T05:37:01.299083+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "春日神社",
+                "page_hash": "a764a36ae5e2fa539cb10338616a5d95e3044e716f954fc79f79dbcad6d943dd",
+                "reading_context_raw": "春日神社（かすがじんじゃ）は",
+                "reading_raw": "かすがじんじゃ",
+                "reading_scope": "full_name",
+                "reading_variants_raw": [
+                  "かすがじんじゃ"
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "春日神社　京都府長岡京市勝竜寺 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1066298269.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:14:34.767979+00:00",
+              "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
+              "expected_source_hash": "8427ca00e188a1b9b780c7af3a178d14ef20b8f3c051b7c81075ed20e920ff31",
+              "municipal_entry_status": "organization_first_page_inspected",
+              "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
+              "reference": {
+                "fetched_at": "2026-11-13T02:00:21.326597+00:00",
+                "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
+                "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
+              },
+              "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
+              "source_kind": "municipal_open_data",
+              "source_observations": [],
+              "source_publisher": "記録した実資料の発行者",
+              "status": "no_name_correspondence_in_selected_tables"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T08:12:47.771136+00:00",
+              "evidence_attempt": "seika_town_six_cultural_pages_five_full_readings_one_address_conflict_20261113",
+              "expected_source_hash": "8427ca00e188a1b9b780c7af3a178d14ef20b8f3c051b7c81075ed20e920ff31",
+              "observation": "独立h1の社名全文かなと＜所在地＞の全地番を原登録に照合。町内の同名3施設を別々の字名・地番で対応。",
+              "reference": {
+                "address_raw": "精華町大字菱田小字宮川原58番地2",
+                "attribution": "出典：精華町「春日神社（かすがじんじゃ）［菱田地区］」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6562.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+                "checked_at": "2026-11-13T08:11:31.520082+00:00",
+                "excerpt": "春日神社（かすがじんじゃ）［菱田地区］ / ＜所在地＞ 精華町大字菱田小字宮川原58番地2",
+                "fetched_at": "2026-11-13T08:07:56.575940+00:00",
+                "heading_raw": "春日神社（かすがじんじゃ）［菱田地区］",
+                "index_reference": {
+                  "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+                  "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+                  "title": [
+                    "精華町の文化財／精華町"
+                  ],
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+                },
+                "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+                "name_raw": "春日神社",
+                "page_hash": "af4bcc36b26a3034f302226bf4edacd005eb17e47ff067157a25c94f5a31adf8",
+                "reading_raw": "かすがじんじゃ",
+                "reading_scope": "full_name",
+                "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+                "source_kind": "municipal_cultural_property_page",
+                "source_link": {
+                  "label": "春日神社（かすがじんじゃ）［菱田地区］",
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6562.html"
+                },
+                "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+                "title": "春日神社（かすがじんじゃ）［菱田地区］／精華町",
+                "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6562.html"
+              },
+              "status": "municipal_full_name_reading_and_full_parcel_verified"
+            }
+          ],
+          "address": "相楽郡精華町大字菱田小字宮川原58-2",
+          "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "aedb021b-c5a1-5a60-904c-696b64a2156f",
+          "expected_source_hash": "8427ca00e188a1b9b780c7af3a178d14ef20b8f3c051b7c81075ed20e920ff31",
+          "facility_id": "7047ae9d-dc17-593f-9a10-5fec81e98128",
+          "listed_name": "春日神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "京都府",
+          "prefecture_code": "26",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "春日神社",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T08:07:10.885630+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "971e44edf61407e4ca4e708b0fb677847ac0f5f91de47dba630b2f66e24477c6",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E4%B8%B9%E5%BE%8C%E5%B8%82%E5%BC%A5%E6%A0%84%E7%94%BA)"
+            },
+            {
+              "checked_at": "2026-11-09T08:07:14.334715+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "d86fe98768ee8dd5629d838a56efa25be9169b63402271b98fd066389fb20ec6",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E5%8D%97%E5%B1%B1%E5%9F%8E%E6%9D%91)"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        },
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T06:06:15.138359+00:00",
+              "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
+              "expected_source_hash": "ec938966d3b40ea0869731e8d3a5583f3e10337396778aa8bbeac9e15d487abb",
+              "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+              "reference": {
+                "address_raw": "京都府長岡京市勝竜寺19-25",
+                "checked_at": "2026-11-12T05:44:49.746993+00:00",
+                "fetched_at": "2026-11-12T05:37:01.299083+00:00",
+                "license_status": "unconfirmed",
+                "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
+                "name_raw": "春日神社",
+                "page_hash": "a764a36ae5e2fa539cb10338616a5d95e3044e716f954fc79f79dbcad6d943dd",
+                "reading_context_raw": "春日神社（かすがじんじゃ）は",
+                "reading_raw": "かすがじんじゃ",
+                "reading_scope": "full_name",
+                "reading_variants_raw": [
+                  "かすがじんじゃ"
+                ],
+                "redistribution_status": "unconfirmed",
+                "source_kind": "article",
+                "source_publisher": "神社と古事記（非公式二次資料）",
+                "title": "春日神社　京都府長岡京市勝竜寺 - 神社と古事記",
+                "url": "https://www.buccyake-kojiki.com/archives/1066298269.html"
+              },
+              "result": "full_name_or_address_not_bound",
+              "source_kind": "article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "inspected_independent_article_not_adopted"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:14:34.767979+00:00",
+              "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
+              "expected_source_hash": "ec938966d3b40ea0869731e8d3a5583f3e10337396778aa8bbeac9e15d487abb",
+              "municipal_entry_status": "organization_first_page_inspected",
+              "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
+              "reference": {
+                "fetched_at": "2026-11-13T02:00:21.326597+00:00",
+                "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
+                "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
+              },
+              "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
+              "source_kind": "municipal_open_data",
+              "source_observations": [],
+              "source_publisher": "記録した実資料の発行者",
+              "status": "no_name_correspondence_in_selected_tables"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T08:12:47.771136+00:00",
+              "evidence_attempt": "seika_town_six_cultural_pages_five_full_readings_one_address_conflict_20261113",
+              "expected_source_hash": "ec938966d3b40ea0869731e8d3a5583f3e10337396778aa8bbeac9e15d487abb",
+              "observation": "独立h1の社名全文かなと＜所在地＞の全地番を原登録に照合。町内の同名3施設を別々の字名・地番で対応。",
+              "reference": {
+                "address_raw": "精華町大字菱田小字縄添31番地",
+                "attribution": "出典：精華町「春日神社（かすがじんじゃ）［滝ノ鼻地区］」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6551.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+                "checked_at": "2026-11-13T08:11:31.520082+00:00",
+                "excerpt": "春日神社（かすがじんじゃ）［滝ノ鼻地区］ / ＜所在地＞ 精華町大字菱田小字縄添31番地",
+                "fetched_at": "2026-11-13T08:07:51.825724+00:00",
+                "heading_raw": "春日神社（かすがじんじゃ）［滝ノ鼻地区］",
+                "index_reference": {
+                  "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+                  "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+                  "title": [
+                    "精華町の文化財／精華町"
+                  ],
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+                },
+                "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+                "name_raw": "春日神社",
+                "page_hash": "1ff17ed227de72e41f5b25898cc24c02ee88252e7fa52e05c6c2ccd0691c5a71",
+                "reading_raw": "かすがじんじゃ",
+                "reading_scope": "full_name",
+                "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+                "source_kind": "municipal_cultural_property_page",
+                "source_link": {
+                  "label": "春日神社（かすがじんじゃ）［滝ノ鼻地区］",
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6551.html"
+                },
+                "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+                "title": "春日神社（かすがじんじゃ）［滝ノ鼻地区］／精華町",
+                "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6551.html"
+              },
+              "status": "municipal_full_name_reading_and_full_parcel_verified"
+            }
+          ],
+          "address": "相楽郡精華町大字菱田小字縄添31",
+          "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "bd67ec9f-9b00-5ee9-beea-1c4c93eaea9f",
+          "expected_source_hash": "ec938966d3b40ea0869731e8d3a5583f3e10337396778aa8bbeac9e15d487abb",
+          "facility_id": "948d53ec-06d3-5203-b3b7-ed9164d82fe3",
+          "listed_name": "春日神社",
+          "nta_result": "registered furigana absent",
+          "prefecture": "京都府",
+          "prefecture_code": "26",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "春日神社",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T08:07:10.885630+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "971e44edf61407e4ca4e708b0fb677847ac0f5f91de47dba630b2f66e24477c6",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E4%B8%B9%E5%BE%8C%E5%B8%82%E5%BC%A5%E6%A0%84%E7%94%BA)"
+            },
+            {
+              "checked_at": "2026-11-09T08:07:14.334715+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "d86fe98768ee8dd5629d838a56efa25be9169b63402271b98fd066389fb20ec6",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E5%8D%97%E5%B1%B1%E5%9F%8E%E6%9D%91)"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        },
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T02:14:34.767979+00:00",
+              "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
+              "expected_source_hash": "7e59b9858bb4f8133d3c14df04906a62f5f445527049f66f7cfc7698fbbfb308",
+              "municipal_entry_status": "organization_first_page_inspected",
+              "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
+              "reference": {
+                "fetched_at": "2026-11-13T02:00:21.326597+00:00",
+                "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
+                "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
+              },
+              "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
+              "source_kind": "municipal_open_data",
+              "source_observations": [],
+              "source_publisher": "記録した実資料の発行者",
+              "status": "no_name_correspondence_in_selected_tables"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T08:12:47.771136+00:00",
+              "evidence_attempt": "seika_town_six_cultural_pages_five_full_readings_one_address_conflict_20261113",
+              "expected_source_hash": "7e59b9858bb4f8133d3c14df04906a62f5f445527049f66f7cfc7698fbbfb308",
+              "observation": "独立h1の社名全文かなと＜所在地＞の全地番を原登録に照合。町内の同名3施設を別々の字名・地番で対応。",
+              "reference": {
+                "address_raw": "精華町大字東畑小字嶽ケ93番地",
+                "attribution": "出典：精華町「東畑神社（ひがしばたじんじゃ）」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6546.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+                "checked_at": "2026-11-13T08:11:31.520082+00:00",
+                "excerpt": "東畑神社（ひがしばたじんじゃ） / ＜所在地＞ 精華町大字東畑小字嶽ケ93番地",
+                "fetched_at": "2026-11-13T08:07:49.668680+00:00",
+                "heading_raw": "東畑神社（ひがしばたじんじゃ）",
+                "index_reference": {
+                  "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+                  "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+                  "title": [
+                    "精華町の文化財／精華町"
+                  ],
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+                },
+                "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+                "name_raw": "東畑神社",
+                "page_hash": "a36d9c8e7321e6f8d51a2ea873e1672dcb5df75536e999ed763bac2e64d693c7",
+                "reading_raw": "ひがしばたじんじゃ",
+                "reading_scope": "full_name",
+                "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+                "source_kind": "municipal_cultural_property_page",
+                "source_link": {
+                  "label": "東畑神社（ひがしばたじんじゃ）",
+                  "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6546.html"
+                },
+                "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+                "title": "東畑神社（ひがしばたじんじゃ）／精華町",
+                "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6546.html"
+              },
+              "status": "municipal_full_name_reading_and_full_parcel_verified"
+            }
+          ],
+          "address": "相楽郡精華町大字東畑小字嶽ケ93",
+          "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "d3bbad98-1abb-5a02-8652-b6727e6bcc5e",
+          "expected_source_hash": "7e59b9858bb4f8133d3c14df04906a62f5f445527049f66f7cfc7698fbbfb308",
+          "facility_id": "300209d6-43d3-5de7-bafc-6630059fe12b",
+          "listed_name": "東畑神社",
+          "nta_result": "no unique active exact name/full-address corporate identity",
+          "prefecture": "京都府",
+          "prefecture_code": "26",
+          "reading_raw": "",
+          "reason": "missing agency reading",
+          "status": "unfinished",
+          "surface": "東畑神社",
+          "wikipedia_article_refs": [
+            {
+              "checked_at": "2026-11-09T09:35:25.942215+00:00",
+              "matched_current_snapshot": true,
+              "page_hash": "c08d5cd5291461758c42adbfb62f7feabad293e524457142a5a3ac47052209d7",
+              "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+              "status": "inspected",
+              "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E7%95%91%E7%A5%9E%E7%A4%BE"
+            }
+          ],
+          "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+        }
+      ],
+      "attempt_id": "seika_town_six_cultural_pages_five_full_readings_one_address_conflict_20261113",
+      "checked_at": "2026-11-13T08:12:47.771136+00:00",
+      "index_reference": {
+        "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+        "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+        "title": [
+          "精華町の文化財／精華町"
+        ],
+        "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+      },
+      "individual_results": [
+        {
+          "adopted": true,
+          "entry_ids": [
+            "d3bbad98-1abb-5a02-8652-b6727e6bcc5e"
+          ],
+          "reference": {
+            "address_raw": "精華町大字東畑小字嶽ケ93番地",
+            "attribution": "出典：精華町「東畑神社（ひがしばたじんじゃ）」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6546.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+            "checked_at": "2026-11-13T08:11:31.520082+00:00",
+            "excerpt": "東畑神社（ひがしばたじんじゃ） / ＜所在地＞ 精華町大字東畑小字嶽ケ93番地",
+            "fetched_at": "2026-11-13T08:07:49.668680+00:00",
+            "heading_raw": "東畑神社（ひがしばたじんじゃ）",
+            "index_reference": {
+              "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+              "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+              "title": [
+                "精華町の文化財／精華町"
+              ],
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+            },
+            "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+            "name_raw": "東畑神社",
+            "page_hash": "a36d9c8e7321e6f8d51a2ea873e1672dcb5df75536e999ed763bac2e64d693c7",
+            "reading_raw": "ひがしばたじんじゃ",
+            "reading_scope": "full_name",
+            "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+            "source_kind": "municipal_cultural_property_page",
+            "source_link": {
+              "label": "東畑神社（ひがしばたじんじゃ）",
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6546.html"
+            },
+            "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+            "title": "東畑神社（ひがしばたじんじゃ）／精華町",
+            "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6546.html"
+          }
+        },
+        {
+          "adopted": true,
+          "entry_ids": [
+            "bd67ec9f-9b00-5ee9-beea-1c4c93eaea9f"
+          ],
+          "reference": {
+            "address_raw": "精華町大字菱田小字縄添31番地",
+            "attribution": "出典：精華町「春日神社（かすがじんじゃ）［滝ノ鼻地区］」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6551.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+            "checked_at": "2026-11-13T08:11:31.520082+00:00",
+            "excerpt": "春日神社（かすがじんじゃ）［滝ノ鼻地区］ / ＜所在地＞ 精華町大字菱田小字縄添31番地",
+            "fetched_at": "2026-11-13T08:07:51.825724+00:00",
+            "heading_raw": "春日神社（かすがじんじゃ）［滝ノ鼻地区］",
+            "index_reference": {
+              "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+              "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+              "title": [
+                "精華町の文化財／精華町"
+              ],
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+            },
+            "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+            "name_raw": "春日神社",
+            "page_hash": "1ff17ed227de72e41f5b25898cc24c02ee88252e7fa52e05c6c2ccd0691c5a71",
+            "reading_raw": "かすがじんじゃ",
+            "reading_scope": "full_name",
+            "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+            "source_kind": "municipal_cultural_property_page",
+            "source_link": {
+              "label": "春日神社（かすがじんじゃ）［滝ノ鼻地区］",
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6551.html"
+            },
+            "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+            "title": "春日神社（かすがじんじゃ）［滝ノ鼻地区］／精華町",
+            "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6551.html"
+          }
+        },
+        {
+          "adopted": true,
+          "entry_ids": [
+            "5020344b-d230-5fcf-a0ee-ec4b2086d636"
+          ],
+          "reference": {
+            "address_raw": "精華町大字下狛小字本庄1番地",
+            "attribution": "出典：精華町「春日神社（かすがじんじゃ）［舟地区］」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6553.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+            "checked_at": "2026-11-13T08:11:31.520082+00:00",
+            "excerpt": "春日神社（かすがじんじゃ）［舟地区］ / ＜所在地＞ 精華町大字下狛小字本庄1番地",
+            "fetched_at": "2026-11-13T08:07:53.987881+00:00",
+            "heading_raw": "春日神社（かすがじんじゃ）［舟地区］",
+            "index_reference": {
+              "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+              "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+              "title": [
+                "精華町の文化財／精華町"
+              ],
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+            },
+            "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+            "name_raw": "春日神社",
+            "page_hash": "66b4b4e0859369a1e420b4e845f76ed3df776287a2405bd27a20bffff2190b05",
+            "reading_raw": "かすがじんじゃ",
+            "reading_scope": "full_name",
+            "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+            "source_kind": "municipal_cultural_property_page",
+            "source_link": {
+              "label": "春日神社（かすがじんじゃ）［舟地区］",
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6553.html"
+            },
+            "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+            "title": "春日神社（かすがじんじゃ）［舟地区］／精華町",
+            "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6553.html"
+          }
+        },
+        {
+          "adopted": true,
+          "entry_ids": [
+            "aedb021b-c5a1-5a60-904c-696b64a2156f"
+          ],
+          "reference": {
+            "address_raw": "精華町大字菱田小字宮川原58番地2",
+            "attribution": "出典：精華町「春日神社（かすがじんじゃ）［菱田地区］」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6562.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+            "checked_at": "2026-11-13T08:11:31.520082+00:00",
+            "excerpt": "春日神社（かすがじんじゃ）［菱田地区］ / ＜所在地＞ 精華町大字菱田小字宮川原58番地2",
+            "fetched_at": "2026-11-13T08:07:56.575940+00:00",
+            "heading_raw": "春日神社（かすがじんじゃ）［菱田地区］",
+            "index_reference": {
+              "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+              "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+              "title": [
+                "精華町の文化財／精華町"
+              ],
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+            },
+            "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+            "name_raw": "春日神社",
+            "page_hash": "af4bcc36b26a3034f302226bf4edacd005eb17e47ff067157a25c94f5a31adf8",
+            "reading_raw": "かすがじんじゃ",
+            "reading_scope": "full_name",
+            "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+            "source_kind": "municipal_cultural_property_page",
+            "source_link": {
+              "label": "春日神社（かすがじんじゃ）［菱田地区］",
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6562.html"
+            },
+            "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+            "title": "春日神社（かすがじんじゃ）［菱田地区］／精華町",
+            "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6562.html"
+          }
+        },
+        {
+          "adopted": true,
+          "entry_ids": [
+            "4faa3639-9710-567b-9769-30a9c51b4ce0"
+          ],
+          "reference": {
+            "address_raw": "精華町大字菅井小字西ノ辻1番地",
+            "attribution": "出典：精華町「天王神社（てんのうじんじゃ）」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6568.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+            "checked_at": "2026-11-13T08:11:31.520082+00:00",
+            "excerpt": "天王神社（てんのうじんじゃ） / ＜所在地＞ 精華町大字菅井小字西ノ辻1番地",
+            "fetched_at": "2026-11-13T08:07:58.988938+00:00",
+            "heading_raw": "天王神社（てんのうじんじゃ）",
+            "index_reference": {
+              "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+              "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+              "title": [
+                "精華町の文化財／精華町"
+              ],
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+            },
+            "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+            "name_raw": "天王神社",
+            "page_hash": "ee698fc5b734446cf02ba1e5d0edf70003c515bfb043ba1ac6e836b1757e92bd",
+            "reading_raw": "てんのうじんじゃ",
+            "reading_scope": "full_name",
+            "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+            "source_kind": "municipal_cultural_property_page",
+            "source_link": {
+              "label": "天王神社（てんのうじんじゃ）",
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6568.html"
+            },
+            "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+            "title": "天王神社（てんのうじんじゃ）／精華町",
+            "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6568.html"
+          }
+        },
+        {
+          "adopted": false,
+          "entry_ids": [
+            "0ecc0950-a33c-599c-9063-d1d3a705b6d7"
+          ],
+          "reference": {
+            "address_raw": "精華町大字山田小字医王寺3番地",
+            "attribution": "出典：精華町「新殿神社（しんでんじんじゃ）」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6579.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+            "checked_at": "2026-11-13T08:11:31.520082+00:00",
+            "excerpt": "新殿神社（しんでんじんじゃ） / ＜所在地＞ 精華町大字山田小字医王寺3番地",
+            "fetched_at": "2026-11-13T08:08:01.479641+00:00",
+            "heading_raw": "新殿神社（しんでんじんじゃ）",
+            "index_reference": {
+              "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+              "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+              "title": [
+                "精華町の文化財／精華町"
+              ],
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+            },
+            "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+            "name_raw": "新殿神社",
+            "page_hash": "228a8bb1b2f9ba61992b47ce0d290456b1625382021f9365865f9772a3f4e0a1",
+            "reading_raw": "しんでんじんじゃ",
+            "reading_scope": "full_name",
+            "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+            "source_kind": "municipal_cultural_property_page",
+            "source_link": {
+              "label": "新殿神社（しんでんじんじゃ）",
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6579.html"
+            },
+            "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+            "title": "新殿神社（しんでんじんじゃ）／精華町",
+            "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6579.html"
+          }
+        }
+      ],
+      "inspected_detail_pages": 6,
+      "inspected_target_entries": 6,
+      "manual_resolved_entry_ids": [
+        "4faa3639-9710-567b-9769-30a9c51b4ce0",
+        "5020344b-d230-5fcf-a0ee-ec4b2086d636",
+        "aedb021b-c5a1-5a60-904c-696b64a2156f",
+        "bd67ec9f-9b00-5ee9-beea-1c4c93eaea9f",
+        "d3bbad98-1abb-5a02-8652-b6727e6bcc5e"
+      ],
+      "new_verified_entries": 5,
+      "proposal_sha256": "abe53232cc1ceb0c8cf54f61a54c554415878dffe15c4acc1b770b429db66227",
+      "retained_pending_entries": 1,
+      "retained_pending_entry_ids": [
+        "0ecc0950-a33c-599c-9063-d1d3a705b6d7"
+      ],
+      "rights_scope": "社名・社名に印刷された全文かな・所在地という必要な事実欄と出典・加工表示のみを保存。一般著作権表示を無制限の転載許諾とせず、解説全文・HTML・画像・キャッシュ・電話番号・個人情報を含めない。",
+      "scope": "精華町の目録から選んだ6ページ・原6登録の照合。県全体・全文化財・全神社を網羅した意味ではない。東谷神社・日出神社へ同名や地理近接だけで読みを流用しない。",
+      "snapshot_base_commit": "e0e12dd942201ffb554eae82fe103489da66a416",
+      "source_kind": "municipal_cultural_property_page",
+      "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+      "status": "six_actual_index_links_reviewed_five_readings_adopted_one_address_difference_retained",
+      "target_entry_ids": [
+        "0ecc0950-a33c-599c-9063-d1d3a705b6d7",
+        "4faa3639-9710-567b-9769-30a9c51b4ce0",
+        "5020344b-d230-5fcf-a0ee-ec4b2086d636",
+        "aedb021b-c5a1-5a60-904c-696b64a2156f",
+        "bd67ec9f-9b00-5ee9-beea-1c4c93eaea9f",
+        "d3bbad98-1abb-5a02-8652-b6727e6bcc5e"
+      ]
     }
   ],
   "per_prefecture": {
@@ -316578,11 +317428,11 @@
     },
     "26": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 1282,
+        "insufficient_evidence_in_inspected_sources": 1277,
         "investigation_incomplete": 0,
         "judgment_required": 4
       },
-      "unfinished_entries": 1286
+      "unfinished_entries": 1281
     },
     "27": {
       "categories": {
@@ -797055,6 +797905,44 @@
           "source_kind": "government_cultural_publication",
           "source_publisher": "京都府教育委員会",
           "status": "prefecture_heading_ruby_observed_original_aza_and_parcel_binding_unresolved"
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T08:12:47.771136+00:00",
+          "evidence_attempt": "seika_town_six_cultural_pages_five_full_readings_one_address_conflict_20261113",
+          "expected_source_hash": "13a2bfbaab7810531d6de24c0a3f8617c5f7156939221ffdefd70c008f96e582",
+          "observation": "町の独立h1は新殿神社（しんでんじんじゃ）、本文所在地は精華町大字山田小字医王寺3番地。原住所の医王子3とは字名が異なる。府刊行物に無かった地番3は町資料に明記されるが、寺/子の対応は未解決のため採用しない。",
+          "reference": {
+            "address_raw": "精華町大字山田小字医王寺3番地",
+            "attribution": "出典：精華町「新殿神社（しんでんじんじゃ）」（https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6579.html）。社名・全文かな・所在地の事実欄を抽出し照合。",
+            "checked_at": "2026-11-13T08:11:31.520082+00:00",
+            "excerpt": "新殿神社（しんでんじんじゃ） / ＜所在地＞ 精華町大字山田小字医王寺3番地",
+            "fetched_at": "2026-11-13T08:08:01.479641+00:00",
+            "heading_raw": "新殿神社（しんでんじんじゃ）",
+            "index_reference": {
+              "fetched_at": "2026-11-13T08:07:47.503018+00:00",
+              "page_hash": "35ebd68c7b4c6e0679ae013321740d004a9931d3e9689d7859b09fcd56e19bdb",
+              "title": [
+                "精華町の文化財／精華町"
+              ],
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/index.html"
+            },
+            "locator": "h1の独立社名全文かな及び本文の＜所在地＞欄（問い合わせ先・役場住所を除く）",
+            "name_raw": "新殿神社",
+            "page_hash": "228a8bb1b2f9ba61992b47ce0d290456b1625382021f9365865f9772a3f4e0a1",
+            "reading_raw": "しんでんじんじゃ",
+            "reading_scope": "full_name",
+            "rights_observation": "ページ末尾にCopyright (C) Seika Town All Rights Reserved.。閲覧本文の著作・利用条件への専用リンクは見当たらず、無制限の転載許諾とは扱わない。必要な事実項目と出典位置だけを記録し、解説本文・画像・連絡先を収録しない。",
+            "source_kind": "municipal_cultural_property_page",
+            "source_link": {
+              "label": "新殿神社（しんでんじんじゃ）",
+              "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6579.html"
+            },
+            "source_publisher": "精華町 教育部 生涯学習課 社会教育係",
+            "title": "新殿神社（しんでんじんじゃ）／精華町",
+            "url": "https://www.town.seika.kyoto.jp/chosei/kanko_bunka/bunka/3/6579.html"
+          },
+          "status": "full_reading_explicit_but_original_aza_differs"
         }
       ],
       "address": "相楽郡精華町大字山田小字医王子3",
@@ -817344,144 +818232,6 @@
       "surface": "若宮社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:14:34.767979+00:00",
-          "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
-          "expected_source_hash": "a5a89d3ab091fa95d241512dae0a75304e43cc290d0d5aaa9b06c88c719e5369",
-          "municipal_entry_status": "organization_first_page_inspected",
-          "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
-          "reference": {
-            "fetched_at": "2026-11-13T02:00:21.326597+00:00",
-            "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
-            "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
-          },
-          "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
-          "source_kind": "municipal_open_data",
-          "source_observations": [],
-          "source_publisher": "記録した実資料の発行者",
-          "status": "no_name_correspondence_in_selected_tables"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "相楽郡精華町大字菅井小字西ノ辻1",
-      "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "4faa3639-9710-567b-9769-30a9c51b4ce0",
-      "expected_source_hash": "a5a89d3ab091fa95d241512dae0a75304e43cc290d0d5aaa9b06c88c719e5369",
-      "facility_id": "00b84ae4-6e09-5cb8-a57f-65bc4d490d1b",
-      "listed_name": "天王神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "京都府",
-      "prefecture_code": "26",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "天王神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
-          "expected_source_hash": "edbffa85bc8b45d112fd57b76adc933673dfb65bfe8193c9a4c364bc43368511",
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "京都府長岡京市勝竜寺19-25",
-            "checked_at": "2026-11-12T05:44:49.746993+00:00",
-            "fetched_at": "2026-11-12T05:37:01.299083+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "春日神社",
-            "page_hash": "a764a36ae5e2fa539cb10338616a5d95e3044e716f954fc79f79dbcad6d943dd",
-            "reading_context_raw": "春日神社（かすがじんじゃ）は",
-            "reading_raw": "かすがじんじゃ",
-            "reading_scope": "full_name",
-            "reading_variants_raw": [
-              "かすがじんじゃ"
-            ],
-            "redistribution_status": "unconfirmed",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "春日神社　京都府長岡京市勝竜寺 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1066298269.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:14:34.767979+00:00",
-          "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
-          "expected_source_hash": "edbffa85bc8b45d112fd57b76adc933673dfb65bfe8193c9a4c364bc43368511",
-          "municipal_entry_status": "organization_first_page_inspected",
-          "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
-          "reference": {
-            "fetched_at": "2026-11-13T02:00:21.326597+00:00",
-            "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
-            "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
-          },
-          "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
-          "source_kind": "municipal_open_data",
-          "source_observations": [],
-          "source_publisher": "記録した実資料の発行者",
-          "status": "no_name_correspondence_in_selected_tables"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "相楽郡精華町大字下狛小字本庄1",
-      "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "5020344b-d230-5fcf-a0ee-ec4b2086d636",
-      "expected_source_hash": "edbffa85bc8b45d112fd57b76adc933673dfb65bfe8193c9a4c364bc43368511",
-      "facility_id": "8c402633-1839-5c37-8f88-bed99d4028a9",
-      "listed_name": "春日神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "京都府",
-      "prefecture_code": "26",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "春日神社",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T08:07:10.885630+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "971e44edf61407e4ca4e708b0fb677847ac0f5f91de47dba630b2f66e24477c6",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E4%B8%B9%E5%BE%8C%E5%B8%82%E5%BC%A5%E6%A0%84%E7%94%BA)"
-        },
-        {
-          "checked_at": "2026-11-09T08:07:14.334715+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "d86fe98768ee8dd5629d838a56efa25be9169b63402271b98fd066389fb20ec6",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E5%8D%97%E5%B1%B1%E5%9F%8E%E6%9D%91)"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
       "additional_source_reviews": [
@@ -847425,99 +848175,6 @@
       "additional_source_reviews": [
         {
           "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
-          "expected_source_hash": "8427ca00e188a1b9b780c7af3a178d14ef20b8f3c051b7c81075ed20e920ff31",
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "京都府長岡京市勝竜寺19-25",
-            "checked_at": "2026-11-12T05:44:49.746993+00:00",
-            "fetched_at": "2026-11-12T05:37:01.299083+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "春日神社",
-            "page_hash": "a764a36ae5e2fa539cb10338616a5d95e3044e716f954fc79f79dbcad6d943dd",
-            "reading_context_raw": "春日神社（かすがじんじゃ）は",
-            "reading_raw": "かすがじんじゃ",
-            "reading_scope": "full_name",
-            "reading_variants_raw": [
-              "かすがじんじゃ"
-            ],
-            "redistribution_status": "unconfirmed",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "春日神社　京都府長岡京市勝竜寺 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1066298269.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:14:34.767979+00:00",
-          "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
-          "expected_source_hash": "8427ca00e188a1b9b780c7af3a178d14ef20b8f3c051b7c81075ed20e920ff31",
-          "municipal_entry_status": "organization_first_page_inspected",
-          "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
-          "reference": {
-            "fetched_at": "2026-11-13T02:00:21.326597+00:00",
-            "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
-            "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
-          },
-          "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
-          "source_kind": "municipal_open_data",
-          "source_observations": [],
-          "source_publisher": "記録した実資料の発行者",
-          "status": "no_name_correspondence_in_selected_tables"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "相楽郡精華町大字菱田小字宮川原58-2",
-      "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "aedb021b-c5a1-5a60-904c-696b64a2156f",
-      "expected_source_hash": "8427ca00e188a1b9b780c7af3a178d14ef20b8f3c051b7c81075ed20e920ff31",
-      "facility_id": "7047ae9d-dc17-593f-9a10-5fec81e98128",
-      "listed_name": "春日神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "京都府",
-      "prefecture_code": "26",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "春日神社",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T08:07:10.885630+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "971e44edf61407e4ca4e708b0fb677847ac0f5f91de47dba630b2f66e24477c6",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E4%B8%B9%E5%BE%8C%E5%B8%82%E5%BC%A5%E6%A0%84%E7%94%BA)"
-        },
-        {
-          "checked_at": "2026-11-09T08:07:14.334715+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "d86fe98768ee8dd5629d838a56efa25be9169b63402271b98fd066389fb20ec6",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E5%8D%97%E5%B1%B1%E5%9F%8E%E6%9D%91)"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
           "checked_at": "2026-11-13T01:52:49.128357+00:00",
           "evidence_attempt": "kyoto_six_municipalities_thirteen_open_tables_20261113",
           "expected_source_hash": "e235e0bbe59270d16d563b3dbf042e3819a6d3dd1d4d306ddbd882cca1054b1f",
@@ -852750,99 +853407,6 @@
       "surface": "治宮神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T06:06:15.138359+00:00",
-          "evidence_attempt": "kojiki_additional_articles_20261112_kyoto-remaining",
-          "expected_source_hash": "ec938966d3b40ea0869731e8d3a5583f3e10337396778aa8bbeac9e15d487abb",
-          "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
-          "reference": {
-            "address_raw": "京都府長岡京市勝竜寺19-25",
-            "checked_at": "2026-11-12T05:44:49.746993+00:00",
-            "fetched_at": "2026-11-12T05:37:01.299083+00:00",
-            "license_status": "unconfirmed",
-            "locator": "article-body-inner の主対象導入文（正式名（全文かな）は…）; 同記事の［住所］欄; article-titleによる主題確認",
-            "name_raw": "春日神社",
-            "page_hash": "a764a36ae5e2fa539cb10338616a5d95e3044e716f954fc79f79dbcad6d943dd",
-            "reading_context_raw": "春日神社（かすがじんじゃ）は",
-            "reading_raw": "かすがじんじゃ",
-            "reading_scope": "full_name",
-            "reading_variants_raw": [
-              "かすがじんじゃ"
-            ],
-            "redistribution_status": "unconfirmed",
-            "source_kind": "article",
-            "source_publisher": "神社と古事記（非公式二次資料）",
-            "title": "春日神社　京都府長岡京市勝竜寺 - 神社と古事記",
-            "url": "https://www.buccyake-kojiki.com/archives/1066298269.html"
-          },
-          "result": "full_name_or_address_not_bound",
-          "source_kind": "article",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "inspected_independent_article_not_adopted"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:14:34.767979+00:00",
-          "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
-          "expected_source_hash": "ec938966d3b40ea0869731e8d3a5583f3e10337396778aa8bbeac9e15d487abb",
-          "municipal_entry_status": "organization_first_page_inspected",
-          "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
-          "reference": {
-            "fetched_at": "2026-11-13T02:00:21.326597+00:00",
-            "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
-            "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
-          },
-          "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
-          "source_kind": "municipal_open_data",
-          "source_observations": [],
-          "source_publisher": "記録した実資料の発行者",
-          "status": "no_name_correspondence_in_selected_tables"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "相楽郡精華町大字菱田小字縄添31",
-      "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "bd67ec9f-9b00-5ee9-beea-1c4c93eaea9f",
-      "expected_source_hash": "ec938966d3b40ea0869731e8d3a5583f3e10337396778aa8bbeac9e15d487abb",
-      "facility_id": "948d53ec-06d3-5203-b3b7-ed9164d82fe3",
-      "listed_name": "春日神社",
-      "nta_result": "registered furigana absent",
-      "prefecture": "京都府",
-      "prefecture_code": "26",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "春日神社",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T08:07:10.885630+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "971e44edf61407e4ca4e708b0fb677847ac0f5f91de47dba630b2f66e24477c6",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E4%B8%B9%E5%BE%8C%E5%B8%82%E5%BC%A5%E6%A0%84%E7%94%BA)"
-        },
-        {
-          "checked_at": "2026-11-09T08:07:14.334715+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "d86fe98768ee8dd5629d838a56efa25be9169b63402271b98fd066389fb20ec6",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%98%A5%E6%97%A5%E7%A5%9E%E7%A4%BE_(%E5%8D%97%E5%B1%B1%E5%9F%8E%E6%9D%91)"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
     },
     {
       "additional_source_reviews": [
@@ -860461,60 +861025,6 @@
           "result": "multiple readings of the primary name or unbound lead kana",
           "status": "inspected",
           "url": "https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E7%A5%9E%E7%A4%BE_(%E4%BA%AC%E9%83%BD%E5%B8%82)"
-        }
-      ],
-      "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T02:14:34.767979+00:00",
-          "evidence_attempt": "kyoto_remaining_19_municipal_entries_actual_bodik_links_selected_32_tables_20261113",
-          "expected_source_hash": "7e59b9858bb4f8133d3c14df04906a62f5f445527049f66f7cfc7698fbbfb308",
-          "municipal_entry_status": "organization_first_page_inspected",
-          "observation": "記録した市町村入口・選定表だけの到達状態。表を取得していない地域や公式性未確認の転送先を、名称・全文かな・全住所の照合済みにしない。",
-          "reference": {
-            "fetched_at": "2026-11-13T02:00:21.326597+00:00",
-            "page_hash": "9277477baebe67529623af6ea2886d84b844cda17d855203ddb27b51f7b23d3c",
-            "url": "https://www.town.seika.kyoto.jp/kakuka/joho/1/oshirase/8249.html"
-          },
-          "scope": "自治体の実hrefからBODIK組織一覧の表示ページを点検し、選定した文化財・公共施設・避難場所・AED等の表の名称欄を照合。タイトル非該当の統計表や未掲載資料まですべて確認したという意味ではない。",
-          "source_kind": "municipal_open_data",
-          "source_observations": [],
-          "source_publisher": "記録した実資料の発行者",
-          "status": "no_name_correspondence_in_selected_tables"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "相楽郡精華町大字東畑小字嶽ケ93",
-      "agency_listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/29.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "d3bbad98-1abb-5a02-8652-b6727e6bcc5e",
-      "expected_source_hash": "7e59b9858bb4f8133d3c14df04906a62f5f445527049f66f7cfc7698fbbfb308",
-      "facility_id": "300209d6-43d3-5de7-bafc-6630059fe12b",
-      "listed_name": "東畑神社",
-      "nta_result": "no unique active exact name/full-address corporate identity",
-      "prefecture": "京都府",
-      "prefecture_code": "26",
-      "reading_raw": "",
-      "reason": "missing agency reading",
-      "status": "unfinished",
-      "surface": "東畑神社",
-      "wikipedia_article_refs": [
-        {
-          "checked_at": "2026-11-09T09:35:25.942215+00:00",
-          "matched_current_snapshot": true,
-          "page_hash": "c08d5cd5291461758c42adbfb62f7feabad293e524457142a5a3ac47052209d7",
-          "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
-          "status": "inspected",
-          "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E7%95%91%E7%A5%9E%E7%A4%BE"
         }
       ],
       "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
@@ -1233646,7 +1234156,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10536,
+    "retained_unresolved_entries": 10531,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1236748,11 +1237258,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10336,
+      "insufficient_evidence_in_inspected_sources": 10331,
       "investigation_incomplete": 0,
       "judgment_required": 200
     },
-    "distinct_surfaces": 4225,
-    "unfinished_entries": 10536
+    "distinct_surfaces": 4224,
+    "unfinished_entries": 10531
   }
 }
