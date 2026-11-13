@@ -23024,16 +23024,28 @@
         "integration_main_commit": "6068f7553d491d36c8ce1d5203d9ebbc2afe4c7f",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域調査/採用と旧判断を保持し、東松山市の市名コンテキストによる全文読み3登録補完を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T10:21:13.399284+00:00",
+        "entry_ids": [
+          "c82e8762-8514-52c3-afba-a93e36909918"
+        ],
+        "inspected_targets": 1,
+        "new_verified_entries": 1,
+        "scope": "羽尾神社の原空かなを保持し、町議会資料の同頁全文ルビ/全住所から補完。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T10:21:13.399284+00:00",
-      "entry_ids": [
+      "checked_at": "2026-11-13T10:26:24.791606+00:00",
+      "integrated_entry_ids": [
+        "2ba7e7af-5ebe-5876-8b02-7fdab79b401c",
+        "36597137-a149-5295-a0f8-90a498d6a0f0",
+        "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1",
         "c82e8762-8514-52c3-afba-a93e36909918"
       ],
-      "inspected_targets": 1,
-      "new_verified_entries": 1,
-      "scope": "羽尾神社の原空かなを保持し、町議会資料の同頁全文ルビ/全住所から補完。"
+      "integration_main_commit": "98cc02690e6756707f44ee83d4c216acafc81b2e",
+      "new_verified_entries": 0,
+      "scope": "実効データに影響しないreading_research.jsonのみの最新追記を保持して統合。直前の各補完の全件比較と684テスト検証に基づき、採用を重複計上しない。"
     },
     "remaining_unfinished_entries": 10521,
     "resolved_entry_ids": [
@@ -23388,7 +23400,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T10:21:13.399284+00:00",
+  "computed_at": "2026-11-13T10:26:24.791606+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -320980,6 +320992,69 @@
       ]
     },
     {
+      "acquisition": "新規HTTP取得なし。既取得本文をoffline=Trueで再読し、記録済みhashと主記事正式名・全文かな・全所在地を確認。検索結果だけで判定しない。",
+      "attempt_id": "protected_whole_reading_candidates_inventory_and_onomisukune_no_variation_hold_20261113",
+      "checked_at": "2026-11-13T10:18:05.457488+00:00",
+      "input_judgment_required_entries": 200,
+      "input_pending_entries": 10525,
+      "matched_entry_ids": [
+        "54499d19-3b9f-5796-9d8a-ce2746437d43"
+      ],
+      "matched_reference_records": 1,
+      "new_verified_entries": 0,
+      "observation": "原地番と正式名の一致だけで読みの差を自動解除しない。前回解消した岡太神社と異なり、この候補には途中ののの有無が残る。候補保護を理由に放置せず、実質的な相違をcategory_basisと個別根拠に記録した。原文・旧補正・県CSVの文化財複合名観察を保持し、制限済み他サイトの検索抜粋・コピーから補わない。",
+      "reference_observation": {
+        "address_raw": "鳥取県鳥取市徳尾80",
+        "authority_observation": "非公式二次資料の明示全文かな。神社自身・神社庁・行政の公式発音確認とはしない。",
+        "checked_at": "2026-11-13T10:18:05.457488+00:00",
+        "excerpt": "大野見宿禰命神社（おおのみすくねのみことじんじゃ）は、鳥取県鳥取市徳尾にある神社。\n［住所］鳥取県鳥取市徳尾80",
+        "fetched_at": "2026-11-12T06:57:00.468279+00:00",
+        "locator": "同一主記事の名称直後の全文かなと住所欄",
+        "name_raw": "大野見宿禰命神社",
+        "page_hash": "ea232072cc8360094e2fb9278a10e7bb6afe3390f343d3f8ac223b500749814c",
+        "reading_raw": "おおのみすくねのみことじんじゃ",
+        "source_kind": "article",
+        "source_publisher": "神社と古事記（非公式二次資料）",
+        "title": "大野見宿禰命神社 鳥取県鳥取市徳尾 | 神社と古事記",
+        "url": "https://www.buccyake-kojiki.com/archives/1060906274.html"
+      },
+      "retained_pending_entries": 1,
+      "scope": "現保留のうちjudgment_requiredかつ既補正review_kind=whole_reading_auditの登録から、既調査にprotected_existing_judgment_reading_or_identityと独立全文かなrefが記録されている候補だけを抽出。全保留の根拠十分性や全資料の点検完了を意味しない。",
+      "status": "bounded_existing_protected_candidate_inventory_one_substantive_reading_hold",
+      "whole_reading_audit_targets": 44
+    },
+    {
+      "acquisition": "通常公開GET・robots準拠・同一ホスト2秒以上・timeout20秒・再試行0。各一覧対象欄の実hrefを解決して取得。",
+      "attempt_id": "ishikawa_two_actual_native_detail_links_same_malformed_or_empty_reading_20261113",
+      "checked_at": "2026-11-13T10:24:51.428928+00:00",
+      "entry_ids": [
+        "04e9cdfa-c33c-528b-b7fa-53792244874e",
+        "6fb99abd-cc92-5c21-a703-fe8ff965aa1a"
+      ],
+      "inspected_detail_pages": 2,
+      "inspected_index_pages": 2,
+      "new_verified_entries": 0,
+      "observations": [
+        {
+          "entry_id": "04e9cdfa-c33c-528b-b7fa-53792244874e",
+          "page_hash": "34f12b2e42c542bc74ab9ae06f88b8bc0edc2f43c59de370978db75f9b12e766",
+          "reading_raw": "はくさんじじゃ",
+          "status": "native_detail_preserves_suspected_malformed_reading",
+          "url": "https://www.ishikawa-jinjacho.or.jp/shrine/j1666/"
+        },
+        {
+          "entry_id": "6fb99abd-cc92-5c21-a703-fe8ff965aa1a",
+          "page_hash": "4471481129a38da239b8f716d74e9db09161750ff3d5f9a7b114dbf5496399d0",
+          "reading_raw": "",
+          "status": "native_detail_formal_name_rt_empty",
+          "url": "https://www.ishikawa-jinjacho.or.jp/shrine/j0252/"
+        }
+      ],
+      "privacy_and_storage": "社名・かな・所在地と出典・hash・欄位置だけを記録。取得全本文、画像、氏名、個人連絡先、キャッシュはコミットしない。",
+      "scope": "石川県の現保留2件。以前の非公式記事の別所在地・別名候補から読みを流用せず、原文・既補正・分類と件数を維持。",
+      "status": "two_native_details_inspected_no_full_reading_resolution"
+    },
+    {
       "adopted_reading_research_history": [
         {
           "additional_source_reviews": [
@@ -471740,6 +471815,40 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T10:24:51.428928+00:00",
+          "evidence_attempt": "ishikawa_two_actual_native_detail_links_same_malformed_or_empty_reading_20261113",
+          "expected_source_hash": "e73c4a4c7fc3a7c2d5bae32a5c3fea178dd7faa322b5582de67bba2bbe54faeb",
+          "observation": "実リンク先の正式名と全所在地は対応するが、主見出しのかなも原文と同じ「はくさんじじゃ」。んを推定補完しない。別掲の山中26-11・38-15-1・2-38の白山神社には別の全文かながあるが、所在地が違う兼務社であり流用しない。",
+          "reference": {
+            "address_raw": "鳳珠郡穴水町東中谷ヘ1",
+            "authority_observation": "本文の石川県神社庁表示とフッター © 2017 Ishikawa Jinjacho. を確認。掲載主体と当該施設の神社本庁包括関係は区別する。",
+            "checked_at": "2026-11-13T10:24:51.428928+00:00",
+            "excerpt": "白山神社（ はくさんじじゃ ） 鎮座地 鳳珠郡穴水町東中谷ヘ1",
+            "fetched_at": "2026-11-13T10:24:04.929376+00:00",
+            "index_href_raw": "https://www.ishikawa-jinjacho.or.jp/shrine/j1666/",
+            "index_reference": {
+              "fetched_at": "2026-11-13T10:23:20.766723+00:00",
+              "href_raw": "https://www.ishikawa-jinjacho.or.jp/shrine/j1666/",
+              "locator": "同じ全所在地を持つ ul.flex.search_ul 内の唯一 a[href]",
+              "page_hash": "fac4594b80f5877703fb7bc272cf326ee10d560e1c2f084f919c70a9b9df8a03",
+              "url": "https://www.ishikawa-jinjacho.or.jp/page/52/?s"
+            },
+            "key": "hakusan-detail",
+            "locator": "h1.title の ruby/rt と鎮座地欄",
+            "name_raw": "白山神社",
+            "page_hash": "34f12b2e42c542bc74ab9ae06f88b8bc0edc2f43c59de370978db75f9b12e766",
+            "reading_raw": "はくさんじじゃ",
+            "source_kind": "agency",
+            "source_publisher": "石川県神社庁",
+            "status": 200,
+            "title": "白山神社 | 石川県神社庁",
+            "url": "https://www.ishikawa-jinjacho.or.jp/shrine/j1666/"
+          },
+          "scope": "記録した一覧2頁の対象欄と実リンク先2施設に限定。別の神社や同一ホスト全資料の読みの有無を判断したものではない。",
+          "status": "native_detail_preserves_suspected_malformed_reading"
         }
       ],
       "address": "鳳珠郡穴水町東中谷ヘ1",
@@ -471782,6 +471891,40 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T10:24:51.428928+00:00",
+          "evidence_attempt": "ishikawa_two_actual_native_detail_links_same_malformed_or_empty_reading_20261113",
+          "expected_source_hash": "61fc08a02c4c5b884c137bd80280f9e97817955f6173f4e665116eedbc5a5580",
+          "observation": "実リンク先の正式名と全所在地は対応するが、主見出しのrtは空欄。独立した当該名の全文かなを確認できず保留。本務神社の石浦神社・兼務神社の泉野菅原神社のかなは当該名の全文読みではない。神社本庁包括外の原注記を保持し、他資料にある通称を推定分割しない。",
+          "reference": {
+            "address_raw": "金沢市石引2丁目25－13",
+            "authority_observation": "本文の石川県神社庁表示とフッター © 2017 Ishikawa Jinjacho. を確認。掲載主体と当該施設の神社本庁包括関係は区別する。",
+            "checked_at": "2026-11-13T10:24:51.428928+00:00",
+            "excerpt": "菅原神社（神社本庁包括外）（ ） 鎮座地 金沢市石引2丁目25－13",
+            "fetched_at": "2026-11-13T10:24:07.301769+00:00",
+            "index_href_raw": "https://www.ishikawa-jinjacho.or.jp/shrine/j0252/",
+            "index_reference": {
+              "fetched_at": "2026-11-13T10:23:23.122008+00:00",
+              "href_raw": "https://www.ishikawa-jinjacho.or.jp/shrine/j0252/",
+              "locator": "同じ全所在地を持つ ul.flex.search_ul 内の唯一 a[href]",
+              "page_hash": "7fcbfdee39d3824f38ea6bb15e17b9dcea7021f45a447732c9a72486f75c0ecc",
+              "url": "https://www.ishikawa-jinjacho.or.jp/page/170/?s"
+            },
+            "key": "sugawara-detail",
+            "locator": "h1.title の ruby/rt と鎮座地欄",
+            "name_raw": "菅原神社（神社本庁包括外）",
+            "page_hash": "4471481129a38da239b8f716d74e9db09161750ff3d5f9a7b114dbf5496399d0",
+            "reading_raw": "",
+            "source_kind": "agency",
+            "source_publisher": "石川県神社庁",
+            "status": 200,
+            "title": "菅原神社（神社本庁包括外） | 石川県神社庁",
+            "url": "https://www.ishikawa-jinjacho.or.jp/shrine/j0252/"
+          },
+          "scope": "記録した一覧2頁の対象欄と実リンク先2施設に限定。別の神社や同一ホスト全資料の読みの有無を判断したものではない。",
+          "status": "native_detail_formal_name_rt_empty"
         }
       ],
       "address": "金沢市石引2丁目25－13",
@@ -882195,11 +882338,36 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T10:18:05.457488+00:00",
+          "evidence_attempt": "protected_whole_reading_candidates_inventory_and_onomisukune_no_variation_hold_20261113",
+          "expected_source_hash": "0b13e79bab126b122587975b4d47279a51ba5a2764486d6f4ff7a16cf581718a",
+          "observation": "正式名と全地番80は対応するが、原おおのみのすくねのみことじんじやと記事おおのみすくねのみことじんじゃは大野見の後ののの有無も異なる。単純な大小かな補正とはしない。県の文化財複合名かなは以前の観測を保持し、社叢の語尾を切り落として新しい神社全文読みにはしない。",
+          "reference": {
+            "address_raw": "鳥取県鳥取市徳尾80",
+            "authority_observation": "非公式二次資料の明示全文かな。神社自身・神社庁・行政の公式発音確認とはしない。",
+            "checked_at": "2026-11-13T10:18:05.457488+00:00",
+            "excerpt": "大野見宿禰命神社（おおのみすくねのみことじんじゃ）は、鳥取県鳥取市徳尾にある神社。\n［住所］鳥取県鳥取市徳尾80",
+            "fetched_at": "2026-11-12T06:57:00.468279+00:00",
+            "locator": "同一主記事の名称直後の全文かなと住所欄",
+            "name_raw": "大野見宿禰命神社",
+            "page_hash": "ea232072cc8360094e2fb9278a10e7bb6afe3390f343d3f8ac223b500749814c",
+            "reading_raw": "おおのみすくねのみことじんじゃ",
+            "source_kind": "article",
+            "source_publisher": "神社と古事記（非公式二次資料）",
+            "title": "大野見宿禰命神社 鳥取県鳥取市徳尾 | 神社と古事記",
+            "url": "https://www.buccyake-kojiki.com/archives/1060906274.html"
+          },
+          "remaining_requirement": "のの有無を含む当該社名の全文読みの扱いを、同一施設に対応した根拠で解決する。原読みの途中の「の」を削除したり小書き変更だけを機械適用したりしない。",
+          "status": "protected_candidate_manually_rechecked_reading_difference_beyond_small_kana"
         }
       ],
       "address": "鳥取市徳尾80",
       "agency_listing_url": "https://tottori-jinjacho.jp/pages/185/",
       "category": "judgment_required",
+      "category_basis": "全文かなを明示した同地番の記事はあるが、原読みと小書きゃ以外に「大野見」後の「の」の有無も異なる。既存保留の単なる自動上書き保護に加え、読みの相違自体を個別に解決する必要がある。",
       "entry_id": "54499d19-3b9f-5796-9d8a-ce2746437d43",
       "expected_source_hash": "0b13e79bab126b122587975b4d47279a51ba5a2764486d6f4ff7a16cf581718a",
       "facility_id": "4c178fba-0240-5437-a67f-a398121c4793",
