@@ -314459,6 +314459,133 @@
         ]
       },
       "status": "independent_review_finding_fixed"
+    },
+    {
+      "attempt_id": "ndl_three_corporate_name_authority_pilot_and_kyoto_federation_policy_20261113",
+      "authority_html_bodies": 1,
+      "authority_json_ld_bodies": 1,
+      "checked_at": "2026-11-13T07:45:47.338401+00:00",
+      "inspected_target_entries": 3,
+      "license_observation": "国立国会図書館作成の典拠データは出典明記で営利/非営利を問わず申請なし利用可能。NDLが提供する第三者データや資料本文まで同じ条件とせず、NDL典拠自体を神社庁の確認へ分類しない。出典：Web NDL Authorities。",
+      "new_verified_entries": 0,
+      "other_source_screening": {
+        "kyoto_federation_policy": {
+          "observation": "実規約本文で、著作権法で認められる場合を除く無断複製・使用・転載・販売・改変禁止を確認。施設情報・PDF・画像を追加取得せず、検索結果の名称・読み・所在地を採用根拠に転記しない。",
+          "reference": {
+            "fetched_at": "2026-11-13T07:43:38.648164+00:00",
+            "page_hash": "7b179f6c36b9b3d65a15d3ff7f6ea09fbfc5eaf3eea3efe18898da78b768c7ab",
+            "title": [
+              "サイトポリシー | 京都府観光連盟公式サイト"
+            ],
+            "url": "https://www.kyoto-kankou.or.jp/privacypolicy/sitepolicy"
+          },
+          "source_publisher": "公益社団法人京都府観光連盟",
+          "status": "reuse_restricted_no_content_acquisition"
+        },
+        "wikidata_prior_stop_revalidated": {
+          "evidence_attempt": "wikidata_structured_data_query_robots_stop_20261112",
+          "new_entity_records": 0,
+          "new_query_requests": 0,
+          "observation": "既存のrobots禁止停止を確認。今回開いた公開のライセンス・Property説明と神社クラス説明は施設データ取得ではなく、SPARQLへ再送・別経路で代替取得しない。"
+        }
+      },
+      "policy_references": [
+        {
+          "fetched_at": "2026-11-13T07:43:29.803663+00:00",
+          "page_hash": "ce97c878cf71e656eff26b6282dcea06d89661839fecbe90caa81baabc064a97",
+          "title": [
+            "利用条件 «  Web NDL Authoritiesについて"
+          ],
+          "url": "https://id.ndl.go.jp/information/use/"
+        },
+        {
+          "fetched_at": "2026-11-13T07:43:31.897915+00:00",
+          "page_hash": "4fdb1a20e7b3deeb36020452a71290f94d9f5b25b7ba87f9e299e30170aac31a",
+          "title": [
+            "機能説明 «  Web NDL Authoritiesについて"
+          ],
+          "url": "https://id.ndl.go.jp/information/function/"
+        },
+        {
+          "fetched_at": "2026-11-13T07:43:34.236277+00:00",
+          "page_hash": "47c3e71ebac41b6e027af7ff988bc6f0236248898f3f5e2939dc469c8886b1cb",
+          "title": [
+            "書誌データの利用方法 | 国立国会図書館",
+            "国立国会図書館",
+            "国立国会図書館",
+            "外部サイト",
+            "国立国会図書館"
+          ],
+          "url": "https://www.ndl.go.jp/data/data_service/quickguide"
+        }
+      ],
+      "preservation": "元登録・旧字・原読み・原住所・ID/hash・補正・既存判断を保持。取得本文・画像・キャッシュ・個人情報を収録しない。",
+      "queries": [
+        {
+          "entry_id": "e9cc720d-1eb6-5b25-a9f6-e41aeb87ffbd",
+          "expected_source_hash": "130b69fa8e44217200beee06e0024b450ce14a101498510daf376bf392ad201d",
+          "parameters": {
+            "g": "corporateNames",
+            "qw": "白峯神宮"
+          },
+          "result_count": 0,
+          "search_reference": {
+            "fetched_at": "2026-11-13T07:43:38.747159+00:00",
+            "page_hash": "6d8c4ff38b30449c6ddf278e4837f927f851779fed039afeaef02ea5ed4cfc5f",
+            "title": [
+              "白峯神宮 の検索結果 - Web NDL Authorities"
+            ],
+            "url": "https://id.ndl.go.jp/auth/ndla/?qw=%E7%99%BD%E5%B3%AF%E7%A5%9E%E5%AE%AE&g=corporateNames"
+          },
+          "status": "no_result_in_bounded_corporate_name_keyword_search"
+        },
+        {
+          "entry_id": "885be17d-b91f-5be6-b20a-79163dee5440",
+          "expected_source_hash": "94b985c9546833101afe97611242f4841e5d3eac01decda0642fef2e534183f1",
+          "parameters": {
+            "g": "corporateNames",
+            "qw": "大将軍八神社"
+          },
+          "result_count": 1,
+          "search_reference": {
+            "fetched_at": "2026-11-13T07:43:40.817533+00:00",
+            "page_hash": "8d6aca8654b7b0039543d3e2bc967cd9c38be97fa331b224cb7e41f415d25939",
+            "title": [
+              "大将軍八神社 の検索結果 - Web NDL Authorities"
+            ],
+            "url": "https://id.ndl.go.jp/auth/ndla/?qw=%E5%A4%A7%E5%B0%86%E8%BB%8D%E5%85%AB%E7%A5%9E%E7%A4%BE&g=corporateNames"
+          },
+          "status": "name_transcription_explicit_facility_address_binding_absent"
+        },
+        {
+          "entry_id": "6912a25b-fe34-5653-b9d6-1c55332828e6",
+          "expected_source_hash": "316734cc85df0dfd7687eff66eacc513e3be511ac56fc951c9d84cd4a6bf36ae",
+          "parameters": {
+            "g": "corporateNames",
+            "qw": "京都大神宮"
+          },
+          "result_count": 0,
+          "search_reference": {
+            "fetched_at": "2026-11-13T07:43:42.912161+00:00",
+            "page_hash": "eb7f2736fa7ec3a995843ac2151823b1dd09ed524ab5194e7ec8ebadd7177133",
+            "title": [
+              "京都大神宮 の検索結果 - Web NDL Authorities"
+            ],
+            "url": "https://id.ndl.go.jp/auth/ndla/?qw=%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%A5%9E%E5%AE%AE&g=corporateNames"
+          },
+          "status": "no_result_in_bounded_corporate_name_keyword_search"
+        }
+      ],
+      "retained_pending_entries": 3,
+      "scope": "文書化された通常の団体名キーワード検索3件、結果の実href1典拠・明示JSON-LD1件のみ。全国典拠の網羅照合、書籍本文、全施設の同定ではない。SPARQL・一括取得は実施していない。",
+      "snapshot_base_commit": "639614f14f829a6e75a1659a9f8f733dd4a42382",
+      "source_kind": "national_library_authority_data",
+      "source_publisher": "国立国会図書館",
+      "target_entry_ids": [
+        "e9cc720d-1eb6-5b25-a9f6-e41aeb87ffbd",
+        "885be17d-b91f-5be6-b20a-79163dee5440",
+        "6912a25b-fe34-5653-b9d6-1c55332828e6"
+      ]
     }
   ],
   "per_prefecture": {
@@ -822458,6 +822585,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T07:45:47.338401+00:00",
+          "evidence_attempt": "ndl_three_corporate_name_authority_pilot_and_kyoto_federation_policy_20261113",
+          "expected_source_hash": "316734cc85df0dfd7687eff66eacc513e3be511ac56fc951c9d84cd4a6bf36ae",
+          "observation": "指定語・団体名区分で検索結果0を本文確認。資料全体や他種別・異なる表記に典拠が存在しないとの判断ではない。",
+          "remaining_requirement": "名称・独立全文かな・元施設同一性に対応する実資料。",
+          "search_parameters": {
+            "g": "corporateNames",
+            "qw": "京都大神宮"
+          },
+          "search_reference": {
+            "fetched_at": "2026-11-13T07:43:42.912161+00:00",
+            "page_hash": "eb7f2736fa7ec3a995843ac2151823b1dd09ed524ab5194e7ec8ebadd7177133",
+            "title": [
+              "京都大神宮 の検索結果 - Web NDL Authorities"
+            ],
+            "url": "https://id.ndl.go.jp/auth/ndla/?qw=%E4%BA%AC%E9%83%BD%E5%A4%A7%E7%A5%9E%E5%AE%AE&g=corporateNames"
+          },
+          "search_result_count": 0,
+          "source_kind": "national_library_authority_data",
+          "source_publisher": "国立国会図書館",
+          "status": "no_result_in_bounded_corporate_name_keyword_search"
         }
       ],
       "address": "京都市下京区寺町通四条下ル貞安前ノ町622",
@@ -832701,6 +832852,74 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "authority_created": "1999-01-11",
+          "authority_id": "00703468",
+          "authority_modified": "1999-01-11T18:12:00",
+          "authority_source_titles": [
+            "大将軍神像と社史",
+            "神社寺院名読み方辞典"
+          ],
+          "authority_type": "Corporate Names",
+          "checked_at": "2026-11-13T07:45:47.338401+00:00",
+          "evidence_attempt": "ndl_three_corporate_name_authority_pilot_and_kyoto_federation_policy_20261113",
+          "expected_source_hash": "94b985c9546833101afe97611242f4841e5d3eac01decda0642fef2e534183f1",
+          "name_raw": "大将軍八神社",
+          "observation": "同一団体名の典拠に名称カナが明示されるが、典拠本文・JSON-LDに所在地がなく元登録の全住所への結合は未成立。図書館の典拠であることを施設・神社庁の公式所在地確認とは扱わない。1999年の更新日と今回の取得日を区別し、空白入り原カナを保持。出典として挙げられた書籍本文は取得・点検していない。",
+          "reading_raw": "ダイショウグン ハチ ジンジャ",
+          "references": [
+            {
+              "actual_search_link": {
+                "label": "大将軍八神社",
+                "url": "https://id.ndl.go.jp/auth/ndlna/00703468"
+              },
+              "fetched_at": "2026-11-13T07:44:05.214105+00:00",
+              "page_hash": "6cecee00aa79eb74f2e9209f52e2e17671ff2b669c6910c1f6460a4e2324db98",
+              "search_reference": {
+                "fetched_at": "2026-11-13T07:43:40.817533+00:00",
+                "page_hash": "8d6aca8654b7b0039543d3e2bc967cd9c38be97fa331b224cb7e41f415d25939",
+                "url": "https://id.ndl.go.jp/auth/ndla/?qw=%E5%A4%A7%E5%B0%86%E8%BB%8D%E5%85%AB%E7%A5%9E%E7%A4%BE&g=corporateNames"
+              },
+              "title": [
+                "大将軍八神社 - Web NDL Authorities"
+              ],
+              "url": "https://id.ndl.go.jp/auth/ndlna/00703468"
+            },
+            {
+              "fetched_at": "2026-11-13T07:44:27.331631+00:00",
+              "page_hash": "4df682a622ba7cffc9a769f3e6f8905a8ed4c1da2e6d229e773d876aa48e56eb",
+              "source_link": {
+                "label": "JSON-LD形式JSON-LD format",
+                "url": "00703468.json"
+              },
+              "source_page_reference": {
+                "fetched_at": "2026-11-13T07:44:05.214105+00:00",
+                "page_hash": "6cecee00aa79eb74f2e9209f52e2e17671ff2b669c6910c1f6460a4e2324db98",
+                "url": "https://id.ndl.go.jp/auth/ndlna/00703468"
+              },
+              "url": "https://id.ndl.go.jp/auth/ndlna/00703468.json"
+            }
+          ],
+          "remaining_requirement": "典拠と対象の原全所在地を結び付ける独立実資料と、原読みの空白を含めた適切な編集審査。番地を典拠に補作しない。",
+          "search_parameters": {
+            "g": "corporateNames",
+            "qw": "大将軍八神社"
+          },
+          "search_reference": {
+            "fetched_at": "2026-11-13T07:43:40.817533+00:00",
+            "page_hash": "8d6aca8654b7b0039543d3e2bc967cd9c38be97fa331b224cb7e41f415d25939",
+            "title": [
+              "大将軍八神社 の検索結果 - Web NDL Authorities"
+            ],
+            "url": "https://id.ndl.go.jp/auth/ndla/?qw=%E5%A4%A7%E5%B0%86%E8%BB%8D%E5%85%AB%E7%A5%9E%E7%A4%BE&g=corporateNames"
+          },
+          "search_result_count": 1,
+          "source_kind": "national_library_authority_data",
+          "source_locator": "HTML 名称/タイトルとカナ読みの独立dt/dd; JSON-LD prefLabel.literalForm / prefLabel.transcription",
+          "source_publisher": "国立国会図書館",
+          "status": "name_transcription_explicit_facility_address_binding_absent"
         }
       ],
       "address": "京都市上京区一条御前通西入ル三丁目西町48",
@@ -866389,6 +866608,30 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T07:45:47.338401+00:00",
+          "evidence_attempt": "ndl_three_corporate_name_authority_pilot_and_kyoto_federation_policy_20261113",
+          "expected_source_hash": "130b69fa8e44217200beee06e0024b450ce14a101498510daf376bf392ad201d",
+          "observation": "指定語・団体名区分で検索結果0を本文確認。資料全体や他種別・異なる表記に典拠が存在しないとの判断ではない。",
+          "remaining_requirement": "名称・独立全文かな・元施設同一性に対応する実資料。",
+          "search_parameters": {
+            "g": "corporateNames",
+            "qw": "白峯神宮"
+          },
+          "search_reference": {
+            "fetched_at": "2026-11-13T07:43:38.747159+00:00",
+            "page_hash": "6d8c4ff38b30449c6ddf278e4837f927f851779fed039afeaef02ea5ed4cfc5f",
+            "title": [
+              "白峯神宮 の検索結果 - Web NDL Authorities"
+            ],
+            "url": "https://id.ndl.go.jp/auth/ndla/?qw=%E7%99%BD%E5%B3%AF%E7%A5%9E%E5%AE%AE&g=corporateNames"
+          },
+          "search_result_count": 0,
+          "source_kind": "national_library_authority_data",
+          "source_publisher": "国立国会図書館",
+          "status": "no_result_in_bounded_corporate_name_keyword_search"
         }
       ],
       "address": "京都市上京区今出川通堀川東入飛鳥井町261",
