@@ -725,6 +725,34 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 
 同館トップの画像・文章の著作権帰属と、リンク方針のトップページへのリンク依頼・画像コピーの別途申請条件を確認しています。画像や記事全体は収録せず、名称・全文かな・印刷所在地と出典URL/hash・判断の最小限の事実だけを保存しました。直接の項目URLと確認位置はreading_research.jsonに保存し、ここでは同館の依頼に沿ってトップへリンクしています。
 
+
+### 御中主・社寺探訪20主記事と原町域の照合（2026年11月13日）
+
+[御中主・社寺探訪](https://minakanushi.com/shaji/Shrine/index.html)は、本文で参詣の会や個人が巡った神社の記録と説明する非公式二次資料です。既取得の滋賀・京都索引から実リンク20主記事を取得し、35保留登録との44候補組を照合しました。本文冒頭の正式名・独立した連続全文かな・同主対象の所在地表から次の14登録を補完しています。
+
+| 掲載名 | 明示全文読み | 原所在地 |
+| --- | --- | --- |
+| [御霊神社](https://minakanushi.com/shaji/Shrine/183goryoujinja.html) | ごりょうじんじゃ | 大津市鳥居川町 |
+| [若宮八幡神社](https://minakanushi.com/shaji/Shrine/187wakamiyahachiman.html) | わかみやはちまんじんじゃ | 大津市杉浦町 |
+| [宇佐八幡神社](https://minakanushi.com/shaji/Shrine/192usahachimanjinja.html) | うさはちまんじんじゃ | 大津市錦織 |
+| [若宮八幡神社](https://minakanushi.com/shaji/Shrine/1256wakamiyahachiman.html) | わかみやはちまんじんじゃ | 大津市逢坂 |
+| [倭神社](https://minakanushi.com/shaji/Shrine/1263shidorijinja.html) | しどりじんじゃ | 大津市滋賀里 |
+| [高穴穂神社](https://minakanushi.com/shaji/Shrine/1264takaanahojinja.html) | たかあなほじんじゃ | 大津市穴太 |
+| [供所神社](https://minakanushi.com/shaji/Shrine/1280kushojinja.html) | くしょじんじゃ | 大津市比叡辻 |
+| [大崎神社](https://minakanushi.com/shaji/Shrine/1281osakijinja.html) | おおさきじんじゃ | 大津市比叡辻 |
+| [幸神神社](https://minakanushi.com/shaji/Shrine/1285sainokamijinja.html) | さいのかみじんじゃ | 大津市下阪本 |
+| [酒井神社](https://minakanushi.com/shaji/Shrine/1287sakaijinja.html) | さかいじんじゃ | 大津市下阪本 |
+| [両社神社](https://minakanushi.com/shaji/Shrine/1288ryoshajinja.html) | りょうしゃじんじゃ | 大津市下阪本 |
+| [八坂神社](https://minakanushi.com/shaji/Shrine/2121yasakajinja.html) | やさかじんじゃ | 大津市月輪 |
+| [若松神社](https://minakanushi.com/shaji/Shrine/2124wakamatsujinja.html) | わかまつじんじゃ | 大津市大江 |
+| [御霊神社](https://minakanushi.com/shaji/Shrine/2125goryojinja.html) | ごりょうじんじゃ | 大津市大江 |
+
+神社庁原所在地は町域までのため、対応する原全町域を確認して読みを採用し、記事の地番を原住所に追加していません。鳥居川町と大江の御霊神社、杉浦町と逢坂の若宮八幡神社は別施設です。同市・同名でも町域が対応しない21登録は保留し、樹下神社の北小松の記事から山中町への読みの流用も行っていません。下部の巡拝一覧を主対象の住所や全文かなと混同していません。
+
+トップ・地域索引・個別本文の確認範囲では明示的な転用禁止は確認されませんでしたが、Copyright表示は包括転載許諾とは扱っていません。神社自身・神社庁・行政の発音認定ではなく、名称・明示全文かな・所在地・出典と採字判断の限定事実だけを保存します。写真・取得全本文・キャッシュ・連絡先は収録せず、robotsと2秒以上の取得間隔を守っています。今回の20主記事の審査は、全国47都道府県やサイト全記事の検証完了を意味しません。
+
+粟津神社（大津市中庄）は、神社庁の部分読み「アワヅ」と記事の全文読み「あわつじんじゃ」に相違があるため保留しています。
+
 ## 高知KUTフィールドDBの公開CSVの追加照合
 
 [大学ドメインの運営説明](https://field-db.kochi-tech.ac.jp/サイトについて)と[実データ一覧](https://sites.google.com/view/kochi-gis/データライブラリ/歴史)の本文を確認しました。大学のフィールドDBに市民調査団などが投稿した編集データとして扱い、県や神社庁による原読みの認証とはしません。実掲載リンクにあるDriveファイルを接続ツールのメタデータ・元ファイル取得で同定し、返されたファイル参照から元CSVのバイトを保存してhashを計算しました。認証URL・トークン、元CSV全体は正本に保存していません。
