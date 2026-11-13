@@ -26,10 +26,10 @@
 **Files:** data/locations.json,data/reading_research.json,data/manifest.json,data/source_catalog.json,docs/SOURCES.md.
 **Interfaces:** Task1補完型で実案件6328164を検証。原詳細/hash/XML/市本殿欄/登記全月次と8日次を再点検する。
 
-- [ ] 原実code/印字/hash/郵便番号、同じ本殿の1603/1724/1845年と構造を市資料と照合。全月次206383/日次19178を再照合。Expected: 同名同郵便番号と登録全地番の存続法人一意、関連イベント0。
-- [ ] 個別所在地補完と原全文かなだけ採用し旧研究行を履歴へ保存。Expected: 最新main適格+1/-0、全10868 ID/全旧判断保持。
-- [ ] 全unittest/validate/6形式対象行自動検査、diffcheck。Expected: 全成功、errors0。実IME取込は未確認。
-- [ ] 日本語採用コミット。
+- [x] 原実code/印字/hash/郵便番号、同じ本殿の1603/1724/1845年と構造を市資料と照合。全月次206383/日次19178を再照合。Expected: 同名同郵便番号と登録全地番の存続法人一意、関連イベント0。
+- [x] 個別所在地補完と原全文かなだけ採用し旧研究行を履歴へ保存。Expected: 最新main適格+1/-0、全10868 ID/全旧判断保持。
+- [x] 全unittest/validate/6形式対象行自動検査、diffcheck。Expected: 全成功、errors0。実IME取込は未確認。
+- [x] 日本語採用コミット。
 
 ## 最終統合
 
