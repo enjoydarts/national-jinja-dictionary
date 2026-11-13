@@ -49075,6 +49075,86 @@
       ],
       "status": "verified"
     },
+    "2ba7e7af-5ebe-5876-8b02-7fdab79b401c": {
+      "changes": {
+        "reading": "わしじんじゃ"
+      },
+      "expected_source_hash": "ffef7c06a3fcb72efbb3fdfc2c61c73d574b7a0272a52b761da32720d3658d31",
+      "facility_id": "b0008bf7-0b10-5635-89d1-505ddb1a5214",
+      "identity_match": "原神社庁の同名・東松山市/町域/全地番と、資料内市名コンテキスト+原印刷所在地が一致。市民大学資料の読みとして採用し行政公認とは扱わない。",
+      "original": {
+        "address": "東松山市古凍499",
+        "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8957/",
+        "name_raw": "鷲神社",
+        "reading_raw": ""
+      },
+      "reason": "同一資料の明示東松山市scopeと表の正式名/独立全文ルビ/町域・全地番を原画像で個別照合。市名を印刷住所や行抜粋へ追加しない。",
+      "references": [
+        {
+          "address_raw": "古凍 499",
+          "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+          "checked_at": "2026-11-13T09:11:44.179439+00:00",
+          "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+          "derived_comparison_address": "東松山市古凍499",
+          "document_address_context": {
+            "checked_at": "2026-11-13T09:11:44.179439+00:00",
+            "excerpt": "テーマ「東松山市の神社」を確認",
+            "kind": "same_document_explicit_municipality",
+            "locator": "PDF index2、(3)活動記録No.3のテーマ欄。",
+            "municipality_raw": "東松山市",
+            "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+            "record_number": 40,
+            "scope_raw": "東松山市の神社",
+            "source_page_index": 2,
+            "table_heading_excerpt": "２ 東松山の神社一覧表（50 音順）",
+            "table_heading_locator": "PDF index3、２ 東松山の神社一覧表の表見出し。index4は同表の続き。",
+            "table_heading_page_index": 3,
+            "table_heading_raw": "東松山の神社一覧表",
+            "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf"
+          },
+          "excerpt": "鷲神社 / わしじんじゃ / 古凍 499",
+          "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+          "locator": "PDF index4、一覧カード番号40の社名・独立全文ルビ・印刷所在地。",
+          "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+          "name_raw": "鷲神社",
+          "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+          "pdf_pages": 10,
+          "reading_raw": "わしじんじゃ",
+          "reading_scope": "full_name",
+          "rights_reference": {
+            "fetched_at": "2026-11-13T09:10:20.577624+00:00",
+            "observation": "公式ホームページ作成主体の東松山市役所自己表示と著作権節本文を確認。私的複製/引用など法定例外と出典明示を要求し、一般再配布許諾ではない。個別の最小事実欄と出典位置のみ保存し、全文/図表全体/写真/個人情報は収録しない。",
+            "page_hash": "8252362dffe52532153cee76bd4f5eb632e7fc8c885d045f2fb1265a71bbedc9",
+            "title": "東松山市サイトポリシー",
+            "url": "https://www.city.higashimatsuyama.lg.jp/site/about/"
+          },
+          "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+          "source_card_number": 40,
+          "source_kind": "municipality_hosted_citizen_university_report",
+          "source_page_index": 4,
+          "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+          "table_heading_raw": "東松山の神社一覧表",
+          "title": "東松山の神社 41社を巡って",
+          "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+          "visual_review": {
+            "method": "保存同hash PDFをPDFKitで描画した原画像をview_imageで目視。個別行と、別ページの共通市名/表見出しを区別。OCRや推定かなで補正しない。",
+            "rendered_page_sha256": {
+              "1": "082d9c9e9ddc4211ff04acd06bec25ca47a82cdc101e1c47c5b8a371bd952e7d",
+              "2": "f8aa9197e1a724b0dc7b945da51f3c85882b717d779445cda5d2b65c2680ba87",
+              "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+              "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+            },
+            "reviewed_page_indices": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        }
+      ],
+      "status": "verified"
+    },
     "2bbbf0aa-2571-541d-a770-e36250dad1fb": {
       "changes": {
         "reading": "ちしろ"
@@ -60938,6 +61018,86 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "37_kagawa_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "36597137-a149-5295-a0f8-90a498d6a0f0": {
+      "changes": {
+        "reading": "はちまんじんじゃ"
+      },
+      "expected_source_hash": "30d0f9afec5d131e7d44ac96ea81556eda684659afa62887b08709f796a60807",
+      "facility_id": "a608061f-5db5-56ea-ba20-318d0955f764",
+      "identity_match": "原神社庁の同名・東松山市/町域/全地番と、資料内市名コンテキスト+原印刷所在地が一致。市民大学資料の読みとして採用し行政公認とは扱わない。",
+      "original": {
+        "address": "東松山市上野本1812",
+        "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8959/",
+        "name_raw": "八幡神社",
+        "reading_raw": ""
+      },
+      "reason": "同一資料の明示東松山市scopeと表の正式名/独立全文ルビ/町域・全地番を原画像で個別照合。市名を印刷住所や行抜粋へ追加しない。",
+      "references": [
+        {
+          "address_raw": "上野本 1812",
+          "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+          "checked_at": "2026-11-13T09:11:44.179439+00:00",
+          "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+          "derived_comparison_address": "東松山市上野本1812",
+          "document_address_context": {
+            "checked_at": "2026-11-13T09:11:44.179439+00:00",
+            "excerpt": "テーマ「東松山市の神社」を確認",
+            "kind": "same_document_explicit_municipality",
+            "locator": "PDF index2、(3)活動記録No.3のテーマ欄。",
+            "municipality_raw": "東松山市",
+            "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+            "record_number": 28,
+            "scope_raw": "東松山市の神社",
+            "source_page_index": 2,
+            "table_heading_excerpt": "２ 東松山の神社一覧表（50 音順）",
+            "table_heading_locator": "PDF index3、２ 東松山の神社一覧表の表見出し。index4は同表の続き。",
+            "table_heading_page_index": 3,
+            "table_heading_raw": "東松山の神社一覧表",
+            "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf"
+          },
+          "excerpt": "八幡神社 / はちまんじんじゃ / 上野本 1812",
+          "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+          "locator": "PDF index4、一覧カード番号28の社名・独立全文ルビ・印刷所在地。",
+          "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+          "name_raw": "八幡神社",
+          "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+          "pdf_pages": 10,
+          "reading_raw": "はちまんじんじゃ",
+          "reading_scope": "full_name",
+          "rights_reference": {
+            "fetched_at": "2026-11-13T09:10:20.577624+00:00",
+            "observation": "公式ホームページ作成主体の東松山市役所自己表示と著作権節本文を確認。私的複製/引用など法定例外と出典明示を要求し、一般再配布許諾ではない。個別の最小事実欄と出典位置のみ保存し、全文/図表全体/写真/個人情報は収録しない。",
+            "page_hash": "8252362dffe52532153cee76bd4f5eb632e7fc8c885d045f2fb1265a71bbedc9",
+            "title": "東松山市サイトポリシー",
+            "url": "https://www.city.higashimatsuyama.lg.jp/site/about/"
+          },
+          "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+          "source_card_number": 28,
+          "source_kind": "municipality_hosted_citizen_university_report",
+          "source_page_index": 4,
+          "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+          "table_heading_raw": "東松山の神社一覧表",
+          "title": "東松山の神社 41社を巡って",
+          "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+          "visual_review": {
+            "method": "保存同hash PDFをPDFKitで描画した原画像をview_imageで目視。個別行と、別ページの共通市名/表見出しを区別。OCRや推定かなで補正しない。",
+            "rendered_page_sha256": {
+              "1": "082d9c9e9ddc4211ff04acd06bec25ca47a82cdc101e1c47c5b8a371bd952e7d",
+              "2": "f8aa9197e1a724b0dc7b945da51f3c85882b717d779445cda5d2b65c2680ba87",
+              "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+              "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+            },
+            "reviewed_page_indices": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         }
       ],
       "status": "verified"
@@ -142366,6 +142526,86 @@
           "title": "平神社 | 島根県神社庁",
           "url": "https://www.shimane-jinjacho.or.jp/okinoshima/12f30a014155c918c0a67909dad2b157385caeb0.html",
           "verification_method": "mechanical exact formal name, immediately following literal full-kana reading, unique rendered location/code; correction_problems name/address binding"
+        }
+      ],
+      "status": "verified"
+    },
+    "7e8818e6-5f3d-57fb-a73e-c3d4ba9b09c1": {
+      "changes": {
+        "reading": "たかさかじんじゃ"
+      },
+      "expected_source_hash": "b408feedd1e8760becc9d7d27f1d9ab3cc4bd512721a8c2bb683a1ae5e56497e",
+      "facility_id": "eb8b3ede-4c84-5b59-9652-4e648a01f348",
+      "identity_match": "原神社庁の同名・東松山市/町域/全地番と、資料内市名コンテキスト+原印刷所在地が一致。市民大学資料の読みとして採用し行政公認とは扱わない。",
+      "original": {
+        "address": "東松山市高坂1061",
+        "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8956/",
+        "name_raw": "高坂神社",
+        "reading_raw": ""
+      },
+      "reason": "同一資料の明示東松山市scopeと表の正式名/独立全文ルビ/町域・全地番を原画像で個別照合。市名を印刷住所や行抜粋へ追加しない。",
+      "references": [
+        {
+          "address_raw": "高坂 1061",
+          "authority_scope": "原表紙・序文は市民大学の班別課題研究。行政・神社庁が読みを公的認定した台帳ではない。",
+          "checked_at": "2026-11-13T09:11:44.179439+00:00",
+          "derived_address_processing": "比較用の市名は資料の明示した市内調査scopeから解釈して付けた値。個別行に東松山市が印刷されたとの引用は作らず、印刷所在地address_rawを別保持する。",
+          "derived_comparison_address": "東松山市高坂1061",
+          "document_address_context": {
+            "checked_at": "2026-11-13T09:11:44.179439+00:00",
+            "excerpt": "テーマ「東松山市の神社」を確認",
+            "kind": "same_document_explicit_municipality",
+            "locator": "PDF index2、(3)活動記録No.3のテーマ欄。",
+            "municipality_raw": "東松山市",
+            "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+            "record_number": 18,
+            "scope_raw": "東松山市の神社",
+            "source_page_index": 2,
+            "table_heading_excerpt": "２ 東松山の神社一覧表（50 音順）",
+            "table_heading_locator": "PDF index3、２ 東松山の神社一覧表の表見出し。index4は同表の続き。",
+            "table_heading_page_index": 3,
+            "table_heading_raw": "東松山の神社一覧表",
+            "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf"
+          },
+          "excerpt": "高坂神社 / たかさかじんじゃ / 高坂 1061",
+          "fetched_at": "2026-11-13T08:38:57.022008+00:00",
+          "locator": "PDF index3、一覧カード番号18の社名・独立全文ルビ・印刷所在地。",
+          "municipal_scope_observation": "PDF表題は東松山、序文には東松山市及び市内にある41神社を対象とする旨が印刷される。個別カードの所在地は町域・地番だけで市名を省略。",
+          "name_raw": "高坂神社",
+          "page_hash": "13c1b9dcd2852fe5d5048f5360dbb3ff61eca5802fc57a2669c4cd812b39656c",
+          "pdf_pages": 10,
+          "reading_raw": "たかさかじんじゃ",
+          "reading_scope": "full_name",
+          "rights_reference": {
+            "fetched_at": "2026-11-13T09:10:20.577624+00:00",
+            "observation": "公式ホームページ作成主体の東松山市役所自己表示と著作権節本文を確認。私的複製/引用など法定例外と出典明示を要求し、一般再配布許諾ではない。個別の最小事実欄と出典位置のみ保存し、全文/図表全体/写真/個人情報は収録しない。",
+            "page_hash": "8252362dffe52532153cee76bd4f5eb632e7fc8c885d045f2fb1265a71bbedc9",
+            "title": "東松山市サイトポリシー",
+            "url": "https://www.city.higashimatsuyama.lg.jp/site/about/"
+          },
+          "rights_scope": "目視した対象3カードの必要な事実欄と出典位置のみを記録。表全体・写真・PDF・個人の氏名・連絡先を収録しない。",
+          "source_card_number": 18,
+          "source_kind": "municipality_hosted_citizen_university_report",
+          "source_page_index": 3,
+          "source_publisher": "きらめき市民大学19期 国際・文化学部A班（東松山市が公開）",
+          "table_heading_raw": "東松山の神社一覧表",
+          "title": "東松山の神社 41社を巡って",
+          "url": "https://www.city.higashimatsuyama.lg.jp/uploaded/attachment/9768.pdf",
+          "visual_review": {
+            "method": "保存同hash PDFをPDFKitで描画した原画像をview_imageで目視。個別行と、別ページの共通市名/表見出しを区別。OCRや推定かなで補正しない。",
+            "rendered_page_sha256": {
+              "1": "082d9c9e9ddc4211ff04acd06bec25ca47a82cdc101e1c47c5b8a371bd952e7d",
+              "2": "f8aa9197e1a724b0dc7b945da51f3c85882b717d779445cda5d2b65c2680ba87",
+              "3": "097aa147a4a3773f230a587e3956905f17db45bd5c3840e5e72d743cbfe54d13",
+              "4": "ff7e6b49f5b811c32db0895d4998b3030d7d9bad86ac4930664a19502fd5a3fe"
+            },
+            "reviewed_page_indices": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
         }
       ],
       "status": "verified"
