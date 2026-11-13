@@ -34845,6 +34845,73 @@
       ],
       "status": "verified"
     },
+    "1d3049e7-5848-5643-86a2-ce0e844dc359": {
+      "changes": {
+        "reading": "やりしかじんじゃ"
+      },
+      "expected_source_hash": "92acc640b641a0546762f062c79ba74d4a40d8137d487f586c3038449826017e",
+      "facility_id": "46d01b1c-4fb0-560d-a822-365382fc4d25",
+      "identity_match": "同じ記事の独立正式名h2に全文かな、直後pに全地番が明示される。記事内の県市省略明記を比較時だけ適用し、原字の町域と全数値地番が原正本へ対応。住所中の括弧かなは原値/Unicode区間を保存し比較時だけ除き、神社名読みに流用しない。 原名/原空かな/全原所在地/ID/hashと既存判断を保持し、同名他施設へ流用しない。",
+      "original": {
+        "address": "対馬市豊玉町鑓川290番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/tsushima.html",
+        "name_raw": "屋利止加神社",
+        "reading_raw": ""
+      },
+      "reason": "対馬個人調査記事の独立社名全文かな・直後の全地番・必要な場合の明示県市省略を照合して読み補完。",
+      "references": [
+        {
+          "address_element_index": 19,
+          "address_kana_annotation": {
+            "end": 17,
+            "raw": "（とよたままちやりかわ）",
+            "start": 5
+          },
+          "address_paragraph_raw": "豊玉町鑓川（とよたままちやりかわ）290　>> Googleマップ",
+          "address_raw": "豊玉町鑓川（とよたままちやりかわ）290",
+          "address_tag": "p",
+          "article_address_context": {
+            "body_elements": 67,
+            "body_locator": "#mainEntity > div.clearfix",
+            "checked_at": "2026-11-13T13:45:49.480036+00:00",
+            "declaration_raw": "（以下、長崎県対馬市を省略）",
+            "individual_identity_review": "literal_heading_and_full_parcel_no_identity_hold",
+            "kind": "same_article_explicit_omitted_municipality",
+            "locator": "同記事本文の直接子p要素4の省略明記。対象h2要素18より前。",
+            "municipality_raw": "対馬市",
+            "page_hash": "8a0920fcdba02944f6feebc8b35f3422a847ab69cac167d6b7c5efeffb419c89",
+            "prefecture_raw": "長崎県",
+            "scope_element_index": 4,
+            "scope_paragraph_raw": "西泊砲台・・・長崎県対馬市上対馬町富ヶ浦（以下、長崎県対馬市を省略）にある昭和期の砲台跡。詳しくはブログ「葛藤と自問自答と西泊砲台・竹崎砲台について」（2025/2/28）",
+            "scope_tag": "p",
+            "structure_kind": "direct_article_body_children",
+            "url": "https://kacchell-tsushima.net/archives/9588"
+          },
+          "body_elements": 67,
+          "body_locator": "#mainEntity > div.clearfix",
+          "checked_at": "2026-11-13T13:45:49.480036+00:00",
+          "excerpt": "屋利止加神社（やりしかじんじゃ）\n豊玉町鑓川（とよたままちやりかわ）290　>> Googleマップ",
+          "excerpt_processing": "独立全文かな付き正式名h2と直後の所在地pをそのまま改行で区切って転記。省略県市を印刷住所へ付け足した引用にはしない。",
+          "fetched_at": "2026-11-13T13:34:57.281949+00:00",
+          "heading_element_index": 18,
+          "heading_raw": "屋利止加神社（やりしかじんじゃ）",
+          "heading_tag": "h2",
+          "locator": "記事本文の直接子要素18のh2と直後19のp（0起算）。別記事カード・目次は含めない。",
+          "mime_type": "text/html",
+          "name_raw": "屋利止加神社",
+          "page_hash": "8a0920fcdba02944f6feebc8b35f3422a847ab69cac167d6b7c5efeffb419c89",
+          "reading_raw": "やりしかじんじゃ",
+          "reading_scope": "full_name",
+          "rights_scope": "個人調査サイト。点検範囲で標準Copyrightを確認し包括転載許諾とは扱わない。名称/独立全文かな/所在地/明示省略宣言/出典位置の最小観測だけ保存し、全HTML/写真/地図/長い沿革/個人情報は収録しない。",
+          "scope_element_index": 4,
+          "source_kind": "independent_secondary_reference",
+          "source_publisher": "エヌの世界（個人調査サイト）",
+          "title": "田崎亀次の傑作を探して ～対馬の狛犬（略）その6～",
+          "url": "https://kacchell-tsushima.net/archives/9588"
+        }
+      ],
+      "status": "verified"
+    },
     "1d482907-0ab1-5f13-a7fb-eb8bb2605244": {
       "changes": {
         "reading": "かしまじんじゃ"
@@ -83466,6 +83533,50 @@
       ],
       "status": "verified"
     },
+    "4903db6b-8fe0-5463-87ac-c6eb5cd70914": {
+      "changes": {
+        "reading": "つわばるじんじゃ"
+      },
+      "expected_source_hash": "db1216868f7606f5eec3d36f149bc6240cb4582eaf5e4fd28fb6943f86821c33",
+      "facility_id": "284de5dd-72cb-5dd9-ae1d-17e6fc0a5a6a",
+      "identity_match": "同じ記事の独立正式名h2に全文かな、直後pに全地番が明示される。同欄に県市を含む全住所が印刷され原正本へ対応。 原名/原空かな/全原所在地/ID/hashと既存判断を保持し、同名他施設へ流用しない。",
+      "original": {
+        "address": "対馬市上対馬町津和字津和原736番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/tsushima.html",
+        "name_raw": "津和原神社",
+        "reading_raw": ""
+      },
+      "reason": "対馬個人調査記事の独立社名全文かな・直後の全地番・必要な場合の明示県市省略を照合して読み補完。",
+      "references": [
+        {
+          "address_element_index": 7,
+          "address_paragraph_raw": "長崎県対馬市上対馬町津和字津和原736番地　>>　Googleマップ※以下、長崎県対馬市を省略",
+          "address_raw": "長崎県対馬市上対馬町津和字津和原736番地",
+          "address_tag": "p",
+          "body_elements": 88,
+          "body_locator": "#mainEntity > div.clearfix",
+          "checked_at": "2026-11-13T13:45:49.480036+00:00",
+          "excerpt": "津和原神社（つわばるじんじゃ）\n長崎県対馬市上対馬町津和字津和原736番地　>>　Googleマップ※以下、長崎県対馬市を省略",
+          "excerpt_processing": "独立全文かな付き正式名h2と直後の所在地pをそのまま改行で区切って転記。省略県市を印刷住所へ付け足した引用にはしない。",
+          "fetched_at": "2026-11-13T13:34:55.159599+00:00",
+          "heading_element_index": 6,
+          "heading_raw": "津和原神社（つわばるじんじゃ）",
+          "heading_tag": "h2",
+          "locator": "記事本文の直接子要素6のh2と直後7のp（0起算）。別記事カード・目次は含めない。",
+          "mime_type": "text/html",
+          "name_raw": "津和原神社",
+          "page_hash": "dc2d727f0f4b311533b08c3598f7b38ae5ad8f1affcbadf55f74faecb5f3b4da",
+          "reading_raw": "つわばるじんじゃ",
+          "reading_scope": "full_name",
+          "rights_scope": "個人調査サイト。点検範囲で標準Copyrightを確認し包括転載許諾とは扱わない。名称/独立全文かな/所在地/明示省略宣言/出典位置の最小観測だけ保存し、全HTML/写真/地図/長い沿革/個人情報は収録しない。",
+          "source_kind": "independent_secondary_reference",
+          "source_publisher": "エヌの世界（個人調査サイト）",
+          "title": "田崎亀次の狛犬（中期）発見！と不思議なペアの狛犬 ～対馬の狛犬（略）その７～",
+          "url": "https://kacchell-tsushima.net/archives/9668"
+        }
+      ],
+      "status": "verified"
+    },
     "490ece07-addc-5ca0-b331-fda197d9197f": {
       "changes": {
         "reading": "のぶやまじんじゃ"
@@ -85394,6 +85505,69 @@
           "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
           "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
           "zip_member": "25_shiga_all_20261030.csv"
+        }
+      ],
+      "status": "verified"
+    },
+    "4ad2cacd-a331-54de-82c5-703eae467dc5": {
+      "changes": {
+        "reading": "てんじんたくづだまじんじゃ"
+      },
+      "expected_source_hash": "85b957ffd38aa7a1347ee06b08722bae4aacf354f32f44c0105121d30718fa5e",
+      "facility_id": "b182b50c-3b5f-5772-820c-2c40cc5a726f",
+      "identity_match": "同じ記事の独立正式名h2に全文かな、直後pに全地番が明示される。記事内の県市省略明記を比較時だけ適用し、原字の町域と全数値地番が原正本へ対応。住所中の括弧かなは原値/Unicode区間を保存し比較時だけ除き、神社名読みに流用しない。 原名/原空かな/全原所在地/ID/hashと既存判断を保持し、同名他施設へ流用しない。",
+      "original": {
+        "address": "対馬市上対馬町富浦字在所104番地",
+        "listing_url": "https://nagasaki-jinjacho.or.jp/tsushima.html",
+        "name_raw": "天神多久頭魂神社",
+        "reading_raw": ""
+      },
+      "reason": "対馬個人調査記事の独立社名全文かな・直後の全地番・必要な場合の明示県市省略を照合して読み補完。",
+      "references": [
+        {
+          "address_element_index": 16,
+          "address_kana_annotation": null,
+          "address_paragraph_raw": "上対馬町富浦字在所104番地　>>　Googleマップ",
+          "address_raw": "上対馬町富浦字在所104番地",
+          "address_tag": "p",
+          "article_address_context": {
+            "body_elements": 88,
+            "body_locator": "#mainEntity > div.clearfix",
+            "checked_at": "2026-11-13T13:45:49.480036+00:00",
+            "declaration_raw": "※以下、長崎県対馬市を省略",
+            "individual_identity_review": "literal_heading_and_full_parcel_no_identity_hold",
+            "kind": "same_article_explicit_omitted_municipality",
+            "locator": "同記事本文の直接子p要素7の省略明記。対象h2要素15より前。",
+            "municipality_raw": "対馬市",
+            "page_hash": "dc2d727f0f4b311533b08c3598f7b38ae5ad8f1affcbadf55f74faecb5f3b4da",
+            "prefecture_raw": "長崎県",
+            "scope_element_index": 7,
+            "scope_paragraph_raw": "長崎県対馬市上対馬町津和字津和原736番地　>>　Googleマップ※以下、長崎県対馬市を省略",
+            "scope_tag": "p",
+            "structure_kind": "direct_article_body_children",
+            "url": "https://kacchell-tsushima.net/archives/9668"
+          },
+          "body_elements": 88,
+          "body_locator": "#mainEntity > div.clearfix",
+          "checked_at": "2026-11-13T13:45:49.480036+00:00",
+          "excerpt": "天神多久頭魂神社（てんじんたくづだまじんじゃ）\n上対馬町富浦字在所104番地　>>　Googleマップ",
+          "excerpt_processing": "独立全文かな付き正式名h2と直後の所在地pをそのまま改行で区切って転記。省略県市を印刷住所へ付け足した引用にはしない。",
+          "fetched_at": "2026-11-13T13:34:55.159599+00:00",
+          "heading_element_index": 15,
+          "heading_raw": "天神多久頭魂神社（てんじんたくづだまじんじゃ）",
+          "heading_tag": "h2",
+          "locator": "記事本文の直接子要素15のh2と直後16のp（0起算）。別記事カード・目次は含めない。",
+          "mime_type": "text/html",
+          "name_raw": "天神多久頭魂神社",
+          "page_hash": "dc2d727f0f4b311533b08c3598f7b38ae5ad8f1affcbadf55f74faecb5f3b4da",
+          "reading_raw": "てんじんたくづだまじんじゃ",
+          "reading_scope": "full_name",
+          "rights_scope": "個人調査サイト。点検範囲で標準Copyrightを確認し包括転載許諾とは扱わない。名称/独立全文かな/所在地/明示省略宣言/出典位置の最小観測だけ保存し、全HTML/写真/地図/長い沿革/個人情報は収録しない。",
+          "scope_element_index": 7,
+          "source_kind": "independent_secondary_reference",
+          "source_publisher": "エヌの世界（個人調査サイト）",
+          "title": "田崎亀次の狛犬（中期）発見！と不思議なペアの狛犬 ～対馬の狛犬（略）その７～",
+          "url": "https://kacchell-tsushima.net/archives/9668"
         }
       ],
       "status": "verified"
