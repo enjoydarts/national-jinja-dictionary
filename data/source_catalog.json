@@ -3806,20 +3806,52 @@
           "scope": "保存済み2支部索引の実リンクの次の20詳細だけを照合。洗馬3411と6129.6130の正式名・独立全文かなを個別確認し原住所を保持。"
         },
         "primary_detail_research": {
+          "evidence_attempt": "nagano_recorded_fifteen_index_name_cell_link_coverage_1763_pending_20261113",
+          "evidence_data": "data/reading_research.json",
           "published_fields": [
             "formal name",
             "explicit full reading",
             "shrine location"
           ],
-          "remaining_scope": "complete linked-detail acquisition, compare unresolved name/location differences, and apply eligible primary readings",
+          "published_fields_scope": "固有名・鎮座地を確認し、全文読みは明示される場合だけを照合。多くの詳細では読み欠落又は原名/住所差が残る。",
+          "remaining_scope": "原15索引の社名セルで当初保留に対応した222実リンクは221本文取得・1件404で未取得、7補完・215保留。現保留1548登録には当該セルhrefなし。未解決の読み・同一性/所在地、索引外の支部/ナビ/他資料の調査は残る。",
           "separate_from_index_snapshot": true,
-          "status": "in_progress"
+          "status": "recorded_pending_name_cell_links_attempted_one_404"
         },
+        "primary_detail_research_status_history": [
+          {
+            "checked_at": "2026-11-13T13:26:30.009451+00:00",
+            "evidence_attempt": "nagano_recorded_fifteen_index_name_cell_link_coverage_1763_pending_20261113",
+            "previous": {
+              "published_fields": [
+                "formal name",
+                "explicit full reading",
+                "shrine location"
+              ],
+              "remaining_scope": "complete linked-detail acquisition, compare unresolved name/location differences, and apply eligible primary readings",
+              "separate_from_index_snapshot": true,
+              "status": "in_progress"
+            }
+          }
+        ],
         "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
         "record_fetched_at_range": [
           "2026-11-08T14:28:00.853703+00:00",
           "2026-11-08T14:31:22.207638+00:00"
         ],
+        "recorded_name_cell_link_coverage_audit_20261113": {
+          "additional_unrecognized_name_cell_urls": 0,
+          "checked_at": "2026-11-13T13:26:30.009451+00:00",
+          "current_linked_pending_entries": 215,
+          "current_pending_without_name_cell_href": 1548,
+          "evidence_attempt": "nagano_recorded_fifteen_index_name_cell_link_coverage_1763_pending_20261113",
+          "indexes_inspected": 15,
+          "new_network_requests": 0,
+          "new_verified_entries": 0,
+          "original_hash_matches": 15,
+          "scope": "原取得15索引の社名セルhrefと前5調査の集合突合だけ。県全件や全公開リンク・全資料の完了ではない。",
+          "screened_pending_entries": 1763
+        },
         "remaining_municipal_catalogues_and_issue_inventory_20261113": {
           "checked_at": "2026-11-13T02:04:54.037303+00:00",
           "evidence_data": "data/reading_research.json",
