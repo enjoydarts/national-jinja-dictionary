@@ -52,6 +52,8 @@ def review_problems(review, facility, entry, source=None):
     outputs=review.get('outputs')
     if not isinstance(outputs,list) or not outputs or any(not isinstance(o,dict) for o in outputs):
         return problems+['missing approved output records']
+    if any(not isinstance(o.get(k),str) for o in outputs for k in ('surface','reading')):
+        return problems+['invalid approved output field types']
     if not review.get('split') and len(outputs)!=1:problems.append('multiple outputs require explicit split approval')
     if len({(o.get('surface'),o.get('reading')) for o in outputs})!=len(outputs):problems.append('duplicate approved outputs')
     refs=review.get('references',[])

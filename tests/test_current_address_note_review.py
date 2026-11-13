@@ -68,6 +68,8 @@ class CurrentAddressNoteReviewTest(unittest.TestCase):
             lambda v:v['references'][0].update(evidence_role='agency_detail'),
             lambda v:v['references'][0].update(page_hash='f'*64),
             lambda v:v['references'][0].update(native_href_raw='detail.php?code=999'),
+            lambda v:v['references'][0].update(native_href_raw='//['),
+            lambda v:v['references'][0].update(native_href_raw='https://['),
             lambda v:v['references'][0].update(address_raw='宮城県架空市架空町3-4-1'),
             lambda v:v['references'][1].update(url='https://other.example.invalid/detail.php?code=123'),
             lambda v:v['references'][1].update(page_hash='f'*64),
@@ -90,6 +92,8 @@ class CurrentAddressNoteReviewTest(unittest.TestCase):
             lambda v:v['references'][2]['registry_state_proof'].update(active_matching_full_address_count=2),
             lambda v:v['references'][2]['registry_state_proof'].update(as_of='20261001'),
             lambda v:v['outputs'][0].update(reading='べつじんじゃ'),
+            lambda v:v['outputs'][0].update(surface=[]),
+            lambda v:v['outputs'][0].update(reading={}),
             lambda v:v['outputs'][0].update(surface='別名神社'),lambda v:v.update(split=True)]
         for i,change in enumerate(changes):
             with self.subTest(case=i):

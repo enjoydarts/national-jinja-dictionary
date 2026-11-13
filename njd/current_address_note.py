@@ -73,7 +73,8 @@ def current_address_note_problems(review,facility,entry):
     href=index.get('native_href_raw');sid=facility.get('native_source_id')
     if not isinstance(href,str) or not href or not isinstance(sid,str) or not re.fullmatch(r'[0-9]+',sid):
         return ['missing actual agency detail link and numeric identity']
-    target=urljoin(index['url'],href)
+    try:target=urljoin(index['url'],href)
+    except ValueError:return ['invalid agency detail link']
     if not _url(target):return ['invalid agency detail link']
     source_url=urlsplit(index['url']);detail_url=urlsplit(target)
     if ((source_url.scheme,source_url.netloc)!=(detail_url.scheme,detail_url.netloc)
