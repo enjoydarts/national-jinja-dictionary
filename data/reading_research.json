@@ -1,6 +1,6 @@
 {
   "canonical_overlay_hashes": {
-    "corrections.json": "0ccecfe2e35d9b5ca51a1d5bcfb14f8c2ee7da5b25a6da09b3a9be1455681953",
+    "corrections.json": "a0fbb3cfc79639a2a8c74338ddb516f786cf937ae950269965d0aebb30bcdd69",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
     "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
@@ -22964,18 +22964,27 @@
         "integration_main_commit": "789ffd3cddf4de1c32d49fb78d1f52a6ed16e715",
         "new_verified_entries": 0,
         "scope": "最新mainの他地域の調査・分類変更・補完を保持して貴船神社の所在地補完1登録と二子/西濱の保留根拠を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T09:00:52.739047+00:00",
+        "integrated_entry_ids": [
+          "eb02860f-8645-57a9-b297-190d98c43e2b"
+        ],
+        "integration_main_commit": "b2d0a17221164c95fd48c9fd8a0b5e83025f8010",
+        "new_verified_entries": 0,
+        "scope": "最新mainの他地域の調査・分類変更・補完を保持して貴船神社の所在地補完1登録と二子/西濱の保留根拠を統合。採用を重複計上しない。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T09:00:52.739047+00:00",
-      "integrated_entry_ids": [
-        "eb02860f-8645-57a9-b297-190d98c43e2b"
+      "checked_at": "2026-11-13T09:09:19.750914+00:00",
+      "entry_ids": [
+        "403b290c-e9e9-5446-b021-bc5a574949f3"
       ],
-      "integration_main_commit": "b2d0a17221164c95fd48c9fd8a0b5e83025f8010",
-      "new_verified_entries": 0,
-      "scope": "最新mainの他地域の調査・分類変更・補完を保持して貴船神社の所在地補完1登録と二子/西濱の保留根拠を統合。採用を重複計上しない。"
+      "new_verified_entries": 1,
+      "retained_pending_entries": 10526,
+      "scope": "高槻市稲荷神社1登録の神社庁実リンク詳細による全文読み補正。"
     },
-    "remaining_unfinished_entries": 10527,
+    "remaining_unfinished_entries": 10526,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -23075,6 +23084,7 @@
       "3e32a957-8939-5b38-8bea-8b5e2cada536",
       "3e876de1-588c-5883-9cd9-fdd50610600a",
       "40269885-37a5-53d8-9de4-996b1b4dd76d",
+      "403b290c-e9e9-5446-b021-bc5a574949f3",
       "409f307f-4474-515a-974d-61ecf611ac85",
       "41baf306-6021-5f36-9c03-5f87c032a781",
       "4597a712-1b8c-576e-9555-cd4c66c8abf6",
@@ -23322,7 +23332,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T09:00:52.739047+00:00",
+  "computed_at": "2026-11-13T09:09:19.750914+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -320246,6 +320256,173 @@
           "戸隠三社"
         ]
       }
+    },
+    {
+      "additional_unacquired_reference": {
+        "checked_at": "2026-11-13T09:09:19.750914+00:00",
+        "observation": "別の岩手保留案件で探索した市文化紹介の実URLはweb toolで404。本文未確認で検索抜粋から採用せず、既存TLS期限切れサイトへのアクセス回避も行わない。",
+        "status": "web_tool_reported_http_404",
+        "url": "https://www.city.morioka.iwate.jp/kankou/kankou/1037106/rekishi/1009476/1009482/1009487.html"
+      },
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T04:51:17.196108+00:00",
+              "daily_as_of": "20261111",
+              "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+              "evidence_attempt": "nta_manual_judgment_review_20261112",
+              "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+              "matched_active_corporate_numbers": [],
+              "monthly_snapshot": "20261030",
+              "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
+              "result": "no_unique_active_exact_name_full_address_identity",
+              "source_kind": "government_corporate_register",
+              "source_publisher": "国税庁",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-remainder",
+              "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+              "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
+              "related_actual_hrefs": [
+                "https://www.buccyake-kojiki.com/archives/1051162243.html"
+              ],
+              "result": "selected_articles_without_bound_main_subject_comparison",
+              "source_kind": "article_index",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "bounded_article_index_scope_recorded"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "checked_at": "2026-11-13T09:09:19.750914+00:00",
+              "evidence_attempt": "osaka_nasahara_index_actual_detail_link_full_reading_resolution_20261113",
+              "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+              "observation": "一覧の疑義ある原文をそのまま保持し、同じ神社庁の実リンク先の明示全文読みを採用。原名称・町域・別名・番号17の掲載行を照合。",
+              "reference": {
+                "address_raw": "高槻市奈佐原元町17-15",
+                "agency_detail_link": {
+                  "href_raw": "t27.html",
+                  "index_fetched_at": "2026-11-13T09:07:07.924483+00:00",
+                  "index_page_hash": "76958819faceba587325c04b79ed0c047195ced2c51cf9cafa37dfb512f70e42",
+                  "index_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
+                  "locator": "高槻市一覧の番号17・奈佐原元町・殿岡神社の行",
+                  "resolved_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/t27.html"
+                },
+                "checked_at": "2026-11-13T09:08:11.845534+00:00",
+                "excerpt": "稲荷神社（いなりじんじゃ）別名（殿岡神社） 鎮座地 〒569-1043 高槻市奈佐原元町17-15",
+                "fetched_at": "2026-11-13T09:07:09.994926+00:00",
+                "locator": "唯一h3の正式名と括弧内全文かな、鎮座地欄",
+                "name_raw": "稲荷神社",
+                "page_hash": "073fceff7875010e0d6dd022dab4182e448729da1c3ab7ab3f346ae8770e793d",
+                "reading_raw": "いなりじんじゃ",
+                "reading_scope": "full_name",
+                "rights_note": "末尾の画像複製禁止表示を確認。社名・明示全文かな・所在地の限定事実と出典のみ保存し、画像や全ページ本文は保存しない。一般のデータ再配布許諾が明示されたとはしない。",
+                "source_kind": "agency",
+                "source_publisher": "大阪府神社庁",
+                "source_scope_note": "神社庁掲載の神社本庁非加盟神社（単立）の紹介。加盟神社へ分類変更せず、施設公式サイトでもない。",
+                "title": "稲荷神社（別名 殿岡神社） | 大阪府神社庁",
+                "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/t27.html"
+              },
+              "status": "same_agency_index_actual_detail_link_full_reading_verified"
+            }
+          ],
+          "address": "高槻市奈佐原元町",
+          "agency_listing_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
+          "category": "judgment_required",
+          "entry_id": "403b290c-e9e9-5446-b021-bc5a574949f3",
+          "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+          "facility_id": "1946b500-863e-5f50-8858-27ec929106c5",
+          "listed_name": "稲荷神社",
+          "nta_result": "not checked for current source snapshot",
+          "prefecture": "大阪府",
+          "prefecture_code": "27",
+          "reading_raw": "いなりじんや",
+          "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "status": "unfinished",
+          "surface": "稲荷神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "osaka_nasahara_index_actual_detail_link_full_reading_resolution_20261113",
+      "checked_at": "2026-11-13T09:09:19.750914+00:00",
+      "correction_validation_problems": [],
+      "inspected_targets": 1,
+      "manual_resolved_entry_ids": [
+        "403b290c-e9e9-5446-b021-bc5a574949f3"
+      ],
+      "new_verified_entries": 1,
+      "observation": "一覧いなりじんやと詳細いなりじんじゃの差を確認し、同一の正式名・別名・町域と一覧実hrefで詳細を同定。神社本庁非加盟（単立）の記載を保持し、神社庁加盟へ変更しない。画像複製禁止を守り、写真・本文全体・キャッシュは収録しない。",
+      "references": [
+        {
+          "fetched_at": "2026-11-13T09:07:07.924483+00:00",
+          "key": "index",
+          "page_hash": "76958819faceba587325c04b79ed0c047195ced2c51cf9cafa37dfb512f70e42",
+          "status": "acquired",
+          "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html"
+        },
+        {
+          "fetched_at": "2026-11-13T09:07:09.994926+00:00",
+          "key": "detail",
+          "page_hash": "073fceff7875010e0d6dd022dab4182e448729da1c3ab7ab3f346ae8770e793d",
+          "status": "acquired",
+          "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/t27.html"
+        }
+      ],
+      "scope": "高槻市一覧の番号17と実リンク先詳細の1施設のみ。大阪府全神社又は全国全件の調査完了とはしない。",
+      "source_kind": "agency",
+      "source_publisher": "大阪府神社庁",
+      "status": "one_existing_malformed_reading_resolved_from_actual_agency_detail",
+      "superseded_correction_history": {
+        "403b290c-e9e9-5446-b021-bc5a574949f3": {
+          "changes": {
+            "reading": "いなりじんや"
+          },
+          "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
+          "facility_id": "1946b500-863e-5f50-8858-27ec929106c5",
+          "identity_match": {
+            "agency_address": "高槻市奈佐原元町",
+            "agency_name": "稲荷神社"
+          },
+          "original": {
+            "address": "高槻市奈佐原元町",
+            "listing_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
+            "name_raw": "稲荷神社",
+            "reading_raw": "いなりじんや"
+          },
+          "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "references": [
+            {
+              "address_raw": "高槻市奈佐原元町",
+              "checked_at": "2026-11-08T14:28:30.202995+00:00",
+              "excerpt": "17 稲荷神社 （いなりじんや） 殿岡神社 高槻市奈佐原元町",
+              "locator": "table tr[20]",
+              "name_raw": "稲荷神社",
+              "page_hash": "76958819faceba587325c04b79ed0c047195ced2c51cf9cafa37dfb512f70e42",
+              "reading_raw": "いなりじんや",
+              "source_kind": "agency",
+              "title": "大阪府神社庁 掲載読み原文（全文読みの確認未了）",
+              "url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html"
+            }
+          ],
+          "review_kind": "whole_reading_audit",
+          "status": "needs_review"
+        }
+      },
+      "verified_eligible_delta": [
+        "403b290c-e9e9-5446-b021-bc5a574949f3"
+      ]
     }
   ],
   "per_prefecture": {
@@ -320461,9 +320638,9 @@
       "categories": {
         "insufficient_evidence_in_inspected_sources": 0,
         "investigation_incomplete": 0,
-        "judgment_required": 1
+        "judgment_required": 0
       },
-      "unfinished_entries": 1
+      "unfinished_entries": 0
     },
     "28": {
       "categories": {
@@ -879261,62 +879438,6 @@
     {
       "additional_source_reviews": [
         {
-          "adopted": false,
-          "checked_at": "2026-11-12T04:51:17.196108+00:00",
-          "daily_as_of": "20261111",
-          "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
-          "evidence_attempt": "nta_manual_judgment_review_20261112",
-          "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
-          "matched_active_corporate_numbers": [],
-          "monthly_snapshot": "20261030",
-          "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
-          "result": "no_unique_active_exact_name_full_address_identity",
-          "source_kind": "government_corporate_register",
-          "source_publisher": "国税庁",
-          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-remainder",
-          "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
-          "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
-          "related_actual_hrefs": [
-            "https://www.buccyake-kojiki.com/archives/1051162243.html"
-          ],
-          "result": "selected_articles_without_bound_main_subject_comparison",
-          "source_kind": "article_index",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "bounded_article_index_scope_recorded"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "高槻市奈佐原元町",
-      "agency_listing_url": "https://www.osaka-jinjacho.jp/funai_jinja/dai2shibu/takatsuki-city/takatsuki.html",
-      "category": "judgment_required",
-      "entry_id": "403b290c-e9e9-5446-b021-bc5a574949f3",
-      "expected_source_hash": "d2376466507638b0b5bc5ce889008093539362b5dc280a4811fb115f4f6821bc",
-      "facility_id": "1946b500-863e-5f50-8858-27ec929106c5",
-      "listed_name": "稲荷神社",
-      "nta_result": "not checked for current source snapshot",
-      "prefecture": "大阪府",
-      "prefecture_code": "27",
-      "reading_raw": "いなりじんや",
-      "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
-      "status": "unfinished",
-      "surface": "稲荷神社",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
           "active_exact_name_full_address_matches": 0,
           "adopted": false,
           "checked_at": "2026-11-12T04:51:17.196108+00:00",
@@ -1237346,7 +1237467,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10527,
+    "retained_unresolved_entries": 10526,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1240450,9 +1240571,9 @@
     "categories": {
       "insufficient_evidence_in_inspected_sources": 10325,
       "investigation_incomplete": 0,
-      "judgment_required": 202
+      "judgment_required": 201
     },
     "distinct_surfaces": 4222,
-    "unfinished_entries": 10527
+    "unfinished_entries": 10526
   }
 }
