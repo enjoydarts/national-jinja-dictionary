@@ -10,6 +10,7 @@ from uuid import NAMESPACE_URL, uuid5
 from njd.corrections import _url, _reference_matches, discovery_only
 from njd.normalize import normalize_reading
 from njd.locations import raw_address
+from njd.address_layout import address_layout_problems,REASON as ADDRESS_LAYOUT_REASON
 
 
 def _plain(value):
@@ -19,6 +20,10 @@ def _plain(value):
 def review_problems(review, facility, entry, source=None):
     problems=[]
     if not isinstance(review,dict):return ['invalid human review']
+    layout_requested=review.get('review_kind')=='single_address_linebreak'
+    layout_issues=address_layout_problems(review,facility,entry) if layout_requested else []
+    problems.extend(layout_issues)
+    layout_valid=layout_requested and not layout_issues
     if review.get('confirmation') not in ('user_confirmation','source_review') or not review.get('case_id') or not review.get('reason'):
         problems.append('missing explicit human confirmation')
     try:datetime.fromisoformat(review.get('recorded_at',''))
@@ -30,7 +35,7 @@ def review_problems(review, facility, entry, source=None):
         problems.append('official agency listing authority remains unconfirmed')
     if entry.get('identity_review_required') or facility.get('review_reason'):
         problems.append('unresolved facility identity review')
-    if not _plain(facility.get('address')) or not facility.get('municipality'):
+    if (not _plain(facility.get('address')) and not layout_valid) or not facility.get('municipality'):
         problems.append('unresolved facility location')
     conflicts=facility.get('source_conflicts',[])
     if conflicts:
@@ -39,6 +44,7 @@ def review_problems(review, facility, entry, source=None):
     allowed_reasons={'','source name uses an external glyph; Unicode correction requires references',
         'control or layout characters in source name; explicit review required',
         'conflicting source rows for the same source identity'}
+    if layout_valid:allowed_reasons.add(ADDRESS_LAYOUT_REASON)
     if facility.get('status')!='verified' and facility.get('reason') not in allowed_reasons:
         problems.append('unresolved facility condition')
     outputs=review.get('outputs')
@@ -55,11 +61,14 @@ def review_problems(review, facility, entry, source=None):
         try:datetime.fromisoformat(ref.get('checked_at',''))
         except (ValueError,TypeError):problems.append('missing reference inspection date')
     if review.get('confirmation')=='source_review':
-        if not review.get('split') or any(o.get('basis')!='agency_component' for o in outputs):
+        if layout_requested:
+            if review.get('split') or any(o.get('basis')!='agency_selected' for o in outputs):
+                problems.append('layout source review only selects the unchanged agency reading')
+        elif not review.get('split') or any(o.get('basis')!='agency_component' for o in outputs):
             problems.append('source review only supports explicit agency component registrations')
         if review.get('excluded_name_prefix') or review.get('excluded_reading_prefix') or review.get('accepted_identity_differences'):
             problems.append('source component review cannot approve omissions or identity discrepancies')
-        if not any(r.get('source_kind')=='agency' and r.get('url')==facility['listing_url']
+        if not layout_requested and not any(r.get('source_kind')=='agency' and r.get('url')==facility['listing_url']
             and r.get('name_raw')==facility['name_raw'] and r.get('reading_raw')==entry['reading_raw']
             and r.get('address_raw')==facility['address']
             and all(value and re.sub(r'\s+','',value) in re.sub(r'\s+','',r.get('excerpt','')) for value in (facility['name_raw'],entry['reading_raw'],facility['address'])) for r in refs):
