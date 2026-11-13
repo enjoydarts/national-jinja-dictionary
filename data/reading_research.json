@@ -26247,13 +26247,19 @@
         "new_verified_entries": 0,
         "retained_pending_entries": 10320,
         "scope": "石狩市の公開2カテゴリ・4地図設定と利用規約を追加確認。参照先3表はrobots確認HTTP403で未取得。8保留の個別行照合を済ませたとは扱わない。"
+      },
+      {
+        "checked_at": "2026-11-13T13:46:39.416467+00:00",
+        "new_verified_entries": 0,
+        "retained_pending_entries": 10320,
+        "scope": "増毛町・安平町の8保留を2CSV77実データ行に限定照合し対象名の対応行0。深川市4保留は公開案内のみで表本文未照合。全資料・全保留の完了とは区別。"
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T13:46:39.416467+00:00",
+      "checked_at": "2026-11-13T13:51:59.030701+00:00",
       "new_verified_entries": 0,
       "retained_pending_entries": 10320,
-      "scope": "増毛町・安平町の8保留を2CSV77実データ行に限定照合し対象名の対応行0。深川市4保留は公開案内のみで表本文未照合。全資料・全保留の完了とは区別。"
+      "scope": "深川市4保留を避難場所CSV77名称行へ追加照合し対応行0。独立2サイトは本文規約の無断使用/転載制限を記録し記事未取得。全資料の完了ではない。"
     },
     "remaining_unfinished_entries": 10320,
     "resolved_entry_ids": [
@@ -26809,7 +26815,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T13:46:39.416467+00:00",
+  "computed_at": "2026-11-13T13:51:59.030701+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -401468,6 +401474,135 @@
           "verification": "既記録hashと/tmpの保存済み本文SHA-256を一致確認し、第1条、第2条、第6条を再点検。今回は規約をネットワーク再取得していない。"
         }
       ]
+    },
+    {
+      "acquisition_note": "HARPはClient(interval=60,timeout=20,retries=0)で取得。外部2サイトはinterval=2、robots遵守、再試行0で入口・運営説明・規約のみ取得し、対象神社記事へは進まず。検索結果は探索用で読みの確認根拠にしない。CSV取得後の一時スクリプト名csv.pyが標準csvを隠した解析エラーは改名で修正し、標準ライブラリの実パスを確認して同hash保存済み本文をoffline=Trueで解析。資料側の取得失敗・再HTTP取得とは区別。",
+      "attempt_id": "fukagawa_evacuation_csv_77_rows_four_targets_two_external_policy_stops_20261113",
+      "attribution": "出典：北海道 総合政策部次世代社会戦略局DX推進課「空知総合振興局管内の避難場所、避難所【北海道】」深川市CSV（本欄URL）、CC BY4.0。national-jinja-dictionaryが名称・全文かな・所在地列を原登録と比較し、その結果を要約して作成。",
+      "catalog_reference": {
+        "fetched_at": "2026-11-13T13:47:59.817425+00:00",
+        "page_hash": "0ff0acee10e391b3b5f2422b5a327045b600625f399c63bab46a7e2d49cadd73",
+        "url": "https://www.harp.lg.jp/opendata/dataset/search/?s%5Barea_id%5D=44"
+      },
+      "checked_at": "2026-11-13T13:51:59.030701+00:00",
+      "data_resources": 1,
+      "data_rows": 77,
+      "dataset_reference": {
+        "fetched_at": "2026-11-13T13:49:00.112192+00:00",
+        "page_hash": "9e968f5b102c648693249b590b2317a33744e7ff40f5b0c70a0f11384fb42aa8",
+        "publisher_body_verification": "本文の公表組織北海道・作成者部署・空知地域の標題と深川市資源名及び実ダウンロードhrefを確認。",
+        "url": "https://www.harp.lg.jp/opendata/dataset/1881.html"
+      },
+      "external_policy_stops": [
+        {
+          "home_reference": {
+            "fetched_at": "2026-11-13T13:49:01.966903+00:00",
+            "page_hash": "165a2dc7b001082b1f2d85e8e621895dfd0d18ffec4e60fc158575861bc4955d",
+            "url": "https://www.kitasorachi.com/"
+          },
+          "host": "www.kitasorachi.com",
+          "policy_observation": "本文で文章・画像・添付書類等の無断使用（転載・複製・配布等）を制限し、私的複製・引用等の法定例外は別と確認。辞書データ化の許諾確認はなく記事採用へ進まない。",
+          "policy_reference": {
+            "fetched_at": "2026-11-13T13:49:28.489430+00:00",
+            "page_hash": "8b941c4fb5248942d5124b910e32f3f25f4a2bd8e0e6ae67a1eaf30642e828d1",
+            "url": "https://www.kitasorachi.com/site/"
+          },
+          "publisher_reference": {
+            "fetched_at": "2026-11-13T13:49:30.663502+00:00",
+            "page_hash": "9cf3907cce50fe56fc485a7c9aed59e7b76bc90d67b4bcfc6d1c33d2ab672e63",
+            "url": "https://www.kitasorachi.com/kankokyokai/"
+          },
+          "source_kind": "tourism_association",
+          "source_publisher": "一般社団法人深川観光協会",
+          "status": "article_not_acquired_due_to_explicit_unpermitted_content_use_restriction",
+          "unacquired_article_urls": [
+            "https://www.kitasorachi.com/tour/751/"
+          ]
+        },
+        {
+          "home_reference": {
+            "fetched_at": "2026-11-13T13:49:04.162910+00:00",
+            "page_hash": "670350df41d6c0774527f52e84e78799ac497a76f69c1eb72bcef6d0281fe83c",
+            "url": "https://www.moiwa-orosi.com/"
+          },
+          "host": "www.moiwa-orosi.com",
+          "policy_observation": "プライバシーポリシーの著作権欄で記事・画像等の許可なき転載を禁止し、引用時のリンク・表示を別途定める。辞書への事実データ採用を引用の許可と同一視せず停止。",
+          "policy_reference": {
+            "fetched_at": "2026-11-13T13:50:26.800319+00:00",
+            "page_hash": "561fd4d8bde3d2d7db2618b47a605e36ceecd37f78e4d9d7cf2698f4b901970b",
+            "url": "https://www.moiwa-orosi.com/privacy_policy"
+          },
+          "publisher_reference": {
+            "fetched_at": "2026-11-13T13:49:30.772104+00:00",
+            "page_hash": "2abae59443208f96e47e7eb31b259bfb702be34adf3a1041c0e22759f930994b",
+            "url": "https://www.moiwa-orosi.com/about"
+          },
+          "source_kind": "personal_blog",
+          "source_publisher": "藻岩颪に豊河の流れ。（個人ブログ）",
+          "status": "article_not_acquired_due_to_explicit_unpermitted_republication_restriction",
+          "unacquired_article_urls": [
+            "https://www.moiwa-orosi.com/entry/2019/08/31/%E3%80%90%E5%BE%A1%E6%9C%B1%E5%8D%B0%E3%80%91%E6%B7%B1%E5%B7%9D%E5%B8%82%E7%B4%8D%E5%86%85_%E7%B4%8D%E5%86%85%E7%A5%9E%E7%A4%BE"
+          ]
+        }
+      ],
+      "matching_name_rows": [],
+      "named_rows": 77,
+      "new_verified_entries": 0,
+      "other_shrine_name_rows": [],
+      "prefecture_code": "01",
+      "privacy_and_storage": "CSV・HTML・規約本文・画像・キャッシュ・人物名・連絡先は収録せず、作成組織・資料標題・URL/hash・原登録ID・限定照合結果と取得停止判断のみを保存。",
+      "resource": {
+        "credit": "出典：北海道 総合政策部次世代社会戦略局DX推進課「空知総合振興局管内の避難場所、避難所【北海道】」深川市CSV（本欄URL）、CC BY4.0。national-jinja-dictionaryが名称・全文かな・所在地列を原登録と比較し、その結果を要約して作成。",
+        "data_rows": 77,
+        "encoding": "cp932",
+        "fetched_at": "2026-11-13T13:50:00.489500+00:00",
+        "fields_inspected": [
+          "名称",
+          "名称_カナ",
+          "住所"
+        ],
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "named_rows": 77,
+        "page_hash": "6662e1ae00d74c74b15bb5de1e91f52024d56641ee249ff1ad4df9a7e9805213",
+        "physical_rows": 78,
+        "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+        "title": "空知総合振興局管内の避難場所、避難所【北海道】 / 深川市CSV",
+        "url": "https://www.harp.lg.jp/opendata/dataset/1881/resource/4989/012289_%E6%B7%B1%E5%B7%9D%E5%B8%82_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+      },
+      "scope": "深川市4保留の選定避難場所CSV77行との名称探索。前回の公開案内のみという残範囲のうち当該1表を追加点検したもの。地域目録の他23資源、深川市の全資料・全独立記事、北海道/全国の全保留は未完了。",
+      "source_kind": "prefecture_open_data_and_external_policy_review",
+      "source_publisher": "北海道・一般社団法人深川観光協会・個人ブログ",
+      "status": "selected_evacuation_csv_compared_and_two_independent_article_policy_stops_recorded",
+      "target_bindings": [
+        {
+          "entry_id": "0ae4d024-b543-57e4-8d83-225c4e1801a2",
+          "expected_source_hash": "94bb3d0b6d5427040b6dc5ba674c25266c4ee0c4e549df871cfc11529fd78723"
+        },
+        {
+          "entry_id": "0d2e7f16-edf9-55cb-9774-91dbdb649b05",
+          "expected_source_hash": "5caeacfefab31b313f09c94fb75e6e24406cc4e4fd6f660b3ec938f8a18027d6"
+        },
+        {
+          "entry_id": "86b6bbcb-212a-5f15-89ea-07f3056109d4",
+          "expected_source_hash": "9390c335e9a2ff8e5349b73fcd60d9f4d7b1fe3540404a5a8bd49938b38ef57f"
+        },
+        {
+          "entry_id": "e10a96bc-0cf7-59cb-910a-c09b26b3d094",
+          "expected_source_hash": "6b2629548c07b84ecaf1f2e192e3f1272a2ccad27a838262f5d1f28eaf466d4e"
+        }
+      ],
+      "target_entries": 4,
+      "terms_reference": {
+        "fetched_at": "2026-11-12T02:37:23.258567+00:00",
+        "license": "CC-BY-4.0",
+        "locator": "第1条、第6条",
+        "page_hash": "f8ed6755d73ebd7147265cff4aac2cd0cef94ed2b203e31a46fec43b8896c118",
+        "robots_interval_seconds": 60,
+        "terms_summary": "サービス提供団体のデータはCC BY4.0、個別条件優先、第三者権利別。出所に作成者組織・リソース名・URLを表示。",
+        "url": "https://www.harp.lg.jp/opendata/terms.html",
+        "verification": "既記録hashと/tmpの保存済み本文SHA-256を一致確認し、第1条、第2条、第6条を再点検。今回は規約をネットワーク再取得していない。"
+      }
     }
   ],
   "per_prefecture": {
@@ -403955,6 +404090,35 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:51:59.030701+00:00",
+          "evidence_attempt": "fukagawa_evacuation_csv_77_rows_four_targets_two_external_policy_stops_20261113",
+          "expected_source_hash": "94bb3d0b6d5427040b6dc5ba674c25266c4ee0c4e549df871cfc11529fd78723",
+          "observation": "深川市の当該77名称行を原登録名の完全一致及びNFKC後の包含で探索し、対応行なし。神社・八幡・稲荷・境内の名称行もなし。地名や別施設のかなを流用せず、原名・読み・所在地・施設同一性・旧判断を保持。市の全資料に対象や読みがないとした判定ではない。",
+          "reference": {
+            "credit": "出典：北海道 総合政策部次世代社会戦略局DX推進課「空知総合振興局管内の避難場所、避難所【北海道】」深川市CSV（本欄URL）、CC BY4.0。national-jinja-dictionaryが名称・全文かな・所在地列を原登録と比較し、その結果を要約して作成。",
+            "data_rows": 77,
+            "encoding": "cp932",
+            "fetched_at": "2026-11-13T13:50:00.489500+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "named_rows": 77,
+            "page_hash": "6662e1ae00d74c74b15bb5de1e91f52024d56641ee249ff1ad4df9a7e9805213",
+            "physical_rows": 78,
+            "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+            "title": "空知総合振興局管内の避難場所、避難所【北海道】 / 深川市CSV",
+            "url": "https://www.harp.lg.jp/opendata/dataset/1881/resource/4989/012289_%E6%B7%B1%E5%B7%9D%E5%B8%82_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+          },
+          "source_kind": "prefecture_open_data",
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "深川市納内町字納内3933番地",
@@ -404750,6 +404914,35 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:51:59.030701+00:00",
+          "evidence_attempt": "fukagawa_evacuation_csv_77_rows_four_targets_two_external_policy_stops_20261113",
+          "expected_source_hash": "5caeacfefab31b313f09c94fb75e6e24406cc4e4fd6f660b3ec938f8a18027d6",
+          "observation": "深川市の当該77名称行を原登録名の完全一致及びNFKC後の包含で探索し、対応行なし。神社・八幡・稲荷・境内の名称行もなし。地名や別施設のかなを流用せず、原名・読み・所在地・施設同一性・旧判断を保持。市の全資料に対象や読みがないとした判定ではない。",
+          "reference": {
+            "credit": "出典：北海道 総合政策部次世代社会戦略局DX推進課「空知総合振興局管内の避難場所、避難所【北海道】」深川市CSV（本欄URL）、CC BY4.0。national-jinja-dictionaryが名称・全文かな・所在地列を原登録と比較し、その結果を要約して作成。",
+            "data_rows": 77,
+            "encoding": "cp932",
+            "fetched_at": "2026-11-13T13:50:00.489500+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "named_rows": 77,
+            "page_hash": "6662e1ae00d74c74b15bb5de1e91f52024d56641ee249ff1ad4df9a7e9805213",
+            "physical_rows": 78,
+            "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+            "title": "空知総合振興局管内の避難場所、避難所【北海道】 / 深川市CSV",
+            "url": "https://www.harp.lg.jp/opendata/dataset/1881/resource/4989/012289_%E6%B7%B1%E5%B7%9D%E5%B8%82_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+          },
+          "source_kind": "prefecture_open_data",
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "深川市一己町字一己2400番地",
@@ -422116,6 +422309,35 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:51:59.030701+00:00",
+          "evidence_attempt": "fukagawa_evacuation_csv_77_rows_four_targets_two_external_policy_stops_20261113",
+          "expected_source_hash": "9390c335e9a2ff8e5349b73fcd60d9f4d7b1fe3540404a5a8bd49938b38ef57f",
+          "observation": "深川市の当該77名称行を原登録名の完全一致及びNFKC後の包含で探索し、対応行なし。神社・八幡・稲荷・境内の名称行もなし。地名や別施設のかなを流用せず、原名・読み・所在地・施設同一性・旧判断を保持。市の全資料に対象や読みがないとした判定ではない。",
+          "reference": {
+            "credit": "出典：北海道 総合政策部次世代社会戦略局DX推進課「空知総合振興局管内の避難場所、避難所【北海道】」深川市CSV（本欄URL）、CC BY4.0。national-jinja-dictionaryが名称・全文かな・所在地列を原登録と比較し、その結果を要約して作成。",
+            "data_rows": 77,
+            "encoding": "cp932",
+            "fetched_at": "2026-11-13T13:50:00.489500+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "named_rows": 77,
+            "page_hash": "6662e1ae00d74c74b15bb5de1e91f52024d56641ee249ff1ad4df9a7e9805213",
+            "physical_rows": 78,
+            "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+            "title": "空知総合振興局管内の避難場所、避難所【北海道】 / 深川市CSV",
+            "url": "https://www.harp.lg.jp/opendata/dataset/1881/resource/4989/012289_%E6%B7%B1%E5%B7%9D%E5%B8%82_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+          },
+          "source_kind": "prefecture_open_data",
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "深川市6条4番10号",
@@ -438279,6 +438501,35 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "checked_at": "2026-11-13T13:51:59.030701+00:00",
+          "evidence_attempt": "fukagawa_evacuation_csv_77_rows_four_targets_two_external_policy_stops_20261113",
+          "expected_source_hash": "6b2629548c07b84ecaf1f2e192e3f1272a2ccad27a838262f5d1f28eaf466d4e",
+          "observation": "深川市の当該77名称行を原登録名の完全一致及びNFKC後の包含で探索し、対応行なし。神社・八幡・稲荷・境内の名称行もなし。地名や別施設のかなを流用せず、原名・読み・所在地・施設同一性・旧判断を保持。市の全資料に対象や読みがないとした判定ではない。",
+          "reference": {
+            "credit": "出典：北海道 総合政策部次世代社会戦略局DX推進課「空知総合振興局管内の避難場所、避難所【北海道】」深川市CSV（本欄URL）、CC BY4.0。national-jinja-dictionaryが名称・全文かな・所在地列を原登録と比較し、その結果を要約して作成。",
+            "data_rows": 77,
+            "encoding": "cp932",
+            "fetched_at": "2026-11-13T13:50:00.489500+00:00",
+            "fields_inspected": [
+              "名称",
+              "名称_カナ",
+              "住所"
+            ],
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "named_rows": 77,
+            "page_hash": "6662e1ae00d74c74b15bb5de1e91f52024d56641ee249ff1ad4df9a7e9805213",
+            "physical_rows": 78,
+            "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+            "title": "空知総合振興局管内の避難場所、避難所【北海道】 / 深川市CSV",
+            "url": "https://www.harp.lg.jp/opendata/dataset/1881/resource/4989/012289_%E6%B7%B1%E5%B7%9D%E5%B8%82_%E9%81%BF%E9%9B%A3%E6%89%80%E3%80%81%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80.csv"
+          },
+          "source_kind": "prefecture_open_data",
+          "source_publisher": "北海道 総合政策部次世代社会戦略局DX推進課",
+          "status": "no_matching_name_row_in_selected_evacuation_csv"
         }
       ],
       "address": "深川市深川町字メム6号線本通り67番地",
