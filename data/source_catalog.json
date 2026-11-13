@@ -20981,6 +20981,11 @@
         },
         "checked_at": "2026-11-09T13:00:51.300920+00:00",
         "collection_complete": false,
+        "effective_entry_status_counts": {
+          "pending": 21,
+          "verified": 3813
+        },
+        "effective_pending_entries": 21,
         "facilities_collected": 3834,
         "fields_observed": {
           "address": 3831,
@@ -40188,6 +40193,17 @@
         },
         "observed_xml_codes": 3834,
         "pages_fetched": 3836,
+        "profile_name_selection_source_review": {
+          "checked_at": "2026-11-13T03:05:28.014326+00:00",
+          "entry_ids": [
+            "0a7e6ee2-359f-5a1b-95be-ae4e4fbef881",
+            "3e876de1-588c-5883-9cd9-fdd50610600a",
+            "cb59d30f-f3f9-5ef3-b38f-1acfcfdf56e7"
+          ],
+          "evidence_data": "data/reviews.json; data/reading_research.json",
+          "scope": "東山八幡神社6306053・天満神社6306023・柏原八幡宮6308001の実コード・原全地番が一致するXML/詳細から、独立した唯一の存続神社法人の登記名と一致する詳細名と明示全文かなだけを個別選択。原地図名・詳細名・住所・かな・ID/hashと全過去調査を保持。",
+          "verified_entries": 3
+        },
         "reason": "選択矩形のXMLが返した3834コードすべてのプロフィールを掲載名・全文カナ・所在地・印字コード・hash・日時で照合。旧2008施設の原文・IDと人手補正を保持。読み適格3810施設、未解決24登録を保留。取得失敗0・応答内走査完了。県全体・サイト全件性と検索上限、再配布許諾は未確認。 㯮椒神社の外字は実参考記事と同一施設への実リンク・全地番一致に基づき補正し、住所の小字差を原文のまま保持。",
         "referenced_unicode_name_corrections": 2,
         "remaining_scope": [
@@ -40201,10 +40217,10 @@
           "categories": {
             "insufficient_evidence_in_inspected_sources": 5,
             "investigation_incomplete": 0,
-            "judgment_required": 19
+            "judgment_required": 16
           },
           "evidence_data": "data/reading_research.json",
-          "unfinished_entries": 24
+          "unfinished_entries": 21
         }
       },
       "conditions": {
@@ -45961,8 +45977,8 @@
       "partial": 2,
       "unresolved": 3
     },
-    "effective_dictionary_rows": 13714,
-    "effective_verified_facilities": 44374,
+    "effective_dictionary_rows": 13716,
+    "effective_verified_facilities": 44377,
     "prefectures_with_canonical_facilities": 47,
     "reference_only_prefectures": 6,
     "target_prefectures": 47
