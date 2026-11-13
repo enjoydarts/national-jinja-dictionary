@@ -617,3 +617,20 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 [NPO法人越谷市郷土研究会の実更新情報](https://koshigayahistory.org/a_02.htm)から第523回史跡めぐりの[実レジュメ](https://koshigayahistory.org/230625_523th_s_m.pdf)への公開リンクを確認しました。28頁中の印刷16頁で日枝神社（ひえじんじゃ）と埼玉県越谷市相模町6-481が同じ主対象を示すことを原画像で確認し、1登録を補完。資料の境内案内板引用から採字したもので、原案内板や神社/行政の公認読みを新たに認証したとは扱いません。長い引用沿革・写真・地図・個人名は収録せず、最小の名称/明示全文かな/全所在地と出典位置のみ保存し、包括的な再配布許諾とはしません。Webツールのサイズ上限後も同じHTTPS公開URLをrobots準拠で通常取得したもので、アクセス拒否の回避ではありません。
 
 [さいたま市の岩槻散策マップ8](https://www.city.saitama.lg.jp/iwatsuki/001/001/014/p020714.html)は全2頁の実テキスト/原画像を点検しましたが、「大戸の第六天神社」の独立全文かなは確認できません。[越生町の春日神社紹介](https://www.town.ogose.saitama.jp/kamei/shogaigakushu/bunkazai/100point/100pt/27.html)も本文の同名と西和田317の一致だけで全文読みを補作しません。祭神・一般語・流鏑馬・春日様の読みは社名へ流用せず、両登録を保留しています。今回の3登録の限定照合後、全国377解消/10,491保留。実IME取り込みは未確認です。
+
+
+### 口丹波の社20本文と同名候補86組の照合（2026年11月13日）
+
+同じ地域別索引の未取得20本文について、同名だけで施設をまとめず、55保留登録との候補86組を原全所在地で個別照合しました。次の7登録を補完しています。
+
+| 採用した掲載名 | 明示全文読み | 原所在地 |
+| --- | --- | --- |
+| [八幡神社](https://kuchitanshrine.my.coocan.jp/haidayakujin.html) | はちまんじんじゃ | 亀岡市千代川町拝田甲岩47 |
+| [稲荷神社](https://kuchitanshrine.my.coocan.jp/kuradaniinari.html) | いなりじんじゃ | 亀岡市東別院町倉谷東谷55 |
+| [天満宮社](https://kuchitanshrine.my.coocan.jp/ikejiritenmangu.html) | てんまんぐうしゃ | 亀岡市馬路町池尻68 |
+| [若宮神社](https://kuchitanshrine.my.coocan.jp/syourinjimawakamiya.html) | わかみやじんじゃ | 亀岡市河原林町勝林島大渕4 |
+| [八幡宮](https://kuchitanshrine.my.coocan.jp/otsubohachiman.html) | はちまんぐう | 南丹市園部町大西宮ノ本13 |
+| [八幡宮](https://kuchitanshrine.my.coocan.jp/nishiyamahachiman.html) | はちまんぐう | 南丹市園部町大西宮ノ前24 |
+| [菅原神社](https://kuchitanshrine.my.coocan.jp/shishiudosugawara.html) | すがわらじんじゃ | 南丹市園部町宍人市場113 |
+
+宮ノ本13と宮ノ前24の八幡宮は、同名・同読みでも全地番が異なる別の施設として保持しています。残る48登録は、名称や全所在地が対応しない、又は住所内読み注記等の表現審査が残るため未採用です。篠村八幡宮の全文かなから冠称を切り落として原八幡宮へ流用せず、他町域の八幡神社・春日神社・若宮神社等の読みも転用していません。資料は個人参拝記録であり、神社自身・神社庁・行政の発音認定とは区別します。既確認の画像複写・転載禁止と画像利用条件を遵守し、画像を取得せず、名称・全文かな・全所在地と出典・欄位置・判断の限定事実だけを保存しています。
