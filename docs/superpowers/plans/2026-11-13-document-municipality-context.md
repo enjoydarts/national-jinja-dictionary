@@ -26,8 +26,8 @@
 
 **Interfaces:** document_context_address(ref,facility)->str|None、reading-onlyの_reference_matches接続。
 
-- [ ] 人工参照の実適用・全負例・再適用/破損・保留維持を書きREDを実行。Expected: 有効コンテキストで出力できず失敗、import例外なし。
-- [ ] 最小実装と仕様追記、全テスト/validate/diff-check。Expected: 全成功・errors0。日本語コミット。
+- [x] 人工参照の実適用・全負例・再適用/破損・保留維持を書きREDを実行。Expected: 有効コンテキストで出力できず失敗、import例外なし。
+- [x] 最小実装と仕様追記、全テスト/validate/diff-check。Expected: 全成功・errors0。日本語コミット。
 
 ### Task 2: 実3登録の正本反映
 

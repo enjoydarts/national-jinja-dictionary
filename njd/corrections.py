@@ -120,7 +120,14 @@ def _reference_matches(ref,facility,entry,changes):
         # 市 (official prefectural references are recorded in docs/DATA.md).
         match=re.match(r'((?:高市|余市|[^都道府県市区]+?)郡)(.+)',value)
         return match.groups() if match else ('',value)
-    reference_address=address(ref.get('address_raw'))
+    if 'address_context' in ref:
+        from njd.document_context import document_context_address
+        contextual=document_context_address(ref,facility)
+        if (set(changes)!={'reading'} or entry.get('status')=='excluded'
+            or contextual is None):return False
+        reference_address=address(contextual)
+    else:
+        reference_address=address(ref.get('address_raw'))
     if set(changes)=={'reading'}:
         mapped=municipal_comparison_address(ref,facility,entry)
         if mapped is not None and address(mapped)==reference_address:return True
