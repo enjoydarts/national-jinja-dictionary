@@ -42,4 +42,6 @@
 
 ## 最終統合
 
-- [ ] Fresh whole-branch reviewで実資料と選択根拠を審査、指摘を処理。最新main保持で統合しmain検証、専用worktreeを片付ける。
+- [x] Fresh whole-branch reviewで実資料と選択根拠を審査、指摘を処理。最新main保持で統合しmain検証、専用worktreeを片付ける。
+
+統合記録: 独立審査Critical/Important/Minor各0。最新mainの高木神社採用と32都道府県限定調査を保持してcb9192fへ統合。全国314解消/10,554保留、最新main比適格+1/減0、原10868 ID/正本hash/全旧調査履歴を保持。mainで655テスト成功、正本検証errors0/reviews137。専用worktreeは実行記録を外部退避後に削除。6形式自動検査と実IME未実施を区別。名称差の法的原因は未認定、登記の確認窓は20261112まで。
