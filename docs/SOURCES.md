@@ -1099,3 +1099,10 @@ python3 -m njd.adapters.hyogo --offline --report /tmp/hyogo-map-audit-offline.js
 [市公式入口](https://www.city.fuefuki.yamanashi.jp/)と[このサイトについて](https://www.city.fuefuki.yamanashi.jp/kikaku/site.html)の本文を確認しました。写真・図面・動画等の表現物の転載は法定利用以外に申請が必要で、一般PDFへの包括転載許諾やオープンライセンスとは認定していません。名称・読み・所在地の事実確認を予定した[新井原の現地散策ガイド候補](https://www.city.fuefuki.yamanashi.jp/documents/607/5b1f12e0a5507.pdf)は、通常Clientの8 MiB内部上限で取得が停止しました。PDF本文・頁数・全文読み・所在地・本文hashは未確認です。アクセス拒否やrobots禁止と分類せず、上限変更や別ツールでの本文取得は行っていません。
 
 別候補の[ふえふき観光ナビ入口](https://www.fuefuki-kanko.jp/)から実リンク先の[利用規約](https://www.fuefuki-kanko.jp/footer/2/)を確認し、無断の転載・複写・蓄積・転送及び商用利用の禁止を認めたため、美和神社の個別紹介は取得していません。入口の公式という表題だけで市の直接運営や利用許諾とはしません。2施設とも検索結果は発見用に限り、新規採用0。既存の判断・補正・全件数を保持し、入口と規約の公開URL/hash・日時、未取得範囲のみを記録しています。本文・画像・キャッシュは収録していません。
+
+
+### 山梨の歴史を旅するサイトの追加HTML候補（2026年11月13日）
+
+[このサイトについて](https://www.yamanashi-kankou.jp/rekitabi/about/index.html)の本文で山梨県・公益社団法人やまなし観光推進機構による提供を確認し、実リンク先の[免責事項](https://www.yamanashi-kankou.jp/about/term.html)・[プライバシーポリシー](https://www.yamanashi-kankou.jp/about/privacy.html)を点検しました。点検範囲に最小事実の記録を明示禁止する条項は見当たりませんでしたが、包括転載許諾やオープンライセンスとは認定していません。
+
+検索側に残る個別紹介を発見の手掛かりとし、実URLの`/rekitabi/jisha/spot/331.html`（幸燈神社）、`191.html`（三魂交通神社）、`121.html`（北野天神社）を通常Client（2秒以上の間隔、timeout20秒、再試行0、robots適用）で要求すると、いずれもHTTP404でした。これはHTTP403やrobots禁止ではありません。失敗URLを再試行せず、推測パス・別形式・アーカイブ・別ツールでの当該本文取得も行っていません。現行個別本文のhash・全文読み・全所在地は未検証で、検索側の保存本文を採用せず新規補完0件。既存冊子の判断を保持し、全文・写真・キャッシュ・人物情報は収録していません。
