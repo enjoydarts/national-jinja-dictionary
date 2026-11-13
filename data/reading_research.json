@@ -3,7 +3,7 @@
     "corrections.json": "0ccecfe2e35d9b5ca51a1d5bcfb14f8c2ee7da5b25a6da09b3a9be1455681953",
     "decisions.json": "669f5342a3fa739926c1b0599fb3013eae0846cab2c6f00cef111e771575da12",
     "identities.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
-    "locations.json": "3bd51b9f6c3064bfb48be0fc3cc749f81e1d4aefee876eac6f8a20621e8af414",
+    "locations.json": "f7eafed7f8eef9df57b2ba53a64046b4465210a125e755bf5f266c88529c9ea7",
     "reviews.json": "bd036410ef2b8f8e508c795fb91d9bf2298fc7968d3d046fff1a6a5ff70f41ab",
     "source_aliases.json": "6a40c602e60500e413cf11c75a6843a97e1918f15e768d8a849911ab7bc17ffa"
   },
@@ -22922,21 +22922,33 @@
         "integration_main_commit": "39c122d5169d5b8aa0c440a30ad671419586644f",
         "new_verified_entries": 0,
         "scope": "最新mainの別地域調査・分類変更を保持して、波々伯部神社1登録の補正と原研究行の履歴を統合。採用を重複計上しない。"
+      },
+      {
+        "checked_at": "2026-11-13T08:28:50.604788+00:00",
+        "entry_ids": [
+          "0678dd58-874d-5b34-953d-cd3edd08d000",
+          "21aa5e11-df10-5df6-8916-c509b03cf22b"
+        ],
+        "name_comparison_pairs": 29,
+        "new_verified_entries": 2,
+        "retained_pending_entries": 10528,
+        "scope": "全国一宮の表示番号0〜116の117行を10530登録の保留の同都道府県・正式名文字列一致に限定比較した29組。複合かなを分割せず、異なる字形・地番・行政区分・同名別施設は補作しない。全神社・全研究資料・全国全保留の解決ではない。",
+        "source_rows": 117
       }
     ],
     "latest_followup": {
-      "checked_at": "2026-11-13T08:28:50.604788+00:00",
+      "checked_at": "2026-11-13T08:48:10.733538+00:00",
       "entry_ids": [
-        "0678dd58-874d-5b34-953d-cd3edd08d000",
-        "21aa5e11-df10-5df6-8916-c509b03cf22b"
+        "eb02860f-8645-57a9-b297-190d98c43e2b",
+        "ce356496-5ed6-5b2a-9f6e-c3c4360608e6",
+        "d4443398-5a2c-551f-9c01-88ef8150c426"
       ],
-      "name_comparison_pairs": 29,
-      "new_verified_entries": 2,
-      "retained_pending_entries": 10528,
-      "scope": "全国一宮の表示番号0〜116の117行を10530登録の保留の同都道府県・正式名文字列一致に限定比較した29組。複合かなを分割せず、異なる字形・地番・行政区分・同名別施設は補作しない。全神社・全研究資料・全国全保留の解決ではない。",
-      "source_rows": 117
+      "inspected_targets": 3,
+      "new_verified_entries": 1,
+      "retained_pending_targets": 2,
+      "scope": "貴船神社の原空欄を保持して所在地を補完。二子住吉/西濱は差を保持して保留。"
     },
-    "remaining_unfinished_entries": 10528,
+    "remaining_unfinished_entries": 10527,
     "resolved_entry_ids": [
       "00708f1d-39f8-5bd8-a1c0-9e8c28fce836",
       "0122a4b5-6e7c-5ad8-ac7f-49ce6bd11bd4",
@@ -23260,6 +23272,7 @@
       "e91890cc-ce4d-5346-92f8-7fa97b99759c",
       "eae0325f-ef48-5d29-938f-0535369fb4a8",
       "eb00f8ea-2a42-507e-8d16-ea758d144234",
+      "eb02860f-8645-57a9-b297-190d98c43e2b",
       "ebae8543-e448-54c8-8d03-434c690a2b81",
       "ec0dd2f7-8e2b-57e0-a5de-b9ff12dfcffa",
       "ed19c5d9-672a-5431-9074-1f7cf3a11e09",
@@ -23282,7 +23295,7 @@
     "started_at": "2026-11-12T01:50:31.487260+00:00",
     "status": "in_progress"
   },
-  "computed_at": "2026-11-13T08:28:50.604788+00:00",
+  "computed_at": "2026-11-13T08:48:10.733538+00:00",
   "external_source_attempts": [
     {
       "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
@@ -319040,6 +319053,498 @@
       "status": "stopped_explicit_no_redistribution_or_corporate_commercial_use",
       "target_comparisons": 0,
       "third_party_contact_made": false
+    },
+    {
+      "acquisition_notice": {
+        "alternative_host_protocol_or_format_requests": 0,
+        "initial_web_tool_failures": [
+          {
+            "error": "Timeout fetching",
+            "subsequent_status": "same_URL_ordinary_Client_request_200_after_published_link_and_robots_check",
+            "url": "https://www.city.awaji.lg.jp/uploaded/attachment/44772.pdf"
+          },
+          {
+            "error": "Timeout fetching",
+            "subsequent_status": "not_acquired",
+            "url": "https://www.city.awaji.lg.jp/uploaded/attachment/32104.pdf"
+          },
+          {
+            "error": "not accessible via Web tool",
+            "subsequent_status": "not_acquired",
+            "url": "https://www.hyogo-jinjacho.com/data/6320017.html"
+          }
+        ],
+        "observation": "ツールのタイムアウトとHTTPアクセス拒否を区別。同じ公開URLを市の実リンクとrobots確認後に1回通常取得し200。別の文化財PDFと天神神社本文は未取得のままで、今回の本文確認や採用根拠としない。",
+        "same_url_pdf_client_requests": 1
+      },
+      "adopted_location_references": [
+        {
+          "address_raw": "〒656-1524",
+          "checked_at": "2026-11-13T08:46:05.789887+00:00",
+          "excerpt": "貴船神社 / キブネジンジャ / 6328113/兼務 / 〒656-1524 / 由緒：古来竹谷の明神として崇敬された。",
+          "fetched_at": "2026-11-13T08:32:58.728299+00:00",
+          "locality_context_raw": "古来竹谷の明神として崇敬された。",
+          "locality_locator": "由緒",
+          "locality_raw": "竹谷",
+          "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+          "name_raw": "貴船神社",
+          "page_hash": "9287908d5113ab1ce0f7d72fc60473f85bbb547354bfab16c682b3b96d84d9be",
+          "printed_code_raw": "6328113/兼務",
+          "reading_raw": "キブネジンジャ",
+          "reading_scope": "full_name",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 貴船神社",
+          "url": "https://www.hyogo-jinjacho.com/data/6328113.html"
+        },
+        {
+          "address_raw": "",
+          "checked_at": "2026-11-13T08:46:05.789887+00:00",
+          "code_raw": "6328113",
+          "excerpt": "貴船神社 / 6328113 / 原地図所在地空欄",
+          "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+          "href_derivation": "data/ + actual Locate code + .html",
+          "locator": "Locations/Locate[3633]",
+          "name_raw": "貴船神社",
+          "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+          "protocol_reference": {
+            "checked_at": "2026-11-13T08:46:05.789887+00:00",
+            "fetched_at": "2026-11-13T08:02:23.720755+00:00",
+            "locator": "MarkerSet LocateCode href expression",
+            "page_hash": "e124e51e28043bc10f5a9dec59c71e9c30c0c57851dda691e567f8c7376537f9",
+            "profile_path_template": "data/{code}.html",
+            "url": "https://www.hyogo-jinjacho.com/js/formsearch.js"
+          },
+          "protocol_url": "https://www.hyogo-jinjacho.com/js/formsearch.js",
+          "source_kind": "agency",
+          "source_publisher": "兵庫県神社庁",
+          "title": "兵庫県神社庁 神社検索 貴船神社",
+          "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+        },
+        {
+          "address_composition": "公表主体の市名＋同じ行の所在地列。原詳細空欄/原地図空欄を保持。",
+          "asset_class_raw": "事業用土地",
+          "attribution": "出典：淡路市「令和6年度固定資産台帳」p.3事業用土地。所在地と資産名称の同一行という事実をnational-jinja-dictionaryが神社庁原ID/由緒地名と独立登記へ照合。",
+          "checked_at": "2026-11-13T08:46:05.789887+00:00",
+          "excerpt": "事業用土地 / 所在地：竹谷496 / 資産名称：貴船神社",
+          "fetched_at": "2026-11-13T08:32:56.534398+00:00",
+          "license_evidence": [
+            {
+              "fetched_at": "2026-11-13T08:32:50.272691+00:00",
+              "http_status": 200,
+              "label": "awaji-policy",
+              "page_hash": "5eb33c2be362b1c7ed1c1f7e1d7b59e79c908b2af081b398c0ca040fe521b75f",
+              "status": "body_acquired",
+              "url": "https://www.city.awaji.lg.jp/site/userguide/link.html"
+            }
+          ],
+          "license_observation": "一般著作権規定は法に認める範囲を区別。資料全体・表配列・画像を収録せず個別照合した名称/所在地という事実項目と所在だけを記録。全体再配布の許諾とは扱わない。",
+          "locator": "PDF p.3 事業用土地／所在地と資産名称の同じ行、隣の竹谷496-1とは分離",
+          "municipality_basis": "淡路市の実掲載ページの公表主体と名称。PDF行の連続住所として市名を補作しない。",
+          "municipality_raw": "淡路市",
+          "name_bounds": [
+            137.99969870000007,
+            70.08480000000093,
+            30.71999999999997,
+            7.672319999999999
+          ],
+          "name_raw": "貴船神社",
+          "page_hash": "b3da6b887e1e8196d82083e9b2e069fcf24f70394658809b7b76f86669077422",
+          "parcel_column_bounds": [
+            54,
+            70.08480000000093,
+            82,
+            7.672319999999999
+          ],
+          "parcel_raw": "竹谷496",
+          "pdf_page_1based": 3,
+          "published_link_proof": {
+            "fetched_at": "2026-11-13T08:32:52.385738+00:00",
+            "href_raw": "/uploaded/attachment/44772.pdf",
+            "label_raw": "R6_固定資産台帳 [PDFファイル／1.89MB]",
+            "source_page_hash": "ab95386e6d1ce8502c73b74301c02364a937b689787f653c5939cdec2bc9815a",
+            "source_url": "https://www.city.awaji.lg.jp/soshiki/zaisei/23476.html",
+            "url": "https://www.city.awaji.lg.jp/uploaded/attachment/44772.pdf"
+          },
+          "publisher": "淡路市",
+          "source_fields": {
+            "所在地": "竹谷496",
+            "資産名称": "貴船神社"
+          },
+          "source_kind": "government_municipal_asset_register",
+          "title": "淡路市 令和6年度 固定資産台帳 事業用土地",
+          "url": "https://www.city.awaji.lg.jp/uploaded/attachment/44772.pdf",
+          "visual_checked_pages_1based": [
+            3
+          ]
+        },
+        {
+          "address_raw": "兵庫県淡路市竹谷４９６番地",
+          "checked_at": "2026-11-13T08:46:05.789887+00:00",
+          "corporate_number": "5140005019620",
+          "csv_row": 113660,
+          "excerpt": "貴船神社 / 兵庫県淡路市竹谷４９６番地 / 6561524",
+          "fetched_at": "2026-11-12T04:36:36.903625+00:00",
+          "file_id": "28443",
+          "locator": "28_hyogo_all_20261030.csv row 113660",
+          "member": "28_hyogo_all_20261030.csv",
+          "name_raw": "貴船神社",
+          "page_hash": "0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd",
+          "registry_state_proof": {
+            "active_corporate_numbers_at_full_address": [
+              "5140005019620"
+            ],
+            "active_same_name_postcode_corporate_numbers": [
+              "5140005019620"
+            ],
+            "active_same_name_postcode_count": 1,
+            "active_shrine_corporation_count_at_full_address": 1,
+            "as_of": "20261112",
+            "daily_resources": [
+              {
+                "date": "20261102",
+                "fetched_at": "2026-11-12T04:19:18.963438+00:00",
+                "file_id": "28508",
+                "page_hash": "fed1d994034e65a53765c77e4f7106a3949c51f9cd88600ae9aa1e507e968485",
+                "rows": 2346,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261104",
+                "fetched_at": "2026-11-12T04:19:12.671236+00:00",
+                "file_id": "28511",
+                "page_hash": "3c65e01545ac0e137166cf06c6d01bd88aaaf85527d1d065374dbbee4e62976d",
+                "rows": 2156,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261105",
+                "fetched_at": "2026-11-12T04:19:06.381343+00:00",
+                "file_id": "28514",
+                "page_hash": "38ca2001e1e0912410cb8dfbf8b7f77d2b8a98d0901294721173e6dce0879f74",
+                "rows": 2183,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261106",
+                "fetched_at": "2026-11-12T04:19:00.086685+00:00",
+                "file_id": "28517",
+                "page_hash": "7472580e4a837671b200a986da17567a0f7917692b3f0cb62f13f5b1010238c9",
+                "rows": 2617,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261109",
+                "fetched_at": "2026-11-12T04:18:47.092583+00:00",
+                "file_id": "28520",
+                "page_hash": "f2661f24d97564cf7b14a58389dfa1fa3f819a62c29f86b347a146b56a70765b",
+                "rows": 2362,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261110",
+                "fetched_at": "2026-11-12T04:18:40.808081+00:00",
+                "file_id": "28523",
+                "page_hash": "38034ac0c65af5af98a5c01025c134e854c986d583886074d8d81afb79fbfb64",
+                "rows": 2642,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261111",
+                "fetched_at": "2026-11-12T04:18:13.723154+00:00",
+                "file_id": "28526",
+                "page_hash": "eb1976bceee98ace70fe15f074f861ca9f7d1e3ea2956477ee8e8f03df1dbddd",
+                "rows": 2692,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              },
+              {
+                "date": "20261112",
+                "fetched_at": "2026-11-13T01:55:56.841451+00:00",
+                "file_id": "28529",
+                "page_hash": "896ee14905fdfcd8098dd4bdb87fdc9bd02655facaf056c3d5358b984a60c1b9",
+                "rows": 2180,
+                "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html"
+              }
+            ],
+            "daily_rows": 19178,
+            "monthly_prefecture_rows": 206383,
+            "scope": "同名・同郵便番号・全町域/地番が同一の一意存続法人で所在地同定だけを補助。空欄カナから読まない。",
+            "target_corporate_or_full_parcel_events": 0
+          },
+          "snapshot": "20261030",
+          "source_fields": {
+            "addressImageId": "",
+            "cityName": "淡路市",
+            "closeDate": "",
+            "corporateNumber": "5140005019620",
+            "furigana": "",
+            "hihyoji": "0",
+            "kind": "399",
+            "latest": "1",
+            "name": "貴船神社",
+            "nameImageId": "",
+            "postCode": "6561524",
+            "prefectureCode": "28",
+            "prefectureName": "兵庫県",
+            "process": "01",
+            "streetNumber": "竹谷４９６番地"
+          },
+          "source_kind": "government_corporate_register",
+          "source_publisher": "国税庁",
+          "title": "国税庁 法人番号公表サイト 兵庫県全件CSV",
+          "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+        }
+      ],
+      "adopted_reading_research_history": [
+        {
+          "additional_source_reviews": [
+            {
+              "adopted": false,
+              "checked_at": "2026-11-12T07:05:17.639317+00:00",
+              "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-central",
+              "expected_source_hash": "54853c057d78d2928532092356cd99f093a9736875fe5451483b105b6466814f",
+              "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
+              "related_actual_hrefs": [],
+              "result": "no_related_label_in_inspected_indexes",
+              "source_kind": "article_index",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "status": "bounded_article_index_scope_recorded"
+            },
+            {
+              "adopted": false,
+              "checked_at": "2026-11-13T06:05:26.808140+00:00",
+              "documented_city_prefix_lead_rows": 0,
+              "evidence_attempt": "hyogo_remaining_fourteen_literal_name_and_address_first_registry_window_20261113",
+              "expected_source_hash": "54853c057d78d2928532092356cd99f093a9736875fe5451483b105b6466814f",
+              "literal_full_address_candidate_rows": 0,
+              "observation": "原詳細/原地図の所在地欠落。同名他所在地の読みを流用しない。",
+              "related_daily_events": 0,
+              "same_name_other_address_rows": 10,
+              "scope": "保存した兵庫月次全206383行と20261112までの8日次19178行の限定照合。原全住所文字列と原名/原地図名だけを使い、読み欠落や施設同一性を自動解除しない。",
+              "source_kind": "government_corporate_register",
+              "source_publisher": "国税庁",
+              "status": "bounded_name_and_address_first_screen_recorded"
+            },
+            {
+              "adopted": false,
+              "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "literal_printed_locality_pairs": 0,
+              "name_comparison_pairs": 0,
+              "new_name_comparison_pairs": 0
+            },
+            {
+              "adopted": true,
+              "evidence_attempt": "hyogo_awaji_asset_parcel_and_harima_subject_heritage_three_profiles_one_location_adopted_20261113",
+              "fresh_profile_reference": {
+                "fetched_at": "2026-11-13T08:32:58.728299+00:00",
+                "http_status": 200,
+                "label": "profile-6328113",
+                "page_hash": "9287908d5113ab1ce0f7d72fc60473f85bbb547354bfab16c682b3b96d84d9be",
+                "status": "body_acquired",
+                "url": "https://www.hyogo-jinjacho.com/data/6328113.html"
+              },
+              "observation": "原詳細6328113の全文キブネジンジャ/郵便番号656-1524・同じ主対象の由緒地名竹谷を、市の実公開PDF p.3同一行「所在地竹谷496／資産名称貴船神社」と独立登記5140005019620の同名/同郵便番号/全地番へ照合。原住所/市町村/地図の空欄とID/hashを保持し、公表主体の市名と市表の所在地列から実効所在地を構成。登記かなや建物名の読みを借用せず、台帳日付を神社創建年・土地記載を神社所有権の確定としない。",
+              "source_kind": "agency_and_municipal_followup",
+              "status": "municipal_parcel_profile_locality_and_unique_registry_location_adopted"
+            }
+          ],
+          "address": "",
+          "agency_listing_url": "https://www.hyogo-jinjacho.com/data/6328113.html",
+          "category": "insufficient_evidence_in_inspected_sources",
+          "entry_id": "eb02860f-8645-57a9-b297-190d98c43e2b",
+          "expected_source_hash": "54853c057d78d2928532092356cd99f093a9736875fe5451483b105b6466814f",
+          "facility_id": "cbd9287b-73dc-5b52-a0ee-6d59ca2333cd",
+          "listed_name": "貴船神社",
+          "nta_result": "not checked for current source snapshot",
+          "prefecture": "兵庫県",
+          "prefecture_code": "28",
+          "reading_raw": "キブネジンジャ",
+          "reason": "Hyogo profile address is missing",
+          "source_assessment": {
+            "assessment_group": "missing_complete_location",
+            "checked_at": "2026-11-11T10:14:44.472519+00:00",
+            "disposition": "insufficient_evidence_in_inspected_sources",
+            "new_wikipedia_or_corporate_lookup": false,
+            "observations": [
+              "同じ神社コードの地図XMLと詳細ページを確認。詳細の所在地が空欄又は市区町村名が不完全。"
+            ],
+            "observed_fields": {
+              "facility_code_raw": "6328113",
+              "map_address_raw": "",
+              "map_name_raw": "貴船神社",
+              "profile_address_raw": "",
+              "profile_name_raw": "貴船神社",
+              "profile_reading_raw": "キブネジンジャ"
+            },
+            "references": [
+              {
+                "checked_at": "2026-11-11T10:14:44.472519+00:00",
+                "fetched_at": "2026-11-09T12:53:38.860506+00:00",
+                "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
+                "page_hash": "9287908d5113ab1ce0f7d72fc60473f85bbb547354bfab16c682b3b96d84d9be",
+                "request_method": "GET",
+                "source_kind": "agency",
+                "url": "https://www.hyogo-jinjacho.com/data/6328113.html"
+              },
+              {
+                "checked_at": "2026-11-11T10:14:44.472519+00:00",
+                "fetched_at": "2026-11-09T09:13:39.120126+00:00",
+                "locator": "Locations/Locate[3633]",
+                "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
+                "request_method": "GET",
+                "source_kind": "agency",
+                "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
+              }
+            ],
+            "remaining_requirement": "同一施設の完全な所在地の根拠。",
+            "scope": "Named agency snapshot and explicitly recorded linked materials only. Earlier Wikipedia/corporate search outcomes remain separately dated. No exhaustive internet or current site-wide absence claim.",
+            "status": "bounded_source_review_completed"
+          },
+          "status": "unfinished",
+          "surface": "貴船神社",
+          "wikipedia_article_refs": [],
+          "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+        }
+      ],
+      "attempt_id": "hyogo_awaji_asset_parcel_and_harima_subject_heritage_three_profiles_one_location_adopted_20261113",
+      "checked_at": "2026-11-13T08:48:10.733538+00:00",
+      "daily_rows": 19178,
+      "entry_ids": [
+        "ce356496-5ed6-5b2a-9f6e-c3c4360608e6",
+        "d4443398-5a2c-551f-9c01-88ef8150c426",
+        "eb02860f-8645-57a9-b297-190d98c43e2b"
+      ],
+      "inspected_targets": 3,
+      "license_observation": "市の一般著作権規定を資料全体の再配布許諾としない。個別の名称・所在地・出典位置という最小事実のみを保存。PDF全文・画像・表全体・個人所有者や連絡先を収録せず、台帳の取得年月日を神社創建年・土地資産記載を神社所有権の確定としない。",
+      "manual_resolved_entry_ids": [
+        "eb02860f-8645-57a9-b297-190d98c43e2b"
+      ],
+      "monthly_rows": 206383,
+      "municipal_pdf_pages": 558,
+      "new_verified_entries": 1,
+      "observations": [
+        {
+          "adopted": true,
+          "entry_id": "eb02860f-8645-57a9-b297-190d98c43e2b",
+          "expected_source_hash": "54853c057d78d2928532092356cd99f093a9736875fe5451483b105b6466814f",
+          "facility_id": "cbd9287b-73dc-5b52-a0ee-6d59ca2333cd",
+          "status": "municipal_parcel_profile_locality_and_unique_registry_location_adopted",
+          "surface": "貴船神社"
+        },
+        {
+          "adopted": false,
+          "entry_id": "ce356496-5ed6-5b2a-9f6e-c3c4360608e6",
+          "expected_source_hash": "5995d23e8907db90993a96fd53b92bb221dd014de04961c71cfcfb9d73eda70b",
+          "facility_id": "3c7f6cf7-a7e5-512f-b69f-5a8b200719d8",
+          "status": "additional_material_inspected_existing_name_or_identity_hold_retained",
+          "surface": "二子住吉神社"
+        },
+        {
+          "adopted": false,
+          "entry_id": "d4443398-5a2c-551f-9c01-88ef8150c426",
+          "expected_source_hash": "3e4743cd986817e112eb740bdf48cad89d624840ed906d40e8d94b291d9ed391",
+          "facility_id": "22d46276-a113-5af7-ad18-63bbf0e524ec",
+          "status": "additional_material_inspected_existing_name_or_identity_hold_retained",
+          "surface": "西濱神社"
+        }
+      ],
+      "related_events": 0,
+      "resources": [
+        {
+          "fetched_at": "2026-11-13T08:32:50.272691+00:00",
+          "http_status": 200,
+          "label": "awaji-policy",
+          "page_hash": "5eb33c2be362b1c7ed1c1f7e1d7b59e79c908b2af081b398c0ca040fe521b75f",
+          "status": "body_acquired",
+          "url": "https://www.city.awaji.lg.jp/site/userguide/link.html"
+        },
+        {
+          "fetched_at": "2026-11-13T08:32:52.385738+00:00",
+          "http_status": 200,
+          "label": "awaji-finance-listing",
+          "page_hash": "ab95386e6d1ce8502c73b74301c02364a937b689787f653c5939cdec2bc9815a",
+          "status": "body_acquired",
+          "url": "https://www.city.awaji.lg.jp/soshiki/zaisei/23476.html"
+        },
+        {
+          "fetched_at": "2026-11-13T08:32:56.534398+00:00",
+          "http_status": 200,
+          "label": "awaji-r6-assets",
+          "page_hash": "b3da6b887e1e8196d82083e9b2e069fcf24f70394658809b7b76f86669077422",
+          "status": "body_acquired",
+          "url": "https://www.city.awaji.lg.jp/uploaded/attachment/44772.pdf"
+        },
+        {
+          "fetched_at": "2026-11-13T08:32:58.728299+00:00",
+          "http_status": 200,
+          "label": "profile-6328113",
+          "page_hash": "9287908d5113ab1ce0f7d72fc60473f85bbb547354bfab16c682b3b96d84d9be",
+          "status": "body_acquired",
+          "url": "https://www.hyogo-jinjacho.com/data/6328113.html"
+        },
+        {
+          "fetched_at": "2026-11-13T08:33:00.800630+00:00",
+          "http_status": 200,
+          "label": "profile-6314166",
+          "page_hash": "0a5401c066a2014c794dfd8e37aa09b10d66a460c4c8590a270759058e5a2c1d",
+          "status": "body_acquired",
+          "url": "https://www.hyogo-jinjacho.com/data/6314166.html"
+        },
+        {
+          "fetched_at": "2026-11-13T08:33:02.878924+00:00",
+          "http_status": 200,
+          "label": "profile-6328128",
+          "page_hash": "f2dde77642a851b9d677b38ffd3b4ae6057ff9cd42ff053d51c12855ce6dc652",
+          "status": "body_acquired",
+          "url": "https://www.hyogo-jinjacho.com/data/6328128.html"
+        },
+        {
+          "fetched_at": "2026-11-13T08:33:05.238786+00:00",
+          "http_status": 200,
+          "label": "harima-kusunoki",
+          "page_hash": "2802fcffe289af3e00e2624aba77cded3f0a0e7d1110bdb756b0c1e66e7fb02d",
+          "status": "body_acquired",
+          "url": "https://www.town.harima.lg.jp/kyodoshiryokan/kanko/rekishi/bunkazai/futagosumiyoshi.html"
+        },
+        {
+          "fetched_at": "2026-11-13T08:33:07.396742+00:00",
+          "http_status": 200,
+          "label": "harima-cultural-listing",
+          "page_hash": "084c40bd015b7d8a454082674437423bbf33c20dfc386aee99478b8d720f8c36",
+          "status": "body_acquired",
+          "url": "https://www.town.harima.lg.jp/kyodoshiryokan/kanko/rekishi/bunkazai/index.html"
+        }
+      ],
+      "retained_pending_targets": 2,
+      "scope": "現在保留の3原詳細を同hashで再確認し、貴船神社6328113だけを原由緒地名/郵便番号・市の事業用土地p.3同一行・独立登記の一意性で個別補完。558ページのテキスト検索とp.3の目視を区別し、道路名が一致したp.497を神社所在地へ流用しない。二子/西濱の名称・所在地・年代差は保留。全国又は県内全資料の精査完了ではない。",
+      "selected_asset_row": {
+        "asset_class_raw": "事業用土地",
+        "column_labels_raw": [
+          "所在地",
+          "資産名称"
+        ],
+        "manually_viewed": true,
+        "name_bounds": [
+          137.99969870000007,
+          70.08480000000093,
+          30.71999999999997,
+          7.672319999999999
+        ],
+        "name_raw": "貴船神社",
+        "parcel_column_bounds": [
+          54,
+          70.08480000000093,
+          82,
+          7.672319999999999
+        ],
+        "parcel_raw": "竹谷496",
+        "pdf_page_1based": 3
+      },
+      "source_kind": "agency_and_municipal_asset_location_followup",
+      "source_publisher": "兵庫県神社庁・淡路市・播磨町・国税庁",
+      "visually_checked_pages_1based": [
+        3
+      ]
     }
   ],
   "per_prefecture": {
@@ -319261,11 +319766,11 @@
     },
     "28": {
       "categories": {
-        "insufficient_evidence_in_inspected_sources": 2,
+        "insufficient_evidence_in_inspected_sources": 1,
         "investigation_incomplete": 0,
         "judgment_required": 9
       },
-      "unfinished_entries": 11
+      "unfinished_entries": 10
     },
     "29": {
       "categories": {
@@ -878755,6 +879260,47 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "additional_references": [
+            {
+              "fetched_at": "2026-11-13T08:33:05.238786+00:00",
+              "http_status": 200,
+              "label": "harima-kusunoki",
+              "page_hash": "2802fcffe289af3e00e2624aba77cded3f0a0e7d1110bdb756b0c1e66e7fb02d",
+              "status": "body_acquired",
+              "url": "https://www.town.harima.lg.jp/kyodoshiryokan/kanko/rekishi/bunkazai/futagosumiyoshi.html"
+            },
+            {
+              "fetched_at": "2026-11-13T08:33:07.396742+00:00",
+              "http_status": 200,
+              "label": "harima-cultural-listing",
+              "page_hash": "084c40bd015b7d8a454082674437423bbf33c20dfc386aee99478b8d720f8c36",
+              "status": "body_acquired",
+              "url": "https://www.town.harima.lg.jp/kyodoshiryokan/kanko/rekishi/bunkazai/index.html"
+            }
+          ],
+          "adopted": false,
+          "evidence_attempt": "hyogo_awaji_asset_parcel_and_harima_subject_heritage_three_profiles_one_location_adopted_20261113",
+          "fresh_profile_reference": {
+            "fetched_at": "2026-11-13T08:33:00.800630+00:00",
+            "http_status": 200,
+            "label": "profile-6314166",
+            "page_hash": "0a5401c066a2014c794dfd8e37aa09b10d66a460c4c8590a270759058e5a2c1d",
+            "status": "body_acquired",
+            "url": "https://www.hyogo-jinjacho.com/data/6314166.html"
+          },
+          "observation": "町の実文化財本文は二子住吉神社のクスノキと所在地二子1を示すが、原字名立辻を記していない。町の創建伝承長享3(1489)と神社庁の創立貞享3年(1686)は異なる。字名/創建年差を推測調整せず、原地図名阿閇と原詳細名二子住吉・登記名住吉の対応判断も維持。クスノキの全文かなを親神社へ切り出さず、連絡先郷土資料館を神社住所にしない。",
+          "observed_fields": {
+            "agency_foundation_raw": "貞享3年(1686)",
+            "cultural_property_name_raw": "二子住吉神社クスノキ",
+            "municipal_foundation_raw": "長享3(1489)年",
+            "original_map_name_raw": "阿閇神社",
+            "subject_location_raw": "二子1（二子住吉神社）"
+          },
+          "scope": "今回の追加本文は町のクスノキ紹介と指定一覧、原詳細の同hash再確認。町内全資料・所在地字名対応・年代の真偽を確定したものではない。",
+          "source_kind": "agency_and_municipal_followup",
+          "status": "additional_material_inspected_existing_name_or_identity_hold_retained"
         }
       ],
       "address": "加古郡播磨町二子立辻1",
@@ -878940,6 +879486,22 @@
           "literal_printed_locality_pairs": 0,
           "name_comparison_pairs": 0,
           "new_name_comparison_pairs": 0
+        },
+        {
+          "adopted": false,
+          "evidence_attempt": "hyogo_awaji_asset_parcel_and_harima_subject_heritage_three_profiles_one_location_adopted_20261113",
+          "fresh_profile_reference": {
+            "fetched_at": "2026-11-13T08:33:02.878924+00:00",
+            "http_status": 200,
+            "label": "profile-6328128",
+            "page_hash": "f2dde77642a851b9d677b38ffd3b4ae6057ff9cd42ff053d51c12855ce6dc652",
+            "status": "body_acquired",
+            "url": "https://www.hyogo-jinjacho.com/data/6328128.html"
+          },
+          "observation": "原詳細西濱神社/全文ニシハマジンジャ/淡路市明神594の同hash再取得を確認。原地図名住吉神社と、既存登記西濵神社の字形差という旧判断を保持。今回この登記行・名称画像や全町資料を再点検済みとはせず、濱/濵や二名称の対応を自動承認しない。",
+          "scope": "原詳細本文の限定再確認。由緒の創立/改築年代を今回の新同定根拠にしない。",
+          "source_kind": "agency_and_municipal_followup",
+          "status": "additional_material_inspected_existing_name_or_identity_hold_retained"
         }
       ],
       "address": "淡路市明神594",
@@ -879190,100 +879752,6 @@
       },
       "status": "unfinished",
       "surface": "●神社(舟偏に益)",
-      "wikipedia_article_refs": [],
-      "wikipedia_result": "no_exact_title_in_inspected_category_tree"
-    },
-    {
-      "additional_source_reviews": [
-        {
-          "adopted": false,
-          "checked_at": "2026-11-12T07:05:17.639317+00:00",
-          "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-central",
-          "expected_source_hash": "54853c057d78d2928532092356cd99f093a9736875fe5451483b105b6466814f",
-          "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
-          "related_actual_hrefs": [],
-          "result": "no_related_label_in_inspected_indexes",
-          "source_kind": "article_index",
-          "source_publisher": "神社と古事記（非公式二次資料）",
-          "status": "bounded_article_index_scope_recorded"
-        },
-        {
-          "adopted": false,
-          "checked_at": "2026-11-13T06:05:26.808140+00:00",
-          "documented_city_prefix_lead_rows": 0,
-          "evidence_attempt": "hyogo_remaining_fourteen_literal_name_and_address_first_registry_window_20261113",
-          "expected_source_hash": "54853c057d78d2928532092356cd99f093a9736875fe5451483b105b6466814f",
-          "literal_full_address_candidate_rows": 0,
-          "observation": "原詳細/原地図の所在地欠落。同名他所在地の読みを流用しない。",
-          "related_daily_events": 0,
-          "same_name_other_address_rows": 10,
-          "scope": "保存した兵庫月次全206383行と20261112までの8日次19178行の限定照合。原全住所文字列と原名/原地図名だけを使い、読み欠落や施設同一性を自動解除しない。",
-          "source_kind": "government_corporate_register",
-          "source_publisher": "国税庁",
-          "status": "bounded_name_and_address_first_screen_recorded"
-        },
-        {
-          "adopted": false,
-          "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
-          "literal_printed_locality_pairs": 0,
-          "name_comparison_pairs": 0,
-          "new_name_comparison_pairs": 0
-        }
-      ],
-      "address": "",
-      "agency_listing_url": "https://www.hyogo-jinjacho.com/data/6328113.html",
-      "category": "insufficient_evidence_in_inspected_sources",
-      "entry_id": "eb02860f-8645-57a9-b297-190d98c43e2b",
-      "expected_source_hash": "54853c057d78d2928532092356cd99f093a9736875fe5451483b105b6466814f",
-      "facility_id": "cbd9287b-73dc-5b52-a0ee-6d59ca2333cd",
-      "listed_name": "貴船神社",
-      "nta_result": "not checked for current source snapshot",
-      "prefecture": "兵庫県",
-      "prefecture_code": "28",
-      "reading_raw": "キブネジンジャ",
-      "reason": "Hyogo profile address is missing",
-      "source_assessment": {
-        "assessment_group": "missing_complete_location",
-        "checked_at": "2026-11-11T10:14:44.472519+00:00",
-        "disposition": "insufficient_evidence_in_inspected_sources",
-        "new_wikipedia_or_corporate_lookup": false,
-        "observations": [
-          "同じ神社コードの地図XMLと詳細ページを確認。詳細の所在地が空欄又は市区町村名が不完全。"
-        ],
-        "observed_fields": {
-          "facility_code_raw": "6328113",
-          "map_address_raw": "",
-          "map_name_raw": "貴船神社",
-          "profile_address_raw": "",
-          "profile_name_raw": "貴船神社",
-          "profile_reading_raw": "キブネジンジャ"
-        },
-        "references": [
-          {
-            "checked_at": "2026-11-11T10:14:44.472519+00:00",
-            "fetched_at": "2026-11-09T12:53:38.860506+00:00",
-            "locator": "header.hero h1; div.kana; div.code strong; dl dt[所在地] + dd",
-            "page_hash": "9287908d5113ab1ce0f7d72fc60473f85bbb547354bfab16c682b3b96d84d9be",
-            "request_method": "GET",
-            "source_kind": "agency",
-            "url": "https://www.hyogo-jinjacho.com/data/6328113.html"
-          },
-          {
-            "checked_at": "2026-11-11T10:14:44.472519+00:00",
-            "fetched_at": "2026-11-09T09:13:39.120126+00:00",
-            "locator": "Locations/Locate[3633]",
-            "page_hash": "f1efdedb67860bd144e18f97b9c6d9814ac83d072769aed0d17eeb0a43e6aed4",
-            "request_method": "GET",
-            "source_kind": "agency",
-            "url": "https://www.hyogo-jinjacho.com/data/xml.php?ne_lat=36&sw_lat=34&ne_lng=136&sw_lng=134"
-          }
-        ],
-        "remaining_requirement": "同一施設の完全な所在地の根拠。",
-        "scope": "Named agency snapshot and explicitly recorded linked materials only. Earlier Wikipedia/corporate search outcomes remain separately dated. No exhaustive internet or current site-wide absence claim.",
-        "status": "bounded_source_review_completed"
-      },
-      "status": "unfinished",
-      "surface": "貴船神社",
       "wikipedia_article_refs": [],
       "wikipedia_result": "no_exact_title_in_inspected_category_tree"
     },
@@ -1235764,7 +1236232,7 @@
       "data/reviews.json"
     ],
     "resolved_facilities": 287,
-    "retained_unresolved_entries": 10528,
+    "retained_unresolved_entries": 10527,
     "scope": "Previously unassessed source snapshots were read and bound to canonical IDs/hashes; Mie headings, Niigata result cards, Hyogo profile/map pairs, linked Ibaraki details, Aichi POST row and prior Nagasaki official-link observations inspected. Kumamoto actual linked detail pages opened for 114 incomplete-location rows. No new Wikipedia/corporate lookup or exhaustive web-search claim."
   },
   "source_dataset_hashes": {
@@ -1238866,11 +1239334,11 @@
   },
   "totals": {
     "categories": {
-      "insufficient_evidence_in_inspected_sources": 10329,
+      "insufficient_evidence_in_inspected_sources": 10328,
       "investigation_incomplete": 0,
       "judgment_required": 199
     },
     "distinct_surfaces": 4222,
-    "unfinished_entries": 10528
+    "unfinished_entries": 10527
   }
 }
