@@ -11,7 +11,7 @@ from test_corrections import correction
 from njd.__main__ import _effective
 from njd.nationwide import save_collection
 from njd.proposals import import_proposals
-from njd.release import create_release
+from legacy_release import create_release
 from njd.storage import write_json
 from njd.validation import eligible, blocking_problems
 
@@ -98,7 +98,7 @@ class LocationPipelineTests(unittest.TestCase):
             root = Path(td)
             raw, locations, readings = fixture(root)
             write_json(root/'corrections.json', readings)
-            out = _effective(root)
+            out = _effective(root, legacy=True)
             self.assertEqual(len(eligible(out)), 1)
             self.assertEqual(blocking_problems(out), [])
             f = out['facilities'][0]
@@ -113,7 +113,7 @@ class LocationPipelineTests(unittest.TestCase):
             raw, locations, readings = fixture(root)
             result = import_proposals(root, readings, apply=True)
             self.assertEqual(result['added'], 1)
-            self.assertEqual(len(eligible(_effective(root))), 1)
+            self.assertEqual(len(eligible(_effective(root, legacy=True))), 1)
 
     def test_offline_release_archives_location_evidence_and_is_reproducible(self):
         with tempfile.TemporaryDirectory() as td:
@@ -139,6 +139,6 @@ class LocationPipelineTests(unittest.TestCase):
             changed['facilities'][raw['facilities'][0]['id']]['expected_source_hash'] = '0'*64
             write_json(root/'locations.json', changed)
             write_json(root/'corrections.json', readings)
-            out = _effective(root)
+            out = _effective(root, legacy=True)
             self.assertEqual(eligible(out), [])
             self.assertEqual(out['facilities'][0]['address'], '')

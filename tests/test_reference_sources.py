@@ -218,7 +218,7 @@ class ReferenceSourceTests(unittest.TestCase):
         from pathlib import Path
         from unittest.mock import patch
         from njd.nationwide import save_collection
-        from njd.release import create_release
+        from legacy_release import create_release
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);save_collection(root/'data','hiroshima',r.dataset_from_references('34',[reference()]))
             with patch('njd.http.request',side_effect=AssertionError('offline release')):

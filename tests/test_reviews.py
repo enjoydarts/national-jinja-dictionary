@@ -108,7 +108,7 @@ class ReviewsTest(unittest.TestCase):
         from pathlib import Path
         from njd.nationwide import save_collection
         from njd.storage import write_json
-        from njd.release import create_release
+        from legacy_release import create_release
         with tempfile.TemporaryDirectory() as td:
             data=Path(td)/'data';d=build([row(reading_raw='')]);save_collection(data,'example',d)
             doc=decision(d,[dict(surface='架空神社',reading='かくうじんじゃ',basis='user_confirmation',reading_url='')])

@@ -48,7 +48,10 @@ def parser():
     build.add_argument('--samples-only',action='store_true',help='generate only small import samples, never the full dictionaries')
     return p
 
-def _effective(work):
+def _effective(work, *, legacy=False):
+    if not legacy:
+        from njd.canonical import load_effective
+        return load_effective(work)
     from njd.overlays import apply_saved_overlays
     return apply_saved_overlays(merge_collections(work),work)
 
@@ -129,6 +132,9 @@ def main(argv=None):
         output=Path(args.output_dir).expanduser().resolve()
     if args.command=='collect': work.mkdir(parents=True,exist_ok=True)
     if args.command=='collect':
+        if not args.workspace:
+            from njd.canonical import is_canonical, initialize
+            if not is_canonical(work):initialize(work)
         if args.limit<0: raise ValueError('limit must be nonnegative')
         if args.offline and args.refresh: raise ValueError('offline and refresh cannot be combined')
         available=registry()
@@ -136,11 +142,13 @@ def main(argv=None):
         if any(k not in available for k in keys): raise ValueError('unknown or unsupported source key')
         states=run_collections(work,available,keys,offline=args.offline,refresh=args.refresh,
             limit=args.limit or None,cache_dir=cache)
-        if not (work/'identities.json').exists(): write_json(work/'identities.json',{})
-        if not (work/'decisions.json').exists(): write_json(work/'decisions.json',{})
+        from njd.canonical import is_canonical
+        if not is_canonical(work):
+            if not (work/'identities.json').exists(): write_json(work/'identities.json',{})
+            if not (work/'decisions.json').exists(): write_json(work/'decisions.json',{})
         print(json.dumps({k:v for k,v in states.items() if v['source_key'] in keys},ensure_ascii=False))
         return 1 if any(states[available[k]['code']]['status'].startswith('failed') for k in keys) else 0
-    if args.command!='audit':data=_effective(work)
+    if args.command!='audit':data=_effective(work,legacy=bool(args.workspace))
     if args.command=='validate':
         issues=validate(data); write_json((work if args.workspace else output)/'validation.json',issues); _review_lists(data,work if args.workspace else output)
         aliases=sum(bool(f.get('source_alias_of')) for f in data['facilities'])
@@ -149,6 +157,8 @@ def main(argv=None):
     if args.command=='audit':
         # Audit pristine acquired records; human decisions remain separate.
         raw=load_dataset(work/'sources'/(args.source+'.json')) if (work/'sources').exists() else load_dataset(work/'common.json')
+        from njd.canonical import raw_collection
+        raw=raw_collection(raw)
         page=Client(cache,offline=True).fetch(gunma.URL)
         result=audit_gunma(raw,page.text,page.sha256); write_json((work if args.workspace else output)/'source-audit.json',result)
         print(json.dumps(result,ensure_ascii=False)); return 1 if result['mismatches'] else 0

@@ -156,6 +156,13 @@ def metadata_problems(data):
 
 
 def apply_saved_source_aliases(data,data_dir):
+    from njd.canonical import is_canonical, read_judgments
+    if is_canonical(data_dir):
+        decisions=read_judgments(data_dir,'decisions')
+        protected={e['id'] for e in data['entries'] if decisions.get(e['id'],{}).get('status')=='pending'
+            and decisions[e['id']].get('expected_source_hash')==e.get('source_hash')}
+        aliases=read_judgments(data_dir,'source_aliases')
+        return apply_source_aliases(data,aliases,protected_pending_entry_ids=protected) if aliases else data
     from njd.storage import load_dataset
     root=Path(data_dir);path=root/'source_aliases.json'
     if not path.exists():return data

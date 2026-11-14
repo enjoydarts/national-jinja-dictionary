@@ -70,11 +70,11 @@ class SourceAliasIntegrationTests(unittest.TestCase):
         from njd.storage import write_json
         from njd.nationwide import save_collection
         from njd.__main__ import _effective
-        from njd.release import create_release
+        from legacy_release import create_release
         from njd.report import _counts
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);d=data();save_collection(root/'data','kochi',d);write_json(root/'data/source_aliases.json',document(d))
-            self.assertEqual(_counts(_effective(root/'data'))['facilities'],1)
+            self.assertEqual(_counts(_effective(root/'data', legacy=True))['facilities'],1)
             released=create_release(root/'data',root/'out','v-synthetic','a'*40)
             with zipfile.ZipFile(released['archive']) as z:
                 self.assertIn('source_aliases.json',z.namelist())
@@ -133,7 +133,9 @@ class SourceAliasCliCountTests(unittest.TestCase):
         from njd.storage import write_json
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);d=data();save_collection(root/'data','kochi',d);write_json(root/'data/source_aliases.json',document(d));output=io.StringIO()
-            with contextlib.redirect_stdout(output):rc=main(['--data-dir',str(root/'data'),'--output-dir',str(root/'out'),'validate'])
+            from njd.canonical import migrate
+            migrate(root/'data', root/'canonical')
+            with contextlib.redirect_stdout(output):rc=main(['--data-dir',str(root/'canonical'),'--output-dir',str(root/'out'),'validate'])
             result=json.loads(output.getvalue());self.assertEqual(rc,0)
             self.assertEqual(result['facilities'],1);self.assertEqual(result['facility_records'],2)
 
@@ -153,7 +155,7 @@ class SourceAliasReviewRegressionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);d=data('');save_collection(root,'kochi',d);write_json(root/'source_aliases.json',document(d));e=d['entries'][1]
             write_json(root/'decisions.json',{e['id']:dict(expected_source_hash=e['source_hash'],status='pending',reason='missing agency reading')})
-            out=_effective(root)
+            out=_effective(root, legacy=True)
             by_id={x['id']:x for x in out['entries']};facilities={x['id']:x for x in out['facilities']}
             self.assertEqual(by_id[e['id']]['status'],'pending');self.assertNotIn('source_alias_of',facilities[e['facility_id']])
     def test_each_source_witness_field_is_bound_to_the_inspected_observation(self):

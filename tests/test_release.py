@@ -6,7 +6,11 @@ from unittest.mock import patch
 import zipfile
 from test_records import build,row
 from njd.nationwide import save_collection
-from njd.release import create_release
+from njd.release import create_release as _create_release
+
+def create_release(*args, **kwargs):
+    """These cases exercise explicitly supported historical schema-v1 releases."""
+    return _create_release(*args, **kwargs, legacy=True)
 
 class ReleaseTest(unittest.TestCase):
     def test_public_archive_contains_only_ime_dictionaries(self):

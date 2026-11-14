@@ -4,22 +4,25 @@ Version-one projections exist only in memory for the established validators and
 the explicit migration audit. Normal generation never reads legacy overlays.
 """
 import argparse
+from collections import Counter
 import copy
 from contextlib import contextmanager
 import fcntl
-import hashlib
 import json
 from pathlib import Path
+import re
 import shutil
 import tempfile
 
-from njd.storage import json_bytes, load_dataset, write_json
+from njd.storage import load_dataset, write_json
 
 INDEX = 'research_index.json'
 LEGACY = ('locations.json', 'corrections.json', 'reviews.json', 'decisions.json',
           'identities.json', 'source_aliases.json', 'reading_research.json',
           'source_catalog.json', 'manifest.json')
-RESERVED = {'source_record', 'judgments', 'research'}
+RESERVED = {'source_record', 'judgments', 'research', 'observation_history'}
+DERIVED_EVIDENCE = {'correction', 'human_review', 'source_alias_resolution',
+                    'location_research', 'location_supplement'}
 # name, document, dictionary path, target collection
 BINDINGS = (
     ('locations', 'locations.json', ('facilities',), 'facilities'),
@@ -33,17 +36,17 @@ BINDINGS = (
 
 
 def is_canonical(root):
-    return (Path(root) / 'sources' / INDEX).exists()
+    return (Path(root) / 'sources' / INDEX).exists() or (Path(root) / '.canonical-transaction.json').exists()
 
 
 @contextmanager
-def repository_lock(root, *, exclusive=False):
+def repository_lock(root, *, exclusive=False, recovery=False):
     root = Path(root)
     root.mkdir(parents=True, exist_ok=True)
     with (root / '.canonical.lock').open('a') as handle:
         fcntl.flock(handle, fcntl.LOCK_EX if exclusive else fcntl.LOCK_SH)
         try:
-            if (root / '.canonical-transaction.json').exists():
+            if not recovery and (root / '.canonical-transaction.json').exists():
                 raise ValueError('unfinished canonical transaction; recover before reading or writing')
             yield
         finally:
@@ -59,7 +62,7 @@ def _mapping(document, path):
 
 
 def _strip(record):
-    return {k: copy.deepcopy(v) for k, v in record.items() if k not in RESERVED}
+    return {k: copy.deepcopy(v) for k, v in record.items() if k not in RESERVED | DERIVED_EVIDENCE}
 
 
 def raw_collection(document):
@@ -112,14 +115,30 @@ def _project(documents, index):
                 if rid in records[kind]:
                     raise ValueError('duplicate canonical record id: ' + rid)
                 records[kind][rid] = record
+                judgments = record.get('judgments')
+                allowed = {name for name, _, _, target in BINDINGS if target == kind}
+                if not isinstance(judgments, dict) or set(judgments) - allowed:
+                    raise ValueError('unknown or invalid canonical judgment: ' + rid)
+                if any(not isinstance(value, (dict, list)) for value in judgments.values()):
+                    raise ValueError('invalid canonical judgment value: ' + rid)
                 if 'research' in record:
                     if kind != 'entries' or rid in research:
                         raise ValueError('duplicate or invalid research target')
+                    item = record['research']
+                    if (not isinstance(item, dict) or item.get('entry_id') != rid
+                            or item.get('facility_id') != record.get('facility_id')):
+                        raise ValueError('research is not bound to its owning entry/facility: ' + rid)
                     research[rid] = copy.deepcopy(record['research'])
     for name, filename, path, kind in BINDINGS:
         if filename not in result:
-            continue
-        target = _mapping(result[filename], path)
+            if not any(name in r['judgments'] for r in records[kind].values()):
+                continue
+            result[filename] = {} if filename == 'decisions.json' else dict(schema_version=1)
+        target = result[filename]
+        for part in path:
+            target = target.setdefault(part, {})
+        if not isinstance(target, dict):
+            raise ValueError('invalid canonical judgment mapping')
         for rid, record in records[kind].items():
             if name in record.get('judgments', {}):
                 target[rid] = copy.deepcopy(record['judgments'][name])
@@ -207,15 +226,46 @@ def _validate(documents, index):
     ensure_public_metadata(index)
     for doc in documents.values():
         ensure_public_metadata(doc)
+        for kind in ('facilities', 'entries'):
+            for record in doc[kind]:
+                if DERIVED_EVIDENCE & record.keys():
+                    raise ValueError('derived evidence must not duplicate canonical judgments')
+    _validate_identity_links(documents)
     legacy = _project(documents, index)
     expected = _evaluate(legacy)
     for kind in ('facilities', 'entries'):
         actual = {r['id']: _strip(r) for doc in documents.values() for r in doc[kind]}
-        wanted = {r['id']: r for r in expected[kind]}
+        wanted = {r['id']: _strip(r) for r in expected[kind]}
         if actual != wanted:
             changed = sorted(k for k in actual.keys() | wanted.keys() if actual.get(k) != wanted.get(k))
             raise ValueError('adopted values differ from source evidence/judgments: ' + str(changed[:5]))
     return expected
+
+
+def _validate_identity_links(documents):
+    known = {}
+    for doc in documents.values():
+        for fid, item in doc['collection'].get('identity_history', {}).items():
+            known.setdefault(fid, set()).add(item.get('source_hash'))
+        facilities = list(doc['facilities']) + [a['record']
+            for a in doc.get('source_metadata', {}).get('retired_records', []) if a['kind'] == 'facilities']
+        for record in facilities:
+            for observation in [record.get('source_record')] + record.get('observation_history', []):
+                if observation:
+                    known.setdefault(record['id'], set()).add(observation.get('source_hash'))
+    for doc in documents.values():
+        links = doc.get('identity_links', {})
+        if not isinstance(links, dict):
+            raise ValueError('invalid identity links')
+        for source_id, link in links.items():
+            if not isinstance(link, dict) or not link.get('reason'):
+                raise ValueError('identity link requires evidence and reason')
+            target = link.get('facility_id')
+            expected = link.get('expected_source_hash', '')
+            if target not in known or not isinstance(expected, str) or not re.fullmatch('[0-9a-f]{64}', expected):
+                raise ValueError('identity link has unknown target or invalid hash')
+            if expected not in known.get(source_id, set()) | known[target]:
+                raise ValueError('identity link hash does not match current or historical observation')
 
 
 def load_effective(root):
@@ -226,6 +276,220 @@ def load_effective(root):
 def read_judgments(root, kind):
     return export_legacy(root).get(kind + '.json',
         dict(schema_version=1, entries={}) if kind in ('corrections', 'reviews') else {})
+
+
+def research_summary(root):
+    """Compute current research counts; never trust historical snapshot totals."""
+    with repository_lock(root):
+        documents, index = _read(root)
+        effective = _validate(documents, index)
+        tracking = index['metadata'].get('reading_research.json', {}).get('completion_tracking', {})
+        targets = set(index.get('research_order', [])) | set(tracking.get('resolved_entry_ids', []))
+        entries = {e['id']: e for e in effective['entries']}
+        records = {e['id']: e['research'] for d in documents.values() for e in d['entries'] if 'research' in e}
+        retired = {a['record']['id']: a['record'] for d in documents.values()
+                   for a in d.get('source_metadata', {}).get('retired_records', [])
+                   if a['kind'] == 'entries' and ('research' in a['record'] or a['record']['id'] in targets)}
+        targets.update(eid for eid, e in retired.items() if 'research' in e)
+        inactive = {eid: e for eid, e in retired.items() if eid not in entries}
+        entries.update(inactive)
+        records.update({eid: e['research'] for eid, e in inactive.items() if 'research' in e})
+        if targets - entries.keys():
+            raise ValueError('research target missing from active and retired canonical entries')
+        pending = {eid for eid in targets if entries[eid]['status'] == 'pending'}
+        categories = Counter(records.get(eid, {}).get('category', 'unclassified_pending') for eid in pending)
+        return dict(targets=len(targets), pending=len(pending), resolved=len(targets-pending), retired=len(inactive),
+            categories=dict(sorted(categories.items())),
+            notice='Current canonical states; resolution counts do not assert full prefecture coverage.')
+
+
+def initialize(root):
+    """Start a new empty canonical repository; never implicitly convert old data."""
+    root = Path(root)
+    with repository_lock(root, exclusive=True):
+        if any((root / name).exists() for name in LEGACY) or list((root / 'sources').glob('*.json')):
+            raise ValueError('existing inputs require explicit migration')
+        documents, index = _pack({})
+        _write_sources(root / 'sources', documents, index)
+
+
+def _commit_sources(root, documents, index, *, retire_legacy=False):
+    stage = Path(tempfile.mkdtemp(prefix='.canonical-stage-', dir=root))
+    journal = root / '.canonical-transaction.json'
+    moved = installed = False
+    cleanup = False
+    retired = []
+    try:
+        _write_sources(stage / 'sources', documents, index)
+        _validate(*_read(stage))
+        write_json(journal, dict(stage=stage.name))
+        (root / 'sources').rename(stage / 'previous')
+        moved = True
+        (stage / 'sources').rename(root / 'sources')
+        installed = True
+        if retire_legacy:
+            (stage / 'legacy').mkdir()
+            for name in LEGACY:
+                if (root / name).exists():
+                    (root / name).rename(stage / 'legacy' / name)
+                    retired.append(name)
+        journal.unlink()
+        cleanup = True
+    except BaseException:
+        if installed:
+            shutil.rmtree(root / 'sources')
+        if moved:
+            (stage / 'previous').rename(root / 'sources')
+        for name in retired:
+            (stage / 'legacy' / name).rename(root / name)
+        journal.unlink(missing_ok=True)
+        cleanup = True
+        raise
+    finally:
+        # If rollback itself failed, the journal and backup are the only
+        # recovery path. Never discard them in that case.
+        if cleanup:
+            shutil.rmtree(stage, ignore_errors=True)
+
+
+def recover(root):
+    """Roll back a crashed generation switch under the same writer lock."""
+    root = Path(root)
+    with repository_lock(root, exclusive=True, recovery=True):
+        journal = root / '.canonical-transaction.json'
+        if not journal.exists():
+            return
+        name = load_dataset(journal).get('stage', '')
+        if not name.startswith('.canonical-stage-') or Path(name).name != name:
+            raise ValueError('invalid canonical recovery path')
+        stage = root / name
+        if (stage / 'previous').exists():
+            if (root / 'sources').exists():
+                shutil.rmtree(root / 'sources')
+            (stage / 'previous').rename(root / 'sources')
+        elif not (root / 'sources').exists():
+            raise ValueError('canonical recovery has no previous generation')
+        for path in (stage / 'legacy').glob('*.json'):
+            if path.name not in LEGACY or (root / path.name).exists():
+                raise ValueError('canonical recovery legacy-file conflict')
+            path.rename(root / path.name)
+        journal.unlink()
+        shutil.rmtree(stage, ignore_errors=True)
+
+
+def update_repository(root, change, *, apply=True):
+    """Validate one in-memory edit, then switch the entire generation atomically."""
+    root = Path(root)
+    with repository_lock(root, exclusive=True):
+        documents, index = _read(root)
+        previous = _validate(documents, index)
+        legacy = _project(documents, index)
+        result = change(legacy)
+        _retire_disappeared(documents, legacy)
+        after, new_index = _pack(legacy)
+        current = _evaluate(legacy)
+        states = {e['id']: e for e in current['entries']}
+        old_entries = {e['id']: e for e in previous['entries']}
+        for key, doc in after.items():
+            before = documents.get(key, {})
+            for kind in ('facilities', 'entries'):
+                old = {r['id']: r for r in before.get(kind, [])}
+                for record in doc[kind]:
+                    prior = old.get(record['id'])
+                    if not prior:
+                        continue
+                    history = copy.deepcopy(prior.get('observation_history', []))
+                    if prior['source_record'] != record['source_record'] and prior['source_record'] is not None:
+                        history.append(copy.deepcopy(prior['source_record']))
+                    if history:
+                        record['observation_history'] = history
+                    if kind == 'entries' and 'research' in record:
+                        old_status = old_entries.get(record['id'], {}).get('status')
+                        new_status = states[record['id']]['status']
+                        if old_status != new_status:
+                            resolution = dict(previous_status=old_status, status=new_status,
+                                reason=states[record['id']]['reason'], reading=states[record['id']]['reading'])
+                            record['research'].setdefault('resolution_history', []).append(resolution)
+                            record['research']['resolution'] = resolution
+        _validate(after, new_index)
+        if apply and (after != documents or new_index != index):
+            _commit_sources(root, after, new_index)
+        return result
+
+
+def _retire_disappeared(documents, legacy):
+    """Preserve vanished observations/derived rows without keeping them active."""
+    def retire(key, kind, record):
+        raw = legacy['sources/' + key + '.json']
+        archive = raw.setdefault('retired_records', [])
+        item = dict(kind=kind, record=copy.deepcopy(record),
+            reason='Absent from complete source snapshot or no longer derived by valid source-bound review.')
+        if item not in archive:
+            archive.append(item)
+        for name, filename, path, target in BINDINGS:
+            if target == kind and filename in legacy:
+                _mapping(legacy[filename], path).pop(record['id'], None)
+        if kind == 'entries' and 'reading_research.json' in legacy:
+            research = legacy['reading_research.json']
+            research['records'] = [r for r in research.get('records', []) if r['entry_id'] != record['id']]
+
+    for key, doc in documents.items():
+        raw = legacy.get('sources/' + key + '.json')
+        if raw is None:
+            raise ValueError('source removal requires an explicit archive')
+        prior_archive = doc.get('source_metadata', {}).get('retired_records', [])
+        if prior_archive:
+            raw.setdefault('retired_records', copy.deepcopy(prior_archive))
+        for kind in ('facilities', 'entries'):
+            ids = {r['id'] for r in raw[kind]}
+            for record in doc[kind]:
+                if record['source_record'] is not None and record['id'] not in ids:
+                    retire(key, kind, record)
+    _restore_returned(legacy)
+    # A changed parent can invalidate a split and remove its children even
+    # when no raw observation disappeared. Archive those judgments as well.
+    effective = _evaluate(legacy)
+    active = {e['id'] for e in effective['entries']}
+    for key, doc in documents.items():
+        for record in doc['entries']:
+            if record['source_record'] is None and record['id'] not in active:
+                retire(key, 'entries', record)
+
+
+def _restore_returned(legacy):
+    """Exact reappearances retain prior decisions, including derived exclusions."""
+    archives = [a for name, raw in legacy.items() if name.startswith('sources/')
+                for a in raw.get('retired_records', [])]
+    if not archives:
+        return
+    # Locations can change the bound hash; reviews can create derived rows.
+    # Re-evaluate after each restored layer rather than guessing their state.
+    for _ in range(len(BINDINGS) + 1):
+        effective = _evaluate(legacy)
+        current = {kind: {r['id']: r for r in effective[kind]} for kind in ('facilities', 'entries')}
+        changed = False
+        for archived in reversed(archives):
+            kind = archived['kind']; record = archived['record']; rid = record['id']
+            active = current[kind].get(rid)
+            original = record.get('source_record') or record
+            if active is None or original.get('source_hash') != active.get('source_hash'):
+                continue
+            for name, filename, path, target in BINDINGS:
+                if target != kind or name not in record['judgments']:
+                    continue
+                document = legacy.setdefault(filename, {} if filename == 'decisions.json' else dict(schema_version=1))
+                for part in path:
+                    document = document.setdefault(part, {})
+                if rid not in document:
+                    document[rid] = copy.deepcopy(record['judgments'][name])
+                    changed = True
+            if kind == 'entries' and 'research' in record:
+                research = legacy.setdefault('reading_research.json', dict(schema_version=1, records=[]))
+                if not any(r['entry_id'] == rid for r in research['records']):
+                    research['records'].append(copy.deepcopy(record['research']))
+                    changed = True
+        if not changed:
+            break
 
 
 def _pack(legacy):
@@ -243,7 +507,7 @@ def _pack(legacy):
         for kind in targets:
             doc[kind] = []
             for source in raw[kind]:
-                current = copy.deepcopy(adopted[kind][source['id']])
+                current = _strip(adopted[kind][source['id']])
                 if RESERVED & current.keys():
                     raise ValueError('reserved canonical field in legacy record')
                 current.update(source_record=copy.deepcopy(source), judgments={})
@@ -256,7 +520,7 @@ def _pack(legacy):
         documents[key] = doc
     for eid, entry in adopted['entries'].items():
         if eid not in targets['entries']:
-            current = copy.deepcopy(entry)
+            current = _strip(entry)
             current.update(source_record=None, judgments={})
             targets['entries'][eid] = current
             documents[owners[entry['facility_id']]]['entries'].append(current)
@@ -273,7 +537,8 @@ def _pack(legacy):
         if key not in documents:
             raise ValueError('unmatched identity source: ' + key)
         documents[key]['identity_links'] = metadata['identities.json'].pop(key)
-    index = dict(schema_version=2, kind='canonical_index', source_keys=sorted(documents), metadata=metadata)
+    index = dict(schema_version=2, kind='canonical_index', source_keys=sorted(documents), metadata=metadata,
+        metadata_basis='Inherited collection/research snapshots, including old counts and hashes; generate current counts from adopted records.')
     research = metadata.get('reading_research.json')
     if research is not None:
         records = research.pop('records', [])
@@ -339,13 +604,47 @@ def migrate(root, destination):
                 entries=sum(len(d['entries']) for d in documents.values()), lossless=True)
 
 
+def install_migration(root, migrated):
+    """Install a reviewed migration only if every original input still matches."""
+    root = Path(root)
+    with repository_lock(migrated):
+        documents, index = _read(migrated)
+        _validate(documents, index)
+        expected = _project(documents, index)
+    with repository_lock(root, exclusive=True):
+        if is_canonical(root):
+            raise ValueError('installation target must still be schema v1')
+        paths = list((root / 'sources').glob('*.json'))
+        paths += [root / name for name in LEGACY if (root / name).exists()]
+        actual = {str(p.relative_to(root)): load_dataset(p) for p in paths}
+        if actual != expected:
+            raise ValueError('migration input has changed; regenerate and review before installation')
+        _commit_sources(root, documents, index, retire_legacy=True)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
     command = sub.add_parser('migrate')
     command.add_argument('--data-dir', type=Path, default=Path('data'))
     command.add_argument('--destination', type=Path, required=True)
+    recovery = sub.add_parser('recover')
+    recovery.add_argument('--data-dir', type=Path, default=Path('data'))
+    summary = sub.add_parser('summary')
+    summary.add_argument('--data-dir', type=Path, default=Path('data'))
+    install = sub.add_parser('install')
+    install.add_argument('--data-dir', type=Path, default=Path('data'))
+    install.add_argument('--migrated', type=Path, required=True)
     args = parser.parse_args(argv)
+    if args.command == 'recover':
+        recover(args.data_dir)
+        return 0
+    if args.command == 'summary':
+        print(json.dumps(research_summary(args.data_dir), ensure_ascii=False))
+        return 0
+    if args.command == 'install':
+        install_migration(args.data_dir, args.migrated)
+        return 0
     print(json.dumps(migrate(args.data_dir, args.destination), ensure_ascii=False))
     return 0
 
