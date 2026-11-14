@@ -1,4 +1,175 @@
 {
+  "catalog_entries": [
+    {
+      "position": 46,
+      "record": {
+        "agency_name": "沖縄県神社庁",
+        "candidate_discovery_url": "https://www.okayama-jinjacho.or.jp/link/",
+        "candidate_url": "https://jinjacho.naminouegu.jp/",
+        "collection": {
+          "additional_bounded_followup": {
+            "checked_at": "2026-11-12T01:50:31.487260+00:00",
+            "entry_ids": [
+              "0fa69e95-0cf4-5f5a-b5c2-e711839bbff5",
+              "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
+              "bd9d9932-4585-57de-8ecb-6c76b53d3a69"
+            ],
+            "evidence_data": "data/reading_research.json additional_source_reviews",
+            "scope": "記録した追加の個別資料・実リンクを点検。全サイト・ウェブ全体の不存在又は読み確認済みとは扱わない。",
+            "verified_proposals": 0
+          },
+          "cached_municipality_suffix_diagnostic": {
+            "checked_at": "2026-11-13T01:02:34.656000+00:00",
+            "diagnostic_suffix_observations": 0,
+            "evidence_attempt": "cached_29_prefectures_8223_municipality_suffix_diagnostic_20261113",
+            "evidence_data": "data/reading_research.json",
+            "new_verified_entries": 0,
+            "scope": "全国47都道府県を調査対象とするうち、現保留の数字住所8391登録から条件を満たす29都道府県8223登録を取得済み月次29本・差分7日分だけで診断。数字なし2185登録と除外条件168登録は今回の対象外。接頭辞除去後の末尾一致は全地番・全所在地・旧新自治体又は施設同一性の証明ではなく、全資料・全国全保留の調査完了ではない。",
+            "screened_pending_entries": 3
+          },
+          "canonical_data": {
+            "entries": 10,
+            "entry_status_counts": {
+              "pending": 10
+            },
+            "facilities": 10,
+            "facility_status_counts": {
+              "verified": 10
+            },
+            "path": "data/sources/okinawa.json",
+            "verified_entries": 0,
+            "verified_facilities": 10
+          },
+          "checked_at": null,
+          "cultural_classification_query_followups": [
+            {
+              "attempt_id": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+              "checked_at": "2026-11-13T07:00:39.735014+00:00",
+              "completed_queries": 2,
+              "csv_row_observations": 6,
+              "evidence_data": "data/reading_research.json",
+              "fixed_target_entries": 3,
+              "name_comparison_pairs": 0,
+              "new_verified_entries": 0,
+              "queries_with_csv": 2,
+              "scope": "親名称の同都道府県内文字列一致だけの限定照合。CSVには読み欄がなく、個別詳細以外を採用しない。"
+            }
+          ],
+          "facilities_collected": 10,
+          "fields_observed": {
+            "address": 10,
+            "facility_official_url": 6,
+            "name": 10,
+            "reading_raw": 0
+          },
+          "inspection_evidence": [],
+          "kojiki_recorded_article_followup_20261114": {
+            "checked_at": "2026-11-14T06:49:58.137312+00:00",
+            "evidence_attempt": "okinawa_recorded_kojiki_article_asato_prefix_full_reading_not_short_name_adopted_20261114",
+            "inspected_article_pages": 1,
+            "new_verified_entries": 0,
+            "scope": "既存の沖縄索引調査で記録済みだった未取得1リンクを実本文で照合。同住所の安里八幡宮の全文かなは確認したが、原八幡宮の読みとして冠称を削って採用せず0。沖縄の残2登録や全別称/全資料の精査ではない。"
+          },
+          "latest_additional_reading_followup": {
+            "checked_at": "2026-11-12T07:05:17.639317+00:00",
+            "entry_ids": [],
+            "evidence_data": "data/corrections.json; data/reading_research.json",
+            "scope": "独立二次記事の主対象・全文かな・全住所を原掲載へ照合。明示併記は選択理由と原文を保持し、読み疑問/別称混在/字名差/空白等は保留。取得済み関連リンクの限定範囲で、県内全件調査完了ではない。",
+            "verified_entries": 0
+          },
+          "listing_authority_status": "agency_site",
+          "meguri_bounded_all_linked_index_pages_20261114": {
+            "checked_at": "2026-11-14T02:21:33.578963+00:00",
+            "evidence_attempt": "meguri_six_remaining_prefectures_sixteen_index_pages_twenty_eight_pending_no_adoption_20261114",
+            "index_pages": 1,
+            "index_reference_keys": [
+              "47actual"
+            ],
+            "new_verified_entries": 0,
+            "scope": "取得した一覧の名称完全一致文字リンク候補の限定照合。全主紹介/別称/県内全資料の精査ではない。",
+            "selected_pending_entries": 3
+          },
+          "national_cultural_property_shrine_query_followup_20261113": {
+            "checked_at": "2026-11-13T06:06:42.442341+00:00",
+            "csv_data_rows": 3,
+            "evidence_data": "data/reading_research.json",
+            "fixed_name_comparison_targets": 3,
+            "new_verified_entries": 0,
+            "scope": "当県と語「神社」に限定した文化庁検索/CSVの名称・所在地の比較。全文化財・全神社の読み確認ではない。",
+            "search_results": 2
+          },
+          "pages_fetched": 1,
+          "reason": "Saved official listed scope; no claim of all shrines in this prefecture.",
+          "record_fetched_at_range": [
+            "2026-11-08T14:25:43.505616+00:00",
+            "2026-11-08T14:25:43.505616+00:00"
+          ],
+          "remaining_scope": "読み公式補完、再配布条件確認。",
+          "saved_listing_page_count": 1,
+          "saved_listing_page_examples": [
+            {
+              "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+              "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+              "url": "https://jinjacho.naminouegu.jp/"
+            }
+          ],
+          "source_rows_observed": 10,
+          "status": "collected",
+          "stored_coverage": "all discoverable listing pages",
+          "stored_pages_fetched": 1,
+          "unfinished_reading_summary": {
+            "categories": {
+              "insufficient_evidence_in_inspected_sources": 1,
+              "investigation_incomplete": 0,
+              "judgment_required": 2
+            },
+            "evidence_data": "data/reading_research.json",
+            "nta_current_targets_checked": 3,
+            "unfinished_entries": 3
+          }
+        },
+        "conditions": {
+          "data_use_conditions": "開いた範囲に再配布を認める条件を確認できず。私的利用と公開辞書での再配布は分けて追加調査。",
+          "redistribution_permission": "unconfirmed",
+          "robots_initial_inspection": {
+            "checked_at": "2026-11-08T13:14:40.039358+00:00",
+            "effective_url": "https://jinjacho.naminouegu.jp/robots.txt",
+            "http_status": 404,
+            "outcome": "HTTP 404",
+            "permission_note": "robotsの取得成功・404・規則不在はデータの再配布許諾を意味しない。",
+            "url": "https://jinjacho.naminouegu.jp/robots.txt"
+          },
+          "terms_pages": []
+        },
+        "initial_survey": {
+          "acquisition_method": "トップ同一ページの10社一覧、アンカーと一部詳細/施設公式リンク。",
+          "checked_at": "2026-11-08T13:14:40.039358+00:00",
+          "coverage_explanation": "神社本庁包括下の県内10社と明記し一覧を掲載。",
+          "published_fields": "神社名・所在地・電話・一部公式サイトURL。読みは一覧閲覧範囲でなし。"
+        },
+        "listing_urls": [
+          "https://jinjacho.naminouegu.jp/"
+        ],
+        "official_url": "https://jinjacho.naminouegu.jp/",
+        "official_verification": {
+          "checked_at": "2026-11-08T13:14:40.039358+00:00",
+          "evidence": "トップで神社本庁の地方機関として昭和47年5月15日設立と明記、波上宮内の住所・電話を掲載。",
+          "evidence_pages": [
+            {
+              "checked_at": "2026-11-08T13:14:40.039358+00:00",
+              "requested_url": "https://jinjacho.naminouegu.jp/",
+              "status": 200,
+              "url": "https://jinjacho.naminouegu.jp/"
+            }
+          ],
+          "initial_status": "本文確認済み",
+          "status": "verified_opened"
+        },
+        "prefecture": "沖縄県",
+        "prefecture_code": "47"
+      }
+    }
+  ],
   "collection": {
     "agency": "沖縄県神社庁",
     "coverage": "all discoverable listing pages",
@@ -88,11 +259,41 @@
   },
   "entries": [
     {
-      "checked_at": "2026-11-08T14:25:43.505616+00:00",
+      "checked_at": "2026-11-09",
       "evidence": "p#naminoue: 名称=波上宮; 掲載読み=; 所在地=沖縄県那覇市若狭1-25-11",
       "facility_id": "0568f91b-6c07-506e-9521-bd7add0aa24f",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "a27bfd41-7cef-5cb7-9a83-23d08852c14b",
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "なみのうえぐう"
+          },
+          "expected_source_hash": "c407eb53311b4457fe0ad6777e69438c554d55565f2366d1c60ec914a547ac94",
+          "facility_id": "0568f91b-6c07-506e-9521-bd7add0aa24f",
+          "identity_match": "掲載名と参照名が一致。参照資料の所在地を神社庁掲載所在地と照合。取得原文・ID・ハッシュは保持。",
+          "original": {
+            "address": "沖縄県那覇市若狭1-25-11",
+            "listing_url": "https://jinjacho.naminouegu.jp/",
+            "name_raw": "波上宮",
+            "reading_raw": ""
+          },
+          "reason": "神社庁掲載の全文読みが空欄のため、実際に開いた同名・同所在地の参照資料の全文読みを採用。",
+          "references": [
+            {
+              "address_raw": "沖縄県那覇市若狭1-25-11",
+              "checked_at": "2026-11-09",
+              "excerpt": "波上宮 なみのうえぐう スポット\n住所 | 沖縄県那覇市若狭1-25-11",
+              "name_raw": "波上宮",
+              "reading_raw": "なみのうえぐう",
+              "source_kind": "article",
+              "title": "波上宮（沖縄県／那覇市街）｜るるぶ&more.",
+              "url": "https://rurubu.jp/andmore/spot/80042428"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "波上宮",
       "normalization": [
@@ -100,22 +301,75 @@
         "katakana to hiragana"
       ],
       "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
-      "reading": "",
+      "reading": "なみのうえぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://jinjacho.naminouegu.jp/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://rurubu.jp/andmore/spot/80042428",
+      "reason": "",
       "semantic_type": "proper_noun",
       "source_hash": "c407eb53311b4457fe0ad6777e69438c554d55565f2366d1c60ec914a547ac94",
-      "status": "pending",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#naminoue: 名称=波上宮; 掲載読み=; 所在地=沖縄県那覇市若狭1-25-11",
+        "facility_id": "0568f91b-6c07-506e-9521-bd7add0aa24f",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "a27bfd41-7cef-5cb7-9a83-23d08852c14b",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "波上宮",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "c407eb53311b4457fe0ad6777e69438c554d55565f2366d1c60ec914a547ac94",
+        "status": "pending",
+        "surface": "波上宮"
+      },
+      "status": "verified",
       "surface": "波上宮"
     },
     {
-      "checked_at": "2026-11-08T14:25:43.505616+00:00",
+      "checked_at": "2026-11-09",
       "evidence": "p#futenma: 名称=普天満宮; 掲載読み=; 所在地=沖縄県宜野湾市普天間１丁目２７番１０号",
       "facility_id": "0d103f85-e978-5e07-8a37-70ad5cbdbd9b",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "c0ae69e5-f371-5d52-9975-85f291c9692d",
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ふてんまぐう"
+          },
+          "expected_source_hash": "e441a806a5c4ad3af913dccd1073f4f84feddd8bd0f5f855dfcb1237543fe748",
+          "facility_id": "0d103f85-e978-5e07-8a37-70ad5cbdbd9b",
+          "identity_match": "掲載名と参照名が一致。参照資料の所在地を神社庁掲載所在地と照合。取得原文・ID・ハッシュは保持。",
+          "original": {
+            "address": "沖縄県宜野湾市普天間１丁目２７番１０号",
+            "listing_url": "https://jinjacho.naminouegu.jp/",
+            "name_raw": "普天満宮",
+            "reading_raw": ""
+          },
+          "reason": "神社庁掲載の全文読みが空欄のため、実際に開いた同名・同所在地の参照資料の全文読みを採用。",
+          "references": [
+            {
+              "address_raw": "沖縄県宜野湾市普天間１−２７−１０",
+              "checked_at": "2026-11-09",
+              "excerpt": "普天満宮（ふてんまぐう）とは、沖縄県宜野湾市普天間にある神社\n沖縄県宜野湾市普天間１−２７−１０",
+              "name_raw": "普天満宮",
+              "reading_raw": "ふてんまぐう",
+              "source_kind": "shrine_official",
+              "title": "普天満宮とは | 普天満宮 公式サイト",
+              "url": "https://futenmagu.or.jp/about/"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "普天満宮",
       "normalization": [
@@ -123,22 +377,75 @@
         "katakana to hiragana"
       ],
       "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
-      "reading": "",
+      "reading": "ふてんまぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://jinjacho.naminouegu.jp/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://futenmagu.or.jp/about/",
+      "reason": "",
       "semantic_type": "proper_noun",
       "source_hash": "e441a806a5c4ad3af913dccd1073f4f84feddd8bd0f5f855dfcb1237543fe748",
-      "status": "pending",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#futenma: 名称=普天満宮; 掲載読み=; 所在地=沖縄県宜野湾市普天間１丁目２７番１０号",
+        "facility_id": "0d103f85-e978-5e07-8a37-70ad5cbdbd9b",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "c0ae69e5-f371-5d52-9975-85f291c9692d",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "普天満宮",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "e441a806a5c4ad3af913dccd1073f4f84feddd8bd0f5f855dfcb1237543fe748",
+        "status": "pending",
+        "surface": "普天満宮"
+      },
+      "status": "verified",
       "surface": "普天満宮"
     },
     {
-      "checked_at": "2026-11-08T14:25:43.505616+00:00",
+      "checked_at": "2026-11-09",
       "evidence": "p#miyakojinja: 名称=識名宮; 掲載読み=; 所在地=沖縄県那覇市繁多川４丁目１－４３",
       "facility_id": "6a20924c-c154-5264-ae97-08df658df876",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "5a62b1b0-ef67-5938-a6b5-d37e10d43a2b",
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "しきなぐう"
+          },
+          "expected_source_hash": "8bb411b13d7e2d16aa7578b3b20be6e61fdaed4e01b9096578f14f182778beb7",
+          "facility_id": "6a20924c-c154-5264-ae97-08df658df876",
+          "identity_match": "掲載名と参照名が一致。参照資料の所在地を神社庁掲載所在地と照合。取得原文・ID・ハッシュは保持。",
+          "original": {
+            "address": "沖縄県那覇市繁多川４丁目１－４３",
+            "listing_url": "https://jinjacho.naminouegu.jp/",
+            "name_raw": "識名宮",
+            "reading_raw": ""
+          },
+          "reason": "神社庁掲載の全文読みが空欄のため、実際に開いた同名・同所在地の参照資料の全文読みを採用。",
+          "references": [
+            {
+              "address_raw": "沖縄県那覇市繁多川4丁目1-43",
+              "checked_at": "2026-11-09",
+              "excerpt": "識名宮(しきなぐう) | 琉球八社の一つ！お守りや洞窟、駐車場などをご紹介！\n住所 | 沖縄県那覇市繁多川4丁目1-43",
+              "name_raw": "識名宮",
+              "reading_raw": "しきなぐう",
+              "source_kind": "article",
+              "title": "識名宮(しきなぐう) | 琉球八社の一つ！お守りや洞窟、駐車場などをご紹介！",
+              "url": "https://okinawa-bookmark.com/castles/shikinagu/"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "識名宮",
       "normalization": [
@@ -146,14 +453,37 @@
         "katakana to hiragana"
       ],
       "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
-      "reading": "",
+      "reading": "しきなぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://jinjacho.naminouegu.jp/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://okinawa-bookmark.com/castles/shikinagu/",
+      "reason": "",
       "semantic_type": "proper_noun",
       "source_hash": "8bb411b13d7e2d16aa7578b3b20be6e61fdaed4e01b9096578f14f182778beb7",
-      "status": "pending",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#miyakojinja: 名称=識名宮; 掲載読み=; 所在地=沖縄県那覇市繁多川４丁目１－４３",
+        "facility_id": "6a20924c-c154-5264-ae97-08df658df876",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "5a62b1b0-ef67-5938-a6b5-d37e10d43a2b",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "識名宮",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "8bb411b13d7e2d16aa7578b3b20be6e61fdaed4e01b9096578f14f182778beb7",
+        "status": "pending",
+        "surface": "識名宮"
+      },
+      "status": "verified",
       "surface": "識名宮"
     },
     {
@@ -162,6 +492,7 @@
       "facility_id": "71e2dbee-9796-55ba-bb19-db707f270ac7",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "0fa69e95-0cf4-5f5a-b5c2-e711839bbff5",
+      "judgments": {},
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "八幡宮",
       "normalization": [
@@ -174,17 +505,206 @@
       "reading_source_kind": "agency",
       "reading_url": "https://jinjacho.naminouegu.jp/",
       "reason": "missing agency reading",
+      "research": {
+        "additional_source_reviews": [
+          {
+            "checked_at": "2026-11-12T01:48:32.958002+00:00",
+            "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+            "fetched_at": "2026-11-12T01:46:47.485847+00:00",
+            "next_links": [
+              "https://name.sijisuru.com/helps/regulation",
+              "https://name.sijisuru.com/helps/menseki",
+              "https://name.sijisuru.com/inquiry/owner"
+            ],
+            "observation": "神社庁掲載の実href。公式本文で名称・同住所を確認したが全文かな読みはない。",
+            "page_hash": "7cf5bb1759e4ddfba0a5496cb0223df6b1b8e3b614e4a79c14a699116c231f40",
+            "remaining_requirement": "名称・全文読み・全所在地と読みの一次出典又は検証可能な編纂根拠を確認する。",
+            "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+            "source_kind": "official_shrine",
+            "status": "inspected_no_adopted_reading",
+            "title": "安里八幡宮公式サイト",
+            "url": "http://asatohachimangu.net"
+          },
+          {
+            "checked_at": "2026-11-12T01:48:32.958002+00:00",
+            "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+            "fetched_at": "2026-11-12T01:46:35.045787+00:00",
+            "next_links": [
+              "https://name.sijisuru.com/helps/regulation",
+              "https://name.sijisuru.com/helps/menseki",
+              "https://name.sijisuru.com/inquiry/owner"
+            ],
+            "observation": "神社庁本文に実リンク・名称対応・全住所あり。本文に全文かな読みなし。",
+            "page_hash": "14feb093ed0837aeaa4068dea2364db59c2f88c28af3fef66a89d2dd829f9442",
+            "remaining_requirement": "名称・全文読み・全所在地と読みの一次出典又は検証可能な編纂根拠を確認する。",
+            "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+            "source_kind": "official_agency",
+            "status": "inspected_no_adopted_reading",
+            "title": "沖縄県神社庁 八幡宮",
+            "url": "https://www.jinjacho.naminouegu.jp/asato.html"
+          },
+          {
+            "address_raw": "沖縄県那覇市安里三丁目19番14号",
+            "authority_status": "non_official_secondary_directory",
+            "candidate_status": "needs_review",
+            "checked_at": "2026-11-12T01:48:32.958002+00:00",
+            "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+            "fetched_at": "2026-11-12T01:47:21.470904+00:00",
+            "locator": "沖縄県 神社一覧 > 八幡宮の見出しおよび直下住所",
+            "name_raw": "八幡宮",
+            "next_links": [
+              "https://name.sijisuru.com/helps/regulation",
+              "https://name.sijisuru.com/helps/menseki",
+              "https://name.sijisuru.com/inquiry/owner"
+            ],
+            "observation": "名称と全文読みの組合せを採用根拠として確定していない。",
+            "page_hash": "c91c814954f12df4dc6dfd74c5d502989ed48384b93bf353c93ca867ae415140",
+            "provenance_limitation": "掲載本文は全文読み・同住所を明示するが、読みの一次資料・編纂方法は確認できない。公式資料とは分類しない。",
+            "reading_raw": "はちまんぐう",
+            "remaining_requirement": "名称・全文読み・全所在地と読みの一次出典又は検証可能な編纂根拠を確認する。",
+            "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+            "source_kind": "article",
+            "status": "secondary_reading_candidate_not_adopted",
+            "title": "沖縄県 神社一覧 | なまえさあち",
+            "url": "https://name.sijisuru.com/jinja/lists?pref=%E6%B2%96%E7%B8%84%E7%9C%8C"
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-12T07:05:17.639317+00:00",
+            "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-coast",
+            "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+            "observation": "実索引の名称リード範囲だけの観測。関連ラベルがない場合も、資料全体に読みがないとは断定せず別資料調査を続ける。本文の当該正式名・全文かな・全所在地の同定がない登録を解除しない。",
+            "related_actual_hrefs": [
+              "https://www.buccyake-kojiki.com/archives/1051425255.html"
+            ],
+            "result": "selected_articles_without_bound_main_subject_comparison",
+            "source_kind": "article_index",
+            "source_publisher": "神社と古事記（非公式二次資料）",
+            "status": "bounded_article_index_scope_recorded"
+          },
+          {
+            "adopted": false,
+            "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+            "literal_printed_locality_pairs": 0,
+            "name_comparison_pairs": 0,
+            "new_name_comparison_pairs": 0
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-14T02:21:33.578963+00:00",
+            "evidence_attempt": "meguri_six_remaining_prefectures_sixteen_index_pages_twenty_eight_pending_no_adoption_20261114",
+            "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+            "index_reference_keys": [
+              "47actual"
+            ],
+            "observation": "取得済み一覧の名称完全一致文字リンク候補は未発見。全個別本文/別称/全県資料に存在しないという判定ではない。",
+            "status": "bounded_prefecture_index_scan_no_matching_name_card"
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-14T06:49:58.137312+00:00",
+            "evidence_attempt": "okinawa_recorded_kojiki_article_asato_prefix_full_reading_not_short_name_adopted_20261114",
+            "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+            "observation": "同住所で本文対象名は安里八幡宮、明示全文かなはあさとはちまんぐう。原登録名八幡宮に対する独立全文かなの直接記載とはせず、冠称の追加/削除や読みの切出しを行わない。原名/空かな/原所在地/既存判断を保持し保留維持。",
+            "reference": {
+              "address_raw": "沖縄県那覇市安里3-19-14",
+              "excerpt": "安里八幡宮（あさとはちまんぐう） / 沖縄県那覇市安里3-19-14",
+              "fetched_at": "2026-11-14T06:48:49.992121+00:00",
+              "locator": "div.article-body の住所表示と直後の主対象紹介文",
+              "name_raw": "安里八幡宮",
+              "page_hash": "af4e770e9985f32028d1cde1977e97fa5d15b59a429258442d21197b76bcead7",
+              "reading_raw": "あさとはちまんぐう",
+              "reading_scope": "full_name_for_printed_prefixed_name",
+              "rights_scope": "既存調査で本文確認済みの運営表示/免責事項/プライバシーポリシーとその元取得日時/hashを参照。非公式二次資料であり神社/神社庁の公式発音には分類しない。今回の1本文に最小事実記録の明示禁止は未観測だが包括転載許諾とはしない。社名/全文かな/全所在地とURL/hash/時点/位置/採否だけ保存し、説明本文/画像/HTML/個人情報/連絡先/キャッシュは収録しない。",
+              "source_kind": "independent_secondary_shrine_article",
+              "source_publisher": "神社と古事記（非公式二次資料）",
+              "title": "安里八幡宮　沖縄県那覇市安里 - 神社と古事記",
+              "url": "https://www.buccyake-kojiki.com/archives/1051425255.html"
+            },
+            "status": "prefixed_name_full_reading_not_sliced_to_original_short_name"
+          }
+        ],
+        "address": "沖縄県那覇市安里3-19-14",
+        "agency_listing_url": "https://jinjacho.naminouegu.jp/",
+        "category": "insufficient_evidence_in_inspected_sources",
+        "entry_id": "0fa69e95-0cf4-5f5a-b5c2-e711839bbff5",
+        "expected_source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+        "facility_id": "71e2dbee-9796-55ba-bb19-db707f270ac7",
+        "listed_name": "八幡宮",
+        "nta_result": "registered furigana absent",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reading_raw": "",
+        "reason": "missing agency reading",
+        "status": "unfinished",
+        "surface": "八幡宮",
+        "wikipedia_article_refs": [],
+        "wikipedia_result": "no_exact_title_in_inspected_category_tree"
+      },
       "semantic_type": "proper_noun",
       "source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#hachimangu: 名称=八幡宮; 掲載読み=; 所在地=沖縄県那覇市安里3-19-14",
+        "facility_id": "71e2dbee-9796-55ba-bb19-db707f270ac7",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "0fa69e95-0cf4-5f5a-b5c2-e711839bbff5",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "八幡宮",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+        "status": "pending",
+        "surface": "八幡宮"
+      },
       "status": "pending",
       "surface": "八幡宮"
     },
     {
-      "checked_at": "2026-11-08T14:25:43.505616+00:00",
+      "checked_at": "2026-11-09",
       "evidence": "p#sueyoshi: 名称=末吉宮; 掲載読み=; 所在地=那覇市首里末吉町1丁目8",
       "facility_id": "cee0c62d-834e-5a1d-acf2-dcda4db8d688",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "4111c9a2-7433-58e8-a8e4-1e1390cb579c",
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "すえよしぐう"
+          },
+          "expected_source_hash": "fa5897fb2ef9dd06bd9851b99b5179f7ebd74d7f43447619a980c684d300b13c",
+          "facility_id": "cee0c62d-834e-5a1d-acf2-dcda4db8d688",
+          "identity_match": "掲載名と参照名が一致。参照資料の所在地を神社庁掲載所在地と照合。取得原文・ID・ハッシュは保持。",
+          "original": {
+            "address": "那覇市首里末吉町1丁目8",
+            "listing_url": "https://jinjacho.naminouegu.jp/",
+            "name_raw": "末吉宮",
+            "reading_raw": ""
+          },
+          "reason": "神社庁掲載の全文読みが空欄のため、実際に開いた同名・同所在地の参照資料の全文読みを採用。",
+          "references": [
+            {
+              "address_raw": "沖縄県那覇市首里末吉町1丁目8",
+              "checked_at": "2026-11-09",
+              "excerpt": "所在地 | 沖縄県那覇市首里末吉町1丁目8\n末吉公園内\n読み方 | 末吉宮（すえよしぐう）",
+              "name_raw": "末吉宮",
+              "reading_raw": "すえよしぐう",
+              "source_kind": "article",
+              "title": "沖縄・末吉宮とは？琉球八社の歴史と御朱印・駐車場・行き方ガイド - うみいち",
+              "url": "https://okinawa-create.com/static/blog_naha_city_sueyoshi_shrine"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "末吉宮",
       "normalization": [
@@ -192,22 +712,77 @@
         "katakana to hiragana"
       ],
       "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
-      "reading": "",
+      "reading": "すえよしぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://jinjacho.naminouegu.jp/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://okinawa-create.com/static/blog_naha_city_sueyoshi_shrine",
+      "reason": "",
       "semantic_type": "proper_noun",
       "source_hash": "fa5897fb2ef9dd06bd9851b99b5179f7ebd74d7f43447619a980c684d300b13c",
-      "status": "pending",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#sueyoshi: 名称=末吉宮; 掲載読み=; 所在地=那覇市首里末吉町1丁目8",
+        "facility_id": "cee0c62d-834e-5a1d-acf2-dcda4db8d688",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "4111c9a2-7433-58e8-a8e4-1e1390cb579c",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "末吉宮",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "fa5897fb2ef9dd06bd9851b99b5179f7ebd74d7f43447619a980c684d300b13c",
+        "status": "pending",
+        "surface": "末吉宮"
+      },
+      "status": "verified",
       "surface": "末吉宮"
     },
     {
-      "checked_at": "2026-11-08T14:25:43.505616+00:00",
+      "checked_at": "2026-11-09",
       "evidence": "p#amekugu: 名称=天久宮; 掲載読み=; 所在地=沖縄県那覇市泊３丁目１９番地の３",
       "facility_id": "46444711-7025-5f43-a682-9756fad6aaee",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "fac770ae-5ee9-52c0-bc95-94d97b6f7829",
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "あめくぐう"
+          },
+          "expected_source_hash": "6541ce15691687579beb61e36beae8ac784c83daf1051532edaab3ef20ca4f58",
+          "facility_id": "46444711-7025-5f43-a682-9756fad6aaee",
+          "identity_match": "掲載名と参照名が一致。参照資料の所在地を神社庁掲載所在地と照合。取得原文・ID・ハッシュは保持。",
+          "original": {
+            "address": "沖縄県那覇市泊３丁目１９番地の３",
+            "listing_url": "https://jinjacho.naminouegu.jp/",
+            "name_raw": "天久宮",
+            "reading_raw": ""
+          },
+          "reason": "神社庁掲載の全文読みが空欄のため、実際に開いた同名・同所在地の参照資料の全文読みを採用。",
+          "references": [
+            {
+              "address_raw": "沖縄県那覇市泊3丁目19-3",
+              "checked_at": "2026-11-09",
+              "excerpt": "所在地 | 沖縄県那覇市泊3丁目19-3\n天久宮（あめくぐう）は、沖縄県那覇市にある神社。",
+              "name_raw": "天久宮",
+              "reading_raw": "あめくぐう",
+              "revision_id": 110431810,
+              "revision_url": "https://ja.wikipedia.org/w/index.php?title=天久宮&oldid=110431810",
+              "source_kind": "wikipedia",
+              "title": "天久宮 - Wikipedia",
+              "url": "https://ja.wikipedia.org/wiki/天久宮"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "天久宮",
       "normalization": [
@@ -215,14 +790,37 @@
         "katakana to hiragana"
       ],
       "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
-      "reading": "",
+      "reading": "あめくぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://jinjacho.naminouegu.jp/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://ja.wikipedia.org/wiki/天久宮",
+      "reason": "",
       "semantic_type": "proper_noun",
       "source_hash": "6541ce15691687579beb61e36beae8ac784c83daf1051532edaab3ef20ca4f58",
-      "status": "pending",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#amekugu: 名称=天久宮; 掲載読み=; 所在地=沖縄県那覇市泊３丁目１９番地の３",
+        "facility_id": "46444711-7025-5f43-a682-9756fad6aaee",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "fac770ae-5ee9-52c0-bc95-94d97b6f7829",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "天久宮",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "6541ce15691687579beb61e36beae8ac784c83daf1051532edaab3ef20ca4f58",
+        "status": "pending",
+        "surface": "天久宮"
+      },
+      "status": "verified",
       "surface": "天久宮"
     },
     {
@@ -231,6 +829,7 @@
       "facility_id": "46c2150a-4722-56d4-a339-4492745087a6",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
+      "judgments": {},
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "宮古神社",
       "normalization": [
@@ -243,17 +842,238 @@
       "reading_source_kind": "agency",
       "reading_url": "https://jinjacho.naminouegu.jp/",
       "reason": "missing agency reading",
+      "research": {
+        "additional_source_reviews": [
+          {
+            "checked_at": "2026-11-12T01:48:32.958002+00:00",
+            "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+            "fetched_at": "2026-11-12T01:46:49.668372+00:00",
+            "next_links": [
+              "http://miyako-jinja.com/about.html",
+              "http://miyako-jinja.com/map.html",
+              "https://www.jinjahoncho.or.jp/sys/10609",
+              "https://www.jinjahoncho.or.jp/sys/11161"
+            ],
+            "observation": "神社庁掲載の実href。公式本文を確認。本文には全文かな読みなし。",
+            "page_hash": "79d2059d6ba2334745554b9117afd67712336f3ad45deb3131b0c2a4997e8f52",
+            "remaining_requirement": "公式資料の全文読みをアクセス方針確認後に取得・検証; 神社庁原文の平良市西里と公式の平良字西里の相違を、根拠ある補正手順で解決。原文は保持。",
+            "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+            "source_kind": "official_shrine",
+            "status": "inspected_no_adopted_reading",
+            "title": "宮古神社 公式ホームページ",
+            "url": "http://miyako-jinja.com"
+          },
+          {
+            "checked_at": "2026-11-12T01:48:32.958002+00:00",
+            "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+            "fetched_at": "2026-11-12T01:47:27.704192+00:00",
+            "next_links": [
+              "http://miyako-jinja.com/about.html",
+              "http://miyako-jinja.com/map.html",
+              "https://www.jinjahoncho.or.jp/sys/10609",
+              "https://www.jinjahoncho.or.jp/sys/11161"
+            ],
+            "observation": "神社庁原文 宮古島市平良市西里5-1 とは平良市/平良字が相違。電話・FAXは一覧と同一。誤記の可能性のみ、勝手に住所同一化しない。",
+            "page_hash": "0ed4c04e7a90f74b4c10dcb5eb56f1b8d9365ca69ac684ef58f57373f65f89e8",
+            "remaining_requirement": "公式資料の全文読みをアクセス方針確認後に取得・検証; 神社庁原文の平良市西里と公式の平良字西里の相違を、根拠ある補正手順で解決。原文は保持。",
+            "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+            "source_kind": "official_shrine",
+            "status": "inspected_no_adopted_reading",
+            "title": "宮古神社 地図・連絡先",
+            "url": "http://miyako-jinja.com/map.html"
+          },
+          {
+            "checked_at": "2026-11-12T01:48:32.958002+00:00",
+            "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+            "fetched_at": "2026-11-12T01:47:21.538828+00:00",
+            "next_links": [
+              "http://miyako-jinja.com/about.html",
+              "http://miyako-jinja.com/map.html",
+              "https://www.jinjahoncho.or.jp/sys/10609",
+              "https://www.jinjahoncho.or.jp/sys/11161"
+            ],
+            "observation": "取得本文を確認したが宮古神社の全文かな読みなし。",
+            "page_hash": "f3214b3dcbf9551b905a41335fa0fa0bf302e3250a5d5e0f5ac8a9bc5dec476c",
+            "remaining_requirement": "公式資料の全文読みをアクセス方針確認後に取得・検証; 神社庁原文の平良市西里と公式の平良字西里の相違を、根拠ある補正手順で解決。原文は保持。",
+            "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+            "source_kind": "official_shrine",
+            "status": "inspected_no_adopted_reading",
+            "title": "宮古神社について",
+            "url": "http://miyako-jinja.com/about.html"
+          },
+          {
+            "checked_at": "2026-11-12T01:48:32.958002+00:00",
+            "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+            "next_links": [
+              "http://miyako-jinja.com/about.html",
+              "http://miyako-jinja.com/map.html",
+              "https://www.jinjahoncho.or.jp/sys/10609",
+              "https://www.jinjahoncho.or.jp/sys/11161"
+            ],
+            "observation": "Client robots HTTP503により取得停止。検索及びweb表示では宮古神社（みやこじんじゃ）と沖縄県宮古島市平良字西里5-1が示されたが、採用資料としない。",
+            "remaining_requirement": "公式資料の全文読みをアクセス方針確認後に取得・検証; 神社庁原文の平良市西里と公式の平良字西里の相違を、根拠ある補正手順で解決。原文は保持。",
+            "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+            "status": "fetch_stopped",
+            "stop_reason": "HTTP 503: https://www.jinjahoncho.or.jp/robots.txt",
+            "url": "https://www.jinjahoncho.or.jp/sys/10609"
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-12T04:51:17.196108+00:00",
+            "daily_as_of": "20261111",
+            "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+            "evidence_attempt": "nta_manual_judgment_review_20261112",
+            "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+            "matched_active_corporate_numbers": [],
+            "monthly_snapshot": "20261030",
+            "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
+            "result": "no_unique_active_exact_name_full_address_identity",
+            "source_kind": "government_corporate_register",
+            "source_publisher": "国税庁",
+            "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-12T07:05:17.639317+00:00",
+            "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-coast",
+            "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+            "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、同定資料との個別照合を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+            "reference": {
+              "address_raw": "沖縄県宮古島市平良字西里5-1",
+              "checked_at": "2026-11-12T06:58:34.776273+00:00",
+              "fetched_at": "2026-11-12T06:58:34.773115+00:00",
+              "name_raw": "宮古神社",
+              "page_hash": "40026463cb8669a736e2436c2387ed640890a1603e67434464ea0d3458dec4b9",
+              "reading_context_raw": "宮古神社（みやこじんじゃ）は",
+              "reading_raw": "みやこじんじゃ",
+              "subject_title_raw": "宮古神社　沖縄県宮古島市平良西里",
+              "url": "https://www.buccyake-kojiki.com/archives/1059257902.html"
+            },
+            "result": "full_name_or_address_not_bound",
+            "source_kind": "article",
+            "source_publisher": "神社と古事記（非公式二次資料）",
+            "status": "inspected_independent_article_not_adopted"
+          },
+          {
+            "adopted": false,
+            "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+            "literal_printed_locality_pairs": 0,
+            "name_comparison_pairs": 0,
+            "new_name_comparison_pairs": 0
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-14T02:21:33.578963+00:00",
+            "evidence_attempt": "meguri_six_remaining_prefectures_sixteen_index_pages_twenty_eight_pending_no_adoption_20261114",
+            "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+            "index_reference_keys": [
+              "47actual"
+            ],
+            "observation": "同名カードは別地域、又は宮古の原平良市/資料平良字の差が残る。名称の一致だけで同定せず、原住所の改変や読みの流用で採用しない。",
+            "status": "index_card_parcel_difference_retained_pending"
+          }
+        ],
+        "address": "宮古島市平良市西里5-1",
+        "agency_listing_url": "https://jinjacho.naminouegu.jp/",
+        "category": "judgment_required",
+        "category_basis": "神社庁一覧の所在地と、実リンク先の施設公式・神社庁詳細の所在地が相違する。同一性の根拠と全文読みを確認するまで保留。",
+        "entry_id": "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
+        "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+        "facility_id": "46c2150a-4722-56d4-a339-4492745087a6",
+        "listed_name": "宮古神社",
+        "nta_result": "no unique active exact name/full-address corporate identity",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reading_raw": "",
+        "reason": "missing agency reading",
+        "status": "unfinished",
+        "surface": "宮古神社",
+        "wikipedia_article_refs": [
+          {
+            "checked_at": "2026-11-09T05:25:24.466756+00:00",
+            "matched_current_snapshot": true,
+            "page_hash": "fda6f86b99c135c15d4f996a6be0267cee72bc632810fad8c4e3ba58e00db1b8",
+            "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+            "status": "inspected",
+            "url": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%8F%A4%E7%A5%9E%E7%A4%BE"
+          }
+        ],
+        "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+      },
       "semantic_type": "proper_noun",
       "source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#miyakojinja: 名称=宮古神社; 掲載読み=; 所在地=宮古島市平良市西里5-1",
+        "facility_id": "46c2150a-4722-56d4-a339-4492745087a6",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "宮古神社",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+        "status": "pending",
+        "surface": "宮古神社"
+      },
       "status": "pending",
       "surface": "宮古神社"
     },
     {
-      "checked_at": "2026-11-08T14:25:43.505616+00:00",
+      "checked_at": "2026-11-09",
       "evidence": "p#ukishima: 名称=浮島神社; 掲載読み=; 所在地=沖縄県那覇市若狭1-25-11",
       "facility_id": "41ba1d07-a169-5ff5-80a0-98632037c4ad",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "e2b7bb68-a8c7-5587-8247-f791bdfdcee3",
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "うきしまじんじゃ"
+          },
+          "expected_source_hash": "d03ad6ad1700e7f74d387fa93284d4866667e69723e3d877c46434a4b7710c5d",
+          "facility_id": "41ba1d07-a169-5ff5-80a0-98632037c4ad",
+          "identity_match": "神社庁公式浮島詳細に若狭1-25-11（波上宮内仮宮）と明記。記事は同住所の波上宮の境内に浮島神社（うきしまじんじゃ）の仮宮があると明記。",
+          "original": {
+            "address": "沖縄県那覇市若狭1-25-11",
+            "listing_url": "https://jinjacho.naminouegu.jp/",
+            "name_raw": "浮島神社",
+            "reading_raw": ""
+          },
+          "reason": "神社庁一覧で欠落した全文読みを、実際に開いた波上宮境内の同名神社を明示する記事から補完。",
+          "references": [
+            {
+              "address_context": "波上宮境内の浮島神社仮宮。掲載記事のアクセス住所は波上宮。公式浮島詳細でも同住所・波上宮内仮宮を明記。",
+              "address_raw": "沖縄県那覇市若狭1丁目25番11号",
+              "checked_at": "2026-11-09",
+              "excerpt": "境内には、波上宮とは由緒と祭神を異にする浮島神社（うきしまじんじゃ）と世持神社（よもちじんじゃ）の仮宮があります。\n所在地は沖縄県那覇市若狭1丁目25番11号です。",
+              "name_raw": "浮島神社",
+              "reading_raw": "うきしまじんじゃ",
+              "source_kind": "article",
+              "title": "波上宮 – 日本百選",
+              "url": "https://japan.miyazaki.tv/naminoue-gu/"
+            },
+            {
+              "address_raw": "那覇市若狭1-25-11",
+              "checked_at": "2026-11-09",
+              "excerpt": "浮島神社 住所：那覇市若狭1-25-11（波上宮内仮宮）",
+              "name_raw": "浮島神社",
+              "source_kind": "official_agency",
+              "title": "浮島神社 沖縄県神社庁",
+              "url": "https://jinjacho.naminouegu.jp/ukishima.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "浮島神社",
       "normalization": [
@@ -261,22 +1081,77 @@
         "katakana to hiragana"
       ],
       "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
-      "reading": "",
+      "reading": "うきしまじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://jinjacho.naminouegu.jp/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://japan.miyazaki.tv/naminoue-gu/",
+      "reason": "",
       "semantic_type": "proper_noun",
       "source_hash": "d03ad6ad1700e7f74d387fa93284d4866667e69723e3d877c46434a4b7710c5d",
-      "status": "pending",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#ukishima: 名称=浮島神社; 掲載読み=; 所在地=沖縄県那覇市若狭1-25-11",
+        "facility_id": "41ba1d07-a169-5ff5-80a0-98632037c4ad",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "e2b7bb68-a8c7-5587-8247-f791bdfdcee3",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "浮島神社",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "d03ad6ad1700e7f74d387fa93284d4866667e69723e3d877c46434a4b7710c5d",
+        "status": "pending",
+        "surface": "浮島神社"
+      },
+      "status": "verified",
       "surface": "浮島神社"
     },
     {
-      "checked_at": "2026-11-08T14:25:43.505616+00:00",
+      "checked_at": "2026-11-09",
       "evidence": "p#yomochi: 名称=世持神社; 掲載読み=; 所在地=沖縄県那覇市若狭1-25-11",
       "facility_id": "3bc65fea-279d-5a84-bfeb-af0a48d62b59",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "76acd382-a9a2-5193-983b-59b8c0cf4922",
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "よもちじんじゃ"
+          },
+          "expected_source_hash": "24c137a37ee61fd5da875ccf58cfec70e6609f099cb5c82ccfc0e0085fbed421",
+          "facility_id": "3bc65fea-279d-5a84-bfeb-af0a48d62b59",
+          "identity_match": "掲載名と参照名が一致。参照資料の所在地を神社庁掲載所在地と照合。取得原文・ID・ハッシュは保持。",
+          "original": {
+            "address": "沖縄県那覇市若狭1-25-11",
+            "listing_url": "https://jinjacho.naminouegu.jp/",
+            "name_raw": "世持神社",
+            "reading_raw": ""
+          },
+          "reason": "神社庁掲載の全文読みが空欄のため、実際に開いた同名・同所在地の参照資料の全文読みを採用。",
+          "references": [
+            {
+              "address_raw": "沖縄県那覇市若狭1-25-11",
+              "checked_at": "2026-11-09",
+              "excerpt": "沖縄県那覇市若狭1-25-11（神体）\n世持神社（よもちじんじゃ）は、沖縄県那覇市に鎮座する神社",
+              "name_raw": "世持神社",
+              "reading_raw": "よもちじんじゃ",
+              "revision_id": 111033519,
+              "revision_url": "https://ja.wikipedia.org/w/index.php?title=世持神社&oldid=111033519",
+              "source_kind": "wikipedia",
+              "title": "世持神社 - Wikipedia",
+              "url": "https://ja.wikipedia.org/wiki/世持神社"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "世持神社",
       "normalization": [
@@ -284,14 +1159,37 @@
         "katakana to hiragana"
       ],
       "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
-      "reading": "",
+      "reading": "よもちじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://jinjacho.naminouegu.jp/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://ja.wikipedia.org/wiki/世持神社",
+      "reason": "",
       "semantic_type": "proper_noun",
       "source_hash": "24c137a37ee61fd5da875ccf58cfec70e6609f099cb5c82ccfc0e0085fbed421",
-      "status": "pending",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#yomochi: 名称=世持神社; 掲載読み=; 所在地=沖縄県那覇市若狭1-25-11",
+        "facility_id": "3bc65fea-279d-5a84-bfeb-af0a48d62b59",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "76acd382-a9a2-5193-983b-59b8c0cf4922",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "世持神社",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "24c137a37ee61fd5da875ccf58cfec70e6609f099cb5c82ccfc0e0085fbed421",
+        "status": "pending",
+        "surface": "世持神社"
+      },
+      "status": "verified",
       "surface": "世持神社"
     },
     {
@@ -300,6 +1198,7 @@
       "facility_id": "6f014bd6-dc0a-5975-a5c3-696ee935e13c",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "bd9d9932-4585-57de-8ecb-6c76b53d3a69",
+      "judgments": {},
       "listing_url": "https://jinjacho.naminouegu.jp/",
       "name_raw": "沖縄神社",
       "normalization": [
@@ -312,8 +1211,134 @@
       "reading_source_kind": "agency",
       "reading_url": "https://jinjacho.naminouegu.jp/",
       "reason": "missing agency reading",
+      "research": {
+        "additional_source_reviews": [
+          {
+            "checked_at": "2026-11-12T01:48:32.958002+00:00",
+            "expected_source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+            "fetched_at": "2026-11-12T01:46:47.553357+00:00",
+            "next_links": [
+              "https://jinjacho.naminouegu.jp/okinawajinja.html",
+              "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/014/071/r70331shukyouhoujin.pdf",
+              "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E7%A5%9E%E7%A4%BE"
+            ],
+            "observation": "神社庁一覧の沖縄神社実リンク。住所は一覧の若狭1-25-11と相違。波上宮社務所の連絡先は示されるが若狭住所への施設同一化を確定しない。全文かな読みなし。",
+            "page_hash": "38fc3d483c3fa6d7d734849343e6ec85d5966083af23dfd4e8d11487f6e1577b",
+            "remaining_requirement": "一覧若狭1-25-11が連絡先住所であることと個別神社鳥堀町5との同一性を記録可能な直接根拠; 同定した施設に対する全文かな読みの実資料",
+            "scope": "記録した個別本文の点検に限定。取得停止資料は本文取得・検証済みとは扱わず、非公式ディレクトリの候補は一次出典未確認のまま採用しない。",
+            "source_kind": "official_agency",
+            "status": "inspected_no_adopted_reading",
+            "title": "沖縄県神社庁 沖縄神社",
+            "url": "https://jinjacho.naminouegu.jp/okinawajinja.html"
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-12T04:51:17.196108+00:00",
+            "daily_as_of": "20261111",
+            "daily_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+            "evidence_attempt": "nta_manual_judgment_review_20261112",
+            "expected_source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+            "matched_active_corporate_numbers": [],
+            "monthly_snapshot": "20261030",
+            "observation": "最新の登録状態と元名称・全住所の一意な対応を確認できず、既判断を維持。",
+            "result": "no_unique_active_exact_name_full_address_identity",
+            "source_kind": "government_corporate_register",
+            "source_publisher": "国税庁",
+            "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-12T07:05:17.639317+00:00",
+            "evidence_attempt": "kojiki_shiga_small_articles_20261112_small-coast",
+            "expected_source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+            "observation": "限定した記事照合では主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。原数字住所を要求した段階スクリーニングの不合格は町域のみの全件に対する禁止規則ではなく、同定資料との個別照合を続ける。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+            "reference": {
+              "address_raw": "沖縄県那覇市首里鳥堀町5",
+              "checked_at": "2026-11-12T06:58:49.029377+00:00",
+              "fetched_at": "2026-11-12T06:58:49.015357+00:00",
+              "name_raw": "沖縄神社",
+              "page_hash": "bddfed65af782114d7db570baab9586c0219d4b5fccee39c030628b841d98b52",
+              "reading_context_raw": "沖縄神社（おきなわじんじゃ）は",
+              "reading_raw": "おきなわじんじゃ",
+              "subject_title_raw": "沖縄神社　沖縄県那覇市首里鳥堀町",
+              "url": "https://www.buccyake-kojiki.com/archives/1058671737.html"
+            },
+            "result": "full_name_or_address_not_bound",
+            "source_kind": "article",
+            "source_publisher": "神社と古事記（非公式二次資料）",
+            "status": "inspected_independent_article_not_adopted"
+          },
+          {
+            "adopted": false,
+            "evidence_attempt": "national_cultural_classification_32_prefectures_64_queries_parent_name_screen_20261113",
+            "literal_printed_locality_pairs": 0,
+            "name_comparison_pairs": 0,
+            "new_name_comparison_pairs": 0
+          },
+          {
+            "adopted": false,
+            "checked_at": "2026-11-14T02:21:33.578963+00:00",
+            "evidence_attempt": "meguri_six_remaining_prefectures_sixteen_index_pages_twenty_eight_pending_no_adoption_20261114",
+            "expected_source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+            "index_reference_keys": [
+              "47actual"
+            ],
+            "observation": "同名カードは別地域、又は宮古の原平良市/資料平良字の差が残る。名称の一致だけで同定せず、原住所の改変や読みの流用で採用しない。",
+            "status": "index_card_parcel_difference_retained_pending"
+          }
+        ],
+        "address": "沖縄県那覇市若狭1-25-11",
+        "agency_listing_url": "https://jinjacho.naminouegu.jp/",
+        "category": "judgment_required",
+        "category_basis": "神社庁一覧の所在地と、実リンク先の施設公式・神社庁詳細の所在地が相違する。同一性の根拠と全文読みを確認するまで保留。",
+        "entry_id": "bd9d9932-4585-57de-8ecb-6c76b53d3a69",
+        "expected_source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+        "facility_id": "6f014bd6-dc0a-5975-a5c3-696ee935e13c",
+        "listed_name": "沖縄神社",
+        "nta_result": "no unique active exact name/full-address corporate identity",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reading_raw": "",
+        "reason": "missing agency reading",
+        "status": "unfinished",
+        "surface": "沖縄神社",
+        "wikipedia_article_refs": [
+          {
+            "checked_at": "2026-11-09T05:25:27.365015+00:00",
+            "matched_current_snapshot": true,
+            "page_hash": "ebc9124454b4663f20d42406d98d87a7b005150fade228efc6443f427c672ef2",
+            "result": "no inspected reference explicitly identifies name and location; corrected full reading is not explicit in the inspected reference",
+            "status": "inspected",
+            "url": "https://ja.wikipedia.org/wiki/%E6%B2%96%E7%B8%84%E7%A5%9E%E7%A4%BE"
+          }
+        ],
+        "wikipedia_result": "matching_articles_inspected_no_adopted_reading"
+      },
       "semantic_type": "proper_noun",
       "source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+      "source_record": {
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "evidence": "p#okinawajinja: 名称=沖縄神社; 掲載読み=; 所在地=沖縄県那覇市若狭1-25-11",
+        "facility_id": "6f014bd6-dc0a-5975-a5c3-696ee935e13c",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "bd9d9932-4585-57de-8ecb-6c76b53d3a69",
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "name_raw": "沖縄神社",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "reading": "",
+        "reading_raw": "",
+        "reading_source_kind": "agency",
+        "reading_url": "https://jinjacho.naminouegu.jp/",
+        "reason": "missing agency reading",
+        "semantic_type": "proper_noun",
+        "source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+        "status": "pending",
+        "surface": "沖縄神社"
+      },
       "status": "pending",
       "surface": "沖縄神社"
     }
@@ -325,6 +1350,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "0568f91b-6c07-506e-9521-bd7add0aa24f",
+      "judgments": {},
       "listed_name": "波上宮",
       "listing_occurrences": [
         {
@@ -346,6 +1372,35 @@
       "source_hash": "c407eb53311b4457fe0ad6777e69438c554d55565f2366d1c60ec914a547ac94",
       "source_key": "okinawa",
       "source_locator": "p#naminoue",
+      "source_record": {
+        "address": "沖縄県那覇市若狭1-25-11",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "0568f91b-6c07-506e-9521-bd7add0aa24f",
+        "listed_name": "波上宮",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#naminoue",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "那覇市",
+        "name_raw": "波上宮",
+        "native_source_id": "naminoue|波上宮",
+        "official_site_url": "http://naminouegu.jp",
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "c407eb53311b4457fe0ad6777e69438c554d55565f2366d1c60ec914a547ac94",
+        "source_key": "okinawa",
+        "source_locator": "p#naminoue",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -354,6 +1409,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "0d103f85-e978-5e07-8a37-70ad5cbdbd9b",
+      "judgments": {},
       "listed_name": "普天満宮",
       "listing_occurrences": [
         {
@@ -375,6 +1431,35 @@
       "source_hash": "e441a806a5c4ad3af913dccd1073f4f84feddd8bd0f5f855dfcb1237543fe748",
       "source_key": "okinawa",
       "source_locator": "p#futenma",
+      "source_record": {
+        "address": "沖縄県宜野湾市普天間１丁目２７番１０号",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "0d103f85-e978-5e07-8a37-70ad5cbdbd9b",
+        "listed_name": "普天満宮",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#futenma",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "宜野湾市",
+        "name_raw": "普天満宮",
+        "native_source_id": "futenma|普天満宮",
+        "official_site_url": "http://futenmagu.or.jp/",
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "e441a806a5c4ad3af913dccd1073f4f84feddd8bd0f5f855dfcb1237543fe748",
+        "source_key": "okinawa",
+        "source_locator": "p#futenma",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -383,6 +1468,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "6a20924c-c154-5264-ae97-08df658df876",
+      "judgments": {},
       "listed_name": "識名宮",
       "listing_occurrences": [
         {
@@ -404,6 +1490,35 @@
       "source_hash": "8bb411b13d7e2d16aa7578b3b20be6e61fdaed4e01b9096578f14f182778beb7",
       "source_key": "okinawa",
       "source_locator": "p#miyakojinja",
+      "source_record": {
+        "address": "沖縄県那覇市繁多川４丁目１－４３",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "6a20924c-c154-5264-ae97-08df658df876",
+        "listed_name": "識名宮",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#miyakojinja",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "那覇市",
+        "name_raw": "識名宮",
+        "native_source_id": "miyakojinja|識名宮",
+        "official_site_url": "http://sikinagu.com",
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "8bb411b13d7e2d16aa7578b3b20be6e61fdaed4e01b9096578f14f182778beb7",
+        "source_key": "okinawa",
+        "source_locator": "p#miyakojinja",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -412,6 +1527,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "71e2dbee-9796-55ba-bb19-db707f270ac7",
+      "judgments": {},
       "listed_name": "八幡宮",
       "listing_occurrences": [
         {
@@ -433,6 +1549,35 @@
       "source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
       "source_key": "okinawa",
       "source_locator": "p#hachimangu",
+      "source_record": {
+        "address": "沖縄県那覇市安里3-19-14",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "71e2dbee-9796-55ba-bb19-db707f270ac7",
+        "listed_name": "八幡宮",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#hachimangu",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "那覇市",
+        "name_raw": "八幡宮",
+        "native_source_id": "hachimangu|八幡宮",
+        "official_site_url": "http://asatohachimangu.net",
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "0e7e0a5a126e670197eaf278f361a56e6be7685680ebd822827d2d73f8e0bd2c",
+        "source_key": "okinawa",
+        "source_locator": "p#hachimangu",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -441,6 +1586,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "cee0c62d-834e-5a1d-acf2-dcda4db8d688",
+      "judgments": {},
       "listed_name": "末吉宮",
       "listing_occurrences": [
         {
@@ -462,6 +1608,35 @@
       "source_hash": "fa5897fb2ef9dd06bd9851b99b5179f7ebd74d7f43447619a980c684d300b13c",
       "source_key": "okinawa",
       "source_locator": "p#sueyoshi",
+      "source_record": {
+        "address": "那覇市首里末吉町1丁目8",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "cee0c62d-834e-5a1d-acf2-dcda4db8d688",
+        "listed_name": "末吉宮",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#sueyoshi",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "那覇市",
+        "name_raw": "末吉宮",
+        "native_source_id": "sueyoshi|末吉宮",
+        "official_site_url": null,
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "fa5897fb2ef9dd06bd9851b99b5179f7ebd74d7f43447619a980c684d300b13c",
+        "source_key": "okinawa",
+        "source_locator": "p#sueyoshi",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -470,6 +1645,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "46444711-7025-5f43-a682-9756fad6aaee",
+      "judgments": {},
       "listed_name": "天久宮",
       "listing_occurrences": [
         {
@@ -491,6 +1667,35 @@
       "source_hash": "6541ce15691687579beb61e36beae8ac784c83daf1051532edaab3ef20ca4f58",
       "source_key": "okinawa",
       "source_locator": "p#amekugu",
+      "source_record": {
+        "address": "沖縄県那覇市泊３丁目１９番地の３",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "46444711-7025-5f43-a682-9756fad6aaee",
+        "listed_name": "天久宮",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#amekugu",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "那覇市",
+        "name_raw": "天久宮",
+        "native_source_id": "amekugu|天久宮",
+        "official_site_url": "https://amekugu.net",
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "6541ce15691687579beb61e36beae8ac784c83daf1051532edaab3ef20ca4f58",
+        "source_key": "okinawa",
+        "source_locator": "p#amekugu",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -499,6 +1704,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "46c2150a-4722-56d4-a339-4492745087a6",
+      "judgments": {},
       "listed_name": "宮古神社",
       "listing_occurrences": [
         {
@@ -520,6 +1726,35 @@
       "source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
       "source_key": "okinawa",
       "source_locator": "p#miyakojinja",
+      "source_record": {
+        "address": "宮古島市平良市西里5-1",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "46c2150a-4722-56d4-a339-4492745087a6",
+        "listed_name": "宮古神社",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#miyakojinja",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "宮古島市",
+        "name_raw": "宮古神社",
+        "native_source_id": "miyakojinja|宮古神社",
+        "official_site_url": "http://miyako-jinja.com",
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+        "source_key": "okinawa",
+        "source_locator": "p#miyakojinja",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -528,6 +1763,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "41ba1d07-a169-5ff5-80a0-98632037c4ad",
+      "judgments": {},
       "listed_name": "浮島神社",
       "listing_occurrences": [
         {
@@ -549,6 +1785,35 @@
       "source_hash": "d03ad6ad1700e7f74d387fa93284d4866667e69723e3d877c46434a4b7710c5d",
       "source_key": "okinawa",
       "source_locator": "p#ukishima",
+      "source_record": {
+        "address": "沖縄県那覇市若狭1-25-11",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "41ba1d07-a169-5ff5-80a0-98632037c4ad",
+        "listed_name": "浮島神社",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#ukishima",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "那覇市",
+        "name_raw": "浮島神社",
+        "native_source_id": "ukishima|浮島神社",
+        "official_site_url": null,
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "d03ad6ad1700e7f74d387fa93284d4866667e69723e3d877c46434a4b7710c5d",
+        "source_key": "okinawa",
+        "source_locator": "p#ukishima",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -557,6 +1822,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "3bc65fea-279d-5a84-bfeb-af0a48d62b59",
+      "judgments": {},
       "listed_name": "世持神社",
       "listing_occurrences": [
         {
@@ -578,6 +1844,35 @@
       "source_hash": "24c137a37ee61fd5da875ccf58cfec70e6609f099cb5c82ccfc0e0085fbed421",
       "source_key": "okinawa",
       "source_locator": "p#yomochi",
+      "source_record": {
+        "address": "沖縄県那覇市若狭1-25-11",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "3bc65fea-279d-5a84-bfeb-af0a48d62b59",
+        "listed_name": "世持神社",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#yomochi",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "那覇市",
+        "name_raw": "世持神社",
+        "native_source_id": "yomochi|世持神社",
+        "official_site_url": null,
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "24c137a37ee61fd5da875ccf58cfec70e6609f099cb5c82ccfc0e0085fbed421",
+        "source_key": "okinawa",
+        "source_locator": "p#yomochi",
+        "status": "verified"
+      },
       "status": "verified"
     },
     {
@@ -586,6 +1881,7 @@
       "checked_at": "2026-11-08T14:25:43.505616+00:00",
       "fetched_at": "2026-11-08T14:25:43.505616+00:00",
       "id": "6f014bd6-dc0a-5975-a5c3-696ee935e13c",
+      "judgments": {},
       "listed_name": "沖縄神社",
       "listing_occurrences": [
         {
@@ -607,8 +1903,38 @@
       "source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
       "source_key": "okinawa",
       "source_locator": "p#okinawajinja",
+      "source_record": {
+        "address": "沖縄県那覇市若狭1-25-11",
+        "agency": "沖縄県神社庁",
+        "checked_at": "2026-11-08T14:25:43.505616+00:00",
+        "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+        "id": "6f014bd6-dc0a-5975-a5c3-696ee935e13c",
+        "listed_name": "沖縄神社",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-08T14:25:43.505616+00:00",
+            "locator": "p#okinawajinja",
+            "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+            "url": "https://jinjacho.naminouegu.jp/"
+          }
+        ],
+        "listing_url": "https://jinjacho.naminouegu.jp/",
+        "municipality": "那覇市",
+        "name_raw": "沖縄神社",
+        "native_source_id": "okinawajinja|沖縄神社",
+        "official_site_url": null,
+        "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+        "prefecture": "沖縄県",
+        "prefecture_code": "47",
+        "reason": "",
+        "source_hash": "8fd6e3a098df5e355c71cf435880ca56e7157688a349082b252e72414f72467b",
+        "source_key": "okinawa",
+        "source_locator": "p#okinawajinja",
+        "status": "verified"
+      },
       "status": "verified"
     }
   ],
-  "schema_version": 1
+  "schema_version": 2,
+  "source_metadata": {}
 }
