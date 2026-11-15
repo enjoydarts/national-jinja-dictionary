@@ -181,11 +181,16 @@ def parse_nagano_detail(page,name):
 def targets(data_dir,source='shimane'):
     if source not in SOURCES:raise ValueError('unsupported agency detail source')
     data_dir=Path(data_dir);excluded=set()
+    from njd.canonical import is_canonical, export_legacy
+    projected=export_legacy(data_dir) if is_canonical(data_dir) else None
     for filename in ('reviews.json','decisions.json'):
         path=data_dir/filename
-        if path.exists():
+        if projected is not None:
+            doc=projected.get(filename,{});excluded.update(doc.get('entries',doc))
+        elif path.exists():
             doc=load_dataset(path);excluded.update(doc.get('entries',doc))
-    data=load_dataset(data_dir/'sources'/f'{source}.json');fs={f['id']:f for f in data['facilities']};result=[]
+    data=projected['sources/'+source+'.json'] if projected is not None else load_dataset(data_dir/'sources'/f'{source}.json')
+    fs={f['id']:f for f in data['facilities']};result=[]
     for entry in data['entries']:
         f=fs[entry['facility_id']]
         if (entry['id'] in excluded or entry.get('reading_raw') or entry.get('identity_review_required')
@@ -220,7 +225,9 @@ def research(data_dir,state_dir,client,*,source='shimane',limit=0,refresh=False,
     selected=targets(data_dir,source);records=state['entries'];attempted=0;index_cache={}
     correction_ids=set()
     correction_path=Path(data_dir)/'corrections.json'
-    if correction_path.exists():correction_ids.update(load_dataset(correction_path).get('entries',{}))
+    from njd.canonical import is_canonical, read_judgments
+    if is_canonical(data_dir):correction_ids.update(read_judgments(data_dir,'corrections').get('entries',{}))
+    elif correction_path.exists():correction_ids.update(load_dataset(correction_path).get('entries',{}))
     def checkpoint():
         proposals={};pending=errors=unvisited=0
         for target in selected:

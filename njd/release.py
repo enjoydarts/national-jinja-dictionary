@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 import subprocess
 import zipfile
-from njd.__main__ import build_outputs, _review_lists
+from njd.__main__ import build_outputs, _review_lists, _effective
 from njd.exporters import FORMATS
 from njd.corrections import apply_corrections
 from njd.locations import apply_locations
@@ -54,27 +54,22 @@ def write_dictionary_archive(directory,archive):
     return archive
 
 
-def create_release(data_dir,output_dir,version,source_commit,changelog=None,previous_release_tag=None):
+def create_release(data_dir,output_dir,version,source_commit,changelog=None,previous_release_tag=None,*,legacy=False):
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._+-]{0,80}',version): raise ValueError('unsafe release version')
     if not re.fullmatch(r'[0-9a-f]{40,64}|unknown',source_commit): raise ValueError('invalid source commit')
     data_dir=Path(data_dir);output_dir=Path(output_dir)
     initial_inputs=_input_hashes(data_dir)
-    data=merge_collections(data_dir)
-    locations=data_dir/'locations.json'
-    if locations.exists():data=apply_locations(data,load_dataset(locations))
-    corrections=data_dir/'corrections.json'
-    if corrections.exists():data=apply_corrections(data,load_dataset(corrections))
-    reviews=data_dir/'reviews.json'
-    if reviews.exists():data=apply_reviews(data,load_dataset(reviews))
-    decisions=data_dir/'decisions.json'
-    if decisions.exists() and load_dataset(decisions):data=apply_decisions(data,load_dataset(decisions))
-    data=apply_saved_source_aliases(data,data_dir)
+    data=_effective(data_dir,legacy=legacy)
     ensure_public_metadata(data)
     problems=blocking_problems(data)
     if problems:raise ValueError('canonical data cannot be released: '+str(problems[:5]))
     destination=output_dir/'dictionaries'
     report,has_blocked=build_outputs(data,data_dir,list(FORMATS),sample_names=('倭文神社','大國神社','𡶌部神社','㯮椒神社'),output_dir=destination)
     _review_lists(data,destination)
+    if not legacy:
+        from njd.canonical import research_summary
+        write_json(destination/'canonical-summary.json',dict(research=research_summary(data_dir),
+            metadata_basis='Current counts generated from canonical adopted records; inherited snapshot counts are historical.'))
     for name in ('manifest.json','locations.json','corrections.json','reviews.json','source_aliases.json','source_catalog.json','reading_research.json'):
         path=data_dir/name
         if path.exists():

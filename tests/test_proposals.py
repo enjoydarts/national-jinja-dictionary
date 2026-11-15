@@ -36,7 +36,7 @@ class ProposalImportTests(unittest.TestCase):
             stored=load_dataset(root/'corrections.json')['entries'][eid]
             self.assertEqual(stored['superseded_secondary_reading'],'かくうじんじゃ')
             self.assertEqual(len(stored['references']),2)
-            self.assertEqual(eligible(_effective(root))[0]['reading'],'べつのじんじゃ')
+            self.assertEqual(eligible(_effective(root, legacy=True))[0]['reading'],'べつのじんじゃ')
             repeat=proposals.import_proposals(root,new,apply=True,prefer_agency=True)
             self.assertEqual((repeat['replaced'],repeat['unchanged']),(0,1))
             conflict=copy.deepcopy(new);conflict['entries'][eid]['changes']['reading']='べつじんじゃ'
@@ -63,7 +63,7 @@ class ProposalImportTests(unittest.TestCase):
             self.assertEqual(proposals.import_proposals(root,doc)['added'],1)
             self.assertFalse((root/'corrections.json').exists())
             self.assertEqual(proposals.import_proposals(root,doc,apply=True)['added'],1)
-            self.assertEqual(len(eligible(_effective(root))),1)
+            self.assertEqual(len(eligible(_effective(root, legacy=True))),1)
             self.assertEqual(proposals.import_proposals(root,doc,apply=True)['unchanged'],1)
             self.assertEqual((root/'sources/example.json').read_bytes(),before)
 

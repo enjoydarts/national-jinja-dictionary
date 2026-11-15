@@ -9,6 +9,9 @@ from njd.storage import apply_decisions,load_dataset
 
 
 def apply_saved_overlays(data,data_dir):
+    from njd.canonical import is_canonical
+    if is_canonical(data_dir):
+        raise ValueError('canonical v2 already contains adopted values; use canonical.load_effective')
     root=Path(data_dir)
     for filename,apply in (('locations.json',apply_locations),
                            ('corrections.json',apply_corrections),

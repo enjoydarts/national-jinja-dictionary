@@ -154,7 +154,7 @@ def run_release(repository,repo,version,api,output_dir,*,dry_run=False,generator
         '| 形式 | 全国版の出力行数 |','| --- | ---: |']
     lines.extend(f"| {name} | {item['rows']} |" for name,item in report['format_outputs'].items() if name not in ('json','csv'))
     notes='\n'.join(lines)+'\n\n## 出典・利用条件\n\n'
-    notes+=f'名称・読み・所在地の原文、出典URL・版・利用条件: [正本データ]({base}/data/)、[補正根拠]({base}/data/corrections.json)、[情報源一覧]({base}/docs/SOURCES.md)。\n'
+    notes+=f'名称・読み・所在地の原文、採用値・補正根拠・出典URL・版・利用条件: [共通正本]({base}/data/sources/)、[情報源一覧]({base}/docs/SOURCES.md)。\n'
     notes+='Wikipedia由来項目はCC BY-SA 4.0に従い、カタカナ読みをひらがなへ機械変換しています。各記事・版・ライセンスは上記正本に保存しています。コードのMITは収集元データへ適用しません。\n'
     attribution=json.loads((out/'dictionaries/ATTRIBUTION.json').read_text())
     for credit in attribution.get('licensed_references',[]):

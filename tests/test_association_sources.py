@@ -146,7 +146,7 @@ class AssociationIdentitySafetyTests(unittest.TestCase):
     def test_release_source_notice_separates_association_from_wikipedia_and_agency(self):
         import json,zipfile
         from njd.nationwide import save_collection
-        from njd.release import create_release
+        from legacy_release import create_release
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);save_collection(root/'data','miyazaki_youth',a.dataset_from_observations(self.collection(),existing=None))
             result=create_release(root/'data',root/'out','v-test','a'*40)

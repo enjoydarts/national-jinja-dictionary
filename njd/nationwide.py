@@ -76,6 +76,21 @@ def default_states():
 
 
 def load_states(data_dir):
+    from njd.canonical import is_canonical, export_legacy
+    if is_canonical(data_dir):
+        states=default_states()
+        states.update(export_legacy(data_dir).get('manifest.json',{}).get('prefectures',{}))
+        from njd.canonical import load_effective
+        from njd.report import _counts
+        current=load_effective(data_dir)
+        for code in {s['prefecture_code'] for s in current['collection']['sources'].values()}:
+            selected=dict(current,facilities=[f for f in current['facilities'] if f['prefecture_code']==code])
+            ids={f['id'] for f in selected['facilities']}
+            selected['entries']=[e for e in current['entries'] if e['facility_id'] in ids]
+            counts=_counts(selected)
+            states[code].update({k:counts[k] for k in ('facilities','facility_records','source_alias_records','verified_facilities','dictionary_rows')})
+            states[code]['pending_entries']=counts['entry_status_counts'].get('pending',0)
+        return states
     states=default_states(); path=Path(data_dir)/'manifest.json'
     if path.exists(): states.update(load_dataset(path).get('prefectures',{}))
     return states
@@ -99,9 +114,10 @@ def prepare_collection(data_dir,key,data,*,reviewed_curated=False):
     issues=blocking_problems(data)
     if issues: raise ValueError('source dataset validation failed: '+str(issues[:5]))
     path=source_path(data_dir,key)
-    old=load_dataset(path) if path.exists() else None
+    from njd.canonical import raw_collection, is_canonical, read_judgments
+    old=raw_collection(load_dataset(path)) if path.exists() else None
     links_path=Path(data_dir)/'identities.json'
-    all_links=load_dataset(links_path) if links_path.exists() else {}
+    all_links=read_judgments(data_dir,'identities') if is_canonical(data_dir) else (load_dataset(links_path) if links_path.exists() else {})
     links=all_links.get(key,{})
     result=reconcile_identity(old,data,links)
     _preserve_curated_sources(old,result,reviewed_curated)
@@ -116,6 +132,39 @@ def prepare_collection(data_dir,key,data,*,reviewed_curated=False):
 
 def save_collection(data_dir,key,data,*,reviewed_curated=False):
     """Save authoritative source facts; caches and work history live elsewhere."""
+    from njd.canonical import is_canonical, update_repository
+    if is_canonical(data_dir):
+        def change(legacy):
+            ensure_public_metadata(data)
+            if data.get('collection',{}).get('source_key')!=key or blocking_problems(data):
+                raise ValueError('source dataset validation failed')
+            filename='sources/'+key+'.json'
+            old=legacy.get(filename)
+            links=legacy.get('identities.json',{}).get(key,{})
+            result=reconcile_identity(old,data,links)
+            _preserve_curated_sources(old,result,reviewed_curated)
+            _preserve_municipality_reviews(old,result)
+            if blocking_problems(result):raise ValueError('identity reconciliation produced invalid records')
+            if old and _partial_scope(result['collection']):
+                omitted={f['id'] for f in old['facilities']}-{f['id'] for f in result['facilities']}
+                if omitted:raise PartialSnapshotError(len(omitted))
+            # Preserve earlier collection-level acquisition history as evidence.
+            if old:
+                result['acquisition_history']=copy.deepcopy(old.get('acquisition_history',[]))
+                if old['collection']!=result['collection']:
+                    result['acquisition_history'].append(copy.deepcopy(old['collection']))
+                retired={kind:[r for r in old[kind] if r['id'] not in {n['id'] for n in result[kind]}]
+                         for kind in ('facilities','entries')}
+                result['retired_observations']=copy.deepcopy(old.get('retired_observations',[]))
+                if any(retired.values()):result['retired_observations'].append(retired)
+            legacy[filename]=result
+            manifest=legacy.setdefault('manifest.json',dict(schema_version=1,prefectures={}))
+            code=result['collection']['prefecture_code']
+            state=manifest['prefectures'].get(code,default_states()[code])
+            manifest['prefectures'][code]=dict(state,source_key=key,status=collection_status(result),
+                reason='saved explicit source fields; see source authority and coverage')
+            return result
+        return update_repository(data_dir,change)
     result=prepare_collection(data_dir,key,data,reviewed_curated=reviewed_curated)
     write_json(source_path(data_dir,key),result)
     return result
@@ -123,6 +172,9 @@ def save_collection(data_dir,key,data,*,reviewed_curated=False):
 
 def merge_collections(data_dir,*,states=None):
     """Merge repository canonical source files entirely offline, in memory."""
+    from njd.canonical import is_canonical, export_legacy, _merged_raw
+    if is_canonical(data_dir):
+        return _merged_raw(export_legacy(data_dir))
     data_dir=Path(data_dir); facilities=[]; entries=[]; sources={}
     for path in sorted((data_dir/'sources').glob('*.json')):
         data=load_dataset(path);ensure_public_metadata(data); key=path.stem
@@ -176,6 +228,8 @@ def public_failure(exc):
 
 
 def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=None,cache_dir=None):
+    from njd.canonical import is_canonical, update_repository
+    canonical=is_canonical(data_dir)
     data_dir=Path(data_dir);states=load_states(data_dir)
     manifest_path=data_dir/'manifest.json'
     manifest=load_dataset(manifest_path) if manifest_path.exists() else {}
@@ -196,6 +250,10 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
                 original_post=client.post_json
                 client.post_json=lambda url,payload,**kwargs: original_post(url,payload,refresh=True,**{k:v for k,v in kwargs.items() if k!='refresh'})
             data=spec['collect'](client,limit=limit)
+            if canonical:
+                save_collection(data_dir,key,data)
+                states=load_states(data_dir)
+                continue
             saved=prepare_collection(data_dir,key,data)
             from njd.overlays import apply_saved_overlays
             from njd.report import _counts
@@ -214,7 +272,13 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
                 write_json(resolved/'diagnostics'/(key+'.json'),dict(source_key=key,exception_type=type(exc).__name__,message=str(exc)))
             except OSError:
                 pass  # Cache permission failures must not abort independent sources.
-        write_json(manifest_path,dict(manifest,schema_version=1,prefectures=states))
+        if canonical:
+            def save_failure(legacy):
+                manifest=legacy.setdefault('manifest.json',dict(schema_version=1,prefectures={}))
+                manifest['prefectures'][code]=states[code]
+            update_repository(data_dir,save_failure)
+        else:
+            write_json(manifest_path,dict(manifest,schema_version=1,prefectures=states))
     return states
 
 

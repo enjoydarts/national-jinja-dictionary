@@ -36,11 +36,16 @@ class PublishingTest(GitFixture):
         super().setUp();self.api=FakeGitHub()
         (self.root/'njd').mkdir();(self.root/'njd/__init__.py').write_text('')
         save_collection(self.root/'data','example',build([row()]))
+        from njd.canonical import migrate
+        import shutil
+        migrate(self.root/'data', self.root/'canonical')
+        shutil.rmtree(self.root/'data')
+        (self.root/'canonical').rename(self.root/'data')
         self.git('add','.');self.git('commit','-m','Initial canonical data')
         self.commit=self.git('rev-parse','HEAD')
         self.output=Path(self.tmp.name)/'build-output'
         # Ignore generation just as the real repository ignores dist/.
-        (self.root/'.git/info/exclude').write_text('build-output/\n')
+        (self.root/'.git/info/exclude').write_text('build-output/\ndata/.canonical.lock\n')
     def run_release(self,**kwargs):
         return run_release(self.root,'owner/repo','v0.2.0',self.api,self.output,**kwargs)
 

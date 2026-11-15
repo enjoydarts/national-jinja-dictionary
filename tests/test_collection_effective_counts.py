@@ -18,7 +18,7 @@ class CollectionEffectiveCountsTests(unittest.TestCase):
         return run_collections(root,spec,['example'],cache_dir=root.parent/'cache')['11']
 
     def assert_same_counts(self,state,root):
-        expected=_counts(_effective(root))
+        expected=_counts(_effective(root, legacy=True))
         for key in ('facilities','facility_records','source_alias_records','verified_facilities','dictionary_rows'):
             self.assertEqual(state[key],expected[key],key)
         self.assertEqual(state['pending_entries'],expected['entry_status_counts'].get('pending',0))

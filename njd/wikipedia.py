@@ -187,19 +187,30 @@ def external_directory(path):
 
 def pending_targets(data_dir,codes):
     data_dir=Path(data_dir);excluded=set()
+    from njd.canonical import is_canonical, export_legacy
+    if is_canonical(data_dir):
+        projected=export_legacy(data_dir)
+    else:
+        projected={str(p.relative_to(data_dir)):load_dataset(p)
+            for p in list((data_dir/'sources').glob('*.json'))+
+                [data_dir/name for name in ('locations.json','corrections.json','reviews.json','decisions.json','source_aliases.json')
+                 if (data_dir/name).exists()]}
     path=data_dir/'locations.json'
-    locations=load_dataset(path) if path.exists() else None
+    locations=projected.get('locations.json')
     for filename in ('corrections.json','reviews.json','decisions.json'):
-        path=data_dir/filename
-        if path.exists():
-            d=load_dataset(path);excluded.update(d.get('entries',d))
+        if filename in projected:
+            d=projected[filename];excluded.update(d.get('entries',d))
     targets=[]
-    for path in sorted((data_dir/'sources').glob('*.json')):
-        data=load_dataset(path)
+    for filename,data in sorted(projected.items()):
+        if not filename.startswith('sources/'):continue
         if locations is not None:data=apply_locations(data,locations)
         if data['collection'].get('source_key')=='kochi':
-            from njd.source_aliases import apply_saved_source_aliases
-            data=apply_saved_source_aliases(data,data_dir)
+            from njd.source_aliases import apply_source_aliases
+            if 'source_aliases.json' in projected:
+                decisions=projected.get('decisions.json',{})
+                protected={e['id'] for e in data['entries'] if decisions.get(e['id'],{}).get('status')=='pending'
+                    and decisions[e['id']].get('expected_source_hash')==e.get('source_hash')}
+                data=apply_source_aliases(data,projected['source_aliases.json'],protected_pending_entry_ids=protected)
         source=data['collection']
         if source.get('prefecture_code') not in codes:continue
         fs={f['id']:f for f in data['facilities']}

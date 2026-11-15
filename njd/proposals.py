@@ -40,16 +40,42 @@ def _agency_reading_refs(correction,facility):
 
 def import_proposals(data_dir,document,*,apply=False,prefer_agency=False):
     """All-or-nothing; never replace prior corrections, exclusions or reviews."""
-    if not isinstance(document,dict) or document.get('schema_version')!=1 or not isinstance(document.get('entries'),dict):
-        raise ValueError('unsupported reading proposal document')
-    ensure_public_metadata(document)
+    from njd.canonical import is_canonical, update_repository, _merged_raw
+    if is_canonical(data_dir):
+        def change(legacy):
+            raw=_merged_raw(legacy)
+            if 'locations.json' in legacy:raw=apply_locations(raw,legacy['locations.json'])
+            corrections=copy.deepcopy(legacy.get('corrections.json',dict(schema_version=1,entries={})))
+            result=_review_proposals(raw,corrections,
+                legacy.get('reviews.json',dict(schema_version=1,entries={})),
+                legacy.get('decisions.json',{}),document,prefer_agency,
+                aliases=legacy.get('source_aliases.json'))
+            legacy['corrections.json']=corrections
+            result['applied']=bool(apply)
+            return result
+        return update_repository(data_dir,change,apply=apply)
+    return _import_legacy_proposals(data_dir,document,apply=apply,prefer_agency=prefer_agency)
+
+
+def _import_legacy_proposals(data_dir,document,*,apply=False,prefer_agency=False):
     root=Path(data_dir);initial=_inputs(root);raw=merge_collections(root)
     if (root/'locations.json').exists():raw=apply_locations(raw,load_dataset(root/'locations.json'))
-    facilities={f['id']:f for f in raw['facilities']};entries={e['id']:e for e in raw['entries']}
     destination=root/'corrections.json'
     corrections=load_dataset(destination) if destination.exists() else dict(schema_version=1,entries={})
     reviews=load_dataset(root/'reviews.json') if (root/'reviews.json').exists() else dict(schema_version=1,entries={})
     decisions=load_dataset(root/'decisions.json') if (root/'decisions.json').exists() else {}
+    aliases=load_dataset(root/'source_aliases.json') if (root/'source_aliases.json').exists() else None
+    result=_review_proposals(raw,corrections,reviews,decisions,document,prefer_agency,aliases=aliases)
+    if _inputs(root)!=initial:raise ValueError('canonical inputs changed during proposal review; retry')
+    if apply and (result['added'] or result['replaced']):write_json(destination,corrections)
+    return dict(result,applied=bool(apply))
+
+
+def _review_proposals(raw,corrections,reviews,decisions,document,prefer_agency,*,aliases=None):
+    if not isinstance(document,dict) or document.get('schema_version')!=1 or not isinstance(document.get('entries'),dict):
+        raise ValueError('unsupported reading proposal document')
+    ensure_public_metadata(document)
+    facilities={f['id']:f for f in raw['facilities']};entries={e['id']:e for e in raw['entries']}
     added=[];unchanged=[];replaced=[]
     for eid,proposal in sorted(document['entries'].items()):
         if eid not in entries:raise ValueError(f'{eid}: proposal target is absent from canonical source data')
@@ -82,14 +108,16 @@ def import_proposals(data_dir,document,*,apply=False,prefer_agency=False):
             corrections['entries'][eid]=proposal;added.append(eid)
     effective=apply_reviews(apply_corrections(raw,corrections),reviews)
     if decisions:effective=apply_decisions(effective,decisions)
-    effective=apply_saved_source_aliases(effective,root)
+    if aliases is not None:
+        from njd.source_aliases import apply_source_aliases
+        protected={e['id'] for e in effective['entries'] if decisions.get(e['id'],{}).get('status')=='pending'
+            and decisions[e['id']].get('expected_source_hash')==e.get('source_hash')}
+        effective=apply_source_aliases(effective,aliases,protected_pending_entry_ids=protected)
     problems=blocking_problems(effective)
     if problems:raise ValueError('proposed overlays fail canonical validation: '+str(problems[:5]))
     accepted={e['id'] for e in eligible(effective)}
     if set(added+unchanged+replaced)-accepted:raise ValueError('some proposed readings would remain ineligible after all judgments')
-    if _inputs(root)!=initial:raise ValueError('canonical inputs changed during proposal review; retry')
-    if apply and (added or replaced):write_json(destination,corrections)
-    return dict(added=len(added),replaced=len(replaced),unchanged=len(unchanged),applied=bool(apply),entry_ids=sorted(added+unchanged+replaced))
+    return dict(added=len(added),replaced=len(replaced),unchanged=len(unchanged),entry_ids=sorted(added+unchanged+replaced))
 
 
 def main(argv=None):

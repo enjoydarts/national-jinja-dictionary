@@ -4,16 +4,11 @@
 
 2026年11月14日の追加照合時点では、調査対象の基準10,868登録のうち660登録を補完し、10,208登録が保留です。内訳は、調査済み資料での根拠不足10,018登録と要判断190登録です。未点検の追加資料は残っており、全資料の調査完了とはしていません。最新の状態は下記の正本を参照してください。
 
-全件解決の完了条件は、対象登録の読みと同一性に必要な根拠が揃い、正本の検証を通ることです。資料不足・資料衝突・取得停止を、調査済みという理由だけで確認済みや除外へ変更しません。`reading_research.json`の`completion_tracking`に基準と進捗を記録します。
+今回の追加調査は利用者の指示で一区切りとしました。660登録解決・10,208登録保留という結果を維持し、全件解決済みとはしていません。
 
-| ファイル | 内容 |
-| --- | --- |
-| [reading_research.json](../data/reading_research.json) | 未確認登録のID、名称、所在地、調査範囲、理由 |
-| [corrections.json](../data/corrections.json) | 補正候補と資料の相違。`needs_review`は未採用 |
-| [reviews.json](../data/reviews.json) | 採用済みの編集判断と根拠 |
-| [manifest.json](../data/manifest.json) | 県別の未収集・未確認範囲 |
+2026年11月14日の正本統合後は、[情報源別の共通正本](../data/sources/)の`entries[].research`に個別の調査範囲・保留理由、`judgments`に補正・採否判断を保存しています。全体の試行・完了基準・固定対象は`research_index.json`に継承しています。現在件数は`python3 -m njd.canonical summary`で算出します。
 
-`reading_research.json`の`source_assessment`には、対象原文に対応する資料URL・hash、確認した表示、不足する根拠、残る判断事項を保存します。`bounded_source_review_completed`は記録した資料の点検を区切った状態です。読みや施設を確定できない登録は引き続き`pending`とし、辞書へ出力しません。追加資料の発見や編集判断によって再開できます。
+以下の過去の調査記録に現れる`reading_research.json`・`corrections.json`等は当時の保存先です。旧件数・hash・パスは履歴として保持し、現役の編集元にはしません。`bounded_source_review_completed`は記録した資料の点検を区切った状態で、読みや施設を確定できない登録は引き続き保留です。
 
 追加の個別資料点検は`additional_source_reviews`に、対象原文hash、実際に確認した名称・読み・所在地、相違、不足、取得停止理由、次に必要な根拠を追記します。実リンク先の限定点検や取得停止を、公式性・全文読みの確認済みとは扱いません。
 
