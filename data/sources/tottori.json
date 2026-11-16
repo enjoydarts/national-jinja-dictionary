@@ -35241,12 +35241,47 @@
       "surface": "北野神社"
     },
     {
-      "checked_at": "2026-11-08T14:56:24.262300+00:00",
-      "evidence": "神社名=唐王・松籬神社 / よみ=とうのう・まつがきじんじゃ / 住所=大山町唐王725",
+      "checked_at": "2026-11-16T11:42:07.265533+00:00",
+      "evidence": "利用者が登録表記「唐王・松籬神社」を明示的に指定。読みは保存済み神社庁原文から指定の区切り記号だけを除くか原文のまま採用し、名称・読みの文字や接尾語を補わない。原掲載名・原かな・所在地・ID/hashと従来の保留調査履歴を保持。",
       "facility_id": "26c812de-c2c1-5496-b219-9856835fdea4",
       "fetched_at": "2026-11-08T14:56:24.262300+00:00",
       "id": "3a447791-643b-5b51-8814-df05683eef22",
-      "judgments": {},
+      "judgments": {
+        "reviews": {
+          "case_id": "EDITOR-SURFACE-20261116-3a447791-643b-5b51-8814-df05683eef22",
+          "confirmation": "user_confirmation",
+          "editor_instruction": {
+            "original_surface": "唐王・松籬神社",
+            "requested_surface": "唐王・松籬神社",
+            "scope": "dictionary surface choice supplied in conversation; not a new source observation"
+          },
+          "expected_source_hash": "e733be665ae70a8846640ef0ee84359560af48219cbfbc30350656708f17490e",
+          "facility_id": "26c812de-c2c1-5496-b219-9856835fdea4",
+          "original": {
+            "address": "大山町唐王725",
+            "listing_url": "https://tottori-jinjacho.jp/pages/520/",
+            "name_raw": "唐王・松籬神社",
+            "reading_raw": "とうのう・まつがきじんじゃ"
+          },
+          "outputs": [
+            {
+              "basis": "agency_separator_normalization",
+              "reading": "とうのうまつがきじんじゃ",
+              "reading_url": "https://tottori-jinjacho.jp/pages/520/",
+              "surface": "唐王・松籬神社"
+            }
+          ],
+          "reason": "利用者が登録表記「唐王・松籬神社」を明示的に指定。読みは保存済み神社庁原文から指定の区切り記号だけを除くか原文のまま採用し、名称・読みの文字や接尾語を補わない。原掲載名・原かな・所在地・ID/hashと従来の保留調査履歴を保持。",
+          "recorded_at": "2026-11-16T11:42:07.265533+00:00",
+          "review_kind": "source_separator_normalization",
+          "separator_review": {
+            "name_remove": [],
+            "reading_remove": [
+              "・"
+            ]
+          }
+        }
+      },
       "listing_url": "https://tottori-jinjacho.jp/pages/520/",
       "name_raw": "唐王・松籬神社",
       "normalization": [
@@ -35254,11 +35289,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "d864476f20aefa167fe50bb836d2aaa7789d5f020eb98a9737f6be7dd338ff44",
-      "reading": "",
+      "reading": "とうのうまつがきじんじゃ",
       "reading_raw": "とうのう・まつがきじんじゃ",
-      "reading_source_kind": "agency",
+      "reading_source_kind": "user_review",
       "reading_url": "https://tottori-jinjacho.jp/pages/520/",
-      "reason": "reading must contain full-width hiragana only; no inferred repairs",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -35361,6 +35396,20 @@
         "prefecture_code": "31",
         "reading_raw": "とうのう・まつがきじんじゃ",
         "reason": "reading must contain full-width hiragana only; no inferred repairs",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "とうのうまつがきじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "とうのうまつがきじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "source_assessment": {
           "assessment_group": "name_reading_spaces_punctuation_or_annotation",
           "checked_at": "2026-11-11T10:14:44.472519+00:00",
@@ -35420,7 +35469,7 @@
         "status": "pending",
         "surface": "唐王・松籬神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "唐王・松籬神社"
     },
     {
