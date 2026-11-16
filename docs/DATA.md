@@ -205,3 +205,9 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 移行前後でmozc・Google・ATOK・ATOK Unicode・MS-IME・macOSの6形式の全国辞書本体はバイト単位で一致しました。これは自動生成の整合性確認であり、新たな実IME取り込み・変換試験ではありません。
 
 掲載から消えた原観測や、原文変更で成立しなくなった派生登録は、情報源の`source_metadata.retired_records`へ原文・採用値・判断・調査履歴を一組で保存し、現在の出力から外します。部分取得の欠落は退役扱いにせず更新を拒否します。原文hashまで同じ登録が再登場した場合は以前の判断を保持し、派生登録の除外も復元します。退役そのものを読みの調査解決として数えません。
+
+### 利用者が確認した区切り記号と注記
+
+`source_separator_normalization`の編集判断は、利用者が指定した登録表記に対して、`separator_review.name_remove`・`reading_remove`に明記した原文中の中黒・半角/全角空白だけを除くものです。読みの文字・接尾語の補作、複合名の分割、住所・施設同定の保留解除には使いません。読みの根拠は元の神社庁かな欄で、利用者の確認は表記と区切りの編集方針として区別します。
+
+`retained_source_annotation`は、利用者が全角括弧付きの原掲載名をそのまま登録表記に残す判断です。`annotation_review.annotation_raw`を原名の末尾括弧内容と照合し、読みは神社庁欄のまま選択します。括弧内の読みを推定追加せず、別の施設保留を解除しません。

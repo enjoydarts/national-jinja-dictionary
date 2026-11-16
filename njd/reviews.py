@@ -20,6 +20,46 @@ def _plain(value):
     return isinstance(value,str) and bool(value) and not any(ord(c)<32 or ord(c)==127 for c in value) and '<' not in value and '>' not in value
 
 
+def _separator_review_problems(review, facility, entry):
+    """An explicit editor choice may delete separators, never name/kana letters."""
+    if review.get('confirmation')!='user_confirmation' or review.get('split'):
+        return ['separator normalization requires explicit single-registration editor confirmation']
+    rule=review.get('separator_review')
+    if not isinstance(rule,dict) or set(rule)!={'name_remove','reading_remove'}:
+        return ['missing explicit source separator selections']
+    values=[];removed=False
+    for key,raw in (('name_remove',facility.get('name_raw','')),('reading_remove',entry.get('reading_raw',''))):
+        separators=rule[key]
+        if (not isinstance(separators,list) or any(not isinstance(c,str) or c not in ('・',' ','　') for c in separators)
+            or len(separators)!=len(set(separators)) or any(c not in raw for c in separators)):
+            return ['only explicitly present middle dots and spaces may be removed']
+        value=raw
+        for char in separators:value=value.replace(char,'')
+        removed=removed or value!=raw
+        values.append(value)
+    outputs=review.get('outputs',[])
+    if not removed or len(outputs)!=1:
+        return ['separator normalization requires one output and an actual separator removal']
+    output=outputs[0]
+    if (output.get('surface')!=values[0] or _normal(values[1])!=output.get('reading')
+        or output.get('reading_url')!=facility.get('listing_url')
+        or output.get('basis')!='agency_separator_normalization'):
+        return ['approved output differs from exact source separator removal']
+    return []
+
+
+def _retained_annotation_valid(review, facility):
+    if review.get('review_kind')!='retained_source_annotation':return False
+    match=re.fullmatch(r'.+（([^（）]+)）',facility.get('name_raw',''))
+    outputs=review.get('outputs')
+    reason='annotated official name requires review'
+    return bool(match and review.get('confirmation')=='user_confirmation' and not review.get('split')
+        and isinstance(outputs,list) and len(outputs)==1 and isinstance(outputs[0],dict)
+        and outputs[0].get('surface')==facility['name_raw'] and outputs[0].get('basis')=='agency_selected'
+        and review.get('annotation_review')==dict(annotation_raw=match[1])
+        and facility.get('reason','') in ('',reason) and facility.get('review_reason','') in ('',reason))
+
+
 def review_problems(review, facility, entry, source=None):
     problems=[]
     if not isinstance(review,dict):return ['invalid human review']
@@ -33,6 +73,9 @@ def review_problems(review, facility, entry, source=None):
     profile_issues=hyogo_profile_problems(review,facility,entry) if profile_requested else []
     if profile_issues:return profile_issues
     profile_valid=profile_requested
+    annotation_valid=_retained_annotation_valid(review,facility)
+    if review.get('review_kind')=='retained_source_annotation' and not annotation_valid:
+        problems.append('invalid explicit source annotation retention')
     if review.get('confirmation') not in ('user_confirmation','source_review') or not review.get('case_id') or not review.get('reason'):
         problems.append('missing explicit human confirmation')
     try:datetime.fromisoformat(review.get('recorded_at',''))
@@ -42,7 +85,7 @@ def review_problems(review, facility, entry, source=None):
         problems.append('human review is stale or targets another source snapshot')
     if (source or {}).get('authority_status') in ('pending','unconfirmed'):
         problems.append('official agency listing authority remains unconfirmed')
-    if entry.get('identity_review_required') or (facility.get('review_reason') and not profile_valid):
+    if entry.get('identity_review_required') or (facility.get('review_reason') and not profile_valid and not annotation_valid):
         problems.append('unresolved facility identity review')
     if (not _plain(facility.get('address')) and not layout_valid) or not facility.get('municipality'):
         problems.append('unresolved facility location')
@@ -55,6 +98,7 @@ def review_problems(review, facility, entry, source=None):
         'conflicting source rows for the same source identity'}
     if layout_valid:allowed_reasons.add(ADDRESS_LAYOUT_REASON)
     if profile_valid:allowed_reasons.add(facility['review_reason'])
+    if annotation_valid:allowed_reasons.add('annotated official name requires review')
     if facility.get('status')!='verified' and facility.get('reason') not in allowed_reasons:
         problems.append('unresolved facility condition')
     outputs=review.get('outputs')
@@ -64,6 +108,10 @@ def review_problems(review, facility, entry, source=None):
         return problems+['invalid approved output field types']
     if not review.get('split') and len(outputs)!=1:problems.append('multiple outputs require explicit split approval')
     if len({(o.get('surface'),o.get('reading')) for o in outputs})!=len(outputs):problems.append('duplicate approved outputs')
+    separator_requested=review.get('review_kind')=='source_separator_normalization'
+    separator_issues=_separator_review_problems(review,facility,entry) if separator_requested else []
+    problems.extend(separator_issues)
+    separator_valid=separator_requested and not separator_issues
     refs=review.get('references',[])
     if not isinstance(refs,list) or any(not isinstance(r,dict) for r in refs):return problems+['invalid human review references']
     for ref in refs:
@@ -118,7 +166,7 @@ def review_problems(review, facility, entry, source=None):
         try:
             if normalize_reading(reading)!=reading:raise ValueError()
         except (ValueError,TypeError):problems.append('invalid approved reading');continue
-        if surface!=facility['name_raw'] and not review.get('split') and not any(r.get('name_raw')==surface and surface in r.get('excerpt','') and bound(r,output) for r in refs):
+        if surface!=facility['name_raw'] and not review.get('split') and not separator_valid and not any(r.get('name_raw')==surface and surface in r.get('excerpt','') and bound(r,output) for r in refs):
             problems.append('approved name absent from bound reference')
         if basis=='user_confirmation':
             if url!='':problems.append('human-only reading must not claim a confirming page')
@@ -127,6 +175,8 @@ def review_problems(review, facility, entry, source=None):
         elif basis=='agency_selected':
             candidates=[dict(url=facility['listing_url'],reading_raw=entry['reading_raw'])]+conflicts
             if not any(c.get('url')==url and _normal(c.get('reading_raw'))==reading for c in candidates):problems.append('selected reading absent from agency sources')
+        elif basis=='agency_separator_normalization':
+            if not separator_valid:problems.append('missing valid explicit source separator review')
         elif basis in ('reference','editorial_normalization'):
             matched=False
             for ref in refs:

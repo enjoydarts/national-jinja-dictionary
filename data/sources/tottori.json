@@ -38744,12 +38744,47 @@
       "surface": "赤猪岩神社"
     },
     {
-      "checked_at": "2026-11-08T14:59:11.081652+00:00",
-      "evidence": "神社名=岡崎・熱田神社 / よみ=おかざき あつたじんじゃ / 住所=伯耆町大殿591",
+      "checked_at": "2026-11-16T09:30:17.910860+00:00",
+      "evidence": "利用者が登録表記「岡崎・熱田神社」を明示的に指定。読みは保存済み神社庁原文から指定の区切り記号だけを除くか原文のまま採用し、名称・読みの文字や接尾語を補わない。原掲載名・原かな・所在地・ID/hashと従来の保留調査履歴を保持。",
       "facility_id": "d58c5ec0-1133-5c27-bd9f-2a22c753562a",
       "fetched_at": "2026-11-08T14:59:11.081652+00:00",
       "id": "5de1cfd0-b775-53ec-a832-ee04002799a8",
-      "judgments": {},
+      "judgments": {
+        "reviews": {
+          "case_id": "EDITOR-SURFACE-20261116-5de1cfd0-b775-53ec-a832-ee04002799a8",
+          "confirmation": "user_confirmation",
+          "editor_instruction": {
+            "original_surface": "岡崎・熱田神社",
+            "requested_surface": "岡崎・熱田神社",
+            "scope": "dictionary surface choice supplied in conversation; not a new source observation"
+          },
+          "expected_source_hash": "9ed6228e70cc90115238edeaa4425aa904f8a2c1ceaea89b2a8935a9f2148b29",
+          "facility_id": "d58c5ec0-1133-5c27-bd9f-2a22c753562a",
+          "original": {
+            "address": "伯耆町大殿591",
+            "listing_url": "https://tottori-jinjacho.jp/pages/505/",
+            "name_raw": "岡崎・熱田神社",
+            "reading_raw": "おかざき あつたじんじゃ"
+          },
+          "outputs": [
+            {
+              "basis": "agency_separator_normalization",
+              "reading": "おかざきあつたじんじゃ",
+              "reading_url": "https://tottori-jinjacho.jp/pages/505/",
+              "surface": "岡崎・熱田神社"
+            }
+          ],
+          "reason": "利用者が登録表記「岡崎・熱田神社」を明示的に指定。読みは保存済み神社庁原文から指定の区切り記号だけを除くか原文のまま採用し、名称・読みの文字や接尾語を補わない。原掲載名・原かな・所在地・ID/hashと従来の保留調査履歴を保持。",
+          "recorded_at": "2026-11-16T09:30:17.910860+00:00",
+          "review_kind": "source_separator_normalization",
+          "separator_review": {
+            "name_remove": [],
+            "reading_remove": [
+              " "
+            ]
+          }
+        }
+      },
       "listing_url": "https://tottori-jinjacho.jp/pages/505/",
       "name_raw": "岡崎・熱田神社",
       "normalization": [
@@ -38757,11 +38792,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "365fb706be922b9a4e39048c18d0f53e0898cd666d7b763516cae4ff77423c7d",
-      "reading": "",
+      "reading": "おかざきあつたじんじゃ",
       "reading_raw": "おかざき あつたじんじゃ",
-      "reading_source_kind": "agency",
+      "reading_source_kind": "user_review",
       "reading_url": "https://tottori-jinjacho.jp/pages/505/",
-      "reason": "reading must contain full-width hiragana only; no inferred repairs",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -38864,6 +38899,20 @@
         "prefecture_code": "31",
         "reading_raw": "おかざき あつたじんじゃ",
         "reason": "reading must contain full-width hiragana only; no inferred repairs",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おかざきあつたじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おかざきあつたじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "source_assessment": {
           "assessment_group": "name_reading_spaces_punctuation_or_annotation",
           "checked_at": "2026-11-11T10:14:44.472519+00:00",
@@ -38923,7 +38972,7 @@
         "status": "pending",
         "surface": "岡崎・熱田神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "岡崎・熱田神社"
     },
     {
