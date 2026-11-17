@@ -213,3 +213,7 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 `source_separator_normalization`の編集判断は、利用者が指定した登録表記に対して、`separator_review.name_remove`・`reading_remove`に明記した原文中の中黒・半角/全角空白だけを除くものです。読みの文字・接尾語の補作、複合名の分割、住所・施設同定の保留解除には使いません。読みの根拠は元の神社庁かな欄で、利用者の確認は表記と区切りの編集方針として区別します。
 
 `retained_source_annotation`は、利用者が全角括弧付きの原掲載名をそのまま登録表記に残す判断です。`annotation_review.annotation_raw`を原名の末尾括弧内容と照合し、読みは神社庁欄のまま選択します。括弧内の読みを推定追加せず、別の施設保留を解除しません。
+
+### 地域別一覧から実際にリンクされた詳細名の選択
+
+`linked_agency_profile_surface_selection`は、茨城の一覧とその実リンク先詳細にある「総/總」「島/嶋」の字形差を利用者が個別承認し、詳細の原名を登録表記に選ぶ判断です。対象ID/hash、一覧URL/hash、保存済み`address_source`全体、実詳細URL・原名・全所在地・hashを束縛し、同じ市の住所であることを検査します。読みは同じ一覧の全文かなだけを選び、原名・市名のみの原所在地・原ID/hashは保持します。詳細の全所在地は判断の根拠へ保存し、原住所を補作・上書きしません。別の同定保留・字形以外の名称差・異なる所在地へ流用しません。

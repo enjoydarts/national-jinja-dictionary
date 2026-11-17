@@ -4929,12 +4929,76 @@
       "surface": "天録稲荷神社"
     },
     {
-      "checked_at": "2026-11-08T14:37:55.483162+00:00",
-      "evidence": "総社神社 | そうしゃじんじゃ | 石岡市; linked detail https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10031.html: name=總社神社; address=石岡市総社2-8-1; sha256=cdc5aee5a0c1de42615cdbac756bd153bda43710c901c54f25c0d7886c586101",
+      "checked_at": "2026-11-17T11:48:19.815465+00:00",
+      "evidence": "利用者が一覧ではなく実リンク先詳細の表記を選択。保存済み一覧の実詳細URL・原名・市名と、同URLの詳細の原名・全所在地・本文hashを照合し、總/総又は嶋/島の字形差だけを個別承認。読みは当該一覧の明示全文かなをそのまま選択。詳細名・詳細所在地は根拠に保存し、元施設の一覧原文・市名のみの所在地・ID/hash・調査履歴は変更しない。",
       "facility_id": "110486c0-8641-5f87-8d3c-86684d0d0b73",
       "fetched_at": "2026-11-08T14:37:55.483162+00:00",
       "id": "b2e5da4a-2d38-5ea6-9305-e04c1bcbe3a8",
-      "judgments": {},
+      "judgments": {
+        "reviews": {
+          "accepted_identity_differences": [
+            {
+              "agency_address": "石岡市",
+              "agency_name": "総社神社",
+              "reference_address": "石岡市総社2-8-1",
+              "reference_name": "總社神社",
+              "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10031.html"
+            }
+          ],
+          "case_id": "EDITOR-LINKED-NAME-20261117-b2e5da4a-2d38-5ea6-9305-e04c1bcbe3a8",
+          "confirmation": "user_confirmation",
+          "editor_instruction": "リンク先詳細の表記でお願い",
+          "expected_source_hash": "61134966e8902b8fb9e7416288339525fef58c30c261adc515c71e66eedd9999",
+          "facility_id": "110486c0-8641-5f87-8d3c-86684d0d0b73",
+          "original": {
+            "address": "石岡市",
+            "listing_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
+            "name_raw": "総社神社",
+            "reading_raw": "そうしゃじんじゃ"
+          },
+          "outputs": [
+            {
+              "basis": "agency_selected",
+              "reading": "そうしゃじんじゃ",
+              "reading_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
+              "surface": "總社神社"
+            }
+          ],
+          "profile_selection": {
+            "listing_page_hash": "cf13989bab9847e1bf4d8dbdab2679da582a63d7f23182f40b98c22e0c0366e6",
+            "listing_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
+            "profile": {
+              "address_raw": "石岡市総社2-8-1",
+              "applied": false,
+              "fetched_at": "2026-11-08T15:06:43.253004+00:00",
+              "link_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10031.html",
+              "locator": "table tr 神社名 / 鎮座地; address after explicit postal-code prefix",
+              "name_raw": "總社神社",
+              "page_hash": "cdc5aee5a0c1de42615cdbac756bd153bda43710c901c54f25c0d7886c586101",
+              "postal_code_raw": "〒302-0109",
+              "published_value_raw": "〒302-0109　石岡市総社2-8-1",
+              "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10031.html"
+            }
+          },
+          "reason": "利用者が一覧ではなく実リンク先詳細の表記を選択。保存済み一覧の実詳細URL・原名・市名と、同URLの詳細の原名・全所在地・本文hashを照合し、總/総又は嶋/島の字形差だけを個別承認。読みは当該一覧の明示全文かなをそのまま選択。詳細名・詳細所在地は根拠に保存し、元施設の一覧原文・市名のみの所在地・ID/hash・調査履歴は変更しない。",
+          "recorded_at": "2026-11-17T11:48:19.815465+00:00",
+          "references": [
+            {
+              "address_raw": "石岡市総社2-8-1",
+              "checked_at": "2026-11-08T15:06:43.253004+00:00",
+              "excerpt": "總社神社 / 石岡市総社2-8-1",
+              "fetched_at": "2026-11-08T15:06:43.253004+00:00",
+              "locator": "table tr 神社名 / 鎮座地; address after explicit postal-code prefix",
+              "name_raw": "總社神社",
+              "page_hash": "cdc5aee5a0c1de42615cdbac756bd153bda43710c901c54f25c0d7886c586101",
+              "source_kind": "agency",
+              "title": "保存済み神社庁リンク先詳細の名称・鎮座地",
+              "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10031.html"
+            }
+          ],
+          "review_kind": "linked_agency_profile_surface_selection"
+        }
+      },
       "listing_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
       "name_raw": "総社神社",
       "normalization": [
@@ -4944,9 +5008,9 @@
       "page_hash": "cf13989bab9847e1bf4d8dbdab2679da582a63d7f23182f40b98c22e0c0366e6",
       "reading": "そうしゃじんじゃ",
       "reading_raw": "そうしゃじんじゃ",
-      "reading_source_kind": "agency",
+      "reading_source_kind": "user_review",
       "reading_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
-      "reason": "regional agency name differs from linked detail name",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -5062,6 +5126,20 @@
         "prefecture_code": "08",
         "reading_raw": "そうしゃじんじゃ",
         "reason": "regional agency name differs from linked detail name",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "そうしゃじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "そうしゃじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "source_assessment": {
           "assessment_group": "regional_profile_name_difference",
           "checked_at": "2026-11-11T10:14:44.472519+00:00",
@@ -5131,8 +5209,8 @@
         "status": "pending",
         "surface": "総社神社"
       },
-      "status": "pending",
-      "surface": "総社神社"
+      "status": "verified",
+      "surface": "總社神社"
     },
     {
       "checked_at": "2026-11-08T14:37:55.483162+00:00",
@@ -5566,12 +5644,76 @@
       "surface": "八坂神社"
     },
     {
-      "checked_at": "2026-11-08T14:37:55.483162+00:00",
-      "evidence": "鹿島神社 | かしまじんじゃ | 土浦市; linked detail https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10190.html: name=鹿嶋神社; address=茨城県土浦市中村西根817-1; sha256=33875dc95852492939712b23fb067cad0868a65a3ac995f7035b1ba8e06a50c9",
+      "checked_at": "2026-11-17T11:48:19.815465+00:00",
+      "evidence": "利用者が一覧ではなく実リンク先詳細の表記を選択。保存済み一覧の実詳細URL・原名・市名と、同URLの詳細の原名・全所在地・本文hashを照合し、總/総又は嶋/島の字形差だけを個別承認。読みは当該一覧の明示全文かなをそのまま選択。詳細名・詳細所在地は根拠に保存し、元施設の一覧原文・市名のみの所在地・ID/hash・調査履歴は変更しない。",
       "facility_id": "1ddf9c7c-e78b-57a4-9d68-845994211ba9",
       "fetched_at": "2026-11-08T14:37:55.483162+00:00",
       "id": "2b5846a8-747e-5a7b-87b7-1fe5472121cf",
-      "judgments": {},
+      "judgments": {
+        "reviews": {
+          "accepted_identity_differences": [
+            {
+              "agency_address": "土浦市",
+              "agency_name": "鹿島神社",
+              "reference_address": "茨城県土浦市中村西根817-1",
+              "reference_name": "鹿嶋神社",
+              "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10190.html"
+            }
+          ],
+          "case_id": "EDITOR-LINKED-NAME-20261117-2b5846a8-747e-5a7b-87b7-1fe5472121cf",
+          "confirmation": "user_confirmation",
+          "editor_instruction": "リンク先詳細の表記でお願い",
+          "expected_source_hash": "2d01798335f8ee73a4c181b93c0bbf403a1753fedf23f059ca591a7e6c608a6c",
+          "facility_id": "1ddf9c7c-e78b-57a4-9d68-845994211ba9",
+          "original": {
+            "address": "土浦市",
+            "listing_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
+            "name_raw": "鹿島神社",
+            "reading_raw": "かしまじんじゃ"
+          },
+          "outputs": [
+            {
+              "basis": "agency_selected",
+              "reading": "かしまじんじゃ",
+              "reading_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
+              "surface": "鹿嶋神社"
+            }
+          ],
+          "profile_selection": {
+            "listing_page_hash": "cf13989bab9847e1bf4d8dbdab2679da582a63d7f23182f40b98c22e0c0366e6",
+            "listing_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
+            "profile": {
+              "address_raw": "茨城県土浦市中村西根817-1",
+              "applied": false,
+              "fetched_at": "2026-11-08T15:06:56.731189+00:00",
+              "link_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10190.html",
+              "locator": "table tr 神社名 / 鎮座地; address after explicit postal-code prefix",
+              "name_raw": "鹿嶋神社",
+              "page_hash": "33875dc95852492939712b23fb067cad0868a65a3ac995f7035b1ba8e06a50c9",
+              "postal_code_raw": "〒300-0849",
+              "published_value_raw": "〒300-0849\n\n                                    茨城県土浦市中村西根817-1",
+              "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10190.html"
+            }
+          },
+          "reason": "利用者が一覧ではなく実リンク先詳細の表記を選択。保存済み一覧の実詳細URL・原名・市名と、同URLの詳細の原名・全所在地・本文hashを照合し、總/総又は嶋/島の字形差だけを個別承認。読みは当該一覧の明示全文かなをそのまま選択。詳細名・詳細所在地は根拠に保存し、元施設の一覧原文・市名のみの所在地・ID/hash・調査履歴は変更しない。",
+          "recorded_at": "2026-11-17T11:48:19.815465+00:00",
+          "references": [
+            {
+              "address_raw": "茨城県土浦市中村西根817-1",
+              "checked_at": "2026-11-08T15:06:56.731189+00:00",
+              "excerpt": "鹿嶋神社 / 茨城県土浦市中村西根817-1",
+              "fetched_at": "2026-11-08T15:06:56.731189+00:00",
+              "locator": "table tr 神社名 / 鎮座地; address after explicit postal-code prefix",
+              "name_raw": "鹿嶋神社",
+              "page_hash": "33875dc95852492939712b23fb067cad0868a65a3ac995f7035b1ba8e06a50c9",
+              "source_kind": "agency",
+              "title": "保存済み神社庁リンク先詳細の名称・鎮座地",
+              "url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/jinja/10190.html"
+            }
+          ],
+          "review_kind": "linked_agency_profile_surface_selection"
+        }
+      },
       "listing_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
       "name_raw": "鹿島神社",
       "normalization": [
@@ -5581,9 +5723,9 @@
       "page_hash": "cf13989bab9847e1bf4d8dbdab2679da582a63d7f23182f40b98c22e0c0366e6",
       "reading": "かしまじんじゃ",
       "reading_raw": "かしまじんじゃ",
-      "reading_source_kind": "agency",
+      "reading_source_kind": "user_review",
       "reading_url": "https://www.ibarakiken-jinjacho.or.jp/ibaraki/kennan/",
-      "reason": "regional agency name differs from linked detail name",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -5656,6 +5798,20 @@
         "prefecture_code": "08",
         "reading_raw": "かしまじんじゃ",
         "reason": "regional agency name differs from linked detail name",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "かしまじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "かしまじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "source_assessment": {
           "assessment_group": "regional_profile_name_difference",
           "checked_at": "2026-11-11T10:14:44.472519+00:00",
@@ -5725,8 +5881,8 @@
         "status": "pending",
         "surface": "鹿島神社"
       },
-      "status": "pending",
-      "surface": "鹿島神社"
+      "status": "verified",
+      "surface": "鹿嶋神社"
     },
     {
       "checked_at": "2026-11-08T14:37:55.483162+00:00",
@@ -12506,7 +12662,7 @@
       "page_hash": "cf13989bab9847e1bf4d8dbdab2679da582a63d7f23182f40b98c22e0c0366e6",
       "prefecture": "茨城県",
       "prefecture_code": "08",
-      "reason": "regional agency name differs from linked detail name",
+      "reason": "",
       "review_reason": "regional agency name differs from linked detail name",
       "source_hash": "61134966e8902b8fb9e7416288339525fef58c30c261adc515c71e66eedd9999",
       "source_key": "ibaraki",
@@ -12554,7 +12710,7 @@
         "source_locator": "tr[45]",
         "status": "pending"
       },
-      "status": "pending"
+      "status": "verified"
     },
     {
       "address": "茨城県石岡市国府6－2－1",
@@ -13028,7 +13184,7 @@
       "page_hash": "cf13989bab9847e1bf4d8dbdab2679da582a63d7f23182f40b98c22e0c0366e6",
       "prefecture": "茨城県",
       "prefecture_code": "08",
-      "reason": "regional agency name differs from linked detail name",
+      "reason": "",
       "review_reason": "regional agency name differs from linked detail name",
       "source_hash": "2d01798335f8ee73a4c181b93c0bbf403a1753fedf23f059ca591a7e6c608a6c",
       "source_key": "ibaraki",
@@ -13076,7 +13232,7 @@
         "source_locator": "tr[57]",
         "status": "pending"
       },
-      "status": "pending"
+      "status": "verified"
     },
     {
       "address": "利根町",

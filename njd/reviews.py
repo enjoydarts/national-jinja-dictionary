@@ -7,6 +7,7 @@ import copy
 from datetime import datetime
 import re
 from uuid import NAMESPACE_URL, uuid5
+from urllib.parse import urlsplit
 from njd.corrections import _url, _reference_matches, discovery_only
 from njd.normalize import normalize_reading
 from njd.locations import raw_address
@@ -60,6 +61,41 @@ def _retained_annotation_valid(review, facility):
         and facility.get('reason','') in ('',reason) and facility.get('review_reason','') in ('',reason))
 
 
+def _linked_profile_valid(review, facility, entry):
+    """Select a saved, directly linked Ibaraki detail's exact name variant."""
+    if (review.get('review_kind')!='linked_agency_profile_surface_selection'
+        or review.get('confirmation')!='user_confirmation' or review.get('split')
+        or facility.get('source_key')!='ibaraki'):return False
+    reason='regional agency name differs from linked detail name'
+    if facility.get('reason','') not in ('',reason) or facility.get('review_reason')!=reason:return False
+    profile=facility.get('address_source');selection=review.get('profile_selection')
+    if not isinstance(profile,dict) or selection!=dict(profile=profile,
+        listing_url=facility.get('listing_url'),listing_page_hash=facility.get('page_hash')):return False
+    url=profile.get('url')
+    if (not _url(url) or url!=profile.get('link_url') or url!=facility.get('native_source_id')
+        or urlsplit(url).hostname!=urlsplit(facility.get('listing_url','')).hostname
+        or not isinstance(profile.get('page_hash'),str) or not re.fullmatch('[0-9a-f]{64}',profile['page_hash'])):return False
+    try:datetime.fromisoformat(profile.get('fetched_at',''))
+    except (ValueError,TypeError):return False
+    name=profile.get('name_raw');address=profile.get('address_raw');city=facility.get('municipality')
+    if not _plain(name) or not _plain(address) or not _plain(city) or facility.get('address')!=city:return False
+    # Comparison only: the selected name keeps the detail's original glyphs.
+    if name.translate(str.maketrans({'總':'総','嶋':'島'}))!=facility.get('name_raw'):return False
+    tail=address.removeprefix(facility.get('prefecture',''))
+    if not tail.startswith(city) or not re.search('[0-9０-９]',tail[len(city):]):return False
+    outputs=review.get('outputs');refs=review.get('references')
+    if (not isinstance(outputs,list) or len(outputs)!=1 or not isinstance(outputs[0],dict)
+        or outputs[0].get('surface')!=name or outputs[0].get('basis')!='agency_selected'
+        or outputs[0].get('reading_url')!=facility.get('listing_url')
+        or outputs[0].get('reading')!=_normal(entry.get('reading_raw'))
+        or not isinstance(refs,list) or len(refs)!=1 or not isinstance(refs[0],dict)):return False
+    ref=refs[0]
+    return (all(ref.get(k)==profile.get(k) for k in ('url','name_raw','address_raw','page_hash'))
+        and ref.get('source_kind')=='agency'
+        and review.get('accepted_identity_differences')==[dict(url=url,agency_name=facility['name_raw'],
+            agency_address=facility['address'],reference_name=name,reference_address=address)])
+
+
 def review_problems(review, facility, entry, source=None):
     problems=[]
     if not isinstance(review,dict):return ['invalid human review']
@@ -73,6 +109,9 @@ def review_problems(review, facility, entry, source=None):
     profile_issues=hyogo_profile_problems(review,facility,entry) if profile_requested else []
     if profile_issues:return profile_issues
     profile_valid=profile_requested
+    linked_profile_valid=_linked_profile_valid(review,facility,entry)
+    if review.get('review_kind')=='linked_agency_profile_surface_selection' and not linked_profile_valid:
+        problems.append('invalid directly linked agency detail selection')
     annotation_valid=_retained_annotation_valid(review,facility)
     if review.get('review_kind')=='retained_source_annotation' and not annotation_valid:
         problems.append('invalid explicit source annotation retention')
@@ -85,7 +124,7 @@ def review_problems(review, facility, entry, source=None):
         problems.append('human review is stale or targets another source snapshot')
     if (source or {}).get('authority_status') in ('pending','unconfirmed'):
         problems.append('official agency listing authority remains unconfirmed')
-    if entry.get('identity_review_required') or (facility.get('review_reason') and not profile_valid and not annotation_valid):
+    if entry.get('identity_review_required') or (facility.get('review_reason') and not profile_valid and not annotation_valid and not linked_profile_valid):
         problems.append('unresolved facility identity review')
     if (not _plain(facility.get('address')) and not layout_valid) or not facility.get('municipality'):
         problems.append('unresolved facility location')
@@ -99,6 +138,7 @@ def review_problems(review, facility, entry, source=None):
     if layout_valid:allowed_reasons.add(ADDRESS_LAYOUT_REASON)
     if profile_valid:allowed_reasons.add(facility['review_reason'])
     if annotation_valid:allowed_reasons.add('annotated official name requires review')
+    if linked_profile_valid:allowed_reasons.add('regional agency name differs from linked detail name')
     if facility.get('status')!='verified' and facility.get('reason') not in allowed_reasons:
         problems.append('unresolved facility condition')
     outputs=review.get('outputs')
