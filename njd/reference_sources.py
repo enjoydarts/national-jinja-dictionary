@@ -235,7 +235,7 @@ def research(code,state_dir,client,*,limit=0,refresh=False):
     state=load_dataset(path) if path.exists() else dict(schema_version=1,prefecture_code=code,categories={},articles={})
     if state.get('prefecture_code')!=code:raise ValueError('research state belongs to another prefecture')
     categories=state['categories'];articles=state['articles'];queue=[wiki_url('Category:'+PREFECTURES[int(code)-1]+'の神社')]
-    seen=set();inventory=set();category_failure=False;attempted=0
+    seen=set();inventory=set();deferred=set();category_failure=False;attempted=0
     def checkpoint():
         reviews=[];refs=[];pages=[]
         for url in sorted(seen):
@@ -255,7 +255,9 @@ def research(code,state_dir,client,*,limit=0,refresh=False):
         complete=not category_failure and not failed and not unvisited
         metadata=dict(pages=pages,pages_fetched=len(pages),article_inventory_count=len(inventory),articles_inspected=len(inspected),articles_attempted_total=len(inventory&set(articles)),
             articles_with_full_reference=len(refs),article_reviews=reviews,inspection_complete=complete,collection_complete=complete,
-            remaining_scope=sorted(remaining),coverage='Recorded Wikipedia category tree only; article/list counts differ from facility counts.')
+            remaining_scope=sorted(remaining),category_scope='prefecture-named categories only',
+            deferred_categories=sorted(deferred),
+            coverage='Recorded prefecture-named Wikipedia categories only; other subcategory branches deferred; article/list counts differ from facility counts.')
         candidate=dataset_from_references(code,refs,metadata=metadata)
         summary=dict(prefecture_code=code,articles=len(inventory),facilities=len(candidate['facilities']),article_reviews=len(reviews),
             fetch_errors=failed,unvisited=unvisited,complete=complete,articles_attempted=attempted,canonical_update='not applied; review candidate.json before adoption')
@@ -271,7 +273,11 @@ def research(code,state_dir,client,*,limit=0,refresh=False):
             except (FetchError,OSError,UnicodeError,ValueError) as exc:saved=dict(status='fetch_failed',reason=str(exc),public_reason=public_failure(exc))
             categories[url]=saved
         if saved.get('status')!='fetched':category_failure=True;return checkpoint()
-        queue.extend(saved['categories']);inventory.update(saved['articles'])
+        for category in saved['categories']:
+            if (_title(category) or '').startswith('Category:'+PREFECTURES[int(code)-1]+'の'):
+                queue.append(category)
+            else:deferred.add(category)
+        inventory.update(saved['articles'])
     checkpoint()
     for url in sorted(inventory):
         if not refresh and articles.get(url,{}).get('status') in ('extracted','needs_review'):continue

@@ -301,6 +301,28 @@ class ReferenceSourceTests(unittest.TestCase):
             self.assertNotIn('/private/tmp/private-cache',json.dumps(candidate))
             ensure_public_metadata(candidate)
 
+    def test_category_walk_stays_in_prefecture_scope_and_records_deferred_branches(self):
+        import tempfile,json
+        from pathlib import Path
+        from njd.http import Page
+        from njd.wikipedia import wiki_url
+        root=wiki_url('Category:茨城県の神社')
+        local=wiki_url('Category:茨城県の旧県社')
+        outside=wiki_url('Category:鹿島神宮')
+        pages={root:'<div id="mw-subcategories"><a href="'+local+'">旧県社</a><a href="'+outside+'">鹿島神宮</a></div>',
+               local:'<div id="mw-pages"></div>'}
+        class Client:
+            def fetch(self,url,**kwargs):
+                if url not in pages:raise AssertionError('unbounded category traversal: '+url)
+                return Page(url,200,{'content-type':'text/html'},pages[url].encode(),'2026-11-18T00:00:00+00:00')
+        with tempfile.TemporaryDirectory() as tmp:
+            state=Path(tmp)/'research'
+            result=r.research('08',state,Client())
+            self.assertTrue(result['complete'])
+            collection=json.loads((state/'candidate.json').read_text())['collection']
+            self.assertEqual(collection['deferred_categories'],[outside])
+            self.assertEqual(collection['category_scope'],'prefecture-named categories only')
+
     def test_relabelling_every_basis_flag_cannot_hide_wikipedia_provenance(self):
         d=r.dataset_from_references('34',[reference()]);f=d['facilities'][0];e=d['entries'][0]
         d['collection'].update(listing_basis='agency',official_agency_listing_verified=True)

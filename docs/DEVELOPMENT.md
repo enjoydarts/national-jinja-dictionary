@@ -111,6 +111,8 @@ git diff -- data/
 
 Wikipediaの新規施設候補は47都道府県を指定できます。例えば`python3 -m njd.reference_sources --prefecture 03 --state-dir /tmp/njd-iwate-reference --cache-dir /tmp/njd-reference-http`で、岩手県のカテゴリと本文を調査します。神社庁の正本とは別の`iwate_wikipedia`情報源として候補を生成し、既存のWikipedia専用6県は従来の情報源キーを保持します。候補生成は正本への採用ではありません。既存施設と名称・全所在地が一致する候補は読み補完として扱い、同一性に疑義が残る候補は新施設へ加算しないでください。
 
+カテゴリ巡回は県名付きの枝（「岩手県の神社」「岩手県の旧県社」など）に限定します。個別神社名のカテゴリからスポーツ・人物等へ広がる巡回を避け、辿らなかった枝は`collection.deferred_categories`に残します。`inspection_complete`等はこの限定範囲の完了であり、県内の全Wikipedia記事や全神社の調査完了ではありません。
+
 ## 貢献時の確認
 
 - 新規・修正データには施設の同定根拠、原文、出典、確認日を付ける。
