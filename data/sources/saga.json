@@ -11348,12 +11348,53 @@
       "surface": "佐渡神社"
     },
     {
-      "checked_at": "2026-11-08T14:35:54.630829+00:00",
+      "checked_at": "2026-11-18T12:30:01.645647+00:00",
       "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=千栗八幡宮; 掲載読み=; 所在地=三養基郡みやき町大字白壁２４１５",
       "facility_id": "c2c1bf7b-8a93-5dd5-866f-c8e7ccd20dff",
       "fetched_at": "2026-11-08T14:35:54.630829+00:00",
       "id": "b8dc2f4b-9906-5b8b-95f1-fcdc7a833fe1",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ちりくはちまんぐう"
+          },
+          "expected_source_hash": "fe636e39292ba6c16abdfb38ffef45984326a4f3e37daf951ffdbcc3f61703a1",
+          "facility_id": "c2c1bf7b-8a93-5dd5-866f-c8e7ccd20dff",
+          "identity_match": {
+            "agency_address": "三養基郡みやき町大字白壁２４１５",
+            "agency_name": "千栗八幡宮",
+            "reference_address": "佐賀県三養基郡みやき町白壁2415",
+            "reference_name": "千栗八幡宮"
+          },
+          "original": {
+            "address": "三養基郡みやき町大字白壁２４１５",
+            "listing_url": "https://saga-jinjacho.jp/%e5%8d%83%e6%a0%97%e5%85%ab%e5%b9%a1%e5%ae%ae/",
+            "name_raw": "千栗八幡宮",
+            "reading_raw": ""
+          },
+          "reason": "千栗八幡宮公式ホームページ本文の同一ruby要素に明記された正式名と全文かな、同じページの全所在地を原神社庁掲載の名称・全地番と個別照合。原名・原住所を保持して読みだけを補完。",
+          "references": [
+            {
+              "address_raw": "佐賀県三養基郡みやき町白壁2415",
+              "checked_at": "2026-11-18T12:30:01.645647+00:00",
+              "excerpt": "千栗八幡宮ちりくはちまんぐう / 佐賀県三養基郡みやき町白壁2415",
+              "locator": "main ruby base 千栗八幡宮 and rt; same page footer shrine address",
+              "name_raw": "千栗八幡宮",
+              "officiality_review": "Actual h1 identifies this as 千栗八幡宮公式ホームページ; shrine name and full street address match the original agency listing on the same page. Publisher/shrine footer identifies 千栗八幡宮. Search results alone were not used as evidence.",
+              "page_hash": "d65e20b9ac7cba4f5471523f843bfd4a2d5fa4653326398eb8fbbc721ca06536",
+              "reading_raw": "ちりくはちまんぐう",
+              "reuse_review": "Minimum factual name, literal full ruby, full address and evidence identifiers only; no descriptive paragraphs, images or contact data redistributed. Generic copyright retained; no blanket reuse permission or MIT relicensing asserted.",
+              "ruby_base_raw": "千栗八幡宮",
+              "ruby_rt_raw": "ちりくはちまんぐう",
+              "source_kind": "shrine_official",
+              "source_publisher": "千栗八幡宮",
+              "title": "肥前一宮　千栗八幡宮 | 公式ホームページ",
+              "url": "https://chirikuhachiman.sakura.ne.jp/"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://saga-jinjacho.jp/%e5%8d%83%e6%a0%97%e5%85%ab%e5%b9%a1%e5%ae%ae/",
       "name_raw": "千栗八幡宮",
       "normalization": [
@@ -11361,11 +11402,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "81269392f0840114a944a2a6dcc17e017969d0787af77732227bbb3fc86e1529",
-      "reading": "",
+      "reading": "ちりくはちまんぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://saga-jinjacho.jp/%e5%8d%83%e6%a0%97%e5%85%ab%e5%b9%a1%e5%ae%ae/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://chirikuhachiman.sakura.ne.jp/",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -11525,6 +11566,20 @@
         "prefecture_code": "41",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ちりくはちまんぐう",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ちりくはちまんぐう",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "千栗八幡宮",
         "wikipedia_article_refs": [
@@ -11564,7 +11619,7 @@
         "status": "pending",
         "surface": "千栗八幡宮"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "千栗八幡宮"
     },
     {

@@ -65825,12 +65825,59 @@
       "surface": "貴船神社"
     },
     {
-      "checked_at": "2026-11-08T14:32:56.903086+00:00",
+      "checked_at": "2026-11-18T12:21:05.692828+00:00",
       "evidence": "猿賀神社 |  | 平川市猿賀石林",
       "facility_id": "79219f4f-1be5-5120-9b62-0e560b7dde0c",
       "fetched_at": "2026-11-08T14:32:56.903086+00:00",
       "id": "e92a9105-6327-5301-a15a-0034d8512189",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "さるかじんじゃ"
+          },
+          "expected_source_hash": "62d42441ef9c8a7b75e42cd12727347b460c9a9dbf194a946116c1641e1bd1d9",
+          "facility_id": "79219f4f-1be5-5120-9b62-0e560b7dde0c",
+          "identity_match": {
+            "agency_address": "平川市猿賀石林",
+            "agency_name": "猿賀神社",
+            "reference_address": "青森県平川市猿賀石林175",
+            "reference_name": "猿賀神社",
+            "scope": "Existing listing has a locality only; reference supplies its explicit full address. Original location is not overwritten or claimed to contain a parcel."
+          },
+          "original": {
+            "address": "平川市猿賀石林",
+            "listing_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1d.html",
+            "name_raw": "猿賀神社",
+            "reading_raw": ""
+          },
+          "reason": "県と観光国際交流機構が運営する観光サイトの同名神社見出し直下に印字された全文かなと、原町域に対応する所在地を個別確認。原名・原住所は保持し、県資料の全文読みだけを補完。",
+          "references": [
+            {
+              "address_raw": "青森県平川市猿賀石林175",
+              "checked_at": "2026-11-18T12:21:05.692828+00:00",
+              "excerpt": "猿賀神社 / さるかじんじゃ / 青森県平川市猿賀石林175",
+              "locator": "primary shrine heading and printed full-reading field; 基本情報 住所 dd",
+              "name_raw": "猿賀神社",
+              "page_hash": "e55eeee6d07fd9bd2b91014509dcb0d8b2dc950fcc202e464e2b5369a0d5f90a",
+              "publisher_evidence": {
+                "checked_at": "2026-11-18T12:21:03.449865+00:00",
+                "page_hash": "07b69414447252a5e887b0c997c50b562a379cfd760440cbc27d0970d0e65082",
+                "statement": "青森県及び公益社団法人青森県観光国際交流機構が運営",
+                "url": "https://aomori-tourism.com/terms/index.html"
+              },
+              "reading_raw": "さるかじんじゃ",
+              "redistribution_status": "blanket reuse permission not obtained",
+              "reuse_review": "Only the minimum factual name, literal full kana, location and evidence identifiers are retained. No descriptive article text, images, contact data or complete page body is redistributed. Policy and its copyright restrictions retained; no blanket permission or MIT relicensing asserted.",
+              "source_kind": "municipal_tourism",
+              "source_publisher": "青森県・公益社団法人青森県観光国際交流機構",
+              "terms_url": "https://aomori-tourism.com/terms/index.html",
+              "title": "猿賀神社｜スポット・体験｜【公式】青森県観光情報サイト Amazing AOMORI",
+              "url": "https://aomori-tourism.com/spot/detail_1884.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1d.html",
       "name_raw": "猿賀神社",
       "normalization": [
@@ -65838,11 +65885,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "d621135e82670d6b9cb9a491b43eeb1781d61d6f0f1eb2e24bc1e2499bcffad9",
-      "reading": "",
+      "reading": "さるかじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1d.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://aomori-tourism.com/spot/detail_1884.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -66108,6 +66155,20 @@
         "prefecture_code": "02",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "さるかじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "さるかじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "猿賀神社",
         "wikipedia_article_refs": [
@@ -66147,7 +66208,7 @@
         "status": "pending",
         "surface": "猿賀神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "猿賀神社"
     },
     {
