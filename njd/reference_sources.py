@@ -74,6 +74,11 @@ def inspect_article(page,code):
     boxes=article_infoboxes(root)
     if len(boxes)!=1:raise ValueError('one shrine infobox required')
     headers=[h.text().strip() for h in boxes[0].all('th')]
+    for section in root.all('section'):
+        if section.attrs.get('data-mw-section-id')!='0':continue
+        for paragraph in section.all('p'):
+            if re.search(r'同名(?:の)?(?:神社|社)?が\s*(?:[2-9２-９二三四五六七八九十]|複数)\s*社',paragraph.text()):
+                raise ValueError('multiple same-name shrine facilities in the lead; individual facility review required')
     labels=[v for v in headers if v in ('主祭神','祭神')]
     template=_explicit_shrine_template(boxes[0])
     if not headers or not (labels or template):raise ValueError('explicit shrine infobox type required; temples and lists are not facilities')

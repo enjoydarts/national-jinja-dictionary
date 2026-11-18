@@ -18,6 +18,18 @@ def reference(name='例神社',reading='れいじんじゃ',address='広島県�
 
 
 class ReferenceSourceTests(unittest.TestCase):
+    def test_multiple_same_name_shrines_in_lead_require_individual_review(self):
+        from njd.http import Page
+        for statement in ['同名社が2社あり、どちらも式内社である。','同名の神社が二社あり、両社を扱う。']:
+            body=('<script>{"wgRevisionId":1234,"wgArticleId":10}</script>'
+                  '<div class="mw-parser-output"><section data-mw-section-id="0">'
+                  '<table class="infobox"><tr><th>例神社</th></tr><tr><th>主祭神</th><td>例</td></tr>'
+                  '<tr><th>所在地</th><td>広島県例市例町1</td></tr></table>'
+                  '<p><b>例神社</b>（れいじんじゃ）は広島県例市にある神社。'+statement+'</p></section></div>')
+            page=Page(reference()['url'],200,{'content-type':'text/html'},body.encode(),'2026-11-18T00:00:00+00:00')
+            with self.subTest(statement=statement),self.assertRaisesRegex(ValueError,'individual.*review'):
+                r.inspect_article(page,'34')
+
     def test_additional_prefectures_use_separate_reference_sources(self):
         for code,prefecture,key in [('03','岩手県','iwate_wikipedia'),('08','茨城県','ibaraki_wikipedia'),('43','熊本県','kumamoto_wikipedia')]:
             with self.subTest(code=code):
