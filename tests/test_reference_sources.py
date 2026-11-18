@@ -18,6 +18,16 @@ def reference(name='例神社',reading='れいじんじゃ',address='広島県�
 
 
 class ReferenceSourceTests(unittest.TestCase):
+    def test_additional_prefectures_use_separate_reference_sources(self):
+        for code,prefecture,key in [('03','岩手県','iwate_wikipedia'),('08','茨城県','ibaraki_wikipedia'),('43','熊本県','kumamoto_wikipedia')]:
+            with self.subTest(code=code):
+                data=r.dataset_from_references(code,[reference(address=prefecture+'例市例町1')])
+                self.assertEqual(data['collection']['source_key'],key)
+                self.assertEqual(data['facilities'][0]['source_key'],key)
+                self.assertFalse(data['collection']['official_agency_listing_verified'])
+                self.assertEqual(len(eligible(data)),1)
+                self.assertFalse(blocking_problems(data))
+
     def test_explicit_reference_basis_preserves_source_and_is_not_agency_claim(self):
         ref=reference();d=r.dataset_from_references('34',[ref]);f=d['facilities'][0];e=d['entries'][0]
         self.assertEqual(f['listing_basis'],'wikipedia_reference')

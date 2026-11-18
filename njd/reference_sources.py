@@ -11,7 +11,9 @@ from njd.report import PREFECTURES
 from njd.wikipedia import BASE,LICENSE,Document,article_reference,article_infoboxes,_title
 
 BASIS='wikipedia_reference'
-AUTHORIZED_CODES={'30','34','35','36','44','45'}
+AUTHORIZED_CODES={f'{i:02}' for i in range(1,48)}
+# Preserve existing source identities; additions coexist with agency records.
+LEGACY_REFERENCE_CODES={'30','34','35','36','44','45'}
 
 
 def _postal_address_body(address):
@@ -203,7 +205,8 @@ def dataset_from_references(code,references,*,metadata=None):
         authority_status='reference_source',coverage='Inspected Wikipedia shrine articles only; not agency listings or all prefectural shrines.',
         license_url=LICENSE,terms_url='https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja',
         redistribution_status='Wikipedia source attribution and CC BY-SA 4.0 retained; not relicensed as MIT.')
-    data=build_dataset(SOURCE_KEYS[int(code)-1],code,PREFECTURES[int(code)-1],'',rows,metadata=source)
+    key=SOURCE_KEYS[int(code)-1]+('' if code in LEGACY_REFERENCE_CODES else '_wikipedia')
+    data=build_dataset(key,code,PREFECTURES[int(code)-1],'',rows,metadata=source)
     data['collection'].pop('agency',None)
     by_id={};extra={}
     for row,ref in zip(rows,references):
