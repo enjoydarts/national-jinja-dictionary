@@ -216184,12 +216184,65 @@
       "surface": "春日神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:17.441381+00:00",
+      "checked_at": "2026-11-19T12:59:14.433779+00:00",
       "evidence": "〔東浅井〕 日前神社 〒5290141 長浜市五村",
       "facility_id": "42236083-e996-5dba-94d2-e0a49aef34e9",
       "fetched_at": "2026-11-08T14:31:17.441381+00:00",
       "id": "26385025-c6fc-5702-a603-23e62c4c2051",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ひさきじんじゃ"
+          },
+          "expected_source_hash": "01e41cf6d88f3ea901ac4e98f18de157d366972e0339fa4cb3fc0d72b6325610",
+          "facility_id": "42236083-e996-5dba-94d2-e0a49aef34e9",
+          "identity_match": "神社庁一覧の正式名と原町域が一致。保存された実詳細URLを再取得し、観光協会と神社庁詳細で正式名、全町域および地番が一致することを確認。神社庁詳細の部分かなは採用した全文の先頭と一致。",
+          "original": {
+            "address": "長浜市五村",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+            "name_raw": "日前神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "長浜市五村328",
+              "checked_at": "2026-11-19T12:59:14.433779+00:00",
+              "excerpt": "日前神社 / ひさきじんじゃ / 長浜市五村328",
+              "fetched_at": "2026-11-19T12:59:14.433779+00:00",
+              "locator": "主紹介 h2 内の div.kana と社名欄、table.tb_guide の所在地行 td.address の地図リンク手前",
+              "name_raw": "日前神社",
+              "page_hash": "20d360935916309304962c0ddd8a881eaf19bf13bcb3e0cab2f214234fa765b3",
+              "publisher_page_hash": "75fada46ebb56b03f8cee4fee3a0ff2aae258743b8f6adc3ebc0568be7549482",
+              "publisher_url": "https://kitabiwako.jp/",
+              "reading_raw": "ひさきじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "入口・サイトマップ・取得した紹介本文で公益社団法人長浜米原観光協会の運営表示と一般の著作権表示を確認。確認範囲に事実欄の記録を明示禁止する条項は見当たらない。氏名・連絡先・説明文・写真は収録せず、社名・かな・所在地の事実のみを記録。",
+              "source_kind": "tourism_organization_shrine_profile",
+              "source_publisher": "公益社団法人長浜米原観光協会",
+              "title": "日前神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+              "url": "https://kitabiwako.jp/spot/spot_7203"
+            },
+            {
+              "address_raw": "滋賀県長浜市五村328",
+              "agency_code": "1116",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:02:17.489121+00:00",
+              "excerpt": "日前神社 （ヒサキ） / 滋賀県長浜市五村328",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "日前神社 （ヒサキ）",
+              "name_raw": "日前神社",
+              "page_hash": "6f35037f424f676b00e70ab9a802a67b2ae7fd28e1e3b6ae6f4a4c48804c6dbd",
+              "reading_raw": "ヒサキ",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "日前神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1116"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
       "name_raw": "日前神社",
       "normalization": [
@@ -216197,11 +216250,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-      "reading": "",
+      "reading": "ひさきじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kitabiwako.jp/spot/spot_7203",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -216323,6 +216376,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ひさきじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ひさきじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "日前神社",
         "wikipedia_article_refs": [],
@@ -216353,16 +216420,69 @@
         "status": "pending",
         "surface": "日前神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "日前神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:17.441381+00:00",
+      "checked_at": "2026-11-19T13:06:05.271478+00:00",
       "evidence": "〔東浅井〕 大日孁貴神社 〒5290113 長浜市大井町",
       "facility_id": "fb20409f-e459-5e15-8bd4-cc4835be91c4",
       "fetched_at": "2026-11-08T14:31:17.441381+00:00",
       "id": "66186aee-31ac-539c-a8c9-fac186bb5f60",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おおひるめむちじんじゃ"
+          },
+          "expected_source_hash": "6879cd01f50d0c7277b00b1d9bac40a8e92d159e85a0b82e74860ed759a528c4",
+          "facility_id": "fb20409f-e459-5e15-8bd4-cc4835be91c4",
+          "identity_match": "神社庁一覧の正式名と原町域が一致。保存された実詳細URLを再取得し、観光協会と神社庁詳細で正式名、全町域および地番が一致することを確認。神社庁詳細の部分かなは採用した全文の先頭と一致。",
+          "original": {
+            "address": "長浜市大井町",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+            "name_raw": "大日孁貴神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "長浜市大井町960",
+              "checked_at": "2026-11-19T13:06:05.271478+00:00",
+              "excerpt": "大日孁貴神社 / おおひるめむちじんじゃ / 長浜市大井町960",
+              "fetched_at": "2026-11-19T13:06:05.271478+00:00",
+              "locator": "主紹介 h2 内の div.kana と社名欄、table.tb_guide の所在地行 td.address の地図リンク手前",
+              "name_raw": "大日孁貴神社",
+              "page_hash": "dfbc074be00dce42e2bd671187d6b449e438d17142cd45e2a5be0f039dfc5249",
+              "publisher_page_hash": "75fada46ebb56b03f8cee4fee3a0ff2aae258743b8f6adc3ebc0568be7549482",
+              "publisher_url": "https://kitabiwako.jp/",
+              "reading_raw": "おおひるめむちじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "入口・サイトマップ・取得した紹介本文で公益社団法人長浜米原観光協会の運営表示と一般の著作権表示を確認。確認範囲に事実欄の記録を明示禁止する条項は見当たらない。氏名・連絡先・説明文・写真は収録せず、社名・かな・所在地の事実のみを記録。",
+              "source_kind": "tourism_organization_shrine_profile",
+              "source_publisher": "公益社団法人長浜米原観光協会",
+              "title": "大日孁貴神社　 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+              "url": "https://kitabiwako.jp/spot/spot_7207"
+            },
+            {
+              "address_raw": "滋賀県長浜市大井町960",
+              "agency_code": "1117",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:06:04.447003+00:00",
+              "excerpt": "大日孁貴神社 （オオヒルメムチ） / 滋賀県長浜市大井町960",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "大日孁貴神社 （オオヒルメムチ）",
+              "name_raw": "大日孁貴神社",
+              "page_hash": "b5b84393fe62750770bf957c5bf1ddc9c867a2ab0637d967d226885b3cd19fca",
+              "reading_raw": "オオヒルメムチ",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "大日孁貴神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1117"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
       "name_raw": "大日孁貴神社",
       "normalization": [
@@ -216370,11 +216490,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-      "reading": "",
+      "reading": "おおひるめむちじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kitabiwako.jp/spot/spot_7207",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -216496,6 +216616,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おおひるめむちじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おおひるめむちじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "大日孁貴神社",
         "wikipedia_article_refs": [],
@@ -216526,7 +216660,7 @@
         "status": "pending",
         "surface": "大日孁貴神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "大日孁貴神社"
     },
     {
@@ -216703,12 +216837,65 @@
       "surface": "大井神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:17.441381+00:00",
+      "checked_at": "2026-11-19T13:05:03.406399+00:00",
       "evidence": "〔東浅井〕 宮部神社 〒5290112 長浜市宮部町",
       "facility_id": "3d01a5ef-bef2-5c03-9127-f5851e315c44",
       "fetched_at": "2026-11-08T14:31:17.441381+00:00",
       "id": "ab2c10ab-76de-52c5-b97a-21a09d49dc0b",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "みやべじんじゃ"
+          },
+          "expected_source_hash": "3209b42fa8498cfc70761df5bf792f4a65b3b82e1f5bdfdd8b859b9e2e7371d0",
+          "facility_id": "3d01a5ef-bef2-5c03-9127-f5851e315c44",
+          "identity_match": "神社庁一覧の正式名と原町域が一致。保存された実詳細URLを再取得し、観光協会と神社庁詳細で正式名、全町域および地番が一致することを確認。神社庁詳細の部分かなは採用した全文の先頭と一致。",
+          "original": {
+            "address": "長浜市宮部町",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+            "name_raw": "宮部神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "長浜市宮部町852",
+              "checked_at": "2026-11-19T13:05:03.406399+00:00",
+              "excerpt": "宮部神社 / みやべじんじゃ / 長浜市宮部町852",
+              "fetched_at": "2026-11-19T13:05:03.406399+00:00",
+              "locator": "主紹介 h2 内の div.kana と社名欄、table.tb_guide の所在地行 td.address の地図リンク手前",
+              "name_raw": "宮部神社",
+              "page_hash": "7c3fe7af6443a18bdd58d0545610e363cfad2066952c361686102c910f9a2ceb",
+              "publisher_page_hash": "75fada46ebb56b03f8cee4fee3a0ff2aae258743b8f6adc3ebc0568be7549482",
+              "publisher_url": "https://kitabiwako.jp/",
+              "reading_raw": "みやべじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "入口・サイトマップ・取得した紹介本文で公益社団法人長浜米原観光協会の運営表示と一般の著作権表示を確認。確認範囲に事実欄の記録を明示禁止する条項は見当たらない。氏名・連絡先・説明文・写真は収録せず、社名・かな・所在地の事実のみを記録。",
+              "source_kind": "tourism_organization_shrine_profile",
+              "source_publisher": "公益社団法人長浜米原観光協会",
+              "title": "宮部神社　 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+              "url": "https://kitabiwako.jp/spot/spot_7209"
+            },
+            {
+              "address_raw": "滋賀県長浜市宮部町852",
+              "agency_code": "1119",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:05:00.046019+00:00",
+              "excerpt": "宮部神社 （ミヤベ） / 滋賀県長浜市宮部町852",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "宮部神社 （ミヤベ）",
+              "name_raw": "宮部神社",
+              "page_hash": "1f9dbc433c4f9edc4ff18e9bba56bb0b9a19b5e10b3f93423ec6353e731b7a26",
+              "reading_raw": "ミヤベ",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "宮部神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1119"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
       "name_raw": "宮部神社",
       "normalization": [
@@ -216716,11 +216903,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-      "reading": "",
+      "reading": "みやべじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kitabiwako.jp/spot/spot_7209",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -216842,6 +217029,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "みやべじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "みやべじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "宮部神社",
         "wikipedia_article_refs": [],
@@ -216872,16 +217073,69 @@
         "status": "pending",
         "surface": "宮部神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "宮部神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:17.441381+00:00",
+      "checked_at": "2026-11-19T13:05:16.686217+00:00",
       "evidence": "〔東浅井〕 八幡神社 〒5290111 長浜市三川町",
       "facility_id": "bcd2e05e-a22d-5f3a-97b0-4b6ff47774a6",
       "fetched_at": "2026-11-08T14:31:17.441381+00:00",
       "id": "99cce7a3-f791-5a80-8691-42b792ff53c1",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "はちまんじんじゃ"
+          },
+          "expected_source_hash": "e4338392316e1163f19dce26a9c2e8ddbabf543649cd095598c0fcabf051a067",
+          "facility_id": "bcd2e05e-a22d-5f3a-97b0-4b6ff47774a6",
+          "identity_match": "神社庁一覧の正式名と原町域が一致。保存された実詳細URLを再取得し、観光協会と神社庁詳細で正式名、全町域および地番が一致することを確認。神社庁詳細の部分かなは採用した全文の先頭と一致。",
+          "original": {
+            "address": "長浜市三川町",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+            "name_raw": "八幡神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "長浜市三川町1084",
+              "checked_at": "2026-11-19T13:05:16.686217+00:00",
+              "excerpt": "八幡神社 / はちまんじんじゃ / 長浜市三川町1084",
+              "fetched_at": "2026-11-19T13:05:16.686217+00:00",
+              "locator": "主紹介 h2 内の div.kana と社名欄、table.tb_guide の所在地行 td.address の地図リンク手前",
+              "name_raw": "八幡神社",
+              "page_hash": "6f60d40ae7b85c85c8e1aea2f61e4a65686647cd823a830cc04e37ae522a5bfb",
+              "publisher_page_hash": "75fada46ebb56b03f8cee4fee3a0ff2aae258743b8f6adc3ebc0568be7549482",
+              "publisher_url": "https://kitabiwako.jp/",
+              "reading_raw": "はちまんじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "入口・サイトマップ・取得した紹介本文で公益社団法人長浜米原観光協会の運営表示と一般の著作権表示を確認。確認範囲に事実欄の記録を明示禁止する条項は見当たらない。氏名・連絡先・説明文・写真は収録せず、社名・かな・所在地の事実のみを記録。",
+              "source_kind": "tourism_organization_shrine_profile",
+              "source_publisher": "公益社団法人長浜米原観光協会",
+              "title": "八幡神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+              "url": "https://kitabiwako.jp/spot/spot_7188"
+            },
+            {
+              "address_raw": "滋賀県長浜市三川町1084",
+              "agency_code": "1120",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:06:06.599120+00:00",
+              "excerpt": "八幡神社 （ハチマン） / 滋賀県長浜市三川町1084",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "八幡神社 （ハチマン）",
+              "name_raw": "八幡神社",
+              "page_hash": "30383db516e11ba7a259987964ad276c2987b223207279c65f86cf2239c37424",
+              "reading_raw": "ハチマン",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "八幡神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1120"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
       "name_raw": "八幡神社",
       "normalization": [
@@ -216889,11 +217143,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-      "reading": "",
+      "reading": "はちまんじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kitabiwako.jp/spot/spot_7188",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -217015,6 +217269,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "はちまんじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "はちまんじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "八幡神社",
         "wikipedia_article_refs": [],
@@ -217045,7 +217313,7 @@
         "status": "pending",
         "surface": "八幡神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "八幡神社"
     },
     {
@@ -217275,12 +217543,65 @@
       "surface": "矢合神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:17.441381+00:00",
+      "checked_at": "2026-11-19T13:05:13.482498+00:00",
       "evidence": "〔東浅井〕 榎神社 〒5290144 長浜市大寺町",
       "facility_id": "4282919b-e0aa-5d01-8dc8-da5c29a7ad81",
       "fetched_at": "2026-11-08T14:31:17.441381+00:00",
       "id": "d32b2207-3805-54e8-a21d-11fb6f2f3152",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "えのきじんじゃ"
+          },
+          "expected_source_hash": "cbce23448499d53ef06f2d7d5c8580ee39da4ae3a36a160159f542eaf5260617",
+          "facility_id": "4282919b-e0aa-5d01-8dc8-da5c29a7ad81",
+          "identity_match": "神社庁一覧の正式名と原町域が一致。保存された実詳細URLを再取得し、観光協会と神社庁詳細で正式名、全町域および地番が一致することを確認。神社庁詳細の部分かなは採用した全文の先頭と一致。",
+          "original": {
+            "address": "長浜市大寺町",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+            "name_raw": "榎神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "長浜市大寺町604",
+              "checked_at": "2026-11-19T13:05:13.482498+00:00",
+              "excerpt": "榎神社 / えのきじんじゃ / 長浜市大寺町604",
+              "fetched_at": "2026-11-19T13:05:13.482498+00:00",
+              "locator": "主紹介 h2 内の div.kana と社名欄、table.tb_guide の所在地行 td.address の地図リンク手前",
+              "name_raw": "榎神社",
+              "page_hash": "0e1120f11b789766e53bb9fa74bb680adc444df79fe928d115aa1c676143ae47",
+              "publisher_page_hash": "75fada46ebb56b03f8cee4fee3a0ff2aae258743b8f6adc3ebc0568be7549482",
+              "publisher_url": "https://kitabiwako.jp/",
+              "reading_raw": "えのきじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "入口・サイトマップ・取得した紹介本文で公益社団法人長浜米原観光協会の運営表示と一般の著作権表示を確認。確認範囲に事実欄の記録を明示禁止する条項は見当たらない。氏名・連絡先・説明文・写真は収録せず、社名・かな・所在地の事実のみを記録。",
+              "source_kind": "tourism_organization_shrine_profile",
+              "source_publisher": "公益社団法人長浜米原観光協会",
+              "title": "榎神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+              "url": "https://kitabiwako.jp/spot/spot_7197"
+            },
+            {
+              "address_raw": "滋賀県長浜市大寺町604",
+              "agency_code": "1122",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:05:04.877399+00:00",
+              "excerpt": "榎神社 （エノキ） / 滋賀県長浜市大寺町604",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "榎神社 （エノキ）",
+              "name_raw": "榎神社",
+              "page_hash": "d50f7d5f9a46e5730329a9d5bc6e966ae61bda5b655f11dfab27300a169c399a",
+              "reading_raw": "エノキ",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "榎神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1122"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
       "name_raw": "榎神社",
       "normalization": [
@@ -217288,11 +217609,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-      "reading": "",
+      "reading": "えのきじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kitabiwako.jp/spot/spot_7197",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -217414,6 +217735,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "えのきじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "えのきじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "榎神社",
         "wikipedia_article_refs": [],
@@ -217444,16 +217779,69 @@
         "status": "pending",
         "surface": "榎神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "榎神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:17.441381+00:00",
+      "checked_at": "2026-11-19T12:59:17.302481+00:00",
       "evidence": "〔東浅井〕 大木本神社 〒5290144 長浜市大寺町",
       "facility_id": "96b11db8-9a00-5e2f-a71c-a481c38e05da",
       "fetched_at": "2026-11-08T14:31:17.441381+00:00",
       "id": "4ccbf2f8-71b2-5223-a1ae-f8c19a5478de",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おおきもとじんじゃ"
+          },
+          "expected_source_hash": "6b3b1e2fbb535390c88f32d3979f72208d8ee62877febabff7a94d94871c2f4c",
+          "facility_id": "96b11db8-9a00-5e2f-a71c-a481c38e05da",
+          "identity_match": "神社庁一覧の正式名と原町域が一致。保存された実詳細URLを再取得し、観光協会と神社庁詳細で正式名、全町域および地番が一致することを確認。神社庁詳細の部分かなは採用した全文の先頭と一致。",
+          "original": {
+            "address": "長浜市大寺町",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+            "name_raw": "大木本神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "長浜市大寺町991",
+              "checked_at": "2026-11-19T12:59:17.302481+00:00",
+              "excerpt": "大木本神社 / おおきもとじんじゃ / 長浜市大寺町991",
+              "fetched_at": "2026-11-19T12:59:17.302481+00:00",
+              "locator": "主紹介 h2 内の div.kana と社名欄、table.tb_guide の所在地行 td.address の地図リンク手前",
+              "name_raw": "大木本神社",
+              "page_hash": "1427107e5fd1773301cb16de2cff00f3076ceaa4fe496b85dd5c8e2140225c92",
+              "publisher_page_hash": "75fada46ebb56b03f8cee4fee3a0ff2aae258743b8f6adc3ebc0568be7549482",
+              "publisher_url": "https://kitabiwako.jp/",
+              "reading_raw": "おおきもとじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "入口・サイトマップ・取得した紹介本文で公益社団法人長浜米原観光協会の運営表示と一般の著作権表示を確認。確認範囲に事実欄の記録を明示禁止する条項は見当たらない。氏名・連絡先・説明文・写真は収録せず、社名・かな・所在地の事実のみを記録。",
+              "source_kind": "tourism_organization_shrine_profile",
+              "source_publisher": "公益社団法人長浜米原観光協会",
+              "title": "大木本神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+              "url": "https://kitabiwako.jp/spot/spot_7190?slug=shrine-temple"
+            },
+            {
+              "address_raw": "滋賀県長浜市大寺町991",
+              "agency_code": "1123",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:02:20.224591+00:00",
+              "excerpt": "大木本神社 （オオキモト） / 滋賀県長浜市大寺町991",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "大木本神社 （オオキモト）",
+              "name_raw": "大木本神社",
+              "page_hash": "774ea891c0b89957b7d2522dd7718e38b177fe29d4e67117c732bf8e6770c883",
+              "reading_raw": "オオキモト",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "大木本神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1123"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
       "name_raw": "大木本神社",
       "normalization": [
@@ -217461,11 +217849,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-      "reading": "",
+      "reading": "おおきもとじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kitabiwako.jp/spot/spot_7190?slug=shrine-temple",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -217587,6 +217975,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おおきもとじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おおきもとじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "大木本神社",
         "wikipedia_article_refs": [],
@@ -217617,16 +218019,69 @@
         "status": "pending",
         "surface": "大木本神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "大木本神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:17.441381+00:00",
+      "checked_at": "2026-11-19T12:59:20.149845+00:00",
       "evidence": "〔東浅井〕 月ヶ瀬神社 〒5290102 長浜市月ヶ瀬町",
       "facility_id": "27a7b6a7-6bcd-5b42-b41a-f91963817482",
       "fetched_at": "2026-11-08T14:31:17.441381+00:00",
       "id": "1b9a6e74-568a-5c4f-9145-e33ffccab4a6",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "つきがせじんじゃ"
+          },
+          "expected_source_hash": "af9b0c26969eec2050f3e68613c931482990a0c9ea066ed5e284398943c1610f",
+          "facility_id": "27a7b6a7-6bcd-5b42-b41a-f91963817482",
+          "identity_match": "神社庁一覧の正式名と原町域が一致。保存された実詳細URLを再取得し、観光協会と神社庁詳細で正式名、全町域および地番が一致することを確認。神社庁詳細の部分かなは採用した全文の先頭と一致。",
+          "original": {
+            "address": "長浜市月ヶ瀬町",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+            "name_raw": "月ヶ瀬神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "長浜市月ヶ瀬町177",
+              "checked_at": "2026-11-19T12:59:20.149845+00:00",
+              "excerpt": "月ヶ瀬神社 / つきがせじんじゃ / 長浜市月ヶ瀬町177",
+              "fetched_at": "2026-11-19T12:59:20.149845+00:00",
+              "locator": "主紹介 h2 内の div.kana と社名欄、table.tb_guide の所在地行 td.address の地図リンク手前",
+              "name_raw": "月ヶ瀬神社",
+              "page_hash": "d0f18ac9a09881b3ce1a565f124547e97c593712ac3c44a4ac1282de8ab4751b",
+              "publisher_page_hash": "75fada46ebb56b03f8cee4fee3a0ff2aae258743b8f6adc3ebc0568be7549482",
+              "publisher_url": "https://kitabiwako.jp/",
+              "reading_raw": "つきがせじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "入口・サイトマップ・取得した紹介本文で公益社団法人長浜米原観光協会の運営表示と一般の著作権表示を確認。確認範囲に事実欄の記録を明示禁止する条項は見当たらない。氏名・連絡先・説明文・写真は収録せず、社名・かな・所在地の事実のみを記録。",
+              "source_kind": "tourism_organization_shrine_profile",
+              "source_publisher": "公益社団法人長浜米原観光協会",
+              "title": "月ヶ瀬神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+              "url": "https://kitabiwako.jp/spot/spot_7192"
+            },
+            {
+              "address_raw": "滋賀県長浜市月ヶ瀬町177",
+              "agency_code": "1124",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:02:22.766413+00:00",
+              "excerpt": "月ヶ瀬神社 （ツキガセ） / 滋賀県長浜市月ヶ瀬町177",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "月ヶ瀬神社 （ツキガセ）",
+              "name_raw": "月ヶ瀬神社",
+              "page_hash": "c438376dac1764ef74ce807c87df6232b71ced9f95232c7bf01d2806d45b71ac",
+              "reading_raw": "ツキガセ",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "月ヶ瀬神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1124"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
       "name_raw": "月ヶ瀬神社",
       "normalization": [
@@ -217634,11 +218089,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-      "reading": "",
+      "reading": "つきがせじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kitabiwako.jp/spot/spot_7192",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -217760,6 +218215,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "つきがせじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "つきがせじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "月ヶ瀬神社",
         "wikipedia_article_refs": [],
@@ -217790,7 +218259,7 @@
         "status": "pending",
         "surface": "月ヶ瀬神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "月ヶ瀬神社"
     },
     {
@@ -217967,12 +218436,65 @@
       "surface": "水引神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:17.441381+00:00",
+      "checked_at": "2026-11-19T12:59:23.036975+00:00",
       "evidence": "〔東浅井〕 稲荷神社 〒5290101 長浜市唐国町",
       "facility_id": "17ce6b2b-ff6e-5cc8-ae9a-ea8087c47f59",
       "fetched_at": "2026-11-08T14:31:17.441381+00:00",
       "id": "57fcc36f-439d-5600-93b9-c8a88a4c0632",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いなりじんじゃ"
+          },
+          "expected_source_hash": "a3594b60587beb9462f321487db25d5efd47d3a19362681059ed5eb6ffc16b1b",
+          "facility_id": "17ce6b2b-ff6e-5cc8-ae9a-ea8087c47f59",
+          "identity_match": "神社庁一覧の正式名と原町域が一致。保存された実詳細URLを再取得し、観光協会と神社庁詳細で正式名、全町域および地番が一致することを確認。神社庁詳細の部分かなは採用した全文の先頭と一致。",
+          "original": {
+            "address": "長浜市唐国町",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+            "name_raw": "稲荷神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "長浜市唐国町836",
+              "checked_at": "2026-11-19T12:59:23.036975+00:00",
+              "excerpt": "稲荷神社 / いなりじんじゃ / 長浜市唐国町836",
+              "fetched_at": "2026-11-19T12:59:23.036975+00:00",
+              "locator": "主紹介 h2 内の div.kana と社名欄、table.tb_guide の所在地行 td.address の地図リンク手前",
+              "name_raw": "稲荷神社",
+              "page_hash": "569b72f9376c5a1411e8ce0a07c9073ea0cb8125124daeb95f3c01c0712f0c80",
+              "publisher_page_hash": "75fada46ebb56b03f8cee4fee3a0ff2aae258743b8f6adc3ebc0568be7549482",
+              "publisher_url": "https://kitabiwako.jp/",
+              "reading_raw": "いなりじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "入口・サイトマップ・取得した紹介本文で公益社団法人長浜米原観光協会の運営表示と一般の著作権表示を確認。確認範囲に事実欄の記録を明示禁止する条項は見当たらない。氏名・連絡先・説明文・写真は収録せず、社名・かな・所在地の事実のみを記録。",
+              "source_kind": "tourism_organization_shrine_profile",
+              "source_publisher": "公益社団法人長浜米原観光協会",
+              "title": "稲荷神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+              "url": "https://kitabiwako.jp/spot/spot_7194"
+            },
+            {
+              "address_raw": "滋賀県長浜市唐国町836",
+              "agency_code": "1126",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:02:24.923643+00:00",
+              "excerpt": "稲荷神社 （イナリ） / 滋賀県長浜市唐国町836",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "稲荷神社 （イナリ）",
+              "name_raw": "稲荷神社",
+              "page_hash": "04891a1012790f48f3e5771a618d12ecff05ca5d3bfd7b573c6be0438d0d58dc",
+              "reading_raw": "イナリ",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "稲荷神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1126"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
       "name_raw": "稲荷神社",
       "normalization": [
@@ -217980,11 +218502,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-      "reading": "",
+      "reading": "いなりじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kitabiwako.jp/spot/spot_7194",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -218106,6 +218628,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いなりじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いなりじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "稲荷神社",
         "wikipedia_article_refs": [],
@@ -218136,7 +218672,7 @@
         "status": "pending",
         "surface": "稲荷神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "稲荷神社"
     },
     {
@@ -239076,12 +239612,64 @@
       "surface": "水分神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:20.080342+00:00",
+      "checked_at": "2026-11-19T12:58:11.259434+00:00",
       "evidence": "〔伊香〕 佐波加刀神社 〒5290414 長浜市木之本町川合",
       "facility_id": "3d59efcd-5fbe-5170-9f8f-3d00d273b35b",
       "fetched_at": "2026-11-08T14:31:20.080342+00:00",
       "id": "a595177c-01ff-5fcb-a3ea-ce00e6fbbe51",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "さわかとじんじゃ"
+          },
+          "expected_source_hash": "07b95f6fe2a5b4a880d92bf229b937887bf13b3281d99a3fbeeec9cfe27698cc",
+          "facility_id": "3d59efcd-5fbe-5170-9f8f-3d00d273b35b",
+          "identity_match": "神社庁一覧の正式名、原町域と一致し、同庁の実詳細と個人の参詣記事で地番1277まで一致。詳細の部分かな「サワカト」と参詣記事の独立全文かなが対応。",
+          "original": {
+            "address": "長浜市木之本町川合",
+            "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=13",
+            "name_raw": "佐波加刀神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "滋賀県長浜市木之本町川合1277",
+              "checked_at": "2026-11-19T12:58:11.259434+00:00",
+              "excerpt": "佐波加刀神社 / さわかとじんじゃ / 滋賀県長浜市木之本町川合1277",
+              "fetched_at": "2026-11-19T12:58:11.259434+00:00",
+              "locator": "主紹介の社名見出し、直後の括弧内の全文かな、同じ冒頭の所在地",
+              "name_raw": "佐波加刀神社",
+              "page_hash": "89cf23dd6405ccfa0f6fc59c113ac685974c84a78a010271395ca4b4a4fff1e6",
+              "reading_raw": "さわかとじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "Amebaの表示する利用規約で投稿と知的財産権の条項を確認。記録対象は名称・独立全文かな・所在地の限定事実で、参拝記事本文や写真は収録しない。",
+              "source_kind": "independent_secondary_reference",
+              "source_publisher": "かむなからのみち ～天地悠久～（個人参詣記事）",
+              "terms_url": "https://helps.ameba.jp/rules/post_104.html",
+              "title": "佐波加刀神社 | かむなからのみち ～天地悠久～",
+              "url": "https://ameblo.jp/keith4862/entry-12670275917.html"
+            },
+            {
+              "address_raw": "滋賀県長浜市木之本町川合1277",
+              "agency_code": "1245",
+              "alias_display_raw": "",
+              "checked_at": "2026-11-19T13:02:29.238550+00:00",
+              "excerpt": "佐波加刀神社 （サワカト） / 滋賀県長浜市木之本町川合1277",
+              "locator": "div.j_title と同一詳細の鎮座地行",
+              "name_display_raw": "佐波加刀神社 （サワカト）",
+              "name_raw": "佐波加刀神社",
+              "page_hash": "0b93e7fe83b21177b5a57635dddf6789d14a034f49de1027490abd0b345d9542",
+              "reading_raw": "サワカト",
+              "reading_scope": "partial_or_absent",
+              "source_kind": "agency",
+              "title": "佐波加刀神社 | 滋賀県神社庁",
+              "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1245"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=13",
       "name_raw": "佐波加刀神社",
       "normalization": [
@@ -239089,11 +239677,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "13711e6434160d86d6ce14eff5f659ea772350a470e4c61318e8791cf20b3921",
-      "reading": "",
+      "reading": "さわかとじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=13",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://ameblo.jp/keith4862/entry-12670275917.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -239268,6 +239856,20 @@
         "prefecture_code": "25",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "さわかとじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "さわかとじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "佐波加刀神社",
         "wikipedia_article_refs": [],
@@ -239298,7 +239900,7 @@
         "status": "pending",
         "surface": "佐波加刀神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "佐波加刀神社"
     },
     {

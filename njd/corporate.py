@@ -2,7 +2,7 @@
 import argparse
 import copy
 import csv
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import hashlib
 from http.cookiejar import CookieJar
 import io
@@ -24,6 +24,8 @@ from njd.wikipedia import Document, external_directory, pending_targets
 
 BASE='https://www.houjin-bangou.nta.go.jp'
 LANDING=BASE+'/download/zenken/'
+DAILY_ARCHIVE=BASE+'/download/sabun/index.html'
+JST=timezone(timedelta(hours=9))
 TERMS=BASE+'/riyokiyaku/'
 PDL='https://www.digital.go.jp/resources/open_data/public_data_license_v1.0'
 TOKEN='jp.go.nta.houjin_bangou.framework.web.common.CNSFWTokenProcessor.request.token'
@@ -206,6 +208,25 @@ def _bound(row,target):
     return _reference_matches(dict(name_raw=f['listed_name'],address_raw=address),f,e,{})
 
 
+def _image_archive_matches(ref,fields):
+    url=ref.get('url')
+    member=ref.get('zip_member')
+    if url==BASE+'/download/zenken/index.html':
+        return not (isinstance(member,str) and member.startswith('diff_'))
+    snapshot=ref.get('snapshot')
+    file_id=ref.get('file_id')
+    if (url!=DAILY_ARCHIVE or not isinstance(snapshot,str) or not re.fullmatch('[0-9]{8}',snapshot)
+        or member!=f'diff_{snapshot}.csv' or not isinstance(file_id,str) or not re.fullmatch('[0-9]+',file_id)):
+        return False
+    try:
+        published=datetime.strptime(snapshot,'%Y%m%d').date()
+        fetched=datetime.fromisoformat(ref.get('checked_at'))
+    except (TypeError,ValueError):
+        return False
+    return (fields.get('updateDate')==published.isoformat() and fetched.tzinfo is not None
+        and fetched.astimezone(JST).date()>=published)
+
+
 def image_review_problems(ref):
     """Bind an individual visual inspection to the exact Unicode CSV row.
 
@@ -221,7 +242,7 @@ def image_review_problems(ref):
     if not isinstance(packet,dict) or set(packet)!=set(needed):return ['registered image IDs require individually inspected image references']
     if any(not isinstance(fields.get(k),str) for k in ('name','furigana','corporateNumber','prefectureName','cityName','streetNumber')):return ['invalid image-backed CSV identity field types']
     problems=[];address=''.join(fields[k] for k in ('prefectureName','cityName','streetNumber'))
-    if ref.get('url')!=BASE+'/download/zenken/index.html':problems.append('image-backed CSV reference is not the inspected official archive endpoint')
+    if not _image_archive_matches(ref,fields):problems.append('image-backed CSV reference does not identify the inspected official archive version')
     if not re.fullmatch('[0-9]{13}',fields['corporateNumber']):problems.append('image-backed corporate number invalid')
     if fields.get('latest')!='1' or fields.get('process')=='99' or fields.get('closeDate') or fields.get('hihyoji')!='0':problems.append('image-backed registry identity is historical, closed or hidden')
     raw_pairs={'name_raw':fields['name'],'reading_raw':fields['furigana'],'address_raw':address,'corporate_number':fields['corporateNumber']}
@@ -253,7 +274,8 @@ def _proposal(target,row,member,index,meta,*,image_reviews=None):
     if (row['nameImageId'] or row['addressImageId']) and not image_reviews:raise ValueError('image-backed source characters require review')
     address=row['prefectureName']+row['cityName']+row['streetNumber']
     excerpt=row['name']+' / '+raw+' / '+address
-    ref=dict(url=meta['url'],title='国税庁法人番号公表サイト 全件データ',source_kind='government_corporate_register',
+    archive_label='差分データ' if meta['url']==DAILY_ARCHIVE else '全件データ'
+    ref=dict(url=meta['url'],title='国税庁法人番号公表サイト '+archive_label,source_kind='government_corporate_register',
         name_raw=row['name'],reading_raw=raw,address_raw=address,excerpt=excerpt,checked_at=meta['checked_at'],page_hash=meta['page_hash'],
         file_id=meta['file_id'],snapshot=meta['snapshot'],zip_member=member,csv_row=index,corporate_number=row['corporateNumber'],source_fields=row,
         locator=f"Unicode CSV file ID {meta['file_id']}; {member}; row {index}; corporateNumber={row['corporateNumber']}",
@@ -266,7 +288,7 @@ def _proposal(target,row,member,index,meta,*,image_reviews=None):
         if proof is not None:ref['registered_name_identity']=proof
     proposal=dict(status='verified',facility_id=f['id'],expected_source_hash=e.get('source_hash'),
         original=dict(name_raw=f.get('name_raw'),reading_raw=e.get('reading_raw'),address=raw_address(f),listing_url=f.get('listing_url')),
-        changes=dict(reading=reading),references=[ref],reason='Registered full-name furigana from inspected NTA prefecture archive; exact legal name and full address bound.',
+        changes=dict(reading=reading),references=[ref],reason='Registered full-name furigana from inspected NTA archive; exact legal name and full address bound.',
         identity_match=dict(agency_name=f['listed_name'],reference_name=row['name'],agency_address=raw_address(f),effective_address=f['address'],reference_address=address))
     problems=correction_problems(proposal,f,e,target['source'])
     if problems:raise ValueError('; '.join(problems))

@@ -36510,12 +36510,52 @@
       "surface": "朝日神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:20.928111+00:00",
+      "checked_at": "2026-11-19T12:58:10.556311+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「山科神社」、郵便番号「607-8309」、所在地「京都市山科区西野山岩ケ谷町1」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "9224e6d0-dbfe-558f-b028-2f441ddad797",
       "fetched_at": "2026-11-09T08:51:20.928111+00:00",
       "id": "3a04b94f-6957-5fc6-8551-5432ce9ca1a6",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "やましなじんじゃ"
+          },
+          "expected_source_hash": "fd231d03695fb67e14501a35ffc12649439412e1ed8f3b9b00ab290b1a64f01c",
+          "facility_id": "9224e6d0-dbfe-558f-b028-2f441ddad797",
+          "identity_match": "同一一覧行に山科神社の正式名、全文かな、京都市山科区から地番1までの原住所が明示され、実リンク先個別紹介の住所も一致。山科区観光振興調査報告書の同名、全文かな、町名と地番とも一致。",
+          "original": {
+            "address": "京都市山科区西野山岩ケ谷町1",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/11.html",
+            "name_raw": "山科神社",
+            "reading_raw": ""
+          },
+          "reason": "個別資料の主対象に明示された神社名の全文かなを、原掲載の施設に照合して読みのみを補完。",
+          "references": [
+            {
+              "address_raw": "京都市山科区西野山岩ケ谷町1",
+              "checked_at": "2026-11-19T12:58:10.556311+00:00",
+              "corroborating_profile": {
+                "checked_at": "2026-11-19T13:00:37.965413+00:00",
+                "page_hash": "d7cb7f5b0ebef306deb13e9a018c96efba7ea29452d9f4b3c13bb6bb2a50e71f",
+                "url": "https://fishaqua.gozaru.jp/kyoto/yamashina/yamashinajinja/text.htm"
+              },
+              "excerpt": "山科神社 / やましなじんじゃ / 京都市山科区西野山岩ケ谷町1",
+              "fetched_at": "2026-11-19T12:58:10.556311+00:00",
+              "locator": "市区町村別 > 山科区 > 山科神社を主対象とするリンクと同一 li の住所",
+              "name_raw": "山科神社",
+              "page_hash": "4d4ac3bf304533abb5cc1fdc776a082b2624df22f802d8160eff0fc601830ced",
+              "reading_raw": "やましなじんじゃ",
+              "reading_scope": "full_name",
+              "rights_note": "サイトの入口・京都社寺入口・市区町村別一覧と実リンク先の個別紹介の確認範囲に事実欄の転用禁止は見当たらない。最小限の事実のみを保存。",
+              "source_kind": "independent_secondary_reference",
+              "source_publisher": "京都の神社・仏閣（個人案内）",
+              "title": "京都の神社・仏閣の案内です",
+              "url": "https://fishaqua.gozaru.jp/kyoto/city2.htm"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/11.html",
       "name_raw": "山科神社",
       "normalization": [
@@ -36523,11 +36563,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "7dd399ff191bdb1645564584e06ec23506ee7798ce57c8b3b9ecad8f11ea9dfb",
-      "reading": "",
+      "reading": "やましなじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/11.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://fishaqua.gozaru.jp/kyoto/city2.htm",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -36672,6 +36712,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "やましなじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "やましなじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "山科神社",
         "wikipedia_article_refs": [
@@ -36711,7 +36765,7 @@
         "status": "pending",
         "surface": "山科神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "山科神社"
     },
     {

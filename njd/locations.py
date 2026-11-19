@@ -1,4 +1,4 @@
-"""Pure, evidence-bound location supplements for addressless agency links."""
+"""Pure, evidence-bound supplements for missing acquired location fields."""
 import copy
 from datetime import datetime
 import re
@@ -179,6 +179,9 @@ def location_problems(supplement, facility, source=None):
     if supplement.get('supplement_kind') == 'hyogo_registered_municipality':
         from njd.hyogo_municipality import municipality_problems
         return problems + municipality_problems(supplement, facility)
+    if supplement.get('supplement_kind') == 'mie_registered_municipality':
+        from njd.mie_municipality import municipality_problems
+        return problems + municipality_problems(supplement, facility)
     if raw_address(facility) != '' or _raw_field(facility, 'municipality') != '':
         problems.append('only an empty acquired address and municipality can be supplemented')
     if supplement.get('facility_id') != facility.get('id'):
@@ -290,6 +293,9 @@ def apply_locations(data, document):
                 problems.append('typed Hyogo location requires a single original registration')
             for entry in entries:
                 problems.extend(entry_checker(supplement, facility, entry))
+        if isinstance(supplement, dict) and supplement.get('supplement_kind') == 'mie_registered_municipality':
+            from njd.mie_municipality import municipality_entry_problems
+            problems.extend(municipality_entry_problems(facility, entries))
         if any(e.get('identity_review_required') for e in entries):
             problems.append('entry facility identity still requires review')
         address, municipality = raw_address(facility), _raw_field(facility, 'municipality')

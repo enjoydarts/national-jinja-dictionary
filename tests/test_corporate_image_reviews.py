@@ -66,6 +66,41 @@ class CorporateImageAuthorityTests(unittest.TestCase):
         r=fields(nameImageId='00000001',corporateNumber='invalid')
         with self.assertRaises(ValueError):c._proposal(target(),r,'31_tottori_all_20261030.csv',1,META,image_reviews=reviews(r))
 
+    def daily(self):
+        meta=dict(META,url=c.BASE+'/download/sabun/index.html',snapshot='20261118',checked_at='2026-11-19T00:00:00+00:00')
+        r=fields(nameImageId='00000001',updateDate='2026-11-18')
+        packet=reviews(r)
+        packet['nameImageId']['snapshot']=meta['snapshot']
+        return meta,r,packet
+
+    def test_daily_image_review_binds_the_official_difference_version(self):
+        meta,r,packet=self.daily()
+        proposal=c._proposal(target(),r,'diff_20261118.csv',1,meta,image_reviews=packet)
+        ref=proposal['references'][0]
+        self.assertEqual(ref['title'],'国税庁法人番号公表サイト 差分データ')
+        self.assertEqual(ref['source_fields'],r)
+        self.assertEqual(proposal['changes'],{'reading':'まえだじんじゃ'})
+
+    def test_publication_date_uses_japan_standard_time(self):
+        meta,r,packet=self.daily()
+        meta['checked_at']='2026-11-17T15:30:00+00:00'
+        proposal=c._proposal(target(),r,'diff_20261118.csv',1,meta,image_reviews=packet)
+        self.assertEqual(proposal['changes'],{'reading':'まえだじんじゃ'})
+
+    def test_daily_image_review_rejects_mismatched_archive_or_csv_date(self):
+        meta,r,packet=self.daily()
+        cases=[
+            (meta,r,'diff_20261117.csv'),
+            (meta,dict(r,updateDate='2026-11-17'),'diff_20261118.csv'),
+            (dict(meta,checked_at='2026-11-17T14:59:00+00:00'),r,'diff_20261118.csv'),
+            (dict(meta,file_id='not-an-id'),r,'diff_20261118.csv'),
+            (dict(meta,url=c.BASE+'/download/zenken/index.html'),r,'diff_20261118.csv'),
+            (dict(meta,url='https://other.example/download/sabun/index.html'),r,'diff_20261118.csv'),
+        ]
+        for archive,row,member in cases:
+            with self.subTest(archive=archive,member=member),self.assertRaises(ValueError):
+                c._proposal(target(),row,member,1,archive,image_reviews=packet)
+
 class CorporateImageActiveIdentityTests(unittest.TestCase):
     def test_images_do_not_make_historical_closed_or_hidden_corporations_eligible(self):
         for change in [dict(latest='0'),dict(process='99'),dict(closeDate='2026-10-01'),dict(hihyoji='1')]:
