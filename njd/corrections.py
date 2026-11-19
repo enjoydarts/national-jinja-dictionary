@@ -91,6 +91,34 @@ def _additional_aza_matches(actual,expected,ref,facility):
     return _subject_profile_link(ref,facility,proof)
 
 
+def _nagano_booklet_address(ref,facility,entry):
+    proof=ref['address_identity_proof']
+    visual=ref.get('visual_review')
+    if (facility.get('source_key')!='nagano' or facility.get('prefecture_code')!='20'
+        or ref.get('source_kind')!='official_agency_booklet' or ref.get('reading_scope')!='full_name'
+        or ref.get('name_raw')!=facility.get('listed_name') or not _url(ref.get('url'))
+        or not _url(facility.get('listing_url')) or not _plain(ref.get('locator'))
+        or not _plain(facility.get('address')) or not _plain(ref.get('address_raw'))
+        or not _hash(ref.get('page_hash')) or not isinstance(visual,dict) or not _hash(visual.get('image_sha256'))):
+        return None
+    source=urlsplit(ref['url'])
+    listing=urlsplit(facility['listing_url'])
+    if (source.scheme!='https' or source.netloc!='www.nagano-jinjacho.jp'
+        or listing.netloc!=source.netloc or source.query or source.fragment
+        or not re.fullmatch(r'/_userdata/[A-Za-z0-9_-]+\.pdf',source.path)):
+        return None
+    original=re.fullmatch(r'.+?([0-9０-９]+(?:-[0-9０-９]+)*)',facility.get('address',''))
+    printed=re.fullmatch(r'(.+?)([〇一二三四五六七八九]+(?:[-‐][〇一二三四五六七八九]+)*)',ref.get('address_raw',''))
+    digest=entry.get('source_hash')
+    if (not original or not printed or not _hash(digest) or facility.get('source_hash')!=digest
+        or proof!=dict(kind='nagano_booklet_terminal_digits',expected_source_hash=digest,
+            reference_page_hash=ref['page_hash'],original_number_raw=original[1],reference_number_raw=printed[2])):
+        return None
+    numeric=printed[2].translate(str.maketrans('〇一二三四五六七八九‐','0123456789-'))
+    if numeric!=_comparison(original[1]):return None
+    return printed[1]+numeric
+
+
 def _reference_matches(ref,facility,entry,changes):
     names={_comparison(facility.get('listed_name')),_comparison(entry.get('surface')),
            _comparison(changes.get('surface'))}-{''}
@@ -120,7 +148,12 @@ def _reference_matches(ref,facility,entry,changes):
         # 市 (official prefectural references are recorded in docs/DATA.md).
         match=re.match(r'((?:高市|余市|[^都道府県市区]+?)郡)(.+)',value)
         return match.groups() if match else ('',value)
-    if 'article_address_context' in ref:
+    proof=ref.get('address_identity_proof')
+    if isinstance(proof,dict) and proof.get('kind')=='nagano_booklet_terminal_digits':
+        matched=_nagano_booklet_address(ref,facility,entry)
+        if set(changes)!={'reading'} or matched is None:return False
+        reference_address=address(matched)
+    elif 'article_address_context' in ref:
         from njd.article_context import article_context_address
         contextual=article_context_address(ref,facility)
         if set(changes)!={'reading'} or entry.get('status')=='excluded' or contextual is None:return False

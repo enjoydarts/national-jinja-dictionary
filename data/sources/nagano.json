@@ -85190,12 +85190,77 @@
       "surface": "富田神社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "八幡社 399-4605 上伊那郡箕輪町大字中曽根636",
       "facility_id": "590e2596-2786-59c9-ba82-6515dd73d921",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "1682f66a-6a62-5a05-8189-f5b0565a2659",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "はちまんしゃ"
+          },
+          "expected_source_hash": "5e56a655b749f82c00697cf9a97f2a8deb37cedfbcea81cd7d1b1e85ccf56c8f",
+          "facility_id": "590e2596-2786-59c9-ba82-6515dd73d921",
+          "identity_match": {
+            "agency_address": "上伊那郡箕輪町大字中曽根636",
+            "agency_name": "八幡社",
+            "effective_address": "上伊那郡箕輪町大字中曽根636",
+            "reference_address": "箕輪町大字中曽根六三六",
+            "reference_name": "八幡社"
+          },
+          "original": {
+            "address": "上伊那郡箕輪町大字中曽根636",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "八幡社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "5e56a655b749f82c00697cf9a97f2a8deb37cedfbcea81cd7d1b1e85ccf56c8f",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "636",
+                "reference_number_raw": "六三六",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "箕輪町大字中曽根六三六",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "",
+              "excerpt": "八幡社（はちまんしゃ） / 箕輪町大字中曽根六三六",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "八幡社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "はちまんしゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "八幡社",
       "normalization": [
@@ -85203,11 +85268,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "はちまんしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -85282,6 +85347,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "はちまんしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "はちまんしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "八幡社",
         "wikipedia_article_refs": [],
@@ -85312,7 +85391,7 @@
         "status": "pending",
         "surface": "八幡社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "八幡社"
     },
     {
@@ -86424,12 +86503,77 @@
       "surface": "田畑神社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "白山社八幡社合殿 399-4511 上伊那郡南箕輪村7178",
       "facility_id": "6cdfcab2-6d1a-5bda-9c03-83b4c15c40cd",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "6580dbb1-ac84-5ad6-be22-f74d4d7a4073",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "はくさんしゃはちまんしゃごうでん"
+          },
+          "expected_source_hash": "0c89ef1311e643f85fe302635b83e2050ea4059c6709e047a24dcdb97e3e8fde",
+          "facility_id": "6cdfcab2-6d1a-5bda-9c03-83b4c15c40cd",
+          "identity_match": {
+            "agency_address": "上伊那郡南箕輪村7178",
+            "agency_name": "白山社八幡社合殿",
+            "effective_address": "上伊那郡南箕輪村7178",
+            "reference_address": "南箕輪村七一七八",
+            "reference_name": "白山社八幡社合殿"
+          },
+          "original": {
+            "address": "上伊那郡南箕輪村7178",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "白山社八幡社合殿",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "0c89ef1311e643f85fe302635b83e2050ea4059c6709e047a24dcdb97e3e8fde",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "7178",
+                "reference_number_raw": "七一七八",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "南箕輪村七一七八",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "神子柴",
+              "excerpt": "白山社八幡社合殿（はくさんしゃはちまんしゃごうでん） / 南箕輪村七一七八（神子柴）",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "白山社八幡社合殿",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "はくさんしゃはちまんしゃごうでん",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "白山社八幡社合殿",
       "normalization": [
@@ -86437,11 +86581,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "はくさんしゃはちまんしゃごうでん",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -86512,6 +86656,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "はくさんしゃはちまんしゃごうでん",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "はくさんしゃはちまんしゃごうでん",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "白山社八幡社合殿",
         "wikipedia_article_refs": [],
@@ -86542,7 +86700,7 @@
         "status": "pending",
         "surface": "白山社八幡社合殿"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "白山社八幡社合殿"
     },
     {
@@ -86668,12 +86826,77 @@
       "surface": "日光社月光社合殿"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "大和泉神社 399-4511 上伊那郡南箕輪村字田代2462",
       "facility_id": "549e2a15-b0fd-5557-a896-cec641ef21a6",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "c42e6ec8-eccd-5e20-8580-351b8e275a8b",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おいずみじんじゃ"
+          },
+          "expected_source_hash": "f08390abfea7cb279df46f8ed8cf9fb3649e570de3cbdfa3000772c789974156",
+          "facility_id": "549e2a15-b0fd-5557-a896-cec641ef21a6",
+          "identity_match": {
+            "agency_address": "上伊那郡南箕輪村字田代2462",
+            "agency_name": "大和泉神社",
+            "effective_address": "上伊那郡南箕輪村字田代2462",
+            "reference_address": "南箕輪村字田代二四六二",
+            "reference_name": "大和泉神社"
+          },
+          "original": {
+            "address": "上伊那郡南箕輪村字田代2462",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "大和泉神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "f08390abfea7cb279df46f8ed8cf9fb3649e570de3cbdfa3000772c789974156",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "2462",
+                "reference_number_raw": "二四六二",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "南箕輪村字田代二四六二",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "大泉",
+              "excerpt": "大和泉神社（おいずみじんじゃ） / 南箕輪村字田代二四六二（大泉）",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "大和泉神社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "おいずみじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "大和泉神社",
       "normalization": [
@@ -86681,11 +86904,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "おいずみじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -86756,6 +86979,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おいずみじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おいずみじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "大和泉神社",
         "wikipedia_article_refs": [],
@@ -86786,16 +87023,81 @@
         "status": "pending",
         "surface": "大和泉神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "大和泉神社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "大芝神社 399-4511 上伊那郡南箕輪村字大芝原2358",
       "facility_id": "f3ea61a5-405e-5a8f-9f70-2a3e9aea9c3f",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "09438540-28f2-541c-b68c-dae5aaef06d5",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おおしばじんじゃ"
+          },
+          "expected_source_hash": "62e835b577f90292027e025c8da6f0a195f07b7e61edb8645ed1bb7c1f8d06f1",
+          "facility_id": "f3ea61a5-405e-5a8f-9f70-2a3e9aea9c3f",
+          "identity_match": {
+            "agency_address": "上伊那郡南箕輪村字大芝原2358",
+            "agency_name": "大芝神社",
+            "effective_address": "上伊那郡南箕輪村字大芝原2358",
+            "reference_address": "南箕輪村字大芝原二三五八",
+            "reference_name": "大芝神社"
+          },
+          "original": {
+            "address": "上伊那郡南箕輪村字大芝原2358",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "大芝神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "62e835b577f90292027e025c8da6f0a195f07b7e61edb8645ed1bb7c1f8d06f1",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "2358",
+                "reference_number_raw": "二三五八",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "南箕輪村字大芝原二三五八",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "",
+              "excerpt": "大芝神社（おおしばじんじゃ） / 南箕輪村字大芝原二三五八",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "大芝神社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "おおしばじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "大芝神社",
       "normalization": [
@@ -86803,11 +87105,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "おおしばじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -86878,6 +87180,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おおしばじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おおしばじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "大芝神社",
         "wikipedia_article_refs": [],
@@ -86908,7 +87224,7 @@
         "status": "pending",
         "surface": "大芝神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "大芝神社"
     },
     {
@@ -87094,12 +87410,77 @@
       "surface": "白山社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "白山社八幡社合殿 396-0021 伊那市大字伊那字イクネ2017",
       "facility_id": "be479b28-b6b9-51c0-89fc-43adde93161b",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "8cf9e2d2-e971-5249-bb77-e28644817188",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "はくさんしゃはちまんしゃごうでん"
+          },
+          "expected_source_hash": "62ea60a5fd6b9124ad3f9214f6abcc437be1519cd88c393a5a43e0df76ed0796",
+          "facility_id": "be479b28-b6b9-51c0-89fc-43adde93161b",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那字イクネ2017",
+            "agency_name": "白山社八幡社合殿",
+            "effective_address": "伊那市大字伊那字イクネ2017",
+            "reference_address": "伊那市大字伊那字イクネ二〇一七",
+            "reference_name": "白山社八幡社合殿"
+          },
+          "original": {
+            "address": "伊那市大字伊那字イクネ2017",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "白山社八幡社合殿",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "62ea60a5fd6b9124ad3f9214f6abcc437be1519cd88c393a5a43e0df76ed0796",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "2017",
+                "reference_number_raw": "二〇一七",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那字イクネ二〇一七",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "山寺",
+              "excerpt": "白山社八幡社合殿（はくさんしゃはちまんしゃごうでん） / 伊那市大字伊那字イクネ二〇一七（山寺）",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "白山社八幡社合殿",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "はくさんしゃはちまんしゃごうでん",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "白山社八幡社合殿",
       "normalization": [
@@ -87107,11 +87488,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "はくさんしゃはちまんしゃごうでん",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -87169,6 +87550,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "はくさんしゃはちまんしゃごうでん",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "はくさんしゃはちまんしゃごうでん",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "白山社八幡社合殿",
         "wikipedia_article_refs": [],
@@ -87199,16 +87594,81 @@
         "status": "pending",
         "surface": "白山社八幡社合殿"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "白山社八幡社合殿"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "坂下神社 396-0021 伊那市大字伊那字高田3273",
       "facility_id": "45b21afb-3989-523d-9015-57d32959fd81",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "3ba87658-a17f-5726-a8eb-b5a69bd764b1",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "さかしたじんじゃ"
+          },
+          "expected_source_hash": "71a0ae52e8fd01daa29bbbbe22099e77e981d8f667896b920bf50574c4e348c0",
+          "facility_id": "45b21afb-3989-523d-9015-57d32959fd81",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那字高田3273",
+            "agency_name": "坂下神社",
+            "effective_address": "伊那市大字伊那字高田3273",
+            "reference_address": "伊那市大字伊那字高田三二七三",
+            "reference_name": "坂下神社"
+          },
+          "original": {
+            "address": "伊那市大字伊那字高田3273",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "坂下神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "71a0ae52e8fd01daa29bbbbe22099e77e981d8f667896b920bf50574c4e348c0",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "3273",
+                "reference_number_raw": "三二七三",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那字高田三二七三",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "",
+              "excerpt": "坂下神社（さかしたじんじゃ） / 伊那市大字伊那字高田三二七三",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "坂下神社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "さかしたじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "坂下神社",
       "normalization": [
@@ -87216,11 +87676,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "さかしたじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -87301,6 +87761,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "さかしたじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "さかしたじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "坂下神社",
         "wikipedia_article_refs": [],
@@ -87331,16 +87805,81 @@
         "status": "pending",
         "surface": "坂下神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "坂下神社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "春日社 396-0021 伊那市大字伊那字杉ノ沢口9932",
       "facility_id": "d009c9b6-051c-5ade-99b7-e1422df6ec50",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "a0ee85bb-59be-5ec5-b8ac-f6bdee675e47",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "かすがしゃ"
+          },
+          "expected_source_hash": "88d37dd3182807cd9c15708cf9960da64927920b997fe50729fcceb84ac884c9",
+          "facility_id": "d009c9b6-051c-5ade-99b7-e1422df6ec50",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那字杉ノ沢口9932",
+            "agency_name": "春日社",
+            "effective_address": "伊那市大字伊那字杉ノ沢口9932",
+            "reference_address": "伊那市大字伊那字杉ノ沢口九九三二",
+            "reference_name": "春日社"
+          },
+          "original": {
+            "address": "伊那市大字伊那字杉ノ沢口9932",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "春日社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "88d37dd3182807cd9c15708cf9960da64927920b997fe50729fcceb84ac884c9",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "9932",
+                "reference_number_raw": "九九三二",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那字杉ノ沢口九九三二",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "横山",
+              "excerpt": "春日社（かすがしゃ） / 伊那市大字伊那字杉ノ沢口九九三二（横山）",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "春日社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "かすがしゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "春日社",
       "normalization": [
@@ -87348,11 +87887,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "かすがしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -87410,6 +87949,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "かすがしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "かすがしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "春日社",
         "wikipedia_article_refs": [],
@@ -87440,16 +87993,81 @@
         "status": "pending",
         "surface": "春日社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "春日社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "白髭社 396-0021 伊那市大字伊那字宮垣外8731",
       "facility_id": "eb7b5116-1ad1-5660-bb34-f7b6054627b5",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "c30c9a32-b64e-5c88-a64a-4726e10b6250",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "しらひげしゃ"
+          },
+          "expected_source_hash": "7004114e5d50784600c921f19413cd6e4f8638be1fdbd4ecd2a2ad873e6c326f",
+          "facility_id": "eb7b5116-1ad1-5660-bb34-f7b6054627b5",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那字宮垣外8731",
+            "agency_name": "白髭社",
+            "effective_address": "伊那市大字伊那字宮垣外8731",
+            "reference_address": "伊那市大字伊那字宮垣外八七三一",
+            "reference_name": "白髭社"
+          },
+          "original": {
+            "address": "伊那市大字伊那字宮垣外8731",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "白髭社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "7004114e5d50784600c921f19413cd6e4f8638be1fdbd4ecd2a2ad873e6c326f",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "8731",
+                "reference_number_raw": "八七三一",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那字宮垣外八七三一",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "平沢",
+              "excerpt": "白髭社（しらひげしゃ） / 伊那市大字伊那字宮垣外八七三一（平沢）",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "白髭社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "しらひげしゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "白髭社",
       "normalization": [
@@ -87457,11 +88075,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "しらひげしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -87519,6 +88137,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "しらひげしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "しらひげしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "白髭社",
         "wikipedia_article_refs": [],
@@ -87549,16 +88181,81 @@
         "status": "pending",
         "surface": "白髭社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "白髭社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:05:00.008421+00:00",
       "evidence": "五社神社 396-0021 伊那市大字伊那7009",
       "facility_id": "6780d3c6-0869-5823-9792-8a492e038b8a",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "615d5b4c-3c83-5a26-bf9b-0c6eea6e1d23",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ごしゃじんじゃ"
+          },
+          "expected_source_hash": "f3b9443d960a8479dae1a838f2c4bfd77c0e6ee5bd51abf58691bf6c9c2774f5",
+          "facility_id": "6780d3c6-0869-5823-9792-8a492e038b8a",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那7009",
+            "agency_name": "五社神社",
+            "effective_address": "伊那市大字伊那7009",
+            "reference_address": "伊那市大字伊那七〇〇九",
+            "reference_name": "五社神社"
+          },
+          "original": {
+            "address": "伊那市大字伊那7009",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "五社神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "f3b9443d960a8479dae1a838f2c4bfd77c0e6ee5bd51abf58691bf6c9c2774f5",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "7009",
+                "reference_number_raw": "七〇〇九",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那七〇〇九",
+              "checked_at": "2026-11-13T23:05:00.008421+00:00",
+              "district_note_raw": "ますみヶ丘",
+              "excerpt": "五社神社（ごしゃじんじゃ） / 伊那市大字伊那七〇〇九（ますみヶ丘）",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を保持し、印刷されない郡名/字名を原住所から補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "五社神社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付①",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "ごしゃじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "528a85aee6f3da23cde50961c5c469f7f1c61bf555778e4d5557e557d5670246",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "五社神社",
       "normalization": [
@@ -87566,11 +88263,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "ごしゃじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -87628,6 +88325,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ごしゃじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ごしゃじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "五社神社",
         "wikipedia_article_refs": [
@@ -87667,16 +88378,81 @@
         "status": "pending",
         "surface": "五社神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "五社神社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T15:24:49.579613+00:00",
       "evidence": "諏訪社 396-0021 伊那市大字伊那字中小沢7457",
       "facility_id": "6265303a-9546-5f6f-a515-3f053da48acd",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "f0bd3e37-b407-5544-a321-2f5518b0b727",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "すわしゃ"
+          },
+          "expected_source_hash": "5a36dc6a1f3e5d7435ee761f41fcf2c2c9715bb4bab80d36fc78ecfb2ec65c9b",
+          "facility_id": "6265303a-9546-5f6f-a515-3f053da48acd",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那字中小沢7457",
+            "agency_name": "諏訪社",
+            "effective_address": "伊那市大字伊那字中小沢7457",
+            "reference_address": "伊那市大字伊那字中小沢七四五七",
+            "reference_name": "諏訪社"
+          },
+          "original": {
+            "address": "伊那市大字伊那字中小沢7457",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "諏訪社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "5a36dc6a1f3e5d7435ee761f41fcf2c2c9715bb4bab80d36fc78ecfb2ec65c9b",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "7457",
+                "reference_number_raw": "七四五七",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那字中小沢七四五七",
+              "checked_at": "2026-11-13T15:24:49.579613+00:00",
+              "district_note_raw": "",
+              "excerpt": "諏訪社（すわしゃ） / 伊那市大字伊那字中小沢七四五七",
+              "excerpt_processing": "原画像の同一紹介の見出し/全文ルビ/鎮座地のみ区切って転記。地区注記を別欄へ保持し、所在地本文へ字名を挿入しない。漢数字は原文のまま、かなを他社や祭礼から合成しない。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "該当社名の全文ルビと同一紹介の▼鎮座欄。原画像で列・上下配置を確認。",
+              "name_raw": "諏訪社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付②",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "すわしゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 1,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "0680bfcc448d2ab9d8544b65d397b9464def0f591a4492866c5c06291644d143",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "諏訪社",
       "normalization": [
@@ -87684,11 +88460,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "すわしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -87791,6 +88567,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "すわしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "すわしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "諏訪社",
         "wikipedia_article_refs": [
@@ -87830,7 +88620,7 @@
         "status": "pending",
         "surface": "諏訪社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "諏訪社"
     },
     {
@@ -88170,12 +88960,77 @@
       "surface": "春日神社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T23:07:52.811123+00:00",
       "evidence": "浅間神社 396-0021 伊那市大字伊那字大坊6718",
       "facility_id": "5381492e-4995-5f3f-bac2-1d4d39c982de",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "6323cbe1-c6fb-5cb5-aa6e-d9dc7e515ac3",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "せんげんじんじゃ"
+          },
+          "expected_source_hash": "a0c9798eb2e769a7e6ba5945fd5b454a0b9ce164766aacacb8bf49fb3f7162dc",
+          "facility_id": "5381492e-4995-5f3f-bac2-1d4d39c982de",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那字大坊6718",
+            "agency_name": "浅間神社",
+            "effective_address": "伊那市大字伊那字大坊6718",
+            "reference_address": "伊那市大字伊那字大坊六七一八",
+            "reference_name": "浅間神社"
+          },
+          "original": {
+            "address": "伊那市大字伊那字大坊6718",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "浅間神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "a0c9798eb2e769a7e6ba5945fd5b454a0b9ce164766aacacb8bf49fb3f7162dc",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "6718",
+                "reference_number_raw": "六七一八",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那字大坊六七一八",
+              "checked_at": "2026-11-13T23:07:52.811123+00:00",
+              "district_note_raw": "大坊",
+              "excerpt": "浅間神社（せんげんじんじゃ） / 伊那市大字伊那字大坊六七一八（大坊）",
+              "excerpt_processing": "同一紹介の最小事実を原画像から区切り転記。配置/字間空白を除くルビを保存。漢数字/原字を改変せず、字名/地番/枝番を補作しない。括弧の地区注記を別欄に保持。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "同一紹介の見出しの全文ルビと▼鎮座欄。原画像で列/上下配置と原字を確認。",
+              "name_raw": "浅間神社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付②",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "せんげんじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 1,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "0680bfcc448d2ab9d8544b65d397b9464def0f591a4492866c5c06291644d143",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "浅間神社",
       "normalization": [
@@ -88183,11 +89038,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "せんげんじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -88269,6 +89124,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "せんげんじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "せんげんじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "浅間神社",
         "wikipedia_article_refs": [],
@@ -88299,7 +89168,7 @@
         "status": "pending",
         "surface": "浅間神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "浅間神社"
     },
     {
@@ -88636,12 +89505,77 @@
       "surface": "八幡宮"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T15:24:49.579613+00:00",
       "evidence": "伊那東大社 396-0011 伊那市大字伊那部5508",
       "facility_id": "28d06a28-7389-5670-b814-127785afb01a",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "19b0c935-b073-5bad-9cca-d6345062e484",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いなひがしたいしゃ"
+          },
+          "expected_source_hash": "f9432f71f70b07eacfc09a2da4697df81308022b94d30a3b19e1c9f5c64d4a66",
+          "facility_id": "28d06a28-7389-5670-b814-127785afb01a",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那部5508",
+            "agency_name": "伊那東大社",
+            "effective_address": "伊那市大字伊那部5508",
+            "reference_address": "伊那市大字伊那部五五〇八",
+            "reference_name": "伊那東大社"
+          },
+          "original": {
+            "address": "伊那市大字伊那部5508",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "伊那東大社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "f9432f71f70b07eacfc09a2da4697df81308022b94d30a3b19e1c9f5c64d4a66",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "5508",
+                "reference_number_raw": "五五〇八",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那部五五〇八",
+              "checked_at": "2026-11-13T15:24:49.579613+00:00",
+              "district_note_raw": "中央区",
+              "excerpt": "伊那東大社（いなひがしたいしゃ） / 伊那市大字伊那部五五〇八（中央区）",
+              "excerpt_processing": "原画像の同一紹介の見出し/全文ルビ/鎮座地のみ区切って転記。地区注記を別欄へ保持し、所在地本文へ字名を挿入しない。漢数字は原文のまま、かなを他社や祭礼から合成しない。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "該当社名の全文ルビと同一紹介の▼鎮座欄。原画像で列・上下配置を確認。",
+              "name_raw": "伊那東大社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付②",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "いなひがしたいしゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 1,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "0680bfcc448d2ab9d8544b65d397b9464def0f591a4492866c5c06291644d143",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "伊那東大社",
       "normalization": [
@@ -88649,11 +89583,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "いなひがしたいしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -88732,6 +89666,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いなひがしたいしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いなひがしたいしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "伊那東大社",
         "wikipedia_article_refs": [],
@@ -88762,16 +89710,81 @@
         "status": "pending",
         "surface": "伊那東大社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "伊那東大社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T15:24:49.579613+00:00",
       "evidence": "神明社荒神社合殿 396-0011 伊那市大字伊那部4029",
       "facility_id": "cdc3bea2-accb-5eed-be0a-eacd64a8ca3c",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "07063116-5a94-5129-8d77-931097dbd01e",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "しんめいしゃこうじんしゃごうでん"
+          },
+          "expected_source_hash": "48df13ad79e9899e5687916fccc350ab36de648ae249e6dc70a1a10aef6af303",
+          "facility_id": "cdc3bea2-accb-5eed-be0a-eacd64a8ca3c",
+          "identity_match": {
+            "agency_address": "伊那市大字伊那部4029",
+            "agency_name": "神明社荒神社合殿",
+            "effective_address": "伊那市大字伊那部4029",
+            "reference_address": "伊那市大字伊那部四〇二九",
+            "reference_name": "神明社荒神社合殿"
+          },
+          "original": {
+            "address": "伊那市大字伊那部4029",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "神明社荒神社合殿",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "48df13ad79e9899e5687916fccc350ab36de648ae249e6dc70a1a10aef6af303",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "4029",
+                "reference_number_raw": "四〇二九",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字伊那部四〇二九",
+              "checked_at": "2026-11-13T15:24:49.579613+00:00",
+              "district_note_raw": "孤島",
+              "excerpt": "神明社荒神社合殿（しんめいしゃこうじんしゃごうでん） / 伊那市大字伊那部四〇二九（孤島）",
+              "excerpt_processing": "原画像の同一紹介の見出し/全文ルビ/鎮座地のみ区切って転記。地区注記を別欄へ保持し、所在地本文へ字名を挿入しない。漢数字は原文のまま、かなを他社や祭礼から合成しない。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "該当社名の全文ルビと同一紹介の▼鎮座欄。原画像で列・上下配置を確認。",
+              "name_raw": "神明社荒神社合殿",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付②",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "しんめいしゃこうじんしゃごうでん",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 1,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "0680bfcc448d2ab9d8544b65d397b9464def0f591a4492866c5c06291644d143",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "神明社荒神社合殿",
       "normalization": [
@@ -88779,11 +89792,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "しんめいしゃこうじんしゃごうでん",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -88841,6 +89854,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "しんめいしゃこうじんしゃごうでん",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "しんめいしゃこうじんしゃごうでん",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "神明社荒神社合殿",
         "wikipedia_article_refs": [],
@@ -88871,7 +89898,7 @@
         "status": "pending",
         "surface": "神明社荒神社合殿"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "神明社荒神社合殿"
     },
     {
@@ -93408,12 +94435,77 @@
       "surface": "八幡社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T15:24:49.579613+00:00",
       "evidence": "松尾社 396-0002 伊那市大字手良沢岡1546",
       "facility_id": "c003476c-1a7d-5909-b266-5aaa62bed8b0",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "9b1f541e-b98b-5ff0-bb64-361caaf3981e",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "まつおしゃ"
+          },
+          "expected_source_hash": "5bdd6c9905f1cb341ef2697940fd4836afdf3bee88e24e95464c8fcd0129219c",
+          "facility_id": "c003476c-1a7d-5909-b266-5aaa62bed8b0",
+          "identity_match": {
+            "agency_address": "伊那市大字手良沢岡1546",
+            "agency_name": "松尾社",
+            "effective_address": "伊那市大字手良沢岡1546",
+            "reference_address": "伊那市大字手良沢岡一五四六",
+            "reference_name": "松尾社"
+          },
+          "original": {
+            "address": "伊那市大字手良沢岡1546",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "松尾社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "5bdd6c9905f1cb341ef2697940fd4836afdf3bee88e24e95464c8fcd0129219c",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "1546",
+                "reference_number_raw": "一五四六",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市大字手良沢岡一五四六",
+              "checked_at": "2026-11-13T15:24:49.579613+00:00",
+              "district_note_raw": "八ツ手",
+              "excerpt": "松尾社（まつおしゃ） / 伊那市大字手良沢岡一五四六（八ツ手）",
+              "excerpt_processing": "原画像の同一紹介の見出し/全文ルビ/鎮座地のみ区切って転記。地区注記を別欄へ保持し、所在地本文へ字名を挿入しない。漢数字は原文のまま、かなを他社や祭礼から合成しない。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "該当社名の全文ルビと同一紹介の▼鎮座欄。原画像で列・上下配置を確認。",
+              "name_raw": "松尾社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付③",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "まつおしゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 2,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "bceef43ad2a7e975bc31bf8ac38ebffcd18207beeccf9252dc152dd27dc7d98f",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "松尾社",
       "normalization": [
@@ -93421,11 +94513,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "まつおしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -93506,6 +94598,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "まつおしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "まつおしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "松尾社",
         "wikipedia_article_refs": [],
@@ -93536,7 +94642,7 @@
         "status": "pending",
         "surface": "松尾社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "松尾社"
     },
     {
@@ -94031,12 +95137,77 @@
       "surface": "鉾持神社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T15:24:49.579613+00:00",
       "evidence": "諏訪社 396-0213 伊那市高遠町東高遠2329",
       "facility_id": "a773ecee-d53c-50f7-b3a7-79aad286dba3",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "7f1fbf29-88fb-5336-8ab6-2d98940d7dff",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "すわしゃ"
+          },
+          "expected_source_hash": "e09a58fbc1e8a0ce0ecceadbd95374080c075ab4a3c4aaf80ce421f34e987b8b",
+          "facility_id": "a773ecee-d53c-50f7-b3a7-79aad286dba3",
+          "identity_match": {
+            "agency_address": "伊那市高遠町東高遠2329",
+            "agency_name": "諏訪社",
+            "effective_address": "伊那市高遠町東高遠2329",
+            "reference_address": "伊那市高遠町大字東高遠二三二九",
+            "reference_name": "諏訪社"
+          },
+          "original": {
+            "address": "伊那市高遠町東高遠2329",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "諏訪社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 1362969,
+            "checked_at": "2026-11-19T12:18:10.979415+00:00",
+            "label": "",
+            "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "e09a58fbc1e8a0ce0ecceadbd95374080c075ab4a3c4aaf80ce421f34e987b8b",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "2329",
+                "reference_number_raw": "二三二九",
+                "reference_page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568"
+              },
+              "address_raw": "伊那市高遠町大字東高遠二三二九",
+              "checked_at": "2026-11-13T15:24:49.579613+00:00",
+              "district_note_raw": "",
+              "excerpt": "諏訪社（すわしゃ） / 伊那市高遠町大字東高遠二三二九",
+              "excerpt_processing": "原画像の同一紹介の見出し/全文ルビ/鎮座地のみ区切って転記。地区注記を別欄へ保持し、所在地本文へ字名を挿入しない。漢数字は原文のまま、かなを他社や祭礼から合成しない。",
+              "fetched_at": "2026-11-13T15:12:38.200506+00:00",
+              "locator": "該当社名の全文ルビと同一紹介の▼鎮座欄。原画像で列・上下配置を確認。",
+              "name_raw": "諏訪社",
+              "page_hash": "c18c95f5c555deefae39bc7b7bf2e36299949357525808571940ccbf9395f568",
+              "pdf_pages": 3,
+              "printed_page": "付③",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "すわしゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 2,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり 上伊那まいり（特別編）",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+              "visual_review": {
+                "image_sha256": "bceef43ad2a7e975bc31bf8ac38ebffcd18207beeccf9252dc152dd27dc7d98f",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "諏訪社",
       "normalization": [
@@ -94044,11 +95215,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "すわしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -94151,6 +95322,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "すわしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "すわしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "諏訪社",
         "wikipedia_article_refs": [
@@ -94190,7 +95375,7 @@
         "status": "pending",
         "surface": "諏訪社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "諏訪社"
     },
     {
@@ -100979,12 +102164,77 @@
       "surface": "石上神社"
     },
     {
-      "checked_at": "2026-11-08T14:30:51.003742+00:00",
+      "checked_at": "2026-11-13T15:18:05.635058+00:00",
       "evidence": "梅戸神社 399-3702 上伊那郡飯島町大字飯島2434",
       "facility_id": "66497977-c8fc-547c-baae-7c4bb7a69e79",
       "fetched_at": "2026-11-08T14:30:51.003742+00:00",
       "id": "65f01620-1aa9-5207-a1db-e1ad4f1bf614",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "うめとじんじゃ"
+          },
+          "expected_source_hash": "f48839270d6abf4922c784f6434056d050de938802c58d846104bf041f819a80",
+          "facility_id": "66497977-c8fc-547c-baae-7c4bb7a69e79",
+          "identity_match": {
+            "agency_address": "上伊那郡飯島町大字飯島2434",
+            "agency_name": "梅戸神社",
+            "effective_address": "上伊那郡飯島町大字飯島2434",
+            "reference_address": "上伊那郡飯島町飯島二四三四",
+            "reference_name": "梅戸神社"
+          },
+          "original": {
+            "address": "上伊那郡飯島町大字飯島2434",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+            "name_raw": "梅戸神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 639438,
+            "checked_at": "2026-11-19T12:19:40.500800+00:00",
+            "label": "",
+            "page_hash": "f295b380a253407b5187fd6f7e36840dc80d5711ff52ab54d43794a968a48aab",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "f48839270d6abf4922c784f6434056d050de938802c58d846104bf041f819a80",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "2434",
+                "reference_number_raw": "二四三四",
+                "reference_page_hash": "f295b380a253407b5187fd6f7e36840dc80d5711ff52ab54d43794a968a48aab"
+              },
+              "address_raw": "上伊那郡飯島町飯島二四三四",
+              "bytes": 639438,
+              "checked_at": "2026-11-13T15:18:05.635058+00:00",
+              "excerpt": "梅戸神社（うめとじんじゃ） / 上伊那郡飯島町飯島二四三四",
+              "fetched_at": "2026-11-13T15:12:35.998575+00:00",
+              "label": "18minamisinsyu",
+              "locator": "左下の梅戸神社紹介欄、全文ルビと▼鎮座",
+              "name_raw": "梅戸神社",
+              "page_hash": "f295b380a253407b5187fd6f7e36840dc80d5711ff52ab54d43794a968a48aab",
+              "pdf_pages": 2,
+              "printed_page": "⑱",
+              "reading_raw": "うめとじんじゃ",
+              "reading_scope": "full_name",
+              "requested_url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "status": "acquired",
+              "title": "長野県神社参拝 御朱印めぐり 南信州神社まいり①",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf",
+              "visual_review": {
+                "image_sha256": "d2a76489cba539a9e339d9e87d418e4931555f4d4f1e61a543221427d108d302",
+                "method": "取得同hash PDFの該当頁をPDFKitで描画して目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
       "name_raw": "梅戸神社",
       "normalization": [
@@ -100992,11 +102242,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-      "reading": "",
+      "reading": "うめとじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/18minamisinsyu.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -101089,6 +102339,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "うめとじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "うめとじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "梅戸神社",
         "wikipedia_article_refs": [],
@@ -101119,7 +102383,7 @@
         "status": "pending",
         "surface": "梅戸神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "梅戸神社"
     },
     {
@@ -167223,12 +168487,77 @@
       "surface": "北川神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:08.376491+00:00",
+      "checked_at": "2026-11-13T15:37:22.754085+00:00",
       "evidence": "新海三社神社 384-0412 佐久市大字田口字宮ノ沢2394",
       "facility_id": "eb52b3f3-ab1c-530c-8730-0524bc2d9640",
       "fetched_at": "2026-11-08T14:31:08.376491+00:00",
       "id": "5d8f313a-9fd9-5b54-8d86-5c447216b52b",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "しんかいさんしゃじんじゃ"
+          },
+          "expected_source_hash": "49e056fd23effae6c5a99b2d0fd9b90aa307cc84dd58ac2aec80637101a89701",
+          "facility_id": "eb52b3f3-ab1c-530c-8730-0524bc2d9640",
+          "identity_match": {
+            "agency_address": "佐久市大字田口字宮ノ沢2394",
+            "agency_name": "新海三社神社",
+            "effective_address": "佐久市大字田口字宮ノ沢2394",
+            "reference_address": "佐久市田口字宮ノ沢二三九四",
+            "reference_name": "新海三社神社"
+          },
+          "original": {
+            "address": "佐久市大字田口字宮ノ沢2394",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
+            "name_raw": "新海三社神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 612518,
+            "checked_at": "2026-11-19T12:19:34.076333+00:00",
+            "label": "",
+            "page_hash": "9bbb601bcba5b6b974b62a1597ede21ef8bf0daa334a086417fb00ef1d11c55f",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/10saku.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "49e056fd23effae6c5a99b2d0fd9b90aa307cc84dd58ac2aec80637101a89701",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "2394",
+                "reference_number_raw": "二三九四",
+                "reference_page_hash": "9bbb601bcba5b6b974b62a1597ede21ef8bf0daa334a086417fb00ef1d11c55f"
+              },
+              "address_raw": "佐久市田口字宮ノ沢二三九四",
+              "address_scope": "printed_chinza_field",
+              "checked_at": "2026-11-13T15:37:22.754085+00:00",
+              "excerpt": "新海三社神社（しんかいさんしゃじんじゃ） / 佐久市田口字宮ノ沢二三九四",
+              "excerpt_processing": "同一紹介の見出し/全文ルビ/最小所在記述を原画像から区切り転記。配置/字間空白を除いたルビを保持し、漢数字/原字/名称差を改変しない。語尾・接頭語・住所を補作しない。",
+              "fetched_at": "2026-11-13T15:12:18.797738+00:00",
+              "locator": "同一紹介見出しの全文ルビと▼鎮座欄。原画像で配置を確認。",
+              "name_raw": "新海三社神社",
+              "page_hash": "9bbb601bcba5b6b974b62a1597ede21ef8bf0daa334a086417fb00ef1d11c55f",
+              "pdf_pages": 2,
+              "printed_page": "⑨",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "しんかいさんしゃじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 1,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/10saku.pdf",
+              "visual_review": {
+                "image_sha256": "6df47ceabea6c9b1766eb881eab0a929ee6583014d4b7ecdedec5d0558daa07d",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
       "name_raw": "新海三社神社",
       "normalization": [
@@ -167236,11 +168565,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "e9b2f181ad380b40e028e4cc3986675276b2b55454b471c9c2f6d7daf2b6367a",
-      "reading": "",
+      "reading": "しんかいさんしゃじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/10saku.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -167444,6 +168773,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "しんかいさんしゃじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "しんかいさんしゃじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "新海三社神社",
         "wikipedia_article_refs": [
@@ -167483,7 +168826,7 @@
         "status": "pending",
         "surface": "新海三社神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "新海三社神社"
     },
     {
@@ -217857,12 +219200,76 @@
       "surface": "津島神社"
     },
     {
-      "checked_at": "2026-11-08T14:31:19.419472+00:00",
+      "checked_at": "2026-11-13T15:41:14.772777+00:00",
       "evidence": "小井川賀茂神社 394-0003 岡谷市加茂町3-6-8",
       "facility_id": "bb92c435-38e2-59fd-b60b-ac86022378f5",
       "fetched_at": "2026-11-08T14:31:19.419472+00:00",
       "id": "62aaff03-73c5-50b7-b15a-63a23ea79f49",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おいかわかもじんじゃ"
+          },
+          "expected_source_hash": "45954c56b300404c047c8b1a3b4d19bb5c9b8b1f5244661d296b7a9768c1ff28",
+          "facility_id": "bb92c435-38e2-59fd-b60b-ac86022378f5",
+          "identity_match": {
+            "agency_address": "岡谷市加茂町3-6-8",
+            "agency_name": "小井川賀茂神社",
+            "effective_address": "岡谷市加茂町3-6-8",
+            "reference_address": "岡谷市加茂町三‐六‐八",
+            "reference_name": "小井川賀茂神社"
+          },
+          "original": {
+            "address": "岡谷市加茂町3-6-8",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
+            "name_raw": "小井川賀茂神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 355423,
+            "checked_at": "2026-11-19T12:19:38.328335+00:00",
+            "label": "",
+            "page_hash": "6c384fb1c1a625f0b9ad333e214ab43b3a8ab2ccab5be148dd76acef1261a2f4",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/17suwako.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "45954c56b300404c047c8b1a3b4d19bb5c9b8b1f5244661d296b7a9768c1ff28",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "3-6-8",
+                "reference_number_raw": "三‐六‐八",
+                "reference_page_hash": "6c384fb1c1a625f0b9ad333e214ab43b3a8ab2ccab5be148dd76acef1261a2f4"
+              },
+              "address_raw": "岡谷市加茂町三‐六‐八",
+              "checked_at": "2026-11-13T15:41:14.772777+00:00",
+              "excerpt": "小井川賀茂神社（おいかわかもじんじゃ） / 岡谷市加茂町三‐六‐八",
+              "excerpt_processing": "原画像の同一紹介の最小事実を区切り転記。配置/字間空白を除くルビを保持。原字/漢数字/名称の接尾語を改変せず、番地/接頭語/語尾を補作しない。",
+              "fetched_at": "2026-11-13T15:12:33.812413+00:00",
+              "locator": "同一紹介の見出し/全文ルビと▼鎮座欄。原画像で上下/左右の配置を確認。",
+              "name_raw": "小井川賀茂神社",
+              "page_hash": "6c384fb1c1a625f0b9ad333e214ab43b3a8ab2ccab5be148dd76acef1261a2f4",
+              "pdf_pages": 1,
+              "printed_page": "⑰",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "おいかわかもじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/17suwako.pdf",
+              "visual_review": {
+                "image_sha256": "d877319488e1e21ba34fe723613a2cb8822118bf1e56f02bc931dcd1eeb2ca81",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
       "name_raw": "小井川賀茂神社",
       "normalization": [
@@ -217870,11 +219277,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6eda593de6460220528e8585672de8cf2fe29bd10455434e48695e112ec398b6",
-      "reading": "",
+      "reading": "おいかわかもじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/17suwako.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -218002,6 +219409,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おいかわかもじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おいかわかもじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "小井川賀茂神社",
         "wikipedia_article_refs": [],
@@ -218032,7 +219453,7 @@
         "status": "pending",
         "surface": "小井川賀茂神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "小井川賀茂神社"
     },
     {
@@ -232967,12 +234388,76 @@
       "surface": "神明宮"
     },
     {
-      "checked_at": "2026-11-08T14:31:19.419472+00:00",
+      "checked_at": "2026-11-13T15:41:14.772777+00:00",
       "evidence": "八劔神社 392-0024 諏訪市小和田13-18",
       "facility_id": "552d9467-4319-5b16-9882-22ad3daef00c",
       "fetched_at": "2026-11-08T14:31:19.419472+00:00",
       "id": "34475cce-c143-549f-9e67-109335d02c9d",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "やつるぎじんじゃ"
+          },
+          "expected_source_hash": "5384be9bb4f682e15386fdfeade637b0cbd635e44582e2b50996c42bf4130c8f",
+          "facility_id": "552d9467-4319-5b16-9882-22ad3daef00c",
+          "identity_match": {
+            "agency_address": "諏訪市小和田13-18",
+            "agency_name": "八劔神社",
+            "effective_address": "諏訪市小和田13-18",
+            "reference_address": "諏訪市小和田一三‐一八",
+            "reference_name": "八劔神社"
+          },
+          "original": {
+            "address": "諏訪市小和田13-18",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
+            "name_raw": "八劔神社",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 355423,
+            "checked_at": "2026-11-19T12:19:38.328335+00:00",
+            "label": "",
+            "page_hash": "6c384fb1c1a625f0b9ad333e214ab43b3a8ab2ccab5be148dd76acef1261a2f4",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/17suwako.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "5384be9bb4f682e15386fdfeade637b0cbd635e44582e2b50996c42bf4130c8f",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "13-18",
+                "reference_number_raw": "一三‐一八",
+                "reference_page_hash": "6c384fb1c1a625f0b9ad333e214ab43b3a8ab2ccab5be148dd76acef1261a2f4"
+              },
+              "address_raw": "諏訪市小和田一三‐一八",
+              "checked_at": "2026-11-13T15:41:14.772777+00:00",
+              "excerpt": "八劔神社（やつるぎじんじゃ） / 諏訪市小和田一三‐一八",
+              "excerpt_processing": "原画像の同一紹介の最小事実を区切り転記。配置/字間空白を除くルビを保持。原字/漢数字/名称の接尾語を改変せず、番地/接頭語/語尾を補作しない。",
+              "fetched_at": "2026-11-13T15:12:33.812413+00:00",
+              "locator": "同一紹介の見出し/全文ルビと▼鎮座欄。原画像で上下/左右の配置を確認。",
+              "name_raw": "八劔神社",
+              "page_hash": "6c384fb1c1a625f0b9ad333e214ab43b3a8ab2ccab5be148dd76acef1261a2f4",
+              "pdf_pages": 1,
+              "printed_page": "⑰",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "やつるぎじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/17suwako.pdf",
+              "visual_review": {
+                "image_sha256": "d877319488e1e21ba34fe723613a2cb8822118bf1e56f02bc931dcd1eeb2ca81",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
       "name_raw": "八劔神社",
       "normalization": [
@@ -232980,11 +234465,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6eda593de6460220528e8585672de8cf2fe29bd10455434e48695e112ec398b6",
-      "reading": "",
+      "reading": "やつるぎじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/17suwako.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -233073,6 +234558,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "やつるぎじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "やつるぎじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "八劔神社",
         "wikipedia_article_refs": [],
@@ -233103,7 +234602,7 @@
         "status": "pending",
         "surface": "八劔神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "八劔神社"
     },
     {
@@ -261444,12 +262943,77 @@
       "surface": "中村神明宮"
     },
     {
-      "checked_at": "2026-11-08T14:31:22.207638+00:00",
+      "checked_at": "2026-11-13T15:37:22.754085+00:00",
       "evidence": "刈谷澤神明宮 399-7601 東筑摩郡筑北村坂北239",
       "facility_id": "96f3aa1b-85b1-5413-aa83-294532b7c713",
       "fetched_at": "2026-11-08T14:31:22.207638+00:00",
       "id": "c5ff1785-c4c6-5ac5-9dd9-3771020d6aa7",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "かりやさわしんめいぐう"
+          },
+          "expected_source_hash": "0549c783f245f7c6d105371cf199c2a15024f44ede8c455224e6178eaab0f36c",
+          "facility_id": "96f3aa1b-85b1-5413-aa83-294532b7c713",
+          "identity_match": {
+            "agency_address": "東筑摩郡筑北村坂北239",
+            "agency_name": "刈谷澤神明宮",
+            "effective_address": "東筑摩郡筑北村坂北239",
+            "reference_address": "東筑摩郡筑北村坂北二三九",
+            "reference_name": "刈谷澤神明宮"
+          },
+          "original": {
+            "address": "東筑摩郡筑北村坂北239",
+            "listing_url": "https://www.nagano-jinjacho.jp/shibu/syouenchiku.htm",
+            "name_raw": "刈谷澤神明宮",
+            "reading_raw": ""
+          },
+          "reason": "長野県神社庁冊子の同一紹介にある全文かなと鎮座地を根拠とした。冊子と正本の地番末尾の数字列および枝番が一桁ずつ対応し、同一の町域を照合した。原住所と冊子の漢数字の表記をそれぞれ保持した。",
+          "reference_reinspection": {
+            "bytes": 653124,
+            "checked_at": "2026-11-19T12:19:36.214116+00:00",
+            "label": "",
+            "page_hash": "48043e0299a89f4808b0aaf657b081e1dc07a25b043d6d44109cf1f153e1b455",
+            "url": "https://www.nagano-jinjacho.jp/_userdata/13higasitikuma.pdf"
+          },
+          "references": [
+            {
+              "address_identity_proof": {
+                "expected_source_hash": "0549c783f245f7c6d105371cf199c2a15024f44ede8c455224e6178eaab0f36c",
+                "kind": "nagano_booklet_terminal_digits",
+                "original_number_raw": "239",
+                "reference_number_raw": "二三九",
+                "reference_page_hash": "48043e0299a89f4808b0aaf657b081e1dc07a25b043d6d44109cf1f153e1b455"
+              },
+              "address_raw": "東筑摩郡筑北村坂北二三九",
+              "address_scope": "printed_chinza_field",
+              "checked_at": "2026-11-13T15:37:22.754085+00:00",
+              "excerpt": "刈谷澤神明宮（かりやさわしんめいぐう） / 東筑摩郡筑北村坂北二三九",
+              "excerpt_processing": "同一紹介の見出し/全文ルビ/最小所在記述を原画像から区切り転記。配置/字間空白を除いたルビを保持し、漢数字/原字/名称差を改変しない。語尾・接頭語・住所を補作しない。",
+              "fetched_at": "2026-11-13T15:12:25.225662+00:00",
+              "locator": "同一紹介見出しの全文ルビと▼鎮座欄。原画像で配置を確認。",
+              "name_raw": "刈谷澤神明宮",
+              "page_hash": "48043e0299a89f4808b0aaf657b081e1dc07a25b043d6d44109cf1f153e1b455",
+              "pdf_pages": 1,
+              "printed_page": "⑫",
+              "publication_date": "2018-10",
+              "publisher_and_rights_evidence_attempt": "nagano_goshuin_2018_booklet_joint_profile_one_reading_newsletter_bounded_screen_20261114",
+              "reading_raw": "かりやさわしんめいぐう",
+              "reading_scope": "full_name",
+              "source_kind": "official_agency_booklet",
+              "source_page_index": 0,
+              "source_publisher": "長野県神社庁 教化部調査委員会",
+              "title": "長野県神社参拝 御朱印めぐり",
+              "url": "https://www.nagano-jinjacho.jp/_userdata/13higasitikuma.pdf",
+              "visual_review": {
+                "image_sha256": "48204dbb3e0206b178d13b189e1e8a863f40cd5428d508dc0cfe6792d32dfc2a",
+                "method": "取得同hash PDFをPDFKitで描画し目視"
+              }
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.nagano-jinjacho.jp/shibu/syouenchiku.htm",
       "name_raw": "刈谷澤神明宮",
       "normalization": [
@@ -261457,11 +263021,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "cabc094e85a9b9014e1569976b58e3e01f4962c527bb95b9ca85f41a070a2758",
-      "reading": "",
+      "reading": "かりやさわしんめいぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.nagano-jinjacho.jp/shibu/syouenchiku.htm",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.nagano-jinjacho.jp/_userdata/13higasitikuma.pdf",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -261536,6 +263100,20 @@
         "prefecture_code": "20",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "かりやさわしんめいぐう",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "かりやさわしんめいぐう",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "刈谷澤神明宮",
         "wikipedia_article_refs": [],
@@ -261566,7 +263144,7 @@
         "status": "pending",
         "surface": "刈谷澤神明宮"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "刈谷澤神明宮"
     },
     {

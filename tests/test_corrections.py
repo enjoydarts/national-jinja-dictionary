@@ -2,6 +2,7 @@ import copy
 import unittest
 from test_records import build,row
 from njd.corrections import apply_corrections
+from njd.records import build_dataset
 from njd.validation import eligible,validate
 from njd.exporters import render
 from njd.storage import apply_decisions
@@ -134,6 +135,66 @@ class AzaReferenceTest(unittest.TestCase):
                 elif hold=='identity_review_required':d['entries'][0][hold]=True
                 else:d['facilities'][0]['review_reason']='annotated official name requires review; wrong printed code'
                 self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+class NaganoBookletParcelTest(unittest.TestCase):
+    def candidate(self, acquired, printed, original_number, reference_number):
+        listing = 'https://www.nagano-jinjacho.jp/shibu/example.htm'
+        d = build_dataset('nagano', '20', '長野県', '長野県神社庁', [
+            row(address=acquired, reading_raw='', url=listing),
+        ])
+        c = correction(d, {'reading': 'かくうじんじゃ'})
+        packet = c['entries'][d['entries'][0]['id']]
+        ref = packet['references'][0]
+        ref.update(url='https://www.nagano-jinjacho.jp/_userdata/example.pdf',
+            source_kind='official_agency_booklet', reading_scope='full_name',
+            address_raw=printed, excerpt='架空神社（かくうじんじゃ） '+printed,
+            page_hash='b'*64, locator='Synthetic title, kana, and location',
+            visual_review={'image_sha256': 'c'*64})
+        ref['address_identity_proof'] = dict(kind='nagano_booklet_terminal_digits',
+            expected_source_hash=packet['expected_source_hash'], reference_page_hash=ref['page_hash'],
+            original_number_raw=original_number, reference_number_raw=reference_number)
+        return d, c, ref
+
+    def test_literal_parcel_digits_and_branches_compare_without_rewriting(self):
+        cases = (
+            ('架空市大字乙町4029', '架空市大字乙町四〇二九', '4029', '四〇二九'),
+            ('架空郡架空町大字乙13-18', '架空町乙一三‐一八', '13-18', '一三‐一八'),
+        )
+        for acquired, printed, original_number, reference_number in cases:
+            with self.subTest(printed=printed):
+                d, c, ref = self.candidate(acquired, printed, original_number, reference_number)
+                out = apply_corrections(d, c)
+                self.assertEqual(len(eligible(out)), 1)
+                self.assertEqual(out['facilities'][0]['address'], acquired)
+                self.assertEqual(out['entries'][0]['correction']['references'][0]['address_raw'], printed)
+                self.assertEqual(out['entries'][0]['reading'], 'かくうじんじゃ')
+
+    def test_different_parcel_branch_or_locality_does_not_match(self):
+        for printed, reference_number in (
+            ('架空市大字乙町一三‐一九', '一三‐一九'),
+            ('架空市大字乙町一三', '一三'),
+            ('架空市大字丙町一三‐一八', '一三‐一八'),
+            ('架空市大字乙町十三‐十八', '十三‐十八'),
+        ):
+            with self.subTest(printed=printed):
+                d, c, _ = self.candidate('架空市大字乙町13-18', printed, '13-18', reference_number)
+                self.assertEqual(eligible(apply_corrections(d, c)), [])
+
+    def test_proof_is_bound_to_booklet_and_source_snapshot(self):
+        for mutate in (
+            lambda r: r.pop('address_identity_proof'),
+            lambda r: r.pop('visual_review'),
+            lambda r: r.update(source_kind='reference'),
+            lambda r: r.update(url='https://reference.example.invalid/example.pdf'),
+            lambda r: r.update(page_hash='d'*64),
+            lambda r: r['address_identity_proof'].update(expected_source_hash='d'*64),
+            lambda r: r['address_identity_proof'].update(reference_number_raw='一四'),
+        ):
+            with self.subTest(mutate=mutate):
+                d, c, ref = self.candidate('架空市乙町13', '架空市乙町一三', '13', '一三')
+                mutate(ref)
+                self.assertEqual(eligible(apply_corrections(d, c)), [])
+
 
 class CorrectionTest(unittest.TestCase):
     def test_exact_annotation_only_hold_accepts_bound_name_and_reading_correction(self):
