@@ -554702,6 +554702,1763 @@
             "research_judgments": 6,
             "unbound_observations": 169
           }
+        },
+        {
+          "baseline_commit": "05f226c",
+          "checked_at": "2026-11-19T12:00:50.702357+00:00",
+          "decision_counts": {
+            "agency_detail_acquisition_deferred": 1,
+            "independent_corporation_confirmed": 1,
+            "new_facility_agency_detail": 6,
+            "new_facility_wikipedia_reference": 10
+          },
+          "decisions": [
+            {
+              "agency_detail": {
+                "address_raw": "〒508-0001 岐阜県中津川市中津川字原3423番地の1",
+                "fetched_at": "2026-11-19T11:57:03.759342+00:00",
+                "locator": "td[height=80] font.hyodai + font; td.moji3",
+                "name_raw": "八幡神社",
+                "page_hash": "09a66a3d91f2929bbce697517c039e82c7d917bdb4eb8865a84214ba61cfe92b",
+                "reading_raw": "はちまんじんじゃ",
+                "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2214&shrname=%E2%96%A0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E2%96%A0"
+              },
+              "agency_shrine_code": "2214",
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": {
+                "addressed_aza": "中津川字原",
+                "agency_address_observed": "〒508-0001 岐阜県中津川市中津川字原3423番地の1",
+                "agency_shrine_code": "2214",
+                "body_view_locator": "個別詳細の社名・全文かな見出しと住所欄",
+                "checked_at": "2026-11-19T11:58:26.831893+00:00",
+                "detail_opened": true,
+                "detail_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2214",
+                "publisher": "岐阜県神社庁"
+              },
+              "decision": "new_facility_agency_detail",
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/19",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "神社庁側には字名が明記され、Wikipediaの原住所には字名がない。採用する場合は取得済みの神社庁原住所と全文かなを使用し、固定記事は参考照合として保存する。",
+              "reference": {
+                "address_raw": "岐阜県中津川市中津川3423-1",
+                "archive_observation": {
+                  "address_field_wikitext": "岐阜県中津川市中津川3423-1",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "f89caf6e1ccc805370880d4380225e6f0c84592020f65bff8bca9f018b67c2cf",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''八幡神社'''（はちまんじんじゃ）",
+                  "name_field_wikitext": "八幡神社",
+                  "revision_at": "2026-02-08T00:27:04Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 4721202074,
+                  "stream_sha256": "14991f0df46a1302b7048bc8e3377269d96db6887f18583f7925cefb97c49386",
+                  "stream_start": 4721087593
+                },
+                "article_id": 5127486,
+                "checked_at": "2026-11-19T06:40:18.492071+00:00",
+                "excerpt": "八幡神社（はちまんじんじゃ） / 岐阜県中津川市中津川3423-1",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "八幡神社",
+                "page_hash": "f89caf6e1ccc805370880d4380225e6f0c84592020f65bff8bca9f018b67c2cf",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E4%B8%AD%E6%B4%A5%E5%B7%9D%29&oldid=108313569",
+                "reading_raw": "はちまんじんじゃ",
+                "revision_id": 108313569,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "八幡神社 (中津川市中津川)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE_(%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E4%B8%AD%E6%B4%A5%E5%B7%9D)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "c0bdc4ad-2c50-5efe-87f8-a373a2418c26"
+            },
+            {
+              "agency_detail": {
+                "address_raw": "〒509-9131 岐阜県中津川市千旦林642番地",
+                "fetched_at": "2026-11-19T11:57:05.930124+00:00",
+                "locator": "td[height=80] font.hyodai + font; td.moji3",
+                "name_raw": "八幡神社",
+                "page_hash": "e9430abc1e0d5a2f3a06e094e71da999484b64adaf22ecd1733c52bec20ec7a8",
+                "reading_raw": "はちまんじんじゃ",
+                "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2288&shrname=%E2%96%A0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E2%96%A0"
+              },
+              "agency_shrine_code": "2288",
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "〒509-9131 岐阜県中津川市千旦林642番地",
+                  "agency_shrine_code": "2288",
+                  "checked_at": "2026-11-19T11:57:40.290647+00:00",
+                  "locator": "個別詳細の社名・全文かな見出しと住所欄",
+                  "name_raw": "八幡神社",
+                  "observation": "八幡神社 (はちまんじんじゃ) / 〒509-9131 岐阜県中津川市千旦林642番地",
+                  "publisher": "岐阜県神社庁",
+                  "reading_raw": "はちまんじんじゃ",
+                  "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2288"
+                }
+              ],
+              "decision": "new_facility_agency_detail",
+              "existing_comparisons": [
+                {
+                  "address": "岐阜県中津川市付知町4334番地",
+                  "facility_id": "dbf8a495-27ec-5795-b036-246eb45f050f",
+                  "listed_name": "尾ｹ平若宮八幡神社",
+                  "source_path": "data/sources/gifu.json"
+                }
+              ],
+              "overlap_comparisons": [
+                {
+                  "address_raw": "岐阜県大垣市墨俣町墨俣1",
+                  "article_id": 1604109,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%A4%A7%E5%9E%A3%E5%B8%82%E5%A2%A8%E4%BF%A3%E7%94%BA%29&oldid=108743830",
+                  "title": "八幡神社 (大垣市墨俣町)"
+                },
+                {
+                  "address_raw": "岐阜県各務原市那加東亜町117",
+                  "article_id": 5047823,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E6%9D%B1%E4%BA%9C%E7%94%BA%29&oldid=110396519",
+                  "title": "八幡神社 (各務原市那加東亜町)"
+                },
+                {
+                  "address_raw": "岐阜県各務原市各務山の前町4丁目199",
+                  "article_id": 5051402,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E5%90%84%E5%8B%99%E5%B1%B1%E3%81%AE%E5%89%8D%E7%94%BA%29&oldid=108313454",
+                  "title": "八幡神社 (各務原市各務山の前町)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市中津川3423-1",
+                  "article_id": 5127486,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E4%B8%AD%E6%B4%A5%E5%B7%9D%29&oldid=108313569",
+                  "title": "八幡神社 (中津川市中津川)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市落合1083",
+                  "article_id": 5178621,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%90%BD%E5%90%88%29&oldid=111070652",
+                  "title": "八幡神社 (中津川市落合)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市苗木421",
+                  "article_id": 5208820,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%8B%97%E6%9C%A8%E5%AD%97%E5%85%AB%E5%B9%A1%29&oldid=109438661",
+                  "title": "八幡神社 (中津川市苗木字八幡)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市城田寺1155",
+                  "article_id": 5214176,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E5%9F%8E%E7%94%B0%E5%AF%BA%29&oldid=109776799",
+                  "title": "八幡神社 (岐阜市城田寺)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市長森岩戸942-1",
+                  "article_id": 5250414,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E9%95%B7%E6%A3%AE%E5%B2%A9%E6%88%B8%29&oldid=109783650",
+                  "title": "八幡神社 (岐阜市長森岩戸)"
+                }
+              ],
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "batch_baseline_commit": "a97530d",
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/20",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "千旦林642の八幡神社を確認。神社庁詳細の通称は坂本神社八幡宮で、他の八幡神社候補と区別。",
+              "reference": {
+                "address_raw": "岐阜県中津川市千旦林642",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[中津川市]]千旦林642",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "10f35b27d80fa815fff1d76323fd99283cc9e9ac9b7e5f92e460b27560df268a",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''八幡神社'''（はちまんじんじゃ）",
+                  "name_field_wikitext": "八幡神社",
+                  "revision_at": "2026-09-27T02:32:47Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 1922384832,
+                  "stream_sha256": "f45f2818526179cc3147a46d0e55c49a0f93b4ea9a1080b8c5d666e25f259c1f",
+                  "stream_start": 1922231291
+                },
+                "article_id": 1569017,
+                "checked_at": "2026-11-19T06:38:09.797727+00:00",
+                "excerpt": "八幡神社（はちまんじんじゃ） / 岐阜県中津川市千旦林642",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "八幡神社",
+                "page_hash": "10f35b27d80fa815fff1d76323fd99283cc9e9ac9b7e5f92e460b27560df268a",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E5%8D%83%E6%97%A6%E6%9E%97%29&oldid=111174417",
+                "reading_raw": "はちまんじんじゃ",
+                "revision_id": 111174417,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "八幡神社 (中津川市千旦林)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE_(%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E5%8D%83%E6%97%A6%E6%9E%97)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "d781efce-e04b-59fd-a5db-bcb165405d74"
+            },
+            {
+              "agency_detail": {
+                "address_raw": "〒501-0312 岐阜県瑞穂市美江寺字中町973番地の1",
+                "fetched_at": "2026-11-19T11:56:55.080223+00:00",
+                "locator": "td[height=80] font.hyodai + font; td.moji3",
+                "name_raw": "美江神社",
+                "page_hash": "73f51642288460571f1686712775d2340e32d5f6ed1c5bd8fa4b4b5eb59af051",
+                "reading_raw": "みえじんじゃ",
+                "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2720&shrname=%E2%96%A0%E7%BE%8E%E6%B1%9F%E7%A5%9E%E7%A4%BE%E2%96%A0"
+              },
+              "agency_shrine_code": "2720",
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "瑞穂市美江寺973-1",
+                  "checked_at": "2026-11-19T12:00:50.702357+00:00",
+                  "locator": "名所・史跡／中山道美江寺宿跡 所在地",
+                  "name_raw": "美江神社",
+                  "publisher": "瑞穂市",
+                  "url": "https://www.city.mizuho.lg.jp/secure/2182/2303%20panf.pdf"
+                },
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "美江寺９７３番地１先",
+                  "checked_at": "2026-11-19T12:00:50.702357+00:00",
+                  "location_label_raw": "美江神社南",
+                  "locator": "美江寺投票区の掲示場番号51",
+                  "publisher": "瑞穂市",
+                  "url": "https://cms.city.mizuho.lg.jp/secure/15030/mizuho_senkyo_keijijou_list_R8shu.pdf"
+                }
+              ],
+              "decision": "new_facility_agency_detail",
+              "prefecture_code": "21",
+              "previous_decision": "parcel_conflict_deferred",
+              "prior_location_note": "固定版は「みえじんじゃ」・美江寺917。市の行事ページも同じ地番。県神社庁の所在地と法人の事務所所在地は美江寺字中町973番地の1。地番の関係は確定しない。",
+              "reason": "神社庁詳細の全文かなと全住所を採用。市の史跡案内と選挙掲示場資料の地番が一致する。Wikipediaと行事会場案内の917は別の観測として保持し、地番相互の関係は未確定。",
+              "reference": {
+                "article_id": 1303666,
+                "page_hash": "c2cf8f32c62cdb05dd24a925ec71476796063ea89c4396bc300feacd6d4fa597",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E7%BE%8E%E6%B1%9F%E7%A5%9E%E7%A4%BE&oldid=102412477",
+                "revision_id": 102412477,
+                "title": "美江神社",
+                "url": "https://ja.wikipedia.org/wiki/%E7%BE%8E%E6%B1%9F%E7%A5%9E%E7%A4%BE",
+                "wiki_facility_locator": "冒頭全文かな・情報表と所在地節"
+              },
+              "registered_facility_id": "d4a6153f-3c26-577b-a3cd-0a33a0608de6"
+            },
+            {
+              "agency_detail": {
+                "address_raw": "〒504-0022 岐阜県各務原市那加東亜町117番地",
+                "fetched_at": "2026-11-19T11:57:10.261653+00:00",
+                "locator": "td[height=80] font.hyodai + font; td.moji3",
+                "name_raw": "八幡神社",
+                "page_hash": "11c235b7f8b8dc2ea5541a1c17d02ea3e462ab8d01855e749aa5ba2173afd678",
+                "reading_raw": "はちまんじんじゃ",
+                "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=759&shrname=%E2%96%A0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E2%96%A0"
+              },
+              "agency_shrine_code": "759",
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "〒504-0022 岐阜県各務原市那加東亜町117番地",
+                  "agency_shrine_code": "759",
+                  "checked_at": "2026-11-19T11:57:40.290647+00:00",
+                  "locator": "個別詳細の社名・全文かな見出しと住所欄",
+                  "name_raw": "八幡神社",
+                  "observation": "八幡神社 (はちまんじんじゃ) / 〒504-0022 岐阜県各務原市那加東亜町117番地",
+                  "publisher": "岐阜県神社庁",
+                  "reading_raw": "はちまんじんじゃ",
+                  "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=759"
+                }
+              ],
+              "decision": "new_facility_agency_detail",
+              "existing_comparisons": [
+                {
+                  "address": "岐阜県各務原市神置町4丁目32番地",
+                  "facility_id": "fee145cf-285a-54ea-bd21-5f2225bb2e2c",
+                  "listed_name": "熊野八幡神社",
+                  "source_path": "data/sources/gifu.json"
+                }
+              ],
+              "overlap_comparisons": [
+                {
+                  "address_raw": "岐阜県中津川市千旦林642",
+                  "article_id": 1569017,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E5%8D%83%E6%97%A6%E6%9E%97%29&oldid=111174417",
+                  "title": "八幡神社 (中津川市千旦林)"
+                },
+                {
+                  "address_raw": "岐阜県大垣市墨俣町墨俣1",
+                  "article_id": 1604109,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%A4%A7%E5%9E%A3%E5%B8%82%E5%A2%A8%E4%BF%A3%E7%94%BA%29&oldid=108743830",
+                  "title": "八幡神社 (大垣市墨俣町)"
+                },
+                {
+                  "address_raw": "岐阜県各務原市各務山の前町4丁目199",
+                  "article_id": 5051402,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E5%90%84%E5%8B%99%E5%B1%B1%E3%81%AE%E5%89%8D%E7%94%BA%29&oldid=108313454",
+                  "title": "八幡神社 (各務原市各務山の前町)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市中津川3423-1",
+                  "article_id": 5127486,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E4%B8%AD%E6%B4%A5%E5%B7%9D%29&oldid=108313569",
+                  "title": "八幡神社 (中津川市中津川)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市落合1083",
+                  "article_id": 5178621,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%90%BD%E5%90%88%29&oldid=111070652",
+                  "title": "八幡神社 (中津川市落合)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市苗木421",
+                  "article_id": 5208820,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%8B%97%E6%9C%A8%E5%AD%97%E5%85%AB%E5%B9%A1%29&oldid=109438661",
+                  "title": "八幡神社 (中津川市苗木字八幡)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市城田寺1155",
+                  "article_id": 5214176,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E5%9F%8E%E7%94%B0%E5%AF%BA%29&oldid=109776799",
+                  "title": "八幡神社 (岐阜市城田寺)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市長森岩戸942-1",
+                  "article_id": 5250414,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E9%95%B7%E6%A3%AE%E5%B2%A9%E6%88%B8%29&oldid=109783650",
+                  "title": "八幡神社 (岐阜市長森岩戸)"
+                }
+              ],
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "batch_baseline_commit": "a97530d",
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/24",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "那加東亜町117の八幡神社を確認。各務山の前町4丁目199の同名社および既存の神置町の熊野八幡神社と区別。",
+              "reference": {
+                "address_raw": "岐阜県各務原市那加東亜町117",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[各務原市]][[那加東亜町]]117",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "79231055b8c021ecb8d7078c6bac8fb1e036a05868886ed5b0749eb0e7df80bc",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''八幡神社'''（はちまんじんじゃ）",
+                  "name_field_wikitext": "八幡神社",
+                  "revision_at": "2026-07-24T21:17:44Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 4653481978,
+                  "stream_sha256": "a25df9417f2e846e1688cd1ce612aac61ee8cb55288f1c9fdbfed24a948f4210",
+                  "stream_start": 4653312349
+                },
+                "article_id": 5047823,
+                "checked_at": "2026-11-19T06:40:04.938149+00:00",
+                "excerpt": "八幡神社（はちまんじんじゃ） / 岐阜県各務原市那加東亜町117",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "八幡神社",
+                "page_hash": "79231055b8c021ecb8d7078c6bac8fb1e036a05868886ed5b0749eb0e7df80bc",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E6%9D%B1%E4%BA%9C%E7%94%BA%29&oldid=110396519",
+                "reading_raw": "はちまんじんじゃ",
+                "revision_id": 110396519,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "八幡神社 (各務原市那加東亜町)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE_(%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E6%9D%B1%E4%BA%9C%E7%94%BA)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "31a88108-3cab-5e37-b1f0-a611bcbe4fe1"
+            },
+            {
+              "agency_detail": {
+                "address_raw": "〒509-0105 岐阜県各務原市各務山の前町4丁目199番地",
+                "fetched_at": "2026-11-19T11:57:12.423405+00:00",
+                "locator": "td[height=80] font.hyodai + font; td.moji3",
+                "name_raw": "八幡神社",
+                "page_hash": "5cca60b7143693deb1cc8ea3aaf7073ce096dd38848abb7c676b9c99a4fc3932",
+                "reading_raw": "はちまんじんじゃ",
+                "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=820&shrname=%E2%96%A0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E2%96%A0"
+              },
+              "agency_shrine_code": "820",
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "〒509-0105 岐阜県各務原市各務山の前町4丁目199番地",
+                  "agency_shrine_code": "820",
+                  "checked_at": "2026-11-19T11:57:40.290647+00:00",
+                  "locator": "個別詳細の社名・全文かな見出しと住所欄",
+                  "name_raw": "八幡神社",
+                  "observation": "八幡神社 (はちまんじんじゃ) / 〒509-0105 岐阜県各務原市各務山の前町4丁目199番地",
+                  "publisher": "岐阜県神社庁",
+                  "reading_raw": "はちまんじんじゃ",
+                  "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=820"
+                }
+              ],
+              "decision": "new_facility_agency_detail",
+              "existing_comparisons": [
+                {
+                  "address": "岐阜県各務原市神置町4丁目32番地",
+                  "facility_id": "fee145cf-285a-54ea-bd21-5f2225bb2e2c",
+                  "listed_name": "熊野八幡神社",
+                  "source_path": "data/sources/gifu.json"
+                }
+              ],
+              "overlap_comparisons": [
+                {
+                  "address_raw": "岐阜県中津川市千旦林642",
+                  "article_id": 1569017,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E5%8D%83%E6%97%A6%E6%9E%97%29&oldid=111174417",
+                  "title": "八幡神社 (中津川市千旦林)"
+                },
+                {
+                  "address_raw": "岐阜県大垣市墨俣町墨俣1",
+                  "article_id": 1604109,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%A4%A7%E5%9E%A3%E5%B8%82%E5%A2%A8%E4%BF%A3%E7%94%BA%29&oldid=108743830",
+                  "title": "八幡神社 (大垣市墨俣町)"
+                },
+                {
+                  "address_raw": "岐阜県各務原市那加東亜町117",
+                  "article_id": 5047823,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E6%9D%B1%E4%BA%9C%E7%94%BA%29&oldid=110396519",
+                  "title": "八幡神社 (各務原市那加東亜町)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市中津川3423-1",
+                  "article_id": 5127486,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E4%B8%AD%E6%B4%A5%E5%B7%9D%29&oldid=108313569",
+                  "title": "八幡神社 (中津川市中津川)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市落合1083",
+                  "article_id": 5178621,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%90%BD%E5%90%88%29&oldid=111070652",
+                  "title": "八幡神社 (中津川市落合)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市苗木421",
+                  "article_id": 5208820,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%8B%97%E6%9C%A8%E5%AD%97%E5%85%AB%E5%B9%A1%29&oldid=109438661",
+                  "title": "八幡神社 (中津川市苗木字八幡)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市城田寺1155",
+                  "article_id": 5214176,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E5%9F%8E%E7%94%B0%E5%AF%BA%29&oldid=109776799",
+                  "title": "八幡神社 (岐阜市城田寺)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市長森岩戸942-1",
+                  "article_id": 5250414,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E9%95%B7%E6%A3%AE%E5%B2%A9%E6%88%B8%29&oldid=109783650",
+                  "title": "八幡神社 (岐阜市長森岩戸)"
+                }
+              ],
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "batch_baseline_commit": "a97530d",
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/23",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "各務山の前町4丁目199の八幡神社を確認。那加東亜町117の同名社および既存の神置町の熊野八幡神社と区別。",
+              "reference": {
+                "address_raw": "岐阜県各務原市各務山の前町4丁目199",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[各務原市]][[各務山の前町]]4丁目199",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "ec359708285dd77ba041984c1fc1df9b64d9a1052a397ce93536ab3776e90488",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''八幡神社'''（はちまんじんじゃ）",
+                  "name_field_wikitext": "八幡神社",
+                  "revision_at": "2026-02-08T00:11:34Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 4656930984,
+                  "stream_sha256": "2d0a9179c08166e4379da328603b593000b4be785a3a91274e64e253a350253d",
+                  "stream_start": 4656862052
+                },
+                "article_id": 5051402,
+                "checked_at": "2026-11-19T06:40:04.975148+00:00",
+                "excerpt": "八幡神社（はちまんじんじゃ） / 岐阜県各務原市各務山の前町4丁目199",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "八幡神社",
+                "page_hash": "ec359708285dd77ba041984c1fc1df9b64d9a1052a397ce93536ab3776e90488",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E5%90%84%E5%8B%99%E5%B1%B1%E3%81%AE%E5%89%8D%E7%94%BA%29&oldid=108313454",
+                "reading_raw": "はちまんじんじゃ",
+                "revision_id": 108313454,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "八幡神社 (各務原市各務山の前町)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE_(%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E5%90%84%E5%8B%99%E5%B1%B1%E3%81%AE%E5%89%8D%E7%94%BA)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "5b12ad10-423d-52d6-af85-0ceea428b26c"
+            },
+            {
+              "agency_detail": {
+                "address_raw": "〒500-8234 岐阜県岐阜市芋島4丁目3番8号",
+                "fetched_at": "2026-11-19T11:56:59.392227+00:00",
+                "locator": "td[height=80] font.hyodai + font; td.moji3",
+                "name_raw": "八剣神社",
+                "page_hash": "1eadeef2ac4f037cc9b29250610b65a0456e1af54302560150b040c4a12980e4",
+                "reading_raw": "やつるぎじんじゃ",
+                "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=953&shrname=%E2%96%A0%E5%85%AB%E5%89%A3%E7%A5%9E%E7%A4%BE%E2%96%A0"
+              },
+              "agency_shrine_code": "953",
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "〒500-8234 岐阜県岐阜市芋島4丁目3番8号",
+                  "agency_shrine_code": "953",
+                  "checked_at": "2026-11-19T11:57:40.290647+00:00",
+                  "locator": "個別詳細の社名・全文かな見出しと住所欄",
+                  "name_raw": "八剣神社",
+                  "observation": "八剣神社 (やつるぎじんじゃ) / 〒500-8234 岐阜県岐阜市芋島4丁目3番8号",
+                  "publisher": "岐阜県神社庁",
+                  "reading_raw": "やつるぎじんじゃ",
+                  "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=953"
+                }
+              ],
+              "decision": "new_facility_agency_detail",
+              "existing_comparisons": [
+                {
+                  "address": "岐阜県羽島郡岐南町みやまち4丁目",
+                  "facility_id": "adb69c47-9766-52ce-8450-57d2ec6eefa5",
+                  "listed_name": "八剣神社",
+                  "source_path": "data/sources/gifu_wikipedia.json"
+                },
+                {
+                  "address": "岐阜県羽島市竹鼻町3298-1",
+                  "facility_id": "f46636ae-1a54-5875-b2e0-17fc78dd6234",
+                  "listed_name": "八剱神社",
+                  "source_path": "data/sources/gifu_wikipedia.json"
+                },
+                {
+                  "address": "岐阜県加茂郡白川町上佐見335-1",
+                  "facility_id": "5eda7e08-1704-5aff-bde2-b99d39d3e6e0",
+                  "listed_name": "八剱神社",
+                  "source_path": "data/sources/gifu_wikipedia.json"
+                }
+              ],
+              "overlap_comparisons": [],
+              "prefecture_code": "21",
+              "previous_decision": "identity_deferred",
+              "prior_record": {
+                "batch_baseline_commit": "a97530d",
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/15",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "岐阜市芋島の全地番を確認。既存の岐南町みやまち・羽島市竹鼻町・白川町上佐見の同名・異体字の各社と区別。",
+              "reference": {
+                "address_raw": "岐阜県岐阜市芋島4丁目3-8",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[岐阜市]]芋島4丁目3-8",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "7680db8c7ea26ddc8684f8db4ddce41028052662660a00a61fa52df485eee3d4",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''八剣神社'''（やつるぎじんじゃ）",
+                  "name_field_wikitext": "八剣神社",
+                  "revision_at": "2026-07-30T18:37:23Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 4827098568,
+                  "stream_sha256": "a3641b192cc2c8779392ce41d369dd723e227c2b2c8b9e3c13a8b2d89c384369",
+                  "stream_start": 4826949732
+                },
+                "article_id": 5241097,
+                "checked_at": "2026-11-19T06:40:26.832888+00:00",
+                "excerpt": "八剣神社（やつるぎじんじゃ） / 岐阜県岐阜市芋島4丁目3-8",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "八剣神社",
+                "page_hash": "7680db8c7ea26ddc8684f8db4ddce41028052662660a00a61fa52df485eee3d4",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%89%A3%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E8%8A%8B%E5%B3%B6%29&oldid=110469141",
+                "reading_raw": "やつるぎじんじゃ",
+                "revision_id": 110469141,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "八剣神社 (岐阜市芋島)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%89%A3%E7%A5%9E%E7%A4%BE_(%E5%B2%90%E9%98%9C%E5%B8%82%E8%8A%8B%E5%B3%B6)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "1509aa4f-0b64-5dab-b0cc-f04b7d8c771e"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "〒503-0102 岐阜県大垣市墨俣町墨俣1番地",
+                  "agency_shrine_code": "4",
+                  "checked_at": "2026-11-19T11:57:40.290647+00:00",
+                  "locator": "個別詳細の社名・全文かな見出しと住所欄",
+                  "name_raw": "八幡神社",
+                  "observation": "八幡神社 (はちまんじんじゃ) / 〒503-0102 岐阜県大垣市墨俣町墨俣1番地",
+                  "publisher": "岐阜県神社庁",
+                  "reading_raw": "はちまんじんじゃ",
+                  "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=4"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "existing_comparisons": [
+                {
+                  "address": "岐阜県大垣市西外側町1-1",
+                  "facility_id": "d57997a5-c238-54a1-8a20-59bc19076311",
+                  "listed_name": "大垣八幡神社",
+                  "source_path": "data/sources/gifu_wikipedia.json"
+                }
+              ],
+              "overlap_comparisons": [
+                {
+                  "address_raw": "岐阜県中津川市千旦林642",
+                  "article_id": 1569017,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E5%8D%83%E6%97%A6%E6%9E%97%29&oldid=111174417",
+                  "title": "八幡神社 (中津川市千旦林)"
+                },
+                {
+                  "address_raw": "岐阜県各務原市那加東亜町117",
+                  "article_id": 5047823,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E6%9D%B1%E4%BA%9C%E7%94%BA%29&oldid=110396519",
+                  "title": "八幡神社 (各務原市那加東亜町)"
+                },
+                {
+                  "address_raw": "岐阜県各務原市各務山の前町4丁目199",
+                  "article_id": 5051402,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E5%90%84%E5%8B%99%E5%B1%B1%E3%81%AE%E5%89%8D%E7%94%BA%29&oldid=108313454",
+                  "title": "八幡神社 (各務原市各務山の前町)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市中津川3423-1",
+                  "article_id": 5127486,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E4%B8%AD%E6%B4%A5%E5%B7%9D%29&oldid=108313569",
+                  "title": "八幡神社 (中津川市中津川)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市落合1083",
+                  "article_id": 5178621,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%90%BD%E5%90%88%29&oldid=111070652",
+                  "title": "八幡神社 (中津川市落合)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市苗木421",
+                  "article_id": 5208820,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%8B%97%E6%9C%A8%E5%AD%97%E5%85%AB%E5%B9%A1%29&oldid=109438661",
+                  "title": "八幡神社 (中津川市苗木字八幡)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市城田寺1155",
+                  "article_id": 5214176,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E5%9F%8E%E7%94%B0%E5%AF%BA%29&oldid=109776799",
+                  "title": "八幡神社 (岐阜市城田寺)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市長森岩戸942-1",
+                  "article_id": 5250414,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E9%95%B7%E6%A3%AE%E5%B2%A9%E6%88%B8%29&oldid=109783650",
+                  "title": "八幡神社 (岐阜市長森岩戸)"
+                }
+              ],
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "batch_baseline_commit": "a97530d",
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/25",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "墨俣町墨俣1の八幡神社を確認。神社庁の由緒は荒方八幡宮の社号を記し、既存の大垣八幡神社（西外側町）とは別所在地。",
+              "reference": {
+                "address_raw": "岐阜県大垣市墨俣町墨俣1",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[大垣市]]墨俣町墨俣1",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "a18110148967019af363a1909b418e15b231c72fb331fffaee5f62e17790f9ca",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''八幡神社'''（はちまんじんじゃ）",
+                  "name_field_wikitext": "八幡神社",
+                  "revision_at": "2026-03-13T17:39:46Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 1951319908,
+                  "stream_sha256": "428c23364b0e4aeb4f6a277dbe0049b9492879e52ef11e143443c72abdfb3713",
+                  "stream_start": 1951182311
+                },
+                "article_id": 1604109,
+                "checked_at": "2026-11-19T06:38:09.836811+00:00",
+                "excerpt": "八幡神社（はちまんじんじゃ） / 岐阜県大垣市墨俣町墨俣1",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "八幡神社",
+                "page_hash": "a18110148967019af363a1909b418e15b231c72fb331fffaee5f62e17790f9ca",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%A4%A7%E5%9E%A3%E5%B8%82%E5%A2%A8%E4%BF%A3%E7%94%BA%29&oldid=108743830",
+                "reading_raw": "はちまんじんじゃ",
+                "revision_id": 108743830,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "八幡神社 (大垣市墨俣町)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE_(%E5%A4%A7%E5%9E%A3%E5%B8%82%E5%A2%A8%E4%BF%A3%E7%94%BA)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "91292097-9d91-5c35-9b42-9b8241810f9f",
+              "result": "new_facility"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "〒500-8229 岐阜県岐阜市長森岩戸942番地の1",
+                  "agency_shrine_code": "949",
+                  "checked_at": "2026-11-19T11:57:40.290647+00:00",
+                  "locator": "個別詳細の社名・全文かな見出しと住所欄",
+                  "name_raw": "八幡神社",
+                  "observation": "八幡神社 (はちまんじんじゃ) / 〒500-8229 岐阜県岐阜市長森岩戸942番地の1",
+                  "publisher": "岐阜県神社庁",
+                  "reading_raw": "はちまんじんじゃ",
+                  "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=949"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "existing_comparisons": [
+                {
+                  "address": "岐阜県岐阜市加納八幡町9番地",
+                  "facility_id": "92cecd77-97e9-5f6e-8712-91133c0f45a1",
+                  "listed_name": "加納八幡神社",
+                  "source_path": "data/sources/gifu.json"
+                },
+                {
+                  "address": "岐阜県岐阜市加野627番地",
+                  "facility_id": "0b31cca4-6be6-5a6d-b9c1-df5cc4e83e6b",
+                  "listed_name": "清水八幡神社",
+                  "source_path": "data/sources/gifu.json"
+                }
+              ],
+              "overlap_comparisons": [
+                {
+                  "address_raw": "岐阜県中津川市千旦林642",
+                  "article_id": 1569017,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E5%8D%83%E6%97%A6%E6%9E%97%29&oldid=111174417",
+                  "title": "八幡神社 (中津川市千旦林)"
+                },
+                {
+                  "address_raw": "岐阜県大垣市墨俣町墨俣1",
+                  "article_id": 1604109,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%A4%A7%E5%9E%A3%E5%B8%82%E5%A2%A8%E4%BF%A3%E7%94%BA%29&oldid=108743830",
+                  "title": "八幡神社 (大垣市墨俣町)"
+                },
+                {
+                  "address_raw": "岐阜県各務原市那加東亜町117",
+                  "article_id": 5047823,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E6%9D%B1%E4%BA%9C%E7%94%BA%29&oldid=110396519",
+                  "title": "八幡神社 (各務原市那加東亜町)"
+                },
+                {
+                  "address_raw": "岐阜県各務原市各務山の前町4丁目199",
+                  "article_id": 5051402,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E5%90%84%E5%8B%99%E5%B1%B1%E3%81%AE%E5%89%8D%E7%94%BA%29&oldid=108313454",
+                  "title": "八幡神社 (各務原市各務山の前町)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市中津川3423-1",
+                  "article_id": 5127486,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E4%B8%AD%E6%B4%A5%E5%B7%9D%29&oldid=108313569",
+                  "title": "八幡神社 (中津川市中津川)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市落合1083",
+                  "article_id": 5178621,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%90%BD%E5%90%88%29&oldid=111070652",
+                  "title": "八幡神社 (中津川市落合)"
+                },
+                {
+                  "address_raw": "岐阜県中津川市苗木421",
+                  "article_id": 5208820,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%8B%97%E6%9C%A8%E5%AD%97%E5%85%AB%E5%B9%A1%29&oldid=109438661",
+                  "title": "八幡神社 (中津川市苗木字八幡)"
+                },
+                {
+                  "address_raw": "岐阜県岐阜市城田寺1155",
+                  "article_id": 5214176,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E5%9F%8E%E7%94%B0%E5%AF%BA%29&oldid=109776799",
+                  "title": "八幡神社 (岐阜市城田寺)"
+                }
+              ],
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "batch_baseline_commit": "a97530d",
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/27",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "長森岩戸942番地の1の八幡神社を確認。神社庁詳細の通称は岩戸八幡社で、他の八幡神社候補と区別。",
+              "reference": {
+                "address_raw": "岐阜県岐阜市長森岩戸942-1",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[岐阜市]]長森岩戸942-1",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "5e982e8d94c598887e0bcb37665f03005070283769f56f6d3c6ef707f86dcb3b",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''八幡神社'''（はちまんじんじゃ）",
+                  "name_field_wikitext": "八幡神社",
+                  "revision_at": "2026-06-02T22:21:14Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 4835960304,
+                  "stream_sha256": "020c379be21881c96dcd5b862357f49a20d88eec30fd7e92b3e7ed49603183aa",
+                  "stream_start": 4835734142
+                },
+                "article_id": 5250414,
+                "checked_at": "2026-11-19T06:40:26.880422+00:00",
+                "excerpt": "八幡神社（はちまんじんじゃ） / 岐阜県岐阜市長森岩戸942-1",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "八幡神社",
+                "page_hash": "5e982e8d94c598887e0bcb37665f03005070283769f56f6d3c6ef707f86dcb3b",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E5%B2%90%E9%98%9C%E5%B8%82%E9%95%B7%E6%A3%AE%E5%B2%A9%E6%88%B8%29&oldid=109783650",
+                "reading_raw": "はちまんじんじゃ",
+                "revision_id": 109783650,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "八幡神社 (岐阜市長森岩戸)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE_(%E5%B2%90%E9%98%9C%E5%B8%82%E9%95%B7%E6%A3%AE%E5%B2%A9%E6%88%B8)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "8ef00269-5c91-532b-9d36-8ab704814e23",
+              "result": "new_facility"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "〒504-0046 岐阜県各務原市那加長塚町1丁目64番地",
+                  "agency_shrine_code": "766",
+                  "checked_at": "2026-11-19T11:57:40.290647+00:00",
+                  "locator": "個別詳細の社名・全文かな見出しと住所欄",
+                  "name_raw": "村上神社",
+                  "observation": "村上神社 (むらかみじんじゃ) / 〒504-0046 岐阜県各務原市那加長塚町1丁目64番地",
+                  "publisher": "岐阜県神社庁",
+                  "reading_raw": "むらかみじんじゃ",
+                  "url": "https://www.gifu-jinjacho.jp/syosai.php?shrname=%E2%96%A0%E6%9D%91%E4%B8%8A%E7%A5%9E%E7%A4%BE%E2%96%A0&shrno=766"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "existing_comparisons": [],
+              "overlap_comparisons": [
+                {
+                  "address_raw": "岐阜県高山市奥飛騨温泉郷村上1461",
+                  "article_id": 5081862,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E6%9D%91%E4%B8%8A%E7%A5%9E%E7%A4%BE+%28%E9%AB%98%E5%B1%B1%E5%B8%82%29&oldid=107649417",
+                  "title": "村上神社 (高山市)"
+                }
+              ],
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "batch_baseline_commit": "a97530d",
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/68",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "那加長塚町1丁目64の村上神社を確認。各務原市支部の掲載と高山市奥飛騨温泉郷村上の同名社を区別。",
+              "reference": {
+                "address_raw": "岐阜県各務原市那加長塚町1丁目64番地",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[各務原市]][[那加長塚町]]1丁目64番地",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "026b2085bb96729aa83ca32ee68adc9a6425a56b30fd6771f2283c04bdaf648c",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''村上神社'''（むらかみじんじゃ）",
+                  "name_field_wikitext": "村上神社",
+                  "revision_at": "2025-11-12T10:32:17Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 4650564898,
+                  "stream_sha256": "9ca86d0b9686a00c248751d538f9d671345b9f03ae9fdc2ee4eef3121ec25ed9",
+                  "stream_start": 4650451923
+                },
+                "article_id": 5044788,
+                "checked_at": "2026-11-19T06:40:04.892082+00:00",
+                "excerpt": "村上神社（むらかみじんじゃ） / 岐阜県各務原市那加長塚町1丁目64番地",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "村上神社",
+                "page_hash": "026b2085bb96729aa83ca32ee68adc9a6425a56b30fd6771f2283c04bdaf648c",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E6%9D%91%E4%B8%8A%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E9%95%B7%E5%A1%9A%E7%94%BA%29&oldid=107206640",
+                "reading_raw": "むらかみじんじゃ",
+                "revision_id": 107206640,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "村上神社 (各務原市那加長塚町)",
+                "url": "https://ja.wikipedia.org/wiki/%E6%9D%91%E4%B8%8A%E7%A5%9E%E7%A4%BE_(%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E9%95%B7%E5%A1%9A%E7%94%BA)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "9a50a26d-0a35-5a7f-b88e-44d2701b5f5b",
+              "result": "new_facility"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "address_raw": "〒506-1431 岐阜県高山市奥飛騨温泉郷村上1461番地",
+                  "agency_shrine_code": "1285",
+                  "checked_at": "2026-11-19T11:57:40.290647+00:00",
+                  "locator": "個別詳細の社名・全文かな見出しと住所欄",
+                  "name_raw": "村上神社",
+                  "observation": "村上神社 (むらかみじんじゃ) / 〒506-1431 岐阜県高山市奥飛騨温泉郷村上1461番地",
+                  "publisher": "岐阜県神社庁",
+                  "reading_raw": "むらかみじんじゃ",
+                  "url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=1285"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "existing_comparisons": [],
+              "overlap_comparisons": [
+                {
+                  "address_raw": "岐阜県各務原市那加長塚町1丁目64番地",
+                  "article_id": 5044788,
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E6%9D%91%E4%B8%8A%E7%A5%9E%E7%A4%BE+%28%E5%90%84%E5%8B%99%E5%8E%9F%E5%B8%82%E9%82%A3%E5%8A%A0%E9%95%B7%E5%A1%9A%E7%94%BA%29&oldid=107206640",
+                  "title": "村上神社 (各務原市那加長塚町)"
+                }
+              ],
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "batch_baseline_commit": "a97530d",
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/69",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "奥飛騨温泉郷村上1461の村上神社を確認。各務原市那加長塚町の同名社とは別所在地。",
+              "reference": {
+                "address_raw": "岐阜県高山市奥飛騨温泉郷村上1461",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[高山市]]奥飛騨温泉郷村上1461",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "839d32ca2d30ff3838e57bd511decbc95720a991750976b745f29a6c34ad875a",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''村上神社'''（むらかみじんじゃ）",
+                  "name_field_wikitext": "村上神社",
+                  "revision_at": "2025-12-18T07:18:38Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 4681821888,
+                  "stream_sha256": "ad6e62cdeeadc0c734d419843f894f8cb503afa4a977f07ed93535f5816570f3",
+                  "stream_start": 4681702327
+                },
+                "article_id": 5081862,
+                "checked_at": "2026-11-19T06:40:18.285238+00:00",
+                "excerpt": "村上神社（むらかみじんじゃ） / 岐阜県高山市奥飛騨温泉郷村上1461",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "村上神社",
+                "page_hash": "839d32ca2d30ff3838e57bd511decbc95720a991750976b745f29a6c34ad875a",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E6%9D%91%E4%B8%8A%E7%A5%9E%E7%A4%BE+%28%E9%AB%98%E5%B1%B1%E5%B8%82%29&oldid=107649417",
+                "reading_raw": "むらかみじんじゃ",
+                "revision_id": 107649417,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "村上神社 (高山市)",
+                "url": "https://ja.wikipedia.org/wiki/%E6%9D%91%E4%B8%8A%E7%A5%9E%E7%A4%BE_(%E9%AB%98%E5%B1%B1%E5%B8%82)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "a9fd8a53-378a-537c-b3cb-e82830d92511",
+              "result": "new_facility"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "comparison_facilities": [
+                {
+                  "address": "三重県伊勢市豊川町274",
+                  "facility_id": "715ef883-ffd0-583d-8ec5-f86ac80998dc",
+                  "name": "茜社"
+                },
+                {
+                  "address": "三重県伊勢市豊川町279",
+                  "facility_id": "183794a3-2558-5dd6-8319-12a68bc4acec",
+                  "name": "多賀宮"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "a0fab5dc-6743-54f4-8194-40820169a6ce",
+                  "name": "土宮"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "4074170d-cd35-57e0-aa68-96e7c529b9ee",
+                  "name": "風宮"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "9ee44a57-f292-55ed-9ce7-707d27511d7d",
+                  "name": "下御井神社"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "ef6e6cd3-6363-5e56-8668-5598a3192778",
+                  "name": "大津神社"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "2aed9620-4015-5808-be59-ecd4aeb50e15",
+                  "name": "度会国御神社"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "53825e03-1fd3-5aff-a92a-67602c909ce5",
+                  "name": "山末神社"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "prefecture_code": "24",
+              "previous": {
+                "article_id": 2846869,
+                "decision": "identity_deferred",
+                "file": "data/sources/research_index.json@05f226c",
+                "locator": "nationwide_wikipedia_municipality_followups[0] → prefectures[24] → article_observations",
+                "page_hash": "5d7ae9e5f168f79e972181794b8df6fecefe752a047c9ce2123ed2de8970aaaa",
+                "prefecture_code": "24",
+                "revision_id": 97910291,
+                "title": "上御井神社"
+              },
+              "reason": "外宮の公式案内は祭典の御水をいただく上御井神社と、不都合時に用いる下御井神社を区別する。観光コンベンション機構も前者を豊川町279の所管社として個別に掲載する。豊川町274の茜社および既存の外宮別宮・摂末社から区別できる。",
+              "reference": {
+                "address_raw": "三重県伊勢市豊川町",
+                "archive_observation": {
+                  "address_field_wikitext": "[[三重県]][[伊勢市]][[豊川町 (伊勢市)|豊川町]]",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "5d7ae9e5f168f79e972181794b8df6fecefe752a047c9ce2123ed2de8970aaaa",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''上御井神社'''（かみのみいのじんじゃ）",
+                  "name_field_wikitext": "上御井神社",
+                  "revision_at": "2023-11-14T09:49:16Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 2924949545,
+                  "stream_sha256": "e4d58e663271d92b60c4e87cae8ebacb855afb1d164509d884201f261e4ee1a8",
+                  "stream_start": 2924834234
+                },
+                "article_id": 2846869,
+                "checked_at": "2026-11-19T06:38:42.132884+00:00",
+                "corroboration": [
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "下御井神社の本文（149–151行）",
+                    "name_raw": "上御井神社",
+                    "observation": "上御井神社の読みは「かみのみいのじんじゃ」。神饌に用いる御水をいただく所で、代わりに御水をいただく下御井神社と区別される。",
+                    "publisher": "伊勢神宮",
+                    "reading_raw": "かみのみいのじんじゃ",
+                    "source_kind": "shrine_official",
+                    "url": "https://www.isejingu.or.jp/about/geku/others.html"
+                  },
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "address_raw": "三重県伊勢市豊川町279",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "施設見出し、所属・祭神、基本情報の住所（69、71–76、81–83行）",
+                    "name_raw": "上御井神社",
+                    "observation": "上御井神社は外宮所管社。祭神は御料水守護の御霊。",
+                    "publisher": "伊勢志摩観光コンベンション機構",
+                    "reading_raw": "かみのみいのじんじゃ",
+                    "source_kind": "destination_organization",
+                    "url": "https://www.iseshima-kanko.jp/spot/2232"
+                  }
+                ],
+                "excerpt": "上御井神社（かみのみいのじんじゃ） / 三重県伊勢市豊川町",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "上御井神社",
+                "page_hash": "5d7ae9e5f168f79e972181794b8df6fecefe752a047c9ce2123ed2de8970aaaa",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E4%B8%8A%E5%BE%A1%E4%BA%95%E7%A5%9E%E7%A4%BE&oldid=97910291",
+                "reading_raw": "かみのみいのじんじゃ",
+                "revision_id": 97910291,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "上御井神社",
+                "url": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E5%BE%A1%E4%BA%95%E7%A5%9E%E7%A4%BE",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "ceced79d-896c-56ee-8218-4e550c950ace"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "comparison_facilities": [
+                {
+                  "address": "三重県伊勢市豊川町274",
+                  "facility_id": "715ef883-ffd0-583d-8ec5-f86ac80998dc",
+                  "name": "茜社"
+                },
+                {
+                  "address": "三重県伊勢市豊川町279",
+                  "facility_id": "183794a3-2558-5dd6-8319-12a68bc4acec",
+                  "name": "多賀宮"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "a0fab5dc-6743-54f4-8194-40820169a6ce",
+                  "name": "土宮"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "4074170d-cd35-57e0-aa68-96e7c529b9ee",
+                  "name": "風宮"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "9ee44a57-f292-55ed-9ce7-707d27511d7d",
+                  "name": "下御井神社"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "ef6e6cd3-6363-5e56-8668-5598a3192778",
+                  "name": "大津神社"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "2aed9620-4015-5808-be59-ecd4aeb50e15",
+                  "name": "度会国御神社"
+                },
+                {
+                  "address": "三重県伊勢市豊川町",
+                  "facility_id": "53825e03-1fd3-5aff-a92a-67602c909ce5",
+                  "name": "山末神社"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "prefecture_code": "24",
+              "previous": {
+                "article_id": 2645054,
+                "decision": "identity_deferred",
+                "file": "data/sources/research_index.json@05f226c",
+                "locator": "nationwide_wikipedia_municipality_followups[0] → prefectures[24] → article_observations",
+                "page_hash": "6c6a3325494ce209d0bd2d7a20e98ea25371d6e1aa1da56a961938c8da0df660",
+                "prefecture_code": "24",
+                "revision_id": 107197069,
+                "title": "度会大国玉比賣神社"
+              },
+              "reason": "伊勢市に掲載された外宮めぐり資料が「度会大国玉比賣神社」を度会国御神社や山末神社と別の紹介欄で扱う。観光コンベンション機構の表記「度会大国玉比売神社」の全文かなは固定版と一致し、外宮域内豊川町279および祭神二柱を明示する。固定版の「賣」を保持する。",
+              "reference": {
+                "address_raw": "三重県伊勢市豊川町",
+                "archive_observation": {
+                  "address_field_wikitext": "[[三重県]][[伊勢市]][[豊川町 (伊勢市)|豊川町]]",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "6c6a3325494ce209d0bd2d7a20e98ea25371d6e1aa1da56a961938c8da0df660",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''度会大国玉比賣神社'''（わたらいおおくにたまひめじんじゃ）",
+                  "name_field_wikitext": "度会大国玉比賣神社",
+                  "revision_at": "2025-11-11T13:33:34Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 2754829054,
+                  "stream_sha256": "d4cab6c175fba83ef28ca889df5d8efe13c44e4210bb674583204d8da1d86ae2",
+                  "stream_start": 2754680850
+                },
+                "article_id": 2645054,
+                "checked_at": "2026-11-19T06:38:41.735569+00:00",
+                "corroboration": [
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "外宮めぐり：中央右側の個別カード（PDF本文116–117行）",
+                    "name_raw": "度会大国玉比賣神社",
+                    "observation": "度会大国玉比賣神社が伊我理神社、山末神社、度会国御神社から個別の紹介欄で区別される。",
+                    "published_at_url": "https://www.city.ise.mie.jp/kurashi/koutsu/koutsu_kaigi/youshi/1018763.html",
+                    "publisher": "伊勢地域公共交通会議（伊勢市公式サイト掲載）",
+                    "source_kind": "municipal_document",
+                    "url": "https://www.city.ise.mie.jp/_res/projects/default_project/_page_/001/018/763/r702jikousyo02.pdf"
+                  },
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "address_raw": "三重県伊勢市豊川町279（伊勢神宮外宮域内）",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "施設見出し、所属・祭神、基本情報の住所（69、71–79、83–86行）",
+                    "name_raw": "度会大国玉比売神社",
+                    "observation": "度会大国玉比売神社は外宮摂社。大国玉神・佐々良比売命を祀り、伊我理神社は参道の斜め上。",
+                    "publisher": "伊勢志摩観光コンベンション機構",
+                    "reading_raw": "わたらいおおくにたまひめじんじゃ",
+                    "source_kind": "destination_organization",
+                    "url": "https://www.iseshima-kanko.jp/spot/2189"
+                  }
+                ],
+                "excerpt": "度会大国玉比賣神社（わたらいおおくにたまひめじんじゃ） / 三重県伊勢市豊川町",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "度会大国玉比賣神社",
+                "page_hash": "6c6a3325494ce209d0bd2d7a20e98ea25371d6e1aa1da56a961938c8da0df660",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%BA%A6%E4%BC%9A%E5%A4%A7%E5%9B%BD%E7%8E%89%E6%AF%94%E8%B3%A3%E7%A5%9E%E7%A4%BE&oldid=107197069",
+                "reading_raw": "わたらいおおくにたまひめじんじゃ",
+                "revision_id": 107197069,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "度会大国玉比賣神社",
+                "url": "https://ja.wikipedia.org/wiki/%E5%BA%A6%E4%BC%9A%E5%A4%A7%E5%9B%BD%E7%8E%89%E6%AF%94%E8%B3%A3%E7%A5%9E%E7%A4%BE",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "f06f3b3e-edf7-5579-a8a7-025c60fe5e49"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "comparison_facilities": [
+                {
+                  "address": "伊勢市宇治今在家町172",
+                  "facility_id": "abee4ea8-5b76-5eb2-8bc7-852321fb00e3",
+                  "name": "宇治神社"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "prefecture_code": "24",
+              "previous": {
+                "article_id": 2872982,
+                "decision": "identity_deferred",
+                "file": "data/sources/research_index.json@05f226c",
+                "locator": "nationwide_wikipedia_municipality_followups[0] → prefectures[24] → article_observations",
+                "page_hash": "2928901f2ed36b8157c06bf893d74716b1cf3078b62185c99e135e61daff5aaa",
+                "prefecture_code": "24",
+                "revision_id": 108180635,
+                "title": "饗土橋姫神社"
+              },
+              "reason": "伊勢神宮の本文が宇治橋と対面する宇治橋守護の社を全文かな付きで特定する。三重県神社庁教化委員会の宇治神社は同町172で祭神が異なり、所在町域の重なりは施設の一致を示さない。",
+              "reference": {
+                "address_raw": "三重県伊勢市宇治今在家町",
+                "archive_observation": {
+                  "address_field_wikitext": "[[三重県]][[伊勢市]]宇治今在家町",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "2928901f2ed36b8157c06bf893d74716b1cf3078b62185c99e135e61daff5aaa",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''饗土橋姫神社'''（あえどはしひめじんじゃ）",
+                  "name_field_wikitext": "饗土橋姫神社",
+                  "revision_at": "2026-01-28T01:43:56Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 2947665623,
+                  "stream_sha256": "cac881306c0db7880e4f4a78e6b067649da8b6e10248db138601f11c5ae9710e",
+                  "stream_start": 2947515907
+                },
+                "article_id": 2872982,
+                "checked_at": "2026-11-19T06:38:42.465219+00:00",
+                "corroboration": [
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "宇治橋の守り神：饗土橋姫神社の見出しと本文（107–111行）",
+                    "name_raw": "饗土橋姫神社",
+                    "observation": "宇治橋と対面する位置に鎮座し、宇治橋の守り神を祀る。",
+                    "publisher": "伊勢神宮",
+                    "reading_raw": "あえどはしひめじんじゃ",
+                    "source_kind": "shrine_official",
+                    "url": "https://www.isejingu.or.jp/about/naiku/ujibashi.html"
+                  },
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "address_raw": "三重県伊勢市宇治今在家町",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "施設見出し、本文、基本情報の住所、周辺にあるスポット（69、77–87、109行）",
+                    "name_raw": "饗土橋姫神社",
+                    "observation": "饗土橋姫神社は内宮所管社。宇治神社は周辺の別施設として掲載されている。",
+                    "publisher": "伊勢志摩観光コンベンション機構",
+                    "reading_raw": "あえどはしひめじんじゃ",
+                    "source_kind": "destination_organization",
+                    "url": "https://www.iseshima-kanko.jp/spot/2198"
+                  },
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "address_raw": "伊勢市宇治今在家町172",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "evidence_role": "comparison_facility",
+                    "locator": "宇治神社：鎮座地・御祭神（40–43行）",
+                    "name_raw": "宇治神社",
+                    "observation": "宇治神社は宇治今在家町172に鎮座し、大山祗神などを祀る。",
+                    "publisher": "三重県神社庁教化委員会",
+                    "source_kind": "agency_detail",
+                    "url": "https://kyoka.mie-jinjacho.or.jp/shrine/%E5%AE%87%E6%B2%BB%E7%A5%9E%E7%A4%BE/"
+                  }
+                ],
+                "excerpt": "饗土橋姫神社（あえどはしひめじんじゃ） / 三重県伊勢市宇治今在家町",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "饗土橋姫神社",
+                "page_hash": "2928901f2ed36b8157c06bf893d74716b1cf3078b62185c99e135e61daff5aaa",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E9%A5%97%E5%9C%9F%E6%A9%8B%E5%A7%AB%E7%A5%9E%E7%A4%BE&oldid=108180635",
+                "reading_raw": "あえどはしひめじんじゃ",
+                "revision_id": 108180635,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "饗土橋姫神社",
+                "url": "https://ja.wikipedia.org/wiki/%E9%A5%97%E5%9C%9F%E6%A9%8B%E5%A7%AB%E7%A5%9E%E7%A4%BE",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "47f5edc2-1a86-5198-b703-9b34df25b6e2"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "compared_articles": [
+                {
+                  "article_id": 2862661,
+                  "page_hash": "4649090e980163d0eea5cb7ce25c1482a9731c30fcfb5aa85153d5427abd1d0b",
+                  "revision_id": 64058165,
+                  "title": "滝祭神"
+                },
+                {
+                  "article_id": 2862663,
+                  "page_hash": "20b4913fafbde319861209499f3359731855e2772d40958e2f5e3b1e8906becc",
+                  "revision_id": 99219313,
+                  "title": "由貴御倉"
+                },
+                {
+                  "article_id": 773122,
+                  "page_hash": "6bc672050bdaf0aad8df6b27b221e14be9602e636e7c6b6c5dc4cdb766de29fd",
+                  "revision_id": 107187701,
+                  "title": "荒祭宮"
+                },
+                {
+                  "article_id": 807022,
+                  "page_hash": "ce6b9c3812479edb2b1bc11516d68884551c20ef90d0a30f5627dc2f068132d0",
+                  "revision_id": 105789667,
+                  "title": "風日祈宮"
+                }
+              ],
+              "comparison_facilities": [
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "9b901787-3afc-5210-8bb2-a41d87c9c9cf",
+                  "name": "大山祇神社"
+                },
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "146d6d6e-f21f-5ee2-8d84-c4dd25c1a1b2",
+                  "name": "荒祭宮"
+                },
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "27668989-5a48-5a81-98b1-f01401a57f40",
+                  "name": "風日祈宮"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "prefecture_code": "24",
+              "previous": {
+                "article_id": 2859970,
+                "decision": "new_candidate_overlap_deferred",
+                "file": "data/sources/research_index.json@05f226c",
+                "locator": "nationwide_wikipedia_municipality_followups[0] → prefectures[24] → article_observations",
+                "overlapping_article_ids": [
+                  773122,
+                  807022,
+                  2862661,
+                  2862663
+                ],
+                "page_hash": "4fc4609c678cfc2e836e306019d9c606177800999732597dc1a51c0daf7515ec",
+                "prefecture_code": "24",
+                "revision_id": 111459791,
+                "title": "子安神社 (伊勢市)"
+              },
+              "reason": "内宮の公式案内は木華開耶姫命を祀る子安神社と大山祇神を祀る大山祇神社を別々の所管社として記載する。観光コンベンション機構も同じ町域の子安神社を個別に掲げる。荒祭宮・風日祈宮および同時再審査の内宮所管社から区別できる。",
+              "reference": {
+                "address_raw": "三重県伊勢市宇治館町",
+                "archive_observation": {
+                  "address_field_wikitext": "三重県伊勢市宇治館町",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "4fc4609c678cfc2e836e306019d9c606177800999732597dc1a51c0daf7515ec",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''子安神社'''（こやすじんじゃ）",
+                  "name_field_wikitext": "子安神社",
+                  "revision_at": "2026-10-21T05:43:38Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 2936319431,
+                  "stream_sha256": "230397db7232b6a4032ca87e2a5c9a51a056aa72188272c68cfa1dadccca2f28",
+                  "stream_start": 2936143758
+                },
+                "article_id": 2859970,
+                "checked_at": "2026-11-19T06:38:42.231986+00:00",
+                "corroboration": [
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "大山祇神社・子安神社の見出し・祭神（199–205行）",
+                    "name_raw": "子安神社",
+                    "observation": "子安神社は木華開耶姫命を祀り、大山祇神社とはそれぞれ内宮所管社。",
+                    "publisher": "伊勢神宮",
+                    "source_kind": "shrine_official",
+                    "url": "https://www.isejingu.or.jp/about/naiku/others.html"
+                  },
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "address_raw": "三重県伊勢市宇治館町1",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "施設見出し、所属・祭神、基本情報の住所（69、77–86行）",
+                    "name_raw": "子安神社",
+                    "observation": "子安神社の祭神は木華開耶姫命。奥にある大山祇神社を区別して紹介している。",
+                    "publisher": "伊勢志摩観光コンベンション機構",
+                    "reading_raw": "こやすじんじゃ",
+                    "source_kind": "destination_organization",
+                    "url": "https://www.iseshima-kanko.jp/spot/2204"
+                  }
+                ],
+                "excerpt": "子安神社（こやすじんじゃ） / 三重県伊勢市宇治館町",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "子安神社",
+                "page_hash": "4fc4609c678cfc2e836e306019d9c606177800999732597dc1a51c0daf7515ec",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%AD%90%E5%AE%89%E7%A5%9E%E7%A4%BE+%28%E4%BC%8A%E5%8B%A2%E5%B8%82%29&oldid=111459791",
+                "reading_raw": "こやすじんじゃ",
+                "revision_id": 111459791,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "子安神社 (伊勢市)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%AD%90%E5%AE%89%E7%A5%9E%E7%A4%BE_(%E4%BC%8A%E5%8B%A2%E5%B8%82)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "0e58594f-bd07-5da8-956d-8ac3dc0f883c"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "compared_articles": [
+                {
+                  "article_id": 2859970,
+                  "page_hash": "4fc4609c678cfc2e836e306019d9c606177800999732597dc1a51c0daf7515ec",
+                  "revision_id": 111459791,
+                  "title": "子安神社 (伊勢市)"
+                },
+                {
+                  "article_id": 2862663,
+                  "page_hash": "20b4913fafbde319861209499f3359731855e2772d40958e2f5e3b1e8906becc",
+                  "revision_id": 99219313,
+                  "title": "由貴御倉"
+                },
+                {
+                  "article_id": 773122,
+                  "page_hash": "6bc672050bdaf0aad8df6b27b221e14be9602e636e7c6b6c5dc4cdb766de29fd",
+                  "revision_id": 107187701,
+                  "title": "荒祭宮"
+                },
+                {
+                  "article_id": 807022,
+                  "page_hash": "ce6b9c3812479edb2b1bc11516d68884551c20ef90d0a30f5627dc2f068132d0",
+                  "revision_id": 105789667,
+                  "title": "風日祈宮"
+                }
+              ],
+              "comparison_facilities": [
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "9b901787-3afc-5210-8bb2-a41d87c9c9cf",
+                  "name": "大山祇神社"
+                },
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "146d6d6e-f21f-5ee2-8d84-c4dd25c1a1b2",
+                  "name": "荒祭宮"
+                },
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "27668989-5a48-5a81-98b1-f01401a57f40",
+                  "name": "風日祈宮"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "prefecture_code": "24",
+              "previous": {
+                "article_id": 2862661,
+                "decision": "new_candidate_overlap_deferred",
+                "file": "data/sources/research_index.json@05f226c",
+                "locator": "nationwide_wikipedia_municipality_followups[0] → prefectures[24] → article_observations",
+                "overlapping_article_ids": [
+                  773122,
+                  807022,
+                  2859970,
+                  2862663
+                ],
+                "page_hash": "4649090e980163d0eea5cb7ce25c1482a9731c30fcfb5aa85153d5427abd1d0b",
+                "prefecture_code": "24",
+                "revision_id": 64058165,
+                "title": "滝祭神"
+              },
+              "reason": "伊勢神宮が「瀧祭神」を内宮所管社として掲載し、五十鈴川の御手洗場近くで川の守護を祀る位置と全文かなが固定版の滝祭神と対応する。別宮および同時再審査の子安神社・由貴御倉と区別できる。固定版の表記「滝」と公式案内の表記「瀧」を出典ごとに保持する。",
+              "reference": {
+                "address_raw": "三重県伊勢市宇治館町1 内宮宮域内",
+                "archive_observation": {
+                  "address_field_wikitext": "[[三重県]][[伊勢市]]宇治館町1 内宮宮域内",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "4649090e980163d0eea5cb7ce25c1482a9731c30fcfb5aa85153d5427abd1d0b",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''滝祭神'''（たきまつりのかみ）",
+                  "name_field_wikitext": "滝祭神",
+                  "revision_at": "2017-05-09T13:02:52Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 2938824964,
+                  "stream_sha256": "2a42c1d985398e526fd5cdcd1742644ab8f3891518a87a58c8577c6daca2150e",
+                  "stream_start": 2938614275
+                },
+                "article_id": 2862661,
+                "checked_at": "2026-11-19T06:38:42.331780+00:00",
+                "corroboration": [
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "瀧祭神の見出し・位置・所属（85–93行）",
+                    "name_raw": "瀧祭神",
+                    "observation": "五十鈴川の御手洗場近くに鎮座する所管社。御垣と御門があり石畳に祀る。",
+                    "publisher": "伊勢神宮",
+                    "reading_raw": "たきまつりのかみ",
+                    "source_kind": "shrine_official",
+                    "url": "https://www.isejingu.or.jp/about/naiku/others.html"
+                  },
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "address_raw": "三重県伊勢市宇治館町1",
+                    "address_scope": "皇大神宮（内宮）の案内所在地",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "所在地・皇大神宮（内宮）（77–83行）",
+                    "observation": "内宮全体の案内所在地は三重県伊勢市宇治館町1。",
+                    "publisher": "伊勢神宮",
+                    "source_kind": "shrine_official",
+                    "url": "https://www.isejingu.or.jp/access/index.html"
+                  }
+                ],
+                "excerpt": "滝祭神（たきまつりのかみ） / 三重県伊勢市宇治館町1 内宮宮域内",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "滝祭神",
+                "page_hash": "4649090e980163d0eea5cb7ce25c1482a9731c30fcfb5aa85153d5427abd1d0b",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E6%BB%9D%E7%A5%AD%E7%A5%9E&oldid=64058165",
+                "reading_raw": "たきまつりのかみ",
+                "revision_id": 64058165,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "滝祭神",
+                "url": "https://ja.wikipedia.org/wiki/%E6%BB%9D%E7%A5%AD%E7%A5%9E",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "a6692382-a4bd-5074-a005-f3faa80bf6b4"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "compared_articles": [
+                {
+                  "article_id": 2859970,
+                  "page_hash": "4fc4609c678cfc2e836e306019d9c606177800999732597dc1a51c0daf7515ec",
+                  "revision_id": 111459791,
+                  "title": "子安神社 (伊勢市)"
+                },
+                {
+                  "article_id": 2862661,
+                  "page_hash": "4649090e980163d0eea5cb7ce25c1482a9731c30fcfb5aa85153d5427abd1d0b",
+                  "revision_id": 64058165,
+                  "title": "滝祭神"
+                },
+                {
+                  "article_id": 773122,
+                  "page_hash": "6bc672050bdaf0aad8df6b27b221e14be9602e636e7c6b6c5dc4cdb766de29fd",
+                  "revision_id": 107187701,
+                  "title": "荒祭宮"
+                },
+                {
+                  "article_id": 807022,
+                  "page_hash": "ce6b9c3812479edb2b1bc11516d68884551c20ef90d0a30f5627dc2f068132d0",
+                  "revision_id": 105789667,
+                  "title": "風日祈宮"
+                }
+              ],
+              "comparison_facilities": [
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "9b901787-3afc-5210-8bb2-a41d87c9c9cf",
+                  "name": "大山祇神社"
+                },
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "146d6d6e-f21f-5ee2-8d84-c4dd25c1a1b2",
+                  "name": "荒祭宮"
+                },
+                {
+                  "address": "三重県伊勢市宇治館町",
+                  "facility_id": "27668989-5a48-5a81-98b1-f01401a57f40",
+                  "name": "風日祈宮"
+                }
+              ],
+              "decision": "new_facility_wikipedia_reference",
+              "prefecture_code": "24",
+              "previous": {
+                "article_id": 2862663,
+                "decision": "new_candidate_overlap_deferred",
+                "file": "data/sources/research_index.json@05f226c",
+                "locator": "nationwide_wikipedia_municipality_followups[0] → prefectures[24] → article_observations",
+                "overlapping_article_ids": [
+                  773122,
+                  807022,
+                  2859970,
+                  2862661
+                ],
+                "page_hash": "20b4913fafbde319861209499f3359731855e2772d40958e2f5e3b1e8906becc",
+                "prefecture_code": "24",
+                "revision_id": 99219313,
+                "title": "由貴御倉"
+              },
+              "reason": "伊勢神宮は由貴御倉が五丈殿の奥に鎮座する小さな建物で、同所の大きな御酒殿と別の内宮所管社であると説明する。既存の別宮や同時再審査の子安神社・滝祭神からも区別できる。",
+              "reference": {
+                "address_raw": "三重県伊勢市宇治館町1 内宮宮域内",
+                "archive_observation": {
+                  "address_field_wikitext": "[[三重県]][[伊勢市]]宇治館町1 内宮宮域内",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "20b4913fafbde319861209499f3359731855e2772d40958e2f5e3b1e8906becc",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''由貴御倉'''（ゆきのみくら）",
+                  "name_field_wikitext": "由貴御倉",
+                  "revision_at": "2024-02-12T00:24:35Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 2938824964,
+                  "stream_sha256": "2a42c1d985398e526fd5cdcd1742644ab8f3891518a87a58c8577c6daca2150e",
+                  "stream_start": 2938614275
+                },
+                "article_id": 2862663,
+                "checked_at": "2026-11-19T06:38:42.332036+00:00",
+                "corroboration": [
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "御酒殿・由貴御倉の見出し・位置・所属（109–115行）",
+                    "name_raw": "由貴御倉",
+                    "observation": "由貴御倉は五丈殿の奥に位置する所管社。隣の大きな建物の御酒殿とは別の所管社。",
+                    "publisher": "伊勢神宮",
+                    "reading_raw": "ゆきのみくら",
+                    "source_kind": "shrine_official",
+                    "url": "https://www.isejingu.or.jp/about/naiku/others.html"
+                  },
+                  {
+                    "acquisition_method": "public_document_body_view",
+                    "address_raw": "三重県伊勢市宇治館町1",
+                    "address_scope": "皇大神宮（内宮）の案内所在地",
+                    "checked_at": "2026-11-19T11:57:47.606423+00:00",
+                    "locator": "所在地・皇大神宮（内宮）（77–83行）",
+                    "observation": "内宮全体の案内所在地は三重県伊勢市宇治館町1。",
+                    "publisher": "伊勢神宮",
+                    "source_kind": "shrine_official",
+                    "url": "https://www.isejingu.or.jp/access/index.html"
+                  }
+                ],
+                "excerpt": "由貴御倉（ゆきのみくら） / 三重県伊勢市宇治館町1 内宮宮域内",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "由貴御倉",
+                "page_hash": "20b4913fafbde319861209499f3359731855e2772d40958e2f5e3b1e8906becc",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E7%94%B1%E8%B2%B4%E5%BE%A1%E5%80%89&oldid=99219313",
+                "reading_raw": "ゆきのみくら",
+                "revision_id": 99219313,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "由貴御倉",
+                "url": "https://ja.wikipedia.org/wiki/%E7%94%B1%E8%B2%B4%E5%BE%A1%E5%80%89",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              },
+              "registered_facility_id": "5f0c03eb-bfef-5a13-85f5-4f0ed743c716"
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "corroboration": {
+                "addressed_aza": "落合字与坂",
+                "agency_address_observed": "508-0006 岐阜県中津川市落合字与坂1083番地",
+                "agency_shrine_code": "2220",
+                "body_view_locator": "神社庁検索結果の所在地別一覧行",
+                "checked_at": "2026-11-19T11:58:26.831893+00:00",
+                "detail_opened": false,
+                "detail_url": "https://www.gifu-jinjacho.jp/syosai.php?shrno=2220",
+                "list_url": "https://www.gifu-jinjacho.jp/search.php?chiku=%E5%B2%90%E9%98%9C%E7%9C%8C%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%90%BD%E5%90%88",
+                "listed_detail_url": "https://www.gifu-jinjacho.jp/syosai.php?shrname=%E2%96%A0%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE%E2%96%A0&shrno=2220",
+                "publisher": "岐阜県神社庁"
+              },
+              "decision": "agency_detail_acquisition_deferred",
+              "prefecture_code": "21",
+              "previous_decision": "new_candidate_overlap_deferred",
+              "prior_record": {
+                "json_pointer": "/metadata/source_catalog.json/nationwide_wikipedia_municipality_followups/0/prefectures/21/article_observations/22",
+                "source_file": "data/sources/research_index.json"
+              },
+              "reason": "神社庁側には字名が明記され、Wikipediaの原住所には字名がない。採用する場合は取得済みの神社庁原住所と全文かなを使用し、固定記事は参考照合として保存する。",
+              "reference": {
+                "address_raw": "岐阜県中津川市落合1083",
+                "archive_observation": {
+                  "address_field_wikitext": "[[岐阜県]][[中津川市]]落合1083",
+                  "archive_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream.xml.bz2",
+                  "article_text_sha256": "82c161dd5160b0bfe6861acb9363b0ea2a761f0d2d27dbfc10bad4f8e6980d16",
+                  "index_url": "https://dumps.wikimedia.org/jawiki/20261101/jawiki-20261101-pages-articles-multistream-index.txt.bz2",
+                  "lead_name_reading_wikitext": "'''八幡神社'''（はちまんじんじゃ）",
+                  "name_field_wikitext": "八幡神社",
+                  "revision_at": "2026-09-19T08:30:48Z",
+                  "snapshot_date": "2026-11-01",
+                  "stream_end": 4770477049,
+                  "stream_sha256": "ca42a368f7706256ade6c3ea5845201729a1937e7cb9c0e1a66d2c22278fe8ea",
+                  "stream_start": 4770336536
+                },
+                "article_id": 5178621,
+                "checked_at": "2026-11-19T06:40:18.836406+00:00",
+                "excerpt": "八幡神社（はちまんじんじゃ） / 岐阜県中津川市落合1083",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                "locator": "lead literal full kana / 神社 template 名称 and 所在地",
+                "name_raw": "八幡神社",
+                "page_hash": "82c161dd5160b0bfe6861acb9363b0ea2a761f0d2d27dbfc10bad4f8e6980d16",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE+%28%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%90%BD%E5%90%88%29&oldid=111070652",
+                "reading_raw": "はちまんじんじゃ",
+                "revision_id": 111070652,
+                "shrine_type_template_raw": "神社",
+                "source_kind": "encyclopedia",
+                "title": "八幡神社 (中津川市落合)",
+                "url": "https://ja.wikipedia.org/wiki/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE_(%E4%B8%AD%E6%B4%A5%E5%B7%9D%E5%B8%82%E8%90%BD%E5%90%88)",
+                "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+              }
+            },
+            {
+              "checked_at": "2026-11-19T12:00:50.702357+00:00",
+              "comparison_facility_id": "e797b626-ae60-5dea-a87c-7a5dc0ecbe2b",
+              "corroboration": [
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "checked_at": "2026-11-19T08:35:34.087118+00:00",
+                  "locator": "見出し・紹介本文・基本情報 住所（87・131・138行）",
+                  "original": [
+                    "花園稲荷神社",
+                    "はなぞのいなりじんじゃ",
+                    "東京都台東区上野公園4-17"
+                  ],
+                  "publisher": "台東区・台東区公式観光情報サイト",
+                  "url": "https://t-navi.city.taito.lg.jp/spot/1027"
+                },
+                {
+                  "acquisition_method": "public_document_body_view",
+                  "checked_at": "2026-11-19T12:00:50.702357+00:00",
+                  "locator": "東京都宗教法人名簿（令和7年12月31日現在）p.32・認証番号3045／3048",
+                  "observations": [
+                    {
+                      "certificate_number": "3045",
+                      "name_raw": "五條天神社",
+                      "office_address_raw": "台東区上野公園４－１７"
+                    },
+                    {
+                      "certificate_number": "3048",
+                      "name_raw": "花園稲荷神社",
+                      "office_address_raw": "台東区上野公園４－１７"
+                    }
+                  ],
+                  "publisher": "東京都生活文化局",
+                  "url": "https://www.seikatubunka.metro.tokyo.lg.jp/documents/d/seikatubunka/houjinmeibo_20251231-1-"
+                }
+              ],
+              "decision": "independent_corporation_confirmed",
+              "prefecture_code": "13",
+              "prior_decision": "officially_corroborated_wikipedia_parcel_unbound",
+              "reason": "区公式の鎮座案内と都名簿の事務所欄・別認証番号を確認。採用済みの五條天神社と区別し、花園稲荷神社単独の固定記事では全所在地欄を確認できないため今回の登録は保留。",
+              "reference": {
+                "article_id": 2019546,
+                "page_hash": "65c1e5c7a3933e3eda3c76e70ca0e44203885d0c18b9ef37fc9ce72cbb2e61c5",
+                "permalink": "https://ja.wikipedia.org/w/index.php?title=%E8%8A%B1%E5%9C%92%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE&oldid=101942052",
+                "revision_id": 101942052,
+                "title": "花園稲荷神社",
+                "url": "https://ja.wikipedia.org/wiki/%E8%8A%B1%E5%9C%92%E7%A8%B2%E8%8D%B7%E7%A5%9E%E7%A4%BE"
+              }
+            }
+          ],
+          "new_facility_count": 16,
+          "reading_supplement_count": 0,
+          "scope": "全国再調査で保留した候補から岐阜県と三重県を個別照合し、東京都の別法人を名簿で確認"
         }
       ],
       "schema_version": 1,
