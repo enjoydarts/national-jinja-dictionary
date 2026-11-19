@@ -32,6 +32,7 @@
       2642686,
       2645591,
       2651243,
+      2654045,
       2658108,
       2682976,
       2688269,
@@ -49,7 +50,7 @@
       5115400,
       5140493
     ],
-    "adopted_reference_facilities": 47,
+    "adopted_reference_facilities": 48,
     "adoption_review": {
       "checked_at": "2026-11-18T06:04:20.757071+00:00",
       "counts": {
@@ -784,10 +785,10 @@
       "method": "Reparse previously saved individual article bodies offline; retain original observation dates and hashes.",
       "rechecked_at": "2026-11-18T06:04:20.338178+00:00"
     },
-    "selected_rows": 47,
+    "selected_rows": 48,
     "source_key": "kumamoto_wikipedia",
     "source_publisher": "日本語版Wikipedia",
-    "source_rows_observed": 47,
+    "source_rows_observed": 48,
     "supplemental_article_reviews": [
       {
         "adopted_article_ids": [
@@ -1391,6 +1392,14 @@
         "checked_at": "2026-11-19T06:45:04.853063+00:00",
         "scope": "市区町村名カテゴリ・索引の追加記事と既往同定候補の照合",
         "source_rows_observed": 4
+      },
+      {
+        "adopted_article_ids": [
+          2654045
+        ],
+        "checked_at": "2026-11-19T08:10:14.428330+00:00",
+        "scope": "全国の公開索引・宗教法人名簿と資料本文の再照合",
+        "source_rows_observed": 1
       }
     ],
     "terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja"
@@ -3698,6 +3707,55 @@
       },
       "status": "verified",
       "surface": "藤崎八旛宮"
+    },
+    {
+      "checked_at": "2026-11-18T05:57:06.920542+00:00",
+      "evidence": "若宮神社（わかみやじんじゃ） / 熊本県下益城郡美里町馬場605",
+      "facility_id": "8dcddbbf-81fc-5f34-b17c-29d4abd739ad",
+      "fetched_at": "2026-11-18T05:57:06.920542+00:00",
+      "id": "011b95f3-8aa4-5c0c-8853-95a2d290c119",
+      "judgments": {},
+      "listing_basis": "wikipedia_reference",
+      "listing_url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)",
+      "name_raw": "若宮神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "a3bcbe7fe0d5092ec86f1c773d6eab9060cb4d8b5c128c0572e29f9e16e64a24",
+      "reading": "わかみやじんじゃ",
+      "reading_raw": "わかみやじんじゃ",
+      "reading_source_kind": "encyclopedia",
+      "reading_url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "ad2340f0c5af06a6010a905606851ff20e0e7b09798f20ff81735bcd9b22123e",
+      "source_record": {
+        "checked_at": "2026-11-18T05:57:06.920542+00:00",
+        "evidence": "若宮神社（わかみやじんじゃ） / 熊本県下益城郡美里町馬場605",
+        "facility_id": "8dcddbbf-81fc-5f34-b17c-29d4abd739ad",
+        "fetched_at": "2026-11-18T05:57:06.920542+00:00",
+        "id": "011b95f3-8aa4-5c0c-8853-95a2d290c119",
+        "listing_basis": "wikipedia_reference",
+        "listing_url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)",
+        "name_raw": "若宮神社",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "a3bcbe7fe0d5092ec86f1c773d6eab9060cb4d8b5c128c0572e29f9e16e64a24",
+        "reading": "わかみやじんじゃ",
+        "reading_raw": "わかみやじんじゃ",
+        "reading_source_kind": "encyclopedia",
+        "reading_url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)",
+        "reason": "",
+        "semantic_type": "proper_noun",
+        "source_hash": "ad2340f0c5af06a6010a905606851ff20e0e7b09798f20ff81735bcd9b22123e",
+        "status": "verified",
+        "surface": "若宮神社"
+      },
+      "status": "verified",
+      "surface": "若宮神社"
     }
   ],
   "facilities": [
@@ -8415,6 +8473,103 @@
         "title": "藤崎八旛宮",
         "url": "https://ja.wikipedia.org/wiki/%E8%97%A4%E5%B4%8E%E5%85%AB%E6%97%9B%E5%AE%AE",
         "verification_method": "Literal article lead and a single shrine template in the identified Wikimedia 2026-11-01 archive revision. Wiki link display text retained, no templates expanded. Source hash is the extracted article wikitext."
+      },
+      "status": "verified"
+    },
+    {
+      "address": "熊本県下益城郡美里町馬場605",
+      "checked_at": "2026-11-18T05:57:06.920542+00:00",
+      "fetched_at": "2026-11-18T05:57:06.920542+00:00",
+      "id": "8dcddbbf-81fc-5f34-b17c-29d4abd739ad",
+      "judgments": {},
+      "listed_name": "若宮神社",
+      "listing_basis": "wikipedia_reference",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-18T05:57:06.920542+00:00",
+          "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+          "page_hash": "a3bcbe7fe0d5092ec86f1c773d6eab9060cb4d8b5c128c0572e29f9e16e64a24",
+          "url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)"
+        }
+      ],
+      "listing_url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)",
+      "municipality": "下益城郡美里町",
+      "name_raw": "若宮神社",
+      "native_source_id": "wikipedia:pageid:2654045",
+      "official_site_url": null,
+      "page_hash": "a3bcbe7fe0d5092ec86f1c773d6eab9060cb4d8b5c128c0572e29f9e16e64a24",
+      "prefecture": "熊本県",
+      "prefecture_code": "43",
+      "reason": "",
+      "source_hash": "ad2340f0c5af06a6010a905606851ff20e0e7b09798f20ff81735bcd9b22123e",
+      "source_key": "kumamoto_wikipedia",
+      "source_locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+      "source_publisher": "日本語版Wikipedia",
+      "source_record": {
+        "address": "熊本県下益城郡美里町馬場605",
+        "checked_at": "2026-11-18T05:57:06.920542+00:00",
+        "fetched_at": "2026-11-18T05:57:06.920542+00:00",
+        "id": "8dcddbbf-81fc-5f34-b17c-29d4abd739ad",
+        "listed_name": "若宮神社",
+        "listing_basis": "wikipedia_reference",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-18T05:57:06.920542+00:00",
+            "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+            "page_hash": "a3bcbe7fe0d5092ec86f1c773d6eab9060cb4d8b5c128c0572e29f9e16e64a24",
+            "url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)"
+          }
+        ],
+        "listing_url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)",
+        "municipality": "下益城郡美里町",
+        "name_raw": "若宮神社",
+        "native_source_id": "wikipedia:pageid:2654045",
+        "official_site_url": null,
+        "page_hash": "a3bcbe7fe0d5092ec86f1c773d6eab9060cb4d8b5c128c0572e29f9e16e64a24",
+        "prefecture": "熊本県",
+        "prefecture_code": "43",
+        "reason": "",
+        "source_hash": "ad2340f0c5af06a6010a905606851ff20e0e7b09798f20ff81735bcd9b22123e",
+        "source_key": "kumamoto_wikipedia",
+        "source_locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+        "source_publisher": "日本語版Wikipedia",
+        "source_reference": {
+          "address_raw": "熊本県下益城郡美里町馬場605",
+          "article_id": 2654045,
+          "checked_at": "2026-11-18T05:57:06.920542+00:00",
+          "excerpt": "若宮神社（わかみやじんじゃ） / 熊本県下益城郡美里町馬場605",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+          "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+          "name_raw": "若宮神社",
+          "page_hash": "a3bcbe7fe0d5092ec86f1c773d6eab9060cb4d8b5c128c0572e29f9e16e64a24",
+          "permalink": "https://ja.wikipedia.org/w/index.php?title=%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE+%28%E7%BE%8E%E9%87%8C%E7%94%BA%29&oldid=91997838",
+          "reading_raw": "わかみやじんじゃ",
+          "revision_id": 91997838,
+          "shrine_type_label_raw": "主祭神",
+          "source_kind": "encyclopedia",
+          "title": "若宮神社 (美里町)",
+          "url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)",
+          "verification_method": "Exact shrine infobox name/location; explicit deity-label or shrine-template metadata; literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted."
+        },
+        "status": "verified"
+      },
+      "source_reference": {
+        "address_raw": "熊本県下益城郡美里町馬場605",
+        "article_id": 2654045,
+        "checked_at": "2026-11-18T05:57:06.920542+00:00",
+        "excerpt": "若宮神社（わかみやじんじゃ） / 熊本県下益城郡美里町馬場605",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+        "name_raw": "若宮神社",
+        "page_hash": "a3bcbe7fe0d5092ec86f1c773d6eab9060cb4d8b5c128c0572e29f9e16e64a24",
+        "permalink": "https://ja.wikipedia.org/w/index.php?title=%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE+%28%E7%BE%8E%E9%87%8C%E7%94%BA%29&oldid=91997838",
+        "reading_raw": "わかみやじんじゃ",
+        "revision_id": 91997838,
+        "shrine_type_label_raw": "主祭神",
+        "source_kind": "encyclopedia",
+        "title": "若宮神社 (美里町)",
+        "url": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E7%BE%8E%E9%87%8C%E7%94%BA)",
+        "verification_method": "Exact shrine infobox name/location; explicit deity-label or shrine-template metadata; literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted."
       },
       "status": "verified"
     }

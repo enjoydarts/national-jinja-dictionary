@@ -44342,12 +44342,51 @@
       "surface": "亀甲神社"
     },
     {
-      "checked_at": "2026-11-08T14:27:56.175065+00:00",
+      "checked_at": "2026-11-19T08:06:02.660536+00:00",
       "evidence": "2060 天神社 山梨市大工1563 東山梨支部 詳細>>",
       "facility_id": "1a0e41eb-88d8-58c3-8368-644bdd734fe3",
       "fetched_at": "2026-11-08T14:27:56.175065+00:00",
       "id": "953b9330-b009-5c73-a15d-eaac2872d104",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "てんじんじゃ"
+          },
+          "expected_source_hash": "60c6947098bcc6aab9b75e498605100518eb6693383aad89b8830c75ae8789ce",
+          "facility_id": "1a0e41eb-88d8-58c3-8368-644bdd734fe3",
+          "identity_match": {
+            "agency_address": "山梨市大工1563",
+            "agency_name": "天神社",
+            "effective_address": "山梨市大工1563",
+            "reference_address": "山梨市大工1563",
+            "reference_name": "天神社"
+          },
+          "original": {
+            "address": "山梨市大工1563",
+            "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/2/3",
+            "name_raw": "天神社",
+            "reading_raw": ""
+          },
+          "reason": "山梨県公式観光情報の独立全文かなと、原掲載の正式名・全所在地を同一施設へ照合。",
+          "references": [
+            {
+              "address_raw": "山梨市大工1563",
+              "checked_at": "2026-11-19T08:06:02.660536+00:00",
+              "excerpt": "天神社 / てんじんじゃ / 山梨市大工1563",
+              "locator": "H1 天神社（てんじんじゃ）・基本情報の住所欄",
+              "name_raw": "天神社",
+              "page_hash": "779445519e1c2fa3cd08a13aa866ac29c2e8c3f87dc93ad9134402e3841fdc52",
+              "publisher": "富士の国やまなし観光ネット 山梨県公式観光情報",
+              "reading_raw": "てんじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_prefectural_tourism",
+              "title": "天神社（てんじんじゃ）",
+              "url": "https://www.yamanashi-kankou.jp/kankou/spot/p1_4989.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/2/3",
       "name_raw": "天神社",
       "normalization": [
@@ -44355,11 +44394,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "22d5e3a201b8e4be733aeb30edf94cf568bcd00be62bc8022d95911cdffc612e",
-      "reading": "",
+      "reading": "てんじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/2/3",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.yamanashi-kankou.jp/kankou/spot/p1_4989.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -44443,6 +44482,20 @@
         "prefecture_code": "19",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "てんじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "てんじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "天神社",
         "wikipedia_article_refs": [],
@@ -44473,7 +44526,7 @@
         "status": "pending",
         "surface": "天神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "天神社"
     },
     {
