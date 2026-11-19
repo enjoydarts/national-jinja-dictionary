@@ -8885,12 +8885,49 @@
       "surface": "稲荷神社"
     },
     {
-      "checked_at": "2026-11-08T14:32:54.535339+00:00",
+      "checked_at": "2026-11-19T05:32:49.410133+00:00",
       "evidence": "姥神大神宮 |  | 桧山郡江差町字姥神町99-1",
       "facility_id": "f65b2a53-92e5-572b-8ab5-6d1a1185e82a",
       "fetched_at": "2026-11-08T14:32:54.535339+00:00",
       "id": "f662c115-69bd-5c36-a137-c98172580d63",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "うばがみだいじんぐう"
+          },
+          "expected_source_hash": "80a33f8ed43d498308e4c88398c0af10f2fbdb572fc4a500965f36507e8e05d8",
+          "facility_id": "f65b2a53-92e5-572b-8ab5-6d1a1185e82a",
+          "identity_match": {
+            "agency_address": "桧山郡江差町字姥神町99-1",
+            "agency_name": "姥神大神宮",
+            "effective_address": "桧山郡江差町字姥神町99-1",
+            "reference_address": "〒043-0041　北海道桧山郡江差町字姥神町99-1",
+            "reference_name": "姥神大神宮"
+          },
+          "original": {
+            "address": "桧山郡江差町字姥神町99-1",
+            "listing_url": "https://hokkaidojinjacho.jp/jinja-area/hiyama/",
+            "name_raw": "姥神大神宮",
+            "reading_raw": ""
+          },
+          "reason": "江差町観光情報の名称・全文かなと神社庁の全地番99-1を照合。Wikipedia記事の地番表記99とは区別。",
+          "references": [
+            {
+              "address_raw": "〒043-0041　北海道桧山郡江差町字姥神町99-1",
+              "checked_at": "2026-11-19T05:32:49.410133+00:00",
+              "excerpt": "姥神大神宮 | うばがみだいじんぐう | 〒043-0041　北海道桧山郡江差町字姥神町99-1",
+              "locator": "姥神大神宮の情報、名称・住所",
+              "name_raw": "姥神大神宮",
+              "page_hash": "7b387d4866158f93d040ef93ce2fb5b9851b57fd93acf4683352e50cc959c40a",
+              "reading_raw": "うばがみだいじんぐう",
+              "source_kind": "municipal_tourism",
+              "title": "姥神大神宮（うばがみだいじんぐう）",
+              "url": "https://esashi.town/tourism/info/ubagami/"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://hokkaidojinjacho.jp/jinja-area/hiyama/",
       "name_raw": "姥神大神宮",
       "normalization": [
@@ -8898,11 +8935,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "ced43f4b80a01db5fc2aa8e16865db2ebcd8d48c2549856694e56c21ce146422",
-      "reading": "",
+      "reading": "うばがみだいじんぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://hokkaidojinjacho.jp/jinja-area/hiyama/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://esashi.town/tourism/info/ubagami/",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -9132,6 +9169,20 @@
         "prefecture_code": "01",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "うばがみだいじんぐう",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "うばがみだいじんぐう",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "姥神大神宮",
         "wikipedia_article_refs": [
@@ -9171,7 +9222,7 @@
         "status": "pending",
         "surface": "姥神大神宮"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "姥神大神宮"
     },
     {
