@@ -7,6 +7,7 @@ from urllib.parse import urlsplit
 from njd.normalize import normalize_reading, compare_address_units
 from njd.municipalities import municipal_comparison_address
 from njd.locations import raw_address, _redirect_authority, _reference_in_scope, _hash, _date, _plain
+from njd.corporate_aza import PROOF_KIND as REGISTERED_TOWN_PROOF, registered_town_matches
 
 
 def _url(value):
@@ -149,6 +150,8 @@ def _reference_matches(ref,facility,entry,changes):
         match=re.match(r'((?:高市|余市|[^都道府県市区]+?)郡)(.+)',value)
         return match.groups() if match else ('',value)
     proof=ref.get('address_identity_proof')
+    if isinstance(proof,dict) and proof.get('kind')==REGISTERED_TOWN_PROOF:
+        return registered_town_matches(ref,facility,entry,changes)
     if isinstance(proof,dict) and proof.get('kind')=='nagano_booklet_terminal_digits':
         matched=_nagano_booklet_address(ref,facility,entry)
         if set(changes)!={'reading'} or matched is None:return False
@@ -357,6 +360,10 @@ def correction_problems(correction,facility,entry,source=None):
         if ref.get('source_kind')=='government_corporate_register':
             from njd.corporate import image_review_problems
             problems.extend(image_review_problems(ref))
+        proof=ref.get('address_identity_proof')
+        if (isinstance(proof,dict) and proof.get('kind')==REGISTERED_TOWN_PROOF
+            and not registered_town_matches(ref,facility,entry,changes)):
+            problems.append('registered name and parcel do not match the recorded official town row')
         if discovery_only(ref.get('url')):problems.append('discovery-only directory cannot serve as dictionary evidence')
         if not _url(ref.get('url')) or not ref.get('title') or not ref.get('source_kind'):
             problems.append('reference URL, title or source type missing')
@@ -407,7 +414,11 @@ def apply_corrections(data,document):
             note=correction.get('reason','')
             references=correction.get('references')
             context_excluded=(entry.get('status')=='excluded' and isinstance(references,list)
-                and any(isinstance(r,dict) and any(k in r for k in ('document_address_context','csv_address_context','booklet_address_context','article_address_context')) for r in references))
+                and any(isinstance(r,dict) and (
+                    any(k in r for k in ('document_address_context','csv_address_context','booklet_address_context','article_address_context'))
+                    or (isinstance(r.get('address_identity_proof'),dict)
+                        and r['address_identity_proof'].get('kind')==REGISTERED_TOWN_PROOF))
+                    for r in references))
             # A rejected contextual correction must not erase a durable
             # exclusion: otherwise a second application could approve it.
             if not context_excluded:

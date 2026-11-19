@@ -42912,12 +42912,136 @@
       "surface": "烈々布神社"
     },
     {
-      "checked_at": "2026-11-08T14:33:33.765819+00:00",
+      "checked_at": "2026-11-19T12:15:12.693318+00:00",
       "evidence": "中小屋神社 |  | 石狩郡当別町中小屋4788番地",
       "facility_id": "38b67cbe-b12d-524a-8e38-dc470e37fe70",
       "fetched_at": "2026-11-08T14:33:33.765819+00:00",
       "id": "fc1ac00d-f23c-5340-84d3-d7481020fc07",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "なかごやじんじゃ"
+          },
+          "expected_source_hash": "0d1aa1351e9633ed94908d8ffe1a6f7183ecc413cf2ee62e6ee1e0fdc448ce4d",
+          "facility_id": "38b67cbe-b12d-524a-8e38-dc470e37fe70",
+          "identity_match": {
+            "agency_address": "石狩郡当別町中小屋4788番地",
+            "agency_name": "中小屋神社",
+            "effective_address": "石狩郡当別町中小屋4788番地",
+            "reference_address": "北海道石狩郡当別町字中小屋４７８８番地",
+            "reference_name": "中小屋神社"
+          },
+          "original": {
+            "address": "石狩郡当別町中小屋4788番地",
+            "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
+            "name_raw": "中小屋神社",
+            "reading_raw": ""
+          },
+          "reason": "同名存続法人の公開CSVに明示された全文フリガナを採用。神社庁と法人の住所はいずれも同一町字としてデジタル庁の正式版マスター1行に対応し、枝番を含む全地番が一致した。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "石狩郡当別町中小屋4788番地",
+                "expected_source_hash": "0d1aa1351e9633ed94908d8ffe1a6f7183ecc413cf2ee62e6ee1e0fdc448ce4d",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 200101,
+                "registry_page_hash": "70fe2fdb700c1de7b59888dc27f5e9f2a100dcf4cf8e875cf253412fa603b06b",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "member": "mt_town_all.csv",
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに当プロジェクトが比較し、対応した原欄を抜粋。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "city": "当別町",
+                    "county": "石狩郡",
+                    "csv_row": 19227,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "lg_code": "013030",
+                    "machiaza_id": "0007000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "字中小屋",
+                    "pref": "北海道",
+                    "status_flg": "1",
+                    "ward": ""
+                  },
+                  "rows": 727533,
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                }
+              },
+              "address_raw": "北海道石狩郡当別町字中小屋４７８８番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:15:12.693318+00:00",
+              "corporate_number": "8430005005737",
+              "csv_row": 200101,
+              "excerpt": "中小屋神社 / ナカゴヤジンジャ / 北海道石狩郡当別町字中小屋４７８８番地",
+              "file_id": "28344",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28344; 01_hokkaido_all_20261030.csv; row 200101; corporateNumber=8430005005737",
+              "name_raw": "中小屋神社",
+              "page_hash": "70fe2fdb700c1de7b59888dc27f5e9f2a100dcf4cf8e875cf253412fa603b06b",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ナカゴヤジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "8430005005737"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "303",
+                "cityName": "石狩郡当別町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "8430005005737",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ナカゴヤジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "中小屋神社",
+                "nameImageId": "",
+                "postCode": "0610211",
+                "prefectureCode": "01",
+                "prefectureName": "北海道",
+                "process": "01",
+                "sequenceNumber": "200101",
+                "streetNumber": "字中小屋４７８８番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2021-09-07"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "国税庁の登録名と全文フリガナを原欄で確認。デジタル庁の同一町字行と両資料の全地番を照合。",
+              "zip_member": "01_hokkaido_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
       "name_raw": "中小屋神社",
       "normalization": [
@@ -42925,11 +43049,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "cf525674dc64c7a4cda6f0baa10a8b5da9abe038b153e01513f6e268fcae7cdd",
-      "reading": "",
+      "reading": "なかごやじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -42984,6 +43108,20 @@
         "prefecture_code": "01",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "なかごやじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "なかごやじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "中小屋神社",
         "wikipedia_article_refs": [],
@@ -43014,7 +43152,7 @@
         "status": "pending",
         "surface": "中小屋神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "中小屋神社"
     },
     {
@@ -43945,12 +44083,151 @@
       "surface": "石山神社"
     },
     {
-      "checked_at": "2026-11-08T14:33:36.481420+00:00",
+      "checked_at": "2026-11-19T12:15:12.693318+00:00",
       "evidence": "東裏神社 |  | 石狩郡当別町東裏2554番地",
       "facility_id": "8392b35c-4023-5006-b42b-e18386ef2903",
       "fetched_at": "2026-11-08T14:33:36.481420+00:00",
       "id": "c4a1ca6f-3382-5bec-bdfc-8976c5759172",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ひがしうらじんじゃ"
+          },
+          "expected_source_hash": "a0bf6504cb078b9399c84d64a315640c7d9c2c9c36ef9b33edfdec3671a17f48",
+          "facility_id": "8392b35c-4023-5006-b42b-e18386ef2903",
+          "identity_match": {
+            "agency_address": "石狩郡当別町東裏2554番地",
+            "agency_name": "東裏神社",
+            "effective_address": "石狩郡当別町東裏2554番地",
+            "reference_address": "北海道石狩郡当別町字東裏２５５４番地",
+            "reference_name": "宗教法人東裏神社"
+          },
+          "original": {
+            "address": "石狩郡当別町東裏2554番地",
+            "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/4/",
+            "name_raw": "東裏神社",
+            "reading_raw": ""
+          },
+          "reason": "同名存続法人の公開CSVに明示された全文フリガナを採用。神社庁と法人の住所はいずれも同一町字としてデジタル庁の正式版マスター1行に対応し、枝番を含む全地番が一致した。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "石狩郡当別町東裏2554番地",
+                "expected_source_hash": "a0bf6504cb078b9399c84d64a315640c7d9c2c9c36ef9b33edfdec3671a17f48",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 173902,
+                "registry_page_hash": "70fe2fdb700c1de7b59888dc27f5e9f2a100dcf4cf8e875cf253412fa603b06b",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "member": "mt_town_all.csv",
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに当プロジェクトが比較し、対応した原欄を抜粋。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "city": "当別町",
+                    "county": "石狩郡",
+                    "csv_row": 19228,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "lg_code": "013030",
+                    "machiaza_id": "0008000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "字東裏",
+                    "pref": "北海道",
+                    "status_flg": "1",
+                    "ward": ""
+                  },
+                  "rows": 727533,
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                }
+              },
+              "address_raw": "北海道石狩郡当別町字東裏２５５４番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:15:12.693318+00:00",
+              "corporate_number": "7430005005754",
+              "csv_row": 173902,
+              "excerpt": "宗教法人東裏神社 / ヒガシウラジンジャ / 北海道石狩郡当別町字東裏２５５４番地",
+              "file_id": "28344",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28344; 01_hokkaido_all_20261030.csv; row 173902; corporateNumber=7430005005754",
+              "name_raw": "宗教法人東裏神社",
+              "page_hash": "70fe2fdb700c1de7b59888dc27f5e9f2a100dcf4cf8e875cf253412fa603b06b",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ヒガシウラジンジャ",
+              "registered_name_identity": {
+                "registered_name_raw": "宗教法人東裏神社",
+                "removed_prefix": "宗教法人",
+                "rule": "literal_religious_corporation_prefix",
+                "rule_reference": {
+                  "effective_date": "2018-03-12",
+                  "excerpt": "フリガナは、法人の種類を表す部分",
+                  "fetched_at": "2026-11-10T13:25:31.137436+00:00",
+                  "locator": "p.1 section 2 フリガナの記載について, second bullet",
+                  "page_hash": "edcab3f227f44e66a3b2974fa38d70f11959f4d9cf2979e3606e6a6497232c8f",
+                  "publisher": "内閣官房・法務省・国税庁",
+                  "url": "https://www.houjin-bangou.nta.go.jp/oshirase/h30/images/furigana_kouhyou.pdf"
+                },
+                "shrine_name_raw": "東裏神社"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "7430005005754"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "303",
+                "cityName": "石狩郡当別町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "7430005005754",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ヒガシウラジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "宗教法人東裏神社",
+                "nameImageId": "",
+                "postCode": "0610213",
+                "prefectureCode": "01",
+                "prefectureName": "北海道",
+                "process": "01",
+                "sequenceNumber": "173902",
+                "streetNumber": "字東裏２５５４番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2021-09-07"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "国税庁の登録名と全文フリガナを原欄で確認。デジタル庁の同一町字行と両資料の全地番を照合。",
+              "zip_member": "01_hokkaido_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/4/",
       "name_raw": "東裏神社",
       "normalization": [
@@ -43958,11 +44235,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "4ad14548d67b44f516e990a93f95daee71282a931c2562aad5d3eb2e71f7eb6a",
-      "reading": "",
+      "reading": "ひがしうらじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/4/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -44017,6 +44294,20 @@
         "prefecture_code": "01",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ひがしうらじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ひがしうらじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "東裏神社",
         "wikipedia_article_refs": [],
@@ -44047,7 +44338,7 @@
         "status": "pending",
         "surface": "東裏神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "東裏神社"
     },
     {

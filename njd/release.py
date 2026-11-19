@@ -8,6 +8,7 @@ import zipfile
 from njd.__main__ import build_outputs, _review_lists, _effective
 from njd.exporters import FORMATS
 from njd.corrections import apply_corrections
+from njd.corporate_aza import PROOF_KIND as REGISTERED_TOWN_PROOF
 from njd.locations import apply_locations
 from njd.reviews import apply_reviews
 from njd.nationwide import merge_collections, ensure_public_metadata
@@ -93,6 +94,9 @@ def create_release(data_dir,output_dir,version,source_commit,changelog=None,prev
     refs=[f.get('source_reference') for f in data['facilities']]
     refs += [ref for f in data['facilities'] for ref in f.get('additional_source_references',[])]
     refs += [ref for e in data['entries'] for ref in e.get('correction',{}).get('references',[])]
+    refs += [proof.get('town_master') for ref in refs if isinstance(ref, dict)
+             and isinstance(proof := ref.get('address_identity_proof'), dict)
+             and proof.get('kind') == REGISTERED_TOWN_PROOF]
     for ref in refs:
         if not isinstance(ref,dict) or ref.get('source_kind')!='encyclopedia' or not ref.get('license_url'):continue
         item={key:ref[key] for key in ('url','title','revision_id','permalink','license_url') if key in ref}
