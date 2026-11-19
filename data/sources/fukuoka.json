@@ -8434,12 +8434,54 @@
       "surface": "高宮八幡宮"
     },
     {
-      "checked_at": "2026-11-08T14:28:18.376106+00:00",
+      "checked_at": "2026-11-19T07:35:36.651938+00:00",
       "evidence": "県神社庁の同一掲載枠に正式掲載名「福岡県護国神社」と所在地「福岡市中央区六本松1-1-1」を明記。神社名の全文読みは当該枠に掲載なし。",
       "facility_id": "7d0bdc31-53bf-58ad-a8c8-4bb61ca51125",
       "fetched_at": "2026-11-08T14:28:18.376106+00:00",
       "id": "3b3f7627-7af8-56f9-bbfc-b7d84004a229",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ふくおかけんごこくじんじゃ"
+          },
+          "expected_source_hash": "9258f27ffe60fe6f19990371cb10586db0f70ffd29cf2e1631c62709fee01ffe",
+          "facility_id": "7d0bdc31-53bf-58ad-a8c8-4bb61ca51125",
+          "identity_match": {
+            "agency_address": "福岡市中央区六本松1-1-1",
+            "agency_name": "福岡県護国神社",
+            "effective_address": "福岡市中央区六本松1-1-1",
+            "reference_address": "〒810-0044　福岡県福岡市中央区六本松1-1-1",
+            "reference_name": "福岡県護国神社"
+          },
+          "original": {
+            "address": "福岡市中央区六本松1-1-1",
+            "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
+            "name_raw": "福岡県護国神社",
+            "reading_raw": ""
+          },
+          "reason": "資料本文に明記された全文かなを採用。神社庁の掲載名と原所在地に対応する同一施設の資料。",
+          "references": [
+            {
+              "address_raw": "〒810-0044　福岡県福岡市中央区六本松1-1-1",
+              "checked_at": "2026-11-19T07:35:36.651938+00:00",
+              "excerpt": "福岡県護国神社 / ふくおかけんごこくじんじゃ / 〒810-0044　福岡県福岡市中央区六本松1-1-1",
+              "heading_name_raw": "福岡縣護国神社",
+              "locator": "福岡縣護国神社の見出し下の全文かなと基本情報の住所・連絡先括弧内名称",
+              "name_raw": "福岡県護国神社",
+              "page_hash": "ee0c1e2243ccb65d895d27a02664c4659f95e46d7cf607ed60a35fbfa3aba533",
+              "publisher": "公益社団法人 福岡県観光連盟",
+              "reading_raw": "ふくおかけんごこくじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "official_prefectural_tourism",
+              "terms_page_hash": "1bd37801c389c2a904c349e252769078c6fe75d12fffb266308b57be87aee8bb",
+              "terms_url": "https://www.crossroadfukuoka.jp/organization/site",
+              "title": "福岡縣護国神社 | 観光スポット | 【公式】福岡県の観光/旅行情報サイト「クロスロードふくおか」",
+              "url": "https://www.crossroadfukuoka.jp/spot/12534"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
       "name_raw": "福岡県護国神社",
       "normalization": [
@@ -8447,11 +8489,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
-      "reading": "",
+      "reading": "ふくおかけんごこくじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.crossroadfukuoka.jp/spot/12534",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -8699,6 +8741,20 @@
         "prefecture_code": "40",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ふくおかけんごこくじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ふくおかけんごこくじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "福岡県護国神社",
         "wikipedia_article_refs": [],
@@ -8729,7 +8785,7 @@
         "status": "pending",
         "surface": "福岡県護国神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "福岡県護国神社"
     },
     {
