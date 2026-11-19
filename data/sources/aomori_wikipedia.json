@@ -1,9 +1,10 @@
 {
   "collection": {
     "adopted_article_ids": [
-      3262066
+      3262066,
+      4237503
     ],
-    "adopted_reference_facilities": 1,
+    "adopted_reference_facilities": 2,
     "adoption_review": {
       "checked_at": "2026-11-18T12:31:59.123699+00:00",
       "counts": {
@@ -901,10 +902,25 @@
       "method": "Reparse previously saved individual article bodies offline; retain original observation dates and hashes.",
       "rechecked_at": "2026-11-18T12:31:58.798176+00:00"
     },
-    "selected_rows": 1,
+    "selected_rows": 2,
     "source_key": "aomori_wikipedia",
     "source_publisher": "日本語版Wikipedia",
-    "source_rows_observed": 1,
+    "source_rows_observed": 2,
+    "supplemental_article_reviews": [
+      {
+        "adopted_article_ids": [
+          4237503
+        ],
+        "category": {
+          "checked_at": "2026-11-19T06:04:47.872493+00:00",
+          "page_hash": "4598afd055d59c0148d4523e6966839e435a29ff6a6fa35f19a6a439eabac227",
+          "url": "https://ja.wikipedia.org/wiki/Category:%E5%85%AB%E6%88%B8%E5%B8%82%E3%81%AE%E7%A5%9E%E7%A4%BE"
+        },
+        "checked_at": "2026-11-19T06:12:36.058903+00:00",
+        "scope": "八戸市の神社カテゴリの実リンクを本文まで確認",
+        "source_rows_observed": 1
+      }
+    ],
     "terms_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ja"
   },
   "entries": [
@@ -956,6 +972,55 @@
       },
       "status": "verified",
       "surface": "青森縣護國神社"
+    },
+    {
+      "checked_at": "2026-11-19T06:05:26.729535+00:00",
+      "evidence": "秋葉山神社（あきばやまじんじゃ） / 青森県八戸市白銀町大沢片平6-14",
+      "facility_id": "e4bb709e-d7f9-5efd-8c35-4ce57b0c578a",
+      "fetched_at": "2026-11-19T06:05:26.729535+00:00",
+      "id": "39e2f998-e1a9-5478-839e-a31b5be2d6ed",
+      "judgments": {},
+      "listing_basis": "wikipedia_reference",
+      "listing_url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)",
+      "name_raw": "秋葉山神社",
+      "normalization": [
+        "NFKC reading only",
+        "katakana to hiragana"
+      ],
+      "page_hash": "a27f22a803700e80a8fd8c24a2b42c31d0062caa70818deac71e174760bff3dd",
+      "reading": "あきばやまじんじゃ",
+      "reading_raw": "あきばやまじんじゃ",
+      "reading_source_kind": "encyclopedia",
+      "reading_url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)",
+      "reason": "",
+      "semantic_type": "proper_noun",
+      "source_hash": "00c6fc9135f6d3df3c4d2a68a8ff3295ecb9682ce6992f4245df60df845adb9e",
+      "source_record": {
+        "checked_at": "2026-11-19T06:05:26.729535+00:00",
+        "evidence": "秋葉山神社（あきばやまじんじゃ） / 青森県八戸市白銀町大沢片平6-14",
+        "facility_id": "e4bb709e-d7f9-5efd-8c35-4ce57b0c578a",
+        "fetched_at": "2026-11-19T06:05:26.729535+00:00",
+        "id": "39e2f998-e1a9-5478-839e-a31b5be2d6ed",
+        "listing_basis": "wikipedia_reference",
+        "listing_url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)",
+        "name_raw": "秋葉山神社",
+        "normalization": [
+          "NFKC reading only",
+          "katakana to hiragana"
+        ],
+        "page_hash": "a27f22a803700e80a8fd8c24a2b42c31d0062caa70818deac71e174760bff3dd",
+        "reading": "あきばやまじんじゃ",
+        "reading_raw": "あきばやまじんじゃ",
+        "reading_source_kind": "encyclopedia",
+        "reading_url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)",
+        "reason": "",
+        "semantic_type": "proper_noun",
+        "source_hash": "00c6fc9135f6d3df3c4d2a68a8ff3295ecb9682ce6992f4245df60df845adb9e",
+        "status": "verified",
+        "surface": "秋葉山神社"
+      },
+      "status": "verified",
+      "surface": "秋葉山神社"
     }
   ],
   "facilities": [
@@ -1073,6 +1138,103 @@
         "title": "青森県護国神社",
         "url": "https://ja.wikipedia.org/wiki/%E9%9D%92%E6%A3%AE%E7%9C%8C%E8%AD%B7%E5%9B%BD%E7%A5%9E%E7%A4%BE",
         "verification_method": "Individual article review: the quoted complete name and kana are printed together in the same shrine lead; locality text belongs to the sole shrine infobox. Separate alias/long-form name readings are not treated as ambiguity of this selected full-name span. Preserve heading and address cell; no guessed reading or address."
+      },
+      "status": "verified"
+    },
+    {
+      "address": "青森県八戸市白銀町大沢片平6-14",
+      "checked_at": "2026-11-19T06:05:26.729535+00:00",
+      "fetched_at": "2026-11-19T06:05:26.729535+00:00",
+      "id": "e4bb709e-d7f9-5efd-8c35-4ce57b0c578a",
+      "judgments": {},
+      "listed_name": "秋葉山神社",
+      "listing_basis": "wikipedia_reference",
+      "listing_occurrences": [
+        {
+          "fetched_at": "2026-11-19T06:05:26.729535+00:00",
+          "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+          "page_hash": "a27f22a803700e80a8fd8c24a2b42c31d0062caa70818deac71e174760bff3dd",
+          "url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)"
+        }
+      ],
+      "listing_url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)",
+      "municipality": "八戸市",
+      "name_raw": "秋葉山神社",
+      "native_source_id": "wikipedia:pageid:4237503",
+      "official_site_url": null,
+      "page_hash": "a27f22a803700e80a8fd8c24a2b42c31d0062caa70818deac71e174760bff3dd",
+      "prefecture": "青森県",
+      "prefecture_code": "02",
+      "reason": "",
+      "source_hash": "00c6fc9135f6d3df3c4d2a68a8ff3295ecb9682ce6992f4245df60df845adb9e",
+      "source_key": "aomori_wikipedia",
+      "source_locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+      "source_publisher": "日本語版Wikipedia",
+      "source_record": {
+        "address": "青森県八戸市白銀町大沢片平6-14",
+        "checked_at": "2026-11-19T06:05:26.729535+00:00",
+        "fetched_at": "2026-11-19T06:05:26.729535+00:00",
+        "id": "e4bb709e-d7f9-5efd-8c35-4ce57b0c578a",
+        "listed_name": "秋葉山神社",
+        "listing_basis": "wikipedia_reference",
+        "listing_occurrences": [
+          {
+            "fetched_at": "2026-11-19T06:05:26.729535+00:00",
+            "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+            "page_hash": "a27f22a803700e80a8fd8c24a2b42c31d0062caa70818deac71e174760bff3dd",
+            "url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)"
+          }
+        ],
+        "listing_url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)",
+        "municipality": "八戸市",
+        "name_raw": "秋葉山神社",
+        "native_source_id": "wikipedia:pageid:4237503",
+        "official_site_url": null,
+        "page_hash": "a27f22a803700e80a8fd8c24a2b42c31d0062caa70818deac71e174760bff3dd",
+        "prefecture": "青森県",
+        "prefecture_code": "02",
+        "reason": "",
+        "source_hash": "00c6fc9135f6d3df3c4d2a68a8ff3295ecb9682ce6992f4245df60df845adb9e",
+        "source_key": "aomori_wikipedia",
+        "source_locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+        "source_publisher": "日本語版Wikipedia",
+        "source_reference": {
+          "address_raw": "青森県八戸市白銀町大沢片平6-14",
+          "article_id": 4237503,
+          "checked_at": "2026-11-19T06:05:26.729535+00:00",
+          "excerpt": "秋葉山神社（あきばやまじんじゃ） / 青森県八戸市白銀町大沢片平6-14",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+          "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+          "name_raw": "秋葉山神社",
+          "page_hash": "a27f22a803700e80a8fd8c24a2b42c31d0062caa70818deac71e174760bff3dd",
+          "permalink": "https://ja.wikipedia.org/w/index.php?title=%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE+%28%E5%85%AB%E6%88%B8%E5%B8%82%29&oldid=110772006",
+          "reading_raw": "あきばやまじんじゃ",
+          "revision_id": 110772006,
+          "shrine_type_label_raw": "主祭神",
+          "source_kind": "encyclopedia",
+          "title": "秋葉山神社 (八戸市)",
+          "url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)",
+          "verification_method": "Exact shrine infobox name/location; explicit deity-label or shrine-template metadata; literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted."
+        },
+        "status": "verified"
+      },
+      "source_reference": {
+        "address_raw": "青森県八戸市白銀町大沢片平6-14",
+        "article_id": 4237503,
+        "checked_at": "2026-11-19T06:05:26.729535+00:00",
+        "excerpt": "秋葉山神社（あきばやまじんじゃ） / 青森県八戸市白銀町大沢片平6-14",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+        "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+        "name_raw": "秋葉山神社",
+        "page_hash": "a27f22a803700e80a8fd8c24a2b42c31d0062caa70818deac71e174760bff3dd",
+        "permalink": "https://ja.wikipedia.org/w/index.php?title=%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE+%28%E5%85%AB%E6%88%B8%E5%B8%82%29&oldid=110772006",
+        "reading_raw": "あきばやまじんじゃ",
+        "revision_id": 110772006,
+        "shrine_type_label_raw": "主祭神",
+        "source_kind": "encyclopedia",
+        "title": "秋葉山神社 (八戸市)",
+        "url": "https://ja.wikipedia.org/wiki/%E7%A7%8B%E8%91%89%E5%B1%B1%E7%A5%9E%E7%A4%BE_(%E5%85%AB%E6%88%B8%E5%B8%82)",
+        "verification_method": "Exact shrine infobox name/location; explicit deity-label or shrine-template metadata; literal full-name lead kana; actual article/revision IDs; reference-only identity, agency publication not asserted."
       },
       "status": "verified"
     }
