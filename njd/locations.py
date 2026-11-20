@@ -182,6 +182,9 @@ def location_problems(supplement, facility, source=None):
     if supplement.get('supplement_kind') == 'mie_registered_municipality':
         from njd.mie_municipality import municipality_problems
         return problems + municipality_problems(supplement, facility)
+    if supplement.get('supplement_kind') == 'kumamoto_documented_shrine_site':
+        from njd.kumamoto_location import kumamoto_location_problems
+        return problems + kumamoto_location_problems(supplement, facility)
     if raw_address(facility) != '' or _raw_field(facility, 'municipality') != '':
         problems.append('only an empty acquired address and municipality can be supplemented')
     if supplement.get('facility_id') != facility.get('id'):

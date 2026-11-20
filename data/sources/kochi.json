@@ -47139,12 +47139,121 @@
       "surface": "伊勢神社"
     },
     {
-      "checked_at": "2026-11-09T02:00:56.615972+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/04be51d8-93da-43b0-aae3-8eabba385d15: 名称=嚴島神社; 掲載読み=; 所在地=高知県高知市春野町東諸木1747番地",
       "facility_id": "993e3b40-d3b9-5857-98ec-b05ef309f52d",
       "fetched_at": "2026-11-09T02:00:56.615972+00:00",
       "id": "3e70611a-7397-53b7-b8e3-c996d3f36711",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いつくしまじんじゃ"
+          },
+          "expected_source_hash": "a7c6dc007304bed50fc4d59749b93b6030e2e669ca46c737f667da9f966add16",
+          "facility_id": "993e3b40-d3b9-5857-98ec-b05ef309f52d",
+          "identity_match": {
+            "agency_address": "高知県高知市春野町東諸木1747番地",
+            "agency_name": "嚴島神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県高知市春野町東諸木1747番地",
+            "reference_address": "高知県高知市春野町東諸木１７４７番地",
+            "reference_name": "嚴島神社"
+          },
+          "original": {
+            "address": "高知県高知市春野町東諸木1747番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=11",
+            "name_raw": "嚴島神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高知市春野町東諸木１７４７番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "5490005000792",
+              "csv_row": 14026,
+              "excerpt": "嚴島神社 / イツクシマジンジャ / 高知県高知市春野町東諸木１７４７番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "5490005000792",
+                  "csv_row": 14026,
+                  "fetched_at": "2026-11-20T02:06:14.694461+00:00",
+                  "image_id": "00006905",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "嚴の上部に口が二つあり、島の下部は山。神の左は礻、末尾は示へんの社。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "4e33246aae9f4f8bc5d0fa611dd4e0152a8cfb7c38aee92d62c8c070cf83b9ec",
+                  "printed_text": "嚴島神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県高知市春野町東諸木１７４７番地",
+                  "source_name_raw": "嚴島神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00006905"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 14026; corporateNumber=5490005000792",
+              "name_raw": "嚴島神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "イツクシマジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "5490005000792"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "高知市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "5490005000792",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "イツクシマジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "嚴島神社",
+                "nameImageId": "00006905",
+                "postCode": "7810315",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "14026",
+                "streetNumber": "春野町東諸木１７４７番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-08-29"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=11",
       "name_raw": "嚴島神社",
       "normalization": [
@@ -47152,11 +47261,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "49864aaa770811b60aeaabb63ac28da94d5c1163c4f9e7ac8ed0dcb7747e525a",
-      "reading": "",
+      "reading": "いつくしまじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=11",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -47210,6 +47319,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いつくしまじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いつくしまじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "嚴島神社",
         "wikipedia_article_refs": [],
@@ -47240,7 +47363,7 @@
         "status": "pending",
         "surface": "嚴島神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "嚴島神社"
     },
     {
@@ -48063,12 +48186,121 @@
       "surface": "竈戸神社"
     },
     {
-      "checked_at": "2026-11-09T02:00:56.615972+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/86d134fd-2d7a-4266-94de-d771047926d9: 名称=八坂神社; 掲載読み=; 所在地=高知県高知市春野町東諸木2601番地",
       "facility_id": "6093dbc7-b9b8-5d4a-aa0a-a40f88e98396",
       "fetched_at": "2026-11-09T02:00:56.615972+00:00",
       "id": "717f5217-871c-5e76-b328-a016ca9d9472",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "やさかじんじゃ"
+          },
+          "expected_source_hash": "61c4d912ab5adb5cad549d657b0334bf7e1dbc1d5486a87c755a42c23af22918",
+          "facility_id": "6093dbc7-b9b8-5d4a-aa0a-a40f88e98396",
+          "identity_match": {
+            "agency_address": "高知県高知市春野町東諸木2601番地",
+            "agency_name": "八坂神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県高知市春野町東諸木2601番地",
+            "reference_address": "高知県高知市春野町東諸木２６０１番地",
+            "reference_name": "八坂神社"
+          },
+          "original": {
+            "address": "高知県高知市春野町東諸木2601番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=11",
+            "name_raw": "八坂神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高知市春野町東諸木２６０１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "1490005001282",
+              "csv_row": 2383,
+              "excerpt": "八坂神社 / ヤサカジンジャ / 高知県高知市春野町東諸木２６０１番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "1490005001282",
+                  "csv_row": 2383,
+                  "fetched_at": "2026-11-20T02:06:25.728277+00:00",
+                  "image_id": "00006942",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "八と土へんの坂を確認。神は礻へん、末尾は示へんの社。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "98fe4ba6733a2db3b9c4f28f52305cee2e8233cf08416f0779274a94c14e8672",
+                  "printed_text": "八坂神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県高知市春野町東諸木２６０１番地",
+                  "source_name_raw": "八坂神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00006942"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 2383; corporateNumber=1490005001282",
+              "name_raw": "八坂神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ヤサカジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1490005001282"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "高知市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1490005001282",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ヤサカジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "八坂神社",
+                "nameImageId": "00006942",
+                "postCode": "7810315",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "2383",
+                "streetNumber": "春野町東諸木２６０１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-08-29"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=11",
       "name_raw": "八坂神社",
       "normalization": [
@@ -48076,11 +48308,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "49864aaa770811b60aeaabb63ac28da94d5c1163c4f9e7ac8ed0dcb7747e525a",
-      "reading": "",
+      "reading": "やさかじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=11",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -48165,6 +48397,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "やさかじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "やさかじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "八坂神社",
         "wikipedia_article_refs": [],
@@ -48195,7 +48441,7 @@
         "status": "pending",
         "surface": "八坂神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "八坂神社"
     },
     {
@@ -48449,12 +48695,108 @@
       "surface": "楠神神社子持神社"
     },
     {
-      "checked_at": "2026-11-09T02:00:59.946882+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/829c3e21-cb2b-4904-a81f-e3fbe33fb41c: 名称=國安神社; 掲載読み=; 所在地=高知県高知市春野町内ﾉ谷835番地",
       "facility_id": "e26074dd-7ca5-5ee4-81d4-11c8c42a4f9d",
       "fetched_at": "2026-11-09T02:00:59.946882+00:00",
       "id": "09a4f2f0-a399-53bd-a704-262119cd8991",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "くにやすじんじゃ"
+          },
+          "expected_source_hash": "12e8cb1b2319c8cfdc239dc6478a2bf13f428525554b6bd58572bf40238c8b76",
+          "facility_id": "e26074dd-7ca5-5ee4-81d4-11c8c42a4f9d",
+          "identity_match": {
+            "agency_address": "高知県高知市春野町内ﾉ谷835番地",
+            "agency_name": "國安神社",
+            "reference_address": "高知県高知市春野町内ノ谷８３５番地",
+            "reference_name": "国安神社"
+          },
+          "original": {
+            "address": "高知県高知市春野町内ﾉ谷835番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=12",
+            "name_raw": "國安神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高知市春野町内ノ谷８３５番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "8490005000971",
+              "csv_row": 22779,
+              "excerpt": "国安神社 / クニヤスジンジャ / 高知県高知市春野町内ノ谷８３５番地",
+              "file_id": "28477",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477 39_kochi_all_20261030.csv row 22779",
+              "name_raw": "国安神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "クニヤスジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "國安神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "国（國）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "8490005000971"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "高知市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "8490005000971",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "クニヤスジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "国安神社",
+                "nameImageId": "",
+                "postCode": "7810313",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "22779",
+                "streetNumber": "春野町内ノ谷８３５番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-08-12"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=12",
       "name_raw": "國安神社",
       "normalization": [
@@ -48462,11 +48804,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "234dc4e873149bee8c6ae0a5b294c90e2b0a2d610090b2d77cda8ac007647e19",
-      "reading": "",
+      "reading": "くにやすじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=12",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -48520,6 +48862,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "くにやすじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "くにやすじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "國安神社",
         "wikipedia_article_refs": [],
@@ -48550,7 +48906,7 @@
         "status": "pending",
         "surface": "國安神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "國安神社"
     },
     {
@@ -63652,12 +64008,108 @@
       "surface": "愛宕神社"
     },
     {
-      "checked_at": "2026-11-09T02:01:44.971965+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/a87b9ac5-c023-4ffe-a0a3-9f5a1290706a: 名称=曽我神社; 掲載読み=; 所在地=高知県高岡郡佐川町加茂4305番地",
       "facility_id": "76d74390-43af-5846-8c0c-ffdc8438d29e",
       "fetched_at": "2026-11-09T02:01:44.971965+00:00",
       "id": "7b35e49b-367e-5b96-9063-b4e4473d5201",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "そがじんじゃ"
+          },
+          "expected_source_hash": "c5d9917dd0d8fa1b0b6fd82b50adc7929ea7a335dffd4e07bc147eee82f99307",
+          "facility_id": "76d74390-43af-5846-8c0c-ffdc8438d29e",
+          "identity_match": {
+            "agency_address": "高知県高岡郡佐川町加茂4305番地",
+            "agency_name": "曽我神社",
+            "reference_address": "高知県高岡郡佐川町加茂４３０５番地",
+            "reference_name": "曾我神社"
+          },
+          "original": {
+            "address": "高知県高岡郡佐川町加茂4305番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=24",
+            "name_raw": "曽我神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高岡郡佐川町加茂４３０５番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "6490005003266",
+              "csv_row": 17152,
+              "excerpt": "曾我神社 / ソガジンジャ / 高知県高岡郡佐川町加茂４３０５番地",
+              "file_id": "28477",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477 39_kochi_all_20261030.csv row 17152",
+              "name_raw": "曾我神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ソガジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "曽我神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "曽（曾）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "6490005003266"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "402",
+                "cityName": "高岡郡佐川町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "6490005003266",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ソガジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "曾我神社",
+                "nameImageId": "",
+                "postCode": "7891204",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "17152",
+                "streetNumber": "加茂４３０５番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2024-05-31"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=24",
       "name_raw": "曽我神社",
       "normalization": [
@@ -63665,11 +64117,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "b6f7f9e0bf1621e9ee5a064db17178ba794e694012ae8ea4d2aea3e355de5e44",
-      "reading": "",
+      "reading": "そがじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=24",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -63706,6 +64158,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "そがじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "そがじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "曽我神社",
         "wikipedia_article_refs": [],
@@ -63736,7 +64202,7 @@
         "status": "pending",
         "surface": "曽我神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "曽我神社"
     },
     {
@@ -80041,12 +80507,108 @@
       "surface": "白皇神社"
     },
     {
-      "checked_at": "2026-11-09T02:02:25.385546+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/8a7ccd87-adbd-4bd9-abbf-d2da33ee1370: 名称=厳嶋神社; 掲載読み=; 所在地=高知県高岡郡四万十町東川角乙708番地",
       "facility_id": "05c0bd67-1b10-5b62-af9f-4a3616d21957",
       "fetched_at": "2026-11-09T02:02:25.385546+00:00",
       "id": "21f69646-4276-5edb-865b-36e63eb8b43b",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いつくしまじんじゃ"
+          },
+          "expected_source_hash": "84786dd3849695a33bd8b234ec2b0140df3886a36cbf104f254933ac712730fd",
+          "facility_id": "05c0bd67-1b10-5b62-af9f-4a3616d21957",
+          "identity_match": {
+            "agency_address": "高知県高岡郡四万十町東川角乙708番地",
+            "agency_name": "厳嶋神社",
+            "reference_address": "高知県高岡郡四万十町東川角乙７０８番地",
+            "reference_name": "嚴嶋神社"
+          },
+          "original": {
+            "address": "高知県高岡郡四万十町東川角乙708番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=36",
+            "name_raw": "厳嶋神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高岡郡四万十町東川角乙７０８番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "6490005004009",
+              "csv_row": 17222,
+              "excerpt": "嚴嶋神社 / イツクシマジンジャ / 高知県高岡郡四万十町東川角乙７０８番地",
+              "file_id": "28477",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477 39_kochi_all_20261030.csv row 17222",
+              "name_raw": "嚴嶋神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "イツクシマジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "厳嶋神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "厳（嚴）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "6490005004009"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "412",
+                "cityName": "高岡郡四万十町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "6490005004009",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "イツクシマジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "嚴嶋神社",
+                "nameImageId": "",
+                "postCode": "7860084",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "17222",
+                "streetNumber": "東川角乙７０８番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2019-09-20"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=36",
       "name_raw": "厳嶋神社",
       "normalization": [
@@ -80054,11 +80616,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "d2f6b8b486fe8f6bfb8fd3a05ae865258590c946a7de6d563d5d87704cacd784",
-      "reading": "",
+      "reading": "いつくしまじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=36",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -80112,6 +80674,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いつくしまじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いつくしまじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "厳嶋神社",
         "wikipedia_article_refs": [],
@@ -80142,7 +80718,7 @@
         "status": "pending",
         "surface": "厳嶋神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "厳嶋神社"
     },
     {
@@ -130482,12 +131058,108 @@
       "surface": "来栖神社"
     },
     {
-      "checked_at": "2026-11-09T02:04:22.631362+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/6e00e893-0a39-4f31-85d2-92a2abd84084: 名称=稲気神社; 掲載読み=; 所在地=高知県四万十市荒川1269番地",
       "facility_id": "84e191c9-fe5f-5f85-a61b-660ac33a2f40",
       "fetched_at": "2026-11-09T02:04:22.631362+00:00",
       "id": "c5b65323-a284-5f1a-80b0-cd1c06c33488",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いなげじんじゃ"
+          },
+          "expected_source_hash": "e91735d06cfa86bee73c040817eb165cb1a65220c2fd807d89a0313a125637e3",
+          "facility_id": "84e191c9-fe5f-5f85-a61b-660ac33a2f40",
+          "identity_match": {
+            "agency_address": "高知県四万十市荒川1269番地",
+            "agency_name": "稲気神社",
+            "reference_address": "高知県四万十市荒川１２６９番地",
+            "reference_name": "稲氣神社"
+          },
+          "original": {
+            "address": "高知県四万十市荒川1269番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=70",
+            "name_raw": "稲気神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県四万十市荒川１２６９番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "9490005002273",
+              "csv_row": 25806,
+              "excerpt": "稲氣神社 / イナゲジンジャ / 高知県四万十市荒川１２６９番地",
+              "file_id": "28477",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477 39_kochi_all_20261030.csv row 25806",
+              "name_raw": "稲氣神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "イナゲジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "稲気神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "気（氣）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "9490005002273"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "210",
+                "cityName": "四万十市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "9490005002273",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "イナゲジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "稲氣神社",
+                "nameImageId": "",
+                "postCode": "7870668",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "25806",
+                "streetNumber": "荒川１２６９番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-09-28"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=70",
       "name_raw": "稲気神社",
       "normalization": [
@@ -130495,11 +131167,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "e5bce9f8f0b1b48e3e768d9f149ac0d4dc3940219832f06a14a649bf3ee651ca",
-      "reading": "",
+      "reading": "いなげじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=70",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -130635,6 +131307,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いなげじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いなげじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "稲気神社",
         "wikipedia_article_refs": [],
@@ -130665,7 +131351,7 @@
         "status": "pending",
         "surface": "稲気神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "稲気神社"
     },
     {
@@ -193857,12 +194543,108 @@
       "surface": "尾村神社"
     },
     {
-      "checked_at": "2026-11-09T02:06:35.826022+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/92b7e35c-7c05-4ba1-abf8-2b4e3d2e9c84: 名称=大將軍神社; 掲載読み=; 所在地=高知県安芸郡田野町1221番地",
       "facility_id": "8f1d56ff-b9c0-5fa3-ba7b-532e940857ae",
       "fetched_at": "2026-11-09T02:06:35.826022+00:00",
       "id": "9b5a5bc7-96e0-5099-b8d7-3fd587acee83",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "だいしょうぐんじんじゃ"
+          },
+          "expected_source_hash": "869a5d47decb48e5c195960c5c0dd636dbc4927aacdb41397f853637ce5722c4",
+          "facility_id": "8f1d56ff-b9c0-5fa3-ba7b-532e940857ae",
+          "identity_match": {
+            "agency_address": "高知県安芸郡田野町1221番地",
+            "agency_name": "大將軍神社",
+            "reference_address": "高知県安芸郡田野町１２２１番地",
+            "reference_name": "大将軍神社"
+          },
+          "original": {
+            "address": "高知県安芸郡田野町1221番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=107",
+            "name_raw": "大將軍神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県安芸郡田野町１２２１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "8490005005574",
+              "csv_row": 23214,
+              "excerpt": "大将軍神社 / ダイショウグンジンジャ / 高知県安芸郡田野町１２２１番地",
+              "file_id": "28477",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477 39_kochi_all_20261030.csv row 23214",
+              "name_raw": "大将軍神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ダイショウグンジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "大將軍神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "将（將）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "8490005005574"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "303",
+                "cityName": "安芸郡田野町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "8490005005574",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ダイショウグンジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "大将軍神社",
+                "nameImageId": "",
+                "postCode": "7816410",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "23214",
+                "streetNumber": "１２２１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2023-07-12"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=107",
       "name_raw": "大將軍神社",
       "normalization": [
@@ -193870,11 +194652,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "d3b4ba47d99b75eb8f38f49a6b91b0c4dc506b76454d165bbf3db65353ab6d92",
-      "reading": "",
+      "reading": "だいしょうぐんじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=107",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -193911,6 +194693,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "だいしょうぐんじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "だいしょうぐんじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "大將軍神社",
         "wikipedia_article_refs": [],
@@ -193941,7 +194737,7 @@
         "status": "pending",
         "surface": "大將軍神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "大將軍神社"
     },
     {
@@ -231869,12 +232665,121 @@
       "surface": "立山神社"
     },
     {
-      "checked_at": "2026-11-09T02:10:58.984130+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/4a20c94d-5198-4d61-ad9c-9239e4d3a982: 名称=熊野神社; 掲載読み=; 所在地=高知県香南市野市町新宮字宮屋敷18番地",
       "facility_id": "ec412a5f-406b-5248-9f0f-36b224c10943",
       "fetched_at": "2026-11-09T02:10:58.984130+00:00",
       "id": "af5af17f-a94c-53c4-af98-11d32b99d994",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "くまのじんじゃ"
+          },
+          "expected_source_hash": "2de38dd9ce64cb2d4f9a4fa5b6aca4accec61fe2767cfa71575dd38cbdf88263",
+          "facility_id": "ec412a5f-406b-5248-9f0f-36b224c10943",
+          "identity_match": {
+            "agency_address": "高知県香南市野市町新宮字宮屋敷18番地",
+            "agency_name": "熊野神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県香南市野市町新宮字宮屋敷18番地",
+            "reference_address": "高知県香南市野市町新宮字宮屋敷１８番地",
+            "reference_name": "熊野神社"
+          },
+          "original": {
+            "address": "高知県香南市野市町新宮字宮屋敷18番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=134",
+            "name_raw": "熊野神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県香南市野市町新宮字宮屋敷１８番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "1490005005069",
+              "csv_row": 2746,
+              "excerpt": "熊野神社 / クマノジンジャ / 高知県香南市野市町新宮字宮屋敷１８番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "1490005005069",
+                  "csv_row": 2746,
+                  "fetched_at": "2026-11-20T02:06:45.425338+00:00",
+                  "image_id": "00007148",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "熊の下部の四点と野の里・予を確認。神は礻へん、末尾は示へんの社。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "6a17e6b2c1a07021370e09c3583ec355cf907edfdba78a3a38a2e00ba11cd6c6",
+                  "printed_text": "熊野神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県香南市野市町新宮字宮屋敷１８番地",
+                  "source_name_raw": "熊野神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007148"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 2746; corporateNumber=1490005005069",
+              "name_raw": "熊野神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "クマノジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1490005005069"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "211",
+                "cityName": "香南市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1490005005069",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "クマノジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "熊野神社",
+                "nameImageId": "00007148",
+                "postCode": "7815204",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "2746",
+                "streetNumber": "野市町新宮字宮屋敷１８番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-01-04"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=134",
       "name_raw": "熊野神社",
       "normalization": [
@@ -231882,11 +232787,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "487cef791f31adc4a634fef26a23705ac7c4ecf93e5d1eb01a23d6f13bb1cdae",
-      "reading": "",
+      "reading": "くまのじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=134",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -232003,6 +232908,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "くまのじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "くまのじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "熊野神社",
         "wikipedia_article_refs": [
@@ -232042,7 +232961,7 @@
         "status": "pending",
         "surface": "熊野神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "熊野神社"
     },
     {
@@ -233859,12 +234778,121 @@
       "surface": "築地神社"
     },
     {
-      "checked_at": "2026-11-09T02:11:02.383848+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/98a7fe2b-b919-4a9f-a450-84210b3e9b4d: 名称=星神社; 掲載読み=; 所在地=高知県香南市野市町本村字妙見屋敷629番地",
       "facility_id": "f99eeb86-b56a-503f-8fe9-0a5a9541da29",
       "fetched_at": "2026-11-09T02:11:02.383848+00:00",
       "id": "bc24c582-6297-58f1-bf12-31125efb2c64",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ほしじんじゃ"
+          },
+          "expected_source_hash": "6fad08c195702a42b9e6a112d896ccf6819bf71135179c7946d52fa4bccbd4ef",
+          "facility_id": "f99eeb86-b56a-503f-8fe9-0a5a9541da29",
+          "identity_match": {
+            "agency_address": "高知県香南市野市町本村字妙見屋敷629番地",
+            "agency_name": "星神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県香南市野市町本村字妙見屋敷629番地",
+            "reference_address": "高知県香南市野市町本村字妙見屋敷６２９番地",
+            "reference_name": "星神社"
+          },
+          "original": {
+            "address": "高知県香南市野市町本村字妙見屋敷629番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=135",
+            "name_raw": "星神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県香南市野市町本村字妙見屋敷６２９番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "3490005005042",
+              "csv_row": 8562,
+              "excerpt": "星神社 / ホシジンジャ / 高知県香南市野市町本村字妙見屋敷６２９番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "3490005005042",
+                  "csv_row": 8562,
+                  "fetched_at": "2026-11-20T02:06:56.514135+00:00",
+                  "image_id": "00007146",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "星の日と生を確認。後続二字はともに示へんであり、別ID 00007131の礻へんの神と区別できる。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "93e84da799effa8b517df39ffaeb1cd7d330d8ee8307eeee653c595451e03511",
+                  "printed_text": "星神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県香南市野市町本村字妙見屋敷６２９番地",
+                  "source_name_raw": "星神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007146"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 8562; corporateNumber=3490005005042",
+              "name_raw": "星神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ホシジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "3490005005042"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "211",
+                "cityName": "香南市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "3490005005042",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ホシジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "星神社",
+                "nameImageId": "00007146",
+                "postCode": "7815201",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "8562",
+                "streetNumber": "野市町本村字妙見屋敷６２９番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-01-04"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=135",
       "name_raw": "星神社",
       "normalization": [
@@ -233872,11 +234900,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "d2983432cf74e0f3b777bd695dc7d98f0dd633220240b2425a1d013388182e03",
-      "reading": "",
+      "reading": "ほしじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=135",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -233919,6 +234947,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ほしじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ほしじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "星神社",
         "wikipedia_article_refs": [],
@@ -233949,7 +234991,7 @@
         "status": "pending",
         "surface": "星神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "星神社"
     },
     {
@@ -259079,12 +260121,108 @@
       "surface": "大宮神社"
     },
     {
-      "checked_at": "2026-11-09T02:11:58.700671+00:00",
+      "checked_at": "2026-11-19T12:14:12.433843+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/1a32685e-8b50-46e1-89d0-13d56d4756f7: 名称=國石神社; 掲載読み=; 所在地=高知県高知市土佐山東川字国石2225番地",
       "facility_id": "83575bc2-b291-55b1-a270-e510074326fd",
       "fetched_at": "2026-11-09T02:11:58.700671+00:00",
       "id": "a096962d-d2d1-50ee-987e-80bcb4f255b2",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "くにいしじんじゃ"
+          },
+          "expected_source_hash": "9bcfb7ad783cb33810f04a49dff244433be7c6f8ce18288421c73216743bd369",
+          "facility_id": "83575bc2-b291-55b1-a270-e510074326fd",
+          "identity_match": {
+            "agency_address": "高知県高知市土佐山東川字国石2225番地",
+            "agency_name": "國石神社",
+            "reference_address": "高知県高知市土佐山東川字国石２２２５番地",
+            "reference_name": "国石神社"
+          },
+          "original": {
+            "address": "高知県高知市土佐山東川字国石2225番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=151",
+            "name_raw": "國石神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高知市土佐山東川字国石２２２５番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/sabun/index.html）",
+              "checked_at": "2026-11-19T12:14:12.433843+00:00",
+              "corporate_number": "5490005000974",
+              "csv_row": 1363,
+              "excerpt": "国石神社 / クニイシジンジャ / 高知県高知市土佐山東川字国石２２２５番地",
+              "file_id": "28541",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28541 diff_20261118.csv row 1363",
+              "name_raw": "国石神社",
+              "page_hash": "a54250701c1664a44fcfbad1cd28ce66169df789f01a92c8ff9b19b03ce661a3",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "クニイシジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "國石神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "国（國）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "5490005000974"
+              },
+              "snapshot": "20261118",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "高知市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "5490005000974",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "クニイシジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "国石神社",
+                "nameImageId": "",
+                "postCode": "7813222",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "1363",
+                "streetNumber": "土佐山東川字国石２２２５番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2026-11-18"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 差分データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "diff_20261118.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=151",
       "name_raw": "國石神社",
       "normalization": [
@@ -259092,11 +260230,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "61b74ebecf99b096e82d37333bdca102fddd733e0356dfaca79679680d7fc960",
-      "reading": "",
+      "reading": "くにいしじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=151",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -259150,6 +260288,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "くにいしじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "くにいしじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "國石神社",
         "wikipedia_article_refs": [],
@@ -259180,7 +260332,7 @@
         "status": "pending",
         "surface": "國石神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "國石神社"
     },
     {
@@ -261872,12 +263024,121 @@
       "surface": "八幡宮"
     },
     {
-      "checked_at": "2026-11-09T02:12:06.171404+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/fd3bfb69-cbef-45c5-bfe8-fcdc30ae12ae: 名称=嚴島神社; 掲載読み=; 所在地=高知県南国市下野田字宮ﾉ前314番地",
       "facility_id": "1a903d55-8250-5bae-a10c-2f2fb585fb5d",
       "fetched_at": "2026-11-09T02:12:06.171404+00:00",
       "id": "9f28a598-3398-57b4-921c-077ed0e2cc29",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いつくしまじんじゃ"
+          },
+          "expected_source_hash": "35f9662472f639794931b4d989ddddf824a9a8629b2f11ed2e0bce4df1c5f0b4",
+          "facility_id": "1a903d55-8250-5bae-a10c-2f2fb585fb5d",
+          "identity_match": {
+            "agency_address": "高知県南国市下野田字宮ﾉ前314番地",
+            "agency_name": "嚴島神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県南国市下野田字宮ﾉ前314番地",
+            "reference_address": "高知県南国市下野田字宮ノ前３１４番地",
+            "reference_name": "嚴島神社"
+          },
+          "original": {
+            "address": "高知県南国市下野田字宮ﾉ前314番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=153",
+            "name_raw": "嚴島神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県南国市下野田字宮ノ前３１４番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "6490005004859",
+              "csv_row": 17308,
+              "excerpt": "嚴島神社 / イツクシマジンジャ / 高知県南国市下野田字宮ノ前３１４番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "6490005004859",
+                  "csv_row": 17308,
+                  "fetched_at": "2026-11-20T02:06:43.226049+00:00",
+                  "image_id": "00007107",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "嚴の上部に口が二つあり、島の下部は山。神の左は礻、末尾は示へんの社。別IDの同字形画像との施設同定は所在地に従う。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "4e33246aae9f4f8bc5d0fa611dd4e0152a8cfb7c38aee92d62c8c070cf83b9ec",
+                  "printed_text": "嚴島神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県南国市下野田字宮ノ前３１４番地",
+                  "source_name_raw": "嚴島神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007107"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 17308; corporateNumber=6490005004859",
+              "name_raw": "嚴島神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "イツクシマジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "6490005004859"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "204",
+                "cityName": "南国市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "6490005004859",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "イツクシマジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "嚴島神社",
+                "nameImageId": "00007107",
+                "postCode": "7830031",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "17308",
+                "streetNumber": "下野田字宮ノ前３１４番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2020-06-15"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=153",
       "name_raw": "嚴島神社",
       "normalization": [
@@ -261885,11 +263146,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "33eba878dba832c228fe5b35fa54bafa0839c419fd490fa43d05f877e6b732fc",
-      "reading": "",
+      "reading": "いつくしまじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=153",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -261947,6 +263208,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いつくしまじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いつくしまじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "嚴島神社",
         "wikipedia_article_refs": [],
@@ -261977,16 +263252,125 @@
         "status": "pending",
         "surface": "嚴島神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "嚴島神社"
     },
     {
-      "checked_at": "2026-11-09T02:12:06.171404+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/81557062-26d0-43dd-afb9-a08f80f6404c: 名称=三島神社; 掲載読み=; 所在地=高知県南国市久枝西浜29番地",
       "facility_id": "fba555d2-2c10-5a3f-bbff-87435f02455b",
       "fetched_at": "2026-11-09T02:12:06.171404+00:00",
       "id": "43df93b5-ab75-5f4f-838b-a531de6ae87d",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "みしまじんしゃ"
+          },
+          "expected_source_hash": "48f6a54f4b705410c30bdaff909b4d10caa223126fda9f57e64753f72d31c352",
+          "facility_id": "fba555d2-2c10-5a3f-bbff-87435f02455b",
+          "identity_match": {
+            "agency_address": "高知県南国市久枝西浜29番地",
+            "agency_name": "三島神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県南国市久枝西浜29番地",
+            "reference_address": "高知県南国市久枝西浜２９番地",
+            "reference_name": "三島神社"
+          },
+          "original": {
+            "address": "高知県南国市久枝西浜29番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=153",
+            "name_raw": "三島神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県南国市久枝西浜２９番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "6490005004974",
+              "csv_row": 17321,
+              "excerpt": "三島神社 / ミシマジンシャ / 高知県南国市久枝西浜２９番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "6490005004974",
+                  "csv_row": 17321,
+                  "fetched_at": "2026-11-20T02:06:16.942562+00:00",
+                  "image_id": "00007140",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "三の横三画と島の下部の山を確認。末尾二字はともに示へん。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "f227149ffa962ae485f160c6f1eea99283585420ca4e3d8c584b430788cf7b58",
+                  "printed_text": "三島神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県南国市久枝西浜２９番地",
+                  "source_name_raw": "三島神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007140"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 17321; corporateNumber=6490005004974",
+              "name_raw": "三島神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ミシマジンシャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "6490005004974"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "204",
+                "cityName": "南国市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "6490005004974",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ミシマジンシャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "三島神社",
+                "nameImageId": "00007140",
+                "postCode": "7830096",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "17321",
+                "streetNumber": "久枝西浜２９番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2025-08-08"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=153",
       "name_raw": "三島神社",
       "normalization": [
@@ -261994,11 +263378,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "33eba878dba832c228fe5b35fa54bafa0839c419fd490fa43d05f877e6b732fc",
-      "reading": "",
+      "reading": "みしまじんしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=153",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -262060,6 +263444,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "みしまじんしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "みしまじんしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "三島神社",
         "wikipedia_article_refs": [],
@@ -262090,7 +263488,7 @@
         "status": "pending",
         "surface": "三島神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "三島神社"
     },
     {
@@ -266082,12 +267480,196 @@
       "surface": "楠上神社"
     },
     {
-      "checked_at": "2026-11-09T02:12:13.408076+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/bf8dae01-b4ed-4133-ae76-5fdcbb8cef31: 名称=八幡宮; 掲載読み=; 所在地=高知県南国市十市字溝本5281番地",
       "facility_id": "4ac4bf16-3afd-542a-8900-abe9e2bc3d39",
       "fetched_at": "2026-11-09T02:12:13.408076+00:00",
       "id": "09d36c45-cae4-5bc9-bb8e-3706113d4fe7",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "はちまんぐう"
+          },
+          "expected_source_hash": "2c2e725e36843fc9172d612e9fab5d71217aaca0ad55b1a88bc998682dacc12d",
+          "facility_id": "4ac4bf16-3afd-542a-8900-abe9e2bc3d39",
+          "identity_match": {
+            "reference_address": "高知県南国市十市溝本５２８１番地",
+            "source_address": "高知県南国市十市字溝本5281番地",
+            "source_name": "八幡宮"
+          },
+          "original": {
+            "address": "高知県南国市十市字溝本5281番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=155",
+            "name_raw": "八幡宮",
+            "reading_raw": ""
+          },
+          "reason": "神社庁と国税庁が同じ字で印字した大字・小字と全地番を比較し、公的資料に明記された字の区切りを確認。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "高知県南国市十市字溝本5281番地",
+                "documented_koaza": {
+                  "name_raw": "溝本",
+                  "reference": {
+                    "address_expanded_for_comparison": "南国市十市字溝本",
+                    "checked_at": "2026-11-20T01:46:54+00:00",
+                    "ditto_context": [
+                      {
+                        "address_raw": "南国市稲生字蛸の森",
+                        "map_no": "260",
+                        "role": "first_ditto_explicit_city",
+                        "site_name_raw": "蛸の森城跡"
+                      },
+                      {
+                        "address_raw": "〝 十市字\n三ツ城・里改田字三ツ城他",
+                        "map_no": "261",
+                        "role": "second_ditto_explicit_town",
+                        "site_name_raw": "三ツ城城跡"
+                      },
+                      {
+                        "address_raw": "〝 〝 字上栗山2610",
+                        "map_no": "267",
+                        "role": "example_adjacent_stable_ditto_columns",
+                        "site_name_raw": "上栗山遺跡"
+                      },
+                      {
+                        "address_raw": "〝 〝 字八丁",
+                        "map_no": "268",
+                        "role": "immediately_previous_ditto_columns",
+                        "site_name_raw": "細川土居城跡"
+                      }
+                    ],
+                    "historic_aaza": [
+                      "十市",
+                      "溝本"
+                    ],
+                    "interpretation": "原表の反復符は「〝」で転記。市教委の分類は遺跡所在地に関する歴史資料。現行の原神社庁・国税庁の両原文が印字している字名の境界を照合する資料とし、現行の社地や神社の読み、地番を付与する根拠にはしない。",
+                    "location_row": {
+                      "address_raw": "〝 〝 字溝本",
+                      "map_no": "269",
+                      "site_name_raw": "栗山城跡"
+                    },
+                    "locator": "PDF 51頁（紙面40頁）『所在地』の地図No.269、反復所在地の市名根拠No.260",
+                    "page_hash": "0cef500d2241070f404d11fdd3bdf3f43da148098e6ef6a1d48b87ddb126ee58",
+                    "pdf_page": 51,
+                    "printed_page": 40,
+                    "publisher": "南国市教育委員会",
+                    "robots": {
+                      "condition": "実PDFパスは日本語・英語の検索各パスの取得禁止範囲外。",
+                      "scope_checked": "/files/attach/13/13183/10246_1_...pdf",
+                      "status": 200,
+                      "url": "https://sitereports.nabunken.go.jp/robots.txt"
+                    },
+                    "series_title": "南国市埋蔵文化財調査報告書 第11集",
+                    "snapshot": "1990-03",
+                    "source_kind": "municipal_board_of_education_field_report",
+                    "title": "南国市の遺跡－平成元年度 南国市遺跡詳細分布調査報告書－",
+                    "url": "https://sitereports.nabunken.go.jp/files/attach/13/13183/10246_1_%E5%8D%97%E5%9B%BD%E5%B8%82%E3%81%AE%E9%81%BA%E8%B7%A1.pdf",
+                    "use_condition": "掲載元の公開PDFの名称・所在地欄の最小事実を照合。市教委のPDF・画像の包括再配布許諾は未確認。"
+                  }
+                },
+                "expected_source_hash": "2c2e725e36843fc9172d612e9fab5d71217aaca0ad55b1a88bc998682dacc12d",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 14411,
+                "registry_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "interpretation": "現行町域を独立照合した。表の小字欄は空であり、小字・地番・現地の裏付けとはしない。",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "locator": "Unicode ZIP member mt_town_all.csv; logical row 671353; lg_code=392049; machiaza_id=0050000",
+                  "member": "mt_town_all.csv",
+                  "municipality_examined_rows": 110,
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに対応する大字行を抜粋して照合。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "city": "南国市",
+                    "county": "",
+                    "csv_row": 671353,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "lg_code": "392049",
+                    "machiaza_id": "0050000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "十市",
+                    "pref": "高知県",
+                    "status_flg": "1",
+                    "ward": ""
+                  },
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                }
+              },
+              "address_raw": "高知県南国市十市溝本５２８１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "5490005004926",
+              "csv_row": 14411,
+              "excerpt": "八幡宮 / ハチマングウ / 高知県南国市十市溝本５２８１番地",
+              "file_id": "28477",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 14411; corporateNumber=5490005004926",
+              "name_raw": "八幡宮",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ハチマングウ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "5490005004926"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "204",
+                "cityName": "南国市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "5490005004926",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ハチマングウ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "八幡宮",
+                "nameImageId": "",
+                "postCode": "7830085",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "14411",
+                "streetNumber": "十市溝本５２８１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2021-08-10"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "神社庁と国税庁が同じ字で印字した大字・小字と全地番を比較し、公的資料に明記された字の区切りを確認。",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=155",
       "name_raw": "八幡宮",
       "normalization": [
@@ -266095,11 +267677,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "619a98c375f3e7f828552078c0e07b8123963a65c4fda85b23cf8391227adf59",
-      "reading": "",
+      "reading": "はちまんぐう",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=155",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -266295,6 +267877,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "はちまんぐう",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "はちまんぐう",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "八幡宮",
         "wikipedia_article_refs": [],
@@ -266325,7 +267921,7 @@
         "status": "pending",
         "surface": "八幡宮"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "八幡宮"
     },
     {
@@ -266568,12 +268164,121 @@
       "surface": "海津見神社"
     },
     {
-      "checked_at": "2026-11-09T02:12:13.408076+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/e3dffcb3-3654-4380-9521-be55bc55365c: 名称=若宮神社; 掲載読み=; 所在地=高知県南国市十市字八丁3134",
       "facility_id": "842120c9-0e58-5110-b8b8-b1cd38edde51",
       "fetched_at": "2026-11-09T02:12:13.408076+00:00",
       "id": "087437f7-615f-59f7-8fa6-3e7f0cc9411a",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "わかみやじんじゃ"
+          },
+          "expected_source_hash": "7c9b3253f1d765ede9c9d8307487f1eec032b338f723d3c82f08929d31523f0f",
+          "facility_id": "842120c9-0e58-5110-b8b8-b1cd38edde51",
+          "identity_match": {
+            "agency_address": "高知県南国市十市字八丁3134",
+            "agency_name": "若宮神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県南国市十市字八丁3134",
+            "reference_address": "高知県南国市十市字八丁３１３４番地",
+            "reference_name": "若宮神社"
+          },
+          "original": {
+            "address": "高知県南国市十市字八丁3134",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=155",
+            "name_raw": "若宮神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県南国市十市字八丁３１３４番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "5490005004967",
+              "csv_row": 14416,
+              "excerpt": "若宮神社 / ワカミヤジンジャ / 高知県南国市十市字八丁３１３４番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "5490005004967",
+                  "csv_row": 14416,
+                  "fetched_at": "2026-11-20T02:06:03.809738+00:00",
+                  "image_id": "00007138",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "若の草かんむりと宮の宀・内部の口を確認。末尾二字はともに示へん。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "628fa29a19838faaecc3624f62f6ef71010634c67218b78d0f59587bbf3cf6ff",
+                  "printed_text": "若宮神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県南国市十市字八丁３１３４番地",
+                  "source_name_raw": "若宮神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007138"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 14416; corporateNumber=5490005004967",
+              "name_raw": "若宮神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ワカミヤジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "5490005004967"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "204",
+                "cityName": "南国市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "5490005004967",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ワカミヤジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "若宮神社",
+                "nameImageId": "00007138",
+                "postCode": "7830085",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "14416",
+                "streetNumber": "十市字八丁３１３４番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2019-01-22"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=155",
       "name_raw": "若宮神社",
       "normalization": [
@@ -266581,11 +268286,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "619a98c375f3e7f828552078c0e07b8123963a65c4fda85b23cf8391227adf59",
-      "reading": "",
+      "reading": "わかみやじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=155",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -266655,6 +268360,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "わかみやじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "わかみやじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "若宮神社",
         "wikipedia_article_refs": [],
@@ -266685,7 +268404,7 @@
         "status": "pending",
         "surface": "若宮神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "若宮神社"
     },
     {
@@ -269317,12 +271036,121 @@
       "surface": "山祇神社"
     },
     {
-      "checked_at": "2026-11-09T02:12:20.177013+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/4f03a41a-c0c5-4a31-8a48-1b0beddbe758: 名称=上島神社; 掲載読み=; 所在地=高知県南国市田村字清音寺118番地",
       "facility_id": "e9d8bb0b-a3ea-5d3b-95d8-afa553d96336",
       "fetched_at": "2026-11-09T02:12:20.177013+00:00",
       "id": "99e9899b-b3e2-5e45-9f00-8637791f742b",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "かみしまじんしゃ"
+          },
+          "expected_source_hash": "41865530aad27fff048cea6eab8aa3451c9edd8e63a9cb5da6fe3b3275fff4f8",
+          "facility_id": "e9d8bb0b-a3ea-5d3b-95d8-afa553d96336",
+          "identity_match": {
+            "agency_address": "高知県南国市田村字清音寺118番地",
+            "agency_name": "上島神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県南国市田村字清音寺118番地",
+            "reference_address": "高知県南国市田村字清音寺１１８番地",
+            "reference_name": "上島神社"
+          },
+          "original": {
+            "address": "高知県南国市田村字清音寺118番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
+            "name_raw": "上島神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県南国市田村字清音寺１１８番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "2490005004887",
+              "csv_row": 5653,
+              "excerpt": "上島神社 / カミシマジンシャ / 高知県南国市田村字清音寺１１８番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "2490005004887",
+                  "csv_row": 5653,
+                  "fetched_at": "2026-11-20T02:06:41.040410+00:00",
+                  "image_id": "00007115",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "上の長い下横画と島の下部の山を確認。神は礻へん、末尾は示へんの社。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "0d3cf661601aa5db74234911a0e9eb8e23133f6b8e464099f470b37c14b73448",
+                  "printed_text": "上島神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県南国市田村字清音寺１１８番地",
+                  "source_name_raw": "上島神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007115"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 5653; corporateNumber=2490005004887",
+              "name_raw": "上島神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "カミシマジンシャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "2490005004887"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "204",
+                "cityName": "南国市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "2490005004887",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "カミシマジンシャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "上島神社",
+                "nameImageId": "00007115",
+                "postCode": "7830092",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "5653",
+                "streetNumber": "田村字清音寺１１８番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2025-08-08"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
       "name_raw": "上島神社",
       "normalization": [
@@ -269330,11 +271158,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "0bf79f9d69b444f58dfa116d79667d6cf3b58f963fb47ae6ba9c35256dda0ba1",
-      "reading": "",
+      "reading": "かみしまじんしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -269392,6 +271220,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "かみしまじんしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "かみしまじんしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "上島神社",
         "wikipedia_article_refs": [],
@@ -269422,7 +271264,7 @@
         "status": "pending",
         "surface": "上島神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "上島神社"
     },
     {
@@ -269681,12 +271523,121 @@
       "surface": "新田神社"
     },
     {
-      "checked_at": "2026-11-09T02:12:20.177013+00:00",
+      "checked_at": "2026-11-19T12:14:12.433843+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/3e8bf22b-6aec-4bf5-a2c5-fa09e9669474: 名称=日吉神社; 掲載読み=; 所在地=高知県南国市天行寺585番地",
       "facility_id": "8ca630ed-a4a4-5c3b-81aa-22d90f5507e2",
       "fetched_at": "2026-11-09T02:12:20.177013+00:00",
       "id": "8a42f69d-b14a-5372-b664-5e63f43f60ad",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ひよしじんじゃ"
+          },
+          "expected_source_hash": "e35aaf1e46a48a15322278707b60474f1cbfacec0519d41bdd39a655832091f1",
+          "facility_id": "8ca630ed-a4a4-5c3b-81aa-22d90f5507e2",
+          "identity_match": {
+            "agency_address": "高知県南国市天行寺585番地",
+            "agency_name": "日吉神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県南国市天行寺585番地",
+            "reference_address": "高知県南国市天行寺５８５番地",
+            "reference_name": "日吉神社"
+          },
+          "original": {
+            "address": "高知県南国市天行寺585番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
+            "name_raw": "日吉神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県南国市天行寺５８５番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/sabun/index.html）",
+              "checked_at": "2026-11-19T12:14:12.433843+00:00",
+              "corporate_number": "9490005004930",
+              "csv_row": 2478,
+              "excerpt": "日吉神社 / ヒヨシジンジャ / 高知県南国市天行寺５８５番地",
+              "file_id": "28541",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "a54250701c1664a44fcfbad1cd28ce66169df789f01a92c8ff9b19b03ce661a3",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "9490005004930",
+                  "csv_row": 2478,
+                  "fetched_at": "2026-11-20T02:06:34.475264+00:00",
+                  "image_id": "00007128",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "日と上部が士の吉を確認。末尾二字はともに示へん。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "3723579fcd724da18f75ee8b93abd7750d6c0b8d81a25150f3b3c84201a66f62",
+                  "printed_text": "日吉神社",
+                  "snapshot": "20261118",
+                  "source_address_raw": "高知県南国市天行寺５８５番地",
+                  "source_name_raw": "日吉神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007128"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28541; diff_20261118.csv; row 2478; corporateNumber=9490005004930",
+              "name_raw": "日吉神社",
+              "page_hash": "a54250701c1664a44fcfbad1cd28ce66169df789f01a92c8ff9b19b03ce661a3",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ヒヨシジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "9490005004930"
+              },
+              "snapshot": "20261118",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "204",
+                "cityName": "南国市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "9490005004930",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ヒヨシジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "日吉神社",
+                "nameImageId": "00007128",
+                "postCode": "7830067",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "2478",
+                "streetNumber": "天行寺５８５番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2026-11-18"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 差分データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "diff_20261118.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
       "name_raw": "日吉神社",
       "normalization": [
@@ -269694,11 +271645,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "0bf79f9d69b444f58dfa116d79667d6cf3b58f963fb47ae6ba9c35256dda0ba1",
-      "reading": "",
+      "reading": "ひよしじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -269765,6 +271716,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ひよしじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ひよしじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "日吉神社",
         "wikipedia_article_refs": [],
@@ -269795,7 +271760,7 @@
         "status": "pending",
         "surface": "日吉神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "日吉神社"
     },
     {
@@ -270198,12 +272163,121 @@
       "surface": "仁井田神社"
     },
     {
-      "checked_at": "2026-11-09T02:12:20.177013+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/0b0a4d5e-314d-4da8-a650-21eeb25b0ae8: 名称=王子神社; 掲載読み=; 所在地=高知県南国市田村字王子権現ﾉ東805番地",
       "facility_id": "926bd84f-0c1a-56b6-a987-fdc2372f7455",
       "fetched_at": "2026-11-09T02:12:20.177013+00:00",
       "id": "f58c4258-adeb-52a4-985f-cb6d996cec4f",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おうじじんしゃ"
+          },
+          "expected_source_hash": "dc887a36334bacc10f009757dfd3a3fb08aea564b54aacd9b6333dac767f922b",
+          "facility_id": "926bd84f-0c1a-56b6-a987-fdc2372f7455",
+          "identity_match": {
+            "agency_address": "高知県南国市田村字王子権現ﾉ東805番地",
+            "agency_name": "王子神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県南国市田村字王子権現ﾉ東805番地",
+            "reference_address": "高知県南国市田村字王子権現ノ東８０５番地",
+            "reference_name": "王子神社"
+          },
+          "original": {
+            "address": "高知県南国市田村字王子権現ﾉ東805番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
+            "name_raw": "王子神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県南国市田村字王子権現ノ東８０５番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "1490005004913",
+              "csv_row": 2729,
+              "excerpt": "王子神社 / オウジジンシャ / 高知県南国市田村字王子権現ノ東８０５番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "1490005004913",
+                  "csv_row": 2729,
+                  "fetched_at": "2026-11-20T02:07:07.856518+00:00",
+                  "image_id": "00007124",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "王の三本の横画と子の曲がりを確認。神は礻へん、末尾は示へんの社。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "7bb0c3d87b024667c55171880dae3032502c5c208aca831b98218a13194d0a9a",
+                  "printed_text": "王子神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県南国市田村字王子権現ノ東８０５番地",
+                  "source_name_raw": "王子神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007124"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 2729; corporateNumber=1490005004913",
+              "name_raw": "王子神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "オウジジンシャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1490005004913"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "204",
+                "cityName": "南国市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1490005004913",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "オウジジンシャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "王子神社",
+                "nameImageId": "00007124",
+                "postCode": "7830092",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "2729",
+                "streetNumber": "田村字王子権現ノ東８０５番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2025-08-08"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
       "name_raw": "王子神社",
       "normalization": [
@@ -270211,11 +272285,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "0bf79f9d69b444f58dfa116d79667d6cf3b58f963fb47ae6ba9c35256dda0ba1",
-      "reading": "",
+      "reading": "おうじじんしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=157",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -270309,6 +272383,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おうじじんしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おうじじんしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "王子神社",
         "wikipedia_article_refs": [],
@@ -270339,7 +272427,7 @@
         "status": "pending",
         "surface": "王子神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "王子神社"
     },
     {
@@ -272387,12 +274475,121 @@
       "surface": "恵美須神社"
     },
     {
-      "checked_at": "2026-11-09T02:12:23.466030+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/487ddb02-e324-49e3-bba7-99802bc05b50: 名称=星神社; 掲載読み=; 所在地=高知県南国市明見字妙現385番地",
       "facility_id": "63bea96d-4181-5a4f-ad9e-358901ea91a6",
       "fetched_at": "2026-11-09T02:12:23.466030+00:00",
       "id": "bedb40c0-523f-5c42-9db9-1260cbdb8365",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ほしじんじゃ"
+          },
+          "expected_source_hash": "324eb0a9c15aa2eebcd924cc636a1e1c4b89f0f7b2fcc1bbd8c5b6f1d3080d7c",
+          "facility_id": "63bea96d-4181-5a4f-ad9e-358901ea91a6",
+          "identity_match": {
+            "agency_address": "高知県南国市明見字妙現385番地",
+            "agency_name": "星神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県南国市明見字妙現385番地",
+            "reference_address": "高知県南国市明見字妙現３８５番地",
+            "reference_name": "星神社"
+          },
+          "original": {
+            "address": "高知県南国市明見字妙現385番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=158",
+            "name_raw": "星神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県南国市明見字妙現３８５番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "7490005004940",
+              "csv_row": 20237,
+              "excerpt": "星神社 / ホシジンジャ / 高知県南国市明見字妙現３８５番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "7490005004940",
+                  "csv_row": 20237,
+                  "fetched_at": "2026-11-20T02:06:58.671048+00:00",
+                  "image_id": "00007131",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "星の日と生を確認。中字は礻へんの神、末尾は示へんの社。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "2706b160011478dea8d9e76b6442ebbcb0c24f50e952afc7ab2d1d5632a88396",
+                  "printed_text": "星神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県南国市明見字妙現３８５番地",
+                  "source_name_raw": "星神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00007131"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 20237; corporateNumber=7490005004940",
+              "name_raw": "星神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ホシジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "7490005004940"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "204",
+                "cityName": "南国市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "7490005004940",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ホシジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "星神社",
+                "nameImageId": "00007131",
+                "postCode": "7830007",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "20237",
+                "streetNumber": "明見字妙現３８５番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2020-04-23"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=158",
       "name_raw": "星神社",
       "normalization": [
@@ -272400,11 +274597,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a3ed04213bd0b7d7f59988c6294f8345cab2298dde68663d926ca95b6bae0a08",
-      "reading": "",
+      "reading": "ほしじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=158",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -272468,6 +274665,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ほしじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ほしじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "星神社",
         "wikipedia_article_refs": [],
@@ -272498,7 +274709,7 @@
         "status": "pending",
         "surface": "星神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "星神社"
     },
     {
@@ -299070,12 +301281,121 @@
       "surface": "天一神社"
     },
     {
-      "checked_at": "2026-11-09T02:13:23.453165+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/58c92169-d32b-4726-8792-4f38f35b6410: 名称=住吉神社; 掲載読み=; 所在地=高知県高知市春野町甲殿1417番地2",
       "facility_id": "70dfd71b-a262-59c9-9eb3-ca98abbb6ac2",
       "fetched_at": "2026-11-09T02:13:23.453165+00:00",
       "id": "6415de68-d4c9-526a-b1ad-ef7762c4a1d4",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "すみよしじんじゃ"
+          },
+          "expected_source_hash": "f5fe9de7b296232e2b42a5410fff48f4dadbf2c992aa1ab834c7218ebb3db01d",
+          "facility_id": "70dfd71b-a262-59c9-9eb3-ca98abbb6ac2",
+          "identity_match": {
+            "agency_address": "高知県高知市春野町甲殿1417番地2",
+            "agency_name": "住吉神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県高知市春野町甲殿1417番地2",
+            "reference_address": "高知県高知市春野町甲殿１４１７番地２",
+            "reference_name": "住吉神社"
+          },
+          "original": {
+            "address": "高知県高知市春野町甲殿1417番地2",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
+            "name_raw": "住吉神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高知市春野町甲殿１４１７番地２",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "3490005001108",
+              "csv_row": 8205,
+              "excerpt": "住吉神社 / スミヨシジンジャ / 高知県高知市春野町甲殿１４１７番地２",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "3490005001108",
+                  "csv_row": 8205,
+                  "fetched_at": "2026-11-20T02:06:21.333381+00:00",
+                  "image_id": "00006928",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "住の亻と主、吉の上部の士を確認。末尾二字はともに示へん。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "643de00eae072db6f86ecd895bb3cd14f6591dd9ee079bdcee47a940416c3604",
+                  "printed_text": "住吉神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県高知市春野町甲殿１４１７番地２",
+                  "source_name_raw": "住吉神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00006928"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 8205; corporateNumber=3490005001108",
+              "name_raw": "住吉神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "スミヨシジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "3490005001108"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "高知市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "3490005001108",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "スミヨシジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "住吉神社",
+                "nameImageId": "00006928",
+                "postCode": "7810322",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "8205",
+                "streetNumber": "春野町甲殿１４１７番地２",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-08-29"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
       "name_raw": "住吉神社",
       "normalization": [
@@ -299083,11 +301403,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "87ab7f3bde645e92aec5366ef2b24f8e031ebd8e09151c6fc412988d8331f14b",
-      "reading": "",
+      "reading": "すみよしじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -299143,6 +301463,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "すみよしじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "すみよしじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "住吉神社",
         "wikipedia_article_refs": [],
@@ -299173,7 +301507,7 @@
         "status": "pending",
         "surface": "住吉神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "住吉神社"
     },
     {
@@ -299533,12 +301867,108 @@
       "surface": "梛神社"
     },
     {
-      "checked_at": "2026-11-09T02:13:23.453165+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/68b0e05e-bffc-4484-9e7e-22887cca588c: 名称=惠美須神社; 掲載読み=; 所在地=高知県高知市春野町甲殿1418番地",
       "facility_id": "a3d39980-9fcf-5fc1-b0b9-0f7c59cc1924",
       "fetched_at": "2026-11-09T02:13:23.453165+00:00",
       "id": "a5adf661-8d3b-59f7-9c39-8c9077581766",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "えびすじんじゃ"
+          },
+          "expected_source_hash": "d134742bfb1d28c4124b5b7225551191b5f4e06c0164fd9254757c10eb0add0f",
+          "facility_id": "a3d39980-9fcf-5fc1-b0b9-0f7c59cc1924",
+          "identity_match": {
+            "agency_address": "高知県高知市春野町甲殿1418番地",
+            "agency_name": "惠美須神社",
+            "reference_address": "高知県高知市春野町甲殿１４１８番地",
+            "reference_name": "恵美須神社"
+          },
+          "original": {
+            "address": "高知県高知市春野町甲殿1418番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
+            "name_raw": "惠美須神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高知市春野町甲殿１４１８番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "2490005000820",
+              "csv_row": 5297,
+              "excerpt": "恵美須神社 / エビスジンジャ / 高知県高知市春野町甲殿１４１８番地",
+              "file_id": "28477",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477 39_kochi_all_20261030.csv row 5297",
+              "name_raw": "恵美須神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "エビスジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "惠美須神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "恵（惠）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "2490005000820"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "高知市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "2490005000820",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "エビスジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "恵美須神社",
+                "nameImageId": "",
+                "postCode": "7810322",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "5297",
+                "streetNumber": "春野町甲殿１４１８番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-08-29"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
       "name_raw": "惠美須神社",
       "normalization": [
@@ -299546,11 +301976,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "87ab7f3bde645e92aec5366ef2b24f8e031ebd8e09151c6fc412988d8331f14b",
-      "reading": "",
+      "reading": "えびすじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -299604,6 +302034,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "えびすじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "えびすじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "惠美須神社",
         "wikipedia_article_refs": [],
@@ -299634,7 +302078,7 @@
         "status": "pending",
         "surface": "惠美須神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "惠美須神社"
     },
     {
@@ -299888,12 +302332,121 @@
       "surface": "若一王子宮"
     },
     {
-      "checked_at": "2026-11-09T02:13:23.453165+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/1780fdc4-718a-4199-9bc7-e960da20a126: 名称=岩屋神社; 掲載読み=; 所在地=高知県高知市春野町甲殿1415番地",
       "facility_id": "48dae535-63d5-5bb4-a689-c637e2935609",
       "fetched_at": "2026-11-09T02:13:23.453165+00:00",
       "id": "b2f11aef-d5e6-5399-a4a5-d549bcfd96d5",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いわやじんじゃ"
+          },
+          "expected_source_hash": "e858f6abf9bdc255711a8cefcf9b6813fea9633699caac3d8e2ec0fc7f0da488",
+          "facility_id": "48dae535-63d5-5bb4-a689-c637e2935609",
+          "identity_match": {
+            "agency_address": "高知県高知市春野町甲殿1415番地",
+            "agency_name": "岩屋神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県高知市春野町甲殿1415番地",
+            "reference_address": "高知県高知市春野町甲殿１４１５番地",
+            "reference_name": "岩屋神社"
+          },
+          "original": {
+            "address": "高知県高知市春野町甲殿1415番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
+            "name_raw": "岩屋神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高知市春野町甲殿１４１５番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "9490005000806",
+              "csv_row": 25691,
+              "excerpt": "岩屋神社 / イワヤジンジャ / 高知県高知市春野町甲殿１４１５番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "9490005000806",
+                  "csv_row": 25691,
+                  "fetched_at": "2026-11-20T02:06:52.072231+00:00",
+                  "image_id": "00006907",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "岩の山と石、屋の尸と至を確認。神は礻へん、末尾は示へんの社。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "e334df5703faed0fc4d113a3e34934ebc0ffc49a024e6156556f7cf4319e3abe",
+                  "printed_text": "岩屋神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県高知市春野町甲殿１４１５番地",
+                  "source_name_raw": "岩屋神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00006907"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 25691; corporateNumber=9490005000806",
+              "name_raw": "岩屋神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "イワヤジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "9490005000806"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "高知市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "9490005000806",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "イワヤジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "岩屋神社",
+                "nameImageId": "00006907",
+                "postCode": "7810322",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "25691",
+                "streetNumber": "春野町甲殿１４１５番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-08-29"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
       "name_raw": "岩屋神社",
       "normalization": [
@@ -299901,11 +302454,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "87ab7f3bde645e92aec5366ef2b24f8e031ebd8e09151c6fc412988d8331f14b",
-      "reading": "",
+      "reading": "いわやじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=175",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -299959,6 +302512,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いわやじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いわやじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "岩屋神社",
         "wikipedia_article_refs": [],
@@ -299989,7 +302556,7 @@
         "status": "pending",
         "surface": "岩屋神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "岩屋神社"
     },
     {
@@ -300118,12 +302685,121 @@
       "surface": "八幡宮"
     },
     {
-      "checked_at": "2026-11-09T02:13:26.570513+00:00",
+      "checked_at": "2026-11-19T12:14:25.987184+00:00",
       "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/1952ca3d-2e33-4287-87ce-fcabe1c5e36d: 名称=春日神社; 掲載読み=; 所在地=高知県高知市春野町秋山2800番地",
       "facility_id": "d635bfa0-913a-5234-a836-ab9585e8a1bd",
       "fetched_at": "2026-11-09T02:13:26.570513+00:00",
       "id": "8cee3469-0343-50d3-9820-32ac8f806bca",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "かすがじんじゃ"
+          },
+          "expected_source_hash": "63b79dd856f1c04ab792846385d343859aca7c9fa8ed075d25e1e32e3cb7400b",
+          "facility_id": "d635bfa0-913a-5234-a836-ab9585e8a1bd",
+          "identity_match": {
+            "agency_address": "高知県高知市春野町秋山2800番地",
+            "agency_name": "春日神社",
+            "comparison_rule": "Unicode漢字互換文字の対応と数値地番を比較。",
+            "effective_address": "高知県高知市春野町秋山2800番地",
+            "reference_address": "高知県高知市春野町秋山２８００番地",
+            "reference_name": "春日神社"
+          },
+          "original": {
+            "address": "高知県高知市春野町秋山2800番地",
+            "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=176",
+            "name_raw": "春日神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の公開原字画像とCSVの社名を目視で照合。神社庁の社名との互換漢字の対応は比較に限り、全地番が一致する存続法人の明示フリガナを採用。両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "高知県高知市春野町秋山２８００番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:25.987184+00:00",
+              "corporate_number": "6490005000940",
+              "csv_row": 16940,
+              "excerpt": "春日神社 / カスガジンジャ / 高知県高知市春野町秋山２８００番地",
+              "file_id": "28477",
+              "image_reviews": {
+                "nameImageId": {
+                  "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                  "corporate_number": "6490005000940",
+                  "csv_row": 16940,
+                  "fetched_at": "2026-11-20T02:06:38.841226+00:00",
+                  "image_id": "00006916",
+                  "method": "visual_inspection_of_official_image",
+                  "note": "春の下部と二字目の日をそれぞれ確認。神は礻へん、末尾は示へんの社。",
+                  "official_image_terms": {
+                    "checked_at": "2026-11-20T02:00:52.521563+00:00",
+                    "page_hash": "7c7a170d93a21fa1d632b85d0e3913e3ea147a2c203229cd43a8a75c5f8d8f2d",
+                    "url": "https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051"
+                  },
+                  "page_hash": "8f616275a250ca6628448b311be9a679923eb131f8e2fee82fc7ffc6be09d3bb",
+                  "printed_text": "春日神社",
+                  "snapshot": "20261030",
+                  "source_address_raw": "高知県高知市春野町秋山２８００番地",
+                  "source_name_raw": "春日神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00006916"
+                }
+              },
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 16940; corporateNumber=6490005000940",
+              "name_raw": "春日神社",
+              "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "カスガジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:11:52.788342+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "6490005000940"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "高知市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "6490005000940",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "カスガジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "春日神社",
+                "nameImageId": "00006916",
+                "postCode": "7810321",
+                "prefectureCode": "39",
+                "prefectureName": "高知県",
+                "process": "01",
+                "sequenceNumber": "16940",
+                "streetNumber": "春野町秋山２８００番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-08-29"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原字画像・神社庁と国税庁の住所と社名・公表フリガナの個別照合",
+              "zip_member": "39_kochi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=176",
       "name_raw": "春日神社",
       "normalization": [
@@ -300131,11 +302807,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "6008f39f99ceaa78fcdf4a1b0c8c44c4a141b98a438f850f9ecb9e40719c6f81",
-      "reading": "",
+      "reading": "かすがじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=176",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -300193,6 +302869,20 @@
         "prefecture_code": "39",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "かすがじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "かすがじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "春日神社",
         "wikipedia_article_refs": [],
@@ -300223,7 +302913,7 @@
         "status": "pending",
         "surface": "春日神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "春日神社"
     },
     {

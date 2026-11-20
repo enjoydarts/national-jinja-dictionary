@@ -23387,12 +23387,108 @@
       "surface": "由岐神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:06.615363+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「靜原社」、郵便番号「601-1121」、所在地「京都市左京区静市静原町1351」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "3e09e13c-88ff-5d78-a3c5-d04ae508d951",
       "fetched_at": "2026-11-09T08:51:06.615363+00:00",
       "id": "9a9759c2-8814-5a1c-9e6a-af691de9ae20",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "しずはらしゃ"
+          },
+          "expected_source_hash": "a2c237e94aece60d06d6fc0340c6eb5fccfe0e19886ade385e82facc931e3b26",
+          "facility_id": "3e09e13c-88ff-5d78-a3c5-d04ae508d951",
+          "identity_match": {
+            "agency_address": "京都市左京区静市静原町1351",
+            "agency_name": "靜原社",
+            "reference_address": "京都府京都市左京区静市静原町１３５１番地",
+            "reference_name": "静原社"
+          },
+          "original": {
+            "address": "京都市左京区静市静原町1351",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/04.html",
+            "name_raw": "靜原社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "京都府京都市左京区静市静原町１３５１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "1130005001574",
+              "csv_row": 11232,
+              "excerpt": "静原社 / シズハラシャ / 京都府京都市左京区静市静原町１３５１番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435 26_kyoto_all_20261030.csv row 11232",
+              "name_raw": "静原社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "シズハラシャ",
+              "registered_name_variant": {
+                "bound_name_raw": "靜原社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "静（靜）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1130005001574"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "103",
+                "cityName": "京都市左京区",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1130005001574",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "シズハラシャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "静原社",
+                "nameImageId": "",
+                "postCode": "6011121",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "11232",
+                "streetNumber": "静市静原町１３５１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2022-07-20"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/04.html",
       "name_raw": "靜原社",
       "normalization": [
@@ -23400,11 +23496,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "36615418e75a87537dc09e3622f56c79cbf4dad76618cce1c50948450f59ea04",
-      "reading": "",
+      "reading": "しずはらしゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/04.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -23445,6 +23541,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "しずはらしゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "しずはらしゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "靜原社",
         "wikipedia_article_refs": [],
@@ -23475,7 +23585,7 @@
         "status": "pending",
         "surface": "靜原社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "靜原社"
     },
     {
@@ -30131,12 +30241,108 @@
       "surface": "産土神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:12.742609+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「御靈神社」、郵便番号「615-8228」、所在地「京都市西京区上桂西居町48」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "16654d98-ceba-5683-9ffe-5bdde1bcbe9c",
       "fetched_at": "2026-11-09T08:51:12.742609+00:00",
       "id": "fd22f017-e9de-5445-bb2e-86c17a4e23a4",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ごりょうじんじゃ"
+          },
+          "expected_source_hash": "fd8e996164161b9960351b7d938c285c3e866e30ed88770ec797d1f3dec3ad84",
+          "facility_id": "16654d98-ceba-5683-9ffe-5bdde1bcbe9c",
+          "identity_match": {
+            "agency_address": "京都市西京区上桂西居町48",
+            "agency_name": "御靈神社",
+            "reference_address": "京都府京都市西京区上桂西居町４８番地",
+            "reference_name": "御霊神社"
+          },
+          "original": {
+            "address": "京都市西京区上桂西居町48",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/07.html",
+            "name_raw": "御靈神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "京都府京都市西京区上桂西居町４８番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "2130005001549",
+              "csv_row": 24086,
+              "excerpt": "御霊神社 / ゴリョウジンジャ / 京都府京都市西京区上桂西居町４８番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435 26_kyoto_all_20261030.csv row 24086",
+              "name_raw": "御霊神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ゴリョウジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "御靈神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "霊（靈）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "2130005001549"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "111",
+                "cityName": "京都市西京区",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "2130005001549",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ゴリョウジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "御霊神社",
+                "nameImageId": "",
+                "postCode": "6158228",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "24086",
+                "streetNumber": "上桂西居町４８番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2020-09-25"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/07.html",
       "name_raw": "御靈神社",
       "normalization": [
@@ -30144,11 +30350,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "c1a485b5a2c465e484c3963ec301558aa1cf48cf787c775dda6df46f13d4d747",
-      "reading": "",
+      "reading": "ごりょうじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/07.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -30189,6 +30395,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ごりょうじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ごりょうじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "御靈神社",
         "wikipedia_article_refs": [],
@@ -30219,7 +30439,7 @@
         "status": "pending",
         "surface": "御靈神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "御靈神社"
     },
     {
@@ -38243,12 +38463,53 @@
       "surface": "武大神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:22.982199+00:00",
+      "checked_at": "2026-11-20T01:49:05.472310+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「室尾谷神社」、郵便番号「623-1123」、所在地「綾部市五津合町寺内109」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "edd33d4c-91d3-5a3e-a81e-8eeb9b392a92",
       "fetched_at": "2026-11-09T08:51:22.982199+00:00",
       "id": "0ba35e13-5e16-51d9-9f32-c0902e5c0f59",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "むろおたにじんじゃ"
+          },
+          "expected_source_hash": "900290e815a5d4a7dedfd20936eee8f64ac0d38d47df84c31314ef68984f086b",
+          "facility_id": "edd33d4c-91d3-5a3e-a81e-8eeb9b392a92",
+          "identity_match": {
+            "agency_address": "綾部市五津合町寺内109",
+            "published_address": "京都府綾部市五津合町寺内１０９"
+          },
+          "original": {
+            "address": "綾部市五津合町寺内109",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
+            "name_raw": "室尾谷神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府綾部市五津合町寺内１０９",
+              "checked_at": "2026-11-20T01:49:05.472310+00:00",
+              "excerpt": "室尾谷神社（むろおたにじんじゃ） / 京都府綾部市五津合町寺内１０９",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "室尾谷神社",
+              "page_hash": "ac849f31137fb29be67a6c5b48a782bfd3d5b63241c9c0681fe769f3f1918fc8",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "むろおたにじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "室尾谷神社 室尾谷神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/murootanijinja.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
       "name_raw": "室尾谷神社",
       "normalization": [
@@ -38256,11 +38517,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "dccb7e249f77ae9ff4320190bfb774671a1623602e76101a96745534afbdb9ff",
-      "reading": "",
+      "reading": "むろおたにじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/murootanijinja.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -38293,6 +38554,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "むろおたにじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "むろおたにじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "室尾谷神社",
         "wikipedia_article_refs": [],
@@ -38323,7 +38598,7 @@
         "status": "pending",
         "surface": "室尾谷神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "室尾谷神社"
     },
     {
@@ -44308,12 +44583,53 @@
       "surface": "壹鞍神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:22.982199+00:00",
+      "checked_at": "2026-11-20T01:49:14.663184+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「河牟奈備神社」、郵便番号「629-1242」、所在地「綾部市十倉名畑町古気良10」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "8efc6711-3265-5a10-a4e1-65d14335de08",
       "fetched_at": "2026-11-09T08:51:22.982199+00:00",
       "id": "26cdadbf-4776-5dd1-a03f-b854e23bb5d8",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "かむなびじんじゃ"
+          },
+          "expected_source_hash": "3a670949987b3080cb26cb1c822e4564a61bdc120d566a5984e332d2d02d381c",
+          "facility_id": "8efc6711-3265-5a10-a4e1-65d14335de08",
+          "identity_match": {
+            "agency_address": "綾部市十倉名畑町古気良10",
+            "published_address": "京都府綾部市十倉名畑町古気良１０"
+          },
+          "original": {
+            "address": "綾部市十倉名畑町古気良10",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
+            "name_raw": "河牟奈備神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府綾部市十倉名畑町古気良１０",
+              "checked_at": "2026-11-20T01:49:14.663184+00:00",
+              "excerpt": "河牟奈備神社（かむなびじんじゃ） / 京都府綾部市十倉名畑町古気良１０",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "河牟奈備神社",
+              "page_hash": "0123fc73b7186e2839ded40f8ff08ae83df2c1958ea529f9cc1a65facf0d0397",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "かむなびじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "河牟奈備神社 河牟奈備神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/kamnabijinja.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
       "name_raw": "河牟奈備神社",
       "normalization": [
@@ -44321,11 +44637,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "dccb7e249f77ae9ff4320190bfb774671a1623602e76101a96745534afbdb9ff",
-      "reading": "",
+      "reading": "かむなびじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/kamnabijinja.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -44411,6 +44727,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "かむなびじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "かむなびじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "河牟奈備神社",
         "wikipedia_article_refs": [],
@@ -44441,7 +44771,7 @@
         "status": "pending",
         "surface": "河牟奈備神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "河牟奈備神社"
     },
     {
@@ -46832,12 +47162,53 @@
       "surface": "坂尾呂神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:22.982199+00:00",
+      "checked_at": "2026-11-20T01:49:23.868555+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「葛禮本神社」、郵便番号「623-1121」、所在地「綾部市睦合町中風呂1」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "94c1889e-05c7-5760-8ba6-9372cd181c80",
       "fetched_at": "2026-11-09T08:51:22.982199+00:00",
       "id": "8bc23937-858c-5540-8227-9c178cb6165f",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "くずれもとじんじゃ"
+          },
+          "expected_source_hash": "23f93c6caaadc304ad943183002eeefa6a7c22df3513654fb29fe19eb46367aa",
+          "facility_id": "94c1889e-05c7-5760-8ba6-9372cd181c80",
+          "identity_match": {
+            "agency_address": "綾部市睦合町中風呂1",
+            "published_address": "京都府綾部市睦合町中風呂１"
+          },
+          "original": {
+            "address": "綾部市睦合町中風呂1",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
+            "name_raw": "葛禮本神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府綾部市睦合町中風呂１",
+              "checked_at": "2026-11-20T01:49:23.868555+00:00",
+              "excerpt": "葛禮本神社（くずれもとじんじゃ） / 京都府綾部市睦合町中風呂１",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "葛禮本神社",
+              "page_hash": "2fb0d0d3951fb365a15b46d44c3be688c5c90a8f3b7e507995eb6d75f3921ec6",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "くずれもとじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "葛禮本神社 葛禮本神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/kuzuremoto.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
       "name_raw": "葛禮本神社",
       "normalization": [
@@ -46845,11 +47216,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "dccb7e249f77ae9ff4320190bfb774671a1623602e76101a96745534afbdb9ff",
-      "reading": "",
+      "reading": "くずれもとじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/kuzuremoto.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -46882,6 +47253,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "くずれもとじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "くずれもとじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "葛禮本神社",
         "wikipedia_article_refs": [],
@@ -46912,7 +47297,7 @@
         "status": "pending",
         "surface": "葛禮本神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "葛禮本神社"
     },
     {
@@ -66412,12 +66797,108 @@
       "surface": "住吉神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:29.237272+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「岡田國神社」、郵便番号「619-0214」、所在地「木津川市木津大谷1」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "db297252-098b-5566-bdaa-11cdaa3d2e2e",
       "fetched_at": "2026-11-09T08:51:29.237272+00:00",
       "id": "263f4cea-5b3f-51e7-a82e-67f50e9acd84",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おかだくにじんじゃ"
+          },
+          "expected_source_hash": "e8fa1eaeb822cef9856c71a0f34f36b278ea6b5f72b525ba8c85bcacf547e5aa",
+          "facility_id": "db297252-098b-5566-bdaa-11cdaa3d2e2e",
+          "identity_match": {
+            "agency_address": "木津川市木津大谷1",
+            "agency_name": "岡田國神社",
+            "reference_address": "京都府木津川市木津大谷１番地",
+            "reference_name": "岡田国神社"
+          },
+          "original": {
+            "address": "木津川市木津大谷1",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
+            "name_raw": "岡田國神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "京都府木津川市木津大谷１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "5130005008418",
+              "csv_row": 63355,
+              "excerpt": "岡田国神社 / オカダクニジンジャ / 京都府木津川市木津大谷１番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435 26_kyoto_all_20261030.csv row 63355",
+              "name_raw": "岡田国神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "オカダクニジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "岡田國神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "国（國）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "5130005008418"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "214",
+                "cityName": "木津川市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "5130005008418",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "オカダクニジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "岡田国神社",
+                "nameImageId": "",
+                "postCode": "6190214",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "63355",
+                "streetNumber": "木津大谷１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2023-11-28"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
       "name_raw": "岡田國神社",
       "normalization": [
@@ -66425,11 +66906,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "d347049fc751993ff86daffa48ea9b666731f3e385465994dda37e77afc28587",
-      "reading": "",
+      "reading": "おかだくにじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -66470,6 +66951,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おかだくにじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おかだくにじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "岡田國神社",
         "wikipedia_article_refs": [],
@@ -66500,7 +66995,7 @@
         "status": "pending",
         "surface": "岡田國神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "岡田國神社"
     },
     {
@@ -67032,12 +67527,108 @@
       "surface": "御靈神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:29.237272+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「相樂神社」、郵便番号「619-0222」、所在地「木津川市相楽清水1」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "eb5d681e-9f67-51be-9701-d53e28b56dc4",
       "fetched_at": "2026-11-09T08:51:29.237272+00:00",
       "id": "5abcf318-3920-53c3-af9a-2af1c8f62c65",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "さがなかじんじゃ"
+          },
+          "expected_source_hash": "e29aad63261bfab0c7853d468d8ede94d6418e6280662ab1ad7aec0b38a9b45b",
+          "facility_id": "eb5d681e-9f67-51be-9701-d53e28b56dc4",
+          "identity_match": {
+            "agency_address": "木津川市相楽清水1",
+            "agency_name": "相樂神社",
+            "reference_address": "京都府木津川市相楽清水１番地",
+            "reference_name": "相楽神社"
+          },
+          "original": {
+            "address": "木津川市相楽清水1",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
+            "name_raw": "相樂神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "京都府木津川市相楽清水１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "5130005008475",
+              "csv_row": 63362,
+              "excerpt": "相楽神社 / サガナカジンジャ / 京都府木津川市相楽清水１番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435 26_kyoto_all_20261030.csv row 63362",
+              "name_raw": "相楽神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "サガナカジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "相樂神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "楽（樂）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "5130005008475"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "214",
+                "cityName": "木津川市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "5130005008475",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "サガナカジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "相楽神社",
+                "nameImageId": "",
+                "postCode": "6190222",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "63362",
+                "streetNumber": "相楽清水１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2018-04-17"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
       "name_raw": "相樂神社",
       "normalization": [
@@ -67045,11 +67636,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "d347049fc751993ff86daffa48ea9b666731f3e385465994dda37e77afc28587",
-      "reading": "",
+      "reading": "さがなかじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -67090,6 +67681,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "さがなかじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "さがなかじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "相樂神社",
         "wikipedia_article_refs": [],
@@ -67120,7 +67725,7 @@
         "status": "pending",
         "surface": "相樂神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "相樂神社"
     },
     {
@@ -131120,12 +131725,171 @@
       "surface": "金刀毘羅神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「天神神社」、郵便番号「620-0844」、所在地「福知山市多保市上野1100」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "0681b055-a459-5dea-a5aa-90b2d608b1ba",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "5910aa8d-cc5c-54da-ae66-8c38ac6b6bd8",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "てんじんじんじゃ"
+          },
+          "expected_source_hash": "0dbeeedd9cc0d9ef75e09aa90105739019fcce9fad2165896a5171a4bb03e8ba",
+          "facility_id": "0681b055-a459-5dea-a5aa-90b2d608b1ba",
+          "identity_match": {
+            "agency_address": "福知山市多保市上野1100",
+            "agency_name": "天神神社",
+            "effective_address": "福知山市多保市上野1100",
+            "reference_address": "京都府福知山市字多保市小字上野１１００番地",
+            "reference_name": "天神神社"
+          },
+          "original": {
+            "address": "福知山市多保市上野1100",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "天神神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の同名の存続法人が明示する全文フリガナを採用。神社庁の住所と登記住所で同一の小字名・全地番が印字され、正式大字と全地番を登記所備付地図の同じ筆へ照合した。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "福知山市多保市上野1100",
+                "expected_source_hash": "0dbeeedd9cc0d9ef75e09aa90105739019fcce9fad2165896a5171a4bb03e8ba",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 115196,
+                "registry_page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "member": "mt_town_all.csv",
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに当プロジェクトが比較し、対応した原欄を抜粋。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "city": "福知山市",
+                    "county": "",
+                    "csv_row": 562747,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "lg_code": "262013",
+                    "machiaza_id": "0074000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "字多保市",
+                    "pref": "京都府",
+                    "status_flg": "1",
+                    "ward": ""
+                  },
+                  "rows": 727533,
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                },
+                "unmarked_koaza": {
+                  "municipality_explanation": {
+                    "checked_at": "2026-11-19T13:47:32.711174+00:00",
+                    "locator": "福知山市の住所表記について > 登記簿・住所の関係図の代替テキスト",
+                    "page_hash": "c11c561d010ec6b62248e5604641c70947178b38f0a4bae0ef6f64a6040cb13c",
+                    "url": "https://www.city.fukuchiyama.lg.jp/soshiki/5/64145.html"
+                  },
+                  "name_raw": "上野",
+                  "parcel_map": {
+                    "attribution": "出典：「登記所備付地図データ 福知山市」（法務省）・農研機構「京都府登記所備付地図結合ファイル」（https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.html）（2026年11月19日に利用）",
+                    "catalog_page_hash": "d43e86effc14d9383a9fc4f01fb8ca92261973594c44c4dce0b28d1de553fd86",
+                    "catalog_url": "https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.html",
+                    "checked_at": "2026-11-19T13:58:52.719337+00:00",
+                    "feature": {
+                      "byte_offset": 277190008,
+                      "fields": {
+                        "地番": "1100",
+                        "大字名": "字多保市",
+                        "小字名": "",
+                        "市区町村コード": "26201",
+                        "市区町村名": "福知山市"
+                      },
+                      "index": 420737,
+                      "sha256": "491f7e4d114a01b8a6d8d37349e03d5d33e0fd2f71da9d473c066f99cd166186"
+                    },
+                    "license_url": "https://www.tellusxdp.com/docs/api-service/aigid-moj/tos.pdf",
+                    "matching_features": 1,
+                    "page_hash": "8cd5e3889b062cf9f2136407be98b714c941d0c86216ae213882f29ded0ec452",
+                    "processed_notice": "農研機構の京都府結合データをもとに、national-jinja-dictionaryが市区町村・大字・地番の原属性を抜粋し照合。",
+                    "source_kind": "government_land_parcel_map",
+                    "source_publisher": "法務省（原データ）・農研機構（結合データ配布）",
+                    "title": "福知山市の登記所備付地図（2022年度公開、京都府結合ファイル）",
+                    "url": "https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.fgb"
+                  }
+                }
+              },
+              "address_raw": "京都府福知山市字多保市小字上野１１００番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "9130005010304",
+              "csv_row": 115196,
+              "excerpt": "天神神社 / テンジンジンジャ / 京都府福知山市字多保市小字上野１１００番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435; 26_kyoto_all_20261030.csv; row 115196; corporateNumber=9130005010304",
+              "name_raw": "天神神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "テンジンジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "9130005010304"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "福知山市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "9130005010304",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "テンジンジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "天神神社",
+                "nameImageId": "",
+                "postCode": "6200844",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "115196",
+                "streetNumber": "字多保市小字上野１１００番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2019-11-05"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "両資料の小字名の全字と全地番が一致。町字マスターで正式大字、備付地図で同大字の一意な全地番を確認。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "天神神社",
       "normalization": [
@@ -131133,11 +131897,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "てんじんじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -131170,6 +131934,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "てんじんじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "てんじんじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "天神神社",
         "wikipedia_article_refs": [
@@ -131209,16 +131987,175 @@
         "status": "pending",
         "surface": "天神神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "天神神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「疫神社」、郵便番号「620-0844」、所在地「福知山市多保市内越1101」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "d0d1b125-c08e-54bf-bf56-dab7a9bd7d47",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "27203897-bb20-5b30-bc04-e9f611d032e4",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "やくじんじゃ"
+          },
+          "expected_source_hash": "5695e3bae55ae83a3d093435131516685430b0d8b2e5a2a3b4ae01e481529f7e",
+          "facility_id": "d0d1b125-c08e-54bf-bf56-dab7a9bd7d47",
+          "identity_match": {
+            "agency_address": "福知山市多保市内越1101",
+            "agency_name": "疫神社",
+            "effective_address": "福知山市多保市内越1101",
+            "reference_address": "京都府福知山市字多保市小字内越１１０１番地",
+            "reference_name": "疫神社"
+          },
+          "original": {
+            "address": "福知山市多保市内越1101",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "疫神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の同名の存続法人が明示する全文フリガナを採用。神社庁の住所と登記住所で同一の小字名・全地番が印字され、正式大字と全地番を登記所備付地図の同じ筆へ照合した。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "福知山市多保市内越1101",
+                "expected_source_hash": "5695e3bae55ae83a3d093435131516685430b0d8b2e5a2a3b4ae01e481529f7e",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 76359,
+                "registry_page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "member": "mt_town_all.csv",
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに当プロジェクトが比較し、対応した原欄を抜粋。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "city": "福知山市",
+                    "county": "",
+                    "csv_row": 562747,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "lg_code": "262013",
+                    "machiaza_id": "0074000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "字多保市",
+                    "pref": "京都府",
+                    "status_flg": "1",
+                    "ward": ""
+                  },
+                  "rows": 727533,
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                },
+                "unmarked_koaza": {
+                  "municipality_explanation": {
+                    "checked_at": "2026-11-19T13:47:32.711174+00:00",
+                    "locator": "福知山市の住所表記について > 登記簿・住所の関係図の代替テキスト",
+                    "page_hash": "c11c561d010ec6b62248e5604641c70947178b38f0a4bae0ef6f64a6040cb13c",
+                    "url": "https://www.city.fukuchiyama.lg.jp/soshiki/5/64145.html"
+                  },
+                  "name_raw": "内越",
+                  "parcel_map": {
+                    "attribution": "出典：「登記所備付地図データ 福知山市」（法務省）・農研機構「京都府登記所備付地図結合ファイル」（https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.html）（2026年11月19日に利用）",
+                    "catalog_page_hash": "d43e86effc14d9383a9fc4f01fb8ca92261973594c44c4dce0b28d1de553fd86",
+                    "catalog_url": "https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.html",
+                    "checked_at": "2026-11-19T13:58:52.719337+00:00",
+                    "feature": {
+                      "byte_offset": 277194080,
+                      "fields": {
+                        "地番": "1101",
+                        "大字名": "字多保市",
+                        "小字名": "",
+                        "市区町村コード": "26201",
+                        "市区町村名": "福知山市"
+                      },
+                      "index": 420744,
+                      "sha256": "b58bd78d1556f81d7804f479cd2d4353fb835af75a347909ded71877d7b2f4ae"
+                    },
+                    "license_url": "https://www.tellusxdp.com/docs/api-service/aigid-moj/tos.pdf",
+                    "matching_features": 1,
+                    "page_hash": "8cd5e3889b062cf9f2136407be98b714c941d0c86216ae213882f29ded0ec452",
+                    "processed_notice": "農研機構の京都府結合データをもとに、national-jinja-dictionaryが市区町村・大字・地番の原属性を抜粋し照合。",
+                    "source_kind": "government_land_parcel_map",
+                    "source_publisher": "法務省（原データ）・農研機構（結合データ配布）",
+                    "title": "福知山市の登記所備付地図（2022年度公開、京都府結合ファイル）",
+                    "url": "https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.fgb"
+                  }
+                }
+              },
+              "address_raw": "京都府福知山市字多保市小字内越１１０１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "6130005010109",
+              "csv_row": 76359,
+              "excerpt": "疫神社 / ヤクジンジャ / 京都府福知山市字多保市小字内越１１０１番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435; 26_kyoto_all_20261030.csv; row 76359; corporateNumber=6130005010109",
+              "name_raw": "疫神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ヤクジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "6130005010109"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "福知山市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "6130005010109",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ヤクジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "疫神社",
+                "nameImageId": "",
+                "postCode": "6200844",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "76359",
+                "streetNumber": "字多保市小字内越１１０１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2019-11-05"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "両資料の小字名の全字と全地番が一致。町字マスターで正式大字、備付地図で同大字の一意な全地番を確認。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "疫神社",
       "normalization": [
@@ -131226,11 +132163,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "やくじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -131263,6 +132200,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "やくじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "やくじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "疫神社",
         "wikipedia_article_refs": [],
@@ -131293,7 +132244,7 @@
         "status": "pending",
         "surface": "疫神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "疫神社"
     },
     {
@@ -132198,12 +133149,171 @@
       "surface": "天神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「大川森神社」、郵便番号「620-0917」、所在地「福知山市野花宮ノ前1046」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "968838e4-a0e7-5696-8c16-02d3d470b45f",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "3de50ab2-f208-5350-97f0-05ead581a5e7",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おおかわもりじんじゃ"
+          },
+          "expected_source_hash": "493371e1ad14cc5888b41f5a2a527d947d22e03ce6836791057defe1a94deb62",
+          "facility_id": "968838e4-a0e7-5696-8c16-02d3d470b45f",
+          "identity_match": {
+            "agency_address": "福知山市野花宮ノ前1046",
+            "agency_name": "大川森神社",
+            "effective_address": "福知山市野花宮ノ前1046",
+            "reference_address": "京都府福知山市字野花小字宮ノ前１０４６番地",
+            "reference_name": "大川森神社"
+          },
+          "original": {
+            "address": "福知山市野花宮ノ前1046",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "大川森神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の同名の存続法人が明示する全文フリガナを採用。神社庁の住所と登記住所で同一の小字名・全地番が印字され、正式大字と全地番を登記所備付地図の同じ筆へ照合した。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "福知山市野花宮ノ前1046",
+                "expected_source_hash": "493371e1ad14cc5888b41f5a2a527d947d22e03ce6836791057defe1a94deb62",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 11977,
+                "registry_page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "member": "mt_town_all.csv",
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに当プロジェクトが比較し、対応した原欄を抜粋。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "city": "福知山市",
+                    "county": "",
+                    "csv_row": 562756,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "lg_code": "262013",
+                    "machiaza_id": "0083000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "字野花",
+                    "pref": "京都府",
+                    "status_flg": "1",
+                    "ward": ""
+                  },
+                  "rows": 727533,
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                },
+                "unmarked_koaza": {
+                  "municipality_explanation": {
+                    "checked_at": "2026-11-19T13:47:32.711174+00:00",
+                    "locator": "福知山市の住所表記について > 登記簿・住所の関係図の代替テキスト",
+                    "page_hash": "c11c561d010ec6b62248e5604641c70947178b38f0a4bae0ef6f64a6040cb13c",
+                    "url": "https://www.city.fukuchiyama.lg.jp/soshiki/5/64145.html"
+                  },
+                  "name_raw": "宮ノ前",
+                  "parcel_map": {
+                    "attribution": "出典：「登記所備付地図データ 福知山市」（法務省）・農研機構「京都府登記所備付地図結合ファイル」（https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.html）（2026年11月19日に利用）",
+                    "catalog_page_hash": "d43e86effc14d9383a9fc4f01fb8ca92261973594c44c4dce0b28d1de553fd86",
+                    "catalog_url": "https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.html",
+                    "checked_at": "2026-11-19T13:58:52.719337+00:00",
+                    "feature": {
+                      "byte_offset": 302184792,
+                      "fields": {
+                        "地番": "1046",
+                        "大字名": "字野花",
+                        "小字名": "",
+                        "市区町村コード": "26201",
+                        "市区町村名": "福知山市"
+                      },
+                      "index": 463043,
+                      "sha256": "643c7104687b2585416cf3b9646c79a586ed03d0302ccc308d710cbc54ef6e3d"
+                    },
+                    "license_url": "https://www.tellusxdp.com/docs/api-service/aigid-moj/tos.pdf",
+                    "matching_features": 1,
+                    "page_hash": "8cd5e3889b062cf9f2136407be98b714c941d0c86216ae213882f29ded0ec452",
+                    "processed_notice": "農研機構の京都府結合データをもとに、national-jinja-dictionaryが市区町村・大字・地番の原属性を抜粋し照合。",
+                    "source_kind": "government_land_parcel_map",
+                    "source_publisher": "法務省（原データ）・農研機構（結合データ配布）",
+                    "title": "福知山市の登記所備付地図（2022年度公開、京都府結合ファイル）",
+                    "url": "https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.fgb"
+                  }
+                }
+              },
+              "address_raw": "京都府福知山市字野花小字宮ノ前１０４６番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "1130005010113",
+              "csv_row": 11977,
+              "excerpt": "大川森神社 / オオカワモリジンジャ / 京都府福知山市字野花小字宮ノ前１０４６番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435; 26_kyoto_all_20261030.csv; row 11977; corporateNumber=1130005010113",
+              "name_raw": "大川森神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "オオカワモリジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1130005010113"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "福知山市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1130005010113",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "オオカワモリジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "大川森神社",
+                "nameImageId": "",
+                "postCode": "6200917",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "11977",
+                "streetNumber": "字野花小字宮ノ前１０４６番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2018-12-20"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "両資料の小字名の全字と全地番が一致。町字マスターで正式大字、備付地図で同大字の一意な全地番を確認。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "大川森神社",
       "normalization": [
@@ -132211,11 +133321,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "おおかわもりじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -132248,6 +133358,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おおかわもりじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おおかわもりじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "大川森神社",
         "wikipedia_article_refs": [],
@@ -132278,7 +133402,7 @@
         "status": "pending",
         "surface": "大川森神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "大川森神社"
     },
     {
@@ -134174,12 +135298,53 @@
       "surface": "吉備神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:56.249068+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「生野神社」、郵便番号「620-0821」、所在地「福知山市三俣541」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "39d54f1d-cc91-5591-996b-26b24d7758d9",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "1092ca9e-71a4-5e11-b4fd-ba2b9717ea09",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いくのじんじゃ"
+          },
+          "expected_source_hash": "9a888376bd4dd09404c6fe5e0a709375b610ff5a075e46dca9f9b7e2a5b5ed17",
+          "facility_id": "39d54f1d-cc91-5591-996b-26b24d7758d9",
+          "identity_match": {
+            "agency_address": "福知山市三俣541",
+            "published_address": "京都府福知山市三俣541"
+          },
+          "original": {
+            "address": "福知山市三俣541",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "生野神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三俣541",
+              "checked_at": "2026-11-20T01:48:56.249068+00:00",
+              "excerpt": "生野神社（いくのじんじゃ） / 京都府福知山市三俣541",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "生野神社",
+              "page_hash": "312dffbbdc1d57935cd5daa5957d4d7308c27e2cc0fc7d9ff30e59a3598ec248",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "いくのじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "生野神社 生野神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/ikunojinja.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "生野神社",
       "normalization": [
@@ -134187,11 +135352,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "いくのじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/ikunojinja.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -134250,6 +135415,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いくのじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いくのじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "生野神社",
         "wikipedia_article_refs": [],
@@ -134280,7 +135459,7 @@
         "status": "pending",
         "surface": "生野神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "生野神社"
     },
     {
@@ -136792,12 +137971,171 @@
       "surface": "高倉神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「稲荷神社」、郵便番号「620-0000」、所在地「福知山市長田松山下28」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "edd8a0d5-ece6-5b56-9359-86db75dee20e",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "844b6826-ca34-5112-a709-b7d471a56d4e",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いなりじんじゃ"
+          },
+          "expected_source_hash": "14fd8ee2ca9900b824caca59d42e0970cb1fc5ba481b0d93778b4605d25618c1",
+          "facility_id": "edd8a0d5-ece6-5b56-9359-86db75dee20e",
+          "identity_match": {
+            "agency_address": "福知山市長田松山下28",
+            "agency_name": "稲荷神社",
+            "effective_address": "福知山市長田松山下28",
+            "reference_address": "京都府福知山市字長田小字松山下２８番地",
+            "reference_name": "稲荷神社"
+          },
+          "original": {
+            "address": "福知山市長田松山下28",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "稲荷神社",
+            "reading_raw": ""
+          },
+          "reason": "国税庁の同名の存続法人が明示する全文フリガナを採用。神社庁の住所と登記住所で同一の小字名・全地番が印字され、正式大字と全地番を登記所備付地図の同じ筆へ照合した。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "福知山市長田松山下28",
+                "expected_source_hash": "14fd8ee2ca9900b824caca59d42e0970cb1fc5ba481b0d93778b4605d25618c1",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 63520,
+                "registry_page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "member": "mt_town_all.csv",
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに当プロジェクトが比較し、対応した原欄を抜粋。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "city": "福知山市",
+                    "county": "",
+                    "csv_row": 562705,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "lg_code": "262013",
+                    "machiaza_id": "0032000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "字長田",
+                    "pref": "京都府",
+                    "status_flg": "1",
+                    "ward": ""
+                  },
+                  "rows": 727533,
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                },
+                "unmarked_koaza": {
+                  "municipality_explanation": {
+                    "checked_at": "2026-11-19T13:47:32.711174+00:00",
+                    "locator": "福知山市の住所表記について > 登記簿・住所の関係図の代替テキスト",
+                    "page_hash": "c11c561d010ec6b62248e5604641c70947178b38f0a4bae0ef6f64a6040cb13c",
+                    "url": "https://www.city.fukuchiyama.lg.jp/soshiki/5/64145.html"
+                  },
+                  "name_raw": "松山下",
+                  "parcel_map": {
+                    "attribution": "出典：「登記所備付地図データ 福知山市」（法務省）・農研機構「京都府登記所備付地図結合ファイル」（https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.html）（2026年11月19日に利用）",
+                    "catalog_page_hash": "d43e86effc14d9383a9fc4f01fb8ca92261973594c44c4dce0b28d1de553fd86",
+                    "catalog_url": "https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.html",
+                    "checked_at": "2026-11-19T13:58:52.719337+00:00",
+                    "feature": {
+                      "byte_offset": 283064680,
+                      "fields": {
+                        "地番": "28",
+                        "大字名": "字長田",
+                        "小字名": "",
+                        "市区町村コード": "26201",
+                        "市区町村名": "福知山市"
+                      },
+                      "index": 430615,
+                      "sha256": "d7f094d79479eb43a613031948a7767c70c0358f4fd8b9cac8144ecf8da750d3"
+                    },
+                    "license_url": "https://www.tellusxdp.com/docs/api-service/aigid-moj/tos.pdf",
+                    "matching_features": 1,
+                    "page_hash": "8cd5e3889b062cf9f2136407be98b714c941d0c86216ae213882f29ded0ec452",
+                    "processed_notice": "農研機構の京都府結合データをもとに、national-jinja-dictionaryが市区町村・大字・地番の原属性を抜粋し照合。",
+                    "source_kind": "government_land_parcel_map",
+                    "source_publisher": "法務省（原データ）・農研機構（結合データ配布）",
+                    "title": "福知山市の登記所備付地図（2022年度公開、京都府結合ファイル）",
+                    "url": "https://habs.rad.naro.go.jp/spatial_data/amxpoly47/amxpoly_2022_26.fgb"
+                  }
+                }
+              },
+              "address_raw": "京都府福知山市字長田小字松山下２８番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "5130005010092",
+              "csv_row": 63520,
+              "excerpt": "稲荷神社 / イナリジンジャ / 京都府福知山市字長田小字松山下２８番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435; 26_kyoto_all_20261030.csv; row 63520; corporateNumber=5130005010092",
+              "name_raw": "稲荷神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "イナリジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "5130005010092"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "福知山市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "5130005010092",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "イナリジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "稲荷神社",
+                "nameImageId": "",
+                "postCode": "6200000",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "63520",
+                "streetNumber": "字長田小字松山下２８番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2019-11-05"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "両資料の小字名の全字と全地番が一致。町字マスターで正式大字、備付地図で同大字の一意な全地番を確認。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "稲荷神社",
       "normalization": [
@@ -136805,11 +138143,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "いなりじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -136842,6 +138180,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いなりじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いなりじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "稲荷神社",
         "wikipedia_article_refs": [],
@@ -136872,7 +138224,7 @@
         "status": "pending",
         "surface": "稲荷神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "稲荷神社"
     },
     {
@@ -138998,12 +140350,53 @@
       "surface": "王歳神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:13.201243+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「八幡神社」、郵便番号「620-1422」、所在地「福知山市三和町菟原中265」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "27accf3b-6680-55f4-a831-722f37c4381e",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "24573af9-e157-546e-88c8-ef3cf6f115c3",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "はちまんじんじゃ"
+          },
+          "expected_source_hash": "9dedf305b2cfd44fa0fabf80bd55016dad2ded92fe6aaf2cb2e8f12b86cb4d93",
+          "facility_id": "27accf3b-6680-55f4-a831-722f37c4381e",
+          "identity_match": {
+            "agency_address": "福知山市三和町菟原中265",
+            "published_address": "京都府福知山市三和町菟原中265"
+          },
+          "original": {
+            "address": "福知山市三和町菟原中265",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "八幡神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三和町菟原中265",
+              "checked_at": "2026-11-20T01:48:13.201243+00:00",
+              "excerpt": "八幡神社（はちまんじんじゃ） / 京都府福知山市三和町菟原中265",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "八幡神社",
+              "page_hash": "3f89c42ac16b72cf8cfa2b541d497036f11af5f937b11975b45c5f2c33e7a4c9",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "はちまんじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "八幡神社 菟原中の八幡神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/ubarahachiman.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "八幡神社",
       "normalization": [
@@ -139011,11 +140404,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "はちまんじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/ubarahachiman.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -139079,6 +140472,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "はちまんじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "はちまんじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "八幡神社",
         "wikipedia_article_refs": [],
@@ -139109,16 +140516,57 @@
         "status": "pending",
         "surface": "八幡神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "八幡神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:10.120611+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「梅田神社」、郵便番号「620-1425」、所在地「福知山市三和町菟原下69-1」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "4417fb13-f388-57c3-a745-57daed78275c",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "4549caac-2a05-530c-a78b-d3a9720b4091",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "うめだじんじゃ"
+          },
+          "expected_source_hash": "892449db7cf5e7e2f057e1cc5fb56fff73b88353390b28327d97a50ffe76d8b5",
+          "facility_id": "4417fb13-f388-57c3-a745-57daed78275c",
+          "identity_match": {
+            "agency_address": "福知山市三和町菟原下69-1",
+            "published_address": "京都府福知山市三和町菟原下69-1"
+          },
+          "original": {
+            "address": "福知山市三和町菟原下69-1",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "梅田神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三和町菟原下69-1",
+              "checked_at": "2026-11-20T01:48:10.120611+00:00",
+              "excerpt": "梅田神社（うめだじんじゃ） / 京都府福知山市三和町菟原下69-1",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "梅田神社",
+              "page_hash": "2b929c39d4eca8782c0398716798a74472f05f7b89fd849d1cc43b9d1cf74b66",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "うめだじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "梅田神社 梅田神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/ubarashimoumeda.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "梅田神社",
       "normalization": [
@@ -139126,11 +140574,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "うめだじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/ubarashimoumeda.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -139194,6 +140642,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "うめだじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "うめだじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "梅田神社",
         "wikipedia_article_refs": [
@@ -139233,7 +140695,7 @@
         "status": "pending",
         "surface": "梅田神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "梅田神社"
     },
     {
@@ -139434,12 +140896,53 @@
       "surface": "大原神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:22.434409+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「廣谷神社」、郵便番号「620-1421」、所在地「福知山市三和町大身83」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "e832595a-e966-549d-8188-3575d9b86858",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "f489fdb3-67b4-5abe-bf23-d294eb6766ec",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ひろたにじんじゃ"
+          },
+          "expected_source_hash": "3f8309a6e76ca031da9b93b5fe29b14cc6ba9123d75e0ba6925a1bd8c99d3c9d",
+          "facility_id": "e832595a-e966-549d-8188-3575d9b86858",
+          "identity_match": {
+            "agency_address": "福知山市三和町大身83",
+            "published_address": "京都府福知山市三和町大身８３"
+          },
+          "original": {
+            "address": "福知山市三和町大身83",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "廣谷神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三和町大身８３",
+              "checked_at": "2026-11-20T01:48:22.434409+00:00",
+              "excerpt": "廣谷神社（ひろたにじんじゃ） / 京都府福知山市三和町大身８３",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "廣谷神社",
+              "page_hash": "9c2fbbef184c5a3e26ba064657a807ec08f1829d201da9654b9fecd3de9353a1",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "ひろたにじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "廣谷神社 廣谷神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/hitotani.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "廣谷神社",
       "normalization": [
@@ -139447,11 +140950,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "ひろたにじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/hitotani.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -139484,6 +140987,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ひろたにじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ひろたにじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "廣谷神社",
         "wikipedia_article_refs": [],
@@ -139514,7 +141031,7 @@
         "status": "pending",
         "surface": "廣谷神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "廣谷神社"
     },
     {
@@ -139686,12 +141203,53 @@
       "surface": "勝田神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:28.579221+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「天満神社」、郵便番号「620-1435」、所在地「福知山市三和町草山531-1」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "fdae69c2-0d72-5deb-b309-c5f8f09b7852",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "2b04ba7e-41ee-5e88-bd74-d56de90ae6da",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "てんまじんじゃ"
+          },
+          "expected_source_hash": "53971c41aea0096c7129c7fb48258351dbb8d0fc7afb50b196bff822a1d5b93a",
+          "facility_id": "fdae69c2-0d72-5deb-b309-c5f8f09b7852",
+          "identity_match": {
+            "agency_address": "福知山市三和町草山531-1",
+            "published_address": "京都府福知山市三和町草山531-1"
+          },
+          "original": {
+            "address": "福知山市三和町草山531-1",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "天満神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三和町草山531-1",
+              "checked_at": "2026-11-20T01:48:28.579221+00:00",
+              "excerpt": "天満神社（てんまじんじゃ） / 京都府福知山市三和町草山531-1",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "天満神社",
+              "page_hash": "43e23733d5ac61d01ab7bef44db2fe3909120bda515232482eabadcaf81582c9",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "てんまじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "草山天満神社 天満神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/kusayamatenjin.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "天満神社",
       "normalization": [
@@ -139699,11 +141257,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "てんまじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/kusayamatenjin.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -139798,6 +141356,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "てんまじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "てんまじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "天満神社",
         "wikipedia_article_refs": [
@@ -139837,7 +141409,7 @@
         "status": "pending",
         "surface": "天満神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "天満神社"
     },
     {
@@ -140321,12 +141893,53 @@
       "surface": "鳫掛神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:37.800359+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「春日神社」、郵便番号「620-1423」、所在地「福知山市三和町高杉418」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "d42bd4a1-dc2d-59b9-8cbd-a1c466ffd561",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "b6fff703-eb84-53ea-b8d3-7899b0bd81dd",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "かすがじんじゃ"
+          },
+          "expected_source_hash": "4110659549c85b623d13fc65a1a1f8e085449dc84e22c25837d1b3184abb7a37",
+          "facility_id": "d42bd4a1-dc2d-59b9-8cbd-a1c466ffd561",
+          "identity_match": {
+            "agency_address": "福知山市三和町高杉418",
+            "published_address": "京都府福知山市三和町高杉418"
+          },
+          "original": {
+            "address": "福知山市三和町高杉418",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "春日神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三和町高杉418",
+              "checked_at": "2026-11-20T01:48:37.800359+00:00",
+              "excerpt": "春日神社（かすがじんじゃ） / 京都府福知山市三和町高杉418",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "春日神社",
+              "page_hash": "3a67213eb7f59ceadeceefe5c4f46480975956b74111d0fda1abbf3d07aea3d5",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "かすがじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "春日神社 高杉の春日神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/takasugikasuga.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "春日神社",
       "normalization": [
@@ -140334,11 +141947,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "かすがじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/takasugikasuga.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -140402,6 +142015,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "かすがじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "かすがじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "春日神社",
         "wikipedia_article_refs": [
@@ -140449,16 +142076,57 @@
         "status": "pending",
         "surface": "春日神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "春日神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:40.890293+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「八幡神社」、郵便番号「620-1433」、所在地「福知山市三和町田ノ谷336-1」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "85057e9a-7f4f-519a-a1de-97cf67f5a8da",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "7433f336-7623-5c8a-8e8e-344ead126aed",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "はちまんじんじゃ"
+          },
+          "expected_source_hash": "62241e60a2a39b81504ee6fdc5c66ab5481876b1341cb356bf029ea5591577a8",
+          "facility_id": "85057e9a-7f4f-519a-a1de-97cf67f5a8da",
+          "identity_match": {
+            "agency_address": "福知山市三和町田ノ谷336-1",
+            "published_address": "京都府福知山市三和町田ノ谷３３６－１"
+          },
+          "original": {
+            "address": "福知山市三和町田ノ谷336-1",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "八幡神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三和町田ノ谷３３６－１",
+              "checked_at": "2026-11-20T01:48:40.890293+00:00",
+              "excerpt": "八幡神社（はちまんじんじゃ） / 京都府福知山市三和町田ノ谷３３６－１",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "八幡神社",
+              "page_hash": "8955fab967acaf6592d356137ac2d3dc12040443c7a04e5680c58c43e03833fc",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "はちまんじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "八幡神社 田ノ谷の八幡神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/tanotanihachiman.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "八幡神社",
       "normalization": [
@@ -140466,11 +142134,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "はちまんじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/tanotanihachiman.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -140534,6 +142202,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "はちまんじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "はちまんじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "八幡神社",
         "wikipedia_article_refs": [],
@@ -140564,16 +142246,57 @@
         "status": "pending",
         "surface": "八幡神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "八幡神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:43.961931+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「梅田神社」、郵便番号「620-1431」、所在地「福知山市三和町辻456」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "492816af-e974-59e0-b89e-94e3f3341069",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "eec6ca62-64b2-51dd-8e5c-367346423812",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "うめだじんじゃ"
+          },
+          "expected_source_hash": "59d82cc33030a32e56e492a6e51188665cde0bb59b9db4a1f647927c75cc46c8",
+          "facility_id": "492816af-e974-59e0-b89e-94e3f3341069",
+          "identity_match": {
+            "agency_address": "福知山市三和町辻456",
+            "published_address": "京都府福知山市三和町辻４５６"
+          },
+          "original": {
+            "address": "福知山市三和町辻456",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "梅田神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三和町辻４５６",
+              "checked_at": "2026-11-20T01:48:43.961931+00:00",
+              "excerpt": "梅田神社（うめだじんじゃ） / 京都府福知山市三和町辻４５６",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "梅田神社",
+              "page_hash": "311400146951a8f8c518640f8755f5e435d6c6bb6a5e684b32fd5d25cf6dd791",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "うめだじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "梅田神社 辻の梅田神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/tsujiumeda.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "梅田神社",
       "normalization": [
@@ -140581,11 +142304,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "うめだじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/tsujiumeda.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -140649,6 +142372,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "うめだじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "うめだじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "梅田神社",
         "wikipedia_article_refs": [
@@ -140688,7 +142425,7 @@
         "status": "pending",
         "surface": "梅田神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "梅田神社"
     },
     {
@@ -140776,12 +142513,53 @@
       "surface": "三柱神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:47.032483+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「春日神社」、郵便番号「620-1424」、所在地「福知山市三和町友渕744」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "c0333c3d-6756-5c0a-8408-3a8c62dfebfb",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "3af9ef14-4412-5bc1-b67b-a4a3420cba90",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "かすがじんじゃ"
+          },
+          "expected_source_hash": "fa525d5371d1cd3129126bd2b710c209ab4b63a328c6e2f86474fe687129645e",
+          "facility_id": "c0333c3d-6756-5c0a-8408-3a8c62dfebfb",
+          "identity_match": {
+            "agency_address": "福知山市三和町友渕744",
+            "published_address": "京都府福知山市三和町友渕744"
+          },
+          "original": {
+            "address": "福知山市三和町友渕744",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "春日神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市三和町友渕744",
+              "checked_at": "2026-11-20T01:48:47.032483+00:00",
+              "excerpt": "春日神社（かすがじんじゃ） / 京都府福知山市三和町友渕744",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "春日神社",
+              "page_hash": "30a14f34b0b2488c52867334fabfa8c947348089ea15b369516bf79d9aa5895f",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "reading_raw": "かすがじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "春日神社 春日神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/tomobuchikasuga.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "春日神社",
       "normalization": [
@@ -140789,11 +142567,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "かすがじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/tomobuchikasuga.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -140857,6 +142635,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "かすがじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "かすがじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "春日神社",
         "wikipedia_article_refs": [
@@ -140904,7 +142696,7 @@
         "status": "pending",
         "surface": "春日神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "春日神社"
     },
     {
@@ -142077,12 +143869,62 @@
       "surface": "熊野神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:48:07.004855+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「鬼嶽稲荷神社」、郵便番号「620-0327」、所在地「福知山市大江町北原早谷303-1」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "abfe2244-174e-517e-80dd-8a0af02d1f79",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "5cf2a407-df15-5d76-8d8a-f0bacd339413",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "おにたけいなりじんじゃ"
+          },
+          "expected_source_hash": "6983f730c847f66f24f649250613e4ec862b79f7f2917ffe07ee903bf38f04d7",
+          "facility_id": "abfe2244-174e-517e-80dd-8a0af02d1f79",
+          "identity_match": {
+            "agency_address": "福知山市大江町北原早谷303-1",
+            "published_address": "京都府福知山市大江町北原早谷３０３－１"
+          },
+          "original": {
+            "address": "福知山市大江町北原早谷303-1",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "鬼嶽稲荷神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市大江町北原早谷３０３－１",
+              "checked_at": "2026-11-20T01:48:07.004855+00:00",
+              "excerpt": "鬼嶽稲荷神社（おにたけいなりじんじゃ） / 京都府福知山市大江町北原早谷３０３－１",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "鬼嶽稲荷神社",
+              "page_hash": "07038cb0d444cbcd7bce1cd41f60370cad747e0b5d34f651368a00e7f561ee12",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "public_reading_crosscheck": {
+                "checked_at": "2026-11-20T01:54:08.155590+00:00",
+                "locator": "音声ガイド名 鬼嶽稲荷神社から見る雲海",
+                "observed": "鬼嶽稲荷神社（おにたけいなりじんじゃ）",
+                "page_hash": "1de6ec1e797458710d43e5b1cb89d68cbe07e8a2b0c348b7a44209f39e2dddd1",
+                "source_publisher": "福知山市",
+                "title": "声優 小西克幸の福知山鬼ガイド",
+                "url": "https://www.city.fukuchiyama.lg.jp/site/promotion/33tab.html"
+              },
+              "reading_raw": "おにたけいなりじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "鬼嶽稲荷神社 鬼嶽稲荷神社",
+              "url": "https://kuchitanshrine.my.coocan.jp/onitakeinari.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "鬼嶽稲荷神社",
       "normalization": [
@@ -142090,11 +143932,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "おにたけいなりじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/onitakeinari.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -142146,6 +143988,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "おにたけいなりじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "おにたけいなりじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "鬼嶽稲荷神社",
         "wikipedia_article_refs": [
@@ -142185,7 +144041,7 @@
         "status": "pending",
         "surface": "鬼嶽稲荷神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "鬼嶽稲荷神社"
     },
     {
@@ -143817,12 +145673,62 @@
       "surface": "彌加宜神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:41.593602+00:00",
+      "checked_at": "2026-11-20T01:39:36.675349+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「皇大神社」、郵便番号「620-0323」、所在地「福知山市大江町内宮宮山217」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "79344792-5172-59db-ab73-b1d6a15141bd",
       "fetched_at": "2026-11-09T08:51:41.593602+00:00",
       "id": "97d33e66-cea4-547a-9716-c3da70b77c6c",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "こうたいじんじゃ"
+          },
+          "expected_source_hash": "b16f6d5355abccbb737d8dad49b00e2eff9012b1f7ddee5c5d9e83a1571e3ad2",
+          "facility_id": "79344792-5172-59db-ab73-b1d6a15141bd",
+          "identity_match": {
+            "agency_address": "福知山市大江町内宮宮山217",
+            "published_address": "京都府福知山市大江町内宮宮山２１７"
+          },
+          "original": {
+            "address": "福知山市大江町内宮宮山217",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+            "name_raw": "皇大神社",
+            "reading_raw": ""
+          },
+          "reason": "訪問記録の同一表で印字された正式社名と全文読み・全所在地を照合。",
+          "references": [
+            {
+              "address_raw": "京都府福知山市大江町内宮宮山２１７",
+              "checked_at": "2026-11-20T01:39:36.675349+00:00",
+              "excerpt": "皇大神社（こうたいじんじゃ） / 京都府福知山市大江町内宮宮山２１７",
+              "locator": "冒頭の神社名・所在地項目の同一表",
+              "name_raw": "皇大神社",
+              "page_hash": "c1b60f037405a23af6ed2c8ef0838ba60bb98da396b2da29a0c57a6e3e938b1d",
+              "policy_reference": {
+                "checked_at": "2026-11-20T01:39:33.597900+00:00",
+                "page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                "url": "https://kuchitanshrine.my.coocan.jp/profile.html"
+              },
+              "public_identity_crosscheck": {
+                "checked_at": "2026-11-20T01:54:11.281973+00:00",
+                "locator": "本文の所在地と社名・通称",
+                "observed": "皇大神社",
+                "page_hash": "013bd84854e725d4bbe07a14f6522ac2558794503401b4163b3860e45264d3ec",
+                "source_publisher": "福知山市",
+                "title": "皇大神社本殿",
+                "url": "https://www.city.fukuchiyama.lg.jp/soshiki/7/67849.html"
+              },
+              "reading_raw": "こうたいじんじゃ",
+              "reading_scope": "full_name",
+              "source_kind": "article",
+              "source_publisher": "口丹波の社（現地訪問記録）",
+              "title": "皇大神社 元伊勢内宮",
+              "url": "https://kuchitanshrine.my.coocan.jp/motoisenaikuu.html"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
       "name_raw": "皇大神社",
       "normalization": [
@@ -143830,11 +145736,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-      "reading": "",
+      "reading": "こうたいじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://kuchitanshrine.my.coocan.jp/motoisenaikuu.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -143905,6 +145811,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "こうたいじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "こうたいじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "皇大神社",
         "wikipedia_article_refs": [
@@ -143944,7 +145864,7 @@
         "status": "pending",
         "surface": "皇大神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "皇大神社"
     },
     {
@@ -156542,12 +158462,193 @@
       "surface": "恵美須神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:43.658004+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「吉野神社」、郵便番号「626-0001」、所在地「宮津市文珠宮ノ谷287」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "3a9b269d-172b-50ed-9d6b-dd3e080e2d27",
       "fetched_at": "2026-11-09T08:51:43.658004+00:00",
       "id": "dd594457-3ee5-5712-9466-627f10cf1e75",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "よしのじんじゃ"
+          },
+          "expected_source_hash": "efd3a5460ded5bdef94566606492f6543d3b9ed07373b4b2110c6bb274190436",
+          "facility_id": "3a9b269d-172b-50ed-9d6b-dd3e080e2d27",
+          "identity_match": {
+            "reference_address": "京都府宮津市字文珠小字宮ノ谷２８７番地",
+            "source_address": "宮津市文珠宮ノ谷287",
+            "source_name": "吉野神社"
+          },
+          "original": {
+            "address": "宮津市文珠宮ノ谷287",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/21.html",
+            "name_raw": "吉野神社",
+            "reading_raw": ""
+          },
+          "reason": "同名の鎮座地を公的資料の大字・全地番で確かめ、神社庁と国税庁が同じ字で印字した小字名を照合。全文の読みも別資料で確認。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "宮津市文珠宮ノ谷287",
+                "expected_source_hash": "efd3a5460ded5bdef94566606492f6543d3b9ed07373b4b2110c6bb274190436",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 24796,
+                "registry_page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "member": "mt_town_all.csv",
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに対応する大字行を抜粋して照合。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "city": "宮津市",
+                    "county": "",
+                    "csv_row": 567708,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "lg_code": "262056",
+                    "machiaza_id": "0135000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "文珠",
+                    "pref": "京都府",
+                    "status_flg": "1",
+                    "ward": ""
+                  },
+                  "rows": 727533,
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                },
+                "unmarked_koaza": {
+                  "name_raw": "宮ノ谷",
+                  "shrine_site": {
+                    "address_column_raw": "住所",
+                    "address_raw": "宮津市字文珠287",
+                    "checked_at": "2026-11-20T01:38:03.056010+00:00",
+                    "compiled_from": "宮津市文化財調査報告第 44 集 宮津天橋立の文化的景観 保存計画書Ⅰ〔府中・文珠編〕",
+                    "excerpt": "吉野神社 / 宮津市字文珠287",
+                    "inundation_raw": "-",
+                    "item_raw": "吉野神社",
+                    "item_type_raw": "寺社",
+                    "kind_raw": "寺社",
+                    "location_header_raw": "住所",
+                    "locator": "災害廃棄物処理計画策定モデル事業 丹後地域 ／ PDF p.71 (printed 69) ／ 表 6.2.2(1) 文化財一覧（宮津市） ／ 番号77",
+                    "map_number_raw": "",
+                    "name_raw": "吉野神社",
+                    "number_raw": "77",
+                    "page_hash": "d5d74ecb1a156026512430a0b5525da4900c3de78d1b9c97d5d401d7cf4c6289",
+                    "publisher": "環境省 近畿地方環境事務所",
+                    "role": "government_physical_site",
+                    "source_kind": "government_shrine_site",
+                    "url": "https://kinki.env.go.jp/recycle/H29moderu_keikaku_tangoG.pdf",
+                    "visual_reviewed": true
+                  }
+                }
+              },
+              "address_raw": "京都府宮津市字文珠小字宮ノ谷２８７番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "2130005009658",
+              "csv_row": 24796,
+              "excerpt": "吉野神社 / ヨシノジンジャ / 京都府宮津市字文珠小字宮ノ谷２８７番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435; 26_kyoto_all_20261030.csv; row 24796; corporateNumber=2130005009658",
+              "name_raw": "吉野神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_crosscheck": {
+                "address_raw": "宮津市字文珠小字宮ノ谷二八七",
+                "checked_at": "2026-11-20T01:38:06.372055+00:00",
+                "date_raw": "平成三十年七月",
+                "locator": "現地掲示の右側縦組み題名・ルビと「所在地」列、左下の発行主体・年月",
+                "name_raw": "吉野神社",
+                "page_hash": "e5909505883b5aee1da32e5cdc2350fe6ec26c6a7cce3b92e8a7626fea81bdbe",
+                "photo_reproduction": "prior permission required",
+                "publisher": "吉野神社奉賛会（掲示） / Shrine-heritager（写真）",
+                "reading_raw": "よしのじんじゃ",
+                "role": "onsite_signed_primary_reading_and_full_physical_address",
+                "ruby_segments_raw": [
+                  "よし",
+                  "の",
+                  "じん",
+                  "じゃ"
+                ],
+                "signed_by_raw": "吉野神社奉賛会",
+                "url": "https://shrineheritager.com/wp-content/uploads/2025/10/s-3-1.jpg",
+                "visual_reviewed": true
+              },
+              "reading_raw": "ヨシノジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "2130005009658"
+              },
+              "related_field_transcript": {
+                "address_raw": "京都府宮津市字文珠小字宮ノ谷287番地",
+                "article_date_raw": "2025-10-02",
+                "checked_at": "2026-11-20T01:38:04.013636+00:00",
+                "locator": "1.ご紹介 > 神社名・鎮座地・創 建 > 現地立札より",
+                "name_raw": "吉野神社",
+                "page_hash": "a4078e1d1b87b79716fc222869c2b9bc8cd26f425efef98b6fb919c9fb9500a6",
+                "publisher": "Shrine-heritager",
+                "reading_raw": "よしのじんじゃ",
+                "role": "field_visit_and_sign_transcript",
+                "sign_address_raw": "宮津市字文珠小字宮ノ谷二八七",
+                "url": "https://shrineheritager.com/yoshino-shrine/"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "京都府宮津市字文珠小字蛭子尾５７１番地ノ２惠美須神社（1130005009527）を合併",
+                "changeDate": "2021-03-12",
+                "cityCode": "205",
+                "cityName": "宮津市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "2130005009658",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ヨシノジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "吉野神社",
+                "nameImageId": "",
+                "postCode": "6260001",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "71",
+                "sequenceNumber": "24796",
+                "streetNumber": "字文珠小字宮ノ谷２８７番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2021-04-28"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "同名の鎮座地を公的資料の大字・全地番で確かめ、神社庁と国税庁が同じ字で印字した小字名を照合。全文の読みも別資料で確認。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/21.html",
       "name_raw": "吉野神社",
       "normalization": [
@@ -156555,11 +158656,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "166a62b7cfbac80a54c0f4e356b7d55181143a9cbf99be0adf58d233b616cada",
-      "reading": "",
+      "reading": "よしのじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/21.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -156623,6 +158724,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "よしのじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "よしのじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "吉野神社",
         "wikipedia_article_refs": [],
@@ -156653,7 +158768,7 @@
         "status": "pending",
         "surface": "吉野神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "吉野神社"
     },
     {
@@ -158337,12 +160452,257 @@
       "surface": "八幡神社"
     },
     {
-      "checked_at": "2026-11-09T08:51:45.726386+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「倭文神社」、郵便番号「625-0813」、所在地「舞鶴市今田津ノ上1010」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "f0d398f1-2473-5399-8791-26c9ca60734f",
       "fetched_at": "2026-11-09T08:51:45.726386+00:00",
       "id": "4116b061-8d83-5726-9216-2655ae292f86",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "しどりじんじゃ"
+          },
+          "expected_source_hash": "a1530695456bb2bb9bf31255ea4dea58006345bec17296b7c37688e34753a8e4",
+          "facility_id": "f0d398f1-2473-5399-8791-26c9ca60734f",
+          "identity_match": {
+            "reference_address": "京都府舞鶴市字今田小字津ノ上１０１０番地",
+            "source_address": "舞鶴市今田津ノ上1010",
+            "source_name": "倭文神社"
+          },
+          "original": {
+            "address": "舞鶴市今田津ノ上1010",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
+            "name_raw": "倭文神社",
+            "reading_raw": ""
+          },
+          "reason": "同名の鎮座地を公的資料の大字・全地番で確かめ、神社庁と国税庁が同じ字で印字した小字名を照合。全文の読みも別資料で確認。",
+          "references": [
+            {
+              "address_identity_proof": {
+                "agency_address_raw": "舞鶴市今田津ノ上1010",
+                "expected_source_hash": "a1530695456bb2bb9bf31255ea4dea58006345bec17296b7c37688e34753a8e4",
+                "kind": "registered_abr_town_spelling",
+                "registry_csv_row": 50749,
+                "registry_page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                "town_master": {
+                  "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                  "bytes": 11549958,
+                  "checked_at": "2026-11-19T13:51:14.750202+00:00",
+                  "license_checked_at": "2026-11-19T13:51:08.515256+00:00",
+                  "license_hash": "c8740066d65a1b3b3069a0528b6ca632db15577c92bdbd81b8994c71e23b2e14",
+                  "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                  "member": "mt_town_all.csv",
+                  "page_hash": "34ef6e8b6964b3b542f99b9b70a259b0e5c955ec7970485f11a3ccd6e46c4907",
+                  "processed_notice": "「全国 町字マスター」（デジタル庁）をもとに対応する大字行を抜粋して照合。",
+                  "row": {
+                    "ablt_date": "",
+                    "chome": "",
+                    "chome_kana": "",
+                    "chome_number": "",
+                    "city": "舞鶴市",
+                    "city_kana": "マイヅルシ",
+                    "city_roma": "Maizuru-shi",
+                    "county": "",
+                    "county_kana": "",
+                    "county_roma": "",
+                    "csv_row": 562973,
+                    "efct_date": "1947-04-17",
+                    "koaza": "",
+                    "koaza_aka_code": "0",
+                    "koaza_gsi_uncmn": "0",
+                    "koaza_kana": "",
+                    "koaza_roma": "",
+                    "lg_code": "262021",
+                    "machiaza_dist": "",
+                    "machiaza_id": "0010000",
+                    "machiaza_type": "1",
+                    "oaza_cho": "字今田",
+                    "oaza_cho_aka_flg": "0",
+                    "oaza_cho_gsi_uncmn": "0",
+                    "oaza_cho_kana": "アザイマダ",
+                    "oaza_cho_roma": "Imada",
+                    "post_code": "6240813",
+                    "pref": "京都府",
+                    "pref_kana": "キョウトフ",
+                    "pref_roma": "Kyoto",
+                    "remarks": "",
+                    "rsdt_addr_flg": "0",
+                    "rsdt_addr_mtd_code": "0",
+                    "src_code": "0",
+                    "status_flg": "1",
+                    "wake_num_flg": "1",
+                    "ward": "",
+                    "ward_kana": "",
+                    "ward_roma": ""
+                  },
+                  "rows": 727533,
+                  "source_kind": "government_address_town_master",
+                  "source_publisher": "デジタル庁",
+                  "title": "全国 町字マスター",
+                  "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                },
+                "unmarked_koaza": {
+                  "name_raw": "津ノ上",
+                  "shrine_site": {
+                    "address_column_raw": "所 在 地",
+                    "address_raw": "字今田1010",
+                    "category_raw": "建造物",
+                    "checked_at": "2026-11-20T01:38:36.061362+00:00",
+                    "date_raw": "2019.2.1",
+                    "era_raw": "―",
+                    "excerpt": "倭文神社本殿 / 字今田1010",
+                    "item_raw": "倭文神社本殿",
+                    "landing_checked_at": "2026-11-20T01:38:33.902674+00:00",
+                    "landing_link_raw": "市内の指定・登録文化財一覧（令和8年4月1日現在）",
+                    "landing_page_hash": "507bd9a3628138682abe36b71ded436dd13be321b1da2dc5e56a81f74fa7db6c",
+                    "landing_url": "https://www.city.maizuru.kyoto.jp/0000002476.html",
+                    "location_header_raw": "所 在 地",
+                    "locator": "PDF page 5 (index 4) ／ 京都府暫定登録文化財 ／ 建造物 ／ 倭文神社本殿",
+                    "municipality_context": "舞鶴市",
+                    "number_raw": "1棟",
+                    "owner_raw": "倭文神社",
+                    "page_hash": "f3ee1526370cc5eddff9bf09a0a665575c7012a9098354579783ce73771a8c86",
+                    "publisher": "舞鶴市",
+                    "remarks_raw": "",
+                    "role": "government_physical_site",
+                    "scope_raw": "舞鶴市内の指定・登録文化財一覧",
+                    "source_kind": "government_shrine_site",
+                    "url": "https://www.city.maizuru.kyoto.jp/cmsfiles/contents/0000002/2476/ichiran.pdf",
+                    "visual_reviewed": true
+                  }
+                }
+              },
+              "address_raw": "京都府舞鶴市字今田小字津ノ上１０１０番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "4130005011579",
+              "csv_row": 50749,
+              "excerpt": "倭文神社 / シドリジンジャ / 京都府舞鶴市字今田小字津ノ上１０１０番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435; 26_kyoto_all_20261030.csv; row 50749; corporateNumber=4130005011579",
+              "name_raw": "倭文神社",
+              "other_documented_values": [
+                {
+                  "checked_at": "2026-11-20T01:34:27.886044+00:00",
+                  "count_raw": "1棟",
+                  "item_raw": "倭文神社本殿",
+                  "locator": "PDF page 2 (printed 7) > 建造物 > No. 52 > 所有者の住所 / 所在の場所",
+                  "municipality_raw": "舞鶴市",
+                  "number_raw": "52",
+                  "owner_address_raw": "舞鶴市今田小字津ノ上1010",
+                  "owner_raw": "倭文神社",
+                  "page_hash": "743ad4799cb3c485587881599875aacc40935f1427c3be9b316963507869c367",
+                  "physical_locality_raw": "舞鶴市今田小字津ノ上",
+                  "publisher": "京都府教育委員会",
+                  "role": "government_owner_parcel_and_physical_locality",
+                  "url": "https://www.kyoto-be.ne.jp/soumu/cms/wp-content/uploads/2022/12/%E5%B9%B3%E6%88%9030%E5%B9%B412%E6%9C%8820%E6%97%A5%EF%BC%88%E6%9C%A8%EF%BC%89%E3%80%80%E5%AE%9A%E4%BE%8B%E6%95%99%E8%82%B2%E5%A7%94%E5%93%A1%E4%BC%9A%E5%A0%B1%E5%91%8A%EF%BC%93-2.pdf",
+                  "visual_reviewed": true
+                },
+                {
+                  "address_raw": "京都府 舞鶴市 字今田小字津ノ上1010番地",
+                  "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                  "checked_at": "2026-11-20T01:38:02.282416+00:00",
+                  "date_raw": "1981-03-13",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "基本情報 > ジャパンナレッジID 260000232400 > 名称・名称（よみ）・住所",
+                  "name_raw": "倭文神社",
+                  "page_hash": "c1c4ec5f628a0b286b2b3c906703d4aa561f1d68a131ce083301dc9a1c776769",
+                  "publisher": "人文学オープンデータ共同利用センター（CODH）",
+                  "reading_raw": "しどりじんじや",
+                  "role": "historical_reference_full_address",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/26/260000232400.html"
+                },
+                {
+                  "checked_at": "2026-11-20T01:34:27.622093+00:00",
+                  "locality_raw": "今田",
+                  "locator": "郵便番号検索 > 検索結果 > 京都府・舞鶴市・今田",
+                  "municipality_raw": "舞鶴市",
+                  "page_hash": "6bff6eed73ffdf9438523b9c01a6ef316f6fe53405783a06ecf948ad7b27dc40",
+                  "postal_raw": "624-0813",
+                  "prefecture_raw": "京都府",
+                  "publisher": "日本郵便",
+                  "role": "postal_locality",
+                  "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1262020&id=105081&merge=&pref=26"
+                },
+                {
+                  "address_raw": "京都府舞鶴市今田1010",
+                  "checked_at": "2026-11-20T01:34:27.776031+00:00",
+                  "locator": "本文 > ［住所］ および本文冒頭",
+                  "name_raw": "倭文神社",
+                  "page_hash": "28104f747a545970b03a1ada02a19d606c7b9b372937a06b6668e2588a6f8d04",
+                  "publisher": "神社と古事記",
+                  "reading_raw": "しとりじんじゃ",
+                  "role": "secondary_conflicting_reading",
+                  "url": "https://www.buccyake-kojiki.com/archives/1071296631.html"
+                }
+              ],
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_crosscheck": {
+                "checked_at": "2026-11-20T01:34:29.785087+00:00",
+                "locality_raw": "今田、堀、池ノ内下地区",
+                "locator": "本文 h2 > （宗教法人）倭文神社（しどりじんじゃ）　（舞鶴市）",
+                "municipality_raw": "舞鶴市",
+                "name_raw": "倭文神社",
+                "page_hash": "f9bcddcafd036c7688309de4751dd692b6bd437009dc96027f33a035de7e7e76",
+                "publisher": "京都府",
+                "reading_raw": "しどりじんじゃ",
+                "role": "government_full_reading",
+                "terms_url": "https://www.pref.kyoto.jp/copyright.html",
+                "url": "https://www.pref.kyoto.jp/mishitei-bunkazai/1192497577803.html"
+              },
+              "reading_raw": "シドリジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:48:46.584202+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "4130005011579"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "202",
+                "cityName": "舞鶴市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "4130005011579",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "シドリジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "倭文神社",
+                "nameImageId": "",
+                "postCode": "6240813",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "50749",
+                "streetNumber": "字今田小字津ノ上１０１０番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2020-12-08"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "同名の鎮座地を公的資料の大字・全地番で確かめ、神社庁と国税庁が同じ字で印字した小字名を照合。全文の読みも別資料で確認。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
       "name_raw": "倭文神社",
       "normalization": [
@@ -158350,11 +160710,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "c2646e766be6ec51a930d75a262229d8e184e893bd17809ac9431d9f9e530e8b",
-      "reading": "",
+      "reading": "しどりじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -158463,6 +160823,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "しどりじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "しどりじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "倭文神社",
         "wikipedia_article_refs": [
@@ -158502,7 +160876,7 @@
         "status": "pending",
         "surface": "倭文神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "倭文神社"
     },
     {
@@ -193267,12 +195641,108 @@
       "surface": "山神神社"
     },
     {
-      "checked_at": "2026-11-09T08:52:00.328312+00:00",
+      "checked_at": "2026-11-09T09:31:08.258279+00:00",
       "evidence": "京都府神社庁の同一一覧行に掲載名「恵比須神社」、郵便番号「629-1104」、所在地「船井郡京丹波町篠原火口13」を明記。全文読みの独立欄は当該行にない。",
       "facility_id": "82ed73b0-89a3-5044-9a85-8f56448ea20b",
       "fetched_at": "2026-11-09T08:52:00.328312+00:00",
       "id": "fb5d2c47-f0bf-55f2-98e1-cec1b058776c",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "えびすじんじゃ"
+          },
+          "expected_source_hash": "8ef281ade3344c0f20c5680ded1cfba5f0bf0a6ca8095a099d0f63fa5ec99788",
+          "facility_id": "82ed73b0-89a3-5044-9a85-8f56448ea20b",
+          "identity_match": {
+            "agency_address": "船井郡京丹波町篠原火口13",
+            "agency_name": "恵比須神社",
+            "reference_address": "京都府船井郡京丹波町篠原火口１３番地",
+            "reference_name": "惠比須神社"
+          },
+          "original": {
+            "address": "船井郡京丹波町篠原火口13",
+            "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
+            "name_raw": "恵比須神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "京都府船井郡京丹波町篠原火口１３番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-09T09:31:08.258279+00:00",
+              "corporate_number": "3130005007801",
+              "csv_row": 37509,
+              "excerpt": "惠比須神社 / エビスジンジャ / 京都府船井郡京丹波町篠原火口１３番地",
+              "file_id": "28435",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28435 26_kyoto_all_20261030.csv row 37509",
+              "name_raw": "惠比須神社",
+              "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "エビスジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "恵比須神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "恵（惠）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "3130005007801"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "407",
+                "cityName": "船井郡京丹波町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "3130005007801",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "エビスジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "惠比須神社",
+                "nameImageId": "",
+                "postCode": "6291104",
+                "prefectureCode": "26",
+                "prefectureName": "京都府",
+                "process": "01",
+                "sequenceNumber": "37509",
+                "streetNumber": "篠原火口１３番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2020-11-30"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "26_kyoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
       "name_raw": "恵比須神社",
       "normalization": [
@@ -193280,11 +195750,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "8422b2e4b3fcb5146795a3aeb533c6ae715e2e83f3449f039395d4af65121a23",
-      "reading": "",
+      "reading": "えびすじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -193321,6 +195791,20 @@
         "prefecture_code": "26",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "えびすじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "えびすじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "恵比須神社",
         "wikipedia_article_refs": [],
@@ -193351,7 +195835,7 @@
         "status": "pending",
         "surface": "恵比須神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "恵比須神社"
     },
     {

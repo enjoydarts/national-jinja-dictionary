@@ -121,10 +121,13 @@ def _nagano_booklet_address(ref,facility,entry):
 
 
 def _reference_matches(ref,facility,entry,changes):
+    registered_variant = 'registered_name_variant' in ref
+    if registered_variant and (set(changes)!={'reading'} or entry.get('status')=='excluded'):
+        return False
     names={_comparison(facility.get('listed_name')),_comparison(entry.get('surface')),
            _comparison(changes.get('surface'))}-{''}
     strict_registered_address=False
-    if _comparison(ref.get('name_raw')) not in names:
+    if registered_variant or _comparison(ref.get('name_raw')) not in names:
         from njd.corporate import bound_registered_shrine_name
         if _comparison(bound_registered_shrine_name(ref)) not in names:return False
         strict_registered_address=True
@@ -415,7 +418,8 @@ def apply_corrections(data,document):
             references=correction.get('references')
             context_excluded=(entry.get('status')=='excluded' and isinstance(references,list)
                 and any(isinstance(r,dict) and (
-                    any(k in r for k in ('document_address_context','csv_address_context','booklet_address_context','article_address_context'))
+                    any(k in r for k in ('document_address_context','csv_address_context','booklet_address_context',
+                                        'article_address_context','registered_name_variant'))
                     or (isinstance(r.get('address_identity_proof'),dict)
                         and r['address_identity_proof'].get('kind')==REGISTERED_TOWN_PROOF))
                     for r in references))

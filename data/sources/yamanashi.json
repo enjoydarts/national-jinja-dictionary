@@ -111067,12 +111067,108 @@
       "surface": "三峯神社"
     },
     {
-      "checked_at": "2026-11-08T14:28:55.003722+00:00",
+      "checked_at": "2026-11-19T12:14:32.394184+00:00",
       "evidence": "7039 報国神社 富士吉田市小明見1590 南都留支部 詳細>>",
       "facility_id": "d5786028-8514-50c7-9c2d-6b63f4f542e5",
       "fetched_at": "2026-11-08T14:28:55.003722+00:00",
       "id": "c4f03768-5eb5-50e1-a0b9-651d731536dd",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ほうこくじんじゃ"
+          },
+          "expected_source_hash": "9aa5baa89e15aa3a0c58167b08f72cdae32838347ecb0a271169240789c388e9",
+          "facility_id": "d5786028-8514-50c7-9c2d-6b63f4f542e5",
+          "identity_match": {
+            "agency_address": "富士吉田市小明見1590",
+            "agency_name": "報国神社",
+            "reference_address": "山梨県富士吉田市小明見１５９０番地",
+            "reference_name": "報國神社"
+          },
+          "original": {
+            "address": "富士吉田市小明見1590",
+            "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/2",
+            "name_raw": "報国神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "山梨県富士吉田市小明見１５９０番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:32.394184+00:00",
+              "corporate_number": "7090005004312",
+              "csv_row": 27646,
+              "excerpt": "報國神社 / ホウコクジンジャ / 山梨県富士吉田市小明見１５９０番地",
+              "file_id": "28413",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28413 19_yamanashi_all_20261030.csv row 27646",
+              "name_raw": "報國神社",
+              "page_hash": "06f357672fd7ea5aa55021afe4f7a5a51c327cad16617bf38abb40c859fc205a",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ホウコクジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "報国神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "国（國）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "7090005004312"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "202",
+                "cityName": "富士吉田市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "7090005004312",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ホウコクジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "報國神社",
+                "nameImageId": "",
+                "postCode": "4030002",
+                "prefectureCode": "19",
+                "prefectureName": "山梨県",
+                "process": "01",
+                "sequenceNumber": "27646",
+                "streetNumber": "小明見１５９０番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2019-06-05"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "19_yamanashi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/2",
       "name_raw": "報国神社",
       "normalization": [
@@ -111080,11 +111176,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "9d6570f20d052c3ee66c4bbc83a679c9550f09cbfbec9cc85290ed2a99f89c63",
-      "reading": "",
+      "reading": "ほうこくじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/2",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -111124,6 +111220,20 @@
         "prefecture_code": "19",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ほうこくじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ほうこくじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "報国神社",
         "wikipedia_article_refs": [],
@@ -111154,7 +111264,7 @@
         "status": "pending",
         "surface": "報国神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "報国神社"
     },
     {
@@ -124174,12 +124284,108 @@
       "surface": "春日神社"
     },
     {
-      "checked_at": "2026-11-08T14:29:08.409484+00:00",
+      "checked_at": "2026-11-19T12:14:32.394184+00:00",
       "evidence": "8040 福寿神社 大月市富浜町鳥沢410 北都留支部 詳細>>",
       "facility_id": "77e6299c-a962-55ac-9726-40c6904f2508",
       "fetched_at": "2026-11-08T14:29:08.409484+00:00",
       "id": "9232aa2a-a2ac-5dac-8b1b-eda00eb6b39a",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ふくじゅじんじゃ"
+          },
+          "expected_source_hash": "e2a346b94e0491bd44fbaafc2c6deefd80851f73a7988c80b53bc6086f1ca490",
+          "facility_id": "77e6299c-a962-55ac-9726-40c6904f2508",
+          "identity_match": {
+            "agency_address": "大月市富浜町鳥沢410",
+            "agency_name": "福寿神社",
+            "reference_address": "山梨県大月市富浜町鳥沢４１０番地",
+            "reference_name": "福壽神社"
+          },
+          "original": {
+            "address": "大月市富浜町鳥沢410",
+            "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/8/2",
+            "name_raw": "福寿神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "山梨県大月市富浜町鳥沢４１０番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:32.394184+00:00",
+              "corporate_number": "3090005003029",
+              "csv_row": 11523,
+              "excerpt": "福壽神社 / フクジュジンジャ / 山梨県大月市富浜町鳥沢４１０番地",
+              "file_id": "28413",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28413 19_yamanashi_all_20261030.csv row 11523",
+              "name_raw": "福壽神社",
+              "page_hash": "06f357672fd7ea5aa55021afe4f7a5a51c327cad16617bf38abb40c859fc205a",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "フクジュジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "福寿神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "寿（壽）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "3090005003029"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "206",
+                "cityName": "大月市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "3090005003029",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "フクジュジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "福壽神社",
+                "nameImageId": "",
+                "postCode": "4090502",
+                "prefectureCode": "19",
+                "prefectureName": "山梨県",
+                "process": "01",
+                "sequenceNumber": "11523",
+                "streetNumber": "富浜町鳥沢４１０番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2019-04-24"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "19_yamanashi_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/8/2",
       "name_raw": "福寿神社",
       "normalization": [
@@ -124187,11 +124393,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "a418089fec187e9fee67c8c265cfee005c52d988a6124c430e6df887a3e5cba9",
-      "reading": "",
+      "reading": "ふくじゅじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/8/2",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -124231,6 +124437,20 @@
         "prefecture_code": "19",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ふくじゅじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ふくじゅじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "福寿神社",
         "wikipedia_article_refs": [],
@@ -124261,7 +124481,7 @@
         "status": "pending",
         "surface": "福寿神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "福寿神社"
     },
     {

@@ -45,6 +45,43 @@ class CorporateTests(unittest.TestCase):
                 proposals,pending=c.proposals_for_archive(archive([row(**change)]),[target()],META)
                 self.assertEqual(proposals,{});self.assertIn('e',pending)
 
+    def test_registered_old_form_needs_an_exact_documented_pair_and_image(self):
+        from njd.corrections import _reference_matches
+
+        item = target()
+        facility, entry = item['facility'], item['entry']
+        facility.update(listed_name='巣守神社', name_raw='巣守神社')
+        entry.update(surface='巣守神社', reading_raw='すもりじじゃ')
+        fields = dict(zip(c.FIELDS, row(name='巢守神社', nameImageId='00001234', furigana='スモリジンジャ')))
+        ref = dict(META, source_kind='government_corporate_register', name_raw=fields['name'],
+                   reading_raw=fields['furigana'], address_raw='鳥取県鳥取市大覚寺７６番地',
+                   corporate_number=fields['corporateNumber'], csv_row=1, source_fields=fields,
+                   zip_member='31_tottori_all_20261030.csv')
+        evidence = dict(url=c.BASE+'/image?imageid=00001234', image_id='00001234',
+                        page_hash='b'*64, fetched_at=META['checked_at'], checked_at=META['checked_at'],
+                        corporate_number=fields['corporateNumber'], archive_page_hash=META['page_hash'],
+                        snapshot=META['snapshot'], csv_row=1, source_name_raw=fields['name'],
+                        source_address_raw=ref['address_raw'], printed_text=fields['name'],
+                        method='visual_inspection_of_official_image', note='原字を目視')
+        ref['image_reviews'] = {'nameImageId': evidence}
+        ref['registry_state_proof'] = dict(as_of='20261119', unique_active_corporate_number=fields['corporateNumber'],
+                                          full_address_active_corporations=1)
+        ref['registered_name_variant'] = dict(
+            bound_name_raw='巣守神社', url='https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html',
+            excerpt='巣（巢）', checked_at=META['checked_at'], page_hash='c'*64)
+        changes = {'reading':'すもりじんじゃ'}
+        self.assertTrue(_reference_matches(ref, facility, entry, changes))
+        self.assertFalse(_reference_matches(ref, {**facility, 'address':'鳥取市大覚寺76-1'}, entry, changes))
+        self.assertFalse(_reference_matches(ref, facility, {**entry, 'status':'excluded'}, changes))
+        self.assertFalse(_reference_matches({**ref, 'image_reviews': {}}, facility, entry, changes))
+        plain = {**ref, 'source_fields':{**fields,'nameImageId':''}}
+        plain.pop('image_reviews')
+        self.assertTrue(_reference_matches(plain, facility, entry, changes))
+        self.assertFalse(_reference_matches({**plain, 'source_fields':{**plain['source_fields'], 'hihyoji':'1'}},
+                                            facility, entry, changes))
+        ref['registered_name_variant']['bound_name_raw'] = '巣守神社本殿'
+        self.assertFalse(_reference_matches(ref, facility, entry, changes))
+
     def test_missing_parcel_and_duplicate_identity_rejected(self):
         t=target();t['facility']['address']='鳥取市大覚寺'
         self.assertFalse(c.proposals_for_archive(archive([row()]),[t],META)[0])

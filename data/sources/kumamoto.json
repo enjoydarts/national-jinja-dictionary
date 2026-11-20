@@ -6829,12 +6829,95 @@
       "surface": "内牧菅原神社"
     },
     {
-      "checked_at": "2026-11-08T14:33:10.774362+00:00",
+      "checked_at": "2026-11-19T12:15:05.271572+00:00",
       "evidence": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%b9%a3%e7%ab%8b%e7%a5%9e%e7%a4%be/\"]: 名称=幣立神社; 掲載読み=; 所在地=上益城郡大野712",
       "facility_id": "d6222f82-66a9-5895-b393-501b3ddbf627",
       "fetched_at": "2026-11-08T14:33:10.774362+00:00",
       "id": "073759e8-3bbd-5fca-849e-70cc893d197c",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "へいたてじんじゃ"
+          },
+          "expected_source_hash": "f31af64f89468d5eb9f2d02cb2de46af71d02b0779b97cd6d2c0db669c1242e9",
+          "facility_id": "d6222f82-66a9-5895-b393-501b3ddbf627",
+          "identity_match": {
+            "reference_address": "熊本県上益城郡山都町大野７１２番地",
+            "source_address": "上益城郡大野712",
+            "source_name": "幣立神社"
+          },
+          "original": {
+            "address": "上益城郡大野712",
+            "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/2/",
+            "name_raw": "幣立神社",
+            "reading_raw": ""
+          },
+          "reason": "確認済みの鎮座地と同一全地番に所在する、同名存続法人の全文フリガナを採用。",
+          "references": [
+            {
+              "address_raw": "熊本県上益城郡山都町大野７１２番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:15:05.271572+00:00",
+              "corporate_number": "1330005004004",
+              "csv_row": 7313,
+              "excerpt": "幣立神社 / ヘイタテジンジャ / 熊本県上益城郡山都町大野７１２番地",
+              "file_id": "28490",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28490; 43_kumamoto_all_20261030.csv; row 7313; corporateNumber=1330005004004",
+              "name_raw": "幣立神社",
+              "page_hash": "303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ヘイタテジンジャ",
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-19T13:53:21.966343+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1330005004004"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "447",
+                "cityName": "上益城郡山都町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1330005004004",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ヘイタテジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "幣立神社",
+                "nameImageId": "",
+                "postCode": "8613905",
+                "prefectureCode": "43",
+                "prefectureName": "熊本県",
+                "process": "01",
+                "sequenceNumber": "7313",
+                "streetNumber": "大野７１２番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2021-05-25"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "Registered full literal kana with exact shrine name and same printed locality and parcel after a documented structural marker comparison.",
+              "zip_member": "43_kumamoto_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/2/",
       "name_raw": "幣立神社",
       "normalization": [
@@ -6842,11 +6925,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "7b2a8d7e31cd3984dac3bd774d4b5d9f70ecaa1fb7024fcc17ed097f1809dd97",
-      "reading": "",
+      "reading": "へいたてじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/2/",
-      "reason": "missing name, address or municipality",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -6963,6 +7046,20 @@
         "prefecture_code": "43",
         "reading_raw": "",
         "reason": "missing name, address or municipality",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "へいたてじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "へいたてじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "source_assessment": {
           "assessment_group": "resident_region_not_shrine_location",
           "checked_at": "2026-11-11T10:14:44.472519+00:00",
@@ -7032,7 +7129,7 @@
         "status": "pending",
         "surface": "幣立神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "幣立神社"
     },
     {
@@ -23980,7 +24077,7 @@
       "reading_raw": "",
       "reading_source_kind": "agency",
       "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/7/",
-      "reason": "missing name, address or municipality",
+      "reason": "missing agency reading",
       "research": {
         "additional_source_reviews": [
           {
@@ -99400,12 +99497,213 @@
       "status": "verified"
     },
     {
-      "address": "上益城郡大野712",
+      "address": "上益城郡山都町大野712",
       "agency": "熊本県神社庁",
-      "checked_at": "2026-11-08T14:33:10.774362+00:00",
+      "checked_at": "2026-11-20T01:35:06+00:00",
       "fetched_at": "2026-11-08T14:33:10.774362+00:00",
       "id": "d6222f82-66a9-5895-b393-501b3ddbf627",
-      "judgments": {},
+      "judgments": {
+        "locations": {
+          "agency_link": {
+            "address_label": "お住まいの地域",
+            "area_raw": "上益城郡大野712",
+            "fetched_at": "2026-11-08T14:33:10.774362+00:00",
+            "href_raw": "https://kumamotokenjinjacho.jp/patron-god/%e5%b9%a3%e7%ab%8b%e7%a5%9e%e7%a4%be/",
+            "locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%b9%a3%e7%ab%8b%e7%a5%9e%e7%a4%be/\"]",
+            "name_raw": "幣立神社",
+            "page_hash": "7b2a8d7e31cd3984dac3bd774d4b5d9f70ecaa1fb7024fcc17ed097f1809dd97",
+            "term_role": "residential_area_for_affiliated_shrine_search",
+            "url": "https://kumamotokenjinjacho.jp/patron-god/page/2/"
+          },
+          "alias_reference": {
+            "alias_raw": "幣立神宮",
+            "checked_at": "2026-11-20T01:35:06+00:00",
+            "excerpt": "幣立神宮(幣立神社)",
+            "locator": "PDF 21頁（紙面18頁）2（2）その他の観光資源の名称と所在地等「幣立宮」行",
+            "name_raw": "幣立神社",
+            "page_hash": "d392ff3cb7034bc311d2ead520a585a39e3a0757b8dbca3929a6d8f499029c3e",
+            "policy_reference": {
+              "checked_at": "2026-11-20T01:37:23+00:00",
+              "condition": "公共データ利用規約1.0の第三者保有分などの例外を留保。計画の作成者名を保ち、同じ神社を指す2つの名称のみを照合。",
+              "locator": "著作権について > 1.1 出典の記載について",
+              "page_hash": "ea4331992f643fb2db9649ea134b793c875f2ee1535f4b8bb109ae8a4f8bc8b4",
+              "url": "https://www.env.go.jp/mail.html"
+            },
+            "robots": {
+              "applicable_rule": "Disallow: /cgi-bin/",
+              "status": 200,
+              "url": "https://www.env.go.jp/robots.txt"
+            },
+            "snapshot": "2019-07-11",
+            "source_kind": "government_hosted_certified_plan",
+            "source_publisher": "阿蘇ジオパーク推進協議会",
+            "title": "阿蘇エコツーリズム推進全体構想",
+            "url": "https://www.env.go.jp/nature/ecotourism/try-ecotourism/certification/aso/kousou/images/document/kousou.pdf"
+          },
+          "changes": {
+            "address": "上益城郡山都町大野712",
+            "municipality": "上益城郡山都町"
+          },
+          "entry_id": "073759e8-3bbd-5fca-849e-70cc893d197c",
+          "expected_source_hash": "f31af64f89468d5eb9f2d02cb2de46af71d02b0779b97cd6d2c0db669c1242e9",
+          "facility_id": "d6222f82-66a9-5895-b393-501b3ddbf627",
+          "original": {
+            "address": "上益城郡大野712",
+            "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/2/",
+            "municipality": "",
+            "name_raw": "幣立神社",
+            "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e5%b9%a3%e7%ab%8b%e7%a5%9e%e7%a4%be/",
+            "official_site_url": null
+          },
+          "postal_municipality_observation": {
+            "checked_at": "2026-11-19T13:47:41.581386+00:00",
+            "county_towns_for_exact_locality": [
+              "上益城郡山都町"
+            ],
+            "locality_raw": "大野",
+            "logical_row": 119304,
+            "member": "utf_ken_all.csv",
+            "multiple_localities_raw": "0",
+            "municipality_code": "43447",
+            "municipality_raw": "上益城郡山都町",
+            "page_hash": "db92fcf624bb7280e6f51900aebe03adeafbd168796e59412dbc22a80abb85b9",
+            "post_code_raw": "8613905",
+            "prefecture_raw": "熊本県",
+            "readme": {
+              "checked_at": "2026-11-19T13:47:39.233632+00:00",
+              "page_hash": "0cb427a3955fd4772abcad39e65e6ba4163c0760921c945a25af2e73b9c716b7",
+              "url": "https://www.post.japanpost.jp/service/search/zipcode/download/utf-readme.html"
+            },
+            "source_kind": "postal_locality_directory",
+            "sub_aza_parcel_numbering_raw": "0",
+            "url": "https://www.post.japanpost.jp/service/search/zipcode/download/utf/zip/utf_ken_all.zip"
+          },
+          "prefectural_office_register": {
+            "attribution": "出典：熊本県オープンデータ 宗教法人名簿（熊本県）",
+            "cell_addresses": {
+              "事務所所在地": "F1147",
+              "包括": "B1147",
+              "市町村": "E1147",
+              "法人名称": "C1147",
+              "番号": "A1147",
+              "郵便番号": "D1147"
+            },
+            "checked_at": "2026-11-19T13:50:19.195315+00:00",
+            "columns": {
+              "事務所所在地": "山都町大野712",
+              "包括": "神社本庁",
+              "市町村": "上益城郡",
+              "法人名称": "幣立神社",
+              "番号": "1145",
+              "郵便番号": "8613905"
+            },
+            "condition": "可視セル値の法人名称・包括団体・事務所所在地・郵便番号を照合。入力時発生のrPhや個人欄は使用していない。",
+            "license_reference": {
+              "checked_at": "2026-11-19T13:50:21.485098+00:00",
+              "page_hash": "ef786c19ad7ae5aa3314686f09a20f452f47c32e68e7d42083ef79fbd9dd0a7f",
+              "url": "https://data.bodik.jp/dataset/430005_00107"
+            },
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "logical_row": 1147,
+            "member": "xl/worksheets/sheet1.xml",
+            "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+            "snapshot": "2025-08-01",
+            "source_kind": "government_religious_corporation_office_register",
+            "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+          },
+          "reason": "神社庁の居住地域原欄は保持。公的資料が所在地として明記した全地番と公的資料の通称を、神社庁の原欄と現存法人の原欄に照合。",
+          "reference": {
+            "address_raw": "上益城郡山都町大野712",
+            "address_role": "visitable_shrine_site",
+            "checked_at": "2026-11-20T01:35:06+00:00",
+            "excerpt": "幣立神宮 / 上益城郡山都町大野712",
+            "fetched_at": "2026-11-20T01:35:06+00:00",
+            "heading_raw": "幣立神宮（山都町）",
+            "location_role": "shrine",
+            "locator": "PDF 5頁 No.3「幣立神宮（山都町）」の同欄の所在地",
+            "name_raw": "幣立神宮",
+            "page_hash": "17a9a81ba37cb54649364ca65b54d2f0c9b534f8e728ff839d46902aecf13cfb",
+            "policy_reference": {
+              "checked_at": "2026-11-20T01:37:23+00:00",
+              "condition": "法で認められる引用等を除く無断利用に制限。公表事実の施設名と所在地のみを照合。",
+              "locator": "著作権",
+              "page_hash": "2b9470453a089b3bc90cbdd1a3c5bf4bb034532ff9da3cef92ff29a2f1b1d886",
+              "url": "https://www.pref.kumamoto.jp/soshiki/1/56078.html"
+            },
+            "robots": {
+              "applicable_rule": "Allow: /",
+              "status": 200,
+              "url": "https://www.pref.kumamoto.jp/robots.txt"
+            },
+            "source_kind": "prefectural_shrine_tourism",
+            "source_publisher": "熊本県",
+            "title": "熊本県の観光パンフレット",
+            "url": "https://www.pref.kumamoto.jp/uploaded/attachment/299762.pdf"
+          },
+          "registry_reference": {
+            "address_raw": "熊本県上益城郡山都町大野７１２番地",
+            "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+            "checked_at": "2026-11-19T12:15:05.271572+00:00",
+            "corporate_number": "1330005004004",
+            "csv_row": 7313,
+            "excerpt": "幣立神社 / ヘイタテジンジャ / 熊本県上益城郡山都町大野７１２番地",
+            "file_id": "28490",
+            "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+            "locator": "Unicode CSV file ID 28490; 43_kumamoto_all_20261030.csv; row 7313; corporateNumber=1330005004004",
+            "name_raw": "幣立神社",
+            "page_hash": "303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c",
+            "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+            "reading_raw": "ヘイタテジンジャ",
+            "registry_state_proof": {
+              "as_of": "20261119",
+              "checked_at": "2026-11-19T13:53:21.966343+00:00",
+              "full_address_active_corporations": 1,
+              "unique_active_corporate_number": "1330005004004"
+            },
+            "snapshot": "20261030",
+            "source_fields": {
+              "addressImageId": "",
+              "addressOutside": "",
+              "addressOutsideImageId": "",
+              "assignmentDate": "2015-10-05",
+              "changeCause": "",
+              "changeDate": "2015-10-05",
+              "cityCode": "447",
+              "cityName": "上益城郡山都町",
+              "closeCause": "",
+              "closeDate": "",
+              "corporateNumber": "1330005004004",
+              "correct": "1",
+              "enAddressOutside": "",
+              "enCityName": "",
+              "enName": "",
+              "enPrefectureName": "",
+              "furigana": "ヘイタテジンジャ",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name": "幣立神社",
+              "nameImageId": "",
+              "postCode": "8613905",
+              "prefectureCode": "43",
+              "prefectureName": "熊本県",
+              "process": "01",
+              "sequenceNumber": "7313",
+              "streetNumber": "大野７１２番地",
+              "successorCorporateNumber": "",
+              "updateDate": "2021-05-25"
+            },
+            "source_kind": "government_corporate_register",
+            "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+            "title": "国税庁法人番号公表サイト 全件データ",
+            "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+            "verification_method": "Registered full literal kana with exact shrine name and same printed locality and parcel after a documented structural marker comparison.",
+            "zip_member": "43_kumamoto_all_20261030.csv"
+          },
+          "status": "verified",
+          "supplement_kind": "kumamoto_documented_shrine_site"
+        }
+      },
       "listed_name": "幣立神社",
       "listing_occurrences": [
         {
@@ -99416,14 +99714,14 @@
         }
       ],
       "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/2/",
-      "municipality": "",
+      "municipality": "上益城郡山都町",
       "name_raw": "幣立神社",
       "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e5%b9%a3%e7%ab%8b%e7%a5%9e%e7%a4%be/",
       "official_site_url": null,
       "page_hash": "7b2a8d7e31cd3984dac3bd774d4b5d9f70ecaa1fb7024fcc17ed097f1809dd97",
       "prefecture": "熊本県",
       "prefecture_code": "43",
-      "reason": "missing name, address or municipality",
+      "reason": "",
       "source_hash": "f31af64f89468d5eb9f2d02cb2de46af71d02b0779b97cd6d2c0db669c1242e9",
       "source_key": "kumamoto",
       "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%b9%a3%e7%ab%8b%e7%a5%9e%e7%a4%be/\"]",
@@ -99456,7 +99754,7 @@
         "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%b9%a3%e7%ab%8b%e7%a5%9e%e7%a4%be/\"]",
         "status": "pending"
       },
-      "status": "pending"
+      "status": "verified"
     },
     {
       "address": "上益城郡長谷260",
@@ -111153,12 +111451,239 @@
       "status": "pending"
     },
     {
-      "address": "阿蘇郡大字宮原1670",
+      "address": "熊本県阿蘇郡小国町宮原1670",
       "agency": "熊本県神社庁",
-      "checked_at": "2026-11-08T14:34:17.659173+00:00",
+      "checked_at": "2026-11-20T01:35:06+00:00",
       "fetched_at": "2026-11-08T14:34:17.659173+00:00",
       "id": "8bd13813-2641-55bd-9f50-267731df088e",
-      "judgments": {},
+      "judgments": {
+        "locations": {
+          "agency_link": {
+            "address_label": "お住まいの地域",
+            "area_raw": "阿蘇郡大字宮原1670",
+            "fetched_at": "2026-11-08T14:34:17.659173+00:00",
+            "href_raw": "https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%8e%9f%e4%b8%a1%e7%a5%9e%e7%a4%be/",
+            "locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%8e%9f%e4%b8%a1%e7%a5%9e%e7%a4%be/\"]",
+            "name_raw": "宮原両神社",
+            "page_hash": "cc27e2e61b06ad3944eb65870e89654ff0dd75704357cd1c873dba31eb9ab75e",
+            "term_role": "residential_area_for_affiliated_shrine_search",
+            "url": "https://kumamotokenjinjacho.jp/patron-god/page/7/"
+          },
+          "alias_reference": {
+            "alias_raw": "小国両神社",
+            "checked_at": "2026-11-20T01:35:06+00:00",
+            "excerpt": "宮原両神社(通称，小国両神社)",
+            "locator": "PDF 10頁（本文2頁）第1章 地形 冒頭、図幅名の由来",
+            "name_raw": "宮原両神社",
+            "page_hash": "48b4465c5adb950f111475ba224783e60274e8a9d72de91c1991ffac84309671",
+            "policy_reference": {
+              "checked_at": "2026-11-20T01:37:23+00:00",
+              "condition": "ウェブサイトの一般規約は出典表示付き政府標準利用規約2.0に準拠。出版物の分類・個別注意・第三者権利を保持し、社名と通称だけを照合。",
+              "locator": "GSJウェブサイト・印刷物やCD等、出典の記載例",
+              "page_hash": "0967447c6345f8b53c56f10df282b0d4a30e7a6b55a533feecc702d4a56da0f2",
+              "url": "https://www.gsj.jp/license/point.html"
+            },
+            "robots": {
+              "status": 404,
+              "url": "https://www.gsj.jp/robots.txt"
+            },
+            "snapshot": "1997",
+            "source_kind": "public_national_survey_report",
+            "source_publisher": "地質調査所（産業技術総合研究所 地質調査総合センター公開）",
+            "title": "地域地質研究報告 5万分の1地質図幅 宮原地域の地質",
+            "url": "https://www.gsj.jp/data/50KGM/PDF/GSJ_MAP_G050_14085_1997_D.pdf"
+          },
+          "changes": {
+            "address": "熊本県阿蘇郡小国町宮原1670",
+            "municipality": "阿蘇郡小国町"
+          },
+          "entry_id": "b4b58915-8847-53de-be2e-9c0bacc4f211",
+          "expected_source_hash": "9725b6c981f89a0d02bc36d3c2fd35196a81930e6d37177af989a646e36cec5f",
+          "facility_id": "8bd13813-2641-55bd-9f50-267731df088e",
+          "historical_observation": {
+            "address_raw": "熊本県 阿蘇郡小国町 大字宮原1670番地",
+            "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+            "checked_at": "2026-11-20T01:35:06+00:00",
+            "interpretation": "現地所在地・正式名を補強する歴史資料。現行法人の公表カナは「ミヤハルリョウジンジャ」、歴史資料は「みやばるりようじんしや」。差（は／ば、よう／ょう、しや／じゃ）を保持し、現地での呼称の差の原因や時期は未確認。",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "locator": "ジャパンナレッジID 440000116100（名称・名称（よみ）・住所）",
+            "name_raw": "宮原両神社",
+            "page_hash": "bd3a9984982bda3e3b966132c9876a402e71bb8922b63e931e3e9317ffc1a547",
+            "reading_raw": "みやばるりようじんしや",
+            "source_kind": "historical_scholarship_derivative",
+            "source_publisher": "人文学オープンデータ共同利用センター（CODH）",
+            "title": "『日本歴史地名大系』施設・地点項目データセット",
+            "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/44/440000116100.html"
+          },
+          "original": {
+            "address": "阿蘇郡大字宮原1670",
+            "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/7/",
+            "municipality": "",
+            "name_raw": "宮原両神社",
+            "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%8e%9f%e4%b8%a1%e7%a5%9e%e7%a4%be/",
+            "official_site_url": null
+          },
+          "other_literal_reading": {
+            "address_raw": "阿蘇郡小国町宮原1670",
+            "checked_at": "2026-11-20T01:54:04.850056+00:00",
+            "locator": "記事見出しの社名・全文読み、同じ記事の所在地",
+            "name_raw": "宮原両神社",
+            "observed": "みやのはるりょうじんじゃ",
+            "page_hash": "7f595b7f13d63f6f7dc1ef64169f19407755d34de6f4fe11875a3ab6a9023bd2",
+            "reading_raw": "みやのはるりょうじんじゃ",
+            "title": "宮原両神社(小国両神社)",
+            "url": "https://kumamoto.tabimook.com/goshuin/detail/60"
+          },
+          "postal_municipality_observation": {
+            "checked_at": "2026-11-19T13:47:41.581386+00:00",
+            "county_towns_for_exact_locality": [
+              "阿蘇郡小国町"
+            ],
+            "locality_raw": "宮原",
+            "logical_row": 119173,
+            "member": "utf_ken_all.csv",
+            "multiple_localities_raw": "0",
+            "municipality_code": "43424",
+            "municipality_raw": "阿蘇郡小国町",
+            "page_hash": "db92fcf624bb7280e6f51900aebe03adeafbd168796e59412dbc22a80abb85b9",
+            "post_code_raw": "8692501",
+            "prefecture_raw": "熊本県",
+            "readme": {
+              "checked_at": "2026-11-19T13:47:39.233632+00:00",
+              "page_hash": "0cb427a3955fd4772abcad39e65e6ba4163c0760921c945a25af2e73b9c716b7",
+              "url": "https://www.post.japanpost.jp/service/search/zipcode/download/utf-readme.html"
+            },
+            "source_kind": "postal_locality_directory",
+            "sub_aza_parcel_numbering_raw": "0",
+            "url": "https://www.post.japanpost.jp/service/search/zipcode/download/utf/zip/utf_ken_all.zip"
+          },
+          "prefectural_office_register": {
+            "attribution": "出典：熊本県オープンデータ 宗教法人名簿（熊本県）",
+            "cell_addresses": {
+              "事務所所在地": "F1226",
+              "包括": "B1226",
+              "市町村": "E1226",
+              "法人名称": "C1226",
+              "番号": "A1226",
+              "郵便番号": "D1226"
+            },
+            "checked_at": "2026-11-19T13:50:19.195315+00:00",
+            "columns": {
+              "事務所所在地": "小国町大字宮原1670",
+              "包括": "神社本庁",
+              "市町村": "阿蘇郡",
+              "法人名称": "宮原両神社",
+              "番号": "1224",
+              "郵便番号": "8692501"
+            },
+            "condition": "可視セル値の法人名称・包括団体・事務所所在地・郵便番号を照合。入力時発生のrPhや個人欄は使用していない。",
+            "license_reference": {
+              "checked_at": "2026-11-19T13:50:21.485098+00:00",
+              "page_hash": "ef786c19ad7ae5aa3314686f09a20f452f47c32e68e7d42083ef79fbd9dd0a7f",
+              "url": "https://data.bodik.jp/dataset/430005_00107"
+            },
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "logical_row": 1226,
+            "member": "xl/worksheets/sheet1.xml",
+            "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+            "snapshot": "2025-08-01",
+            "source_kind": "government_religious_corporation_office_register",
+            "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+          },
+          "reading_review_status": "pending_conflicting_documented_values",
+          "reason": "神社庁の居住地域原欄は保持。公的資料が所在地として明記した全地番と公的資料の通称を、神社庁の原欄と現存法人の原欄に照合。",
+          "reference": {
+            "address_raw": "熊本県阿蘇郡小国町宮原1670",
+            "address_role": "visitable_shrine_site",
+            "checked_at": "2026-11-20T01:35:06+00:00",
+            "excerpt": "小国両神社 / 熊本県阿蘇郡小国町宮原1670",
+            "fetched_at": "2026-11-20T01:35:06+00:00",
+            "heading_raw": "小国両神社",
+            "location_role": "shrine",
+            "locator": "article.article_area h1.page_title および同記事 h4「住所」直後のp（郵便番号と住所）",
+            "name_raw": "小国両神社",
+            "page_hash": "d04376d0d3ba655a751577d8a8388427e9a5aeed23a39ca93b9724a58dd8daef",
+            "policy_reference": {
+              "checked_at": "2026-11-20T01:37:23+00:00",
+              "condition": "個別ページフッターの実リンク先はプライバシーポリシー。町の観光記事の包括再利用許諾は未確認。施設名と所在地の最小事実のみを照合。",
+              "page_hash": "fb0b6a594016872dcfd4687f6f04f0bef6eccc20990ae1d368e748d2b5699474",
+              "url": "https://www.town.kumamoto-oguni.lg.jp/toppage/toppage_sitejyoho/privacypolicy"
+            },
+            "robots": {
+              "applicable_rule": "User-agent: GPTBot; Disallow: /event",
+              "status": 200,
+              "url": "https://www.town.kumamoto-oguni.lg.jp/robots.txt"
+            },
+            "snapshot": "2025-03-12",
+            "source_kind": "municipal_shrine_tourism",
+            "source_publisher": "熊本県小国町",
+            "title": "小国両神社",
+            "url": "https://www.town.kumamoto-oguni.lg.jp/kankojyoho/kanko_rekishi/20271"
+          },
+          "registry_reference": {
+            "address_raw": "熊本県阿蘇郡小国町大字宮原１６７０番地",
+            "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+            "checked_at": "2026-11-19T12:15:05.271572+00:00",
+            "corporate_number": "4330005005098",
+            "csv_row": 31414,
+            "excerpt": "宮原両神社 / ミヤハルリョウジンジャ / 熊本県阿蘇郡小国町大字宮原１６７０番地",
+            "file_id": "28490",
+            "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+            "locator": "Unicode CSV file ID 28490; 43_kumamoto_all_20261030.csv; row 31414; corporateNumber=4330005005098",
+            "name_raw": "宮原両神社",
+            "page_hash": "303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c",
+            "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+            "reading_raw": "ミヤハルリョウジンジャ",
+            "registry_state_proof": {
+              "as_of": "20261119",
+              "checked_at": "2026-11-19T13:53:21.966343+00:00",
+              "full_address_active_corporations": 1,
+              "unique_active_corporate_number": "4330005005098"
+            },
+            "snapshot": "20261030",
+            "source_fields": {
+              "addressImageId": "",
+              "addressOutside": "",
+              "addressOutsideImageId": "",
+              "assignmentDate": "2015-10-05",
+              "changeCause": "",
+              "changeDate": "2015-10-05",
+              "cityCode": "424",
+              "cityName": "阿蘇郡小国町",
+              "closeCause": "",
+              "closeDate": "",
+              "corporateNumber": "4330005005098",
+              "correct": "1",
+              "enAddressOutside": "",
+              "enCityName": "",
+              "enName": "",
+              "enPrefectureName": "",
+              "furigana": "ミヤハルリョウジンジャ",
+              "hihyoji": "0",
+              "kind": "399",
+              "latest": "1",
+              "name": "宮原両神社",
+              "nameImageId": "",
+              "postCode": "8692501",
+              "prefectureCode": "43",
+              "prefectureName": "熊本県",
+              "process": "01",
+              "sequenceNumber": "31414",
+              "streetNumber": "大字宮原１６７０番地",
+              "successorCorporateNumber": "",
+              "updateDate": "2020-03-05"
+            },
+            "source_kind": "government_corporate_register",
+            "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+            "title": "国税庁法人番号公表サイト 全件データ",
+            "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+            "verification_method": "Registered full literal kana with exact shrine name and same printed locality and parcel after a documented structural marker comparison.",
+            "zip_member": "43_kumamoto_all_20261030.csv"
+          },
+          "status": "verified",
+          "supplement_kind": "kumamoto_documented_shrine_site"
+        }
+      },
       "listed_name": "宮原両神社",
       "listing_occurrences": [
         {
@@ -111169,14 +111694,14 @@
         }
       ],
       "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/7/",
-      "municipality": "",
+      "municipality": "阿蘇郡小国町",
       "name_raw": "宮原両神社",
       "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%8e%9f%e4%b8%a1%e7%a5%9e%e7%a4%be/",
       "official_site_url": null,
       "page_hash": "cc27e2e61b06ad3944eb65870e89654ff0dd75704357cd1c873dba31eb9ab75e",
       "prefecture": "熊本県",
       "prefecture_code": "43",
-      "reason": "missing name, address or municipality",
+      "reason": "",
       "source_hash": "9725b6c981f89a0d02bc36d3c2fd35196a81930e6d37177af989a646e36cec5f",
       "source_key": "kumamoto",
       "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%8e%9f%e4%b8%a1%e7%a5%9e%e7%a4%be/\"]",
@@ -111209,7 +111734,7 @@
         "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%8e%9f%e4%b8%a1%e7%a5%9e%e7%a4%be/\"]",
         "status": "pending"
       },
-      "status": "pending"
+      "status": "verified"
     },
     {
       "address": "阿蘇郡久石3412",

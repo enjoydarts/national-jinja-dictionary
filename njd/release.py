@@ -94,9 +94,18 @@ def create_release(data_dir,output_dir,version,source_commit,changelog=None,prev
     refs=[f.get('source_reference') for f in data['facilities']]
     refs += [ref for f in data['facilities'] for ref in f.get('additional_source_references',[])]
     refs += [ref for e in data['entries'] for ref in e.get('correction',{}).get('references',[])]
-    refs += [proof.get('town_master') for ref in refs if isinstance(ref, dict)
-             and isinstance(proof := ref.get('address_identity_proof'), dict)
-             and proof.get('kind') == REGISTERED_TOWN_PROOF]
+    address_proofs = [proof for ref in refs if isinstance(ref, dict)
+                      and isinstance(proof := ref.get('address_identity_proof'), dict)
+                      and proof.get('kind') == REGISTERED_TOWN_PROOF]
+    refs += [proof.get('town_master') for proof in address_proofs]
+    refs += [context.get('parcel_map') for proof in address_proofs
+             if isinstance(context := proof.get('unmarked_koaza'), dict)]
+    refs += [reference for ref in refs if isinstance(ref, dict)
+             for reference in ref.get('other_documented_values', [])]
+    refs += [supplement.get(key) for facility in data['facilities']
+             if (supplement := facility.get('location_supplement', {})).get('applied')
+             and supplement.get('supplement_kind') == 'kumamoto_documented_shrine_site'
+             for key in ('prefectural_office_register', 'historical_observation')]
     for ref in refs:
         if not isinstance(ref,dict) or ref.get('source_kind')!='encyclopedia' or not ref.get('license_url'):continue
         item={key:ref[key] for key in ('url','title','revision_id','permalink','license_url') if key in ref}

@@ -9,6 +9,7 @@ import io
 import json
 from pathlib import Path
 import re
+import unicodedata
 from urllib.error import HTTPError
 from urllib.parse import urlencode, urljoin, urlsplit
 from urllib.request import Request, build_opener, HTTPCookieProcessor
@@ -17,7 +18,7 @@ import zipfile
 from njd.corrections import correction_problems, _reference_matches
 from njd.http import Client, FetchError, NoRedirect
 from njd.normalize import normalize_reading
-from njd.locations import raw_address
+from njd.locations import _date, _hash, raw_address
 from njd.report import PREFECTURES
 from njd.storage import load_dataset, write_json
 from njd.wikipedia import Document, external_directory, pending_targets
@@ -29,6 +30,14 @@ JST=timezone(timedelta(hours=9))
 TERMS=BASE+'/riyokiyaku/'
 PDL='https://www.digital.go.jp/resources/open_data/public_data_license_v1.0'
 TOKEN='jp.go.nta.houjin_bangou.framework.web.common.CNSFWTokenProcessor.request.token'
+_KANJI_INDEX = ('https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/'
+                'kanji/joyokanjisakuin/index.html')
+_KANJI_VARIANT_ROWS = (
+    '厳（嚴） 国（國） 寿（壽） 将（將） 巣（巢） 広（廣） 弥（彌） 徳（德） 恋（戀） 恵（惠） '
+    '斎（齋） 曽（曾） 栄（榮） 楽（樂） 気（氣） 沢（澤） 満（滿） 真（眞） 稲（稻） 竜（龍） '
+    '蔵（藏） 辺（邊） 鎮（鎭） 霊（靈） 静（靜）'
+).split()
+_KANJI_VARIANTS = {frozenset((row[0], row[2])): row for row in _KANJI_VARIANT_ROWS}
 FIELDS='sequenceNumber corporateNumber process correct updateDate changeDate name nameImageId kind prefectureName cityName streetNumber addressImageId prefectureCode cityCode postCode addressOutside addressOutsideImageId closeDate closeCause successorCorporateNumber changeCause assignmentDate latest enName enPrefectureName enCityName enAddressOutside furigana hihyoji'.split()
 MAX_ZIP=64*1024*1024
 MAX_UNCOMPRESSED=512*1024*1024
@@ -72,14 +81,63 @@ def registered_name_identity(fields):
 
 def bound_registered_shrine_name(ref):
     """Validate the complete comparison witness without changing source text."""
-    if not isinstance(ref,dict) or ref.get('source_kind')!='government_corporate_register' or ref.get('url')!=BASE+'/download/zenken/index.html':return None
-    fields=ref.get('source_fields');proof=registered_name_identity(fields)
+    if not isinstance(ref,dict) or ref.get('source_kind')!='government_corporate_register':return None
+    fields=ref.get('source_fields')
+    if 'registered_name_variant' in ref:
+        return _bound_registered_name_variant(ref, fields)
+    if ref.get('url')!=BASE+'/download/zenken/index.html':return None
+    proof=registered_name_identity(fields)
     if proof is None or ref.get('registered_name_identity')!=proof:return None
     if not fields['furigana'] or fields['furigana'].startswith('シュウキョウホウジン'):return None
     if any(ref.get(k)!=v for k,v in dict(name_raw=fields['name'],reading_raw=fields['furigana'],
         address_raw=fields['prefectureName']+fields['cityName']+fields['streetNumber'],
         corporate_number=fields['corporateNumber']).items()):return None
     return proof['shrine_name_raw']
+
+
+def _variant_rows(name, registered):
+    def folded(text):
+        return ''.join(unicodedata.normalize('NFKC', c) if 0xF900 <= ord(c) < 0xFB00
+                       or 0x2F800 <= ord(c) < 0x2FA20 else c for c in text)
+
+    name, registered = folded(name), folded(registered)
+    if len(name) != len(registered):
+        return set()
+    pairs = {_KANJI_VARIANTS.get(frozenset((a, b))) for a, b in zip(name, registered) if a != b}
+    return pairs if None not in pairs else set()
+
+
+def _bound_registered_name_variant(ref, fields):
+    witness = ref['registered_name_variant']
+    state = ref.get('registry_state_proof')
+    if (not isinstance(witness, dict) or not isinstance(fields, dict) or not isinstance(state, dict)
+            or witness.get('url') != _KANJI_INDEX
+            or not _hash(witness.get('page_hash')) or not _date(witness.get('checked_at'))):
+        return None
+    actual = ('name', 'furigana', 'corporateNumber', 'prefectureName', 'cityName', 'streetNumber',
+              'process', 'nameImageId', 'addressImageId')
+    if any(not isinstance(fields.get(key), str) for key in actual):
+        return None
+    raw = fields.get('name')
+    name = witness.get('bound_name_raw')
+    number = fields.get('corporateNumber')
+    rows = witness.get('printed_rows', [witness.get('excerpt')])
+    if (not isinstance(name, str) or not isinstance(rows, list) or any(not isinstance(r, str) for r in rows)
+            or not rows or len(rows) != len(set(rows)) or _variant_rows(name, raw) != set(rows)
+            or fields.get('kind') != '399' or fields.get('addressImageId') or fields.get('latest') != '1'
+            or fields['process'] == '99' or fields.get('closeDate') != '' or fields.get('hihyoji') != '0'
+            or not re.fullmatch('[0-9]{13}', number) or not _image_archive_matches(ref, fields)
+            or state.get('unique_active_corporate_number') != number
+            or type(state.get('full_address_active_corporations')) is not int
+            or state['full_address_active_corporations'] != 1 or image_review_problems(ref)):
+        return None
+    address = ''.join(fields[key] for key in ('prefectureName', 'cityName', 'streetNumber'))
+    if (raw, fields['furigana'], number, address) != tuple(ref.get(key) for key in
+            ('name_raw', 'reading_raw', 'corporate_number', 'address_raw')):
+        return None
+    if fields['nameImageId'] and ref['image_reviews']['nameImageId'].get('printed_text') != raw:
+        return None
+    return name
 
 
 def discover(html,codes):

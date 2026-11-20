@@ -21433,12 +21433,108 @@
       "surface": "幌糠神社"
     },
     {
-      "checked_at": "2026-11-08T14:33:04.805796+00:00",
+      "checked_at": "2026-11-19T12:15:12.693318+00:00",
       "evidence": "嚴島神社 |  | 留萌市礼受町93番地",
       "facility_id": "22479ebd-882d-5a04-89a7-3858db435ba1",
       "fetched_at": "2026-11-08T14:33:04.805796+00:00",
       "id": "0157471b-abcc-5084-bdd2-faeeed2811a3",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いつくしまじんじゃ"
+          },
+          "expected_source_hash": "604d43964336fe1c9c22ee2733c77eaeffbb0da1462ba71034b397e53ca08f32",
+          "facility_id": "22479ebd-882d-5a04-89a7-3858db435ba1",
+          "identity_match": {
+            "agency_address": "留萌市礼受町93番地",
+            "agency_name": "嚴島神社",
+            "reference_address": "北海道留萌市礼受町９３番地",
+            "reference_name": "厳島神社"
+          },
+          "original": {
+            "address": "留萌市礼受町93番地",
+            "listing_url": "https://hokkaidojinjacho.jp/jinja-area/rumoi/",
+            "name_raw": "嚴島神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "北海道留萌市礼受町９３番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:15:12.693318+00:00",
+              "corporate_number": "1450005003241",
+              "csv_row": 22226,
+              "excerpt": "厳島神社 / イツクシマジンジャ / 北海道留萌市礼受町９３番地",
+              "file_id": "28344",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28344 01_hokkaido_all_20261030.csv row 22226",
+              "name_raw": "厳島神社",
+              "page_hash": "70fe2fdb700c1de7b59888dc27f5e9f2a100dcf4cf8e875cf253412fa603b06b",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "イツクシマジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "嚴島神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "厳（嚴）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1450005003241"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "212",
+                "cityName": "留萌市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1450005003241",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "イツクシマジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "厳島神社",
+                "nameImageId": "",
+                "postCode": "0770035",
+                "prefectureCode": "01",
+                "prefectureName": "北海道",
+                "process": "01",
+                "sequenceNumber": "22226",
+                "streetNumber": "礼受町９３番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2026-04-21"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "01_hokkaido_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://hokkaidojinjacho.jp/jinja-area/rumoi/",
       "name_raw": "嚴島神社",
       "normalization": [
@@ -21446,11 +21542,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "8bd54c23b6a59db5d30a0d5980b64d9f0eb478128a1f662f685ed9534090fed2",
-      "reading": "",
+      "reading": "いつくしまじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://hokkaidojinjacho.jp/jinja-area/rumoi/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -21505,6 +21601,20 @@
         "prefecture_code": "01",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いつくしまじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いつくしまじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "嚴島神社",
         "wikipedia_article_refs": [],
@@ -21535,7 +21645,7 @@
         "status": "pending",
         "surface": "嚴島神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "嚴島神社"
     },
     {
@@ -34489,12 +34599,108 @@
       "surface": "清川神社"
     },
     {
-      "checked_at": "2026-11-08T14:33:22.754793+00:00",
+      "checked_at": "2026-11-19T12:15:12.693318+00:00",
       "evidence": "愛國神社 |  | 帯広市愛国町東1線26番地4",
       "facility_id": "a5b838fa-664b-5997-a846-abf37115a255",
       "fetched_at": "2026-11-08T14:33:22.754793+00:00",
       "id": "9d3d87f5-d126-5c4a-90a1-7fdd745e1642",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "あいこくじんじゃ"
+          },
+          "expected_source_hash": "65714473050aea290423d9d9cca0e336cf3002736485bb92fefde2e52aa64759",
+          "facility_id": "a5b838fa-664b-5997-a846-abf37115a255",
+          "identity_match": {
+            "agency_address": "帯広市愛国町東1線26番地4",
+            "agency_name": "愛國神社",
+            "reference_address": "北海道帯広市愛国町東１線２６番地の４",
+            "reference_name": "愛国神社"
+          },
+          "original": {
+            "address": "帯広市愛国町東1線26番地4",
+            "listing_url": "https://hokkaidojinjacho.jp/jinja-area/tokachi/",
+            "name_raw": "愛國神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "北海道帯広市愛国町東１線２６番地の４",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:15:12.693318+00:00",
+              "corporate_number": "4460105000028",
+              "csv_row": 103230,
+              "excerpt": "愛国神社 / アイコクジンジャ / 北海道帯広市愛国町東１線２６番地の４",
+              "file_id": "28344",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28344 01_hokkaido_all_20261030.csv row 103230",
+              "name_raw": "愛国神社",
+              "page_hash": "70fe2fdb700c1de7b59888dc27f5e9f2a100dcf4cf8e875cf253412fa603b06b",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "アイコクジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "愛國神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "国（國）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "4460105000028"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "207",
+                "cityName": "帯広市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "4460105000028",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "アイコクジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "愛国神社",
+                "nameImageId": "",
+                "postCode": "0891181",
+                "prefectureCode": "01",
+                "prefectureName": "北海道",
+                "process": "01",
+                "sequenceNumber": "103230",
+                "streetNumber": "愛国町東１線２６番地の４",
+                "successorCorporateNumber": "",
+                "updateDate": "2018-04-11"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "01_hokkaido_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://hokkaidojinjacho.jp/jinja-area/tokachi/",
       "name_raw": "愛國神社",
       "normalization": [
@@ -34502,11 +34708,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "37581f5990e884d0f1d5a4de5f2b367577167e484d965de064d81c7d5293352d",
-      "reading": "",
+      "reading": "あいこくじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://hokkaidojinjacho.jp/jinja-area/tokachi/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -34575,6 +34781,20 @@
         "prefecture_code": "01",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "あいこくじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "あいこくじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "愛國神社",
         "wikipedia_article_refs": [],
@@ -34605,7 +34825,7 @@
         "status": "pending",
         "surface": "愛國神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "愛國神社"
     },
     {
@@ -41163,12 +41383,108 @@
       "surface": "西当別神社"
     },
     {
-      "checked_at": "2026-11-08T14:33:33.765819+00:00",
+      "checked_at": "2026-11-19T12:15:12.693318+00:00",
       "evidence": "材木澤神社 |  | 石狩郡当別町字材木沢3252番地4",
       "facility_id": "7f8477af-1645-55f9-8854-2c75ccc4a7c5",
       "fetched_at": "2026-11-08T14:33:33.765819+00:00",
       "id": "be21d677-559e-5c04-9b5c-ec1f1660a436",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ざいもくざわじんじゃ"
+          },
+          "expected_source_hash": "ce5ba64db2f9dfd92df5c32aed44acf69ca6d0d404042992e480fd03c37da1b7",
+          "facility_id": "7f8477af-1645-55f9-8854-2c75ccc4a7c5",
+          "identity_match": {
+            "agency_address": "石狩郡当別町字材木沢3252番地4",
+            "agency_name": "材木澤神社",
+            "reference_address": "北海道石狩郡当別町字材木沢３２５２番地の４",
+            "reference_name": "材木沢神社"
+          },
+          "original": {
+            "address": "石狩郡当別町字材木沢3252番地4",
+            "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
+            "name_raw": "材木澤神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "北海道石狩郡当別町字材木沢３２５２番地の４",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:15:12.693318+00:00",
+              "corporate_number": "1430005005735",
+              "csv_row": 16627,
+              "excerpt": "材木沢神社 / ザイモクザワジンジャ / 北海道石狩郡当別町字材木沢３２５２番地の４",
+              "file_id": "28344",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28344 01_hokkaido_all_20261030.csv row 16627",
+              "name_raw": "材木沢神社",
+              "page_hash": "70fe2fdb700c1de7b59888dc27f5e9f2a100dcf4cf8e875cf253412fa603b06b",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ザイモクザワジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "材木澤神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "沢（澤）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1430005005735"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "303",
+                "cityName": "石狩郡当別町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1430005005735",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ザイモクザワジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "材木沢神社",
+                "nameImageId": "",
+                "postCode": "0610200",
+                "prefectureCode": "01",
+                "prefectureName": "北海道",
+                "process": "01",
+                "sequenceNumber": "16627",
+                "streetNumber": "字材木沢３２５２番地の４",
+                "successorCorporateNumber": "",
+                "updateDate": "2021-09-07"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "01_hokkaido_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
       "name_raw": "材木澤神社",
       "normalization": [
@@ -41176,11 +41492,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "cf525674dc64c7a4cda6f0baa10a8b5da9abe038b153e01513f6e268fcae7cdd",
-      "reading": "",
+      "reading": "ざいもくざわじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://hokkaidojinjacho.jp/jinja-area/sapporo/page/3/",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -41235,6 +41551,20 @@
         "prefecture_code": "01",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ざいもくざわじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ざいもくざわじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "材木澤神社",
         "wikipedia_article_refs": [],
@@ -41265,7 +41595,7 @@
         "status": "pending",
         "surface": "材木澤神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "材木澤神社"
     },
     {

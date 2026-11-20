@@ -63918,12 +63918,108 @@
       "surface": "鴨神社"
     },
     {
-      "checked_at": "2026-11-10T12:26:21.621548+00:00",
+      "checked_at": "2026-11-19T12:14:38.896352+00:00",
       "evidence": "table[2] tr[8]: 名称=霊神社; 掲載読み=; 所在地=五島市富江町松尾657番地",
       "facility_id": "68cb2a49-bc8d-5fdb-9fa0-d9db885645de",
       "fetched_at": "2026-11-10T12:26:21.621548+00:00",
       "id": "01bec35b-bbe8-5633-ae0a-7f130c011d58",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "れいじんじゃ"
+          },
+          "expected_source_hash": "2c44773348d2c6b8ee84b0d80bd8325a0104b0cb5015a05503d99a3d498b04ab",
+          "facility_id": "68cb2a49-bc8d-5fdb-9fa0-d9db885645de",
+          "identity_match": {
+            "agency_address": "五島市富江町松尾657番地",
+            "agency_name": "霊神社",
+            "reference_address": "長崎県五島市富江町松尾６５７番地",
+            "reference_name": "靈神社"
+          },
+          "original": {
+            "address": "五島市富江町松尾657番地",
+            "listing_url": "https://nagasaki-jinjacho.or.jp/shimogotou.html",
+            "name_raw": "霊神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "長崎県五島市富江町松尾６５７番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:38.896352+00:00",
+              "corporate_number": "5310005006980",
+              "csv_row": 23618,
+              "excerpt": "靈神社 / レイジンジャ / 長崎県五島市富江町松尾６５７番地",
+              "file_id": "28487",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28487 42_nagasaki_all_20261030.csv row 23618",
+              "name_raw": "靈神社",
+              "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "レイジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "霊神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "霊（靈）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "5310005006980"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "211",
+                "cityName": "五島市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "5310005006980",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "レイジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "靈神社",
+                "nameImageId": "",
+                "postCode": "8530202",
+                "prefectureCode": "42",
+                "prefectureName": "長崎県",
+                "process": "01",
+                "sequenceNumber": "23618",
+                "streetNumber": "富江町松尾６５７番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2018-07-12"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "42_nagasaki_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://nagasaki-jinjacho.or.jp/shimogotou.html",
       "name_raw": "霊神社",
       "normalization": [
@@ -63931,11 +64027,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "c61a0076d5684bc0689137e891c23a5e631a85966c169397707294212f3d80ec",
-      "reading": "",
+      "reading": "れいじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://nagasaki-jinjacho.or.jp/shimogotou.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -63970,6 +64066,20 @@
         "prefecture_code": "42",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "れいじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "れいじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "霊神社",
         "wikipedia_article_refs": [],
@@ -64000,7 +64110,7 @@
         "status": "pending",
         "surface": "霊神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "霊神社"
     },
     {
@@ -101562,12 +101672,108 @@
       "surface": "藤山神社"
     },
     {
-      "checked_at": "2026-11-10T12:26:28.046832+00:00",
+      "checked_at": "2026-11-19T12:14:38.896352+00:00",
       "evidence": "table[1] tr[21]: 名称=山德神社; 掲載読み=; 所在地=佐世保市高花町1207番地",
       "facility_id": "415ccf7e-88d5-50ec-a47a-6fbab46d7d6c",
       "fetched_at": "2026-11-10T12:26:28.046832+00:00",
       "id": "805837fc-f48e-5744-a6c3-a0d8c526d0b4",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "やまとくじんじゃ"
+          },
+          "expected_source_hash": "85a4d053944b09c292641d6629166cdca37318d4734e9b7aa10d359977639ab2",
+          "facility_id": "415ccf7e-88d5-50ec-a47a-6fbab46d7d6c",
+          "identity_match": {
+            "agency_address": "佐世保市高花町1207番地",
+            "agency_name": "山德神社",
+            "reference_address": "長崎県佐世保市高花町１２０７番地",
+            "reference_name": "山徳神社"
+          },
+          "original": {
+            "address": "佐世保市高花町1207番地",
+            "listing_url": "https://nagasaki-jinjacho.or.jp/sasebo.html",
+            "name_raw": "山德神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "長崎県佐世保市高花町１２０７番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:38.896352+00:00",
+              "corporate_number": "4310005002832",
+              "csv_row": 18440,
+              "excerpt": "山徳神社 / ヤマトクジンジャ / 長崎県佐世保市高花町１２０７番地",
+              "file_id": "28487",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28487 42_nagasaki_all_20261030.csv row 18440",
+              "name_raw": "山徳神社",
+              "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ヤマトクジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "山德神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "徳（德）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "4310005002832"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "202",
+                "cityName": "佐世保市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "4310005002832",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ヤマトクジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "山徳神社",
+                "nameImageId": "",
+                "postCode": "8570125",
+                "prefectureCode": "42",
+                "prefectureName": "長崎県",
+                "process": "01",
+                "sequenceNumber": "18440",
+                "streetNumber": "高花町１２０７番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2025-03-28"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "42_nagasaki_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://nagasaki-jinjacho.or.jp/sasebo.html",
       "name_raw": "山德神社",
       "normalization": [
@@ -101575,11 +101781,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "21e9acbcaa9ac5459ff33c55541e4153b9e19382f05b7398a0ab05d1ce3a2649",
-      "reading": "",
+      "reading": "やまとくじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://nagasaki-jinjacho.or.jp/sasebo.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -101665,6 +101871,20 @@
         "prefecture_code": "42",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "やまとくじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "やまとくじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "山德神社",
         "wikipedia_article_refs": [],
@@ -101695,7 +101915,7 @@
         "status": "pending",
         "surface": "山德神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "山德神社"
     },
     {
@@ -130798,12 +131018,108 @@
       "surface": "日山神社"
     },
     {
-      "checked_at": "2026-11-10T12:26:30.182860+00:00",
+      "checked_at": "2026-11-19T12:14:38.896352+00:00",
       "evidence": "table[2] tr[4]: 名称=稻倉魂神社; 掲載読み=; 所在地=長崎市野母町467番地",
       "facility_id": "9e8d5f32-0ba9-5006-97d5-39fac51128e4",
       "fetched_at": "2026-11-10T12:26:30.182860+00:00",
       "id": "ccb8c662-2552-5597-a7c3-2923c251e953",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "いなくらみたまじんじゃ"
+          },
+          "expected_source_hash": "16cc8b2c780d6337527b113069d57afefb215a44f743864b8b4f15e551552618",
+          "facility_id": "9e8d5f32-0ba9-5006-97d5-39fac51128e4",
+          "identity_match": {
+            "agency_address": "長崎市野母町467番地",
+            "agency_name": "稻倉魂神社",
+            "reference_address": "長崎県長崎市野母町４６７番地",
+            "reference_name": "稲倉魂神社"
+          },
+          "original": {
+            "address": "長崎市野母町467番地",
+            "listing_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
+            "name_raw": "稻倉魂神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "長崎県長崎市野母町４６７番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:38.896352+00:00",
+              "corporate_number": "1310005000277",
+              "csv_row": 3938,
+              "excerpt": "稲倉魂神社 / イナクラミタマジンジャ / 長崎県長崎市野母町４６７番地",
+              "file_id": "28487",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28487 42_nagasaki_all_20261030.csv row 3938",
+              "name_raw": "稲倉魂神社",
+              "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "イナクラミタマジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "稻倉魂神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "稲（稻）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1310005000277"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "201",
+                "cityName": "長崎市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1310005000277",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "イナクラミタマジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "稲倉魂神社",
+                "nameImageId": "",
+                "postCode": "8510505",
+                "prefectureCode": "42",
+                "prefectureName": "長崎県",
+                "process": "01",
+                "sequenceNumber": "3938",
+                "streetNumber": "野母町４６７番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2023-06-23"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "42_nagasaki_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
       "name_raw": "稻倉魂神社",
       "normalization": [
@@ -130811,11 +131127,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "3533c16893b5756f34c4c93b68d6a771d88f132c7109becca2fe0c958489bdd5",
-      "reading": "",
+      "reading": "いなくらみたまじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -130894,6 +131210,20 @@
         "prefecture_code": "42",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "いなくらみたまじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "いなくらみたまじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "稻倉魂神社",
         "wikipedia_article_refs": [],
@@ -130924,7 +131254,7 @@
         "status": "pending",
         "surface": "稻倉魂神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "稻倉魂神社"
     },
     {
@@ -135378,12 +135708,108 @@
       "surface": "阿蘇神社"
     },
     {
-      "checked_at": "2026-11-10T12:26:30.182860+00:00",
+      "checked_at": "2026-11-19T12:14:38.896352+00:00",
       "evidence": "table[6] tr[2]: 名称=祐德稲荷神社; 掲載読み=; 所在地=西彼杵郡時津町元村郷11番地",
       "facility_id": "f4f428f4-1fe6-54e0-8a58-b232dbee398f",
       "fetched_at": "2026-11-10T12:26:30.182860+00:00",
       "id": "27d61dee-ead8-5672-a7ee-c76f80380d49",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "ゆうとくいなりじんじゃ"
+          },
+          "expected_source_hash": "45be351b6a1ae5969c660da913a343d65c59be9649b5996ca8a426b21c13454d",
+          "facility_id": "f4f428f4-1fe6-54e0-8a58-b232dbee398f",
+          "identity_match": {
+            "agency_address": "西彼杵郡時津町元村郷11番地",
+            "agency_name": "祐德稲荷神社",
+            "reference_address": "長崎県西彼杵郡時津町元村郷１１番地",
+            "reference_name": "祐徳稲荷神社"
+          },
+          "original": {
+            "address": "西彼杵郡時津町元村郷11番地",
+            "listing_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
+            "name_raw": "祐德稲荷神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "長崎県西彼杵郡時津町元村郷１１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:38.896352+00:00",
+              "corporate_number": "1310005001911",
+              "csv_row": 4081,
+              "excerpt": "祐徳稲荷神社 / ユウトクイナリジンジャ / 長崎県西彼杵郡時津町元村郷１１番地",
+              "file_id": "28487",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28487 42_nagasaki_all_20261030.csv row 4081",
+              "name_raw": "祐徳稲荷神社",
+              "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "ユウトクイナリジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "祐德稲荷神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "徳（德）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "1310005001911"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "308",
+                "cityName": "西彼杵郡時津町",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "1310005001911",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "ユウトクイナリジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "祐徳稲荷神社",
+                "nameImageId": "",
+                "postCode": "8512103",
+                "prefectureCode": "42",
+                "prefectureName": "長崎県",
+                "process": "01",
+                "sequenceNumber": "4081",
+                "streetNumber": "元村郷１１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2020-05-27"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "42_nagasaki_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
       "name_raw": "祐德稲荷神社",
       "normalization": [
@@ -135391,11 +135817,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "3533c16893b5756f34c4c93b68d6a771d88f132c7109becca2fe0c958489bdd5",
-      "reading": "",
+      "reading": "ゆうとくいなりじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -135455,6 +135881,20 @@
         "prefecture_code": "42",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "ゆうとくいなりじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "ゆうとくいなりじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "祐德稲荷神社",
         "wikipedia_article_refs": [],
@@ -135485,7 +135925,7 @@
         "status": "pending",
         "surface": "祐德稲荷神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "祐德稲荷神社"
     },
     {
@@ -141156,12 +141596,108 @@
       "surface": "八幡神社"
     },
     {
-      "checked_at": "2026-11-10T12:26:30.182860+00:00",
+      "checked_at": "2026-11-19T12:14:38.896352+00:00",
       "evidence": "table[11] tr[5]: 名称=惠比須神社; 掲載読み=; 所在地=西海市崎戸町江島蛭子島1番地",
       "facility_id": "975dbaf8-fefa-51f7-ad59-0ab5e606c9b7",
       "fetched_at": "2026-11-10T12:26:30.182860+00:00",
       "id": "54b07440-a208-51a3-bbc1-9d850e24d1d4",
-      "judgments": {},
+      "judgments": {
+        "corrections": {
+          "changes": {
+            "reading": "えびすじんじゃ"
+          },
+          "expected_source_hash": "4f63a883046f3cda0042a9a85dcebc73eb797bf146761de26976e8b10006bb60",
+          "facility_id": "975dbaf8-fefa-51f7-ad59-0ab5e606c9b7",
+          "identity_match": {
+            "agency_address": "西海市崎戸町江島蛭子島1番地",
+            "agency_name": "惠比須神社",
+            "reference_address": "長崎県西海市崎戸町江島蛭子島１番地",
+            "reference_name": "恵比須神社"
+          },
+          "original": {
+            "address": "西海市崎戸町江島蛭子島1番地",
+            "listing_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
+            "name_raw": "惠比須神社",
+            "reading_raw": ""
+          },
+          "reason": "同じ全地番の存続法人の原名を、文化庁資料の明示した新旧字体に限って神社庁の社名と比較。法人CSVの明示フリガナを採用し、両資料の原字を保持。",
+          "references": [
+            {
+              "address_raw": "長崎県西海市崎戸町江島蛭子島１番地",
+              "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+              "checked_at": "2026-11-19T12:14:38.896352+00:00",
+              "corporate_number": "7310005003200",
+              "csv_row": 32837,
+              "excerpt": "恵比須神社 / エビスジンジャ / 長崎県西海市崎戸町江島蛭子島１番地",
+              "file_id": "28487",
+              "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+              "locator": "Unicode CSV file ID 28487 42_nagasaki_all_20261030.csv row 32837",
+              "name_raw": "恵比須神社",
+              "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
+              "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+              "reading_raw": "エビスジンジャ",
+              "registered_name_variant": {
+                "bound_name_raw": "惠比須神社",
+                "checked_at": "2026-11-20T02:06:42.871357+00:00",
+                "locator": "表の漢字欄にある新旧字体の組",
+                "page_hash": "33cb7b99d88d069a5e6e228a71f587285c9fa3cc6937e74022928524569f26f3",
+                "printed_rows": [
+                  "恵（惠）"
+                ],
+                "source_publisher": "文化庁",
+                "title": "常用漢字表の音訓索引",
+                "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html"
+              },
+              "registry_state_proof": {
+                "as_of": "20261119",
+                "checked_at": "2026-11-20T02:17:45.079709+00:00",
+                "full_address_active_corporations": 1,
+                "unique_active_corporate_number": "7310005003200"
+              },
+              "snapshot": "20261030",
+              "source_fields": {
+                "addressImageId": "",
+                "addressOutside": "",
+                "addressOutsideImageId": "",
+                "assignmentDate": "2015-10-05",
+                "changeCause": "",
+                "changeDate": "2015-10-05",
+                "cityCode": "212",
+                "cityName": "西海市",
+                "closeCause": "",
+                "closeDate": "",
+                "corporateNumber": "7310005003200",
+                "correct": "1",
+                "enAddressOutside": "",
+                "enCityName": "",
+                "enName": "",
+                "enPrefectureName": "",
+                "furigana": "エビスジンジャ",
+                "hihyoji": "0",
+                "kind": "399",
+                "latest": "1",
+                "name": "恵比須神社",
+                "nameImageId": "",
+                "postCode": "8573103",
+                "prefectureCode": "42",
+                "prefectureName": "長崎県",
+                "process": "01",
+                "sequenceNumber": "32837",
+                "streetNumber": "崎戸町江島蛭子島１番地",
+                "successorCorporateNumber": "",
+                "updateDate": "2023-04-24"
+              },
+              "source_kind": "government_corporate_register",
+              "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+              "title": "国税庁法人番号公表サイト 全件データ",
+              "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+              "verification_method": "原社名と法人名の字体・同一全地番・存続法人の明示フリガナを照合。",
+              "zip_member": "42_nagasaki_all_20261030.csv"
+            }
+          ],
+          "status": "verified"
+        }
+      },
       "listing_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
       "name_raw": "惠比須神社",
       "normalization": [
@@ -141169,11 +141705,11 @@
         "katakana to hiragana"
       ],
       "page_hash": "3533c16893b5756f34c4c93b68d6a771d88f132c7109becca2fe0c958489bdd5",
-      "reading": "",
+      "reading": "えびすじんじゃ",
       "reading_raw": "",
-      "reading_source_kind": "agency",
-      "reading_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
-      "reason": "missing agency reading",
+      "reading_source_kind": "reference",
+      "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+      "reason": "",
       "research": {
         "additional_source_reviews": [
           {
@@ -141234,6 +141770,20 @@
         "prefecture_code": "42",
         "reading_raw": "",
         "reason": "missing agency reading",
+        "resolution": {
+          "previous_status": "pending",
+          "reading": "えびすじんじゃ",
+          "reason": "",
+          "status": "verified"
+        },
+        "resolution_history": [
+          {
+            "previous_status": "pending",
+            "reading": "えびすじんじゃ",
+            "reason": "",
+            "status": "verified"
+          }
+        ],
         "status": "unfinished",
         "surface": "惠比須神社",
         "wikipedia_article_refs": [],
@@ -141264,7 +141814,7 @@
         "status": "pending",
         "surface": "惠比須神社"
       },
-      "status": "pending",
+      "status": "verified",
       "surface": "惠比須神社"
     },
     {
