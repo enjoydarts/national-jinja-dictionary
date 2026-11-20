@@ -156,9 +156,12 @@ def main(argv=None):
         return 1 if blocking_problems(data) else 0
     if args.command=='audit':
         # Audit pristine acquired records; human decisions remain separate.
-        raw=load_dataset(work/'sources'/(args.source+'.json')) if (work/'sources').exists() else load_dataset(work/'common.json')
-        from njd.canonical import raw_collection
-        raw=raw_collection(raw)
+        from njd.canonical import export_legacy, is_canonical
+        source='sources/'+args.source+'.json'
+        if is_canonical(work):
+            raw=export_legacy(work)[source]
+        else:
+            raw=load_dataset(work/source if (work/'sources').exists() else work/'common.json')
         page=Client(cache,offline=True).fetch(gunma.URL)
         result=audit_gunma(raw,page.text,page.sha256); write_json((work if args.workspace else output)/'source-audit.json',result)
         print(json.dumps(result,ensure_ascii=False)); return 1 if result['mismatches'] else 0

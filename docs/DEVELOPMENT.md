@@ -16,7 +16,7 @@ python3 -m njd validate
 | 場所 | 役割 |
 | --- | --- |
 | `njd/` | 収集、正規化、検証、保存、辞書出力、レポート生成 |
-| `data/sources/` | 原文・採用値・根拠・判断・調査を統合した唯一の正本 |
+| `data/sources/<県キー>.json` | 原文・採用値・根拠・判断・調査をまとめた都道府県ごとの正本 |
 | `data/sources/research_index.json` | 共通の調査試行・固定対象・全体履歴。現在件数は生成 |
 | `tests/` | 自動テスト。人工データは実施設の根拠には使用しない |
 | `tools/` | 指定版の公式IME実装を再照合する任意の開発ツール |
@@ -26,7 +26,7 @@ python3 -m njd validate
 
 ## 正本の修正
 
-編集する場所は`data/sources/<情報源>.json`です。施設と登録はIDで参照し、同名の別施設を所在地で区別します。
+編集する場所は`data/sources/<県キー>.json`の`sources.<情報源キー>`です。施設と登録はIDで参照し、同名の別施設を所在地で区別します。
 
 1. `entries[]`から登録IDを探し、`source_record`の原文、現在の`surface`・`reading`・`status`と、`judgments`・`research`の根拠を確認する。
 2. 実資料で確認した変更は、同じ登録内の採用値と`judgments`の該当判断へ反映する。補正なら`judgments.corrections`に原文hash・原値・変更・参照・同定根拠を保持する。根拠のない採用値だけの変更は検証で拒否する。
@@ -44,12 +44,12 @@ python3 -m njd.canonical summary
 
 ## 旧構造からの明示的な移行
 
-現在のリポジトリは移行済みです。以下は古いチェックアウトや既存データを扱う場合の手順で、通常の辞書生成時に自動変換しません。
+旧補正ファイルを持つv1と情報源別ファイルのv2を、都道府県別のv3に移行できます。以下は旧形式のデータを持つ場合の手順です。通常の辞書生成では形式を読み取ります。v2の編集・再取得には先に移行を実行してください。
 
 ```sh
 # 存在しない別ディレクトリに変換。元の正本は変更しない。
 python3 -m njd.canonical migrate --data-dir data --destination /tmp/njd-migrated
-# 原文・判断・履歴の損失検査後、6形式の本体を移行前と比較する。
+# 原文・判断・履歴の損失検査後、辞書の本体を移行前と比較する。
 # 切替時にも移行元が変わっていないことを再検査する。
 python3 -m njd.canonical install --data-dir data --migrated /tmp/njd-migrated
 python3 -m njd validate

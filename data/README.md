@@ -1,13 +1,13 @@
 # 共通正本
 
-辞書の編集元は `sources/` だけです。情報源別JSON（schema_version=2）の施設と登録に、原文・採用値・根拠・判断・調査履歴をまとめています。各IME辞書は同じ正本から直接生成します。
+辞書の編集元は `sources/` です。都道府県ごとに1つのJSON（`schema_version=3`）を置き、その中の `sources` に情報源キーごとの施設・登録・出典を保存します。例えば愛知県の神社庁資料とWikipedia資料は、どちらも `aichi.json` にあります。各IME辞書は同じ正本から直接生成します。
 
 | 場所 | 内容 |
 | --- | --- |
-| `sources/<情報源>.json` の `facilities[]` | 施設の採用値、`source_record`に原観測、`judgments`に所在地・別掲載の判断 |
-| 同ファイルの `entries[]` | 登録の採用値、`source_record`に原登録、`judgments`に補正・編集・除外判断、`research`に調査履歴 |
-| 同ファイルの `collection` | 取得範囲・原資料の公式性・利用条件 |
-| 同ファイルの `catalog_entries` | 情報源の本文確認・調査メタデータの継承記録 |
+| `sources/<県キー>.json` の `sources.<情報源キー>.facilities[]` | 施設の採用値、`source_record`に原観測、`judgments`に所在地・別掲載の判断 |
+| 同じ情報源キーの `entries[]` | 登録の採用値、`source_record`に原登録、`judgments`に補正・編集・除外判断、`research`に調査履歴 |
+| 同じ情報源キーの `collection` | 取得範囲・原資料の公式性・利用条件 |
+| 同じ情報源キーの `catalog_entries` | 情報源の本文確認・調査メタデータの継承記録 |
 | `sources/research_index.json` | 情報源一覧、共通の調査試行、固定調査対象、継承した全体履歴 |
 
 `source_record`は取得原文の証拠で、採用値の別の編集元ではありません。採用値と`judgments`の根拠が食い違うと検証に失敗します。補正の検証結果などの詳細は生成時に組み立て、正本へ重複保存しません。派生登録の`source_record`はnullで、元登録への参照を保持します。

@@ -93,11 +93,21 @@ class CliTest(unittest.TestCase):
     def test_audit_uses_repository_source_file_without_common_json(self):
         from unittest.mock import patch
         from types import SimpleNamespace
+        from njd.canonical import migrate
         with tempfile.TemporaryDirectory() as td:
             base=Path(td);data=base/'data';out=base/'out'
-            write_json(data/'sources/gunma.json',dataset())
+            fixture=dataset()
+            fixture['collection']['source_key']='gunma'
+            for facility in fixture['facilities']:
+                facility['source_key']='gunma'
+            write_json(data/'sources/gunma.json',fixture)
+            grouped=base/'grouped'
+            migrate(data,grouped)
             with patch('njd.__main__.Client') as client:
                 client.return_value.fetch.return_value=SimpleNamespace(text=HTML,sha256='a'*64)
                 self.assertEqual(self.run_cli('--data-dir',str(data),'--output-dir',str(out),'audit','--source','gunma'),0)
                 self.assertTrue(client.call_args.kwargs['offline'])
-            self.assertTrue((out/'source-audit.json').exists())
+                before=(out/'source-audit.json').read_bytes()
+                self.assertEqual(self.run_cli('--data-dir',str(grouped),'--output-dir',str(out),'audit','--source','gunma'),0)
+                self.assertTrue(client.call_args.kwargs['offline'])
+                self.assertEqual((out/'source-audit.json').read_bytes(),before)

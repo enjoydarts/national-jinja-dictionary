@@ -1,4 +1,4 @@
-"""One authoritative record per source: observations, adopted values and evidence.
+"""One authoritative file per prefecture: observations, adopted values and evidence.
 
 Version-one projections exist only in memory for the established validators and
 the explicit migration audit. Normal generation never reads legacy overlays.
@@ -8,6 +8,7 @@ from collections import Counter
 import copy
 from contextlib import contextmanager
 import fcntl
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -17,6 +18,8 @@ import tempfile
 from njd.storage import load_dataset, write_json
 
 INDEX = 'research_index.json'
+PREFECTURE_SCHEMA = 3
+SOURCE_SCHEMA = 2
 LEGACY = ('locations.json', 'corrections.json', 'reviews.json', 'decisions.json',
           'identities.json', 'source_aliases.json', 'reading_research.json',
           'source_catalog.json', 'manifest.json')
@@ -66,7 +69,7 @@ def _strip(record):
 
 
 def raw_collection(document):
-    if document.get('schema_version') != 2:
+    if document.get('schema_version') != SOURCE_SCHEMA:
         return copy.deepcopy(document)
     result = copy.deepcopy(document.get('source_metadata', {}))
     result.update(schema_version=1, collection=copy.deepcopy(document['collection']))
@@ -76,24 +79,50 @@ def raw_collection(document):
     return result
 
 
+def _prefecture_key(code):
+    from njd.nationwide import SOURCE_KEYS
+    if not isinstance(code, str) or not re.fullmatch(r'0[1-9]|[1-3][0-9]|4[0-7]', code):
+        raise ValueError('invalid canonical prefecture code')
+    return SOURCE_KEYS[int(code) - 1]
+
+
 def _read(root):
     root = Path(root)
     if not is_canonical(root):
-        raise ValueError('canonical schema v2 is required; run python3 -m njd.canonical migrate')
+        raise ValueError('canonical data required; run python3 -m njd.canonical migrate')
     if any((root / name).exists() for name in LEGACY) or (root / 'common.json').exists():
         raise ValueError('legacy inputs coexist with canonical data; two editable authorities are forbidden')
     index = load_dataset(root / 'sources' / INDEX)
-    if index.get('schema_version') != 2 or index.get('kind') != 'canonical_index':
+    if not isinstance(index, dict):
+        raise ValueError('invalid canonical index')
+    version = index.get('schema_version')
+    if version not in (SOURCE_SCHEMA, PREFECTURE_SCHEMA) or index.get('kind') != 'canonical_index':
         raise ValueError('invalid canonical index')
     documents = {}
     for path in sorted((root / 'sources').glob('*.json')):
         if path.name == INDEX:
             continue
-        doc = load_dataset(path)
-        if doc.get('schema_version') != 2 or doc.get('collection', {}).get('source_key') != path.stem:
-            raise ValueError('invalid or mixed canonical source: ' + path.stem)
-        documents[path.stem] = doc
-    if set(documents) != set(index['source_keys']):
+        document = load_dataset(path)
+        if not isinstance(document, dict):
+            raise ValueError('invalid canonical data file: ' + path.stem)
+        if version == PREFECTURE_SCHEMA:
+            code = document.get('prefecture_code')
+            sources = document.get('sources')
+            if (set(document) != {'schema_version', 'prefecture_code', 'sources'}
+                    or document['schema_version'] != version or _prefecture_key(code) != path.stem
+                    or not isinstance(sources, dict) or not sources):
+                raise ValueError('invalid canonical prefecture file: ' + path.stem)
+        else:
+            sources = {path.stem: document}
+        for key, doc in sources.items():
+            if (not isinstance(doc, dict) or doc.get('schema_version') != SOURCE_SCHEMA
+                    or doc.get('collection', {}).get('source_key') != key or key in documents):
+                raise ValueError('invalid or duplicate canonical source: ' + key)
+            if version == PREFECTURE_SCHEMA and (doc['collection'].get('prefecture_code') != code
+                    or any(f.get('prefecture_code') != code for f in doc['facilities'])):
+                raise ValueError('canonical source belongs to another prefecture: ' + key)
+            documents[key] = doc
+    if sorted(documents) != sorted(index['source_keys']):
         raise ValueError('canonical source set differs from index')
     return documents, index
 
@@ -382,6 +411,8 @@ def update_repository(root, change, *, apply=True):
     root = Path(root)
     with repository_lock(root, exclusive=True):
         documents, index = _read(root)
+        if index['schema_version'] != PREFECTURE_SCHEMA:
+            raise ValueError('migrate source-based canonical data before updating it')
         previous = _validate(documents, index)
         legacy = _project(documents, index)
         result = change(legacy)
@@ -501,7 +532,7 @@ def _pack(legacy):
         if not filename.startswith('sources/'):
             continue
         key = Path(filename).stem
-        doc = dict(schema_version=2, collection=copy.deepcopy(raw['collection']),
+        doc = dict(schema_version=SOURCE_SCHEMA, collection=copy.deepcopy(raw['collection']),
             source_metadata={k: copy.deepcopy(v) for k, v in raw.items()
                              if k not in ('schema_version', 'facilities', 'entries', 'collection')})
         for kind in targets:
@@ -537,7 +568,7 @@ def _pack(legacy):
         if key not in documents:
             raise ValueError('unmatched identity source: ' + key)
         documents[key]['identity_links'] = metadata['identities.json'].pop(key)
-    index = dict(schema_version=2, kind='canonical_index', source_keys=sorted(documents), metadata=metadata,
+    index = dict(schema_version=PREFECTURE_SCHEMA, kind='canonical_index', source_keys=sorted(documents), metadata=metadata,
         metadata_basis='Inherited collection/research snapshots, including old counts and hashes; generate current counts from adopted records.')
     research = metadata.get('reading_research.json')
     if research is not None:
@@ -569,38 +600,56 @@ def _pack(legacy):
 
 
 def _write_sources(destination, documents, index):
+    prefectures = {}
     for key, document in documents.items():
-        write_json(destination / (key + '.json'), document)
-    write_json(destination / INDEX, index)
+        code = document['collection']['prefecture_code']
+        prefecture = prefectures.setdefault(_prefecture_key(code),
+            dict(schema_version=PREFECTURE_SCHEMA, prefecture_code=code, sources={}))
+        prefecture['sources'][key] = document
+    for key, prefecture in prefectures.items():
+        write_json(destination / (key + '.json'), prefecture)
+    write_json(destination / INDEX, dict(index, schema_version=PREFECTURE_SCHEMA))
+
+
+def _migration_paths(root):
+    return sorted((root / 'sources').glob('*.json')) + [root / name for name in LEGACY if (root / name).exists()]
+
+
+def _migration_snapshot(root):
+    return {path: hashlib.sha256(path.read_bytes()).digest() for path in _migration_paths(root)}
 
 
 def migrate(root, destination):
-    """Explicit offline v1 -> v2 migration into a fresh directory, never in place."""
+    """Convert source-based v1 or v2 data into one file per prefecture."""
     root = Path(root); destination = Path(destination)
     if destination.exists():
         raise ValueError('migration destination must not exist')
-    if is_canonical(root):
-        raise ValueError('migration input must be legacy schema v1')
-    paths = sorted((root / 'sources').glob('*.json'))
-    if not paths:
-        raise ValueError('no source collections to migrate')
-    paths += [root / name for name in LEGACY if (root / name).exists()]
-    before = {str(p.relative_to(root)): p.read_bytes() for p in paths}
-    legacy = {name: json.loads(content) for name, content in before.items()}
-    documents, index = _pack(legacy)
-    _validate(documents, index)
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    temporary = Path(tempfile.mkdtemp(prefix='.canonical-migrate-', dir=destination.parent))
-    try:
-        _write_sources(temporary / 'sources', documents, index)
-        _validate(*_read(temporary))
-        if before != {str(p.relative_to(root)): p.read_bytes() for p in paths}:
-            raise ValueError('migration inputs changed during review')
-        temporary.rename(destination)
-    finally:
-        if temporary.exists():
-            shutil.rmtree(temporary)
-    return dict(sources=len(documents), facilities=sum(len(d['facilities']) for d in documents.values()),
+    with repository_lock(root):
+        before = _migration_snapshot(root)
+        if is_canonical(root):
+            documents, index = _read(root)
+            if index['schema_version'] != SOURCE_SCHEMA:
+                raise ValueError('migration input already uses prefecture files')
+        else:
+            if not any(path.parent == root / 'sources' for path in before):
+                raise ValueError('no source collections to migrate')
+            legacy = {str(path.relative_to(root)): load_dataset(path) for path in before}
+            documents, index = _pack(legacy)
+        _validate(documents, index)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        temporary = Path(tempfile.mkdtemp(prefix='.canonical-migrate-', dir=destination.parent))
+        try:
+            _write_sources(temporary / 'sources', documents, index)
+            if _read(temporary) != (documents, dict(index, schema_version=PREFECTURE_SCHEMA)):
+                raise ValueError('prefecture migration would lose source or editorial information')
+            if before != _migration_snapshot(root):
+                raise ValueError('migration inputs changed during review')
+            temporary.rename(destination)
+        finally:
+            if temporary.exists():
+                shutil.rmtree(temporary)
+    return dict(prefectures=len({d['collection']['prefecture_code'] for d in documents.values()}),
+                sources=len(documents), facilities=sum(len(d['facilities']) for d in documents.values()),
                 entries=sum(len(d['entries']) for d in documents.values()), lossless=True)
 
 
@@ -609,17 +658,20 @@ def install_migration(root, migrated):
     root = Path(root)
     with repository_lock(migrated):
         documents, index = _read(migrated)
+        if index['schema_version'] != PREFECTURE_SCHEMA:
+            raise ValueError('installation requires a reviewed prefecture migration')
         _validate(documents, index)
-        expected = _project(documents, index)
     with repository_lock(root, exclusive=True):
-        if is_canonical(root):
-            raise ValueError('installation target must still be schema v1')
-        paths = list((root / 'sources').glob('*.json'))
-        paths += [root / name for name in LEGACY if (root / name).exists()]
-        actual = {str(p.relative_to(root)): load_dataset(p) for p in paths}
-        if actual != expected:
+        legacy = not is_canonical(root)
+        if legacy:
+            actual = {str(p.relative_to(root)): load_dataset(p) for p in _migration_paths(root)}
+            matches = actual == _project(documents, index)
+            del actual
+        else:
+            matches = _read(root) == (documents, dict(index, schema_version=SOURCE_SCHEMA))
+        if not matches:
             raise ValueError('migration input has changed; regenerate and review before installation')
-        _commit_sources(root, documents, index, retire_legacy=True)
+        _commit_sources(root, documents, index, retire_legacy=legacy)
 
 
 def main(argv=None):

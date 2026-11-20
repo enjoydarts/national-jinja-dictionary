@@ -2,7 +2,7 @@
 
 ## 正本と生成物
 
-[`data/sources/`](../data/sources/)が情報源ごとの正本です。情報源別JSONは`schema_version=2`・`facilities`・`entries`・`collection`を持ちます。各施設・登録は採用値を直接持ち、`source_record`に原観測、`judgments`に根拠付き判断を保存します。登録の調査履歴は同じレコードの`research`にあります。共通索引`research_index.json`は施設データとは区別します。
+[`data/sources/`](../data/sources/)に都道府県ごとの正本を1ファイルずつ置きます。各ファイルは`schema_version=3`・`prefecture_code`・`sources`を持ちます。`sources`内の各情報源に`facilities`・`entries`・`collection`があり、各施設・登録の採用値と、`source_record`の原観測、`judgments`の根拠付き判断を管理します。登録の調査履歴は同じレコードの`research`にあります。`research_index.json`は全国共通の調査索引です。
 
 正本ローダーは原観測と判断を既存の検証器へ投影して採用値と照合します。旧補正ファイルは読み足しません。各IMEと管理用JSON・CSVは、この検証済みの共通データから直接出力します。
 
@@ -45,7 +45,7 @@
 
 参考資料単独枠は神社庁掲載確認済みへ分類せず、`official_agency_listing_verified=false`を保持します。Wikipediaは47都道府県を調査対象とし、記事本文で名称・全文読み・所在地・神社であることを確認した施設だけを採用します。これは47都道府県の取得・確認完了を意味しません。団体資料は宮崎県神道青年会を対象とします。
 
-既存のWikipedia専用正本（和歌山・広島・山口・徳島・大分・宮崎）は情報源キーとIDを保持します。その他の都道府県のWikipedia資料は`<県キー>_wikipedia.json`へ分け、神社庁の正本を置換しません。採用前に既存施設の名称・所在地・出典を照合し、同一施設の読み補完は既存登録へ根拠付き補正として保存します。同一性が未解決の候補を新施設として重複計上しません。
+Wikipedia資料の施設・登録は、既存の情報源キーとIDを保ったまま当該県の正本内に保存します。例えば愛知県の`aichi`と`aichi_wikipedia`は`aichi.json`内の`sources`にあります。採用前に既存施設の名称・所在地・出典を照合し、同一施設の読み補完は既存登録へ根拠付き補正として保存します。同一性が未解決の候補を新施設として重複計上しません。
 
 Wikipediaの記事タイトルやカテゴリ所属だけで施設・読みを確定しません。本文と施設情報表の名称・全文読み・所在地・神社である記述を照合します。個別に本文を確認した参照は`acquisition_method=individual_source_review`で区別します。複数施設の記事では各施設の名称・所在地・該当節を分けます。
 

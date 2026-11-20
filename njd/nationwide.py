@@ -1,4 +1,4 @@
-"""Versioned per-source canonical data, checkpointed acquisition and offline merge."""
+"""Source-specific acquisition and offline merge of prefectural canonical data."""
 import re
 import copy
 from pathlib import Path
@@ -114,10 +114,15 @@ def prepare_collection(data_dir,key,data,*,reviewed_curated=False):
     issues=blocking_problems(data)
     if issues: raise ValueError('source dataset validation failed: '+str(issues[:5]))
     path=source_path(data_dir,key)
-    from njd.canonical import raw_collection, is_canonical, read_judgments
-    old=raw_collection(load_dataset(path)) if path.exists() else None
-    links_path=Path(data_dir)/'identities.json'
-    all_links=read_judgments(data_dir,'identities') if is_canonical(data_dir) else (load_dataset(links_path) if links_path.exists() else {})
+    from njd.canonical import export_legacy, is_canonical, raw_collection
+    if is_canonical(data_dir):
+        projected=export_legacy(data_dir)
+        old=projected.get('sources/'+key+'.json')
+        all_links=projected.get('identities.json',{})
+    else:
+        old=raw_collection(load_dataset(path)) if path.exists() else None
+        links_path=Path(data_dir)/'identities.json'
+        all_links=load_dataset(links_path) if links_path.exists() else {}
     links=all_links.get(key,{})
     result=reconcile_identity(old,data,links)
     _preserve_curated_sources(old,result,reviewed_curated)
@@ -267,13 +272,18 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
                 source_rows_observed=saved['collection'].get('source_rows_observed',0),
                 remaining_scope=saved['collection'].get('remaining_scope',[]))
         except Exception as exc:
-            states[code]=dict(states[code],source_key=key,status='failed_using_previous' if path.exists() else 'failed',reason=public_failure(exc))
+            failure=public_failure(exc)
+            if not canonical:
+                status='failed_using_previous' if path.exists() else 'failed'
+                states[code]=dict(states[code],source_key=key,status=status,reason=failure)
             try:
                 write_json(resolved/'diagnostics'/(key+'.json'),dict(source_key=key,exception_type=type(exc).__name__,message=str(exc)))
             except OSError:
                 pass  # Cache permission failures must not abort independent sources.
         if canonical:
             def save_failure(legacy):
+                status='failed_using_previous' if 'sources/'+key+'.json' in legacy else 'failed'
+                states[code]=dict(states[code],source_key=key,status=status,reason=failure)
                 manifest=legacy.setdefault('manifest.json',dict(schema_version=1,prefectures={}))
                 manifest['prefectures'][code]=states[code]
             update_repository(data_dir,save_failure)

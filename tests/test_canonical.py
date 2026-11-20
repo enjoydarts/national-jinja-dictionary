@@ -10,6 +10,12 @@ from njd.nationwide import save_collection
 from njd.storage import load_dataset, write_json
 from njd.exporters import render
 
+PREFECTURE_FILE = 'sources/saitama.json'
+
+
+def example_document(path):
+    return load_dataset(path)['sources']['example']
+
 
 class CanonicalTests(unittest.TestCase):
     def setup_repository(self, directory):
@@ -34,8 +40,8 @@ class CanonicalTests(unittest.TestCase):
             before = _effective(root, legacy=True)
             destination = Path(td) / 'new'
             migrate(root, destination)
-            document = load_dataset(destination / 'sources/example.json')
-            self.assertEqual(document['schema_version'], 2)
+            document = example_document(destination / PREFECTURE_FILE)
+            self.assertEqual(load_dataset(destination / PREFECTURE_FILE)['schema_version'], 3)
             entry = document['entries'][0]
             self.assertEqual(entry['reading'], 'かくうじんじゃ')
             self.assertEqual(entry['source_record'], data['entries'][0])
@@ -57,9 +63,9 @@ class CanonicalTests(unittest.TestCase):
             root, _, _, _ = self.setup_repository(td)
             destination = Path(td) / 'new'
             migrate(root, destination)
-            path = destination / 'sources/example.json'
+            path = destination / PREFECTURE_FILE
             doc = load_dataset(path)
-            doc['entries'][0]['reading'] = 'すいそく'
+            doc['sources']['example']['entries'][0]['reading'] = 'すいそく'
             write_json(path, doc)
             with self.assertRaisesRegex(ValueError, 'adopted|採用'):
                 load_effective(destination)
@@ -137,11 +143,11 @@ class CanonicalTests(unittest.TestCase):
             destination = Path(td) / 'new'
             migrate(root, destination)
             self.assertEqual(research_summary(destination)['pending'], 1)
-            original = load_dataset(destination / 'sources/example.json')['entries'][0]['source_record']
+            original = example_document(destination / PREFECTURE_FILE)['entries'][0]['source_record']
             self.assertEqual(import_proposals(destination, proposal)['added'], 1)
             self.assertEqual(load_effective(destination)['entries'][0]['reading'], '')
             self.assertEqual(import_proposals(destination, proposal, apply=True)['added'], 1)
-            entry = load_dataset(destination / 'sources/example.json')['entries'][0]
+            entry = example_document(destination / PREFECTURE_FILE)['entries'][0]
             self.assertEqual(entry['reading'], 'かくうじんじゃ')
             self.assertEqual(entry['source_record'], original)
             self.assertTrue(entry['research']['resolution'])
@@ -159,7 +165,7 @@ class CanonicalTests(unittest.TestCase):
             self.assertEqual(load_effective(destination)['entries'][0]['reading'], 'かくうじんじゃ')
             changed = build([row(reading_raw='', address='架空市乙町2')])
             save_collection(destination, 'example', changed)
-            entry = load_dataset(destination / 'sources/example.json')['entries'][0]
+            entry = example_document(destination / PREFECTURE_FILE)['entries'][0]
             self.assertEqual(entry['status'], 'pending')
             self.assertEqual(entry['reading'], '')
             self.assertEqual(entry['judgments']['corrections'], proposal['entries'][entry['id']])
@@ -310,9 +316,9 @@ class CanonicalTests(unittest.TestCase):
             initialize(root)
             fixture = build([row()])
             save_collection(root, 'example', fixture)
-            path = root / 'sources/example.json'
+            path = root / PREFECTURE_FILE
             doc = load_dataset(path)
-            entry = doc['entries'][0]
+            entry = doc['sources']['example']['entries'][0]
             entry['judgments']['decisions'] = dict(status='excluded', reason='資料の相違',
                 expected_source_hash=entry['source_hash'])
             write_json(path, doc)
@@ -322,7 +328,7 @@ class CanonicalTests(unittest.TestCase):
             write_json(path, doc)
             self.assertEqual(load_effective(root)['entries'][0]['status'], 'excluded')
             save_collection(root, 'example', fixture)
-            self.assertIn('decisions', load_dataset(path)['entries'][0]['judgments'])
+            self.assertIn('decisions', example_document(path)['entries'][0]['judgments'])
 
     def test_unknown_judgment_is_rejected_instead_of_silently_lost(self):
         from njd.canonical import migrate, load_effective
@@ -330,9 +336,9 @@ class CanonicalTests(unittest.TestCase):
             root, _, _, _ = self.setup_repository(td)
             destination = Path(td) / 'new'
             migrate(root, destination)
-            path = destination / 'sources/example.json'
+            path = destination / PREFECTURE_FILE
             doc = load_dataset(path)
-            doc['entries'][0]['judgments']['typo_decision'] = dict(status='excluded')
+            doc['sources']['example']['entries'][0]['judgments']['typo_decision'] = dict(status='excluded')
             write_json(path, doc)
             with self.assertRaisesRegex(ValueError, 'judgment'):
                 load_effective(destination)
@@ -343,21 +349,21 @@ class CanonicalTests(unittest.TestCase):
             root, original, _, _ = self.setup_repository(td)
             destination = Path(td) / 'new'
             migrate(root, destination)
-            path = destination / 'sources/example.json'
-            prior = load_dataset(path)['entries'][0]
+            path = destination / PREFECTURE_FILE
+            prior = example_document(path)['entries'][0]
             save_collection(destination, 'example', build([]))
             current = load_effective(destination)
             self.assertEqual(current['entries'], [])
             self.assertEqual(render(current, 'mozc').content, b'')
-            archives = load_dataset(path)['source_metadata']['retired_records']
+            archives = example_document(path)['source_metadata']['retired_records']
             archived = next(item['record'] for item in archives if item['kind'] == 'entries')
             self.assertEqual(archived, prior)
             self.assertEqual(research_summary(destination)['targets'], 1)
             self.assertEqual(research_summary(destination)['retired'], 1)
             save_collection(destination, 'example', build([]))
-            self.assertEqual(load_dataset(path)['source_metadata']['retired_records'], archives)
+            self.assertEqual(example_document(path)['source_metadata']['retired_records'], archives)
             save_collection(destination, 'example', original)
-            returned = load_dataset(path)['entries'][0]
+            returned = example_document(path)['entries'][0]
             self.assertEqual(returned['reading'], 'かくうじんじゃ')
             self.assertEqual(returned['judgments'], prior['judgments'])
             self.assertEqual(research_summary(destination)['targets'], 1)
@@ -368,7 +374,7 @@ class CanonicalTests(unittest.TestCase):
             root, _, _, _ = self.setup_repository(td)
             destination = Path(td) / 'new'
             migrate(root, destination)
-            path = destination / 'sources/example.json'
+            path = destination / PREFECTURE_FILE
             before = path.read_bytes()
             incoming = build([])
             incoming['collection']['traversal_complete'] = False
@@ -389,6 +395,53 @@ class CanonicalTests(unittest.TestCase):
             save_collection(root, 'other', other)
             self.assertEqual(load_states(root)['11']['facilities'], 2)
             self.assertEqual(load_states(root)['11']['facility_records'], 2)
+            self.assertEqual({p.name for p in (root / 'sources').glob('*.json')},
+                             {'saitama.json', 'research_index.json'})
+            path = root / PREFECTURE_FILE
+            first = example_document(path)
+            save_collection(root, 'other', dict(other, collection=dict(other['collection'], limit=0)))
+            self.assertEqual(example_document(path), first)
+            self.assertEqual(load_dataset(path)['sources']['other']['collection']['limit'], 0)
+
+    def test_v2_migration_groups_sources_without_losing_observations_or_judgments(self):
+        from njd.canonical import _pack, export_legacy, install_migration, load_effective, migrate
+        with tempfile.TemporaryDirectory() as td:
+            root, data, proposal, research = self.setup_repository(td)
+            other = build([row(source_id='other', name='別架空神社', reading_raw='べつかくうじんじゃ')])
+            other['collection']['source_key'] = 'example_wikipedia'
+            other['facilities'][0]['source_key'] = 'example_wikipedia'
+            documents, index = _pack({'sources/example.json': data,
+                'sources/example_wikipedia.json': other, 'corrections.json': proposal,
+                'reading_research.json': research})
+            for key, doc in documents.items():
+                write_json(root / 'sources' / (key + '.json'), doc)
+            write_json(root / 'sources/research_index.json', dict(index, schema_version=2))
+            (root / 'corrections.json').unlink()
+            (root / 'reading_research.json').unlink()
+            before = load_effective(root)
+            original = export_legacy(root)
+            destination = Path(td) / 'new'
+            migrate(root, destination)
+            self.assertEqual(export_legacy(destination), original)
+            self.assertEqual(load_effective(destination), before)
+            path = destination / 'sources/saitama.json'
+            grouped = load_dataset(path)
+            self.assertEqual(grouped['schema_version'], 3)
+            self.assertEqual(grouped['prefecture_code'], '11')
+            self.assertEqual(grouped['sources'], documents)
+            old_path = root / 'sources/example_wikipedia.json'
+            old_bytes = old_path.read_bytes()
+            different = load_dataset(old_path)
+            different['collection']['archived_scope_note'] = '移行案作成後の追記'
+            write_json(old_path, different)
+            with self.assertRaisesRegex(ValueError, 'input has changed'):
+                install_migration(root, destination)
+            self.assertEqual(load_dataset(old_path), different)
+            old_path.write_bytes(old_bytes)
+            install_migration(root, destination)
+            self.assertEqual({p.name for p in (root / 'sources').glob('*.json')},
+                             {'saitama.json', 'research_index.json'})
+            self.assertEqual(load_effective(root), before)
 
     def test_stale_split_archives_disappearing_child_and_its_manual_judgment(self):
         from njd.canonical import migrate, load_effective
@@ -413,7 +466,7 @@ class CanonicalTests(unittest.TestCase):
             current = load_effective(destination)
             self.assertEqual(len(current['entries']), 1)
             self.assertEqual(current['entries'][0]['status'], 'pending')
-            archives = load_dataset(destination / 'sources/example.json')['source_metadata']['retired_records']
+            archives = example_document(destination / PREFECTURE_FILE)['source_metadata']['retired_records']
             retired = next(a['record'] for a in archives if a['record']['id'] == child['id'])
             self.assertEqual(retired['judgments']['decisions'], manual)
             save_collection(destination, 'example', fixture)
@@ -428,9 +481,9 @@ class CanonicalTests(unittest.TestCase):
                 root, _, _, _ = self.setup_repository(td)
                 destination = Path(td) / 'new'
                 migrate(root, destination)
-                path = destination / 'sources/example.json'
+                path = destination / PREFECTURE_FILE
                 doc = load_dataset(path)
-                doc['entries'][0]['research'][field] = 'nonexistent'
+                doc['sources']['example']['entries'][0]['research'][field] = 'nonexistent'
                 write_json(path, doc)
                 with self.assertRaisesRegex(ValueError, 'research'):
                     load_effective(destination)
