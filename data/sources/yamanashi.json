@@ -9472,12 +9472,88 @@
           "surface": "諏訪神社"
         },
         {
-          "checked_at": "2026-11-08T14:25:40.726279+00:00",
+          "checked_at": "2026-11-21T13:31:49.323479+00:00",
           "evidence": "1009 諏訪神社 甲府市下帯那町2005 甲府支部 詳細>>",
           "facility_id": "b6d50203-5af3-5116-837c-7e3af5002170",
           "fetched_at": "2026-11-08T14:25:40.726279+00:00",
           "id": "d6ed0188-26d6-586e-9e3a-bbee067f6870",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわじんじゃ"
+              },
+              "expected_source_hash": "dcd7295278a9dd64e7d56e2ca08ee366ec8e13a4431e035ede76c90232241030",
+              "facility_id": "b6d50203-5af3-5116-837c-7e3af5002170",
+              "identity_match": {
+                "agency_address": "甲府市下帯那町2005",
+                "agency_name": "諏訪神社",
+                "reference_address": "山梨県甲府市下帯那町2005",
+                "reference_name": "諏訪神社"
+              },
+              "original": {
+                "address": "甲府市下帯那町2005",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1",
+                "name_raw": "諏訪神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の明示全文かなを採用し、神社庁と地名データの社名・全地番を照合した。かな末尾の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "山梨県甲府市下帯那町2005",
+                  "checked_at": "2026-11-21T13:31:49.323479+00:00",
+                  "excerpt": "諏訪神社（甲府市下帯那町） / すわじんじゃ / 山梨県甲府市下帯那町2005",
+                  "heading_raw": "諏訪神社（甲府市下帯那町）",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:27:04.869768+00:00",
+                    "page_hash": "2d55eb6588ffdff10a34e428f574b99c9a553aab734d049df797b387617e3b0a",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/kofu-shi?page=3"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "諏訪神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "山梨県 甲府市 下帯那町2005番地",
+                          "csv_row": 11352,
+                          "name_raw": "諏訪神社",
+                          "reading_raw": "すわじんじや",
+                          "reference_original_row_id": "190000173300"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "reading_comparison": "末尾「じんじや／じんじゃ」以外のかなが一致。両資料の原かなを保持。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "656fff29537fd0385b0b36161c846df6c659f161468fb60a4d1abf0faf2bc1da",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "すわじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "諏訪神社（甲府市下帯那町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/kofu-shi/4694"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1",
           "name_raw": "諏訪神社",
           "normalization": [
@@ -9485,11 +9561,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "e32b82f754793651aaf97d874b6d6eebb08fd522d601ecb7701b51ddb3f7597d",
-          "reading": "",
+          "reading": "すわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/1",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/kofu-shi/4694",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -9745,6 +9821,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪神社",
             "wikipedia_article_refs": [
@@ -9800,7 +9890,7 @@
             "status": "pending",
             "surface": "諏訪神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪神社"
         },
         {
@@ -59995,12 +60085,88 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:09.457716+00:00",
+          "checked_at": "2026-11-21T13:31:51.861728+00:00",
           "evidence": "3085 熊野神社 笛吹市境川町三椚898-1 東八代支部 詳細>>",
           "facility_id": "f90cac66-7705-5ef1-8936-1b5fb17dbdbb",
           "fetched_at": "2026-11-08T14:28:09.457716+00:00",
           "id": "e778b8b2-95cb-507d-b510-2e1189bdc718",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "くまのじんじゃ"
+              },
+              "expected_source_hash": "e0b576c88bd05a49bcbbc76726efc182078b9a4b5b3baa85c5e1625b53642ee6",
+              "facility_id": "f90cac66-7705-5ef1-8936-1b5fb17dbdbb",
+              "identity_match": {
+                "agency_address": "笛吹市境川町三椚898-1",
+                "agency_name": "熊野神社",
+                "reference_address": "山梨県笛吹市境川町三椚898-1",
+                "reference_name": "熊野神社"
+              },
+              "original": {
+                "address": "笛吹市境川町三椚898-1",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/4",
+                "name_raw": "熊野神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の明示全文かなを採用し、神社庁と地名データの社名・全地番を照合した。かな末尾の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "山梨県笛吹市境川町三椚898-1",
+                  "checked_at": "2026-11-21T13:31:51.861728+00:00",
+                  "excerpt": "熊野神社（笛吹市境川町） / くまのじんじゃ / 山梨県笛吹市境川町三椚898-1",
+                  "heading_raw": "熊野神社（笛吹市境川町）",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:26:45.932363+00:00",
+                    "page_hash": "9c83fcc1799876337f152eb64931e0ec807d661a1c4b2cfcab27144621fa4f48",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi?page=2"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "熊野神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "山梨県 笛吹市 境川町三椚898番地1",
+                          "csv_row": 11217,
+                          "name_raw": "熊野神社",
+                          "reading_raw": "くまのじんじや",
+                          "reference_original_row_id": "190000115800"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "reading_comparison": "末尾「じんじや／じんじゃ」以外のかなが一致。両資料の原かなを保持。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "09645a94338e7994fce4b040396592a67998eed59b54303df099e37c5b649794",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "くまのじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "熊野神社（笛吹市境川町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4936"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/4",
           "name_raw": "熊野神社",
           "normalization": [
@@ -60008,11 +60174,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "55a09db34e35ae9b93eb751dd7b0e5958eb78dc92fdf10c30ed91cba5c83d705",
-          "reading": "",
+          "reading": "くまのじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/4",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4936",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -60225,6 +60391,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "くまのじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "くまのじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "熊野神社",
             "wikipedia_article_refs": [
@@ -60264,7 +60444,7 @@
             "status": "pending",
             "surface": "熊野神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "熊野神社"
         },
         {
@@ -82081,12 +82261,88 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:30.111327+00:00",
+          "checked_at": "2026-11-21T13:31:41.739844+00:00",
           "evidence": "5040 諏訪大神社 中巨摩郡昭和町清水新居148 峡中支部 詳細>>",
           "facility_id": "4a445914-0c57-5fea-abea-5c09c19bd1f2",
           "fetched_at": "2026-11-08T14:28:30.111327+00:00",
           "id": "ae94978d-3f5c-5d0e-bb52-decac15067d0",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわだいじんじゃ"
+              },
+              "expected_source_hash": "d15e0bc17333b5edc03e550505613e1ae164a5f60f2f04fcd2d9139e5c58d520",
+              "facility_id": "4a445914-0c57-5fea-abea-5c09c19bd1f2",
+              "identity_match": {
+                "agency_address": "中巨摩郡昭和町清水新居148",
+                "agency_name": "諏訪大神社",
+                "reference_address": "山梨県中巨摩郡昭和町清水新居148",
+                "reference_name": "諏訪大神社"
+              },
+              "original": {
+                "address": "中巨摩郡昭和町清水新居148",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/2",
+                "name_raw": "諏訪大神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の明示全文かなを採用し、神社庁と地名データの社名・全地番を照合した。かな末尾の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "山梨県中巨摩郡昭和町清水新居148",
+                  "checked_at": "2026-11-21T13:31:41.739844+00:00",
+                  "excerpt": "諏訪大神社（中巨摩郡昭和町） / すわだいじんじゃ / 山梨県中巨摩郡昭和町清水新居148",
+                  "heading_raw": "諏訪大神社（中巨摩郡昭和町）",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:27:27.843960+00:00",
+                    "page_hash": "0096b9ecddeafa721834072fb4b7fe3b8789130bee94ca1a9778787d4ed681a5",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/showa-cho-nakakoma-gun"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "諏訪大神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "山梨県 中巨摩郡昭和町 清水新居148番地",
+                          "csv_row": 11314,
+                          "name_raw": "諏訪大神社",
+                          "reading_raw": "すわだいじんじや",
+                          "reference_original_row_id": "190000150800"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "reading_comparison": "末尾「じんじや／じんじゃ」以外のかなが一致。両資料の原かなを保持。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "50fd32c186ac406f73a8eb6488d1dc9f70406bb460f73f972d171feff750b343",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "すわだいじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "諏訪大神社（中巨摩郡昭和町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/showa-cho-nakakoma-gun/5125"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/2",
           "name_raw": "諏訪大神社",
           "normalization": [
@@ -82094,11 +82350,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "fa2cc8b1a44ace11a5178cf332e607b5fbc9a64f49c80a67f9f1fb5d48a872c3",
-          "reading": "",
+          "reading": "すわだいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/2",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/showa-cho-nakakoma-gun/5125",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -82226,6 +82482,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわだいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわだいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪大神社",
             "wikipedia_article_refs": [],
@@ -82256,7 +82526,7 @@
             "status": "pending",
             "surface": "諏訪大神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪大神社"
         },
         {
@@ -92879,12 +93149,88 @@
           "surface": "天神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:36.754471+00:00",
+          "checked_at": "2026-11-21T13:31:39.221110+00:00",
           "evidence": "5117 住吉神社 南アルプス市和泉229 峡中支部 詳細>>",
           "facility_id": "5f56eb55-36db-58c0-ba94-52b40c49a996",
           "fetched_at": "2026-11-08T14:28:36.754471+00:00",
           "id": "ad066074-49a5-586e-b909-969ba2907039",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すみよしじんじゃ"
+              },
+              "expected_source_hash": "98484c35311c8454727a673850236478a1e124ff7d86e2dfc3b4aa53a5adfdd3",
+              "facility_id": "5f56eb55-36db-58c0-ba94-52b40c49a996",
+              "identity_match": {
+                "agency_address": "南アルプス市和泉229",
+                "agency_name": "住吉神社",
+                "reference_address": "山梨県南アルプス市和泉229",
+                "reference_name": "住吉神社"
+              },
+              "original": {
+                "address": "南アルプス市和泉229",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/5",
+                "name_raw": "住吉神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の明示全文かなを採用し、神社庁と地名データの社名・全地番を照合した。かな末尾の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "山梨県南アルプス市和泉229",
+                  "checked_at": "2026-11-21T13:31:39.221110+00:00",
+                  "excerpt": "住吉神社（南アルプス市和泉） / すみよしじんじゃ / 山梨県南アルプス市和泉229",
+                  "heading_raw": "住吉神社（南アルプス市和泉）",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:27:10.044934+00:00",
+                    "page_hash": "3879bda55b9c11607e16ae3c68b0f31a62630f00dc1985fb873237188479c2ab",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/minamiarupusu-shi?page=2"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "住吉神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "山梨県 南アルプス市 和泉229番地",
+                          "csv_row": 11148,
+                          "name_raw": "住吉神社",
+                          "reading_raw": "すみよしじんじや",
+                          "reference_original_row_id": "190000090900"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "reading_comparison": "末尾「じんじや／じんじゃ」以外のかなが一致。両資料の原かなを保持。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "323009f33f1c0dc8e26ed7218cd7d5bb8180adcba157e5aa0a437b64a2be3421",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "すみよしじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "住吉神社（南アルプス市和泉） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/minamiarupusu-shi/5195"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/5",
           "name_raw": "住吉神社",
           "normalization": [
@@ -92892,11 +93238,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "bfa44c35683213f1f0280d6361cb4a5c39dae78a26f88c641ecd809bf69f86b6",
-          "reading": "",
+          "reading": "すみよしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/5",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/minamiarupusu-shi/5195",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -92989,6 +93335,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すみよしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すみよしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "住吉神社",
             "wikipedia_article_refs": [],
@@ -93019,7 +93379,7 @@
             "status": "pending",
             "surface": "住吉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "住吉神社"
         },
         {
@@ -94301,12 +94661,81 @@
           "surface": "厳宮諏訪神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:41.283782+00:00",
+          "checked_at": "2026-11-21T13:30:32.585196+00:00",
           "evidence": "6029 穂見神社 韮崎市穴山町1856 峡北支部 詳細>>",
           "facility_id": "b88cf3eb-14f0-5ee8-afea-85ca813be72a",
           "fetched_at": "2026-11-08T14:28:41.283782+00:00",
           "id": "7d40d413-f9fb-5937-aaac-38512cc518ec",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ほみじんじゃ"
+              },
+              "expected_source_hash": "cf714511397d8277bd956aede4fafcc88476b63fc355a8a5f24f3e432ac2b7de",
+              "facility_id": "b88cf3eb-14f0-5ee8-afea-85ca813be72a",
+              "identity_match": {
+                "agency_address": "韮崎市穴山町1856",
+                "agency_name": "穂見神社",
+                "reference_address": "山梨県韮崎市穴山町1856",
+                "reference_name": "穂見神社"
+              },
+              "original": {
+                "address": "韮崎市穴山町1856",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6/2",
+                "name_raw": "穂見神社",
+                "reading_raw": ""
+              },
+              "reason": "紹介本文に明示された全文かなを採用し、神社庁の社名・全地番を照合した。地名データの同じ全地番と照合し、読みの原表記を保持した。",
+              "references": [
+                {
+                  "address_raw": "山梨県韮崎市穴山町1856",
+                  "checked_at": "2026-11-21T13:30:32.585196+00:00",
+                  "excerpt": "穂見神社 / ほみじんじゃ / 山梨県韮崎市穴山町1856",
+                  "locator": "主紹介の社名・かなと同神社の所在地欄または同じ見出しの住所。",
+                  "name_raw": "穂見神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "山梨県 韮崎市 穴山町1856番地",
+                          "csv_row": 11329,
+                          "name_raw": "穂見神社",
+                          "reading_raw": "ほみじんじや",
+                          "reference_original_row_id": "190000156800"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "3dc18ac93a0c933926d6bfbdf260e8cf93c234cb9c267ab1eca3a1b4ecf91167",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T13:32:00.058960+00:00",
+                    "page_hash": "6f8a46947f564a4c6aab3a374c0dc8d33533c2398cfe8f2f7628a919668350f1",
+                    "title": "ホーム／韮崎市観光協会",
+                    "url": "https://www.nirasaki-kankou.jp/"
+                  },
+                  "reading_raw": "ほみじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_tourism_association",
+                  "source_publisher": "韮崎市観光協会",
+                  "title": "穂見神社（ほみじんじゃ）／韮崎市観光協会",
+                  "url": "https://www.nirasaki-kankou.jp/kankou_spot/jinjya_bukkaku_rekishi/jinjya_bukkaku/6483.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6/2",
           "name_raw": "穂見神社",
           "normalization": [
@@ -94314,11 +94743,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "7aaad98f853edb546fdd4abecc5f342d45c94396e1f8f7a6fecec2a520c316a6",
-          "reading": "",
+          "reading": "ほみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6/2",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.nirasaki-kankou.jp/kankou_spot/jinjya_bukkaku_rekishi/jinjya_bukkaku/6483.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -94541,6 +94970,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ほみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ほみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "穂見神社",
             "wikipedia_article_refs": [
@@ -94588,7 +95031,7 @@
             "status": "pending",
             "surface": "穂見神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "穂見神社"
         },
         {
@@ -139425,12 +139868,88 @@
           "surface": "新羅神社"
         },
         {
-          "checked_at": "2026-11-08T14:29:21.997122+00:00",
+          "checked_at": "2026-11-21T13:31:31.626264+00:00",
           "evidence": "4278 諏訪神社 南巨摩郡南部町南部8909 峡南支部 詳細>>",
           "facility_id": "a2801f4d-010e-5052-aea9-5e23647b6505",
           "fetched_at": "2026-11-08T14:29:21.997122+00:00",
           "id": "1719f9ee-01f3-53b6-8e71-426754e242df",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわじんじゃ"
+              },
+              "expected_source_hash": "a256102f42a96ecc60ad66c379511e854c4a06c4b49b61456c0977a08c7b575d",
+              "facility_id": "a2801f4d-010e-5052-aea9-5e23647b6505",
+              "identity_match": {
+                "agency_address": "南巨摩郡南部町南部8909",
+                "agency_name": "諏訪神社",
+                "reference_address": "山梨県南巨摩郡南部町南部8909",
+                "reference_name": "諏訪神社"
+              },
+              "original": {
+                "address": "南巨摩郡南部町南部8909",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/4/11",
+                "name_raw": "諏訪神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の明示全文かなを採用し、神社庁と地名データの社名・全地番を照合した。かな末尾の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "山梨県南巨摩郡南部町南部8909",
+                  "checked_at": "2026-11-21T13:31:31.626264+00:00",
+                  "excerpt": "諏訪神社（南巨摩郡南部町） / すわじんじゃ / 山梨県南巨摩郡南部町南部8909",
+                  "heading_raw": "諏訪神社（南巨摩郡南部町）",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:27:15.139954+00:00",
+                    "page_hash": "2df30fcd33af2b060aa9d8851be433559ba11bcaa6dcd52bfe3b3b7ad24eb897",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/nambu-cho-minamikoma-gun"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "諏訪神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "山梨県 南巨摩郡南部町 南部8909番地",
+                          "csv_row": 11403,
+                          "name_raw": "諏訪神社",
+                          "reading_raw": "すわじんじや",
+                          "reference_original_row_id": "190000197800"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "reading_comparison": "末尾「じんじや／じんじゃ」以外のかなが一致。両資料の原かなを保持。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "a46ee591c4a06d0f75d0e0f0b472d7edafeaa729ca5bb372c8c1f5b8373adc62",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "すわじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "諏訪神社（南巨摩郡南部町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/nambu-cho-minamikoma-gun/5085"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/4/11",
           "name_raw": "諏訪神社",
           "normalization": [
@@ -139438,11 +139957,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4f96b62f5012414169916a78f376d2c722a1cc929f9666fade00fe73dc8e4d57",
-          "reading": "",
+          "reading": "すわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/4/11",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/nambu-cho-minamikoma-gun/5085",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -139670,6 +140189,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪神社",
             "wikipedia_article_refs": [
@@ -139725,7 +140258,7 @@
             "status": "pending",
             "surface": "諏訪神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪神社"
         },
         {

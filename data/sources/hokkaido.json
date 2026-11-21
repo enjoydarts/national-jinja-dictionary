@@ -17741,12 +17741,88 @@
           "surface": "北野神社"
         },
         {
-          "checked_at": "2026-11-08T14:33:01.970535+00:00",
+          "checked_at": "2026-11-21T13:31:46.816006+00:00",
           "evidence": "旭川神社 |  | 旭川市東旭川南1条6丁目8番14号",
           "facility_id": "2e92e4d7-d24a-5835-bf84-ca75bdfaee4a",
           "fetched_at": "2026-11-08T14:33:01.970535+00:00",
           "id": "cfde58a6-b029-5ab8-b7c5-426f2918797a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "あさひかわじんじゃ"
+              },
+              "expected_source_hash": "164ca7da5144877923f788afd70f01eb1f7480f4fa7ae5e2b7cec277efe73ef2",
+              "facility_id": "2e92e4d7-d24a-5835-bf84-ca75bdfaee4a",
+              "identity_match": {
+                "agency_address": "旭川市東旭川南1条6丁目8番14号",
+                "agency_name": "旭川神社",
+                "reference_address": "北海道旭川市東旭川南1条6丁目8番14号",
+                "reference_name": "旭川神社"
+              },
+              "original": {
+                "address": "旭川市東旭川南1条6丁目8番14号",
+                "listing_url": "https://hokkaidojinjacho.jp/jinja-area/kamikawa/",
+                "name_raw": "旭川神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の明示全文かなを採用し、神社庁と地名データの社名・全地番を照合した。かな末尾の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "北海道旭川市東旭川南1条6丁目8番14号",
+                  "checked_at": "2026-11-21T13:31:46.816006+00:00",
+                  "excerpt": "旭川神社 / あさひかわじんじゃ / 北海道旭川市東旭川南1条6丁目8番14号",
+                  "heading_raw": "旭川神社",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:27:57.395374+00:00",
+                    "page_hash": "677f44a7cec03116188a5e354c5811179b240412fa3a5bb8c2d80c55d9589e4e",
+                    "url": "https://shrine.mobi/area/hokkaido/hokkaido/asahikawa-shi"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "旭川神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "北海道 旭川市 東旭川南一条六丁目8番14号",
+                          "csv_row": 590,
+                          "name_raw": "旭川神社",
+                          "reading_raw": "あさひかわじんじや",
+                          "reference_original_row_id": "010000370500"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "reading_comparison": "末尾「じんじや／じんじゃ」以外のかなが一致。両資料の原かなを保持。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "0fe6b39b34bc8a8ac0c4d8ce2d730e9496ebcad11ae15d5736b66cf2ad916340",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "あさひかわじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "旭川神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/hokkaido/hokkaido/asahikawa-shi/4080"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://hokkaidojinjacho.jp/jinja-area/kamikawa/",
           "name_raw": "旭川神社",
           "normalization": [
@@ -17754,11 +17830,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "97b2060dd5a6bd0a626630a455b29e6b9b838c983f7d2e9cfc52a44c0918fc03",
-          "reading": "",
+          "reading": "あさひかわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://hokkaidojinjacho.jp/jinja-area/kamikawa/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/hokkaido/hokkaido/asahikawa-shi/4080",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -19433,6 +19509,20 @@
             "prefecture_code": "01",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "あさひかわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "あさひかわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "旭川神社",
             "wikipedia_article_refs": [],
@@ -19463,7 +19553,7 @@
             "status": "pending",
             "surface": "旭川神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "旭川神社"
         },
         {
@@ -30508,12 +30598,98 @@
           "surface": "豊浦神社"
         },
         {
-          "checked_at": "2026-11-08T14:33:17.746539+00:00",
+          "checked_at": "2026-11-21T13:31:44.277762+00:00",
           "evidence": "刈田神社 |  | 登別市中央町6丁目24番地",
           "facility_id": "eb90712a-f1e8-5884-8a7d-97acb38617cb",
           "fetched_at": "2026-11-08T14:33:17.746539+00:00",
           "id": "b2252ce7-f04d-5f9f-a0a8-9d625e6e7868",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "かったじんじゃ"
+              },
+              "expected_source_hash": "cf44f202e4d2016dc2ed21b784b2a7b7a6015013a93e8cfd2dfc725fd0366f79",
+              "facility_id": "eb90712a-f1e8-5884-8a7d-97acb38617cb",
+              "identity_match": {
+                "agency_address": "登別市中央町6丁目24番地",
+                "agency_name": "刈田神社",
+                "reference_address": "北海道登別市中央町6-24",
+                "reference_name": "刈田神社"
+              },
+              "original": {
+                "address": "登別市中央町6丁目24番地",
+                "listing_url": "https://hokkaidojinjacho.jp/jinja-area/iburi/",
+                "name_raw": "刈田神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介と施設公式の全文かな「かったじんじゃ」が対応する。地名データの原かなと社名・全地番も記録した。",
+              "references": [
+                {
+                  "address_raw": "北海道登別市中央町6-24",
+                  "checked_at": "2026-11-21T13:31:44.277762+00:00",
+                  "excerpt": "刈田神社 / かったじんじゃ / 北海道登別市中央町6-24",
+                  "heading_raw": "刈田神社",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:28:07.656269+00:00",
+                    "page_hash": "e7814d3a4603a019a2acc8578094eea64a2d1401308654a00ae32c29c1763f80",
+                    "url": "https://shrine.mobi/area/hokkaido/hokkaido/noboribetsu-shi"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "刈田神社",
+                  "other_documented_values": [
+                    {
+                      "checked_at": "2026-11-21T13:32:05.790548+00:00",
+                      "locator": "施設公式トップメニューの由緒リンク",
+                      "name_raw": "刈田神社",
+                      "page_hash": "160a9b4247682cd3d54f2e27609303189f0c71947f8dce7c83bf171d4b526703",
+                      "reading_link_raw": "https://kattajinja.jimdoweb.com/%E5%88%88%E7%94%B0%E7%A5%9E%E7%A4%BE-%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%98%E3%82%93%E3%81%98%E3%82%83-%E3%81%A8%E3%81%AF/",
+                      "reading_raw": "かったじんじゃ",
+                      "source_kind": "official_shrine",
+                      "title": "登別総鎮守 刈田神社",
+                      "url": "https://kattajinja.jimdoweb.com/"
+                    },
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "北海道 登別市 中央町六丁目24番地",
+                          "csv_row": 442,
+                          "name_raw": "刈田神社",
+                          "reading_raw": "かつたじんじや",
+                          "reference_original_row_id": "010000266000"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "c9ee9c3d8c8b789b5500598c41cf139cd6612c44bdd13abf6be3bb52933978b0",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "かったじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "刈田神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/hokkaido/hokkaido/noboribetsu-shi/10646"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://hokkaidojinjacho.jp/jinja-area/iburi/",
           "name_raw": "刈田神社",
           "normalization": [
@@ -30521,11 +30697,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d84353b3cdb2bb2524668bd13f6e0baa5f86a59a6aaa6d10e66c86a1a9981bd2",
-          "reading": "",
+          "reading": "かったじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://hokkaidojinjacho.jp/jinja-area/iburi/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/hokkaido/hokkaido/noboribetsu-shi/10646",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -30661,6 +30837,20 @@
             "prefecture_code": "01",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "かったじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "かったじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "刈田神社",
             "wikipedia_article_refs": [
@@ -30700,7 +30890,7 @@
             "status": "pending",
             "surface": "刈田神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "刈田神社"
         },
         {
@@ -60393,12 +60583,88 @@
           "surface": "若松神社"
         },
         {
-          "checked_at": "2026-11-08T14:33:54.638925+00:00",
+          "checked_at": "2026-11-21T13:31:29.095664+00:00",
           "evidence": "事比羅神社 |  | 久遠郡せたな町瀬棚区三本杉34番地1号",
           "facility_id": "fcc723bb-2acc-5e9b-9c52-4d6eb074c84b",
           "fetched_at": "2026-11-08T14:33:54.638925+00:00",
           "id": "0792938c-0cf6-5b74-ac74-456bc3960af1",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ことひらじんじゃ"
+              },
+              "expected_source_hash": "57786d0dd0c6e549e807149ef5db9ce5f5b04f578586b035eab9d6e4f27bf2f5",
+              "facility_id": "fcc723bb-2acc-5e9b-9c52-4d6eb074c84b",
+              "identity_match": {
+                "agency_address": "久遠郡せたな町瀬棚区三本杉34番地1号",
+                "agency_name": "事比羅神社",
+                "reference_address": "北海道久遠郡せたな町瀬棚区三本杉34-1",
+                "reference_name": "事比羅神社"
+              },
+              "original": {
+                "address": "久遠郡せたな町瀬棚区三本杉34番地1号",
+                "listing_url": "https://hokkaidojinjacho.jp/jinja-area/hiyama/page/3/",
+                "name_raw": "事比羅神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の明示全文かなを採用し、神社庁と地名データの社名・全地番を照合した。かな末尾の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "北海道久遠郡せたな町瀬棚区三本杉34-1",
+                  "checked_at": "2026-11-21T13:31:29.095664+00:00",
+                  "excerpt": "事比羅神社 / ことひらじんじゃ / 北海道久遠郡せたな町瀬棚区三本杉34-1",
+                  "heading_raw": "事比羅神社",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:28:10.181469+00:00",
+                    "page_hash": "c90acf5979f50409d6c4609911c8e4545824dd7db2ae1e5066c1e7f3520c90e8",
+                    "url": "https://shrine.mobi/area/hokkaido/hokkaido/setana-cho-kudo-gun"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "事比羅神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "北海道 久遠郡せたな町 瀬棚区三本杉34番地1",
+                          "csv_row": 200,
+                          "name_raw": "事比羅神社",
+                          "reading_raw": "ことひらじんじや",
+                          "reference_original_row_id": "010000126500"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "reading_comparison": "末尾「じんじや／じんじゃ」以外のかなが一致。両資料の原かなを保持。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "303dc39bc29c00fcf8fd0c05077759366d860d3af6bbd161a66d30a584f35d51",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "ことひらじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "事比羅神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/hokkaido/hokkaido/setana-cho-kudo-gun/10618"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://hokkaidojinjacho.jp/jinja-area/hiyama/page/3/",
           "name_raw": "事比羅神社",
           "normalization": [
@@ -60406,11 +60672,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d3a6786fb02c298cc693850109b25f477dfac4a37ae7a2672760029338bb1a29",
-          "reading": "",
+          "reading": "ことひらじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://hokkaidojinjacho.jp/jinja-area/hiyama/page/3/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/hokkaido/hokkaido/setana-cho-kudo-gun/10618",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -60538,6 +60804,20 @@
             "prefecture_code": "01",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ことひらじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ことひらじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "事比羅神社",
             "wikipedia_article_refs": [
@@ -60577,7 +60857,7 @@
             "status": "pending",
             "surface": "事比羅神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "事比羅神社"
         },
         {

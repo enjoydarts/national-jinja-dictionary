@@ -199334,12 +199334,66 @@
           "surface": "祝神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:11.119751+00:00",
+          "checked_at": "2026-11-21T13:32:23.425021+00:00",
           "evidence": "玉依比賣命神社 381-1221 長野市松代町東条字内田443",
           "facility_id": "1458308a-1bbb-57a7-b52a-808a1523a6f5",
           "fetched_at": "2026-11-08T14:31:11.119751+00:00",
           "id": "17d983fa-b3a7-58a1-a935-e2fdd246e841",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "たまよりひめのみことじんじゃ"
+              },
+              "expected_source_hash": "41ae2cb26eb4a88dd395f297b71dd3fe9db8cc40d0dabc45fa299e3609aad540",
+              "facility_id": "1458308a-1bbb-57a7-b52a-808a1523a6f5",
+              "identity_match": {
+                "agency_address": "長野市松代町東条字内田443",
+                "agency_name": "玉依比賣命神社",
+                "reference_address": "長野県長野市松代町東条字内田443",
+                "reference_name": "玉依比賣命神社"
+              },
+              "original": {
+                "address": "長野市松代町東条字内田443",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/nagano.htm",
+                "name_raw": "玉依比賣命神社",
+                "reading_raw": ""
+              },
+              "reason": "本文に神社の全文かなが明示されている。文化財ページが同じ社名を冠する本殿に全地番を掲載し、神社庁の所在地と対応した。",
+              "references": [
+                {
+                  "address_raw": "長野県長野市松代町東条字内田443",
+                  "checked_at": "2026-11-21T13:32:23.425021+00:00",
+                  "excerpt": "玉依比賣命神社 / たまよりひめのみことじんじゃ / 長野県長野市松代町東条字内田443",
+                  "locator": "主紹介本文の社名と全文かな、および所在地表。",
+                  "name_raw": "玉依比賣命神社",
+                  "other_documented_values": [
+                    {
+                      "address_raw": "長野県長野市松代町東条字内田443",
+                      "checked_at": "2026-11-21T13:32:52.233672+00:00",
+                      "discovery_metadata": {
+                        "checked_at": "2026-11-20T03:00:50.210317+00:00",
+                        "page_hash": "d9e5ec81f16e0ca6b2800c4e383dd60253cd8e0c597246bdf1d5c0ba227faed5",
+                        "url": "https://jpsearch.go.jp/api/item/search/bunka-default?keyword=%E7%A5%9E%E7%A4%BE&size=200&from=1800"
+                      },
+                      "name_raw": "玉依比賣命神社本殿",
+                      "page_hash": "ce7c5b9983eabf4a96b8b5a7ec0896c25bd15658017525ca77c6c78b77710ba2",
+                      "reading_raw": "たまよりひめのみことじんじゃほんでん",
+                      "source_kind": "government_cultural_property",
+                      "title": "玉依比賣命神社本殿",
+                      "url": "https://online.bunka.go.jp/db/heritages/detail/211147"
+                    }
+                  ],
+                  "page_hash": "aa03ed3b1752009f9f112f70209d31e490009f91c49172762f6588a6a4fea0ca",
+                  "reading_raw": "たまよりひめのみことじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "cultural_heritage_guide",
+                  "title": "玉依比賣命神社 | 長野県 | 日本の文化遺産を探す｜国宝・重要文化財データベース",
+                  "url": "https://japanheritage.jp/ja/nagano/heritage/tamayorihime-shrine"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/nagano.htm",
           "name_raw": "玉依比賣命神社",
           "normalization": [
@@ -199347,11 +199401,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "75a9b4dbe7bc2d37c710661c3ab0c00f879a8a8209cdba2e6deba4189d0773f4",
-          "reading": "",
+          "reading": "たまよりひめのみことじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/nagano.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://japanheritage.jp/ja/nagano/heritage/tamayorihime-shrine",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -199459,6 +199513,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "たまよりひめのみことじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "たまよりひめのみことじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "玉依比賣命神社",
             "wikipedia_article_refs": [],
@@ -199489,7 +199557,7 @@
             "status": "pending",
             "surface": "玉依比賣命神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "玉依比賣命神社"
         },
         {

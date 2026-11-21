@@ -7576,12 +7576,88 @@
           "surface": "八幡神社／多久市東多久町"
         },
         {
-          "checked_at": "2026-11-08T14:34:54.556317+00:00",
+          "checked_at": "2026-11-21T13:31:54.434083+00:00",
           "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=高野神社; 掲載読み=; 所在地=多久市南多久町下多久２５１１",
           "facility_id": "4183bb24-a23e-5c93-81a0-c41affab9ed8",
           "fetched_at": "2026-11-08T14:34:54.556317+00:00",
           "id": "fbc3713e-474f-5884-bceb-b81472d77db1",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "たかのじんじゃ"
+              },
+              "expected_source_hash": "2c94a2b312bbadd41c60b9659a8367fab6667530d2484ff2fcec3503f9d731cd",
+              "facility_id": "4183bb24-a23e-5c93-81a0-c41affab9ed8",
+              "identity_match": {
+                "agency_address": "多久市南多久町下多久２５１１",
+                "agency_name": "高野神社",
+                "reference_address": "佐賀県多久市南多久町下多久2511",
+                "reference_name": "高野神社"
+              },
+              "original": {
+                "address": "多久市南多久町下多久２５１１",
+                "listing_url": "https://saga-jinjacho.jp/%e9%ab%98%e9%87%8e%e7%a5%9e%e7%a4%be/",
+                "name_raw": "高野神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の明示全文かなを採用し、神社庁と地名データの社名・全地番を照合した。かな末尾の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "佐賀県多久市南多久町下多久2511",
+                  "checked_at": "2026-11-21T13:31:54.434083+00:00",
+                  "excerpt": "高野神社 / たかのじんじゃ / 佐賀県多久市南多久町下多久2511",
+                  "heading_raw": "高野神社",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:25:49.250167+00:00",
+                    "page_hash": "3b084accf38490772af06c8a699ca013dd13aa6a716a4605af63f7e366950e7f",
+                    "url": "https://shrine.mobi/area/kyushu/saga?page=5"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "高野神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "佐賀県 多久市 南多久町大字下多久2511番地",
+                          "csv_row": 28562,
+                          "name_raw": "高野神社",
+                          "reading_raw": "たかのじんじや",
+                          "reference_original_row_id": "420000115800"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "reading_comparison": "末尾「じんじや／じんじゃ」以外のかなが一致。両資料の原かなを保持。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "9f4e1864fb1ead99383a28f5eb2a0771ec1148f64f3954f1ba93d41dcbb3097c",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "たかのじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "高野神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/saga/taku-shi/1174"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://saga-jinjacho.jp/%e9%ab%98%e9%87%8e%e7%a5%9e%e7%a4%be/",
           "name_raw": "高野神社",
           "normalization": [
@@ -7589,11 +7665,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "b59a046bc65add40ec6b97bc09a239819c18df4d14d402f09480cd8061334e65",
-          "reading": "",
+          "reading": "たかのじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://saga-jinjacho.jp/%e9%ab%98%e9%87%8e%e7%a5%9e%e7%a4%be/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/saga/taku-shi/1174",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -7665,6 +7741,20 @@
             "prefecture_code": "41",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "たかのじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "たかのじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "高野神社",
             "wikipedia_article_refs": [],
@@ -7695,7 +7785,7 @@
             "status": "pending",
             "surface": "高野神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "高野神社"
         },
         {
@@ -9730,12 +9820,97 @@
           "surface": "脊振神社"
         },
         {
-          "checked_at": "2026-11-08T14:35:26.298952+00:00",
+          "checked_at": "2026-11-21T13:31:36.681554+00:00",
           "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=冠者神社; 掲載読み=; 所在地=神埼市千代田町崎村１２３",
           "facility_id": "72bf1dcf-4cf0-5eef-9d90-565deaf019ea",
           "fetched_at": "2026-11-08T14:35:26.298952+00:00",
           "id": "9cc45569-bcb8-5789-b479-b48288c28373",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "かんじゃじんじゃ"
+              },
+              "expected_source_hash": "e9b92ed437c1be9396efb8f0bef7051e1e41d52b10c0e47bbfb8fdefcf0b7e2a",
+              "facility_id": "72bf1dcf-4cf0-5eef-9d90-565deaf019ea",
+              "identity_match": {
+                "agency_address": "神埼市千代田町崎村１２３",
+                "agency_name": "冠者神社",
+                "reference_address": "佐賀県神埼市千代田町崎村123",
+                "reference_name": "冠者神社"
+              },
+              "original": {
+                "address": "神埼市千代田町崎村１２３",
+                "listing_url": "https://saga-jinjacho.jp/%e5%86%a0%e8%80%85%e7%a5%9e%e7%a4%be/",
+                "name_raw": "冠者神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなと全地番を確認。市の文化財資料は鳥居を同社境内に置き、表題に現行かなを示している。",
+              "references": [
+                {
+                  "address_raw": "佐賀県神埼市千代田町崎村123",
+                  "checked_at": "2026-11-21T13:31:36.681554+00:00",
+                  "excerpt": "冠者神社 / かんじゃじんじゃ / 佐賀県神埼市千代田町崎村123",
+                  "heading_raw": "冠者神社",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T13:25:44.011859+00:00",
+                    "page_hash": "3f93afb6b6dd359d0a7296f02220c1a82bb1f3a87cb0e78da5782f5dc9bc524f",
+                    "url": "https://shrine.mobi/area/kyushu/saga?page=3"
+                  },
+                  "locator": "施設個別ページh1の社名・全文かなと「住所」欄。",
+                  "name_raw": "冠者神社",
+                  "other_documented_values": [
+                    {
+                      "checked_at": "2026-11-21T13:32:15.630688+00:00",
+                      "locator": "資料詳細のタイトルのかな、所在地、解説の社地同定",
+                      "name_raw": "冠者神社の鳥居",
+                      "page_hash": "726090dd1a4008cefca6885fbd77d7decb9dd5bef2a3727ffe07f83c46c0f59a",
+                      "reading_raw": "かんじゃじんじゃのとりい",
+                      "source_kind": "municipal_cultural_property",
+                      "title": "冠者神社の鳥居（神埼デジタルミュージアム）",
+                      "url": "https://www.kanzaki-museum.com/frmDataDetail.aspx?id=691"
+                    },
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "佐賀県 神埼市 千代田町崎村123番地",
+                          "csv_row": 28403,
+                          "name_raw": "冠者神社",
+                          "reading_raw": "かんじやじんじや",
+                          "reference_original_row_id": "420000051600"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "cfad4c929caa09078ac46a765a3e37a7c862e2738ccf8e45401eb315a820e108",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "かんじゃじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "名称・独立かな・全所在地の事実項目。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "冠者神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/saga/kanzaki-shi/1037"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://saga-jinjacho.jp/%e5%86%a0%e8%80%85%e7%a5%9e%e7%a4%be/",
           "name_raw": "冠者神社",
           "normalization": [
@@ -9743,11 +9918,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "978c4dbc2645e09b9f616fb2b8adb2e8bba399421f1d9c07d9013cbbffe87327",
-          "reading": "",
+          "reading": "かんじゃじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://saga-jinjacho.jp/%e5%86%a0%e8%80%85%e7%a5%9e%e7%a4%be/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/saga/kanzaki-shi/1037",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -9817,6 +9992,20 @@
             "prefecture_code": "41",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "かんじゃじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "かんじゃじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "冠者神社",
             "wikipedia_article_refs": [],
@@ -9847,7 +10036,7 @@
             "status": "pending",
             "surface": "冠者神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "冠者神社"
         },
         {
@@ -11995,12 +12184,77 @@
           "surface": "八幡神社／みやき町西島"
         },
         {
-          "checked_at": "2026-11-08T14:36:04.318190+00:00",
+          "checked_at": "2026-11-21T13:29:48.603903+00:00",
           "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=綾部八幡神社; 掲載読み=; 所在地=三養基郡みやき町大字原古賀２３３１",
           "facility_id": "48523bd6-e721-598e-8b0a-079a3b866eeb",
           "fetched_at": "2026-11-08T14:36:04.318190+00:00",
           "id": "04ae0141-b61c-5e9a-a1f1-6ccb792f9644",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "あやべはちまんじんじゃ"
+              },
+              "expected_source_hash": "42d631a4ea621d0974f02336911fcebc59de9e05e4fde6c3f676f05088328800",
+              "facility_id": "48523bd6-e721-598e-8b0a-079a3b866eeb",
+              "identity_match": {
+                "agency_address": "三養基郡みやき町大字原古賀２３３１",
+                "agency_name": "綾部八幡神社",
+                "reference_address": "三養基郡みやき町大字原古賀2331番地",
+                "reference_name": "綾部八幡神社"
+              },
+              "original": {
+                "address": "三養基郡みやき町大字原古賀２３３１",
+                "listing_url": "https://saga-jinjacho.jp/%e7%b6%be%e9%83%a8%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/",
+                "name_raw": "綾部八幡神社",
+                "reading_raw": ""
+              },
+              "reason": "県指定文化財の解説で、同じ名称・全地番の神社が実施する神事を確認した。題名の助詞「の」までに明示された神社名と全文かなを照合した。地名データの原かなと全地番も保持した。",
+              "references": [
+                {
+                  "address_raw": "三養基郡みやき町大字原古賀2331番地",
+                  "checked_at": "2026-11-21T13:29:48.603903+00:00",
+                  "excerpt": "綾部八幡神社の旗上げ神事・旗下ろし神事 / あやべはちまんじんじゃのはたあげしんじ・はたおろししんじ / 三養基郡みやき町大字原古賀2331番地",
+                  "heading_raw": "綾部八幡神社の旗上げ神事・旗下ろし神事",
+                  "locator": "指定文化財の神事名・全文かな、同項の所在地。助詞「の」の直前の神社名と対応するかな。",
+                  "name_raw": "綾部八幡神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "佐賀県 三養基郡みやき町 大字原古賀2331番地",
+                          "csv_row": 28301,
+                          "name_raw": "綾部八幡神社",
+                          "reading_raw": "あやべはちまんじんじや",
+                          "reference_original_row_id": "420000013600"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "b539ef076efcaf2fae0b8d2a0bb0431f2cadc5988d89c48e8b3a8a2ba2145000",
+                  "reading_raw": "あやべはちまんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "prefectural_cultural_property",
+                  "source_publisher": "佐賀県",
+                  "title": "県指定（民俗文化財の部）04",
+                  "title_reading_raw": "あやべはちまんじんじゃのはたあげしんじ・はたおろししんじ",
+                  "url": "https://www.pref.saga.lg.jp/kiji0031581/index.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://saga-jinjacho.jp/%e7%b6%be%e9%83%a8%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/",
           "name_raw": "綾部八幡神社",
           "normalization": [
@@ -12008,11 +12262,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "fe1a324effa7a6459498bfed75880ebf83ebc995c94e3d832e00c4e54bc8a497",
-          "reading": "",
+          "reading": "あやべはちまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://saga-jinjacho.jp/%e7%b6%be%e9%83%a8%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.pref.saga.lg.jp/kiji0031581/index.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -12086,6 +12340,20 @@
             "prefecture_code": "41",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "あやべはちまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "あやべはちまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "綾部八幡神社",
             "wikipedia_article_refs": [],
@@ -12116,7 +12384,7 @@
             "status": "pending",
             "surface": "綾部八幡神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "綾部八幡神社"
         },
         {
@@ -17586,12 +17854,87 @@
           "surface": "松蔭神社"
         },
         {
-          "checked_at": "2026-11-08T14:37:58.384929+00:00",
+          "checked_at": "2026-11-21T13:29:48.603903+00:00",
           "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=琴路神社; 掲載読み=; 所在地=鹿島市大字納富分1939",
           "facility_id": "db4f02d7-a0fd-5f84-9834-18f41782f64c",
           "fetched_at": "2026-11-08T14:37:58.384929+00:00",
           "id": "74279938-c4d2-54e0-b39c-7712d9fca5f1",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "きんろじんじゃ"
+              },
+              "expected_source_hash": "d538e36eef656177b7d042c448f4a738a1a9e9dabbddee1667d3567a8e93cfcc",
+              "facility_id": "db4f02d7-a0fd-5f84-9834-18f41782f64c",
+              "identity_match": {
+                "agency_address": "鹿島市大字納富分1939",
+                "agency_name": "琴路神社",
+                "reference_address": "鹿島市大字納富分1939番地",
+                "reference_name": "琴路神社"
+              },
+              "original": {
+                "address": "鹿島市大字納富分1939",
+                "listing_url": "https://saga-jinjacho.jp/%e7%90%b4%e8%b7%af%e7%a5%9e%e7%a4%be/",
+                "name_raw": "琴路神社",
+                "reading_raw": ""
+              },
+              "reason": "県指定文化財の解説で、同じ名称・全地番の神社が実施する神事を確認した。題名の助詞「の」までに明示された神社名と全文かなを照合した。地名データの原かなと全地番も保持した。",
+              "references": [
+                {
+                  "address_raw": "鹿島市大字納富分1939番地",
+                  "checked_at": "2026-11-21T13:29:48.603903+00:00",
+                  "excerpt": "琴路神社の神幸祭行事 / きんろじんじゃのしんこうさいぎょうじ / 鹿島市大字納富分1939番地",
+                  "heading_raw": "琴路神社の神幸祭行事",
+                  "locator": "指定文化財の神事名・全文かな、同項の所在地。助詞「の」の直前の神社名と対応するかな。",
+                  "name_raw": "琴路神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "佐賀県 鹿島市 大字納富分1939番地",
+                          "csv_row": 28817,
+                          "name_raw": "琴路神社",
+                          "reading_raw": "きんろじんじや",
+                          "reference_original_row_id": "420000206600"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    },
+                    {
+                      "address_raw": "佐賀県鹿島市大字納富分1939-1",
+                      "checked_at": "2026-11-21T13:32:12.808535+00:00",
+                      "name_raw": "琴路神社",
+                      "page_hash": "4f37e1b30c7e644510c9cbffc467ef6933e9daab19dff4d3e51bb00d1dad80da",
+                      "reading_raw": "きんろじんじゃ",
+                      "source_kind": "municipal_tourism_association",
+                      "title": "琴路神社 - 鹿島市公式観光サイト",
+                      "url": "https://saga-kashima-kankou.com/spot/1366"
+                    }
+                  ],
+                  "page_hash": "b539ef076efcaf2fae0b8d2a0bb0431f2cadc5988d89c48e8b3a8a2ba2145000",
+                  "reading_raw": "きんろじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "prefectural_cultural_property",
+                  "source_publisher": "佐賀県",
+                  "title": "県指定（民俗文化財の部）04",
+                  "title_reading_raw": "きんろじんじゃのしんこうさいぎょうじ",
+                  "url": "https://www.pref.saga.lg.jp/kiji0031581/index.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://saga-jinjacho.jp/%e7%90%b4%e8%b7%af%e7%a5%9e%e7%a4%be/",
           "name_raw": "琴路神社",
           "normalization": [
@@ -17599,11 +17942,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "7795109bd3ff01b8e97d0ef3359d633fba4e397ad9c4afd7ffd52030ac037c3c",
-          "reading": "",
+          "reading": "きんろじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://saga-jinjacho.jp/%e7%90%b4%e8%b7%af%e7%a5%9e%e7%a4%be/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.pref.saga.lg.jp/kiji0031581/index.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -17674,6 +18017,20 @@
             "prefecture_code": "41",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "きんろじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "きんろじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "琴路神社",
             "wikipedia_article_refs": [],
@@ -17704,7 +18061,7 @@
             "status": "pending",
             "surface": "琴路神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "琴路神社"
         },
         {

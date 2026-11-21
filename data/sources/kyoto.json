@@ -51615,12 +51615,81 @@
           "surface": "天満宮社"
         },
         {
-          "checked_at": "2026-11-09T08:51:27.170331+00:00",
+          "checked_at": "2026-11-21T13:30:38.942127+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「走田神社」、郵便番号「621-0806」、所在地「亀岡市余部町走田1」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "3444940b-95cb-5777-86da-f9cb7854f583",
           "fetched_at": "2026-11-09T08:51:27.170331+00:00",
           "id": "5824b9e2-021d-5bb1-ba2f-148c28c92a13",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はせだじんじゃ"
+              },
+              "expected_source_hash": "b5a9f66fa655f7e1e2807714ac799756ca5ec159fe6a0cc25cbdfb562d51a821",
+              "facility_id": "3444940b-95cb-5777-86da-f9cb7854f583",
+              "identity_match": {
+                "agency_address": "亀岡市余部町走田1",
+                "agency_name": "走田神社",
+                "reference_address": "京都府亀岡市余部町走田1",
+                "reference_name": "走田神社"
+              },
+              "original": {
+                "address": "亀岡市余部町走田1",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
+                "name_raw": "走田神社",
+                "reading_raw": ""
+              },
+              "reason": "紹介本文に明示された全文かなを採用し、神社庁の社名・全地番を照合した。地名データの同じ全地番と照合し、読みの原表記を保持した。",
+              "references": [
+                {
+                  "address_raw": "京都府亀岡市余部町走田1",
+                  "checked_at": "2026-11-21T13:30:38.942127+00:00",
+                  "excerpt": "走田神社 / はせだじんじゃ / 京都府亀岡市余部町走田1",
+                  "locator": "主紹介の社名・かなと同神社の所在地欄または同じ見出しの住所。",
+                  "name_raw": "走田神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "京都府 亀岡市 余部町走田1番地",
+                          "csv_row": 17039,
+                          "name_raw": "走田神社",
+                          "reading_raw": "はせだじんじや",
+                          "reference_original_row_id": "260000106100"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "48a01bb6496fee58e5e05bcbebda03424ebd44a1bae8443b3c948e18a3b2e65e",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T13:31:56.423705+00:00",
+                    "page_hash": "10cd4d8e1344e56e165d5cb5153bcb7e9ce0ecd569a1df96ff61301a8cef1d13",
+                    "title": "プライバシーポリシー&免責事項 | 大阪発！パさんのとことんツーリング",
+                    "url": "https://tokoton-touring.com/privacy-policy/"
+                  },
+                  "reading_raw": "はせだじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_field_report",
+                  "source_publisher": "大阪発！パさんのとことんツーリング",
+                  "title": "走田神社（京都府亀岡市） | 大阪発！パさんのとことんツーリング",
+                  "url": "https://tokoton-touring.com/tokospo-haseda-jinja/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
           "name_raw": "走田神社",
           "normalization": [
@@ -51628,11 +51697,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "3bc2b67d84727cc3039b50aec229859ecabcaa8cb7b6203935a38f86f3b33c54",
-          "reading": "",
+          "reading": "はせだじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://tokoton-touring.com/tokospo-haseda-jinja/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -51828,6 +51897,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はせだじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はせだじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "走田神社",
             "wikipedia_article_refs": [],
@@ -51858,7 +51941,7 @@
             "status": "pending",
             "surface": "走田神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "走田神社"
         },
         {
@@ -71205,12 +71288,82 @@
           "surface": "水分神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:31.290319+00:00",
+          "checked_at": "2026-11-21T13:30:35.532728+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「地祇神社」、郵便番号「610-0322」、所在地「京田辺市普賢寺下大門65」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "82735909-c62d-5e9c-8dc4-0a695e06964e",
           "fetched_at": "2026-11-09T08:51:31.290319+00:00",
           "id": "e3079f72-9566-55c9-99e0-830d430e3d1a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ちぎじんじゃ"
+              },
+              "expected_source_hash": "2040a44b83f246fca3c090f76f50bfdc20edcab6e39fd55b5c46694182231ce2",
+              "facility_id": "82735909-c62d-5e9c-8dc4-0a695e06964e",
+              "identity_match": {
+                "agency_address": "京田辺市普賢寺下大門65",
+                "agency_name": "地祇神社",
+                "reference_address": "京都府京田辺市普賢寺下大門65",
+                "reference_name": "地祇神社"
+              },
+              "original": {
+                "address": "京田辺市普賢寺下大門65",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
+                "name_raw": "地祇神社",
+                "reading_raw": ""
+              },
+              "reason": "紹介本文に明示された全文かなを採用し、神社庁の社名・全地番を照合した。地名データの同じ全地番と照合し、読みの原表記を保持した。",
+              "references": [
+                {
+                  "address_raw": "京都府京田辺市普賢寺下大門65",
+                  "checked_at": "2026-11-21T13:30:35.532728+00:00",
+                  "excerpt": "地祇神社 / ちぎじんじゃ / 京都府京田辺市普賢寺下大門65",
+                  "locator": "主紹介の社名・かなと同神社の所在地欄または同じ見出しの住所。",
+                  "name_raw": "地祇神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "京都府 京田辺市 普賢寺下大門65番地",
+                          "csv_row": 16883,
+                          "name_raw": "地祇神社",
+                          "reading_raw": "ちぎじんじや",
+                          "reference_original_row_id": "260000045500"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "7c7c8fd2d6cb76a1193d791b8cd67ce7c0612576005e8e2146d2b987737c7140",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T13:31:57.222398+00:00",
+                    "page_hash": "00d2e571736a17c1938fc460cb6a274c2034c4de6b4b1721bd97f4574b7edc32",
+                    "title": "プライバシーポリシー | ＪＲ学研都市線（片町線）",
+                    "url": "https://katamachisen.mi-ktt.ne.jp/privacy-policy/"
+                  },
+                  "reading_raw": "ちぎじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "画像等の扱いを規約で確認し、社名・明示かな・所在地の事実項目を参照。",
+                  "source_kind": "regional_tourism_publication",
+                  "source_publisher": "JR学研都市線（片町線）地域紹介",
+                  "title": "地祇神社（ちぎじんじゃ）【京田辺市観光スポット】 | ＪＲ学研都市線（片町線）",
+                  "url": "https://katamachisen.mi-ktt.ne.jp/kankou_place/chigijinja/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
           "name_raw": "地祇神社",
           "normalization": [
@@ -71218,11 +71371,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "95578c4a175ebc5a0364ac13f5fec6ec339867d06f4a91538e3c5789804fde9c",
-          "reading": "",
+          "reading": "ちぎじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/15.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://katamachisen.mi-ktt.ne.jp/kankou_place/chigijinja/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -71336,6 +71489,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ちぎじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ちぎじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "地祇神社",
             "wikipedia_article_refs": [],
@@ -71366,7 +71533,7 @@
             "status": "pending",
             "surface": "地祇神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "地祇神社"
         },
         {

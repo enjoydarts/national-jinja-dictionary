@@ -33517,12 +33517,75 @@
           "surface": "荒魂神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:54.748826+00:00",
+          "checked_at": "2026-11-21T13:30:42.181902+00:00",
           "evidence": "li.c-entries__item a[href=\"https://kagawakenjinjacho.or.jp/shrine/%e5%86%a0%e7%ba%93%e7%a5%9e%e7%a4%be/\"]: 名称=冠纓神社; 掲載読み=; 所在地=高松市香南町由佐1409番地",
           "facility_id": "42ed6296-cd74-5d89-85a8-bcf89027ee59",
           "fetched_at": "2026-11-08T14:31:54.748826+00:00",
           "id": "74183256-0ef5-55c7-8da2-ea4a4f8aec3a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "かんえいじんじゃ"
+              },
+              "expected_source_hash": "7255fe361bd2f70d1f7d019f21e8dbaf7096e4e8811f92133fb4f8f22597117f",
+              "facility_id": "42ed6296-cd74-5d89-85a8-bcf89027ee59",
+              "identity_match": {
+                "agency_address": "高松市香南町由佐1409番地",
+                "agency_name": "冠纓神社",
+                "reference_address": "香川県高松市香南町由佐１４０９",
+                "reference_name": "冠纓神社"
+              },
+              "original": {
+                "address": "高松市香南町由佐1409番地",
+                "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/6/",
+                "name_raw": "冠纓神社",
+                "reading_raw": ""
+              },
+              "reason": "紹介本文に明示された全文かなを採用し、神社庁の社名・全地番を照合した。地名データの同じ全地番と照合し、読みの原表記を保持した。",
+              "references": [
+                {
+                  "address_raw": "香川県高松市香南町由佐１４０９",
+                  "checked_at": "2026-11-21T13:30:42.181902+00:00",
+                  "excerpt": "冠纓神社 / かんえいじんじゃ / 香川県高松市香南町由佐１４０９",
+                  "locator": "主紹介の社名・かなと同神社の所在地欄または同じ見出しの住所。",
+                  "name_raw": "冠纓神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "香川県 高松市 香南町由佐1409番地",
+                          "csv_row": 26002,
+                          "name_raw": "冠纓神社",
+                          "reading_raw": "かんえいじんじや",
+                          "reference_original_row_id": "380000045300"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "該当行の社名・原かな・全所在地を抜粋し、明示された全文かなと照合。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "ea32098f350bc6b46f9a39338cf7249cc658eef2acc816a0337a42d325e4a9db",
+                  "reading_raw": "かんえいじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_directory",
+                  "source_publisher": "かがわまんでがん",
+                  "title": "御朱印巡りの旅",
+                  "url": "https://kagawa-mandegan.net/sp/shrine/gosyuin/gosyuin_tabi.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/6/",
           "name_raw": "冠纓神社",
           "normalization": [
@@ -33530,11 +33593,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9e63a3fcb1ad8f60fcd7d108b97ecee4865a871c1302941748c383410bf3c6fe",
-          "reading": "",
+          "reading": "かんえいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://kagawakenjinjacho.or.jp/shrine/page/6/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kagawa-mandegan.net/sp/shrine/gosyuin/gosyuin_tabi.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -33658,6 +33721,20 @@
             "prefecture_code": "37",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "かんえいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "かんえいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "冠纓神社",
             "wikipedia_article_refs": [
@@ -33697,7 +33774,7 @@
             "status": "pending",
             "surface": "冠纓神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "冠纓神社"
         },
         {
