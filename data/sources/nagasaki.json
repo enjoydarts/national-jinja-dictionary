@@ -69236,12 +69236,89 @@
           "surface": "金刀比羅神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:21.621548+00:00",
+          "checked_at": "2026-11-21T12:52:40.276211+00:00",
           "evidence": "table[6] tr[2]: 名称=奈留神社; 掲載読み=; 所在地=五島市奈留町浦1572番地",
           "facility_id": "94f6ed6a-08f2-5770-8bec-bf13d25ad9eb",
           "fetched_at": "2026-11-10T12:26:21.621548+00:00",
           "id": "04de8c6e-66a8-57e4-823b-91e253784895",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "なるじんじゃ"
+              },
+              "expected_source_hash": "df5d6a104d591a789201415c868e8752427d2a521c026ebe84b1c4179ba512ea",
+              "facility_id": "94f6ed6a-08f2-5770-8bec-bf13d25ad9eb",
+              "identity_match": {
+                "agency_address": "五島市奈留町浦1572番地",
+                "agency_name": "奈留神社",
+                "reference_address": "長崎県五島市奈留町浦1572",
+                "reference_name": "奈留神社"
+              },
+              "original": {
+                "address": "五島市奈留町浦1572番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimogotou.html",
+                "name_raw": "奈留神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県五島市奈留町浦1572",
+                  "checked_at": "2026-11-21T12:52:40.276211+00:00",
+                  "excerpt": "奈留神社 / なるじんじゃ / 長崎県五島市奈留町浦1572",
+                  "heading_raw": "奈留神社",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:34.446964+00:00",
+                    "page_hash": "1f575c61e945b39325fb3c4fc5d931e1632fba74e6e17390472a732850605398",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=12"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "奈留神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 五島市 奈留町浦1572番地",
+                          "csv_row": 29298,
+                          "name_raw": "奈留神社",
+                          "reading_raw": "なるじんじや",
+                          "record_id": "430000192400"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "756fc5e3a5e5094d095bf729ea8a77e19645c635b217da696f593c3dfbae1f73",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "なるじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "奈留神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/goto-shi/10338"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimogotou.html",
           "name_raw": "奈留神社",
           "normalization": [
@@ -69249,11 +69326,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "c61a0076d5684bc0689137e891c23a5e631a85966c169397707294212f3d80ec",
-          "reading": "",
+          "reading": "なるじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimogotou.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/goto-shi/10338",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -69347,6 +69424,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "なるじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "なるじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "奈留神社",
             "wikipedia_article_refs": [],
@@ -69377,7 +69468,7 @@
             "status": "pending",
             "surface": "奈留神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "奈留神社"
         },
         {
@@ -80770,12 +80861,96 @@
           "surface": "厄神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:23.745274+00:00",
+          "checked_at": "2026-11-21T12:52:49.999455+00:00",
           "evidence": "table[4] tr[6]: 名称=神島神社; 掲載読み=; 所在地=佐世保市宇久町平2525番地",
           "facility_id": "a21d84cf-3b08-5bf0-bdd1-3ce89ae1a188",
           "fetched_at": "2026-11-10T12:26:23.745274+00:00",
           "id": "7bed4eb9-826b-5b77-a76b-30fc94a6c940",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "こうじまじんじゃ"
+              },
+              "expected_source_hash": "2c193afb352c5e80fce8d514dbe2c6f70d98fa933d5215910e322e389de96295",
+              "facility_id": "a21d84cf-3b08-5bf0-bdd1-3ce89ae1a188",
+              "identity_match": {
+                "agency_address": "佐世保市宇久町平2525番地",
+                "agency_name": "神島神社",
+                "reference_address": "長崎県佐世保市宇久町平2525",
+                "reference_name": "神島神社"
+              },
+              "original": {
+                "address": "佐世保市宇久町平2525番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/hirado.html",
+                "name_raw": "神島神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県佐世保市宇久町平2525",
+                  "checked_at": "2026-11-21T12:52:49.999455+00:00",
+                  "excerpt": "神島神社（佐世保市宇久町） / こうじまじんじゃ / 長崎県佐世保市宇久町平2525",
+                  "heading_raw": "神島神社（佐世保市宇久町）",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:19.858648+00:00",
+                    "page_hash": "2ed7779825e281105ca5fc846f39c6861677210899fe61f932a5f36b609a1ce7",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=6"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "神島神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 佐世保市 宇久町平2525番地",
+                          "csv_row": 29172,
+                          "name_raw": "神島神社",
+                          "reading_raw": "こうじまじんじや",
+                          "record_id": "430000140900"
+                        },
+                        {
+                          "address_raw": "長崎県 佐世保市 宇久町平2525番地",
+                          "csv_row": 29182,
+                          "name_raw": "神島神社",
+                          "reading_raw": "こうじまじんじや",
+                          "record_id": "430000144300"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "47b92525afc69267e1bcb55cc833deb799daa5b3b41487f048ab7f58e49c5d14",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "こうじまじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "神島神社（佐世保市宇久町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/sasebo-shi/10448"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/hirado.html",
           "name_raw": "神島神社",
           "normalization": [
@@ -80783,11 +80958,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "41f57834879096dd1edcb01fc3ed84a7d527cebd8e6d565c4ef79f2bf7053974",
-          "reading": "",
+          "reading": "こうじまじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/hirado.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/sasebo-shi/10448",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -80972,6 +81147,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "こうじまじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "こうじまじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "神島神社",
             "wikipedia_article_refs": [],
@@ -81002,7 +81191,7 @@
             "status": "pending",
             "surface": "神島神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "神島神社"
         },
         {
@@ -135544,12 +135733,83 @@
           "surface": "事代主神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:30.182860+00:00",
+          "checked_at": "2026-11-21T12:44:00.210201+00:00",
           "evidence": "table[5] tr[6]: 名称=阿蘇神社; 掲載読み=; 所在地=諫早市多良見町化屋861番地",
           "facility_id": "d9975756-7562-556b-bc8f-8061f50a67ac",
           "fetched_at": "2026-11-10T12:26:30.182860+00:00",
           "id": "98894a79-bb3e-5cc3-9b96-e9656f4a9297",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "あそじんじゃ"
+              },
+              "expected_source_hash": "b691f7fc1c86c040b3b846cebb162988302f378250a1feb4684d84d827e84f09",
+              "facility_id": "d9975756-7562-556b-bc8f-8061f50a67ac",
+              "identity_match": {
+                "agency_address": "諫早市多良見町化屋861番地",
+                "agency_name": "阿蘇神社",
+                "reference_address": "長崎県諫早市多良見町化屋861",
+                "reference_name": "阿蘇神社"
+              },
+              "original": {
+                "address": "諫早市多良見町化屋861番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
+                "name_raw": "阿蘇神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。諫早市の文化財本文に同地番と「阿蘇神社」に対応する読みを確認した。",
+              "references": [
+                {
+                  "address_raw": "長崎県諫早市多良見町化屋861",
+                  "checked_at": "2026-11-21T12:44:00.210201+00:00",
+                  "excerpt": "阿蘇神社（諫早市多良見町） / あそじんじゃ / 長崎県諫早市多良見町化屋861",
+                  "heading_raw": "阿蘇神社（諫早市多良見町）",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:43:05.628999+00:00",
+                    "page_hash": "8f57011ecb65531bd7a209189866f21ae194d6aa2f933001f12760474fb39387",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "阿蘇神社",
+                  "other_documented_values": [
+                    {
+                      "address_raw": "諫早市多良見町化屋861",
+                      "checked_at": "2026-11-21T12:52:05.772001+00:00",
+                      "locator": "「よみがな」「所在地」および同じ敷地の阿蘇神社を説明する本文。",
+                      "matched": true,
+                      "matches": [
+                        "化屋・阿蘇神社の二の鳥居と三の鳥居",
+                        "けや・あそじんじゃのにのとりいとさんのとりい",
+                        "諫早市多良見町化屋861"
+                      ],
+                      "name_raw": "化屋・阿蘇神社の二の鳥居と三の鳥居",
+                      "page_hash": "06449d68cf6b01130ebe4affa1b0c46f8d9fe3d0269455cb512d88f3d0b28604",
+                      "reading_raw": "けや・あそじんじゃのにのとりいとさんのとりい",
+                      "source_kind": "municipal_cultural_property",
+                      "source_publisher": "諫早市",
+                      "title": "化屋・阿蘇神社の二の鳥居と三の鳥居 - 諫早市",
+                      "url": "https://www.city.isahaya.nagasaki.jp/soshiki/51/1291.html"
+                    }
+                  ],
+                  "page_hash": "c486e25b6c0aa113fa33706d268d5b680c3ba33fe08c13f6a417f7e12320964a",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "あそじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "阿蘇神社（諫早市多良見町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/isahaya-shi/10485"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
           "name_raw": "阿蘇神社",
           "normalization": [
@@ -135557,11 +135817,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "3533c16893b5756f34c4c93b68d6a771d88f132c7109becca2fe0c958489bdd5",
-          "reading": "",
+          "reading": "あそじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/seihi.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/isahaya-shi/10485",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -135678,6 +135938,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "あそじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "あそじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "阿蘇神社",
             "wikipedia_article_refs": [],
@@ -135708,7 +135982,7 @@
             "status": "pending",
             "surface": "阿蘇神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "阿蘇神社"
         },
         {
@@ -144218,12 +144492,89 @@
           "surface": "富松神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:32.317704+00:00",
+          "checked_at": "2026-11-21T12:52:16.772243+00:00",
           "evidence": "table[1] tr[7]: 名称=皇大神宮神社; 掲載読み=; 所在地=大村市西本町493番地",
           "facility_id": "e518c1fa-8591-53ca-be63-42f0152ff220",
           "fetched_at": "2026-11-10T12:26:32.317704+00:00",
           "id": "29e99df7-e1ee-5fb5-8f15-9668e768f346",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "こうたいじんぐうじんじゃ"
+              },
+              "expected_source_hash": "ca04cd2a0e8c0de08ed8bd565d1680fb7fa0a4877b9a5b981d1c174459467f39",
+              "facility_id": "e518c1fa-8591-53ca-be63-42f0152ff220",
+              "identity_match": {
+                "agency_address": "大村市西本町493番地",
+                "agency_name": "皇大神宮神社",
+                "reference_address": "長崎県大村市西本町493",
+                "reference_name": "皇大神宮神社"
+              },
+              "original": {
+                "address": "大村市西本町493番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
+                "name_raw": "皇大神宮神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県大村市西本町493",
+                  "checked_at": "2026-11-21T12:52:16.772243+00:00",
+                  "excerpt": "皇大神宮神社 / こうたいじんぐうじんじゃ / 長崎県大村市西本町493",
+                  "heading_raw": "皇大神宮神社",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:22.307747+00:00",
+                    "page_hash": "ccec53ad595d3870b97c2ad9e45a9a0f867c3800ac06990d3413932e3bd42f53",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=7"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "皇大神宮神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 大村市 西本町493番地",
+                          "csv_row": 28995,
+                          "name_raw": "皇大神宮神社",
+                          "reading_raw": "こうたいじんぐうじんじや",
+                          "record_id": "430000076900"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "f19778a446197547545a79f43864ad4655b7a973663410042df64b41f11f9182",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "こうたいじんぐうじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "皇大神宮神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/omura-shi/10088"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
           "name_raw": "皇大神宮神社",
           "normalization": [
@@ -144231,11 +144582,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "f1207b7d754814881386372966f21b5f0ffb9d939d07274ef3c9cfcc812d1ae3",
-          "reading": "",
+          "reading": "こうたいじんぐうじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/omura-shi/10088",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -144295,6 +144646,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "こうたいじんぐうじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "こうたいじんぐうじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "皇大神宮神社",
             "wikipedia_article_refs": [],
@@ -144325,7 +144690,7 @@
             "status": "pending",
             "surface": "皇大神宮神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "皇大神宮神社"
         },
         {
@@ -145746,12 +146111,89 @@
           "surface": "諏訪神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:32.317704+00:00",
+          "checked_at": "2026-11-21T12:52:42.702303+00:00",
           "evidence": "table[2] tr[2]: 名称=波佐美神社; 掲載読み=; 所在地=東彼杵郡波佐見町岳辺田郷1058番地",
           "facility_id": "b91d1caa-dafa-5f9f-82f2-8f3ab3918bcc",
           "fetched_at": "2026-11-10T12:26:32.317704+00:00",
           "id": "589d3e9f-2fa3-51e1-9df4-f983c023e8b7",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はさみじんじゃ"
+              },
+              "expected_source_hash": "cd17de3e0f368e4f67e6a065f30522a5699ccb4a14a38c81352de130fdf57d62",
+              "facility_id": "b91d1caa-dafa-5f9f-82f2-8f3ab3918bcc",
+              "identity_match": {
+                "agency_address": "東彼杵郡波佐見町岳辺田郷1058番地",
+                "agency_name": "波佐美神社",
+                "reference_address": "長崎県東彼杵郡波佐見町岳辺田郷1058",
+                "reference_name": "波佐美神社"
+              },
+              "original": {
+                "address": "東彼杵郡波佐見町岳辺田郷1058番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
+                "name_raw": "波佐美神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県東彼杵郡波佐見町岳辺田郷1058",
+                  "checked_at": "2026-11-21T12:52:42.702303+00:00",
+                  "excerpt": "波佐美神社 / はさみじんじゃ / 長崎県東彼杵郡波佐見町岳辺田郷1058",
+                  "heading_raw": "波佐美神社",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:36.880504+00:00",
+                    "page_hash": "e1b7c37172bf8dfbf2cc63dde8fa8114636567c6f1447d9706acd54acf77a19d",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=13"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "波佐美神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 東彼杵郡波佐見町 岳辺田郷1058番地",
+                          "csv_row": 28991,
+                          "name_raw": "波佐美神社",
+                          "reading_raw": "はさみじんじや",
+                          "record_id": "430000072200"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "6b5df95fef3d954c5d6bb40f43cffbad2329a492e753232ad1041d0940aad983",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "はさみじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "波佐美神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/hasami-cho-higashisonogi-gun/10413"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
           "name_raw": "波佐美神社",
           "normalization": [
@@ -145759,11 +146201,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "f1207b7d754814881386372966f21b5f0ffb9d939d07274ef3c9cfcc812d1ae3",
-          "reading": "",
+          "reading": "はさみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/hasami-cho-higashisonogi-gun/10413",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -145867,6 +146309,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はさみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はさみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "波佐美神社",
             "wikipedia_article_refs": [],
@@ -145897,7 +146353,7 @@
             "status": "pending",
             "surface": "波佐美神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "波佐美神社"
         },
         {
@@ -146215,12 +146671,89 @@
           "surface": "琴平神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:32.317704+00:00",
+          "checked_at": "2026-11-21T12:52:47.538091+00:00",
           "evidence": "table[2] tr[5]: 名称=鹿山神社; 掲載読み=; 所在地=東彼杵郡波佐見町宿郷670番地",
           "facility_id": "b396bca3-b325-51a5-8b1c-bf1797932779",
           "fetched_at": "2026-11-10T12:26:32.317704+00:00",
           "id": "7755a5a1-61f3-5f5a-96bf-d6cebc2fde01",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しかやまじんじゃ"
+              },
+              "expected_source_hash": "b8c739e831a4ee701c6fb988975bc41ba6d88694de28c7e6ce4c18ae12e64549",
+              "facility_id": "b396bca3-b325-51a5-8b1c-bf1797932779",
+              "identity_match": {
+                "agency_address": "東彼杵郡波佐見町宿郷670番地",
+                "agency_name": "鹿山神社",
+                "reference_address": "長崎県東彼杵郡波佐見町宿郷670",
+                "reference_name": "鹿山神社"
+              },
+              "original": {
+                "address": "東彼杵郡波佐見町宿郷670番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
+                "name_raw": "鹿山神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県東彼杵郡波佐見町宿郷670",
+                  "checked_at": "2026-11-21T12:52:47.538091+00:00",
+                  "excerpt": "鹿山神社 / しかやまじんじゃ / 長崎県東彼杵郡波佐見町宿郷670",
+                  "heading_raw": "鹿山神社",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:22.307747+00:00",
+                    "page_hash": "ccec53ad595d3870b97c2ad9e45a9a0f867c3800ac06990d3413932e3bd42f53",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=7"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "鹿山神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 東彼杵郡波佐見町 宿郷670番地",
+                          "csv_row": 28984,
+                          "name_raw": "鹿山神社",
+                          "reading_raw": "しかやまじんじや",
+                          "record_id": "430000071400"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "d0fc211bc9904600984d43619c082c02e7efc7018a917af5cbd5b98a277d33bd",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "しかやまじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "鹿山神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/hasami-cho-higashisonogi-gun/10414"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
           "name_raw": "鹿山神社",
           "normalization": [
@@ -146228,11 +146761,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "f1207b7d754814881386372966f21b5f0ffb9d939d07274ef3c9cfcc812d1ae3",
-          "reading": "",
+          "reading": "しかやまじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/hasami-cho-higashisonogi-gun/10414",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -146315,6 +146848,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しかやまじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しかやまじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "鹿山神社",
             "wikipedia_article_refs": [],
@@ -146345,7 +146892,7 @@
             "status": "pending",
             "surface": "鹿山神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "鹿山神社"
         },
         {
@@ -146483,12 +147030,89 @@
           "surface": "大神宮神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:32.317704+00:00",
+          "checked_at": "2026-11-21T12:52:57.302120+00:00",
           "evidence": "table[2] tr[7]: 名称=金屋神社; 掲載読み=; 所在地=東彼杵郡波佐見町金屋郷2493番地",
           "facility_id": "651971a8-b787-5ddf-bdde-844d2e1823de",
           "fetched_at": "2026-11-10T12:26:32.317704+00:00",
           "id": "d38ced6f-319f-5a7d-b76b-10b770980f67",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "かなやじんじゃ"
+              },
+              "expected_source_hash": "d670b6f1542857c4822dad80196565551f6f354464be951e3dfb5e4cc19263d9",
+              "facility_id": "651971a8-b787-5ddf-bdde-844d2e1823de",
+              "identity_match": {
+                "agency_address": "東彼杵郡波佐見町金屋郷2493番地",
+                "agency_name": "金屋神社",
+                "reference_address": "長崎県東彼杵郡波佐見町金屋郷2493",
+                "reference_name": "金屋神社"
+              },
+              "original": {
+                "address": "東彼杵郡波佐見町金屋郷2493番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
+                "name_raw": "金屋神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県東彼杵郡波佐見町金屋郷2493",
+                  "checked_at": "2026-11-21T12:52:57.302120+00:00",
+                  "excerpt": "金屋神社 / かなやじんじゃ / 長崎県東彼杵郡波佐見町金屋郷2493",
+                  "heading_raw": "金屋神社",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:17.421013+00:00",
+                    "page_hash": "7fe8db62078c1b79c802e1f59408aece3492c2b451b5aca35bcc733700cae986",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=5"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "金屋神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 東彼杵郡波佐見町 金屋郷2493番地",
+                          "csv_row": 28987,
+                          "name_raw": "金屋神社",
+                          "reading_raw": "かなやじんじや",
+                          "record_id": "430000071700"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "9d5625020712a11c2edb12d1e7666bc423ab343b9b606712d22d1b867bae1b1e",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "かなやじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "金屋神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/hasami-cho-higashisonogi-gun/10095"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
           "name_raw": "金屋神社",
           "normalization": [
@@ -146496,11 +147120,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "f1207b7d754814881386372966f21b5f0ffb9d939d07274ef3c9cfcc812d1ae3",
-          "reading": "",
+          "reading": "かなやじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/oomura.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/hasami-cho-higashisonogi-gun/10095",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -146583,6 +147207,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "かなやじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "かなやじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "金屋神社",
             "wikipedia_article_refs": [],
@@ -146613,7 +147251,7 @@
             "status": "pending",
             "surface": "金屋神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "金屋神社"
         },
         {
@@ -152174,12 +152812,89 @@
           "surface": "神崎神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:34.467147+00:00",
+          "checked_at": "2026-11-21T12:53:02.307731+00:00",
           "evidence": "table[1] tr[17]: 名称=淵神社; 掲載読み=; 所在地=長崎市淵町8番1号",
           "facility_id": "9da75b16-464f-57a4-a867-b5383e7b57ad",
           "fetched_at": "2026-11-10T12:26:34.467147+00:00",
           "id": "f8e57882-cdae-5152-a549-3f88b67347ab",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ふちじんじゃ"
+              },
+              "expected_source_hash": "c35859364519cd87d8d3f79ee80d0e476c007cc4d1d961258dbe47761000848b",
+              "facility_id": "9da75b16-464f-57a4-a867-b5383e7b57ad",
+              "identity_match": {
+                "agency_address": "長崎市淵町8番1号",
+                "agency_name": "淵神社",
+                "reference_address": "長崎県長崎市淵町8-1",
+                "reference_name": "淵神社"
+              },
+              "original": {
+                "address": "長崎市淵町8番1号",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
+                "name_raw": "淵神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県長崎市淵町8-1",
+                  "checked_at": "2026-11-21T12:53:02.307731+00:00",
+                  "excerpt": "淵神社 / ふちじんじゃ / 長崎県長崎市淵町8-1",
+                  "heading_raw": "淵神社",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:41.727475+00:00",
+                    "page_hash": "c2ae67e17cdb3393e1f012c7b6299417f553093d489bbeab6644bbc83970b934",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=15"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "淵神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 長崎市 淵町8番1号",
+                          "csv_row": 28895,
+                          "name_raw": "淵神社",
+                          "reading_raw": "ふちじんじや",
+                          "record_id": "430000038000"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "62d12a60d1b95a375231a6fa364ef1d9f5b0472171bfb58702b546cb4cc12385",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "ふちじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "淵神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/nagasaki-shi/8387"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
           "name_raw": "淵神社",
           "normalization": [
@@ -152187,11 +152902,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "84ed1414360b6f867f72e4099b42c13721dac7368d3c827d947e6d38545f0ebd",
-          "reading": "",
+          "reading": "ふちじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/nagasaki-shi/8387",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -152382,6 +153097,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ふちじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ふちじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "淵神社",
             "wikipedia_article_refs": [
@@ -152421,7 +153150,7 @@
             "status": "pending",
             "surface": "淵神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "淵神社"
         },
         {
@@ -159126,12 +159855,89 @@
           "surface": "塩竃神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:34.467147+00:00",
+          "checked_at": "2026-11-21T12:52:52.451849+00:00",
           "evidence": "table[1] tr[57]: 名称=矢上神社; 掲載読み=; 所在地=長崎市矢上町14番1号",
           "facility_id": "ac201877-68b0-5269-b2e5-0f9dbb85b26c",
           "fetched_at": "2026-11-10T12:26:34.467147+00:00",
           "id": "a2589416-c191-5d0f-8675-84a00dd2f908",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "やがみじんじゃ"
+              },
+              "expected_source_hash": "d5eb287a5a7bc2726517e837f44241da63b93ea81a1e71ee352243617f340601",
+              "facility_id": "ac201877-68b0-5269-b2e5-0f9dbb85b26c",
+              "identity_match": {
+                "agency_address": "長崎市矢上町14番1号",
+                "agency_name": "矢上神社",
+                "reference_address": "長崎県長崎市矢上町14-1",
+                "reference_name": "矢上神社"
+              },
+              "original": {
+                "address": "長崎市矢上町14番1号",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
+                "name_raw": "矢上神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県長崎市矢上町14-1",
+                  "checked_at": "2026-11-21T12:52:52.451849+00:00",
+                  "excerpt": "矢上神社 / やがみじんじゃ / 長崎県長崎市矢上町14-1",
+                  "heading_raw": "矢上神社",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:44.154862+00:00",
+                    "page_hash": "e788b2b91d3c1d6db3678e8e47996b875f81000ba0445f699ffaabb0463e4918",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=16"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "矢上神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 長崎市 矢上町14番1号",
+                          "csv_row": 28919,
+                          "name_raw": "矢上神社",
+                          "reading_raw": "やがみじんじや",
+                          "record_id": "430000047400"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "e71fa351ed514642ec124792acb7d8a5ef0e17e8cf3b370ee5764e7887ab8b95",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "やがみじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "矢上神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/nagasaki-shi/8384"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
           "name_raw": "矢上神社",
           "normalization": [
@@ -159139,11 +159945,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "84ed1414360b6f867f72e4099b42c13721dac7368d3c827d947e6d38545f0ebd",
-          "reading": "",
+          "reading": "やがみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/nagasaki-shi/8384",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -159247,6 +160053,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "やがみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "やがみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "矢上神社",
             "wikipedia_article_refs": [],
@@ -159277,7 +160097,7 @@
             "status": "pending",
             "surface": "矢上神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "矢上神社"
         },
         {
@@ -164256,12 +165076,89 @@
           "surface": "諌早神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:36.584223+00:00",
+          "checked_at": "2026-11-21T12:52:45.124976+00:00",
           "evidence": "table[1] tr[23]: 名称=年神社; 掲載読み=; 所在地=諫早市上大渡野町46番地",
           "facility_id": "06ad298a-516b-55a2-90cc-f567a3fd7de3",
           "fetched_at": "2026-11-10T12:26:36.584223+00:00",
           "id": "657a17ec-924d-5879-bd1a-96906b791d5a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "としじんじゃ"
+              },
+              "expected_source_hash": "4757671cc49186e4e98be07da62242ff632552a4992a1f9bf0b5d8b1e5c97077",
+              "facility_id": "06ad298a-516b-55a2-90cc-f567a3fd7de3",
+              "identity_match": {
+                "agency_address": "諫早市上大渡野町46番地",
+                "agency_name": "年神社",
+                "reference_address": "長崎県諫早市上大渡野町46",
+                "reference_name": "年神社"
+              },
+              "original": {
+                "address": "諫早市上大渡野町46番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
+                "name_raw": "年神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県諫早市上大渡野町46",
+                  "checked_at": "2026-11-21T12:52:45.124976+00:00",
+                  "excerpt": "年神社（諫早市上大渡野町） / としじんじゃ / 長崎県諫早市上大渡野町46",
+                  "heading_raw": "年神社（諫早市上大渡野町）",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:32.018414+00:00",
+                    "page_hash": "5c3bb412ed425b8981a8c2d4e3719e1659e6b4e180ab2f9b08f9c108ca63f4d0",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=11"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "年神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 諫早市 上大渡野町46番地",
+                          "csv_row": 29045,
+                          "name_raw": "年神社",
+                          "reading_raw": "としじんじや",
+                          "record_id": "430000094100"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "58eb2e588c8edb9360162be10d44e696fc906dba32f9829ddeeed95a0ede639e",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "としじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "年神社（諫早市上大渡野町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/isahaya-shi/10435"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
           "name_raw": "年神社",
           "normalization": [
@@ -164269,11 +165166,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "525d9ccf404693d0e8558f098dd286d7aeedc1cf094186c9a3a248fba30c9aa2",
-          "reading": "",
+          "reading": "としじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/isahaya-shi/10435",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -164333,6 +165230,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "としじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "としじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "年神社",
             "wikipedia_article_refs": [],
@@ -164363,7 +165274,7 @@
             "status": "pending",
             "surface": "年神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "年神社"
         },
         {
@@ -168545,12 +169456,102 @@
           "surface": "瓢箪畑稲荷神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-21T12:52:24.048967+00:00",
           "evidence": "table[1] tr[5]: 名称=靈丘神社; 掲載読み=; 所在地=島原市弁天町2丁目7341番地",
           "facility_id": "c80d2ac2-acfd-583c-8807-a7445ae6530f",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "a647bf29-b03c-5318-bd44-04121ee31616",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "れいきゅうじんじゃ"
+              },
+              "expected_source_hash": "0e5c1ba139283294307957880293fea9dd33b7e98d89d9a1c0f59825cfc8d719",
+              "facility_id": "c80d2ac2-acfd-583c-8807-a7445ae6530f",
+              "identity_match": {
+                "agency_address": "島原市弁天町2丁目7341番地",
+                "agency_name": "靈丘神社",
+                "reference_address": "長崎県島原市弁天町2-7341",
+                "reference_name": "靈丘神社"
+              },
+              "original": {
+                "address": "島原市弁天町2丁目7341番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "靈丘神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。同地番の現地紹介「霊丘神社」の全文読みと地名データの原表記を照合し、神社庁の旧字体を保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県島原市弁天町2-7341",
+                  "checked_at": "2026-11-21T12:52:24.048967+00:00",
+                  "excerpt": "靈丘神社 / れいきゅうじんじゃ / 長崎県島原市弁天町2-7341",
+                  "heading_raw": "靈丘神社",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:46.572276+00:00",
+                    "page_hash": "6d2bec9bc32fa6e28dd59bbfaeecc07ec1fd847e2110cbd8fd8b5dcf0e49cd06",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=17"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "靈丘神社",
+                  "other_documented_values": [
+                    {
+                      "address_raw": "長崎県島原市弁天町2-7341",
+                      "checked_at": "2026-11-21T12:52:09.268421+00:00",
+                      "matched": true,
+                      "matches": [
+                        "霊丘神社",
+                        "れいきゅうじんじゃ",
+                        "長崎県島原市弁天町2-7341"
+                      ],
+                      "name_raw": "霊丘神社",
+                      "page_hash": "85da814f308904bd3bcb6a4b8602c6c6804bb7ba799a4c4fc9d430c414c031e2",
+                      "reading_raw": "れいきゅうじんじゃ",
+                      "source_kind": "private_shrine_database",
+                      "title": "霊丘神社 ｜神社情報｜あまはし",
+                      "url": "https://amahashi.jp/jinja/reikyujinja/"
+                    },
+                    {
+                      "address_raw": "長崎県 島原市 弁天町二丁目7341番地",
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "checked_at": "2026-11-21T12:52:11.608224+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "matched": true,
+                      "matches": [
+                        "霊丘神社",
+                        "れいきゆうじんじや",
+                        "長崎県 島原市 弁天町二丁目7341番地"
+                      ],
+                      "name_raw": "霊丘神社",
+                      "page_hash": "63b8e01b3e8c353e4687d2375682a0a3006800d8cfb9da03ef04a66f8e33d943",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_raw": "れいきゆうじんじや",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "霊丘神社 [430000121200] | 『日本歴史地名大系』施設・地点項目データセット",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/43/430000121200.html"
+                    }
+                  ],
+                  "page_hash": "1cd3c98212f5ef9679927c11a765b33b004d2314c32a611efae051341adf6a14",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "れいきゅうじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "靈丘神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/shimabara-shi/10064"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "靈丘神社",
           "normalization": [
@@ -168558,11 +169559,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "れいきゅうじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/shimabara-shi/10064",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -168620,6 +169621,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "れいきゅうじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "れいきゅうじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "靈丘神社",
             "wikipedia_article_refs": [],
@@ -168650,7 +169665,7 @@
             "status": "pending",
             "surface": "靈丘神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "靈丘神社"
         },
         {
@@ -173667,12 +174682,86 @@
           "surface": "八幡神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-21T12:52:21.625184+00:00",
           "evidence": "table[2] tr[12]: 名称=八幡神社; 掲載読み=; 所在地=雲仙市国見町神代乙264番地",
           "facility_id": "febcbb7a-5abe-5c49-ab35-08e34739ce5e",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "6de0730a-d3b5-5a31-bdc3-e3f7c2762130",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はちまんじんじゃ"
+              },
+              "expected_source_hash": "eda52d7e0d036dda1bb70b4807923ac565e0409888ae4b40588cfe1cbef308d1",
+              "facility_id": "febcbb7a-5abe-5c49-ab35-08e34739ce5e",
+              "identity_match": {
+                "agency_address": "雲仙市国見町神代乙264番地",
+                "agency_name": "八幡神社",
+                "reference_address": "長崎県雲仙市国見町神代乙264",
+                "reference_name": "八幡神社"
+              },
+              "original": {
+                "address": "雲仙市国見町神代乙264番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "八幡神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。法人の同名・全地番と語幹フリガナを補助資料として確認した。",
+              "references": [
+                {
+                  "address_raw": "長崎県雲仙市国見町神代乙264",
+                  "checked_at": "2026-11-21T12:52:21.625184+00:00",
+                  "excerpt": "八幡神社（雲仙市国見町） / はちまんじんじゃ / 長崎県雲仙市国見町神代乙264",
+                  "heading_raw": "八幡神社（雲仙市国見町）",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:36.880504+00:00",
+                    "page_hash": "e1b7c37172bf8dfbf2cc63dde8fa8114636567c6f1447d9706acd54acf77a19d",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=13"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "八幡神社",
+                  "other_documented_values": [
+                    {
+                      "address_raw": "長崎県雲仙市国見町神代乙２６４番地",
+                      "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+                      "checked_at": "2026-11-19T12:14:38.896352+00:00",
+                      "corporate_number": "5310005004786",
+                      "csv_row": 23400,
+                      "file_id": "28487",
+                      "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                      "name_raw": "八幡神社",
+                      "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
+                      "processed_notice": "公開の法人名・所在地および明示されたフリガナの語幹を確認し、該当する事実項目を抜粋。",
+                      "reading_raw": "ハチマン",
+                      "reading_scope": "partial_name",
+                      "snapshot": "20261030",
+                      "source_kind": "government_corporate_register",
+                      "source_publisher": "国税庁",
+                      "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                      "title": "国税庁法人番号公表サイト 全件データ",
+                      "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                      "zip_member": "42_nagasaki_all_20261030.csv"
+                    }
+                  ],
+                  "page_hash": "427098ad4458419b8fd4f0e7526031841344cdb34824a83a6eda56674cb150af",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "はちまんじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "八幡神社（雲仙市国見町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/unzen-shi/10506"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "八幡神社",
           "normalization": [
@@ -173680,11 +174769,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "はちまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/unzen-shi/10506",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -173915,6 +175004,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八幡神社",
             "wikipedia_article_refs": [],
@@ -173945,7 +175048,7 @@
             "status": "pending",
             "surface": "八幡神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八幡神社"
         },
         {
@@ -174793,12 +175896,86 @@
           "surface": "新村神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-21T12:52:19.193880+00:00",
           "evidence": "table[2] tr[19]: 名称=熊野神社; 掲載読み=; 所在地=雲仙市国見町神代甲505番地",
           "facility_id": "0f18ba6f-83fc-5e80-963b-27a00e86ae77",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "6cbe682a-7275-585c-b482-e9f2c6f04366",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "くまのじんじゃ"
+              },
+              "expected_source_hash": "f40fc89997bde35352e2fd01d3d0540af4cb20025bbf10d2ce5200161602432e",
+              "facility_id": "0f18ba6f-83fc-5e80-963b-27a00e86ae77",
+              "identity_match": {
+                "agency_address": "雲仙市国見町神代甲505番地",
+                "agency_name": "熊野神社",
+                "reference_address": "長崎県雲仙市国見町神代甲505",
+                "reference_name": "熊野神社"
+              },
+              "original": {
+                "address": "雲仙市国見町神代甲505番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "熊野神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。法人の同名・全地番と語幹フリガナを補助資料として確認した。",
+              "references": [
+                {
+                  "address_raw": "長崎県雲仙市国見町神代甲505",
+                  "checked_at": "2026-11-21T12:52:19.193880+00:00",
+                  "excerpt": "熊野神社（雲仙市国見町） / くまのじんじゃ / 長崎県雲仙市国見町神代甲505",
+                  "heading_raw": "熊野神社（雲仙市国見町）",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:19.858648+00:00",
+                    "page_hash": "2ed7779825e281105ca5fc846f39c6861677210899fe61f932a5f36b609a1ce7",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=6"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "熊野神社",
+                  "other_documented_values": [
+                    {
+                      "address_raw": "長崎県雲仙市国見町神代甲５０５番地",
+                      "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+                      "checked_at": "2026-11-19T12:14:38.896352+00:00",
+                      "corporate_number": "8310005004817",
+                      "csv_row": 37716,
+                      "file_id": "28487",
+                      "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                      "name_raw": "熊野神社",
+                      "page_hash": "f532712cc0869c3cb3c31ec5fb9a3532b3e0f62990c2ba03b0584e09e2e3e425",
+                      "processed_notice": "公開の法人名・所在地および明示されたフリガナの語幹を確認し、該当する事実項目を抜粋。",
+                      "reading_raw": "クマノ",
+                      "reading_scope": "partial_name",
+                      "snapshot": "20261030",
+                      "source_kind": "government_corporate_register",
+                      "source_publisher": "国税庁",
+                      "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                      "title": "国税庁法人番号公表サイト 全件データ",
+                      "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                      "zip_member": "42_nagasaki_all_20261030.csv"
+                    }
+                  ],
+                  "page_hash": "fb4eb188b9d9b325c789f0fb92ff4239c90bbca551bf2b3cc6800637cd384090",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "くまのじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "熊野神社（雲仙市国見町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/unzen-shi/10099"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "熊野神社",
           "normalization": [
@@ -174806,11 +175983,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "くまのじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/unzen-shi/10099",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -174957,6 +176134,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "くまのじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "くまのじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "熊野神社",
             "wikipedia_article_refs": [
@@ -175004,16 +176195,93 @@
             "status": "pending",
             "surface": "熊野神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-21T12:52:59.723286+00:00",
           "evidence": "table[3] tr[2]: 名称=八幡神社; 掲載読み=; 所在地=雲仙市瑞穂町西郷庚385番地",
           "facility_id": "5c8ff054-9d86-5c4f-8399-159209c7e472",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "f0f6368b-c48d-55aa-b6a4-794fbfce6884",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はちまんじんじゃ"
+              },
+              "expected_source_hash": "5101634204ec9be9b89df2c9a27354114fafa5adba6b61c3da49170f7522437e",
+              "facility_id": "5c8ff054-9d86-5c4f-8399-159209c7e472",
+              "identity_match": {
+                "agency_address": "雲仙市瑞穂町西郷庚385番地",
+                "agency_name": "八幡神社",
+                "reference_address": "長崎県雲仙市瑞穂町西郷庚385",
+                "reference_name": "八幡神社"
+              },
+              "original": {
+                "address": "雲仙市瑞穂町西郷庚385番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "八幡神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県雲仙市瑞穂町西郷庚385",
+                  "checked_at": "2026-11-21T12:52:59.723286+00:00",
+                  "excerpt": "八幡神社（雲仙市瑞穂町西郷庚） / はちまんじんじゃ / 長崎県雲仙市瑞穂町西郷庚385",
+                  "heading_raw": "八幡神社（雲仙市瑞穂町西郷庚）",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:39.295995+00:00",
+                    "page_hash": "0bfef56dafa622d7a0844ce4acd6e83d2adfec4e1b917f4e57eb3ea11a66ae3a",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=14"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "八幡神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 雲仙市 瑞穂町西郷庚385番地",
+                          "csv_row": 29063,
+                          "name_raw": "八幡神社",
+                          "reading_raw": "はちまんじんじや",
+                          "record_id": "430000100700"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "e5347b945179038d5ea784e98539c6e984cd7303d689991c15b774c9ec9e0efa",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "はちまんじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "八幡神社（雲仙市瑞穂町西郷庚） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/unzen-shi/10510"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "八幡神社",
           "normalization": [
@@ -175021,11 +176289,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "はちまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/unzen-shi/10510",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -175255,6 +176523,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八幡神社",
             "wikipedia_article_refs": [],
@@ -175285,7 +176567,7 @@
             "status": "pending",
             "surface": "八幡神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八幡神社"
         },
         {
@@ -189481,12 +190763,89 @@
           "surface": "松尾神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-21T12:52:54.868579+00:00",
           "evidence": "table[13] tr[7]: 名称=八幡神社; 掲載読み=; 所在地=南島原市有家町大苑498番地",
           "facility_id": "0d1ab46e-58b2-5b2c-b9ed-e9a7eb064ba1",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "bcb7a111-89c5-51cf-8766-af8fd7590f0b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はちまんじんじゃ"
+              },
+              "expected_source_hash": "8a3b97512dd8bbe7a618ea75fadea79c693aa312fde4b8a4432bf22e41a6131e",
+              "facility_id": "0d1ab46e-58b2-5b2c-b9ed-e9a7eb064ba1",
+              "identity_match": {
+                "agency_address": "南島原市有家町大苑498番地",
+                "agency_name": "八幡神社",
+                "reference_address": "長崎県南島原市有家町大苑498",
+                "reference_name": "八幡神社"
+              },
+              "original": {
+                "address": "南島原市有家町大苑498番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "八幡神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなを採用し、神社庁の原社名と全地番を照合した。地名データの同名・全地番と読みを照合し、末尾の「じんじや／じんじゃ」の表記差を原文に保持した。",
+              "references": [
+                {
+                  "address_raw": "長崎県南島原市有家町大苑498",
+                  "checked_at": "2026-11-21T12:52:54.868579+00:00",
+                  "excerpt": "八幡神社（南島原市有家町） / はちまんじんじゃ / 長崎県南島原市有家町大苑498",
+                  "heading_raw": "八幡神社（南島原市有家町）",
+                  "license_status": "unconfirmed",
+                  "listing_confirmation": {
+                    "checked_at": "2026-11-21T12:45:36.880504+00:00",
+                    "page_hash": "e1b7c37172bf8dfbf2cc63dde8fa8114636567c6f1447d9706acd54acf77a19d",
+                    "url": "https://shrine.mobi/area/kyushu/nagasaki?page=13"
+                  },
+                  "locator": "h1内の社名・独立全文かなと「住所」欄。",
+                  "name_raw": "八幡神社",
+                  "other_documented_values": [
+                    {
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                      "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                      "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                      "doi": "10.20676/00000456",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "observations": [
+                        {
+                          "address_raw": "長崎県 南島原市 有家町大苑498番地",
+                          "csv_row": 29100,
+                          "name_raw": "八幡神社",
+                          "reading_raw": "はちまんじんじや",
+                          "record_id": "430000113600"
+                        }
+                      ],
+                      "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                      "processed_notice": "公開資料に明示された読みの比較に使用し、該当行の名称・かな・所在地を抜粋。",
+                      "reading_comparison": "当該行の末尾「じんじや」と明示済み全文の末尾「じんじゃ」を除いたかなが一致。",
+                      "source_kind": "historical_gazetteer_open_data",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "日本歴史地名大系 施設・地点項目データセット 2026-11-18版",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                    }
+                  ],
+                  "page_hash": "97ba79a374ab63d0430eded3a6ba74146be715d273ffc7f9bb04e5016271bdf8",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "はちまんじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と公開の索引本文を確認。社名・全文かな・全地番の必要な事実のみを採字。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "八幡神社（南島原市有家町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/minamishimabara-shi/10351"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "八幡神社",
           "normalization": [
@@ -189494,11 +190853,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "はちまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/minamishimabara-shi/10351",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -189727,6 +191086,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八幡神社",
             "wikipedia_article_refs": [],
@@ -189757,7 +191130,7 @@
             "status": "pending",
             "surface": "八幡神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八幡神社"
         },
         {

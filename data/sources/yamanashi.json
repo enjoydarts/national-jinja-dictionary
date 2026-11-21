@@ -27128,12 +27128,71 @@
           "surface": "御牧子安神社"
         },
         {
-          "checked_at": "2026-11-08T14:27:36.250172+00:00",
+          "checked_at": "2026-11-21T12:35:45.211133+00:00",
           "evidence": "6026 藤武神社 韮崎市中田町中條4787 峡北支部 詳細>>",
           "facility_id": "7e0d8c2f-471b-5330-9ce0-0705d16a46c3",
           "fetched_at": "2026-11-08T14:27:36.250172+00:00",
           "id": "2f723727-419c-54c5-98c1-850cb6de4a0a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ふじたけじんじゃ"
+              },
+              "expected_source_hash": "8d35118713b1d7a85944a7d0f8d014c4663ac1dbb64e5c0f8d4252c437b2fed4",
+              "facility_id": "7e0d8c2f-471b-5330-9ce0-0705d16a46c3",
+              "identity_match": {
+                "agency_address": "韮崎市中田町中條4787",
+                "agency_name": "藤武神社",
+                "reference_address": "韮崎市中田町中條4787",
+                "reference_name": "藤武神社"
+              },
+              "original": {
+                "address": "韮崎市中田町中條4787",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6",
+                "name_raw": "藤武神社",
+                "reading_raw": ""
+              },
+              "reason": "2016年3月刊の観光冊子の該当ページを画像で確認。藤武神社の同じ紹介枠に印刷された「ふじ」「たけ」「じん」「じゃ」と、鎮座地の全地番が神社庁原欄と対応する。",
+              "references": [
+                {
+                  "address_raw": "韮崎市中田町中條4787",
+                  "checked_at": "2026-11-21T12:35:45.211133+00:00",
+                  "excerpt": "藤武神社 / ふじたけじんじゃ / 韮崎市中田町中條4787",
+                  "license_status": "unconfirmed",
+                  "locator": "PDF 6ページ（冊子91ページ）、新府城本丸跡写真下「藤武神社」欄の見出しルビと桃色の所在地行",
+                  "name_raw": "藤武神社",
+                  "page_hash": "127599436ce8bb13f4dcad31091bab04ae16308940b2c00b973a93b8f5d9ea70",
+                  "page_render_sha256": "dded3b02ddd806b630e4df6f80d1498be01817105ab4d7378b1222481302f0cc",
+                  "pdf_page": 6,
+                  "printed_page": 91,
+                  "reading_raw": "ふじたけじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "配布一覧・運営者・免責本文を確認し、事実の社名・明示された全文ルビ・所在地だけを記録。",
+                  "ruby_parts_raw": [
+                    "ふじ",
+                    "たけ",
+                    "じん",
+                    "じゃ"
+                  ],
+                  "source_index": {
+                    "checked_at": "2026-11-21T12:34:05.758195+00:00",
+                    "page_hash": "04342e27ad96e6a496455b893c408a8d7b5f3f5638c7ad2cbc0e1825244e9728",
+                    "url": "https://www.yamanashi-kankou.jp/pamphlet/index.html"
+                  },
+                  "source_kind": "tourism_booklet",
+                  "source_publisher": "公益社団法人やまなし観光推進機構",
+                  "terms_reference": {
+                    "checked_at": "2026-11-21T12:37:41.453615+00:00",
+                    "page_hash": "27912ba556b10591dbd77de511916764998960346c0b20ae74c67c8779ebc6e9",
+                    "url": "https://www.yamanashi-kankou.jp/about/term.html"
+                  },
+                  "title": "やまなしのお寺と神社 八ヶ岳・韮崎エリア",
+                  "url": "https://www.yamanashi-kankou.jp/pamphlet/documents/temples_and_shrines_jp_yatsugatake.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6",
           "name_raw": "藤武神社",
           "normalization": [
@@ -27141,11 +27200,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "b06614c0dd8d675433b05ae168ea15522b2e3804cc84cb15a0cd8f9e9cc3f8ea",
-          "reading": "",
+          "reading": "ふじたけじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.yamanashi-kankou.jp/pamphlet/documents/temples_and_shrines_jp_yatsugatake.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -27255,6 +27314,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ふじたけじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ふじたけじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "藤武神社",
             "wikipedia_article_refs": [],
@@ -27285,7 +27358,7 @@
             "status": "pending",
             "surface": "藤武神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "藤武神社"
         },
         {
@@ -85491,12 +85564,69 @@
           "surface": "八幡神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:32.320723+00:00",
+          "checked_at": "2026-11-21T12:40:48.850626+00:00",
           "evidence": "5064 諏訪神社 南アルプス市上今諏訪1778 峡中支部 詳細>>",
           "facility_id": "62043dc5-d802-54e2-9d09-555ee8f7f1b0",
           "fetched_at": "2026-11-08T14:28:32.320723+00:00",
           "id": "82fd8035-3bce-5ac1-abaa-c7605f21285a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわじんじゃ"
+              },
+              "expected_source_hash": "8e4e59c4098511e53b86ecb6dbc4bb3d8ea8d7ccef9ec1bafe10c5183a8e42ba",
+              "facility_id": "62043dc5-d802-54e2-9d09-555ee8f7f1b0",
+              "identity_match": {
+                "agency_address": "南アルプス市上今諏訪1778",
+                "agency_name": "諏訪神社",
+                "reference_address": "山梨県南アルプス市上今諏訪1778",
+                "reference_name": "諏訪神社"
+              },
+              "original": {
+                "address": "南アルプス市上今諏訪1778",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/3",
+                "name_raw": "諏訪神社",
+                "reading_raw": ""
+              },
+              "reason": "現行紹介の社名の括弧は地域を示し、独立かな欄は「すわじんじゃ」。住所欄の1778が神社庁の上今諏訪の鎮座地と一致し、観光冊子の諏訪神社上社の紹介でも同地番を確認。冊子の上社付き全文は別に保持する。",
+              "references": [
+                {
+                  "address_raw": "山梨県南アルプス市上今諏訪1778",
+                  "checked_at": "2026-11-21T12:40:48.850626+00:00",
+                  "corroboration": {
+                    "address_raw": "南アルプス市上今諏訪1778",
+                    "checked_at": "2026-11-21T12:35:48.859129+00:00",
+                    "locator": "PDF 2ページの諏訪神社上社の欄。上社が付く見出しとルビに対応する全地番。",
+                    "name_raw": "諏訪神社上社",
+                    "page_hash": "91ddd476e6a1432f17426cf7b4ed15c238f1d7eb003c526bc90b6b57ed12ffab",
+                    "pdf_page": 2,
+                    "reading_raw": "すわじんじゃかみしゃ",
+                    "title": "やまなしのお寺と神社 南アルプス・富士川流域エリア",
+                    "url": "https://www.yamanashi-kankou.jp/pamphlet/documents/temples_and_shrines_jp_minobu.pdf"
+                  },
+                  "excerpt": "諏訪神社（南アルプス市上今諏訪） / すわじんじゃ / 山梨県南アルプス市上今諏訪1778",
+                  "heading_raw": "諏訪神社（南アルプス市上今諏訪）",
+                  "license_status": "unconfirmed",
+                  "locator": "h1内のspan.page-heading__kanaとspan.page-heading__name、独立「住所」欄",
+                  "name_raw": "諏訪神社",
+                  "page_hash": "33d2d103fae9ec71eca6785c07e15a37608f7a9dc7f304bb70cdf155e61b00ba",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "すわじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "公開の運営者説明と通常の公開本文を確認。社名、独立の全文かな、全地番と対応だけを記録。",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "諏訪神社（南アルプス市上今諏訪） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/minamiarupusu-shi/5148"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/3",
           "name_raw": "諏訪神社",
           "normalization": [
@@ -85504,11 +85634,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4fe4377f02dc2cffa03543866a9c18d89bdd023975cd0a39d92282844582c191",
-          "reading": "",
+          "reading": "すわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/3",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/minamiarupusu-shi/5148",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -85743,6 +85873,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪神社",
             "wikipedia_article_refs": [
@@ -85798,7 +85942,7 @@
             "status": "pending",
             "surface": "諏訪神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪神社"
         },
         {

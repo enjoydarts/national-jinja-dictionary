@@ -112551,12 +112551,70 @@
           "surface": "神明神社"
         },
         {
-          "checked_at": "2026-11-08T15:52:42.627250+00:00",
+          "checked_at": "2026-11-21T12:35:38.138638+00:00",
           "evidence": "氷川社 |  | さいたま市南区内谷2-2-17",
           "facility_id": "c2cc41d4-8120-537f-98bc-9cf7e3ab7963",
           "fetched_at": "2026-11-08T15:52:42.627250+00:00",
           "id": "bd0d6a90-b8df-50e1-87eb-4f18fdf84b2c",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ひかわしゃ"
+              },
+              "expected_source_hash": "49803da937ca3535400694b34779b789972a8153dd727b7402dc225c4e2dad26",
+              "facility_id": "c2cc41d4-8120-537f-98bc-9cf7e3ab7963",
+              "identity_match": {
+                "agency_address": "さいたま市南区内谷2-2-17",
+                "agency_name": "氷川社",
+                "reference_address": "さいたま市南区内谷2-2-17",
+                "reference_name": "氷川社"
+              },
+              "original": {
+                "address": "さいたま市南区内谷2-2-17",
+                "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8859/",
+                "name_raw": "氷川社",
+                "reading_raw": ""
+              },
+              "reason": "埼玉県神社庁の掲載ID 8859と9217の両本文で社名「氷川社」と全地番を再照合。9217の明示全文かなを参照し、さいたま市の文化財詳細でも同じ地番の所在が確認できた。元の掲載IDと施設記録は保持する。",
+              "references": [
+                {
+                  "address_raw": "さいたま市南区内谷2-2-17",
+                  "checked_at": "2026-11-21T12:35:38.138638+00:00",
+                  "comparison_observations": {
+                    "municipal_full_parcel": {
+                      "address_raw": "南区内谷2-2-17",
+                      "checked_at": "2026-11-21T12:35:43.091237+00:00",
+                      "locator": "指定文化財の表「所在地」欄",
+                      "name_raw": "氷川社",
+                      "page_hash": "685d045c317185bd63a4cd7dca643d7306ab12fb2af6ea6b752ad72f270ff4c6",
+                      "title": "文化財紹介 内谷氷川神社本殿",
+                      "url": "https://www.city.saitama.lg.jp/004/005/006/001/017/010/002/p000152.html"
+                    },
+                    "other_agency_listing": {
+                      "address_raw": "さいたま市南区内谷2-2-17",
+                      "checked_at": "2026-11-21T12:35:40.702321+00:00",
+                      "name_raw": "氷川社",
+                      "native_source_id": "8859",
+                      "page_hash": "eb7c342c1a668f6202a313af11fe439bf2fb382950d0744910b1cebfaddd6b17",
+                      "reading_raw": "",
+                      "url": "https://www.saitama-jinjacho.or.jp/shrine/8859/"
+                    }
+                  },
+                  "excerpt": "氷川社 / ひかわしゃ / さいたま市南区内谷2-2-17",
+                  "locator": "caption#shrine_name、span.name_kana、鎮座地のspan#shrine_address（掲載ID 9217）",
+                  "name_raw": "氷川社",
+                  "page_hash": "4c2219b5bceb1e6217d4811d9e0e1d7917d131fbe6ab68fac20a103f854fea2c",
+                  "reading_raw": "ひかわしゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "agency",
+                  "source_publisher": "埼玉県神社庁",
+                  "title": "氷川社 ｜ 埼玉県の神社",
+                  "url": "https://www.saitama-jinjacho.or.jp/shrine/9217/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.saitama-jinjacho.or.jp/shrine/8859/",
           "name_raw": "氷川社",
           "normalization": [
@@ -112564,11 +112622,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "83ed5a5c1018bbd62d5e29f888a1ca634a1ec010d0bb9d9f101333a285c89a6f",
-          "reading": "",
+          "reading": "ひかわしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.saitama-jinjacho.or.jp/shrine/8859/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.saitama-jinjacho.or.jp/shrine/9217/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -112633,6 +112691,20 @@
             "prefecture_code": "11",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ひかわしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ひかわしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "氷川社",
             "wikipedia_article_refs": [
@@ -112744,7 +112816,7 @@
             "status": "pending",
             "surface": "氷川社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "氷川社"
         },
         {

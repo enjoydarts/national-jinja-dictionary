@@ -256299,12 +256299,79 @@
           "surface": "伊雑社山神社合殿"
         },
         {
-          "checked_at": "2026-11-08T14:31:22.207638+00:00",
+          "checked_at": "2026-11-21T12:36:07.460543+00:00",
           "evidence": "須須岐水神社 390-0221 松本市大字里山辺2737",
           "facility_id": "4a8bfdf8-c059-5098-9e20-31f86b41bd1d",
           "fetched_at": "2026-11-08T14:31:22.207638+00:00",
           "id": "34538c0c-7a05-5b43-9919-06ed1b6c114b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すすきがわじんじゃ"
+              },
+              "expected_source_hash": "1024ecb3c34e60e1edcfc728ebcafd6a69b85a6bd7da38a67fb2bd92fa325728",
+              "facility_id": "4a8bfdf8-c059-5098-9e20-31f86b41bd1d",
+              "identity_match": "現地訪問記事の読み段落は松本市里山辺と須須岐水神社を示し、末尾の同名見出し直下の住所は松本市里山辺２７３７。神社庁の松本市大字里山辺2737と大字表記・数字幅を比較上そろえると一致する。市の里山辺資料は同地区・同じ読みの須々岐水神社を記す。記事内で別段落に出る千曲市の同名社、および市資料の奥社は対象外。",
+              "original": {
+                "address": "松本市大字里山辺2737",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/syouenchiku.htm",
+                "name_raw": "須須岐水神社",
+                "reading_raw": ""
+              },
+              "reason": "松本市里山辺の須須岐水神社について、現地訪問記事の本文と2026年11月18日更新の松本市里山辺かるた本文に同じ全文かなが明示されている。",
+              "references": [
+                {
+                  "address_raw": "松本市里山辺２７３７",
+                  "checked_at": "2026-11-21T12:36:07.460543+00:00",
+                  "excerpt": "松本市里山辺にある\n須須岐水神社は\nすすきがわじんじゃ\n…\n須須岐水神社\n■住所\n松本市里山辺２７３７",
+                  "locator": ".entry-content 内の「ちなみに・・・」直後の松本市の3段落、および末尾「■住所」直後",
+                  "mime_type": "text/html",
+                  "name_raw": "須須岐水神社",
+                  "page_hash": "f6e16f36c6455132272012bd1b0dd1dc5ecfc368fb7e2310f847c085829058a4",
+                  "published_on": "2020-12-15",
+                  "publisher": "まめうに日記",
+                  "reading_raw": "すすきがわじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_reference": {
+                    "checked_at": "2026-11-21T12:36:04.257988+00:00",
+                    "locator": "第6条及び第8条",
+                    "page_hash": "34257be104938e601aed34d4b63bebafe25cd324548f883b978f499d59542acf",
+                    "scope": "内容の再配布許諾を主張せず、施設名・かな・地番と出典の位置を短く記録する。",
+                    "url": "https://policies.hatena.ne.jp/rule"
+                  },
+                  "source_kind": "independent_secondary_reference",
+                  "source_note": "本文の名称からWikipediaへ外部リンクがあるため、独立した明示かなは市のかるた本文でも確認した。",
+                  "title": "【須須岐水神社】すすき川の神様☆彡 - まめうに日記",
+                  "url": "https://mame-uni0331.hatenablog.com/entry/2020/12/15/200000"
+                },
+                {
+                  "address_raw": "",
+                  "checked_at": "2026-11-21T12:36:07.549106+00:00",
+                  "excerpt": "須々岐水神社（すすきがわじんじゃ）",
+                  "locator": "主本文の薄川の伝説を説明する冒頭段落",
+                  "mime_type": "text/html",
+                  "name_raw": "須々岐水神社",
+                  "page_hash": "b079e0e4ba590ebb74705de2d7c6a2883e1527fc40f1b2f8389fa8e31af9595a",
+                  "published_on": "2026-11-18",
+                  "publisher": "松本市里山辺地区地域づくりセンター",
+                  "reading_raw": "すすきがわじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_reference": {
+                    "checked_at": "2026-11-21T12:36:04.427344+00:00",
+                    "locator": "著作権",
+                    "page_hash": "4f77ed76ca95f548e961396b36115e64fac7575813d3a4f98d1f79b23ef203d6",
+                    "scope": "施設名と明示かなだけを記録する。市ページの本文・写真等は収録しない。",
+                    "url": "https://www.city.matsumoto.nagano.jp/site/userguide/58387.html"
+                  },
+                  "source_kind": "municipal_reference",
+                  "source_note": "地番の掲載はなく、末尾の所在地は地域づくりセンター。全文かなの補助資料。",
+                  "title": "里山辺かるた「う」 - 松本市公式サイト",
+                  "url": "https://www.city.matsumoto.nagano.jp/soshiki/31/219310.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/syouenchiku.htm",
           "name_raw": "須須岐水神社",
           "normalization": [
@@ -256312,11 +256379,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "cabc094e85a9b9014e1569976b58e3e01f4962c527bb95b9ca85f41a070a2758",
-          "reading": "",
+          "reading": "すすきがわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/syouenchiku.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://mame-uni0331.hatenablog.com/entry/2020/12/15/200000",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -256350,6 +256417,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すすきがわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すすきがわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "須須岐水神社",
             "wikipedia_article_refs": [
@@ -256389,7 +256470,7 @@
             "status": "pending",
             "surface": "須須岐水神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "須須岐水神社"
         },
         {

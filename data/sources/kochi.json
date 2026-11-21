@@ -86597,12 +86597,70 @@
           "surface": "三所神社"
         },
         {
-          "checked_at": "2026-11-09T02:02:39.754296+00:00",
+          "checked_at": "2026-11-21T12:40:02.465130+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/55b3b956-10e4-43cc-a45f-fedaaa216f23: 名称=秋葉神社; 掲載読み=; 所在地=高知県吾川郡仁淀川町別枝1335番地",
           "facility_id": "6c46c0b9-e3a5-536e-ad75-c8d2bdc8cfaa",
           "fetched_at": "2026-11-09T02:02:39.754296+00:00",
           "id": "890dec32-0e9d-566f-b48a-1f471ef3ca1c",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "あきばじんじゃ"
+              },
+              "expected_source_hash": "8b85bddf3b50adfca71964f2f389874064cf5c4c1e26cb8f96895052ba4c0124",
+              "facility_id": "6c46c0b9-e3a5-536e-ad75-c8d2bdc8cfaa",
+              "identity_match": {
+                "reference_address": "高知県吾川郡仁淀川町別枝１３３５",
+                "reference_name": "秋葉神社",
+                "source_address": "高知県吾川郡仁淀川町別枝1335番地",
+                "source_name": "秋葉神社"
+              },
+              "original": {
+                "address": "高知県吾川郡仁淀川町別枝1335番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=40",
+                "name_raw": "秋葉神社",
+                "reading_raw": ""
+              },
+              "reason": "仁淀川町観光協会の同一施設紹介の基本情報に、正式名、独立全文かな、地番を含む所在地を確認。原神社庁の社名・全所在地に対応することを照合した。",
+              "references": [
+                {
+                  "address_raw": "高知県吾川郡仁淀川町別枝１３３５",
+                  "bytes": 188177,
+                  "checked_at": "2026-11-21T12:40:02.465130+00:00",
+                  "excerpt": "秋葉神社 / あきばじんじゃ / 〒781-1803 高知県吾川郡仁淀川町別枝１３３５",
+                  "license_status": "unconfirmed",
+                  "locator": "紹介本文「基本情報」の span.cast-ad01「店舗名」「店舗よみ」「住所」と各同列の span.cast-ad02",
+                  "municipal_link_context": {
+                    "bytes": 31166,
+                    "checked_at": "2026-11-21T12:35:01.628599+00:00",
+                    "page_hash": "b082e964af599726784d52437e1c72b08ec9b3aeddc82d51b47f2ffe001ac874",
+                    "url": "https://www.town.niyodogawa.lg.jp/"
+                  },
+                  "name_raw": "秋葉神社",
+                  "page_hash": "c087b680de771aa4f5a76132ee066ed9d26ac037332cb2f7bdc51bb926f4673b",
+                  "printed_fields": {
+                    "住所": "〒781-1803 高知県吾川郡仁淀川町別枝１３３５",
+                    "店舗よみ": "あきばじんじゃ",
+                    "店舗名": "秋葉神社"
+                  },
+                  "reading_raw": "あきばじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "仁淀川町観光協会の本文フッターと、仁淀川町公式入口の同ドメインへの実リンクを確認。実紹介の基本情報から名称・明示かな・所在地の最小事実を採る。包括転載許諾は未確認。",
+                  "source_home": {
+                    "bytes": 201338,
+                    "checked_at": "2026-11-21T12:33:54.327341+00:00",
+                    "page_hash": "3869c399260a1005e351be74356a62f319246e463c0af2db9453c14874ddab46",
+                    "url": "https://www.niyodogawa.tv/"
+                  },
+                  "source_kind": "municipal_tourism_association",
+                  "source_publisher": "仁淀川町観光協会",
+                  "title": "秋葉神社 - によどがわ.TV",
+                  "url": "https://www.niyodogawa.tv/enjoy/play-2274/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=40",
           "name_raw": "秋葉神社",
           "normalization": [
@@ -86610,11 +86668,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "8b119b8b83a477bcb7847df96599c00a054b0efad0f94ae9a3db714d1eedc399",
-          "reading": "",
+          "reading": "あきばじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=40",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.niyodogawa.tv/enjoy/play-2274/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -86651,6 +86709,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "あきばじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "あきばじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "秋葉神社",
             "wikipedia_article_refs": [],
@@ -86681,7 +86753,7 @@
             "status": "pending",
             "surface": "秋葉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "秋葉神社"
         },
         {
@@ -91479,12 +91551,60 @@
           "surface": "桑田山神社"
         },
         {
-          "checked_at": "2026-11-09T02:02:53.873011+00:00",
+          "checked_at": "2026-11-21T12:37:39.168799+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/e9c0155f-111f-4018-bac9-94cb7c96df37: 名称=今清神社; 掲載読み=; 所在地=高知県須崎市幸町11番12号",
           "facility_id": "da17cac6-8814-56c9-895b-a6e633ea1189",
           "fetched_at": "2026-11-09T02:02:53.873011+00:00",
           "id": "5be5ca41-2679-579f-86b5-ea89c8424c11",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いまきよじんじゃ"
+              },
+              "expected_source_hash": "5b042b69840d4ff9a178d56710fed210ca1b138a71b976f3ac8da3a50622a8d0",
+              "facility_id": "da17cac6-8814-56c9-895b-a6e633ea1189",
+              "identity_match": {
+                "reference_address": "高知県須崎市幸町11-12",
+                "reference_name": "今清神社",
+                "source_address": "高知県須崎市幸町11番12号",
+                "source_name": "今清神社"
+              },
+              "original": {
+                "address": "高知県須崎市幸町11番12号",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=44",
+                "name_raw": "今清神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問の同一主本文で、神社の正式名に続く括弧内の明示全文かなと、この神社名直後の独立住所行を確認。神社庁の原社名と全所在地が機械的な番地表記差だけで対応するため、読みを補完する。",
+              "references": [
+                {
+                  "address_raw": "高知県須崎市幸町11-12",
+                  "bytes": 202671,
+                  "checked_at": "2026-11-21T12:37:39.168799+00:00",
+                  "excerpt": "今清神社（いまきよじんじゃ） / 高知県須崎市幸町11-12",
+                  "license_status": "unconfirmed",
+                  "locator": "div#the-content の訪問本文「この上に今清神社（いまきよじんじゃ）が鎮座する。」と、その後の今清神社の郵便番号付き住所行。",
+                  "name_raw": "今清神社",
+                  "page_hash": "8b141dd094415a6e5a7167e2a5aecc2f172f72a846d1949313190eb2b27e2726",
+                  "reading_raw": "いまきよじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "サイト入口と実リンクのプライバシーポリシーを確認。著作権表示を保持し、主本文の社名・独立全文かな・所在地の限定事実だけを記録。",
+                  "source_kind": "private_field_visit_article",
+                  "source_publisher": "仁淀川（によどがわ）〜日本一の清流の現地訪問記事",
+                  "terms_reference": {
+                    "bytes": 104557,
+                    "checked_at": "2026-11-21T12:37:31.901710+00:00",
+                    "page_hash": "2f5a862dcd740f101b81f1d0e772300a77be7a1aa104e0540afce015d0e064b3",
+                    "title": "プライバシーポリシー - 仁淀川（によどがわ）〜日本一の清流",
+                    "url": "https://niyodogawa.org/%e3%83%97%e3%83%a9%e3%82%a4%e3%83%90%e3%82%b7%e3%83%bc%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc/"
+                  },
+                  "title": "須崎市中心街ウォーキング - 仁淀川（によどがわ）〜日本一の清流",
+                  "url": "https://niyodogawa.org/?p=80299"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=44",
           "name_raw": "今清神社",
           "normalization": [
@@ -91492,11 +91612,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "0bb2e40c2f4fdd01f2c835bf9f494be98c2e1b66d7e9302538af6a096a889830",
-          "reading": "",
+          "reading": "いまきよじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=44",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://niyodogawa.org/?p=80299",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -91533,6 +91653,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いまきよじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いまきよじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "今清神社",
             "wikipedia_article_refs": [],
@@ -91563,7 +91697,7 @@
             "status": "pending",
             "surface": "今清神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "今清神社"
         },
         {
@@ -94091,12 +94225,60 @@
           "surface": "𫝰戸神社"
         },
         {
-          "checked_at": "2026-11-09T02:03:00.756763+00:00",
+          "checked_at": "2026-11-21T12:37:39.168799+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/12cc51fa-32de-494a-a5d5-fe23fb24e237: 名称=糺鴨神社; 掲載読み=; 所在地=高知県須崎市東糺町7番10号",
           "facility_id": "3c20fbee-6947-5662-82e5-546e38c1f7d4",
           "fetched_at": "2026-11-09T02:03:00.756763+00:00",
           "id": "21fc29af-989c-5466-8e3c-6902354ac63f",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ただすかもじんじゃ"
+              },
+              "expected_source_hash": "33cec91ee4f46d21c945f9edeea0708254ff6fceb6d760852d5057efa069204c",
+              "facility_id": "3c20fbee-6947-5662-82e5-546e38c1f7d4",
+              "identity_match": {
+                "reference_address": "高知県須崎市東糺町7-10",
+                "reference_name": "糺鴨神社",
+                "source_address": "高知県須崎市東糺町7番10号",
+                "source_name": "糺鴨神社"
+              },
+              "original": {
+                "address": "高知県須崎市東糺町7番10号",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=46",
+                "name_raw": "糺鴨神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問の同一主本文で、神社の正式名に続く括弧内の明示全文かなと、この神社名直後の独立住所行を確認。神社庁の原社名と全所在地が機械的な番地表記差だけで対応するため、読みを補完する。",
+              "references": [
+                {
+                  "address_raw": "高知県須崎市東糺町7-10",
+                  "bytes": 202671,
+                  "checked_at": "2026-11-21T12:37:39.168799+00:00",
+                  "excerpt": "糺鴨神社（ただすかもじんじゃ） / 高知県須崎市東糺町7-10",
+                  "license_status": "unconfirmed",
+                  "locator": "div#the-content ＞ h2「糺鴨神社」節の「糺鴨神社（ただすかもじんじゃ）に到着。」と直後の同名の住所行。",
+                  "name_raw": "糺鴨神社",
+                  "page_hash": "8b141dd094415a6e5a7167e2a5aecc2f172f72a846d1949313190eb2b27e2726",
+                  "reading_raw": "ただすかもじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "サイト入口と実リンクのプライバシーポリシーを確認。著作権表示を保持し、主本文の社名・独立全文かな・所在地の限定事実だけを記録。",
+                  "source_kind": "private_field_visit_article",
+                  "source_publisher": "仁淀川（によどがわ）〜日本一の清流の現地訪問記事",
+                  "terms_reference": {
+                    "bytes": 104557,
+                    "checked_at": "2026-11-21T12:37:31.901710+00:00",
+                    "page_hash": "2f5a862dcd740f101b81f1d0e772300a77be7a1aa104e0540afce015d0e064b3",
+                    "title": "プライバシーポリシー - 仁淀川（によどがわ）〜日本一の清流",
+                    "url": "https://niyodogawa.org/%e3%83%97%e3%83%a9%e3%82%a4%e3%83%90%e3%82%b7%e3%83%bc%e3%83%9d%e3%83%aa%e3%82%b7%e3%83%bc/"
+                  },
+                  "title": "須崎市中心街ウォーキング - 仁淀川（によどがわ）〜日本一の清流",
+                  "url": "https://niyodogawa.org/?p=80299"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=46",
           "name_raw": "糺鴨神社",
           "normalization": [
@@ -94104,11 +94286,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4f58c68734a1c233c8581e750305c9e0ab506d35b9faa86527393ef699735303",
-          "reading": "",
+          "reading": "ただすかもじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=46",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://niyodogawa.org/?p=80299",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -94145,6 +94327,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ただすかもじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ただすかもじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "糺鴨神社",
             "wikipedia_article_refs": [],
@@ -94175,7 +94371,7 @@
             "status": "pending",
             "surface": "糺鴨神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "糺鴨神社"
         },
         {
@@ -101330,12 +101526,70 @@
           "surface": "津野神社"
         },
         {
-          "checked_at": "2026-11-09T02:03:15.529786+00:00",
+          "checked_at": "2026-11-20T01:36:10.152427+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/864b3942-4df3-4e6c-8d74-da92f5fe1daa: 名称=天神宮; 掲載読み=; 所在地=高知県高岡郡中土佐町大野見奈路1111番地",
           "facility_id": "80b21e7d-f7ce-5c7d-91ed-34421ca223c0",
           "fetched_at": "2026-11-09T02:03:15.529786+00:00",
           "id": "a594c7e2-1944-51fc-9118-a1d599aa5840",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "てんじんぐう"
+              },
+              "expected_source_hash": "8b8d17a6ec7f4bf19af4bd72fcb5ca5b24157cdc214ab935414afb1bb5d8e3f0",
+              "facility_id": "80b21e7d-f7ce-5c7d-91ed-34421ca223c0",
+              "identity_match": {
+                "reference_address": "高知県 高岡郡中土佐町 大野見奈路1111番地",
+                "source_address": "高知県高岡郡中土佐町大野見奈路1111番地",
+                "source_name": "天神宮"
+              },
+              "original": {
+                "address": "高知県高岡郡中土佐町大野見奈路1111番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=50",
+                "name_raw": "天神宮",
+                "reading_raw": ""
+              },
+              "reason": "公開地名データの同じ行で神社庁の社名・全地番と対応することを確認し、明示全文かなを採用した。",
+              "references": [
+                {
+                  "address_raw": "高知県 高岡郡中土佐町 大野見奈路1111番地",
+                  "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                  "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                  "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                  "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                  "csv_row": 27496,
+                  "doi": "10.20676/00000456",
+                  "excerpt": "天神宮 / てんじんぐう / 高知県 高岡郡中土佐町 大野見奈路1111番地",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "CSV 27496行、ジャパンナレッジ項目ID=400000161000",
+                  "name_raw": "天神宮",
+                  "other_documented_values": [
+                    {
+                      "checked_at": "2026-11-21T12:56:27.788585+00:00",
+                      "observed_fields": [
+                        "天神宮",
+                        "高知県高岡郡中土佐町大野見奈路１１１１番地"
+                      ],
+                      "page_hash": "f38dd5f73be26ccd566f46530ed16f19853f96cc786dd84b621dfbe85402a139",
+                      "source_kind": "government_open_corporate_profile",
+                      "title": "天神宮 | 9490005003949 | Gビズインフォ",
+                      "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=9490005003949"
+                    }
+                  ],
+                  "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                  "processed_notice": "2026年11月18日版から原社名・読み・所在地の該当行を抽出し照合。",
+                  "reading_raw": "てんじんぐう",
+                  "reading_scope": "full_name",
+                  "reference_original_row_id": "400000161000",
+                  "source_kind": "historical_scholarship_derivative",
+                  "source_publisher": "人文学オープンデータ共同利用センター（CODH）",
+                  "title": "『日本歴史地名大系』施設・地点項目データセット（2026年11月18日版）",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=50",
           "name_raw": "天神宮",
           "normalization": [
@@ -101343,11 +101597,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "adb2b8ac9abe0e0bbcd9719e799ac804bb987f59f9ea1f802bbb1988daec8dcb",
-          "reading": "",
+          "reading": "てんじんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=50",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -101444,6 +101698,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんじんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんじんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "天神宮",
             "wikipedia_article_refs": [],
@@ -101474,7 +101742,7 @@
             "status": "pending",
             "surface": "天神宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天神宮"
         },
         {
@@ -179622,12 +179890,71 @@
           "surface": "八坂神社"
         },
         {
-          "checked_at": "2026-11-09T02:05:55.501109+00:00",
+          "checked_at": "2026-11-20T01:36:10.152427+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/d2d77367-e067-4b12-ab78-21f95ff368e4: 名称=宇佐八幡宮; 掲載読み=; 所在地=高知県安芸郡芸西村和食字金岡山甲3914番地",
           "facility_id": "1a9fea24-ca81-55a7-b0fe-38a6e22e6ee6",
           "fetched_at": "2026-11-09T02:05:55.501109+00:00",
           "id": "7731bd3d-df5d-50b9-a2f6-3820caec8386",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "うさはちまんぐう"
+              },
+              "expected_source_hash": "73f797cf6c89713cfbb9edfa160cb37eead3d12f66cd82d5de90f7a16aedd6a0",
+              "facility_id": "1a9fea24-ca81-55a7-b0fe-38a6e22e6ee6",
+              "identity_match": {
+                "reference_address": "高知県 安芸郡芸西村 和食字金岡山甲3914番地",
+                "source_address": "高知県安芸郡芸西村和食字金岡山甲3914番地",
+                "source_name": "宇佐八幡宮"
+              },
+              "original": {
+                "address": "高知県安芸郡芸西村和食字金岡山甲3914番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=96",
+                "name_raw": "宇佐八幡宮",
+                "reading_raw": ""
+              },
+              "reason": "公開地名データの同じ行で神社庁の社名・全地番と対応することを確認し、明示全文かなを採用した。",
+              "references": [
+                {
+                  "address_raw": "高知県 安芸郡芸西村 和食字金岡山甲3914番地",
+                  "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                  "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                  "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                  "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                  "csv_row": 27080,
+                  "doi": "10.20676/00000456",
+                  "excerpt": "宇佐八幡宮 / うさはちまんぐう / 高知県 安芸郡芸西村 和食字金岡山甲3914番地",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "CSV 27080行、ジャパンナレッジ項目ID=400000022600",
+                  "name_raw": "宇佐八幡宮",
+                  "other_documented_values": [
+                    {
+                      "checked_at": "2026-11-21T12:56:33.598493+00:00",
+                      "locator": "「和食郷地区」の避難場所表、番号22。",
+                      "observed_fields": [
+                        "宇佐八幡宮",
+                        "芸西村和食甲3914"
+                      ],
+                      "page_hash": "6e816cf49d71fb2ef4724c3f072b72904c4ed168c203d5faa044e8a1b95e20cf",
+                      "source_kind": "municipal_disaster_management_plan",
+                      "title": "芸西村地域防災計画 資料編 令和8年4月",
+                      "url": "https://www.vill.geisei.kochi.jp/pbfile/m000413/pbf20260414180637.pdf"
+                    }
+                  ],
+                  "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                  "processed_notice": "2026年11月18日版から原社名・読み・所在地の該当行を抽出し照合。",
+                  "reading_raw": "うさはちまんぐう",
+                  "reading_scope": "full_name",
+                  "reference_original_row_id": "400000022600",
+                  "source_kind": "historical_scholarship_derivative",
+                  "source_publisher": "人文学オープンデータ共同利用センター（CODH）",
+                  "title": "『日本歴史地名大系』施設・地点項目データセット（2026年11月18日版）",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=96",
           "name_raw": "宇佐八幡宮",
           "normalization": [
@@ -179635,11 +179962,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "ea44509b6b68e74a246e98dd3952fe4ff57bcae200f44b492612f84e33bbbe8d",
-          "reading": "",
+          "reading": "うさはちまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=96",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -179676,6 +180003,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "うさはちまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "うさはちまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "宇佐八幡宮",
             "wikipedia_article_refs": [],
@@ -179706,7 +180047,7 @@
             "status": "pending",
             "surface": "宇佐八幡宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "宇佐八幡宮"
         },
         {
@@ -218861,12 +219202,57 @@
           "surface": "稲荷神社"
         },
         {
-          "checked_at": "2026-11-09T02:10:27.486247+00:00",
+          "checked_at": "2026-11-20T01:36:10.152427+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/314bd4d4-4c20-4529-b014-57eebd2916da: 名称=八王子宮; 掲載読み=; 所在地=高知県香美市土佐山田町字長谷川丸136番地",
           "facility_id": "ec0cf032-7ec6-5f8c-93d3-3a15d7650392",
           "fetched_at": "2026-11-09T02:10:27.486247+00:00",
           "id": "ff895d80-b340-5adf-9786-7f4487d8e1f2",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はちおうじぐう"
+              },
+              "expected_source_hash": "c2752291dd51a05bb6b0dca8fbacc53ad2cbca52a21d8ae6698b2809e76605e5",
+              "facility_id": "ec0cf032-7ec6-5f8c-93d3-3a15d7650392",
+              "identity_match": {
+                "reference_address": "高知県 香美市 土佐山田町字長谷川丸136番地",
+                "source_address": "高知県香美市土佐山田町字長谷川丸136番地",
+                "source_name": "八王子宮"
+              },
+              "original": {
+                "address": "高知県香美市土佐山田町字長谷川丸136番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=125",
+                "name_raw": "八王子宮",
+                "reading_raw": ""
+              },
+              "reason": "公開地名データの同じ行で神社庁の社名・全地番と対応することを確認し、明示全文かなを採用した。",
+              "references": [
+                {
+                  "address_raw": "高知県 香美市 土佐山田町字長谷川丸136番地",
+                  "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                  "catalog_page_hash": "4456f98cc2f056903dc64cb781e5994b57a69f2858c6797870d3af7f17d3c11f",
+                  "catalog_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/index.html.ja",
+                  "checked_at": "2026-11-20T01:36:10.152427+00:00",
+                  "csv_row": 27212,
+                  "doi": "10.20676/00000456",
+                  "excerpt": "八王子宮 / はちおうじぐう / 高知県 香美市 土佐山田町字長谷川丸136番地",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "CSV 27212行、ジャパンナレッジ項目ID=400000058200",
+                  "name_raw": "八王子宮",
+                  "page_hash": "760c5c9356916738ca6c39f47922688f07a029b5c56ac3649710858a0574f961",
+                  "processed_notice": "2026年11月18日版から原社名・読み・所在地の該当行を抽出し照合。",
+                  "reading_raw": "はちおうじぐう",
+                  "reading_scope": "full_name",
+                  "reference_original_row_id": "400000058200",
+                  "source_kind": "historical_scholarship_derivative",
+                  "source_publisher": "人文学オープンデータ共同利用センター（CODH）",
+                  "title": "『日本歴史地名大系』施設・地点項目データセット（2026年11月18日版）",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=125",
           "name_raw": "八王子宮",
           "normalization": [
@@ -218874,11 +219260,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "e843d0f867d87cb84101d60282d106a8e55cc7adeac78e7ec9a0e888921ad5eb",
-          "reading": "",
+          "reading": "はちおうじぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=125",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/dataset/nrct-poi-20261118.csv",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -218937,6 +219323,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちおうじぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちおうじぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八王子宮",
             "wikipedia_article_refs": [],
@@ -218967,7 +219367,7 @@
             "status": "pending",
             "surface": "八王子宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八王子宮"
         },
         {
@@ -232331,12 +232731,66 @@
           "surface": "上岡八幡宮"
         },
         {
-          "checked_at": "2026-11-09T02:10:58.984130+00:00",
+          "checked_at": "2026-11-21T12:42:56.616644+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/da8d5a3a-661b-43b0-b744-6100cecad29d: 名称=深渕神社; 掲載読み=; 所在地=高知県香南市野市町西野1202番地",
           "facility_id": "09dd0237-c8e6-5de2-b34c-43a1db9bf2ba",
           "fetched_at": "2026-11-09T02:10:58.984130+00:00",
           "id": "f81678e4-4e6d-5ac4-87a2-01731751abea",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ふかぶちじんじゃ"
+              },
+              "expected_source_hash": "87bd9288d2802502df05dcc96b4451654c1833194bb35525fcd2e475212c484a",
+              "facility_id": "09dd0237-c8e6-5de2-b34c-43a1db9bf2ba",
+              "identity_match": {
+                "reference_address": "香南市野市町西野1202",
+                "reference_name": "深渕神社",
+                "source_address": "高知県香南市野市町西野1202番地",
+                "source_name": "深渕神社"
+              },
+              "original": {
+                "address": "高知県香南市野市町西野1202番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=134",
+                "name_raw": "深渕神社",
+                "reading_raw": ""
+              },
+              "reason": "地域地名辞典の同一施設見出しに正式名と全文かな、同じ枠の現住所欄に全地番が明示される。原社名・現行の全所在地まで照合して読みだけを補完する。",
+              "references": [
+                {
+                  "address_raw": "香南市野市町西野1202",
+                  "bytes": 337413,
+                  "checked_at": "2026-11-21T12:42:56.616644+00:00",
+                  "cited_on": "2026-11-21",
+                  "excerpt": "深渕神社【ふかぶちじんじゃ】134 / 香南市野市町西野1202",
+                  "license_status": "unconfirmed",
+                  "locator": "div#cc-m-textwithimage-13342282190 の h2#cc-m-header-13106998090「深渕神社【ふかぶちじんじゃ】134」と同一枠内の現所在地文字リンク",
+                  "name_raw": "深渕神社",
+                  "page_hash": "651494ad0000373d033caea65bc29c2dc28bfd3f712b060483f5ae161488395b",
+                  "publisher_reference": {
+                    "bytes": 168910,
+                    "checked_at": "2026-11-21T12:44:11.553809+00:00",
+                    "page_hash": "0765d1c4dd75d7cce2b71e0c41f665ce891a7d3d50542d4a3139ca9bd50c3a24",
+                    "url": "https://www.shimanto-chimei.com/about/"
+                  },
+                  "reading_raw": "ふかぶちじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "「利用の注意」の引用年月日と原資料への配慮を守り、地名辞典の現代編集欄で独立表記された名称・全文かな・現所在地の最小事実のみを記録。引用元の古文書記述・由緒・写真・外部地図は収録しない。",
+                  "source_kind": "private_local_history",
+                  "source_publisher": "四万十町地名辞典（奥四万十山の暮らし調査団・高知「地名と風土」）",
+                  "terms_reference": {
+                    "bytes": 173974,
+                    "checked_at": "2026-11-21T12:44:17.251445+00:00",
+                    "page_hash": "43a636bf3e4ed8e754a3f4dec8d2d7cc15f2662683b44bbc3300f1fec99ea270",
+                    "url": "https://www.shimanto-chimei.com/%E5%88%A9%E7%94%A8%E3%81%AE%E6%B3%A8%E6%84%8F/"
+                  },
+                  "title": "平成の土佐一覧記・香南市 - 四万十町地名辞典",
+                  "url": "https://www.shimanto-chimei.com/%E5%B9%B3%E6%88%90%E3%81%AE%E5%9C%9F%E4%BD%90%E4%B8%80%E8%A6%A7%E8%A8%98/%E9%A6%99%E5%8D%97%E5%B8%82/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=134",
           "name_raw": "深渕神社",
           "normalization": [
@@ -232344,11 +232798,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "487cef791f31adc4a634fef26a23705ac7c4ecf93e5d1eb01a23d6f13bb1cdae",
-          "reading": "",
+          "reading": "ふかぶちじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=134",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.shimanto-chimei.com/%E5%B9%B3%E6%88%90%E3%81%AE%E5%9C%9F%E4%BD%90%E4%B8%80%E8%A6%A7%E8%A8%98/%E9%A6%99%E5%8D%97%E5%B8%82/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -232385,6 +232839,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ふかぶちじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ふかぶちじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "深渕神社",
             "wikipedia_article_refs": [],
@@ -232415,7 +232883,7 @@
             "status": "pending",
             "surface": "深渕神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "深渕神社"
         },
         {
