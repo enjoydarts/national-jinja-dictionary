@@ -89506,12 +89506,94 @@
           "surface": "瀧󠄇宮"
         },
         {
-          "checked_at": "2026-11-09T02:02:46.440181+00:00",
+          "checked_at": "2026-11-22T09:53:34.745282+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/8e80e782-9d1c-4176-948c-704d2a972c9e: 名称=鳴無神社; 掲載読み=; 所在地=高知県須崎市浦ﾉ内東分3579番地",
           "facility_id": "86743872-3955-5863-ad03-211ec5243e5d",
           "fetched_at": "2026-11-09T02:02:46.440181+00:00",
           "id": "972cb76b-a05c-5c86-869b-a24607bb616d",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おとなしじんじゃ"
+              },
+              "expected_source_hash": "007acdcac1ec74b66904a0e1e370760d33ba5164863fe7e0b7ef2e4fb46314b1",
+              "facility_id": "86743872-3955-5863-ad03-211ec5243e5d",
+              "identity_match": {
+                "agency_address": "高知県須崎市浦ﾉ内東分3579番地",
+                "agency_name": "鳴無神社",
+                "reference_address": "高知県須崎市浦ノ内東分3579",
+                "reference_name": "鳴無神社"
+              },
+              "original": {
+                "address": "高知県須崎市浦ﾉ内東分3579番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=42",
+                "name_raw": "鳴無神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の社名と全所在地を神社庁の掲載施設に照合し、明記された全文かなと別資料の読みの対応を確認した。",
+              "references": [
+                {
+                  "address_raw": "高知県須崎市浦ノ内東分3579",
+                  "checked_at": "2026-11-22T09:53:34.745282+00:00",
+                  "corroborating_evidence": {
+                    "regional_tourism": {
+                      "address_raw": "高知県須崎市浦の内東分字鳴無3579",
+                      "checked_at": "2026-11-22T09:55:48.203573+00:00",
+                      "locator": "見出しと所在地欄",
+                      "name_raw": "鳴無神社",
+                      "page_hash": "c51fa95ba0d93930896c5623164187a13a46447210c369944c2430ae77e99569",
+                      "reading_raw": "おとなしじんじゃ",
+                      "title": "奥四万十時間・鳴無神社",
+                      "url": "https://okushimanto.jp/tourism/0380"
+                    },
+                    "tourism": {
+                      "address_raw": "須崎市浦ノ内東分3579",
+                      "checked_at": "2026-11-22T09:55:48.041625+00:00",
+                      "locator": "名称・全文かなと基本情報の所在地欄",
+                      "name_raw": "鳴無神社",
+                      "page_hash": "5d32f030653a4f345e98effbeb4059cba63e0fdbcae4d69f18cb63c135286041",
+                      "reading_raw": "おとなしじんじゃ",
+                      "title": "こうち旅ネット・鳴無神社",
+                      "url": "https://kochi-tabi.jp/search_spot.html?ID=906"
+                    }
+                  },
+                  "excerpt": "鳴無神社（おとなしじんじゃ） / 高知県須崎市浦ノ内東分3579",
+                  "heading_raw": "鳴無神社（おとなしじんじゃ）",
+                  "index_reference": {
+                    "address_raw": "浦ノ内東分3579",
+                    "checked_at": "2026-11-22T09:48:33.551480+00:00",
+                    "detail_url": "https://powspo.com/0/002/438/",
+                    "index_row": 68,
+                    "municipality_raw": "須崎市",
+                    "name_raw": "鳴無神社",
+                    "page_hash": "c3a944f3b7740f218d04b8086f51e4f320e679051538876c6e5116af1b699d3d",
+                    "target_has_number": true,
+                    "url": "https://powspo.com/pref/39/"
+                  },
+                  "locator": "個別紹介の「タイプ」「名前」「所在地(住所)」の各欄。",
+                  "name_raw": "鳴無神社",
+                  "page_hash": "5609e02a9a5150383a846cb1b111b744ea69570e7ea49459522d02a4d3f63c71",
+                  "policy_reference": {
+                    "checked_at": "2026-11-22T09:48:21.878239+00:00",
+                    "page_hash": "3881904afc74304fa9e14f4a333ea6e6ccd42d155d44325bba626526bbdb4e23",
+                    "url": "https://powspo.com/pp.htm"
+                  },
+                  "publisher_reference": {
+                    "checked_at": "2026-11-22T09:48:24.773532+00:00",
+                    "page_hash": "565b903c03bb25919073d1a650050e774e2add28964a2eb62ba06838b0c26b81",
+                    "url": "https://powspo.com/profile.htm"
+                  },
+                  "reading_raw": "おとなしじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "independent_site_shrine_article",
+                  "source_publisher": "NT-SOFT",
+                  "title": "パワスポ.com・鳴無神社",
+                  "url": "https://powspo.com/0/002/438/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=42",
           "name_raw": "鳴無神社",
           "normalization": [
@@ -89519,11 +89601,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "2ef18dcbe2a2bfef5d1af4b53b5ee788d8e7bd6616a555392815d23786a28bd8",
-          "reading": "",
+          "reading": "おとなしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=42",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://powspo.com/0/002/438/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -89560,6 +89642,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おとなしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おとなしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "鳴無神社",
             "wikipedia_article_refs": [
@@ -89599,7 +89695,7 @@
             "status": "pending",
             "surface": "鳴無神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "鳴無神社"
         },
         {
