@@ -15308,12 +15308,76 @@
           "surface": "天神社"
         },
         {
-          "checked_at": "2026-11-08T14:27:29.497867+00:00",
+          "checked_at": "2026-11-22T01:46:55.451866+00:00",
           "evidence": "3006 諏訪神社 笛吹市石和町小石和412 東八代支部 詳細>>",
           "facility_id": "5f7674fb-e67f-5559-9952-f6bf96080ab4",
           "fetched_at": "2026-11-08T14:27:29.497867+00:00",
           "id": "6dec2271-83b0-54a6-bd48-e2a6ff54e5a8",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわじんじゃ"
+              },
+              "expected_source_hash": "ba3cdf41114533d73663861866898e861873198858c546730e9e8b4a866bb5f7",
+              "facility_id": "5f7674fb-e67f-5559-9952-f6bf96080ab4",
+              "identity_match": {
+                "agency_address": "笛吹市石和町小石和412",
+                "agency_name": "諏訪神社",
+                "reference_address": "山梨県笛吹市石和町小石和412",
+                "reference_name": "諏訪神社"
+              },
+              "original": {
+                "address": "笛吹市石和町小石和412",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3",
+                "name_raw": "諏訪神社",
+                "reading_raw": ""
+              },
+              "reason": "市教委資料のコース2番は独立全文かなと、同番号の解説に石和町小石和412を明示。全国神社マップの個別本文も同じ全社名、同地番、全文読み。",
+              "references": [
+                {
+                  "address_raw": "山梨県笛吹市石和町小石和412",
+                  "checked_at": "2026-11-22T01:46:55.451866+00:00",
+                  "excerpt": "諏訪神社（笛吹市石和町） / すわじんじゃ / 山梨県笛吹市石和町小石和412",
+                  "heading_raw": "諏訪神社（笛吹市石和町）",
+                  "license_status": "unconfirmed",
+                  "listing_reference": {
+                    "checked_at": "2026-11-21T13:26:49.481999+00:00",
+                    "page_hash": "fd2c97bf62b213c5c6b42e2ea575a57cc6b20f61042223d0640cc3ae5897e940",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi?page=3"
+                  },
+                  "locator": "個別ページのh1名称・独立かな、同ページの住所欄",
+                  "name_raw": "諏訪神社",
+                  "page_hash": "6eadb17110528d256657efc4e63a46c697facb3f453d8a29b95824a4d558cfb6",
+                  "printed_address_block": "〒406-0033山梨県笛吹市石和町小石和412",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "すわじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と当該個別本文を照合し、必要な名称・読み・所在地の事実のみ記録。",
+                  "source_kind": "private_shrine_database",
+                  "title": "諏訪神社（笛吹市石和町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4863"
+                },
+                {
+                  "address_raw": "小石和412",
+                  "checked_at": "2026-11-22T01:49:09.539719+00:00",
+                  "excerpt": "諏訪神社（すわじんじゃ）・小石和の公民館 / 2.小石和の諏訪神社 / 所在地（小石和412）",
+                  "locator": "PDF 2頁のコース2番（読み）とPDF 8頁の同番号の個別解説（所在地）",
+                  "name_raw": "諏訪神社",
+                  "page_hash": "cd932a9bbfc1d35cb912b65179ac3c35bc2027bfaec5e9448b3dd5b8836120cc",
+                  "reading_raw": "すわじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_cultural_guide",
+                  "title": "笛吹市教育委員会・てくてく古道を歩こう 市川道 富士見編その1",
+                  "url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5880121ef3706.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3",
           "name_raw": "諏訪神社",
           "normalization": [
@@ -15321,11 +15385,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "95a04d05394d4c74b5aa8dc3b0766fd32859aaeb7943e4774e779c07f996ddb5",
-          "reading": "",
+          "reading": "すわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4863",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -15510,6 +15574,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪神社",
             "wikipedia_article_refs": [
@@ -15565,7 +15643,7 @@
             "status": "pending",
             "surface": "諏訪神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪神社"
         },
         {
@@ -16542,12 +16620,76 @@
           "surface": "石和八幡宮"
         },
         {
-          "checked_at": "2026-11-08T14:27:29.497867+00:00",
+          "checked_at": "2026-11-22T01:46:52.646534+00:00",
           "evidence": "3016 神明神社 笛吹市石和町窪中島1 東八代支部 詳細>>",
           "facility_id": "9aaf609c-5879-544d-aa72-4b4f6db0400a",
           "fetched_at": "2026-11-08T14:27:29.497867+00:00",
           "id": "6c7ce1cb-15a2-5ce4-86c2-3bd216348ab6",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しんめいじんじゃ"
+              },
+              "expected_source_hash": "17718b43865521272044421f832de56dde4fec1a86eed4e08b4407de3106fa36",
+              "facility_id": "9aaf609c-5879-544d-aa72-4b4f6db0400a",
+              "identity_match": {
+                "agency_address": "笛吹市石和町窪中島1",
+                "agency_name": "神明神社",
+                "reference_address": "山梨県笛吹市石和町窪中島1",
+                "reference_name": "神明神社"
+              },
+              "original": {
+                "address": "笛吹市石和町窪中島1",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3",
+                "name_raw": "神明神社",
+                "reading_raw": ""
+              },
+              "reason": "市教委資料のコース3番は独立全文かなと、同番号の解説に石和町窪中島を明示。全国神社マップの個別本文には同じ全社名、窪中島1、全文読み。",
+              "references": [
+                {
+                  "address_raw": "山梨県笛吹市石和町窪中島1",
+                  "checked_at": "2026-11-22T01:46:52.646534+00:00",
+                  "excerpt": "神明神社（笛吹市石和町） / しんめいじんじゃ / 山梨県笛吹市石和町窪中島1",
+                  "heading_raw": "神明神社（笛吹市石和町）",
+                  "license_status": "unconfirmed",
+                  "listing_reference": {
+                    "checked_at": "2026-11-21T13:26:49.481999+00:00",
+                    "page_hash": "fd2c97bf62b213c5c6b42e2ea575a57cc6b20f61042223d0640cc3ae5897e940",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi?page=3"
+                  },
+                  "locator": "個別ページのh1名称・独立かな、同ページの住所欄",
+                  "name_raw": "神明神社",
+                  "page_hash": "404e615674caef0c1171c7d2d9e9402690ea71d9179f32dd790045398a7737e4",
+                  "printed_address_block": "〒406-0036山梨県笛吹市石和町窪中島1",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "しんめいじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と当該個別本文を照合し、必要な名称・読み・所在地の事実のみ記録。",
+                  "source_kind": "private_shrine_database",
+                  "title": "神明神社（笛吹市石和町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4870"
+                },
+                {
+                  "address_raw": "窪中島",
+                  "checked_at": "2026-11-22T01:49:07.037087+00:00",
+                  "excerpt": "神明神社（しんめいじんじゃ） / 窪中島の神明神社",
+                  "locator": "PDF 2頁のコース3番（読み）とPDF 6頁の同番号の個別解説（町域）",
+                  "name_raw": "神明神社",
+                  "page_hash": "fc2467ac2553804bf954de61d6e2564e535ebf24e72013c02bc74b1fd4f6efe3",
+                  "reading_raw": "しんめいじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_cultural_guide",
+                  "title": "笛吹市教育委員会・てくてく古道を歩こう 市川道 石和編",
+                  "url": "https://www.city.fuefuki.yamanashi.jp/documents/607/57ecbdb24458e.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3",
           "name_raw": "神明神社",
           "normalization": [
@@ -16555,11 +16697,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "95a04d05394d4c74b5aa8dc3b0766fd32859aaeb7943e4774e779c07f996ddb5",
-          "reading": "",
+          "reading": "しんめいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4870",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -16609,6 +16751,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しんめいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しんめいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "神明神社",
             "wikipedia_article_refs": [],
@@ -16639,7 +16795,7 @@
             "status": "pending",
             "surface": "神明神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "神明神社"
         },
         {
@@ -26495,12 +26651,84 @@
           "surface": "姫宮神社"
         },
         {
-          "checked_at": "2026-11-08T14:27:36.250172+00:00",
+          "checked_at": "2026-11-22T01:51:58.620341+00:00",
           "evidence": "6017 白髯神社 韮崎市水神1-1-14 峡北支部 詳細>>",
           "facility_id": "6d7b6494-a350-5574-89cc-b155a61b40fa",
           "fetched_at": "2026-11-08T14:27:36.250172+00:00",
           "id": "d21c7e86-7b27-5dc1-adc3-fe4775277929",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しらひげじんじゃ"
+              },
+              "expected_source_hash": "6e5cf20c56cbeec6e9c4c4abab7e36b4c8719c31d1ea942d385d989c11e6861e",
+              "facility_id": "6d7b6494-a350-5574-89cc-b155a61b40fa",
+              "identity_match": {
+                "agency_address": "韮崎市水神1-1-14",
+                "agency_name": "白髯神社",
+                "reference_address": "山梨県韮崎市水神1-1-14",
+                "reference_name": "白髯神社"
+              },
+              "original": {
+                "address": "韮崎市水神1-1-14",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6",
+                "name_raw": "白髯神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介の正式表記、全文かな、韮崎市水神の全地番が対応する。県の街道案内の個別見出しにも同じ正式表記と全文かながあり、コース本文に水神の地名と施設の対応が明示される。",
+              "references": [
+                {
+                  "address_raw": "山梨県韮崎市水神1-1-14",
+                  "checked_at": "2026-11-22T01:51:58.620341+00:00",
+                  "excerpt": "白髯神社 / しらひげじんじゃ / 山梨県韮崎市水神1-1-14",
+                  "locator": "個別h1の社名とタイトルの全文かな、同じ個別ページの住所欄。",
+                  "name_raw": "白髯神社",
+                  "other_documented_values": [
+                    {
+                      "alternative_name_raw": "白鬚神社",
+                      "checked_at": "2026-11-22T02:00:37.353765+00:00",
+                      "locality_raw": "水神",
+                      "locator": "韮崎宿コース個別ページの主h2と本文の地名。",
+                      "name_raw": "白髯神社",
+                      "page_hash": "a9687bf7d581e562dd0fb336d1b4e6ce04f7d28803332857df5d05db827900f3",
+                      "publisher_reference": {
+                        "checked_at": "2026-11-22T01:58:49.277837+00:00",
+                        "page_hash": "e3312ef8feb0a0ca8b494cd3b4187464657e0a5ed17e2f724aff74cbb818867e",
+                        "url": "https://rekishinomichi-yamanashi.jp/ja/about/"
+                      },
+                      "reading_raw": "しらひげじんじゃ",
+                      "source_kind": "prefectural_tourism_survey",
+                      "title": "やまなし歴史の道ツーリズム・白髯神社",
+                      "url": "https://rekishinomichi-yamanashi.jp/ja/spot/1-171.html"
+                    },
+                    {
+                      "checked_at": "2026-11-22T01:59:25.093674+00:00",
+                      "locality_raw": "水神",
+                      "locator": "本文の白髯神社と地名、掲載スポット14から個別紹介への実リンク。",
+                      "name_raw": "白髯神社",
+                      "page_hash": "c276c58cd17174bccff57cae15975cb00b1135335847ae4bc6b8b1cf178128e6",
+                      "source_kind": "prefectural_tourism_survey",
+                      "title": "やまなし歴史の道ツーリズム・韮崎宿コース",
+                      "url": "https://rekishinomichi-yamanashi.jp/ja/course/1-10.html"
+                    }
+                  ],
+                  "page_hash": "d5294a74b04930d211ef298e1b3e134d47e34b06a4f0b77e38fea8f534d88682",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "しらひげじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "白髯神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/nirasaki-shi/5218"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6",
           "name_raw": "白髯神社",
           "normalization": [
@@ -26508,11 +26736,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "b06614c0dd8d675433b05ae168ea15522b2e3804cc84cb15a0cd8f9e9cc3f8ea",
-          "reading": "",
+          "reading": "しらひげじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/6",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/nirasaki-shi/5218",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -26546,6 +26774,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しらひげじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しらひげじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "白髯神社",
             "wikipedia_article_refs": [],
@@ -26576,7 +26818,7 @@
             "status": "pending",
             "surface": "白髯神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "白髯神社"
         },
         {
@@ -28615,12 +28857,99 @@
           "surface": "鈴原社"
         },
         {
-          "checked_at": "2026-11-08T14:27:38.502752+00:00",
+          "checked_at": "2026-11-22T01:52:15.708462+00:00",
           "evidence": "7008 天神社 富士吉田市下吉田2-29-37 南都留支部 詳細>>",
           "facility_id": "c323c27c-0b06-5ae7-85fd-6fcd5b27766f",
           "fetched_at": "2026-11-08T14:27:38.502752+00:00",
           "id": "55866a16-a35c-5ad9-9c33-658ea15cd8ea",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "てんじんじゃ"
+              },
+              "expected_source_hash": "d3662db089a9fd6a10cca3dbfeb4080c844edc027d9aefa5b87f458a017afa08",
+              "facility_id": "c323c27c-0b06-5ae7-85fd-6fcd5b27766f",
+              "identity_match": {
+                "agency_address": "富士吉田市下吉田2-29-37",
+                "agency_name": "天神社",
+                "reference_address": "山梨県富士吉田市下吉田2-29-37",
+                "reference_name": "天神社"
+              },
+              "original": {
+                "address": "富士吉田市下吉田2-29-37",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7",
+                "name_raw": "天神社",
+                "reading_raw": ""
+              },
+              "reason": "個別紹介に明示された全文かなと神社庁の全地番を確認。県の街道案内には社名と全文かなが中黒で分けて併記され、市の資料と無形文化遺産の公開行も下吉田の同じ祭礼を示す。",
+              "references": [
+                {
+                  "address_raw": "山梨県富士吉田市下吉田2-29-37",
+                  "checked_at": "2026-11-22T01:52:15.708462+00:00",
+                  "excerpt": "天神社（富士吉田市下吉田） / てんじんじゃ / 山梨県富士吉田市下吉田2-29-37",
+                  "heading_raw": "天神社（富士吉田市下吉田）",
+                  "locator": "個別h1の社名と題かな、同じ個別ページの住所欄。",
+                  "name_raw": "天神社",
+                  "other_documented_values": [
+                    {
+                      "checked_at": "2026-11-22T01:59:27.657910+00:00",
+                      "locality_raw": "下吉田",
+                      "locator": "主h2で中黒を境に社名とかなが対応。本文の天神社の祭礼欄。",
+                      "name_raw": "天神社・機神社",
+                      "page_hash": "67e425b4de0b7982d1277cfce6e1b952ee58898c27ea186c58eb1e527fd5db43",
+                      "publisher_reference": {
+                        "checked_at": "2026-11-22T01:58:49.277837+00:00",
+                        "page_hash": "e3312ef8feb0a0ca8b494cd3b4187464657e0a5ed17e2f724aff74cbb818867e",
+                        "url": "https://rekishinomichi-yamanashi.jp/ja/about/"
+                      },
+                      "reading_raw": "てんじんじゃ・はたがみしゃ",
+                      "source_kind": "prefectural_tourism_survey",
+                      "title": "やまなし歴史の道ツーリズム・天神社・機神社",
+                      "url": "https://rekishinomichi-yamanashi.jp/ja/spot/2-36.html"
+                    },
+                    {
+                      "address_raw": "富士吉田市下吉田",
+                      "checked_at": "2026-11-22T01:59:30.368419+00:00",
+                      "locator": "当該祭礼の所在地と天王祭を説明する本文。",
+                      "name_raw": "天神社の獅子舞と馬鹿踊",
+                      "page_hash": "2f3ac5fbbe4fdcce0c7fb65f9ff6bde5db8d6c0cce6a90ff83ef6e8cb9cd6f0d",
+                      "source_kind": "municipal_cultural_property",
+                      "title": "富士吉田市指定無形民俗文化財",
+                      "url": "https://www.city.fujiyoshida.yamanashi.jp/page/1104.html"
+                    },
+                    {
+                      "address_raw": "富士吉田市下吉田",
+                      "bytes": 1887054,
+                      "checked_at": "2026-11-22T01:52:17.622128+00:00",
+                      "content_type": "application/octet-stream",
+                      "csv_row": 1294,
+                      "locator": "同じ行の名称・名称ふりがな・所在住所。行番号はCSVパーサーのレコード順。",
+                      "name_raw": "天神社の獅子舞神楽と馬鹿踊",
+                      "page_hash": "30967bee8b65761053ce12bc08816217b2408e6800f5d6639cc4dd0402b99701",
+                      "reading_raw": "てんじんじゃのししまいとばかおどり",
+                      "source_kind": "national_research_institute_cultural_inventory",
+                      "source_publisher": "東京文化財研究所無形文化遺産部",
+                      "title": "無形文化遺産総合データベース・公開CSV",
+                      "url": "https://mukeinet.tobunken.go.jp/modules/cultural_map/csv.php?eid=55862&module=cultural_map&mode=getdata&type=csv&key=%E7%A5%9E%E7%A4%BE&field=city&sort=asc&userStatus=false&region=%5B%5D&cat=%5B%5D&kind_l=%5B%5D&date=%5B%5D"
+                    }
+                  ],
+                  "page_hash": "3c0b2294d66df256466e25af7867ad84c1a6385bbe94af74bfd2cac3c9c8d4b6",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "てんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "private_shrine_database",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "天神社（富士吉田市下吉田） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fujiyoshida-shi/5384"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7",
           "name_raw": "天神社",
           "normalization": [
@@ -28628,11 +28957,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "3898175a57bef24095d9dc466dd30560c35c71e432e30c4d87e6a36f015d1c6e",
-          "reading": "",
+          "reading": "てんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/fujiyoshida-shi/5384",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -28716,6 +29045,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "天神社",
             "wikipedia_article_refs": [],
@@ -28746,7 +29089,7 @@
             "status": "pending",
             "surface": "天神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天神社"
         },
         {
@@ -53467,12 +53810,76 @@
           "surface": "八幡神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:05.039802+00:00",
+          "checked_at": "2026-11-22T01:47:12.424774+00:00",
           "evidence": "3033 国立神社 笛吹市御坂町井之上925 東八代支部 詳細>>",
           "facility_id": "d8043d8d-cda9-5b5e-a0dc-9ba1deddaa45",
           "fetched_at": "2026-11-08T14:28:05.039802+00:00",
           "id": "8c1ad2c9-a565-521d-8d00-68f46477b28a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "くにたちじんじゃ"
+              },
+              "expected_source_hash": "53399a43c30073d668c4a99ca131556cf57a1ef4ea6e5cbbdf092f586cbbd2ab",
+              "facility_id": "d8043d8d-cda9-5b5e-a0dc-9ba1deddaa45",
+              "identity_match": {
+                "agency_address": "笛吹市御坂町井之上925",
+                "agency_name": "国立神社",
+                "reference_address": "山梨県笛吹市御坂町井之上９２５",
+                "reference_name": "国立神社"
+              },
+              "original": {
+                "address": "笛吹市御坂町井之上925",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/2",
+                "name_raw": "国立神社",
+                "reading_raw": ""
+              },
+              "reason": "市文化財案内の個別紹介枠3番に原社名と独立全文かなが明記。全国神社マップの個別本文は同じ社名、御坂町井之上925、同じ全文読み。",
+              "references": [
+                {
+                  "address_raw": "山梨県笛吹市御坂町井之上９２５",
+                  "checked_at": "2026-11-22T01:47:12.424774+00:00",
+                  "excerpt": "国立神社 / くにたちじんじゃ / 山梨県笛吹市御坂町井之上９２５",
+                  "heading_raw": "国立神社",
+                  "license_status": "unconfirmed",
+                  "listing_reference": {
+                    "checked_at": "2026-11-21T13:26:45.932363+00:00",
+                    "page_hash": "9c83fcc1799876337f152eb64931e0ec807d661a1c4b2cfcab27144621fa4f48",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi?page=2"
+                  },
+                  "locator": "個別ページのh1名称・独立かな、同ページの住所欄",
+                  "name_raw": "国立神社",
+                  "page_hash": "ad42b266a08f8062ea50349b5e9f70693b6d4165edbd6562ba8f4b3ca0309e93",
+                  "printed_address_block": "〒406-0803山梨県笛吹市御坂町井之上９２５",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "くにたちじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と当該個別本文を照合し、必要な名称・読み・所在地の事実のみ記録。",
+                  "source_kind": "private_shrine_database",
+                  "title": "国立神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4886"
+                },
+                {
+                  "address_raw": "",
+                  "checked_at": "2026-11-22T01:45:37.614944+00:00",
+                  "excerpt": "国立神社 / クニタチジンジャ",
+                  "locator": "PDF 2頁（画像確認）の神社・寺院案内 3 番",
+                  "name_raw": "国立神社",
+                  "page_hash": "ef5615c0e29a812075e4d984b579b49e38f24e100a02955f75fbf3b7f222228d",
+                  "reading_raw": "クニタチジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_cultural_guide",
+                  "title": "笛吹市教育委員会・文化財を訪ねよう 甲斐国分寺跡・甲斐国分尼寺跡とその周辺",
+                  "url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5594e67878d5d.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/2",
           "name_raw": "国立神社",
           "normalization": [
@@ -53480,11 +53887,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "981f7767a186d324032c2a540c100581472ce99cb316eb6d0796e58d2fa30ab5",
-          "reading": "",
+          "reading": "くにたちじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/2",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4886",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -53518,6 +53925,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "くにたちじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "くにたちじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "国立神社",
             "wikipedia_article_refs": [],
@@ -53548,7 +53969,7 @@
             "status": "pending",
             "surface": "国立神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "国立神社"
         },
         {
@@ -55303,12 +55724,76 @@
           "surface": "天神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:05.039802+00:00",
+          "checked_at": "2026-11-22T01:47:20.877241+00:00",
           "evidence": "3050 熊野神社 笛吹市一宮町本都塚64 東八代支部 詳細>>",
           "facility_id": "0fc616ff-6ef9-50b4-89d0-1d651f878a7f",
           "fetched_at": "2026-11-08T14:28:05.039802+00:00",
           "id": "9fe2d2c7-84eb-52fd-899e-a5ccce732b3d",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "くまのじんじゃ"
+              },
+              "expected_source_hash": "8babee76ad2735f3cc4fc7119bf90797ac2badd51cde93e10f5d6169a34295f5",
+              "facility_id": "0fc616ff-6ef9-50b4-89d0-1d651f878a7f",
+              "identity_match": {
+                "agency_address": "笛吹市一宮町本都塚64",
+                "agency_name": "熊野神社",
+                "reference_address": "山梨県笛吹市一宮町本都塚64",
+                "reference_name": "熊野神社"
+              },
+              "original": {
+                "address": "笛吹市一宮町本都塚64",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/2",
+                "name_raw": "熊野神社",
+                "reading_raw": ""
+              },
+              "reason": "全国神社マップ個別本文の独立全文かなは熊野神社のもので、所在地は原所在地の一宮町本都塚64。市教委資料6番の見出しと対応する読みは、地名と熊野神社を双方とも中黒で区切っている。採用値は個別ページの独立全文かな。",
+              "references": [
+                {
+                  "address_raw": "山梨県笛吹市一宮町本都塚64",
+                  "checked_at": "2026-11-22T01:47:20.877241+00:00",
+                  "excerpt": "熊野神社（笛吹市一宮町） / くまのじんじゃ / 山梨県笛吹市一宮町本都塚64",
+                  "heading_raw": "熊野神社（笛吹市一宮町）",
+                  "license_status": "unconfirmed",
+                  "listing_reference": {
+                    "checked_at": "2026-11-21T13:26:45.932363+00:00",
+                    "page_hash": "9c83fcc1799876337f152eb64931e0ec807d661a1c4b2cfcab27144621fa4f48",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi?page=2"
+                  },
+                  "locator": "個別ページのh1名称・独立かな、同ページの住所欄",
+                  "name_raw": "熊野神社",
+                  "page_hash": "adf930a61071db6c7573eb6a790a86ec8922537e29891b857ae652a5675a2cdc",
+                  "printed_address_block": "〒405-0072山梨県笛吹市一宮町本都塚64",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "くまのじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と当該個別本文を照合し、必要な名称・読み・所在地の事実のみ記録。",
+                  "source_kind": "private_shrine_database",
+                  "title": "熊野神社（笛吹市一宮町） - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4902"
+                },
+                {
+                  "address_raw": "",
+                  "checked_at": "2026-11-22T01:45:37.614944+00:00",
+                  "excerpt": "本都塚・熊野神社 / モトミヤコヅカ・クマノジンジャ",
+                  "locator": "PDF 2頁（画像確認）の神社・寺院案内6番",
+                  "name_raw": "本都塚・熊野神社",
+                  "page_hash": "ef5615c0e29a812075e4d984b579b49e38f24e100a02955f75fbf3b7f222228d",
+                  "reading_raw": "モトミヤコヅカ・クマノジンジャ",
+                  "reading_scope": "locality_and_name",
+                  "source_kind": "municipal_cultural_guide",
+                  "title": "笛吹市教育委員会・文化財を訪ねよう 甲斐国分寺跡・甲斐国分尼寺跡とその周辺",
+                  "url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5594e67878d5d.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/2",
           "name_raw": "熊野神社",
           "normalization": [
@@ -55316,11 +55801,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "981f7767a186d324032c2a540c100581472ce99cb316eb6d0796e58d2fa30ab5",
-          "reading": "",
+          "reading": "くまのじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/2",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4902",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -55480,6 +55965,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "くまのじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "くまのじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "熊野神社",
             "wikipedia_article_refs": [
@@ -55519,7 +56018,7 @@
             "status": "pending",
             "surface": "熊野神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "熊野神社"
         },
         {
@@ -56686,12 +57185,76 @@
           "surface": "蜂城天神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:07.259849+00:00",
+          "checked_at": "2026-11-22T01:46:38.586332+00:00",
           "evidence": "3060 牛飼神社 笛吹市一宮町坪井字立石東1250 東八代支部 詳細>>",
           "facility_id": "4d611b68-e072-55b4-ae4a-d3c4f2fc8033",
           "fetched_at": "2026-11-08T14:28:07.259849+00:00",
           "id": "5387d53c-a449-5a17-a128-b9244b262d81",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "うしかいじんじゃ"
+              },
+              "expected_source_hash": "1cee2c4331e515adcd850ec24357f5ce1b74c1076ccf2293734997145e558268",
+              "facility_id": "4d611b68-e072-55b4-ae4a-d3c4f2fc8033",
+              "identity_match": {
+                "agency_address": "笛吹市一宮町坪井字立石東1250",
+                "agency_name": "牛飼神社",
+                "reference_address": "山梨県笛吹市一宮町坪井字立石東1250",
+                "reference_name": "牛飼神社"
+              },
+              "original": {
+                "address": "笛吹市一宮町坪井字立石東1250",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/3",
+                "name_raw": "牛飼神社",
+                "reading_raw": ""
+              },
+              "reason": "市文化財案内の個別紹介枠5番に原社名と独立全文かなが明記。全国神社マップの個別本文は同じ社名、一宮町坪井字立石東1250、同じ全文読み。",
+              "references": [
+                {
+                  "address_raw": "山梨県笛吹市一宮町坪井字立石東1250",
+                  "checked_at": "2026-11-22T01:46:38.586332+00:00",
+                  "excerpt": "牛飼神社 / うしかいじんじゃ / 山梨県笛吹市一宮町坪井字立石東1250",
+                  "heading_raw": "牛飼神社",
+                  "license_status": "unconfirmed",
+                  "listing_reference": {
+                    "checked_at": "2026-11-21T13:26:43.380387+00:00",
+                    "page_hash": "26227bfbb2db905c51be4b5fa135a3fc2de8f2edd1ff47ea6579ac194f58ef2c",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi"
+                  },
+                  "locator": "個別ページのh1名称・独立かな、同ページの住所欄",
+                  "name_raw": "牛飼神社",
+                  "page_hash": "39bc42cedd7079667d3c0536013f686dbc6e64a120d0c01219d9d544ebdc31e0",
+                  "printed_address_block": "〒405-0077山梨県笛吹市一宮町坪井字立石東1250",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "うしかいじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と当該個別本文を照合し、必要な名称・読み・所在地の事実のみ記録。",
+                  "source_kind": "private_shrine_database",
+                  "title": "牛飼神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4912"
+                },
+                {
+                  "address_raw": "",
+                  "checked_at": "2026-11-22T01:45:37.614944+00:00",
+                  "excerpt": "牛飼神社 / ウシカイジンジャ",
+                  "locator": "PDF 2頁（画像確認）の神社・寺院案内 5 番",
+                  "name_raw": "牛飼神社",
+                  "page_hash": "ef5615c0e29a812075e4d984b579b49e38f24e100a02955f75fbf3b7f222228d",
+                  "reading_raw": "ウシカイジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_cultural_guide",
+                  "title": "笛吹市教育委員会・文化財を訪ねよう 甲斐国分寺跡・甲斐国分尼寺跡とその周辺",
+                  "url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5594e67878d5d.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/3",
           "name_raw": "牛飼神社",
           "normalization": [
@@ -56699,11 +57262,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "93b0351895777ed960d3e5e4b0c07ded4d76cb74910f1d3757340689067f0799",
-          "reading": "",
+          "reading": "うしかいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/3",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4912",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -56758,6 +57321,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "うしかいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "うしかいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "牛飼神社",
             "wikipedia_article_refs": [],
@@ -56788,7 +57365,7 @@
             "status": "pending",
             "surface": "牛飼神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "牛飼神社"
         },
         {
@@ -57247,12 +57824,76 @@
           "surface": "天神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:07.259849+00:00",
+          "checked_at": "2026-11-22T01:46:24.524818+00:00",
           "evidence": "3065 石船神社 笛吹市一宮町国分221 東八代支部 詳細>>",
           "facility_id": "e8430f3b-28a9-5710-af29-4d53a9732043",
           "fetched_at": "2026-11-08T14:28:07.259849+00:00",
           "id": "31b77c45-f23f-5402-b792-3dd8feef3f65",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いしふねじんじゃ"
+              },
+              "expected_source_hash": "9f8b6f03391ccc9d94346f4ff425630851beb6f62f5290c20fc87ab4ea947d39",
+              "facility_id": "e8430f3b-28a9-5710-af29-4d53a9732043",
+              "identity_match": {
+                "agency_address": "笛吹市一宮町国分221",
+                "agency_name": "石船神社",
+                "reference_address": "山梨県笛吹市一宮町国分221",
+                "reference_name": "石船神社"
+              },
+              "original": {
+                "address": "笛吹市一宮町国分221",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/3",
+                "name_raw": "石船神社",
+                "reading_raw": ""
+              },
+              "reason": "市文化財案内の個別紹介枠4番に原社名と独立全文かなが明記。全国神社マップの個別本文は同じ社名、一宮町国分221、同じ全文読み。",
+              "references": [
+                {
+                  "address_raw": "山梨県笛吹市一宮町国分221",
+                  "checked_at": "2026-11-22T01:46:24.524818+00:00",
+                  "excerpt": "石船神社 / いしふねじんじゃ / 山梨県笛吹市一宮町国分221",
+                  "heading_raw": "石船神社",
+                  "license_status": "unconfirmed",
+                  "listing_reference": {
+                    "checked_at": "2026-11-21T13:26:43.380387+00:00",
+                    "page_hash": "26227bfbb2db905c51be4b5fa135a3fc2de8f2edd1ff47ea6579ac194f58ef2c",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi"
+                  },
+                  "locator": "個別ページのh1名称・独立かな、同ページの住所欄",
+                  "name_raw": "石船神社",
+                  "page_hash": "b909992a9bdf814390af2d36483da867f46f7c72eaaaee80673fae501d0bcfd3",
+                  "printed_address_block": "〒405-0074山梨県笛吹市一宮町国分221",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "いしふねじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と当該個別本文を照合し、必要な名称・読み・所在地の事実のみ記録。",
+                  "source_kind": "private_shrine_database",
+                  "title": "石船神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4916"
+                },
+                {
+                  "address_raw": "",
+                  "checked_at": "2026-11-22T01:45:37.614944+00:00",
+                  "excerpt": "石船神社 / イシフネジンジャ",
+                  "locator": "PDF 2頁（画像確認）の神社・寺院案内 4 番",
+                  "name_raw": "石船神社",
+                  "page_hash": "ef5615c0e29a812075e4d984b579b49e38f24e100a02955f75fbf3b7f222228d",
+                  "reading_raw": "イシフネジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_cultural_guide",
+                  "title": "笛吹市教育委員会・文化財を訪ねよう 甲斐国分寺跡・甲斐国分尼寺跡とその周辺",
+                  "url": "https://www.city.fuefuki.yamanashi.jp/documents/607/5594e67878d5d.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/3",
           "name_raw": "石船神社",
           "normalization": [
@@ -57260,11 +57901,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "93b0351895777ed960d3e5e4b0c07ded4d76cb74910f1d3757340689067f0799",
-          "reading": "",
+          "reading": "いしふねじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/3/3",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/fuefuki-shi/4916",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -57328,6 +57969,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いしふねじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いしふねじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "石船神社",
             "wikipedia_article_refs": [
@@ -57367,7 +58022,7 @@
             "status": "pending",
             "surface": "石船神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "石船神社"
         },
         {
@@ -84870,12 +85525,76 @@
           "surface": "諏訪神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:32.320723+00:00",
+          "checked_at": "2026-11-22T01:49:36.885279+00:00",
           "evidence": "5057 水宮神社 南アルプス市有野1298 峡中支部 詳細>>",
           "facility_id": "e77a2dc2-504c-5060-bfdb-51821bb1b715",
           "fetched_at": "2026-11-08T14:28:32.320723+00:00",
           "id": "07c8ac8e-073c-5972-a29b-341ba064f6b4",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "みずみやじんじゃ"
+              },
+              "expected_source_hash": "30716ffc7584af4bcf497be348b1d650561d1ca45643facc40b96edb1708b153",
+              "facility_id": "e77a2dc2-504c-5060-bfdb-51821bb1b715",
+              "identity_match": {
+                "agency_address": "南アルプス市有野1298",
+                "agency_name": "水宮神社",
+                "reference_address": "山梨県南アルプス市有野1298",
+                "reference_name": "水宮神社"
+              },
+              "original": {
+                "address": "南アルプス市有野1298",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/3",
+                "name_raw": "水宮神社",
+                "reading_raw": ""
+              },
+              "reason": "全国神社マップの個別本文に独立全文かなと同地番がある。市文化財資料は同一の有野1298と所有者の社名を明示し、社叢を含む文化財名の読みも対応。採用値は神社名の独立かな。",
+              "references": [
+                {
+                  "address_raw": "山梨県南アルプス市有野1298",
+                  "checked_at": "2026-11-22T01:49:36.885279+00:00",
+                  "excerpt": "水宮神社 / みずみやじんじゃ / 山梨県南アルプス市有野1298",
+                  "heading_raw": "水宮神社",
+                  "license_status": "unconfirmed",
+                  "listing_reference": {
+                    "checked_at": "2026-11-21T13:27:12.600259+00:00",
+                    "page_hash": "4b35020963ba9343509639531caeb338a1870ac8eefae06632a2b43a6077fd36",
+                    "url": "https://shrine.mobi/area/koshinetsu/yamanashi/minamiarupusu-shi?page=3"
+                  },
+                  "locator": "個別ページのh1名称・独立かな、同ページの住所欄",
+                  "name_raw": "水宮神社",
+                  "page_hash": "d05d9917d8574cd054be2fc1c651a4e9b52c796f879761c12786f1f572d15239",
+                  "printed_address_block": "〒400-0226山梨県南アルプス市有野1298",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-21T12:40:46.376843+00:00",
+                    "page_hash": "fd8bcec9c6b48a992d59521c0f652de815def8d4ca13eb468285c3f958f10ecc",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "みずみやじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "運営説明と当該個別本文を照合し、必要な名称・読み・所在地の事実のみ記録。",
+                  "source_kind": "private_shrine_database",
+                  "title": "水宮神社 - 全国神社マップ",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/minamiarupusu-shi/5141"
+                },
+                {
+                  "address_raw": "南アルプス市有野1298",
+                  "checked_at": "2026-11-22T01:47:05.691358+00:00",
+                  "excerpt": "水宮神社の社叢(みずみやじんじゃのしゃそう) / 所在地／南アルプス市有野1298 / 所有者、管理者／水宮神社",
+                  "locator": "主見出しとデータ欄「所在地」「所有者、管理者」",
+                  "name_raw": "水宮神社の社叢",
+                  "page_hash": "389008011ddc4fe62d36a2865667eb6834dfbe7e94fbd48017062cb27221814b",
+                  "reading_raw": "みずみやじんじゃのしゃそう",
+                  "reading_scope": "related_object",
+                  "source_kind": "municipal_cultural_property",
+                  "title": "南アルプス市・水宮神社の社叢",
+                  "url": "https://www.city.minami-alps.yamanashi.jp/docs/mizumiya-jinjya-syaso.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/3",
           "name_raw": "水宮神社",
           "normalization": [
@@ -84883,11 +85602,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4fe4377f02dc2cffa03543866a9c18d89bdd023975cd0a39d92282844582c191",
-          "reading": "",
+          "reading": "みずみやじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/5/3",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/minamiarupusu-shi/5141",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -84927,6 +85646,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "みずみやじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "みずみやじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "水宮神社",
             "wikipedia_article_refs": [],
@@ -84957,7 +85690,7 @@
             "status": "pending",
             "surface": "水宮神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "水宮神社"
         },
         {
