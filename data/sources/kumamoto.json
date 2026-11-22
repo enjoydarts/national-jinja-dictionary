@@ -11443,12 +11443,59 @@
           "surface": "万江阿蘇神社"
         },
         {
-          "checked_at": "2026-11-08T14:33:15.277251+00:00",
+          "checked_at": "2026-11-22T09:00:26.389706+00:00",
           "evidence": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%b1%b1%e7%94%b0%e5%a4%a7%e7%8e%8b%e7%a5%9e%e7%a4%be/\"]: 名称=山田大王神社; 掲載読み=; 所在地=球磨郡山江村山田",
           "facility_id": "4aa4a29b-67e5-5a36-b25f-aa551d5eaf59",
           "fetched_at": "2026-11-08T14:33:15.277251+00:00",
           "id": "d1990d7a-d494-5682-8e1c-af87e1587935",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "やまだだいおうじんじゃ"
+              },
+              "expected_source_hash": "6ad06571900dd11e422b2e6e4a1f070b9020303056e7c8f629a40e1c56454ad3",
+              "facility_id": "4aa4a29b-67e5-5a36-b25f-aa551d5eaf59",
+              "identity_match": "神社庁の原IDにある正式名と居住地域「球磨郡山江村山田」は文化庁の神社名・対象全町域「熊本県球磨郡山江村大字山田」と一致（大字の明示差のみ）。協議会の建造物名・本文・住所も同じ神社に対応する。原居住地域は鎮座地として再定義せず、町域の補正も行わない。",
+              "original": {
+                "address": "球磨郡山江村山田",
+                "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/44/",
+                "name_raw": "山田大王神社",
+                "reading_raw": ""
+              },
+              "reason": "文化庁の建造物台帳が親神社名とその全文かなを棟名と分離して明記。人吉球磨観光地域づくり協議会も同じ親神社名・全文読みと山田甲1514の所在地を掲載。読み欄のみを補完する。",
+              "references": [
+                {
+                  "address_raw": "熊本県球磨郡山江村大字山田",
+                  "checked_at": "2026-11-22T09:00:26.389706+00:00",
+                  "excerpt": "名称 ： 山田大王神社\nふりがな ： やまだだいおうじんじゃ\n所在地 ： 熊本県球磨郡山江村大字山田",
+                  "locator": "各棟情報（拝殿及び神供所） 名称・ふりがな・所在地欄",
+                  "name_raw": "山田大王神社",
+                  "page_hash": "9abb2c7cb70afd6fc75267b0700e26d1022dff568a970fb99f58fc68f76e72d6",
+                  "reading_raw": "やまだだいおうじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "文字情報は出典明記による利用。第三者権利・画像の個別条件は別。名称・読み・所在地の事実のみ。",
+                  "source_kind": "government_cultural_property_inventory",
+                  "title": "文化庁 国指定文化財等データベース 山田大王神社",
+                  "url": "https://kunishitei.bunka.go.jp/bsys/maindetails/102/3589"
+                },
+                {
+                  "address_raw": "〒868-0092 熊本県球磨郡山江村山田甲1514",
+                  "checked_at": "2026-11-22T08:55:51.442574+00:00",
+                  "excerpt": "山田大王神社\nやまだだいおうじんじゃ\n住 所\n〒868-0092 熊本県球磨郡山江村山田甲1514",
+                  "locator": "記事冒頭の主対象名のrubyと詳細住所欄",
+                  "name_raw": "山田大王神社",
+                  "page_hash": "78812c4134a0c68f1113a3754c4348ca51d328c7aa8a9f236e6b6add83151c56",
+                  "reading_raw": "やまだだいおうじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "協議会表示を実確認。記事・画像の再配布許諾は未確認。事実名・読み・住所のみを記録。",
+                  "source_kind": "regional_tourism_council_cultural_property",
+                  "title": "人吉球磨観光地域づくり協議会 山田大王神社",
+                  "url": "https://hitoyoshikuma-bunkazai.com/detail/yamada-daio-shrine/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/44/",
           "name_raw": "山田大王神社",
           "normalization": [
@@ -11456,11 +11503,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "30d27f06730bae934fc68a3f8efbddc0b7b9a44684d7584ad576ba6c3c3713cb",
-          "reading": "",
+          "reading": "やまだだいおうじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/44/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kunishitei.bunka.go.jp/bsys/maindetails/102/3589",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -11635,6 +11682,20 @@
             "prefecture_code": "43",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "やまだだいおうじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "やまだだいおうじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "山田大王神社",
             "wikipedia_article_refs": [],
@@ -11665,7 +11726,7 @@
             "status": "pending",
             "surface": "山田大王神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "山田大王神社"
         },
         {
@@ -77971,12 +78032,125 @@
           "surface": "大江八幡宮"
         },
         {
-          "checked_at": "2026-11-08T14:35:19.657596+00:00",
+          "checked_at": "2026-11-22T08:57:08.976256+00:00",
           "evidence": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e9%83%bd%e5%91%82%e3%80%85%e7%a5%9e%e7%a4%be/\"]: 名称=都呂々神社; 掲載読み=; 所在地=天草郡苓北町都呂々",
           "facility_id": "2b722f66-f176-5aac-9d86-7bd2caa31d0b",
           "fetched_at": "2026-11-08T14:35:19.657596+00:00",
           "id": "c4739b00-45d8-5ac2-9f0e-31eb0481ffae",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "とろろじんじゃ"
+              },
+              "expected_source_hash": "3baa428ba148743614edd7e884b19664d1999d78ef4d19c3b24493c27ff55429",
+              "facility_id": "2b722f66-f176-5aac-9d86-7bd2caa31d0b",
+              "identity_match": {
+                "agency_address": "天草郡苓北町都呂々",
+                "agency_name": "都呂々神社",
+                "reference_address": "熊本県天草郡苓北町都呂々８８８番地",
+                "reference_name": "都呂々神社"
+              },
+              "original": {
+                "address": "天草郡苓北町都呂々",
+                "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/28/",
+                "name_raw": "都呂々神社",
+                "reading_raw": ""
+              },
+              "reason": "Gビズインフォの法人名の全文カナを採用。自治体提供の国土地理院避難場所原行と地域神社表の所在地の欄が社名・全地番888で一致し、熊本県立劇場の伝承芸能資料も同町域の同社を確認する。神社庁のお住まいの地域、法人ページの本店所在地、避難場所の所在地は別々の原欄として保存。",
+              "references": [
+                {
+                  "address_raw": "熊本県天草郡苓北町都呂々８８８番地",
+                  "address_role": "本店所在地（法人登記欄）",
+                  "attribution": "出典：Gビズインフォウェブサイト（https://info.gbiz.go.jp/hojin/ichiran?hojinBango=7330005007182、2026年11月22日利用）",
+                  "checked_at": "2026-11-22T08:57:08.976256+00:00",
+                  "corporate_number": "7330005007182",
+                  "data_origin_reference": {
+                    "checked_at": "2026-11-22T09:00:48.999612+00:00",
+                    "page_hash": "283e95621ab871fcd45b462dea5d65b0477da04b4f5756d53e3befd93635b257",
+                    "url": "https://help.info.gbiz.go.jp/hc/ja/articles/4795050523806-%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%87%BA%E5%85%B8%E5%85%83%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84"
+                  },
+                  "excerpt": "都呂々神社 / トロロジンジャ / 本店所在地 熊本県天草郡苓北町都呂々８８８番地",
+                  "locator": "基本情報のh1、p.furigana、法人番号、本店所在地。",
+                  "name_raw": "都呂々神社",
+                  "page_hash": "d4619f7b01693d6eaa209c4c6db4c81ff8757873c72921058ca64123861bc818",
+                  "processed_notice": "Gビズインフォ（経済産業省）の法人名とフリガナの公開表示を全国神社辞書で照合し、原カタカナから登録ひらがなを作成。",
+                  "publisher_displays_source": "法人番号公表サイト",
+                  "reading_raw": "トロロジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "national_government_business_ledger",
+                  "source_publisher": "経済産業省",
+                  "terms_reference": {
+                    "checked_at": "2026-11-22T09:00:51.160511+00:00",
+                    "page_hash": "1b18b643396fbd405793ce8fb53e3c9272fa91db4f5bf6cdecd6f33ca3b1e976",
+                    "url": "https://help.info.gbiz.go.jp/hc/ja/articles/4795140981406-%E5%88%A9%E7%94%A8%E8%A6%8F%E7%B4%84"
+                  },
+                  "title": "都呂々神社 | 7330005007182 | Gビズインフォ",
+                  "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=7330005007182"
+                },
+                {
+                  "address_raw": "苓北町都呂々",
+                  "address_role": "伝承地（公開場所は同名神社）",
+                  "checked_at": "2026-11-22T08:53:32.413628+00:00",
+                  "excerpt": "苓北町都呂々 / 都呂々神社",
+                  "locator": "本文p.1 表No.4「伝承地」「名称」「公開場所」。",
+                  "name_raw": "都呂々神社",
+                  "page_hash": "06ebcf43227c8ca860e2519315e4d330579ee7720d66ccae013bda71b2b67d37",
+                  "reading_raw": "",
+                  "reading_scope": "absent",
+                  "source_kind": "public_prefectural_arts_survey",
+                  "source_publisher": "熊本県立劇場",
+                  "title": "熊本県立劇場 伝承芸能調査事業 市町村別データーベース（天草郡）",
+                  "url": "https://www.kengeki.or.jp/kengeki/wp-content/uploads/2014/06/Amakusa_gun.pdf"
+                },
+                {
+                  "address_raw": "都呂々８８８",
+                  "address_role": "表の神社所在地欄（原町域文脈は苓北町）",
+                  "checked_at": "2026-11-22T08:52:11.596287+00:00",
+                  "excerpt": "都呂々神社 / 都呂々８８８",
+                  "locator": "本文p.4 表「神社名」「所在地」。前続行で苓北町。",
+                  "name_raw": "都呂々神社",
+                  "page_hash": "655b338a5305969e6362b70bd2a23ff581344a75f278ef09f011f80f59045b5d",
+                  "reading_raw": "",
+                  "reading_scope": "absent",
+                  "source_kind": "local_published_shrine_catalogue",
+                  "source_publisher": "天草地域公開神社・祭神表（発行者名未確認）",
+                  "title": "天草の神社・祭神",
+                  "url": "https://amakusa-web.jp/Sozai/Mg/FileAccess.aspx?angoFileKey=T%2FolMFcNZBkoIqOm6A1D18M9fvk2FJ1mAfpeINzTucs%3D&angoFolderKey=zoq2a6AqTlkM7AZFp9mKvg%3D%3D&aplUseNo=1384"
+                },
+                {
+                  "address_raw": "熊本県苓北町都呂々888",
+                  "attribution": "出典：国土地理院ウェブサイト",
+                  "checked_at": "2026-11-22T08:35:23.151070+00:00",
+                  "excerpt": "都呂々神社 / 熊本県苓北町都呂々888",
+                  "locator": "CSV 107782行・共通ID E4353100027201・施設・場所名欄と住所欄",
+                  "name_raw": "都呂々神社",
+                  "page_hash": "64b5c379c33c21b64525818d25a543001cc00df345182375d920aecfed379dff",
+                  "per_file_usage_notice": {
+                    "checked_at": "2026-11-22T08:35:18.770741+00:00",
+                    "page_hash": "eb7ab83ab8e60bdbb7a9df5c671172b0081d967257a30090bcb4dce4b313e597",
+                    "url": "https://hinanmap.gsi.go.jp/hinanjocp/assets/notice/%E3%81%94%E5%88%A9%E7%94%A8%E4%B8%8A%E3%81%AE%E6%B3%A8%E6%84%8F.txt"
+                  },
+                  "processed_notice": "国土地理院の公開ファイルの名称と所在地を全国神社辞書で照合し、集計を作成。",
+                  "public_terms": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+                  "raw_csv_row": {
+                    "address_raw": "熊本県苓北町都呂々888",
+                    "csv_row": 107782,
+                    "identifier": "E4353100027201",
+                    "municipality_field": "熊本県苓北町",
+                    "name_raw": "都呂々神社",
+                    "raw_agency_address": "天草郡苓北町都呂々"
+                  },
+                  "reading_raw": "",
+                  "reading_scope": "absent",
+                  "source_kind": "official_gsi_emergency_location",
+                  "source_publisher": "国土地理院",
+                  "title": "指定緊急避難場所・国土地理院CSV",
+                  "url": "https://hinanmap.gsi.go.jp/hinanjocp/defaultFtpData/csv/mergeFromCity_2.csv"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/28/",
           "name_raw": "都呂々神社",
           "normalization": [
@@ -77984,11 +78158,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4ec403111d197eafa75eb6fcfbb86f68b772a8d2010a533e061e270895dfd227",
-          "reading": "",
+          "reading": "とろろじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/28/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=7330005007182",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -78075,6 +78249,20 @@
             "prefecture_code": "43",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "とろろじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "とろろじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "都呂々神社",
             "wikipedia_article_refs": [],
@@ -78105,7 +78293,7 @@
             "status": "pending",
             "surface": "都呂々神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "都呂々神社"
         },
         {
