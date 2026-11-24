@@ -98735,12 +98735,100 @@
           "surface": "白上稲荷神社"
         },
         {
-          "checked_at": "2026-11-08T14:33:02.012953+00:00",
+          "checked_at": "2026-11-24T06:13:59.639642+00:00",
           "evidence": "新山神社 |  | 十和田市赤沼字下平",
           "facility_id": "0a63bb58-4510-5fd5-851a-c1877bdac490",
           "fetched_at": "2026-11-08T14:33:02.012953+00:00",
           "id": "8d2b6955-a710-51e4-827b-670fa34a9f8b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しんざんじんじゃ"
+              },
+              "expected_source_hash": "ea0f6b018c02dffd590b15b581b60c69156c3a2721d05d604d14aab3a37f5e0e",
+              "facility_id": "0a63bb58-4510-5fd5-851a-c1877bdac490",
+              "identity_match": {
+                "agency_address": "十和田市赤沼字下平",
+                "agency_name": "新山神社",
+                "reference_address": "青森県十和田市大字赤沼字下平２８３番地１",
+                "reference_name": "新山神社"
+              },
+              "original": {
+                "address": "十和田市赤沼字下平",
+                "listing_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1f.html",
+                "name_raw": "新山神社",
+                "reading_raw": ""
+              },
+              "reason": "神社庁の社名・市・町字全体が国税庁の最新法人詳細の社名と町字に一致する。十和田市の文化財個別票も赤沼字下平の同社を所有者として掲載し、本文で赤沼の新山神社として説明する。国税庁最新欄の社名フリガナを正規化し、神社庁の住所原文を保持する。",
+              "references": [
+                {
+                  "address_raw": "青森県十和田市大字赤沼字下平２８３番地１",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4420005005741）",
+                  "checked_at": "2026-11-24T06:13:59.639642+00:00",
+                  "corporate_number": "4420005005741",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "十和田市大字赤沼字下平",
+                      "address_scope": "文化財所在地",
+                      "checked_at": "2026-11-24T06:16:36.713654+00:00",
+                      "cultural_property_name_raw": "新山神社の記録及び修験道の古記録類",
+                      "excerpt": "十和田市大字赤沼字下平 ／ 新山神社 ／ 新山（しんざん）神社",
+                      "locator": "PDF 1頁、所在地・所有者・概要欄",
+                      "owner_raw": "新山神社",
+                      "page_hash": "3213a903d8a909628080cd53416b8b3f63cebb9470a0fe3657c2e4b96a75003f",
+                      "reading_context_raw": "新山（しんざん）神社",
+                      "reading_scope": "stem_only",
+                      "source_kind": "municipal_cultural_property_profile",
+                      "source_publisher": "十和田市",
+                      "title": "新山神社の記録及び修験道の古記録類",
+                      "url": "https://www.city.towada.lg.jp/bunka/bunka/files/14.pdf"
+                    }
+                  ],
+                  "excerpt": "新山神社 ／ シンザンジンジャ ／ 青森県十和田市大字赤沼字下平２８３番地１",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の法人番号／商号又は名称／商号又は名称（フリガナ）／本店又は主たる事務所の所在地／最終更新年月日",
+                  "name_raw": "新山神社",
+                  "page_hash": "bd568977fea5b8a3a0e2dab34001f252b65c2abfc73fe4043a700a4481eb34ef",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T06:15:36.689020+00:00",
+                    "conditions": "出典の記載と加工した旨の別記を求める。",
+                    "locator": "コンテンツの利用に係る公共データ利用規約（第1.0版）に関する重要情報",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "source_kind": "government_site_terms",
+                    "source_publisher": "国税庁",
+                    "title": "利用規約",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html"
+                  },
+                  "prior_official_csv_record": {
+                    "address_image": false,
+                    "agency_name": "新山神社",
+                    "csv_row": 17047,
+                    "file_id": "28348",
+                    "member": "02_aomori_all_20261030.csv",
+                    "name_image": false,
+                    "number": "4420005005741",
+                    "page_hash": "86f706e0d5d8df8a2409a6df1fd4c907a16822de0c241b17921a1cbafe4cd651",
+                    "reading": "しんざんじんじゃ",
+                    "registry_address": "青森県十和田市大字赤沼字下平２８３番地１",
+                    "registry_kana_raw": "シンザンジンジャ",
+                    "registry_name_raw": "新山神社",
+                    "snapshot": "20261030"
+                  },
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。掲載フリガナをひらがなに変換。",
+                  "reading_raw": "シンザンジンジャ",
+                  "reading_scope": "full_name",
+                  "registry_update_raw": "令和2年11月16日",
+                  "source_kind": "government_corporate_register",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html",
+                  "title": "国税庁法人番号公表サイト・新山神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4420005005741",
+                  "verification_method": "神社庁の同一社名・全町字と市の文化財個別記録の所在地・所有者を照合し、国税庁の同名最新法人の文字による全文かな・地番を確認。"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1f.html",
           "name_raw": "新山神社",
           "normalization": [
@@ -98748,11 +98836,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4f663c9195e335f6c8f1d7a0b63ce734689274f6375b94fb1c39069310afddda",
-          "reading": "",
+          "reading": "しんざんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1f.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4420005005741",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -98921,6 +99009,20 @@
             "prefecture_code": "02",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しんざんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しんざんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "新山神社",
             "wikipedia_article_refs": [],
@@ -98951,7 +99053,7 @@
             "status": "pending",
             "surface": "新山神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "新山神社"
         },
         {
@@ -141755,12 +141857,152 @@
           "surface": "蒼前神社"
         },
         {
-          "checked_at": "2026-11-08T14:33:07.453063+00:00",
+          "checked_at": "2026-11-24T06:14:01.900792+00:00",
           "evidence": "三嶽神社 |  | 三戸郡新郷村大字戸来字三嶽下",
           "facility_id": "10c17226-7c02-595e-81d4-c46ac4c3ec5b",
           "fetched_at": "2026-11-08T14:33:07.453063+00:00",
           "id": "f22d75ba-d48a-5f77-8677-32e064f0df04",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "みたけじんじゃ"
+              },
+              "expected_source_hash": "7309e975023ad35c6a0405be4a1e00cff7aaddf6b0d7212a87db82128060d650",
+              "facility_id": "10c17226-7c02-595e-81d4-c46ac4c3ec5b",
+              "identity_match": {
+                "listed_name": "三嶽神社",
+                "original_address": "三戸郡新郷村大字戸来字三嶽下",
+                "reference_address": "青森県新郷村三嶽下15",
+                "reference_name": "三嶽神社"
+              },
+              "original": {
+                "address": "三戸郡新郷村大字戸来字三嶽下",
+                "listing_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1h.html",
+                "name_raw": "三嶽神社",
+                "reading_raw": ""
+              },
+              "reason": "青森県観光の記事が戸来の地区注記と全文かなを表示し、本文の実リンク先の新郷村が戸来字三嶽下15を掲載する。国税庁も同じ戸来字三嶽下15番地に同名法人を掲載している。",
+              "references": [
+                {
+                  "address_observation": {
+                    "address_raw": "青森県三戸郡新郷村大字戸来字三嶽下15",
+                    "address_role": "municipal_published_enshrined_site",
+                    "checked_at": "2026-11-24T06:13:59.676637+00:00",
+                    "excerpt": "三嶽神社（戸来） ／ 青森県三戸郡新郷村大字戸来字三嶽下15",
+                    "locator": "本文主見出し・アクセス欄",
+                    "name_raw": "三嶽神社",
+                    "page_hash": "3caee310acdb3f1a0b925483fa036136a05bbb19df97e3490022d86bf0fbe374",
+                    "reading_raw": "",
+                    "source_kind": "official_municipal_tourism",
+                    "source_publisher": "新郷村",
+                    "title": "新郷村｜三嶽神社（戸来）",
+                    "url": "https://www.vill.shingo.aomori.jp/sight/sight_main/kankou/sight-mitake/"
+                  },
+                  "address_raw": "青森県三戸郡新郷村大字戸来字三嶽下15",
+                  "checked_at": "2026-11-24T06:14:01.900792+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "青森県三戸郡新郷村大字戸来字三嶽下１５番地",
+                      "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6420005003215）",
+                      "checked_at": "2026-11-24T06:15:38.836017+00:00",
+                      "corporate_number": "6420005003215",
+                      "excerpt": "三嶽神社 ／ 青森県三戸郡新郷村大字戸来字三嶽下１５番地",
+                      "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                      "locator": "最新情報の法人番号／商号又は名称／商号又は名称（フリガナ）／本店又は主たる事務所の所在地／最終更新年月日",
+                      "name_raw": "三嶽神社",
+                      "page_hash": "a59ec938060439ebc764e4f94c2b787d6983a16cf806b7cb65126a03204432e8",
+                      "policy_review": {
+                        "checked_at": "2026-11-24T06:15:36.689020+00:00",
+                        "conditions": "出典の記載と加工した旨の別記を求める。",
+                        "locator": "コンテンツの利用に係る公共データ利用規約（第1.0版）に関する重要情報",
+                        "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                        "source_kind": "government_site_terms",
+                        "source_publisher": "国税庁",
+                        "title": "利用規約",
+                        "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html"
+                      },
+                      "reading_raw": "",
+                      "reading_scope": "partial_or_absent",
+                      "registry_update_raw": "平成27年10月30日",
+                      "source_kind": "government_corporate_register",
+                      "source_publisher": "国税庁",
+                      "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html",
+                      "title": "国税庁法人番号公表サイト・三嶽神社",
+                      "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6420005003215"
+                    }
+                  ],
+                  "excerpt": "三嶽神社（戸来） ／ みたけじんじゃ（へらい） ／ 青森県新郷村三嶽下15 / 新郷村の所在地 青森県三戸郡新郷村大字戸来字三嶽下15",
+                  "joined_observation_reason": "青森県観光の記事が戸来の地区注記と全文かなを表示し、本文の実リンク先の新郷村が戸来字三嶽下15を掲載する。国税庁も同じ戸来字三嶽下15番地に同名法人を掲載している。",
+                  "linked_municipal_page": {
+                    "address_raw": "青森県三戸郡新郷村大字戸来字三嶽下15",
+                    "checked_at": "2026-11-24T06:13:59.676637+00:00",
+                    "excerpt": "三嶽神社（戸来） ／ 青森県三戸郡新郷村大字戸来字三嶽下15",
+                    "locator": "本文主見出し・アクセス欄",
+                    "name_raw": "三嶽神社（戸来）",
+                    "page_hash": "3caee310acdb3f1a0b925483fa036136a05bbb19df97e3490022d86bf0fbe374",
+                    "reading_raw": "",
+                    "source_kind": "official_municipal_tourism",
+                    "source_publisher": "新郷村",
+                    "title": "新郷村｜三嶽神社（戸来）",
+                    "url": "https://www.vill.shingo.aomori.jp/sight/sight_main/kankou/sight-mitake/"
+                  },
+                  "locality_annotation_raw": "戸来",
+                  "locator": "本文主見出し直下のかな・基本情報住所欄・ウェブサイト欄",
+                  "name_display_raw": "三嶽神社（戸来）",
+                  "name_raw": "三嶽神社",
+                  "page_hash": "12b5b05f84dc02c34bd62d451b5fd946fe7464ebe6cc2c83de1b845168060778",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T06:13:59.664782+00:00",
+                    "conditions": "著作権上認められる場合を除き無断複製・転用を禁止。施設名、所在地および掲載かなの最小事実だけを照合。",
+                    "locator": "冒頭・著作権の取扱について",
+                    "page_hash": "07b69414447252a5e887b0c997c50b562a379cfd760440cbc27d0970d0e65082",
+                    "source_kind": "official_prefecture_tourism_site_terms",
+                    "source_publisher": "青森県・公益社団法人青森県観光国際交流機構",
+                    "title": "サイトポリシー",
+                    "url": "https://aomori-tourism.com/terms/index.html"
+                  },
+                  "printed_address_raw": "青森県新郷村三嶽下15",
+                  "reading_display_raw": "みたけじんじゃ（へらい）",
+                  "reading_raw": "みたけじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "official_prefecture_tourism",
+                  "source_publisher": "青森県・公益社団法人青森県観光国際交流機構",
+                  "title": "三嶽神社（戸来）・青森県公式観光情報サイト",
+                  "url": "https://aomori-tourism.com/spot/detail_9787.html"
+                },
+                {
+                  "address_raw": "青森県三戸郡新郷村大字戸来字三嶽下１５番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6420005003215）",
+                  "checked_at": "2026-11-24T06:15:38.836017+00:00",
+                  "corporate_number": "6420005003215",
+                  "excerpt": "三嶽神社 ／ 青森県三戸郡新郷村大字戸来字三嶽下１５番地",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の法人番号／商号又は名称／商号又は名称（フリガナ）／本店又は主たる事務所の所在地／最終更新年月日",
+                  "name_raw": "三嶽神社",
+                  "page_hash": "a59ec938060439ebc764e4f94c2b787d6983a16cf806b7cb65126a03204432e8",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T06:15:36.689020+00:00",
+                    "conditions": "出典の記載と加工した旨の別記を求める。",
+                    "locator": "コンテンツの利用に係る公共データ利用規約（第1.0版）に関する重要情報",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "source_kind": "government_site_terms",
+                    "source_publisher": "国税庁",
+                    "title": "利用規約",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html"
+                  },
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "registry_update_raw": "平成27年10月30日",
+                  "source_kind": "government_corporate_register",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html",
+                  "title": "国税庁法人番号公表サイト・三嶽神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6420005003215"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1h.html",
           "name_raw": "三嶽神社",
           "normalization": [
@@ -141768,11 +142010,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "84da14da789ca24010d749661da27e7ab3fa85eea8a717264b12fdffceebcaac",
-          "reading": "",
+          "reading": "みたけじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1h.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://aomori-tourism.com/spot/detail_9787.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -141907,6 +142149,20 @@
             "prefecture_code": "02",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "みたけじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "みたけじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "三嶽神社",
             "wikipedia_article_refs": [],
@@ -141937,16 +142193,155 @@
             "status": "pending",
             "surface": "三嶽神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "三嶽神社"
         },
         {
-          "checked_at": "2026-11-08T14:33:07.453063+00:00",
+          "checked_at": "2026-11-24T06:14:04.149305+00:00",
           "evidence": "三嶽神社 |  | 三戸郡新郷村大字西越字林の前",
           "facility_id": "01663bb9-b890-51bc-958a-5cdee3c2cd5b",
           "fetched_at": "2026-11-08T14:33:07.453063+00:00",
           "id": "aecbbfb4-8722-5f67-90bf-210a8e3b5bfb",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "みたけじんじゃ"
+              },
+              "expected_source_hash": "c99ac8997b7104e78a50102b7bec7bd7418f88d3b07313cf6211bdd13f99c0fd",
+              "facility_id": "01663bb9-b890-51bc-958a-5cdee3c2cd5b",
+              "identity_match": {
+                "listed_name": "三嶽神社",
+                "original_address": "三戸郡新郷村大字西越字林の前",
+                "reference_address": "青森県新郷村西越林前62-2",
+                "reference_name": "三嶽神社"
+              },
+              "original": {
+                "address": "三戸郡新郷村大字西越字林の前",
+                "listing_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1h.html",
+                "name_raw": "三嶽神社",
+                "reading_raw": ""
+              },
+              "reason": "青森県観光と、同記事が案内する新郷村のページは西越の三嶽神社を掲載する。県観光と国税庁の西越の所在地が地番62-2まで対応し、法人の全文フリガナも一致。神社庁の「林の前」、県観光の「林前」、法人の「林ノ前」は資料ごとの原文を保持する。",
+              "references": [
+                {
+                  "address_observation": {
+                    "address_raw": "三戸郡新郷村大字西越字林の前",
+                    "checked_at": "2026-11-08T14:33:07.453063+00:00",
+                    "excerpt": "三嶽神社 / 三戸郡新郷村大字西越字林の前",
+                    "locator": "#list_11 tr[3]",
+                    "name_raw": "三嶽神社",
+                    "page_hash": "84da14da789ca24010d749661da27e7ab3fa85eea8a717264b12fdffceebcaac",
+                    "source_kind": "official_agency",
+                    "title": "青森県神社庁の掲載一覧",
+                    "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1h.html"
+                  },
+                  "address_raw": "三戸郡新郷村大字西越字林の前",
+                  "checked_at": "2026-11-24T06:14:04.149305+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "青森県三戸郡新郷村大字西越字林ノ前６２番地２号",
+                      "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1420005003211）",
+                      "checked_at": "2026-11-24T06:15:41.056584+00:00",
+                      "corporate_number": "1420005003211",
+                      "excerpt": "三嶽神社 ／ ミタケジンジャ ／ 青森県三戸郡新郷村大字西越字林ノ前６２番地２号",
+                      "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                      "locator": "最新情報の法人番号／商号又は名称／商号又は名称（フリガナ）／本店又は主たる事務所の所在地／最終更新年月日",
+                      "name_raw": "三嶽神社",
+                      "page_hash": "c6c9ba9e70effd359cac675e3463d332d355458fb8296dfc8321b9bf7ebfa9fa",
+                      "policy_review": {
+                        "checked_at": "2026-11-24T06:15:36.689020+00:00",
+                        "conditions": "出典の記載と加工した旨の別記を求める。",
+                        "locator": "コンテンツの利用に係る公共データ利用規約（第1.0版）に関する重要情報",
+                        "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                        "source_kind": "government_site_terms",
+                        "source_publisher": "国税庁",
+                        "title": "利用規約",
+                        "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html"
+                      },
+                      "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。掲載フリガナをひらがなに変換。",
+                      "reading_raw": "ミタケジンジャ",
+                      "reading_scope": "full_name",
+                      "registry_update_raw": "令和5年2月21日",
+                      "source_kind": "government_corporate_register",
+                      "source_publisher": "国税庁",
+                      "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html",
+                      "title": "国税庁法人番号公表サイト・三嶽神社",
+                      "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1420005003211"
+                    }
+                  ],
+                  "excerpt": "三嶽神社（西越） ／ みたけじんじゃ（さいごし） ／ 青森県新郷村西越林前62-2 / 神社庁の掲載地 三戸郡新郷村大字西越字林の前",
+                  "joined_observation_reason": "青森県観光と、同記事が案内する新郷村のページは西越の三嶽神社を掲載する。県観光と国税庁の西越の所在地が地番62-2まで対応し、法人の全文フリガナも一致。神社庁の「林の前」、県観光の「林前」、法人の「林ノ前」は資料ごとの原文を保持する。",
+                  "linked_municipal_page": {
+                    "address_raw": "青森県三戸郡新郷村西越",
+                    "checked_at": "2026-11-24T06:15:36.165633+00:00",
+                    "excerpt": "三嶽神社（西越） ／ 青森県三戸郡新郷村西越",
+                    "locator": "本文主見出し・アクセス欄",
+                    "name_raw": "三嶽神社（西越）",
+                    "page_hash": "e80681fb7a4f33cf0b73f879d62c502dc8c791c4d2e98fa91cbb19604800a64a",
+                    "reading_raw": "",
+                    "source_kind": "official_municipal_tourism",
+                    "source_publisher": "新郷村",
+                    "title": "新郷村｜三嶽神社（西越）",
+                    "url": "https://www.vill.shingo.aomori.jp/sight/sight_main/kankou/sight-saigosi/"
+                  },
+                  "locality_annotation_raw": "西越",
+                  "locator": "本文主見出し直下のかな・基本情報住所欄・ウェブサイト欄",
+                  "name_display_raw": "三嶽神社（西越）",
+                  "name_raw": "三嶽神社",
+                  "page_hash": "6970a8454545d94e1c1dcc01b5bce177fcb0440c52b33b6d51f4b56a3858ee7b",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T06:13:59.664782+00:00",
+                    "conditions": "著作権上認められる場合を除き無断複製・転用を禁止。施設名、所在地および掲載かなの最小事実だけを照合。",
+                    "locator": "冒頭・著作権の取扱について",
+                    "page_hash": "07b69414447252a5e887b0c997c50b562a379cfd760440cbc27d0970d0e65082",
+                    "source_kind": "official_prefecture_tourism_site_terms",
+                    "source_publisher": "青森県・公益社団法人青森県観光国際交流機構",
+                    "title": "サイトポリシー",
+                    "url": "https://aomori-tourism.com/terms/index.html"
+                  },
+                  "printed_address_raw": "青森県新郷村西越林前62-2",
+                  "reading_display_raw": "みたけじんじゃ（さいごし）",
+                  "reading_raw": "みたけじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "official_prefecture_tourism",
+                  "source_publisher": "青森県・公益社団法人青森県観光国際交流機構",
+                  "title": "三嶽神社（西越）・青森県公式観光情報サイト",
+                  "url": "https://aomori-tourism.com/spot/detail_9793.html"
+                },
+                {
+                  "address_raw": "青森県三戸郡新郷村大字西越字林ノ前６２番地２号",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1420005003211）",
+                  "checked_at": "2026-11-24T06:15:41.056584+00:00",
+                  "corporate_number": "1420005003211",
+                  "excerpt": "三嶽神社 ／ ミタケジンジャ ／ 青森県三戸郡新郷村大字西越字林ノ前６２番地２号",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の法人番号／商号又は名称／商号又は名称（フリガナ）／本店又は主たる事務所の所在地／最終更新年月日",
+                  "name_raw": "三嶽神社",
+                  "page_hash": "c6c9ba9e70effd359cac675e3463d332d355458fb8296dfc8321b9bf7ebfa9fa",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T06:15:36.689020+00:00",
+                    "conditions": "出典の記載と加工した旨の別記を求める。",
+                    "locator": "コンテンツの利用に係る公共データ利用規約（第1.0版）に関する重要情報",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "source_kind": "government_site_terms",
+                    "source_publisher": "国税庁",
+                    "title": "利用規約",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html"
+                  },
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。掲載フリガナをひらがなに変換。",
+                  "reading_raw": "ミタケジンジャ",
+                  "reading_scope": "full_name",
+                  "registry_update_raw": "令和5年2月21日",
+                  "source_kind": "government_corporate_register",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/index.html",
+                  "title": "国税庁法人番号公表サイト・三嶽神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1420005003211"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1h.html",
           "name_raw": "三嶽神社",
           "normalization": [
@@ -141954,11 +142349,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "84da14da789ca24010d749661da27e7ab3fa85eea8a717264b12fdffceebcaac",
-          "reading": "",
+          "reading": "みたけじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1h.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://aomori-tourism.com/spot/detail_9793.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -142040,6 +142435,20 @@
             "prefecture_code": "02",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "みたけじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "みたけじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "三嶽神社",
             "wikipedia_article_refs": [],
@@ -142070,7 +142479,7 @@
             "status": "pending",
             "surface": "三嶽神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "三嶽神社"
         }
       ],

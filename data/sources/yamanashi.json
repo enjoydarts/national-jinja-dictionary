@@ -118607,12 +118607,79 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:59.495007+00:00",
+          "checked_at": "2026-11-24T06:11:42.536840+00:00",
           "evidence": "7079 稲村神社 都留市小形山1565 南都留支部 詳細>>",
           "facility_id": "a6d52af1-8fdc-5ffb-a3a4-e2067bd36e96",
           "fetched_at": "2026-11-08T14:28:59.495007+00:00",
           "id": "0b2c4cee-7ba3-59e8-9f14-78cecc3a5ce0",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いなむらじんじゃ"
+              },
+              "expected_source_hash": "d1220017ce03ea7ba9768c8cd89e6fabb9d21b9e1907e4587fecca9190e906ee",
+              "facility_id": "a6d52af1-8fdc-5ffb-a3a4-e2067bd36e96",
+              "identity_match": {
+                "listed_name": "稲村神社",
+                "method": "same_name_full_listed_parcel",
+                "original_address": "都留市小形山1565",
+                "reference_address": "山梨県都留市小形山1565",
+                "reference_name": "稲村神社"
+              },
+              "original": {
+                "address": "都留市小形山1565",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/4",
+                "name_raw": "稲村神社",
+                "reading_raw": ""
+              },
+              "reason": "登山口ナビの表題は稲村神社の直後、「駐車場」の前に社名の全文かなを明示する。駐車場案内と神社庁詳細の鎮座地・都留市の文化財一覧はいずれも小形山1565。CSVの神楽名読みは採用根拠に用いない。",
+              "references": [
+                {
+                  "address_raw": "山梨県都留市小形山1565",
+                  "address_subject": "駐車場。神社自体の同一地番は神社庁の鎮座地欄と市の文化財一覧で照合。",
+                  "checked_at": "2026-11-24T06:11:42.536840+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "都留市小形山1565番地",
+                      "checked_at": "2026-11-24T06:09:26.545772+00:00",
+                      "locator": "稲村神社のエノキ行・施設名と所在地",
+                      "name_raw": "稲村神社",
+                      "page_hash": "0e9b843f600fced0e5553891f73f2a99fd34f53380a978cd0d0b183420ce6bf4",
+                      "title": "都留市・文化財について（市内文化財一覧）",
+                      "url": "https://www.city.tsuru.yamanashi.jp/soshiki/shougaigakushuu/bunkashinko_t/1710.html"
+                    }
+                  ],
+                  "excerpt": "稲村神社（いなむらじんじゃ）駐車場 / 山梨県都留市小形山1565",
+                  "locator": "h2の社名に直結する括弧全文かな。同紹介の住所欄は駐車場の情報。",
+                  "name_raw": "稲村神社",
+                  "page_hash": "da6dd6aeb7856d54b4c19a1eb7002ff2704114560d17e8eed6d65ac584413b18",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T06:12:32.353492+00:00",
+                    "page_hash": "e4e5c0ddcfdae1709447f9153784b3a6c837ca8853f83165beae122533c0f5ed",
+                    "url": "https://tozanguchinavi.com/privacy-policy"
+                  },
+                  "reading_raw": "いなむらじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_hiking_publication",
+                  "title": "登山口ナビ・稲村神社の駐車場情報",
+                  "url": "https://tozanguchinavi.com/trailhead/trailhead-24787"
+                },
+                {
+                  "address_raw": "都留市小形山1565",
+                  "checked_at": "2026-11-24T06:12:23.360517+00:00",
+                  "excerpt": "稲村神社 / 鎮座地：都留市小形山1565",
+                  "locator": "h1・鎮座地欄",
+                  "name_raw": "稲村神社",
+                  "page_hash": "33560f9abe78a80e1775d28f2b6bbca13433525155f1ed70fc887790b38a1d5a",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "title": "山梨県神社庁・稲村神社",
+                  "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/7079"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/4",
           "name_raw": "稲村神社",
           "normalization": [
@@ -118620,11 +118687,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "cd6ef3fe4001a9efcac90ce044b4f8bd78162a1cc2660cd39fe3210ed6d42125",
-          "reading": "",
+          "reading": "いなむらじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/4",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://tozanguchinavi.com/trailhead/trailhead-24787",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -118664,6 +118731,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いなむらじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いなむらじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "稲村神社",
             "wikipedia_article_refs": [],
@@ -118694,7 +118775,7 @@
             "status": "pending",
             "surface": "稲村神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "稲村神社"
         },
         {
