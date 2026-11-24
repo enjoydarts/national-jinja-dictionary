@@ -9,7 +9,10 @@ from njd.locations import _date, _hash, _plain, _raw_field, _SNAPSHOT_FIELDS, _u
 KIND = 'kumamoto_documented_shrine_site'
 _AGENCY = 'kumamotokenjinjacho.jp'
 _PREFECTURE_SITE = 'www.pref.kumamoto.jp'
-_TOWN_SITE = 'www.town.kumamoto-oguni.lg.jp'
+_TOWN_SITES = {
+    '阿蘇郡小国町': 'www.town.kumamoto-oguni.lg.jp',
+    '阿蘇郡高森町': 'www.town.kumamoto-takamori.lg.jp',
+}
 _REGISTER_URLS = {
     'https://www.houjin-bangou.nta.go.jp/download/zenken/index.html',
     'https://www.houjin-bangou.nta.go.jp/download/sabun/index.html',
@@ -60,9 +63,11 @@ def kumamoto_location_problems(supplement, facility):
 
     site = supplement.get('reference')
     site_host = _source_host(site, 'fetched_at')
-    if site_host not in (_PREFECTURE_SITE, _TOWN_SITE):
-        return ['Kumamoto location needs an inspected official physical shrine address']
     changes = supplement.get('changes')
+    municipality = changes.get('municipality') if isinstance(changes, dict) else None
+    town_site = _TOWN_SITES.get(municipality) if isinstance(municipality, str) else None
+    if not site_host or site_host not in (_PREFECTURE_SITE, town_site):
+        return ['Kumamoto location needs an inspected official physical shrine address']
     address, site_name, excerpt = (site.get(key) for key in ('address_raw', 'name_raw', 'excerpt'))
     if (site.get('location_role') != 'shrine' or site.get('source_kind') not in
             ('prefectural_shrine_tourism', 'municipal_shrine_tourism')
@@ -80,7 +85,6 @@ def kumamoto_location_problems(supplement, facility):
         return ['Kumamoto location requires an official registry row']
     fields = ref.get('source_fields')
     state = ref.get('registry_state_proof')
-    municipality = changes['municipality']
     county = re.fullmatch(r'([^0-9]+?郡)[^郡0-9]+[町村]', municipality)
     number = ref.get('corporate_number')
     if (not county or not isinstance(fields, dict) or not isinstance(state, dict)

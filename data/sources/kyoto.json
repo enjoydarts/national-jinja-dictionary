@@ -25201,12 +25201,78 @@
           "surface": "春日社"
         },
         {
-          "checked_at": "2026-11-09T08:51:06.615363+00:00",
+          "checked_at": "2026-11-24T03:27:17.336117+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「満足稲荷神社」、郵便番号「606-8345」、所在地「京都市左京区東大路仁天王門下ル東門前町527-1」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "0b41625f-709e-5ba7-9f7e-a8f77ae6b1b7",
           "fetched_at": "2026-11-09T08:51:06.615363+00:00",
           "id": "60c88a52-d0ea-5ccd-bc88-309a25a207df",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "まんぞくいなりじんじゃ"
+              },
+              "expected_source_hash": "5b177beeef347f8bb139e10dfff1a35560126d8bb385f9fc77f0dd988b95c90e",
+              "facility_id": "0b41625f-709e-5ba7-9f7e-a8f77ae6b1b7",
+              "identity_match": {
+                "agency_address": "京都市左京区東大路仁天王門下ル東門前町527-1",
+                "agency_name": "満足稲荷神社",
+                "reference_address": "京都市左京区東大路仁天王門下ル東門前町527-1",
+                "reference_name": "満足稲荷神社"
+              },
+              "original": {
+                "address": "京都市左京区東大路仁天王門下ル東門前町527-1",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/04.html",
+                "name_raw": "満足稲荷神社",
+                "reading_raw": ""
+              },
+              "reason": "現地写真を含む訪問記事に、神社庁と同じ通り名表記と地番、全文かなが掲載されている。社公式サイトでも全文かなと町名・地番を確認した。",
+              "references": [
+                {
+                  "address_raw": "京都市左京区東大路仁天王門下ル東門前町527-1",
+                  "checked_at": "2026-11-24T03:27:17.336117+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "京都市左京区東大路仁王門下ル東門前町527-1",
+                      "checked_at": "2026-11-24T03:27:20.756640+00:00",
+                      "locator": "「御社号」とフッターの住所。通り名の字面が異なるため補足のみ。",
+                      "name_raw": "満足稲荷神社",
+                      "page_hash": "c51e83effd6cb703b7d7de8695e644a30b9f3e25e3d09119153ec36859d1ccca",
+                      "reading_raw": "まんぞくいなりじんじゃ",
+                      "redistribution_status": "minimal_facts_only",
+                      "source_kind": "official_shrine",
+                      "title": "満足稲荷神社 公式サイト",
+                      "url": "https://www.manzokuinari.com/"
+                    }
+                  ],
+                  "excerpt": "満足稲荷神社 ／ まんぞくいなりじんじゃ ／ 京都市左京区東大路仁天王門下ル東門前町527-1",
+                  "locator": "現地訪問記事の見出しと本文冒頭の括弧内の全文かなおよび地番。",
+                  "name_raw": "満足稲荷神社",
+                  "page_hash": "0efd59b5fcbcb615663ccb25a05e03131a94003fa3c53c122e431d70d423218b",
+                  "policy_review": [
+                    {
+                      "checked_at": "2026-11-24T03:27:16.784048+00:00",
+                      "locator": "Seesaa利用規約「各サービスの知的財産権」",
+                      "page_hash": "7a7b9bc358d5faf0a8e5441320b46d843b81466d22d9bd7d4905dde558a7f032",
+                      "url": "https://kiyaku.seesaa.net/category/547790.html"
+                    },
+                    {
+                      "checked_at": "2026-11-24T03:27:18.888720+00:00",
+                      "locator": "Seesaaブログサービス利用規約「禁止事項」",
+                      "page_hash": "40c108f5cd9d5f89f0947639ffa68e3a9233758c4c71366623b9b013a8b3e35d",
+                      "url": "https://kiyaku.seesaa.net/category/548013.html"
+                    }
+                  ],
+                  "reading_raw": "まんぞくいなりじんじゃ",
+                  "reading_scope": "full_name",
+                  "redistribution_status": "minimal_facts_only",
+                  "source_kind": "independent_visitor_article",
+                  "title": "満足稲荷神社｜”ＰｅＲｏ”の気ままなブログ",
+                  "url": "https://09692037.seesaa.net/article/201702article_5.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/04.html",
           "name_raw": "満足稲荷神社",
           "normalization": [
@@ -25214,11 +25280,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "36615418e75a87537dc09e3622f56c79cbf4dad76618cce1c50948450f59ea04",
-          "reading": "",
+          "reading": "まんぞくいなりじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/04.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://09692037.seesaa.net/article/201702article_5.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -25334,6 +25400,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "まんぞくいなりじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "まんぞくいなりじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "満足稲荷神社",
             "wikipedia_article_refs": [
@@ -25373,7 +25453,7 @@
             "status": "pending",
             "surface": "満足稲荷神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "満足稲荷神社"
         },
         {
@@ -33547,12 +33627,57 @@
           "surface": "田中神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:16.840297+00:00",
+          "checked_at": "2026-11-24T03:27:14.785245+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「三栖神社」、郵便番号「612-8243」、所在地「京都市伏見区横大路下三栖城ノ前町83」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "21f6798a-fb0a-59aa-875e-688c2abcd2c0",
           "fetched_at": "2026-11-09T08:51:16.840297+00:00",
           "id": "cb4aec00-a658-53aa-b10d-82dfefb68a96",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "みすじんじゃ"
+              },
+              "expected_source_hash": "9831ed9236bd7cd008ed2475515f9f17a78c79a647567a15fdfac4b93adcd12f",
+              "facility_id": "21f6798a-fb0a-59aa-875e-688c2abcd2c0",
+              "identity_match": {
+                "agency_address": "京都市伏見区横大路下三栖城ノ前町83",
+                "agency_name": "三栖神社",
+                "reference_address": "京都市伏見区横大路下三栖城ノ前町８３番地",
+                "reference_name": "三栖神社"
+              },
+              "original": {
+                "address": "京都市伏見区横大路下三栖城ノ前町83",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/09.html",
+                "name_raw": "三栖神社",
+                "reading_raw": ""
+              },
+              "reason": "社の案内本文で本宮の社名・全文かな・全所在地を確認し、御旅所とは記載の分かれた本宮所在地を照合した。",
+              "references": [
+                {
+                  "address_raw": "京都市伏見区横大路下三栖城ノ前町８３番地",
+                  "checked_at": "2026-11-24T03:27:14.785245+00:00",
+                  "excerpt": "三栖神社 ／ みすじんじゃ ／ 京都市伏見区横大路下三栖城ノ前町８３番地",
+                  "locator": "「三栖神社のご案内」個別本文の本宮の社名・括弧内の全文かなと所在地。",
+                  "name_raw": "三栖神社",
+                  "page_hash": "3b82813c193996154c52125c6a061f703b7cec9ffbe6f6903e85f68a98418267",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T03:28:53.946320+00:00",
+                    "locator": "Ameba利用規約「知的財産権」及び「禁止事項」",
+                    "page_hash": "0c00346add94a2d8ad83f1864a9c7d8cf4278f62879f599046796dc373122a81",
+                    "url": "https://helps.ameba.jp/rules/post_104.html"
+                  },
+                  "reading_raw": "みすじんじゃ",
+                  "reading_scope": "full_name",
+                  "redistribution_status": "minimal_facts_only",
+                  "site_authority_status": "self_identified_shrine_publication",
+                  "source_kind": "official_shrine",
+                  "title": "三栖神社のご案内｜三栖神社（公式）",
+                  "url": "https://ameblo.jp/misu-jinja/entry-12222973985.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/09.html",
           "name_raw": "三栖神社",
           "normalization": [
@@ -33560,11 +33685,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "71579a9e10fc54f270c9bb8b7037fff9e70f36340116ad3e0e5281d045cfd976",
-          "reading": "",
+          "reading": "みすじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/09.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ameblo.jp/misu-jinja/entry-12222973985.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -33677,6 +33802,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "みすじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "みすじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "三栖神社",
             "wikipedia_article_refs": [],
@@ -33707,7 +33846,7 @@
             "status": "pending",
             "surface": "三栖神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "三栖神社"
         },
         {
@@ -48001,12 +48140,80 @@
           "surface": "八幡宮社"
         },
         {
-          "checked_at": "2026-11-09T08:51:22.982199+00:00",
+          "checked_at": "2026-11-24T03:35:53.404288+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「須波岐部神社」、郵便番号「623-0362」、所在地「綾部市物部町横縁48」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "bdc8e90f-dfd9-5346-9265-cf3d0a8474c2",
           "fetched_at": "2026-11-09T08:51:22.982199+00:00",
           "id": "cf8c9ee1-3f7f-5384-b40e-f72a026b7214",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわぎべじんじゃ"
+              },
+              "expected_source_hash": "18f49820a14e2dacad7afff44d033ca52f9048a9b4eed4384452b7722291202f",
+              "facility_id": "bdc8e90f-dfd9-5346-9265-cf3d0a8474c2",
+              "identity_match": {
+                "agency_address": "綾部市物部町横縁48",
+                "agency_name": "須波岐部神社",
+                "reference_address": "京都府綾部市物部町横縁４８",
+                "reference_name": "須波岐部神社"
+              },
+              "original": {
+                "address": "綾部市物部町横縁48",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
+                "name_raw": "須波岐部神社",
+                "reading_raw": ""
+              },
+              "reason": "神社庁と同じ所在地字面の訪問記では主表記が「すわぎべじんじゃ」。同一地区・同地番の別の現地訪問記も同じ全文かなを明記する。角括弧内の別読は原文として保持する。",
+              "references": [
+                {
+                  "address_raw": "京都府綾部市物部町横縁４８",
+                  "checked_at": "2026-11-24T03:35:53.404288+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "京都府綾部市物部町横椽48",
+                      "checked_at": "2026-11-24T03:33:52.753789+00:00",
+                      "excerpt": "須波岐部神社 ／ すわぎべじんじゃ ／ 京都府綾部市物部町横椽48",
+                      "locator": "現地訪問記事の主本文冒頭。かなは単記。小字の漢字が異なるため、主出典の住所で同定。",
+                      "name_raw": "須波岐部神社",
+                      "page_hash": "640b9d538ee21300f0950bf3f7997ab5f54d65875af08261a7fb3ed733802232",
+                      "policy_review": {
+                        "checked_at": "2026-11-24T03:28:53.946320+00:00",
+                        "locator": "Ameba利用規約「知的財産権」及び「禁止事項」",
+                        "page_hash": "0c00346add94a2d8ad83f1864a9c7d8cf4278f62879f599046796dc373122a81",
+                        "url": "https://helps.ameba.jp/rules/post_104.html"
+                      },
+                      "reading_raw": "すわぎべじんじゃ",
+                      "reading_scope": "full_name",
+                      "redistribution_status": "minimal_facts_only",
+                      "source_kind": "independent_visitor_article",
+                      "title": "須波岐部神社｜かむなからのみち ～天地悠久～",
+                      "url": "https://ameblo.jp/keith4862/entry-12511553271.html"
+                    }
+                  ],
+                  "excerpt": "須波岐部神社 ／ すわぎべじんじゃ ／ 京都府綾部市物部町横縁４８",
+                  "locator": "現地訪問記本文、括弧内で角括弧付きの別読より前に表記された全文かなと直後の所在地。",
+                  "name_raw": "須波岐部神社",
+                  "page_body_has_verbatim_distinct_fields": true,
+                  "page_hash": "f20ee181c3271443ba6afbd5f4e1016ada1f6a6ef0c1816175d1c64140a64c9c",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T03:28:53.946320+00:00",
+                    "locator": "Ameba利用規約「知的財産権」及び「禁止事項」",
+                    "page_hash": "0c00346add94a2d8ad83f1864a9c7d8cf4278f62879f599046796dc373122a81",
+                    "url": "https://helps.ameba.jp/rules/post_104.html"
+                  },
+                  "reading_expression_raw": "（すわぎべじんじゃ＜すはきべじんじゃ＞）",
+                  "reading_raw": "すわぎべじんじゃ",
+                  "reading_scope": "full_name",
+                  "redistribution_status": "minimal_facts_only",
+                  "source_kind": "independent_visitor_article",
+                  "title": "須波岐部神社｜宇宙意識と未来農業に向かって",
+                  "url": "https://ameblo.jp/mariko1112-2/entry-12827658461.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
           "name_raw": "須波岐部神社",
           "normalization": [
@@ -48014,11 +48221,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "dccb7e249f77ae9ff4320190bfb774671a1623602e76101a96745534afbdb9ff",
-          "reading": "",
+          "reading": "すわぎべじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/12.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ameblo.jp/mariko1112-2/entry-12827658461.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -48051,6 +48258,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわぎべじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわぎべじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "須波岐部神社",
             "wikipedia_article_refs": [],
@@ -48081,7 +48302,7 @@
             "status": "pending",
             "surface": "須波岐部神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "須波岐部神社"
         },
         {
@@ -78768,12 +78989,56 @@
           "surface": "三玉神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:33.364187+00:00",
+          "checked_at": "2026-11-24T03:33:08.150453+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「伊豆志彌神社」、郵便番号「629-3573」、所在地「京丹後市久美浜町出角宮ノ谷718」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "246e6ed2-044a-57f8-94b9-4f8efc7bf357",
           "fetched_at": "2026-11-09T08:51:33.364187+00:00",
           "id": "a7a08b6a-3b38-592d-a382-4aaf6be9c825",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いずしやじんじゃ"
+              },
+              "expected_source_hash": "0b7c491d3fba6235fd1695a1cf4bc26a67bc774d6234a98b8a29b88deee46ea6",
+              "facility_id": "246e6ed2-044a-57f8-94b9-4f8efc7bf357",
+              "identity_match": {
+                "agency_address": "京丹後市久美浜町出角宮ノ谷718",
+                "agency_name": "伊豆志彌神社",
+                "reference_address": "京都府京丹後市久美浜町出角宮ノ谷718",
+                "reference_name": "伊豆志彌神社"
+              },
+              "original": {
+                "address": "京丹後市久美浜町出角宮ノ谷718",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/16.html",
+                "name_raw": "伊豆志彌神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記の主本文冒頭にある社名・全文かな・久美浜町出角宮ノ谷718を照合した。",
+              "references": [
+                {
+                  "address_raw": "京都府京丹後市久美浜町出角宮ノ谷718",
+                  "checked_at": "2026-11-24T03:33:08.150453+00:00",
+                  "excerpt": "伊豆志彌神社 ／ いずしやじんじゃ ／ 京都府京丹後市久美浜町出角宮ノ谷718",
+                  "locator": "現地訪問記事の主本文冒頭。社名の直後の括弧内全文かなと現在地。",
+                  "name_raw": "伊豆志彌神社",
+                  "page_hash": "96a083ef886a309236d7310689185dd77945d770a3c09cc85f12c939bf03708b",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T03:28:53.946320+00:00",
+                    "locator": "Ameba利用規約「知的財産権」及び「禁止事項」",
+                    "page_hash": "0c00346add94a2d8ad83f1864a9c7d8cf4278f62879f599046796dc373122a81",
+                    "url": "https://helps.ameba.jp/rules/post_104.html"
+                  },
+                  "reading_raw": "いずしやじんじゃ",
+                  "reading_scope": "full_name",
+                  "redistribution_status": "minimal_facts_only",
+                  "source_kind": "independent_visitor_article",
+                  "title": "伊豆志彌神社｜かむなからのみち ～天地悠久～",
+                  "url": "https://ameblo.jp/keith4862/entry-12495211173.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/16.html",
           "name_raw": "伊豆志彌神社",
           "normalization": [
@@ -78781,11 +79046,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "3a0d63803a412906fd43e1fd349c70cb2410528ef020e998a457ccd04ed602b7",
-          "reading": "",
+          "reading": "いずしやじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/16.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ameblo.jp/keith4862/entry-12495211173.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -78818,6 +79083,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いずしやじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いずしやじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "伊豆志彌神社",
             "wikipedia_article_refs": [],
@@ -78848,7 +79127,7 @@
             "status": "pending",
             "surface": "伊豆志彌神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "伊豆志彌神社"
         },
         {
@@ -187569,7 +187848,7 @@
           "surface": "高神社"
         },
         {
-          "checked_at": "2026-11-24T02:00:28.396072+00:00",
+          "checked_at": "2026-11-24T03:22:29.291755+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「大宮神社」、郵便番号「610-0252」、所在地「綴喜郡宇治田原町大字荒木小字天皇38」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "c3ddb86d-65b1-57bd-9720-b8bd8ba0096c",
           "fetched_at": "2026-11-09T08:51:58.009709+00:00",
@@ -187584,7 +187863,7 @@
               "identity_match": {
                 "agency_address": "綴喜郡宇治田原町大字荒木小字天皇38",
                 "agency_name": "大宮神社",
-                "reference_address": "京都府綴喜郡宇治田原町大字荒木小字天皇38",
+                "reference_address": "宇治田原町大字荒木小字天皇３８",
                 "reference_name": "大宮神社"
               },
               "original": {
@@ -187593,21 +187872,29 @@
                 "name_raw": "大宮神社",
                 "reading_raw": ""
               },
-              "reason": "京都府観光連盟の施設記事に、田原祭の三社のうち荒木の大宮神社と明記される。社名・全文かな・地番まで照合した。",
+              "reason": "宇治田原町産業観光課の個別本文で社名・全文かな・大字小字と地番を確認した。",
               "references": [
                 {
-                  "address_raw": "京都府綴喜郡宇治田原町大字荒木小字天皇38",
-                  "checked_at": "2026-11-24T02:00:28.396072+00:00",
-                  "excerpt": "大宮神社 ／ おおみやじんじゃ ／ 京都府綴喜郡宇治田原町大字荒木小字天皇38",
-                  "locator": "個別スポット本文の主見出しのruby／rt要素、「住所」欄。",
+                  "address_raw": "宇治田原町大字荒木小字天皇３８",
+                  "checked_at": "2026-11-24T03:22:29.291755+00:00",
+                  "excerpt": "大宮神社（おおみやじんじゃ） ／ 宇治田原町大字荒木小字天皇３８",
+                  "locator": "個別本文h2の社名・全かな、および「アクセス」内「住所」の値。",
                   "name_raw": "大宮神社",
-                  "page_hash": "1448e046334705e95cfc6a549eba50659ef9d12484788ec78a48d533b5955d76",
+                  "page_hash": "606d38b3235fc315bee7551924e1ec0820896f8a647c7ef89910d7a603a10c34",
+                  "publisher_review": {
+                    "checked_at": "2026-11-24T03:22:27.007451+00:00",
+                    "locator": "このサイトについての「運営管理部署」",
+                    "page_hash": "39c9a6e7b51da432b82b83059407f3fb43b4cf3104ce158bf3a6db374b1dc936",
+                    "publisher": "宇治田原町 産業観光課",
+                    "url": "https://ujitawara-kyoto.com/jis/"
+                  },
                   "reading_raw": "おおみやじんじゃ",
                   "reading_scope": "full_name",
                   "redistribution_status": "minimal_facts_only",
-                  "source_kind": "tourism_association",
-                  "title": "大宮神社｜京都府観光連盟公式サイト",
-                  "url": "https://www.kyoto-kankou.or.jp/info_search/8138"
+                  "site_authority_status": "municipal_site",
+                  "source_kind": "municipal_tourism",
+                  "title": "大宮神社（おおみやじんじゃ）｜宇治田原町 観光情報サイト",
+                  "url": "https://ujitawara-kyoto.com/sightseeing/shrinestemples/%E5%A4%A7%E5%AE%AE%E7%A5%9E%E7%A4%BE%EF%BC%88%E3%81%8A%E3%81%8A%E3%81%BF%E3%82%84%E3%81%98%E3%82%93%E3%81%98%E3%82%83%EF%BC%89/"
                 }
               ],
               "status": "verified"
@@ -187623,7 +187910,7 @@
           "reading": "おおみやじんじゃ",
           "reading_raw": "",
           "reading_source_kind": "reference",
-          "reading_url": "https://www.kyoto-kankou.or.jp/info_search/8138",
+          "reading_url": "https://ujitawara-kyoto.com/sightseeing/shrinestemples/%E5%A4%A7%E5%AE%AE%E7%A5%9E%E7%A4%BE%EF%BC%88%E3%81%8A%E3%81%8A%E3%81%BF%E3%82%84%E3%81%98%E3%82%93%E3%81%98%E3%82%83%EF%BC%89/",
           "reason": "",
           "research": {
             "additional_source_reviews": [
@@ -187749,12 +188036,72 @@
           "surface": "大宮神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:58.009709+00:00",
+          "checked_at": "2026-11-24T03:31:08.744636+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「雙栗天神社」、郵便番号「610-0261」、所在地「綴喜郡宇治田原町大字岩山小字上田13」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "89c8fbb9-5f4c-562a-a2e2-953b8f38614e",
           "fetched_at": "2026-11-09T08:51:58.009709+00:00",
           "id": "eac569db-2d65-543c-ae41-148dd03a967c",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "さぐりてんじんじゃ"
+              },
+              "expected_source_hash": "315b56e970efa4a0549672904432f4de26ca1bbbce62888fef54ae42acb9b50b",
+              "facility_id": "89c8fbb9-5f4c-562a-a2e2-953b8f38614e",
+              "identity_match": {
+                "agency_address": "綴喜郡宇治田原町大字岩山小字上田13",
+                "agency_name": "雙栗天神社",
+                "reference_address": "京都府宇治田原町大字岩山小字上田13",
+                "reference_name": "雙栗天神社"
+              },
+              "original": {
+                "address": "綴喜郡宇治田原町大字岩山小字上田13",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/30.html",
+                "name_raw": "雙栗天神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記の本文で社名・全文かな・大字小字付きの所在と地番を確認し、町公式の同地番と全文かなでも照合した。",
+              "references": [
+                {
+                  "address_raw": "京都府宇治田原町大字岩山小字上田13",
+                  "checked_at": "2026-11-24T03:31:08.744636+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "宇治田原町岩山上田13",
+                      "checked_at": "2026-11-24T03:28:56.669161+00:00",
+                      "excerpt": "雙栗天神社 ／ さぐりてんじんじゃ ／ 宇治田原町岩山上田13",
+                      "locator": "個別本文h2の社名と全文かな及びアクセス欄の住所。",
+                      "name_raw": "雙栗天神社",
+                      "page_hash": "b25340b1f021b0868ffe7f5025a71b66ea737a8f672b69343d912a810ba0b7e7",
+                      "reading_raw": "さぐりてんじんじゃ",
+                      "reading_scope": "full_name",
+                      "redistribution_status": "minimal_facts_only",
+                      "source_kind": "municipal_tourism",
+                      "title": "雙栗天神社｜宇治田原町 観光情報サイト",
+                      "url": "https://ujitawara-kyoto.com/sightseeing/shrinestemples/%e9%9b%99%e6%a0%97%e5%a4%a9%e7%a5%9e%e7%a4%be%ef%bc%88%e3%81%95%e3%81%90%e3%82%8a%e3%81%a6%e3%82%93%e3%81%98%e3%82%93%e3%81%98%e3%82%83%ef%bc%89/"
+                    }
+                  ],
+                  "excerpt": "雙栗天神社 ／ さぐりてんじんじゃ ／ 京都府宇治田原町大字岩山小字上田13",
+                  "locator": "現地訪問記事の本文冒頭。社名の直後の括弧内全文かなと現在地。",
+                  "name_raw": "雙栗天神社",
+                  "page_hash": "bfa606c7064facad0d0ddadf458d4ab3567c3696968165936e44842c012d94c6",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T03:28:53.946320+00:00",
+                    "locator": "Ameba利用規約「知的財産権」及び「禁止事項」",
+                    "page_hash": "0c00346add94a2d8ad83f1864a9c7d8cf4278f62879f599046796dc373122a81",
+                    "url": "https://helps.ameba.jp/rules/post_104.html"
+                  },
+                  "reading_raw": "さぐりてんじんじゃ",
+                  "reading_scope": "full_name",
+                  "redistribution_status": "minimal_facts_only",
+                  "source_kind": "independent_visitor_article",
+                  "title": "雙栗天神社｜かむなからのみち ～天地悠久～",
+                  "url": "https://ameblo.jp/keith4862/entry-12898573358.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/30.html",
           "name_raw": "雙栗天神社",
           "normalization": [
@@ -187762,11 +188109,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "750b1ada15d32935f516e3b182eff258b92a5ba2ed2aa871d3a4dbae47bb155f",
-          "reading": "",
+          "reading": "さぐりてんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/30.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ameblo.jp/keith4862/entry-12898573358.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -187803,6 +188150,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "さぐりてんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "さぐりてんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "雙栗天神社",
             "wikipedia_article_refs": [],
@@ -187833,7 +188194,7 @@
             "status": "pending",
             "surface": "雙栗天神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "雙栗天神社"
         },
         {
@@ -188707,7 +189068,7 @@
           "surface": "熊倉神社"
         },
         {
-          "checked_at": "2026-11-24T02:00:25.825599+00:00",
+          "checked_at": "2026-11-09T08:51:58.009709+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「大道神社」、郵便番号「610-0231」、所在地「綴喜郡宇治田原町大字立川小字宮ノ前39」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "2c9466e8-8227-5a61-a8a6-2e94ced16171",
           "fetched_at": "2026-11-09T08:51:58.009709+00:00",
@@ -188731,40 +189092,9 @@
                 "name_raw": "大道神社",
                 "reading_raw": ""
               },
-              "reason": "京都府観光連盟の施設記事にある全所在地を神社庁原欄と照合し、町の観光情報本文の全文かなとも一致した。",
-              "references": [
-                {
-                  "address_raw": "京都府綴喜郡宇治田原町大字立川小字宮ノ前39",
-                  "checked_at": "2026-11-24T02:00:25.825599+00:00",
-                  "corroborating_evidence": [
-                    {
-                      "address_raw": "宇治田原町大字立川小字宮ノ前",
-                      "checked_at": "2026-11-24T02:00:26.290826+00:00",
-                      "excerpt": "大道神社 ／ おおみちじんじゃ ／ 宇治田原町大字立川小字宮ノ前",
-                      "locator": "本文見出しの社名・全文かな、「住所」欄の町字。",
-                      "name_raw": "大道神社",
-                      "page_hash": "2a228236698119b5f6b64ebcdc1bc73724f31b4f85663a203d91080d84b7cde1",
-                      "reading_raw": "おおみちじんじゃ",
-                      "reading_scope": "full_name",
-                      "redistribution_status": "minimal_facts_only",
-                      "source_kind": "local_tourism",
-                      "title": "大道神社｜宇治田原町観光情報サイト",
-                      "url": "https://ujitawara-kyoto.com/sightseeing/shrinestemples/%E5%A4%A7%E9%81%93%E7%A5%9E%E7%A4%BE%EF%BC%88%E3%81%8A%E3%81%8A%E3%81%BF%E3%81%A1%E3%81%98%E3%82%93%E3%81%98%E3%82%83%EF%BC%89/"
-                    }
-                  ],
-                  "excerpt": "大道神社 ／ おおみちじんじゃ ／ 京都府綴喜郡宇治田原町大字立川小字宮ノ前39",
-                  "locator": "個別スポット本文の主見出しのruby／rt要素、「住所」欄。",
-                  "name_raw": "大道神社",
-                  "page_hash": "63e76a1bb7be5ee3b52b869c84db791e7eb9f161c78ddc0f807d9c44e7831940",
-                  "reading_raw": "おおみちじんじゃ",
-                  "reading_scope": "full_name",
-                  "redistribution_status": "minimal_facts_only",
-                  "source_kind": "tourism_association",
-                  "title": "大道神社｜京都府観光連盟公式サイト",
-                  "url": "https://www.kyoto-kankou.or.jp/info_search/8648"
-                }
-              ],
-              "status": "verified"
+              "reason": "以前の主出典の利用条件を再確認したため採用を停止。町公式の全文かなと別資料にある地番39は、現行の照合で主出典として結び付けられないため保留。",
+              "references": [],
+              "status": "needs_review"
             }
           },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/30.html",
@@ -188774,11 +189104,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "750b1ada15d32935f516e3b182eff258b92a5ba2ed2aa871d3a4dbae47bb155f",
-          "reading": "おおみちじんじゃ",
+          "reading": "",
           "reading_raw": "",
-          "reading_source_kind": "reference",
-          "reading_url": "https://www.kyoto-kankou.or.jp/info_search/8648",
-          "reason": "",
+          "reading_source_kind": "agency",
+          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/30.html",
+          "reason": "correction is not verified; 以前の主出典の利用条件を再確認したため採用を停止。町公式の全文かなと別資料にある地番39は、現行の照合で主出典として結び付けられないため保留。",
           "research": {
             "additional_source_reviews": [
               {
@@ -188816,10 +189146,10 @@
             "reading_raw": "",
             "reason": "missing agency reading",
             "resolution": {
-              "previous_status": "pending",
-              "reading": "おおみちじんじゃ",
-              "reason": "",
-              "status": "verified"
+              "previous_status": "verified",
+              "reading": "",
+              "reason": "correction is not verified; 以前の主出典の利用条件を再確認したため採用を停止。町公式の全文かなと別資料にある地番39は、現行の照合で主出典として結び付けられないため保留。",
+              "status": "pending"
             },
             "resolution_history": [
               {
@@ -188827,6 +189157,12 @@
                 "reading": "おおみちじんじゃ",
                 "reason": "",
                 "status": "verified"
+              },
+              {
+                "previous_status": "verified",
+                "reading": "",
+                "reason": "correction is not verified; 以前の主出典の利用条件を再確認したため採用を停止。町公式の全文かなと別資料にある地番39は、現行の照合で主出典として結び付けられないため保留。",
+                "status": "pending"
               }
             ],
             "status": "unfinished",
@@ -188859,7 +189195,7 @@
             "status": "pending",
             "surface": "大道神社"
           },
-          "status": "verified",
+          "status": "pending",
           "surface": "大道神社"
         },
         {
@@ -204940,12 +205276,62 @@
           "surface": "小虫神社"
         },
         {
-          "checked_at": "2026-11-09T08:52:02.394232+00:00",
+          "checked_at": "2026-11-24T03:34:24.356468+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「大虫神社」、郵便番号「629-2413」、所在地「与謝郡与謝野町温江1821」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "95ecbf59-c01b-5948-bdd8-2e258148d7fc",
           "fetched_at": "2026-11-09T08:52:02.394232+00:00",
           "id": "cf5faadd-c0a4-58dd-831b-8853a5ae0139",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おおむしじんじゃ"
+              },
+              "expected_source_hash": "07ec007684abb52c612c11ee3e23cd09a95bb03723ece1c663e66e3b2285c0be",
+              "facility_id": "95ecbf59-c01b-5948-bdd8-2e258148d7fc",
+              "identity_match": {
+                "agency_address": "与謝郡与謝野町温江1821",
+                "agency_name": "大虫神社",
+                "reference_address": "京都府与謝郡与謝野町温江1821",
+                "reference_name": "大虫神社"
+              },
+              "original": {
+                "address": "与謝郡与謝野町温江1821",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/32.html",
+                "name_raw": "大虫神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記の対象社名、明示全文かな、与謝野町温江1821を照合した。",
+              "references": [
+                {
+                  "address_raw": "京都府与謝郡与謝野町温江1821",
+                  "checked_at": "2026-11-24T03:34:24.356468+00:00",
+                  "excerpt": "大虫神社 ／ おおむしじんじゃ ／ 京都府与謝郡与謝野町温江1821",
+                  "locator": "個別訪問記の「比定社：大虫神社」内の所在地と「アプローチ＆ロケーション」冒頭の「と読む」。",
+                  "name_raw": "大虫神社",
+                  "page_body_has_verbatim_distinct_fields": true,
+                  "page_hash": "442ceda9fbab7a1a039e6ea12569bf909335ee804b739a332b2698bc1318c269",
+                  "policy_review": {
+                    "checked_at": "2026-11-24T03:34:32.979671+00:00",
+                    "locator": "「ご注意」の定義済みデータベース3形式の利用条件。個別訪問記の本文だけを照合。",
+                    "page_hash": "1df75ca3ee273895f12a32afbfb80d4c516162e61357ad7d53ddf547c7c23b27",
+                    "url": "https://shikinaisya.net/?p=201"
+                  },
+                  "publisher_review": {
+                    "checked_at": "2026-11-24T03:34:26.938438+00:00",
+                    "page_hash": "26e736211d3383956577a635f9c320654f9674a632171096ad2792b081bdd6c9",
+                    "url": "https://shikinaisya.net/?p=191"
+                  },
+                  "reading_raw": "おおむしじんじゃ",
+                  "reading_scope": "full_name",
+                  "redistribution_status": "minimal_facts_only",
+                  "source_kind": "independent_visitor_article",
+                  "title": "大虫神社（与謝野町温江）｜神社好き式内社を訪ねる",
+                  "url": "https://shikinaisya.net/?p=5264"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/32.html",
           "name_raw": "大虫神社",
           "normalization": [
@@ -204953,11 +205339,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6614f2a040c168b4d965659f13950224566423f33842a5da56be1aa9cdd06cdc",
-          "reading": "",
+          "reading": "おおむしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/32.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shikinaisya.net/?p=5264",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -205036,6 +205422,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おおむしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おおむしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "大虫神社",
             "wikipedia_article_refs": [
@@ -205075,7 +205475,7 @@
             "status": "pending",
             "surface": "大虫神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "大虫神社"
         },
         {

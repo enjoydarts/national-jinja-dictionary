@@ -202614,12 +202614,73 @@
           "surface": "上多良神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:14.663420+00:00",
+          "checked_at": "2026-11-24T03:27:13.765779+00:00",
           "evidence": "〔米原〕 朝妻神社 〒5210001 米原市朝妻筑摩",
           "facility_id": "fb885038-e712-5b8d-a95c-18e02613d1cf",
           "fetched_at": "2026-11-08T14:31:14.663420+00:00",
           "id": "abe084d9-59f9-5af7-b2d7-61c556c636e3",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "あさづまじんじゃ"
+              },
+              "expected_source_hash": "64d142e01b65dea1e406fa867f2d7c52e7e1e139b0076a87dcecbaf472811f32",
+              "facility_id": "fb885038-e712-5b8d-a95c-18e02613d1cf",
+              "identity_match": {
+                "agency_address": "米原市朝妻筑摩",
+                "agency_name": "朝妻神社",
+                "reference_address": "滋賀県米原市朝妻筑摩1293",
+                "reference_name": "朝妻神社"
+              },
+              "original": {
+                "address": "米原市朝妻筑摩",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
+                "name_raw": "朝妻神社",
+                "reading_raw": ""
+              },
+              "reason": "長浜米原観光協会の施設紹介本文に社名と全文かなが明示されている。社名と全地番を神社庁の個別詳細と照合し、同詳細に記された部分かなは全文かなの語幹に一致する。",
+              "references": [
+                {
+                  "address_raw": "滋賀県米原市朝妻筑摩1293",
+                  "checked_at": "2026-11-24T03:27:13.765779+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "滋賀県米原市朝妻筑摩1293",
+                      "agency_code": "1016",
+                      "checked_at": "2026-11-10T03:42:42.017557+00:00",
+                      "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                      "name_raw": "朝妻神社",
+                      "page_hash": "a44eac850b3a70073798bc719b5d9fa1021fedbc7347c4b69bd1271c9a670ea2",
+                      "reading_raw": "アサヅマ",
+                      "reading_scope": "partial_or_absent",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1016"
+                    }
+                  ],
+                  "excerpt": "朝妻神社 / あさづまじんじゃ / 所在地 滋賀県米原市朝妻筑摩1293",
+                  "index_reference": {
+                    "checked_at": "2026-11-24T03:25:40.489212+00:00",
+                    "page_hash": "5dc4c8748c19269add66a525a2843dae7a6ad81a0839294b97b611bdeb7806ef",
+                    "url": "https://kitabiwako.jp/spot/page/15?slug=shrine-temple"
+                  },
+                  "locator": "施設の主見出し内の名称とかな欄、基本情報の所在地欄",
+                  "name_raw": "朝妻神社",
+                  "page_hash": "7ec1c5db190a99c790ec8dbf206985d55c7434a1306c0d213f7b2f6b7c0894a3",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T03:23:51.536436+00:00",
+                    "page_hash": "19b97d1562eb64e1464ac401ea9593c6862e59900f934e46f01f73a7589b57d2",
+                    "url": "https://kitabiwako.jp/linkbanner"
+                  },
+                  "reading_raw": "あさづまじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association",
+                  "source_publisher": "公益社団法人長浜米原観光協会",
+                  "title": "朝妻神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+                  "url": "https://kitabiwako.jp/spot/spot_284?slug=shrine-temple"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
           "name_raw": "朝妻神社",
           "normalization": [
@@ -202627,11 +202688,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "15fec88056a5f4217c3330367bc6cfead68318d38b3b280bb8f8c7f0d4038818",
-          "reading": "",
+          "reading": "あさづまじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kitabiwako.jp/spot/spot_284?slug=shrine-temple",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -202753,6 +202814,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "あさづまじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "あさづまじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "朝妻神社",
             "wikipedia_article_refs": [],
@@ -202783,7 +202858,7 @@
             "status": "pending",
             "surface": "朝妻神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "朝妻神社"
         },
         {
@@ -203025,12 +203100,73 @@
           "surface": "筑摩神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:14.663420+00:00",
+          "checked_at": "2026-11-24T03:27:10.250739+00:00",
           "evidence": "〔米原〕 礒崎神社 〒5210004 米原市磯",
           "facility_id": "1dad9b04-6cf6-5105-81d3-8e0dd5b23467",
           "fetched_at": "2026-11-08T14:31:14.663420+00:00",
           "id": "b7e9a958-631f-5232-a7a1-318ac5533513",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いそざきじんじゃ"
+              },
+              "expected_source_hash": "d2e37d04f71b3f34b49e7e42b4849e3109c4a11638b244479363b90c15df0c4e",
+              "facility_id": "1dad9b04-6cf6-5105-81d3-8e0dd5b23467",
+              "identity_match": {
+                "agency_address": "米原市磯",
+                "agency_name": "礒崎神社",
+                "reference_address": "滋賀県米原市磯2484",
+                "reference_name": "礒崎神社"
+              },
+              "original": {
+                "address": "米原市磯",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
+                "name_raw": "礒崎神社",
+                "reading_raw": ""
+              },
+              "reason": "長浜米原観光協会の施設紹介本文に社名と全文かなが明示されている。社名と全地番を神社庁の個別詳細と照合し、同詳細に記された部分かなは全文かなの語幹に一致する。",
+              "references": [
+                {
+                  "address_raw": "滋賀県米原市磯2484",
+                  "checked_at": "2026-11-24T03:27:10.250739+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "滋賀県米原市磯2484",
+                      "agency_code": "1019",
+                      "checked_at": "2026-11-10T03:44:55.263767+00:00",
+                      "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                      "name_raw": "礒崎神社",
+                      "page_hash": "4a67e596c58f8cb1bc46893fa18d3870738030a79c33fa99a8f1ea969e7cfae5",
+                      "reading_raw": "イソザキ",
+                      "reading_scope": "partial_or_absent",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1019"
+                    }
+                  ],
+                  "excerpt": "礒崎神社 / いそざきじんじゃ / 所在地 滋賀県米原市磯2484",
+                  "index_reference": {
+                    "checked_at": "2026-11-24T03:25:40.489212+00:00",
+                    "page_hash": "5dc4c8748c19269add66a525a2843dae7a6ad81a0839294b97b611bdeb7806ef",
+                    "url": "https://kitabiwako.jp/spot/page/15?slug=shrine-temple"
+                  },
+                  "locator": "施設の主見出し内の名称とかな欄、基本情報の所在地欄",
+                  "name_raw": "礒崎神社",
+                  "page_hash": "39cbba6f95e324336cc40b25759a915e6ddcfd2bedc8ce249c1d328c7858d9d1",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T03:23:51.536436+00:00",
+                    "page_hash": "19b97d1562eb64e1464ac401ea9593c6862e59900f934e46f01f73a7589b57d2",
+                    "url": "https://kitabiwako.jp/linkbanner"
+                  },
+                  "reading_raw": "いそざきじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association",
+                  "source_publisher": "公益社団法人長浜米原観光協会",
+                  "title": "礒崎神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+                  "url": "https://kitabiwako.jp/spot/spot_279?slug=shrine-temple"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
           "name_raw": "礒崎神社",
           "normalization": [
@@ -203038,11 +203174,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "15fec88056a5f4217c3330367bc6cfead68318d38b3b280bb8f8c7f0d4038818",
-          "reading": "",
+          "reading": "いそざきじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kitabiwako.jp/spot/spot_279?slug=shrine-temple",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -203164,6 +203300,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いそざきじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いそざきじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "礒崎神社",
             "wikipedia_article_refs": [],
@@ -203194,7 +203344,7 @@
             "status": "pending",
             "surface": "礒崎神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "礒崎神社"
         },
         {
@@ -206034,12 +206184,73 @@
           "surface": "八坂神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:14.663420+00:00",
+          "checked_at": "2026-11-24T03:27:17.262193+00:00",
           "evidence": "〔米原〕 蛭子神社 〒5210064 米原市世継",
           "facility_id": "d853c791-de2d-51e2-a9ad-a602a27df3c8",
           "fetched_at": "2026-11-08T14:31:14.663420+00:00",
           "id": "82ffb06f-aa0a-51ac-ae28-10aa4932830a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ひるこじんじゃ"
+              },
+              "expected_source_hash": "04cd37433e3d69098bd860cc83570d9aa2b41168f9c01ba1b45bb1207fc7dd95",
+              "facility_id": "d853c791-de2d-51e2-a9ad-a602a27df3c8",
+              "identity_match": {
+                "agency_address": "米原市世継",
+                "agency_name": "蛭子神社",
+                "reference_address": "滋賀県米原市世継842",
+                "reference_name": "蛭子神社"
+              },
+              "original": {
+                "address": "米原市世継",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
+                "name_raw": "蛭子神社",
+                "reading_raw": ""
+              },
+              "reason": "長浜米原観光協会の施設紹介本文に社名と全文かなが明示されている。社名と全地番を神社庁の個別詳細と照合し、同詳細に記された部分かなは全文かなの語幹に一致する。",
+              "references": [
+                {
+                  "address_raw": "滋賀県米原市世継842",
+                  "checked_at": "2026-11-24T03:27:17.262193+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "滋賀県米原市世継842",
+                      "agency_code": "1036",
+                      "checked_at": "2026-11-10T03:35:21.948010+00:00",
+                      "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                      "name_raw": "蛭子神社",
+                      "page_hash": "713e14b6b1b2d28290f4cb1064a53a9d1369ddc8931af60cf7dc3dc138cd5211",
+                      "reading_raw": "ヒルコ",
+                      "reading_scope": "partial_or_absent",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1036"
+                    }
+                  ],
+                  "excerpt": "蛭子神社 / ひるこじんじゃ / 所在地 滋賀県米原市世継842",
+                  "index_reference": {
+                    "checked_at": "2026-11-24T03:25:40.489212+00:00",
+                    "page_hash": "5dc4c8748c19269add66a525a2843dae7a6ad81a0839294b97b611bdeb7806ef",
+                    "url": "https://kitabiwako.jp/spot/page/15?slug=shrine-temple"
+                  },
+                  "locator": "施設の主見出し内の名称とかな欄、基本情報の所在地欄",
+                  "name_raw": "蛭子神社",
+                  "page_hash": "3b26a2dbcabc61607923455cb8fa22f236bba9a0040d55f1f687f31a928eb597",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T03:23:51.536436+00:00",
+                    "page_hash": "19b97d1562eb64e1464ac401ea9593c6862e59900f934e46f01f73a7589b57d2",
+                    "url": "https://kitabiwako.jp/linkbanner"
+                  },
+                  "reading_raw": "ひるこじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association",
+                  "source_publisher": "公益社団法人長浜米原観光協会",
+                  "title": "蛭子神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+                  "url": "https://kitabiwako.jp/spot/spot_286?slug=shrine-temple"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
           "name_raw": "蛭子神社",
           "normalization": [
@@ -206047,11 +206258,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "15fec88056a5f4217c3330367bc6cfead68318d38b3b280bb8f8c7f0d4038818",
-          "reading": "",
+          "reading": "ひるこじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=11",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kitabiwako.jp/spot/spot_286?slug=shrine-temple",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -206173,6 +206384,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ひるこじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ひるこじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "蛭子神社",
             "wikipedia_article_refs": [],
@@ -206203,7 +206428,7 @@
             "status": "pending",
             "surface": "蛭子神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "蛭子神社"
         },
         {
@@ -220127,12 +220352,73 @@
           "surface": "大日孁貴神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:17.441381+00:00",
+          "checked_at": "2026-11-24T03:27:38.964190+00:00",
           "evidence": "〔東浅井〕 大井神社 〒5290113 長浜市大井町",
           "facility_id": "dab121a5-b3b3-5333-9eb0-9c537d5ecbf0",
           "fetched_at": "2026-11-08T14:31:17.441381+00:00",
           "id": "b5edfc91-2dfa-562b-b6e4-a14ce1134979",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おおいじんじゃ"
+              },
+              "expected_source_hash": "942939b55df41bfdccd6b71502ceb8b9e46388f49a0a92ff90c505e13e2ad8f6",
+              "facility_id": "dab121a5-b3b3-5333-9eb0-9c537d5ecbf0",
+              "identity_match": {
+                "agency_address": "長浜市大井町",
+                "agency_name": "大井神社",
+                "reference_address": "長浜市大井町1187",
+                "reference_name": "大井神社"
+              },
+              "original": {
+                "address": "長浜市大井町",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+                "name_raw": "大井神社",
+                "reading_raw": ""
+              },
+              "reason": "長浜米原観光協会の施設紹介本文に社名と全文かなが明示されている。社名と全地番を神社庁の個別詳細と照合し、同詳細に記された部分かなは全文かなの語幹に一致する。",
+              "references": [
+                {
+                  "address_raw": "長浜市大井町1187",
+                  "checked_at": "2026-11-24T03:27:38.964190+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "滋賀県長浜市大井町1187",
+                      "agency_code": "1118",
+                      "checked_at": "2026-11-10T03:44:26.920770+00:00",
+                      "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                      "name_raw": "大井神社",
+                      "page_hash": "2b4cd25a8443383cd1de8407f9e80e96aa87fca4b187c040fc1c389b31fd5103",
+                      "reading_raw": "オオイ",
+                      "reading_scope": "partial_or_absent",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1118"
+                    }
+                  ],
+                  "excerpt": "大井神社 / おおいじんじゃ / 所在地 長浜市大井町1187",
+                  "index_reference": {
+                    "checked_at": "2026-11-24T03:25:14.768265+00:00",
+                    "page_hash": "3d094f499dd0b2f022e9f5bd07645c8b991cc0b1693dc4bcc65b065e576e7132",
+                    "url": "https://kitabiwako.jp/spot/page/8?slug=shrine-temple"
+                  },
+                  "locator": "施設の主見出し内の名称とかな欄、基本情報の所在地欄",
+                  "name_raw": "大井神社",
+                  "page_hash": "8657100eec773c87b15cb5783ae7d4adccc2a4c94f7cca31dc5521c2b6aae6a3",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T03:23:51.536436+00:00",
+                    "page_hash": "19b97d1562eb64e1464ac401ea9593c6862e59900f934e46f01f73a7589b57d2",
+                    "url": "https://kitabiwako.jp/linkbanner"
+                  },
+                  "reading_raw": "おおいじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association",
+                  "source_publisher": "公益社団法人長浜米原観光協会",
+                  "title": "大井神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+                  "url": "https://kitabiwako.jp/spot/spot_7205?slug=shrine-temple"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
           "name_raw": "大井神社",
           "normalization": [
@@ -220140,11 +220426,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-          "reading": "",
+          "reading": "おおいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kitabiwako.jp/spot/spot_7205?slug=shrine-temple",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -220266,6 +220552,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おおいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おおいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "大井神社",
             "wikipedia_article_refs": [],
@@ -220296,7 +220596,7 @@
             "status": "pending",
             "surface": "大井神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "大井神社"
         },
         {
@@ -222312,12 +222612,73 @@
           "surface": "大将軍神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:17.441381+00:00",
+          "checked_at": "2026-11-24T03:27:35.308149+00:00",
           "evidence": "〔東浅井〕 大羽神社 〒5290122 長浜市酢",
           "facility_id": "c9a41450-1e95-5b66-8764-2f87f7b118aa",
           "fetched_at": "2026-11-08T14:31:17.441381+00:00",
           "id": "0c148b9f-8f57-58eb-84d1-171f7cf40c33",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おおはじんじゃ"
+              },
+              "expected_source_hash": "fa4c073dd357fe72ec250434b2cec630d330b1ae77fca25736134365b49d44de",
+              "facility_id": "c9a41450-1e95-5b66-8764-2f87f7b118aa",
+              "identity_match": {
+                "agency_address": "長浜市酢",
+                "agency_name": "大羽神社",
+                "reference_address": "長浜市酢110",
+                "reference_name": "大羽神社"
+              },
+              "original": {
+                "address": "長浜市酢",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+                "name_raw": "大羽神社",
+                "reading_raw": ""
+              },
+              "reason": "長浜米原観光協会の施設紹介本文に社名と全文かなが明示されている。社名と全地番を神社庁の個別詳細と照合し、同詳細に記された部分かなは全文かなの語幹に一致する。",
+              "references": [
+                {
+                  "address_raw": "長浜市酢110",
+                  "checked_at": "2026-11-24T03:27:35.308149+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "滋賀県長浜市酢110",
+                      "agency_code": "1128",
+                      "checked_at": "2026-11-10T03:17:25.299356+00:00",
+                      "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                      "name_raw": "大羽神社",
+                      "page_hash": "fd3bc7d39e0b23a6c9e9ce3c8c246b0cc88f3e7980c17187419ddf1680f30c76",
+                      "reading_raw": "オオハ",
+                      "reading_scope": "partial_or_absent",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1128"
+                    }
+                  ],
+                  "excerpt": "大羽神社 / おおはじんじゃ / 所在地 長浜市酢110",
+                  "index_reference": {
+                    "checked_at": "2026-11-24T03:25:14.768265+00:00",
+                    "page_hash": "3d094f499dd0b2f022e9f5bd07645c8b991cc0b1693dc4bcc65b065e576e7132",
+                    "url": "https://kitabiwako.jp/spot/page/8?slug=shrine-temple"
+                  },
+                  "locator": "施設の主見出し内の名称とかな欄、基本情報の所在地欄",
+                  "name_raw": "大羽神社",
+                  "page_hash": "8e06e233bf8f5e5ddd719e6f89d7bfd446ac984445bcf0dbc982dc53b11d1303",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T03:23:51.536436+00:00",
+                    "page_hash": "19b97d1562eb64e1464ac401ea9593c6862e59900f934e46f01f73a7589b57d2",
+                    "url": "https://kitabiwako.jp/linkbanner"
+                  },
+                  "reading_raw": "おおはじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association",
+                  "source_publisher": "公益社団法人長浜米原観光協会",
+                  "title": "大羽神社 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+                  "url": "https://kitabiwako.jp/spot/spot_7201?slug=shrine-temple"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
           "name_raw": "大羽神社",
           "normalization": [
@@ -222325,11 +222686,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-          "reading": "",
+          "reading": "おおはじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kitabiwako.jp/spot/spot_7201?slug=shrine-temple",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -222451,6 +222812,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おおはじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おおはじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "大羽神社",
             "wikipedia_article_refs": [],
@@ -222481,7 +222856,7 @@
             "status": "pending",
             "surface": "大羽神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "大羽神社"
         },
         {
