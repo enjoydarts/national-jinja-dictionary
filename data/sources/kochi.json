@@ -43924,12 +43924,71 @@
           "surface": "天満宮"
         },
         {
-          "checked_at": "2026-11-09T02:00:45.670316+00:00",
+          "checked_at": "2026-11-24T04:22:00.609247+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/e69e280c-6ab8-4ecd-b7c9-48da70533f73: 名称=月山神社; 掲載読み=; 所在地=高知県幡多郡大月町才角1444番地",
           "facility_id": "5c242bd3-2ad4-5677-a291-fecc162f7fa5",
           "fetched_at": "2026-11-09T02:00:45.670316+00:00",
           "id": "3a53ef51-c782-5093-8b8f-ad837c8b6e21",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "つきやまじんじゃ"
+              },
+              "expected_source_hash": "bb9f4f4d1647e2ea33b8bbf31863091842ea1c7d23a0cf1218aaab8628dd7b17",
+              "facility_id": "5c242bd3-2ad4-5677-a291-fecc162f7fa5",
+              "identity_match": {
+                "listed_name": "月山神社",
+                "method": "same_name_full_listed_parcel",
+                "original_address": "高知県幡多郡大月町才角1444番地",
+                "reference_address": "高知県幡多郡大月町才角1444番",
+                "reference_name": "月山神社"
+              },
+              "original": {
+                "address": "高知県幡多郡大月町才角1444番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=8",
+                "name_raw": "月山神社",
+                "reading_raw": ""
+              },
+              "reason": "地域遍路誌の同じ記事に全文かなと才角1444番が載り、高知県神社庁の全地番に対応する。",
+              "references": [
+                {
+                  "address_raw": "高知県幡多郡大月町才角1444番",
+                  "checked_at": "2026-11-24T04:22:00.609247+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "checked_at": "2026-11-24T04:22:25.766502+00:00",
+                      "locator": "主見出し",
+                      "page_hash": "7d9cf9398119f5d7aca8caf8250053141a3d8cba9f7927b7efbb9bbb5c079c70",
+                      "romanization_raw": "Tsukiyama Shrine",
+                      "title": "大月町観光サイト・月山神社",
+                      "url": "https://www.town.otsuki.kochi.jp/kanko/info/tsukiyama.php"
+                    }
+                  ],
+                  "excerpt": "月山神社(つきやまじんじゃ) / 「月山神社」住所：高知県幡多郡大月町才角1444番",
+                  "locator": "記事本文「月山神社」の紹介段落の括弧かな、同記事末尾「月山神社」住所欄",
+                  "name_raw": "月山神社",
+                  "page_hash": "97f481ade83239227b157aba57bb7375b4701168a5c6e39508759224d8be4b0c",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T04:21:59.133299+00:00",
+                    "page_hash": "288d8855ee42b66e754c92fe9f14ce243aa25ca65af2c764b7a5ebdb7e7432eb",
+                    "url": "https://pilgrim-shikoku.net/privacypolicy"
+                  },
+                  "publisher": "株式会社四国遍路",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-24T04:23:01.311031+00:00",
+                    "page_hash": "a3050432f0eeb30ca72a8c97ad2c16c8da4b276e07b5e0a2f6945343fd1652b9",
+                    "url": "https://pilgrim-shikoku.net/company"
+                  },
+                  "reading_raw": "つきやまじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_pilgrimage_publication",
+                  "title": "四国遍路情報サイト・大月へんろみち",
+                  "url": "https://pilgrim-shikoku.net/tsukiyamashrine-otsuki-coast-pilgrimway"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=8",
           "name_raw": "月山神社",
           "normalization": [
@@ -43937,11 +43996,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "240aa7d312fc05597eac711b4157c1304a803c0743fefb827f2eb167a00db27e",
-          "reading": "",
+          "reading": "つきやまじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=8",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://pilgrim-shikoku.net/tsukiyamashrine-otsuki-coast-pilgrimway",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -43978,6 +44037,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "つきやまじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "つきやまじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "月山神社",
             "wikipedia_article_refs": [
@@ -44017,7 +44090,7 @@
             "status": "pending",
             "surface": "月山神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "月山神社"
         },
         {

@@ -9,6 +9,9 @@ from njd.municipalities import municipal_comparison_address
 from njd.locations import raw_address, _redirect_authority, _reference_in_scope, _hash, _date, _plain
 from njd.corporate_aza import PROOF_KIND as REGISTERED_TOWN_PROOF, registered_town_matches
 
+_UJITAWARA_KOAZA_PROOF = 'ujitawara_documented_koaza_marker'
+_UJITAWARA_WITNESS_HOSTS = {'ujitawara-kyoto.com', 'www.town.ujitawara.kyoto.jp', 'www.kyoto-be.ne.jp'}
+
 
 def _url(value):
     if not isinstance(value,str):return False
@@ -120,6 +123,50 @@ def _nagano_booklet_address(ref,facility,entry):
     return printed[1]+numeric
 
 
+def _ujitawara_koaza_matches(ref, facility, entry, changes):
+    """Compare documented marker omission without changing the printed address."""
+    proof = ref['address_identity_proof']
+    witness = proof.get('municipality_witness')
+    acquired = facility.get('address')
+    digest = entry.get('source_hash')
+    if (set(changes) != {'reading'} or entry.get('status') == 'excluded'
+            or facility.get('source_key') != 'kyoto' or facility.get('prefecture_code') != '26'
+            or facility.get('municipality') != '綴喜郡宇治田原町'
+            or ref.get('name_raw') != facility.get('listed_name')
+            or ref.get('reading_scope') != 'full_name'
+            or not _hash(digest) or facility.get('source_hash') != digest
+            or proof.get('expected_source_hash') != digest or proof.get('agency_address_raw') != acquired
+            or not _hash(ref.get('page_hash')) or proof.get('reference_page_hash') != ref['page_hash']
+            or not isinstance(witness, dict) or witness.get('name_raw') != ref['name_raw']
+            or not _hash(witness.get('page_hash')) or witness['page_hash'] == ref['page_hash']
+            or not _date(witness.get('checked_at')) or not _url(witness.get('url'))
+            or witness['url'] == ref.get('url')
+            or not _plain(witness.get('locator')) or not _plain(witness.get('excerpt'))):
+        return False
+    authority = urlsplit(witness['url'])
+    if authority.scheme != 'https' or authority.netloc not in _UJITAWARA_WITNESS_HOSTS:
+        return False
+    source_address, witness_address = ref.get('address_raw'), witness.get('address_raw')
+    if (not all(_plain(s) for s in (acquired, source_address, witness_address))
+            or witness_address not in witness['excerpt'] or witness['name_raw'] not in witness['excerpt']):
+        return False
+
+    def municipal_part(value):
+        text = _comparison(value).removeprefix('京都府').removeprefix('綴喜郡')
+        text = re.sub(r'(?<=\d)(?:番(?:地)?(?:の)?|の)(?=\d)', '-', text)
+        return re.sub(r'(?<=\d)(?:番地|番)$', '', text)
+
+    locality = r'[\u3400-\u9fffぁ-ゖァ-ヶ々〆ー]+?'
+    expected = municipal_part(acquired)
+    parts = re.fullmatch(rf'宇治田原町大字({locality})小字({locality})([0-9]+(?:-[0-9]+)*)', expected)
+    if not parts:
+        return False
+    oaza, koaza, parcel = parts.groups()
+    area = f'宇治田原町大字{oaza}小字{koaza}'
+    return (municipal_part(source_address) == f'宇治田原町{oaza}{koaza}{parcel}'
+            and municipal_part(witness_address) in (area, expected))
+
+
 def _reference_matches(ref,facility,entry,changes):
     registered_variant = 'registered_name_variant' in ref
     if registered_variant and (set(changes)!={'reading'} or entry.get('status')=='excluded'):
@@ -155,6 +202,8 @@ def _reference_matches(ref,facility,entry,changes):
     proof=ref.get('address_identity_proof')
     if isinstance(proof,dict) and proof.get('kind')==REGISTERED_TOWN_PROOF:
         return registered_town_matches(ref,facility,entry,changes)
+    if isinstance(proof,dict) and proof.get('kind')==_UJITAWARA_KOAZA_PROOF:
+        return _ujitawara_koaza_matches(ref,facility,entry,changes)
     if isinstance(proof,dict) and proof.get('kind')=='nagano_booklet_terminal_digits':
         matched=_nagano_booklet_address(ref,facility,entry)
         if set(changes)!={'reading'} or matched is None:return False
@@ -367,6 +416,9 @@ def correction_problems(correction,facility,entry,source=None):
         if (isinstance(proof,dict) and proof.get('kind')==REGISTERED_TOWN_PROOF
             and not registered_town_matches(ref,facility,entry,changes)):
             problems.append('registered name and parcel do not match the recorded official town row')
+        if (isinstance(proof,dict) and proof.get('kind')==_UJITAWARA_KOAZA_PROOF
+            and not _ujitawara_koaza_matches(ref,facility,entry,changes)):
+            problems.append('Ujitawara shrine locality and full parcel do not match the recorded marker omission')
         if discovery_only(ref.get('url')):problems.append('discovery-only directory cannot serve as dictionary evidence')
         if not _url(ref.get('url')) or not ref.get('title') or not ref.get('source_kind'):
             problems.append('reference URL, title or source type missing')
@@ -421,7 +473,7 @@ def apply_corrections(data,document):
                     any(k in r for k in ('document_address_context','csv_address_context','booklet_address_context',
                                         'article_address_context','registered_name_variant'))
                     or (isinstance(r.get('address_identity_proof'),dict)
-                        and r['address_identity_proof'].get('kind')==REGISTERED_TOWN_PROOF))
+                        and r['address_identity_proof'].get('kind') in (REGISTERED_TOWN_PROOF, _UJITAWARA_KOAZA_PROOF)))
                     for r in references))
             # A rejected contextual correction must not erase a durable
             # exclusion: otherwise a second application could approve it.

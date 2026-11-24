@@ -172414,12 +172414,75 @@
           "surface": "天神社"
         },
         {
-          "checked_at": "2026-11-08T14:29:40.615478+00:00",
+          "checked_at": "2026-11-24T04:31:45.456541+00:00",
           "evidence": "7135 石割神社 南都留郡山中湖村平野1979 南都留支部 詳細>>",
           "facility_id": "2137038d-45a1-5423-aead-f6a957e5d351",
           "fetched_at": "2026-11-08T14:29:40.615478+00:00",
           "id": "c239224c-f9d4-57dd-b99f-19de0cc7ce9c",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いしわりじんじゃ"
+              },
+              "expected_source_hash": "27a5f891db631d8b6057c6d4fd47aabf56bee1591620a5bf9616bdb11262aee9",
+              "facility_id": "2137038d-45a1-5423-aead-f6a957e5d351",
+              "identity_match": {
+                "listed_name": "石割神社",
+                "method": "same_name_full_listed_parcel",
+                "original_address": "南都留郡山中湖村平野1979",
+                "reference_address": "山梨県南都留郡山中湖村平野1979",
+                "reference_name": "石割神社"
+              },
+              "original": {
+                "address": "南都留郡山中湖村平野1979",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/6",
+                "name_raw": "石割神社",
+                "reading_raw": ""
+              },
+              "reason": "山中湖観光協会の公開施設紹介で神社名・独立全文かな・全所在地を原登録と照合。観光庁用語集でも全文かなを確認。",
+              "references": [
+                {
+                  "address_raw": "山梨県南都留郡山中湖村平野1979",
+                  "checked_at": "2026-11-24T04:31:45.456541+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "checked_at": "2026-11-24T04:26:57.583756+00:00",
+                      "name_raw": "石割神社",
+                      "page": 134,
+                      "page_hash": "6a0891faf108495405ba21a3b4577ce22359f2006329d4f41c27c26cac7b6665",
+                      "reading_raw": "いしわりじんじゃ",
+                      "reading_scope": "full_name",
+                      "role": "reading_only",
+                      "serial": 3604,
+                      "title": "観光庁・多言語解説文整備のための英語用語集（令和7年3月版）",
+                      "url": "https://www.mlit.go.jp/kankocho/content/001881931.pdf",
+                      "usage_policy": {
+                        "checked_at": "2026-11-24T04:26:55.747430+00:00",
+                        "page_hash": "ca3d35d55a58382ffd01d1e0a5799946dd6e72a5bf95e979eec38d7185ec1ef7",
+                        "url": "https://www.mlit.go.jp/kankocho/site-policy.html"
+                      }
+                    }
+                  ],
+                  "excerpt": "石割神社 いしわりじんじゃ / 住所 山梨県南都留郡山中湖村平野1979",
+                  "locator": "主見出しの神社名・独立かな、基本情報の住所欄",
+                  "name_raw": "石割神社",
+                  "page_hash": "42d2a1c7f903ed42fdfe5c1bd6519dbf4d26f1960271a1062f3044edf4199640",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T04:31:47.106456+00:00",
+                    "page_hash": "9fdc0338509eb731a948d8118474b7ab24552651e06dc88e99eddf7492418206",
+                    "url": "https://lake-yamanakako.com/footer/site"
+                  },
+                  "publisher": "一般社団法人山中湖観光協会",
+                  "reading_raw": "いしわりじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_tourism_association",
+                  "title": "山中湖観光協会・石割神社",
+                  "url": "https://lake-yamanakako.com/spot/10400"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/6",
           "name_raw": "石割神社",
           "normalization": [
@@ -172427,11 +172490,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1f5497e374078b2d6fd245adfda788f7294dfa8b78e5e564d9c4a74488cdc4c3",
-          "reading": "",
+          "reading": "いしわりじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/6",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://lake-yamanakako.com/spot/10400",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -172454,6 +172517,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いしわりじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いしわりじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "石割神社",
             "wikipedia_article_refs": [],
@@ -172484,7 +172561,7 @@
             "status": "pending",
             "surface": "石割神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "石割神社"
         },
         {

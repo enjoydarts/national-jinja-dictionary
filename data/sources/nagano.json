@@ -71937,12 +71937,76 @@
           "surface": "諏訪神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:48.314838+00:00",
+          "checked_at": "2026-11-24T04:24:39.884452+00:00",
           "evidence": "別所神社 386-1431 上田市別所温泉字内大門2338",
           "facility_id": "e4ca5015-4b8f-5ce7-baf8-d9423fabf578",
           "fetched_at": "2026-11-08T14:30:48.314838+00:00",
           "id": "9ddcaa29-f51b-56a5-b87a-d78da3d8eb19",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "べっしょじんじゃ"
+              },
+              "expected_source_hash": "79cbe01ef051fa19bd0a789c19180fafa8306f74391c76d438b3b8d90b6a6650",
+              "facility_id": "e4ca5015-4b8f-5ce7-baf8-d9423fabf578",
+              "identity_match": {
+                "listed_name": "別所神社",
+                "original_address": "上田市別所温泉字内大門2338",
+                "reference_address": "上田市別所温泉字内大門２３３８番地",
+                "reference_name": "別所神社"
+              },
+              "original": {
+                "address": "上田市別所温泉字内大門2338",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
+                "name_raw": "別所神社",
+                "reading_raw": ""
+              },
+              "reason": "上田市日本遺産の全文ルビ・所在地と市公式の文化政策課の鎮座地を、県の同名宗教法人の小字付き事務所所在地に照合した。",
+              "references": [
+                {
+                  "address_observation": {
+                    "address_raw": "上田市別所温泉字内大門２３３８番地",
+                    "address_role": "corporation_principal_office",
+                    "checked_at": "2026-11-23T05:24:59.871476+00:00",
+                    "excerpt": "市町村名=上田市 / 事務所所在地=別所温泉字内大門２３３８番地 / 宗教法人名=別所神社",
+                    "locator": "PDF36ページ、別所神社の市町村名・事務所所在地・宗教法人名",
+                    "municipality_raw": "上田市",
+                    "name_raw": "別所神社",
+                    "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                    "source_kind": "government_religious_corporate_register",
+                    "street_field_raw": "別所温泉字内大門２３３８番地",
+                    "title": "長野県所轄宗教法人名簿（R7ver.）",
+                    "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                  },
+                  "address_raw": "上田市別所温泉字内大門２３３８番地",
+                  "checked_at": "2026-11-24T04:24:39.884452+00:00",
+                  "excerpt": "日本遺産案内 別所神社（べっしょじんじゃ） / 長野県上田市別所温泉2338 / 県の法人名簿の市町村と事務所所在地を連結 上田市別所温泉字内大門２３３８番地",
+                  "joined_observation_reason": "市の公式案内は同じ社名と別所温泉2338の鎮座地を、県の現行名簿は同名法人の字内大門2338番地の事務所を掲載。町名と全地番が一致する。下之郷699とは別の施設。",
+                  "locator": "Spot-4 の社名ルビと地図リンクの所在地",
+                  "name_raw": "別所神社",
+                  "page_hash": "bc4c33d1fb469f5ba71de0f2246af26711060f573e6a1840ac41f964107d003a",
+                  "printed_address_raw": "長野県上田市別所温泉2338",
+                  "reading_raw": "べっしょじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_heritage_tourism",
+                  "title": "上田市日本遺産「4つの社寺をめぐる」",
+                  "url": "https://japan-heritage-ueda.com/course/4-shrines-and-temples/"
+                },
+                {
+                  "address_raw": "長野県上田市別所温泉2338",
+                  "checked_at": "2026-11-24T04:31:43.866003+00:00",
+                  "excerpt": "別所神社 / 長野県上田市別所温泉2338",
+                  "locator": "別所神社の見出し直下の所在地欄",
+                  "name_raw": "別所神社",
+                  "page_hash": "f58a7b9d1392ee1b937ccdb098c9d49537a5986d7c377711fd933313d765ce28",
+                  "source_kind": "municipal_cultural_inventory",
+                  "title": "上田市「上田市日本遺産限定御朱印について」",
+                  "url": "https://www.city.ueda.nagano.jp/site/nihonisan/60346.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
           "name_raw": "別所神社",
           "normalization": [
@@ -71950,11 +72014,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "95cbf939ab755781458e43242e180fb664b676f180e70e47693e1479d4682c24",
-          "reading": "",
+          "reading": "べっしょじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://japan-heritage-ueda.com/course/4-shrines-and-temples/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -72035,6 +72099,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "べっしょじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "べっしょじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "別所神社",
             "wikipedia_article_refs": [],
@@ -72065,7 +72143,7 @@
             "status": "pending",
             "surface": "別所神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "別所神社"
         },
         {
@@ -102007,12 +102085,86 @@
           "surface": "大宮五十鈴神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:51.003742+00:00",
+          "checked_at": "2026-11-24T04:19:15.677206+00:00",
           "evidence": "大御食神社 399-4117 駒ケ根市赤穂字美女森11475",
           "facility_id": "9ffe6705-2a36-5739-8a7a-93829e4ebd0e",
           "fetched_at": "2026-11-08T14:30:51.003742+00:00",
           "id": "e1dceeba-1340-512a-940a-9f66c448ad83",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おおみけじんじゃ"
+              },
+              "expected_source_hash": "7f6b68fd7326f21f648fb7aab745e76899b1feafa67f756b2f1ffb8bef2176ab",
+              "facility_id": "9ffe6705-2a36-5739-8a7a-93829e4ebd0e",
+              "identity_match": "同記事の所在地欄の注1が当社について長野県神社庁の所在地を原住所と同じ地番まで引用。神社庁上伊那支部の大御食神社の行で原文を照合。",
+              "original": {
+                "address": "駒ケ根市赤穂字美女森11475",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+                "name_raw": "大御食神社",
+                "reading_raw": ""
+              },
+              "reason": "施設を主題とする固定版記事の導入部に明記された全文かなを採用。",
+              "references": [
+                {
+                  "address_raw": "駒ケ根市赤穂字美女森11475",
+                  "article_id": 2639829,
+                  "checked_at": "2026-11-24T04:19:15.677206+00:00",
+                  "excerpt": "大御食神社（おおみけじんじゃ）／注1「駒ケ根市赤穂字美女森11475」",
+                  "license_status": "confirmed",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                  "locator": "導入段落の社名と全文かな。基礎情報表の「所在地」欄に付く注1（本文HTMLの mw-reference-text-cite_note-3）に、同社の神社庁公表所在地の引用。",
+                  "name_raw": "大御食神社",
+                  "page_hash": "4f3dc0a27a5017e5931f8fdafd71495c0b4dddf2a030b699510e398fa0f84523",
+                  "permalink": "https://ja.wikipedia.org/w/index.php?oldid=110432086",
+                  "reading_raw": "おおみけじんじゃ",
+                  "reading_scope": "full_name",
+                  "revision_id": 110432086,
+                  "rights_scope": "社名・全文かな・注の地番のみ採字。記事の版と本文の表示ライセンスを記録。",
+                  "source_kind": "encyclopedia",
+                  "source_publisher": "ウィキペディア日本語版の執筆者",
+                  "title": "大御食神社 - Wikipedia",
+                  "url": "https://ja.wikipedia.org/wiki/大御食神社"
+                },
+                {
+                  "address_raw": "駒ケ根市赤穂字美女森11475",
+                  "checked_at": "2026-11-24T04:19:16.510685+00:00",
+                  "excerpt": "大御食神社／駒ケ根市赤穂字美女森11475",
+                  "locator": "神社紹介 上伊那支部の大御食神社の行。社名・所在地欄。",
+                  "name_raw": "大御食神社",
+                  "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "source_publisher": "長野県神社庁",
+                  "title": "神社紹介 上伊那支部",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm"
+                },
+                {
+                  "address_raw": "駒ヶ根市赤穂11475",
+                  "checked_at": "2026-11-24T04:19:16.627558+00:00",
+                  "excerpt": "大御食神社(おおみけじんじゃ）／美女ヶ森／駒ヶ根市赤穂11475",
+                  "license_status": "unconfirmed",
+                  "locator": "記事の社名見出し、本文中の境内林の名と基本情報の「住所」。",
+                  "name_raw": "大御食神社",
+                  "page_hash": "d2f367e20e2f2424bdb462589a737b47e621aa73c41c151b0122f3c191dc14c3",
+                  "policy_reference": {
+                    "checked_at": "2026-11-24T04:24:37.093710+00:00",
+                    "page_hash": "c0da8bc31523c9201aaadb62d9ed1373baf0561daf3a65e71672a1a9db66c46d",
+                    "url": "https://www.kankou-komagane.com/policy/"
+                  },
+                  "reading_raw": "おおみけじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_scope": "社名・所在地等の事実に限って照合。写真利用規約の対象は画像。",
+                  "source_kind": "municipal_tourism_association",
+                  "source_publisher": "一般社団法人 駒ヶ根観光協会",
+                  "title": "大御食神社 | 駒ヶ根観光協会",
+                  "url": "https://www.kankou-komagane.com/kankou/2215/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
           "name_raw": "大御食神社",
           "normalization": [
@@ -102020,11 +102172,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-          "reading": "",
+          "reading": "おおみけじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ja.wikipedia.org/wiki/大御食神社",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -102096,6 +102248,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おおみけじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おおみけじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "大御食神社",
             "wikipedia_article_refs": [
@@ -102135,7 +102301,7 @@
             "status": "pending",
             "surface": "大御食神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "大御食神社"
         },
         {

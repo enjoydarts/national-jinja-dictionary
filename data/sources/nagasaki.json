@@ -154318,12 +154318,80 @@
           "surface": "梅ケ崎神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:34.467147+00:00",
+          "checked_at": "2026-11-24T04:22:55.277248+00:00",
           "evidence": "table[1] tr[16]: 名称=神崎神社; 掲載読み=; 所在地=長崎市木鉢町14番地",
           "facility_id": "f5075dd3-689b-51dd-b51b-a9ac7664b4a7",
           "fetched_at": "2026-11-10T12:26:34.467147+00:00",
           "id": "3d36ef81-8df4-5586-ab79-6c04e4aa48ba",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "こうざきじんじゃ"
+              },
+              "expected_source_hash": "de1253c1bc4236732d27ed50889a97baddaa4299eb4d71252db22f2f4ebad90c",
+              "facility_id": "f5075dd3-689b-51dd-b51b-a9ac7664b4a7",
+              "identity_match": {
+                "agency_address": "長崎市木鉢町14番地",
+                "agency_name": "神崎神社",
+                "reference_address": "長崎県長崎市木鉢町14",
+                "reference_name": "神崎神社"
+              },
+              "original": {
+                "address": "長崎市木鉢町14番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
+                "name_raw": "神崎神社",
+                "reading_raw": ""
+              },
+              "reason": "個別掲載の主名称・全文かなと木鉢町14が神社庁の原所在地に対応。長崎市「ナガジン」は女神大橋が架かる長崎港口の神崎神社を「こうざきじんじゃ」と明記する。",
+              "references": [
+                {
+                  "address_raw": "長崎県長崎市木鉢町14",
+                  "checked_at": "2026-11-24T04:22:55.277248+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_scope": "長崎港口・女神大橋付近の特定。地番の記載なし。",
+                      "checked_at": "2026-11-24T04:22:16.165588+00:00",
+                      "encoding_observed": "EUC-JP宣言、JIS X 0213対応で読取り。対象文字列は標準EUC-JP符号でも原bytesと一致。",
+                      "excerpt": "神崎神社（こうざきじんじゃ）",
+                      "locator": "本文の女神大橋に言及する段落",
+                      "name_raw": "神崎神社",
+                      "page_hash": "7a03590e17d9bb88d046cb57deb1f92a8976f308716b7fe13f0f5e476f0d643f",
+                      "policy_review": {
+                        "checked_at": "2026-11-24T04:22:14.067501+00:00",
+                        "locator": "著作権について",
+                        "page_hash": "9741b2c69971a745fc1da5b4f6e873043443f0b898a348b0b15e36c181e9a2a5",
+                        "url": "https://www.city.nagasaki.lg.jp/page/3214.html"
+                      },
+                      "reading_raw": "こうざきじんじゃ",
+                      "reading_scope": "full_name",
+                      "source_kind": "municipal_regional_history",
+                      "source_publisher": "長崎市",
+                      "title": "ナガジン「発見！長崎の歩き方」",
+                      "url": "https://www.city.nagasaki.lg.jp/nagazine/hakken1108/index1.html"
+                    }
+                  ],
+                  "excerpt": "こうざきじんじゃ ／ 神崎神社 ／ 長崎県長崎市木鉢町14",
+                  "locator": "対象社の主見出しの独立かな・主名称、同ページ基本情報「住所」欄",
+                  "name_raw": "神崎神社",
+                  "page_hash": "0ae565ed3cc494b16ff6462d3b6a5366f5751f769272b50f1f41fd2c9dfc76db",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-24T04:22:53.027377+00:00",
+                    "locator": "運営会社について・掲載内容について",
+                    "page_hash": "77bbe0e18a8eb337f2be8dbbca0ba9c49cbab6318a5d56e7cb49b378d2678092",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "こうざきじんじゃ",
+                  "reading_scope": "full_name",
+                  "redistribution_status": "minimal_facts_only",
+                  "source_kind": "independent_site_shrine_article",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "全国神社マップ・神崎神社",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/nagasaki-shi/8382"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
           "name_raw": "神崎神社",
           "normalization": [
@@ -154331,11 +154399,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "84ed1414360b6f867f72e4099b42c13721dac7368d3c827d947e6d38545f0ebd",
-          "reading": "",
+          "reading": "こうざきじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/nagasaki-shi/8382",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -154414,6 +154482,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "こうざきじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "こうざきじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "神崎神社",
             "wikipedia_article_refs": [],
@@ -154444,7 +154526,7 @@
             "status": "pending",
             "surface": "神崎神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "神崎神社"
         },
         {
@@ -156118,12 +156200,104 @@
           "surface": "天満神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:34.467147+00:00",
+          "checked_at": "2026-11-24T04:22:57.511889+00:00",
           "evidence": "table[1] tr[25]: 名称=木鉢神社; 掲載読み=; 所在地=長崎市木鉢町557番地",
           "facility_id": "9f6869d2-d346-5e44-b35a-be0a4e9c2fde",
           "fetched_at": "2026-11-10T12:26:34.467147+00:00",
           "id": "312a63c8-7a32-5960-9ef4-f2cb00cf0953",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "きばちじんじゃ"
+              },
+              "expected_source_hash": "f9da9df9fd83fa11666e0dbd9ebfbbf6faf4a43687a51f24605144e53b37cf75",
+              "facility_id": "9f6869d2-d346-5e44-b35a-be0a4e9c2fde",
+              "identity_match": {
+                "agency_address": "長崎市木鉢町557番地",
+                "agency_name": "木鉢神社",
+                "reference_address": "長崎県長崎市木鉢町557",
+                "reference_name": "木鉢神社"
+              },
+              "original": {
+                "address": "長崎市木鉢町557番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
+                "name_raw": "木鉢神社",
+                "reading_raw": ""
+              },
+              "reason": "個別掲載の主名称・全文かなと木鉢町557が神社庁の原所在地に対応。同じ社を撮影した現地記事は同じ全文かなと木鉢町2-557を表示する。現地記事と小榊地域センターの年表にある1925年の事代主神社移転・木鉢神社の対応を照合し、原所在地を保持する。",
+              "references": [
+                {
+                  "address_raw": "長崎県長崎市木鉢町557",
+                  "checked_at": "2026-11-24T04:22:57.511889+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "長崎県長崎市木鉢町2-557",
+                      "checked_at": "2026-11-24T04:23:27.545738+00:00",
+                      "excerpt": "木鉢神社（きばちじんじゃ） ／ 長崎県長崎市木鉢町2-557",
+                      "locator": "「【木鉢町】木鉢神社」固有節の基本情報「神社名」「住所」、撮影2025年7月。",
+                      "name_raw": "木鉢神社",
+                      "page_hash": "96f1570d17b6ae23bdfb5f49c7aa443b5057bc28cfa5f09677dcdb5868865ac8",
+                      "policy_review": {
+                        "checked_at": "2026-11-24T04:24:01.023490+00:00",
+                        "conditions": "著作物の無断転載禁止、リンク自由。施設名・読み・所在地の事実のみ。",
+                        "locator": "著作権について・リンクについて",
+                        "page_hash": "57e475f0087fb9a528d334029cb3296c14446101acaaec127851769b0ee00691",
+                        "url": "https://mikumashop.com/privacy-policy/"
+                      },
+                      "publisher_reference": {
+                        "checked_at": "2026-11-24T04:23:58.326907+00:00",
+                        "locator": "プロフィール本文",
+                        "page_hash": "a4e4b18f6b4ea669aa1de036d569ce809840bbfb6762d63ea28a607bab89ea89",
+                        "url": "https://mikumashop.com/profiles/"
+                      },
+                      "reading_raw": "きばちじんじゃ",
+                      "reading_scope": "full_name",
+                      "source_kind": "independent_visitor_article",
+                      "source_publisher": "みくま商店長崎",
+                      "title": "神社マップ【長崎県長崎市】神ノ島町、木鉢町、小瀬戸町",
+                      "url": "https://mikumashop.com/nagasaki-jinjamap-kibachi/"
+                    },
+                    {
+                      "checked_at": "2026-11-24T04:23:28.094548+00:00",
+                      "excerpt": "事代主神社 ／ 木鉢神社",
+                      "historical_link": "1925年に万屋町の事代主神社が木鉢神社として移転した旨を確認。",
+                      "locator": "2018年9月18日号、PDF 2頁、小榊地区の年表の大正14年9月欄",
+                      "name_raw": "木鉢神社",
+                      "page_hash": "0a3f3c89ffbcac448fe8b0fd4cafbefce7bb15756981404ef68a0c9ce5f916d0",
+                      "policy_review": {
+                        "checked_at": "2026-11-24T04:22:14.067501+00:00",
+                        "locator": "著作権について",
+                        "page_hash": "9741b2c69971a745fc1da5b4f6e873043443f0b898a348b0b15e36c181e9a2a5",
+                        "url": "https://www.city.nagasaki.lg.jp/page/3214.html"
+                      },
+                      "source_kind": "municipal_regional_history",
+                      "source_publisher": "長崎市小榊地域センター",
+                      "title": "こさかき 地域センターだより Vol.1",
+                      "url": "https://www.city.nagasaki.lg.jp/uploaded/attachment/14079.pdf"
+                    }
+                  ],
+                  "excerpt": "きばちじんじゃ ／ 木鉢神社 ／ 長崎県長崎市木鉢町557",
+                  "locator": "対象社の主見出しの独立かな・主名称、同ページ基本情報「住所」欄",
+                  "name_raw": "木鉢神社",
+                  "page_hash": "01b739e18d86833d788e3f512205b60a0fc7a85ac1bf0b2b8bea7d4e63b2c70c",
+                  "publisher_reference": {
+                    "checked_at": "2026-11-24T04:22:53.027377+00:00",
+                    "locator": "運営会社について・掲載内容について",
+                    "page_hash": "77bbe0e18a8eb337f2be8dbbca0ba9c49cbab6318a5d56e7cb49b378d2678092",
+                    "url": "https://shrine.mobi/about"
+                  },
+                  "reading_raw": "きばちじんじゃ",
+                  "reading_scope": "full_name",
+                  "redistribution_status": "minimal_facts_only",
+                  "source_kind": "independent_site_shrine_article",
+                  "source_publisher": "株式会社エーアンドオー",
+                  "title": "全国神社マップ・木鉢神社",
+                  "url": "https://shrine.mobi/area/kyushu/nagasaki/nagasaki-shi/8378"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
           "name_raw": "木鉢神社",
           "normalization": [
@@ -156131,11 +156305,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "84ed1414360b6f867f72e4099b42c13721dac7368d3c827d947e6d38545f0ebd",
-          "reading": "",
+          "reading": "きばちじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/nagasaki.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/nagasaki/nagasaki-shi/8378",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -156239,6 +156413,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "きばちじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "きばちじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "木鉢神社",
             "wikipedia_article_refs": [],
@@ -156269,7 +156457,7 @@
             "status": "pending",
             "surface": "木鉢神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "木鉢神社"
         },
         {
