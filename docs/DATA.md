@@ -103,6 +103,8 @@ IME出力時は読み・表記・出力先品詞が同じ行を重複除去し�
 
 佐賀県の[合併前後の住所表記資料](https://www.pref.saga.lg.jp/kiji00329259/3_29259_6_chouazamei.pdf)の1・2ページで確認した佐賀市の7旧自治体と、小城市の旧小城町・神埼市の旧千代田町の計9接頭辞は、`address_identity_proof.kind=documented_municipality_prefix_change`で個別参照に束縛した場合だけ追加照合します。施設ID・登録ID・原文hash・旧新住所・参照URL/hashと、県資料の固定URL/hash・ページ・施行日・表示例・確認日時が必要です。一般の住所正規化は変更せず、原住所・原字形を保持します。独立資料の正式名が原名に対応し、既存の全住所比較で字名・全地番が一致する読みのみ補正に限ります。無地番からの地番補完、別県、資料対象外の自治体、名称変更、小城町の晴氣/晴気・岩藏/岩蔵の字形変更、有田町の字名・番地再編には使いません。根拠を満たした機械検証と、実資料による施設同定の審査は区別します。
 
+長崎県諫早市では、神社庁の「高来町船津名」「森山町大字森山本村名」を、資料の「高来町船津」「森山町本村」と照合できます。`address_identity_proof.kind=documented_isahaya_locality_change` で、施設ID・登録ID・取得原文hash・双方の住所・参照先と、日本郵便の旧町別変更一覧にある当該行のURL/hash・施行日・町域・郵便番号を対応づけます。読みだけを補正する場合に、正式名と枝番を含む全地番の一致を求めます。正本では神社庁と各資料の原住所を保持します。[日本郵便の旧高来町住所変更一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423431&cmp=1&mode=list&pref=42)・[旧森山町住所変更一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423411&cmp=1&mode=list&pref=42)・[諫早市の町の名称](https://www.city.isahaya.nagasaki.jp/soshiki/42/1688.html)
+
 国税庁資料は正式名称・全地番・一意な存続法人・明示された全文カナを照合します。大書きカナを推測修正しません。法人種別の接頭辞や登録画像のある行には追加の証拠を要求します。画像行は個別の`image_reviews`に画像ID・URL・hashと元CSV行の対応がなければ保留します。
 
 ## 再取得と保存

@@ -163,3 +163,86 @@ class MunicipalAddressProofTest(unittest.TestCase):
         v['changes']['surface']='別名神社';ref['name_raw']='別名神社'
         ref['excerpt']='別名神社（かくうじんじゃ） '+ref['address_raw']
         self.assertEqual(eligible(apply_corrections(d,c)),[])
+
+
+ISAHAYA_CASES = (
+    ('諫早市高来町船津名', '諫早市高来町船津', '北高来郡高来町', '船津名', '859-0105', '1423431',
+     '7268addacd3cdc04caa3427c20cb54866f98c63b792cc931bfb63a926d6db8a5'),
+    ('諫早市森山町大字森山本村名', '諫早市森山町本村', '北高来郡森山町', '森山本村名', '854-0203', '1423411',
+     '2a134ed6fb6dee34b1afc2831e3a5b93ee61ed28e52a372251debbecb8088834'),
+)
+
+
+def isahaya_fixture(case, parcel='123番地4'):
+    acquired, current, former_city, former_town, postcode, city_code, digest = case
+    dataset = build_dataset('nagasaki', '42', '長崎県', '長崎県神社庁',
+                            [row(name='架空神社', reading_raw='', address=acquired+parcel)])
+    facility, entry = dataset['facilities'][0], dataset['entries'][0]
+    proposal = correction(dataset, {'reading':'かくうじんじゃ'})
+    reference = proposal['entries'][entry['id']]['references'][0]
+    reference.update(page_hash='b'*64, reading_scope='full_name', address_raw='長崎県'+current+parcel,
+                     excerpt='架空神社（かくうじんじゃ） 長崎県'+current+parcel)
+    reference['address_identity_proof'] = dict(
+        kind='documented_isahaya_locality_change', facility_id=facility['id'], entry_id=entry['id'],
+        expected_source_hash=entry['source_hash'], listing_address_raw=facility['address'],
+        reference_address_raw=reference['address_raw'], reference_url=reference['url'],
+        reference_page_hash=reference['page_hash'], change_reference=dict(
+            url='https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city='+city_code+'&cmp=1&mode=list&pref=42',
+            page_hash=digest, source_publisher='日本郵便株式会社', effective_date='2005-03-01',
+            former_municipality_raw=former_city, former_locality_raw=former_town,
+            current_locality_raw=current, postal_code_raw=postcode, locator='住所等の変更情報',
+            checked_at='2026-11-25T07:45:25+00:00'))
+    return dataset, proposal, reference
+
+
+class IsahayaLocalityProofTest(unittest.TestCase):
+    def test_documented_localities_match_full_parcel_and_preserve_the_acquired_record(self):
+        for case in ISAHAYA_CASES:
+            with self.subTest(locality=case[0]):
+                dataset, proposal, _ = isahaya_fixture(case)
+                before = copy.deepcopy(dataset)
+                updated = apply_corrections(dataset, proposal)
+                self.assertEqual(len(eligible(updated)), 1)
+                self.assertEqual(updated['entries'][0]['reading'], 'かくうじんじゃ')
+                self.assertEqual(updated['facilities'], before['facilities'])
+                self.assertEqual(updated['entries'][0]['reading_raw'], '')
+                self.assertEqual(dataset, before)
+
+    def test_different_street_or_parcel_cannot_use_the_documented_match(self):
+        case = ISAHAYA_CASES[0]
+        for address in ('諫早市高来町船津123番地40', '諫早市高来町船津123番地', '諫早市高来町小船津123番地4'):
+            with self.subTest(address=address):
+                dataset, proposal, reference = isahaya_fixture(case)
+                reference['address_raw'] = address
+                reference['excerpt'] = '架空神社（かくうじんじゃ） '+address
+                reference['address_identity_proof']['reference_address_raw'] = address
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_an_unbound_or_different_postal_row_leaves_the_reading_pending(self):
+        case = ISAHAYA_CASES[1]
+        mutations = (
+            lambda ref: ref.pop('address_identity_proof'),
+            lambda ref: ref.update(reading_scope='partial'),
+            lambda ref: ref['address_identity_proof'].update(expected_source_hash='d'*64),
+            lambda ref: ref['address_identity_proof']['change_reference'].update(effective_date='2005-04-01'),
+            lambda ref: ref['address_identity_proof']['change_reference'].update(postal_code_raw='854-0204'),
+            lambda ref: ref['address_identity_proof']['change_reference'].update(page_hash='c'*64),
+            lambda ref: ref['address_identity_proof']['change_reference'].update(checked_at='2026-11-25'),
+        )
+        for mutate in mutations:
+            dataset, proposal, reference = isahaya_fixture(case)
+            mutate(reference)
+            self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_the_proof_cannot_clear_an_exclusion_or_match_a_place_without_a_parcel(self):
+        dataset, proposal, _ = isahaya_fixture(ISAHAYA_CASES[0])
+        dataset['entries'][0]['status'] = 'excluded'
+        updated = apply_corrections(dataset, proposal)
+        self.assertEqual(updated['entries'][0]['status'], 'excluded')
+        self.assertEqual(eligible(updated), [])
+
+        dataset, proposal, reference = isahaya_fixture(ISAHAYA_CASES[0], parcel='')
+        reference['address_raw'] += '123番地'
+        reference['excerpt'] += '123番地'
+        reference['address_identity_proof']['reference_address_raw'] = reference['address_raw']
+        self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])

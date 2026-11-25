@@ -5,7 +5,7 @@ import unicodedata
 from datetime import datetime
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading, compare_address_units
-from njd.municipalities import municipal_comparison_address
+from njd.municipalities import ISAHAYA_LOCALITY_PROOF, municipal_comparison_address
 from njd.locations import raw_address, _redirect_authority, _reference_in_scope, _hash, _date, _plain
 from njd.corporate_aza import PROOF_KIND as REGISTERED_TOWN_PROOF, registered_town_matches
 
@@ -204,6 +204,11 @@ def _reference_matches(ref,facility,entry,changes):
         return registered_town_matches(ref,facility,entry,changes)
     if isinstance(proof,dict) and proof.get('kind')==_UJITAWARA_KOAZA_PROOF:
         return _ujitawara_koaza_matches(ref,facility,entry,changes)
+    if isinstance(proof, dict) and proof.get('kind') == ISAHAYA_LOCALITY_PROOF:
+        if set(changes) != {'reading'} or entry.get('status') == 'excluded' or ref.get('reading_scope') != 'full_name':
+            return False
+        mapped = municipal_comparison_address(ref, facility, entry)
+        return mapped is not None and address(mapped) == address(ref['address_raw'])
     if isinstance(proof,dict) and proof.get('kind')=='nagano_booklet_terminal_digits':
         matched=_nagano_booklet_address(ref,facility,entry)
         if set(changes)!={'reading'} or matched is None:return False
@@ -473,7 +478,8 @@ def apply_corrections(data,document):
                     any(k in r for k in ('document_address_context','csv_address_context','booklet_address_context',
                                         'article_address_context','registered_name_variant'))
                     or (isinstance(r.get('address_identity_proof'),dict)
-                        and r['address_identity_proof'].get('kind') in (REGISTERED_TOWN_PROOF, _UJITAWARA_KOAZA_PROOF)))
+                        and r['address_identity_proof'].get('kind') in (REGISTERED_TOWN_PROOF, _UJITAWARA_KOAZA_PROOF,
+                                                                       ISAHAYA_LOCALITY_PROOF)))
                     for r in references))
             # A rejected contextual correction must not erase a durable
             # exclusion: otherwise a second application could approve it.
