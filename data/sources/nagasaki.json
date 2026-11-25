@@ -173205,12 +173205,91 @@
           "surface": "天満神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[1] tr[13]: 名称=温泉神社; 掲載読み=; 所在地=島原市亀の甲町乙1700番地",
           "facility_id": "23dfa1f1-da38-5be3-b40b-38a7edc1a883",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "366790fd-4e8d-563e-a170-264a8f2d5fe5",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おんせんじんじゃ"
+              },
+              "expected_source_hash": "d73f2bbe90d897e411881cc11734182d4477d4389c465a2c5ab897d65f0b5ef5",
+              "facility_id": "23dfa1f1-da38-5be3-b40b-38a7edc1a883",
+              "identity_match": {
+                "agency_address": "島原市亀の甲町乙1700番地",
+                "agency_name": "温泉神社",
+                "reference_address": "島原市亀の甲町乙1700番地",
+                "reference_name": "温泉神社",
+                "source_card_number": 13
+              },
+              "original": {
+                "address": "島原市亀の甲町乙1700番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "温泉神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。位置図は地区名と社名の印字を間隔で分け、地区名に対応するルビも別に付す。原登録の社名に対応する全文ルビを採った。読みが連続するようルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "島原市亀の甲町乙1700番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "三会 温泉神社 ／ み え おんせん じんじゃ\n13 ／ 三会 温泉神社 ／ 島原市亀の甲町乙1700番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "三会",
+                  "locator": "PDF 10頁「四面宮位置図」番号13の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "温泉神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "三会 温泉神社",
+                  "printed_ruby_raw": "み え おんせん じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "おんせん じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 13,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "温泉神社",
           "normalization": [
@@ -173218,11 +173297,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "おんせんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -173353,6 +173432,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おんせんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おんせんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "温泉神社",
             "wikipedia_article_refs": [
@@ -173392,7 +173485,7 @@
             "status": "pending",
             "surface": "温泉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "温泉神社"
         },
         {
@@ -174876,12 +174969,91 @@
           "surface": "二本木神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[1] tr[25]: 名称=温泉神社; 掲載読み=; 所在地=島原市有明町湯江甲989番地",
           "facility_id": "b82ff87a-c4cd-5440-9686-1def4f7f9451",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "84303b58-eb4c-510b-ac84-8cb2dc08bf6e",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おんせんじんじゃ"
+              },
+              "expected_source_hash": "a6ce456613119fda4278d2b04576f043f789f71dc2899d911c877c77c21d223c",
+              "facility_id": "b82ff87a-c4cd-5440-9686-1def4f7f9451",
+              "identity_match": {
+                "agency_address": "島原市有明町湯江甲989番地",
+                "agency_name": "温泉神社",
+                "reference_address": "島原市有明町湯江甲989番地",
+                "reference_name": "温泉神社",
+                "source_card_number": 10
+              },
+              "original": {
+                "address": "島原市有明町湯江甲989番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "温泉神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。位置図は地区名と社名の印字を間隔で分け、地区名に対応するルビも別に付す。原登録の社名に対応する全文ルビを採った。読みが連続するようルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "島原市有明町湯江甲989番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "湯江 温泉神社 ／ ゆ え おんせん じんじゃ\n10 ／ 湯江 温泉神社 ／ 島原市有明町湯江甲989番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "湯江",
+                  "locator": "PDF 10頁「四面宮位置図」番号10の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "温泉神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "湯江 温泉神社",
+                  "printed_ruby_raw": "ゆ え おんせん じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "おんせん じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 10,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "温泉神社",
           "normalization": [
@@ -174889,11 +175061,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "おんせんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -175024,6 +175196,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おんせんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おんせんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "温泉神社",
             "wikipedia_article_refs": [
@@ -175063,7 +175249,7 @@
             "status": "pending",
             "surface": "温泉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "温泉神社"
         },
         {
@@ -175576,12 +175762,91 @@
           "surface": "温泉神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[2] tr[2]: 名称=温泉神社; 掲載読み=; 所在地=雲仙市国見町多比良丁153番地",
           "facility_id": "d58c2777-b5a7-50b1-97e6-7bd6f50ebc75",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "b78ec306-a4c5-5774-8e0d-dcaad7be32c5",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おんせんじんじゃ"
+              },
+              "expected_source_hash": "082e4b29ad4a2c23d248bdc523758e238a360a3d5e6ee6baeb57545812efaa7e",
+              "facility_id": "d58c2777-b5a7-50b1-97e6-7bd6f50ebc75",
+              "identity_match": {
+                "agency_address": "雲仙市国見町多比良丁153番地",
+                "agency_name": "温泉神社",
+                "reference_address": "雲仙市国見町多比良丁153番地",
+                "reference_name": "温泉神社",
+                "source_card_number": 9
+              },
+              "original": {
+                "address": "雲仙市国見町多比良丁153番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "温泉神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。位置図は地区名と社名の印字を間隔で分け、地区名に対応するルビも別に付す。原登録の社名に対応する全文ルビを採った。読みが連続するようルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "雲仙市国見町多比良丁153番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "多比良 温泉神社 ／ た い ら おんせん じんじゃ\n9 ／ 多比良 温泉神社 ／ 雲仙市国見町多比良丁153番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "多比良",
+                  "locator": "PDF 10頁「四面宮位置図」番号9の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "温泉神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "多比良 温泉神社",
+                  "printed_ruby_raw": "た い ら おんせん じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "おんせん じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 9,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "温泉神社",
           "normalization": [
@@ -175589,11 +175854,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "おんせんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -175723,6 +175988,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おんせんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おんせんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "温泉神社",
             "wikipedia_article_refs": [
@@ -175762,7 +176041,7 @@
             "status": "pending",
             "surface": "温泉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "温泉神社"
         },
         {
@@ -176582,12 +176861,91 @@
           "surface": "狹田神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[2] tr[8]: 名称=温泉神社; 掲載読み=; 所在地=雲仙市国見町土黒戊603番地",
           "facility_id": "2c56e627-cff0-5493-9b8a-ddd1dae9d65b",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "3d26193d-17c9-5d5f-bcdc-6c88bd962e15",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おんせんじんじゃ"
+              },
+              "expected_source_hash": "f2e28d5987022ba58d5cd3ef2e764513fc3d326f56f7c4ad68a34fb995f07859",
+              "facility_id": "2c56e627-cff0-5493-9b8a-ddd1dae9d65b",
+              "identity_match": {
+                "agency_address": "雲仙市国見町土黒戊603番地",
+                "agency_name": "温泉神社",
+                "reference_address": "雲仙市国見町土黒戊603番地",
+                "reference_name": "温泉神社",
+                "source_card_number": 8
+              },
+              "original": {
+                "address": "雲仙市国見町土黒戊603番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "温泉神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。位置図は地区名と社名の印字を間隔で分け、地区名に対応するルビも別に付す。原登録の社名に対応する全文ルビを採った。読みが連続するようルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "雲仙市国見町土黒戊603番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "土黒 温泉神社 ／ ひじくろ おんせん じんじゃ\n8 ／ 土黒 温泉神社 ／ 雲仙市国見町土黒戊603番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "土黒",
+                  "locator": "PDF 10頁「四面宮位置図」番号8の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "温泉神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "土黒 温泉神社",
+                  "printed_ruby_raw": "ひじくろ おんせん じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "おんせん じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 8,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "温泉神社",
           "normalization": [
@@ -176595,11 +176953,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "おんせんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -176730,6 +177088,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おんせんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おんせんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "温泉神社",
             "wikipedia_article_refs": [
@@ -176769,7 +177141,7 @@
             "status": "pending",
             "surface": "温泉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "温泉神社"
         },
         {
@@ -177633,12 +178005,81 @@
           "surface": "八幡神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:49:20.942713+00:00",
           "evidence": "table[2] tr[13]: 名称=神代神社; 掲載読み=; 所在地=雲仙市国見町神代丙179番地",
           "facility_id": "5fb5e890-8399-58dc-b294-6078b4137152",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "75494474-65a2-527e-a7f0-3eea6b23f2ed",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "こうじろじんじゃ"
+              },
+              "expected_source_hash": "8163e4d9abe9465b2012c7e62c469aa22cb941ef7dce2c7e8e311355cd8b5171",
+              "facility_id": "5fb5e890-8399-58dc-b294-6078b4137152",
+              "identity_match": {
+                "agency_address": "雲仙市国見町神代丙179番地",
+                "agency_name": "神代神社",
+                "corroborating_registry_pair": {
+                  "address_raw": "長崎県雲仙市国見町神代丙１７９番地",
+                  "csv_row": 32975,
+                  "entry_id": "75494474-65a2-527e-a7f0-3eea6b23f2ed",
+                  "name_raw": "神代神社",
+                  "registered_reading": "コウジロ",
+                  "zip_member": "42_nagasaki_all_20261030.csv"
+                },
+                "reference_address": "長崎県雲仙市国見町神代丙179",
+                "reference_name": "神代神社"
+              },
+              "original": {
+                "address": "雲仙市国見町神代丙179番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "神代神社",
+                "reading_raw": ""
+              },
+              "reason": "現地取材記事の神代神社の節に全文かながある。記事末の城址所在地欄には同境内の道政院稲荷神社と併記される。国税庁の公表データでも神代神社の名と同地番を確認した。",
+              "references": [
+                {
+                  "address_raw": "長崎県雲仙市国見町神代丙179",
+                  "checked_at": "2026-11-25T00:49:20.942713+00:00",
+                  "excerpt": "「神代神社」（こうじろじんじゃ） ／ 鶴亀城跡（神代神社・道政院稲荷神社）　所在地：長崎県雲仙市国見町神代丙179",
+                  "locator": "本文「雲仙鶴亀城址の本丸跡に佇む神代神社」節の全文かなと、記事末尾の鶴亀城跡所在地欄",
+                  "name_raw": "神代神社",
+                  "page_hash": "8b8a926304c297412fa481894920d9b64ea45b1b6ae2c744329d877e10b6b8e4",
+                  "publisher_confirmation": {
+                    "checked_at": "2026-11-25T00:52:28.677239+00:00",
+                    "locator": "サイト紹介の本文",
+                    "page_hash": "793ab9bc2451649c88756bf121575a29a8fe173c0ffedcf561cd467066f48eef",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "HISTRIP",
+                    "title": "HISTRIPとは",
+                    "url": "https://www.histrip.jp/about/"
+                  },
+                  "publisher_policy_review": "本文のフッターで著作権表示を確認した。実リンクのプライバシーポリシーはHTTP 404、利用規約リンクはHTMLコメントのみで公開条文は確認できなかった。社名・全文かな・所在地の最小事実のみを記録する。",
+                  "reading_raw": "こうじろじんじゃ",
+                  "reading_scope": "full_name",
+                  "registry_location_confirmation": {
+                    "address_raw": "長崎県雲仙市国見町神代丙１７９番地",
+                    "checked_at": "2026-11-25T00:52:33.364569+00:00",
+                    "locator": "法人番号7310005004776の最新情報、名称・フリガナ・所在地欄",
+                    "name_raw": "神代神社",
+                    "page_hash": "b78d07297e54abd932c4be56f6a93ed9df9b6b408e7e0d8532b8e1e9d75eddef",
+                    "reading_raw": "コウジロ",
+                    "reading_scope": "partial",
+                    "source_kind": "public_registry_location_observation",
+                    "source_publisher": "国税庁",
+                    "title": "神代神社の情報｜法人番号公表サイト",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7310005004776"
+                  },
+                  "source_kind": "regional_travel_publication",
+                  "source_publisher": "HISTRIP",
+                  "title": "雲仙神代小路地区に残る鶴亀城址で南北朝時代へタイムスリップ！",
+                  "url": "https://www.histrip.jp/20170404nagasaki-unzen-4/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "神代神社",
           "normalization": [
@@ -177646,11 +178087,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "こうじろじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.histrip.jp/20170404nagasaki-unzen-4/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -177733,6 +178174,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "こうじろじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "こうじろじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "神代神社",
             "wikipedia_article_refs": [],
@@ -177763,7 +178218,7 @@
             "status": "pending",
             "surface": "神代神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "神代神社"
         },
         {
@@ -180008,12 +180463,88 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[3] tr[9]: 名称=温泉神社; 掲載読み=; 所在地=雲仙市瑞穂町西郷戊785番地",
           "facility_id": "bf5022ec-9c8d-5748-9330-7df089180496",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "8b8a26bf-296c-596b-90d1-01492eb3333e",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おんせんじんじゃ"
+              },
+              "expected_source_hash": "cd42f5c1f02b5819e1d14518f69017a03f1843e020dde1e2e498cf175c1e8eb3",
+              "facility_id": "bf5022ec-9c8d-5748-9330-7df089180496",
+              "identity_match": {
+                "agency_address": "雲仙市瑞穂町西郷戊785番地",
+                "agency_name": "温泉神社",
+                "reference_address": "雲仙市瑞穂町西郷戊785番地",
+                "reference_name": "温泉神社",
+                "source_card_number": 6
+              },
+              "original": {
+                "address": "雲仙市瑞穂町西郷戊785番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "温泉神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。位置図は地区名と社名の印字を間隔で分け、地区名に対応するルビも別に付す。原登録の社名に対応する全文ルビを採った。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "雲仙市瑞穂町西郷戊785番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "瑞穂 温泉神社 ／ みずほ おんせんじんじゃ\n6 ／ 瑞穂 温泉神社 ／ 雲仙市瑞穂町西郷戊785番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "瑞穂",
+                  "locator": "PDF 10頁「四面宮位置図」番号6の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "温泉神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "瑞穂 温泉神社",
+                  "printed_ruby_raw": "みずほ おんせんじんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_page": 10,
+                  "reading_raw": "おんせんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 6,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "温泉神社",
           "normalization": [
@@ -180021,11 +180552,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "おんせんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -180155,6 +180686,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おんせんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おんせんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "温泉神社",
             "wikipedia_article_refs": [
@@ -180194,7 +180739,7 @@
             "status": "pending",
             "surface": "温泉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "温泉神社"
         },
         {
@@ -180959,12 +181504,91 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[4] tr[2]: 名称=温泉神社; 掲載読み=; 所在地=雲仙市吾妻町布江名964番地",
           "facility_id": "78b294de-762f-5a45-852a-634d3003cf00",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "2195e9d0-0d7e-59a6-b5f5-8c36ee9b8bee",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おんせんじんじゃ"
+              },
+              "expected_source_hash": "257a4927c5e72bf68637748451518c4d2522bb151cb0456e92b4a86bca34fc12",
+              "facility_id": "78b294de-762f-5a45-852a-634d3003cf00",
+              "identity_match": {
+                "agency_address": "雲仙市吾妻町布江名964番地",
+                "agency_name": "温泉神社",
+                "reference_address": "雲仙市吾妻町布江名964番地",
+                "reference_name": "温泉神社",
+                "source_card_number": 4
+              },
+              "original": {
+                "address": "雲仙市吾妻町布江名964番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "温泉神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。位置図は地区名と社名の印字を間隔で分け、地区名に対応するルビも別に付す。原登録の社名に対応する全文ルビを採った。読みが連続するようルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "雲仙市吾妻町布江名964番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "吾妻 温泉神社 ／ あづま おんせん じんじゃ\n4 ／ 吾妻 温泉神社 ／ 雲仙市吾妻町布江名964番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "吾妻",
+                  "locator": "PDF 10頁「四面宮位置図」番号4の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "温泉神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "吾妻 温泉神社",
+                  "printed_ruby_raw": "あづま おんせん じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "おんせん じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 4,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "温泉神社",
           "normalization": [
@@ -180972,11 +181596,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "おんせんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -181106,6 +181730,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おんせんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おんせんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "温泉神社",
             "wikipedia_article_refs": [
@@ -181145,7 +181783,7 @@
             "status": "pending",
             "surface": "温泉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "温泉神社"
         },
         {
@@ -181938,12 +182576,91 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[4] tr[9]: 名称=稲田神社; 掲載読み=; 所在地=雲仙市吾妻町平江名804番地",
           "facility_id": "8f9af99f-1eb8-53d9-8c59-36c806b4b7b4",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "5fccc937-982b-536a-ba92-bd54517aa19b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いなだじんじゃ"
+              },
+              "expected_source_hash": "12803438aef6cd8d569caa4c6e8a13d26673e75f8e385adf13f835f8f159892d",
+              "facility_id": "8f9af99f-1eb8-53d9-8c59-36c806b4b7b4",
+              "identity_match": {
+                "agency_address": "雲仙市吾妻町平江名804番地",
+                "agency_name": "稲田神社",
+                "reference_address": "雲仙市吾妻町平江名804番地",
+                "reference_name": "稲田神社",
+                "source_card_number": 5
+              },
+              "original": {
+                "address": "雲仙市吾妻町平江名804番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "稲田神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。読みが連続するようルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "雲仙市吾妻町平江名804番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "稲田神社 ／ いなだ じんじゃ\n5 ／ 稲田神社 ／ 雲仙市吾妻町平江名804番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "",
+                  "locator": "PDF 10頁「四面宮位置図」番号5の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "稲田神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "稲田神社",
+                  "printed_ruby_raw": "いなだ じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "いなだ じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 5,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "稲田神社",
           "normalization": [
@@ -181951,11 +182668,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "いなだじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -182037,6 +182754,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いなだじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いなだじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "稲田神社",
             "wikipedia_article_refs": [],
@@ -182067,7 +182798,7 @@
             "status": "pending",
             "surface": "稲田神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "稲田神社"
         },
         {
@@ -182852,12 +183583,88 @@
           "surface": "八幡神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[5] tr[5]: 名称=温泉神社; 掲載読み=; 所在地=雲仙市愛野町乙2155番地1",
           "facility_id": "6cc04571-4257-5107-b258-8c9ca9a6c85f",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "e11d3ae0-f77c-544e-a36e-8106ea92d2d8",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おんせんじんじゃ"
+              },
+              "expected_source_hash": "271e98e05e7d995df59b7ace60395e534baaade8082b358c92d0fa670a0e4a57",
+              "facility_id": "6cc04571-4257-5107-b258-8c9ca9a6c85f",
+              "identity_match": {
+                "agency_address": "雲仙市愛野町乙2155番地1",
+                "agency_name": "温泉神社",
+                "reference_address": "雲仙市愛野町乙2155番地1",
+                "reference_name": "温泉神社",
+                "source_card_number": 3
+              },
+              "original": {
+                "address": "雲仙市愛野町乙2155番地1",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "温泉神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。位置図は地区名と社名の印字を間隔で分け、地区名に対応するルビも別に付す。原登録の社名に対応する全文ルビを採った。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "雲仙市愛野町乙2155番地1",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "愛野 温泉神社 ／ あいの おんせんじんじゃ\n3 ／ 愛野 温泉神社 ／ 雲仙市愛野町乙2155番地1",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "愛野",
+                  "locator": "PDF 10頁「四面宮位置図」番号3の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "温泉神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "愛野 温泉神社",
+                  "printed_ruby_raw": "あいの おんせんじんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_page": 10,
+                  "reading_raw": "おんせんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 3,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "温泉神社",
           "normalization": [
@@ -182865,11 +183672,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "おんせんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -182999,6 +183806,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おんせんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おんせんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "温泉神社",
             "wikipedia_article_refs": [
@@ -183038,7 +183859,7 @@
             "status": "pending",
             "surface": "温泉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "温泉神社"
         },
         {
@@ -190737,12 +191558,91 @@
           "surface": "春日神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[11] tr[3]: 名称=温泉神社; 掲載読み=; 所在地=南島原市北有馬町丁588番地",
           "facility_id": "714157d3-8d8b-5c47-a44a-3d7eb9a20059",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "6ca894a2-2fce-52d8-9077-365abcefe6e7",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おんせんじんじゃ"
+              },
+              "expected_source_hash": "712054f636267650d83530d8b386ee6ce12f04359bbd8c840e0479a1ea8f892f",
+              "facility_id": "714157d3-8d8b-5c47-a44a-3d7eb9a20059",
+              "identity_match": {
+                "agency_address": "南島原市北有馬町丁588番地",
+                "agency_name": "温泉神社",
+                "reference_address": "南島原市北有馬町丁588番地",
+                "reference_name": "温泉神社",
+                "source_card_number": 17
+              },
+              "original": {
+                "address": "南島原市北有馬町丁588番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "温泉神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。位置図は地区名と社名の印字を間隔で分け、地区名に対応するルビも別に付す。原登録の社名に対応する全文ルビを採った。読みが連続するようルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "南島原市北有馬町丁588番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "北有馬 温泉神社 ／ きたありま おんせん じんじゃ\n17 ／ 北有馬 温泉神社 ／ 南島原市北有馬町丁588番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "北有馬",
+                  "locator": "PDF 10頁「四面宮位置図」番号17の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "温泉神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "北有馬 温泉神社",
+                  "printed_ruby_raw": "きたありま おんせん じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "おんせん じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 17,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "温泉神社",
           "normalization": [
@@ -190750,11 +191650,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "おんせんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -190883,6 +191783,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おんせんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おんせんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "温泉神社",
             "wikipedia_article_refs": [
@@ -190922,7 +191836,7 @@
             "status": "pending",
             "surface": "温泉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "温泉神社"
         },
         {
@@ -195942,12 +196856,91 @@
           "surface": "水原神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[15] tr[6]: 名称=田中神社; 掲載読み=; 所在地=南島原市深江町乙867番地",
           "facility_id": "e7a62a81-409d-5684-9573-12aa86b2763e",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "ac1c3ccc-4781-57e4-8919-60fcef6a1f15",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "たなかじんじゃ"
+              },
+              "expected_source_hash": "967dc7a2274eb1d22e4e5c3c13cfb2d9192a8cdf84507424995e982f3b41551d",
+              "facility_id": "e7a62a81-409d-5684-9573-12aa86b2763e",
+              "identity_match": {
+                "agency_address": "南島原市深江町乙867番地",
+                "agency_name": "田中神社",
+                "reference_address": "南島原市深江町乙867番地",
+                "reference_name": "田中神社",
+                "source_card_number": 15
+              },
+              "original": {
+                "address": "南島原市深江町乙867番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "田中神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の同番号を照合した。位置図の社名に付く全文ルビと、裏表紙の同番号に掲げる全所在地を確認した。読みが連続するようルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "南島原市深江町乙867番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "田中神社 ／ たなか じんじゃ\n15 ／ 田中神社 ／ 南島原市深江町乙867番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locality_label_raw": "",
+                  "locator": "PDF 10頁「四面宮位置図」番号15の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "田中神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "田中神社",
+                  "printed_ruby_raw": "たなか じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "たなか じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 15,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "田中神社",
           "normalization": [
@@ -195955,11 +196948,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "たなかじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -196040,6 +197033,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "たなかじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "たなかじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "田中神社",
             "wikipedia_article_refs": [],
@@ -196070,7 +197077,7 @@
             "status": "pending",
             "surface": "田中神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "田中神社"
         },
         {

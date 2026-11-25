@@ -750,6 +750,20 @@ Wikidataで社名・全地番が対応し、索引にかながある204項目の
 
 4府県の42登録を補完し、全国の保留は**9,639 → 9,597登録**です。県ごとの採用根拠、確認した資料の範囲、保留理由を正本の調査履歴に記録しました。
 
+### 地域の神社案内と四国の公開地図の照合（2026-11-25）
+
+山梨では山梨英和大学と一宮町の地域団体による神社案内を神社庁と県の宗教法人名簿に照合し、笛吹市一宮町の11登録を補完しました。国立神社は鎮座地の塩田466番地と法人名簿の386番地を役割ごとに記録しました。金田の金山神社は「かねやまじんじゃ」を採用し、千米寺の同名社は資料間で読みが異なるため保留しました。[山梨英和大学「一宮町の神社」](https://www.yamanashi-eiwa.ac.jp/collaboration/ichinomiya/shrine.html)・[山梨県の宗教法人名簿](https://www.pref.yamanashi.jp/documents/7901/r71231_syuukyouhoujinnmeibo.pdf)
+
+長崎では四面宮会『四面宮ものがたり』の全25社のうち島原半島の18社を照合し、位置図の全文ルビと裏表紙の所在地が掲載番号で対応する10登録を補完しました。雲仙市国見町神代丙179番地の神代神社は、現地を紹介する記事の「こうじろじんじゃ」と国税庁の名称・所在地を照合しました。[四面宮会『四面宮ものがたり』](https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf)・[HISTRIP「雲仙神代小路地区に残る鶴亀城址」](https://www.histrip.jp/20170404nagasaki-unzen-4/)・[国税庁「神代神社」](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7310005004776)
+
+長野では前回からの継続候補53登録のうち18登録を個別に照合し、守田廼神社や八櫛神社など6登録を補完しました。松代の白鳥神社は、地番を併記する松代の観光案内と東御市の資料に基づき「しろとりじんじゃ」を採用しました。長野市の計画資料にある「しらとりじんじゃ」と旧地誌の「しらとりじんじや」も記録しました。[松代の観光案内「白鳥神社」](https://www.matsushiro-kankou.com/spot/spot-028/)・[東御市の文化財保存活用地域計画資料](https://www.city.tomi.nagano.jp/file/141492.pdf)・[長野市の文化財保存活用地域計画](https://www.city.nagano.nagano.jp/documents/16749/06_5syour7.pdf)
+
+高知では四万十市観光協会の冊子原画像から一條神社の全文かなと中村本町1丁目11番地を確認しました。佐川町の金峰神社は町の計画と仁淀ブルー観光協議会の個別案内に基づき、甲1896番地の登録に「きんぷじんじゃ」を補完しました。[四万十市観光協会「一條神社」](https://www.shimanto-kankou.com/kanko/history/itijou.html)・[佐川町の歴史的風致維持向上計画](https://www.town.sakawa.lg.jp/file/?t=LD&id=2563&fid=14516)・[仁淀ブルー観光協議会「金峰神社」](https://niyodoblue.jp/spot/detail.php?id=134)
+
+四国の保留2,200登録を、Geofabrik配布の `shikoku-261124.osm.pbf` と一括照合しました。神社や礼拝施設等として抽出した名称付き3,007地物のうち、かな欄（`name:ja-Hira`）があるものは30地物、保留と同名のものは4地物でした。高松市仏生山町甲2566番地の榺神社は神社庁と施設公式で所在地を、現地の記事で「ちきりじんじゃ」の全文かなを確認しました。地図は照合候補の抽出に使用しました。© OpenStreetMap contributors（ODbL 1.0）。[Geofabrikの四国データ](https://download.geofabrik.de/asia/japan/shikoku/index.html)・[OpenStreetMapのライセンス](https://www.openstreetmap.org/copyright)・[榺神社の公式サイト](https://www.chikiri-jinjya.org/)・[榺神社の現地記事](https://takamatsu.goguynet.jp/2021/05/09/takamatsu/)
+
+5県の31登録を補完し、全国29都道府県の保留は**9,597 → 9,566登録**です。所在地の対応や全文かなを確認できなかった候補は、理由とともに調査履歴に記録しました。
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

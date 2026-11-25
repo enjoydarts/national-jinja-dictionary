@@ -65942,12 +65942,67 @@
           "surface": "琴平神社"
         },
         {
-          "checked_at": "2026-11-09T02:01:48.358200+00:00",
+          "checked_at": "2026-11-25T00:56:33.173871+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/c0027780-587b-4fce-a1e8-1f1f8398def2: 名称=金峰神社; 掲載読み=; 所在地=高知県高岡郡佐川町甲1896番地",
           "facility_id": "3b997de2-0948-5fe3-99d8-10f3e19a843a",
           "fetched_at": "2026-11-09T02:01:48.358200+00:00",
           "id": "a0b1a7bf-9897-5273-9917-143cf086104b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "きんぷじんじゃ"
+              },
+              "expected_source_hash": "54677ccdc643a36e51cfd45a2b2690f9f0573de05fed587b04c6423123ca655d",
+              "facility_id": "3b997de2-0948-5fe3-99d8-10f3e19a843a",
+              "identity_match": "一般社団法人仁淀ブルー観光協議会の個別ページは金峰神社の住所を高岡郡佐川町甲1896と明示。原掲載の甲1896番地に対応。甲86番地の同名社は別地番。",
+              "original": {
+                "address": "高知県高岡郡佐川町甲1896番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=25",
+                "name_raw": "金峰神社",
+                "reading_raw": ""
+              },
+              "reason": "地域観光協議会の個別ページが社名と独立全文かなを同じ見出しに表示。佐川町の計画本文も牧野富太郎が植物に親しんだ金峰神社の全文かなを併記。",
+              "references": [
+                {
+                  "address_raw": "高岡郡佐川町甲1896",
+                  "address_role": "shrine_location",
+                  "checked_at": "2026-11-25T00:56:33.173871+00:00",
+                  "excerpt": "金峰神社 [きんぷじんじゃ]　住所 高岡郡佐川町甲1896",
+                  "locator": "金峰神社見出しと読み併記、住所欄",
+                  "name_raw": "金峰神社",
+                  "page_hash": "b0160ac4cc275fe675030643a49122186df1673cd158cbb6711a743d63004149",
+                  "publisher": "一般社団法人仁淀ブルー観光協議会",
+                  "reading_raw": "きんぷじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association",
+                  "title": "金峰神社｜一般社団法人 仁淀ブルー観光協議会",
+                  "url": "https://niyodoblue.jp/spot/detail.php?id=134",
+                  "usage_basis": "協議会利用規約の著作権表示と引用等の法定例外を確認。社名・全文かな・所在地の事実項目のみを記録。",
+                  "usage_review": {
+                    "checked_at": "2026-11-25T00:56:26.523933+00:00",
+                    "page_hash": "869c1512b388cdf6006c12b7744a78d1e3463144516b16653694e3151a97105d",
+                    "title": "仁淀ブルー観光協議会 利用規約",
+                    "url": "https://niyodoblue.jp/license/"
+                  }
+                },
+                {
+                  "checked_at": "2026-11-25T00:52:30.854211+00:00",
+                  "excerpt": "牧野富太郎博士が植物に親しんだ金峰神社（きんぷじんじゃ）",
+                  "locator": "PDF第58頁・印刷55頁「範囲の設定根拠」本文",
+                  "name_raw": "金峰神社",
+                  "page_hash": "6c27cd6e4b154bf43008b5a783bfdb440cf6cf1d128a4ff56d16ec57945b39ee",
+                  "publisher": "高知県高岡郡佐川町",
+                  "reading_raw": "きんぷじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_plan",
+                  "text_layout": "「ぷ」と「じ」の間の行送りをつないでいる。",
+                  "title": "佐川町歴史的風致維持向上計画",
+                  "url": "https://www.town.sakawa.lg.jp/file/?t=LD&id=2563&fid=14516"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=25",
           "name_raw": "金峰神社",
           "normalization": [
@@ -65955,11 +66010,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d20ea1d16439571a5954e97378aa50adcb18ad2e239a60bba488258987aca5ea",
-          "reading": "",
+          "reading": "きんぷじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=25",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://niyodoblue.jp/spot/detail.php?id=134",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -65998,6 +66053,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "きんぷじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "きんぷじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "金峰神社",
             "wikipedia_article_refs": [],
@@ -66028,7 +66097,7 @@
             "status": "pending",
             "surface": "金峰神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "金峰神社"
         },
         {
@@ -145973,12 +146042,65 @@
           "surface": "奥御前神社"
         },
         {
-          "checked_at": "2026-11-09T02:04:43.932039+00:00",
+          "checked_at": "2026-11-25T00:52:34.725444+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/0870a2d5-d476-4924-b5c3-7fae24d144ec: 名称=一條神社; 掲載読み=; 所在地=高知県四万十市中村本町1丁目11番地",
           "facility_id": "13d2ebab-d394-5526-86e6-93ec5cfa8566",
           "fetched_at": "2026-11-09T02:04:43.932039+00:00",
           "id": "77a85761-0d41-54a0-bef0-6ad16fd55aa9",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いちじょうじんじゃ"
+              },
+              "expected_source_hash": "d607b11f7c293bdbec08825e63ca42fc7c3deae6ab79baa7d4cdeadc9ba3c6a7",
+              "facility_id": "13d2ebab-d394-5526-86e6-93ec5cfa8566",
+              "identity_match": "観光協会のパンフレットと個別ページは一條神社の所在地を中村本町1-11と明示。原所在地の中村本町1丁目11番地と丁目・番地表記が対応。資料別に原表記を保存。",
+              "original": {
+                "address": "高知県四万十市中村本町1丁目11番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=76",
+                "name_raw": "一條神社",
+                "reading_raw": ""
+              },
+              "reason": "四万十市観光協会「ふらっとしまんと」の一條神社枠にある独立した全文かなをパンフレットの原画像で確認。読みのみ採用。",
+              "references": [
+                {
+                  "address_raw": "高知県四万十市中村本町 1-11",
+                  "address_role": "shrine_location",
+                  "checked_at": "2026-11-25T00:52:34.725444+00:00",
+                  "excerpt": "一條神社　いちじょうじんじゃ　所 高知県四万十市中村本町 1-11",
+                  "locator": "PDF第9頁・印刷15頁「小京都物語」の一條神社枠、見出し直下のかな、所欄",
+                  "name_raw": "一條神社",
+                  "page_hash": "d8b44b5ecf3226d15bca614ca96529d370fb80322868fd3d6d445ee4f288544b",
+                  "publisher": "一般社団法人四万十市観光協会",
+                  "reading_raw": "いちじょうじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association_publication",
+                  "title": "ふらっとしまんと",
+                  "url": "https://www.shimanto-kankou.com/wp/wp-content/uploads/2025/03/7880e14296f824f121dea4210e442ad7.pdf",
+                  "usage_basis": "発行主体を表示した通常の公開資料。社名・全文かな・所在地のみの限定した事実項目を記録。",
+                  "visual_review": {
+                    "image_sha256": "f1744b99187a821ebcab7713eb5ec94f6bcd521fc683372fefca4766f5ae5dc8",
+                    "page": 9,
+                    "printed_page": 15
+                  }
+                },
+                {
+                  "address_raw": "高知県四万十市中村本町1-11",
+                  "address_role": "shrine_location",
+                  "checked_at": "2026-11-25T00:52:30.347390+00:00",
+                  "excerpt": "一條神社　住所／高知県四万十市中村本町1-11",
+                  "locator": "個別ページの一條神社見出し・施設情報の住所欄",
+                  "name_raw": "一條神社",
+                  "page_hash": "d2d26ec9c1fa5693cfc1d2d7560ac1c0d1ffd4e56d206a651d088b1389ddf0be",
+                  "publisher": "一般社団法人四万十市観光協会",
+                  "source_kind": "regional_tourism_association",
+                  "title": "一條神社｜一般社団法人 四万十市観光協会",
+                  "url": "https://www.shimanto-kankou.com/kanko/history/itijou.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=76",
           "name_raw": "一條神社",
           "normalization": [
@@ -145986,11 +146108,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "371d5a5410324872feca3b82a0e259e3ab8995acdf1761558ecbffc810528074",
-          "reading": "",
+          "reading": "いちじょうじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=76",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.shimanto-kankou.com/wp/wp-content/uploads/2025/03/7880e14296f824f121dea4210e442ad7.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -146148,6 +146270,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いちじょうじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いちじょうじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "一條神社",
             "wikipedia_article_refs": [
@@ -146187,7 +146323,7 @@
             "status": "pending",
             "surface": "一條神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "一條神社"
         },
         {
