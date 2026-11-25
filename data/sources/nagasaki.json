@@ -164706,12 +164706,90 @@
           "surface": "平松神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:36.584223+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[1] tr[5]: 名称=福田神社; 掲載読み=; 所在地=諫早市福田町45番1号",
           "facility_id": "4803b784-3f03-5270-af45-d3ea889adb02",
           "fetched_at": "2026-11-10T12:26:36.584223+00:00",
           "id": "e0e0c2e4-64ea-5e3c-b86c-9b2fa68974f1",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ふくだじんじゃ"
+              },
+              "expected_source_hash": "c832abb758e11cf75a9cbe36a686abcfddda6a526f4f1f1cd0de106a2de35333",
+              "facility_id": "4803b784-3f03-5270-af45-d3ea889adb02",
+              "identity_match": {
+                "agency_address": "諫早市福田町45番1号",
+                "agency_name": "福田神社",
+                "reference_address": "諫早市福田町45番1号",
+                "reference_name": "福田神社",
+                "source_card_number": 23
+              },
+              "original": {
+                "address": "諫早市福田町45番1号",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
+                "name_raw": "福田神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の位置図に社名の全文ルビ、裏表紙に同番号・同名の全所在地がある。神社庁の原社名・全地番と照合し、読みを登録する際はルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "諫早市福田町45番1号",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "福田神社 ／ ふくだ じんじゃ\n23 ／ 福田神社 ／ 諫早市福田町45番1号",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locator": "PDF 10頁「四面宮位置図」番号23の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "福田神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "福田神社",
+                  "printed_ruby_raw": "ふくだ じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "ふくだ じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 23,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
           "name_raw": "福田神社",
           "normalization": [
@@ -164719,11 +164797,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "525d9ccf404693d0e8558f098dd286d7aeedc1cf094186c9a3a248fba30c9aa2",
-          "reading": "",
+          "reading": "ふくだじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -164783,6 +164861,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ふくだじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ふくだじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "福田神社",
             "wikipedia_article_refs": [],
@@ -164813,7 +164905,7 @@
             "status": "pending",
             "surface": "福田神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "福田神社"
         },
         {
@@ -166579,12 +166671,60 @@
           "surface": "年神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:36.584223+00:00",
+          "checked_at": "2026-11-25T05:58:45.267635+00:00",
           "evidence": "table[1] tr[16]: 名称=花之木神社; 掲載読み=; 所在地=諫早市久山町392番地2",
           "facility_id": "67e90238-c543-5f34-a2aa-97bb6d1757c7",
           "fetched_at": "2026-11-10T12:26:36.584223+00:00",
           "id": "95e68777-ccf9-59c3-a3bb-f04919abd575",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はなのきじんじゃ"
+              },
+              "expected_source_hash": "737b057110340e5cea692fdafebefc46106370232e8bf2dc5e4f30aff6ab0810",
+              "facility_id": "67e90238-c543-5f34-a2aa-97bb6d1757c7",
+              "identity_match": {
+                "agency_address": "諫早市久山町392番地2",
+                "agency_name": "花之木神社",
+                "reference_address": "長崎県諫早市久山町392-2",
+                "reference_name": "花之木神社"
+              },
+              "original": {
+                "address": "諫早市久山町392番地2",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
+                "name_raw": "花之木神社",
+                "reading_raw": ""
+              },
+              "reason": "2024年現地撮影を含む地域訪問記事の個別基本情報欄に社名・全文かな・諫早市久山町392-2が同時に明示される。神社庁原所在地と全地番が一致する。",
+              "references": [
+                {
+                  "address_raw": "長崎県諫早市久山町392-2",
+                  "checked_at": "2026-11-25T05:58:45.267635+00:00",
+                  "excerpt": "花之木神社（はなのきじんじゃ）／ 長崎県諫早市久山町392-2",
+                  "locator": "本文「久山町 花之木神社」節の基本情報",
+                  "name_raw": "花之木神社",
+                  "page_hash": "2c5bd04f6fe9736eda690002ac48fb2a09b218547b43dd777338cca8d04b618b",
+                  "reading_raw": "はなのきじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_field_article",
+                  "source_policy": {
+                    "checked_at": "2026-11-25T05:59:00.727465+00:00",
+                    "locator": "本文「著作権について」「リンクについて」",
+                    "page_hash": "ef3bc86a0c0d3528376f7d6d8c22edd5e26fcc209a3357db8d59947c46d4d3da",
+                    "policy_observation": "写真・文章等の無断転載を禁止し、リンクを許容。名称と全文かな、所在地の最小事実を記録。",
+                    "source_kind": "publisher_policy",
+                    "source_publisher": "みくま商店長崎",
+                    "title": "プライバシーポリシー",
+                    "url": "https://mikumashop.com/privacy-policy/"
+                  },
+                  "source_publisher": "みくま商店長崎",
+                  "title": "神社マップ〖長崎県諌早市〗久山町、津久葉町",
+                  "url": "https://mikumashop.com/jinjamap-isahaya-kuyama/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
           "name_raw": "花之木神社",
           "normalization": [
@@ -166592,11 +166732,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "525d9ccf404693d0e8558f098dd286d7aeedc1cf094186c9a3a248fba30c9aa2",
-          "reading": "",
+          "reading": "はなのきじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://mikumashop.com/jinjamap-isahaya-kuyama/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -166656,6 +166796,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はなのきじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はなのきじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "花之木神社",
             "wikipedia_article_refs": [],
@@ -166686,16 +166840,94 @@
             "status": "pending",
             "surface": "花之木神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "花之木神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:36.584223+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[1] tr[17]: 名称=小川神社; 掲載読み=; 所在地=諫早市川床町1107番地",
           "facility_id": "9f6d2d1d-88d0-5c74-878c-379395c0c611",
           "fetched_at": "2026-11-10T12:26:36.584223+00:00",
           "id": "8ce01d2e-437c-5718-baf4-867324851684",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おがわじんじゃ"
+              },
+              "expected_source_hash": "b1960b429bc42a3e08878013ea9195d3ab9d15d67664ec06acf865d88a4dcc64",
+              "facility_id": "9f6d2d1d-88d0-5c74-878c-379395c0c611",
+              "identity_match": {
+                "agency_address": "諫早市川床町1107番地",
+                "agency_name": "小川神社",
+                "reference_address": "諫早市川床町1107番地",
+                "reference_name": "小川神社",
+                "source_card_number": 21
+              },
+              "original": {
+                "address": "諫早市川床町1107番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
+                "name_raw": "小川神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の位置図に社名の全文ルビ、裏表紙に同番号・同名の全所在地がある。神社庁の原社名・全地番と照合し、読みを登録する際はルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "諫早市川床町1107番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "小川神社 ／ おがわ じんじゃ\n21 ／ 小川神社 ／ 諫早市川床町1107番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locator": "PDF 10頁「四面宮位置図」番号21の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "小川神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "小川神社",
+                  "printed_ruby_raw": "おがわ じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "おがわ じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 21,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
           "name_raw": "小川神社",
           "normalization": [
@@ -166703,11 +166935,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "525d9ccf404693d0e8558f098dd286d7aeedc1cf094186c9a3a248fba30c9aa2",
-          "reading": "",
+          "reading": "おがわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -166767,6 +166999,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おがわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おがわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "小川神社",
             "wikipedia_article_refs": [],
@@ -166797,7 +167043,7 @@
             "status": "pending",
             "surface": "小川神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "小川神社"
         },
         {
@@ -168228,12 +168474,90 @@
           "surface": "年神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:36.584223+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[1] tr[28]: 名称=宗方神社; 掲載読み=; 所在地=諫早市宗方町368番地",
           "facility_id": "94e58c9a-8dbb-52d3-b44f-cb5e00e35206",
           "fetched_at": "2026-11-10T12:26:36.584223+00:00",
           "id": "2d33c156-0a03-572a-9fb6-c942c5ec8a94",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "むなかたじんじゃ"
+              },
+              "expected_source_hash": "68543598d980546431d4434e04d1f327804b16fe8506d1da00b3f17e44d205b4",
+              "facility_id": "94e58c9a-8dbb-52d3-b44f-cb5e00e35206",
+              "identity_match": {
+                "agency_address": "諫早市宗方町368番地",
+                "agency_name": "宗方神社",
+                "reference_address": "諫早市宗方町368番地",
+                "reference_name": "宗方神社",
+                "source_card_number": 20
+              },
+              "original": {
+                "address": "諫早市宗方町368番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
+                "name_raw": "宗方神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の位置図に社名の全文ルビ、裏表紙に同番号・同名の全所在地がある。神社庁の原社名・全地番と照合し、読みを登録する際はルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "諫早市宗方町368番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "宗方神社 ／ むなかた じんじゃ\n20 ／ 宗方神社 ／ 諫早市宗方町368番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locator": "PDF 10頁「四面宮位置図」番号20の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "宗方神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "宗方神社",
+                  "printed_ruby_raw": "むなかた じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "むなかた じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 20,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
           "name_raw": "宗方神社",
           "normalization": [
@@ -168241,11 +168565,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "525d9ccf404693d0e8558f098dd286d7aeedc1cf094186c9a3a248fba30c9aa2",
-          "reading": "",
+          "reading": "むなかたじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -168305,6 +168629,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "むなかたじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "むなかたじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "宗方神社",
             "wikipedia_article_refs": [],
@@ -168335,7 +168673,7 @@
             "status": "pending",
             "surface": "宗方神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "宗方神社"
         },
         {
@@ -168820,12 +169158,90 @@
           "surface": "八幡神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:36.584223+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[1] tr[32]: 名称=天満神社; 掲載読み=; 所在地=諫早市西里町770番地",
           "facility_id": "b46d1463-7111-554e-91b8-2f86ece0fdcd",
           "fetched_at": "2026-11-10T12:26:36.584223+00:00",
           "id": "1832d244-f07b-50a5-b56d-9d0ef664366f",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "てんまんじんじゃ"
+              },
+              "expected_source_hash": "1e6dec63f02ba346f4883d543db6d1651d345a2bcc61b312a972a1e1465dd7e4",
+              "facility_id": "b46d1463-7111-554e-91b8-2f86ece0fdcd",
+              "identity_match": {
+                "agency_address": "諫早市西里町770番地",
+                "agency_name": "天満神社",
+                "reference_address": "諫早市西里町770番地",
+                "reference_name": "天満神社",
+                "source_card_number": 24
+              },
+              "original": {
+                "address": "諫早市西里町770番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
+                "name_raw": "天満神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会発行冊子の位置図に社名の全文ルビ、裏表紙に同番号・同名の全所在地がある。神社庁の原社名・全地番と照合し、読みを登録する際はルビ間の組版上の空白を省いた。",
+              "references": [
+                {
+                  "address_page": 1,
+                  "address_raw": "諫早市西里町770番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "天満神社 ／ てんまん じんじゃ\n24 ／ 天満神社 ／ 諫早市西里町770番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locator": "PDF 10頁「四面宮位置図」番号24の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "天満神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "天満神社",
+                  "printed_ruby_raw": "てんまん じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "てんまん じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 24,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
           "name_raw": "天満神社",
           "normalization": [
@@ -168833,11 +169249,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "525d9ccf404693d0e8558f098dd286d7aeedc1cf094186c9a3a248fba30c9aa2",
-          "reading": "",
+          "reading": "てんまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -168897,6 +169313,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "天満神社",
             "wikipedia_article_refs": [
@@ -168936,7 +169366,7 @@
             "status": "pending",
             "surface": "天満神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天満神社"
         },
         {

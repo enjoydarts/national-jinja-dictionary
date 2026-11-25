@@ -764,6 +764,18 @@ Wikidataで社名・全地番が対応し、索引にかながある204項目の
 
 5県の31登録を補完し、全国29都道府県の保留は**9,597 → 9,566登録**です。所在地の対応や全文かなを確認できなかった候補は、理由とともに調査履歴に記録しました。
 
+### 市町村の文化財・町誌・地域案内の再照合（2026-11-25）
+
+山梨では北杜市の保留114登録を市の文化財一覧204行と比較し、社名と地区が対応する13登録を見つけました。文化財欄に記された社名部分のかなを、県神社庁の鎮座地と県の宗教法人名簿で照合し、八嶽神社、十五所神社などを補完しました。北野天神社は小淵沢町3349番地に対応する観光冊子の「きたのてんじんじゃ」を採用し、市の文化財一覧にある「きたのてんじんしゃ」も記録しました。[北杜市の文化財一覧](https://www.city.hokuto.yamanashi.jp/docs/1932.html)・[山梨県の宗教法人名簿](https://www.pref.yamanashi.jp/documents/7901/r71231_syuukyouhoujinnmeibo.pdf)・[やまなしのお寺と神社・八ヶ岳／韮崎エリア](https://www.yamanashi-kankou.jp/pamphlet/documents/temples_and_shrines_jp_yatsugatake.pdf)
+
+身延町では保留118登録を旧3町誌の宗教編292頁の文字層と比較し、町指定文化財などの個別18資料も確認しました。若宮八幡神社は観光冊子の全文ルビと同じ欄にある西嶋1534番地を確認し、町の地域資料が示す「西嶋」「西島」の両表記を記録しました。北杜市の9登録と合わせて山梨の10登録を補完しました。[身延の町誌](https://www.town.minobu.lg.jp/page/1287.html)・[身延町地域資料「西嶋和紙」](https://www3.town.minobu.lg.jp/lib/shiryou/washi/index.html)・[やまなしのお寺と神社・南アルプス／富士川流域エリア](https://www.yamanashi-kankou.jp/pamphlet/documents/temples_and_shrines_jp_minobu.pdf)
+
+長崎では前回の対象外だった諫早の7社を冊子の原画像で照合し、宗方神社、小川神社、福田神社、天満神社を補完しました。久山町の花之木神社は現地取材記事の全文かなと392番地2を確認しました。河上神社と深海神社は日本郵便の新旧町域の対照と国税庁の現所在地を記録し、現行の照合規則で扱えない住所表記差が残るため保留しました。[四面宮会『四面宮ものがたり』](https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf)・[みくま商店「久山町、津久葉町」](https://mikumashop.com/jinjamap-isahaya-kuyama/)・[日本郵便の森山本村名の対照](https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1423811&id=150172&merge=3&pref=42)・[船津名の対照](https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1423061&id=150075&merge=3&pref=42)
+
+長野では前回の未確認35登録を県名簿と文化財索引に照合し、16登録は関連資料の本文まで確認しました。上田市岩下の天神宮は「てんじんぐう」を補完し、神社庁の鎮座地156番地と指定樹木の所在地117番地をそれぞれ記録しました。高知では地域の現地記事35本文を照合し、社名が対応する201保留登録のうち、四万十町宮内1857番地の高岡神社に「たかおかじんじゃ」を補完しました。[上田市「岩下のエノキとケヤキ」](https://museum.umic.jp/bunkazai/document/dot77.php)・[四万十川ウォーキング「高岡神社」](https://niyodogawa.org/blog/outdoor/shrines-and-temples/shrines/kochi/81595/)・[奥四万十時間「高岡神社」](https://okushimanto.jp/tourism/0193)
+
+国税庁の公開一覧は確認時点で11月24日の日次差分と10月30日の月次全件が最新でした。4県の17登録を補完し、全国29都道府県の保留は**9,566 → 9,549登録**です。[国税庁の公開差分一覧](https://www.houjin-bangou.nta.go.jp/download/sabun/)・[月次全件一覧](https://www.houjin-bangou.nta.go.jp/download/zenken/)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
