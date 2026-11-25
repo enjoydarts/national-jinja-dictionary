@@ -170930,12 +170930,137 @@
           "surface": "川上神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:36.584223+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[3] tr[4]: 名称=深海神社; 掲載読み=; 所在地=諫早市高来町船津名417番地",
           "facility_id": "72fde996-8409-57ad-bba8-b5d5d70c02af",
           "fetched_at": "2026-11-10T12:26:36.584223+00:00",
           "id": "f5e71e6a-445b-5e62-8ee1-1477a4a8f8b9",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ふかのみじんじゃ"
+              },
+              "expected_source_hash": "fb4d47ff052a4c371300451be1b800c472b04eee5d94980711ab5a4a21954b2c",
+              "facility_id": "72fde996-8409-57ad-bba8-b5d5d70c02af",
+              "identity_match": {
+                "agency_address": "諫早市高来町船津名417番地",
+                "agency_name": "深海神社",
+                "reference_address": "諫早市高来町船津417番地",
+                "reference_name": "深海神社"
+              },
+              "original": {
+                "address": "諫早市高来町船津名417番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
+                "name_raw": "深海神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会冊子の同一番号に掲載された全文ルビと地番を確認した。日本郵便の旧町別変更一覧の当該行と諫早市の現行町名一覧で旧新町域を対応づけ、国税庁でも同一社名と全地番を確認した。神社庁の旧表記が残る鎮座地は原文を保持した。",
+              "references": [
+                {
+                  "address_identity_proof": {
+                    "change_reference": {
+                      "checked_at": "2026-11-25T07:45:25.320166+00:00",
+                      "current_locality_raw": "諫早市高来町船津",
+                      "effective_date": "2005-03-01",
+                      "former_locality_raw": "船津名",
+                      "former_municipality_raw": "北高来郡高来町",
+                      "locator": "住所等の変更情報の旧町別本文「船津名」行",
+                      "page_hash": "7268addacd3cdc04caa3427c20cb54866f98c63b792cc931bfb63a926d6db8a5",
+                      "postal_code_raw": "859-0105",
+                      "source_publisher": "日本郵便株式会社",
+                      "title": "北高来郡高来町｜日本郵便株式会社",
+                      "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423431&cmp=1&mode=list&pref=42"
+                    },
+                    "entry_id": "f5e71e6a-445b-5e62-8ee1-1477a4a8f8b9",
+                    "expected_source_hash": "fb4d47ff052a4c371300451be1b800c472b04eee5d94980711ab5a4a21954b2c",
+                    "facility_id": "72fde996-8409-57ad-bba8-b5d5d70c02af",
+                    "kind": "documented_isahaya_locality_change",
+                    "listing_address_raw": "諫早市高来町船津名417番地",
+                    "reference_address_raw": "諫早市高来町船津417番地",
+                    "reference_page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                    "reference_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf"
+                  },
+                  "address_page": 1,
+                  "address_raw": "諫早市高来町船津417番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "深海神社 ／ ふかのみ じんじゃ\n25 ／ 深海神社 ／ 諫早市高来町船津417番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locator": "PDF 10頁「四面宮位置図」番号25の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "深海神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "深海神社",
+                  "printed_ruby_raw": "ふかのみ じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "ふかのみ じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 25,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                },
+                {
+                  "address_raw": "長崎県諫早市高来町船津４１７番地",
+                  "checked_at": "2026-11-25T05:55:45.934163+00:00",
+                  "corporation_number": "2310005004244",
+                  "excerpt": "深海神社 ／ 長崎県諫早市高来町船津４１７番地",
+                  "locator": "最新情報の法人番号・名称・所在地欄",
+                  "name_raw": "深海神社",
+                  "page_hash": "69378f378fa71977c45275bd7fce4086a71996d515a21efe271d494250377141",
+                  "reading_scope": "absent",
+                  "source_kind": "public_registry_location_observation",
+                  "source_publisher": "国税庁",
+                  "title": "深海神社の情報｜法人番号公表サイト",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2310005004244"
+                },
+                {
+                  "checked_at": "2026-11-25T07:45:25.410963+00:00",
+                  "excerpt": "高来町船津",
+                  "locator": "森山地域・高来地域のうち該当町名の行",
+                  "name_raw": "高来町船津",
+                  "page_hash": "37df1a87008e1d615879cf3b9059951bff02c963d744343ee625bcf21a13d340",
+                  "source_kind": "municipal_current_locality_list",
+                  "source_publisher": "諫早市",
+                  "title": "町の名称 - 諫早市",
+                  "url": "https://www.city.isahaya.nagasaki.jp/soshiki/42/1688.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
           "name_raw": "深海神社",
           "normalization": [
@@ -170943,11 +171068,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "525d9ccf404693d0e8558f098dd286d7aeedc1cf094186c9a3a248fba30c9aa2",
-          "reading": "",
+          "reading": "ふかのみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -170982,6 +171107,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ふかのみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ふかのみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "深海神社",
             "wikipedia_article_refs": [],
@@ -171012,7 +171151,7 @@
             "status": "pending",
             "surface": "深海神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "深海神社"
         },
         {
@@ -172038,12 +172177,149 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:36.584223+00:00",
+          "checked_at": "2026-11-25T00:45:06.192881+00:00",
           "evidence": "table[5] tr[4]: 名称=河上神社; 掲載読み=; 所在地=諫早市森山町大字森山本村名2829番地",
           "facility_id": "9ceac9bd-f4c4-5f74-927b-ec843719da63",
           "fetched_at": "2026-11-10T12:26:36.584223+00:00",
           "id": "03a7d48e-180a-5451-ba1f-c4edbf48e1b8",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "かわかみじんじゃ"
+              },
+              "expected_source_hash": "b74cc912d97c0d7394077f8f09ac920556cdc77bcbecbe8af75b10bf725d942d",
+              "facility_id": "9ceac9bd-f4c4-5f74-927b-ec843719da63",
+              "identity_match": {
+                "agency_address": "諫早市森山町大字森山本村名2829番地",
+                "agency_name": "河上神社",
+                "reference_address": "諫早市森山町本村2829番地",
+                "reference_name": "河上神社"
+              },
+              "original": {
+                "address": "諫早市森山町大字森山本村名2829番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
+                "name_raw": "河上神社",
+                "reading_raw": ""
+              },
+              "reason": "四面宮会冊子の同一番号に掲載された全文ルビと地番を確認した。日本郵便の旧町別変更一覧の当該行と諫早市の現行町名一覧で旧新町域を対応づけ、国税庁でも同一社名と全地番を確認した。神社庁の旧表記が残る鎮座地は原文を保持した。",
+              "references": [
+                {
+                  "address_identity_proof": {
+                    "change_reference": {
+                      "checked_at": "2026-11-25T07:45:28.005337+00:00",
+                      "current_locality_raw": "諫早市森山町本村",
+                      "effective_date": "2005-03-01",
+                      "former_locality_raw": "森山本村名",
+                      "former_municipality_raw": "北高来郡森山町",
+                      "locator": "住所等の変更情報の旧町別本文「森山本村名」行",
+                      "page_hash": "2a134ed6fb6dee34b1afc2831e3a5b93ee61ed28e52a372251debbecb8088834",
+                      "postal_code_raw": "854-0203",
+                      "source_publisher": "日本郵便株式会社",
+                      "title": "北高来郡森山町｜日本郵便株式会社",
+                      "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423411&cmp=1&mode=list&pref=42"
+                    },
+                    "entry_id": "03a7d48e-180a-5451-ba1f-c4edbf48e1b8",
+                    "expected_source_hash": "b74cc912d97c0d7394077f8f09ac920556cdc77bcbecbe8af75b10bf725d942d",
+                    "facility_id": "9ceac9bd-f4c4-5f74-927b-ec843719da63",
+                    "kind": "documented_isahaya_locality_change",
+                    "listing_address_raw": "諫早市森山町大字森山本村名2829番地",
+                    "reference_address_raw": "諫早市森山町本村2829番地",
+                    "reference_page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                    "reference_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf"
+                  },
+                  "address_page": 1,
+                  "address_raw": "諫早市森山町本村2829番地",
+                  "address_table_heading_raw": "九州の守り神・四面宮の神社一覧",
+                  "checked_at": "2026-11-25T00:45:06.192881+00:00",
+                  "distribution_host_confirmation": {
+                    "checked_at": "2026-11-25T00:47:08.710235+00:00",
+                    "locator": "本文の株式会社タウラボ会社案内",
+                    "observation": "配布PDFのホスト運営者。冊子自身の発行者は別に記録する。",
+                    "page_hash": "f51cbd52d61c0a92f02776ca0c7dc3748e7f3fa09ba3f119017fe573913cfb08",
+                    "source_kind": "publisher_host_profile",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "会社案内｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/company/"
+                  },
+                  "excerpt": "河上神社 ／ かわかみ じんじゃ\n19 ／ 河上神社 ／ 諫早市森山町本村2829番地",
+                  "host_policy_review": {
+                    "checked_at": "2026-11-25T00:52:26.728813+00:00",
+                    "locator": "本文のプライバシーポリシー",
+                    "observation": "運営者の個人情報方針を確認。冊子再配布の許諾規定は確認できない。",
+                    "page_hash": "0775a06950583a25639c82e73e303d766d1101d30be8543b7d14f06da6108b97",
+                    "source_kind": "publisher_host_policy",
+                    "source_publisher": "株式会社タウラボ",
+                    "title": "プライバシーポリシー｜株式会社タウラボ",
+                    "url": "https://taulabo.co.jp/privacy/"
+                  },
+                  "locator": "PDF 10頁「四面宮位置図」番号19の社名・ルビとPDF 1頁裏表紙の同番号所在地行",
+                  "material_scope": "冊子の表紙裏面・位置図の最小事実と出典だけを保持。図版、説明文、写真、連絡先は収録対象外。",
+                  "name_raw": "河上神社",
+                  "page_hash": "f7dba93d8ad6a845121502ed6caa2f209ed78d6c766c98e4408ca367055e7d1b",
+                  "pdf_pages": 10,
+                  "printed_cross_reference": "各神社の住所は裏表紙に掲載しております。",
+                  "printed_name_raw": "河上神社",
+                  "printed_ruby_raw": "かわかみ じんじゃ",
+                  "publication_credit_raw": "発行：四面宮会（令和2年2月）",
+                  "publication_date_raw": "令和2年2月",
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_page": 10,
+                  "reading_raw": "かわかみ じんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 19,
+                  "source_kind": "official_shrine",
+                  "source_publisher": "四面宮会",
+                  "title": "四面宮ものがたり",
+                  "url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+                  "visual_review": {
+                    "method": "pdf_render_individual_review",
+                    "profile_page_image_sha256": "43559a2061e96e9d6d4f72e1ebe49180439f9c83265b426b21c53c1f21302787",
+                    "table_page_image_sha256": "34e154c6cf31779baa393ef55d35641e0af481667cdfd433b51c499b0df15dcc"
+                  }
+                },
+                {
+                  "address_raw": "長崎県諫早市森山町本村２８２９番地",
+                  "checked_at": "2026-11-25T05:58:44.599860+00:00",
+                  "corporation_number": "6310005004257",
+                  "excerpt": "河上神社 ／ 長崎県諫早市森山町本村２８２９番地",
+                  "locator": "最新情報の法人番号・名称・所在地欄",
+                  "name_raw": "河上神社",
+                  "page_hash": "15d73ec4927f0a486ed621c9ebbc7c7011744991fb3dacedd83d3249be42d3a2",
+                  "reading_scope": "absent",
+                  "source_kind": "public_registry_location_observation",
+                  "source_publisher": "国税庁",
+                  "title": "河上神社の情報｜法人番号公表サイト",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005004257"
+                },
+                {
+                  "checked_at": "2026-11-25T07:45:25.410963+00:00",
+                  "excerpt": "森山町本村",
+                  "locator": "森山地域・高来地域のうち該当町名の行",
+                  "name_raw": "森山町本村",
+                  "page_hash": "37df1a87008e1d615879cf3b9059951bff02c963d744343ee625bcf21a13d340",
+                  "source_kind": "municipal_current_locality_list",
+                  "source_publisher": "諫早市",
+                  "title": "町の名称 - 諫早市",
+                  "url": "https://www.city.isahaya.nagasaki.jp/soshiki/42/1688.html"
+                },
+                {
+                  "address_raw": "諫早市森山町本村2829",
+                  "checked_at": "2026-11-25T05:55:43.622311+00:00",
+                  "excerpt": "河上神社 ／ 諫早市森山町本村2829",
+                  "locator": "本文「兼務社」の対象行",
+                  "name_raw": "河上神社",
+                  "page_hash": "0a8eb47c2d723b87dd304adb5b14f237baa61b0f81447a9c0c54191ef780eb39",
+                  "source_kind": "official_shrine",
+                  "source_publisher": "諫早神社",
+                  "title": "歴史・ご祭神｜諫早神社",
+                  "url": "https://isahaya-jinja.jp/%E3%81%94%E7%A5%88%E7%A5%B7%EF%BC%88%E3%81%8A%E7%A5%93%E3%81%84%EF%BC%89/%E6%AD%B4%E5%8F%B2%E3%83%BB%E3%81%94%E7%A5%AD%E7%A5%9E"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
           "name_raw": "河上神社",
           "normalization": [
@@ -172051,11 +172327,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "525d9ccf404693d0e8558f098dd286d7aeedc1cf094186c9a3a248fba30c9aa2",
-          "reading": "",
+          "reading": "かわかみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/isahaya.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -172090,6 +172366,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "かわかみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "かわかみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "河上神社",
             "wikipedia_article_refs": [],
@@ -172120,7 +172410,7 @@
             "status": "pending",
             "surface": "河上神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "河上神社"
         },
         {

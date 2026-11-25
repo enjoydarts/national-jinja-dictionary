@@ -770,11 +770,23 @@ Wikidataで社名・全地番が対応し、索引にかながある204項目の
 
 身延町では保留118登録を旧3町誌の宗教編292頁の文字層と比較し、町指定文化財などの個別18資料も確認しました。若宮八幡神社は観光冊子の全文ルビと同じ欄にある西嶋1534番地を確認し、町の地域資料が示す「西嶋」「西島」の両表記を記録しました。北杜市の9登録と合わせて山梨の10登録を補完しました。[身延の町誌](https://www.town.minobu.lg.jp/page/1287.html)・[身延町地域資料「西嶋和紙」](https://www3.town.minobu.lg.jp/lib/shiryou/washi/index.html)・[やまなしのお寺と神社・南アルプス／富士川流域エリア](https://www.yamanashi-kankou.jp/pamphlet/documents/temples_and_shrines_jp_minobu.pdf)
 
-長崎では前回の対象外だった諫早の7社を冊子の原画像で照合し、宗方神社、小川神社、福田神社、天満神社を補完しました。久山町の花之木神社は現地取材記事の全文かなと392番地2を確認しました。河上神社と深海神社は日本郵便の新旧町域の対照と国税庁の現所在地を記録し、現行の照合規則で扱えない住所表記差が残るため保留しました。[四面宮会『四面宮ものがたり』](https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf)・[みくま商店「久山町、津久葉町」](https://mikumashop.com/jinjamap-isahaya-kuyama/)・[日本郵便の森山本村名の対照](https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1423811&id=150172&merge=3&pref=42)・[船津名の対照](https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1423061&id=150075&merge=3&pref=42)
+長崎では前回の対象外だった諫早の7社を冊子の原画像で照合し、宗方神社、小川神社、福田神社、天満神社を補完しました。久山町の花之木神社は現地取材記事の全文かなと392番地2を確認しました。河上神社と深海神社は日本郵便の新旧町域の対照と国税庁の現所在地を記録し、当時の照合規則で扱えない住所表記差が残るため保留しました。[四面宮会『四面宮ものがたり』](https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf)・[みくま商店「久山町、津久葉町」](https://mikumashop.com/jinjamap-isahaya-kuyama/)・[日本郵便の旧森山町住所変更一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423411&cmp=1&mode=list&pref=42)・[旧高来町住所変更一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423431&cmp=1&mode=list&pref=42)
 
 長野では前回の未確認35登録を県名簿と文化財索引に照合し、16登録は関連資料の本文まで確認しました。上田市岩下の天神宮は「てんじんぐう」を補完し、神社庁の鎮座地156番地と指定樹木の所在地117番地をそれぞれ記録しました。高知では地域の現地記事35本文を照合し、社名が対応する201保留登録のうち、四万十町宮内1857番地の高岡神社に「たかおかじんじゃ」を補完しました。[上田市「岩下のエノキとケヤキ」](https://museum.umic.jp/bunkazai/document/dot77.php)・[四万十川ウォーキング「高岡神社」](https://niyodogawa.org/blog/outdoor/shrines-and-temples/shrines/kochi/81595/)・[奥四万十時間「高岡神社」](https://okushimanto.jp/tourism/0193)
 
 国税庁の公開一覧は確認時点で11月24日の日次差分と10月30日の月次全件が最新でした。4県の17登録を補完し、全国29都道府県の保留は**9,566 → 9,549登録**です。[国税庁の公開差分一覧](https://www.houjin-bangou.nta.go.jp/download/sabun/)・[月次全件一覧](https://www.houjin-bangou.nta.go.jp/download/zenken/)
+
+### 諫早の旧町域と国税庁の新着差分の照合（2026-11-25）
+
+諫早では日本郵便の旧高来町・旧森山町の住所変更一覧にある2行を、諫早市の現行町名と照合しました。神社庁の「高来町船津名417番地」「森山町大字森山本村名2829番地」は、四面宮会の冊子と国税庁の「高来町船津417番地」「森山町本村2829番地」に対応します。該当行の出典と全地番がそろう場合の読み照合を追加し、深海神社「ふかのみじんじゃ」と河上神社「かわかみじんじゃ」を補完しました。[日本郵便の旧高来町住所変更一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423431&cmp=1&mode=list&pref=42)・[旧森山町住所変更一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423411&cmp=1&mode=list&pref=42)・[諫早市の町の名称](https://www.city.isahaya.nagasaki.jp/soshiki/42/1688.html)・[四面宮会『四面宮ものがたり』](https://taulabo.co.jp/wp-content/themes/dp-voyageur-child/files/SHIMENGU_story2020_c.pdf)
+
+国税庁の11月25日付の日次差分は配布元の電子署名を検証し、2,063行を基準コミット `105b2c7` の全国保留9,549登録と比較しました。名称・全地番・全文フリガナがそろったのは京都府亀岡市の八幡宮と王子神社の2登録です。国税庁の個別ページで11月25日時点のフリガナを確認しました。京都府の10月30日版月次全件116,052行では、対応する法人番号が各1件で、いずれのフリガナ欄も空欄でした。[国税庁の公開差分一覧](https://www.houjin-bangou.nta.go.jp/download/sabun/)・[八幡宮の個別公表情報](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008000)・[王子神社の個別公表情報](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005007949)
+
+長野では上田市の西部・塩尻地域の歴史遺産マップで全文ルビを確認し、神社庁や県名簿などと比較した13登録のうち座摩神社、諏訪泉神社など7登録を補完しました。長野市の継続対象19登録では地区資料を照合しました。個別本文まで確認できた8登録を含む19登録を、全文かなや施設同定の根拠が不足するため保留しました。[上田市「西部・塩尻地域歴史遺産マップ」](https://www.city.ueda.nagano.jp/uploaded/attachment/11941.pdf)
+
+高知では県教育委員会の民俗芸能報告書616頁のうち文字層のある605頁を一括検索し、保留中の142種の社名を確認しました。四万十町の地吉八幡宮は境内の地番を確認し、全文かなが見つからず保留しました。長崎の島原半島3市では文化財一覧199行を照合し、有家の温泉神社は別の小字にも1277の枝番があるため保留しました。[高知県教育委員会の報告書](https://www.pref.kochi.lg.jp/doc/2022062700184/)・[南島原市の地域再生計画](https://www.chisou.go.jp/tiiki/tiikisaisei/dai59nintei/plan/y663.pdf)
+
+3府県の11登録を補完し、全国29都道府県の保留は**9,549 → 9,538登録**です。照合した資料の範囲と保留理由は調査履歴に記録しました。
 
 ## 施設公式の読みと所在地が別ページにある資料
 
