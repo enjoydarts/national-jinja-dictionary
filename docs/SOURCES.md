@@ -932,6 +932,20 @@ Geofabrikの11月24日版の北海道・中国地方も、同名かつ明示か�
 
 京都府の4登録を補完し、全国の保留は**9,363 → 9,359登録**です。
 
+### 歴史的風致の全国索引、関東の地図、地方の公刊資料（2026-11-26）
+
+国総研の歴史的風致形成建造物索引2,039行を照合しました。96市町村41都道府県が掲載され、寺社等の381行には名称のルビ欄がありません。国土交通省の認定都市資料のうち、保留のある27自治体の概要27点54頁を取得し、1,295保留登録の名称を照合しました。文字層の照合で41登録、画像の目視で1登録が候補となり、国総研の索引等との重複を除くと57登録でした。[国総研の認定都市アーカイブ](https://www.nilim.go.jp/lab/ddg/rekimachidb/index.html)・[国土交通省の認定状況](https://www.mlit.go.jp/toshi/rekimachi/toshi_history_tk_000010.html)
+
+山科区川田前畑町14の八幡宮は、京都橘大学と山科区役所の調査報告書の同じ行で「はちまんぐう」と地番を確認し、京都市公報の全所在地と照合しました。水火天満宮は京都市の文化資料と交通局冊子の「すいかてんまんぐう」を、市公報の扇町722番10と照合しました。彦根市の稲村神社は、市が編集・発行した地図の同じ施設欄に「いなむらじんじゃ」と稲里町2617があり、県神社庁の実詳細も同地番でした。甲州市の金井加里神社は市広報の読みが確認できましたが、神社庁と建造物指定資料の地番の対応が残り保留です。[山科区の調査報告書](https://www.city.kyoto.lg.jp/yamasina/page/0000041732.html)・[水火天満宮の京都市文化資料](https://kyoto-irodoru.city.kyoto.lg.jp/kamigyo/suika-tenmangu.html)・[京都市公報](https://www2.city.kyoto.lg.jp/somu/bunsyo/kouhou/r0304/0420/0420_1.pdf)・[彦根市の荒神山ウォーキングマップ](https://kojinyama.org/wp-content/uploads/2020/05/KojinyamaWalkingMap.pdf)
+
+関東のGeofabrik配布データで、かな付きの同名候補は25地物でした。保留登録と地物の県が同じ9地物は、重複を除くと6登録に対応しました。船橋市前貝塚町534の八幡神社は県の法人一覧で所在地を確認し、町会資料にある別の名称表記を区別しました。これで国内配布8地域の地図を候補抽出に使いました。地域ごとに調査時点が異なり、地図の候補数と個別の施設確認数を区別しています。地図はOpenStreetMap contributors（ODbL 1.0）、行政界はgeoBoundaries、集計は本プロジェクトです。[Geofabrik国内配布](https://download.geofabrik.de/asia/japan/)・[OpenStreetMapのライセンス](https://www.openstreetmap.org/copyright)・[geoBoundaries](https://www.geoboundaries.org/)・[千葉県の船橋市宗教法人一覧](https://www.pref.chiba.lg.jp/gakuji/shuukyou/houjin/funabashi.html)
+
+ジャパンサーチの地方・研究機関8資料群から、検索語「神社」で775件のメタデータを照合しました。青森の文化財・自然資料は165件すべてを取得し、99件に資料名のかな欄がありました。オーテピアの資料は同名候補5件の提供元本文を確認しましたが、鎮座地と読みがそろう登録はありませんでした。高知県立高知城歴史博物館の立川の資料では天神宮と四社住吉神社のかなを確認し、神社庁と法人資料の地名表記の対応を保留しました。[ジャパンサーチの検索API](https://jpsearch.go.jp/static/developer/webapi/ch3_search_api.html)・[ジャパンサーチの連携データ](https://jpsearch.go.jp/stats)・[高知城歴史博物館の「土佐の村々」](https://www.kochi-johaku.jp/wp-content/uploads/2016/06/10-13p1.pdf)
+
+熊本県神社庁の氏神検索は、原一覧8頁と詳細53件を確認しました。青井阿蘇神社の20掲載と西岡神宮の33掲載には、各居住地域を鎮座地へ結び付ける情報がありませんでした。西岡神宮の公式資料には本社と別に飛地28件・兼務社3件が掲載されているため、同じ表示名を持つ各掲載の統合を保留しました。[熊本県神社庁の氏神検索](https://kumamotokenjinjacho.jp/patron-god/)・[西岡神宮の兼務社・飛地境内案内](http://www.nishioka-jinguu.net/flying.php)
+
+京都府2件・滋賀県1件の読みを補完し、全国の保留は**9,359 → 9,356登録**です。
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
