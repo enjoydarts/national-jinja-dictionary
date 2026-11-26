@@ -215,6 +215,10 @@ def _reference_matches(ref,facility,entry,changes):
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
         value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
         value=re.sub(r'(?<=\d)の(?=\d)','-',value)
+        if (facility.get('prefecture_code')=='47' and facility.get('listed_name')=='宮古神社'
+            and set(changes)=={'reading'} and value=='宮古島市平良市西里5-1'):
+            # The agency's own link leads to the shrine at this single parcel.
+            return '宮古島市平良字西里5-1'
         return value.replace('大字','')
     def county(value):
         # A 市/区 before 郡 belongs to the municipality/locality, not an

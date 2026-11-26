@@ -126,3 +126,27 @@ class PublishedAddressFormsTest(unittest.TestCase):
             with self.subTest(acquired=acquired, printed=printed):
                 dataset, proposal = self.fixture('40', '福岡県', '神明神社', 'しんめいじんじゃ', acquired, printed)
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_miyako_shrine_compares_the_documented_nishizato_address(self):
+        acquired = '宮古島市平良市西里5-1'
+        printed = '沖縄県宮古島市平良字西里５番地の１'
+        dataset, proposal = self.fixture(
+            '47', '沖縄県', '宮古神社', 'みやこじんじゃ', acquired, printed,
+        )
+        result = apply_corrections(dataset, proposal)
+        self.assertEqual(len(eligible(result)), 1)
+        self.assertEqual(result['facilities'], dataset['facilities'])
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_miyako_comparison_does_not_extend_to_other_names_or_parcels(self):
+        for name, acquired, printed in (
+            ('宮古神社', '宮古島市平良市西里5-1', '宮古島市平良字西里5-10'),
+            ('宮古神社', '宮古島市平良市西里5-2', '宮古島市平良字西里5-2'),
+            ('宮古神社', '宮古島市平良市西里5-1', '宮古島市平良字西仲宗根5-1'),
+            ('別神社', '宮古島市平良市西里5-1', '宮古島市平良字西里5-1'),
+        ):
+            with self.subTest(name=name, acquired=acquired, printed=printed):
+                dataset, proposal = self.fixture(
+                    '47', '沖縄県', name, 'みやこじんじゃ', acquired, printed,
+                )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])

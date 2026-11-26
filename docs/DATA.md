@@ -239,6 +239,8 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 北九州市八幡西区の「浅川日の峰」と「浅川日の峯」、八幡東区の「春ノ町」と「春の町」は、市の町名・位置資料と同じ社名と住居表示を持つ法人個票を確認しました。この2町名の照合時に文字の差を扱い、各資料の原欄と丁目・街区・住居番号を保持します。[北九州市の浅川日の峯](https://www.city.kitakyushu.lg.jp/yahatanishi/w6100133.html)・[北九州市の豊山八幡神社所在地](https://www.city.kitakyushu.lg.jp/files/001168880.pdf)・[福岡県の春ノ町団地資料](https://www.pref.fukuoka.lg.jp/uploaded/attachment/128069.pdf)
 
+沖縄県神社庁の宮古神社の原欄「宮古島市平良市西里5-1」は、同じ掲載枠が案内する施設公式地図の「沖縄県宮古島市平良字西里5−1」と照合しました。宮古島市の新旧対照表は「平良市字西里」から「宮古島市平良字西里」への対応を示します。読み補完時の比較はこの社名と5-1の全地番に限定し、庁と施設の原欄を保持します。[宮古神社の公式地図](https://miyako-jinja.com/map.html)・[宮古島市の住所表記](https://www.city.miyakojima.lg.jp/syoukai/jyusyo.html)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行

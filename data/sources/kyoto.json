@@ -32707,12 +32707,78 @@
           "surface": "安井金比羅宮"
         },
         {
-          "checked_at": "2026-11-09T08:51:14.788689+00:00",
+          "checked_at": "2026-11-26T14:16:24.518089+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「豊國神社」、郵便番号「605-0931」、所在地「京都市東山区大和大路正面茶屋町」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "2e29762b-f9b7-5b9c-a631-9ea758da7329",
           "fetched_at": "2026-11-09T08:51:14.788689+00:00",
           "id": "1ee61e91-ed33-5ab7-b639-3e2c74468c0f",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "とよくにじんじゃ"
+              },
+              "expected_source_hash": "89ae7a99d94923b79d9b06920a41fce523356dbbbc5ba5406c998f94d21b3326",
+              "facility_id": "2e29762b-f9b7-5b9c-a631-9ea758da7329",
+              "identity_match": {
+                "agency_address": "京都市東山区大和大路正面茶屋町",
+                "agency_name": "豊國神社",
+                "reference_address": "京都市東山区大和大路正面茶屋町530",
+                "reference_name": "豊國神社"
+              },
+              "original": {
+                "address": "京都市東山区大和大路正面茶屋町",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/08.html",
+                "name_raw": "豊國神社",
+                "reading_raw": ""
+              },
+              "reason": "高台寺が自身のサイトに掲載する共同巡拝資料で、参画神社の正式表記・明示全文かな・原町域に続く530を確認した。京都市歴史資料館の「豊国神社」の同じ全文かなと地区を照合し、原字國と神社庁の原町域を維持した。",
+              "references": [
+                {
+                  "address_raw": "京都市東山区大和大路正面茶屋町530",
+                  "checked_at": "2026-11-26T14:16:24.518089+00:00",
+                  "excerpt": "豊國神社 / とよくにじんじゃ / 京都市東山区大和大路正面茶屋町530",
+                  "locator": "参画神社紹介の見出しと施設所在地欄。",
+                  "mime_type": "text/html",
+                  "name_raw": "豊國神社",
+                  "page_hash": "260942b184d9438714d915157967d37ab4925ae3127aa2b1f90aa78f328610d2",
+                  "policy_reference": {
+                    "checked_at": "2026-11-26T14:18:17.452598+00:00",
+                    "mime_type": "text/html",
+                    "page_hash": "55d57b8ea9fd44a3322027307bcbb858defda1314e22fa5f178a9d186acee406",
+                    "url": "https://www.kodaiji.com/policy.html"
+                  },
+                  "publisher_reference": {
+                    "checked_at": "2026-11-26T14:16:27.772096+00:00",
+                    "mime_type": "text/html",
+                    "page_hash": "0f0b64694d30865c097602d7146e043abc35747b7b6c7abe1a4db11bc65b0d8d",
+                    "url": "https://www.kodaiji.com/"
+                  },
+                  "reading_raw": "とよくにじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "collaborating_temple_published_pilgrimage",
+                  "source_publisher": "鷲峰山 高台寺",
+                  "title": "印で結ぶ絆めぐり・京都東1 豊國神社",
+                  "url": "https://www.kodaiji.com/kizuna/toyokuni_kyoto.html"
+                },
+                {
+                  "address_raw": "東山区正面通本町東入茶屋町",
+                  "checked_at": "2026-11-26T14:17:41.131005+00:00",
+                  "excerpt": "豊国神社 / とよくにじんじゃ / 東山区正面通本町東入茶屋町",
+                  "locator": "東山区 豊国神社の画像キャプションにある施設名と丸括弧。",
+                  "mime_type": "text/html",
+                  "name_raw": "豊国神社",
+                  "page_hash": "f86770fe7b3b16bde151685531638d8368b048a871af7fef0f6a62be6daba906",
+                  "reading_raw": "とよくにじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_history",
+                  "source_publisher": "京都市歴史資料館",
+                  "title": "都市史20 伏見城",
+                  "url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/nenpyou/htmlsheet/toshi20.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/08.html",
           "name_raw": "豊國神社",
           "normalization": [
@@ -32720,11 +32786,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "ff8578778630fe1df91ac8779e25bbba9131e5f91977f31cfd285f57c0e811a0",
-          "reading": "",
+          "reading": "とよくにじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/08.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.kodaiji.com/kizuna/toyokuni_kyoto.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -32809,6 +32875,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "とよくにじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "とよくにじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "豊國神社",
             "wikipedia_article_refs": [],
@@ -32839,7 +32919,7 @@
             "status": "pending",
             "surface": "豊國神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "豊國神社"
         },
         {
@@ -68125,12 +68205,100 @@
           "surface": "春日神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:29.237272+00:00",
+          "checked_at": "2026-11-26T14:15:07.703154+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「恭仁神社」、郵便番号「619-1105」、所在地「木津川市西宮ノ東35」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "39956e49-623e-5815-a25f-d1a0d7dd69d3",
           "fetched_at": "2026-11-09T08:51:29.237272+00:00",
           "id": "08dea4a0-9b51-5f69-a659-13cd63f8217a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "くにじんじゃ"
+              },
+              "expected_source_hash": "d116eb264194a9a0a658747e82675c64b51a7fc06279b6c20de04932bb97b2b1",
+              "facility_id": "39956e49-623e-5815-a25f-d1a0d7dd69d3",
+              "identity_match": {
+                "agency_address": "木津川市西宮ノ東35",
+                "agency_name": "恭仁神社",
+                "reference_address": "京都府木津川市西宮ノ東35",
+                "reference_name": "恭仁神社"
+              },
+              "original": {
+                "address": "木津川市西宮ノ東35",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
+                "name_raw": "恭仁神社",
+                "reading_raw": ""
+              },
+              "reason": "地域の写真館による当該社の案内が社名の全文かなと、原掲載と同じ木津川市西宮ノ東35を明示する。同案内の実リンク先の神社公式と市文化財の本殿情報では、加茂町付きの現鎮座地35を確認した。三資料の住所原文を維持。",
+              "references": [
+                {
+                  "address_raw": "京都府木津川市西宮ノ東35",
+                  "checked_at": "2026-11-26T14:15:07.703154+00:00",
+                  "excerpt": "恭仁神社 / くにじんじゃ / 京都府木津川市西宮ノ東35",
+                  "locator": "「恭仁神社の特徴」の名の直後の全かなと「基本情報・アクセス・駐車場情報」の住所欄。",
+                  "mime_type": "text/html; charset=UTF-8",
+                  "name_raw": "恭仁神社",
+                  "official_link_raw": "https://kuni-jinja.jp/",
+                  "page_hash": "81d7a3f10bd6d6e2f65f1624490a9c1d01d588472df5ce5ead60e1bb8ad12a91",
+                  "policy_reference": {
+                    "checked_at": "2026-11-26T14:17:36.283849+00:00",
+                    "mime_type": "text/html; charset=UTF-8",
+                    "page_hash": "e087614d1935de18157e48b6c603957eb3f2ad6c3c36f4d7a22bfa16e0633405",
+                    "url": "https://photo-watanabe.jp/privacy/"
+                  },
+                  "publisher_reference": {
+                    "checked_at": "2026-11-26T14:17:39.436568+00:00",
+                    "mime_type": "text/html; charset=UTF-8",
+                    "page_hash": "503fe29592d6eaec963baae740ea73f59ca8231a772286de3f01dcde17392e8a",
+                    "url": "https://photo-watanabe.jp/company/"
+                  },
+                  "reading_raw": "くにじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_professional_site_article",
+                  "source_publisher": "フォトスタジオワタナベ（渡辺写真館）",
+                  "title": "恭仁神社の解説記事",
+                  "url": "https://photo-watanabe.jp/blog/kuni-jinja/"
+                },
+                {
+                  "address_raw": "京都府木津川市加茂町西宮ノ東３５",
+                  "checked_at": "2026-11-26T14:15:08.948395+00:00",
+                  "excerpt": "恭仁神社 / 京都府木津川市加茂町西宮ノ東３５",
+                  "locator": "神社サイトの所在地欄。",
+                  "mime_type": "text/html; charset=UTF-8",
+                  "name_raw": "恭仁神社",
+                  "page_hash": "13509fb0a26cd9f41626740b6939f9879dc8c867038e764ef8b6d2f57259c230",
+                  "policy_reference": {
+                    "checked_at": "2026-11-26T14:17:36.906816+00:00",
+                    "mime_type": "text/html; charset=UTF-8",
+                    "page_hash": "4a9958e1de5e8274eefc8a58d3dbb27ff426cbd0b32aa05490eb605afab2ce98",
+                    "url": "https://kuni-jinja.jp/privacy/"
+                  },
+                  "reading_raw": "",
+                  "reading_scope": "absent",
+                  "source_kind": "official_shrine",
+                  "source_publisher": "恭仁神社",
+                  "title": "恭仁神社 | 木津川・加茂町に鎮座する神社",
+                  "url": "https://kuni-jinja.jp/"
+                },
+                {
+                  "address_raw": "木津川市加茂町西宮ノ東35",
+                  "checked_at": "2026-11-26T14:18:17.446167+00:00",
+                  "excerpt": "(宗)恭仁神社 / 木津川市加茂町西宮ノ東35",
+                  "locator": "PDF 5頁、府暫定登録 番号10 恭仁神社 本殿。所有者・所在地欄。",
+                  "mime_type": "application/pdf",
+                  "name_raw": "恭仁神社",
+                  "page_hash": "30ac3637e20f0deb14004433128208a0e94d43c806b8967dfd8e655d0be6d7bd",
+                  "reading_raw": "",
+                  "reading_scope": "absent",
+                  "source_kind": "municipal_cultural_property_register",
+                  "source_publisher": "木津川市",
+                  "title": "木津川市内指定等文化財一覧（令和7年3月25日現在）",
+                  "url": "https://www.city.kizugawa.lg.jp/cmsfiles/contents/0000001/1559/20250806-145539.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
           "name_raw": "恭仁神社",
           "normalization": [
@@ -68138,11 +68306,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d347049fc751993ff86daffa48ea9b666731f3e385465994dda37e77afc28587",
-          "reading": "",
+          "reading": "くにじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://photo-watanabe.jp/blog/kuni-jinja/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -68237,6 +68405,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "くにじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "くにじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "恭仁神社",
             "wikipedia_article_refs": [],
@@ -68267,7 +68449,7 @@
             "status": "pending",
             "surface": "恭仁神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "恭仁神社"
         },
         {

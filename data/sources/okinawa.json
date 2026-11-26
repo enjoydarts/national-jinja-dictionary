@@ -828,12 +828,122 @@
           "surface": "天久宮"
         },
         {
-          "checked_at": "2026-11-08T14:25:43.505616+00:00",
+          "checked_at": "2026-11-12T06:58:34.776273+00:00",
           "evidence": "p#miyakojinja: 名称=宮古神社; 掲載読み=; 所在地=宮古島市平良市西里5-1",
           "facility_id": "46c2150a-4722-56d4-a339-4492745087a6",
           "fetched_at": "2026-11-08T14:25:43.505616+00:00",
           "id": "8e10b95e-8e3d-57e1-a075-b1d7f5923ae8",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "みやこじんじゃ"
+              },
+              "expected_source_hash": "a83d9e790a5ceb16297f5830ffc7f9db6a689f4fb9d178a3e4f583408c5615e6",
+              "facility_id": "46c2150a-4722-56d4-a339-4492745087a6",
+              "identity_match": {
+                "agency_address": "宮古島市平良市西里5-1",
+                "agency_name": "宮古神社",
+                "municipal_address_observation": {
+                  "checked_at": "2026-11-26T14:15:15.849402+00:00",
+                  "current_locality_raw": "宮古島市平良字西里",
+                  "excerpt": "906-0012 / 旧 平良市字西里 / 新 宮古島市平良字西里",
+                  "locator": "旧・新住所表の郵便番号906-0012行",
+                  "old_locality_raw": "平良市字西里",
+                  "page_hash": "def087c8a49a770fabd4d6a285b79fa3824f7b54b04cce1c182ca4cabcd74c26",
+                  "postal_code_raw": "906-0012",
+                  "source_kind": "municipal_address_correspondence",
+                  "title": "宮古島市・住所表記",
+                  "url": "https://www.city.miyakojima.lg.jp/syoukai/jyusyo.html"
+                },
+                "reference_address": "沖縄県宮古島市平良字西里5-1",
+                "reference_name": "宮古神社"
+              },
+              "original": {
+                "address": "宮古島市平良市西里5-1",
+                "listing_url": "https://jinjacho.naminouegu.jp/",
+                "name_raw": "宮古神社",
+                "reading_raw": ""
+              },
+              "reason": "神社庁の同じ掲載枠が宮古神社の公式サイトを案内し、公式地図は宮古島市平良字西里5−1を掲載する。市の住所表記対照の旧平良市字西里と新宮古島市平良字西里の対応を点検し、地番を含めて同じ鎮座地であることを確認した。現地紹介の2記事がともに同名・全文かな・全地番を掲載する。原欄は保持し、この施設の5-1の読み補完で照合する。",
+              "references": [
+                {
+                  "address_raw": "沖縄県宮古島市平良字西里5-1",
+                  "checked_at": "2026-11-12T06:58:34.776273+00:00",
+                  "excerpt": "宮古神社（みやこじんじゃ） / 沖縄県宮古島市平良字西里5-1",
+                  "locator": "基本情報の住所と最初の本文段落の全文かな",
+                  "name_raw": "宮古神社",
+                  "observation": "正本に残る公開本文の過去取得証跡を参照。今回は未再取得。",
+                  "page_hash": "40026463cb8669a736e2436c2387ed640890a1603e67434464ea0d3458dec4b9",
+                  "reading_context_raw": "宮古神社（みやこじんじゃ）は",
+                  "reading_raw": "みやこじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "previously_inspected_secondary_article",
+                  "title": "神社と古事記・宮古神社",
+                  "url": "https://www.buccyake-kojiki.com/archives/1059257902.html"
+                },
+                {
+                  "address_raw": "沖縄県宮古島市平良字西里5-1",
+                  "checked_at": "2026-11-26T14:17:08.529697+00:00",
+                  "excerpt": "宮古神社（みやこじんじゃ） / 沖縄県宮古島市平良字西里5-1",
+                  "locator": "基本情報（早見表）名称・所在地の2行",
+                  "name_raw": "宮古神社",
+                  "observation": "実本文で読みと全地番を確認。規約は禁止する過度な自動取得と無許可の商業目的での複製・転載・再配布を掲示。公開資料の限定事実の照合に使い、単独採用は保留。",
+                  "page_hash": "4fa23c3751c911c41f4865fb330f914b0b54ec8097746808269bf458c05edf53",
+                  "reading_raw": "みやこじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "secondary_travel_article",
+                  "terms_url": "https://travelhub.slt-inc.jp/terms",
+                  "title": "TRAVEL HUB・宮古神社",
+                  "url": "https://travelhub.slt-inc.jp/okinawa/miyakojima/miyako-jinja/"
+                },
+                {
+                  "address_raw": "宮古島市平良市西里5-1",
+                  "checked_at": "2026-11-26T14:15:15.235427+00:00",
+                  "excerpt": "宮古神社 / 宮古島市平良市西里5-1",
+                  "locator": "包括神社一覧の p#miyakojinja のうち本文が「宮古神社」で公式実href http://miyako-jinja.com を持つ掲載枠",
+                  "name_raw": "宮古神社",
+                  "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+                  "source_kind": "official_agency",
+                  "title": "沖縄県神社庁・神社本庁包括神社一覧（沖縄県）",
+                  "url": "https://jinjacho.naminouegu.jp/"
+                },
+                {
+                  "address_raw": "沖縄県宮古島市平良字西里5−1",
+                  "checked_at": "2026-11-26T14:15:15.240890+00:00",
+                  "excerpt": "宮古神社　住所：沖縄県宮古島市平良字西里5−1",
+                  "locator": "宮古神社 地図の「宮古神社　住所：」行",
+                  "name_raw": "宮古神社",
+                  "page_hash": "0ed4c04e7a90f74b4c10dcb5eb56f1b8d9365ca69ac684ef58f57373f65f89e8",
+                  "source_kind": "official_shrine",
+                  "title": "宮古神社公式ホームページ・地図・連絡先",
+                  "url": "https://miyako-jinja.com/map.html"
+                },
+                {
+                  "address_raw": "沖縄県宮古島市平良西里5番地1",
+                  "checked_at": "2026-11-26T14:15:17.927831+00:00",
+                  "excerpt": "宮古神社 / 鎮座地　沖縄県宮古島市平良西里5番地1",
+                  "locator": "鎮座地欄",
+                  "name_raw": "宮古神社",
+                  "page_hash": "f3214b3dcbf9551b905a41335fa0fa0bf302e3250a5d5e0f5ac8a9bc5dec476c",
+                  "source_kind": "official_shrine",
+                  "title": "宮古神社公式ホームページ・宮古神社について",
+                  "url": "https://miyako-jinja.com/about.html"
+                },
+                {
+                  "address_raw": "宮古島市 平良西里5-1",
+                  "checked_at": "2026-11-26T14:15:21.913414+00:00",
+                  "excerpt": "宮古神社 / 宮古島市 平良西里5-1",
+                  "locator": "PDF 1/7頁 No.10、法人名・市町村 住所欄",
+                  "name_raw": "宮古神社",
+                  "page_hash": "ab16c3b816cc26a21591da5495434f062387f5e1dc8aee3cfd2966ce88f8e72d",
+                  "source_kind": "prefectural_religious_corporations_list",
+                  "title": "沖縄県 宗教法人名簿（令和7年3月31日現在）",
+                  "url": "https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/014/071/r70331shukyouhoujin.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://jinjacho.naminouegu.jp/",
           "name_raw": "宮古神社",
           "normalization": [
@@ -841,11 +951,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
-          "reading": "",
+          "reading": "みやこじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://jinjacho.naminouegu.jp/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.buccyake-kojiki.com/archives/1059257902.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -990,6 +1100,20 @@
             "prefecture_code": "47",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "みやこじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "みやこじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "宮古神社",
             "wikipedia_article_refs": [
@@ -1029,7 +1153,7 @@
             "status": "pending",
             "surface": "宮古神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "宮古神社"
         },
         {
