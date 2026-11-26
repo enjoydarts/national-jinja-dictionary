@@ -53187,12 +53187,67 @@
           "surface": "通神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:00.614258+00:00",
+          "checked_at": "2026-11-26T14:04:02.066648+00:00",
           "evidence": "2115 伏木神社 甲州市勝沼町小佐手1028 東山梨支部 詳細>>",
           "facility_id": "4fe567fb-2178-5afa-822f-3d54dbd97fc3",
           "fetched_at": "2026-11-08T14:28:00.614258+00:00",
           "id": "2ee14d9c-d261-5dd8-a999-92883090fc05",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ふしきじんじゃ"
+              },
+              "expected_source_hash": "c2a67fa2f3cc47a1ccb375d0ee4ec197fd1e06e8b12edf0d0f99195ad545037f",
+              "facility_id": "4fe567fb-2178-5afa-822f-3d54dbd97fc3",
+              "identity_match": "山梨県神社庁の個別2115と全国神社マップの個別4846は同名かつ勝沼町小佐手1028で一致する。甲州市教育委員会の東雲小地域探検地図の⑩と写真説明は同一番号で対応し、県立図書館所蔵『甲斐国社記・寺記』神社編の索引にも東雲村小佐手の同名行がある。",
+              "original": {
+                "address": "甲州市勝沼町小佐手1028",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/2/5",
+                "name_raw": "伏木神社",
+                "reading_raw": ""
+              },
+              "reason": "全国神社マップの個別本文が社名見出しに全文かなを掲載する。甲州市教育委員会の勝沼地域探検冊子の同名の地点⑩にも、同じ社名全体のかなが写真説明に印字される。",
+              "references": [
+                {
+                  "address_raw": "山梨県甲州市勝沼町小佐手1028",
+                  "checked_at": "2026-11-26T14:04:02.066648+00:00",
+                  "excerpt": "伏木神社（ふしきじんじゃ） 住所 山梨県甲州市勝沼町小佐手1028",
+                  "locator": "h1 内の社名・かな、基本情報の住所欄（郵便番号は前行）",
+                  "name_raw": "伏木神社",
+                  "page_hash": "1ad6a4a69f5c89adc6bc67bea0896b1eebdc742f7e8afe8ce026d02503773a26",
+                  "reading_raw": "ふしきじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "secondary_shrine_directory",
+                  "title": "全国神社マップ・伏木神社",
+                  "url": "https://shrine.mobi/area/koshinetsu/yamanashi/koshu-shi/4846"
+                },
+                {
+                  "checked_at": "2026-11-26T14:02:42.549742+00:00",
+                  "excerpt": "⑩伏木神社／ふしきじんじゃのかみさまがいるから。",
+                  "locator": "PDF 7/10頁、東雲小の地域探検地図の⑩と左下の同番号掲載枠・中央写真の説明",
+                  "name_raw": "伏木神社",
+                  "page_hash": "ce4d48dd418e4d8ee034a6c35d1e2f00ef64303eb1b22b9a08155ccc36fb2654",
+                  "reading_raw": "ふしきじんじゃ",
+                  "reading_scope": "full_name_in_caption",
+                  "source_kind": "municipal_education_booklet",
+                  "title": "勝沼地域における小学校地域探検の記録 ２０１８ 勝沼らしさってなんだろう？",
+                  "url": "https://www.city.koshu.yamanashi.jp/docs/2020070700066/file_contents/katsunuma_exploratio2018.pdf"
+                },
+                {
+                  "address_raw": "甲州市勝沼町小佐手1028",
+                  "checked_at": "2026-11-26T14:01:43.314042+00:00",
+                  "excerpt": "伏木神社 ■鎮座地： 甲州市勝沼町小佐手1028",
+                  "locator": "個別2115、社名見出しと「■鎮座地：」行",
+                  "name_raw": "伏木神社",
+                  "page_hash": "f7c5a617edadc7ecdfa0862a984335074a871d7c11dc1e846a00f5fe1dcab0cc",
+                  "source_kind": "official_agency",
+                  "title": "山梨県神社庁・伏木神社",
+                  "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/2115"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/2/5",
           "name_raw": "伏木神社",
           "normalization": [
@@ -53200,11 +53255,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "c02be0f9c6d8771b924e05da108f3323c8afbfff7bc9c6adf8244f1c4a305840",
-          "reading": "",
+          "reading": "ふしきじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/2/5",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/koshinetsu/yamanashi/koshu-shi/4846",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -53244,6 +53299,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ふしきじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ふしきじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "伏木神社",
             "wikipedia_article_refs": [],
@@ -53274,7 +53343,7 @@
             "status": "pending",
             "surface": "伏木神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "伏木神社"
         },
         {

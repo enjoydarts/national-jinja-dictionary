@@ -12862,12 +12862,67 @@
           "surface": "枝光八幡宮"
         },
         {
-          "checked_at": "2026-11-09T08:24:33.802192+00:00",
+          "checked_at": "2026-11-26T13:58:39.439709+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「豊山八幡神社」と所在地「北九州市八幡東区春ノ町4-4-1」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "a72e0747-99a8-5123-9dfb-979e8ad98055",
           "fetched_at": "2026-11-09T08:24:33.802192+00:00",
           "id": "b5955607-28e4-5825-a3ba-252ee6be5f66",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "とよやまはちまんじんじゃ"
+              },
+              "expected_source_hash": "971c917c3b3a0d053ad31835ca866ef0ac047652cf9c04de8e39dad312520177",
+              "facility_id": "a72e0747-99a8-5123-9dfb-979e8ad98055",
+              "identity_match": {
+                "agency_address": "北九州市八幡東区春ノ町4-4-1",
+                "agency_name": "豊山八幡神社",
+                "reference_address": "福岡県北九州市八幡東区春の町４丁目４番１号",
+                "reference_name": "豊山八幡神社"
+              },
+              "original": {
+                "address": "北九州市八幡東区春ノ町4-4-1",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
+                "name_raw": "豊山八幡神社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁の法人名・全文フリガナと独立の現地訪問記の全文かなが一致。市発表の神社所在地は春の町4丁目4-1。県の春ノ町団地資料も所在地に春の町を用いる。神社庁の「春ノ町」と同じ八幡東区・全番号を照合し、各表記を保持して読みを補う。",
+              "references": [
+                {
+                  "address_raw": "福岡県北九州市八幡東区春の町４丁目４番１号",
+                  "address_role": "法人の本店又は主たる事務所",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）。該当の法人・社名・全住所を照合。",
+                  "checked_at": "2026-11-26T13:58:39.439709+00:00",
+                  "corporate_number_raw": "6290805004450",
+                  "excerpt": "豊山八幡神社 ／ トヨヤマハチマンジンジャ ／ 福岡県北九州市八幡東区春の町４丁目４番１号",
+                  "locator": "最新情報の商号又は名称、フリガナ、本店又は主たる事務所の所在地",
+                  "name_raw": "豊山八幡神社",
+                  "page_hash": "8b7ad2fc2930f034398897d5bda53011a0a86e6d63f3dbec47bbca9293834e01",
+                  "reading_raw": "トヨヤマハチマンジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_entity",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト・豊山八幡神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6290805004450"
+                },
+                {
+                  "address_raw": "福岡県北九州市八幡東区春の町4-4-1",
+                  "checked_at": "2026-11-26T13:58:37.334505+00:00",
+                  "excerpt": "豊山八幡神社 ／ とよやまはちまんじんじゃ ／ 福岡県北九州市八幡東区春の町4-4-1",
+                  "locator": "記事見出しと所在地の行",
+                  "name_raw": "豊山八幡神社",
+                  "page_hash": "f2854395f98c2e356e53a75c4b8be630fda1ddd5561e002c9ad264026c8d6b59",
+                  "publisher_profile_url": "https://jinja.hontake.jp/",
+                  "reading_raw": "とよやまはちまんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "title": "Hontake「豊山八幡神社」",
+                  "url": "https://jinja.hontake.jp/88toyoyamahachiman/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
           "name_raw": "豊山八幡神社",
           "normalization": [
@@ -12875,11 +12930,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
-          "reading": "",
+          "reading": "とよやまはちまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6290805004450",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -13020,6 +13075,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "とよやまはちまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "とよやまはちまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "豊山八幡神社",
             "wikipedia_article_refs": [],
@@ -13050,7 +13119,7 @@
             "status": "pending",
             "surface": "豊山八幡神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "豊山八幡神社"
         },
         {
@@ -13927,12 +13996,68 @@
           "surface": "仲宿八幡宮"
         },
         {
-          "checked_at": "2026-11-09T08:24:33.802192+00:00",
+          "checked_at": "2026-11-26T13:58:36.349773+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「日峯神社」と所在地「北九州市八幡西区浅川日の峰1-8-8」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "4af83ea5-5b90-55eb-8fb9-1d06b8fbfb9f",
           "fetched_at": "2026-11-09T08:24:33.802192+00:00",
           "id": "c55eed68-48be-5200-9e64-75bd329301ab",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ひのみねじんじゃ"
+              },
+              "expected_source_hash": "ee8d8f6621b2f1090b9c3edbe7e6ac7137f048b255f15823db1ea968441e3df5",
+              "facility_id": "4af83ea5-5b90-55eb-8fb9-1d06b8fbfb9f",
+              "identity_match": {
+                "agency_address": "北九州市八幡西区浅川日の峰1-8-8",
+                "agency_name": "日峯神社",
+                "reference_address": "福岡県北九州市八幡西区浅川日の峯１丁目８番８号",
+                "reference_name": "日峯神社"
+              },
+              "original": {
+                "address": "北九州市八幡西区浅川日の峰1-8-8",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
+                "name_raw": "日峯神社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁の法人名・明示フリガナ・全住所と県の観光資料の同名・全文かな・住居表示を照合。神社公式も浅川日の峯1丁目8番8号を掲載し、市の所管区域が浅川日の峯の町名を明記する。庁の「日の峰」と資料の「日の峯」は比較時だけ揃え、原欄を保持して読みを補う。",
+              "references": [
+                {
+                  "address_raw": "福岡県北九州市八幡西区浅川日の峯１丁目８番８号",
+                  "address_role": "法人の本店又は主たる事務所",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）。該当の法人・社名・全住所を照合。",
+                  "checked_at": "2026-11-26T13:58:36.349773+00:00",
+                  "corporate_number_raw": "4290805004469",
+                  "excerpt": "日峯神社 ／ ヒノミネジンジャ ／ 福岡県北九州市八幡西区浅川日の峯１丁目８番８号",
+                  "locator": "最新情報の商号又は名称、フリガナ、本店又は主たる事務所の所在地",
+                  "name_raw": "日峯神社",
+                  "page_hash": "b92f76007a421cae2f929614539709541e329e71068a435722d7b49c50c8b9df",
+                  "reading_raw": "ヒノミネジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_entity",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト・日峯神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4290805004469"
+                },
+                {
+                  "address_raw": "〒807-0876　福岡県北九州市八幡西区浅川日の峯1丁目8番8号",
+                  "checked_at": "2026-11-26T13:58:33.325797+00:00",
+                  "excerpt": "日峯神社 ／ ひのみねじんじゃ ／ 〒807-0876　福岡県北九州市八幡西区浅川日の峯1丁目8番8号",
+                  "label_yomi_raw": "ひのみねじんじゃ（きたきゅうしゅうし）",
+                  "locator": "記事見出しと独立よみ欄、基本情報の住所欄",
+                  "name_raw": "日峯神社",
+                  "page_hash": "555d84fabfcd29efb318659e6f431cb9b2141ec3602f70a283d9d3b370828e45",
+                  "reading_raw": "ひのみねじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "prefectural_tourism",
+                  "title": "クロスロードふくおか「日峯神社（北九州市）」",
+                  "title_raw": "日峯神社（北九州市）",
+                  "url": "https://www.crossroadfukuoka.jp/spot/15660"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
           "name_raw": "日峯神社",
           "normalization": [
@@ -13940,11 +14065,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
-          "reading": "",
+          "reading": "ひのみねじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4290805004469",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -14105,6 +14230,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ひのみねじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ひのみねじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "日峯神社",
             "wikipedia_article_refs": [],
@@ -14135,7 +14274,7 @@
             "status": "pending",
             "surface": "日峯神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "日峯神社"
         },
         {
@@ -14533,12 +14672,62 @@
           "surface": "飛幡八幡宮"
         },
         {
-          "checked_at": "2026-11-09T08:24:33.802192+00:00",
+          "checked_at": "2026-11-26T14:06:15.562226+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「中原八幡宮」と所在地「北九州市戸畑区中原東3-12-1」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "f6ba51aa-5d39-519b-b6ca-3bd9f81d11b2",
           "fetched_at": "2026-11-09T08:24:33.802192+00:00",
           "id": "55ca0d04-13e5-5170-b0db-006e7b97c4bc",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "なかばるはちまんぐう"
+              },
+              "expected_source_hash": "872a584665bfda01e94c543c856c28f0682be84ad756312bcf12e83a87c6b0bf",
+              "facility_id": "f6ba51aa-5d39-519b-b6ca-3bd9f81d11b2",
+              "identity_match": {
+                "agency_address": "北九州市戸畑区中原東3-12-1",
+                "agency_name": "中原八幡宮",
+                "reference_address": "北九州市戸畑区中原東3-12-1",
+                "reference_name": "中原八幡宮"
+              },
+              "original": {
+                "address": "北九州市戸畑区中原東3-12-1",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
+                "name_raw": "中原八幡宮",
+                "reading_raw": ""
+              },
+              "reason": "祭礼の個別本文に主社の社名・全文かなと中原東3-12-1が明記され、同じ鎮座地の現地取材にも同じ全文かながある。町字・丁目・全番号を原欄のまま保持して照合し、読みを補う。",
+              "references": [
+                {
+                  "address_raw": "北九州市戸畑区中原東3-12-1",
+                  "checked_at": "2026-11-26T14:06:15.562226+00:00",
+                  "excerpt": "中原八幡宮（なかばるはちまんぐう） ／ 北九州市戸畑区中原東3-12-1",
+                  "locator": "中原大山笠宿欄の社名・全文かなと直後の所在地",
+                  "name_raw": "中原八幡宮",
+                  "page_hash": "39c2b6b37084ba152f494da6170f2ff6691c497926d411d950d6e35d3e71f70a",
+                  "reading_raw": "なかばるはちまんぐう",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_festival_organization",
+                  "title": "戸畑祇園大山笠「中原大山笠」",
+                  "url": "https://tobatagion.jp/nakabaru/"
+                },
+                {
+                  "address_raw": "福岡県北九州市戸畑区中原東三丁目12番1号",
+                  "checked_at": "2026-11-26T14:05:26.509370+00:00",
+                  "excerpt": "中原八幡宮（なかばるはちまんぐう） ／ 福岡県北九州市戸畑区中原東三丁目12番1号",
+                  "locator": "主見出しと所在地",
+                  "name_raw": "中原八幡宮",
+                  "page_hash": "723dcf818bd230ba3341be6d0eae23f49f4a4877cd6f927db5e941ecff336b60",
+                  "reading_raw": "なかばるはちまんぐう",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "title": "Hontake「中原八幡宮」",
+                  "url": "https://jinja.hontake.jp/84nakabaruhachiman/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
           "name_raw": "中原八幡宮",
           "normalization": [
@@ -14546,11 +14735,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
-          "reading": "",
+          "reading": "なかばるはちまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://tobatagion.jp/nakabaru/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -14599,6 +14788,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "なかばるはちまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "なかばるはちまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "中原八幡宮",
             "wikipedia_article_refs": [],
@@ -14629,16 +14832,66 @@
             "status": "pending",
             "surface": "中原八幡宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "中原八幡宮"
         },
         {
-          "checked_at": "2026-11-09T08:24:33.802192+00:00",
+          "checked_at": "2026-11-26T14:00:39.669332+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「戸明神社」と所在地「北九州市若松区蜑住974」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "a16e1f29-65ee-5464-a28c-4e246ac4266c",
           "fetched_at": "2026-11-09T08:24:33.802192+00:00",
           "id": "e1c7eacc-a815-579d-89ed-14272d0cddfc",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "とあけじんじゃ"
+              },
+              "expected_source_hash": "cd2317098074ead20d3404257ec90a24baa7f70e72b73f16f219ecfb63f01ded",
+              "facility_id": "a16e1f29-65ee-5464-a28c-4e246ac4266c",
+              "identity_match": {
+                "agency_address": "北九州市若松区蜑住974",
+                "agency_name": "戸明神社",
+                "reference_address": "福岡県北九州市若松区大字蜑住974",
+                "reference_name": "戸明神社"
+              },
+              "original": {
+                "address": "北九州市若松区蜑住974",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
+                "name_raw": "戸明神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記に戸明神社の全文かな、大字蜑住974と本宮の明記がある。神社公式の蜑住974と原庁欄を照合し、兼務する同名の別社と区別。",
+              "references": [
+                {
+                  "address_raw": "福岡県北九州市若松区大字蜑住974",
+                  "checked_at": "2026-11-26T14:00:39.669332+00:00",
+                  "excerpt": "戸明神社 ／ とあけじんじゃ ／ 福岡県北九州市若松区大字蜑住974",
+                  "locator": "主見出しと所在地の行、御由緒の本宮の説明",
+                  "name_raw": "戸明神社",
+                  "page_hash": "cc9f91afd9c7c5f60bc10d5f1fcdfe53ad41e77913844be01ba5c0bfc1fc63f4",
+                  "publisher_profile_url": "https://jinja.hontake.jp/",
+                  "reading_raw": "とあけじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "title": "Hontake「戸明神社」",
+                  "url": "https://jinja.hontake.jp/271toake/"
+                },
+                {
+                  "address_raw": "福岡県北九州市若松区蜑住974",
+                  "checked_at": "2026-11-26T14:00:52.267312+00:00",
+                  "excerpt": "戸明神社 ／ 福岡県北九州市若松区蜑住974",
+                  "locator": "表題とお問い合わせの住所欄",
+                  "name_raw": "戸明神社",
+                  "page_hash": "f1b7fed4ffee7ff4363af9de5c76145b6e561b411effb319fb2353bb2da395ea",
+                  "reading_raw": "",
+                  "source_kind": "official_shrine",
+                  "title": "天岩戸 戸明神社 公式ホームページ",
+                  "url": "https://toake-jinja.jp/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
           "name_raw": "戸明神社",
           "normalization": [
@@ -14646,11 +14899,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "ae2df3d8f6af922465dee09b505b060289db37458d1dd48ef9ab473a29307d8a",
-          "reading": "",
+          "reading": "とあけじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/kitakyusyu/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://jinja.hontake.jp/271toake/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -14809,6 +15062,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "とあけじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "とあけじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "戸明神社",
             "wikipedia_article_refs": [
@@ -14848,7 +15115,7 @@
             "status": "pending",
             "surface": "戸明神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "戸明神社"
         },
         {
@@ -36308,12 +36575,50 @@
           "surface": "高良玉垂神社"
         },
         {
-          "checked_at": "2026-11-09T08:24:38.140513+00:00",
+          "checked_at": "2026-11-26T14:00:41.424752+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「青木天満宮」と所在地「久留米市城島町上青木950」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "b67cabac-a88f-531b-a2e3-f4b50ae52790",
           "fetched_at": "2026-11-09T08:24:38.140513+00:00",
           "id": "73a28bf1-4b5c-5800-be58-20378e8ac057",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "あおきてんまんぐう"
+              },
+              "expected_source_hash": "c2584737eab7fe1b9ebcc4ee0b6e7d43aa85f0edc6c8647d1380c4eccc241486",
+              "facility_id": "b67cabac-a88f-531b-a2e3-f4b50ae52790",
+              "identity_match": {
+                "agency_address": "久留米市城島町上青木950",
+                "agency_name": "青木天満宮",
+                "reference_address": "福岡県久留米市城島町上青木950",
+                "reference_name": "青木天満宮"
+              },
+              "original": {
+                "address": "久留米市城島町上青木950",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
+                "name_raw": "青木天満宮",
+                "reading_raw": ""
+              },
+              "reason": "FBS福岡放送が公開する現地記事の同じスポット欄に社名、全文かな、上青木950、神社庁がリンクする施設公式がそろう。原社名を保ち、番地まで照合して読みを補う。",
+              "references": [
+                {
+                  "address_raw": "福岡県久留米市城島町上青木950",
+                  "checked_at": "2026-11-26T14:00:41.424752+00:00",
+                  "excerpt": "青木天満宮 ／ あおきてんまんぐう ／ 福岡県久留米市城島町上青木950",
+                  "locator": "第3節と同節のスポット情報。社名・読み・住所",
+                  "name_raw": "青木天満宮",
+                  "page_hash": "ec40f03e46e697ec6ab04f4abdfaa941e57ca40089588a6bc80ffc2400387363",
+                  "reading_raw": "あおきてんまんぐう",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_media",
+                  "terms_url": "https://arne.media/terms/",
+                  "title": "FBS福岡放送 ARNE「2023年初詣」青木天満宮",
+                  "url": "https://arne.media/go-out/338934/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
           "name_raw": "青木天満宮",
           "normalization": [
@@ -36321,11 +36626,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
-          "reading": "",
+          "reading": "あおきてんまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://arne.media/go-out/338934/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -36466,6 +36771,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "あおきてんまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "あおきてんまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "青木天満宮",
             "wikipedia_article_refs": [],
@@ -36496,7 +36815,7 @@
             "status": "pending",
             "surface": "青木天満宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "青木天満宮"
         },
         {

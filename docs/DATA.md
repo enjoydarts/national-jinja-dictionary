@@ -235,6 +235,8 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 京丹後市の峰山町鱒留・大成、峰山町泉・奥山、網野町生野内・下大クゴは、神社庁原欄と教育委員会の資料・法人個票の表記を比較します。小字名の直前の「小字」を標識として比較時に扱い、各資料の原表記と全地番・枝番を保持します。[京丹後市教育要覧の文化財編](https://www.city.kyotango.lg.jp/material/files/group/39/4bunnkazaihogo.pdf)・[金刀比羅神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005010977)
 
+北九州市八幡西区の「浅川日の峰」と「浅川日の峯」、八幡東区の「春ノ町」と「春の町」は、市の町名・位置資料と同じ社名と住居表示を持つ法人個票を確認しました。この2町名の照合時に文字の差を扱い、各資料の原欄と丁目・街区・住居番号を保持します。[北九州市の浅川日の峯](https://www.city.kitakyushu.lg.jp/yahatanishi/w6100133.html)・[北九州市の豊山八幡神社所在地](https://www.city.kitakyushu.lg.jp/files/001168880.pdf)・[福岡県の春ノ町団地資料](https://www.pref.fukuoka.lg.jp/uploaded/attachment/128069.pdf)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行

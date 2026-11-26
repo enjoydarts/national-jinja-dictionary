@@ -102,3 +102,27 @@ class PublishedAddressFormsTest(unittest.TestCase):
                     '26', '京都府', '神明神社', 'しんめいじんじゃ', acquired, printed,
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_kitakyushu_compares_documented_street_spellings(self):
+        for name, reading, acquired, printed in (
+            ('日峯神社', 'ひのみねじんじゃ', '北九州市八幡西区浅川日の峰1-8-8',
+             '福岡県北九州市八幡西区浅川日の峯１丁目８番８号'),
+            ('豊山八幡神社', 'とよやまはちまんじんじゃ', '北九州市八幡東区春ノ町4-4-1',
+             '福岡県北九州市八幡東区春の町４丁目４番１号'),
+        ):
+            with self.subTest(acquired=acquired):
+                dataset, proposal = self.fixture('40', '福岡県', name, reading, acquired, printed)
+                result = apply_corrections(dataset, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'], dataset['facilities'])
+                self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_kitakyushu_requires_exact_ward_and_house_number(self):
+        for acquired, printed in (
+            ('北九州市八幡西区浅川日の峰1-8-8', '北九州市八幡西区浅川日の峯1丁目8番9号'),
+            ('北九州市八幡東区春ノ町4-4-1', '北九州市八幡西区春の町4丁目4番1号'),
+            ('北九州市八幡東区春ノ町4-4-1', '北九州市八幡東区春の町4丁目4番'),
+        ):
+            with self.subTest(acquired=acquired, printed=printed):
+                dataset, proposal = self.fixture('40', '福岡県', '神明神社', 'しんめいじんじゃ', acquired, printed)
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])

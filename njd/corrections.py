@@ -194,6 +194,10 @@ def _reference_matches(ref,facility,entry,changes):
             # The published addresses use 小字 as a marker for these named localities.
             for district, subdistrict in (('峰山町鱒留', '大成'), ('峰山町泉', '奥山'), ('網野町生野内', '下大クゴ')):
                 value=re.sub(rf'^(京丹後市{district})小字(?={subdistrict} ?\d)',r'\1',value)
+        if facility.get('prefecture_code')=='40':
+            # Use the published street spellings in these two Kitakyushu wards.
+            value=re.sub(r'^北九州市八幡西区浅川日の峰(?=\d)','北九州市八幡西区浅川日の峯',value)
+            value=re.sub(r'^北九州市八幡東区春ノ町(?=\d)','北九州市八幡東区春の町',value)
         value=compare_address_units(value)
         # The town's own ordinances use both spellings (docs/DATA.md).
         # Compare only this Kochi municipality, with a literal parcel present.
