@@ -10619,12 +10619,86 @@
           "surface": "飯盛神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:18.376106+00:00",
+          "checked_at": "2026-11-26T14:23:51.141723+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「志式神社」と所在地「福岡市東区奈多1236」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "e53625a5-6685-52e7-b444-41a6fe3f257b",
           "fetched_at": "2026-11-08T14:28:18.376106+00:00",
           "id": "9f789a00-6665-59a1-aa10-400a40b5eda6",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ししきじんじゃ"
+              },
+              "expected_source_hash": "6d0384a075e2609de7c3335a0ec8fa6a13812b289aa64f76ef126f777f35b65e",
+              "facility_id": "e53625a5-6685-52e7-b444-41a6fe3f257b",
+              "identity_match": {
+                "agency_address": "福岡市東区奈多1236",
+                "agency_name": "志式神社",
+                "reference_address": "福岡市東区奈多1236",
+                "reference_name": "志式神社",
+                "roster_attribution": "出典：福岡県所轄宗教法人名簿（福岡県）。該当する社名・所在地を抜粋し照合。",
+                "roster_detail": {
+                  "columns": [
+                    "D 法人名",
+                    "F 法人所在地ホウジンショザイチ",
+                    "G 同じ行の町字・地番"
+                  ],
+                  "data": {
+                    "checked_at": "2026-11-26T14:28:03.616503+00:00",
+                    "page_hash": "2ead4c7ae73326da54d5209eb07084833d86c019fe7b280db593a1b55d46f287",
+                    "url": "https://data.bodik.jp/dataset/af09be6b-a3a4-4a6f-a981-499a9284317e/resource/95cc761f-ca03-4bd7-9aa2-4a1005298b51/download/datasetresource_file_250326155518_131_.xlsx"
+                  }
+                },
+                "roster_raw_columns": [
+                  {
+                    "locality_parcel_raw": "奈多字宮山１２３６",
+                    "municipality_raw": "福岡市東区",
+                    "name_raw": "志式神社",
+                    "row": 142,
+                    "sheet": "全法人一覧 "
+                  }
+                ]
+              },
+              "original": {
+                "address": "福岡市東区奈多1236",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
+                "name_raw": "志式神社",
+                "reading_raw": ""
+              },
+              "reason": "独立した2つの個別資料の同名・全文かな・奈多1236を、神社庁の原所在地と照合。県の法人名簿は奈多字宮山１２３６を掲載する。県観光の奈多2丁目29番地は案内住所として原値を保持した。",
+              "references": [
+                {
+                  "address_raw": "福岡県福岡市東区奈多1236",
+                  "checked_at": "2026-11-26T14:23:51.141723+00:00",
+                  "excerpt": "志式神社 / ししきじんじゃ / 福岡県福岡市東区奈多1236",
+                  "locator": "個別見出しの読みと基本情報の住所欄",
+                  "name_raw": "志式神社",
+                  "page_hash": "82c60c829fb3beaf1cf702dc8d30150629cc6552903de68d4e7f9ef27353d003",
+                  "reading_raw": "ししきじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "secondary_shrine_article",
+                  "title": "全国神社マップ・志式神社",
+                  "url": "https://shrine.mobi/area/kyushu/fukuoka/higashi-ku-fukuoka-shi/3005"
+                },
+                {
+                  "address_raw": "福岡市東区奈多1236",
+                  "checked_at": "2026-11-26T14:23:54.615582+00:00",
+                  "excerpt": "志式神社 / ししきじんじゃ / 福岡市東区奈多1236",
+                  "locator": "個別0308「神社情報」の社名・かなと住所欄",
+                  "name_raw": "志式神社",
+                  "page_hash": "57522f44699cfed773b9563beeb01a414585a2cdccdf1994a0be75b6a1a71b2a",
+                  "reading_raw": "ししきじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_use": "個別本文の氏名を含まない社名・全文かな・所在地の事実項目のみ照合",
+                  "title": "福岡神社参拝帳・志式神社",
+                  "url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=0308",
+                  "visit_status_raw": "2012/07/22"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
           "name_raw": "志式神社",
           "normalization": [
@@ -10632,11 +10706,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
-          "reading": "",
+          "reading": "ししきじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shrine.mobi/area/kyushu/fukuoka/higashi-ku-fukuoka-shi/3005",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -10762,6 +10836,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ししきじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ししきじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "志式神社",
             "wikipedia_article_refs": [],
@@ -10792,16 +10880,77 @@
             "status": "pending",
             "surface": "志式神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "志式神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:18.376106+00:00",
+          "checked_at": "2026-11-26T14:23:57.932176+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「部木八幡神社」と所在地「福岡市東区蒲田3-18-8」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "8a006bf4-c124-5e9f-b052-bf5141e3e2bd",
           "fetched_at": "2026-11-08T14:28:18.376106+00:00",
           "id": "86a43e67-a8df-5388-a638-d51bb08d8ddb",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "へきはちまんじんじゃ"
+              },
+              "expected_source_hash": "f219f053c87a061b5065743d986f494e4997826d8b83374a3e4e578d3486e842",
+              "facility_id": "8a006bf4-c124-5e9f-b052-bf5141e3e2bd",
+              "identity_match": {
+                "agency_address": "福岡市東区蒲田3-18-8",
+                "agency_name": "部木八幡神社",
+                "reference_address": "福岡市東区蒲田3丁目18-8",
+                "reference_name": "部木八幡神社",
+                "roster_attribution": "出典：福岡県所轄宗教法人名簿（福岡県）。該当する社名・所在地を抜粋し照合。",
+                "roster_detail": {
+                  "columns": [
+                    "D 法人名",
+                    "F 法人所在地ホウジンショザイチ",
+                    "G 同じ行の町字・地番"
+                  ],
+                  "data": {
+                    "checked_at": "2026-11-26T14:28:03.616503+00:00",
+                    "page_hash": "2ead4c7ae73326da54d5209eb07084833d86c019fe7b280db593a1b55d46f287",
+                    "url": "https://data.bodik.jp/dataset/af09be6b-a3a4-4a6f-a981-499a9284317e/resource/95cc761f-ca03-4bd7-9aa2-4a1005298b51/download/datasetresource_file_250326155518_131_.xlsx"
+                  }
+                },
+                "roster_raw_columns": [
+                  {
+                    "locality_parcel_raw": "蒲田３－１８－８",
+                    "municipality_raw": "福岡市東区",
+                    "name_raw": "部木八幡神社",
+                    "row": 3741,
+                    "sheet": "全法人一覧 "
+                  }
+                ]
+              },
+              "original": {
+                "address": "福岡市東区蒲田3-18-8",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
+                "name_raw": "部木八幡神社",
+                "reading_raw": ""
+              },
+              "reason": "現地記録の部木八幡神社全称と全文かな・蒲田3丁目18-8が、県の法人名簿の蒲田３－１８－８に対応。市の部木古墳群案内は蒲田3丁目18で、施設とは別の文化財記録として扱う。",
+              "references": [
+                {
+                  "address_raw": "福岡市東区蒲田3丁目18-8",
+                  "checked_at": "2026-11-26T14:23:57.932176+00:00",
+                  "excerpt": "部木八幡神社 / へきはちまんじんじゃ / 福岡市東区蒲田3丁目18-8",
+                  "locator": "個別0317「神社情報」の社名・かなと住所欄",
+                  "name_raw": "部木八幡神社",
+                  "page_hash": "698f6694ca2995fba3701d2942f97be5b282c24d8a9c83920414ea7aaff4c2ca",
+                  "reading_raw": "へきはちまんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_use": "個別本文の氏名を含まない社名・全文かな・所在地の事実項目のみ照合",
+                  "title": "福岡神社参拝帳・部木八幡神社",
+                  "url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=0317",
+                  "visit_status_raw": "2012/03/10"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
           "name_raw": "部木八幡神社",
           "normalization": [
@@ -10809,11 +10958,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
-          "reading": "",
+          "reading": "へきはちまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=0317",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -10862,6 +11011,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "へきはちまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "へきはちまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "部木八幡神社",
             "wikipedia_article_refs": [],
@@ -10892,7 +11055,7 @@
             "status": "pending",
             "surface": "部木八幡神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "部木八幡神社"
         },
         {
@@ -11275,12 +11438,86 @@
           "surface": "住吉神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:18.376106+00:00",
+          "checked_at": "2026-11-26T14:23:51.274925+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「住吉神社」と所在地「福岡市西区姪の浜3-5-5」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "fb3fc2ea-d6aa-5fd0-974b-f6e9bf6ed6b2",
           "fetched_at": "2026-11-08T14:28:18.376106+00:00",
           "id": "bfbc411b-65a4-5f78-b8ef-e9daae1c289a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すみよしじんじゃ"
+              },
+              "expected_source_hash": "1694c6d07aa155b5743d62f0400198437e01974af39b3b254f1ef1639c795e9c",
+              "facility_id": "fb3fc2ea-d6aa-5fd0-974b-f6e9bf6ed6b2",
+              "identity_match": {
+                "agency_address": "福岡市西区姪の浜3-5-5",
+                "agency_name": "住吉神社",
+                "reference_address": "福岡市西区姪の浜3丁目5-5",
+                "reference_name": "住吉神社",
+                "roster_attribution": "出典：福岡県所轄宗教法人名簿（福岡県）。該当する社名・所在地を抜粋し照合。",
+                "roster_detail": {
+                  "columns": [
+                    "D 法人名",
+                    "F 法人所在地ホウジンショザイチ",
+                    "G 同じ行の町字・地番"
+                  ],
+                  "data": {
+                    "checked_at": "2026-11-26T14:28:03.616503+00:00",
+                    "page_hash": "2ead4c7ae73326da54d5209eb07084833d86c019fe7b280db593a1b55d46f287",
+                    "url": "https://data.bodik.jp/dataset/af09be6b-a3a4-4a6f-a981-499a9284317e/resource/95cc761f-ca03-4bd7-9aa2-4a1005298b51/download/datasetresource_file_250326155518_131_.xlsx"
+                  }
+                },
+                "roster_raw_columns": [
+                  {
+                    "locality_parcel_raw": "姪の浜３－５－５",
+                    "municipality_raw": "福岡市西区",
+                    "name_raw": "住吉神社",
+                    "row": 3659,
+                    "sheet": "全法人一覧 "
+                  }
+                ]
+              },
+              "original": {
+                "address": "福岡市西区姪の浜3-5-5",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
+                "name_raw": "住吉神社",
+                "reading_raw": ""
+              },
+              "reason": "独立現地資料の同名・全文かな・姪の浜3丁目5-5を施設公式の姪の浜3-5-5と照合。公式の掲示には姪浜住吉神社もあり、原社名住吉神社を保持。",
+              "references": [
+                {
+                  "address_raw": "福岡市西区姪の浜3丁目5-5",
+                  "checked_at": "2026-11-26T14:23:51.274925+00:00",
+                  "excerpt": "住吉神社 / すみよしじんじゃ / 福岡市西区姪の浜3丁目5-5",
+                  "locator": "個別0168「神社情報」の社名・かなと住所欄",
+                  "name_raw": "住吉神社",
+                  "page_hash": "739559d2ea810062c84c164e158f72b3c1f0b55776518794c0e5486239771309",
+                  "reading_raw": "すみよしじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_use": "個別本文の氏名を含まない社名・全文かな・所在地の事実項目のみ照合",
+                  "title": "福岡神社参拝帳・住吉神社",
+                  "url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=0168",
+                  "visit_status_raw": "2012/01/08"
+                },
+                {
+                  "address_raw": "福岡市西区姪の浜3-5-5",
+                  "checked_at": "2026-11-26T14:23:51.106365+00:00",
+                  "excerpt": "住吉神社 / 福岡市西区姪の浜3-5-5",
+                  "locator": "表題とアクセスの所在地欄",
+                  "name_raw": "住吉神社",
+                  "page_hash": "31a52cb15cbf460b98071f49ad64c326753102fb1285013a38178e0cdf2fe822",
+                  "reading_raw": "",
+                  "reading_scope": "absent",
+                  "source_kind": "official_shrine",
+                  "title": "姪浜住吉神社（施設公式）",
+                  "url": "https://sumiyoshi-jinja.jp/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
           "name_raw": "住吉神社",
           "normalization": [
@@ -11288,11 +11525,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
-          "reading": "",
+          "reading": "すみよしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=0168",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -11479,6 +11716,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すみよしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すみよしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "住吉神社",
             "wikipedia_article_refs": [
@@ -11518,7 +11769,7 @@
             "status": "pending",
             "surface": "住吉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "住吉神社"
         },
         {
@@ -21915,12 +22166,89 @@
           "surface": "天照神社"
         },
         {
-          "checked_at": "2026-11-09T08:24:35.981852+00:00",
+          "checked_at": "2026-11-26T14:24:11.346610+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「春日神社」と所在地「宮若市宮田3658」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "823f2315-6b57-56d5-ab65-b45337a909e5",
           "fetched_at": "2026-11-09T08:24:35.981852+00:00",
           "id": "faf9bb91-feb6-501e-96ac-52e06b227387",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "かすがじんじゃ"
+              },
+              "expected_source_hash": "cdb6261d0ecaa61c1985b4a74d46df4d44eff67f51c00224f636fb1008016462",
+              "facility_id": "823f2315-6b57-56d5-ab65-b45337a909e5",
+              "identity_match": {
+                "agency_address": "宮若市宮田3658",
+                "agency_name": "春日神社",
+                "reference_address": "宮若市宮田3658",
+                "reference_name": "春日神社",
+                "roster_attribution": "出典：福岡県所轄宗教法人名簿（福岡県）。該当する社名・所在地を抜粋し照合。",
+                "roster_detail": {
+                  "columns": [
+                    "D 法人名",
+                    "F 法人所在地ホウジンショザイチ",
+                    "G 同じ行の町字・地番"
+                  ],
+                  "data": {
+                    "checked_at": "2026-11-26T14:28:03.616503+00:00",
+                    "page_hash": "2ead4c7ae73326da54d5209eb07084833d86c019fe7b280db593a1b55d46f287",
+                    "url": "https://data.bodik.jp/dataset/af09be6b-a3a4-4a6f-a981-499a9284317e/resource/95cc761f-ca03-4bd7-9aa2-4a1005298b51/download/datasetresource_file_250326155518_131_.xlsx"
+                  }
+                },
+                "roster_raw_columns": [
+                  {
+                    "locality_parcel_raw": "宮田３６５８",
+                    "municipality_raw": "宮若市",
+                    "name_raw": "春日神社",
+                    "row": 5272,
+                    "sheet": "全法人一覧 "
+                  }
+                ]
+              },
+              "original": {
+                "address": "宮若市宮田3658",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
+                "name_raw": "春日神社",
+                "reading_raw": ""
+              },
+              "reason": "現地記録の同名・全文かな・宮若市宮田3658と県の法人名簿および国税庁法人個票の宮田３６５８が対応。",
+              "references": [
+                {
+                  "address_raw": "宮若市宮田3658",
+                  "checked_at": "2026-11-26T14:24:11.346610+00:00",
+                  "excerpt": "春日神社 / かすがじんじゃ / 宮若市宮田3658",
+                  "locator": "個別1386「神社情報」の社名・かなと住所欄",
+                  "name_raw": "春日神社",
+                  "page_hash": "95fbff5ca3e2ea7c8ffba975a405cc65fc81c8850a128ff2405e224d58b54791",
+                  "reading_raw": "かすがじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_use": "個別本文の氏名を含まない社名・全文かな・所在地の事実項目のみ照合",
+                  "title": "福岡神社参拝帳・春日神社",
+                  "url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=1386",
+                  "visit_status_raw": "2018/05/22"
+                },
+                {
+                  "address_raw": "福岡県宮若市宮田３６５８番地",
+                  "attribution": "出典：国税庁法人番号公表サイト。該当法人と所在地を照合。",
+                  "checked_at": "2026-11-26T14:27:59.781982+00:00",
+                  "corporate_number_raw": "9290805005891",
+                  "excerpt": "春日神社 / 福岡県宮若市宮田３６５８番地",
+                  "locator": "最新情報の法人名称・主たる事務所の所在地",
+                  "name_raw": "春日神社",
+                  "page_hash": "26c10b28181de9558905077da334d0c407d0566daae085f208eba0fa057bf7ed",
+                  "reading_raw": "",
+                  "reading_scope": "absent",
+                  "source_kind": "government_corporate_entity",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト・春日神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9290805005891"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
           "name_raw": "春日神社",
           "normalization": [
@@ -21928,11 +22256,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4626f14e339e56294c59107166ffa79b660784843dd2a0a82af9e75cf7f15f27",
-          "reading": "",
+          "reading": "かすがじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=1386",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -22081,6 +22409,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "かすがじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "かすがじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "春日神社",
             "wikipedia_article_refs": [
@@ -22128,7 +22470,7 @@
             "status": "pending",
             "surface": "春日神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "春日神社"
         },
         {
@@ -22927,12 +23269,73 @@
           "surface": "八幡宮"
         },
         {
-          "checked_at": "2026-11-09T08:24:35.981852+00:00",
+          "checked_at": "2026-11-26T14:24:04.533667+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「日吉神社」と所在地「宮若市下1169」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "3e8278f9-62d6-545b-9afe-987541db9f60",
           "fetched_at": "2026-11-09T08:24:35.981852+00:00",
           "id": "6c908f9c-b2e8-5646-a1ad-da535812c40e",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ひよしじんじゃ"
+              },
+              "expected_source_hash": "9ed21e411fe9891823773c9a566d80a938ca322eef68c443430963e68be0a1b2",
+              "facility_id": "3e8278f9-62d6-545b-9afe-987541db9f60",
+              "identity_match": {
+                "agency_address": "宮若市下1169",
+                "agency_name": "日吉神社",
+                "reference_address": "宮若市下1169",
+                "reference_name": "日吉神社",
+                "roster_attribution": "出典：福岡県所轄宗教法人名簿（福岡県）。該当する社名・所在地を抜粋し照合。",
+                "roster_detail": {
+                  "columns": [
+                    "D 法人名",
+                    "F 法人所在地ホウジンショザイチ",
+                    "G 同じ行の町字・地番"
+                  ],
+                  "data": {
+                    "checked_at": "2026-11-26T14:28:03.616503+00:00",
+                    "page_hash": "2ead4c7ae73326da54d5209eb07084833d86c019fe7b280db593a1b55d46f287",
+                    "url": "https://data.bodik.jp/dataset/af09be6b-a3a4-4a6f-a981-499a9284317e/resource/95cc761f-ca03-4bd7-9aa2-4a1005298b51/download/datasetresource_file_250326155518_131_.xlsx"
+                  }
+                },
+                "roster_raw_columns": [
+                  {
+                    "locality_parcel_raw": "下１１６９",
+                    "municipality_raw": "宮若市",
+                    "name_raw": "日吉神社",
+                    "row": 5315,
+                    "sheet": "全法人一覧 "
+                  }
+                ]
+              },
+              "original": {
+                "address": "宮若市下1169",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
+                "name_raw": "日吉神社",
+                "reading_raw": ""
+              },
+              "reason": "現地記録の同名・全文かな・宮若市下1169と、県の法人名簿原欄の下１１６９が対応。宮若市内の同名の日吉神社を住所で区別。",
+              "references": [
+                {
+                  "address_raw": "宮若市下1169",
+                  "checked_at": "2026-11-26T14:24:04.533667+00:00",
+                  "excerpt": "日吉神社 / ひよしじんじゃ / 宮若市下1169",
+                  "locator": "個別0765「神社情報」の社名・かなと住所欄",
+                  "name_raw": "日吉神社",
+                  "page_hash": "31b5923fbc36442fa3da0689e6eca7a4bf61a8650e32beede6eb41b4b244ac26",
+                  "reading_raw": "ひよしじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_use": "個別本文の氏名を含まない社名・全文かな・所在地の事実項目のみ照合",
+                  "title": "福岡神社参拝帳・日吉神社",
+                  "url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=0765",
+                  "visit_status_raw": "2018/03/24"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
           "name_raw": "日吉神社",
           "normalization": [
@@ -22940,11 +23343,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4626f14e339e56294c59107166ffa79b660784843dd2a0a82af9e75cf7f15f27",
-          "reading": "",
+          "reading": "ひよしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=0765",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -23078,6 +23481,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ひよしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ひよしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "日吉神社",
             "wikipedia_article_refs": [
@@ -23117,16 +23534,71 @@
             "status": "pending",
             "surface": "日吉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "日吉神社"
         },
         {
-          "checked_at": "2026-11-09T08:24:35.981852+00:00",
+          "checked_at": "2026-11-26T14:26:34.768073+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「福地神社」と所在地「直方市上境1963」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "35244fd4-dc98-5866-a8ec-afc03170c808",
           "fetched_at": "2026-11-09T08:24:35.981852+00:00",
           "id": "5fe8f53c-af8c-5269-86a3-1112c579dff5",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ふくちじんじゃ"
+              },
+              "expected_source_hash": "62edb3286b364946585fc65482812c5efee4acba6ada357b6f51f49bd1b7ac58",
+              "facility_id": "35244fd4-dc98-5866-a8ec-afc03170c808",
+              "identity_match": {
+                "agency_address": "直方市上境1963",
+                "agency_name": "福地神社",
+                "reference_address": "福岡県直方市上境1963",
+                "reference_name": "福地神社"
+              },
+              "original": {
+                "address": "直方市上境1963",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
+                "name_raw": "福地神社",
+                "reading_raw": ""
+              },
+              "reason": "地域誌の編集記事に直方市上境1963と同じ社名があり、同じ枠の全文ルビを確認した。",
+              "references": [
+                {
+                  "address_raw": "福岡県直方市上境1963",
+                  "authority_reference": {
+                    "checked_at": "2026-11-26T14:28:12.387279+00:00",
+                    "excerpt": "株式会社プランニングエン",
+                    "locator": "「会社概要」直下",
+                    "page_hash": "5711b2b76f8e42ef900d1d98dc89739c1ffb8c16735f37055bdcc9820028ee84",
+                    "source_publisher": "筑豊情報マガジンWING",
+                    "title": "会社概要",
+                    "url": "https://wing-r.com/company-profile/"
+                  },
+                  "checked_at": "2026-11-26T14:26:34.768073+00:00",
+                  "excerpt": "福地神社\nふくちじんじゃ\n福岡県直方市上境1963",
+                  "locator": "直方市「福地神社」の Information 枠。ruby の全文かなと直後の所在地。",
+                  "name_raw": "福地神社",
+                  "page_hash": "27d4897f541b7839cf728647b70e8adaa7f7df7a98d60a1d54a53e5977a2c151",
+                  "reading_raw": "ふくちじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_editorial",
+                  "source_publisher": "筑豊情報マガジンWING（株式会社プランニングエン）",
+                  "terms_reference": {
+                    "checked_at": "2026-11-26T14:27:23.387556+00:00",
+                    "note": "サイト上のポリシーは個人情報を対象とする。編集記事のフッターに権利表示があり、記事・写真の転載許諾は確認していない。個別記事から名称、全文かな、所在地の事実のみ記録。",
+                    "page_hash": "161ba11b4abeab782f8a47b03ff8f4990dbc6c057cbd680df4bf5396d55aa962",
+                    "title": "個人情報の取扱いについて",
+                    "url": "https://wing-r.com/privacy-policy/"
+                  },
+                  "terms_url": "https://wing-r.com/privacy-policy/",
+                  "title": "2026年初詣はどこに行く？編集部がセレクトした筑豊地区神社まとめ！",
+                  "url": "https://wing-r.com/hatsumoude2026/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
           "name_raw": "福地神社",
           "normalization": [
@@ -23134,11 +23606,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4626f14e339e56294c59107166ffa79b660784843dd2a0a82af9e75cf7f15f27",
-          "reading": "",
+          "reading": "ふくちじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://wing-r.com/hatsumoude2026/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -23187,6 +23659,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ふくちじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ふくちじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "福地神社",
             "wikipedia_article_refs": [],
@@ -23217,7 +23703,7 @@
             "status": "pending",
             "surface": "福地神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "福地神社"
         },
         {
@@ -23690,12 +24176,86 @@
           "surface": "白山神社"
         },
         {
-          "checked_at": "2026-11-09T08:24:35.981852+00:00",
+          "checked_at": "2026-11-26T14:23:51.688218+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「三島神社」と所在地「飯塚市菰田東2-8-19」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "c1885151-35a1-5d08-a7fe-6e2ee9312d19",
           "fetched_at": "2026-11-09T08:24:35.981852+00:00",
           "id": "7debb1ae-ca33-5afa-ae83-4f0768093140",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "みしまじんじゃ"
+              },
+              "expected_source_hash": "e8bb929fcf5bc12d61c7d43a1fd6050b6f29ccb3154ffebc4dd1ec6a7ddeb531",
+              "facility_id": "c1885151-35a1-5d08-a7fe-6e2ee9312d19",
+              "identity_match": {
+                "agency_address": "飯塚市菰田東2-8-19",
+                "agency_name": "三島神社",
+                "reference_address": "飯塚市菰田東2丁目8-19",
+                "reference_name": "三島神社",
+                "roster_attribution": "出典：福岡県所轄宗教法人名簿（福岡県）。該当する社名・所在地を抜粋し照合。",
+                "roster_detail": {
+                  "columns": [
+                    "D 法人名",
+                    "F 法人所在地ホウジンショザイチ",
+                    "G 同じ行の町字・地番"
+                  ],
+                  "data": {
+                    "checked_at": "2026-11-26T14:28:03.616503+00:00",
+                    "page_hash": "2ead4c7ae73326da54d5209eb07084833d86c019fe7b280db593a1b55d46f287",
+                    "url": "https://data.bodik.jp/dataset/af09be6b-a3a4-4a6f-a981-499a9284317e/resource/95cc761f-ca03-4bd7-9aa2-4a1005298b51/download/datasetresource_file_250326155518_131_.xlsx"
+                  }
+                },
+                "roster_raw_columns": [
+                  {
+                    "locality_parcel_raw": "菰田東２－８－１９",
+                    "municipality_raw": "飯塚市",
+                    "name_raw": "三島神社",
+                    "row": 5193,
+                    "sheet": "全法人一覧 "
+                  }
+                ]
+              },
+              "original": {
+                "address": "飯塚市菰田東2-8-19",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
+                "name_raw": "三島神社",
+                "reading_raw": ""
+              },
+              "reason": "現地記録と地域の案内が独立に掲載する同名・全文かな・菰田東2丁目8-19を、県の法人名簿の菰田東２－８－１９に照合。",
+              "references": [
+                {
+                  "address_raw": "飯塚市菰田東二丁目8-19",
+                  "checked_at": "2026-11-26T14:23:51.688218+00:00",
+                  "excerpt": "三島神社 / みしまじんじゃ / 飯塚市菰田東二丁目8-19",
+                  "locator": "三島神社の同じ一覧枠、かなと住所",
+                  "name_raw": "三島神社",
+                  "page_hash": "f4b684e7cfac4e0a5a1360e5e8254b1544c1ca312f9aa75cc29827cdb3e98ca0",
+                  "reading_raw": "みしまじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_reference",
+                  "title": "筑豊葬祭「神社（神道）」",
+                  "url": "https://chikuhousousai.com/temple/t13/"
+                },
+                {
+                  "address_raw": "飯塚市菰田東2丁目8-19",
+                  "checked_at": "2026-11-26T14:24:18.164722+00:00",
+                  "excerpt": "三島神社 / みしまじんじゃ / 飯塚市菰田東2丁目8-19",
+                  "locator": "個別1562「神社情報」の社名・かなと住所欄",
+                  "name_raw": "三島神社",
+                  "page_hash": "af94ac5b91fc9f3de554727539af2db8b720830e71f2a80e4d3e409d448f2be6",
+                  "reading_raw": "みしまじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_use": "個別本文の氏名を含まない社名・全文かな・所在地の事実項目のみ照合",
+                  "title": "福岡神社参拝帳・三島神社",
+                  "url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=1562",
+                  "visit_status_raw": "2021/12/05"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
           "name_raw": "三島神社",
           "normalization": [
@@ -23703,11 +24263,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4626f14e339e56294c59107166ffa79b660784843dd2a0a82af9e75cf7f15f27",
-          "reading": "",
+          "reading": "みしまじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://chikuhousousai.com/temple/t13/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -23756,6 +24316,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "みしまじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "みしまじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "三島神社",
             "wikipedia_article_refs": [],
@@ -23786,7 +24360,7 @@
             "status": "pending",
             "surface": "三島神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "三島神社"
         },
         {
@@ -24105,12 +24679,59 @@
           "surface": "日吉神社"
         },
         {
-          "checked_at": "2026-11-09T08:24:35.981852+00:00",
+          "checked_at": "2026-11-26T14:26:33.647706+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「射手引神社」と所在地「嘉麻市上山田1539」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "be4847a3-153b-5457-a836-c8289aa93161",
           "fetched_at": "2026-11-09T08:24:35.981852+00:00",
           "id": "f113a288-8436-5fe9-93b0-c15a07c957ad",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いでびきじんじゃ"
+              },
+              "expected_source_hash": "e80667618522105a76fa0ff3afb20bb13bf44fc90197c2cd8528ed1c0e2e7fcb",
+              "facility_id": "be4847a3-153b-5457-a836-c8289aa93161",
+              "identity_match": {
+                "agency_address": "嘉麻市上山田1539",
+                "agency_name": "射手引神社",
+                "reference_address": "福岡県嘉麻市上山田1539",
+                "reference_name": "射手引神社"
+              },
+              "original": {
+                "address": "嘉麻市上山田1539",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
+                "name_raw": "射手引神社",
+                "reading_raw": ""
+              },
+              "reason": "福岡県観光連盟の個票の全文かなと上山田1539を、神社公式サイトの所在地と照合した。地域誌の1693は別観測として保持する。",
+              "references": [
+                {
+                  "address_raw": "福岡県嘉麻市上山田1539",
+                  "checked_at": "2026-11-26T14:26:33.647706+00:00",
+                  "display_name_raw": "射手引神社（嘉麻市）",
+                  "excerpt": "射手引神社\nいでびきじんじゃ\n福岡県嘉麻市上山田1539",
+                  "locator": "見出し直下の独立かな、本文冒頭の正式名、基本情報の住所。",
+                  "name_raw": "射手引神社",
+                  "page_hash": "d9a2b9b11574ff65e0325ba53aba7e3ecd056b1b29d7fe5f77def983f7f4082c",
+                  "reading_raw": "いでびきじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "official_tourism_reference",
+                  "source_publisher": "公益社団法人福岡県観光連盟",
+                  "terms_reference": {
+                    "checked_at": "2026-11-26T14:27:21.850788+00:00",
+                    "note": "運営組織は公益社団法人福岡県観光連盟。「著作権について」は法の私的使用・引用を超える利用には問い合わせを求める。「リンクについて」はトップページへのリンクを依頼する。個別スポットから名称、全文かな、所在地の事実のみ記録。",
+                    "page_hash": "4fc695dd6a87d1d9fbdf751dfeb9343465a374f093ac0a3169125a89a6967bfd",
+                    "title": "当サイトについて",
+                    "url": "https://www.crossroadfukuoka.jp/organization/site"
+                  },
+                  "terms_url": "https://www.crossroadfukuoka.jp/organization/site",
+                  "title": "射手引神社（嘉麻市）",
+                  "url": "https://www.crossroadfukuoka.jp/spot/16740"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
           "name_raw": "射手引神社",
           "normalization": [
@@ -24118,11 +24739,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4626f14e339e56294c59107166ffa79b660784843dd2a0a82af9e75cf7f15f27",
-          "reading": "",
+          "reading": "いでびきじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.crossroadfukuoka.jp/spot/16740",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -24171,6 +24792,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いでびきじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いでびきじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "射手引神社",
             "wikipedia_article_refs": [],
@@ -24201,7 +24836,7 @@
             "status": "pending",
             "surface": "射手引神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "射手引神社"
         },
         {
@@ -28357,12 +28992,58 @@
           "surface": "福智下宮神社"
         },
         {
-          "checked_at": "2026-11-09T08:24:35.981852+00:00",
+          "checked_at": "2026-11-26T14:27:24.252722+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「岩屋神社」と所在地「田川郡福智町弁城1841」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "f49fb2eb-a436-5750-b9b7-8cfdfa061a51",
           "fetched_at": "2026-11-09T08:24:35.981852+00:00",
           "id": "0a7bce04-7576-5d86-ae15-94356c6cb5cb",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いわやじんじゃ"
+              },
+              "expected_source_hash": "bee7c2dc1699c861f0e69df97c15d70be8b2846fc73c31b3d276f80691960a7a",
+              "facility_id": "f49fb2eb-a436-5750-b9b7-8cfdfa061a51",
+              "identity_match": {
+                "agency_address": "田川郡福智町弁城1841",
+                "agency_name": "岩屋神社",
+                "reference_address": "福岡県田川郡福智町弁城1841",
+                "reference_name": "岩屋神社"
+              },
+              "original": {
+                "address": "田川郡福智町弁城1841",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
+                "name_raw": "岩屋神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記の全文かなと弁城1841を、福智町広報・FBSの所在地、国税庁個票の全文フリガナと照合した。小字を含む法人住所はそのまま保存。",
+              "references": [
+                {
+                  "address_raw": "福岡県田川郡福智町弁城1841",
+                  "checked_at": "2026-11-26T14:27:24.252722+00:00",
+                  "excerpt": "岩屋神社\nいわやじんじゃ\n福岡県田川郡福智町弁城1841",
+                  "locator": "本文冒頭「岩屋神社（いわやじんじゃ）」と同じ訪問記の所在地。",
+                  "name_raw": "岩屋神社",
+                  "page_hash": "b9f21d3c7c7cf80b6a908140cd12239c46e9534c107b3354129a39cb0181e002",
+                  "reading_raw": "いわやじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_visit_article",
+                  "source_publisher": "のんびり御朱印日記♪",
+                  "terms_reference": {
+                    "checked_at": "2026-11-26T14:28:13.811288+00:00",
+                    "note": "記事掲載者とサービス運営者を区別し、個別記事から名称、全文かな、所在地の事実のみ記録。写真・記事本文は転記しない。",
+                    "page_hash": "963d7c49e1219d13dfa5fc94bd24c9f6c59dbedb88cd2c64f52e95f17853827f",
+                    "title": "Ameba利用規約",
+                    "url": "https://helps.ameba.jp/rules/"
+                  },
+                  "terms_url": "https://helps.ameba.jp/rules/",
+                  "title": "参拝を振り返って！福岡編《岩屋神社》",
+                  "url": "https://ameblo.jp/rapu47n06-t/entry-12751618920.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
           "name_raw": "岩屋神社",
           "normalization": [
@@ -28370,11 +29051,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4626f14e339e56294c59107166ffa79b660784843dd2a0a82af9e75cf7f15f27",
-          "reading": "",
+          "reading": "いわやじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikuho/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ameblo.jp/rapu47n06-t/entry-12751618920.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -28429,6 +29110,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いわやじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いわやじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "岩屋神社",
             "wikipedia_article_refs": [],
@@ -28459,16 +29154,90 @@
             "status": "pending",
             "surface": "岩屋神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "岩屋神社"
         },
         {
-          "checked_at": "2026-11-09T08:24:38.140513+00:00",
+          "checked_at": "2026-11-26T14:23:51.224067+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「日吉神社」と所在地「朝倉市杷木久喜宮1510」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "3b565e12-154b-510b-a390-1135d87abfb0",
           "fetched_at": "2026-11-09T08:24:38.140513+00:00",
           "id": "4d616e5e-7941-53c8-a0aa-7f499e6b1cef",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ひよしじんじゃ"
+              },
+              "expected_source_hash": "d759fcae8b740acfcc50f33bb966588f4aedb3a4828261dcc385236657b437e7",
+              "facility_id": "3b565e12-154b-510b-a390-1135d87abfb0",
+              "identity_match": {
+                "agency_address": "朝倉市杷木久喜宮1510",
+                "agency_name": "日吉神社",
+                "reference_address": "朝倉市杷木久喜宮1510",
+                "reference_name": "日吉神社",
+                "roster_attribution": "出典：福岡県所轄宗教法人名簿（福岡県）。該当する社名・所在地を抜粋し照合。",
+                "roster_detail": {
+                  "columns": [
+                    "D 法人名",
+                    "F 法人所在地ホウジンショザイチ",
+                    "G 同じ行の町字・地番"
+                  ],
+                  "data": {
+                    "checked_at": "2026-11-26T14:28:03.616503+00:00",
+                    "page_hash": "2ead4c7ae73326da54d5209eb07084833d86c019fe7b280db593a1b55d46f287",
+                    "url": "https://data.bodik.jp/dataset/af09be6b-a3a4-4a6f-a981-499a9284317e/resource/95cc761f-ca03-4bd7-9aa2-4a1005298b51/download/datasetresource_file_250326155518_131_.xlsx"
+                  }
+                },
+                "roster_raw_columns": [
+                  {
+                    "locality_parcel_raw": "杷木久喜宮１５１０",
+                    "municipality_raw": "朝倉市",
+                    "name_raw": "日吉神社",
+                    "row": 5382,
+                    "sheet": "全法人一覧 "
+                  }
+                ]
+              },
+              "original": {
+                "address": "朝倉市杷木久喜宮1510",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
+                "name_raw": "日吉神社",
+                "reading_raw": ""
+              },
+              "reason": "朝倉市の施設案内に同名・全文かな・杷木久喜宮1510があり、県の法人名簿の同地番と対応。参拝帳個別欄は未参拝と記録されていたため、読みは市の本文から採用。",
+              "references": [
+                {
+                  "address_raw": "朝倉市杷木久喜宮1510",
+                  "checked_at": "2026-11-26T14:23:51.224067+00:00",
+                  "excerpt": "日吉神社 / ひよしじんじゃ / 朝倉市杷木久喜宮1510",
+                  "locator": "表1の名称・全文かなと所在地欄",
+                  "name_raw": "日吉神社",
+                  "page_hash": "07d612dd96eb127d32161e41d0142ebf46ddd6ebb6fcd8d473b6483ef7c84657",
+                  "reading_raw": "ひよしじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_tourism",
+                  "title": "朝倉市「日吉神社」",
+                  "url": "https://www.city.asakura.lg.jp/site/kanko/2539.html"
+                },
+                {
+                  "address_raw": "朝倉市杷木久喜宮1510",
+                  "checked_at": "2026-11-26T14:24:07.924091+00:00",
+                  "excerpt": "日吉神社 / ひよしじんじゃ / 朝倉市杷木久喜宮1510",
+                  "locator": "個別1242「神社情報」の社名・かなと住所欄",
+                  "name_raw": "日吉神社",
+                  "page_hash": "37584f454a83ab393ad7ff7758b4268b6fcfaf41f73bb80abb1d1bfb1474037b",
+                  "reading_raw": "ひよしじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_directory",
+                  "source_use": "個別本文の氏名を含まない社名・全文かな・所在地の事実項目のみ照合",
+                  "title": "福岡神社参拝帳・日吉神社",
+                  "url": "https://jinja-sanpaicho.com/jinja/jinja.php?id=1242",
+                  "visit_status_raw": "未参拝"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
           "name_raw": "日吉神社",
           "normalization": [
@@ -28476,11 +29245,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
-          "reading": "",
+          "reading": "ひよしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.city.asakura.lg.jp/site/kanko/2539.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -28655,6 +29424,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ひよしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ひよしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "日吉神社",
             "wikipedia_article_refs": [
@@ -28694,7 +29477,7 @@
             "status": "pending",
             "surface": "日吉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "日吉神社"
         },
         {
