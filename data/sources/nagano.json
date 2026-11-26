@@ -34723,12 +34723,140 @@
           "surface": "八幡社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:29:51.844674+00:00",
           "evidence": "大宮諏訪神社 395-0082 飯田市宮ノ前4164-1",
           "facility_id": "5e7ba3c2-169a-56bb-8ee4-55c58b2c5893",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "b23a5a41-7b82-5e59-8288-50ca7a68d29d",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おおみやすわじんじゃ"
+              },
+              "expected_source_hash": "d7fc08ed262a6bc4cefa27ccde77f8883515106557a2ce09c35970a087db9478",
+              "facility_id": "5e7ba3c2-169a-56bb-8ee4-55c58b2c5893",
+              "identity_match": "現地訪問記事の独立した全文かなに加え、冨士山稲荷神社の祭祀案内と県法人名簿が同一社を宮の前4164-1と明示する。飯田市例規は宮の前と書き、神社庁の宮ノ前4164-1と地番が一致する。神社自身のページ説明にある4161-1は別観測のまま残して、読みだけを加える。",
+              "original": {
+                "address": "飯田市宮ノ前4164-1",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "大宮諏訪神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記事の独立した全文かなに加え、冨士山稲荷神社の祭祀案内と県法人名簿が同一社を宮の前4164-1と明示する。飯田市例規は宮の前と書き、神社庁の宮ノ前4164-1と地番が一致する。神社自身のページ説明にある4161-1は別観測のまま残して、読みだけを加える。",
+              "references": [
+                {
+                  "address_observation": {
+                    "address_raw": "飯田市宮ノ前4164-1",
+                    "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                    "excerpt": "大宮諏訪神社／飯田市宮ノ前4164-1",
+                    "locator": "table tr[180]",
+                    "name_raw": "大宮諏訪神社",
+                    "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                    "reading_raw": "",
+                    "reading_scope": "partial_or_absent",
+                    "role": "agency_listed_shrine_location",
+                    "source_kind": "official_agency",
+                    "title": "長野県神社庁支部別神社一覧",
+                    "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                  },
+                  "address_raw": "飯田市宮ノ前4164-1",
+                  "checked_at": "2026-11-26T08:29:51.844674+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "飯田市宮の前4164-1",
+                      "checked_at": "2026-11-26T08:23:11.262941+00:00",
+                      "locator": "大宮諏訪神社節の鎮座地とお練り祭り・祭祀窓口の案内",
+                      "name_raw": "大宮諏訪神社",
+                      "page_hash": "d695137c2b663ec333dc919948154368de8f6ad70ebf73d9e9dc8339e02eefaa",
+                      "role": "identified_shrine_site_and_current_parcel_from_ritual_contact",
+                      "source_kind": "shrine_published_local_register",
+                      "status": 200,
+                      "title": "飯田十社／冨士山稲荷神社",
+                      "url": "https://www.fujiyamajinja.jp/jinjya/"
+                    },
+                    {
+                      "checked_at": "2026-11-26T08:28:33.355411+00:00",
+                      "locality_raw": "宮の前",
+                      "locator": "1983-01-20 長野県告示第28号「画定した町名」",
+                      "page_hash": "0d0571705a2b866b6d5aaf9d7f807bb2d17ad3716378c64e2d152918811213c7",
+                      "role": "official_written_locality_name",
+                      "source_kind": "municipal_legal_publication",
+                      "status": 200,
+                      "title": "町の区域の画定／飯田市例規集",
+                      "url": "https://www.city.iida.lg.jp/reiki_int/reiki_honbun/e706RG00000005.html"
+                    },
+                    {
+                      "address_raw": "長野県飯田市宮の前4161-1",
+                      "checked_at": "2026-11-26T08:25:24.083652+00:00",
+                      "locator": "文書メタ説明",
+                      "page_hash": "77a447a21dd40ff09977033f3dee71e75662911c0597f5e858cef9f385c149fe",
+                      "role": "discrepant_address_in_page_description",
+                      "source_kind": "shrine_self_identifying_site",
+                      "status": 200,
+                      "title": "外縣 大宮諏訪神社",
+                      "url": "https://oomiyasuwajinja.studio.site/"
+                    },
+                    {
+                      "address_field_raw": "宮の前４１６４番地１",
+                      "checked_at": "2026-11-24T06:08:18.480872+00:00",
+                      "locator": "PDF物理65頁／市町村名・事務所所在地・宗教法人名",
+                      "municipality_raw": "飯田市",
+                      "name_raw": "大宮諏訪神社",
+                      "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                      "role": "registered_office",
+                      "source_kind": "prefectural_religious_corporation_directory",
+                      "status": 200,
+                      "title": "長野県所轄宗教法人名簿（令和7年12月31日現在）",
+                      "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                    }
+                  ],
+                  "excerpt": "大宮諏訪神社(おおみやすわじんじゃ)／飯田市宮の前4164-1 ／ 神社庁一覧：大宮諏訪神社／飯田市宮ノ前4164-1",
+                  "joined_observation_reason": "現地訪問記事の独立した全文かなに加え、冨士山稲荷神社の祭祀案内と県法人名簿が同一社を宮の前4164-1と明示する。飯田市例規は宮の前と書き、神社庁の宮ノ前4164-1と地番が一致する。神社自身のページ説明にある4161-1は別観測のまま残して、読みだけを加える。",
+                  "locator": "現地写真付き個別本文の社名直後と住所欄、祭典窓口の案内",
+                  "name_raw": "大宮諏訪神社",
+                  "page_hash": "3cc294f8ee487a54617b59f0c49eff5e92ccdd3fedb917e8d85e4d94d9f59b0f",
+                  "printed_locality_raw": "飯田市宮の前4164-1",
+                  "reading_observation": {
+                    "address_raw": "飯田市宮の前4164-1",
+                    "checked_at": "2026-11-26T08:29:51.844674+00:00",
+                    "excerpt": "大宮諏訪神社(おおみやすわじんじゃ)／飯田市宮の前4164-1",
+                    "locator": "現地写真付き個別本文の社名直後と住所欄、祭典窓口の案内",
+                    "name_raw": "大宮諏訪神社",
+                    "page_hash": "3cc294f8ee487a54617b59f0c49eff5e92ccdd3fedb917e8d85e4d94d9f59b0f",
+                    "reading_raw": "おおみやすわじんじゃ",
+                    "reading_scope": "full_name",
+                    "role": "explicit_full_shrine_reading",
+                    "source_kind": "individual_on_site_shrine_guide",
+                    "status": 200,
+                    "title": "大宮諏訪神社【長野県飯田市】",
+                    "url": "https://ruxrux2018.blog.fc2.com/blog-entry-1853.html"
+                  },
+                  "reading_raw": "おおみやすわじんじゃ",
+                  "reading_scope": "full_name",
+                  "role": "explicit_full_shrine_reading",
+                  "source_kind": "individual_on_site_shrine_guide",
+                  "status": 200,
+                  "title": "大宮諏訪神社【長野県飯田市】",
+                  "url": "https://ruxrux2018.blog.fc2.com/blog-entry-1853.html"
+                },
+                {
+                  "address_raw": "飯田市宮ノ前4164-1",
+                  "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                  "excerpt": "大宮諏訪神社／飯田市宮ノ前4164-1",
+                  "locator": "table tr[180]",
+                  "name_raw": "大宮諏訪神社",
+                  "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "role": "agency_listed_shrine_location",
+                  "source_kind": "official_agency",
+                  "title": "長野県神社庁支部別神社一覧",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "大宮諏訪神社",
           "normalization": [
@@ -34736,11 +34864,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "おおみやすわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ruxrux2018.blog.fc2.com/blog-entry-1853.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -34900,6 +35028,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おおみやすわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おおみやすわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "大宮諏訪神社",
             "wikipedia_article_refs": [
@@ -34939,7 +35081,7 @@
             "status": "pending",
             "surface": "大宮諏訪神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "大宮諏訪神社"
         },
         {
@@ -35285,12 +35427,110 @@
           "surface": "奥位社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:25:23.973274+00:00",
           "evidence": "七久里神社 395-0244 飯田市山本3037",
           "facility_id": "d9e24502-e242-542b-84ad-5ba934fcac7c",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "35612e1b-9f7c-50ee-970c-1bc880230530",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ななくりじんじゃ"
+              },
+              "expected_source_hash": "d8af2427c8c2a612a71bc4e101d180accee758094dc332dc1397c3d6dfa4e4bf",
+              "facility_id": "d9e24502-e242-542b-84ad-5ba934fcac7c",
+              "identity_match": "現地収録の祭礼映像ページは見出し直前で七久里神社の全文を「のはだかまつり」の前に明示する。県の祭礼案内で同じ山本の七久里神社が会場・主催とされる。神社庁と県名簿は山本3037で一致する。",
+              "original": {
+                "address": "飯田市山本3037",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "七久里神社",
+                "reading_raw": ""
+              },
+              "reason": "現地収録の祭礼映像ページは見出し直前で七久里神社の全文を「のはだかまつり」の前に明示する。県の祭礼案内で同じ山本の七久里神社が会場・主催とされる。神社庁と県名簿は山本3037で一致する。",
+              "references": [
+                {
+                  "address_observation": {
+                    "address_raw": "飯田市山本3037",
+                    "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                    "excerpt": "七久里神社／飯田市山本3037",
+                    "locator": "table tr[184]",
+                    "name_raw": "七久里神社",
+                    "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                    "reading_raw": "",
+                    "reading_scope": "partial_or_absent",
+                    "role": "agency_listed_shrine_location",
+                    "source_kind": "official_agency",
+                    "title": "長野県神社庁支部別神社一覧",
+                    "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                  },
+                  "address_raw": "飯田市山本3037",
+                  "checked_at": "2026-11-26T08:25:23.973274+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_field_raw": "山本３０３７",
+                      "checked_at": "2026-11-24T06:08:18.480872+00:00",
+                      "locator": "PDF物理67頁／市町村名・事務所所在地・宗教法人名",
+                      "municipality_raw": "飯田市",
+                      "name_raw": "七久里神社",
+                      "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                      "role": "registered_office",
+                      "source_kind": "prefectural_religious_corporation_directory",
+                      "status": 200,
+                      "title": "長野県所轄宗教法人名簿（令和7年12月31日現在）",
+                      "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                    }
+                  ],
+                  "designation_name_raw": "七久里神社の裸祭り",
+                  "designation_reading_raw": "ななくりじんじゃのはだかまつり",
+                  "excerpt": "七久里神社の裸祭り／ななくりじんじゃのはだかまつり ／ 神社庁一覧：七久里神社／飯田市山本3037",
+                  "joined_observation_reason": "現地収録の祭礼映像ページは見出し直前で七久里神社の全文を「のはだかまつり」の前に明示する。県の祭礼案内で同じ山本の七久里神社が会場・主催とされる。神社庁と県名簿は山本3037で一致する。",
+                  "locality_raw": "飯田市山本",
+                  "locator": "表題の読み案内の引用括弧内、表題、撮影対象の本文",
+                  "name_raw": "七久里神社",
+                  "page_hash": "a95d8fa7e757e1c76d076df8f18f087d1eb220c84e878cb3373d8e639d5f252c",
+                  "reading_observation": {
+                    "checked_at": "2026-11-26T08:25:23.973274+00:00",
+                    "designation_name_raw": "七久里神社の裸祭り",
+                    "designation_reading_raw": "ななくりじんじゃのはだかまつり",
+                    "excerpt": "七久里神社の裸祭り／ななくりじんじゃのはだかまつり",
+                    "locality_raw": "飯田市山本",
+                    "locator": "表題の読み案内の引用括弧内、表題、撮影対象の本文",
+                    "name_raw": "七久里神社",
+                    "page_hash": "a95d8fa7e757e1c76d076df8f18f087d1eb220c84e878cb3373d8e639d5f252c",
+                    "reading_raw": "ななくりじんじゃ",
+                    "reading_scope": "full_name",
+                    "role": "explicit_shrine_yomi_before_particle_in_festival_name",
+                    "source_kind": "primary_festival_documentation",
+                    "status": 200,
+                    "title": "飯田市山本「七久里神社の裸祭り」／地域文化資産ポータル",
+                    "url": "https://bunkashisan.ne.jp/bunkashisan/20_nagano/7128.html"
+                  },
+                  "reading_raw": "ななくりじんじゃ",
+                  "reading_scope": "full_name",
+                  "role": "explicit_shrine_yomi_before_particle_in_festival_name",
+                  "source_kind": "primary_festival_documentation",
+                  "status": 200,
+                  "title": "飯田市山本「七久里神社の裸祭り」／地域文化資産ポータル",
+                  "url": "https://bunkashisan.ne.jp/bunkashisan/20_nagano/7128.html"
+                },
+                {
+                  "address_raw": "飯田市山本3037",
+                  "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                  "excerpt": "七久里神社／飯田市山本3037",
+                  "locator": "table tr[184]",
+                  "name_raw": "七久里神社",
+                  "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "role": "agency_listed_shrine_location",
+                  "source_kind": "official_agency",
+                  "title": "長野県神社庁支部別神社一覧",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "七久里神社",
           "normalization": [
@@ -35298,11 +35538,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "ななくりじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://bunkashisan.ne.jp/bunkashisan/20_nagano/7128.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -35363,6 +35603,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ななくりじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ななくりじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "七久里神社",
             "wikipedia_article_refs": [],
@@ -35393,7 +35647,7 @@
             "status": "pending",
             "surface": "七久里神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "七久里神社"
         },
         {
@@ -36503,12 +36757,60 @@
           "surface": "白山神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:29:48.354240+00:00",
           "evidence": "琴平社 395-0000 飯田市元町5455",
           "facility_id": "5ad02db4-b5b4-5e88-9099-b2e0f4965de6",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "a90b3d74-ed93-55ee-a891-23a828145c90",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ことひらしゃ"
+              },
+              "expected_source_hash": "557d59e4e9045b27e65a4192f2e8c09952481b74bde95f78017d230122eaef2f",
+              "facility_id": "5ad02db4-b5b4-5e88-9099-b2e0f4965de6",
+              "identity_match": "現地訪問記事の社名・全文かなと元町5455が神社庁原表に一致し、祭祀案内を担当する冨士山稲荷神社の飯田十社紹介も同じ鎮座地を掲載する。",
+              "original": {
+                "address": "飯田市元町5455",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "琴平社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記事の社名・全文かなと元町5455が神社庁原表に一致し、祭祀案内を担当する冨士山稲荷神社の飯田十社紹介も同じ鎮座地を掲載する。",
+              "references": [
+                {
+                  "address_raw": "飯田市元町5455",
+                  "checked_at": "2026-11-26T08:29:48.354240+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "飯田市元町5455",
+                      "checked_at": "2026-11-26T08:23:11.262941+00:00",
+                      "locator": "琴平社個別節の鎮座地と、祭典・祈願の窓口案内",
+                      "name_raw": "琴平社",
+                      "page_hash": "d695137c2b663ec333dc919948154368de8f6ad70ebf73d9e9dc8339e02eefaa",
+                      "role": "identifying_exact_location_of_served_shrine",
+                      "source_kind": "shrine_published_local_register",
+                      "status": 200,
+                      "title": "飯田十社／冨士山稲荷神社",
+                      "url": "https://www.fujiyamajinja.jp/jinjya/"
+                    }
+                  ],
+                  "excerpt": "琴平社(ことひらしゃ)／飯田市元町5455",
+                  "locator": "現地写真付き個別本文の社名直後、住所欄、当該飯田十社への案内",
+                  "name_raw": "琴平社",
+                  "page_hash": "33d05bd365f348c5b34b7e2564464644db21ba1974fde635c112066256fc4543",
+                  "reading_raw": "ことひらしゃ",
+                  "reading_scope": "full_name",
+                  "role": "explicit_shrine_main_name_reading_and_address",
+                  "source_kind": "individual_on_site_shrine_guide",
+                  "status": 200,
+                  "title": "琴平社（琴平神社）【長野県飯田市】",
+                  "url": "https://ruxrux2018.blog.fc2.com/blog-entry-1855.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "琴平社",
           "normalization": [
@@ -36516,11 +36818,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "ことひらしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ruxrux2018.blog.fc2.com/blog-entry-1855.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -36620,6 +36922,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ことひらしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ことひらしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "琴平社",
             "wikipedia_article_refs": [],
@@ -36650,16 +36966,156 @@
             "status": "pending",
             "surface": "琴平社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "琴平社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:29:47.393939+00:00",
           "evidence": "白山社 395-0000 飯田市上飯田6684",
           "facility_id": "35ecfdc7-83f7-58b0-8612-e373441ba59c",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "fcf5e766-0251-5a99-a2ad-b9a59d00bab9",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はくさんしゃ"
+              },
+              "expected_source_hash": "caf4fdd9e4471b977c03882834f46bde9c34f5b7235198f033c6e7351001718a",
+              "facility_id": "35ecfdc7-83f7-58b0-8612-e373441ba59c",
+              "identity_match": "市の風越山コース案内は白山社に独立全文かなを付ける。市文化財と飯田十社が山麓の里宮を滝の沢6684、山頂側の奥社を別地点として扱い、県名簿の白山社も滝の沢6684で神社庁の上飯田6684と地番が一致する。後年の町区域告示は滝の沢の町名の画定を明記する。両資料の町名表記と奥社の地番を保持する。",
+              "original": {
+                "address": "飯田市上飯田6684",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "白山社",
+                "reading_raw": ""
+              },
+              "reason": "市の風越山コース案内は白山社に独立全文かなを付ける。市文化財と飯田十社が山麓の里宮を滝の沢6684、山頂側の奥社を別地点として扱い、県名簿の白山社も滝の沢6684で神社庁の上飯田6684と地番が一致する。後年の町区域告示は滝の沢の町名の画定を明記する。両資料の町名表記と奥社の地番を保持する。",
+              "references": [
+                {
+                  "address_observation": {
+                    "address_raw": "飯田市上飯田6684",
+                    "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                    "excerpt": "白山社／飯田市上飯田6684",
+                    "locator": "table tr[196]",
+                    "name_raw": "白山社",
+                    "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                    "reading_raw": "",
+                    "reading_scope": "partial_or_absent",
+                    "role": "agency_listed_shrine_location",
+                    "source_kind": "official_agency",
+                    "title": "長野県神社庁支部別神社一覧",
+                    "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                  },
+                  "address_raw": "飯田市上飯田6684",
+                  "checked_at": "2026-11-26T08:29:47.393939+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "飯田市滝の沢6684",
+                      "checked_at": "2026-11-26T08:23:23.214407+00:00",
+                      "locator": "指定物件の所在地と所有者、里宮の説明",
+                      "name_raw": "白山社",
+                      "page_hash": "1c1dc970e549ca49cad324ce16e1cbae0f732db6d816a266a9759ce268cebd89",
+                      "role": "satomiya_property_and_present_address",
+                      "source_kind": "municipal_cultural_property_register",
+                      "status": 200,
+                      "title": "白山社随身門／飯田市の文化財",
+                      "url": "https://www.city.iida.lg.jp/site/bunkazai/hakusansyazuijinmon.html"
+                    },
+                    {
+                      "address_raw": "飯田市上飯田（7000）",
+                      "checked_at": "2026-11-26T08:28:35.786778+00:00",
+                      "locator": "指定物件の所在地、所有者、滝ノ沢里宮への説明",
+                      "name_raw": "白山社",
+                      "page_hash": "189d3f8cee30ff88c9d5da50e59195e1d9dfee15bbd8f5cfda89dad101b6948e",
+                      "role": "distinguished_mountain_inner_sanctuary",
+                      "source_kind": "municipal_cultural_property_register",
+                      "status": 200,
+                      "title": "白山社奥社本殿／飯田市の文化財",
+                      "url": "https://www.city.iida.lg.jp/site/bunkazai/hakusansha.html"
+                    },
+                    {
+                      "checked_at": "2026-11-26T08:28:33.355411+00:00",
+                      "locality_raw": "滝の沢",
+                      "locator": "1984-01-30 長野県告示第92号「画定した町名」",
+                      "page_hash": "0d0571705a2b866b6d5aaf9d7f807bb2d17ad3716378c64e2d152918811213c7",
+                      "role": "current_town_demarcation",
+                      "source_kind": "municipal_legal_publication",
+                      "status": 200,
+                      "title": "町の区域の画定／飯田市例規集",
+                      "url": "https://www.city.iida.lg.jp/reiki_int/reiki_honbun/e706RG00000005.html"
+                    },
+                    {
+                      "address_raw": "飯田市滝の沢6684",
+                      "checked_at": "2026-11-26T08:23:11.262941+00:00",
+                      "locator": "白山社節の鎮座地と奥宮の解説",
+                      "page_hash": "d695137c2b663ec333dc919948154368de8f6ad70ebf73d9e9dc8339e02eefaa",
+                      "role": "satomiya_shrine_address_crosscheck",
+                      "source_kind": "shrine_published_local_register",
+                      "status": 200,
+                      "title": "飯田十社／冨士山稲荷神社",
+                      "url": "https://www.fujiyamajinja.jp/jinjya/"
+                    },
+                    {
+                      "address_field_raw": "滝の沢６６８４",
+                      "checked_at": "2026-11-24T06:08:18.480872+00:00",
+                      "locator": "PDF物理67頁／市町村名・事務所所在地・宗教法人名",
+                      "municipality_raw": "飯田市",
+                      "name_raw": "白山社",
+                      "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                      "role": "registered_office",
+                      "source_kind": "prefectural_religious_corporation_directory",
+                      "status": 200,
+                      "title": "長野県所轄宗教法人名簿（令和7年12月31日現在）",
+                      "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                    }
+                  ],
+                  "excerpt": "白山社（はくさんしゃ） ／ 神社庁一覧：白山社／飯田市上飯田6684",
+                  "joined_observation_reason": "市の風越山コース案内は白山社に独立全文かなを付ける。市文化財と飯田十社が山麓の里宮を滝の沢6684、山頂側の奥社を別地点として扱い、県名簿の白山社も滝の沢6684で神社庁の上飯田6684と地番が一致する。後年の町区域告示は滝の沢の町名の画定を明記する。両資料の町名表記と奥社の地番を保持する。",
+                  "locality_raw": "風越山",
+                  "locator": "コース折り返し点の文化財紹介、白山社の直後の括弧",
+                  "name_raw": "白山社",
+                  "page_hash": "34a53c2195ebb1f3bdf15f33855e5bf751d3cfb24a4b06ab47ece80807f1e8e3",
+                  "reading_observation": {
+                    "checked_at": "2026-11-26T08:29:47.393939+00:00",
+                    "excerpt": "白山社（はくさんしゃ）",
+                    "locality_raw": "風越山",
+                    "locator": "コース折り返し点の文化財紹介、白山社の直後の括弧",
+                    "name_raw": "白山社",
+                    "page_hash": "34a53c2195ebb1f3bdf15f33855e5bf751d3cfb24a4b06ab47ece80807f1e8e3",
+                    "reading_raw": "はくさんしゃ",
+                    "reading_scope": "full_name",
+                    "role": "explicit_full_shrine_reading",
+                    "source_kind": "municipal_sports_and_heritage_guide",
+                    "status": 200,
+                    "title": "風越山トレイルマラソン大会／飯田市",
+                    "url": "https://www.city.iida.lg.jp/site/sports/tozan.html"
+                  },
+                  "reading_raw": "はくさんしゃ",
+                  "reading_scope": "full_name",
+                  "role": "explicit_full_shrine_reading",
+                  "source_kind": "municipal_sports_and_heritage_guide",
+                  "status": 200,
+                  "title": "風越山トレイルマラソン大会／飯田市",
+                  "url": "https://www.city.iida.lg.jp/site/sports/tozan.html"
+                },
+                {
+                  "address_raw": "飯田市上飯田6684",
+                  "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                  "excerpt": "白山社／飯田市上飯田6684",
+                  "locator": "table tr[196]",
+                  "name_raw": "白山社",
+                  "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "role": "agency_listed_shrine_location",
+                  "source_kind": "official_agency",
+                  "title": "長野県神社庁支部別神社一覧",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "白山社",
           "normalization": [
@@ -36667,11 +37123,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "はくさんしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.city.iida.lg.jp/site/sports/tozan.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -36811,6 +37267,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はくさんしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はくさんしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "白山社",
             "wikipedia_article_refs": [
@@ -36850,7 +37320,7 @@
             "status": "pending",
             "surface": "白山社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "白山社"
         },
         {
@@ -36997,12 +37467,140 @@
           "surface": "諏訪社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:31:36.004170+00:00",
           "evidence": "郊戸八幡宮 395-0000 飯田市上飯田今宮6207",
           "facility_id": "c8c46888-8de8-5555-b67d-4be1134df869",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "13550270-33db-54c0-9580-5d158024c9d0",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ごうどはちまんぐう"
+              },
+              "expected_source_hash": "49a6b8770c23aa4de1aa4b8d9d91508de6b815f7d5c3e5f53e889745f26b6236",
+              "facility_id": "c8c46888-8de8-5555-b67d-4be1134df869",
+              "identity_match": "今宮の現地訪問記事と秋季祭典の現地取材が、ごうどはちまんぐうを独立して明記する。神社庁の上飯田今宮6207と県の事務所上飯田6207、現地案内と飯田十社の今宮町4丁目6207で地番が一致する。原表と現在の町名表記を保持した。",
+              "original": {
+                "address": "飯田市上飯田今宮6207",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "郊戸八幡宮",
+                "reading_raw": ""
+              },
+              "reason": "今宮の現地訪問記事と秋季祭典の現地取材が、ごうどはちまんぐうを独立して明記する。神社庁の上飯田今宮6207と県の事務所上飯田6207、現地案内と飯田十社の今宮町4丁目6207で地番が一致する。原表と現在の町名表記を保持した。",
+              "references": [
+                {
+                  "address_observation": {
+                    "address_raw": "飯田市上飯田今宮6207",
+                    "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                    "excerpt": "郊戸八幡宮／飯田市上飯田今宮6207",
+                    "locator": "table tr[198]",
+                    "name_raw": "郊戸八幡宮",
+                    "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                    "reading_raw": "",
+                    "reading_scope": "partial_or_absent",
+                    "role": "agency_listed_shrine_location",
+                    "source_kind": "official_agency",
+                    "title": "長野県神社庁支部別神社一覧",
+                    "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                  },
+                  "address_raw": "飯田市上飯田今宮6207",
+                  "checked_at": "2026-11-26T08:31:36.004170+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "checked_at": "2026-11-26T08:31:37.913142+00:00",
+                      "locality_raw": "飯田市今宮町",
+                      "locator": "現地取材本文の冒頭、当該神社の祭典",
+                      "page_hash": "511a696d3f723ed7751eddbdfee9f1ff2141766706c013f817dbbddfe37dc13a",
+                      "reading_raw": "ごうどはちまんぐう",
+                      "role": "independent_full_yomi_and_festival_site",
+                      "source_kind": "primary_local_reporting",
+                      "status": 200,
+                      "title": "飯田・今宮の郊戸八幡宮でみこしと花火／飯田経済新聞",
+                      "url": "https://iida.keizai.biz/headline/550/"
+                    },
+                    {
+                      "address_raw": "長野県飯田市今宮町4丁目6207番地",
+                      "checked_at": "2026-11-26T08:31:38.105261+00:00",
+                      "locator": "社名、境内案内と文書メタ説明の所在地",
+                      "page_hash": "2e2a419c5dda8a833a606b172bdef7c4dc9cd889b430520e871cdeff82d956b6",
+                      "role": "shrine_self_identification_and_current_site_address",
+                      "source_kind": "shrine_self_identifying_site",
+                      "status": 200,
+                      "title": "今宮 郊戸八幡宮",
+                      "url": "https://godohachiman.studio.site/"
+                    },
+                    {
+                      "address_raw": "飯田市今宮町4-6207",
+                      "checked_at": "2026-11-26T08:23:11.262941+00:00",
+                      "locator": "今宮郊戸八幡宮の節の鎮座地",
+                      "page_hash": "d695137c2b663ec333dc919948154368de8f6ad70ebf73d9e9dc8339e02eefaa",
+                      "role": "independent_current_shrine_location",
+                      "source_kind": "shrine_published_local_register",
+                      "status": 200,
+                      "title": "飯田十社／冨士山稲荷神社",
+                      "url": "https://www.fujiyamajinja.jp/jinjya/"
+                    },
+                    {
+                      "address_field_raw": "上飯田６２０７",
+                      "checked_at": "2026-11-24T06:08:18.480872+00:00",
+                      "locator": "PDF物理66頁／市町村名・事務所所在地・宗教法人名",
+                      "municipality_raw": "飯田市",
+                      "name_raw": "郊戸八幡宮",
+                      "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                      "role": "registered_office",
+                      "source_kind": "prefectural_religious_corporation_directory",
+                      "status": 200,
+                      "title": "長野県所轄宗教法人名簿（令和7年12月31日現在）",
+                      "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                    }
+                  ],
+                  "excerpt": "郊戸八幡宮(ごうどはちまんぐう)／飯田市今宮町4丁目6207 ／ 神社庁一覧：郊戸八幡宮／飯田市上飯田今宮6207",
+                  "joined_observation_reason": "今宮の現地訪問記事と秋季祭典の現地取材が、ごうどはちまんぐうを独立して明記する。神社庁の上飯田今宮6207と県の事務所上飯田6207、現地案内と飯田十社の今宮町4丁目6207で地番が一致する。原表と現在の町名表記を保持した。",
+                  "locator": "個別本文の社名直後・住所欄・社頭写真・当社サイトへのリンク",
+                  "name_raw": "郊戸八幡宮",
+                  "page_hash": "e2c0dfad8afeb6f551a50e79965c3392da9a2fb1eb48da942c555e50f3373da4",
+                  "printed_locality_raw": "飯田市今宮町4丁目6207",
+                  "reading_observation": {
+                    "address_raw": "飯田市今宮町4丁目6207",
+                    "checked_at": "2026-11-26T08:31:36.004170+00:00",
+                    "excerpt": "郊戸八幡宮(ごうどはちまんぐう)／飯田市今宮町4丁目6207",
+                    "locator": "個別本文の社名直後・住所欄・社頭写真・当社サイトへのリンク",
+                    "name_raw": "郊戸八幡宮",
+                    "page_hash": "e2c0dfad8afeb6f551a50e79965c3392da9a2fb1eb48da942c555e50f3373da4",
+                    "reading_raw": "ごうどはちまんぐう",
+                    "reading_scope": "full_name",
+                    "role": "explicit_shrine_reading_and_current_address",
+                    "source_kind": "individual_on_site_shrine_guide",
+                    "status": 200,
+                    "title": "今宮郊戸八幡宮（今宮神社）【長野県飯田市】",
+                    "url": "https://ruxrux2018.blog.fc2.com/blog-entry-1858.html"
+                  },
+                  "reading_raw": "ごうどはちまんぐう",
+                  "reading_scope": "full_name",
+                  "role": "explicit_shrine_reading_and_current_address",
+                  "source_kind": "individual_on_site_shrine_guide",
+                  "status": 200,
+                  "title": "今宮郊戸八幡宮（今宮神社）【長野県飯田市】",
+                  "url": "https://ruxrux2018.blog.fc2.com/blog-entry-1858.html"
+                },
+                {
+                  "address_raw": "飯田市上飯田今宮6207",
+                  "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                  "excerpt": "郊戸八幡宮／飯田市上飯田今宮6207",
+                  "locator": "table tr[198]",
+                  "name_raw": "郊戸八幡宮",
+                  "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "role": "agency_listed_shrine_location",
+                  "source_kind": "official_agency",
+                  "title": "長野県神社庁支部別神社一覧",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "郊戸八幡宮",
           "normalization": [
@@ -37010,11 +37608,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "ごうどはちまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ruxrux2018.blog.fc2.com/blog-entry-1858.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -37133,6 +37731,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ごうどはちまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ごうどはちまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "郊戸八幡宮",
             "wikipedia_article_refs": [
@@ -37172,7 +37784,7 @@
             "status": "pending",
             "surface": "郊戸八幡宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "郊戸八幡宮"
         },
         {
@@ -40493,12 +41105,61 @@
           "surface": "稲荷神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:25:24.758752+00:00",
           "evidence": "諏訪神社 395-0813 飯田市大字毛賀885",
           "facility_id": "4dad53ae-64ec-50d0-9e4a-1231be4aa224",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "dcfb1342-6b3e-5bef-8457-aebb2dcf3e5a",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわじんじゃ"
+              },
+              "expected_source_hash": "d2352a878aece623c25f1aca6c1d472d9648b9b41a98a2b9cbe6afe0a4d2a1a6",
+              "facility_id": "4dad53ae-64ec-50d0-9e4a-1231be4aa224",
+              "identity_match": "毛賀の現地記事が、辞書原名と同じ諏訪神社の全文かなと毛賀885を明示する。市指定建造物一覧は同一地番の当社を毛賀諏訪神社と呼ぶ。所在地接頭辞の大字と市資料で添えた地域名は原資料どおり残す。",
+              "original": {
+                "address": "飯田市大字毛賀885",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "諏訪神社",
+                "reading_raw": ""
+              },
+              "reason": "毛賀の現地記事が、辞書原名と同じ諏訪神社の全文かなと毛賀885を明示する。市指定建造物一覧は同一地番の当社を毛賀諏訪神社と呼ぶ。所在地接頭辞の大字と市資料で添えた地域名は原資料どおり残す。",
+              "references": [
+                {
+                  "address_raw": "飯田市毛賀885",
+                  "checked_at": "2026-11-26T08:25:24.758752+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "飯田市毛賀885",
+                      "checked_at": "2026-11-26T08:23:15.562178+00:00",
+                      "excerpt": "毛賀諏訪神社本殿／毛賀885 毛賀諏訪神社",
+                      "locator": "市指定建造物／毛賀諏訪神社本殿／所在地等",
+                      "name_raw": "毛賀諏訪神社",
+                      "page_hash": "6cea60d737203d9983f37c35547fd446af33d760079b9b28352672c0214d36ec",
+                      "role": "identified_shrine_site_and_locality_qualified_name",
+                      "source_kind": "municipal_cultural_property_register",
+                      "status": 200,
+                      "title": "指定文化財一覧／飯田市",
+                      "url": "https://www.city.iida.lg.jp/site/bunkazai/shitei-list.html"
+                    }
+                  ],
+                  "excerpt": "諏訪神社／すわじんじゃ／飯田市毛賀885",
+                  "locator": "個別本文の名称・独立かな・所在地、桜の古木と社殿の現地案内",
+                  "name_raw": "諏訪神社",
+                  "page_hash": "a53f5a2555cefd245af5b8165a4fef9641ce9c38b2cd8d4e5e3f4af5e57917e7",
+                  "reading_raw": "すわじんじゃ",
+                  "reading_scope": "full_name",
+                  "role": "exact_shrine_reading_and_address",
+                  "source_kind": "individual_on_site_shrine_guide",
+                  "status": 200,
+                  "title": "諏訪神社（飯田市毛賀885）／おみやさんcom",
+                  "url": "https://www.omiyasan.com/south/iida/suwajinja.php"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "諏訪神社",
           "normalization": [
@@ -40506,11 +41167,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "すわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.omiyasan.com/south/iida/suwajinja.php",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -40572,6 +41233,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪神社",
             "wikipedia_article_refs": [
@@ -40619,7 +41294,7 @@
             "status": "pending",
             "surface": "諏訪神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪神社"
         },
         {
@@ -42607,12 +43282,72 @@
           "surface": "八幡社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:31:39.094655+00:00",
           "evidence": "天満天神社 395-0021 飯田市仲ノ町351-1",
           "facility_id": "98e33361-4a02-55cf-aad6-78961b08a375",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "cf9918fd-f9aa-5aec-9452-094315bd18de",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "てんまんてんじんじゃ"
+              },
+              "expected_source_hash": "7b7ea44ef8b64af711a518cf1f8db07be0c538e6d174b0d2c8f24fec3404a5f8",
+              "facility_id": "98e33361-4a02-55cf-aad6-78961b08a375",
+              "identity_match": "現地訪問記事の独立全文かなと仲ノ町351-1が神社庁原表と一致し、祭祀窓口も同じ鎮座地を掲載する。県名簿の事務所の枝番を同じものに書き換えず別資料として保持する。",
+              "original": {
+                "address": "飯田市仲ノ町351-1",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "天満天神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記事の独立全文かなと仲ノ町351-1が神社庁原表と一致し、祭祀窓口も同じ鎮座地を掲載する。県名簿の事務所の枝番を同じものに書き換えず別資料として保持する。",
+              "references": [
+                {
+                  "address_raw": "飯田市仲ノ町351-1",
+                  "checked_at": "2026-11-26T08:31:39.094655+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "飯田市仲ノ町351-1",
+                      "checked_at": "2026-11-26T08:23:11.262941+00:00",
+                      "locator": "天満天神社（普門院天満宮）節の鎮座地と祭典・祈願の相談窓口",
+                      "page_hash": "d695137c2b663ec333dc919948154368de8f6ad70ebf73d9e9dc8339e02eefaa",
+                      "role": "exact_location_of_served_shrine",
+                      "source_kind": "shrine_published_local_register",
+                      "status": 200,
+                      "title": "飯田十社／冨士山稲荷神社",
+                      "url": "https://www.fujiyamajinja.jp/jinjya/"
+                    },
+                    {
+                      "address_field_raw": "仲ノ町３５１番地",
+                      "checked_at": "2026-11-24T06:08:18.480872+00:00",
+                      "locator": "PDF物理67頁／市町村名・事務所所在地・宗教法人名",
+                      "municipality_raw": "飯田市",
+                      "name_raw": "天満天神社",
+                      "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                      "role": "registered_office",
+                      "source_kind": "prefectural_religious_corporation_directory",
+                      "status": 200,
+                      "title": "長野県所轄宗教法人名簿（令和7年12月31日現在）",
+                      "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                    }
+                  ],
+                  "excerpt": "天満天神社(てんまんてんじんじゃ)／飯田市仲ノ町351-1",
+                  "locator": "個別本文の社名・独立かな、住所欄、祭祀相談窓口",
+                  "name_raw": "天満天神社",
+                  "page_hash": "24b748a4ea304f90220cd5bbf84a36695107f2dd7948dd84c127de2dcf7d72b6",
+                  "reading_raw": "てんまんてんじんじゃ",
+                  "reading_scope": "full_name",
+                  "role": "explicit_shrine_reading_and_address",
+                  "source_kind": "individual_on_site_shrine_guide",
+                  "status": 200,
+                  "title": "天満天神社（天満宮普門院）【長野県飯田市】",
+                  "url": "https://ruxrux2018.blog.fc2.com/blog-entry-1857.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "天満天神社",
           "normalization": [
@@ -42620,11 +43355,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "てんまんてんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ruxrux2018.blog.fc2.com/blog-entry-1857.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -42703,6 +43438,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんまんてんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんまんてんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "天満天神社",
             "wikipedia_article_refs": [],
@@ -42733,7 +43482,7 @@
             "status": "pending",
             "surface": "天満天神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天満天神社"
         },
         {
@@ -43872,12 +44621,134 @@
           "surface": "八幡社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:23:11.087905+00:00",
           "evidence": "鳩ｹ嶺八幡宮 395-0814 飯田市八幡町1999",
           "facility_id": "d826fb74-8059-542c-ab20-337c5a23680f",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "69196cfc-d5e4-5b01-a332-bf2707cc4a67",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はとがみねはちまんぐう"
+              },
+              "expected_source_hash": "cacba9df63dd9d9fc670495c95c9a2e6002e465c401b40f91ddc77d4664d99c9",
+              "facility_id": "d826fb74-8059-542c-ab20-337c5a23680f",
+              "identity_match": "飯田市指定の本殿の所在地と所有者、県法人事務所、『日本歴史地名大系』名称項目の地番は八幡町1999で一致する。地名資料が全文かなを明示し、神社自身は鳩ヶ嶺八幡宮と書く。神社庁原表の鳩ｹ嶺八幡宮は読みだけ補完して原表記を保存する。",
+              "original": {
+                "address": "飯田市八幡町1999",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "鳩ｹ嶺八幡宮",
+                "reading_raw": ""
+              },
+              "reason": "飯田市指定の本殿の所在地と所有者、県法人事務所、『日本歴史地名大系』名称項目の地番は八幡町1999で一致する。地名資料が全文かなを明示し、神社自身は鳩ヶ嶺八幡宮と書く。神社庁原表の鳩ｹ嶺八幡宮は読みだけ補完して原表記を保存する。",
+              "references": [
+                {
+                  "address_observation": {
+                    "address_raw": "飯田市八幡町1999",
+                    "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                    "excerpt": "鳩ｹ嶺八幡宮／飯田市八幡町1999",
+                    "locator": "table tr[261]",
+                    "name_raw": "鳩ｹ嶺八幡宮",
+                    "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                    "reading_raw": "",
+                    "reading_scope": "partial_or_absent",
+                    "role": "agency_listed_shrine_location",
+                    "source_kind": "official_agency",
+                    "title": "長野県神社庁支部別神社一覧",
+                    "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                  },
+                  "address_raw": "飯田市八幡町1999",
+                  "agency_name_raw": "鳩ｹ嶺八幡宮",
+                  "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                  "checked_at": "2026-11-26T08:23:11.087905+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "飯田市八幡町1999",
+                      "checked_at": "2026-11-26T08:23:20.754148+00:00",
+                      "locator": "所在地、所有者、指定建造物の名称",
+                      "named_owner_raw": "鳩ヶ嶺八幡宮",
+                      "page_hash": "fd55952f83d3825aed5f226bd91d1ac548c0ca3d0a09391b6527031534aaf5f0",
+                      "role": "exact_parcel_and_named_shrine_owner",
+                      "source_kind": "municipal_cultural_property_register",
+                      "status": 200,
+                      "title": "鳩ヶ嶺八幡宮本殿／飯田市",
+                      "url": "https://www.city.iida.lg.jp/site/bunkazai/hatogaminehonden.html"
+                    },
+                    {
+                      "checked_at": "2026-11-26T08:23:11.546455+00:00",
+                      "locator": "公式サイトの見出しと社殿・境内案内",
+                      "page_hash": "233aa09647cb8a1bc49dd797d117699012f061856a20194bde6858e2f0b35fb3",
+                      "role": "same_shrine_current_self_written_name",
+                      "source_kind": "official_shrine",
+                      "status": 200,
+                      "title": "鳩ヶ嶺八幡宮",
+                      "url": "https://hatogamine.org/"
+                    },
+                    {
+                      "address_field_raw": "八幡町１９９９番地",
+                      "checked_at": "2026-11-24T06:08:18.480872+00:00",
+                      "locator": "PDF物理68頁／市町村名・事務所所在地・宗教法人名",
+                      "municipality_raw": "飯田市",
+                      "name_raw": "鳩ヶ嶺八幡宮",
+                      "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                      "role": "registered_office",
+                      "source_kind": "prefectural_religious_corporation_directory",
+                      "status": 200,
+                      "title": "長野県所轄宗教法人名簿（令和7年12月31日現在）",
+                      "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                    }
+                  ],
+                  "excerpt": "鳩ヶ嶺八幡宮／はとがみねはちまんぐう／長野県 飯田市 八幡町1999番地 ／ 神社庁一覧：鳩ｹ嶺八幡宮／飯田市八幡町1999",
+                  "joined_observation_reason": "飯田市指定の本殿の所在地と所有者、県法人事務所、『日本歴史地名大系』名称項目の地番は八幡町1999で一致する。地名資料が全文かなを明示し、神社自身は鳩ヶ嶺八幡宮と書く。神社庁原表の鳩ｹ嶺八幡宮は読みだけ補完して原表記を保存する。",
+                  "license": "CC BY 4.0",
+                  "locator": "ID 200000180900／基本情報の名称・名称（よみ）・住所・ライセンス",
+                  "name_raw": "鳩ｹ嶺八幡宮",
+                  "page_hash": "24938c1c71e181622dcc40c0a853ca28ed08e820db01cf51872a5728e160e427",
+                  "printed_locality_raw": "長野県 飯田市 八幡町1999番地",
+                  "reading_observation": {
+                    "address_raw": "長野県 飯田市 八幡町1999番地",
+                    "agency_name_raw": "鳩ｹ嶺八幡宮",
+                    "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                    "checked_at": "2026-11-26T08:23:11.087905+00:00",
+                    "excerpt": "鳩ヶ嶺八幡宮／はとがみねはちまんぐう／長野県 飯田市 八幡町1999番地",
+                    "license": "CC BY 4.0",
+                    "locator": "ID 200000180900／基本情報の名称・名称（よみ）・住所・ライセンス",
+                    "name_raw": "鳩ヶ嶺八幡宮",
+                    "page_hash": "24938c1c71e181622dcc40c0a853ca28ed08e820db01cf51872a5728e160e427",
+                    "reading_raw": "はとがみねはちまんぐう",
+                    "reading_scope": "full_name",
+                    "role": "indexed_full_shrine_reading",
+                    "source_kind": "historical_place_name_dataset",
+                    "status": 200,
+                    "title": "鳩ヶ嶺八幡宮／『日本歴史地名大系』施設・地点項目データセット",
+                    "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/20/200000180900.html"
+                  },
+                  "reading_raw": "はとがみねはちまんぐう",
+                  "reading_scope": "full_name",
+                  "role": "indexed_full_shrine_reading",
+                  "source_kind": "historical_place_name_dataset",
+                  "status": 200,
+                  "title": "鳩ヶ嶺八幡宮／『日本歴史地名大系』施設・地点項目データセット",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/20/200000180900.html"
+                },
+                {
+                  "address_raw": "飯田市八幡町1999",
+                  "checked_at": "2026-11-08T14:30:45.814544+00:00",
+                  "excerpt": "鳩ｹ嶺八幡宮／飯田市八幡町1999",
+                  "locator": "table tr[261]",
+                  "name_raw": "鳩ｹ嶺八幡宮",
+                  "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "role": "agency_listed_shrine_location",
+                  "source_kind": "official_agency",
+                  "title": "長野県神社庁支部別神社一覧",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/hani.htm"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "鳩ｹ嶺八幡宮",
           "normalization": [
@@ -43885,11 +44756,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "はとがみねはちまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/20/200000180900.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -43927,6 +44798,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はとがみねはちまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はとがみねはちまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "鳩ｹ嶺八幡宮",
             "wikipedia_article_refs": [],
@@ -43957,7 +44842,7 @@
             "status": "pending",
             "surface": "鳩ｹ嶺八幡宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "鳩ｹ嶺八幡宮"
         },
         {
@@ -44191,12 +45076,72 @@
           "surface": "育良神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:45.814544+00:00",
+          "checked_at": "2026-11-26T08:31:42.134452+00:00",
           "evidence": "烏山稲荷神社 395-0044 飯田市本町4-1310-8",
           "facility_id": "a0bcaecf-9248-5796-8af4-e71259c2e880",
           "fetched_at": "2026-11-08T14:30:45.814544+00:00",
           "id": "907eec3a-b6d2-51f5-b5f6-afbd81c8b935",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "からすやまいなりじんじゃ"
+              },
+              "expected_source_hash": "e4c96f61c98ccd4759d82747782fb68dfab45eb96bb9a00c3515d2d66fc8c5c6",
+              "facility_id": "a0bcaecf-9248-5796-8af4-e71259c2e880",
+              "identity_match": "現地訪問記事の独立全文かなと本町4丁目1310-8は神社庁原表および県名簿と丁目・地番が一致する。冨士山稲荷神社の祭祀案内に載る元町の住所は別観測として保持する。",
+              "original": {
+                "address": "飯田市本町4-1310-8",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
+                "name_raw": "烏山稲荷神社",
+                "reading_raw": ""
+              },
+              "reason": "現地訪問記事の独立全文かなと本町4丁目1310-8は神社庁原表および県名簿と丁目・地番が一致する。冨士山稲荷神社の祭祀案内に載る元町の住所は別観測として保持する。",
+              "references": [
+                {
+                  "address_raw": "飯田市本町4丁目1310-8",
+                  "checked_at": "2026-11-26T08:31:42.134452+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_field_raw": "本町四丁目１３１０番地８",
+                      "checked_at": "2026-11-24T06:08:18.480872+00:00",
+                      "locator": "PDF物理65頁／市町村名・事務所所在地・宗教法人名",
+                      "municipality_raw": "飯田市",
+                      "name_raw": "烏山稲荷神社",
+                      "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                      "role": "registered_office",
+                      "source_kind": "prefectural_religious_corporation_directory",
+                      "status": 200,
+                      "title": "長野県所轄宗教法人名簿（令和7年12月31日現在）",
+                      "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                    },
+                    {
+                      "address_raw": "飯田市元町4-1310-8",
+                      "checked_at": "2026-11-26T08:23:11.262941+00:00",
+                      "locator": "烏山稲荷神社節の鎮座地",
+                      "page_hash": "d695137c2b663ec333dc919948154368de8f6ad70ebf73d9e9dc8339e02eefaa",
+                      "role": "separate_discrepant_town_observation",
+                      "source_kind": "shrine_published_local_register",
+                      "status": 200,
+                      "title": "飯田十社／冨士山稲荷神社",
+                      "url": "https://www.fujiyamajinja.jp/jinjya/"
+                    }
+                  ],
+                  "excerpt": "烏山稲荷神社(からすやまいなりじんじゃ)／飯田市本町4丁目1310-8",
+                  "locator": "個別本文の社名・独立かな、住所欄、本町の神社の写真",
+                  "name_raw": "烏山稲荷神社",
+                  "page_hash": "c4a964415767b3d24dae00fc9680843b5d3eb2cbda1e152fa71948695b76e0ef",
+                  "reading_raw": "からすやまいなりじんじゃ",
+                  "reading_scope": "full_name",
+                  "role": "explicit_shrine_reading_and_address",
+                  "source_kind": "individual_on_site_shrine_guide",
+                  "status": 200,
+                  "title": "烏山稲荷神社【長野県飯田市】",
+                  "url": "https://ruxrux2018.blog.fc2.com/blog-entry-1854.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
           "name_raw": "烏山稲荷神社",
           "normalization": [
@@ -44204,11 +45149,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9b7dee16f971aa4848602790f2a1a0680e6d74450b5fad12b83c4b02f83f5a08",
-          "reading": "",
+          "reading": "からすやまいなりじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/hani.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ruxrux2018.blog.fc2.com/blog-entry-1854.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -44287,6 +45232,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "からすやまいなりじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "からすやまいなりじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "烏山稲荷神社",
             "wikipedia_article_refs": [],
@@ -44317,7 +45276,7 @@
             "status": "pending",
             "surface": "烏山稲荷神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "烏山稲荷神社"
         },
         {

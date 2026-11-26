@@ -828,6 +828,18 @@ Wikidataで社名・全地番が対応し、索引にかながある204項目の
 
 国税庁の全国日次差分の電子署名を検証し、2,016行を基準コミット `569725f` の全国保留9,497登録と照合しました。亀岡市篠町浄法寺土取54の粟島神社は同日の個別公表情報にも「アワシマジンジャ」があり、「あわしまじんじゃ」を補完しました。京都府の10月30日版月次全件に対応する法人番号は一意で、その時点のフリガナ欄は空欄でした。福知山市の同名社は所在地が異なるため保留です。全国保留は**9,497 → 9,496登録**です。[国税庁の日次差分](https://www.houjin-bangou.nta.go.jp/download/sabun/)・[粟島神社の個別公表情報](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9130005007936)
 
+### 長野・山梨・滋賀・熊本の地域資料の照合（2026-11-26）
+
+長野では飯田市の地域資源リスト37頁のうち10頁、令和8年度教育要覧の文化財資料19頁の文字層と3頁の原画像、飯田十社の個別案内などを確認しました。19登録を個別に照合し、鳩ｹ嶺八幡宮、七久里神社、白山社など9登録を補完しました。神社庁の原表記と、市・県・祭祀案内で見つかった所在地の表記差を記録しました。[飯田市の地域資源リスト](https://www.iida.nanshin-lib.jp/portal/cmsfiles/contents/0000000/218/list.pdf)・[飯田市の令和8年度教育要覧](https://www.city.iida.lg.jp/uploaded/attachment/82973.pdf)・[飯田十社の案内](https://www.fujiyamajinja.jp/jinjya/)
+
+山梨では甲府市と市観光協会の散策冊子の原図を、市の文化財計画付録と県神社庁の所在地に照合し、金山神社、山八幡神社、原山神社、神明神社、湯谷神社の5登録を補完しました。湯谷神社は文化庁の日本遺産資料で旧読み「ゆやじんじゃ」から「ゆたにじんじゃ」への訂正を確認しました。甲州市では船宮神社を補完し、神社の113番地と指定樹木の113-1番地を資料ごとに記録しました。都留市立図書館『都留市社記』の確認頁では対象社の全文かなを確認できず、保留を維持しました。[甲府市の散策冊子](https://www.city.kofu.lg.jp/k096/p002994.html)・[甲府市文化財保存活用地域計画](https://www.city.kofu.lg.jp/k096/p003058.html)・[文化庁の訂正資料](https://www.bunka.go.jp/seisaku/bunkazai/nihon_isan/pdf/93231201_01.pdf#page=8)・[山梨県の船宮神社の大ヒノキ](https://www.pref.yamanashi.jp/bunka/bunkazaihogo/bunkazai_data/yamanashinobunkazai_nc0096.html)
+
+滋賀では新規取得の114 URLを確認しました。公開PDF47点484頁のうち文字層のある232頁と、選定した49頁の画像を点検しました。現地訪問記事の個別本文で、県神社庁の鎮座地と一致する全文かなと地番を確認し、高島市1、米原市3、彦根市1の計5登録を補完しました。乎加神社は市広報に部分かながあり、全文かなを載せる訪問記事の字名を同じ地番に結び付けられなかったため保留しました。[大田神社の現地記録](https://mahorobasake.blog.fc2.com/blog-entry-3508.html)・[八幡神社の現地記録](https://mahorobasake.blog.fc2.com/blog-entry-2942.html)・[高宮神社の現地記録](https://mahorobasake.blog.fc2.com/blog-entry-1746.html)
+
+熊本では阿蘇・天草・人吉の自治体資料や地域案内など、PDF122点1,483頁のうち文字層のある1,355頁を、県内保留522登録の名称と照合しました。市の指定文化財一覧、山田小学校区の資料、県立劇場の祭礼案内、観光協会の境内案内から、踊山神社、山田八幡宮、二江神社、上野原神社の4登録を補完しました。県宗教法人名簿と国税庁の法人情報は所在地の照合に使用しました。荻神社は阿蘇市統計資料の版で読みが異なり、国造神社は県名簿と施設案内で地番が異なるため保留しました。[阿蘇市指定文化財一覧](https://www.city.aso.kumamoto.jp/education/cultural-property/list_of_cultural_property/)・[阿蘇ペディアの山田小学校区](https://aso-dm.net/article/article-2170)・[熊本県立劇場の二江神社例大祭](https://denshou.kengeki.or.jp/traditional/%E4%BA%8C%E6%B1%9F%E7%A5%9E%E7%A4%BE%E4%BE%8B%E5%A4%A7%E7%A5%AD/)・[天草宝島観光協会の上野原神社大クス](https://www.t-island.jp/spot/2997)・[熊本県の宗教法人名簿](https://data.bodik.jp/dataset/430005_00107/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716)
+
+4県で合計24登録を補完し、全国29都道府県の保留は**9,496 → 9,472登録**です。
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
