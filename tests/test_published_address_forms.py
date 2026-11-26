@@ -150,3 +150,22 @@ class PublishedAddressFormsTest(unittest.TestCase):
                     '47', '沖縄県', name, 'みやこじんじゃ', acquired, printed,
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_sasebo_compares_the_documented_takanashi_town_spelling(self):
+        acquired = '佐世保市髙梨町1番9号'
+        printed = '長崎県佐世保市高梨町1-9'
+        dataset, proposal = self.fixture(
+            '42', '長崎県', '須佐神社', 'すさじんじゃ', acquired, printed,
+        )
+        result = apply_corrections(dataset, proposal)
+        self.assertEqual(len(eligible(result)), 1)
+        self.assertEqual(result['facilities'], dataset['facilities'])
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_takanashi_comparison_requires_the_same_city_and_street_number(self):
+        for printed in ('佐世保市高梨町1-90', '佐世保市高梨町2-9', '佐世保市高梨町', '長崎市高梨町1番9号'):
+            with self.subTest(printed=printed):
+                dataset, proposal = self.fixture(
+                    '42', '長崎県', '須佐神社', 'すさじんじゃ', '佐世保市髙梨町1番9号', printed,
+                )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])

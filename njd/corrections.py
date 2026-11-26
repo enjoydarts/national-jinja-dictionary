@@ -198,6 +198,9 @@ def _reference_matches(ref,facility,entry,changes):
             # Use the published street spellings in these two Kitakyushu wards.
             value=re.sub(r'^北九州市八幡西区浅川日の峰(?=\d)','北九州市八幡西区浅川日の峯',value)
             value=re.sub(r'^北九州市八幡東区春ノ町(?=\d)','北九州市八幡東区春の町',value)
+        if facility.get('prefecture_code')=='42':
+            # The Sasebo town directory uses 高梨町. Compare complete parcels.
+            value=re.sub(r'^佐世保市髙梨町(?=\d)','佐世保市高梨町',value)
         value=compare_address_units(value)
         # The town's own ordinances use both spellings (docs/DATA.md).
         # Compare only this Kochi municipality, with a literal parcel present.
@@ -348,15 +351,18 @@ def _linked_locality_reference(ref,correction,facility):
 
 
 def _normalized_reference_reading(ref):
-    """Only a declared mechanical removal of printed intra-reading spaces."""
+    """Remove only declared separators between literal kana in a full reading."""
     raw=ref.get('reading_raw','');steps=ref.get('reading_normalization')
-    if steps is not None:
-        if (steps!=['remove printed reading spaces'] or ref.get('source_kind')!='official_shrine'
-            or ref.get('reading_scope')!='full_name' or not isinstance(raw,str)
-            or not re.fullmatch(r'[ぁ-ゖァ-ヶゝゞー]+(?:[ \u3000]+[ぁ-ゖァ-ヶゝゞー]+)+',raw)):
-            raise ValueError('unsupported or nonmechanical reference reading normalization')
-        raw=raw.replace(' ','').replace('\u3000','')
-    return normalize_reading(raw)
+    if steps is None:
+        return normalize_reading(raw)
+    if ref.get('reading_scope')=='full_name' and isinstance(raw,str):
+        if (steps==['remove printed reading spaces'] and ref.get('source_kind')=='official_shrine'
+            and re.fullmatch(r'[ぁ-ゖァ-ヶゝゞー]+(?:[ \u3000]+[ぁ-ゖァ-ヶゝゞー]+)+',raw)):
+            return normalize_reading(raw.replace(' ','').replace('\u3000',''))
+        if (steps==['remove printed reading middle dots']
+            and re.fullmatch(r'[ぁ-ゖァ-ヶゝゞー]+(?:・[ぁ-ゖァ-ヶゝゞー]+)+',raw)):
+            return normalize_reading(raw.replace('・',''))
+    raise ValueError('unsupported or nonmechanical reference reading normalization')
 
 
 def _joined_official_reading(ref,correction,facility,entry):

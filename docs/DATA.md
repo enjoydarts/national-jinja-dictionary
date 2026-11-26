@@ -241,6 +241,8 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 沖縄県神社庁の宮古神社の原欄「宮古島市平良市西里5-1」は、同じ掲載枠が案内する施設公式地図の「沖縄県宮古島市平良字西里5−1」と照合しました。宮古島市の新旧対照表は「平良市字西里」から「宮古島市平良字西里」への対応を示します。読み補完時の比較はこの社名と5-1の全地番に限定し、庁と施設の原欄を保持します。[宮古神社の公式地図](https://miyako-jinja.com/map.html)・[宮古島市の住所表記](https://www.city.miyakojima.lg.jp/syoukai/jyusyo.html)
 
+佐世保市の須佐神社は、県神社庁の「髙梨町」と市の町名表にある「高梨町」を照合しました。佐世保市の当該町名に比較を限定し、住居番号と各原欄を保持します。[佐世保市町名一覧](https://www.city.sasebo.lg.jp/documents/23222/20211201cyoumeiichiran2.pdf)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行
@@ -256,6 +258,8 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 2026年11月16日の利用者指定により、資料に掲載された読みの中黒「・」は原則として除いて登録します。以後はこの既定方針を根拠として対象登録の編集判断へ記録できます。原かなは保持し、読みの文字・語尾を補わず、資料の相違や施設同定の保留をこの方針で解除しません。登録表記の中黒を残すかどうかは別の判断です。
 
 `source_separator_normalization`の編集判断は、利用者が指定した登録表記に対して、`separator_review.name_remove`・`reading_remove`に明記した原文中の中黒・半角/全角空白だけを除くものです。読みの文字・接尾語の補作、複合名の分割、住所・施設同定の保留解除には使いません。読みの根拠は元の神社庁かな欄で、利用者の確認は表記と区切りの編集方針として区別します。
+
+外部資料で全文かなを確認する場合も、参照の `reading_normalization` に `remove printed reading middle dots` を明記し、かなの間に掲載された中黒を採用読みに限って除けます。石作神社・玉作神社は辞書の登録表記の中黒と、外部資料の原かな「いしつくりじんじゃ・たまつくりじんじゃ」の両方を保持し、採用読みを「いしつくりじんじゃたまつくりじんじゃ」とします。地番の照合には庁個別と外部資料にある千田793を使用しました。[滋賀県神社庁・石作神社・玉作神社](https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=1253)
 
 `retained_source_annotation`は、利用者が全角括弧付きの原掲載名をそのまま登録表記に残す判断です。`annotation_review.annotation_raw`を原名の末尾括弧内容と照合し、読みは神社庁欄のまま選択します。括弧内の読みを推定追加せず、別の施設保留を解除しません。
 

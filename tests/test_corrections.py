@@ -62,6 +62,39 @@ class ParcelRangeReferenceTest(unittest.TestCase):
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
 
 
+class ExternalReadingSeparatorTest(unittest.TestCase):
+    def candidate(self, raw, reading, scope='full_name'):
+        dataset = build([row(name='甲神社・乙神社', reading_raw='')])
+        proposal = correction(dataset, {'reading': reading})
+        ref = proposal['entries'][dataset['entries'][0]['id']]['references'][0]
+        ref.update(reading_raw=raw, reading_scope=scope,
+                   reading_normalization=['remove printed reading middle dots'],
+                   excerpt=f'甲神社・乙神社（{raw}） {ref["address_raw"]}')
+        return dataset, proposal
+
+    def test_middle_dot_is_removed_only_from_the_adopted_reading(self):
+        raw = 'こうじんじゃ・おつじんじゃ'
+        dataset, proposal = self.candidate(raw, 'こうじんじゃおつじんじゃ')
+        result = apply_corrections(dataset, proposal)
+        entry, = eligible(result)
+        self.assertEqual(entry['reading'], 'こうじんじゃおつじんじゃ')
+        self.assertEqual(entry['surface'], '甲神社・乙神社')
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['reading_raw'], raw)
+        self.assertEqual(validate(result), [])
+
+    def test_separator_does_not_authorize_other_normalization_or_partial_names(self):
+        for raw, reading, scope in (
+            ('こうじんじゃ・おつじんじゃ', 'こうじんじゃおつやじんじゃ', 'full_name'),
+            ('こう・おつ', 'こうおつ', 'partial_or_absent'),
+            ('こうじんじゃ・おつ じんじゃ', 'こうじんじゃおつじんじゃ', 'full_name'),
+            ('こうじんじゃ・・おつじんじゃ', 'こうじんじゃおつじんじゃ', 'full_name'),
+            ('こうじんじゃおつじんじゃ', 'こうじんじゃおつじんじゃ', 'full_name'),
+        ):
+            with self.subTest(raw=raw, scope=scope):
+                dataset, proposal = self.candidate(raw, reading, scope)
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+
 class AgencyRegistryReadingTest(unittest.TestCase):
     def candidate(self,raw,full,scope='partial_or_absent'):
         d=build([row(name='架空神社',reading_raw='')]);c=correction(d,{'reading':full})
