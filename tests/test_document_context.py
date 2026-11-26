@@ -29,6 +29,53 @@ def fixture():
 
 
 class DocumentContextTest(unittest.TestCase):
+    def test_same_profile_locality_and_parcel_preserve_printed_fields(self):
+        data, doc, ref = self.profile_fixture()
+        before = copy.deepcopy(data)
+        observed = copy.deepcopy(doc)
+        out = apply_corrections(data, doc)
+        self.assertEqual(len(eligible(out)), 1)
+        self.assertEqual(out['entries'][0]['reading'], 'かくうじんじゃ')
+        self.assertEqual(out['entries'][0]['reading_raw'], '')
+        self.assertEqual(out['facilities'], before['facilities'])
+        self.assertEqual(ref['address_raw'], '字東2856 番地')
+        self.assertEqual(doc, observed)
+        self.assertEqual(validate(out), [])
+
+    def test_same_profile_rejects_other_sections_and_location_fragments(self):
+        for key, value in (('record_number', 3), ('locality_raw', '大字乙字東'),
+                           ('municipality_raw', '別市'), ('source_page_index', 3),
+                           ('scope_raw', '神科地域文化財の現況'), ('page_hash', 'c'*64)):
+            with self.subTest(key=key):
+                data, doc, ref = self.profile_fixture()
+                ref['document_address_context'][key] = value
+                self.assertEqual(eligible(apply_corrections(data, doc)), [])
+        for address in ('字西2856 番地', '字東2856 番地1', '字東28560 番地'):
+            with self.subTest(address=address):
+                data, doc, ref = self.profile_fixture()
+                ref['excerpt'] = ref['excerpt'].replace(ref['address_raw'], address)
+                ref['address_raw'] = address
+                self.assertEqual(eligible(apply_corrections(data, doc)), [])
+
+    @staticmethod
+    def profile_fixture():
+        data = build([row(reading_raw='', address='架空市甲字東2856')])
+        doc = correction(data, {'reading': 'かくうじんじゃ'})
+        ref = next(iter(doc['entries'].values()))['references'][0]
+        ref.update(url='https://community.example.invalid/survey.pdf', page_hash='b'*64,
+                   source_kind='local_community_field_survey', reading_scope='full_name',
+                   address_raw='字東2856 番地', pdf_pages=10, source_page_index=3,
+                   locator='PDF index3, profile 2', source_card_number=2,
+                   visual_review={'image_sha256': 'a'*64},
+                   excerpt='架空神社 / かくうじんじゃ / 大字甲字東にあり / 所在地 字東2856 番地')
+        ref['document_address_context'] = dict(kind='same_pdf_profile_locality_and_parcel',
+            url=ref['url'], page_hash=ref['page_hash'], checked_at=ref['checked_at'],
+            municipality_raw='架空市', scope_raw='架空市神科地域文化財の現況',
+            excerpt='「架空市神科地域文化財の現況」', locator='PDF index1, title',
+            source_page_index=1, record_number=2, locality_raw='大字甲字東',
+            locality_excerpt='大字甲字東にあり', parcel_label_raw='所在地')
+        return data, doc, ref
+
     def test_repeated_context_correction_keeps_exclusion_and_its_reason(self):
         for corrupt in (False, True):
             with self.subTest(corrupt=corrupt):

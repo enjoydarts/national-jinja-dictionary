@@ -31,7 +31,11 @@ def _parcel(value):
 def document_context_address(ref, facility):
     """Return a comparison address; raw evidence is never rewritten."""
     context = ref.get('document_address_context')
-    if not isinstance(context, dict) or context.get('kind') != 'same_document_explicit_municipality':
+    if not isinstance(context, dict):
+        return None
+    if context.get('kind') == 'same_pdf_profile_locality_and_parcel':
+        return _profile_address(ref, context, facility)
+    if context.get('kind') != 'same_document_explicit_municipality':
         return None
     if (ref.get('source_kind') != 'municipality_hosted_citizen_university_report'
         or ref.get('reading_scope') != 'full_name' or ref.get('address_components') is not None
@@ -77,3 +81,55 @@ def document_context_address(ref, facility):
     if not printed or printed != _parcel(address[len(city):]):
         return None
     return city+ref['address_raw']
+
+
+def _profile_address(ref, context, facility):
+    """Bind the locality sentence and parcel label within one printed profile."""
+    if (ref.get('source_kind') != 'local_community_field_survey'
+        or ref.get('reading_scope') != 'full_name'
+        or ref.get('name_raw') != facility.get('listed_name')
+        or any(k in ref for k in ('address_components', 'article_address_context',
+                                  'booklet_address_context', 'csv_address_context'))):
+        return None
+    if any(not _plain(r.get(k)) for r in (ref, context)
+           for k in ('url', 'page_hash', 'checked_at', 'locator', 'excerpt')):
+        return None
+    if (any(context[k] != ref[k] for k in ('url', 'page_hash', 'checked_at'))
+        or not _hash(ref['page_hash']) or not _dated(ref['checked_at'])):
+        return None
+    try:
+        url = urlsplit(ref['url'])
+    except ValueError:
+        return None
+    if (url.scheme != 'https' or not url.hostname or url.username or url.password
+        or url.fragment or not url.path.lower().endswith('.pdf')):
+        return None
+    pages, page, scope_page, record = (ref.get('pdf_pages'), ref.get('source_page_index'),
+                                      context.get('source_page_index'), ref.get('source_card_number'))
+    if (any(type(v) is not int for v in (pages, page, scope_page, record, context.get('record_number')))
+        or not 0 <= scope_page < page < pages or record < 1 or context['record_number'] != record):
+        return None
+    review = ref.get('visual_review')
+    if not isinstance(review, dict) or not _hash(review.get('image_sha256')):
+        return None
+    city, scope, locality = (context.get(k) for k in ('municipality_raw', 'scope_raw', 'locality_raw'))
+    if (any(not _plain(v) for v in (city, scope, locality)) or city != facility.get('municipality')
+        or not re.fullmatch(re.escape(city)+r'[^\d\s]+地域文化財の現況', scope)
+        or scope not in context['excerpt']):
+        return None
+    town = re.fullmatch(r'大字([^字\d\s]+)(字[^字\d\s]+)', locality)
+    name, reading, parcel = (ref.get(k) for k in ('name_raw', 'reading_raw', 'address_raw'))
+    if (not town or any(not _plain(v) or v not in ref['excerpt'] for v in (name, reading, parcel))
+        or context.get('locality_excerpt') != locality+'にあり'
+        or context['locality_excerpt'] not in ref['excerpt']
+        or context.get('parcel_label_raw') != '所在地' or '所在地 '+parcel not in ref['excerpt']):
+        return None
+    acquired = facility.get('address')
+    if not isinstance(acquired, str):
+        return None
+    acquired = acquired.removeprefix(facility.get('prefecture', ''))
+    printed = _parcel(parcel)
+    if (not acquired.startswith(city) or not printed or printed[0] != town[2]
+        or _parcel(acquired[len(city):]) != (town[1]+town[2], printed[1])):
+        return None
+    return city+town[1]+parcel

@@ -201,6 +201,8 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 `address_raw`と表抜粋は実際の印刷所在地のままです。市名を別欄から足すのは比較値だけで、原住所・原かな・ID/hashを書き換えません。町域を原字で一致させてから数字/単位だけを比較し、追加字名・枝番違い・他市・別表・部分読み・名変更・既存除外/同一性保留は承認しません。不正なコンテキストがある場合は通常の住所照合へfallbackせず、適用後のオフライン再検証でも出力を止めます。これは保存した観測間の整合検査であり、PDFの真正性や再配布許諾を機械的に認定しません。
 
+`document_address_context.kind=same_pdf_profile_locality_and_parcel`は、地域調査冊子で、市を明示した書名と、同じ番号の神社紹介にある全文ルビ、大字・字の記述、所在地欄を照合します。PDFのURL・hash・確認日、頁位置、項目番号、原画像点検のhashを保持します。柏山武事神社の「大字住吉字金草にあり」と「字金草2856 番地」は別々に保存し、市・大字・字・全地番を比較時に揃えます。[神科を歩こう](https://kamishina-net.com/pdf/kyougikai_arukou.pdf#page=67)
+
 同資料コンテキスト補正を除外済み登録へ適用して拒否する場合も、元の`excluded`と除外理由を保持します。`pending`への書換えを経由して再適用時に除外が解除されることを防ぎます。補正側の要確認理由は`correction.validation_problems`へ別保存します。
 
 ## 同一CSV行の小字欄による比較用住所

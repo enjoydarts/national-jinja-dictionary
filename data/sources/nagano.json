@@ -62673,12 +62673,91 @@
           "surface": "東條健代神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:48.314838+00:00",
+          "checked_at": "2026-11-26T14:02:45.757474+00:00",
           "evidence": "柏山武事神社 386-0002 上田市住吉字金草2856",
           "facility_id": "5dcd02e9-3795-5815-b1ca-9a157df5b439",
           "fetched_at": "2026-11-08T14:30:48.314838+00:00",
           "id": "1cb73259-989e-50dc-bd60-6145b48f445d",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "かしわやまたけことじんじゃ"
+              },
+              "expected_source_hash": "1b1236f4f50cc9663b95c639933b4810cdf333199678b0b987d442766b8e28b6",
+              "facility_id": "5dcd02e9-3795-5815-b1ca-9a157df5b439",
+              "identity_match": {
+                "agency_address": "上田市住吉字金草2856",
+                "agency_name": "柏山武事神社",
+                "reference_address": "字金草2856 番地",
+                "reference_name": "柏山武事神社",
+                "supporting_observation": "神科地域振興協議会刊本の第②項「柏山武事神社」に神社名全文ルビ、大字住吉字金草、所在地欄の字金草2856番地がある。同じ項と書名の上田市の表示を照合し、県の法人名簿でも上田市住吉字金草2856を確認。原文と表記を個別に保持する。"
+              },
+              "original": {
+                "address": "上田市住吉字金草2856",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
+                "name_raw": "柏山武事神社",
+                "reading_raw": ""
+              },
+              "reason": "神科地域振興協議会刊本の第②項「柏山武事神社」に神社名全文ルビ、大字住吉字金草、所在地欄の字金草2856番地がある。同じ項と書名の上田市の表示を照合し、県の法人名簿でも上田市住吉字金草2856を確認。原文と表記を個別に保持する。",
+              "references": [
+                {
+                  "address_raw": "字金草2856 番地",
+                  "checked_at": "2026-11-26T14:02:45.757474+00:00",
+                  "document_address_context": {
+                    "checked_at": "2026-11-26T14:02:45.757474+00:00",
+                    "excerpt": "『神科を歩こう―上田市神科地域文化財の現況―』",
+                    "kind": "same_pdf_profile_locality_and_parcel",
+                    "locality_excerpt": "大字住吉字金草にあり",
+                    "locality_raw": "大字住吉字金草",
+                    "locator": "PDF 2頁「発刊によせて」の書名",
+                    "municipality_raw": "上田市",
+                    "page_hash": "3372314e717e8137d42249d27e6db7cefb4ee8655213186eb1dd21c11f5c3127",
+                    "parcel_label_raw": "所在地",
+                    "record_number": 2,
+                    "scope_raw": "上田市神科地域文化財の現況",
+                    "source_page_index": 1,
+                    "url": "https://kamishina-net.com/pdf/kyougikai_arukou.pdf"
+                  },
+                  "excerpt": "柏山武事神社 / かしわやまたけことじんじゃ / 大字住吉字金草にあり / 所在地 字金草2856 番地",
+                  "locator": "PDF 67頁（冊子の68頁）「大久保」②の社名全ルビ・本文冒頭の地籍・所在地欄",
+                  "mime_type": "application/pdf",
+                  "name_raw": "柏山武事神社",
+                  "page_hash": "3372314e717e8137d42249d27e6db7cefb4ee8655213186eb1dd21c11f5c3127",
+                  "pdf_pages": 99,
+                  "printed_page": 68,
+                  "publication_note": "2011年調査、2013年9月発刊序文",
+                  "reading_raw": "かしわやまたけことじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_card_number": 2,
+                  "source_kind": "local_community_field_survey",
+                  "source_page_index": 66,
+                  "source_publisher": "神科地域振興協議会",
+                  "title": "神科を歩こう―上田市神科地域文化財の現況―",
+                  "url": "https://kamishina-net.com/pdf/kyougikai_arukou.pdf",
+                  "visual_review": {
+                    "image_sha256": "6654ace9208d915651a37043d1b0ed4f292e0917eafa15a3e1c947f54381d871",
+                    "method": "PDFKitで単頁を描画し目視"
+                  }
+                },
+                {
+                  "address_raw": "住吉字金草２８５６",
+                  "address_scope": "県所轄宗教法人の所在地。鎮座地を名簿だけから推定しない。",
+                  "checked_at": "2026-11-26T14:02:29.736449+00:00",
+                  "excerpt": "柏山武事神社 / 住吉字金草２８５６ / 上田市",
+                  "locator": "PDF 33頁 長野県所轄宗教法人名簿の上田市・所在地・法人名称欄",
+                  "mime_type": "application/pdf",
+                  "name_raw": "柏山武事神社",
+                  "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                  "reading_raw": "",
+                  "source_kind": "prefectural_religious_corporation_directory",
+                  "source_publisher": "長野県",
+                  "title": "長野県所轄宗教法人名簿",
+                  "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
           "name_raw": "柏山武事神社",
           "normalization": [
@@ -62686,11 +62765,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "95cbf939ab755781458e43242e180fb664b676f180e70e47693e1479d4682c24",
-          "reading": "",
+          "reading": "かしわやまたけことじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kamishina-net.com/pdf/kyougikai_arukou.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -62728,6 +62807,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "かしわやまたけことじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "かしわやまたけことじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "柏山武事神社",
             "wikipedia_article_refs": [],
@@ -62758,7 +62851,7 @@
             "status": "pending",
             "surface": "柏山武事神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "柏山武事神社"
         },
         {
