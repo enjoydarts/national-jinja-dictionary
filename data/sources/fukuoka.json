@@ -2196,12 +2196,50 @@
       },
       "entries": [
         {
-          "checked_at": "2026-11-08T14:28:18.376106+00:00",
+          "checked_at": "2026-11-26T11:00:37.070529+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「高祖神社」と所在地「糸島市高祖1240」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "34a0877b-5af4-51c4-8eea-706b0a0888dc",
           "fetched_at": "2026-11-08T14:28:18.376106+00:00",
           "id": "f026b279-3ec7-5066-9055-ba2400dea143",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "たかすじんじゃ"
+              },
+              "expected_source_hash": "010ee07c37156cc75d7b57295fdaa5607769185bf6fbf121c84bb66ff09ee346",
+              "facility_id": "34a0877b-5af4-51c4-8eea-706b0a0888dc",
+              "identity_match": {
+                "agency_address": "糸島市高祖1240",
+                "agency_name": "高祖神社",
+                "reference_address": "糸島市高祖1240",
+                "reference_name": "高祖神社"
+              },
+              "original": {
+                "address": "糸島市高祖1240",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
+                "name_raw": "高祖神社",
+                "reading_raw": ""
+              },
+              "reason": "糸島敬神会の個別ページの主見出しに「高祖神社（たかすじんじゃ）」、直後の所在地欄に「糸島市高祖1240」が掲載され、県神社庁の原名と全所在地に一致する。",
+              "references": [
+                {
+                  "address_raw": "糸島市高祖1240",
+                  "checked_at": "2026-11-26T11:00:37.070529+00:00",
+                  "excerpt": "高祖神社（たかすじんじゃ） ／ 糸島市高祖1240",
+                  "locator": "個別ページ主見出しと直後の所在地欄",
+                  "name_raw": "高祖神社",
+                  "page_hash": "444120c876a6e3059f289fac8a8f4142566997a43f6f4aa442a5f2376a348329",
+                  "reading_raw": "たかすじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_shrine_association",
+                  "source_publisher": "糸島敬神会",
+                  "title": "糸島の神社紹介 鎮守乃杜・高祖神社",
+                  "url": "https://www.itoshima-jinja.com/1takasujinja.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
           "name_raw": "高祖神社",
           "normalization": [
@@ -2209,11 +2247,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
-          "reading": "",
+          "reading": "たかすじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.itoshima-jinja.com/1takasujinja.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -2386,6 +2424,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "たかすじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "たかすじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "高祖神社",
             "wikipedia_article_refs": [
@@ -2425,7 +2477,7 @@
             "status": "pending",
             "surface": "高祖神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "高祖神社"
         },
         {
