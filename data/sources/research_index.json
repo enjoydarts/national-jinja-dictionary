@@ -665974,6 +665974,625 @@
               "supported_registration": "d75de558-c80f-5fe6-a954-8d4adf3e2e46"
             }
           }
+        },
+        {
+          "baseline_commit": "c105d7f",
+          "by_prefecture_before": {
+            "01": 347,
+            "02": 660,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 2,
+            "19": 996,
+            "20": 1605,
+            "21": 1,
+            "22": 2,
+            "23": 18,
+            "25": 861,
+            "26": 1038,
+            "28": 9,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 540,
+            "38": 1,
+            "39": 1623,
+            "40": 122,
+            "41": 89,
+            "42": 849,
+            "43": 518,
+            "47": 3
+          },
+          "checked_at": "2026-11-26T11:46:49.774095+00:00",
+          "dictionary_entries": {
+            "bde156d1-d71c-56b8-a961-48a33cef529d": {
+              "address": "青森市大字三内字沢部",
+              "facility_id": "960eceb4-3754-5bb6-86dd-93ce03d6ae28",
+              "name": "八幡宮",
+              "prefecture": "青森県",
+              "prefecture_code": "02",
+              "reading": "はちまんぐう"
+            },
+            "d5a592c6-d92a-51e1-bab6-33f7a8924c4d": {
+              "address": "青森市浪岡大字長沼字北藤巻",
+              "facility_id": "ad1f5da2-817f-56c2-87eb-1a49b2789f2a",
+              "name": "大石神社",
+              "prefecture": "青森県",
+              "prefecture_code": "02",
+              "reading": "おおいしじんじゃ"
+            }
+          },
+          "pending_after": 9345,
+          "pending_before": 9347,
+          "prefecture_scopes": {
+            "aomori": [
+              "02"
+            ]
+          },
+          "reading_supplements_by_investigation": {
+            "aomori": 2
+          },
+          "reduced_by_prefecture": {
+            "02": 2
+          },
+          "source_investigations": {
+            "aomori": {
+              "baseline": {
+                "cohort_size": 159,
+                "municipal_cohorts": {
+                  "八戸市": 36,
+                  "弘前市": 75,
+                  "青森市": 48
+                },
+                "national_pending": 9352,
+                "prefectural_pending": 660,
+                "prefecture_code": "02",
+                "source": "1126o validation pending export"
+              },
+              "held": [
+                {
+                  "address_raw": "弘前市大字乳井字外沢",
+                  "entry_id": "759179e0-abc3-5110-b75d-4fe19a38c491",
+                  "facility_id": "de8d7764-e9f3-5de6-bcdb-cd363a48a517",
+                  "name": "乳井神社",
+                  "reason": "市立図書館ADEACの市史本文で乳井地区の境内・墓地の所在地を区別できた。施設の独立した全文かなは確認できず、利用規定による追加利用停止。庁原欄は外沢。市一般資料と先行停止の別経路への回避はしていない。",
+                  "sources": [
+                    {
+                      "checked_at": "2026-11-26T11:28:34.727661+00:00",
+                      "locator": "1. ご利用にあたって及び3. お問い合わせ先",
+                      "page_hash": "d5d1896b3a81248c4d88be4f222f093cdafc4e01a0135d37df73b21f4155144b",
+                      "title": "弘前市立弘前図書館 ADEAC 利用規定",
+                      "url": "https://adeac.jp/hirosaki-lib/kikan_fix_html/top_files/terms-of-use/index.html?m=tou"
+                    }
+                  ],
+                  "status": "deferred"
+                },
+                {
+                  "address_raw": "弘前市大字田町四丁目",
+                  "entry_id": "18394b56-cf51-55d9-aa9d-3231dc533a52",
+                  "facility_id": "5a2729c5-8d13-506a-b9f8-90945859c87a",
+                  "name": "熊野奥照神社",
+                  "reason": "先行の市オープンデータの独立かなと文化庁の本殿の町丁目は把握済み。建物「本殿」の名称全体のルビと所在地から独立した社名読みを切り出す作業はしない。",
+                  "sources": [
+                    {
+                      "scope": "先行調査の文化財指定施設・本殿のみ",
+                      "url": "https://kunishitei.bunka.go.jp/bsys/maindetails/102/66"
+                    }
+                  ],
+                  "status": "deferred"
+                },
+                {
+                  "address_raw": "八戸市大字豊崎町字上永福寺",
+                  "entry_id": "d1e7e09c-7f1f-577b-82de-ac68a56838b2",
+                  "facility_id": "c0e423e9-0b3e-524a-8961-840343c5683a",
+                  "name": "七崎神社",
+                  "reason": "八戸市資料の小字は豊崎町上永福寺。市個別案内は神社の語幹かなを示し、全文独立欄はない。三八支部の前回HTTP503による停止を維持。",
+                  "sources": [
+                    {
+                      "checked_at": "2026-11-26T11:27:18.357314+00:00",
+                      "finding": "七崎だけの振り仮名を確認。",
+                      "locator": "七崎神社の杉の木の節",
+                      "page_hash": "5b55731d5b6df7dcb6d4599cfe8ebc9ac6eb5069961100d76e5acb5344630cad",
+                      "publisher": "八戸市",
+                      "rights_reference": {
+                        "checked_at": "2026-11-26T11:28:34.758611+00:00",
+                        "locator": "著作権情報及びホームページへのリンク",
+                        "page_hash": "7c889bddc279b87ede21f63fac45cf0a55238611ca5059195bd13e85c9a1a7c6",
+                        "title": "八戸市 サイト情報",
+                        "url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/kohokocho/site_info/1479.html"
+                      },
+                      "title": "十日市の一里塚、七崎神社の杉の木",
+                      "url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/shakaikyoikuka/bunka/2/5967.html"
+                    }
+                  ],
+                  "status": "deferred"
+                },
+                {
+                  "address_raw": "八戸市内丸二丁目",
+                  "entry_id": "0dfb174c-3737-5ec7-8f48-e0cad32832a8",
+                  "facility_id": "ebf7c440-af5e-54e9-a569-9dbb7e32dfc2",
+                  "name": "おがみ神社",
+                  "reason": "自治体の文化財紹介は漢字の龗に「おがみ」の部分かな。庁原欄はおがみ神社。施設公式の通常アクセスはHTTP503で停止。",
+                  "sources": [
+                    {
+                      "checked_at": "2026-11-26T11:27:15.608840+00:00",
+                      "finding": "社名の漢字一字の振り仮名。",
+                      "locator": "龗神社の文化財の節",
+                      "page_hash": "acd7742718f8b37f441642428098da0b2b2112c29bf6655b3c220f6f84c461b5",
+                      "publisher": "八戸市",
+                      "rights_reference": {
+                        "checked_at": "2026-11-26T11:28:34.758611+00:00",
+                        "locator": "著作権情報及びホームページへのリンク",
+                        "page_hash": "7c889bddc279b87ede21f63fac45cf0a55238611ca5059195bd13e85c9a1a7c6",
+                        "title": "八戸市 サイト情報",
+                        "url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/kohokocho/site_info/1479.html"
+                      },
+                      "title": "龗神社、来迎寺の文化財",
+                      "url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/shakaikyoikuka/bunka/2/5965.html"
+                    }
+                  ],
+                  "status": "deferred"
+                },
+                {
+                  "address_raw": "青森市浪岡大字大釈迦字山田",
+                  "entry_id": "6f062a70-6dec-578e-8c37-277f98c94da1",
+                  "facility_id": "551f8852-f286-526c-afbc-096aa0bf1b26",
+                  "name": "柳久保神社",
+                  "reason": "青森県史は現代の大釈迦と社名を確認できる。弘前大学の現地研究表の石灯籠は山田189、先行国税庁の主事務所は山田199。区別したまま、現行の社地の対応を保留。",
+                  "sources": [
+                    {
+                      "checked_at": "2026-11-26T11:27:18.972864+00:00",
+                      "finding": "柳久保神社と青森市浪岡大字大釈迦を掲載。",
+                      "locator": "整理番号22-3-004-2/02解説の脚注1",
+                      "page_hash": "90e8da34e009691d0caf0cc9b00029152d546f33d1d6f206d11e76405fae5f46",
+                      "publisher": "青森県・青森県史デジタルアーカイブス",
+                      "title": "県史テキストデータベース",
+                      "url": "https://kenshi-archives.pref.aomori.lg.jp/il/meta_pub/G0000004txt_Chus4-1904-000-c"
+                    },
+                    {
+                      "address_raw": "青森県青森市浪岡大釈迦山田189",
+                      "checked_at": "2026-11-26T11:27:24.227089+00:00",
+                      "finding": "石灯籠の位置に青森県青森市浪岡大釈迦山田189を掲載。",
+                      "locator": "PDF7頁・表の17番 石灯籠",
+                      "page_hash": "aaac8fdcda58224161e1d8ea85802eeeadb834112725958711309644ce1ac069",
+                      "publisher": "弘前大学国史研究 資料公開",
+                      "title": "弘大国史144号の掲載研究",
+                      "url": "https://nrjjxl1nnwb4.compat.objectstorage.ap-tokyo-1.oraclecloud.com/contents/hirosaki_repo_nii_ac_jp/7b/bc/fb8d-aef6-4483-89c7-641b439f1137/data?response-content-type=application%2Foctet-stream&response-content-disposition=attachment%3B%20filename%3DHirodaiKokushi_144_79.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2933d73c5ea35b566afd770d1a6af5c853196a77%2F20261126%2Fap-tokyo-1%2Fs3%2Faws4_request&X-Amz-Date=20261126T112720Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=83454327eff01dfa4f490c0127102f41e3ffbef291898a457848f2c231a7b075"
+                    }
+                  ],
+                  "status": "deferred"
+                },
+                {
+                  "address_raw": "青森市安方二丁目",
+                  "entry_id": "a41b23a8-eb16-54fd-b2cc-811164ef9053",
+                  "facility_id": "ac8bf848-02ac-502e-bfc2-9d8d5e73f363",
+                  "name": "善知鳥神社",
+                  "reason": "安方町会が本文で神社の全文を明示。町会の歴史紹介は特定の建物所在地を原欄に持たない。宵宮の安方2-7-18と町会本文の原掲載範囲を区別。",
+                  "sources": [
+                    {
+                      "checked_at": "2026-11-26T11:27:24.086321+00:00",
+                      "finding": "全文かな「うとうじんじゃ」あり。",
+                      "locator": "記事冒頭の町会歴史本文",
+                      "page_hash": "b16e13100cabe66cbd9e8450cd380c88debd55e62caf887a3217bbbf22be8ecc",
+                      "publisher": "安方町会",
+                      "reading_raw": "うとうじんじゃ",
+                      "title": "安方町会の歴史",
+                      "url": "https://yasukata2023.com/rekishi/"
+                    }
+                  ],
+                  "status": "deferred"
+                },
+                {
+                  "address_raw": "青森市橋本二丁目",
+                  "entry_id": "2f1eecc5-16b8-5553-a031-760d68043be2",
+                  "facility_id": "87b6515d-6cdf-5d88-8028-8fc0c4dc91a2",
+                  "name": "浦町神明宮",
+                  "reading": "うらまちしんめいぐう",
+                  "reason": "CODH資料の全文かなと橋本二丁目7番8号を市の宵宮表で照合した。神社庁掲載は橋本二丁目までで、原文の別々の所在地を維持すると現行の照合では全文かなを当該登録へ結び付けられない。",
+                  "sources": [
+                    {
+                      "address_raw": "青森県 青森市 橋本二丁目7番8号",
+                      "address_source": {
+                        "address_raw": "青森市橋本二丁目",
+                        "address_role": "agency_published_locality",
+                        "checked_at": "2026-11-08T14:28:42.467459+00:00",
+                        "excerpt": "浦町神明宮 ／ 青森市橋本二丁目",
+                        "locator": "#list_1 tr[13]",
+                        "name_raw": "浦町神明宮",
+                        "page_hash": "75ef5958a64a80dfe8b863c1a28d8d4d58099cad997880ee95691422831c707c",
+                        "publisher": "青森県神社庁",
+                        "source_kind": "agency",
+                        "title": "青森県神社庁 神社紹介",
+                        "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1a.html"
+                      },
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "checked_at": "2026-11-26T11:27:21.140395+00:00",
+                      "excerpt": "浦町神明宮 ／ うらまちしんめいぐう ／ 青森県 青森市 橋本二丁目7番8号",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "locator": "基本情報・名称・名称（よみ）・住所",
+                      "name_raw": "浦町神明宮",
+                      "page_hash": "38f00e5afc9f36f7b40205e0d5f647dcff7a1eb1a10b21d34c9151ae78352fbd",
+                      "printed_address_raw": "青森県 青森市 橋本二丁目7番8号",
+                      "reading_raw": "うらまちしんめいぐう",
+                      "reading_scope": "full_name",
+                      "source_kind": "historical_geographic_dataset",
+                      "source_publisher": "人文学オープンデータ共同利用センター",
+                      "title": "浦町神明宮 [020000101700] | 『日本歴史地名大系』施設・地点項目データセット",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/02/020000101700.html"
+                    },
+                    {
+                      "address_raw": "青森市橋本二丁目",
+                      "address_role": "agency_published_locality",
+                      "checked_at": "2026-11-08T14:28:42.467459+00:00",
+                      "excerpt": "浦町神明宮 ／ 青森市橋本二丁目",
+                      "locator": "#list_1 tr[13]",
+                      "name_raw": "浦町神明宮",
+                      "page_hash": "75ef5958a64a80dfe8b863c1a28d8d4d58099cad997880ee95691422831c707c",
+                      "publisher": "青森県神社庁",
+                      "source_kind": "agency",
+                      "title": "青森県神社庁 神社紹介",
+                      "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1a.html"
+                    },
+                    {
+                      "address_raw": "橋本2-7-8",
+                      "address_role": "festival_venue",
+                      "checked_at": "2026-11-26T11:28:34.790806+00:00",
+                      "excerpt": "浦町神明宮 ／ 橋本2-7-8",
+                      "locator": "PDF1頁 6月15日の神社名・住所欄（令和8年5月26日現在）",
+                      "name_raw": "浦町神明宮",
+                      "page_hash": "da574ef779cb50ba55d18ff77682d3a5cb5c69f8328d54dd016995b7f617a73d",
+                      "rights_reference": {
+                        "checked_at": "2026-11-26T11:27:12.879138+00:00",
+                        "locator": "著作権について",
+                        "page_hash": "3f6896b16dc381028cda523a3edeb127fb8c4ba3cf4327a3caf3ba6c5b4bd083",
+                        "title": "青森市サイトポリシー",
+                        "url": "https://www.city.aomori.aomori.jp/about/1007400.html"
+                      },
+                      "source_kind": "municipal_festival_schedule",
+                      "source_publisher": "青森市掲載、青森商店街協同組合ほか提供",
+                      "title": "令和8年度 青森市 宵宮情報",
+                      "url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/005/289/r8yoimiyajoho.pdf"
+                    }
+                  ],
+                  "status": "deferred"
+                }
+              ],
+              "investigation": "青森市・弘前市・八戸市の文化財と地域史料",
+              "schema_version": 1,
+              "scope": "各市の保留対象集合と今回の資料掲載範囲を区別。3市の159登録に選んだ資料の候補を対応させ、各保留の個別公式本文到達を全件確認した集計ではない。",
+              "source_sweeps": [
+                {
+                  "checked_at": "2026-11-26T11:24:37.381339+00:00",
+                  "finding": "指定物のふりがなと所有者の名称を別欄として確認。所有者行や樹木・棟札の名から神社全文を切り出さなかった。",
+                  "locator": "市指定文化財表の全31行",
+                  "page_hash": "a57f2db07861688b061790f129c88f2aa144c1d39ad4e6020b5c3985431bd075",
+                  "publisher": "青森市",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T11:27:12.879138+00:00",
+                    "locator": "著作権について",
+                    "page_hash": "3f6896b16dc381028cda523a3edeb127fb8c4ba3cf4327a3caf3ba6c5b4bd083",
+                    "title": "青森市サイトポリシー",
+                    "url": "https://www.city.aomori.aomori.jp/about/1007400.html"
+                  },
+                  "rows": 31,
+                  "title": "市指定文化財 一覧",
+                  "url": "https://www.city.aomori.aomori.jp/bunka_sports_kankou/bunka_geijutsu/1005024/1005036/1005037/1005040/1005041.html"
+                },
+                {
+                  "checked_at": "2026-11-26T11:24:40.248589+00:00",
+                  "finding": "地域区分、史跡や寺社の図中名を確認。対象社の全文読み・地番の組は見つからなかった。",
+                  "locator": "PDF全2頁",
+                  "page_hash": "dc6fe3430f09278ee8b8f51f34a0b26ad58b8c5a4bc9cb0cc1a669c22b5983fa",
+                  "pages": 2,
+                  "publisher": "青森市",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T11:27:12.879138+00:00",
+                    "locator": "著作権について",
+                    "page_hash": "3f6896b16dc381028cda523a3edeb127fb8c4ba3cf4327a3caf3ba6c5b4bd083",
+                    "title": "青森市サイトポリシー",
+                    "url": "https://www.city.aomori.aomori.jp/about/1007400.html"
+                  },
+                  "title": "文化財マップ",
+                  "url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/005/034/2016_bunkazaimap.pdf"
+                },
+                {
+                  "checked_at": "2026-11-26T11:27:16.563305+00:00",
+                  "finding": "大石神社の町字の補助根拠。図のラベルには神社の全文かな・地番はない。",
+                  "locator": "PDF1頁地図区域（大石神社・長沼・北藤巻の独立ラベル）",
+                  "page_hash": "5654c8a33055fa775aca3808fdc714b90333796d4bc6661b62bc0e3ea28467c4",
+                  "pages": 1,
+                  "publisher": "青森市",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T11:27:12.879138+00:00",
+                    "locator": "著作権について",
+                    "page_hash": "3f6896b16dc381028cda523a3edeb127fb8c4ba3cf4327a3caf3ba6c5b4bd083",
+                    "title": "青森市サイトポリシー",
+                    "url": "https://www.city.aomori.aomori.jp/about/1007400.html"
+                  },
+                  "title": "青森市指定道路図 ⑪ 浪岡",
+                  "url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/002/188/shiteidourozu11-7.pdf"
+                },
+                {
+                  "checked_at": "2026-11-26T11:28:34.790806+00:00",
+                  "finding": "浦町神明宮と三内八幡宮の、祭礼の会場名と地番を確認。神社名称欄に読みはない。",
+                  "locator": "PDF1頁・6月15日と8月14日",
+                  "page_hash": "da574ef779cb50ba55d18ff77682d3a5cb5c69f8328d54dd016995b7f617a73d",
+                  "pages": 1,
+                  "publisher": "青森市掲載・青森商店街協同組合ほか提供",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T11:27:12.879138+00:00",
+                    "locator": "著作権について",
+                    "page_hash": "3f6896b16dc381028cda523a3edeb127fb8c4ba3cf4327a3caf3ba6c5b4bd083",
+                    "title": "青森市サイトポリシー",
+                    "url": "https://www.city.aomori.aomori.jp/about/1007400.html"
+                  },
+                  "title": "令和8年度 青森市 宵宮情報",
+                  "url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/005/289/r8yoimiyajoho.pdf"
+                },
+                {
+                  "checked_at": "2026-11-26T11:27:15.608792+00:00",
+                  "finding": "栄町の諏訪、長島の廣田、安方の善知鳥に対応するPDF3点の全6頁を確認。社名・旧由来を参考にしたが、採用に必要な独立全文かなと所在地の組は得られなかった。",
+                  "linked_pdf_pages": 6,
+                  "linked_pdfs_inspected": 3,
+                  "locator": "寺社の地図ラベルと公開PDFの実リンク",
+                  "page_hash": "92f1901f504043addc87e0532becdcbbc611e2221c7418a9531ac3c5eb2dae48",
+                  "publisher": "青森市民図書館歴史資料室",
+                  "title": "MAPトリビア",
+                  "url": "https://www.library.city.aomori.aomori.jp/aomoricity_history/map_trivia.html"
+                },
+                {
+                  "checked_at": "2026-11-26T11:27:18.414731+00:00",
+                  "finding": "目録・刊行案内を確認。神社の現地名と全文かなの資料にはならない。",
+                  "listed_volumes": 8,
+                  "locator": "全8巻の刊行範囲と閲覧案内",
+                  "page_hash": "9fcf3af4bfae6d22ae87a3e816265bfa3d6e90bed6ebea3f54a928210486ea3f",
+                  "publisher": "青森市民図書館歴史資料室",
+                  "title": "新青森市史 資料編の刊行案内",
+                  "url": "https://www.library.city.aomori.aomori.jp/aomoricity_history/shishi-kankou2.html"
+                },
+                {
+                  "checked_at": "2026-11-26T11:24:37.421217+00:00",
+                  "finding": "入口から小田八幡宮・龗神社・七崎神社・南郷の4詳細を確認。PDF本文の社会教育年報を別に60頁点検した。",
+                  "linked_details": 42,
+                  "linked_details_inspected": 4,
+                  "locator": "web版・42件の詳細リンク",
+                  "other_pdf_pages": 60,
+                  "page_hash": "7c64a3aeb7eff0065fbeda45da53b77ea890a24f4e95d73b52b7ca86625a61e8",
+                  "publisher": "八戸市",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T11:28:34.758611+00:00",
+                    "locator": "著作権情報及びホームページへのリンク",
+                    "page_hash": "7c889bddc279b87ede21f63fac45cf0a55238611ca5059195bd13e85c9a1a7c6",
+                    "title": "八戸市 サイト情報",
+                    "url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/kohokocho/site_info/1479.html"
+                  },
+                  "title": "はちのへ文化財ガイドブック",
+                  "url": "https://www.city.hachinohe.aomori.jp/bunka_sports/bunka/bunkazai/12027.html"
+                },
+                {
+                  "checked_at": "2026-11-26T11:24:37.533472+00:00",
+                  "finding": "民俗編563頁、地誌編691頁は刊行案内。地誌編の正誤表リンクは別資料で、両巻の公開本文は入口で確認できなかった。",
+                  "locator": "既刊案内・民俗編、地誌編",
+                  "page_hash": "1a8e74d4ac05ce6a5806b2caf4de9b1cbccedac3bbd80ee65a84e2eabf6b4957",
+                  "publisher": "八戸市立図書館",
+                  "title": "新編八戸市史",
+                  "url": "https://www.lib.hachinohe.aomori.jp/archives/history/shishi"
+                },
+                {
+                  "checked_at": "2026-11-26T11:24:40.750462+00:00",
+                  "finding": "八戸ほこらさがし・類家稲荷縁起の収録案内を確認。収録本文は閲覧していない。",
+                  "locator": "寺社史料を収める書籍の案内",
+                  "page_hash": "241793763b910ea3c1e08a1561e29b1e9904fb97829085c1afdaf61169ca524a",
+                  "publisher": "八戸市立図書館",
+                  "title": "八戸の歴史双書",
+                  "url": "https://www.lib.hachinohe.aomori.jp/archives/history/sosyo"
+                },
+                {
+                  "checked_at": "2026-11-26T11:27:15.583229+00:00",
+                  "finding": "初頁の公開項目と運営者を確認。リンクされたプライバシー規程は再利用上の許諾を示さないため、目録の確認までとした。",
+                  "listing_records": 10,
+                  "locator": "目録の初頁10リンク",
+                  "page_hash": "1e39226774b146dbdde70be21ffd6490bdf0f68202fbf5d3f4697e77045990c2",
+                  "publisher": "八戸地域文化遺産活用推進委員会",
+                  "title": "はちのへヒストリア 文化財・遺跡",
+                  "url": "https://historia8.org/cultural-property/"
+                },
+                {
+                  "checked_at": "2026-11-26T11:24:44.857772+00:00",
+                  "finding": "一般弘前市ページの停止は継続。ADEACの公開資料には印刷・ダウンロード制限および資料利用の許可手続があり、この出典からの追加利用を止めた。",
+                  "locator": "公開入口、利用規定および参照1本文",
+                  "page_hash": "c782c077c16d700e062ed33b90c934271e57ef68af42efc60eecf11b3a369754",
+                  "publisher": "弘前市立弘前図書館",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T11:28:34.727661+00:00",
+                    "locator": "1. ご利用にあたって及び3. お問い合わせ先",
+                    "page_hash": "d5d1896b3a81248c4d88be4f222f093cdafc4e01a0135d37df73b21f4155144b",
+                    "title": "弘前市立弘前図書館 ADEAC 利用規定",
+                    "url": "https://adeac.jp/hirosaki-lib/kikan_fix_html/top_files/terms-of-use/index.html?m=tou"
+                  },
+                  "title": "おくゆかしき津軽の古典籍",
+                  "url": "https://adeac.jp/hirosaki-lib/top/"
+                }
+              ],
+              "stopped": {
+                "hirosaki_city_general": {
+                  "reason": "既往の一般ページ・一般観光の収集停止を維持。前回確認した専用オープンデータ九表は再取得していない。"
+                },
+                "kotobank": {
+                  "reason": "2026年10月1日改定の使用目的等で個人的な使用目的に限定。資料本文からの採用と追加取得を停止。",
+                  "url": "https://kotobank.jp/rule/"
+                },
+                "mlit_yanakubo": {
+                  "reason": "robotsまたは本文の文字コードを確認できず停止",
+                  "status": "stopped",
+                  "url": "https://www.thr.mlit.go.jp/aomori/syutu/hirokoku/rekishi_kaidou/usyu-kaidou7daisyaka/usyu-kaidou7.html"
+                },
+                "ogami_publisher": {
+                  "reason": "HTTP 503: https://ogami-jinja.jp/",
+                  "status": "stopped",
+                  "url": "https://ogami-jinja.jp/"
+                },
+                "sanpachi_branch": {
+                  "reason": "三八支部入口で先行HTTP503。検索表示だけの冊子読みを調査結果に転記せず、取得再試行なし。"
+                },
+                "uramachi_archaeology_report": {
+                  "reason": "HTTP 503: https://sitereports.nabunken.go.jp/robots.txt",
+                  "status": "stopped",
+                  "url": "https://sitereports.nabunken.go.jp/files/attach/1/1414/1120_1_%E5%B8%82%E5%86%85%E9%81%BA%E8%B7%A1%E7%99%BA%E6%8E%98%E8%AA%BF%E6%9F%BB%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf"
+                }
+              },
+              "verified": [
+                {
+                  "entry_id": "bde156d1-d71c-56b8-a961-48a33cef529d",
+                  "facility_id": "960eceb4-3754-5bb6-86dd-93ce03d6ae28",
+                  "name": "八幡宮",
+                  "reading": "はちまんぐう",
+                  "sources": [
+                    {
+                      "address_raw": "青森県青森市大字三内字沢部２０９番地",
+                      "address_role": "corporation_principal_office",
+                      "attribution": "出典：国税庁法人番号公表サイト（国税庁）。フリガナを平仮名に整形。",
+                      "checked_at": "2026-11-26T11:32:32.998940+00:00",
+                      "corporate_number": "3420005000743",
+                      "excerpt": "八幡宮 ／ ハチマングウ ／ 青森県青森市大字三内字沢部２０９番地",
+                      "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                      "locator": "最新情報・商号又は名称・フリガナ・本店又は主たる事務所の所在地",
+                      "name_raw": "八幡宮",
+                      "page_hash": "63e4b641ac6235a1047f6d67bd34046f55f343b4eeb54847ff3ad517b55211eb",
+                      "reading_raw": "ハチマングウ",
+                      "reading_scope": "full_name",
+                      "rights_reference": {
+                        "checked_at": "2026-11-26T11:28:34.653713+00:00",
+                        "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                        "locator": "公共データ利用規約（第1.0版）・出典の記載",
+                        "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                        "publisher": "国税庁",
+                        "source_kind": "government_site_terms",
+                        "title": "国税庁法人番号公表サイト 利用規約",
+                        "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                      },
+                      "source_kind": "government_corporate_register",
+                      "source_publisher": "国税庁",
+                      "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                      "title": "国税庁法人番号公表サイト 八幡宮",
+                      "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3420005000743"
+                    },
+                    {
+                      "address_raw": "青森市大字三内字沢部",
+                      "address_role": "agency_published_locality",
+                      "checked_at": "2026-11-08T14:28:42.467459+00:00",
+                      "excerpt": "八幡宮 ／ 青森市大字三内字沢部",
+                      "locator": "#list_1 tr[32]",
+                      "name_raw": "八幡宮",
+                      "page_hash": "75ef5958a64a80dfe8b863c1a28d8d4d58099cad997880ee95691422831c707c",
+                      "publisher": "青森県神社庁",
+                      "source_kind": "agency",
+                      "title": "青森県神社庁 神社紹介",
+                      "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1a.html"
+                    },
+                    {
+                      "address_raw": "三内沢部209",
+                      "address_role": "festival_venue",
+                      "checked_at": "2026-11-26T11:28:34.790806+00:00",
+                      "excerpt": "三内八幡宮 ／ 三内沢部209",
+                      "locator": "PDF1頁 8月14日の神社名・住所欄（令和8年5月26日現在）",
+                      "name_raw": "三内八幡宮",
+                      "page_hash": "da574ef779cb50ba55d18ff77682d3a5cb5c69f8328d54dd016995b7f617a73d",
+                      "rights_reference": {
+                        "checked_at": "2026-11-26T11:27:12.879138+00:00",
+                        "locator": "著作権について",
+                        "page_hash": "3f6896b16dc381028cda523a3edeb127fb8c4ba3cf4327a3caf3ba6c5b4bd083",
+                        "title": "青森市サイトポリシー",
+                        "url": "https://www.city.aomori.aomori.jp/about/1007400.html"
+                      },
+                      "source_kind": "municipal_festival_schedule",
+                      "source_publisher": "青森市掲載、青森商店街協同組合ほか提供",
+                      "title": "令和8年度 青森市 宵宮情報",
+                      "url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/005/289/r8yoimiyajoho.pdf"
+                    }
+                  ]
+                },
+                {
+                  "entry_id": "d5a592c6-d92a-51e1-bab6-33f7a8924c4d",
+                  "facility_id": "ad1f5da2-817f-56c2-87eb-1a49b2789f2a",
+                  "name": "大石神社",
+                  "reading": "おおいしじんじゃ",
+                  "sources": [
+                    {
+                      "address_raw": "青森県青森市浪岡大字長沼字北藤巻５５番地",
+                      "address_role": "corporation_principal_office",
+                      "attribution": "出典：国税庁法人番号公表サイト（国税庁）。フリガナを平仮名に整形。",
+                      "checked_at": "2026-11-26T11:27:21.806710+00:00",
+                      "corporate_number": "8420005002207",
+                      "excerpt": "大石神社 ／ オオイシジンジャ ／ 青森県青森市浪岡大字長沼字北藤巻５５番地",
+                      "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                      "locator": "最新情報・商号又は名称・フリガナ・本店又は主たる事務所の所在地",
+                      "name_raw": "大石神社",
+                      "page_hash": "0db9fb2dbf6069683658ee7c527d66062024f2936b43c49ef33e446cb4d41db2",
+                      "reading_raw": "オオイシジンジャ",
+                      "reading_scope": "full_name",
+                      "rights_reference": {
+                        "checked_at": "2026-11-26T11:28:34.653713+00:00",
+                        "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                        "locator": "公共データ利用規約（第1.0版）・出典の記載",
+                        "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                        "publisher": "国税庁",
+                        "source_kind": "government_site_terms",
+                        "title": "国税庁法人番号公表サイト 利用規約",
+                        "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                      },
+                      "source_kind": "government_corporate_register",
+                      "source_publisher": "国税庁",
+                      "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                      "title": "国税庁法人番号公表サイト 大石神社",
+                      "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8420005002207"
+                    },
+                    {
+                      "address_raw": "青森市浪岡大字長沼字北藤巻",
+                      "address_role": "agency_published_locality",
+                      "checked_at": "2026-11-08T14:32:56.903086+00:00",
+                      "excerpt": "大石神社 ／ 青森市浪岡大字長沼字北藤巻",
+                      "locator": "#list_1 tr[3]",
+                      "name_raw": "大石神社",
+                      "page_hash": "d621135e82670d6b9cb9a491b43eeb1781d61d6f0f1eb2e24bc1e2499bcffad9",
+                      "publisher": "青森県神社庁",
+                      "source_kind": "agency",
+                      "title": "青森県神社庁 神社紹介",
+                      "url": "http://www.aomori-jinjacho.or.jp/jinja/sub_1d.html"
+                    },
+                    {
+                      "address_role": "map_locality_observation",
+                      "checked_at": "2026-11-26T11:27:16.563305+00:00",
+                      "excerpt": "図中の独立した掲載ラベル「大石神社」「長沼」「北藤巻」",
+                      "locator": "PDF1頁・地図区域の施設名および浪岡の地名ラベル",
+                      "name_raw": "大石神社",
+                      "observed_labels": [
+                        "大石神社",
+                        "長沼",
+                        "北藤巻"
+                      ],
+                      "page_hash": "5654c8a33055fa775aca3808fdc714b90333796d4bc6661b62bc0e3ea28467c4",
+                      "rights_reference": {
+                        "checked_at": "2026-11-26T11:27:12.879138+00:00",
+                        "locator": "著作権について",
+                        "page_hash": "3f6896b16dc381028cda523a3edeb127fb8c4ba3cf4327a3caf3ba6c5b4bd083",
+                        "title": "青森市サイトポリシー",
+                        "url": "https://www.city.aomori.aomori.jp/about/1007400.html"
+                      },
+                      "source_kind": "municipal_street_map",
+                      "source_publisher": "青森市",
+                      "title": "青森市指定道路図 ⑪ 浪岡",
+                      "url": "https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/002/188/shiteidourozu11-7.pdf"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [
