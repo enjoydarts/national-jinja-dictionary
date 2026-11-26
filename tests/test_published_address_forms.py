@@ -75,3 +75,30 @@ class PublishedAddressFormsTest(unittest.TestCase):
                     '26', '京都府', '和伎座天乃夫岐賣神社', 'わきにますあめのふきめじんじゃ', acquired, printed,
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_kyotango_compares_documented_minor_locality_markers(self):
+        for name, reading, acquired, printed in (
+            ('八幡神社', 'はちまんじんじゃ', '京丹後市峰山町鱒留大成354', '京都府京丹後市峰山町鱒留小字大成354'),
+            ('金刀比羅神社', 'ことひらじんじゃ', '京丹後市峰山町泉奥山1165-2', '京都府京丹後市峰山町泉小字奥山1165番2'),
+            ('生王部神社', 'いくおうべじんじゃ', '京丹後市網野町生野内下大クゴ443', '京丹後市網野町生野内小字下大クゴ 443'),
+        ):
+            with self.subTest(acquired=acquired):
+                dataset, proposal = self.fixture('26', '京都府', name, reading, acquired, printed)
+                result = apply_corrections(dataset, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'], dataset['facilities'])
+                self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_kyotango_requires_the_documented_minor_locality_and_parcel(self):
+        for acquired, printed in (
+            ('京丹後市峰山町鱒留大成354', '京丹後市峰山町鱒留小字大成354-1'),
+            ('京丹後市峰山町泉奥山1165-2', '京丹後市峰山町泉小字奥山1165'),
+            ('京丹後市峰山町泉奥山1165-2', '京丹後市峰山町泉小字別字1165-2'),
+            ('京丹後市網野町生野内下大クゴ443', '京丹後市網野町生野内小字下大クゴ443-1'),
+            ('京丹後市網野町木津次田115', '京丹後市網野町木津小字次田115'),
+        ):
+            with self.subTest(acquired=acquired, printed=printed):
+                dataset, proposal = self.fixture(
+                    '26', '京都府', '神明神社', 'しんめいじんじゃ', acquired, printed,
+                )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])

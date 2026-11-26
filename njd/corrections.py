@@ -190,6 +190,10 @@ def _reference_matches(ref,facility,entry,changes):
         if facility.get('prefecture_code')=='26' and facility.get('municipality')=='木津川市':
             # The municipal address table assigns 平尾 to the former 山城町.
             value=re.sub(r'^木津川市山城町平尾里屋敷(?=\d)','木津川市平尾里屋敷',value)
+        if facility.get('prefecture_code')=='26' and facility.get('municipality')=='京丹後市':
+            # The published addresses use 小字 as a marker for these named localities.
+            for district, subdistrict in (('峰山町鱒留', '大成'), ('峰山町泉', '奥山'), ('網野町生野内', '下大クゴ')):
+                value=re.sub(rf'^(京丹後市{district})小字(?={subdistrict} ?\d)',r'\1',value)
         value=compare_address_units(value)
         # The town's own ordinances use both spellings (docs/DATA.md).
         # Compare only this Kochi municipality, with a literal parcel present.
