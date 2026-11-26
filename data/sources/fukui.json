@@ -32543,7 +32543,7 @@
           "surface": "酒列神社"
         },
         {
-          "checked_at": "2026-11-08T14:32:07.375935+00:00",
+          "checked_at": "2026-11-26T09:21:24.718951+00:00",
           "evidence": "さかとひとことじじゃ 坂門一言神社 福井県大野市牛ヶ原７５－５６",
           "facility_id": "a309854d-0eb7-5750-9ea8-fc983760fb93",
           "fetched_at": "2026-11-08T14:32:07.375935+00:00",
@@ -32551,13 +32551,16 @@
           "judgments": {
             "corrections": {
               "changes": {
-                "reading": "さかとひとことじじゃ"
+                "reading": "さかとひとことじんじゃ"
               },
               "expected_source_hash": "ae0d7f9a0434e31c6e7057edd0d9d8a73b4e8a8931a559b069e924be16d80d9e",
               "facility_id": "a309854d-0eb7-5750-9ea8-fc983760fb93",
               "identity_match": {
                 "agency_address": "福井県大野市牛ヶ原７５－５６",
-                "agency_name": "坂門一言神社"
+                "agency_name": "坂門一言神社",
+                "printed_address_raw": "福井県大野市牛ケ原７５字新村下５６番地",
+                "reference_address": "福井県大野市牛ヶ原７５－５６",
+                "reference_name": "坂門一言神社"
               },
               "original": {
                 "address": "福井県大野市牛ヶ原７５－５６",
@@ -32565,23 +32568,151 @@
                 "name_raw": "坂門一言神社",
                 "reading_raw": "さかとひとことじじゃ"
               },
-              "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+              "previous_review": {
+                "changes": {
+                  "reading": "さかとひとことじじゃ"
+                },
+                "expected_source_hash": "ae0d7f9a0434e31c6e7057edd0d9d8a73b4e8a8931a559b069e924be16d80d9e",
+                "facility_id": "a309854d-0eb7-5750-9ea8-fc983760fb93",
+                "identity_match": {
+                  "agency_address": "福井県大野市牛ヶ原７５－５６",
+                  "agency_name": "坂門一言神社"
+                },
+                "original": {
+                  "address": "福井県大野市牛ヶ原７５－５６",
+                  "listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
+                  "name_raw": "坂門一言神社",
+                  "reading_raw": "さかとひとことじじゃ"
+                },
+                "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+                "references": [
+                  {
+                    "address_raw": "福井県大野市牛ヶ原７５－５６",
+                    "checked_at": "2026-11-08T14:32:07.375935+00:00",
+                    "excerpt": "さかとひとことじじゃ 坂門一言神社 福井県大野市牛ヶ原７５－５６",
+                    "locator": "table tr[1865]",
+                    "name_raw": "坂門一言神社",
+                    "page_hash": "a7f7dc05b4c159eb7288c1c913c4c06bbc8f1878b090cd1e6f540dcb529c4446",
+                    "reading_raw": "さかとひとことじじゃ",
+                    "source_kind": "agency",
+                    "title": "福井県神社庁 掲載読み原文（全文読みの確認未了）",
+                    "url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01"
+                  }
+                ],
+                "review_kind": "whole_reading_audit",
+                "status": "needs_review",
+                "validation_problems": [
+                  "correction is not verified"
+                ]
+              },
+              "reason": "福井県神社庁の個別に坂門一言神社・牛ヶ原75－56、国税庁の現行詳細と月次資料に同名・牛ケ原75字新村下56番地・全文かなを確認。大野市の文化財台帳が同社本殿と牛ケ原の対応を示す。町名のケ／ヶと字の記載差を原文のまま保持し、地番の両数値を照合。掲載の「さかとひとことじじゃ」は原値として保存する。",
               "references": [
                 {
                   "address_raw": "福井県大野市牛ヶ原７５－５６",
-                  "checked_at": "2026-11-08T14:32:07.375935+00:00",
-                  "excerpt": "さかとひとことじじゃ 坂門一言神社 福井県大野市牛ヶ原７５－５６",
-                  "locator": "table tr[1865]",
+                  "address_role": "shrine_location_from_territorial_agency",
+                  "address_source": {
+                    "address_raw": "福井県大野市牛ヶ原７５－５６",
+                    "address_role": "shrine_location",
+                    "checked_at": "2026-11-26T09:21:18.078966+00:00",
+                    "excerpt": "坂門一言神社 ／ 福井県大野市牛ヶ原７５－５６",
+                    "locator": "個別神社の神社名欄と鎮座地欄",
+                    "name_raw": "坂門一言神社",
+                    "page_hash": "f3aac2b39ebcfeef7ed2e62b05dd432c141444266d0904bdaf7fc2d4f1b0b9fe",
+                    "source_kind": "official_agency",
+                    "title": "坂門一言神社 - 福井県神社庁",
+                    "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20161003_164519"
+                  },
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-26T09:21:24.718951+00:00",
+                  "corporate_number": "9210005005733",
+                  "corroborating_monthly_record": {
+                    "address_raw": "福井県大野市牛ケ原７５字新村下５６番地",
+                    "checked_at": "2026-11-26T09:20:57.411093+00:00",
+                    "corporation_number": "9210005005733",
+                    "display_size": "zip 2MB",
+                    "file_id": "28410",
+                    "has_address_image": false,
+                    "has_name_image": false,
+                    "name_raw": "坂門一言神社",
+                    "page_hash": "1acb6edf0a98f971f425a07d295c8bf0619396d150406e4d816fdcd1e9386342",
+                    "reading_raw": "サカトヒトコトジンジャ",
+                    "row": 31067,
+                    "snapshot": "20261030",
+                    "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                    "zip_member": "18_fukui_all_20261030.csv"
+                  },
+                  "excerpt": "坂門一言神社 ／ 福井県大野市牛ケ原７５字新村下５６番地 ／ サカトヒトコトジンジャ",
+                  "licence_terms": {
+                    "checked_at": "2026-11-26T09:20:39.360483+00:00",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                  },
+                  "licence_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の商号又は名称、本店又は主たる事務所の所在地、最終更新年月日とフリガナ",
                   "name_raw": "坂門一言神社",
-                  "page_hash": "a7f7dc05b4c159eb7288c1c913c4c06bbc8f1878b090cd1e6f540dcb529c4446",
-                  "reading_raw": "さかとひとことじじゃ",
-                  "source_kind": "agency",
-                  "title": "福井県神社庁 掲載読み原文（全文読みの確認未了）",
-                  "url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01"
+                  "page_hash": "7f3d89d1b16eba5f88e68cb34f28d46ccb06d81899d9067bbc2927eaade1a02e",
+                  "printed_address_raw": "福井県大野市牛ケ原７５字新村下５６番地",
+                  "printed_address_role": "religious_corporation_office_location",
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。掲載フリガナをひらがなに変換。",
+                  "reading_raw": "サカトヒトコトジンジャ",
+                  "reading_scope": "full_name",
+                  "registry_update_raw": "令和2年10月19日",
+                  "source_kind": "national_tax_agency_corporate_registry",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト・坂門一言神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9210005005733"
+                },
+                {
+                  "address_raw": "福井県大野市牛ヶ原７５－５６",
+                  "address_role": "shrine_location",
+                  "checked_at": "2026-11-26T09:21:18.078966+00:00",
+                  "excerpt": "坂門一言神社 ／ 福井県大野市牛ヶ原７５－５６",
+                  "locator": "個別神社の神社名欄と鎮座地欄",
+                  "name_raw": "坂門一言神社",
+                  "page_hash": "f3aac2b39ebcfeef7ed2e62b05dd432c141444266d0904bdaf7fc2d4f1b0b9fe",
+                  "source_kind": "official_agency",
+                  "title": "坂門一言神社 - 福井県神社庁",
+                  "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20161003_164519"
+                },
+                {
+                  "address_raw": "福井県大野市牛ケ原７５字新村下５６番地",
+                  "address_role": "religious_corporation_office_location",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-26T09:21:24.718951+00:00",
+                  "corporate_number": "9210005005733",
+                  "excerpt": "坂門一言神社 ／ 福井県大野市牛ケ原７５字新村下５６番地 ／ サカトヒトコトジンジャ",
+                  "licence_terms": {
+                    "checked_at": "2026-11-26T09:20:39.360483+00:00",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                  },
+                  "licence_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の商号又は名称、本店又は主たる事務所の所在地、最終更新年月日とフリガナ",
+                  "name_raw": "坂門一言神社",
+                  "page_hash": "7f3d89d1b16eba5f88e68cb34f28d46ccb06d81899d9067bbc2927eaade1a02e",
+                  "reading_raw": "サカトヒトコトジンジャ",
+                  "reading_scope": "full_name",
+                  "registry_update_raw": "令和2年10月19日",
+                  "source_kind": "national_tax_agency_corporate_registry",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト・坂門一言神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9210005005733"
+                },
+                {
+                  "address_raw": "牛ケ原",
+                  "checked_at": "2026-11-26T09:21:17.849522+00:00",
+                  "excerpt": "坂門一言神社本殿 ／ 牛ケ原",
+                  "locator": "PDF43頁・未指定文化財の建造物一覧 No.167、名称と所在地",
+                  "name_raw": "坂門一言神社",
+                  "page_hash": "0a07b5aeedc20425d6e55be70cbb9300dfe318e88f9b9ecbc919b891d50ab546",
+                  "pdf_page": 43,
+                  "printed_label_raw": "坂門一言神社本殿",
+                  "source_kind": "municipal_cultural_property_inventory",
+                  "title": "大野市文化財保存活用地域計画 資料編",
+                  "url": "https://www.city.ono.fukui.jp/shisei/seisaku-keikaku/bunka-sports/bunnkazaikeikaku.files/0019_20260216.pdf"
                 }
               ],
-              "review_kind": "whole_reading_audit",
-              "status": "needs_review"
+              "status": "verified"
             }
           },
           "listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
@@ -32591,11 +32722,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "a7f7dc05b4c159eb7288c1c913c4c06bbc8f1878b090cd1e6f540dcb529c4446",
-          "reading": "さかとひとことじじゃ",
+          "reading": "さかとひとことじんじゃ",
           "reading_raw": "さかとひとことじじゃ",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
-          "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9210005005733",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -32734,6 +32865,20 @@
             "prefecture_code": "18",
             "reading_raw": "さかとひとことじじゃ",
             "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_malformed_designation",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "さかとひとことじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "さかとひとことじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "坂門一言神社",
             "wikipedia_article_refs": [],
@@ -32764,7 +32909,7 @@
             "status": "verified",
             "surface": "坂門一言神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "坂門一言神社"
         },
         {
