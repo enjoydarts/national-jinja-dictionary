@@ -800,6 +800,18 @@ Wikidataで社名・全地番が対応し、索引にかながある204項目の
 
 山梨では上野原市と富士川町の文化財一覧を照合し、市川三郷町は町誌の公開入口と利用規定を確認しました。国税庁の日次差分一覧は11月26日13時30分の確認時点で11月25日分が最新でした。3県の10登録を補完し、全国29都道府県の保留は**9,538 → 9,528登録**です。[上野原市の指定・登録文化財](https://www.city.uenohara.yamanashi.jp/site/kyoiku/1017085.html)・[富士川町の文化財一覧](https://www.town.fujikawa.yamanashi.jp/docs/2023090600118/)・[市川三郷町の町誌公開案内](https://www.town.ichikawamisato.yamanashi.jp/40administration/ichikawamisato-choshi/index.html)・[国税庁の公開差分一覧](https://www.houjin-bangou.nta.go.jp/download/sabun/)
 
+### 香川・京都・長野・滋賀の地域資料の照合（2026-11-26）
+
+香川では高松市の文化財学習会資料142点、丸亀市の地区計画73点とコミュニティ活動資料20点の計235点を取得しました。3,604頁のうち文字層がある3,030頁を、香川県の保留556登録の社名と照合しました。丸亀市の城北地区地図の原画像から、産巣日神社「むすびじんじゃ」、木里神社「こざとじんじゃ」、清水神社「しみずじんじゃ」、高木神社「たかぎじんじゃ」の全文ルビを確認しました。会下天満神社の兼務社紹介2頁15枠から本島の塩竃神社・八阪神社と牛島の池神社を補完しました。高松市の学習会資料では、縦書きの全文ルビを原画像で確認し、丹生神社「にうじんじゃ」、三谷八幡宮「みたにはちまんぐう」、松宇神社「まつうじんじゃ」、鰹宇神社「かつうじんじゃ」を補完しました。11社の鎮座地は県神社庁の個別欄を確認し、県の現行宗教法人名簿の所在地も照合しました。塩竃・塩竈と八阪・八坂は各資料の表記を保持しました。画像のみの頁は文字層照合の範囲外です。[高松市「ふるさと探訪」資料](https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/furusato/kako.html)・[丸亀市まちづくり計画一覧](https://www.city.marugame.lg.jp/page/1507.html)・[城北地区地図](https://www.city.marugame.lg.jp/uploaded/attachment/20837.pdf#page=4)・[会下天満神社の兼務社紹介](https://www.egetenmanjinja.com/intro/)・[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/somugakuji/shukyohojin/wt2qvw200521160140.html)・[高松市「川島から仏生山へ昔の道を歩く」](https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/furusato/kako.files/h2210furutan.pdf#page=5)・[高松市「十河城跡を訪ねる」](https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/furusato/kako.files/h2605furutan.pdf#page=7)
+
+京都では京丹波町観光協会の索引2頁と個別16件、京北の神社関連7件、全国春日連合会の個別3件などを照合しました。京丹波町では本庄と坂原の阿上三所神社2社と上乙見の熊野神社、京都市右京区京北宮町と南丹市園部町小山東町では春日神社各1社の計5登録を補完しました。阿上三所神社は地区ごとの所在地と「あじょうさんしょじんじゃ」を確認しました。地番差や全文かなの不足などが残った18候補は保留しました。[京丹波町観光協会の本庄](https://www.kyotamba.org/tourism-category/tourism-category-625/)・[坂原](https://www.kyotamba.org/tourism-category/tourism-category-618/)・[京北ナビの春日神社](https://kyoto-keihoku.jp/howto/see/1704/)・[全国春日連合会の園部町の春日神社](https://kasugarengou.jp/list/2016/03/post-54.html)
+
+長野では須坂市「まるごと博物館」、市文書館、県宗教法人名簿などを照合しました。高梨神社「たかなしじんじゃ」、塩川の熊野神社「くまのじんじゃ」、芝宮と小山八幡の墨坂神社各1社「すみさかじんじゃ」の計4登録を補完しました。墨坂神社は市資料で両社の位置を確認し、それぞれの地番と出典を記録しました。[須坂市「高梨神社」](https://www.city.suzaka.nagano.jp/cgi-bin/recruit.php/2/detail/596)・[「塩川熊野神社」](https://www.city.suzaka.nagano.jp/cgi-bin/recruit.php/2/detail/701)・[「墨坂神社」](https://www.city.suzaka.nagano.jp/cgi-bin/recruit.php/2/detail/28)
+
+滋賀では近畿地方整備局の資料に収録された滋賀県文化財保護課提供の記録で、大瀧神社「おおたきじんじゃ」と多賀町富之尾を確認しました。県神社庁の記録と現地訪問記事で富之尾1585番地を照合し、1登録を補完しました。長濱八幡宮は資料間でかなの表記差が残るため保留しました。[近畿地方整備局の調査資料](https://www.kkr.mlit.go.jp/plan/biwayodosaisei/cooperation/suishin/list_conf/20130218/03.pdf#page=60)・[大瀧神社の現地訪問記事](https://ameblo.jp/ksho-04/entry-12747841172.html)
+
+国税庁の日次差分と47都道府県の月次配布一覧を11月26日14時06分に確認しました。日次は11月25日分、月次は10月30日版が最新でした。4府県の21登録を補完し、全国29都道府県の保留は**9,528 → 9,507登録**です。[国税庁の日次差分一覧](https://www.houjin-bangou.nta.go.jp/download/sabun/)・[都道府県別の月次配布一覧](https://www.houjin-bangou.nta.go.jp/download/zenken/)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
