@@ -192,6 +192,8 @@ def _reference_matches(ref,facility,entry,changes):
         # Compare both endpoints of an explicitly marked parcel range.
         value = re.sub(r'自([0-9]+)(?:番地)?[.・]?至([0-9]+)(?:番地)?$', r'自\1至\2', value)
         value=re.sub(r'(?<=\d)[−‐‑‒–—―](?=\d)','-',value)
+        # Preserve the literal kana in a parcel branch such as 2番地-イ.
+        value=re.sub(r'(?<=\d)(?:番地)?[−‐‑‒–—―-](?=[ァ-ヶ]$)','-',value)
         value=re.sub(r'(?<=\d)丁目(?=\d)','-',value)
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
         value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)

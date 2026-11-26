@@ -172756,12 +172756,50 @@
           "surface": "福井神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:05.626935+00:00",
+          "checked_at": "2026-11-26T12:16:17.617249+00:00",
           "evidence": "佐良志奈神社 389-0813 千曲市大字若宮2番地－ｲ",
           "facility_id": "71d73dd2-258b-5afe-9a25-f456aa97b5bd",
           "fetched_at": "2026-11-08T14:31:05.626935+00:00",
           "id": "97359add-b7ca-5eb4-a39d-e6327efd9c37",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "さらしなじんじゃ"
+              },
+              "expected_source_hash": "3e77cd6e633e5972ced045d1283566463015e53eb0c4bf830e47d82b15449dd8",
+              "facility_id": "71d73dd2-258b-5afe-9a25-f456aa97b5bd",
+              "identity_match": {
+                "agency_address": "千曲市大字若宮2番地－ｲ",
+                "agency_name": "佐良志奈神社",
+                "reference_address": "〒389-0813 長野県千曲市若宮２−イ",
+                "reference_name": "佐良志奈神社"
+              },
+              "original": {
+                "address": "千曲市大字若宮2番地－ｲ",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/kousyoku.htm",
+                "name_raw": "佐良志奈神社",
+                "reading_raw": ""
+              },
+              "reason": "同一項目に明記された全文かなと枝番イを原掲載と照合。大字、番地、ダッシュの種類、数字・カナの幅のみが異なる。県名簿は村東２番地イ、神社庁の実リンク先は全文かなと枝番なしの若宮2番を記す。全出典の原表記を保持する。",
+              "references": [
+                {
+                  "address_raw": "〒389-0813 長野県千曲市若宮２−イ",
+                  "checked_at": "2026-11-26T12:16:17.617249+00:00",
+                  "excerpt": "佐良志奈神社（さらしなじんじゃ） ／ 〒389-0813 長野県千曲市若宮２−イ",
+                  "locator": "「その他　千曲市内　寺社」リストの佐良志奈神社の単独li。strongの社名と括弧全文かな、同じliの所在地行。",
+                  "name_raw": "佐良志奈神社",
+                  "page_hash": "32b1eb8d3f4a074e1f14f1cb0a3d53d90672d22ae8253edf74d0b3145fb177b0",
+                  "reading_raw": "さらしなじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "tourism_organization",
+                  "source_publisher": "一般社団法人 信州千曲観光局",
+                  "title": "初詣にいこう！ 信州千曲市 初詣ガイド | 信州千曲観光局",
+                  "url": "https://chikuma-kanko.com/2018-12-14/post-7768/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/kousyoku.htm",
           "name_raw": "佐良志奈神社",
           "normalization": [
@@ -172769,11 +172807,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "7ebddd9026e779c0012fe49e3921b786ca582b1e71ad32c7cad685e5184db931",
-          "reading": "",
+          "reading": "さらしなじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/kousyoku.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://chikuma-kanko.com/2018-12-14/post-7768/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -172962,6 +173000,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "さらしなじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "さらしなじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "佐良志奈神社",
             "wikipedia_article_refs": [
@@ -173001,7 +173053,7 @@
             "status": "pending",
             "surface": "佐良志奈神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "佐良志奈神社"
         },
         {
