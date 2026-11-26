@@ -920,6 +920,18 @@ Geofabrikの11月24日版の中部・近畿の公開地図データで、保留�
 
 2府県の5登録を補完し、全国の保留は**9,368 → 9,363登録**です。
 
+### 国総研の地方登録文化財と北海道・中国地方・佐賀の照合（2026-11-26）
+
+国総研の認定都市索引102都市から、地方登録制度の表示がある13都市の一覧PDFへの実リンクを確認しました。取得できた12点20頁を、該当自治体の保留205登録と照合しました。名称候補13登録から京都市の五社神社「ごしゃじんじゃ」と九頭神社「くずじんじゃ」の読みを補完しました。五社神社は京都市の全文かなと教育委員会告示の下津林楠町103を照合しました。九頭神社は京北自治振興会の全文かなと北谷17を確認し、神社庁の「京北細野北谷」と京都市資料の「京北細野町北谷」をそれぞれ保持しました。高梁市のPDFは404で、岩国市のPDFには京都市の登録行が混在していました。[国総研の認定都市検索](https://www.nilim.go.jp/lab/ddg/rekimachidb/search_city.html)・[京都市の五社神社](https://kyoto-irodoru.city.kyoto.lg.jp/mobile/nishikyo/gosya-jinja.html)・[京北自治振興会の九頭神社](https://kyoto-keihoku.jp/area/hosono/7014/)
+
+京都市下京区では中堂寺の住吉神社「すみよしじんじゃ」を区の案内と神社庁の薮之内町617に照合し、住吉町481の同名社を区別しました。南丹市では春日神社「かすがじんじゃ」の全文かなと園部町高屋宮ノ前1を個別記事で確認しました。[中堂寺の住吉神社の現地記事](https://www.zekkeikana.com/kyoto/shimogyoku/chudojisumiyoshi/chudojisumiyoshi11.html)・[高屋の春日神社の地域調査](https://kuchitanshrine.my.coocan.jp/takayakasuga.html)
+
+Geofabrikの11月24日版の北海道・中国地方も、同名かつ明示かながある候補を照合しました。北海道は7地物・7登録が同じ道内にあり、神社庁の掲載住所を個別に再確認しました。北海道護国神社では市の施設案内と法人公表情報の所在地の粒度が異なり、渋井神社では表記と地番の差が残ります。中国地方は対象6保留の同名に対応する、かな付き地物がありませんでした。地図データの提供はOpenStreetMap contributors（ODbL 1.0）、行政界はgeoBoundaries、抽出・集計は本プロジェクトです。[北海道の配布ページ](https://download.geofabrik.de/asia/japan/hokkaido/)・[中国地方の配布ページ](https://download.geofabrik.de/asia/japan/chugoku/)・[OpenStreetMapのライセンス](https://www.openstreetmap.org/copyright)・[旭川市の北海道護国神社](https://www.city.asahikawa.hokkaido.jp/facility00/facility03/d61173.html)
+
+佐賀では5登録の名称と所在地を調べました。須賀神社と仁比山神社は県・市の新旧町字名資料を参照し、旧郡町表記を照合しました。読みの候補があった観光資料には二次利用の制限があるため、両社の保留を続けます。[佐賀県の新旧町字名資料](https://www.pref.saga.lg.jp/kiji00329259/3_29259_6_chouazamei.pdf)・[神埼市の合併による住所変更](https://www.city.kanzaki.saga.jp/main/367.html)・[小城市観光協会の利用表示](https://www.ogi-kankou.com/page-1973)
+
+京都府の4登録を補完し、全国の保留は**9,363 → 9,359登録**です。
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

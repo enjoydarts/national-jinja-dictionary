@@ -652365,6 +652365,950 @@
               "verified_proposals": 2
             }
           }
+        },
+        {
+          "baseline_commit": "7ed3706",
+          "by_prefecture_before": {
+            "01": 347,
+            "02": 660,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 2,
+            "19": 996,
+            "20": 1606,
+            "21": 1,
+            "22": 2,
+            "23": 18,
+            "25": 863,
+            "26": 1048,
+            "28": 9,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 540,
+            "38": 1,
+            "39": 1623,
+            "40": 123,
+            "41": 90,
+            "42": 850,
+            "43": 518,
+            "47": 3
+          },
+          "checked_at": "2026-11-26T10:40:37.979763+00:00",
+          "dictionary_entries": {
+            "0ffb294f-5a52-55f8-aaa3-2fea494314b3": {
+              "address": "京都市下京区下松屋町通松原下ル三丁目薮之内町617",
+              "facility_id": "c6a21e7a-c7c3-50cd-83ae-904ac450cbfb",
+              "name": "住吉神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "すみよしじんじゃ"
+            },
+            "16fcfc26-27de-572b-919c-8636a5bbf0b7": {
+              "address": "京都市西京区下津林楠町103",
+              "facility_id": "c0aa3997-3eb2-513e-b79e-2e82057c69ae",
+              "name": "五社神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "ごしゃじんじゃ"
+            },
+            "2f5ba6c0-4040-5d2b-b25a-86605a3a659e": {
+              "address": "南丹市園部町高屋宮ノ前1",
+              "facility_id": "77992e82-005e-5dad-b0de-7d498d8c1331",
+              "name": "春日神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "かすがじんじゃ"
+            },
+            "7bd02be3-9741-5b34-9a79-56b73c166cbd": {
+              "address": "京都市右京区京北細野北谷17",
+              "facility_id": "197a2b1f-4eb8-5bb9-bbaf-3e06e490e2f1",
+              "name": "九頭神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "くずじんじゃ"
+            }
+          },
+          "pending_after": 9359,
+          "pending_before": 9363,
+          "prefecture_scopes": {
+            "kyoto_extra": [
+              "26"
+            ],
+            "kyoto_takaya": [
+              "26"
+            ],
+            "nilim": [
+              "all"
+            ],
+            "root": [
+              "all"
+            ],
+            "saga_checked": [
+              "41"
+            ]
+          },
+          "reading_supplements_by_investigation": {
+            "kyoto_extra": 1,
+            "kyoto_takaya": 1,
+            "nilim": 2,
+            "root": 0,
+            "saga_checked": 0
+          },
+          "reduced_by_prefecture": {
+            "26": 4
+          },
+          "source_investigations": {
+            "kyoto_extra": {
+              "baseline": {
+                "commit": "b9d2dec",
+                "namespace": "kyoto",
+                "national_pending": 9368,
+                "pending_input": "njd-1126k",
+                "prefecture_pending": 1051
+              },
+              "confirmed": [
+                {
+                  "agency_address": "京都市下京区下松屋町通松原下ル三丁目薮之内町617",
+                  "entry_id": "0ffb294f-5a52-55f8-aaa3-2fea494314b3",
+                  "name": "住吉神社",
+                  "reading": "すみよしじんじゃ",
+                  "reason": "中堂寺の個別現地記事に「住吉神社（すみよしじんじゃ）」と薮之内町が明記され、下京区施設案内の中堂寺・薮之内町617と京都府神社庁の同名・同町・617を照合。二つの通り表記と出典を保持し、醒ケ井通の住吉町481の同名社とは区別する。",
+                  "source": "https://www.zekkeikana.com/kyoto/shimogyoku/chudojisumiyoshi/chudojisumiyoshi11.html"
+                }
+              ],
+              "confirmed_count": 1,
+              "disjoint_prior_kyoto_entry_ids": [
+                "43884214-3ee4-5843-b924-1ca8095ba71b",
+                "4a131b81-ddac-5669-bece-61ce0ef24d8d",
+                "935e30b1-87d7-5850-8a39-ea6b97ff4e13"
+              ],
+              "prior_batch_overlap": 0,
+              "schema_version": 1,
+              "source_scope": "中堂寺の公開記事・区の施設案内・神社庁の原本文を個別照合。",
+              "terms": {
+                "bytes": 21069,
+                "fetched_at": "2026-11-26T10:24:44.055502+00:00",
+                "sha256": "650326a3e819e2fda13884e504ee3ee4a4df7cb28b728235263f4e623e04dd95",
+                "status": 200,
+                "url": "https://www.city.kyoto.lg.jp/main/site_policy/0000000005.html"
+              },
+              "validation": "現行 correction_problems、apply_corrections、ensure_public_metadata を確認。"
+            },
+            "kyoto_takaya": {
+              "baseline": {
+                "commit": "b9d2dec",
+                "national_pending": 9368,
+                "prefecture_pending": 1051
+              },
+              "confirmed": [
+                {
+                  "agency_address": "南丹市園部町高屋宮ノ前1",
+                  "entry_id": "2f5ba6c0-4040-5d2b-b25a-86605a3a659e",
+                  "name": "春日神社",
+                  "reading": "かすがじんじゃ",
+                  "reason": "個別現地紹介の高屋の春日神社に全文かなと園部町高屋宮ノ前1が印字される。全所在地一致を確認し、同じ南丹市でも口人などの同名社と区別した。",
+                  "source": "https://kuchitanshrine.my.coocan.jp/takayakasuga.html"
+                }
+              ],
+              "confirmed_count": 1,
+              "reading_and_address_receipt": {
+                "bytes": 12180,
+                "fetched_at": "2026-11-26T10:34:06.365666+00:00",
+                "sha256": "8e8153fe8e25315623cd44d5e143c40d0d43eb882db0b715ec360ad849c8f114",
+                "status": 200,
+                "url": "https://kuchitanshrine.my.coocan.jp/takayakasuga.html"
+              },
+              "schema_version": 1,
+              "verification": "現行 correction_problems と ensure_public_metadata が通過。御金・白雲・薮田・住吉の4IDとの重複なし。"
+            },
+            "nilim": {
+              "accepted": [
+                {
+                  "address_raw": "京都市西京区下津林楠町103",
+                  "name_raw": "五社神社",
+                  "reading": "ごしゃじんじゃ",
+                  "references": [
+                    {
+                      "address_raw": "京都市西京区下津林楠町１０３番地",
+                      "address_source": {
+                        "address_raw": "京都市西京区下津林楠町１０３番地",
+                        "attribution": "京都市教育委員会告示第12号",
+                        "checked_at": "2026-11-26T10:29:48.722971+00:00",
+                        "excerpt": "所有者「五社神社」、所有者の住所・所在の場所「京都市西京区下津林楠町１０３番地」",
+                        "locator": "PDF第1頁・別表第1・五社神社本殿の行・所有者、所有者の住所、所在の場所",
+                        "name_raw": "五社神社",
+                        "page_hash": "4fef244fc664946eda8996bd0f2bf88659cb86f54ee4d6ae7cd0d54caf1a440b",
+                        "parent_page_hash": "ac066b15a7789ed32ef47365424c62156468eba96e318ed08186c91044b28cc1",
+                        "parent_url": "https://www2.city.kyoto.lg.jp/somu/bunsyo/kouhou/h2403/0330/mokuji2.html",
+                        "reading_scope": "partial_or_absent",
+                        "source_kind": "municipal_official_notice",
+                        "source_publisher": "京都市教育委員会",
+                        "terms_url": "https://www.city.kyoto.lg.jp/main/site_policy/0000000005.html",
+                        "title": "平成24年3月30日京都市教育委員会告示第12号",
+                        "url": "https://www2.city.kyoto.lg.jp/somu/bunsyo/kouhou/h2403/0330/0330_297.pdf"
+                      },
+                      "attribution": "京都市文化市民局「京都を彩る建物や庭園」",
+                      "checked_at": "2026-11-26T10:29:42.369483+00:00",
+                      "excerpt": "五社神社（ごしゃじんじゃ）。所有者「五社神社」、所有者の住所・所在の場所「京都市西京区下津林楠町１０３番地」。",
+                      "locator": "社名見出し・所在地欄・認定番号第119号",
+                      "name_raw": "五社神社",
+                      "page_hash": "cc526049d42da3fcb198dc0e583d7c35f0a60066fec6bde89d4ff338886aa7e9",
+                      "reading_raw": "ごしゃじんじゃ",
+                      "reading_scope": "full_name",
+                      "source_kind": "municipal_cultural_property_profile",
+                      "source_locality_raw": "西京区",
+                      "source_publisher": "京都市文化市民局",
+                      "terms_url": "https://kyoto-irodoru.city.kyoto.lg.jp/sitepolicy.html",
+                      "title": "京都を彩る建物や庭園 五社神社",
+                      "url": "https://kyoto-irodoru.city.kyoto.lg.jp/mobile/nishikyo/gosya-jinja.html"
+                    },
+                    {
+                      "address_raw": "京都市西京区下津林楠町１０３番地",
+                      "attribution": "京都市教育委員会告示第12号",
+                      "checked_at": "2026-11-26T10:29:48.722971+00:00",
+                      "excerpt": "所有者「五社神社」、所有者の住所・所在の場所「京都市西京区下津林楠町１０３番地」",
+                      "locator": "PDF第1頁・別表第1・五社神社本殿の行・所有者、所有者の住所、所在の場所",
+                      "name_raw": "五社神社",
+                      "page_hash": "4fef244fc664946eda8996bd0f2bf88659cb86f54ee4d6ae7cd0d54caf1a440b",
+                      "parent_page_hash": "ac066b15a7789ed32ef47365424c62156468eba96e318ed08186c91044b28cc1",
+                      "parent_url": "https://www2.city.kyoto.lg.jp/somu/bunsyo/kouhou/h2403/0330/mokuji2.html",
+                      "reading_scope": "partial_or_absent",
+                      "source_kind": "municipal_official_notice",
+                      "source_publisher": "京都市教育委員会",
+                      "terms_url": "https://www.city.kyoto.lg.jp/main/site_policy/0000000005.html",
+                      "title": "平成24年3月30日京都市教育委員会告示第12号",
+                      "url": "https://www2.city.kyoto.lg.jp/somu/bunsyo/kouhou/h2403/0330/0330_297.pdf"
+                    }
+                  ],
+                  "registration_id": "16fcfc26-27de-572b-919c-8636a5bbf0b7"
+                },
+                {
+                  "address_raw": "京都市右京区京北細野北谷17",
+                  "name_raw": "九頭神社",
+                  "reading": "くずじんじゃ",
+                  "references": [
+                    {
+                      "address_raw": "京都市右京区京北細野北谷17",
+                      "address_source": {
+                        "address_raw": "京都市右京区京北細野北谷17",
+                        "attribution": "京都府神社庁「京都市右京区の神社紹介」",
+                        "checked_at": "2026-11-08T14:25:06.988761+00:00",
+                        "excerpt": "九頭神社 ／ 京都市右京区京北細野北谷17",
+                        "locator": "innermost facility table tr occurrence=42; cell before postal code / cell after postal code",
+                        "name_raw": "九頭神社",
+                        "observation": "保留基準に格納された取得時の公式名簿掲載行。",
+                        "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
+                        "reading_scope": "partial_or_absent",
+                        "source_kind": "official_agency",
+                        "source_publisher": "京都府神社庁",
+                        "title": "京都府神社庁 京都市右京区の神社紹介",
+                        "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+                      },
+                      "attribution": "京北自治振興会「京都京北ナビ」",
+                      "checked_at": "2026-11-26T10:29:59.039429+00:00",
+                      "excerpt": "名称「九頭神社（くずじんじゃ）」、所在地「京都市右京区京北細野町北谷17」。九頭神社 ／ 京都市右京区京北細野北谷17。",
+                      "locator": "名称・所在地の同一施設表、細野地区余野の本文",
+                      "name_raw": "九頭神社",
+                      "page_hash": "c26ce47261969d01f5274b152a06f52360efc9be64f99ade47357841208f3780",
+                      "published_address_raw": "京都市右京区京北細野町北谷17",
+                      "publisher_page_hash": "5b3c71cdf6c1e283280999dfe6d9d70739491782702a5c1c9f3127d7cf28c8c0",
+                      "publisher_url": "https://kyoto-keihoku.jp/about/",
+                      "reading_raw": "くずじんじゃ",
+                      "reading_scope": "full_name",
+                      "source_kind": "local_community_organization_field_profile",
+                      "source_publisher": "京北自治振興会",
+                      "title": "京北自治振興会「京都京北ナビ」九頭（くず）神社",
+                      "url": "https://kyoto-keihoku.jp/area/hosono/7014/"
+                    },
+                    {
+                      "address_raw": "京都市右京区京北細野北谷17",
+                      "attribution": "京都府神社庁「京都市右京区の神社紹介」",
+                      "checked_at": "2026-11-08T14:25:06.988761+00:00",
+                      "excerpt": "九頭神社 ／ 京都市右京区京北細野北谷17",
+                      "locator": "innermost facility table tr occurrence=42; cell before postal code / cell after postal code",
+                      "name_raw": "九頭神社",
+                      "observation": "保留基準に格納された取得時の公式名簿掲載行。",
+                      "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
+                      "reading_scope": "partial_or_absent",
+                      "source_kind": "official_agency",
+                      "source_publisher": "京都府神社庁",
+                      "title": "京都府神社庁 京都市右京区の神社紹介",
+                      "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+                    },
+                    {
+                      "address_raw": "右京区京北細野町北谷17番地",
+                      "attribution": "京都市歴史的風致維持向上計画（1期）資料編",
+                      "checked_at": "2026-11-26T10:31:32.659275+00:00",
+                      "excerpt": "九頭神社 本殿 ／ 右京区京北細野町北谷17番地",
+                      "locator": "PDF第20頁・別表-20・No.88",
+                      "name_raw": "九頭神社",
+                      "page_hash": "ce7b4903e3fa469833634632905a277d76beb7d918857595aabbd70b7978b798",
+                      "parent_page_hash": "abe8b5704014acbaee88bc195cd0b3a43c5741ba5c2c2e0c9ab586e3c89d9bf4",
+                      "parent_url": "https://www.city.kyoto.lg.jp/tokei/page/0000282924.html",
+                      "reading_scope": "partial_or_absent",
+                      "source_kind": "municipal_cultural_property_inventory",
+                      "source_publisher": "京都市",
+                      "terms_url": "https://www.city.kyoto.lg.jp/main/site_policy/0000000005.html",
+                      "title": "京都市歴史的風致維持向上計画（1期）資料編",
+                      "url": "https://www.city.kyoto.lg.jp/tokei/cmsfiles/contents/0000282/282924/10_2_r.pdf"
+                    },
+                    {
+                      "address_raw": "京都府京都市右京区京北細野町北谷１７番地",
+                      "attribution": "経済産業省 Gビズインフォ（所在地の出典は国税庁法人番号公表サイト）",
+                      "checked_at": "2026-11-26T10:31:37.670360+00:00",
+                      "excerpt": "九頭神社 ／ 京都府京都市右京区京北細野町北谷１７番地",
+                      "locator": "法人基本情報 法人名・法人番号・本店所在地",
+                      "name_raw": "九頭神社",
+                      "page_hash": "b650f9ceeafb018978f53c914338751193fec03d1781d0e3d9c07edfc152cccc",
+                      "reading_scope": "partial_or_absent",
+                      "source_kind": "public_corporate_information_profile",
+                      "source_publisher": "経済産業省",
+                      "title": "Gビズインフォ 九頭神社 1130005005807",
+                      "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=1130005005807"
+                    }
+                  ],
+                  "registration_id": "7bd02be3-9741-5b34-9a79-56b73c166cbd"
+                }
+              ],
+              "access_notes": [
+                "国総研のrobots.txtは200で当該公開パスは許可。単一ホスト間隔2.8秒、再試行なし。",
+                "国総研サイトはHTML以外への直接リンクを控えるよう求めているため、公開証拠は実リンクのある都市ページと誌面ページ・行番号で記録。",
+                "とっておきの京都プロジェクトはrobots.txtが403で取得停止し、提案出典には使用しなかった。",
+                "京都府神社庁はHTTPSの証明書ホスト名不一致で取得せず、基準時の実取得済みHTTP掲載行を独立参照として引用。"
+              ],
+              "baseline_commit": "b9d2dec",
+              "boundary": [
+                {
+                  "address_raw": "京都市伏見区下鳥羽城之越町6",
+                  "discovery": {
+                    "number": "登録建24",
+                    "pdf_page": 1,
+                    "property_name": "飛鳥田神社本殿"
+                  },
+                  "name_raw": "飛鳥田神社",
+                  "reviewed": {
+                    "address_raw": "伏見区横大路柿ノ本町",
+                    "checked_at": "2026-11-26T10:31:32.659275+00:00",
+                    "locator": "PDF第20頁・別表-20・No.86",
+                    "name_raw": "飛鳥田神社 本殿",
+                    "page_hash": "ce7b4903e3fa469833634632905a277d76beb7d918857595aabbd70b7978b798",
+                    "title": "京都市歴史的風致維持向上計画（1期）資料編",
+                    "url": "https://www.city.kyoto.lg.jp/tokei/cmsfiles/contents/0000282/282924/10_2_r.pdf"
+                  },
+                  "status": "pending_different_facility"
+                },
+                {
+                  "address_raw": "京都市右京区西院春日町4",
+                  "discovery": {
+                    "number": "市登民42",
+                    "pdf_page": 2,
+                    "property_name": "西院春日神社の剣鉾差し"
+                  },
+                  "name_raw": "春日神社",
+                  "reviewed": {
+                    "address_raw": "京都市右京区西院春日町61",
+                    "checked_at": "2026-11-26T10:30:57.822643+00:00",
+                    "locator": "基本情報 通称名称・よみがな・住所 所在地",
+                    "name_raw": "春日神社",
+                    "page_hash": "85b42d1746c29dce10fa428b739f61b1457cfd82b11bd28ee7c273031c46f10e",
+                    "title": "西院春日神社｜【京都市公式】京都観光Navi",
+                    "url": "https://ja.kyoto.travel/tourism/single01.php?category_id=7&tourism_id=297"
+                  },
+                  "status": "pending_address_difference"
+                },
+                {
+                  "address_raw": "京都市北区西賀茂氷室町",
+                  "discovery": {
+                    "number": "市登史11",
+                    "pdf_page": 2,
+                    "property_name": "氷室神社境内及び氷室跡"
+                  },
+                  "name_raw": "氷室神社",
+                  "reviewed": {
+                    "address_raw": "北区西賀茂宮山9",
+                    "checked_at": "2026-11-26T10:31:32.659275+00:00",
+                    "locator": "PDF第22頁・市指定登録記念物 No.17",
+                    "name_raw": "氷室神社",
+                    "page_hash": "ce7b4903e3fa469833634632905a277d76beb7d918857595aabbd70b7978b798",
+                    "title": "京都市歴史的風致維持向上計画（1期）資料編",
+                    "url": "https://www.city.kyoto.lg.jp/tokei/cmsfiles/contents/0000282/282924/10_2_r.pdf"
+                  },
+                  "status": "pending_compound_title_and_location_review"
+                },
+                {
+                  "address_raw": "京都市右京区京北細野町東野垣内15",
+                  "discovery": {
+                    "pdf_page": 2,
+                    "property_name": "西院春日神社の剣鉾差し"
+                  },
+                  "name_raw": "春日神社",
+                  "status": "excluded_candidate_different_locality_and_compound_title"
+                },
+                {
+                  "address_raw": "京都市右京区京北栃本町宮ノ前48",
+                  "discovery": {
+                    "pdf_page": 2,
+                    "property_name": "平岡八幡宮の三役相撲ほか"
+                  },
+                  "name_raw": "八幡宮",
+                  "status": "excluded_candidate_different_locality_and_compound_title"
+                },
+                {
+                  "address_raw": "京都市山科区西野山岩ケ谷町1",
+                  "discovery": {
+                    "pdf_page": 2,
+                    "property_name": "木野愛宕神社の烏帽子着"
+                  },
+                  "name_raw": "愛宕神社",
+                  "status": "excluded_candidate_different_locality_and_compound_title"
+                },
+                {
+                  "address_raw": "京都市山科区川田前畑町14",
+                  "discovery": {
+                    "pdf_page": 2,
+                    "property_name": "平岡八幡宮の三役相撲ほか"
+                  },
+                  "name_raw": "八幡宮",
+                  "status": "excluded_candidate_different_locality_and_compound_title"
+                },
+                {
+                  "address_raw": "京都市右京区京北井戸町神ノ市75",
+                  "discovery": {
+                    "pdf_page": 2,
+                    "property_name": "西院春日神社の剣鉾差し"
+                  },
+                  "name_raw": "春日神社",
+                  "status": "excluded_candidate_different_locality_and_compound_title"
+                },
+                {
+                  "address_raw": "京都市西京区牛ケ瀬青柳町22",
+                  "discovery": {
+                    "pdf_page": 2,
+                    "property_name": "西院春日神社の剣鉾差し"
+                  },
+                  "name_raw": "春日神社",
+                  "status": "excluded_candidate_different_locality_and_compound_title"
+                },
+                {
+                  "address_raw": "京都市北区平野宮北町2-1",
+                  "discovery": {
+                    "pdf_page": 2,
+                    "property_name": "平岡八幡宮の三役相撲ほか"
+                  },
+                  "name_raw": "八幡宮",
+                  "status": "excluded_candidate_different_locality_and_compound_title"
+                },
+                {
+                  "address_raw": "京都市右京区京北上黒田町森ノ本20",
+                  "discovery": {
+                    "pdf_page": 2,
+                    "property_name": "西院春日神社の剣鉾差し"
+                  },
+                  "name_raw": "春日神社",
+                  "status": "excluded_candidate_different_locality_and_compound_title"
+                }
+              ],
+              "discoveries": [
+                {
+                  "name_raw": "五社神社",
+                  "number": "登録建28",
+                  "pdf_page": 1,
+                  "property_name": "五社神社本殿"
+                },
+                {
+                  "name_raw": "九頭神社",
+                  "number": "登録建26",
+                  "pdf_page": 1,
+                  "property_name": "九頭神社本殿"
+                }
+              ],
+              "independent_terms": [
+                {
+                  "checked_at": "2026-11-26T10:30:51.504726+00:00",
+                  "handling": "施設名、読み、所在地の必要最小限の事実項目のみ記録。",
+                  "locator": "著作権についての考え方",
+                  "page_hash": "650326a3e819e2fda13884e504ee3ee4a4df7cb28b728235263f4e623e04dd95",
+                  "title": "京都市：著作権・リンク等",
+                  "url": "https://www.city.kyoto.lg.jp/main/site_policy/0000000005.html"
+                },
+                {
+                  "checked_at": "2026-11-26T10:29:39.513170+00:00",
+                  "handling": "施設名と明示かなに限定。写真や解説を転載しない。",
+                  "locator": "ホームページの考え方・京都市文化市民局",
+                  "page_hash": "708b58008ea59f8e56a7682fafd9c9566f508100863dd79ee5fc0c67758232dc",
+                  "title": "京都を彩る建物や庭園　京都市文化市民局",
+                  "url": "https://kyoto-irodoru.city.kyoto.lg.jp/sitepolicy.html"
+                }
+              ],
+              "municipal_pdfs": [
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（松本市）",
+                  "checked_at": "2026-11-26T10:27:37.899216+00:00",
+                  "city": "松本市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_025.html",
+                  "page_hash": "fa0c9f69646409abef5f1d7e4c563d6979fe6b09fc43e3fa7ef3de25882768b4",
+                  "pdf_pages": 1,
+                  "pending": 114,
+                  "prefecture": "長野県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "rows_with_name_and_kana": 3,
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（京都市）",
+                  "checked_at": "2026-11-26T10:27:40.885484+00:00",
+                  "city": "京都市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_012.html",
+                  "page_hash": "c1db8977f7f0db50ab27748aaf0c2e08ebb997d4faaf4f88172df7b4985de785",
+                  "pdf_pages": 2,
+                  "pending": 90,
+                  "prefecture": "京都府",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（湯前町）",
+                  "checked_at": "2026-11-26T10:27:43.785092+00:00",
+                  "city": "湯前町",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_062.html",
+                  "page_hash": "71099140945ce5b0012bab75785b556d76453eac00d59c4f90044162b8085164",
+                  "pdf_pages": 1,
+                  "pending": 1,
+                  "prefecture": "熊本県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "rows_with_name_and_kana": 3,
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（浜松市）",
+                  "checked_at": "2026-11-26T10:27:46.736109+00:00",
+                  "city": "浜松市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_087.html",
+                  "page_hash": "b489360a1d79819be5b8368004c7dd22f01dbe4ed2688967ee968077721bddc6",
+                  "pdf_pages": 6,
+                  "pending": 0,
+                  "prefecture": "静岡県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "city": "高梁市",
+                  "error": "公式都市ページが案内したPDFに対しHTTP 404。",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_017.html",
+                  "pending": 0,
+                  "prefecture": "岡山県",
+                  "status": 404
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（横手市）",
+                  "checked_at": "2026-11-26T10:27:52.544167+00:00",
+                  "city": "横手市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_068.html",
+                  "page_hash": "8219b415d03c38a5ac8a704561e7461e9b7a18a0d96601d6c0c341da3ad05421",
+                  "pdf_pages": 1,
+                  "pending": 0,
+                  "prefecture": "秋田県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（会津若松市）",
+                  "checked_at": "2026-11-26T10:27:55.448432+00:00",
+                  "city": "会津若松市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_091.html",
+                  "page_hash": "1fdf6e0e04909da84889e179e5af57f987b69f4c7032d3e3cbdb568b7ea0a125",
+                  "pdf_pages": 1,
+                  "pending": 0,
+                  "prefecture": "福島県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（柳津町）",
+                  "checked_at": "2026-11-26T10:27:58.361743+00:00",
+                  "city": "柳津町",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_094.html",
+                  "page_hash": "593bec709622a748b39bb6aa04d5174be93ef462e0d414362f023d197677cd22",
+                  "pdf_pages": 1,
+                  "pending": 0,
+                  "prefecture": "福島県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（伊賀市）",
+                  "checked_at": "2026-11-26T10:28:01.304551+00:00",
+                  "city": "伊賀市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_054.html",
+                  "page_hash": "932e76f48d52f3de34b5df8113cd81454f7ecb980288bc92f4a5b8962b5522ba",
+                  "pdf_pages": 1,
+                  "pending": 0,
+                  "prefecture": "三重県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（和歌山市）",
+                  "checked_at": "2026-11-26T10:28:04.275961+00:00",
+                  "city": "和歌山市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_066.html",
+                  "page_hash": "ec17f5db1e6466602567df8ba72d3e762c34433f774291bd2a1889ccb8955a8d",
+                  "pdf_pages": 1,
+                  "pending": 0,
+                  "prefecture": "和歌山県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（岩国市）",
+                  "checked_at": "2026-11-26T10:28:07.290363+00:00",
+                  "city": "岩国市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_097.html",
+                  "page_hash": "bc9b976bc53d66f9136a906c97dffdf19811cbe30634afbda0dd111fc82f7efc",
+                  "pdf_pages": 2,
+                  "pending": 0,
+                  "prefecture": "山口県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "quality": "都市名は岩国市。旧京都中央電話局・京都市考古資料館等と京都市PDFで一致する登録行があり、岩国市の施設同定に使用不可。",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（杵築市）",
+                  "checked_at": "2026-11-26T10:28:10.191615+00:00",
+                  "city": "杵築市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_086.html",
+                  "page_hash": "26606cd6d5b0ba4ae0fde96af30d913c7afd00ce94111cecd0c64b43b59a9678",
+                  "pdf_pages": 1,
+                  "pending": 0,
+                  "prefecture": "大分県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                },
+                {
+                  "attribution": "国土技術政策総合研究所ホームページ・認定都市の基本情報（日南市）",
+                  "checked_at": "2026-11-26T10:28:13.117085+00:00",
+                  "city": "日南市",
+                  "index_url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/city_041.html",
+                  "page_hash": "69bdba3feed2fb2fa1f9fd6a45287bac863b35080070c4d3468a716f98910415",
+                  "pdf_pages": 2,
+                  "pending": 0,
+                  "prefecture": "宮崎県",
+                  "publication_title": "地方登録制度により地方公共団体が登録している文化財",
+                  "selector": "地方登録制度による登録内容",
+                  "status": 200
+                }
+              ],
+              "official_index": {
+                "checked_at": "2026-11-26T10:26:05.657929+00:00",
+                "locator": "認定都市検索・都市名・地方登録制度欄",
+                "page_hash": "0a9c0292333eb369df995856a7d053db27a1e95dafa26652a2aec5122eec9c04",
+                "title": "認定都市検索｜認定都市情報検索｜『歴まち』情報サイト ―歴史的風致維持向上計画『認定都市』アーカイブ―｜国土交通省国土技術政策総合研究所",
+                "url": "https://www.nilim.go.jp/lab/ddg/rekimachidb/search_city.html"
+              },
+              "pending_count": 9368,
+              "scope": {
+                "city_index_rows": 102,
+                "downloaded_pages": 20,
+                "official_pdf_links": 13,
+                "pdf_not_found": 1,
+                "pdfs_downloaded": 12,
+                "pdfs_with_suspect_city_data": 1,
+                "pending_in_index_municipalities": 1298,
+                "pending_in_registered_municipalities": 205,
+                "pending_with_name_in_its_municipal_pdf": 13,
+                "registered_city_rows": 13,
+                "verified_proposals": 2
+              },
+              "survey_method": "取得した各PDFの印刷都市名を照合。保留の市区町村は市の行政区および郡名付き町を含めて突合し、同じ自治体の取得PDFで名称の文字列を照合。京都の候補について対象とかなの列、社名部分と対象全体、公開所在地を個別確認。合成した読みは採用しない。",
+              "terms": {
+                "checked_at": "2026-11-26T10:26:02.727082+00:00",
+                "handling": "取得は公式HTMLの実リンク経由。公開の参照先は都市HTMLとし、PDF中のページ番号と表の行番号を記録。",
+                "license": "PDL1.0",
+                "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                "locator": "リンクについて、著作権について、PDL1.0に関する重要事項",
+                "page_hash": "d545f473350e88711ac2d19ca5e0c9e0d4df763b1ce83d811e14657912c8b002",
+                "title": "リンク・著作権等について",
+                "url": "https://www.nilim.go.jp/aboutlink.htm"
+              }
+            },
+            "root": {
+              "additional_followups": {
+                "nagasaki": {
+                  "name_raw": "神島神社",
+                  "reason": "小値賀町大島郷・前方郷と平戸市の各社を区別。九州大学資料はrobots.txtのHTTP403で停止。",
+                  "retrieval_attempt": {
+                    "reason": "robots status unknown: 403",
+                    "status": "stopped",
+                    "url": "https://api.lib.kyushu-u.ac.jp/opac_download_md/4480698/3_p051.pdf"
+                  }
+                },
+                "okinawa": {
+                  "name_raw": "宮古神社",
+                  "official_refs": {
+                    "miyako_agency": {
+                      "checked_at": "2026-11-26T10:33:45.251265+00:00",
+                      "mime": "text/html",
+                      "page_hash": "84aa593354a585309299f0c997d35f4e25e18deb0e185f09488cde15046eb48c",
+                      "status": "retrieved",
+                      "url": "https://jinjacho.naminouegu.jp/"
+                    },
+                    "miyako_central": {
+                      "reason": "HTTP 503: https://www.jinjahoncho.or.jp/robots.txt",
+                      "status": "stopped",
+                      "url": "https://www.jinjahoncho.or.jp/sys/10609"
+                    },
+                    "miyako_city": {
+                      "checked_at": "2026-11-26T10:34:04.087370+00:00",
+                      "mime": "application/pdf",
+                      "page_hash": "77daadd3482dfead84bad8719aaf099a0c26d7aa9224eb23a2d285ae03937e91",
+                      "status": "retrieved",
+                      "url": "https://www.city.miyakojima.lg.jp/soshiki/shityo/kikaku/tyousei/oshirase/files/04021_H30contents.pdf"
+                    },
+                    "miyako_nta_pref": {
+                      "checked_at": "2026-11-26T10:33:45.103013+00:00",
+                      "mime": "application/pdf",
+                      "page_hash": "ab16c3b816cc26a21591da5495434f062387f5e1dc8aee3cfd2966ce88f8e72d",
+                      "status": "retrieved",
+                      "url": "https://www.pref.okinawa.lg.jp/_res/projects/default_project/_page_/001/014/071/r70331shukyouhoujin.pdf"
+                    },
+                    "miyako_official": {
+                      "checked_at": "2026-11-26T10:33:47.746007+00:00",
+                      "mime": "text/html",
+                      "page_hash": "f3214b3dcbf9551b905a41335fa0fa0bf302e3250a5d5e0f5ac8a9bc5dec476c",
+                      "status": "retrieved",
+                      "url": "https://miyako-jinja.com/about.html"
+                    }
+                  },
+                  "raw_address": "宮古島市平良市西里5-1",
+                  "reason": "県・市と神社公式は平良西里または平良字西里の5-1を掲載する。神社本庁はrobots.txtのHTTP503で今回も停止。元の市／字の相違を明示し保留する。"
+                }
+              },
+              "baseline": "7ed3706",
+              "checked_at": "2026-11-26T10:38:50.274158+00:00",
+              "map_candidates": {
+                "attribution": "© OpenStreetMap contributors; geoBoundaries (Runfola et al.)",
+                "by_region": {
+                  "chugoku": {
+                    "area_pending": 6,
+                    "baseline_pending": 9363,
+                    "distribution": {
+                      "attribution": "© OpenStreetMap contributors",
+                      "download": {
+                        "checked_at": "2026-11-26T10:36:25.190812+00:00",
+                        "page_hash": "e2dde3880eb01374836cda15004b5dc4b800234c3a26fe30d8ced251e5a7a87a",
+                        "url": "https://download.geofabrik.de/asia/japan/chugoku/chugoku-261124.osm.pbf"
+                      },
+                      "issued_file": "chugoku-261124.osm.pbf",
+                      "landing": {
+                        "checked_at": "2026-11-26T10:32:34.832640+00:00",
+                        "page_hash": "72fe13edbb45ed7ac431d26a02249d7fbc34cc3f368a170201499bd394f09ec6",
+                        "url": "https://download.geofabrik.de/asia/japan/chugoku/"
+                      },
+                      "length_bytes": 239537732,
+                      "md5_transport_check": "5398629a272116c4d42bdad123c3f094",
+                      "published_checksum": {
+                        "checked_at": "2026-11-26T10:32:38.351585+00:00",
+                        "page_hash": "50b6ce3031befd03cc2fd3e169f73d871f9a625066622aad63363d64f4e08551",
+                        "url": "https://download.geofabrik.de/asia/japan/chugoku/chugoku-261124.osm.pbf.md5"
+                      },
+                      "rights": {
+                        "checked_at": "2026-11-26T10:04:28.942819+00:00",
+                        "page_hash": "0743942caf33218fe1f8073059099bfaa0ca31ba2b03f8dd03f44655d58c69ad",
+                        "url": "https://www.openstreetmap.org/copyright"
+                      }
+                    },
+                    "position_screening_counts": {
+                      "candidate_objects": 0,
+                      "distinct_pending_ids_with_prefecture_only": 0
+                    },
+                    "screening_counts": {
+                      "name:ja-Hira": 187,
+                      "name_candidate_objects": 7,
+                      "name_candidate_pairs": 7,
+                      "named_with_kana_tag": 187,
+                      "osm_objects": 33689093,
+                      "shinto_named": 2595,
+                      "shrine_or_worship_named": 5068
+                    }
+                  },
+                  "hokkaido": {
+                    "area_pending": 347,
+                    "baseline_pending": 9368,
+                    "distribution": {
+                      "attribution": "© OpenStreetMap contributors",
+                      "download": {
+                        "checked_at": "2026-11-26T10:31:55.679541+00:00",
+                        "page_hash": "1cdb9074140430771f885a8ddb6bea874daa77c0b96f74cc9355021fcafb2e8f",
+                        "url": "https://download.geofabrik.de/asia/japan/hokkaido/hokkaido-261124.osm.pbf"
+                      },
+                      "issued_file": "hokkaido-261124.osm.pbf",
+                      "landing": {
+                        "checked_at": "2026-11-26T10:29:13.783206+00:00",
+                        "page_hash": "cb3ae859800d6067c2a32d31bd149ba27a248a6f7c76011e05a7a532b810a5bf",
+                        "url": "https://download.geofabrik.de/asia/japan/hokkaido/"
+                      },
+                      "length_bytes": 190191987,
+                      "md5_transport_check": "2eb1862e79840c738eb4d8024491c1f4",
+                      "published_checksum": {
+                        "checked_at": "2026-11-26T10:29:17.256475+00:00",
+                        "page_hash": "aedc0726bffadd36f46449083febef497089cd8894bca80997bc81195332f5e4",
+                        "url": "https://download.geofabrik.de/asia/japan/hokkaido/hokkaido-261124.osm.pbf.md5"
+                      },
+                      "rights": {
+                        "checked_at": "2026-11-26T10:04:28.942819+00:00",
+                        "page_hash": "0743942caf33218fe1f8073059099bfaa0ca31ba2b03f8dd03f44655d58c69ad",
+                        "url": "https://www.openstreetmap.org/copyright"
+                      }
+                    },
+                    "position_screening_counts": {
+                      "candidate_objects": 7,
+                      "distinct_pending_ids_with_prefecture_only": 7,
+                      "objects_with_same_name_candidate_in_located_prefecture": 7,
+                      "pairs_with_prefecture_only": 7,
+                      "unique_prefecture_region": 7
+                    },
+                    "screening_counts": {
+                      "name:ja-Hira": 138,
+                      "name_candidate_objects": 177,
+                      "name_candidate_pairs": 898,
+                      "named_with_kana_and_match": 7,
+                      "named_with_kana_tag": 138,
+                      "osm_objects": 30317066,
+                      "shinto_named": 1010,
+                      "shrine_or_worship_named": 2369
+                    }
+                  }
+                },
+                "hokkaido_individual_holds": [
+                  {
+                    "address_raw": "河西郡更別村字更別南2線91番地",
+                    "entry_id": "61dab871-74a2-51f0-a431-e8cf3760a874",
+                    "inspected_agency_index": {
+                      "checked_at": "2026-11-26T10:35:25.791135+00:00",
+                      "mime": "text/html",
+                      "page_hash": "326f57275185ffc870c408ea4adfd5d12956f2e8bc772e78ab7aa3cf07491def",
+                      "status": "retrieved",
+                      "url": "https://hokkaidojinjacho.jp/jinja-area/tokachi/page/4/"
+                    },
+                    "name_raw": "更別神社",
+                    "reason": "庁の掲載住所を点検。全文かなの現地記事には既調査の転載・二次利用上の条件があり、採用可能な根拠を探索する。"
+                  },
+                  {
+                    "address_raw": "旭川市花咲町1丁目",
+                    "entry_id": "7c99369d-5684-5095-b4b1-3db5de1862fa",
+                    "inspected_agency_index": {
+                      "checked_at": "2026-11-26T10:35:28.608237+00:00",
+                      "mime": "text/html",
+                      "page_hash": "1a1ca136c07b17059f733e819de5e77de1bb5819f379ce196878d1ab1019fcd0",
+                      "status": "retrieved",
+                      "url": "https://hokkaidojinjacho.jp/jinja-area/kamikawa/page/3/"
+                    },
+                    "name_raw": "北海道護国神社",
+                    "reason": "市の資料は社名と花咲町1丁目。市図書館の写真目録は全文カナ・旭川と二次利用不可を明記。法人情報のフリガナ・登記本店の全地番と、神社庁の丁目のみの鎮座地の対応を検査で結び付けられる資料を探索する。"
+                  },
+                  {
+                    "address_raw": "常呂郡佐呂間町字宮前町96番地",
+                    "entry_id": "b34103ef-43eb-5fa6-92f1-c49015d72239",
+                    "inspected_agency_index": {
+                      "checked_at": "2026-11-26T10:35:20.086828+00:00",
+                      "mime": "text/html",
+                      "page_hash": "51a15e85064bfbd400e210fa5b434dc93f6cd05ed5532f7591bc165b069c7478",
+                      "status": "retrieved",
+                      "url": "https://hokkaidojinjacho.jp/jinja-area/monbetsu/"
+                    },
+                    "name_raw": "佐呂間神社",
+                    "reason": "庁の掲載住所を点検。全文かなの現地記事には既調査の転載・二次利用上の条件があり、採用可能な根拠を探索する。"
+                  },
+                  {
+                    "address_raw": "網走郡大空町東藻琴25番地",
+                    "entry_id": "332f6d01-8c88-5f1a-80ea-b9b127d21567",
+                    "inspected_agency_index": {
+                      "checked_at": "2026-11-26T10:35:22.930364+00:00",
+                      "mime": "text/html",
+                      "page_hash": "57a7662c91fa47730be519b9727f148f14000a8f9d2e756e0b5bf6ac49ff3f40",
+                      "status": "retrieved",
+                      "url": "https://hokkaidojinjacho.jp/jinja-area/abashiri/"
+                    },
+                    "name_raw": "東藻琴神社",
+                    "reason": "庁の掲載住所を点検。全文かなの現地記事には既調査の転載・二次利用上の条件があり、採用可能な根拠を探索する。"
+                  },
+                  {
+                    "address_raw": "斜里郡小清水町元町1丁目51番1号",
+                    "entry_id": "0fff11f7-5600-524b-8a52-5bbc69e61f47",
+                    "inspected_agency_index": {
+                      "checked_at": "2026-11-26T10:35:22.930364+00:00",
+                      "mime": "text/html",
+                      "page_hash": "57a7662c91fa47730be519b9727f148f14000a8f9d2e756e0b5bf6ac49ff3f40",
+                      "status": "retrieved",
+                      "url": "https://hokkaidojinjacho.jp/jinja-area/abashiri/"
+                    },
+                    "name_raw": "小清水神社",
+                    "reason": "庁の掲載住所を点検。全文かなの現地記事には既調査の転載・二次利用上の条件があり、採用可能な根拠を探索する。"
+                  },
+                  {
+                    "address_raw": "亀田郡七飯町字大中山287番地",
+                    "entry_id": "a62bcebc-41b1-5f41-a1c0-20ed67c543cd",
+                    "inspected_agency_index": {
+                      "checked_at": "2026-11-26T10:35:31.472358+00:00",
+                      "mime": "text/html",
+                      "page_hash": "bfddbdcd6fd0e896cb7a752a080f4a561c6b36913ff17e63a6b022119ad0d905",
+                      "status": "retrieved",
+                      "url": "https://hokkaidojinjacho.jp/jinja-area/dounan/page/3/"
+                    },
+                    "name_raw": "大中山神社",
+                    "reason": "バス停の「大中山神社前」と歴史地名の大書き「じんじや」を区別し、独立した全文かなを探索する。"
+                  },
+                  {
+                    "address_raw": "古宇郡泊村大字堀株村字渋井1番地",
+                    "entry_id": "37d92975-de03-5475-ae01-6271321b3966",
+                    "inspected_agency_index": {
+                      "checked_at": "2026-11-26T10:35:16.587823+00:00",
+                      "mime": "text/html",
+                      "page_hash": "af0774a76abcacbffbacc451cad39d667e3af9b47bbfa31f20b2b2f8d9c1ef3e",
+                      "status": "retrieved",
+                      "url": "https://hokkaidojinjacho.jp/jinja-area/shiribeshi/page/4/"
+                    },
+                    "name_raw": "渋井神社",
+                    "reason": "県神社庁の渋井1番地と法人公表情報の澁井神社・渋井1番地16を区別し、直接の全文かなと両地番の関係を探索する。"
+                  }
+                ],
+                "license_url": "https://www.openstreetmap.org/copyright",
+                "positional_method": "11月24日版Geofabrik配布ファイルと2017年geoBoundaries行政界。候補抽出のみ。"
+              },
+              "pending": 9363
+            },
+            "saga_checked": {
+              "checked_candidates": 5,
+              "current_kanzaki_notation_source": "https://www.city.kanzaki.saga.jp/main/367.html",
+              "editorial_decision": "確認した二次利用上の制限がある観光資料からは読みを登録せず、他資料の地番との差が解決しない候補も保留した。",
+              "local_tourism_terms": "https://www.ogi-kankou.com/page-1973",
+              "prefectural_address_notation_source": "https://www.pref.saga.lg.jp/kiji00329259/3_29259_6_chouazamei.pdf",
+              "reading_supplements": 0,
+              "reviewed_names": [
+                "須賀神社",
+                "仁比山神社",
+                "四阿屋神社",
+                "堤雄神社",
+                "太良嶽神社"
+              ]
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [
