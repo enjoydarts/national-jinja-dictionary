@@ -19,6 +19,9 @@ def _url(v):
 def validate(data: dict) -> list[dict]:
     from njd.reference_sources import BASIS as REFERENCE_BASIS,reference_problems
     from njd.association_sources import BASIS as ASSOCIATION_BASIS,reference_problems as association_problems,BASE as ASSOCIATION_BASE,PUBLISHER as ASSOCIATION_PUBLISHER
+    from njd.municipal_sources import (BASIS as MUNICIPAL_BASIS, READING_KIND as MUNICIPAL_READING,
+                                      REFERENCE_BASES, SOURCE_KIND as MUNICIPAL_SOURCE,
+                                      identity_conflicts, reference_problems as municipal_problems)
     problems=[]
     def add(kind,rid,reason,severity='error'): problems.append(dict(kind=kind,id=rid,reason=reason,severity=severity))
     if not isinstance(data,dict): return [dict(kind='global',id=None,reason='dataset must be an object')]
@@ -80,8 +83,15 @@ def validate(data: dict) -> list[dict]:
         if isinstance(correction,dict) and correction.get('changes',{}).get('surface')==e.get('surface') and not correction_problems(correction,f,e,source):
             corrected_names.add(f['id'])
         if reviewed_output(e.get('human_review'),f,e,source):corrected_names.add(f['id'])
+    municipal_facilities = set()
     for f in fs:
         source=data['collection'].get('sources',{}).get(f.get('source_key'),data['collection'])
+        reference = f.get('source_reference')
+        facility_id = f.get('id')
+        if (isinstance(facility_id, str) and (source.get('listing_basis') == MUNICIPAL_BASIS
+                or f.get('listing_basis') == MUNICIPAL_BASIS
+                or (isinstance(reference, dict) and reference.get('source_kind') == MUNICIPAL_SOURCE))):
+            municipal_facilities.add(facility_id)
         location=f.get('location_supplement')
         if location is not None:
             if not isinstance(location,dict):
@@ -99,10 +109,10 @@ def validate(data: dict) -> list[dict]:
                 add('facility',f.get('id'),'unapplied location supplement cannot verify a facility')
         if source.get('authority_status') in ('pending','unconfirmed'):
             add('facility',f.get('id'),'official source authority not established',severity='review' if f.get('status')!='verified' else 'error')
-        if f.get('listing_basis','agency') not in ('agency',REFERENCE_BASIS,ASSOCIATION_BASIS):
+        if f.get('listing_basis','agency') not in ('agency', *REFERENCE_BASES):
             add('facility',f.get('id'),'unsupported listing basis')
         for field in ['listed_name','name_raw','prefecture','municipality','address','agency','source_locator']:
-            if field=='agency' and f.get('listing_basis') in (REFERENCE_BASIS,ASSOCIATION_BASIS):continue
+            if field=='agency' and f.get('listing_basis') in REFERENCE_BASES:continue
             if not f.get(field):
                 if field in ('listed_name','name_raw') and f['id'] in corrected_names:continue
                 add('facility',f.get('id'),'missing '+field,severity='review' if f.get('status')!='verified' and field in ('municipality','address','listed_name','name_raw') else 'error')
@@ -123,6 +133,10 @@ def validate(data: dict) -> list[dict]:
         code=f.get('prefecture_code','')
         if code not in {f'{i:02}' for i in range(1,48)}: add('facility',f.get('id'),'invalid prefecture code')
         if f.get('listed_name')!=f.get('name_raw'): add('facility',f.get('id'),'name differs from source')
+    for fid in sorted(municipal_facilities - {e.get('facility_id') for e in es}):
+        add('facility', fid, 'municipal reference is missing its source registration')
+    for fid in identity_conflicts(fs, municipal_facilities):
+        add('facility', fid, 'municipal record may refer to another facility; identity review required')
     seen=set()
     for e in es:
         eid=e.get('id'); f=fmap.get(e.get('facility_id'))
@@ -143,6 +157,10 @@ def validate(data: dict) -> list[dict]:
             or f.get('listing_url','').startswith(ASSOCIATION_BASE+'/'))
         if source.get('listing_basis')==ASSOCIATION_BASIS or f.get('listing_basis')==ASSOCIATION_BASIS or e.get('reading_source_kind')=='association' or association_provenance:
             for reason in association_problems(f,e,source):add('facility',f.get('id'),reason)
+        if (f.get('id') in municipal_facilities or e.get('listing_basis') == MUNICIPAL_BASIS
+                or e.get('reading_source_kind') == MUNICIPAL_READING):
+            for reason in municipal_problems(f, e, source):
+                add('facility', f.get('id'), reason)
         location=f.get('location_supplement')
         if isinstance(location,dict) and location.get('applied') and location.get('supplement_kind')=='hyogo_cultural_building_location':
             from njd.hyogo_building_location import building_entry_problems
@@ -171,7 +189,7 @@ def validate(data: dict) -> list[dict]:
             human_only=review_valid and any(o.get('basis')=='user_confirmation' and o.get('reading')==e.get('reading') and o.get('surface')==e.get('surface') for o in e['human_review']['outputs'])
             if not _url(e.get('reading_url')) and not human_only: add('entry',eid,'missing/invalid reading URL')
             if not e.get('evidence'): add('entry',eid,'missing evidence')
-            if not e.get('reading_source_kind') in ('agency','shrine_official','reference','user_review','encyclopedia','association'): add('entry',eid,'invalid reading source kind')
+            if not e.get('reading_source_kind') in ('agency','shrine_official','reference','user_review','encyclopedia','association',MUNICIPAL_READING): add('entry',eid,'invalid reading source kind')
             if e.get('reading_source_kind')=='agency' and e.get('reading_url')!=f.get('listing_url'):
                 add('entry',eid,'agency reading URL differs from listing')
             try:
@@ -179,7 +197,7 @@ def validate(data: dict) -> list[dict]:
                 if e.get('reading_source_kind')=='user_review':
                     if not review_valid:raise ValueError('human review no longer matches')
                     raw=e['reading']
-                elif e.get('reading_source_kind') in ('agency','encyclopedia','association'):
+                elif e.get('reading_source_kind') in ('agency','encyclopedia','association',MUNICIPAL_READING):
                     raw=e.get('reading_raw','')
                 elif e.get('reading_source_kind')=='reference':
                     if not correction_valid or correction.get('changes',{}).get('reading')!=e.get('reading'):raise ValueError('reference correction not verified')

@@ -138,6 +138,7 @@ def prepare_collection(data_dir,key,data,*,reviewed_curated=False):
 def save_collection(data_dir,key,data,*,reviewed_curated=False):
     """Save authoritative source facts; caches and work history live elsewhere."""
     from njd.canonical import is_canonical, update_repository
+    from njd.municipal_sources import BASIS as MUNICIPAL_BASIS
     if is_canonical(data_dir):
         def change(legacy):
             ensure_public_metadata(data)
@@ -166,8 +167,13 @@ def save_collection(data_dir,key,data,*,reviewed_curated=False):
             manifest=legacy.setdefault('manifest.json',dict(schema_version=1,prefectures={}))
             code=result['collection']['prefecture_code']
             state=manifest['prefectures'].get(code,default_states()[code])
-            manifest['prefectures'][code]=dict(state,source_key=key,status=collection_status(result),
-                reason='saved explicit source fields; see source authority and coverage')
+            municipal = result['collection'].get('listing_basis') == MUNICIPAL_BASIS
+            sibling_source = municipal and any(name.startswith('sources/') and name != filename
+                                              and source['collection']['prefecture_code'] == code
+                                              for name, source in legacy.items())
+            if not municipal or (state['status'] == 'not_collected' and not sibling_source):
+                manifest['prefectures'][code]=dict(state,source_key=key,status=collection_status(result),
+                    reason='saved explicit source fields; see source authority and coverage')
             return result
         return update_repository(data_dir,change)
     result=prepare_collection(data_dir,key,data,reviewed_curated=reviewed_curated)
@@ -178,6 +184,7 @@ def save_collection(data_dir,key,data,*,reviewed_curated=False):
 def merge_collections(data_dir,*,states=None):
     """Merge repository canonical source files entirely offline, in memory."""
     from njd.canonical import is_canonical, export_legacy, _merged_raw
+    from njd.municipal_sources import REFERENCE_BASES
     if is_canonical(data_dir):
         return _merged_raw(export_legacy(data_dir))
     data_dir=Path(data_dir); facilities=[]; entries=[]; sources={}
@@ -197,7 +204,7 @@ def merge_collections(data_dir,*,states=None):
     for key,source in sources.items():
         code=source['prefecture_code']
         if states[code]['status']=='not_collected':
-            reference_only=source.get('listing_basis') in ('wikipedia_reference','association_reference')
+            reference_only=source.get('listing_basis') in REFERENCE_BASES
             states[code]=dict(states[code],status='collected_reference' if reference_only else 'collected',
                 reason=('saved reference-only records; agency publication not asserted' if reference_only
                     else 'saved official listing records; coverage stated per source'),source_key=key)
@@ -208,7 +215,7 @@ def merge_collections(data_dir,*,states=None):
         source_rows_observed=sum(s.get('source_rows_observed',0) for s in sources.values()),
         selected_rows=len(facilities),
         coverage=('observed agency listings and user-authorized reference-only records; see source basis and prefecture scope'
-            if any(s.get('listing_basis') in ('wikipedia_reference','association_reference') for s in sources.values())
+            if any(s.get('listing_basis') in REFERENCE_BASES for s in sources.values())
             else 'observed official listings only; see each prefecture state and source coverage'),
         redistribution_status='see source-specific conditions'))
     issues=blocking_problems(result)
@@ -293,7 +300,9 @@ def run_collections(data_dir,registry,keys,*,offline=False,refresh=False,limit=N
 
 
 def collection_status(data):
+    from njd.municipal_sources import BASIS as MUNICIPAL_BASIS
     source=data['collection']
     if source.get('authority_status') in ('pending','unconfirmed'):return 'authority_pending'
+    if source.get('listing_basis') == MUNICIPAL_BASIS:return 'collected_reference'
     if _partial_scope(source):return 'partial'
     return 'collected'

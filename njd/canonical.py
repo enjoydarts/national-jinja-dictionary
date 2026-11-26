@@ -192,6 +192,7 @@ def export_legacy(root):
 
 
 def _merged_raw(legacy):
+    from njd.municipal_sources import REFERENCE_BASES
     from njd.nationwide import default_states, ensure_public_metadata
     from njd.validation import blocking_problems
     sources = {}; facilities = []; entries = []
@@ -210,7 +211,7 @@ def _merged_raw(legacy):
     for key, source in sources.items():
         code = source['prefecture_code']
         if states[code]['status'] == 'not_collected':
-            reference = source.get('listing_basis') in ('wikipedia_reference', 'association_reference')
+            reference = source.get('listing_basis') in REFERENCE_BASES
             states[code] = dict(states[code], status='collected_reference' if reference else 'collected',
                 reason='saved reference-only records; agency publication not asserted' if reference
                     else 'saved official listing records; coverage stated per source', source_key=key)
@@ -221,7 +222,7 @@ def _merged_raw(legacy):
         source_rows_observed=sum(s.get('source_rows_observed', 0) for s in sources.values()),
         selected_rows=len(facilities),
         coverage=('observed agency listings and user-authorized reference-only records; see source basis and prefecture scope'
-            if any(s.get('listing_basis') in ('wikipedia_reference', 'association_reference') for s in sources.values())
+            if any(s.get('listing_basis') in REFERENCE_BASES for s in sources.values())
             else 'observed official listings only; see each prefecture state and source coverage'),
         redistribution_status='see source-specific conditions'))
 
