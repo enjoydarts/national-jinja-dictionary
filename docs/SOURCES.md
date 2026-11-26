@@ -996,6 +996,12 @@ Geofabrikの11月24日版の北海道・中国地方も、同名かつ明示か�
 
 下吉田5178の福地八幡社は、国指定文化財の読みが確認できる上吉田5558の同名社と別の所在地です。浅間神社と子之神社の候補も、文化財所在地と神社庁の原欄を照合する余地があるため保留しました。山梨県2件の読みを補完し、全国の保留は**9,345 → 9,343登録**です。[富士吉田市の国指定文化財](https://www.city.fujiyoshida.yamanashi.jp/page/1096.html)
 
+### 山梨市・甲斐市と滋賀3市の公開資料照合（2026-11-26）
+
+山梨市43登録と甲斐市26登録を地域計画4点242頁で照合し、名称の候補24登録を抽出しました。個別紹介で全文かなと地番が一致した岩森3300の諏訪神社と一町田中1153の稲荷社を補完しました。岩森は甲斐市の避難場所案内でも同地番の諏訪神社境内とかなを確認しました。稲荷社は神社庁の個別資料と山梨市の田安陣屋跡案内を照合しました。全国の保留は**9,343 → 9,341登録**です。[岩森の諏訪神社](https://shrine.mobi/area/koshinetsu/yamanashi/kai-shi/5256)・[甲斐市の避難場所案内](https://www.kai-iju.jp/spotsearch/789)・[一町田中の稲荷社](https://shrine.mobi/area/koshinetsu/yamanashi/yamanashi-shi/4797)・[山梨市の田安陣屋跡案内](https://www.city.yamanashi.yamanashi.jp/site/cultural-assets/1677.html)
+
+滋賀県は高島83・甲賀65・守山24の計172登録を、市の計画・付録17点467頁と文化庁公開の高島市概要4頁で照合しました。荒見町404の天神社は、市掲載冊子の原画像で「天」にルビがあることと鎮座地を確認し、全文かなは保留しました。今浜町146の樹下神社は市資料と神社庁の読みが異なり、両方の原記載を調査記録に残しました。今回の滋賀県の補完は0登録です。[高島市の計画](https://www.city.takashima.lg.jp/soshiki/kyoikusomubu/bunkazaika/1/1/2234.html)・[甲賀市の計画](https://www.city.koka.lg.jp/15167.htm)・[守山市の計画](https://www.city.moriyama.lg.jp/kanko_event_manabi/bunka_bunkazai/1002772/1002798.html)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
