@@ -1006,6 +1006,12 @@ Geofabrikの11月24日版の北海道・中国地方も、同名かつ明示か�
 
 住居表示対照表の旧新・新旧両方の原画像で、子之神社の小明見3352と小明見五丁目4番17号の対応を確認しました。文化財資料は小明見5-3352にある境内のウワミズザクラを紹介し、かな表記に社名の「ねのかみしゃ」を含みます。両資料と神社庁の住所原欄を記録して読みを補完しました。対照表からは同市の太田神社・白鳥社・山之神社2社の旧地番の候補も得られ、読みは引き続き保留です。全国の保留は**9,341 → 9,340登録**です。[富士吉田市の住居表示対照表](https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/3948.pdf)・[富士吉田市指定天然記念物](https://www.city.fujiyoshida.yamanashi.jp/page/1107.html)
 
+### 甲府・北杜と滋賀4市の公開資料照合（2026-11-26）
+
+甲府市76・北杜市104の保留登録を対象に、計画と付録8点472頁のうち文字層のある342頁を照合しました。笠屋神社は個別紹介で神社庁原欄と同じ徳行2004と全文かなを確認しました。甲府市計画付録と避難場所一覧で現住所の徳行5丁目1-1を確認し、市の付録と神社庁の同一番号1065で対応づけました。北杜市浅尾の三嶋神社は、祭礼資料と地番を確認し、原名の全文かなは保留しました。全国の保留は**9,340 → 9,339登録**です。[甲府市計画付録](https://www.city.kofu.lg.jp/documents/31992/tiikikeikaku8huroku.pdf#page=66)・[笠屋神社の個別紹介](https://shrine.mobi/area/koshinetsu/yamanashi/kofu-shi/4736)・[北杜市の文化財計画](https://www.city.hokuto.yamanashi.jp/docs/33038.html)
+
+滋賀県の東近江118・草津18・栗東8・野洲21の計165登録を、公開計画と付録22点696頁の文字層および269頁のOCRで照合しました。野洲の新川神社は計画原画像で「にいかわじんじゃ」を確認し、計画の町名と神社庁の地番の対応は保留しました。東近江の乎加神社は市の解説で「おかじんじゃ」を確認し、統計書と国の文化財登録の所在地表記も記録しました。今回の滋賀県の補完は0登録です。[東近江市の計画](https://www.city.higashiomi.shiga.jp/bunka_sports_shougaigakushu/rekishi_bunka/1003140/1003134.html)・[草津市の計画](https://www.city.kusatsu.shiga.jp/bunka/rekishi/keikaku/bunkazai07-17.html)・[栗東市の計画](https://www.city.ritto.lg.jp/soshiki/kyoiku/sports_bunka/bunkazai/11465.html)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
