@@ -8692,12 +8692,168 @@
           "surface": "牛尾神社"
         },
         {
-          "checked_at": "2026-11-08T14:35:08.938646+00:00",
+          "checked_at": "2026-11-26T11:10:36.954074+00:00",
           "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=須賀神社; 掲載読み=; 所在地=小城郡小城町松尾３５９４",
           "facility_id": "74c28511-1a5e-56b0-bc1f-6bdbf7f512a0",
           "fetched_at": "2026-11-08T14:35:08.938646+00:00",
           "id": "9691d045-9042-5939-821e-875c0af1a179",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すがじんじゃ"
+              },
+              "expected_source_hash": "738b0e3a3c5261de4a35c28e8878dd541b978eacc204e87ef9b05f2a0597fd6f",
+              "facility_id": "74c28511-1a5e-56b0-bc1f-6bdbf7f512a0",
+              "identity_match": {
+                "agency_address": "小城郡小城町松尾３５９４",
+                "agency_name": "須賀神社",
+                "reference_address": "佐賀県小城市小城町松尾3594",
+                "reference_name": "須賀神社"
+              },
+              "original": {
+                "address": "小城郡小城町松尾３５９４",
+                "listing_url": "https://saga-jinjacho.jp/%e9%a0%88%e8%b3%80%e7%a5%9e%e7%a4%be/",
+                "name_raw": "須賀神社",
+                "reading_raw": ""
+              },
+              "reason": "日本語版Wikipediaの実取得版108318687の同一記事に須賀神社の全文かな・松尾3594。市の環境基本計画も同じ全文かなで、神社庁の鎮座地と国税庁事務所所在地が3594で一致する。市の広報は駐車場の住所として原文を保持。旧小城郡と現小城市の対応は佐賀県公表の住所表示例で照合した。",
+              "references": [
+                {
+                  "address_identity_proof": {
+                    "change_reference": {
+                      "checked_at": "2026-11-26T10:34:28.107006+00:00",
+                      "current_example_raw": "小城市小城町畑田○○番地",
+                      "effective_date": "2005-03-01",
+                      "fetched_at": "2026-11-26T10:34:28.107006+00:00",
+                      "former_example_raw": "小城郡小城町大字畑田○○番地",
+                      "locator": "PDF1頁、小城市（平成17年3月1日合併）の表示例",
+                      "page_hash": "19ef4a4d2ff1ece43a6e2bb8ef9822b1766f77367cf9528c5cfc47dcac100308",
+                      "pdf_page": 1,
+                      "publisher": "佐賀県",
+                      "source_publisher": "佐賀県",
+                      "url": "https://www.pref.saga.lg.jp/kiji00329259/3_29259_6_chouazamei.pdf"
+                    },
+                    "entry_id": "9691d045-9042-5939-821e-875c0af1a179",
+                    "expected_source_hash": "738b0e3a3c5261de4a35c28e8878dd541b978eacc204e87ef9b05f2a0597fd6f",
+                    "facility_id": "74c28511-1a5e-56b0-bc1f-6bdbf7f512a0",
+                    "kind": "documented_municipality_prefix_change",
+                    "listing_address_raw": "小城郡小城町松尾３５９４",
+                    "reference_address_raw": "佐賀県小城市小城町松尾3594",
+                    "reference_page_hash": "bfb8cbbf7c3f2781f54ff2ee8daaa5007ca0cd3e83dc8650b5d9e342ca7ac793",
+                    "reference_url": "https://ja.wikipedia.org/wiki/%E9%A0%88%E8%B3%80%E7%A5%9E%E7%A4%BE_(%E5%B0%8F%E5%9F%8E%E5%B8%82)"
+                  },
+                  "address_raw": "佐賀県小城市小城町松尾3594",
+                  "attribution": "日本語版Wikipedia「須賀神社 (小城市)」固定版108318687。CC BY-SA 4.0に基づく該当事実の確認。",
+                  "checked_at": "2026-11-26T11:10:36.954074+00:00",
+                  "excerpt": "須賀神社（すがじんじゃ） / 佐賀県小城市小城町松尾3594",
+                  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.ja",
+                  "locator": ".mw-parser-output section[data-mw-section-id=\"0\"] p[1] b; table.infobox tr[th=\"所在地\"] td; mw.config.wgRevisionId",
+                  "name_raw": "須賀神社",
+                  "page_hash": "bfb8cbbf7c3f2781f54ff2ee8daaa5007ca0cd3e83dc8650b5d9e342ca7ac793",
+                  "permalink": "https://ja.wikipedia.org/w/index.php?title=%E9%A0%88%E8%B3%80%E7%A5%9E%E7%A4%BE+%28%E5%B0%8F%E5%9F%8E%E5%B8%82%29&oldid=108318687",
+                  "publisher": "日本語版Wikipedia",
+                  "reading_raw": "すがじんじゃ",
+                  "reading_scope": "full_name",
+                  "revision_id": 108318687,
+                  "source_kind": "encyclopedia",
+                  "title": "須賀神社 (小城市)",
+                  "url": "https://ja.wikipedia.org/wiki/%E9%A0%88%E8%B3%80%E7%A5%9E%E7%A4%BE_(%E5%B0%8F%E5%9F%8E%E5%B8%82)",
+                  "verification_method": "mechanical exact bold full-name and single literal kana parenthetical; single rendered infobox name/address; correction_problems identity binding"
+                },
+                {
+                  "checked_at": "2026-11-26T10:46:47.561775+00:00",
+                  "excerpt": "▼須賀神社（すがじんじゃ）での史跡探訪会",
+                  "locator": "PDF41頁13行／印刷38頁、第4-2節の写真説明",
+                  "name_raw": "須賀神社",
+                  "page_hash": "8dcbda56aacc41fdabbca30cd6562fea138657b6fd7ec153e5a6f8a7ada9fa38",
+                  "pdf_page": 41,
+                  "printed_page": 38,
+                  "publication_version_raw": "第2次小城市環境基本計画",
+                  "publisher": "小城市",
+                  "reading_raw": "すがじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T10:58:57.148050+00:00",
+                    "locator": "4. 著作権について",
+                    "page_hash": "d8f230946a291dde38b85feb2032503f85ac378ee4db8fedce51d93048309c93",
+                    "publisher": "小城市",
+                    "summary": "著作権法で認められた私的使用や引用の範囲と無断転載・複製・翻訳を区別。事実項目・該当する短い証拠箇所のみ記録。",
+                    "url": "https://www.city.ogi.lg.jp/main/204.html"
+                  },
+                  "source_kind": "municipal_environmental_plan",
+                  "title": "第2次小城市環境基本計画",
+                  "url": "https://www.city.ogi.lg.jp/site_files/file/2022/202211/p1ggrj9t3o25436e4c135e1qbt5.pdf"
+                },
+                {
+                  "address_raw": "小城郡小城町松尾３５９４",
+                  "address_role": "shrine_location",
+                  "checked_at": "2026-11-26T10:32:56.307854+00:00",
+                  "excerpt": "須賀神社 ／ 小城郡小城町松尾３５９４",
+                  "locator": "神社名見出し・鎮座地欄",
+                  "name_raw": "須賀神社",
+                  "page_hash": "090fe612d828cf1bfdf3fa1d64a5096a6ef7f1934b4bf7226e9f86922e41380d",
+                  "publisher": "佐賀県神社庁",
+                  "reading_printed": false,
+                  "source_kind": "official_agency",
+                  "title": "須賀神社 - 佐賀県神社庁",
+                  "url": "https://saga-jinjacho.jp/%E9%A0%88%E8%B3%80%E7%A5%9E%E7%A4%BE/"
+                },
+                {
+                  "address_raw": "佐賀県小城市小城町松尾３５９４番地",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-26T10:34:23.817976+00:00",
+                  "corporate_number": "9300005002168",
+                  "excerpt": "須賀神社 ／ 佐賀県小城市小城町松尾３５９４番地",
+                  "locator": "最新情報の正式名と主たる事務所所在地・最終更新年月日",
+                  "name_raw": "須賀神社",
+                  "page_hash": "67039aa2cedd46bb94a14e170f7496d48800ce6b90966fa4f5f01daeacb09362",
+                  "publisher": "国税庁",
+                  "reading_printed": false,
+                  "registry_update_raw": "平成27年11月27日",
+                  "source_kind": "national_tax_agency_corporate_registry",
+                  "title": "国税庁法人番号公表サイト・須賀神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9300005002168"
+                },
+                {
+                  "address_raw": "小城町松尾3594番地",
+                  "address_role": "shrine_parking_lot",
+                  "checked_at": "2026-11-26T10:46:52.116019+00:00",
+                  "excerpt": "●集合場所 須賀神社 駐車場（小城町松尾3594番地）",
+                  "locator": "PDF22頁37行、ウォーキング教室の集合場所",
+                  "name_raw": "須賀神社",
+                  "page_hash": "e813113cd0a75c8ca914b6d6028c9a31785e47ea11887441159c3c09495334dd",
+                  "pdf_page": 22,
+                  "publication_version_raw": "2021年10月号 No.205",
+                  "publisher": "小城市",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T10:58:57.148050+00:00",
+                    "locator": "4. 著作権について",
+                    "page_hash": "d8f230946a291dde38b85feb2032503f85ac378ee4db8fedce51d93048309c93",
+                    "publisher": "小城市",
+                    "summary": "著作権法で認められた私的使用や引用の範囲と無断転載・複製・翻訳を区別。事実項目・該当する短い証拠箇所のみ記録。",
+                    "url": "https://www.city.ogi.lg.jp/main/204.html"
+                  },
+                  "source_kind": "municipal_newsletter_parking_observation",
+                  "title": "小城市広報 2021年10月号 No.205",
+                  "url": "https://www.city.ogi.lg.jp/kouhou/web_shihou/pdf/images/2021nen/no205/all-205.pdf"
+                },
+                {
+                  "address_role": "shrine_venue_locality",
+                  "checked_at": "2026-11-26T10:59:03.370536+00:00",
+                  "excerpt": "所在地：小城市小城町松尾 須賀神社",
+                  "locality_raw": "小城市小城町松尾",
+                  "locator": "小城祇園の山挽行事、所在地欄冒頭",
+                  "name_raw": "須賀神社",
+                  "page_hash": "3e3769aaf2e828298af4165ada8f760820c223a8cae79d6b8a3283fa04fdb349",
+                  "publisher": "小城市",
+                  "source_kind": "municipal_cultural_property_inventory",
+                  "title": "小城市の文化財（無形民俗文化財）",
+                  "url": "https://www.city.ogi.lg.jp/main/35227.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://saga-jinjacho.jp/%e9%a0%88%e8%b3%80%e7%a5%9e%e7%a4%be/",
           "name_raw": "須賀神社",
           "normalization": [
@@ -8705,11 +8861,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "f10bdfd66e5fd309b0cb7f45ce7e9ebaf75b0e4b365895ca607be7d5e7b77a99",
-          "reading": "",
+          "reading": "すがじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://saga-jinjacho.jp/%e9%a0%88%e8%b3%80%e7%a5%9e%e7%a4%be/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://ja.wikipedia.org/wiki/%E9%A0%88%E8%B3%80%E7%A5%9E%E7%A4%BE_(%E5%B0%8F%E5%9F%8E%E5%B8%82)",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -8934,6 +9090,20 @@
             "prefecture_code": "41",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すがじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すがじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "須賀神社",
             "wikipedia_article_refs": [
@@ -8973,7 +9143,7 @@
             "status": "pending",
             "surface": "須賀神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "須賀神社"
         },
         {

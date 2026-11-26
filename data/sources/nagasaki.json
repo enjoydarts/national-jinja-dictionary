@@ -176841,12 +176841,51 @@
           "surface": "稲荷神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:38.747733+00:00",
+          "checked_at": "2026-11-26T11:14:11.199062+00:00",
           "evidence": "table[1] tr[16]: 名称=海神社; 掲載読み=; 所在地=島原市中原町乙1558番地",
           "facility_id": "33adbce6-df24-565f-9b77-719e2f0f7116",
           "fetched_at": "2026-11-10T12:26:38.747733+00:00",
           "id": "cfb11616-9911-59b1-b4d5-cc0b658a59f8",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "わたつみじんじゃ"
+              },
+              "expected_source_hash": "5eac745f5c8123e183188110296056af20aae86195a39c23af2bacc474cbc291",
+              "facility_id": "33adbce6-df24-565f-9b77-719e2f0f7116",
+              "identity_match": {
+                "agency_address": "島原市中原町乙1558番地",
+                "agency_name": "海神社",
+                "reference_address": "島原市中原町乙1558",
+                "reference_name": "海神社"
+              },
+              "original": {
+                "address": "島原市中原町乙1558番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
+                "name_raw": "海神社",
+                "reading_raw": ""
+              },
+              "reason": "島原の現地記事の主見出しで海神社に付された全文かなと、直後の同社所在地欄の中原町乙1558が長崎県神社庁の同名・全地番と対応する。市計画の資料編が示す「八大様」は同記事の社殿内神額の八大龍王と符合する通称の手がかりとして扱う。",
+              "references": [
+                {
+                  "address_raw": "島原市中原町乙1558",
+                  "checked_at": "2026-11-26T11:14:11.199062+00:00",
+                  "excerpt": "海神社（わたつみじんじゃ） ／ 島原市中原町乙1558 海神社",
+                  "locator": "h2#entry258 の社名と括弧内の全文かな、直下の同社番地の小見出し",
+                  "name_raw": "海神社",
+                  "page_hash": "847b63d822c09a364b1a17a416b659585dbca2e23400186ec8bbf432bf8ecff7",
+                  "reading_raw": "わたつみじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "independent_secondary_reference",
+                  "source_publisher": "しまばら ふるさと日記",
+                  "terms_url": "https://help.fc2.com/blog/tos/ja/",
+                  "title": "島原市 海神社（わたつみじんじゃ）令和七年",
+                  "url": "http://shimabaracity.blog130.fc2.com/blog-entry-258.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
           "name_raw": "海神社",
           "normalization": [
@@ -176854,11 +176893,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799",
-          "reading": "",
+          "reading": "わたつみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/shimabara.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "http://shimabaracity.blog130.fc2.com/blog-entry-258.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -176963,6 +177002,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "わたつみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "わたつみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "海神社",
             "wikipedia_article_refs": [],
@@ -176993,7 +177046,7 @@
             "status": "pending",
             "surface": "海神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "海神社"
         },
         {

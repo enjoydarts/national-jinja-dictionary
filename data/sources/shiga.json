@@ -225930,12 +225930,68 @@
           "surface": "日吉神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:17.441381+00:00",
+          "checked_at": "2026-11-26T11:13:51.519817+00:00",
           "evidence": "〔東浅井〕 岡本神社 〒5290304 長浜市小谷丁野町",
           "facility_id": "69bd399e-821a-5cc3-bc2b-91cc469888cf",
           "fetched_at": "2026-11-08T14:31:17.441381+00:00",
           "id": "fa9a6667-9daa-5051-b1e6-d2a992a9dec4",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おかもとじんじゃ"
+              },
+              "expected_source_hash": "6f7c5363bff58f9aa0c1f3752014d850930542104b2c13a599516dc75f94819f",
+              "facility_id": "69bd399e-821a-5cc3-bc2b-91cc469888cf",
+              "identity_match": {
+                "agency_address": "長浜市小谷丁野町",
+                "agency_detail_address": "滋賀県長浜市小谷丁野町810",
+                "agency_name": "岡本神社",
+                "reference_address": "長浜市小谷丁野町810",
+                "reference_name": "岡本神社"
+              },
+              "original": {
+                "address": "長浜市小谷丁野町",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
+                "name_raw": "岡本神社",
+                "reading_raw": ""
+              },
+              "reason": "観光協会ページの主見出しとかな欄で括弧の前にある同じ社名の全文かなを確認し、県神社庁の同名詳細ID 1134と小谷丁野町810を照合した。括弧内の観音堂名と後続の文化財名は社名の読みから区別した。",
+              "references": [
+                {
+                  "address_raw": "長浜市小谷丁野町810",
+                  "checked_at": "2026-11-26T11:13:51.519817+00:00",
+                  "displayed_kana_raw": "おかもとじんじゃ（おだにようのかんのんどう）じゅういちめんかんのんざぞう",
+                  "displayed_title_raw": "岡本神社(小谷丁野観音堂)　十一面観音坐像",
+                  "excerpt": "岡本神社(小谷丁野観音堂)　十一面観音坐像 ／ おかもとじんじゃ（おだにようのかんのんどう）じゅういちめんかんのんざぞう ／ 所在地 長浜市小谷丁野町810",
+                  "locator": "主見出しと直前のかな欄、基本情報の所在地欄。最初の社名と次の括弧の境界を対応。",
+                  "name_raw": "岡本神社",
+                  "page_hash": "6093396a9a1a057d6389009e4844e10c58f11e1075087f0bd738d6fd88e54db2",
+                  "policy_url": "https://kitabiwako.jp/linkbanner",
+                  "reading_raw": "おかもとじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association",
+                  "source_publisher": "公益社団法人長浜米原観光協会",
+                  "title": "岡本神社(小谷丁野観音堂)　十一面観音坐像 | 長浜・米原・奥びわ湖を楽しむ観光情報サイト",
+                  "url": "https://kitabiwako.jp/spot/spot_814"
+                },
+                {
+                  "address_raw": "滋賀県長浜市小谷丁野町810",
+                  "checked_at": "2026-11-26T11:13:54.601461+00:00",
+                  "excerpt": "岡本神社（オカモト） ／ 鎮座地 滋賀県長浜市小谷丁野町810",
+                  "locator": "神社ID 1134の div.j_title と鎮座地欄",
+                  "name_raw": "岡本神社",
+                  "page_hash": "5cb4a467aef56855786306351caa96010f1b778978c2cc8f8f4fbf662871569c",
+                  "reading_raw": "オカモト",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "source_publisher": "滋賀県神社庁",
+                  "title": "神社紹介 > 滋賀県の神社 > 滋賀県神社庁",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=1134"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
           "name_raw": "岡本神社",
           "normalization": [
@@ -225943,11 +225999,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6ff9933fd195b91fa7b010e617d44de3b5c8c1e6fe61507b04f0c3b20855152d",
-          "reading": "",
+          "reading": "おかもとじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=12",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kitabiwako.jp/spot/spot_814",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -226069,6 +226125,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おかもとじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おかもとじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "岡本神社",
             "wikipedia_article_refs": [],
@@ -226099,7 +226169,7 @@
             "status": "pending",
             "surface": "岡本神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "岡本神社"
         },
         {
