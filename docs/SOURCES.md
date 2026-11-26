@@ -896,6 +896,18 @@ Wikidataで社名・全地番が対応し、索引にかながある204項目の
 
 相杜神社、健御名方神社、新保豊田神社、新野神社は刊行物・地図資料に別の読みがあり、保留を継続します。飯山市坂井の伊勢社も、県名簿と地図資料の地番が一致しないため保留です。照合を終えた26登録を補完し、全国の保留は**9,410 → 9,384登録**です。
 
+### 山梨の街道案内と現行地番、中部・近畿の地図照合（2026-11-26）
+
+山梨は県の街道案内の個別見出しを、神社庁の鎮座地と令和7年末の県宗教法人名簿に照合し、大宮五所大神、吾妻神社、姫宮神社、鶴川神社、走湯神社、篠原神社、稲村神社の7登録を補完しました。大宮五所大神は山梨市が下栗原1番地と記す安永元年の芝居絵馬を照合しました。走湯神社は笛吹市下岩下636と山梨市上岩下1494を区別し、稲村神社は吉久保1056の社を確認しました。田原神社は「たはらじんじゃ」と「たわらじんじゃ」の違いが残り、保留を続けます。[県の街道案内](https://rekishinomichi-yamanashi.jp/ja/about/)・[山梨市の大宮五所大神の絵馬](https://www.city.yamanashi.yamanashi.jp/soshiki/25/1657.html)・[山梨県宗教法人名簿](https://www.pref.yamanashi.jp/gyousei-kk/syukyohojin.html)
+
+国立国会図書館の『甲斐国志』下巻は690コマの公開OCRを照合し、111コマに227保留登録の社名候補がありました。都留市立図書館の『都留市 社記・寺記』ではPDF16点60頁を文字認識で調べ、七社神社と戸沢の金山神社は原図の鎮座地を確認しました。この2社では全文かなが見つからず保留です。[国立国会図書館『甲斐国志』下巻](https://dl.ndl.go.jp/info:ndljp/pid/764917)・[都留市立図書館『都留市 社記・寺記』](https://www.lib.city.tsuru.yamanashi.jp/contents/shaji/index.htm)
+
+長野は町村誌の旧村別索引137組、保留77登録を再照合し、7登録を補完しました。泰阜村の大山祇社は「おおやまくにつかみしゃ」、飯田市千代の大山祇社は「おおやまつみしゃ」と、旧村別索引の全文かなをそれぞれ確認しました。前回採用した26登録も旧村別索引19ページの本文に照合しました。滋賀は長浜市高月町高野297の高野神社を、高知は土佐清水市下ノ加江3135の伊豆田神社を補完しました。伊豆田神社は現地取材の「いずたじんじゃ」を採用し、資料の異読も記録しました。[長野県町村誌の公開索引](https://adeac.jp/shinshu-chiiki/top/topg/nagano-pref-mun-mag-and-historic-sites/index.html)・[長浜米原観光協会の高野神社](https://kitabiwako.jp/spot/spot_919?slug=shrine-temple)・[土佐清水市の伊豆田神社社叢](https://www.city.tosashimizu.kochi.jp/kanko/g05_izutajinjya_syaso.html)・[幡多広域観光協議会の記事](https://locally.matcha-jp.com/jp/26914)
+
+Geofabrikの11月24日版の中部・近畿の公開地図データで、保留登録と同名でかな欄がある地物はそれぞれ71件、81件でした。施設を特定するには所在地と別資料の確認が必要で、今回の登録には上記の個別資料を使いました。地図データの提供はOpenStreetMap contributors（ODbL 1.0）、抽出・集計は本プロジェクトです。[中部の配布ページ](https://download.geofabrik.de/asia/japan/chubu/)・[近畿の配布ページ](https://download.geofabrik.de/asia/japan/kansai/)・[OpenStreetMapのライセンス](https://www.openstreetmap.org/copyright)
+
+4県で合計16登録を補完し、全国の保留は**9,384 → 9,368登録**です。
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
