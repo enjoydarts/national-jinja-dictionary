@@ -85344,12 +85344,83 @@
           "surface": "栂森神社"
         },
         {
-          "checked_at": "2026-11-09T02:02:36.425851+00:00",
+          "checked_at": "2026-11-26T04:33:21.950833+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/2afe836f-761e-49d9-90fb-0801279aed10: 名称=佐婆為神社; 掲載読み=; 所在地=高知県吾川郡仁淀川町川渡自7054番地.至7055番地",
           "facility_id": "cf143390-28d0-5b3a-b9fa-e7f7299778ab",
           "fetched_at": "2026-11-09T02:02:36.425851+00:00",
           "id": "df9a9ba9-c9cd-578a-8dbb-2aa524231f53",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "さばえじんじゃ"
+              },
+              "expected_source_hash": "08475a34271d4070d6368b8fb9941061b9bef476ed536049b9d894816fd5c352",
+              "facility_id": "cf143390-28d0-5b3a-b9fa-e7f7299778ab",
+              "identity_match": {
+                "agency_address": "高知県吾川郡仁淀川町川渡自7054番地.至7055番地",
+                "agency_name": "佐婆為神社",
+                "reference_address": "高知県吾川郡仁淀川町川渡自7054至7055",
+                "reference_name": "佐婆為神社"
+              },
+              "original": {
+                "address": "高知県吾川郡仁淀川町川渡自7054番地.至7055番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=39",
+                "name_raw": "佐婆為神社",
+                "reading_raw": ""
+              },
+              "reason": "観光協会の施設資料で全文かなと自7054至7055を確認。神社庁原住所および国税庁の同名法人所在地が町域と地番両端で一致する。地番範囲の単位語と区切りだけを比較用にそろえ、原表記を保持した。高知市春野町東諸木の同名社は別施設。",
+              "references": [
+                {
+                  "address_raw": "高知県吾川郡仁淀川町川渡自7054至7055",
+                  "checked_at": "2026-11-26T04:33:21.950833+00:00",
+                  "excerpt": "佐婆為神社 ／ 店舗よみ さばえじんじゃ ／ 住所 高知県吾川郡仁淀川町川渡自7054至7055",
+                  "locator": "本文の谷山地区の氏神の説明。基本情報の店舗よみ・住所欄",
+                  "name_raw": "佐婆為神社",
+                  "page_hash": "959764490d3573bd5e3bfc622eaf93d0980bfd528775b85b27e638a3bfa93269",
+                  "previous_publisher_review": {
+                    "checked_at": "2026-11-25T05:59:51.368719+00:00",
+                    "locator": "運営主体の明記と著作権表示",
+                    "page_hash": "49b3a068542167e8e11e0020798808224020710b4350294b664a74ef8b09ff99",
+                    "url": "https://www.niyodogawa.tv/"
+                  },
+                  "reading_raw": "さばえじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "regional_tourism_association",
+                  "source_publisher": "仁淀川町観光協会",
+                  "title": "佐婆為神社冬の祭礼｜仁淀川町観光ポータルサイト",
+                  "url": "https://www.niyodogawa.tv/enjoy/sightseeing-15225/"
+                },
+                {
+                  "address_raw": "高知県吾川郡仁淀川町川渡自７０５４番地・至７０５５番地",
+                  "address_role": "registered_corporation_location",
+                  "checked_at": "2026-11-26T04:30:24.679419+00:00",
+                  "excerpt": "佐婆為神社 ／ 高知県吾川郡仁淀川町川渡自７０５４番地・至７０５５番地",
+                  "locator": "法人番号9490005003387の最新情報、名称・所在地欄",
+                  "name_raw": "佐婆為神社",
+                  "page_hash": "a60a5eeb952469cf36b85369dca4d659598c2a1974fdad37cd67a016e4d6c8bb",
+                  "published_reading_scope": "absent",
+                  "source_kind": "corporate_number_public_profile",
+                  "source_publisher": "国税庁",
+                  "title": "佐婆為神社の情報｜法人番号公表サイト",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9490005003387"
+                },
+                {
+                  "address_raw": "高知県吾川郡仁淀川町川渡自７０５４番地・至７０５５番地",
+                  "address_role": "registered_corporation_location",
+                  "checked_at": "2026-11-26T04:30:19.199036+00:00",
+                  "excerpt": "佐婆為神社 ／ 高知県吾川郡仁淀川町川渡自７０５４番地・至７０５５番地",
+                  "locator": "法人番号9490005003387の法人基本情報、所在地欄",
+                  "name_raw": "佐婆為神社",
+                  "page_hash": "f7d13461c21ebbd93c5e82cb45604ff2136d4a09b559792cd90d7502ae80a3e6",
+                  "source_kind": "government_corporate_registry_crosscheck",
+                  "source_publisher": "経済産業省",
+                  "title": "佐婆為神社｜Gビズインフォ",
+                  "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=9490005003387"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=39",
           "name_raw": "佐婆為神社",
           "normalization": [
@@ -85357,11 +85428,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "78431aedc807e92b7473117fecf15755990852cf8e8c2aabd1bb0b801cdff2a8",
-          "reading": "",
+          "reading": "さばえじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=39",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.niyodogawa.tv/enjoy/sightseeing-15225/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -85398,6 +85469,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "さばえじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "さばえじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "佐婆為神社",
             "wikipedia_article_refs": [],
@@ -85428,7 +85513,7 @@
             "status": "pending",
             "surface": "佐婆為神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "佐婆為神社"
         },
         {
@@ -157849,12 +157934,128 @@
           "surface": "白皇神社"
         },
         {
-          "checked_at": "2026-11-09T02:05:10.487492+00:00",
+          "checked_at": "2026-11-26T04:31:47.385584+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/f00dfb94-b8d7-41fc-9832-d56500f52a10: 名称=八幡宮; 掲載読み=; 所在地=高知県高岡郡四万十町地吉855番地",
           "facility_id": "44b1335f-6029-5eab-80e9-791d5fc42a77",
           "fetched_at": "2026-11-09T02:05:10.487492+00:00",
           "id": "94c86405-a922-5672-b334-3fefc43ad242",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はちまんぐう"
+              },
+              "expected_source_hash": "a40ec0221b95b312c07caf6725647505a42bdcf2118ed0c9825107f25c8efb79",
+              "facility_id": "44b1335f-6029-5eab-80e9-791d5fc42a77",
+              "identity_match": {
+                "agency_address": "高知県高岡郡四万十町地吉855番地",
+                "agency_name": "八幡宮",
+                "reference_address": "高知県高岡郡四万十町地吉８５５番地",
+                "reference_name": "八幡宮"
+              },
+              "original": {
+                "address": "高知県高岡郡四万十町地吉855番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=83",
+                "name_raw": "八幡宮",
+                "reading_raw": ""
+              },
+              "reason": "地名辞典は八幡山の八幡宮に全文かなを掲載し、奥組集落を明示する。県教育委員会の報告書が同じ奥組の八幡山と境内855番地を一つの記録で結び、県公報とGビズインフォが同名社の855番地を確認する。地名辞典の別欄の椴ノ木の社は区別した。",
+              "references": [
+                {
+                  "address_raw": "高知県高岡郡四万十町地吉８５５番地",
+                  "address_role": "independently_verified_corporation_location",
+                  "checked_at": "2026-11-26T04:31:47.385584+00:00",
+                  "excerpt": "八幡宮/16はちまんぐう/鎮座地：八幡山 ※奥組集落 ／ Gビズインフォの法人所在地：高知県高岡郡四万十町地吉８５５番地",
+                  "locality_confirmation": {
+                    "address_source_hash": "50fb91db8f535bca1af95a267ee3fb077dd5715abf1a7bf907207345692c8e6a",
+                    "address_source_url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5490005004182",
+                    "cultural_report_hash": "531ba1a9a2f44f1db6f0b2b2087f1a71482316d2a82b5942ac00049df688dcac",
+                    "cultural_report_locality_raw": "奥組の八幡山",
+                    "cultural_report_parcel_raw": "四万十町地吉八百五十五番地",
+                    "cultural_report_url": "https://www.pref.kochi.lg.jp/doc/2022062700184/file_contents/file_2022628215151_1.pdf",
+                    "note": "地名辞典には地番の印刷がない。八幡山と奥組を教育委員会報告書の境内調査と照合し、確認済みの法人所在地を照合欄に記す。",
+                    "reading_evidence_locality_raw": "八幡山",
+                    "reading_evidence_settlement_raw": "奥組集落"
+                  },
+                  "locality_raw": "八幡山",
+                  "locality_role": "鎮座地",
+                  "locator": "小見出し「〖神社〗」、八幡宮/16・/25と記事本文「地内には集会所や」段落",
+                  "name_raw": "八幡宮",
+                  "page_hash": "431ac3254635cbdef288c83bcbbeab88eb30e509ccd6c11cc3b855d52da8ff3a",
+                  "parcel_printed": false,
+                  "reading_raw": "はちまんぐう",
+                  "reading_scope": "full_name",
+                  "separate_finding": {
+                    "excerpt": "八幡宮/25はちまんぐう/鎮座地：椴ノ木",
+                    "locality_raw": "椴ノ木",
+                    "name_raw": "八幡宮",
+                    "number_role": "同公開目次の参照番号であり、地番欄はない",
+                    "reading_raw": "はちまんぐう"
+                  },
+                  "settlement_raw": "奥組集落",
+                  "site_privacy_status": "robots disallows",
+                  "site_privacy_url": "https://www.shimanto-chimei.com/j/privacy",
+                  "source_kind": "private_local_toponym_dictionary",
+                  "title": "地吉｜四万十町地名辞典",
+                  "url": "https://www.shimanto-chimei.com/%E3%82%B5%E8%A1%8C-%E3%81%95%E3%81%97%E3%81%99%E3%81%9B%E3%81%9D/%E3%81%97-1/%E5%9C%B0%E5%90%89/"
+                },
+                {
+                  "address_raw": "四万十町地吉八百五十五番地",
+                  "address_role": "shrine_precinct_as_festival_venue",
+                  "body_bytes": 68117202,
+                  "checked_at": "2026-11-25T07:49:52.025068+00:00",
+                  "excerpt": "地吉八幡宮の境内 四万十町地吉八百五十五番地 / 神社は、奥組の八幡山に祀られている。",
+                  "full_reading_printed": false,
+                  "kind": "pdf",
+                  "locality_raw": "奥組の八幡山",
+                  "locator": "PDF267頁（冊子247頁）「四万十町地吉の五ツ鹿踊り」四、実施場所",
+                  "name_raw": "地吉八幡宮",
+                  "page_hash": "531ba1a9a2f44f1db6f0b2b2087f1a71482316d2a82b5942ac00049df688dcac",
+                  "source_kind": "local_education_authority_festival_fieldwork",
+                  "status": 200,
+                  "title": "高知県の民俗芸能 高知県民俗芸能緊急調査報告書",
+                  "url": "https://www.pref.kochi.lg.jp/doc/2022062700184/file_contents/file_2022628215151_1.pdf"
+                },
+                {
+                  "address_raw": "幡多郡十和村地吉855八幡宮境内",
+                  "address_role": "cultural_property_designated_site_within_shrine_precinct",
+                  "checked_at": "2026-11-26T04:31:39.793091+00:00",
+                  "excerpt": "地吉の夫婦スギ / 幡多郡十和村地吉855八幡宮境内 / 所有者 八幡宮",
+                  "full_reading_printed": false,
+                  "locator": "令和5年11月21日 高知県公報 号外第71号 PDF17頁・29「地吉の夫婦スギ」指定地域の地名欄、所有者欄",
+                  "name_raw": "八幡宮",
+                  "page_hash": "7f873522f0fa477316b309b792e767925be87615e2a13da4cd1d152dc3d5901d",
+                  "public_index": {
+                    "checked_at": "2026-11-26T04:31:37.405087+00:00",
+                    "page_hash": "de91e2f443c0b1c3169b85aa9893dd409ab0c5b364ea211a2152b20c7a12f49e",
+                    "url": "https://www.pref.kochi.lg.jp/doc/2023110200076/"
+                  },
+                  "source_kind": "prefectural_gazette",
+                  "terms_reference": {
+                    "checked_at": "2026-11-25T07:49:33.475041+00:00",
+                    "page_hash": "22570a8aeed651fa76b6b877d44550e40542e84df7e616269b9cbbbdc8135696",
+                    "url": "https://www.pref.kochi.lg.jp/reference/policy.html"
+                  },
+                  "title": "高知県公報 令和5年11月21日 号外第71号",
+                  "url": "https://www.pref.kochi.lg.jp/doc/2023110200076/file_contents/g2371.pdf"
+                },
+                {
+                  "address_raw": "高知県高岡郡四万十町地吉８５５番地",
+                  "address_role": "registered_office",
+                  "checked_at": "2026-11-26T04:31:37.377268+00:00",
+                  "corporate_number": "5490005004182",
+                  "excerpt": "八幡宮 ／ 高知県高岡郡四万十町地吉８５５番地",
+                  "full_reading_printed": false,
+                  "locator": "経済産業省Gビズインフォの名称・法人番号・本店所在地欄",
+                  "name_raw": "八幡宮",
+                  "page_hash": "50fb91db8f535bca1af95a267ee3fb077dd5715abf1a7bf907207345692c8e6a",
+                  "source_kind": "government_public_corporation_profiles",
+                  "title": "八幡宮｜Gビズインフォ",
+                  "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5490005004182"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=83",
           "name_raw": "八幡宮",
           "normalization": [
@@ -157862,11 +158063,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9500d0a07e4f8d24f1f6926edb30d5e9f0f102ef5dd74f6ed1eb640d418c26b9",
-          "reading": "",
+          "reading": "はちまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=83",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.shimanto-chimei.com/%E3%82%B5%E8%A1%8C-%E3%81%95%E3%81%97%E3%81%99%E3%81%9B%E3%81%9D/%E3%81%97-1/%E5%9C%B0%E5%90%89/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -158058,6 +158259,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八幡宮",
             "wikipedia_article_refs": [],
@@ -158088,7 +158303,7 @@
             "status": "pending",
             "surface": "八幡宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八幡宮"
         },
         {
