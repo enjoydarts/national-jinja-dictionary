@@ -10321,12 +10321,80 @@
           "surface": "三所神社"
         },
         {
-          "checked_at": "2026-11-08T14:28:18.376106+00:00",
+          "checked_at": "2026-11-26T14:50:47.002399+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「八坂神社」と所在地「福岡市西区元岡26411」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "082e8bf7-8036-5fa8-b34a-08f0a5a9f228",
           "fetched_at": "2026-11-08T14:28:18.376106+00:00",
           "id": "f9c6b41b-5688-53c3-8dd5-bec4ddcbae33",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "やさかじんじゃ"
+              },
+              "expected_source_hash": "98c8a84becaef40cf6430aabea1280b7213d212aea3ca0701f7b452f1a3ad39a",
+              "facility_id": "082e8bf7-8036-5fa8-b34a-08f0a5a9f228",
+              "identity_match": {
+                "agency_address": "福岡市西区元岡26411",
+                "agency_name": "八坂神社",
+                "independent_physical_address": "福岡県福岡市西区元岡2641-1",
+                "reference_address": "福岡県福岡市西区大字元岡２６４１番地１",
+                "reference_name": "八坂神社"
+              },
+              "original": {
+                "address": "福岡市西区元岡26411",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
+                "name_raw": "八坂神社",
+                "reading_raw": ""
+              },
+              "reason": "庁一覧に元岡26411とある。国税庁の同名法人個票に大字元岡２６４１番地１と全文フリガナ、現地訪問記事の同一施設に元岡2641-1と全文かながある。対応をこの社名・町字・枝番に限定し、各資料の原欄を保持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "福岡県福岡市西区大字元岡２６４１番地１",
+                  "address_role": "本店又は主たる事務所",
+                  "attribution": "出典：国税庁法人番号公表サイト。法人名・フリガナ・所在地を照合。",
+                  "checked_at": "2026-11-26T14:50:47.002399+00:00",
+                  "corporate_number_raw": "8290005000661",
+                  "excerpt": "八坂神社 / ヤサカジンジャ / 福岡県福岡市西区大字元岡２６４１番地１",
+                  "locator": "最新情報欄の商号又は名称、フリガナ、本店又は主たる事務所の所在地",
+                  "name_raw": "八坂神社",
+                  "page_hash": "781459a6868db09c58fcf3be54de2b9de2145c0f96e58ef207ae8d857a5b9aaa",
+                  "reading_raw": "ヤサカジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_entity",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト・八坂神社（元岡）",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8290005000661"
+                },
+                {
+                  "address_raw": "福岡県福岡市西区元岡2641-1",
+                  "checked_at": "2026-11-26T14:50:47.110127+00:00",
+                  "excerpt": "八坂神社 / やさかじんじゃ / 福岡県福岡市西区元岡2641-1",
+                  "locator": "記事冒頭の社名、全文かな、直後の所在地行",
+                  "name_raw": "八坂神社",
+                  "page_hash": "9a8119849d2b984b2dfe89bcd99b2b479cdd480e678eb1ba187073743cde91bc",
+                  "reading_raw": "やさかじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "title": "御朱印散歩覚書・八坂神社（福岡市西区）",
+                  "url": "https://ameblo.jp/sen23ka/entry-12530265636.html"
+                },
+                {
+                  "address_raw": "福岡市西区元岡26411",
+                  "checked_at": "2026-11-26T14:50:47.213856+00:00",
+                  "excerpt": "八坂神社 / 福岡市西区元岡26411",
+                  "locator": "三所神社の直後の八坂神社の掲載枠",
+                  "name_raw": "八坂神社",
+                  "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
+                  "reading_raw": "",
+                  "reading_scope": "absent",
+                  "source_kind": "official_agency",
+                  "title": "福岡県神社庁・福岡エリア一覧",
+                  "url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
           "name_raw": "八坂神社",
           "normalization": [
@@ -10334,11 +10402,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "df6b4ec9855b8c731684bb7abbfa22dd09bb27166d234b30001feab3854a1d57",
-          "reading": "",
+          "reading": "やさかじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/fukuoka/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8290005000661",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -10480,6 +10548,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "やさかじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "やさかじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八坂神社",
             "wikipedia_article_refs": [
@@ -10527,7 +10609,7 @@
             "status": "pending",
             "surface": "八坂神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八坂神社"
         },
         {

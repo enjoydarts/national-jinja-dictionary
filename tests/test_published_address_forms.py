@@ -169,3 +169,27 @@ class PublishedAddressFormsTest(unittest.TestCase):
                     '42', '長崎県', '須佐神社', 'すさじんじゃ', '佐世保市髙梨町1番9号', printed,
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_motooka_yasaka_compares_the_documented_parcel_branch(self):
+        acquired = '福岡市西区元岡26411'
+        printed = '福岡県福岡市西区大字元岡２６４１番地１'
+        dataset, proposal = self.fixture(
+            '40', '福岡県', '八坂神社', 'やさかじんじゃ', acquired, printed,
+        )
+        result = apply_corrections(dataset, proposal)
+        self.assertEqual(len(eligible(result)), 1)
+        self.assertEqual(result['facilities'], dataset['facilities'])
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_motooka_parcel_comparison_is_limited_to_this_shrine_and_branch(self):
+        for name, acquired, printed in (
+            ('八坂神社', '福岡市西区元岡26411', '福岡市西区元岡2641'),
+            ('八坂神社', '福岡市西区元岡26411', '福岡市西区元岡2641-10'),
+            ('八坂神社', '福岡市西区元岡26421', '福岡市西区元岡2642-1'),
+            ('別神社', '福岡市西区元岡26411', '福岡市西区元岡2641-1'),
+        ):
+            with self.subTest(name=name, acquired=acquired, printed=printed):
+                dataset, proposal = self.fixture(
+                    '40', '福岡県', name, 'やさかじんじゃ', acquired, printed,
+                )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])

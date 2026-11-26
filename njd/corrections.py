@@ -198,6 +198,10 @@ def _reference_matches(ref,facility,entry,changes):
             # Use the published street spellings in these two Kitakyushu wards.
             value=re.sub(r'^北九州市八幡西区浅川日の峰(?=\d)','北九州市八幡西区浅川日の峯',value)
             value=re.sub(r'^北九州市八幡東区春ノ町(?=\d)','北九州市八幡東区春の町',value)
+            if (facility.get('listed_name')=='八坂神社' and set(changes)=={'reading'}
+                and value=='福岡市西区元岡26411'):
+                # The corporate record and the independent site article show this branch.
+                value='福岡市西区元岡2641-1'
         if facility.get('prefecture_code')=='42':
             # The Sasebo town directory uses 高梨町. Compare complete parcels.
             value=re.sub(r'^佐世保市髙梨町(?=\d)','佐世保市高梨町',value)
