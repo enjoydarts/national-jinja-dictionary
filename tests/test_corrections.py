@@ -36,6 +36,32 @@ def aza_reference():
     return d,c,ref
 
 
+class ParcelRangeReferenceTest(unittest.TestCase):
+    def candidate(self, address):
+        acquired = '架空市乙町自88番地.至89番地'
+        dataset = build([row(name='架空神社', reading_raw='', address=acquired)])
+        proposal = correction(dataset, {'reading':'かくうじんじゃ'})
+        reference = proposal['entries'][dataset['entries'][0]['id']]['references'][0]
+        reference.update(address_raw=address, excerpt='架空神社（かくうじんじゃ） '+address)
+        return dataset, proposal
+
+    def test_same_explicit_range_compares_with_both_source_addresses_preserved(self):
+        for address in ('埼玉県架空市乙町自88至89', '架空市乙町自８８番地・至８９番地'):
+            with self.subTest(address=address):
+                dataset, proposal = self.candidate(address)
+                result = apply_corrections(dataset, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'], dataset['facilities'])
+                self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], address)
+
+    def test_a_different_locality_bound_or_range_marker_does_not_compare(self):
+        for address in ('架空市乙町自87至89', '架空市乙町自88至90', '架空市乙町自89至88',
+                        '架空市乙町88', '架空市乙町自88至89-1', '架空市乙町88-89', '架空市丙町自88至89'):
+            with self.subTest(address=address):
+                dataset, proposal = self.candidate(address)
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+
 class AgencyRegistryReadingTest(unittest.TestCase):
     def candidate(self,raw,full,scope='partial_or_absent'):
         d=build([row(name='架空神社',reading_raw='')]);c=correction(d,{'reading':full})

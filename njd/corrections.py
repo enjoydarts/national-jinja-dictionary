@@ -187,6 +187,8 @@ def _reference_matches(ref,facility,entry,changes):
         # Never rewrite stored text, shrine names, or a locality elsewhere.
         if facility.get('prefecture_code')=='39' and facility.get('prefecture')=='高知県':
             value=re.sub(r'^(高岡郡)?檮原町(?=.*[0-9])',r'\1梼原町',value)
+        # Compare both endpoints of an explicitly marked parcel range.
+        value = re.sub(r'自([0-9]+)(?:番地)?[.・]?至([0-9]+)(?:番地)?$', r'自\1至\2', value)
         value=re.sub(r'(?<=\d)[−‐‑‒–—―](?=\d)','-',value)
         value=re.sub(r'(?<=\d)丁目(?=\d)','-',value)
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
