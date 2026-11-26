@@ -113843,12 +113843,70 @@
           "surface": "治宮神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:39.521765+00:00",
+          "checked_at": "2026-11-26T13:24:03.683725+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「月讀神社」、郵便番号「629-0031」、所在地「南丹市園部町船岡午房畦39」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "da74baf3-b36c-5f73-9321-c9adfe9a3f76",
           "fetched_at": "2026-11-09T08:51:39.521765+00:00",
           "id": "c706b36f-3f53-5d5d-888c-78438341fcc5",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "agency_observation": {
+                "address_raw": "南丹市園部町船岡午房畦39",
+                "fetched_at": "2026-11-09T08:51:39.521765+00:00",
+                "locator": "tr global occurrence=45; four direct td.gr12/td.shlist name/postal/address/phone",
+                "name_raw": "月讀神社",
+                "page_hash": "46367767603154c527ea58ee3d3a91c73e41463398b9e7cfa88e6ddabe8429b4",
+                "reading_raw": "",
+                "source_hash": "06f91c211f135052c5a5c2392fb4fe6d027fd102c395301e0123c8e79d88e85e",
+                "url": "http://www.kyoto-jinjacho.or.jp/shrine/34.html"
+              },
+              "changes": {
+                "reading": "つきよみじんじゃ"
+              },
+              "expected_source_hash": "06f91c211f135052c5a5c2392fb4fe6d027fd102c395301e0123c8e79d88e85e",
+              "facility_id": "da74baf3-b36c-5f73-9321-c9adfe9a3f76",
+              "identity_match": {
+                "agency_address": "南丹市園部町船岡午房畦39",
+                "agency_name": "月讀神社",
+                "reference_address": "京都府南丹市園部町船岡午房畦３９",
+                "reference_name": "月讀神社"
+              },
+              "original": {
+                "address": "南丹市園部町船岡午房畦39",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/34.html",
+                "name_raw": "月讀神社",
+                "reading_raw": ""
+              },
+              "reason": "町別索引からたどる個人の現地訪問記録の同一表行に、神社名・独立全文かな・全所在地を確認。県名の有無や数字・地番記号の表記だけを比較し、取得済み神社庁原欄の名称・所在地・登録を維持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "京都府南丹市園部町船岡午房畦３９",
+                  "checked_at": "2026-11-26T13:24:03.683725+00:00",
+                  "excerpt": "神社名 月讀神社（つきよみじんじゃ）／所在地 京都府南丹市園部町船岡午房畦３９",
+                  "index_href_raw": "funaokatsukiyomi.html",
+                  "locator": "冒頭の同じ表行の神社名・独立全文かな・所在地欄。",
+                  "name_raw": "月讀神社",
+                  "page_hash": "88a8a4291c8f122e3862a259125c5b2f0d45372fdf89e5024bdf6b8a7435887f",
+                  "parent_checked_at": "2026-11-26T13:21:00.278630+00:00",
+                  "parent_page_hash": "5dcfc9dc7151c1226af23044cab229f2d792edaafc4fc508a9603fb0fdea853f",
+                  "parent_url": "https://kuchitanshrine.my.coocan.jp/nantan.html",
+                  "reading_raw": "つきよみじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_note": "個人の訪問記録の公開方針と画像の複写・転載禁止を確認し、社名・全文かな・所在地の限定事実を記録。",
+                  "rights_notice_page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+                  "rights_notice_url": "https://kuchitanshrine.my.coocan.jp/index.html",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_publisher": "口丹波の社（個人参拝記録）",
+                  "terms_checked_at": "2026-11-26T13:11:33.093837+00:00",
+                  "terms_page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                  "terms_url": "https://kuchitanshrine.my.coocan.jp/profile.html",
+                  "title": "月読神社",
+                  "url": "https://kuchitanshrine.my.coocan.jp/funaokatsukiyomi.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/34.html",
           "name_raw": "月讀神社",
           "normalization": [
@@ -113856,11 +113914,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "46367767603154c527ea58ee3d3a91c73e41463398b9e7cfa88e6ddabe8429b4",
-          "reading": "",
+          "reading": "つきよみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/34.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kuchitanshrine.my.coocan.jp/funaokatsukiyomi.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -113924,6 +113982,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "つきよみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "つきよみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "月讀神社",
             "wikipedia_article_refs": [
@@ -113963,7 +114035,7 @@
             "status": "pending",
             "surface": "月讀神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "月讀神社"
         },
         {
@@ -195216,12 +195288,70 @@
           "surface": "事比羅神社"
         },
         {
-          "checked_at": "2026-11-09T08:52:00.328312+00:00",
+          "checked_at": "2026-11-26T13:23:51.385300+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「天満宮」、郵便番号「622-0201」、所在地「船井郡京丹波町下山登尾90」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "05709e48-5f10-5ead-8bc9-94ecb3d54324",
           "fetched_at": "2026-11-09T08:52:00.328312+00:00",
           "id": "999d1c2e-7509-5795-b53f-8c3dabddfd46",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "agency_observation": {
+                "address_raw": "船井郡京丹波町下山登尾90",
+                "fetched_at": "2026-11-09T08:52:00.328312+00:00",
+                "locator": "tr global occurrence=17; four direct td.gr12/td.shlist name/postal/address/phone",
+                "name_raw": "天満宮",
+                "page_hash": "8422b2e4b3fcb5146795a3aeb533c6ae715e2e83f3449f039395d4af65121a23",
+                "reading_raw": "",
+                "source_hash": "cf3b7c96ff09b3d561cd968a654a3a75750c2aa6f59e5d1772fcc086ece6fc35",
+                "url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html"
+              },
+              "changes": {
+                "reading": "てんまんぐう"
+              },
+              "expected_source_hash": "cf3b7c96ff09b3d561cd968a654a3a75750c2aa6f59e5d1772fcc086ece6fc35",
+              "facility_id": "05709e48-5f10-5ead-8bc9-94ecb3d54324",
+              "identity_match": {
+                "agency_address": "船井郡京丹波町下山登尾90",
+                "agency_name": "天満宮",
+                "reference_address": "京都府船井郡京丹波町下山登尾９０",
+                "reference_name": "天満宮"
+              },
+              "original": {
+                "address": "船井郡京丹波町下山登尾90",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
+                "name_raw": "天満宮",
+                "reading_raw": ""
+              },
+              "reason": "町別索引からたどる個人の現地訪問記録の同一表行に、神社名・独立全文かな・全所在地を確認。県名の有無や数字・地番記号の表記だけを比較し、取得済み神社庁原欄の名称・所在地・登録を維持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "京都府船井郡京丹波町下山登尾９０",
+                  "checked_at": "2026-11-26T13:23:51.385300+00:00",
+                  "excerpt": "神社名 天満宮（てんまんぐう）／所在地 京都府船井郡京丹波町下山登尾９０",
+                  "index_href_raw": "chinobetenjin.html",
+                  "locator": "冒頭の同じ表行の神社名・独立全文かな・所在地欄。",
+                  "name_raw": "天満宮",
+                  "page_hash": "82b2e2ca30a6d085ccf544d6313dd007a60e827f519ace8bd666b7f933364b8d",
+                  "parent_checked_at": "2026-11-26T13:21:04.132780+00:00",
+                  "parent_page_hash": "cf1b4e5985857e542d6c5f8e53cfc44710fb45a5e80d4bdb5d0ed47267be456d",
+                  "parent_url": "https://kuchitanshrine.my.coocan.jp/kyotanba.html",
+                  "reading_raw": "てんまんぐう",
+                  "reading_scope": "full_name",
+                  "rights_note": "個人の訪問記録の公開方針と画像の複写・転載禁止を確認し、社名・全文かな・所在地の限定事実を記録。",
+                  "rights_notice_page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+                  "rights_notice_url": "https://kuchitanshrine.my.coocan.jp/index.html",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_publisher": "口丹波の社（個人参拝記録）",
+                  "terms_checked_at": "2026-11-26T13:11:33.093837+00:00",
+                  "terms_page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                  "terms_url": "https://kuchitanshrine.my.coocan.jp/profile.html",
+                  "title": "下山の天満宮",
+                  "url": "https://kuchitanshrine.my.coocan.jp/chinobetenjin.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
           "name_raw": "天満宮",
           "normalization": [
@@ -195229,11 +195359,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "8422b2e4b3fcb5146795a3aeb533c6ae715e2e83f3449f039395d4af65121a23",
-          "reading": "",
+          "reading": "てんまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kuchitanshrine.my.coocan.jp/chinobetenjin.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -195270,6 +195400,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "天満宮",
             "wikipedia_article_refs": [],
@@ -195300,7 +195444,7 @@
             "status": "pending",
             "surface": "天満宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天満宮"
         },
         {
@@ -202569,12 +202713,70 @@
           "surface": "稲荷神社"
         },
         {
-          "checked_at": "2026-11-09T08:52:00.328312+00:00",
+          "checked_at": "2026-11-26T13:24:21.041751+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「白山神社」、郵便番号「629-1114」、所在地「船井郡京丹波町升谷宮ノ奥11」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "92f2a98c-5237-5f3c-82fa-58eeee069cb5",
           "fetched_at": "2026-11-09T08:52:00.328312+00:00",
           "id": "fdd0e609-b4cd-5c61-abb9-f7995e42007d",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "agency_observation": {
+                "address_raw": "船井郡京丹波町升谷宮ノ奥11",
+                "fetched_at": "2026-11-09T08:52:00.328312+00:00",
+                "locator": "tr global occurrence=68; four direct td.gr12/td.shlist name/postal/address/phone",
+                "name_raw": "白山神社",
+                "page_hash": "8422b2e4b3fcb5146795a3aeb533c6ae715e2e83f3449f039395d4af65121a23",
+                "reading_raw": "",
+                "source_hash": "86cde2e2442601040ee20604791f3853bc0ea1aef0e5bb4943d8bf34b3123899",
+                "url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html"
+              },
+              "changes": {
+                "reading": "はくさんじんじゃ"
+              },
+              "expected_source_hash": "86cde2e2442601040ee20604791f3853bc0ea1aef0e5bb4943d8bf34b3123899",
+              "facility_id": "92f2a98c-5237-5f3c-82fa-58eeee069cb5",
+              "identity_match": {
+                "agency_address": "船井郡京丹波町升谷宮ノ奥11",
+                "agency_name": "白山神社",
+                "reference_address": "京都府船井郡京丹波町升谷宮ノ奥１１",
+                "reference_name": "白山神社"
+              },
+              "original": {
+                "address": "船井郡京丹波町升谷宮ノ奥11",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
+                "name_raw": "白山神社",
+                "reading_raw": ""
+              },
+              "reason": "町別索引からたどる個人の現地訪問記録の同一表行に、神社名・独立全文かな・全所在地を確認。県名の有無や数字・地番記号の表記だけを比較し、取得済み神社庁原欄の名称・所在地・登録を維持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "京都府船井郡京丹波町升谷宮ノ奥１１",
+                  "checked_at": "2026-11-26T13:24:21.041751+00:00",
+                  "excerpt": "神社名 白山神社（はくさんじんじゃ）／所在地 京都府船井郡京丹波町升谷宮ノ奥１１",
+                  "index_href_raw": "masutanihakusan.html",
+                  "locator": "冒頭の同じ表行の神社名・独立全文かな・所在地欄。",
+                  "name_raw": "白山神社",
+                  "page_hash": "2e28a240cf3964f63f7bbea0e93227f5981b08c55bc7d414abb68a0d6481e125",
+                  "parent_checked_at": "2026-11-26T13:21:04.132780+00:00",
+                  "parent_page_hash": "cf1b4e5985857e542d6c5f8e53cfc44710fb45a5e80d4bdb5d0ed47267be456d",
+                  "parent_url": "https://kuchitanshrine.my.coocan.jp/kyotanba.html",
+                  "reading_raw": "はくさんじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_note": "個人の訪問記録の公開方針と画像の複写・転載禁止を確認し、社名・全文かな・所在地の限定事実を記録。",
+                  "rights_notice_page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+                  "rights_notice_url": "https://kuchitanshrine.my.coocan.jp/index.html",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_publisher": "口丹波の社（個人参拝記録）",
+                  "terms_checked_at": "2026-11-26T13:11:33.093837+00:00",
+                  "terms_page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                  "terms_url": "https://kuchitanshrine.my.coocan.jp/profile.html",
+                  "title": "白山神社",
+                  "url": "https://kuchitanshrine.my.coocan.jp/masutanihakusan.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
           "name_raw": "白山神社",
           "normalization": [
@@ -202582,11 +202784,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "8422b2e4b3fcb5146795a3aeb533c6ae715e2e83f3449f039395d4af65121a23",
-          "reading": "",
+          "reading": "はくさんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/31.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kuchitanshrine.my.coocan.jp/masutanihakusan.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -202623,6 +202825,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はくさんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はくさんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "白山神社",
             "wikipedia_article_refs": [
@@ -202670,7 +202886,7 @@
             "status": "pending",
             "surface": "白山神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "白山神社"
         },
         {
