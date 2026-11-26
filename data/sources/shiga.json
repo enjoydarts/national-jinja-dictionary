@@ -115159,12 +115159,151 @@
           "surface": "川崎神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:00.019402+00:00",
+          "checked_at": "2026-11-26T09:39:52.027431+00:00",
           "evidence": "〔甲賀〕 吉御子神社 〒5203101 湖南市石部",
           "facility_id": "7deb7757-0ce1-5887-a147-3f0fdf747255",
           "fetched_at": "2026-11-08T14:31:00.019402+00:00",
           "id": "8479b4c8-4958-5521-ac97-7e770521c71e",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "よしみこじんじゃ"
+              },
+              "expected_source_hash": "93a8aa7b6378705b40572b32a835eee3e0931c24aa0d5f563cfe64a116560fbf",
+              "facility_id": "7deb7757-0ce1-5887-a147-3f0fdf747255",
+              "identity_match": {
+                "agency_address": "湖南市石部",
+                "agency_name": "吉御子神社",
+                "documented_current_address": "湖南市石部西1-15-1",
+                "method": "official_address_crosswalk_exact_parcel",
+                "reference_address": "滋賀県湖南市石部2763",
+                "reference_name": "吉御子神社"
+              },
+              "original": {
+                "address": "湖南市石部",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
+                "name_raw": "吉御子神社",
+                "reading_raw": ""
+              },
+              "reason": "滋賀県公開冊子に独立した社名「吉御子神社」・全文ルビ「よしみこじんじゃ」・住居表示「湖南市石部西1-15-1」がある。湖南市の新旧対照表は同一行に「石部西一丁目 15 番 1 号」「大字石部 2763 番地」を掲載し、旧地番は一覧の実hrefで結ばれた神社庁詳細ID517の鎮座地と対応する。公文書館目録の旧小字を歴史的補足として保持し、所在地の結合は市の新旧対照表に基づく。",
+              "references": [
+                {
+                  "address_crosswalk": {
+                    "checked_at": "2026-11-26T09:39:51.302545+00:00",
+                    "excerpt": "新住所「石部西一丁目 15 番 1 号」 ／ 旧住所（申請地番）「大字石部 2763 番地」",
+                    "locator": "PDF43頁／紙面41頁・二つの住所欄が並ぶ同一行。原画像を目視。",
+                    "page_hash": "d6f7cfa65152a4113be58a6463cd01b1dd2c8471a89c9b18472c1c2fdd445c51",
+                    "pdf_page": 43,
+                    "printed_current_address_raw": "石部西一丁目 15 番 1 号",
+                    "printed_former_address_raw": "大字石部 2763 番地",
+                    "printed_page": 41,
+                    "publication_page": {
+                      "checked_at": "2026-11-26T09:39:54.031821+00:00",
+                      "page_hash": "8e681bc66244f721921119310736e5142ce91052a9c53297a121b7baaa014374",
+                      "title": "住居表示新旧・旧新対照表(石部地域)／湖南市",
+                      "url": "https://www.city.shiga-konan.lg.jp/kurashi/3/3/4843.html"
+                    },
+                    "render_sha256": "abe9a75d7f0481416662422ad39ddda919d5ef694a0f77c87cfccfdb38783222",
+                    "source_kind": "municipal_address_crosswalk",
+                    "source_publisher": "湖南市",
+                    "title": "石部地域 新旧対照表（実施当時）",
+                    "url": "https://www.city.shiga-konan.lg.jp/material/files/group/12/sinnkyuu.pdf"
+                  },
+                  "address_raw": "滋賀県湖南市石部2763",
+                  "address_source": {
+                    "address_raw": "滋賀県湖南市石部2763",
+                    "checked_at": "2026-11-10T03:35:53.048058+00:00",
+                    "excerpt": "吉御子神社 （ヨシミコ） / 滋賀県湖南市石部2763",
+                    "index_proof": {
+                      "address_raw": "湖南市石部",
+                      "base_href": "https://www.shiga-jinjacho.jp/",
+                      "href_raw": "ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=517",
+                      "index_checked_at": "2026-11-08T14:31:00.019402+00:00",
+                      "index_excerpt": "〔甲賀〕 吉御子神社 〒5203101 湖南市石部",
+                      "index_locator": "a.news_title[15] + postal address span",
+                      "index_page_hash": "622fcc202708e55df76e5b4f2d72410b7952760147933f0754b8035efd8ebdb1",
+                      "index_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
+                      "name_raw": "吉御子神社",
+                      "source_id": "517",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=517"
+                    },
+                    "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                    "name_raw": "吉御子神社",
+                    "page_hash": "9a57256b7138af5a3b7554389ce6e365c44325e3240c6333f08738bb1ee391ea",
+                    "reading_raw": "ヨシミコ",
+                    "reading_scope": "partial_or_absent",
+                    "source_kind": "agency",
+                    "source_publisher": "滋賀県神社庁",
+                    "title": "吉御子神社 | 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=517"
+                  },
+                  "checked_at": "2026-11-26T09:39:52.027431+00:00",
+                  "excerpt": "県冊子の社名・全文ルビ・住欄「吉御子神社 ／ よしみこじんじゃ ／ 湖南市石部西1-15-1」。神社庁実詳細の鎮座地欄「滋賀県湖南市石部2763」。",
+                  "locator": "PDF6頁／紙面10頁「対になる男女の神さまをチェック！」の吉御子神社の独立した見出しルビ・住所欄。原画像を目視。",
+                  "name_raw": "吉御子神社",
+                  "page_hash": "c360f15bb81dd0e6c92d5824ea146e9f447444dd7986cffbf33eae0175f06c03",
+                  "pdf_page": 6,
+                  "printed_page": 10,
+                  "publication_page": {
+                    "checked_at": "2026-11-26T09:39:54.945882+00:00",
+                    "page_hash": "f2e8e8ae1798ff3652badb2d7191a4d20d7fa715315fadba432bba7e2bdb5339",
+                    "title": "滋賀県草津線複線化促進期成同盟会｜滋賀県",
+                    "url": "https://www.pref.shiga.lg.jp/ra00/704.html"
+                  },
+                  "published_address_raw": "湖南市石部西1-15-1",
+                  "reading_raw": "よしみこじんじゃ",
+                  "reading_scope": "full_name",
+                  "render_sha256": "821974bf35e58c391780a226eccd45715134f5a067ad977c36b19d85c5974464",
+                  "source_kind": "prefectural_public_tourism_pamphlet",
+                  "source_publisher": "滋賀県草津線複線化促進期成同盟会",
+                  "title": "のんびり草津線の旅",
+                  "url": "https://www.pref.shiga.lg.jp/documents/704/4036247_1.pdf"
+                },
+                {
+                  "address_raw": "滋賀県湖南市石部2763",
+                  "checked_at": "2026-11-10T03:35:53.048058+00:00",
+                  "excerpt": "吉御子神社 （ヨシミコ） / 滋賀県湖南市石部2763",
+                  "index_proof": {
+                    "address_raw": "湖南市石部",
+                    "base_href": "https://www.shiga-jinjacho.jp/",
+                    "href_raw": "ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=517",
+                    "index_checked_at": "2026-11-08T14:31:00.019402+00:00",
+                    "index_excerpt": "〔甲賀〕 吉御子神社 〒5203101 湖南市石部",
+                    "index_locator": "a.news_title[15] + postal address span",
+                    "index_page_hash": "622fcc202708e55df76e5b4f2d72410b7952760147933f0754b8035efd8ebdb1",
+                    "index_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
+                    "name_raw": "吉御子神社",
+                    "source_id": "517",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=517"
+                  },
+                  "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                  "name_raw": "吉御子神社",
+                  "page_hash": "9a57256b7138af5a3b7554389ce6e365c44325e3240c6333f08738bb1ee391ea",
+                  "reading_raw": "ヨシミコ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "agency",
+                  "source_publisher": "滋賀県神社庁",
+                  "title": "吉御子神社 | 滋賀県神社庁",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=517"
+                },
+                {
+                  "call_number": "明-す-6",
+                  "checked_at": "2026-11-26T09:39:54.278583+00:00",
+                  "excerpt": "村社吉御子神社（石部町大字石部字御神田） ／ 明-す-6",
+                  "historical_address_raw": "石部町大字石部字御神田",
+                  "locator": "社寺明細帳／県社以下諸社／甲賀郡／石部町・件名と請求番号",
+                  "name_raw": "吉御子神社",
+                  "page_hash": "67aa094a913c5fccfbf456c09bec8b739051233ccdf16b76060db5cd47c914ed",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "prefectural_archive_catalog",
+                  "source_publisher": "滋賀県立公文書館",
+                  "title": "[詳細] 村社吉御子神社（石部町大字石部字御神田）",
+                  "url": "https://archives.pref.shiga.lg.jp/OPAC/Home/Details/2105"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
           "name_raw": "吉御子神社",
           "normalization": [
@@ -115172,11 +115311,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "622fcc202708e55df76e5b4f2d72410b7952760147933f0754b8035efd8ebdb1",
-          "reading": "",
+          "reading": "よしみこじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.pref.shiga.lg.jp/documents/704/4036247_1.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -115315,6 +115454,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "よしみこじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "よしみこじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "吉御子神社",
             "wikipedia_article_refs": [
@@ -115354,16 +115507,155 @@
             "status": "pending",
             "surface": "吉御子神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "吉御子神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:00.019402+00:00",
+          "checked_at": "2026-11-26T09:39:52.027431+00:00",
           "evidence": "〔甲賀〕 吉姫神社 〒5203101 湖南市石部",
           "facility_id": "f4672d51-2df3-52c4-b2d5-464d5720ef4d",
           "fetched_at": "2026-11-08T14:31:00.019402+00:00",
           "id": "27d60352-2941-596e-807e-57fde47c451b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "よしひめじんじゃ"
+              },
+              "expected_source_hash": "9bd304b1cf247cfa805f47a1d1954f33f9a3f2abfbacefce79f108f07b58ee9a",
+              "facility_id": "f4672d51-2df3-52c4-b2d5-464d5720ef4d",
+              "identity_match": {
+                "agency_address": "湖南市石部",
+                "agency_name": "吉姫神社",
+                "documented_current_address": "湖南市石部東8-4-1",
+                "method": "official_address_crosswalk_exact_parcel",
+                "reference_address": "滋賀県湖南市石部4075",
+                "reference_name": "吉姫神社"
+              },
+              "original": {
+                "address": "湖南市石部",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
+                "name_raw": "吉姫神社",
+                "reading_raw": ""
+              },
+              "reason": "滋賀県公開冊子に独立した社名「吉姫神社」・全文ルビ「よしひめじんじゃ」・住居表示「湖南市石部東8-4-1」がある。湖南市の新旧対照表は同一行に「石部東八丁目 4 番 1 号」「大字石部 4075 番地」を掲載し、旧地番は一覧の実hrefで結ばれた神社庁詳細ID518の鎮座地と対応する。公文書館目録の旧小字を歴史的補足として保持し、所在地の結合は市の新旧対照表に基づく。",
+              "references": [
+                {
+                  "address_crosswalk": {
+                    "checked_at": "2026-11-26T09:39:51.302545+00:00",
+                    "excerpt": "新住所「石部東八丁目 4 番 1 号」 ／ 旧住所（申請地番）「大字石部 4075 番地」",
+                    "locator": "PDF95頁／紙面93頁・二つの住所欄が並ぶ同一行。原画像を目視。",
+                    "page_hash": "d6f7cfa65152a4113be58a6463cd01b1dd2c8471a89c9b18472c1c2fdd445c51",
+                    "pdf_page": 95,
+                    "printed_current_address_raw": "石部東八丁目 4 番 1 号",
+                    "printed_former_address_raw": "大字石部 4075 番地",
+                    "printed_page": 93,
+                    "publication_page": {
+                      "checked_at": "2026-11-26T09:39:54.031821+00:00",
+                      "page_hash": "8e681bc66244f721921119310736e5142ce91052a9c53297a121b7baaa014374",
+                      "title": "住居表示新旧・旧新対照表(石部地域)／湖南市",
+                      "url": "https://www.city.shiga-konan.lg.jp/kurashi/3/3/4843.html"
+                    },
+                    "render_sha256": "7adfcfb413b68ed883f2ba53c05b6524a8a0aacda2dce79922e5a964d00239c5",
+                    "source_kind": "municipal_address_crosswalk",
+                    "source_publisher": "湖南市",
+                    "title": "石部地域 新旧対照表（実施当時）",
+                    "url": "https://www.city.shiga-konan.lg.jp/material/files/group/12/sinnkyuu.pdf"
+                  },
+                  "address_raw": "滋賀県湖南市石部4075",
+                  "address_source": {
+                    "address_raw": "滋賀県湖南市石部4075",
+                    "checked_at": "2026-11-10T03:20:54.536038+00:00",
+                    "excerpt": "吉姫神社 （ヨシヒメ） / 滋賀県湖南市石部4075",
+                    "index_proof": {
+                      "address_raw": "湖南市石部",
+                      "base_href": "https://www.shiga-jinjacho.jp/",
+                      "href_raw": "ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=518",
+                      "index_checked_at": "2026-11-08T14:31:00.019402+00:00",
+                      "index_excerpt": "〔甲賀〕 吉姫神社 〒5203101 湖南市石部",
+                      "index_locator": "a.news_title[16] + postal address span",
+                      "index_page_hash": "622fcc202708e55df76e5b4f2d72410b7952760147933f0754b8035efd8ebdb1",
+                      "index_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
+                      "name_raw": "吉姫神社",
+                      "source_id": "518",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=518"
+                    },
+                    "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                    "name_raw": "吉姫神社",
+                    "page_hash": "a4513fc0fd1bf43f990b1d508c3e8d29639010d0a39b195db964863fe9250c35",
+                    "reading_raw": "ヨシヒメ",
+                    "reading_scope": "partial_or_absent",
+                    "source_kind": "agency",
+                    "source_publisher": "滋賀県神社庁",
+                    "title": "吉姫神社 | 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=518"
+                  },
+                  "checked_at": "2026-11-26T09:39:52.027431+00:00",
+                  "excerpt": "県冊子の社名・全文ルビ・住欄「吉姫神社 ／ よしひめじんじゃ ／ 湖南市石部東8-4-1」。神社庁実詳細の鎮座地欄「滋賀県湖南市石部4075」。",
+                  "locator": "PDF6頁／紙面10頁「対になる男女の神さまをチェック！」の吉姫神社の独立した見出しルビ・住所欄。原画像を目視。",
+                  "name_raw": "吉姫神社",
+                  "page_hash": "c360f15bb81dd0e6c92d5824ea146e9f447444dd7986cffbf33eae0175f06c03",
+                  "pdf_page": 6,
+                  "printed_page": 10,
+                  "publication_page": {
+                    "checked_at": "2026-11-26T09:39:54.945882+00:00",
+                    "page_hash": "f2e8e8ae1798ff3652badb2d7191a4d20d7fa715315fadba432bba7e2bdb5339",
+                    "title": "滋賀県草津線複線化促進期成同盟会｜滋賀県",
+                    "url": "https://www.pref.shiga.lg.jp/ra00/704.html"
+                  },
+                  "published_address_raw": "湖南市石部東8-4-1",
+                  "reading_raw": "よしひめじんじゃ",
+                  "reading_scope": "full_name",
+                  "render_sha256": "821974bf35e58c391780a226eccd45715134f5a067ad977c36b19d85c5974464",
+                  "source_kind": "prefectural_public_tourism_pamphlet",
+                  "source_publisher": "滋賀県草津線複線化促進期成同盟会",
+                  "title": "のんびり草津線の旅",
+                  "url": "https://www.pref.shiga.lg.jp/documents/704/4036247_1.pdf"
+                },
+                {
+                  "address_raw": "滋賀県湖南市石部4075",
+                  "checked_at": "2026-11-10T03:20:54.536038+00:00",
+                  "excerpt": "吉姫神社 （ヨシヒメ） / 滋賀県湖南市石部4075",
+                  "index_proof": {
+                    "address_raw": "湖南市石部",
+                    "base_href": "https://www.shiga-jinjacho.jp/",
+                    "href_raw": "ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=518",
+                    "index_checked_at": "2026-11-08T14:31:00.019402+00:00",
+                    "index_excerpt": "〔甲賀〕 吉姫神社 〒5203101 湖南市石部",
+                    "index_locator": "a.news_title[16] + postal address span",
+                    "index_page_hash": "622fcc202708e55df76e5b4f2d72410b7952760147933f0754b8035efd8ebdb1",
+                    "index_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
+                    "name_raw": "吉姫神社",
+                    "source_id": "518",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=518"
+                  },
+                  "locator": "div.j_title first literal kana; separate alias; unique table row 鎮座地",
+                  "name_raw": "吉姫神社",
+                  "page_hash": "a4513fc0fd1bf43f990b1d508c3e8d29639010d0a39b195db964863fe9250c35",
+                  "reading_raw": "ヨシヒメ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "agency",
+                  "source_publisher": "滋賀県神社庁",
+                  "title": "吉姫神社 | 滋賀県神社庁",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode:view=1&view:oid=518"
+                },
+                {
+                  "call_number": "明-す-6",
+                  "checked_at": "2026-11-26T09:39:51.391741+00:00",
+                  "excerpt": "村社吉姫神社（石部町大字石部字宮ノ森） ／ 明-す-6",
+                  "historical_address_raw": "石部町大字石部字宮ノ森",
+                  "locator": "社寺明細帳／県社以下諸社／甲賀郡／石部町・件名と請求番号",
+                  "name_raw": "吉姫神社",
+                  "page_hash": "a5baaa106dad35d8c32f3d4dbe7b198a4b4c778aa57f3852fe5fa1cb954225d5",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "prefectural_archive_catalog",
+                  "source_publisher": "滋賀県立公文書館",
+                  "title": "[詳細] 村社吉姫神社（石部町大字石部字宮ノ森）",
+                  "url": "https://archives.pref.shiga.lg.jp/OPAC/Home/Details/2098"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
           "name_raw": "吉姫神社",
           "normalization": [
@@ -115371,11 +115663,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "622fcc202708e55df76e5b4f2d72410b7952760147933f0754b8035efd8ebdb1",
-          "reading": "",
+          "reading": "よしひめじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.pref.shiga.lg.jp/documents/704/4036247_1.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -115514,6 +115806,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "よしひめじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "よしひめじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "吉姫神社",
             "wikipedia_article_refs": [
@@ -115553,7 +115859,7 @@
             "status": "pending",
             "surface": "吉姫神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "吉姫神社"
         },
         {
