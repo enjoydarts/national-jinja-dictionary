@@ -110,6 +110,8 @@ IME出力時は読み・表記・出力先品詞が同じ行を重複除去し�
 
 長崎県諫早市では、神社庁の「高来町船津名」「森山町大字森山本村名」を、資料の「高来町船津」「森山町本村」と照合できます。`address_identity_proof.kind=documented_isahaya_locality_change` で、施設ID・登録ID・取得原文hash・双方の住所・参照先と、日本郵便の旧町別変更一覧にある当該行のURL/hash・施行日・町域・郵便番号を対応づけます。読みだけを補正する場合に、正式名と枝番を含む全地番の一致を求めます。正本では神社庁と各資料の原住所を保持します。[日本郵便の旧高来町住所変更一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423431&cmp=1&mode=list&pref=42)・[旧森山町住所変更一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city=1423411&cmp=1&mode=list&pref=42)・[諫早市の町の名称](https://www.city.isahaya.nagasaki.jp/soshiki/42/1688.html)
 
+富士吉田市小明見の子之神社は、住居表示対照表の旧新・新旧の両欄で異なる住所表記を照合できます。`address_identity_proof.kind=documented_fujiyoshida_residence_pair` で、両方向の行とPDFのURL・hash、現住居番号、文化財所在地、資料のURL・hash、取得原文hashを結び付けます。この対応は小明見3352と小明見五丁目4番17号の当該行に基づき、子之神社の読み補完に適用します。[富士吉田市の住居表示対照表](https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/3948.pdf)・[市指定天然記念物](https://www.city.fujiyoshida.yamanashi.jp/page/1107.html)
+
 国税庁資料は正式名称・全地番・一意な存続法人・明示された全文カナを照合します。大書きカナを推測修正しません。法人種別の接頭辞や登録画像のある行には追加の証拠を要求します。画像行は個別の`image_reviews`に画像ID・URL・hashと元CSV行の対応がなければ保留します。
 
 ## 再取得と保存

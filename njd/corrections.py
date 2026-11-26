@@ -5,7 +5,9 @@ import unicodedata
 from datetime import datetime
 from urllib.parse import urlsplit
 from njd.normalize import normalize_reading, compare_address_units
-from njd.municipalities import ISAHAYA_LOCALITY_PROOF, municipal_comparison_address
+from njd.municipalities import (
+    FUJIYOSHIDA_RESIDENCE_PROOF, ISAHAYA_LOCALITY_PROOF, municipal_comparison_address,
+)
 from njd.locations import raw_address, _redirect_authority, _reference_in_scope, _hash, _date, _plain
 from njd.corporate_aza import PROOF_KIND as REGISTERED_TOWN_PROOF, registered_town_matches
 
@@ -206,7 +208,7 @@ def _reference_matches(ref,facility,entry,changes):
         return registered_town_matches(ref,facility,entry,changes)
     if isinstance(proof,dict) and proof.get('kind')==_UJITAWARA_KOAZA_PROOF:
         return _ujitawara_koaza_matches(ref,facility,entry,changes)
-    if isinstance(proof, dict) and proof.get('kind') == ISAHAYA_LOCALITY_PROOF:
+    if isinstance(proof, dict) and proof.get('kind') in (ISAHAYA_LOCALITY_PROOF, FUJIYOSHIDA_RESIDENCE_PROOF):
         if set(changes) != {'reading'} or entry.get('status') == 'excluded' or ref.get('reading_scope') != 'full_name':
             return False
         mapped = municipal_comparison_address(ref, facility, entry)

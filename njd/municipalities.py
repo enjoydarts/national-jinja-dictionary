@@ -21,6 +21,26 @@ _SAGA_RULES=(
 )
 
 ISAHAYA_LOCALITY_PROOF = 'documented_isahaya_locality_change'
+FUJIYOSHIDA_RESIDENCE_PROOF = 'documented_fujiyoshida_residence_pair'
+_MUNICIPALITY_SCOPES = {
+    ISAHAYA_LOCALITY_PROOF: ('42', '長崎県', '諫早市'),
+    FUJIYOSHIDA_RESIDENCE_PROOF: ('19', '山梨県', '富士吉田市'),
+}
+_FUJIYOSHIDA_ADDRESS_TABLE = {
+    'url': 'https://www.city.fujiyoshida.yamanashi.jp/uploaded/attachment/3948.pdf',
+    'page_hash': '4fd1a0d66eb1e81119b84c0a4f2456e479f815819250f0354fe261fa1d5b4a2f',
+    'source_publisher': '富士吉田市',
+    'name_raw': '子之神社',
+    'old_locality_raw': '小明見',
+    'old_parcel_raw': '3352',
+    'new_locality_raw': '小明見五丁目',
+    'block_raw': '4',
+    'residence_number_raw': '17',
+    'forward_page': 36,
+    'reverse_page': 83,
+    'forward_row_raw': '小明見 / 3352 / 子之神社 / 小明見五丁目 / 4 / 17',
+    'reverse_row_raw': '小明見五丁目 / 4 / 17 / 子之神社 / 小明見 / 3352',
+}
 _POSTAL_LIST = 'https://www.post.japanpost.jp/cgi-zip/zipcode.php?addr=&city={}&cmp=1&mode=list&pref=42'
 _ISAHAYA_LOCALITIES = {
     '諫早市高来町船津名': (
@@ -53,18 +73,36 @@ def _isahaya_address(raw, evidence):
     return '長崎県'+current+parts[2]
 
 
-def municipal_comparison_address(ref,facility,entry):
-    """Return an evidenced municipality or locality prefix for comparison.
+def _fujiyoshida_address(raw, evidence, ref):
+    """Match the named shrine in both directions of the city's address table."""
+    if (raw != '富士吉田市小明見5-4-17' or ref.get('name_raw') != '子之神社'
+        or ref.get('source_kind') != 'municipal_cultural_property'
+        or ref.get('url') != 'https://www.city.fujiyoshida.yamanashi.jp/page/1107.html'
+        or ref.get('page_hash') != '9d0be47fecae03058d9f6b9c3a048ee6811803fb77e201602a66e031ef09b16c'
+        or ref.get('address_raw') != '富士吉田市小明見5-3352'
+        or not isinstance(evidence, dict) or not _plain(evidence.get('locator'))
+        or any(evidence.get(k) != v for k, v in _FUJIYOSHIDA_ADDRESS_TABLE.items())):
+        return None
+    try:
+        if datetime.fromisoformat(evidence.get('checked_at', '')).tzinfo is None:
+            return None
+    except (TypeError, ValueError):
+        return None
+    return ref['address_raw']
 
-    The caller must still compare the ENTIRE resulting address to the
-    reference, including its original locality, parcel, branch and suffix.
-    This helper neither verifies a reading nor authorizes a name change.
+
+def municipal_comparison_address(ref,facility,entry):
+    """Return a comparison address backed by an inspected official record.
+
+    The caller compares the entire resulting address against the reference,
+    including locality, parcel, branch and suffix.
     """
     proof=ref.get('address_identity_proof')
     if not isinstance(proof, dict):return None
     kind = proof.get('kind')
-    if kind == ISAHAYA_LOCALITY_PROOF:
-        if (facility.get('prefecture_code'), facility.get('prefecture'), facility.get('municipality')) != ('42','長崎県','諫早市'):
+    if isinstance(kind, str) and kind in _MUNICIPALITY_SCOPES:
+        scope = (facility.get('prefecture_code'), facility.get('prefecture'), facility.get('municipality'))
+        if scope != _MUNICIPALITY_SCOPES[kind]:
             return None
     elif kind != 'documented_municipality_prefix_change' or (facility.get('prefecture_code'), facility.get('prefecture')) != ('41','佐賀県'):
         return None
@@ -87,6 +125,8 @@ def municipal_comparison_address(ref,facility,entry):
     evidence=proof.get('change_reference')
     if kind == ISAHAYA_LOCALITY_PROOF:
         return _isahaya_address(raw, evidence)
+    if kind == FUJIYOSHIDA_RESIDENCE_PROOF:
+        return _fujiyoshida_address(raw, evidence, ref)
     # A number in a locality such as 1丁目/第1区 is not a parcel. Require a
     # literal terminal lot/house number, retaining all original branch units.
     if not re.search(r'[0-9](?:番地|番|号)?$',raw):return None
