@@ -187,6 +187,9 @@ def _reference_matches(ref,facility,entry,changes):
         if facility.get('prefecture_code')=='37' and facility.get('municipality')=='丸亀市':
             # The city records this locality as 三条町. Keep the parcel comparison exact.
             value=re.sub(r'^丸亀市三條町(?=\d)','丸亀市三条町',value)
+        if facility.get('prefecture_code')=='26' and facility.get('municipality')=='木津川市':
+            # The municipal address table assigns 平尾 to the former 山城町.
+            value=re.sub(r'^木津川市山城町平尾里屋敷(?=\d)','木津川市平尾里屋敷',value)
         value=compare_address_units(value)
         # The town's own ordinances use both spellings (docs/DATA.md).
         # Compare only this Kochi municipality, with a literal parcel present.

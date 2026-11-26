@@ -52,3 +52,26 @@ class PublishedAddressFormsTest(unittest.TestCase):
                     '39', '高知県', '新宮神社', 'しんぐうじんじゃ', acquired, '南国市十市字新宮山'+end,
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_kizugawa_compares_the_documented_town_prefix(self):
+        acquired = '木津川市平尾里屋敷54'
+        printed = '木津川市山城町平尾里屋敷54'
+        dataset, proposal = self.fixture(
+            '26', '京都府', '和伎座天乃夫岐賣神社', 'わきにますあめのふきめじんじゃ', acquired, printed,
+        )
+        result = apply_corrections(dataset, proposal)
+        self.assertEqual(len(eligible(result)), 1)
+        self.assertEqual(result['facilities'], dataset['facilities'])
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_kizugawa_requires_the_documented_locality_and_whole_parcel(self):
+        for acquired, printed in (
+            ('木津川市平尾里屋敷54', '木津川市山城町平尾里屋敷54-1'),
+            ('木津川市平尾里屋敷54', '木津川市山城町平尾上垣内54'),
+            ('木津川市平尾上垣内54', '木津川市山城町平尾上垣内54'),
+        ):
+            with self.subTest(acquired=acquired, printed=printed):
+                dataset, proposal = self.fixture(
+                    '26', '京都府', '和伎座天乃夫岐賣神社', 'わきにますあめのふきめじんじゃ', acquired, printed,
+                )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])

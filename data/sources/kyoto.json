@@ -12197,12 +12197,69 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-08T14:25:06.988761+00:00",
+          "checked_at": "2026-11-26T13:10:53.354060+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「日吉神社」、郵便番号「601-0311」、所在地「京都市右京区京北小塩町水木1」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "9574fe4d-c337-500b-8361-8ee1b479dbae",
           "fetched_at": "2026-11-08T14:25:06.988761+00:00",
           "id": "c1afd2b5-47d2-5cff-b56c-455a711b1527",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "agency_observation": {
+                "address_raw": "京都市右京区京北小塩町水木1",
+                "fetched_at": "2026-11-08T14:25:06.988761+00:00",
+                "locator": "innermost facility table tr occurrence=21; cell before postal code / cell after postal code",
+                "name_raw": "日吉神社",
+                "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
+                "reading_raw": "",
+                "source_hash": "43deb983bdb1b06fe176fa18739da1beaebc94d50ddf031b5a4c9feae605891a",
+                "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+              },
+              "changes": {
+                "reading": "ひよしじんじゃ"
+              },
+              "expected_source_hash": "43deb983bdb1b06fe176fa18739da1beaebc94d50ddf031b5a4c9feae605891a",
+              "facility_id": "9574fe4d-c337-500b-8361-8ee1b479dbae",
+              "identity_match": {
+                "agency_address": "京都市右京区京北小塩町水木1",
+                "agency_name": "日吉神社",
+                "reference_address": "京都市右京区京北小塩町水木１",
+                "reference_name": "日吉神社"
+              },
+              "original": {
+                "address": "京都市右京区京北小塩町水木1",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
+                "name_raw": "日吉神社",
+                "reading_raw": ""
+              },
+              "reason": "「口丹波の社」の京北訪問記録で、同じ表行の神社名欄に独立全文かな、所在地欄に京都市右京区から始まる鎮座地の全地番を確認。取得済み京都府神社庁原表との比較は数字・記号の全角半角のみ。原表の名称・所在地を保持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "京都市右京区京北小塩町水木１",
+                  "checked_at": "2026-11-26T13:10:53.354060+00:00",
+                  "excerpt": "神社名 日吉神社（ひよしじんじゃ）／所在地 京都市右京区京北小塩町水木１",
+                  "locator": "右京区京北の神社の町名別索引にある個別写真の実リンク先。表の神社名・所在地が並ぶ一行目。",
+                  "name_raw": "日吉神社",
+                  "page_hash": "b17d7628a7a1f0971868f3a7ac4daa46d10d35dba60075f6db35e82347386fdd",
+                  "parent_checked_at": "2026-11-26T13:10:18.117624+00:00",
+                  "parent_page_hash": "6d1921d20c547575d7920af1aa400e4a489d1566222e2130795c34a23a41f890",
+                  "parent_url": "https://kuchitanshrine.my.coocan.jp/keihoku.html",
+                  "reading_raw": "ひよしじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_note": "公開方針を確認。著作物の画像は転載せず、読みと所在地の限定事実項目を示す。",
+                  "rights_notice_page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+                  "rights_notice_url": "https://kuchitanshrine.my.coocan.jp/index.html",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_publisher": "口丹波の社",
+                  "terms_checked_at": "2026-11-26T13:11:33.093837+00:00",
+                  "terms_page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                  "terms_url": "https://kuchitanshrine.my.coocan.jp/profile.html",
+                  "title": "日吉神社",
+                  "url": "https://kuchitanshrine.my.coocan.jp/oshiohiyoshi.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
           "name_raw": "日吉神社",
           "normalization": [
@@ -12210,11 +12267,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
-          "reading": "",
+          "reading": "ひよしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kuchitanshrine.my.coocan.jp/oshiohiyoshi.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -12286,6 +12343,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ひよしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ひよしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "日吉神社",
             "wikipedia_article_refs": [],
@@ -12316,7 +12387,7 @@
             "status": "pending",
             "surface": "日吉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "日吉神社"
         },
         {
@@ -13120,12 +13191,69 @@
           "surface": "稲荷神社"
         },
         {
-          "checked_at": "2026-11-08T14:25:06.988761+00:00",
+          "checked_at": "2026-11-26T13:10:58.066132+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「八幡宮社」、郵便番号「601-0266」、所在地「京都市右京区京北下宇津町庄ノ谷62」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "30b6362a-852a-50b2-ab21-166b24a6d0d2",
           "fetched_at": "2026-11-08T14:25:06.988761+00:00",
           "id": "51017e31-feb1-55b9-bfb1-fa3464ecbd2e",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "agency_observation": {
+                "address_raw": "京都市右京区京北下宇津町庄ノ谷62",
+                "fetched_at": "2026-11-08T14:25:06.988761+00:00",
+                "locator": "innermost facility table tr occurrence=28; cell before postal code / cell after postal code",
+                "name_raw": "八幡宮社",
+                "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
+                "reading_raw": "",
+                "source_hash": "212a13f9d28c36ae166057c50c743ac923ddc771ada632ee03caf71427dd23ff",
+                "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+              },
+              "changes": {
+                "reading": "はちまんぐうしゃ"
+              },
+              "expected_source_hash": "212a13f9d28c36ae166057c50c743ac923ddc771ada632ee03caf71427dd23ff",
+              "facility_id": "30b6362a-852a-50b2-ab21-166b24a6d0d2",
+              "identity_match": {
+                "agency_address": "京都市右京区京北下宇津町庄ノ谷62",
+                "agency_name": "八幡宮社",
+                "reference_address": "京都市右京区京北下宇津町庄ノ谷６２",
+                "reference_name": "八幡宮社"
+              },
+              "original": {
+                "address": "京都市右京区京北下宇津町庄ノ谷62",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
+                "name_raw": "八幡宮社",
+                "reading_raw": ""
+              },
+              "reason": "「口丹波の社」の京北訪問記録で、同じ表行の神社名欄に独立全文かな、所在地欄に京都市右京区から始まる鎮座地の全地番を確認。取得済み京都府神社庁原表との比較は数字・記号の全角半角のみ。原表の名称・所在地を保持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "京都市右京区京北下宇津町庄ノ谷６２",
+                  "checked_at": "2026-11-26T13:10:58.066132+00:00",
+                  "excerpt": "神社名 八幡宮社（はちまんぐうしゃ）／所在地 京都市右京区京北下宇津町庄ノ谷６２",
+                  "locator": "右京区京北の神社の町名別索引にある個別写真の実リンク先。表の神社名・所在地が並ぶ一行目。",
+                  "name_raw": "八幡宮社",
+                  "page_hash": "8a7a66d0709e424424c573b9475d252522c0f452ba5b430e6da195c0b19aa80c",
+                  "parent_checked_at": "2026-11-26T13:10:18.117624+00:00",
+                  "parent_page_hash": "6d1921d20c547575d7920af1aa400e4a489d1566222e2130795c34a23a41f890",
+                  "parent_url": "https://kuchitanshrine.my.coocan.jp/keihoku.html",
+                  "reading_raw": "はちまんぐうしゃ",
+                  "reading_scope": "full_name",
+                  "rights_note": "公開方針を確認。著作物の画像は転載せず、読みと所在地の限定事実項目を示す。",
+                  "rights_notice_page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+                  "rights_notice_url": "https://kuchitanshrine.my.coocan.jp/index.html",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_publisher": "口丹波の社",
+                  "terms_checked_at": "2026-11-26T13:11:33.093837+00:00",
+                  "terms_page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                  "terms_url": "https://kuchitanshrine.my.coocan.jp/profile.html",
+                  "title": "京北下宇津町の八幡宮社",
+                  "url": "https://kuchitanshrine.my.coocan.jp/shimoutsuhachiman.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
           "name_raw": "八幡宮社",
           "normalization": [
@@ -13133,11 +13261,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
-          "reading": "",
+          "reading": "はちまんぐうしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kuchitanshrine.my.coocan.jp/shimoutsuhachiman.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -13209,6 +13337,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちまんぐうしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちまんぐうしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八幡宮社",
             "wikipedia_article_refs": [],
@@ -13239,7 +13381,7 @@
             "status": "pending",
             "surface": "八幡宮社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八幡宮社"
         },
         {
@@ -13335,12 +13477,69 @@
           "surface": "天雅神社"
         },
         {
-          "checked_at": "2026-11-08T14:25:06.988761+00:00",
+          "checked_at": "2026-11-26T13:08:37.100872+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「八津良神社」、郵便番号「601-0251」、所在地「京都市右京区京北周山町城山28」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "814e5f8e-e8ae-5d50-a85c-f512ac2e7125",
           "fetched_at": "2026-11-08T14:25:06.988761+00:00",
           "id": "3ecddf17-6a07-5126-a632-62b7dfd6203b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "agency_observation": {
+                "address_raw": "京都市右京区京北周山町城山28",
+                "fetched_at": "2026-11-08T14:25:06.988761+00:00",
+                "locator": "innermost facility table tr occurrence=30; cell before postal code / cell after postal code",
+                "name_raw": "八津良神社",
+                "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
+                "reading_raw": "",
+                "source_hash": "7b852ff64e7a46cbb24a241fcb09386b5398dae7c2644a2449413ee732ff1bc6",
+                "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+              },
+              "changes": {
+                "reading": "やつらじんじゃ"
+              },
+              "expected_source_hash": "7b852ff64e7a46cbb24a241fcb09386b5398dae7c2644a2449413ee732ff1bc6",
+              "facility_id": "814e5f8e-e8ae-5d50-a85c-f512ac2e7125",
+              "identity_match": {
+                "agency_address": "京都市右京区京北周山町城山28",
+                "agency_name": "八津良神社",
+                "reference_address": "京都市右京区京北周山町城山２８",
+                "reference_name": "八津良神社"
+              },
+              "original": {
+                "address": "京都市右京区京北周山町城山28",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
+                "name_raw": "八津良神社",
+                "reading_raw": ""
+              },
+              "reason": "「口丹波の社」の京北訪問記録で、同じ表行の神社名欄に独立全文かな、所在地欄に京都市右京区から始まる鎮座地の全地番を確認。取得済み京都府神社庁原表との比較は数字・記号の全角半角のみ。原表の名称・所在地を保持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "京都市右京区京北周山町城山２８",
+                  "checked_at": "2026-11-26T13:08:37.100872+00:00",
+                  "excerpt": "神社名 八津良神社（やつらじんじゃ）／所在地 京都市右京区京北周山町城山２８",
+                  "locator": "右京区京北の神社の町名別索引にある個別写真の実リンク先。表の神社名・所在地が並ぶ一行目。",
+                  "name_raw": "八津良神社",
+                  "page_hash": "a15d60f26b30e6a48db94208ccd21b64a641cf60d9a373d0aa4bb46d8e5f8a2f",
+                  "parent_checked_at": "2026-11-26T13:10:18.117624+00:00",
+                  "parent_page_hash": "6d1921d20c547575d7920af1aa400e4a489d1566222e2130795c34a23a41f890",
+                  "parent_url": "https://kuchitanshrine.my.coocan.jp/keihoku.html",
+                  "reading_raw": "やつらじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_note": "公開方針を確認。著作物の画像は転載せず、読みと所在地の限定事実項目を示す。",
+                  "rights_notice_page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+                  "rights_notice_url": "https://kuchitanshrine.my.coocan.jp/index.html",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_publisher": "口丹波の社",
+                  "terms_checked_at": "2026-11-26T13:11:33.093837+00:00",
+                  "terms_page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                  "terms_url": "https://kuchitanshrine.my.coocan.jp/profile.html",
+                  "title": "八津良神社",
+                  "url": "https://kuchitanshrine.my.coocan.jp/yatsurajinja.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
           "name_raw": "八津良神社",
           "normalization": [
@@ -13348,11 +13547,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
-          "reading": "",
+          "reading": "やつらじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kuchitanshrine.my.coocan.jp/yatsurajinja.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -13393,6 +13592,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "やつらじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "やつらじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八津良神社",
             "wikipedia_article_refs": [],
@@ -13423,7 +13636,7 @@
             "status": "pending",
             "surface": "八津良神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八津良神社"
         },
         {
@@ -13553,12 +13766,69 @@
           "surface": "白山神社"
         },
         {
-          "checked_at": "2026-11-08T14:25:06.988761+00:00",
+          "checked_at": "2026-11-26T13:11:45.672432+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「出雲神社」、郵便番号「601-0265」、所在地「京都市右京区京北中地町中地平15-4」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "33a9e30a-236a-5a2d-a870-d40f2b58b773",
           "fetched_at": "2026-11-08T14:25:06.988761+00:00",
           "id": "578f2ffd-e488-58b1-8f48-55e6c83eb355",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "agency_observation": {
+                "address_raw": "京都市右京区京北中地町中地平15-4",
+                "fetched_at": "2026-11-08T14:25:06.988761+00:00",
+                "locator": "innermost facility table tr occurrence=32; cell before postal code / cell after postal code",
+                "name_raw": "出雲神社",
+                "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
+                "reading_raw": "",
+                "source_hash": "0a90b73b5c872da5e2bfe2e72329a4377ce936a8f546d0e681319cac89624daa",
+                "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+              },
+              "changes": {
+                "reading": "いずもじんじゃ"
+              },
+              "expected_source_hash": "0a90b73b5c872da5e2bfe2e72329a4377ce936a8f546d0e681319cac89624daa",
+              "facility_id": "33a9e30a-236a-5a2d-a870-d40f2b58b773",
+              "identity_match": {
+                "agency_address": "京都市右京区京北中地町中地平15-4",
+                "agency_name": "出雲神社",
+                "reference_address": "京都市右京区京北中地町中地平１５－４",
+                "reference_name": "出雲神社"
+              },
+              "original": {
+                "address": "京都市右京区京北中地町中地平15-4",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
+                "name_raw": "出雲神社",
+                "reading_raw": ""
+              },
+              "reason": "「口丹波の社」の京北訪問記録で、同じ表行の神社名欄に独立全文かな、所在地欄に京都市右京区から始まる鎮座地の全地番を確認。取得済み京都府神社庁原表との比較は数字・記号の全角半角のみ。原表の名称・所在地を保持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "京都市右京区京北中地町中地平１５－４",
+                  "checked_at": "2026-11-26T13:11:45.672432+00:00",
+                  "excerpt": "神社名 出雲神社（いずもじんじゃ）／所在地 京都市右京区京北中地町中地平１５－４",
+                  "locator": "右京区京北の神社の町名別索引にある個別写真の実リンク先。表の神社名・所在地が並ぶ一行目。",
+                  "name_raw": "出雲神社",
+                  "page_hash": "c1535a85ba633a7a5c7d35a755b7e1baa777ae8d0d2a7b95b93ab1a7a88465a7",
+                  "parent_checked_at": "2026-11-26T13:10:18.117624+00:00",
+                  "parent_page_hash": "6d1921d20c547575d7920af1aa400e4a489d1566222e2130795c34a23a41f890",
+                  "parent_url": "https://kuchitanshrine.my.coocan.jp/keihoku.html",
+                  "reading_raw": "いずもじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_note": "公開方針を確認。著作物の画像は転載せず、読みと所在地の限定事実項目を示す。",
+                  "rights_notice_page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+                  "rights_notice_url": "https://kuchitanshrine.my.coocan.jp/index.html",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_publisher": "口丹波の社",
+                  "terms_checked_at": "2026-11-26T13:11:33.093837+00:00",
+                  "terms_page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                  "terms_url": "https://kuchitanshrine.my.coocan.jp/profile.html",
+                  "title": "中地の出雲神社",
+                  "url": "https://kuchitanshrine.my.coocan.jp/chujiizumo.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
           "name_raw": "出雲神社",
           "normalization": [
@@ -13566,11 +13836,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
-          "reading": "",
+          "reading": "いずもじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kuchitanshrine.my.coocan.jp/chujiizumo.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -13642,6 +13912,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いずもじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いずもじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "出雲神社",
             "wikipedia_article_refs": [],
@@ -13672,7 +13956,7 @@
             "status": "pending",
             "surface": "出雲神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "出雲神社"
         },
         {
@@ -14092,12 +14376,69 @@
           "surface": "天満宮社"
         },
         {
-          "checked_at": "2026-11-08T14:25:06.988761+00:00",
+          "checked_at": "2026-11-26T13:11:00.179764+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「八幡宮」、郵便番号「601-0264」、所在地「京都市右京区京北栃本町宮ノ前48」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "27638c34-38ef-5b32-a43b-b9e1cd7c59a6",
           "fetched_at": "2026-11-08T14:25:06.988761+00:00",
           "id": "276357a9-1fbf-5f68-a8c5-823f04229fdf",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "agency_observation": {
+                "address_raw": "京都市右京区京北栃本町宮ノ前48",
+                "fetched_at": "2026-11-08T14:25:06.988761+00:00",
+                "locator": "innermost facility table tr occurrence=36; cell before postal code / cell after postal code",
+                "name_raw": "八幡宮",
+                "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
+                "reading_raw": "",
+                "source_hash": "c3406e9cac9679b5f29ba7561817b0ac215a514d0f2de34805775590bf52ac4e",
+                "url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html"
+              },
+              "changes": {
+                "reading": "はちまんぐう"
+              },
+              "expected_source_hash": "c3406e9cac9679b5f29ba7561817b0ac215a514d0f2de34805775590bf52ac4e",
+              "facility_id": "27638c34-38ef-5b32-a43b-b9e1cd7c59a6",
+              "identity_match": {
+                "agency_address": "京都市右京区京北栃本町宮ノ前48",
+                "agency_name": "八幡宮",
+                "reference_address": "京都市右京区京北栃本町宮ノ前４８",
+                "reference_name": "八幡宮"
+              },
+              "original": {
+                "address": "京都市右京区京北栃本町宮ノ前48",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
+                "name_raw": "八幡宮",
+                "reading_raw": ""
+              },
+              "reason": "「口丹波の社」の京北訪問記録で、同じ表行の神社名欄に独立全文かな、所在地欄に京都市右京区から始まる鎮座地の全地番を確認。取得済み京都府神社庁原表との比較は数字・記号の全角半角のみ。原表の名称・所在地を保持して読みを補完。",
+              "references": [
+                {
+                  "address_raw": "京都市右京区京北栃本町宮ノ前４８",
+                  "checked_at": "2026-11-26T13:11:00.179764+00:00",
+                  "excerpt": "神社名 八幡宮（はちまんぐう）／所在地 京都市右京区京北栃本町宮ノ前４８",
+                  "locator": "右京区京北の神社の町名別索引にある個別写真の実リンク先。表の神社名・所在地が並ぶ一行目。",
+                  "name_raw": "八幡宮",
+                  "page_hash": "a89c784042ec0dba55245b89eb2f90a4149917a38aaa5be139f3a0559bf23ba8",
+                  "parent_checked_at": "2026-11-26T13:10:18.117624+00:00",
+                  "parent_page_hash": "6d1921d20c547575d7920af1aa400e4a489d1566222e2130795c34a23a41f890",
+                  "parent_url": "https://kuchitanshrine.my.coocan.jp/keihoku.html",
+                  "reading_raw": "はちまんぐう",
+                  "reading_scope": "full_name",
+                  "rights_note": "公開方針を確認。著作物の画像は転載せず、読みと所在地の限定事実項目を示す。",
+                  "rights_notice_page_hash": "b9f0c1196cff6adeaea435301cb3a38a9485b4f4a48757e6f7a450dad7e98fcb",
+                  "rights_notice_url": "https://kuchitanshrine.my.coocan.jp/index.html",
+                  "source_kind": "local_shrine_field_survey",
+                  "source_publisher": "口丹波の社",
+                  "terms_checked_at": "2026-11-26T13:11:33.093837+00:00",
+                  "terms_page_hash": "dc896d23397764549fd09d6224bef6f7a7e991192172f1b55736955c82d79392",
+                  "terms_url": "https://kuchitanshrine.my.coocan.jp/profile.html",
+                  "title": "栃本の八幡宮",
+                  "url": "https://kuchitanshrine.my.coocan.jp/tochimotohachiman.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
           "name_raw": "八幡宮",
           "normalization": [
@@ -14105,11 +14446,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d71fc0221d8d1879da074580d27aec5647aff4485107a6e49f9ce7463b97c511",
-          "reading": "",
+          "reading": "はちまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/01.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kuchitanshrine.my.coocan.jp/tochimotohachiman.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -14150,6 +14491,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八幡宮",
             "wikipedia_article_refs": [],
@@ -14180,7 +14535,7 @@
             "status": "pending",
             "surface": "八幡宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八幡宮"
         },
         {
@@ -72017,12 +72372,123 @@
           "surface": "春日神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:29.237272+00:00",
+          "checked_at": "2026-11-26T13:12:58.585490+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「和伎座天乃夫岐賣神社」、郵便番号「619-0202」、所在地「木津川市平尾里屋敷54」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "e2988e21-a14f-5262-ba69-6dc5af2b2c59",
           "fetched_at": "2026-11-09T08:51:29.237272+00:00",
           "id": "a34e6f65-1c0c-515e-809d-e49a51919881",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "わきにますあめのふきめじんじゃ"
+              },
+              "expected_source_hash": "149887aa5f1f75fbbfe687c6bdef756d2736e4d1a99015b293b5bd814df55f6b",
+              "facility_id": "e2988e21-a14f-5262-ba69-6dc5af2b2c59",
+              "identity_match": {
+                "acquired_postal_code": "619-0202",
+                "agency_address": "木津川市平尾里屋敷54",
+                "agency_name": "和伎座天乃夫岐賣神社",
+                "documented_locality_omission": "山城町",
+                "geographic_witnesses": [
+                  {
+                    "checked_at": "2026-11-26T13:16:24.072080+00:00",
+                    "excerpt": "山城町平尾 ／ 619-0202",
+                    "locality_raw": "山城町平尾",
+                    "locator": "木津川市のヤ行、山城町平尾の町域・郵便番号",
+                    "municipality_raw": "木津川市",
+                    "page_hash": "36c7ee0dea78ef669efc32ac006c50c4f8f437fa77041b6265b1722b493190c3",
+                    "postal_code_raw": "619-0202",
+                    "source_publisher": "日本郵便株式会社",
+                    "title": "京都府　木津川市 | 日本郵便株式会社",
+                    "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1262140&mode=list&pref=26"
+                  },
+                  {
+                    "checked_at": "2026-11-26T13:16:26.982275+00:00",
+                    "excerpt": "平尾 ／ 木津川市山城町平尾に住所変更 ／ 619-0202",
+                    "locator": "相楽郡山城町のハ行、平尾の旧町域・新住所欄",
+                    "new_locality_raw": "木津川市山城町平尾",
+                    "old_locality_raw": "平尾",
+                    "page_hash": "8f4ecec596d8085d90fa4c095c2434e11b7ad10f5ae6f910658087e2494acbfe",
+                    "postal_code_raw": "619-0202",
+                    "source_publisher": "日本郵便株式会社",
+                    "title": "京都府　相楽郡山城町 | 日本郵便株式会社",
+                    "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1263611&cmp=1&pref=26"
+                  },
+                  {
+                    "checked_at": "2026-11-26T13:15:30.488293+00:00",
+                    "excerpt": "大字平尾小字△△ ／ 山城町平尾△△",
+                    "locator": "山城地域、旧住所・現住所の対照表の平尾行",
+                    "new_locality_raw": "山城町平尾△△",
+                    "new_municipality_raw": "木津川市",
+                    "old_locality_raw": "大字平尾小字△△",
+                    "old_municipality_raw": "相楽郡山城町",
+                    "page_hash": "182524eea8f186ab8c9c621ef2badd144774c1009486d76a6dc6e3e7ba28901f",
+                    "rights_reference": {
+                      "checked_at": "2026-11-26T13:14:27.634787+00:00",
+                      "locator": "著作権について",
+                      "page_hash": "dcc1003dd6dacd974338b996d49344af8f0214b6c86612369c0a58644ff15c85",
+                      "summary": "市は著作権法で認められる引用等を区別。社名・かな・住所の事実項目、該当位置および出典のみ記録。",
+                      "title": "著作権・免責 | 木津川市",
+                      "url": "https://www.city.kizugawa.lg.jp/0000000608.html"
+                    },
+                    "source_publisher": "木津川市",
+                    "title": "合併にともなう住所表示 | 木津川市",
+                    "url": "https://www.city.kizugawa.lg.jp/0000000783.html"
+                  }
+                ],
+                "reference_address": "木津川市山城町平尾里屋敷54",
+                "reference_name": "和伎座天乃夫岐賣神社"
+              },
+              "original": {
+                "address": "木津川市平尾里屋敷54",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
+                "name_raw": "和伎座天乃夫岐賣神社",
+                "reading_raw": ""
+              },
+              "reason": "市の涌出宮記事は正式名を「賣」で記し、明示全文かなと末尾の所在地を同じ記事に掲載する。府神社庁と市の54番地が対応し、日本郵便の庁掲載郵便番号・市の合併対照表も山城町平尾を示す。市の別記事の部分かなと国税庁の法人フリガナは別の掲載値として記録した。",
+              "references": [
+                {
+                  "address_locator": "本文末尾 block_index_32「涌出宮」「住所」",
+                  "address_raw": "木津川市山城町平尾里屋敷54",
+                  "alias_raw": "涌出宮",
+                  "checked_at": "2026-11-26T13:12:58.585490+00:00",
+                  "excerpt": "和伎座天乃夫岐賣神社（わきにますあめのふきめじんじゃ） ／ 涌出宮 ／ 住所：木津川市山城町平尾里屋敷54",
+                  "locator": "本文冒頭 block_index_1 の正式名と全文かな、および末尾 block_index_32 の涌出宮住所欄",
+                  "name_raw": "和伎座天乃夫岐賣神社",
+                  "name_reading_locator": "本文冒頭 block_index_1「正式には」に続く括弧付き名称",
+                  "page_hash": "68f2708f8bf06e5e1f76a7afda8e4c25e3a26cd1572d1ecf6532e1db6ba466b6",
+                  "reading_raw": "わきにますあめのふきめじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_reference": {
+                    "checked_at": "2026-11-26T13:14:27.634787+00:00",
+                    "locator": "著作権について",
+                    "page_hash": "dcc1003dd6dacd974338b996d49344af8f0214b6c86612369c0a58644ff15c85",
+                    "summary": "市は著作権法で認められる引用等を区別。社名・かな・住所の事実項目、該当位置および出典のみ記録。",
+                    "title": "著作権・免責 | 木津川市",
+                    "url": "https://www.city.kizugawa.lg.jp/0000000608.html"
+                  },
+                  "source_kind": "municipal_cultural_article",
+                  "source_publisher": "木津川市",
+                  "title": "番外編4「饗応の相撲」（涌出宮） | 木津川市",
+                  "url": "https://www.city.kizugawa.lg.jp/0000001995.html"
+                },
+                {
+                  "address_raw": "木津川市平尾里屋敷54",
+                  "checked_at": "2026-11-09T08:51:29.237272+00:00",
+                  "excerpt": "和伎座天乃夫岐賣神社 ／ 619-0202 ／ 木津川市平尾里屋敷54",
+                  "locator": "tr global occurrence=56; four direct td.gr12/td.shlist name/postal/address/phone",
+                  "name_raw": "和伎座天乃夫岐賣神社",
+                  "page_hash": "d347049fc751993ff86daffa48ea9b666731f3e385465994dda37e77afc28587",
+                  "postal_code_raw": "619-0202",
+                  "source_kind": "agency",
+                  "source_publisher": "京都府神社庁",
+                  "title": "京都府神社庁 木津川市の神社紹介",
+                  "url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
           "name_raw": "和伎座天乃夫岐賣神社",
           "normalization": [
@@ -72030,11 +72496,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d347049fc751993ff86daffa48ea9b666731f3e385465994dda37e77afc28587",
-          "reading": "",
+          "reading": "わきにますあめのふきめじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/33.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.city.kizugawa.lg.jp/0000001995.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -72075,6 +72541,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "わきにますあめのふきめじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "わきにますあめのふきめじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "和伎座天乃夫岐賣神社",
             "wikipedia_article_refs": [],
@@ -72105,7 +72585,7 @@
             "status": "pending",
             "surface": "和伎座天乃夫岐賣神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "和伎座天乃夫岐賣神社"
         },
         {
