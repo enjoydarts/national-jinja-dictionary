@@ -1024,6 +1024,12 @@ Geofabrikの11月24日版の北海道・中国地方も、同名かつ明示か�
 
 長野市の保留291登録を、計画と別冊13点208頁の文字層とOCRで比較しました。犀川神社は県教育委員会の資料原画像で、社名の独立した全文ルビ「さいがわじんじゃ」と、神社庁原欄に対応する安茂里4803番地を確認しました。3県計6件を補完し、全国の保留は**9,338 → 9,332登録**です。[長野市の文化財計画](https://www.city.nagano.nagano.jp/n151100/contents/p006092.html)・[長野県の文化財保護審議会諮問資料](https://www.pref.nagano.lg.jp/kyoiku/kyoiku/goannai/kaigiroku/h27/teireikai/documents/1003-4.pdf#page=14)
 
+### 丸亀市の日吉神社と高知2市の公開資料照合（2026-11-26）
+
+丸亀市の日吉神社は、市刊行資料の原画像に「ひよしじんじゃ」、経済産業省の法人情報には「ヒヨシジンジャ」と三条町515番地がありました。市の現行町名、町村の変遷表、県の宗教法人名簿を使って、神社庁の三條町515番地と照合しました。飯山町川原1907の同名社は別記録です。[丸亀市の町名資料](https://www.city.marugame.lg.jp/uploaded/attachment/27164.pdf)・[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf)・[経済産業省の日吉神社法人情報](https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5470005002691)
+
+高知市119・南国市52の保留登録を対象に、高知市の個別文化財資料8点と南国市勢要覧などPDF8点18頁を照合しました。南国市十市の新宮神社は、神社庁原欄の5937.5938番地と、国税庁個票の「５９３７番地・５９３８番地」の両方の番号が対応し、法人の全文フリガナ「シングウジンジャ」を採用しました。香川・高知の2件を補完し、全国の保留は**9,332 → 9,330登録**です。[南国市の市勢要覧](https://www.city.nankoku.lg.jp/life/life_dtl.php?hdnKey=6665)・[国税庁の新宮神社法人記録](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9490005004848)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

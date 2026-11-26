@@ -182,13 +182,19 @@ def _reference_matches(ref,facility,entry,changes):
         strict_registered_address=True
         if not re.search('[0-9０-９]',facility.get('address','')) or not re.search('[0-9０-９]',ref.get('address_raw','')):return False
     def address(value):
-        value=compare_address_units(re.sub(r'^〒\d{3}-\d{4}','',_comparison(value)))
+        value=re.sub(r'^〒\d{3}-\d{4}','',_comparison(value))
         value=value.removeprefix(facility.get('prefecture',''))
+        if facility.get('prefecture_code')=='37' and facility.get('municipality')=='丸亀市':
+            # The city records this locality as 三条町. Keep the parcel comparison exact.
+            value=re.sub(r'^丸亀市三條町(?=\d)','丸亀市三条町',value)
+        value=compare_address_units(value)
         # The town's own ordinances use both spellings (docs/DATA.md).
         # Compare only this Kochi municipality, with a literal parcel present.
         # Never rewrite stored text, shrine names, or a locality elsewhere.
         if facility.get('prefecture_code')=='39' and facility.get('prefecture')=='高知県':
             value=re.sub(r'^(高岡郡)?檮原町(?=.*[0-9])',r'\1梼原町',value)
+            # A period and a middle dot both separate printed parcel numbers.
+            value=re.sub(r'(?<=\d)(?:番地)?[.・](?=\d+番地$)','・',value)
         # Compare both endpoints of an explicitly marked parcel range.
         value = re.sub(r'自([0-9]+)(?:番地)?[.・]?至([0-9]+)(?:番地)?$', r'自\1至\2', value)
         value=re.sub(r'(?<=\d)[−‐‑‒–—―](?=\d)','-',value)
