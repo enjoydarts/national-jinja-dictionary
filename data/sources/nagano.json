@@ -202153,12 +202153,56 @@
           "surface": "小柴見神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:11.119751+00:00",
+          "checked_at": "2026-11-26T12:26:13.375435+00:00",
           "evidence": "犀川神社 380-0941 長野市大字安茂里4803",
           "facility_id": "29f6e95f-bc92-5ac0-b2be-ead33cd930c4",
           "fetched_at": "2026-11-08T14:31:11.119751+00:00",
           "id": "b284bed5-21c9-5a35-9ddc-3f9f7b3ba56e",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "さいがわじんじゃ"
+              },
+              "expected_source_hash": "9c078e2faee3605116fdf288bb497bf52efa83169ba607007d3814a652ddc3ba",
+              "facility_id": "29f6e95f-bc92-5ac0-b2be-ead33cd930c4",
+              "identity_match": {
+                "agency_address": "長野市大字安茂里4803",
+                "agency_name": "犀川神社",
+                "reference_address": "長野市大字安茂里4803番地",
+                "reference_name": "犀川神社"
+              },
+              "original": {
+                "address": "長野市大字安茂里4803",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/nagano.htm",
+                "name_raw": "犀川神社",
+                "reading_raw": ""
+              },
+              "reason": "県教育委員会の諮問資料の名称欄では「犀川神社」全体に独立した読みを付し、隣接する杜煙火のルビと分けている。同じ項目の所在地は長野市大字安茂里4803番地、保存団体所在地は別欄。市計画第2・5章も安茂里の同社の祭礼を扱う。原掲載の正式名・全地番に対応する読みのみ補完。",
+              "references": [
+                {
+                  "address_raw": "長野市大字安茂里4803番地",
+                  "checked_at": "2026-11-26T12:26:13.375435+00:00",
+                  "designation_raw": "犀川神社の杜煙火",
+                  "excerpt": "名称 犀川神社（さいがわじんじゃ）の杜煙火 ／ 所在地 長野市大字安茂里4803番地",
+                  "locator": "PDF物理14頁「諮問候補物件の概要」の名称欄と直後の所在地欄。資料画像で犀川神社・杜煙火の別ルビ範囲を確認。",
+                  "name_raw": "犀川神社",
+                  "page_hash": "227b0ed83bbdc52eb17c13f51f9b49c2a44e32463a17a6da6d2fb9eb0b96c1ff",
+                  "reading_raw": "さいがわじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "prefectural_cultural_property_consultation",
+                  "source_publisher": "長野県教育委員会 文化財・生涯学習課",
+                  "terms_url": "https://www.pref.nagano.lg.jp/koho/kensei/koho/homepage/riyo.html",
+                  "title": "長野県文化財保護審議会への諮問について",
+                  "url": "https://www.pref.nagano.lg.jp/kyoiku/kyoiku/goannai/kaigiroku/h27/teireikai/documents/1003-4.pdf",
+                  "visual_review": {
+                    "image_sha256": "91812714e7d6927b4573897965c72550cabba1ac06e96ab5e9ab48d90f677a21",
+                    "page": 14
+                  }
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/nagano.htm",
           "name_raw": "犀川神社",
           "normalization": [
@@ -202166,11 +202210,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "75a9b4dbe7bc2d37c710661c3ab0c00f879a8a8209cdba2e6deba4189d0773f4",
-          "reading": "",
+          "reading": "さいがわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/nagano.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.pref.nagano.lg.jp/kyoiku/kyoiku/goannai/kaigiroku/h27/teireikai/documents/1003-4.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -202235,6 +202279,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "さいがわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "さいがわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "犀川神社",
             "wikipedia_article_refs": [],
@@ -202265,7 +202323,7 @@
             "status": "pending",
             "surface": "犀川神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "犀川神社"
         },
         {

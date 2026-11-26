@@ -96852,12 +96852,104 @@
           "surface": "道祖神社"
         },
         {
-          "checked_at": "2026-11-08T14:32:49.574882+00:00",
+          "checked_at": "2026-11-26T12:24:24.018695+00:00",
           "evidence": "li.c-entries__item a[href=\"https://kagawakenjinjacho.or.jp/shrine/%e7%8e%89%e7%a9%8d%e7%a5%9e%e7%a4%be/\"]: 名称=玉積神社; 掲載読み=; 所在地=丸亀市西平山町247番地",
           "facility_id": "f0dec9dc-89e3-5f9a-a852-7f54c39685ee",
           "fetched_at": "2026-11-08T14:32:49.574882+00:00",
           "id": "f6688183-8bb9-5548-9142-06ee869eccaf",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "たまづみじんじゃ"
+              },
+              "expected_source_hash": "ce2eaabd4283e195c71b77a41a7ba43318704c9ad98342d7173e0efa4a0af591",
+              "facility_id": "f0dec9dc-89e3-5f9a-a852-7f54c39685ee",
+              "identity_match": {
+                "agency_address": "丸亀市西平山町247番地",
+                "agency_name": "玉積神社",
+                "method": "literal_full_shrine_name_and_full_parcel",
+                "reference_address": "香川県丸亀市西平山町247",
+                "reference_name": "玉積神社"
+              },
+              "original": {
+                "address": "丸亀市西平山町247番地",
+                "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/25/",
+                "name_raw": "玉積神社",
+                "reading_raw": ""
+              },
+              "reason": "独立公開ページの名前欄に社名全文かながあり、所在地欄の市・町・地番が原登録及び県宗教法人名簿に対応する。市公表の城乾地区計画の原画像に、同じ全文かなと西平山町も明示される。",
+              "references": [
+                {
+                  "address_raw": "香川県丸亀市西平山町247",
+                  "bytes": 36798,
+                  "checked_at": "2026-11-26T12:24:24.018695+00:00",
+                  "content_type": "text/html",
+                  "excerpt": "玉積神社（たまづみじんじゃ） ／ 香川県丸亀市西平山町247",
+                  "locator": "個別紹介の「名前」「所在地(住所)」の各欄",
+                  "name_raw": "玉積神社",
+                  "operator_reference": {
+                    "bytes": 4279,
+                    "checked_at": "2026-11-26T12:24:01.310430+00:00",
+                    "content_type": "text/html",
+                    "page_hash": "565b903c03bb25919073d1a650050e774e2add28964a2eb62ba06838b0c26b81",
+                    "title": "プロフィール＜パワスポコム＞",
+                    "url": "https://powspo.com/profile.htm"
+                  },
+                  "page_hash": "c5bff85f1944b0947867984619b414b1fe95e4ce424e7a880a1ab1d2a29da48b",
+                  "parent_page_hash": "a111df1737fe7b221b9f0b56bed90994c0b2f1d06456cc3bf0373a5fa3e08d8e",
+                  "parent_url": "https://powspo.com/god/010/",
+                  "policy_review": {
+                    "bytes": 4096,
+                    "checked_at": "2026-11-26T12:23:58.392679+00:00",
+                    "content_type": "text/html",
+                    "page_hash": "3881904afc74304fa9e14f4a333ea6e6ccd42d155d44325bba626526bbdb4e23",
+                    "title": "プライバシーポリシー＜パワスポコム＞",
+                    "url": "https://powspo.com/pp.htm"
+                  },
+                  "published_name_field_raw": "玉積神社（たまづみじんじゃ）",
+                  "reading_raw": "たまづみじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_note": "運営元の方針は文章・画像の無断転載を禁止。氏名・連絡先・文章・画像は転載せず、表示された神社名・かな・所在地の事実項目と出典のみ記録。",
+                  "source_kind": "independent_site_shrine_article",
+                  "source_publisher": "パワスポ.com",
+                  "title": "玉積神社-パワースポット情報（香川県)＜パワスポ.com＞",
+                  "url": "https://powspo.com/0/011/293/"
+                },
+                {
+                  "checked_at": "2026-11-26T05:09:40.997006+00:00",
+                  "excerpt": "玉積神社（西平山町）／たまづみじんじゃ",
+                  "locator": "印刷第4頁「4．神社」の見出しと全文ルビ",
+                  "name_raw": "玉積神社",
+                  "page_hash": "bd06a33e499dc8b218837f7810c7abe27a511fbde77112b26072cbd636d70c53",
+                  "parent_page_hash": "2adef0d55c28597145218bb585739458117463b5395de504f6c4626e8633c55c",
+                  "parent_url": "https://www.city.marugame.lg.jp/page/1507.html",
+                  "printed_locality_raw": "西平山町",
+                  "reading_raw": "たまづみじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_published_community_document",
+                  "title": "城乾地区まちづくり計画（第2次）",
+                  "url": "https://www.city.marugame.lg.jp/uploaded/attachment/2950.pdf",
+                  "visual_review": {
+                    "image_sha256": "e39908ed27252c613ad753f5f96e245f0afc9235f0f79c66779e8c0df8ab6724",
+                    "page": 5
+                  }
+                },
+                {
+                  "address_raw": "丸亀市西平山町２４７",
+                  "address_role": "religious_corporation_office_location",
+                  "checked_at": "2026-11-26T05:17:16.709707+00:00",
+                  "excerpt": "49 神社本庁 玉積神社 丸亀市西平山町２４７",
+                  "locator": "PDF第8頁、丸亀市のNo.49の法人名と所在地",
+                  "name_raw": "玉積神社",
+                  "page_hash": "bdb72aa45816a92bd8c4ba61c313c11236591c0b928eab0253c856ff0e4bcade",
+                  "source_kind": "prefectural_religious_corporations_register",
+                  "title": "香川県知事所轄宗教法人名簿 神道系",
+                  "url": "https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/25/",
           "name_raw": "玉積神社",
           "normalization": [
@@ -96865,11 +96957,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "c888edaeef43d64cc40967e0ae524a30137b9f641602ccd15f9175ea2d05713d",
-          "reading": "",
+          "reading": "たまづみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://kagawakenjinjacho.or.jp/shrine/page/25/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://powspo.com/0/011/293/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -96961,6 +97053,20 @@
             "prefecture_code": "37",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "たまづみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "たまづみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "玉積神社",
             "wikipedia_article_refs": [],
@@ -96991,7 +97097,7 @@
             "status": "pending",
             "surface": "玉積神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "玉積神社"
         },
         {
