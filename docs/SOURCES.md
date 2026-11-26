@@ -966,6 +966,14 @@ Geofabrikの11月24日版の北海道・中国地方も、同名かつ明示か�
 
 滋賀・佐賀・長崎各1件の読みを補完し、全国の保留は**9,352 → 9,349登録**です。
 
+### 長野・京都北部の文化財計画と現地記録（2026-11-26）
+
+松本・上田・伊那の文化財計画・資料編4点786頁のうち、766頁の文字層を市内の保留309登録と比較しました。114登録の社名が現れ、10登録で町域も同じ頁にありました。松本市の埴原神社は、旧市民記者記事で「はいばらじんじゃ」と中山5730を同じ段落に確認し、長野県神社庁の松塩筑支部と実詳細の鎮座地に照合しました。上田市の依田神社は計画の祭礼・保存会欄に社名があり、社名だけの全文かなは確認できませんでした。[松本市の文化財計画](https://www.city.matsumoto.nagano.jp/site/kyoiku/3695.html)・[上田市の文化財計画](https://www.city.ueda.nagano.jp/soshiki/shogaku/56183.html)・[伊那市の文化財計画](https://www.inacity.jp/shisei/kakushuplanshiryo/rekishibunka/nintei.html)・[長野県神社庁の埴原神社](https://www.nagano-jinjacho.jp/shibu/02cyusin/03syouenchiku/8145.html)
+
+京丹後・舞鶴・宮津の公開計画19点を確認し、以前の調査と異なる14点458頁を保留478登録と比較しました。文字層450頁と画像の文字認識8頁から、社名候補は131登録でした。京丹後市久美浜町鹿野224の八幡神社は現地の石燈籠調査に「はちまんじんじゃ」と同じ地番が記され、市の文化財表でも同地番の本殿と応永24年の石燈籠を確認しました。同市の佐野と丹後町平では計画に全文ルビがあり、地番との対応を引き続き確認します。[京丹後市の計画資料](https://www.city.kyotango.lg.jp/material/files/group/43/01dai1syou.pdf)・[京丹後市の文化財表](https://www.city.kyotango.lg.jp/material/files/group/5/H31_3keikaku.pdf)・[丹後地方の石燈籠調査](https://www.chibasuiseki.com/tourou-kyoto-kita.html)
+
+長野・京都各1件の読みを補完し、全国の保留は**9,349 → 9,347登録**です。
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
