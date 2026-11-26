@@ -50489,12 +50489,75 @@
           "surface": "稲荷神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:49.105955+00:00",
+          "checked_at": "2026-11-26T10:22:07.134414+00:00",
           "evidence": "〔彦根〕 新神社 〒5220037 彦根市岡町",
           "facility_id": "05262cff-a5ad-5468-a01d-bc1e04d2cf19",
           "fetched_at": "2026-11-08T14:30:49.105955+00:00",
           "id": "3bb01f34-60ca-58e8-a91b-5b022278f861",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しんじんじゃ"
+              },
+              "expected_source_hash": "59cb58c2418e3aaf66577cec4157312763d4e2d09e7ddb0795ce34fafad1d4dc",
+              "facility_id": "05262cff-a5ad-5468-a01d-bc1e04d2cf19",
+              "identity_match": {
+                "agency_address": "滋賀県彦根市岡町156.157",
+                "agency_name": "新神社",
+                "reference_address": "滋賀県彦根市岡町156",
+                "reference_name": "新神社"
+              },
+              "original": {
+                "address": "彦根市岡町",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=2",
+                "name_raw": "新神社",
+                "reading_raw": ""
+              },
+              "reason": "当社公式の由緒見出しと現在の呼び方で「しんじんじゃ」を確認し、公式所在地の岡町156と彦根市資料の同地番を照合した。神社庁の156.157及び法人月次の156番地157番地は両地番を原文で保持。旧称に関する「あらたじんじゃ」を現行本文と区別した。",
+              "references": [
+                {
+                  "address_raw": "滋賀県彦根市岡町156",
+                  "checked_at": "2026-11-26T10:22:07.134414+00:00",
+                  "excerpt": "しんじんじゃ 新神社 ／ 滋賀県彦根市岡町156",
+                  "local_nickname_raw": "しんぐうさん",
+                  "locator": "由緒見出しの全文かな、現在の呼び方の説明、当社の所在地欄",
+                  "name_raw": "新神社",
+                  "page_hash": "47e96d0607321e623a3178916751bdcd7f3ff169c8c62cb1d30bb440d853315c",
+                  "previous_name_reading_raw": "あらたじんじゃ",
+                  "reading_raw": "しんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "official_shrine",
+                  "title": "由緒・歴史 - 新神社",
+                  "url": "https://shinjinja.com/about/history/"
+                },
+                {
+                  "address_raw": "滋賀県彦根市岡町156.157",
+                  "checked_at": "2026-11-26T10:22:05.389312+00:00",
+                  "excerpt": "新神社 ／ シン ／ 滋賀県彦根市岡町156.157",
+                  "locator": "神社名見出しの括弧内・鎮座地欄",
+                  "name_raw": "新神社",
+                  "page_hash": "b16ff5f6ced1fe3f5a0475017fb2a6da804411312dac02115a60c2ba57b54e83",
+                  "reading_raw": "シン",
+                  "reading_scope": "stem_without_shrine_suffix",
+                  "source_kind": "official_agency",
+                  "title": "新神社 - 滋賀県神社庁",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=153"
+                },
+                {
+                  "address_raw": "彦根市岡町156",
+                  "checked_at": "2026-11-26T10:22:05.569825+00:00",
+                  "excerpt": "新神社（彦根市岡町156）",
+                  "locator": "主な散策地・新神社の行の所在地",
+                  "name_raw": "新神社",
+                  "page_hash": "b8e3dedf8daa73eff49ebd11b33f5c5e0524536bc377b073d73e824f74a0303d",
+                  "source_kind": "municipal_heritage_notice",
+                  "title": "ひこね歴史探索ウォーク 雨壷山とその周辺を巡る - 彦根市",
+                  "url": "https://www.city.hikone.lg.jp/kanko/rekishi/7/31067.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=2",
           "name_raw": "新神社",
           "normalization": [
@@ -50502,11 +50565,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "721a94dc54ff7c794f68db4a92215d011f40aa198b4de9264c4baf72e9c5b17a",
-          "reading": "",
+          "reading": "しんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=2",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shinjinja.com/about/history/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -50605,6 +50668,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "新神社",
             "wikipedia_article_refs": [],
@@ -50635,7 +50712,7 @@
             "status": "pending",
             "surface": "新神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "新神社"
         },
         {
@@ -157996,12 +158073,86 @@
           "surface": "八千鉾神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:06.266083+00:00",
+          "checked_at": "2026-11-26T10:22:39.469702+00:00",
           "evidence": "〔蒲生〕 鈴休神社 〒5291644 蒲生郡日野町内池",
           "facility_id": "7ac9e075-6f1b-568d-a4ed-ca20d0bbeb0d",
           "fetched_at": "2026-11-08T14:31:06.266083+00:00",
           "id": "4c8bc02e-3b03-5e78-a3e2-5e247681864b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すずやみじんじゃ"
+              },
+              "expected_source_hash": "58fb9f4bab841d32ee7b0afa38fbe687ba19be1187c1bee5b61e5f450f07a69e",
+              "facility_id": "7ac9e075-6f1b-568d-a4ed-ca20d0bbeb0d",
+              "identity_match": {
+                "agency_address": "滋賀県蒲生郡日野町内池666",
+                "agency_name": "鈴休神社",
+                "reference_address": "蒲生郡日野町内池 666",
+                "reference_name": "鈴休神社"
+              },
+              "original": {
+                "address": "蒲生郡日野町内池",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=8",
+                "name_raw": "鈴休神社",
+                "reading_raw": ""
+              },
+              "reason": "國學院大學公開論考の表1で鈴休神社・内池666・全文かなが同じ行。神社庁の鎮座地と国税庁月次は同じ666を示し、日野町文化財計画も内池の鈴休神社を掲載。論考の所在地は平成7年調査時点と明記されている。",
+              "references": [
+                {
+                  "address_raw": "蒲生郡日野町内池 666",
+                  "checked_at": "2026-11-26T10:22:39.469702+00:00",
+                  "excerpt": "鈴休神社 ／ 蒲生郡日野町内池 666 ／ すずやみじんじゃ",
+                  "locator": "PDF14頁（印刷196頁）表1「阿須波神を祀る神社」滋賀県行、神社名・鎮座地・神社名読み方の各列",
+                  "name_raw": "鈴休神社",
+                  "page_hash": "474ce5fa9c2f6806e19e6481494fc20a64af7a48b86d965938c9e538c43b9bd5",
+                  "pdf_page": 14,
+                  "printed_page": 196,
+                  "publication_year": 2020,
+                  "publisher": "國學院大學",
+                  "reading_raw": "すずやみじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_address_as_of": "平成7年全国神社祭祀祭礼総合調査",
+                  "source_authorship": "藤本頼生",
+                  "source_kind": "university_research_publication",
+                  "title": "『古事記』神代巻に登場する異名同種神の解釈の再整理と地域分布 - 國學院大學公開論考",
+                  "url": "https://kojiki.kokugakuin.ac.jp/wp-content/uploads/2020/07/64ef5ecd0984ca1baebf65dc341b1ffc.pdf",
+                  "visual_review": {
+                    "address_field": "鎮座地",
+                    "image_sha256": "1e9e9de19b8e0503eb2212c11d4e3c6faefabade7b23434cabcdeebfb55200d9",
+                    "reading_field": "神社名読み方",
+                    "status": "row_visually_verified"
+                  }
+                },
+                {
+                  "address_raw": "滋賀県蒲生郡日野町内池666",
+                  "checked_at": "2026-11-26T10:22:08.145630+00:00",
+                  "excerpt": "鈴休神社 ／ スズヤミ ／ 滋賀県蒲生郡日野町内池666",
+                  "locator": "神社名見出しの括弧内・鎮座地欄",
+                  "name_raw": "鈴休神社",
+                  "page_hash": "c7f8e92ddc65eaa8a99320803550928f6d566b651784976a460681699975dd5a",
+                  "reading_raw": "スズヤミ",
+                  "reading_scope": "stem_without_shrine_suffix",
+                  "source_kind": "official_agency",
+                  "title": "鈴休神社 - 滋賀県神社庁",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=759"
+                },
+                {
+                  "address_raw": "内池",
+                  "checked_at": "2026-11-26T10:22:06.162453+00:00",
+                  "excerpt": "46 鈴休神社",
+                  "locator": "PDF84頁・内池地図の番号46および48",
+                  "name_raw": "鈴休神社",
+                  "page_hash": "89ac244df0196f12e7d1fe0803179ba1518542f3d5a895b625be89136995ce98",
+                  "pdf_page": 84,
+                  "source_kind": "municipal_cultural_property_inventory",
+                  "title": "日野町文化財保存活用地域計画",
+                  "url": "https://www.town.shiga-hino.lg.jp/cmsfiles/contents/0000008/8039/hino-bunkazaikeikaku_20.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=8",
           "name_raw": "鈴休神社",
           "normalization": [
@@ -158009,11 +158160,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d72d0353f20ec234f6d78ac60c4762bac7f66f85e020db107408460636dfe9c6",
-          "reading": "",
+          "reading": "すずやみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=8",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kojiki.kokugakuin.ac.jp/wp-content/uploads/2020/07/64ef5ecd0984ca1baebf65dc341b1ffc.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -158135,6 +158286,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すずやみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すずやみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "鈴休神社",
             "wikipedia_article_refs": [],
@@ -158165,7 +158330,7 @@
             "status": "pending",
             "surface": "鈴休神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "鈴休神社"
         },
         {

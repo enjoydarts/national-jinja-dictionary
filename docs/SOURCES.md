@@ -908,6 +908,18 @@ Geofabrikの11月24日版の中部・近畿の公開地図データで、保留�
 
 4県で合計16登録を補完し、全国の保留は**9,384 → 9,368登録**です。
 
+### 滋賀・京都の読みと公開地図の位置照合（2026-11-26）
+
+滋賀は彦根市岡町156の新神社「しんじんじゃ」を神社公式の由緒と市の資料で、日野町内池666の鈴休神社「すずやみじんじゃ」を國學院大學の公開論考の同一行で確認しました。意冨布良神社は同地番の資料に読みの差があり、都久夫須麻神社は地番差や旧資料のかな表記が残るため、保留としました。[新神社公式](https://shinjinja.com/about/history/)・[彦根市の資料](https://www.city.hikone.lg.jp/kanko/rekishi/7/31067.html)・[國學院大學の論考](https://kojiki.kokugakuin.ac.jp/wp-content/uploads/2020/07/64ef5ecd0984ca1baebf65dc341b1ffc.pdf)
+
+京都は押西洞院町614の御金神社「みかねじんじゃ」を京都市交通局・平安女学院大学の冊子と神社公式で、上京区京都御苑の白雲神社「しらくもじんじゃ」を京都市歴史資料館、市の審議会資料、神社庁の原ページで照合しました。薮田神社「やぶたじんじゃ」は、地域調査記事が同じ鎮座地の社を表題では「薮田」、読み付きの社名欄では「籔田」と表記しています。両表記と、宗教法人の所在地が鎮座地と異なることを補正の調査記録に残しました。[京都市交通局の冊子](https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000196/196576/23.pdf)・[御金神社公式](https://mikane-jinja.or.jp/access/)・[京都市歴史資料館](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/nenpyou/htmlsheet/bunka07.html)・[口丹波の社](https://kuchitanshrine.my.coocan.jp/yabuta.html)
+
+中部・近畿・東北・九州のGeofabrik配布データを、geoBoundariesの2017年の境界で絞り込みました。かな付きで同名候補がある地物は順に71、81、6、21件で、保留登録の県と地物の位置が一致したのは5、45、0、11件でした。近畿の2地物は位置を算出できませんでした。同県になっても同名別社が残るため、地図は候補の抽出に使い、上記の個別資料で読みと所在地を確定しました。地図データの提供はOpenStreetMap contributors（ODbL 1.0）、行政界はgeoBoundaries、絞り込みと集計は本プロジェクトです。[Geofabrikの国内配布一覧](https://download.geofabrik.de/asia/japan/)・[OpenStreetMapのライセンス](https://www.openstreetmap.org/copyright)・[geoBoundaries](https://www.geoboundaries.org/)
+
+国土地理院の『地名集日本』は行政名・居住地名・自然地名などを対象とし、神社施設の分類がありません。御金神社と大月市の子神社候補付近で公開実験タイル4点を試し、取得できた3点を調べました。注記にはかな欄がありましたが、両対象の社名は確認できませんでした。[地名集日本](https://web2.gsi.go.jp/kihonjohochousa/gazetteer.html)・[国土地理院のタイル仕様](https://github.com/gsi-cyberjapan/vector-tile-experiment)
+
+2府県の5登録を補完し、全国の保留は**9,368 → 9,363登録**です。
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

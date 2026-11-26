@@ -651312,6 +651312,1059 @@
               "verified_proposals": 1
             }
           }
+        },
+        {
+          "baseline_commit": "b9d2dec",
+          "by_prefecture_before": {
+            "01": 347,
+            "02": 660,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 2,
+            "19": 996,
+            "20": 1606,
+            "21": 1,
+            "22": 2,
+            "23": 18,
+            "25": 865,
+            "26": 1051,
+            "28": 9,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 540,
+            "38": 1,
+            "39": 1623,
+            "40": 123,
+            "41": 90,
+            "42": 850,
+            "43": 518,
+            "47": 3
+          },
+          "checked_at": "2026-11-26T10:30:45.603628+00:00",
+          "dictionary_entries": {
+            "3bb01f34-60ca-58e8-a91b-5b022278f861": {
+              "address": "彦根市岡町",
+              "facility_id": "05262cff-a5ad-5468-a01d-bc1e04d2cf19",
+              "name": "新神社",
+              "prefecture": "滋賀県",
+              "prefecture_code": "25",
+              "reading": "しんじんじゃ"
+            },
+            "43884214-3ee4-5843-b924-1ca8095ba71b": {
+              "address": "京都市上京区京都御苑",
+              "facility_id": "d4fde95b-f79c-5f8e-9aa3-3d324c418757",
+              "name": "白雲神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "しらくもじんじゃ"
+            },
+            "4a131b81-ddac-5669-bece-61ce0ef24d8d": {
+              "address": "南丹市園部町南大谷新林30",
+              "facility_id": "e20a5651-52c8-59b1-99c9-d023945d587e",
+              "name": "薮田神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "やぶたじんじゃ"
+            },
+            "4c8bc02e-3b03-5e78-a3e2-5e247681864b": {
+              "address": "蒲生郡日野町内池",
+              "facility_id": "7ac9e075-6f1b-568d-a4ed-ca20d0bbeb0d",
+              "name": "鈴休神社",
+              "prefecture": "滋賀県",
+              "prefecture_code": "25",
+              "reading": "すずやみじんじゃ"
+            },
+            "935e30b1-87d7-5850-8a39-ea6b97ff4e13": {
+              "address": "京都市中京区西洞院通御池上ル押西洞院町614",
+              "facility_id": "faf9b234-6642-5163-8950-3e092d2b1055",
+              "name": "御金神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "みかねじんじゃ"
+            }
+          },
+          "pending_after": 9363,
+          "pending_before": 9368,
+          "prefecture_scopes": {
+            "kyoto": [
+              "26"
+            ],
+            "root": [
+              "all"
+            ],
+            "shiga": [
+              "25"
+            ]
+          },
+          "reading_supplements_by_investigation": {
+            "kyoto": 3,
+            "root": 0,
+            "shiga": 2
+          },
+          "reduced_by_prefecture": {
+            "25": 2,
+            "26": 3
+          },
+          "source_investigations": {
+            "kyoto": {
+              "baseline": {
+                "namespace": "kyoto",
+                "national_pending": 9368,
+                "pending_input": "njd-1126k",
+                "prefecture_pending": 1051
+              },
+              "confirmed": [
+                {
+                  "agency_address": "京都市中京区西洞院通御池上ル押西洞院町614",
+                  "entry_id": "935e30b1-87d7-5850-8a39-ea6b97ff4e13",
+                  "name": "御金神社",
+                  "reading": "みかねじんじゃ",
+                  "reason": "京都市交通局と大学の共同冊子に「みかねじんじゃ」と通り名・614まで明記され、御金神社公式の現行参拝案内も同じ全所在地。旧調査に現れた618-2の所在地を流用しない。",
+                  "source": "https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000196/196576/23.pdf"
+                },
+                {
+                  "agency_address": "京都市上京区京都御苑",
+                  "entry_id": "43884214-3ee4-5843-b924-1ca8095ba71b",
+                  "name": "白雲神社",
+                  "reading": "しらくもじんじゃ",
+                  "reason": "京都市歴史資料館の「京都御苑」の節（上京区京都御苑）に白雲神社の全文かながある。京都府神社庁の現行原一覧を再取得し、同名・京都市上京区京都御苑の印刷行と基準のページハッシュ一致を確認。京都市の審議会資料も独立に同名、上京区、京都御苑と明示。",
+                  "source": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/nenpyou/htmlsheet/bunka07.html"
+                },
+                {
+                  "agency_address": "南丹市園部町南大谷新林30",
+                  "entry_id": "4a131b81-ddac-5669-bece-61ce0ef24d8d",
+                  "name": "薮田神社",
+                  "reading": "やぶたじんじゃ",
+                  "reason": "同一の「口丹波の社」個別ページに、表題・由緒の「薮田神社」、神社名表「籔田神社（やぶたじんじゃ）」と全所在地が明記される。読みのみ補完して庁の原表記は保持する。",
+                  "source": "https://kuchitanshrine.my.coocan.jp/yabuta.html"
+                }
+              ],
+              "confirmed_count": 3,
+              "registry_location_observations": [
+                {
+                  "archive_sha256": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                  "archive_snapshot": "20261030",
+                  "csv_row": 101976,
+                  "decision": "住居表示等の対応を確定せず、読み根拠の個別紹介の鎮座地および神社庁原所在地の新林30とは別の観測を保持。",
+                  "name": "薮田神社",
+                  "registry_address": "京都府南丹市園部町南大谷細川２２番地",
+                  "registry_location_role": "宗教法人の所在地欄",
+                  "registry_reading_raw": "",
+                  "registry_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                }
+              ],
+              "retained_holds": [
+                {
+                  "name": "雙栗神社",
+                  "reason": "現行原住所に字の標識差があり、双栗55の所在地を同条件で確定できない。",
+                  "source": "神社本庁のrobots.txtが503。久御山町の既存取得停止を維持。"
+                },
+                {
+                  "linked": {
+                    "bytes": 17230,
+                    "fetched_at": "2026-11-26T10:23:03.269749+00:00",
+                    "sha256": "87a4b266e9992527101580acd5fe892ad3311b42915920fa94ba21e83eae10b3",
+                    "status": 200,
+                    "url": "https://kuchitanshrine.my.coocan.jp/katsuragijinja.html"
+                  },
+                  "name": "葛城神社",
+                  "reason": "神社庁13、個別記事57。受付地・鎮座地の対応が不明。"
+                },
+                {
+                  "linked": {
+                    "bytes": 3301459,
+                    "fetched_at": "2026-11-26T10:23:04.148921+00:00",
+                    "sha256": "bf3f42ddc757297514d037b4fc3a72e59b15798fbabde0af38ed724f888765fd",
+                    "status": 200,
+                    "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/wp-content/uploads/2022/05/bunkazai36.pdf"
+                  },
+                  "name": "清瀧宮",
+                  "reason": "東西の本殿文化財名についたルビは確認できるが、神社名の独立読みを棟名から切り出さない。"
+                }
+              ],
+              "schema_version": 1,
+              "source_scope": "OSMの名前は検索対象の抽出だけに使用。参照は取得本文。",
+              "terms": {
+                "bytes": 21069,
+                "fetched_at": "2026-11-26T10:24:44.055502+00:00",
+                "sha256": "650326a3e819e2fda13884e504ee3ee4a4df7cb28b728235263f4e623e04dd95",
+                "status": 200,
+                "url": "https://www.city.kyoto.lg.jp/main/site_policy/0000000005.html"
+              },
+              "validation": "現行 correction_problems、apply_corrections、ensure_public_metadata を確認。"
+            },
+            "root": {
+              "checked_at": "2026-11-26T10:30:42.703897+00:00",
+              "gsi_public_sources": {
+                "experimental_tiles": {
+                  "decision": "注記にkana欄はあるが、取得したタイルには対象神社の名称がない。取得した公共施設タイルにはかな欄がない。対象2か所の試行で、全国の地物種別は一般化しない。",
+                  "official_documentation": "https://github.com/gsi-cyberjapan/vector-tile-experiment",
+                  "target_context": "京都市の御金神社・大月市の子神社候補付近のz15注記・公共施設タイルを各1点試した。",
+                  "terms_url": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+                  "tiles": {
+                    "kyoto_anno": {
+                      "checked_at": "2026-11-26T10:29:42.229559+00:00",
+                      "feature_count": 11,
+                      "features_with_explicit_kana": 11,
+                      "identical_target_label_count": 0,
+                      "mime": "application/json",
+                      "observed_property_names": [
+                        "annoCtg",
+                        "arrng",
+                        "arrngAgl",
+                        "class",
+                        "ftCode",
+                        "gaiji",
+                        "kana",
+                        "knj",
+                        "orgGILvl",
+                        "rID"
+                      ],
+                      "page_hash": "a6270f7549a3f88e31919190b344989bd0ff2028a575fcb61cec45afe4f4e450",
+                      "status": "retrieved",
+                      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_anno/15/28740/12978.geojson"
+                    },
+                    "kyoto_pfpt": {
+                      "checked_at": "2026-11-26T10:29:44.935252+00:00",
+                      "feature_count": 12,
+                      "features_with_explicit_kana": 0,
+                      "identical_target_label_count": 0,
+                      "mime": "application/json",
+                      "observed_property_names": [
+                        "Address",
+                        "admCode",
+                        "class",
+                        "lfSpanFr",
+                        "orgGILvl",
+                        "pfName",
+                        "type"
+                      ],
+                      "page_hash": "210b80656f4d42ba8db05ecf7a5ee76d6d1573519354b5f0356de03bcafeec52",
+                      "status": "retrieved",
+                      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_pfpt/15/28740/12978.geojson"
+                    },
+                    "otsuki_anno": {
+                      "checked_at": "2026-11-26T10:29:47.633816+00:00",
+                      "feature_count": 1,
+                      "features_with_explicit_kana": 1,
+                      "identical_target_label_count": 0,
+                      "mime": "application/json",
+                      "observed_property_names": [
+                        "annoCtg",
+                        "arrng",
+                        "arrngAgl",
+                        "class",
+                        "ftCode",
+                        "gaiji",
+                        "kana",
+                        "knj",
+                        "orgGILvl",
+                        "rID"
+                      ],
+                      "page_hash": "5bcb9b060ed07fab92b849c9c1a2bfd6ee5b2c0171e2817d79f7b72aee6ef870",
+                      "status": "retrieved",
+                      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_anno/15/29022/12912.geojson"
+                    },
+                    "otsuki_pfpt": {
+                      "reason": "HTTP 404: https://cyberjapandata.gsi.go.jp/xyz/experimental_pfpt/15/29022/12912.geojson",
+                      "status": "stopped",
+                      "url": "https://cyberjapandata.gsi.go.jp/xyz/experimental_pfpt/15/29022/12912.geojson"
+                    }
+                  }
+                },
+                "gazetteer": {
+                  "check": "Introductory description and classes on PDF pages 3–4. National coverage of selected administrative, inhabited-place and natural names, no shrine facility class.",
+                  "edition": 2021,
+                  "public_index": "https://web2.gsi.go.jp/kihonjohochousa/gazetteer.html",
+                  "url": "https://web2.gsi.go.jp/common/000238259.pdf"
+                }
+              },
+              "openstreetmap_spatial_screen": {
+                "attribution": "© OpenStreetMap contributors",
+                "boundary_attribution": "geoBoundaries (Runfola et al.); OpenStreetMap contributors and Wambacher, as identified by the collection metadata.",
+                "boundary_documentation_url": "https://www.geoboundaries.org/",
+                "boundary_sources": {
+                  "adm1": {
+                    "boundary_year": "2017",
+                    "checked_at": "2026-11-26T10:18:11.197796+00:00",
+                    "license_from_metadata": "Open Data Commons Open Database License 1.0",
+                    "mime": "application/json",
+                    "original_data_source": "OpenStreetMap, Wambacher",
+                    "original_rights_url": "https://www.openstreetmap.org/copyright",
+                    "page_hash": "bcf0b10a256bfff0c8574328f61edaeb61e8f0e086ab39807f258b6979f3c56b",
+                    "status": "retrieved",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/JPN/ADM1/"
+                  },
+                  "adm2": {
+                    "boundary_year": "2017",
+                    "checked_at": "2026-11-26T10:18:14.578408+00:00",
+                    "license_from_metadata": "Creative Commons Attribution-ShareAlike 2.0",
+                    "mime": "application/json",
+                    "original_data_source": "OpenStreetMap, Wambacher",
+                    "original_rights_url": "https://www.openstreetmap.org/copyright",
+                    "page_hash": "2f0d35139dac51f8f5eba4be2920c76e747439fe4bc18c27de15dc54f7739629",
+                    "status": "retrieved",
+                    "url": "https://www.geoboundaries.org/api/current/gbOpen/JPN/ADM2/"
+                  }
+                },
+                "regions": {
+                  "chubu": {
+                    "baseline_pending_in_distribution_scope": 2672,
+                    "baseline_pending_nationwide": 9384,
+                    "distribution": {
+                      "attribution": "© OpenStreetMap contributors",
+                      "download": {
+                        "checked_at": "2026-11-26T10:07:54.533789+00:00",
+                        "page_hash": "8ecc7e2bdb9859d5df5135cd3fc809ff81e424112e6cc369a61f5c06af000621",
+                        "url": "https://download.geofabrik.de/asia/japan/chubu/chubu-261124.osm.pbf"
+                      },
+                      "issued_file": "chubu-261124.osm.pbf",
+                      "landing": {
+                        "checked_at": "2026-11-26T10:04:24.420781+00:00",
+                        "page_hash": "18f43f509696e3ff2a2911bf82bf86727c1e84d8f3095990517edc7ff4d74463",
+                        "url": "https://download.geofabrik.de/asia/japan/chubu/"
+                      },
+                      "length_bytes": 522769936,
+                      "md5_transport_check": "8b6ce0372e1ad3e599c3dcad473fcdd7",
+                      "published_checksum": {
+                        "checked_at": "2026-11-26T10:04:29.818022+00:00",
+                        "page_hash": "0ad4111093f9936ae3a8a16cd9cfe1c341a9174e8a1c51b0dc160930b5a8ab96",
+                        "url": "https://download.geofabrik.de/asia/japan/chubu/chubu-261124.osm.pbf.md5"
+                      },
+                      "rights": {
+                        "checked_at": "2026-11-26T10:04:28.942819+00:00",
+                        "page_hash": "0743942caf33218fe1f8073059099bfaa0ca31ba2b03f8dd03f44655d58c69ad",
+                        "url": "https://www.openstreetmap.org/copyright"
+                      }
+                    },
+                    "position_screening_counts": {
+                      "candidate_objects": 71,
+                      "distinct_pending_ids_with_prefecture_only": 86,
+                      "objects_with_same_name_candidate_in_located_prefecture": 5,
+                      "pairs_with_prefecture_only": 87,
+                      "unique_prefecture_region": 71
+                    },
+                    "screening_counts": {
+                      "name:ja-Hira": 428,
+                      "name_candidate_objects": 3356,
+                      "name_candidate_pairs": 128272,
+                      "named_with_kana_and_match": 71,
+                      "named_with_kana_tag": 428,
+                      "osm_objects": 75404427,
+                      "shinto_named": 6993,
+                      "shrine_or_worship_named": 14330
+                    }
+                  },
+                  "kansai": {
+                    "baseline_pending_in_distribution_scope": 1926,
+                    "baseline_pending_nationwide": 9384,
+                    "distribution": {
+                      "attribution": "© OpenStreetMap contributors",
+                      "download": {
+                        "checked_at": "2026-11-26T10:13:11.258559+00:00",
+                        "page_hash": "745d5d38483c581199dcec55a396d25ddcb61109b6c5cefc34e861956b4e62a2",
+                        "url": "https://download.geofabrik.de/asia/japan/kansai/kansai-261124.osm.pbf"
+                      },
+                      "issued_file": "kansai-261124.osm.pbf",
+                      "landing": {
+                        "checked_at": "2026-11-26T10:08:35.691553+00:00",
+                        "page_hash": "a9af2ca4a8ed383cc7251acb579aa7e3f4b11831e9a16d82152e5dd1da781fee",
+                        "url": "https://download.geofabrik.de/asia/japan/kansai/"
+                      },
+                      "length_bytes": 356476990,
+                      "md5_transport_check": "3d4c9d92cf1b998530b79aabaf85fc00",
+                      "published_checksum": {
+                        "checked_at": "2026-11-26T10:08:39.182171+00:00",
+                        "page_hash": "d6468315094e5f97fb3ee155b2215d0a2609c975a0fe73d889248675ff9e98a6",
+                        "url": "https://download.geofabrik.de/asia/japan/kansai/kansai-261124.osm.pbf.md5"
+                      },
+                      "rights": {
+                        "checked_at": "2026-11-26T10:04:28.942819+00:00",
+                        "page_hash": "0743942caf33218fe1f8073059099bfaa0ca31ba2b03f8dd03f44655d58c69ad",
+                        "url": "https://www.openstreetmap.org/copyright"
+                      }
+                    },
+                    "position_screening_counts": {
+                      "candidate_objects": 81,
+                      "distinct_pending_ids_with_prefecture_only": 323,
+                      "objects_with_same_name_candidate_in_located_prefecture": 45,
+                      "pairs_with_prefecture_only": 406,
+                      "position_unavailable": 2,
+                      "unique_prefecture_region": 79
+                    },
+                    "screening_counts": {
+                      "name:ja-Hira": 699,
+                      "name:ja_kana": 1,
+                      "name_candidate_objects": 2358,
+                      "name_candidate_pairs": 64655,
+                      "named_with_kana_and_match": 81,
+                      "named_with_kana_tag": 699,
+                      "osm_objects": 54874809,
+                      "shinto_named": 7111,
+                      "shrine_or_worship_named": 16322
+                    }
+                  },
+                  "kyushu": {
+                    "baseline_pending_in_distribution_scope": 1584,
+                    "baseline_pending_nationwide": 9368,
+                    "distribution": {
+                      "attribution": "© OpenStreetMap contributors",
+                      "download": {
+                        "checked_at": "2026-11-26T10:28:37.137992+00:00",
+                        "page_hash": "14196ab5f953bea12773dbf205c974010e1842885e31155e079591800e7dac7e",
+                        "url": "https://download.geofabrik.de/asia/japan/kyushu/kyushu-261124.osm.pbf"
+                      },
+                      "issued_file": "kyushu-261124.osm.pbf",
+                      "landing": {
+                        "checked_at": "2026-11-26T10:23:43.961678+00:00",
+                        "page_hash": "f86c5b2c01253c6c1ffca69f482adaee95a071226f0c78419037ee476c74df22",
+                        "url": "https://download.geofabrik.de/asia/japan/kyushu/"
+                      },
+                      "length_bytes": 318645133,
+                      "md5_transport_check": "18bef60879099bd3ac055b3c7934e4c8",
+                      "published_checksum": {
+                        "checked_at": "2026-11-26T10:23:47.493596+00:00",
+                        "page_hash": "28de86f27d69ca22f8dac7fe71bb36701932c2331f203e65dceed92c0f527436",
+                        "url": "https://download.geofabrik.de/asia/japan/kyushu/kyushu-261124.osm.pbf.md5"
+                      },
+                      "rights": {
+                        "checked_at": "2026-11-26T10:04:28.942819+00:00",
+                        "page_hash": "0743942caf33218fe1f8073059099bfaa0ca31ba2b03f8dd03f44655d58c69ad",
+                        "url": "https://www.openstreetmap.org/copyright"
+                      }
+                    },
+                    "position_screening_counts": {
+                      "candidate_objects": 21,
+                      "distinct_pending_ids_with_prefecture_only": 36,
+                      "objects_with_same_name_candidate_in_located_prefecture": 11,
+                      "pairs_with_prefecture_only": 38,
+                      "unique_prefecture_region": 21
+                    },
+                    "screening_counts": {
+                      "name:ja-Hira": 204,
+                      "name_candidate_objects": 664,
+                      "name_candidate_pairs": 9004,
+                      "named_with_kana_and_match": 21,
+                      "named_with_kana_tag": 204,
+                      "osm_objects": 45991142,
+                      "shinto_named": 2406,
+                      "shrine_or_worship_named": 4251
+                    }
+                  },
+                  "tohoku": {
+                    "baseline_pending_in_distribution_scope": 661,
+                    "baseline_pending_nationwide": 9368,
+                    "distribution": {
+                      "attribution": "© OpenStreetMap contributors",
+                      "download": {
+                        "checked_at": "2026-11-26T10:22:00.893216+00:00",
+                        "page_hash": "722b17439e8d34f709c22a8cd8f6e415e1db67df92da9986438d664a7dfc3a19",
+                        "url": "https://download.geofabrik.de/asia/japan/tohoku/tohoku-261124.osm.pbf"
+                      },
+                      "issued_file": "tohoku-261124.osm.pbf",
+                      "landing": {
+                        "checked_at": "2026-11-26T10:18:46.333207+00:00",
+                        "page_hash": "89d5c3e5effe0ec95e26275de91a6ffc5625475cea991b2569e78e63531c7c41",
+                        "url": "https://download.geofabrik.de/asia/japan/tohoku/"
+                      },
+                      "length_bytes": 313141337,
+                      "md5_transport_check": "648e0f1a0df9ef033e9f60af488d6636",
+                      "published_checksum": {
+                        "checked_at": "2026-11-26T10:18:49.853307+00:00",
+                        "page_hash": "bced232154d2d692b3a3db99fcd4e83a28df41d09e37e96692fb2769f61dd218",
+                        "url": "https://download.geofabrik.de/asia/japan/tohoku/tohoku-261124.osm.pbf.md5"
+                      },
+                      "rights": {
+                        "checked_at": "2026-11-26T10:04:28.942819+00:00",
+                        "page_hash": "0743942caf33218fe1f8073059099bfaa0ca31ba2b03f8dd03f44655d58c69ad",
+                        "url": "https://www.openstreetmap.org/copyright"
+                      }
+                    },
+                    "position_screening_counts": {
+                      "candidate_objects": 6,
+                      "distinct_pending_ids_with_prefecture_only": 0,
+                      "unique_prefecture_region": 6
+                    },
+                    "screening_counts": {
+                      "name:ja-Hira": 103,
+                      "name_candidate_objects": 1652,
+                      "name_candidate_pairs": 47525,
+                      "named_with_kana_and_match": 6,
+                      "named_with_kana_tag": 103,
+                      "osm_objects": 45320475,
+                      "shinto_named": 5380,
+                      "shrine_or_worship_named": 8776
+                    }
+                  }
+                },
+                "scope": "Geofabrik releases dated 2026-11-24, completed regions listed below. Named shrine and worship features with an explicitly recorded kana tag and name match were screened for location.",
+                "screening_only": "Approximate point-in-polygon matching with 2017 boundaries reduced cross-prefecture homonyms. Distinct pending IDs can still identify multiple shrines. No reading or facility was adopted from the map."
+              }
+            },
+            "shiga": {
+              "baseline_commit": "8b920dc",
+              "baseline_nationwide_pending": 9384,
+              "checked_at": "2026-11-26T10:26:47.200134+00:00",
+              "decisions": {
+                "3bb01f34-60ca-58e8-a91b-5b022278f861": {
+                  "current_agency": {
+                    "address_raw": "滋賀県彦根市岡町156.157",
+                    "checked_at": "2026-11-26T10:22:05.389312+00:00",
+                    "excerpt": "新神社 ／ シン ／ 滋賀県彦根市岡町156.157",
+                    "locator": "神社名見出しの括弧内・鎮座地欄",
+                    "name_raw": "新神社",
+                    "page_hash": "b16ff5f6ced1fe3f5a0475017fb2a6da804411312dac02115a60c2ba57b54e83",
+                    "reading_raw": "シン",
+                    "reading_scope": "stem_without_shrine_suffix",
+                    "source_kind": "official_agency",
+                    "title": "新神社 - 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=153"
+                  },
+                  "decision": "confirmed",
+                  "facility_id": "05262cff-a5ad-5468-a01d-bc1e04d2cf19",
+                  "name_raw": "新神社",
+                  "national_tax_agency_monthly_rows": [
+                    {
+                      "address_raw": "滋賀県彦根市岡町１５６番地１５７番地",
+                      "corporate_number": "3160005005323",
+                      "csv_row": 14195,
+                      "name_raw": "新神社",
+                      "reading_raw": "",
+                      "zip_member": "25_shiga_all_20261030.csv"
+                    }
+                  ],
+                  "original": {
+                    "address": "彦根市岡町",
+                    "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=2",
+                    "reading_raw": "",
+                    "source_hash": "59cb58c2418e3aaf66577cec4157312763d4e2d09e7ddb0795ce34fafad1d4dc"
+                  },
+                  "prefecture_code": "25",
+                  "reason": "当社公式の由緒見出しと現在の呼び方で「しんじんじゃ」を確認し、公式所在地の岡町156と彦根市資料の同地番を照合した。神社庁の156.157及び法人月次の156番地157番地は両地番を原文で保持。旧称に関する「あらたじんじゃ」を現行本文と区別した。",
+                  "references": [
+                    {
+                      "address_raw": "滋賀県彦根市岡町156",
+                      "checked_at": "2026-11-26T10:22:07.134414+00:00",
+                      "excerpt": "しんじんじゃ 新神社 ／ 滋賀県彦根市岡町156",
+                      "local_nickname_raw": "しんぐうさん",
+                      "locator": "由緒見出しの全文かな、現在の呼び方の説明、当社の所在地欄",
+                      "name_raw": "新神社",
+                      "page_hash": "47e96d0607321e623a3178916751bdcd7f3ff169c8c62cb1d30bb440d853315c",
+                      "previous_name_reading_raw": "あらたじんじゃ",
+                      "reading_raw": "しんじんじゃ",
+                      "reading_scope": "full_name",
+                      "source_kind": "official_shrine",
+                      "title": "由緒・歴史 - 新神社",
+                      "url": "https://shinjinja.com/about/history/"
+                    },
+                    {
+                      "address_raw": "滋賀県彦根市岡町156.157",
+                      "checked_at": "2026-11-26T10:22:05.389312+00:00",
+                      "excerpt": "新神社 ／ シン ／ 滋賀県彦根市岡町156.157",
+                      "locator": "神社名見出しの括弧内・鎮座地欄",
+                      "name_raw": "新神社",
+                      "page_hash": "b16ff5f6ced1fe3f5a0475017fb2a6da804411312dac02115a60c2ba57b54e83",
+                      "reading_raw": "シン",
+                      "reading_scope": "stem_without_shrine_suffix",
+                      "source_kind": "official_agency",
+                      "title": "新神社 - 滋賀県神社庁",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=153"
+                    },
+                    {
+                      "address_raw": "彦根市岡町156",
+                      "checked_at": "2026-11-26T10:22:05.569825+00:00",
+                      "excerpt": "新神社（彦根市岡町156）",
+                      "locator": "主な散策地・新神社の行の所在地",
+                      "name_raw": "新神社",
+                      "page_hash": "b8e3dedf8daa73eff49ebd11b33f5c5e0524536bc377b073d73e824f74a0303d",
+                      "source_kind": "municipal_heritage_notice",
+                      "title": "ひこね歴史探索ウォーク 雨壷山とその周辺を巡る - 彦根市",
+                      "url": "https://www.city.hikone.lg.jp/kanko/rekishi/7/31067.html"
+                    }
+                  ]
+                },
+                "4162cb42-905a-5b42-93b1-173af9f3b4c2": {
+                  "current_agency": {
+                    "address_raw": "滋賀県米原市池下844",
+                    "checked_at": "2026-11-26T10:22:23.175307+00:00",
+                    "excerpt": "都久夫須麻神社 ／ ツクブスマ ／ 滋賀県米原市池下844",
+                    "locator": "神社名見出しの括弧内・鎮座地欄",
+                    "name_raw": "都久夫須麻神社",
+                    "page_hash": "57deba2233ed8f328f34def0db00c86d405e0201b2fa81d1923fe16048da5355",
+                    "reading_raw": "ツクブスマ",
+                    "reading_scope": "stem_without_shrine_suffix",
+                    "source_kind": "official_agency",
+                    "title": "都久夫須麻神社 - 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=991"
+                  },
+                  "decision": "deferred",
+                  "facility_id": "543c3369-20e0-5bd6-9a16-243be5a7f0cd",
+                  "name_raw": "都久夫須麻神社",
+                  "national_tax_agency_monthly_rows": [
+                    {
+                      "address_raw": "滋賀県米原市池下８４４番地",
+                      "corporate_number": "2160005003939",
+                      "csv_row": 9156,
+                      "name_raw": "都久夫須麻神社",
+                      "reading_raw": "",
+                      "zip_member": "25_shiga_all_20261030.csv"
+                    }
+                  ],
+                  "original": {
+                    "address": "米原市池下",
+                    "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=10",
+                    "reading_raw": "",
+                    "source_hash": "ac64fa728193d7490ffe2f7ea3ede8a9799d95a0b55dcbbf9e7e80f7c38aa594"
+                  },
+                  "prefecture_code": "25",
+                  "reason": "池下844の地番を神社庁、国税庁、歴史地名データで確認。神社庁は語幹「ツクブスマ」、歴史資料の原表記は「つくぶすまじんじや」。現行資料における全文かなの明示が残る。",
+                  "references": [
+                    {
+                      "address_raw": "滋賀県 米原市 池下844番地",
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "checked_at": "2026-11-26T10:22:34.166605+00:00",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "locator": "ID250000350800、名称・名称（よみ）・住所の欄",
+                      "name_raw": "都久夫須麻神社",
+                      "page_hash": "e84cfbb7f9d7c7a61ded903571365882334d9841b45ab41dfaf0d43dd213a899",
+                      "reading_raw": "つくぶすまじんじや",
+                      "reading_scope": "historical_full_label_with_large_ya",
+                      "source_kind": "academic_historical_gazetteer",
+                      "title": "『日本歴史地名大系』施設・地点項目データセット 都久夫須麻神社",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/25/250000350800.html"
+                    }
+                  ]
+                },
+                "4c8bc02e-3b03-5e78-a3e2-5e247681864b": {
+                  "current_agency": {
+                    "address_raw": "滋賀県蒲生郡日野町内池666",
+                    "checked_at": "2026-11-26T10:22:08.145630+00:00",
+                    "excerpt": "鈴休神社 ／ スズヤミ ／ 滋賀県蒲生郡日野町内池666",
+                    "locator": "神社名見出しの括弧内・鎮座地欄",
+                    "name_raw": "鈴休神社",
+                    "page_hash": "c7f8e92ddc65eaa8a99320803550928f6d566b651784976a460681699975dd5a",
+                    "reading_raw": "スズヤミ",
+                    "reading_scope": "stem_without_shrine_suffix",
+                    "source_kind": "official_agency",
+                    "title": "鈴休神社 - 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=759"
+                  },
+                  "decision": "confirmed",
+                  "facility_id": "7ac9e075-6f1b-568d-a4ed-ca20d0bbeb0d",
+                  "name_raw": "鈴休神社",
+                  "national_tax_agency_monthly_rows": [
+                    {
+                      "address_raw": "滋賀県蒲生郡日野町大字内池６６６番地",
+                      "corporate_number": "7160005005996",
+                      "csv_row": 33888,
+                      "name_raw": "鈴休神社",
+                      "reading_raw": "",
+                      "zip_member": "25_shiga_all_20261030.csv"
+                    }
+                  ],
+                  "original": {
+                    "address": "蒲生郡日野町内池",
+                    "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=8",
+                    "reading_raw": "",
+                    "source_hash": "58fb9f4bab841d32ee7b0afa38fbe687ba19be1187c1bee5b61e5f450f07a69e"
+                  },
+                  "prefecture_code": "25",
+                  "reason": "國學院大學公開論考の表1で鈴休神社・内池666・全文かなが同じ行。神社庁の鎮座地と国税庁月次は同じ666を示し、日野町文化財計画も内池の鈴休神社を掲載。論考の所在地は平成7年調査時点と明記されている。",
+                  "references": [
+                    {
+                      "address_raw": "蒲生郡日野町内池 666",
+                      "checked_at": "2026-11-26T10:22:39.469702+00:00",
+                      "excerpt": "鈴休神社 ／ 蒲生郡日野町内池 666 ／ すずやみじんじゃ",
+                      "locator": "PDF14頁（印刷196頁）表1「阿須波神を祀る神社」滋賀県行、神社名・鎮座地・神社名読み方の各列",
+                      "name_raw": "鈴休神社",
+                      "page_hash": "474ce5fa9c2f6806e19e6481494fc20a64af7a48b86d965938c9e538c43b9bd5",
+                      "pdf_page": 14,
+                      "printed_page": 196,
+                      "publication_year": 2020,
+                      "publisher": "國學院大學",
+                      "reading_raw": "すずやみじんじゃ",
+                      "reading_scope": "full_name",
+                      "source_address_as_of": "平成7年全国神社祭祀祭礼総合調査",
+                      "source_authorship": "藤本頼生",
+                      "source_kind": "university_research_publication",
+                      "title": "『古事記』神代巻に登場する異名同種神の解釈の再整理と地域分布 - 國學院大學公開論考",
+                      "url": "https://kojiki.kokugakuin.ac.jp/wp-content/uploads/2020/07/64ef5ecd0984ca1baebf65dc341b1ffc.pdf",
+                      "visual_review": {
+                        "address_field": "鎮座地",
+                        "image_sha256": "1e9e9de19b8e0503eb2212c11d4e3c6faefabade7b23434cabcdeebfb55200d9",
+                        "reading_field": "神社名読み方",
+                        "status": "row_visually_verified"
+                      }
+                    },
+                    {
+                      "address_raw": "滋賀県蒲生郡日野町内池666",
+                      "checked_at": "2026-11-26T10:22:08.145630+00:00",
+                      "excerpt": "鈴休神社 ／ スズヤミ ／ 滋賀県蒲生郡日野町内池666",
+                      "locator": "神社名見出しの括弧内・鎮座地欄",
+                      "name_raw": "鈴休神社",
+                      "page_hash": "c7f8e92ddc65eaa8a99320803550928f6d566b651784976a460681699975dd5a",
+                      "reading_raw": "スズヤミ",
+                      "reading_scope": "stem_without_shrine_suffix",
+                      "source_kind": "official_agency",
+                      "title": "鈴休神社 - 滋賀県神社庁",
+                      "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=759"
+                    },
+                    {
+                      "address_raw": "内池",
+                      "checked_at": "2026-11-26T10:22:06.162453+00:00",
+                      "excerpt": "46 鈴休神社",
+                      "locator": "PDF84頁・内池地図の番号46および48",
+                      "name_raw": "鈴休神社",
+                      "page_hash": "89ac244df0196f12e7d1fe0803179ba1518542f3d5a895b625be89136995ce98",
+                      "pdf_page": 84,
+                      "source_kind": "municipal_cultural_property_inventory",
+                      "title": "日野町文化財保存活用地域計画",
+                      "url": "https://www.town.shiga-hino.lg.jp/cmsfiles/contents/0000008/8039/hino-bunkazaikeikaku_20.pdf"
+                    }
+                  ]
+                },
+                "7b44fdc4-7d9b-526c-a9e0-4c833cf3e919": {
+                  "current_agency": {
+                    "address_raw": "滋賀県甲賀市甲賀町隠岐2075",
+                    "checked_at": "2026-11-26T10:22:14.842094+00:00",
+                    "excerpt": "椿神社 ／ ツバキ ／ 滋賀県甲賀市甲賀町隠岐2075",
+                    "locator": "神社名見出しの括弧内・鎮座地欄",
+                    "name_raw": "椿神社",
+                    "page_hash": "4dccfced6308bd4f7d253ed6d28a523f47114a3268650da059b8b2e1b46180e0",
+                    "reading_raw": "ツバキ",
+                    "reading_scope": "stem_without_shrine_suffix",
+                    "source_kind": "official_agency",
+                    "title": "椿神社 - 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=605"
+                  },
+                  "decision": "deferred",
+                  "facility_id": "f8518be9-4cf8-58f4-8ec8-df5f57738803",
+                  "name_raw": "椿神社",
+                  "national_tax_agency_monthly_rows": [
+                    {
+                      "address_raw": "滋賀県甲賀市甲賀町隠岐２０７５番地",
+                      "corporate_number": "8160005002885",
+                      "csv_row": 38443,
+                      "name_raw": "椿神社",
+                      "reading_raw": "",
+                      "zip_member": "25_shiga_all_20261030.csv"
+                    }
+                  ],
+                  "original": {
+                    "address": "甲賀市甲賀町隠岐",
+                    "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=7",
+                    "reading_raw": "",
+                    "source_hash": "b65680c5d79115eba78d653630828afbfd59854cf9c49424e119b9bb1957b5d7"
+                  },
+                  "prefecture_code": "25",
+                  "reason": "神社庁と国税庁で隠岐2075を確認。神社庁の「ツバキ」は語幹。甲賀市の広報候補は通常取得でrobotsの本文がHTMLを返して規約確認不能となった。実資料の全文かなを確認できるまで保留。",
+                  "references": []
+                },
+                "81173084-45c9-50a7-bacf-8f1c754663db": {
+                  "current_agency": {
+                    "address_raw": "滋賀県近江八幡市千僧供町213",
+                    "checked_at": "2026-11-26T10:22:25.937249+00:00",
+                    "excerpt": "椿神社 ／ ツバキ ／ 滋賀県近江八幡市千僧供町213",
+                    "locator": "神社名見出しの括弧内・鎮座地欄",
+                    "name_raw": "椿神社",
+                    "page_hash": "5dbd7fec33a910f30412fd020423f1e4f8caa1c142c261ee08361e5e3ba47758",
+                    "reading_raw": "ツバキ",
+                    "reading_scope": "stem_without_shrine_suffix",
+                    "source_kind": "official_agency",
+                    "title": "椿神社 - 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=322"
+                  },
+                  "decision": "deferred",
+                  "facility_id": "e7522a36-75a8-54da-b5ca-a76a4560b2d9",
+                  "name_raw": "椿神社",
+                  "national_tax_agency_monthly_rows": [
+                    {
+                      "address_raw": "滋賀県近江八幡市千僧供町２１３番地",
+                      "corporate_number": "3160005007162",
+                      "csv_row": 14379,
+                      "name_raw": "椿神社",
+                      "reading_raw": "",
+                      "zip_member": "25_shiga_all_20261030.csv"
+                    }
+                  ],
+                  "original": {
+                    "address": "近江八幡市千僧供町",
+                    "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=4",
+                    "reading_raw": "",
+                    "source_hash": "abddcd66775b47c6680144ddb5dfe7bbad9aaadf38820a1d1c7896888d92e39e"
+                  },
+                  "prefecture_code": "25",
+                  "reason": "同名別社は千僧供町213。神社庁と国税庁で同地番。甲賀町隠岐の社から読みを移さない。",
+                  "references": []
+                },
+                "9c8bd304-b944-529a-a0f6-6b4cb92b80bb": {
+                  "current_agency": {
+                    "address_raw": "滋賀県長浜市木之本町木之本488",
+                    "checked_at": "2026-11-26T10:22:17.625619+00:00",
+                    "excerpt": "意冨布良神社 ／ オオフラ ／ 滋賀県長浜市木之本町木之本488",
+                    "locator": "神社名見出しの括弧内・鎮座地欄",
+                    "name_raw": "意冨布良神社",
+                    "page_hash": "2b955ef2a7fa6bb38e7c4a08876672f58379106f30b2d007af482495f03b618c",
+                    "reading_raw": "オオフラ",
+                    "reading_scope": "stem_without_shrine_suffix",
+                    "source_kind": "official_agency",
+                    "title": "意冨布良神社 - 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=1250"
+                  },
+                  "decision": "deferred",
+                  "facility_id": "93ce4a8c-51e4-54dd-9a93-5cee16fde5b7",
+                  "name_raw": "意冨布良神社",
+                  "national_tax_agency_monthly_rows": [
+                    {
+                      "address_raw": "滋賀県長浜市木之本町木之本４８８番地",
+                      "corporate_number": "3160005004515",
+                      "csv_row": 14117,
+                      "name_raw": "意冨布良神社",
+                      "reading_raw": "オオホラジンジャ",
+                      "zip_member": "25_shiga_all_20261030.csv"
+                    }
+                  ],
+                  "original": {
+                    "address": "長浜市木之本町木之本",
+                    "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=13",
+                    "reading_raw": "",
+                    "source_hash": "7fedbe6c72e63593b10e90de66b67ab9f470db8d709060a1cd83150d9949e1ab"
+                  },
+                  "prefecture_code": "25",
+                  "reason": "同地番488の神社庁「オオフラ」と国税庁「オオホラジンジャ」は相違。県の歩き方資料は地番を確認できるが全文かながない。",
+                  "references": [
+                    {
+                      "address_raw": "滋賀県長浜市木之本町木之本488",
+                      "checked_at": "2026-11-26T10:22:38.039426+00:00",
+                      "locator": "意冨布良神社の紹介と住所欄",
+                      "name_raw": "意冨布良神社",
+                      "page_hash": "520068629b5acf7d84efbc6d10dad16f391e17042df051ca1686fb71fb75e1b6",
+                      "source_kind": "regional_public_walk_guide",
+                      "title": "北国街道の歴史と発酵文化を楽しむ！木之本まち歩きコース - しがさんぽ",
+                      "url": "https://www.kenkou-shiga.jp/shigasanpo/model-course/post456"
+                    },
+                    {
+                      "address_raw": "滋賀県長浜市木之本町木之本４８８番地",
+                      "address_role": "corporation_principal_office",
+                      "checked_at": "2026-11-26T10:22:36.940474+00:00",
+                      "corporate_number": "3160005004515",
+                      "locator": "最新情報の商号又は名称、事務所所在地、最終更新年月日及びフリガナ欄の有無",
+                      "name_raw": "意冨布良神社",
+                      "page_hash": "8f5b20afee1bbcbe04e4bbc3591bb398e0db2f1e36598e940fd9397a22a6726a",
+                      "reading_raw": "オオホラジンジャ",
+                      "reading_scope": "full_name",
+                      "registry_update_raw": "平成30年5月15日",
+                      "source_kind": "national_tax_agency_corporate_registry",
+                      "terms": {
+                        "checked_at": "2026-11-26T09:38:53.554125+00:00",
+                        "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                        "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                      },
+                      "title": "国税庁法人番号公表サイト・意冨布良神社",
+                      "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3160005004515"
+                    }
+                  ]
+                },
+                "c52f9caf-b548-5ec4-8843-3d43395c242c": {
+                  "current_agency": {
+                    "address_raw": "滋賀県長浜市列見町130",
+                    "checked_at": "2026-11-26T10:22:20.395902+00:00",
+                    "excerpt": "都久夫須麻神社 ／ ツクブスマ ／ 滋賀県長浜市列見町130",
+                    "locator": "神社名見出しの括弧内・鎮座地欄",
+                    "name_raw": "都久夫須麻神社",
+                    "page_hash": "483d7d9a1e34716843532fd1d2225a90b5050c096985003407b9363d2c8ed77b",
+                    "reading_raw": "ツクブスマ",
+                    "reading_scope": "stem_without_shrine_suffix",
+                    "source_kind": "official_agency",
+                    "title": "都久夫須麻神社 - 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=241"
+                  },
+                  "decision": "deferred",
+                  "facility_id": "413f4fbf-30de-5501-a8e0-e7a9804ac1e4",
+                  "name_raw": "都久夫須麻神社",
+                  "national_tax_agency_monthly_rows": [
+                    {
+                      "address_raw": "滋賀県長浜市列見町１３１番地",
+                      "corporate_number": "7160005003934",
+                      "csv_row": 33674,
+                      "name_raw": "都久夫須麻神社",
+                      "reading_raw": "",
+                      "zip_member": "25_shiga_all_20261030.csv"
+                    }
+                  ],
+                  "original": {
+                    "address": "長浜市列見町",
+                    "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=3",
+                    "reading_raw": "",
+                    "source_hash": "3a2c8d66c763eae1d1820629678e6603a74e85983dba503c04143f317dbf91c3"
+                  },
+                  "prefecture_code": "25",
+                  "reason": "列見町の神社庁個別は130、法人最新情報は131。県立公文書館と市の考古資料にも列見町の同名があるが、地番差を解消する資料と全文かなの確認が残る。竹生島の同名社は他施設。",
+                  "references": [
+                    {
+                      "catalog_number": "明-す-17-2",
+                      "checked_at": "2026-11-26T10:22:09.737447+00:00",
+                      "historical_address_raw": "長浜市列見町字西堂ノ東",
+                      "item_sequence": 115,
+                      "item_title_raw": "無格社都久夫須麻神社（長浜市列見町字西堂ノ東）",
+                      "locator": "結果中の明-す-17-2 編次115、件名と字名",
+                      "name_raw": "都久夫須麻神社",
+                      "page_hash": "0bf4375e75d12067b3ddd0e505fc66abed1e5bc420397b7da4037b0982767681",
+                      "source_kind": "prefectural_archive_catalog",
+                      "title": "滋賀県立公文書館 デジタルアーカイブ",
+                      "url": "https://archives.pref.shiga.lg.jp/OPAC/DASch/Page/751"
+                    },
+                    {
+                      "address_scope": "長浜市列見町地先",
+                      "checked_at": "2026-11-26T10:22:12.196394+00:00",
+                      "locator": "PDF53頁の列見城遺跡・都久夫須麻神社の記述",
+                      "name_raw": "都久夫須麻神社",
+                      "page_hash": "9b8c9ae6f119127e0afbd5bb980c80930577b3179b72108aabba3097ce08262a",
+                      "pdf_page": 53,
+                      "source_kind": "municipal_archaeological_report",
+                      "title": "長浜市埋蔵文化財調査資料第138集",
+                      "url": "https://www.city.nagahama.lg.jp/cmsfiles/contents/0000000/285/NMS138H23Syokibo.pdf"
+                    },
+                    {
+                      "address_raw": "滋賀県長浜市列見町１３１番地",
+                      "address_role": "corporation_principal_office",
+                      "checked_at": "2026-11-26T10:22:39.631929+00:00",
+                      "corporate_number": "7160005003934",
+                      "locator": "最新情報の商号又は名称、事務所所在地、最終更新年月日及びフリガナ欄の有無",
+                      "name_raw": "都久夫須麻神社",
+                      "page_hash": "eb775802550d9574b5d3aea52fdefc02315aa4bb097f9673585937d19905ba8f",
+                      "reading_raw": "",
+                      "reading_scope": "absent",
+                      "registry_update_raw": "平成27年11月13日",
+                      "source_kind": "national_tax_agency_corporate_registry",
+                      "terms": {
+                        "checked_at": "2026-11-26T09:38:53.554125+00:00",
+                        "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                        "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                      },
+                      "title": "国税庁法人番号公表サイト・都久夫須麻神社",
+                      "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7160005003934"
+                    }
+                  ]
+                },
+                "e402c1f1-076e-5ecb-a5ab-fcefa09f3840": {
+                  "current_agency": {
+                    "address_raw": "滋賀県蒲生郡日野町別所263",
+                    "checked_at": "2026-11-26T10:22:12.066858+00:00",
+                    "excerpt": "比都佐神社 ／ ヒツサ ／ 滋賀県蒲生郡日野町別所263",
+                    "locator": "神社名見出しの括弧内・鎮座地欄",
+                    "name_raw": "比都佐神社",
+                    "page_hash": "926018e2362f0eaf0a780496171cbb34da1a69000d29b41105bf1b4f05e841af",
+                    "reading_raw": "ヒツサ",
+                    "reading_scope": "stem_without_shrine_suffix",
+                    "source_kind": "official_agency",
+                    "title": "比都佐神社 - 滋賀県神社庁",
+                    "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=757"
+                  },
+                  "decision": "deferred",
+                  "facility_id": "19517f7b-9b87-538a-bb47-4242362c5723",
+                  "name_raw": "比都佐神社",
+                  "national_tax_agency_monthly_rows": [
+                    {
+                      "address_raw": "滋賀県蒲生郡日野町大字別所２６３番地",
+                      "corporate_number": "7160005005963",
+                      "csv_row": 33885,
+                      "name_raw": "比都佐神社",
+                      "reading_raw": "",
+                      "zip_member": "25_shiga_all_20261030.csv"
+                    }
+                  ],
+                  "original": {
+                    "address": "蒲生郡日野町別所",
+                    "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=8",
+                    "reading_raw": "",
+                    "source_hash": "05573949fd6acd590f82af6b47d34d8f59e04b8b0004da73983f79c654fc49db"
+                  },
+                  "prefecture_code": "25",
+                  "reason": "対象は日野町別所263。神社庁の「ヒツサ」は語幹。公式観光の全文かなと歴史地名データは十禅師410の同名社であり、地域文化財一覧でも十禅師の別施設を確認した。",
+                  "references": [
+                    {
+                      "address_raw": "滋賀県 蒲生郡日野町 大字十禅師410番地",
+                      "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                      "checked_at": "2026-11-26T10:22:11.503484+00:00",
+                      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                      "locator": "ID250000176100、名称・名称（よみ）・住所の欄",
+                      "name_raw": "比都佐神社",
+                      "page_hash": "7cd17a01e9375b0d4906bba39f027fe448a5d3004a9a02ba36ee4503aeef3f5e",
+                      "reading_raw": "ひつさじんじや",
+                      "reading_scope": "historical_full_label_with_large_ya",
+                      "source_kind": "academic_historical_gazetteer",
+                      "title": "『日本歴史地名大系』施設・地点項目データセット 比都佐神社",
+                      "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/25/250000176100.html"
+                    },
+                    {
+                      "address_scope": "日野町十禅師",
+                      "checked_at": "2026-11-26T10:22:08.940815+00:00",
+                      "locator": "施設名見出し下の読みと概要の住所",
+                      "name_raw": "比都佐神社",
+                      "page_hash": "d1823cebed5ece74015300c2aaf25dff76b0858696f2f224ba074006b6bb24a7",
+                      "reading_raw": "ひつさじんじゃ",
+                      "reading_scope": "full_name_for_another_facility",
+                      "source_kind": "prefectural_official_tourism_profile",
+                      "title": "比都佐神社 - 滋賀県公式観光情報",
+                      "url": "https://www.biwako-visitors.jp/spot/detail/244/"
+                    },
+                    {
+                      "address_raw": "十禅師",
+                      "checked_at": "2026-11-26T10:22:35.095750+00:00",
+                      "locator": "PDF9頁、番号3の比都佐神社宝篋印塔、所在地と所有者等",
+                      "name_raw": "比都佐神社",
+                      "page_hash": "2858d6b53df1fd8ba2e543ba4a78674897e0566dba525611356c06dcbc36254c",
+                      "pdf_page": 9,
+                      "source_kind": "municipal_cultural_property_inventory",
+                      "title": "日野町指定等文化財一覧（令和6年8月現在）",
+                      "url": "https://www.town.shiga-hino.lg.jp/cmsfiles/contents/0000008/8039/hino-bunkazaikeikaku_12.pdf"
+                    }
+                  ]
+                }
+              },
+              "limited_retrieval": [
+                {
+                  "reason": "robots returned HTML; policy unknown",
+                  "status": "stopped",
+                  "url": "https://www.city.koka.lg.jp/secure/11342/2013_0401_all.pdf"
+                },
+                {
+                  "reason": "robots returned HTML; policy unknown",
+                  "status": "stopped",
+                  "url": "https://www.city.koka.lg.jp/secure/19262/p1819.pdf"
+                }
+              ],
+              "schema_version": 1,
+              "scope_pending": {
+                "25": 866
+              },
+              "selected_targets": 8,
+              "source_coverage": {
+                "monthly_archive": {
+                  "checked_at": "2026-11-26T09:39:02.740239+00:00",
+                  "display_size": "zip 2MB",
+                  "file_id": "28432",
+                  "page_hash": "87869a2c6b84617c97c9aa95138a34ef17899540cee159a81ac3529b3ea3d510",
+                  "snapshot": "20261030",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                },
+                "monthly_rows_examined": 44347,
+                "monthly_terms": {
+                  "checked_at": "2026-11-26T09:38:53.554125+00:00",
+                  "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                  "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                },
+                "source_scope": "私用候補から地域を選定。採否と読み・所在地は神社、神社庁、自治体、学術資料、法人公表資料の実本文だけで判断。"
+              },
+              "verified_proposals": 2
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [
