@@ -120491,12 +120491,172 @@
           "surface": "十二社神社"
         },
         {
-          "checked_at": "2026-11-09T02:04:02.760759+00:00",
+          "checked_at": "2026-11-26T08:49:36.334331+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/5d084512-bdd6-4c7d-8e00-9cf812eb25da: 名称=四社神社; 掲載読み=; 所在地=高知県高岡郡日高村長畑112番地",
           "facility_id": "3401b2e2-bcb0-5ee0-ae43-5d3d76c101a0",
           "fetched_at": "2026-11-09T02:04:02.760759+00:00",
           "id": "16a5a37e-4c0e-5266-b987-5aae8d2aca56",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ししゃじんじゃ"
+              },
+              "expected_source_hash": "55de57f0b50ba6b3c2bb04d68d4f3f7584f362b5f38effd0449f630d063ccd5d",
+              "facility_id": "3401b2e2-bcb0-5ee0-ae43-5d3d76c101a0",
+              "identity_match": {
+                "address_source_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4490005002897",
+                "agency_address": "高知県高岡郡日高村長畑112番地",
+                "agency_name": "四社神社",
+                "identified_districts": [
+                  "長畑",
+                  "宮ノ谷"
+                ],
+                "method": "municipal_newsletter_plus_independent_same_shrine_parcel",
+                "read_locality": "能津地区",
+                "reference_address": "高知県高岡郡日高村長畑１１２番地",
+                "reference_name": "四社神社"
+              },
+              "original": {
+                "address": "高知県高岡郡日高村長畑112番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=64",
+                "name_raw": "四社神社",
+                "reading_raw": ""
+              },
+              "reason": "村広報19頁の主対象は能津地区の四社神社で、社名全体のルビを目視した。広報で氏子地区として言及する長畑・宮ノ谷は村計画案の四社神社（社殿）欄にある管理地区と対応し、同欄に長畑112を明記する。国税庁の同社の法人所在地は、高知県高岡郡日高村長畑１１２番地。村内対象の同名原登録は一つ。広報自体の地番とは扱わず、参照元別に原欄を保持した。",
+              "references": [
+                {
+                  "address_not_printed_by_reading_source": true,
+                  "address_raw": "高知県高岡郡日高村長畑１１２番地",
+                  "address_role": "separately_printed_confirmation_of_same_shrine",
+                  "address_source": {
+                    "address_raw": "高知県高岡郡日高村長畑１１２番地",
+                    "address_role": "registered_corporation_location",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                    "checked_at": "2026-11-26T08:53:40.652955+00:00",
+                    "corporate_number": "4490005002897",
+                    "excerpt": "四社神社 ／ 高知県高岡郡日高村長畑１１２番地",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "四社神社",
+                    "page_hash": "1cdbaf7055f852cda078f237998533a87a052c4e3669572fa8b498a325ea7b6f",
+                    "reading_scope": "partial_or_absent",
+                    "source_kind": "corporate_number_public_profile",
+                    "source_publisher": "国税庁",
+                    "terms": {
+                      "checked_at": "2026-11-26T08:53:43.593013+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "利用規約｜国税庁法人番号公表サイト",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "title": "（法人名）の情報｜国税庁法人番号公表サイト",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4490005002897"
+                  },
+                  "checked_at": "2026-11-26T08:49:36.334331+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "長畑112",
+                      "checked_at": "2026-11-26T08:50:39.324571+00:00",
+                      "excerpt": "四社神社（社殿） ／ 長畑地区・宮ノ谷地区 ／ 長畑112",
+                      "locator": "PDF 75頁（本文2-25）・表2-8(1/2) 建造物 No.2 名称・所有者管理者・所在地",
+                      "name_raw": "四社神社（社殿）",
+                      "observation_method": "同じ公開PDFの該当頁原画像を目視。認定版とは別版。",
+                      "page_hash": "e35d332c86c6897b21afd1478937276d42f1e1c57f7f283ce1bf628d22c13f92",
+                      "pdf_page": 75,
+                      "render_sha256": "7aac883610f70f7d80556b93c44351ba24901b644d53a1f6c0dc621e634fcdd3",
+                      "responsible_districts_raw": "長畑地区・宮ノ谷地区",
+                      "title": "日高村文化財保存活用地域計画案",
+                      "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/20254109830.pdf"
+                    },
+                    {
+                      "address_raw": "高知県高岡郡日高村長畑１１２番地",
+                      "address_role": "registered_corporation_location",
+                      "checked_at": "2026-11-26T08:53:40.638832+00:00",
+                      "corporate_number": "4490005002897",
+                      "excerpt": "四社神社 ／ 高知県高岡郡日高村長畑１１２番地",
+                      "locator": "法人基本情報・名称・本店所在地欄",
+                      "name_raw": "四社神社",
+                      "page_hash": "4c6663e6609da47874b90d0055077a0d29330ed55b76dffcd76ecf0942bd4253",
+                      "reading_scope": "partial_or_absent",
+                      "source_kind": "government_corporate_registry_crosscheck",
+                      "source_publisher": "経済産業省",
+                      "title": "四社神社 | 4490005002897 | Gビズインフォ",
+                      "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=4490005002897"
+                    }
+                  ],
+                  "excerpt": "広報19頁の社名・ルビ：四社神社 ／ ししゃじんじゃ。国税庁の別資料の法人所在地：高知県高岡郡日高村長畑１１２番地。",
+                  "locality_raw": "能津地区",
+                  "locator": "19頁「日高村 気になるデザイン散歩」第37回・四社神社の見出し上のルビ",
+                  "name_raw": "四社神社",
+                  "page_hash": "3e8e83e179f52994a9447b61c96c4facc0aaf48bd9764daf5bf50d12ee64bccf",
+                  "pdf_page": 19,
+                  "published_reading_locality": "能津地区、こおどりを奉納した長畑・宮ノ谷",
+                  "reading_for_comparison": "ししゃじんじゃ",
+                  "reading_pdf_text_raw": "し しゃ じんじゃ",
+                  "reading_raw": "ししゃじんじゃ",
+                  "reading_scope": "full_name",
+                  "reading_transcription": "四・社・神社にそれぞれ付く活字ルビを、語間スペースの表記とは見なさず合続して採字した。",
+                  "render_sha256": "b2222eb2642a3209dc87a2131ff686acde30e728d062d028116358f60c2723f2",
+                  "source_kind": "municipal_cultural_newsletter",
+                  "source_publisher": "日高村教育委員会文化財係",
+                  "title": "広報ひだか 2023年11月号",
+                  "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/20231030133643.pdf"
+                },
+                {
+                  "address_raw": "高知県高岡郡日高村長畑１１２番地",
+                  "address_role": "registered_corporation_location",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-26T08:53:40.652955+00:00",
+                  "corporate_number": "4490005002897",
+                  "excerpt": "四社神社 ／ 高知県高岡郡日高村長畑１１２番地",
+                  "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                  "name_raw": "四社神社",
+                  "page_hash": "1cdbaf7055f852cda078f237998533a87a052c4e3669572fa8b498a325ea7b6f",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "corporate_number_public_profile",
+                  "source_publisher": "国税庁",
+                  "terms": {
+                    "checked_at": "2026-11-26T08:53:43.593013+00:00",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "title": "利用規約｜国税庁法人番号公表サイト",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                  },
+                  "title": "（法人名）の情報｜国税庁法人番号公表サイト",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4490005002897"
+                },
+                {
+                  "address_raw": "長畑112",
+                  "checked_at": "2026-11-26T08:50:39.324571+00:00",
+                  "excerpt": "四社神社（社殿） ／ 長畑地区・宮ノ谷地区 ／ 長畑112",
+                  "locator": "PDF 75頁（本文2-25）・表2-8(1/2) 建造物 No.2 名称・所有者管理者・所在地",
+                  "name_raw": "四社神社（社殿）",
+                  "observation_method": "同じ公開PDFの該当頁原画像を目視。認定版とは別版。",
+                  "page_hash": "e35d332c86c6897b21afd1478937276d42f1e1c57f7f283ce1bf628d22c13f92",
+                  "pdf_page": 75,
+                  "reading_scope": "related_object",
+                  "render_sha256": "7aac883610f70f7d80556b93c44351ba24901b644d53a1f6c0dc621e634fcdd3",
+                  "responsible_districts_raw": "長畑地区・宮ノ谷地区",
+                  "source_kind": "municipal_cultural_property",
+                  "title": "日高村文化財保存活用地域計画案",
+                  "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/20254109830.pdf"
+                },
+                {
+                  "address_raw": "高知県高岡郡日高村長畑１１２番地",
+                  "address_role": "registered_corporation_location",
+                  "checked_at": "2026-11-26T08:53:40.638832+00:00",
+                  "corporate_number": "4490005002897",
+                  "excerpt": "四社神社 ／ 高知県高岡郡日高村長畑１１２番地",
+                  "locator": "法人基本情報・名称・本店所在地欄",
+                  "name_raw": "四社神社",
+                  "page_hash": "4c6663e6609da47874b90d0055077a0d29330ed55b76dffcd76ecf0942bd4253",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "government_corporate_registry_crosscheck",
+                  "source_publisher": "経済産業省",
+                  "title": "四社神社 | 4490005002897 | Gビズインフォ",
+                  "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=4490005002897"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=64",
           "name_raw": "四社神社",
           "normalization": [
@@ -120504,11 +120664,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "a1e988f8f926e891aff43833a408f919effb8a337a4945d1e7d2a3993d04dbf2",
-          "reading": "",
+          "reading": "ししゃじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=64",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.vill.hidaka.kochi.jp/kurashi/files/20231030133643.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -120577,6 +120737,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ししゃじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ししゃじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "四社神社",
             "wikipedia_article_refs": [],
@@ -120607,7 +120781,7 @@
             "status": "pending",
             "surface": "四社神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "四社神社"
         },
         {
@@ -121256,12 +121430,203 @@
           "surface": "天満宮"
         },
         {
-          "checked_at": "2026-11-09T02:04:02.760759+00:00",
+          "checked_at": "2026-11-26T08:55:46.707095+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/bc7fda50-2185-4b7c-b378-8fc0314fd38c: 名称=龍石神社; 掲載読み=; 所在地=高知県高岡郡日高村岩目地947番地",
           "facility_id": "18689b11-0d43-55b9-b70b-d434ce8dbcc1",
           "fetched_at": "2026-11-09T02:04:02.760759+00:00",
           "id": "8483357a-bd2e-593b-8ead-a5b35ca021be",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "たついしじんじゃ"
+              },
+              "expected_source_hash": "141a2e110ba23b883472338d434dc7fa31c191e63a2fc8383127763d5b82a5aa",
+              "facility_id": "18689b11-0d43-55b9-b70b-d434ce8dbcc1",
+              "identity_match": {
+                "address_source_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8490005002910",
+                "agency_address": "高知県高岡郡日高村岩目地947番地",
+                "agency_name": "龍石神社",
+                "identified_districts": [
+                  "岩目地龍石"
+                ],
+                "method": "municipal_newsletter_plus_independent_same_shrine_parcel",
+                "read_locality": "下分・岩目地編",
+                "reference_address": "高知県高岡郡日高村岩目地９４７番地",
+                "reference_name": "龍石神社"
+              },
+              "original": {
+                "address": "高知県高岡郡日高村岩目地947番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=64",
+                "name_raw": "龍石神社",
+                "reading_raw": ""
+              },
+              "reason": "日高村広報2021年9月号21頁の龍石神社見出しに、社名全体のルビを目視した。同村広報2023年7月号の「龍石神社（岩目地龍石）」と村文化財保存活用地域計画の「龍石神社龍ノ口」「竜石」で地区・関連物件を確認した。国税庁の同社の法人所在地は高知県高岡郡日高村岩目地９４７番地で、神社庁原欄の所在地と対応する。正本の村内同名施設は一つ。",
+              "references": [
+                {
+                  "address_not_printed_by_reading_source": true,
+                  "address_raw": "高知県高岡郡日高村岩目地９４７番地",
+                  "address_role": "separately_printed_confirmation_of_same_shrine",
+                  "address_source": {
+                    "address_raw": "高知県高岡郡日高村岩目地９４７番地",
+                    "address_role": "registered_corporation_location",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                    "checked_at": "2026-11-26T08:55:44.932121+00:00",
+                    "corporate_number": "8490005002910",
+                    "excerpt": "龍石神社 ／ 高知県高岡郡日高村岩目地９４７番地",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "龍石神社",
+                    "page_hash": "502728fc71f6fe173c03ed089671b19319c0afadeea5de10156724da50deb199",
+                    "reading_scope": "partial_or_absent",
+                    "source_kind": "corporate_number_public_profile",
+                    "source_publisher": "国税庁",
+                    "terms": {
+                      "checked_at": "2026-11-26T08:53:43.593013+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "利用規約｜国税庁法人番号公表サイト",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "title": "（法人名）の情報｜国税庁法人番号公表サイト",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8490005002910"
+                  },
+                  "checked_at": "2026-11-26T08:55:46.707095+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "checked_at": "2026-11-26T08:49:45.209623+00:00",
+                      "excerpt": "龍石神社（岩目地龍石）",
+                      "locality_raw": "岩目地龍石",
+                      "locator": "21頁「日高村 気になるデザイン散歩」第33回・狛犬の写真キャプション",
+                      "name_raw": "龍石神社",
+                      "observation_method": "公開PDFの該当頁原画像を目視した。",
+                      "page_hash": "ec73ecb4e77f196dd9609a010e1c0b6da3083bb67579840291423db9be292ebf",
+                      "pdf_page": 21,
+                      "reading_scope": "partial_or_absent",
+                      "render_sha256": "be9dd1bcc51ae8d055b888b0242ac8d9dbef08a5608cb8c69c42c2673478ce4c",
+                      "source_kind": "municipal_cultural_newsletter",
+                      "source_publisher": "日高村教育委員会文化財係",
+                      "title": "広報ひだか 2023年7月号",
+                      "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/20237313447.pdf"
+                    },
+                    {
+                      "checked_at": "2026-11-26T08:50:23.887805+00:00",
+                      "excerpt": "龍石神社龍ノ口 ／ 竜石",
+                      "locality_raw": "竜石",
+                      "locator": "PDF 57頁（本文51頁）・表2-2(2/2) 指定等文化財の一覧、文化財名と所在地等",
+                      "name_raw": "龍石神社龍ノ口",
+                      "observation_method": "公開PDFの該当頁原画像を目視した。",
+                      "page_hash": "3f2fa2a9e4914cf238286c1262c6465f074bc6b1fbdb49b5159824105f8d5b7a",
+                      "pdf_page": 57,
+                      "reading_scope": "related_object",
+                      "render_sha256": "c1811e2fa21f310361646ae387db4450f54d7d5110ec0712658cbf9a2dbb17e8",
+                      "source_kind": "municipal_cultural_property",
+                      "source_publisher": "日高村",
+                      "title": "日高村文化財保存活用地域計画",
+                      "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/202615184747.pdf"
+                    },
+                    {
+                      "address_raw": "高知県高岡郡日高村岩目地９４７番地",
+                      "address_role": "registered_corporation_location",
+                      "checked_at": "2026-11-26T08:55:44.941736+00:00",
+                      "corporate_number": "8490005002910",
+                      "excerpt": "龍石神社 ／ 高知県高岡郡日高村岩目地９４７番地",
+                      "locator": "法人基本情報・名称・本店所在地欄",
+                      "name_raw": "龍石神社",
+                      "page_hash": "246ab565b75340481905d8a7673a1e5ee7f02249d5ba4b341fe328b67da12982",
+                      "reading_scope": "partial_or_absent",
+                      "source_kind": "government_corporate_registry_crosscheck",
+                      "source_publisher": "経済産業省",
+                      "title": "龍石神社 | 8490005002910 | Gビズインフォ",
+                      "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=8490005002910"
+                    }
+                  ],
+                  "excerpt": "広報21頁の社名・ルビ：龍石神社 ／ たついしじんじゃ。国税庁の別資料の法人所在地：高知県高岡郡日高村岩目地９４７番地。",
+                  "locality_raw": "下分・岩目地編",
+                  "locator": "21頁「日高村 気になるデザイン散歩」第11回・龍石神社の見出し上のルビ",
+                  "name_raw": "龍石神社",
+                  "observation_method": "公開PDFの該当頁原画像を目視した。",
+                  "page_hash": "4b680cd87759827738942a07cb056f30b17e506e2f9399662cd4e7bf53950981",
+                  "pdf_page": 21,
+                  "published_reading_locality": "下分・岩目地編のうち、龍石橋と龍の口に関する龍石神社の項",
+                  "reading_raw": "たついしじんじゃ",
+                  "reading_scope": "full_name",
+                  "render_sha256": "d9b04c64a86b9bedba80ddfccf7936fe28edfc0e6bc1b04fe984ac471be83079",
+                  "source_kind": "municipal_cultural_newsletter",
+                  "source_publisher": "日高村",
+                  "title": "広報ひだか 2021年9月号",
+                  "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/202199184733.pdf"
+                },
+                {
+                  "address_raw": "高知県高岡郡日高村岩目地９４７番地",
+                  "address_role": "registered_corporation_location",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-26T08:55:44.932121+00:00",
+                  "corporate_number": "8490005002910",
+                  "excerpt": "龍石神社 ／ 高知県高岡郡日高村岩目地９４７番地",
+                  "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                  "name_raw": "龍石神社",
+                  "page_hash": "502728fc71f6fe173c03ed089671b19319c0afadeea5de10156724da50deb199",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "corporate_number_public_profile",
+                  "source_publisher": "国税庁",
+                  "terms": {
+                    "checked_at": "2026-11-26T08:53:43.593013+00:00",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "title": "利用規約｜国税庁法人番号公表サイト",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                  },
+                  "title": "（法人名）の情報｜国税庁法人番号公表サイト",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8490005002910"
+                },
+                {
+                  "checked_at": "2026-11-26T08:49:45.209623+00:00",
+                  "excerpt": "龍石神社（岩目地龍石）",
+                  "locality_raw": "岩目地龍石",
+                  "locator": "21頁「日高村 気になるデザイン散歩」第33回・狛犬の写真キャプション",
+                  "name_raw": "龍石神社",
+                  "observation_method": "公開PDFの該当頁原画像を目視した。",
+                  "page_hash": "ec73ecb4e77f196dd9609a010e1c0b6da3083bb67579840291423db9be292ebf",
+                  "pdf_page": 21,
+                  "reading_scope": "partial_or_absent",
+                  "render_sha256": "be9dd1bcc51ae8d055b888b0242ac8d9dbef08a5608cb8c69c42c2673478ce4c",
+                  "source_kind": "municipal_cultural_newsletter",
+                  "source_publisher": "日高村教育委員会文化財係",
+                  "title": "広報ひだか 2023年7月号",
+                  "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/20237313447.pdf"
+                },
+                {
+                  "checked_at": "2026-11-26T08:50:23.887805+00:00",
+                  "excerpt": "龍石神社龍ノ口 ／ 竜石",
+                  "locality_raw": "竜石",
+                  "locator": "PDF 57頁（本文51頁）・表2-2(2/2) 指定等文化財の一覧、文化財名と所在地等",
+                  "name_raw": "龍石神社龍ノ口",
+                  "observation_method": "公開PDFの該当頁原画像を目視した。",
+                  "page_hash": "3f2fa2a9e4914cf238286c1262c6465f074bc6b1fbdb49b5159824105f8d5b7a",
+                  "pdf_page": 57,
+                  "reading_scope": "related_object",
+                  "render_sha256": "c1811e2fa21f310361646ae387db4450f54d7d5110ec0712658cbf9a2dbb17e8",
+                  "source_kind": "municipal_cultural_property",
+                  "source_publisher": "日高村",
+                  "title": "日高村文化財保存活用地域計画",
+                  "url": "https://www.vill.hidaka.kochi.jp/kurashi/files/202615184747.pdf"
+                },
+                {
+                  "address_raw": "高知県高岡郡日高村岩目地９４７番地",
+                  "address_role": "registered_corporation_location",
+                  "checked_at": "2026-11-26T08:55:44.941736+00:00",
+                  "corporate_number": "8490005002910",
+                  "excerpt": "龍石神社 ／ 高知県高岡郡日高村岩目地９４７番地",
+                  "locator": "法人基本情報・名称・本店所在地欄",
+                  "name_raw": "龍石神社",
+                  "page_hash": "246ab565b75340481905d8a7673a1e5ee7f02249d5ba4b341fe328b67da12982",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "government_corporate_registry_crosscheck",
+                  "source_publisher": "経済産業省",
+                  "title": "龍石神社 | 8490005002910 | Gビズインフォ",
+                  "url": "https://info.gbiz.go.jp/hojin/ichiran?hojinBango=8490005002910"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=64",
           "name_raw": "龍石神社",
           "normalization": [
@@ -121269,11 +121634,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "a1e988f8f926e891aff43833a408f919effb8a337a4945d1e7d2a3993d04dbf2",
-          "reading": "",
+          "reading": "たついしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=64",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.vill.hidaka.kochi.jp/kurashi/files/202199184733.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -121342,6 +121707,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "たついしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "たついしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "龍石神社",
             "wikipedia_article_refs": [],
@@ -121372,7 +121751,7 @@
             "status": "pending",
             "surface": "龍石神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "龍石神社"
         },
         {
