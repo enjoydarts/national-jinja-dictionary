@@ -98,39 +98,46 @@ class LocationTest(unittest.TestCase):
                 mutation(invalid)
                 self.assertTrue(self.api.location_problems(invalid, f, d['collection']))
 
-    def test_kumamoto_municipal_source_must_match_the_registered_town(self):
-        d, doc, s = fixture()
-        f = d['facilities'][0]
-        address = '阿蘇郡高森町架空712'
-        municipality = '阿蘇郡高森町'
-        f.update(source_key='kumamoto', prefecture_code='43', prefecture='熊本県',
-                 address='阿蘇郡架空712', listing_url='https://kumamotokenjinjacho.jp/patron-god/page/2/',
-                 native_source_id='https://kumamotokenjinjacho.jp/patron-god/example/',
-                 official_site_url=None)
-        s.update(supplement_kind='kumamoto_documented_shrine_site',
-                 original={k:f.get(k) for k in s['original']},
-                 changes=dict(address=address, municipality=municipality))
-        s['agency_link'].update(url=f['listing_url'], href_raw=f['native_source_id'],
-                                address_label='お住まいの地域', area_raw=f['address'])
-        s['reference'].update(url='https://www.town.kumamoto-takamori.lg.jp/site/kanko/example.html',
-                              address_raw=address, source_kind='municipal_shrine_tourism',
-                              excerpt='架空神社 ' + address)
-        corporate = '1330005004004'
-        street = '大字架空７１２番地'
-        fields = dict(name='架空神社', corporateNumber=corporate, prefectureCode='43', prefectureName='熊本県',
-                      cityName=municipality, kind='399', latest='1', hihyoji='0', process='01',
-                      streetNumber=street, closeDate='', nameImageId='', addressImageId='')
-        s['registry_reference'] = dict(
-            url='https://www.houjin-bangou.nta.go.jp/download/zenken/index.html',
-            checked_at=f['fetched_at'], page_hash='d'*64, csv_row=44, corporate_number=corporate,
-            address_raw='熊本県' + municipality + street, source_fields=fields,
-            registry_state_proof=dict(unique_active_corporate_number=corporate, full_address_active_corporations=1))
-        self.assertEqual(self.api.location_problems(s, f, d['collection']), [])
-        out = self.api.apply_locations(d, doc)
-        self.assertEqual(out['facilities'][0]['address'], address)
-        self.assertEqual(self.api.raw_address(out['facilities'][0]), '阿蘇郡架空712')
-        s['reference']['url'] = 'https://www.town.kumamoto-oguni.lg.jp/kankojyoho/example.html'
-        self.assertTrue(self.api.location_problems(s, f, d['collection']))
+    def test_kumamoto_municipal_source_must_match_the_registered_municipality(self):
+        takamori = 'https://www.town.kumamoto-takamori.lg.jp/site/kanko/example.html'
+        minamiaso = 'https://www.vill.minamiaso.lg.jp/dynamic/info/pub/detail.aspx?c_id=29&id=133'
+        oguni = 'https://www.town.kumamoto-oguni.lg.jp/kankojyoho/example.html'
+        for municipality, source_url, other_url in (
+            ('阿蘇郡高森町', takamori, oguni),
+            ('阿蘇郡南阿蘇村', minamiaso, takamori),
+        ):
+            with self.subTest(municipality=municipality):
+                d, doc, s = fixture()
+                f = d['facilities'][0]
+                address = municipality + '架空712'
+                f.update(source_key='kumamoto', prefecture_code='43', prefecture='熊本県',
+                         address='阿蘇郡架空712', listing_url='https://kumamotokenjinjacho.jp/patron-god/page/2/',
+                         native_source_id='https://kumamotokenjinjacho.jp/patron-god/example/',
+                         official_site_url=None)
+                s.update(supplement_kind='kumamoto_documented_shrine_site',
+                         original={k:f.get(k) for k in s['original']},
+                         changes=dict(address=address, municipality=municipality))
+                s['agency_link'].update(url=f['listing_url'], href_raw=f['native_source_id'],
+                                        address_label='お住まいの地域', area_raw=f['address'])
+                s['reference'].update(url=source_url,
+                                      address_raw=address, source_kind='municipal_shrine_tourism',
+                                      excerpt='架空神社 ' + address)
+                corporate = '1330005004004'
+                street = '大字架空７１２番地'
+                fields = dict(name='架空神社', corporateNumber=corporate, prefectureCode='43', prefectureName='熊本県',
+                              cityName=municipality, kind='399', latest='1', hihyoji='0', process='01',
+                              streetNumber=street, closeDate='', nameImageId='', addressImageId='')
+                s['registry_reference'] = dict(
+                    url='https://www.houjin-bangou.nta.go.jp/download/zenken/index.html',
+                    checked_at=f['fetched_at'], page_hash='d'*64, csv_row=44, corporate_number=corporate,
+                    address_raw='熊本県' + municipality + street, source_fields=fields,
+                    registry_state_proof=dict(unique_active_corporate_number=corporate, full_address_active_corporations=1))
+                self.assertEqual(self.api.location_problems(s, f, d['collection']), [])
+                out = self.api.apply_locations(d, doc)
+                self.assertEqual(out['facilities'][0]['address'], address)
+                self.assertEqual(self.api.raw_address(out['facilities'][0]), '阿蘇郡架空712')
+                s['reference']['url'] = other_url
+                self.assertTrue(self.api.location_problems(s, f, d['collection']))
 
     def test_unrelated_pending_and_quarantine_are_never_cleared(self):
         for update in [dict(status='excluded',reason='manual exclusion'),dict(status='pending',reason='another unresolved condition'),

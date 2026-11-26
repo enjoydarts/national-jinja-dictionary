@@ -9,9 +9,10 @@ from njd.locations import _date, _hash, _plain, _raw_field, _SNAPSHOT_FIELDS, _u
 KIND = 'kumamoto_documented_shrine_site'
 _AGENCY = 'kumamotokenjinjacho.jp'
 _PREFECTURE_SITE = 'www.pref.kumamoto.jp'
-_TOWN_SITES = {
+_MUNICIPAL_SITES = {
     '阿蘇郡小国町': 'www.town.kumamoto-oguni.lg.jp',
     '阿蘇郡高森町': 'www.town.kumamoto-takamori.lg.jp',
+    '阿蘇郡南阿蘇村': 'www.vill.minamiaso.lg.jp',
 }
 _REGISTER_URLS = {
     'https://www.houjin-bangou.nta.go.jp/download/zenken/index.html',
@@ -65,8 +66,8 @@ def kumamoto_location_problems(supplement, facility):
     site_host = _source_host(site, 'fetched_at')
     changes = supplement.get('changes')
     municipality = changes.get('municipality') if isinstance(changes, dict) else None
-    town_site = _TOWN_SITES.get(municipality) if isinstance(municipality, str) else None
-    if not site_host or site_host not in (_PREFECTURE_SITE, town_site):
+    municipal_site = _MUNICIPAL_SITES.get(municipality) if isinstance(municipality, str) else None
+    if not site_host or site_host not in (_PREFECTURE_SITE, municipal_site):
         return ['Kumamoto location needs an inspected official physical shrine address']
     address, site_name, excerpt = (site.get(key) for key in ('address_raw', 'name_raw', 'excerpt'))
     if (site.get('location_role') != 'shrine' or site.get('source_kind') not in

@@ -231,7 +231,7 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 `ujitawara_documented_koaza_marker` は宇治田原町の読み補完に限ります。読みの参照資料が同じ社名、大字・小字の全字、枝番を含む全地番を載せ、町または府の別資料が同じ社名と「大字」「小字」を含む地名を明示した場合に照合します。正本にはそれぞれの住所原文と確認箇所を保存します。府の建造物一覧では、所有者の住所と建造物の所在の場所も別の欄として保持します。
 
-熊本県神社庁の氏神検索では「お住まいの地域」を原欄として保持します。`kumamoto_documented_shrine_site` は同名の存続法人、神社庁の郡・町字・全地番、公的資料の鎮座地を照合した所在地補完です。町の公式資料を使う場合は、資料の発行元が照合先の町に一致することを確認します。公的資料が通称で掲載する場合は、正式名との関係を明記した出典も保持します。読みを補うには同じ施設に対応する明示された全文読みを別途確認します。[熊本県神社庁の氏神検索](https://kumamotokenjinjacho.jp/patron-god/)・[熊本県・宗教法人名簿](https://data.bodik.jp/dataset/430005_00107)
+熊本県神社庁の氏神検索では「お住まいの地域」を原欄として保持します。`kumamoto_documented_shrine_site` は同名の存続法人、神社庁の郡・町字・全地番、公的資料の鎮座地を照合した所在地補完です。自治体の公式資料を使う場合は、資料の発行元が照合先の自治体と一致することを確認します。公的資料が通称で掲載する場合は、正式名との関係を明記した出典も保持します。読みを補うには同じ施設に対応する明示された全文読みを別途確認します。[熊本県神社庁の氏神検索](https://kumamotokenjinjacho.jp/patron-god/)・[熊本県・宗教法人名簿](https://data.bodik.jp/dataset/430005_00107)
 
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
