@@ -1,6 +1,6 @@
 import unittest
 
-from njd.corrections import apply_corrections
+from njd.corrections import _reference_matches, apply_corrections
 from njd.records import build_dataset
 from njd.validation import eligible
 from test_corrections import correction
@@ -170,6 +170,19 @@ class PublishedAddressFormsTest(unittest.TestCase):
         data, proposal = self.fixture('20', '長野県', '習焼神社', 'ならやきじんじゃ',
             '諏訪市大字湖南字野明沢4493', '長野県諏訪市大字湖南字野明澤４４９３番地')
         self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+    def test_maizuru_glyph_reading_requires_the_article_and_exact_inner_castle_parcel(self):
+        facility = dict(prefecture_code='26', prefecture='京都府', municipality='舞鶴市',
+                        address='舞鶴市南田辺小字二の丸8', listed_name='<img src="glyph.gif">神社')
+        entry = dict(surface=facility['listed_name'], status='pending')
+        reference = dict(name_raw='鸕鷀神社', address_raw='京都府舞鶴市南田辺8', source_kind='independent_field_article',
+                         url='https://www.buccyake-kojiki.com/archives/1066702507.html', page_hash='a'*64,
+                         excerpt='鸕鷀神社（うのもりじんじゃ）\n京都府舞鶴市南田辺8\n城内の二の丸に奉斎され')
+        changes = dict(surface='鸕鷀神社', reading='うのもりじんじゃ')
+        self.assertTrue(_reference_matches(reference, facility, entry, changes))
+        for mutation in (dict(address_raw='京都府舞鶴市南田辺8-1'), dict(excerpt='鸕鷀神社（うのもりじんじゃ）'),
+                         dict(url='https://example.invalid/other'), dict(name_raw='別神社')):
+            self.assertFalse(_reference_matches(dict(reference, **mutation), facility, entry, changes))
 
     def test_kizugawa_compares_the_documented_town_prefix(self):
         acquired = '木津川市平尾里屋敷54'

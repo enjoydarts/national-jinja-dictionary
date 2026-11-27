@@ -92,7 +92,80 @@ def fixture(locality='架空町字架空',registered_locality=None,parcel='1-1')
     return data,dict(schema_version=1,entries={e['id']:v}),v
 
 
+def annotated_glyph_fixture():
+    when = '2026-11-27T03:00:00+00:00'
+    url = 'https://www.hyogo-jinjacho.com/data/6322026.html'
+    name, kana = '●神社(舟偏に益)', 'ヘサキジンジャ'
+    address = '豊岡市森津629-2'
+    raw_address = '〒668-0006\n'+address
+    reason = 'annotated official name requires review'
+    data = build_dataset('hyogo', '28', '兵庫県', '兵庫県神社庁', [dict(
+        name=name, reading_raw=kana, address=address, address_raw=raw_address, url=url,
+        page_hash='a'*64, fetched_at=when, locator='header.hero', evidence='資料',
+        source_id='6322026', review_reason=reason)], metadata={'authority_status':'confirmed'})
+    site, entry = data['facilities'][0], data['entries'][0]
+    entry.update(reading='', reading_display_raw=kana, printed_code_raw='6322026/兼務')
+    site.update(map_address_raw=address, xml_occurrences=[dict(
+        name_raw=name, address_raw=address, code_raw='6322026', page_hash='b'*64)])
+    corp, number = '2140005012248', '00042294'
+    registered = '兵庫県豊岡市森津字奥中口６２９番地２'
+    register_url = 'https://www.houjin-bangou.nta.go.jp'
+    archive_hash = '0fc15a6ca6db74e8b109c8ebda38ec154057ac1f7f2ff26c2c6609eb9ae1f6cd'
+    displayed = '＿神社（外字が含まれています。）'
+    image = dict(image_id=number, url=register_url+'/image?imageid='+number, corporate_number=corp,
+        archive_page_hash=archive_hash, snapshot='20261030', csv_row=44268, source_name_raw='艗神社',
+        source_address_raw=registered, page_hash='d'*64, method='visual_inspection_of_official_image',
+        note='合成図の艗神社', checked_at=when, fetched_at=when)
+    common = dict(title='資料', checked_at=when, fetched_at=when, locator='原欄')
+    refs = [
+        dict(common, evidence_role='agency_profile', url=url, page_hash='a'*64,
+            name_raw=name, address_raw=raw_address, reading_raw=kana, source_kind='agency',
+            printed_code_raw='6322026/兼務', source_locator=site['source_locator'],
+            excerpt=' / '.join((name, kana, raw_address, '6322026/兼務'))),
+        dict(common, evidence_role='registry', url=register_url+'/download/zenken/index.html', page_hash=archive_hash,
+            name_raw='艗神社', reading_raw='', address_raw=registered, corporate_number=corp,
+            csv_row=44268, snapshot='20261030', zip_member='28_hyogo_all_20261030.csv',
+            excerpt='艗神社 / '+registered, source_fields=dict(name='艗神社', furigana='',corporateNumber=corp,
+                prefectureName='兵庫県', prefectureCode='28', cityName='豊岡市', streetNumber=registered.removeprefix('兵庫県豊岡市'),
+                nameImageId=number, addressImageId='', kind='399', latest='1', closeDate='', process='01', hihyoji='0'),
+            image_reviews={'nameImageId':image}),
+        dict(common, evidence_role='official_current', url=register_url+'/henkorireki-johoto.html?selHouzinNo='+corp,
+            page_hash='e'*64, name_raw=displayed, corporate_number=corp, image_id=number, address_raw=registered,
+            reading_raw='', excerpt=displayed+' / '+registered),
+        dict(common, evidence_role='locality', url='https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip', page_hash='f'*64,
+            municipality_code='282090', town_id='0272150', oaza_raw='森津', koaza_raw='奥中口',
+            excerpt='豊岡市 / 森津 / 奥中口'),
+    ]
+    review = dict(case_id='synthetic-glyph', confirmation='source_review', review_kind='hyogo_profile_registered_glyph',
+        facility_id=site['id'], expected_source_hash=entry['source_hash'], recorded_at=when,
+        original=dict(name_raw=name, reading_raw=kana, address=address, listing_url=url), reason='原カナ・登記外字の照合',
+        references=refs, outputs=[dict(surface='艗神社', reading='へさきじんじゃ', reading_url=url, basis='agency_selected')])
+    return data, dict(schema_version=1, entries={entry['id']: review}), review
+
+
 class HyogoProfileReviewTest(unittest.TestCase):
+    def test_annotated_glyph_selects_the_registered_form_and_keeps_the_profile_kana(self):
+        d, doc, review = annotated_glyph_fixture()
+        site, original = d['facilities'][0], d['entries'][0]
+        self.assertEqual(review_problems(review, site, original, d['collection']), [])
+        out = apply_reviews(d, doc)
+        self.assertFalse(blocking_problems(out))
+        self.assertEqual([(e['surface'], e['reading']) for e in eligible(out)], [('艗神社', 'へさきじんじゃ')])
+        self.assertEqual(out['facilities'][0]['name_raw'], site['name_raw'])
+        self.assertEqual(out['entries'][0]['reading_raw'], original['reading_raw'])
+        for source_role, field, invalid in (
+            ('official_current', 'image_id', '00042295'),
+            ('registry', 'address_raw', '兵庫県豊岡市森津字奥中口６２９番地'),
+            ('locality', 'koaza_raw', '字別口'),
+            ('agency_profile', 'reading_raw', 'ヘサキジンシャ'),
+        ):
+            with self.subTest(source_role=source_role, field=field):
+                invalid_doc = copy.deepcopy(doc)
+                item = invalid_doc['entries'][original['id']]
+                reference = next(r for r in item['references'] if r['evidence_role']==source_role)
+                reference[field] = invalid
+                self.assertEqual(eligible(apply_reviews(d, invalid_doc)), [])
+
     def test_selection_keeps_raw_map_profile_and_hash_and_revalidates_offline(self):
         d,doc,v=fixture();before=copy.deepcopy(d);f=d['facilities'][0];e=d['entries'][0]
         self.assertEqual(review_problems(v,f,e,d['collection']),[])

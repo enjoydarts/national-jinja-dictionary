@@ -12,6 +12,7 @@ from njd.corrections import _url, _reference_matches, discovery_only
 from njd.normalize import normalize_reading
 from njd.locations import raw_address
 from njd.hyogo_profile_review import hyogo_profile_problems
+from njd.hyogo_glyph_review import KIND as GLYPH_KIND, glyph_review_problems
 from njd.current_address_note import current_address_note_problems
 from njd.reading_variants import variant_problems,variant_id,KIND as VARIANT_KIND,SUPERSEDED as VARIANT_SUPERSEDED
 from njd.address_layout import address_layout_problems,REASON as ADDRESS_LAYOUT_REASON
@@ -100,6 +101,7 @@ def review_problems(review, facility, entry, source=None):
     problems=[]
     if not isinstance(review,dict):return ['invalid human review']
     if review.get('review_kind')==VARIANT_KIND:return variant_problems(review,facility,entry,source)
+    if review.get('review_kind')==GLYPH_KIND:return glyph_review_problems(review,facility,entry,source)
     layout_requested=review.get('review_kind') in ('single_address_linebreak','single_address_current_note')
     layout_checker=current_address_note_problems if review.get('review_kind')=='single_address_current_note' else address_layout_problems
     layout_issues=layout_checker(review,facility,entry) if layout_requested else []

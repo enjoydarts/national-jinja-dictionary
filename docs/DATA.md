@@ -271,6 +271,10 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 長野県の読み補完では、長野市の西條・西条3161と宮沢・宮澤411、上田市の下之條・下之条919と1880および中之條・中之条586、南木曽町の広瀬・廣瀬4441、富士見町の沢良平・澤良平12219を、神社庁・県名簿と国税庁個票またはCSVの各社名・町字・全地番で照合しました。南箕輪村の日光社月光社合殿は、冊子の郡名省略と「澤尻八三〇九」を照合し、同じ欄に印字された全文ルビを採用しました。神社庁一覧、冊子、法人資料ごとの原表記と法人フリガナの異読は正本に保持します。[長野県の宗教法人名簿](https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf)・[長野県神社庁『上伊那まいり』付①](https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf#page=1)
 
+豊岡市の `hyogo_profile_registered_glyph` は、森津629-2の神社庁の注記付き原名と全文かなを、法人月次の「艗神社」と現行個票の外字画像、同地番の原欄に結び付けます。播磨町の二子住吉神社は、地図の旧名「阿閇神社」と同じコードの現行個票、現地紹介が明記する旧名、町指定文化財表の二子1と本荘4丁目11-21を照合します。どちらも読みは神社庁が明記した全文かなです。[艗神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2140005012248)・[播磨町指定文化財一覧](https://www.town.harima.lg.jp/kyodoshiryokan/kanko/rekishi/bunkazai/index.html)
+
+京都府の外字補正では、与謝野町岩屋森谷763と舞鶴市南田辺小字二の丸8の全地番を、それぞれの法人個票の字・小字を含む原欄と照合します。舞鶴市の「南田辺8」は、同じ記事に城内の二の丸と明記された「鸕鷀神社」の全文かなを参照するときに比較します。与謝野町の本文にある「あちえいそべ」は原欄に保持し、阿知江𡶌部神社の辞書登録は保留します。[与謝野町の文化財指定資料](https://www.town.yosano.lg.jp/assets/20211125_happyo02.pdf)・[舞鶴市広報](https://www.city.maizuru.kyoto.jp/shisei/cmsfiles/contents/0000008/8353/2021053.pdf)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行

@@ -31,6 +31,40 @@ _PUBLISHED_PARCEL_SPELLINGS = {
     ('20', '諏訪郡富士見町', '大理神社', '諏訪郡富士見町落合字澤良平12219'): '諏訪郡富士見町落合字沢良平12219',
     ('20', '上伊那郡南箕輪村', '日光社月光社合殿', '南箕輪村字澤尻8309'): '南箕輪村字沢尻8309',
 }
+_KYOTO_GLYPH_PARCELS = {
+    ('与謝郡与謝野町岩屋森谷763', '阿知江𡶌部神社'): (
+        '与謝郡与謝野町字岩屋小字森谷763', '4130005009689', '00038800'),
+    ('舞鶴市南田辺小字二の丸8', '鸕鷀神社'): (
+        '舞鶴市字南田辺小字二の丸8', '4130005011587', '00038865'),
+}
+
+
+def _kyoto_glyph_parcel(value, ref, facility, changes):
+    acquired = facility.get('address')
+    surface = changes.get('surface')
+    documented = _KYOTO_GLYPH_PARCELS.get((acquired, surface))
+    if not documented or ref.get('name_raw') != surface:
+        return value
+    registered, corporation, image_id = documented
+    if value == registered and ref.get('source_kind') == 'government_corporate_registry_glyph':
+        base = 'https://www.houjin-bangou.nta.go.jp'
+        profile = ref.get('registry_profile')
+        image = ref.get('image_review')
+        if (isinstance(profile, dict) and isinstance(image, dict)
+                and ref.get('url') == profile.get('url') == base+'/henkorireki-johoto.html?selHouzinNo='+corporation
+                and ref.get('page_hash') == profile.get('page_hash') and _hash(ref.get('page_hash'))
+                and ref.get('address_raw') == profile.get('address_raw')
+                and profile.get('image_id') == image.get('image_id') == image_id
+                and image.get('url') == base+'/image?imageid='+image_id
+                and _hash(image.get('page_hash')) and image.get('visual_reviewed') is True
+                and image.get('printed_text') == surface):
+            return acquired
+    if (surface == '鸕鷀神社' and value == '舞鶴市南田辺8' and ref.get('source_kind') == 'independent_field_article'
+            and ref.get('url') == 'https://www.buccyake-kojiki.com/archives/1066702507.html'
+            and _hash(ref.get('page_hash')) and isinstance(ref.get('excerpt'),str)
+            and '城内の二の丸に奉斎され' in ref['excerpt']):
+        return acquired
+    return value
 
 
 def _url(value):
@@ -247,6 +281,8 @@ def _reference_matches(ref,facility,entry,changes):
         if set(changes) == {'reading'}:
             locality = (facility.get('prefecture_code'), facility.get('municipality'), facility.get('listed_name'))
             value = _PUBLISHED_PARCEL_SPELLINGS.get((*locality, value), value)
+        if facility.get('prefecture_code') == '26' and 'surface' in changes:
+            value = _kyoto_glyph_parcel(value, ref, facility, changes)
         if facility.get('prefecture_code') == '19' and set(changes) == {'reading'}:
             # The Minobu histories locate these shrines on the registered parcels.
             minobu_addresses = {

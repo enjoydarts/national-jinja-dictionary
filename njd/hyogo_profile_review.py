@@ -25,7 +25,7 @@ def hyogo_profile_problems(review,facility,entry):
     proof=review.get('profile_selection_proof')
     if not isinstance(proof,dict):return ['missing Hyogo profile selection proof']
     name_basis=proof.get('registered_name_basis','profile')
-    if name_basis not in ('profile','map') or (location_selected and name_basis!='profile'):
+    if name_basis not in ('profile','map','documented_former_name') or (location_selected and name_basis!='profile'):
         return ['unsupported Hyogo registered name basis or combined name/location choice']
     code=facility.get('native_source_id');name=facility.get('name_raw');kana=entry.get('reading_raw')
     expected=dict(kind='hyogo_typed_profile_registered_location_selection' if location_selected else 'hyogo_typed_profile_registered_name_selection',facility_id=facility.get('id'),
@@ -57,11 +57,14 @@ def hyogo_profile_problems(review,facility,entry):
             reading_url=facility['listing_url'],basis='agency_selected').items())):
         return ['Hyogo selection only outputs the unchanged profile name and kana']
     refs=review.get('references')
-    if not isinstance(refs,list) or len(refs)!=3 or any(not isinstance(r,dict) for r in refs):
-        return ['Hyogo selection requires three inspected references']
+    expected_roles={'agency_profile','agency_map','registered_profile_identity'}
+    if name_basis=='documented_former_name':
+        expected_roles.update(('former_name_site','municipal_site'))
+    if not isinstance(refs,list) or len(refs)!=len(expected_roles) or any(not isinstance(r,dict) for r in refs):
+        return ['Hyogo selection has the wrong number of inspected references']
     if any(not isinstance(r.get('evidence_role'),str) for r in refs):return ['invalid Hyogo source roles']
     roles={r['evidence_role']:r for r in refs}
-    if set(roles)!={'agency_profile','agency_map','registered_profile_identity'}:return ['missing or duplicate Hyogo source roles']
+    if set(roles)!=expected_roles:return ['missing or duplicate Hyogo source roles']
     try:
         approved=datetime.fromisoformat(review.get('recorded_at',''))
         if approved.tzinfo is None:raise ValueError()
@@ -139,6 +142,8 @@ def hyogo_profile_problems(review,facility,entry):
         or not observed_between(protocol.get('fetched_at'),'20261113',protocol.get('checked_at'))
         or datetime.fromisoformat(protocol['checked_at'])>approved):
         return ['missing inspected Hyogo map-to-profile protocol provenance']
+    if name_basis=='documented_former_name':
+        return _former_map_name_problems(code, name, mapped['name_raw'], supported_address, roles)
     window_problems=registry_window_problems(reg)
     if window_problems:return window_problems
     fields=reg.get('source_fields');state=reg.get('registry_state_proof')
@@ -171,4 +176,35 @@ def hyogo_profile_problems(review,facility,entry):
             if (normalize_reading(fields['furigana'])!=reading or reg.get('reading_raw')!=fields['furigana']
                 or reg.get('reading_scope')!='full_name' or fields['furigana'] not in reg['excerpt']):raise ValueError()
         except ValueError:return ['Hyogo registered kana differs from whole profile kana']
+    return []
+
+
+def _former_map_name_problems(code, name, map_name, address, roles):
+    if (code,name,map_name,address)!=('6314166','二子住吉神社','阿閇神社','加古郡播磨町二子立辻1'):
+        return ['former-name selection only compares the documented Futago profile and whole parcel']
+    former, municipality, registered=(roles[k] for k in ('former_name_site','municipal_site','registered_profile_identity'))
+    if (former.get('source_kind')!='shrine_site'
+        or former.get('url')!='https://futago-sumiyoshi.jimdosite.com/%E4%BA%8C%E5%AD%90%E4%BD%8F%E5%90%89%E7%A5%9E%E7%A4%BE%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/'
+        or former.get('name_raw')!=name or former.get('old_name_raw')!=map_name
+        or '二子住吉神社はかつて阿閇神社と呼ばれていました' not in former['excerpt']
+        or former.get('address_raw')!='〒675-0162 兵庫県加古郡播磨町二子１'):
+        return ['Futago profile lacks the same shrine’s express former-name observation']
+    if (municipality.get('source_kind')!='municipal_cultural_catalog'
+        or municipality.get('url')!='https://www.town.harima.lg.jp/kyodoshiryokan/kanko/rekishi/bunkazai/index.html'
+        or municipality.get('name_raw')!=name or municipality.get('address_raw')!='二子1'
+        or municipality.get('separate_same_old_name')!={'name':map_name,'address_raw':'本荘4丁目11-21'}
+        or not all(text in municipality['excerpt'] for text in (name,'二子1'))):
+        return ['Futago profile lacks the municipal distinction from the current Ahe shrine in Honjo']
+    from njd.corporate import image_review_problems
+    fields=registered.get('source_fields')
+    current=registered.get('current_individual_record')
+    address_raw=registered.get('address_raw')
+    if (not isinstance(fields,dict) or not isinstance(current,dict) or not isinstance(address_raw,str)
+        or _numeric_address(address_raw)!='兵庫県加古郡播磨町二子字立辻1'
+        or any(fields.get(k)!=v for k,v in dict(corporateNumber='2140005009558',name='住吉神社',
+            prefectureCode='28',kind='399',furigana='',addressImageId='00042224',nameImageId='').items())
+        or current.get('url')!='https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2140005009558'
+        or not _hash(current.get('page_hash')) or current.get('name_raw')!='住吉神社'
+        or current.get('address_raw')!=address_raw or image_review_problems(registered)):
+        return ['Futago profile lacks the active registry identification and inspected full-parcel image']
     return []

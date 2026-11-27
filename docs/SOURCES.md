@@ -1198,6 +1198,14 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 南箕輪村の日光社月光社合殿は、長野県神社庁の冊子の同じ欄にある「にっこうしゃげっこうしゃごうでん」と「南箕輪村字澤尻八三〇九」を原画像で確認し、神社庁一覧の全地番と照合しました。法人フリガナの「ニッコウシャガッコウシャゴウデン」は調査記録に保持します。諏訪市の習焼神社は同じ野明沢4493番地について、法人フリガナと歴史地名資料で「ならやき」「ならやけ」が異なるため保留です。8登録を補完し、全国の保留は**9,247 → 9,239登録**です。[長野県神社庁『上伊那まいり』付①](https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf#page=1)・[日光社月光社合殿の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1100005008713)・[習焼神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6100005007966)
 
+### 兵庫・京都の外字、旧名と全国事業所データの照合（2026-11-27）
+
+兵庫県の保留9登録を再確認しました。豊岡市森津629-2の神社名は国税庁の原画像と月次CSVで「艗神社」を確認し、神社庁の個票の「ヘサキジンジャ」を採用しました。播磨町二子立辻1の二子住吉神社は、現地資料に明記された旧称「阿閇神社」と庁の地図名が対応し、町の文化財一覧で本荘4丁目11-21の阿閇神社と区別できました。神社庁の「フタゴスミヨシジンジャ」を採用しました。[兵庫県神社庁・艗神社](https://www.hyogo-jinjacho.com/data/6322026.html)・[兵庫県神社庁・二子住吉神社](https://www.hyogo-jinjacho.com/data/6314166.html)・[播磨町指定文化財一覧](https://www.town.harima.lg.jp/kyodoshiryokan/kanko/rekishi/bunkazai/index.html)
+
+京都府の外字2件は、国税庁の各個票と商号画像を比較しました。舞鶴市の鸕鷀神社は、市広報の田辺城図にある現存の社と、同社を紹介する記事の「うのもりじんじゃ」・南田辺8・城内の二の丸を照合しました。阿知江𡶌部神社は、法人画像と文化財資料で「𡶌」を確認して表記を補完しました。与謝野町のルビは「あちえいそべ」までで、全文かなを示す現地資料は岩屋761のため、森谷763の読みは保留です。[舞鶴市広報](https://www.city.maizuru.kyoto.jp/shisei/cmsfiles/contents/0000008/8353/2021053.pdf)・[鸕鷀神社の現地記事](https://www.buccyake-kojiki.com/archives/1066702507.html)・[与謝野町の文化財指定資料](https://www.town.yosano.lg.jp/assets/20211125_happyo02.pdf)
+
+日本郵便の大口事業所個別番号データ22,420行のうち、大口事業所20,266行を全国の保留9,239登録と比較しました。同じ社名・都道府県の保留は0件、確定済みの登録とは全地番が対応する7件がありました。資料のカナ欄では小書きの拗音・促音が大文字に統一されています。諫早市は久山町2271の年神社と関連10件を調べ、現行名に対応する全文かなは保留です。那覇市安里の八幡宮は、県名簿、法人個票と施設公式で安里3-19-14を確認し、法人個票にフリガナ欄はありませんでした。今回3登録を補完し、全国の保留は**9,239 → 9,236登録**です。[日本郵便のデータ仕様](https://www.post.japanpost.jp/service/search/zipcode/download/office/readme.html)・[諫早市の年神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3310005004185)・[沖縄県の宗教法人名簿](https://www.pref.okinawa.jp/_res/projects/default_project/_page_/001/014/071/r70331shukyouhoujin.pdf)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

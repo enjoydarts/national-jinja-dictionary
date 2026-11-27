@@ -183752,12 +183752,192 @@
           "surface": "熊野神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:45.726386+00:00",
+          "checked_at": "2026-11-27T03:01:03.667319+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「<img src=\"../img/shrine/mj4.gif\" alt=\"ろ\" width=\"13\" height=\"15\"><img src=\"../img/shrine/mj5.gif\" alt=\"し\" width=\"12\" height=\"15\">神社」、郵便番号「624-0853」、所在地「舞鶴市南田辺小字二の丸8」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "a47acdb4-1216-562b-b2c1-54e9a9ccef16",
           "fetched_at": "2026-11-09T08:51:45.726386+00:00",
           "id": "652bb799-0988-57a8-a52d-fec7a4d5e5ea",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "うのもりじんじゃ",
+                "surface": "鸕鷀神社"
+              },
+              "expected_source_hash": "e0d469edc30cccd04297d610d16fe6fcdf11978f986c2db9539c06e08f254690",
+              "facility_id": "a47acdb4-1216-562b-b2c1-54e9a9ccef16",
+              "identity_match": "京都府神社庁の南田辺小字二の丸8と国税庁の字南田辺小字二の丸８番地は市名・親字・小字・全地番一致。現地記事が南田辺8と田辺城二の丸を同社同記事で特定し、全文かなを明記。市広報の地点①と城下町倶楽部はうのもり神社を確認。",
+              "original": {
+                "address": "舞鶴市南田辺小字二の丸8",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
+                "name_raw": "<img src=\"../img/shrine/mj4.gif\" alt=\"ろ\" width=\"13\" height=\"15\"><img src=\"../img/shrine/mj5.gif\" alt=\"し\" width=\"12\" height=\"15\">神社",
+                "reading_raw": ""
+              },
+              "reason": "庁の外字画像表示を、同じ全地番の公表法人名称画像でUnicodeに復元。同じ鎮座地の現地記事の全文かなと市広報の現名称が一致するため、全文読みも補う。",
+              "references": [
+                {
+                  "address_raw": "京都府舞鶴市字南田辺小字二の丸８番地",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T03:00:36.906115+00:00",
+                  "excerpt": "鸕鷀神社\n京都府舞鶴市字南田辺小字二の丸８番地",
+                  "excerpt_scope": "法人名称は挿入画像の目視転記。住所は同じ個票の独立した事務所欄。",
+                  "fetched_at": "2026-11-27T03:00:36.906115+00:00",
+                  "image_review": {
+                    "characters_raw": "鸕鷀",
+                    "checked_at": "2026-11-27T03:00:45.523092+00:00",
+                    "fetched_at": "2026-11-27T03:00:45.523092+00:00",
+                    "image_id": "00038865",
+                    "locator": "個票「商号又は名称」の外字画像 ID 00038865。画像全体を個別目視。",
+                    "page_hash": "d6975345a1da0efdb896258977832fbb9d635cdbeb78822ce7dd0bb76ef8eea6",
+                    "printed_text": "鸕鷀神社",
+                    "status": 200,
+                    "title": "国税庁法人番号公表サイト 商号又は名称の外字画像",
+                    "unicode_codepoints": [
+                      "U+9E15",
+                      "U+9DC0"
+                    ],
+                    "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00038865",
+                    "visual_notes": "第1字は盧・鳥、第2字は兹・鳥。",
+                    "visual_reviewed": true
+                  },
+                  "locator": "最新情報。商号又は名称の外字画像と本店又は主たる事務所の所在地欄。",
+                  "name_raw": "鸕鷀神社",
+                  "page_hash": "2680ed15f54461d3957ddd01765d9062abc3b82b25c633110ca6a1fd2081144e",
+                  "reading_raw": "",
+                  "registry_csv": {
+                    "checked_at": "2026-11-25T07:49:54.317599+00:00",
+                    "csv_member": "26_kyoto_all_20261030.csv",
+                    "csv_row": 50750,
+                    "fetched_at": "2026-11-25T07:49:54.317599+00:00",
+                    "fields": {
+                      "cityCode": "202",
+                      "cityName": "舞鶴市",
+                      "closeDate": "",
+                      "corporateNumber": "4130005011587",
+                      "furigana": "",
+                      "hihyoji": "0",
+                      "kind": "399",
+                      "latest": "1",
+                      "name": "鸕鷀神社",
+                      "nameImageId": "00038865",
+                      "prefectureCode": "26",
+                      "prefectureName": "京都府",
+                      "process": "01",
+                      "streetNumber": "字南田辺小字二の丸８番地"
+                    },
+                    "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                    "request_body_hash": "493f15ae7841c84b347eb64e2bb86dc514216a07feae8dfd836ae72332bc371b",
+                    "request_method": "POST",
+                    "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                  },
+                  "registry_profile": {
+                    "address_raw": "京都府舞鶴市字南田辺小字二の丸８番地",
+                    "address_role": "corporation_principal_office",
+                    "checked_at": "2026-11-27T03:00:36.906115+00:00",
+                    "corporate_number": "4130005011587",
+                    "fetched_at": "2026-11-27T03:00:36.906115+00:00",
+                    "image_id": "00038865",
+                    "locator": "最新情報の「商号又は名称」「本店又は主たる事務所の所在地」。フリガナ欄は表示なし。",
+                    "name_raw": "＿＿神社",
+                    "page_hash": "2680ed15f54461d3957ddd01765d9062abc3b82b25c633110ca6a1fd2081144e",
+                    "printed_flag_raw": "外字が含まれています。",
+                    "reading_raw": "",
+                    "source_kind": "government_corporate_registry_profile",
+                    "status": 200,
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:00:39.771808+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "scope": "国税庁法人番号公表サイトに適用される公共データ利用規約。確認に用いた掲載事実と出典を記録する。",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "title": "国税庁法人番号公表サイト 個票",
+                    "update_date_raw": "平成27年11月13日",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005011587"
+                  },
+                  "source_kind": "government_corporate_registry_glyph",
+                  "status": 200,
+                  "terms_reference": {
+                    "checked_at": "2026-11-27T03:00:39.771808+00:00",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "scope": "国税庁法人番号公表サイトに適用される公共データ利用規約。確認に用いた掲載事実と出典を記録する。",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                  },
+                  "title": "国税庁法人番号公表サイト 個票・リンク先外字画像",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005011587"
+                },
+                {
+                  "address_raw": "京都府舞鶴市南田辺8",
+                  "address_role": "shrine_locus",
+                  "checked_at": "2026-11-27T03:01:03.667319+00:00",
+                  "context_raw": "城内の二の丸",
+                  "excerpt": "鸕鷀神社（うのもりじんじゃ）\n京都府舞鶴市南田辺8\n城内の二の丸に奉斎され",
+                  "fetched_at": "2026-11-27T03:01:03.667319+00:00",
+                  "locator": "記事冒頭の［住所］、社名の括弧かな、由緒段落の「城内の二の丸」。",
+                  "name_raw": "鸕鷀神社",
+                  "page_hash": "ecb8286be3865e74ff91ed102a2d68b70a2c240780acd57abbf95499e6307d98",
+                  "reading_raw": "うのもりじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "independent_field_article",
+                  "status": 200,
+                  "terms_reference": {
+                    "checked_at": "2026-11-27T03:06:21.240198+00:00",
+                    "page_hash": "75f6ec011ba603b365821c7011418f47f849d12cafaf3f438ff638d131236f94",
+                    "scope": "サイト記事の免責事項を実本文で確認し、同記事の施設名・かな・住所文字列の事実のみを記録。",
+                    "url": "https://www.buccyake-kojiki.com/archives/1000485485.html"
+                  },
+                  "title": "神社と古事記 鸕鷀神社",
+                  "url": "https://www.buccyake-kojiki.com/archives/1066702507.html",
+                  "variant_names_raw": [
+                    "うのもり神社",
+                    "うの森神社",
+                    "うの森さん"
+                  ]
+                },
+                {
+                  "address_raw": "",
+                  "checked_at": "2026-11-27T03:05:10.477709+00:00",
+                  "context_raw": "城下町エリア／田辺城西側石垣修復伺図控",
+                  "excerpt": "現在のうのもり神社",
+                  "fetched_at": "2026-11-27T03:05:10.477709+00:00",
+                  "issue_reference": {
+                    "checked_at": "2026-11-27T03:05:07.282207+00:00",
+                    "fetched_at": "2026-11-27T03:05:07.282207+00:00",
+                    "page_hash": "e93ff0a61036c39e9b7ef8aa3a1b186c76359d5c1664dbefeb0db1c7895e0145",
+                    "status": 200,
+                    "title": "舞鶴市 2021年5月号掲載ページ",
+                    "url": "https://www.city.maizuru.kyoto.jp/shisei/0000008353.html"
+                  },
+                  "locator": "分冊PDF 1頁、印刷4頁、田辺城図〈城下町エリア〉地点①。版面目視。",
+                  "name_raw": "うのもり神社",
+                  "page_hash": "fe9ed5da2733885abab2a5312acd852707545b3541ce34ba2ecd3763825d22fd",
+                  "reading_printed_prefix": "うのもり",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "municipal_newsletter",
+                  "status": 200,
+                  "title": "広報まいづる 2021年5月号",
+                  "url": "https://www.city.maizuru.kyoto.jp/shisei/cmsfiles/contents/0000008/8353/2021053.pdf"
+                },
+                {
+                  "address_raw": "",
+                  "checked_at": "2026-11-27T03:01:13.035464+00:00",
+                  "context_raw": "田辺城二の丸",
+                  "excerpt": "うのもり神社\n田辺城二の丸",
+                  "fetched_at": "2026-11-27T03:01:13.035464+00:00",
+                  "locator": "「うのもり神社」項。",
+                  "name_raw": "うのもり神社",
+                  "page_hash": "f2a597f979df8ca7a47ef9b1ed9f1a29abcee7e341d7b170a2c43b5c6bb2c7c4",
+                  "reading_printed_prefix": "うのもり",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "local_community_survey",
+                  "status": 200,
+                  "title": "城下町倶楽部 城下町百選",
+                  "url": "https://tanabejoumaturi.sakura.ne.jp/kurabu/hyakusenn/2-hyakusen/hyakusen%202.htm"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
           "name_raw": "<img src=\"../img/shrine/mj4.gif\" alt=\"ろ\" width=\"13\" height=\"15\"><img src=\"../img/shrine/mj5.gif\" alt=\"し\" width=\"12\" height=\"15\">神社",
           "normalization": [
@@ -183765,11 +183945,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "c2646e766be6ec51a930d75a262229d8e184e893bd17809ac9431d9f9e530e8b",
-          "reading": "",
+          "reading": "うのもりじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
-          "reason": "source name uses an external glyph; Unicode correction requires references",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.buccyake-kojiki.com/archives/1066702507.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -183817,6 +183997,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "source name uses an external glyph; Unicode correction requires references",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "うのもりじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "うのもりじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "source_assessment": {
               "assessment_group": "external_glyph_with_no_adopted_full_reading",
               "checked_at": "2026-11-11T10:14:44.472519+00:00",
@@ -183872,8 +184066,8 @@
             "status": "pending",
             "surface": "<img src=\"../img/shrine/mj4.gif\" alt=\"ろ\" width=\"13\" height=\"15\"><img src=\"../img/shrine/mj5.gif\" alt=\"し\" width=\"12\" height=\"15\">神社"
           },
-          "status": "pending",
-          "surface": "<img src=\"../img/shrine/mj4.gif\" alt=\"ろ\" width=\"13\" height=\"15\"><img src=\"../img/shrine/mj5.gif\" alt=\"し\" width=\"12\" height=\"15\">神社"
+          "status": "verified",
+          "surface": "鸕鷀神社"
         },
         {
           "checked_at": "2026-11-09T08:51:45.726386+00:00",
@@ -215937,7 +216131,176 @@
           "facility_id": "0a6eaa23-7215-505f-87a9-302d601f9dce",
           "fetched_at": "2026-11-09T08:52:02.394232+00:00",
           "id": "ba112b9f-6da2-5380-833b-78d16f8cc99f",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "surface": "阿知江𡶌部神社"
+              },
+              "expected_source_hash": "4c0a0c7205fa0549cc1309f905112052ba23dedb4b767c9f90b9d8a9b62bbfdb",
+              "facility_id": "0a6eaa23-7215-505f-87a9-302d601f9dce",
+              "identity_match": "京都府神社庁の岩屋森谷763と国税庁の字岩屋小字森谷７６３番地は町名・親字・小字・全地番一致。個票画像と町の文化財指定・広報の版面が同じ𡶌を掲出する。",
+              "original": {
+                "address": "与謝郡与謝野町岩屋森谷763",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/32.html",
+                "name_raw": "阿知江<img src=\"../img/shrine/mj1.gif\" alt=\"\" width=\"16\" height=\"15\">部神社",
+                "reading_raw": ""
+              },
+              "reason": "庁の外字画像表示を、同じ全地番の公表法人名称画像でUnicodeに復元。",
+              "references": [
+                {
+                  "address_raw": "京都府与謝郡与謝野町字岩屋小字森谷７６３番地",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T03:00:34.024264+00:00",
+                  "excerpt": "阿知江𡶌部神社\n京都府与謝郡与謝野町字岩屋小字森谷７６３番地",
+                  "excerpt_scope": "法人名称は挿入画像の目視転記。住所は同じ個票の独立した事務所欄。",
+                  "fetched_at": "2026-11-27T03:00:34.024264+00:00",
+                  "image_review": {
+                    "characters_raw": "𡶌",
+                    "checked_at": "2026-11-27T03:00:42.646816+00:00",
+                    "fetched_at": "2026-11-27T03:00:42.646816+00:00",
+                    "image_id": "00038800",
+                    "locator": "個票「商号又は名称」の外字画像 ID 00038800。画像全体を個別目視。",
+                    "page_hash": "060256b47c628e2efa086cb864ecda5e51d88df646a1c824d2878b21e3e086f8",
+                    "printed_text": "阿知江𡶌部神社",
+                    "status": 200,
+                    "title": "国税庁法人番号公表サイト 商号又は名称の外字画像",
+                    "unicode_codepoints": [
+                      "U+21D8C"
+                    ],
+                    "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00038800",
+                    "visual_notes": "山偏に石の一字。",
+                    "visual_reviewed": true
+                  },
+                  "locator": "最新情報。商号又は名称の外字画像と本店又は主たる事務所の所在地欄。",
+                  "name_raw": "阿知江𡶌部神社",
+                  "page_hash": "86105c40ee2da93cb38fdf2c312b4bfc2d2c6b2376d81dc07da8eb3b1d8ae162",
+                  "reading_raw": "",
+                  "registry_csv": {
+                    "checked_at": "2026-11-25T07:49:54.317599+00:00",
+                    "csv_member": "26_kyoto_all_20261030.csv",
+                    "csv_row": 50559,
+                    "fetched_at": "2026-11-25T07:49:54.317599+00:00",
+                    "fields": {
+                      "cityCode": "465",
+                      "cityName": "与謝郡与謝野町",
+                      "closeDate": "",
+                      "corporateNumber": "4130005009689",
+                      "furigana": "",
+                      "hihyoji": "0",
+                      "kind": "399",
+                      "latest": "1",
+                      "name": "阿知江＿部神社",
+                      "nameImageId": "00038800",
+                      "prefectureCode": "26",
+                      "prefectureName": "京都府",
+                      "process": "01",
+                      "streetNumber": "字岩屋小字森谷７６３番地"
+                    },
+                    "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                    "request_body_hash": "493f15ae7841c84b347eb64e2bb86dc514216a07feae8dfd836ae72332bc371b",
+                    "request_method": "POST",
+                    "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                  },
+                  "registry_profile": {
+                    "address_raw": "京都府与謝郡与謝野町字岩屋小字森谷７６３番地",
+                    "address_role": "corporation_principal_office",
+                    "checked_at": "2026-11-27T03:00:34.024264+00:00",
+                    "corporate_number": "4130005009689",
+                    "fetched_at": "2026-11-27T03:00:34.024264+00:00",
+                    "image_id": "00038800",
+                    "locator": "最新情報の「商号又は名称」「本店又は主たる事務所の所在地」。フリガナ欄は表示なし。",
+                    "name_raw": "阿知江＿部神社",
+                    "page_hash": "86105c40ee2da93cb38fdf2c312b4bfc2d2c6b2376d81dc07da8eb3b1d8ae162",
+                    "printed_flag_raw": "外字が含まれています。",
+                    "reading_raw": "",
+                    "source_kind": "government_corporate_registry_profile",
+                    "status": 200,
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:00:39.771808+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "scope": "国税庁法人番号公表サイトに適用される公共データ利用規約。確認に用いた掲載事実と出典を記録する。",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "title": "国税庁法人番号公表サイト 個票",
+                    "update_date_raw": "平成27年11月13日",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005009689"
+                  },
+                  "source_kind": "government_corporate_registry_glyph",
+                  "status": 200,
+                  "terms_reference": {
+                    "checked_at": "2026-11-27T03:00:39.771808+00:00",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "scope": "国税庁法人番号公表サイトに適用される公共データ利用規約。確認に用いた掲載事実と出典を記録する。",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                  },
+                  "title": "国税庁法人番号公表サイト 個票・リンク先外字画像",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005009689"
+                },
+                {
+                  "address_raw": "与謝野町岩屋",
+                  "checked_at": "2026-11-27T03:00:51.876474+00:00",
+                  "date_raw": "令和３年１１月２５日",
+                  "excerpt": "阿知江𡶌部神社の本殿\nあちえいそべ\n与謝野町岩屋",
+                  "fetched_at": "2026-11-27T03:00:51.876474+00:00",
+                  "item_name_raw": "阿知江𡶌部神社の本殿",
+                  "locator": "PDF 1頁「新規の指定等文化財に関して」の名称・場所欄。版面目視。",
+                  "name_raw": "阿知江𡶌部神社",
+                  "page_hash": "2bae04bf2e85a9b6832d0fdcf518f2b35f80f71738717a96149717456c32a599",
+                  "reading_raw": "あちえいそべ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "municipal_press_release",
+                  "status": 200,
+                  "terms_reference": {
+                    "checked_at": "2026-11-27T03:06:20.828192+00:00",
+                    "page_hash": "56d2ffca5b4b5933351c4507ccc6dfe2c0e3f1f24921461346f3156be517cbf3",
+                    "scope": "与謝野町公式サイトの著作権表示。PDFの転載をせず、施設名・振り仮名・場所の事実欄だけを記録。",
+                    "url": "https://www.town.yosano.lg.jp/copyright/"
+                  },
+                  "title": "与謝野町教育委員会 新規文化財指定等の報道発表",
+                  "url": "https://www.town.yosano.lg.jp/assets/20211125_happyo02.pdf"
+                },
+                {
+                  "address_raw": "与謝野町岩屋",
+                  "checked_at": "2026-11-27T03:00:48.918377+00:00",
+                  "excerpt": "阿知江𡶌部神社の本殿・宮殿・棟札\nあちえいそべ\n与謝野町岩屋",
+                  "fetched_at": "2026-11-27T03:00:48.918377+00:00",
+                  "item_name_raw": "阿知江𡶌部神社の本殿・宮殿・棟札",
+                  "locator": "PDF 12頁目、印刷23頁「新規に２件を与謝野町指定文化財に指定」。版面目視。",
+                  "name_raw": "阿知江𡶌部神社",
+                  "page_hash": "1d633aa4cf8a34d6013c56f246236c6cdc824e2b67ebfb8d7a8de6e782c17503",
+                  "reading_raw": "あちえいそべ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "municipal_newsletter",
+                  "status": 200,
+                  "terms_reference": {
+                    "checked_at": "2026-11-27T03:06:20.828192+00:00",
+                    "page_hash": "56d2ffca5b4b5933351c4507ccc6dfe2c0e3f1f24921461346f3156be517cbf3",
+                    "scope": "与謝野町公式サイトの著作権表示。PDFの転載をせず、施設名・振り仮名・場所の事実欄だけを記録。",
+                    "url": "https://www.town.yosano.lg.jp/copyright/"
+                  },
+                  "title": "2022年2月 広報よさの No.192",
+                  "url": "https://www.town.yosano.lg.jp/assets/kouhou_yosano_2022-02.pdf"
+                },
+                {
+                  "address_raw": "京都府与謝郡与謝野町岩屋763",
+                  "checked_at": "2026-11-27T03:01:10.088122+00:00",
+                  "consideration": "番地763で原字を補強。小字省略。本文に対応する全文かななし。",
+                  "excerpt": "阿知江𡶌部神社（現社名：阿知江磯部神社）\n京都府与謝郡与謝野町岩屋763",
+                  "fetched_at": "2026-11-27T03:01:10.088122+00:00",
+                  "locator": "阿知江𡶌部神社（現社名：阿知江磯部神社）と住所の同一小節。",
+                  "name_raw": "阿知江𡶌部神社",
+                  "page_hash": "ab48eb8dc5d12b2a1ba3c79b784acf2455e9f70d2a5fc951e9b23e2c3b6da576",
+                  "reading_raw": "",
+                  "source_kind": "local_history_article",
+                  "status": 200,
+                  "title": "丹後国の天日槍（３）",
+                  "url": "https://jp248.exblog.jp/28883583/",
+                  "variant_name_raw": "阿知江磯部神社"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/32.html",
           "name_raw": "阿知江<img src=\"../img/shrine/mj1.gif\" alt=\"\" width=\"16\" height=\"15\">部神社",
           "normalization": [
@@ -215949,7 +216312,7 @@
           "reading_raw": "",
           "reading_source_kind": "agency",
           "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/32.html",
-          "reason": "source name uses an external glyph; Unicode correction requires references",
+          "reason": "reading still requires evidence",
           "research": {
             "additional_source_reviews": [
               {
@@ -216061,7 +216424,7 @@
             "surface": "阿知江<img src=\"../img/shrine/mj1.gif\" alt=\"\" width=\"16\" height=\"15\">部神社"
           },
           "status": "pending",
-          "surface": "阿知江<img src=\"../img/shrine/mj1.gif\" alt=\"\" width=\"16\" height=\"15\">部神社"
+          "surface": "阿知江𡶌部神社"
         },
         {
           "checked_at": "2026-11-09T09:31:08.258279+00:00",
@@ -307611,7 +307974,8 @@
               "url": "https://www.city.maizuru.kyoto.jp/shisei/cmsfiles/contents/0000012/12049/3048.pdf"
             }
           ],
-          "reason": "source name uses an external glyph; Unicode correction requires references",
+          "reason": "",
+          "resolved_name_unicode": "鸕鷀神社",
           "source_hash": "e0d469edc30cccd04297d610d16fe6fcdf11978f986c2db9539c06e08f254690",
           "source_image_tags": [
             "<img src=\"../img/shrine/mj4.gif\" alt=\"ろ\" width=\"13\" height=\"15\">",
@@ -307672,7 +308036,7 @@
             "source_locator": "tr global occurrence=168; four direct td.gr12/td.shlist name/postal/address/phone",
             "status": "pending"
           },
-          "status": "pending"
+          "status": "verified"
         },
         {
           "address": "舞鶴市三浜丸山685-2",
@@ -324133,7 +324497,8 @@
               "url": "https://www.town.yosano.lg.jp/assets/20211125_happyo02.pdf"
             }
           ],
-          "reason": "source name uses an external glyph; Unicode correction requires references",
+          "reason": "",
+          "resolved_name_unicode": "阿知江𡶌部神社",
           "source_hash": "4c0a0c7205fa0549cc1309f905112052ba23dedb4b767c9f90b9d8a9b62bbfdb",
           "source_image_tags": [
             "<img src=\"../img/shrine/mj1.gif\" alt=\"\" width=\"16\" height=\"15\">"
@@ -324192,7 +324557,7 @@
             "source_locator": "tr global occurrence=92; four direct td.gr12/td.shlist name/postal/address/phone",
             "status": "pending"
           },
-          "status": "pending"
+          "status": "verified"
         },
         {
           "address": "与謝郡与謝野町上山田78-1",
