@@ -6264,12 +6264,87 @@
           "surface": "本庄神社"
         },
         {
-          "checked_at": "2026-11-08T14:34:28.591297+00:00",
+          "checked_at": "2026-11-27T08:29:52.901320+00:00",
           "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=佐嘉神社; 掲載読み=; 所在地=佐賀市松原町２－１０－４３",
           "facility_id": "4f967bda-bdab-539c-b503-4c848e212956",
           "fetched_at": "2026-11-08T14:34:28.591297+00:00",
           "id": "2b037e84-05b3-50d8-a354-045401240d86",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "さがじんじゃ"
+              },
+              "expected_source_hash": "a39f6cb9770891320f00575231ef3166ba103f211bd2db9fdaf325054864666e",
+              "facility_id": "4f967bda-bdab-539c-b503-4c848e212956",
+              "identity_match": "佐賀県神社庁、神社、国税庁、佐賀市で同じ佐嘉神社と2-10-43。市の対象物は両社境内のクスノキ群のため、神社公式と国税庁を主にする。",
+              "original": {
+                "address": "佐賀市松原町２－１０－４３",
+                "listing_url": "https://saga-jinjacho.jp/%e4%bd%90%e5%98%89%e7%a5%9e%e7%a4%be/",
+                "name_raw": "佐嘉神社",
+                "reading_raw": ""
+              },
+              "reason": "社名全文の独立した明示読みによる補完。",
+              "references": [
+                {
+                  "address_raw": "佐賀県佐賀市松原２丁目１０番４３号",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-27T08:29:52.901320+00:00",
+                  "corporate_number": "8300005000602",
+                  "excerpt": "佐嘉神社 ／ サガジンジャ ／ 佐賀県佐賀市松原２丁目１０番４３号",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "div.corpInfo 最新情報 法人番号・商号又は名称・フリガナ・本店又は主たる事務所の所在地",
+                  "mime": "text/html",
+                  "name_raw": "佐嘉神社",
+                  "page_hash": "077c5e958a429ac9b5511b47b3f7f551a25093e3fb1d7048116c4fbffce92197",
+                  "processed_notice": "登録カタカナをひらがなに機械変換。",
+                  "reading_raw": "サガジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_register",
+                  "status": "retrieved",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 個別公表情報",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8300005000602"
+                },
+                {
+                  "address_raw": "佐賀市松原町２－１０－４３",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-27T08:29:53.689290+00:00",
+                  "excerpt": "佐嘉神社 ／ 佐賀市松原町２－１０－４３",
+                  "locator": "社名見出し・鎮座地",
+                  "name_raw": "佐嘉神社",
+                  "page_hash": "e0e4728a8ce9f3bf6e3111efaa8f847b00e3a379c07686cd9d1a1c3269b0a49b",
+                  "source_kind": "official_agency",
+                  "title": "佐賀県神社庁 神社紹介",
+                  "url": "https://saga-jinjacho.jp/%E4%BD%90%E5%98%89%E7%A5%9E%E7%A4%BE/"
+                },
+                {
+                  "address_raw": "佐賀県佐賀市松原2-10-43",
+                  "address_role": "visitor_access",
+                  "checked_at": "2026-11-27T08:29:53.259622+00:00",
+                  "excerpt": "佐嘉神社 ／ 佐賀県佐賀市松原2-10-43",
+                  "locator": "交通のご案内／所在地・佐賀駅からの経路",
+                  "name_raw": "佐嘉神社",
+                  "page_hash": "d97f3ae83fef099b6f6d27dff112fb2104d44ef6e287090d798693457041ee7a",
+                  "source_kind": "official_shrine_location_reference",
+                  "stop_name_raw": "佐嘉神社前バス停：降車",
+                  "title": "神社公式 交通アクセス",
+                  "url": "https://sagajinjya.jp/access/"
+                },
+                {
+                  "address_raw": "佐賀市松原2-10-43",
+                  "checked_at": "2026-11-27T08:29:50.190474+00:00",
+                  "excerpt": "佐嘉、松原神社のクスノキ群 ／ 佐賀市松原2-10-43",
+                  "locator": "都市景観重要建築物等、所在地と説明文",
+                  "name_raw": "佐嘉、松原神社のクスノキ群",
+                  "page_hash": "01ddcdb41eb627587a86c5d71dab6c709de214e655b446eb0e57372e8dc02cd1",
+                  "source_kind": "municipal_heritage_location",
+                  "title": "佐賀市 景観重要建造物等",
+                  "url": "https://www.city.saga.lg.jp/sangyo-machizukuri/toshi-kotsu/4/5/2/2461.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://saga-jinjacho.jp/%e4%bd%90%e5%98%89%e7%a5%9e%e7%a4%be/",
           "name_raw": "佐嘉神社",
           "normalization": [
@@ -6277,11 +6352,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "40205158a43a87b860a99fdd18a2f192932b0028589f96c6bb3726a285c1f541",
-          "reading": "",
+          "reading": "さがじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://saga-jinjacho.jp/%e4%bd%90%e5%98%89%e7%a5%9e%e7%a4%be/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8300005000602",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -6426,6 +6501,20 @@
             "prefecture_code": "41",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "さがじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "さがじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "佐嘉神社",
             "wikipedia_article_refs": [
@@ -6465,7 +6554,7 @@
             "status": "pending",
             "surface": "佐嘉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "佐嘉神社"
         },
         {
@@ -9451,12 +9540,90 @@
           "surface": "天山神社/小城町"
         },
         {
-          "checked_at": "2026-11-08T14:35:16.016112+00:00",
+          "checked_at": "2026-11-27T08:31:11.198058+00:00",
           "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=仁比山神社; 掲載読み=; 所在地=神埼郡神埼町的１６９２",
           "facility_id": "711960c6-8d4a-5b29-96fc-03b71930a4e3",
           "fetched_at": "2026-11-08T14:35:16.016112+00:00",
           "id": "c3076943-cce6-5145-abbe-c31fcbf78eb3",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "にいやまじんじゃ"
+              },
+              "expected_source_hash": "51d539acf9a5153ee83345ec2cf3f03f4dcf2ea78992d99e3d03b16e58153763",
+              "facility_id": "711960c6-8d4a-5b29-96fc-03b71930a4e3",
+              "identity_match": "市の神社写真に付された全文ルビ。旧神埼郡神埼町から神埼市神埼町へ変わり、県公報と神埼市の住所表示で的を照合。庁と法人の1692は一致し、クスノキ1692-1・仁王門1692-2は別対象。",
+              "original": {
+                "address": "神埼郡神埼町的１６９２",
+                "listing_url": "https://saga-jinjacho.jp/%e4%bb%81%e6%af%94%e5%b1%b1%e7%a5%9e%e7%a4%be/",
+                "name_raw": "仁比山神社",
+                "reading_raw": ""
+              },
+              "reason": "社名全文の独立した明示読みによる補完。",
+              "references": [
+                {
+                  "address_raw": "",
+                  "checked_at": "2026-11-27T08:31:11.198058+00:00",
+                  "excerpt": "仁比山神社 ／ にいやまじんじゃ",
+                  "locator": "PDF第5頁、印字4、ふるさと名物（3）右側写真下に社名とルビ",
+                  "mime": "application/pdf",
+                  "name_raw": "仁比山神社",
+                  "page_hash": "2e57c852d7bd3ff73ff810622f09e2a382e93f37afd91f7d670eae9103b5454c",
+                  "pdf_page": 5,
+                  "reading_raw": "にいやまじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_regional_guide",
+                  "status": "retrieved",
+                  "title": "神埼市「ふるさと名物応援宣言」",
+                  "url": "https://www.city.kanzaki.saga.jp/site_files/file/2019/201903/p1d6ap9c3o12rpdvkauc1vrru594.pdf",
+                  "visual_reviewed": true
+                },
+                {
+                  "address_raw": "佐賀県神埼市神埼町的１６９２番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-27T08:29:55.589766+00:00",
+                  "corporate_number": "4300005002065",
+                  "excerpt": "仁比山神社 ／ 佐賀県神埼市神埼町的１６９２番地",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "div.corpInfo 最新情報 法人番号・商号又は名称・フリガナ・本店又は主たる事務所の所在地",
+                  "mime": "text/html",
+                  "name_raw": "仁比山神社",
+                  "page_hash": "251b64cd55dc674e420ed1e5022dae6872d97b7ba41c68ad04e651f00f064361",
+                  "processed_notice": "",
+                  "reading_raw": "",
+                  "source_kind": "government_corporate_register",
+                  "status": "retrieved",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 個別公表情報",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4300005002065"
+                },
+                {
+                  "address_raw": "神埼郡神埼町的１６９２",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-27T08:29:59.921299+00:00",
+                  "excerpt": "仁比山神社 ／ 神埼郡神埼町的１６９２",
+                  "locator": "社名見出し・鎮座地",
+                  "name_raw": "仁比山神社",
+                  "page_hash": "91f400dd924ee23e89fe893b77449ac5b5b1b4dfb494f20ad83542718d1619be",
+                  "source_kind": "official_agency",
+                  "title": "佐賀県神社庁 仁比山神社",
+                  "url": "https://saga-jinjacho.jp/%E4%BB%81%E6%AF%94%E5%B1%B1%E7%A5%9E%E7%A4%BE/"
+                },
+                {
+                  "checked_at": "2026-11-27T08:31:10.976457+00:00",
+                  "excerpt": "大字的 ／ 的",
+                  "locator": "平成18年3月20日号、神埼市の町・字の区域・名称 新旧表",
+                  "name_raw": "的",
+                  "old_locality_raw": "大字的",
+                  "page_hash": "eb8514b74e52a8cf12752eb6da8e296b2478a39c61af2d40168a4dead7139e36",
+                  "source_kind": "municipal_merger_notice",
+                  "title": "佐賀県公報 神埼市の町・字の区域と名称",
+                  "url": "https://www.pref.saga.lg.jp/kiji00310146/3_10146_63_1803201-12731.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://saga-jinjacho.jp/%e4%bb%81%e6%af%94%e5%b1%b1%e7%a5%9e%e7%a4%be/",
           "name_raw": "仁比山神社",
           "normalization": [
@@ -9464,11 +9631,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6d44f181a793d9910a81ded44cd3d90cfc8d91a1b62487d6eb8c557dd0402a48",
-          "reading": "",
+          "reading": "にいやまじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://saga-jinjacho.jp/%e4%bb%81%e6%af%94%e5%b1%b1%e7%a5%9e%e7%a4%be/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.city.kanzaki.saga.jp/site_files/file/2019/201903/p1d6ap9c3o12rpdvkauc1vrru594.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -9648,6 +9815,20 @@
             "prefecture_code": "41",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "にいやまじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "にいやまじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "仁比山神社",
             "wikipedia_article_refs": [
@@ -9687,7 +9868,7 @@
             "status": "pending",
             "surface": "仁比山神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "仁比山神社"
         },
         {
@@ -15040,12 +15221,87 @@
           "surface": "入野神社"
         },
         {
-          "checked_at": "2026-11-08T14:36:53.607000+00:00",
+          "checked_at": "2026-11-27T08:29:50.191055+00:00",
           "evidence": "h1#pageTit; div.entry-content p=【鎮座地】: 名称=妙見神社; 掲載読み=; 所在地=唐津市藤崎通り７０２２",
           "facility_id": "3ece0ca4-6058-5d08-aed1-8675a6bc0519",
           "fetched_at": "2026-11-08T14:36:53.607000+00:00",
           "id": "cafc5b81-3de6-5d7f-8ee4-a233fae859b0",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "みょうけんじんじゃ"
+              },
+              "expected_source_hash": "ec657bc868cd44f13a88e491987e88b0cf810a0aa73cf16c9f47794f593d9751",
+              "facility_id": "3ece0ca4-6058-5d08-aed1-8675a6bc0519",
+              "identity_match": "法人と神社公式の社名及び同一7022。庁の鎮座地「藤崎通り」と市告示・法人・公式神社の「藤崎通」を保持。市告示は正式町名に「ふじさきどおり」を付す。",
+              "original": {
+                "address": "唐津市藤崎通り７０２２",
+                "listing_url": "https://saga-jinjacho.jp/%e5%a6%99%e8%a6%8b%e7%a5%9e%e7%a4%be/",
+                "name_raw": "妙見神社",
+                "reading_raw": ""
+              },
+              "reason": "社名全文の独立した明示読みによる補完。",
+              "references": [
+                {
+                  "address_raw": "佐賀県唐津市藤崎通７０２２番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-27T08:29:50.191055+00:00",
+                  "corporate_number": "7300005005148",
+                  "excerpt": "妙見神社 ／ ミョウケンジンジャ ／ 佐賀県唐津市藤崎通７０２２番地",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "div.corpInfo 最新情報 法人番号・商号又は名称・フリガナ・本店又は主たる事務所の所在地",
+                  "mime": "text/html",
+                  "name_raw": "妙見神社",
+                  "page_hash": "b8677417c1136a1f7e2037617057628d5f5736d90f95014d1288fec0c5e7ac61",
+                  "processed_notice": "登録カタカナをひらがなに機械変換。",
+                  "reading_raw": "ミョウケンジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_register",
+                  "status": "retrieved",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 個別公表情報",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7300005005148"
+                },
+                {
+                  "address_raw": "唐津市藤崎通り７０２２",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-27T08:29:57.017611+00:00",
+                  "excerpt": "妙見神社 ／ 唐津市藤崎通り７０２２",
+                  "locator": "社名見出し・鎮座地",
+                  "name_raw": "妙見神社",
+                  "page_hash": "59e176a6f4325edcc285d0133a4bed07e3ceeb32659a2c504013145d37762b2e",
+                  "source_kind": "official_agency",
+                  "title": "佐賀県神社庁 神社紹介",
+                  "url": "https://saga-jinjacho.jp/%E5%A6%99%E8%A6%8B%E7%A5%9E%E7%A4%BE/"
+                },
+                {
+                  "address_raw": "佐賀県唐津市藤崎通7022",
+                  "address_role": "visitor_access",
+                  "checked_at": "2026-11-27T08:29:53.673783+00:00",
+                  "excerpt": "妙見神社 ／ 佐賀県唐津市藤崎通7022",
+                  "locator": "アクセス／所在地・バスの場合",
+                  "name_raw": "妙見神社",
+                  "page_hash": "143f7d2687709cd43bc9f3a4c419edff4a65e4d0e669ac20c01c5226418333cb",
+                  "source_kind": "official_shrine_location_reference",
+                  "stop_name_raw": "妙見神社下バス停より徒歩３分",
+                  "title": "神社公式 交通アクセス",
+                  "url": "https://myoukenjinja.jp/access/"
+                },
+                {
+                  "checked_at": "2026-11-27T08:31:13.380458+00:00",
+                  "excerpt": "藤崎通 ／ ふじさきどおり",
+                  "locality_reading_raw": "ふじさきどおり",
+                  "locator": "昭和22年5月3日 唐津市告示第12号、藤崎の行",
+                  "name_raw": "藤崎通",
+                  "page_hash": "18caced69b5b783c2af2f248f95467f17e079ee6b2eae8bba9a9d9d434dda617",
+                  "source_kind": "municipal_locality_notice",
+                  "title": "唐津市 町の名称変更",
+                  "url": "https://www1.g-reiki.net/karatsu/reiki_honbun/r079RG00000003.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://saga-jinjacho.jp/%e5%a6%99%e8%a6%8b%e7%a5%9e%e7%a4%be/",
           "name_raw": "妙見神社",
           "normalization": [
@@ -15053,11 +15309,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "e97163cfef28a92dbb592dfa2024f5356cb1755b7891ff036c8b016788b50b38",
-          "reading": "",
+          "reading": "みょうけんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://saga-jinjacho.jp/%e5%a6%99%e8%a6%8b%e7%a5%9e%e7%a4%be/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7300005005148",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -15193,6 +15449,20 @@
             "prefecture_code": "41",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "みょうけんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "みょうけんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "妙見神社",
             "wikipedia_article_refs": [],
@@ -15223,7 +15493,7 @@
             "status": "pending",
             "surface": "妙見神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "妙見神社"
         },
         {

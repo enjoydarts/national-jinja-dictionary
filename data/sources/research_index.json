@@ -818590,6 +818590,210 @@
               }
             }
           }
+        },
+        {
+          "baseline_commit": "fcb50eb67599712a0207c7e6656c8d81b8c9d070",
+          "by_prefecture_before": {
+            "01": 345,
+            "02": 657,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 2,
+            "19": 976,
+            "20": 1578,
+            "21": 1,
+            "22": 2,
+            "23": 17,
+            "25": 842,
+            "26": 1010,
+            "28": 7,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 532,
+            "38": 1,
+            "39": 1612,
+            "40": 98,
+            "41": 88,
+            "42": 831,
+            "43": 509,
+            "47": 2
+          },
+          "checked_at": "2026-11-27T08:39:14.522769+00:00",
+          "dictionary_entries": {
+            "2b037e84-05b3-50d8-a354-045401240d86": {
+              "address": "佐賀市松原町２－１０－４３",
+              "facility_id": "4f967bda-bdab-539c-b503-4c848e212956",
+              "name": "佐嘉神社",
+              "prefecture": "佐賀県",
+              "prefecture_code": "41",
+              "reading": "さがじんじゃ"
+            },
+            "c3076943-cce6-5145-abbe-c31fcbf78eb3": {
+              "address": "神埼郡神埼町的１６９２",
+              "facility_id": "711960c6-8d4a-5b29-96fc-03b71930a4e3",
+              "name": "仁比山神社",
+              "prefecture": "佐賀県",
+              "prefecture_code": "41",
+              "reading": "にいやまじんじゃ"
+            },
+            "cafc5b81-3de6-5d7f-8ee4-a233fae859b0": {
+              "address": "唐津市藤崎通り７０２２",
+              "facility_id": "3ece0ca4-6058-5d08-aed1-8675a6bc0519",
+              "name": "妙見神社",
+              "prefecture": "佐賀県",
+              "prefecture_code": "41",
+              "reading": "みょうけんじんじゃ"
+            }
+          },
+          "location_supplements": {},
+          "location_supplements_still_pending": {},
+          "pending_after": 9170,
+          "pending_before": 9173,
+          "prefecture_scopes": {
+            "hokkaido_kyushu_transit_and_corporate_daily": [
+              "all"
+            ]
+          },
+          "reading_supplements_by_investigation": {
+            "hokkaido_kyushu_transit_and_corporate_daily": 3
+          },
+          "reduced_by_prefecture": {
+            "41": 3
+          },
+          "source_investigations": {
+            "hokkaido_kyushu_transit_and_corporate_daily": {
+              "hokkaido": {
+                "counts": {
+                  "additional_feed_zip_blocked_before_payload_request": 1,
+                  "adopted": 0,
+                  "all_name_rows_screened": 345,
+                  "as_of": "2026-11-27",
+                  "candidate_same_overlay_municipality": 3,
+                  "clear_license_examined_feeds": 4,
+                  "examined_feeds": 6,
+                  "excluded_cross_municipality_name_matches": 1,
+                  "feed_zip_requested_and_downloaded": 7,
+                  "hokkaido_pending_count": 345,
+                  "hokkaido_raw_locality_count": 130,
+                  "identity_confirmed_pending_full_kana": 2,
+                  "municipalities_of_pending_covered": 26,
+                  "municipalities_of_stop_points": 34,
+                  "nationwide_snapshot_count": 9183,
+                  "pending_after_municipality_filter_without_any_examined_stop_municipality": 288,
+                  "pending_in_any_observed_stop_municipality": 57,
+                  "pending_in_clear_license_observed_stop_municipality": 46,
+                  "pending_snapshot_sha256": "8cdc207bda4b695116f69599514ce71454519b7818654f4dedf7be376c707a9b",
+                  "same_municipality_candidate_stop_rows_after_publisher_version_dedup": 6,
+                  "same_municipality_candidate_stop_rows_with_duplicate_editions": 8,
+                  "stop_row_coordinates_distinct_within_publisher_translation_snapshot": 3746,
+                  "stop_rows": 5581,
+                  "stops_confirmed_publisher_terms": 1903,
+                  "stops_with_independent_kana": 5581
+                },
+                "held": [
+                  {
+                    "literal_stop_name": "屈足神社前",
+                    "name": "屈足神社",
+                    "raw_stop_kana": "くったりじんじゃまえ"
+                  },
+                  {
+                    "literal_stop_name": "更別神社前",
+                    "name": "更別神社",
+                    "raw_stop_kana": "さらべつじんじゃまえ"
+                  },
+                  {
+                    "different_shrine_stop": "浜小清水神社前",
+                    "name": "小清水神社"
+                  }
+                ],
+                "publisher_catalog": "https://www.harp.lg.jp/opendata/dataset/591.html"
+              },
+              "kyushu": {
+                "adopted_after_independent_evidence": 3,
+                "adopted_ids": [
+                  "cafc5b81-3de6-5d7f-8ee4-a233fae859b0",
+                  "2b037e84-05b3-50d8-a354-045401240d86",
+                  "c3076943-cce6-5145-abbe-c31fcbf78eb3"
+                ],
+                "counts": {
+                  "feeds": 11,
+                  "individual_shortlist": 6,
+                  "name_rows_with_explicit_kanji_shrine_marker": 357,
+                  "same_name_stop_pending_pair_rows": 98,
+                  "same_name_stop_pending_pair_rows_with_kana": 98,
+                  "stop_name_groups": 12,
+                  "stop_rows": 13041,
+                  "stop_rows_with_selected_kana": 12620
+                },
+                "listed_research_scope": "長崎・熊本・福岡・佐賀。市・県・交通事業者が配布し、利用条件を確認できた別々の版のZIPを使用。長崎県営バスは12月1日改正予定版。",
+                "pending_before": 9183,
+                "pending_by_prefecture": {
+                  "40": 98,
+                  "41": 88,
+                  "42": 831,
+                  "43": 509
+                },
+                "pending_snapshot_sha256": "8cdc207bda4b695116f69599514ce71454519b7818654f4dedf7be376c707a9b"
+              },
+              "national_corporate_daily": {
+                "archives": [
+                  {
+                    "checked_at": "2026-11-27T08:37:56.963862+00:00",
+                    "counts": {
+                      "active_relevant_rows": 127,
+                      "archive_rows": 2402,
+                      "full_address_pairs": 0,
+                      "full_reading_pairs": 0,
+                      "name_pairs": 0
+                    },
+                    "file_id": "28559",
+                    "page_hash": "61eae1d3c0cb32fdac05117df8f1e2ce626a701e4657d4f104de1f76ccdb383e",
+                    "pgp_signature": {
+                      "fingerprint": "F4109E821F0DE67C4BA1947C4BCD87A24D615230",
+                      "publisher": {
+                        "checked_at": "2026-11-27T08:37:45.582055+00:00",
+                        "page_hash": "a8879c102fdca3bfd9665bf5ee015fb53a69ac94ccdfab51255bfac03243f133",
+                        "url": "https://www.houjin-bangou.nta.go.jp/pc/download/kokaikagi/index.html"
+                      },
+                      "signature_time": 1795763528,
+                      "signed_csv_sha256": "9ad805f7390873940e71070660a825da095fd859e4ea195a8cc89abc06040205"
+                    },
+                    "pgp_verified": true,
+                    "snapshot": "20261127",
+                    "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+                    "zip_member": "diff_20261127.csv"
+                  }
+                ],
+                "baseline_commit": "fcb50eb",
+                "candidate_observations": [],
+                "checked_at_jst": "2026-11-27T17:37:54.107243+09:00",
+                "latest_snapshot": "20261127",
+                "new_release_dates": {
+                  "20261127": "28559"
+                },
+                "pending_scope": 9173,
+                "release_list": {
+                  "checked_at": "2026-11-27T08:37:54.107243+00:00",
+                  "page_hash": "bcb76a8368ed987096693ce55d5e62ee73014c01fe3716e14c7fd5281afdd790",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/sabun/"
+                },
+                "source_scope": "国税庁のCSV Unicode日次差分。前回の11月26日分より後に公表された更新行を対象に、現行の保留と名称・全地番を比較。名称は文字幅・空白をそろえ、該当する法人名の法的接頭辞も区別した。",
+                "terms": {
+                  "checked_at": "2026-11-27T08:37:48.328309+00:00",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                  "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                },
+                "verified_proposals": 0
+              },
+              "purpose": "公開停留所名の候補抽出と、独立資料による社名・全地番の照合。"
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [
