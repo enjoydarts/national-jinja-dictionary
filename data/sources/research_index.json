@@ -819108,6 +819108,117 @@
               "observation": "自治体・官公庁の資料、国税庁個票、現地記事を同定に照合。伏見神寳神社は原画像を確認。"
             }
           }
+        },
+        {
+          "baseline_commit": "e039cf5dfea707242985d02295afe36775ddae55",
+          "by_prefecture_before": {
+            "01": 345,
+            "02": 657,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 1,
+            "19": 976,
+            "20": 1578,
+            "21": 1,
+            "22": 2,
+            "23": 17,
+            "25": 842,
+            "26": 1001,
+            "28": 7,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 532,
+            "38": 1,
+            "39": 1612,
+            "40": 98,
+            "41": 85,
+            "42": 831,
+            "43": 509,
+            "47": 2
+          },
+          "checked_at": "2026-11-27T09:44:28.480686+00:00",
+          "dictionary_entries": {
+            "089d2d99-a73e-588b-9394-1435426e5c99": {
+              "address": "京都市右京区京北矢代中町宮ケ谷54",
+              "facility_id": "b9fabcf7-7141-5262-adf7-41790177298f",
+              "name": "日吉神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "ひよしじんじゃ"
+            },
+            "3b16d9b6-6421-56bc-b415-e2d8f9da1a22": {
+              "address": "京都市西京区桂久方町47-1",
+              "facility_id": "54d6e471-7782-52f4-9b2f-d850b40abb93",
+              "name": "御靈神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "ごりょうじんじゃ"
+            },
+            "8d8329f0-2e51-5630-9203-4d5db7d6f000": {
+              "address": "愛知県稲沢市国府宮1丁目1番1号",
+              "facility_id": "e221d299-d78b-547d-9c1a-e96cf5ff836d",
+              "name": "尾張大國靈神社",
+              "prefecture": "愛知県",
+              "prefecture_code": "23",
+              "reading": "おわりおおくにたまじんじゃ"
+            }
+          },
+          "pending_after": 9157,
+          "pending_before": 9160,
+          "reduced_by_prefecture": {
+            "23": 1,
+            "26": 2
+          },
+          "source_investigations": {
+            "jtb_tourism_candidate_index": {
+              "adopted_from_index": 0,
+              "checked_at": "2026-11-27T09:32:40.267836+00:00",
+              "name_and_municipality_candidate_rows": 8,
+              "observation": "寺社・教会の分類を対象に候補探索。台帳の地図リンクや同名だけでは同定せず、稲沢・桂の補完は各発行元の独立資料を採用。",
+              "page_hash": "4c0d152fb483afa563cbd0324f6e559f31ffe414e3c2ed994fd0a4fd92f9f1bd",
+              "pending_candidate_entries": 26,
+              "prefectures_with_category_rows": 46,
+              "shrine_temple_church_rows": 599,
+              "url": "https://www.jtb.or.jp/page-search-tourism-resource/"
+            },
+            "kochi_cultural_property_lists": {
+              "confirmed": 0,
+              "eastern_kochi_registry_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1490005005894",
+              "kochi_city_url": "https://www.city.kochi.kochi.jp/soshiki/90/bunnkazai-shishitei2024.html",
+              "observation": "県・市の公開文化財一覧の寺社関連表示を確認。東洋町の水瀧神社は法人個票の河内1365にフリガナ欄がない。",
+              "prefecture_url": "https://www.pref.kochi.lg.jp/doc/2023112400078/",
+              "shrine_name_or_context_rows": {
+                "city": 31,
+                "prefecture": 4
+              }
+            },
+            "kyoto_city_bunka_and_field_museums": {
+              "candidate_entries": 10,
+              "checked_at": "2026-11-27T09:36:54.659650+00:00",
+              "confirmed": 1,
+              "details_inspected": 8,
+              "historical_index_candidate_entries": 3,
+              "historical_index_details_inspected": 4,
+              "historical_index_distinct_links": 407,
+              "historical_museum_index_url": "https://www2.city.kyoto.lg.jp/somu/rekishi/fm/fmindex/tera_l.html",
+              "kyoto_city_pending_entries_screened": 63,
+              "observation": "棟・文化財名と現存神社の名を区別。矢代の日吉神社は地域の全文かなと法人本店の地番を照合。氷室神社、下鳥羽の飛鳥田神社は追加調査を継続。",
+              "operator": "京都市文化財保護課",
+              "query_hits_screened": 156,
+              "url": "https://jmapps.ne.jp/kyotocity_bunka/index.html"
+            },
+            "remaining_same_name_and_reading_conflicts": {
+              "fukuoka_kora": "高良大社の御井町11と1、1-1の対応に追加確認。市のPDFは取得ツールの容量上限で未取得。",
+              "kagawa_shiromine": "坂出の白峰宮は法人表示シロミネグウと観光案内しらみねぐうが異なるため保留。",
+              "nagasaki_saka": "対馬観光物産協会の峰町佐賀424と法人個票の所在地は一致。個票のフリガナ欄なし。仁位55の同名社を分離して照合継続。",
+              "shiga_retsumi": "神社庁現行詳細は列見町130、同町の法人所在地は131。町内地番の対応を追加調査。竹生島の同名社の読みを転用しない。"
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [

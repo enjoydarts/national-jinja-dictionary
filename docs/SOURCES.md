@@ -1320,6 +1320,14 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 文子天満宮神社は国税庁に正式名のフリガナ「アヤコテンマングウジンジャ」があり、京都市告示と庁原欄の天神町400を照合しました。下京区の案内にある「文子天満宮（あやこてんまんぐう）」も典拠に保持しました。3登録を補完し、全国の保留は**9,163 → 9,160登録**です。[文子天満宮神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7130005001635)・[京都市告示第702号](https://www2.city.kyoto.lg.jp/somu/bunsyo/kouhou/r0603/0329/0329_94.pdf)・[京都市下京区の案内](https://www.city.kyoto.lg.jp/shimogyo/page/0000012669.html)
 
+### 観光資源台帳と京都市の文化財資料（2026-11-27）
+
+日本交通公社の台帳では、46都道府県の「神社・寺院・教会」599行を比較しました。同県・同市町村の同名候補は8行で、保留26登録に対応しました。候補から、尾張大國靈神社は愛知県観光協会の「おわりおおくにたまじんじゃ」を神社公式と国税庁の稲沢市国府宮1丁目1番1号で照合しました。西京区桂久方町47-1の御靈神社は、国税庁の「ゴリョウジンジャ」と市の案内、国立国会図書館典拠の別名「下桂御霊神社」を照合しました。2社の辞書表記は神社庁の旧字体を保持しています。[日本交通公社の台帳](https://www.jtb.or.jp/page-search-tourism-resource/)・[愛知県観光協会の会員紹介](https://aichinavi.jp/member/%E5%B0%BE%E5%BC%B5%E5%A4%A7%E5%9C%8B%E9%9C%8A%E7%A5%9E%E7%A4%BE)・[尾張大國霊神社公式](https://www.konomiya.or.jp/access)・[桂久方町の御霊神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005001547)・[国立国会図書館の典拠](https://id.ndl.go.jp/auth/ndlna/01237172)
+
+京都市内の保留63登録に対し、指定・登録文化財データベースの寺社関連の検索結果156件を比較し、候補10登録に対応する8詳細を確認しました。歴史資料館の寺社索引407リンクでは候補3登録に対応する4ページを確認しました。矢代の日吉神社は、京北自治振興会の明示する「ひよしじんじゃ」と宮ヶ谷54番地を、法人個票の宮ケ谷54番地および市のケヤキの資料と照合しました。法人名の外字は原画像で確認しました。3登録を補完し、全国の保留は**9,160 → 9,157登録**です。[京都市の文化財データベース](https://jmapps.ne.jp/kyotocity_bunka/index.html)・[京都市歴史資料館の索引](https://www2.city.kyoto.lg.jp/somu/rekishi/fm/fmindex/tera_l.html)・[京北自治振興会の日吉神社案内](https://kyoto-keihoku.jp/howto/see/1673/)・[日吉神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8130005005791)
+
+坂出市の白峰宮は法人フリガナと観光案内で「しろみねぐう」「しらみねぐう」が異なり、長浜市列見町の都久夫須麻神社は神社庁詳細と法人個票で130・131の差があり、保留を継続しました。滋賀県立公文書館所蔵の神社明細帳（明-す-17-2、編次115）の公開画像2枚で旧所在地の字西堂東と社名を確認しました。現在の地番と全文かなは同画像に見つかりませんでした。対馬市峰町佐賀424の和多都美神社と高知県東洋町河内1365の水瀧神社は、各法人個票にフリガナ欄がありませんでした。[坂出市の白峰宮の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1470005003553)・[坂出の観光案内](https://sakaide-kankou.com/spots/900/)・[滋賀県立公文書館の神社明細帳](https://archives.pref.shiga.lg.jp/OPAC/DASch/Details/7979?returl=%2FOPAC%2FDASch%2FResultList)・[列見町の都久夫須麻神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7160005003934)・[峰町佐賀の和多都美神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1310005006670)・[東洋町の水瀧神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1490005005894)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

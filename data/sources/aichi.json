@@ -58692,7 +58692,7 @@
           "surface": "八柱神社"
         },
         {
-          "checked_at": "2026-11-08T15:00:27.789308+00:00",
+          "checked_at": "2026-11-27T09:35:43.172131+00:00",
           "evidence": "{\"addr\": \"国府宮\", \"city\": \"稲沢市\", \"house_num\": \"1丁目1番1号\", \"id\": \"ba35e756-2310-42ca-a575-02d2a526e7cf\", \"kana\": \"おわりおおくにたま\", \"name\": \"尾張大國靈神社\", \"pref\": \"愛知県\"}",
           "facility_id": "e221d299-d78b-547d-9c1a-e96cf5ff836d",
           "fetched_at": "2026-11-08T15:00:27.789308+00:00",
@@ -58700,13 +58700,15 @@
           "judgments": {
             "corrections": {
               "changes": {
-                "reading": "おわりおおくにたま"
+                "reading": "おわりおおくにたまじんじゃ"
               },
               "expected_source_hash": "477c7c5af2c09c6bf5682ee685fc95345156504b5b7a70316e4a280d23603987",
               "facility_id": "e221d299-d78b-547d-9c1a-e96cf5ff836d",
               "identity_match": {
                 "agency_address": "愛知県稲沢市国府宮1丁目1番1号",
-                "agency_name": "尾張大國靈神社"
+                "agency_name": "尾張大國靈神社",
+                "reference_address": "愛知県 稲沢市 国府宮1-1-1",
+                "reference_name": "尾張大國霊神社"
               },
               "original": {
                 "address": "愛知県稲沢市国府宮1丁目1番1号",
@@ -58714,23 +58716,103 @@
                 "name_raw": "尾張大國靈神社",
                 "reading_raw": "おわりおおくにたま"
               },
-              "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_stem_only_or_short_label",
+              "reason": "愛知県観光協会に掲載された社名全体のかなと、神社公式・法人個票の国府宮1丁目1番1号を照合。神社庁の「靈」と原欄の途中読みを保ち、独立した全文を採用。",
               "references": [
+                {
+                  "address_raw": "愛知県 稲沢市 国府宮1-1-1",
+                  "alternate_name_raw": "国府宮",
+                  "alternate_reading_raw": "こうのみや",
+                  "checked_at": "2026-11-27T09:35:43.172131+00:00",
+                  "excerpt": "尾張大國霊神社 ／ おわりおおくにたまじんじゃ ／ 愛知県 稲沢市 国府宮1-1-1",
+                  "locator": "会員紹介の名称・全文かなと基本情報の所在地",
+                  "name_raw": "尾張大國霊神社",
+                  "page_hash": "1070b56bcd4080c161ad81411000fb20ebb97f1daa913d3b7d5fe7ca94de5ead",
+                  "reading_raw": "おわりおおくにたまじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "association_reference",
+                  "source_publisher": "一般社団法人愛知県観光協会",
+                  "terms_url": "https://aichinavi.jp/sitepolicy",
+                  "title": "愛知県観光協会会員紹介・尾張大國霊神社 国府宮",
+                  "url": "https://aichinavi.jp/member/%E5%B0%BE%E5%BC%B5%E5%A4%A7%E5%9C%8B%E9%9C%8A%E7%A5%9E%E7%A4%BE"
+                },
+                {
+                  "address_raw": "愛知県稲沢市国府宮１丁目１番１号",
+                  "checked_at": "2026-11-27T09:35:43.557185+00:00",
+                  "excerpt": "尾張大國霊神社（国府宮） ／ 愛知県稲沢市国府宮１丁目１番１号",
+                  "locator": "アクセスの社名と所在地",
+                  "name_raw": "尾張大國霊神社",
+                  "page_hash": "339f9abc34d0034f570dba3786037895f9d566810619d1d2bf1dc314a816bd45",
+                  "source_kind": "official_shrine",
+                  "source_publisher": "尾張大國霊神社",
+                  "title": "尾張大國霊神社公式のアクセス",
+                  "url": "https://www.konomiya.or.jp/access"
+                },
+                {
+                  "address_raw": "愛知県稲沢市国府宮１丁目１番１号",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-27T09:35:42.678440+00:00",
+                  "corporate_number": "2180005010859",
+                  "excerpt": "尾張大國霊神社 ／ 愛知県稲沢市国府宮１丁目１番１号",
+                  "locator": "最新情報の商号・主たる事務所の所在地",
+                  "name_raw": "尾張大國霊神社",
+                  "page_hash": "5dd35f4af108bb22543890243d12262733246f0abd03250e7e81afb760bfcbad",
+                  "reading_scope": "absent",
+                  "source_kind": "government_corporate_register",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト・尾張大國霊神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2180005010859"
+                },
                 {
                   "address_raw": "愛知県稲沢市国府宮1丁目1番1号",
                   "checked_at": "2026-11-08T15:00:27.789308+00:00",
-                  "excerpt": "{\"addr\": \"国府宮\", \"city\": \"稲沢市\", \"house_num\": \"1丁目1番1号\", \"id\": \"ba35e756-2310-42ca-a575-02d2a526e7cf\", \"kana\": \"おわりおおくにたま\", \"name\": \"尾張大國靈神社\", \"pref\": \"愛知県\"}",
+                  "excerpt": "尾張大國靈神社 ／ 愛知県稲沢市国府宮1丁目1番1号 ／ おわりおおくにたま",
                   "locator": "POST JSON all 69 official area choices, limit=-1 $.list[809] id=ba35e756-2310-42ca-a575-02d2a526e7cf",
                   "name_raw": "尾張大國靈神社",
                   "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
                   "reading_raw": "おわりおおくにたま",
-                  "source_kind": "agency",
-                  "title": "愛知県神社庁 掲載読み原文（全文読みの確認未了）",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "title": "愛知県神社庁の掲載原欄",
                   "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
                 }
               ],
-              "review_kind": "whole_reading_audit",
-              "status": "needs_review"
+              "review_history": [
+                {
+                  "changes": {
+                    "reading": "おわりおおくにたま"
+                  },
+                  "expected_source_hash": "477c7c5af2c09c6bf5682ee685fc95345156504b5b7a70316e4a280d23603987",
+                  "facility_id": "e221d299-d78b-547d-9c1a-e96cf5ff836d",
+                  "identity_match": {
+                    "agency_address": "愛知県稲沢市国府宮1丁目1番1号",
+                    "agency_name": "尾張大國靈神社"
+                  },
+                  "original": {
+                    "address": "愛知県稲沢市国府宮1丁目1番1号",
+                    "listing_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
+                    "name_raw": "尾張大國靈神社",
+                    "reading_raw": "おわりおおくにたま"
+                  },
+                  "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_stem_only_or_short_label",
+                  "references": [
+                    {
+                      "address_raw": "愛知県稲沢市国府宮1丁目1番1号",
+                      "checked_at": "2026-11-08T15:00:27.789308+00:00",
+                      "excerpt": "{\"addr\": \"国府宮\", \"city\": \"稲沢市\", \"house_num\": \"1丁目1番1号\", \"id\": \"ba35e756-2310-42ca-a575-02d2a526e7cf\", \"kana\": \"おわりおおくにたま\", \"name\": \"尾張大國靈神社\", \"pref\": \"愛知県\"}",
+                      "locator": "POST JSON all 69 official area choices, limit=-1 $.list[809] id=ba35e756-2310-42ca-a575-02d2a526e7cf",
+                      "name_raw": "尾張大國靈神社",
+                      "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
+                      "reading_raw": "おわりおおくにたま",
+                      "source_kind": "agency",
+                      "title": "愛知県神社庁 掲載読み原文（全文読みの確認未了）",
+                      "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+                    }
+                  ],
+                  "review_kind": "whole_reading_audit",
+                  "status": "needs_review"
+                }
+              ],
+              "status": "verified"
             }
           },
           "listing_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
@@ -58740,11 +58822,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
-          "reading": "おわりおおくにたま",
+          "reading": "おわりおおくにたまじんじゃ",
           "reading_raw": "おわりおおくにたま",
-          "reading_source_kind": "agency",
-          "reading_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
-          "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_stem_only_or_short_label",
+          "reading_source_kind": "reference",
+          "reading_url": "https://aichinavi.jp/member/%E5%B0%BE%E5%BC%B5%E5%A4%A7%E5%9C%8B%E9%9C%8A%E7%A5%9E%E7%A4%BE",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -58827,6 +58909,20 @@
             "prefecture_code": "23",
             "reading_raw": "おわりおおくにたま",
             "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_stem_only_or_short_label",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おわりおおくにたまじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おわりおおくにたまじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "尾張大國靈神社",
             "wikipedia_article_refs": [],
@@ -58857,7 +58953,7 @@
             "status": "verified",
             "surface": "尾張大國靈神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "尾張大國靈神社"
         },
         {

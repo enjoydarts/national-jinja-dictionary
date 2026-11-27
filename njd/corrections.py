@@ -515,6 +515,43 @@ def _joined_official_reading(ref,correction,facility,entry):
 # Inspected publications linking a full shrine reading to a specific site.
 # Each distinct source keeps its actual name, address and reading fields.
 _PUBLISHED_READING_PAIRS = {
+    ('23', '尾張大國靈神社', '愛知県稲沢市国府宮1丁目1番1号'): (
+        dict(url='https://aichinavi.jp/member/%E5%B0%BE%E5%BC%B5%E5%A4%A7%E5%9C%8B%E9%9C%8A%E7%A5%9E%E7%A4%BE',
+             source_kind='association_reference', locator='会員紹介の名称・全文かなと基本情報の所在地',
+             name_raw='尾張大國霊神社', reading_raw='おわりおおくにたまじんじゃ',
+             address_raw='愛知県 稲沢市 国府宮1-1-1',
+             excerpt='尾張大國霊神社 ／ おわりおおくにたまじんじゃ ／ 愛知県 稲沢市 国府宮1-1-1'),
+        dict(url='https://www.konomiya.or.jp/access', source_kind='official_shrine',
+             locator='アクセスの社名と所在地', name_raw='尾張大國霊神社',
+             address_raw='愛知県稲沢市国府宮１丁目１番１号',
+             excerpt='尾張大國霊神社（国府宮） ／ 愛知県稲沢市国府宮１丁目１番１号'),
+    ),
+    ('26', '御靈神社', '京都市西京区桂久方町47-1'): (
+        dict(url='https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005001547',
+             source_kind='government_corporate_register', locator='最新情報の商号・フリガナ・主たる事務所の所在地',
+             name_raw='御霊神社', reading_raw='ゴリョウジンジャ', address_raw='京都府京都市西京区桂久方町４７番地ノ１',
+             excerpt='御霊神社 ／ ゴリョウジンジャ ／ 京都府京都市西京区桂久方町４７番地ノ１'),
+        dict(url='https://id.ndl.go.jp/auth/ndlna/01237172', source_kind='national_library_authority',
+             locator='名称/タイトル・別名/別タイトル・出典', name_raw='御霊神社 (京都市)',
+             excerpt='御霊神社 (京都市) ／ 下桂御霊神社 (シモカツラ ゴリョウ ジンジャ) ／ 下桂御靈神社誌'),
+        dict(url='https://ja.kyoto.travel/tourism/single01.php?category_id=7&tourism_id=543',
+             source_kind='municipal_reference', locator='基本情報の正式名称・よみがな・住所所在地',
+             name_raw='下桂御霊神社', address_raw='京都市西京区桂久方町47-1',
+             excerpt='下桂御霊神社 ／ しもかつらごりょうじんじゃ ／ 京都市西京区桂久方町47-1'),
+    ),
+    ('26', '日吉神社', '京都市右京区京北矢代中町宮ケ谷54'): (
+        dict(url='https://kyoto-keihoku.jp/howto/see/1673/', source_kind='regional_editorial_reference',
+             locator='矢代の施設情報の名称・全文かな・所在地', name_raw='日吉神社',
+             reading_raw='ひよしじんじゃ', address_raw='京都市右京区京北矢代中町宮ヶ谷54番地',
+             excerpt='日吉神社（ひよしじんじゃ） ／ 京都市右京区京北矢代中町宮ヶ谷54番地'),
+        dict(url='https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8130005005791',
+             source_kind='government_corporate_register', locator='最新情報の商号・主たる事務所の所在地',
+             name_raw='日吉神社', address_raw='京都府京都市右京区京北矢代中町宮ケ谷５４番地',
+             excerpt='日吉神社 ／ 京都府京都市右京区京北矢代中町宮ケ谷５４番地'),
+        dict(url='https://jmapps.ne.jp/kyotocity_bunka/det.html?data_id=551', source_kind='municipal_reference',
+             locator='市指天24の所有者・所在地・説明文', name_raw='日吉神社',
+             excerpt='日吉神社 ／ 右京区 ／ 矢代の日吉神社の裏山'),
+    ),
     ('18', '神明神社', '福井県あわら市東山３９－４'): (
         dict(url='https://www.city.awara.lg.jp/gikai/gikaidayori/gikaidayori55_d/fil/001.pdf',
              source_kind='municipal_council_bulletin', locator='PDF1頁右・冊子16頁「東山の阿弥陀如来坐像」第1行のルビ',
