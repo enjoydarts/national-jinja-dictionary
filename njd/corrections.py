@@ -529,6 +529,20 @@ _PUBLISHED_READING_PAIRS = {
              name_raw='熊手八幡宮高麗犬', address_raw='多度津町大字西白方200(熊手八幡宮)',
              excerpt='熊手八幡宮高麗犬 ／ 多度津町大字西白方200(熊手八幡宮)'),
     ),
+    ('39', '二社神社', '高知県吾川郡いの町柳瀬本村929番地'): (
+        dict(url='https://niyodogawa.org/blog/niyodogawa/spot/11884/', source_kind='regional_editorial_reference',
+             locator='節「二社神社とは」第一段落', name_raw='二社神社', reading_raw='にしゃじんじゃ',
+             address_raw='高知県吾川郡いの町柳瀬本村',
+             excerpt='二社神社（にしゃじんじゃ） / 高知県吾川郡いの町柳瀬本村'),
+        dict(url='https://www.town.ino.kochi.jp/bunkazai/bunka_town_80/', source_kind='municipal_reference',
+             locator='h2内rubyの「二社」「神社」と個別rt、所在地、冒頭', name_raw='二社神社',
+             address_raw='いの町柳瀬本村', excerpt='二社（にしゃ）神社（じんじゃ） / いの町柳瀬本村'),
+        dict(url='https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1490005002933',
+             source_kind='government_corporate_register', name_raw='二社神社',
+             locator='最新情報の法人番号、商号又は名称、本店又は主たる事務所の所在地',
+             address_raw='高知県吾川郡いの町柳瀬本村９２９番地',
+             excerpt='二社神社 / 高知県吾川郡いの町柳瀬本村９２９番地'),
+    ),
     ('41', '金立神社', '佐賀市金立町大字金立３４１５'): (
         dict(url='https://tabi-bito.net/kinnryu-shrine-jogu/', source_kind='independent_site_visit',
              locator='主見出し及び上宮への現地参拝の記録', name_raw='金立神社',
@@ -554,7 +568,8 @@ def _joined_published_reading(ref, correction, facility):
     key = (facility.get('prefecture_code'), facility.get('listed_name'), raw_address(facility))
     sources = _PUBLISHED_READING_PAIRS.get(key)
     if (not sources or set(correction.get('changes', {})) != {'reading'}
-            or ref.get('address_raw') or ref.get('reading_scope') != 'full_name'
+            or (ref.get('address_raw') and 'address_raw' not in sources[0])
+            or ref.get('reading_scope') != 'full_name'
             or not _record_matches_publication(ref, sources[0])):
         return False
     return all(any(_record_matches_publication(site, fields) for site in correction['references'])

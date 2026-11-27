@@ -1256,6 +1256,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 佐久市の諏訪神社6社は、神社庁の一覧から個別本文へ到達する実リンク、原地番、全文かなを照合しました。大鹿村の大磧神社は、県名簿の森下3402、国税庁と教育芸術社が明記する「たいせきじんじゃ」を確認し、歴史資料の「おおかわらじんじや」を調査記録に保持しました。京都では福知山市上天津の天満神社の81・82・83・84と、南丹市八木町池上北谷の八幡神社の11-1を、神社庁の原欄と現行法人個票で照合しました。今回の追加は9登録で、全国の保留は**9,201 → 9,192登録**です。[長野県の宗教法人名簿](https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf#page=12)・[教育芸術社の大鹿歌舞伎解説](https://www.kyogei.co.jp/shirabe/kyoudo/text17.html)・[大磧神社の歴史地名資料](https://geoshape.ex.nii.ac.jp/nrct-poi/resource/20/200000172500.html)・[上天津の天満神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5130005010308)・[池上北谷の八幡神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3130005007479)
 
+### 町域候補の個別照合と滋賀・香川・高知の補完（2026-11-27）
+
+町域が対応した候補から、前回と重ならない滋賀22件、高知16件、長崎11件を個別に照合し、香川でも読みの出典を確認しました。長浜市坂口290の意波閇神社は「おはへじんじゃ」、小豆島町池田1621の亀山八幡宮は「かめやまはちまんぐう」を各現地記録と神社庁の鎮座地で照合しました。いの町の二社神社は町の本文のルビと現地記録の「にしゃじんじゃ」、庁と法人の柳瀬本村929番地を確認しました。全国の保留は**9,192 → 9,189登録**です。[意波閇神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5160005004521)・[亀山八幡宮の現地記録](https://ruxrux2018.blog.fc2.com/blog-entry-1697.html)・[いの町の二社神社資料](https://www.town.ino.kochi.jp/bunkazai/bunka_town_80/)
+
+壱岐市勝本町北触の若宮神社は神社庁の89と観光資料の89-1の関係を、佐世保市黒髪町の綿津美神社は同町を示す資料間の異読を保留しました。まんのう町の天川神社は町資料の「あまがわじんじゃ」と国立国会図書館典拠の「アマカワ ジンジャ」を確認し、読みの採用を保留しました。[壱岐市の若宮神社観光資料](https://www.ikikankou.com/spot/10240)・[まんのう町の念仏踊資料](https://www.town.manno.lg.jp/site/bunkazai/4730.html)・[国立国会図書館の天川神社典拠](https://id.ndl.go.jp/auth/ndlna/001111453)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

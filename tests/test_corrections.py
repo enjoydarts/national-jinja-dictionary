@@ -1,7 +1,7 @@
 import copy
 import unittest
 from test_records import build,row
-from njd.corrections import apply_corrections
+from njd.corrections import _PUBLISHED_READING_PAIRS, apply_corrections
 from njd.records import build_dataset
 from njd.validation import eligible,validate
 from njd.exporters import render
@@ -166,6 +166,26 @@ class KumadeJoinedReadingTest(unittest.TestCase):
         self.assertEqual(applied['correction']['references'][0]['reading_raw'], raw_reading)
         refs[-1].update(address_raw=municipal_address.replace('200', '201'),
                         excerpt=refs[-1]['excerpt'].replace('200', '201'))
+        self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+
+class NishaJoinedReadingTest(unittest.TestCase):
+    def test_locality_in_reading_article_requires_the_inspected_full_parcel(self):
+        name = '二社神社'
+        address = '高知県吾川郡いの町柳瀬本村929番地'
+        data = build_dataset('kochi', '39', '高知県', 'Synthetic test', [
+            row(name=name, address=address, municipality='吾川郡いの町'),
+        ])
+        proposal = correction(data, {'reading': 'にしゃじんじゃ'})
+        refs = proposal['entries'][data['entries'][0]['id']]['references']
+        refs[0].update(reading_raw='', excerpt=name+' ／ '+address)
+        for fields in _PUBLISHED_READING_PAIRS['39', name, address]:
+            refs.append(dict(fields, title='Synthetic reference', page_hash='a'*64,
+                             checked_at='2026-11-27T05:06:13+00:00', reading_scope='full_name'))
+        corrected = apply_corrections(data, proposal)
+        self.assertEqual(len(eligible(corrected)), 1)
+        self.assertEqual(corrected['entries'][0]['reading_url'], refs[1]['url'])
+        refs[-1]['address_raw'] += 'の１'
         self.assertEqual(eligible(apply_corrections(data, proposal)), [])
 
 
