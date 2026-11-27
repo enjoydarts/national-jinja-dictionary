@@ -20,6 +20,7 @@ _PUBLISHED_PARCEL_SPELLINGS = {
     ('39', '四万十市', '鷣神社', '四万十市西土佐江川﨑2972'): '四万十市西土佐江川崎2972',
     ('26', '亀岡市', '八幡宮社', '亀岡市曽我部町西條丙中垣内1-1'): '亀岡市曽我部町西条丙中垣内1-1',
     ('26', '亀岡市', '若宮神社', '亀岡市曽我部町南條中荒水代4'): '亀岡市曽我部町南条中荒水代4',
+    ('37', '高松市', '三社神社', '高松市花宮町929'): '高松市花ノ宮町929',
     ('42', '五島市', '神﨑神社', '五島市岐宿町川原字神﨑3482'): '五島市岐宿町川原字神崎3482',
     ('42', '壱岐市', '八坂神社', '壱岐市郷ノ浦町郷ノ浦313番地・314'): '壱岐市郷ノ浦町郷ノ浦313・314',
     ('42', '南松浦郡新上五島町', '蛭子神社', '南松浦郡新上五島町町飯ノ瀬戸郷10'):
@@ -45,6 +46,8 @@ _PUBLISHED_PARCEL_SPELLINGS = {
     ('20', '木曽郡南木曽町', '諏訪神社', '木曽郡南木曽町吾妻字廣瀬4441'): '木曽郡南木曽町吾妻字広瀬4441',
     ('20', '諏訪郡富士見町', '大理神社', '諏訪郡富士見町落合字澤良平12219'): '諏訪郡富士見町落合字沢良平12219',
     ('20', '上伊那郡南箕輪村', '日光社月光社合殿', '南箕輪村字澤尻8309'): '南箕輪村字沢尻8309',
+    ('20', '上伊那郡辰野町', '神明神社', '上伊那郡辰野町大字伊那富字日向9610'):
+        '上伊那郡辰野町大字伊那富日向9610',
 }
 _KYOTO_GLYPH_PARCELS = {
     ('与謝郡与謝野町岩屋森谷763', '阿知江𡶌部神社'): (
@@ -479,6 +482,37 @@ def _joined_official_reading(ref,correction,facility,entry):
         for r in correction.get('references',[]))
 
 
+def _joined_ozeki_reading(ref, correction, facility):
+    """The river office names the shrine, and the shrine prints its parcel."""
+    if (set(correction.get('changes', {})) != {'reading'}
+            or facility.get('prefecture_code') != '40'
+            or facility.get('listed_name') != '大堰神社'
+            or facility.get('address') != '三井郡大刀洗町冨多1302'
+            or ref.get('url') != 'https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html'
+            or ref.get('source_kind') != 'government_shrine_heritage_guide'
+            or ref.get('locator') != 'h3内のa[name=anchor031]と社名・全文かな'
+            or ref.get('name_raw') != '大堰神社' or ref.get('reading_scope') != 'full_name'
+            or ref.get('address_raw') or ref.get('reading_raw') != 'おおぜきじんじゃ'
+            or ref.get('excerpt') != '大堰神社（おおぜきじんじゃ）'
+            or not _hash(ref.get('page_hash')) or not _date(ref.get('checked_at'))):
+        return False
+    return any(
+        isinstance(site, dict)
+        and site.get('url') == 'https://oozekijinja.site/'
+        and site.get('source_kind') == 'official_shrine_location_reference'
+        and site.get('name_raw') == '大堰神社'
+        and site.get('address_raw') == '福岡県三井郡大刀洗町冨多１３０２番地'
+        and site.get('excerpt') == '大堰神社 ／ 福岡県三井郡大刀洗町冨多１３０２番地'
+        and _hash(site.get('page_hash')) and _date(site.get('checked_at'))
+        for site in correction['references']
+    )
+
+
+def _joined_reading_reference(ref, correction, facility, entry):
+    return (_joined_official_reading(ref, correction, facility, entry)
+            or (entry.get('status') != 'excluded' and _joined_ozeki_reading(ref, correction, facility)))
+
+
 def _agency_reading_compatible(name,raw,scope,full):
     """Compare literal evidence, never construct a reading from a stem.
 
@@ -572,7 +606,7 @@ def correction_problems(correction,facility,entry,source=None):
         nantan = isinstance(proof, dict) and proof.get('kind') == NANTAN_PROOF
         if nantan and not bound:
             problems.append('Nantan shrine identity differs from the inspected documents')
-        joined=_joined_official_reading(ref,correction,facility,entry)
+        joined=_joined_reading_reference(ref,correction,facility,entry)
         if (registry_present and bound and 'reading' in changes and ref.get('reading_raw')
             and ref.get('source_kind') in ('agency','official_agency')
             and ref.get('reading_scope') in ('full_name','partial_or_absent')
@@ -653,7 +687,10 @@ def apply_corrections(data,document):
             for ref in reading_refs:
                 try:matched=_normalized_reference_reading(ref)==entry['reading'] and ref.get('reading_raw','') in ref.get('excerpt','')
                 except (TypeError,ValueError):matched=False
-                if matched and (_reference_matches(ref,facility,entry,changes) or _linked_locality_reference(ref,correction,facility) or _joined_official_reading(ref,correction,facility,entry)):entry['reading_url']=ref['url'];entry['checked_at']=ref['checked_at'];break
+                if matched and (_reference_matches(ref,facility,entry,changes)
+                                or _linked_locality_reference(ref,correction,facility)
+                                or _joined_reading_reference(ref,correction,facility,entry)):
+                    entry['reading_url']=ref['url'];entry['checked_at']=ref['checked_at'];break
         reading_resolved='reading' in changes
         if not reading_resolved:
             try:reading_resolved=normalize_reading(entry['reading_raw'])==entry['reading']

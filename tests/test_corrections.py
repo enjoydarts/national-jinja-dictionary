@@ -59,6 +59,36 @@ class NagasakiDocumentedParcelTest(unittest.TestCase):
                 self.assertEqual(eligible(apply_corrections(data, proposal)), [])
 
 
+class OzekiJoinedReadingTest(unittest.TestCase):
+    def test_published_reading_url_requires_the_exact_shrine_parcel(self):
+        address = '三井郡大刀洗町冨多1302'
+        name = '大堰神社'
+        data = build_dataset('fukuoka', '40', '福岡県', 'Synthetic test', [
+            row(name=name, address=address, municipality='三井郡大刀洗町'),
+        ])
+        original = data['entries'][0]
+        proposal = correction(data, {'reading': 'おおぜきじんじゃ'})
+        refs = proposal['entries'][original['id']]['references']
+        observed = '2026-11-27T03:00:00+00:00'
+        guide = 'https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html'
+        refs[0].update(url=guide, source_kind='government_shrine_heritage_guide',
+                       locator='h3内のa[name=anchor031]と社名・全文かな',
+                       page_hash='a'*64, checked_at=observed, address_raw='',
+                       reading_scope='full_name', excerpt='大堰神社（おおぜきじんじゃ）')
+        site_address = '福岡県三井郡大刀洗町冨多１３０２番地'
+        refs.append(dict(
+            url='https://oozekijinja.site/', title='Synthetic site',
+            source_kind='official_shrine_location_reference', name_raw=name,
+            address_raw=site_address, excerpt=name+' ／ '+site_address,
+            page_hash='b'*64, checked_at=observed,
+        ))
+        corrected = apply_corrections(data, proposal)
+        self.assertEqual(corrected['entries'][0]['reading_url'], guide)
+        self.assertEqual(len(eligible(corrected)), 1)
+        refs[1].update(address_raw=site_address+'の１', excerpt=name+' ／ '+site_address+'の１')
+        self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+
 class ParcelRangeReferenceTest(unittest.TestCase):
     def candidate(self, address):
         acquired = '架空市乙町自88番地.至89番地'

@@ -33900,12 +33900,138 @@
           "surface": "八幡神社"
         },
         {
-          "checked_at": "2026-11-09T08:24:38.140513+00:00",
+          "checked_at": "2026-11-27T03:41:03.698025+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「大堰神社」と所在地「三井郡大刀洗町冨多1302」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "b489b424-68cb-5bb8-893c-8e3970d1ba39",
           "fetched_at": "2026-11-09T08:24:38.140513+00:00",
           "id": "a6d8ec79-f8dd-55de-a41a-e6ea0a4b5da1",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おおぜきじんじゃ"
+              },
+              "expected_source_hash": "102e3cff015700e15a43e1381f6efdc908a137278e328a666dc7df132600409b",
+              "facility_id": "b489b424-68cb-5bb8-893c-8e3970d1ba39",
+              "identity_match": {
+                "agency_address": "三井郡大刀洗町冨多1302",
+                "agency_name": "大堰神社",
+                "identity_facts": [
+                  "床島堰の功労者を祭る大刀洗町冨多の大堰神社",
+                  "同社の水天宮祭と冨多1302の鎮座地"
+                ],
+                "reference_address": "福岡県三井郡大刀洗町冨多１３０２番地",
+                "reference_name": "大堰神社"
+              },
+              "original": {
+                "address": "三井郡大刀洗町冨多1302",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
+                "name_raw": "大堰神社",
+                "reading_raw": ""
+              },
+              "reason": "国土交通省の中流域案内は床島堰の功労者と水天宮祭を特定して全文かなを明示。神社公式・百年祭資料と広域行政の案内で冨多1302の鎮座地を照合した。",
+              "references": [
+                {
+                  "attribution": "出典：国土交通省九州地方整備局 筑後川河川事務所「中流域エリア2」",
+                  "checked_at": "2026-11-27T03:41:03.698025+00:00",
+                  "excerpt": "大堰神社（おおぜきじんじゃ）",
+                  "fetched_at": "2026-11-27T03:41:03.698025+00:00",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "h3内のa[name=anchor031]と社名・全文かな",
+                  "name_raw": "大堰神社",
+                  "page_hash": "a1e0c36fb07b16b1143895a6dc530427a10911ee8d8154be850144b01bc7e947",
+                  "reading_raw": "おおぜきじんじゃ",
+                  "reading_scope": "full_name",
+                  "requested_url": "https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html",
+                  "source_kind": "government_shrine_heritage_guide",
+                  "status": 200,
+                  "terms_url": "https://www.mlit.go.jp/link.html",
+                  "title": "国土交通省筑後川河川事務所 中流域エリア2",
+                  "url": "https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html"
+                },
+                {
+                  "address_raw": "福岡県三井郡大刀洗町冨多１３０２番地",
+                  "checked_at": "2026-11-27T03:43:24.972020+00:00",
+                  "description": "祭神に床島堰の築造功労者を祀る。",
+                  "excerpt": "大堰神社 ／ 福岡県三井郡大刀洗町冨多１３０２番地",
+                  "fetched_at": "2026-11-27T03:43:24.972020+00:00",
+                  "locator": "ページ表題と末尾「アクセス」住所欄",
+                  "name_raw": "大堰神社",
+                  "page_hash": "425a46fb2c2fae943d9528a82e57a8e56c40e686eba994c923e1aab6031809e1",
+                  "requested_url": "https://oozekijinja.site/",
+                  "source_kind": "official_shrine_location_reference",
+                  "status": 200,
+                  "title": "大堰神社",
+                  "url": "https://oozekijinja.site/"
+                },
+                {
+                  "address_raw": "福岡県三井郡大刀洗町冨多1302番地",
+                  "checked_at": "2026-11-27T03:49:14.358994+00:00",
+                  "excerpt": "大堰神社 ／ 福岡県三井郡大刀洗町冨多1302番地",
+                  "fetched_at": "2026-11-27T03:49:14.358994+00:00",
+                  "locator": "PDF1頁左、社名・「大堰」へ振ったルビ・住所・案内図",
+                  "name_raw": "大堰神社",
+                  "page_hash": "4d6f78573d054c20ba6898438cc15fd71e3220f068b9c862f322c45886138981",
+                  "printed_stem_reading_raw": "おおぜき",
+                  "reading_scope": "partial",
+                  "rendered_page_sha256": "0f1af026eb68d301a99baac0fb6409b548a7ca6aec0cfd1bbaa16fdb218536d3",
+                  "source_kind": "official_shrine_site_flyer",
+                  "status": 200,
+                  "title": "大堰神社御鎮座百年記念大祭",
+                  "url": "https://oozekijinja.site/wp-content/uploads/2025/10/hyakunenkinentaisai.pdf"
+                },
+                {
+                  "address_raw": "福岡県三井郡大刀洗町大字冨多字東屋敷１３０２番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9290005010437）",
+                  "checked_at": "2026-11-27T03:43:19.756547+00:00",
+                  "corporate_number": "9290005010437",
+                  "excerpt": "大堰神社 ／ 福岡県三井郡大刀洗町大字冨多字東屋敷１３０２番地",
+                  "fetched_at": "2026-11-27T03:43:19.756547+00:00",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                  "name_raw": "大堰神社",
+                  "page_hash": "8c04cd3f660cc0c5ab462f7aef37dd11b21ba3f7a63c64ad6e03a8683eb6086b",
+                  "requested_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9290005010437",
+                  "source_kind": "government_corporate_location_reference",
+                  "status": 200,
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 大堰神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9290005010437"
+                },
+                {
+                  "address_raw": "福岡県 三井郡大刀洗町 大字冨多1302番地",
+                  "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                  "checked_at": "2026-11-27T03:41:03.661109+00:00",
+                  "excerpt": "大堰神社 ／ おおぜきじんじや ／ 福岡県 三井郡大刀洗町 大字冨多1302番地",
+                  "fetched_at": "2026-11-27T03:41:03.661109+00:00",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "基本情報の名称、よみ、住所各欄",
+                  "name_raw": "大堰神社",
+                  "page_hash": "aac203aa5b4f4de707ff43ec99bb553b259d3585929b8a18792a73fc39cb24c7",
+                  "reading_raw": "おおぜきじんじや",
+                  "requested_url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/41/410000262800.html",
+                  "source_kind": "historical_gazetteer",
+                  "status": 200,
+                  "title": "『日本歴史地名大系』施設・地点項目データセット 大堰神社",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/41/410000262800.html"
+                },
+                {
+                  "address_raw": "福岡県三井郡大刀洗町冨多１３０２",
+                  "checked_at": "2026-11-27T03:43:20.118165+00:00",
+                  "excerpt": "大堰神社 ／ 福岡県三井郡大刀洗町冨多１３０２",
+                  "fetched_at": "2026-11-27T03:43:20.118165+00:00",
+                  "locator": "大刀洗町の個別案内の社名見出しと所在地欄",
+                  "name_raw": "大堰神社",
+                  "page_hash": "bbceeeced254c28684025d536b1bd9539dad88bcc1c9b31728f4da8e723d211e",
+                  "requested_url": "https://kurume-kouiki.jp/spot/s_article/1073/",
+                  "source_kind": "municipal_cooperative_location_reference",
+                  "status": 200,
+                  "title": "久留米広域ウェルビーイングなびの大堰神社",
+                  "url": "https://kurume-kouiki.jp/spot/s_article/1073/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
           "name_raw": "大堰神社",
           "normalization": [
@@ -33913,11 +34039,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
-          "reading": "",
+          "reading": "おおぜきじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -33966,6 +34092,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おおぜきじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おおぜきじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "大堰神社",
             "wikipedia_article_refs": [],
@@ -33996,7 +34136,7 @@
             "status": "pending",
             "surface": "大堰神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "大堰神社"
         },
         {
