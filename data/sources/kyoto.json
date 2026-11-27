@@ -58264,12 +58264,180 @@
           "surface": "八幡宮社"
         },
         {
-          "checked_at": "2026-11-09T08:51:27.170331+00:00",
+          "checked_at": "2026-11-27T02:28:52.061989+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「若宮神社」、郵便番号「621-0022」、所在地「亀岡市曽我部町南条中荒水代4」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "d50d6c3b-151d-5c6c-967f-ff103de351ca",
           "fetched_at": "2026-11-09T08:51:27.170331+00:00",
           "id": "0f25730a-ee06-57cc-bd01-d6f35a306771",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "わかみやじんじゃ"
+              },
+              "expected_source_hash": "c719ad952dbbafe599675d499ad3da3e04e92821df4d36ec0c1cd034271de0bb",
+              "facility_id": "d50d6c3b-151d-5c6c-967f-ff103de351ca",
+              "identity_match": {
+                "agency_address": "亀岡市曽我部町南条中荒水代4",
+                "agency_name": "若宮神社",
+                "effective_address": "亀岡市曽我部町南条中荒水代4",
+                "reference_address": "京都府亀岡市曽我部町南條中荒水代４番地",
+                "reference_name": "若宮神社"
+              },
+              "original": {
+                "address": "亀岡市曽我部町南条中荒水代4",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
+                "name_raw": "若宮神社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁個票の全文フリガナと保管した全件CSVが一致。亀岡市の同じ正式名・小字・全地番を照合し、公開町字行と公図筆で神社庁の大字表記を確認した。",
+              "references": [
+                {
+                  "address_raw": "京都府亀岡市曽我部町南條中荒水代４番地",
+                  "address_role": "corporation_principal_office",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008033）",
+                  "checked_at": "2026-11-27T02:28:52.061989+00:00",
+                  "corporate_archive_observation": {
+                    "archive_sha256": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                    "csv_member": "26_kyoto_all_20261030.csv",
+                    "csv_row": 11780,
+                    "fetched_at": "2026-11-25T07:49:54.317599+00:00",
+                    "image_ids": {
+                      "addressImageId": "",
+                      "nameImageId": ""
+                    },
+                    "rows": 116052,
+                    "state_comparison": {
+                      "active_corporate_number_same_name_address": [
+                        "1130005008033"
+                      ],
+                      "latest_state_through": "diff_20261126.csv",
+                      "same_name_same_address_count": 1
+                    },
+                    "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                  },
+                  "corporate_number": "1130005008033",
+                  "excerpt": "若宮神社 ／ ワカミヤジンジャ ／ 京都府亀岡市曽我部町南條中荒水代４番地",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の法人番号、商号又は名称、商号又は名称（フリガナ）、本店又は主たる事務所の所在地",
+                  "municipal_parcel_observation": {
+                    "cadastral_parcel": {
+                      "archive_sha256": "e955b9b348449394551ceac8f56f7f40a6c20ba34a9f4157ed04135566ba100c",
+                      "attribution": "出典：登記所備付地図データ 亀岡市（法務省、法務省地図XMLアダプトプロジェクト再配布）。該当大字・小字・地番の抽出。",
+                      "checked_at": "2026-11-27T02:31:12.302736+00:00",
+                      "exact_parcel_hits": 1,
+                      "fixed_revision": "6232960dcebef0702cc3fcd8de878262c7697a3c",
+                      "limitations": "2023年公開の地図。任意座標系。地番の照合に限り地理座標や施設名をこの資料から求めない。",
+                      "map_metadata": {
+                        "地図名": "曽我部町南条",
+                        "市区町村コード": "26206",
+                        "市区町村名": "亀岡市",
+                        "座標系": "任意座標系"
+                      },
+                      "parcel_id": "H000001171",
+                      "row": {
+                        "地番": "4",
+                        "大字コード": "068",
+                        "大字名": "曽我部町南条",
+                        "小字コード": "0011",
+                        "小字名": "中荒水代"
+                      },
+                      "terms_hash": "4c61d9334883db14ad269e5d0132601eb6e6295ed64857d8933d066b6cd93c40",
+                      "terms_url": "https://raw.githubusercontent.com/amx-project/kuwanauchi26kyoto/6232960dcebef0702cc3fcd8de878262c7697a3c/LICENSE.md",
+                      "url": "https://raw.githubusercontent.com/amx-project/kuwanauchi26kyoto/6232960dcebef0702cc3fcd8de878262c7697a3c/xml/26206-1301-111.zip",
+                      "xml_member": "26206-1301-111.xml",
+                      "xml_parcel_ordinal_1_based": 1171,
+                      "xml_sha256": "f2a4b21864df250f3a5ed67ff0f0de1dd183ca9701d79bebae0f11f291fdcfac"
+                    },
+                    "observed_town_pair": {
+                      "agency_and_map": "曽我部町南条",
+                      "comparison_scope": "亀岡市曽我部町南条中荒水代4",
+                      "corporate": "曽我部町南條"
+                    },
+                    "town_master": {
+                      "archive_sha256": "a04309d2dfd4211d57402441bde7a60b7b1aa18da53f2ab51d9f59a0b7ac4e9f",
+                      "attribution": "デジタル庁「全国 町字マスター」を比較用に加工。",
+                      "checked_at": "2026-11-26T13:24:56.921364+00:00",
+                      "row": {
+                        "ablt_date": "",
+                        "chome": "",
+                        "city": "亀岡市",
+                        "county": "",
+                        "csv_row": 568602,
+                        "efct_date": "1947-04-17",
+                        "koaza": "中荒水代",
+                        "lg_code": "262064",
+                        "machiaza_id": "0053113",
+                        "machiaza_type": "3",
+                        "oaza_cho": "曽我部町南条",
+                        "pref": "京都府",
+                        "status_flg": "1",
+                        "ward": ""
+                      },
+                      "terms_hash": "7eb89335f31b26b273286eb7b239c91cefd57443c0399f47acc300b9e0226b8b",
+                      "terms_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                      "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip",
+                      "zip_member": "mt_town_all.csv"
+                    }
+                  },
+                  "name_raw": "若宮神社",
+                  "page_hash": "830dcb57c678258608b28363b92aff106b3fadff89b2feb1a4def9b9ce1e85d4",
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+                  "reading_raw": "ワカミヤジンジャ",
+                  "reading_scope": "full_name",
+                  "rights_reference": {
+                    "checked_at": "2026-11-27T02:30:32.876409+00:00",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "公共データ利用規約（第1.0版）・出典の記載",
+                    "mime": "text/html",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "publisher": "国税庁",
+                    "source_kind": "government_site_terms",
+                    "status": "retrieved",
+                    "title": "国税庁法人番号公表サイト 利用規約",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                  },
+                  "source_fields": {
+                    "addressImageId": "",
+                    "addressOutside": "",
+                    "addressOutsideImageId": "",
+                    "assignmentDate": "2015-10-05",
+                    "changeCause": "",
+                    "changeDate": "2015-10-05",
+                    "cityCode": "206",
+                    "cityName": "亀岡市",
+                    "closeCause": "",
+                    "closeDate": "",
+                    "corporateNumber": "1130005008033",
+                    "correct": "1",
+                    "enAddressOutside": "",
+                    "enCityName": "",
+                    "enName": "",
+                    "enPrefectureName": "",
+                    "furigana": "ワカミヤジンジャ",
+                    "hihyoji": "0",
+                    "kind": "399",
+                    "latest": "1",
+                    "name": "若宮神社",
+                    "nameImageId": "",
+                    "postCode": "6210000",
+                    "prefectureCode": "26",
+                    "prefectureName": "京都府",
+                    "process": "01",
+                    "sequenceNumber": "11780",
+                    "streetNumber": "曽我部町南條中荒水代４番地",
+                    "successorCorporateNumber": "",
+                    "updateDate": "2025-04-25"
+                  },
+                  "source_kind": "government_corporate_register",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 若宮神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008033"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
           "name_raw": "若宮神社",
           "normalization": [
@@ -58277,11 +58445,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "3bc2b67d84727cc3039b50aec229859ecabcaa8cb7b6203935a38f86f3b33c54",
-          "reading": "",
+          "reading": "わかみやじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008033",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -58433,6 +58601,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "わかみやじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "わかみやじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "若宮神社",
             "wikipedia_article_refs": [],
@@ -58463,16 +58645,184 @@
             "status": "pending",
             "surface": "若宮神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "若宮神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:27.170331+00:00",
+          "checked_at": "2026-11-27T02:28:49.372441+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「八幡宮社」、郵便番号「621-0028」、所在地「亀岡市曽我部町西条丙中垣内1-1」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "068949b2-b5c4-5776-a748-728dafe1781b",
           "fetched_at": "2026-11-09T08:51:27.170331+00:00",
           "id": "3bdb6eec-e274-525c-9fe9-e7ed7cb7ae4b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はちまんぐうしゃ"
+              },
+              "expected_source_hash": "fcf68dce187278e61eebab536bbf6a22c87c889a9793879fbd271c59c68a2a7e",
+              "facility_id": "068949b2-b5c4-5776-a748-728dafe1781b",
+              "identity_match": {
+                "agency_address": "亀岡市曽我部町西条丙中垣内1-1",
+                "agency_name": "八幡宮社",
+                "effective_address": "亀岡市曽我部町西条丙中垣内1-1",
+                "reference_address": "京都府亀岡市曽我部町西條丙中垣内１番地の１",
+                "reference_name": "八幡宮社"
+              },
+              "original": {
+                "address": "亀岡市曽我部町西条丙中垣内1-1",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
+                "name_raw": "八幡宮社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁個票の全文フリガナと保管した全件CSVが一致。亀岡市の同じ正式名・小字・全地番を照合し、公開町字行と公図筆で神社庁の大字表記を確認した。",
+              "references": [
+                {
+                  "address_raw": "京都府亀岡市曽我部町西條丙中垣内１番地の１",
+                  "address_role": "corporation_principal_office",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008009）",
+                  "checked_at": "2026-11-27T02:28:49.372441+00:00",
+                  "corporate_archive_observation": {
+                    "archive_sha256": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                    "csv_member": "26_kyoto_all_20261030.csv",
+                    "csv_row": 11777,
+                    "fetched_at": "2026-11-25T07:49:54.317599+00:00",
+                    "image_ids": {
+                      "addressImageId": "",
+                      "nameImageId": ""
+                    },
+                    "rows": 116052,
+                    "state_comparison": {
+                      "active_corporate_number_same_name_address": [
+                        "1130005008009"
+                      ],
+                      "latest_state_through": "diff_20261126.csv",
+                      "same_name_same_address_count": 1
+                    },
+                    "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html"
+                  },
+                  "corporate_number": "1130005008009",
+                  "excerpt": "八幡宮社 ／ ハチマングウシャ ／ 京都府亀岡市曽我部町西條丙中垣内１番地の１",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の法人番号、商号又は名称、商号又は名称（フリガナ）、本店又は主たる事務所の所在地",
+                  "municipal_parcel_observation": {
+                    "cadastral_parcel": {
+                      "archive_sha256": "2a6962c84ad0cdc062f69a31ec8d0795beddceb85b6628402d617c93d84722e9",
+                      "attribution": "出典：登記所備付地図データ 亀岡市（法務省、法務省地図XMLアダプトプロジェクト再配布）。該当大字・小字・地番の抽出。",
+                      "checked_at": "2026-11-27T02:31:09.297691+00:00",
+                      "exact_parcel_hits": 1,
+                      "fixed_revision": "6232960dcebef0702cc3fcd8de878262c7697a3c",
+                      "limitations": "2023年公開の地図。任意座標系。地番の照合に限り地理座標や施設名をこの資料から求めない。",
+                      "map_metadata": {
+                        "地図名": "曽我部町西条",
+                        "市区町村コード": "26206",
+                        "市区町村名": "亀岡市",
+                        "座標系": "任意座標系"
+                      },
+                      "parcel_id": "H000000966",
+                      "row": {
+                        "地番": "1-1",
+                        "大字コード": "067",
+                        "大字名": "曽我部町西条",
+                        "小字コード": "0017",
+                        "小字名": "丙中垣内"
+                      },
+                      "terms_hash": "4c61d9334883db14ad269e5d0132601eb6e6295ed64857d8933d066b6cd93c40",
+                      "terms_url": "https://raw.githubusercontent.com/amx-project/kuwanauchi26kyoto/6232960dcebef0702cc3fcd8de878262c7697a3c/LICENSE.md",
+                      "url": "https://raw.githubusercontent.com/amx-project/kuwanauchi26kyoto/6232960dcebef0702cc3fcd8de878262c7697a3c/xml/26206-1301-109.zip",
+                      "xml_member": "26206-1301-109.xml",
+                      "xml_parcel_ordinal_1_based": 966,
+                      "xml_sha256": "54d1507613c1544afaffdf7645686a96c5445ad056abccff0fad4a0caeb84f38"
+                    },
+                    "observed_town_pair": {
+                      "agency_and_map": "曽我部町西条",
+                      "comparison_scope": "亀岡市曽我部町西条丙中垣内1-1",
+                      "corporate": "曽我部町西條"
+                    },
+                    "town_master": {
+                      "archive_sha256": "a04309d2dfd4211d57402441bde7a60b7b1aa18da53f2ab51d9f59a0b7ac4e9f",
+                      "attribution": "デジタル庁「全国 町字マスター」を比較用に加工。",
+                      "checked_at": "2026-11-26T13:24:56.921364+00:00",
+                      "row": {
+                        "ablt_date": "",
+                        "chome": "",
+                        "city": "亀岡市",
+                        "county": "",
+                        "csv_row": 568625,
+                        "efct_date": "1947-04-17",
+                        "koaza": "丙中垣内",
+                        "lg_code": "262064",
+                        "machiaza_id": "0054117",
+                        "machiaza_type": "3",
+                        "oaza_cho": "曽我部町西条",
+                        "pref": "京都府",
+                        "status_flg": "1",
+                        "ward": ""
+                      },
+                      "terms_hash": "7eb89335f31b26b273286eb7b239c91cefd57443c0399f47acc300b9e0226b8b",
+                      "terms_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                      "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip",
+                      "zip_member": "mt_town_all.csv"
+                    }
+                  },
+                  "name_raw": "八幡宮社",
+                  "page_hash": "2187a332741b18e05e446c14771197d1c06fd2a22e48f5baa1b36734011d8a3c",
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+                  "reading_raw": "ハチマングウシャ",
+                  "reading_scope": "full_name",
+                  "rights_reference": {
+                    "checked_at": "2026-11-27T02:30:32.876409+00:00",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "公共データ利用規約（第1.0版）・出典の記載",
+                    "mime": "text/html",
+                    "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                    "publisher": "国税庁",
+                    "source_kind": "government_site_terms",
+                    "status": "retrieved",
+                    "title": "国税庁法人番号公表サイト 利用規約",
+                    "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                  },
+                  "source_fields": {
+                    "addressImageId": "",
+                    "addressOutside": "",
+                    "addressOutsideImageId": "",
+                    "assignmentDate": "2015-10-05",
+                    "changeCause": "",
+                    "changeDate": "2015-10-05",
+                    "cityCode": "206",
+                    "cityName": "亀岡市",
+                    "closeCause": "",
+                    "closeDate": "",
+                    "corporateNumber": "1130005008009",
+                    "correct": "1",
+                    "enAddressOutside": "",
+                    "enCityName": "",
+                    "enName": "",
+                    "enPrefectureName": "",
+                    "furigana": "ハチマングウシャ",
+                    "hihyoji": "0",
+                    "kind": "399",
+                    "latest": "1",
+                    "name": "八幡宮社",
+                    "nameImageId": "",
+                    "postCode": "6210000",
+                    "prefectureCode": "26",
+                    "prefectureName": "京都府",
+                    "process": "01",
+                    "sequenceNumber": "11777",
+                    "streetNumber": "曽我部町西條丙中垣内１番地の１",
+                    "successorCorporateNumber": "",
+                    "updateDate": "2025-04-25"
+                  },
+                  "source_kind": "government_corporate_register",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 八幡宮社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008009"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
           "name_raw": "八幡宮社",
           "normalization": [
@@ -58480,11 +58830,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "3bc2b67d84727cc3039b50aec229859ecabcaa8cb7b6203935a38f86f3b33c54",
-          "reading": "",
+          "reading": "はちまんぐうしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/14.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008009",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -58556,6 +58906,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちまんぐうしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちまんぐうしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八幡宮社",
             "wikipedia_article_refs": [],
@@ -58586,7 +58950,7 @@
             "status": "pending",
             "surface": "八幡宮社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八幡宮社"
         },
         {

@@ -141647,12 +141647,145 @@
           "surface": "黄番神社"
         },
         {
-          "checked_at": "2026-11-09T02:04:33.457170+00:00",
+          "checked_at": "2026-11-24T07:29:07.789263+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/f2ee476f-8b1d-457b-9b14-510d1cde8069: 名称=天神社; 掲載読み=; 所在地=高知県四万十市西土佐江川崎2432番地",
           "facility_id": "3e9da6a2-dc0a-5c47-b522-28f8e4763b10",
           "fetched_at": "2026-11-09T02:04:33.457170+00:00",
           "id": "db5d54e7-412c-52fc-a5b6-8f5a9e1c48c5",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "てんじんじゃ"
+              },
+              "expected_source_hash": "5fb40b119c4d352b6ab784a99494127120529f115c79f110718b0f15334f73c6",
+              "facility_id": "3e9da6a2-dc0a-5c47-b522-28f8e4763b10",
+              "identity_match": {
+                "agency_address": "高知県四万十市西土佐江川崎2432番地",
+                "agency_name": "天神社",
+                "effective_address": "高知県四万十市西土佐江川崎2432番地",
+                "reference_address": "高知県四万十市西土佐江川﨑２４３２番地",
+                "reference_name": "天神社"
+              },
+              "original": {
+                "address": "高知県四万十市西土佐江川崎2432番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=73",
+                "name_raw": "天神社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁公表CSVと現行個票の全文フリガナを確認し、ひらがなへ変換。",
+              "references": [
+                {
+                  "address_raw": "高知県四万十市西土佐江川﨑２４３２番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+                  "checked_at": "2026-11-24T07:29:07.789263+00:00",
+                  "corporate_number": "3490005002452",
+                  "csv_row": 8303,
+                  "current_tax_agency_profile": {
+                    "address_display_raw": "高知県四万十市西土佐江川崎２４３２番地",
+                    "checked_at": "2026-11-27T02:30:04.524261+00:00",
+                    "locator": "個票「最新情報」の社名、フリガナ、所在地と外字画像ID",
+                    "name_display_raw": "天神社",
+                    "page_hash": "7d1885f29ba15a869188f988518b05b91651a96fb56624469a50f32998b8abff",
+                    "reading_raw": "テンジンジャ",
+                    "status": 200,
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3490005002452"
+                  },
+                  "excerpt": "天神社 / テンジンジャ / 高知県四万十市西土佐江川﨑２４３２番地",
+                  "file_id": "28477",
+                  "image_reviews": {
+                    "addressImageId": {
+                      "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                      "checked_at": "2026-11-27T02:36:20.224335+00:00",
+                      "corporate_number": "3490005002452",
+                      "csv_row": 8303,
+                      "fetched_at": "2026-11-27T02:32:16.778066+00:00",
+                      "image_id": "00006977",
+                      "method": "visual_inspection_of_official_image",
+                      "note": "国税庁個票に明示された原字画像で住所の全文を個別目視。読みは画像を用いない。",
+                      "page_hash": "96e733cebb605969ea14a749b47a6b6379824b20a914c5b1e080e2af2f04f38a",
+                      "snapshot": "20261030",
+                      "source_address_raw": "高知県四万十市西土佐江川﨑２４３２番地",
+                      "source_name_raw": "天神社",
+                      "transcribed_raw": "高知県四万十市西土佐江川﨑２４３２番地",
+                      "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00006977"
+                    }
+                  },
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 8303; corporateNumber=3490005002452",
+                  "name_raw": "天神社",
+                  "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+                  "published_locality_witnesses": {
+                    "city": {
+                      "address_raw": "四万十市西土佐江川崎2445-2",
+                      "checked_at": "2026-11-27T02:30:11.206298+00:00",
+                      "locator": "西土佐総合支所「所在地」",
+                      "name_raw": "西土佐総合支所",
+                      "page_hash": "1c2fd3b61586d03d75069631c2ebc7528ab267a308ebe8b66ba27f09bf411ad1",
+                      "publisher": "四万十市",
+                      "status": 200,
+                      "url": "https://www.city.shimanto.lg.jp/map/100006.html"
+                    },
+                    "prefecture": {
+                      "address_raw": "四万十市西土佐江川﨑2445番地2",
+                      "checked_at": "2026-11-27T02:32:26.133418+00:00",
+                      "image_sha256": "1b9673e3a6be9e1a636f02015b690f83eba39119ef807f3188eff80871d68fa4",
+                      "locator": "PDF 77頁の左側・紙面142頁「支所・出張所」",
+                      "name_raw": "西土佐総合支所",
+                      "page_hash": "a925e6d7a8c00457b8a52be1ba84c4a3a676c1a3c45e487ba353a38ac94ade9a",
+                      "pdf_page": 77,
+                      "printed_page": 142,
+                      "publisher": "高知県総務部市町村振興課",
+                      "status": 200,
+                      "title": "高知県市町村便覧（令和5年度版）",
+                      "url": "https://www.pref.kochi.lg.jp/doc/2021080200157/file_contents/file_2026319485754_1.pdf"
+                    }
+                  },
+                  "reading_raw": "テンジンジャ",
+                  "snapshot": "20261030",
+                  "source_fields": {
+                    "addressImageId": "00006977",
+                    "addressOutside": "",
+                    "addressOutsideImageId": "",
+                    "assignmentDate": "2015-10-05",
+                    "changeCause": "",
+                    "changeDate": "2015-10-05",
+                    "cityCode": "210",
+                    "cityName": "四万十市",
+                    "closeCause": "",
+                    "closeDate": "",
+                    "corporateNumber": "3490005002452",
+                    "correct": "1",
+                    "enAddressOutside": "",
+                    "enCityName": "",
+                    "enName": "",
+                    "enPrefectureName": "",
+                    "furigana": "テンジンジャ",
+                    "hihyoji": "0",
+                    "kind": "399",
+                    "latest": "1",
+                    "name": "天神社",
+                    "nameImageId": "",
+                    "postCode": "7871607",
+                    "prefectureCode": "39",
+                    "prefectureName": "高知県",
+                    "process": "01",
+                    "sequenceNumber": "8303",
+                    "streetNumber": "西土佐江川﨑２４３２番地",
+                    "successorCorporateNumber": "",
+                    "updateDate": "2018-04-19"
+                  },
+                  "source_kind": "government_corporate_register",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 全件データ",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                  "verification_method": "登録名と全地番、個票の外字画像、市と県の同一支所の町字表記を照合した。読みは明示フリガナを用いる。",
+                  "zip_member": "39_kochi_all_20261030.csv"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=73",
           "name_raw": "天神社",
           "normalization": [
@@ -141660,11 +141793,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "440b8898c7ac3a267b1ee939c85bdd774a3dfc3bd3f5de36c006fbe5a37f3dae",
-          "reading": "",
+          "reading": "てんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=73",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -141832,6 +141965,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "天神社",
             "wikipedia_article_refs": [],
@@ -141862,16 +142009,165 @@
             "status": "pending",
             "surface": "天神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天神社"
         },
         {
-          "checked_at": "2026-11-09T02:04:36.905603+00:00",
+          "checked_at": "2026-11-24T07:29:07.789263+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/64bb986f-1368-4d51-b01e-6f6285e6dec4: 名称=鷣神社; 掲載読み=; 所在地=高知県四万十市西土佐江川崎2972番地",
           "facility_id": "8827bdc4-3b98-552a-9250-a5740b0a5f99",
           "fetched_at": "2026-11-09T02:04:36.905603+00:00",
           "id": "b74d5679-1071-5649-b0dd-416dd1e25aa2",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はいたかじんじゃ"
+              },
+              "expected_source_hash": "e3f35cd0042880724c0dc60e504be974a45a16edebbb57970ab90de96cdec617",
+              "facility_id": "8827bdc4-3b98-552a-9250-a5740b0a5f99",
+              "identity_match": {
+                "agency_address": "高知県四万十市西土佐江川崎2972番地",
+                "agency_name": "鷣神社",
+                "effective_address": "高知県四万十市西土佐江川崎2972番地",
+                "reference_address": "高知県四万十市西土佐江川﨑２９７２番地",
+                "reference_name": "鷣神社"
+              },
+              "original": {
+                "address": "高知県四万十市西土佐江川崎2972番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=74",
+                "name_raw": "鷣神社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁公表CSVと現行個票の全文フリガナを確認し、ひらがなへ変換。",
+              "references": [
+                {
+                  "address_raw": "高知県四万十市西土佐江川﨑２９７２番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+                  "checked_at": "2026-11-24T07:29:07.789263+00:00",
+                  "corporate_number": "5490005001997",
+                  "csv_row": 14117,
+                  "current_tax_agency_profile": {
+                    "address_display_raw": "高知県四万十市西土佐江川崎２９７２番地",
+                    "checked_at": "2026-11-27T02:30:07.860828+00:00",
+                    "locator": "個票「最新情報」の社名、フリガナ、所在地と外字画像ID",
+                    "name_display_raw": "＿神社",
+                    "page_hash": "7b16d1c6b853a6f1399bd731dd1f7db86104f6f80b420be5c192c110449d4fcc",
+                    "reading_raw": "ハイタカジンジャ",
+                    "status": 200,
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005001997"
+                  },
+                  "excerpt": "鷣神社 / ハイタカジンジャ / 高知県四万十市西土佐江川﨑２９７２番地",
+                  "file_id": "28477",
+                  "image_reviews": {
+                    "addressImageId": {
+                      "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                      "checked_at": "2026-11-27T02:36:20.224335+00:00",
+                      "corporate_number": "5490005001997",
+                      "csv_row": 14117,
+                      "fetched_at": "2026-11-27T02:32:22.623199+00:00",
+                      "image_id": "00006959",
+                      "method": "visual_inspection_of_official_image",
+                      "note": "国税庁個票に明示された原字画像で住所の全文を個別目視。読みは画像を用いない。",
+                      "page_hash": "93ec71f758783edf388c7002c5614aaa54356518eb5a21b25803ee7fd6a14561",
+                      "snapshot": "20261030",
+                      "source_address_raw": "高知県四万十市西土佐江川﨑２９７２番地",
+                      "source_name_raw": "鷣神社",
+                      "transcribed_raw": "高知県四万十市西土佐江川﨑２９７２番地",
+                      "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00006959"
+                    },
+                    "nameImageId": {
+                      "archive_page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                      "checked_at": "2026-11-27T02:36:20.224335+00:00",
+                      "corporate_number": "5490005001997",
+                      "csv_row": 14117,
+                      "fetched_at": "2026-11-27T02:32:19.679354+00:00",
+                      "image_id": "00006958",
+                      "method": "visual_inspection_of_official_image",
+                      "note": "国税庁個票に明示された原字画像で名称の全文を個別目視。読みは画像を用いない。",
+                      "page_hash": "707fcbbcd1b39b32d119234a17b78df54db67053a213bb853fe92227b0f7df1f",
+                      "snapshot": "20261030",
+                      "source_address_raw": "高知県四万十市西土佐江川﨑２９７２番地",
+                      "source_name_raw": "鷣神社",
+                      "transcribed_raw": "鷣神社",
+                      "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00006958"
+                    }
+                  },
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "Unicode CSV file ID 28477; 39_kochi_all_20261030.csv; row 14117; corporateNumber=5490005001997",
+                  "name_raw": "鷣神社",
+                  "page_hash": "b8b77410f7127acf48f88be9ee116e2957dd4e266d70ea7af739f3de211ec429",
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+                  "published_locality_witnesses": {
+                    "city": {
+                      "address_raw": "四万十市西土佐江川崎2445-2",
+                      "checked_at": "2026-11-27T02:30:11.206298+00:00",
+                      "locator": "西土佐総合支所「所在地」",
+                      "name_raw": "西土佐総合支所",
+                      "page_hash": "1c2fd3b61586d03d75069631c2ebc7528ab267a308ebe8b66ba27f09bf411ad1",
+                      "publisher": "四万十市",
+                      "status": 200,
+                      "url": "https://www.city.shimanto.lg.jp/map/100006.html"
+                    },
+                    "prefecture": {
+                      "address_raw": "四万十市西土佐江川﨑2445番地2",
+                      "checked_at": "2026-11-27T02:32:26.133418+00:00",
+                      "image_sha256": "1b9673e3a6be9e1a636f02015b690f83eba39119ef807f3188eff80871d68fa4",
+                      "locator": "PDF 77頁の左側・紙面142頁「支所・出張所」",
+                      "name_raw": "西土佐総合支所",
+                      "page_hash": "a925e6d7a8c00457b8a52be1ba84c4a3a676c1a3c45e487ba353a38ac94ade9a",
+                      "pdf_page": 77,
+                      "printed_page": 142,
+                      "publisher": "高知県総務部市町村振興課",
+                      "status": 200,
+                      "title": "高知県市町村便覧（令和5年度版）",
+                      "url": "https://www.pref.kochi.lg.jp/doc/2021080200157/file_contents/file_2026319485754_1.pdf"
+                    }
+                  },
+                  "reading_raw": "ハイタカジンジャ",
+                  "snapshot": "20261030",
+                  "source_fields": {
+                    "addressImageId": "00006959",
+                    "addressOutside": "",
+                    "addressOutsideImageId": "",
+                    "assignmentDate": "2015-10-05",
+                    "changeCause": "",
+                    "changeDate": "2015-10-05",
+                    "cityCode": "210",
+                    "cityName": "四万十市",
+                    "closeCause": "",
+                    "closeDate": "",
+                    "corporateNumber": "5490005001997",
+                    "correct": "1",
+                    "enAddressOutside": "",
+                    "enCityName": "",
+                    "enName": "",
+                    "enPrefectureName": "",
+                    "furigana": "ハイタカジンジャ",
+                    "hihyoji": "0",
+                    "kind": "399",
+                    "latest": "1",
+                    "name": "鷣神社",
+                    "nameImageId": "00006958",
+                    "postCode": "7871607",
+                    "prefectureCode": "39",
+                    "prefectureName": "高知県",
+                    "process": "01",
+                    "sequenceNumber": "14117",
+                    "streetNumber": "西土佐江川﨑２９７２番地",
+                    "successorCorporateNumber": "",
+                    "updateDate": "2018-04-11"
+                  },
+                  "source_kind": "government_corporate_register",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 全件データ",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                  "verification_method": "登録名と全地番、個票の外字画像、市と県の同一支所の町字表記を照合した。読みは明示フリガナを用いる。",
+                  "zip_member": "39_kochi_all_20261030.csv"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=74",
           "name_raw": "鷣神社",
           "normalization": [
@@ -141879,11 +142175,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "8638486a957e7cd91e1ad0e3512c701251898949ff318fdc3c7c731a3635c9d0",
-          "reading": "",
+          "reading": "はいたかじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=74",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -142019,6 +142315,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はいたかじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はいたかじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "鷣神社",
             "wikipedia_article_refs": [],
@@ -142049,7 +142359,7 @@
             "status": "pending",
             "surface": "鷣神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "鷣神社"
         },
         {

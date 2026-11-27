@@ -1182,6 +1182,16 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 法務省の登記所備付地図データの再配布版から28図面30,967筆を照合し、元の甲2737-15、羽根町の乙1336、室津の2652-3と2652-2を確認しました。該当する筆の小字・社名・読みは同データに記載がないため、地番の確認に使いました。別に、県公文書館の公開目録2,227頁を照合しました。室津港用地図の簿冊は目録で確認でき、図面の利用は要審査と表示されていました。[法務省地図データの高知県再配布版](https://github.com/amx-project/kuwanauchi39kochi/tree/7c4284174e3a3cf174492f3b6b6297988dbb79f7)・[G空間情報センターの公開案内](https://front.geospatial.jp/moj-chizu-xml-readme/)
 
+### 国税庁の法人資料にある町字の表記差と地域資料（2026-11-27）
+
+保存済みの21都道府県の国税庁月次1,480,940行と日次差分4本8,580行を、同じ社名・市町村・全地番で町字の表記が異なる候補の抽出に使いました。仮名の字形を比較した100登録から1件、漢字の字体を比較した1,568登録から6件が候補になりました。亀岡市の國狹槌神社は法人フリガナの「クニサツチジンジャ」と、同じ社を紹介する現地記事の社名部分「くにさづち」に清濁差があり、保留です。[国税庁の全件データ](https://www.houjin-bangou.nta.go.jp/download/zenken/)・[国税庁の差分データ](https://www.houjin-bangou.nta.go.jp/download/sabun/)・[國狹槌神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7130005007962)・[法貴の現地記録](https://www.kyoto-inf.com/2021/05/31/posted-kunisadsuchijinja/)
+
+亀岡市の八幡宮社「はちまんぐうしゃ」と若宮神社「わかみやじんじゃ」は、法人個票と法務省の公図、町字マスターで全地番を照合しました。四万十市の天神社「てんじんじゃ」と鷣神社「はいたかじんじゃ」は、市と県が同じ西土佐総合支所に用いる「江川崎」「江川﨑」と、各法人個票の外字画像を照合しました。社名と住所の原欄、画像ID、全文フリガナを記録しました。[デジタル庁の町字マスター](https://dataset.address-br.digital.go.jp/)・[四万十市西土佐総合支所](https://www.city.shimanto.lg.jp/map/100006.html)・[高知県市町村便覧](https://www.pref.kochi.lg.jp/doc/2021080200157/file_contents/file_2026319485754_1.pdf#page=77)
+
+五島市の神﨑神社「かんざきじんじゃ」は、国税庁の個票で社名と所在地の外字画像を個別に確認し、庁の字神崎3482番地と全地番を照合しました。北杜市の天神社「てんじんしゃ」は、庁の柳沢2351と県の新旧法人名簿の柳澤2351を照合しました。市の文化財一覧にある大スギの2351-1を区別しています。4府県の計6登録を補完し、全国の保留は**9,253 → 9,247登録**です。[神﨑神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005006897)・[山梨県の宗教法人名簿](https://www.pref.yamanashi.jp/documents/7901/r71231_syuukyouhoujinnmeibo.pdf)・[天神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1090005004672)
+
+上野原市の保留72登録を、街道図や自治体資料など公開16点と照合しました。野田尻372の犬嶋社と犬目1281の犬嶋神社を別々に確認し、全文かなを採用できた登録は0件でした。壱岐市の保留105登録は、公開PDF6点136頁などと照合しました。印鑰神社は市の資料と観光連盟で「いんにゃくじんじゃ」が確認でき、法人個票と登記所備付地図には勝本浦97番地が確認できました。市の地図の表示位置と同番地との対応は保留です。[山梨県の街道ウォーキングマップ](https://www.pref.yamanashi.jp/maizou-bnk/walkingmap.html)・[壱岐市歴史文化基本構想](https://www.city.iki.nagasaki.jp/material/files/group/27/kihonkousou03.pdf)・[壱岐市観光連盟の勝本歴史まち歩き](https://www.ikikankou.com/feature/taiken_katsumotoura)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

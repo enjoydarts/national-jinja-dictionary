@@ -92,6 +92,60 @@ class PublishedAddressFormsTest(unittest.TestCase):
                 dataset, proposal = self.fixture('39', '高知県', name, 'えびすじんじゃ', acquired, printed)
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
 
+    def test_shimanto_egawasaki_forms_preserve_each_shrine_and_parcel(self):
+        for name, reading, parcel, printed_parcel in (
+            ('天神社', 'てんじんじゃ', '2432', '２４３２'),
+            ('鷣神社', 'はいたかじんじゃ', '2972', '２９７２'),
+        ):
+            with self.subTest(name=name, parcel=parcel):
+                acquired = '高知県四万十市西土佐江川崎'+parcel+'番地'
+                printed = '高知県四万十市西土佐江川﨑'+printed_parcel+'番地'
+                dataset, proposal = self.fixture('39', '高知県', name, reading, acquired, printed)
+                result = apply_corrections(dataset, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'], dataset['facilities'])
+                self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_shimanto_egawasaki_forms_do_not_link_other_names_or_parcel_branches(self):
+        for name, old, new in (
+            ('天神社', '2432', '2432番地1'), ('天神社', '2972', '2972番地'),
+            ('鷣神社', '2972', '2432番地'), ('別神社', '2972', '2972番地'),
+        ):
+            with self.subTest(name=name, old=old, new=new):
+                dataset, proposal = self.fixture('39', '高知県', name, 'はいたかじんじゃ',
+                    '高知県四万十市西土佐江川崎'+old+'番地', '高知県四万十市西土佐江川﨑'+new)
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_kameoka_sogabe_forms_compare_only_the_documented_shrines_and_parcels(self):
+        for name, reading, locality, lot, other_lot in (
+            ('八幡宮社', 'はちまんぐうしゃ', '西条丙中垣内', '1-1', '1-2'),
+            ('若宮神社', 'わかみやじんじゃ', '南条中荒水代', '4', '40'),
+        ):
+            with self.subTest(name=name):
+                acquired = '亀岡市曽我部町'+locality+lot
+                address = '亀岡市曽我部町'+locality.replace('条', '條')
+                data, proposal = self.fixture('26', '京都府', name, reading, acquired, address+lot)
+                result = apply_corrections(data, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'], data['facilities'])
+                data, proposal = self.fixture('26', '京都府', name, reading, acquired, address+other_lot)
+                self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+    def test_goto_and_hokuto_published_glyphs_compare_only_at_the_documented_parcels(self):
+        for code, pref, name, reading, acquired, printed in (
+            ('42', '長崎県', '神﨑神社', 'かんざきじんじゃ', '五島市岐宿町川原字神崎3482番地',
+             '長崎県五島市岐宿町川原字神﨑３４８２番地'),
+            ('19', '山梨県', '天神社', 'てんじんしゃ', '北杜市武川町柳沢2351',
+             '山梨県北杜市武川町柳澤２３５１番地'),
+        ):
+            with self.subTest(name=name):
+                data, proposal = self.fixture(code, pref, name, reading, acquired, printed)
+                result = apply_corrections(data, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'], data['facilities'])
+                data, proposal = self.fixture(code, pref, name, reading, acquired, printed+'1')
+                self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
     def test_kizugawa_compares_the_documented_town_prefix(self):
         acquired = '木津川市平尾里屋敷54'
         printed = '木津川市山城町平尾里屋敷54'

@@ -265,6 +265,10 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 室戸市の惠美須神社は、神社庁の「元米ｹ谷西甲2737番地15」と国税庁の現行個票「元米ヶ谷西甲２７３７番地１５」を照合しました。国土交通省資料にある小字の「米ヶ谷西」を確認し、比較をこの社名と本番・枝番を含む全地番に限定します。神社庁の原欄と現行個票の事務所所在地、法人の旧名・旧所在地を保持します。[惠美須神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2490005005737)・[国土交通省の元改良資料](https://www.skr.mlit.go.jp/kokai/project_evaluation/h19/2nd/pdf/10.pdf)
 
+亀岡市の八幡宮社と若宮神社は、府神社庁の西条・南条と法人個票の西條・南條を、町字マスターと登記所備付地図の丙中垣内1-1・中荒水代4に照合しました。四万十市の天神社2432番地と鷣神社2972番地は、同じ西土佐総合支所にある江川崎・江川﨑の公表表記と法人個票の外字画像を確認しました。読みの比較はそれぞれの社名・町字・全地番に限定し、神社庁の住所、法人個票の表示、外字画像とCSVの各原欄を保持します。[八幡宮社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008009)・[若宮神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005008033)・[四万十市の西土佐総合支所](https://www.city.shimanto.lg.jp/map/100006.html)・[高知県市町村便覧](https://www.pref.kochi.lg.jp/doc/2021080200157/file_contents/file_2026319485754_1.pdf#page=77)
+
+五島市の神﨑神社3482番地は、国税庁個票の表示用の神崎・字神崎と、社名と住所の外字画像およびCSVの神﨑・字神﨑を照合しました。北杜市の天神社2351番地は、神社庁の柳沢と山梨県法人名簿の柳澤を照合しました。どちらも採用値の変更は国税庁が明記した読みだけです。[五島市の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005006897)・[山梨県の宗教法人名簿](https://www.pref.yamanashi.jp/documents/7901/r71231_syuukyouhoujinnmeibo.pdf)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行

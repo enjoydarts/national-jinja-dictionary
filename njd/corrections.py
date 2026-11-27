@@ -14,6 +14,15 @@ from njd.nantan_identity import PROOF_KIND as NANTAN_PROOF, nantan_reference_mat
 
 _UJITAWARA_KOAZA_PROOF = 'ujitawara_documented_koaza_marker'
 _UJITAWARA_WITNESS_HOSTS = {'ujitawara-kyoto.com', 'www.town.ujitawara.kyoto.jp', 'www.kyoto-be.ne.jp'}
+# Published locality spellings and whole parcels, with sources in docs/DATA.md.
+_PUBLISHED_PARCEL_SPELLINGS = {
+    ('39', '四万十市', '天神社', '四万十市西土佐江川﨑2432'): '四万十市西土佐江川崎2432',
+    ('39', '四万十市', '鷣神社', '四万十市西土佐江川﨑2972'): '四万十市西土佐江川崎2972',
+    ('26', '亀岡市', '八幡宮社', '亀岡市曽我部町西條丙中垣内1-1'): '亀岡市曽我部町西条丙中垣内1-1',
+    ('26', '亀岡市', '若宮神社', '亀岡市曽我部町南條中荒水代4'): '亀岡市曽我部町南条中荒水代4',
+    ('42', '五島市', '神﨑神社', '五島市岐宿町川原字神﨑3482'): '五島市岐宿町川原字神崎3482',
+    ('19', '北杜市', '天神社', '北杜市武川町柳澤2351'): '北杜市武川町柳沢2351',
+}
 
 
 def _url(value):
@@ -227,6 +236,9 @@ def _reference_matches(ref,facility,entry,changes):
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
         value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
         value=re.sub(r'(?<=\d)の(?=\d)','-',value)
+        if set(changes) == {'reading'}:
+            locality = (facility.get('prefecture_code'), facility.get('municipality'), facility.get('listed_name'))
+            value = _PUBLISHED_PARCEL_SPELLINGS.get((*locality, value), value)
         if facility.get('prefecture_code') == '19' and set(changes) == {'reading'}:
             # The Minobu histories locate these shrines on the registered parcels.
             minobu_addresses = {
