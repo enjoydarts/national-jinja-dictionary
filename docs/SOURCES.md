@@ -1228,6 +1228,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 市川三郷町の熊野神社は、大塚4232と市川大門5154のそれぞれで全文「くまのじんじゃ」を確認しました。町の文化財一覧は大クヌギを市川大門5154に記録しています。柳川市田脇の日吉神社は、神社庁の946・947と、国税庁の947番地・946番地合併の両地番を照合して「ひよしじんじゃ」を補完しました。第6回の市町村まで対応した33候補は、今回までに7登録を補完しました。今回の追加は3登録で、全国の保留は**9,220 → 9,217登録**です。[市川三郷町の指定文化財一覧](https://www.town.ichikawamisato.yamanashi.jp/50sightsee/80history/bunkazai.html)・[福岡県神社庁の筑後エリア一覧](https://fukuoka-jinjacho.or.jp/area/chikugo/)・[日吉神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8290005011551)
 
+### 第4回巨樹調査の長野・京都・高知の候補を再照合（2026-11-27）
+
+第4回調査で絞った長野29、京都16、高知13登録を地域資料と照合し、6登録を補完しました。諏訪大社は神奈川大学の建築調査にある全文「すわたいしゃ」と諏訪市中洲字宮山1を確認しました。辰野町の鎮大神社は町文化財資料の鎮大神社本殿と沢底字ワゴ1856、法人個票の「シズメダイジンジャ」が対応します。[神奈川大学の一之宮調査](https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/Ichinomiya/Ichinomiya.html)・[辰野町文化財資料](https://www.town.tatsuno.lg.jp/material/files/group/2/shiryouhenn.pdf#page=146)・[鎮大神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6100005009302)
+
+長野県の法人名簿と国税庁の現行個票を使い、上田市の篠井神社の篠井窪1000番地イ、大屋神社の南遠河原506、佐久市の平井神社の滝ノ山4860と、各社の明示フリガナを照合しました。大屋神社の原字は画像で確認しました。福知山市土師の愛宕神社は、町字マスターの「字土師」と法人資料の小字手白山1を照合しました。高知県安芸市の水口神社は法人個票の「ミナクチジンジャ」と甲994を確認し、神社庁が記す小字を含む全地番の対応は保留です。全国の保留は**9,217 → 9,211登録**です。[長野県の宗教法人名簿](https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf)・[愛宕神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3130005010078)・[水口神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8490005005509)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

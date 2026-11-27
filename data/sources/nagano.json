@@ -60924,12 +60924,71 @@
           "surface": "廣野邊神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:48.314838+00:00",
+          "checked_at": "2026-11-27T04:17:05.066481+00:00",
           "evidence": "篠井神社 386-0005 上田市古里字篠井窪1000-ｲ",
           "facility_id": "7644298e-aa45-5ea7-b4fd-d538c88466d1",
           "fetched_at": "2026-11-08T14:30:48.314838+00:00",
           "id": "15564837-bd19-5034-b7a8-f25a0deeb1fc",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しののいじんじゃ"
+              },
+              "expected_source_hash": "2a4761d83580aa6c3fd527cb67ca743b2c7ebf84f216d0d17c4dc7706ab02e51",
+              "facility_id": "7644298e-aa45-5ea7-b4fd-d538c88466d1",
+              "identity_match": {
+                "agency_address": "上田市古里字篠井窪1000-ｲ",
+                "agency_name": "篠井神社",
+                "reference_address": "長野県上田市古里字篠井窪１０００番地イ",
+                "reference_name": "篠井神社"
+              },
+              "original": {
+                "address": "上田市古里字篠井窪1000-ｲ",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
+                "name_raw": "篠井神社",
+                "reading_raw": ""
+              },
+              "reason": "神社庁の篠井窪1000-ｲと国税庁の1000番地イを照合。枝番イと全文フリガナを確認。",
+              "references": [
+                {
+                  "address_raw": "長野県上田市古里字篠井窪１０００番地イ",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7100005003972）",
+                  "checked_at": "2026-11-27T04:17:05.066481+00:00",
+                  "corporate_number": "7100005003972",
+                  "excerpt": "篠井神社 ／ シノノイジンジャ ／ 長野県上田市古里字篠井窪１０００番地イ",
+                  "fetched_at": "2026-11-27T04:17:05.066481+00:00",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の商号又は名称・フリガナ・本店又は主たる事務所所在地の各欄",
+                  "name_raw": "篠井神社",
+                  "page_hash": "d93ad29ba2eac3ceaa7030f264b79f3b48fe051854ed04ab0338efc42363103b",
+                  "reading_raw": "シノノイジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_register",
+                  "status": 200,
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 篠井神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7100005003972"
+                },
+                {
+                  "address_raw": "古里字篠井窪１０００番地イ",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T04:24:22.075639+00:00",
+                  "city_name_raw": "上田市",
+                  "excerpt": "上田市 ／ 古里字篠井窪１０００番地イ ／ 篠井神社",
+                  "fetched_at": "2026-11-27T04:24:22.075639+00:00",
+                  "locator": "PDF34頁の市町村名・事務所所在地・宗教法人名の同一行",
+                  "name_raw": "篠井神社",
+                  "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                  "pdf_page": 34,
+                  "source_kind": "prefectural_religious_corporation_roster",
+                  "status": 200,
+                  "title": "長野県所轄宗教法人名簿 令和7年12月31日現在",
+                  "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
           "name_raw": "篠井神社",
           "normalization": [
@@ -60937,11 +60996,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "95cbf939ab755781458e43242e180fb664b676f180e70e47693e1479d4682c24",
-          "reading": "",
+          "reading": "しののいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7100005003972",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -60979,6 +61038,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しののいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しののいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "篠井神社",
             "wikipedia_article_refs": [],
@@ -61009,7 +61082,7 @@
             "status": "pending",
             "surface": "篠井神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "篠井神社"
         },
         {
@@ -72501,12 +72574,125 @@
           "surface": "皇大神宮"
         },
         {
-          "checked_at": "2026-11-08T14:30:48.314838+00:00",
+          "checked_at": "2026-11-27T02:42:05.443574+00:00",
           "evidence": "大屋神社 386-0152 上田市大屋字南遠河原506",
           "facility_id": "01627da0-2aaa-5cd1-a062-b587572a2cf2",
           "fetched_at": "2026-11-08T14:30:48.314838+00:00",
           "id": "591cfc71-383c-5e88-8281-766e5746fe32",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "おおやじんじゃ"
+              },
+              "expected_source_hash": "d9cadefa8f94dbe423ee54b39c095b195d1b3cb59e6ddaac30824fe7213c6f7a",
+              "facility_id": "01627da0-2aaa-5cd1-a062-b587572a2cf2",
+              "identity_match": {
+                "agency_address": "上田市大屋字南遠河原506",
+                "agency_name": "大屋神社",
+                "reference_address": "長野県上田市大屋南遠河原５０６番地",
+                "reference_name": "大屋神社"
+              },
+              "original": {
+                "address": "上田市大屋字南遠河原506",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
+                "name_raw": "大屋神社",
+                "reading_raw": ""
+              },
+              "reason": "庁の大屋字南遠河原と法人の大屋南遠河原の506を照合し、原字画像と全文フリガナを確認。",
+              "references": [
+                {
+                  "address_raw": "長野県上田市大屋南遠河原５０６番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+                  "checked_at": "2026-11-27T02:42:05.443574+00:00",
+                  "corporate_number": "5100005004015",
+                  "csv_row": 44510,
+                  "excerpt": "大屋神社 ／ オオヤジンジャ ／ 長野県上田市大屋南遠河原５０６番地",
+                  "image_reviews": {
+                    "nameImageId": {
+                      "archive_page_hash": "a33c237347a227cbf99c1778a7af02ed81f6c68707c2c7e7f5bf773099e2d829",
+                      "checked_at": "2026-11-27T04:17:11.237094+00:00",
+                      "corporate_number": "5100005004015",
+                      "csv_row": 44510,
+                      "fetched_at": "2026-11-27T04:17:11.237094+00:00",
+                      "image_id": "00069973",
+                      "method": "visual_inspection_of_official_image",
+                      "note": "法人個票からリンクされた社名画像を目視し、大屋と「神社」の原字を確認。読みはUnicode CSVのフリガナ欄。",
+                      "page_hash": "39a292c1143f6b5537239f25da668b5704b207036a15987c61126711fac416ab",
+                      "printed_text": "大屋神社",
+                      "snapshot": "20261030",
+                      "source_address_raw": "長野県上田市大屋南遠河原５０６番地",
+                      "source_name_raw": "大屋神社",
+                      "status": 200,
+                      "url": "https://www.houjin-bangou.nta.go.jp/image?imageid=00069973"
+                    }
+                  },
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "20_nagano_all_20261030.csvの44510行・法人番号5100005004015",
+                  "name_raw": "大屋神社",
+                  "page_hash": "a33c237347a227cbf99c1778a7af02ed81f6c68707c2c7e7f5bf773099e2d829",
+                  "reading_raw": "オオヤジンジャ",
+                  "reading_scope": "full_name",
+                  "snapshot": "20261030",
+                  "source_fields": {
+                    "addressImageId": "",
+                    "cityCode": "203",
+                    "cityName": "上田市",
+                    "closeDate": "",
+                    "corporateNumber": "5100005004015",
+                    "furigana": "オオヤジンジャ",
+                    "hihyoji": "0",
+                    "kind": "399",
+                    "latest": "1",
+                    "name": "大屋神社",
+                    "nameImageId": "00069973",
+                    "prefectureCode": "20",
+                    "prefectureName": "長野県",
+                    "process": "01",
+                    "streetNumber": "大屋南遠河原５０６番地"
+                  },
+                  "source_kind": "government_corporate_register",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 長野全件Unicode",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                  "zip_member": "20_nagano_all_20261030.csv"
+                },
+                {
+                  "address_raw": "長野県上田市大屋南遠河原５０６番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5100005004015）",
+                  "checked_at": "2026-11-27T04:17:08.145697+00:00",
+                  "corporate_number": "5100005004015",
+                  "excerpt": "大屋神社 ／ オオヤジンジャ ／ 長野県上田市大屋南遠河原５０６番地",
+                  "fetched_at": "2026-11-27T04:17:08.145697+00:00",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の商号又は名称・フリガナ・本店又は主たる事務所所在地の各欄",
+                  "name_raw": "大屋神社",
+                  "page_hash": "d1687c3033d4bd82f70f13335e8edb204f84123f286b448114b36a1b6b4811be",
+                  "source_kind": "government_corporate_location_reference",
+                  "status": 200,
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 大屋神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5100005004015"
+                },
+                {
+                  "address_raw": "大屋字南遠河原５０６番地",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T04:24:22.075639+00:00",
+                  "city_name_raw": "上田市",
+                  "excerpt": "上田市 ／ 大屋字南遠河原５０６番地 ／ 大屋神社",
+                  "fetched_at": "2026-11-27T04:24:22.075639+00:00",
+                  "locator": "PDF33頁の市町村名・事務所所在地・宗教法人名の同一行",
+                  "name_raw": "大屋神社",
+                  "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                  "pdf_page": 33,
+                  "source_kind": "prefectural_religious_corporation_roster",
+                  "status": 200,
+                  "title": "長野県所轄宗教法人名簿 令和7年12月31日現在",
+                  "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
           "name_raw": "大屋神社",
           "normalization": [
@@ -72514,11 +72700,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "95cbf939ab755781458e43242e180fb664b676f180e70e47693e1479d4682c24",
-          "reading": "",
+          "reading": "おおやじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/jousyou.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -72556,6 +72742,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "おおやじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "おおやじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "大屋神社",
             "wikipedia_article_refs": [],
@@ -72586,7 +72786,7 @@
             "status": "pending",
             "surface": "大屋神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "大屋神社"
         },
         {
@@ -91822,12 +92022,67 @@
           "surface": "山神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:51.003742+00:00",
+          "checked_at": "2026-11-27T04:17:01.982402+00:00",
           "evidence": "鎮大神社 399-0423 上伊那郡辰野町大字沢底1856",
           "facility_id": "633a6abf-6b82-576e-9986-e8dbba84aee3",
           "fetched_at": "2026-11-08T14:30:51.003742+00:00",
           "id": "e1f0d77c-1a2b-5f73-a267-7662646cf8bb",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しずめだいじんじゃ"
+              },
+              "expected_source_hash": "669a608bfc161f624e8996fe5d9559d55796fa4478d6dcd5898e667140a4aa6b",
+              "facility_id": "633a6abf-6b82-576e-9986-e8dbba84aee3",
+              "identity_match": {
+                "agency_address": "上伊那郡辰野町大字沢底1856",
+                "agency_name": "鎮大神社",
+                "reference_address": "長野県上伊那郡辰野町大字沢底字ワゴ１８５６番地",
+                "reference_name": "鎮大神社"
+              },
+              "original": {
+                "address": "上伊那郡辰野町大字沢底1856",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
+                "name_raw": "鎮大神社",
+                "reading_raw": ""
+              },
+              "reason": "町の本殿登録と法人の沢底字ワゴ1856を同地番で確認し、法人フリガナを採用。",
+              "references": [
+                {
+                  "address_raw": "長野県上伊那郡辰野町大字沢底字ワゴ１８５６番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6100005009302）",
+                  "checked_at": "2026-11-27T04:17:01.982402+00:00",
+                  "corporate_number": "6100005009302",
+                  "excerpt": "鎮大神社 ／ シズメダイジンジャ ／ 長野県上伊那郡辰野町大字沢底字ワゴ１８５６番地",
+                  "fetched_at": "2026-11-27T04:17:01.982402+00:00",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の商号又は名称・フリガナ・本店又は主たる事務所所在地の各欄",
+                  "name_raw": "鎮大神社",
+                  "page_hash": "b8b951c06bd689f590d30256322da41f4add5980fd2f75b4e571b439dade88be",
+                  "reading_raw": "シズメダイジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_register",
+                  "status": 200,
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 鎮大神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6100005009302"
+                },
+                {
+                  "address_raw": "大字沢底字ワゴ 1856",
+                  "checked_at": "2026-11-27T03:49:18.953133+00:00",
+                  "excerpt": "鎮大神社 本殿 ／ 所有者及び管理者 鎮大神社 ／ 大字沢底字ワゴ 1856",
+                  "locator": "PDF146頁・印刷140頁、町指定の表No.10、名称・所有者及び管理者・所在地の同一行",
+                  "name_raw": "鎮大神社",
+                  "page_hash": "bf609694d4f3c20b66d016c65298985c57410e6d7c6b2adb529f45e9f1338846",
+                  "source_kind": "municipal_cultural_asset_roster",
+                  "title": "辰野町文化財保存活用地域計画 資料編",
+                  "url": "https://www.town.tatsuno.lg.jp/material/files/group/2/shiryouhenn.pdf",
+                  "visual_review_sha256": "70256224420458622678d879a9fb657857c8df67790bd2fb0427a67b67567285"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
           "name_raw": "鎮大神社",
           "normalization": [
@@ -91835,11 +92090,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "ca845eae00785433d106c0c4aecf967b1e33185df58155dfa9217340589b7d86",
-          "reading": "",
+          "reading": "しずめだいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/kamiina.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6100005009302",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -91898,6 +92153,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しずめだいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しずめだいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "鎮大神社",
             "wikipedia_article_refs": [],
@@ -91928,7 +92197,7 @@
             "status": "pending",
             "surface": "鎮大神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "鎮大神社"
         },
         {
@@ -178190,12 +178459,71 @@
           "surface": "諏訪社"
         },
         {
-          "checked_at": "2026-11-08T14:31:08.376491+00:00",
+          "checked_at": "2026-11-27T04:17:15.282261+00:00",
           "evidence": "平井神社 385-0062 佐久市大字根岸字滝丿山4860",
           "facility_id": "22d3c972-682d-5c63-91f1-d7a810653959",
           "fetched_at": "2026-11-08T14:31:08.376491+00:00",
           "id": "fe655796-ffad-5e33-b6af-1414b5cd90bc",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ひらいじんじゃ"
+              },
+              "expected_source_hash": "ee6d7b8ad4442ef61d3a1663039e844b02a95620d8385e56fddc2b63e0cab3ba",
+              "facility_id": "22d3c972-682d-5c63-91f1-d7a810653959",
+              "identity_match": {
+                "agency_address": "佐久市大字根岸字滝丿山4860",
+                "agency_name": "平井神社",
+                "reference_address": "長野県佐久市根岸字滝ノ山４８６０番地",
+                "reference_name": "平井神社"
+              },
+              "original": {
+                "address": "佐久市大字根岸字滝丿山4860",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
+                "name_raw": "平井神社",
+                "reading_raw": ""
+              },
+              "reason": "県名簿と国税庁の滝ノ山4860を照合し、庁の滝丿山との差を当該地番に限って対応。",
+              "references": [
+                {
+                  "address_raw": "長野県佐久市根岸字滝ノ山４８６０番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1100005003210）",
+                  "checked_at": "2026-11-27T04:17:15.282261+00:00",
+                  "corporate_number": "1100005003210",
+                  "excerpt": "平井神社 ／ ヒライジンジャ ／ 長野県佐久市根岸字滝ノ山４８６０番地",
+                  "fetched_at": "2026-11-27T04:17:15.282261+00:00",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の商号又は名称・フリガナ・本店又は主たる事務所所在地の各欄",
+                  "name_raw": "平井神社",
+                  "page_hash": "f44f54fdcff9b4274dd4738ab3453efea5062d7ff9373e3dd440072c9b2dd760",
+                  "reading_raw": "ヒライジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_register",
+                  "status": 200,
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 平井神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1100005003210"
+                },
+                {
+                  "address_raw": "大字根岸字滝ノ山４８６０",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T04:24:22.075639+00:00",
+                  "city_name_raw": "佐久市",
+                  "excerpt": "佐久市 ／ 大字根岸字滝ノ山４８６０ ／ 平井神社",
+                  "fetched_at": "2026-11-27T04:24:22.075639+00:00",
+                  "locator": "PDF20頁の市町村名・事務所所在地・宗教法人名の同一行",
+                  "name_raw": "平井神社",
+                  "page_hash": "154744f9773645f75e183fae902a6f125b1cc100e01a232066d63898ea2658ba",
+                  "pdf_page": 20,
+                  "source_kind": "prefectural_religious_corporation_roster",
+                  "status": 200,
+                  "title": "長野県所轄宗教法人名簿 令和7年12月31日現在",
+                  "url": "https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
           "name_raw": "平井神社",
           "normalization": [
@@ -178203,11 +178531,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "e9b2f181ad380b40e028e4cc3986675276b2b55454b471c9c2f6d7daf2b6367a",
-          "reading": "",
+          "reading": "ひらいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1100005003210",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -178290,6 +178618,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ひらいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ひらいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "平井神社",
             "wikipedia_article_refs": [],
@@ -178320,7 +178662,7 @@
             "status": "pending",
             "surface": "平井神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "平井神社"
         },
         {
@@ -252948,12 +253290,106 @@
           "surface": "八幡社"
         },
         {
-          "checked_at": "2026-11-08T14:31:19.419472+00:00",
+          "checked_at": "2026-11-27T04:12:56.210478+00:00",
           "evidence": "諏訪大社 392-0015 諏訪市大字中洲字宮山1",
           "facility_id": "6f1bbe93-5cb0-5b42-8a01-29ec7650dbfb",
           "fetched_at": "2026-11-08T14:31:19.419472+00:00",
           "id": "99bc88ac-3d76-52ea-930c-c032bcf01748",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわたいしゃ"
+              },
+              "expected_source_hash": "0252d5d59e8492d128210015532000ce9234da8f06680edae27dc9f0d9fd87a5",
+              "facility_id": "6f1bbe93-5cb0-5b42-8a01-29ec7650dbfb",
+              "identity_match": "神奈川大学の建築調査一覧は諏訪大社の独立全文かなと大字中洲字宮山1を同じ行に明記し、上社本宮の現地撮影へリンクする。市観光の独立全文かなと神社自身の地番も一致する。第4回巨樹調査における宮山の地点は上社本宮の手掛かりにとどめる。",
+              "original": {
+                "address": "諏訪市大字中洲字宮山1",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
+                "name_raw": "諏訪大社",
+                "reading_raw": ""
+              },
+              "reason": "神奈川大学の建築調査一覧は諏訪大社の独立全文かなと大字中洲字宮山1を同じ行に明記し、上社本宮の現地撮影へリンクする。市観光の独立全文かなと神社自身の地番も一致する。第4回巨樹調査における宮山の地点は上社本宮の手掛かりにとどめる。",
+              "references": [
+                {
+                  "address_raw": "長野県諏訪市大字中洲字宮山1",
+                  "checked_at": "2026-11-27T04:12:56.210478+00:00",
+                  "corroborating_evidence": [
+                    {
+                      "address_raw": "長野県諏訪市中洲宮⼭1",
+                      "checked_at": "2026-11-27T04:07:54.000763+00:00",
+                      "locator": "公式アクセスの上社本宮の地図と所在地",
+                      "page_hash": "a71a20ecad0b5d69837e357e44f07a4f15a90d493efc6bf7b3a9589acc5d0a4a",
+                      "role": "official_present_parcel_of_honmiya",
+                      "source_kind": "official_shrine",
+                      "status": 200,
+                      "title": "交通案内／信濃國一之宮 諏訪大社",
+                      "url": "https://suwataisha.or.jp/access/"
+                    },
+                    {
+                      "checked_at": "2026-11-27T04:07:45.690676+00:00",
+                      "locator": "四宮の案内と各社の位置",
+                      "page_hash": "37c2fb6101956a73295777c39e88e1eed1771bf9367d58abbd98e67da0bf20e9",
+                      "role": "places_honmiya_within_one_shrine_and_distinguishes_four_sites",
+                      "source_kind": "official_shrine",
+                      "status": 200,
+                      "title": "御参拝のご案内／信濃國一之宮 諏訪大社",
+                      "url": "https://suwataisha.or.jp/visiting/"
+                    },
+                    {
+                      "address_raw": "諏訪市中洲宮山1",
+                      "checked_at": "2026-11-27T04:07:45.679316+00:00",
+                      "locator": "上社本宮の所在地と本文",
+                      "page_hash": "e78cbe74a96649e30463d7c7c4da34403a9378ee7c0d3bcda4647aff01847a85",
+                      "role": "identified_shrine_and_precinct_address",
+                      "source_kind": "municipal_tourism_publication",
+                      "status": 200,
+                      "title": "諏訪大社 上社本宮／諏訪観光協会",
+                      "url": "https://www.suwakanko.jp/attraction/%E8%AB%8F%E8%A8%AA%E5%A4%A7%E7%A4%BE-%E4%B8%8A%E7%A4%BE%E6%9C%AC%E5%AE%AE/"
+                    },
+                    {
+                      "attribution": "環境省生物多様性センター・第4回巨樹・巨木林調査",
+                      "checked_at": "2026-11-27T03:29:17.498776+00:00",
+                      "locator": "big_19.zip / big_19/big_19a.dbf / DBF 39行 / ID 19000039",
+                      "page_hash": "8469f4d4c4b3bcbca8afb9962e5381f43190c30f8234f6741ba0a5248f644d4e",
+                      "role": "research_site_identity_lead",
+                      "role_note": "巨樹調査地点の社名・市町村。地物名のローマ字から神社の読みは転記しない。",
+                      "shrub_site_name_raw": "諏訪大社",
+                      "source_kind": "national_large_tree_distribution",
+                      "survey_municipality_code": "20206",
+                      "title": "環境省 第4回自然環境保全基礎調査 巨樹・巨木林調査",
+                      "url": "https://www.biodic.go.jp/shapedata/big/big_all.zip"
+                    },
+                    {
+                      "address_raw": "諏訪市中洲宮山1",
+                      "checked_at": "2026-11-27T04:05:42.639697+00:00",
+                      "locator": "本文見出しと上社本宮所在地",
+                      "name_raw": "諏訪大社",
+                      "page_hash": "ef828525d46995b75fe9555f0dc9768fea1fd448ec6dfc6b53ce4bb77cd088e3",
+                      "reading_raw": "すわたいしゃ",
+                      "role": "independent_exact_shrine_reading_with_address_markers_absent",
+                      "source_kind": "municipal_tourism_publication",
+                      "status": 200,
+                      "title": "諏訪大社（すわたいしゃ）／諏訪観光ナビ",
+                      "url": "https://www.suwa-tourism.jp/special/archives/000085.html"
+                    }
+                  ],
+                  "excerpt": "諏訪大社／すわたいしゃ／長野県諏訪市大字中洲字宮山1",
+                  "locator": "東山道表35番／社名・かな・住所欄（2022年の現地建築写真一覧へのリンク）",
+                  "name_raw": "諏訪大社",
+                  "page_hash": "d150330353705402ed206b6b0cdd3bff1f86103cf0f246ec86c98c0e594adf53",
+                  "reading_raw": "すわたいしゃ",
+                  "reading_scope": "full_name",
+                  "role": "full_name_full_reading_and_exact_original_parcel_on_same_row",
+                  "source_kind": "university_architecture_field_survey",
+                  "status": 200,
+                  "title": "全国一宮・建築フィールドワーク／神奈川大学建築学部島崎研究室",
+                  "url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/Ichinomiya/Ichinomiya.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
           "name_raw": "諏訪大社",
           "normalization": [
@@ -252961,11 +253397,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6eda593de6460220528e8585672de8cf2fe29bd10455434e48695e112ec398b6",
-          "reading": "",
+          "reading": "すわたいしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/suwa.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.arch.kanagawa-u.ac.jp/lab/shimazaki_kazushi/shimazaki/Ichinomiya/Ichinomiya.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -253145,6 +253581,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわたいしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわたいしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪大社",
             "wikipedia_article_refs": [
@@ -253184,7 +253634,7 @@
             "status": "pending",
             "surface": "諏訪大社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪大社"
         },
         {
