@@ -245,7 +245,12 @@ def _reference_matches(ref,facility,entry,changes):
     strict_registered_address=False
     if registered_variant or _comparison(ref.get('name_raw')) not in names:
         from njd.corporate import bound_registered_shrine_name
-        if _comparison(bound_registered_shrine_name(ref)) not in names:return False
+        bound_name=bound_registered_shrine_name(ref)
+        if (not bound_name and not registered_variant and set(changes)=={'reading'}
+            and entry.get('status')!='excluded' and facility.get('source_key')=='kumamoto'):
+            from njd.kumamoto_location import yamato_registered_shrine_name
+            bound_name=yamato_registered_shrine_name(ref,facility)
+        if _comparison(bound_name) not in names:return False
         strict_registered_address=True
         if not re.search('[0-9０-９]',facility.get('address','')) or not re.search('[0-9０-９]',ref.get('address_raw','')):return False
     def address(value):

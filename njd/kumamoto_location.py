@@ -34,6 +34,18 @@ _AFFILIATES_HASH = '466ef624a6c4c76a3007e30f7ad28a36a5e6ed62f3cb8a78daea160f1905
 _NTA_DETAIL = 'https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo='
 _NTA_ADDRESS_CELL = '本店又は主たる事務所の所在地'
 _FULLWIDTH_DIGITS = str.maketrans('0123456789', '０１２３４５６７８９')
+_YAMATO = '上益城郡山都町'
+_YAMATO_VISIT = 'https://note.com/kenbuncho/n/n93234286373d'
+_YAMATO_VISIT_HASH = '9a5603c57559189214b0705e803fff8573548ff92641964575b7b723509fd581'
+_NISE_SHRINE = '仁瀬本神社'
+_NISE_REGISTERED = '二瀬本神社'
+_NISE_SITE = 'https://kumamotoiigo.jp/tayori/le25.pdf'
+_NISE_ADDRESS = '熊本県上益城郡山都町大字二瀬本 1536'
+_YAMATO_ROWS = {
+    '早楢神社': ('c02b3f54-c7e0-59a7-811e-baca7372365c', '3330005004002', '高辻635', '早楢神社'),
+    '高畑阿蘇神社': ('ab175baf-58eb-5f7c-b02c-4dd023b12a2e', '9330005003997', '高畑755', '高畑年祢神社'),
+    _NISE_SHRINE: ('60452be0-92c4-5846-9a77-028028982018', '4330005004001', '二瀬本1536', _NISE_SHRINE),
+}
 
 
 @dataclass(frozen=True)
@@ -111,6 +123,82 @@ def _explicit_alias(reference, name, site_name):
 def _matches_receipt(record, **fields):
     return (_source_host(record, 'fetched_at') is not None
             and all(record.get(key) == value for key, value in fields.items()))
+
+
+def _yamato_site_problems(supplement, facility, office):
+    name = facility.get('name_raw')
+    row = _YAMATO_ROWS.get(name) if isinstance(name, str) else None
+    if row is None:
+        return ['Yamato location evidence is scoped to the reviewed shrines']
+    facility_id, number, parcel, published_name = row
+    registered_name = _NISE_REGISTERED if name == _NISE_SHRINE else name
+    if (facility['id'] != facility_id or office['corporate_number'] != number
+            or not _matches_receipt(
+                supplement.get('current_registry_reference'), url=_NTA_DETAIL+number,
+                name_raw=registered_name, address_raw=office['address_raw'], corporate_number=number,
+                reading_raw=office.get('reading_raw'), address_role='corporation_principal_office')):
+        return ['Yamato location needs the matching current registered office']
+    site = supplement['reference']
+    alias = supplement.get('alias_reference')
+    if name == _NISE_SHRINE:
+        if (not _matches_receipt(
+                site, url=_NISE_SITE, page_hash='3a4c20e402b0e21c752aa332c995a1d657d243bbad56d02af5819eedf38b0c69',
+                name_raw=published_name, address_raw=_NISE_ADDRESS, address_role='shrine_locus')
+                or not _matches_receipt(
+                    alias, url='https://www.town.kumamoto-yamato.lg.jp/kiji0038939/index.html',
+                    page_hash='bcdd483cbe2e9ee8c6175d567d1d5e19806312c900d925a5646e2d0a9bf46bdd',
+                    name_raw=name, variant_name_raw=registered_name,
+                    relevant_literal_fields=['奉納される仁瀬本神社神楽', '二瀬本神社の氏子'])):
+            return ['Nisemoto location needs the shrine affiliate statement and the town’s same-site names']
+        return []
+    if not _matches_receipt(
+            site, url=_YAMATO_VISIT, page_hash=_YAMATO_VISIT_HASH,
+            name_raw=published_name, address_raw='熊本県'+_YAMATO+parcel):
+        return ['Yamato field address must identify the reviewed shrine']
+    witness = supplement.get('independent_site_reference')
+    if registered_name == '高畑阿蘇神社':
+        if (_source_host(alias, 'checked_at') != 'www.town.kumamoto-yamato.lg.jp'
+                or alias.get('name_raw') != registered_name or alias.get('variant_name_raw') != published_name
+                or alias.get('name_excerpt') != '高畑年祢神社（高畑阿蘇神社）'
+                or not _matches_receipt(
+                    witness, url='https://higojournal.com/archives/jinjya-matome.html',
+                    name_raw=registered_name, address_raw='山都町'+parcel)):
+            return ['Takahata location needs the town’s explicit alternate name and independent parcel']
+        return []
+
+    survey = supplement.get('parcel_reference')
+    point = [131.183303, 32.778248]
+    if (not _matches_receipt(
+            witness, url='https://tennenkinenbutu.com/i1000/',
+            name_raw='早楢神社の森', address_raw='山都町'+parcel, map_point=point)
+            or _source_host(survey, 'checked_at') != 'habs.rad.naro.go.jp'
+            or survey.get('coordinate') != point or survey.get('strict_containment') is not True
+            or type(survey.get('matching_features')) is not int or survey['matching_features'] != 1):
+        return ['Wasanara location needs the independent named site within the surveyed parcel']
+    cadastral = survey.get('source_fields')
+    if (not isinstance(cadastral, dict) or cadastral.get('市区町村コード') != '43447'
+            or cadastral.get('市区町村名') != _YAMATO or cadastral.get('大字名') != '高辻'
+            or cadastral.get('地番') != '635'):
+        return ['Wasanara cadastral feature differs from the published parcel']
+    from njd.corporate import image_review_problems
+    fields = office['source_fields']
+    if (fields['nameImageId'] != '00098347' or fields['addressImageId'] != '00098348'
+            or image_review_problems(office)
+            or office['image_reviews']['nameImageId'].get('printed_text') != registered_name
+            or office['image_reviews']['addressImageId'].get('printed_text') != office['address_raw']):
+        return ['Wasanara registered name and full parcel need individually inspected official images']
+    return []
+
+
+def yamato_registered_shrine_name(ref, facility):
+    """Tie the documented Nisemoto office name to its applied shrine location."""
+    location = facility.get('location_supplement')
+    if (facility.get('name_raw') == _NISE_SHRINE and isinstance(location, dict)
+            and location.get('applied') is True and location.get('registry_reference') == ref
+            and ref.get('name_raw') == _NISE_REGISTERED and ref.get('source_kind') == 'government_corporate_register'
+            and not kumamoto_location_problems(location, facility)):
+        return _NISE_SHRINE
+    return None
 
 
 def _kadode_locality_proven(supplement):
@@ -218,16 +306,18 @@ def kumamoto_location_problems(supplement, facility):
     municipality = changes.get('municipality') if isinstance(changes, dict) else None
     municipal_site = _MUNICIPAL_SITES.get(municipality) if isinstance(municipality, str) else None
     nishihara = site_host == _NISHIHARA_HOST
-    if not site_host or site_host not in (_PREFECTURE_SITE, municipal_site, _NISHIHARA_HOST):
-        return ['Kumamoto location needs an inspected official physical shrine address']
+    yamato = (municipality == _YAMATO and site_host in ('note.com', 'kumamotoiigo.jp')
+              and site.get('source_kind') == 'yamato_documented_shrine_site')
+    if not yamato and (not site_host or site_host not in (_PREFECTURE_SITE, municipal_site, _NISHIHARA_HOST)):
+        return ['Kumamoto location needs an inspected physical shrine address']
     address, site_name, excerpt = (site.get(key) for key in ('address_raw', 'name_raw', 'excerpt'))
     if (site.get('location_role') != 'shrine'
-            or (not nishihara and site.get('source_kind') not in ('prefectural_shrine_tourism', 'municipal_shrine_tourism'))
+            or (not (nishihara or yamato) and site.get('source_kind') not in ('prefectural_shrine_tourism', 'municipal_shrine_tourism'))
             or not all(_plain(value) for value in (address, site_name, excerpt))
             or address not in excerpt or site_name not in excerpt
             or not isinstance(changes, dict) or set(changes) != {'address', 'municipality'}
             or changes['address'] != address or not _plain(changes['municipality'])
-            or (site_name != name and not _explicit_alias(supplement.get('alias_reference'), name, site_name))):
+            or (site_name != name and not yamato and not _explicit_alias(supplement.get('alias_reference'), name, site_name))):
         return ['Kumamoto location must identify the same shrine and retain the printed site address']
 
     ref = supplement.get('registry_reference')
@@ -248,6 +338,10 @@ def kumamoto_location_problems(supplement, facility):
     expected = dict(name=name, corporateNumber=number, prefectureCode='43', prefectureName='熊本県',
                     cityName=municipality, kind='399', latest='1', hihyoji='0', closeDate='',
                     nameImageId='', addressImageId='')
+    if yamato and name == _NISE_SHRINE:
+        expected['name'] = _NISE_REGISTERED
+    if yamato and name == '早楢神社':
+        expected.update(nameImageId='00098347', addressImageId='00098348')
     street = fields.get('streetNumber')
     if (any(fields.get(key) != value for key, value in expected.items())
             or fields.get('process') == '99' or not _plain(street)
@@ -255,6 +349,10 @@ def kumamoto_location_problems(supplement, facility):
         return ['Kumamoto registered office differs from the active literal CSV row']
     if nishihara:
         problems = _nishihara_problems(supplement, facility, ref, raw, municipality)
+        if problems:
+            return problems
+    if yamato:
+        problems = _yamato_site_problems(supplement, facility, ref)
         if problems:
             return problems
     locality = re.match(r'[^0-9０-９]+', street.removeprefix('大字'))
@@ -268,6 +366,9 @@ def kumamoto_location_problems(supplement, facility):
     if site.get('url') == _UBUYAMA_GUIDE:
         # The printed guide places a space between the locality and the parcel.
         site_places = places | {place + ' ' for place in places}
+    if yamato and name == _NISE_SHRINE:
+        # Keep the literal space from the published shrine-affiliate statement.
+        site_places = places | {'大字二瀬本 '}
     if nishihara:
         if name == '白山姫神社':
             # The agency printed the larger locality without the documented koaza.
