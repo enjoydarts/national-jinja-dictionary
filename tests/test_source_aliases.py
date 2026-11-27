@@ -3,6 +3,7 @@ import copy
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 from njd.records import build_dataset
 from njd import source_aliases as a
 from njd.validation import blocking_problems,eligible
@@ -124,6 +125,43 @@ class SourceAliasOutputPreservationTests(unittest.TestCase):
         out=a.apply_source_aliases(d,doc)
         self.assertEqual(out['entries'][0]['status'],'excluded');self.assertEqual(out['entries'][0]['reason'],'Explicit primary user exclusion')
         self.assertEqual(out['entries'][1]['status'],'pending');self.assertEqual(eligible(out),[])
+
+    def test_link_only_alias_recovers_the_observation_without_changing_the_primary_reading(self):
+        d, doc = self.link_only_fixture()
+        with patch.object(a, 'resolution_problems', return_value=[]):
+            out = a.apply_source_aliases(d, doc)
+            self.assertEqual(a.apply_source_aliases(out, doc), out)
+        self.assertEqual(out['entries'][0], d['entries'][0])
+        self.assertEqual(out['entries'][1]['status'], 'excluded')
+        self.assertEqual(out['entries'][1]['source_alias_entry_of'], d['entries'][0]['id'])
+        self.assertEqual(out['facilities'][1]['address'], '')
+
+    def test_unconfirmed_link_only_alias_does_not_deactivate_the_primary_reading(self):
+        d, doc = self.link_only_fixture()
+        duplicate = d['entries'][1]
+        for problems, protected in (
+            (['stale link evidence'], set()),
+            ([], {duplicate['id']}),
+        ):
+            with self.subTest(problems=problems, protected=protected):
+                with patch.object(a, 'resolution_problems', return_value=problems):
+                    out = a.apply_source_aliases(d, doc, protected_pending_entry_ids=protected)
+                self.assertEqual(out['entries'][0], d['entries'][0])
+                self.assertEqual(out['entries'][1]['reason'], duplicate['reason'])
+                self.assertNotIn('source_alias_of', out['facilities'][1])
+
+    def link_only_fixture(self):
+        dataset = data()
+        doc = document(dataset)
+        record = next(iter(doc['resolutions'].values()))
+        primary, duplicate = dataset['entries']
+        record.update(kind='nagasaki_explicit_shared_official_link',
+                      primary_entry_id=primary['id'], duplicate_entry_id=duplicate['id'])
+        reason = 'missing name, address or municipality'
+        dataset['facilities'][1].update(address='', municipality='', status='pending', reason=reason)
+        duplicate.update(reading='', reading_raw='', status='pending', reason=reason)
+        duplicate.pop('source_reading_raw', None)
+        return dataset, doc
 
 class SourceAliasCliCountTests(unittest.TestCase):
     def test_validate_distinguishes_facilities_from_original_management_records(self):

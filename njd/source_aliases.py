@@ -1,4 +1,4 @@
-"""Evidence-bound aliases for duplicated Kochi publication rows.
+"""Evidence-bound aliases for duplicate publication observations.
 
 Original source records and human overlays are retained. A resolution only marks
 one publication row as another observation of an existing facility; it never
@@ -12,6 +12,7 @@ from urllib.parse import parse_qs,unquote,urlsplit
 
 FIELDS=('id','source_key','prefecture_code','prefecture','name_raw','address','address_raw','address_context','native_source_id','source_hash')
 KIND='kochi_explicit_duplicate_listing'
+NAGASAKI_KIND = 'nagasaki_explicit_shared_official_link'
 
 
 def _snapshot(f):return {k:f.get(k) for k in FIELDS}
@@ -54,6 +55,9 @@ def make_resolution(primary,duplicate,*,checked_at,reason):
 
 def resolution_problems(record,primary,duplicate):
     if not isinstance(record,dict):return ['missing source alias resolution']
+    if record.get('kind') == NAGASAKI_KIND:
+        from njd.nagasaki_aliases import resolution_problems as nagasaki_problems
+        return nagasaki_problems(record, primary, duplicate)
     problems=_pair_problems(primary,duplicate)
     if problems:return problems
     if record.get('kind')!=KIND or record.get('primary_id')!=primary.get('id') or record.get('duplicate_id')!=duplicate.get('id'):problems.append('source alias resolution identity differs')
@@ -85,6 +89,22 @@ def _document(document):
     return records
 
 
+def _nagasaki_link_entry_matches(record, primary, duplicate, primary_entry, duplicate_entry, protected):
+    if (primary_entry['id'] != record.get('primary_entry_id')
+            or duplicate_entry['id'] != record.get('duplicate_entry_id')
+            or primary.get('status') != 'verified' or primary_entry.get('status') != 'verified'
+            or not primary_entry.get('reading') or duplicate_entry['id'] in protected
+            or any(duplicate_entry.get(field) for field in ('reading', 'reading_raw', 'source_reading_raw',
+                                                          'correction', 'human_review', 'identity_review_required'))):
+        return False
+    missing = 'missing name, address or municipality'
+    return ((duplicate.get('status'), duplicate.get('reason'), duplicate_entry.get('status'), duplicate_entry.get('reason'))
+            == ('pending', missing, 'pending', missing)
+            or (duplicate.get('status') == duplicate_entry.get('status') == 'excluded'
+                and duplicate.get('source_alias_of') == primary['id']
+                and duplicate_entry.get('source_alias_entry_of') == primary_entry['id']))
+
+
 def apply_source_aliases(data,document,*,protected_pending_entry_ids=()):
     from njd.nationwide import ensure_public_metadata
     ensure_public_metadata(document)
@@ -104,16 +124,23 @@ def apply_source_aliases(data,document,*,protected_pending_entry_ids=()):
     for duplicate_id,record in records.items():
         primary=facilities.get(record['primary_id']);duplicate=facilities.get(duplicate_id)
         if duplicate is None:continue # Removed publisher observation does not invalidate the remaining facility.
+        link_only = record.get('kind') == NAGASAKI_KIND
+        review_members = [duplicate] if link_only else [primary, duplicate]
         problems=resolution_problems(record,primary,duplicate)
-        if problems:hold([primary,duplicate],'source alias identity requires review: '+'; '.join(problems));continue
+        if problems:hold(review_members,'source alias identity requires review: '+'; '.join(problems));continue
         pe=entries.get(primary['id'],[]);de=entries.get(duplicate_id,[])
-        if len(pe)!=1 or len(de)!=1:hold([primary,duplicate],'source alias multiple-entry identity requires review');continue
+        if len(pe)!=1 or len(de)!=1:hold(review_members,'source alias multiple-entry identity requires review');continue
         p,e=pe[0],de[0]
         def pending_review(entry):
             return (entry.get('status')=='pending' and (entry['id'] in protected or entry.get('reading') or entry.get('reading_raw')
                 or entry.get('reason')!='missing agency reading' or entry.get('correction') or entry.get('human_review') or entry.get('identity_review_required')))
-        if pending_review(p) or pending_review(e) or primary.get('status')=='pending' or duplicate.get('status')=='pending':
-            hold([primary,duplicate],'source alias existing pending review; original judgment and reason retained');continue
+        if link_only:
+            pending = not _nagasaki_link_entry_matches(record, primary, duplicate, p, e, protected)
+        else:
+            pending = (pending_review(p) or pending_review(e) or primary.get('status') == 'pending'
+                       or duplicate.get('status') == 'pending')
+        if pending:
+            hold(review_members,'source alias existing pending review; original judgment and reason retained');continue
         alias_active=e.get('status')=='verified' and duplicate.get('status')=='verified'
         primary_active=p.get('status')=='verified' and primary.get('status')=='verified'
         if alias_active and (not primary_active or any(e.get(k)!=p.get(k) for k in ('surface','reading','semantic_type'))):
@@ -144,6 +171,10 @@ def metadata_problems(data):
             if not primary or not isinstance(primary.get('source_alias_ids'),list) or f['id'] not in primary['source_alias_ids']:reasons.append('primary source alias relation missing')
             pe=entries.get(primary['id'],[]) if primary else [];de=entries.get(f['id'],[])
             if len(pe)!=1 or len(de)!=1 or de[0].get('status')!='excluded' or de[0].get('source_alias_entry_of')!=pe[0]['id']:reasons.append('duplicate entry source alias differs')
+            record = f.get('source_alias_resolution')
+            if isinstance(record, dict) and record.get('kind') == NAGASAKI_KIND:
+                if len(pe) != 1 or len(de) != 1 or not _nagasaki_link_entry_matches(record, primary, f, pe[0], de[0], ()):
+                    reasons.append('link-only source alias differs from its original entries')
             for reason in reasons:problems.append(dict(kind='global',id=f['id'],reason=reason,severity='error'))
         ids=f.get('source_alias_ids',[])
         if not isinstance(ids,list) or any(not isinstance(v,str) for v in ids):problems.append(dict(kind='global',id=f['id'],reason='invalid primary source aliases',severity='error'));continue
