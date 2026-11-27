@@ -10,6 +10,7 @@ from njd.municipalities import (
 )
 from njd.locations import raw_address, _redirect_authority, _reference_in_scope, _hash, _date, _plain
 from njd.corporate_aza import PROOF_KIND as REGISTERED_TOWN_PROOF, registered_town_matches
+from njd.nantan_identity import PROOF_KIND as NANTAN_PROOF, nantan_reference_matches
 
 _UJITAWARA_KOAZA_PROOF = 'ujitawara_documented_koaza_marker'
 _UJITAWARA_WITNESS_HOSTS = {'ujitawara-kyoto.com', 'www.town.ujitawara.kyoto.jp', 'www.kyoto-be.ne.jp'}
@@ -254,6 +255,8 @@ def _reference_matches(ref,facility,entry,changes):
         return registered_town_matches(ref,facility,entry,changes)
     if isinstance(proof,dict) and proof.get('kind')==_UJITAWARA_KOAZA_PROOF:
         return _ujitawara_koaza_matches(ref,facility,entry,changes)
+    if isinstance(proof, dict) and proof.get('kind') == NANTAN_PROOF:
+        return nantan_reference_matches(ref, facility, entry, changes)
     if isinstance(proof, dict) and proof.get('kind') in (ISAHAYA_LOCALITY_PROOF, FUJIYOSHIDA_RESIDENCE_PROOF):
         if set(changes) != {'reading'} or entry.get('status') == 'excluded' or ref.get('reading_scope') != 'full_name':
             return False
@@ -486,6 +489,9 @@ def correction_problems(correction,facility,entry,source=None):
             problems.append('reference name or actual excerpt missing')
         bound=(_reference_matches(ref,facility,entry,changes)
             or _linked_locality_reference(ref,correction,facility))
+        nantan = isinstance(proof, dict) and proof.get('kind') == NANTAN_PROOF
+        if nantan and not bound:
+            problems.append('Nantan shrine identity differs from the inspected documents')
         joined=_joined_official_reading(ref,correction,facility,entry)
         if (registry_present and bound and 'reading' in changes and ref.get('reading_raw')
             and ref.get('source_kind') in ('agency','official_agency')
@@ -494,7 +500,7 @@ def correction_problems(correction,facility,entry,source=None):
             and urlsplit(ref.get('url','')).hostname==urlsplit(facility.get('listing_url','')).hostname
             and not _agency_reading_compatible(ref['name_raw'],ref['reading_raw'],ref['reading_scope'],changes['reading'])):
             problems.append('proposed registry reading conflicts with literal agency kana; prefix agreement alone is insufficient')
-        if bound and ref.get('name_raw') and ref.get('name_raw') in ref.get('excerpt','') and _literal_reference_address(ref):
+        if bound and ref.get('name_raw') and ref.get('name_raw') in ref.get('excerpt','') and (nantan or _literal_reference_address(ref)):
             identity_supported=True
         if bound and 'surface' in changes and ref.get('name_raw')==changes['surface'] and changes['surface'] in ref.get('excerpt',''):
             name_supported=True
@@ -532,7 +538,7 @@ def apply_corrections(data,document):
                                         'article_address_context','registered_name_variant'))
                     or (isinstance(r.get('address_identity_proof'),dict)
                         and r['address_identity_proof'].get('kind') in (REGISTERED_TOWN_PROOF, _UJITAWARA_KOAZA_PROOF,
-                                                                       ISAHAYA_LOCALITY_PROOF)))
+                                                                       ISAHAYA_LOCALITY_PROOF, NANTAN_PROOF)))
                     for r in references))
             # A rejected contextual correction must not erase a durable
             # exclusion: otherwise a second application could approve it.
