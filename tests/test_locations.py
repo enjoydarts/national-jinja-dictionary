@@ -145,6 +145,56 @@ class LocationTest(unittest.TestCase):
                 s['reference']['url'] = other_url
                 self.assertTrue(self.api.location_problems(s, f, d['collection']))
 
+    def test_nishihara_affiliated_shrine_keeps_the_short_printed_address(self):
+        d, doc, s = nishihara_fixture('小森神社')
+        self.assertEqual(self.api.location_problems(s, d['facilities'][0], d['collection']), [])
+        out = self.api.apply_locations(d, doc)
+        site = out['facilities'][0]
+        self.assertEqual((site['address'], site['municipality']), ('西原村小森386番地', '阿蘇郡西原村'))
+        self.assertEqual(self.api.raw_address(site), '阿蘇郡小森386')
+        self.assertEqual(out['entries'][0]['reason'], 'missing agency reading')
+        self.assertEqual(self.api.apply_locations(out, doc), out)
+
+    def test_nishihara_affiliate_requires_publisher_scope_and_shrine_row(self):
+        for incompatible in ('missing scope', 'office', 'other row', 'fabricated prefecture prefix',
+                             'changed agency area', 'changed registry parcel', 'rewritten official office fields'):
+            with self.subTest(incompatible=incompatible):
+                d, _, s = nishihara_fixture('小森神社')
+                if incompatible == 'missing scope':
+                    del s['reference']['scope_reference']
+                elif incompatible == 'office':
+                    s['reference']['location_role'] = 'principal_office'
+                elif incompatible == 'other row':
+                    s['reference']['locator'] = '西原村内の兼務神社表 tr[3] 神社名・鎮座地セル'
+                elif incompatible == 'fabricated prefecture prefix':
+                    address = '熊本県阿蘇郡西原村小森386番地'
+                    s['reference']['address_raw'] = s['changes']['address'] = address
+                    s['reference']['excerpt'] = '小森神社 ／ ' + address
+                elif incompatible == 'changed agency area':
+                    s['agency_recheck']['area_raw'] = '阿蘇郡小森386-1'
+                elif incompatible == 'changed registry parcel':
+                    s['current_registry_reference']['address_raw'] += 'の１'
+                else:
+                    register = s['registry_reference']
+                    register['source_fields']['streetNumber'] = '小森386'
+                    register['address_raw'] = '熊本県阿蘇郡西原村小森386'
+                    s['current_registry_reference']['address_raw'] = register['address_raw']
+                self.assertTrue(self.api.location_problems(s, d['facilities'][0], d['collection']))
+
+    def test_hakusan_requires_village_cadastral_relationship_for_live_koaza(self):
+        d, _, s = nishihara_fixture('白山姫神社')
+        self.assertEqual(self.api.location_problems(s, d['facilities'][0], d['collection']), [])
+        for change in ('missing neighborhood', 'different neighborhood', 'other parcel proposed'):
+            with self.subTest(change=change):
+                invalid = copy.deepcopy(s)
+                if change == 'missing neighborhood':
+                    del invalid['locality_reference']
+                elif change == 'different neighborhood':
+                    invalid['locality_reference']['koaza_raw'] = '古閑'
+                else:
+                    invalid['changes']['address'] = invalid['locality_reference']['address_raw']
+                self.assertTrue(self.api.location_problems(invalid, d['facilities'][0], d['collection']))
+
     def test_unrelated_pending_and_quarantine_are_never_cleared(self):
         for update in [dict(status='excluded',reason='manual exclusion'),dict(status='pending',reason='another unresolved condition'),
                        dict(status='pending',identity_review_required=True,reason='identity review')]:
@@ -367,5 +417,104 @@ class LocationTest(unittest.TestCase):
         for invalid in ({},{'schema_version':2,'facilities':{}},{'schema_version':1,'facilities':[]}):
             with self.assertRaises(ValueError):self.api.apply_locations(d,invalid)
 
+
+
+
+_NISHIHARA_CASES = {'小森神社': ('b0b7d762-7f68-56c3-802d-54e65e528558',
+          '0c7889a7-7c2f-5a5d-8ac0-68ce5d9e808b',
+          '3f2010d69dd363de508adf1b052c892547366e47757db440176a921d308ce54a',
+          '阿蘇郡小森386',
+          'https://kumamotokenjinjacho.jp/patron-god/%e5%b0%8f%e6%a3%ae%e7%a5%9e%e7%a4%be/',
+          '西原村小森386番地',
+          '西原村内の兼務神社表 tr[2] 神社名・鎮座地セル',
+          '2330005002601',
+          '大字小森３８６番地',
+          15187,
+          '566991bcb74e8391224aed6a4dd532f6b2aaa14d68ba341275c0d3f1f8ffaec9',
+          '40b056c61d27ce67963ddb425d6eed66fe83e43c56fb92459dda448d3d447bd6'),
+ '白山姫神社': ('205f8e8f-c4ba-5767-987d-c5d8584f0a77',
+           'eff3a564-4539-5b47-8a6a-7e53c5d9bcfb',
+           'f52164800910b5d9f987119cbd8cbf2271e7d94866cfcb6aef7ab7cc4c8f90aa',
+           '阿蘇郡河原750',
+           'https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/',
+           '熊本県阿蘇郡西原村大字河原字門出750番地',
+           'h1#cc-m-header-12245966891 と「鎮座地」の実欄',
+           '4330005002608',
+           '大字河原字門出７５０番地',
+           31171,
+           'f89bb7204c2ac6579a738e400b197cac6ab10a1d5ccb417a4025146a078dba14',
+           'e60675c97eebfc2af71ec45036ff1f4e66ce20192bd1617cdec42d662c7c9b36')}
+
+
+def nishihara_fixture(name):
+    (facility_id, entry_id, source_hash, area, native, address, locator, corporate, street, csv_row,
+     agency_hash, registry_detail_hash) = _NISHIHARA_CASES[name]
+    d, _, s = fixture()
+    f, e = d['facilities'][0], d['entries'][0]
+    office = '熊本県阿蘇郡西原村' + street
+    observed = '2026-11-27T01:50:00+00:00'
+    listing = 'https://kumamotokenjinjacho.jp/patron-god/page/9/'
+    official = 'https://shirayamahime.jimdofree.com/'
+    official_hash = 'b7e36f19a7acfe84ee42f24ad4b0409f9349806787d42b6a8f620cb271bd5468'
+    f.update(id=facility_id, source_hash=source_hash, source_key='kumamoto', prefecture_code='43',
+             prefecture='熊本県', name_raw=name, listed_name=name, address=area, listing_url=listing,
+             native_source_id=native, official_site_url=None, source_locator=f'table.c-table tr a[href="{native}"]',
+             page_hash='68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f')
+    e.update(id=entry_id, facility_id=facility_id, source_hash=source_hash, name_raw=name)
+    s.update(
+        facility_id=facility_id, entry_id=entry_id, expected_source_hash=source_hash,
+        supplement_kind='kumamoto_documented_shrine_site',
+        original={key: f.get(key) for key in s['original']},
+        changes=dict(address=address, municipality='阿蘇郡西原村'),
+        agency_link=dict(url=listing, href_raw=native, name_raw=name, locator=f['source_locator'],
+                         page_hash=f['page_hash'], fetched_at=f['fetched_at'],
+                         address_label='お住まいの地域', area_raw=area),
+        agency_recheck=dict(url=native, name_raw=name, locator='氏神詳細の社名見出し・お住まいの地域欄',
+                            role='agency_search_area',
+                            fetched_at=observed, page_hash=agency_hash,
+                            address_label='お住まいの地域', area_raw=area),
+        current_registry_reference=dict(
+            url='https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=' + corporate,
+            locator='最新情報の商号又は名称／本店又は主たる事務所の所在地',
+            fetched_at=observed, page_hash=registry_detail_hash, name_raw=name, corporate_number=corporate,
+            address_role='corporation_principal_office', location_role='principal_office', address_raw=office,
+            address_column_raw='本店又は主たる事務所の所在地'),
+        registry_reference=dict(
+            url='https://www.houjin-bangou.nta.go.jp/download/zenken/index.html', checked_at=observed,
+            page_hash='303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c',
+            csv_row=csv_row, corporate_number=corporate, address_raw=office, location_role='principal_office',
+            source_fields=dict(name=name, corporateNumber=corporate, prefectureCode='43', prefectureName='熊本県',
+                               cityName='阿蘇郡西原村', kind='399', latest='1', hihyoji='0', process='01',
+                               streetNumber=street, closeDate='', nameImageId='', addressImageId=''),
+            registry_state_proof=dict(unique_active_corporate_number=corporate, full_address_active_corporations=1)),
+        reference=dict(
+            url=official, page_hash=official_hash, fetched_at=observed, locator=locator, name_raw=name,
+            address_raw=address, address_field='鎮座地', excerpt=name + ' ／ 鎮座地 ' + address,
+            source_kind='nishihara_shrine_site', source_publisher='白山姫神社', location_role='shrine'),
+    )
+    if name == '小森神社':
+        s['reference'].update(
+            url=official + '%E5%85%BC%E5%8B%99%E7%A5%9E%E7%A4%BE-%E6%9D%91%E5%86%85/',
+            page_hash='466ef624a6c4c76a3007e30f7ad28a36a5e6ed62f3cb8a78daea160f190550c5',
+            source_kind='nishihara_affiliated_shrine_table', name_cell_raw='小森神社　',
+            scope_reference=dict(url=official, page_hash=official_hash, fetched_at=observed,
+                                 locator='h1#cc-m-header-12245966891 と「鎮座地」の実欄', name_raw='白山姫神社',
+                                 municipality_raw='熊本県阿蘇郡西原村',
+                                 excerpt='鎮座地　熊本県阿蘇郡西原村大字河原字門出750番地'))
+    else:
+        locality = '熊本県阿蘇郡西原村大字河原字門出９１８番４'
+        s['locality_reference'] = dict(
+            url='https://www.vill.nishihara.kumamoto.jp/kiji0031018/3_1018_1033_up_kzkb3zs0.pdf',
+            fetched_at=observed, locator='物件番号2の売払物件・地番欄', oaza_raw='河原', koaza_raw='門出',
+            page_hash='95bb337e3ec58905054dff5922c5c00a705eb1978ac00ba2c72ed355e1ad0333',
+            address_raw=locality, excerpt=locality + ' 門出', pdf_page=1,
+            role='independent_hierarchy_other_parcel')
+        s['cadastral_hierarchy_reference'] = dict(
+            url='https://www.vill.nishihara.kumamoto.jp/kiji003204/index.html',
+            fetched_at=observed, locator='調査地区の概要、平成13年度行の大字・小字列',
+            page_hash='3ae2c201922421004eeb1b25c369702bf85fa402a73ce21630d1d60de52cfaae',
+            oaza_raw='河原', koaza_raw='門出', koaza_cell_raw='門出・古閑・平の一部',
+            role='municipal_cadastral_hierarchy', excerpt='平成13年度 ／ 河原 ／ 門出・古閑・平の一部')
+    return d, dict(schema_version=1, facilities={facility_id: s}), s
 
 if __name__=='__main__':unittest.main()

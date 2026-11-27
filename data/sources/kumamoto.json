@@ -34178,7 +34178,7 @@
           "reading_raw": "",
           "reading_source_kind": "agency",
           "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "reason": "missing name, address or municipality",
+          "reason": "missing agency reading",
           "research": {
             "additional_source_reviews": [
               {
@@ -34354,7 +34354,7 @@
           "reading_raw": "",
           "reading_source_kind": "agency",
           "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "reason": "missing name, address or municipality",
+          "reason": "missing agency reading",
           "research": {
             "additional_source_reviews": [
               {
@@ -34530,7 +34530,7 @@
           "reading_raw": "",
           "reading_source_kind": "agency",
           "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "reason": "missing name, address or municipality",
+          "reason": "missing agency reading",
           "research": {
             "additional_source_reviews": [
               {
@@ -34706,7 +34706,7 @@
           "reading_raw": "",
           "reading_source_kind": "agency",
           "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "reason": "missing name, address or municipality",
+          "reason": "missing agency reading",
           "research": {
             "additional_source_reviews": [
               {
@@ -35217,12 +35217,48 @@
           "surface": "福利王神社"
         },
         {
-          "checked_at": "2026-11-08T14:34:26.979623+00:00",
+          "checked_at": "2026-11-27T01:43:49.687439+00:00",
           "evidence": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/\"]: 名称=白山姫神社; 掲載読み=; 所在地=阿蘇郡河原750",
           "facility_id": "205f8e8f-c4ba-5767-987d-c5d8584f0a77",
           "fetched_at": "2026-11-08T14:34:26.979623+00:00",
           "id": "eff3a564-4539-5b47-8a6a-7e53c5d9bcfb",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しらやまひめじんじゃ"
+              },
+              "expected_source_hash": "f52164800910b5d9f987119cbd8cbf2271e7d94866cfcb6aef7ab7cc4c8f90aa",
+              "facility_id": "205f8e8f-c4ba-5767-987d-c5d8584f0a77",
+              "identity_match": "庁原地域の河原750、観光協会の河原750と公式実href、官公庁の字門出750および同社公式鎮座地が対応。",
+              "original": {
+                "address": "阿蘇郡河原750",
+                "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
+                "name_raw": "白山姫神社",
+                "reading_raw": ""
+              },
+              "reason": "白山姫神社公式の社名見出しは全文かなを、同じページの「鎮座地」欄は小字と全地番を明示。所在地補完を先に評価する。",
+              "references": [
+                {
+                  "address_column_raw": "鎮座地",
+                  "address_raw": "熊本県阿蘇郡西原村大字河原字門出750番地",
+                  "checked_at": "2026-11-27T01:43:49.687439+00:00",
+                  "excerpt": "白山姫神社　しらやまひめじんじゃ ／ 鎮座地　熊本県阿蘇郡西原村大字河原字門出750番地",
+                  "fetched_at": "2026-11-27T01:43:49.687439+00:00",
+                  "location_role": "shrine",
+                  "locator": "h1#cc-m-header-12245966891 と「鎮座地」の実欄",
+                  "name_raw": "白山姫神社",
+                  "page_hash": "b7e36f19a7acfe84ee42f24ad4b0409f9349806787d42b6a8f620cb271bd5468",
+                  "reading_raw": "しらやまひめじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "official_shrine",
+                  "source_publisher": "白山姫神社",
+                  "title": "白山姫神社",
+                  "url": "https://shirayamahime.jimdofree.com/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
           "name_raw": "白山姫神社",
           "normalization": [
@@ -35230,11 +35266,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
-          "reading": "",
+          "reading": "しらやまひめじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "reason": "missing name, address or municipality",
+          "reading_source_kind": "reference",
+          "reading_url": "https://shirayamahime.jimdofree.com/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -35320,6 +35356,20 @@
             "prefecture_code": "43",
             "reading_raw": "",
             "reason": "missing name, address or municipality",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しらやまひめじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しらやまひめじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "source_assessment": {
               "assessment_group": "resident_region_not_shrine_location",
               "checked_at": "2026-11-11T10:14:44.472519+00:00",
@@ -35389,7 +35439,7 @@
             "status": "pending",
             "surface": "白山姫神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "白山姫神社"
         },
         {
@@ -118788,12 +118838,219 @@
           "status": "pending"
         },
         {
-          "address": "阿蘇郡布田1717",
+          "address": "西原村布田1717番地",
           "agency": "熊本県神社庁",
-          "checked_at": "2026-11-08T14:34:26.979623+00:00",
+          "checked_at": "2026-11-27T01:43:55.023438+00:00",
           "fetched_at": "2026-11-08T14:34:26.979623+00:00",
           "id": "05448cbf-3e38-59f7-a41c-e3211091f2e0",
-          "judgments": {},
+          "judgments": {
+            "locations": {
+              "agency_link": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡布田1717",
+                "fetched_at": "2026-11-08T14:34:26.979623+00:00",
+                "href_raw": "https://kumamotokenjinjacho.jp/patron-god/%e9%be%8d%e7%a5%9e%e7%a4%be/",
+                "locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e9%be%8d%e7%a5%9e%e7%a4%be/\"]",
+                "name_raw": "龍神社",
+                "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/page/9/"
+              },
+              "agency_recheck": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡布田1717",
+                "checked_at": "2026-11-27T01:43:52.091890+00:00",
+                "fetched_at": "2026-11-27T01:43:52.091890+00:00",
+                "locator": "氏神詳細の社名見出し・お住まいの地域欄",
+                "name_raw": "龍神社",
+                "page_hash": "05936f7aaf460b7bbcb4361b0797e551ca09bf3b286faf984f455315a07cc0fe",
+                "role": "agency_search_area",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/%e9%be%8d%e7%a5%9e%e7%a4%be/"
+              },
+              "changes": {
+                "address": "西原村布田1717番地",
+                "municipality": "阿蘇郡西原村"
+              },
+              "current_registry_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字布田１７１７番地",
+                "address_role": "corporation_principal_office",
+                "checked_at": "2026-11-27T01:43:51.992069+00:00",
+                "corporate_number": "4330005002632",
+                "excerpt": "龍神社 ／ 熊本県阿蘇郡西原村大字布田１７１７番地",
+                "fetched_at": "2026-11-27T01:43:51.992069+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "龍神社",
+                "page_hash": "121207dd59bac1472466c9187900908844de867f9ead9f240bd4eb7db6ccf753",
+                "published_fields": {
+                  "商号又は名称": "龍神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字布田１７１７番地",
+                  "法人番号": "4330005002632"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4330005002632"
+              },
+              "entry_id": "5c090955-4cdd-5a42-a815-c1872660a3a5",
+              "expected_source_hash": "38742db592f4a0f4807d8e3f08256465c7f6db2bae9d1fb6e75031d6411a6b92",
+              "facility_id": "05448cbf-3e38-59f7-a41c-e3211091f2e0",
+              "full_parcel": "1717",
+              "national_individual_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字布田１７１７番地",
+                "checked_at": "2026-11-27T01:43:51.992069+00:00",
+                "corporate_number": "4330005002632",
+                "excerpt": "龍神社 ／ 熊本県阿蘇郡西原村大字布田１７１７番地",
+                "fetched_at": "2026-11-27T01:43:51.992069+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "龍神社",
+                "page_hash": "121207dd59bac1472466c9187900908844de867f9ead9f240bd4eb7db6ccf753",
+                "published_fields": {
+                  "商号又は名称": "龍神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字布田１７１７番地",
+                  "法人番号": "4330005002632"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4330005002632"
+              },
+              "original": {
+                "address": "阿蘇郡布田1717",
+                "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
+                "municipality": "",
+                "name_raw": "龍神社",
+                "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e9%be%8d%e7%a5%9e%e7%a4%be/",
+                "official_site_url": null
+              },
+              "other_references": [
+                {
+                  "address_raw": "阿蘇郡西原村布田1717",
+                  "address_role": "shrine",
+                  "checked_at": "2026-11-27T01:43:50.080325+00:00",
+                  "excerpt": "布田・龍王社\n阿蘇郡西原村布田1717",
+                  "fetched_at": "2026-11-27T01:43:50.080325+00:00",
+                  "locator": "くまもとアートポリス推進賞の「布田・龍王社」所在地",
+                  "name_raw": "布田・龍王社",
+                  "page_hash": "00d152d9f6d5580dc4f3db0720c600f0550d53b0693a3c271a5a72a6d8e9e5cf",
+                  "pdf_page": 5,
+                  "pdf_pages": 6,
+                  "role": "independent_site_same_parcel_different_name",
+                  "source_publisher": "熊本県",
+                  "url": "https://www.pref.kumamoto.jp/uploaded/attachment/239586.pdf"
+                },
+                {
+                  "checked_at": "2026-11-27T01:45:50.988203+00:00",
+                  "excerpt": "龍王社\n大綿津見神",
+                  "fetched_at": "2026-11-27T01:45:50.988203+00:00",
+                  "locator": "布田地区冊子「龍王社」本文",
+                  "name_raw": "龍王社",
+                  "page_hash": "9312224fea55de5892f2316763903d7b1251a1674d5cd7a8819043d675e62985",
+                  "pdf_page": 12,
+                  "pdf_pages": 46,
+                  "role": "regional_name_no_full_reading",
+                  "source_publisher": "西原村震災アーカイブ掲載・布田地区",
+                  "url": "https://www.vill.nishihara.kumamoto.jp/jisin/kiji003703/3_703_17_futa_ri-furetto.pdf"
+                }
+              ],
+              "prefectural_registry_reference": {
+                "checked_at": "2026-11-26T08:31:35.868809+00:00",
+                "comparison_full_address": "熊本県阿蘇郡西原村布田1717",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                "location_role": "principal_office",
+                "municipality_cell_raw": "阿蘇郡",
+                "name_raw": "龍神社",
+                "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+                "registered_office_cell_raw": "西原村布田1717",
+                "row": 1327,
+                "rows": 2802,
+                "scope": "名称、所在地町村欄、主たる事務所だけを使用。管理者名・個人情報なし。",
+                "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+              },
+              "reason": "公式兼務表に神社原名と鎮座地全地番が同じ行に明示。庁原地域と県・国税庁の事務所所在地と全地番比較。鎮座地の原欄は村名から始まるため、都道府県および郡の前置は別の明示行政文脈と照合する。",
+              "reference": {
+                "address_column_raw": "鎮座地",
+                "address_field": "鎮座地",
+                "address_raw": "西原村布田1717番地",
+                "checked_at": "2026-11-27T01:43:55.023438+00:00",
+                "excerpt": "龍神社 ／ 西原村布田1717番地",
+                "fetched_at": "2026-11-27T01:43:55.023438+00:00",
+                "location_role": "shrine",
+                "locator": "西原村内の兼務神社表 tr[4] 神社名・鎮座地セル",
+                "name_cell_raw": "龍神社　　　　",
+                "name_raw": "龍神社",
+                "page_hash": "466ef624a6c4c76a3007e30f7ad28a36a5e6ed62f3cb8a78daea160f190550c5",
+                "reading_raw": "",
+                "scope_reference": {
+                  "excerpt": "鎮座地　熊本県阿蘇郡西原村大字河原字門出750番地",
+                  "fetched_at": "2026-11-27T01:43:49.687439+00:00",
+                  "locator": "h1#cc-m-header-12245966891 と「鎮座地」の実欄",
+                  "municipality_raw": "熊本県阿蘇郡西原村",
+                  "name_raw": "白山姫神社",
+                  "page_hash": "b7e36f19a7acfe84ee42f24ad4b0409f9349806787d42b6a8f620cb271bd5468",
+                  "url": "https://shirayamahime.jimdofree.com/"
+                },
+                "source_kind": "nishihara_affiliated_shrine_table",
+                "source_publisher": "白山姫神社",
+                "url": "https://shirayamahime.jimdofree.com/%E5%85%BC%E5%8B%99%E7%A5%9E%E7%A4%BE-%E6%9D%91%E5%86%85/"
+              },
+              "registry_reference": {
+                "address_raw": "熊本県阿蘇郡西原村大字布田１７１７番地",
+                "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                "corporate_number": "4330005002632",
+                "csv_row": 31174,
+                "location_role": "principal_office",
+                "page_hash": "303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c",
+                "registry_state_proof": {
+                  "as_of": "20261030",
+                  "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                  "full_address_active_corporations": 1,
+                  "unique_active_corporate_number": "4330005002632"
+                },
+                "source_fields": {
+                  "addressImageId": "",
+                  "addressOutside": "",
+                  "addressOutsideImageId": "",
+                  "assignmentDate": "2015-10-05",
+                  "changeCause": "",
+                  "changeDate": "2015-10-05",
+                  "cityCode": "432",
+                  "cityName": "阿蘇郡西原村",
+                  "closeCause": "",
+                  "closeDate": "",
+                  "corporateNumber": "4330005002632",
+                  "correct": "0",
+                  "enAddressOutside": "",
+                  "enCityName": "",
+                  "enName": "",
+                  "enPrefectureName": "",
+                  "furigana": "",
+                  "hihyoji": "0",
+                  "kind": "399",
+                  "latest": "1",
+                  "name": "龍神社",
+                  "nameImageId": "",
+                  "postCode": "8612403",
+                  "prefectureCode": "43",
+                  "prefectureName": "熊本県",
+                  "process": "01",
+                  "sequenceNumber": "31174",
+                  "streetNumber": "大字布田１７１７番地",
+                  "successorCorporateNumber": "",
+                  "updateDate": "2015-11-27"
+                },
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                "zip_member": "43_kumamoto_all_20261030.csv"
+              },
+              "status": "verified",
+              "supplement_kind": "kumamoto_documented_shrine_site"
+            }
+          },
           "listed_name": "龍神社",
           "listing_occurrences": [
             {
@@ -118804,14 +119061,14 @@
             }
           ],
           "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "municipality": "",
+          "municipality": "阿蘇郡西原村",
           "name_raw": "龍神社",
           "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e9%be%8d%e7%a5%9e%e7%a4%be/",
           "official_site_url": null,
           "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
           "prefecture": "熊本県",
           "prefecture_code": "43",
-          "reason": "missing name, address or municipality",
+          "reason": "",
           "source_hash": "38742db592f4a0f4807d8e3f08256465c7f6db2bae9d1fb6e75031d6411a6b92",
           "source_key": "kumamoto",
           "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e9%be%8d%e7%a5%9e%e7%a4%be/\"]",
@@ -118844,15 +119101,235 @@
             "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e9%be%8d%e7%a5%9e%e7%a4%be/\"]",
             "status": "pending"
           },
-          "status": "pending"
+          "status": "verified"
         },
         {
-          "address": "阿蘇郡宮山439",
+          "address": "西原村宮山439番地",
           "agency": "熊本県神社庁",
-          "checked_at": "2026-11-08T14:34:26.979623+00:00",
+          "checked_at": "2026-11-27T01:43:55.023438+00:00",
           "fetched_at": "2026-11-08T14:34:26.979623+00:00",
           "id": "a7c2aacf-58e5-5291-bb3b-2b3e5e151b58",
-          "judgments": {},
+          "judgments": {
+            "locations": {
+              "agency_link": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡宮山439",
+                "fetched_at": "2026-11-08T14:34:26.979623+00:00",
+                "href_raw": "https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%b1%b1%e7%a5%9e%e7%a4%be/",
+                "locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%b1%b1%e7%a5%9e%e7%a4%be/\"]",
+                "name_raw": "宮山神社",
+                "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/page/9/"
+              },
+              "agency_recheck": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡宮山439",
+                "checked_at": "2026-11-27T01:44:00.935829+00:00",
+                "fetched_at": "2026-11-27T01:44:00.935829+00:00",
+                "locator": "氏神詳細の社名見出し・お住まいの地域欄",
+                "name_raw": "宮山神社",
+                "page_hash": "bd70be5d66bef6918ed58f6345634e5093f444765e5e40a0a255fd7ae1db2d2f",
+                "role": "agency_search_area",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%b1%b1%e7%a5%9e%e7%a4%be/"
+              },
+              "changes": {
+                "address": "西原村宮山439番地",
+                "municipality": "阿蘇郡西原村"
+              },
+              "current_registry_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字宮山４３９番地",
+                "address_role": "corporation_principal_office",
+                "checked_at": "2026-11-27T01:44:00.624974+00:00",
+                "corporate_number": "1330005002627",
+                "excerpt": "宮山神社 ／ 熊本県阿蘇郡西原村大字宮山４３９番地",
+                "fetched_at": "2026-11-27T01:44:00.624974+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "宮山神社",
+                "page_hash": "ed3abd1eb4d47359b5fde095ea2a3c369e4c819ad946567d96f4205eb5efc939",
+                "published_fields": {
+                  "商号又は名称": "宮山神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字宮山４３９番地",
+                  "法人番号": "1330005002627"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1330005002627"
+              },
+              "entry_id": "420f6712-46a1-59c6-8eae-1b0c2ef4fc19",
+              "expected_source_hash": "b16a993b2533cc190ec580acedb1cbcebcbab994db98d2109b33ca454a16746f",
+              "facility_id": "a7c2aacf-58e5-5291-bb3b-2b3e5e151b58",
+              "full_parcel": "439",
+              "national_individual_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字宮山４３９番地",
+                "checked_at": "2026-11-27T01:44:00.624974+00:00",
+                "corporate_number": "1330005002627",
+                "excerpt": "宮山神社 ／ 熊本県阿蘇郡西原村大字宮山４３９番地",
+                "fetched_at": "2026-11-27T01:44:00.624974+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "宮山神社",
+                "page_hash": "ed3abd1eb4d47359b5fde095ea2a3c369e4c819ad946567d96f4205eb5efc939",
+                "published_fields": {
+                  "商号又は名称": "宮山神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字宮山４３９番地",
+                  "法人番号": "1330005002627"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1330005002627"
+              },
+              "original": {
+                "address": "阿蘇郡宮山439",
+                "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
+                "municipality": "",
+                "name_raw": "宮山神社",
+                "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%b1%b1%e7%a5%9e%e7%a4%be/",
+                "official_site_url": null
+              },
+              "other_references": [
+                {
+                  "address_raw": "熊本県阿蘇郡西原村大字宮山439番地",
+                  "checked_at": "2026-11-27T01:43:47.042735+00:00",
+                  "excerpt": "宮山神社（八王社・雨宮） ／ 熊本県阿蘇郡西原村大字宮山439番地",
+                  "fetched_at": "2026-11-27T01:43:47.042735+00:00",
+                  "location_role": "shrine",
+                  "locator": "宮山神社公式のフッター社名と住所（概要の法人所在地と別）",
+                  "name_raw": "宮山神社（八王社・雨宮）",
+                  "page_hash": "5512eb92a1959a31d11131cb3bd84264f76d6c15e0b6983fdda9fc8daf53d1cc",
+                  "source_kind": "official_shrine",
+                  "source_publisher": "宮山神社",
+                  "url": "https://www.miyayama-jinjya.jp/aboutus.html"
+                },
+                {
+                  "address_raw": "熊本県阿蘇郡西原村大字宮山４３９番地",
+                  "address_role": "disaster_program_corporate_address",
+                  "checked_at": "2026-11-27T01:45:42.681888+00:00",
+                  "excerpt": "宗教法人 宮山神社\n熊本県阿蘇郡西原村大字宮山４３９番地",
+                  "fetched_at": "2026-11-27T01:45:42.681888+00:00",
+                  "locator": "指定寄附金対象法人の名称・所在地・復旧事業欄",
+                  "name_raw": "宗教法人 宮山神社",
+                  "page_hash": "350de33ddd44f67e1afb5b5ebddf0d7c1bd30d32e803da113f9601274ef0da9d",
+                  "pdf_page": 3,
+                  "pdf_pages": 3,
+                  "project_role": "本殿・幣殿・拝殿・雨宮、鳥居の原状回復",
+                  "source_publisher": "財務省",
+                  "url": "https://www.mof.go.jp/tax_policy/161212houjin-ichiran.pdf"
+                },
+                {
+                  "checked_at": "2026-11-27T01:45:42.568093+00:00",
+                  "fetched_at": "2026-11-27T01:45:42.568093+00:00",
+                  "locator": "書誌BC18737044の「タイトル読み」欄",
+                  "name_raw": "宮山神社(八王社・雨宮神社)修理工事報告書 : 西原村指定有形文化財",
+                  "page_hash": "174f08b4b8782b1bedb828dee0c4f768af2d1ac78807fba9e57073ca3ddde18c",
+                  "reading_raw": "ミヤヤマ ジンジャ(ハチオウシャ・アマミヤ ジンジャ)シュウリ コウジ ホウコクショ : ニシハラムラ シテイ ユウケイ ブンカザイ",
+                  "reading_scope": "bibliographic_title_component",
+                  "role": "research_only_not_proposed",
+                  "source_publisher": "国立情報学研究所 CiNii Books",
+                  "terms_url": "https://support.nii.ac.jp/index.php/ja/cinii/terms",
+                  "url": "https://ci.nii.ac.jp/ncid/BC18737044"
+                }
+              ],
+              "prefectural_registry_reference": {
+                "checked_at": "2026-11-26T08:31:35.868809+00:00",
+                "comparison_full_address": "熊本県阿蘇郡西原村宮山439",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                "location_role": "principal_office",
+                "municipality_cell_raw": "阿蘇郡",
+                "name_raw": "宮山神社",
+                "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+                "registered_office_cell_raw": "西原村宮山439",
+                "row": 1227,
+                "rows": 2802,
+                "scope": "名称、所在地町村欄、主たる事務所だけを使用。管理者名・個人情報なし。",
+                "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+              },
+              "reason": "公式兼務表に神社原名と鎮座地全地番が同じ行に明示。庁原地域と県・国税庁の事務所所在地と全地番比較。鎮座地の原欄は村名から始まるため、都道府県および郡の前置は別の明示行政文脈と照合する。",
+              "reference": {
+                "address_column_raw": "鎮座地",
+                "address_field": "鎮座地",
+                "address_raw": "西原村宮山439番地",
+                "checked_at": "2026-11-27T01:43:55.023438+00:00",
+                "excerpt": "宮山神社 ／ 西原村宮山439番地",
+                "fetched_at": "2026-11-27T01:43:55.023438+00:00",
+                "location_role": "shrine",
+                "locator": "西原村内の兼務神社表 tr[6] 神社名・鎮座地セル",
+                "name_cell_raw": "宮山神社",
+                "name_raw": "宮山神社",
+                "page_hash": "466ef624a6c4c76a3007e30f7ad28a36a5e6ed62f3cb8a78daea160f190550c5",
+                "reading_raw": "",
+                "scope_reference": {
+                  "excerpt": "鎮座地　熊本県阿蘇郡西原村大字河原字門出750番地",
+                  "fetched_at": "2026-11-27T01:43:49.687439+00:00",
+                  "locator": "h1#cc-m-header-12245966891 と「鎮座地」の実欄",
+                  "municipality_raw": "熊本県阿蘇郡西原村",
+                  "name_raw": "白山姫神社",
+                  "page_hash": "b7e36f19a7acfe84ee42f24ad4b0409f9349806787d42b6a8f620cb271bd5468",
+                  "url": "https://shirayamahime.jimdofree.com/"
+                },
+                "source_kind": "nishihara_affiliated_shrine_table",
+                "source_publisher": "白山姫神社",
+                "url": "https://shirayamahime.jimdofree.com/%E5%85%BC%E5%8B%99%E7%A5%9E%E7%A4%BE-%E6%9D%91%E5%86%85/"
+              },
+              "registry_reference": {
+                "address_raw": "熊本県阿蘇郡西原村大字宮山４３９番地",
+                "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                "corporate_number": "1330005002627",
+                "csv_row": 7175,
+                "location_role": "principal_office",
+                "page_hash": "303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c",
+                "registry_state_proof": {
+                  "as_of": "20261030",
+                  "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                  "full_address_active_corporations": 1,
+                  "unique_active_corporate_number": "1330005002627"
+                },
+                "source_fields": {
+                  "addressImageId": "",
+                  "addressOutside": "",
+                  "addressOutsideImageId": "",
+                  "assignmentDate": "2015-10-05",
+                  "changeCause": "",
+                  "changeDate": "2015-10-05",
+                  "cityCode": "432",
+                  "cityName": "阿蘇郡西原村",
+                  "closeCause": "",
+                  "closeDate": "",
+                  "corporateNumber": "1330005002627",
+                  "correct": "0",
+                  "enAddressOutside": "",
+                  "enCityName": "",
+                  "enName": "",
+                  "enPrefectureName": "",
+                  "furigana": "",
+                  "hihyoji": "0",
+                  "kind": "399",
+                  "latest": "1",
+                  "name": "宮山神社",
+                  "nameImageId": "",
+                  "postCode": "8612405",
+                  "prefectureCode": "43",
+                  "prefectureName": "熊本県",
+                  "process": "01",
+                  "sequenceNumber": "7175",
+                  "streetNumber": "大字宮山４３９番地",
+                  "successorCorporateNumber": "",
+                  "updateDate": "2015-11-27"
+                },
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                "zip_member": "43_kumamoto_all_20261030.csv"
+              },
+              "status": "verified",
+              "supplement_kind": "kumamoto_documented_shrine_site"
+            }
+          },
           "listed_name": "宮山神社",
           "listing_occurrences": [
             {
@@ -118863,14 +119340,14 @@
             }
           ],
           "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "municipality": "",
+          "municipality": "阿蘇郡西原村",
           "name_raw": "宮山神社",
           "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%b1%b1%e7%a5%9e%e7%a4%be/",
           "official_site_url": null,
           "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
           "prefecture": "熊本県",
           "prefecture_code": "43",
-          "reason": "missing name, address or municipality",
+          "reason": "",
           "source_hash": "b16a993b2533cc190ec580acedb1cbcebcbab994db98d2109b33ca454a16746f",
           "source_key": "kumamoto",
           "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%b1%b1%e7%a5%9e%e7%a4%be/\"]",
@@ -118903,15 +119380,208 @@
             "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%ae%ae%e5%b1%b1%e7%a5%9e%e7%a4%be/\"]",
             "status": "pending"
           },
-          "status": "pending"
+          "status": "verified"
         },
         {
-          "address": "阿蘇郡小森386",
+          "address": "西原村小森386番地",
           "agency": "熊本県神社庁",
-          "checked_at": "2026-11-08T14:34:26.979623+00:00",
+          "checked_at": "2026-11-27T01:43:55.023438+00:00",
           "fetched_at": "2026-11-08T14:34:26.979623+00:00",
           "id": "b0b7d762-7f68-56c3-802d-54e65e528558",
-          "judgments": {},
+          "judgments": {
+            "locations": {
+              "agency_link": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡小森386",
+                "fetched_at": "2026-11-08T14:34:26.979623+00:00",
+                "href_raw": "https://kumamotokenjinjacho.jp/patron-god/%e5%b0%8f%e6%a3%ae%e7%a5%9e%e7%a4%be/",
+                "locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%b0%8f%e6%a3%ae%e7%a5%9e%e7%a4%be/\"]",
+                "name_raw": "小森神社",
+                "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/page/9/"
+              },
+              "agency_recheck": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡小森386",
+                "checked_at": "2026-11-27T01:44:03.890621+00:00",
+                "fetched_at": "2026-11-27T01:44:03.890621+00:00",
+                "locator": "氏神詳細の社名見出し・お住まいの地域欄",
+                "name_raw": "小森神社",
+                "page_hash": "566991bcb74e8391224aed6a4dd532f6b2aaa14d68ba341275c0d3f1f8ffaec9",
+                "role": "agency_search_area",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/%e5%b0%8f%e6%a3%ae%e7%a5%9e%e7%a4%be/"
+              },
+              "changes": {
+                "address": "西原村小森386番地",
+                "municipality": "阿蘇郡西原村"
+              },
+              "current_registry_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字小森３８６番地",
+                "address_role": "corporation_principal_office",
+                "checked_at": "2026-11-27T01:44:03.519675+00:00",
+                "corporate_number": "2330005002601",
+                "excerpt": "小森神社 ／ 熊本県阿蘇郡西原村大字小森３８６番地",
+                "fetched_at": "2026-11-27T01:44:03.519675+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "小森神社",
+                "page_hash": "40b056c61d27ce67963ddb425d6eed66fe83e43c56fb92459dda448d3d447bd6",
+                "published_fields": {
+                  "商号又は名称": "小森神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字小森３８６番地",
+                  "法人番号": "2330005002601"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2330005002601"
+              },
+              "entry_id": "0c7889a7-7c2f-5a5d-8ac0-68ce5d9e808b",
+              "expected_source_hash": "3f2010d69dd363de508adf1b052c892547366e47757db440176a921d308ce54a",
+              "facility_id": "b0b7d762-7f68-56c3-802d-54e65e528558",
+              "full_parcel": "386",
+              "national_individual_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字小森３８６番地",
+                "checked_at": "2026-11-27T01:44:03.519675+00:00",
+                "corporate_number": "2330005002601",
+                "excerpt": "小森神社 ／ 熊本県阿蘇郡西原村大字小森３８６番地",
+                "fetched_at": "2026-11-27T01:44:03.519675+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "小森神社",
+                "page_hash": "40b056c61d27ce67963ddb425d6eed66fe83e43c56fb92459dda448d3d447bd6",
+                "published_fields": {
+                  "商号又は名称": "小森神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字小森３８６番地",
+                  "法人番号": "2330005002601"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2330005002601"
+              },
+              "original": {
+                "address": "阿蘇郡小森386",
+                "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
+                "municipality": "",
+                "name_raw": "小森神社",
+                "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e5%b0%8f%e6%a3%ae%e7%a5%9e%e7%a4%be/",
+                "official_site_url": null
+              },
+              "other_references": [
+                {
+                  "address_raw": "西原村下小森",
+                  "checked_at": "2026-11-27T01:43:52.143188+00:00",
+                  "excerpt": "小森神社\n西原村下小森",
+                  "fetched_at": "2026-11-27T01:43:52.143188+00:00",
+                  "locator": "寺社調査表第9行、小森神社本殿の所在地",
+                  "name_raw": "小森神社",
+                  "page_hash": "0130db97476743734b5df3bfddbbd2667128f8c0e228af665e08e20459cb5538",
+                  "pdf_page": 32,
+                  "pdf_pages": 33,
+                  "role": "building_survey_no_parcel",
+                  "source_publisher": "公益財団法人松井角平記念財団の2016年度研究報告",
+                  "url": "https://www.matsui-ken.co.jp/zaidan/kakuhei-kinen/wp-content/uploads/2015/11/8eb50852a6f48d0ba146a47c19cedec0.pdf"
+                }
+              ],
+              "prefectural_registry_reference": {
+                "checked_at": "2026-11-26T08:31:35.868809+00:00",
+                "comparison_full_address": "熊本県阿蘇郡西原村小森386",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                "location_role": "principal_office",
+                "municipality_cell_raw": "阿蘇郡",
+                "name_raw": "小森神社",
+                "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+                "registered_office_cell_raw": "西原村小森386",
+                "row": 473,
+                "rows": 2802,
+                "scope": "名称、所在地町村欄、主たる事務所だけを使用。管理者名・個人情報なし。",
+                "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+              },
+              "reason": "公式兼務表に神社原名と鎮座地全地番が同じ行に明示。庁原地域と県・国税庁の事務所所在地と全地番比較。鎮座地の原欄は村名から始まるため、都道府県および郡の前置は別の明示行政文脈と照合する。",
+              "reference": {
+                "address_column_raw": "鎮座地",
+                "address_field": "鎮座地",
+                "address_raw": "西原村小森386番地",
+                "checked_at": "2026-11-27T01:43:55.023438+00:00",
+                "excerpt": "小森神社 ／ 西原村小森386番地",
+                "fetched_at": "2026-11-27T01:43:55.023438+00:00",
+                "location_role": "shrine",
+                "locator": "西原村内の兼務神社表 tr[2] 神社名・鎮座地セル",
+                "name_cell_raw": "小森神社　",
+                "name_raw": "小森神社",
+                "page_hash": "466ef624a6c4c76a3007e30f7ad28a36a5e6ed62f3cb8a78daea160f190550c5",
+                "reading_raw": "",
+                "scope_reference": {
+                  "excerpt": "鎮座地　熊本県阿蘇郡西原村大字河原字門出750番地",
+                  "fetched_at": "2026-11-27T01:43:49.687439+00:00",
+                  "locator": "h1#cc-m-header-12245966891 と「鎮座地」の実欄",
+                  "municipality_raw": "熊本県阿蘇郡西原村",
+                  "name_raw": "白山姫神社",
+                  "page_hash": "b7e36f19a7acfe84ee42f24ad4b0409f9349806787d42b6a8f620cb271bd5468",
+                  "url": "https://shirayamahime.jimdofree.com/"
+                },
+                "source_kind": "nishihara_affiliated_shrine_table",
+                "source_publisher": "白山姫神社",
+                "url": "https://shirayamahime.jimdofree.com/%E5%85%BC%E5%8B%99%E7%A5%9E%E7%A4%BE-%E6%9D%91%E5%86%85/"
+              },
+              "registry_reference": {
+                "address_raw": "熊本県阿蘇郡西原村大字小森３８６番地",
+                "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                "corporate_number": "2330005002601",
+                "csv_row": 15187,
+                "location_role": "principal_office",
+                "page_hash": "303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c",
+                "registry_state_proof": {
+                  "as_of": "20261030",
+                  "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                  "full_address_active_corporations": 1,
+                  "unique_active_corporate_number": "2330005002601"
+                },
+                "source_fields": {
+                  "addressImageId": "",
+                  "addressOutside": "",
+                  "addressOutsideImageId": "",
+                  "assignmentDate": "2015-10-05",
+                  "changeCause": "",
+                  "changeDate": "2015-10-05",
+                  "cityCode": "432",
+                  "cityName": "阿蘇郡西原村",
+                  "closeCause": "",
+                  "closeDate": "",
+                  "corporateNumber": "2330005002601",
+                  "correct": "0",
+                  "enAddressOutside": "",
+                  "enCityName": "",
+                  "enName": "",
+                  "enPrefectureName": "",
+                  "furigana": "",
+                  "hihyoji": "0",
+                  "kind": "399",
+                  "latest": "1",
+                  "name": "小森神社",
+                  "nameImageId": "",
+                  "postCode": "8612402",
+                  "prefectureCode": "43",
+                  "prefectureName": "熊本県",
+                  "process": "01",
+                  "sequenceNumber": "15187",
+                  "streetNumber": "大字小森３８６番地",
+                  "successorCorporateNumber": "",
+                  "updateDate": "2015-11-27"
+                },
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                "zip_member": "43_kumamoto_all_20261030.csv"
+              },
+              "status": "verified",
+              "supplement_kind": "kumamoto_documented_shrine_site"
+            }
+          },
           "listed_name": "小森神社",
           "listing_occurrences": [
             {
@@ -118922,14 +119592,14 @@
             }
           ],
           "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "municipality": "",
+          "municipality": "阿蘇郡西原村",
           "name_raw": "小森神社",
           "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e5%b0%8f%e6%a3%ae%e7%a5%9e%e7%a4%be/",
           "official_site_url": null,
           "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
           "prefecture": "熊本県",
           "prefecture_code": "43",
-          "reason": "missing name, address or municipality",
+          "reason": "",
           "source_hash": "3f2010d69dd363de508adf1b052c892547366e47757db440176a921d308ce54a",
           "source_key": "kumamoto",
           "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%b0%8f%e6%a3%ae%e7%a5%9e%e7%a4%be/\"]",
@@ -118962,15 +119632,208 @@
             "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e5%b0%8f%e6%a3%ae%e7%a5%9e%e7%a4%be/\"]",
             "status": "pending"
           },
-          "status": "pending"
+          "status": "verified"
         },
         {
-          "address": "阿蘇郡鳥子2608",
+          "address": "西原村鳥子2608番地",
           "agency": "熊本県神社庁",
-          "checked_at": "2026-11-08T14:34:26.979623+00:00",
+          "checked_at": "2026-11-27T01:43:55.023438+00:00",
           "fetched_at": "2026-11-08T14:34:26.979623+00:00",
           "id": "83b9836a-24f7-5fa6-9c72-28bc841e9ae7",
-          "judgments": {},
+          "judgments": {
+            "locations": {
+              "agency_link": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡鳥子2608",
+                "fetched_at": "2026-11-08T14:34:26.979623+00:00",
+                "href_raw": "https://kumamotokenjinjacho.jp/patron-god/%e9%b3%a5%e5%ad%90%e4%b8%89%e4%b9%8b%e5%ae%ae%e7%a5%9e%e7%a4%be/",
+                "locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e9%b3%a5%e5%ad%90%e4%b8%89%e4%b9%8b%e5%ae%ae%e7%a5%9e%e7%a4%be/\"]",
+                "name_raw": "鳥子三之宮神社",
+                "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/page/9/"
+              },
+              "agency_recheck": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡鳥子2608",
+                "checked_at": "2026-11-27T01:43:58.004789+00:00",
+                "fetched_at": "2026-11-27T01:43:58.004789+00:00",
+                "locator": "氏神詳細の社名見出し・お住まいの地域欄",
+                "name_raw": "鳥子三之宮神社",
+                "page_hash": "45c01ba9f382d4654ef3e99d1dbe48d6f624d084ae54c4c1a647ee0a8e9b991f",
+                "role": "agency_search_area",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/%e9%b3%a5%e5%ad%90%e4%b8%89%e4%b9%8b%e5%ae%ae%e7%a5%9e%e7%a4%be/"
+              },
+              "changes": {
+                "address": "西原村鳥子2608番地",
+                "municipality": "阿蘇郡西原村"
+              },
+              "current_registry_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字鳥子２６０８番地",
+                "address_role": "corporation_principal_office",
+                "checked_at": "2026-11-27T01:43:57.762434+00:00",
+                "corporate_number": "8330005002612",
+                "excerpt": "鳥子三之宮神社 ／ 熊本県阿蘇郡西原村大字鳥子２６０８番地",
+                "fetched_at": "2026-11-27T01:43:57.762434+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "鳥子三之宮神社",
+                "page_hash": "e5d02fe85681c6126b1b52064f9eb43e25ca849f2488d3ea6612fcaf04ada826",
+                "published_fields": {
+                  "商号又は名称": "鳥子三之宮神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字鳥子２６０８番地",
+                  "法人番号": "8330005002612"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8330005002612"
+              },
+              "entry_id": "960d0392-9dbb-59d3-b405-165846c01f20",
+              "expected_source_hash": "bb552e85bf81c8632adf03cdf77069c8775d39f4d02f2f4c9038bd96644a1845",
+              "facility_id": "83b9836a-24f7-5fa6-9c72-28bc841e9ae7",
+              "full_parcel": "2608",
+              "national_individual_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字鳥子２６０８番地",
+                "checked_at": "2026-11-27T01:43:57.762434+00:00",
+                "corporate_number": "8330005002612",
+                "excerpt": "鳥子三之宮神社 ／ 熊本県阿蘇郡西原村大字鳥子２６０８番地",
+                "fetched_at": "2026-11-27T01:43:57.762434+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "鳥子三之宮神社",
+                "page_hash": "e5d02fe85681c6126b1b52064f9eb43e25ca849f2488d3ea6612fcaf04ada826",
+                "published_fields": {
+                  "商号又は名称": "鳥子三之宮神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字鳥子２６０８番地",
+                  "法人番号": "8330005002612"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8330005002612"
+              },
+              "original": {
+                "address": "阿蘇郡鳥子2608",
+                "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
+                "municipality": "",
+                "name_raw": "鳥子三之宮神社",
+                "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e9%b3%a5%e5%ad%90%e4%b8%89%e4%b9%8b%e5%ae%ae%e7%a5%9e%e7%a4%be/",
+                "official_site_url": null
+              },
+              "other_references": [
+                {
+                  "address_raw": "鳥子地区",
+                  "address_scope": "district_not_parcel",
+                  "checked_at": "2026-11-27T01:43:56.500408+00:00",
+                  "fetched_at": "2026-11-27T01:43:56.500408+00:00",
+                  "inspection": "原画像に基づくOCRで見出しと位置説明の地区名を確認。全文かな・地番の原欄は見出せず。",
+                  "locator": "広報西原6月号 p15 地域おこし記事「鳥子三之宮神社」",
+                  "name_raw": "鳥子三之宮神社",
+                  "page_hash": "01971d0bff461e49d24a14b5c44d0f2c1455759e459c7778013aeed4c56e0fd5",
+                  "pdf_page": 15,
+                  "reading_raw": "",
+                  "source_publisher": "西原村",
+                  "url": "https://www.vill.nishihara.kumamoto.jp/kiji0031316/3_1316_shiryou1_ye1cx5wi.pdf"
+                }
+              ],
+              "prefectural_registry_reference": {
+                "checked_at": "2026-11-26T08:31:35.868809+00:00",
+                "comparison_full_address": "熊本県阿蘇郡西原村鳥子2608",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                "location_role": "principal_office",
+                "municipality_cell_raw": "阿蘇郡",
+                "name_raw": "鳥子三之宮神社",
+                "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+                "registered_office_cell_raw": "西原村鳥子2608",
+                "row": 921,
+                "rows": 2802,
+                "scope": "名称、所在地町村欄、主たる事務所だけを使用。管理者名・個人情報なし。",
+                "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+              },
+              "reason": "公式兼務表に神社原名と鎮座地全地番が同じ行に明示。庁原地域と県・国税庁の事務所所在地と全地番比較。鎮座地の原欄は村名から始まるため、都道府県および郡の前置は別の明示行政文脈と照合する。",
+              "reference": {
+                "address_column_raw": "鎮座地",
+                "address_field": "鎮座地",
+                "address_raw": "西原村鳥子2608番地",
+                "checked_at": "2026-11-27T01:43:55.023438+00:00",
+                "excerpt": "鳥子三之宮神社 ／ 西原村鳥子2608番地",
+                "fetched_at": "2026-11-27T01:43:55.023438+00:00",
+                "location_role": "shrine",
+                "locator": "西原村内の兼務神社表 tr[5] 神社名・鎮座地セル",
+                "name_cell_raw": "鳥子三之宮神社",
+                "name_raw": "鳥子三之宮神社",
+                "page_hash": "466ef624a6c4c76a3007e30f7ad28a36a5e6ed62f3cb8a78daea160f190550c5",
+                "reading_raw": "",
+                "scope_reference": {
+                  "excerpt": "鎮座地　熊本県阿蘇郡西原村大字河原字門出750番地",
+                  "fetched_at": "2026-11-27T01:43:49.687439+00:00",
+                  "locator": "h1#cc-m-header-12245966891 と「鎮座地」の実欄",
+                  "municipality_raw": "熊本県阿蘇郡西原村",
+                  "name_raw": "白山姫神社",
+                  "page_hash": "b7e36f19a7acfe84ee42f24ad4b0409f9349806787d42b6a8f620cb271bd5468",
+                  "url": "https://shirayamahime.jimdofree.com/"
+                },
+                "source_kind": "nishihara_affiliated_shrine_table",
+                "source_publisher": "白山姫神社",
+                "url": "https://shirayamahime.jimdofree.com/%E5%85%BC%E5%8B%99%E7%A5%9E%E7%A4%BE-%E6%9D%91%E5%86%85/"
+              },
+              "registry_reference": {
+                "address_raw": "熊本県阿蘇郡西原村大字鳥子２６０８番地",
+                "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                "corporate_number": "8330005002612",
+                "csv_row": 63361,
+                "location_role": "principal_office",
+                "page_hash": "303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c",
+                "registry_state_proof": {
+                  "as_of": "20261030",
+                  "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                  "full_address_active_corporations": 1,
+                  "unique_active_corporate_number": "8330005002612"
+                },
+                "source_fields": {
+                  "addressImageId": "",
+                  "addressOutside": "",
+                  "addressOutsideImageId": "",
+                  "assignmentDate": "2015-10-05",
+                  "changeCause": "",
+                  "changeDate": "2015-10-05",
+                  "cityCode": "432",
+                  "cityName": "阿蘇郡西原村",
+                  "closeCause": "",
+                  "closeDate": "",
+                  "corporateNumber": "8330005002612",
+                  "correct": "0",
+                  "enAddressOutside": "",
+                  "enCityName": "",
+                  "enName": "",
+                  "enPrefectureName": "",
+                  "furigana": "",
+                  "hihyoji": "0",
+                  "kind": "399",
+                  "latest": "1",
+                  "name": "鳥子三之宮神社",
+                  "nameImageId": "",
+                  "postCode": "8612401",
+                  "prefectureCode": "43",
+                  "prefectureName": "熊本県",
+                  "process": "01",
+                  "sequenceNumber": "63361",
+                  "streetNumber": "大字鳥子２６０８番地",
+                  "successorCorporateNumber": "",
+                  "updateDate": "2015-11-27"
+                },
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                "zip_member": "43_kumamoto_all_20261030.csv"
+              },
+              "status": "verified",
+              "supplement_kind": "kumamoto_documented_shrine_site"
+            }
+          },
           "listed_name": "鳥子三之宮神社",
           "listing_occurrences": [
             {
@@ -118981,14 +119844,14 @@
             }
           ],
           "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "municipality": "",
+          "municipality": "阿蘇郡西原村",
           "name_raw": "鳥子三之宮神社",
           "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e9%b3%a5%e5%ad%90%e4%b8%89%e4%b9%8b%e5%ae%ae%e7%a5%9e%e7%a4%be/",
           "official_site_url": null,
           "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
           "prefecture": "熊本県",
           "prefecture_code": "43",
-          "reason": "missing name, address or municipality",
+          "reason": "",
           "source_hash": "bb552e85bf81c8632adf03cdf77069c8775d39f4d02f2f4c9038bd96644a1845",
           "source_key": "kumamoto",
           "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e9%b3%a5%e5%ad%90%e4%b8%89%e4%b9%8b%e5%ae%ae%e7%a5%9e%e7%a4%be/\"]",
@@ -119021,7 +119884,7 @@
             "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e9%b3%a5%e5%ad%90%e4%b8%89%e4%b9%8b%e5%ae%ae%e7%a5%9e%e7%a4%be/\"]",
             "status": "pending"
           },
-          "status": "pending"
+          "status": "verified"
         },
         {
           "address": "阿蘇郡河原2852",
@@ -119142,12 +120005,301 @@
           "status": "pending"
         },
         {
-          "address": "阿蘇郡河原750",
+          "address": "熊本県阿蘇郡西原村大字河原字門出750番地",
           "agency": "熊本県神社庁",
-          "checked_at": "2026-11-08T14:34:26.979623+00:00",
+          "checked_at": "2026-11-27T01:43:49.687439+00:00",
           "fetched_at": "2026-11-08T14:34:26.979623+00:00",
           "id": "205f8e8f-c4ba-5767-987d-c5d8584f0a77",
-          "judgments": {},
+          "judgments": {
+            "locations": {
+              "agency_link": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡河原750",
+                "fetched_at": "2026-11-08T14:34:26.979623+00:00",
+                "href_raw": "https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/",
+                "locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/\"]",
+                "name_raw": "白山姫神社",
+                "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/page/9/"
+              },
+              "agency_recheck": {
+                "address_label": "お住まいの地域",
+                "area_raw": "阿蘇郡河原750",
+                "checked_at": "2026-11-27T01:43:55.024271+00:00",
+                "fetched_at": "2026-11-27T01:43:55.024271+00:00",
+                "locator": "氏神詳細の社名見出し・お住まいの地域欄",
+                "name_raw": "白山姫神社",
+                "page_hash": "f89bb7204c2ac6579a738e400b197cac6ab10a1d5ccb417a4025146a078dba14",
+                "role": "agency_search_area",
+                "url": "https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/"
+              },
+              "cadastral_hierarchy_reference": {
+                "checked_at": "2026-11-27T01:43:50.207002+00:00",
+                "excerpt": "平成13年度 ／ 河原 ／ 門出・古閑・平の一部",
+                "fetched_at": "2026-11-27T01:43:50.207002+00:00",
+                "koaza_cell_raw": "門出・古閑・平の一部",
+                "koaza_raw": "門出",
+                "locator": "調査地区の概要、平成13年度行の大字・小字列",
+                "oaza_raw": "河原",
+                "page_hash": "3ae2c201922421004eeb1b25c369702bf85fa402a73ce21630d1d60de52cfaae",
+                "role": "municipal_cadastral_hierarchy",
+                "source_publisher": "西原村建設課",
+                "url": "https://www.vill.nishihara.kumamoto.jp/kiji003204/index.html"
+              },
+              "changes": {
+                "address": "熊本県阿蘇郡西原村大字河原字門出750番地",
+                "municipality": "阿蘇郡西原村"
+              },
+              "current_registry_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                "address_role": "corporation_principal_office",
+                "checked_at": "2026-11-27T01:43:54.868808+00:00",
+                "corporate_number": "4330005002608",
+                "excerpt": "白山姫神社 ／ 熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                "fetched_at": "2026-11-27T01:43:54.868808+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "白山姫神社",
+                "page_hash": "e60675c97eebfc2af71ec45036ff1f4e66ce20192bd1617cdec42d662c7c9b36",
+                "published_fields": {
+                  "商号又は名称": "白山姫神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                  "法人番号": "4330005002608"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4330005002608"
+              },
+              "entry_id": "eff3a564-4539-5b47-8a6a-7e53c5d9bcfb",
+              "expected_source_hash": "f52164800910b5d9f987119cbd8cbf2271e7d94866cfcb6aef7ab7cc4c8f90aa",
+              "facility_id": "205f8e8f-c4ba-5767-987d-c5d8584f0a77",
+              "full_parcel": "750",
+              "locality_reference": {
+                "address_raw": "熊本県阿蘇郡西原村大字河原字門出９１８番４",
+                "checked_at": "2026-11-27T01:43:53.230055+00:00",
+                "excerpt": "熊本県阿蘇郡西原村大字河原字門出９１８番４\n門出",
+                "fetched_at": "2026-11-27T01:43:53.230055+00:00",
+                "koaza_raw": "門出",
+                "locator": "物件番号2の売払物件・地番欄",
+                "oaza_raw": "河原",
+                "page_hash": "95bb337e3ec58905054dff5922c5c00a705eb1978ac00ba2c72ed355e1ad0333",
+                "pdf_page": 1,
+                "pdf_pages": 1,
+                "role": "independent_hierarchy_other_parcel",
+                "source_publisher": "西原村",
+                "url": "https://www.vill.nishihara.kumamoto.jp/kiji0031018/3_1018_1033_up_kzkb3zs0.pdf"
+              },
+              "national_individual_reference": {
+                "address_column_raw": "本店又は主たる事務所の所在地",
+                "address_raw": "熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                "checked_at": "2026-11-27T01:43:54.868808+00:00",
+                "corporate_number": "4330005002608",
+                "excerpt": "白山姫神社 ／ 熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                "fetched_at": "2026-11-27T01:43:54.868808+00:00",
+                "location_role": "principal_office",
+                "locator": "最新情報の商号又は名称／本店又は主たる事務所の所在地",
+                "name_raw": "白山姫神社",
+                "page_hash": "e60675c97eebfc2af71ec45036ff1f4e66ce20192bd1617cdec42d662c7c9b36",
+                "published_fields": {
+                  "商号又は名称": "白山姫神社",
+                  "最終更新年月日": "平成27年11月27日",
+                  "本店又は主たる事務所の所在地": "熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                  "法人番号": "4330005002608"
+                },
+                "reading_raw": "",
+                "source_publisher": "国税庁",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4330005002608"
+              },
+              "original": {
+                "address": "阿蘇郡河原750",
+                "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
+                "municipality": "",
+                "name_raw": "白山姫神社",
+                "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/",
+                "official_site_url": null
+              },
+              "other_references": [
+                {
+                  "address_raw": "熊本県阿蘇郡西原村河原750",
+                  "checked_at": "2026-11-27T01:43:48.016032+00:00",
+                  "excerpt": "白山姫神社 ／ 熊本県阿蘇郡西原村河原750",
+                  "fetched_at": "2026-11-27T01:43:48.016032+00:00",
+                  "href_raw": "https://shirayamahime.jimdofree.com/",
+                  "location_role": "shrine",
+                  "locator": "施設案内の店名・住所・HP欄",
+                  "name_raw": "白山姫神社",
+                  "page_hash": "4e6840ffa39c3fe4c2dc24b53a85a767dfbfd615daaa59d6cc432c96d09c5678",
+                  "source_kind": "municipal_tourism_association",
+                  "source_publisher": "西原村観光協会",
+                  "url": "https://nishiharakanko.com/shirayamahime/"
+                },
+                {
+                  "address_raw": "熊本県阿蘇郡西原村河原750",
+                  "checked_at": "2026-11-27T01:45:40.733307+00:00",
+                  "excerpt": "白山姫神社 ／ 熊本県阿蘇郡西原村河原750",
+                  "fetched_at": "2026-11-27T01:45:40.733307+00:00",
+                  "locator": "2023年3月記事の神社所在地と前面バス停の説明",
+                  "name_raw": "白山姫神社",
+                  "observed_name_raw": "門出",
+                  "observed_reading_raw": "もんで",
+                  "page_hash": "fb7a2957e1cc6cc9a091056f95f7a862b75dc1dbbea580a80678c296cabc1085",
+                  "place_role": "bus_stop_near_shrine",
+                  "source_publisher": "西原村観光協会",
+                  "url": "https://nishiharakanko.com/kadode-prayer/"
+                },
+                {
+                  "checked_at": "2026-11-27T01:43:50.207002+00:00",
+                  "excerpt": "平成13年度 ／ 河原 ／ 門出・古閑・平の一部",
+                  "fetched_at": "2026-11-27T01:43:50.207002+00:00",
+                  "koaza_cell_raw": "門出・古閑・平の一部",
+                  "koaza_raw": "門出",
+                  "locator": "調査地区の概要、平成13年度行の大字・小字列",
+                  "oaza_raw": "河原",
+                  "page_hash": "3ae2c201922421004eeb1b25c369702bf85fa402a73ce21630d1d60de52cfaae",
+                  "role": "municipal_cadastral_hierarchy",
+                  "source_publisher": "西原村建設課",
+                  "url": "https://www.vill.nishihara.kumamoto.jp/kiji003204/index.html"
+                },
+                {
+                  "address_raw": "熊本県阿蘇郡西原村大字河原字門出９１８番４",
+                  "checked_at": "2026-11-27T01:43:53.230055+00:00",
+                  "excerpt": "熊本県阿蘇郡西原村大字河原字門出９１８番４\n門出",
+                  "fetched_at": "2026-11-27T01:43:53.230055+00:00",
+                  "locator": "物件番号2の売払物件・地番欄",
+                  "page_hash": "95bb337e3ec58905054dff5922c5c00a705eb1978ac00ba2c72ed355e1ad0333",
+                  "pdf_page": 1,
+                  "pdf_pages": 1,
+                  "role": "independent_hierarchy_other_parcel",
+                  "source_publisher": "西原村",
+                  "url": "https://www.vill.nishihara.kumamoto.jp/kiji0031018/3_1018_1033_up_kzkb3zs0.pdf"
+                },
+                {
+                  "address_raw": "熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                  "address_role": "disaster_program_corporate_address",
+                  "checked_at": "2026-11-27T01:45:42.681888+00:00",
+                  "excerpt": "宗教法人 白山姫神社\n熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                  "fetched_at": "2026-11-27T01:45:42.681888+00:00",
+                  "locator": "指定寄附金対象法人の名称・所在地・復旧事業欄",
+                  "name_raw": "宗教法人 白山姫神社",
+                  "page_hash": "350de33ddd44f67e1afb5b5ebddf0d7c1bd30d32e803da113f9601274ef0da9d",
+                  "pdf_page": 2,
+                  "pdf_pages": 3,
+                  "project_role": "鳥居・玉垣の原状回復",
+                  "source_publisher": "財務省",
+                  "url": "https://www.mof.go.jp/tax_policy/161212houjin-ichiran.pdf"
+                },
+                {
+                  "address_raw": "阿蘇郡西原村大字河原字門出750番地",
+                  "address_role": "disaster_program_corporate_address",
+                  "checked_at": "2026-11-27T01:43:46.963272+00:00",
+                  "excerpt": "白山姫神社 ／ 阿蘇郡西原村大字河原字門出750番地",
+                  "fetched_at": "2026-11-27T01:43:46.963272+00:00",
+                  "locator": "指定寄附金宗教法人 16 行",
+                  "name_raw": "白山姫神社",
+                  "page_hash": "54e8c1410ebe1d4aa9212578d6e6f30686dcd8a9128fd60feacfcc228ae4334f",
+                  "source_publisher": "熊本県",
+                  "url": "https://www.pref.kumamoto.jp/soshiki/11/2581.html"
+                },
+                {
+                  "checked_at": "2026-11-27T01:46:25.861376+00:00",
+                  "fetched_at": "2026-11-27T01:46:25.861376+00:00",
+                  "locator": "概要のフッターの著作権表示",
+                  "page_hash": "a4581de6c730ac1800d7198d734ee9937d2fe1173d7bffdda748c29e9ba54dac",
+                  "rights_note": "公式トップの記事・写真・イラスト等は無断複写・転載禁止。神社名・読み・住所・当事者が公表したリンクの事実のみ。",
+                  "source_publisher": "白山姫神社",
+                  "url": "https://shirayamahime.jimdofree.com/about/"
+                }
+              ],
+              "prefectural_registry_reference": {
+                "checked_at": "2026-11-26T08:31:35.868809+00:00",
+                "comparison_full_address": "熊本県阿蘇郡西原村河原750",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                "location_role": "principal_office",
+                "municipality_cell_raw": "阿蘇郡",
+                "name_raw": "白山姫神社",
+                "page_hash": "42942893faf1cde925b817441f1228951f7bd044b8c0302c6553a676ba1cd612",
+                "registered_office_cell_raw": "西原村河原750",
+                "row": 1014,
+                "rows": 2802,
+                "scope": "名称、所在地町村欄、主たる事務所だけを使用。管理者名・個人情報なし。",
+                "url": "https://data.bodik.jp/dataset/d8ad9958-6493-4ddd-96f7-d15e4a00c0ef/resource/5c7a5bbb-b91a-4af1-a5e0-679ee25f6716/download"
+              },
+              "reason": "原地域は郡・大字本体・地番のみ。市町村も小字も推定で補わず、白山姫神社の短住所を実掲示する観光協会が公式へのhrefを明示し、同社の鎮座地・県指定寄附・国税庁が大字河原字門出750。西原村地籍表が河原の小字である門出の所属を確認。字付きの原鎮座地を採用値の候補にする。",
+              "reference": {
+                "address_column_raw": "鎮座地",
+                "address_field": "鎮座地",
+                "address_raw": "熊本県阿蘇郡西原村大字河原字門出750番地",
+                "checked_at": "2026-11-27T01:43:49.687439+00:00",
+                "excerpt": "白山姫神社　しらやまひめじんじゃ ／ 鎮座地　熊本県阿蘇郡西原村大字河原字門出750番地",
+                "fetched_at": "2026-11-27T01:43:49.687439+00:00",
+                "location_role": "shrine",
+                "locator": "h1#cc-m-header-12245966891 と「鎮座地」の実欄",
+                "name_raw": "白山姫神社",
+                "page_hash": "b7e36f19a7acfe84ee42f24ad4b0409f9349806787d42b6a8f620cb271bd5468",
+                "reading_raw": "しらやまひめじんじゃ",
+                "reading_scope": "full_name",
+                "source_kind": "nishihara_shrine_site",
+                "source_publisher": "白山姫神社",
+                "title": "白山姫神社",
+                "url": "https://shirayamahime.jimdofree.com/"
+              },
+              "registry_reference": {
+                "address_raw": "熊本県阿蘇郡西原村大字河原字門出７５０番地",
+                "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                "corporate_number": "4330005002608",
+                "csv_row": 31171,
+                "location_role": "principal_office",
+                "page_hash": "303c65d1a53566dadb68bcab585e11f61e4a975bdda1b764b58e73f911a08f5c",
+                "registry_state_proof": {
+                  "as_of": "20261030",
+                  "checked_at": "2026-11-24T03:34:21.091536+00:00",
+                  "full_address_active_corporations": 1,
+                  "unique_active_corporate_number": "4330005002608"
+                },
+                "source_fields": {
+                  "addressImageId": "",
+                  "addressOutside": "",
+                  "addressOutsideImageId": "",
+                  "assignmentDate": "2015-10-05",
+                  "changeCause": "",
+                  "changeDate": "2015-10-05",
+                  "cityCode": "432",
+                  "cityName": "阿蘇郡西原村",
+                  "closeCause": "",
+                  "closeDate": "",
+                  "corporateNumber": "4330005002608",
+                  "correct": "0",
+                  "enAddressOutside": "",
+                  "enCityName": "",
+                  "enName": "",
+                  "enPrefectureName": "",
+                  "furigana": "",
+                  "hihyoji": "0",
+                  "kind": "399",
+                  "latest": "1",
+                  "name": "白山姫神社",
+                  "nameImageId": "",
+                  "postCode": "8612404",
+                  "prefectureCode": "43",
+                  "prefectureName": "熊本県",
+                  "process": "01",
+                  "sequenceNumber": "31171",
+                  "streetNumber": "大字河原字門出７５０番地",
+                  "successorCorporateNumber": "",
+                  "updateDate": "2015-11-27"
+                },
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                "zip_member": "43_kumamoto_all_20261030.csv"
+              },
+              "status": "verified",
+              "supplement_kind": "kumamoto_documented_shrine_site"
+            }
+          },
           "listed_name": "白山姫神社",
           "listing_occurrences": [
             {
@@ -119158,14 +120310,14 @@
             }
           ],
           "listing_url": "https://kumamotokenjinjacho.jp/patron-god/page/9/",
-          "municipality": "",
+          "municipality": "阿蘇郡西原村",
           "name_raw": "白山姫神社",
           "native_source_id": "https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/",
           "official_site_url": null,
           "page_hash": "68837e930862c15c709cf01bee8c9b8249b355fa5309f8368f0ddba2cbe34a7f",
           "prefecture": "熊本県",
           "prefecture_code": "43",
-          "reason": "missing name, address or municipality",
+          "reason": "",
           "source_hash": "f52164800910b5d9f987119cbd8cbf2271e7d94866cfcb6aef7ab7cc4c8f90aa",
           "source_key": "kumamoto",
           "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/\"]",
@@ -119198,7 +120350,7 @@
             "source_locator": "table.c-table tr a[href=\"https://kumamotokenjinjacho.jp/patron-god/%e7%99%bd%e5%b1%b1%e5%a7%ab%e7%a5%9e%e7%a4%be/\"]",
             "status": "pending"
           },
-          "status": "pending"
+          "status": "verified"
         },
         {
           "address": "阿蘇郡黒渕1710",

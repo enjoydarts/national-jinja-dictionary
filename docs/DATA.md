@@ -259,6 +259,8 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 大口町替地の天神社は、庁の公開検索で掲載ID、原かな、町名と2丁目305番地、街字空欄を再確認しました。現地記録と国税庁個票の替地2丁目305番地を照合して、住所だけを採用値へ補完しました。原住所と町名、全文かなを保持し、秋田3の同名社と区別します。[大口町の神社庁検索](https://www.aichi-jinjacho.or.jp/search_result.html?addr=%E5%A4%A7%E5%8F%A3%E7%94%BA)・[替地の天神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3180005009256)
 
+西原村の白山姫神社は、神社庁の氏子地域「阿蘇郡河原750」、社公式の「大字河原字門出750番地」、国税庁の全地番を照合しました。村の地籍調査表で大字河原に属する小字「門出」を確認しました。社公式の兼務神社表は所在地の見出しが「鎮座地」です。同表の小森・布田・鳥子・宮山の4件では、同じ全地番を県名簿・法人資料・庁の氏子地域と比較し、表の原住所と自治体名を保持します。[白山姫神社公式](https://shirayamahime.jimdofree.com/)・[西原村の地籍調査](https://www.vill.nishihara.kumamoto.jp/kiji003204/index.html)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行
