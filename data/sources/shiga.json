@@ -84935,12 +84935,111 @@
           "surface": "猿田彦神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:54.645539+00:00",
+          "checked_at": "2026-11-27T05:37:08.672350+00:00",
           "evidence": "〔草津・栗東〕 治田神社 〒5250056 草津市南笠町",
           "facility_id": "072ec242-bbd6-5278-8442-728878bf5e1d",
           "fetched_at": "2026-11-08T14:30:54.645539+00:00",
           "id": "ff0d93c5-88af-5635-a43e-5c350f0284da",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はるたじんじゃ"
+              },
+              "expected_source_hash": "63044580c170bdd53001fd228399da6492d17034c1d98047e8d6ae5451e57331",
+              "facility_id": "072ec242-bbd6-5278-8442-728878bf5e1d",
+              "identity_match": {
+                "agency_address_raw": "滋賀県草津市南笠町925",
+                "description": "県文化財保護協会が南笠町の治田神社への案内にまめバス停留所を明示。公開GTFSの現在名「治田神社」、南笠町の境界内の座標、神社庁の南笠町925を照合。",
+                "source_listing_address_raw": "草津市南笠町",
+                "stop_note": "南笠町の町域境界と停留所表示の座標を照合。"
+              },
+              "original": {
+                "address": "草津市南笠町",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=4",
+                "name_raw": "治田神社",
+                "reading_raw": ""
+              },
+              "reason": "県・市町の公開GTFSに、社名と同じ停留所名に対応する全文かなを確認。",
+              "references": [
+                {
+                  "attribution": "滋賀県交通戦略課・各市町の配布データから停留所・全文かなの原欄を抽出",
+                  "checked_at": "2026-11-27T05:37:08.672350+00:00",
+                  "distribution_url": "https://data.bodik.jp/dataset/250007_shiga-gtfs",
+                  "excerpt": "stop_name=治田神社 ／ record_id=1450_02 ／ translation=はるたじんじゃ",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "translations.txt 39行 ja-Hrkt、対応するstops.txt 37行",
+                  "name_raw": "治田神社",
+                  "operator_row": {
+                    "active_period": {
+                      "feed_end_date": "20270331",
+                      "feed_start_date": "20260301"
+                    },
+                    "stops_raw": {
+                      "stop_desc": "",
+                      "stop_id": "1450_02",
+                      "stop_lat": "35.001516",
+                      "stop_lon": "135.9371938",
+                      "stop_name": "治田神社"
+                    },
+                    "translation_raw": {
+                      "field_name": "stop_name",
+                      "field_value": "",
+                      "language": "ja-Hrkt",
+                      "record_id": "1450_02",
+                      "record_sub_id": "",
+                      "table_name": "stops",
+                      "translation": "はるたじんじゃ"
+                    }
+                  },
+                  "page_hash": "57650d2853a2f9cae3f9b6b7de09a29b438547dbbeffdaad2504a694b0689840",
+                  "reading_raw": "はるたじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "transit_operator_gtfs",
+                  "terms_url": "https://odcs.bodik.jp/250007/tos/",
+                  "title": "滋賀県 標準的なバス情報フォーマット（GTFS準拠）草津市",
+                  "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/e4ea2950-0943-4591-93d7-2dbaf78fc9dc/download/gtfsjp__260301.zip"
+                },
+                {
+                  "address_raw": "滋賀県草津市南笠町925",
+                  "address_role": "enshrined_site",
+                  "checked_at": "2026-11-27T05:39:12.515235+00:00",
+                  "excerpt": "治田神社（ハルタ） ／ 滋賀県草津市南笠町925",
+                  "locator": "神社名・鎮座地欄",
+                  "name_raw": "治田神社",
+                  "page_hash": "5fe951fc518c890669e7184085b9aa5c98950b4fadb6f94eeb60a2b41c554fd7",
+                  "reading_raw": "ハルタ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "title": "滋賀県神社庁 神社紹介",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=346"
+                },
+                {
+                  "address_raw": "草津市南笠町",
+                  "checked_at": "2026-11-27T05:39:23.664519+00:00",
+                  "excerpt": "草津市南笠町治田神社 ／ 治田神社前",
+                  "locator": "冒頭の鎮座地と末尾のまめバス案内",
+                  "name_raw": "治田神社",
+                  "page_hash": "b2549fdf57f10e75f2b8ec322f880fbc59367facef6f5c1cb05536149bc43cf8",
+                  "source_kind": "prefectural_research_site_visit",
+                  "title": "滋賀県文化財保護協会 新近江名所圖會 第381回",
+                  "url": "https://www.shiga-bunkazai.jp/shigabun-shinbun/best-place-in-shiga/meisyozue381/"
+                },
+                {
+                  "attribution": "『国勢調査町丁・字等別境界データセット』（CODH作成） 「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工 doi:10.20676/00000450",
+                  "checked_at": "2026-11-27T05:40:32.431016+00:00",
+                  "excerpt": "KEY_CODE=252060443 ／ S_NAME=南笠町",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "令和2年町丁・字等別境界の地物属性",
+                  "name_raw": "南笠町",
+                  "page_hash": "5d6134dfff04a9693bd7870d61b66efacb59f607711d21fc740c8c0ecc7eb39d",
+                  "source_kind": "census_town_geometry",
+                  "title": "国勢調査町丁・字等別境界データセット",
+                  "url": "https://geoshape.ex.nii.ac.jp/ka/topojson/2020/25/r2ka25206.topojson"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=4",
           "name_raw": "治田神社",
           "normalization": [
@@ -84948,11 +85047,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "533c79b80f49877546c13c3ce53992aa532f6824bac89202be6f6af0b402aacf",
-          "reading": "",
+          "reading": "はるたじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=4",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/e4ea2950-0943-4591-93d7-2dbaf78fc9dc/download/gtfsjp__260301.zip",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -85074,6 +85173,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はるたじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はるたじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "治田神社",
             "wikipedia_article_refs": [],
@@ -85104,7 +85217,7 @@
             "status": "pending",
             "surface": "治田神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "治田神社"
         },
         {
@@ -127598,12 +127711,110 @@
           "surface": "火頭古神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:00.019402+00:00",
+          "checked_at": "2026-11-27T05:37:22.650761+00:00",
           "evidence": "〔甲賀〕 熊野神社 〒5280206 甲賀市土山町山中",
           "facility_id": "253f736b-b37e-50b4-ba46-a777ce963934",
           "fetched_at": "2026-11-08T14:31:00.019402+00:00",
           "id": "42491ea0-a201-5aab-9437-f6418d2e6da8",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "くまのじんじゃ"
+              },
+              "expected_source_hash": "f5b440f2de3ba0a69328fa613523815b384d1f3856e796314f47ef49a05fc39d",
+              "facility_id": "253f736b-b37e-50b4-ba46-a777ce963934",
+              "identity_match": {
+                "agency_address_raw": "滋賀県甲賀市土山町山中194",
+                "description": "停留所は国勢調査2020年の土山町山中にあり、神社庁の山中194と法人個票の山中第194番地が一致。大澤276の同名社と区別。",
+                "source_listing_address_raw": "甲賀市土山町山中",
+                "stop_note": "山中の町域境界と停留所表示の座標を照合。"
+              },
+              "original": {
+                "address": "甲賀市土山町山中",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
+                "name_raw": "熊野神社",
+                "reading_raw": ""
+              },
+              "reason": "県・市町の公開GTFSに、社名と同じ停留所名に対応する全文かなを確認。",
+              "references": [
+                {
+                  "attribution": "滋賀県交通戦略課・各市町の配布データから停留所・全文かなの原欄を抽出",
+                  "checked_at": "2026-11-27T05:37:22.650761+00:00",
+                  "distribution_url": "https://data.bodik.jp/dataset/250007_shiga-gtfs",
+                  "excerpt": "field_value=熊野神社 ／ translation=くまのじんじゃ",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "translations.txt 562行 ja-Hrkt、対応するstops.txt 378行",
+                  "name_raw": "熊野神社",
+                  "operator_row": {
+                    "active_period": {
+                      "feed_end_date": "20270331",
+                      "feed_start_date": "20260401"
+                    },
+                    "stops_raw": {
+                      "stop_id": "382_1",
+                      "stop_lat": "34.905256",
+                      "stop_lon": "136.331475",
+                      "stop_name": "熊野神社"
+                    },
+                    "translation_raw": {
+                      "field_name": "stop_name",
+                      "field_value": "熊野神社",
+                      "language": "ja-Hrkt",
+                      "record_id": "",
+                      "table_name": "stops",
+                      "translation": "くまのじんじゃ"
+                    }
+                  },
+                  "page_hash": "33db4bcdad67819498aa551c628ae49ab73367d9264291d5f0de09c437aa0144",
+                  "reading_raw": "くまのじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "transit_operator_gtfs",
+                  "terms_url": "https://odcs.bodik.jp/250007/tos/",
+                  "title": "滋賀県 標準的なバス情報フォーマット（GTFS準拠）甲賀市",
+                  "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/1748c826-cdb3-4e42-af85-6b8781a4aaff/download/r8.4.1gtfs.zip"
+                },
+                {
+                  "address_raw": "滋賀県甲賀市土山町山中194",
+                  "address_role": "enshrined_site",
+                  "checked_at": "2026-11-27T05:39:33.716738+00:00",
+                  "excerpt": "熊野神社（クマノ） ／ 滋賀県甲賀市土山町山中194",
+                  "locator": "神社名・鎮座地欄",
+                  "name_raw": "熊野神社",
+                  "page_hash": "e250e69c0c3f8ac7617e2be222eb29ebab619a58031de2ef7ec9d0eb3bbd9648",
+                  "reading_raw": "クマノ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "title": "滋賀県神社庁 神社紹介",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=585"
+                },
+                {
+                  "address_raw": "滋賀県甲賀市土山町山中第１９４番地",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T05:42:22.000083+00:00",
+                  "excerpt": "熊野神社 ／ 滋賀県甲賀市土山町山中第１９４番地",
+                  "locator": "最新情報の商号又は名称と本店又は主たる事務所の所在地",
+                  "name_raw": "熊野神社",
+                  "page_hash": "ba22e99db6d9fd7121b3d5da86a11700f220b76198a97c07e2f4ae631480fa27",
+                  "source_kind": "government_corporate_profile",
+                  "title": "国税庁法人番号公表サイト 熊野神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7160005002812"
+                },
+                {
+                  "attribution": "『国勢調査町丁・字等別境界データセット』（CODH作成） 「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工 doi:10.20676/00000450",
+                  "checked_at": "2026-11-27T04:57:14.652020+00:00",
+                  "excerpt": "KEY_CODE=252090710 ／ S_NAME=山中",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "令和2年町丁・字等別境界の地物属性",
+                  "name_raw": "山中",
+                  "page_hash": "408da548a4b8edd79df02744aed5e2b3aaa09af1d34a8f20e6023b7f0acb4d96",
+                  "source_kind": "census_town_geometry",
+                  "title": "国勢調査町丁・字等別境界データセット",
+                  "url": "https://geoshape.ex.nii.ac.jp/ka/topojson/2020/25/r2ka25209.topojson"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
           "name_raw": "熊野神社",
           "normalization": [
@@ -127611,11 +127822,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "622fcc202708e55df76e5b4f2d72410b7952760147933f0754b8035efd8ebdb1",
-          "reading": "",
+          "reading": "くまのじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=6",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/1748c826-cdb3-4e42-af85-6b8781a4aaff/download/r8.4.1gtfs.zip",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -127764,6 +127975,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "くまのじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "くまのじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "熊野神社",
             "wikipedia_article_refs": [
@@ -127803,7 +128028,7 @@
             "status": "pending",
             "surface": "熊野神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "熊野神社"
         },
         {
@@ -130795,12 +131020,109 @@
           "surface": "日吉神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:03.691847+00:00",
+          "checked_at": "2026-11-27T05:37:22.650761+00:00",
           "evidence": "〔甲賀〕 椿神社 〒5203405 甲賀市甲賀町隠岐",
           "facility_id": "f8518be9-4cf8-58f4-8ec8-df5f57738803",
           "fetched_at": "2026-11-08T14:31:03.691847+00:00",
           "id": "7b44fdc4-7d9b-526c-a9e0-4c833cf3e919",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "つばきじんじゃ"
+              },
+              "expected_source_hash": "b65680c5d79115eba78d653630828afbfd59854cf9c49424e119b9bb1957b5d7",
+              "facility_id": "f8518be9-4cf8-58f4-8ec8-df5f57738803",
+              "identity_match": {
+                "agency_address_raw": "滋賀県甲賀市甲賀町隠岐2075",
+                "description": "甲賀市内の停留所は隠岐の境界内。市の文化財資料と神社庁が、同じ隠岐2075の椿神社を特定。",
+                "source_listing_address_raw": "甲賀市甲賀町隠岐",
+                "stop_note": "隠岐の町域境界と停留所表示の座標を照合。"
+              },
+              "original": {
+                "address": "甲賀市甲賀町隠岐",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=7",
+                "name_raw": "椿神社",
+                "reading_raw": ""
+              },
+              "reason": "県・市町の公開GTFSに、社名と同じ停留所名に対応する全文かなを確認。",
+              "references": [
+                {
+                  "attribution": "滋賀県交通戦略課・各市町の配布データから停留所・全文かなの原欄を抽出",
+                  "checked_at": "2026-11-27T05:37:22.650761+00:00",
+                  "distribution_url": "https://data.bodik.jp/dataset/250007_shiga-gtfs",
+                  "excerpt": "field_value=椿神社 ／ translation=つばきじんじゃ",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "translations.txt 264行 ja-Hrkt、対応するstops.txt 197行",
+                  "name_raw": "椿神社",
+                  "operator_row": {
+                    "active_period": {
+                      "feed_end_date": "20270331",
+                      "feed_start_date": "20260401"
+                    },
+                    "stops_raw": {
+                      "stop_id": "205_0",
+                      "stop_lat": "34.931805",
+                      "stop_lon": "136.197753",
+                      "stop_name": "椿神社"
+                    },
+                    "translation_raw": {
+                      "field_name": "stop_name",
+                      "field_value": "椿神社",
+                      "language": "ja-Hrkt",
+                      "record_id": "",
+                      "table_name": "stops",
+                      "translation": "つばきじんじゃ"
+                    }
+                  },
+                  "page_hash": "33db4bcdad67819498aa551c628ae49ab73367d9264291d5f0de09c437aa0144",
+                  "reading_raw": "つばきじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "transit_operator_gtfs",
+                  "terms_url": "https://odcs.bodik.jp/250007/tos/",
+                  "title": "滋賀県 標準的なバス情報フォーマット（GTFS準拠）甲賀市",
+                  "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/1748c826-cdb3-4e42-af85-6b8781a4aaff/download/r8.4.1gtfs.zip"
+                },
+                {
+                  "address_raw": "滋賀県甲賀市甲賀町隠岐2075",
+                  "address_role": "enshrined_site",
+                  "checked_at": "2026-11-27T05:39:26.047004+00:00",
+                  "excerpt": "椿神社（ツバキ） ／ 滋賀県甲賀市甲賀町隠岐2075",
+                  "locator": "神社名・鎮座地欄",
+                  "name_raw": "椿神社",
+                  "page_hash": "cb49b0ebd2609f5d7d47acef97413e6a456deee970d977c97983b1e6593a2ec0",
+                  "reading_raw": "ツバキ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "title": "滋賀県神社庁 神社紹介",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=605"
+                },
+                {
+                  "address_raw": "甲賀市甲賀町隠岐2075番地",
+                  "checked_at": "2026-11-27T05:39:31.564172+00:00",
+                  "excerpt": "椿神社の流鏑馬神事 ／ 甲賀市甲賀町隠岐2075番地",
+                  "locator": "PDF第11頁 表5-3項目35、名称と住所欄",
+                  "name_raw": "椿神社の流鏑馬神事",
+                  "page_hash": "2672a91c9496a47b75c5cae0b1efa94915f9ba96ca5edb1b813efa1b58dc6893",
+                  "source_kind": "municipal_reference",
+                  "title": "甲賀市 佐山自治振興会区域の資料",
+                  "url": "https://www.city.koka.lg.jp/secure/25290/13sayama.pdf"
+                },
+                {
+                  "attribution": "『国勢調査町丁・字等別境界データセット』（CODH作成） 「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工 doi:10.20676/00000450",
+                  "checked_at": "2026-11-27T04:57:14.652020+00:00",
+                  "excerpt": "KEY_CODE=252091050 ／ S_NAME=隠岐",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "令和2年町丁・字等別境界の地物属性",
+                  "name_raw": "隠岐",
+                  "page_hash": "408da548a4b8edd79df02744aed5e2b3aaa09af1d34a8f20e6023b7f0acb4d96",
+                  "source_kind": "census_town_geometry",
+                  "title": "国勢調査町丁・字等別境界データセット",
+                  "url": "https://geoshape.ex.nii.ac.jp/ka/topojson/2020/25/r2ka25209.topojson"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=7",
           "name_raw": "椿神社",
           "normalization": [
@@ -130808,11 +131130,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "35478f71f2346d220a814aadcc90982957a8b44c396f2931e0094effd0697086",
-          "reading": "",
+          "reading": "つばきじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=7",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/1748c826-cdb3-4e42-af85-6b8781a4aaff/download/r8.4.1gtfs.zip",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -130934,6 +131256,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "つばきじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "つばきじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "椿神社",
             "wikipedia_article_refs": [],
@@ -130964,7 +131300,7 @@
             "status": "pending",
             "surface": "椿神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "椿神社"
         },
         {
@@ -156822,12 +157158,110 @@
           "surface": "金峯神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:06.266083+00:00",
+          "checked_at": "2026-11-27T05:37:03.725957+00:00",
           "evidence": "〔蒲生〕 熊野神社 〒5291623 蒲生郡日野町熊野",
           "facility_id": "a032606e-0b1b-5929-8edc-f704c6ae5ff7",
           "fetched_at": "2026-11-08T14:31:06.266083+00:00",
           "id": "9c771c39-8c03-5491-9120-c3a97259fd53",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "くまのじんじゃ"
+              },
+              "expected_source_hash": "75d9712c1c31e1abd2cc85a67e6fa92ca123b4112959ba4e346fa1af0217cfe8",
+              "facility_id": "a032606e-0b1b-5929-8edc-f704c6ae5ff7",
+              "identity_match": {
+                "agency_address_raw": "滋賀県蒲生郡日野町熊野215",
+                "description": "停留所は国勢調査2020年の大字熊野。神社庁の熊野215の社が同じ町域にあり、中山1941の同名社とは町域と鎮座地が異なる。",
+                "source_listing_address_raw": "蒲生郡日野町熊野",
+                "stop_note": "大字熊野の町域境界と停留所表示の座標を照合。"
+              },
+              "original": {
+                "address": "蒲生郡日野町熊野",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=8",
+                "name_raw": "熊野神社",
+                "reading_raw": ""
+              },
+              "reason": "県・市町の公開GTFSに、社名と同じ停留所名に対応する全文かなを確認。",
+              "references": [
+                {
+                  "attribution": "滋賀県交通戦略課・各市町の配布データから停留所・全文かなの原欄を抽出",
+                  "checked_at": "2026-11-27T05:37:03.725957+00:00",
+                  "distribution_url": "https://data.bodik.jp/dataset/250007_shiga-gtfs",
+                  "excerpt": "stop_name=熊野神社 ／ record_id=52_01 ／ translation=くまのじんじゃ",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "translations.txt 51行 ja-Hrkt、対応するstops.txt 49行",
+                  "name_raw": "熊野神社",
+                  "operator_row": {
+                    "active_period": {
+                      "feed_end_date": "20270331",
+                      "feed_start_date": "20260401"
+                    },
+                    "stops_raw": {
+                      "stop_desc": "",
+                      "stop_id": "52_01",
+                      "stop_lat": "34.9972996376912",
+                      "stop_lon": "136.330659985542",
+                      "stop_name": "熊野神社"
+                    },
+                    "translation_raw": {
+                      "field_name": "stop_name",
+                      "field_value": "",
+                      "language": "ja-Hrkt",
+                      "record_id": "52_01",
+                      "record_sub_id": "",
+                      "table_name": "stops",
+                      "translation": "くまのじんじゃ"
+                    }
+                  },
+                  "page_hash": "76d3e460a0946336c480f984e052112fd3b56005fa1c257bac131c6381a65af8",
+                  "reading_raw": "くまのじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "transit_operator_gtfs",
+                  "terms_url": "https://odcs.bodik.jp/250007/tos/",
+                  "title": "滋賀県 標準的なバス情報フォーマット（GTFS準拠）蒲生郡日野町",
+                  "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/e431dddb-dc3a-4699-b570-9d77043306fa/download/gtfs20260401.zip"
+                },
+                {
+                  "address_raw": "滋賀県蒲生郡日野町熊野215",
+                  "address_role": "enshrined_site",
+                  "checked_at": "2026-11-27T05:39:03.927030+00:00",
+                  "excerpt": "熊野神社（クマノ） ／ 滋賀県蒲生郡日野町熊野215",
+                  "locator": "神社名・鎮座地欄",
+                  "name_raw": "熊野神社",
+                  "page_hash": "e5130a283ad6dbd213d8ecd539163ed4e1e7fb6dd449c00852f8210d4f418df0",
+                  "reading_raw": "クマノ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "title": "滋賀県神社庁 神社紹介",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=749"
+                },
+                {
+                  "checked_at": "2026-11-27T05:39:10.360571+00:00",
+                  "excerpt": "平子・西明寺線 ／ 熊野神社",
+                  "locator": "PDF第1頁、平子・西明寺線の始発停留所名",
+                  "name_raw": "熊野神社",
+                  "page_hash": "6b1f4b87fd2a5794f0fe59c0722a073325465f90159e28d7ea3328e7d035a888",
+                  "source_kind": "municipal_transit_map",
+                  "title": "日野町営バス時刻表 令和8年4月1日改正",
+                  "url": "https://www.town.shiga-hino.lg.jp/cmsfiles/contents/0000004/4860/jikokuR8.4.1.pdf"
+                },
+                {
+                  "attribution": "『国勢調査町丁・字等別境界データセット』（CODH作成） 「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工 doi:10.20676/00000450",
+                  "checked_at": "2026-11-27T05:40:34.535044+00:00",
+                  "excerpt": "KEY_CODE=253830330 ／ S_NAME=大字熊野",
+                  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "locator": "令和2年町丁・字等別境界の地物属性",
+                  "name_raw": "大字熊野",
+                  "page_hash": "311c2b6d9921be6c42fb64b30f7c46492fcca2fa8a5df07da06ee87acee523aa",
+                  "source_kind": "census_town_geometry",
+                  "title": "国勢調査町丁・字等別境界データセット",
+                  "url": "https://geoshape.ex.nii.ac.jp/ka/topojson/2020/25/r2ka25383.topojson"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=8",
           "name_raw": "熊野神社",
           "normalization": [
@@ -156835,11 +157269,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d72d0353f20ec234f6d78ac60c4762bac7f66f85e020db107408460636dfe9c6",
-          "reading": "",
+          "reading": "くまのじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=8",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/e431dddb-dc3a-4699-b570-9d77043306fa/download/gtfs20260401.zip",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -157011,6 +157445,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "くまのじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "くまのじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "熊野神社",
             "wikipedia_article_refs": [
@@ -157050,7 +157498,7 @@
             "status": "pending",
             "surface": "熊野神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "熊野神社"
         },
         {

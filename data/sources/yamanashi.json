@@ -137015,12 +137015,153 @@
           "surface": "神明社"
         },
         {
-          "checked_at": "2026-11-08T14:29:12.855827+00:00",
+          "checked_at": "2026-11-27T05:20:31.541743+00:00",
           "evidence": "8086 神明社 上野原市鶴島961 北都留支部 詳細>>",
           "facility_id": "05caf861-2663-503a-96c5-2e2b7eb26fce",
           "fetched_at": "2026-11-08T14:29:12.855827+00:00",
           "id": "a29a355f-d86d-5db6-977a-7205dbce6a90",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "しんめいしゃ"
+              },
+              "expected_source_hash": "40ce6259bec16666ebf1ae530b7c2d63222240dab47aca0afeb72b97ab60a1ed",
+              "facility_id": "05caf861-2663-503a-96c5-2e2b7eb26fce",
+              "identity_match": {
+                "active_stop": {
+                  "stop_id": "0751_01",
+                  "stop_name": "神明社前"
+                },
+                "agency_site": "上野原市鶴島961",
+                "method": "事業者による「神明社前」の独立かな欄「しんめいしゃ」と、市広報の「鶴島（神明社前）」が対応。神社庁は鶴島961の現鎮座地、国税庁は同神社の鶴島961番地を記録。松留14等、同名別社に拡張しない。"
+              },
+              "original": {
+                "address": "上野原市鶴島961",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/8/4",
+                "name_raw": "神明社",
+                "reading_raw": ""
+              },
+              "reason": "事業者による「神明社前」の独立かな欄「しんめいしゃ」と、市広報の「鶴島（神明社前）」が対応。神社庁は鶴島961の現鎮座地、国税庁は同神社の鶴島961番地を記録。松留14等、同名別社に拡張しない。",
+              "references": [
+                {
+                  "checked_at": "2026-11-27T05:20:31.541743+00:00",
+                  "excerpt": "field_value=神明社前 ／ translation=しんめいしゃ",
+                  "feed_info": {
+                    "feed_end_date": "20261231",
+                    "feed_lang": "ja",
+                    "feed_publisher_name": "富士急バス株式会社",
+                    "feed_publisher_url": "https://www.fujikyubus.co.jp/",
+                    "feed_start_date": "20260105",
+                    "feed_version": "202610161800"
+                  },
+                  "fetched_at": "2026-11-27T05:20:31.541743+00:00",
+                  "locator": "translations.txt 1474行 ja-Hrkt、対応するstops.txt 501行",
+                  "name_raw": "神明社",
+                  "operator_publication": {
+                    "checked_at": "2026-11-27T05:18:55.291239+00:00",
+                    "fetched_at": "2026-11-27T05:18:55.291239+00:00",
+                    "page_hash": "dc00803c81530a929f3392863e38877f3d312f5ad69c0e034190ca7136f12469",
+                    "status": 200,
+                    "url": "https://bus.fujikyu.co.jp/rosen/gtfs/"
+                  },
+                  "page_hash": "3b364f6f5ba71eb9ee16fd92101de892193619792e6f55c62cb247b72beec121",
+                  "reading_raw": "しんめいしゃ",
+                  "reading_scope": "full_name",
+                  "rights_observation": "事業者が当該静的ファイルをオープンデータとして公開。配布案内にCC等のライセンス名の記載なし。",
+                  "source_kind": "transit_operator_gtfs",
+                  "status": 200,
+                  "stops_row": {
+                    "stop_id": "0751_01",
+                    "stop_name": "神明社前"
+                  },
+                  "stops_rows": 1499,
+                  "title": "富士急バス株式会社 GTFS-JP",
+                  "translation_row": {
+                    "field_name": "stop_name",
+                    "field_value": "神明社前",
+                    "language": "ja-Hrkt",
+                    "record_id": "",
+                    "record_sub_id": "",
+                    "table_name": "stops",
+                    "translation": "しんめいしゃ"
+                  },
+                  "translations_rows": 3985,
+                  "url": "https://gtfs-jp.buskita.com/fjb/gtfs.zip"
+                },
+                {
+                  "address_raw": "上野原市鶴島961",
+                  "agency_index_binding": {
+                    "checked_at": "2026-11-27T05:37:14.720258+00:00",
+                    "content_type": "text/html; charset=UTF-8",
+                    "fetched_at": "2026-11-27T05:37:14.720258+00:00",
+                    "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/8086",
+                    "locator": "tr[9]",
+                    "method": "GET",
+                    "native_source_id": "8086",
+                    "page_hash": "a60b25c30a9bda57775482cce2990adcd6a961d54dd910ff800f64fbcea1dda5",
+                    "requested_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/8/4",
+                    "status": 200,
+                    "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/8/4"
+                  },
+                  "checked_at": "2026-11-27T05:38:05.530315+00:00",
+                  "content_type": "text/html; charset=UTF-8",
+                  "excerpt": "神明社 ／ 上野原市鶴島961",
+                  "fetched_at": "2026-11-27T05:38:05.530315+00:00",
+                  "locator": "神社名・コードNo.・鎮座地欄",
+                  "method": "GET",
+                  "name_raw": "神明社",
+                  "page_hash": "78a8553b25e6ac8b14146b035cf4b4116b1408c700bac982fb46065f797f63cd",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "requested_url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/8086",
+                  "source_kind": "official_agency",
+                  "status": 200,
+                  "title": "山梨県神社庁 神社の詳細",
+                  "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/8086"
+                },
+                {
+                  "address_raw": "鶴島",
+                  "checked_at": "2026-11-27T05:37:34.970393+00:00",
+                  "content_type": "application/pdf",
+                  "excerpt": "鶴島（神明社前）",
+                  "fetched_at": "2026-11-27T05:37:34.970393+00:00",
+                  "image_sha256": "85c42ec8a40632f188d75e1a1a4a4e8c3e037c62e2027650e154c7cf90a22ca7",
+                  "locator": "PDF4頁の印刷7頁左下、島田・巌地区「会場」欄から鶴島（神明社前）",
+                  "method": "GET",
+                  "name_raw": "神明社",
+                  "page_hash": "d95a7eaab9246d73360e69b73061fb8040698dc8007ef4082f229a339a97c40b",
+                  "place_role": "municipal_landmark",
+                  "reading_raw": "",
+                  "requested_url": "https://www.city.uenohara.yamanashi.jp/uploaded/attachment/6669.pdf",
+                  "source_kind": "municipal_reference",
+                  "status": 200,
+                  "title": "広報うえのはら 令和6年3月号",
+                  "url": "https://www.city.uenohara.yamanashi.jp/uploaded/attachment/6669.pdf",
+                  "visually_reviewed": true
+                },
+                {
+                  "address_raw": "山梨県上野原市鶴島９６１番地",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T05:38:11.595713+00:00",
+                  "content_type": "text/html;charset=UTF-8",
+                  "corporate_number": "9090005003106",
+                  "excerpt": "神明社 ／ 山梨県上野原市鶴島９６１番地",
+                  "fetched_at": "2026-11-27T05:38:11.595713+00:00",
+                  "locator": "最新情報の名称・所在地欄",
+                  "method": "GET",
+                  "name_raw": "神明社",
+                  "page_hash": "d1658c770eb1613634682baa7fb7c8ea1c3a6ba04a9a5778ae8d06c44358358d",
+                  "reading_raw": "",
+                  "requested_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9090005003106",
+                  "source_kind": "corporate_profile_current",
+                  "status": 200,
+                  "title": "国税庁法人番号公表サイト 最新情報",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9090005003106"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/8/4",
           "name_raw": "神明社",
           "normalization": [
@@ -137028,11 +137169,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "a60b25c30a9bda57775482cce2990adcd6a961d54dd910ff800f64fbcea1dda5",
-          "reading": "",
+          "reading": "しんめいしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/8/4",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://gtfs-jp.buskita.com/fjb/gtfs.zip",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -137066,6 +137207,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しんめいしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しんめいしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "神明社",
             "wikipedia_article_refs": [],
@@ -137096,7 +137251,7 @@
             "status": "pending",
             "surface": "神明社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "神明社"
         },
         {
@@ -177934,12 +178089,150 @@
           "surface": "八幡社"
         },
         {
-          "checked_at": "2026-11-08T14:29:40.615478+00:00",
+          "checked_at": "2026-11-27T05:20:31.541743+00:00",
           "evidence": "7131 天狗社 南都留郡忍野村内野381-1 南都留支部 詳細>>",
           "facility_id": "3b1a4098-9f3c-52fb-a5c0-4222fa08bbaa",
           "fetched_at": "2026-11-08T14:29:40.615478+00:00",
           "id": "6f418aef-5334-5772-b019-c0c70e2cb224",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "てんぐしゃ"
+              },
+              "expected_source_hash": "4254e5dcb230cdb79169a4a1076407235e9d7cfd999cc973e5886e0f83808677",
+              "facility_id": "3b1a4098-9f3c-52fb-a5c0-4222fa08bbaa",
+              "identity_match": {
+                "active_stop": {
+                  "stop_id": "1537_01",
+                  "stop_name": "天狗社"
+                },
+                "agency_site": "南都留郡忍野村内野381-1",
+                "method": "事業者の停留所名「天狗社」とかな「てんぐしゃ」が同じGTFS名欄に対応。村教委は内野381-1に天狗社を明示し、県観光の公開資料は忍野村内野の停留所名を明示。"
+              },
+              "original": {
+                "address": "南都留郡忍野村内野381-1",
+                "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/6",
+                "name_raw": "天狗社",
+                "reading_raw": ""
+              },
+              "reason": "事業者の停留所名「天狗社」とかな「てんぐしゃ」が同じGTFS名欄に対応。村教委は内野381-1に天狗社を明示し、県観光の公開資料は忍野村内野の停留所名を明示。",
+              "references": [
+                {
+                  "checked_at": "2026-11-27T05:20:31.541743+00:00",
+                  "excerpt": "field_value=天狗社 ／ translation=てんぐしゃ",
+                  "feed_info": {
+                    "feed_end_date": "20261231",
+                    "feed_lang": "ja",
+                    "feed_publisher_name": "富士急バス株式会社",
+                    "feed_publisher_url": "https://www.fujikyubus.co.jp/",
+                    "feed_start_date": "20260105",
+                    "feed_version": "202610161800"
+                  },
+                  "fetched_at": "2026-11-27T05:20:31.541743+00:00",
+                  "locator": "translations.txt 1775行 ja-Hrkt、対応するstops.txt 899行",
+                  "name_raw": "天狗社",
+                  "operator_publication": {
+                    "checked_at": "2026-11-27T05:18:55.291239+00:00",
+                    "fetched_at": "2026-11-27T05:18:55.291239+00:00",
+                    "page_hash": "dc00803c81530a929f3392863e38877f3d312f5ad69c0e034190ca7136f12469",
+                    "status": 200,
+                    "url": "https://bus.fujikyu.co.jp/rosen/gtfs/"
+                  },
+                  "page_hash": "3b364f6f5ba71eb9ee16fd92101de892193619792e6f55c62cb247b72beec121",
+                  "reading_raw": "てんぐしゃ",
+                  "reading_scope": "full_name",
+                  "rights_observation": "事業者が当該静的ファイルをオープンデータとして公開。配布案内にCC等のライセンス名の記載なし。",
+                  "source_kind": "transit_operator_gtfs",
+                  "status": 200,
+                  "stops_row": {
+                    "stop_id": "1537_01",
+                    "stop_name": "天狗社"
+                  },
+                  "stops_rows": 1499,
+                  "title": "富士急バス株式会社 GTFS-JP",
+                  "translation_row": {
+                    "field_name": "stop_name",
+                    "field_value": "天狗社",
+                    "language": "ja-Hrkt",
+                    "record_id": "",
+                    "record_sub_id": "",
+                    "table_name": "stops",
+                    "translation": "てんぐしゃ"
+                  },
+                  "translations_rows": 3985,
+                  "url": "https://gtfs-jp.buskita.com/fjb/gtfs.zip"
+                },
+                {
+                  "address_raw": "南都留郡忍野村内野381-1",
+                  "agency_index_binding": {
+                    "checked_at": "2026-11-27T05:37:32.970422+00:00",
+                    "content_type": "text/html; charset=UTF-8",
+                    "fetched_at": "2026-11-27T05:37:32.970422+00:00",
+                    "href_raw": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/7131",
+                    "locator": "tr[5]",
+                    "method": "GET",
+                    "native_source_id": "7131",
+                    "page_hash": "1f5497e374078b2d6fd245adfda788f7294dfa8b78e5e564d9c4a74488cdc4c3",
+                    "requested_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/6",
+                    "status": 200,
+                    "url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/6"
+                  },
+                  "checked_at": "2026-11-27T05:38:02.364647+00:00",
+                  "content_type": "text/html; charset=UTF-8",
+                  "excerpt": "天狗社 ／ 南都留郡忍野村内野381-1",
+                  "fetched_at": "2026-11-27T05:38:02.364647+00:00",
+                  "locator": "神社名・コードNo.・鎮座地欄",
+                  "method": "GET",
+                  "name_raw": "天狗社",
+                  "page_hash": "fd199d83d5262b586f67709ad37beb537ca2d6b6d1e0a49b62570d84d9daa56d",
+                  "reading_raw": "",
+                  "reading_scope": "partial_or_absent",
+                  "requested_url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/7131",
+                  "source_kind": "official_agency",
+                  "status": 200,
+                  "title": "山梨県神社庁 神社の詳細",
+                  "url": "https://www.yamanashi-jinjacho.or.jp/intro/search/detail/7131"
+                },
+                {
+                  "address_raw": "山梨県南都留郡忍野村内野381-1",
+                  "checked_at": "2026-11-27T05:36:26.657731+00:00",
+                  "content_type": "text/html",
+                  "display_name_raw": "内野天狗社",
+                  "excerpt": "内野天狗社 ／ 山梨県南都留郡忍野村内野381-1",
+                  "fetched_at": "2026-11-27T05:36:26.657731+00:00",
+                  "locator": "見出し・本文中の天狗社・住所欄",
+                  "method": "GET",
+                  "name_raw": "天狗社",
+                  "page_hash": "a994199776721ba25d2ffba46565a9256c103954978659671251da764a960994",
+                  "reading_raw": "",
+                  "requested_url": "https://www.vill.oshino.lg.jp/page/1125.html",
+                  "source_kind": "municipal_reference",
+                  "status": 200,
+                  "title": "忍野村教育委員会 内野天狗社",
+                  "url": "https://www.vill.oshino.lg.jp/page/1125.html"
+                },
+                {
+                  "address_raw": "南都留郡　忍野村内野",
+                  "checked_at": "2026-11-27T05:37:37.929622+00:00",
+                  "content_type": "text/html",
+                  "excerpt": "バス停「天狗社」",
+                  "fetched_at": "2026-11-27T05:37:37.929622+00:00",
+                  "locator": "基本情報の住所とアクセス欄、忍野村役場観光産業課の問合せ先。",
+                  "method": "GET",
+                  "name_raw": "天狗社",
+                  "page_hash": "1ff0adf02d1236476791b0123b937138d800100a7f6d33d8d410d976fc69723e",
+                  "place_role": "named_bus_stop",
+                  "reading_raw": "",
+                  "requested_url": "https://www.yamanashi-kankou.jp/kankou/spot/p1_4301.html",
+                  "source_kind": "regional_tourism_context",
+                  "status": 200,
+                  "title": "富士の国やまなし観光ネット 原地区田園地帯",
+                  "url": "https://www.yamanashi-kankou.jp/kankou/spot/p1_4301.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/6",
           "name_raw": "天狗社",
           "normalization": [
@@ -177947,11 +178240,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1f5497e374078b2d6fd245adfda788f7294dfa8b78e5e564d9c4a74488cdc4c3",
-          "reading": "",
+          "reading": "てんぐしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.yamanashi-jinjacho.or.jp/intro/list/map/7/6",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://gtfs-jp.buskita.com/fjb/gtfs.zip",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -177987,6 +178280,20 @@
             "prefecture_code": "19",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんぐしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんぐしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "天狗社",
             "wikipedia_article_refs": [],
@@ -178017,7 +178324,7 @@
             "status": "pending",
             "surface": "天狗社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天狗社"
         },
         {

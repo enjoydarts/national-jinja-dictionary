@@ -1270,6 +1270,16 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 滋賀では、東近江市建部北町394の山王神社を奈良文化財研究所の原画像と旧市名の対応で、長浜市余呉町摺墨648の水上神社を同じ全地番と「みなかみじんじゃ」を記す個別記事で確認しました。青森の6候補は法人個票まで照合し、七崎神社の異読や月山神社の全文の出典条件を保留理由として確認しました。今回の追加は6登録で、全国の保留は**9,189 → 9,183登録**です。[奈良文化財研究所の資料](https://repository.nabunken.go.jp/dspace/bitstream/11177/2472/1/CaoNews90.pdf#page=55)・[水上神社の読みと鎮座地を載せる記事](https://kojiki.co/fun/chara/ootomatohiko/)
 
+### 公開交通データの停留所かなと鎮座地の照合（2026-11-27）
+
+自治体・交通事業者が公開する計32資料の延べ8,328停留所行を対象に、`stops.txt` と `translations.txt` の `ja-Hrkt` を照合しました。滋賀の11資料は内容が異なるZIPが10点で、日野・草津・甲賀などの21登録に名称の候補がありました。福井の利用条件を確認できた2資料、青森・岩手の6資料、新潟の7資料からは追加がありません。山形の一覧と長野の自治体リンクも確認し、配布先で取得条件を確認できなかった経路は未取得として記録しました。[国土交通省のGTFS-JP仕様書](https://www.mlit.go.jp/commmmons/document/007/commmmons_doc_007-01_ver01.pdf)・[滋賀県の配布カタログ](https://data.bodik.jp/dataset/250007_shiga-gtfs)・[福井県の配布カタログ](https://www.pref.fukui.lg.jp/doc/dx-suishin/opendata/gtfs_jp.html)
+
+滋賀では日野町熊野215の熊野神社「くまのじんじゃ」、草津市南笠町925の治田神社「はるたじんじゃ」、甲賀市甲賀町隠岐2075の椿神社「つばきじんじゃ」、甲賀市土山町山中194の熊野神社「くまのじんじゃ」を補完しました。同名社を含む候補を町域境界と市町・神社庁の資料で個別に確認しました。草津市の渡海神社は、庁の「ワタツミ」と停留所の「わたらいじんじゃまえ」の原欄を記録し、保留です。交通データは滋賀県交通戦略課・各市町の公開資料、境界はCODH作成の『国勢調査町丁・字等別境界データセット』です。照合と集計は本プロジェクトが行いました。[滋賀県のデータ利用規約](https://odcs.bodik.jp/250007/tos/)・[県文化財保護協会の治田神社現地記録](https://www.shiga-bunkazai.jp/shigabun-shinbun/best-place-in-shiga/meisyozue381/)・[甲賀市の椿神社資料](https://www.city.koka.lg.jp/secure/25290/13sayama.pdf#page=11)・[CODHの自治体コード別配布](https://geoshape.ex.nii.ac.jp/ka/resource/index.html)
+
+山梨では忍野村内野381-1の天狗社「てんぐしゃ」と、上野原市鶴島961の神明社「しんめいしゃ」を補完しました。神明社前の原かな欄は「しんめいしゃ」で、市広報の停留所表記は「鶴島（神明社前）」です。[富士急バスの公開データ](https://gtfs-jp.buskita.com/fjb/gtfs.zip)・[忍野村教育委員会の天狗社資料](https://www.vill.oshino.lg.jp/page/1125.html)・[上野原市広報](https://www.city.uenohara.yamanashi.jp/uploaded/attachment/6669.pdf#page=4)
+
+青森市栄町の諏訪神社は、国税庁の「スワジンジャ」と神社・市の栄町1-4-26を確認しました。三豊市仁尾の八幡神社は、市生活ガイドの独立したルビ「はちまんじんじゃ」を採用しました。三豊市の施設紹介では本文に仁尾乙1847-1、同じページの地図欄に仁尾乙47-1があり、両原値を保持しました。四国で取得した5交通資料のうち、三豊の旧GTFSは同名停留所の確認に使用し、採用する読みは市生活ガイドの原画像で確認しました。今回の補完は4県8登録で、全国の保留は**9,183 → 9,175登録**です。[青森の諏訪神社法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7420005000797)・[諏訪神社の公式案内](https://www.aomori-suwajinja.org/access1.html)・[三豊市の生活ガイド](https://www.city.mitoyo.lg.jp/material/files/group/16/canb_rubi.pdf#page=31)・[三豊市の施設紹介](https://www.city.mitoyo.lg.jp/kakuka/seisaku/sangyo/14_1/4/2504.html)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

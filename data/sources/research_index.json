@@ -817985,6 +817985,489 @@
               }
             }
           }
+        },
+        {
+          "baseline_commit": "7640b4289698ac1cf882971013adedd613d15b16",
+          "by_prefecture_before": {
+            "01": 345,
+            "02": 658,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 2,
+            "19": 978,
+            "20": 1578,
+            "21": 1,
+            "22": 2,
+            "23": 17,
+            "25": 846,
+            "26": 1012,
+            "28": 7,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 533,
+            "38": 1,
+            "39": 1612,
+            "40": 98,
+            "41": 88,
+            "42": 831,
+            "43": 509,
+            "47": 2
+          },
+          "checked_at": "2026-11-27T08:18:31.225080+00:00",
+          "dictionary_entries": {
+            "42448dcd-30a0-5dbd-ab69-625d0bdbce11": {
+              "address": "青森市栄町一丁目",
+              "facility_id": "601336b7-519b-5476-93f2-7f5c862c59e3",
+              "name": "諏訪神社",
+              "prefecture": "青森県",
+              "prefecture_code": "02",
+              "reading": "すわじんじゃ"
+            },
+            "42491ea0-a201-5aab-9437-f6418d2e6da8": {
+              "address": "甲賀市土山町山中",
+              "facility_id": "253f736b-b37e-50b4-ba46-a777ce963934",
+              "name": "熊野神社",
+              "prefecture": "滋賀県",
+              "prefecture_code": "25",
+              "reading": "くまのじんじゃ"
+            },
+            "6f418aef-5334-5772-b019-c0c70e2cb224": {
+              "address": "南都留郡忍野村内野381-1",
+              "facility_id": "3b1a4098-9f3c-52fb-a5c0-4222fa08bbaa",
+              "name": "天狗社",
+              "prefecture": "山梨県",
+              "prefecture_code": "19",
+              "reading": "てんぐしゃ"
+            },
+            "746bf6f5-ca24-5851-9322-5f2f69064290": {
+              "address": "三豊市仁尾町大字仁尾乙1847番地1",
+              "facility_id": "ad7546a9-e88b-5690-b801-7a656f13a65a",
+              "name": "八幡神社",
+              "prefecture": "香川県",
+              "prefecture_code": "37",
+              "reading": "はちまんじんじゃ"
+            },
+            "7b44fdc4-7d9b-526c-a9e0-4c833cf3e919": {
+              "address": "甲賀市甲賀町隠岐",
+              "facility_id": "f8518be9-4cf8-58f4-8ec8-df5f57738803",
+              "name": "椿神社",
+              "prefecture": "滋賀県",
+              "prefecture_code": "25",
+              "reading": "つばきじんじゃ"
+            },
+            "9c771c39-8c03-5491-9120-c3a97259fd53": {
+              "address": "蒲生郡日野町熊野",
+              "facility_id": "a032606e-0b1b-5929-8edc-f704c6ae5ff7",
+              "name": "熊野神社",
+              "prefecture": "滋賀県",
+              "prefecture_code": "25",
+              "reading": "くまのじんじゃ"
+            },
+            "a29a355f-d86d-5db6-977a-7205dbce6a90": {
+              "address": "上野原市鶴島961",
+              "facility_id": "05caf861-2663-503a-96c5-2e2b7eb26fce",
+              "name": "神明社",
+              "prefecture": "山梨県",
+              "prefecture_code": "19",
+              "reading": "しんめいしゃ"
+            },
+            "ff0d93c5-88af-5635-a43e-5c350f0284da": {
+              "address": "草津市南笠町",
+              "facility_id": "072ec242-bbd6-5278-8442-728878bf5e1d",
+              "name": "治田神社",
+              "prefecture": "滋賀県",
+              "prefecture_code": "25",
+              "reading": "はるたじんじゃ"
+            }
+          },
+          "location_supplements": {},
+          "location_supplements_still_pending": {},
+          "pending_after": 9175,
+          "pending_before": 9183,
+          "prefecture_scopes": {
+            "public_transit_kana_and_document_recheck": [
+              "all"
+            ]
+          },
+          "reading_supplements_by_investigation": {
+            "public_transit_kana_and_document_recheck": 8
+          },
+          "reduced_by_prefecture": {
+            "02": 1,
+            "19": 2,
+            "25": 4,
+            "37": 1
+          },
+          "source_investigations": {
+            "public_transit_kana_and_document_recheck": {
+              "api_access": {
+                "api_payload_requests": 0,
+                "robots_http_status": 403,
+                "robots_url": "https://api.gtfs-data.jp/robots.txt"
+              },
+              "central": {
+                "checked_feeds": 8,
+                "nagano": {
+                  "adopted": 0,
+                  "checked_feeds": 0,
+                  "note": "長野市・松本市・上田市・須坂市・南木曽町の案内を確認。配布先の条件により取得せず。"
+                },
+                "niigata": {
+                  "adopted": 0,
+                  "checked_feeds": 7,
+                  "stop_rows": 964,
+                  "translation_rows": 5007
+                },
+                "stop_rows": 2463,
+                "yamanashi": {
+                  "adopted": 2,
+                  "checked_feeds": 1,
+                  "rows_with_candidate_shrine_names_and_kana": 19,
+                  "stop_rows": 1499,
+                  "translation_rows": 3985
+                }
+              },
+              "definition": "GTFS-JPの公開停留所名とja-Hrktの原欄。社名を含む停留所は町域境界と行政・神社庁の資料で個別照合。",
+              "fukui": {
+                "adopted": 0,
+                "catalog_url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/opendata/gtfs_jp.html",
+                "distinct_name_candidates": 0,
+                "excluded_stop_rows": 1535,
+                "exclusion_note": "京福バスのZIP内部に配布ページと条件が異なる利用記載を確認し、採用候補の比較から除いた。",
+                "feeds": [
+                  {
+                    "checked_at": "2026-11-27T05:35:55.524821+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "7f549b39e614900ac01820bb4b459f41792246daba9463f2d8351e70210eca9b",
+                    "rows": 134,
+                    "translation_rows": 158,
+                    "url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/opendata/gtfs_jp_d/fil/echizensi_bus.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260401"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:35:59.878396+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "666797743abf54f433bddad4813df1db604c339e26256cc9fc1a29c025bb1329",
+                    "rows": 590,
+                    "translation_rows": 944,
+                    "url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/opendata/gtfs_jp_d/fil/gtfs_fukutetu.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20260331",
+                        "feed_start_date": "20251001"
+                      }
+                    ]
+                  }
+                ],
+                "retained_feeds": 2,
+                "retained_stop_rows": 724,
+                "retrieved_feeds": 3,
+                "terms_url": "https://www.pref.fukui.lg.jp/doc/dx-suishin/opendata/index.html#odl2"
+              },
+              "parcel_short_followup": {
+                "results": [
+                  {
+                    "coordinate_system_raw": "任意座標系",
+                    "district_raw": "南川口",
+                    "parcel_raw": "867-2",
+                    "retrieved_at": "2026-11-27T05:39:52.126237+00:00",
+                    "scope": "小字・実座標の対応は未確定",
+                    "sha256": "9716447ddcae900e407ff7b54f05cc9134a662bebf3e56313d9964d68f2a409a",
+                    "status": "pending",
+                    "subdivision_code_raw": "0000",
+                    "url": "https://raw.githubusercontent.com/amx-project/kuwanauchi39kochi/7c4284174e3a3cf174492f3b6b6297988dbb79f7/xml/39412-4902-266.zip"
+                  },
+                  {
+                    "district_raw": "西湖",
+                    "parcel_checked": "1612",
+                    "retrieved_at": "2026-11-27T05:37:26.740142+00:00",
+                    "scope": "この旧版索引で同地区同地番の行を確認できず",
+                    "sha256": "70c90e6f97cdb37e240285816c03a4936cbf446242f71523a10a64902885a7d2",
+                    "status": "pending",
+                    "url": "https://raw.githubusercontent.com/amx-project/kuwanauchi19yamanashi/main/xml/19430-0917-search-list.csv"
+                  }
+                ],
+                "source_origin": "法務省「登記所備付地図データ」・地図XMLアダプトプロジェクトの公開アーカイブを加工",
+                "terms_url": "https://github.com/amx-project/kuwanauchi39kochi/blob/main/LICENSE.md"
+              },
+              "shiga": {
+                "adopted": 4,
+                "catalog_url": "https://data.bodik.jp/dataset/250007_shiga-gtfs",
+                "distinct_name_candidates": 21,
+                "feeds": [
+                  {
+                    "checked_at": "2026-11-27T05:37:01.412902+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "31fbe8f69adf7ab11770e403f71201bdd4bbecb438d4abe0c59865e601c9a0e8",
+                    "rows": 271,
+                    "translation_rows": 596,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/faf0ff1b-fcba-4bd2-91bc-c6937db08c3c/download/gtfs250401.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20260930",
+                        "feed_start_date": "20250401"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:03.725957+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "76d3e460a0946336c480f984e052112fd3b56005fa1c257bac131c6381a65af8",
+                    "rows": 106,
+                    "translation_rows": 214,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/e431dddb-dc3a-4699-b570-9d77043306fa/download/gtfs20260401.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260401"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:06.088525+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "b2486e88f2458e888810f19ebfa52e708259254c19dff7cf0798fb3f2355e54b",
+                    "rows": 305,
+                    "translation_rows": 725,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/36f2f369-a1e9-4e90-a22e-ee75caec11e2/download/2026.4.1.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260330"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:08.672350+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "57650d2853a2f9cae3f9b6b7de09a29b438547dbbeffdaad2504a694b0689840",
+                    "rows": 138,
+                    "translation_rows": 287,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/e4ea2950-0943-4591-93d7-2dbaf78fc9dc/download/gtfsjp__260301.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260301"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:10.979314+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "17f220be47bddfb83a5c528f7add84dcb12acb71ef1724fc642d40c100d3b594",
+                    "rows": 135,
+                    "translation_rows": 276,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/60630fde-20f8-4426-ac53-6a865d0ddf54/download/gtfsjp3_2502__20260604.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260604"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:13.302417+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "bd3bb67d370ea70ecfcadf0f3c475ce0eeebe2cfaac67146c4d5baa041935578",
+                    "rows": 160,
+                    "translation_rows": 322,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/be6ed01b-16e3-4ad8-ad6c-0aec0a8a686a/download/gtfs_r8.4.1.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260401"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:15.573595+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "17f220be47bddfb83a5c528f7add84dcb12acb71ef1724fc642d40c100d3b594",
+                    "rows": 135,
+                    "translation_rows": 276,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/4b30b3c0-034d-4184-8d8e-2c4f8a1a8975/download/gtfsjp3_2502__20260604.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260604"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:17.973391+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "2b80bf0f6ed0b9d73301adbc99ca408de3f8e6c3f0bef1f358597ad3abd1963d",
+                    "rows": 189,
+                    "translation_rows": 464,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/5e2804f1-aa74-4f3d-a877-daa365429f08/download/gtfs20261101.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20261101"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:20.262801+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "28c88fa54e38bda2c8c2c3a8de957a22088bb6e021ad037b23a2cc527f9c06f3",
+                    "rows": 35,
+                    "translation_rows": 97,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/b54a0fa2-b064-4c59-b2a3-766c0c51f5b7/download/gtfs260521.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260521"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:22.650761+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "33db4bcdad67819498aa551c628ae49ab73367d9264291d5f0de09c437aa0144",
+                    "rows": 436,
+                    "translation_rows": 719,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/1748c826-cdb3-4e42-af85-6b8781a4aaff/download/r8.4.1gtfs.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270331",
+                        "feed_start_date": "20260401"
+                      }
+                    ]
+                  },
+                  {
+                    "checked_at": "2026-11-27T05:37:25.039811+00:00",
+                    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                    "page_hash": "8b92013eebe25e8a46c1e95de3bff2b7c2959a7bf1aa2e4df2fcdec268624161",
+                    "rows": 449,
+                    "translation_rows": 930,
+                    "url": "https://data.bodik.jp/dataset/e3f3ad12-171c-442b-95b5-896f4b50e5a7/resource/cbc115a2-2798-47f3-9033-383bce7dce2d/download/gtfsr7.8.28.zip",
+                    "valid_period": [
+                      {
+                        "feed_end_date": "20270531",
+                        "feed_start_date": "20250828"
+                      }
+                    ]
+                  }
+                ],
+                "held_entry_ids": [
+                  "098e07fc-102d-5169-b565-216c3b6b8faa",
+                  "1127ce91-5f39-5a80-a3d4-3a6979d5d1c4",
+                  "283c527f-3be7-56e5-8c28-b49d9f90d25e",
+                  "3135048c-9455-5145-ba32-e423f9bc5fd2",
+                  "35cb6946-d3da-5186-8a01-a545a8842b64",
+                  "491bc15c-5a9d-512b-9ed9-9f9bca0027ab",
+                  "557b2594-f3b8-55bd-aefb-0d1a97880f08",
+                  "7a18cb5d-354b-58a4-a8c1-8cc55378ec2c",
+                  "85b30f59-325c-55a7-8bcc-c3509e7605a0",
+                  "88d8ae02-39c0-5f13-84e2-95c5361f08aa",
+                  "89207597-1c55-5ca2-920f-432303f41d73",
+                  "9309ba84-ea64-545c-9493-59e08cf2dc1b",
+                  "99a200bd-d8ad-5b26-a2c8-61d1acf56687",
+                  "aa1952c5-558b-5dc5-ab12-b04896684e48",
+                  "aa7e594c-2b2b-5b00-89fa-eed84be87b53",
+                  "cb905f2b-0f44-53c7-9513-791f60224be7",
+                  "d89c08ec-95ad-5dae-996b-8332271995c6"
+                ],
+                "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                "publisher": "滋賀県交通戦略課・各市町",
+                "retrieved_feeds": 11,
+                "selected_holds": [
+                  {
+                    "agency_location": "草津市山田町3",
+                    "agency_name_stem": "ワタツミ",
+                    "name": "渡海神社",
+                    "stop_name_raw": "渡海神社前",
+                    "stop_reading_raw": "わたらいじんじゃまえ",
+                    "stop_town": "南山田町"
+                  },
+                  {
+                    "name": "長寸神社",
+                    "stop_name_raw": "長寸神社前",
+                    "stop_reading_raw": "ながきじんじゃまえ"
+                  },
+                  {
+                    "agency_area": "甲賀市水口町山上",
+                    "name": "若宮神社",
+                    "stop_name_raw": "若宮神社",
+                    "stop_town": "大河原"
+                  }
+                ],
+                "stop_rows": 2359,
+                "terms_url": "https://odcs.bodik.jp/250007/tos/",
+                "translation_rows": 4906,
+                "unique_payloads": 10
+              },
+              "shikoku": {
+                "adopted": 1,
+                "after_independent_locality_review": 1,
+                "distinct_stop_names_with_pending_matches_before_locality_review": 3,
+                "mitoyo_primary_reading_source": {
+                  "checked_at": "2026-11-27T05:41:03.706993+00:00",
+                  "locator": "カンボジア語（ルビ付）の公式PDFリンク",
+                  "page_hash": "64350c04c9972a411596d63c5440e0d91926f7722aaa46d3bdd0c3c03f191347",
+                  "source_kind": "municipal_publication_index",
+                  "title": "三豊市人権課「外国人のための生活ガイドブック ルビ付き」",
+                  "url": "https://www.city.mitoyo.lg.jp/kakuka/shiminkankyou/jinken/tabunka/seikatuguidebook/12489.html"
+                },
+                "note": "三豊のGTFSは対象発見の補助で有効期間終了。生活ガイドの独立したルビと市の施設個別ページを採用。",
+                "obtained": 5,
+                "selected_feed_downloads": 11,
+                "stop_pending_pair_rows_with_kana_before_locality_review": 51,
+                "stop_rows": 1578,
+                "stop_rows_with_selected_kana": 1498,
+                "stopped": 6,
+                "translation_rows": 5039
+              },
+              "specification_url": "https://www.mlit.go.jp/commmmons/document/007/commmmons_doc_007-01_ver01.pdf",
+              "tohoku": {
+                "adopted_gtfs": 0,
+                "adopted_independent_documents": 1,
+                "direct_download_attempts_gtfs_zip": 9,
+                "direct_download_http_404_gtfs_zip": 2,
+                "direct_download_success_gtfs_zip": 7,
+                "independent_document_matches": 1,
+                "independent_draft_passing_current_validator": 0,
+                "licensed_feeds_examined": 6,
+                "licensed_feeds_examined_with_any_pending_municipality": 4,
+                "operator_data_requests_protected_by_robots_checks": true,
+                "pending_population_count": 9183,
+                "pending_population_sha256": "8cdc207bda4b695116f69599514ce71454519b7818654f4dedf7be376c707a9b",
+                "prefecture_pending_counts": {
+                  "02": 658,
+                  "03": 0,
+                  "06": 0
+                },
+                "prioritized_aomori_city_entries": 10,
+                "publisher_url": "https://aomoricitybus.com/opendata/index.html",
+                "sakata_gtfs_table_requests_omitted_after_robots_stop": 3,
+                "scope_unique_aomori_pending_count": 94,
+                "stop_rows_in_retained_feeds": 1204,
+                "stop_rows_with_ja_hrkt_in_retained_feeds": 1189,
+                "three_prefecture_name_matches": 0,
+                "verified_gtfs_reading_proposals": 0,
+                "yamagata_licensed_links_omitted_after_api_robots_stop": 31
+              },
+              "town_boundary": {
+                "attribution": "『国勢調査町丁・字等別境界データセット』（CODH作成） 「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工 doi:10.20676/00000450",
+                "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                "municipalities": 5,
+                "url": "https://geoshape.ex.nii.ac.jp/ka/resource/index.html"
+              },
+              "usable_feed_resources": 32,
+              "usable_stop_rows": 8328
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [

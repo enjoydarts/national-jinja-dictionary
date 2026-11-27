@@ -46837,12 +46837,108 @@
           "surface": "水主神社"
         },
         {
-          "checked_at": "2026-11-08T14:32:05.083138+00:00",
+          "checked_at": "2026-11-27T05:38:31.683655+00:00",
           "evidence": "li.c-entries__item a[href=\"https://kagawakenjinjacho.or.jp/shrine/%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be-45/\"]: 名称=八幡神社; 掲載読み=; 所在地=三豊市仁尾町大字仁尾乙1847番地1",
           "facility_id": "ad7546a9-e88b-5690-b801-7a656f13a65a",
           "fetched_at": "2026-11-08T14:32:05.083138+00:00",
           "id": "746bf6f5-ca24-5851-9322-5f2f69064290",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はちまんじんじゃ"
+              },
+              "expected_source_hash": "34a3b228ed8c29cc85f5422f7b4cdeafcac8f408d8afd905b37c5e982a566e08",
+              "facility_id": "ad7546a9-e88b-5690-b801-7a656f13a65a",
+              "identity_match": "三豊市の履脱八幡神社個別ページで、同一施設の本文に1847-1と地図情報欄に47-1を掲載。県神社庁と法人は1847-1、同市ガイドは八幡神社と47-1。両番地の原値を照合し、番地の一般置換には利用しない。",
+              "original": {
+                "address": "三豊市仁尾町大字仁尾乙1847番地1",
+                "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/8/",
+                "name_raw": "八幡神社",
+                "reading_raw": ""
+              },
+              "reason": "三豊市人権課の社名ひらがな全文と、同市の施設個別案内が結び付ける二つの住所欄を照合。",
+              "references": [
+                {
+                  "address_raw": "仁尾町仁尾乙47-1",
+                  "checked_at": "2026-11-27T05:38:31.683655+00:00",
+                  "excerpt": "八幡神社 ／ はちまんじんじゃ ／ 仁尾町仁尾乙47-1",
+                  "locator": "PDF第31頁・印刷30頁の指定避難場所一覧 No.59 日本語社名の二つのルビ・所在地欄",
+                  "name_raw": "八幡神社",
+                  "page_hash": "e6b892314e6463456e3f786a790af9efd91215712aa26fd3f4235fd780eb27da",
+                  "reading_raw": "はちまんじんじゃ",
+                  "reading_ruby_parts_raw": [
+                    "はちまん",
+                    "じんじゃ"
+                  ],
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_reference",
+                  "title": "三豊市人権課「外国人のための生活ガイドブック」（カンボジア語、ルビ付き）",
+                  "url": "https://www.city.mitoyo.lg.jp/material/files/group/16/canb_rubi.pdf"
+                },
+                {
+                  "address_raw": "三豊市仁尾町仁尾乙1847-1",
+                  "checked_at": "2026-11-27T05:38:24.086805+00:00",
+                  "excerpt": "履脱八幡神社 ／ 三豊市仁尾町仁尾乙1847-1",
+                  "locator": "施設紹介本文の「場所」行",
+                  "name_raw": "履脱八幡神社",
+                  "page_hash": "ef39e3df25f760ed8cbd184ba5ea137042dc5bf9d9abf9cc06a30a7b1014aef1",
+                  "reading_raw": "くつぬぎはちまんじんじゃ",
+                  "reading_scope": "extended_name",
+                  "source_kind": "municipal_reference",
+                  "title": "三豊市「履脱八幡神社」",
+                  "url": "https://www.city.mitoyo.lg.jp/kakuka/seisaku/sangyo/14_1/4/2504.html"
+                },
+                {
+                  "address_raw": "香川県三豊市仁尾町仁尾乙47-1",
+                  "checked_at": "2026-11-27T05:38:24.086805+00:00",
+                  "excerpt": "履脱八幡神社 ／ 香川県三豊市仁尾町仁尾乙47-1",
+                  "locator": "同じページの「地図情報の詳細」、表caption・住所行",
+                  "name_raw": "履脱八幡神社",
+                  "page_hash": "ef39e3df25f760ed8cbd184ba5ea137042dc5bf9d9abf9cc06a30a7b1014aef1",
+                  "source_kind": "municipal_reference",
+                  "title": "三豊市「履脱八幡神社」",
+                  "url": "https://www.city.mitoyo.lg.jp/kakuka/seisaku/sangyo/14_1/4/2504.html"
+                },
+                {
+                  "address_raw": "三豊市仁尾町大字仁尾乙1847番地1",
+                  "checked_at": "2026-11-27T05:38:27.266330+00:00",
+                  "excerpt": "八幡神社 ／ 三豊市仁尾町大字仁尾乙1847番地1",
+                  "locator": "個別ページの社名と鎮座地",
+                  "name_raw": "八幡神社",
+                  "page_hash": "f5df707b73d030d1b59708b577b5be76dbf6aa3bd3df12c679b729d74e668c58",
+                  "source_kind": "official_agency",
+                  "title": "香川県神社庁「八幡神社」",
+                  "url": "https://kagawakenjinjacho.or.jp/shrine/%E5%85%AB%E5%B9%A1%E7%A5%9E%E7%A4%BE-45/"
+                },
+                {
+                  "address_raw": "香川県三豊市仁尾町仁尾乙１８４７番地１",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-27T05:38:26.569684+00:00",
+                  "corporate_number": "3470005003915",
+                  "excerpt": "八幡神社 ／ 香川県三豊市仁尾町仁尾乙１８４７番地１",
+                  "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                  "name_raw": "八幡神社",
+                  "page_hash": "e5a674cfe1359d050d72b280e9e2cf12d46ab395d61a5465d8b0c0de13bb4e9b",
+                  "reading_raw": "",
+                  "source_kind": "government_corporate_register",
+                  "title": "国税庁法人番号公表サイト・八幡神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3470005003915"
+                },
+                {
+                  "address_raw": "三豊市仁尾町仁尾乙１８４７－１",
+                  "checked_at": "2026-11-27T05:38:26.922060+00:00",
+                  "excerpt": "八幡神社 ／ 三豊市仁尾町仁尾乙１８４７－１",
+                  "locator": "PDF第22頁、三豊市 No.51",
+                  "name_raw": "八幡神社",
+                  "page_hash": "bdb72aa45816a92bd8c4ba61c313c11236591c0b928eab0253c856ff0e4bcade",
+                  "source_kind": "prefectural_registry",
+                  "title": "香川県宗教法人名簿 神道系",
+                  "url": "https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/8/",
           "name_raw": "八幡神社",
           "normalization": [
@@ -46850,11 +46946,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "d647875d9a52de1b04ee02e1db7d1bbcf3a4a63bbb2ccf028e09b945c771f291",
-          "reading": "",
+          "reading": "はちまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://kagawakenjinjacho.or.jp/shrine/page/8/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.city.mitoyo.lg.jp/material/files/group/16/canb_rubi.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -47106,6 +47202,20 @@
             "prefecture_code": "37",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はちまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はちまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "八幡神社",
             "wikipedia_article_refs": [],
@@ -47136,7 +47246,7 @@
             "status": "pending",
             "surface": "八幡神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "八幡神社"
         },
         {
