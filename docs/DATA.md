@@ -122,6 +122,8 @@ IME出力時は読み・表記・出力先品詞が同じ行を重複除去し�
 
 高松市の三社神社は「花宮町」「花ノ宮町」の929、辰野町の神明神社は伊那富の「日向」「字日向」の9610を個別に照合します。大刀洗町の大堰神社は、国土交通省の全文かなと施設公式の冨多1302を同じ社に対応させます。全地番、原社名、原フリガナは各資料の欄ごとに保持します。[高松市の町名一覧](https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/shomei/zyuukyo/ichiran.html)・[辰野町文化財資料](https://www.town.tatsuno.lg.jp/material/files/group/2/shiryouhenn.pdf#page=146)・[大堰神社公式](https://oozekijinja.site/)
 
+柳川市田脇の日吉神社は、神社庁の「946･947」と国税庁の「９４７番地・９４６番地合併」を個別に照合します。両方の地番を含む対応をこの施設の読みの根拠に使い、並び順と合併の記載は取得原文に保持します。[福岡県神社庁の筑後エリア一覧](https://fukuoka-jinjacho.or.jp/area/chikugo/)・[日吉神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8290005011551)
+
 木津川市の「平尾里屋敷」と「山城町平尾里屋敷」は、市の合併時対照と郵便番号資料を根拠に、同じ全地番を持つ所在地の比較に用います。和伎座天乃夫岐賣神社では神社庁と木津川市の原住所をそれぞれ保持し、法人名の別のフリガナも調査記録に保存します。[木津川市の合併時住所対照](https://www.city.kizugawa.lg.jp/0000000783.html)・[木津川市の涌出宮資料](https://www.city.kizugawa.lg.jp/0000001995.html)
 
 国税庁資料は正式名称・全地番・一意な存続法人・明示された全文カナを照合します。大書きカナを推測修正しません。法人種別の接頭辞や登録画像のある行には追加の証拠を要求します。画像行は個別の`image_reviews`に画像ID・URL・hashと元CSV行の対応がなければ保留します。

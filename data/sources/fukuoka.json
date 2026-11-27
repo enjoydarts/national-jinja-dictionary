@@ -39353,12 +39353,74 @@
           "surface": "大神宮"
         },
         {
-          "checked_at": "2026-11-09T08:24:38.140513+00:00",
+          "checked_at": "2026-11-27T04:04:51.427400+00:00",
           "evidence": "県神社庁の同一掲載枠に正式掲載名「日吉神社」と所在地「柳川市田脇946･947」を明記。神社名の全文読みは当該枠に掲載なし。",
           "facility_id": "aad3b1d7-39f2-549d-bbb5-4f142b735c58",
           "fetched_at": "2026-11-09T08:24:38.140513+00:00",
           "id": "061a7c8c-146b-5f3b-b4e2-5d8f93efdb24",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ひよしじんじゃ"
+              },
+              "expected_source_hash": "c1f850a505381e5b3d7c6824698a70e34aea2c531a9f40bd8d1703dc11e78d3b",
+              "facility_id": "aad3b1d7-39f2-549d-bbb5-4f142b735c58",
+              "identity_match": {
+                "agency_address": "柳川市田脇946･947",
+                "agency_name": "日吉神社",
+                "comparison_scope": "柳川市田脇の日吉神社の二筆",
+                "parcels": [
+                  "946",
+                  "947"
+                ],
+                "reference_address": "福岡県柳川市田脇９４７番地・９４６番地合併",
+                "reference_name": "日吉神社"
+              },
+              "original": {
+                "address": "柳川市田脇946･947",
+                "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
+                "name_raw": "日吉神社",
+                "reading_raw": ""
+              },
+              "reason": "筑後エリアの鎮座地と法人個票の田脇946・947の両方の地番を確認。法人個票は順序と合併の記載を原欄に保存し、明示フリガナをひらがなに変換。",
+              "references": [
+                {
+                  "address_raw": "福岡県柳川市田脇９４７番地・９４６番地合併",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8290005011551）",
+                  "checked_at": "2026-11-27T04:04:51.427400+00:00",
+                  "corporate_number": "8290005011551",
+                  "excerpt": "日吉神社 ／ ヒヨシジンジャ ／ 福岡県柳川市田脇９４７番地・９４６番地合併",
+                  "fetched_at": "2026-11-27T04:04:51.427400+00:00",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の商号又は名称・フリガナ・本店又は主たる事務所の所在地の各欄",
+                  "name_raw": "日吉神社",
+                  "page_hash": "20307e7e79b3dea82229e90647e7a3681c134489c340e9cbda7df6b8d3a88503",
+                  "reading_raw": "ヒヨシジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_register",
+                  "status": 200,
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 日吉神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8290005011551"
+                },
+                {
+                  "address_raw": "柳川市田脇946･947",
+                  "checked_at": "2026-11-27T03:43:24.862848+00:00",
+                  "excerpt": "日吉神社 ／ 柳川市田脇946･947",
+                  "fetched_at": "2026-11-27T03:43:24.862848+00:00",
+                  "locator": "筑後エリア 柳川市田脇の日吉神社の社名と所在地列",
+                  "name_raw": "日吉神社",
+                  "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
+                  "requested_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
+                  "source_kind": "official_agency",
+                  "status": 200,
+                  "title": "福岡県神社庁 筑後エリア",
+                  "url": "https://fukuoka-jinjacho.or.jp/area/chikugo/"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
           "name_raw": "日吉神社",
           "normalization": [
@@ -39366,11 +39428,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "6e551659c2a4a38b08d1aa2ecc1771fa1d26fa35bd2977c8b6498734c84aee3e",
-          "reading": "",
+          "reading": "ひよしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://fukuoka-jinjacho.or.jp/area/chikugo/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8290005011551",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -39496,6 +39558,20 @@
             "prefecture_code": "40",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ひよしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ひよしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "日吉神社",
             "wikipedia_article_refs": [
@@ -39535,7 +39611,7 @@
             "status": "pending",
             "surface": "日吉神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "日吉神社"
         },
         {
