@@ -222,6 +222,10 @@ def _reference_matches(ref,facility,entry,changes):
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
         value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
         value=re.sub(r'(?<=\d)の(?=\d)','-',value)
+        if (facility.get('prefecture_code')=='37' and facility.get('listed_name')=='幡羅八幡神社'
+            and set(changes)=={'reading'} and value=='高松市牟礼町原井手東651'):
+            # The prefecture documents 井手東 within 牟礼町原 at this locality.
+            return '高松市牟礼町原651'
         if (facility.get('prefecture_code')=='47' and facility.get('listed_name')=='宮古神社'
             and set(changes)=={'reading'} and value=='宮古島市平良市西里5-1'):
             # The agency's own link leads to the shrine at this single parcel.

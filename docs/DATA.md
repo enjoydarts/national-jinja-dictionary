@@ -245,6 +245,8 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 福岡市西区元岡の八坂神社は、県神社庁の原欄「元岡26411」と、法人個票の「大字元岡２６４１番地１」、現地記事の「元岡2641-1」を照合しました。この社名と町字・全地番の読み補完時に比較し、各資料の原住所を保持します。[八坂神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8290005000661)・[八坂神社の現地記録](https://ameblo.jp/sen23ka/entry-12530265636.html)
 
+高松市牟礼町原の幡羅八幡神社は、県神社庁の「牟礼町原井手東651番地」と県法人名簿の「牟礼町原６５１」を照合しました。県の農用地利用集積等促進計画35頁で、井手東は牟礼町原の字と確認できます。読み補完時の比較はこの社名と651の全地番に限定し、各資料の原住所を保持します。[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf)・[香川県の農用地利用集積等促進計画](https://www.pref.kagawa.lg.jp/documents/60718/1ninkar80330.pdf)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行

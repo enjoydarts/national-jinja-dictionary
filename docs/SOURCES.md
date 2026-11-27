@@ -1122,6 +1122,8 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 高松市の保留110登録を公開資料183件と照合し、市の祭礼索引251リンクから保留のある町域126件の本文、指定文化財14分類、PDF5点94頁を確認しました。県名簿の高松市・神社本庁164行では、80登録の社名と所在地が対応しました。幡羅八幡神社は小字、平石井神社は指定樹の地番、豊玉姫神社は両地番と全文かなの資料をそれぞれ確認しています。北杜市の保留104登録では、県名簿の現旧各64登録、国税庁月次67登録、地域祭礼表47登録で社名と全所在地が対応し、重複を除くと72登録です。旧村誌は公開目録を確認しました。高松・北杜の新規採用は0件です。[高松市の指定文化財](https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/bunka/bunkazai/shiteibunkazai/index.html)・[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf)・[山梨県宗教法人名簿](https://www.pref.yamanashi.jp/documents/7901/r71231_syuukyouhoujinnmeibo.pdf)
 
+高松市牟礼町原の幡羅八幡神社は、前回保留した小字の所属を県の計画資料35頁で確認しました。神社庁の牟礼町原井手東651番地、県名簿6頁の牟礼町原６５１を同じ社名と全地番で照合し、別々の現地記事に明記された全文かな「はらはちまんじんじゃ」を補完しました。各住所の原欄を保持しました。[香川県の農用地利用集積等促進計画](https://www.pref.kagawa.lg.jp/documents/60718/1ninkar80330.pdf)・[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf)・[神社と古事記](https://www.buccyake-kojiki.com/archives/1060581317.html)・[神社巡りジャパン](https://jinjamegurijapan.jp/5200/)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

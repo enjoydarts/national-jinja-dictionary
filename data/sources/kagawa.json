@@ -84963,12 +84963,87 @@
           "surface": "日抱神社"
         },
         {
-          "checked_at": "2026-11-08T14:32:39.145677+00:00",
+          "checked_at": "2026-11-26T14:57:35.886202+00:00",
           "evidence": "li.c-entries__item a[href=\"https://kagawakenjinjacho.or.jp/shrine/%e5%b9%a1%e7%be%85%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/\"]: 名称=幡羅八幡神社; 掲載読み=; 所在地=高松市牟礼町原井手東651番地",
           "facility_id": "9fa4372a-c119-5962-8d16-c8dbda1fda7f",
           "fetched_at": "2026-11-08T14:32:39.145677+00:00",
           "id": "82f31434-73ac-5a41-88cc-c0981b20450d",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "はらはちまんじんじゃ"
+              },
+              "expected_source_hash": "50bc27f6bd69d035ab23413cc1ef296dd8436a20cb070cb31e39b5832a6d246b",
+              "facility_id": "9fa4372a-c119-5962-8d16-c8dbda1fda7f",
+              "identity_match": {
+                "agency_address": "高松市牟礼町原井手東651番地",
+                "agency_name": "幡羅八幡神社",
+                "prefecture_documented_subdistrict": "井手東",
+                "prefecture_register_address": "高松市牟礼町原６５１",
+                "reference_address": "香川県高松市牟礼町原651",
+                "reference_name": "幡羅八幡神社"
+              },
+              "original": {
+                "address": "高松市牟礼町原井手東651番地",
+                "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/27/",
+                "name_raw": "幡羅八幡神社",
+                "reading_raw": ""
+              },
+              "reason": "県神社庁の個別欄は牟礼町原井手東651番地、県法人名簿は同社名と牟礼町原６５１。県の促進計画で牟礼町原に属する字「井手東」を確認し、同じ社名と651の全地番を載せる別々の現地記事で全文かなが一致。読みのみ補完し、各資料の原住所を保持する。",
+              "references": [
+                {
+                  "address_raw": "香川県高松市牟礼町原651",
+                  "checked_at": "2026-11-26T14:57:35.886202+00:00",
+                  "excerpt": "幡羅八幡神社（はらはちまんじんじゃ） / 香川県高松市牟礼町原651",
+                  "locator": "主本文冒頭の社号と全文かな・末尾住所欄",
+                  "name_raw": "幡羅八幡神社",
+                  "page_hash": "36795c2c407af6ccd26aa56708025013a313fc07b48605994c2e9d8056e8a59e",
+                  "reading_raw": "はらはちまんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "independent_shrine_article",
+                  "title": "幡羅八幡神社 香川県高松市牟礼町原 - 神社と古事記",
+                  "url": "https://www.buccyake-kojiki.com/archives/1060581317.html"
+                },
+                {
+                  "address_raw": "香川県高松市牟礼町原６５１",
+                  "checked_at": "2026-11-26T14:57:35.868585+00:00",
+                  "excerpt": "幡羅八幡神社 / はらはちまんじんじゃ / 香川県高松市牟礼町原６５１",
+                  "locator": "主本文見出し直後・鎮座地欄",
+                  "name_raw": "幡羅八幡神社",
+                  "page_hash": "6d29b1a4c9cdec30020345d05dffb155cb7e2a2c6915549c15f061d1132aff6a",
+                  "reading_raw": "はらはちまんじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "independent_shrine_article",
+                  "title": "幡羅八幡神社 - 神社巡りジャパン",
+                  "url": "https://jinjamegurijapan.jp/5200/"
+                },
+                {
+                  "address_raw": "高松市牟礼町原井手東651番地",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-26T14:57:36.429020+00:00",
+                  "excerpt": "幡羅八幡神社 / 高松市牟礼町原井手東651番地",
+                  "locator": "個別本文の神社名欄・鎮座地欄",
+                  "name_raw": "幡羅八幡神社",
+                  "page_hash": "69d315951e5b0aaf6e379ff9cd37ae9ffd30bfef01ff83341ab53eecfbaf2920",
+                  "source_kind": "official_agency",
+                  "title": "幡羅八幡神社 - 香川県神社庁",
+                  "url": "https://kagawakenjinjacho.or.jp/shrine/%e5%b9%a1%e7%be%85%e5%85%ab%e5%b9%a1%e7%a5%9e%e7%a4%be/"
+                },
+                {
+                  "address_raw": "高松市牟礼町原６５１",
+                  "checked_at": "2026-11-26T05:17:16.709707+00:00",
+                  "excerpt": "幡羅八幡神社 / 高松市牟礼町原６５１",
+                  "locator": "6頁、No.161",
+                  "name_raw": "幡羅八幡神社",
+                  "page_hash": "bdb72aa45816a92bd8c4ba61c313c11236591c0b928eab0253c856ff0e4bcade",
+                  "source_kind": "prefecture_corporate_register",
+                  "title": "香川県宗教法人名簿（神道系）",
+                  "url": "https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/27/",
           "name_raw": "幡羅八幡神社",
           "normalization": [
@@ -84976,11 +85051,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "751c9ca99902818bf54d4621ae0d2f07716edb372467a00383cdd6be472e6ec4",
-          "reading": "",
+          "reading": "はらはちまんじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://kagawakenjinjacho.or.jp/shrine/page/27/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.buccyake-kojiki.com/archives/1060581317.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -85104,6 +85179,20 @@
             "prefecture_code": "37",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "はらはちまんじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "はらはちまんじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "幡羅八幡神社",
             "wikipedia_article_refs": [],
@@ -85134,7 +85223,7 @@
             "status": "pending",
             "surface": "幡羅八幡神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "幡羅八幡神社"
         },
         {

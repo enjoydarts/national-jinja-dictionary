@@ -193,3 +193,27 @@ class PublishedAddressFormsTest(unittest.TestCase):
                     '40', '福岡県', name, 'やさかじんじゃ', acquired, printed,
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_hara_shrine_compares_the_documented_subdistrict_omission(self):
+        acquired = '高松市牟礼町原井手東651番地'
+        printed = '香川県高松市牟礼町原651'
+        dataset, proposal = self.fixture(
+            '37', '香川県', '幡羅八幡神社', 'はらはちまんじんじゃ', acquired, printed,
+        )
+        result = apply_corrections(dataset, proposal)
+        self.assertEqual(len(eligible(result)), 1)
+        self.assertEqual(result['facilities'], dataset['facilities'])
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_hara_subdistrict_comparison_keeps_the_name_and_parcel_scope(self):
+        for name, acquired, printed in (
+            ('幡羅八幡神社', '高松市牟礼町原井手東651番地', '高松市牟礼町原651-1'),
+            ('幡羅八幡神社', '高松市牟礼町原上井手西651番地', '高松市牟礼町原651'),
+            ('幡羅八幡神社', '高松市牟礼町原井手東652番地', '高松市牟礼町原652'),
+            ('別神社', '高松市牟礼町原井手東651番地', '高松市牟礼町原651'),
+        ):
+            with self.subTest(name=name, acquired=acquired, printed=printed):
+                dataset, proposal = self.fixture(
+                    '37', '香川県', name, 'はらはちまんじんじゃ', acquired, printed,
+                )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
