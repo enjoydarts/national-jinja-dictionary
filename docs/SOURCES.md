@@ -1302,6 +1302,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 越前市国中町58-27の国中神社は、同地番の法人名に旧字体「國中神社」を確認しました。個票にフリガナの記載がなく、神社庁原表の「くになかちょう」は所在地を指すため保留です。福井の保留は2登録から1登録、全国では**9,170 → 9,169登録**となりました。[福井県神社庁の個別案内](https://www.jinja-fukui.jp/detail/index.php?ID=20160815_164650)・[国税庁の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3210005007479)
 
+### 京都市伏見区・淀生津の天満宮の地番照合（2026-11-27）
+
+京都市の「区民の誇りの木」F06は淀生津の天満宮の位置と境内写真を掲載しています。市の地番図で淀生津町1,293筆を照合し、OpenStreetMapの天満宮の地点、本殿・拝殿の各4頂点と中心の計11点が356-1の図形内に入ることを確認しました。国税庁個票の「テンマングウ」を採用し、神社庁の鎮座地「一丁道1」、法人所在地「356番地」、市の地番図の「356-1」をそれぞれ原値のまま保持しました。全国の保留は**9,169 → 9,168登録**です。[京都市の樹木案内](https://www.city.kyoto.lg.jp/kensetu/page/0000022469.html)・[国税庁の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2130005001607)
+
+位置照合は京都市固定資産税（土地）地番図データ（京都市、CC BY 4.0）と © OpenStreetMap contributors の公開地物を加工しました。地番図は参考位置の照合に使い、権利関係や地番変更履歴の証明には使用していません。地図や地物の形状は収録せず、出典と照合結果を保存しました。[京都市のデータ](https://data.city.kyoto.lg.jp/resource/?id=20504)・[京都市の利用規約](https://data.city.kyoto.lg.jp/resource/?id=20502)・[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)・[OpenStreetMapのライセンス](https://www.openstreetmap.org/copyright)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
