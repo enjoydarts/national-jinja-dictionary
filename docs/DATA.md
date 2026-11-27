@@ -132,6 +132,8 @@ IME出力時は読み・表記・出力先品詞が同じ行を重複除去し�
 
 大堰神社、熊手八幡宮、金立神社は、社名の全文読みと鎮座地の照合に別々の資料を用います。照合は各社の原社名・原住所と、同一施設を確認する各資料の該当箇所に限ります。熊手八幡宮は冊子のルビにある空白だけを取り除きます。金立神社は上宮の石造神殿・拝殿を明記する市史跡資料と神社庁の鎮座地を参照します。読み資料の住所欄は空欄で保持し、各資料の原欄と出典を保存します。[大堰神社の国土交通省資料](https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html#anchor031)・[熊手八幡宮の町冊子](https://www.my-kagawa.jp/files/user/site/dd5996c1b191e7ca81631b1f5ab2e69fb5a1229e.pdf#page=2)・[金立神社上宮の史跡解説](https://www.city.saga.lg.jp/bunka-sports/rekishi-bunkazai/4/3/2281.html)
 
+香美市梅久保の仁井田神社は、神社庁の1230番地ロと、法人個票の字向田1230番地ロを照合しました。登記所備付地図には同大字の「1230-ﾛ」が一筆あり、隣接するカナ枝番を区別できます。平戸市の淀姫神社は、神社庁の大字大島西宇戸免字石原1568と法人個票の西宇戸字石原1568を照合しました。歴史地名資料と県のため池台帳で西宇戸免・西宇戸の対応を確認しています。比較は各社の社名・町字・全地番に限り、原欄を保持します。[仁井田神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4490005004497)・[法務省地図データの高知県再配布版](https://github.com/amx-project/kuwanauchi39kochi/tree/7c4284174e3a3cf174492f3b6b6297988dbb79f7)・[淀姫神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3310005006116)・[長崎県のため池台帳](https://www.pref.nagasaki.jp/fs/8/5/2/8/_/_____________R8_3_____.pdf#page=20)
+
 ## 再取得と保存
 
 部分取得で既存施設が欠ける場合は前回の正本を保持します。保存できた範囲・失敗・停止理由は`collection`と共通索引の取得状態記録に記録します。

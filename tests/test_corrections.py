@@ -40,6 +40,7 @@ class NagasakiDocumentedParcelTest(unittest.TestCase):
     def test_comparison_preserves_both_parcels_and_each_branch(self):
         for municipality, name, acquired, alternate, other in (
             ('壱岐市', '八坂神社', '郷ノ浦町郷ノ浦313番地･314番地', '郷ノ浦町郷ノ浦313･314', '郷ノ浦町郷ノ浦313'),
+            ('平戸市', '淀姫神社', '大島村大字大島西宇戸免字石原1568番地', '大島村西宇戸字石原１５６８番地', '大島村西宇戸字石原1568-1'),
             ('南松浦郡新上五島町', '天満神社', '岩瀬浦郷字杉ﾉ本642番地2', '岩瀬浦郷642-2', '岩瀬浦郷642-3'),
         ):
             with self.subTest(name=name):
@@ -57,6 +58,21 @@ class NagasakiDocumentedParcelTest(unittest.TestCase):
                 ref.update(address_raw=municipality + other,
                            excerpt=name + ' かくうじんじゃ ' + municipality + other)
                 self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+
+class KochiKanaParcelTest(unittest.TestCase):
+    def test_umekubo_distinguishes_kana_parcel_branches(self):
+        address = '香美市香北町梅久保1230番地ロ'
+        data = build_dataset('kochi', '39', '高知県', 'Synthetic test', [
+            row(name='仁井田神社', address=address, municipality='香美市'),
+        ])
+        proposal = correction(data, {'reading': 'にいだじんしゃ'})
+        ref = proposal['entries'][data['entries'][0]['id']]['references'][0]
+        address_with_aza = '高知県香美市香北町梅久保字向田１２３０番地ロ'
+        ref.update(address_raw=address_with_aza, excerpt='仁井田神社 にいだじんしゃ '+address_with_aza)
+        self.assertEqual(len(eligible(apply_corrections(data, proposal))), 1)
+        ref.update(address_raw=address_with_aza[:-1]+'イ', excerpt=ref['excerpt'][:-1]+'イ')
+        self.assertEqual(eligible(apply_corrections(data, proposal)), [])
 
 
 class OzekiJoinedReadingTest(unittest.TestCase):

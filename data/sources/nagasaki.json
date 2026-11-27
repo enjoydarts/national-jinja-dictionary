@@ -83343,12 +83343,92 @@
           "surface": "水神社"
         },
         {
-          "checked_at": "2026-11-10T12:26:23.745274+00:00",
+          "checked_at": "2026-11-27T04:45:41.399472+00:00",
           "evidence": "table[3] tr[4]: 名称=淀姫神社; 掲載読み=; 所在地=平戸市大島村大字大島西宇戸免字石原1568番地",
           "facility_id": "f0121fff-d1bd-5dde-aef6-4c50e4be5227",
           "fetched_at": "2026-11-10T12:26:23.745274+00:00",
           "id": "13a5ae64-07b5-5145-b16b-e3e3e24b79aa",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "よどひめじんじゃ"
+              },
+              "expected_source_hash": "c39f0f051c2756a065b99777bd5585c5cadd1fc58fd1970664dccc12cfa63530",
+              "facility_id": "f0121fff-d1bd-5dde-aef6-4c50e4be5227",
+              "identity_match": "神社庁と法人の西宇戸字石原1568を照合。歴史地名資料の西宇戸免と現在地名、県ため池台帳の大島村西宇戸と西宇戸免の対応を確認。",
+              "original": {
+                "address": "平戸市大島村大字大島西宇戸免字石原1568番地",
+                "listing_url": "https://nagasaki-jinjacho.or.jp/hirado.html",
+                "name_raw": "淀姫神社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁現行個票の社名全文フリガナを確認。",
+              "references": [
+                {
+                  "address_raw": "長崎県平戸市大島村西宇戸字石原１５６８番地",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T04:45:41.399472+00:00",
+                  "corporate_number": "3310005006116",
+                  "excerpt": "淀姫神社 ／ ヨドヒメジンジャ ／ 長崎県平戸市大島村西宇戸字石原１５６８番地",
+                  "locality_corroboration": [
+                    {
+                      "checked_at": "2026-11-27T04:45:41.400047+00:00",
+                      "observations": [
+                        {
+                          "address_raw": "大島村西宇戸",
+                          "locator": "現在地名欄"
+                        },
+                        {
+                          "address_raw": "西宇戸免",
+                          "locator": "明暦二年の畑方帳抜書についての記述"
+                        }
+                      ],
+                      "page_hash": "91496a56d3688d8edee17b559f0f2d449ff9d7e5173fcce3471a1a7a70fa1758",
+                      "source_kind": "historical_gazetteer",
+                      "title": "日本歴史地名大系 西宇土村",
+                      "url": "https://kotobank.jp/word/%E8%A5%BF%E5%AE%87%E5%9C%9F%E6%9D%91-3100369"
+                    },
+                    {
+                      "address_raw": "大島村西宇戸字湯田ノ本822",
+                      "address_role": "pond_location",
+                      "checked_at": "2026-11-27T04:45:41.399999+00:00",
+                      "locality_label_raw": "西宇戸免",
+                      "locator": "PDF第20頁 藤畑池 422070107",
+                      "page_hash": "82e82a54b33a309bea4959b7b5086076d004f991ce3090de5e6fb97e3dc06983",
+                      "source_kind": "government_locality_reference",
+                      "survey_record_name": "藤畑池",
+                      "title": "長崎県のため池データベース",
+                      "url": "https://www.pref.nagasaki.jp/fs/8/5/2/8/_/_____________R8_3_____.pdf"
+                    }
+                  ],
+                  "locator": "最新情報の法人番号・商号又は名称・フリガナ・主たる事務所所在地",
+                  "name_raw": "淀姫神社",
+                  "page_hash": "d381e47c776aad804ab7eaa81e1a77e2e88828738b8f95c0bb421aab2576f2ea",
+                  "reading_raw": "ヨドヒメジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_profile",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "淀姫神社の情報",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3310005006116"
+                },
+                {
+                  "address_raw": "平戸市大島村大字大島西宇戸免字石原1568番地",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-27T04:45:41.399864+00:00",
+                  "excerpt": "淀姫神社 ／ 平戸市大島村大字大島西宇戸免字石原1568番地",
+                  "locator": "table[3] tr[4]",
+                  "name_raw": "淀姫神社",
+                  "page_hash": "41f57834879096dd1edcb01fc3ed84a7d527cebd8e6d565c4ef79f2bf7053974",
+                  "reading_raw": "",
+                  "source_kind": "official_agency",
+                  "title": "淀姫神社",
+                  "url": "https://nagasaki-jinjacho.or.jp/hirado.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://nagasaki-jinjacho.or.jp/hirado.html",
           "name_raw": "淀姫神社",
           "normalization": [
@@ -83356,11 +83436,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "41f57834879096dd1edcb01fc3ed84a7d527cebd8e6d565c4ef79f2bf7053974",
-          "reading": "",
+          "reading": "よどひめじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://nagasaki-jinjacho.or.jp/hirado.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3310005006116",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -83409,6 +83489,20 @@
             "prefecture_code": "42",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "よどひめじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "よどひめじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "淀姫神社",
             "wikipedia_article_refs": [],
@@ -83439,7 +83533,7 @@
             "status": "pending",
             "surface": "淀姫神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "淀姫神社"
         },
         {

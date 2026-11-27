@@ -219417,12 +219417,79 @@
           "surface": "竈戸神社"
         },
         {
-          "checked_at": "2026-11-09T02:10:20.278938+00:00",
+          "checked_at": "2026-11-27T04:45:48.598485+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/59bce90e-d217-46d9-ba2d-484631b361c0: 名称=仁井田神社; 掲載読み=; 所在地=高知県香美市香北町梅久保1230番地ロ",
           "facility_id": "9012b724-d4c8-556f-81bb-1a739984bf63",
           "fetched_at": "2026-11-09T02:10:20.278938+00:00",
           "id": "0b5899ff-4470-5445-95a5-6557b48889df",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "にいだじんしゃ"
+              },
+              "expected_source_hash": "28e0e65dbf2f4e12ff7690e5b41c230888a107dd0690f4b13835a28ddf85d75c",
+              "facility_id": "9012b724-d4c8-556f-81bb-1a739984bf63",
+              "identity_match": "神社庁と法人の社名・梅久保1230番地ロが対応し、登記所備付地図には同大字の1230-ﾛが一筆。小字欄は法人個票の字向田を原欄に保持。",
+              "original": {
+                "address": "高知県香美市香北町梅久保1230番地ロ",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=123",
+                "name_raw": "仁井田神社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁現行個票の全文フリガナ「ニイダジンシャ」を採用。",
+              "references": [
+                {
+                  "address_raw": "高知県香美市香北町梅久保字向田１２３０番地ロ",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T04:45:48.598485+00:00",
+                  "corporate_number": "4490005004497",
+                  "excerpt": "仁井田神社 ／ ニイダジンシャ ／ 高知県香美市香北町梅久保字向田１２３０番地ロ",
+                  "locality_corroboration": [
+                    {
+                      "address_role": "parcel_in_cadastral_map",
+                      "checked_at": "2026-11-27T04:46:50+00:00",
+                      "chiban_raw": "1230-ﾛ",
+                      "koaza_code_raw": "0000",
+                      "locator": "39212-4913-55.xml 筆[@id=H000000869]",
+                      "municipality": "香美市",
+                      "oaza_raw": "香北町梅久保",
+                      "page_hash": "0869e6e15407f8b4a999234d9ea2fb045ce8b9353b7af049a5b63ac2eadd74f5",
+                      "redistributor": "amx-project",
+                      "source_kind": "government_parcel_map",
+                      "source_publisher": "法務省",
+                      "terms_url": "https://github.com/amx-project/kuwanauchi39kochi/blob/7c4284174e3a3cf174492f3b6b6297988dbb79f7/LICENSE.md",
+                      "title": "法務省 登記所備付地図 高知県公開再配布",
+                      "url": "https://raw.githubusercontent.com/amx-project/kuwanauchi39kochi/7c4284174e3a3cf174492f3b6b6297988dbb79f7/xml/39212-4913-55.zip"
+                    }
+                  ],
+                  "locator": "最新情報の法人番号・商号又は名称・フリガナ・主たる事務所所在地",
+                  "name_raw": "仁井田神社",
+                  "page_hash": "fc8e6f83ab8fad0c43ca2cbd486090c7dd52ee5b6e939e16020c6ac8afecba51",
+                  "reading_raw": "ニイダジンシャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_profile",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "仁井田神社の情報",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4490005004497"
+                },
+                {
+                  "address_raw": "高知県香美市香北町梅久保1230番地ロ",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-27T04:49:31.681000+00:00",
+                  "excerpt": "仁井田神社 ／ 高知県香美市香北町梅久保1230番地ロ",
+                  "locator": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/59bce90e-d217-46d9-ba2d-484631b361c0",
+                  "name_raw": "仁井田神社",
+                  "page_hash": "abf0131089dc57a1933ca2b75e27df1bb380792b95fe524efb3accc02e0e726c",
+                  "reading_raw": "",
+                  "source_kind": "official_agency",
+                  "title": "仁井田神社",
+                  "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=123"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=123",
           "name_raw": "仁井田神社",
           "normalization": [
@@ -219430,11 +219497,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "cc5fcf2a179b5461ba88e057c43babcf54fcec5c1d0b21d2ca5ff1f3a47ecc4c",
-          "reading": "",
+          "reading": "にいだじんしゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=123",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4490005004497",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -219498,6 +219565,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "にいだじんしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "にいだじんしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "仁井田神社",
             "wikipedia_article_refs": [],
@@ -219528,7 +219609,7 @@
             "status": "pending",
             "surface": "仁井田神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "仁井田神社"
         },
         {

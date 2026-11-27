@@ -139737,12 +139737,140 @@
           "surface": "天神神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:41.593602+00:00",
+          "checked_at": "2026-11-25T07:49:54.317599+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「天満神社」、郵便番号「620-0855」、所在地「福知山市土師1779」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "ced51f40-67c2-5d2f-8bba-acdd217977da",
           "fetched_at": "2026-11-09T08:51:41.593602+00:00",
           "id": "e85fe4d1-5678-5007-b61f-d50140a63ef5",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "てんまじんじゃ"
+              },
+              "expected_source_hash": "8296122046c0ce56de076aa0c3a711ac41a03d76398f416c567bfbf65360d90c",
+              "facility_id": "ced51f40-67c2-5d2f-8bba-acdd217977da",
+              "identity_match": {
+                "agency_address": "福知山市土師1779",
+                "agency_name": "天満神社",
+                "effective_address": "福知山市土師1779",
+                "reference_address": "京都府福知山市字土師１７７９番地",
+                "reference_name": "天満神社"
+              },
+              "original": {
+                "address": "福知山市土師1779",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+                "name_raw": "天満神社",
+                "reading_raw": ""
+              },
+              "reason": "正式大字の字土師はABR row 562762。市説明に基づく大字標識を除くと、神社庁の土師1779と国税庁個票の全地番が一致。",
+              "references": [
+                {
+                  "address_identity_proof": {
+                    "agency_address_raw": "福知山市土師1779",
+                    "expected_source_hash": "8296122046c0ce56de076aa0c3a711ac41a03d76398f416c567bfbf65360d90c",
+                    "kind": "registered_abr_town_spelling",
+                    "registry_csv_row": 24863,
+                    "registry_page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                    "town_master": {
+                      "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                      "checked_at": "2026-11-26T13:24:56.921364+00:00",
+                      "license_checked_at": "2026-11-26T13:24:47.766411+00:00",
+                      "license_hash": "7eb89335f31b26b273286eb7b239c91cefd57443c0399f47acc300b9e0226b8b",
+                      "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                      "member": "mt_town_all.csv",
+                      "page_hash": "a04309d2dfd4211d57402441bde7a60b7b1aa18da53f2ab51d9f59a0b7ac4e9f",
+                      "processed_notice": "「全国 町字マスター」（デジタル庁）を加工して作成。比較した原欄を抜粋。",
+                      "row": {
+                        "ablt_date": "",
+                        "chome": "",
+                        "city": "福知山市",
+                        "county": "",
+                        "csv_row": 562762,
+                        "efct_date": "1947-04-17",
+                        "koaza": "",
+                        "lg_code": "262013",
+                        "machiaza_id": "0087000",
+                        "machiaza_type": "1",
+                        "oaza_cho": "字土師",
+                        "pref": "京都府",
+                        "status_flg": "1",
+                        "ward": ""
+                      },
+                      "source_kind": "government_address_town_master",
+                      "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                    }
+                  },
+                  "address_raw": "京都府福知山市字土師１７７９番地",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+                  "checked_at": "2026-11-25T07:49:54.317599+00:00",
+                  "corporate_number": "2130005010310",
+                  "csv_row": 24863,
+                  "excerpt": "天満神社 / テンマジンジャ / 京都府福知山市字土師１７７９番地",
+                  "file_id": "28435",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "Unicode CSV file ID 28435; 26_kyoto_all_20261030.csv; row 24863; corporateNumber=2130005010310",
+                  "name_raw": "天満神社",
+                  "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+                  "reading_raw": "テンマジンジャ",
+                  "snapshot": "20261030",
+                  "source_fields": {
+                    "addressImageId": "",
+                    "addressOutside": "",
+                    "addressOutsideImageId": "",
+                    "assignmentDate": "2015-10-05",
+                    "changeCause": "",
+                    "changeDate": "2015-10-05",
+                    "cityCode": "201",
+                    "cityName": "福知山市",
+                    "closeCause": "",
+                    "closeDate": "",
+                    "corporateNumber": "2130005010310",
+                    "correct": "1",
+                    "enAddressOutside": "",
+                    "enCityName": "",
+                    "enName": "",
+                    "enPrefectureName": "",
+                    "furigana": "テンマジンジャ",
+                    "hihyoji": "0",
+                    "kind": "399",
+                    "latest": "1",
+                    "name": "天満神社",
+                    "nameImageId": "",
+                    "postCode": "6200857",
+                    "prefectureCode": "26",
+                    "prefectureName": "京都府",
+                    "process": "01",
+                    "sequenceNumber": "24863",
+                    "streetNumber": "字土師１７７９番地",
+                    "successorCorporateNumber": "",
+                    "updateDate": "2020-02-20"
+                  },
+                  "source_kind": "government_corporate_register",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 全件データ",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                  "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
+                  "zip_member": "26_kyoto_all_20261030.csv"
+                },
+                {
+                  "address_raw": "京都府福知山市字土師１７７９番地",
+                  "checked_at": "2026-11-27T04:44:43.916318+00:00",
+                  "corporate_number": "2130005010310",
+                  "excerpt": "天満神社 ／ テンマジンジャ ／ 京都府福知山市字土師１７７９番地",
+                  "locator": "最新情報の法人番号・商号又は名称・フリガナ・所在地欄",
+                  "name_raw": "天満神社",
+                  "page_hash": "53b13e2bf77467469c455f2e54d4a17b16274c22a3e9c5e617f03e4d7493c3a9",
+                  "published_update_date_raw": "令和2年2月20日",
+                  "reading_raw": "テンマジンジャ",
+                  "source_kind": "corporate_number_public_profile",
+                  "title": "天満神社の情報｜国税庁法人番号公表サイト",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2130005010310"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
           "name_raw": "天満神社",
           "normalization": [
@@ -139750,11 +139878,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-          "reading": "",
+          "reading": "てんまじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -139849,6 +139977,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんまじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんまじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "天満神社",
             "wikipedia_article_refs": [
@@ -139888,7 +140030,7 @@
             "status": "pending",
             "surface": "天満神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天満神社"
         },
         {
@@ -141769,12 +141911,141 @@
           "surface": "一宮神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:41.593602+00:00",
+          "checked_at": "2026-11-25T07:49:54.317599+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「一宮神社」、郵便番号「629-0986」、所在地「福知山市宮垣小字堂ノ田和456-3」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "70f6f856-33c9-5ba9-836e-9c1486c4f138",
           "fetched_at": "2026-11-09T08:51:41.593602+00:00",
           "id": "364b49f1-d73e-5c82-ba9e-ba8795c76571",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "いちのみやじんじゃ"
+              },
+              "expected_source_hash": "8b5796cf4abe4fabf05fdb90da577361cf976f43830b8942e8748320c9a688a5",
+              "facility_id": "70f6f856-33c9-5ba9-836e-9c1486c4f138",
+              "identity_match": {
+                "agency_address": "福知山市宮垣小字堂ノ田和456-3",
+                "agency_name": "一宮神社",
+                "effective_address": "福知山市宮垣小字堂ノ田和456-3",
+                "reference_address": "京都府福知山市字宮垣小字堂ノ田和４５６番地の３",
+                "reference_name": "一宮神社"
+              },
+              "original": {
+                "address": "福知山市宮垣小字堂ノ田和456-3",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
+                "name_raw": "一宮神社",
+                "reading_raw": ""
+              },
+              "reason": "正式大字の字宮垣はABR row 562775、両資料の小字堂ノ田和と456-3が一致。原郵便番号629-0986を保持し、日本郵便の町域郵便番号620-0986を別に記録する。",
+              "references": [
+                {
+                  "address_identity_proof": {
+                    "agency_address_raw": "福知山市宮垣小字堂ノ田和456-3",
+                    "expected_source_hash": "8b5796cf4abe4fabf05fdb90da577361cf976f43830b8942e8748320c9a688a5",
+                    "kind": "registered_abr_town_spelling",
+                    "registry_csv_row": 50602,
+                    "registry_page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                    "shared_koaza_raw": "小字堂ノ田和",
+                    "town_master": {
+                      "attribution": "出典：「全国 町字マスター」（デジタル庁）（https://dataset.address-br.digital.go.jp/）",
+                      "checked_at": "2026-11-26T13:24:56.921364+00:00",
+                      "license_checked_at": "2026-11-26T13:24:47.766411+00:00",
+                      "license_hash": "7eb89335f31b26b273286eb7b239c91cefd57443c0399f47acc300b9e0226b8b",
+                      "license_url": "https://www.digital.go.jp/policies/base_registry_address_tos",
+                      "member": "mt_town_all.csv",
+                      "page_hash": "a04309d2dfd4211d57402441bde7a60b7b1aa18da53f2ab51d9f59a0b7ac4e9f",
+                      "processed_notice": "「全国 町字マスター」（デジタル庁）を加工して作成。比較した原欄を抜粋。",
+                      "row": {
+                        "ablt_date": "",
+                        "chome": "",
+                        "city": "福知山市",
+                        "county": "",
+                        "csv_row": 562775,
+                        "efct_date": "1947-04-17",
+                        "koaza": "",
+                        "lg_code": "262013",
+                        "machiaza_id": "0100000",
+                        "machiaza_type": "1",
+                        "oaza_cho": "字宮垣",
+                        "pref": "京都府",
+                        "status_flg": "1",
+                        "ward": ""
+                      },
+                      "source_kind": "government_address_town_master",
+                      "url": "https://data.address-br.digital.go.jp/mt_town/mt_town_all.csv.zip"
+                    }
+                  },
+                  "address_raw": "京都府福知山市字宮垣小字堂ノ田和４５６番地の３",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/download/zenken/index.html）",
+                  "checked_at": "2026-11-25T07:49:54.317599+00:00",
+                  "corporate_number": "4130005010102",
+                  "csv_row": 50602,
+                  "excerpt": "一宮神社 / イチノミヤジンジャ / 京都府福知山市字宮垣小字堂ノ田和４５６番地の３",
+                  "file_id": "28435",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "Unicode CSV file ID 28435; 26_kyoto_all_20261030.csv; row 50602; corporateNumber=4130005010102",
+                  "name_raw": "一宮神社",
+                  "page_hash": "5e58e399b5d5753a722c3548ae3696f560b701acf1dce6eed39720621c953ba1",
+                  "processed_notice": "国税庁法人番号公表サイト（国税庁）を加工して作成。カタカナをひらがなに機械変換。",
+                  "reading_raw": "イチノミヤジンジャ",
+                  "snapshot": "20261030",
+                  "source_fields": {
+                    "addressImageId": "",
+                    "addressOutside": "",
+                    "addressOutsideImageId": "",
+                    "assignmentDate": "2015-10-05",
+                    "changeCause": "",
+                    "changeDate": "2015-10-05",
+                    "cityCode": "201",
+                    "cityName": "福知山市",
+                    "closeCause": "",
+                    "closeDate": "",
+                    "corporateNumber": "4130005010102",
+                    "correct": "1",
+                    "enAddressOutside": "",
+                    "enCityName": "",
+                    "enName": "",
+                    "enPrefectureName": "",
+                    "furigana": "イチノミヤジンジャ",
+                    "hihyoji": "0",
+                    "kind": "399",
+                    "latest": "1",
+                    "name": "一宮神社",
+                    "nameImageId": "",
+                    "postCode": "6200986",
+                    "prefectureCode": "26",
+                    "prefectureName": "京都府",
+                    "process": "01",
+                    "sequenceNumber": "50602",
+                    "streetNumber": "字宮垣小字堂ノ田和４５６番地の３",
+                    "successorCorporateNumber": "",
+                    "updateDate": "2018-12-20"
+                  },
+                  "source_kind": "government_corporate_register",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 全件データ",
+                  "url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+                  "verification_method": "exact registered name and bound full numeric address; literal registered kana; no inferred small kana",
+                  "zip_member": "26_kyoto_all_20261030.csv"
+                },
+                {
+                  "address_raw": "京都府福知山市字宮垣小字堂ノ田和４５６番地の３",
+                  "checked_at": "2026-11-27T04:44:39.758972+00:00",
+                  "corporate_number": "4130005010102",
+                  "excerpt": "一宮神社 ／ イチノミヤジンジャ ／ 京都府福知山市字宮垣小字堂ノ田和４５６番地の３",
+                  "locator": "最新情報の法人番号・商号又は名称・フリガナ・所在地欄",
+                  "name_raw": "一宮神社",
+                  "page_hash": "3fe1bdc843eccaf76c1502ca09ba8fa67128becf9e05dfbf0f9ad6d46f8e5967",
+                  "published_update_date_raw": "平成30年12月20日",
+                  "reading_raw": "イチノミヤジンジャ",
+                  "source_kind": "corporate_number_public_profile",
+                  "title": "一宮神社の情報｜国税庁法人番号公表サイト",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005010102"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
           "name_raw": "一宮神社",
           "normalization": [
@@ -141782,11 +142053,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "a70dafae06d72bd2e933fc9ff981e0f8b69e5997cfa79c908b6087f272d1bb08",
-          "reading": "",
+          "reading": "いちのみやじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/19.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/download/zenken/index.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -141850,6 +142121,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "いちのみやじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "いちのみやじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "一宮神社",
             "wikipedia_article_refs": [
@@ -141889,7 +142174,7 @@
             "status": "pending",
             "surface": "一宮神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "一宮神社"
         },
         {

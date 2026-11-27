@@ -171630,12 +171630,67 @@
           "surface": "金山神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:02.984632+00:00",
+          "checked_at": "2026-11-27T04:45:51.825290+00:00",
           "evidence": "諏訪神社 佐久市春日字清泰寺108番地",
           "facility_id": "6055562a-e322-519c-9781-2dfaf5361219",
           "fetched_at": "2026-11-08T14:31:02.984632+00:00",
           "id": "1dcd92e4-fd17-5b6d-a384-bc7c700c683d",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわじんじゃ"
+              },
+              "expected_source_hash": "3aafd023b946219638e559ba78dab302950a458eb3190f369ef4500764535cec",
+              "facility_id": "6055562a-e322-519c-9781-2dfaf5361219",
+              "identity_match": {
+                "agency_index_address": "佐久市春日字清泰寺108番地",
+                "city": "佐久市",
+                "detail_address": "佐久市春日字清泰寺108番地",
+                "detail_display_name_raw": "(下之宮)諏訪神社（すわじんじゃ）",
+                "exact_forward_index_href": "03tousin/02kitasaku/00000.htm",
+                "raw_locality_or_context_prefix": "(下之宮)"
+              },
+              "original": {
+                "address": "佐久市春日字清泰寺108番地",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/kitasaku.htm",
+                "name_raw": "諏訪神社",
+                "reading_raw": ""
+              },
+              "reason": "神社庁の当該一覧行から現在も到達する個別公式資料が社名に全文かなを併記。枕の注記と社名を区別。",
+              "references": [
+                {
+                  "address_raw": "佐久市春日字清泰寺108番地",
+                  "agency_detail_name_display_raw": "(下之宮)諏訪神社（すわじんじゃ）",
+                  "agency_index_binding": {
+                    "address_raw": "佐久市春日字清泰寺108番地",
+                    "checked_at": "2026-11-27T04:46:03.584697+00:00",
+                    "excerpt": "諏訪神社 佐久市春日字清泰寺108番地",
+                    "fetched_at": "2026-11-27T04:46:03.584697+00:00",
+                    "href_raw": "03tousin/02kitasaku/00000.htm",
+                    "href_resolved": "https://www.nagano-jinjacho.jp/shibu/03tousin/02kitasaku/00000.htm",
+                    "locator": "tr[289]",
+                    "name_raw": "諏訪神社",
+                    "page_hash": "1a2a4177c738d17d992bd220c18bdfe2f2f6cf46e6e72f5b0ae838e11f8b9c6c",
+                    "url": "https://www.nagano-jinjacho.jp/shibu/kitasaku.htm"
+                  },
+                  "checked_at": "2026-11-27T04:45:51.825290+00:00",
+                  "excerpt": "(下之宮)諏訪神社（すわじんじゃ） ／ 佐久市春日字清泰寺108番地",
+                  "fetched_at": "2026-11-27T04:45:51.825290+00:00",
+                  "locator": "神社名欄 tr[12]、鎮座地欄 tr[13]",
+                  "name_raw": "諏訪神社",
+                  "page_hash": "dfbe0680539caf219c99526afcd1b79214ab06f32c781335f7561a85bf2ae5c1",
+                  "qualification_raw": "(下之宮)",
+                  "reading_raw": "すわじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "official_agency",
+                  "status": 200,
+                  "title": "長野県神社庁 個別の神社紹介",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/03tousin/02kitasaku/00000.htm"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/kitasaku.htm",
           "name_raw": "諏訪神社",
           "normalization": [
@@ -171643,11 +171698,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "1a2a4177c738d17d992bd220c18bdfe2f2f6cf46e6e72f5b0ae838e11f8b9c6c",
-          "reading": "",
+          "reading": "すわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/kitasaku.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.nagano-jinjacho.jp/shibu/03tousin/02kitasaku/00000.htm",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -171750,6 +171805,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪神社",
             "wikipedia_article_refs": [
@@ -171797,7 +171866,7 @@
             "status": "pending",
             "surface": "諏訪神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪神社"
         },
         {
@@ -183276,12 +183345,67 @@
           "surface": "諏訪社"
         },
         {
-          "checked_at": "2026-11-08T14:31:08.376491+00:00",
+          "checked_at": "2026-11-27T04:46:57.264243+00:00",
           "evidence": "諏訪神社 384-0502 南佐久郡佐久穂町大字大日向字宮社594",
           "facility_id": "14ac8338-a9f2-5f2c-abbe-8aa9f5247901",
           "fetched_at": "2026-11-08T14:31:08.376491+00:00",
           "id": "5319fcd8-2535-59c4-b9b7-8658fa543948",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "すわじんじゃ"
+              },
+              "expected_source_hash": "99e6744ee72f6bad3b1e21af701a9f41845fb4b70886f8de9cf05aeea0a74bea",
+              "facility_id": "14ac8338-a9f2-5f2c-abbe-8aa9f5247901",
+              "identity_match": {
+                "agency_index_address": "南佐久郡佐久穂町大字大日向字宮社594",
+                "city": "南佐久郡佐久穂町",
+                "detail_address": "南佐久郡佐久穂町大日向字宮社594番地",
+                "detail_display_name_raw": "大日向　諏訪神社（すわじんじゃ）",
+                "exact_forward_index_href": "03tousin/03minamisaku/1044.htm",
+                "raw_locality_or_context_prefix": "大日向　"
+              },
+              "original": {
+                "address": "南佐久郡佐久穂町大字大日向字宮社594",
+                "listing_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
+                "name_raw": "諏訪神社",
+                "reading_raw": ""
+              },
+              "reason": "神社庁の当該一覧行から現在も到達する個別公式資料が社名に全文かなを併記。枕の注記と社名を区別。",
+              "references": [
+                {
+                  "address_raw": "南佐久郡佐久穂町大日向字宮社594番地",
+                  "agency_detail_name_display_raw": "大日向　諏訪神社（すわじんじゃ）",
+                  "agency_index_binding": {
+                    "address_raw": "南佐久郡佐久穂町大字大日向字宮社594",
+                    "checked_at": "2026-11-27T04:46:06.455842+00:00",
+                    "excerpt": "諏訪神社 384-0502 南佐久郡佐久穂町大字大日向字宮社594",
+                    "fetched_at": "2026-11-27T04:46:06.455842+00:00",
+                    "href_raw": "03tousin/03minamisaku/1044.htm",
+                    "href_resolved": "https://www.nagano-jinjacho.jp/shibu/03tousin/03minamisaku/1044.htm",
+                    "locator": "tr[113]",
+                    "name_raw": "諏訪神社",
+                    "page_hash": "e9b2f181ad380b40e028e4cc3986675276b2b55454b471c9c2f6d7daf2b6367a",
+                    "url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm"
+                  },
+                  "checked_at": "2026-11-27T04:46:57.264243+00:00",
+                  "excerpt": "大日向　諏訪神社（すわじんじゃ） ／ 南佐久郡佐久穂町大日向字宮社594番地",
+                  "fetched_at": "2026-11-27T04:46:57.264243+00:00",
+                  "locator": "神社名欄 tr[12]、鎮座地欄 tr[13]",
+                  "name_raw": "諏訪神社",
+                  "page_hash": "73dd8b202a915a6cbf2ec9b16c5be8db4a938d8dcb489b4e9e0f5e9759717c46",
+                  "qualification_raw": "大日向　",
+                  "reading_raw": "すわじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "official_agency",
+                  "status": 200,
+                  "title": "長野県神社庁 個別の神社紹介",
+                  "url": "https://www.nagano-jinjacho.jp/shibu/03tousin/03minamisaku/1044.htm"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
           "name_raw": "諏訪神社",
           "normalization": [
@@ -183289,11 +183413,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "e9b2f181ad380b40e028e4cc3986675276b2b55454b471c9c2f6d7daf2b6367a",
-          "reading": "",
+          "reading": "すわじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.nagano-jinjacho.jp/shibu/minamisaku.htm",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.nagano-jinjacho.jp/shibu/03tousin/03minamisaku/1044.htm",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -183394,6 +183518,20 @@
             "prefecture_code": "20",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "すわじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "すわじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "諏訪神社",
             "wikipedia_article_refs": [
@@ -183441,7 +183579,7 @@
             "status": "pending",
             "surface": "諏訪神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "諏訪神社"
         },
         {
