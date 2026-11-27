@@ -36,6 +36,29 @@ def aza_reference():
     return d,c,ref
 
 
+class NagasakiDocumentedParcelTest(unittest.TestCase):
+    def test_comparison_preserves_both_parcels_and_each_branch(self):
+        for municipality, name, acquired, alternate, other in (
+            ('壱岐市', '八坂神社', '郷ノ浦町郷ノ浦313番地･314番地', '郷ノ浦町郷ノ浦313･314', '郷ノ浦町郷ノ浦313'),
+            ('南松浦郡新上五島町', '天満神社', '岩瀬浦郷字杉ﾉ本642番地2', '岩瀬浦郷642-2', '岩瀬浦郷642-3'),
+        ):
+            with self.subTest(name=name):
+                address = municipality + acquired
+                data = build_dataset('nagasaki', '42', '長崎県', 'Synthetic test', [
+                    row(name=name, address=address, municipality=municipality, reading_raw='不明'),
+                ])
+                proposal = correction(data, {'reading': 'かくうじんじゃ'})
+                ref = proposal['entries'][data['entries'][0]['id']]['references'][0]
+                ref.update(address_raw=municipality + alternate,
+                           excerpt=name + ' かくうじんじゃ ' + municipality + alternate)
+                result = apply_corrections(data, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'][0]['address'], address)
+                ref.update(address_raw=municipality + other,
+                           excerpt=name + ' かくうじんじゃ ' + municipality + other)
+                self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+
 class ParcelRangeReferenceTest(unittest.TestCase):
     def candidate(self, address):
         acquired = '架空市乙町自88番地.至89番地'

@@ -804022,6 +804022,1655 @@
               "storage_note": "取得本文、画像、個人情報、キャッシュは含まない。現行検査結果を添え、原欄の違いは変換しない。"
             }
           }
+        },
+        {
+          "baseline_commit": "dc8f9117d1fe296d6904c79aba2d5854a77d5a7c",
+          "by_prefecture_before": {
+            "01": 345,
+            "02": 658,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 2,
+            "19": 985,
+            "20": 1594,
+            "21": 1,
+            "22": 2,
+            "23": 17,
+            "25": 851,
+            "26": 1017,
+            "28": 7,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 536,
+            "38": 1,
+            "39": 1614,
+            "40": 100,
+            "41": 89,
+            "42": 840,
+            "43": 512,
+            "47": 2
+          },
+          "checked_at": "2026-11-27T03:36:23.212503+00:00",
+          "dictionary_entries": {
+            "1422841e-4f95-5088-ab0a-25062eab1a8a": {
+              "address": "南松浦郡新上五島町船崎郷字色摩245番地",
+              "facility_id": "a266a379-ca7b-51a1-a6a2-5ea9c617796b",
+              "name": "山神社",
+              "prefecture": "長崎県",
+              "prefecture_code": "42",
+              "reading": "やまじんじゃ"
+            },
+            "1793d040-fabc-5bca-a499-da142fdb3630": {
+              "address": "南松浦郡新上五島町七目郷字宮の下144番地",
+              "facility_id": "f39a1349-8685-5475-b135-95cea297b877",
+              "name": "潮目天満神社",
+              "prefecture": "長崎県",
+              "prefecture_code": "42",
+              "reading": "しおめてんまんじんじゃ"
+            },
+            "24ee11fa-6dfe-53f7-849b-87241c4479f3": {
+              "address": "南松浦郡新上五島町船崎郷字色摩247番地",
+              "facility_id": "6c608598-f005-56dc-9a4f-ae6e29922c83",
+              "name": "塩竃神社",
+              "prefecture": "長崎県",
+              "prefecture_code": "42",
+              "reading": "しおがまじんじゃ"
+            },
+            "2f7d9302-16f6-569d-8550-b271017a99d1": {
+              "address": "南松浦郡新上五島町東神ノ浦郷字鯛の浦道脇266番地",
+              "facility_id": "5cef5291-4a0b-5a97-a0e4-08bf490048ea",
+              "name": "大王神社",
+              "prefecture": "長崎県",
+              "prefecture_code": "42",
+              "reading": "だいおうじんじゃ"
+            },
+            "5e00983d-c376-5a98-9b22-2c65a283b3bd": {
+              "address": "南松浦郡新上五島町小串郷字園山467番地",
+              "facility_id": "09ed0215-bc89-5f88-a5b6-6a2c97b67107",
+              "name": "琴平神社",
+              "prefecture": "長崎県",
+              "prefecture_code": "42",
+              "reading": "ことひらじんじゃ"
+            },
+            "6345a4ea-62f8-5547-bc1a-87193427038c": {
+              "address": "南松浦郡新上五島町町飯ﾉ瀬戸郷10番地",
+              "facility_id": "8f44036f-3b8d-51ad-908a-b8a713d29a96",
+              "name": "蛭子神社",
+              "prefecture": "長崎県",
+              "prefecture_code": "42",
+              "reading": "えびすじんじゃ"
+            },
+            "c7e6d224-2ea2-5162-b3ff-aa3823b9c1ab": {
+              "address": "壱岐市郷ノ浦町郷ノ浦313番地･314番地",
+              "facility_id": "de3f3ccf-386e-5289-992d-39ca7ad12ed7",
+              "name": "八坂神社",
+              "prefecture": "長崎県",
+              "prefecture_code": "42",
+              "reading": "やさかじんじゃ"
+            },
+            "ee103a01-a1c0-554a-a8e2-bc43687182c2": {
+              "address": "南松浦郡新上五島町岩瀬浦郷字杉ﾉ本642番地2",
+              "facility_id": "192f5b4a-a81b-54ed-b1ee-80186402b319",
+              "name": "天満神社",
+              "prefecture": "長崎県",
+              "prefecture_code": "42",
+              "reading": "てんまんじんじゃ"
+            }
+          },
+          "location_supplements": {},
+          "location_supplements_still_pending": {},
+          "pending_after": 9228,
+          "pending_before": 9236,
+          "prefecture_scopes": {
+            "nagasaki_legacy": [
+              "42"
+            ]
+          },
+          "reading_supplements_by_investigation": {
+            "nagasaki_legacy": 8
+          },
+          "reduced_by_prefecture": {
+            "42": 8
+          },
+          "source_investigations": {
+            "nagasaki_legacy": {
+              "checked_at": "2026-11-27T03:34:03.653710+00:00",
+              "coverage": {
+                "baseline_sha256": "d587f73c027d39ccb6d051d4676d2762f91e4b9f8be4c51913f8ceb747a17311",
+                "categories_excluded_counts": {
+                  "different_locality_and_parcel": 70,
+                  "other_municipality": 236,
+                  "without_numeric_address": 11
+                },
+                "description": "840登録の既存調査原欄を机上比較。別自治体、地番のない欄、探索専用・既停止などを外し、全文かな候補と比較用地番の残る24登録を抽出。10登録の選定資料を実本文で再照合。",
+                "enough_location_for_screen": {
+                  "numeric_match_other_locality": 14,
+                  "same_locality_different_parcel": 26,
+                  "same_locality_numeric_match": 1
+                },
+                "existing_location_and_kana_observations": 358,
+                "nagasaki_pending": 840,
+                "nationwide_pending": 9236,
+                "shortlisted_registrations": 24,
+                "targeted_checks": 10
+              },
+              "draft_count": 8,
+              "findings": {
+                "050af310-7185-5c6d-a49c-c17e854dded4": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町間伏郷字清水上の1125番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "瀧川原神社 ／ 南松浦郡新上五島町間伏郷字清水上の1125番地",
+                    "locator": "table[1] tr[22] 掲載番号21 神社名と鎮座地",
+                    "name_raw": "瀧川原神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "pending",
+                  "entry_id": "050af310-7185-5c6d-a49c-c17e854dded4",
+                  "expected_source_hash": "cc85a106916ba34d801d10fd8d359a631efe7a74661257c9f4da6ce51f77c237",
+                  "facility_id": "7207fc37-6373-5977-8533-61f3b7c4795e",
+                  "name_raw": "瀧川原神社",
+                  "notes": "庁は間伏郷字清水上の1125、観光協会は間伏郷1125と全文かな。法人個票は間伏郷字瀧川原１１２５番地と表示。二つの小字の関係を確認できるまで保留。",
+                  "prior_observations": [
+                    {
+                      "id": "050af310-7185-5c6d-a49c-c17e854dded4",
+                      "mode": "numeric_match_other_locality",
+                      "name": "瀧川原神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町間伏郷字清水上の1125番地",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町間伏郷1125",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 998 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "瀧川原神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "たきがはらじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町間伏郷1125",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:30:04.486354+00:00",
+                    "excerpt": "瀧川原神社 たきがはらじんじゃ ／ 〒853-2315　長崎県南松浦郡新上五島町間伏郷1125",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "瀧川原神社",
+                    "page_hash": "3d278f76c65c8699de5fd4f80cc4333f01e67d5dc8e353b3c2138da03304fb15",
+                    "printed_location_field": "〒853-2315　長崎県南松浦郡新上五島町間伏郷1125",
+                    "reading_raw": "たきがはらじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "瀧川原神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10109"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町間伏郷字瀧川原１１２５番地",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005003779）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:33:30.113110+00:00",
+                    "corporate_number": "6310005003779",
+                    "excerpt": "瀧川原神社 ／ 長崎県南松浦郡新上五島町間伏郷字瀧川原１１２５番地",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "瀧川原神社",
+                    "page_hash": "9adf6d1a0d38e423fa6178dca7eb99ab6083926f71fbdd7864d24b84d25de3c0",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "瀧川原神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005003779"
+                  },
+                  "supplemental": []
+                },
+                "1422841e-4f95-5088-ab0a-25062eab1a8a": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町船崎郷字色摩245番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "山神社 ／ 南松浦郡新上五島町船崎郷字色摩245番地",
+                    "locator": "table[1] tr[33] 掲載番号32 神社名と鎮座地",
+                    "name_raw": "山神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "bounded_address_candidate",
+                  "entry_id": "1422841e-4f95-5088-ab0a-25062eab1a8a",
+                  "expected_source_hash": "b8a84b9b92cac733d412938e71706d86332b3c641ed350ab7348e25bfa0f9e08",
+                  "facility_id": "a266a379-ca7b-51a1-a6a2-5ea9c617796b",
+                  "name_raw": "山神社",
+                  "notes": "国税庁と神社庁の船崎郷字色摩245番地、観光協会の船崎郷色摩245と全文かな。目的施設と地番は共通で、表示上の字マーカーの有無だけが異なる。",
+                  "prior_observations": [
+                    {
+                      "id": "1422841e-4f95-5088-ab0a-25062eab1a8a",
+                      "mode": "numeric_match_other_locality",
+                      "name": "山神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町船崎郷字色摩245番地",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町船崎郷色摩245",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 949 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "山神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "やまじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町船崎郷色摩245",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:28:38.880370+00:00",
+                    "excerpt": "山神社 やまじんじゃ ／ 〒857-4405　長崎県南松浦郡新上五島町船崎郷色摩245",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "山神社",
+                    "page_hash": "143cb56afaa933a0c1cbe07fc7cba971440900b26a20f5311f1c4825552ec63e",
+                    "printed_location_field": "〒857-4405　長崎県南松浦郡新上五島町船崎郷色摩245",
+                    "reading_raw": "やまじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "山神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10058"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町船崎郷字色摩２４５番地",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9310005003792）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:28:37.562056+00:00",
+                    "corporate_number": "9310005003792",
+                    "excerpt": "山神社 ／ 長崎県南松浦郡新上五島町船崎郷字色摩２４５番地",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "山神社",
+                    "page_hash": "5f868eb31b7ca1a9e17d23e3abc4cbfa97116c270a49f3e7bcdaccbcace8ccb6",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "山神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9310005003792"
+                  },
+                  "supplemental": [],
+                  "validation_problems": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ]
+                },
+                "1793d040-fabc-5bca-a499-da142fdb3630": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町七目郷字宮の下144番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "潮目天満神社 ／ 南松浦郡新上五島町七目郷字宮の下144番地",
+                    "locator": "table[1] tr[43] 掲載番号42 神社名と鎮座地",
+                    "name_raw": "潮目天満神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "bounded_address_candidate",
+                  "entry_id": "1793d040-fabc-5bca-a499-da142fdb3630",
+                  "expected_source_hash": "eab62a68961838b7590ba085e38a6c828e3c3fd4876b7de0dde50a8ca17abb56",
+                  "facility_id": "f39a1349-8685-5475-b135-95cea297b877",
+                  "name_raw": "潮目天満神社",
+                  "notes": "神社庁と法人の七目郷字宮の下144番地、観光協会の七目郷144と全文かな。観光欄は小字名を省く。",
+                  "prior_observations": [
+                    {
+                      "id": "1793d040-fabc-5bca-a499-da142fdb3630",
+                      "mode": "numeric_match_other_locality",
+                      "name": "潮目天満神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町七目郷字宮の下144番地",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町七目郷144",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 943 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "潮目天満神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "しおめてんまんじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町七目郷144",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:28:52.287693+00:00",
+                    "excerpt": "潮目天満神社 しおめてんまんじんじゃ ／ 〒857-4214　長崎県南松浦郡新上五島町七目郷144",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "潮目天満神社",
+                    "page_hash": "33e885f65e6136ecc5961366d72bb2397ef0997490b930c8eb8d61b175b1323c",
+                    "printed_location_field": "〒857-4214　長崎県南松浦郡新上五島町七目郷144",
+                    "reading_raw": "しおめてんまんじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "潮目天満神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10052"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町七目郷字宮の下１４４番地",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5310005003771）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:30:03.388911+00:00",
+                    "corporate_number": "5310005003771",
+                    "excerpt": "潮目天満神社 ／ 長崎県南松浦郡新上五島町七目郷字宮の下１４４番地",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "潮目天満神社",
+                    "page_hash": "be5154220c22e425f7099aebc6f9babb83878157a62898ea1952ec0e8963c177",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "潮目天満神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5310005003771"
+                  },
+                  "supplemental": [],
+                  "validation_problems": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ]
+                },
+                "2118e5a5-354e-5562-a843-eff6d2b1ffac": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町若松郷字築出山296番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "八坂神社 ／ 南松浦郡新上五島町若松郷字築出山296番地",
+                    "locator": "table[1] tr[9] 掲載番号8 神社名と鎮座地",
+                    "name_raw": "八坂神社",
+                    "other_names_same_exact_address": [
+                      "若松神社"
+                    ],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [
+                      "南松浦郡新上五島町日島郷字釡崎210番地",
+                      "南松浦郡新上五島町友住郷字立木353番地"
+                    ],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "pending",
+                  "entry_id": "2118e5a5-354e-5562-a843-eff6d2b1ffac",
+                  "expected_source_hash": "4a3a3084f28733d0e88246bd366926fe4fa29bb6ce4fe2906c3aad29010126ee",
+                  "facility_id": "f89f8809-52f8-591b-8aba-84bc7b4133fb",
+                  "name_raw": "八坂神社",
+                  "notes": "庁は若松神社と八坂神社を同じ296番地に別々に掲載。観光協会の実本文も若松神社。八坂のかなの根拠としては保留。",
+                  "prior_observations": [
+                    {
+                      "id": "2118e5a5-354e-5562-a843-eff6d2b1ffac",
+                      "mode": "numeric_match_other_locality",
+                      "name": "八坂神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町若松郷字築出山296番地",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町若松郷296",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 976 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "八坂神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "やさかじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町若松郷296",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:28:55.748697+00:00",
+                    "excerpt": "若松神社 わかまつじんじゃ ／ 〒853-2301　長崎県南松浦郡新上五島町若松郷296",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "若松神社",
+                    "page_hash": "dfb69b77e141718d29ea0c66f77d6763be744894502d2160c03116bf90c62f92",
+                    "printed_location_field": "〒853-2301　長崎県南松浦郡新上五島町若松郷296",
+                    "reading_raw": "わかまつじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "若松神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10086"
+                  },
+                  "registered_location_witness": null,
+                  "supplemental": []
+                },
+                "24ee11fa-6dfe-53f7-849b-87241c4479f3": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町船崎郷字色摩247番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "塩竃神社 ／ 南松浦郡新上五島町船崎郷字色摩247番地",
+                    "locator": "table[1] tr[32] 掲載番号31 神社名と鎮座地",
+                    "name_raw": "塩竃神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [
+                      "南松浦郡新上五島町立串郷1529番地"
+                    ],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "bounded_address_candidate",
+                  "entry_id": "24ee11fa-6dfe-53f7-849b-87241c4479f3",
+                  "expected_source_hash": "3f347020c65b4f986a5aa697e3518196bd103eee6ad76f9f40f55f1e2dc8cd03",
+                  "facility_id": "6c608598-f005-56dc-9a4f-ae6e29922c83",
+                  "name_raw": "塩竃神社",
+                  "notes": "県神社庁・法人の船崎郷字色摩247番地、観光協会の船崎郷247は全地番共通。色摩245の山神社と区別した。観光欄は小字名を省く。",
+                  "prior_observations": [
+                    {
+                      "id": "24ee11fa-6dfe-53f7-849b-87241c4479f3",
+                      "mode": "numeric_match_other_locality",
+                      "name": "塩竃神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町船崎郷字色摩247番地",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町船崎郷247",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 948 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "塩竃神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "しおがまじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町船崎郷247",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:28:48.869104+00:00",
+                    "excerpt": "塩竃神社 しおがまじんじゃ ／ 〒857-4405　長崎県南松浦郡新上五島町船崎郷247",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "塩竃神社",
+                    "page_hash": "35ca2e13a87e0f6eacce87b2e9cd24186354e2e7a3e43def4478a0b3f8df7a65",
+                    "printed_location_field": "〒857-4405　長崎県南松浦郡新上五島町船崎郷247",
+                    "reading_raw": "しおがまじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "塩竃神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10057"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町船崎郷字色摩２４７番地",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005003770）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:28:46.237478+00:00",
+                    "corporate_number": "6310005003770",
+                    "excerpt": "塩竃神社 ／ 長崎県南松浦郡新上五島町船崎郷字色摩２４７番地",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "塩竃神社",
+                    "page_hash": "c97e04821b909f8403936aa11c72b324fb870d8c14c2bb0bbb32863a473c2853",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "塩竃神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005003770"
+                  },
+                  "supplemental": [],
+                  "validation_problems": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ]
+                },
+                "2f7d9302-16f6-569d-8550-b271017a99d1": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町東神ノ浦郷字鯛の浦道脇266番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "大王神社 ／ 南松浦郡新上五島町東神ノ浦郷字鯛の浦道脇266番地",
+                    "locator": "table[1] tr[45] 掲載番号44 神社名と鎮座地",
+                    "name_raw": "大王神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "bounded_address_candidate",
+                  "entry_id": "2f7d9302-16f6-569d-8550-b271017a99d1",
+                  "expected_source_hash": "28ac7677acc9e613b2f229d5be058ae284823256ecb5ed0563d90cc74f2e677f",
+                  "facility_id": "5cef5291-4a0b-5a97-a0e4-08bf490048ea",
+                  "name_raw": "大王神社",
+                  "notes": "神社庁は東神ノ浦郷字鯛の浦道脇266、法人は同郷字鯛ノ浦道脇266、観光協会は東神ノ浦郷266。小字の仮名表記差は原欄に保持。",
+                  "prior_observations": [
+                    {
+                      "id": "2f7d9302-16f6-569d-8550-b271017a99d1",
+                      "mode": "numeric_match_other_locality",
+                      "name": "大王神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町東神ノ浦郷字鯛の浦道脇266番地",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町東神ノ浦郷266",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 930 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "大王神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "だいおうじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町東神ノ浦郷266",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:30:01.115799+00:00",
+                    "excerpt": "大王神社 だいおうじんじゃ ／ 〒853-3323　長崎県南松浦郡新上五島町東神ノ浦郷266",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "大王神社",
+                    "page_hash": "f81fe6041e41d0efdd624a96863fc2d80cac0ea107310a89c42e54a8a1da95ac",
+                    "printed_location_field": "〒853-3323　長崎県南松浦郡新上五島町東神ノ浦郷266",
+                    "reading_raw": "だいおうじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "大王神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10038"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町東神ノ浦郷字鯛ノ浦道脇２６６番地",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8310005003777）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:30:06.280451+00:00",
+                    "corporate_number": "8310005003777",
+                    "excerpt": "大王神社 ／ 長崎県南松浦郡新上五島町東神ノ浦郷字鯛ノ浦道脇２６６番地",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "大王神社",
+                    "page_hash": "2ec298836c4be97096c5ef8aefb580662f75976b810f83f3d1fba27a6389c548",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "大王神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8310005003777"
+                  },
+                  "supplemental": [],
+                  "validation_problems": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ]
+                },
+                "5e00983d-c376-5a98-9b22-2c65a283b3bd": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町小串郷字園山467番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "琴平神社 ／ 南松浦郡新上五島町小串郷字園山467番地",
+                    "locator": "table[1] tr[54] 掲載番号53 神社名と鎮座地",
+                    "name_raw": "琴平神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [
+                      "南松浦郡新上五島町立串郷680番地"
+                    ],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "bounded_address_candidate",
+                  "entry_id": "5e00983d-c376-5a98-9b22-2c65a283b3bd",
+                  "expected_source_hash": "22ac9db94520f309f96c1616b4b705a5cea31028e7a61065561c0694da4c1b2b",
+                  "facility_id": "09ed0215-bc89-5f88-a5b6-6a2c97b67107",
+                  "name_raw": "琴平神社",
+                  "notes": "県神社庁と国税庁は小串郷字園山467番地、観光協会は同郷467番地の琴平神社に全文かなを明示。観光欄は小字名を省く。",
+                  "prior_observations": [
+                    {
+                      "id": "5e00983d-c376-5a98-9b22-2c65a283b3bd",
+                      "mode": "numeric_match_other_locality",
+                      "name": "琴平神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町小串郷字園山467番地",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町小串郷467",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 964 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "琴平神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "ことひらじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町小串郷467",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:28:42.205250+00:00",
+                    "excerpt": "琴平神社 ことひらじんじゃ ／ 〒857-4601　長崎県南松浦郡新上五島町小串郷467",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "琴平神社",
+                    "page_hash": "8bce6dce6b96b25a9ef497eb325dede45544ff6b4ed143870087420ba063e9b2",
+                    "printed_location_field": "〒857-4601　長崎県南松浦郡新上五島町小串郷467",
+                    "reading_raw": "ことひらじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "琴平神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10073"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町小串郷字園山４６７番地",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1310005003759）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:28:40.442491+00:00",
+                    "corporate_number": "1310005003759",
+                    "excerpt": "琴平神社 ／ 長崎県南松浦郡新上五島町小串郷字園山４６７番地",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "琴平神社",
+                    "page_hash": "25d993b54e1c68f64b6dd0cd3a78a99ab7bd865b13f61b13b1a80eee4cc39fe1",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "琴平神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1310005003759"
+                  },
+                  "supplemental": [],
+                  "validation_problems": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ]
+                },
+                "6345a4ea-62f8-5547-bc1a-87193427038c": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町町飯ﾉ瀬戸郷10番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "蛭子神社 ／ 南松浦郡新上五島町町飯ﾉ瀬戸郷10番地",
+                    "locator": "table[1] tr[27] 掲載番号26 神社名と鎮座地",
+                    "name_raw": "蛭子神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "bounded_address_candidate",
+                  "entry_id": "6345a4ea-62f8-5547-bc1a-87193427038c",
+                  "expected_source_hash": "9a959557769d5c809601c7f0a44ec99dbd0b8cb394c07f441aa66d67b31ec1ef",
+                  "facility_id": "8f44036f-3b8d-51ad-908a-b8a713d29a96",
+                  "name_raw": "蛭子神社",
+                  "notes": "同じ郵便番号と郷・地番10・社名。県庁一覧の「町町」と半角ﾉに対し、日本郵便の2004年合併対照と国税庁・観光協会は新上五島町飯ノ瀬戸郷。",
+                  "prior_observations": [
+                    {
+                      "id": "6345a4ea-62f8-5547-bc1a-87193427038c",
+                      "mode": "numeric_match_other_locality",
+                      "name": "蛭子神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町町飯ﾉ瀬戸郷10番地",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町飯ノ瀬戸郷10",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 953 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "蛭子神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "えびすじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町飯ノ瀬戸郷10",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:28:35.610797+00:00",
+                    "excerpt": "蛭子神社 えびすじんじゃ ／ 〒857-4414　長崎県南松浦郡新上五島町飯ノ瀬戸郷10",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "蛭子神社",
+                    "page_hash": "245c990585f906106fbbd12b22fe8faae5e98d8613b8e7feb635ebbc08564e05",
+                    "printed_location_field": "〒857-4414　長崎県南松浦郡新上五島町飯ノ瀬戸郷10",
+                    "reading_raw": "えびすじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "蛭子神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10062"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町飯ノ瀬戸郷１０番地",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7310005003745）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:28:34.684886+00:00",
+                    "corporate_number": "7310005003745",
+                    "excerpt": "蛭子神社 ／ 長崎県南松浦郡新上五島町飯ノ瀬戸郷１０番地",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "蛭子神社",
+                    "page_hash": "e483ea8272ce50134733aaaa84ca4813b51e191dd72e84e364e1121301ecfa9a",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "蛭子神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7310005003745"
+                  },
+                  "supplemental": [
+                    {
+                      "change_date": "2004-08-01",
+                      "checked_at": "2026-11-27T03:30:03.438642+00:00",
+                      "current_locality_raw": "南松浦郡新上五島町飯ノ瀬戸郷",
+                      "excerpt": "飯ノ瀬戸郷 ／ 南松浦郡新上五島町飯ノ瀬戸郷に住所変更 ／ 857-4414",
+                      "former_locality_raw": "飯ノ瀬戸郷",
+                      "locator": "旧上五島町「飯ノ瀬戸郷」行の町域・変更先・郵便番号",
+                      "name_raw": "飯ノ瀬戸郷",
+                      "page_hash": "704bd06f391c8294106309f2ebc572a647a35ac9091edd43a0032abcc4037fb0",
+                      "postal_code_raw": "857-4414",
+                      "source_kind": "postal_locality_reference",
+                      "source_publisher": "日本郵便株式会社",
+                      "terms_reference": {
+                        "checked_at": "2026-11-27T03:33:30.114071+00:00",
+                        "content_scope": "法令で認められた範囲外の複製や再利用は承諾が必要。新旧町域の個別事実と出典のみを記録。",
+                        "page_hash": "784ac03588081972ec80823890fda6e3c4b1b82cb62a2d737b1c063cfc873001",
+                        "title": "サイトのご利用について",
+                        "url": "https://www.post.japanpost.jp/sitepolicy.html"
+                      },
+                      "terms_url": "https://www.post.japanpost.jp/sitepolicy.html",
+                      "title": "長崎県 南松浦郡上五島町",
+                      "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1424071&cmp=1&pref=42"
+                    }
+                  ],
+                  "validation_problems": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ]
+                },
+                "c7e6d224-2ea2-5162-b3ff-aa3823b9c1ab": {
+                  "agency": {
+                    "address_raw": "壱岐市郷ノ浦町郷ノ浦313番地･314番地",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:28:34.775509+00:00",
+                    "excerpt": "八坂神社 ／ 壱岐市郷ノ浦町郷ノ浦313番地･314番地",
+                    "locator": "table[3] tr[7] 掲載番号6 神社名と鎮座地",
+                    "name_raw": "八坂神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "3bb54700bb5080fb2b46f1dd35fc5ee1699abfaa59cad74b3b1cdf7e9e3d932a",
+                    "same_name_other_addresses": [
+                      "壱岐市勝本町新城西触字長山765番地"
+                    ],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "壱岐支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/iki.html"
+                  },
+                  "disposition": "bounded_address_candidate",
+                  "entry_id": "c7e6d224-2ea2-5162-b3ff-aa3823b9c1ab",
+                  "expected_source_hash": "d1ad0c82f4a6ccae58de0dd94d250fc70e6a458b7442b8df174ed31ae316ae2f",
+                  "facility_id": "de3f3ccf-386e-5289-992d-39ca7ad12ed7",
+                  "name_raw": "八坂神社",
+                  "notes": "記事の主対象が神社名全文かなと313･314の両地番を明記。庁の313番地･314番地と国税庁の３１３・３１４番地で同じ二筆。市広報で郷ノ浦町元居地区の八坂神社と祇園山笠が対応し、勝本町の同名別社と区別する。",
+                  "prior_observations": [
+                    {
+                      "id": "c7e6d224-2ea2-5162-b3ff-aa3823b9c1ab",
+                      "mode": "same_locality_numeric_match",
+                      "name": "八坂神社",
+                      "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                      "original_address": "壱岐市郷ノ浦町郷ノ浦313番地･314番地",
+                      "reference": {
+                        "address_raw": "長崎県壱岐市郷ノ浦町郷ノ浦313･314",
+                        "checked_at": "2026-11-12T05:52:09.456735+00:00",
+                        "locator": null,
+                        "name_raw": "八坂神社",
+                        "page_hash": "3dd386a3eff8b026dab31d1692111d082f4191d408a84dbee0164cd3857f9502",
+                        "reading_raw": "やさかじんじゃ",
+                        "url": "https://www.buccyake-kojiki.com/archives/1060244306.html"
+                      },
+                      "status": "inspected_independent_article_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町郷ノ浦313･314",
+                    "checked_at": "2026-11-27T03:28:38.083607+00:00",
+                    "excerpt": "［住所］長崎県壱岐市郷ノ浦町郷ノ浦313･314 ／ 八坂神社（やさかじんじゃ）は",
+                    "locator": "記事冒頭の住所欄と直後の主対象定義",
+                    "name_raw": "八坂神社",
+                    "page_hash": "8bf0eba84054d548000ec01d5ce9488ff4fab0fe7c02feef804323850239934a",
+                    "privacy_reference": {
+                      "checked_at": "2026-11-27T03:28:34.794810+00:00",
+                      "page_hash": "9bc3f5636558ed32e36ffa0e41a87355aaf98c5387be4ddc1aee75c1f4d43619",
+                      "title": "プライバシーポリシー",
+                      "url": "https://www.buccyake-kojiki.com/archives/1082202686.html"
+                    },
+                    "reading_raw": "やさかじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "independent_shrine_article",
+                    "source_publisher": "神社と古事記",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.890341+00:00",
+                      "content_scope": "外部での再利用に触れる本文を確認し、名称・全文かな・住所の事実だけを記録。",
+                      "page_hash": "75f6ec011ba603b365821c7011418f47f849d12cafaf3f438ff638d131236f94",
+                      "title": "免責事項",
+                      "url": "https://www.buccyake-kojiki.com/archives/1000485485.html"
+                    },
+                    "terms_url": "https://www.buccyake-kojiki.com/archives/1000485485.html",
+                    "title": "八坂神社　長崎県壱岐市郷ノ浦町郷ノ浦",
+                    "url": "https://www.buccyake-kojiki.com/archives/1060244306.html"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町郷ノ浦３１３・３１４番地",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005005833）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:30:00.505508+00:00",
+                    "corporate_number": "6310005005833",
+                    "excerpt": "八坂神社 ／ 長崎県壱岐市郷ノ浦町郷ノ浦３１３・３１４番地",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "八坂神社",
+                    "page_hash": "223b561b217ba219cdfc3c1c2ce87a072e6cd153865bb731b4dd24d3dbc75ae3",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "八坂神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6310005005833"
+                  },
+                  "supplemental": [
+                    {
+                      "address_role": "area_and_festival_only",
+                      "checked_at": "2026-11-27T03:28:32.297551+00:00",
+                      "excerpt": "郷ノ浦町元居地区の八坂神社",
+                      "festival_raw": "壱岐郷ノ浦祇園山笠",
+                      "locality_raw": "郷ノ浦町元居地区",
+                      "locator": "PDF 8頁「八坂神社」の祭礼説明",
+                      "name_raw": "八坂神社",
+                      "page_hash": "e95051ab49b4fd7a3e7d0398bdb81fdb7a26e1af590889da60a58d972bbe727f",
+                      "source_kind": "municipal_publication_locality_reference",
+                      "source_publisher": "壱岐市",
+                      "title": "広報いき 2020年9月号",
+                      "url": "https://www.city.iki.nagasaki.jp/material/files/group/3/koho209.pdf"
+                    }
+                  ],
+                  "validation_problems": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ]
+                },
+                "ee103a01-a1c0-554a-a8e2-bc43687182c2": {
+                  "agency": {
+                    "address_raw": "南松浦郡新上五島町岩瀬浦郷字杉ﾉ本642番地2",
+                    "address_role": "enshrined_shrine_location",
+                    "checked_at": "2026-11-27T03:30:00.529576+00:00",
+                    "excerpt": "天満神社 ／ 南松浦郡新上五島町岩瀬浦郷字杉ﾉ本642番地2",
+                    "locator": "table[1] tr[36] 掲載番号35 神社名と鎮座地",
+                    "name_raw": "天満神社",
+                    "other_names_same_exact_address": [],
+                    "page_hash": "e31a623bb91039f16d4fa22c57a6e5aec9e5d09954ffa353a1cd5a726244d1dd",
+                    "same_name_other_addresses": [
+                      "南松浦郡新上五島町続浜ﾉ浦郷471番地"
+                    ],
+                    "source_kind": "official_agency",
+                    "source_publisher": "長崎県神社庁",
+                    "title": "上五島支部一覧",
+                    "url": "https://nagasaki-jinjacho.or.jp/kamigoyou.html"
+                  },
+                  "disposition": "bounded_address_candidate",
+                  "entry_id": "ee103a01-a1c0-554a-a8e2-bc43687182c2",
+                  "expected_source_hash": "b8600b6aae1609037aa949a88db5a38a20df1873883ae48df04f4f5d39053c6b",
+                  "facility_id": "192f5b4a-a81b-54ed-b1ee-80186402b319",
+                  "name_raw": "天満神社",
+                  "notes": "県神社庁の岩瀬浦郷字杉ﾉ本642番地2と法人の杉ノ本６４２番地２、観光協会の岩瀬浦郷642-2が同地番。岩瀬浦の本文は別社の志自岐羽黒神社を区別する。観光欄は小字名を省く。",
+                  "prior_observations": [
+                    {
+                      "id": "ee103a01-a1c0-554a-a8e2-bc43687182c2",
+                      "mode": "numeric_match_other_locality",
+                      "name": "天満神社",
+                      "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                      "original_address": "南松浦郡新上五島町岩瀬浦郷字杉ﾉ本642番地2",
+                      "reference": {
+                        "address_raw": "長崎県南松浦郡新上五島町岩瀬浦郷642-2",
+                        "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                        "locator": "CSV record 973 (header=1); columns 名称, 名称_カナ, 住所",
+                        "name_raw": "天満神社",
+                        "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                        "reading_raw": "てんまんじんじゃ",
+                        "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                      },
+                      "status": "inspected_not_adopted"
+                    }
+                  ],
+                  "reading_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町岩瀬浦郷642-2",
+                    "address_role": "visitor_information_facility_address",
+                    "checked_at": "2026-11-27T03:28:45.499889+00:00",
+                    "excerpt": "天満神社 てんまんじんじゃ ／ 〒853-3102　長崎県南松浦郡新上五島町岩瀬浦郷642-2",
+                    "locator": "施設のh1見出しに続く全文かな、基本情報の住所の原欄",
+                    "name_raw": "天満神社",
+                    "page_hash": "6d2b41675093e8f6fdd04868d8098c767094da5d97f117b7ac27959100a1bfd5",
+                    "printed_location_field": "〒853-3102　長崎県南松浦郡新上五島町岩瀬浦郷642-2",
+                    "reading_raw": "てんまんじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "municipal_tourism_site_facility_record",
+                    "source_publisher": "一般社団法人 新上五島町観光物産協会",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:32.312493+00:00",
+                      "content_scope": "運営主体の新上五島町観光物産協会と権利表示を確認し、施設ごとの社名・かな・住所の原欄だけを記録。",
+                      "page_hash": "e23cf2ae6a1bda698ca00a22f76a74c5e529c9a04af29ec7f815ff8d8167a630",
+                      "title": "当サイトについて・組織概要とプライバシーポリシー",
+                      "url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site"
+                    },
+                    "terms_url": "https://shinkamigoto.nagasaki-tabinet.com/feature/site",
+                    "title": "天満神社",
+                    "url": "https://shinkamigoto.nagasaki-tabinet.com/spot/10082"
+                  },
+                  "registered_location_witness": {
+                    "address_raw": "長崎県南松浦郡新上五島町岩瀬浦郷字杉ノ本６４２番地２",
+                    "address_role": "corporation_principal_office",
+                    "attribution": "出典：国税庁法人番号公表サイト（国税庁）（https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4310005003780）。公開原欄を照合。",
+                    "checked_at": "2026-11-27T03:28:43.360162+00:00",
+                    "corporate_number": "4310005003780",
+                    "excerpt": "天満神社 ／ 長崎県南松浦郡新上五島町岩瀬浦郷字杉ノ本６４２番地２",
+                    "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                    "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                    "name_raw": "天満神社",
+                    "page_hash": "d060d8b74ae9ee3f9b1fac83ae710a8087e15279e20017bf962573638fa684f3",
+                    "registered_furigana": null,
+                    "registered_furigana_field_present": false,
+                    "source_kind": "government_corporate_location_reference",
+                    "source_publisher": "国税庁",
+                    "terms_reference": {
+                      "checked_at": "2026-11-27T03:28:31.805457+00:00",
+                      "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                      "title": "サイト利用規約・公共データ利用規約第1.0版",
+                      "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                    },
+                    "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                    "title": "天満神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4310005003780"
+                  },
+                  "supplemental": [],
+                  "validation_problems": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ]
+                }
+              },
+              "remaining_shortlist": [
+                {
+                  "id": "6814343e-77ac-53f1-96c6-1f97214c3c4d",
+                  "mode": "same_locality_different_parcel",
+                  "name": "寄八幡神社",
+                  "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                  "original_address": "壱岐市芦辺町諸吉本村触1839番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉本村触1732",
+                    "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                    "locator": "CSV record 875 (header=1); columns 名称, 名称_カナ, 住所",
+                    "name_raw": "寄八幡神社",
+                    "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                    "reading_raw": "よりはちまんじんじゃ",
+                    "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                  },
+                  "status": "inspected_not_adopted"
+                },
+                {
+                  "id": "6814343e-77ac-53f1-96c6-1f97214c3c4d",
+                  "mode": "same_locality_different_parcel",
+                  "name": "寄八幡神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市芦辺町諸吉本村触1839番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉本村触1732",
+                    "checked_at": "2026-11-13T14:00:27.902020+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "寄八幡神社",
+                    "page_hash": "5a1036aa00c3ec65ebc8a16e3e6919110226b22762fa3b1b1713b282ec912ad9",
+                    "reading_raw": "よりはちまんじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10223"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "6814343e-77ac-53f1-96c6-1f97214c3c4d",
+                  "mode": "same_locality_different_parcel",
+                  "name": "寄八幡神社",
+                  "observation": "原名と同名の参拝記事本文を候補比較。別地域/地番・字名・字形の差や元所在地の不足を保持し、同名だけで全文かなを流用しない。原地番/町域の変更や欠落部分の補作を行わない。",
+                  "original_address": "壱岐市芦辺町諸吉本村触1839番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉本村触1732",
+                    "checked_at": "2026-11-14T05:41:11.240489+00:00",
+                    "locator": "div#entryBody 冒頭の主対象名・独立全文かな・所在地3行",
+                    "name_raw": "寄八幡神社",
+                    "page_hash": "8994cb45f8123ee72e001cc2f6488a39eaef1bda7ae23bdf1f83a544337f6082",
+                    "reading_raw": "よりはちまんじんじゃ",
+                    "url": "https://ameblo.jp/sen23ka/entry-12792499286.html?frm=theme"
+                  },
+                  "status": "explicit_kana_original_location_difference_not_adopted"
+                },
+                {
+                  "id": "06ca212d-bdcc-59a7-afdc-23ea0b5cd672",
+                  "mode": "numeric_match_other_locality",
+                  "name": "島大國魂神社",
+                  "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                  "original_address": "対馬市上対馬町豊字ｼﾚｲ409番地ﾛ",
+                  "reference": {
+                    "address_raw": "長崎県対馬市上対馬町豊409",
+                    "checked_at": "2026-11-12T05:52:09.329805+00:00",
+                    "locator": null,
+                    "name_raw": "島大國魂神社",
+                    "page_hash": "8d82b4dccc6e621aa73f440b1b7805ca81f1af9270d87372681b7eb8567f4914",
+                    "reading_raw": "しまおおくにたまじんじゃ",
+                    "url": "https://www.buccyake-kojiki.com/archives/1064386717.html"
+                  },
+                  "status": "inspected_independent_article_not_adopted"
+                },
+                {
+                  "id": "0cebfe84-6b98-5089-8dc2-997cf8cf23fd",
+                  "mode": "same_locality_different_parcel",
+                  "name": "比賣神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市郷ノ浦町里触202番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町里触202-1",
+                    "checked_at": "2026-11-13T14:01:11.946525+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "比賣神社",
+                    "page_hash": "40b593179f8e137adb7a0e335ecdbf55580834967685b1773d66e2fd92e3c295",
+                    "reading_raw": "ひめじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10236"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "7f4c1cfd-26f4-54d5-b7b2-8df3b26af6c0",
+                  "mode": "numeric_match_other_locality",
+                  "name": "比売神社",
+                  "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                  "original_address": "壱岐市芦辺町深江鶴亀触字宇龍721番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町深江鶴亀触721",
+                    "checked_at": "2026-11-12T05:52:09.255432+00:00",
+                    "locator": null,
+                    "name_raw": "比売神社",
+                    "page_hash": "98dcda1e209fc90ca6e6ad2caa5d31c0e5999d9e3472841d55e54eadc839411f",
+                    "reading_raw": "ひめじんじゃ",
+                    "url": "https://www.buccyake-kojiki.com/archives/1070320645.html"
+                  },
+                  "status": "inspected_independent_article_not_adopted"
+                },
+                {
+                  "id": "cd1734ea-09c8-5b6b-bbda-48faf4161229",
+                  "mode": "numeric_match_other_locality",
+                  "name": "中津神社",
+                  "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                  "original_address": "壱岐市勝本町北触字大屋226番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市勝本町北触226",
+                    "checked_at": "2026-11-12T05:52:09.201912+00:00",
+                    "locator": null,
+                    "name_raw": "中津神社",
+                    "page_hash": "8360b3ca3d781e0d9425a925d5dbce1df5c5186271c18dd73b8098cfc65cd845",
+                    "reading_raw": "なかつじんじゃ",
+                    "url": "https://www.buccyake-kojiki.com/archives/1061560510.html"
+                  },
+                  "status": "inspected_independent_article_not_adopted"
+                },
+                {
+                  "id": "796afb8c-f607-582e-aa28-396d4390a517",
+                  "mode": "same_locality_different_parcel",
+                  "name": "國津意加美神社",
+                  "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                  "original_address": "壱岐市郷ノ浦町本村触133番地･134番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町本村触589-2",
+                    "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                    "locator": "CSV record 866 (header=1); columns 名称, 名称_カナ, 住所",
+                    "name_raw": "國津意加美神社",
+                    "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                    "reading_raw": "くにつおかみじんじゃ",
+                    "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                  },
+                  "status": "inspected_not_adopted"
+                },
+                {
+                  "id": "796afb8c-f607-582e-aa28-396d4390a517",
+                  "mode": "same_locality_different_parcel",
+                  "name": "國津意加美神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市郷ノ浦町本村触133番地･134番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町本村触589-2",
+                    "checked_at": "2026-11-13T14:01:40.473286+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "國津意加美神社",
+                    "page_hash": "cce930aaf84da5f17f26a095fb132df409cd188c6e21d09ce0c825b969b0d29a",
+                    "reading_raw": "くにつおかみじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10209"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "796afb8c-f607-582e-aa28-396d4390a517",
+                  "mode": "same_locality_different_parcel",
+                  "name": "國津意加美神社",
+                  "observation": "原名と同名の参拝記事本文を候補比較。別地域/地番・字名・字形の差や元所在地の不足を保持し、同名だけで全文かなを流用しない。原地番/町域の変更や欠落部分の補作を行わない。",
+                  "original_address": "壱岐市郷ノ浦町本村触133番地･134番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町本村触589-2",
+                    "checked_at": "2026-11-14T05:48:35.542114+00:00",
+                    "locator": "div#entryBody 冒頭の主対象名・独立全文かな・所在地3行",
+                    "name_raw": "國津意加美神社",
+                    "page_hash": "1dd4176125d3dad219a6e47605104b4c047c2e9b90ffbc8da7835b6dad9d6b2f",
+                    "reading_raw": "くにつおかみじんじゃ",
+                    "url": "https://ameblo.jp/sen23ka/entry-12792496736.html?frm=theme"
+                  },
+                  "status": "explicit_kana_original_location_difference_not_adopted"
+                },
+                {
+                  "id": "7129e0ef-8177-5113-b31b-98822c271031",
+                  "mode": "same_locality_different_parcel",
+                  "name": "大石神社",
+                  "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                  "original_address": "壱岐市芦辺町諸吉大石触540番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉大石触540-3",
+                    "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                    "locator": "CSV record 870 (header=1); columns 名称, 名称_カナ, 住所",
+                    "name_raw": "大石神社",
+                    "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                    "reading_raw": "おおいしじんじゃ",
+                    "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                  },
+                  "status": "inspected_not_adopted"
+                },
+                {
+                  "id": "7129e0ef-8177-5113-b31b-98822c271031",
+                  "mode": "same_locality_different_parcel",
+                  "name": "大石神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市芦辺町諸吉大石触540番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉大石触540-3",
+                    "checked_at": "2026-11-13T13:59:51.811358+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "大石神社",
+                    "page_hash": "f17cafc032583f312fa30aac37f246f6a3db39bfeb63c5101e7bd25c429ee5e1",
+                    "reading_raw": "おおいしじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10218"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "379fbc46-a508-58e1-8716-c1b677868dad",
+                  "mode": "same_locality_different_parcel",
+                  "name": "鏡岳神社",
+                  "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                  "original_address": "壱岐市郷ノ浦町初山東触1587番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町初山東触1587-1",
+                    "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                    "locator": "CSV record 900 (header=1); columns 名称, 名称_カナ, 住所",
+                    "name_raw": "鏡岳神社",
+                    "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                    "reading_raw": "かがみだけじんじゃ",
+                    "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                  },
+                  "status": "inspected_not_adopted"
+                },
+                {
+                  "id": "379fbc46-a508-58e1-8716-c1b677868dad",
+                  "mode": "same_locality_different_parcel",
+                  "name": "鏡岳神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市郷ノ浦町初山東触1587番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町初山東触1587-1",
+                    "checked_at": "2026-11-13T14:02:14.226112+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "鏡岳神社",
+                    "page_hash": "57473b7573d89a5a0adf746a3227d68c45ef62055603e3b1ad40240d4d860cd5",
+                    "reading_raw": "かがみだけじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10249"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "cbd6d390-ce8f-5201-8fed-3f1d8fbf7f9e",
+                  "mode": "numeric_match_other_locality",
+                  "name": "津之宮神社",
+                  "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                  "original_address": "壱岐市石田町石田西触19番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市石田町池田西触19",
+                    "checked_at": "2026-11-12T05:52:09.233526+00:00",
+                    "locator": null,
+                    "name_raw": "津之宮神社",
+                    "page_hash": "39fa60644e1b78eb96397d15d0a5023bf4400bca849546b56f7ab54dc88cee1b",
+                    "reading_raw": "つのみやじんじゃ",
+                    "url": "https://www.buccyake-kojiki.com/archives/1070307755.html"
+                  },
+                  "status": "inspected_independent_article_not_adopted"
+                },
+                {
+                  "id": "4ef0d178-8512-5216-89ad-808f67507010",
+                  "mode": "same_locality_different_parcel",
+                  "name": "貴船神社",
+                  "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                  "original_address": "壱岐市芦辺町瀬戸浦169番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町瀬戸浦169-1",
+                    "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                    "locator": "CSV record 873 (header=1); columns 名称, 名称_カナ, 住所",
+                    "name_raw": "貴船神社",
+                    "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                    "reading_raw": "きふねじんじゃ",
+                    "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                  },
+                  "status": "inspected_not_adopted"
+                },
+                {
+                  "id": "4ef0d178-8512-5216-89ad-808f67507010",
+                  "mode": "same_locality_different_parcel",
+                  "name": "貴船神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市芦辺町瀬戸浦169番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町瀬戸浦169-1",
+                    "checked_at": "2026-11-13T14:00:17.777954+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "貴船神社",
+                    "page_hash": "fefb0a4b17db1251d6ca3a4e9216a0fe09b63d22a8fe1ea17279c0dd32d8612b",
+                    "reading_raw": "きふねじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10221"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "4ef0d178-8512-5216-89ad-808f67507010",
+                  "mode": "same_locality_different_parcel",
+                  "name": "貴船神社",
+                  "observation": "原名と同名の参拝記事本文を候補比較。別地域/地番・字名・字形の差や元所在地の不足を保持し、同名だけで全文かなを流用しない。原地番/町域の変更や欠落部分の補作を行わない。",
+                  "original_address": "壱岐市芦辺町瀬戸浦169番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町瀬戸浦169-1",
+                    "checked_at": "2026-11-14T05:41:06.843030+00:00",
+                    "locator": "div#entryBody 冒頭の主対象名・独立全文かな・所在地3行",
+                    "name_raw": "貴船神社",
+                    "page_hash": "bfe6c0c02936c6e10dcae05bed0ae0ab325fe4ecaf65f9ebdc63caaf3edb780d",
+                    "reading_raw": "きふねじんじゃ",
+                    "url": "https://ameblo.jp/sen23ka/entry-12792500680.html?frm=theme"
+                  },
+                  "status": "explicit_kana_original_location_difference_not_adopted"
+                },
+                {
+                  "id": "cb5d2cb7-a915-5dd0-a6eb-55a1cd7a1227",
+                  "mode": "numeric_match_other_locality",
+                  "name": "手長比賣神社",
+                  "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                  "original_address": "壱岐市勝本町本宮西触字三室1212番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市勝本町本宮西触1212",
+                    "checked_at": "2026-11-12T05:52:09.261923+00:00",
+                    "locator": null,
+                    "name_raw": "手長比賣神社",
+                    "page_hash": "fc3a4f038cf2363c30f57eadf4f04a7161522e810873052cfaf19f79a7c0d42b",
+                    "reading_raw": "たながひめじんじゃ",
+                    "url": "https://www.buccyake-kojiki.com/archives/1070320979.html"
+                  },
+                  "status": "inspected_independent_article_not_adopted"
+                },
+                {
+                  "id": "7b4498a0-ac06-5ff1-bcd2-55947999a99b",
+                  "mode": "same_locality_different_parcel",
+                  "name": "爾自神社",
+                  "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                  "original_address": "壱岐市郷ノ浦町有安触979番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町有安触979-1",
+                    "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                    "locator": "CSV record 885 (header=1); columns 名称, 名称_カナ, 住所",
+                    "name_raw": "爾自神社",
+                    "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                    "reading_raw": "にじじんじゃ",
+                    "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                  },
+                  "status": "inspected_not_adopted"
+                },
+                {
+                  "id": "7b4498a0-ac06-5ff1-bcd2-55947999a99b",
+                  "mode": "same_locality_different_parcel",
+                  "name": "爾自神社",
+                  "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                  "original_address": "壱岐市郷ノ浦町有安触979番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町有安触997",
+                    "checked_at": "2026-11-12T05:52:09.211946+00:00",
+                    "locator": null,
+                    "name_raw": "爾自神社",
+                    "page_hash": "9b58c71d7852292864b1d544191871a400950d36b98e1b9a5abc71bda4f780e1",
+                    "reading_raw": "にじじんじゃ",
+                    "url": "https://www.buccyake-kojiki.com/archives/1070294010.html"
+                  },
+                  "status": "inspected_independent_article_not_adopted"
+                },
+                {
+                  "id": "7b4498a0-ac06-5ff1-bcd2-55947999a99b",
+                  "mode": "same_locality_different_parcel",
+                  "name": "爾自神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市郷ノ浦町有安触979番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町有安触979-1",
+                    "checked_at": "2026-11-13T14:01:05.816932+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "爾自神社",
+                    "page_hash": "49c67d764f34beb6ffd22eacfe3ff6f5161afdf00079b1c863ba33c606e05096",
+                    "reading_raw": "にじじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10234"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "7b4498a0-ac06-5ff1-bcd2-55947999a99b",
+                  "mode": "same_locality_different_parcel",
+                  "name": "爾自神社",
+                  "observation": "原名と同名の参拝記事本文を候補比較。別地域/地番・字名・字形の差や元所在地の不足を保持し、同名だけで全文かなを流用しない。原地番/町域の変更や欠落部分の補作を行わない。",
+                  "original_address": "壱岐市郷ノ浦町有安触979番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市郷ノ浦町有安触979-1",
+                    "checked_at": "2026-11-14T05:40:58.168226+00:00",
+                    "locator": "div#entryBody 冒頭の主対象名・独立全文かな・所在地3行",
+                    "name_raw": "爾自神社",
+                    "page_hash": "58488d12d10325d427e8cacd923c37b4caaa41c29c1ca73936ad9685b2dad709",
+                    "reading_raw": "にじじんじゃ",
+                    "url": "https://ameblo.jp/sen23ka/entry-12792509660.html?frm=theme"
+                  },
+                  "status": "explicit_kana_original_location_difference_not_adopted"
+                },
+                {
+                  "id": "bef3729f-29b8-56de-afe7-275b0fbde482",
+                  "mode": "same_locality_different_parcel",
+                  "name": "熊野神社",
+                  "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                  "original_address": "壱岐市勝本町立石南触583番地1",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市勝本町立石南触583-4",
+                    "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                    "locator": "CSV record 888 (header=1); columns 名称, 名称_カナ, 住所",
+                    "name_raw": "熊野神社",
+                    "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                    "reading_raw": "くまのじんじゃ",
+                    "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                  },
+                  "status": "inspected_not_adopted"
+                },
+                {
+                  "id": "bef3729f-29b8-56de-afe7-275b0fbde482",
+                  "mode": "same_locality_different_parcel",
+                  "name": "熊野神社",
+                  "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                  "original_address": "壱岐市勝本町立石南触583番地1",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市勝本町立石南触584",
+                    "checked_at": "2026-11-12T05:52:09.243977+00:00",
+                    "locator": null,
+                    "name_raw": "熊野神社",
+                    "page_hash": "5355ac3530dfdc2c28e5338dd1d6f0f0543eaca4dbdfd1012cc8a781b6b39a4a",
+                    "reading_raw": "くまのじんじゃ",
+                    "url": "https://www.buccyake-kojiki.com/archives/1070316587.html"
+                  },
+                  "status": "inspected_independent_article_not_adopted"
+                },
+                {
+                  "id": "bef3729f-29b8-56de-afe7-275b0fbde482",
+                  "mode": "same_locality_different_parcel",
+                  "name": "熊野神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市勝本町立石南触583番地1",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市勝本町立石南触583-4",
+                    "checked_at": "2026-11-13T14:01:14.663111+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "熊野神社",
+                    "page_hash": "d044e97b8a56442c4f15cb8e7f9dd7e88d50d1afccf9b958e5a8db7ee23ae802",
+                    "reading_raw": "くまのじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10237"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "bef3729f-29b8-56de-afe7-275b0fbde482",
+                  "mode": "same_locality_different_parcel",
+                  "name": "熊野神社",
+                  "observation": "原名と同名の参拝記事本文を候補比較。別地域/地番・字名・字形の差や元所在地の不足を保持し、同名だけで全文かなを流用しない。原地番/町域の変更や欠落部分の補作を行わない。",
+                  "original_address": "壱岐市勝本町立石南触583番地1",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市勝本町立石南触583-4",
+                    "checked_at": "2026-11-14T05:41:00.317965+00:00",
+                    "locator": "div#entryBody 冒頭の主対象名・独立全文かな・所在地3行",
+                    "name_raw": "熊野神社",
+                    "page_hash": "b58430330f037b71d4152541649b5c0709b4fe5ab02a4b55b4fb10857a1b263c",
+                    "reading_raw": "くまのじんじゃ",
+                    "url": "https://ameblo.jp/sen23ka/entry-12792509414.html?frm=theme"
+                  },
+                  "status": "explicit_kana_original_location_difference_not_adopted"
+                },
+                {
+                  "id": "ab2b2ce1-a8b9-5682-afc8-b9b745aefb39",
+                  "mode": "same_locality_different_parcel",
+                  "name": "高御祖神社",
+                  "observation": "同名・同一市町村だが、正本と資料の字名・番地・地区の一致が現行の全所在地照合で確認できない。",
+                  "original_address": "壱岐市芦辺町諸吉仲触9番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉仲触81-1",
+                    "checked_at": "2026-11-12T02:17:02.544393+00:00",
+                    "locator": "CSV record 883 (header=1); columns 名称, 名称_カナ, 住所",
+                    "name_raw": "高御祖神社",
+                    "page_hash": "654a459c1557f7ce7b394f9a93ff54f2ad2ffb3339bf5a457f0f3b9732a0d920",
+                    "reading_raw": "たかみおやじんじゃ",
+                    "url": "https://data.bodik.jp/dataset/e4cf571c-d22b-44f1-a5d8-8c92bcd6c11e/resource/e3907cf2-f9f0-4bb5-b94c-ea6f4abe460b/download/420000_tourism_nagasakitabinet.csv"
+                  },
+                  "status": "inspected_not_adopted"
+                },
+                {
+                  "id": "ab2b2ce1-a8b9-5682-afc8-b9b745aefb39",
+                  "mode": "same_locality_different_parcel",
+                  "name": "高御祖神社",
+                  "observation": "主対象の正式名・全文かな・全所在地の対応、既存判断又は読みの疑義が残るため保留。同名別所在地からの流用、語尾・字名の補完、空白・中黒の削除は行わない。",
+                  "original_address": "壱岐市芦辺町諸吉仲触9番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉仲触81",
+                    "checked_at": "2026-11-12T05:52:09.206735+00:00",
+                    "locator": null,
+                    "name_raw": "高御祖神社",
+                    "page_hash": "6c5d216b4d8706519907c1ec779c7a659e431cb64be76b384019c62e13ef961b",
+                    "reading_raw": "たかみおやじんじゃ",
+                    "url": "https://www.buccyake-kojiki.com/archives/1061561047.html"
+                  },
+                  "status": "inspected_independent_article_not_adopted"
+                },
+                {
+                  "id": "ab2b2ce1-a8b9-5682-afc8-b9b745aefb39",
+                  "mode": "same_locality_different_parcel",
+                  "name": "高御祖神社",
+                  "observation": "名称の一致だけでは施設を同定せず、地番・枝番・町域等の原所在地との差を保持。観光案内と法人所在地の関係を推定せず、全文かなは補正へ採用しない。",
+                  "original_address": "壱岐市芦辺町諸吉仲触9番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉仲触81-1",
+                    "checked_at": "2026-11-13T14:00:58.843330+00:00",
+                    "locator": "h1.o-heading-low-type4 / table.o-detail-contents__table 住所 / h2.o-detail-contents__description 鎮座置・鎮座地",
+                    "name_raw": "高御祖神社",
+                    "page_hash": "88f54f3901e68ef53b011c860df879847456d5501caeb67faa92d6a9099d1bf5",
+                    "reading_raw": "たかみおやじんじゃ",
+                    "url": "https://www.ikikankou.com/spot/10231"
+                  },
+                  "status": "same_name_full_address_difference"
+                },
+                {
+                  "id": "ab2b2ce1-a8b9-5682-afc8-b9b745aefb39",
+                  "mode": "same_locality_different_parcel",
+                  "name": "高御祖神社",
+                  "observation": "原名と同名の参拝記事本文を候補比較。別地域/地番・字名・字形の差や元所在地の不足を保持し、同名だけで全文かなを流用しない。原地番/町域の変更や欠落部分の補作を行わない。",
+                  "original_address": "壱岐市芦辺町諸吉仲触9番地",
+                  "reference": {
+                    "address_raw": "長崎県壱岐市芦辺町諸吉仲触81-1",
+                    "checked_at": "2026-11-14T05:41:09.054122+00:00",
+                    "locator": "div#entryBody 冒頭の主対象名・独立全文かな・所在地3行",
+                    "name_raw": "高御祖神社",
+                    "page_hash": "a1aca9400d30f7d0a5ffe3675d96d50b3379cf42371ae6003550a37df433abe4",
+                    "reading_raw": "たかみおやじんじゃ",
+                    "url": "https://ameblo.jp/sen23ka/entry-12792499768.html?frm=theme"
+                  },
+                  "status": "explicit_kana_original_location_difference_not_adopted"
+                }
+              ],
+              "schema_version": 1,
+              "validated_count": 0
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [
