@@ -1314,6 +1314,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 幸神社は国税庁と京都市交通局の「さいのかみのやしろ」を照合し、寺町通今出川上ル西入ル／上る西入と幸神町303の各掲載値を保持しました。白峯神宮は上京区の「しらみねじんぐう」、国税庁と神社庁の飛鳥井町261、同じ地番と読みを掲載する歴史地名資料を照合しました。5登録を補完し、全国の保留は**9,168 → 9,163登録**です。[幸神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005001558)・[京都市交通局の幸神社の案内](https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000113/113828/2011.10.pdf#page=2)・[上京区の白峯神宮の案内](https://www.city.kyoto.lg.jp/kamigyo/cmsfiles/contents/0000012/12734/01_spot.pdf#page=2)・[『日本歴史地名大系』施設・地点項目データセットの白峯神宮（CODH作成、doi:10.20676/00000456、CC BY 4.0）](https://geoshape.ex.nii.ac.jp/nrct-poi/resource/27/270000216800.html)
 
+### 京都市内の旧字体と公表フリガナの照合（2026-11-27）
+
+伏見神寳神社は陸上自衛隊の広報紙で社名全体のルビ「ふしみかんだからじんじゃ」と深草笹山町15を確認しました。伏見区資料は「伏見神宝神社」と表記しています。西賀茂角社町129の大將軍神社は現地記事の「たいしょうぐんじんじゃ」と京都市消防局の同地番を照合しました。市の文化財環境保全地区解説も「たいしょうぐんじんじゃ」の音を含みます。辞書は神社庁の「寳」「將」を採用しました。[3師団だより第1733号の6頁](https://www.mod.go.jp/gsdf/mae/3d/3d/3ddayori/no-173.pdf#page=6)・[伏見区の深草トレイル](https://www.city.kyoto.lg.jp/fushimi/page/0000105213.html)・[大将軍神社の現地記事](https://www.buccyake-kojiki.com/archives/1062793679.html)・[京都市消防局の一覧](https://www.city.kyoto.lg.jp/shobo/cmsfiles/contents/0000081/81474/2bunkazai.pdf#page=1)・[京都市の文化財環境保全地区](https://www2.city.kyoto.lg.jp/bunshi/bunkazai/siteisyasinn/kannsetumei.html)
+
+文子天満宮神社は国税庁に正式名のフリガナ「アヤコテンマングウジンジャ」があり、京都市告示と庁原欄の天神町400を照合しました。下京区の案内にある「文子天満宮（あやこてんまんぐう）」も典拠に保持しました。3登録を補完し、全国の保留は**9,163 → 9,160登録**です。[文子天満宮神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7130005001635)・[京都市告示第702号](https://www2.city.kyoto.lg.jp/somu/bunsyo/kouhou/r0603/0329/0329_94.pdf)・[京都市下京区の案内](https://www.city.kyoto.lg.jp/shimogyo/page/0000012669.html)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
