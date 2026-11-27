@@ -1308,6 +1308,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 位置照合は京都市固定資産税（土地）地番図データ（京都市、CC BY 4.0）と © OpenStreetMap contributors の公開地物を加工しました。地番図は参考位置の照合に使い、権利関係や地番変更履歴の証明には使用していません。地図や地物の形状は収録せず、出典と照合結果を保存しました。[京都市のデータ](https://data.city.kyoto.lg.jp/resource/?id=20504)・[京都市の利用規約](https://data.city.kyoto.lg.jp/resource/?id=20502)・[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)・[OpenStreetMapのライセンス](https://www.openstreetmap.org/copyright)
 
+### 京都市内の正式名と読みの照合（2026-11-27）
+
+文化庁の世界遺産構成資産個票は、賀茂御祖神社「かもみおやじんじゃ」と下鴨泉川町59、賀茂別雷神社「かもわけいかづちじんじゃ」と上賀茂本山339をそれぞれ明記しています。御靈神社は神仏霊場会の「ごりょうじんじゃ」と神社紹介の上御霊竪町495を照合しました。辞書には3社の正式名と読みを採用し、神社庁の括弧内にある下鴨神社・上賀茂神社・上御霊神社は原欄に保存しました。[賀茂御祖神社の文化庁個票](https://kunishitei.bunka.go.jp/bsys/maindetails/911/5)・[賀茂別雷神社の文化庁個票](https://kunishitei.bunka.go.jp/heritage/detail/911/4)・[神仏霊場会の御靈神社](https://shinbutsureijou.com/reijou/goryoujinja/)・[御靈神社の全所在地を掲載する神社紹介](https://www.jinjya.com/jinjya-info/26_b22d/)
+
+幸神社は国税庁と京都市交通局の「さいのかみのやしろ」を照合し、寺町通今出川上ル西入ル／上る西入と幸神町303の各掲載値を保持しました。白峯神宮は上京区の「しらみねじんぐう」、国税庁と神社庁の飛鳥井町261、同じ地番と読みを掲載する歴史地名資料を照合しました。5登録を補完し、全国の保留は**9,168 → 9,163登録**です。[幸神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1130005001558)・[京都市交通局の幸神社の案内](https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000113/113828/2011.10.pdf#page=2)・[上京区の白峯神宮の案内](https://www.city.kyoto.lg.jp/kamigyo/cmsfiles/contents/0000012/12734/01_spot.pdf#page=2)・[『日本歴史地名大系』施設・地点項目データセットの白峯神宮（CODH作成、doi:10.20676/00000456、CC BY 4.0）](https://geoshape.ex.nii.ac.jp/nrct-poi/resource/27/270000216800.html)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
