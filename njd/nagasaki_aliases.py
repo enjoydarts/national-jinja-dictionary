@@ -34,6 +34,26 @@ class Alias:
 _ALIASES = (
     Alias(
         Observation(
+            '3a7913a5-aae4-50ca-ba2a-9f57f1acdd5a',
+            '0c15a418-9237-560a-bc2b-253f6a709fc8',
+            '諏訪神社',
+            '2e31cbbe072a57da4533d30d7361f1f3406951491f00ddae0bd87686291e43cf',
+            'http://www.osuwasan.jp/',
+            'table[1] tr[2]',
+        ),
+        Observation(
+            '794e0c67-69a5-5dba-a5cc-7fb1f5eb5c8f',
+            '04d61230-f83c-5aba-bc9c-baad5173726b',
+            '諏訪神社',
+            'd3f4887c34c674f52b1dbcfd7b24c43e7d2789baf92d038b69742ab1c28d8d31',
+            'https://www.osuwasan.jp/index.html',
+            'div#bk17860131 a[href="https://www.osuwasan.jp/index.html"]',
+        ),
+        'nagasaki.html', '長崎市', '長崎市上西山町18番地15号',
+        'historic_official_listing',
+    ),
+    Alias(
+        Observation(
             'd9975756-7562-556b-bc8f-8061f50a67ac',
             '98894a79-bb3e-5cc3-9b96-e9656f4a9297',
             '阿蘇神社',
@@ -116,9 +136,47 @@ _ALIASES = (
 
 
 # The selected receipts include the literal fields that establish each connection:
-# matching response bodies, shared publisher content, or the association's
-# named profile link.
+# the historic URL for the same address, matching response bodies, shared
+# publisher content, or the association's named profile link.
 _LINK_RECEIPTS = {
+    '諏訪神社': (
+        dict(
+            status=200,
+            url='https://www.kyoto-kimonomeguri.com/other/1325.html',
+            page_hash='02f80088dc2a484eefca1375ab6e6b9657e1a53e8d1fbc507c36be4380aceb36',
+            role='historically_published_official_url',
+            source_publisher='京都きもの巡り',
+            name_raw='鎮西大社諏訪神社',
+            address_raw='〒850-0006 長崎県長崎市上西山町１８−１５',
+            href_raw='https://www.osuwasan.jp/index.html',
+            published_date='2019-08-02',
+            terms_url='https://www.kyoto-kimonomeguri.com/privacy',
+        ),
+        dict(
+            status=301,
+            url='http://www.osuwasan.jp/',
+            page_hash='e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
+            location_header_raw='https://www.osuwasan.jp/',
+        ),
+        dict(
+            status=200,
+            url='https://www.osuwasan.jp/',
+            page_hash='dff5421b4e050f9e78b1dd421f2d87dfb6b38162f9d5dd65325b3b81db468f1c',
+            source_publisher='鎮西大社 諏訪神社',
+            name_raw='鎮西大社 諏訪神社',
+            address_raw='長崎県長崎市上西山町18番15号',
+            href_raw='https://www.osuwasan.jp/',
+        ),
+        dict(
+            status=200,
+            url='https://www.at-nagasaki.jp/spot/94',
+            page_hash='2164286ea29fb12119fc13c07bbdda2a0b6c225457668c1e568fdfd3d725730b',
+            source_publisher='長崎市公式観光サイト「travel nagasaki」',
+            name_raw='鎮西大社\u3000諏訪神社',
+            address_raw='長崎県長崎市上西山町18-15',
+            href_raw='https://www.osuwasan.jp/',
+        ),
+    ),
     '阿蘇神社': (
         dict(
             status=200,
@@ -252,12 +310,14 @@ _ADDRESS_RECEIPTS = {
 }
 
 _REGIONAL_PAGES = {
+    'nagasaki.html': '84ed1414360b6f867f72e4099b42c13721dac7368d3c827d947e6d38545f0ebd',
     'seihi.html': '3533c16893b5756f34c4c93b68d6a771d88f132c7109becca2fe0c958489bdd5',
     'iki.html': '3bb54700bb5080fb2b46f1dd35fc5ee1699abfaa59cad74b3b1cdf7e9e3d932a',
     'shimabara.html': '1d3edf4d025b0f27a6e6b20c4a49d9e085a8af851d6debc8407764b32583b799',
 }
 _LEGACY_PAGE_HASH = '307091be9b409e579a3163b03f301e3972c3ceabf9fd1ea5dfd375fcfad11b04'
 _LEGACY_BRANCHES = {
+    '諏訪神社': '長崎市支部',
     '阿蘇神社': '西彼支部',
     '国片主神社': '壱岐支部',
     '月読神社': '壱岐支部',
@@ -283,7 +343,9 @@ def _has_text(value):
 
 
 def _receipt_matches(receipt, expected, checked_at):
-    if not _matches(receipt, expected) or not _has_text(receipt.get('locator')):
+    if not _matches(receipt, expected):
+        return False
+    if expected['status'] == 200 and not _has_text(receipt.get('locator')):
         return False
     fetched_at = _review_date(receipt.get('fetched_at'))
     return fetched_at is not None and fetched_at <= checked_at
@@ -337,6 +399,39 @@ def _agency_receipt_matches(receipt, facility, checked_at, *, legacy):
     return first_fetched <= _review_date(receipt['fetched_at'])
 
 
+def _historic_link_proof_matches(record, proof, checked_at):
+    unavailable = dict(
+        url='https://www.osuwasan.jp/index.html',
+        status=404,
+        page_hash='ae395b1d9c86fe5bcda9a58e46a33dfab3b7210f63323fd43ccf83bdec72aabf',
+        role='unavailable_original_endpoint',
+    )
+    if not _receipt_matches(proof.get('retained_unavailable_ref'), unavailable, checked_at):
+        return False
+    terms = dict(
+        url='https://www.kyoto-kimonomeguri.com/privacy',
+        status=200,
+        page_hash='33ddcf045f378eca9985ec36613f98f8483146ec86cd41782b370d558aa9a4dd',
+        locator='著作権について',
+        source_publisher='京都きもの巡り',
+    )
+    historic_ref = proof['references'][0]
+    if not _receipt_matches(historic_ref.get('terms_reference'), terms, checked_at):
+        return False
+    renewal = dict(
+        url='https://www.osuwasan.jp/2020/06/20/%E5%86%8D%E5%BA%A6%E3%80%81%E3%83%96%E3%83%AD%E3%82%B0%E5%A7%8B%E3%82%81%E3%81%BE%E3%81%99%E3%80%82/',
+        status=200,
+        page_hash='6bd2d63c8ac49a2291b7f2307d19e911545c3b30f379690fa16ab2f8265cbc04',
+        role='official_site_renewal_without_old_path',
+        source_publisher='鎮西大社 諏訪神社',
+        locator='2020年6月20日のお知らせ「再度、ブログ始めます。」の本文',
+    )
+    supporting = record.get('corroboration')
+    return isinstance(supporting, list) and any(
+        _receipt_matches(receipt, renewal, checked_at) for receipt in supporting
+    )
+
+
 def _documentary_proof_matches(record, alias, checked_at):
     proof = record.get('link_proof')
     if not _matches(proof, dict(kind=alias.proof_kind)):
@@ -348,6 +443,8 @@ def _documentary_proof_matches(record, alias, checked_at):
     if not all(_receipt_matches(receipt, witness, checked_at)
                for receipt, witness in zip(receipts, expected)):
         return False
+    if alias.proof_kind == 'historic_official_listing':
+        return _historic_link_proof_matches(record, proof, checked_at)
     address_witness = _ADDRESS_RECEIPTS.get(alias.primary.name)
     if address_witness is None:
         return True
