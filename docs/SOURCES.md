@@ -1152,6 +1152,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 愛知県神社庁の大口町の公開検索20件には「天神社」が2件あります。替地の天神社は原欄の2丁目305番地と現地記事・法人個票の全住所を照合しました。街字を含む鎮座地を補完し、神社庁に明記された既存の「てんじんしゃ」を辞書に収録しました。高知の新規読み2件とあわせ、全国28都道府県の保留は**9,269 → 9,266登録**です。[大口町の神社庁検索](https://www.aichi-jinjacho.or.jp/search_result.html?addr=%E5%A4%A7%E5%8F%A3%E7%94%BA)・[替地の天神社の現地記事](https://owari-nagoya55.hatenablog.com/entry/2025/10/31/000000)・[替地の天神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3180005009256)
 
+### 滋賀の住所照合で保留した法人個票29件の再審査（2026-11-27）
+
+神社庁と法人所在地の照合で保留した滋賀県の29登録について、国税庁の法人個票を全件再確認しました。主たる事務所所在地に変更があった7件のうち、4件の旧所在地が神社庁の鎮座地と全地番で一致しました。文化財資料で当該施設を確認し、垣見町の能登川神社「のとがわじんじゃ」、当目町の日高神社「ひだかじんじゃ」、松尾の杉崎稲荷神社「すぎさきいなりじんじゃ」を採用しました。法人の現在・旧所在地と庁の原欄、旧保留判断を保持しました。[能登川神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4160005005925)・[日高神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3160005004176)・[杉崎稲荷神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4160005005875)
+
+豊郷町の愛知神社は、町の水道・下水道台帳が吉田1177と1177-1に同じ社名を掲載しています。各地番を原欄に残し、全国春日連合会の鎮座地と全文かな、国税庁の法人所在地と全文かなを照合して「えちじんじゃ」を採用しました。勝町の神明神社は庁と法人の読みが異なるため保留を継続しました。4登録を補完し、全国28都道府県の保留は**9,266 → 9,262登録**です。[豊郷町の水道台帳](https://www.town.toyosato.shiga.jp/0000003160.html)・[豊郷町の下水道台帳](https://www.town.toyosato.shiga.jp/0000003140.html)・[全国春日連合会の名簿](https://kasugarengou.jp/list/area06/index.html)・[愛知神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=9160005005078)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
