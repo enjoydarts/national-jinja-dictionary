@@ -1250,6 +1250,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 福知山市では土師1779の天満神社と宮垣小字堂ノ田和456-3の一宮神社を、町字マスターと法人個票で照合しました。一宮神社の神社庁掲載郵便番号629-0986と日本郵便の620-0986の差は調査記録に残しています。今回の追加は5県の8登録で、全国の保留は**9,209 → 9,201登録**です。[福知山市の町域一覧](https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1262010&cmp=1&pref=26)・[天満神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2130005010310)・[一宮神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=4130005010102)
 
+### 町丁・字境界による候補抽出と長野・京都の補完（2026-11-27）
+
+80自治体の2020年町丁・字等別境界14,405地物を、現行の保留503登録に対応する第4回巨樹調査の地点と比較しました。調査地点と原住所の町域が対応する101登録のうち、69登録は最初の優先76に含まれていません。境界は国勢調査の調査区を基に作成され、地番や神社そのものの同定には個別資料を使います。境界の出典は『国勢調査町丁・字等別境界データセット』（CODH作成）、「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工、doi:10.20676/00000450です。巨樹調査との比較と集計は本プロジェクトが行いました。[CODHのデータセット](https://geoshape.ex.nii.ac.jp/ka/)・[e-Statの境界データの注意事項](https://www.e-stat.go.jp/help/data-definition-information/download)
+
+佐久市の諏訪神社6社は、神社庁の一覧から個別本文へ到達する実リンク、原地番、全文かなを照合しました。大鹿村の大磧神社は、県名簿の森下3402、国税庁と教育芸術社が明記する「たいせきじんじゃ」を確認し、歴史資料の「おおかわらじんじや」を調査記録に保持しました。京都では福知山市上天津の天満神社の81・82・83・84と、南丹市八木町池上北谷の八幡神社の11-1を、神社庁の原欄と現行法人個票で照合しました。今回の追加は9登録で、全国の保留は**9,201 → 9,192登録**です。[長野県の宗教法人名簿](https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf#page=12)・[教育芸術社の大鹿歌舞伎解説](https://www.kyogei.co.jp/shirabe/kyoudo/text17.html)・[大磧神社の歴史地名資料](https://geoshape.ex.nii.ac.jp/nrct-poi/resource/20/200000172500.html)・[上天津の天満神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5130005010308)・[池上北谷の八幡神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3130005007479)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

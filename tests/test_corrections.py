@@ -75,6 +75,31 @@ class KochiKanaParcelTest(unittest.TestCase):
         self.assertEqual(eligible(apply_corrections(data, proposal)), [])
 
 
+class DocumentedParcelIdentityTest(unittest.TestCase):
+    def test_variants_require_every_parcel_number(self):
+        for source, code, prefecture, municipality, name, acquired, published, different in (
+            ('nagano', '20', '長野県', '佐久市', '諏訪神社', '大字協和字小平1319', '協和1319', '協和1320'),
+            ('kyoto', '26', '京都府', '福知山市', '天満神社', '上天津81.82.83.84合地',
+             '字上天津８１・８２・８３・８４番地合地', '字上天津８１・８２・８４番地合地'),
+            ('kyoto', '26', '京都府', '南丹市', '八幡神社', '八木町池上北谷11-1',
+             '八木町池上北谷１１番地ノ１', '八木町池上北谷１１番地ノ２'),
+        ):
+            with self.subTest(name=name):
+                data = build_dataset(source, code, prefecture, 'Synthetic test', [
+                    row(name=name, address=municipality+acquired, municipality=municipality),
+                ])
+                proposal = correction(data, {'reading': 'かくうじんじゃ'})
+                ref = proposal['entries'][data['entries'][0]['id']]['references'][0]
+                ref.update(address_raw=prefecture+municipality+published,
+                           excerpt=name+' かくうじんじゃ '+prefecture+municipality+published)
+                applied = apply_corrections(data, proposal)
+                self.assertEqual(len(eligible(applied)), 1)
+                self.assertEqual(applied['facilities'][0]['address'], municipality+acquired)
+                ref.update(address_raw=prefecture+municipality+different,
+                           excerpt=name+' かくうじんじゃ '+prefecture+municipality+different)
+                self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+
 class OzekiJoinedReadingTest(unittest.TestCase):
     def test_published_reading_url_requires_the_exact_shrine_parcel(self):
         address = '三井郡大刀洗町冨多1302'
