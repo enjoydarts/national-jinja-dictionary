@@ -515,6 +515,19 @@ def _joined_official_reading(ref,correction,facility,entry):
 # Inspected publications linking a full shrine reading to a specific site.
 # Each distinct source keeps its actual name, address and reading fields.
 _PUBLISHED_READING_PAIRS = {
+    ('18', '神明神社', '福井県あわら市東山３９－４'): (
+        dict(url='https://www.city.awara.lg.jp/gikai/gikaidayori/gikaidayori55_d/fil/001.pdf',
+             source_kind='municipal_council_bulletin', locator='PDF1頁右・冊子16頁「東山の阿弥陀如来坐像」第1行のルビ',
+             name_raw='神明神社', address_raw='あわら市東山', reading_raw='しんめいじんじゃ',
+             excerpt='あわら市東山神明神社拝殿 ／ しんめいじんじゃ'),
+        dict(url='https://www.city.awara.lg.jp/mokuteki/education/kyoudo/kyoudorekishishiryo/awarashinobunkazai/sisitei/tyoukoku/p006136.html',
+             source_kind='municipal_cultural_property', locator='概説「東山区の神明神社境内」と概要の所在地欄',
+             name_raw='神明神社', address_raw='福井県あわら市東山39字4番',
+             excerpt='阿弥陀如来坐像 ／ 福井県あわら市東山39字4番（神明神社）'),
+        dict(url='https://www.jinja-fukui.jp/detail/index.php?ID=20161212_144243',
+             source_kind='official_agency', locator='神社名・鎮座地の表', name_raw='神明神社',
+             address_raw='福井県あわら市東山３９－４', excerpt='神明神社 ／ 福井県あわら市東山３９－４'),
+    ),
     ('41', '妙見神社', '唐津市藤崎通り７０２２'): (
         dict(url='https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7300005005148', source_kind='government_corporate_register',
              locator='div.corpInfo 最新情報 法人番号・商号又は名称・フリガナ・本店又は主たる事務所の所在地', name_raw='妙見神社',

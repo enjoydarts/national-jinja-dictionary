@@ -27983,6 +27983,27 @@
                 ],
                 "observation": "取得済み一覧の名称完全一致文字リンク候補は未発見。全個別本文/別称/全県資料に存在しないという判定ではない。",
                 "status": "bounded_prefecture_index_scan_no_matching_name_card"
+              },
+              {
+                "address_raw": "福井県越前市国中町５８号２７番地",
+                "address_role": "religious_corporation_office_location",
+                "adopted": false,
+                "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                "checked_at": "2026-11-27T08:49:01.795507+00:00",
+                "corporate_number": "3210005007479",
+                "evidence_attempt": "fukui_awara_municipal_ruby_and_kuninaka_registry_20261127",
+                "excerpt": "國中神社 ／ 福井県越前市国中町５８号２７番地",
+                "expected_source_hash": "eafd7fd5845deaa9be173e72ac1a8a0038d085a1514502280bd5e97abd3b7ef8",
+                "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                "name_raw": "國中神社",
+                "observation": "国中町58号27番地の法人個票は旧字体表記でフリガナ欄がなく、中津山町・西庄境町にある同名社の読みは対象社の根拠としない。",
+                "page_hash": "8e84058e382b21ef053470623e9e8608179952f0d14b914781c49d2586f1df03",
+                "reading_scope": "absent",
+                "source_kind": "government_corporate_register",
+                "status": "inspected_not_adopted",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "title": "国税庁法人番号公表サイト・國中神社",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3210005007479"
               }
             ],
             "address": "福井県越前市国中町５８－２７",
@@ -79255,7 +79276,7 @@
           "surface": "氷川神社"
         },
         {
-          "checked_at": "2026-11-08T14:32:07.375935+00:00",
+          "checked_at": "2026-11-27T08:49:01.795507+00:00",
           "evidence": "ひがしやま 神明神社 白山神社、阿弥陀堂 福井県あわら市東山３９－４",
           "facility_id": "bdbc205b-bfb2-56c0-98a4-c20cd12c1333",
           "fetched_at": "2026-11-08T14:32:07.375935+00:00",
@@ -79263,13 +79284,15 @@
           "judgments": {
             "corrections": {
               "changes": {
-                "reading": "ひがしやま"
+                "reading": "しんめいじんじゃ"
               },
               "expected_source_hash": "e05cda1d2bca8874a6a5ef4532d931f41d922fec8f50d6727a7eaf51a52ff569",
               "facility_id": "bdbc205b-bfb2-56c0-98a4-c20cd12c1333",
               "identity_match": {
                 "agency_address": "福井県あわら市東山３９－４",
-                "agency_name": "神明神社"
+                "agency_name": "神明神社",
+                "municipal_location": "福井県あわら市東山39字4番",
+                "shared_cultural_property": "東山の阿弥陀如来坐像"
               },
               "original": {
                 "address": "福井県あわら市東山３９－４",
@@ -79277,23 +79300,104 @@
                 "name_raw": "神明神社",
                 "reading_raw": "ひがしやま"
               },
-              "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_locality_or_other_label_in_reading",
+              "reason": "あわら市議会だよりの東山・神明神社拝殿に付く社名全体のルビを採用。同じ拝殿の右脇の阿弥陀如来坐像を市文化財ページで照合し、神社庁の鎮座地と市・国税庁の地番39・4を確認。原表の「ひがしやま」と旧要確認判断を保存。",
               "references": [
                 {
-                  "address_raw": "福井県あわら市東山３９－４",
-                  "checked_at": "2026-11-08T14:32:07.375935+00:00",
-                  "excerpt": "ひがしやま 神明神社 白山神社、阿弥陀堂 福井県あわら市東山３９－４",
-                  "locator": "table tr[5813]",
+                  "address_raw": "あわら市東山",
+                  "checked_at": "2026-11-27T08:49:01.795507+00:00",
+                  "excerpt": "あわら市東山神明神社拝殿 ／ しんめいじんじゃ",
+                  "heritage_title_raw": "東山の阿弥陀如来坐像",
+                  "locator": "PDF1頁右・冊子16頁「東山の阿弥陀如来坐像」第1行のルビ",
                   "name_raw": "神明神社",
-                  "page_hash": "a7f7dc05b4c159eb7288c1c913c4c06bbc8f1878b090cd1e6f540dcb529c4446",
-                  "reading_raw": "ひがしやま",
-                  "source_kind": "agency",
-                  "title": "福井県神社庁 掲載読み原文（全文読みの確認未了）",
-                  "url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01"
+                  "page_hash": "7a6dabe00f53b3527e2c77727153e7f65e5b7903e11b0c1fcdbbe7b7139c079f",
+                  "pdf_page": 1,
+                  "printed_label_raw": "あわら市東山神明神社拝殿",
+                  "printed_page": 16,
+                  "reading_raw": "しんめいじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_council_bulletin",
+                  "source_publisher": "あわら市議会",
+                  "title": "あわら市議会だより 第55号",
+                  "url": "https://www.city.awara.lg.jp/gikai/gikaidayori/gikaidayori55_d/fil/001.pdf"
+                },
+                {
+                  "address_raw": "福井県あわら市東山39字4番",
+                  "checked_at": "2026-11-27T08:49:01.795507+00:00",
+                  "excerpt": "阿弥陀如来坐像 ／ 福井県あわら市東山39字4番（神明神社）",
+                  "heritage_title_raw": "阿弥陀如来坐像",
+                  "locator": "概説「東山区の神明神社境内」と概要の所在地欄",
+                  "name_raw": "神明神社",
+                  "page_hash": "63cac36461131473c6ffcdeb7dec9973545a4eadda69267dd6fbedc7d9ecceb7",
+                  "source_kind": "municipal_cultural_property",
+                  "source_publisher": "あわら市",
+                  "title": "阿弥陀如来坐像 | あわら市ホームページ",
+                  "url": "https://www.city.awara.lg.jp/mokuteki/education/kyoudo/kyoudorekishishiryo/awarashinobunkazai/sisitei/tyoukoku/p006136.html"
+                },
+                {
+                  "address_raw": "福井県あわら市東山３９－４",
+                  "checked_at": "2026-11-12T01:53:36.463836+00:00",
+                  "excerpt": "神明神社 ／ 福井県あわら市東山３９－４",
+                  "locator": "神社名・鎮座地の表",
+                  "name_raw": "神明神社",
+                  "page_hash": "afd1338f323a10ec126ec3b1d243efa317c9e0898fe9ae4cdd0881b0b9ba18e9",
+                  "source_kind": "official_agency",
+                  "title": "神明神社 | 福井県神社庁",
+                  "url": "https://www.jinja-fukui.jp/detail/index.php?ID=20161212_144243"
+                },
+                {
+                  "address_raw": "福井県あわら市東山３９号４番地",
+                  "address_role": "religious_corporation_office_location",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）",
+                  "checked_at": "2026-11-27T08:49:01.795507+00:00",
+                  "corporate_number": "8210005004380",
+                  "excerpt": "神明神社 ／ 福井県あわら市東山３９号４番地",
+                  "locator": "最新情報の法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                  "name_raw": "神明神社",
+                  "page_hash": "42fee5000232fd5e920fa074d0a4fafacfaddd437bd4189ee7cd979cc2b637ac",
+                  "reading_scope": "absent",
+                  "source_kind": "government_corporate_register",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト・神明神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8210005004380"
                 }
               ],
-              "review_kind": "whole_reading_audit",
-              "status": "needs_review"
+              "review_history": [
+                {
+                  "changes": {
+                    "reading": "ひがしやま"
+                  },
+                  "expected_source_hash": "e05cda1d2bca8874a6a5ef4532d931f41d922fec8f50d6727a7eaf51a52ff569",
+                  "facility_id": "bdbc205b-bfb2-56c0-98a4-c20cd12c1333",
+                  "identity_match": {
+                    "agency_address": "福井県あわら市東山３９－４",
+                    "agency_name": "神明神社"
+                  },
+                  "original": {
+                    "address": "福井県あわら市東山３９－４",
+                    "listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
+                    "name_raw": "神明神社",
+                    "reading_raw": "ひがしやま"
+                  },
+                  "reason": "正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_locality_or_other_label_in_reading",
+                  "references": [
+                    {
+                      "address_raw": "福井県あわら市東山３９－４",
+                      "checked_at": "2026-11-08T14:32:07.375935+00:00",
+                      "excerpt": "ひがしやま 神明神社 白山神社、阿弥陀堂 福井県あわら市東山３９－４",
+                      "locator": "table tr[5813]",
+                      "name_raw": "神明神社",
+                      "page_hash": "a7f7dc05b4c159eb7288c1c913c4c06bbc8f1878b090cd1e6f540dcb529c4446",
+                      "reading_raw": "ひがしやま",
+                      "source_kind": "agency",
+                      "title": "福井県神社庁 掲載読み原文（全文読みの確認未了）",
+                      "url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01"
+                    }
+                  ],
+                  "review_kind": "whole_reading_audit",
+                  "status": "needs_review"
+                }
+              ],
+              "status": "verified"
             }
           },
           "listing_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
@@ -79303,11 +79407,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "a7f7dc05b4c159eb7288c1c913c4c06bbc8f1878b090cd1e6f540dcb529c4446",
-          "reading": "ひがしやま",
+          "reading": "しんめいじんじゃ",
           "reading_raw": "ひがしやま",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.jinja-fukui.jp/result/?SearchType=1&Chiku=01",
-          "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_locality_or_other_label_in_reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.city.awara.lg.jp/gikai/gikaidayori/gikaidayori55_d/fil/001.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -79567,6 +79671,20 @@
             "prefecture_code": "18",
             "reading_raw": "ひがしやま",
             "reason": "correction is not verified; 正式名称の全文読みとして未確認。途中読み・地名欄の混入・誤記等の疑いを精査するため原文のまま要確認へ戻す。接尾語の補完や小書き変更はしない。分類: suspected_locality_or_other_label_in_reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "しんめいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "しんめいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "神明神社",
             "wikipedia_article_refs": [],
@@ -79597,7 +79715,7 @@
             "status": "verified",
             "surface": "神明神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "神明神社"
         },
         {

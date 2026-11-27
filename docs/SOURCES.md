@@ -1296,6 +1296,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 国税庁の11月27日付日次差分は電子署名を検証し、2,402行を全国の保留と比較しました。名称と全地番が対応した追加候補は0件でした。今回の補完は佐賀の3登録で、全国の保留は**9,173 → 9,170登録**です。[国税庁の日次差分](https://www.houjin-bangou.nta.go.jp/download/sabun/)
 
+### 福井の残る2登録の再照合（2026-11-27）
+
+あわら市東山の神明神社は、市議会だよりの「神明神社拝殿」に付く全文ルビ「しんめいじんじゃ」を採用しました。市の文化財資料が同じ拝殿の右脇にある阿弥陀如来坐像の所在地を東山39字4番と明記し、神社庁の鎮座地と国税庁の法人所在地も地番39・4で対応します。神社庁の原表にある「ひがしやま」と旧保留判断を正本に残しました。[あわら市議会だより第55号16頁](https://www.city.awara.lg.jp/gikai/gikaidayori/gikaidayori55_d/fil/001.pdf#page=1)・[あわら市の文化財資料](https://www.city.awara.lg.jp/mokuteki/education/kyoudo/kyoudorekishishiryo/awarashinobunkazai/sisitei/tyoukoku/p006136.html)・[国税庁の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8210005004380)
+
+越前市国中町58-27の国中神社は、同地番の法人名に旧字体「國中神社」を確認しました。個票にフリガナの記載がなく、神社庁原表の「くになかちょう」は所在地を指すため保留です。福井の保留は2登録から1登録、全国では**9,170 → 9,169登録**となりました。[福井県神社庁の個別案内](https://www.jinja-fukui.jp/detail/index.php?ID=20160815_164650)・[国税庁の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3210005007479)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
