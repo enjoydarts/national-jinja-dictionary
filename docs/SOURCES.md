@@ -1132,6 +1132,14 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 高松市今里町の平石井神社は、個別の現地記録にある「ひらいしいじんじゃ」と今里町2丁目1-4を、県神社庁と県名簿3頁の鎮座地・所在地に照合しました。市の指定樹案内でも同じ全文かなを確認し、指定樹の場所欄にある住所を別の観測として保持しました。3県の4登録を補完し、28都道府県に残る保留は**9,281 → 9,277登録**です。[平石井神社の現地記録](https://ruxrux2018.blog.fc2.com/blog-entry-1710.html)・[高松市の指定樹案内](https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/kids/91asobibamapl/kinennbutul.html)・[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf)
 
+### 東近江市の公開郷土資料と法人変更履歴（2026-11-27）
+
+東近江市の保留118登録を公開資料45点に照合しました。PDF37点415頁のうち363頁から文字を抽出しました。七重石塔・宝塔の個別調査と神社庁の鎮座地を照合し、上麻生町61の旭野神社「あさひのじんじゃ」と五個荘河曲町255の河曲神社「かまがりじんじゃ」を補完しました。市辺町1081の三所神社は、資料にある異なる全文かなを記録して保留を継続しました。[旭野神社七重石塔](https://kawai24.sakura.ne.jp/siga-higasioumi-asahinojimjya.htm)・[河曲神社石造宝塔](https://kawai24.sakura.ne.jp/siga-higasioumi-kamagarijinjya.htm)
+
+佐野町の天神社と中羽田町の八幡神社は、県神社庁の鎮座地と一致する旧所在地を国税庁の同一法人の変更履歴で確認しました。現在の法人個票に明記された「てんじんじゃ」「はちまんじんじゃ」を採用し、庁の鎮座地、法人の新旧所在地、以前の判断を保持しました。[天神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2160005005902)・[八幡神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6160005005931)
+
+市原野町の白鳥神社は、市の『そごら』第7号の祭礼本文と会場の2128-1を、町内で一意の同名法人の所在地および全文読みと照合し、「しらとりじんじゃ」を補完しました。県神社庁個票の2128と市・法人の2128-1は、それぞれの原欄を保持しました。滋賀県の5登録を補完し、28都道府県に残る保留は**9,277 → 9,272登録**です。[市刊『そごら』第7号](https://www.city.higashiomi.shiga.jp/_res/projects/default_project/_page_/001/007/951/sokora07.pdf)・[白鳥神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5160005005866)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
