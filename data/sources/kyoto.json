@@ -169429,12 +169429,75 @@
           "surface": "富留山神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:45.726386+00:00",
+          "checked_at": "2026-11-27T00:43:26.687667+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「阿良須神社」、郵便番号「625-0020」、所在地「舞鶴市小倉フル宮13」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "da01b091-5e81-5467-b0fb-9fa008de60a3",
           "fetched_at": "2026-11-09T08:51:45.726386+00:00",
           "id": "fcfaa3ff-401b-5246-9cb5-887bda81a141",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "あらすじんじゃ"
+              },
+              "expected_source_hash": "aeae9befe51d63f7f43def713450e972d55c0483c91085ce93fc35a5f7762d69",
+              "facility_id": "da01b091-5e81-5467-b0fb-9fa008de60a3",
+              "identity_match": {
+                "agency_address": "舞鶴市小倉フル宮13",
+                "agency_name": "阿良須神社",
+                "association_address": "舞鶴市小倉フル宮13",
+                "reference_address": "舞鶴市大字小倉小字フル宮十三番地",
+                "reference_name": "阿良須神社"
+              },
+              "original": {
+                "address": "舞鶴市小倉フル宮13",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
+                "name_raw": "阿良須神社",
+                "reading_raw": ""
+              },
+              "reason": "丹後の地名と式内社訪問記事の全文かなが一致し、双方が採録した社頭由緒の鎮座地は舞鶴市大字小倉小字フル宮十三番地。日本海海難防止協会の会報と神社庁の同社は舞鶴市小倉フル宮13。この社名と全地番に限り表記を照合し、原欄を保持する。",
+              "references": [
+                {
+                  "address_raw": "舞鶴市大字小倉小字フル宮十三番地",
+                  "checked_at": "2026-11-27T00:43:26.687667+00:00",
+                  "excerpt": "阿良須神社（あらすじんじゃ） / 舞鶴市大字小倉小字フル宮十三番地",
+                  "locator": "見出し・社の立看板「阿良須神社由緒」鎮座地",
+                  "name_raw": "阿良須神社",
+                  "page_hash": "3e36d47475438ad97d9a82dfb84ce4e6b0099c26ea6199a5ad0fc4cc3c420a3b",
+                  "reading_raw": "あらすじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "independent_local_history",
+                  "title": "丹後の地名・阿良須神社",
+                  "url": "https://tangonotimei.com/doc/tango/arasujj.html"
+                },
+                {
+                  "address_raw": "舞鶴市大字小倉小字フル宮十三番地",
+                  "checked_at": "2026-11-27T00:47:14.960308+00:00",
+                  "excerpt": "阿良須神社 / あらすじんじゃ / 舞鶴市大字小倉小字フル宮十三番地",
+                  "locator": "本文「比定社」「アプローチ＆ロケーション」「感想」の社発行由緒",
+                  "name_raw": "阿良須神社",
+                  "page_hash": "4883dd2552c4e8a62e3ebcd906a509c93f7fc90290d3a5aa72431ec12ec29f1f",
+                  "reading_raw": "あらすじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "independent_shrine_article",
+                  "title": "神社好き式内社を訪ねる・阿良須神社（舞鶴市小倉）",
+                  "url": "https://shikinaisya.net/?p=3588"
+                },
+                {
+                  "address_raw": "舞鶴市小倉フル宮13",
+                  "checked_at": "2026-11-24T01:50:53.824259+00:00",
+                  "excerpt": "阿良須神社 ⑯ 625-0020 舞鶴市小倉フル宮13",
+                  "locator": "冊子PDF14頁（印刷11頁）、第100号・⑯",
+                  "name_raw": "阿良須神社",
+                  "page_hash": "626d3ee442cce3a1ffc5f6130198f4c327f29e640c35ac30e150a29aa415431e",
+                  "reading_scope": "address_only",
+                  "source_kind": "association_local_history",
+                  "title": "日本海海難防止協会・舞鶴の神様たち",
+                  "url": "https://nikkaikb.com/files/libs/236/201702241547007005.pdf"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
           "name_raw": "阿良須神社",
           "normalization": [
@@ -169442,11 +169505,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "c2646e766be6ec51a930d75a262229d8e184e893bd17809ac9431d9f9e530e8b",
-          "reading": "",
+          "reading": "あらすじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://tangonotimei.com/doc/tango/arasujj.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -169541,6 +169604,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "あらすじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "あらすじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "阿良須神社",
             "wikipedia_article_refs": [],
@@ -169571,7 +169648,7 @@
             "status": "pending",
             "surface": "阿良須神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "阿良須神社"
         },
         {
@@ -182517,12 +182594,92 @@
           "surface": "六所神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:45.726386+00:00",
+          "checked_at": "2026-11-27T00:54:00.444069+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「麻良多神社」、郵便番号「624-0955」、所在地「舞鶴市丸田宮ノ谷142」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "69b4e331-9943-5311-8a2d-c74213491365",
           "fetched_at": "2026-11-09T08:51:45.726386+00:00",
           "id": "736bd625-7e2b-566f-9b9a-6090c13769da",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "まらたじんじゃ"
+              },
+              "checked_at": "2026-11-27T00:55:17.445022+00:00",
+              "expected_source_hash": "e2b62f7fc0679d0e3d17907ef52d4cfebbb0794462766f417756fe7bdb33ce99",
+              "facility_id": "69b4e331-9943-5311-8a2d-c74213491365",
+              "identity_match": "編集部の公開記事が麻良多神社・全文まらたじんじゃ・京都府舞鶴市丸田宮ノ谷142を同じ個別本文に明記。神社庁の読み空欄と全地番を保持。先行する独立現地訪問記事と地域誌の全文かな、境内入口の巨樹調査の番地142も一致する。",
+              "original": {
+                "address": "舞鶴市丸田宮ノ谷142",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
+                "name_raw": "麻良多神社",
+                "reading_raw": ""
+              },
+              "reason": "編集部の公開記事が麻良多神社・全文まらたじんじゃ・京都府舞鶴市丸田宮ノ谷142を同じ個別本文に明記。神社庁の読み空欄と全地番を保持。先行する独立現地訪問記事と地域誌の全文かな、境内入口の巨樹調査の番地142も一致する。",
+              "references": [
+                {
+                  "address_raw": "京都府舞鶴市丸田宮ノ谷142",
+                  "checked_at": "2026-11-27T00:54:00.444069+00:00",
+                  "excerpt": "麻良多神社 / 京都府舞鶴市丸田宮ノ谷142 / 「まらたじんじゃ」",
+                  "locator": "冒頭「編集部調べ」と基本情報・所在地",
+                  "name_raw": "麻良多神社",
+                  "page_hash": "0cc13ee19fe34aa0ee538bd142036f0e6c32ad329933817783ccdb00b7bf319b",
+                  "policy": {
+                    "checked_at": "2026-11-27T00:54:21.528957+00:00",
+                    "page_hash": "993d580eab83682df52b8050c05feed838c279c992701d08c91725919cd8f5f7",
+                    "url": "https://tokoton-touring.com/privacy-policy/"
+                  },
+                  "published_at": "2026-11-20",
+                  "reading_raw": "まらたじんじゃ",
+                  "reading_scope": "full_name",
+                  "rights_note": "社名・読み・所在地の識別事実を短く記録。写真や解説文は収録しない。編集部による既存公開資料の調査。",
+                  "source_kind": "published_editorial_spot_profile",
+                  "title": "大阪発！パさんのとことんツーリング・麻良多神社（京都府舞鶴市）",
+                  "url": "https://tokoton-touring.com/tokospo-marata-jinja/"
+                },
+                {
+                  "address_raw": "京都府舞鶴市丸田",
+                  "checked_at": "2026-11-27T00:54:21.790442+00:00",
+                  "excerpt": "麻良多神社 / 京都府舞鶴市丸田 / 「まらたじんじゃ」と読む",
+                  "locator": "比定社の所在地と「アプローチ＆ロケーション」の読み",
+                  "name_raw": "麻良多神社",
+                  "page_hash": "a2312dd3294bb392ca8257b32f168aa071c490884d4f6a364bef1a639941cd65",
+                  "reading_raw": "まらたじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "published_local_field_research",
+                  "title": "神社好き式内社を訪ねる・267-100 麻良多神社",
+                  "url": "https://shikinaisya.net/?p=3655"
+                },
+                {
+                  "address_raw": "舞鶴市丸田",
+                  "checked_at": "2026-11-27T00:49:54.699105+00:00",
+                  "excerpt": "麻良多神社 / （まらたじんじゃ） / 舞鶴市丸田",
+                  "locator": "見出し・所在地",
+                  "name_raw": "麻良多神社",
+                  "page_hash": "7f4f28770357371bf6cc491c4f4f545196823eb309480c85bbdd32371c930d7a",
+                  "reading_raw": "まらたじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "published_local_field_research",
+                  "title": "丹後の地名・麻良多神社",
+                  "url": "https://tangonotimei.com/doc/tango/maratajj.html"
+                },
+                {
+                  "address_raw": "京都府舞鶴市丸田142",
+                  "checked_at": "2026-11-27T00:54:23.327673+00:00",
+                  "excerpt": "麻良多神社の関脇ケヤキ / （まらたじんじゃ） / 京都府舞鶴市丸田142",
+                  "locator": "見出しの読み・項目「所在地」",
+                  "name_raw": "麻良多神社",
+                  "page_hash": "5356fcdda9b0c14c587428b9552f7bd87a223e6b55c651a29a49c4e4ce582cb5",
+                  "reading_raw": "まらたじんじゃ",
+                  "reading_scope": "full_name_with_tree_address",
+                  "says": "本文は境内入口の木と説明し、所在地欄は木の位置。公開記事が参照した国の巨樹データと神社庁の現行全地番を区別する。",
+                  "source_kind": "published_local_field_research",
+                  "title": "巨樹と花のページ・麻良多神社の関脇ケヤキ",
+                  "url": "http://www.tree-flower.jp/26/marata_jinja_519/sekiwake_keyaki.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
           "name_raw": "麻良多神社",
           "normalization": [
@@ -182530,11 +182687,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "c2646e766be6ec51a930d75a262229d8e184e893bd17809ac9431d9f9e530e8b",
-          "reading": "",
+          "reading": "まらたじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/20.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://tokoton-touring.com/tokospo-marata-jinja/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -182567,6 +182724,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "まらたじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "まらたじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "麻良多神社",
             "wikipedia_article_refs": [],
@@ -182597,7 +182768,7 @@
             "status": "pending",
             "surface": "麻良多神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "麻良多神社"
         },
         {

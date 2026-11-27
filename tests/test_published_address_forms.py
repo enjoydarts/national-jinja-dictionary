@@ -53,6 +53,24 @@ class PublishedAddressFormsTest(unittest.TestCase):
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
 
+    def test_kochi_explicit_combined_parcels_compare_with_both_numbers_preserved(self):
+        acquired = '香美市土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地'
+        printed = '高知県香美市土佐山田町本村字アカノミヅ４９７・４９８合番地'
+        dataset, proposal = self.fixture('39', '高知県', '星神社', 'ほしじんじゃ', acquired, printed)
+        result = apply_corrections(dataset, proposal)
+        self.assertEqual(len(eligible(result)), 1)
+        self.assertEqual(result['facilities'], dataset['facilities'])
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_kochi_combined_parcel_comparison_requires_the_complete_list(self):
+        acquired = '香美市土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地'
+        for end in ('497合番地', '498・497合番地', '497・499合番地', '497・498-1合番地', '497・498番地'):
+            with self.subTest(end=end):
+                dataset, proposal = self.fixture(
+                    '39', '高知県', '星神社', 'ほしじんじゃ', acquired, '香美市土佐山田町本村字アカノミヅ'+end,
+                )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
     def test_kizugawa_compares_the_documented_town_prefix(self):
         acquired = '木津川市平尾里屋敷54'
         printed = '木津川市山城町平尾里屋敷54'
@@ -74,6 +92,26 @@ class PublishedAddressFormsTest(unittest.TestCase):
                 dataset, proposal = self.fixture(
                     '26', '京都府', '和伎座天乃夫岐賣神社', 'わきにますあめのふきめじんじゃ', acquired, printed,
                 )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_arasu_shrine_compares_the_parcel_printed_in_kanji(self):
+        acquired = '舞鶴市小倉フル宮13'
+        printed = '舞鶴市大字小倉小字フル宮十三番地'
+        dataset, proposal = self.fixture('26', '京都府', '阿良須神社', 'あらすじんじゃ', acquired, printed)
+        result = apply_corrections(dataset, proposal)
+        self.assertEqual(len(eligible(result)), 1)
+        self.assertEqual(result['facilities'], dataset['facilities'])
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_arasu_parcel_comparison_requires_the_shrine_and_the_complete_address(self):
+        for name, acquired, printed in (
+            ('阿良須神社', '舞鶴市小倉フル宮13-1', '舞鶴市大字小倉小字フル宮十三番地'),
+            ('阿良須神社', '舞鶴市小倉フル宮13', '舞鶴市大字小倉小字フル宮十四番地'),
+            ('阿良須神社', '舞鶴市小倉フル宮13', '舞鶴市大字小倉十三番地'),
+            ('別神社', '舞鶴市小倉フル宮13', '舞鶴市大字小倉小字フル宮十三番地'),
+        ):
+            with self.subTest(name=name, acquired=acquired, printed=printed):
+                dataset, proposal = self.fixture('26', '京都府', name, 'あらすじんじゃ', acquired, printed)
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
 
     def test_kyotango_compares_documented_minor_locality_markers(self):

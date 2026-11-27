@@ -211,8 +211,8 @@ def _reference_matches(ref,facility,entry,changes):
         # Never rewrite stored text, shrine names, or a locality elsewhere.
         if facility.get('prefecture_code')=='39' and facility.get('prefecture')=='高知県':
             value=re.sub(r'^(高岡郡)?檮原町(?=.*[0-9])',r'\1梼原町',value)
-            # A period and a middle dot both separate printed parcel numbers.
-            value=re.sub(r'(?<=\d)(?:番地)?[.・](?=\d+番地$)','・',value)
+            # Compare the separators while keeping the ordered numbers and 合番地.
+            value=re.sub(r'(?<=\d)(?:番地)?[.・](?=\d+合?番地$)','・',value)
         # Compare both endpoints of an explicitly marked parcel range.
         value = re.sub(r'自([0-9]+)(?:番地)?[.・]?至([0-9]+)(?:番地)?$', r'自\1至\2', value)
         value=re.sub(r'(?<=\d)[−‐‑‒–—―](?=\d)','-',value)
@@ -222,6 +222,10 @@ def _reference_matches(ref,facility,entry,changes):
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
         value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
         value=re.sub(r'(?<=\d)の(?=\d)','-',value)
+        if (facility.get('prefecture_code')=='26' and facility.get('listed_name')=='阿良須神社'
+            and set(changes)=={'reading'} and value=='舞鶴市大字小倉小字フル宮13'):
+            # The shrine sign and the journal differ in the locality markers.
+            return '舞鶴市小倉フル宮13'
         if (facility.get('prefecture_code')=='37' and facility.get('listed_name')=='幡羅八幡神社'
             and set(changes)=={'reading'} and value=='高松市牟礼町原井手東651'):
             # The prefecture documents 井手東 within 牟礼町原 at this locality.

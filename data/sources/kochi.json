@@ -227927,12 +227927,92 @@
           "surface": "山神社"
         },
         {
-          "checked_at": "2026-11-09T02:10:38.148648+00:00",
+          "checked_at": "2026-11-27T00:49:33.630708+00:00",
           "evidence": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/2a90a292-9d6f-470b-b410-fec106d7a300: 名称=星神社; 掲載読み=; 所在地=高知県香美市土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地",
           "facility_id": "81f847a6-f1f3-54b9-97a0-c890699f8cf5",
           "fetched_at": "2026-11-09T02:10:38.148648+00:00",
           "id": "9c16e780-d0e4-5f97-829a-e65856d8db8b",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "ほしじんじゃ"
+              },
+              "expected_source_hash": "1b9550f891965e6fcabb7955dd48ace611d748affd7782add968467a3da6d3ce",
+              "facility_id": "81f847a6-f1f3-54b9-97a0-c890699f8cf5",
+              "identity_match": {
+                "agency_address": "高知県香美市土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地",
+                "agency_name": "星神社",
+                "independent_reference_address": "高知県 香美市 土佐山田町本村字アカノミヅ497・498合番地",
+                "ordered_parcels": [
+                  "497",
+                  "498"
+                ],
+                "reference_address": "高知県香美市土佐山田町本村字アカノミヅ４９７・４９８合番地",
+                "reference_name": "星神社"
+              },
+              "original": {
+                "address": "高知県香美市土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地",
+                "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=128",
+                "name_raw": "星神社",
+                "reading_raw": ""
+              },
+              "reason": "神社庁の原欄と国税庁最新個票・CODHの原欄で、土佐山田町本村字アカノミヅの二筆497・498と合番地の表記が対応。国税庁個票の全文フリガナ「ホシジンジャ」を平仮名に整形した。CODHの歴史的な「ほしじんじや」は原欄を保持した。",
+              "references": [
+                {
+                  "address_raw": "高知県香美市土佐山田町本村字アカノミヅ４９７・４９８合番地",
+                  "address_role": "corporation_principal_office",
+                  "attribution": "出典：国税庁法人番号公表サイト（国税庁）。フリガナを平仮名に整形。",
+                  "checked_at": "2026-11-27T00:49:33.630708+00:00",
+                  "corporate_number": "5490005004447",
+                  "excerpt": "星神社 ／ ホシジンジャ ／ 高知県香美市土佐山田町本村字アカノミヅ４９７・４９８合番地",
+                  "license_url": "https://www.digital.go.jp/resources/open_data/public_data_license_v1.0",
+                  "locator": "最新情報の商号又は名称・商号又は名称（フリガナ）・本店又は主たる事務所の所在地",
+                  "name_raw": "星神社",
+                  "page_hash": "e1b0de80a745c3fcce9080b5abac7439531a9a3f3ee4b3386945a0e40afdca65",
+                  "reading_raw": "ホシジンジャ",
+                  "reading_scope": "full_name",
+                  "source_kind": "government_corporate_register",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "国税庁法人番号公表サイト 星神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005004447"
+                },
+                {
+                  "address_raw": "高知県 香美市 土佐山田町本村字アカノミヅ497・498合番地",
+                  "attribution": "『日本歴史地名大系』施設・地点項目データセット（CODH作成） doi:10.20676/00000456",
+                  "checked_at": "2026-11-27T00:49:30.630691+00:00",
+                  "excerpt": "星神社\nほしじんじや\n高知県 香美市 土佐山田町本村字アカノミヅ497・498合番地",
+                  "locator": "「基本情報」の名称／名称（よみ）／住所。歴史資料の名称かなは印字のまま。",
+                  "name_raw": "星神社",
+                  "page_hash": "b8b7633269d187afc0faf2f1251c088ad87f89a8b0bc73f9550fabae5bacd222",
+                  "reading_raw": "ほしじんじや",
+                  "reading_scope": "full_name",
+                  "source_kind": "historical_place_data",
+                  "source_publisher": "人文学オープンデータ共同利用センター（CODH）",
+                  "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "title": "星神社｜『日本歴史地名大系』施設・地点項目データセット",
+                  "url": "https://geoshape.ex.nii.ac.jp/nrct-poi/resource/40/400000061800.html"
+                },
+                {
+                  "address_context_raw": "高知県香美市",
+                  "address_raw": "高知県香美市土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地",
+                  "address_role": "agency_published_address",
+                  "checked_at": "2026-11-09T02:10:38.148648+00:00",
+                  "excerpt": "星神社 ／ 高知県香美市土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地",
+                  "locator": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/2a90a292-9d6f-470b-b410-fec106d7a300",
+                  "name_raw": "星神社",
+                  "native_source_id": "2a90a292-9d6f-470b-b410-fec106d7a300",
+                  "page_hash": "b8f667540f84a9a2aa8655d4582ed85f2f9a736228c0b781bbfc910b29f2eb63",
+                  "published_address_field": "土佐山田町本村字ｱｶﾉﾐﾂﾞ497.498合番地",
+                  "source_kind": "agency",
+                  "source_publisher": "高知県神社庁",
+                  "title": "高知県神社庁 神社紹介",
+                  "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=128"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=128",
           "name_raw": "星神社",
           "normalization": [
@@ -227940,11 +228020,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "b8f667540f84a9a2aa8655d4582ed85f2f9a736228c0b781bbfc910b29f2eb63",
-          "reading": "",
+          "reading": "ほしじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=128",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005004447",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -228033,6 +228113,20 @@
             "prefecture_code": "39",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "ほしじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "ほしじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "星神社",
             "wikipedia_article_refs": [],
@@ -228063,7 +228157,7 @@
             "status": "pending",
             "surface": "星神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "星神社"
         },
         {

@@ -247,6 +247,10 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 高松市牟礼町原の幡羅八幡神社は、県神社庁の「牟礼町原井手東651番地」と県法人名簿の「牟礼町原６５１」を照合しました。県の農用地利用集積等促進計画35頁で、井手東は牟礼町原の字と確認できます。読み補完時の比較はこの社名と651の全地番に限定し、各資料の原住所を保持します。[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf)・[香川県の農用地利用集積等促進計画](https://www.pref.kagawa.lg.jp/documents/60718/1ninkar80330.pdf)
 
+香美市本村の星神社は、県神社庁の「497.498合番地」、国税庁の法人個票の「４９７・４９８合番地」、公開地名資料の「497・498合番地」で両筆を照合しました。高知県の明示された地番列は区切り記号を比較時に揃え、数字・順序・合番地の表記と原欄を保持します。[星神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005004447)・[日本歴史地名大系の星神社](https://geoshape.ex.nii.ac.jp/nrct-poi/resource/40/400000061800.html)
+
+舞鶴市小倉の阿良須神社は、社頭由緒の鎮座地を採録した二つの現地記録の「舞鶴市大字小倉小字フル宮十三番地」と、府神社庁および日本海海難防止協会会報の「舞鶴市小倉フル宮13」を照合しました。当該社の読み補完では小倉・フル宮・13の全地番を比較し、各資料の原住所を保持します。[丹後の地名](https://tangonotimei.com/doc/tango/arasujj.html)・[現地訪問記録](https://shikinaisya.net/?p=3588)・[日本海海難防止協会会報](https://nikkaikb.com/files/libs/236/201702241547007005.pdf)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行

@@ -1124,6 +1124,14 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 高松市牟礼町原の幡羅八幡神社は、前回保留した小字の所属を県の計画資料35頁で確認しました。神社庁の牟礼町原井手東651番地、県名簿6頁の牟礼町原６５１を同じ社名と全地番で照合し、別々の現地記事に明記された全文かな「はらはちまんじんじゃ」を補完しました。各住所の原欄を保持しました。[香川県の農用地利用集積等促進計画](https://www.pref.kagawa.lg.jp/documents/60718/1ninkar80330.pdf)・[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf)・[神社と古事記](https://www.buccyake-kojiki.com/archives/1060581317.html)・[神社巡りジャパン](https://jinjamegurijapan.jp/5200/)
 
+### 舞鶴市・香美市の公開資料と高松市の読み補完（2026-11-27）
+
+舞鶴市の保留159登録を公開資料326点に照合しました。地域誌の舞鶴索引233件は全件のリンク先本文を確認しました。PDF36点623頁のうち文字を抽出できた48頁を照合し、別の14頁を目視しました。丸田宮ノ谷142の麻良多神社「まらたじんじゃ」と、小倉フル宮13の阿良須神社「あらすじんじゃ」を補完しました。白絲濱神社の浜520は、市の祭礼資料と地域史の原社名・旧住所を保留に記録しました。[丹後の地名・索引](https://tangonotimei.com/doc/tango/index.html)・[麻良多神社の現地記事](https://tokoton-touring.com/tokospo-marata-jinja/)・[阿良須神社の地域誌](https://tangonotimei.com/doc/tango/arasujj.html)
+
+香美市の保留118登録は、市文化財82行、祭礼76行、PDF21点273頁、国税庁の現行法人266件と照合しました。本村の星神社は、国税庁の最新個票にある「ホシジンジャ」と497・498合番地を確認して補完しました。同じ両筆を掲載する公開地名資料の歴史的な「ほしじんじや」も出典に保持しました。高知工科大学の調査は公開案内で109社を確認しました。配布先のアクセス制限に従い、CSVは取得しませんでした。[星神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005004447)・[日本歴史地名大系の星神社](https://geoshape.ex.nii.ac.jp/nrct-poi/resource/40/400000061800.html)
+
+高松市今里町の平石井神社は、個別の現地記録にある「ひらいしいじんじゃ」と今里町2丁目1-4を、県神社庁と県名簿3頁の鎮座地・所在地に照合しました。市の指定樹案内でも同じ全文かなを確認し、指定樹の場所欄にある住所を別の観測として保持しました。3県の4登録を補完し、28都道府県に残る保留は**9,281 → 9,277登録**です。[平石井神社の現地記録](https://ruxrux2018.blog.fc2.com/blog-entry-1710.html)・[高松市の指定樹案内](https://www.city.takamatsu.kagawa.jp/kurashi/kosodate/kids/91asobibamapl/kinennbutul.html)・[香川県宗教法人名簿](https://www.pref.kagawa.lg.jp/documents/1588/shintoukei.pdf)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
