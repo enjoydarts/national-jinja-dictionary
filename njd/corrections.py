@@ -222,6 +222,14 @@ def _reference_matches(ref,facility,entry,changes):
         value=re.sub(r'(?<=\d)番(?:地)?(?:の)?(?=\d)','-',value)
         value=re.sub(r'(?<=\d)(?:番地|番|号)$','',value)
         value=re.sub(r'(?<=\d)の(?=\d)','-',value)
+        if facility.get('prefecture_code') == '19' and set(changes) == {'reading'}:
+            # The Minobu histories locate these shrines on the registered parcels.
+            minobu_addresses = {
+                ('十二天神社', '南巨摩郡身延町下八木沢字太田43'): '南巨摩郡身延町下八木沢43',
+                ('山神社', '南巨摩郡身延町上八木沢宮之前18'): '南巨摩郡身延町上八木沢18',
+                ('諏訪神社', '南巨摩郡身延町古関宮ノ平1382'): '南巨摩郡身延町古関1382',
+            }
+            value = minobu_addresses.get((facility.get('listed_name'), value), value)
         if (facility.get('prefecture_code')=='26' and facility.get('listed_name')=='阿良須神社'
             and set(changes)=={'reading'} and value=='舞鶴市大字小倉小字フル宮13'):
             # The shrine sign and the journal differ in the locality markers.

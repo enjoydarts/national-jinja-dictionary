@@ -255,3 +255,31 @@ class PublishedAddressFormsTest(unittest.TestCase):
                     '37', '香川県', name, 'はらはちまんじんじゃ', acquired, printed,
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
+    def test_minobu_documented_shrine_addresses_preserve_the_printed_localities(self):
+        for name, reading, acquired, printed in (
+            ('十二天神社', 'じゅうにてんじんじゃ', '下八木沢字太田43', '下八木沢４３番地'),
+            ('山神社', 'やまじんじゃ', '上八木沢宮之前18', '上八木沢１８番地'),
+            ('諏訪神社', 'すわじんじゃ', '古関宮ノ平1382', '古関１３８２番地'),
+        ):
+            with self.subTest(name=name):
+                address = '山梨県南巨摩郡身延町' + printed
+                dataset, proposal = self.fixture('19', '山梨県', name, reading, '南巨摩郡身延町' + acquired, address)
+                result = apply_corrections(dataset, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'], dataset['facilities'])
+                self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], address)
+
+    def test_minobu_subdistrict_comparison_keeps_the_shrine_and_complete_parcel_scope(self):
+        for name, acquired, printed in (
+            ('十二天神社', '下八木沢字太田43', '下八木沢43-1'),
+            ('十二天神社', '下八木沢字太田44', '下八木沢44'),
+            ('山神社', '上八木沢向山18', '上八木沢18'),
+            ('諏訪神社', '古関宮ノ平1382', '古関1383'),
+            ('別神社', '古関宮ノ平1382', '古関1382'),
+        ):
+            with self.subTest(name=name, acquired=acquired, printed=printed):
+                dataset, proposal = self.fixture(
+                    '19', '山梨県', name, 'すわじんじゃ', '南巨摩郡身延町' + acquired, '南巨摩郡身延町' + printed,
+                )
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])

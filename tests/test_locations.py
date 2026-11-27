@@ -102,14 +102,16 @@ class LocationTest(unittest.TestCase):
         takamori = 'https://www.town.kumamoto-takamori.lg.jp/site/kanko/example.html'
         minamiaso = 'https://www.vill.minamiaso.lg.jp/dynamic/info/pub/detail.aspx?c_id=29&id=133'
         oguni = 'https://www.town.kumamoto-oguni.lg.jp/kankojyoho/example.html'
-        for municipality, source_url, other_url in (
-            ('阿蘇郡高森町', takamori, oguni),
-            ('阿蘇郡南阿蘇村', minamiaso, takamori),
+        ubuyama = 'https://www.ubuyama-v.jp/section/iju/ubuyama_guide.pdf'
+        for municipality, source_url, other_url, parcel_gap in (
+            ('阿蘇郡高森町', takamori, oguni, ''),
+            ('阿蘇郡南阿蘇村', minamiaso, takamori, ''),
+            ('阿蘇郡産山村', ubuyama, minamiaso, ' '),
         ):
             with self.subTest(municipality=municipality):
                 d, doc, s = fixture()
                 f = d['facilities'][0]
-                address = municipality + '架空712'
+                address = municipality + '架空' + parcel_gap + '712'
                 f.update(source_key='kumamoto', prefecture_code='43', prefecture='熊本県',
                          address='阿蘇郡架空712', listing_url='https://kumamotokenjinjacho.jp/patron-god/page/2/',
                          native_source_id='https://kumamotokenjinjacho.jp/patron-god/example/',
@@ -136,6 +138,10 @@ class LocationTest(unittest.TestCase):
                 out = self.api.apply_locations(d, doc)
                 self.assertEqual(out['facilities'][0]['address'], address)
                 self.assertEqual(self.api.raw_address(out['facilities'][0]), '阿蘇郡架空712')
+                wrong_parcel = copy.deepcopy(s)
+                wrong_parcel['changes']['address'] = address + '-1'
+                wrong_parcel['reference'].update(address_raw=address + '-1', excerpt='架空神社 ' + address + '-1')
+                self.assertTrue(self.api.location_problems(wrong_parcel, f, d['collection']))
                 s['reference']['url'] = other_url
                 self.assertTrue(self.api.location_problems(s, f, d['collection']))
 

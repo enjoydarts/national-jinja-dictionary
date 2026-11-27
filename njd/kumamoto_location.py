@@ -9,10 +9,12 @@ from njd.locations import _date, _hash, _plain, _raw_field, _SNAPSHOT_FIELDS, _u
 KIND = 'kumamoto_documented_shrine_site'
 _AGENCY = 'kumamotokenjinjacho.jp'
 _PREFECTURE_SITE = 'www.pref.kumamoto.jp'
+_UBUYAMA_GUIDE = 'https://www.ubuyama-v.jp/section/iju/ubuyama_guide.pdf'
 _MUNICIPAL_SITES = {
     '阿蘇郡小国町': 'www.town.kumamoto-oguni.lg.jp',
     '阿蘇郡高森町': 'www.town.kumamoto-takamori.lg.jp',
     '阿蘇郡南阿蘇村': 'www.vill.minamiaso.lg.jp',
+    '阿蘇郡産山村': 'www.ubuyama-v.jp',
 }
 _REGISTER_URLS = {
     'https://www.houjin-bangou.nta.go.jp/download/zenken/index.html',
@@ -107,7 +109,11 @@ def kumamoto_location_problems(supplement, facility):
         return ['Kumamoto location needs a literal whole locality and parcel']
     places = {locality[0], '大字'+locality[0]}
     registered = _addresses(street, {''}, places)
-    observed = _addresses(address, {municipality, '熊本県'+municipality}, places)
+    site_places = places
+    if site.get('url') == _UBUYAMA_GUIDE:
+        # The printed guide places a space between the locality and the parcel.
+        site_places = places | {place + ' ' for place in places}
+    observed = _addresses(address, {municipality, '熊本県'+municipality}, site_places)
     listed = _addresses(raw, {county[1], '熊本県'+county[1]}, places)
     numbers = [{parcel for _, parcel in group} for group in (registered, observed, listed)]
     if len(numbers[0]) != 1 or numbers[0] != numbers[1] or numbers[0] != numbers[2]:

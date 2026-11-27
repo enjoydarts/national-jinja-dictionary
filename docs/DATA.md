@@ -251,6 +251,10 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 舞鶴市小倉の阿良須神社は、社頭由緒の鎮座地を採録した二つの現地記録の「舞鶴市大字小倉小字フル宮十三番地」と、府神社庁および日本海海難防止協会会報の「舞鶴市小倉フル宮13」を照合しました。当該社の読み補完では小倉・フル宮・13の全地番を比較し、各資料の原住所を保持します。[丹後の地名](https://tangonotimei.com/doc/tango/arasujj.html)・[現地訪問記録](https://shikinaisya.net/?p=3588)・[日本海海難防止協会会報](https://nikkaikb.com/files/libs/236/201702241547007005.pdf)
 
+身延町では、旧町誌の原画像にある十二天神社の下八木沢字太田43、山神社の上八木沢字宮之前18、諏訪神社の古関宮ノ平1382を、神社庁の鎮座地と、同じ全地番を載せる法人個票で照合しました。地籍調査資料は小字の所属を確認するために参照しました。3社の名称・町字・全地番に比較を限定し、資料ごとの住所と漢数字を原欄に保持します。[旧身延町誌・神社編](https://www.town.minobu.lg.jp/uploaded/attachment/4659.pdf)・[旧下部町誌・神社編](https://www.town.minobu.lg.jp/uploaded/attachment/2225.pdf)・[身延町の地籍調査](https://www.town.minobu.lg.jp/page/1301.html)
+
+産山村のガイド冊子では嵯峨神社の町字と地番の間に空白があります。冊子の原住所を保持し、この資料と庁・法人資料の全地番を照合する際に空白を比較上扱います。[産山村のガイド冊子](https://www.ubuyama-v.jp/section/iju/ubuyama_guide.pdf)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行
