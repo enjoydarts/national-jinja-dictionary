@@ -1280,6 +1280,14 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 青森市栄町の諏訪神社は、国税庁の「スワジンジャ」と神社・市の栄町1-4-26を確認しました。三豊市仁尾の八幡神社は、市生活ガイドの独立したルビ「はちまんじんじゃ」を採用しました。三豊市の施設紹介では本文に仁尾乙1847-1、同じページの地図欄に仁尾乙47-1があり、両原値を保持しました。四国で取得した5交通資料のうち、三豊の旧GTFSは同名停留所の確認に使用し、採用する読みは市生活ガイドの原画像で確認しました。今回の補完は4県8登録で、全国の保留は**9,183 → 9,175登録**です。[青森の諏訪神社法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=7420005000797)・[諏訪神社の公式案内](https://www.aomori-suwajinja.org/access1.html)・[三豊市の生活ガイド](https://www.city.mitoyo.lg.jp/material/files/group/16/canb_rubi.pdf#page=31)・[三豊市の施設紹介](https://www.city.mitoyo.lg.jp/kakuka/seisaku/sangyo/14_1/4/2504.html)
 
+### 京都市の停留所候補と晴明神社・建勲神社の照合（2026-11-27）
+
+京都市交通局の公開時刻表が使う1,678停留所行と、京都バスの公開一覧315停留所を、京都市の保留74登録と比較しました。宇治田原町の旧GTFSは77停留所行を町の保留9登録と比較しました。停留所の表記は個別資料を探す手がかりにしました。淀生津町の天満宮は国税庁に「テンマングウ」と356番地があり、神社庁掲載の一丁道1との地番の対応を保留しました。[京都市バスの停留所検索](https://www2.city.kyoto.lg.jp/kotsu/busdia/guide/mnuinput.htm)・[京都バスの停留所検索](https://www.kyotobus.jp/route/timetable/)・[宇治田原町の公開資料](https://www.town.ujitawara.kyoto.jp/soshiki/machimiraisozo/oshirase/2857.html)・[淀生津町の天満宮の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2130005001607)
+
+晴明神社は京都市交通局の「せいめいじんじゃ」を採用しました。上京区の史蹟資料が堀川通側と旧表口の葭屋町通を同社に結び付けており、市の寺社一覧と国税庁個票は葭屋町通側の806-1を掲載しています。神社庁の堀川通側806-1と神社公式の堀川通側806を原値のまま記録しました。[京都市交通局の冊子](https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000297/297233/off_202111_s.pdf#page=2)・[上京区の史蹟資料](https://www.city.kyoto.lg.jp/kamigyo/cmsfiles/contents/0000083/83714/sisekibunnka46.pdf#page=6)・[京都市の寺社等一覧](https://www.city.kyoto.lg.jp/templates/shingikai_kekka/cmsfiles/contents/0000217/217546/2802ref04.pdf#page=4)・[晴明神社公式の所在地](https://www.seimeijinja.jp/access/)
+
+建勲神社は、神社公式と京都市が正式読みとする「たけいさおじんじゃ」を採用し、一般の呼び方「けんくんじんじゃ」は出典の原記録に残しました。神社庁と市資料の「紫野北船岡町」、文化庁の本殿所在地「紫野北舟岡町49」と所有者「宗教法人建勲神社」を照合し、資料ごとの町名表記を保持しました。2登録を補完し、全国の保留は**9,175 → 9,173登録**です。[建勲神社公式](https://kenkun-jinja.org/)・[京都市の歴史的資産資料](https://www.city.kyoto.lg.jp/tokei/cmsfiles/contents/0000339/339942/23_daitokuzi.pdf#page=9)・[文化庁の建勲神社本殿の個票](https://kunishitei.bunka.go.jp/heritage/detail/101/00007058)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

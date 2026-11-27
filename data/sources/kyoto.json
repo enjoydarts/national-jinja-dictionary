@@ -18665,12 +18665,99 @@
           "surface": "北野天満宮"
         },
         {
-          "checked_at": "2026-11-09T08:51:02.511462+00:00",
+          "checked_at": "2026-11-27T08:26:57.526450+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「晴明神社」、郵便番号「602-8222」、所在地「京都市上京区堀川通一条上ル晴明町806-1」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "7fce62bc-a77c-558e-8c89-000ce7f762e3",
           "fetched_at": "2026-11-09T08:51:02.511462+00:00",
           "id": "8ac28fc6-3b81-5e2f-a39f-d3c7622e96c1",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "せいめいじんじゃ"
+              },
+              "expected_source_hash": "1ea92dbe0ca91e3ee4551d64568dc21ce845c38a48b4cf12284fb49ea127082e",
+              "facility_id": "7fce62bc-a77c-558e-8c89-000ce7f762e3",
+              "identity_match": "市交通局冊子の全文かなと、神社公式の堀川通側アクセスを照合。市の寺社一覧と国税庁の法人個票は葭屋町通一条上る806-1を示す。上京区の史蹟資料が同社の堀川通側と旧表口の葭屋町通を結び、神社庁の堀川通側806-1・公式案内の806・法人個票の葭屋町通側806-1を原文のまま保持。",
+              "original": {
+                "address": "京都市上京区堀川通一条上ル晴明町806-1",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/02.html",
+                "name_raw": "晴明神社",
+                "reading_raw": ""
+              },
+              "reason": "神社を対象とする資料で社名全文かなを確認。",
+              "references": [
+                {
+                  "checked_at": "2026-11-27T08:26:57.526450+00:00",
+                  "excerpt": "晴明神社 ／ せいめいじんじゃ",
+                  "locator": "PDF第2頁・晴明神社の見出しにある全文かな",
+                  "name_raw": "晴明神社",
+                  "page_hash": "ab71fbc911d0bb324ade5a81b453b34f5138c21e3bdfe17b5a3b049af32e2ab0",
+                  "reading_raw": "せいめいじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "municipal_tourism_booklet",
+                  "title": "京都市交通局 おふたいむ 2021年11月号",
+                  "url": "https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000297/297233/off_202111_s.pdf"
+                },
+                {
+                  "address_raw": "葭屋町通一条上る晴明町806-1",
+                  "checked_at": "2026-11-27T08:27:09.410514+00:00",
+                  "excerpt": "晴明神社 ／ 上京区 ／ 葭屋町通一条上る晴明町806-1",
+                  "locator": "PDF第4頁・通しNo.88の神社名・行政区・所在地欄",
+                  "name_raw": "晴明神社",
+                  "page_hash": "0f77004a6a0adaf3ac579414e8cd2ba21e25f95aa2c136e697fd9a2cee59a649",
+                  "source_kind": "municipal_site_index",
+                  "title": "京都市 寺社等一覧",
+                  "url": "https://www.city.kyoto.lg.jp/templates/shingikai_kekka/cmsfiles/contents/0000217/217546/2802ref04.pdf"
+                },
+                {
+                  "checked_at": "2026-11-27T08:26:55.307646+00:00",
+                  "excerpt": "晴明神社 ／ 今では堀川通に面していますが、元は葭屋町通が表口でした",
+                  "locator": "PDF第6頁・印刷6頁「晴明神社」",
+                  "name_raw": "晴明神社",
+                  "page_hash": "2381573326742998445f62660cccb5c366a8a49315899c829dd101754f05e4a8",
+                  "source_kind": "municipal_history_reference",
+                  "title": "上京の史蹟・その28 葭屋町通",
+                  "url": "https://www.city.kyoto.lg.jp/kamigyo/cmsfiles/contents/0000083/83714/sisekibunnka46.pdf"
+                },
+                {
+                  "address_raw": "京都市上京区晴明町806（堀川通一条上ル）",
+                  "checked_at": "2026-11-27T08:27:02.800304+00:00",
+                  "excerpt": "晴明神社 ／ 京都市上京区晴明町806（堀川通一条上ル）",
+                  "locator": "所在地と市バス案内",
+                  "name_raw": "晴明神社",
+                  "page_hash": "1547bf0d2e56dd69c1e84954cacded367c648f8d5df61dbbd62174460a1333da",
+                  "source_kind": "official_shrine_location_reference",
+                  "title": "晴明神社公式 アクセス",
+                  "url": "https://www.seimeijinja.jp/access/"
+                },
+                {
+                  "address_raw": "京都府京都市上京区葭屋町通一条上る晴明町８０６番地の１",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T08:27:07.024175+00:00",
+                  "excerpt": "晴明神社 ／ 京都府京都市上京区葭屋町通一条上る晴明町８０６番地の１",
+                  "locator": "法人番号5130005001587の名称・本店又は主たる事務所の所在地",
+                  "name_raw": "晴明神社",
+                  "page_hash": "83f6e0f89ffee9d2c6310d7bd9c74db9018e54b00b1af80337d4528aa2a20d84",
+                  "source_kind": "government_corporate_profile",
+                  "title": "国税庁法人番号公表サイト 晴明神社",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5130005001587"
+                },
+                {
+                  "address_raw": "京都市上京区堀川通一条上ル晴明町806-1",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-09T08:51:02.511462+00:00",
+                  "excerpt": "晴明神社 ／ 京都市上京区堀川通一条上ル晴明町806-1",
+                  "locator": "tr global occurrence=23; four direct td.gr12/td.shlist name/postal/address/phone",
+                  "name_raw": "晴明神社",
+                  "page_hash": "fe4c693e40430f6b730cee87d474ce7f70a79f561e9ef5da5e53cd317b7c073e",
+                  "source_kind": "official_agency",
+                  "title": "京都府神社庁 神社紹介",
+                  "url": "http://www.kyoto-jinjacho.or.jp/shrine/02.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/02.html",
           "name_raw": "晴明神社",
           "normalization": [
@@ -18678,11 +18765,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "fe4c693e40430f6b730cee87d474ce7f70a79f561e9ef5da5e53cd317b7c073e",
-          "reading": "",
+          "reading": "せいめいじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/02.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.city.kyoto.lg.jp/kotsu/cmsfiles/contents/0000297/297233/off_202111_s.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -18840,6 +18927,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "せいめいじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "せいめいじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "晴明神社",
             "wikipedia_article_refs": [
@@ -18879,7 +18980,7 @@
             "status": "pending",
             "surface": "晴明神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "晴明神社"
         },
         {
@@ -21315,12 +21416,89 @@
           "surface": "今宮神社"
         },
         {
-          "checked_at": "2026-11-09T08:51:04.560902+00:00",
+          "checked_at": "2026-11-27T08:26:38.488931+00:00",
           "evidence": "京都府神社庁の同一一覧行に掲載名「建勲神社」、郵便番号「603-8227」、所在地「京都市北区紫野北船岡町49」を明記。全文読みの独立欄は当該行にない。",
           "facility_id": "85049696-1376-57b1-8bb3-9af574e0e4f4",
           "fetched_at": "2026-11-09T08:51:04.560902+00:00",
           "id": "4d565c21-9364-53c1-80bf-c27a02eef9f6",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "たけいさおじんじゃ"
+              },
+              "expected_source_hash": "694559420a0d8f2279987041be054c276688d4dc303a20ee9bc07fb8f19c5e83",
+              "facility_id": "85049696-1376-57b1-8bb3-9af574e0e4f4",
+              "identity_match": "神社公式が正式読みと通称を区分。市資料と神社庁の町名は紫野北船岡町、文化庁の本殿所在地は紫野北舟岡町49。神社庁と文化庁の地番49、対象名、本殿の所有者を照合し、両方の町名を保持。",
+              "original": {
+                "address": "京都市北区紫野北船岡町49",
+                "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/03.html",
+                "name_raw": "建勲神社",
+                "reading_raw": ""
+              },
+              "reason": "神社を対象とする資料で社名全文かなを確認。",
+              "references": [
+                {
+                  "checked_at": "2026-11-27T08:26:38.488931+00:00",
+                  "excerpt": "建勲神社 ／ 正式には「たけいさおじんじゃ」",
+                  "locator": "冒頭・正式な読みと通称を記す段落",
+                  "name_raw": "建勲神社",
+                  "page_hash": "811aa5508f7edc2c4cd7188d01a1d08ee97691e2efa86c94ed9bb005758dbb81",
+                  "reading_raw": "たけいさおじんじゃ",
+                  "reading_scope": "full_name",
+                  "reading_variants_raw": [
+                    {
+                      "reading": "けんくんじんじゃ",
+                      "usage": "common"
+                    },
+                    {
+                      "reading": "けんくんさん",
+                      "usage": "colloquial"
+                    }
+                  ],
+                  "source_kind": "official_shrine_reading_reference",
+                  "title": "建勲神社公式",
+                  "url": "https://kenkun-jinja.org/"
+                },
+                {
+                  "address_raw": "北区紫野北船岡町",
+                  "checked_at": "2026-11-27T08:26:48.290779+00:00",
+                  "excerpt": "建勲神社 ／ 北区紫野北船岡町 ／ 正しくは「たけいさおじんじゃ」",
+                  "locator": "PDF第9頁・歴史的資産「建勲神社」",
+                  "name_raw": "建勲神社",
+                  "page_hash": "22316a402ccb43d0090fb5ed8446548f72bc4f50f0c186a2b6ccd00aee151a1e",
+                  "source_kind": "municipal_reference",
+                  "title": "京都市 京都を彩る建物や庭園 大徳寺周辺の資料",
+                  "url": "https://www.city.kyoto.lg.jp/tokei/cmsfiles/contents/0000339/339942/23_daitokuzi.pdf"
+                },
+                {
+                  "address_raw": "京都府京都市北区紫野北舟岡町49",
+                  "address_role": "main_hall_site",
+                  "checked_at": "2026-11-27T08:26:43.184981+00:00",
+                  "excerpt": "建勲神社本殿 ／ 京都府京都市北区紫野北舟岡町49 ／ 宗教法人建勲神社",
+                  "locator": "名称・所在地・所有者名欄",
+                  "name_raw": "建勲神社本殿",
+                  "owner_name_raw": "宗教法人建勲神社",
+                  "page_hash": "18cf7beeec7c74671861c0167c5d5f02d8f370b71bfb129bc78576d9a7b0e0c6",
+                  "source_kind": "government_heritage_catalog",
+                  "title": "文化庁 国指定文化財等データベース 建勲神社本殿",
+                  "url": "https://kunishitei.bunka.go.jp/heritage/detail/101/00007058"
+                },
+                {
+                  "address_raw": "京都市北区紫野北船岡町49",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-09T08:51:04.560902+00:00",
+                  "excerpt": "建勲神社 ／ 京都市北区紫野北船岡町49",
+                  "locator": "tr global occurrence=28; four direct td.gr12/td.shlist name/postal/address/phone",
+                  "name_raw": "建勲神社",
+                  "page_hash": "49310fdda3218b0f71c37161e84760bc5a21bc0cabd28fb2c72e814e137fae50",
+                  "source_kind": "official_agency",
+                  "title": "京都府神社庁 神社紹介",
+                  "url": "http://www.kyoto-jinjacho.or.jp/shrine/03.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "http://www.kyoto-jinjacho.or.jp/shrine/03.html",
           "name_raw": "建勲神社",
           "normalization": [
@@ -21328,11 +21506,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "49310fdda3218b0f71c37161e84760bc5a21bc0cabd28fb2c72e814e137fae50",
-          "reading": "",
+          "reading": "たけいさおじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "http://www.kyoto-jinjacho.or.jp/shrine/03.html",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kenkun-jinja.org/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -21455,6 +21633,20 @@
             "prefecture_code": "26",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "たけいさおじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "たけいさおじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "建勲神社",
             "wikipedia_article_refs": [
@@ -21494,7 +21686,7 @@
             "status": "pending",
             "surface": "建勲神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "建勲神社"
         },
         {

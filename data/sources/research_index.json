@@ -818468,6 +818468,128 @@
               "usable_stop_rows": 8328
             }
           }
+        },
+        {
+          "baseline_commit": "365de857f4887dfbbf85b5b314f4fa652bfb81b1",
+          "by_prefecture_before": {
+            "01": 345,
+            "02": 657,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 2,
+            "19": 976,
+            "20": 1578,
+            "21": 1,
+            "22": 2,
+            "23": 17,
+            "25": 842,
+            "26": 1012,
+            "28": 7,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 532,
+            "38": 1,
+            "39": 1612,
+            "40": 98,
+            "41": 88,
+            "42": 831,
+            "43": 509,
+            "47": 2
+          },
+          "checked_at": "2026-11-27T08:30:48.355484+00:00",
+          "dictionary_entries": {
+            "4d565c21-9364-53c1-80bf-c27a02eef9f6": {
+              "address": "京都市北区紫野北船岡町49",
+              "facility_id": "85049696-1376-57b1-8bb3-9af574e0e4f4",
+              "name": "建勲神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "たけいさおじんじゃ"
+            },
+            "8ac28fc6-3b81-5e2f-a39f-d3c7622e96c1": {
+              "address": "京都市上京区堀川通一条上ル晴明町806-1",
+              "facility_id": "7fce62bc-a77c-558e-8c89-000ce7f762e3",
+              "name": "晴明神社",
+              "prefecture": "京都府",
+              "prefecture_code": "26",
+              "reading": "せいめいじんじゃ"
+            }
+          },
+          "location_supplements": {},
+          "location_supplements_still_pending": {},
+          "pending_after": 9173,
+          "pending_before": 9175,
+          "prefecture_scopes": {
+            "kyoto_city_transit_and_municipal_shrine_records": [
+              "26"
+            ]
+          },
+          "reading_supplements_by_investigation": {
+            "kyoto_city_transit_and_municipal_shrine_records": 2
+          },
+          "reduced_by_prefecture": {
+            "26": 2
+          },
+          "source_investigations": {
+            "kyoto_city_transit_and_municipal_shrine_records": {
+              "individual_document_adoptions": 2,
+              "remaining_cases": [
+                {
+                  "agency_parcel": "京都市伏見区淀生津町一丁道1",
+                  "corporate_parcel": "京都府京都市伏見区淀生津町３５６番地",
+                  "corporate_reading_raw": "テンマングウ",
+                  "corporate_url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2130005001607",
+                  "facility": "天満宮",
+                  "reason": "比較した市バスの北野・吉祥院は別社。淀生津の神社庁鎮座地と国税庁事務所所在地の地番の対応を確認中。",
+                  "status": "pending"
+                }
+              ],
+              "scope_summary": "京都府の保留1,012登録を基準。京都市の74登録と宇治田原町の9登録で、公開停留所の社名候補を比較。",
+              "sources": {
+                "city_transport_bureau": {
+                  "bytes": 5463938,
+                  "dataset_role": "個別資料を探す手がかり",
+                  "derived_stop_name_candidates": 3,
+                  "feed_end_date": "20270331",
+                  "feed_start_date": "20260320",
+                  "feed_version": "Kyoto_City_Bus_GTFS_2026_0003_04",
+                  "public_interface_url": "https://www2.city.kyoto.lg.jp/kotsu/busdia/guide/mnuinput.htm",
+                  "read_stops": 1678,
+                  "retrieved_at": "2026-11-27T08:24:02.964907+00:00",
+                  "sha256": "4b00566aec6e4b4e1c305dddf16a59562365423b9baabc55b4f9acf36d113e52",
+                  "status": 200,
+                  "translation_rows": 11944,
+                  "url": "https://www2.city.kyoto.lg.jp/kotsu/webguide/gtfs/Kyoto_City_Bus_GTFS.zip"
+                },
+                "kyoto_bus": {
+                  "bytes": 80765,
+                  "derived_stop_name_candidates": 1,
+                  "listed_stops": 315,
+                  "retrieved_at": "2026-11-27T08:21:48.096048+00:00",
+                  "sha256": "baeee310ffa832480f2e6008bbcda40b2fc8f49c70fb3b8f500d454f19c91f58",
+                  "status": 200,
+                  "url": "https://www.kyotobus.jp/route/timetable/"
+                },
+                "ujitawara": {
+                  "bytes": 12816,
+                  "derived_stop_name_candidates": 0,
+                  "feed_end_date": "20240331",
+                  "publisher": "https://www.town.ujitawara.kyoto.jp/soshiki/machimiraisozo/oshirase/2857.html",
+                  "read_stops": 77,
+                  "retrieved_at": "2026-11-27T08:21:31.329843+00:00",
+                  "sha256": "bbe8c5f10774df23285bda0b0dc83bc5e3d822798789c6c853176a2e12da4519",
+                  "status": 200,
+                  "translation_rows": 171,
+                  "url": "https://www.town.ujitawara.kyoto.jp/material/files/group/11/heartbusGTFS-JP.zip"
+                }
+              }
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [
