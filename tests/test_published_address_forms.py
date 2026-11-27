@@ -146,6 +146,31 @@ class PublishedAddressFormsTest(unittest.TestCase):
                 data, proposal = self.fixture(code, pref, name, reading, acquired, printed+'1')
                 self.assertEqual(eligible(apply_corrections(data, proposal)), [])
 
+    def test_nagano_published_glyphs_compare_only_at_the_documented_parcels(self):
+        cases = (
+            ('諏訪社', 'すわしゃ', '長野市松代町西條3161', '長野県長野市松代町西条３１６１番地'),
+            ('八幡神社', 'はちまんじんじゃ', '長野市大字石渡字宮沢411', '長野県長野市大字石渡字宮澤４１１番地'),
+            ('葦原渕神社', 'あしはらぶちじんじゃ', '上田市下之條字若宮919', '長野県上田市下之条字若宮９１９番地'),
+            ('宮川神社', 'みやがわじんじゃ', '上田市中之條字宮方586', '長野県上田市中之条字宮方５８６番地'),
+            ('須々岐神社', 'すすきじんじゃ', '上田市下之條字須々貴山1880', '長野県上田市下之条字須々貴山１８８０番地'),
+            ('諏訪神社', 'すわじんじゃ', '木曽郡南木曽町吾妻字広瀬4441', '長野県木曽郡南木曽町吾妻字廣瀬４４４１番地'),
+            ('大理神社', 'だいりじんじゃ', '諏訪郡富士見町落合字沢良平12219', '長野県諏訪郡富士見町落合字澤良平１２２１９番地'),
+            ('日光社月光社合殿', 'にっこうしゃげっこうしゃごうでん', '上伊那郡南箕輪村字沢尻8309', '南箕輪村字澤尻8309'),
+        )
+        for name, reading, acquired, printed in cases:
+            with self.subTest(name=name):
+                data, proposal = self.fixture('20', '長野県', name, reading, acquired, printed)
+                result = apply_corrections(data, proposal)
+                self.assertEqual(len(eligible(result)), 1)
+                self.assertEqual(result['facilities'], data['facilities'])
+                data, proposal = self.fixture('20', '長野県', name, reading, acquired, printed.removesuffix('番地')+'-1')
+                self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+    def test_suwa_narayaki_reading_remains_unresolved_across_the_glyph_difference(self):
+        data, proposal = self.fixture('20', '長野県', '習焼神社', 'ならやきじんじゃ',
+            '諏訪市大字湖南字野明沢4493', '長野県諏訪市大字湖南字野明澤４４９３番地')
+        self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
     def test_kizugawa_compares_the_documented_town_prefix(self):
         acquired = '木津川市平尾里屋敷54'
         printed = '木津川市山城町平尾里屋敷54'

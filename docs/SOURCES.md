@@ -1192,6 +1192,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 上野原市の保留72登録を、街道図や自治体資料など公開16点と照合しました。野田尻372の犬嶋社と犬目1281の犬嶋神社を別々に確認し、全文かなを採用できた登録は0件でした。壱岐市の保留105登録は、公開PDF6点136頁などと照合しました。印鑰神社は市の資料と観光連盟で「いんにゃくじんじゃ」が確認でき、法人個票と登記所備付地図には勝本浦97番地が確認できました。市の地図の表示位置と同番地との対応は保留です。[山梨県の街道ウォーキングマップ](https://www.pref.yamanashi.jp/maizou-bnk/walkingmap.html)・[壱岐市歴史文化基本構想](https://www.city.iki.nagasaki.jp/material/files/group/27/kihonkousou03.pdf)・[壱岐市観光連盟の勝本歴史まち歩き](https://www.ikikankou.com/feature/taiken_katsumotoura)
 
+### 追加8県の町字照合と長野県の読み（2026-11-27）
+
+群馬・埼玉・千葉・新潟・長野・愛知・兵庫・愛媛の国税庁10月30日全件データ1,291,733行と、11月の差分4本8,580行を照合しました。町字の仮名字形35登録から候補は0件、漢字の字体377登録から候補は長野県の9件でした。長野市の諏訪社と八幡神社、上田市の葦原渕神社・宮川神社・須々岐神社、南木曽町の諏訪神社、富士見町の大理神社は、神社庁と県名簿、国税庁の個票とCSVで全地番を照合しました。葦原渕神社の社名、南木曽町諏訪神社の所在地は、個票の外字画像で原欄を確認しました。大理神社は町の公式案内にも「だいりじんじゃ」があります。[国税庁の全件データ](https://www.houjin-bangou.nta.go.jp/download/zenken/)・[長野県の宗教法人名簿](https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf)・[富士見町の大理神社](https://www.town.fujimi.lg.jp/page/dairijinjya.html)
+
+南箕輪村の日光社月光社合殿は、長野県神社庁の冊子の同じ欄にある「にっこうしゃげっこうしゃごうでん」と「南箕輪村字澤尻八三〇九」を原画像で確認し、神社庁一覧の全地番と照合しました。法人フリガナの「ニッコウシャガッコウシャゴウデン」は調査記録に保持します。諏訪市の習焼神社は同じ野明沢4493番地について、法人フリガナと歴史地名資料で「ならやき」「ならやけ」が異なるため保留です。8登録を補完し、全国の保留は**9,247 → 9,239登録**です。[長野県神社庁『上伊那まいり』付①](https://www.nagano-jinjacho.jp/_userdata/19kamiina.pdf#page=1)・[日光社月光社合殿の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=1100005008713)・[習焼神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=6100005007966)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
