@@ -100258,12 +100258,102 @@
           "surface": "天神社"
         },
         {
-          "checked_at": "2026-11-08T14:30:57.499358+00:00",
+          "checked_at": "2026-11-27T05:05:45.123753+00:00",
           "evidence": "〔八日市〕 山王神社 〒5270003 東近江市建部北町",
           "facility_id": "3171ac19-cf54-517f-a4fc-77a09b7c2c50",
           "fetched_at": "2026-11-08T14:30:57.499358+00:00",
           "id": "59583dd5-05a7-5bac-ace2-d850158e620d",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "さんのうじんじゃ"
+              },
+              "expected_source_hash": "ebf1e85af3b54e6bd094fd27d469a2f37d127cb1b9f4a51f0ed53dc638fc6743",
+              "facility_id": "3171ac19-cf54-517f-a4fc-77a09b7c2c50",
+              "identity_match": "日本郵便と滋賀県の同町の旧八日市市から東近江市への変更記録を確認。神社庁の建部北町394と市保護樹木資料の同社が対応。",
+              "original": {
+                "address": "東近江市建部北町",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=5",
+                "name_raw": "山王神社",
+                "reading_raw": ""
+              },
+              "reason": "奈良文化財研究所の刊行資料第55頁の「山王神社周辺」のうち、社名に付く全文かなを原画像で確認。",
+              "references": [
+                {
+                  "address_raw": "滋賀県八日市市建部北町",
+                  "address_role": "historical_area_of_surveyed_shrine",
+                  "checked_at": "2026-11-27T05:05:45.123753+00:00",
+                  "excerpt": "山王神社周辺／さんのうじんじゃ／滋賀県八日市市建部北町",
+                  "locator": "PDF第55頁・印刷54頁の山王神社周辺見出しとルビと所在地",
+                  "mime": "application/pdf",
+                  "name_raw": "山王神社周辺",
+                  "page_hash": "06c2291f104b76659f5a6d2da81e978c6f4d9ed269ebb4605b2a02486a1ec858",
+                  "reading_raw": "さんのうじんじゃ",
+                  "reading_scope": "full_name",
+                  "ruby_scope": "原見出し「山王神社周辺」の「山王神社」のルビ。",
+                  "source_kind": "national_research_publication",
+                  "status": "retrieved",
+                  "title": "奈良文化財研究所公開資料の滋賀県 山王神社周辺",
+                  "url": "https://repository.nabunken.go.jp/dspace/bitstream/11177/2472/1/CaoNews90.pdf",
+                  "visual_sha256": "b8e276aebe56902030525786b65c314fe7e8cb07eabf0f03dccb0565eace67e2"
+                },
+                {
+                  "address_raw": "滋賀県東近江市建部北町394",
+                  "address_role": "鎮座地",
+                  "agency_code": "431",
+                  "checked_at": "2026-11-27T05:03:15.323167+00:00",
+                  "excerpt": "山王神社／滋賀県東近江市建部北町394",
+                  "identification_sources": [
+                    {
+                      "checked_at": "2026-11-27T05:04:16.651426+00:00",
+                      "locator": "保護樹木 指定第5号 個票",
+                      "mime": "application/pdf",
+                      "name_raw": "山王神社",
+                      "page_hash": "bd86daebe2e3dbf94dd664834ad334090462fe80d9ecfcd6b7396849f772d09f",
+                      "status": "retrieved",
+                      "town": "建部北町",
+                      "url": "https://www.city.higashiomi.shiga.jp/_res/projects/default_project/_page_/001/003/945/ki05_4982.pdf"
+                    },
+                    {
+                      "checked_at": "2026-11-27T05:10:35.312643+00:00",
+                      "locator": "県の市町村合併の表・平成17年2月11日",
+                      "mime": "text/html",
+                      "new_city": "東近江市",
+                      "old_city": "八日市市",
+                      "page_hash": "275c8082196b434f586f991111405861e93fcc65a1deab041afe3d8f4f22b46d",
+                      "status": "retrieved",
+                      "url": "https://www.pref.shiga.lg.jp/bh00/7752.html"
+                    }
+                  ],
+                  "locator": ".j_title・鎮座地欄",
+                  "mime": "text/html",
+                  "name_raw": "山王神社",
+                  "page_hash": "88b7b58c14a1dacc497c9242cc80be4dc30787f1e67576322bf307c854f90587",
+                  "reading_raw": "サンノウ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "status": "retrieved",
+                  "title": "滋賀県神社庁 神社紹介 山王神社",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=431"
+                },
+                {
+                  "checked_at": "2026-11-27T05:10:35.058516+00:00",
+                  "excerpt": "八日市市建部北町 ／ 東近江市建部北町",
+                  "locator": "八日市市建部北町の住所変更情報",
+                  "mime": "text/html",
+                  "municipal_change": "旧八日市市から東近江市",
+                  "name_raw": "建部北町",
+                  "page_hash": "f5865995b427e9e6d6e8b1a5dfbf32d48c0963300f780f698c7f4290896f94f4",
+                  "source_kind": "postal_locality_reference",
+                  "status": "retrieved",
+                  "title": "日本郵便 八日市市建部北町の住所変更情報",
+                  "town_raw": "建部北町",
+                  "url": "https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1252051&id=99414&merge=2&pref=25"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=5",
           "name_raw": "山王神社",
           "normalization": [
@@ -100271,11 +100361,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "2fa510eb56d3b08a2e407ed7baf252af71250decc6dab19717484f995950c07b",
-          "reading": "",
+          "reading": "さんのうじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=5",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://repository.nabunken.go.jp/dspace/bitstream/11177/2472/1/CaoNews90.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -100397,6 +100487,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "さんのうじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "さんのうじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "山王神社",
             "wikipedia_article_refs": [],
@@ -100427,7 +100531,7 @@
             "status": "pending",
             "surface": "山王神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "山王神社"
         },
         {
@@ -252742,12 +252846,68 @@
           "surface": "丹生神社"
         },
         {
-          "checked_at": "2026-11-08T14:31:20.080342+00:00",
+          "checked_at": "2026-11-27T05:09:01.647286+00:00",
           "evidence": "〔伊香〕 水上神社 〒5290513 長浜市余呉町摺墨",
           "facility_id": "500c59e8-aaab-5cf6-8ec6-96808f38041d",
           "fetched_at": "2026-11-08T14:31:20.080342+00:00",
           "id": "7cdbdedb-dfe4-5fc7-bce6-a8774185ddc2",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "みなかみじんじゃ"
+              },
+              "expected_source_hash": "1647a5af5abe5b58b7fb75c9723771c8385c189f7190ec062b644daa99a6c438",
+              "facility_id": "500c59e8-aaab-5cf6-8ec6-96808f38041d",
+              "identity_match": {
+                "agency_code": "1274",
+                "corporate_number": "3160005004622",
+                "current_address": "滋賀県長浜市余呉町摺墨648"
+              },
+              "original": {
+                "address": "長浜市余呉町摺墨",
+                "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=13",
+                "name_raw": "水上神社",
+                "reading_raw": ""
+              },
+              "reason": "国税庁・神社庁の余呉町摺墨648は一致。古事記の編集記事が同じ地番と全文かなを記すが、全文を明示する資料の発行元は自治体・神社・現地祭祀団体ではないため別レビューへ。",
+              "references": [
+                {
+                  "address_raw": "滋賀県長浜市余呉町摺墨648",
+                  "checked_at": "2026-11-27T05:09:01.647286+00:00",
+                  "excerpt": "水上神社／みなかみじんじゃ／滋賀県長浜市余呉町摺墨648",
+                  "locator": "水上神社の本文小節",
+                  "mime": "text/html",
+                  "name_raw": "水上神社",
+                  "page_hash": "2384ac5a0d71963aae316acff408cf2be26c03eb44b20bad96b3baecd7e03c81",
+                  "reading_raw": "みなかみじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "independent_editorial_reference",
+                  "source_role": "同じ鎮座地を明示した独立の編集記事",
+                  "status": "retrieved",
+                  "title": "古事記FUN!! 水上神社（滋賀県長浜市）の本文小節",
+                  "url": "https://kojiki.co/fun/chara/ootomatohiko/"
+                },
+                {
+                  "address_raw": "滋賀県長浜市余呉町摺墨648",
+                  "address_role": "鎮座地",
+                  "agency_code": "1274",
+                  "checked_at": "2026-11-27T05:02:56.098589+00:00",
+                  "excerpt": "水上神社／滋賀県長浜市余呉町摺墨648",
+                  "locator": ".j_title・鎮座地欄",
+                  "mime": "text/html",
+                  "name_raw": "水上神社",
+                  "page_hash": "6e85f58b6a497728b147ae1699711d0bab24500229a99e77bd0c45ceebf82df6",
+                  "reading_raw": "ミナカミ",
+                  "reading_scope": "partial_or_absent",
+                  "source_kind": "official_agency",
+                  "status": "retrieved",
+                  "title": "滋賀県神社庁 神社紹介 水上神社",
+                  "url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=1274"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=13",
           "name_raw": "水上神社",
           "normalization": [
@@ -252755,11 +252915,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "13711e6434160d86d6ce14eff5f659ea772350a470e4c61318e8791cf20b3921",
-          "reading": "",
+          "reading": "みなかみじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-search.html?mode:search=1&view:term=100&view:page=13",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://kojiki.co/fun/chara/ootomatohiko/",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -252881,6 +253041,20 @@
             "prefecture_code": "25",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "みなかみじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "みなかみじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "水上神社",
             "wikipedia_article_refs": [],
@@ -252911,7 +253085,7 @@
             "status": "pending",
             "surface": "水上神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "水上神社"
         },
         {

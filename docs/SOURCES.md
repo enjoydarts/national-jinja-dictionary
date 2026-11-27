@@ -1262,6 +1262,14 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 壱岐市勝本町北触の若宮神社は神社庁の89と観光資料の89-1の関係を、佐世保市黒髪町の綿津美神社は同町を示す資料間の異読を保留しました。まんのう町の天川神社は町資料の「あまがわじんじゃ」と国立国会図書館典拠の「アマカワ ジンジャ」を確認し、読みの採用を保留しました。[壱岐市の若宮神社観光資料](https://www.ikikankou.com/spot/10240)・[まんのう町の念仏踊資料](https://www.town.manno.lg.jp/site/bunkazai/4730.html)・[国立国会図書館の天川神社典拠](https://id.ndl.go.jp/auth/ndlna/001111453)
 
+### 第6回巨樹調査の町域照合と山梨・長野・滋賀の補完（2026-11-27）
+
+第6回の同県・同名候補に残る530登録、1,573の地点との組を比較しました。現行の市町村に対応する96登録を対象に、既取得の80自治体に15自治体の境界を追加し、原住所と調査地点が同じ町域にある28登録を抽出しました。『国勢調査町丁・字等別境界データセット』（CODH作成）、「令和2年国勢調査町丁・字等別境界データ」（e-Stat）を加工、doi:10.20676/00000450を使用しました。地点の比較と集計は本プロジェクトが行いました。[環境省の巨樹調査データ](https://www.biodic.go.jp/shapedata/big.html)・[CODHの自治体コード別配布](https://geoshape.ex.nii.ac.jp/ka/resource/index.html)
+
+笛吹市の熊野神社は八代町北1615の「くまのじんじゃ」、富士河口湖町の諏訪神社は精進84の「すわじんじゃ」を冊子の原画像と国税庁の個票で確認しました。上野原市の鼓楽神社は富士急バスの「こらくじんじゃ」と市教育委員会の四方津1896を照合しました。高森町の牛牧神社は現地観察記の全文「うしまきじんじゃ」と神社庁・法人個票の牛牧2104が対応します。[笛吹の観光冊子](https://www.yamanashi-kankou.jp/pamphlet/documents/temples_and_shrines_jp_fuefuki.pdf#page=12)・[富士山の観光冊子](https://www.yamanashi-kankou.jp/pamphlet/documents/temples_and_shrines_jp_fujisan.pdf#page=1)・[富士急バスの配布データ](https://gtfs-jp.buskita.com/fjb/gtfs.zip)・[牛牧神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5100005010079)
+
+滋賀では、東近江市建部北町394の山王神社を奈良文化財研究所の原画像と旧市名の対応で、長浜市余呉町摺墨648の水上神社を同じ全地番と「みなかみじんじゃ」を記す個別記事で確認しました。青森の6候補は法人個票まで照合し、七崎神社の異読や月山神社の全文の出典条件を保留理由として確認しました。今回の追加は6登録で、全国の保留は**9,189 → 9,183登録**です。[奈良文化財研究所の資料](https://repository.nabunken.go.jp/dspace/bitstream/11177/2472/1/CaoNews90.pdf#page=55)・[水上神社の読みと鎮座地を載せる記事](https://kojiki.co/fun/chara/ootomatohiko/)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

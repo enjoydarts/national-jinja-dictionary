@@ -16,6 +16,9 @@ _UJITAWARA_KOAZA_PROOF = 'ujitawara_documented_koaza_marker'
 _UJITAWARA_WITNESS_HOSTS = {'ujitawara-kyoto.com', 'www.town.ujitawara.kyoto.jp', 'www.kyoto-be.ne.jp'}
 # Published locality spellings and whole parcels, with sources in docs/DATA.md.
 _PUBLISHED_PARCEL_SPELLINGS = {
+    ('19', '笛吹市', '熊野神社', '笛吹市八代町北字竹之内1615'): '笛吹市八代町北1615',
+    ('19', '南都留郡富士河口湖町', '諏訪神社', '南都留郡富士河口湖町精進西入84'):
+        '南都留郡富士河口湖町精進84',
     ('20', '佐久市', '諏訪神社', '佐久市大字本新町49'): '佐久市本新町砂原49',
     ('20', '佐久市', '諏訪神社', '佐久市協和字蛇山6218'): '佐久市協和6218',
     ('20', '佐久市', '諏訪神社', '佐久市大字協和字宮久保650'): '佐久市協和650',
@@ -512,6 +515,43 @@ def _joined_official_reading(ref,correction,facility,entry):
 # Inspected publications linking a full shrine reading to a specific site.
 # Each distinct source keeps its actual name, address and reading fields.
 _PUBLISHED_READING_PAIRS = {
+    ('19', '鼓楽神社', '上野原市四方津1896'): (
+        dict(url='https://gtfs-jp.buskita.com/fjb/gtfs.zip', source_kind='transit_operator_gtfs',
+             locator='translations.txt 1495行 ja-Hrkt、対応するstops.txt 533行',
+             name_raw='鼓楽神社', reading_raw='こらくじんじゃ',
+             excerpt='field_value=鼓楽神社前 ／ translation=こらくじんじゃ'),
+        dict(url='https://www.yamanashi-jinjacho.or.jp/intro/search/detail/8075', source_kind='official_agency',
+             locator='神社名・コードNo.・鎮座地欄', name_raw='鼓楽神社',
+             address_raw='上野原市四方津1896', excerpt='鼓楽神社 ／ 上野原市四方津1896'),
+        dict(url='https://www.city.uenohara.yamanashi.jp/site/kyoiku/1581.html', source_kind='municipal_reference',
+             locator='見出し・所在地欄', name_raw='鼓楽神社',
+             address_raw='上野原市四方津1896', excerpt='鼓楽神社のウラジロガシ ／ 上野原市四方津1896'),
+    ),
+    ('20', '牛牧神社', '下伊那郡高森町大字牛牧2104'): (
+        dict(url='https://kaisei-jp.net/ooshika/%E5%9C%B0%E8%B3%AA%E5%AD%A6/%E4%B8%8B%E4%BC%8A%E9%82%A3%E5%8C%97%E9%83%A8%E3%81%AE%E5%9C%B0%E5%BD%A2%E3%82%92%E8%A6%B3%E5%AF%9F/',
+             source_kind='regional_field_observation', locator='断層地形解説の社名全文かなと写真見出し',
+             name_raw='牛牧神社', reading_raw='うしまきじんじゃ', address_raw='高森町牛牧',
+             excerpt='牛牧神社（うしまきじんじゃ） ／ 牛牧神社（高森町牛牧）'),
+        dict(url='https://www.nagano-jinjacho.jp/shibu/hani.htm', source_kind='official_agency',
+             locator='飯伊支部・牛牧神社の一覧行', name_raw='牛牧神社',
+             address_raw='下伊那郡高森町大字牛牧2104', excerpt='牛牧神社 ／ 下伊那郡高森町大字牛牧2104'),
+        dict(url='https://www.town.nagano-takamori.lg.jp/docs/12697.html', source_kind='municipal_reference',
+             locator='牛牧獅子舞・祭りを行っている場所と牛牧神社の見出し', name_raw='牛牧神社',
+             address_raw='高森町牛牧地区', excerpt='高森町牛牧地区の牛牧神社'),
+    ),
+    ('25', '山王神社', '東近江市建部北町'): (
+        dict(url='https://repository.nabunken.go.jp/dspace/bitstream/11177/2472/1/CaoNews90.pdf',
+             source_kind='national_research_publication',
+             locator='PDF第55頁・印刷54頁の山王神社周辺見出しとルビと所在地',
+             name_raw='山王神社周辺', reading_raw='さんのうじんじゃ', address_raw='滋賀県八日市市建部北町',
+             excerpt='山王神社周辺／さんのうじんじゃ／滋賀県八日市市建部北町'),
+        dict(url='https://www.shiga-jinjacho.jp/ycBBS/Board.cgi/02_jinja_db/db/ycDB_02jinja-pc-detail.html?mode%3Aview=1&view%3Aoid=431',
+             source_kind='official_agency', locator='.j_title・鎮座地欄', name_raw='山王神社',
+             address_raw='滋賀県東近江市建部北町394', excerpt='山王神社／滋賀県東近江市建部北町394'),
+        dict(url='https://www.post.japanpost.jp/cgi-zip/zipcode.php?city=1252051&id=99414&merge=2&pref=25',
+             locator='八日市市建部北町の住所変更情報',
+             municipal_change='旧八日市市から東近江市', town_raw='建部北町'),
+    ),
     ('40', '大堰神社', '三井郡大刀洗町冨多1302'): (
         dict(url='https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html',
              source_kind='government_shrine_heritage_guide', locator='h3内のa[name=anchor031]と社名・全文かな',
