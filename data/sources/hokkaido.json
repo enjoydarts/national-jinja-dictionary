@@ -58914,12 +58914,49 @@
           "surface": "飯生神社"
         },
         {
-          "checked_at": "2026-11-08T14:33:49.092339+00:00",
+          "checked_at": "2026-11-27T00:34:44.102077+00:00",
           "evidence": "乃木神社 |  | 函館市乃木町5番25号",
           "facility_id": "f9064c78-88a2-5772-94a4-41cf8ede9b94",
           "fetched_at": "2026-11-08T14:33:49.092339+00:00",
           "id": "baed41c5-f7b5-5f74-8dce-35c25f885265",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "のぎじんじゃ"
+              },
+              "expected_source_hash": "e4c433d9bf0d5d92b5fa0503937329d5ae9b31b4dece5f04b60085e740f0f371",
+              "facility_id": "f9064c78-88a2-5772-94a4-41cf8ede9b94",
+              "identity_match": {
+                "agency_address": "函館市乃木町5番25号",
+                "agency_name": "乃木神社",
+                "reference_address": "北海道函館市乃木町5-25",
+                "reference_name": "乃木神社"
+              },
+              "original": {
+                "address": "函館市乃木町5番25号",
+                "listing_url": "https://hokkaidojinjacho.jp/jinja-area/dounan/page/5/",
+                "name_raw": "乃木神社",
+                "reading_raw": ""
+              },
+              "reason": "訪問表と現地訪問の個別本文に、乃木神社の全文かなと乃木町5-25が載る。別の現地記事は函館乃木神社の名称で乃木町5番25号を掲載し、神社庁の所在地と対応する。各表記を保持。",
+              "references": [
+                {
+                  "address_raw": "北海道函館市乃木町5-25",
+                  "checked_at": "2026-11-27T00:34:44.102077+00:00",
+                  "excerpt": "乃木神社 / のぎじんじゃ / 北海道函館市乃木町5-25",
+                  "locator": "函館市探訪の主題見出し、本⽂冒頭の全文かな、日付下の所在地欄",
+                  "name_raw": "乃木神社",
+                  "page_hash": "3a70ddeca3de435ec61a3a85752f97b3e65eb951e62c0ac35cad9f05f62d0715",
+                  "reading_raw": "のぎじんじゃ",
+                  "reading_scope": "full_name",
+                  "source_kind": "local_shrine_field_survey",
+                  "title": "神社探訪・北海道函館市の乃木神社",
+                  "url": "https://jinjatanbo.seesaa.net/article/202505article_14.html"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://hokkaidojinjacho.jp/jinja-area/dounan/page/5/",
           "name_raw": "乃木神社",
           "normalization": [
@@ -58927,11 +58964,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "9efafa82a2acbb2cb9adeacf44a37b10c61af4f62130f43761bafc4e80a333bf",
-          "reading": "",
+          "reading": "のぎじんじゃ",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://hokkaidojinjacho.jp/jinja-area/dounan/page/5/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://jinjatanbo.seesaa.net/article/202505article_14.html",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -59035,6 +59072,20 @@
             "prefecture_code": "01",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "のぎじんじゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "のぎじんじゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "乃木神社",
             "wikipedia_article_refs": [],
@@ -59065,7 +59116,7 @@
             "status": "pending",
             "surface": "乃木神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "乃木神社"
         },
         {
