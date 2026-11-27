@@ -19646,7 +19646,7 @@
           "reading_raw": "てんじんしゃ",
           "reading_source_kind": "agency",
           "reading_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
-          "reason": "missing name, address or municipality",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -19739,6 +19739,20 @@
             "prefecture_code": "23",
             "reading_raw": "てんじんしゃ",
             "reason": "missing name, address or municipality",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "てんじんしゃ",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "てんじんしゃ",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "source_assessment": {
               "assessment_group": "missing_street_name_in_api",
               "checked_at": "2026-11-11T10:14:44.472519+00:00",
@@ -19801,7 +19815,7 @@
             "status": "pending",
             "surface": "天神社"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "天神社"
         },
         {
@@ -172738,14 +172752,105 @@
           "status": "verified"
         },
         {
-          "address": "",
+          "address": "丹羽郡大口町替地2-305",
           "address_context": "source city or street field missing; partial source address retained without inference",
           "address_raw": "愛知県丹羽郡大口町2丁目305番地",
           "agency": "愛知県神社庁",
-          "checked_at": "2026-11-08T15:00:27.789308+00:00",
+          "checked_at": "2026-11-27T01:07:17.793410+00:00",
           "fetched_at": "2026-11-08T15:00:27.789308+00:00",
           "id": "eda99f26-cbf0-5817-89c2-8f217bf74bbf",
-          "judgments": {},
+          "judgments": {
+            "locations": {
+              "agency_recheck": {
+                "checked_at": "2026-11-27T01:08:25.144414+00:00",
+                "corresponding_name_rows": [
+                  {
+                    "addr": "",
+                    "city": "丹羽郡大口町",
+                    "house_num": "2丁目305番地",
+                    "id": "297f0651-b055-4a25-a48d-1cb2ff73e202",
+                    "kana": "てんじんしゃ",
+                    "name": "天神社",
+                    "pref": "愛知県"
+                  },
+                  {
+                    "addr": "秋田",
+                    "city": "丹羽郡大口町",
+                    "house_num": "3",
+                    "id": "96a1005c-5242-4978-93d9-aeadbcb6a1ce",
+                    "kana": "てんじんじゃ",
+                    "name": "天神社",
+                    "pref": "愛知県"
+                  }
+                ],
+                "locator": "$.list の同名2行・各 id、name、kana、pref、city、addr、house_num。total_rows=20。",
+                "page_hash": "2ce3ac22a94dc8313d0095bb8a58a3cc28184162c9a8639e3e0b1869908569d0",
+                "request_body": {
+                  "addr": "大口町",
+                  "limit": -1
+                },
+                "request_method": "POST",
+                "retrieved_rows": 20,
+                "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+              },
+              "changes": {
+                "address": "丹羽郡大口町替地2-305"
+              },
+              "entry_id": "d6e5cbf8-11c9-5906-9cdf-506a279d0d7a",
+              "expected_source_hash": "d11bc38ba5087519627c0abf47fe4900100903cb4d11746127fe40622c6ae0c0",
+              "facility_id": "eda99f26-cbf0-5817-89c2-8f217bf74bbf",
+              "original": {
+                "address": "",
+                "listing_url": "https://aichi-jinjacho.or.jp/index.php/search/shrine",
+                "municipality": "丹羽郡大口町",
+                "name_raw": "天神社",
+                "native_source_id": "297f0651-b055-4a25-a48d-1cb2ff73e202",
+                "official_site_url": null
+              },
+              "reason": "愛知県神社庁の同じ固有IDは大口町2丁目305番地と全文かなを明示するが、街字欄は空欄。対象社の現地記事と国税庁個票の全地番が替地2丁目305番地で一致し、同じ照会の秋田3の別社と区別できる。",
+              "recorded_at": "2026-11-27T01:22:12.776098+00:00",
+              "reference": {
+                "address_raw": "丹羽郡大口町替地2-305",
+                "checked_at": "2026-11-27T01:07:17.793410+00:00",
+                "excerpt": "丹羽郡大口町替地『天神社』 ／ 所在地　/　丹羽郡大口町替地2-305",
+                "fetched_at": "2026-11-27T01:07:17.793410+00:00",
+                "location_role": "shrine",
+                "locator": "主記事表題と末尾の同一段落にある「所在地」",
+                "name_raw": "天神社",
+                "page_hash": "b44adb1f042d13ca1cc5f2431c32adc192bc58d2da0aa1d044c19b088615ffea",
+                "published_at": "2025-10-31T00:00:00+09:00",
+                "source_kind": "independent_visit_article",
+                "source_publisher": "owari-oyajiの放浪記",
+                "terms_url": "https://policies.hatena.ne.jp/rule",
+                "title": "丹羽郡大口町替地『天神社』",
+                "url": "https://owari-nagoya55.hatenablog.com/entry/2025/10/31/000000",
+                "visited_at_raw": "2025/10/13"
+              },
+              "registry_reference": {
+                "address_raw": "愛知県丹羽郡大口町替地２丁目３０５番地",
+                "checked_at": "2026-11-27T01:07:17.705962+00:00",
+                "corporate_number": "3180005009256",
+                "excerpt": "最新情報 ／ 法人番号 3180005009256 ／ 天神社 ／ 本店又は主たる事務所の所在地 愛知県丹羽郡大口町替地２丁目３０５番地",
+                "location_role": "principal_office",
+                "locator": "「最新情報」法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                "name_raw": "天神社",
+                "page_hash": "f1d7d64aa9905c8989dc629de98c224a38a4e0c2e076406e07cb93779ea7571d",
+                "source_fields": {
+                  "商号又は名称": "天神社",
+                  "最終更新年月日": "平成27年11月13日",
+                  "本店又は主たる事務所の所在地": "愛知県丹羽郡大口町替地２丁目３０５番地",
+                  "法人番号": "3180005009256"
+                },
+                "source_kind": "government_corporate_profile",
+                "source_publisher": "国税庁法人番号公表サイト（国税庁）",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "title": "天神社の情報",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3180005009256"
+              },
+              "status": "verified",
+              "supplement_kind": "aichi_documented_street"
+            }
+          },
           "listed_name": "天神社",
           "listing_occurrences": [
             {
@@ -172763,7 +172868,7 @@
           "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
           "prefecture": "愛知県",
           "prefecture_code": "23",
-          "reason": "missing name, address or municipality",
+          "reason": "",
           "source_hash": "d11bc38ba5087519627c0abf47fe4900100903cb4d11746127fe40622c6ae0c0",
           "source_key": "aichi",
           "source_locator": "POST JSON all 69 official area choices, limit=-1 $.list[1] id=297f0651-b055-4a25-a48d-1cb2ff73e202",
@@ -172798,7 +172903,7 @@
             "source_locator": "POST JSON all 69 official area choices, limit=-1 $.list[1] id=297f0651-b055-4a25-a48d-1cb2ff73e202",
             "status": "pending"
           },
-          "status": "pending"
+          "status": "verified"
         },
         {
           "address": "愛知県名古屋市中川区かの里1-1239",

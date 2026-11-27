@@ -185,6 +185,12 @@ def location_problems(supplement, facility, source=None):
     if supplement.get('supplement_kind') == 'kumamoto_documented_shrine_site':
         from njd.kumamoto_location import kumamoto_location_problems
         return problems + kumamoto_location_problems(supplement, facility)
+    if supplement.get('supplement_kind') == 'kochi_agency_documented_municipality':
+        from njd.kochi_location import kochi_location_problems
+        return problems + kochi_location_problems(supplement, facility)
+    if supplement.get('supplement_kind') == 'aichi_documented_street':
+        from njd.aichi_location import aichi_location_problems
+        return problems + aichi_location_problems(supplement, facility)
     if raw_address(facility) != '' or _raw_field(facility, 'municipality') != '':
         problems.append('only an empty acquired address and municipality can be supplemented')
     if supplement.get('facility_id') != facility.get('id'):
@@ -299,6 +305,9 @@ def apply_locations(data, document):
         if isinstance(supplement, dict) and supplement.get('supplement_kind') == 'mie_registered_municipality':
             from njd.mie_municipality import municipality_entry_problems
             problems.extend(municipality_entry_problems(facility, entries))
+        if isinstance(supplement, dict) and supplement.get('supplement_kind') == 'aichi_documented_street':
+            from njd.aichi_location import aichi_location_entry_problems
+            problems.extend(aichi_location_entry_problems(facility, entries))
         if any(e.get('identity_review_required') for e in entries):
             problems.append('entry facility identity still requires review')
         address, municipality = raw_address(facility), _raw_field(facility, 'municipality')

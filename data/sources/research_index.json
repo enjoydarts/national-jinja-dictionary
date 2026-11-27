@@ -774005,6 +774005,718 @@
               ]
             }
           }
+        },
+        {
+          "baseline_commit": "95a1a3b6a4012265a775152e9856fe4710b62b3f",
+          "by_prefecture_before": {
+            "01": 345,
+            "02": 658,
+            "04": 1,
+            "10": 1,
+            "11": 13,
+            "12": 9,
+            "15": 31,
+            "17": 2,
+            "18": 2,
+            "19": 986,
+            "20": 1602,
+            "21": 1,
+            "22": 2,
+            "23": 18,
+            "25": 855,
+            "26": 1022,
+            "28": 9,
+            "31": 4,
+            "32": 1,
+            "33": 1,
+            "37": 536,
+            "38": 1,
+            "39": 1619,
+            "40": 100,
+            "41": 89,
+            "42": 846,
+            "43": 513,
+            "47": 2
+          },
+          "checked_at": "2026-11-27T01:23:36.551928+00:00",
+          "dictionary_entries": {
+            "29cbd47c-9452-5df5-92a7-b830e7d5ef3b": {
+              "address": "高知県高知市朝倉丙2100-イ",
+              "facility_id": "370efe8c-f27b-565f-92eb-29ef4529d2cc",
+              "name": "朝倉神社",
+              "prefecture": "高知県",
+              "prefecture_code": "39",
+              "reading": "あさくらじんじゃ"
+            },
+            "d6e5cbf8-11c9-5906-9cdf-506a279d0d7a": {
+              "address": "丹羽郡大口町替地2-305",
+              "facility_id": "eda99f26-cbf0-5817-89c2-8f217bf74bbf",
+              "name": "天神社",
+              "prefecture": "愛知県",
+              "prefecture_code": "23",
+              "reading": "てんじんしゃ"
+            },
+            "fd87f549-f028-5332-b6c0-7ef02ac6fa8a": {
+              "address": "高知県高知市一宮しなね2-16-1",
+              "facility_id": "3b234d0f-6ab4-5d9f-8169-7e14640dd529",
+              "name": "土佐神社",
+              "prefecture": "高知県",
+              "prefecture_code": "39",
+              "reading": "とさじんじゃ"
+            }
+          },
+          "location_supplements": {
+            "370efe8c-f27b-565f-92eb-29ef4529d2cc": {
+              "address": "高知県高知市朝倉丙2100-イ",
+              "municipality": "高知市"
+            },
+            "3b234d0f-6ab4-5d9f-8169-7e14640dd529": {
+              "address": "高知県高知市一宮しなね2-16-1",
+              "municipality": "高知市"
+            },
+            "eda99f26-cbf0-5817-89c2-8f217bf74bbf": {
+              "address": "丹羽郡大口町替地2-305"
+            }
+          },
+          "location_supplements_still_pending": {},
+          "pending_after": 9266,
+          "pending_before": 9269,
+          "prefecture_scopes": {
+            "aichi_oguchi": [
+              "23"
+            ],
+            "kochi_site": [
+              "39"
+            ]
+          },
+          "reading_supplements_by_investigation": {
+            "aichi_oguchi": 0,
+            "kochi_site": 2
+          },
+          "reduced_by_prefecture": {
+            "23": 1,
+            "39": 2
+          },
+          "registrations_recovered_by_location": {
+            "d6e5cbf8-11c9-5906-9cdf-506a279d0d7a": "eda99f26-cbf0-5817-89c2-8f217bf74bbf"
+          },
+          "source_investigations": {
+            "aichi_oguchi": {
+              "acquired": {
+                "address_raw": "愛知県丹羽郡大口町2丁目305番地",
+                "api_fields": {
+                  "addr": "",
+                  "city": "丹羽郡大口町",
+                  "house_num": "2丁目305番地",
+                  "id": "297f0651-b055-4a25-a48d-1cb2ff73e202",
+                  "kana": "てんじんしゃ",
+                  "name": "天神社",
+                  "pref": "愛知県"
+                },
+                "checked_at": "2026-11-08T15:00:27.789308+00:00",
+                "effective_address_before": "",
+                "locator": "POST JSON all 69 official area choices, limit=-1 $.list[1] id=297f0651-b055-4a25-a48d-1cb2ff73e202",
+                "municipality_raw": "丹羽郡大口町",
+                "page_hash": "6ea80a81488dd2d5fa6fa6121dbd8c00441bca332edf4dd86bda9bfaf8c3119c",
+                "reading_raw": "てんじんしゃ",
+                "source_hash": "d11bc38ba5087519627c0abf47fe4900100903cb4d11746127fe40622c6ae0c0",
+                "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+              },
+              "agency_public_search_ui": {
+                "checked_at": "2026-11-27T01:07:17.694707+00:00",
+                "page_hash": "0c4e23c072a7d1f9bf7e8cab4ac6e9e698ebfab26a22e11e1a015cafe3b712b8",
+                "url": "https://www.aichi-jinjacho.or.jp/search_result.html?addr=%E5%A4%A7%E5%8F%A3%E7%94%BA"
+              },
+              "agency_recheck": {
+                "checked_at": "2026-11-27T01:08:25.144414+00:00",
+                "corresponding_name_rows": [
+                  {
+                    "addr": "",
+                    "city": "丹羽郡大口町",
+                    "house_num": "2丁目305番地",
+                    "id": "297f0651-b055-4a25-a48d-1cb2ff73e202",
+                    "kana": "てんじんしゃ",
+                    "name": "天神社",
+                    "pref": "愛知県"
+                  },
+                  {
+                    "addr": "秋田",
+                    "city": "丹羽郡大口町",
+                    "house_num": "3",
+                    "id": "96a1005c-5242-4978-93d9-aeadbcb6a1ce",
+                    "kana": "てんじんじゃ",
+                    "name": "天神社",
+                    "pref": "愛知県"
+                  }
+                ],
+                "locator": "$.list の同名2行・各 id、name、kana、pref、city、addr、house_num。total_rows=20。",
+                "page_hash": "2ce3ac22a94dc8313d0095bb8a58a3cc28184162c9a8639e3e0b1869908569d0",
+                "request_body": {
+                  "addr": "大口町",
+                  "limit": -1
+                },
+                "request_method": "POST",
+                "retrieved_rows": 20,
+                "url": "https://aichi-jinjacho.or.jp/index.php/search/shrine"
+              },
+              "counts": {
+                "agency_query_rows": 20,
+                "documented_location_proposals": 1,
+                "new_reading_corrections": 0,
+                "same_name_other_facilities": 1,
+                "same_name_rows": 2,
+                "stopped_robots": 2,
+                "targeted_registrations": 1
+              },
+              "entry_id": "d6e5cbf8-11c9-5906-9cdf-506a279d0d7a",
+              "facility_id": "eda99f26-cbf0-5817-89c2-8f217bf74bbf",
+              "reference": {
+                "address_raw": "丹羽郡大口町替地2-305",
+                "checked_at": "2026-11-27T01:07:17.793410+00:00",
+                "excerpt": "丹羽郡大口町替地『天神社』 ／ 所在地　/　丹羽郡大口町替地2-305",
+                "fetched_at": "2026-11-27T01:07:17.793410+00:00",
+                "location_role": "shrine",
+                "locator": "主記事表題と末尾の同一段落にある「所在地」",
+                "name_raw": "天神社",
+                "page_hash": "b44adb1f042d13ca1cc5f2431c32adc192bc58d2da0aa1d044c19b088615ffea",
+                "published_at": "2025-10-31T00:00:00+09:00",
+                "source_kind": "independent_visit_article",
+                "source_publisher": "owari-oyajiの放浪記",
+                "terms_url": "https://policies.hatena.ne.jp/rule",
+                "title": "丹羽郡大口町替地『天神社』",
+                "url": "https://owari-nagoya55.hatenablog.com/entry/2025/10/31/000000",
+                "visited_at_raw": "2025/10/13"
+              },
+              "registry_reference": {
+                "address_raw": "愛知県丹羽郡大口町替地２丁目３０５番地",
+                "checked_at": "2026-11-27T01:07:17.705962+00:00",
+                "corporate_number": "3180005009256",
+                "excerpt": "最新情報 ／ 法人番号 3180005009256 ／ 天神社 ／ 本店又は主たる事務所の所在地 愛知県丹羽郡大口町替地２丁目３０５番地",
+                "location_role": "principal_office",
+                "locator": "「最新情報」法人番号・商号又は名称・本店又は主たる事務所の所在地",
+                "name_raw": "天神社",
+                "page_hash": "f1d7d64aa9905c8989dc629de98c224a38a4e0c2e076406e07cb93779ea7571d",
+                "source_fields": {
+                  "商号又は名称": "天神社",
+                  "最終更新年月日": "平成27年11月13日",
+                  "本店又は主たる事務所の所在地": "愛知県丹羽郡大口町替地２丁目３０５番地",
+                  "法人番号": "3180005009256"
+                },
+                "source_kind": "government_corporate_profile",
+                "source_publisher": "国税庁法人番号公表サイト（国税庁）",
+                "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                "title": "天神社の情報",
+                "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3180005009256"
+              },
+              "schema_version": 1,
+              "stopped": [
+                {
+                  "error": "robots status unknown: 403",
+                  "url": "https://www.pref.aichi.jp/uploaded/attachment/607301.pdf"
+                },
+                {
+                  "error": "robots status unknown: 403",
+                  "url": "https://www.town.oguchi.lg.jp/secure/9269/NO.68.pdf"
+                }
+              ],
+              "terms": [
+                {
+                  "checked_at": "2026-11-27T01:18:37.505945+00:00",
+                  "decision": "はてなの知的財産権に関する条件を確認し、社名・現所在地・日付の識別事実に限定。画像・由緒・著者の表現は収録しない。",
+                  "page_hash": "398d4f61a63691ecf54e608aab173b645adb767d3d35a09f8c59929a11f62552",
+                  "url": "https://policies.hatena.ne.jp/rule"
+                },
+                {
+                  "checked_at": "2026-11-27T01:18:37.475203+00:00",
+                  "decision": "公共データ利用規約（第1.0版）と国税庁の出典記載条件に従い原欄を記録。",
+                  "page_hash": "1e604116c2e56c6d0c72fda78b34736f77ba59b0032faf896b68dec64fe9b4a2",
+                  "url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/"
+                }
+              ],
+              "validation": {
+                "entry_binding_problems": [],
+                "location_problems": []
+              }
+            },
+            "kochi_site": {
+              "confirmed_location_and_reading": {
+                "29cbd47c-9452-5df5-92a7-b830e7d5ef3b": {
+                  "location": {
+                    "address": "高知県高知市朝倉丙2100-イ",
+                    "municipality": "高知市"
+                  },
+                  "reading": "あさくらじんじゃ",
+                  "source_reference": {
+                    "address_raw": "高知県高知市朝倉丙2100-イ",
+                    "checked_at": "2026-11-27T01:18:27.962113+00:00",
+                    "excerpt": "朝倉神社（あさくらじんじゃ） ／ ［住所］高知県高知市朝倉丙2100-イ",
+                    "locator": "個別本文の冒頭にある社名と括弧内の全文かな、末尾の住所欄",
+                    "name_raw": "朝倉神社",
+                    "page_hash": "86d39bd786c8987f9ebef7072366f15652c04531b137a15f0af91dbfa8863457",
+                    "reading_raw": "あさくらじんじゃ",
+                    "reading_scope": "full_name",
+                    "source_kind": "independent_shrine_article",
+                    "title": "朝倉神社 高知県高知市朝倉丙 - 神社と古事記",
+                    "url": "https://www.buccyake-kojiki.com/archives/1046151587.html"
+                  }
+                },
+                "fd87f549-f028-5332-b6c0-7ef02ac6fa8a": {
+                  "location": {
+                    "address": "高知県高知市一宮しなね2-16-1",
+                    "municipality": "高知市"
+                  },
+                  "reading": "とさじんじゃ",
+                  "source_reference": {
+                    "address_raw": "高知県高知市一宮しなね２丁目１６番１号",
+                    "checked_at": "2026-11-27T01:08:33.231214+00:00",
+                    "corporate_number": "5490005001196",
+                    "excerpt": "法人番号：5490005001196\n商号又は名称：土佐神社\n商号又は名称（フリガナ）：トサジンジャ\n本店又は主たる事務所の所在地：高知県高知市一宮しなね２丁目１６番１号\n最終更新年月日：令和元年6月24日",
+                    "fetched_at": "2026-11-27T01:08:33.231214+00:00",
+                    "location_role": "principal_office",
+                    "locator": "法人番号・商号又は名称・商号又は名称（フリガナ）・本店又は主たる事務所の所在地の欄",
+                    "name_raw": "土佐神社",
+                    "page_hash": "eacda4f08bf86eb6af3947028c0edb192c6d0051fff0ff464e487ebef5f8358e",
+                    "publisher": "国税庁",
+                    "reading_raw": "トサジンジャ",
+                    "reading_scope": "full_name",
+                    "record_published_update_raw": "令和元年6月24日",
+                    "source_fields": {
+                      "商号又は名称": "土佐神社",
+                      "商号又は名称（フリガナ）": "トサジンジャ",
+                      "最終更新年月日": "令和元年6月24日",
+                      "本店又は主たる事務所の所在地": "高知県高知市一宮しなね２丁目１６番１号",
+                      "法人番号": "5490005001196"
+                    },
+                    "source_kind": "government_corporate_register",
+                    "title": "法人番号公表サイト 土佐神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005001196"
+                  }
+                }
+              },
+              "contract_requirements": [
+                "対象は県コード39の今回の既存2施設・登録UUIDに限定。取得時名称・CMS `text1`・`newField`・UUID・空の取得自治体/読み・検索ページURL・取得時ソースハッシュを固定し、原欄を書き換えない。",
+                "更新版は対象URL上の同一応答ハッシュと取得日時、CMS UUID上の `title=高知市支部`、一致する表示権威と施設カードDOMを保存。新旧ページハッシュの不一致は正当な更新として区別し、原名称・全地番・原文郡欄が変わる場合は再審査する。",
+                "上部カードとCMS行に正式名・町域および丁目、番、号、枝番のすべて・組織電話が一致し、カードの明示高知市住所と国税庁同名個票の全地番が対応するケースのみ許容。朝倉のイと土佐の2丁目16番1号を必須にし、郡の一般置換や番号の接頭辞一致を許容しない。",
+                "出力用の住所は同庁カードの印字住所を全文で採用し、原欄と法人の主たる事務所所在地は別に保存。位置補完から読みを生成せず、検証済み位置に対する別判断で読みを確定する。",
+                "土佐は国税庁の同名・全所在地・全文かなを既存読み検査で結合できる。朝倉は文化庁交付一覧の事業者欄に正式名と全文かな、所在地は高知市まで。公式資料に限定するなら、文化庁の同市の指定個票に載る同一所有者・同一指定建造物と、神社庁カード／国税庁全住所の限定照合を読み契約で認めるか、同一の公式本文に全文読みと全所在地の直接併記を追加確認する必要がある。"
+              ],
+              "findings": {
+                "29cbd47c-9452-5df5-92a7-b830e7d5ef3b": {
+                  "acquired_source_hash": "989c0174827de151af6c5255bf70c4e18442159b3c6045f1bf7d98bfbd6c07a3",
+                  "agency_card": {
+                    "address_locator": "div#comp-lf8aw9e9__item-lj52t0lj",
+                    "address_raw": "高知県高知市朝倉丙2100-イ",
+                    "checked_at": "2026-11-27T01:08:31.945756+00:00",
+                    "excerpt": "朝倉神社\n〒780-8063\n高知県高知市朝倉丙2100-イ",
+                    "fetched_at": "2026-11-27T01:08:31.945756+00:00",
+                    "href_raw": "https://asakurajinja.yamanoha.com/",
+                    "institutional_phone_sha256": "518752acf79893af82e3d74029d2ea28e2c3a364897f684756a12ff2cc6b0dbd",
+                    "location_role": "shrine",
+                    "locator": "div#comp-lf8aw9dw__item-lj52t0lj",
+                    "name_locator": "div#comp-lf8aw9e52__item-lj52t0lj",
+                    "name_raw": "朝倉神社",
+                    "page_hash": "9bc437e54a5e311b9861c90c0e539c30ee01533be21dc67f0b3d72e250c2f223",
+                    "postcode_raw": "〒780-8063",
+                    "publisher": "高知県神社庁",
+                    "source_kind": "agency",
+                    "title": "高知県神社一覧",
+                    "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=166"
+                  },
+                  "agency_cms": {
+                    "address_context_raw": "高知県高岡郡",
+                    "address_raw": "朝倉丙2100番地ｲ",
+                    "authority_row_fields": {
+                      "_id": "bcf2b020-e99b-41cd-984f-b6f0be9b4a71",
+                      "_publishStatus": "PUBLISHED",
+                      "_updatedDate": {
+                        "$date": "2023-07-06T04:08:55.723Z"
+                      },
+                      "newField": "高知県高岡郡",
+                      "text": "朝倉神社",
+                      "text1": "朝倉丙2100番地ｲ",
+                      "title": "高知市支部"
+                    },
+                    "branch_raw": "高知市支部",
+                    "checked_at": "2026-11-27T01:08:31.945756+00:00",
+                    "fetched_at": "2026-11-27T01:08:31.945756+00:00",
+                    "institutional_phone_locator": "div#comp-ljqfqw3b__bcf2b020-e99b-41cd-984f-b6f0be9b4a71",
+                    "institutional_phone_sha256": "518752acf79893af82e3d74029d2ea28e2c3a364897f684756a12ff2cc6b0dbd",
+                    "locator": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/bcf2b020-e99b-41cd-984f-b6f0be9b4a71",
+                    "name_raw": "朝倉神社",
+                    "native_source_id": "bcf2b020-e99b-41cd-984f-b6f0be9b4a71",
+                    "page_hash": "9bc437e54a5e311b9861c90c0e539c30ee01533be21dc67f0b3d72e250c2f223",
+                    "publisher": "高知県神社庁",
+                    "reading_raw": "",
+                    "rendered_address_locator": "div#comp-ljqf279d__bcf2b020-e99b-41cd-984f-b6f0be9b4a71",
+                    "rendered_context_locator": "div#comp-ljqlom9b__bcf2b020-e99b-41cd-984f-b6f0be9b4a71",
+                    "rendered_name_locator": "div#comp-ljqf2799__bcf2b020-e99b-41cd-984f-b6f0be9b4a71",
+                    "source_kind": "agency",
+                    "title": "高知県神社一覧",
+                    "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=166"
+                  },
+                  "city_cultural_building": {
+                    "checked_at": "2026-11-27T01:09:13.280793+00:00",
+                    "component_name_raw": "朝倉神社本殿",
+                    "fetched_at": "2026-11-27T01:09:13.280793+00:00",
+                    "locator": "民権・文化財課の本文見出し・解説",
+                    "note": "建造物の資料。施設の全住所と正式な全文ふりがなの出典には使わない。",
+                    "page_hash": "c3f71f9e8483448d8d46063bd0da2bff19a64a2f1183215788a6909ab3e1cadf",
+                    "publisher": "高知市",
+                    "source_kind": "government_municipality",
+                    "title": "文化財情報 重要文化財 建造物 朝倉神社本殿",
+                    "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1100600.html"
+                  },
+                  "cultural_building": {
+                    "address_raw": "高知県高知市朝倉",
+                    "checked_at": "2026-11-27T01:08:31.071959+00:00",
+                    "component_name_raw": "朝倉神社本殿",
+                    "component_reading_raw": "あさくらじんじゃほんでん",
+                    "excerpt": "朝倉神社本殿\nあさくらじんじゃほんでん\n高知県高知市朝倉\n朝倉神社",
+                    "fetched_at": "2026-11-27T01:08:31.071959+00:00",
+                    "location_role": "designated_building_locality",
+                    "locator": "各棟情報の名称・ふりがな・所在地・所有者名の欄",
+                    "owner_name_raw": "朝倉神社",
+                    "page_hash": "f446abff085f512ebfb436066f5cca066b98ab625457fbb628f05c82e19bbbac",
+                    "publisher": "文化庁",
+                    "source_kind": "government_culture",
+                    "title": "国指定文化財等データベース",
+                    "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/3434"
+                  },
+                  "current_position_validation": [
+                    "only an empty acquired address and municipality can be supplemented",
+                    "missing inspected agency link",
+                    "location reference is outside the linked official shrine URL scope",
+                    "location reference must identify the shrine, not an office or other location"
+                  ],
+                  "current_reading_validation": [
+                    "no inspected reference explicitly identifies name and location",
+                    "corrected full reading is not explicit in the inspected reference"
+                  ],
+                  "exact_association_confirmed": true,
+                  "exact_same_name_facilities_in_prefecture_sources": [
+                    {
+                      "address": "高知県高岡郡朝倉丙2100番地ｲ",
+                      "id": "370efe8c-f27b-565f-92eb-29ef4529d2cc",
+                      "source_key": "kochi"
+                    }
+                  ],
+                  "facility_id": "370efe8c-f27b-565f-92eb-29ef4529d2cc",
+                  "full_reading": "あさくらじんじゃ",
+                  "grant": {
+                    "address_raw": "高知県高知市",
+                    "checked_at": "2026-11-27T01:08:34.511371+00:00",
+                    "corporate_number": null,
+                    "document_version": "令和元年度",
+                    "excerpt": "朝倉神社\nｱｻｸﾗｼﾞﾝｼﾞｬ\n高知県高知市",
+                    "fetched_at": "2026-11-27T01:08:34.511371+00:00",
+                    "location_role": "grant_site_municipality",
+                    "locator": "PDF 1頁 建造物／補助事業者名・所在地",
+                    "name_raw": "朝倉神社",
+                    "page_hash": "f8724931175dc19dec27e4f68f915cdfcad39eed06a1fd642ae60e5b9e9cf006",
+                    "pdf_page": 1,
+                    "publisher": "文化庁",
+                    "reading_raw": "ｱｻｸﾗｼﾞﾝｼﾞｬ",
+                    "reading_scope": "full_name",
+                    "source_kind": "government_culture",
+                    "title": "令和元年度 補助金交付一覧（高知）",
+                    "url": "https://www.bunka.go.jp/seisaku/bunkazai/joseishien/hojo/h31_kofu/pdf/r1420739_39.pdf"
+                  },
+                  "independent_physical_page_references": [
+                    {
+                      "address_raw": "高知市朝倉丙 2100 番地イ",
+                      "checked_at": "2026-11-27T01:14:16.506659+00:00",
+                      "excerpt": "朝倉神社\n高知市朝倉丙 2100 番地イ",
+                      "fetched_at": "2026-11-27T01:14:16.506659+00:00",
+                      "location_role": "on_site_archaeological_investigation",
+                      "locator": "PDF 14頁（印刷11頁）種別 地盤調査のための試掘、No.17 名称・所在地",
+                      "name_raw": "朝倉神社",
+                      "page_hash": "e0de638543aec34acb592d5564b9229779ef3c6bdb776e04bb253355045e04c6",
+                      "pdf_page": 14,
+                      "printed_page": 11,
+                      "publisher": "高知県教育委員会",
+                      "source_kind": "government_culture",
+                      "survey_date_raw": "令和元年11月7日",
+                      "title": "高知県埋蔵文化財年報17",
+                      "url": "https://www.pref.kochi.lg.jp/doc/2022092200128/file_contents/file_20229294144026_1.pdf"
+                    },
+                    {
+                      "address_raw": "高知市朝倉丙2100番地イ",
+                      "checked_at": "2026-11-27T01:14:13.555693+00:00",
+                      "document_version": "令和７年度",
+                      "event_date_raw": "令和８年１月27日（火）",
+                      "excerpt": "朝倉神社（高知市朝倉丙2100番地イ）",
+                      "fetched_at": "2026-11-27T01:14:13.555693+00:00",
+                      "inspection": "直接取得したPDFの文字層・ページ描画の両方で「イ」を確認。検索提供の表変換に現れる数字の1は実資料にない。",
+                      "location_role": "fire_drill_site",
+                      "locator": "PDF 1頁 様式1 実施場所欄",
+                      "name_raw": "朝倉神社",
+                      "page_hash": "d3e90f14acdd4fefdb4f6ec8d119db87faf149a9c79699fb433ba1ff8041e764",
+                      "pdf_page": 1,
+                      "publisher": "文化庁",
+                      "source_kind": "government_culture",
+                      "title": "令和７年度 文化財防災訓練等実施状況報告",
+                      "url": "https://www.bunka.go.jp/seisaku/bunkazai/hogofukyu/pdf/94336701_39.pdf"
+                    }
+                  ],
+                  "name_raw": "朝倉神社",
+                  "official_shrine": {
+                    "address_raw": "高知市朝倉丙2100番地のイ",
+                    "checked_at": "2026-11-27T01:15:20.501111+00:00",
+                    "location_role": "shrine",
+                    "locator": "朝倉神社の沿革＞鎮座地",
+                    "name_raw": "朝倉神社",
+                    "publisher": "朝倉神社",
+                    "retrieval": "閲覧ツール本文確認。直接取得はTLSホスト名不一致で停止。応答本体ハッシュ付きの位置審査案の根拠には使用しない。",
+                    "source_kind": "official_shrine",
+                    "title": "朝倉神社公式ホームページ -- 沿革",
+                    "url": "https://asakurajinja.yamanoha.com/enkaku.html"
+                  },
+                  "original": {
+                    "address": "高知県高岡郡朝倉丙2100番地ｲ",
+                    "address_context": "高知県高岡郡",
+                    "address_raw": "朝倉丙2100番地ｲ",
+                    "fetched_at": "2026-11-09T02:12:52.732340+00:00",
+                    "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=166",
+                    "municipality": "",
+                    "name_raw": "朝倉神社",
+                    "native_source_id": "bcf2b020-e99b-41cd-984f-b6f0be9b4a71",
+                    "official_site_url": null,
+                    "page_hash": "3e5e6d0cec523c2834ca38283b9bb0ae2a892481a287050f82a15c9945467d81",
+                    "source_locator": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/bcf2b020-e99b-41cd-984f-b6f0be9b4a71"
+                  },
+                  "physical_address_selection": {
+                    "address": "高知県高知市朝倉丙2100-イ",
+                    "municipality": "高知市"
+                  },
+                  "projected_position_only_reading_validation": [
+                    "corrected full reading is not explicit in the inspected reference"
+                  ],
+                  "registration_ready_in_current_contract": false,
+                  "registry": {
+                    "address_raw": "高知県高知市朝倉丙２１００番地イ",
+                    "checked_at": "2026-11-27T01:08:30.555803+00:00",
+                    "corporate_number": "5490005000776",
+                    "excerpt": "法人番号：5490005000776\n商号又は名称：朝倉神社\n本店又は主たる事務所の所在地：高知県高知市朝倉丙２１００番地イ\n最終更新年月日：平成27年11月27日",
+                    "fetched_at": "2026-11-27T01:08:30.555803+00:00",
+                    "location_role": "principal_office",
+                    "locator": "法人番号・商号又は名称・商号又は名称（フリガナ）・本店又は主たる事務所の所在地の欄",
+                    "name_raw": "朝倉神社",
+                    "page_hash": "cc110f9af8cebb4513487033a06b33cc97b45c3ae082c9b6ed9c302c02ffc2f8",
+                    "publisher": "国税庁",
+                    "reading_raw": "",
+                    "reading_scope": "partial_or_absent",
+                    "record_published_update_raw": "平成27年11月27日",
+                    "source_fields": {
+                      "商号又は名称": "朝倉神社",
+                      "最終更新年月日": "平成27年11月27日",
+                      "本店又は主たる事務所の所在地": "高知県高知市朝倉丙２１００番地イ",
+                      "法人番号": "5490005000776"
+                    },
+                    "source_kind": "government_corporate_register",
+                    "title": "法人番号公表サイト 朝倉神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005000776"
+                  }
+                },
+                "fd87f549-f028-5332-b6c0-7ef02ac6fa8a": {
+                  "acquired_source_hash": "3b020aea2bb271df4322b1380ab4f0178c4fccc023875b543dee2657a8a8905c",
+                  "agency_card": {
+                    "address_locator": "div#comp-lf8aw9e9__item1",
+                    "address_raw": "高知県高知市一宮しなね2-16-1",
+                    "checked_at": "2026-11-27T01:08:35.906817+00:00",
+                    "excerpt": "土佐神社\n〒781-8131\n高知県高知市一宮しなね2-16-1",
+                    "fetched_at": "2026-11-27T01:08:35.906817+00:00",
+                    "href_raw": "https://tosajinja.com/",
+                    "institutional_phone_sha256": "036bb89ddf420a16d86c3d44dad0d1544fb23d20ba666bcf924ae859c9c54f14",
+                    "location_role": "shrine",
+                    "locator": "div#comp-lf8aw9dw__item1",
+                    "name_locator": "div#comp-lf8aw9e52__item1",
+                    "name_raw": "土佐神社",
+                    "page_hash": "cf56e048797ea7d02956b66cbf08bcf1f1f9a0cb790d4dd9d0e5cf5b1771e8b4",
+                    "postcode_raw": "〒781-8131",
+                    "publisher": "高知県神社庁",
+                    "source_kind": "agency",
+                    "title": "高知県神社一覧",
+                    "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=160"
+                  },
+                  "agency_cms": {
+                    "address_context_raw": "高知県高岡郡",
+                    "address_raw": "一宮しなね二丁目16番1号",
+                    "authority_row_fields": {
+                      "_id": "3dd3fee8-131e-495b-a327-b72789618382",
+                      "_publishStatus": "PUBLISHED",
+                      "_updatedDate": {
+                        "$date": "2023-07-06T04:08:53.224Z"
+                      },
+                      "newField": "高知県高岡郡",
+                      "text": "土佐神社",
+                      "text1": "一宮しなね二丁目16番1号",
+                      "title": "高知市支部"
+                    },
+                    "branch_raw": "高知市支部",
+                    "checked_at": "2026-11-27T01:08:35.906817+00:00",
+                    "fetched_at": "2026-11-27T01:08:35.906817+00:00",
+                    "institutional_phone_locator": "div#comp-ljqfqw3b__3dd3fee8-131e-495b-a327-b72789618382",
+                    "institutional_phone_sha256": "036bb89ddf420a16d86c3d44dad0d1544fb23d20ba666bcf924ae859c9c54f14",
+                    "locator": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/3dd3fee8-131e-495b-a327-b72789618382",
+                    "name_raw": "土佐神社",
+                    "native_source_id": "3dd3fee8-131e-495b-a327-b72789618382",
+                    "page_hash": "cf56e048797ea7d02956b66cbf08bcf1f1f9a0cb790d4dd9d0e5cf5b1771e8b4",
+                    "publisher": "高知県神社庁",
+                    "reading_raw": "",
+                    "rendered_address_locator": "div#comp-ljqf279d__3dd3fee8-131e-495b-a327-b72789618382",
+                    "rendered_context_locator": "div#comp-ljqlom9b__3dd3fee8-131e-495b-a327-b72789618382",
+                    "rendered_name_locator": "div#comp-ljqf2799__3dd3fee8-131e-495b-a327-b72789618382",
+                    "source_kind": "agency",
+                    "title": "高知県神社一覧",
+                    "url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=160"
+                  },
+                  "city_cultural_building": {
+                    "checked_at": "2026-11-27T01:09:15.996200+00:00",
+                    "component_name_raw": "土佐神社本殿、幣殿及び拝殿",
+                    "fetched_at": "2026-11-27T01:09:15.996200+00:00",
+                    "locator": "民権・文化財課の本文見出し・解説",
+                    "note": "建造物の資料。施設の全住所と正式な全文ふりがなの出典には使わない。",
+                    "page_hash": "f279fa18396ae2654babaf0798cf71cdcdf85fefd81d8462cabdc450726b5d4b",
+                    "publisher": "高知市",
+                    "source_kind": "government_municipality",
+                    "title": "文化財情報 重要文化財 建造物 土佐神社本殿、幣殿及び拝殿",
+                    "url": "https://www.city.kochi.kochi.jp/soshiki/90/cas-state-1100200.html"
+                  },
+                  "cultural_building": {
+                    "address_raw": "高知県高知市一宮",
+                    "checked_at": "2026-11-27T01:08:33.712817+00:00",
+                    "component_name_raw": "土佐神社本殿、幣殿及び拝殿",
+                    "component_reading_raw": "とさじんじゃほんでん、へいでんおよびはいでん",
+                    "excerpt": "土佐神社本殿、幣殿及び拝殿\nとさじんじゃほんでん、へいでんおよびはいでん\n高知県高知市一宮\n土佐神社",
+                    "fetched_at": "2026-11-27T01:08:33.712817+00:00",
+                    "location_role": "designated_building_locality",
+                    "locator": "各棟情報の名称・ふりがな・所在地・所有者名の欄",
+                    "owner_name_raw": "土佐神社",
+                    "page_hash": "eb6a946ad8de292dae63a026b4ab1b56ea8e468fda548ff661597ecd473968b0",
+                    "publisher": "文化庁",
+                    "source_kind": "government_culture",
+                    "title": "国指定文化財等データベース",
+                    "url": "https://kunishitei.bunka.go.jp/bsys/maindetails/102/3414"
+                  },
+                  "current_position_validation": [
+                    "only an empty acquired address and municipality can be supplemented",
+                    "missing inspected agency link",
+                    "location reference is outside the linked official shrine URL scope",
+                    "location reference must identify the shrine, not an office or other location"
+                  ],
+                  "current_reading_validation": [
+                    "no inspected reference explicitly identifies name and location",
+                    "corrected full reading is not explicit in the inspected reference"
+                  ],
+                  "exact_association_confirmed": true,
+                  "exact_same_name_facilities_in_prefecture_sources": [
+                    {
+                      "address": "高知県高岡郡一宮しなね二丁目16番1号",
+                      "id": "3b234d0f-6ab4-5d9f-8169-7e14640dd529",
+                      "source_key": "kochi"
+                    }
+                  ],
+                  "facility_id": "3b234d0f-6ab4-5d9f-8169-7e14640dd529",
+                  "full_reading": "とさじんじゃ",
+                  "grant": {
+                    "address_raw": "高知市",
+                    "checked_at": "2026-11-27T01:09:13.308213+00:00",
+                    "corporate_number": "5490005001196",
+                    "document_version": "令和6年度",
+                    "excerpt": "土佐神社\nﾄｻｼﾞﾝｼﾞｬ\n高知市\n5490005001196",
+                    "fetched_at": "2026-11-27T01:09:13.308213+00:00",
+                    "location_role": "grant_site_municipality",
+                    "locator": "PDF 4頁 建造物／補助事業者名・所在地",
+                    "name_raw": "土佐神社",
+                    "page_hash": "265ac73b476d3b80c5c03219226a4b5ab2d44bdd4bffcd59ade63b039fd06095",
+                    "pdf_page": 4,
+                    "publisher": "文化庁",
+                    "reading_raw": "ﾄｻｼﾞﾝｼﾞｬ",
+                    "reading_scope": "full_name",
+                    "source_kind": "government_culture",
+                    "title": "令和6年度 補助金交付一覧（高知）",
+                    "url": "https://www.bunka.go.jp/seisaku/bunkazai/joseishien/hojo/r06_kofu/pdf/94024001_39.pdf"
+                  },
+                  "name_raw": "土佐神社",
+                  "official_shrine": {
+                    "address_raw": "高知県高知市一宮しなね2丁目16-1",
+                    "checked_at": "2026-11-27T01:08:31.717794+00:00",
+                    "excerpt": "土佐神社\n高知県高知市一宮しなね2丁目16-1",
+                    "fetched_at": "2026-11-27T01:08:31.717794+00:00",
+                    "location_role": "shrine",
+                    "locator": "アクセス本文",
+                    "name_raw": "土佐神社",
+                    "page_hash": "e8aa7f555affb5c00bdcefc8abbc05da016121a63f0c457100150b0a01abeeda",
+                    "publisher": "土佐神社",
+                    "source_kind": "official_shrine",
+                    "title": "交通アクセス - 土佐一ノ宮 土佐神社",
+                    "url": "https://tosajinja.com/access/"
+                  },
+                  "original": {
+                    "address": "高知県高岡郡一宮しなね二丁目16番1号",
+                    "address_context": "高知県高岡郡",
+                    "address_raw": "一宮しなね二丁目16番1号",
+                    "fetched_at": "2026-11-09T02:12:30.410131+00:00",
+                    "listing_url": "https://www.kochi-jinjyacho.com/%E9%AB%98%E7%9F%A5%E7%9C%8C%E7%A5%9E%E7%A4%BE%E4%B8%80%E8%A6%A7?comp-ljqfjyd6_page=160",
+                    "municipality": "",
+                    "name_raw": "土佐神社",
+                    "native_source_id": "3dd3fee8-131e-495b-a327-b72789618382",
+                    "official_site_url": null,
+                    "page_hash": "5004d2c45c1238f6ca5490fe6b186fa2f07b567b08ece99e1fbdd82bb3a840a8",
+                    "source_locator": "script#wix-warmup-data recordsByCollectionId/4gq343hu3awdp28flsx/3dd3fee8-131e-495b-a327-b72789618382"
+                  },
+                  "physical_address_selection": {
+                    "address": "高知県高知市一宮しなね2-16-1",
+                    "municipality": "高知市"
+                  },
+                  "projected_position_only_reading_validation": [],
+                  "registration_ready_in_current_contract": false,
+                  "registry": {
+                    "address_raw": "高知県高知市一宮しなね２丁目１６番１号",
+                    "checked_at": "2026-11-27T01:08:33.231214+00:00",
+                    "corporate_number": "5490005001196",
+                    "excerpt": "法人番号：5490005001196\n商号又は名称：土佐神社\n商号又は名称（フリガナ）：トサジンジャ\n本店又は主たる事務所の所在地：高知県高知市一宮しなね２丁目１６番１号\n最終更新年月日：令和元年6月24日",
+                    "fetched_at": "2026-11-27T01:08:33.231214+00:00",
+                    "location_role": "principal_office",
+                    "locator": "法人番号・商号又は名称・商号又は名称（フリガナ）・本店又は主たる事務所の所在地の欄",
+                    "name_raw": "土佐神社",
+                    "page_hash": "eacda4f08bf86eb6af3947028c0edb192c6d0051fff0ff464e487ebef5f8358e",
+                    "publisher": "国税庁",
+                    "reading_raw": "トサジンジャ",
+                    "reading_scope": "full_name",
+                    "record_published_update_raw": "令和元年6月24日",
+                    "source_fields": {
+                      "商号又は名称": "土佐神社",
+                      "商号又は名称（フリガナ）": "トサジンジャ",
+                      "最終更新年月日": "令和元年6月24日",
+                      "本店又は主たる事務所の所在地": "高知県高知市一宮しなね２丁目１６番１号",
+                      "法人番号": "5490005001196"
+                    },
+                    "source_kind": "government_corporate_register",
+                    "title": "法人番号公表サイト 土佐神社の情報",
+                    "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005001196"
+                  }
+                }
+              },
+              "inspected_at": "2026-11-27T01:15:20.501111+00:00",
+              "location_and_reading_justification": "同一取得本文の検索欄と施設案内を照合し、変わらない全地番と同名の法人個票も確認したうえで所在地を補完した。朝倉神社は部外の個別本文と文化庁資料の全文かな、土佐神社は法人個票の全文かなを確認した。",
+              "municipality_history": {
+                "checked_at": "2026-11-27T01:08:41.302020+00:00",
+                "excerpt": "昭和17年（1942）\n土佐郡鴨田村、布師田村、一宮村、朝\n倉村",
+                "fetched_at": "2026-11-27T01:08:41.302020+00:00",
+                "locator": "PDF 12頁 図表1－1－1「高知市の市域の拡大」昭和17年（1942）",
+                "note": "朝倉村・一宮村は土佐郡と明記。CMSの高岡郡表記を旧住所の承継として扱う根拠にはならない。",
+                "page_hash": "ddaf70d9ef3f1a86691015487131204faf53f593370ea483bf5c0b46536ed6a4",
+                "pdf_page": 12,
+                "publisher": "高知市",
+                "source_kind": "government_municipality",
+                "title": "高知市の市域の拡大",
+                "url": "https://www.city.kochi.kochi.jp/uploaded/life/238862_980106_misc.pdf"
+              },
+              "schema_version": 1,
+              "scope": "高知県神社庁の自治体空欄2施設・2登録"
+            }
+          }
         }
       ],
       "nationwide_wikipedia_article_reviews": [

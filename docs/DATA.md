@@ -255,6 +255,10 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 産山村のガイド冊子では嵯峨神社の町字と地番の間に空白があります。冊子の原住所を保持し、この資料と庁・法人資料の全地番を照合する際に空白を比較上扱います。[産山村のガイド冊子](https://www.ubuyama-v.jp/section/iju/ubuyama_guide.pdf)
 
+朝倉神社と土佐神社の高知県神社庁検索欄では、住所の先頭に「高知県高岡郡」、支部欄に「高知市支部」とあります。同じ掲載ページの施設案内では、高知市朝倉丙2100-イと高知市一宮しなね2-16-1を確認できます。掲載ID、社名、全地番、同一の組織電話を照合し、国税庁の同名法人個票も確認した2件の所在地を補完しました。検索欄・施設案内・法人個票の原住所を保持します。[朝倉神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005000776)・[土佐神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005001196)
+
+大口町替地の天神社は、庁の公開検索で掲載ID、原かな、町名と2丁目305番地、街字空欄を再確認しました。現地記録と国税庁個票の替地2丁目305番地を照合して、住所だけを採用値へ補完しました。原住所と町名、全文かなを保持し、秋田3の同名社と区別します。[大口町の神社庁検索](https://www.aichi-jinjacho.or.jp/search_result.html?addr=%E5%A4%A7%E5%8F%A3%E7%94%BA)・[替地の天神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3180005009256)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行

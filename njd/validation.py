@@ -8,7 +8,7 @@ from njd.normalize import normalize_reading
 from njd.corrections import correction_problems, discovery_only, _normalized_reference_reading
 from njd.reviews import reviewed_output
 from njd.reading_variants import variant_graph_problems
-from njd.locations import location_problems, raw_address
+from njd.locations import _raw_field, location_problems, raw_address
 
 STATUSES={'verified','pending','excluded'}
 
@@ -98,12 +98,22 @@ def validate(data: dict) -> list[dict]:
                 add('facility',f.get('id'),'invalid location supplement')
             elif location.get('applied'):
                 issues=location_problems(location,f,source)
-                if location.get('supplement_kind') in ('hyogo_cultural_building_location','hyogo_documented_map_location','hyogo_municipal_asset_location'):
+                kind = location.get('supplement_kind')
+                changes = location.get('changes')
+                if not isinstance(changes, dict):
+                    changes = {}
+                municipality = changes.get('municipality')
+                if kind in ('hyogo_cultural_building_location','hyogo_documented_map_location','hyogo_municipal_asset_location'):
                     bound_entries=[e for e in es if e.get('facility_id')==f.get('id')]
                     if len(bound_entries)!=1 or bound_entries[0].get('id')!=location.get('entry_id'):
                         issues.append('typed Hyogo location requires its single original registration')
-                if (issues or f.get('address')!=location.get('changes',{}).get('address',raw_address(f))
-                    or f.get('municipality')!=location.get('changes',{}).get('municipality')):
+                if kind == 'aichi_documented_street':
+                    from njd.aichi_location import aichi_location_entry_problems
+                    bound_entries = [e for e in es if e.get('facility_id') == facility_id]
+                    issues.extend(aichi_location_entry_problems(f, bound_entries))
+                    municipality = _raw_field(f, 'municipality')
+                if (issues or f.get('address') != changes.get('address', raw_address(f))
+                        or f.get('municipality') != municipality):
                     add('facility',f.get('id'),'invalid applied location supplement',severity='error' if f.get('status')=='verified' else 'review')
             elif f.get('status')=='verified':
                 add('facility',f.get('id'),'unapplied location supplement cannot verify a facility')

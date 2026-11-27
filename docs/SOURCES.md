@@ -1146,6 +1146,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 熊本県の自治体欄が空欄だった105登録を、県名簿・国税庁と、村の鎮座地案内など公開54資料で照合しました。両方の法人資料で社名と全地番が対応したのは91登録です。村の施設案内・冊子で鎮座地を確認し、南阿蘇村の原尻神社・上久木野神社と産山村の嵯峨神社の所在地を補完しました。3社は読みを引き続き保留します。全国28都道府県に残る保留は**9,272 → 9,269登録**です。[原尻神社・南阿蘇村](https://www.vill.minamiaso.lg.jp/dynamic/info/pub/Detail.aspx?c_id=29&id=132)・[上久木野神社・南阿蘇村](https://www.vill.minamiaso.lg.jp/dynamic/info/pub/Detail.aspx?c_id=29&id=134)・[産山村のガイド冊子](https://www.ubuyama-v.jp/section/iju/ubuyama_guide.pdf)
 
+### 高知市と大口町の所在地の再照合（2026-11-27）
+
+高知県神社庁の検索欄に高岡郡とある朝倉神社・土佐神社は、同じ取得ページの施設案内と国税庁個票で、高知市の各所在地と全地番を確認しました。朝倉の枝番「イ」は文化庁資料の原画像でも点検しました。高知市朝倉丙2100-イの朝倉神社は現地記事と文化庁資料の全文かな、高知市一宮しなね2-16-1の土佐神社は国税庁個票の全文かなを採用しました。[朝倉神社の現地記事](https://www.buccyake-kojiki.com/archives/1046151587.html)・[文化庁の補助金交付一覧](https://www.bunka.go.jp/seisaku/bunkazai/joseishien/hojo/h31_kofu/pdf/r1420739_39.pdf)・[土佐神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=5490005001196)
+
+愛知県神社庁の大口町の公開検索20件には「天神社」が2件あります。替地の天神社は原欄の2丁目305番地と現地記事・法人個票の全住所を照合しました。街字を含む鎮座地を補完し、神社庁に明記された既存の「てんじんしゃ」を辞書に収録しました。高知の新規読み2件とあわせ、全国28都道府県の保留は**9,269 → 9,266登録**です。[大口町の神社庁検索](https://www.aichi-jinjacho.or.jp/search_result.html?addr=%E5%A4%A7%E5%8F%A3%E7%94%BA)・[替地の天神社の現地記事](https://owari-nagoya55.hatenablog.com/entry/2025/10/31/000000)・[替地の天神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3180005009256)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。
