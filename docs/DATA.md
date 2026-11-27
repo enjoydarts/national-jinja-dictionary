@@ -263,6 +263,8 @@ reading-onlyの補正参照にある`document_address_context.kind=same_document
 
 南丹市の `nantan_shrine_identity` は、荒井神社と鈴波神社の全文読みの補正に使用します。荒井神社は府の文化財資料と旧郡誌で旧村・小字と附指定の札3点を照合し、Gビズインフォの全文フリガナと現所在地を確認します。鈴波神社は冊子の同じ松尾地区の案内とスギの標題、府天然記念物一覧と法人情報の全地番を照合します。神社庁の原住所と資料ごとの原欄、掲載位置、取得hashを保持し、補正は2社の読みだけに適用します。[荒井神社の法人情報](https://info.gbiz.go.jp/hojin/ichiran?hojinBango=8130005007433)・[鈴波神社の法人情報](https://info.gbiz.go.jp/hojin/ichiran?hojinBango=5130005007642)
 
+室戸市の惠美須神社は、神社庁の「元米ｹ谷西甲2737番地15」と国税庁の現行個票「元米ヶ谷西甲２７３７番地１５」を照合しました。国土交通省資料にある小字の「米ヶ谷西」を確認し、比較をこの社名と本番・枝番を含む全地番に限定します。神社庁の原欄と現行個票の事務所所在地、法人の旧名・旧所在地を保持します。[惠美須神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=2490005005737)・[国土交通省の元改良資料](https://www.skr.mlit.go.jp/kokai/project_evaluation/h19/2nd/pdf/10.pdf)
+
 国税庁CSVの「神」「社」などの互換漢字は、同一の全地番と社名を比較するために使います。`registered_name_variant` は、文化庁の常用漢字表に明示された「巣（巢）」「国（國）」などの字体差があり、全地番が同じ存続法人を一意に確認できた場合の住所・名称照合です。原字画像がある登録は該当画像を個別に目視し、住所・画像ID・CSVの行・原字を紐付けます。読みは国税庁の明示フリガナに基づき、両資料の表記と原かなを保持します。[国税庁の原字画像の説明](https://www.houjin-bangou.nta.go.jp/shitsumon/shosai.html?selQaId=00051)・[文化庁・常用漢字表の音訓索引](https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/joyokanjisakuin/index.html)
 
 ## 2026年11月14日の正本移行

@@ -71,6 +71,27 @@ class PublishedAddressFormsTest(unittest.TestCase):
                 )
                 self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
 
+    def test_muroto_ebisu_glyph_comparison_preserves_the_branch_and_raw_addresses(self):
+        acquired = '高知県室戸市元米ｹ谷西甲2737番地15'
+        printed = '高知県室戸市元米ヶ谷西甲２７３７番地１５'
+        dataset, proposal = self.fixture('39', '高知県', '惠美須神社', 'えびすじんじゃ', acquired, printed)
+        result = apply_corrections(dataset, proposal)
+        self.assertEqual(len(eligible(result)), 1)
+        self.assertEqual(result['facilities'], dataset['facilities'])
+        self.assertEqual(result['entries'][0]['correction']['references'][0]['address_raw'], printed)
+
+    def test_muroto_ebisu_glyph_comparison_requires_the_name_locality_and_full_parcel(self):
+        acquired = '高知県室戸市元米ｹ谷西甲2737番地15'
+        for name, printed in (
+            ('惠美須神社', '高知県室戸市元米ヶ谷西甲2737番地'),
+            ('惠美須神社', '高知県室戸市元米ヶ谷西甲2737番地151'),
+            ('惠美須神社', '高知県室戸市元米ヶ谷2060番地'),
+            ('恵美須神社', '高知県室戸市元米ヶ谷西甲2737番地15'),
+        ):
+            with self.subTest(name=name, printed=printed):
+                dataset, proposal = self.fixture('39', '高知県', name, 'えびすじんじゃ', acquired, printed)
+                self.assertEqual(eligible(apply_corrections(dataset, proposal)), [])
+
     def test_kizugawa_compares_the_documented_town_prefix(self):
         acquired = '木津川市平尾里屋敷54'
         printed = '木津川市山城町平尾里屋敷54'
