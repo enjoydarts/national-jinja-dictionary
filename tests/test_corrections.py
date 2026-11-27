@@ -89,6 +89,45 @@ class OzekiJoinedReadingTest(unittest.TestCase):
         self.assertEqual(eligible(apply_corrections(data, proposal)), [])
 
 
+class KumadeJoinedReadingTest(unittest.TestCase):
+    def test_ruby_and_municipal_location_are_kept_as_separate_sources(self):
+        name = '熊手八幡宮'
+        municipality = '仲多度郡多度津町'
+        address = municipality + '大字西白方200番地'
+        data = build_dataset('kagawa', '37', '香川県', 'Synthetic test', [
+            row(name=name, address=address, municipality=municipality),
+        ])
+        proposal = correction(data, {'reading': 'くまではちまんぐう'})
+        refs = proposal['entries'][data['entries'][0]['id']]['references']
+        address_ref = copy.deepcopy(refs[0])
+        address_ref.update(reading_raw='', excerpt=name+' ／ '+address)
+        reading_url = 'https://www.my-kagawa.jp/files/user/site/dd5996c1b191e7ca81631b1f5ab2e69fb5a1229e.pdf'
+        raw_reading = 'くま で はち まん ぐう'
+        refs[0].update(
+            url=reading_url, source_kind='tourism_booklet_reference',
+            locator='PDF第2頁 B-4 ⑤の社名と全文ルビ', address_raw='',
+            reading_raw=raw_reading, reading_scope='full_name', page_hash='a'*64,
+            reading_normalization=['remove printed reading spaces'], excerpt=name+' ／ '+raw_reading,
+        )
+        municipal_address = '多度津町大字西白方200(熊手八幡宮)'
+        refs.extend((address_ref, dict(
+            url='https://www.town.tadotsu.kagawa.jp/soshikikarasagasu/kyoikuiinkaijimukyokusyougaigakusyuka/shakaikyoiku/2/565.html',
+            title='Synthetic inventory', source_kind='municipal_reference',
+            name_raw='熊手八幡宮高麗犬', address_raw=municipal_address,
+            locator='No.22 熊手八幡宮高麗犬の名称と所在地',
+            excerpt='熊手八幡宮高麗犬 ／ '+municipal_address, page_hash='b'*64,
+            checked_at=refs[0]['checked_at'],
+        )))
+        corrected = eligible(apply_corrections(data, proposal))
+        self.assertEqual(len(corrected), 1)
+        applied = apply_corrections(data, proposal)['entries'][0]
+        self.assertEqual(applied['reading_url'], reading_url)
+        self.assertEqual(applied['correction']['references'][0]['reading_raw'], raw_reading)
+        refs[-1].update(address_raw=municipal_address.replace('200', '201'),
+                        excerpt=refs[-1]['excerpt'].replace('200', '201'))
+        self.assertEqual(eligible(apply_corrections(data, proposal)), [])
+
+
 class ParcelRangeReferenceTest(unittest.TestCase):
     def candidate(self, address):
         acquired = '架空市乙町自88番地.至89番地'

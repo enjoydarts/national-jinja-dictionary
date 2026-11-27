@@ -462,13 +462,19 @@ def _linked_locality_reference(ref,correction,facility):
         and literal)
 
 
+_KUMADE_BOOKLET = 'https://www.my-kagawa.jp/files/user/site/dd5996c1b191e7ca81631b1f5ab2e69fb5a1229e.pdf'
+
+
 def _normalized_reference_reading(ref):
     """Remove only declared separators between literal kana in a full reading."""
     raw=ref.get('reading_raw','');steps=ref.get('reading_normalization')
     if steps is None:
         return normalize_reading(raw)
     if ref.get('reading_scope')=='full_name' and isinstance(raw,str):
-        if (steps==['remove printed reading spaces'] and ref.get('source_kind')=='official_shrine'
+        ruby_source = ref.get('source_kind') == 'official_shrine' or (
+            ref.get('source_kind') == 'tourism_booklet_reference' and ref.get('url') == _KUMADE_BOOKLET
+        )
+        if (steps==['remove printed reading spaces'] and ruby_source
             and re.fullmatch(r'[ぁ-ゖァ-ヶゝゞー]+(?:[ \u3000]+[ぁ-ゖァ-ヶゝゞー]+)+',raw)):
             return normalize_reading(raw.replace(' ','').replace('\u3000',''))
         if (steps==['remove printed reading middle dots']
@@ -488,35 +494,61 @@ def _joined_official_reading(ref,correction,facility,entry):
         for r in correction.get('references',[]))
 
 
-def _joined_ozeki_reading(ref, correction, facility):
-    """The river office names the shrine, and the shrine prints its parcel."""
-    if (set(correction.get('changes', {})) != {'reading'}
-            or facility.get('prefecture_code') != '40'
-            or facility.get('listed_name') != '大堰神社'
-            or facility.get('address') != '三井郡大刀洗町冨多1302'
-            or ref.get('url') != 'https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html'
-            or ref.get('source_kind') != 'government_shrine_heritage_guide'
-            or ref.get('locator') != 'h3内のa[name=anchor031]と社名・全文かな'
-            or ref.get('name_raw') != '大堰神社' or ref.get('reading_scope') != 'full_name'
-            or ref.get('address_raw') or ref.get('reading_raw') != 'おおぜきじんじゃ'
-            or ref.get('excerpt') != '大堰神社（おおぜきじんじゃ）'
-            or not _hash(ref.get('page_hash')) or not _date(ref.get('checked_at'))):
+# Inspected publications linking a full shrine reading to a specific site.
+# Each distinct source keeps its actual name, address and reading fields.
+_PUBLISHED_READING_PAIRS = {
+    ('40', '大堰神社', '三井郡大刀洗町冨多1302'): (
+        dict(url='https://www.qsr.mlit.go.jp/chikugo/archives/history/area/area4.html',
+             source_kind='government_shrine_heritage_guide', locator='h3内のa[name=anchor031]と社名・全文かな',
+             name_raw='大堰神社', reading_raw='おおぜきじんじゃ', excerpt='大堰神社（おおぜきじんじゃ）'),
+        dict(url='https://oozekijinja.site/', source_kind='official_shrine_location_reference',
+             name_raw='大堰神社', address_raw='福岡県三井郡大刀洗町冨多１３０２番地',
+             excerpt='大堰神社 ／ 福岡県三井郡大刀洗町冨多１３０２番地'),
+    ),
+    ('37', '熊手八幡宮', '仲多度郡多度津町大字西白方200番地'): (
+        dict(url=_KUMADE_BOOKLET, source_kind='tourism_booklet_reference',
+             locator='PDF第2頁 B-4 ⑤の社名と全文ルビ', name_raw='熊手八幡宮',
+             reading_raw='くま で はち まん ぐう', excerpt='熊手八幡宮 ／ くま で はち まん ぐう'),
+        dict(url='https://www.town.tadotsu.kagawa.jp/soshikikarasagasu/kyoikuiinkaijimukyokusyougaigakusyuka/shakaikyoiku/2/565.html',
+             source_kind='municipal_reference', locator='No.22 熊手八幡宮高麗犬の名称と所在地',
+             name_raw='熊手八幡宮高麗犬', address_raw='多度津町大字西白方200(熊手八幡宮)',
+             excerpt='熊手八幡宮高麗犬 ／ 多度津町大字西白方200(熊手八幡宮)'),
+    ),
+    ('41', '金立神社', '佐賀市金立町大字金立３４１５'): (
+        dict(url='https://tabi-bito.net/kinnryu-shrine-jogu/', source_kind='independent_site_visit',
+             locator='主見出し及び上宮への現地参拝の記録', name_raw='金立神社',
+             reading_raw='きんりゅうじんじゃ', excerpt='金立神社（きんりゅうじんじゃ）上宮'),
+        dict(url='https://www.city.saga.lg.jp/bunka-sports/rekishi-bunkazai/4/3/2281.html',
+             source_kind='municipal_reference', locator='金立神社上宮の見出し・所在地・史跡解説',
+             name_raw='金立神社上宮', address_raw='佐賀市金立町大字金立',
+             excerpt='金立神社上宮 ／ 佐賀市金立町大字金立 ／ 神殿・拝殿は県内でも珍しい石殿'),
+        dict(url='https://saga-jinjacho.jp/%e9%87%91%e7%ab%8b%e7%a5%9e%e7%a4%be/',
+             source_kind='official_agency', locator='当該社の神社名・鎮座地・社宝欄',
+             name_raw='金立神社', address_raw='佐賀市金立町大字金立３４１５',
+             excerpt='金立神社 ／ 佐賀市金立町大字金立３４１５ ／ 石造本社神殿拝殿（市文）'),
+    ),
+}
+
+
+def _record_matches_publication(ref, fields):
+    return (isinstance(ref, dict) and all(ref.get(key) == value for key, value in fields.items())
+            and _hash(ref.get('page_hash')) and _date(ref.get('checked_at')))
+
+
+def _joined_published_reading(ref, correction, facility):
+    key = (facility.get('prefecture_code'), facility.get('listed_name'), raw_address(facility))
+    sources = _PUBLISHED_READING_PAIRS.get(key)
+    if (not sources or set(correction.get('changes', {})) != {'reading'}
+            or ref.get('address_raw') or ref.get('reading_scope') != 'full_name'
+            or not _record_matches_publication(ref, sources[0])):
         return False
-    return any(
-        isinstance(site, dict)
-        and site.get('url') == 'https://oozekijinja.site/'
-        and site.get('source_kind') == 'official_shrine_location_reference'
-        and site.get('name_raw') == '大堰神社'
-        and site.get('address_raw') == '福岡県三井郡大刀洗町冨多１３０２番地'
-        and site.get('excerpt') == '大堰神社 ／ 福岡県三井郡大刀洗町冨多１３０２番地'
-        and _hash(site.get('page_hash')) and _date(site.get('checked_at'))
-        for site in correction['references']
-    )
+    return all(any(_record_matches_publication(site, fields) for site in correction['references'])
+               for fields in sources[1:])
 
 
 def _joined_reading_reference(ref, correction, facility, entry):
     return (_joined_official_reading(ref, correction, facility, entry)
-            or (entry.get('status') != 'excluded' and _joined_ozeki_reading(ref, correction, facility)))
+            or (entry.get('status') != 'excluded' and _joined_published_reading(ref, correction, facility)))
 
 
 def _agency_reading_compatible(name,raw,scope,full):

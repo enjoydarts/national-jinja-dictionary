@@ -1234,6 +1234,12 @@ Code for FUKUIが公開する日本遺産の104ストーリー・構成文化財
 
 長野県の法人名簿と国税庁の現行個票を使い、上田市の篠井神社の篠井窪1000番地イ、大屋神社の南遠河原506、佐久市の平井神社の滝ノ山4860と、各社の明示フリガナを照合しました。大屋神社の原字は画像で確認しました。福知山市土師の愛宕神社は、町字マスターの「字土師」と法人資料の小字手白山1を照合しました。高知県安芸市の水口神社は法人個票の「ミナクチジンジャ」と甲994を確認し、神社庁が記す小字を含む全地番の対応は保留です。全国の保留は**9,217 → 9,211登録**です。[長野県の宗教法人名簿](https://www.pref.nagano.lg.jp/ken-manabi/kensei/shichoson/hojin/shukyo/documents/meibor7_1231.pdf)・[愛宕神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3130005010078)・[水口神社の法人個票](https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=8490005005509)
 
+### 第4回巨樹調査の滋賀など17候補と香川・佐賀の補完（2026-11-27）
+
+滋賀9登録と他県8登録を個別に照合し、2登録を補完しました。熊手八幡宮は多度津町の冊子B-4⑤で社名全体のルビ「くま で はち まん ぐう」を確認しました。町の文化財一覧No.22と香川県神社庁が鎮座地の西白方200を示します。金立神社は上宮の現地記録に「きんりゅうじんじゃ」とあり、佐賀市史跡の上宮と佐賀県神社庁の金立3415にある石造の神殿・拝殿が対応します。法人の主たる事務所は2468です。[多度津町観光冊子](https://www.my-kagawa.jp/files/user/site/dd5996c1b191e7ca81631b1f5ab2e69fb5a1229e.pdf#page=2)・[多度津町の文化財一覧](https://www.town.tadotsu.kagawa.jp/soshikikarasagasu/kyoikuiinkaijimukyokusyougaigakusyuka/shakaikyoiku/2/565.html)・[金立神社上宮の現地記録](https://tabi-bito.net/kinnryu-shrine-jogu/)・[佐賀市の史跡一覧](https://www.city.saga.lg.jp/bunka-sports/rekishi-bunkazai/4/3/2281.html)・[佐賀県神社庁の金立神社](https://saga-jinjacho.jp/%e9%87%91%e7%ab%8b%e7%a5%9e%e7%a4%be/)
+
+上野神社は市の指定避難場所表の「ウエノジンジャ」と832-1を確認しました。神社庁・法人個票の832との敷地の関係は保留です。牟佐神社は市アーカイブの「むさじんじゃ」と武佐宿東端を確認し、掲載箇所と神社庁の651番地の対応は保留です。第4回調査の優先76登録は全件を個別に照合し、累計9登録を補完しました。全国の保留は**9,211 → 9,209登録**です。[近江八幡市の公開データ](https://www.city.omihachiman.lg.jp/soshiki/gyosei/3/20066.html)・[近江八幡市歴史浪漫デジタルアーカイブ](https://adeac.jp/omihachiman-city/texthtml/d200040/mp240400-200040/ht000220)
+
 ## 施設公式の読みと所在地が別ページにある資料
 
 [和布刈神社の公式説明](https://www.mekarijinja.com/about)の「めかりじんじゃ」、[戸上神社の公式ルビ](https://tonoe-jinja.jp/about/)の「とのえじんじゃ」、[生立八幡宮の公式紹介](https://oitatuhatimangu-official.amebaownd.com/)の「おいたつはちまんぐう」を確認しています。戸上神社・生立八幡宮は住所をそれぞれの公式アクセスページで照合し、読み確認ページへ住所を転記せず、別の出典レコードとして保持します。神社庁の実リンクと観測した転送、URL範囲、掲載名・番地の一致を補正記録に保存しています。

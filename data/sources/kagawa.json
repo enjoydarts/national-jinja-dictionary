@@ -80546,12 +80546,91 @@
           "surface": "神谷神社"
         },
         {
-          "checked_at": "2026-11-08T14:32:36.627688+00:00",
+          "checked_at": "2026-11-27T04:23:32.381183+00:00",
           "evidence": "li.c-entries__item a[href=\"https://kagawakenjinjacho.or.jp/shrine/%e7%86%8a%e6%89%8b%e5%85%ab%e5%b9%a1%e5%ae%ae/\"]: 名称=熊手八幡宮; 掲載読み=; 所在地=仲多度郡多度津町大字西白方200番地",
           "facility_id": "2642a870-b537-5bce-8df9-35f261cb2e8b",
           "fetched_at": "2026-11-08T14:32:36.627688+00:00",
           "id": "234206db-523f-5650-9a28-0b874ad2834e",
-          "judgments": {},
+          "judgments": {
+            "corrections": {
+              "changes": {
+                "reading": "くまではちまんぐう"
+              },
+              "expected_source_hash": "b85fd8a3a9ce392f87c896ff06be338d4f13c7625867332c3cd3ceb494e451b9",
+              "facility_id": "2642a870-b537-5bce-8df9-35f261cb2e8b",
+              "identity_match": "町指定文化財表No.22は熊手八幡宮構内の所在地を大字西白方200と明記。神社庁の鎮座地も大字西白方200番地。",
+              "original": {
+                "address": "仲多度郡多度津町大字西白方200番地",
+                "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/14/",
+                "name_raw": "熊手八幡宮",
+                "reading_raw": ""
+              },
+              "reason": "町の観光冊子B-4⑤で社名の独立した全文ルビを確認。原ルビの区切り空白だけを除去。",
+              "references": [
+                {
+                  "checked_at": "2026-11-27T04:23:32.381183+00:00",
+                  "excerpt": "熊手八幡宮 ／ くま で はち まん ぐう",
+                  "locator": "PDF第2頁 B-4 ⑤の社名と全文ルビ",
+                  "name_raw": "熊手八幡宮",
+                  "page_hash": "7dad65d6e8d57e115ecfd42c744efe9923fb0102ada4483c28f408f6c633a21e",
+                  "pdf_pages": 2,
+                  "reading_normalization": [
+                    "remove printed reading spaces"
+                  ],
+                  "reading_raw": "くま で はち まん ぐう",
+                  "reading_scope": "full_name",
+                  "source_kind": "tourism_booklet_reference",
+                  "source_publisher": "多度津町産業課（香川県観光協会サイト掲載）",
+                  "title": "スローライフ・アイランド 高見島＆佐柳島",
+                  "url": "https://www.my-kagawa.jp/files/user/site/dd5996c1b191e7ca81631b1f5ab2e69fb5a1229e.pdf"
+                },
+                {
+                  "address_raw": "多度津町大字西白方200(熊手八幡宮)",
+                  "checked_at": "2026-11-27T04:21:58.382654+00:00",
+                  "excerpt": "熊手八幡宮高麗犬 ／ 多度津町大字西白方200(熊手八幡宮)",
+                  "locator": "No.22 熊手八幡宮高麗犬の名称と所在地",
+                  "name_raw": "熊手八幡宮高麗犬",
+                  "page_hash": "f6aa1f89fa2418c2724fb358d115cd83fddb528b6c22635a0fcab5b563aa5a49",
+                  "source_kind": "municipal_reference",
+                  "source_publisher": "多度津町",
+                  "title": "町内の文化財一覧",
+                  "url": "https://www.town.tadotsu.kagawa.jp/soshikikarasagasu/kyoikuiinkaijimukyokusyougaigakusyuka/shakaikyoiku/2/565.html"
+                },
+                {
+                  "address_raw": "仲多度郡多度津町大字西白方200番地",
+                  "address_role": "enshrined_shrine_location",
+                  "checked_at": "2026-11-27T04:22:05.332477+00:00",
+                  "excerpt": "熊手八幡宮 ／ 仲多度郡多度津町大字西白方200番地",
+                  "locator": "当該社の神社名と鎮座地欄",
+                  "name_raw": "熊手八幡宮",
+                  "page_hash": "e5e645c4b06e4c39d94a23e7d3af7841018fed9bfd4eebb018057910044ecd14",
+                  "reading_raw": "",
+                  "source_kind": "official_agency",
+                  "source_publisher": "香川県神社庁",
+                  "title": "熊手八幡宮",
+                  "url": "https://kagawakenjinjacho.or.jp/shrine/%e7%86%8a%e6%89%8b%e5%85%ab%e5%b9%a1%e5%ae%ae/"
+                },
+                {
+                  "address_raw": "香川県仲多度郡多度津町大字西白方２００番地",
+                  "address_role": "corporation_principal_office",
+                  "checked_at": "2026-11-27T04:22:09.770130+00:00",
+                  "corporate_number": "3470005002727",
+                  "excerpt": "熊手八幡宮 ／ 香川県仲多度郡多度津町大字西白方２００番地",
+                  "locator": "最新情報の法人番号、商号又は名称、本店又は主たる事務所の所在地、フリガナ欄の有無",
+                  "name_raw": "熊手八幡宮",
+                  "page_hash": "f1a82dda760c48539c768ea2f8183586f2d502e6f74af185a439809557f828e9",
+                  "reading_raw": "",
+                  "registered_furigana_field_present": false,
+                  "source_kind": "government_corporate_location_reference",
+                  "source_publisher": "国税庁",
+                  "terms_url": "https://www.houjin-bangou.nta.go.jp/riyokiyaku/",
+                  "title": "熊手八幡宮の情報",
+                  "url": "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3470005002727"
+                }
+              ],
+              "status": "verified"
+            }
+          },
           "listing_url": "https://kagawakenjinjacho.or.jp/shrine/page/14/",
           "name_raw": "熊手八幡宮",
           "normalization": [
@@ -80559,11 +80638,11 @@
             "katakana to hiragana"
           ],
           "page_hash": "4a12cf2ccf4b1223c8f2bfb2a01862ace11609c81cf4ad7ad938a23a02fb7691",
-          "reading": "",
+          "reading": "くまではちまんぐう",
           "reading_raw": "",
-          "reading_source_kind": "agency",
-          "reading_url": "https://kagawakenjinjacho.or.jp/shrine/page/14/",
-          "reason": "missing agency reading",
+          "reading_source_kind": "reference",
+          "reading_url": "https://www.my-kagawa.jp/files/user/site/dd5996c1b191e7ca81631b1f5ab2e69fb5a1229e.pdf",
+          "reason": "",
           "research": {
             "additional_source_reviews": [
               {
@@ -80655,6 +80734,20 @@
             "prefecture_code": "37",
             "reading_raw": "",
             "reason": "missing agency reading",
+            "resolution": {
+              "previous_status": "pending",
+              "reading": "くまではちまんぐう",
+              "reason": "",
+              "status": "verified"
+            },
+            "resolution_history": [
+              {
+                "previous_status": "pending",
+                "reading": "くまではちまんぐう",
+                "reason": "",
+                "status": "verified"
+              }
+            ],
             "status": "unfinished",
             "surface": "熊手八幡宮",
             "wikipedia_article_refs": [],
@@ -80685,7 +80778,7 @@
             "status": "pending",
             "surface": "熊手八幡宮"
           },
-          "status": "pending",
+          "status": "verified",
           "surface": "熊手八幡宮"
         },
         {
